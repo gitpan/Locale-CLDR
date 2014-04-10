@@ -1,0 +1,56 @@
+{
+   "abstract" : "Main Class for CLDR Locals",
+   "author" : [
+      "John Imrie <j.imrie1@.virginmedia.com>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Module::Build version 0.4007, CPAN::Meta::Converter version 2.132140",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Locale-CLDR",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Archive::Extract" : "0.58",
+            "Archive::Zip" : "1.30",
+            "File::Spec" : "3.33",
+            "FindBin" : "1.50",
+            "LWP" : "6.03",
+            "Test::More" : "0.98"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.40"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "DateTime" : "0.72",
+            "Moose" : "2.0401",
+            "MooseX::ClassAttribute" : "0.26",
+            "XML::Parser" : "2.41",
+            "XML::XPath" : "1.13",
+            "version" : "0.95"
+         }
+      }
+   },
+   "provides" : {
+      "Locale::CLDR" : {
+         "file" : "lib/Locale/CLDR.pm",
+         "version" : "v0.0.1"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ]
+   },
+   "version" : "v0.0.1"
+}

@@ -1,0 +1,34 @@
+---
+abstract: 'Main Class for CLDR Locals'
+author:
+  - 'John Imrie <j.imrie1@.virginmedia.com>'
+build_requires:
+  Archive::Extract: 0.58
+  Archive::Zip: 1.30
+  File::Spec: 3.33
+  FindBin: 1.50
+  LWP: 6.03
+  Test::More: 0.98
+configure_requires:
+  Module::Build: 0.40
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.132140'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Locale-CLDR
+provides:
+  Locale::CLDR:
+    file: lib/Locale/CLDR.pm
+    version: v0.0.1
+requires:
+  DateTime: 0.72
+  Moose: 2.0401
+  MooseX::ClassAttribute: 0.26
+  XML::Parser: 2.41
+  XML::XPath: 1.13
+  version: 0.95
+resources:
+  license: http://dev.perl.org/licenses/
+version: v0.0.1

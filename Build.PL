@@ -10,7 +10,6 @@ my $builder = Module::Build->new(
         'DateTime'                  => '0.72',
         'Moose'                     => '2.0401',
         'MooseX::ClassAttribute'    => '0.26',
-        'Readonly'                  => '1.03',
         'XML::Parser'               => '2.41',
         'XML::XPath'                => '1.13',
     },
