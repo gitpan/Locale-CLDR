@@ -1,7 +1,7 @@
 {
    "abstract" : "Main Class for CLDR Locals",
    "author" : [
-      "John Imrie <j.imrie1@.virginmedia.com>"
+      "John Imrie <john.imrie1@gmail.com>"
    ],
    "dynamic_config" : 1,
    "generated_by" : "Module::Build version 0.4007, CPAN::Meta::Converter version 2.132140",
@@ -44,6 +44,3453 @@
       "Locale::CLDR" : {
          "file" : "lib/Locale/CLDR.pm",
          "version" : "v0.0.1"
+      },
+      "Locale::CLDR::Aa" : {
+         "file" : "lib/Locale/CLDR/Aa.pm"
+      },
+      "Locale::CLDR::Aa::Any" : {
+         "file" : "lib/Locale/CLDR/Aa/Any.pm"
+      },
+      "Locale::CLDR::Aa::Any::Dj" : {
+         "file" : "lib/Locale/CLDR/Aa/Any/Dj.pm"
+      },
+      "Locale::CLDR::Aa::Any::Er" : {
+         "file" : "lib/Locale/CLDR/Aa/Any/Er.pm"
+      },
+      "Locale::CLDR::Aa::Any::Et" : {
+         "file" : "lib/Locale/CLDR/Aa/Any/Et.pm"
+      },
+      "Locale::CLDR::Af" : {
+         "file" : "lib/Locale/CLDR/Af.pm"
+      },
+      "Locale::CLDR::Af::Any" : {
+         "file" : "lib/Locale/CLDR/Af/Any.pm"
+      },
+      "Locale::CLDR::Af::Any::Na" : {
+         "file" : "lib/Locale/CLDR/Af/Any/Na.pm"
+      },
+      "Locale::CLDR::Af::Any::Za" : {
+         "file" : "lib/Locale/CLDR/Af/Any/Za.pm"
+      },
+      "Locale::CLDR::Agq" : {
+         "file" : "lib/Locale/CLDR/Agq.pm"
+      },
+      "Locale::CLDR::Agq::Any" : {
+         "file" : "lib/Locale/CLDR/Agq/Any.pm"
+      },
+      "Locale::CLDR::Agq::Any::Cm" : {
+         "file" : "lib/Locale/CLDR/Agq/Any/Cm.pm"
+      },
+      "Locale::CLDR::Ak" : {
+         "file" : "lib/Locale/CLDR/Ak.pm"
+      },
+      "Locale::CLDR::Ak::Any" : {
+         "file" : "lib/Locale/CLDR/Ak/Any.pm"
+      },
+      "Locale::CLDR::Ak::Any::Gh" : {
+         "file" : "lib/Locale/CLDR/Ak/Any/Gh.pm"
+      },
+      "Locale::CLDR::Am" : {
+         "file" : "lib/Locale/CLDR/Am.pm"
+      },
+      "Locale::CLDR::Am::Any" : {
+         "file" : "lib/Locale/CLDR/Am/Any.pm"
+      },
+      "Locale::CLDR::Am::Any::Et" : {
+         "file" : "lib/Locale/CLDR/Am/Any/Et.pm"
+      },
+      "Locale::CLDR::Ar" : {
+         "file" : "lib/Locale/CLDR/Ar.pm"
+      },
+      "Locale::CLDR::Ar::Any" : {
+         "file" : "lib/Locale/CLDR/Ar/Any.pm"
+      },
+      "Locale::CLDR::Ar::Any::001" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/001.pm"
+      },
+      "Locale::CLDR::Ar::Any::Ae" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Ae.pm"
+      },
+      "Locale::CLDR::Ar::Any::Bh" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Bh.pm"
+      },
+      "Locale::CLDR::Ar::Any::Dj" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Dj.pm"
+      },
+      "Locale::CLDR::Ar::Any::Dz" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Dz.pm"
+      },
+      "Locale::CLDR::Ar::Any::Eg" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Eg.pm"
+      },
+      "Locale::CLDR::Ar::Any::Eh" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Eh.pm"
+      },
+      "Locale::CLDR::Ar::Any::Er" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Er.pm"
+      },
+      "Locale::CLDR::Ar::Any::Il" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Il.pm"
+      },
+      "Locale::CLDR::Ar::Any::Iq" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Iq.pm"
+      },
+      "Locale::CLDR::Ar::Any::Jo" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Jo.pm"
+      },
+      "Locale::CLDR::Ar::Any::Km" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Km.pm"
+      },
+      "Locale::CLDR::Ar::Any::Kw" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Kw.pm"
+      },
+      "Locale::CLDR::Ar::Any::Lb" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Lb.pm"
+      },
+      "Locale::CLDR::Ar::Any::Ly" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Ly.pm"
+      },
+      "Locale::CLDR::Ar::Any::Ma" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Ma.pm"
+      },
+      "Locale::CLDR::Ar::Any::Mr" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Mr.pm"
+      },
+      "Locale::CLDR::Ar::Any::Om" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Om.pm"
+      },
+      "Locale::CLDR::Ar::Any::Ps" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Ps.pm"
+      },
+      "Locale::CLDR::Ar::Any::Qa" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Qa.pm"
+      },
+      "Locale::CLDR::Ar::Any::Sa" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Sa.pm"
+      },
+      "Locale::CLDR::Ar::Any::Sd" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Sd.pm"
+      },
+      "Locale::CLDR::Ar::Any::So" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/So.pm"
+      },
+      "Locale::CLDR::Ar::Any::Ss" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Ss.pm"
+      },
+      "Locale::CLDR::Ar::Any::Sy" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Sy.pm"
+      },
+      "Locale::CLDR::Ar::Any::Td" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Td.pm"
+      },
+      "Locale::CLDR::Ar::Any::Tn" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Tn.pm"
+      },
+      "Locale::CLDR::Ar::Any::Ye" : {
+         "file" : "lib/Locale/CLDR/Ar/Any/Ye.pm"
+      },
+      "Locale::CLDR::As" : {
+         "file" : "lib/Locale/CLDR/As.pm"
+      },
+      "Locale::CLDR::As::Any" : {
+         "file" : "lib/Locale/CLDR/As/Any.pm"
+      },
+      "Locale::CLDR::As::Any::In" : {
+         "file" : "lib/Locale/CLDR/As/Any/In.pm"
+      },
+      "Locale::CLDR::Asa" : {
+         "file" : "lib/Locale/CLDR/Asa.pm"
+      },
+      "Locale::CLDR::Asa::Any" : {
+         "file" : "lib/Locale/CLDR/Asa/Any.pm"
+      },
+      "Locale::CLDR::Asa::Any::Tz" : {
+         "file" : "lib/Locale/CLDR/Asa/Any/Tz.pm"
+      },
+      "Locale::CLDR::Ast" : {
+         "file" : "lib/Locale/CLDR/Ast.pm"
+      },
+      "Locale::CLDR::Ast::Any" : {
+         "file" : "lib/Locale/CLDR/Ast/Any.pm"
+      },
+      "Locale::CLDR::Ast::Any::Es" : {
+         "file" : "lib/Locale/CLDR/Ast/Any/Es.pm"
+      },
+      "Locale::CLDR::Az" : {
+         "file" : "lib/Locale/CLDR/Az.pm"
+      },
+      "Locale::CLDR::Az::Cyrl" : {
+         "file" : "lib/Locale/CLDR/Az/Cyrl.pm"
+      },
+      "Locale::CLDR::Az::Cyrl::Az" : {
+         "file" : "lib/Locale/CLDR/Az/Cyrl/Az.pm"
+      },
+      "Locale::CLDR::Az::Latn" : {
+         "file" : "lib/Locale/CLDR/Az/Latn.pm"
+      },
+      "Locale::CLDR::Az::Latn::Az" : {
+         "file" : "lib/Locale/CLDR/Az/Latn/Az.pm"
+      },
+      "Locale::CLDR::Bas" : {
+         "file" : "lib/Locale/CLDR/Bas.pm"
+      },
+      "Locale::CLDR::Bas::Any" : {
+         "file" : "lib/Locale/CLDR/Bas/Any.pm"
+      },
+      "Locale::CLDR::Bas::Any::Cm" : {
+         "file" : "lib/Locale/CLDR/Bas/Any/Cm.pm"
+      },
+      "Locale::CLDR::Be" : {
+         "file" : "lib/Locale/CLDR/Be.pm"
+      },
+      "Locale::CLDR::Be::Any" : {
+         "file" : "lib/Locale/CLDR/Be/Any.pm"
+      },
+      "Locale::CLDR::Be::Any::By" : {
+         "file" : "lib/Locale/CLDR/Be/Any/By.pm"
+      },
+      "Locale::CLDR::Bem" : {
+         "file" : "lib/Locale/CLDR/Bem.pm"
+      },
+      "Locale::CLDR::Bem::Any" : {
+         "file" : "lib/Locale/CLDR/Bem/Any.pm"
+      },
+      "Locale::CLDR::Bem::Any::Zm" : {
+         "file" : "lib/Locale/CLDR/Bem/Any/Zm.pm"
+      },
+      "Locale::CLDR::Bez" : {
+         "file" : "lib/Locale/CLDR/Bez.pm"
+      },
+      "Locale::CLDR::Bez::Any" : {
+         "file" : "lib/Locale/CLDR/Bez/Any.pm"
+      },
+      "Locale::CLDR::Bez::Any::Tz" : {
+         "file" : "lib/Locale/CLDR/Bez/Any/Tz.pm"
+      },
+      "Locale::CLDR::Bg" : {
+         "file" : "lib/Locale/CLDR/Bg.pm"
+      },
+      "Locale::CLDR::Bg::Any" : {
+         "file" : "lib/Locale/CLDR/Bg/Any.pm"
+      },
+      "Locale::CLDR::Bg::Any::Bg" : {
+         "file" : "lib/Locale/CLDR/Bg/Any/Bg.pm"
+      },
+      "Locale::CLDR::Bm" : {
+         "file" : "lib/Locale/CLDR/Bm.pm"
+      },
+      "Locale::CLDR::Bm::Any" : {
+         "file" : "lib/Locale/CLDR/Bm/Any.pm"
+      },
+      "Locale::CLDR::Bm::Any::Ml" : {
+         "file" : "lib/Locale/CLDR/Bm/Any/Ml.pm"
+      },
+      "Locale::CLDR::Bn" : {
+         "file" : "lib/Locale/CLDR/Bn.pm"
+      },
+      "Locale::CLDR::Bn::Any" : {
+         "file" : "lib/Locale/CLDR/Bn/Any.pm"
+      },
+      "Locale::CLDR::Bn::Any::Bd" : {
+         "file" : "lib/Locale/CLDR/Bn/Any/Bd.pm"
+      },
+      "Locale::CLDR::Bn::Any::In" : {
+         "file" : "lib/Locale/CLDR/Bn/Any/In.pm"
+      },
+      "Locale::CLDR::Bo" : {
+         "file" : "lib/Locale/CLDR/Bo.pm"
+      },
+      "Locale::CLDR::Bo::Any" : {
+         "file" : "lib/Locale/CLDR/Bo/Any.pm"
+      },
+      "Locale::CLDR::Bo::Any::Cn" : {
+         "file" : "lib/Locale/CLDR/Bo/Any/Cn.pm"
+      },
+      "Locale::CLDR::Bo::Any::In" : {
+         "file" : "lib/Locale/CLDR/Bo/Any/In.pm"
+      },
+      "Locale::CLDR::Br" : {
+         "file" : "lib/Locale/CLDR/Br.pm"
+      },
+      "Locale::CLDR::Br::Any" : {
+         "file" : "lib/Locale/CLDR/Br/Any.pm"
+      },
+      "Locale::CLDR::Br::Any::Fr" : {
+         "file" : "lib/Locale/CLDR/Br/Any/Fr.pm"
+      },
+      "Locale::CLDR::Brx" : {
+         "file" : "lib/Locale/CLDR/Brx.pm"
+      },
+      "Locale::CLDR::Brx::Any" : {
+         "file" : "lib/Locale/CLDR/Brx/Any.pm"
+      },
+      "Locale::CLDR::Brx::Any::In" : {
+         "file" : "lib/Locale/CLDR/Brx/Any/In.pm"
+      },
+      "Locale::CLDR::Bs" : {
+         "file" : "lib/Locale/CLDR/Bs.pm"
+      },
+      "Locale::CLDR::Bs::Cyrl" : {
+         "file" : "lib/Locale/CLDR/Bs/Cyrl.pm"
+      },
+      "Locale::CLDR::Bs::Cyrl::Ba" : {
+         "file" : "lib/Locale/CLDR/Bs/Cyrl/Ba.pm"
+      },
+      "Locale::CLDR::Bs::Latn" : {
+         "file" : "lib/Locale/CLDR/Bs/Latn.pm"
+      },
+      "Locale::CLDR::Bs::Latn::Ba" : {
+         "file" : "lib/Locale/CLDR/Bs/Latn/Ba.pm"
+      },
+      "Locale::CLDR::Byn" : {
+         "file" : "lib/Locale/CLDR/Byn.pm"
+      },
+      "Locale::CLDR::Byn::Any" : {
+         "file" : "lib/Locale/CLDR/Byn/Any.pm"
+      },
+      "Locale::CLDR::Byn::Any::Er" : {
+         "file" : "lib/Locale/CLDR/Byn/Any/Er.pm"
+      },
+      "Locale::CLDR::Ca" : {
+         "file" : "lib/Locale/CLDR/Ca.pm"
+      },
+      "Locale::CLDR::Ca::Any" : {
+         "file" : "lib/Locale/CLDR/Ca/Any.pm"
+      },
+      "Locale::CLDR::Ca::Any::Ad" : {
+         "file" : "lib/Locale/CLDR/Ca/Any/Ad.pm"
+      },
+      "Locale::CLDR::Ca::Any::Es" : {
+         "file" : "lib/Locale/CLDR/Ca/Any/Es.pm"
+      },
+      "Locale::CLDR::Ca::Any::Es::Valencia" : {
+         "file" : "lib/Locale/CLDR/Ca/Any/Es/Valencia.pm"
+      },
+      "Locale::CLDR::Ca::Any::Fr" : {
+         "file" : "lib/Locale/CLDR/Ca/Any/Fr.pm"
+      },
+      "Locale::CLDR::Ca::Any::It" : {
+         "file" : "lib/Locale/CLDR/Ca/Any/It.pm"
+      },
+      "Locale::CLDR::CalendarPreferences" : {
+         "file" : "lib/Locale/CLDR/CalendarPreferences.pm"
+      },
+      "Locale::CLDR::Cgg" : {
+         "file" : "lib/Locale/CLDR/Cgg.pm"
+      },
+      "Locale::CLDR::Cgg::Any" : {
+         "file" : "lib/Locale/CLDR/Cgg/Any.pm"
+      },
+      "Locale::CLDR::Cgg::Any::Ug" : {
+         "file" : "lib/Locale/CLDR/Cgg/Any/Ug.pm"
+      },
+      "Locale::CLDR::Chr" : {
+         "file" : "lib/Locale/CLDR/Chr.pm"
+      },
+      "Locale::CLDR::Chr::Any" : {
+         "file" : "lib/Locale/CLDR/Chr/Any.pm"
+      },
+      "Locale::CLDR::Chr::Any::Us" : {
+         "file" : "lib/Locale/CLDR/Chr/Any/Us.pm"
+      },
+      "Locale::CLDR::Cs" : {
+         "file" : "lib/Locale/CLDR/Cs.pm"
+      },
+      "Locale::CLDR::Cs::Any" : {
+         "file" : "lib/Locale/CLDR/Cs/Any.pm"
+      },
+      "Locale::CLDR::Cs::Any::Cz" : {
+         "file" : "lib/Locale/CLDR/Cs/Any/Cz.pm"
+      },
+      "Locale::CLDR::Currencies" : {
+         "file" : "lib/Locale/CLDR/Currencies.pm"
+      },
+      "Locale::CLDR::Cy" : {
+         "file" : "lib/Locale/CLDR/Cy.pm"
+      },
+      "Locale::CLDR::Cy::Any" : {
+         "file" : "lib/Locale/CLDR/Cy/Any.pm"
+      },
+      "Locale::CLDR::Cy::Any::Gb" : {
+         "file" : "lib/Locale/CLDR/Cy/Any/Gb.pm"
+      },
+      "Locale::CLDR::Da" : {
+         "file" : "lib/Locale/CLDR/Da.pm"
+      },
+      "Locale::CLDR::Da::Any" : {
+         "file" : "lib/Locale/CLDR/Da/Any.pm"
+      },
+      "Locale::CLDR::Da::Any::Dk" : {
+         "file" : "lib/Locale/CLDR/Da/Any/Dk.pm"
+      },
+      "Locale::CLDR::Da::Any::Gl" : {
+         "file" : "lib/Locale/CLDR/Da/Any/Gl.pm"
+      },
+      "Locale::CLDR::Dav" : {
+         "file" : "lib/Locale/CLDR/Dav.pm"
+      },
+      "Locale::CLDR::Dav::Any" : {
+         "file" : "lib/Locale/CLDR/Dav/Any.pm"
+      },
+      "Locale::CLDR::Dav::Any::Ke" : {
+         "file" : "lib/Locale/CLDR/Dav/Any/Ke.pm"
+      },
+      "Locale::CLDR::De" : {
+         "file" : "lib/Locale/CLDR/De.pm"
+      },
+      "Locale::CLDR::De::Any" : {
+         "file" : "lib/Locale/CLDR/De/Any.pm"
+      },
+      "Locale::CLDR::De::Any::At" : {
+         "file" : "lib/Locale/CLDR/De/Any/At.pm"
+      },
+      "Locale::CLDR::De::Any::Be" : {
+         "file" : "lib/Locale/CLDR/De/Any/Be.pm"
+      },
+      "Locale::CLDR::De::Any::Ch" : {
+         "file" : "lib/Locale/CLDR/De/Any/Ch.pm"
+      },
+      "Locale::CLDR::De::Any::De" : {
+         "file" : "lib/Locale/CLDR/De/Any/De.pm"
+      },
+      "Locale::CLDR::De::Any::Li" : {
+         "file" : "lib/Locale/CLDR/De/Any/Li.pm"
+      },
+      "Locale::CLDR::De::Any::Lu" : {
+         "file" : "lib/Locale/CLDR/De/Any/Lu.pm"
+      },
+      "Locale::CLDR::Dje" : {
+         "file" : "lib/Locale/CLDR/Dje.pm"
+      },
+      "Locale::CLDR::Dje::Any" : {
+         "file" : "lib/Locale/CLDR/Dje/Any.pm"
+      },
+      "Locale::CLDR::Dje::Any::Ne" : {
+         "file" : "lib/Locale/CLDR/Dje/Any/Ne.pm"
+      },
+      "Locale::CLDR::Dua" : {
+         "file" : "lib/Locale/CLDR/Dua.pm"
+      },
+      "Locale::CLDR::Dua::Any" : {
+         "file" : "lib/Locale/CLDR/Dua/Any.pm"
+      },
+      "Locale::CLDR::Dua::Any::Cm" : {
+         "file" : "lib/Locale/CLDR/Dua/Any/Cm.pm"
+      },
+      "Locale::CLDR::Dyo" : {
+         "file" : "lib/Locale/CLDR/Dyo.pm"
+      },
+      "Locale::CLDR::Dyo::Any" : {
+         "file" : "lib/Locale/CLDR/Dyo/Any.pm"
+      },
+      "Locale::CLDR::Dyo::Any::Sn" : {
+         "file" : "lib/Locale/CLDR/Dyo/Any/Sn.pm"
+      },
+      "Locale::CLDR::Dz" : {
+         "file" : "lib/Locale/CLDR/Dz.pm"
+      },
+      "Locale::CLDR::Dz::Any" : {
+         "file" : "lib/Locale/CLDR/Dz/Any.pm"
+      },
+      "Locale::CLDR::Dz::Any::Bt" : {
+         "file" : "lib/Locale/CLDR/Dz/Any/Bt.pm"
+      },
+      "Locale::CLDR::Ebu" : {
+         "file" : "lib/Locale/CLDR/Ebu.pm"
+      },
+      "Locale::CLDR::Ebu::Any" : {
+         "file" : "lib/Locale/CLDR/Ebu/Any.pm"
+      },
+      "Locale::CLDR::Ebu::Any::Ke" : {
+         "file" : "lib/Locale/CLDR/Ebu/Any/Ke.pm"
+      },
+      "Locale::CLDR::Ee" : {
+         "file" : "lib/Locale/CLDR/Ee.pm"
+      },
+      "Locale::CLDR::Ee::Any" : {
+         "file" : "lib/Locale/CLDR/Ee/Any.pm"
+      },
+      "Locale::CLDR::Ee::Any::Gh" : {
+         "file" : "lib/Locale/CLDR/Ee/Any/Gh.pm"
+      },
+      "Locale::CLDR::Ee::Any::Tg" : {
+         "file" : "lib/Locale/CLDR/Ee/Any/Tg.pm"
+      },
+      "Locale::CLDR::El" : {
+         "file" : "lib/Locale/CLDR/El.pm"
+      },
+      "Locale::CLDR::El::Any" : {
+         "file" : "lib/Locale/CLDR/El/Any.pm"
+      },
+      "Locale::CLDR::El::Any::Cy" : {
+         "file" : "lib/Locale/CLDR/El/Any/Cy.pm"
+      },
+      "Locale::CLDR::El::Any::Gr" : {
+         "file" : "lib/Locale/CLDR/El/Any/Gr.pm"
+      },
+      "Locale::CLDR::En" : {
+         "file" : "lib/Locale/CLDR/En.pm"
+      },
+      "Locale::CLDR::En::Any" : {
+         "file" : "lib/Locale/CLDR/En/Any.pm"
+      },
+      "Locale::CLDR::En::Any::001" : {
+         "file" : "lib/Locale/CLDR/En/Any/001.pm"
+      },
+      "Locale::CLDR::En::Any::150" : {
+         "file" : "lib/Locale/CLDR/En/Any/150.pm"
+      },
+      "Locale::CLDR::En::Any::Ag" : {
+         "file" : "lib/Locale/CLDR/En/Any/Ag.pm"
+      },
+      "Locale::CLDR::En::Any::Ai" : {
+         "file" : "lib/Locale/CLDR/En/Any/Ai.pm"
+      },
+      "Locale::CLDR::En::Any::As" : {
+         "file" : "lib/Locale/CLDR/En/Any/As.pm"
+      },
+      "Locale::CLDR::En::Any::Au" : {
+         "file" : "lib/Locale/CLDR/En/Any/Au.pm"
+      },
+      "Locale::CLDR::En::Any::Bb" : {
+         "file" : "lib/Locale/CLDR/En/Any/Bb.pm"
+      },
+      "Locale::CLDR::En::Any::Be" : {
+         "file" : "lib/Locale/CLDR/En/Any/Be.pm"
+      },
+      "Locale::CLDR::En::Any::Bm" : {
+         "file" : "lib/Locale/CLDR/En/Any/Bm.pm"
+      },
+      "Locale::CLDR::En::Any::Bs" : {
+         "file" : "lib/Locale/CLDR/En/Any/Bs.pm"
+      },
+      "Locale::CLDR::En::Any::Bw" : {
+         "file" : "lib/Locale/CLDR/En/Any/Bw.pm"
+      },
+      "Locale::CLDR::En::Any::Bz" : {
+         "file" : "lib/Locale/CLDR/En/Any/Bz.pm"
+      },
+      "Locale::CLDR::En::Any::Ca" : {
+         "file" : "lib/Locale/CLDR/En/Any/Ca.pm"
+      },
+      "Locale::CLDR::En::Any::Cc" : {
+         "file" : "lib/Locale/CLDR/En/Any/Cc.pm"
+      },
+      "Locale::CLDR::En::Any::Ck" : {
+         "file" : "lib/Locale/CLDR/En/Any/Ck.pm"
+      },
+      "Locale::CLDR::En::Any::Cm" : {
+         "file" : "lib/Locale/CLDR/En/Any/Cm.pm"
+      },
+      "Locale::CLDR::En::Any::Cx" : {
+         "file" : "lib/Locale/CLDR/En/Any/Cx.pm"
+      },
+      "Locale::CLDR::En::Any::Dg" : {
+         "file" : "lib/Locale/CLDR/En/Any/Dg.pm"
+      },
+      "Locale::CLDR::En::Any::Dm" : {
+         "file" : "lib/Locale/CLDR/En/Any/Dm.pm"
+      },
+      "Locale::CLDR::En::Any::Er" : {
+         "file" : "lib/Locale/CLDR/En/Any/Er.pm"
+      },
+      "Locale::CLDR::En::Any::Fj" : {
+         "file" : "lib/Locale/CLDR/En/Any/Fj.pm"
+      },
+      "Locale::CLDR::En::Any::Fk" : {
+         "file" : "lib/Locale/CLDR/En/Any/Fk.pm"
+      },
+      "Locale::CLDR::En::Any::Fm" : {
+         "file" : "lib/Locale/CLDR/En/Any/Fm.pm"
+      },
+      "Locale::CLDR::En::Any::Gb" : {
+         "file" : "lib/Locale/CLDR/En/Any/Gb.pm"
+      },
+      "Locale::CLDR::En::Any::Gd" : {
+         "file" : "lib/Locale/CLDR/En/Any/Gd.pm"
+      },
+      "Locale::CLDR::En::Any::Gg" : {
+         "file" : "lib/Locale/CLDR/En/Any/Gg.pm"
+      },
+      "Locale::CLDR::En::Any::Gh" : {
+         "file" : "lib/Locale/CLDR/En/Any/Gh.pm"
+      },
+      "Locale::CLDR::En::Any::Gi" : {
+         "file" : "lib/Locale/CLDR/En/Any/Gi.pm"
+      },
+      "Locale::CLDR::En::Any::Gm" : {
+         "file" : "lib/Locale/CLDR/En/Any/Gm.pm"
+      },
+      "Locale::CLDR::En::Any::Gu" : {
+         "file" : "lib/Locale/CLDR/En/Any/Gu.pm"
+      },
+      "Locale::CLDR::En::Any::Gy" : {
+         "file" : "lib/Locale/CLDR/En/Any/Gy.pm"
+      },
+      "Locale::CLDR::En::Any::Hk" : {
+         "file" : "lib/Locale/CLDR/En/Any/Hk.pm"
+      },
+      "Locale::CLDR::En::Any::Ie" : {
+         "file" : "lib/Locale/CLDR/En/Any/Ie.pm"
+      },
+      "Locale::CLDR::En::Any::Im" : {
+         "file" : "lib/Locale/CLDR/En/Any/Im.pm"
+      },
+      "Locale::CLDR::En::Any::In" : {
+         "file" : "lib/Locale/CLDR/En/Any/In.pm"
+      },
+      "Locale::CLDR::En::Any::Io" : {
+         "file" : "lib/Locale/CLDR/En/Any/Io.pm"
+      },
+      "Locale::CLDR::En::Any::Je" : {
+         "file" : "lib/Locale/CLDR/En/Any/Je.pm"
+      },
+      "Locale::CLDR::En::Any::Jm" : {
+         "file" : "lib/Locale/CLDR/En/Any/Jm.pm"
+      },
+      "Locale::CLDR::En::Any::Ke" : {
+         "file" : "lib/Locale/CLDR/En/Any/Ke.pm"
+      },
+      "Locale::CLDR::En::Any::Ki" : {
+         "file" : "lib/Locale/CLDR/En/Any/Ki.pm"
+      },
+      "Locale::CLDR::En::Any::Kn" : {
+         "file" : "lib/Locale/CLDR/En/Any/Kn.pm"
+      },
+      "Locale::CLDR::En::Any::Ky" : {
+         "file" : "lib/Locale/CLDR/En/Any/Ky.pm"
+      },
+      "Locale::CLDR::En::Any::Lc" : {
+         "file" : "lib/Locale/CLDR/En/Any/Lc.pm"
+      },
+      "Locale::CLDR::En::Any::Lr" : {
+         "file" : "lib/Locale/CLDR/En/Any/Lr.pm"
+      },
+      "Locale::CLDR::En::Any::Ls" : {
+         "file" : "lib/Locale/CLDR/En/Any/Ls.pm"
+      },
+      "Locale::CLDR::En::Any::Mg" : {
+         "file" : "lib/Locale/CLDR/En/Any/Mg.pm"
+      },
+      "Locale::CLDR::En::Any::Mh" : {
+         "file" : "lib/Locale/CLDR/En/Any/Mh.pm"
+      },
+      "Locale::CLDR::En::Any::Mo" : {
+         "file" : "lib/Locale/CLDR/En/Any/Mo.pm"
+      },
+      "Locale::CLDR::En::Any::Mp" : {
+         "file" : "lib/Locale/CLDR/En/Any/Mp.pm"
+      },
+      "Locale::CLDR::En::Any::Ms" : {
+         "file" : "lib/Locale/CLDR/En/Any/Ms.pm"
+      },
+      "Locale::CLDR::En::Any::Mt" : {
+         "file" : "lib/Locale/CLDR/En/Any/Mt.pm"
+      },
+      "Locale::CLDR::En::Any::Mu" : {
+         "file" : "lib/Locale/CLDR/En/Any/Mu.pm"
+      },
+      "Locale::CLDR::En::Any::Mw" : {
+         "file" : "lib/Locale/CLDR/En/Any/Mw.pm"
+      },
+      "Locale::CLDR::En::Any::Na" : {
+         "file" : "lib/Locale/CLDR/En/Any/Na.pm"
+      },
+      "Locale::CLDR::En::Any::Nf" : {
+         "file" : "lib/Locale/CLDR/En/Any/Nf.pm"
+      },
+      "Locale::CLDR::En::Any::Ng" : {
+         "file" : "lib/Locale/CLDR/En/Any/Ng.pm"
+      },
+      "Locale::CLDR::En::Any::Nr" : {
+         "file" : "lib/Locale/CLDR/En/Any/Nr.pm"
+      },
+      "Locale::CLDR::En::Any::Nu" : {
+         "file" : "lib/Locale/CLDR/En/Any/Nu.pm"
+      },
+      "Locale::CLDR::En::Any::Nz" : {
+         "file" : "lib/Locale/CLDR/En/Any/Nz.pm"
+      },
+      "Locale::CLDR::En::Any::Pg" : {
+         "file" : "lib/Locale/CLDR/En/Any/Pg.pm"
+      },
+      "Locale::CLDR::En::Any::Ph" : {
+         "file" : "lib/Locale/CLDR/En/Any/Ph.pm"
+      },
+      "Locale::CLDR::En::Any::Pk" : {
+         "file" : "lib/Locale/CLDR/En/Any/Pk.pm"
+      },
+      "Locale::CLDR::En::Any::Pn" : {
+         "file" : "lib/Locale/CLDR/En/Any/Pn.pm"
+      },
+      "Locale::CLDR::En::Any::Pr" : {
+         "file" : "lib/Locale/CLDR/En/Any/Pr.pm"
+      },
+      "Locale::CLDR::En::Any::Pw" : {
+         "file" : "lib/Locale/CLDR/En/Any/Pw.pm"
+      },
+      "Locale::CLDR::En::Any::Rw" : {
+         "file" : "lib/Locale/CLDR/En/Any/Rw.pm"
+      },
+      "Locale::CLDR::En::Any::Sb" : {
+         "file" : "lib/Locale/CLDR/En/Any/Sb.pm"
+      },
+      "Locale::CLDR::En::Any::Sc" : {
+         "file" : "lib/Locale/CLDR/En/Any/Sc.pm"
+      },
+      "Locale::CLDR::En::Any::Sd" : {
+         "file" : "lib/Locale/CLDR/En/Any/Sd.pm"
+      },
+      "Locale::CLDR::En::Any::Sg" : {
+         "file" : "lib/Locale/CLDR/En/Any/Sg.pm"
+      },
+      "Locale::CLDR::En::Any::Sh" : {
+         "file" : "lib/Locale/CLDR/En/Any/Sh.pm"
+      },
+      "Locale::CLDR::En::Any::Sl" : {
+         "file" : "lib/Locale/CLDR/En/Any/Sl.pm"
+      },
+      "Locale::CLDR::En::Any::Ss" : {
+         "file" : "lib/Locale/CLDR/En/Any/Ss.pm"
+      },
+      "Locale::CLDR::En::Any::Sx" : {
+         "file" : "lib/Locale/CLDR/En/Any/Sx.pm"
+      },
+      "Locale::CLDR::En::Any::Sz" : {
+         "file" : "lib/Locale/CLDR/En/Any/Sz.pm"
+      },
+      "Locale::CLDR::En::Any::Tc" : {
+         "file" : "lib/Locale/CLDR/En/Any/Tc.pm"
+      },
+      "Locale::CLDR::En::Any::Tk" : {
+         "file" : "lib/Locale/CLDR/En/Any/Tk.pm"
+      },
+      "Locale::CLDR::En::Any::To" : {
+         "file" : "lib/Locale/CLDR/En/Any/To.pm"
+      },
+      "Locale::CLDR::En::Any::Tt" : {
+         "file" : "lib/Locale/CLDR/En/Any/Tt.pm"
+      },
+      "Locale::CLDR::En::Any::Tv" : {
+         "file" : "lib/Locale/CLDR/En/Any/Tv.pm"
+      },
+      "Locale::CLDR::En::Any::Tz" : {
+         "file" : "lib/Locale/CLDR/En/Any/Tz.pm"
+      },
+      "Locale::CLDR::En::Any::Ug" : {
+         "file" : "lib/Locale/CLDR/En/Any/Ug.pm"
+      },
+      "Locale::CLDR::En::Any::Um" : {
+         "file" : "lib/Locale/CLDR/En/Any/Um.pm"
+      },
+      "Locale::CLDR::En::Any::Us" : {
+         "file" : "lib/Locale/CLDR/En/Any/Us.pm"
+      },
+      "Locale::CLDR::En::Any::Us::Posix" : {
+         "file" : "lib/Locale/CLDR/En/Any/Us/Posix.pm"
+      },
+      "Locale::CLDR::En::Any::Vc" : {
+         "file" : "lib/Locale/CLDR/En/Any/Vc.pm"
+      },
+      "Locale::CLDR::En::Any::Vg" : {
+         "file" : "lib/Locale/CLDR/En/Any/Vg.pm"
+      },
+      "Locale::CLDR::En::Any::Vi" : {
+         "file" : "lib/Locale/CLDR/En/Any/Vi.pm"
+      },
+      "Locale::CLDR::En::Any::Vu" : {
+         "file" : "lib/Locale/CLDR/En/Any/Vu.pm"
+      },
+      "Locale::CLDR::En::Any::Ws" : {
+         "file" : "lib/Locale/CLDR/En/Any/Ws.pm"
+      },
+      "Locale::CLDR::En::Any::Za" : {
+         "file" : "lib/Locale/CLDR/En/Any/Za.pm"
+      },
+      "Locale::CLDR::En::Any::Zm" : {
+         "file" : "lib/Locale/CLDR/En/Any/Zm.pm"
+      },
+      "Locale::CLDR::En::Any::Zw" : {
+         "file" : "lib/Locale/CLDR/En/Any/Zw.pm"
+      },
+      "Locale::CLDR::Eo" : {
+         "file" : "lib/Locale/CLDR/Eo.pm"
+      },
+      "Locale::CLDR::Eo::Any" : {
+         "file" : "lib/Locale/CLDR/Eo/Any.pm"
+      },
+      "Locale::CLDR::Eo::Any::001" : {
+         "file" : "lib/Locale/CLDR/Eo/Any/001.pm"
+      },
+      "Locale::CLDR::EraBoundries" : {
+         "file" : "lib/Locale/CLDR/EraBoundries.pm"
+      },
+      "Locale::CLDR::Es" : {
+         "file" : "lib/Locale/CLDR/Es.pm"
+      },
+      "Locale::CLDR::Es::Any" : {
+         "file" : "lib/Locale/CLDR/Es/Any.pm"
+      },
+      "Locale::CLDR::Es::Any::419" : {
+         "file" : "lib/Locale/CLDR/Es/Any/419.pm"
+      },
+      "Locale::CLDR::Es::Any::Ar" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Ar.pm"
+      },
+      "Locale::CLDR::Es::Any::Bo" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Bo.pm"
+      },
+      "Locale::CLDR::Es::Any::Cl" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Cl.pm"
+      },
+      "Locale::CLDR::Es::Any::Co" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Co.pm"
+      },
+      "Locale::CLDR::Es::Any::Cr" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Cr.pm"
+      },
+      "Locale::CLDR::Es::Any::Cu" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Cu.pm"
+      },
+      "Locale::CLDR::Es::Any::Do" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Do.pm"
+      },
+      "Locale::CLDR::Es::Any::Ea" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Ea.pm"
+      },
+      "Locale::CLDR::Es::Any::Ec" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Ec.pm"
+      },
+      "Locale::CLDR::Es::Any::Es" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Es.pm"
+      },
+      "Locale::CLDR::Es::Any::Gq" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Gq.pm"
+      },
+      "Locale::CLDR::Es::Any::Gt" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Gt.pm"
+      },
+      "Locale::CLDR::Es::Any::Hn" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Hn.pm"
+      },
+      "Locale::CLDR::Es::Any::Ic" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Ic.pm"
+      },
+      "Locale::CLDR::Es::Any::Mx" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Mx.pm"
+      },
+      "Locale::CLDR::Es::Any::Ni" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Ni.pm"
+      },
+      "Locale::CLDR::Es::Any::Pa" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Pa.pm"
+      },
+      "Locale::CLDR::Es::Any::Pe" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Pe.pm"
+      },
+      "Locale::CLDR::Es::Any::Ph" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Ph.pm"
+      },
+      "Locale::CLDR::Es::Any::Pr" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Pr.pm"
+      },
+      "Locale::CLDR::Es::Any::Py" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Py.pm"
+      },
+      "Locale::CLDR::Es::Any::Sv" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Sv.pm"
+      },
+      "Locale::CLDR::Es::Any::Us" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Us.pm"
+      },
+      "Locale::CLDR::Es::Any::Uy" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Uy.pm"
+      },
+      "Locale::CLDR::Es::Any::Ve" : {
+         "file" : "lib/Locale/CLDR/Es/Any/Ve.pm"
+      },
+      "Locale::CLDR::Et" : {
+         "file" : "lib/Locale/CLDR/Et.pm"
+      },
+      "Locale::CLDR::Et::Any" : {
+         "file" : "lib/Locale/CLDR/Et/Any.pm"
+      },
+      "Locale::CLDR::Et::Any::Ee" : {
+         "file" : "lib/Locale/CLDR/Et/Any/Ee.pm"
+      },
+      "Locale::CLDR::Eu" : {
+         "file" : "lib/Locale/CLDR/Eu.pm"
+      },
+      "Locale::CLDR::Eu::Any" : {
+         "file" : "lib/Locale/CLDR/Eu/Any.pm"
+      },
+      "Locale::CLDR::Eu::Any::Es" : {
+         "file" : "lib/Locale/CLDR/Eu/Any/Es.pm"
+      },
+      "Locale::CLDR::Ewo" : {
+         "file" : "lib/Locale/CLDR/Ewo.pm"
+      },
+      "Locale::CLDR::Ewo::Any" : {
+         "file" : "lib/Locale/CLDR/Ewo/Any.pm"
+      },
+      "Locale::CLDR::Ewo::Any::Cm" : {
+         "file" : "lib/Locale/CLDR/Ewo/Any/Cm.pm"
+      },
+      "Locale::CLDR::Fa" : {
+         "file" : "lib/Locale/CLDR/Fa.pm"
+      },
+      "Locale::CLDR::Fa::Any" : {
+         "file" : "lib/Locale/CLDR/Fa/Any.pm"
+      },
+      "Locale::CLDR::Fa::Any::Af" : {
+         "file" : "lib/Locale/CLDR/Fa/Any/Af.pm"
+      },
+      "Locale::CLDR::Fa::Any::Ir" : {
+         "file" : "lib/Locale/CLDR/Fa/Any/Ir.pm"
+      },
+      "Locale::CLDR::Ff" : {
+         "file" : "lib/Locale/CLDR/Ff.pm"
+      },
+      "Locale::CLDR::Ff::Any" : {
+         "file" : "lib/Locale/CLDR/Ff/Any.pm"
+      },
+      "Locale::CLDR::Ff::Any::Cm" : {
+         "file" : "lib/Locale/CLDR/Ff/Any/Cm.pm"
+      },
+      "Locale::CLDR::Ff::Any::Gn" : {
+         "file" : "lib/Locale/CLDR/Ff/Any/Gn.pm"
+      },
+      "Locale::CLDR::Ff::Any::Mr" : {
+         "file" : "lib/Locale/CLDR/Ff/Any/Mr.pm"
+      },
+      "Locale::CLDR::Ff::Any::Sn" : {
+         "file" : "lib/Locale/CLDR/Ff/Any/Sn.pm"
+      },
+      "Locale::CLDR::Fi" : {
+         "file" : "lib/Locale/CLDR/Fi.pm"
+      },
+      "Locale::CLDR::Fi::Any" : {
+         "file" : "lib/Locale/CLDR/Fi/Any.pm"
+      },
+      "Locale::CLDR::Fi::Any::Fi" : {
+         "file" : "lib/Locale/CLDR/Fi/Any/Fi.pm"
+      },
+      "Locale::CLDR::Fil" : {
+         "file" : "lib/Locale/CLDR/Fil.pm"
+      },
+      "Locale::CLDR::Fil::Any" : {
+         "file" : "lib/Locale/CLDR/Fil/Any.pm"
+      },
+      "Locale::CLDR::Fil::Any::Ph" : {
+         "file" : "lib/Locale/CLDR/Fil/Any/Ph.pm"
+      },
+      "Locale::CLDR::Fo" : {
+         "file" : "lib/Locale/CLDR/Fo.pm"
+      },
+      "Locale::CLDR::Fo::Any" : {
+         "file" : "lib/Locale/CLDR/Fo/Any.pm"
+      },
+      "Locale::CLDR::Fo::Any::Fo" : {
+         "file" : "lib/Locale/CLDR/Fo/Any/Fo.pm"
+      },
+      "Locale::CLDR::Fr" : {
+         "file" : "lib/Locale/CLDR/Fr.pm"
+      },
+      "Locale::CLDR::Fr::Any" : {
+         "file" : "lib/Locale/CLDR/Fr/Any.pm"
+      },
+      "Locale::CLDR::Fr::Any::Be" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Be.pm"
+      },
+      "Locale::CLDR::Fr::Any::Bf" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Bf.pm"
+      },
+      "Locale::CLDR::Fr::Any::Bi" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Bi.pm"
+      },
+      "Locale::CLDR::Fr::Any::Bj" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Bj.pm"
+      },
+      "Locale::CLDR::Fr::Any::Bl" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Bl.pm"
+      },
+      "Locale::CLDR::Fr::Any::Ca" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Ca.pm"
+      },
+      "Locale::CLDR::Fr::Any::Cd" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Cd.pm"
+      },
+      "Locale::CLDR::Fr::Any::Cf" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Cf.pm"
+      },
+      "Locale::CLDR::Fr::Any::Cg" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Cg.pm"
+      },
+      "Locale::CLDR::Fr::Any::Ch" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Ch.pm"
+      },
+      "Locale::CLDR::Fr::Any::Ci" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Ci.pm"
+      },
+      "Locale::CLDR::Fr::Any::Cm" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Cm.pm"
+      },
+      "Locale::CLDR::Fr::Any::Dj" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Dj.pm"
+      },
+      "Locale::CLDR::Fr::Any::Dz" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Dz.pm"
+      },
+      "Locale::CLDR::Fr::Any::Fr" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Fr.pm"
+      },
+      "Locale::CLDR::Fr::Any::Ga" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Ga.pm"
+      },
+      "Locale::CLDR::Fr::Any::Gf" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Gf.pm"
+      },
+      "Locale::CLDR::Fr::Any::Gn" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Gn.pm"
+      },
+      "Locale::CLDR::Fr::Any::Gp" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Gp.pm"
+      },
+      "Locale::CLDR::Fr::Any::Gq" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Gq.pm"
+      },
+      "Locale::CLDR::Fr::Any::Ht" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Ht.pm"
+      },
+      "Locale::CLDR::Fr::Any::Km" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Km.pm"
+      },
+      "Locale::CLDR::Fr::Any::Lu" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Lu.pm"
+      },
+      "Locale::CLDR::Fr::Any::Ma" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Ma.pm"
+      },
+      "Locale::CLDR::Fr::Any::Mc" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Mc.pm"
+      },
+      "Locale::CLDR::Fr::Any::Mf" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Mf.pm"
+      },
+      "Locale::CLDR::Fr::Any::Mg" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Mg.pm"
+      },
+      "Locale::CLDR::Fr::Any::Ml" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Ml.pm"
+      },
+      "Locale::CLDR::Fr::Any::Mq" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Mq.pm"
+      },
+      "Locale::CLDR::Fr::Any::Mr" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Mr.pm"
+      },
+      "Locale::CLDR::Fr::Any::Mu" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Mu.pm"
+      },
+      "Locale::CLDR::Fr::Any::Nc" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Nc.pm"
+      },
+      "Locale::CLDR::Fr::Any::Ne" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Ne.pm"
+      },
+      "Locale::CLDR::Fr::Any::Pf" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Pf.pm"
+      },
+      "Locale::CLDR::Fr::Any::Pm" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Pm.pm"
+      },
+      "Locale::CLDR::Fr::Any::Re" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Re.pm"
+      },
+      "Locale::CLDR::Fr::Any::Rw" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Rw.pm"
+      },
+      "Locale::CLDR::Fr::Any::Sc" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Sc.pm"
+      },
+      "Locale::CLDR::Fr::Any::Sn" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Sn.pm"
+      },
+      "Locale::CLDR::Fr::Any::Sy" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Sy.pm"
+      },
+      "Locale::CLDR::Fr::Any::Td" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Td.pm"
+      },
+      "Locale::CLDR::Fr::Any::Tg" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Tg.pm"
+      },
+      "Locale::CLDR::Fr::Any::Tn" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Tn.pm"
+      },
+      "Locale::CLDR::Fr::Any::Vu" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Vu.pm"
+      },
+      "Locale::CLDR::Fr::Any::Wf" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Wf.pm"
+      },
+      "Locale::CLDR::Fr::Any::Yt" : {
+         "file" : "lib/Locale/CLDR/Fr/Any/Yt.pm"
+      },
+      "Locale::CLDR::Fur" : {
+         "file" : "lib/Locale/CLDR/Fur.pm"
+      },
+      "Locale::CLDR::Fur::Any" : {
+         "file" : "lib/Locale/CLDR/Fur/Any.pm"
+      },
+      "Locale::CLDR::Fur::Any::It" : {
+         "file" : "lib/Locale/CLDR/Fur/Any/It.pm"
+      },
+      "Locale::CLDR::Fy" : {
+         "file" : "lib/Locale/CLDR/Fy.pm"
+      },
+      "Locale::CLDR::Fy::Any" : {
+         "file" : "lib/Locale/CLDR/Fy/Any.pm"
+      },
+      "Locale::CLDR::Fy::Any::Nl" : {
+         "file" : "lib/Locale/CLDR/Fy/Any/Nl.pm"
+      },
+      "Locale::CLDR::Ga" : {
+         "file" : "lib/Locale/CLDR/Ga.pm"
+      },
+      "Locale::CLDR::Ga::Any" : {
+         "file" : "lib/Locale/CLDR/Ga/Any.pm"
+      },
+      "Locale::CLDR::Ga::Any::Ie" : {
+         "file" : "lib/Locale/CLDR/Ga/Any/Ie.pm"
+      },
+      "Locale::CLDR::Gd" : {
+         "file" : "lib/Locale/CLDR/Gd.pm"
+      },
+      "Locale::CLDR::Gd::Any" : {
+         "file" : "lib/Locale/CLDR/Gd/Any.pm"
+      },
+      "Locale::CLDR::Gd::Any::Gb" : {
+         "file" : "lib/Locale/CLDR/Gd/Any/Gb.pm"
+      },
+      "Locale::CLDR::Gl" : {
+         "file" : "lib/Locale/CLDR/Gl.pm"
+      },
+      "Locale::CLDR::Gl::Any" : {
+         "file" : "lib/Locale/CLDR/Gl/Any.pm"
+      },
+      "Locale::CLDR::Gl::Any::Es" : {
+         "file" : "lib/Locale/CLDR/Gl/Any/Es.pm"
+      },
+      "Locale::CLDR::Gsw" : {
+         "file" : "lib/Locale/CLDR/Gsw.pm"
+      },
+      "Locale::CLDR::Gsw::Any" : {
+         "file" : "lib/Locale/CLDR/Gsw/Any.pm"
+      },
+      "Locale::CLDR::Gsw::Any::Ch" : {
+         "file" : "lib/Locale/CLDR/Gsw/Any/Ch.pm"
+      },
+      "Locale::CLDR::Gsw::Any::Li" : {
+         "file" : "lib/Locale/CLDR/Gsw/Any/Li.pm"
+      },
+      "Locale::CLDR::Gu" : {
+         "file" : "lib/Locale/CLDR/Gu.pm"
+      },
+      "Locale::CLDR::Gu::Any" : {
+         "file" : "lib/Locale/CLDR/Gu/Any.pm"
+      },
+      "Locale::CLDR::Gu::Any::In" : {
+         "file" : "lib/Locale/CLDR/Gu/Any/In.pm"
+      },
+      "Locale::CLDR::Guz" : {
+         "file" : "lib/Locale/CLDR/Guz.pm"
+      },
+      "Locale::CLDR::Guz::Any" : {
+         "file" : "lib/Locale/CLDR/Guz/Any.pm"
+      },
+      "Locale::CLDR::Guz::Any::Ke" : {
+         "file" : "lib/Locale/CLDR/Guz/Any/Ke.pm"
+      },
+      "Locale::CLDR::Gv" : {
+         "file" : "lib/Locale/CLDR/Gv.pm"
+      },
+      "Locale::CLDR::Gv::Any" : {
+         "file" : "lib/Locale/CLDR/Gv/Any.pm"
+      },
+      "Locale::CLDR::Gv::Any::Im" : {
+         "file" : "lib/Locale/CLDR/Gv/Any/Im.pm"
+      },
+      "Locale::CLDR::Ha" : {
+         "file" : "lib/Locale/CLDR/Ha.pm"
+      },
+      "Locale::CLDR::Ha::Latn" : {
+         "file" : "lib/Locale/CLDR/Ha/Latn.pm"
+      },
+      "Locale::CLDR::Ha::Latn::Gh" : {
+         "file" : "lib/Locale/CLDR/Ha/Latn/Gh.pm"
+      },
+      "Locale::CLDR::Ha::Latn::Ne" : {
+         "file" : "lib/Locale/CLDR/Ha/Latn/Ne.pm"
+      },
+      "Locale::CLDR::Ha::Latn::Ng" : {
+         "file" : "lib/Locale/CLDR/Ha/Latn/Ng.pm"
+      },
+      "Locale::CLDR::Haw" : {
+         "file" : "lib/Locale/CLDR/Haw.pm"
+      },
+      "Locale::CLDR::Haw::Any" : {
+         "file" : "lib/Locale/CLDR/Haw/Any.pm"
+      },
+      "Locale::CLDR::Haw::Any::Us" : {
+         "file" : "lib/Locale/CLDR/Haw/Any/Us.pm"
+      },
+      "Locale::CLDR::He" : {
+         "file" : "lib/Locale/CLDR/He.pm"
+      },
+      "Locale::CLDR::He::Any" : {
+         "file" : "lib/Locale/CLDR/He/Any.pm"
+      },
+      "Locale::CLDR::He::Any::Il" : {
+         "file" : "lib/Locale/CLDR/He/Any/Il.pm"
+      },
+      "Locale::CLDR::Hi" : {
+         "file" : "lib/Locale/CLDR/Hi.pm"
+      },
+      "Locale::CLDR::Hi::Any" : {
+         "file" : "lib/Locale/CLDR/Hi/Any.pm"
+      },
+      "Locale::CLDR::Hi::Any::In" : {
+         "file" : "lib/Locale/CLDR/Hi/Any/In.pm"
+      },
+      "Locale::CLDR::Hr" : {
+         "file" : "lib/Locale/CLDR/Hr.pm"
+      },
+      "Locale::CLDR::Hr::Any" : {
+         "file" : "lib/Locale/CLDR/Hr/Any.pm"
+      },
+      "Locale::CLDR::Hr::Any::Ba" : {
+         "file" : "lib/Locale/CLDR/Hr/Any/Ba.pm"
+      },
+      "Locale::CLDR::Hr::Any::Hr" : {
+         "file" : "lib/Locale/CLDR/Hr/Any/Hr.pm"
+      },
+      "Locale::CLDR::Hu" : {
+         "file" : "lib/Locale/CLDR/Hu.pm"
+      },
+      "Locale::CLDR::Hu::Any" : {
+         "file" : "lib/Locale/CLDR/Hu/Any.pm"
+      },
+      "Locale::CLDR::Hu::Any::Hu" : {
+         "file" : "lib/Locale/CLDR/Hu/Any/Hu.pm"
+      },
+      "Locale::CLDR::Hy" : {
+         "file" : "lib/Locale/CLDR/Hy.pm"
+      },
+      "Locale::CLDR::Hy::Any" : {
+         "file" : "lib/Locale/CLDR/Hy/Any.pm"
+      },
+      "Locale::CLDR::Hy::Any::Am" : {
+         "file" : "lib/Locale/CLDR/Hy/Any/Am.pm"
+      },
+      "Locale::CLDR::Ia" : {
+         "file" : "lib/Locale/CLDR/Ia.pm"
+      },
+      "Locale::CLDR::Ia::Any" : {
+         "file" : "lib/Locale/CLDR/Ia/Any.pm"
+      },
+      "Locale::CLDR::Ia::Any::Fr" : {
+         "file" : "lib/Locale/CLDR/Ia/Any/Fr.pm"
+      },
+      "Locale::CLDR::Id" : {
+         "file" : "lib/Locale/CLDR/Id.pm"
+      },
+      "Locale::CLDR::Id::Any" : {
+         "file" : "lib/Locale/CLDR/Id/Any.pm"
+      },
+      "Locale::CLDR::Id::Any::Id" : {
+         "file" : "lib/Locale/CLDR/Id/Any/Id.pm"
+      },
+      "Locale::CLDR::Ig" : {
+         "file" : "lib/Locale/CLDR/Ig.pm"
+      },
+      "Locale::CLDR::Ig::Any" : {
+         "file" : "lib/Locale/CLDR/Ig/Any.pm"
+      },
+      "Locale::CLDR::Ig::Any::Ng" : {
+         "file" : "lib/Locale/CLDR/Ig/Any/Ng.pm"
+      },
+      "Locale::CLDR::Ii" : {
+         "file" : "lib/Locale/CLDR/Ii.pm"
+      },
+      "Locale::CLDR::Ii::Any" : {
+         "file" : "lib/Locale/CLDR/Ii/Any.pm"
+      },
+      "Locale::CLDR::Ii::Any::Cn" : {
+         "file" : "lib/Locale/CLDR/Ii/Any/Cn.pm"
+      },
+      "Locale::CLDR::Is" : {
+         "file" : "lib/Locale/CLDR/Is.pm"
+      },
+      "Locale::CLDR::Is::Any" : {
+         "file" : "lib/Locale/CLDR/Is/Any.pm"
+      },
+      "Locale::CLDR::Is::Any::Is" : {
+         "file" : "lib/Locale/CLDR/Is/Any/Is.pm"
+      },
+      "Locale::CLDR::It" : {
+         "file" : "lib/Locale/CLDR/It.pm"
+      },
+      "Locale::CLDR::It::Any" : {
+         "file" : "lib/Locale/CLDR/It/Any.pm"
+      },
+      "Locale::CLDR::It::Any::Ch" : {
+         "file" : "lib/Locale/CLDR/It/Any/Ch.pm"
+      },
+      "Locale::CLDR::It::Any::It" : {
+         "file" : "lib/Locale/CLDR/It/Any/It.pm"
+      },
+      "Locale::CLDR::It::Any::Sm" : {
+         "file" : "lib/Locale/CLDR/It/Any/Sm.pm"
+      },
+      "Locale::CLDR::Ja" : {
+         "file" : "lib/Locale/CLDR/Ja.pm"
+      },
+      "Locale::CLDR::Ja::Any" : {
+         "file" : "lib/Locale/CLDR/Ja/Any.pm"
+      },
+      "Locale::CLDR::Ja::Any::Jp" : {
+         "file" : "lib/Locale/CLDR/Ja/Any/Jp.pm"
+      },
+      "Locale::CLDR::Jgo" : {
+         "file" : "lib/Locale/CLDR/Jgo.pm"
+      },
+      "Locale::CLDR::Jgo::Any" : {
+         "file" : "lib/Locale/CLDR/Jgo/Any.pm"
+      },
+      "Locale::CLDR::Jgo::Any::Cm" : {
+         "file" : "lib/Locale/CLDR/Jgo/Any/Cm.pm"
+      },
+      "Locale::CLDR::Jmc" : {
+         "file" : "lib/Locale/CLDR/Jmc.pm"
+      },
+      "Locale::CLDR::Jmc::Any" : {
+         "file" : "lib/Locale/CLDR/Jmc/Any.pm"
+      },
+      "Locale::CLDR::Jmc::Any::Tz" : {
+         "file" : "lib/Locale/CLDR/Jmc/Any/Tz.pm"
+      },
+      "Locale::CLDR::Ka" : {
+         "file" : "lib/Locale/CLDR/Ka.pm"
+      },
+      "Locale::CLDR::Ka::Any" : {
+         "file" : "lib/Locale/CLDR/Ka/Any.pm"
+      },
+      "Locale::CLDR::Ka::Any::Ge" : {
+         "file" : "lib/Locale/CLDR/Ka/Any/Ge.pm"
+      },
+      "Locale::CLDR::Kab" : {
+         "file" : "lib/Locale/CLDR/Kab.pm"
+      },
+      "Locale::CLDR::Kab::Any" : {
+         "file" : "lib/Locale/CLDR/Kab/Any.pm"
+      },
+      "Locale::CLDR::Kab::Any::Dz" : {
+         "file" : "lib/Locale/CLDR/Kab/Any/Dz.pm"
+      },
+      "Locale::CLDR::Kam" : {
+         "file" : "lib/Locale/CLDR/Kam.pm"
+      },
+      "Locale::CLDR::Kam::Any" : {
+         "file" : "lib/Locale/CLDR/Kam/Any.pm"
+      },
+      "Locale::CLDR::Kam::Any::Ke" : {
+         "file" : "lib/Locale/CLDR/Kam/Any/Ke.pm"
+      },
+      "Locale::CLDR::Kde" : {
+         "file" : "lib/Locale/CLDR/Kde.pm"
+      },
+      "Locale::CLDR::Kde::Any" : {
+         "file" : "lib/Locale/CLDR/Kde/Any.pm"
+      },
+      "Locale::CLDR::Kde::Any::Tz" : {
+         "file" : "lib/Locale/CLDR/Kde/Any/Tz.pm"
+      },
+      "Locale::CLDR::Kea" : {
+         "file" : "lib/Locale/CLDR/Kea.pm"
+      },
+      "Locale::CLDR::Kea::Any" : {
+         "file" : "lib/Locale/CLDR/Kea/Any.pm"
+      },
+      "Locale::CLDR::Kea::Any::Cv" : {
+         "file" : "lib/Locale/CLDR/Kea/Any/Cv.pm"
+      },
+      "Locale::CLDR::Khq" : {
+         "file" : "lib/Locale/CLDR/Khq.pm"
+      },
+      "Locale::CLDR::Khq::Any" : {
+         "file" : "lib/Locale/CLDR/Khq/Any.pm"
+      },
+      "Locale::CLDR::Khq::Any::Ml" : {
+         "file" : "lib/Locale/CLDR/Khq/Any/Ml.pm"
+      },
+      "Locale::CLDR::Ki" : {
+         "file" : "lib/Locale/CLDR/Ki.pm"
+      },
+      "Locale::CLDR::Ki::Any" : {
+         "file" : "lib/Locale/CLDR/Ki/Any.pm"
+      },
+      "Locale::CLDR::Ki::Any::Ke" : {
+         "file" : "lib/Locale/CLDR/Ki/Any/Ke.pm"
+      },
+      "Locale::CLDR::Kk" : {
+         "file" : "lib/Locale/CLDR/Kk.pm"
+      },
+      "Locale::CLDR::Kk::Cyrl" : {
+         "file" : "lib/Locale/CLDR/Kk/Cyrl.pm"
+      },
+      "Locale::CLDR::Kk::Cyrl::Kz" : {
+         "file" : "lib/Locale/CLDR/Kk/Cyrl/Kz.pm"
+      },
+      "Locale::CLDR::Kkj" : {
+         "file" : "lib/Locale/CLDR/Kkj.pm"
+      },
+      "Locale::CLDR::Kkj::Any" : {
+         "file" : "lib/Locale/CLDR/Kkj/Any.pm"
+      },
+      "Locale::CLDR::Kkj::Any::Cm" : {
+         "file" : "lib/Locale/CLDR/Kkj/Any/Cm.pm"
+      },
+      "Locale::CLDR::Kl" : {
+         "file" : "lib/Locale/CLDR/Kl.pm"
+      },
+      "Locale::CLDR::Kl::Any" : {
+         "file" : "lib/Locale/CLDR/Kl/Any.pm"
+      },
+      "Locale::CLDR::Kl::Any::Gl" : {
+         "file" : "lib/Locale/CLDR/Kl/Any/Gl.pm"
+      },
+      "Locale::CLDR::Kln" : {
+         "file" : "lib/Locale/CLDR/Kln.pm"
+      },
+      "Locale::CLDR::Kln::Any" : {
+         "file" : "lib/Locale/CLDR/Kln/Any.pm"
+      },
+      "Locale::CLDR::Kln::Any::Ke" : {
+         "file" : "lib/Locale/CLDR/Kln/Any/Ke.pm"
+      },
+      "Locale::CLDR::Km" : {
+         "file" : "lib/Locale/CLDR/Km.pm"
+      },
+      "Locale::CLDR::Km::Any" : {
+         "file" : "lib/Locale/CLDR/Km/Any.pm"
+      },
+      "Locale::CLDR::Km::Any::Kh" : {
+         "file" : "lib/Locale/CLDR/Km/Any/Kh.pm"
+      },
+      "Locale::CLDR::Kn" : {
+         "file" : "lib/Locale/CLDR/Kn.pm"
+      },
+      "Locale::CLDR::Kn::Any" : {
+         "file" : "lib/Locale/CLDR/Kn/Any.pm"
+      },
+      "Locale::CLDR::Kn::Any::In" : {
+         "file" : "lib/Locale/CLDR/Kn/Any/In.pm"
+      },
+      "Locale::CLDR::Ko" : {
+         "file" : "lib/Locale/CLDR/Ko.pm"
+      },
+      "Locale::CLDR::Ko::Any" : {
+         "file" : "lib/Locale/CLDR/Ko/Any.pm"
+      },
+      "Locale::CLDR::Ko::Any::Kp" : {
+         "file" : "lib/Locale/CLDR/Ko/Any/Kp.pm"
+      },
+      "Locale::CLDR::Ko::Any::Kr" : {
+         "file" : "lib/Locale/CLDR/Ko/Any/Kr.pm"
+      },
+      "Locale::CLDR::Kok" : {
+         "file" : "lib/Locale/CLDR/Kok.pm"
+      },
+      "Locale::CLDR::Kok::Any" : {
+         "file" : "lib/Locale/CLDR/Kok/Any.pm"
+      },
+      "Locale::CLDR::Kok::Any::In" : {
+         "file" : "lib/Locale/CLDR/Kok/Any/In.pm"
+      },
+      "Locale::CLDR::Ks" : {
+         "file" : "lib/Locale/CLDR/Ks.pm"
+      },
+      "Locale::CLDR::Ks::Arab" : {
+         "file" : "lib/Locale/CLDR/Ks/Arab.pm"
+      },
+      "Locale::CLDR::Ks::Arab::In" : {
+         "file" : "lib/Locale/CLDR/Ks/Arab/In.pm"
+      },
+      "Locale::CLDR::Ksb" : {
+         "file" : "lib/Locale/CLDR/Ksb.pm"
+      },
+      "Locale::CLDR::Ksb::Any" : {
+         "file" : "lib/Locale/CLDR/Ksb/Any.pm"
+      },
+      "Locale::CLDR::Ksb::Any::Tz" : {
+         "file" : "lib/Locale/CLDR/Ksb/Any/Tz.pm"
+      },
+      "Locale::CLDR::Ksf" : {
+         "file" : "lib/Locale/CLDR/Ksf.pm"
+      },
+      "Locale::CLDR::Ksf::Any" : {
+         "file" : "lib/Locale/CLDR/Ksf/Any.pm"
+      },
+      "Locale::CLDR::Ksf::Any::Cm" : {
+         "file" : "lib/Locale/CLDR/Ksf/Any/Cm.pm"
+      },
+      "Locale::CLDR::Ksh" : {
+         "file" : "lib/Locale/CLDR/Ksh.pm"
+      },
+      "Locale::CLDR::Ksh::Any" : {
+         "file" : "lib/Locale/CLDR/Ksh/Any.pm"
+      },
+      "Locale::CLDR::Ksh::Any::De" : {
+         "file" : "lib/Locale/CLDR/Ksh/Any/De.pm"
+      },
+      "Locale::CLDR::Kw" : {
+         "file" : "lib/Locale/CLDR/Kw.pm"
+      },
+      "Locale::CLDR::Kw::Any" : {
+         "file" : "lib/Locale/CLDR/Kw/Any.pm"
+      },
+      "Locale::CLDR::Kw::Any::Gb" : {
+         "file" : "lib/Locale/CLDR/Kw/Any/Gb.pm"
+      },
+      "Locale::CLDR::Ky" : {
+         "file" : "lib/Locale/CLDR/Ky.pm"
+      },
+      "Locale::CLDR::Ky::Cyrl" : {
+         "file" : "lib/Locale/CLDR/Ky/Cyrl.pm"
+      },
+      "Locale::CLDR::Ky::Cyrl::Kg" : {
+         "file" : "lib/Locale/CLDR/Ky/Cyrl/Kg.pm"
+      },
+      "Locale::CLDR::Lag" : {
+         "file" : "lib/Locale/CLDR/Lag.pm"
+      },
+      "Locale::CLDR::Lag::Any" : {
+         "file" : "lib/Locale/CLDR/Lag/Any.pm"
+      },
+      "Locale::CLDR::Lag::Any::Tz" : {
+         "file" : "lib/Locale/CLDR/Lag/Any/Tz.pm"
+      },
+      "Locale::CLDR::Lg" : {
+         "file" : "lib/Locale/CLDR/Lg.pm"
+      },
+      "Locale::CLDR::Lg::Any" : {
+         "file" : "lib/Locale/CLDR/Lg/Any.pm"
+      },
+      "Locale::CLDR::Lg::Any::Ug" : {
+         "file" : "lib/Locale/CLDR/Lg/Any/Ug.pm"
+      },
+      "Locale::CLDR::LikelySubtags" : {
+         "file" : "lib/Locale/CLDR/LikelySubtags.pm"
+      },
+      "Locale::CLDR::Lkt" : {
+         "file" : "lib/Locale/CLDR/Lkt.pm"
+      },
+      "Locale::CLDR::Lkt::Any" : {
+         "file" : "lib/Locale/CLDR/Lkt/Any.pm"
+      },
+      "Locale::CLDR::Lkt::Any::Us" : {
+         "file" : "lib/Locale/CLDR/Lkt/Any/Us.pm"
+      },
+      "Locale::CLDR::Ln" : {
+         "file" : "lib/Locale/CLDR/Ln.pm"
+      },
+      "Locale::CLDR::Ln::Any" : {
+         "file" : "lib/Locale/CLDR/Ln/Any.pm"
+      },
+      "Locale::CLDR::Ln::Any::Ao" : {
+         "file" : "lib/Locale/CLDR/Ln/Any/Ao.pm"
+      },
+      "Locale::CLDR::Ln::Any::Cd" : {
+         "file" : "lib/Locale/CLDR/Ln/Any/Cd.pm"
+      },
+      "Locale::CLDR::Ln::Any::Cf" : {
+         "file" : "lib/Locale/CLDR/Ln/Any/Cf.pm"
+      },
+      "Locale::CLDR::Ln::Any::Cg" : {
+         "file" : "lib/Locale/CLDR/Ln/Any/Cg.pm"
+      },
+      "Locale::CLDR::Lo" : {
+         "file" : "lib/Locale/CLDR/Lo.pm"
+      },
+      "Locale::CLDR::Lo::Any" : {
+         "file" : "lib/Locale/CLDR/Lo/Any.pm"
+      },
+      "Locale::CLDR::Lo::Any::La" : {
+         "file" : "lib/Locale/CLDR/Lo/Any/La.pm"
+      },
+      "Locale::CLDR::Lt" : {
+         "file" : "lib/Locale/CLDR/Lt.pm"
+      },
+      "Locale::CLDR::Lt::Any" : {
+         "file" : "lib/Locale/CLDR/Lt/Any.pm"
+      },
+      "Locale::CLDR::Lt::Any::Lt" : {
+         "file" : "lib/Locale/CLDR/Lt/Any/Lt.pm"
+      },
+      "Locale::CLDR::Lu" : {
+         "file" : "lib/Locale/CLDR/Lu.pm"
+      },
+      "Locale::CLDR::Lu::Any" : {
+         "file" : "lib/Locale/CLDR/Lu/Any.pm"
+      },
+      "Locale::CLDR::Lu::Any::Cd" : {
+         "file" : "lib/Locale/CLDR/Lu/Any/Cd.pm"
+      },
+      "Locale::CLDR::Luo" : {
+         "file" : "lib/Locale/CLDR/Luo.pm"
+      },
+      "Locale::CLDR::Luo::Any" : {
+         "file" : "lib/Locale/CLDR/Luo/Any.pm"
+      },
+      "Locale::CLDR::Luo::Any::Ke" : {
+         "file" : "lib/Locale/CLDR/Luo/Any/Ke.pm"
+      },
+      "Locale::CLDR::Luy" : {
+         "file" : "lib/Locale/CLDR/Luy.pm"
+      },
+      "Locale::CLDR::Luy::Any" : {
+         "file" : "lib/Locale/CLDR/Luy/Any.pm"
+      },
+      "Locale::CLDR::Luy::Any::Ke" : {
+         "file" : "lib/Locale/CLDR/Luy/Any/Ke.pm"
+      },
+      "Locale::CLDR::Lv" : {
+         "file" : "lib/Locale/CLDR/Lv.pm"
+      },
+      "Locale::CLDR::Lv::Any" : {
+         "file" : "lib/Locale/CLDR/Lv/Any.pm"
+      },
+      "Locale::CLDR::Lv::Any::Lv" : {
+         "file" : "lib/Locale/CLDR/Lv/Any/Lv.pm"
+      },
+      "Locale::CLDR::Mas" : {
+         "file" : "lib/Locale/CLDR/Mas.pm"
+      },
+      "Locale::CLDR::Mas::Any" : {
+         "file" : "lib/Locale/CLDR/Mas/Any.pm"
+      },
+      "Locale::CLDR::Mas::Any::Ke" : {
+         "file" : "lib/Locale/CLDR/Mas/Any/Ke.pm"
+      },
+      "Locale::CLDR::Mas::Any::Tz" : {
+         "file" : "lib/Locale/CLDR/Mas/Any/Tz.pm"
+      },
+      "Locale::CLDR::MeasurementSystem" : {
+         "file" : "lib/Locale/CLDR/MeasurementSystem.pm"
+      },
+      "Locale::CLDR::Mer" : {
+         "file" : "lib/Locale/CLDR/Mer.pm"
+      },
+      "Locale::CLDR::Mer::Any" : {
+         "file" : "lib/Locale/CLDR/Mer/Any.pm"
+      },
+      "Locale::CLDR::Mer::Any::Ke" : {
+         "file" : "lib/Locale/CLDR/Mer/Any/Ke.pm"
+      },
+      "Locale::CLDR::Mfe" : {
+         "file" : "lib/Locale/CLDR/Mfe.pm"
+      },
+      "Locale::CLDR::Mfe::Any" : {
+         "file" : "lib/Locale/CLDR/Mfe/Any.pm"
+      },
+      "Locale::CLDR::Mfe::Any::Mu" : {
+         "file" : "lib/Locale/CLDR/Mfe/Any/Mu.pm"
+      },
+      "Locale::CLDR::Mg" : {
+         "file" : "lib/Locale/CLDR/Mg.pm"
+      },
+      "Locale::CLDR::Mg::Any" : {
+         "file" : "lib/Locale/CLDR/Mg/Any.pm"
+      },
+      "Locale::CLDR::Mg::Any::Mg" : {
+         "file" : "lib/Locale/CLDR/Mg/Any/Mg.pm"
+      },
+      "Locale::CLDR::Mgh" : {
+         "file" : "lib/Locale/CLDR/Mgh.pm"
+      },
+      "Locale::CLDR::Mgh::Any" : {
+         "file" : "lib/Locale/CLDR/Mgh/Any.pm"
+      },
+      "Locale::CLDR::Mgh::Any::Mz" : {
+         "file" : "lib/Locale/CLDR/Mgh/Any/Mz.pm"
+      },
+      "Locale::CLDR::Mgo" : {
+         "file" : "lib/Locale/CLDR/Mgo.pm"
+      },
+      "Locale::CLDR::Mgo::Any" : {
+         "file" : "lib/Locale/CLDR/Mgo/Any.pm"
+      },
+      "Locale::CLDR::Mgo::Any::Cm" : {
+         "file" : "lib/Locale/CLDR/Mgo/Any/Cm.pm"
+      },
+      "Locale::CLDR::Mk" : {
+         "file" : "lib/Locale/CLDR/Mk.pm"
+      },
+      "Locale::CLDR::Mk::Any" : {
+         "file" : "lib/Locale/CLDR/Mk/Any.pm"
+      },
+      "Locale::CLDR::Mk::Any::Mk" : {
+         "file" : "lib/Locale/CLDR/Mk/Any/Mk.pm"
+      },
+      "Locale::CLDR::Ml" : {
+         "file" : "lib/Locale/CLDR/Ml.pm"
+      },
+      "Locale::CLDR::Ml::Any" : {
+         "file" : "lib/Locale/CLDR/Ml/Any.pm"
+      },
+      "Locale::CLDR::Ml::Any::In" : {
+         "file" : "lib/Locale/CLDR/Ml/Any/In.pm"
+      },
+      "Locale::CLDR::Mn" : {
+         "file" : "lib/Locale/CLDR/Mn.pm"
+      },
+      "Locale::CLDR::Mn::Cyrl" : {
+         "file" : "lib/Locale/CLDR/Mn/Cyrl.pm"
+      },
+      "Locale::CLDR::Mn::Cyrl::Mn" : {
+         "file" : "lib/Locale/CLDR/Mn/Cyrl/Mn.pm"
+      },
+      "Locale::CLDR::Mr" : {
+         "file" : "lib/Locale/CLDR/Mr.pm"
+      },
+      "Locale::CLDR::Mr::Any" : {
+         "file" : "lib/Locale/CLDR/Mr/Any.pm"
+      },
+      "Locale::CLDR::Mr::Any::In" : {
+         "file" : "lib/Locale/CLDR/Mr/Any/In.pm"
+      },
+      "Locale::CLDR::Ms" : {
+         "file" : "lib/Locale/CLDR/Ms.pm"
+      },
+      "Locale::CLDR::Ms::Latn" : {
+         "file" : "lib/Locale/CLDR/Ms/Latn.pm"
+      },
+      "Locale::CLDR::Ms::Latn::Bn" : {
+         "file" : "lib/Locale/CLDR/Ms/Latn/Bn.pm"
+      },
+      "Locale::CLDR::Ms::Latn::My" : {
+         "file" : "lib/Locale/CLDR/Ms/Latn/My.pm"
+      },
+      "Locale::CLDR::Ms::Latn::Sg" : {
+         "file" : "lib/Locale/CLDR/Ms/Latn/Sg.pm"
+      },
+      "Locale::CLDR::Mt" : {
+         "file" : "lib/Locale/CLDR/Mt.pm"
+      },
+      "Locale::CLDR::Mt::Any" : {
+         "file" : "lib/Locale/CLDR/Mt/Any.pm"
+      },
+      "Locale::CLDR::Mt::Any::Mt" : {
+         "file" : "lib/Locale/CLDR/Mt/Any/Mt.pm"
+      },
+      "Locale::CLDR::Mua" : {
+         "file" : "lib/Locale/CLDR/Mua.pm"
+      },
+      "Locale::CLDR::Mua::Any" : {
+         "file" : "lib/Locale/CLDR/Mua/Any.pm"
+      },
+      "Locale::CLDR::Mua::Any::Cm" : {
+         "file" : "lib/Locale/CLDR/Mua/Any/Cm.pm"
+      },
+      "Locale::CLDR::My" : {
+         "file" : "lib/Locale/CLDR/My.pm"
+      },
+      "Locale::CLDR::My::Any" : {
+         "file" : "lib/Locale/CLDR/My/Any.pm"
+      },
+      "Locale::CLDR::My::Any::Mm" : {
+         "file" : "lib/Locale/CLDR/My/Any/Mm.pm"
+      },
+      "Locale::CLDR::Naq" : {
+         "file" : "lib/Locale/CLDR/Naq.pm"
+      },
+      "Locale::CLDR::Naq::Any" : {
+         "file" : "lib/Locale/CLDR/Naq/Any.pm"
+      },
+      "Locale::CLDR::Naq::Any::Na" : {
+         "file" : "lib/Locale/CLDR/Naq/Any/Na.pm"
+      },
+      "Locale::CLDR::Nb" : {
+         "file" : "lib/Locale/CLDR/Nb.pm"
+      },
+      "Locale::CLDR::Nb::Any" : {
+         "file" : "lib/Locale/CLDR/Nb/Any.pm"
+      },
+      "Locale::CLDR::Nb::Any::No" : {
+         "file" : "lib/Locale/CLDR/Nb/Any/No.pm"
+      },
+      "Locale::CLDR::Nb::Any::Sj" : {
+         "file" : "lib/Locale/CLDR/Nb/Any/Sj.pm"
+      },
+      "Locale::CLDR::Nd" : {
+         "file" : "lib/Locale/CLDR/Nd.pm"
+      },
+      "Locale::CLDR::Nd::Any" : {
+         "file" : "lib/Locale/CLDR/Nd/Any.pm"
+      },
+      "Locale::CLDR::Nd::Any::Zw" : {
+         "file" : "lib/Locale/CLDR/Nd/Any/Zw.pm"
+      },
+      "Locale::CLDR::Ne" : {
+         "file" : "lib/Locale/CLDR/Ne.pm"
+      },
+      "Locale::CLDR::Ne::Any" : {
+         "file" : "lib/Locale/CLDR/Ne/Any.pm"
+      },
+      "Locale::CLDR::Ne::Any::In" : {
+         "file" : "lib/Locale/CLDR/Ne/Any/In.pm"
+      },
+      "Locale::CLDR::Ne::Any::Np" : {
+         "file" : "lib/Locale/CLDR/Ne/Any/Np.pm"
+      },
+      "Locale::CLDR::Nl" : {
+         "file" : "lib/Locale/CLDR/Nl.pm"
+      },
+      "Locale::CLDR::Nl::Any" : {
+         "file" : "lib/Locale/CLDR/Nl/Any.pm"
+      },
+      "Locale::CLDR::Nl::Any::Aw" : {
+         "file" : "lib/Locale/CLDR/Nl/Any/Aw.pm"
+      },
+      "Locale::CLDR::Nl::Any::Be" : {
+         "file" : "lib/Locale/CLDR/Nl/Any/Be.pm"
+      },
+      "Locale::CLDR::Nl::Any::Bq" : {
+         "file" : "lib/Locale/CLDR/Nl/Any/Bq.pm"
+      },
+      "Locale::CLDR::Nl::Any::Cw" : {
+         "file" : "lib/Locale/CLDR/Nl/Any/Cw.pm"
+      },
+      "Locale::CLDR::Nl::Any::Nl" : {
+         "file" : "lib/Locale/CLDR/Nl/Any/Nl.pm"
+      },
+      "Locale::CLDR::Nl::Any::Sr" : {
+         "file" : "lib/Locale/CLDR/Nl/Any/Sr.pm"
+      },
+      "Locale::CLDR::Nl::Any::Sx" : {
+         "file" : "lib/Locale/CLDR/Nl/Any/Sx.pm"
+      },
+      "Locale::CLDR::Nmg" : {
+         "file" : "lib/Locale/CLDR/Nmg.pm"
+      },
+      "Locale::CLDR::Nmg::Any" : {
+         "file" : "lib/Locale/CLDR/Nmg/Any.pm"
+      },
+      "Locale::CLDR::Nmg::Any::Cm" : {
+         "file" : "lib/Locale/CLDR/Nmg/Any/Cm.pm"
+      },
+      "Locale::CLDR::Nn" : {
+         "file" : "lib/Locale/CLDR/Nn.pm"
+      },
+      "Locale::CLDR::Nn::Any" : {
+         "file" : "lib/Locale/CLDR/Nn/Any.pm"
+      },
+      "Locale::CLDR::Nn::Any::No" : {
+         "file" : "lib/Locale/CLDR/Nn/Any/No.pm"
+      },
+      "Locale::CLDR::Nnh" : {
+         "file" : "lib/Locale/CLDR/Nnh.pm"
+      },
+      "Locale::CLDR::Nnh::Any" : {
+         "file" : "lib/Locale/CLDR/Nnh/Any.pm"
+      },
+      "Locale::CLDR::Nnh::Any::Cm" : {
+         "file" : "lib/Locale/CLDR/Nnh/Any/Cm.pm"
+      },
+      "Locale::CLDR::Nr" : {
+         "file" : "lib/Locale/CLDR/Nr.pm"
+      },
+      "Locale::CLDR::Nr::Any" : {
+         "file" : "lib/Locale/CLDR/Nr/Any.pm"
+      },
+      "Locale::CLDR::Nr::Any::Za" : {
+         "file" : "lib/Locale/CLDR/Nr/Any/Za.pm"
+      },
+      "Locale::CLDR::Nso" : {
+         "file" : "lib/Locale/CLDR/Nso.pm"
+      },
+      "Locale::CLDR::Nso::Any" : {
+         "file" : "lib/Locale/CLDR/Nso/Any.pm"
+      },
+      "Locale::CLDR::Nso::Any::Za" : {
+         "file" : "lib/Locale/CLDR/Nso/Any/Za.pm"
+      },
+      "Locale::CLDR::NumberFormatter" : {
+         "file" : "lib/Locale/CLDR/NumberFormatter.pm"
+      },
+      "Locale::CLDR::NumberingSystems" : {
+         "file" : "lib/Locale/CLDR/NumberingSystems.pm"
+      },
+      "Locale::CLDR::Nus" : {
+         "file" : "lib/Locale/CLDR/Nus.pm"
+      },
+      "Locale::CLDR::Nus::Any" : {
+         "file" : "lib/Locale/CLDR/Nus/Any.pm"
+      },
+      "Locale::CLDR::Nus::Any::Sd" : {
+         "file" : "lib/Locale/CLDR/Nus/Any/Sd.pm"
+      },
+      "Locale::CLDR::Nyn" : {
+         "file" : "lib/Locale/CLDR/Nyn.pm"
+      },
+      "Locale::CLDR::Nyn::Any" : {
+         "file" : "lib/Locale/CLDR/Nyn/Any.pm"
+      },
+      "Locale::CLDR::Nyn::Any::Ug" : {
+         "file" : "lib/Locale/CLDR/Nyn/Any/Ug.pm"
+      },
+      "Locale::CLDR::Om" : {
+         "file" : "lib/Locale/CLDR/Om.pm"
+      },
+      "Locale::CLDR::Om::Any" : {
+         "file" : "lib/Locale/CLDR/Om/Any.pm"
+      },
+      "Locale::CLDR::Om::Any::Et" : {
+         "file" : "lib/Locale/CLDR/Om/Any/Et.pm"
+      },
+      "Locale::CLDR::Om::Any::Ke" : {
+         "file" : "lib/Locale/CLDR/Om/Any/Ke.pm"
+      },
+      "Locale::CLDR::Or" : {
+         "file" : "lib/Locale/CLDR/Or.pm"
+      },
+      "Locale::CLDR::Or::Any" : {
+         "file" : "lib/Locale/CLDR/Or/Any.pm"
+      },
+      "Locale::CLDR::Or::Any::In" : {
+         "file" : "lib/Locale/CLDR/Or/Any/In.pm"
+      },
+      "Locale::CLDR::Os" : {
+         "file" : "lib/Locale/CLDR/Os.pm"
+      },
+      "Locale::CLDR::Os::Any" : {
+         "file" : "lib/Locale/CLDR/Os/Any.pm"
+      },
+      "Locale::CLDR::Os::Any::Ge" : {
+         "file" : "lib/Locale/CLDR/Os/Any/Ge.pm"
+      },
+      "Locale::CLDR::Os::Any::Ru" : {
+         "file" : "lib/Locale/CLDR/Os/Any/Ru.pm"
+      },
+      "Locale::CLDR::Pa" : {
+         "file" : "lib/Locale/CLDR/Pa.pm"
+      },
+      "Locale::CLDR::Pa::Arab" : {
+         "file" : "lib/Locale/CLDR/Pa/Arab.pm"
+      },
+      "Locale::CLDR::Pa::Arab::Pk" : {
+         "file" : "lib/Locale/CLDR/Pa/Arab/Pk.pm"
+      },
+      "Locale::CLDR::Pa::Guru" : {
+         "file" : "lib/Locale/CLDR/Pa/Guru.pm"
+      },
+      "Locale::CLDR::Pa::Guru::In" : {
+         "file" : "lib/Locale/CLDR/Pa/Guru/In.pm"
+      },
+      "Locale::CLDR::Pl" : {
+         "file" : "lib/Locale/CLDR/Pl.pm"
+      },
+      "Locale::CLDR::Pl::Any" : {
+         "file" : "lib/Locale/CLDR/Pl/Any.pm"
+      },
+      "Locale::CLDR::Pl::Any::Pl" : {
+         "file" : "lib/Locale/CLDR/Pl/Any/Pl.pm"
+      },
+      "Locale::CLDR::Ps" : {
+         "file" : "lib/Locale/CLDR/Ps.pm"
+      },
+      "Locale::CLDR::Ps::Any" : {
+         "file" : "lib/Locale/CLDR/Ps/Any.pm"
+      },
+      "Locale::CLDR::Ps::Any::Af" : {
+         "file" : "lib/Locale/CLDR/Ps/Any/Af.pm"
+      },
+      "Locale::CLDR::Pt" : {
+         "file" : "lib/Locale/CLDR/Pt.pm"
+      },
+      "Locale::CLDR::Pt::Any" : {
+         "file" : "lib/Locale/CLDR/Pt/Any.pm"
+      },
+      "Locale::CLDR::Pt::Any::Ao" : {
+         "file" : "lib/Locale/CLDR/Pt/Any/Ao.pm"
+      },
+      "Locale::CLDR::Pt::Any::Br" : {
+         "file" : "lib/Locale/CLDR/Pt/Any/Br.pm"
+      },
+      "Locale::CLDR::Pt::Any::Cv" : {
+         "file" : "lib/Locale/CLDR/Pt/Any/Cv.pm"
+      },
+      "Locale::CLDR::Pt::Any::Gw" : {
+         "file" : "lib/Locale/CLDR/Pt/Any/Gw.pm"
+      },
+      "Locale::CLDR::Pt::Any::Mo" : {
+         "file" : "lib/Locale/CLDR/Pt/Any/Mo.pm"
+      },
+      "Locale::CLDR::Pt::Any::Mz" : {
+         "file" : "lib/Locale/CLDR/Pt/Any/Mz.pm"
+      },
+      "Locale::CLDR::Pt::Any::Pt" : {
+         "file" : "lib/Locale/CLDR/Pt/Any/Pt.pm"
+      },
+      "Locale::CLDR::Pt::Any::St" : {
+         "file" : "lib/Locale/CLDR/Pt/Any/St.pm"
+      },
+      "Locale::CLDR::Pt::Any::Tl" : {
+         "file" : "lib/Locale/CLDR/Pt/Any/Tl.pm"
+      },
+      "Locale::CLDR::Rm" : {
+         "file" : "lib/Locale/CLDR/Rm.pm"
+      },
+      "Locale::CLDR::Rm::Any" : {
+         "file" : "lib/Locale/CLDR/Rm/Any.pm"
+      },
+      "Locale::CLDR::Rm::Any::Ch" : {
+         "file" : "lib/Locale/CLDR/Rm/Any/Ch.pm"
+      },
+      "Locale::CLDR::Rn" : {
+         "file" : "lib/Locale/CLDR/Rn.pm"
+      },
+      "Locale::CLDR::Rn::Any" : {
+         "file" : "lib/Locale/CLDR/Rn/Any.pm"
+      },
+      "Locale::CLDR::Rn::Any::Bi" : {
+         "file" : "lib/Locale/CLDR/Rn/Any/Bi.pm"
+      },
+      "Locale::CLDR::Ro" : {
+         "file" : "lib/Locale/CLDR/Ro.pm"
+      },
+      "Locale::CLDR::Ro::Any" : {
+         "file" : "lib/Locale/CLDR/Ro/Any.pm"
+      },
+      "Locale::CLDR::Ro::Any::Md" : {
+         "file" : "lib/Locale/CLDR/Ro/Any/Md.pm"
+      },
+      "Locale::CLDR::Ro::Any::Ro" : {
+         "file" : "lib/Locale/CLDR/Ro/Any/Ro.pm"
+      },
+      "Locale::CLDR::Rof" : {
+         "file" : "lib/Locale/CLDR/Rof.pm"
+      },
+      "Locale::CLDR::Rof::Any" : {
+         "file" : "lib/Locale/CLDR/Rof/Any.pm"
+      },
+      "Locale::CLDR::Rof::Any::Tz" : {
+         "file" : "lib/Locale/CLDR/Rof/Any/Tz.pm"
+      },
+      "Locale::CLDR::Root" : {
+         "file" : "lib/Locale/CLDR/Root.pm"
+      },
+      "Locale::CLDR::Ru" : {
+         "file" : "lib/Locale/CLDR/Ru.pm"
+      },
+      "Locale::CLDR::Ru::Any" : {
+         "file" : "lib/Locale/CLDR/Ru/Any.pm"
+      },
+      "Locale::CLDR::Ru::Any::By" : {
+         "file" : "lib/Locale/CLDR/Ru/Any/By.pm"
+      },
+      "Locale::CLDR::Ru::Any::Kg" : {
+         "file" : "lib/Locale/CLDR/Ru/Any/Kg.pm"
+      },
+      "Locale::CLDR::Ru::Any::Kz" : {
+         "file" : "lib/Locale/CLDR/Ru/Any/Kz.pm"
+      },
+      "Locale::CLDR::Ru::Any::Md" : {
+         "file" : "lib/Locale/CLDR/Ru/Any/Md.pm"
+      },
+      "Locale::CLDR::Ru::Any::Ru" : {
+         "file" : "lib/Locale/CLDR/Ru/Any/Ru.pm"
+      },
+      "Locale::CLDR::Ru::Any::Ua" : {
+         "file" : "lib/Locale/CLDR/Ru/Any/Ua.pm"
+      },
+      "Locale::CLDR::Rw" : {
+         "file" : "lib/Locale/CLDR/Rw.pm"
+      },
+      "Locale::CLDR::Rw::Any" : {
+         "file" : "lib/Locale/CLDR/Rw/Any.pm"
+      },
+      "Locale::CLDR::Rw::Any::Rw" : {
+         "file" : "lib/Locale/CLDR/Rw/Any/Rw.pm"
+      },
+      "Locale::CLDR::Rwk" : {
+         "file" : "lib/Locale/CLDR/Rwk.pm"
+      },
+      "Locale::CLDR::Rwk::Any" : {
+         "file" : "lib/Locale/CLDR/Rwk/Any.pm"
+      },
+      "Locale::CLDR::Rwk::Any::Tz" : {
+         "file" : "lib/Locale/CLDR/Rwk/Any/Tz.pm"
+      },
+      "Locale::CLDR::Sah" : {
+         "file" : "lib/Locale/CLDR/Sah.pm"
+      },
+      "Locale::CLDR::Sah::Any" : {
+         "file" : "lib/Locale/CLDR/Sah/Any.pm"
+      },
+      "Locale::CLDR::Sah::Any::Ru" : {
+         "file" : "lib/Locale/CLDR/Sah/Any/Ru.pm"
+      },
+      "Locale::CLDR::Saq" : {
+         "file" : "lib/Locale/CLDR/Saq.pm"
+      },
+      "Locale::CLDR::Saq::Any" : {
+         "file" : "lib/Locale/CLDR/Saq/Any.pm"
+      },
+      "Locale::CLDR::Saq::Any::Ke" : {
+         "file" : "lib/Locale/CLDR/Saq/Any/Ke.pm"
+      },
+      "Locale::CLDR::Sbp" : {
+         "file" : "lib/Locale/CLDR/Sbp.pm"
+      },
+      "Locale::CLDR::Sbp::Any" : {
+         "file" : "lib/Locale/CLDR/Sbp/Any.pm"
+      },
+      "Locale::CLDR::Sbp::Any::Tz" : {
+         "file" : "lib/Locale/CLDR/Sbp/Any/Tz.pm"
+      },
+      "Locale::CLDR::Se" : {
+         "file" : "lib/Locale/CLDR/Se.pm"
+      },
+      "Locale::CLDR::Se::Any" : {
+         "file" : "lib/Locale/CLDR/Se/Any.pm"
+      },
+      "Locale::CLDR::Se::Any::Fi" : {
+         "file" : "lib/Locale/CLDR/Se/Any/Fi.pm"
+      },
+      "Locale::CLDR::Se::Any::No" : {
+         "file" : "lib/Locale/CLDR/Se/Any/No.pm"
+      },
+      "Locale::CLDR::Seh" : {
+         "file" : "lib/Locale/CLDR/Seh.pm"
+      },
+      "Locale::CLDR::Seh::Any" : {
+         "file" : "lib/Locale/CLDR/Seh/Any.pm"
+      },
+      "Locale::CLDR::Seh::Any::Mz" : {
+         "file" : "lib/Locale/CLDR/Seh/Any/Mz.pm"
+      },
+      "Locale::CLDR::Ses" : {
+         "file" : "lib/Locale/CLDR/Ses.pm"
+      },
+      "Locale::CLDR::Ses::Any" : {
+         "file" : "lib/Locale/CLDR/Ses/Any.pm"
+      },
+      "Locale::CLDR::Ses::Any::Ml" : {
+         "file" : "lib/Locale/CLDR/Ses/Any/Ml.pm"
+      },
+      "Locale::CLDR::Sg" : {
+         "file" : "lib/Locale/CLDR/Sg.pm"
+      },
+      "Locale::CLDR::Sg::Any" : {
+         "file" : "lib/Locale/CLDR/Sg/Any.pm"
+      },
+      "Locale::CLDR::Sg::Any::Cf" : {
+         "file" : "lib/Locale/CLDR/Sg/Any/Cf.pm"
+      },
+      "Locale::CLDR::Shi" : {
+         "file" : "lib/Locale/CLDR/Shi.pm"
+      },
+      "Locale::CLDR::Shi::Latn" : {
+         "file" : "lib/Locale/CLDR/Shi/Latn.pm"
+      },
+      "Locale::CLDR::Shi::Latn::Ma" : {
+         "file" : "lib/Locale/CLDR/Shi/Latn/Ma.pm"
+      },
+      "Locale::CLDR::Shi::Tfng" : {
+         "file" : "lib/Locale/CLDR/Shi/Tfng.pm"
+      },
+      "Locale::CLDR::Shi::Tfng::Ma" : {
+         "file" : "lib/Locale/CLDR/Shi/Tfng/Ma.pm"
+      },
+      "Locale::CLDR::Si" : {
+         "file" : "lib/Locale/CLDR/Si.pm"
+      },
+      "Locale::CLDR::Si::Any" : {
+         "file" : "lib/Locale/CLDR/Si/Any.pm"
+      },
+      "Locale::CLDR::Si::Any::Lk" : {
+         "file" : "lib/Locale/CLDR/Si/Any/Lk.pm"
+      },
+      "Locale::CLDR::Sk" : {
+         "file" : "lib/Locale/CLDR/Sk.pm"
+      },
+      "Locale::CLDR::Sk::Any" : {
+         "file" : "lib/Locale/CLDR/Sk/Any.pm"
+      },
+      "Locale::CLDR::Sk::Any::Sk" : {
+         "file" : "lib/Locale/CLDR/Sk/Any/Sk.pm"
+      },
+      "Locale::CLDR::Sl" : {
+         "file" : "lib/Locale/CLDR/Sl.pm"
+      },
+      "Locale::CLDR::Sl::Any" : {
+         "file" : "lib/Locale/CLDR/Sl/Any.pm"
+      },
+      "Locale::CLDR::Sl::Any::Si" : {
+         "file" : "lib/Locale/CLDR/Sl/Any/Si.pm"
+      },
+      "Locale::CLDR::Sn" : {
+         "file" : "lib/Locale/CLDR/Sn.pm"
+      },
+      "Locale::CLDR::Sn::Any" : {
+         "file" : "lib/Locale/CLDR/Sn/Any.pm"
+      },
+      "Locale::CLDR::Sn::Any::Zw" : {
+         "file" : "lib/Locale/CLDR/Sn/Any/Zw.pm"
+      },
+      "Locale::CLDR::So" : {
+         "file" : "lib/Locale/CLDR/So.pm"
+      },
+      "Locale::CLDR::So::Any" : {
+         "file" : "lib/Locale/CLDR/So/Any.pm"
+      },
+      "Locale::CLDR::So::Any::Dj" : {
+         "file" : "lib/Locale/CLDR/So/Any/Dj.pm"
+      },
+      "Locale::CLDR::So::Any::Et" : {
+         "file" : "lib/Locale/CLDR/So/Any/Et.pm"
+      },
+      "Locale::CLDR::So::Any::Ke" : {
+         "file" : "lib/Locale/CLDR/So/Any/Ke.pm"
+      },
+      "Locale::CLDR::So::Any::So" : {
+         "file" : "lib/Locale/CLDR/So/Any/So.pm"
+      },
+      "Locale::CLDR::Sq" : {
+         "file" : "lib/Locale/CLDR/Sq.pm"
+      },
+      "Locale::CLDR::Sq::Any" : {
+         "file" : "lib/Locale/CLDR/Sq/Any.pm"
+      },
+      "Locale::CLDR::Sq::Any::Al" : {
+         "file" : "lib/Locale/CLDR/Sq/Any/Al.pm"
+      },
+      "Locale::CLDR::Sq::Any::Mk" : {
+         "file" : "lib/Locale/CLDR/Sq/Any/Mk.pm"
+      },
+      "Locale::CLDR::Sq::Any::Xk" : {
+         "file" : "lib/Locale/CLDR/Sq/Any/Xk.pm"
+      },
+      "Locale::CLDR::Sr" : {
+         "file" : "lib/Locale/CLDR/Sr.pm"
+      },
+      "Locale::CLDR::Sr::Cyrl" : {
+         "file" : "lib/Locale/CLDR/Sr/Cyrl.pm"
+      },
+      "Locale::CLDR::Sr::Cyrl::Ba" : {
+         "file" : "lib/Locale/CLDR/Sr/Cyrl/Ba.pm"
+      },
+      "Locale::CLDR::Sr::Cyrl::Me" : {
+         "file" : "lib/Locale/CLDR/Sr/Cyrl/Me.pm"
+      },
+      "Locale::CLDR::Sr::Cyrl::Rs" : {
+         "file" : "lib/Locale/CLDR/Sr/Cyrl/Rs.pm"
+      },
+      "Locale::CLDR::Sr::Cyrl::Xk" : {
+         "file" : "lib/Locale/CLDR/Sr/Cyrl/Xk.pm"
+      },
+      "Locale::CLDR::Sr::Latn" : {
+         "file" : "lib/Locale/CLDR/Sr/Latn.pm"
+      },
+      "Locale::CLDR::Sr::Latn::Ba" : {
+         "file" : "lib/Locale/CLDR/Sr/Latn/Ba.pm"
+      },
+      "Locale::CLDR::Sr::Latn::Me" : {
+         "file" : "lib/Locale/CLDR/Sr/Latn/Me.pm"
+      },
+      "Locale::CLDR::Sr::Latn::Rs" : {
+         "file" : "lib/Locale/CLDR/Sr/Latn/Rs.pm"
+      },
+      "Locale::CLDR::Sr::Latn::Xk" : {
+         "file" : "lib/Locale/CLDR/Sr/Latn/Xk.pm"
+      },
+      "Locale::CLDR::Ss" : {
+         "file" : "lib/Locale/CLDR/Ss.pm"
+      },
+      "Locale::CLDR::Ss::Any" : {
+         "file" : "lib/Locale/CLDR/Ss/Any.pm"
+      },
+      "Locale::CLDR::Ss::Any::Sz" : {
+         "file" : "lib/Locale/CLDR/Ss/Any/Sz.pm"
+      },
+      "Locale::CLDR::Ss::Any::Za" : {
+         "file" : "lib/Locale/CLDR/Ss/Any/Za.pm"
+      },
+      "Locale::CLDR::Ssy" : {
+         "file" : "lib/Locale/CLDR/Ssy.pm"
+      },
+      "Locale::CLDR::Ssy::Any" : {
+         "file" : "lib/Locale/CLDR/Ssy/Any.pm"
+      },
+      "Locale::CLDR::Ssy::Any::Er" : {
+         "file" : "lib/Locale/CLDR/Ssy/Any/Er.pm"
+      },
+      "Locale::CLDR::St" : {
+         "file" : "lib/Locale/CLDR/St.pm"
+      },
+      "Locale::CLDR::St::Any" : {
+         "file" : "lib/Locale/CLDR/St/Any.pm"
+      },
+      "Locale::CLDR::St::Any::Ls" : {
+         "file" : "lib/Locale/CLDR/St/Any/Ls.pm"
+      },
+      "Locale::CLDR::St::Any::Za" : {
+         "file" : "lib/Locale/CLDR/St/Any/Za.pm"
+      },
+      "Locale::CLDR::Sv" : {
+         "file" : "lib/Locale/CLDR/Sv.pm"
+      },
+      "Locale::CLDR::Sv::Any" : {
+         "file" : "lib/Locale/CLDR/Sv/Any.pm"
+      },
+      "Locale::CLDR::Sv::Any::Ax" : {
+         "file" : "lib/Locale/CLDR/Sv/Any/Ax.pm"
+      },
+      "Locale::CLDR::Sv::Any::Fi" : {
+         "file" : "lib/Locale/CLDR/Sv/Any/Fi.pm"
+      },
+      "Locale::CLDR::Sv::Any::Se" : {
+         "file" : "lib/Locale/CLDR/Sv/Any/Se.pm"
+      },
+      "Locale::CLDR::Sw" : {
+         "file" : "lib/Locale/CLDR/Sw.pm"
+      },
+      "Locale::CLDR::Sw::Any" : {
+         "file" : "lib/Locale/CLDR/Sw/Any.pm"
+      },
+      "Locale::CLDR::Sw::Any::Ke" : {
+         "file" : "lib/Locale/CLDR/Sw/Any/Ke.pm"
+      },
+      "Locale::CLDR::Sw::Any::Tz" : {
+         "file" : "lib/Locale/CLDR/Sw/Any/Tz.pm"
+      },
+      "Locale::CLDR::Sw::Any::Ug" : {
+         "file" : "lib/Locale/CLDR/Sw/Any/Ug.pm"
+      },
+      "Locale::CLDR::Swc" : {
+         "file" : "lib/Locale/CLDR/Swc.pm"
+      },
+      "Locale::CLDR::Swc::Any" : {
+         "file" : "lib/Locale/CLDR/Swc/Any.pm"
+      },
+      "Locale::CLDR::Swc::Any::Cd" : {
+         "file" : "lib/Locale/CLDR/Swc/Any/Cd.pm"
+      },
+      "Locale::CLDR::Ta" : {
+         "file" : "lib/Locale/CLDR/Ta.pm"
+      },
+      "Locale::CLDR::Ta::Any" : {
+         "file" : "lib/Locale/CLDR/Ta/Any.pm"
+      },
+      "Locale::CLDR::Ta::Any::In" : {
+         "file" : "lib/Locale/CLDR/Ta/Any/In.pm"
+      },
+      "Locale::CLDR::Ta::Any::Lk" : {
+         "file" : "lib/Locale/CLDR/Ta/Any/Lk.pm"
+      },
+      "Locale::CLDR::Ta::Any::My" : {
+         "file" : "lib/Locale/CLDR/Ta/Any/My.pm"
+      },
+      "Locale::CLDR::Ta::Any::Sg" : {
+         "file" : "lib/Locale/CLDR/Ta/Any/Sg.pm"
+      },
+      "Locale::CLDR::Te" : {
+         "file" : "lib/Locale/CLDR/Te.pm"
+      },
+      "Locale::CLDR::Te::Any" : {
+         "file" : "lib/Locale/CLDR/Te/Any.pm"
+      },
+      "Locale::CLDR::Te::Any::In" : {
+         "file" : "lib/Locale/CLDR/Te/Any/In.pm"
+      },
+      "Locale::CLDR::Teo" : {
+         "file" : "lib/Locale/CLDR/Teo.pm"
+      },
+      "Locale::CLDR::Teo::Any" : {
+         "file" : "lib/Locale/CLDR/Teo/Any.pm"
+      },
+      "Locale::CLDR::Teo::Any::Ke" : {
+         "file" : "lib/Locale/CLDR/Teo/Any/Ke.pm"
+      },
+      "Locale::CLDR::Teo::Any::Ug" : {
+         "file" : "lib/Locale/CLDR/Teo/Any/Ug.pm"
+      },
+      "Locale::CLDR::TerritoryContainment" : {
+         "file" : "lib/Locale/CLDR/TerritoryContainment.pm"
+      },
+      "Locale::CLDR::Tg" : {
+         "file" : "lib/Locale/CLDR/Tg.pm"
+      },
+      "Locale::CLDR::Tg::Cyrl" : {
+         "file" : "lib/Locale/CLDR/Tg/Cyrl.pm"
+      },
+      "Locale::CLDR::Tg::Cyrl::Tj" : {
+         "file" : "lib/Locale/CLDR/Tg/Cyrl/Tj.pm"
+      },
+      "Locale::CLDR::Th" : {
+         "file" : "lib/Locale/CLDR/Th.pm"
+      },
+      "Locale::CLDR::Th::Any" : {
+         "file" : "lib/Locale/CLDR/Th/Any.pm"
+      },
+      "Locale::CLDR::Th::Any::Th" : {
+         "file" : "lib/Locale/CLDR/Th/Any/Th.pm"
+      },
+      "Locale::CLDR::Ti" : {
+         "file" : "lib/Locale/CLDR/Ti.pm"
+      },
+      "Locale::CLDR::Ti::Any" : {
+         "file" : "lib/Locale/CLDR/Ti/Any.pm"
+      },
+      "Locale::CLDR::Ti::Any::Er" : {
+         "file" : "lib/Locale/CLDR/Ti/Any/Er.pm"
+      },
+      "Locale::CLDR::Ti::Any::Et" : {
+         "file" : "lib/Locale/CLDR/Ti/Any/Et.pm"
+      },
+      "Locale::CLDR::Tig" : {
+         "file" : "lib/Locale/CLDR/Tig.pm"
+      },
+      "Locale::CLDR::Tig::Any" : {
+         "file" : "lib/Locale/CLDR/Tig/Any.pm"
+      },
+      "Locale::CLDR::Tig::Any::Er" : {
+         "file" : "lib/Locale/CLDR/Tig/Any/Er.pm"
+      },
+      "Locale::CLDR::Tn" : {
+         "file" : "lib/Locale/CLDR/Tn.pm"
+      },
+      "Locale::CLDR::Tn::Any" : {
+         "file" : "lib/Locale/CLDR/Tn/Any.pm"
+      },
+      "Locale::CLDR::Tn::Any::Bw" : {
+         "file" : "lib/Locale/CLDR/Tn/Any/Bw.pm"
+      },
+      "Locale::CLDR::Tn::Any::Za" : {
+         "file" : "lib/Locale/CLDR/Tn/Any/Za.pm"
+      },
+      "Locale::CLDR::To" : {
+         "file" : "lib/Locale/CLDR/To.pm"
+      },
+      "Locale::CLDR::To::Any" : {
+         "file" : "lib/Locale/CLDR/To/Any.pm"
+      },
+      "Locale::CLDR::To::Any::To" : {
+         "file" : "lib/Locale/CLDR/To/Any/To.pm"
+      },
+      "Locale::CLDR::Tr" : {
+         "file" : "lib/Locale/CLDR/Tr.pm"
+      },
+      "Locale::CLDR::Tr::Any" : {
+         "file" : "lib/Locale/CLDR/Tr/Any.pm"
+      },
+      "Locale::CLDR::Tr::Any::Cy" : {
+         "file" : "lib/Locale/CLDR/Tr/Any/Cy.pm"
+      },
+      "Locale::CLDR::Tr::Any::Tr" : {
+         "file" : "lib/Locale/CLDR/Tr/Any/Tr.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Accents::Any" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Accents/Any.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Any::Accents" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Any/Accents.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Any::Publishing" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Any/Publishing.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Arabic::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Arabic/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Armenian::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Armenian/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Ascii::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Ascii/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Az::Lower" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Az/Lower.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Az::Title" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Az/Title.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Az::Upper" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Az/Upper.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Bengali::Devanagari" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Bengali/Devanagari.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Bengali::Gujarati" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Bengali/Gujarati.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Bengali::Gurmukhi" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Bengali/Gurmukhi.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Bengali::Interindic" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Bengali/Interindic.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Bengali::Kannada" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Bengali/Kannada.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Bengali::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Bengali/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Bengali::Malayalam" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Bengali/Malayalam.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Bengali::Oriya" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Bengali/Oriya.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Bengali::Tamil" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Bengali/Tamil.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Bengali::Telugu" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Bengali/Telugu.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Bopomofo::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Bopomofo/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Canadianaboriginal::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Canadianaboriginal/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Ch::Ch_fonipa" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Ch/Ch_fonipa.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Conjoiningjamo::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Conjoiningjamo/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Cs::Cs_fonipa" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Cs/Cs_fonipa.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Cs::Ja" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Cs/Ja.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Cs::Ko" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Cs/Ko.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Cs_fonipa::Ja" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Cs_fonipa/Ja.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Cs_fonipa::Ko" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Cs_fonipa/Ko.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Cyrillic::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Cyrillic/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Devanagari::Bengali" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Devanagari/Bengali.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Devanagari::Gujarati" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Devanagari/Gujarati.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Devanagari::Gurmukhi" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Devanagari/Gurmukhi.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Devanagari::Interindic" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Devanagari/Interindic.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Devanagari::Kannada" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Devanagari/Kannada.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Devanagari::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Devanagari/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Devanagari::Malayalam" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Devanagari/Malayalam.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Devanagari::Oriya" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Devanagari/Oriya.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Devanagari::Tamil" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Devanagari/Tamil.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Devanagari::Telugu" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Devanagari/Telugu.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Dsb::Dsb_fonipa" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Dsb/Dsb_fonipa.pm"
+      },
+      "Locale::CLDR::Transformations::Any::El::Lower" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/El/Lower.pm"
+      },
+      "Locale::CLDR::Transformations::Any::El::Title" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/El/Title.pm"
+      },
+      "Locale::CLDR::Transformations::Any::El::Upper" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/El/Upper.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Es::Am" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Es/Am.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Es::Es_fonipa" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Es/Es_fonipa.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Es::Ja" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Es/Ja.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Es::Zh" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Es/Zh.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Es_419::Ja" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Es_419/Ja.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Es_419::Zh" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Es_419/Zh.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Es_fonipa::Am" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Es_fonipa/Am.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Es_fonipa::Es_419_fonipa" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Es_fonipa/Es_419_fonipa.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Es_fonipa::Ja" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Es_fonipa/Ja.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Es_fonipa::Zh" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Es_fonipa/Zh.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Ethiopic::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Ethiopic/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Fullwidth::Halfwidth" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Fullwidth/Halfwidth.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Georgian::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Georgian/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Greek::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Greek/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gujarati::Bengali" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gujarati/Bengali.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gujarati::Devanagari" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gujarati/Devanagari.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gujarati::Gurmukhi" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gujarati/Gurmukhi.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gujarati::Interindic" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gujarati/Interindic.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gujarati::Kannada" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gujarati/Kannada.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gujarati::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gujarati/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gujarati::Malayalam" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gujarati/Malayalam.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gujarati::Oriya" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gujarati/Oriya.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gujarati::Tamil" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gujarati/Tamil.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gujarati::Telugu" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gujarati/Telugu.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gurmukhi::Bengali" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gurmukhi/Bengali.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gurmukhi::Devanagari" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gurmukhi/Devanagari.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gurmukhi::Gujarati" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gurmukhi/Gujarati.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gurmukhi::Interindic" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gurmukhi/Interindic.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gurmukhi::Kannada" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gurmukhi/Kannada.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gurmukhi::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gurmukhi/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gurmukhi::Malayalam" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gurmukhi/Malayalam.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gurmukhi::Oriya" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gurmukhi/Oriya.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gurmukhi::Tamil" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gurmukhi/Tamil.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Gurmukhi::Telugu" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Gurmukhi/Telugu.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Halfwidth::Fullwidth" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Halfwidth/Fullwidth.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Han::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Han/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Han::Spacedhan" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Han/Spacedhan.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Hangul::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Hangul/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Hebrew::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Hebrew/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Hiragana::Katakana" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Hiragana/Katakana.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Hiragana::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Hiragana/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Interindic::Bengali" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Interindic/Bengali.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Interindic::Devanagari" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Interindic/Devanagari.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Interindic::Gujarati" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Interindic/Gujarati.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Interindic::Gurmukhi" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Interindic/Gurmukhi.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Interindic::Kannada" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Interindic/Kannada.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Interindic::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Interindic/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Interindic::Malayalam" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Interindic/Malayalam.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Interindic::Oriya" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Interindic/Oriya.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Interindic::Tamil" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Interindic/Tamil.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Interindic::Telugu" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Interindic/Telugu.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Ipa::Xsampa" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Ipa/Xsampa.pm"
+      },
+      "Locale::CLDR::Transformations::Any::It::Am" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/It/Am.pm"
+      },
+      "Locale::CLDR::Transformations::Any::It::Ja" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/It/Ja.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Ja_latn::Ko" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Ja_latn/Ko.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Ja_latn::Ru" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Ja_latn/Ru.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Jamo::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Jamo/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Kannada::Bengali" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Kannada/Bengali.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Kannada::Devanagari" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Kannada/Devanagari.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Kannada::Gujarati" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Kannada/Gujarati.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Kannada::Gurmukhi" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Kannada/Gurmukhi.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Kannada::Interindic" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Kannada/Interindic.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Kannada::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Kannada/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Kannada::Malayalam" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Kannada/Malayalam.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Kannada::Oriya" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Kannada/Oriya.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Kannada::Tamil" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Kannada/Tamil.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Kannada::Telugu" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Kannada/Telugu.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Katakana::Hiragana" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Katakana/Hiragana.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Katakana::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Katakana/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::La::La_fonipa" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/La/La_fonipa.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Arabic" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Arabic.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Armenian" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Armenian.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Ascii" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Ascii.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Bengali" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Bengali.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Bopomofo" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Bopomofo.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Canadianaboriginal" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Canadianaboriginal.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Conjoiningjamo" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Conjoiningjamo.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Cyrillic" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Cyrillic.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Devanagari" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Devanagari.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Ethiopic" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Ethiopic.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Georgian" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Georgian.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Greek" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Greek.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Gujarati" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Gujarati.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Gurmukhi" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Gurmukhi.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Hangul" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Hangul.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Hebrew" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Hebrew.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Hiragana" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Hiragana.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Interindic" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Interindic.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Jamo" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Jamo.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Kannada" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Kannada.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Katakana" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Katakana.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Malayalam" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Malayalam.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Numericpinyin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Numericpinyin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Oriya" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Oriya.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Syriac" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Syriac.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Tamil" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Tamil.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Telugu" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Telugu.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Thaana" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Thaana.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Thai" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Thai.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Thailogical" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Thailogical.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Latin::Ug" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Latin/Ug.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Lt::Lower" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Lt/Lower.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Lt::Title" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Lt/Title.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Lt::Upper" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Lt/Upper.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Malayalam::Bengali" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Malayalam/Bengali.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Malayalam::Devanagari" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Malayalam/Devanagari.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Malayalam::Gujarati" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Malayalam/Gujarati.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Malayalam::Gurmukhi" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Malayalam/Gurmukhi.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Malayalam::Interindic" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Malayalam/Interindic.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Malayalam::Kannada" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Malayalam/Kannada.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Malayalam::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Malayalam/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Malayalam::Oriya" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Malayalam/Oriya.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Malayalam::Tamil" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Malayalam/Tamil.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Malayalam::Telugu" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Malayalam/Telugu.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Nl::Title" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Nl/Title.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Numericpinyin::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Numericpinyin/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Numericpinyin::Pinyin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Numericpinyin/Pinyin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Oriya::Bengali" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Oriya/Bengali.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Oriya::Devanagari" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Oriya/Devanagari.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Oriya::Gujarati" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Oriya/Gujarati.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Oriya::Gurmukhi" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Oriya/Gurmukhi.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Oriya::Interindic" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Oriya/Interindic.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Oriya::Kannada" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Oriya/Kannada.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Oriya::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Oriya/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Oriya::Malayalam" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Oriya/Malayalam.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Oriya::Tamil" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Oriya/Tamil.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Oriya::Telugu" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Oriya/Telugu.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Pinyin::Numericpinyin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Pinyin/Numericpinyin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Pl::Ja" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Pl/Ja.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Pl::Pl_fonipa" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Pl/Pl_fonipa.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Pl_fonipa::Ja" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Pl_fonipa/Ja.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Publishing::Any" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Publishing/Any.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Ro::Ja" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Ro/Ja.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Ro::Ro_fonipa" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Ro/Ro_fonipa.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Ro_fonipa::Ja" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Ro_fonipa/Ja.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Ru::Ja" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Ru/Ja.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Ru::Zh" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Ru/Zh.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Simplified::Traditional" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Simplified/Traditional.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Sk::Ja" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Sk/Ja.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Sk::Sk_fonipa" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Sk/Sk_fonipa.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Sk_fonipa::Ja" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Sk_fonipa/Ja.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Spacedhan::Han" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Spacedhan/Han.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Syriac::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Syriac/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Tamil::Bengali" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Tamil/Bengali.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Tamil::Devanagari" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Tamil/Devanagari.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Tamil::Gujarati" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Tamil/Gujarati.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Tamil::Gurmukhi" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Tamil/Gurmukhi.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Tamil::Interindic" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Tamil/Interindic.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Tamil::Kannada" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Tamil/Kannada.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Tamil::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Tamil/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Tamil::Malayalam" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Tamil/Malayalam.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Tamil::Oriya" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Tamil/Oriya.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Tamil::Telugu" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Tamil/Telugu.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Telugu::Bengali" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Telugu/Bengali.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Telugu::Devanagari" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Telugu/Devanagari.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Telugu::Gujarati" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Telugu/Gujarati.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Telugu::Gurmukhi" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Telugu/Gurmukhi.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Telugu::Interindic" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Telugu/Interindic.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Telugu::Kannada" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Telugu/Kannada.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Telugu::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Telugu/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Telugu::Malayalam" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Telugu/Malayalam.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Telugu::Oriya" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Telugu/Oriya.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Telugu::Tamil" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Telugu/Tamil.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Thaana::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Thaana/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Thai::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Thai/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Thai::Thailogical" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Thai/Thailogical.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Thai::Thaisemi" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Thai/Thaisemi.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Thailogical::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Thailogical/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Thailogical::Thai" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Thailogical/Thai.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Thaisemi::Thai" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Thaisemi/Thai.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Tlh::Tlh_fonipa" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Tlh/Tlh_fonipa.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Tr::Lower" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Tr/Lower.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Tr::Title" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Tr/Title.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Tr::Upper" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Tr/Upper.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Traditional::Simplified" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Traditional/Simplified.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Ug::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Ug/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Uz_cyrl::Uz_latn" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Uz_cyrl/Uz_latn.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Uz_latn::Uz_cyrl" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Uz_latn/Uz_cyrl.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Xsampa::Ipa" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Xsampa/Ipa.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Yo::Yo_bj" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Yo/Yo_bj.pm"
+      },
+      "Locale::CLDR::Transformations::Any::Zh_latn_pinyin::Ru" : {
+         "file" : "lib/Locale/CLDR/Transformations/Any/Zh_latn_pinyin/Ru.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Amharic::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Amharic/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Arabic::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Arabic/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Armenian::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Armenian/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Azerbaijani::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Azerbaijani/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Belarusian::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Belarusian/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Bulgarian::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Bulgarian/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Georgian::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Georgian/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Greek::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Greek/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Hebrew::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Hebrew/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Katakana::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Katakana/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Kazakh::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Kazakh/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Kirghiz::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Kirghiz/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Korean::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Korean/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Macedonian::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Macedonian/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Maldivian::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Maldivian/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Mongolian::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Mongolian/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Pashto::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Pashto/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Persian::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Persian/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Russian::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Russian/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Serbian::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Serbian/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Turkmen::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Turkmen/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Ukrainian::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Ukrainian/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Bgn::Uzbek::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Bgn/Uzbek/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Names::Han::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Names/Han/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Ungegn::Greek::Latin" : {
+         "file" : "lib/Locale/CLDR/Transformations/Ungegn/Greek/Latin.pm"
+      },
+      "Locale::CLDR::Transformations::Ungegn::Latin::Greek" : {
+         "file" : "lib/Locale/CLDR/Transformations/Ungegn/Latin/Greek.pm"
+      },
+      "Locale::CLDR::Ts" : {
+         "file" : "lib/Locale/CLDR/Ts.pm"
+      },
+      "Locale::CLDR::Ts::Any" : {
+         "file" : "lib/Locale/CLDR/Ts/Any.pm"
+      },
+      "Locale::CLDR::Ts::Any::Za" : {
+         "file" : "lib/Locale/CLDR/Ts/Any/Za.pm"
+      },
+      "Locale::CLDR::Twq" : {
+         "file" : "lib/Locale/CLDR/Twq.pm"
+      },
+      "Locale::CLDR::Twq::Any" : {
+         "file" : "lib/Locale/CLDR/Twq/Any.pm"
+      },
+      "Locale::CLDR::Twq::Any::Ne" : {
+         "file" : "lib/Locale/CLDR/Twq/Any/Ne.pm"
+      },
+      "Locale::CLDR::Tzm" : {
+         "file" : "lib/Locale/CLDR/Tzm.pm"
+      },
+      "Locale::CLDR::Tzm::Latn" : {
+         "file" : "lib/Locale/CLDR/Tzm/Latn.pm"
+      },
+      "Locale::CLDR::Tzm::Latn::Ma" : {
+         "file" : "lib/Locale/CLDR/Tzm/Latn/Ma.pm"
+      },
+      "Locale::CLDR::Ug" : {
+         "file" : "lib/Locale/CLDR/Ug.pm"
+      },
+      "Locale::CLDR::Ug::Arab" : {
+         "file" : "lib/Locale/CLDR/Ug/Arab.pm"
+      },
+      "Locale::CLDR::Ug::Arab::Cn" : {
+         "file" : "lib/Locale/CLDR/Ug/Arab/Cn.pm"
+      },
+      "Locale::CLDR::Uk" : {
+         "file" : "lib/Locale/CLDR/Uk.pm"
+      },
+      "Locale::CLDR::Uk::Any" : {
+         "file" : "lib/Locale/CLDR/Uk/Any.pm"
+      },
+      "Locale::CLDR::Uk::Any::Ua" : {
+         "file" : "lib/Locale/CLDR/Uk/Any/Ua.pm"
+      },
+      "Locale::CLDR::Ur" : {
+         "file" : "lib/Locale/CLDR/Ur.pm"
+      },
+      "Locale::CLDR::Ur::Any" : {
+         "file" : "lib/Locale/CLDR/Ur/Any.pm"
+      },
+      "Locale::CLDR::Ur::Any::In" : {
+         "file" : "lib/Locale/CLDR/Ur/Any/In.pm"
+      },
+      "Locale::CLDR::Ur::Any::Pk" : {
+         "file" : "lib/Locale/CLDR/Ur/Any/Pk.pm"
+      },
+      "Locale::CLDR::Uz" : {
+         "file" : "lib/Locale/CLDR/Uz.pm"
+      },
+      "Locale::CLDR::Uz::Arab" : {
+         "file" : "lib/Locale/CLDR/Uz/Arab.pm"
+      },
+      "Locale::CLDR::Uz::Arab::Af" : {
+         "file" : "lib/Locale/CLDR/Uz/Arab/Af.pm"
+      },
+      "Locale::CLDR::Uz::Cyrl" : {
+         "file" : "lib/Locale/CLDR/Uz/Cyrl.pm"
+      },
+      "Locale::CLDR::Uz::Cyrl::Uz" : {
+         "file" : "lib/Locale/CLDR/Uz/Cyrl/Uz.pm"
+      },
+      "Locale::CLDR::Uz::Latn" : {
+         "file" : "lib/Locale/CLDR/Uz/Latn.pm"
+      },
+      "Locale::CLDR::Uz::Latn::Uz" : {
+         "file" : "lib/Locale/CLDR/Uz/Latn/Uz.pm"
+      },
+      "Locale::CLDR::Vai" : {
+         "file" : "lib/Locale/CLDR/Vai.pm"
+      },
+      "Locale::CLDR::Vai::Latn" : {
+         "file" : "lib/Locale/CLDR/Vai/Latn.pm"
+      },
+      "Locale::CLDR::Vai::Latn::Lr" : {
+         "file" : "lib/Locale/CLDR/Vai/Latn/Lr.pm"
+      },
+      "Locale::CLDR::Vai::Vaii" : {
+         "file" : "lib/Locale/CLDR/Vai/Vaii.pm"
+      },
+      "Locale::CLDR::Vai::Vaii::Lr" : {
+         "file" : "lib/Locale/CLDR/Vai/Vaii/Lr.pm"
+      },
+      "Locale::CLDR::ValidCodes" : {
+         "file" : "lib/Locale/CLDR/ValidCodes.pm"
+      },
+      "Locale::CLDR::Ve" : {
+         "file" : "lib/Locale/CLDR/Ve.pm"
+      },
+      "Locale::CLDR::Ve::Any" : {
+         "file" : "lib/Locale/CLDR/Ve/Any.pm"
+      },
+      "Locale::CLDR::Ve::Any::Za" : {
+         "file" : "lib/Locale/CLDR/Ve/Any/Za.pm"
+      },
+      "Locale::CLDR::Vi" : {
+         "file" : "lib/Locale/CLDR/Vi.pm"
+      },
+      "Locale::CLDR::Vi::Any" : {
+         "file" : "lib/Locale/CLDR/Vi/Any.pm"
+      },
+      "Locale::CLDR::Vi::Any::Vn" : {
+         "file" : "lib/Locale/CLDR/Vi/Any/Vn.pm"
+      },
+      "Locale::CLDR::Vo" : {
+         "file" : "lib/Locale/CLDR/Vo.pm"
+      },
+      "Locale::CLDR::Vo::Any" : {
+         "file" : "lib/Locale/CLDR/Vo/Any.pm"
+      },
+      "Locale::CLDR::Vo::Any::001" : {
+         "file" : "lib/Locale/CLDR/Vo/Any/001.pm"
+      },
+      "Locale::CLDR::Vun" : {
+         "file" : "lib/Locale/CLDR/Vun.pm"
+      },
+      "Locale::CLDR::Vun::Any" : {
+         "file" : "lib/Locale/CLDR/Vun/Any.pm"
+      },
+      "Locale::CLDR::Vun::Any::Tz" : {
+         "file" : "lib/Locale/CLDR/Vun/Any/Tz.pm"
+      },
+      "Locale::CLDR::Wae" : {
+         "file" : "lib/Locale/CLDR/Wae.pm"
+      },
+      "Locale::CLDR::Wae::Any" : {
+         "file" : "lib/Locale/CLDR/Wae/Any.pm"
+      },
+      "Locale::CLDR::Wae::Any::Ch" : {
+         "file" : "lib/Locale/CLDR/Wae/Any/Ch.pm"
+      },
+      "Locale::CLDR::Wal" : {
+         "file" : "lib/Locale/CLDR/Wal.pm"
+      },
+      "Locale::CLDR::Wal::Any" : {
+         "file" : "lib/Locale/CLDR/Wal/Any.pm"
+      },
+      "Locale::CLDR::Wal::Any::Et" : {
+         "file" : "lib/Locale/CLDR/Wal/Any/Et.pm"
+      },
+      "Locale::CLDR::WeekData" : {
+         "file" : "lib/Locale/CLDR/WeekData.pm"
+      },
+      "Locale::CLDR::Xh" : {
+         "file" : "lib/Locale/CLDR/Xh.pm"
+      },
+      "Locale::CLDR::Xh::Any" : {
+         "file" : "lib/Locale/CLDR/Xh/Any.pm"
+      },
+      "Locale::CLDR::Xh::Any::Za" : {
+         "file" : "lib/Locale/CLDR/Xh/Any/Za.pm"
+      },
+      "Locale::CLDR::Xog" : {
+         "file" : "lib/Locale/CLDR/Xog.pm"
+      },
+      "Locale::CLDR::Xog::Any" : {
+         "file" : "lib/Locale/CLDR/Xog/Any.pm"
+      },
+      "Locale::CLDR::Xog::Any::Ug" : {
+         "file" : "lib/Locale/CLDR/Xog/Any/Ug.pm"
+      },
+      "Locale::CLDR::Yav" : {
+         "file" : "lib/Locale/CLDR/Yav.pm"
+      },
+      "Locale::CLDR::Yav::Any" : {
+         "file" : "lib/Locale/CLDR/Yav/Any.pm"
+      },
+      "Locale::CLDR::Yav::Any::Cm" : {
+         "file" : "lib/Locale/CLDR/Yav/Any/Cm.pm"
+      },
+      "Locale::CLDR::Yo" : {
+         "file" : "lib/Locale/CLDR/Yo.pm"
+      },
+      "Locale::CLDR::Yo::Any" : {
+         "file" : "lib/Locale/CLDR/Yo/Any.pm"
+      },
+      "Locale::CLDR::Yo::Any::Bj" : {
+         "file" : "lib/Locale/CLDR/Yo/Any/Bj.pm"
+      },
+      "Locale::CLDR::Yo::Any::Ng" : {
+         "file" : "lib/Locale/CLDR/Yo/Any/Ng.pm"
+      },
+      "Locale::CLDR::Zgh" : {
+         "file" : "lib/Locale/CLDR/Zgh.pm"
+      },
+      "Locale::CLDR::Zgh::Any" : {
+         "file" : "lib/Locale/CLDR/Zgh/Any.pm"
+      },
+      "Locale::CLDR::Zgh::Any::Ma" : {
+         "file" : "lib/Locale/CLDR/Zgh/Any/Ma.pm"
+      },
+      "Locale::CLDR::Zh" : {
+         "file" : "lib/Locale/CLDR/Zh.pm"
+      },
+      "Locale::CLDR::Zh::Hans" : {
+         "file" : "lib/Locale/CLDR/Zh/Hans.pm"
+      },
+      "Locale::CLDR::Zh::Hans::Cn" : {
+         "file" : "lib/Locale/CLDR/Zh/Hans/Cn.pm"
+      },
+      "Locale::CLDR::Zh::Hans::Hk" : {
+         "file" : "lib/Locale/CLDR/Zh/Hans/Hk.pm"
+      },
+      "Locale::CLDR::Zh::Hans::Mo" : {
+         "file" : "lib/Locale/CLDR/Zh/Hans/Mo.pm"
+      },
+      "Locale::CLDR::Zh::Hans::Sg" : {
+         "file" : "lib/Locale/CLDR/Zh/Hans/Sg.pm"
+      },
+      "Locale::CLDR::Zh::Hant" : {
+         "file" : "lib/Locale/CLDR/Zh/Hant.pm"
+      },
+      "Locale::CLDR::Zh::Hant::Hk" : {
+         "file" : "lib/Locale/CLDR/Zh/Hant/Hk.pm"
+      },
+      "Locale::CLDR::Zh::Hant::Mo" : {
+         "file" : "lib/Locale/CLDR/Zh/Hant/Mo.pm"
+      },
+      "Locale::CLDR::Zh::Hant::Tw" : {
+         "file" : "lib/Locale/CLDR/Zh/Hant/Tw.pm"
+      },
+      "Locale::CLDR::Zu" : {
+         "file" : "lib/Locale/CLDR/Zu.pm"
+      },
+      "Locale::CLDR::Zu::Any" : {
+         "file" : "lib/Locale/CLDR/Zu/Any.pm"
+      },
+      "Locale::CLDR::Zu::Any::Za" : {
+         "file" : "lib/Locale/CLDR/Zu/Any/Za.pm"
       }
    },
    "release_status" : "stable",
