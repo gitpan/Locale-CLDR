@@ -21,7 +21,8 @@
             "File::Spec" : "3.33",
             "FindBin" : "1.50",
             "LWP" : "6.03",
-            "Test::More" : "0.98"
+            "Test::More" : "0.98",
+            "ok" : "0.11"
          }
       },
       "configure" : {
