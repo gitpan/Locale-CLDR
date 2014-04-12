@@ -1,6 +1,6 @@
 package Locale::CLDR::Aa;
 # This file auto generated from Data\common\main\aa.xml
-#	on Sun 30 Mar 11:34:16 pm GMT
+#	on Sat 12 Apr  8:33:35 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;

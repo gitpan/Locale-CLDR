@@ -520,10 +520,6 @@ the data and you might want it
 All the above return a hashref keyed on date period
 with the value being the value for that date period
 
-The get_day_period() method will calculate the correct
-period for a given time and return the period name in
-the Locales language and script
-
 =item era_format_wide 
 
 =item era_format_abbreviated 
@@ -731,7 +727,7 @@ sub _build_break_rules {
 
 		foreach my $operand ($first, $second) {
 			if ($operand =~ m{ \S }msx) {
-				$operand = unicode_to_perl($operand);
+				$operand = _unicode_to_perl($operand);
 			}
 			else {
 				$operand = '.';
@@ -1309,23 +1305,28 @@ a locale key id as a string
 =cut
 
 sub key_name {
-	my ($self, $name) = @_;
+	my ($self, $key) = @_;
 
-	$name = lc $name;
+	$key = lc $key;
+	
 	my %key_aliases = $self->key_aliases;
 	my %key_names	= $self->key_names;
 	my %valid_keys	= $self->valid_keys;
 
-	my $alias = $key_aliases{$name} if exists $key_aliases{$name};
+	my $alias = $key_aliases{$key} // '';
+	my $name  = $key_names{$key} // '';
 
-	return '' unless exists $valid_keys{$name} || exists $valid_keys{$alias};
+	return '' unless exists $valid_keys{$key} || exists $valid_keys{$alias} || exists $valid_keys{$name};
 	my @bundles = $self->_find_bundle('display_name_key');
 	foreach my $bundle (@bundles) {
-		my $key = $bundle->display_name_key->{$name} // ( $alias ? $bundle->display_name_key->{$alias} : '');
-		return $key if length $key;
+		my $return = $bundle->display_name_key->{$key};
+		$return //= $bundle->display_name_key->{$alias}; 
+		$return //= $bundle->display_name_key->{$name}; 
+
+		return $return if defined $return && length $return;
 	}
 
-	return ucfirst ($key_names{$name} || $name);
+	return ucfirst ($key_names{$name} || $key_names{$alias} || $key_names{$key} || $key);
 }
 
 =item type_name($key, $type)
@@ -1345,14 +1346,15 @@ sub type_name {
 	my %valid_keys	= $self->valid_keys;
 	my %key_names	= $self->key_names;
 
-	my $alias = $key_aliases{$key} if exists $key_aliases{$key};
+	my $alias = $key_aliases{$key} // '';
+	my $name  = $key_names{$key}   // '';
 
-	return '' unless exists $valid_keys{$key} || $valid_keys{$alias};
-	return '' unless first { $_ eq $type } @{$valid_keys{$key} || $valid_keys{$alias} || []};
+	return '' unless exists $valid_keys{$key} || $valid_keys{$alias} || $valid_keys{$name};
+	return '' unless first { $_ eq $type } @{$valid_keys{$key} || []}, @{$valid_keys{$alias} || []}, @{$valid_keys{$name} || []};
 
 	my @bundles = $self->_find_bundle('display_name_type');
 	foreach my $bundle (@bundles) {
-		next unless my $types = $bundle->display_name_type->{$key_names{$key} || ($alias ? $key_names{$alias} : '')};
+		my $types = $bundle->display_name_type->{$key} // $bundle->display_name_type->{$alias} // $bundle->display_name_type->{$name};
 		my $type = $types->{$type};
 		return $type if defined $type;
 	}
@@ -1383,7 +1385,7 @@ sub measurement_system_name {
 	return '';
 }
 
-=item transform_name($measurement_system)
+=item transform_name($name)
 
 Returns the transform (transliteration) name in the current locales format. The transform must be
 a transform id as a string
@@ -1403,6 +1405,14 @@ sub transform_name {
 
 	return '';
 }
+
+=item code_pattern($type, $locale)
+
+This method formats a language, script or territory name, given as $type
+from $locale in a way expected by the current locale. If $locale is
+not passed in or is undef() the method uses the current locale.
+
+=cut
 
 sub code_pattern {
 	my ($self, $type, $locale) = @_;
@@ -1926,7 +1936,7 @@ sub unit {
 	
 	# Check for a compound unit that we don't specifically have
 	if (! $format && (my ($dividend, $divisor) = $what =~ /^(.+)-per-(.+)$/)) {
-		return $self->unit_compound($number, $dividend, $divisor, $type);
+		return $self->_unit_compound($number, $dividend, $divisor, $type);
 	}
 	
 	$number = $self->format_number($number);
@@ -1935,7 +1945,7 @@ sub unit {
 	return $format =~ s/\{0\}/$number/gr;
 }
 
-sub unit_compound {
+sub _unit_compound {
 	my ($self, $number, $dividend_what, $divisor_what, $type) = @_;
 	
 	$type //= 'long';
@@ -2220,7 +2230,16 @@ sub list {
 	return $pattern;
 }
 
-# Stubs until I get onto numbers
+=item plural($number)
+
+This method takes a number and uses the locales pluralisation
+rules to calculate the type of pluralisation required for
+units, currencies and other data that changes depending on
+the plural state of the number
+
+=cut
+
+# Stub until I get onto numbers
 sub plural {
 	return 'one' if $_[1] =~ /1$/;
 	return 'other';
@@ -2457,6 +2476,14 @@ sub _build_quarter_stand_alone_narrow {
 
 	return $self->_build_any_quarter($type, $width);
 }
+
+=item get_day_period($time)
+
+This method will calculate the correct
+period for a given time and return the period name in
+the Locales language and script
+
+=cut
 
 sub get_day_period {
 	# Time in hhmm
@@ -2860,6 +2887,12 @@ sub _build_format_data {
 	return {};
 }
 
+=item format_for
+
+TODO fix this 
+
+=cut
+
 sub format_for {
 	my ($self, $format) = @_;
 
@@ -2938,7 +2971,7 @@ sub _build_prefers_24_hour_time {
 }
 
 # Sub to mangle Unicode regex to Perl regex
-sub unicode_to_perl {
+sub _unicode_to_perl {
 	my $regex = shift;
 
 	return '' unless length $regex;
@@ -2960,13 +2993,13 @@ sub unicode_to_perl {
 				)++                 # Do the inside set stuff one or more times without backtracking
 			\]						# End the set
 		)
-	/ convert($1) /xeg;
+	/ _convert($1) /xeg;
 	no warnings "experimental::regex_sets";
 	no warnings "deprecated"; # Because CLDR uses surrogates
 	return qr/$regex/x;
 }
 
-sub convert {
+sub _convert {
 	my $set = shift;
 	
 	# Some definitions
@@ -3039,6 +3072,8 @@ sub convert {
 	
 	return "(?$set)";
 }
+
+=back
 
 =head1 AUTHOR
 

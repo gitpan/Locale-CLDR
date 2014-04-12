@@ -1,6 +1,6 @@
 package Locale::CLDR::En;
 # This file auto generated from Data\common\main\en.xml
-#	on Mon 31 Mar 12:10:35 am GMT
+#	on Sat 12 Apr  8:22:09 am GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use v5.18;
@@ -2219,9 +2219,9 @@ has 'curriencies' => (
 		},
 		'AFA' => {
 			display_name => {
-				'default' => q(Afghan Afghani (1927–2002)),
-				'one' => q(Afghan afghani (1927–2002)),
-				'other' => q(Afghan afghanis (1927–2002)),
+				'default' => q(Afghan Afghani \(1927–2002\)),
+				'one' => q(Afghan afghani \(1927–2002\)),
+				'other' => q(Afghan afghanis \(1927–2002\)),
 			},
 		},
 		'AFN' => {
@@ -2233,9 +2233,9 @@ has 'curriencies' => (
 		},
 		'ALK' => {
 			display_name => {
-				'default' => q(Albanian Lek (1946–1965)),
-				'one' => q(Albanian lek (1946–1965)),
-				'other' => q(Albanian lekë (1946–1965)),
+				'default' => q(Albanian Lek \(1946–1965\)),
+				'one' => q(Albanian lek \(1946–1965\)),
+				'other' => q(Albanian lekë \(1946–1965\)),
 			},
 		},
 		'ALL' => {
@@ -2268,23 +2268,23 @@ has 'curriencies' => (
 		},
 		'AOK' => {
 			display_name => {
-				'default' => q(Angolan Kwanza (1977–1991)),
-				'one' => q(Angolan kwanza (1977–1991)),
-				'other' => q(Angolan kwanzas (1977–1991)),
+				'default' => q(Angolan Kwanza \(1977–1991\)),
+				'one' => q(Angolan kwanza \(1977–1991\)),
+				'other' => q(Angolan kwanzas \(1977–1991\)),
 			},
 		},
 		'AON' => {
 			display_name => {
-				'default' => q(Angolan New Kwanza (1990–2000)),
-				'one' => q(Angolan new kwanza (1990–2000)),
-				'other' => q(Angolan new kwanzas (1990–2000)),
+				'default' => q(Angolan New Kwanza \(1990–2000\)),
+				'one' => q(Angolan new kwanza \(1990–2000\)),
+				'other' => q(Angolan new kwanzas \(1990–2000\)),
 			},
 		},
 		'AOR' => {
 			display_name => {
-				'default' => q(Angolan Readjusted Kwanza (1995–1999)),
-				'one' => q(Angolan readjusted kwanza (1995–1999)),
-				'other' => q(Angolan readjusted kwanzas (1995–1999)),
+				'default' => q(Angolan Readjusted Kwanza \(1995–1999\)),
+				'one' => q(Angolan readjusted kwanza \(1995–1999\)),
+				'other' => q(Angolan readjusted kwanzas \(1995–1999\)),
 			},
 		},
 		'ARA' => {
@@ -2296,23 +2296,23 @@ has 'curriencies' => (
 		},
 		'ARL' => {
 			display_name => {
-				'default' => q(Argentine Peso Ley (1970–1983)),
-				'one' => q(Argentine peso ley (1970–1983)),
-				'other' => q(Argentine pesos ley (1970–1983)),
+				'default' => q(Argentine Peso Ley \(1970–1983\)),
+				'one' => q(Argentine peso ley \(1970–1983\)),
+				'other' => q(Argentine pesos ley \(1970–1983\)),
 			},
 		},
 		'ARM' => {
 			display_name => {
-				'default' => q(Argentine Peso (1881–1970)),
-				'one' => q(Argentine peso (1881–1970)),
-				'other' => q(Argentine pesos (1881–1970)),
+				'default' => q(Argentine Peso \(1881–1970\)),
+				'one' => q(Argentine peso \(1881–1970\)),
+				'other' => q(Argentine pesos \(1881–1970\)),
 			},
 		},
 		'ARP' => {
 			display_name => {
-				'default' => q(Argentine Peso (1983–1985)),
-				'one' => q(Argentine peso (1983–1985)),
-				'other' => q(Argentine pesos (1983–1985)),
+				'default' => q(Argentine Peso \(1983–1985\)),
+				'one' => q(Argentine peso \(1983–1985\)),
+				'other' => q(Argentine pesos \(1983–1985\)),
 			},
 		},
 		'ARS' => {
@@ -2345,9 +2345,9 @@ has 'curriencies' => (
 		},
 		'AZM' => {
 			display_name => {
-				'default' => q(Azerbaijani Manat (1993–2006)),
-				'one' => q(Azerbaijani manat (1993–2006)),
-				'other' => q(Azerbaijani manats (1993–2006)),
+				'default' => q(Azerbaijani Manat \(1993–2006\)),
+				'one' => q(Azerbaijani manat \(1993–2006\)),
+				'other' => q(Azerbaijani manats \(1993–2006\)),
 			},
 		},
 		'AZN' => {
@@ -2359,9 +2359,9 @@ has 'curriencies' => (
 		},
 		'BAD' => {
 			display_name => {
-				'default' => q(Bosnia-Herzegovina Dinar (1992–1994)),
-				'one' => q(Bosnia-Herzegovina dinar (1992–1994)),
-				'other' => q(Bosnia-Herzegovina dinars (1992–1994)),
+				'default' => q(Bosnia-Herzegovina Dinar \(1992–1994\)),
+				'one' => q(Bosnia-Herzegovina dinar \(1992–1994\)),
+				'other' => q(Bosnia-Herzegovina dinars \(1992–1994\)),
 			},
 		},
 		'BAM' => {
@@ -2373,9 +2373,9 @@ has 'curriencies' => (
 		},
 		'BAN' => {
 			display_name => {
-				'default' => q(Bosnia-Herzegovina New Dinar (1994–1997)),
-				'one' => q(Bosnia-Herzegovina new dinar (1994–1997)),
-				'other' => q(Bosnia-Herzegovina new dinars (1994–1997)),
+				'default' => q(Bosnia-Herzegovina New Dinar \(1994–1997\)),
+				'one' => q(Bosnia-Herzegovina new dinar \(1994–1997\)),
+				'other' => q(Bosnia-Herzegovina new dinars \(1994–1997\)),
 			},
 		},
 		'BBD' => {
@@ -2394,9 +2394,9 @@ has 'curriencies' => (
 		},
 		'BEC' => {
 			display_name => {
-				'default' => q(Belgian Franc (convertible)),
-				'one' => q(Belgian franc (convertible)),
-				'other' => q(Belgian francs (convertible)),
+				'default' => q(Belgian Franc \(convertible\)),
+				'one' => q(Belgian franc \(convertible\)),
+				'other' => q(Belgian francs \(convertible\)),
 			},
 		},
 		'BEF' => {
@@ -2408,9 +2408,9 @@ has 'curriencies' => (
 		},
 		'BEL' => {
 			display_name => {
-				'default' => q(Belgian Franc (financial)),
-				'one' => q(Belgian franc (financial)),
-				'other' => q(Belgian francs (financial)),
+				'default' => q(Belgian Franc \(financial\)),
+				'one' => q(Belgian franc \(financial\)),
+				'other' => q(Belgian francs \(financial\)),
 			},
 		},
 		'BGL' => {
@@ -2436,9 +2436,9 @@ has 'curriencies' => (
 		},
 		'BGO' => {
 			display_name => {
-				'default' => q(Bulgarian Lev (1879–1952)),
-				'one' => q(Bulgarian lev (1879–1952)),
-				'other' => q(Bulgarian leva (1879–1952)),
+				'default' => q(Bulgarian Lev \(1879–1952\)),
+				'one' => q(Bulgarian lev \(1879–1952\)),
+				'other' => q(Bulgarian leva \(1879–1952\)),
 			},
 		},
 		'BHD' => {
@@ -2478,9 +2478,9 @@ has 'curriencies' => (
 		},
 		'BOL' => {
 			display_name => {
-				'default' => q(Bolivian Boliviano (1863–1963)),
-				'one' => q(Bolivian boliviano (1863–1963)),
-				'other' => q(Bolivian bolivianos (1863–1963)),
+				'default' => q(Bolivian Boliviano \(1863–1963\)),
+				'one' => q(Bolivian boliviano \(1863–1963\)),
+				'other' => q(Bolivian bolivianos \(1863–1963\)),
 			},
 		},
 		'BOP' => {
@@ -2499,23 +2499,23 @@ has 'curriencies' => (
 		},
 		'BRB' => {
 			display_name => {
-				'default' => q(Brazilian New Cruzeiro (1967–1986)),
-				'one' => q(Brazilian new cruzeiro (1967–1986)),
-				'other' => q(Brazilian new cruzeiros (1967–1986)),
+				'default' => q(Brazilian New Cruzeiro \(1967–1986\)),
+				'one' => q(Brazilian new cruzeiro \(1967–1986\)),
+				'other' => q(Brazilian new cruzeiros \(1967–1986\)),
 			},
 		},
 		'BRC' => {
 			display_name => {
-				'default' => q(Brazilian Cruzado (1986–1989)),
-				'one' => q(Brazilian cruzado (1986–1989)),
-				'other' => q(Brazilian cruzados (1986–1989)),
+				'default' => q(Brazilian Cruzado \(1986–1989\)),
+				'one' => q(Brazilian cruzado \(1986–1989\)),
+				'other' => q(Brazilian cruzados \(1986–1989\)),
 			},
 		},
 		'BRE' => {
 			display_name => {
-				'default' => q(Brazilian Cruzeiro (1990–1993)),
-				'one' => q(Brazilian cruzeiro (1990–1993)),
-				'other' => q(Brazilian cruzeiros (1990–1993)),
+				'default' => q(Brazilian Cruzeiro \(1990–1993\)),
+				'one' => q(Brazilian cruzeiro \(1990–1993\)),
+				'other' => q(Brazilian cruzeiros \(1990–1993\)),
 			},
 		},
 		'BRL' => {
@@ -2527,23 +2527,23 @@ has 'curriencies' => (
 		},
 		'BRN' => {
 			display_name => {
-				'default' => q(Brazilian New Cruzado (1989–1990)),
-				'one' => q(Brazilian new cruzado (1989–1990)),
-				'other' => q(Brazilian new cruzados (1989–1990)),
+				'default' => q(Brazilian New Cruzado \(1989–1990\)),
+				'one' => q(Brazilian new cruzado \(1989–1990\)),
+				'other' => q(Brazilian new cruzados \(1989–1990\)),
 			},
 		},
 		'BRR' => {
 			display_name => {
-				'default' => q(Brazilian Cruzeiro (1993–1994)),
-				'one' => q(Brazilian cruzeiro (1993–1994)),
-				'other' => q(Brazilian cruzeiros (1993–1994)),
+				'default' => q(Brazilian Cruzeiro \(1993–1994\)),
+				'one' => q(Brazilian cruzeiro \(1993–1994\)),
+				'other' => q(Brazilian cruzeiros \(1993–1994\)),
 			},
 		},
 		'BRZ' => {
 			display_name => {
-				'default' => q(Brazilian Cruzeiro (1942–1967)),
-				'one' => q(Brazilian cruzeiro (1942–1967)),
-				'other' => q(Brazilian cruzeiros (1942–1967)),
+				'default' => q(Brazilian Cruzeiro \(1942–1967\)),
+				'one' => q(Brazilian cruzeiro \(1942–1967\)),
+				'other' => q(Brazilian cruzeiros \(1942–1967\)),
 			},
 		},
 		'BSD' => {
@@ -2576,9 +2576,9 @@ has 'curriencies' => (
 		},
 		'BYB' => {
 			display_name => {
-				'default' => q(Belarusian New Ruble (1994–1999)),
-				'one' => q(Belarusian new ruble (1994–1999)),
-				'other' => q(Belarusian new rubles (1994–1999)),
+				'default' => q(Belarusian New Ruble \(1994–1999\)),
+				'one' => q(Belarusian new ruble \(1994–1999\)),
+				'other' => q(Belarusian new rubles \(1994–1999\)),
 			},
 		},
 		'BYR' => {
@@ -2639,9 +2639,9 @@ has 'curriencies' => (
 		},
 		'CLF' => {
 			display_name => {
-				'default' => q(Chilean Unit of Account (UF)),
-				'one' => q(Chilean unit of account (UF)),
-				'other' => q(Chilean units of account (UF)),
+				'default' => q(Chilean Unit of Account \(UF\)),
+				'one' => q(Chilean unit of account \(UF\)),
+				'other' => q(Chilean units of account \(UF\)),
 			},
 		},
 		'CLP' => {
@@ -2688,9 +2688,9 @@ has 'curriencies' => (
 		},
 		'CSD' => {
 			display_name => {
-				'default' => q(Serbian Dinar (2002–2006)),
-				'one' => q(Serbian dinar (2002–2006)),
-				'other' => q(Serbian dinars (2002–2006)),
+				'default' => q(Serbian Dinar \(2002–2006\)),
+				'one' => q(Serbian dinar \(2002–2006\)),
+				'other' => q(Serbian dinars \(2002–2006\)),
 			},
 		},
 		'CSK' => {
@@ -2814,16 +2814,16 @@ has 'curriencies' => (
 		},
 		'ESA' => {
 			display_name => {
-				'default' => q(Spanish Peseta (A account)),
-				'one' => q(Spanish peseta (A account)),
-				'other' => q(Spanish pesetas (A account)),
+				'default' => q(Spanish Peseta \(A account\)),
+				'one' => q(Spanish peseta \(A account\)),
+				'other' => q(Spanish pesetas \(A account\)),
 			},
 		},
 		'ESB' => {
 			display_name => {
-				'default' => q(Spanish Peseta (convertible account)),
-				'one' => q(Spanish peseta (convertible account)),
-				'other' => q(Spanish pesetas (convertible account)),
+				'default' => q(Spanish Peseta \(convertible account\)),
+				'one' => q(Spanish peseta \(convertible account\)),
+				'other' => q(Spanish pesetas \(convertible account\)),
 			},
 		},
 		'ESP' => {
@@ -2898,9 +2898,9 @@ has 'curriencies' => (
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Ghanaian Cedi (1979–2007)),
-				'one' => q(Ghanaian cedi (1979–2007)),
-				'other' => q(Ghanaian cedis (1979–2007)),
+				'default' => q(Ghanaian Cedi \(1979–2007\)),
+				'one' => q(Ghanaian cedi \(1979–2007\)),
+				'other' => q(Ghanaian cedis \(1979–2007\)),
 			},
 		},
 		'GHS' => {
@@ -3045,9 +3045,9 @@ has 'curriencies' => (
 		},
 		'ILR' => {
 			display_name => {
-				'default' => q(Israeli Sheqel (1980–1985)),
-				'one' => q(Israeli sheqel (1980–1985)),
-				'other' => q(Israeli sheqels (1980–1985)),
+				'default' => q(Israeli Sheqel \(1980–1985\)),
+				'one' => q(Israeli sheqel \(1980–1985\)),
+				'other' => q(Israeli sheqels \(1980–1985\)),
 			},
 		},
 		'ILS' => {
@@ -3080,9 +3080,9 @@ has 'curriencies' => (
 		},
 		'ISJ' => {
 			display_name => {
-				'default' => q(Icelandic Króna (1918–1981)),
-				'one' => q(Icelandic króna (1918–1981)),
-				'other' => q(Icelandic krónur (1918–1981)),
+				'default' => q(Icelandic Króna \(1918–1981\)),
+				'one' => q(Icelandic króna \(1918–1981\)),
+				'other' => q(Icelandic krónur \(1918–1981\)),
 			},
 		},
 		'ISK' => {
@@ -3158,16 +3158,16 @@ has 'curriencies' => (
 		},
 		'KRH' => {
 			display_name => {
-				'default' => q(South Korean Hwan (1953–1962)),
-				'one' => q(South Korean hwan (1953–1962)),
-				'other' => q(South Korean hwan (1953–1962)),
+				'default' => q(South Korean Hwan \(1953–1962\)),
+				'one' => q(South Korean hwan \(1953–1962\)),
+				'other' => q(South Korean hwan \(1953–1962\)),
 			},
 		},
 		'KRO' => {
 			display_name => {
-				'default' => q(South Korean Won (1945–1953)),
-				'one' => q(South Korean won (1945–1953)),
-				'other' => q(South Korean won (1945–1953)),
+				'default' => q(South Korean Won \(1945–1953\)),
+				'one' => q(South Korean won \(1945–1953\)),
+				'other' => q(South Korean won \(1945–1953\)),
 			},
 		},
 		'KRW' => {
@@ -3347,9 +3347,9 @@ has 'curriencies' => (
 		},
 		'MKN' => {
 			display_name => {
-				'default' => q(Macedonian Denar (1992–1993)),
-				'one' => q(Macedonian denar (1992–1993)),
-				'other' => q(Macedonian denari (1992–1993)),
+				'default' => q(Macedonian Denar \(1992–1993\)),
+				'one' => q(Macedonian denar \(1992–1993\)),
+				'other' => q(Macedonian denari \(1992–1993\)),
 			},
 		},
 		'MLF' => {
@@ -3438,9 +3438,9 @@ has 'curriencies' => (
 		},
 		'MXP' => {
 			display_name => {
-				'default' => q(Mexican Silver Peso (1861–1992)),
-				'one' => q(Mexican silver peso (1861–1992)),
-				'other' => q(Mexican silver pesos (1861–1992)),
+				'default' => q(Mexican Silver Peso \(1861–1992\)),
+				'one' => q(Mexican silver peso \(1861–1992\)),
+				'other' => q(Mexican silver pesos \(1861–1992\)),
 			},
 		},
 		'MXV' => {
@@ -3466,9 +3466,9 @@ has 'curriencies' => (
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Mozambican Metical (1980–2006)),
-				'one' => q(Mozambican metical (1980–2006)),
-				'other' => q(Mozambican meticals (1980–2006)),
+				'default' => q(Mozambican Metical \(1980–2006\)),
+				'one' => q(Mozambican metical \(1980–2006\)),
+				'other' => q(Mozambican meticals \(1980–2006\)),
 			},
 		},
 		'MZN' => {
@@ -3494,9 +3494,9 @@ has 'curriencies' => (
 		},
 		'NIC' => {
 			display_name => {
-				'default' => q(Nicaraguan Córdoba (1988–1991)),
-				'one' => q(Nicaraguan córdoba (1988–1991)),
-				'other' => q(Nicaraguan córdobas (1988–1991)),
+				'default' => q(Nicaraguan Córdoba \(1988–1991\)),
+				'one' => q(Nicaraguan córdoba \(1988–1991\)),
+				'other' => q(Nicaraguan córdobas \(1988–1991\)),
 			},
 		},
 		'NIO' => {
@@ -3564,9 +3564,9 @@ has 'curriencies' => (
 		},
 		'PES' => {
 			display_name => {
-				'default' => q(Peruvian Sol (1863–1965)),
-				'one' => q(Peruvian sol (1863–1965)),
-				'other' => q(Peruvian soles (1863–1965)),
+				'default' => q(Peruvian Sol \(1863–1965\)),
+				'one' => q(Peruvian sol \(1863–1965\)),
+				'other' => q(Peruvian soles \(1863–1965\)),
 			},
 		},
 		'PGK' => {
@@ -3599,9 +3599,9 @@ has 'curriencies' => (
 		},
 		'PLZ' => {
 			display_name => {
-				'default' => q(Polish Zloty (1950–1995)),
-				'one' => q(Polish zloty (PLZ)),
-				'other' => q(Polish zlotys (PLZ)),
+				'default' => q(Polish Zloty \(1950–1995\)),
+				'one' => q(Polish zloty \(PLZ\)),
+				'other' => q(Polish zlotys \(PLZ\)),
 			},
 		},
 		'PTE' => {
@@ -3634,9 +3634,9 @@ has 'curriencies' => (
 		},
 		'ROL' => {
 			display_name => {
-				'default' => q(Romanian Leu (1952–2006)),
-				'one' => q(Romanian leu (1952–2006)),
-				'other' => q(Romanian Lei (1952–2006)),
+				'default' => q(Romanian Leu \(1952–2006\)),
+				'one' => q(Romanian leu \(1952–2006\)),
+				'other' => q(Romanian Lei \(1952–2006\)),
 			},
 		},
 		'RON' => {
@@ -3662,9 +3662,9 @@ has 'curriencies' => (
 		},
 		'RUR' => {
 			display_name => {
-				'default' => q(Russian Ruble (1991–1998)),
-				'one' => q(Russian ruble (1991–1998)),
-				'other' => q(Russian rubles (1991–1998)),
+				'default' => q(Russian Ruble \(1991–1998\)),
+				'one' => q(Russian ruble \(1991–1998\)),
+				'other' => q(Russian rubles \(1991–1998\)),
 			},
 		},
 		'RWF' => {
@@ -3697,9 +3697,9 @@ has 'curriencies' => (
 		},
 		'SDD' => {
 			display_name => {
-				'default' => q(Sudanese Dinar (1992–2007)),
-				'one' => q(Sudanese dinar (1992–2007)),
-				'other' => q(Sudanese dinars (1992–2007)),
+				'default' => q(Sudanese Dinar \(1992–2007\)),
+				'one' => q(Sudanese dinar \(1992–2007\)),
+				'other' => q(Sudanese dinars \(1992–2007\)),
 			},
 		},
 		'SDG' => {
@@ -3711,9 +3711,9 @@ has 'curriencies' => (
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(Sudanese Pound (1957–1998)),
-				'one' => q(Sudanese pound (1957–1998)),
-				'other' => q(Sudanese pounds (1957–1998)),
+				'default' => q(Sudanese Pound \(1957–1998\)),
+				'one' => q(Sudanese pound \(1957–1998\)),
+				'other' => q(Sudanese pounds \(1957–1998\)),
 			},
 		},
 		'SEK' => {
@@ -3844,9 +3844,9 @@ has 'curriencies' => (
 		},
 		'TMM' => {
 			display_name => {
-				'default' => q(Turkmenistani Manat (1993–2009)),
-				'one' => q(Turkmenistani manat (1993–2009)),
-				'other' => q(Turkmenistani manat (1993–2009)),
+				'default' => q(Turkmenistani Manat \(1993–2009\)),
+				'one' => q(Turkmenistani manat \(1993–2009\)),
+				'other' => q(Turkmenistani manat \(1993–2009\)),
 			},
 		},
 		'TMT' => {
@@ -3879,9 +3879,9 @@ has 'curriencies' => (
 		},
 		'TRL' => {
 			display_name => {
-				'default' => q(Turkish Lira (1922–2005)),
-				'one' => q(Turkish lira (1922–2005)),
-				'other' => q(Turkish Lira (1922–2005)),
+				'default' => q(Turkish Lira \(1922–2005\)),
+				'one' => q(Turkish lira \(1922–2005\)),
+				'other' => q(Turkish Lira \(1922–2005\)),
 			},
 		},
 		'TRY' => {
@@ -3928,9 +3928,9 @@ has 'curriencies' => (
 		},
 		'UGS' => {
 			display_name => {
-				'default' => q(Ugandan Shilling (1966–1987)),
-				'one' => q(Ugandan shilling (1966–1987)),
-				'other' => q(Ugandan shillings (1966–1987)),
+				'default' => q(Ugandan Shilling \(1966–1987\)),
+				'one' => q(Ugandan shilling \(1966–1987\)),
+				'other' => q(Ugandan shillings \(1966–1987\)),
 			},
 		},
 		'UGX' => {
@@ -3950,30 +3950,30 @@ has 'curriencies' => (
 		},
 		'USN' => {
 			display_name => {
-				'default' => q(US Dollar (Next day)),
-				'one' => q(US dollar (next day)),
-				'other' => q(US dollars (next day)),
+				'default' => q(US Dollar \(Next day\)),
+				'one' => q(US dollar \(next day\)),
+				'other' => q(US dollars \(next day\)),
 			},
 		},
 		'USS' => {
 			display_name => {
-				'default' => q(US Dollar (Same day)),
-				'one' => q(US dollar (same day)),
-				'other' => q(US dollars (same day)),
+				'default' => q(US Dollar \(Same day\)),
+				'one' => q(US dollar \(same day\)),
+				'other' => q(US dollars \(same day\)),
 			},
 		},
 		'UYI' => {
 			display_name => {
-				'default' => q(Uruguayan Peso (Indexed Units)),
-				'one' => q(Uruguayan peso (indexed units)),
-				'other' => q(Uruguayan pesos (indexed units)),
+				'default' => q(Uruguayan Peso \(Indexed Units\)),
+				'one' => q(Uruguayan peso \(indexed units\)),
+				'other' => q(Uruguayan pesos \(indexed units\)),
 			},
 		},
 		'UYP' => {
 			display_name => {
-				'default' => q(Uruguayan Peso (1975–1993)),
-				'one' => q(Uruguayan peso (1975–1993)),
-				'other' => q(Uruguayan pesos (1975–1993)),
+				'default' => q(Uruguayan Peso \(1975–1993\)),
+				'one' => q(Uruguayan peso \(1975–1993\)),
+				'other' => q(Uruguayan pesos \(1975–1993\)),
 			},
 		},
 		'UYU' => {
@@ -3992,9 +3992,9 @@ has 'curriencies' => (
 		},
 		'VEB' => {
 			display_name => {
-				'default' => q(Venezuelan Bolívar (1871–2008)),
-				'one' => q(Venezuelan bolívar (1871–2008)),
-				'other' => q(Venezuelan bolívars (1871–2008)),
+				'default' => q(Venezuelan Bolívar \(1871–2008\)),
+				'one' => q(Venezuelan bolívar \(1871–2008\)),
+				'other' => q(Venezuelan bolívars \(1871–2008\)),
 			},
 		},
 		'VEF' => {
@@ -4013,9 +4013,9 @@ has 'curriencies' => (
 		},
 		'VNN' => {
 			display_name => {
-				'default' => q(Vietnamese Dong (1978–1985)),
-				'one' => q(Vietnamese dong (1978–1985)),
-				'other' => q(Vietnamese dong (1978–1985)),
+				'default' => q(Vietnamese Dong \(1978–1985\)),
+				'one' => q(Vietnamese dong \(1978–1985\)),
+				'other' => q(Vietnamese dong \(1978–1985\)),
 			},
 		},
 		'VUV' => {
@@ -4069,16 +4069,16 @@ has 'curriencies' => (
 		},
 		'XBC' => {
 			display_name => {
-				'default' => q(European Unit of Account (XBC)),
-				'one' => q(European unit of account (XBC)),
-				'other' => q(European units of account (XBC)),
+				'default' => q(European Unit of Account \(XBC\)),
+				'one' => q(European unit of account \(XBC\)),
+				'other' => q(European units of account \(XBC\)),
 			},
 		},
 		'XBD' => {
 			display_name => {
-				'default' => q(European Unit of Account (XBD)),
-				'one' => q(European unit of account (XBD)),
-				'other' => q(European units of account (XBD)),
+				'default' => q(European Unit of Account \(XBD\)),
+				'one' => q(European unit of account \(XBD\)),
+				'other' => q(European units of account \(XBD\)),
 			},
 		},
 		'XCD' => {
@@ -4175,8 +4175,8 @@ has 'curriencies' => (
 		'XXX' => {
 			display_name => {
 				'default' => q(Unknown Currency),
-				'one' => q((unknown unit of currency)),
-				'other' => q((unknown currency)),
+				'one' => q(\(unknown unit of currency\)),
+				'other' => q(\(unknown currency\)),
 			},
 		},
 		'YDD' => {
@@ -4195,37 +4195,37 @@ has 'curriencies' => (
 		},
 		'YUD' => {
 			display_name => {
-				'default' => q(Yugoslavian Hard Dinar (1966–1990)),
-				'one' => q(Yugoslavian hard dinar (1966–1990)),
-				'other' => q(Yugoslavian hard dinars (1966–1990)),
+				'default' => q(Yugoslavian Hard Dinar \(1966–1990\)),
+				'one' => q(Yugoslavian hard dinar \(1966–1990\)),
+				'other' => q(Yugoslavian hard dinars \(1966–1990\)),
 			},
 		},
 		'YUM' => {
 			display_name => {
-				'default' => q(Yugoslavian New Dinar (1994–2002)),
-				'one' => q(Yugoslavian new dinar (1994–2002)),
-				'other' => q(Yugoslavian new dinars (1994–2002)),
+				'default' => q(Yugoslavian New Dinar \(1994–2002\)),
+				'one' => q(Yugoslavian new dinar \(1994–2002\)),
+				'other' => q(Yugoslavian new dinars \(1994–2002\)),
 			},
 		},
 		'YUN' => {
 			display_name => {
-				'default' => q(Yugoslavian Convertible Dinar (1990–1992)),
-				'one' => q(Yugoslavian convertible dinar (1990–1992)),
-				'other' => q(Yugoslavian convertible dinars (1990–1992)),
+				'default' => q(Yugoslavian Convertible Dinar \(1990–1992\)),
+				'one' => q(Yugoslavian convertible dinar \(1990–1992\)),
+				'other' => q(Yugoslavian convertible dinars \(1990–1992\)),
 			},
 		},
 		'YUR' => {
 			display_name => {
-				'default' => q(Yugoslavian Reformed Dinar (1992–1993)),
-				'one' => q(Yugoslavian reformed dinar (1992–1993)),
-				'other' => q(Yugoslavian reformed dinars (1992–1993)),
+				'default' => q(Yugoslavian Reformed Dinar \(1992–1993\)),
+				'one' => q(Yugoslavian reformed dinar \(1992–1993\)),
+				'other' => q(Yugoslavian reformed dinars \(1992–1993\)),
 			},
 		},
 		'ZAL' => {
 			display_name => {
-				'default' => q(South African Rand (financial)),
-				'one' => q(South African rand (financial)),
-				'other' => q(South African rands (financial)),
+				'default' => q(South African Rand \(financial\)),
+				'one' => q(South African rand \(financial\)),
+				'other' => q(South African rands \(financial\)),
 			},
 		},
 		'ZAR' => {
@@ -4237,9 +4237,9 @@ has 'curriencies' => (
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Zambian Kwacha (1968–2012)),
-				'one' => q(Zambian kwacha (1968–2012)),
-				'other' => q(Zambian kwachas (1968–2012)),
+				'default' => q(Zambian Kwacha \(1968–2012\)),
+				'one' => q(Zambian kwacha \(1968–2012\)),
+				'other' => q(Zambian kwachas \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
@@ -4251,37 +4251,37 @@ has 'curriencies' => (
 		},
 		'ZRN' => {
 			display_name => {
-				'default' => q(Zairean New Zaire (1993–1998)),
-				'one' => q(Zairean new zaire (1993–1998)),
-				'other' => q(Zairean new zaires (1993–1998)),
+				'default' => q(Zairean New Zaire \(1993–1998\)),
+				'one' => q(Zairean new zaire \(1993–1998\)),
+				'other' => q(Zairean new zaires \(1993–1998\)),
 			},
 		},
 		'ZRZ' => {
 			display_name => {
-				'default' => q(Zairean Zaire (1971–1993)),
-				'one' => q(Zairean zaire (1971–1993)),
-				'other' => q(Zairean zaires (1971–1993)),
+				'default' => q(Zairean Zaire \(1971–1993\)),
+				'one' => q(Zairean zaire \(1971–1993\)),
+				'other' => q(Zairean zaires \(1971–1993\)),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Zimbabwean Dollar (1980–2008)),
-				'one' => q(Zimbabwean dollar (1980–2008)),
-				'other' => q(Zimbabwean dollars (1980–2008)),
+				'default' => q(Zimbabwean Dollar \(1980–2008\)),
+				'one' => q(Zimbabwean dollar \(1980–2008\)),
+				'other' => q(Zimbabwean dollars \(1980–2008\)),
 			},
 		},
 		'ZWL' => {
 			display_name => {
-				'default' => q(Zimbabwean Dollar (2009)),
-				'one' => q(Zimbabwean dollar (2009)),
-				'other' => q(Zimbabwean dollars (2009)),
+				'default' => q(Zimbabwean Dollar \(2009\)),
+				'one' => q(Zimbabwean dollar \(2009\)),
+				'other' => q(Zimbabwean dollars \(2009\)),
 			},
 		},
 		'ZWR' => {
 			display_name => {
-				'default' => q(Zimbabwean Dollar (2008)),
-				'one' => q(Zimbabwean dollar (2008)),
-				'other' => q(Zimbabwean dollars (2008)),
+				'default' => q(Zimbabwean Dollar \(2008\)),
+				'one' => q(Zimbabwean dollar \(2008\)),
+				'other' => q(Zimbabwean dollars \(2008\)),
 			},
 		},
 	} },
@@ -4499,31 +4499,7 @@ has 'day_period_data' => (
 				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'chinese') {
-				return 'pm' if $time > 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'islamic') {
-				return 'pm' if $time > 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
 			if ($_ eq 'generic') {
-				return 'pm' if $time > 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'hebrew') {
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'am' if $time >= 000
@@ -4540,6 +4516,30 @@ has 'day_period_data' => (
 			last SWITCH;
 			}
 			if ($_ eq 'roc') {
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'noon' if $time == 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'chinese') {
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'noon' if $time == 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'hebrew') {
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'noon' if $time == 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'islamic') {
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'am' if $time >= 000
@@ -4566,15 +4566,15 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'narrow' => {
-					'pm' => q{p},
-					'noon' => q{n},
-					'am' => q{a},
-				},
 				'wide' => {
 					'pm' => q{pm},
 					'am' => q{am},
 					'noon' => q{noon},
+				},
+				'narrow' => {
+					'pm' => q{p},
+					'noon' => q{n},
+					'am' => q{a},
 				},
 			},
 		},
@@ -4739,40 +4739,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			EHm => q{E HH:mm},
-			EHms => q{E HH:mm:ss},
-			Ed => q{d E},
-			Ehm => q{E h:mm a},
-			Ehms => q{E h:mm:ss a},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E, MMM d, y G},
-			GyMMMd => q{MMM d, y G},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, M/d},
-			MMM => q{LLL},
-			MMMEd => q{E, MMM d},
-			MMMd => q{MMM d},
-			Md => q{M/d},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y},
-			yM => q{M/y},
-			yMEd => q{E, M/d/y},
-			yMMM => q{MMM y},
-			yMMMEd => q{E, MMM d, y},
-			yMMMd => q{MMM d, y},
-			yMd => q{M/d/y},
-			yQQQ => q{QQQ y},
-			yQQQQ => q{QQQQ y},
-		},
 		'chinese' => {
 			EHm => q{E HH:mm},
 			EHms => q{E HH:mm:ss},
@@ -4808,6 +4774,40 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{M/d/y},
 			yyyyQQQ => q{QQQ U},
 			yyyyQQQQ => q{QQQQ U},
+		},
+		'gregorian' => {
+			EHm => q{E HH:mm},
+			EHms => q{E HH:mm:ss},
+			Ed => q{d E},
+			Ehm => q{E h:mm a},
+			Ehms => q{E h:mm:ss a},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E, MMM d, y G},
+			GyMMMd => q{MMM d, y G},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, M/d},
+			MMM => q{LLL},
+			MMMEd => q{E, MMM d},
+			MMMd => q{MMM d},
+			Md => q{M/d},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y},
+			yM => q{M/y},
+			yMEd => q{E, M/d/y},
+			yMMM => q{MMM y},
+			yMMMEd => q{E, MMM d, y},
+			yMMMd => q{MMM d, y},
+			yMd => q{M/d/y},
+			yQQQ => q{QQQ y},
+			yQQQQ => q{QQQQ y},
 		},
 		'generic' => {
 			EHm => q{E HH:mm},
@@ -4886,101 +4886,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			H => {
-				H => q{HH – HH},
-			},
-			Hm => {
-				H => q{HH:mm – HH:mm},
-				m => q{HH:mm – HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm – HH:mm v},
-				m => q{HH:mm – HH:mm v},
-			},
-			Hv => {
-				H => q{HH – HH v},
-			},
-			M => {
-				M => q{M – M},
-			},
-			MEd => {
-				M => q{E, M/d – E, M/d},
-				d => q{E, M/d – E, M/d},
-			},
-			MMM => {
-				M => q{MMM – MMM},
-			},
-			MMMEd => {
-				M => q{E, MMM d – E, MMM d},
-				d => q{E, MMM d – E, MMM d},
-			},
-			MMMd => {
-				M => q{MMM d – MMM d},
-				d => q{MMM d – d},
-			},
-			Md => {
-				M => q{M/d – M/d},
-				d => q{M/d – M/d},
-			},
-			d => {
-				d => q{d – d},
-			},
-			fallback => '{0} – {1}',
-			h => {
-				a => q{h a – h a},
-				h => q{h – h a},
-			},
-			hm => {
-				a => q{h:mm a – h:mm a},
-				h => q{h:mm – h:mm a},
-				m => q{h:mm – h:mm a},
-			},
-			hmv => {
-				a => q{h:mm a – h:mm a v},
-				h => q{h:mm – h:mm a v},
-				m => q{h:mm – h:mm a v},
-			},
-			hv => {
-				a => q{h a – h a v},
-				h => q{h – h a v},
-			},
-			y => {
-				y => q{y – y},
-			},
-			yM => {
-				M => q{M/y – M/y},
-				y => q{M/y – M/y},
-			},
-			yMEd => {
-				M => q{E, M/d/y – E, M/d/y},
-				d => q{E, M/d/y – E, M/d/y},
-				y => q{E, M/d/y – E, M/d/y},
-			},
-			yMMM => {
-				M => q{MMM – MMM y},
-				y => q{MMM y – MMM y},
-			},
-			yMMMEd => {
-				M => q{E, MMM d – E, MMM d, y},
-				d => q{E, MMM d – E, MMM d, y},
-				y => q{E, MMM d, y – E, MMM d, y},
-			},
-			yMMMM => {
-				M => q{MMMM – MMMM y},
-				y => q{MMMM y – MMMM y},
-			},
-			yMMMd => {
-				M => q{MMM d – MMM d, y},
-				d => q{MMM d – d, y},
-				y => q{MMM d, y – MMM d, y},
-			},
-			yMd => {
-				M => q{M/d/y – M/d/y},
-				d => q{M/d/y – M/d/y},
-				y => q{M/d/y – M/d/y},
-			},
-		},
 		'chinese' => {
 			H => {
 				H => q{HH – HH},
@@ -5069,6 +4974,101 @@ has 'datetime_formats_interval' => (
 				M => q{MMM d – MMM d, U},
 				d => q{MMM d – d, U},
 				y => q{MMM d, U – MMM d, U},
+			},
+			yMd => {
+				M => q{M/d/y – M/d/y},
+				d => q{M/d/y – M/d/y},
+				y => q{M/d/y – M/d/y},
+			},
+		},
+		'gregorian' => {
+			H => {
+				H => q{HH – HH},
+			},
+			Hm => {
+				H => q{HH:mm – HH:mm},
+				m => q{HH:mm – HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm – HH:mm v},
+				m => q{HH:mm – HH:mm v},
+			},
+			Hv => {
+				H => q{HH – HH v},
+			},
+			M => {
+				M => q{M – M},
+			},
+			MEd => {
+				M => q{E, M/d – E, M/d},
+				d => q{E, M/d – E, M/d},
+			},
+			MMM => {
+				M => q{MMM – MMM},
+			},
+			MMMEd => {
+				M => q{E, MMM d – E, MMM d},
+				d => q{E, MMM d – E, MMM d},
+			},
+			MMMd => {
+				M => q{MMM d – MMM d},
+				d => q{MMM d – d},
+			},
+			Md => {
+				M => q{M/d – M/d},
+				d => q{M/d – M/d},
+			},
+			d => {
+				d => q{d – d},
+			},
+			fallback => '{0} – {1}',
+			h => {
+				a => q{h a – h a},
+				h => q{h – h a},
+			},
+			hm => {
+				a => q{h:mm a – h:mm a},
+				h => q{h:mm – h:mm a},
+				m => q{h:mm – h:mm a},
+			},
+			hmv => {
+				a => q{h:mm a – h:mm a v},
+				h => q{h:mm – h:mm a v},
+				m => q{h:mm – h:mm a v},
+			},
+			hv => {
+				a => q{h a – h a v},
+				h => q{h – h a v},
+			},
+			y => {
+				y => q{y – y},
+			},
+			yM => {
+				M => q{M/y – M/y},
+				y => q{M/y – M/y},
+			},
+			yMEd => {
+				M => q{E, M/d/y – E, M/d/y},
+				d => q{E, M/d/y – E, M/d/y},
+				y => q{E, M/d/y – E, M/d/y},
+			},
+			yMMM => {
+				M => q{MMM – MMM y},
+				y => q{MMM y – MMM y},
+			},
+			yMMMEd => {
+				M => q{E, MMM d – E, MMM d, y},
+				d => q{E, MMM d – E, MMM d, y},
+				y => q{E, MMM d, y – E, MMM d, y},
+			},
+			yMMMM => {
+				M => q{MMMM – MMMM y},
+				y => q{MMMM y – MMMM y},
+			},
+			yMMMd => {
+				M => q{MMM d – MMM d, y},
+				d => q{MMM d – d, y},
+				y => q{MMM d, y – MMM d, y},
 			},
 			yMd => {
 				M => q{M/d/y – M/d/y},

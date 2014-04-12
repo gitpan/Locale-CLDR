@@ -1,6 +1,6 @@
 package Locale::CLDR::Transformations::Any::Hiragana::Latin;
 # This file auto generated from Data\common\transforms\Hiragana-Latin.xml
-#	on Sun 30 Mar 11:33:58 pm GMT
+#	on Sat 12 Apr  8:33:17 am GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
 use v5.18;

@@ -1,6 +1,6 @@
 package Locale::CLDR::Transformations::Bgn::Ukrainian::Latin;
 # This file auto generated from Data\common\transforms\Ukrainian-Latin-BGN.xml
-#	on Sun 30 Mar 11:34:12 pm GMT
+#	on Sat 12 Apr  8:33:30 am GMT
 # XML file generated 2013-08-07 00:48:32 -0500 (Wed, 07 Aug 2013)
 
 use v5.18;

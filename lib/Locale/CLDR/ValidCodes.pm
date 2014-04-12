@@ -1,6 +1,6 @@
 package Locale::CLDR::ValidCodes;
 # This file auto generated from Data\common\supplemental\supplementalMetadata.xml
-#	on Sun 30 Mar 11:33:16 pm GMT
+#	on Sat 12 Apr  8:32:37 am GMT
 # XML file generated 2014-03-03 15:14:02 -0600 (Mon, 03 Mar 2014)
 
 use v5.18;
@@ -1113,21 +1113,21 @@ has 'key_aliases' => (
 	init_arg	=> undef,
 	auto_deref	=> 1,
 	default	=> sub { return {
-		calendar => 'ca',
-		collation => 'co',
-		currency => 'cu',
-		colalternate => 'ka',
-		colbackwards => 'kb',
-		colcaselevel => 'kc',
-		colcasefirst => 'kf',
-		colhiraganaquaternary => 'kh',
-		colnormalization => 'kk',
-		colnumeric => 'kn',
-		colreorder => 'kr',
-		colstrength => 'ks',
-		numbers => 'nu',
-		timezone => 'tz',
-		variabletop => 'vt',
+		'ca' => 'calendar',
+		'co' => 'collation',
+		'cu' => 'currency',
+		'ka' => 'colalternate',
+		'kb' => 'colbackwards',
+		'kc' => 'colcaselevel',
+		'kf' => 'colcasefirst',
+		'kh' => 'colhiraganaquaternary',
+		'kk' => 'colnormalization',
+		'kn' => 'colnumeric',
+		'kr' => 'colreorder',
+		'ks' => 'colstrength',
+		'nu' => 'numbers',
+		'tz' => 'timezone',
+		'vt' => 'variabletop',
 	}},
 );
 
@@ -1136,6 +1136,7 @@ has 'key_names' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	auto_deref	=> 1,
+	lazy		=> 1,
 	default	=> sub { return { reverse shift()->key_aliases }; },
 );
 

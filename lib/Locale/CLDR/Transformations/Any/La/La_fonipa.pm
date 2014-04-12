@@ -1,6 +1,6 @@
 package Locale::CLDR::Transformations::Any::La::La_fonipa;
 # This file auto generated from Data\common\transforms\la-la_FONIPA.xml
-#	on Sun 30 Mar 11:34:14 pm GMT
+#	on Sat 12 Apr  8:33:32 am GMT
 # XML file generated 2014-02-27 01:17:53 -0600 (Thu, 27 Feb 2014)
 
 use v5.18;
