@@ -1150,8 +1150,6 @@ lib/Locale/CLDR/Zh/Hant/Tw.pm
 lib/Locale/CLDR/Zu.pm
 lib/Locale/CLDR/Zu/Any.pm
 lib/Locale/CLDR/Zu/Any/Za.pm
-Locale-CLDR-v0.0.1b-TRIAL.tar.gz
-Locale-CLDR-v0.0.2.tar.gz
 Makefile.PL
 MANIFEST
 META.json

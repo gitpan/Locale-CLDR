@@ -44,7 +44,7 @@
    "provides" : {
       "Locale::CLDR" : {
          "file" : "lib/Locale/CLDR.pm",
-         "version" : "v0.0.2"
+         "version" : "v0.0.3"
       },
       "Locale::CLDR::Aa" : {
          "file" : "lib/Locale/CLDR/Aa.pm"
@@ -3500,5 +3500,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "v0.0.2"
+   "version" : "v0.0.3"
 }

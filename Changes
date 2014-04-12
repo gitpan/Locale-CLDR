@@ -5,3 +5,6 @@ v0.0.1 Released to CPAN
 
 12/04/2014
 v0.0.2 This version now passes all tests on CPAN
+
+12/04/2014
+v0.0.3 This corrects a mistake in the upload of the previous version

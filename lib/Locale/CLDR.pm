@@ -1,4 +1,4 @@
-package Locale::CLDR v0.0.2;
+package Locale::CLDR v0.0.3;
 
 =encoding utf8
 
