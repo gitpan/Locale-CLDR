@@ -1662,7 +1662,7 @@ sub process_units {
 			$unit_type_name =~ s/^[^\-]+-//;
 			foreach my $unit_pattern ($unit_type->getChildNodes) {
 				next if $unit_pattern->isTextNode;
-				my $count = $unit_pattern->getAttribute('count') // 'default';
+				my $count = $unit_pattern->getAttribute('count');
 				my $pattern = $unit_pattern->getChildNode(1)->getValue;
 				$units{$length}{$unit_type_name}{$count} = $pattern;
 			}
@@ -1975,7 +1975,7 @@ sub process_numbers {
 		}
 		my $display_name_nodes = findnodes($xpath, "/ldml/numbers/currencies/currency[\@type='$currency_code']/displayName");
 		foreach my $display_name_node ($display_name_nodes->get_nodelist) {
-			my $count = $display_name_node->getAttribute('count') || 'default';
+			my $count = $display_name_node->getAttribute('count') || 'currency';
 			my $name = $display_name_node->getChildNode(1)->getValue();
 			$currencies{$currency_code}{display_name}{$count} = $name;
 		}

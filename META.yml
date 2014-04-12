@@ -1,5 +1,5 @@
 ---
-abstract: 'Main Class for CLDR Locals'
+abstract: 'A Module to create locale objects with localisation data from the CLDR'
 author:
   - 'John Imrie <john.imrie1@gmail.com>'
 build_requires:
@@ -22,7 +22,7 @@ name: Locale-CLDR
 provides:
   Locale::CLDR:
     file: lib/Locale/CLDR.pm
-    version: v0.0.1
+    version: v0.0.2
   Locale::CLDR::Aa:
     file: lib/Locale/CLDR/Aa.pm
   Locale::CLDR::Aa::Any:
@@ -2330,4 +2330,4 @@ requires:
   version: 0.95
 resources:
   license: http://dev.perl.org/licenses/
-version: v0.0.1
+version: v0.0.2
