@@ -1,6 +1,6 @@
-package Locale::CLDR::Naq;
+package Locale::CLDR::Naq v0.0.4;
 # This file auto generated from Data\common\main\naq.xml
-#	on Mon 31 Mar  1:29:04 am GMT
+#	on Sun 13 Apr 11:29:05 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -364,9 +364,6 @@ has 'nostr' => (
 	default		=> sub { qr'^(?i:Hî-î|H|no|n)$' }
 );
 
-	} }
-);
-
 has 'number_currency_formats' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -392,283 +389,283 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(United Arab Emirates Dirham),
+				'currency' => q(United Arab Emirates Dirham),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Angolan Kwanzab),
+				'currency' => q(Angolan Kwanzab),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Australian Dollari),
+				'currency' => q(Australian Dollari),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Bahrain Dinar),
+				'currency' => q(Bahrain Dinar),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Burundi Franc),
+				'currency' => q(Burundi Franc),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Botswanan Pulab),
+				'currency' => q(Botswanan Pulab),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Canadian Dollari),
+				'currency' => q(Canadian Dollari),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Congolese Franc),
+				'currency' => q(Congolese Franc),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Swiss Franci),
+				'currency' => q(Swiss Franci),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Chinese Yuan Renminbi),
+				'currency' => q(Chinese Yuan Renminbi),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Escudo Caboverdiano),
+				'currency' => q(Escudo Caboverdiano),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Djibouti Franc),
+				'currency' => q(Djibouti Franc),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Algerian Dinar),
+				'currency' => q(Algerian Dinar),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Egytian Ponds),
+				'currency' => q(Egytian Ponds),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Eritreian Nakfa),
+				'currency' => q(Eritreian Nakfa),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Ethiopian Birr),
+				'currency' => q(Ethiopian Birr),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Eurob),
+				'currency' => q(Eurob),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(British Ponds),
+				'currency' => q(British Ponds),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Ghana Cedi),
+				'currency' => q(Ghana Cedi),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Gambia Dalasi),
+				'currency' => q(Gambia Dalasi),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Guinea Franc),
+				'currency' => q(Guinea Franc),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Indian Rupee),
+				'currency' => q(Indian Rupee),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Japanese Yenni),
+				'currency' => q(Japanese Yenni),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Kenyan Shilling),
+				'currency' => q(Kenyan Shilling),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Comorian Franc),
+				'currency' => q(Comorian Franc),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Liberian Dollar),
+				'currency' => q(Liberian Dollar),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Lesotho Loti),
+				'currency' => q(Lesotho Loti),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Libyan Dinar),
+				'currency' => q(Libyan Dinar),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Moroccan Dirham),
+				'currency' => q(Moroccan Dirham),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Malagasy Franc),
+				'currency' => q(Malagasy Franc),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Mauritania Ouguiya),
+				'currency' => q(Mauritania Ouguiya),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Mauritius Rupeeb),
+				'currency' => q(Mauritius Rupeeb),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Malawian Kwachab),
+				'currency' => q(Malawian Kwachab),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Mozambique Metical),
+				'currency' => q(Mozambique Metical),
 			},
 		},
 		'NAD' => {
 			symbol => '$',
 			display_name => {
-				'default' => q(Namibia Dollari),
+				'currency' => q(Namibia Dollari),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Nigerian Naira),
+				'currency' => q(Nigerian Naira),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Rwanda Franci),
+				'currency' => q(Rwanda Franci),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Saudi Riyal),
+				'currency' => q(Saudi Riyal),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Seychelles Rupee),
+				'currency' => q(Seychelles Rupee),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Sudanese Dinar),
+				'currency' => q(Sudanese Dinar),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(Sudanese Ponds),
+				'currency' => q(Sudanese Ponds),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(St Helena Ponds),
+				'currency' => q(St Helena Ponds),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Leone),
+				'currency' => q(Leone),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Somali Shillings),
+				'currency' => q(Somali Shillings),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Sao Tome and Principe Dobra),
+				'currency' => q(Sao Tome and Principe Dobra),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lilangeni),
+				'currency' => q(Lilangeni),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Tunisian Dinar),
+				'currency' => q(Tunisian Dinar),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Tanzanian Shillings),
+				'currency' => q(Tanzanian Shillings),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Ugandan Shillings),
+				'currency' => q(Ugandan Shillings),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(US Dollari),
+				'currency' => q(US Dollari),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(CFA Franc BEAC),
+				'currency' => q(CFA Franc BEAC),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(CFA Franc BCEAO),
+				'currency' => q(CFA Franc BCEAO),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(South African Randi),
+				'currency' => q(South African Randi),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Zambian Kwachab (1968–2012)),
+				'currency' => q(Zambian Kwachab \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Zambian Kwachab),
+				'currency' => q(Zambian Kwachab),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Zimbabwe Dollari),
+				'currency' => q(Zimbabwe Dollari),
 			},
 		},
 	} },
@@ -898,7 +895,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -921,7 +918,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -963,3 +960,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

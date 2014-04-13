@@ -1,6 +1,6 @@
-package Locale::CLDR::Rof;
+package Locale::CLDR::Rof v0.0.4;
 # This file auto generated from Data\common\main\rof.xml
-#	on Mon 31 Mar  1:46:56 am GMT
+#	on Sun 13 Apr 11:47:14 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -364,9 +364,6 @@ has 'nostr' => (
 	default		=> sub { qr'^(?i:Ehe|N)$' }
 );
 
-	} }
-);
-
 has 'number_currency_formats' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -392,278 +389,278 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(heleri sa Falme za Kiarabu),
+				'currency' => q(heleri sa Falme za Kiarabu),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(heleri sa Angola),
+				'currency' => q(heleri sa Angola),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(heleri sa Australia),
+				'currency' => q(heleri sa Australia),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(heleri sa Bahareni),
+				'currency' => q(heleri sa Bahareni),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(heleri sa Burundi),
+				'currency' => q(heleri sa Burundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(heleri sa Botswana),
+				'currency' => q(heleri sa Botswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(heleri sa Kanada),
+				'currency' => q(heleri sa Kanada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(heleri sa Kongo),
+				'currency' => q(heleri sa Kongo),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(heleri sa Uswisi),
+				'currency' => q(heleri sa Uswisi),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(heleri sa China),
+				'currency' => q(heleri sa China),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(heleri sa Kepuvede),
+				'currency' => q(heleri sa Kepuvede),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(heleri sa Jibuti),
+				'currency' => q(heleri sa Jibuti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(heleri sa Aljeria),
+				'currency' => q(heleri sa Aljeria),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(heleri sa Misri),
+				'currency' => q(heleri sa Misri),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(heleri sa Eritrea),
+				'currency' => q(heleri sa Eritrea),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(heleri sa Uhabeshi),
+				'currency' => q(heleri sa Uhabeshi),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(yuro),
+				'currency' => q(yuro),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(heleri sa Uingereza),
+				'currency' => q(heleri sa Uingereza),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(heleri sa Ghana),
+				'currency' => q(heleri sa Ghana),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(heleri sa Gambia),
+				'currency' => q(heleri sa Gambia),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(heleri sa Gine),
+				'currency' => q(heleri sa Gine),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(heleri sa India),
+				'currency' => q(heleri sa India),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(heleri sa Japani),
+				'currency' => q(heleri sa Japani),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(heleri sa Kenya),
+				'currency' => q(heleri sa Kenya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(heleri sa Komoro),
+				'currency' => q(heleri sa Komoro),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(heleri sa Liberia),
+				'currency' => q(heleri sa Liberia),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(heleri sa Lesoto),
+				'currency' => q(heleri sa Lesoto),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(heleri sa Libya),
+				'currency' => q(heleri sa Libya),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(heleri sa Moroko),
+				'currency' => q(heleri sa Moroko),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(heleri sa Bukini),
+				'currency' => q(heleri sa Bukini),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(heleri sa Moritania),
+				'currency' => q(heleri sa Moritania),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(heleri sa Morisi),
+				'currency' => q(heleri sa Morisi),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(heleri sa Malawi),
+				'currency' => q(heleri sa Malawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(heleri sa Msumbiji),
+				'currency' => q(heleri sa Msumbiji),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(heleri sa Namibia),
+				'currency' => q(heleri sa Namibia),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(heleri sa Nijeria),
+				'currency' => q(heleri sa Nijeria),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(heleri sa Rwanda),
+				'currency' => q(heleri sa Rwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(heleri sa Saudia),
+				'currency' => q(heleri sa Saudia),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(heleri sa Shelisheli),
+				'currency' => q(heleri sa Shelisheli),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(heleri sa Sudani),
+				'currency' => q(heleri sa Sudani),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(heleri sa Santahelena),
+				'currency' => q(heleri sa Santahelena),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(leoni),
+				'currency' => q(leoni),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(heleri sa Somalia),
+				'currency' => q(heleri sa Somalia),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(heleri sa Sao Tome na Principe),
+				'currency' => q(heleri sa Sao Tome na Principe),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(lilangeni),
+				'currency' => q(lilangeni),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(heleri sa Tunisia),
+				'currency' => q(heleri sa Tunisia),
 			},
 		},
 		'TZS' => {
 			symbol => 'TSh',
 			display_name => {
-				'default' => q(heleri sa Tanzania),
+				'currency' => q(heleri sa Tanzania),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(heleri sa Uganda),
+				'currency' => q(heleri sa Uganda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(heleri sa Marekani),
+				'currency' => q(heleri sa Marekani),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(heleri sa CFA BEAC),
+				'currency' => q(heleri sa CFA BEAC),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(heleri sa CFA BCEAO),
+				'currency' => q(heleri sa CFA BCEAO),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(heleri sa Afrika Kusini),
+				'currency' => q(heleri sa Afrika Kusini),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(heleri sa Zambia (1968–2012)),
+				'currency' => q(heleri sa Zambia \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(heleri sa Zambia),
+				'currency' => q(heleri sa Zambia),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(heleri sa Zimbabwe),
+				'currency' => q(heleri sa Zimbabwe),
 			},
 		},
 	} },
@@ -893,7 +890,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -916,7 +913,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -958,3 +955,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

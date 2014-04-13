@@ -1,6 +1,6 @@
-package Locale::CLDR::Om;
+package Locale::CLDR::Om v0.0.4;
 # This file auto generated from Data\common\main\om.xml
-#	on Mon 31 Mar  1:36:07 am GMT
+#	on Sun 13 Apr 11:36:15 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -167,3 +167,342 @@ has 'characters' => (
 	},
 );
 
+has 'default_numbering_system' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has native_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has traditional_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'ethi',
+);
+
+has 'number_currency_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'pattern' => {
+				'default' => {
+					'standard' => {
+						'negative' => '¤#,##0.00',
+						'positive' => '¤#,##0.00',
+					},
+				},
+			},
+		},
+} },
+);
+
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'BRL' => {
+			display_name => {
+				'currency' => q(Brazilian Real),
+			},
+		},
+		'CNY' => {
+			display_name => {
+				'currency' => q(Chinese Yuan Renminbi),
+			},
+		},
+		'ETB' => {
+			symbol => 'Br',
+			display_name => {
+				'currency' => q(Itoophiyaa Birrii),
+			},
+		},
+		'EUR' => {
+			display_name => {
+				'currency' => q(Euro),
+			},
+		},
+		'GBP' => {
+			display_name => {
+				'currency' => q(British Pound Sterling),
+			},
+		},
+		'INR' => {
+			display_name => {
+				'currency' => q(Indian Rupee),
+			},
+		},
+		'JPY' => {
+			display_name => {
+				'currency' => q(Japanese Yen),
+			},
+		},
+		'RUB' => {
+			display_name => {
+				'currency' => q(Russian Ruble),
+			},
+		},
+		'USD' => {
+			display_name => {
+				'currency' => q(US Dollar),
+			},
+		},
+	} },
+);
+
+
+has 'calendar_months' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'Ama',
+							'Gur',
+							'Bit',
+							'Elb',
+							'Cam',
+							'Wax',
+							'Ado',
+							'Hag',
+							'Ful',
+							'Onk',
+							'Sad',
+							'Mud'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'Amajjii',
+							'Guraandhala',
+							'Bitooteessa',
+							'Elba',
+							'Caamsa',
+							'Waxabajjii',
+							'Adooleessa',
+							'Hagayya',
+							'Fuulbana',
+							'Onkololeessa',
+							'Sadaasa',
+							'Muddee'
+						],
+						leap => [
+							
+						],
+					},
+				},
+				'stand-alone' => {
+					narrow => {
+						nonleap => [
+							'J',
+							'F',
+							'M',
+							'A',
+							'M',
+							'J',
+							'J',
+							'A',
+							'S',
+							'O',
+							'N',
+							'D'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_days' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						mon => 'Wix',
+						tue => 'Qib',
+						wed => 'Rob',
+						thu => 'Kam',
+						fri => 'Jim',
+						sat => 'San',
+						sun => 'Dil'
+					},
+					wide => {
+						mon => 'Wiixata',
+						tue => 'Qibxata',
+						wed => 'Roobii',
+						thu => 'Kamiisa',
+						fri => 'Jimaata',
+						sat => 'Sanbata',
+						sun => 'Dilbata'
+					},
+				},
+				'stand-alone' => {
+					narrow => {
+						mon => 'M',
+						tue => 'T',
+						wed => 'W',
+						thu => 'T',
+						fri => 'F',
+						sat => 'S',
+						sun => 'S'
+					},
+				},
+			},
+	} },
+);
+
+has 'day_periods' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			'format' => {
+				'wide' => {
+					'pm' => q{WB},
+					'am' => q{WD},
+				},
+			},
+		},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			abbreviated => {
+				'0' => 'KD',
+				'1' => 'KB'
+			},
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			'full' => q{EEEE, MMMM d, y G},
+			'long' => q{dd MMMM y G},
+			'medium' => q{dd-MMM-y G},
+			'short' => q{dd/MM/yy GGGGG},
+		},
+		'gregorian' => {
+			'full' => q{EEEE, MMMM d, y},
+			'long' => q{dd MMMM y},
+			'medium' => q{dd-MMM-y},
+			'short' => q{dd/MM/yy},
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			'full' => q{h:mm:ss a zzzz},
+			'long' => q{h:mm:ss a z},
+			'medium' => q{h:mm:ss a},
+			'short' => q{h:mm a},
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			MMMMdd => q{dd MMMM},
+			MMdd => q{dd/MM},
+			yMM => q{MM/y},
+			yMMMM => q{MMMM y},
+			yQQQ => q{QQQ y},
+		},
+		'generic' => {
+			MMMMdd => q{dd MMMM},
+			MMdd => q{dd/MM},
+			yMM => q{MM/y},
+			yMMMM => q{MMMM y},
+			yQQQ => q{QQQ y},
+		},
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'time_zone_names' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default	=> sub { {
+		hourFormat => q(+HH:mm;-HH:mm),
+		gmtFormat => q(GMT{0}),
+	 } }
+);
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

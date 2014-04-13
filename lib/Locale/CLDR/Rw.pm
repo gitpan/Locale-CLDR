@@ -1,6 +1,6 @@
-package Locale::CLDR::Rw;
+package Locale::CLDR::Rw v0.0.4;
 # This file auto generated from Data\common\main\rw.xml
-#	on Mon 31 Mar  1:50:32 am GMT
+#	on Sun 13 Apr 11:50:56 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -186,3 +186,237 @@ has 'alternate_quote_end' => (
 	default		=> qq{’},
 );
 
+has 'number_symbols' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'decimal' => q(,),
+			'exponential' => q(),
+			'group' => q(.),
+			'infinity' => q(),
+			'list' => q(),
+			'minusSign' => q(),
+			'nan' => q(),
+			'perMille' => q(),
+			'percentSign' => q(),
+			'plusSign' => q(),
+			'superscriptingExponent' => q(),
+		},
+	} }
+);
+
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'RWF' => {
+			symbol => 'RF',
+		},
+	} },
+);
+
+
+has 'calendar_months' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'mut.',
+							'gas.',
+							'wer.',
+							'mat.',
+							'gic.',
+							'kam.',
+							'nya.',
+							'kan.',
+							'nze.',
+							'ukw.',
+							'ugu.',
+							'uku.'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'Mutarama',
+							'Gashyantare',
+							'Werurwe',
+							'Mata',
+							'Gicuransi',
+							'Kamena',
+							'Nyakanga',
+							'Kanama',
+							'Nzeli',
+							'Ukwakira',
+							'Ugushyingo',
+							'Ukuboza'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_days' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						mon => 'mbe.',
+						tue => 'kab.',
+						wed => 'gtu.',
+						thu => 'kan.',
+						fri => 'gnu.',
+						sat => 'gnd.',
+						sun => 'cyu.'
+					},
+					wide => {
+						mon => 'Kuwa mbere',
+						tue => 'Kuwa kabiri',
+						wed => 'Kuwa gatatu',
+						thu => 'Kuwa kane',
+						fri => 'Kuwa gatanu',
+						sat => 'Kuwa gatandatu',
+						sun => 'Ku cyumweru'
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_quarters' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {0 => 'I1',
+						1 => 'I2',
+						2 => 'I3',
+						3 => 'I4'
+					},
+					wide => {0 => 'igihembwe cya mbere',
+						1 => 'igihembwe cya kabiri',
+						2 => 'igihembwe cya gatatu',
+						3 => 'igihembwe cya kane'
+					},
+				},
+			},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			'full' => q{EEEE, G y MMMM dd},
+			'long' => q{G y MMMM d},
+			'medium' => q{G y MMM d},
+			'short' => q{GGGGG yy/MM/dd},
+		},
+		'gregorian' => {
+			'full' => q{EEEE, y MMMM dd},
+			'long' => q{y MMMM d},
+			'medium' => q{y MMM d},
+			'short' => q{yy/MM/dd},
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			'full' => q{HH:mm:ss zzzz},
+			'long' => q{HH:mm:ss z},
+			'medium' => q{HH:mm:ss},
+			'short' => q{HH:mm},
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'time_zone_names' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default	=> sub { {
+		hourFormat => q(+HH:mm;-HH:mm),
+		gmtFormat => q(GMT{0}),
+	 } }
+);
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

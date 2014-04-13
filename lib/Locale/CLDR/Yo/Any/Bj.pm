@@ -1,6 +1,6 @@
-package Locale::CLDR::Yo::Any::Bj;
+package Locale::CLDR::Yo::Any::Bj v0.0.4;
 # This file auto generated from Data\common\main\yo_BJ.xml
-#	on Mon 31 Mar  2:25:18 am GMT
+#	on Sun 13 Apr 12:26:37 pm GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use v5.18;
@@ -418,9 +418,6 @@ has 'nostr' => (
 	default		=> sub { qr'^(?i:Bɛ́ɛ̀kɔ́|K)$' }
 );
 
-	} }
-);
-
 has 'number_currency_formats' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -450,283 +447,283 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Diami ti Awon Orílɛ́ède Arabu),
+				'currency' => q(Diami ti Awon Orílɛ́ède Arabu),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Wansa ti Orílɛ́ède Àngólà),
+				'currency' => q(Wansa ti Orílɛ́ède Àngólà),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Dɔla ti Orílɛ́ède Ástràlìá),
+				'currency' => q(Dɔla ti Orílɛ́ède Ástràlìá),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Dina ti Orílɛ́ède Báránì),
+				'currency' => q(Dina ti Orílɛ́ède Báránì),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Faransi ti Orílɛ́ède Bùùrúndì),
+				'currency' => q(Faransi ti Orílɛ́ède Bùùrúndì),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Pula ti Orílɛ́ède Bɔ̀tìsúwánà),
+				'currency' => q(Pula ti Orílɛ́ède Bɔ̀tìsúwánà),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Dɔla ti Orílɛ́ède Kánádà),
+				'currency' => q(Dɔla ti Orílɛ́ède Kánádà),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Faransi ti Orílɛ́ède Kóngò),
+				'currency' => q(Faransi ti Orílɛ́ède Kóngò),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Faransi ti Orílɛ́ède Siwisi),
+				'currency' => q(Faransi ti Orílɛ́ède Siwisi),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Reminibi ti Orílɛ́ède sháínà),
+				'currency' => q(Reminibi ti Orílɛ́ède sháínà),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Kabofediano ti Orílɛ́ède Esuodo),
+				'currency' => q(Kabofediano ti Orílɛ́ède Esuodo),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Faransi ti Orílɛ́ède Dibouti),
+				'currency' => q(Faransi ti Orílɛ́ède Dibouti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Dina ti Orílɛ́ède Àlùgèríánì),
+				'currency' => q(Dina ti Orílɛ́ède Àlùgèríánì),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(pɔɔn ti Orílɛ́ède Egipiti),
+				'currency' => q(pɔɔn ti Orílɛ́ède Egipiti),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Nakifa ti Orílɛ́ède Eriteriani),
+				'currency' => q(Nakifa ti Orílɛ́ède Eriteriani),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Biri ti Orílɛ́ède Eutopia),
+				'currency' => q(Biri ti Orílɛ́ède Eutopia),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Uro),
+				'currency' => q(Uro),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Pɔɔn ti Orílɛ́ède Bírítísì),
+				'currency' => q(Pɔɔn ti Orílɛ́ède Bírítísì),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(shidi ti Orílɛ́ède Gana),
+				'currency' => q(shidi ti Orílɛ́ède Gana),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Dalasi ti Orílɛ́ède Gamibia),
+				'currency' => q(Dalasi ti Orílɛ́ède Gamibia),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Faransi ti Orílɛ́ède Gini),
+				'currency' => q(Faransi ti Orílɛ́ède Gini),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Rupi ti Orílɛ́ède Indina),
+				'currency' => q(Rupi ti Orílɛ́ède Indina),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Yeni ti Orílɛ́ède Japani),
+				'currency' => q(Yeni ti Orílɛ́ède Japani),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(shiili ti Orílɛ́ède Kenya),
+				'currency' => q(shiili ti Orílɛ́ède Kenya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Faransi ti Orílɛ́ède shomoriani),
+				'currency' => q(Faransi ti Orílɛ́ède shomoriani),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Dɔla ti Orílɛ́ède Liberia),
+				'currency' => q(Dɔla ti Orílɛ́ède Liberia),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Loti ti Orílɛ́ède Lesoto),
+				'currency' => q(Loti ti Orílɛ́ède Lesoto),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Dina ti Orílɛ́ède Libiya),
+				'currency' => q(Dina ti Orílɛ́ède Libiya),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Dirami ti Orílɛ́ède Moroko),
+				'currency' => q(Dirami ti Orílɛ́ède Moroko),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Faransi ti Orílɛ́ède Malagasi),
+				'currency' => q(Faransi ti Orílɛ́ède Malagasi),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Ouguiya ti Orílɛ́ède Maritania),
+				'currency' => q(Ouguiya ti Orílɛ́ède Maritania),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Rupi ti Orílɛ́ède Maritiusi),
+				'currency' => q(Rupi ti Orílɛ́ède Maritiusi),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Kasha ti Orílɛ́ède Malawi),
+				'currency' => q(Kasha ti Orílɛ́ède Malawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Metika ti Orílɛ́ède Mosamibiki),
+				'currency' => q(Metika ti Orílɛ́ède Mosamibiki),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Dɔla ti Orílɛ́ède Namibia),
+				'currency' => q(Dɔla ti Orílɛ́ède Namibia),
 			},
 		},
 		'NGN' => {
 			symbol => '₦',
 			display_name => {
-				'default' => q(Naira ti Orílɛ́ède Nàìjíríà),
+				'currency' => q(Naira ti Orílɛ́ède Nàìjíríà),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Faransi ti Orílɛ́ède Ruwanda),
+				'currency' => q(Faransi ti Orílɛ́ède Ruwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Riya ti Orílɛ́ède Saudi),
+				'currency' => q(Riya ti Orílɛ́ède Saudi),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Rupi ti Orílɛ́ède Sayiselesi),
+				'currency' => q(Rupi ti Orílɛ́ède Sayiselesi),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Dina ti Orílɛ́ède Sudani),
+				'currency' => q(Dina ti Orílɛ́ède Sudani),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(Pɔɔun ti Orílɛ́ède Sudani),
+				'currency' => q(Pɔɔun ti Orílɛ́ède Sudani),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Pɔɔun ti Orílɛ́ède ̣Elena),
+				'currency' => q(Pɔɔun ti Orílɛ́ède ̣Elena),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Lioni),
+				'currency' => q(Lioni),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Sile ti Orílɛ́ède Somali),
+				'currency' => q(Sile ti Orílɛ́ède Somali),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Dobira ti Orílɛ́ède Sao tome Ati Pirisipe),
+				'currency' => q(Dobira ti Orílɛ́ède Sao tome Ati Pirisipe),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lilangeni),
+				'currency' => q(Lilangeni),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Dina ti Orílɛ́ède Tunisia),
+				'currency' => q(Dina ti Orílɛ́ède Tunisia),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Sile ti Orílɛ́ède Tansania),
+				'currency' => q(Sile ti Orílɛ́ède Tansania),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Siile ti Orílɛ́ède Uganda),
+				'currency' => q(Siile ti Orílɛ́ède Uganda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Dɔla ti Orílɛ́ède Amerika),
+				'currency' => q(Dɔla ti Orílɛ́ède Amerika),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Faransi ti Orílɛ́ède BEKA),
+				'currency' => q(Faransi ti Orílɛ́ède BEKA),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Faransi ti Orílɛ́ède BIKEAO),
+				'currency' => q(Faransi ti Orílɛ́ède BIKEAO),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Randi ti Orílɛ́ède Ariwa Afirika),
+				'currency' => q(Randi ti Orílɛ́ède Ariwa Afirika),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Kawasha ti Orílɛ́ède Saabia (1968–2012)),
+				'currency' => q(Kawasha ti Orílɛ́ède Saabia \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Kawasha ti Orílɛ́ède Saabia),
+				'currency' => q(Kawasha ti Orílɛ́ède Saabia),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Dɔla ti Orílɛ́ède Siibabuwe),
+				'currency' => q(Dɔla ti Orílɛ́ède Siibabuwe),
 			},
 		},
 	} },
@@ -843,8 +840,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{Ɔ̀sán},
 					'am' => q{Àárɔ̀},
+					'pm' => q{Ɔ̀sán},
 				},
 			},
 		},
@@ -989,3 +986,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

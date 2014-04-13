@@ -1,6 +1,6 @@
-package Locale::CLDR::Lkt;
+package Locale::CLDR::Lkt v0.0.4;
 # This file auto generated from Data\common\main\lkt.xml
-#	on Mon 31 Mar  1:08:11 am GMT
+#	on Sun 13 Apr 11:08:09 am GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use v5.18;
@@ -345,4 +345,187 @@ has 'units' => (
 			} }
 );
 
+has 'number_symbols' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'decimal' => q(.),
+			'exponential' => q(E),
+			'group' => q(,),
+			'infinity' => q(∞),
+			'list' => q(;),
+			'minusSign' => q(-),
+			'nan' => q(NaN),
+			'perMille' => q(‰),
+			'percentSign' => q(%),
+			'plusSign' => q(+),
+			'superscriptingExponent' => q(),
+		},
+	} }
+);
 
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'USD' => {
+			symbol => '$',
+		},
+	} },
+);
+
+
+has 'calendar_months' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					wide => {
+						nonleap => [
+							'Wiótheȟika Wí',
+							'Thiyóȟeyuŋka Wí',
+							'Ištáwičhayazaŋ Wí',
+							'Pȟežítȟo Wí',
+							'Čhaŋwápetȟo Wí',
+							'Wípazukȟa-wašté Wí',
+							'Čhaŋpȟásapa Wí',
+							'Wasútȟuŋ Wí',
+							'Čhaŋwápeǧi Wí',
+							'Čhaŋwápe-kasná Wí',
+							'Waníyetu Wí',
+							'Tȟahékapšuŋ Wí'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_days' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					narrow => {
+						mon => 'W',
+						tue => 'N',
+						wed => 'Y',
+						thu => 'T',
+						fri => 'Z',
+						sat => 'O',
+						sun => 'A'
+					},
+					wide => {
+						mon => 'Aŋpétuwaŋži',
+						tue => 'Aŋpétunuŋpa',
+						wed => 'Aŋpétuyamni',
+						thu => 'Aŋpétutopa',
+						fri => 'Aŋpétuzaptaŋ',
+						sat => 'Owáŋgyužažapi',
+						sun => 'Aŋpétuwakȟaŋ'
+					},
+				},
+			},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			'full' => q{EEEE, MMMM d, y G},
+			'long' => q{MMMM d, y G},
+			'medium' => q{MMM d, y G},
+			'short' => q{M/d/y GGGGG},
+		},
+		'gregorian' => {
+			'full' => q{EEEE, MMMM d, y},
+			'long' => q{MMMM d, y},
+			'medium' => q{MMM d, y},
+			'short' => q{M/d/yy},
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			'full' => q{h:mm:ss a zzzz},
+			'long' => q{h:mm:ss a z},
+			'medium' => q{h:mm:ss a},
+			'short' => q{h:mm a},
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

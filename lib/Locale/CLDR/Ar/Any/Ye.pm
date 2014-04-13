@@ -1,6 +1,6 @@
-package Locale::CLDR::Ar::Any::Ye;
+package Locale::CLDR::Ar::Any::Ye v0.0.4;
 # This file auto generated from Data\common\main\ar_YE.xml
-#	on Sun 30 Mar 11:40:20 pm GMT
+#	on Sun 13 Apr  9:36:18 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -10,3 +10,27 @@ use utf8;
 use Moose;
 
 extends('Locale::CLDR::Ar::Any');
+has 'number_currency_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'pattern' => {
+				'default' => {
+					'standard' => {
+						'negative' => '¤#0.00',
+						'positive' => '¤#0.00',
+					},
+				},
+			},
+		},
+} },
+);
+
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

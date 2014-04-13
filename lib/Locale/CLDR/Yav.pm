@@ -1,6 +1,6 @@
-package Locale::CLDR::Yav;
+package Locale::CLDR::Yav v0.0.4;
 # This file auto generated from Data\common\main\yav.xml
-#	on Mon 31 Mar  2:25:13 am GMT
+#	on Sun 13 Apr 12:26:32 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -435,117 +435,117 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AOA' => {
 			display_name => {
-				'default' => q(kuansa wu angolá),
+				'currency' => q(kuansa wu angolá),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(toláal wu ostalalí),
+				'currency' => q(toláal wu ostalalí),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(tináal wu paaléen),
+				'currency' => q(tináal wu paaléen),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(faláŋɛ u pulundí),
+				'currency' => q(faláŋɛ u pulundí),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(pula pu posuána),
+				'currency' => q(pula pu posuána),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(toláal u kanáta),
+				'currency' => q(toláal u kanáta),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(́faláŋɛ u kongó),
+				'currency' => q(́faláŋɛ u kongó),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(yuan ɛlɛnmimbí),
+				'currency' => q(yuan ɛlɛnmimbí),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(ɛskúdo u kápfɛ́ɛl),
+				'currency' => q(ɛskúdo u kápfɛ́ɛl),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(́faláŋɛ u síputí),
+				'currency' => q(́faláŋɛ u síputí),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(tináal wu alselí),
+				'currency' => q(tináal wu alselí),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(lífilɛ wu isípit),
+				'currency' => q(lífilɛ wu isípit),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(náfka wu elitilée),
+				'currency' => q(náfka wu elitilée),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(píil wu etiopí),
+				'currency' => q(píil wu etiopí),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(olóo),
+				'currency' => q(olóo),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(lífilɛ sitelelíiŋ),
+				'currency' => q(lífilɛ sitelelíiŋ),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(setí),
+				'currency' => q(setí),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(talasí u kaambí),
+				'currency' => q(talasí u kaambí),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(silí u kiiné),
+				'currency' => q(silí u kiiné),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(ulupí),
+				'currency' => q(ulupí),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(yɛ́ɛn u sapɔ́ɔŋ),
+				'currency' => q(yɛ́ɛn u sapɔ́ɔŋ),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(síliŋ u kénia),
+				'currency' => q(síliŋ u kénia),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(́faláŋɛ u kɔmɔ́ɔl),
+				'currency' => q(́faláŋɛ u kɔmɔ́ɔl),
 			},
 		},
 	} },
@@ -673,8 +673,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{kisɛ́ndɛ},
 					'am' => q{kiɛmɛ́ɛm},
+					'pm' => q{kisɛ́ndɛ},
 				},
 			},
 		},
@@ -821,3 +821,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

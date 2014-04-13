@@ -1,6 +1,6 @@
-package Locale::CLDR::Ewo;
+package Locale::CLDR::Ewo v0.0.4;
 # This file auto generated from Data\common\main\ewo.xml
-#	on Mon 31 Mar 12:18:19 am GMT
+#	on Sun 13 Apr 10:15:59 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -432,282 +432,282 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Dirám yá Emirá Aráb Uní),
+				'currency' => q(Dirám yá Emirá Aráb Uní),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Kwánəza yá Angolá),
+				'currency' => q(Kwánəza yá Angolá),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Dolár yá Osətəralí),
+				'currency' => q(Dolár yá Osətəralí),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Dinár yá Bahərɛ́n),
+				'currency' => q(Dinár yá Bahərɛ́n),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Fəláŋ yá Burundí),
+				'currency' => q(Fəláŋ yá Burundí),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Púlá yá Botswána),
+				'currency' => q(Púlá yá Botswána),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Dolár yá Kanáda),
+				'currency' => q(Dolár yá Kanáda),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Fəláŋ yá Kongo),
+				'currency' => q(Fəláŋ yá Kongo),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Fəláŋ yá Suís),
+				'currency' => q(Fəláŋ yá Suís),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Yuán Renəminəbí yá Tsainís),
+				'currency' => q(Yuán Renəminəbí yá Tsainís),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Esəkúdo yá Kápə́vɛ́rə),
+				'currency' => q(Esəkúdo yá Kápə́vɛ́rə),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Fəláŋ yá dzibutí),
+				'currency' => q(Fəláŋ yá dzibutí),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Dinár yá Alehérí),
+				'currency' => q(Dinár yá Alehérí),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Lívə́lə yá Ehíbətía),
+				'currency' => q(Lívə́lə yá Ehíbətía),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Náfəka yá Eritelé),
+				'currency' => q(Náfəka yá Eritelé),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Bír yá Etsiópia),
+				'currency' => q(Bír yá Etsiópia),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(əró),
+				'currency' => q(əró),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Lívə́lə Sətərəlíŋ),
+				'currency' => q(Lívə́lə Sətərəlíŋ),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Tzedí yá Ganá),
+				'currency' => q(Tzedí yá Ganá),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Dalasí yá Gámbía),
+				'currency' => q(Dalasí yá Gámbía),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Síli yá Giné),
+				'currency' => q(Síli yá Giné),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Rupí yá ɛ́ndía),
+				'currency' => q(Rupí yá ɛ́ndía),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Yɛ́n yá Hapɔ́n),
+				'currency' => q(Yɛ́n yá Hapɔ́n),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Silíŋ yá Keniá),
+				'currency' => q(Silíŋ yá Keniá),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Fəláŋ yá Komória),
+				'currency' => q(Fəláŋ yá Komória),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Dolár yá Libéria),
+				'currency' => q(Dolár yá Libéria),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Lotí yá Lesotó),
+				'currency' => q(Lotí yá Lesotó),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Dinár yá Libí),
+				'currency' => q(Dinár yá Libí),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Dirám yá Maróg),
+				'currency' => q(Dirám yá Maróg),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Ariari yá Maləgás),
+				'currency' => q(Ariari yá Maləgás),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Ugiya yá Moritaní),
+				'currency' => q(Ugiya yá Moritaní),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Rupí yá Morís),
+				'currency' => q(Rupí yá Morís),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Kwatsa yá Malawí),
+				'currency' => q(Kwatsa yá Malawí),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Metikal yá Mozambíg),
+				'currency' => q(Metikal yá Mozambíg),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Dolár yá Namibí),
+				'currency' => q(Dolár yá Namibí),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Náíra yá Nihéria),
+				'currency' => q(Náíra yá Nihéria),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Fəláŋ yá Ruwandá),
+				'currency' => q(Fəláŋ yá Ruwandá),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Riál yá Arabí Saudí),
+				'currency' => q(Riál yá Arabí Saudí),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Rupí yá Sɛsɛ́l),
+				'currency' => q(Rupí yá Sɛsɛ́l),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Lívələ yá Sudán),
+				'currency' => q(Lívələ yá Sudán),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(Lívələ yá Sudán (1956–2007)),
+				'currency' => q(Lívələ yá Sudán \(1956–2007\)),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Lívələ yá Ǹfúfúb Elɛ́n),
+				'currency' => q(Lívələ yá Ǹfúfúb Elɛ́n),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Leóne yá Sierá-leónə),
+				'currency' => q(Leóne yá Sierá-leónə),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Silíŋ yá Somalí),
+				'currency' => q(Silíŋ yá Somalí),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Dóbə́ra yá Saó Tomé ai Pəlinəsípe),
+				'currency' => q(Dóbə́ra yá Saó Tomé ai Pəlinəsípe),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lilangeni yá Swazí),
+				'currency' => q(Lilangeni yá Swazí),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Dinár yá Tunisí),
+				'currency' => q(Dinár yá Tunisí),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Silíŋ yá Tanazaní),
+				'currency' => q(Silíŋ yá Tanazaní),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Silíŋ yá Ugandá (1966–1987)),
+				'currency' => q(Silíŋ yá Ugandá \(1966–1987\)),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Dolár yá amɛ́rəkə),
+				'currency' => q(Dolár yá amɛ́rəkə),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Fəláŋ CFA (BEAC)),
+				'currency' => q(Fəláŋ CFA \(BEAC\)),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Fəláŋ CFA (BCEAO)),
+				'currency' => q(Fəláŋ CFA \(BCEAO\)),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Ránədə yá Afiríka),
+				'currency' => q(Ránədə yá Afiríka),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Kwatsa yá Zambí (1968–2012)),
+				'currency' => q(Kwatsa yá Zambí \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Kwatsa yá Zambí),
+				'currency' => q(Kwatsa yá Zambí),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Dolár yá Zimbabwé),
+				'currency' => q(Dolár yá Zimbabwé),
 			},
 		},
 	} },
@@ -937,7 +937,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{d E},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -961,7 +961,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{d E},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -1004,3 +1004,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

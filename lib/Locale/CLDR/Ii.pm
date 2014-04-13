@@ -1,6 +1,6 @@
-package Locale::CLDR::Ii;
+package Locale::CLDR::Ii v0.0.4;
 # This file auto generated from Data\common\main\ii.xml
-#	on Mon 31 Mar 12:44:47 am GMT
+#	on Sun 13 Apr 10:43:31 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;
@@ -188,7 +188,7 @@ has 'curriencies' => (
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(ꅉꀋꐚꌠꌋꆀꎆꃀꀋꈁꀐꌠ),
+				'currency' => q(ꅉꀋꐚꌠꌋꆀꎆꃀꀋꈁꀐꌠ),
 			},
 		},
 	} },
@@ -311,8 +311,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ꁯꋒ},
 					'am' => q{ꎸꄑ},
+					'pm' => q{ꁯꋒ},
 				},
 			},
 		},

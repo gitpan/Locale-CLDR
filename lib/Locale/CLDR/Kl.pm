@@ -1,6 +1,6 @@
-package Locale::CLDR::Kl;
+package Locale::CLDR::Kl v0.0.4;
 # This file auto generated from Data\common\main\kl.xml
-#	on Mon 31 Mar 12:55:43 am GMT
+#	on Sun 13 Apr 10:54:53 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -1087,7 +1087,6 @@ has 'units' => (
 			} }
 );
 
-
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -1338,7 +1337,7 @@ has 'curriencies' => (
 		'DKK' => {
 			symbol => 'kr',
 			display_name => {
-				'default' => q(danmarkimut koruuni),
+				'currency' => q(danmarkimut koruuni),
 				'one' => q(danskinut koruuni),
 				'other' => q(danmarkimut koruuni),
 			},
@@ -1346,7 +1345,7 @@ has 'curriencies' => (
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(euro),
+				'currency' => q(euro),
 				'one' => q(euro),
 				'other' => q(euro),
 			},
@@ -1354,7 +1353,7 @@ has 'curriencies' => (
 		'NOK' => {
 			symbol => 'Nkr',
 			display_name => {
-				'default' => q(norskit koruuni),
+				'currency' => q(norskit koruuni),
 				'one' => q(norskit koruuni),
 				'other' => q(norskit koruuni),
 			},
@@ -1362,7 +1361,7 @@ has 'curriencies' => (
 		'SEK' => {
 			symbol => 'Skr',
 			display_name => {
-				'default' => q(svenskit koruuni),
+				'currency' => q(svenskit koruuni),
 				'one' => q(svenskit koruuni),
 				'other' => q(svenskit koruuni),
 			},
@@ -1619,12 +1618,12 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'abbreviated' => {
-					'pm' => q{u.k.},
 					'am' => q{u.t.},
+					'pm' => q{u.k.},
 				},
 				'wide' => {
-					'am' => q{ulloqeqqata-tungaa},
 					'pm' => q{ulloqeqqata-kingorna},
+					'am' => q{ulloqeqqata-tungaa},
 				},
 			},
 		},
@@ -1716,7 +1715,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E, d},
 			H => q{HH},
 			Hm => q{HH:mm},
@@ -1737,7 +1736,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{y QQQQ},
 			yQQQQ => q{y QQQQ},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E, d},
 			H => q{HH},
 			Hm => q{HH:mm},
@@ -1774,7 +1773,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH–HH},
 			},
@@ -1869,7 +1868,7 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd – y-MM-dd},
 			},
 		},
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH–HH},
 			},

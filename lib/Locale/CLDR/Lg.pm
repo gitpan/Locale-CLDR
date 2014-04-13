@@ -1,6 +1,6 @@
-package Locale::CLDR::Lg;
+package Locale::CLDR::Lg v0.0.4;
 # This file auto generated from Data\common\main\lg.xml
-#	on Mon 31 Mar  1:08:07 am GMT
+#	on Sun 13 Apr 11:08:05 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -364,9 +364,6 @@ has 'nostr' => (
 	default		=> sub { qr'^(?i:Nedda|N)$' }
 );
 
-	} }
-);
-
 has 'number_currency_formats' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -392,283 +389,283 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Diraamu eya Emireeti),
+				'currency' => q(Diraamu eya Emireeti),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Kwanza ey'Angola),
+				'currency' => q(Kwanza ey'Angola),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Doola ey'Awusiturelya),
+				'currency' => q(Doola ey'Awusiturelya),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Dinaali ey'eBaareeni),
+				'currency' => q(Dinaali ey'eBaareeni),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Faranga ey'eburundi),
+				'currency' => q(Faranga ey'eburundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Pula ey'eBotiswana),
+				'currency' => q(Pula ey'eBotiswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Doola ey'eKanada),
+				'currency' => q(Doola ey'eKanada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Faranga ey'eKongo),
+				'currency' => q(Faranga ey'eKongo),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Faranga ey'eSwitizirandi),
+				'currency' => q(Faranga ey'eSwitizirandi),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Yuwani Reniminibi ey'eCayina),
+				'currency' => q(Yuwani Reniminibi ey'eCayina),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Esikudo ey'Keepu Veredi),
+				'currency' => q(Esikudo ey'Keepu Veredi),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Faranga ey'eJjibuti),
+				'currency' => q(Faranga ey'eJjibuti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Dinaali ey'Aligerya),
+				'currency' => q(Dinaali ey'Aligerya),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Pawundi ey'eMisiri),
+				'currency' => q(Pawundi ey'eMisiri),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Nakifa ey'Eritureya),
+				'currency' => q(Nakifa ey'Eritureya),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Biiru ey'Esyopya),
+				'currency' => q(Biiru ey'Esyopya),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Yuro),
+				'currency' => q(Yuro),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Pawundi ey'eBungereza),
+				'currency' => q(Pawundi ey'eBungereza),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Sedi ey'eGana),
+				'currency' => q(Sedi ey'eGana),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Dalasi ey'eGambya),
+				'currency' => q(Dalasi ey'eGambya),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Faranga ey'eGini),
+				'currency' => q(Faranga ey'eGini),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Rupiya ey'eBuyindi),
+				'currency' => q(Rupiya ey'eBuyindi),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Yeni ey'eJapani),
+				'currency' => q(Yeni ey'eJapani),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Silingi ey'eKenya),
+				'currency' => q(Silingi ey'eKenya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Faranga ey'eKomoro),
+				'currency' => q(Faranga ey'eKomoro),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Doola ey'eLiberya),
+				'currency' => q(Doola ey'eLiberya),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Loti ey'eLesoso),
+				'currency' => q(Loti ey'eLesoso),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Dinaali ey'eLibya),
+				'currency' => q(Dinaali ey'eLibya),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Diraamu ey'eMoroko),
+				'currency' => q(Diraamu ey'eMoroko),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Faranga ey'eMalagase),
+				'currency' => q(Faranga ey'eMalagase),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Wugwiya ey'eMawritenya),
+				'currency' => q(Wugwiya ey'eMawritenya),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Rupiya ey'eMawurisyasi),
+				'currency' => q(Rupiya ey'eMawurisyasi),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Kwaca ey'eMalawi),
+				'currency' => q(Kwaca ey'eMalawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Metikaali ey'eMozambiiki),
+				'currency' => q(Metikaali ey'eMozambiiki),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Doola ey'eNamibiya),
+				'currency' => q(Doola ey'eNamibiya),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Nayira ey'eNayijerya),
+				'currency' => q(Nayira ey'eNayijerya),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Faranga ey'eRwanda),
+				'currency' => q(Faranga ey'eRwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Riyaali ey'eBuwarabu),
+				'currency' => q(Riyaali ey'eBuwarabu),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Rupiya ey'eSesere),
+				'currency' => q(Rupiya ey'eSesere),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Dinaali ey'eSudaani),
+				'currency' => q(Dinaali ey'eSudaani),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(Pawundi ey'eSudaani),
+				'currency' => q(Pawundi ey'eSudaani),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Pawundi ey'eSenti Herena),
+				'currency' => q(Pawundi ey'eSenti Herena),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Lewone),
+				'currency' => q(Lewone),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Silingi ey'eSomaliya),
+				'currency' => q(Silingi ey'eSomaliya),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Dobura ey'eSantome ne Purincipe),
+				'currency' => q(Dobura ey'eSantome ne Purincipe),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lilangeni),
+				'currency' => q(Lilangeni),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Dinaali ey'eTunizya),
+				'currency' => q(Dinaali ey'eTunizya),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Silingi ey'eTanzaniya),
+				'currency' => q(Silingi ey'eTanzaniya),
 			},
 		},
 		'UGX' => {
 			symbol => 'USh',
 			display_name => {
-				'default' => q(Silingi eya Yuganda),
+				'currency' => q(Silingi eya Yuganda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Doola ey'Amerika),
+				'currency' => q(Doola ey'Amerika),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Faranga ey'omu Afirika eya wakati),
+				'currency' => q(Faranga ey'omu Afirika eya wakati),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Faranga ey'omu Afirika ey'ebugwanjuba),
+				'currency' => q(Faranga ey'omu Afirika ey'ebugwanjuba),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Randi ey'eSawusafirika),
+				'currency' => q(Randi ey'eSawusafirika),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Kwaca ey'eZambya (1968–2012)),
+				'currency' => q(Kwaca ey'eZambya \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Kwaca ey'eZambya),
+				'currency' => q(Kwaca ey'eZambya),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Doola ey'eZimbabwe),
+				'currency' => q(Doola ey'eZimbabwe),
 			},
 		},
 	} },
@@ -882,7 +879,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -905,7 +902,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -947,3 +944,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

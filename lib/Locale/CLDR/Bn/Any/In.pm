@@ -1,6 +1,6 @@
-package Locale::CLDR::Bn::Any::In;
+package Locale::CLDR::Bn::Any::In v0.0.4;
 # This file auto generated from Data\common\main\bn_IN.xml
-#	on Sun 30 Mar 11:48:44 pm GMT
+#	on Sun 13 Apr  9:44:43 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -142,4 +142,314 @@ has 'units' => (
 			} }
 );
 
+has 'number_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		decimalFormat => {
+			'long' => {
+				'1000' => {
+					'one' => '0 হাজার',
+					'other' => '0 হাজার',
+				},
+				'10000' => {
+					'one' => '00 হাজার',
+					'other' => '00 হাজার',
+				},
+				'100000' => {
+					'one' => '000 হাজার',
+					'other' => '000 হাজার',
+				},
+				'1000000' => {
+					'one' => '0 মিলিয়ন',
+					'other' => '0 মিলিয়ন',
+				},
+				'10000000' => {
+					'one' => '00 মিলিয়ন',
+					'other' => '00 মিলিয়ন',
+				},
+				'100000000' => {
+					'one' => '000 মিলিয়ন',
+					'other' => '000 মিলিয়ন',
+				},
+				'1000000000' => {
+					'one' => '0 বিলিয়ন',
+					'other' => '0 বিলিয়ন',
+				},
+				'10000000000' => {
+					'one' => '00 বিলিয়ন',
+					'other' => '00 বিলিয়ন',
+				},
+				'100000000000' => {
+					'one' => '000 বিলিয়ন',
+					'other' => '000 বিলিয়ন',
+				},
+				'1000000000000' => {
+					'one' => '0 ট্রিলিয়ন',
+					'other' => '0 ট্রিলিয়ন',
+				},
+				'10000000000000' => {
+					'one' => '00 ট্রিলিয়ন',
+					'other' => '00 ট্রিলিয়ন',
+				},
+				'100000000000000' => {
+					'one' => '000 ট্রিলিয়ন',
+					'other' => '000 ট্রিলিয়ন',
+				},
+			},
+			'short' => {
+				'1000' => {
+					'one' => '0K',
+					'other' => '0K',
+				},
+				'10000' => {
+					'one' => '00K',
+					'other' => '00K',
+				},
+				'100000' => {
+					'one' => '000K',
+					'other' => '000K',
+				},
+				'1000000' => {
+					'one' => '0M',
+					'other' => '0M',
+				},
+				'10000000' => {
+					'one' => '00M',
+					'other' => '00M',
+				},
+				'100000000' => {
+					'one' => '000M',
+					'other' => '000M',
+				},
+				'1000000000' => {
+					'one' => '0B',
+					'other' => '0B',
+				},
+				'10000000000' => {
+					'one' => '00B',
+					'other' => '00B',
+				},
+				'100000000000' => {
+					'one' => '000B',
+					'other' => '000B',
+				},
+				'1000000000000' => {
+					'one' => '0T',
+					'other' => '0T',
+				},
+				'10000000000000' => {
+					'one' => '00T',
+					'other' => '00T',
+				},
+				'100000000000000' => {
+					'one' => '000T',
+					'other' => '000T',
+				},
+			},
+		},
+} },
+);
 
+has 'calendar_quarters' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {0 => 'ত্রৈমাসিক',
+						1 => 'ষাণ্মাসিক',
+						3 => 'বার্ষিক'
+					},
+					wide => {0 => 'ত্রৈমাসিক',
+						1 => 'ষাণ্মাসিক',
+						2 => 'তৃতীয় চতুর্থাংশ',
+						3 => 'বার্ষিক'
+					},
+				},
+				'stand-alone' => {
+					abbreviated => {0 => 'Q1',
+						1 => 'Q2',
+						2 => 'Q3',
+						3 => 'Q4'
+					},
+					wide => {0 => 'ত্রৈমাসিক',
+						1 => 'ষাণ্মাসিক',
+						2 => 'তৃতীয় চতুর্থাংশ',
+						3 => 'বার্ষিক'
+					},
+				},
+			},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			yMMMM => {
+				M => q{MM – MM -y},
+			},
+		},
+	} },
+);
+
+has 'time_zone_names' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default	=> sub { {
+		gmtZeroFormat => q(গ্রীনিচ মানক সময়),
+		'Alaska' => {
+			long => {
+				'daylight' => q(আলাসকা দিবালোক সময়),
+				'generic' => q(আলাস্কার সময়),
+				'standard' => q(অ্যালাসকা মানক সময়),
+			},
+		},
+		'America_Central' => {
+			long => {
+				'daylight' => q(কেন্দ্রীয় দিবালোক মসয়),
+				'generic' => q(উত্তর আমিরিকা কেন্দ্রীয় সময়),
+				'standard' => q(উত্তর আমিরিকা কেন্দ্রীয় মানক সময়),
+			},
+		},
+		'Cook' => {
+			long => {
+				'daylight' => q(কুক দ্বীপপুঞ্জ অর্ধেক গ্রীষ্মকাল সময়),
+				'generic' => q(কুক দ্বীপপুঞ্জ সময়),
+				'standard' => q(কুক দ্বীপপুঞ্জ মানক সময়),
+			},
+		},
+		'Fiji' => {
+			long => {
+				'daylight' => q(ফিজি গ্রীষ্মকাল সময়),
+				'generic' => q(ফিজি সময়),
+				'standard' => q(ফিজি মানক সময়),
+			},
+		},
+		'French_Southern' => {
+			long => {
+				'standard' => q(ফরাসি দক্ষিণ এবং আন্টার্কটিক সময়),
+			},
+		},
+		'Guyana' => {
+			long => {
+				'standard' => q(গুয়ানা সময়),
+			},
+		},
+		'Indian_Ocean' => {
+			long => {
+				'standard' => q(ভারত মহাসাগরীয় সময়),
+			},
+		},
+		'Kosrae' => {
+			long => {
+				'standard' => q(কোসরেই সময়),
+			},
+		},
+		'New_Zealand' => {
+			long => {
+				'daylight' => q(নিউজিল্যান্ড দিবালোকের সময়),
+				'generic' => q(নিউজিল্যান্ড সময়),
+				'standard' => q(নিউজিল্যান্ড মানক সময়),
+			},
+		},
+		'Papua_New_Guinea' => {
+			long => {
+				'standard' => q(পাপুয়া নিউগিনি সময়),
+			},
+		},
+		'Pitcairn' => {
+			long => {
+				'standard' => q(পিটকাইর্ন সময়),
+			},
+		},
+		'Ponape' => {
+			long => {
+				'standard' => q(পোনাপ সময়),
+			},
+		},
+		'Syowa' => {
+			long => {
+				'standard' => q(স্যোয়া সময়),
+			},
+		},
+		'Tokelau' => {
+			long => {
+				'standard' => q(টোকেলু সময়),
+			},
+		},
+		'Vostok' => {
+			long => {
+				'standard' => q(ভসটক সময়),
+			},
+		},
+	 } }
+);
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

@@ -1,6 +1,6 @@
-package Locale::CLDR::Ar;
+package Locale::CLDR::Ar v0.0.4;
 # This file auto generated from Data\common\main\ar.xml
-#	on Sun 30 Mar 11:37:34 pm GMT
+#	on Sun 13 Apr  9:33:31 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -2365,7 +2365,6 @@ has 'units' => (
 			} }
 );
 
-
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -2800,13 +2799,13 @@ has 'curriencies' => (
 	default		=> sub { {
 		'ADP' => {
 			display_name => {
-				'default' => q(بيستا أندوري),
+				'currency' => q(بيستا أندوري),
 			},
 		},
 		'AED' => {
 			symbol => 'د.إ.‏',
 			display_name => {
-				'default' => q(درهم إماراتي),
+				'currency' => q(درهم إماراتي),
 				'few' => q(درهم إماراتي),
 				'many' => q(درهم إماراتي),
 				'one' => q(درهم إماراتي),
@@ -2817,12 +2816,12 @@ has 'curriencies' => (
 		},
 		'AFA' => {
 			display_name => {
-				'default' => q(أفغاني - 1927-2002),
+				'currency' => q(أفغاني - 1927-2002),
 			},
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(أفغاني),
+				'currency' => q(أفغاني),
 				'few' => q(أفغاني أفغانستاني),
 				'many' => q(أفغاني أفغانستاني),
 				'one' => q(أفغاني أفغانستاني),
@@ -2833,7 +2832,7 @@ has 'curriencies' => (
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(ليك ألباني),
+				'currency' => q(ليك ألباني),
 				'few' => q(ليك ألباني),
 				'many' => q(ليك ألباني),
 				'one' => q(ليك ألباني),
@@ -2844,7 +2843,7 @@ has 'curriencies' => (
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(درام أرميني),
+				'currency' => q(درام أرميني),
 				'few' => q(درام أرميني),
 				'many' => q(درام أرميني),
 				'one' => q(درام أرميني),
@@ -2855,7 +2854,7 @@ has 'curriencies' => (
 		},
 		'ANG' => {
 			display_name => {
-				'default' => q(غيلدر هولندي أنتيلي),
+				'currency' => q(غيلدر هولندي أنتيلي),
 				'few' => q(غيلدر أنتيلي هولندي),
 				'many' => q(غيلدر أنتيلي هولندي),
 				'one' => q(غيلدر أنتيلي هولندي),
@@ -2866,7 +2865,7 @@ has 'curriencies' => (
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(كوانزا أنجولي),
+				'currency' => q(كوانزا أنجولي),
 				'few' => q(كوانزا أنجولي),
 				'many' => q(كوانزا أنجولي),
 				'one' => q(كوانزا أنجولي),
@@ -2877,22 +2876,22 @@ has 'curriencies' => (
 		},
 		'AOK' => {
 			display_name => {
-				'default' => q(كوانزا أنجولي - 1977-1990),
+				'currency' => q(كوانزا أنجولي - 1977-1990),
 			},
 		},
 		'AON' => {
 			display_name => {
-				'default' => q(كوانزا أنجولي جديدة - 1990-2000),
+				'currency' => q(كوانزا أنجولي جديدة - 1990-2000),
 			},
 		},
 		'AOR' => {
 			display_name => {
-				'default' => q(كوانزا أنجولي معدلة - 1995 - 1999),
+				'currency' => q(كوانزا أنجولي معدلة - 1995 - 1999),
 			},
 		},
 		'ARA' => {
 			display_name => {
-				'default' => q(استرال أرجنتيني),
+				'currency' => q(استرال أرجنتيني),
 				'few' => q(أسترال أرجنتيني),
 				'many' => q(أسترال أرجنتيني),
 				'one' => q(أسترال أرجنتيني),
@@ -2903,12 +2902,12 @@ has 'curriencies' => (
 		},
 		'ARP' => {
 			display_name => {
-				'default' => q(بيزو أرجنتيني - 1983-1985),
+				'currency' => q(بيزو أرجنتيني - 1983-1985),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(بيزو أرجنتيني),
+				'currency' => q(بيزو أرجنتيني),
 				'few' => q(بيزو أرجنتيني),
 				'many' => q(بيزو أرجنتيني),
 				'one' => q(بيزو أرجنتيني),
@@ -2919,13 +2918,13 @@ has 'curriencies' => (
 		},
 		'ATS' => {
 			display_name => {
-				'default' => q(شلن نمساوي),
+				'currency' => q(شلن نمساوي),
 			},
 		},
 		'AUD' => {
 			symbol => 'AU$',
 			display_name => {
-				'default' => q(دولار أسترالي),
+				'currency' => q(دولار أسترالي),
 				'few' => q(دولار أسترالي),
 				'many' => q(دولار أسترالي),
 				'one' => q(دولار أسترالي),
@@ -2936,7 +2935,7 @@ has 'curriencies' => (
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(فلورن أروبي),
+				'currency' => q(فلورن أروبي),
 				'few' => q(فلورن أروبي),
 				'many' => q(فلورن أروبي),
 				'one' => q(فلورن أروبي),
@@ -2947,7 +2946,7 @@ has 'curriencies' => (
 		},
 		'AZM' => {
 			display_name => {
-				'default' => q(مانات أذريبجاني),
+				'currency' => q(مانات أذريبجاني),
 				'few' => q(مانات أذريبجاني),
 				'many' => q(مانات أذريبجاني),
 				'one' => q(مانات أذريبجاني),
@@ -2958,17 +2957,17 @@ has 'curriencies' => (
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(مانات أذربيجان),
+				'currency' => q(مانات أذربيجان),
 			},
 		},
 		'BAD' => {
 			display_name => {
-				'default' => q(دينار البوسنة والهرسك),
+				'currency' => q(دينار البوسنة والهرسك),
 			},
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(مارك البوسنة والهرسك قابل للتحويل),
+				'currency' => q(مارك البوسنة والهرسك قابل للتحويل),
 				'few' => q(مارك البوسنة والهرسك قابل للتحويل),
 				'many' => q(مارك البوسنة والهرسك قابل للتحويل),
 				'one' => q(مارك البوسنة والهرسك قابل للتحويل),
@@ -2979,7 +2978,7 @@ has 'curriencies' => (
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(دولار بربادوسي),
+				'currency' => q(دولار بربادوسي),
 				'few' => q(دولار بربادوسي),
 				'many' => q(دولار بربادوسي),
 				'one' => q(دولار بربادوسي),
@@ -2990,7 +2989,7 @@ has 'curriencies' => (
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(تاكا بنجلاديشي),
+				'currency' => q(تاكا بنجلاديشي),
 				'few' => q(تاكا بنجلاديشي),
 				'many' => q(تاكا بنجلاديشي),
 				'one' => q(تاكا بنجلاديشي),
@@ -3001,12 +3000,12 @@ has 'curriencies' => (
 		},
 		'BEC' => {
 			display_name => {
-				'default' => q(فرنك بلجيكي قابل للتحويل),
+				'currency' => q(فرنك بلجيكي قابل للتحويل),
 			},
 		},
 		'BEF' => {
 			display_name => {
-				'default' => q(فرنك بلجيكي),
+				'currency' => q(فرنك بلجيكي),
 				'few' => q(فرنك بلجيكي),
 				'many' => q(فرنك بلجيكي),
 				'one' => q(فرنك بلجيكي),
@@ -3017,12 +3016,12 @@ has 'curriencies' => (
 		},
 		'BEL' => {
 			display_name => {
-				'default' => q(فرنك بلجيكي مالي),
+				'currency' => q(فرنك بلجيكي مالي),
 			},
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(ليف بلغاري),
+				'currency' => q(ليف بلغاري),
 				'few' => q(ليف بلغاري),
 				'many' => q(ليف بلغاري),
 				'one' => q(ليف بلغاري),
@@ -3034,7 +3033,7 @@ has 'curriencies' => (
 		'BHD' => {
 			symbol => 'د.ب.‏',
 			display_name => {
-				'default' => q(دينار بحريني),
+				'currency' => q(دينار بحريني),
 				'few' => q(دينار بحريني),
 				'many' => q(دينار بحريني),
 				'one' => q(دينار بحريني),
@@ -3045,7 +3044,7 @@ has 'curriencies' => (
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(فرنك بروندي),
+				'currency' => q(فرنك بروندي),
 				'few' => q(فرنك بروندي),
 				'many' => q(فرنك بروندي),
 				'one' => q(فرنك بروندي),
@@ -3056,7 +3055,7 @@ has 'curriencies' => (
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(دولار برمودي),
+				'currency' => q(دولار برمودي),
 				'few' => q(دولار برمودي),
 				'many' => q(دولار برمودي),
 				'one' => q(دولار برمودي),
@@ -3067,7 +3066,7 @@ has 'curriencies' => (
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(دولار بروناي),
+				'currency' => q(دولار بروناي),
 				'few' => q(دولار بروناي),
 				'many' => q(دولار بروناي),
 				'one' => q(دولار بروناي),
@@ -3078,7 +3077,7 @@ has 'curriencies' => (
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(بوليفيانو بوليفي),
+				'currency' => q(بوليفيانو بوليفي),
 				'few' => q(بوليفيانو بوليفي),
 				'many' => q(بوليفيانو بوليفي),
 				'one' => q(بوليفيانو بوليفي),
@@ -3089,7 +3088,7 @@ has 'curriencies' => (
 		},
 		'BOP' => {
 			display_name => {
-				'default' => q(بيزو بوليفي),
+				'currency' => q(بيزو بوليفي),
 				'few' => q(بيزو بوليفي),
 				'many' => q(بيزو بوليفي),
 				'one' => q(بيزو بوليفي),
@@ -3100,28 +3099,28 @@ has 'curriencies' => (
 		},
 		'BOV' => {
 			display_name => {
-				'default' => q(مفدول بوليفي),
+				'currency' => q(مفدول بوليفي),
 			},
 		},
 		'BRB' => {
 			display_name => {
-				'default' => q(نوفو كروزايرو برازيلي - 1967-1986),
+				'currency' => q(نوفو كروزايرو برازيلي - 1967-1986),
 			},
 		},
 		'BRC' => {
 			display_name => {
-				'default' => q(كروزادو برازيلي),
+				'currency' => q(كروزادو برازيلي),
 			},
 		},
 		'BRE' => {
 			display_name => {
-				'default' => q(كروزايرو برازيلي - 1990-1993),
+				'currency' => q(كروزايرو برازيلي - 1990-1993),
 			},
 		},
 		'BRL' => {
 			symbol => 'R$',
 			display_name => {
-				'default' => q(ريال برازيلي),
+				'currency' => q(ريال برازيلي),
 				'few' => q(ريال برازيلي),
 				'many' => q(ريال برازيلي),
 				'one' => q(ريال برازيلي),
@@ -3132,7 +3131,7 @@ has 'curriencies' => (
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(دولار باهامي),
+				'currency' => q(دولار باهامي),
 				'few' => q(دولار باهامي),
 				'many' => q(دولار باهامي),
 				'one' => q(دولار باهامي),
@@ -3143,7 +3142,7 @@ has 'curriencies' => (
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(نولتوم بوتاني),
+				'currency' => q(نولتوم بوتاني),
 				'few' => q(نولتوم بوتاني),
 				'many' => q(نولتوم بوتاني),
 				'one' => q(نولتوم بوتاني),
@@ -3154,12 +3153,12 @@ has 'curriencies' => (
 		},
 		'BUK' => {
 			display_name => {
-				'default' => q(كيات بورمي),
+				'currency' => q(كيات بورمي),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(بولا بتسواني),
+				'currency' => q(بولا بتسواني),
 				'few' => q(بولا بتسواني),
 				'many' => q(بولا بتسواني),
 				'one' => q(بولا بتسواني),
@@ -3170,12 +3169,12 @@ has 'curriencies' => (
 		},
 		'BYB' => {
 			display_name => {
-				'default' => q(روبل بيلاروسي جديد - 1994-1999),
+				'currency' => q(روبل بيلاروسي جديد - 1994-1999),
 			},
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(روبل بيلاروسي),
+				'currency' => q(روبل بيلاروسي),
 				'few' => q(روبل بيلاروسي),
 				'many' => q(روبل بيلاروسي),
 				'one' => q(روبل بيلاروسي),
@@ -3186,7 +3185,7 @@ has 'curriencies' => (
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(دولار بليزي),
+				'currency' => q(دولار بليزي),
 				'few' => q(دولار بليزي),
 				'many' => q(دولار بليزي),
 				'one' => q(دولار بليزي),
@@ -3198,7 +3197,7 @@ has 'curriencies' => (
 		'CAD' => {
 			symbol => 'CA$',
 			display_name => {
-				'default' => q(دولار كندي),
+				'currency' => q(دولار كندي),
 				'few' => q(دولار كندي),
 				'many' => q(دولار كندي),
 				'one' => q(دولار كندي),
@@ -3209,7 +3208,7 @@ has 'curriencies' => (
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(فرنك كونغولي),
+				'currency' => q(فرنك كونغولي),
 				'few' => q(فرنك كونغولي),
 				'many' => q(فرنك كونغولي),
 				'one' => q(فرنك كونغولي),
@@ -3220,7 +3219,7 @@ has 'curriencies' => (
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(فرنك سويسري),
+				'currency' => q(فرنك سويسري),
 				'few' => q(فرنك سويسري),
 				'many' => q(فرنك سويسري),
 				'one' => q(فرنك سويسري),
@@ -3231,7 +3230,7 @@ has 'curriencies' => (
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(بيزو شيلي),
+				'currency' => q(بيزو شيلي),
 				'few' => q(بيزو شيلي),
 				'many' => q(بيزو شيلي),
 				'one' => q(بيزو شيلي),
@@ -3243,7 +3242,7 @@ has 'curriencies' => (
 		'CNY' => {
 			symbol => 'ي.ص',
 			display_name => {
-				'default' => q(يوان صيني),
+				'currency' => q(يوان صيني),
 				'few' => q(يوان صيني),
 				'many' => q(يوان صيني),
 				'one' => q(يوان صيني),
@@ -3254,7 +3253,7 @@ has 'curriencies' => (
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(بيزو كولومبي),
+				'currency' => q(بيزو كولومبي),
 				'few' => q(بيزو كولومبي),
 				'many' => q(بيزو كولومبي),
 				'one' => q(بيزو كولومبي),
@@ -3265,7 +3264,7 @@ has 'curriencies' => (
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(كولن كوستا ريكي),
+				'currency' => q(كولن كوستا ريكي),
 				'few' => q(كولن كوستا ريكي),
 				'many' => q(كولن كوستا ريكي),
 				'one' => q(كولن كوستا ريكي),
@@ -3276,22 +3275,22 @@ has 'curriencies' => (
 		},
 		'CSD' => {
 			display_name => {
-				'default' => q(دينار صربي قديم),
+				'currency' => q(دينار صربي قديم),
 			},
 		},
 		'CSK' => {
 			display_name => {
-				'default' => q(كرونة تشيكوسلوفاكيا),
+				'currency' => q(كرونة تشيكوسلوفاكيا),
 			},
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(بيزو كوبي قابل للتحويل),
+				'currency' => q(بيزو كوبي قابل للتحويل),
 			},
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(بيزو كوبي),
+				'currency' => q(بيزو كوبي),
 				'few' => q(بيزو كوبي),
 				'many' => q(بيزو كوبي),
 				'one' => q(بيزو كوبي),
@@ -3302,7 +3301,7 @@ has 'curriencies' => (
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(اسكودو الرأس الخضراء),
+				'currency' => q(اسكودو الرأس الخضراء),
 				'few' => q(اسكودو الرأس الخضراء),
 				'many' => q(اسكودو الرأس الخضراء),
 				'one' => q(اسكودو الرأس الخضراء),
@@ -3313,7 +3312,7 @@ has 'curriencies' => (
 		},
 		'CYP' => {
 			display_name => {
-				'default' => q(جنيه قبرصي),
+				'currency' => q(جنيه قبرصي),
 				'few' => q(جنيه قبرصي),
 				'many' => q(جنيه قبرصي),
 				'one' => q(جنيه قبرصي),
@@ -3324,7 +3323,7 @@ has 'curriencies' => (
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(كرونة تشيكية),
+				'currency' => q(كرونة تشيكية),
 				'few' => q(كرونة تشيكية),
 				'many' => q(كرونة تشيكية),
 				'one' => q(كرونة تشيكية),
@@ -3335,12 +3334,12 @@ has 'curriencies' => (
 		},
 		'DDM' => {
 			display_name => {
-				'default' => q(أوستمارك ألماني شرقي),
+				'currency' => q(أوستمارك ألماني شرقي),
 			},
 		},
 		'DEM' => {
 			display_name => {
-				'default' => q(مارك ألماني),
+				'currency' => q(مارك ألماني),
 				'few' => q(مارك ألماني),
 				'many' => q(مارك ألماني),
 				'one' => q(مارك ألماني),
@@ -3351,7 +3350,7 @@ has 'curriencies' => (
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(فرنك جيبوتي),
+				'currency' => q(فرنك جيبوتي),
 				'few' => q(فرنك جيبوتي),
 				'many' => q(فرنك جيبوتي),
 				'one' => q(فرنك جيبوتي),
@@ -3362,7 +3361,7 @@ has 'curriencies' => (
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(كرونة دانماركي),
+				'currency' => q(كرونة دانماركي),
 				'few' => q(كرونة دانماركي),
 				'many' => q(كرونة دانماركي),
 				'one' => q(كرونة دانماركي),
@@ -3373,7 +3372,7 @@ has 'curriencies' => (
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(بيزو الدومنيكان),
+				'currency' => q(بيزو الدومنيكان),
 				'few' => q(بيزو الدومنيكان),
 				'many' => q(بيزو الدومنيكان),
 				'one' => q(بيزو الدومنيكان),
@@ -3385,7 +3384,7 @@ has 'curriencies' => (
 		'DZD' => {
 			symbol => 'د.ج.‏',
 			display_name => {
-				'default' => q(دينار جزائري),
+				'currency' => q(دينار جزائري),
 				'few' => q(دينار جزائري),
 				'many' => q(دينار جزائري),
 				'one' => q(دينار جزائري),
@@ -3396,7 +3395,7 @@ has 'curriencies' => (
 		},
 		'EEK' => {
 			display_name => {
-				'default' => q(كرونة استونية),
+				'currency' => q(كرونة استونية),
 				'few' => q(كرونة أستونية),
 				'many' => q(كرونة أستونية),
 				'one' => q(كرونة أستونية),
@@ -3408,7 +3407,7 @@ has 'curriencies' => (
 		'EGP' => {
 			symbol => 'ج.م.‏',
 			display_name => {
-				'default' => q(جنيه مصري),
+				'currency' => q(جنيه مصري),
 				'few' => q(جنيه مصري),
 				'many' => q(جنيه مصري),
 				'one' => q(جنيه مصري),
@@ -3419,7 +3418,7 @@ has 'curriencies' => (
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(ناكفا أريتري),
+				'currency' => q(ناكفا أريتري),
 				'few' => q(ناكفا أريتري),
 				'many' => q(ناكفا أريتري),
 				'one' => q(ناكفا أريتري),
@@ -3430,7 +3429,7 @@ has 'curriencies' => (
 		},
 		'ESP' => {
 			display_name => {
-				'default' => q(بيزيتا إسباني),
+				'currency' => q(بيزيتا إسباني),
 				'few' => q(بيزيتا إسباني),
 				'many' => q(بيزيتا إسباني),
 				'one' => q(بيزيتا إسباني),
@@ -3441,7 +3440,7 @@ has 'curriencies' => (
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(بير أثيوبي),
+				'currency' => q(بير أثيوبي),
 				'few' => q(بير أثيوبي),
 				'many' => q(بير أثيوبي),
 				'one' => q(بير أثيوبي),
@@ -3453,7 +3452,7 @@ has 'curriencies' => (
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(يورو),
+				'currency' => q(يورو),
 				'few' => q(يورو),
 				'many' => q(يورو),
 				'one' => q(يورو),
@@ -3464,7 +3463,7 @@ has 'curriencies' => (
 		},
 		'FIM' => {
 			display_name => {
-				'default' => q(ماركا فنلندي),
+				'currency' => q(ماركا فنلندي),
 				'few' => q(ماركا فنلندي),
 				'many' => q(ماركا فنلندي),
 				'one' => q(ماركا فنلندي),
@@ -3475,7 +3474,7 @@ has 'curriencies' => (
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(دولار فيجي),
+				'currency' => q(دولار فيجي),
 				'few' => q(دولار فيجي),
 				'many' => q(دولار فيجي),
 				'one' => q(دولار فيجي),
@@ -3486,7 +3485,7 @@ has 'curriencies' => (
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(جنيه جزر فوكلاند),
+				'currency' => q(جنيه جزر فوكلاند),
 				'few' => q(جنيه جزر فوكلاند),
 				'many' => q(جنيه جزر فوكلاند),
 				'one' => q(جنيه جزر فوكلاند),
@@ -3497,7 +3496,7 @@ has 'curriencies' => (
 		},
 		'FRF' => {
 			display_name => {
-				'default' => q(فرنك فرنسي),
+				'currency' => q(فرنك فرنسي),
 				'few' => q(فرنك فرنسي),
 				'many' => q(فرنك فرنسي),
 				'one' => q(فرنك فرنسي),
@@ -3509,7 +3508,7 @@ has 'curriencies' => (
 		'GBP' => {
 			symbol => '£',
 			display_name => {
-				'default' => q(جنيه إسترليني),
+				'currency' => q(جنيه إسترليني),
 				'few' => q(جنيه إسترليني),
 				'many' => q(جنيه إسترليني),
 				'one' => q(جنيه إسترليني),
@@ -3520,7 +3519,7 @@ has 'curriencies' => (
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(لارى جورجي),
+				'currency' => q(لارى جورجي),
 				'few' => q(لاري جورجي),
 				'many' => q(لاري جورجي),
 				'one' => q(لاري جورجي),
@@ -3531,7 +3530,7 @@ has 'curriencies' => (
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(سيدي غاني),
+				'currency' => q(سيدي غاني),
 				'few' => q(سيدي غاني),
 				'many' => q(سيدي غاني),
 				'one' => q(سيدي غاني),
@@ -3542,12 +3541,12 @@ has 'curriencies' => (
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(سيدي غانا),
+				'currency' => q(سيدي غانا),
 			},
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(جنيه جبل طارق),
+				'currency' => q(جنيه جبل طارق),
 				'few' => q(جنيه جبل طارق),
 				'many' => q(جنيه جبل طارق),
 				'one' => q(جنيه جبل طارق),
@@ -3558,7 +3557,7 @@ has 'curriencies' => (
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(دلاسي جامبي),
+				'currency' => q(دلاسي جامبي),
 				'few' => q(دلاسي جامبي),
 				'many' => q(دلاسي جامبي),
 				'one' => q(دلاسي جامبي),
@@ -3569,7 +3568,7 @@ has 'curriencies' => (
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(فرنك غينيا),
+				'currency' => q(فرنك غينيا),
 				'few' => q(فرنك غينيا),
 				'many' => q(فرنك غينيا),
 				'one' => q(فرنك غينيا),
@@ -3580,17 +3579,17 @@ has 'curriencies' => (
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(سيلي غينيا),
+				'currency' => q(سيلي غينيا),
 			},
 		},
 		'GQE' => {
 			display_name => {
-				'default' => q(اكويل جونينا غينيا الاستوائيّة),
+				'currency' => q(اكويل جونينا غينيا الاستوائيّة),
 			},
 		},
 		'GRD' => {
 			display_name => {
-				'default' => q(دراخما يوناني),
+				'currency' => q(دراخما يوناني),
 				'few' => q(دراخما يوناني),
 				'many' => q(دراخما يوناني),
 				'one' => q(دراخما يوناني),
@@ -3601,7 +3600,7 @@ has 'curriencies' => (
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(كوتزال جواتيمالا),
+				'currency' => q(كوتزال جواتيمالا),
 				'few' => q(كوتزال جواتيمالا),
 				'many' => q(كوتزال جواتيمالا),
 				'one' => q(كوتزال جواتيمالا),
@@ -3612,17 +3611,17 @@ has 'curriencies' => (
 		},
 		'GWE' => {
 			display_name => {
-				'default' => q(اسكود برتغالي غينيا),
+				'currency' => q(اسكود برتغالي غينيا),
 			},
 		},
 		'GWP' => {
 			display_name => {
-				'default' => q(بيزو غينيا بيساو),
+				'currency' => q(بيزو غينيا بيساو),
 			},
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(دولار غيانا),
+				'currency' => q(دولار غيانا),
 				'few' => q(دولار غيانا),
 				'many' => q(دولار غيانا),
 				'one' => q(دولار غيانا),
@@ -3634,7 +3633,7 @@ has 'curriencies' => (
 		'HKD' => {
 			symbol => 'HK$',
 			display_name => {
-				'default' => q(دولار هونج كونج),
+				'currency' => q(دولار هونج كونج),
 				'few' => q(دولار هونج كونج),
 				'many' => q(دولار هونج كونج),
 				'one' => q(دولار هونج كونج),
@@ -3645,7 +3644,7 @@ has 'curriencies' => (
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(ليمبيرا هنداروس),
+				'currency' => q(ليمبيرا هنداروس),
 				'few' => q(ليمبيرا هندوراس),
 				'many' => q(ليمبيرا هندوراس),
 				'one' => q(ليمبيرا هندوراس),
@@ -3656,12 +3655,12 @@ has 'curriencies' => (
 		},
 		'HRD' => {
 			display_name => {
-				'default' => q(دينار كرواتي),
+				'currency' => q(دينار كرواتي),
 			},
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(كونا كرواتي),
+				'currency' => q(كونا كرواتي),
 				'few' => q(كونا كرواتي),
 				'many' => q(كونا كرواتي),
 				'one' => q(كونا كرواتي),
@@ -3672,7 +3671,7 @@ has 'curriencies' => (
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(جوردى هايتي),
+				'currency' => q(جوردى هايتي),
 				'few' => q(جوردى هايتي),
 				'many' => q(جوردى هايتي),
 				'one' => q(جوردى هايتي),
@@ -3683,7 +3682,7 @@ has 'curriencies' => (
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(فورينت مجري),
+				'currency' => q(فورينت مجري),
 				'few' => q(فورينت مجري),
 				'many' => q(فورينت مجري),
 				'one' => q(فورينت مجري),
@@ -3694,7 +3693,7 @@ has 'curriencies' => (
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(روبية إندونيسية),
+				'currency' => q(روبية إندونيسية),
 				'few' => q(روبيه إندونيسية),
 				'many' => q(روبيه إندونيسية),
 				'one' => q(روبيه إندونيسية),
@@ -3705,7 +3704,7 @@ has 'curriencies' => (
 		},
 		'IEP' => {
 			display_name => {
-				'default' => q(جنيه إيرلندي),
+				'currency' => q(جنيه إيرلندي),
 				'few' => q(جنيه إيرلندي),
 				'many' => q(جنيه إيرلندي),
 				'one' => q(جنيه إيرلندي),
@@ -3716,7 +3715,7 @@ has 'curriencies' => (
 		},
 		'ILP' => {
 			display_name => {
-				'default' => q(جنيه إسرائيلي),
+				'currency' => q(جنيه إسرائيلي),
 				'few' => q(جنيه إسرائيلي),
 				'many' => q(جنيه إسرائيلي),
 				'one' => q(جنيه إسرائيلي),
@@ -3728,7 +3727,7 @@ has 'curriencies' => (
 		'ILS' => {
 			symbol => '₪',
 			display_name => {
-				'default' => q(شيكل إسرائيلي جديد),
+				'currency' => q(شيكل إسرائيلي جديد),
 				'few' => q(شيكل إسرائيلي جديد),
 				'many' => q(شيكل إسرائيلي جديد),
 				'one' => q(شيكل إسرائيلي جديد),
@@ -3740,7 +3739,7 @@ has 'curriencies' => (
 		'INR' => {
 			symbol => 'ر.ه.‏',
 			display_name => {
-				'default' => q(روبيه هندي),
+				'currency' => q(روبيه هندي),
 				'few' => q(روبية هندي),
 				'many' => q(روبية هندي),
 				'one' => q(روبية هندي),
@@ -3752,7 +3751,7 @@ has 'curriencies' => (
 		'IQD' => {
 			symbol => 'د.ع.‏',
 			display_name => {
-				'default' => q(دينار عراقي),
+				'currency' => q(دينار عراقي),
 				'few' => q(دينار عراقي),
 				'many' => q(دينار عراقي),
 				'one' => q(دينار عراقي),
@@ -3763,7 +3762,7 @@ has 'curriencies' => (
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(ريال إيراني),
+				'currency' => q(ريال إيراني),
 				'few' => q(ريال إيراني),
 				'many' => q(ريال إيراني),
 				'one' => q(ريال إيراني),
@@ -3774,7 +3773,7 @@ has 'curriencies' => (
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(كرونه أيسلندي),
+				'currency' => q(كرونه أيسلندي),
 				'few' => q(كرونه أيسلندي),
 				'many' => q(كرونه أيسلندي),
 				'one' => q(كرونه أيسلندي),
@@ -3785,7 +3784,7 @@ has 'curriencies' => (
 		},
 		'ITL' => {
 			display_name => {
-				'default' => q(ليرة إيطالية),
+				'currency' => q(ليرة إيطالية),
 				'few' => q(ليرة إيطالية),
 				'many' => q(ليرة إيطالية),
 				'one' => q(ليرة إيطالية),
@@ -3796,7 +3795,7 @@ has 'curriencies' => (
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(دولار جامايكي),
+				'currency' => q(دولار جامايكي),
 				'few' => q(دولار جامايكي),
 				'many' => q(دولار جامايكي),
 				'one' => q(دولار جامايكي),
@@ -3808,7 +3807,7 @@ has 'curriencies' => (
 		'JOD' => {
 			symbol => 'د.أ.‏',
 			display_name => {
-				'default' => q(دينار أردني),
+				'currency' => q(دينار أردني),
 				'few' => q(دينار أردني),
 				'many' => q(دينار أردني),
 				'one' => q(دينار أردني),
@@ -3820,7 +3819,7 @@ has 'curriencies' => (
 		'JPY' => {
 			symbol => 'JP¥',
 			display_name => {
-				'default' => q(ين ياباني),
+				'currency' => q(ين ياباني),
 				'few' => q(ين ياباني),
 				'many' => q(ين ياباني),
 				'one' => q(ين ياباني),
@@ -3831,7 +3830,7 @@ has 'curriencies' => (
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(شلن كينيي),
+				'currency' => q(شلن كينيي),
 				'few' => q(شلن كينيي),
 				'many' => q(شلن كينيي),
 				'one' => q(شلن كينيي),
@@ -3842,7 +3841,7 @@ has 'curriencies' => (
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(سوم قيرغستاني),
+				'currency' => q(سوم قيرغستاني),
 				'few' => q(سوم قيرغستاني),
 				'many' => q(سوم قيرغستاني),
 				'one' => q(سوم قيرغستاني),
@@ -3853,7 +3852,7 @@ has 'curriencies' => (
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(رييال كمبودي),
+				'currency' => q(رييال كمبودي),
 				'few' => q(رييال كمبودي),
 				'many' => q(رييال كمبودي),
 				'one' => q(رييال كمبودي),
@@ -3865,7 +3864,7 @@ has 'curriencies' => (
 		'KMF' => {
 			symbol => 'ف.ج.ق.‏',
 			display_name => {
-				'default' => q(فرنك جزر القمر),
+				'currency' => q(فرنك جزر القمر),
 				'few' => q(فرنك جزر القمر),
 				'many' => q(فرنك جزر القمر),
 				'one' => q(فرنك جزر القمر),
@@ -3876,7 +3875,7 @@ has 'curriencies' => (
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(وون كوريا الشمالية),
+				'currency' => q(وون كوريا الشمالية),
 				'few' => q(وون كوريا الشمالية),
 				'many' => q(وون كوريا الشمالية),
 				'one' => q(وون كوريا الشمالية),
@@ -3888,7 +3887,7 @@ has 'curriencies' => (
 		'KRW' => {
 			symbol => '₩',
 			display_name => {
-				'default' => q(وون كوريا الجنوبية),
+				'currency' => q(وون كوريا الجنوبية),
 				'few' => q(وون كوريا الجنوبية),
 				'many' => q(وون كوريا الجنوبية),
 				'one' => q(وون كوريا الجنوبية),
@@ -3900,7 +3899,7 @@ has 'curriencies' => (
 		'KWD' => {
 			symbol => 'د.ك.‏',
 			display_name => {
-				'default' => q(دينار كويتي),
+				'currency' => q(دينار كويتي),
 				'few' => q(دينار كويتي),
 				'many' => q(دينار كويتي),
 				'one' => q(دينار كويتي),
@@ -3911,7 +3910,7 @@ has 'curriencies' => (
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(دولار جزر كيمن),
+				'currency' => q(دولار جزر كيمن),
 				'few' => q(دولار جزر كيمن),
 				'many' => q(دولار جزر كيمن),
 				'one' => q(دولار جزر كيمن),
@@ -3922,7 +3921,7 @@ has 'curriencies' => (
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(تينغ كازاخستاني),
+				'currency' => q(تينغ كازاخستاني),
 				'few' => q(تينغ كازاخستاني),
 				'many' => q(تينغ كازاخستاني),
 				'one' => q(تينغ كازاخستاني),
@@ -3933,7 +3932,7 @@ has 'curriencies' => (
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(كيب لاوسي),
+				'currency' => q(كيب لاوسي),
 				'few' => q(كيب لاوسي),
 				'many' => q(كيب لاوسي),
 				'one' => q(كيب لاوسي),
@@ -3945,7 +3944,7 @@ has 'curriencies' => (
 		'LBP' => {
 			symbol => 'ل.ل.‏',
 			display_name => {
-				'default' => q(جنية لبناني),
+				'currency' => q(جنية لبناني),
 				'few' => q(جنية لبناني),
 				'many' => q(جنية لبناني),
 				'one' => q(جنية لبناني),
@@ -3956,7 +3955,7 @@ has 'curriencies' => (
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(روبية سريلانكية),
+				'currency' => q(روبية سريلانكية),
 				'few' => q(روبية سريلانكية),
 				'many' => q(روبية سريلانكية),
 				'one' => q(روبية سريلانكية),
@@ -3967,7 +3966,7 @@ has 'curriencies' => (
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(دولار ليبيري),
+				'currency' => q(دولار ليبيري),
 				'few' => q(دولار ليبيري),
 				'many' => q(دولار ليبيري),
 				'one' => q(دولار ليبيري),
@@ -3978,7 +3977,7 @@ has 'curriencies' => (
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(لوتي ليسوتو),
+				'currency' => q(لوتي ليسوتو),
 				'few' => q(لوتي ليسوتو),
 				'many' => q(لوتي ليسوتو),
 				'one' => q(لوتي ليسوتو),
@@ -3989,7 +3988,7 @@ has 'curriencies' => (
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(ليتا ليتوانية),
+				'currency' => q(ليتا ليتوانية),
 				'few' => q(ليتا ليتوانية),
 				'many' => q(ليتا ليتوانية),
 				'one' => q(ليتا ليتوانية),
@@ -4000,27 +3999,27 @@ has 'curriencies' => (
 		},
 		'LTT' => {
 			display_name => {
-				'default' => q(تالوناس ليتواني),
+				'currency' => q(تالوناس ليتواني),
 			},
 		},
 		'LUC' => {
 			display_name => {
-				'default' => q(فرنك لوكسمبرج قابل للتحويل),
+				'currency' => q(فرنك لوكسمبرج قابل للتحويل),
 			},
 		},
 		'LUF' => {
 			display_name => {
-				'default' => q(فرنك لوكسمبرج),
+				'currency' => q(فرنك لوكسمبرج),
 			},
 		},
 		'LUL' => {
 			display_name => {
-				'default' => q(فرنك لوكسمبرج المالي),
+				'currency' => q(فرنك لوكسمبرج المالي),
 			},
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(لاتس لاتفيا),
+				'currency' => q(لاتس لاتفيا),
 				'few' => q(لاتس لاتفي),
 				'many' => q(لاتس لاتفي),
 				'one' => q(لاتس لاتفي),
@@ -4031,13 +4030,13 @@ has 'curriencies' => (
 		},
 		'LVR' => {
 			display_name => {
-				'default' => q(روبل لاتفيا),
+				'currency' => q(روبل لاتفيا),
 			},
 		},
 		'LYD' => {
 			symbol => 'د.ل.‏',
 			display_name => {
-				'default' => q(دينار ليبي),
+				'currency' => q(دينار ليبي),
 				'few' => q(دينار ليبي),
 				'many' => q(دينار ليبي),
 				'one' => q(دينار ليبي),
@@ -4049,7 +4048,7 @@ has 'curriencies' => (
 		'MAD' => {
 			symbol => 'د.م.‏',
 			display_name => {
-				'default' => q(درهم مغربي),
+				'currency' => q(درهم مغربي),
 				'few' => q(درهم مغربي),
 				'many' => q(درهم مغربي),
 				'one' => q(درهم مغربي),
@@ -4060,12 +4059,12 @@ has 'curriencies' => (
 		},
 		'MAF' => {
 			display_name => {
-				'default' => q(فرنك مغربي),
+				'currency' => q(فرنك مغربي),
 			},
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(ليو مولدوفي),
+				'currency' => q(ليو مولدوفي),
 				'few' => q(ليو مولدوفي),
 				'many' => q(ليو مولدوفي),
 				'one' => q(ليو مولدوفي),
@@ -4076,7 +4075,7 @@ has 'curriencies' => (
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(أرياري مدغشقر),
+				'currency' => q(أرياري مدغشقر),
 				'few' => q(أرياري مدغشقر),
 				'many' => q(أرياري مدغشقر),
 				'one' => q(أرياري مدغشقر),
@@ -4087,12 +4086,12 @@ has 'curriencies' => (
 		},
 		'MGF' => {
 			display_name => {
-				'default' => q(فرنك مدغشقر),
+				'currency' => q(فرنك مدغشقر),
 			},
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(دينار مقدوني),
+				'currency' => q(دينار مقدوني),
 				'few' => q(دينار مقدوني),
 				'many' => q(دينار مقدوني),
 				'one' => q(دينار مقدوني),
@@ -4103,12 +4102,12 @@ has 'curriencies' => (
 		},
 		'MLF' => {
 			display_name => {
-				'default' => q(فرنك مالي),
+				'currency' => q(فرنك مالي),
 			},
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(كيات ميانمار),
+				'currency' => q(كيات ميانمار),
 				'few' => q(كيات ميانمار),
 				'many' => q(كيات ميانمار),
 				'one' => q(كيات ميانمار),
@@ -4119,7 +4118,7 @@ has 'curriencies' => (
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(توغروغ منغولي),
+				'currency' => q(توغروغ منغولي),
 				'few' => q(توغروغ منغولي),
 				'many' => q(توغروغ منغولي),
 				'one' => q(توغروغ منغولي),
@@ -4130,7 +4129,7 @@ has 'curriencies' => (
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(باتاكا ماكاوي),
+				'currency' => q(باتاكا ماكاوي),
 				'few' => q(باتاكا ماكاوي),
 				'many' => q(باتاكا ماكاوي),
 				'one' => q(باتاكا ماكاوي),
@@ -4142,7 +4141,7 @@ has 'curriencies' => (
 		'MRO' => {
 			symbol => 'أ.م.‏',
 			display_name => {
-				'default' => q(أوقية موريتانية),
+				'currency' => q(أوقية موريتانية),
 				'few' => q(أوقية موريتانية),
 				'many' => q(أوقية موريتانية),
 				'one' => q(أوقية موريتانية),
@@ -4153,7 +4152,7 @@ has 'curriencies' => (
 		},
 		'MTL' => {
 			display_name => {
-				'default' => q(ليرة مالطية),
+				'currency' => q(ليرة مالطية),
 				'few' => q(ليرة مالطية),
 				'many' => q(ليرة مالطية),
 				'one' => q(ليرة مالطية),
@@ -4164,7 +4163,7 @@ has 'curriencies' => (
 		},
 		'MTP' => {
 			display_name => {
-				'default' => q(جنيه مالطي),
+				'currency' => q(جنيه مالطي),
 				'few' => q(جنيه مالطي),
 				'many' => q(جنيه مالطي),
 				'one' => q(جنيه مالطي),
@@ -4175,7 +4174,7 @@ has 'curriencies' => (
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(روبية موريشيوسية),
+				'currency' => q(روبية موريشيوسية),
 				'few' => q(روبي موريشي),
 				'many' => q(روبي موريشي),
 				'one' => q(روبي موريشي),
@@ -4186,7 +4185,7 @@ has 'curriencies' => (
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(روفيه جزر المالديف),
+				'currency' => q(روفيه جزر المالديف),
 				'few' => q(روفيه جزر المالديف),
 				'many' => q(روفيه جزر المالديف),
 				'one' => q(روفيه جزر المالديف),
@@ -4197,7 +4196,7 @@ has 'curriencies' => (
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(كواشا مالاوي),
+				'currency' => q(كواشا مالاوي),
 				'few' => q(كواشا مالاوي),
 				'many' => q(كواشا مالاوي),
 				'one' => q(كواشا مالاوي),
@@ -4209,7 +4208,7 @@ has 'curriencies' => (
 		'MXN' => {
 			symbol => 'MX$',
 			display_name => {
-				'default' => q(بيزو مكسيكي),
+				'currency' => q(بيزو مكسيكي),
 				'few' => q(بيزو مكسيكي),
 				'many' => q(بيزو مكسيكي),
 				'one' => q(بيزو مكسيكي),
@@ -4220,7 +4219,7 @@ has 'curriencies' => (
 		},
 		'MXP' => {
 			display_name => {
-				'default' => q(بيزو فضي مكسيكي - 1861-1992),
+				'currency' => q(بيزو فضي مكسيكي - 1861-1992),
 				'few' => q(بيزو فضي مكسيكي),
 				'many' => q(بيزو فضي مكسيكي),
 				'one' => q(بيزو فضي مكسيكي),
@@ -4231,7 +4230,7 @@ has 'curriencies' => (
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(رينغيت ماليزي),
+				'currency' => q(رينغيت ماليزي),
 				'few' => q(رينغيت ماليزي),
 				'many' => q(رينغيت ماليزي),
 				'one' => q(رينغيت ماليزي),
@@ -4242,12 +4241,12 @@ has 'curriencies' => (
 		},
 		'MZE' => {
 			display_name => {
-				'default' => q(اسكود موزمبيقي),
+				'currency' => q(اسكود موزمبيقي),
 			},
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(متكال موزمبيقي),
+				'currency' => q(متكال موزمبيقي),
 				'few' => q(متكال موزمبيقي),
 				'many' => q(متكال موزمبيقي),
 				'one' => q(متكال موزمبيقي),
@@ -4258,7 +4257,7 @@ has 'curriencies' => (
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(دولار ناميبي),
+				'currency' => q(دولار ناميبي),
 				'few' => q(دولار نامبيا),
 				'many' => q(دولار نامبيا),
 				'one' => q(دولار نامبيا),
@@ -4269,7 +4268,7 @@ has 'curriencies' => (
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(نايرا نيجيري),
+				'currency' => q(نايرا نيجيري),
 				'few' => q(نايرا نيجيري),
 				'many' => q(نايرا نيجيري),
 				'one' => q(نايرا نيجيري),
@@ -4280,12 +4279,12 @@ has 'curriencies' => (
 		},
 		'NIC' => {
 			display_name => {
-				'default' => q(كوردوبة نيكاراجوا),
+				'currency' => q(كوردوبة نيكاراجوا),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(قرطبة نيكاراغوا),
+				'currency' => q(قرطبة نيكاراغوا),
 				'few' => q(قرطبة نيكاراغوا),
 				'many' => q(قرطبة نيكاراغوا),
 				'one' => q(قرطبة نيكاراغوا),
@@ -4296,7 +4295,7 @@ has 'curriencies' => (
 		},
 		'NLG' => {
 			display_name => {
-				'default' => q(جلدر هولندي),
+				'currency' => q(جلدر هولندي),
 				'few' => q(جلدر هولندي),
 				'many' => q(جلدر هولندي),
 				'one' => q(جلدر هولندي),
@@ -4307,7 +4306,7 @@ has 'curriencies' => (
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(كرونة نرويجية),
+				'currency' => q(كرونة نرويجية),
 				'few' => q(كرونة نرويجية),
 				'many' => q(كرونة نرويجية),
 				'one' => q(كرونة نرويجية),
@@ -4318,7 +4317,7 @@ has 'curriencies' => (
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(روبية نيبالي),
+				'currency' => q(روبية نيبالي),
 				'few' => q(روبية نيبالي),
 				'many' => q(روبية نيبالي),
 				'one' => q(روبية نيبالي),
@@ -4330,7 +4329,7 @@ has 'curriencies' => (
 		'NZD' => {
 			symbol => 'NZ$',
 			display_name => {
-				'default' => q(دولار نيوزيلندي),
+				'currency' => q(دولار نيوزيلندي),
 				'few' => q(دولار نيوزيلندي),
 				'many' => q(دولار نيوزيلندي),
 				'one' => q(دولار نيوزيلندي),
@@ -4342,7 +4341,7 @@ has 'curriencies' => (
 		'OMR' => {
 			symbol => 'ر.ع.‏',
 			display_name => {
-				'default' => q(ريال عماني),
+				'currency' => q(ريال عماني),
 				'few' => q(ريال عماني),
 				'many' => q(ريال عماني),
 				'one' => q(ريال عماني),
@@ -4353,7 +4352,7 @@ has 'curriencies' => (
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(بالبوا بنمي),
+				'currency' => q(بالبوا بنمي),
 				'few' => q(بالبوا بنمي),
 				'many' => q(بالبوا بنمي),
 				'one' => q(بالبوا بنمي),
@@ -4364,12 +4363,12 @@ has 'curriencies' => (
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(سول جديد البيرو),
+				'currency' => q(سول جديد البيرو),
 			},
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(كينا بابوا غينيا الجديدة),
+				'currency' => q(كينا بابوا غينيا الجديدة),
 				'few' => q(كينا بابوا غينيا الجديدة),
 				'many' => q(كينا بابوا غينيا الجديدة),
 				'one' => q(كينا بابوا غينيا الجديدة),
@@ -4380,7 +4379,7 @@ has 'curriencies' => (
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(بيزو فلبيني),
+				'currency' => q(بيزو فلبيني),
 				'few' => q(بيزو فلبيني),
 				'many' => q(بيزو فلبيني),
 				'one' => q(بيزو فلبيني),
@@ -4391,7 +4390,7 @@ has 'curriencies' => (
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(روبية باكستاني),
+				'currency' => q(روبية باكستاني),
 				'few' => q(روبية باكستاني),
 				'many' => q(روبية باكستاني),
 				'one' => q(روبية باكستاني),
@@ -4402,7 +4401,7 @@ has 'curriencies' => (
 		},
 		'PLN' => {
 			display_name => {
-				'default' => q(زلوتي بولندي),
+				'currency' => q(زلوتي بولندي),
 				'few' => q(زلوتي بولندي),
 				'many' => q(زلوتي بولندي),
 				'one' => q(زلوتي بولندي),
@@ -4413,12 +4412,12 @@ has 'curriencies' => (
 		},
 		'PLZ' => {
 			display_name => {
-				'default' => q(زلوتي بولندي - 1950-1995),
+				'currency' => q(زلوتي بولندي - 1950-1995),
 			},
 		},
 		'PTE' => {
 			display_name => {
-				'default' => q(اسكود برتغالي),
+				'currency' => q(اسكود برتغالي),
 				'few' => q(أسكود برتغالي),
 				'many' => q(أسكود برتغالي),
 				'one' => q(أسكود برتغالي),
@@ -4429,7 +4428,7 @@ has 'curriencies' => (
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(جواراني باراجواي),
+				'currency' => q(جواراني باراجواي),
 				'few' => q(جواراني باراجواي),
 				'many' => q(جواراني باراجواي),
 				'one' => q(جواراني باراجواي),
@@ -4441,7 +4440,7 @@ has 'curriencies' => (
 		'QAR' => {
 			symbol => 'ر.ق.‏',
 			display_name => {
-				'default' => q(ريال قطري),
+				'currency' => q(ريال قطري),
 				'few' => q(ريال قطري),
 				'many' => q(ريال قطري),
 				'one' => q(ريال قطري),
@@ -4452,7 +4451,7 @@ has 'curriencies' => (
 		},
 		'RHD' => {
 			display_name => {
-				'default' => q(دولار روديسي),
+				'currency' => q(دولار روديسي),
 				'few' => q(دولار روديسي),
 				'many' => q(دولار روديسي),
 				'one' => q(دولار روديسي),
@@ -4463,7 +4462,7 @@ has 'curriencies' => (
 		},
 		'ROL' => {
 			display_name => {
-				'default' => q(ليو روماني قديم),
+				'currency' => q(ليو روماني قديم),
 				'few' => q(ليو روماني قديم),
 				'many' => q(ليو روماني قديم),
 				'one' => q(ليو روماني قديم),
@@ -4474,7 +4473,7 @@ has 'curriencies' => (
 		},
 		'RON' => {
 			display_name => {
-				'default' => q(ليو روماني),
+				'currency' => q(ليو روماني),
 				'few' => q(ليو روماني),
 				'many' => q(ليو روماني),
 				'one' => q(ليو روماني),
@@ -4485,12 +4484,12 @@ has 'curriencies' => (
 		},
 		'RSD' => {
 			display_name => {
-				'default' => q(دينار صربي),
+				'currency' => q(دينار صربي),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(روبل روسي),
+				'currency' => q(روبل روسي),
 				'few' => q(روبل روسي),
 				'many' => q(روبل روسي),
 				'one' => q(روبل روسي),
@@ -4501,12 +4500,12 @@ has 'curriencies' => (
 		},
 		'RUR' => {
 			display_name => {
-				'default' => q(روبل روسي - 1991-1998),
+				'currency' => q(روبل روسي - 1991-1998),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(فرنك رواندي),
+				'currency' => q(فرنك رواندي),
 				'few' => q(فرنك رواندي),
 				'many' => q(فرنك رواندي),
 				'one' => q(فرنك رواندي),
@@ -4518,7 +4517,7 @@ has 'curriencies' => (
 		'SAR' => {
 			symbol => 'ر.س.‏',
 			display_name => {
-				'default' => q(ريال سعودي),
+				'currency' => q(ريال سعودي),
 				'few' => q(ريال سعودي),
 				'many' => q(ريال سعودي),
 				'one' => q(ريال سعودي),
@@ -4529,7 +4528,7 @@ has 'curriencies' => (
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(دولار جزر سليمان),
+				'currency' => q(دولار جزر سليمان),
 				'few' => q(دولار جزر سليمان),
 				'many' => q(دولار جزر سليمان),
 				'one' => q(دولار جزر سليمان),
@@ -4540,7 +4539,7 @@ has 'curriencies' => (
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(روبية سيشيلية),
+				'currency' => q(روبية سيشيلية),
 				'few' => q(روبية سيشيلية),
 				'many' => q(روبية سيشيلية),
 				'one' => q(روبية سيشيلية),
@@ -4552,7 +4551,7 @@ has 'curriencies' => (
 		'SDD' => {
 			symbol => 'د.س.‏',
 			display_name => {
-				'default' => q(دينار سوداني),
+				'currency' => q(دينار سوداني),
 				'few' => q(دينار سوداني قديم),
 				'many' => q(دينار سوداني قديم),
 				'one' => q(دينار سوداني قديم),
@@ -4564,7 +4563,7 @@ has 'curriencies' => (
 		'SDG' => {
 			symbol => 'ج.س.',
 			display_name => {
-				'default' => q(جنيه سوداني),
+				'currency' => q(جنيه سوداني),
 				'few' => q(جنيه سوداني),
 				'many' => q(جنيه سوداني),
 				'one' => q(جنيه سوداني),
@@ -4575,7 +4574,7 @@ has 'curriencies' => (
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(جنيه سوداني قديم),
+				'currency' => q(جنيه سوداني قديم),
 				'few' => q(جنيه سوداني قديم),
 				'many' => q(جنيه سوداني قديم),
 				'one' => q(جنيه سوداني قديم),
@@ -4586,7 +4585,7 @@ has 'curriencies' => (
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(كرونة سويدية),
+				'currency' => q(كرونة سويدية),
 				'few' => q(كرونة سويدية),
 				'many' => q(كرونة سويدية),
 				'one' => q(كرونة سويدية),
@@ -4597,7 +4596,7 @@ has 'curriencies' => (
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(دولار سنغافوري),
+				'currency' => q(دولار سنغافوري),
 				'few' => q(دولار سنغافوري),
 				'many' => q(دولار سنغافوري),
 				'one' => q(دولار سنغافوري),
@@ -4608,7 +4607,7 @@ has 'curriencies' => (
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(جنيه سانت هيلين),
+				'currency' => q(جنيه سانت هيلين),
 				'few' => q(جنيه سانت هيلين),
 				'many' => q(جنيه سانت هيلين),
 				'one' => q(جنيه سانت هيلين),
@@ -4619,12 +4618,12 @@ has 'curriencies' => (
 		},
 		'SIT' => {
 			display_name => {
-				'default' => q(تولار سلوفيني),
+				'currency' => q(تولار سلوفيني),
 			},
 		},
 		'SKK' => {
 			display_name => {
-				'default' => q(كرونة سلوفاكية),
+				'currency' => q(كرونة سلوفاكية),
 				'few' => q(كرونة سلوفاكية),
 				'many' => q(كرونة سلوفاكية),
 				'one' => q(كرونة سلوفاكية),
@@ -4635,7 +4634,7 @@ has 'curriencies' => (
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(ليون سيراليوني),
+				'currency' => q(ليون سيراليوني),
 				'few' => q(ليون سيراليوني),
 				'many' => q(ليون سيراليوني),
 				'one' => q(ليون سيراليوني),
@@ -4646,7 +4645,7 @@ has 'curriencies' => (
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(شلن صومالي),
+				'currency' => q(شلن صومالي),
 				'few' => q(شلن صومالي),
 				'many' => q(شلن صومالي),
 				'one' => q(شلن صومالي),
@@ -4657,7 +4656,7 @@ has 'curriencies' => (
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(دولار سورينامي),
+				'currency' => q(دولار سورينامي),
 				'few' => q(دولار سورينامي),
 				'many' => q(دولار سورينامي),
 				'one' => q(دولار سورينامي),
@@ -4668,7 +4667,7 @@ has 'curriencies' => (
 		},
 		'SRG' => {
 			display_name => {
-				'default' => q(جلدر سورينامي),
+				'currency' => q(جلدر سورينامي),
 				'few' => q(جلدر سورينامي),
 				'many' => q(جلدر سورينامي),
 				'one' => q(جلدر سورينامي),
@@ -4680,7 +4679,7 @@ has 'curriencies' => (
 		'SSP' => {
 			symbol => 'ج.ج.س.',
 			display_name => {
-				'default' => q(جنيه جنوب السودان),
+				'currency' => q(جنيه جنوب السودان),
 				'few' => q(جنيه جنوب السودان),
 				'many' => q(جنيه جنوب السودان),
 				'one' => q(جنيه جنوب السودان),
@@ -4691,7 +4690,7 @@ has 'curriencies' => (
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(دوبرا ساو تومي وبرينسيبي),
+				'currency' => q(دوبرا ساو تومي وبرينسيبي),
 				'few' => q(دوبرا ساو تومي وبرينسيبي),
 				'many' => q(دوبرا ساو تومي وبرينسيبي),
 				'one' => q(دوبرا ساو تومي وبرينسيبي),
@@ -4702,12 +4701,12 @@ has 'curriencies' => (
 		},
 		'SUR' => {
 			display_name => {
-				'default' => q(روبل سوفيتي),
+				'currency' => q(روبل سوفيتي),
 			},
 		},
 		'SVC' => {
 			display_name => {
-				'default' => q(كولون سلفادوري),
+				'currency' => q(كولون سلفادوري),
 				'few' => q(كولون سلفادوري),
 				'many' => q(كولون سلفادوري),
 				'one' => q(كولون سلفادوري),
@@ -4719,7 +4718,7 @@ has 'curriencies' => (
 		'SYP' => {
 			symbol => 'ل.س.‏',
 			display_name => {
-				'default' => q(ليرة سورية),
+				'currency' => q(ليرة سورية),
 				'few' => q(ليرة سورية),
 				'many' => q(ليرة سورية),
 				'one' => q(ليرة سورية),
@@ -4730,7 +4729,7 @@ has 'curriencies' => (
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(ليلانجيني سوازيلندي),
+				'currency' => q(ليلانجيني سوازيلندي),
 				'few' => q(ليلانجيني سوازيلندي),
 				'many' => q(ليلانجيني سوازيلندي),
 				'one' => q(ليلانجيني سوازيلندي),
@@ -4742,7 +4741,7 @@ has 'curriencies' => (
 		'THB' => {
 			symbol => '฿',
 			display_name => {
-				'default' => q(باخت تايلاندي),
+				'currency' => q(باخت تايلاندي),
 				'few' => q(باخت تايلاندي),
 				'many' => q(باخت تايلاندي),
 				'one' => q(باخت تايلاندي),
@@ -4753,12 +4752,12 @@ has 'curriencies' => (
 		},
 		'TJR' => {
 			display_name => {
-				'default' => q(روبل طاجيكستاني),
+				'currency' => q(روبل طاجيكستاني),
 			},
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(سوموني طاجيكستاني),
+				'currency' => q(سوموني طاجيكستاني),
 				'few' => q(سوموني طاجيكستاني),
 				'many' => q(سوموني طاجيكستاني),
 				'one' => q(سوموني طاجيكستاني),
@@ -4769,7 +4768,7 @@ has 'curriencies' => (
 		},
 		'TMM' => {
 			display_name => {
-				'default' => q(مانات تركمنستاني),
+				'currency' => q(مانات تركمنستاني),
 				'few' => q(مانات تركمنستاني),
 				'many' => q(مانات تركمنستاني),
 				'one' => q(مانات تركمنستاني),
@@ -4780,13 +4779,13 @@ has 'curriencies' => (
 		},
 		'TMT' => {
 			display_name => {
-				'default' => q(مانات تركمانستان),
+				'currency' => q(مانات تركمانستان),
 			},
 		},
 		'TND' => {
 			symbol => 'د.ت.‏',
 			display_name => {
-				'default' => q(دينارتونسي),
+				'currency' => q(دينارتونسي),
 				'few' => q(دينارتونسي),
 				'many' => q(دينارتونسي),
 				'one' => q(دينارتونسي),
@@ -4797,17 +4796,17 @@ has 'curriencies' => (
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(بانغا تونغا),
+				'currency' => q(بانغا تونغا),
 			},
 		},
 		'TPE' => {
 			display_name => {
-				'default' => q(اسكود تيموري),
+				'currency' => q(اسكود تيموري),
 			},
 		},
 		'TRL' => {
 			display_name => {
-				'default' => q(ليرة تركي),
+				'currency' => q(ليرة تركي),
 				'few' => q(ليرة تركي),
 				'many' => q(ليرة تركي),
 				'one' => q(ليرة تركي),
@@ -4818,7 +4817,7 @@ has 'curriencies' => (
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(ليرة تركية),
+				'currency' => q(ليرة تركية),
 				'few' => q(ليرة تركية),
 				'many' => q(ليرة تركية),
 				'one' => q(ليرة تركية),
@@ -4829,7 +4828,7 @@ has 'curriencies' => (
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(دولار ترينداد وتوباجو),
+				'currency' => q(دولار ترينداد وتوباجو),
 				'few' => q(دولار ترينداد وتوباجو),
 				'many' => q(دولار ترينداد وتوباجو),
 				'one' => q(دولار ترينداد وتوباجو),
@@ -4841,7 +4840,7 @@ has 'curriencies' => (
 		'TWD' => {
 			symbol => 'NT$',
 			display_name => {
-				'default' => q(دولار تايواني),
+				'currency' => q(دولار تايواني),
 				'few' => q(دولار تايواني),
 				'many' => q(دولار تايواني),
 				'one' => q(دولار تايواني),
@@ -4852,7 +4851,7 @@ has 'curriencies' => (
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(شلن تنزاني),
+				'currency' => q(شلن تنزاني),
 				'few' => q(شلن تنزاني),
 				'many' => q(شلن تنزاني),
 				'one' => q(شلن تنزاني),
@@ -4863,7 +4862,7 @@ has 'curriencies' => (
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(هريفنيا أوكراني),
+				'currency' => q(هريفنيا أوكراني),
 				'few' => q(هريفنيا أوكراني),
 				'many' => q(هريفنيا أوكراني),
 				'one' => q(هريفنيا أوكراني),
@@ -4874,12 +4873,12 @@ has 'curriencies' => (
 		},
 		'UGS' => {
 			display_name => {
-				'default' => q(شلن أوغندي - 1966-1987),
+				'currency' => q(شلن أوغندي - 1966-1987),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(شلن أوغندي),
+				'currency' => q(شلن أوغندي),
 				'few' => q(شلن أوغندي),
 				'many' => q(شلن أوغندي),
 				'one' => q(شلن أوغندي),
@@ -4891,7 +4890,7 @@ has 'curriencies' => (
 		'USD' => {
 			symbol => 'US$',
 			display_name => {
-				'default' => q(دولار أمريكي),
+				'currency' => q(دولار أمريكي),
 				'few' => q(دولار أمريكي),
 				'many' => q(دولار أمريكي),
 				'one' => q(دولار أمريكي),
@@ -4902,27 +4901,27 @@ has 'curriencies' => (
 		},
 		'USN' => {
 			display_name => {
-				'default' => q(دولار أمريكي (اليوم التالي)‏),
+				'currency' => q(دولار أمريكي \(اليوم التالي\)‏),
 			},
 		},
 		'USS' => {
 			display_name => {
-				'default' => q(دولار أمريكي (نفس اليوم)‏),
+				'currency' => q(دولار أمريكي \(نفس اليوم\)‏),
 			},
 		},
 		'UYP' => {
 			display_name => {
-				'default' => q(بيزو أوروجواي - 1975-1993),
+				'currency' => q(بيزو أوروجواي - 1975-1993),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(بيزو اوروغواي),
+				'currency' => q(بيزو اوروغواي),
 			},
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(سوم أوزبكستاني),
+				'currency' => q(سوم أوزبكستاني),
 				'few' => q(سوم أوزبكستاني),
 				'many' => q(سوم أوزبكستاني),
 				'one' => q(سوم أوزبكستاني),
@@ -4933,18 +4932,18 @@ has 'curriencies' => (
 		},
 		'VEB' => {
 			display_name => {
-				'default' => q(بوليفار فنزويلي - 1871-2008),
+				'currency' => q(بوليفار فنزويلي - 1871-2008),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(بوليفار فنزويلي),
+				'currency' => q(بوليفار فنزويلي),
 			},
 		},
 		'VND' => {
 			symbol => '₫',
 			display_name => {
-				'default' => q(دونج فيتنامي),
+				'currency' => q(دونج فيتنامي),
 				'few' => q(دونج فيتنامي),
 				'many' => q(دونج فيتنامي),
 				'one' => q(دونج فيتنامي),
@@ -4955,18 +4954,18 @@ has 'curriencies' => (
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(فاتو فانواتو),
+				'currency' => q(فاتو فانواتو),
 			},
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(تالا ساموا),
+				'currency' => q(تالا ساموا),
 			},
 		},
 		'XAF' => {
 			symbol => 'FCFA',
 			display_name => {
-				'default' => q(فرنك أفريقي),
+				'currency' => q(فرنك أفريقي),
 				'few' => q(فرنك أفريقي),
 				'many' => q(فرنك أفريقي),
 				'one' => q(فرنك أفريقي),
@@ -4977,7 +4976,7 @@ has 'curriencies' => (
 		},
 		'XAG' => {
 			display_name => {
-				'default' => q(فضة),
+				'currency' => q(فضة),
 				'few' => q(فضة),
 				'many' => q(فضة),
 				'one' => q(فضة),
@@ -4988,7 +4987,7 @@ has 'curriencies' => (
 		},
 		'XAU' => {
 			display_name => {
-				'default' => q(ذهب),
+				'currency' => q(ذهب),
 				'few' => q(ذهب),
 				'many' => q(ذهب),
 				'one' => q(ذهب),
@@ -4999,7 +4998,7 @@ has 'curriencies' => (
 		},
 		'XBA' => {
 			display_name => {
-				'default' => q(الوحدة الأوروبية المركبة),
+				'currency' => q(الوحدة الأوروبية المركبة),
 				'few' => q(الوحدة الأوروبية المركبة),
 				'many' => q(الوحدة الأوروبية المركبة),
 				'one' => q(الوحدة الأوروبية المركبة),
@@ -5010,7 +5009,7 @@ has 'curriencies' => (
 		},
 		'XBB' => {
 			display_name => {
-				'default' => q(الوحدة المالية الأوروبية),
+				'currency' => q(الوحدة المالية الأوروبية),
 				'few' => q(الوحدة المالية الأوروبية),
 				'many' => q(الوحدة المالية الأوروبية),
 				'one' => q(الوحدة المالية الأوروبية),
@@ -5021,7 +5020,7 @@ has 'curriencies' => (
 		},
 		'XBC' => {
 			display_name => {
-				'default' => q(الوحدة الحسابية الأوروبية),
+				'currency' => q(الوحدة الحسابية الأوروبية),
 				'few' => q(الوحدة الحسابية الأوروبية),
 				'many' => q(الوحدة الحسابية الأوروبية),
 				'one' => q(الوحدة الحسابية الأوروبية),
@@ -5032,7 +5031,7 @@ has 'curriencies' => (
 		},
 		'XBD' => {
 			display_name => {
-				'default' => q((XBD)وحدة الحساب الأوروبية),
+				'currency' => q(\(XBD\)وحدة الحساب الأوروبية),
 				'few' => q(وحدة الحساب الأوروبية),
 				'many' => q(وحدة الحساب الأوروبية),
 				'one' => q(وحدة الحساب الأوروبية),
@@ -5044,7 +5043,7 @@ has 'curriencies' => (
 		'XCD' => {
 			symbol => 'EC$',
 			display_name => {
-				'default' => q(دولار شرق الكاريبي),
+				'currency' => q(دولار شرق الكاريبي),
 				'few' => q(دولار شرق الكاريبي),
 				'many' => q(دولار شرق الكاريبي),
 				'one' => q(دولار شرق الكاريبي),
@@ -5055,7 +5054,7 @@ has 'curriencies' => (
 		},
 		'XDR' => {
 			display_name => {
-				'default' => q(حقوق السحب الخاصة),
+				'currency' => q(حقوق السحب الخاصة),
 				'few' => q(حقوق السحب الخاصة),
 				'many' => q(حقوق السحب الخاصة),
 				'one' => q(حقوق السحب الخاصة),
@@ -5066,12 +5065,12 @@ has 'curriencies' => (
 		},
 		'XEU' => {
 			display_name => {
-				'default' => q(وحدة النقد الأوروبية),
+				'currency' => q(وحدة النقد الأوروبية),
 			},
 		},
 		'XFO' => {
 			display_name => {
-				'default' => q(فرنك فرنسي ذهبي),
+				'currency' => q(فرنك فرنسي ذهبي),
 				'few' => q(فرنك فرنسي ذهبي),
 				'many' => q(فرنك فرنسي ذهبي),
 				'one' => q(فرنك فرنسي ذهبي),
@@ -5082,35 +5081,35 @@ has 'curriencies' => (
 		},
 		'XFU' => {
 			display_name => {
-				'default' => q((UIC)فرنك فرنسي),
-				'few' => q((UIC)فرنك فرنسي),
-				'many' => q((UIC)فرنك فرنسي),
-				'one' => q((UIC)فرنك فرنسي),
-				'other' => q((UIC)فرنك فرنسي),
-				'two' => q((UIC)فرنك فرنسي),
-				'zero' => q((UIC)فرنك فرنسي),
+				'currency' => q(\(UIC\)فرنك فرنسي),
+				'few' => q(\(UIC\)فرنك فرنسي),
+				'many' => q(\(UIC\)فرنك فرنسي),
+				'one' => q(\(UIC\)فرنك فرنسي),
+				'other' => q(\(UIC\)فرنك فرنسي),
+				'two' => q(\(UIC\)فرنك فرنسي),
+				'zero' => q(\(UIC\)فرنك فرنسي),
 			},
 		},
 		'XOF' => {
 			symbol => 'CFA',
 			display_name => {
-				'default' => q(فرنك سي إف إيه غرب إفريقيا),
+				'currency' => q(فرنك سي إف إيه غرب إفريقيا),
 			},
 		},
 		'XPD' => {
 			display_name => {
-				'default' => q(بالاديوم),
+				'currency' => q(بالاديوم),
 			},
 		},
 		'XPF' => {
 			symbol => 'CFPF',
 			display_name => {
-				'default' => q(فرنك سي إف بي),
+				'currency' => q(فرنك سي إف بي),
 			},
 		},
 		'XPT' => {
 			display_name => {
-				'default' => q(البلاتين),
+				'currency' => q(البلاتين),
 				'few' => q(البلاتين),
 				'many' => q(البلاتين),
 				'one' => q(البلاتين),
@@ -5121,7 +5120,7 @@ has 'curriencies' => (
 		},
 		'XTS' => {
 			display_name => {
-				'default' => q(كود اختبار العملة),
+				'currency' => q(كود اختبار العملة),
 				'few' => q(كود اختبار العملة),
 				'many' => q(كود اختبار العملة),
 				'one' => q(كود اختبار العملة),
@@ -5133,7 +5132,7 @@ has 'curriencies' => (
 		'XXX' => {
 			symbol => '***',
 			display_name => {
-				'default' => q(عملة غير معروفة),
+				'currency' => q(عملة غير معروفة),
 				'few' => q(عملة غير معروفة),
 				'many' => q(عملة غير معروفة),
 				'one' => q(عملة غير معروفة),
@@ -5144,13 +5143,13 @@ has 'curriencies' => (
 		},
 		'YDD' => {
 			display_name => {
-				'default' => q(دينار يمني),
+				'currency' => q(دينار يمني),
 			},
 		},
 		'YER' => {
 			symbol => 'ر.ي.‏',
 			display_name => {
-				'default' => q(ريال يمني),
+				'currency' => q(ريال يمني),
 				'few' => q(ريال يمني),
 				'many' => q(ريال يمني),
 				'one' => q(ريال يمني),
@@ -5161,22 +5160,22 @@ has 'curriencies' => (
 		},
 		'YUD' => {
 			display_name => {
-				'default' => q(دينار يوغسلافي),
+				'currency' => q(دينار يوغسلافي),
 			},
 		},
 		'YUN' => {
 			display_name => {
-				'default' => q(دينار يوغسلافي قابل للتحويل),
+				'currency' => q(دينار يوغسلافي قابل للتحويل),
 			},
 		},
 		'ZAL' => {
 			display_name => {
-				'default' => q(راند جنوب أفريقيا -مالي),
+				'currency' => q(راند جنوب أفريقيا -مالي),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(راند جنوب أفريقيا),
+				'currency' => q(راند جنوب أفريقيا),
 				'few' => q(راند جنوب أفريقيا),
 				'many' => q(راند جنوب أفريقيا),
 				'one' => q(راند جنوب أفريقيا),
@@ -5187,7 +5186,7 @@ has 'curriencies' => (
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(كواشا زامبي - 1968-2012),
+				'currency' => q(كواشا زامبي - 1968-2012),
 				'few' => q(كواشا زامبي - 1968-2012),
 				'many' => q(كواشا زامبي - 1968-2012),
 				'one' => q(كواشا زامبي - 1968-2012),
@@ -5198,7 +5197,7 @@ has 'curriencies' => (
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(كواشا زامبي),
+				'currency' => q(كواشا زامبي),
 				'few' => q(كواشا زامبي),
 				'many' => q(كواشا زامبي),
 				'one' => q(كواشا زامبي),
@@ -5209,7 +5208,7 @@ has 'curriencies' => (
 		},
 		'ZRN' => {
 			display_name => {
-				'default' => q(زائير زائيري جديد),
+				'currency' => q(زائير زائيري جديد),
 				'few' => q(زائير زائيري جديد),
 				'many' => q(زائير زائيري جديد),
 				'one' => q(زائير زائيري جديد),
@@ -5220,7 +5219,7 @@ has 'curriencies' => (
 		},
 		'ZRZ' => {
 			display_name => {
-				'default' => q(زائير زائيري),
+				'currency' => q(زائير زائيري),
 				'few' => q(زائير زائيري),
 				'many' => q(زائير زائيري),
 				'one' => q(زائير زائيري),
@@ -5231,7 +5230,7 @@ has 'curriencies' => (
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(دولار زمبابوي),
+				'currency' => q(دولار زمبابوي),
 				'few' => q(دولار زمبابوي),
 				'many' => q(دولار زمبابوي),
 				'one' => q(دولار زمبابوي),
@@ -5242,7 +5241,7 @@ has 'curriencies' => (
 		},
 		'ZWL' => {
 			display_name => {
-				'default' => q(دولار زمبابوي 2009),
+				'currency' => q(دولار زمبابوي 2009),
 			},
 		},
 	} },
@@ -5778,8 +5777,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{ص},
 					'pm' => q{م},
+					'am' => q{ص},
 				},
 			},
 		},
@@ -6191,47 +6190,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			Ed => q{E، d},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E، d MMM، y G},
-			GyMMMd => q{d MMM، y G},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E، d/M},
-			MMM => q{LLL},
-			MMMEd => q{E، d MMM},
-			MMMd => q{d MMM},
-			Md => q{d/‏M},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y G},
-			yyyy => q{y G},
-			yyyyM => q{M‏/y G},
-			yyyyMEd => q{E، d/‏M/‏y G},
-			yyyyMMM => q{MMM، y G},
-			yyyyMMMEd => q{E، d MMM، y G},
-			yyyyMMMM => q{MMMM، y G},
-			yyyyMMMd => q{d MMM، y G},
-			yyyyMd => q{d‏/M‏/y G},
-			yyyyQQQ => q{QQQ y G},
-			yyyyQQQQ => q{QQQQ y G},
-		},
-		'islamic' => {
-			M => q{L},
-			Md => q{d/‏M},
-			d => q{d},
-			yyyyM => q{M‏/y G},
-			yyyyMEd => q{E، d/‏M/‏y G},
-			yyyyMMM => q{MMM y G},
-			yyyyMd => q{d‏/M‏/y G},
-		},
 		'gregorian' => {
 			EHm => q{E HH:mm},
 			EHms => q{E HH:mm:ss},
@@ -6271,6 +6229,47 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
+		'islamic' => {
+			M => q{L},
+			Md => q{d/‏M},
+			d => q{d},
+			yyyyM => q{M‏/y G},
+			yyyyMEd => q{E، d/‏M/‏y G},
+			yyyyMMM => q{MMM y G},
+			yyyyMd => q{d‏/M‏/y G},
+		},
+		'generic' => {
+			Ed => q{E، d},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E، d MMM، y G},
+			GyMMMd => q{d MMM، y G},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E، d/M},
+			MMM => q{LLL},
+			MMMEd => q{E، d MMM},
+			MMMd => q{d MMM},
+			Md => q{d/‏M},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y G},
+			yyyy => q{y G},
+			yyyyM => q{M‏/y G},
+			yyyyMEd => q{E، d/‏M/‏y G},
+			yyyyMMM => q{MMM، y G},
+			yyyyMMMEd => q{E، d MMM، y G},
+			yyyyMMMM => q{MMMM، y G},
+			yyyyMMMd => q{d MMM، y G},
+			yyyyMd => q{d‏/M‏/y G},
+			yyyyQQQ => q{QQQ y G},
+			yyyyQQQQ => q{QQQQ y G},
+		},
 	} },
 );
 
@@ -6290,104 +6289,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			H => {
-				H => q{HH–HH},
-			},
-			Hm => {
-				H => q{HH:mm–HH:mm},
-				m => q{HH:mm–HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm–HH:mm v},
-				m => q{HH:mm–HH:mm v},
-			},
-			Hv => {
-				H => q{HH–HH v},
-			},
-			M => {
-				M => q{M–M},
-			},
-			MEd => {
-				M => q{E، d/‏M – E، d/‏M},
-				d => q{E، d/‏M –‏ E، d/‏M},
-			},
-			MMM => {
-				M => q{MMM–MMM},
-			},
-			MMMEd => {
-				M => q{E، d MMM – E، d MMM},
-				d => q{E، d – E، d MMM},
-			},
-			MMMM => {
-				M => q{LLLL–LLLL},
-			},
-			MMMd => {
-				M => q{d MMM – d MMM},
-				d => q{MMM d–d},
-			},
-			Md => {
-				M => q{M/d – M/d},
-				d => q{M/d – M/d},
-			},
-			d => {
-				d => q{d–d},
-			},
-			fallback => '{0} – {1}',
-			h => {
-				a => q{h a – h a},
-				h => q{h–h a},
-			},
-			hm => {
-				a => q{h:mm a – h:mm a},
-				h => q{h:mm–h:mm a},
-				m => q{h:mm–h:mm a},
-			},
-			hmv => {
-				a => q{h:mm a – h:mm a v},
-				h => q{h:mm–h:mm a v},
-				m => q{h:mm–h:mm a v},
-			},
-			hv => {
-				a => q{h a – h a v},
-				h => q{h–h a v},
-			},
-			y => {
-				y => q{y–y G},
-			},
-			yM => {
-				M => q{M‏/y – M‏/y G},
-				y => q{M‏/y – M‏/y G},
-			},
-			yMEd => {
-				M => q{E، d‏/M‏/y – E، d‏/M‏/y G},
-				d => q{E، dd‏/MM‏/y – E، dd‏/MM‏/y G},
-				y => q{E، d‏/M‏/y – E، d‏/M‏/y G},
-			},
-			yMMM => {
-				M => q{MMM – MMM، y G},
-				y => q{MMM، y – MMM، y G},
-			},
-			yMMMEd => {
-				M => q{E، d MMM – E، d MMM، y G},
-				d => q{E، d – E، d MMM، y G},
-				y => q{E، d MMM، y – E، d MMM، y G},
-			},
-			yMMMM => {
-				M => q{MMMM – MMMM، y G},
-				y => q{MMMM، y – MMMM، y G},
-			},
-			yMMMd => {
-				M => q{d MMM – d MMM، y G},
-				d => q{d–d MMM، y G},
-				y => q{d MMM، y – d MMM، y G},
-			},
-			yMd => {
-				M => q{d‏/M‏/y – d‏/M‏/y G},
-				d => q{d‏/M‏/y – d‏/M‏/y G},
-				y => q{d‏/M‏/y – d‏/M‏/y G},
-			},
-		},
 		'gregorian' => {
 			H => {
 				H => q{HH–HH},
@@ -6484,6 +6385,104 @@ has 'datetime_formats_interval' => (
 				M => q{d‏/M‏/y – d‏/M‏/y},
 				d => q{d‏/M‏/y – d‏/M‏/y},
 				y => q{d‏/M‏/y – d‏/M‏/y},
+			},
+		},
+		'generic' => {
+			H => {
+				H => q{HH–HH},
+			},
+			Hm => {
+				H => q{HH:mm–HH:mm},
+				m => q{HH:mm–HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm–HH:mm v},
+				m => q{HH:mm–HH:mm v},
+			},
+			Hv => {
+				H => q{HH–HH v},
+			},
+			M => {
+				M => q{M–M},
+			},
+			MEd => {
+				M => q{E، d/‏M – E، d/‏M},
+				d => q{E، d/‏M –‏ E، d/‏M},
+			},
+			MMM => {
+				M => q{MMM–MMM},
+			},
+			MMMEd => {
+				M => q{E، d MMM – E، d MMM},
+				d => q{E، d – E، d MMM},
+			},
+			MMMM => {
+				M => q{LLLL–LLLL},
+			},
+			MMMd => {
+				M => q{d MMM – d MMM},
+				d => q{MMM d–d},
+			},
+			Md => {
+				M => q{M/d – M/d},
+				d => q{M/d – M/d},
+			},
+			d => {
+				d => q{d–d},
+			},
+			fallback => '{0} – {1}',
+			h => {
+				a => q{h a – h a},
+				h => q{h–h a},
+			},
+			hm => {
+				a => q{h:mm a – h:mm a},
+				h => q{h:mm–h:mm a},
+				m => q{h:mm–h:mm a},
+			},
+			hmv => {
+				a => q{h:mm a – h:mm a v},
+				h => q{h:mm–h:mm a v},
+				m => q{h:mm–h:mm a v},
+			},
+			hv => {
+				a => q{h a – h a v},
+				h => q{h–h a v},
+			},
+			y => {
+				y => q{y–y G},
+			},
+			yM => {
+				M => q{M‏/y – M‏/y G},
+				y => q{M‏/y – M‏/y G},
+			},
+			yMEd => {
+				M => q{E، d‏/M‏/y – E، d‏/M‏/y G},
+				d => q{E، dd‏/MM‏/y – E، dd‏/MM‏/y G},
+				y => q{E، d‏/M‏/y – E، d‏/M‏/y G},
+			},
+			yMMM => {
+				M => q{MMM – MMM، y G},
+				y => q{MMM، y – MMM، y G},
+			},
+			yMMMEd => {
+				M => q{E، d MMM – E، d MMM، y G},
+				d => q{E، d – E، d MMM، y G},
+				y => q{E، d MMM، y – E، d MMM، y G},
+			},
+			yMMMM => {
+				M => q{MMMM – MMMM، y G},
+				y => q{MMMM، y – MMMM، y G},
+			},
+			yMMMd => {
+				M => q{d MMM – d MMM، y G},
+				d => q{d–d MMM، y G},
+				y => q{d MMM، y – d MMM، y G},
+			},
+			yMd => {
+				M => q{d‏/M‏/y – d‏/M‏/y G},
+				d => q{d‏/M‏/y – d‏/M‏/y G},
+				y => q{d‏/M‏/y – d‏/M‏/y G},
 			},
 		},
 	} },

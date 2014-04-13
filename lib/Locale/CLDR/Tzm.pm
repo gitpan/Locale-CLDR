@@ -1,6 +1,6 @@
-package Locale::CLDR::Tzm;
+package Locale::CLDR::Tzm v0.0.4;
 # This file auto generated from Data\common\main\tzm.xml
-#	on Mon 31 Mar  2:15:43 am GMT
+#	on Sun 13 Apr 12:16:47 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -410,282 +410,282 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Derhem Uymarati),
+				'currency' => q(Derhem Uymarati),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Kwanza Unguli),
+				'currency' => q(Kwanza Unguli),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Ḍular Usṭrali),
+				'currency' => q(Ḍular Usṭrali),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Ḍinar Ubaḥrayni),
+				'currency' => q(Ḍinar Ubaḥrayni),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Frank Uburundi),
+				'currency' => q(Frank Uburundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Pula Ubutswani),
+				'currency' => q(Pula Ubutswani),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Ḍular Ukanadi),
+				'currency' => q(Ḍular Ukanadi),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Frank Ukunguli),
+				'currency' => q(Frank Ukunguli),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Frank Uswisri),
+				'currency' => q(Frank Uswisri),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Ywan Renminbi Ucinwi),
+				'currency' => q(Ywan Renminbi Ucinwi),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Iskudu Ukabuvirdyani),
+				'currency' => q(Iskudu Ukabuvirdyani),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Frank Uğibuti),
+				'currency' => q(Frank Uğibuti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Ḍinar Udzayri),
+				'currency' => q(Ḍinar Udzayri),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Junih Umiṣṛi),
+				'currency' => q(Junih Umiṣṛi),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Nakfa Uyritri),
+				'currency' => q(Nakfa Uyritri),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Birr Uyityuppi),
+				'currency' => q(Birr Uyityuppi),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Uṛu),
+				'currency' => q(Uṛu),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Junih Usterlini Ubriṭani),
+				'currency' => q(Junih Usterlini Ubriṭani),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Sidi Uɣani),
+				'currency' => q(Sidi Uɣani),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Dalasi Agambi),
+				'currency' => q(Dalasi Agambi),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Frank Uɣini),
+				'currency' => q(Frank Uɣini),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Rupi Uḥindi),
+				'currency' => q(Rupi Uḥindi),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Yann Ujappuni),
+				'currency' => q(Yann Ujappuni),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Cillin Ukini),
+				'currency' => q(Cillin Ukini),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Frank Uqumuri),
+				'currency' => q(Frank Uqumuri),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Ḍular Ulibiri),
+				'currency' => q(Ḍular Ulibiri),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Luti Ulusuṭi),
+				'currency' => q(Luti Ulusuṭi),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Ḍinar Ulibi),
+				'currency' => q(Ḍinar Ulibi),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Derhem Umeṛṛuki),
+				'currency' => q(Derhem Umeṛṛuki),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Aryari Umalɣaci),
+				'currency' => q(Aryari Umalɣaci),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Uqiyya Umuritani),
+				'currency' => q(Uqiyya Umuritani),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Rupi Umurisi),
+				'currency' => q(Rupi Umurisi),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Kwača Umalawi),
+				'currency' => q(Kwača Umalawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Mitikal Umuzambiqi),
+				'currency' => q(Mitikal Umuzambiqi),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Ḍular Unamibi),
+				'currency' => q(Ḍular Unamibi),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Nayra Unijiri),
+				'currency' => q(Nayra Unijiri),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Frank Urwandi),
+				'currency' => q(Frank Urwandi),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Ryal Usaεudi),
+				'currency' => q(Ryal Usaεudi),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Rupi Usicili),
+				'currency' => q(Rupi Usicili),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Junih Usudani),
+				'currency' => q(Junih Usudani),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(Junih Usudani (1956–2007)),
+				'currency' => q(Junih Usudani \(1956–2007\)),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Junih Usantehilini),
+				'currency' => q(Junih Usantehilini),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Lyun Usirralyuni),
+				'currency' => q(Lyun Usirralyuni),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Cilin Uṣumali),
+				'currency' => q(Cilin Uṣumali),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Dubra Usawṭumi),
+				'currency' => q(Dubra Usawṭumi),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lilanjini Uswazi),
+				'currency' => q(Lilanjini Uswazi),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Ḍinar Utunsi),
+				'currency' => q(Ḍinar Utunsi),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Cilin Uṭanzani),
+				'currency' => q(Cilin Uṭanzani),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Cilin Uɣandi (1966–1987)),
+				'currency' => q(Cilin Uɣandi \(1966–1987\)),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Ḍular Umirikani),
+				'currency' => q(Ḍular Umirikani),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Frank CFA (BEAC)),
+				'currency' => q(Frank CFA \(BEAC\)),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Frank CFA (BCEAO)),
+				'currency' => q(Frank CFA \(BCEAO\)),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Rand Ufriki Unzul),
+				'currency' => q(Rand Ufriki Unzul),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Kwača Uzambi (1968–2012)),
+				'currency' => q(Kwača Uzambi \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Kwača Uzambi),
+				'currency' => q(Kwača Uzambi),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Ḍular Uzimbabwi),
+				'currency' => q(Ḍular Uzimbabwi),
 			},
 		},
 	} },
@@ -915,7 +915,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -938,7 +938,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -980,3 +980,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

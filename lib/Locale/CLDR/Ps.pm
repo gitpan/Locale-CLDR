@@ -1,6 +1,6 @@
-package Locale::CLDR::Ps;
+package Locale::CLDR::Ps v0.0.4;
 # This file auto generated from Data\common\main\ps.xml
-#	on Mon 31 Mar  1:40:01 am GMT
+#	on Sun 13 Apr 11:40:13 am GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use v5.18;
@@ -251,3 +251,309 @@ has 'characters' => (
 	},
 );
 
+has 'default_numbering_system' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'arabext',
+);
+
+has native_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'arabext',
+);
+
+has 'number_symbols' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'arabext' => {
+			'decimal' => q(٫),
+			'exponential' => q(×۱۰^),
+			'group' => q(٬),
+			'infinity' => q(),
+			'list' => q(),
+			'minusSign' => q(),
+			'nan' => q(),
+			'perMille' => q(),
+			'percentSign' => q(٪),
+			'plusSign' => q(),
+			'superscriptingExponent' => q(),
+		},
+		'latn' => {
+			'decimal' => q(,),
+			'exponential' => q(E),
+			'group' => q(.),
+			'infinity' => q(),
+			'list' => q(),
+			'minusSign' => q(‎−),
+			'nan' => q(),
+			'perMille' => q(),
+			'percentSign' => q(%),
+			'plusSign' => q(‎+),
+			'superscriptingExponent' => q(),
+		},
+	} }
+);
+
+has 'number_currency_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'pattern' => {
+				'default' => {
+					'standard' => {
+						'negative' => '#,##0.00 ¤',
+						'positive' => '#,##0.00 ¤',
+					},
+				},
+			},
+		},
+} },
+);
+
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'AFN' => {
+			symbol => '؋',
+			display_name => {
+				'currency' => q(افغانۍ),
+			},
+		},
+	} },
+);
+
+
+has 'calendar_months' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					wide => {
+						nonleap => [
+							'جنوري',
+							'فبروري',
+							'مارچ',
+							'اپریل',
+							'می',
+							'جون',
+							'جولای',
+							'اګست',
+							'سپتمبر',
+							'اکتوبر',
+							'نومبر',
+							'دسمبر'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+			'persian' => {
+				'format' => {
+					wide => {
+						nonleap => [
+							'وری',
+							'غویی',
+							'غبرګولی',
+							'چنګاښ',
+							'زمری',
+							'وږی',
+							'تله',
+							'لړم',
+							'لیندۍ',
+							'مرغومی',
+							'سلواغه',
+							'کب'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_days' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					wide => {
+						mon => 'دوشنبه',
+						tue => 'سه‌شنبه',
+						wed => 'چهارشنبه',
+						thu => 'پنجشنبه',
+						fri => 'جمعه',
+						sat => 'شنبه',
+						sun => 'یکشنبه'
+					},
+				},
+			},
+	} },
+);
+
+has 'day_periods' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			'format' => {
+				'wide' => {
+					'pm' => q{غ.و.},
+					'am' => q{غ.م.},
+				},
+			},
+		},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			abbreviated => {
+				'0' => 'ق.م.',
+				'1' => 'م.'
+			},
+		},
+		'persian' => {
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			'full' => q{EEEE د G y د MMMM d},
+			'long' => q{د G y د MMMM d},
+			'medium' => q{d MMM y G},
+			'short' => q{GGGGG y/M/d},
+		},
+		'gregorian' => {
+			'full' => q{EEEE د y د MMMM d},
+			'long' => q{د y د MMMM d},
+			'medium' => q{d MMM y},
+			'short' => q{y/M/d},
+		},
+		'persian' => {
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			'full' => q{H:mm:ss (zzzz)},
+			'long' => q{H:mm:ss (z)},
+			'medium' => q{H:mm:ss},
+			'short' => q{H:mm},
+		},
+		'persian' => {
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+		'persian' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			H => q{H},
+			Hm => q{H:mm},
+			Hms => q{H:mm:ss},
+			MMMMd => q{d MMMM},
+			Md => q{M/d},
+			yM => q{y/M},
+			yMMMM => q{د y د MMMM},
+		},
+		'generic' => {
+			H => q{H},
+			Hm => q{H:mm},
+			Hms => q{H:mm:ss},
+			MMMMd => q{d MMMM},
+			Md => q{M/d},
+			yM => q{G y/M},
+			yMMMM => q{د G y د MMMM},
+		},
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			'Timezone' => '{0} ({1})',
+		},
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'time_zone_names' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default	=> sub { {
+		regionFormat => q(د {0} په وخت),
+		'Asia/Kabul' => {
+			exemplarCity => q#کابل#,
+		},
+	 } }
+);
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

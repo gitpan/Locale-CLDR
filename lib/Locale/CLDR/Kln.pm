@@ -1,6 +1,6 @@
-package Locale::CLDR::Kln;
+package Locale::CLDR::Kln v0.0.4;
 # This file auto generated from Data\common\main\kln.xml
-#	on Mon 31 Mar 12:55:45 am GMT
+#	on Sun 13 Apr 10:54:55 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -364,9 +364,6 @@ has 'nostr' => (
 	default		=> sub { qr'^(?i:Achicha|A|no|n)$' }
 );
 
-	} }
-);
-
 has 'number_currency_formats' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -396,278 +393,278 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Rabisiekab Kibagegeitab arabuk),
+				'currency' => q(Rabisiekab Kibagegeitab arabuk),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Rabisiekab Angolan),
+				'currency' => q(Rabisiekab Angolan),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Dolaitab Australian),
+				'currency' => q(Dolaitab Australian),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Rabisiekab Bahrain),
+				'currency' => q(Rabisiekab Bahrain),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Rabisiekab Burundi),
+				'currency' => q(Rabisiekab Burundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Rabisiekab Botswana),
+				'currency' => q(Rabisiekab Botswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Dolaitab Kanada),
+				'currency' => q(Dolaitab Kanada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Rabisiekab Congo),
+				'currency' => q(Rabisiekab Congo),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Rabisiekab Swiss),
+				'currency' => q(Rabisiekab Swiss),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Rabisiekab China),
+				'currency' => q(Rabisiekab China),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Rabisiekab Kepuvede),
+				'currency' => q(Rabisiekab Kepuvede),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Rabisiekab Jibuti),
+				'currency' => q(Rabisiekab Jibuti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Rabisiekab Algerian),
+				'currency' => q(Rabisiekab Algerian),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Pauditab Misri),
+				'currency' => q(Pauditab Misri),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Rabisiekab Eritrea),
+				'currency' => q(Rabisiekab Eritrea),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Rabisiekab Ethiopia),
+				'currency' => q(Rabisiekab Ethiopia),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Yuroit),
+				'currency' => q(Yuroit),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(pounditab Uingereza),
+				'currency' => q(pounditab Uingereza),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Rabisiekab Ghana),
+				'currency' => q(Rabisiekab Ghana),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Rabisiekab Gambia),
+				'currency' => q(Rabisiekab Gambia),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Rabisiekab Guinea),
+				'currency' => q(Rabisiekab Guinea),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Rabisiekab India),
+				'currency' => q(Rabisiekab India),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Rabisiekab Japan),
+				'currency' => q(Rabisiekab Japan),
 			},
 		},
 		'KES' => {
 			symbol => 'Ksh',
 			display_name => {
-				'default' => q(Silingitab ya Kenya),
+				'currency' => q(Silingitab ya Kenya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Rabisiekab Komoro),
+				'currency' => q(Rabisiekab Komoro),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Dolaitab Liberia),
+				'currency' => q(Dolaitab Liberia),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Rabisiekab Lesoto),
+				'currency' => q(Rabisiekab Lesoto),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Rabisiekab Libya),
+				'currency' => q(Rabisiekab Libya),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Rabisiekab Moroccan),
+				'currency' => q(Rabisiekab Moroccan),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Rabisiekab Malagasy),
+				'currency' => q(Rabisiekab Malagasy),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Rabisiekab Mauritania),
+				'currency' => q(Rabisiekab Mauritania),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Rabisiekab Mauritius),
+				'currency' => q(Rabisiekab Mauritius),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Rabisiekaby Malawi),
+				'currency' => q(Rabisiekaby Malawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Rabisiekab Msumbiji),
+				'currency' => q(Rabisiekab Msumbiji),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Dolaitab Namibia),
+				'currency' => q(Dolaitab Namibia),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Rabisiekab Nigeria),
+				'currency' => q(Rabisiekab Nigeria),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Rabisiekab Rwanda),
+				'currency' => q(Rabisiekab Rwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Rabisiekab Saudia),
+				'currency' => q(Rabisiekab Saudia),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Rabisiekab Shelisheli),
+				'currency' => q(Rabisiekab Shelisheli),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Pouditab Sudan),
+				'currency' => q(Pouditab Sudan),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Pouditab helena ne tilil),
+				'currency' => q(Pouditab helena ne tilil),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Leonit),
+				'currency' => q(Leonit),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(siligitab Somalia),
+				'currency' => q(siligitab Somalia),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Rabisiekab Sao Tome ak Principe),
+				'currency' => q(Rabisiekab Sao Tome ak Principe),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lilangenit),
+				'currency' => q(Lilangenit),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(RabisiekabTunisia),
+				'currency' => q(RabisiekabTunisia),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(silingitab Tanzania),
+				'currency' => q(silingitab Tanzania),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Silingitab Uganda),
+				'currency' => q(Silingitab Uganda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Dolaitab ya Amareka),
+				'currency' => q(Dolaitab ya Amareka),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Rabisiekab CFA BEAC),
+				'currency' => q(Rabisiekab CFA BEAC),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Rabisiekab CFA BCEAO),
+				'currency' => q(Rabisiekab CFA BCEAO),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Randitab Afrika nebo murot tai),
+				'currency' => q(Randitab Afrika nebo murot tai),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Kwachaitab Zambia (1968–2012)),
+				'currency' => q(Kwachaitab Zambia \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Kwachaitab Zambia),
+				'currency' => q(Kwachaitab Zambia),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Dolaitab ya Zimbabwe),
+				'currency' => q(Dolaitab ya Zimbabwe),
 			},
 		},
 	} },
@@ -815,13 +812,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'pm' => q{Kemo},
-					'am' => q{Beet},
-				},
 				'abbreviated' => {
 					'pm' => q{KE},
 					'am' => q{BE},
+				},
+				'wide' => {
+					'pm' => q{Kemo},
+					'am' => q{Beet},
 				},
 			},
 		},
@@ -901,7 +898,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -924,7 +921,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -966,3 +963,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

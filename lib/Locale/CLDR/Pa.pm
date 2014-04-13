@@ -1,6 +1,6 @@
-package Locale::CLDR::Pa;
+package Locale::CLDR::Pa v0.0.4;
 # This file auto generated from Data\common\main\pa.xml
-#	on Mon 31 Mar  1:36:12 am GMT
+#	on Sun 13 Apr 11:36:20 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -873,7 +873,7 @@ has 'units' => (
 						'other' => q({0} ਆਉਂਸ),
 					},
 					'per' => {
-						'default' => q({0} ਪ੍ਰਤੀ {1}),
+						'' => q({0} ਪ੍ਰਤੀ {1}),
 					},
 					'picometer' => {
 						'one' => q({0} ਪਿਕੋਮੀਟਰ),
@@ -1062,7 +1062,7 @@ has 'units' => (
 						'other' => q({0} ਆਉਂਸ),
 					},
 					'per' => {
-						'default' => q({0} ਪ੍ਰਤੀ {1}),
+						'' => q({0} ਪ੍ਰਤੀ {1}),
 					},
 					'picometer' => {
 						'one' => q({0} ਪਿਕੋਮੀਟਰ),
@@ -1251,7 +1251,7 @@ has 'units' => (
 						'other' => q({0} ਆਉਂਸ),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'one' => q({0} ਪਿਕੋਮੀਟਰ),
@@ -1300,7 +1300,6 @@ has 'units' => (
 				},
 			} }
 );
-
 
 has 'yesstr' => (
 	is			=> 'ro',
@@ -1592,49 +1591,49 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(ਸੰਯੁਕਤ ਅਰਬ ਅਮੀਰਾਤ ਦਿਰਹਾਮ),
+				'currency' => q(ਸੰਯੁਕਤ ਅਰਬ ਅਮੀਰਾਤ ਦਿਰਹਾਮ),
 				'one' => q(ਸੰਯੁਕਤ ਅਰਬ ਅਮੀਰਾਤ ਦਿਰਹਾਮ),
 				'other' => q(ਸੰਯੁਕਤ ਅਰਬ ਅਮੀਰਾਤ ਦਿਰਹਾਮ),
 			},
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(ਅਫ਼ਗਾਨ ਅਫ਼ਗਾਨੀ),
+				'currency' => q(ਅਫ਼ਗਾਨ ਅਫ਼ਗਾਨੀ),
 				'one' => q(ਅਫ਼ਗਾਨ ਅਫ਼ਗਾਨੀ),
 				'other' => q(ਅਫ਼ਗਾਨ ਅਫ਼ਗਾਨੀ),
 			},
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(ਅਲਬਾਨੀਆਈ ਲੇਕ),
+				'currency' => q(ਅਲਬਾਨੀਆਈ ਲੇਕ),
 				'one' => q(ਅਲਬਾਨੀਆਈ ਲੇਕ),
 				'other' => q(ਅਲਬਾਨੀਆਈ ਲੇਕ),
 			},
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(ਆਰਮੀਨਿਆਈ ਦਰਮ),
+				'currency' => q(ਆਰਮੀਨਿਆਈ ਦਰਮ),
 				'one' => q(ਆਰਮੀਨਿਆਈ ਦਰਮ),
 				'other' => q(ਆਰਮੀਨਿਆਈ ਦਰਮ),
 			},
 		},
 		'ANG' => {
 			display_name => {
-				'default' => q(ਨੀਦਰਲੈਂਡਸ ਐਂਟੀਲੀਅਨ ਗਿਲਡਰ),
+				'currency' => q(ਨੀਦਰਲੈਂਡਸ ਐਂਟੀਲੀਅਨ ਗਿਲਡਰ),
 				'one' => q(ਨੀਦਰਲੈਂਡਸ ਐਂਟੀਲੀਅਨ ਗਿਲਡਰ),
 				'other' => q(ਨੀਦਰਲੈਂਡਸ ਐਂਟੀਲੀਅਨ ਗਿਲਡਰ),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(ਅੰਗੋਲਾ ਕਵਾਂਜਾ),
+				'currency' => q(ਅੰਗੋਲਾ ਕਵਾਂਜਾ),
 				'one' => q(ਅੰਗੋਲਾ ਕਵਾਂਜਾ),
 				'other' => q(ਅੰਗੋਲਾ ਕਵਾਂਜਾ),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(ਅਰਜਨਟਾਈਨ ਪੈਸੋ),
+				'currency' => q(ਅਰਜਨਟਾਈਨ ਪੈਸੋ),
 				'one' => q(ਅਰਜਨਟਾਈਨ ਪੈਸੋ),
 				'other' => q(ਅਰਜਨਟਾਈਨ ਪੈਸੋ),
 			},
@@ -1642,84 +1641,84 @@ has 'curriencies' => (
 		'AUD' => {
 			symbol => 'A$',
 			display_name => {
-				'default' => q(ਆਸਟ੍ਰੇਲੀਆਈ ਡਾਲਰ),
+				'currency' => q(ਆਸਟ੍ਰੇਲੀਆਈ ਡਾਲਰ),
 				'one' => q(ਆਸਟ੍ਰੇਲੀਆਈ ਡਾਲਰ),
 				'other' => q(ਆਸਟ੍ਰੇਲੀਆਈ ਡਾਲਰ),
 			},
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(ਅਰੂਬਨ ਫਲੋਰਿਨ),
+				'currency' => q(ਅਰੂਬਨ ਫਲੋਰਿਨ),
 				'one' => q(ਅਰੂਬਨ ਫਲੋਰਿਨ),
 				'other' => q(ਅਰੂਬਨ ਫਲੋਰਿਨ),
 			},
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(ਅਜ਼ਰਬੈਜਾਨੀ ਮਾਨਤ),
+				'currency' => q(ਅਜ਼ਰਬੈਜਾਨੀ ਮਾਨਤ),
 				'one' => q(ਅਜ਼ਰਬੈਜਾਨੀ ਮਾਨਤ),
 				'other' => q(ਅਜ਼ਰਬੈਜਾਨੀ ਮਾਨਤ),
 			},
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(ਬੋਸਨੀਆ-ਹਰਜ਼ੇਗੋਵੀਨਾ ਬਦਲਣ੍ਯੋਗ ਮਾਰਕ),
+				'currency' => q(ਬੋਸਨੀਆ-ਹਰਜ਼ੇਗੋਵੀਨਾ ਬਦਲਣ੍ਯੋਗ ਮਾਰਕ),
 				'one' => q(ਬੋਸਨੀਆ-ਹਰਜ਼ੇਗੋਵੀਨਾ ਬਦਲਣ੍ਯੋਗ ਮਾਰਕ),
 				'other' => q(ਬੋਸਨੀਆ-ਹਰਜ਼ੇਗੋਵੀਨਾ ਬਦਲਣ੍ਯੋਗ ਮਾਰਕ),
 			},
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(ਬਾਰਬਾਡੀਅਨ ਡਾਲਰ),
+				'currency' => q(ਬਾਰਬਾਡੀਅਨ ਡਾਲਰ),
 				'one' => q(ਬਾਰਬਾਡੀਅਨ ਡਾਲਰ),
 				'other' => q(ਬਾਰਬਾਡੀਅਨ ਡਾਲਰ),
 			},
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(ਬੰਗਲਾਦੇਸ਼ੀ ਟਕਾ),
+				'currency' => q(ਬੰਗਲਾਦੇਸ਼ੀ ਟਕਾ),
 				'one' => q(ਬੰਗਲਾਦੇਸ਼ੀ ਟਕਾ),
 				'other' => q(ਬੰਗਲਾਦੇਸ਼ੀ ਟਕਾ),
 			},
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(ਬੁਲਗਾਰਿਆਈ ਲੇਵ),
+				'currency' => q(ਬੁਲਗਾਰਿਆਈ ਲੇਵ),
 				'one' => q(ਬੁਲਗਾਰਿਆਈ ਲੇਵ),
 				'other' => q(ਬੁਲਗਾਰਿਆਈ ਲੇਵ),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(ਬਹਿਰੀਨੀ ਦਿਨਾਰ),
+				'currency' => q(ਬਹਿਰੀਨੀ ਦਿਨਾਰ),
 				'one' => q(ਬਹਿਰੀਨੀ ਦਿਨਾਰ),
 				'other' => q(ਬਹਿਰੀਨੀ ਦਿਨਾਰ),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(ਬੁਰੁੰਡੀਆਈ ਫ੍ਰੈਂਕ),
+				'currency' => q(ਬੁਰੁੰਡੀਆਈ ਫ੍ਰੈਂਕ),
 				'one' => q(ਬੁਰੁੰਡੀਆਈ ਫ੍ਰੈਂਕ),
 				'other' => q(ਬੁਰੁੰਡੀਆਈ ਫ੍ਰੈਂਕ),
 			},
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(ਬਰਮੂਡਾ ਡਾਲਰ),
+				'currency' => q(ਬਰਮੂਡਾ ਡਾਲਰ),
 				'one' => q(ਬਰਮੂਡਾ ਡਾਲਰ),
 				'other' => q(ਬਰਮੂਡਾ ਡਾਲਰ),
 			},
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(ਬਰੂਨੇਈ ਡਾਲਰ),
+				'currency' => q(ਬਰੂਨੇਈ ਡਾਲਰ),
 				'one' => q(ਬਰੂਨੇਈ ਡਾਲਰ),
 				'other' => q(ਬਰੂਨੇਈ ਡਾਲਰ),
 			},
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(ਬੋਲੀਵੀਅਨ ਬੋਲੀਵੀਅਨੋ),
+				'currency' => q(ਬੋਲੀਵੀਅਨ ਬੋਲੀਵੀਅਨੋ),
 				'one' => q(ਬੋਲੀਵੀਅਨ ਬੋਲੀਵੀਅਨੋ),
 				'other' => q(ਬੋਲੀਵੀਅਨ ਬੋਲੀਵੀਅਨੋ),
 			},
@@ -1727,42 +1726,42 @@ has 'curriencies' => (
 		'BRL' => {
 			symbol => 'R$',
 			display_name => {
-				'default' => q(ਬ੍ਰਾਜ਼ਿਲਿਆਈ ਰੀਅਲ),
+				'currency' => q(ਬ੍ਰਾਜ਼ਿਲਿਆਈ ਰੀਅਲ),
 				'one' => q(ਬ੍ਰਾਜ਼ਿਲਿਆਈ ਰੀਅਲ),
 				'other' => q(ਬ੍ਰਾਜ਼ਿਲਿਆਈ ਰੀਅਲ),
 			},
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(ਬਾਹਾਮੀਅਨ ਡਾਲਰ),
+				'currency' => q(ਬਾਹਾਮੀਅਨ ਡਾਲਰ),
 				'one' => q(ਬਾਹਾਮੀਅਨ ਡਾਲਰ),
 				'other' => q(ਬਾਹਾਮੀਅਨ ਡਾਲਰ),
 			},
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(ਭੂਟਾਨੀ ਐਂਗਲਟ੍ਰਮ),
+				'currency' => q(ਭੂਟਾਨੀ ਐਂਗਲਟ੍ਰਮ),
 				'one' => q(ਭੂਟਾਨੀ ਐਂਗਲਟ੍ਰਮ),
 				'other' => q(ਭੂਟਾਨੀ ਐਂਗਲਟ੍ਰਮ),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(ਬੋਟਸਵਾਨਾ ਪੁਲਾ),
+				'currency' => q(ਬੋਟਸਵਾਨਾ ਪੁਲਾ),
 				'one' => q(ਬੋਟਸਵਾਨਾ ਪੁਲਾ),
 				'other' => q(ਬੋਟਸਵਾਨਾ ਪੁਲਾ),
 			},
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(ਬੇਲਾਰੂਸੀ ਰੂਬਲ),
+				'currency' => q(ਬੇਲਾਰੂਸੀ ਰੂਬਲ),
 				'one' => q(ਬੇਲਾਰੂਸੀ ਰੂਬਲ),
 				'other' => q(ਬੇਲਾਰੂਸੀ ਰੂਬਲ),
 			},
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(ਬੇਲੀਜ਼ ਡਾਲਰ),
+				'currency' => q(ਬੇਲੀਜ਼ ਡਾਲਰ),
 				'one' => q(ਬੇਲੀਜ਼ ਡਾਲਰ),
 				'other' => q(ਬੇਲੀਜ਼ ਡਾਲਰ),
 			},
@@ -1770,28 +1769,28 @@ has 'curriencies' => (
 		'CAD' => {
 			symbol => 'CA$',
 			display_name => {
-				'default' => q(ਕੇਨੇਡਿਆਈ ਡਾਲਰ),
+				'currency' => q(ਕੇਨੇਡਿਆਈ ਡਾਲਰ),
 				'one' => q(ਕੇਨੇਡਿਆਈ ਡਾਲਰ),
 				'other' => q(ਕੇਨੇਡਿਆਈ ਡਾਲਰ),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(ਕਾਂਗੋਲੀਜ਼ ਫ੍ਰੈਂਕ),
+				'currency' => q(ਕਾਂਗੋਲੀਜ਼ ਫ੍ਰੈਂਕ),
 				'one' => q(ਕਾਂਗੋਲੀਜ਼ ਫ੍ਰੈਂਕ),
 				'other' => q(ਕਾਂਗੋਲੀਜ਼ ਫ੍ਰੈਂਕ),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(ਸਵਿਸ ਫ੍ਰੈਂਕ),
+				'currency' => q(ਸਵਿਸ ਫ੍ਰੈਂਕ),
 				'one' => q(ਸਵਿਸ ਫ੍ਰੈਂਕ),
 				'other' => q(ਸਵਿਸ ਫ੍ਰੈਂਕ),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(ਚਿਲੀਅਨ ਪੈਸੋ),
+				'currency' => q(ਚਿਲੀਅਨ ਪੈਸੋ),
 				'one' => q(ਚਿਲੀਅਨ ਪੈਸੋ),
 				'other' => q(ਚਿਲੀਅਨ ਪੈਸੋ),
 			},
@@ -1799,98 +1798,98 @@ has 'curriencies' => (
 		'CNY' => {
 			symbol => 'CN¥',
 			display_name => {
-				'default' => q(ਚੀਨੀ ਯੁਆਨ),
+				'currency' => q(ਚੀਨੀ ਯੁਆਨ),
 				'one' => q(ਚੀਨੀ ਯੁਆਨ),
 				'other' => q(ਚੀਨੀ ਯੁਆਨ),
 			},
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(ਕੋਲੰਬੀਅਨ ਪੈਸੋ),
+				'currency' => q(ਕੋਲੰਬੀਅਨ ਪੈਸੋ),
 				'one' => q(ਕੋਲੰਬੀਅਨ ਪੈਸੋ),
 				'other' => q(ਕੋਲੰਬੀਅਨ ਪੈਸੋ),
 			},
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(ਕੋਸਟਾ ਰੀਕਨ ਕੋਲਨ),
+				'currency' => q(ਕੋਸਟਾ ਰੀਕਨ ਕੋਲਨ),
 				'one' => q(ਕੋਸਟਾ ਰੀਕਨ ਕੋਲਨ),
 				'other' => q(ਕੋਸਟਾ ਰੀਕਨ ਕੋਲਨ),
 			},
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(ਕਿਊਬਨ ਬਦਲਣ੍ਯੋਗ ਪੈਸੋ),
+				'currency' => q(ਕਿਊਬਨ ਬਦਲਣ੍ਯੋਗ ਪੈਸੋ),
 				'one' => q(ਕਿਊਬਨ ਬਦਲਣ੍ਯੋਗ ਪੈਸੋ),
 				'other' => q(ਕਿਊਬਨ ਬਦਲਣ੍ਯੋਗ ਪੈਸੋ),
 			},
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(ਕਿਊਬਨ ਪੈਸੋ),
+				'currency' => q(ਕਿਊਬਨ ਪੈਸੋ),
 				'one' => q(ਕਿਊਬਨ ਪੈਸੋ),
 				'other' => q(ਕਿਊਬਨ ਪੈਸੋ),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(ਕੇਪ ਵਰਡੀਅਨ ਸ਼ਿਊਡੋ),
+				'currency' => q(ਕੇਪ ਵਰਡੀਅਨ ਸ਼ਿਊਡੋ),
 				'one' => q(ਕੇਪ ਵਰਡੀਅਨ ਸ਼ਿਊਡੋ),
 				'other' => q(ਕੇਪ ਵਰਡੀਅਨ ਸ਼ਿਊਡੋ),
 			},
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(ਚੈਕ ਗਣਰਾਜ ਕੋਰੁਨਾ),
+				'currency' => q(ਚੈਕ ਗਣਰਾਜ ਕੋਰੁਨਾ),
 				'one' => q(ਚੈਕ ਗਣਰਾਜ ਕੋਰੁਨਾ),
 				'other' => q(ਚੈਕ ਗਣਰਾਜ ਕੋਰੁਨਾ),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(ਜ਼ੀਬੂਤੀਅਨ ਫ੍ਰੈਂਕ),
+				'currency' => q(ਜ਼ੀਬੂਤੀਅਨ ਫ੍ਰੈਂਕ),
 				'one' => q(ਜ਼ੀਬੂਤੀਅਨ ਫ੍ਰੈਂਕ),
 				'other' => q(ਜ਼ੀਬੂਤੀਅਨ ਫ੍ਰੈਂਕ),
 			},
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(ਦਾਨਿਸ਼ ਕਰੌਨ),
+				'currency' => q(ਦਾਨਿਸ਼ ਕਰੌਨ),
 				'one' => q(ਦਾਨਿਸ਼ ਕਰੌਨ),
 				'other' => q(ਦਾਨਿਸ਼ ਕਰੌਨ),
 			},
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(ਡੌਮਿਨਿਕਨ ਪੈਸੋ),
+				'currency' => q(ਡੌਮਿਨਿਕਨ ਪੈਸੋ),
 				'one' => q(ਡੌਮਿਨਿਕਨ ਪੈਸੋ),
 				'other' => q(ਡੌਮਿਨਿਕਨ ਪੈਸੋ),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(ਅਲਜੀਰਿਆਈ ਦਿਨਾਰ),
+				'currency' => q(ਅਲਜੀਰਿਆਈ ਦਿਨਾਰ),
 				'one' => q(ਅਲਜੀਰਿਆਈ ਦਿਨਾਰ),
 				'other' => q(ਅਲਜੀਰਿਆਈ ਦਿਨਾਰ),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(ਮਿਸਰੀ ਪਾਉਂਡ),
+				'currency' => q(ਮਿਸਰੀ ਪਾਉਂਡ),
 				'one' => q(ਮਿਸਰੀ ਪਾਉਂਡ),
 				'other' => q(ਮਿਸਰੀ ਪਾਉਂਡ),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(ਇਰੀਟ੍ਰਿਆਈ ਨਾਕਫਾ),
+				'currency' => q(ਇਰੀਟ੍ਰਿਆਈ ਨਾਕਫਾ),
 				'one' => q(ਇਰੀਟ੍ਰਿਆਈ ਨਾਕਫਾ),
 				'other' => q(ਇਰੀਟ੍ਰਿਆਈ ਨਾਕਫਾ),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(ਇਥੋਪੀਆਈ ਬਿਰ),
+				'currency' => q(ਇਥੋਪੀਆਈ ਬਿਰ),
 				'one' => q(ਇਥੋਪੀਆਈ ਬਿਰ),
 				'other' => q(ਇਥੋਪੀਆਈ ਬਿਰ),
 			},
@@ -1898,21 +1897,21 @@ has 'curriencies' => (
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(ਯੂਰੋ),
+				'currency' => q(ਯੂਰੋ),
 				'one' => q(ਯੂਰੋ),
 				'other' => q(ਯੂਰੋ),
 			},
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(ਫ਼ਿਜੀਆਈ ਡਾਲਰ),
+				'currency' => q(ਫ਼ਿਜੀਆਈ ਡਾਲਰ),
 				'one' => q(ਫ਼ਿਜੀਆਈ ਡਾਲਰ),
 				'other' => q(ਫ਼ਿਜੀਆਈ ਡਾਲਰ),
 			},
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(ਫ਼ਾਕਲੈਂਡ ਆਈਲੈਂਡਸ ਪਾਉਂਡ),
+				'currency' => q(ਫ਼ਾਕਲੈਂਡ ਆਈਲੈਂਡਸ ਪਾਉਂਡ),
 				'one' => q(ਫ਼ਾਕਲੈਂਡ ਆਈਲੈਂਡਸ ਪਾਉਂਡ),
 				'other' => q(ਫ਼ਾਕਲੈਂਡ ਆਈਲੈਂਡਸ ਪਾਉਂਡ),
 			},
@@ -1920,56 +1919,56 @@ has 'curriencies' => (
 		'GBP' => {
 			symbol => '£',
 			display_name => {
-				'default' => q(ਬ੍ਰਿਟਿਸ਼ ਪਾਉਂਡ ਸਟਰਲਿੰਗ),
+				'currency' => q(ਬ੍ਰਿਟਿਸ਼ ਪਾਉਂਡ ਸਟਰਲਿੰਗ),
 				'one' => q(ਬ੍ਰਿਟਿਸ਼ ਪਾਉਂਡ ਸਟਰਲਿੰਗ),
 				'other' => q(ਬ੍ਰਿਟਿਸ਼ ਪਾਉਂਡ ਸਟਰਲਿੰਗ),
 			},
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(ਜਾਰਜਿਆਈ ਲਾਰੀ),
+				'currency' => q(ਜਾਰਜਿਆਈ ਲਾਰੀ),
 				'one' => q(ਜਾਰਜਿਆਈ ਲਾਰੀ),
 				'other' => q(ਜਾਰਜਿਆਈ ਲਾਰੀ),
 			},
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(ਘਾਨਾਈ ਸੇਡੀ),
+				'currency' => q(ਘਾਨਾਈ ਸੇਡੀ),
 				'one' => q(ਘਾਨਾਈ ਸੇਡੀ),
 				'other' => q(ਘਾਨਾਈ ਸੇਡੀ),
 			},
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(ਜਿਬਰਾਲਟਰ ਪਾਉਂਡ),
+				'currency' => q(ਜਿਬਰਾਲਟਰ ਪਾਉਂਡ),
 				'one' => q(ਜਿਬਰਾਲਟਰ ਪਾਉਂਡ),
 				'other' => q(ਜਿਬਰਾਲਟਰ ਪਾਉਂਡ),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(ਗਾਂਬੀਆਈ ਦਲਾਸੀ),
+				'currency' => q(ਗਾਂਬੀਆਈ ਦਲਾਸੀ),
 				'one' => q(ਗਾਂਬੀਆਈ ਦਲਾਸੀ),
 				'other' => q(ਗਾਂਬੀਆਈ ਦਲਾਸੀ),
 			},
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(ਗਿਨੀਅਨ ਫ੍ਰੈਂਕ),
+				'currency' => q(ਗਿਨੀਅਨ ਫ੍ਰੈਂਕ),
 				'one' => q(ਗਿਨੀਅਨ ਫ੍ਰੈਂਕ),
 				'other' => q(ਗਿਨੀਅਨ ਫ੍ਰੈਂਕ),
 			},
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(ਗੁਆਟੇਮਾਲਾ ਕੁਏਟਜ਼ਲ),
+				'currency' => q(ਗੁਆਟੇਮਾਲਾ ਕੁਏਟਜ਼ਲ),
 				'one' => q(ਗੁਆਟੇਮਾਲਾ ਕੁਏਟਜ਼ਲ),
 				'other' => q(ਗੁਆਟੇਮਾਲਾ ਕੁਏਟਜ਼ਲ),
 			},
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(ਗੁਯਾਨਾਈਜ਼ ਡਾਲਰ),
+				'currency' => q(ਗੁਯਾਨਾਈਜ਼ ਡਾਲਰ),
 				'one' => q(ਗੁਯਾਨਾਈਜ਼ ਡਾਲਰ),
 				'other' => q(ਗੁਯਾਨਾਈਜ਼ ਡਾਲਰ),
 			},
@@ -1977,42 +1976,42 @@ has 'curriencies' => (
 		'HKD' => {
 			symbol => 'HK$',
 			display_name => {
-				'default' => q(ਹਾਂਗ ਕਾਂਗ ਡਾਲਰ),
+				'currency' => q(ਹਾਂਗ ਕਾਂਗ ਡਾਲਰ),
 				'one' => q(ਹਾਂਗ ਕਾਂਗ ਡਾਲਰ),
 				'other' => q(ਹਾਂਗ ਕਾਂਗ ਡਾਲਰ),
 			},
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(ਹਾਨਡੂਰਨ ਲੇਮਪਿਰਾ),
+				'currency' => q(ਹਾਨਡੂਰਨ ਲੇਮਪਿਰਾ),
 				'one' => q(ਹਾਨਡੂਰਨ ਲੇਮਪਿਰਾ),
 				'other' => q(ਹਾਨਡੂਰਨ ਲੇਮਪਿਰਾ),
 			},
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(ਕਰੋਏਸ਼ੀਆਈ ਕੁਨਾ),
+				'currency' => q(ਕਰੋਏਸ਼ੀਆਈ ਕੁਨਾ),
 				'one' => q(ਕਰੋਏਸ਼ੀਆਈ ਕੁਨਾ),
 				'other' => q(ਕਰੋਏਸ਼ੀਆਈ ਕੁਨਾ),
 			},
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(ਹਾਈਟੀਅਨ ਗੌਰਡੇ),
+				'currency' => q(ਹਾਈਟੀਅਨ ਗੌਰਡੇ),
 				'one' => q(ਹਾਈਟੀਅਨ ਗੌਰਡੇ),
 				'other' => q(ਹਾਈਟੀਅਨ ਗੌਰਡੇ),
 			},
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(ਹੰਗਰਾਈ ਫੋਰਿੰਟ),
+				'currency' => q(ਹੰਗਰਾਈ ਫੋਰਿੰਟ),
 				'one' => q(ਹੰਗਰਾਈ ਫੋਰਿੰਟ),
 				'other' => q(ਹੰਗਰਾਈ ਫੋਰਿੰਟ),
 			},
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(ਇੰਡੋਨੇਸ਼ੀਆਈ ਰੁਪਿਆਹ),
+				'currency' => q(ਇੰਡੋਨੇਸ਼ੀਆਈ ਰੁਪਿਆਹ),
 				'one' => q(ਇੰਡੋਨੇਸ਼ੀਆਈ ਰੁਪਿਆਹ),
 				'other' => q(ਇੰਡੋਨੇਸ਼ੀਆਈ ਰੁਪਿਆਹ),
 			},
@@ -2020,7 +2019,7 @@ has 'curriencies' => (
 		'ILS' => {
 			symbol => '₪',
 			display_name => {
-				'default' => q(ਇਜ਼ਰਾਈਲੀ ਨਵੀਂ ਸ਼ੇਕੇਲ),
+				'currency' => q(ਇਜ਼ਰਾਈਲੀ ਨਵੀਂ ਸ਼ੇਕੇਲ),
 				'one' => q(ਇਜ਼ਰਾਈਲੀ ਨਵੀਂ ਸ਼ੇਕੇਲ),
 				'other' => q(ਇਜ਼ਰਾਈਲੀ ਨਵੀਂ ਸ਼ੇਕੇਲ),
 			},
@@ -2028,42 +2027,42 @@ has 'curriencies' => (
 		'INR' => {
 			symbol => '₹',
 			display_name => {
-				'default' => q(ਭਾਰਤੀ ਰੁਪਏ),
+				'currency' => q(ਭਾਰਤੀ ਰੁਪਏ),
 				'one' => q(ਭਾਰਤੀ ਰੁਪਏ),
 				'other' => q(ਭਾਰਤੀ ਰੁਪਏ),
 			},
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(ਇਰਾਕੀ ਦਿਨਾਰ),
+				'currency' => q(ਇਰਾਕੀ ਦਿਨਾਰ),
 				'one' => q(ਇਰਾਕੀ ਦਿਨਾਰ),
 				'other' => q(ਇਰਾਕੀ ਦਿਨਾਰ),
 			},
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(ਈਰਾਨੀ ਰਿਆਲ),
+				'currency' => q(ਈਰਾਨੀ ਰਿਆਲ),
 				'one' => q(ਈਰਾਨੀ ਰਿਆਲ),
 				'other' => q(ਈਰਾਨੀ ਰਿਆਲ),
 			},
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(ਆਈਸਲੈਂਡਿਕ ਕਰੌਨ),
+				'currency' => q(ਆਈਸਲੈਂਡਿਕ ਕਰੌਨ),
 				'one' => q(ਆਈਸਲੈਂਡਿਕ ਕਰੌਨ),
 				'other' => q(ਆਈਸਲੈਂਡਿਕ ਕਰੌਨ),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(ਜਮਾਇਕਨ ਡਾਲਰ),
+				'currency' => q(ਜਮਾਇਕਨ ਡਾਲਰ),
 				'one' => q(ਜਮਾਇਕਨ ਡਾਲਰ),
 				'other' => q(ਜਮਾਇਕਨ ਡਾਲਰ),
 			},
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(ਜੌਰਡਨੀਆਈ ਦਿਨਾਰ),
+				'currency' => q(ਜੌਰਡਨੀਆਈ ਦਿਨਾਰ),
 				'one' => q(ਜੌਰਡਨੀਆਈ ਦਿਨਾਰ),
 				'other' => q(ਜੌਰਡਨੀਆਈ ਦਿਨਾਰ),
 			},
@@ -2071,42 +2070,42 @@ has 'curriencies' => (
 		'JPY' => {
 			symbol => 'JP¥',
 			display_name => {
-				'default' => q(ਜਾਪਾਨੀ ਯੇਨ),
+				'currency' => q(ਜਾਪਾਨੀ ਯੇਨ),
 				'one' => q(ਜਾਪਾਨੀ ਯੇਨ),
 				'other' => q(ਜਾਪਾਨੀ ਯੇਨ),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(ਕੀਨੀਆਈ ਸ਼ਿਲਿੰਗ),
+				'currency' => q(ਕੀਨੀਆਈ ਸ਼ਿਲਿੰਗ),
 				'one' => q(ਕੀਨੀਆਈ ਸ਼ਿਲਿੰਗ),
 				'other' => q(ਕੀਨੀਆਈ ਸ਼ਿਲਿੰਗ),
 			},
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(ਕਿਰਗਿਸਤਾਨੀ ਸੋਮ),
+				'currency' => q(ਕਿਰਗਿਸਤਾਨੀ ਸੋਮ),
 				'one' => q(ਕਿਰਗਿਸਤਾਨੀ ਸੋਮ),
 				'other' => q(ਕਿਰਗਿਸਤਾਨੀ ਸੋਮ),
 			},
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(ਕੰਬੋਡੀਆਈ ਰੀਅਲ),
+				'currency' => q(ਕੰਬੋਡੀਆਈ ਰੀਅਲ),
 				'one' => q(ਕੰਬੋਡੀਆਈ ਰੀਅਲ),
 				'other' => q(ਕੰਬੋਡੀਆਈ ਰੀਅਲ),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(ਕੋਮੋਰੀਅਨ ਫੈਂਕ),
+				'currency' => q(ਕੋਮੋਰੀਅਨ ਫੈਂਕ),
 				'one' => q(ਕੋਮੋਰੀਅਨ ਫੈਂਕ),
 				'other' => q(ਕੋਮੋਰੀਅਨ ਫੈਂਕ),
 			},
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(ਉੱਤਰੀ ਕੋਰੀਆਈ ਵੋਨ),
+				'currency' => q(ਉੱਤਰੀ ਕੋਰੀਆਈ ਵੋਨ),
 				'one' => q(ਉੱਤਰੀ ਕੋਰੀਆਈ ਵੋਨ),
 				'other' => q(ਉੱਤਰੀ ਕੋਰੀਆਈ ਵੋਨ),
 			},
@@ -2114,154 +2113,154 @@ has 'curriencies' => (
 		'KRW' => {
 			symbol => '₩',
 			display_name => {
-				'default' => q(ਦੱਖਣੀ ਕੋਰੀਆਈ ਵੋਨ),
+				'currency' => q(ਦੱਖਣੀ ਕੋਰੀਆਈ ਵੋਨ),
 				'one' => q(ਦੱਖਣੀ ਕੋਰੀਆਈ ਵੋਨ),
 				'other' => q(ਦੱਖਣੀ ਕੋਰੀਆਈ ਵੋਨ),
 			},
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(ਕੁਵੈਤੀ ਦਿਨਾਰ),
+				'currency' => q(ਕੁਵੈਤੀ ਦਿਨਾਰ),
 				'one' => q(ਕੁਵੈਤੀ ਦਿਨਾਰ),
 				'other' => q(ਕੁਵੈਤੀ ਦਿਨਾਰ),
 			},
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(ਕੇਮੈਨ ਆਈਲੈਂਡਸ ਡਾਲਰ),
+				'currency' => q(ਕੇਮੈਨ ਆਈਲੈਂਡਸ ਡਾਲਰ),
 				'one' => q(ਕੇਮੈਨ ਆਈਲੈਂਡਸ ਡਾਲਰ),
 				'other' => q(ਕੇਮੈਨ ਆਈਲੈਂਡਸ ਡਾਲਰ),
 			},
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(ਕਜ਼ਾਕਸਤਾਨੀ ਤੇਂਗੇ),
+				'currency' => q(ਕਜ਼ਾਕਸਤਾਨੀ ਤੇਂਗੇ),
 				'one' => q(ਕਜ਼ਾਕਸਤਾਨੀ ਤੇਂਗੇ),
 				'other' => q(ਕਜ਼ਾਕਸਤਾਨੀ ਤੇਂਗੇ),
 			},
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(ਲਾਓਟਿਆਈ ਕਿਪ),
+				'currency' => q(ਲਾਓਟਿਆਈ ਕਿਪ),
 				'one' => q(ਲਾਓਟਿਆਈ ਕਿਪ),
 				'other' => q(ਲਾਓਟਿਆਈ ਕਿਪ),
 			},
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(ਲੈਬਨਾਨੀ ਪਾਉਂਡ),
+				'currency' => q(ਲੈਬਨਾਨੀ ਪਾਉਂਡ),
 				'one' => q(ਲੈਬਨਾਨੀ ਪਾਉਂਡ),
 				'other' => q(ਲੈਬਨਾਨੀ ਪਾਉਂਡ),
 			},
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(ਸ੍ਰੀ ਲੰਕਾਈ ਰੁਪਏ),
+				'currency' => q(ਸ੍ਰੀ ਲੰਕਾਈ ਰੁਪਏ),
 				'one' => q(ਸ੍ਰੀ ਲੰਕਾਈ ਰੁਪਏ),
 				'other' => q(ਸ੍ਰੀ ਲੰਕਾਈ ਰੁਪਏ),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(ਲਾਈਬੀਰੀਆਈ ਡਾਲਰ),
+				'currency' => q(ਲਾਈਬੀਰੀਆਈ ਡਾਲਰ),
 				'one' => q(ਲਾਈਬੀਰੀਆਈ ਡਾਲਰ),
 				'other' => q(ਲਾਈਬੀਰੀਆਈ ਡਾਲਰ),
 			},
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(ਲਿਥੁਆਨੀਆਈ ਲਿਤਾਸ),
+				'currency' => q(ਲਿਥੁਆਨੀਆਈ ਲਿਤਾਸ),
 				'one' => q(ਲਿਥੁਆਨੀਆਈ ਲਿਤਾਸ),
 				'other' => q(ਲਿਥੁਆਨੀਆਈ ਲਿਤਾਸ),
 			},
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(ਲਾਟਵਿਆਈ ਲਾਟਸ),
+				'currency' => q(ਲਾਟਵਿਆਈ ਲਾਟਸ),
 				'one' => q(ਲਾਟਵਿਆਈ ਲਾਟਸ),
 				'other' => q(ਲਾਟਵਿਆਈ ਲਾਟਸ),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(ਲੀਬੀਅਨ ਦਿਨਾਰ),
+				'currency' => q(ਲੀਬੀਅਨ ਦਿਨਾਰ),
 				'one' => q(ਲੀਬੀਅਨ ਦਿਨਾਰ),
 				'other' => q(ਲੀਬੀਅਨ ਦਿਨਾਰ),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(ਮੋਰੱਕਨ ਦਿਰਹਾਮ),
+				'currency' => q(ਮੋਰੱਕਨ ਦਿਰਹਾਮ),
 				'one' => q(ਮੋਰੱਕਨ ਦਿਰਹਾਮ),
 				'other' => q(ਮੋਰੱਕਨ ਦਿਰਹਾਮ),
 			},
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(ਮੋਲਡੋਵਨ ਲਿਯੂ),
+				'currency' => q(ਮੋਲਡੋਵਨ ਲਿਯੂ),
 				'one' => q(ਮੋਲਡੋਵਨ ਲਿਯੂ),
 				'other' => q(ਮੋਲਡੋਵਨ ਲਿਯੂ),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(ਮਾਲਾਗਾਸੀ ਅਰਾਇਰੀ),
+				'currency' => q(ਮਾਲਾਗਾਸੀ ਅਰਾਇਰੀ),
 				'one' => q(ਮਾਲਾਗਾਸੀ ਅਰਾਇਰੀ),
 				'other' => q(ਮਾਲਾਗਾਸੀ ਅਰਾਇਰੀ),
 			},
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(ਮੈਕਡੋਨੀਆਈ ਡੇਨਾਰ),
+				'currency' => q(ਮੈਕਡੋਨੀਆਈ ਡੇਨਾਰ),
 				'one' => q(ਮੈਕਡੋਨੀਆਈ ਡੇਨਾਰ),
 				'other' => q(ਮੈਕਡੋਨੀਆਈ ਡੇਨਾਰ),
 			},
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(ਮਿਆਂਮਾ ਕ੍ਯਾਤ),
+				'currency' => q(ਮਿਆਂਮਾ ਕ੍ਯਾਤ),
 				'one' => q(ਮਿਆਂਮਾ ਕ੍ਯਾਤ),
 				'other' => q(ਮਿਆਂਮਾ ਕ੍ਯਾਤ),
 			},
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(ਮੰਗੋਲੀਆਈ ਤੁਗਰਿਕ),
+				'currency' => q(ਮੰਗੋਲੀਆਈ ਤੁਗਰਿਕ),
 				'one' => q(ਮੰਗੋਲੀਆਈ ਤੁਗਰਿਕ),
 				'other' => q(ਮੰਗੋਲੀਆਈ ਤੁਗਰਿਕ),
 			},
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(ਮੇਕਾਨੀ ਪਟਾਕਾ),
+				'currency' => q(ਮੇਕਾਨੀ ਪਟਾਕਾ),
 				'one' => q(ਮੇਕਾਨੀ ਪਟਾਕਾ),
 				'other' => q(ਮੇਕਾਨੀ ਪਟਾਕਾ),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(ਮੋਰਿਟਾਨੀਆਈ ਊਗੀਆ),
+				'currency' => q(ਮੋਰਿਟਾਨੀਆਈ ਊਗੀਆ),
 				'one' => q(ਮੋਰਿਟਾਨੀਆਈ ਊਗੀਆ),
 				'other' => q(ਮੋਰਿਟਾਨੀਆਈ ਊਗੀਆ),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(ਮੌਰਿਸ਼ੀਆਈ ਰੁਪਏ),
+				'currency' => q(ਮੌਰਿਸ਼ੀਆਈ ਰੁਪਏ),
 				'one' => q(ਮੌਰਿਸ਼ੀਆਈ ਰੁਪਏ),
 				'other' => q(ਮੌਰਿਸ਼ੀਆਈ ਰੁਪਏ),
 			},
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(ਮਾਲਦੀਵੀ ਰੁਫੀਆ),
+				'currency' => q(ਮਾਲਦੀਵੀ ਰੁਫੀਆ),
 				'one' => q(ਮਾਲਦੀਵੀ ਰੁਫੀਆ),
 				'other' => q(ਮਾਲਦੀਵੀ ਰੁਫੀਆ),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(ਮਾਲਾਵੀਆਈ ਕਵਾਚਾ),
+				'currency' => q(ਮਾਲਾਵੀਆਈ ਕਵਾਚਾ),
 				'one' => q(ਮਾਲਾਵੀਆਈ ਕਵਾਚਾ),
 				'other' => q(ਮਾਲਾਵੀਆਈ ਕਵਾਚਾ),
 			},
@@ -2269,56 +2268,56 @@ has 'curriencies' => (
 		'MXN' => {
 			symbol => 'MX$',
 			display_name => {
-				'default' => q(ਮੈਕਸਿਕਨ ਪੈਸੋ),
+				'currency' => q(ਮੈਕਸਿਕਨ ਪੈਸੋ),
 				'one' => q(ਮੈਕਸਿਕਨ ਪੈਸੋ),
 				'other' => q(ਮੈਕਸਿਕਨ ਪੈਸੋ),
 			},
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(ਮੇਲੇਸ਼ਿਆਈ ਰਿਨਗਿੱਟ),
+				'currency' => q(ਮੇਲੇਸ਼ਿਆਈ ਰਿਨਗਿੱਟ),
 				'one' => q(ਮੇਲੇਸ਼ਿਆਈ ਰਿਨਗਿੱਟ),
 				'other' => q(ਮੇਲੇਸ਼ਿਆਈ ਰਿਨਗਿੱਟ),
 			},
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(ਮੋਜ਼ਾਮਬੀਕਨ ਮੈਟੀਕਲ),
+				'currency' => q(ਮੋਜ਼ਾਮਬੀਕਨ ਮੈਟੀਕਲ),
 				'one' => q(ਮੋਜ਼ਾਮਬੀਕਨ ਮੈਟੀਕਲ),
 				'other' => q(ਮੋਜ਼ਾਮਬੀਕਨ ਮੈਟੀਕਲ),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(ਨਾਮੀਬੀਆਈ ਡਾਲਰ),
+				'currency' => q(ਨਾਮੀਬੀਆਈ ਡਾਲਰ),
 				'one' => q(ਨਾਮੀਬੀਆਈ ਡਾਲਰ),
 				'other' => q(ਨਾਮੀਬੀਆਈ ਡਾਲਰ),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(ਨਾਇਜੀਰੀਆਈ ਨਾਇਰਾ),
+				'currency' => q(ਨਾਇਜੀਰੀਆਈ ਨਾਇਰਾ),
 				'one' => q(ਨਾਇਜੀਰੀਆਈ ਨਾਇਰਾ),
 				'other' => q(ਨਾਇਜੀਰੀਆਈ ਨਾਇਰਾ),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(ਨਿਕਾਰਾਗੁਆਨ ਕੋਰਡੋਬਾ),
+				'currency' => q(ਨਿਕਾਰਾਗੁਆਨ ਕੋਰਡੋਬਾ),
 				'one' => q(ਨਿਕਾਰਾਗੁਆਨ ਕੋਰਡੋਬਾ),
 				'other' => q(ਨਿਕਾਰਾਗੁਆਨ ਕੋਰਡੋਬਾ),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(ਨੌਰਵੇਜਿਅਨ ਕਰੌਨ),
+				'currency' => q(ਨੌਰਵੇਜਿਅਨ ਕਰੌਨ),
 				'one' => q(ਨੌਰਵੇਜਿਅਨ ਕਰੌਨ),
 				'other' => q(ਨੌਰਵੇਜਿਅਨ ਕਰੌਨ),
 			},
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(ਨੇਪਾਲੀ ਰੁਪਏ),
+				'currency' => q(ਨੇਪਾਲੀ ਰੁਪਏ),
 				'one' => q(ਨੇਪਾਲੀ ਰੁਪਏ),
 				'other' => q(ਨੇਪਾਲੀ ਰੁਪਏ),
 			},
@@ -2326,196 +2325,196 @@ has 'curriencies' => (
 		'NZD' => {
 			symbol => 'NZ$',
 			display_name => {
-				'default' => q(ਨਿਊਜ਼ੀਲੈਂਡ ਡਾਲਰ),
+				'currency' => q(ਨਿਊਜ਼ੀਲੈਂਡ ਡਾਲਰ),
 				'one' => q(ਨਿਊਜ਼ੀਲੈਂਡ ਡਾਲਰ),
 				'other' => q(ਨਿਊਜ਼ੀਲੈਂਡ ਡਾਲਰ),
 			},
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(ਓਮਾਨੀ ਰਿਆਲ),
+				'currency' => q(ਓਮਾਨੀ ਰਿਆਲ),
 				'one' => q(ਓਮਾਨੀ ਰਿਆਲ),
 				'other' => q(ਓਮਾਨੀ ਰਿਆਲ),
 			},
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(ਪਨਾਮੇਨੀਅਨ ਬਾਲਬੋਆ),
+				'currency' => q(ਪਨਾਮੇਨੀਅਨ ਬਾਲਬੋਆ),
 				'one' => q(ਪਨਾਮੇਨੀਅਨ ਬਾਲਬੋਆ),
 				'other' => q(ਪਨਾਮੇਨੀਅਨ ਬਾਲਬੋਆ),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(ਪੇਰੂਵੀਅਨ ਨਿਊਵੋ ਸੋਲ),
+				'currency' => q(ਪੇਰੂਵੀਅਨ ਨਿਊਵੋ ਸੋਲ),
 				'one' => q(ਪੇਰੂਵੀਅਨ ਨਿਊਵੋ ਸੋਲ),
 				'other' => q(ਪੇਰੂਵੀਅਨ ਨਿਊਵੋ ਸੋਲ),
 			},
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(ਪਾਪੂਆ ਨਿਊ ਗਿਨੀਆਈ ਕਿਨਾ),
+				'currency' => q(ਪਾਪੂਆ ਨਿਊ ਗਿਨੀਆਈ ਕਿਨਾ),
 				'one' => q(ਪਾਪੂਆ ਨਿਊ ਗਿਨੀਆਈ ਕਿਨਾ),
 				'other' => q(ਪਾਪੂਆ ਨਿਊ ਗਿਨੀਆਈ ਕਿਨਾ),
 			},
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(ਫਿਲਿਪੀਨੀ ਪੈਸੋ),
+				'currency' => q(ਫਿਲਿਪੀਨੀ ਪੈਸੋ),
 				'one' => q(ਫਿਲਿਪੀਨੀ ਪੈਸੋ),
 				'other' => q(ਫਿਲਿਪੀਨੀ ਪੈਸੋ),
 			},
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(ਪਾਕਿਸਤਾਨੀ ਰੁਪਏ),
+				'currency' => q(ਪਾਕਿਸਤਾਨੀ ਰੁਪਏ),
 				'one' => q(ਪਾਕਿਸਤਾਨੀ ਰੁਪਏ),
 				'other' => q(ਪਾਕਿਸਤਾਨੀ ਰੁਪਏ),
 			},
 		},
 		'PLN' => {
 			display_name => {
-				'default' => q(ਪੋਲਿਸ਼ ਜ਼ਲੌਟੀ),
+				'currency' => q(ਪੋਲਿਸ਼ ਜ਼ਲੌਟੀ),
 				'one' => q(ਪੋਲਿਸ਼ ਜ਼ਲੌਟੀ),
 				'other' => q(ਪੋਲਿਸ਼ ਜ਼ਲੌਟੀ),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(ਪੈਰਾਗੁਵਾਇਨ ਗੁਆਰਾਨੀ),
+				'currency' => q(ਪੈਰਾਗੁਵਾਇਨ ਗੁਆਰਾਨੀ),
 				'one' => q(ਪੈਰਾਗੁਵਾਇਨ ਗੁਆਰਾਨੀ),
 				'other' => q(ਪੈਰਾਗੁਵਾਇਨ ਗੁਆਰਾਨੀ),
 			},
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(ਕਤਰੀ ਰਿਆਲ),
+				'currency' => q(ਕਤਰੀ ਰਿਆਲ),
 				'one' => q(ਕਤਰੀ ਰਿਆਲ),
 				'other' => q(ਕਤਰੀ ਰਿਆਲ),
 			},
 		},
 		'RON' => {
 			display_name => {
-				'default' => q(ਰੋਮਾਨੀਆਈ ਲਿਯੂ),
+				'currency' => q(ਰੋਮਾਨੀਆਈ ਲਿਯੂ),
 				'one' => q(ਰੋਮਾਨੀਆਈ ਲਿਯੂ),
 				'other' => q(ਰੋਮਾਨੀਆਈ ਲਿਯੂ),
 			},
 		},
 		'RSD' => {
 			display_name => {
-				'default' => q(ਸਰਬੀਆਈ ਦਿਨਾਰ),
+				'currency' => q(ਸਰਬੀਆਈ ਦਿਨਾਰ),
 				'one' => q(ਸਰਬੀਆਈ ਦਿਨਾਰ),
 				'other' => q(ਸਰਬੀਆਈ ਦਿਨਾਰ),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(ਰੂਸੀ ਰੂਬਲ),
+				'currency' => q(ਰੂਸੀ ਰੂਬਲ),
 				'one' => q(ਰੂਸੀ ਰੂਬਲ),
 				'other' => q(ਰੂਸੀ ਰੂਬਲ),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(ਰਵਾਂਡਨ ਫ੍ਰੈਂਕ),
+				'currency' => q(ਰਵਾਂਡਨ ਫ੍ਰੈਂਕ),
 				'one' => q(ਰਵਾਂਡਨ ਫ੍ਰੈਂਕ),
 				'other' => q(ਰਵਾਂਡਨ ਫ੍ਰੈਂਕ),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(ਸਾਉਦੀ ਰਿਆਲ),
+				'currency' => q(ਸਾਉਦੀ ਰਿਆਲ),
 				'one' => q(ਸਾਉਦੀ ਰਿਆਲ),
 				'other' => q(ਸਾਉਦੀ ਰਿਆਲ),
 			},
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(ਸੋਲੋਮਨ ਆਈਲੈਂਡਸ ਡਾਲਰ),
+				'currency' => q(ਸੋਲੋਮਨ ਆਈਲੈਂਡਸ ਡਾਲਰ),
 				'one' => q(ਸੋਲੋਮਨ ਆਈਲੈਂਡਸ ਡਾਲਰ),
 				'other' => q(ਸੋਲੋਮਨ ਆਈਲੈਂਡਸ ਡਾਲਰ),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(ਸੇਸ਼ਲਸ ਰੁਪਏ),
+				'currency' => q(ਸੇਸ਼ਲਸ ਰੁਪਏ),
 				'one' => q(ਸੇਸ਼ਲਸ ਰੁਪਏ),
 				'other' => q(ਸੇਸ਼ਲਸ ਰੁਪਏ),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(ਸੁਡਾਨੀਜ਼ ਪਾਉਂਡ),
+				'currency' => q(ਸੁਡਾਨੀਜ਼ ਪਾਉਂਡ),
 				'one' => q(ਸੁਡਾਨੀਜ਼ ਪਾਉਂਡ),
 				'other' => q(ਸੁਡਾਨੀਜ਼ ਪਾਉਂਡ),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(ਸਵੀਡਿਸ਼ ਕਰੋਨਾ),
+				'currency' => q(ਸਵੀਡਿਸ਼ ਕਰੋਨਾ),
 				'one' => q(ਸਵੀਡਿਸ਼ ਕਰੋਨਾ),
 				'other' => q(ਸਵੀਡਿਸ਼ ਕਰੋਨਾ),
 			},
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(ਸਿੰਗਾਪੁਰ ਡਾਲਰ),
+				'currency' => q(ਸਿੰਗਾਪੁਰ ਡਾਲਰ),
 				'one' => q(ਸਿੰਗਾਪੁਰ ਡਾਲਰ),
 				'other' => q(ਸਿੰਗਾਪੁਰ ਡਾਲਰ),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(ਸੇਂਟ ਹੇਲੇਨਾ ਪਾਉਂਡ),
+				'currency' => q(ਸੇਂਟ ਹੇਲੇਨਾ ਪਾਉਂਡ),
 				'one' => q(ਸੇਂਟ ਹੇਲੇਨਾ ਪਾਉਂਡ),
 				'other' => q(ਸੇਂਟ ਹੇਲੇਨਾ ਪਾਉਂਡ),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(ਸਿਏਰਾ ਲਿਓਨੀਅਨ ਲਿਓਨ),
+				'currency' => q(ਸਿਏਰਾ ਲਿਓਨੀਅਨ ਲਿਓਨ),
 				'one' => q(ਸਿਏਰਾ ਲਿਓਨੀਅਨ ਲਿਓਨ),
 				'other' => q(ਸਿਏਰਾ ਲਿਓਨੀਅਨ ਲਿਓਨ),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(ਸੋਮਾਲੀ ਸ਼ਿਲਿੰਗ),
+				'currency' => q(ਸੋਮਾਲੀ ਸ਼ਿਲਿੰਗ),
 				'one' => q(ਸੋਮਾਲੀ ਸ਼ਿਲਿੰਗ),
 				'other' => q(ਸੋਮਾਲੀ ਸ਼ਿਲਿੰਗ),
 			},
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(ਸੂਰੀਨਾਮੀਜ਼ ਡਾਲਰ),
+				'currency' => q(ਸੂਰੀਨਾਮੀਜ਼ ਡਾਲਰ),
 				'one' => q(ਸੂਰੀਨਾਮੀਜ਼ ਡਾਲਰ),
 				'other' => q(ਸੂਰੀਨਾਮੀਜ਼ ਡਾਲਰ),
 			},
 		},
 		'SSP' => {
 			display_name => {
-				'default' => q(ਦੱਖਣੀ ਸੁਡਾਨੀਜ਼ ਪਾਉਂਡ),
+				'currency' => q(ਦੱਖਣੀ ਸੁਡਾਨੀਜ਼ ਪਾਉਂਡ),
 				'one' => q(ਦੱਖਣੀ ਸੁਡਾਨੀਜ਼ ਪਾਉਂਡ),
 				'other' => q(ਦੱਖਣੀ ਸੁਡਾਨੀਜ਼ ਪਾਉਂਡ),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(ਸਾਉ ਟੋਮੀ ਐਂਡ ਪ੍ਰਿੰਸਪੀ ਡੋਬਰਾ),
+				'currency' => q(ਸਾਉ ਟੋਮੀ ਐਂਡ ਪ੍ਰਿੰਸਪੀ ਡੋਬਰਾ),
 				'one' => q(ਸਾਉ ਟੋਮੀ ਐਂਡ ਪ੍ਰਿੰਸਪੀ ਡੋਬਰਾ),
 				'other' => q(ਸਾਉ ਟੋਮੀ ਐਂਡ ਪ੍ਰਿੰਸਪੀ ਡੋਬਰਾ),
 			},
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(ਸੀਰੀਆਈ ਪਾਉਂਡ),
+				'currency' => q(ਸੀਰੀਆਈ ਪਾਉਂਡ),
 				'one' => q(ਸੀਰੀਆਈ ਪਾਉਂਡ),
 				'other' => q(ਸੀਰੀਆਈ ਪਾਉਂਡ),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(ਸਵਾਜ਼ੀ ਲਾਇਲੈਂਗਨੀ),
+				'currency' => q(ਸਵਾਜ਼ੀ ਲਾਇਲੈਂਗਨੀ),
 				'one' => q(ਸਵਾਜ਼ੀ ਲਾਇਲੈਂਗਨੀ),
 				'other' => q(ਸਵਾਜ਼ੀ ਲਾਇਲੈਂਗਨੀ),
 			},
@@ -2523,49 +2522,49 @@ has 'curriencies' => (
 		'THB' => {
 			symbol => '฿',
 			display_name => {
-				'default' => q(ਥਾਈ ਬਾਹਤ),
+				'currency' => q(ਥਾਈ ਬਾਹਤ),
 				'one' => q(ਥਾਈ ਬਾਹਤ),
 				'other' => q(ਥਾਈ ਬਾਹਤ),
 			},
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(ਤਾਜਿਕਿਸਤਾਨੀ ਸੋਮੋਨੀ),
+				'currency' => q(ਤਾਜਿਕਿਸਤਾਨੀ ਸੋਮੋਨੀ),
 				'one' => q(ਤਾਜਿਕਿਸਤਾਨੀ ਸੋਮੋਨੀ),
 				'other' => q(ਤਾਜਿਕਿਸਤਾਨੀ ਸੋਮੋਨੀ),
 			},
 		},
 		'TMT' => {
 			display_name => {
-				'default' => q(ਤੁਰਕਮੇਨਿਸਤਾਨੀ ਮਾਨਤ),
+				'currency' => q(ਤੁਰਕਮੇਨਿਸਤਾਨੀ ਮਾਨਤ),
 				'one' => q(ਤੁਰਕਮੇਨਿਸਤਾਨੀ ਮਾਨਤ),
 				'other' => q(ਤੁਰਕਮੇਨਿਸਤਾਨੀ ਮਾਨਤ),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(ਟਿਉਨੀਸ਼ੀਆਈ ਦਿਨਾਰ),
+				'currency' => q(ਟਿਉਨੀਸ਼ੀਆਈ ਦਿਨਾਰ),
 				'one' => q(ਟਿਉਨੀਸ਼ੀਆਈ ਦਿਨਾਰ),
 				'other' => q(ਟਿਉਨੀਸ਼ੀਆਈ ਦਿਨਾਰ),
 			},
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(ਟੌਂਗਨ ਪੈਂਗਾ),
+				'currency' => q(ਟੌਂਗਨ ਪੈਂਗਾ),
 				'one' => q(ਟੌਂਗਨ ਪੈਂਗਾ),
 				'other' => q(ਟੌਂਗਨ ਪੈਂਗਾ),
 			},
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(ਤੁਰਕਿਸ਼ ਲਿਰਾ),
+				'currency' => q(ਤੁਰਕਿਸ਼ ਲਿਰਾ),
 				'one' => q(ਤੁਰਕਿਸ਼ ਲਿਰਾ),
 				'other' => q(ਤੁਰਕਿਸ਼ ਲਿਰਾ),
 			},
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(ਟ੍ਰਿਨੀਡਾਡ ਅਤੇ ਟੋਬਾਗੋ ਡਾਲਰ),
+				'currency' => q(ਟ੍ਰਿਨੀਡਾਡ ਅਤੇ ਟੋਬਾਗੋ ਡਾਲਰ),
 				'one' => q(ਟ੍ਰਿਨੀਡਾਡ ਅਤੇ ਟੋਬਾਗੋ ਡਾਲਰ),
 				'other' => q(ਟ੍ਰਿਨੀਡਾਡ ਅਤੇ ਟੋਬਾਗੋ ਡਾਲਰ),
 			},
@@ -2573,28 +2572,28 @@ has 'curriencies' => (
 		'TWD' => {
 			symbol => 'NT$',
 			display_name => {
-				'default' => q(ਨਵਾਂ ਤਾਇਵਾਨ ਡਾਲਰ),
+				'currency' => q(ਨਵਾਂ ਤਾਇਵਾਨ ਡਾਲਰ),
 				'one' => q(ਨਵਾਂ ਤਾਇਵਾਨ ਡਾਲਰ),
 				'other' => q(ਨਵਾਂ ਤਾਇਵਾਨ ਡਾਲਰ),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(ਤਨਜ਼ਾਨੀਆਈ ਸ਼ਿਲਿੰਗ),
+				'currency' => q(ਤਨਜ਼ਾਨੀਆਈ ਸ਼ਿਲਿੰਗ),
 				'one' => q(ਤਨਜ਼ਾਨੀਆਈ ਸ਼ਿਲਿੰਗ),
 				'other' => q(ਤਨਜ਼ਾਨੀਆਈ ਸ਼ਿਲਿੰਗ),
 			},
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(ਯੂਕਰੇਨੀਆਈ ਰਿਵਨਿਆ),
+				'currency' => q(ਯੂਕਰੇਨੀਆਈ ਰਿਵਨਿਆ),
 				'one' => q(ਯੂਕਰੇਨੀਆਈ ਰਿਵਨਿਆ),
 				'other' => q(ਯੂਕਰੇਨੀਆਈ ਰਿਵਨਿਆ),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(ਯੂਗਾਂਡਨ ਸ਼ਿਲਿੰਗ),
+				'currency' => q(ਯੂਗਾਂਡਨ ਸ਼ਿਲਿੰਗ),
 				'one' => q(ਯੂਗਾਂਡਨ ਸ਼ਿਲਿੰਗ),
 				'other' => q(ਯੂਗਾਂਡਨ ਸ਼ਿਲਿੰਗ),
 			},
@@ -2602,28 +2601,28 @@ has 'curriencies' => (
 		'USD' => {
 			symbol => 'US$',
 			display_name => {
-				'default' => q(ਯੂ.ਐਸ. ਡਾਲਰ),
+				'currency' => q(ਯੂ.ਐਸ. ਡਾਲਰ),
 				'one' => q(ਯੂ.ਐਸ. ਡਾਲਰ),
 				'other' => q(ਯੂ.ਐਸ. ਡਾਲਰ),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(ਉਰੂਗੁਵਾਇਨ ਪੈਸੋ),
+				'currency' => q(ਉਰੂਗੁਵਾਇਨ ਪੈਸੋ),
 				'one' => q(ਉਰੂਗੁਵਾਇਨ ਪੈਸੋ),
 				'other' => q(ਉਰੂਗੁਵਾਇਨ ਪੈਸੋ),
 			},
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(ਉਜ਼ਬੇਕਿਸਤਾਨ ਸੋਮ),
+				'currency' => q(ਉਜ਼ਬੇਕਿਸਤਾਨ ਸੋਮ),
 				'one' => q(ਉਜ਼ਬੇਕਿਸਤਾਨ ਸੋਮ),
 				'other' => q(ਉਜ਼ਬੇਕਿਸਤਾਨ ਸੋਮ),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(ਵੇਨੇਜ਼ੂਏਲਨ ਬੋਲੀਵਰ),
+				'currency' => q(ਵੇਨੇਜ਼ੂਏਲਨ ਬੋਲੀਵਰ),
 				'one' => q(ਵੇਨੇਜ਼ੂਏਲਨ ਬੋਲੀਵਰ),
 				'other' => q(ਵੇਨੇਜ਼ੂਏਲਨ ਬੋਲੀਵਰ),
 			},
@@ -2631,21 +2630,21 @@ has 'curriencies' => (
 		'VND' => {
 			symbol => '₫',
 			display_name => {
-				'default' => q(ਵਿਯਤਨਾਮੀ ਡੋਂਗ),
+				'currency' => q(ਵਿਯਤਨਾਮੀ ਡੋਂਗ),
 				'one' => q(ਵਿਯਤਨਾਮੀ ਡੋਂਗ),
 				'other' => q(ਵਿਯਤਨਾਮੀ ਡੋਂਗ),
 			},
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(ਵਾਨੂਆਟੂ ਵਾਟੂ),
+				'currency' => q(ਵਾਨੂਆਟੂ ਵਾਟੂ),
 				'one' => q(ਵਾਨੂਆਟੂ ਵਾਟੂ),
 				'other' => q(ਵਾਨੂਆਟੂ ਵਾਟੂ),
 			},
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(ਸਾਮੋਆਈ ਤਾਲਾ),
+				'currency' => q(ਸਾਮੋਆਈ ਤਾਲਾ),
 				'one' => q(ਸਾਮੋਆਈ ਤਾਲਾ),
 				'other' => q(ਸਾਮੋਆਈ ਤਾਲਾ),
 			},
@@ -2653,15 +2652,15 @@ has 'curriencies' => (
 		'XAF' => {
 			symbol => 'FCFA',
 			display_name => {
-				'default' => q(ਫ੍ਰੈਂਕ (CFA BEAC)),
-				'one' => q(ਫ੍ਰੈਂਕ (CFA BEAC)),
-				'other' => q(ਫ੍ਰੈਂਕ (CFA BEAC)),
+				'currency' => q(ਫ੍ਰੈਂਕ \(CFA BEAC\)),
+				'one' => q(ਫ੍ਰੈਂਕ \(CFA BEAC\)),
+				'other' => q(ਫ੍ਰੈਂਕ \(CFA BEAC\)),
 			},
 		},
 		'XCD' => {
 			symbol => 'EC$',
 			display_name => {
-				'default' => q(ਪੂਰਬੀ ਕੈਰੇਬੀਅਨ ਡਾਲਰ),
+				'currency' => q(ਪੂਰਬੀ ਕੈਰੇਬੀਅਨ ਡਾਲਰ),
 				'one' => q(ਪੂਰਬੀ ਕੈਰੇਬੀਅਨ ਡਾਲਰ),
 				'other' => q(ਪੂਰਬੀ ਕੈਰੇਬੀਅਨ ਡਾਲਰ),
 			},
@@ -2669,43 +2668,43 @@ has 'curriencies' => (
 		'XOF' => {
 			symbol => 'CFA',
 			display_name => {
-				'default' => q(ਫ੍ਰੈਂਕ (CFA BCEAO)),
-				'one' => q(ਫ੍ਰੈਂਕ (CFA BCEAO)),
-				'other' => q(ਫ੍ਰੈਂਕ (CFA BCEAO)),
+				'currency' => q(ਫ੍ਰੈਂਕ \(CFA BCEAO\)),
+				'one' => q(ਫ੍ਰੈਂਕ \(CFA BCEAO\)),
+				'other' => q(ਫ੍ਰੈਂਕ \(CFA BCEAO\)),
 			},
 		},
 		'XPF' => {
 			symbol => 'CFPF',
 			display_name => {
-				'default' => q(ਫ੍ਰੈਂਕ (CFP)),
-				'one' => q(ਫ੍ਰੈਂਕ (CFP)),
-				'other' => q(ਫ੍ਰੈਂਕ (CFP)),
+				'currency' => q(ਫ੍ਰੈਂਕ \(CFP\)),
+				'one' => q(ਫ੍ਰੈਂਕ \(CFP\)),
+				'other' => q(ਫ੍ਰੈਂਕ \(CFP\)),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(ਅਗਿਆਤ ਮੁਦਰਾ),
-				'one' => q((ਮੁਦਰਾ ਦੀ ਅਗਿਆਤ ਇਕਾਈ)),
-				'other' => q((ਅਗਿਆਤ ਮੁਦਰਾ)),
+				'currency' => q(ਅਗਿਆਤ ਮੁਦਰਾ),
+				'one' => q(\(ਮੁਦਰਾ ਦੀ ਅਗਿਆਤ ਇਕਾਈ\)),
+				'other' => q(\(ਅਗਿਆਤ ਮੁਦਰਾ\)),
 			},
 		},
 		'YER' => {
 			display_name => {
-				'default' => q(ਯਮਨੀ ਰਿਆਲ),
+				'currency' => q(ਯਮਨੀ ਰਿਆਲ),
 				'one' => q(ਯਮਨੀ ਰਿਆਲ),
 				'other' => q(ਯਮਨੀ ਰਿਆਲ),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(ਦੱਖਣੀ ਅਫਰੀਕੀ ਰੈਂਡ),
+				'currency' => q(ਦੱਖਣੀ ਅਫਰੀਕੀ ਰੈਂਡ),
 				'one' => q(ਦੱਖਣੀ ਅਫਰੀਕੀ ਰੈਂਡ),
 				'other' => q(ਦੱਖਣੀ ਅਫਰੀਕੀ ਰੈਂਡ),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(ਜ਼ਾਮਬੀਆਈ ਕਵਾਚਾ),
+				'currency' => q(ਜ਼ਾਮਬੀਆਈ ਕਵਾਚਾ),
 				'one' => q(ਜ਼ਾਮਬੀਆਈ ਕਵਾਚਾ),
 				'other' => q(ਜ਼ਾਮਬੀਆਈ ਕਵਾਚਾ),
 			},

@@ -1,6 +1,6 @@
-package Locale::CLDR::Eo;
+package Locale::CLDR::Eo v0.0.4;
 # This file auto generated from Data\common\main\eo.xml
-#	on Mon 31 Mar 12:12:20 am GMT
+#	on Sun 13 Apr 10:09:38 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -431,3 +431,499 @@ has 'characters' => (
 	},
 );
 
+has 'number_symbols' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'decimal' => q(,),
+			'exponential' => q(),
+			'group' => q( ),
+			'infinity' => q(),
+			'list' => q(),
+			'minusSign' => q(),
+			'nan' => q(),
+			'perMille' => q(),
+			'percentSign' => q(),
+			'plusSign' => q(),
+			'superscriptingExponent' => q(),
+		},
+	} }
+);
+
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'AUD' => {
+			display_name => {
+				'currency' => q(aŭstrala dolaro),
+			},
+		},
+		'BRL' => {
+			display_name => {
+				'currency' => q(brazila realo),
+			},
+		},
+		'CNY' => {
+			display_name => {
+				'currency' => q(ĉina juano),
+			},
+		},
+		'EUR' => {
+			display_name => {
+				'currency' => q(eŭro),
+			},
+		},
+		'GBP' => {
+			display_name => {
+				'currency' => q(brita sterlinga funto),
+			},
+		},
+		'INR' => {
+			display_name => {
+				'currency' => q(hinda rupio),
+			},
+		},
+		'JPY' => {
+			display_name => {
+				'currency' => q(japana eno),
+			},
+		},
+		'NOK' => {
+			display_name => {
+				'currency' => q(norvega krono),
+			},
+		},
+		'RUB' => {
+			display_name => {
+				'currency' => q(rusa rublo),
+			},
+		},
+		'USD' => {
+			display_name => {
+				'currency' => q(usona dolaro),
+			},
+		},
+		'XAG' => {
+			display_name => {
+				'currency' => q(arĝento),
+			},
+		},
+		'XAU' => {
+			display_name => {
+				'currency' => q(oro),
+			},
+		},
+		'XBB' => {
+			display_name => {
+				'currency' => q(eŭropa monunuo),
+			},
+		},
+		'XFO' => {
+			display_name => {
+				'currency' => q(franca ora franko),
+			},
+		},
+		'XPD' => {
+			display_name => {
+				'currency' => q(paladio),
+			},
+		},
+		'XPT' => {
+			display_name => {
+				'currency' => q(plateno),
+			},
+		},
+	} },
+);
+
+
+has 'calendar_months' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'jan',
+							'feb',
+							'mar',
+							'apr',
+							'maj',
+							'jun',
+							'jul',
+							'aŭg',
+							'sep',
+							'okt',
+							'nov',
+							'dec'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'januaro',
+							'februaro',
+							'marto',
+							'aprilo',
+							'majo',
+							'junio',
+							'julio',
+							'aŭgusto',
+							'septembro',
+							'oktobro',
+							'novembro',
+							'decembro'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_days' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						mon => 'lu',
+						tue => 'ma',
+						wed => 'me',
+						thu => 'ĵa',
+						fri => 've',
+						sat => 'sa',
+						sun => 'di'
+					},
+					wide => {
+						mon => 'lundo',
+						tue => 'mardo',
+						wed => 'merkredo',
+						thu => 'ĵaŭdo',
+						fri => 'vendredo',
+						sat => 'sabato',
+						sun => 'dimanĉo'
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_quarters' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {0 => 'K1',
+						1 => 'K2',
+						2 => 'K3',
+						3 => 'K4'
+					},
+					wide => {0 => '1a kvaronjaro',
+						1 => '2a kvaronjaro',
+						2 => '3a kvaronjaro',
+						3 => '4a kvaronjaro'
+					},
+				},
+			},
+	} },
+);
+
+has 'day_periods' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			'format' => {
+				'wide' => {
+					'pm' => q{ptm},
+					'am' => q{atm},
+				},
+			},
+		},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			abbreviated => {
+				'0' => 'aK',
+				'1' => 'pK'
+			},
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			'full' => q{EEEE, d-'a' 'de' MMMM y G},
+			'long' => q{G y-MMMM-dd},
+			'medium' => q{G y-MMM-dd},
+			'short' => q{GGGGG y-MM-dd},
+		},
+		'gregorian' => {
+			'full' => q{EEEE, d-'a' 'de' MMMM y},
+			'long' => q{y-MMMM-dd},
+			'medium' => q{y-MMM-dd},
+			'short' => q{yy-MM-dd},
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			'full' => q{H-'a' 'horo' 'kaj' m:ss zzzz},
+			'long' => q{HH:mm:ss z},
+			'medium' => q{HH:mm:ss},
+			'short' => q{HH:mm},
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			H => {
+				H => q{HH-HH},
+			},
+			Hm => {
+				H => q{HH:mm-HH:mm},
+				m => q{HH:mm-HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm-HH:mm v},
+				m => q{HH:mm-HH:mm v},
+			},
+			Hv => {
+				H => q{HH-HH v},
+			},
+			M => {
+				M => q{M-M},
+			},
+			MEd => {
+				M => q{E, MM-dd - E, MM-dd},
+				d => q{E, MM-dd - E, MM-dd},
+			},
+			MMM => {
+				M => q{MMM-MMM},
+			},
+			MMMEd => {
+				M => q{E, MMM-dd - E, MMM-dd},
+				d => q{E, MMM-dd - E, MMM-dd},
+			},
+			MMMd => {
+				M => q{MMM-dd - MMM-dd},
+				d => q{MMM-dd - MMM-dd},
+			},
+			Md => {
+				M => q{MM-dd - MM-dd},
+				d => q{MM-dd - MM-dd},
+			},
+			d => {
+				d => q{d-d},
+			},
+			fallback => '{0} - {1}',
+			h => {
+				h => q{h-h a},
+			},
+			hm => {
+				h => q{h:mm-h:mm a},
+				m => q{h:mm-h:mm a},
+			},
+			hmv => {
+				h => q{h:mm-h:mm a v},
+				m => q{h:mm-h:mm a v},
+			},
+			hv => {
+				h => q{h-h a v},
+			},
+			y => {
+				y => q{y-y},
+			},
+			yM => {
+				M => q{y-MM - y-MM},
+				y => q{y-MM - y-MM},
+			},
+			yMEd => {
+				M => q{E, y-MM-dd - E, y-MM-dd},
+				d => q{E, y-MM-dd - E, y-MM-dd},
+				y => q{E, y-MM-dd - E, y-MM-dd},
+			},
+			yMMM => {
+				M => q{y-MMM - y-MMM},
+				y => q{y-MMM - y-MMM},
+			},
+			yMMMEd => {
+				M => q{E, d-'a' 'de' MMM - E, d-'a' 'de' MMM y},
+				d => q{E, d-'a' - E, d-'a' 'de' MMM y},
+				y => q{E, d-'a' 'de' MMM y - E, d-'a' 'de' MMM y},
+			},
+			yMMMd => {
+				M => q{y-MMM-dd - y-MMM-dd},
+				d => q{y-MMM-dd - y-MMM-dd},
+				y => q{y-MMM-dd - y-MMM-dd},
+			},
+			yMd => {
+				M => q{y-MM-dd - y-MM-dd},
+				d => q{y-MM-dd - y-MM-dd},
+				y => q{y-MM-dd - y-MM-dd},
+			},
+		},
+		'generic' => {
+			H => {
+				H => q{HH-HH},
+			},
+			Hm => {
+				H => q{HH:mm-HH:mm},
+				m => q{HH:mm-HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm-HH:mm v},
+				m => q{HH:mm-HH:mm v},
+			},
+			Hv => {
+				H => q{HH-HH v},
+			},
+			M => {
+				M => q{M-M},
+			},
+			MEd => {
+				M => q{E, MM-dd - E, MM-dd},
+				d => q{E, MM-dd - E, MM-dd},
+			},
+			MMM => {
+				M => q{MMM-MMM},
+			},
+			MMMEd => {
+				M => q{E, MMM-dd - E, MMM-dd},
+				d => q{E, MMM-dd - E, MMM-dd},
+			},
+			MMMd => {
+				M => q{MMM-dd - MMM-dd},
+				d => q{MMM-dd - MMM-dd},
+			},
+			Md => {
+				M => q{MM-dd - MM-dd},
+				d => q{MM-dd - MM-dd},
+			},
+			d => {
+				d => q{d-d},
+			},
+			fallback => '{0} - {1}',
+			h => {
+				h => q{h-h a},
+			},
+			hm => {
+				h => q{h:mm-h:mm a},
+				m => q{h:mm-h:mm a},
+			},
+			hmv => {
+				h => q{h:mm-h:mm a v},
+				m => q{h:mm-h:mm a v},
+			},
+			hv => {
+				h => q{h-h a v},
+			},
+			y => {
+				y => q{G y-y},
+			},
+			yM => {
+				M => q{G y-MM - y-MM},
+				y => q{G y-MM - y-MM},
+			},
+			yMEd => {
+				M => q{E, y-MM-dd - E, y-MM-dd},
+				d => q{E, y-MM-dd - E, y-MM-dd},
+				y => q{E, y-MM-dd - E, y-MM-dd},
+			},
+			yMMM => {
+				M => q{G y-MMM - y-MMM},
+				y => q{G y-MMM - y-MMM},
+			},
+			yMMMEd => {
+				M => q{E, d-'a' 'de' MMM - E, d-'a' 'de' MMM y G},
+				d => q{E, d-'a' - E, d-'a' 'de' MMM y G},
+				y => q{E, d-'a' 'de' MMM y - E, d-'a' 'de' MMM y G},
+			},
+			yMMMd => {
+				M => q{G y-MMM-dd - y-MMM-dd},
+				d => q{G y-MMM-dd - y-MMM-dd},
+				y => q{G y-MMM-dd - y-MMM-dd},
+			},
+			yMd => {
+				M => q{G y-MM-dd - y-MM-dd},
+				d => q{G y-MM-dd - y-MM-dd},
+				y => q{G y-MM-dd - y-MM-dd},
+			},
+		},
+	} },
+);
+
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

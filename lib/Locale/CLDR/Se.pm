@@ -1,6 +1,6 @@
-package Locale::CLDR::Se;
+package Locale::CLDR::Se v0.0.4;
 # This file auto generated from Data\common\main\se.xml
-#	on Mon 31 Mar  1:50:44 am GMT
+#	on Sun 13 Apr 11:51:09 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -1314,7 +1314,6 @@ has 'units' => (
 			} }
 );
 
-
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -1604,7 +1603,7 @@ has 'curriencies' => (
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(euro),
+				'currency' => q(euro),
 				'one' => q(euro),
 				'other' => q(euro),
 				'two' => q(euro),
@@ -1612,7 +1611,7 @@ has 'curriencies' => (
 		},
 		'FIM' => {
 			display_name => {
-				'default' => q(suoma márkki),
+				'currency' => q(suoma márkki),
 			},
 		},
 		'HKD' => {
@@ -1630,7 +1629,7 @@ has 'curriencies' => (
 		'NOK' => {
 			symbol => 'kr',
 			display_name => {
-				'default' => q(norgga kruvdno),
+				'currency' => q(norgga kruvdno),
 				'one' => q(norgga kruvdno),
 				'other' => q(norgga kruvdno),
 				'two' => q(norgga kruvdno),
@@ -1639,7 +1638,7 @@ has 'curriencies' => (
 		'SEK' => {
 			symbol => 'Skr',
 			display_name => {
-				'default' => q(ruoŧŧa kruvdno),
+				'currency' => q(ruoŧŧa kruvdno),
 				'one' => q(ruoŧŧa kruvdno),
 				'other' => q(ruoŧŧa kruvdno),
 				'two' => q(ruoŧŧa kruvdno),
@@ -1650,12 +1649,12 @@ has 'curriencies' => (
 		},
 		'XAG' => {
 			display_name => {
-				'default' => q(uns silba),
+				'currency' => q(uns silba),
 			},
 		},
 		'XAU' => {
 			display_name => {
-				'default' => q(uns golli),
+				'currency' => q(uns golli),
 			},
 		},
 	} },
@@ -1781,13 +1780,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'am' => q{iđitbeaivet},
-					'pm' => q{eahketbeaivet},
-				},
 				'abbreviated' => {
 					'am' => q{i.b.},
 					'pm' => q{e.b.},
+				},
+				'wide' => {
+					'pm' => q{eahketbeaivet},
+					'am' => q{iđitbeaivet},
 				},
 			},
 			'stand-alone' => {

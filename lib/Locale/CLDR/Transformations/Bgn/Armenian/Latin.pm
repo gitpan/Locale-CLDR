@@ -1,6 +1,6 @@
-package Locale::CLDR::Transformations::Bgn::Armenian::Latin;
+package Locale::CLDR::Transformations::Bgn::Armenian::Latin v0.0.4;
 # This file auto generated from Data\common\transforms\Armenian-Latin-BGN.xml
-#	on Sat 12 Apr  8:33:13 am GMT
+#	on Sun 13 Apr  9:29:57 am GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
 use v5.18;

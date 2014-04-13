@@ -1,6 +1,6 @@
-package Locale::CLDR::Mas;
+package Locale::CLDR::Mas v0.0.4;
 # This file auto generated from Data\common\main\mas.xml
-#	on Mon 31 Mar  1:16:20 am GMT
+#	on Sun 13 Apr 11:16:24 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -376,9 +376,6 @@ has 'nostr' => (
 	default		=> sub { qr'^(?i:Á'ā|A|no|n)$' }
 );
 
-	} }
-);
-
 has 'number_currency_formats' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -408,278 +405,278 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Iropiyianí ɔ́ɔ̄ lmarabu),
+				'currency' => q(Iropiyianí ɔ́ɔ̄ lmarabu),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Iropiyianí e Angola),
+				'currency' => q(Iropiyianí e Angola),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Iropiyianí e Austria),
+				'currency' => q(Iropiyianí e Austria),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Iropiyianí e Bahareini),
+				'currency' => q(Iropiyianí e Bahareini),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Iropiyianí e Burundi),
+				'currency' => q(Iropiyianí e Burundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Iropiyianí e Botswana),
+				'currency' => q(Iropiyianí e Botswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Iropiyianí e Kanada),
+				'currency' => q(Iropiyianí e Kanada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Iropiyianí e Kongo),
+				'currency' => q(Iropiyianí e Kongo),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Iropiyianí e Uswisi),
+				'currency' => q(Iropiyianí e Uswisi),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Iropiyianí e China),
+				'currency' => q(Iropiyianí e China),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Iropiyianí e Kepuvede),
+				'currency' => q(Iropiyianí e Kepuvede),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Iropiyianí e Jibuti),
+				'currency' => q(Iropiyianí e Jibuti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Iropiyianí e Algeria),
+				'currency' => q(Iropiyianí e Algeria),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Iropiyianí e Misri),
+				'currency' => q(Iropiyianí e Misri),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Iropiyianí e Eritrea),
+				'currency' => q(Iropiyianí e Eritrea),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Iropiyianí e Uhabeshi),
+				'currency' => q(Iropiyianí e Uhabeshi),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Iropiyianí e yuro),
+				'currency' => q(Iropiyianí e yuro),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Iropiyianí e Nkɨ́resa),
+				'currency' => q(Iropiyianí e Nkɨ́resa),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Iropiyianí e Ghana),
+				'currency' => q(Iropiyianí e Ghana),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Iropiyianí e Gambia),
+				'currency' => q(Iropiyianí e Gambia),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Iropiyianí e Gine),
+				'currency' => q(Iropiyianí e Gine),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Iropiyianí e India),
+				'currency' => q(Iropiyianí e India),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Iropiyianí e Japani),
+				'currency' => q(Iropiyianí e Japani),
 			},
 		},
 		'KES' => {
 			symbol => 'Ksh',
 			display_name => {
-				'default' => q(Iropiyianí e Kenya),
+				'currency' => q(Iropiyianí e Kenya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Iropiyianí e Komoro),
+				'currency' => q(Iropiyianí e Komoro),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Iropiyianí e Liberia),
+				'currency' => q(Iropiyianí e Liberia),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Iropiyianí e Lesoto),
+				'currency' => q(Iropiyianí e Lesoto),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Iropiyianí e Libya),
+				'currency' => q(Iropiyianí e Libya),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Iropiyianí e Moroko),
+				'currency' => q(Iropiyianí e Moroko),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Iropiyianí e Bukini),
+				'currency' => q(Iropiyianí e Bukini),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Iropiyianí e Moritania),
+				'currency' => q(Iropiyianí e Moritania),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Iropiyianí e Morisi),
+				'currency' => q(Iropiyianí e Morisi),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Iropiyianí e Malawi),
+				'currency' => q(Iropiyianí e Malawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Iropiyianí e Msumbiji),
+				'currency' => q(Iropiyianí e Msumbiji),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Iropiyianí e Namibia),
+				'currency' => q(Iropiyianí e Namibia),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Iropiyianí e Nijeria),
+				'currency' => q(Iropiyianí e Nijeria),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Iropiyianí e Rwanda),
+				'currency' => q(Iropiyianí e Rwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Iropiyianí e Saudi),
+				'currency' => q(Iropiyianí e Saudi),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Iropiyianí e Shelisheli),
+				'currency' => q(Iropiyianí e Shelisheli),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Iropiyianí e Sudani),
+				'currency' => q(Iropiyianí e Sudani),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Iropiyianí e Santahelena),
+				'currency' => q(Iropiyianí e Santahelena),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Iropiyianí e leoni),
+				'currency' => q(Iropiyianí e leoni),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Iropiyianí e Somalia),
+				'currency' => q(Iropiyianí e Somalia),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Iropiyianí e Saotome),
+				'currency' => q(Iropiyianí e Saotome),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Iropiyianí e lilangeni),
+				'currency' => q(Iropiyianí e lilangeni),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Iropiyianí e Tunisia),
+				'currency' => q(Iropiyianí e Tunisia),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Iropiyianí e Tanzania),
+				'currency' => q(Iropiyianí e Tanzania),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Iropiyianí e Uganda),
+				'currency' => q(Iropiyianí e Uganda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Iropiyianí ɔ́ɔ̄ lamarekani),
+				'currency' => q(Iropiyianí ɔ́ɔ̄ lamarekani),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Iropiyianí e CFA BEAC),
+				'currency' => q(Iropiyianí e CFA BEAC),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Iropiyianí e CFA BCEAO),
+				'currency' => q(Iropiyianí e CFA BCEAO),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Iropiyianí e Afrika Kusini),
+				'currency' => q(Iropiyianí e Afrika Kusini),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Iropiyianí e Sambia (1968–2012)),
+				'currency' => q(Iropiyianí e Sambia \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Iropiyianí e Sambia),
+				'currency' => q(Iropiyianí e Sambia),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Iropiyianí e Simbabwe),
+				'currency' => q(Iropiyianí e Simbabwe),
 			},
 		},
 	} },
@@ -888,7 +885,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -911,7 +908,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -953,3 +950,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

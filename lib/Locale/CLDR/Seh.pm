@@ -1,6 +1,6 @@
-package Locale::CLDR::Seh;
+package Locale::CLDR::Seh v0.0.4;
 # This file auto generated from Data\common\main\seh.xml
-#	on Mon 31 Mar  1:50:46 am GMT
+#	on Sun 13 Apr 11:51:10 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -408,288 +408,288 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Dirém dos Emirados Árabes Unidos),
+				'currency' => q(Dirém dos Emirados Árabes Unidos),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Cuanza angolano),
+				'currency' => q(Cuanza angolano),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Dólar australiano),
+				'currency' => q(Dólar australiano),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Dinar bareinita),
+				'currency' => q(Dinar bareinita),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Franco do Burundi),
+				'currency' => q(Franco do Burundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Pula botsuanesa),
+				'currency' => q(Pula botsuanesa),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Dólar canadense),
+				'currency' => q(Dólar canadense),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Franco congolês),
+				'currency' => q(Franco congolês),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Franco suíço),
+				'currency' => q(Franco suíço),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Yuan Renminbi chinês),
+				'currency' => q(Yuan Renminbi chinês),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Escudo cabo-verdiano),
+				'currency' => q(Escudo cabo-verdiano),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Franco do Djibuti),
+				'currency' => q(Franco do Djibuti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Dinar argelino),
+				'currency' => q(Dinar argelino),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Libra egípcia),
+				'currency' => q(Libra egípcia),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Nakfa da Eritréia),
+				'currency' => q(Nakfa da Eritréia),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Birr etíope),
+				'currency' => q(Birr etíope),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Euro),
+				'currency' => q(Euro),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Libra esterlina britânica),
+				'currency' => q(Libra esterlina britânica),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Cedi de Gana (1979–2007)),
+				'currency' => q(Cedi de Gana \(1979–2007\)),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Dalasi de Gâmbia),
+				'currency' => q(Dalasi de Gâmbia),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Syli da Guiné),
+				'currency' => q(Syli da Guiné),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Rúpia indiana),
+				'currency' => q(Rúpia indiana),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Iene japonês),
+				'currency' => q(Iene japonês),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Xelim queniano),
+				'currency' => q(Xelim queniano),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Franco de Comores),
+				'currency' => q(Franco de Comores),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Dólar liberiano),
+				'currency' => q(Dólar liberiano),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Loti do Lesoto),
+				'currency' => q(Loti do Lesoto),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Dinar líbio),
+				'currency' => q(Dinar líbio),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Dirém marroquino),
+				'currency' => q(Dirém marroquino),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Franco de Madagascar),
+				'currency' => q(Franco de Madagascar),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Ouguiya da Mauritânia),
+				'currency' => q(Ouguiya da Mauritânia),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Rupia de Maurício),
+				'currency' => q(Rupia de Maurício),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Cuacha do Maláui),
+				'currency' => q(Cuacha do Maláui),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Metical antigo de Moçambique),
+				'currency' => q(Metical antigo de Moçambique),
 			},
 		},
 		'MZN' => {
 			symbol => 'MTn',
 			display_name => {
-				'default' => q(Metical de Moçambique),
+				'currency' => q(Metical de Moçambique),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Dólar da Namíbia),
+				'currency' => q(Dólar da Namíbia),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Naira nigeriana),
+				'currency' => q(Naira nigeriana),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Franco ruandês),
+				'currency' => q(Franco ruandês),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Rial saudita),
+				'currency' => q(Rial saudita),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Rupia das Seychelles),
+				'currency' => q(Rupia das Seychelles),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Dinar sudanês),
+				'currency' => q(Dinar sudanês),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(Libra sudanesa antiga),
+				'currency' => q(Libra sudanesa antiga),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Libra de Santa Helena),
+				'currency' => q(Libra de Santa Helena),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Leone de Serra Leoa),
+				'currency' => q(Leone de Serra Leoa),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Xelim somali),
+				'currency' => q(Xelim somali),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Dobra de São Tomé e Príncipe),
+				'currency' => q(Dobra de São Tomé e Príncipe),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lilangeni da Suazilândia),
+				'currency' => q(Lilangeni da Suazilândia),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Dinar tunisiano),
+				'currency' => q(Dinar tunisiano),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Xelim da Tanzânia),
+				'currency' => q(Xelim da Tanzânia),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Xelim ugandense (1966–1987)),
+				'currency' => q(Xelim ugandense \(1966–1987\)),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Dólar norte-americano),
+				'currency' => q(Dólar norte-americano),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Franco CFA BEAC),
+				'currency' => q(Franco CFA BEAC),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Franco CFA BCEAO),
+				'currency' => q(Franco CFA BCEAO),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Rand sul-africano),
+				'currency' => q(Rand sul-africano),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Cuacha zambiano (1968–2012)),
+				'currency' => q(Cuacha zambiano \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Cuacha zambiano),
+				'currency' => q(Cuacha zambiano),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Dólar do Zimbábue),
+				'currency' => q(Dólar do Zimbábue),
 			},
 		},
 	} },
@@ -881,7 +881,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			HHmm => q{HH:mm},
 			HHmmss => q{HH:mm:ss},
 			Hm => q{H:mm},
@@ -908,7 +908,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{y QQQ},
 			yQQQQ => q{y QQQQ},
 		},
-		'gregorian' => {
+		'generic' => {
 			HHmm => q{HH:mm},
 			HHmmss => q{HH:mm:ss},
 			Hm => q{H:mm},
@@ -954,3 +954,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

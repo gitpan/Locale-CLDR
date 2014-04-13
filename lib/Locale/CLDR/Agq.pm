@@ -1,6 +1,6 @@
-package Locale::CLDR::Agq;
+package Locale::CLDR::Agq v0.0.4;
 # This file auto generated from Data\common\main\agq.xml
-#	on Sun 30 Mar 11:35:10 pm GMT
+#	on Sun 13 Apr  9:31:12 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -432,277 +432,277 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Dilàm è Yùnaetɛ Alab Emelɛ̀),
+				'currency' => q(Dilàm è Yùnaetɛ Alab Emelɛ̀),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Kwanzà è Àŋgolà),
+				'currency' => q(Kwanzà è Àŋgolà),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Dɔlà e Ùsɨ̀tɛ̀lɛlìa),
+				'currency' => q(Dɔlà e Ùsɨ̀tɛ̀lɛlìa),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Dinà è Balae),
+				'currency' => q(Dinà è Balae),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Fàlâŋ è Bùlundì),
+				'currency' => q(Fàlâŋ è Bùlundì),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Kpuwlà è Botɨshǔanà),
+				'currency' => q(Kpuwlà è Botɨshǔanà),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Dɔlà è Kanadà),
+				'currency' => q(Dɔlà è Kanadà),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Fàlâŋ è Kuŋgùlê),
+				'currency' => q(Fàlâŋ è Kuŋgùlê),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Fàlâŋ è Sues),
+				'currency' => q(Fàlâŋ è Sues),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Yùwân Lèmembi è Chaenî),
+				'currency' => q(Yùwân Lèmembi è Chaenî),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Kàbòvàdianù è Èsùkudò),
+				'currency' => q(Kàbòvàdianù è Èsùkudò),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Fàlâŋ è Dzìbutì),
+				'currency' => q(Fàlâŋ è Dzìbutì),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Dinà è Àdzɛlìa),
+				'currency' => q(Dinà è Àdzɛlìa),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Bɔ̀ŋ è Edzì),
+				'currency' => q(Bɔ̀ŋ è Edzì),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Nakafa è Èletɨ̀làe),
+				'currency' => q(Nakafa è Èletɨ̀làe),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Bîi è Etyǒkpìa),
+				'currency' => q(Bîi è Etyǒkpìa),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Yulù),
+				'currency' => q(Yulù),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Bɔ̀ŋ Sɨ̀telè è Bèletì),
+				'currency' => q(Bɔ̀ŋ Sɨ̀telè è Bèletì),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Sɛ̀di è Gaanà),
+				'currency' => q(Sɛ̀di è Gaanà),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Dàlasì è Gambìa),
+				'currency' => q(Dàlasì è Gambìa),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Fàlâŋ è Ginè),
+				'currency' => q(Fàlâŋ è Ginè),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Lukpì è Endìa),
+				'currency' => q(Lukpì è Endìa),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Ghɨ̂n Dzàkpànê),
+				'currency' => q(Ghɨ̂n Dzàkpànê),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Shwɨlà tɨ Kenyà),
+				'currency' => q(Shwɨlà tɨ Kenyà),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Fàlâŋ è Komolìa),
+				'currency' => q(Fàlâŋ è Komolìa),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Dɔlà Làebɛlìa),
+				'currency' => q(Dɔlà Làebɛlìa),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Lɔtì Lèsutù),
+				'currency' => q(Lɔtì Lèsutù),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Dinà è Lebìa),
+				'currency' => q(Dinà è Lebìa),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Dilàm è Mòlokò),
+				'currency' => q(Dilàm è Mòlokò),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Àlǐalè è Màlàgasì),
+				'currency' => q(Àlǐalè è Màlàgasì),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Ùgueya è Mùlètenyìa),
+				'currency' => q(Ùgueya è Mùlètenyìa),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Lukpìi è Mùleshòs),
+				'currency' => q(Lukpìi è Mùleshòs),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Kwachà è Màlawè),
+				'currency' => q(Kwachà è Màlawè),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Mètikà è Mùzàmbî),
+				'currency' => q(Mètikà è Mùzàmbî),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Dɔlà è Nàmibìa),
+				'currency' => q(Dɔlà è Nàmibìa),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Naelà è Gɨ̀anyɨ),
+				'currency' => q(Naelà è Gɨ̀anyɨ),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Fàlâŋ è Lùwandà),
+				'currency' => q(Fàlâŋ è Lùwandà),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Leyà è Sàwudì),
+				'currency' => q(Leyà è Sàwudì),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Lukpìi è Sɛchɛ̀lɛ̀),
+				'currency' => q(Lukpìi è Sɛchɛ̀lɛ̀),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Bɔ̀ŋ è Sùdànê),
+				'currency' => q(Bɔ̀ŋ è Sùdànê),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Bɔ̀ŋ è Sɛ̀n Èlenà),
+				'currency' => q(Bɔ̀ŋ è Sɛ̀n Èlenà),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Lyɔ̂ŋ),
+				'currency' => q(Lyɔ̂ŋ),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Shwɨlà è Sùmalìa),
+				'currency' => q(Shwɨlà è Sùmalìa),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Dɔbàlà è Sàwu Tɔ̀me à Pèlènsipè),
+				'currency' => q(Dɔbàlà è Sàwu Tɔ̀me à Pèlènsipè),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lèlàŋgenè),
+				'currency' => q(Lèlàŋgenè),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Dinà è Tùwneshìa),
+				'currency' => q(Dinà è Tùwneshìa),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Shwɨlà è Tàanzanyìa),
+				'currency' => q(Shwɨlà è Tàanzanyìa),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Shwɨlà è Yùgandà),
+				'currency' => q(Shwɨlà è Yùgandà),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Dɔlà è US),
+				'currency' => q(Dɔlà è US),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(CFA Fàlâŋ BEAC),
+				'currency' => q(CFA Fàlâŋ BEAC),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(CFA Fàlâŋ BCEAO),
+				'currency' => q(CFA Fàlâŋ BCEAO),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Lân è Afɨlekà ghɨ Emàm ghò),
+				'currency' => q(Lân è Afɨlekà ghɨ Emàm ghò),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Kwachà è Zambìa (1968–2012)),
+				'currency' => q(Kwachà è Zambìa \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Kwachà è Zambìa),
+				'currency' => q(Kwachà è Zambìa),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Dɔlà è Zìmbagbɛ̀),
+				'currency' => q(Dɔlà è Zìmbagbɛ̀),
 			},
 		},
 	} },
@@ -846,8 +846,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{a.k},
 					'am' => q{a.g},
+					'pm' => q{a.k},
 				},
 			},
 		},
@@ -927,7 +927,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{d E},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -951,7 +951,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{d E},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -994,3 +994,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

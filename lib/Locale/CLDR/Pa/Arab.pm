@@ -1,6 +1,6 @@
-package Locale::CLDR::Pa::Arab;
+package Locale::CLDR::Pa::Arab v0.0.4;
 # This file auto generated from Data\common\main\pa_Arab.xml
-#	on Mon 31 Mar  1:38:13 am GMT
+#	on Sun 13 Apr 11:38:26 am GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use v5.18;
@@ -139,18 +139,18 @@ has 'curriencies' => (
 	default		=> sub { {
 		'EUR' => {
 			display_name => {
-				'default' => q(يورو),
+				'currency' => q(يورو),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(روپئیہ [INR]),
+				'currency' => q(روپئیہ [INR]),
 			},
 		},
 		'PKR' => {
 			symbol => 'ر',
 			display_name => {
-				'default' => q(روپئیہ),
+				'currency' => q(روپئیہ),
 			},
 		},
 	} },
@@ -295,14 +295,14 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			HHmmss => q{HH:mm:ss},
 			Md => q{d/M},
 			mmss => q{mm:ss},
 			yMMM => q{MMM y},
 			yQQQ => q{QQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			HHmmss => q{HH:mm:ss},
 			Md => q{d/M},
 			mmss => q{mm:ss},
@@ -328,3 +328,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

@@ -1,6 +1,6 @@
-package Locale::CLDR::Vo;
+package Locale::CLDR::Vo v0.0.4;
 # This file auto generated from Data\common\main\vo.xml
-#	on Mon 31 Mar  2:25:01 am GMT
+#	on Sun 13 Apr 12:26:19 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;
@@ -96,9 +96,6 @@ has 'nostr' => (
 	isa			=> 'RegexpRef',
 	init_arg	=> undef,
 	default		=> sub { qr'^(?i:no|n)$' }
-);
-
-	} }
 );
 
 has 'calendar_months' => (
@@ -276,14 +273,14 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'evening' => q{soaro},
 					'noon' => q{zedelo},
-					'am' => q{posz.},
-					'morning' => q{büzedelo},
 					'pm' => q{büz.},
+					'evening' => q{soaro},
+					'morning' => q{büzedelo},
+					'night' => q{neito},
+					'am' => q{posz.},
 					'earlyMorning' => q{gödo},
 					'afternoon' => q{poszedelo},
-					'night' => q{neito},
 				},
 			},
 		},
@@ -382,3 +379,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

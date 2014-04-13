@@ -1,6 +1,6 @@
-package Locale::CLDR::Zh::Hans::Sg;
+package Locale::CLDR::Zh::Hans::Sg v0.0.4;
 # This file auto generated from Data\common\main\zh_Hans_SG.xml
-#	on Mon 31 Mar  2:28:29 am GMT
+#	on Sun 13 Apr 12:29:48 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -192,4 +192,534 @@ has 'units' => (
 			} }
 );
 
+has 'number_currency_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'pattern' => {
+				'default' => {
+					'accounting' => {
+						'negative' => '(¤#,##0.00)',
+						'positive' => '¤#,##0.00',
+					},
+					'standard' => {
+						'negative' => '¤#,##0.00',
+						'positive' => '¤#,##0.00',
+					},
+				},
+			},
+		},
+} },
+);
 
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'ANG' => {
+			display_name => {
+				'currency' => q(荷属安的列斯盾),
+				'other' => q(荷兰安的列斯盾),
+			},
+		},
+		'AWG' => {
+			display_name => {
+				'currency' => q(阿鲁巴弗罗林),
+				'other' => q(阿鲁巴弗罗林),
+			},
+		},
+		'CNY' => {
+			symbol => 'CN¥',
+		},
+		'KZT' => {
+			display_name => {
+				'currency' => q(哈萨克斯坦腾格),
+				'other' => q(哈萨克斯坦腾格),
+			},
+		},
+		'NIO' => {
+			display_name => {
+				'currency' => q(尼加拉瓜科多巴),
+				'other' => q(尼加拉瓜科多巴),
+			},
+		},
+		'SGD' => {
+			symbol => '$',
+		},
+		'XAG' => {
+			display_name => {
+				'currency' => q(白银),
+			},
+		},
+	} },
+);
+
+
+has 'day_period_data' => (
+	traits		=> ['Code'],
+	is			=> 'ro',
+	isa			=> 'CodeRef',
+	init_arg	=> undef,
+	handles		=> { call => 'execute_method' },
+	default		=> sub { sub {
+		# Time in hhmm format
+		my ($self, $type, $time) = @_;
+		SWITCH:
+		for ($type) {
+			if ($_ eq 'roc') {
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'chinese') {
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'islamic') {
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'generic') {
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'japanese') {
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'buddhist') {
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'gregorian') {
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+			last SWITCH;
+			}
+		}
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'buddhist' => {
+		},
+		'chinese' => {
+		},
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+		'islamic' => {
+		},
+		'japanese' => {
+		},
+		'roc' => {
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'buddhist' => {
+			'full' => q{Gy年M月d日EEEE},
+			'long' => q{Gy年M月d日},
+			'medium' => q{Gy年M月d日},
+			'short' => q{Gd/M/yy},
+		},
+		'chinese' => {
+			'full' => q{U年MMMd日EEEE},
+			'long' => q{U年MMMd日},
+			'medium' => q{U年MMMd日},
+			'short' => q{U-M-d},
+		},
+		'generic' => {
+			'full' => q{Gy年M月d日EEEE},
+			'long' => q{Gy年M月d日},
+			'medium' => q{Gy年M月d日},
+			'short' => q{dd/MM/yyGGGGG},
+		},
+		'gregorian' => {
+			'full' => q{y年M月d日EEEE},
+			'long' => q{y年M月d日},
+			'medium' => q{y年M月d日},
+			'short' => q{dd/MM/yy},
+		},
+		'islamic' => {
+			'full' => q{Gy年M月d日EEEE},
+			'long' => q{Gy年M月d日},
+			'medium' => q{Gy年M月d日},
+			'short' => q{Gd/M/yy},
+		},
+		'japanese' => {
+			'full' => q{Gy年M月d日EEEE},
+			'long' => q{Gy年M月d日},
+			'medium' => q{Gy年M月d日},
+			'short' => q{Gd/M/yy},
+		},
+		'roc' => {
+			'full' => q{Gy年M月d日EEEE},
+			'long' => q{Gy年M月d日},
+			'medium' => q{Gy年M月d日},
+			'short' => q{Gd/M/yy},
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'buddhist' => {
+		},
+		'chinese' => {
+		},
+		'generic' => {
+		},
+		'gregorian' => {
+			'full' => q{zzzzah:mm:ss},
+			'long' => q{ahh:mm:ssz},
+			'medium' => q{ah:mm:ss},
+			'short' => q{ahh:mm},
+		},
+		'islamic' => {
+		},
+		'japanese' => {
+		},
+		'roc' => {
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'buddhist' => {
+		},
+		'chinese' => {
+		},
+		'generic' => {
+		},
+		'gregorian' => {
+			'full' => q{{1}{0}},
+			'long' => q{{1}{0}},
+			'medium' => q{{1} {0}},
+			'short' => q{{1} {0}},
+		},
+		'islamic' => {
+		},
+		'japanese' => {
+		},
+		'roc' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'japanese' => {
+			MEd => q{M/dE},
+			Md => q{M/d},
+		},
+		'gregorian' => {
+			MEd => q{M-dE},
+			MMM => q{M月},
+			MMMMdd => q{M月d日},
+			MMdd => q{MM-dd},
+			Md => q{M-d},
+			yM => q{y年M月},
+			yMEd => q{y年M月d日，E},
+			yMd => q{y年M月d日},
+		},
+		'generic' => {
+			MEd => q{M-dE},
+			MMMMdd => q{M月d日},
+			MMdd => q{MM-dd},
+			Md => q{M-d},
+			yyyyMEd => q{Gy年M月d日，E},
+			yyyyMd => q{Gy年M月d日},
+		},
+		'roc' => {
+			MEd => q{M-dE},
+			MMM => q{M月},
+			Md => q{M-d},
+		},
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			Hmv => {
+				H => q{vHH:mm–HH:mm},
+				m => q{vHH:mm–HH:mm},
+			},
+			Hv => {
+				H => q{vHH–HH},
+			},
+			MEd => {
+				M => q{M-dE至M-dE},
+				d => q{M-dE至M-dE},
+			},
+			MMMEd => {
+				d => q{M月d日E至M月d日E},
+			},
+			Md => {
+				M => q{M-d至M-d},
+				d => q{M-d至M-d},
+			},
+			d => {
+				d => q{d日至d日},
+			},
+			fallback => '{0}至{1}',
+			yM => {
+				M => q{y年M月至y年M月},
+			},
+			yMEd => {
+				M => q{d/M/yE至d/M/yE},
+				d => q{d/M/yE至d/M/yE},
+				y => q{d/M/yE至d/M/yE},
+			},
+			yMd => {
+				M => q{d/M/y至d/M/y},
+				d => q{d/M/y至d/M/y},
+				y => q{d/M/y至d/M/y},
+			},
+		},
+		'generic' => {
+			Hmv => {
+				H => q{vHH:mm–HH:mm},
+				m => q{vHH:mm–HH:mm},
+			},
+			Hv => {
+				H => q{vHH–HH},
+			},
+			MEd => {
+				M => q{M-dE至M-dE},
+				d => q{M-dE至M-dE},
+			},
+			MMMEd => {
+				d => q{M月d日E至M月d日E},
+			},
+			Md => {
+				M => q{M-d至M-d},
+				d => q{M-d至M-d},
+			},
+			fallback => '{0}至{1}',
+			yM => {
+				M => q{y年M月至y年M月},
+			},
+			yMEd => {
+				M => q{d/M/yE至d/M/yE},
+				d => q{d/M/yE至d/M/yE},
+				y => q{d/M/yE至d/M/yE},
+			},
+			yMd => {
+				M => q{d/M/y至d/M/y},
+				d => q{d/M/y至d/M/y},
+				y => q{d/M/y至d/M/y},
+			},
+		},
+	} },
+);
+
+has 'time_zone_names' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default	=> sub { {
+		'America/Menominee' => {
+			exemplarCity => q#梅诺米尼#,
+		},
+		'America/Pangnirtung' => {
+			exemplarCity => q#旁尼唐#,
+		},
+		'America/Santo_Domingo' => {
+			exemplarCity => q#圣多明戈#,
+		},
+		'America/Scoresbysund' => {
+			exemplarCity => q#斯考斯伯松德#,
+		},
+		'America/St_Barthelemy' => {
+			exemplarCity => q#圣巴太累米#,
+		},
+		'America/St_Johns' => {
+			exemplarCity => q#圣约翰#,
+		},
+		'Antarctica/DumontDUrville' => {
+			exemplarCity => q#杜蒙杜威勒#,
+		},
+		'Cocos' => {
+			long => {
+				'standard' => q(科科斯岛时间),
+			},
+		},
+		'DumontDUrville' => {
+			long => {
+				'standard' => q(杜蒙特杜维尔时间),
+			},
+		},
+		'Europe/Zaporozhye' => {
+			exemplarCity => q#扎波罗什#,
+		},
+		'French_Southern' => {
+			long => {
+				'standard' => q(法属南部和南极洲时间),
+			},
+		},
+		'Gilbert_Islands' => {
+			long => {
+				'standard' => q(吉尔柏特群岛时间),
+			},
+		},
+		'Malaysia' => {
+			short => {
+				'standard' => q(MYT),
+			},
+		},
+		'Phoenix_Islands' => {
+			long => {
+				'standard' => q(凤凰岛时间),
+			},
+		},
+		'Pierre_Miquelon' => {
+			long => {
+				'daylight' => q(圣皮埃尔和密克隆夏令时间),
+				'generic' => q(圣皮埃尔和密克隆时间),
+				'standard' => q(圣皮埃尔和密克隆标准时间),
+			},
+		},
+		'Singapore' => {
+			short => {
+				'standard' => q(SGT),
+			},
+		},
+		'South_Georgia' => {
+			long => {
+				'standard' => q(南乔治亚时间),
+			},
+		},
+		'Tahiti' => {
+			long => {
+				'standard' => q(大溪地时间),
+			},
+		},
+		'Truk' => {
+			long => {
+				'standard' => q(特鲁克时间),
+			},
+		},
+		'Tuvalu' => {
+			long => {
+				'standard' => q(吐瓦鲁时间),
+			},
+		},
+	 } }
+);
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

@@ -1,6 +1,6 @@
-package Locale::CLDR::Jgo;
+package Locale::CLDR::Jgo v0.0.4;
 # This file auto generated from Data\common\main\jgo.xml
-#	on Mon 31 Mar 12:50:36 am GMT
+#	on Sun 13 Apr 10:49:35 am GMT
 # XML file generated 2014-02-24 11:09:08 -0600 (Mon, 24 Feb 2014)
 
 use v5.18;
@@ -258,7 +258,6 @@ has 'units' => (
 			} }
 );
 
-
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -374,28 +373,28 @@ has 'curriencies' => (
 	default		=> sub { {
 		'CAD' => {
 			display_name => {
-				'default' => q(Ndɔ́la-Kanandâ),
+				'currency' => q(Ndɔ́la-Kanandâ),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Ʉ́lɔ),
+				'currency' => q(Ʉ́lɔ),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Ndɔ́la-Amɛlîk),
+				'currency' => q(Ndɔ́la-Amɛlîk),
 			},
 		},
 		'XAF' => {
 			symbol => 'FCFA',
 			display_name => {
-				'default' => q(Fɛlâŋ),
+				'currency' => q(Fɛlâŋ),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(ntɛ-ŋkáp yi pɛ́ ká kɛ́ jínɛ),
+				'currency' => q(ntɛ-ŋkáp yi pɛ́ ká kɛ́ jínɛ),
 			},
 		},
 	} },
@@ -606,8 +605,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{mbaꞌmbaꞌ},
 					'pm' => q{ŋka mbɔ́t nji},
+					'am' => q{mbaꞌmbaꞌ},
 				},
 			},
 		},
@@ -691,17 +690,17 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			Ed => q{E d},
-			MEd => q{E, d.M},
-			Md => q{d.M},
-			yMd => q{M.d.y},
-		},
 		'generic' => {
 			Ed => q{E d},
 			MEd => q{E, d.M},
 			Md => q{d.M},
 			yyyyMd => q{M.d.y G},
+		},
+		'gregorian' => {
+			Ed => q{E d},
+			MEd => q{E, d.M},
+			Md => q{d.M},
+			yMd => q{M.d.y},
 		},
 	} },
 );
@@ -719,10 +718,10 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			fallback => '{0} – {1}',
 		},
-		'generic' => {
+		'gregorian' => {
 			fallback => '{0} – {1}',
 		},
 	} },

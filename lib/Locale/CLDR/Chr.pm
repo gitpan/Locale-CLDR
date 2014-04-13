@@ -1,6 +1,6 @@
-package Locale::CLDR::Chr;
+package Locale::CLDR::Chr v0.0.4;
 # This file auto generated from Data\common\main\chr.xml
-#	on Sun 30 Mar 11:58:49 pm GMT
+#	on Sun 13 Apr  9:54:57 am GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use v5.18;
@@ -410,7 +410,6 @@ has 'units' => (
 			} }
 );
 
-
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -504,53 +503,53 @@ has 'curriencies' => (
 	default		=> sub { {
 		'BRL' => {
 			display_name => {
-				'default' => q(ᏆᏏᎵᎢ ᎠᏕᎳ),
+				'currency' => q(ᏆᏏᎵᎢ ᎠᏕᎳ),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(ᎧᎾᏓ ᎠᏕᎳ),
+				'currency' => q(ᎧᎾᏓ ᎠᏕᎳ),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(ᏓᎶᏂᎨ ᎠᏕᎳ),
+				'currency' => q(ᏓᎶᏂᎨ ᎠᏕᎳ),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(ᏳᎳᏛ),
+				'currency' => q(ᏳᎳᏛ),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(ᎩᎵᏏᏲ ᎠᏕᎳ),
+				'currency' => q(ᎩᎵᏏᏲ ᎠᏕᎳ),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(ᎢᏅᏗᎾ ᎠᏕᎳ),
+				'currency' => q(ᎢᏅᏗᎾ ᎠᏕᎳ),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(ᏣᏩᏂᏏ ᎠᏕᎳ),
+				'currency' => q(ᏣᏩᏂᏏ ᎠᏕᎳ),
 			},
 		},
 		'MXN' => {
 			display_name => {
-				'default' => q(ᏍᏆᏂ ᎠᏕᎳ),
+				'currency' => q(ᏍᏆᏂ ᎠᏕᎳ),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(ᏲᏂᎢ ᎠᏕᎳ),
+				'currency' => q(ᏲᏂᎢ ᎠᏕᎳ),
 			},
 		},
 		'USD' => {
 			symbol => '$',
 			display_name => {
-				'default' => q(ᎤᏃᏍᏗ),
+				'currency' => q(ᎤᏃᏍᏗ),
 				'one' => q(ᎤᏃᏍᏗ),
 				'other' => q(ᏧᏃᏍᏗ),
 			},
@@ -682,20 +681,20 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'generic') {
-				return 'pm' if $time > 1200
-					&& $time < 2400;
+			if ($_ eq 'gregorian') {
+				return 'noon' if $time == 1200;
 				return 'am' if $time >= 000
 					&& $time < 1200;
-				return 'noon' if $time == 1200;
+				return 'pm' if $time > 1200
+					&& $time < 2400;
 			last SWITCH;
 			}
-			if ($_ eq 'gregorian') {
-				return 'pm' if $time > 1200
-					&& $time < 2400;
+			if ($_ eq 'generic') {
+				return 'noon' if $time == 1200;
 				return 'am' if $time >= 000
 					&& $time < 1200;
-				return 'noon' if $time == 1200;
+				return 'pm' if $time > 1200
+					&& $time < 2400;
 			last SWITCH;
 			}
 		}
@@ -711,8 +710,8 @@ has 'day_periods' => (
 			'format' => {
 				'wide' => {
 					'am' => q{ᏌᎾᎴ},
-					'noon' => q{ᎢᎦ},
 					'pm' => q{ᏒᎯᏱᎢᏗᏢ},
+					'noon' => q{ᎢᎦ},
 				},
 			},
 		},

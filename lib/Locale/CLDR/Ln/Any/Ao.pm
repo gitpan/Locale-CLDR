@@ -1,6 +1,6 @@
-package Locale::CLDR::Ln::Any::Ao;
+package Locale::CLDR::Ln::Any::Ao v0.0.4;
 # This file auto generated from Data\common\main\ln_AO.xml
-#	on Mon 31 Mar  1:08:18 am GMT
+#	on Sun 13 Apr 11:08:16 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;
@@ -10,3 +10,21 @@ use utf8;
 use Moose;
 
 extends('Locale::CLDR::Ln::Any');
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'AOA' => {
+			symbol => 'Kz',
+		},
+	} },
+);
+
+
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

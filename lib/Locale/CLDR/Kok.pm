@@ -1,6 +1,6 @@
-package Locale::CLDR::Kok;
+package Locale::CLDR::Kok v0.0.4;
 # This file auto generated from Data\common\main\kok.xml
-#	on Mon 31 Mar  1:02:58 am GMT
+#	on Sun 13 Apr 11:02:36 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -192,3 +192,243 @@ has 'characters' => (
 	},
 );
 
+has 'default_numbering_system' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has native_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'deva',
+);
+
+has 'number_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		decimalFormat => {
+			'default' => {
+				'0' => {
+					'default' => '#,##,##0.###',
+				},
+			},
+		},
+		percentFormat => {
+			'default' => {
+				'0' => {
+					'default' => '#,##,##0%',
+				},
+			},
+		},
+} },
+);
+
+has 'number_currency_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'pattern' => {
+				'default' => {
+					'standard' => {
+						'negative' => '¤ #,##,##0.00',
+						'positive' => '¤ #,##,##0.00',
+					},
+				},
+			},
+		},
+} },
+);
+
+has 'calendar_months' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					wide => {
+						nonleap => [
+							'जानेवारी',
+							'फेब्रुवारी',
+							'मार्च',
+							'एप्रिल',
+							'मे',
+							'जून',
+							'जुलै',
+							'ओगस्ट',
+							'सेप्टेंबर',
+							'ओक्टोबर',
+							'नोव्हेंबर',
+							'डिसेंबर'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_days' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						mon => 'सोम',
+						tue => 'मंगळ',
+						wed => 'बुध',
+						thu => 'गुरु',
+						fri => 'शुक्र',
+						sat => 'शनि',
+						sun => 'रवि'
+					},
+					wide => {
+						mon => 'सोमवार',
+						tue => 'मंगळार',
+						wed => 'बुधवार',
+						thu => 'गुरुवार',
+						fri => 'शुक्रवार',
+						sat => 'शनिवार',
+						sun => 'आदित्यवार'
+					},
+				},
+			},
+	} },
+);
+
+has 'day_periods' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			'format' => {
+				'wide' => {
+					'pm' => q{म.नं.},
+					'am' => q{म.पू.},
+				},
+			},
+		},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			abbreviated => {
+				'0' => 'क्रिस्तपूर्व',
+				'1' => 'क्रिस्तशखा'
+			},
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			'full' => q{EEEE d MMMM y G},
+			'long' => q{d MMMM y G},
+			'medium' => q{dd-MM-y G},
+			'short' => q{d-M-y GGGGG},
+		},
+		'gregorian' => {
+			'full' => q{EEEE d MMMM y},
+			'long' => q{d MMMM y},
+			'medium' => q{dd-MM-y},
+			'short' => q{d-M-yy},
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			'full' => q{h:mm:ss a zzzz},
+			'long' => q{h:mm:ss a z},
+			'medium' => q{h:mm:ss a},
+			'short' => q{h:mm a},
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'time_zone_names' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default	=> sub { {
+		'India' => {
+			long => {
+				'standard' => q(भारतीय समय),
+			},
+			short => {
+				'standard' => q(IST),
+			},
+		},
+	 } }
+);
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

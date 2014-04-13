@@ -1,6 +1,6 @@
-package Locale::CLDR::Bez;
+package Locale::CLDR::Bez v0.0.4;
 # This file auto generated from Data\common\main\bez.xml
-#	on Sun 30 Mar 11:43:05 pm GMT
+#	on Sun 13 Apr  9:39:03 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -364,9 +364,6 @@ has 'nostr' => (
 	default		=> sub { qr'^(?i:Sio ewo|S|no|n)$' }
 );
 
-	} }
-);
-
 has 'number_currency_formats' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -392,278 +389,278 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Lupila lwa Hufalme dza Huhihalabu),
+				'currency' => q(Lupila lwa Hufalme dza Huhihalabu),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Lupila lwa Huangola),
+				'currency' => q(Lupila lwa Huangola),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Lupila lwa Huaustlalia),
+				'currency' => q(Lupila lwa Huaustlalia),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Lupila lwa Hubahareni),
+				'currency' => q(Lupila lwa Hubahareni),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Lupila lwa Huburundi),
+				'currency' => q(Lupila lwa Huburundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Lupila lwa Hubotswana),
+				'currency' => q(Lupila lwa Hubotswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Lupila lwa Hukanada),
+				'currency' => q(Lupila lwa Hukanada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Lupila lwa Hukongo),
+				'currency' => q(Lupila lwa Hukongo),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Lupila lwa Huuswisi),
+				'currency' => q(Lupila lwa Huuswisi),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Lupila lwa Huchina),
+				'currency' => q(Lupila lwa Huchina),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Lupila lwa Hukepuvede),
+				'currency' => q(Lupila lwa Hukepuvede),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Lupila lwa Hujibuti),
+				'currency' => q(Lupila lwa Hujibuti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Lupila lwa Hualjelia),
+				'currency' => q(Lupila lwa Hualjelia),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Lupila lwa Humisri),
+				'currency' => q(Lupila lwa Humisri),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Lupila lwa Hueritrea),
+				'currency' => q(Lupila lwa Hueritrea),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Lupila lwa Huuhabeshi),
+				'currency' => q(Lupila lwa Huuhabeshi),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Lupila lwa Yulo),
+				'currency' => q(Lupila lwa Yulo),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Lupila lwa Huuingereza),
+				'currency' => q(Lupila lwa Huuingereza),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Lupila lwa Hughana),
+				'currency' => q(Lupila lwa Hughana),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Lupila lwa Hugambia),
+				'currency' => q(Lupila lwa Hugambia),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Lupila lwa Hujine),
+				'currency' => q(Lupila lwa Hujine),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Lupila lwa Huindia),
+				'currency' => q(Lupila lwa Huindia),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Lupila lwa Hijapani),
+				'currency' => q(Lupila lwa Hijapani),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Shilingi ya Hukenya),
+				'currency' => q(Shilingi ya Hukenya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Lupila lwa Hukomoro),
+				'currency' => q(Lupila lwa Hukomoro),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Lupila lwa Hulibelia),
+				'currency' => q(Lupila lwa Hulibelia),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Lupila lwa Hulesoto),
+				'currency' => q(Lupila lwa Hulesoto),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Lupila lwa Hulibya),
+				'currency' => q(Lupila lwa Hulibya),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Lupila lwa Humoloko),
+				'currency' => q(Lupila lwa Humoloko),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Lupila lwa Hubukini),
+				'currency' => q(Lupila lwa Hubukini),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Lupila lwa Humolitania),
+				'currency' => q(Lupila lwa Humolitania),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Lupila lwa Humolisi),
+				'currency' => q(Lupila lwa Humolisi),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Lupila lwa Humalawi),
+				'currency' => q(Lupila lwa Humalawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Lupila lwa Humsumbiji),
+				'currency' => q(Lupila lwa Humsumbiji),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Lupila lwa Hunamibia),
+				'currency' => q(Lupila lwa Hunamibia),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Lupila lwa Hunijelia),
+				'currency' => q(Lupila lwa Hunijelia),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Lupila lwa Hurwanda),
+				'currency' => q(Lupila lwa Hurwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Lupila lwa Husaudi),
+				'currency' => q(Lupila lwa Husaudi),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Lupila lwa Hushelisheli),
+				'currency' => q(Lupila lwa Hushelisheli),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Lupila lwa Husudani),
+				'currency' => q(Lupila lwa Husudani),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Lupila lwa Husantahelena),
+				'currency' => q(Lupila lwa Husantahelena),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Lupila lwa Lioni),
+				'currency' => q(Lupila lwa Lioni),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Lupila lwa Husomalia),
+				'currency' => q(Lupila lwa Husomalia),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Lupila lwa Husaotome na Huprinisipe),
+				'currency' => q(Lupila lwa Husaotome na Huprinisipe),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lupila lwa Lilangeni),
+				'currency' => q(Lupila lwa Lilangeni),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Lupila lwa Hutunisia),
+				'currency' => q(Lupila lwa Hutunisia),
 			},
 		},
 		'TZS' => {
 			symbol => 'TSh',
 			display_name => {
-				'default' => q(Shilingi ya Hutanzania),
+				'currency' => q(Shilingi ya Hutanzania),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Shilingi ya Huuganda),
+				'currency' => q(Shilingi ya Huuganda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Lupila lwa Humalekani),
+				'currency' => q(Lupila lwa Humalekani),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Lupila lwa CFA BEAC),
+				'currency' => q(Lupila lwa CFA BEAC),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Lupila lwa CFA BCEAO),
+				'currency' => q(Lupila lwa CFA BCEAO),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Lupila lwa Huafriaka ya Hukusini),
+				'currency' => q(Lupila lwa Huafriaka ya Hukusini),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Lupila lwa Huzambia (1968–2012)),
+				'currency' => q(Lupila lwa Huzambia \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Lupila lwa Huzambia),
+				'currency' => q(Lupila lwa Huzambia),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Lupila lwa Huzimbabwe),
+				'currency' => q(Lupila lwa Huzimbabwe),
 			},
 		},
 	} },
@@ -812,8 +809,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{pamilau},
 					'pm' => q{pamunyi},
+					'am' => q{pamilau},
 				},
 			},
 		},
@@ -893,7 +890,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -918,7 +915,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -962,3 +959,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

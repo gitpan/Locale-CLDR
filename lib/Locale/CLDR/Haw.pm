@@ -1,6 +1,6 @@
-package Locale::CLDR::Haw;
+package Locale::CLDR::Haw v0.0.4;
 # This file auto generated from Data\common\main\haw.xml
-#	on Mon 31 Mar 12:32:41 am GMT
+#	on Sun 13 Apr 10:30:57 am GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use v5.18;
@@ -170,4 +170,252 @@ has 'units' => (
 			} }
 );
 
+has 'number_currency_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'pattern' => {
+				'default' => {
+					'accounting' => {
+						'negative' => '(¤#,##0.00)',
+						'positive' => '¤#,##0.00',
+					},
+					'standard' => {
+						'negative' => '¤#,##0.00',
+						'positive' => '¤#,##0.00',
+					},
+				},
+			},
+		},
+} },
+);
 
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'USD' => {
+			symbol => '$',
+		},
+	} },
+);
+
+
+has 'calendar_months' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'Ian.',
+							'Pep.',
+							'Mal.',
+							'ʻAp.',
+							'Mei',
+							'Iun.',
+							'Iul.',
+							'ʻAu.',
+							'Kep.',
+							'ʻOk.',
+							'Now.',
+							'Kek.'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'Ianuali',
+							'Pepeluali',
+							'Malaki',
+							'ʻApelila',
+							'Mei',
+							'Iune',
+							'Iulai',
+							'ʻAukake',
+							'Kepakemapa',
+							'ʻOkakopa',
+							'Nowemapa',
+							'Kekemapa'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_days' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						mon => 'P1',
+						tue => 'P2',
+						wed => 'P3',
+						thu => 'P4',
+						fri => 'P5',
+						sat => 'P6',
+						sun => 'LP'
+					},
+					wide => {
+						mon => 'Poʻakahi',
+						tue => 'Poʻalua',
+						wed => 'Poʻakolu',
+						thu => 'Poʻahā',
+						fri => 'Poʻalima',
+						sat => 'Poʻaono',
+						sun => 'Lāpule'
+					},
+				},
+			},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			'full' => q{EEEE, d MMMM y G},
+			'long' => q{d MMMM y G},
+			'medium' => q{d MMM y G},
+			'short' => q{d/M/yy GGGGG},
+		},
+		'gregorian' => {
+			'full' => q{EEEE, d MMMM y},
+			'long' => q{d MMMM y},
+			'medium' => q{d MMM y},
+			'short' => q{d/M/yy},
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			'full' => q{h:mm:ss a zzzz},
+			'long' => q{h:mm:ss a z},
+			'medium' => q{h:mm:ss a},
+			'short' => q{h:mm a},
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			Ed => q{E d},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E, d MMM y G},
+			GyMMMd => q{d MMM y G},
+			MEd => q{E, d/M},
+			MMMEd => q{E, d MMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			yM => q{M/y},
+			yMEd => q{E, d/M/y},
+			yMMM => q{MMM y},
+			yMMMEd => q{E, d MMM y},
+			yMMMd => q{d MMM y},
+			yMd => q{d/M/y},
+		},
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'time_zone_names' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default	=> sub { {
+		'Alaska' => {
+			short => {
+				'daylight' => q(AKDT),
+				'generic' => q(AKT),
+				'standard' => q(AKST),
+			},
+		},
+		'Hawaii_Aleutian' => {
+			short => {
+				'daylight' => q(HADT),
+				'generic' => q(HAT),
+				'standard' => q(HAST),
+			},
+		},
+		'Pacific/Honolulu' => {
+			short => {
+				'daylight' => q(HDT),
+				'generic' => q(HST),
+				'standard' => q(HST),
+			},
+		},
+	 } }
+);
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

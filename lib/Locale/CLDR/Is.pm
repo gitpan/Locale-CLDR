@@ -1,6 +1,6 @@
-package Locale::CLDR::Is;
+package Locale::CLDR::Is v0.0.4;
 # This file auto generated from Data\common\main\is.xml
-#	on Mon 31 Mar 12:44:49 am GMT
+#	on Sun 13 Apr 10:43:33 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -1807,7 +1807,6 @@ has 'units' => (
 			} }
 );
 
-
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -2061,220 +2060,220 @@ has 'curriencies' => (
 	default		=> sub { {
 		'ADP' => {
 			display_name => {
-				'default' => q(Andorrskur peseti),
+				'currency' => q(Andorrskur peseti),
 			},
 		},
 		'AED' => {
 			display_name => {
-				'default' => q(Arabískt dírham),
+				'currency' => q(Arabískt dírham),
 				'one' => q(arabískt dírham),
 				'other' => q(arabísk dírhöm),
 			},
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(Afgani),
+				'currency' => q(Afgani),
 				'one' => q(afgani),
 				'other' => q(afganar),
 			},
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(Albanskt lek),
+				'currency' => q(Albanskt lek),
 				'one' => q(albanskt lek),
 				'other' => q(albönsk lek),
 			},
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(Armenskt dramm),
+				'currency' => q(Armenskt dramm),
 				'one' => q(armenskt dramm),
 				'other' => q(armensk drömm),
 			},
 		},
 		'ANG' => {
 			display_name => {
-				'default' => q(Hollenskt Antillugyllini),
+				'currency' => q(Hollenskt Antillugyllini),
 				'one' => q(hollenskt Antillugyllini),
 				'other' => q(hollensk Antillugyllini),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Angólsk kvansa),
+				'currency' => q(Angólsk kvansa),
 				'one' => q(angólsk kvansa),
 				'other' => q(angólskar kvönsur),
 			},
 		},
 		'ARA' => {
 			display_name => {
-				'default' => q(Argentine Austral),
+				'currency' => q(Argentine Austral),
 			},
 		},
 		'ARP' => {
 			display_name => {
-				'default' => q(Argentískur pesi (1983–1985)),
+				'currency' => q(Argentískur pesi \(1983–1985\)),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(Argentínskur pesi),
+				'currency' => q(Argentínskur pesi),
 				'one' => q(argentínskur pesi),
 				'other' => q(argentínskir pesar),
 			},
 		},
 		'ATS' => {
 			display_name => {
-				'default' => q(Austurrískur skildingur),
+				'currency' => q(Austurrískur skildingur),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Ástralskur dalur),
+				'currency' => q(Ástralskur dalur),
 				'one' => q(ástralskur dalur),
 				'other' => q(ástralskir dalir),
 			},
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(Arúbönsk flórína),
+				'currency' => q(Arúbönsk flórína),
 				'one' => q(arúbönsk flórína),
 				'other' => q(arúbanskar flórínur),
 			},
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(Aserskt manat),
+				'currency' => q(Aserskt manat),
 				'one' => q(aserskt manat),
 				'other' => q(asersk manöt),
 			},
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(Skiptanlegt Bosníu og Hersegóvínu-mark),
+				'currency' => q(Skiptanlegt Bosníu og Hersegóvínu-mark),
 				'one' => q(skiptanlegt Bosníu og Hersegóvínu-mark),
 				'other' => q(skiptanleg Bosníu og Hersegóvínu-mörk),
 			},
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(Barbadoskur dalur),
+				'currency' => q(Barbadoskur dalur),
 				'one' => q(barbadoskur dalur),
 				'other' => q(barbadoskir dalir),
 			},
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(Bangladessk taka),
+				'currency' => q(Bangladessk taka),
 				'one' => q(bangladessk taka),
 				'other' => q(bangladesskar tökur),
 			},
 		},
 		'BEF' => {
 			display_name => {
-				'default' => q(Belgískur franki),
+				'currency' => q(Belgískur franki),
 			},
 		},
 		'BGL' => {
 			display_name => {
-				'default' => q(Lef),
+				'currency' => q(Lef),
 			},
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(Búlgarskt lef),
+				'currency' => q(Búlgarskt lef),
 				'one' => q(búlgarskt lef),
 				'other' => q(búlgörsk lef),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Bareinskur denari),
+				'currency' => q(Bareinskur denari),
 				'one' => q(bareinskur denari),
 				'other' => q(bareinskir denarar),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Búrúndískur franki),
+				'currency' => q(Búrúndískur franki),
 				'one' => q(búrúndískur franki),
 				'other' => q(búrúndískir frankar),
 			},
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(Bermúdadalur),
+				'currency' => q(Bermúdadalur),
 				'one' => q(Bermúdadalur),
 				'other' => q(Bermúdadalir),
 			},
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(Brúneiskur dalur),
+				'currency' => q(Brúneiskur dalur),
 				'one' => q(brúneiskur dalur),
 				'other' => q(brúneiskir dalir),
 			},
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(Bólivíani),
+				'currency' => q(Bólivíani),
 				'one' => q(bólivíani),
 				'other' => q(bólivíanar),
 			},
 		},
 		'BOP' => {
 			display_name => {
-				'default' => q(Bólivískur pesi),
+				'currency' => q(Bólivískur pesi),
 			},
 		},
 		'BOV' => {
 			display_name => {
-				'default' => q(Bolivian Mvdol),
+				'currency' => q(Bolivian Mvdol),
 			},
 		},
 		'BRL' => {
 			display_name => {
-				'default' => q(Brasilískt ríal),
+				'currency' => q(Brasilískt ríal),
 				'one' => q(brasilískt ríal),
 				'other' => q(brasilísk ríöl),
 			},
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(Bahamadalur),
+				'currency' => q(Bahamadalur),
 				'one' => q(Bahamadalur),
 				'other' => q(Bahamadalir),
 			},
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(Bútanskt núltrum),
+				'currency' => q(Bútanskt núltrum),
 				'one' => q(bútanskt núltrum),
 				'other' => q(bútönsk núltrum),
 			},
 		},
 		'BUK' => {
 			display_name => {
-				'default' => q(Búrmverskt kjat),
+				'currency' => q(Búrmverskt kjat),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Botsvönsk púla),
+				'currency' => q(Botsvönsk púla),
 				'one' => q(botsvönsk púla),
 				'other' => q(botsvanskar púlur),
 			},
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(Hvítrússnesk rúbla),
+				'currency' => q(Hvítrússnesk rúbla),
 				'one' => q(hvítrússnesk rúbla),
 				'other' => q(hvítrússneskar rúblur),
 			},
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(Belískur dalur),
+				'currency' => q(Belískur dalur),
 				'one' => q(belískur dalur),
 				'other' => q(belískir dalir),
 			},
@@ -2282,33 +2281,33 @@ has 'curriencies' => (
 		'CAD' => {
 			symbol => 'CAD',
 			display_name => {
-				'default' => q(Kanadískur dalur),
+				'currency' => q(Kanadískur dalur),
 				'one' => q(kanadískur dalur),
 				'other' => q(kanadískir dalir),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Kongóskur franki),
+				'currency' => q(Kongóskur franki),
 				'one' => q(kongóskur franki),
 				'other' => q(kongóskir frankar),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Svissneskur franki),
+				'currency' => q(Svissneskur franki),
 				'one' => q(svissneskur franki),
 				'other' => q(svissneskir frankar),
 			},
 		},
 		'CLF' => {
 			display_name => {
-				'default' => q(Chilean Unidades de Fomento),
+				'currency' => q(Chilean Unidades de Fomento),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(Síleskur pesi),
+				'currency' => q(Síleskur pesi),
 				'one' => q(síleskur pesi),
 				'other' => q(síleskir pesar),
 			},
@@ -2316,135 +2315,135 @@ has 'curriencies' => (
 		'CNY' => {
 			symbol => 'CN¥',
 			display_name => {
-				'default' => q(Kínverskt júan),
+				'currency' => q(Kínverskt júan),
 				'one' => q(kínverskt júan),
 				'other' => q(kínversk júön),
 			},
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(Kólumbískur pesi),
+				'currency' => q(Kólumbískur pesi),
 				'one' => q(kólumbískur pesi),
 				'other' => q(kólumbískir pesar),
 			},
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(Kostarískt kólon),
+				'currency' => q(Kostarískt kólon),
 				'one' => q(kostarískt kólon),
 				'other' => q(kostarísk kólon),
 			},
 		},
 		'CSK' => {
 			display_name => {
-				'default' => q(Tékknesk króna, eldri),
+				'currency' => q(Tékknesk króna, eldri),
 			},
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(Kúbverskur skiptanlegur pesi),
+				'currency' => q(Kúbverskur skiptanlegur pesi),
 				'one' => q(kúbverskur skiptanlegur pesi),
 				'other' => q(kúbverskir skiptanlegir pesar),
 			},
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(Kúbverskur pesi),
+				'currency' => q(Kúbverskur pesi),
 				'one' => q(kúbverskur pesi),
 				'other' => q(kúbverskir pesar),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Grænhöfðeyskur skúti),
+				'currency' => q(Grænhöfðeyskur skúti),
 				'one' => q(grænhöfðeyskur skúti),
 				'other' => q(grænhöfðeyskir skútar),
 			},
 		},
 		'CYP' => {
 			display_name => {
-				'default' => q(Kýpverskt pund),
+				'currency' => q(Kýpverskt pund),
 			},
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(Tékknesk króna),
+				'currency' => q(Tékknesk króna),
 				'one' => q(tékknesk króna),
 				'other' => q(tékkneskar krónur),
 			},
 		},
 		'DDM' => {
 			display_name => {
-				'default' => q(Austurþýskt mark),
+				'currency' => q(Austurþýskt mark),
 			},
 		},
 		'DEM' => {
 			display_name => {
-				'default' => q(Þýskt mark),
+				'currency' => q(Þýskt mark),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Djíbútískur franki),
+				'currency' => q(Djíbútískur franki),
 				'one' => q(djíbútískur franki),
 				'other' => q(djíbútískir frankar),
 			},
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(Dönsk króna),
+				'currency' => q(Dönsk króna),
 				'one' => q(dönsk króna),
 				'other' => q(danskar krónur),
 			},
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(Dóminískur pesi),
+				'currency' => q(Dóminískur pesi),
 				'one' => q(dóminískur pesi),
 				'other' => q(dóminískir pesar),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Alsírskur denari),
+				'currency' => q(Alsírskur denari),
 				'one' => q(alsírskur denari),
 				'other' => q(alsírskir denarar),
 			},
 		},
 		'ECS' => {
 			display_name => {
-				'default' => q(Ecuador Sucre),
+				'currency' => q(Ecuador Sucre),
 			},
 		},
 		'EEK' => {
 			display_name => {
-				'default' => q(Eistnesk króna),
+				'currency' => q(Eistnesk króna),
 				'one' => q(eistnesk króna),
 				'other' => q(eistnesku krónur),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Egypskt pund),
+				'currency' => q(Egypskt pund),
 				'one' => q(egypskt pund),
 				'other' => q(egypsk pund),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Erítresk nakfa),
+				'currency' => q(Erítresk nakfa),
 				'one' => q(erítresk nakfa),
 				'other' => q(erítreskar nökfur),
 			},
 		},
 		'ESP' => {
 			display_name => {
-				'default' => q(Spænskur peseti),
+				'currency' => q(Spænskur peseti),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Eþíópískt birr),
+				'currency' => q(Eþíópískt birr),
 				'one' => q(eþíópískt birr),
 				'other' => q(eþíópísk birr),
 			},
@@ -2452,156 +2451,156 @@ has 'curriencies' => (
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(Evra),
+				'currency' => q(Evra),
 				'one' => q(evra),
 				'other' => q(evrur),
 			},
 		},
 		'FIM' => {
 			display_name => {
-				'default' => q(Finnskt mark),
+				'currency' => q(Finnskt mark),
 			},
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(Fídjeyskur dalur),
+				'currency' => q(Fídjeyskur dalur),
 				'one' => q(fídjeyskur dalur),
 				'other' => q(fídjeyskir dalir),
 			},
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(Falklenskt pund),
+				'currency' => q(Falklenskt pund),
 				'one' => q(falklenskt pund),
 				'other' => q(falklensk pund),
 			},
 		},
 		'FRF' => {
 			display_name => {
-				'default' => q(Franskur franki),
+				'currency' => q(Franskur franki),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Sterlingspund),
+				'currency' => q(Sterlingspund),
 				'one' => q(sterlingspund),
 				'other' => q(sterlingspund),
 			},
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(Georgískur lari),
+				'currency' => q(Georgískur lari),
 				'one' => q(georgískur lari),
 				'other' => q(georgískir larar),
 			},
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(Ganverskur sedi),
+				'currency' => q(Ganverskur sedi),
 				'one' => q(ganverskur sedi),
 				'other' => q(ganverskir sedar),
 			},
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(Gíbraltarspund),
+				'currency' => q(Gíbraltarspund),
 				'one' => q(Gíbraltarspund),
 				'other' => q(Gíbraltarspund),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Gambískur dalasi),
+				'currency' => q(Gambískur dalasi),
 				'one' => q(gambískur dalasi),
 				'other' => q(gambískir dalasar),
 			},
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(Gíneufranki),
+				'currency' => q(Gíneufranki),
 				'one' => q(Gíneufranki),
 				'other' => q(Gíneufrankar),
 			},
 		},
 		'GRD' => {
 			display_name => {
-				'default' => q(Drakma),
+				'currency' => q(Drakma),
 			},
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(Gvatemalskt kvesal),
+				'currency' => q(Gvatemalskt kvesal),
 				'one' => q(gvatemalskt kvesal),
 				'other' => q(gvatemölsk kvesöl),
 			},
 		},
 		'GWE' => {
 			display_name => {
-				'default' => q(Portúgalskur, gíneskur skúti),
+				'currency' => q(Portúgalskur, gíneskur skúti),
 			},
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(Gvæjanskur dalur),
+				'currency' => q(Gvæjanskur dalur),
 				'one' => q(gvæjanskur dalur),
 				'other' => q(gvæjanskir dalir),
 			},
 		},
 		'HKD' => {
 			display_name => {
-				'default' => q(Hong Kong-dalur),
+				'currency' => q(Hong Kong-dalur),
 				'one' => q(Hong Kong-dalur),
 				'other' => q(Hong Kong-dalir),
 			},
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(Hondúrsk lempíra),
+				'currency' => q(Hondúrsk lempíra),
 				'one' => q(hondúrsk lempíra),
 				'other' => q(hondúrskar lempírur),
 			},
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(Króatísk kúna),
+				'currency' => q(Króatísk kúna),
 				'one' => q(króatísk kúna),
 				'other' => q(króatískar kúnur),
 			},
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(Haítískur gúrdi),
+				'currency' => q(Haítískur gúrdi),
 				'one' => q(haítískur gúrdi),
 				'other' => q(haítískir gúrdar),
 			},
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(Ungversk fórinta),
+				'currency' => q(Ungversk fórinta),
 				'one' => q(ungversk fórinta),
 				'other' => q(ungverskar fórintur),
 			},
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(Indónesísk rúpía),
+				'currency' => q(Indónesísk rúpía),
 				'one' => q(indónesísk rúpía),
 				'other' => q(indónesískar rúpíur),
 			},
 		},
 		'IEP' => {
 			display_name => {
-				'default' => q(Írskt pund),
+				'currency' => q(Írskt pund),
 			},
 		},
 		'ILP' => {
 			display_name => {
-				'default' => q(Ísraelskt pund),
+				'currency' => q(Ísraelskt pund),
 			},
 		},
 		'ILS' => {
 			display_name => {
-				'default' => q(Nýr ísraelskur sikill),
+				'currency' => q(Nýr ísraelskur sikill),
 				'one' => q(nýr ísraelskur sikill),
 				'other' => q(nýir ísraelskir siklar),
 			},
@@ -2609,21 +2608,21 @@ has 'curriencies' => (
 		'INR' => {
 			symbol => '₹',
 			display_name => {
-				'default' => q(Indversk rúpía),
+				'currency' => q(Indversk rúpía),
 				'one' => q(indversk rúpía),
 				'other' => q(indverskar rúpíur),
 			},
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(Írakskur denari),
+				'currency' => q(Írakskur denari),
 				'one' => q(írakskur denari),
 				'other' => q(írakskir denarar),
 			},
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(Íranskt ríal),
+				'currency' => q(Íranskt ríal),
 				'one' => q(íranskt ríal),
 				'other' => q(írönsk ríöl),
 			},
@@ -2631,26 +2630,26 @@ has 'curriencies' => (
 		'ISK' => {
 			symbol => 'kr',
 			display_name => {
-				'default' => q(Íslensk króna),
+				'currency' => q(Íslensk króna),
 				'one' => q(íslensk króna),
 				'other' => q(íslenskar krónur),
 			},
 		},
 		'ITL' => {
 			display_name => {
-				'default' => q(Ítölsk líra),
+				'currency' => q(Ítölsk líra),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(Jamaískur dalur),
+				'currency' => q(Jamaískur dalur),
 				'one' => q(jamaískur dalur),
 				'other' => q(jamaískir dalir),
 			},
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(Jórdanskur denari),
+				'currency' => q(Jórdanskur denari),
 				'one' => q(jórdanskur denari),
 				'other' => q(jórdanskir denarar),
 			},
@@ -2658,241 +2657,241 @@ has 'curriencies' => (
 		'JPY' => {
 			symbol => 'JP¥',
 			display_name => {
-				'default' => q(Japanskt jen),
+				'currency' => q(Japanskt jen),
 				'one' => q(japanskt jen),
 				'other' => q(japönsk jen),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Kenískur skildingur),
+				'currency' => q(Kenískur skildingur),
 				'one' => q(kenískur skildingur),
 				'other' => q(kenískir skildingar),
 			},
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(Kirgiskt som),
+				'currency' => q(Kirgiskt som),
 				'one' => q(kirgiskt som),
 				'other' => q(kirgisk som),
 			},
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(Kambódískt ríal),
+				'currency' => q(Kambódískt ríal),
 				'one' => q(kambódískt ríal),
 				'other' => q(kambódísk ríöl),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Kómoreyskur franki),
+				'currency' => q(Kómoreyskur franki),
 				'one' => q(kómoreyskur franki),
 				'other' => q(kómoreyskir frankar),
 			},
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(Norðurkóreskt vonn),
+				'currency' => q(Norðurkóreskt vonn),
 				'one' => q(norðurkóreskt vonn),
 				'other' => q(norðurkóresk vonn),
 			},
 		},
 		'KRW' => {
 			display_name => {
-				'default' => q(Suðurkóreskt vonn),
+				'currency' => q(Suðurkóreskt vonn),
 				'one' => q(suðurkóreskt vonn),
 				'other' => q(suðurkóresk vonn),
 			},
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(Kúveiskur denari),
+				'currency' => q(Kúveiskur denari),
 				'one' => q(kúveiskur denari),
 				'other' => q(kúveiskir denarar),
 			},
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(Caymaneyskur dalur),
+				'currency' => q(Caymaneyskur dalur),
 				'one' => q(caymaneyskur dalur),
 				'other' => q(caymaneyskir dalir),
 			},
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(Kasakst tengi),
+				'currency' => q(Kasakst tengi),
 				'one' => q(kasakst tengi),
 				'other' => q(kasöksk tengi),
 			},
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(Laoskt kip),
+				'currency' => q(Laoskt kip),
 				'one' => q(laoskt kip),
 				'other' => q(laosk kip),
 			},
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(Líbanskt pund),
+				'currency' => q(Líbanskt pund),
 				'one' => q(líbanskt pund),
 				'other' => q(líbönsk pund),
 			},
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(Srílönsk rúpía),
+				'currency' => q(Srílönsk rúpía),
 				'one' => q(srílönsk rúpía),
 				'other' => q(srílanskar rúpíur),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Líberískur dalur),
+				'currency' => q(Líberískur dalur),
 				'one' => q(líberískur dalur),
 				'other' => q(líberískir dalir),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Lesotho Loti),
+				'currency' => q(Lesotho Loti),
 			},
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(Litháískt lít),
+				'currency' => q(Litháískt lít),
 				'one' => q(litháískt lít),
 				'other' => q(litháísk lít),
 			},
 		},
 		'LTT' => {
 			display_name => {
-				'default' => q(Lithuanian Talonas),
+				'currency' => q(Lithuanian Talonas),
 			},
 		},
 		'LUF' => {
 			display_name => {
-				'default' => q(Lúxemborgarfranki),
+				'currency' => q(Lúxemborgarfranki),
 			},
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(Lettneskt lat),
+				'currency' => q(Lettneskt lat),
 				'one' => q(lettneskt lat),
 				'other' => q(lettnesk löt),
 			},
 		},
 		'LVR' => {
 			display_name => {
-				'default' => q(Lettnesk rúbla),
+				'currency' => q(Lettnesk rúbla),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Líbískur denari),
+				'currency' => q(Líbískur denari),
 				'one' => q(líbískur denari),
 				'other' => q(líbískir denarar),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Marokkóskt dírham),
+				'currency' => q(Marokkóskt dírham),
 				'one' => q(marokkóskt dírham),
 				'other' => q(marokkósk dírhöm),
 			},
 		},
 		'MAF' => {
 			display_name => {
-				'default' => q(Marokkóskur franki),
+				'currency' => q(Marokkóskur franki),
 			},
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(Moldavískt lei),
+				'currency' => q(Moldavískt lei),
 				'one' => q(moldavískt lei),
 				'other' => q(moldavísk lei),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Madagaskararjari),
+				'currency' => q(Madagaskararjari),
 				'one' => q(Madagaskararjari),
 				'other' => q(Madagaskararjarar),
 			},
 		},
 		'MGF' => {
 			display_name => {
-				'default' => q(Madagaskur franki),
+				'currency' => q(Madagaskur franki),
 			},
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(Makedónskur denari),
+				'currency' => q(Makedónskur denari),
 				'one' => q(makedónskur denari),
 				'other' => q(makedónskir denarar),
 			},
 		},
 		'MLF' => {
 			display_name => {
-				'default' => q(Malískur franki),
+				'currency' => q(Malískur franki),
 			},
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(Mjanmarskt kjat),
+				'currency' => q(Mjanmarskt kjat),
 				'one' => q(mjanmarskt kjat),
 				'other' => q(mjanmörsk kjöt),
 			},
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(Mongólskur túríkur),
+				'currency' => q(Mongólskur túríkur),
 				'one' => q(mongólskur túríkur),
 				'other' => q(mongólskir túríkar),
 			},
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(Makaópataka),
+				'currency' => q(Makaópataka),
 				'one' => q(Makaópataka),
 				'other' => q(Makaópatökur),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Máritönsk úgía),
+				'currency' => q(Máritönsk úgía),
 				'one' => q(máritönsk úgía),
 				'other' => q(máritanskar úgíur),
 			},
 		},
 		'MTL' => {
 			display_name => {
-				'default' => q(Meltnesk líra),
+				'currency' => q(Meltnesk líra),
 			},
 		},
 		'MTP' => {
 			display_name => {
-				'default' => q(Maltneskt pund),
+				'currency' => q(Maltneskt pund),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Máritísk rúpía),
+				'currency' => q(Máritísk rúpía),
 				'one' => q(máritísk rúpía),
 				'other' => q(máritískar rúpíur),
 			},
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(Maldíveysk rúpía),
+				'currency' => q(Maldíveysk rúpía),
 				'one' => q(maldíveysk rúpía),
 				'other' => q(maldíveyskar rúpíur),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Malavísk kvaka),
+				'currency' => q(Malavísk kvaka),
 				'one' => q(malavísk kvaka),
 				'other' => q(malavískar kvökur),
 			},
@@ -2900,338 +2899,338 @@ has 'curriencies' => (
 		'MXN' => {
 			symbol => 'MXN',
 			display_name => {
-				'default' => q(Mexíkóskur pesi),
+				'currency' => q(Mexíkóskur pesi),
 				'one' => q(mexíkóskur pesi),
 				'other' => q(mexíkóskir pesar),
 			},
 		},
 		'MXP' => {
 			display_name => {
-				'default' => q(Mexíkóskur silfurpesi (1861–1992)),
+				'currency' => q(Mexíkóskur silfurpesi \(1861–1992\)),
 			},
 		},
 		'MXV' => {
 			display_name => {
-				'default' => q(Mexíkóskur pesi, UDI),
+				'currency' => q(Mexíkóskur pesi, UDI),
 			},
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(Malasískt ringit),
+				'currency' => q(Malasískt ringit),
 				'one' => q(malasískt ringit),
 				'other' => q(malasísk ringit),
 			},
 		},
 		'MZE' => {
 			display_name => {
-				'default' => q(Mósambískur skúti),
+				'currency' => q(Mósambískur skúti),
 			},
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(Mósambískt metikal),
+				'currency' => q(Mósambískt metikal),
 				'one' => q(mósambískt metikal),
 				'other' => q(mósambísk metiköl),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Namibískur dalur),
+				'currency' => q(Namibískur dalur),
 				'one' => q(namibískur dalur),
 				'other' => q(namibískir dalir),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Nígerísk næra),
+				'currency' => q(Nígerísk næra),
 				'one' => q(nígerísk næra),
 				'other' => q(nígerískar nærur),
 			},
 		},
 		'NIC' => {
 			display_name => {
-				'default' => q(Níkarögsk kordóva (1988–1991)),
-				'one' => q(Níkarögsk kordóva (1988–1991)),
-				'other' => q(Níkaragskar kordóvur (1988–1991)),
+				'currency' => q(Níkarögsk kordóva \(1988–1991\)),
+				'one' => q(Níkarögsk kordóva \(1988–1991\)),
+				'other' => q(Níkaragskar kordóvur \(1988–1991\)),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(Níkarögsk kordóva),
+				'currency' => q(Níkarögsk kordóva),
 				'one' => q(níkarögsk kordóva),
 				'other' => q(níkaragskar kordóvur),
 			},
 		},
 		'NLG' => {
 			display_name => {
-				'default' => q(Hollenskt gyllini),
+				'currency' => q(Hollenskt gyllini),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(Norsk króna),
+				'currency' => q(Norsk króna),
 				'one' => q(norsk króna),
 				'other' => q(norskar krónur),
 			},
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(Nepölsk rúpía),
+				'currency' => q(Nepölsk rúpía),
 				'one' => q(nepölsk rúpía),
 				'other' => q(nepalskar rúpíur),
 			},
 		},
 		'NZD' => {
 			display_name => {
-				'default' => q(Nýsjálenskur dalur),
+				'currency' => q(Nýsjálenskur dalur),
 				'one' => q(nýsjálenskur dalur),
 				'other' => q(nýsjálenskir dalir),
 			},
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(Ómanskt ríal),
+				'currency' => q(Ómanskt ríal),
 				'one' => q(ómanskt ríal),
 				'other' => q(ómönsk ríöl),
 			},
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(Balbói),
+				'currency' => q(Balbói),
 				'one' => q(balbói),
 				'other' => q(balbóar),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(Perúskt sól),
+				'currency' => q(Perúskt sól),
 				'one' => q(perúskt sól),
 				'other' => q(perúsk sól),
 			},
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(Papúsk kína),
+				'currency' => q(Papúsk kína),
 				'one' => q(papúsk kína),
 				'other' => q(papúskar kínur),
 			},
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(Filippseyskur pesi),
+				'currency' => q(Filippseyskur pesi),
 				'one' => q(filippseyskur pesi),
 				'other' => q(filippseyskir pesar),
 			},
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(Pakistönsk rúpía),
+				'currency' => q(Pakistönsk rúpía),
 				'one' => q(pakistönsk rúpía),
 				'other' => q(pakistanskar rúpíur),
 			},
 		},
 		'PLN' => {
 			display_name => {
-				'default' => q(Pólskt slot),
+				'currency' => q(Pólskt slot),
 				'one' => q(pólskt slot),
 				'other' => q(pólsk slot),
 			},
 		},
 		'PLZ' => {
 			display_name => {
-				'default' => q(Slot),
+				'currency' => q(Slot),
 			},
 		},
 		'PTE' => {
 			display_name => {
-				'default' => q(Portúgalskur skúti),
+				'currency' => q(Portúgalskur skúti),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(Paragvæskt gvaraní),
+				'currency' => q(Paragvæskt gvaraní),
 				'one' => q(paragvæskt gvaraní),
 				'other' => q(paragvæsk gvaraní),
 			},
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(Katarskt ríal),
+				'currency' => q(Katarskt ríal),
 				'one' => q(katarskt ríal),
 				'other' => q(katörsk ríöl),
 			},
 		},
 		'ROL' => {
 			display_name => {
-				'default' => q(Rúmenskt lei (1952–2006)),
-				'one' => q(Rúmenskt lei (1952–2006)),
-				'other' => q(Rúmenskt lei (1952–2006)),
+				'currency' => q(Rúmenskt lei \(1952–2006\)),
+				'one' => q(Rúmenskt lei \(1952–2006\)),
+				'other' => q(Rúmenskt lei \(1952–2006\)),
 			},
 		},
 		'RON' => {
 			display_name => {
-				'default' => q(Rúmenskt lei),
+				'currency' => q(Rúmenskt lei),
 				'one' => q(rúmenskt lei),
 				'other' => q(rúmensk lei),
 			},
 		},
 		'RSD' => {
 			display_name => {
-				'default' => q(Serbneskur denari),
+				'currency' => q(Serbneskur denari),
 				'one' => q(serbneskur denari),
 				'other' => q(serbneskir denarar),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(Rússnesk rúbla),
+				'currency' => q(Rússnesk rúbla),
 				'one' => q(rússnesk rúbla),
 				'other' => q(rússneskar rúblur),
 			},
 		},
 		'RUR' => {
 			display_name => {
-				'default' => q(Rússnesk rúbla (1991–1998)),
+				'currency' => q(Rússnesk rúbla \(1991–1998\)),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Rúandskur franki),
+				'currency' => q(Rúandskur franki),
 				'one' => q(rúandskur franki),
 				'other' => q(rúandskir frankar),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Sádiarabískt ríal),
+				'currency' => q(Sádiarabískt ríal),
 				'one' => q(sádiarabískt ríal),
 				'other' => q(sádiarabísk ríöl),
 			},
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(Salómonseyskur dalur),
+				'currency' => q(Salómonseyskur dalur),
 				'one' => q(salómonseyskur dalur),
 				'other' => q(salómonseyskir dalir),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Seychellesrúpía),
+				'currency' => q(Seychellesrúpía),
 				'one' => q(Seychellesrúpía),
 				'other' => q(Seychellesrúpíur),
 			},
 		},
 		'SDD' => {
 			display_name => {
-				'default' => q(Súdanskur denari),
+				'currency' => q(Súdanskur denari),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Súdanskt pund),
+				'currency' => q(Súdanskt pund),
 				'one' => q(súdanskt pund),
 				'other' => q(súdönsk pund),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(Súdanskt pund (1957–1998)),
+				'currency' => q(Súdanskt pund \(1957–1998\)),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(Sænsk króna),
+				'currency' => q(Sænsk króna),
 				'one' => q(sænsk króna),
 				'other' => q(sænskar krónur),
 			},
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(Singapúrskur dalur),
+				'currency' => q(Singapúrskur dalur),
 				'one' => q(singapúrskur dalur),
 				'other' => q(singapúrskir dalir),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Helenskt pund),
+				'currency' => q(Helenskt pund),
 				'one' => q(helenskt pund),
 				'other' => q(helensk pund),
 			},
 		},
 		'SIT' => {
 			display_name => {
-				'default' => q(Slóvenskur dalur),
+				'currency' => q(Slóvenskur dalur),
 			},
 		},
 		'SKK' => {
 			display_name => {
-				'default' => q(Slóvakísk króna),
+				'currency' => q(Slóvakísk króna),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Síerraleónsk ljóna),
+				'currency' => q(Síerraleónsk ljóna),
 				'one' => q(síerraleónsk ljóna),
 				'other' => q(síerraleónskar ljónur),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Sómalískur skildingur),
+				'currency' => q(Sómalískur skildingur),
 				'one' => q(sómalískur skildingur),
 				'other' => q(sómalískir skildingar),
 			},
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(Súrínamdalur),
+				'currency' => q(Súrínamdalur),
 				'one' => q(Súrínamdalur),
 				'other' => q(Súrínamdalir),
 			},
 		},
 		'SRG' => {
 			display_name => {
-				'default' => q(Suriname Guilder),
+				'currency' => q(Suriname Guilder),
 			},
 		},
 		'SSP' => {
 			display_name => {
-				'default' => q(Suðursúdanskt pund),
+				'currency' => q(Suðursúdanskt pund),
 				'one' => q(suðursúdanskt pund),
 				'other' => q(suðursúdönsk pund),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Saó Tóme og Prinsípe-dóbra),
+				'currency' => q(Saó Tóme og Prinsípe-dóbra),
 				'one' => q(Saó Tóme og Prinsípe-dóbra),
 				'other' => q(Saó Tóme og Prinsípe-dóbrur),
 			},
 		},
 		'SUR' => {
 			display_name => {
-				'default' => q(Soviet Rouble),
+				'currency' => q(Soviet Rouble),
 			},
 		},
 		'SVC' => {
 			display_name => {
-				'default' => q(El Salvador Colon),
+				'currency' => q(El Salvador Colon),
 				'one' => q(El Salvador Colon),
 				'other' => q(El Salvador Colon),
 			},
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(Sýrlenskt pund),
+				'currency' => q(Sýrlenskt pund),
 				'one' => q(sýrlenskt pund),
 				'other' => q(sýrlensk pund),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Svasílenskur lílangeni),
+				'currency' => q(Svasílenskur lílangeni),
 				'one' => q(svasílenskur lílangeni),
 				'other' => q(svasílenskir lílangenar),
 			},
@@ -3239,104 +3238,104 @@ has 'curriencies' => (
 		'THB' => {
 			symbol => '฿',
 			display_name => {
-				'default' => q(Taílenskt bat),
+				'currency' => q(Taílenskt bat),
 				'one' => q(taílenskt bat),
 				'other' => q(taílensk böt),
 			},
 		},
 		'TJR' => {
 			display_name => {
-				'default' => q(Tadsjiksk rúbla),
+				'currency' => q(Tadsjiksk rúbla),
 			},
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(Tadsjikskur sómóni),
+				'currency' => q(Tadsjikskur sómóni),
 				'one' => q(tadsjikskur sómóni),
 				'other' => q(tadsjikskir sómónar),
 			},
 		},
 		'TMM' => {
 			display_name => {
-				'default' => q(Túrkmenskt manat (1993–2009)),
-				'one' => q(Túrkmenskt manat (1993–2009)),
-				'other' => q(Túrkmenskt manat (1993–2009)),
+				'currency' => q(Túrkmenskt manat \(1993–2009\)),
+				'one' => q(Túrkmenskt manat \(1993–2009\)),
+				'other' => q(Túrkmenskt manat \(1993–2009\)),
 			},
 		},
 		'TMT' => {
 			display_name => {
-				'default' => q(Túrkmenskt manat),
+				'currency' => q(Túrkmenskt manat),
 				'one' => q(túrkmenskt manat),
 				'other' => q(túrkmensk manöt),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Túniskur denari),
+				'currency' => q(Túniskur denari),
 				'one' => q(túniskur denari),
 				'other' => q(túniskir denarar),
 			},
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(Tongapanga),
+				'currency' => q(Tongapanga),
 				'one' => q(Tongapanga),
 				'other' => q(Tongapöngur),
 			},
 		},
 		'TPE' => {
 			display_name => {
-				'default' => q(Tímorskur skúti),
+				'currency' => q(Tímorskur skúti),
 			},
 		},
 		'TRL' => {
 			display_name => {
-				'default' => q(Tyrknesk líra (1922–2005)),
+				'currency' => q(Tyrknesk líra \(1922–2005\)),
 			},
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(Tyrknesk líra),
+				'currency' => q(Tyrknesk líra),
 				'one' => q(tyrknesk líra),
 				'other' => q(tyrkneskar lírur),
 			},
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(Trínidad og Tóbagó-dalur),
+				'currency' => q(Trínidad og Tóbagó-dalur),
 				'one' => q(Trínidad og Tóbagó-dalur),
 				'other' => q(Trínidad og Tóbagó-dalir),
 			},
 		},
 		'TWD' => {
 			display_name => {
-				'default' => q(Taívanskur dalur),
+				'currency' => q(Taívanskur dalur),
 				'one' => q(taívanskur dalur),
 				'other' => q(taívanskir dalir),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Tansanískur skildingur),
+				'currency' => q(Tansanískur skildingur),
 				'one' => q(tansanískur skildingur),
 				'other' => q(tansanískir skildingar),
 			},
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(Úkraínsk hrinja),
+				'currency' => q(Úkraínsk hrinja),
 				'one' => q(úkraínsk hrinja),
 				'other' => q(úkraínskar hrinjur),
 			},
 		},
 		'UAK' => {
 			display_name => {
-				'default' => q(Ukrainian Karbovanetz),
+				'currency' => q(Ukrainian Karbovanetz),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Úgandskur skildingur),
+				'currency' => q(Úgandskur skildingur),
 				'one' => q(úgandskur skildingur),
 				'other' => q(úgandskir skildingur),
 			},
@@ -3344,64 +3343,64 @@ has 'curriencies' => (
 		'USD' => {
 			symbol => 'USD',
 			display_name => {
-				'default' => q(Bandaríkjadalur),
+				'currency' => q(Bandaríkjadalur),
 				'one' => q(Bandaríkjadalur),
 				'other' => q(Bandaríkjadalir),
 			},
 		},
 		'USN' => {
 			display_name => {
-				'default' => q(Bandaríkjadalur (næsta dag)),
+				'currency' => q(Bandaríkjadalur \(næsta dag\)),
 			},
 		},
 		'USS' => {
 			display_name => {
-				'default' => q(Bandaríkjadalur (sama dag)),
+				'currency' => q(Bandaríkjadalur \(sama dag\)),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(Úrúgvæskur pesi),
+				'currency' => q(Úrúgvæskur pesi),
 				'one' => q(úrúgvæskur pesi),
 				'other' => q(úrúgvæskir pesar),
 			},
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(Úsbekskt súm),
+				'currency' => q(Úsbekskt súm),
 				'one' => q(úsbekskt súm),
 				'other' => q(úsbeksk súm),
 			},
 		},
 		'VEB' => {
 			display_name => {
-				'default' => q(Bolívar í Venesúela (1871–2008)),
+				'currency' => q(Bolívar í Venesúela \(1871–2008\)),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(Venesúelskur bólívari),
+				'currency' => q(Venesúelskur bólívari),
 				'one' => q(venesúelskur bólívari),
 				'other' => q(venesúelskir bólívarar),
 			},
 		},
 		'VND' => {
 			display_name => {
-				'default' => q(Víetnamskt dong),
+				'currency' => q(Víetnamskt dong),
 				'one' => q(víetnamskt dong),
 				'other' => q(víetnömsk dong),
 			},
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(Vanúatúskt vatú),
+				'currency' => q(Vanúatúskt vatú),
 				'one' => q(vanúatúskt vatú),
 				'other' => q(vanúatúsk vatú),
 			},
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(Samóatala),
+				'currency' => q(Samóatala),
 				'one' => q(Samóatala),
 				'other' => q(Samóatölur),
 			},
@@ -3409,127 +3408,127 @@ has 'curriencies' => (
 		'XAF' => {
 			symbol => 'FCFA',
 			display_name => {
-				'default' => q(Miðafrískur franki),
+				'currency' => q(Miðafrískur franki),
 				'one' => q(miðafrískur franki),
 				'other' => q(miðafrískir frankar),
 			},
 		},
 		'XAG' => {
 			display_name => {
-				'default' => q(unse silfur),
+				'currency' => q(unse silfur),
 				'one' => q(unse silfur),
 				'other' => q(unse silfur),
 			},
 		},
 		'XAU' => {
 			display_name => {
-				'default' => q(unse gull),
+				'currency' => q(unse gull),
 				'one' => q(unse gull),
 				'other' => q(unse gull),
 			},
 		},
 		'XCD' => {
 			display_name => {
-				'default' => q(Austurkarabískur dalur),
+				'currency' => q(Austurkarabískur dalur),
 				'one' => q(austurkarabískur dalur),
 				'other' => q(austurkarabískir dalir),
 			},
 		},
 		'XDR' => {
 			display_name => {
-				'default' => q(Sérstök dráttarréttindi),
+				'currency' => q(Sérstök dráttarréttindi),
 			},
 		},
 		'XFO' => {
 			display_name => {
-				'default' => q(Franskur gullfranki),
+				'currency' => q(Franskur gullfranki),
 			},
 		},
 		'XFU' => {
 			display_name => {
-				'default' => q(Franskur franki, UIC),
+				'currency' => q(Franskur franki, UIC),
 			},
 		},
 		'XOF' => {
 			symbol => 'CFA',
 			display_name => {
-				'default' => q(Vesturafrískur franki),
+				'currency' => q(Vesturafrískur franki),
 				'one' => q(vesturafrískur franki),
 				'other' => q(vesturafrískir frankar),
 			},
 		},
 		'XPD' => {
 			display_name => {
-				'default' => q(unse palladín),
+				'currency' => q(unse palladín),
 				'one' => q(unse palladín),
 				'other' => q(unse palladín),
 			},
 		},
 		'XPF' => {
 			display_name => {
-				'default' => q(Pólinesískur franki),
+				'currency' => q(Pólinesískur franki),
 				'one' => q(pólinesískur franki),
 				'other' => q(pólinesískir frankar),
 			},
 		},
 		'XPT' => {
 			display_name => {
-				'default' => q(unse platína),
+				'currency' => q(unse platína),
 				'one' => q(unse platína),
 				'other' => q(unse platína),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(Óþekktur gjaldmiðill),
-				'one' => q((óþekktur gjaldmiðill)),
-				'other' => q((óþekktur gjaldmiðill)),
+				'currency' => q(Óþekktur gjaldmiðill),
+				'one' => q(\(óþekktur gjaldmiðill\)),
+				'other' => q(\(óþekktur gjaldmiðill\)),
 			},
 		},
 		'YDD' => {
 			display_name => {
-				'default' => q(Jemenskur denari),
+				'currency' => q(Jemenskur denari),
 			},
 		},
 		'YER' => {
 			display_name => {
-				'default' => q(Jemenskt ríal),
+				'currency' => q(Jemenskt ríal),
 				'one' => q(jemenskt ríal),
 				'other' => q(jemensk ríöl),
 			},
 		},
 		'YUM' => {
 			display_name => {
-				'default' => q(Júgóslavneskur denari),
+				'currency' => q(Júgóslavneskur denari),
 			},
 		},
 		'ZAL' => {
 			display_name => {
-				'default' => q(Rand (viðskipta)),
+				'currency' => q(Rand \(viðskipta\)),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Suðurafrískt rand),
+				'currency' => q(Suðurafrískt rand),
 				'one' => q(suðurafrískt rand),
 				'other' => q(suðurafrísk rönd),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Zambian Kwacha (1968–2012)),
+				'currency' => q(Zambian Kwacha \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Sambísk kvaka),
+				'currency' => q(Sambísk kvaka),
 				'one' => q(sambísk kvaka),
 				'other' => q(sambískar kvökur),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Simbabveskur dalur),
+				'currency' => q(Simbabveskur dalur),
 			},
 		},
 	} },
@@ -3802,8 +3801,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'narrow' => {
-					'am' => q{f.h.},
 					'pm' => q{e.h.},
+					'am' => q{f.h.},
 				},
 				'wide' => {
 					'am' => q{f.h.},
@@ -3812,8 +3811,8 @@ has 'day_periods' => (
 			},
 			'stand-alone' => {
 				'wide' => {
-					'pm' => q{síðdegi},
 					'am' => q{árdegi},
+					'pm' => q{síðdegi},
 				},
 			},
 		},

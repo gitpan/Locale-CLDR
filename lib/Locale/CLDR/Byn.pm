@@ -1,6 +1,6 @@
-package Locale::CLDR::Byn;
+package Locale::CLDR::Byn v0.0.4;
 # This file auto generated from Data\common\main\byn.xml
-#	on Sun 30 Mar 11:56:59 pm GMT
+#	on Sun 13 Apr  9:53:03 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -340,3 +340,321 @@ has 'characters' => (
 	},
 );
 
+has 'default_numbering_system' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has native_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has traditional_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'ethi',
+);
+
+has 'number_currency_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'pattern' => {
+				'default' => {
+					'standard' => {
+						'negative' => '¤#,##0.00',
+						'positive' => '¤#,##0.00',
+					},
+				},
+			},
+		},
+} },
+);
+
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'BRL' => {
+			display_name => {
+				'currency' => q(የብራዚል ሪል),
+			},
+		},
+		'CNY' => {
+			display_name => {
+				'currency' => q(የቻይና ዩአን ረንሚንቢ),
+			},
+		},
+		'ERN' => {
+			symbol => 'Nfk',
+		},
+		'ETB' => {
+			display_name => {
+				'currency' => q(የኢትዮጵያ ብር),
+			},
+		},
+		'EUR' => {
+			display_name => {
+				'currency' => q(አውሮ),
+			},
+		},
+		'GBP' => {
+			display_name => {
+				'currency' => q(የእንግሊዝ ፓውንድ ስተርሊንግ),
+			},
+		},
+		'INR' => {
+			display_name => {
+				'currency' => q(የሕንድ ሩፒ),
+			},
+		},
+		'JPY' => {
+			display_name => {
+				'currency' => q(የጃፓን የን),
+			},
+		},
+		'RUB' => {
+			display_name => {
+				'currency' => q(የራሻ ሩብል),
+			},
+		},
+		'USD' => {
+			display_name => {
+				'currency' => q(የአሜሪካን ዶላር),
+			},
+		},
+	} },
+);
+
+
+has 'calendar_months' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'ልደት',
+							'ካብኽ',
+							'ክብላ',
+							'ፋጅኺ',
+							'ክቢቅ',
+							'ም/ት',
+							'ኰር',
+							'ማርያ',
+							'ያኸኒ',
+							'መተሉ',
+							'ም/ም',
+							'ተሕሳ'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'ልደትሪ',
+							'ካብኽብቲ',
+							'ክብላ',
+							'ፋጅኺሪ',
+							'ክቢቅሪ',
+							'ምኪኤል ትጟኒሪ',
+							'ኰርኩ',
+							'ማርያም ትሪ',
+							'ያኸኒ መሳቅለሪ',
+							'መተሉ',
+							'ምኪኤል መሽወሪ',
+							'ተሕሳስሪ'
+						],
+						leap => [
+							
+						],
+					},
+				},
+				'stand-alone' => {
+					narrow => {
+						nonleap => [
+							'ል',
+							'ካ',
+							'ክ',
+							'ፋ',
+							'ክ',
+							'ም',
+							'ኰ',
+							'ማ',
+							'ያ',
+							'መ',
+							'ም',
+							'ተ'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_days' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						mon => 'ሰኑ',
+						tue => 'ሰሊጝ',
+						wed => 'ለጓ',
+						thu => 'ኣምድ',
+						fri => 'ኣርብ',
+						sat => 'ሰ/ሽ',
+						sun => 'ሰ/ቅ'
+					},
+					wide => {
+						mon => 'ሰኑ',
+						tue => 'ሰሊጝ',
+						wed => 'ለጓ ወሪ ለብዋ',
+						thu => 'ኣምድ',
+						fri => 'ኣርብ',
+						sat => 'ሰንበር ሽጓዅ',
+						sun => 'ሰንበር ቅዳዅ'
+					},
+				},
+				'stand-alone' => {
+					narrow => {
+						mon => 'ሰ',
+						tue => 'ሰ',
+						wed => 'ለ',
+						thu => 'ኣ',
+						fri => 'ኣ',
+						sat => 'ሰ',
+						sun => 'ሰ'
+					},
+				},
+			},
+	} },
+);
+
+has 'day_periods' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			'format' => {
+				'wide' => {
+					'am' => q{ፋዱስ ጃብ},
+					'pm' => q{ፋዱስ ደምቢ},
+				},
+			},
+		},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			abbreviated => {
+				'0' => 'ይጅ',
+				'1' => 'ኣድ'
+			},
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			'full' => q{EEEE፡ dd MMMM ግርጋ y G},
+			'long' => q{dd MMMM y G},
+			'medium' => q{dd-MMM-y G},
+			'short' => q{dd/MM/yy GGGGG},
+		},
+		'gregorian' => {
+			'full' => q{EEEE፡ dd MMMM ግርጋ y G},
+			'long' => q{dd MMMM y},
+			'medium' => q{dd-MMM-y},
+			'short' => q{dd/MM/yy},
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			'full' => q{h:mm:ss a zzzz},
+			'long' => q{h:mm:ss a z},
+			'medium' => q{h:mm:ss a},
+			'short' => q{h:mm a},
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

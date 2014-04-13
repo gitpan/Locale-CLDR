@@ -1,6 +1,6 @@
-package Locale::CLDR::Kab;
+package Locale::CLDR::Kab v0.0.4;
 # This file auto generated from Data\common\main\kab.xml
-#	on Mon 31 Mar 12:53:14 am GMT
+#	on Sun 13 Apr 10:52:17 am GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use v5.18;
@@ -410,278 +410,278 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Adirham n Tgeldunin Taɛrabin Yedduklen),
+				'currency' => q(Adirham n Tgeldunin Taɛrabin Yedduklen),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Akwanza n Ungula),
+				'currency' => q(Akwanza n Ungula),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Adular n Lusṭrali),
+				'currency' => q(Adular n Lusṭrali),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Adinar Abaḥrini),
+				'currency' => q(Adinar Abaḥrini),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Afrank Aburandi),
+				'currency' => q(Afrank Aburandi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Apula Abusṭwanan),
+				'currency' => q(Apula Abusṭwanan),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Adular Akanadi),
+				'currency' => q(Adular Akanadi),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Afrank Akunguli),
+				'currency' => q(Afrank Akunguli),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Afrank Aswis),
+				'currency' => q(Afrank Aswis),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Ayuwan Renminbi Acinwa),
+				'currency' => q(Ayuwan Renminbi Acinwa),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Akabuviradinu Askudi),
+				'currency' => q(Akabuviradinu Askudi),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Afrank Ajibuti),
+				'currency' => q(Afrank Ajibuti),
 			},
 		},
 		'DZD' => {
 			symbol => 'DA',
 			display_name => {
-				'default' => q(Adinar Azzayri),
+				'currency' => q(Adinar Azzayri),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Apund Amaṣri),
+				'currency' => q(Apund Amaṣri),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Anakfa Iritiri),
+				'currency' => q(Anakfa Iritiri),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Abir Utyupi),
+				'currency' => q(Abir Utyupi),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Uru),
+				'currency' => q(Uru),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Apund Sterling Aglizi),
+				'currency' => q(Apund Sterling Aglizi),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Asidi Aɣani),
+				'currency' => q(Asidi Aɣani),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Adalasi Agambi),
+				'currency' => q(Adalasi Agambi),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Afrank Aɣini),
+				'currency' => q(Afrank Aɣini),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Arupi Ahendi),
+				'currency' => q(Arupi Ahendi),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Ayen Ajappuni),
+				'currency' => q(Ayen Ajappuni),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Aciling Akini),
+				'currency' => q(Aciling Akini),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Afrank Akamiruni),
+				'currency' => q(Afrank Akamiruni),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Adular Alibiri),
+				'currency' => q(Adular Alibiri),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Aluṭi Alizuṭi),
+				'currency' => q(Aluṭi Alizuṭi),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Adinar Alibi),
+				'currency' => q(Adinar Alibi),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Adirham Amerruki),
+				'currency' => q(Adirham Amerruki),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Aryari Amalgac),
+				'currency' => q(Aryari Amalgac),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Agiya Amuriṭani),
+				'currency' => q(Agiya Amuriṭani),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Arupi Amurisi),
+				'currency' => q(Arupi Amurisi),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Akwaca Amalawi),
+				'currency' => q(Akwaca Amalawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Amitikal Amuzembiqi),
+				'currency' => q(Amitikal Amuzembiqi),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Adular Anamibi),
+				'currency' => q(Adular Anamibi),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Anayra Anijiri),
+				'currency' => q(Anayra Anijiri),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Afrank Aruwandi),
+				'currency' => q(Afrank Aruwandi),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Aryal Asuɛudi),
+				'currency' => q(Aryal Asuɛudi),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Arupi Aseycili),
+				'currency' => q(Arupi Aseycili),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Apund Asudani),
+				'currency' => q(Apund Asudani),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Apund Asant Ilini),
+				'currency' => q(Apund Asant Ilini),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Alyun),
+				'currency' => q(Alyun),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Aciling Aṣumali),
+				'currency' => q(Aciling Aṣumali),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Asw Ṭum d Udubra Amenzay),
+				'currency' => q(Asw Ṭum d Udubra Amenzay),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Alilangini),
+				'currency' => q(Alilangini),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Adinar Atunsi),
+				'currency' => q(Adinar Atunsi),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Aciling Aṭanẓani),
+				'currency' => q(Aciling Aṭanẓani),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Aciling Awgandi),
+				'currency' => q(Aciling Awgandi),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Adular WD),
+				'currency' => q(Adular WD),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Afrank BCEA CFA),
+				'currency' => q(Afrank BCEA CFA),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Afrank BCEAO CFA),
+				'currency' => q(Afrank BCEAO CFA),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Arand Afriqi n Wadda),
+				'currency' => q(Arand Afriqi n Wadda),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Akwaca Azambi (1968–2012)),
+				'currency' => q(Akwaca Azambi \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Akwaca Azambi),
+				'currency' => q(Akwaca Azambi),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Adular Azimbabwi),
+				'currency' => q(Adular Azimbabwi),
 			},
 		},
 	} },
@@ -830,8 +830,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{n tmeddit},
 					'am' => q{n tufat},
+					'pm' => q{n tmeddit},
 				},
 			},
 		},
@@ -911,7 +911,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			M => q{M},
 			MMM => q{MMM},
 			MMMEd => q{E d MMM},
@@ -933,7 +933,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			M => q{M},
 			MMM => q{MMM},
 			MMMEd => q{E d MMM},
@@ -974,3 +974,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

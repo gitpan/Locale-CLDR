@@ -1,6 +1,6 @@
-package Locale::CLDR::Tn;
+package Locale::CLDR::Tn v0.0.4;
 # This file auto generated from Data\common\main\tn.xml
-#	on Mon 31 Mar  2:13:48 am GMT
+#	on Sun 13 Apr 12:14:48 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -148,3 +148,233 @@ has 'alternate_quote_end' => (
 	default		=> qq{”},
 );
 
+has 'number_symbols' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'decimal' => q(,),
+			'exponential' => q(),
+			'group' => q( ),
+			'infinity' => q(),
+			'list' => q(),
+			'minusSign' => q(),
+			'nan' => q(),
+			'perMille' => q(),
+			'percentSign' => q(),
+			'plusSign' => q(),
+			'superscriptingExponent' => q(),
+		},
+	} }
+);
+
+has 'number_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		decimalFormat => {
+			'default' => {
+				'0' => {
+					'default' => '#,##0.###',
+				},
+			},
+		},
+		percentFormat => {
+			'default' => {
+				'0' => {
+					'default' => '#,##0%',
+				},
+			},
+		},
+		scientificFormat => {
+			'default' => {
+				'0' => {
+					'default' => '#E0',
+				},
+			},
+		},
+} },
+);
+
+has 'number_currency_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'pattern' => {
+				'default' => {
+					'standard' => {
+						'negative' => '¤#,##0.00',
+						'positive' => '¤#,##0.00',
+					},
+				},
+			},
+		},
+} },
+);
+
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'ZAR' => {
+			symbol => 'R',
+		},
+	} },
+);
+
+
+has 'calendar_months' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'Fer',
+							'Tlh',
+							'Mop',
+							'Mor',
+							'Mot',
+							'See',
+							'Phu',
+							'Pha',
+							'Lwe',
+							'Dip',
+							'Ngw',
+							'Sed'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'Ferikgong',
+							'Tlhakole',
+							'Mopitlo',
+							'Moranang',
+							'Motsheganang',
+							'Seetebosigo',
+							'Phukwi',
+							'Phatwe',
+							'Lwetse',
+							'Diphalane',
+							'Ngwanatsele',
+							'Sedimonthole'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_days' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						mon => 'Mos',
+						tue => 'Bed',
+						wed => 'Rar',
+						thu => 'Ne',
+						fri => 'Tla',
+						sat => 'Mat',
+						sun => 'Tsh'
+					},
+					wide => {
+						mon => 'Mosopulogo',
+						tue => 'Labobedi',
+						wed => 'Laboraro',
+						thu => 'Labone',
+						fri => 'Labotlhano',
+						sat => 'Matlhatso',
+						sun => 'Tshipi'
+					},
+				},
+			},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

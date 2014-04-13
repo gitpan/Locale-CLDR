@@ -1,6 +1,6 @@
-package Locale::CLDR::Nmg;
+package Locale::CLDR::Nmg v0.0.4;
 # This file auto generated from Data\common\main\nmg.xml
-#	on Mon 31 Mar  1:34:53 am GMT
+#	on Sun 13 Apr 11:34:57 am GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use v5.18;
@@ -432,282 +432,282 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Mɔn B ´Arabe),
+				'currency' => q(Mɔn B ´Arabe),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Mɔn Angola),
+				'currency' => q(Mɔn Angola),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Dɔ́llɔ Ɔstralia),
+				'currency' => q(Dɔ́llɔ Ɔstralia),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Mɔn Bahrein),
+				'currency' => q(Mɔn Bahrein),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Fraŋ Burundi),
+				'currency' => q(Fraŋ Burundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Mɔn Botswana),
+				'currency' => q(Mɔn Botswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Dɔ́llɔ Kanada),
+				'currency' => q(Dɔ́llɔ Kanada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Fraŋ bó Kongolɛ̌),
+				'currency' => q(Fraŋ bó Kongolɛ̌),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Fraŋ Suisse),
+				'currency' => q(Fraŋ Suisse),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Mɔn bó Chinois),
+				'currency' => q(Mɔn bó Chinois),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Mɔn Kapvɛrt),
+				'currency' => q(Mɔn Kapvɛrt),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Fraŋ Jibuti),
+				'currency' => q(Fraŋ Jibuti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Mɔn Algeria),
+				'currency' => q(Mɔn Algeria),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Mɔn Ägyptɛn),
+				'currency' => q(Mɔn Ägyptɛn),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Mɔn Erytré),
+				'currency' => q(Mɔn Erytré),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Mɔn Ethiopia),
+				'currency' => q(Mɔn Ethiopia),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Euro),
+				'currency' => q(Euro),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Mɔn Ngɛ̄lɛ̄n),
+				'currency' => q(Mɔn Ngɛ̄lɛ̄n),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Mɔn Gana),
+				'currency' => q(Mɔn Gana),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Mɔn Gambia),
+				'currency' => q(Mɔn Gambia),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Fraŋ Guiné),
+				'currency' => q(Fraŋ Guiné),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Mɔn India),
+				'currency' => q(Mɔn India),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Mɔn Japɔn),
+				'currency' => q(Mɔn Japɔn),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Mɔn Kɛnya),
+				'currency' => q(Mɔn Kɛnya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Fraŋ bó Kɔmɔr),
+				'currency' => q(Fraŋ bó Kɔmɔr),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Dɔ́llɔ Liberia),
+				'currency' => q(Dɔ́llɔ Liberia),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Mɔn Lesoto),
+				'currency' => q(Mɔn Lesoto),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Mɔn Libya),
+				'currency' => q(Mɔn Libya),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Mɔn Marɔk),
+				'currency' => q(Mɔn Marɔk),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Mɔn Madagaskar),
+				'currency' => q(Mɔn Madagaskar),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Mɔn Moritania),
+				'currency' => q(Mɔn Moritania),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Mɔn Moriss),
+				'currency' => q(Mɔn Moriss),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Mɔn Malawi),
+				'currency' => q(Mɔn Malawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Mɔn Mozambik),
+				'currency' => q(Mɔn Mozambik),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Dɔ́llɔ Namibia),
+				'currency' => q(Dɔ́llɔ Namibia),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Naïra Nigeria),
+				'currency' => q(Naïra Nigeria),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Fraŋ Rwanda),
+				'currency' => q(Fraŋ Rwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Mɔn Saudi Arabia),
+				'currency' => q(Mɔn Saudi Arabia),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Mɔn Seychɛlle),
+				'currency' => q(Mɔn Seychɛlle),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Mɔn Sudan),
+				'currency' => q(Mɔn Sudan),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(Mɔn Sudan (1957–1998)),
+				'currency' => q(Mɔn Sudan \(1957–1998\)),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Mɔn má Saint Lina),
+				'currency' => q(Mɔn má Saint Lina),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Mɔn Leɔne),
+				'currency' => q(Mɔn Leɔne),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Mɔn Somalía),
+				'currency' => q(Mɔn Somalía),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Mɔn Sao tomé na prinship),
+				'currency' => q(Mɔn Sao tomé na prinship),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Mɔn Ligangeni),
+				'currency' => q(Mɔn Ligangeni),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Mɔn Tunisia),
+				'currency' => q(Mɔn Tunisia),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Mɔn Tanzania),
+				'currency' => q(Mɔn Tanzania),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Mɔn Uganda),
+				'currency' => q(Mɔn Uganda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Dɔ́llɔ Amɛŕka),
+				'currency' => q(Dɔ́llɔ Amɛŕka),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Fraŋ CFA BEAC),
+				'currency' => q(Fraŋ CFA BEAC),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Fraŋ CFA BCEAO),
+				'currency' => q(Fraŋ CFA BCEAO),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Mɔn Afrik yí sí),
+				'currency' => q(Mɔn Afrik yí sí),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Mɔn Zambia (1968–2012)),
+				'currency' => q(Mɔn Zambia \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Mɔn Zambia),
+				'currency' => q(Mɔn Zambia),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Dɔ́llɔ Zimbabwǝ (1980–2008)),
+				'currency' => q(Dɔ́llɔ Zimbabwǝ \(1980–2008\)),
 			},
 		},
 	} },
@@ -835,8 +835,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{kugú},
 					'am' => q{maná},
+					'pm' => q{kugú},
 				},
 			},
 		},
@@ -983,3 +983,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

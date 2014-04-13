@@ -1,6 +1,6 @@
-package Locale::CLDR::Ia;
+package Locale::CLDR::Ia v0.0.4;
 # This file auto generated from Data\common\main\ia.xml
-#	on Mon 31 Mar 12:43:02 am GMT
+#	on Sun 13 Apr 10:41:42 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -362,3 +362,349 @@ has 'alternate_quote_end' => (
 	default		=> qq{”},
 );
 
+has 'number_symbols' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'decimal' => q(,),
+			'exponential' => q(),
+			'group' => q(.),
+			'infinity' => q(),
+			'list' => q(),
+			'minusSign' => q(),
+			'nan' => q(),
+			'perMille' => q(),
+			'percentSign' => q(),
+			'plusSign' => q(),
+			'superscriptingExponent' => q(),
+		},
+	} }
+);
+
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'AUD' => {
+			display_name => {
+				'currency' => q(Dollares australian),
+			},
+		},
+		'CAD' => {
+			display_name => {
+				'currency' => q(Dollares canadian),
+			},
+		},
+		'CHF' => {
+			display_name => {
+				'currency' => q(Francos suisse),
+			},
+		},
+		'DEM' => {
+			display_name => {
+				'currency' => q(Marcos german),
+			},
+		},
+		'DKK' => {
+			display_name => {
+				'currency' => q(Coronas danese),
+			},
+		},
+		'EUR' => {
+			display_name => {
+				'currency' => q(Euros),
+			},
+		},
+		'FRF' => {
+			display_name => {
+				'currency' => q(francos francese),
+			},
+		},
+		'GBP' => {
+			display_name => {
+				'currency' => q(Libras sterling britannic),
+			},
+		},
+		'JPY' => {
+			display_name => {
+				'currency' => q(Yen japonese),
+			},
+		},
+		'NOK' => {
+			display_name => {
+				'currency' => q(Coronas norvegian),
+			},
+		},
+		'SEK' => {
+			display_name => {
+				'currency' => q(Coronas svedese),
+			},
+		},
+		'USD' => {
+			display_name => {
+				'currency' => q(Dollares statounitese),
+			},
+		},
+	} },
+);
+
+
+has 'calendar_months' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'jan',
+							'feb',
+							'mar',
+							'apr',
+							'mai',
+							'jun',
+							'jul',
+							'aug',
+							'sep',
+							'oct',
+							'nov',
+							'dec'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'januario',
+							'februario',
+							'martio',
+							'april',
+							'maio',
+							'junio',
+							'julio',
+							'augusto',
+							'septembre',
+							'octobre',
+							'novembre',
+							'decembre'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_days' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						mon => 'lun',
+						tue => 'mar',
+						wed => 'mer',
+						thu => 'jov',
+						fri => 'ven',
+						sat => 'sab',
+						sun => 'dom'
+					},
+					wide => {
+						mon => 'lunedi',
+						tue => 'martedi',
+						wed => 'mercuridi',
+						thu => 'jovedi',
+						fri => 'venerdi',
+						sat => 'sabbato',
+						sun => 'dominica'
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_quarters' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {0 => 'T1',
+						1 => 'T2',
+						2 => 'T3',
+						3 => 'T4'
+					},
+					wide => {0 => '1-me trimestre',
+						1 => '2-nde trimestre',
+						2 => '3-tie trimestre',
+						3 => '4-te trimestre'
+					},
+				},
+			},
+	} },
+);
+
+has 'day_periods' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			'format' => {
+				'wide' => {
+					'pm' => q{p.m.},
+					'am' => q{a.m.},
+				},
+			},
+		},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			abbreviated => {
+				'0' => 'a.Chr.',
+				'1' => 'p.Chr.'
+			},
+			wide => {
+				'0' => 'ante Christo',
+				'1' => 'post Christo'
+			},
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			'full' => q{EEEE, G y MMMM dd},
+			'long' => q{G y MMMM d},
+			'medium' => q{G y MMM d},
+			'short' => q{GGGGG yy/MM/dd},
+		},
+		'gregorian' => {
+			'full' => q{EEEE, y MMMM dd},
+			'long' => q{y MMMM d},
+			'medium' => q{y MMM d},
+			'short' => q{yy/MM/dd},
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			'full' => q{HH:mm:ss zzzz},
+			'long' => q{HH:mm:ss z},
+			'medium' => q{HH:mm:ss},
+			'short' => q{HH:mm},
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'time_zone_names' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default	=> sub { {
+		'Africa/Djibouti' => {
+			exemplarCity => q#Djibuti#,
+		},
+		'America/Grenada' => {
+			exemplarCity => q#Granada#,
+		},
+		'America/Martinique' => {
+			exemplarCity => q#Martinica#,
+		},
+		'America/Puerto_Rico' => {
+			exemplarCity => q#Porto Rico#,
+		},
+		'Asia/Hong_Kong' => {
+			exemplarCity => q#Hongkong#,
+		},
+		'Atlantic/Cape_Verde' => {
+			exemplarCity => q#Capo Verde#,
+		},
+		'Europe/Luxembourg' => {
+			exemplarCity => q#Luxemburg#,
+		},
+		'Indian/Maldives' => {
+			exemplarCity => q#Maldivas#,
+		},
+		'Indian/Mauritius' => {
+			exemplarCity => q#Mauritio#,
+		},
+		'Indian/Mayotte' => {
+			exemplarCity => q#Mayotta#,
+		},
+		'Pacific/Pitcairn' => {
+			exemplarCity => q#Insula Pitcairn#,
+		},
+	 } }
+);
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

@@ -1,6 +1,6 @@
-package Locale::CLDR::Mua;
+package Locale::CLDR::Mua v0.0.4;
 # This file auto generated from Data\common\main\mua.xml
-#	on Mon 31 Mar  1:26:50 am GMT
+#	on Sun 13 Apr 11:26:52 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -436,282 +436,282 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Solai Arabiya),
+				'currency' => q(Solai Arabiya),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(solai Angola),
+				'currency' => q(solai Angola),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(solai Australya),
+				'currency' => q(solai Australya),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(solai Barenya),
+				'currency' => q(solai Barenya),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(solai Burundi),
+				'currency' => q(solai Burundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(solai Botswana),
+				'currency' => q(solai Botswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(solai Kanada),
+				'currency' => q(solai Kanada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(solai Kongo),
+				'currency' => q(solai Kongo),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Solai Swiss),
+				'currency' => q(Solai Swiss),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(solai Syiŋ),
+				'currency' => q(solai Syiŋ),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(solai Kapverdiya),
+				'currency' => q(solai Kapverdiya),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(solai Djibouti),
+				'currency' => q(solai Djibouti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(solai Algerya),
+				'currency' => q(solai Algerya),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(solai Egypt),
+				'currency' => q(solai Egypt),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(solai Eritre),
+				'currency' => q(solai Eritre),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(solai Etiopia),
+				'currency' => q(solai Etiopia),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(solai Euro),
+				'currency' => q(solai Euro),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(solai Britaniya),
+				'currency' => q(solai Britaniya),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(solai Gana),
+				'currency' => q(solai Gana),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(solai Gambiya),
+				'currency' => q(solai Gambiya),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(solai Guine),
+				'currency' => q(solai Guine),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(solai India),
+				'currency' => q(solai India),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(solai Japoŋ),
+				'currency' => q(solai Japoŋ),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(solai Kenia),
+				'currency' => q(solai Kenia),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(solai Komorya),
+				'currency' => q(solai Komorya),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(solai Liberiya),
+				'currency' => q(solai Liberiya),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(solai Lesotho),
+				'currency' => q(solai Lesotho),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(solai Libya),
+				'currency' => q(solai Libya),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Solai Marok),
+				'currency' => q(Solai Marok),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Solai Malagasya),
+				'currency' => q(Solai Malagasya),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Solai Mauritaniya),
+				'currency' => q(Solai Mauritaniya),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Solai Mauricǝ),
+				'currency' => q(Solai Mauricǝ),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Solai Malawi),
+				'currency' => q(Solai Malawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Solai Mozambika),
+				'currency' => q(Solai Mozambika),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Solai Namibiya),
+				'currency' => q(Solai Namibiya),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Solai Nigeriya),
+				'currency' => q(Solai Nigeriya),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Solai Rwanda),
+				'currency' => q(Solai Rwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Solai Saudiya),
+				'currency' => q(Solai Saudiya),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Solai Saichel),
+				'currency' => q(Solai Saichel),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Solai Sudaŋ ma dii ne dinar),
+				'currency' => q(Solai Sudaŋ ma dii ne dinar),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(Solai Sudaŋ ma dii ne livre),
+				'currency' => q(Solai Sudaŋ ma dii ne livre),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Solai Helena),
+				'currency' => q(Solai Helena),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(solai Sierra leonǝ),
+				'currency' => q(solai Sierra leonǝ),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Solai Somaliya),
+				'currency' => q(Solai Somaliya),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Solai Sao Tome),
+				'currency' => q(Solai Sao Tome),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(solai Swaziland),
+				'currency' => q(solai Swaziland),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Solai Tunisiya),
+				'currency' => q(Solai Tunisiya),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Solai Tanzaniya),
+				'currency' => q(Solai Tanzaniya),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Solai Uganda),
+				'currency' => q(Solai Uganda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Solai Amerika),
+				'currency' => q(Solai Amerika),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(solai BEAC),
+				'currency' => q(solai BEAC),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(solai BCEAO),
+				'currency' => q(solai BCEAO),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Solai Africa nekǝsǝŋ),
+				'currency' => q(Solai Africa nekǝsǝŋ),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Solai Zambiya (1968–2012)),
+				'currency' => q(Solai Zambiya \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Solai Zambiya),
+				'currency' => q(Solai Zambiya),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Solai Zimbabwe),
+				'currency' => q(Solai Zimbabwe),
 			},
 		},
 	} },
@@ -941,7 +941,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -965,7 +965,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -1008,3 +1008,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

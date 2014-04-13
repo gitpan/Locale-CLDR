@@ -1,6 +1,6 @@
-package Locale::CLDR::EraBoundries;
+package Locale::CLDR::EraBoundries v0.0.4;
 # This file auto generated from Data.xml
-#	on Sat 12 Apr  8:32:39 am GMT
+#	on Sun 13 Apr  9:29:22 am GMT
 # XML file generated 2014-03-13 15:53:16 -0500 (Thu, 13 Mar 2014)
 
 use v5.18;

@@ -1,6 +1,6 @@
-package Locale::CLDR::Cgg;
+package Locale::CLDR::Cgg v0.0.4;
 # This file auto generated from Data\common\main\cgg.xml
-#	on Sun 30 Mar 11:58:45 pm GMT
+#	on Sun 13 Apr  9:54:53 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -361,9 +361,6 @@ has 'nostr' => (
 	default		=> sub { qr'^(?i:Ngaaha/apaana|N)$' }
 );
 
-	} }
-);
-
 has 'number_currency_formats' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -389,278 +386,278 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Dirham za Buharabu),
+				'currency' => q(Dirham za Buharabu),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Kwanza ya Angora),
+				'currency' => q(Kwanza ya Angora),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Doora ya Austureeriya),
+				'currency' => q(Doora ya Austureeriya),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Dinari ya Bahareni),
+				'currency' => q(Dinari ya Bahareni),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Faranga ya Burundi),
+				'currency' => q(Faranga ya Burundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Pura ya Botswana),
+				'currency' => q(Pura ya Botswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Doora ya Kanada),
+				'currency' => q(Doora ya Kanada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Faranga ya Kongo),
+				'currency' => q(Faranga ya Kongo),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Faranga ya Swisi),
+				'currency' => q(Faranga ya Swisi),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Yuan Renminbi ya China),
+				'currency' => q(Yuan Renminbi ya China),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Eskudo ya Kepuvede),
+				'currency' => q(Eskudo ya Kepuvede),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Faranga ya Gyibuti),
+				'currency' => q(Faranga ya Gyibuti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Dinari ya Arigyeriya),
+				'currency' => q(Dinari ya Arigyeriya),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Paundi ya Misiri),
+				'currency' => q(Paundi ya Misiri),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Nakfa ya Eritireya),
+				'currency' => q(Nakfa ya Eritireya),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Birr ya Ethiopiya),
+				'currency' => q(Birr ya Ethiopiya),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Yuro),
+				'currency' => q(Yuro),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Paundi ya Bungyereza),
+				'currency' => q(Paundi ya Bungyereza),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Cedi ya Ghana),
+				'currency' => q(Cedi ya Ghana),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Dalasi ya Gambia),
+				'currency' => q(Dalasi ya Gambia),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Faranga ya Guinea),
+				'currency' => q(Faranga ya Guinea),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Rupiya ya India),
+				'currency' => q(Rupiya ya India),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Yeni ya Japaani),
+				'currency' => q(Yeni ya Japaani),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Shiringi ya Kenya),
+				'currency' => q(Shiringi ya Kenya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Faranga ya Komoro),
+				'currency' => q(Faranga ya Komoro),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Doora ya Liberia),
+				'currency' => q(Doora ya Liberia),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Loti ya Lesoto),
+				'currency' => q(Loti ya Lesoto),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Dinari ya Libya),
+				'currency' => q(Dinari ya Libya),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Dirram ya Moroko),
+				'currency' => q(Dirram ya Moroko),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Ariari ya Maragariita),
+				'currency' => q(Ariari ya Maragariita),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Ougwiya ya Mouriteeniya),
+				'currency' => q(Ougwiya ya Mouriteeniya),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Rupiiha ya Mauritiasi),
+				'currency' => q(Rupiiha ya Mauritiasi),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Kwaca ya Malawi),
+				'currency' => q(Kwaca ya Malawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Metikari ya Mozambikwi),
+				'currency' => q(Metikari ya Mozambikwi),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Doora ya Namibiya),
+				'currency' => q(Doora ya Namibiya),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Naira ya Naigyeriya),
+				'currency' => q(Naira ya Naigyeriya),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Faranga ya Rwanda),
+				'currency' => q(Faranga ya Rwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Riya ya Saudi),
+				'currency' => q(Riya ya Saudi),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Rupiiha ya Sherisheri),
+				'currency' => q(Rupiiha ya Sherisheri),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Dinari ya Sudani),
+				'currency' => q(Dinari ya Sudani),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(Paundi ya Sudan),
+				'currency' => q(Paundi ya Sudan),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Paundi ya Senti Herena),
+				'currency' => q(Paundi ya Senti Herena),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Leone),
+				'currency' => q(Leone),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Eshiringi ya Somalia),
+				'currency' => q(Eshiringi ya Somalia),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Dobra ya Sao Tome na Purinsipo),
+				'currency' => q(Dobra ya Sao Tome na Purinsipo),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Dinari ya Tunisia),
+				'currency' => q(Dinari ya Tunisia),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Eshiringi ya Tanzania),
+				'currency' => q(Eshiringi ya Tanzania),
 			},
 		},
 		'UGX' => {
 			symbol => 'USh',
 			display_name => {
-				'default' => q(Eshiringi ya Uganda),
+				'currency' => q(Eshiringi ya Uganda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Doora ya America),
+				'currency' => q(Doora ya America),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Faranga ya CFA BEAC),
+				'currency' => q(Faranga ya CFA BEAC),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Faranga ya CFA BCEAO),
+				'currency' => q(Faranga ya CFA BCEAO),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Randi ya Sausi Afirika),
+				'currency' => q(Randi ya Sausi Afirika),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Kwacha ya Zambia (1968–2012)),
+				'currency' => q(Kwacha ya Zambia \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Kwacha ya Zambia),
+				'currency' => q(Kwacha ya Zambia),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Doora ya Zimbabwe),
+				'currency' => q(Doora ya Zimbabwe),
 			},
 		},
 	} },
@@ -943,3 +940,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

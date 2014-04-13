@@ -1,6 +1,6 @@
-package Locale::CLDR::Lo;
+package Locale::CLDR::Lo v0.0.4;
 # This file auto generated from Data\common\main\lo.xml
-#	on Mon 31 Mar  1:08:20 am GMT
+#	on Sun 13 Apr 11:08:18 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -1435,7 +1435,7 @@ has 'units' => (
 						'other' => q({0} ອອນ),
 					},
 					'per' => {
-						'default' => q({0} ຕໍ່ {1}),
+						'' => q({0} ຕໍ່ {1}),
 					},
 					'picometer' => {
 						'other' => q({0} ປິໂກແມັດ),
@@ -1575,7 +1575,7 @@ has 'units' => (
 						'other' => q({0} ອ),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'other' => q({0} ປກມ),
@@ -1718,7 +1718,7 @@ has 'units' => (
 						'other' => q({0} ອ),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'other' => q({0} ປກມ),
@@ -1756,7 +1756,6 @@ has 'units' => (
 				},
 			} }
 );
-
 
 has 'yesstr' => (
 	is			=> 'ro',
@@ -1985,1490 +1984,1490 @@ has 'curriencies' => (
 	default		=> sub { {
 		'ADP' => {
 			display_name => {
-				'default' => q(ເປເຊຕາ ອັນໂດລາ),
+				'currency' => q(ເປເຊຕາ ອັນໂດລາ),
 			},
 		},
 		'AED' => {
 			display_name => {
-				'default' => q(ດີແຮມ ສະຫະລັດອາຣັບ ເອມີເຣດ),
+				'currency' => q(ດີແຮມ ສະຫະລັດອາຣັບ ເອມີເຣດ),
 			},
 		},
 		'AFA' => {
 			display_name => {
-				'default' => q(ອັບການິ ອັບການິສະຖານ (1927–2002)),
+				'currency' => q(ອັບການິ ອັບການິສະຖານ \(1927–2002\)),
 			},
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(ອັບການິ ອັບກັນນິສະຖານ),
+				'currency' => q(ອັບການິ ອັບກັນນິສະຖານ),
 			},
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(ແລັກ ອານບາເນຍ),
+				'currency' => q(ແລັກ ອານບາເນຍ),
 			},
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(ດຣມອາເມເນຍ),
+				'currency' => q(ດຣມອາເມເນຍ),
 			},
 		},
 		'ANG' => {
 			display_name => {
-				'default' => q(ຫຼຽນເງິນ ເນເທີແລນ),
+				'currency' => q(ຫຼຽນເງິນ ເນເທີແລນ),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(ກວານຊາ ແອງໂກລາ),
+				'currency' => q(ກວານຊາ ແອງໂກລາ),
 			},
 		},
 		'AOK' => {
 			display_name => {
-				'default' => q(ກວານຊາ ແອງໂກລາ (1977–1991)),
+				'currency' => q(ກວານຊາ ແອງໂກລາ \(1977–1991\)),
 			},
 		},
 		'AON' => {
 			display_name => {
-				'default' => q(ກວານຊາ ແອງໂກລາ ໃໝ່ (1995–1999)),
+				'currency' => q(ກວານຊາ ແອງໂກລາ ໃໝ່ \(1995–1999\)),
 			},
 		},
 		'AOR' => {
 			display_name => {
-				'default' => q(ກວານຊາກທີ່ແກ້ໄຂໃໝ່ ແອງກູລາ (1995–1999)),
+				'currency' => q(ກວານຊາກທີ່ແກ້ໄຂໃໝ່ ແອງກູລາ \(1995–1999\)),
 			},
 		},
 		'ARA' => {
 			display_name => {
-				'default' => q(ອອສຕຣານ ອາກຊັງຕິນ),
+				'currency' => q(ອອສຕຣານ ອາກຊັງຕິນ),
 			},
 		},
 		'ARL' => {
 			display_name => {
-				'default' => q(ເປໂຊເລ ອາກຊັງຕິນ (1970–1983)),
+				'currency' => q(ເປໂຊເລ ອາກຊັງຕິນ \(1970–1983\)),
 			},
 		},
 		'ARM' => {
 			display_name => {
-				'default' => q(ເປໂຊ ອາກຊັງຕິນ (1881–1970)),
+				'currency' => q(ເປໂຊ ອາກຊັງຕິນ \(1881–1970\)),
 			},
 		},
 		'ARP' => {
 			display_name => {
-				'default' => q(ເປໂຊ ອາກຊັງຕິນ (1983–1985)),
+				'currency' => q(ເປໂຊ ອາກຊັງຕິນ \(1983–1985\)),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(ເປໂຊ ອາເຈນຕີນາ),
+				'currency' => q(ເປໂຊ ອາເຈນຕີນາ),
 			},
 		},
 		'ATS' => {
 			display_name => {
-				'default' => q(ຊິລລິງ ອົດສະຕາລີ),
+				'currency' => q(ຊິລລິງ ອົດສະຕາລີ),
 			},
 		},
 		'AUD' => {
 			symbol => 'A$',
 			display_name => {
-				'default' => q(ໂດລາ ອອດສະເຕເລຍ),
+				'currency' => q(ໂດລາ ອອດສະເຕເລຍ),
 			},
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(ອະຣູແບນ ຟລໍຣິນ),
+				'currency' => q(ອະຣູແບນ ຟລໍຣິນ),
 				'other' => q(ຟລໍຣິນ),
 			},
 		},
 		'AZM' => {
 			display_name => {
-				'default' => q(ມານັດ ອາແຊກບາຍຊານ (1993–2006)),
+				'currency' => q(ມານັດ ອາແຊກບາຍຊານ \(1993–2006\)),
 			},
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(ມານັດ ອາຊັກບາຍຊານ),
+				'currency' => q(ມານັດ ອາຊັກບາຍຊານ),
 			},
 		},
 		'BAD' => {
 			display_name => {
-				'default' => q(ດີນາ ບອສເນຍ ເຮີເຊໂບວາເນຍ (1992–1994)),
+				'currency' => q(ດີນາ ບອສເນຍ ເຮີເຊໂບວາເນຍ \(1992–1994\)),
 			},
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(ມາກບອສເນຍ ເຮເຊໂກເວນາ),
+				'currency' => q(ມາກບອສເນຍ ເຮເຊໂກເວນາ),
 			},
 		},
 		'BAN' => {
 			display_name => {
-				'default' => q(ດີນາໃໝ່ ບອສເນຍ ເຮີເຊໂບວີນາ(1994–1997)),
+				'currency' => q(ດີນາໃໝ່ ບອສເນຍ ເຮີເຊໂບວີນາ\(1994–1997\)),
 			},
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(ໂດລ່າ ບາບາດຽນ),
+				'currency' => q(ໂດລ່າ ບາບາດຽນ),
 				'other' => q(ດອນລາ ບາເບດຽນ),
 			},
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(ຕາກາ ບັງກາເດດ),
+				'currency' => q(ຕາກາ ບັງກາເດດ),
 			},
 		},
 		'BEC' => {
 			display_name => {
-				'default' => q(ຟຣັງ ບູນກາລີ (ປ່ຽນແປງໄດ້)),
+				'currency' => q(ຟຣັງ ບູນກາລີ \(ປ່ຽນແປງໄດ້\)),
 			},
 		},
 		'BEF' => {
 			display_name => {
-				'default' => q(ຟຣັງ ບູນກາລີ),
+				'currency' => q(ຟຣັງ ບູນກາລີ),
 			},
 		},
 		'BEL' => {
 			display_name => {
-				'default' => q(ຟຣັງ ບູນກາລີ (ການເງິນ)),
+				'currency' => q(ຟຣັງ ບູນກາລີ \(ການເງິນ\)),
 			},
 		},
 		'BGL' => {
 			display_name => {
-				'default' => q(ຮາດເລບ ບູນກາລີ),
+				'currency' => q(ຮາດເລບ ບູນກາລີ),
 			},
 		},
 		'BGM' => {
 			display_name => {
-				'default' => q(ເລບ ສັງຄົມບູນກາລີ),
+				'currency' => q(ເລບ ສັງຄົມບູນກາລີ),
 			},
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(ເລບ ບັງແກເຣຍ),
+				'currency' => q(ເລບ ບັງແກເຣຍ),
 			},
 		},
 		'BGO' => {
 			display_name => {
-				'default' => q(ເລບ ບູນກາລີ (1879–1952)),
+				'currency' => q(ເລບ ບູນກາລີ \(1879–1952\)),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(ດີນາ ບາເຣນ),
+				'currency' => q(ດີນາ ບາເຣນ),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(ຟຣັງ ບຸຣັນດີ),
+				'currency' => q(ຟຣັງ ບຸຣັນດີ),
 			},
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(ໂດລ່າເບີມູແດນ),
+				'currency' => q(ໂດລ່າເບີມູແດນ),
 				'other' => q(ໂດລ່າເບີມູແດນ),
 			},
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(ໂດລາ ບຣູໄນ),
+				'currency' => q(ໂດລາ ບຣູໄນ),
 			},
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(ໂບລິເວຍໂນ ໂລລິເວຍ),
+				'currency' => q(ໂບລິເວຍໂນ ໂລລິເວຍ),
 			},
 		},
 		'BOL' => {
 			display_name => {
-				'default' => q(ໂລລິເວຍໂນ ໂລລິເວຍ (1863–1963)),
+				'currency' => q(ໂລລິເວຍໂນ ໂລລິເວຍ \(1863–1963\)),
 			},
 		},
 		'BOP' => {
 			display_name => {
-				'default' => q(ເປໂຊໂລລິເວຍ),
+				'currency' => q(ເປໂຊໂລລິເວຍ),
 			},
 		},
 		'BOV' => {
 			display_name => {
-				'default' => q(ມະດອນ ໂລລິເວຍ),
+				'currency' => q(ມະດອນ ໂລລິເວຍ),
 			},
 		},
 		'BRB' => {
 			display_name => {
-				'default' => q(ກຣູເຊໂດບາຊິ ໃໝ່ (1967–1986)),
+				'currency' => q(ກຣູເຊໂດບາຊິ ໃໝ່ \(1967–1986\)),
 			},
 		},
 		'BRC' => {
 			display_name => {
-				'default' => q(ກຣູຊາໂດບາຊິວ (1986–1989)),
+				'currency' => q(ກຣູຊາໂດບາຊິວ \(1986–1989\)),
 			},
 		},
 		'BRE' => {
 			display_name => {
-				'default' => q(ກຣູເຊໂຣ ບາຊິ ກຣູໂຊ ບາຊິວ (1993–1994)),
+				'currency' => q(ກຣູເຊໂຣ ບາຊິ ກຣູໂຊ ບາຊິວ \(1993–1994\)),
 			},
 		},
 		'BRL' => {
 			symbol => 'R$',
 			display_name => {
-				'default' => q(ຣຽນ ບຣາຊິນ),
+				'currency' => q(ຣຽນ ບຣາຊິນ),
 			},
 		},
 		'BRN' => {
 			display_name => {
-				'default' => q(ກຣູຊາໂດ ບາຊິວ ໃໝ່ (1989–1990)),
+				'currency' => q(ກຣູຊາໂດ ບາຊິວ ໃໝ່ \(1989–1990\)),
 			},
 		},
 		'BRR' => {
 			display_name => {
-				'default' => q(ກຣູເຊໂຣ ບາຊິວ (1993–1994)),
+				'currency' => q(ກຣູເຊໂຣ ບາຊິວ \(1993–1994\)),
 			},
 		},
 		'BRZ' => {
 			display_name => {
-				'default' => q(ກຣູເຊໂຣ ບາຊິວ (1942–1967)),
+				'currency' => q(ກຣູເຊໂຣ ບາຊິວ \(1942–1967\)),
 			},
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(ໂດລ່າ ບາຮາມຽນ),
+				'currency' => q(ໂດລ່າ ບາຮາມຽນ),
 				'other' => q(ໂດລ່າ ບາຮາມຽນ),
 			},
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(ອັງກູຕຣາມ ບູຖານ),
+				'currency' => q(ອັງກູຕຣາມ ບູຖານ),
 			},
 		},
 		'BUK' => {
 			display_name => {
-				'default' => q(ຈາດ ພະມ້າ),
+				'currency' => q(ຈາດ ພະມ້າ),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(ປູລາ ບອສວານາ),
+				'currency' => q(ປູລາ ບອສວານາ),
 			},
 		},
 		'BYB' => {
 			display_name => {
-				'default' => q(ຣູໂບ ເບຣາຣຸສ ໃໝ່(1994–1999)),
+				'currency' => q(ຣູໂບ ເບຣາຣຸສ ໃໝ່\(1994–1999\)),
 			},
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(ຣູໂບ ເບຣາຣູສ),
+				'currency' => q(ຣູໂບ ເບຣາຣູສ),
 			},
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(ໂດລ່າ ເບວລິຊ),
+				'currency' => q(ໂດລ່າ ເບວລິຊ),
 				'other' => q(ໂດລ່າ ເບວລິຊ),
 			},
 		},
 		'CAD' => {
 			symbol => 'CA$',
 			display_name => {
-				'default' => q(ໂດລ່າຄານາດາ),
+				'currency' => q(ໂດລ່າຄານາດາ),
 				'other' => q(ໂດລ່າຄານາດາ),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(ຟຣັງ ຄອງໂກ),
+				'currency' => q(ຟຣັງ ຄອງໂກ),
 			},
 		},
 		'CHE' => {
 			display_name => {
-				'default' => q(ເອີໂຣ WIR),
+				'currency' => q(ເອີໂຣ WIR),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(ຟຣັງ ສະວິດເຊີແລນ),
+				'currency' => q(ຟຣັງ ສະວິດເຊີແລນ),
 			},
 		},
 		'CHW' => {
 			display_name => {
-				'default' => q(ຟຣັງ WIR),
+				'currency' => q(ຟຣັງ WIR),
 			},
 		},
 		'CLE' => {
 			display_name => {
-				'default' => q(ເອສກູໂດ ຊິລີ),
+				'currency' => q(ເອສກູໂດ ຊິລີ),
 			},
 		},
 		'CLF' => {
 			display_name => {
-				'default' => q(ຫົວໜ່ວຍບັນຊີ (UF) ຊິລີ),
+				'currency' => q(ຫົວໜ່ວຍບັນຊີ \(UF\) ຊິລີ),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(ເປໂຊ ຊິລີ),
+				'currency' => q(ເປໂຊ ຊິລີ),
 			},
 		},
 		'CNY' => {
 			symbol => 'CN¥',
 			display_name => {
-				'default' => q(ຢວນ ຈີນ),
+				'currency' => q(ຢວນ ຈີນ),
 			},
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(ເປໂຊໂຄລຳເບຍ),
+				'currency' => q(ເປໂຊໂຄລຳເບຍ),
 			},
 		},
 		'COU' => {
 			display_name => {
-				'default' => q(ຫົວໜ່ວຍຄ່າຈິງ ໂຄລັມເບຍ),
+				'currency' => q(ຫົວໜ່ວຍຄ່າຈິງ ໂຄລັມເບຍ),
 			},
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(ໂຄສຕາ ຣິກັນ ໂຄລອນ),
+				'currency' => q(ໂຄສຕາ ຣິກັນ ໂຄລອນ),
 				'other' => q(ໂຄລອນ),
 			},
 		},
 		'CSD' => {
 			display_name => {
-				'default' => q(ດີນາ ເຊີເບຍ (2002–2006)),
+				'currency' => q(ດີນາ ເຊີເບຍ \(2002–2006\)),
 			},
 		},
 		'CSK' => {
 			display_name => {
-				'default' => q(ຮາດໂກຣູນາ ເຊັກໂກສະໂລວັກ),
+				'currency' => q(ຮາດໂກຣູນາ ເຊັກໂກສະໂລວັກ),
 			},
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(ຄິວແບນ ຄອນເວີດຕິໂບ ເປໂຊ),
+				'currency' => q(ຄິວແບນ ຄອນເວີດຕິໂບ ເປໂຊ),
 				'other' => q(ຄິວແບນ ຄອນເວີດຕິໂບ ເປໂຊ),
 			},
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(ຄິວແບນ ເປໂຊ),
+				'currency' => q(ຄິວແບນ ເປໂຊ),
 				'other' => q(ຄິວແບນ ເປໂຊ),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(ເອສກູໂດ ເຄບເວີດ),
+				'currency' => q(ເອສກູໂດ ເຄບເວີດ),
 			},
 		},
 		'CYP' => {
 			display_name => {
-				'default' => q(ປອນ ໄຊປຣັດ),
+				'currency' => q(ປອນ ໄຊປຣັດ),
 			},
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(ໂຄຣູນາ ສາທາລະນະລັດເຊັກ),
+				'currency' => q(ໂຄຣູນາ ສາທາລະນະລັດເຊັກ),
 			},
 		},
 		'DDM' => {
 			display_name => {
-				'default' => q(ມາກ ເຢຍລະມັນ ຕາເວັນອອກ),
+				'currency' => q(ມາກ ເຢຍລະມັນ ຕາເວັນອອກ),
 			},
 		},
 		'DEM' => {
 			display_name => {
-				'default' => q(ມາກ ເຢຍລະມັນ),
+				'currency' => q(ມາກ ເຢຍລະມັນ),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(ຟຣັງ ຈິບູຕິ),
+				'currency' => q(ຟຣັງ ຈິບູຕິ),
 			},
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(ໂຄຣນ ເດັນມາກ),
+				'currency' => q(ໂຄຣນ ເດັນມາກ),
 			},
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(ເປໂຊໂດມິນິການ),
+				'currency' => q(ເປໂຊໂດມິນິການ),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(ດີນາ ອາຍຈີເຣຍ),
+				'currency' => q(ດີນາ ອາຍຈີເຣຍ),
 			},
 		},
 		'ECS' => {
 			display_name => {
-				'default' => q(ຊູເກ ເອກາວາດໍ),
+				'currency' => q(ຊູເກ ເອກາວາດໍ),
 			},
 		},
 		'ECV' => {
 			display_name => {
-				'default' => q(ຫົວໜ່ວຍຄ່າຄົງທີ່ຂອງເອກາວາດໍ),
+				'currency' => q(ຫົວໜ່ວຍຄ່າຄົງທີ່ຂອງເອກາວາດໍ),
 			},
 		},
 		'EEK' => {
 			display_name => {
-				'default' => q(ຄຣູນເອສ ໂຕເນຍ),
+				'currency' => q(ຄຣູນເອສ ໂຕເນຍ),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(ປອນ ອີຢິບ),
+				'currency' => q(ປອນ ອີຢິບ),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(ແນກຟຣາ ອີຣິເທຣຍ),
+				'currency' => q(ແນກຟຣາ ອີຣິເທຣຍ),
 			},
 		},
 		'ESA' => {
 			display_name => {
-				'default' => q(ເປເຊຕາສະເປັນ (ບັນຊີ)),
+				'currency' => q(ເປເຊຕາສະເປັນ \(ບັນຊີ\)),
 			},
 		},
 		'ESB' => {
 			display_name => {
-				'default' => q(ເປເຊຕາສະເປນ (ປ່ຽນແປງໄດ້)),
+				'currency' => q(ເປເຊຕາສະເປນ \(ປ່ຽນແປງໄດ້\)),
 			},
 		},
 		'ESP' => {
 			display_name => {
-				'default' => q(ເປເຊຕາ ສະເປນ),
+				'currency' => q(ເປເຊຕາ ສະເປນ),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(ເບີ ເອທີໂອເປຍ),
+				'currency' => q(ເບີ ເອທີໂອເປຍ),
 			},
 		},
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(ເອີໂຣ),
+				'currency' => q(ເອີໂຣ),
 			},
 		},
 		'FIM' => {
 			display_name => {
-				'default' => q(ມາກກາ ຟິນແລນ),
+				'currency' => q(ມາກກາ ຟິນແລນ),
 			},
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(ໂດລາ ຟິຈິ),
+				'currency' => q(ໂດລາ ຟິຈິ),
 			},
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(ປອນ ໝູ່ເກາະ ຟໍແລນ),
+				'currency' => q(ປອນ ໝູ່ເກາະ ຟໍແລນ),
 			},
 		},
 		'FRF' => {
 			display_name => {
-				'default' => q(ຟຣັງ ຝຣັ່ງ),
+				'currency' => q(ຟຣັງ ຝຣັ່ງ),
 			},
 		},
 		'GBP' => {
 			symbol => '£',
 			display_name => {
-				'default' => q(ປອນສະເຕີຣິງ (ອັງກິດ)),
+				'currency' => q(ປອນສະເຕີຣິງ \(ອັງກິດ\)),
 			},
 		},
 		'GEK' => {
 			display_name => {
-				'default' => q(ກູປອນ ລາຣິທ ຈໍເຈຍ),
+				'currency' => q(ກູປອນ ລາຣິທ ຈໍເຈຍ),
 			},
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(ລາຣິ ຈໍເຈຍ),
+				'currency' => q(ລາຣິ ຈໍເຈຍ),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(ເຊດີ ການາ (1979–2007)),
+				'currency' => q(ເຊດີ ການາ \(1979–2007\)),
 			},
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(ເຊດີການາ),
+				'currency' => q(ເຊດີການາ),
 			},
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(ປອນ ຍິບຣາຕາ),
+				'currency' => q(ປອນ ຍິບຣາຕາ),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(ດາລາຊິ ແກມເບຍ),
+				'currency' => q(ດາລາຊິ ແກມເບຍ),
 			},
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(ຟຣັງ ກິນີ),
+				'currency' => q(ຟຣັງ ກິນີ),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(ໄຊລິ ກີນີ),
+				'currency' => q(ໄຊລິ ກີນີ),
 			},
 		},
 		'GQE' => {
 			display_name => {
-				'default' => q(ເອັກເວເລ ອີຄວາຕິຣຽວ ກິນີ),
+				'currency' => q(ເອັກເວເລ ອີຄວາຕິຣຽວ ກິນີ),
 			},
 		},
 		'GRD' => {
 			display_name => {
-				'default' => q(ດາກຊະມາ ເກຣັກ),
+				'currency' => q(ດາກຊະມາ ເກຣັກ),
 			},
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(ກົວເຕມາລານ ເຄັດຊອນ),
+				'currency' => q(ກົວເຕມາລານ ເຄັດຊອນ),
 				'other' => q(ເຄັດຊອນ),
 			},
 		},
 		'GWE' => {
 			display_name => {
-				'default' => q(ເອສກູໂດ ກີນີໂປຕູເກດ),
+				'currency' => q(ເອສກູໂດ ກີນີໂປຕູເກດ),
 			},
 		},
 		'GWP' => {
 			display_name => {
-				'default' => q(ເປໂຊກິນີ-ບິສເຊົາ),
+				'currency' => q(ເປໂຊກິນີ-ບິສເຊົາ),
 			},
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(ດອນລາ ກາຍອານາ),
+				'currency' => q(ດອນລາ ກາຍອານາ),
 			},
 		},
 		'HKD' => {
 			symbol => 'HK$',
 			display_name => {
-				'default' => q(ດອນລາ ຮົງກົງ),
+				'currency' => q(ດອນລາ ຮົງກົງ),
 			},
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(ຮອນດູແຣນ ເລມພິຣາ),
+				'currency' => q(ຮອນດູແຣນ ເລມພິຣາ),
 				'other' => q(ເລມພິຣາ),
 			},
 		},
 		'HRD' => {
 			display_name => {
-				'default' => q(ດີນາ ໂຄຣເອເຊຍ),
+				'currency' => q(ດີນາ ໂຄຣເອເຊຍ),
 			},
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(ຄູນາ ໂກຣເອເຊຍ),
+				'currency' => q(ຄູນາ ໂກຣເອເຊຍ),
 			},
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(ກູດເຮຕິ),
+				'currency' => q(ກູດເຮຕິ),
 			},
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(ຟໍຣິນ ຮົງກາຣີ),
+				'currency' => q(ຟໍຣິນ ຮົງກາຣີ),
 			},
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(ຣູປີ ອິນໂດເນເຊຍ),
+				'currency' => q(ຣູປີ ອິນໂດເນເຊຍ),
 			},
 		},
 		'IEP' => {
 			display_name => {
-				'default' => q(ປອນ ໄອຣິຊ),
+				'currency' => q(ປອນ ໄອຣິຊ),
 			},
 		},
 		'ILP' => {
 			display_name => {
-				'default' => q(ປອນ ອີສະລາເອວ),
+				'currency' => q(ປອນ ອີສະລາເອວ),
 			},
 		},
 		'ILS' => {
 			symbol => '₪',
 			display_name => {
-				'default' => q(ນິວເຊເກນ ອີສະລາແອນ),
+				'currency' => q(ນິວເຊເກນ ອີສະລາແອນ),
 			},
 		},
 		'INR' => {
 			symbol => '₹',
 			display_name => {
-				'default' => q(ຣູປີ ອິນເດຍ),
+				'currency' => q(ຣູປີ ອິນເດຍ),
 			},
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(ດີນາ ອີຣັກ),
+				'currency' => q(ດີນາ ອີຣັກ),
 			},
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(ຣີວ ອີຣ່ານ),
+				'currency' => q(ຣີວ ອີຣ່ານ),
 			},
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(ໂຄຣນາ ໄອສແລນ),
+				'currency' => q(ໂຄຣນາ ໄອສແລນ),
 			},
 		},
 		'ITL' => {
 			display_name => {
-				'default' => q(ລິຣາ ອີຕາລີ),
+				'currency' => q(ລິຣາ ອີຕາລີ),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(ດອນລາ ຈາເມກາ),
+				'currency' => q(ດອນລາ ຈາເມກາ),
 			},
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(ດີນາ ຈໍແດນ),
+				'currency' => q(ດີນາ ຈໍແດນ),
 			},
 		},
 		'JPY' => {
 			symbol => 'JP¥',
 			display_name => {
-				'default' => q(ເຢນ ຍີ່ປຸ່ນ),
+				'currency' => q(ເຢນ ຍີ່ປຸ່ນ),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(ຊິລລິງ ເຄນຢາ),
+				'currency' => q(ຊິລລິງ ເຄນຢາ),
 			},
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(ໂຊມ ຄຣີກິສະຖານ),
+				'currency' => q(ໂຊມ ຄຣີກິສະຖານ),
 			},
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(ຫຼຽນກຳປູເຈ້ຍ),
+				'currency' => q(ຫຼຽນກຳປູເຈ້ຍ),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(ຟຣັງ ໂກໂມໂຣສ),
+				'currency' => q(ຟຣັງ ໂກໂມໂຣສ),
 			},
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(ວອນ ເກົາຫຼີເໜືອ),
+				'currency' => q(ວອນ ເກົາຫຼີເໜືອ),
 			},
 		},
 		'KRH' => {
 			display_name => {
-				'default' => q(ຮາວານ ເກົາຫຼີເນື້),
+				'currency' => q(ຮາວານ ເກົາຫຼີເນື້),
 			},
 		},
 		'KRO' => {
 			display_name => {
-				'default' => q(ວອນ ເກົາຫຼີໃຕ້ (1945–1953)),
+				'currency' => q(ວອນ ເກົາຫຼີໃຕ້ \(1945–1953\)),
 			},
 		},
 		'KRW' => {
 			symbol => '₩',
 			display_name => {
-				'default' => q(ວອນ ເກົາຫຼີໃຕ້),
+				'currency' => q(ວອນ ເກົາຫຼີໃຕ້),
 			},
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(ດີນາ ຄູເວດ),
+				'currency' => q(ດີນາ ຄູເວດ),
 			},
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(ດອນລາໝູ່ເກາະເກແມນ),
+				'currency' => q(ດອນລາໝູ່ເກາະເກແມນ),
 			},
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(ເຕັງເຈ ກາຊັກສະຖານ),
+				'currency' => q(ເຕັງເຈ ກາຊັກສະຖານ),
 			},
 		},
 		'LAK' => {
 			symbol => '₭',
 			display_name => {
-				'default' => q(ກີບ ລາວ),
+				'currency' => q(ກີບ ລາວ),
 			},
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(ປອນ ເລບານອນ),
+				'currency' => q(ປອນ ເລບານອນ),
 			},
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(ຣູປີ ສີຣັງກາ),
+				'currency' => q(ຣູປີ ສີຣັງກາ),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(ດອນລາ ໄລບິເລຍ),
+				'currency' => q(ດອນລາ ໄລບິເລຍ),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(ໂລຕິ ເລໂຊໂຕ),
+				'currency' => q(ໂລຕິ ເລໂຊໂຕ),
 			},
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(ລິຕັສ ລິທົວເນຍ),
+				'currency' => q(ລິຕັສ ລິທົວເນຍ),
 			},
 		},
 		'LTT' => {
 			display_name => {
-				'default' => q(ທາໂລນັສ ລິທົວເນຍ),
+				'currency' => q(ທາໂລນັສ ລິທົວເນຍ),
 			},
 		},
 		'LUC' => {
 			display_name => {
-				'default' => q(ຟຣັງ ລຸກຊຳບວກ ທີ່ປ່ຽນແປງ),
+				'currency' => q(ຟຣັງ ລຸກຊຳບວກ ທີ່ປ່ຽນແປງ),
 			},
 		},
 		'LUF' => {
 			display_name => {
-				'default' => q(ຟຣັງ ລຸກຊຳບວກ),
+				'currency' => q(ຟຣັງ ລຸກຊຳບວກ),
 			},
 		},
 		'LUL' => {
 			display_name => {
-				'default' => q(ຟຣັງ ລຸກຊຳບວກ ການເງິນ),
+				'currency' => q(ຟຣັງ ລຸກຊຳບວກ ການເງິນ),
 			},
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(ລັສ ລັດເວຍ),
+				'currency' => q(ລັສ ລັດເວຍ),
 			},
 		},
 		'LVR' => {
 			display_name => {
-				'default' => q(ຣູໂບ ລາວຽນ),
+				'currency' => q(ຣູໂບ ລາວຽນ),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(ດີນາ ລິເບຍ),
+				'currency' => q(ດີນາ ລິເບຍ),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(ດີຮາມ ໂມລອກໂກ),
+				'currency' => q(ດີຮາມ ໂມລອກໂກ),
 			},
 		},
 		'MAF' => {
 			display_name => {
-				'default' => q(ຟຣັງ ໂມຣອກໂກ),
+				'currency' => q(ຟຣັງ ໂມຣອກໂກ),
 			},
 		},
 		'MCF' => {
 			display_name => {
-				'default' => q(ຟຣັງ ໂມດາໂກ),
+				'currency' => q(ຟຣັງ ໂມດາໂກ),
 			},
 		},
 		'MDC' => {
 			display_name => {
-				'default' => q(ບັດປັນສ່ວນ ມອງໂດວາ),
+				'currency' => q(ບັດປັນສ່ວນ ມອງໂດວາ),
 			},
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(ເລອູ ມອງໂດວາ),
+				'currency' => q(ເລອູ ມອງໂດວາ),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(ອາເຣຍຣີ ມາດາກາສກາ),
+				'currency' => q(ອາເຣຍຣີ ມາດາກາສກາ),
 			},
 		},
 		'MGF' => {
 			display_name => {
-				'default' => q(ຟຣັງ ມາດາກັດສະກາ),
+				'currency' => q(ຟຣັງ ມາດາກັດສະກາ),
 			},
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(ເດນາ ມາຊິໂດເນຍ),
+				'currency' => q(ເດນາ ມາຊິໂດເນຍ),
 			},
 		},
 		'MKN' => {
 			display_name => {
-				'default' => q(ດີນາ ມາຊີໂດເນຍ (1992–1993)),
+				'currency' => q(ດີນາ ມາຊີໂດເນຍ \(1992–1993\)),
 			},
 		},
 		'MLF' => {
 			display_name => {
-				'default' => q(ຟຣັງ ມາລີ),
+				'currency' => q(ຟຣັງ ມາລີ),
 			},
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(ຈາດ ມ່ຽນມາ),
+				'currency' => q(ຈາດ ມ່ຽນມາ),
 			},
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(ຕຸກຣີ ມົງໂກເລຍ),
+				'currency' => q(ຕຸກຣີ ມົງໂກເລຍ),
 			},
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(ປາຕາກາ ມາເກົາ),
+				'currency' => q(ປາຕາກາ ມາເກົາ),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(ອໍກິວຢາ ມໍຣິເຕເນຍ),
+				'currency' => q(ອໍກິວຢາ ມໍຣິເຕເນຍ),
 			},
 		},
 		'MTL' => {
 			display_name => {
-				'default' => q(ລິຣາ ມອນຕາ),
+				'currency' => q(ລິຣາ ມອນຕາ),
 			},
 		},
 		'MTP' => {
 			display_name => {
-				'default' => q(ປອນ ມອນຕາ),
+				'currency' => q(ປອນ ມອນຕາ),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(ຣູປີ ມໍຣີເຊຍ),
+				'currency' => q(ຣູປີ ມໍຣີເຊຍ),
 			},
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(ຣູຟີຢາ ມາດີເວຍ),
+				'currency' => q(ຣູຟີຢາ ມາດີເວຍ),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(ຄວາຊາມາລາວີ),
+				'currency' => q(ຄວາຊາມາລາວີ),
 			},
 		},
 		'MXN' => {
 			symbol => 'MX$',
 			display_name => {
-				'default' => q(ເມັກຊິກັນ ເປໂຊ),
+				'currency' => q(ເມັກຊິກັນ ເປໂຊ),
 				'other' => q(ເປໂຊ),
 			},
 		},
 		'MXP' => {
 			display_name => {
-				'default' => q(ຫົວໜ່ວຍເງິນ ເປໂຊ ແມັກຊິໂກ(1861–1992)),
+				'currency' => q(ຫົວໜ່ວຍເງິນ ເປໂຊ ແມັກຊິໂກ\(1861–1992\)),
 			},
 		},
 		'MXV' => {
 			display_name => {
-				'default' => q(ຫົວໜ່ວຍການລົງທຶນ ແມັກຊິໂກ),
+				'currency' => q(ຫົວໜ່ວຍການລົງທຶນ ແມັກຊິໂກ),
 			},
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(ຣິງກິດ ມາເລເຂຍ),
+				'currency' => q(ຣິງກິດ ມາເລເຂຍ),
 			},
 		},
 		'MZE' => {
 			display_name => {
-				'default' => q(ເອສກູໂດ ໂມຊຳບິກ),
+				'currency' => q(ເອສກູໂດ ໂມຊຳບິກ),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(ເມຕິຄໍ ໂມຊຳບິກ (1980–2006)),
+				'currency' => q(ເມຕິຄໍ ໂມຊຳບິກ \(1980–2006\)),
 			},
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(ເມຕິຄໍ ໂມຊັມບິກ),
+				'currency' => q(ເມຕິຄໍ ໂມຊັມບິກ),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(ດອນລາ ນາມິເບຍ),
+				'currency' => q(ດອນລາ ນາມິເບຍ),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(ໄນຣາ ໄນຈີເຣຍ),
+				'currency' => q(ໄນຣາ ໄນຈີເຣຍ),
 			},
 		},
 		'NIC' => {
 			display_name => {
-				'default' => q(ຄໍໂດບາ ນິກາຣາກົວ (1988–1991)),
+				'currency' => q(ຄໍໂດບາ ນິກາຣາກົວ \(1988–1991\)),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(ນິກາຣາກວນ ໂຄໂດບາ),
+				'currency' => q(ນິກາຣາກວນ ໂຄໂດບາ),
 				'other' => q(ໂຄໂດບາ),
 			},
 		},
 		'NLG' => {
 			display_name => {
-				'default' => q(ກິລເດີ ເນເທີແລນ),
+				'currency' => q(ກິລເດີ ເນເທີແລນ),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(ໂຄຣນ ນອກເວ),
+				'currency' => q(ໂຄຣນ ນອກເວ),
 			},
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(ຣູປີ ເນປານ),
+				'currency' => q(ຣູປີ ເນປານ),
 			},
 		},
 		'NZD' => {
 			symbol => 'NZ$',
 			display_name => {
-				'default' => q(ໂດລາ ນີວຊີແລນ),
+				'currency' => q(ໂດລາ ນີວຊີແລນ),
 			},
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(ຣຽວ ໂອມານ),
+				'currency' => q(ຣຽວ ໂອມານ),
 			},
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(ພານາມານຽນ ບອນບົວ),
+				'currency' => q(ພານາມານຽນ ບອນບົວ),
 				'other' => q(ບອນບົວ),
 			},
 		},
 		'PEI' => {
 			display_name => {
-				'default' => q(ອິນຕິ ເປຣູ),
+				'currency' => q(ອິນຕິ ເປຣູ),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(ນູໂວຊໍ ເປຣູ),
+				'currency' => q(ນູໂວຊໍ ເປຣູ),
 			},
 		},
 		'PES' => {
 			display_name => {
-				'default' => q(ໂຊນ ເປຣູ (1863–1965)),
+				'currency' => q(ໂຊນ ເປຣູ \(1863–1965\)),
 			},
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(ກີນາ ປາປົວນີວກຸນນີນ),
+				'currency' => q(ກີນາ ປາປົວນີວກຸນນີນ),
 			},
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(ເປໂຊ ຟີລິປິນ),
+				'currency' => q(ເປໂຊ ຟີລິປິນ),
 			},
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(ຣູປີ ປາກີສະຖານ),
+				'currency' => q(ຣູປີ ປາກີສະຖານ),
 			},
 		},
 		'PLN' => {
 			display_name => {
-				'default' => q(ຊລໍຕີ ໂປແລນ),
+				'currency' => q(ຊລໍຕີ ໂປແລນ),
 			},
 		},
 		'PLZ' => {
 			display_name => {
-				'default' => q(ຊະລອສຕີ ໂປແລນ (1950–1995)),
+				'currency' => q(ຊະລອສຕີ ໂປແລນ \(1950–1995\)),
 			},
 		},
 		'PTE' => {
 			display_name => {
-				'default' => q(ເອສກູໂດ ໂປຕູເກສ),
+				'currency' => q(ເອສກູໂດ ໂປຕູເກສ),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(ກວາຣານີ ປາຣາກວາຍ),
+				'currency' => q(ກວາຣານີ ປາຣາກວາຍ),
 			},
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(ຣຽວ ກາຕາ),
+				'currency' => q(ຣຽວ ກາຕາ),
 			},
 		},
 		'RHD' => {
 			display_name => {
-				'default' => q(ດອນລາ ໂຣດີເຊຍ),
+				'currency' => q(ດອນລາ ໂຣດີເຊຍ),
 			},
 		},
 		'ROL' => {
 			display_name => {
-				'default' => q(ລິວ ໂຣມາເນຍເກົ່າ),
+				'currency' => q(ລິວ ໂຣມາເນຍເກົ່າ),
 			},
 		},
 		'RON' => {
 			display_name => {
-				'default' => q(ເລອູ ໂຣມາເນຍ),
+				'currency' => q(ເລອູ ໂຣມາເນຍ),
 			},
 		},
 		'RSD' => {
 			display_name => {
-				'default' => q(ດີນາ ເຊີເບຍ),
+				'currency' => q(ດີນາ ເຊີເບຍ),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(ຣູໂລ ຣັດເຊຍ),
+				'currency' => q(ຣູໂລ ຣັດເຊຍ),
 			},
 		},
 		'RUR' => {
 			display_name => {
-				'default' => q(ຣູໂບ ຣັດເຊຍ (1991–1998)),
+				'currency' => q(ຣູໂບ ຣັດເຊຍ \(1991–1998\)),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(ຟຣັງ ວັນດາ),
+				'currency' => q(ຟຣັງ ວັນດາ),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(ຣີຢອນ ຊາອຸດິດອາຣາບີ),
+				'currency' => q(ຣີຢອນ ຊາອຸດິດອາຣາບີ),
 			},
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(ໂດລາ ໝູ່ເກາະໂຊໂລມອນ),
+				'currency' => q(ໂດລາ ໝູ່ເກາະໂຊໂລມອນ),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(ຣູປີ ເຊເຊລ),
+				'currency' => q(ຣູປີ ເຊເຊລ),
 			},
 		},
 		'SDD' => {
 			display_name => {
-				'default' => q(ດີນາ ຊູດານເກົ່າ),
+				'currency' => q(ດີນາ ຊູດານເກົ່າ),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(ປອນ ຊູດານ),
+				'currency' => q(ປອນ ຊູດານ),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(ປອນ ຊູດານເກົ່າ),
+				'currency' => q(ປອນ ຊູດານເກົ່າ),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(ໂຄຣນາ ສະວີເດັນ),
+				'currency' => q(ໂຄຣນາ ສະວີເດັນ),
 			},
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(ໂດລາ ສິງກະໂປ),
+				'currency' => q(ໂດລາ ສິງກະໂປ),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(ປອນ ເຊັນເຮເຣນາ),
+				'currency' => q(ປອນ ເຊັນເຮເຣນາ),
 			},
 		},
 		'SIT' => {
 			display_name => {
-				'default' => q(ໂຕລາ ສະໂລວິເນຍ),
+				'currency' => q(ໂຕລາ ສະໂລວິເນຍ),
 			},
 		},
 		'SKK' => {
 			display_name => {
-				'default' => q(ຄູໂຣນາ ສະໂລວັກ),
+				'currency' => q(ຄູໂຣນາ ສະໂລວັກ),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(ເລໂອນ ຊີລາເລໂອນ),
+				'currency' => q(ເລໂອນ ຊີລາເລໂອນ),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(ຊິລລິງ ໂຊມາເລຍ),
+				'currency' => q(ຊິລລິງ ໂຊມາເລຍ),
 			},
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(ດອນລາ ຊູຣິນາເມ),
+				'currency' => q(ດອນລາ ຊູຣິນາເມ),
 			},
 		},
 		'SRG' => {
 			display_name => {
-				'default' => q(ກິລເດີ ຊູຣິນາເມ),
+				'currency' => q(ກິລເດີ ຊູຣິນາເມ),
 			},
 		},
 		'SSP' => {
 			display_name => {
-				'default' => q(ປອນ ຊູດານໃຕ້),
+				'currency' => q(ປອນ ຊູດານໃຕ້),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(ໂດບຣາ ຊາວຕົວເມ ແລະ ປຣິນຊິບປີ),
+				'currency' => q(ໂດບຣາ ຊາວຕົວເມ ແລະ ປຣິນຊິບປີ),
 			},
 		},
 		'SUR' => {
 			display_name => {
-				'default' => q(ຣູໂບ ໂຊວຽດ),
+				'currency' => q(ຣູໂບ ໂຊວຽດ),
 			},
 		},
 		'SVC' => {
 			display_name => {
-				'default' => q(ໂກລອງ ເອກາວາດໍ),
+				'currency' => q(ໂກລອງ ເອກາວາດໍ),
 			},
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(ປອນ ຊິເຣຍ),
+				'currency' => q(ປອນ ຊິເຣຍ),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(ລິລັນກິນີ ສະວາຊິແລນ),
+				'currency' => q(ລິລັນກິນີ ສະວາຊິແລນ),
 			},
 		},
 		'THB' => {
 			symbol => '฿',
 			display_name => {
-				'default' => q(ບາດ ໄທ),
+				'currency' => q(ບາດ ໄທ),
 			},
 		},
 		'TJR' => {
 			display_name => {
-				'default' => q(ຣູໂບ ຕັຈີກິສຖານ),
+				'currency' => q(ຣູໂບ ຕັຈີກິສຖານ),
 			},
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(ໂຊໂມນີ ທາຈິກິສຖານ),
+				'currency' => q(ໂຊໂມນີ ທາຈິກິສຖານ),
 			},
 		},
 		'TMM' => {
 			display_name => {
-				'default' => q(ມານັດ ຕວກເມນິສຖານ (1966–1987)),
+				'currency' => q(ມານັດ ຕວກເມນິສຖານ \(1966–1987\)),
 			},
 		},
 		'TMT' => {
 			display_name => {
-				'default' => q(ເມນັດ ຕວກເມນິດສະຖານ),
+				'currency' => q(ເມນັດ ຕວກເມນິດສະຖານ),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(ດີນາ ຕູນີເຊຍ),
+				'currency' => q(ດີນາ ຕູນີເຊຍ),
 			},
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(ປາອັງກາ ຕອງກາ),
+				'currency' => q(ປາອັງກາ ຕອງກາ),
 			},
 		},
 		'TPE' => {
 			display_name => {
-				'default' => q(ເອສກູໂດ ຕີມໍ),
+				'currency' => q(ເອສກູໂດ ຕີມໍ),
 			},
 		},
 		'TRL' => {
 			display_name => {
-				'default' => q(ລີຕາ ຕູຣາກີເກົ່າ),
+				'currency' => q(ລີຕາ ຕູຣາກີເກົ່າ),
 			},
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(ລິຣາ ເທີກີ),
+				'currency' => q(ລິຣາ ເທີກີ),
 			},
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(ດອນລາທຣິນິແດດ ແລະ ໂທເບໂກ),
+				'currency' => q(ດອນລາທຣິນິແດດ ແລະ ໂທເບໂກ),
 			},
 		},
 		'TWD' => {
 			symbol => 'NT$',
 			display_name => {
-				'default' => q(ໂດລາ ໄຕຫວັນ),
+				'currency' => q(ໂດລາ ໄຕຫວັນ),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(ຊິລລິງ ຕາຊາເນຍ),
+				'currency' => q(ຊິລລິງ ຕາຊາເນຍ),
 			},
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(ຮາຣິບເນຍ ຢູເຄຣນ),
+				'currency' => q(ຮາຣິບເນຍ ຢູເຄຣນ),
 			},
 		},
 		'UAK' => {
 			display_name => {
-				'default' => q(ຄາໂບວາເນດ ອູແກຣນ),
+				'currency' => q(ຄາໂບວາເນດ ອູແກຣນ),
 			},
 		},
 		'UGS' => {
 			display_name => {
-				'default' => q(ຊິນລິງ ອູກັນດາ (1966–1987)),
+				'currency' => q(ຊິນລິງ ອູກັນດາ \(1966–1987\)),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(ຊິລລິງ ອູການດາ),
+				'currency' => q(ຊິລລິງ ອູການດາ),
 			},
 		},
 		'USD' => {
 			symbol => 'US$',
 			display_name => {
-				'default' => q(ໂດລ່າ ສະຫະລັດຯ),
+				'currency' => q(ໂດລ່າ ສະຫະລັດຯ),
 				'other' => q(ໂດລ່າ ສະຫະລັດຯ),
 			},
 		},
 		'USN' => {
 			display_name => {
-				'default' => q(ດອນລາສະຫະລັດ (ມື້ຖັດໄປ)),
+				'currency' => q(ດອນລາສະຫະລັດ \(ມື້ຖັດໄປ\)),
 			},
 		},
 		'USS' => {
 			display_name => {
-				'default' => q(ດອນລາສະຫະລັດ (ມື້ດຽວກັນ)),
+				'currency' => q(ດອນລາສະຫະລັດ \(ມື້ດຽວກັນ\)),
 			},
 		},
 		'UYI' => {
 			display_name => {
-				'default' => q(ເປໂຊອູຣຸກວຍ (ຫົວໜ່ວຍອິນເດັກ)),
+				'currency' => q(ເປໂຊອູຣຸກວຍ \(ຫົວໜ່ວຍອິນເດັກ\)),
 			},
 		},
 		'UYP' => {
 			display_name => {
-				'default' => q(ເປໂຊ ອູຣຸກວຍ (1975–1993)),
+				'currency' => q(ເປໂຊ ອູຣຸກວຍ \(1975–1993\)),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(ເປໂຊ ອູຣູກວາຍ),
+				'currency' => q(ເປໂຊ ອູຣູກວາຍ),
 			},
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(ໂຊມ ອຸສເບກິສຖາານ),
+				'currency' => q(ໂຊມ ອຸສເບກິສຖາານ),
 			},
 		},
 		'VEB' => {
 			display_name => {
-				'default' => q(ໂບລີວາ ເວເນຊູເອລາ (1871–2008)),
+				'currency' => q(ໂບລີວາ ເວເນຊູເອລາ \(1871–2008\)),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(ໂບລິວາ ເວເນຊູເອລາ),
+				'currency' => q(ໂບລິວາ ເວເນຊູເອລາ),
 			},
 		},
 		'VND' => {
 			symbol => '₫',
 			display_name => {
-				'default' => q(ດົງ ຫວຽດນາມ),
+				'currency' => q(ດົງ ຫວຽດນາມ),
 			},
 		},
 		'VNN' => {
 			display_name => {
-				'default' => q(ດົງ ຫວຽດນາມ (1978–1985)),
+				'currency' => q(ດົງ ຫວຽດນາມ \(1978–1985\)),
 			},
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(ວາຕູ ວານົວຕູ),
+				'currency' => q(ວາຕູ ວານົວຕູ),
 			},
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(ຕາລາ ຊາມົວ),
+				'currency' => q(ຕາລາ ຊາມົວ),
 			},
 		},
 		'XAF' => {
 			symbol => 'FCFA',
 			display_name => {
-				'default' => q(ຟຣັງ ເຊຟານ ທະນາຄານລັດອາຟຣິກາກາງ),
+				'currency' => q(ຟຣັງ ເຊຟານ ທະນາຄານລັດອາຟຣິກາກາງ),
 			},
 		},
 		'XAG' => {
 			display_name => {
-				'default' => q(ເງິນ),
+				'currency' => q(ເງິນ),
 			},
 		},
 		'XAU' => {
 			display_name => {
-				'default' => q(ຄຳ),
+				'currency' => q(ຄຳ),
 			},
 		},
 		'XBA' => {
 			display_name => {
-				'default' => q(ຫົວໜ່ວຍຄອມໂປຊິດ ເອີຣົບ),
+				'currency' => q(ຫົວໜ່ວຍຄອມໂປຊິດ ເອີຣົບ),
 			},
 		},
 		'XBB' => {
 			display_name => {
-				'default' => q(ຫົວໜ່ວຍໂມນີແທຣີ ເອີຣົບ),
+				'currency' => q(ຫົວໜ່ວຍໂມນີແທຣີ ເອີຣົບ),
 			},
 		},
 		'XBC' => {
 			display_name => {
-				'default' => q(ຫົວໜ່ວຍບັນຊີເອີຣົບ (XBC)),
+				'currency' => q(ຫົວໜ່ວຍບັນຊີເອີຣົບ \(XBC\)),
 			},
 		},
 		'XBD' => {
 			display_name => {
-				'default' => q(ຫົວໜ່ວຍບັນຊີເອີຣົບ (XBD)),
+				'currency' => q(ຫົວໜ່ວຍບັນຊີເອີຣົບ \(XBD\)),
 			},
 		},
 		'XCD' => {
 			symbol => 'EC$',
 			display_name => {
-				'default' => q(ດອນລາຄາຣີບຽນຕາເວັນອອກ),
+				'currency' => q(ດອນລາຄາຣີບຽນຕາເວັນອອກ),
 			},
 		},
 		'XDR' => {
 			display_name => {
-				'default' => q(ສິດທິຖອນເງິນພິເສດ),
+				'currency' => q(ສິດທິຖອນເງິນພິເສດ),
 			},
 		},
 		'XEU' => {
 			display_name => {
-				'default' => q(ຫົວໜ່ວຍສະກຸນເງິນ ເອີຣົບ),
+				'currency' => q(ຫົວໜ່ວຍສະກຸນເງິນ ເອີຣົບ),
 			},
 		},
 		'XFO' => {
 			display_name => {
-				'default' => q(ຟຣັງ ຄຳຝຣັ່ງ),
+				'currency' => q(ຟຣັງ ຄຳຝຣັ່ງ),
 			},
 		},
 		'XFU' => {
 			display_name => {
-				'default' => q(ຟຣັງ ຢູໄອຊີ ຝຣັ່ງ),
+				'currency' => q(ຟຣັງ ຢູໄອຊີ ຝຣັ່ງ),
 			},
 		},
 		'XOF' => {
 			symbol => 'CFA',
 			display_name => {
-				'default' => q(ຟັງເຊຟານ ອາຟຣິກາຕາເວັນຕົກ),
+				'currency' => q(ຟັງເຊຟານ ອາຟຣິກາຕາເວັນຕົກ),
 			},
 		},
 		'XPD' => {
 			display_name => {
-				'default' => q(ແພເລດຽມ),
+				'currency' => q(ແພເລດຽມ),
 			},
 		},
 		'XPF' => {
 			symbol => 'CFPF',
 			display_name => {
-				'default' => q(ຊີເອັບພີ ຝຣັ່ງ),
+				'currency' => q(ຊີເອັບພີ ຝຣັ່ງ),
 			},
 		},
 		'XPT' => {
 			display_name => {
-				'default' => q(ແພລັດຕິນຳ),
+				'currency' => q(ແພລັດຕິນຳ),
 			},
 		},
 		'XRE' => {
 			display_name => {
-				'default' => q(ກອງທຶນໄຣເນັດ),
+				'currency' => q(ກອງທຶນໄຣເນັດ),
 			},
 		},
 		'XTS' => {
 			display_name => {
-				'default' => q(ລະຫັດທົດສອບສະກຸນເງິນ),
+				'currency' => q(ລະຫັດທົດສອບສະກຸນເງິນ),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(ສະກຸນເງິນທີ່ບໍ່ຮູ້ຈັກ),
+				'currency' => q(ສະກຸນເງິນທີ່ບໍ່ຮູ້ຈັກ),
 				'other' => q(ສະກຸນເງິນທີ່ບໍ່ຮູ້ຈັກ),
 			},
 		},
 		'YDD' => {
 			display_name => {
-				'default' => q(ດີນາ ເຢເມນ),
+				'currency' => q(ດີນາ ເຢເມນ),
 			},
 		},
 		'YER' => {
 			display_name => {
-				'default' => q(ຣຽວ ເຢເມນ),
+				'currency' => q(ຣຽວ ເຢເມນ),
 			},
 		},
 		'YUD' => {
 			display_name => {
-				'default' => q(ຮາດດີນາ ຢູໂກສະລາວີ),
+				'currency' => q(ຮາດດີນາ ຢູໂກສະລາວີ),
 			},
 		},
 		'YUM' => {
 			display_name => {
-				'default' => q(ດີນາໃໝ່ ຢູໂກສະລາວີ (1994–2002)),
+				'currency' => q(ດີນາໃໝ່ ຢູໂກສະລາວີ \(1994–2002\)),
 			},
 		},
 		'YUN' => {
 			display_name => {
-				'default' => q(ດີນາ ທີ່ປ່ຽນສະພາບ ຢູໂກສະລາວີ (1990–1992)),
+				'currency' => q(ດີນາ ທີ່ປ່ຽນສະພາບ ຢູໂກສະລາວີ \(1990–1992\)),
 			},
 		},
 		'YUR' => {
 			display_name => {
-				'default' => q(ດີນາ ປະຕິຮູບ ຢູໂກສະລາວີ (1992–1993)),
+				'currency' => q(ດີນາ ປະຕິຮູບ ຢູໂກສະລາວີ \(1992–1993\)),
 			},
 		},
 		'ZAL' => {
 			display_name => {
-				'default' => q(ແຣນ ອາຟຣິກາໃຕ້ (ການເງິນ)),
+				'currency' => q(ແຣນ ອາຟຣິກາໃຕ້ \(ການເງິນ\)),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(ແຣນ ອາຟຣິກາໃຕ້),
+				'currency' => q(ແຣນ ອາຟຣິກາໃຕ້),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(ຄວາຊາ ຊັມເບຍ (1968–2012)),
+				'currency' => q(ຄວາຊາ ຊັມເບຍ \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(ຄວາຊາ ຊັມເບຍ),
+				'currency' => q(ຄວາຊາ ຊັມເບຍ),
 			},
 		},
 		'ZRN' => {
 			display_name => {
-				'default' => q(ແຊ ຄອງໂກໃໝ່),
+				'currency' => q(ແຊ ຄອງໂກໃໝ່),
 			},
 		},
 		'ZRZ' => {
 			display_name => {
-				'default' => q(ແຊຄອງໂກ),
+				'currency' => q(ແຊຄອງໂກ),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(ດອນລາ ຊິມບັບເວ (1980–2008)),
+				'currency' => q(ດອນລາ ຊິມບັບເວ \(1980–2008\)),
 			},
 		},
 		'ZWL' => {
 			display_name => {
-				'default' => q(ດອນລາ ຊິມບັບເວ (2009)),
+				'currency' => q(ດອນລາ ຊິມບັບເວ \(2009\)),
 			},
 		},
 		'ZWR' => {
 			display_name => {
-				'default' => q(ດອນລາ ຊິມບັບເວ (2008)),
+				'currency' => q(ດອນລາ ຊິມບັບເວ \(2008\)),
 			},
 		},
 	} },
@@ -5012,6 +5011,40 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'gregorian' => {
+			EHm => q{E HH:mm},
+			EHms => q{E HH:mm:ss},
+			Ed => q{E, d},
+			Ehm => q{E h:mm a},
+			Ehms => q{E h:mm:ss a},
+			Gy => q{G y},
+			GyMMM => q{MMM, G y},
+			GyMMMEd => q{E d MMMM, G y},
+			GyMMMd => q{d MMMM, G y},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, d/M},
+			MMM => q{LLL},
+			MMMEd => q{E d MMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			d => q{d},
+			h => q{h ໂມງa},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y},
+			yM => q{M/y},
+			yMEd => q{E, d/M/y},
+			yMMM => q{MMM y},
+			yMMMEd => q{E, d MMM y},
+			yMMMd => q{d MMM y},
+			yMd => q{d/M/y},
+			yQQQ => q{QQQ y},
+			yQQQQ => q{QQQQ y},
+		},
 		'generic' => {
 			Ed => q{E d},
 			Gy => q{G y},
@@ -5066,40 +5099,6 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
-			EHm => q{E HH:mm},
-			EHms => q{E HH:mm:ss},
-			Ed => q{E, d},
-			Ehm => q{E h:mm a},
-			Ehms => q{E h:mm:ss a},
-			Gy => q{G y},
-			GyMMM => q{MMM, G y},
-			GyMMMEd => q{E d MMMM, G y},
-			GyMMMd => q{d MMMM, G y},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, d/M},
-			MMM => q{LLL},
-			MMMEd => q{E d MMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			d => q{d},
-			h => q{h ໂມງa},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y},
-			yM => q{M/y},
-			yMEd => q{E, d/M/y},
-			yMMM => q{MMM y},
-			yMMMEd => q{E, d MMM y},
-			yMMMd => q{d MMM y},
-			yMd => q{d/M/y},
-			yQQQ => q{QQQ y},
-			yQQQQ => q{QQQQ y},
-		},
 	} },
 );
 
@@ -5119,101 +5118,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			H => {
-				H => q{HH–HH},
-			},
-			Hm => {
-				H => q{HH:mm–HH:mm},
-				m => q{HH:mm–HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm–HH:mm v},
-				m => q{HH:mm–HH:mm v},
-			},
-			Hv => {
-				H => q{HH–HH v},
-			},
-			M => {
-				M => q{M–M},
-			},
-			MEd => {
-				M => q{E, MM-dd – E, MM-dd},
-				d => q{E, MM-dd – E, MM-dd},
-			},
-			MMM => {
-				M => q{LLL–LLL},
-			},
-			MMMEd => {
-				M => q{E, MM-d – E, MM-d},
-				d => q{E, MM-d – E, MM-d},
-			},
-			MMMd => {
-				M => q{MM-d – MM-d},
-				d => q{MM-d – d},
-			},
-			Md => {
-				M => q{MM-dd – MM-dd},
-				d => q{MM-dd – dd},
-			},
-			d => {
-				d => q{d–d},
-			},
-			fallback => '{0} – {1}',
-			h => {
-				a => q{h a – h a},
-				h => q{h–h a},
-			},
-			hm => {
-				a => q{h:mm a – h:mm a},
-				h => q{h:mm–h:mm a},
-				m => q{h:mm–h:mm a},
-			},
-			hmv => {
-				a => q{h:mm a – h:mm a v},
-				h => q{h:mm–h:mm a v},
-				m => q{h:mm–h:mm a v},
-			},
-			hv => {
-				a => q{h a – h a v},
-				h => q{h–h a v},
-			},
-			y => {
-				y => q{G y–y},
-			},
-			yM => {
-				M => q{G y-MM – MM},
-				y => q{G y-MM – y-MM},
-			},
-			yMEd => {
-				M => q{E, G y-MM-dd – E, y-MM-dd},
-				d => q{E, G y-MM-dd – E, y-MM-dd},
-				y => q{E, G y-MM-dd – E, y-MM-dd},
-			},
-			yMMM => {
-				M => q{G y-MM – MM},
-				y => q{G y-MM – y-MM},
-			},
-			yMMMEd => {
-				M => q{E, G y-MM-dd – E, y-MM-dd},
-				d => q{E, G y-MM-dd – E, y-MM-dd},
-				y => q{E, G y-MM-dd – E, y-MM-dd},
-			},
-			yMMMM => {
-				M => q{G y-MM – MM},
-				y => q{G y-MM – y-MM},
-			},
-			yMMMd => {
-				M => q{G y-MM-dd – MM-d},
-				d => q{G y-MM-d – d},
-				y => q{G y-MM-dd – y-MM-dd},
-			},
-			yMd => {
-				M => q{G y-MM-dd – MM-dd},
-				d => q{G y-MM-dd – dd},
-				y => q{G y-MM-dd – y-MM-dd},
-			},
-		},
 		'gregorian' => {
 			H => {
 				H => q{HH–HH},
@@ -5307,6 +5211,101 @@ has 'datetime_formats_interval' => (
 				M => q{dd/MM/y – dd/MM/y},
 				d => q{dd/MM/y – dd/MM/y},
 				y => q{dd/MM/y – dd/MM/y},
+			},
+		},
+		'generic' => {
+			H => {
+				H => q{HH–HH},
+			},
+			Hm => {
+				H => q{HH:mm–HH:mm},
+				m => q{HH:mm–HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm–HH:mm v},
+				m => q{HH:mm–HH:mm v},
+			},
+			Hv => {
+				H => q{HH–HH v},
+			},
+			M => {
+				M => q{M–M},
+			},
+			MEd => {
+				M => q{E, MM-dd – E, MM-dd},
+				d => q{E, MM-dd – E, MM-dd},
+			},
+			MMM => {
+				M => q{LLL–LLL},
+			},
+			MMMEd => {
+				M => q{E, MM-d – E, MM-d},
+				d => q{E, MM-d – E, MM-d},
+			},
+			MMMd => {
+				M => q{MM-d – MM-d},
+				d => q{MM-d – d},
+			},
+			Md => {
+				M => q{MM-dd – MM-dd},
+				d => q{MM-dd – dd},
+			},
+			d => {
+				d => q{d–d},
+			},
+			fallback => '{0} – {1}',
+			h => {
+				a => q{h a – h a},
+				h => q{h–h a},
+			},
+			hm => {
+				a => q{h:mm a – h:mm a},
+				h => q{h:mm–h:mm a},
+				m => q{h:mm–h:mm a},
+			},
+			hmv => {
+				a => q{h:mm a – h:mm a v},
+				h => q{h:mm–h:mm a v},
+				m => q{h:mm–h:mm a v},
+			},
+			hv => {
+				a => q{h a – h a v},
+				h => q{h–h a v},
+			},
+			y => {
+				y => q{G y–y},
+			},
+			yM => {
+				M => q{G y-MM – MM},
+				y => q{G y-MM – y-MM},
+			},
+			yMEd => {
+				M => q{E, G y-MM-dd – E, y-MM-dd},
+				d => q{E, G y-MM-dd – E, y-MM-dd},
+				y => q{E, G y-MM-dd – E, y-MM-dd},
+			},
+			yMMM => {
+				M => q{G y-MM – MM},
+				y => q{G y-MM – y-MM},
+			},
+			yMMMEd => {
+				M => q{E, G y-MM-dd – E, y-MM-dd},
+				d => q{E, G y-MM-dd – E, y-MM-dd},
+				y => q{E, G y-MM-dd – E, y-MM-dd},
+			},
+			yMMMM => {
+				M => q{G y-MM – MM},
+				y => q{G y-MM – y-MM},
+			},
+			yMMMd => {
+				M => q{G y-MM-dd – MM-d},
+				d => q{G y-MM-d – d},
+				y => q{G y-MM-dd – y-MM-dd},
+			},
+			yMd => {
+				M => q{G y-MM-dd – MM-dd},
+				d => q{G y-MM-dd – dd},
+				y => q{G y-MM-dd – y-MM-dd},
 			},
 		},
 	} },

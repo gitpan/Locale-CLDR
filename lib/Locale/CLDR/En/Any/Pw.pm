@@ -1,6 +1,6 @@
-package Locale::CLDR::En::Any::Pw;
+package Locale::CLDR::En::Any::Pw v0.0.4;
 # This file auto generated from Data\common\main\en_PW.xml
-#	on Mon 31 Mar 12:12:18 am GMT
+#	on Sun 13 Apr 10:09:34 am GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use v5.18;
@@ -28,4 +28,9 @@ has 'units' => (
 			} }
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
 
+1;
+
+# vim: tabstop=4

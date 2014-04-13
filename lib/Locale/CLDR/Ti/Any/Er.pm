@@ -1,6 +1,6 @@
-package Locale::CLDR::Ti::Any::Er;
+package Locale::CLDR::Ti::Any::Er v0.0.4;
 # This file auto generated from Data\common\main\ti_ER.xml
-#	on Mon 31 Mar  2:13:47 am GMT
+#	on Sun 13 Apr 12:14:46 pm GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use v5.18;
@@ -52,3 +52,266 @@ has 'alternate_quote_end' => (
 	default		=> qq{”},
 );
 
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'ERN' => {
+			symbol => 'Nfk',
+		},
+	} },
+);
+
+
+has 'calendar_months' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'ጥሪ',
+							'ለካቲ',
+							'መጋቢ',
+							'ሚያዝ',
+							'ግንቦ',
+							'ሰነ',
+							'ሓምለ',
+							'ነሓሰ',
+							'መስከ',
+							'ጥቅም',
+							'ሕዳር',
+							'ታሕሳ'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'ጥሪ',
+							'ለካቲት',
+							'መጋቢት',
+							'ሚያዝያ',
+							'ግንቦት',
+							'ሰነ',
+							'ሓምለ',
+							'ነሓሰ',
+							'መስከረም',
+							'ጥቅምቲ',
+							'ሕዳር',
+							'ታሕሳስ'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_days' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					wide => {
+						mon => 'ሰኑይ',
+						tue => 'ሰሉስ',
+						wed => 'ረቡዕ',
+						thu => 'ሓሙስ',
+						fri => 'ዓርቢ',
+						sat => 'ቀዳም',
+						sun => 'ሰንበት'
+					},
+				},
+			},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			'full' => q{EEEE፡ dd MMMM መዓልቲ y G},
+		},
+		'gregorian' => {
+			'full' => q{EEEE፡ dd MMMM መዓልቲ y G},
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			MEd => {
+				M => q{E፡ MM-dd - E፡ MM-dd},
+				d => q{E፡ MM-dd - E፡ MM-dd},
+			},
+			MMM => {
+				M => q{MMM-MMM},
+			},
+			MMMEd => {
+				M => q{E፡ MMM d - E፡ MMM d},
+				d => q{E፡ MMM d - E፡ MMM d},
+			},
+			MMMd => {
+				M => q{MMM d - MMM d},
+				d => q{MMM d-d},
+			},
+			Md => {
+				M => q{MM-dd - MM-dd},
+				d => q{MM-dd - MM-dd},
+			},
+			fallback => '{0} - {1}',
+			yM => {
+				M => q{y-MM - y-MM},
+				y => q{y-MM - y-MM},
+			},
+			yMEd => {
+				M => q{E፡ y-MM-dd - E፡ y-MM-dd},
+				d => q{E፡ y-MM-dd - E፡ y-MM-dd},
+				y => q{E፡ y-MM-dd - E፡ y-MM-dd},
+			},
+			yMMM => {
+				M => q{y MMM-MMM},
+				y => q{y MMM - y MMM},
+			},
+			yMMMEd => {
+				M => q{E፡ dd MMM መዓልቲ y G - E፡ dd MMM መዓልቲ y G},
+				d => q{E፡ dd MMM መዓልቲ y G - E፡ dd MMM መዓልቲ y G},
+				y => q{E፡ dd MMM መዓልቲ y G - E፡ dd MMM መዓልቲ y G},
+			},
+			yMMMd => {
+				M => q{y MMM d - MMM d},
+				d => q{y MMM d-d},
+				y => q{y MMM d - y MMM d},
+			},
+			yMd => {
+				M => q{y-MM-dd - y-MM-dd},
+				d => q{y-MM-dd - y-MM-dd},
+				y => q{y-MM-dd - y-MM-dd},
+			},
+		},
+		'gregorian' => {
+			MEd => {
+				M => q{E፡ MM-dd - E፡ MM-dd},
+				d => q{E፡ MM-dd - E፡ MM-dd},
+			},
+			MMM => {
+				M => q{MMM-MMM},
+			},
+			MMMEd => {
+				M => q{E፡ MMM d - E፡ MMM d},
+				d => q{E፡ MMM d - E፡ MMM d},
+			},
+			MMMd => {
+				M => q{MMM d - MMM d},
+				d => q{MMM d-d},
+			},
+			Md => {
+				M => q{MM-dd - MM-dd},
+				d => q{MM-dd - MM-dd},
+			},
+			fallback => '{0} - {1}',
+			yM => {
+				M => q{y-MM - y-MM},
+				y => q{y-MM - y-MM},
+			},
+			yMEd => {
+				M => q{E፡ y-MM-dd - E፡ y-MM-dd},
+				d => q{E፡ y-MM-dd - E፡ y-MM-dd},
+				y => q{E፡ y-MM-dd - E፡ y-MM-dd},
+			},
+			yMMM => {
+				M => q{y MMM-MMM},
+				y => q{y MMM - y MMM},
+			},
+			yMMMEd => {
+				M => q{E፡ dd MMM መዓልቲ y G - E፡ dd MMM መዓልቲ y G},
+				d => q{E፡ dd MMM መዓልቲ y G - E፡ dd MMM መዓልቲ y G},
+				y => q{E፡ dd MMM መዓልቲ y G - E፡ dd MMM መዓልቲ y G},
+			},
+			yMMMd => {
+				M => q{y MMM d - MMM d},
+				d => q{y MMM d-d},
+				y => q{y MMM d - y MMM d},
+			},
+			yMd => {
+				M => q{y-MM-dd - y-MM-dd},
+				d => q{y-MM-dd - y-MM-dd},
+				y => q{y-MM-dd - y-MM-dd},
+			},
+		},
+	} },
+);
+
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

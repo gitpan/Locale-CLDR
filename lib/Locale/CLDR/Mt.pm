@@ -1,6 +1,6 @@
-package Locale::CLDR::Mt;
+package Locale::CLDR::Mt v0.0.4;
 # This file auto generated from Data\common\main\mt.xml
-#	on Mon 31 Mar  1:26:49 am GMT
+#	on Sun 13 Apr 11:26:50 am GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -956,17 +956,17 @@ has 'curriencies' => (
 	default		=> sub { {
 		'EUR' => {
 			display_name => {
-				'default' => q(Ewro),
+				'currency' => q(Ewro),
 			},
 		},
 		'MTL' => {
 			display_name => {
-				'default' => q(Lira Maltija),
+				'currency' => q(Lira Maltija),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(Munita Mhux Magħrufa jew Mhux Valida),
+				'currency' => q(Munita Mhux Magħrufa jew Mhux Valida),
 				'few' => q(Munita Mhux Magħruf jew Mhux Validu),
 				'many' => q(Munita Mhux Magħruf jew Mhux Validu),
 				'one' => q(Munita Mhux Magħruf jew Mhux Validu),

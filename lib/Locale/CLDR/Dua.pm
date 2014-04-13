@@ -1,6 +1,6 @@
-package Locale::CLDR::Dua;
+package Locale::CLDR::Dua v0.0.4;
 # This file auto generated from Data\common\main\dua.xml
-#	on Mon 31 Mar 12:04:33 am GMT
+#	on Sun 13 Apr 10:01:10 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -299,8 +299,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ebyámu},
 					'am' => q{idiɓa},
+					'pm' => q{ebyámu},
 				},
 			},
 		},
@@ -447,3 +447,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

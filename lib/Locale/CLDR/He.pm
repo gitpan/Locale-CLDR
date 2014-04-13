@@ -1,6 +1,6 @@
-package Locale::CLDR::He;
+package Locale::CLDR::He v0.0.4;
 # This file auto generated from Data\common\main\he.xml
-#	on Mon 31 Mar 12:32:43 am GMT
+#	on Sun 13 Apr 10:30:59 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -2107,7 +2107,6 @@ has 'units' => (
 			} }
 );
 
-
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -2450,138 +2449,138 @@ has 'curriencies' => (
 	default		=> sub { {
 		'ADP' => {
 			display_name => {
-				'default' => q(פזטה אנדורית),
+				'currency' => q(פזטה אנדורית),
 			},
 		},
 		'AED' => {
 			display_name => {
-				'default' => q(דירהם של איחוד הנסיכויות הערביות),
+				'currency' => q(דירהם של איחוד הנסיכויות הערביות),
 			},
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(אפגני אפגני),
+				'currency' => q(אפגני אפגני),
 			},
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(לק אלבני),
+				'currency' => q(לק אלבני),
 			},
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(דראם ארמני),
+				'currency' => q(דראם ארמני),
 			},
 		},
 		'ANG' => {
 			display_name => {
-				'default' => q(גילדן של האנטילים ההולנדיים),
+				'currency' => q(גילדן של האנטילים ההולנדיים),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(קואנזה אנגולי),
+				'currency' => q(קואנזה אנגולי),
 			},
 		},
 		'AON' => {
 			display_name => {
-				'default' => q(קואנזה חדש אנגולי (1990–2000)),
+				'currency' => q(קואנזה חדש אנגולי \(1990–2000\)),
 			},
 		},
 		'AOR' => {
 			display_name => {
-				'default' => q(קואנזה רג׳וסטדו אנגולי (1995–1999)),
+				'currency' => q(קואנזה רג׳וסטדו אנגולי \(1995–1999\)),
 			},
 		},
 		'ARP' => {
 			display_name => {
-				'default' => q(פזו ארגנטינאי (1983–1985)),
+				'currency' => q(פזו ארגנטינאי \(1983–1985\)),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(פזו ארגנטינאי),
+				'currency' => q(פזו ארגנטינאי),
 			},
 		},
 		'ATS' => {
 			display_name => {
-				'default' => q(שילינג אוסטרי),
+				'currency' => q(שילינג אוסטרי),
 			},
 		},
 		'AUD' => {
 			symbol => 'A$',
 			display_name => {
-				'default' => q(דולר אוסטרלי),
+				'currency' => q(דולר אוסטרלי),
 			},
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(פלורין של ארובה),
+				'currency' => q(פלורין של ארובה),
 			},
 		},
 		'AZM' => {
 			display_name => {
-				'default' => q(מנאט אזרביג׳אני (1993–2006)),
+				'currency' => q(מנאט אזרביג׳אני \(1993–2006\)),
 			},
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(מאנאט אזרביג׳ני),
+				'currency' => q(מאנאט אזרביג׳ני),
 			},
 		},
 		'BAD' => {
 			display_name => {
-				'default' => q(דינר של בוסניה־הרצגובינה),
+				'currency' => q(דינר של בוסניה־הרצגובינה),
 			},
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(מארק בר המרה של בוסניה־הרצגובינה),
+				'currency' => q(מארק בר המרה של בוסניה־הרצגובינה),
 			},
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(דולר ברבדיאני),
+				'currency' => q(דולר ברבדיאני),
 			},
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(טאקה בנגלדשי),
+				'currency' => q(טאקה בנגלדשי),
 			},
 		},
 		'BEC' => {
 			display_name => {
-				'default' => q(פרנק בלגי (בר המרה)),
+				'currency' => q(פרנק בלגי \(בר המרה\)),
 			},
 		},
 		'BEF' => {
 			display_name => {
-				'default' => q(פרנק בלגי),
+				'currency' => q(פרנק בלגי),
 			},
 		},
 		'BGL' => {
 			display_name => {
-				'default' => q(לב בולגרי ישן),
+				'currency' => q(לב בולגרי ישן),
 			},
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(לב בולגרי),
+				'currency' => q(לב בולגרי),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(דינר בחרייני),
+				'currency' => q(דינר בחרייני),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(פרנק בורונדי),
+				'currency' => q(פרנק בורונדי),
 			},
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(דולר ברמודה),
+				'currency' => q(דולר ברמודה),
 				'many' => q(דולר ברמודה),
 				'one' => q(דולר ברמודה),
 				'other' => q(דולר ברמודה),
@@ -2590,58 +2589,58 @@ has 'curriencies' => (
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(דולר ברוניי),
+				'currency' => q(דולר ברוניי),
 			},
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(בוליביאנו),
+				'currency' => q(בוליביאנו),
 			},
 		},
 		'BOP' => {
 			display_name => {
-				'default' => q(פזו בוליבי),
+				'currency' => q(פזו בוליבי),
 			},
 		},
 		'BRB' => {
 			display_name => {
-				'default' => q(קרוזיארו חדש ברזילאי (1967–1986)),
+				'currency' => q(קרוזיארו חדש ברזילאי \(1967–1986\)),
 			},
 		},
 		'BRC' => {
 			display_name => {
-				'default' => q(קרוזדו ברזילאי),
+				'currency' => q(קרוזדו ברזילאי),
 			},
 		},
 		'BRL' => {
 			symbol => 'R$',
 			display_name => {
-				'default' => q(ריאל ברזילאי),
+				'currency' => q(ריאל ברזילאי),
 			},
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(דולר בהאמי),
+				'currency' => q(דולר בהאמי),
 			},
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(נגולטרום בהוטני),
+				'currency' => q(נגולטרום בהוטני),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(פולה בוצוואני),
+				'currency' => q(פולה בוצוואני),
 			},
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(רובל בלרוסי),
+				'currency' => q(רובל בלרוסי),
 			},
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(דולר בליזי),
+				'currency' => q(דולר בליזי),
 				'many' => q(דולר בליזי),
 				'one' => q(דולר בליזי),
 				'other' => q(דולר בליזי),
@@ -2651,7 +2650,7 @@ has 'curriencies' => (
 		'CAD' => {
 			symbol => 'CA$',
 			display_name => {
-				'default' => q(דולר קנדי),
+				'currency' => q(דולר קנדי),
 				'many' => q(דולר קנדי),
 				'one' => q(דולר קנדי),
 				'other' => q(דולר קנדי),
@@ -2660,23 +2659,23 @@ has 'curriencies' => (
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(פרנק קונגולזי),
+				'currency' => q(פרנק קונגולזי),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(פרנק שוויצרי),
+				'currency' => q(פרנק שוויצרי),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(פזו צ׳ילאני),
+				'currency' => q(פזו צ׳ילאני),
 			},
 		},
 		'CNY' => {
 			symbol => 'CN¥',
 			display_name => {
-				'default' => q(יואן רנמינבי סיני),
+				'currency' => q(יואן רנמינבי סיני),
 				'many' => q(יואן רנמינבי סיני),
 				'one' => q(יואן רנמינבי סיני),
 				'other' => q(יואן רנמינבי סיני),
@@ -2685,12 +2684,12 @@ has 'curriencies' => (
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(פזו קולומביאני),
+				'currency' => q(פזו קולומביאני),
 			},
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(קולון קוסטה־ריקני),
+				'currency' => q(קולון קוסטה־ריקני),
 				'many' => q(קולון קוסטה־ריקני),
 				'one' => q(קולון קוסטה־ריקני),
 				'other' => q(קולון קוסטה־ריקני),
@@ -2699,169 +2698,169 @@ has 'curriencies' => (
 		},
 		'CSD' => {
 			display_name => {
-				'default' => q(דינר סרבי ישן),
+				'currency' => q(דינר סרבי ישן),
 			},
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(פזו קובני להמרה),
+				'currency' => q(פזו קובני להמרה),
 			},
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(פזו קובני),
+				'currency' => q(פזו קובני),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(אסקודו כף ורדה),
+				'currency' => q(אסקודו כף ורדה),
 			},
 		},
 		'CYP' => {
 			display_name => {
-				'default' => q(לירה קפריסאית),
+				'currency' => q(לירה קפריסאית),
 			},
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(קורונה צ׳כית),
+				'currency' => q(קורונה צ׳כית),
 			},
 		},
 		'DDM' => {
 			display_name => {
-				'default' => q(מרק מזרח גרמני),
+				'currency' => q(מרק מזרח גרמני),
 			},
 		},
 		'DEM' => {
 			display_name => {
-				'default' => q(מרק גרמני),
+				'currency' => q(מרק גרמני),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(פרנק ג׳יבוטי),
+				'currency' => q(פרנק ג׳יבוטי),
 			},
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(כתר דני),
+				'currency' => q(כתר דני),
 			},
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(פזו דומיניקני),
+				'currency' => q(פזו דומיניקני),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(דינר אלג׳ירי),
+				'currency' => q(דינר אלג׳ירי),
 			},
 		},
 		'ECS' => {
 			display_name => {
-				'default' => q(סוקר אקואדורי),
+				'currency' => q(סוקר אקואדורי),
 			},
 		},
 		'EEK' => {
 			display_name => {
-				'default' => q(קרון אסטוני),
+				'currency' => q(קרון אסטוני),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(לירה מיצרית),
+				'currency' => q(לירה מיצרית),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(נאקפה אריתראי),
+				'currency' => q(נאקפה אריתראי),
 			},
 		},
 		'ESA' => {
 			display_name => {
-				'default' => q(פזטה [ESA]),
+				'currency' => q(פזטה [ESA]),
 			},
 		},
 		'ESB' => {
 			display_name => {
-				'default' => q(פזטה [ESB]),
+				'currency' => q(פזטה [ESB]),
 			},
 		},
 		'ESP' => {
 			display_name => {
-				'default' => q(פסטה ספרדי),
+				'currency' => q(פסטה ספרדי),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(ביר אתיופי),
+				'currency' => q(ביר אתיופי),
 			},
 		},
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(אירו),
+				'currency' => q(אירו),
 			},
 		},
 		'FIM' => {
 			display_name => {
-				'default' => q(מרק פיני),
+				'currency' => q(מרק פיני),
 			},
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(דולר פיג׳י),
+				'currency' => q(דולר פיג׳י),
 			},
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(לירה של איי פוקלנד),
+				'currency' => q(לירה של איי פוקלנד),
 			},
 		},
 		'FRF' => {
 			display_name => {
-				'default' => q(פרנק צרפתי),
+				'currency' => q(פרנק צרפתי),
 			},
 		},
 		'GBP' => {
 			symbol => '£',
 			display_name => {
-				'default' => q(לירה שטרלינג),
+				'currency' => q(לירה שטרלינג),
 			},
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(לרי גאורגי),
+				'currency' => q(לרי גאורגי),
 			},
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(סדי גאני),
+				'currency' => q(סדי גאני),
 			},
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(פאונד גיברלטר),
+				'currency' => q(פאונד גיברלטר),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(דלאסי גמבי),
+				'currency' => q(דלאסי גמבי),
 			},
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(פרנק גינאי),
+				'currency' => q(פרנק גינאי),
 			},
 		},
 		'GRD' => {
 			display_name => {
-				'default' => q(דרכמה),
+				'currency' => q(דרכמה),
 			},
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(קצל גואטמלי),
+				'currency' => q(קצל גואטמלי),
 				'many' => q(קצל גואטמלי),
 				'one' => q(קצל גואטמלי),
 				'other' => q(קצל גואטמלי),
@@ -2870,23 +2869,23 @@ has 'curriencies' => (
 		},
 		'GWP' => {
 			display_name => {
-				'default' => q(פזו גינאי),
+				'currency' => q(פזו גינאי),
 			},
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(דולר גיאני),
+				'currency' => q(דולר גיאני),
 			},
 		},
 		'HKD' => {
 			symbol => 'HK$',
 			display_name => {
-				'default' => q(דולר הונג קונגי),
+				'currency' => q(דולר הונג קונגי),
 			},
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(למפירה הונדורי),
+				'currency' => q(למפירה הונדורי),
 				'many' => q(למפירה הונדורי),
 				'one' => q(למפירה הונדורי),
 				'other' => q(למפירה הונדורי),
@@ -2895,22 +2894,22 @@ has 'curriencies' => (
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(קונה קרואטי),
+				'currency' => q(קונה קרואטי),
 			},
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(גארד האיטי),
+				'currency' => q(גארד האיטי),
 			},
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(פורינט הונגרי),
+				'currency' => q(פורינט הונגרי),
 			},
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(רופיה אינדונזית),
+				'currency' => q(רופיה אינדונזית),
 				'many' => q(רופיה אינדונזית),
 				'one' => q(רופיה אינדונזית),
 				'other' => q(רופיה אינדונזית),
@@ -2919,19 +2918,19 @@ has 'curriencies' => (
 		},
 		'IEP' => {
 			display_name => {
-				'default' => q(לירה אירית),
+				'currency' => q(לירה אירית),
 			},
 		},
 		'ILP' => {
 			symbol => 'ל״י',
 			display_name => {
-				'default' => q(לירה ישראלית),
+				'currency' => q(לירה ישראלית),
 			},
 		},
 		'ILS' => {
 			symbol => '₪',
 			display_name => {
-				'default' => q(ש״ח),
+				'currency' => q(ש״ח),
 				'many' => q(שקלים חדשים),
 				'one' => q(שקלים חדשים),
 				'other' => q(שקלים חדשים),
@@ -2941,7 +2940,7 @@ has 'curriencies' => (
 		'INR' => {
 			symbol => '₹',
 			display_name => {
-				'default' => q(רופי הודית),
+				'currency' => q(רופי הודית),
 				'many' => q(רופי הודית),
 				'one' => q(רופי הודית),
 				'other' => q(רופי הודית),
@@ -2950,205 +2949,205 @@ has 'curriencies' => (
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(דינר עירקי),
+				'currency' => q(דינר עירקי),
 			},
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(ריאל איראני),
+				'currency' => q(ריאל איראני),
 			},
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(קרונה איסלנדית),
+				'currency' => q(קרונה איסלנדית),
 			},
 		},
 		'ITL' => {
 			display_name => {
-				'default' => q(לירה איטלקית),
+				'currency' => q(לירה איטלקית),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(דולר ג׳מאיקני),
+				'currency' => q(דולר ג׳מאיקני),
 			},
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(דינר ירדני),
+				'currency' => q(דינר ירדני),
 			},
 		},
 		'JPY' => {
 			symbol => 'JP¥',
 			display_name => {
-				'default' => q(ין יפני),
+				'currency' => q(ין יפני),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(שילינג קנייאתי),
+				'currency' => q(שילינג קנייאתי),
 			},
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(סום קירגיזי),
+				'currency' => q(סום קירגיזי),
 			},
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(ריל קמבודי),
+				'currency' => q(ריל קמבודי),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(פרנק קומורואי),
+				'currency' => q(פרנק קומורואי),
 			},
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(וון צפון קוראני),
+				'currency' => q(וון צפון קוראני),
 			},
 		},
 		'KRW' => {
 			symbol => '₩',
 			display_name => {
-				'default' => q(וון דרום קוראני),
+				'currency' => q(וון דרום קוראני),
 			},
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(דינר כוויתי),
+				'currency' => q(דינר כוויתי),
 			},
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(דולר קיימאני),
+				'currency' => q(דולר קיימאני),
 			},
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(טנגה קזחסטני),
+				'currency' => q(טנגה קזחסטני),
 			},
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(קיפ לאי),
+				'currency' => q(קיפ לאי),
 			},
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(לירה לבנונית),
+				'currency' => q(לירה לבנונית),
 			},
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(רופי סרי לנקי),
+				'currency' => q(רופי סרי לנקי),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(דולר ליברי),
+				'currency' => q(דולר ליברי),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(לוטי לסותי),
+				'currency' => q(לוטי לסותי),
 			},
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(ליטא ליטאי),
+				'currency' => q(ליטא ליטאי),
 			},
 		},
 		'LUF' => {
 			display_name => {
-				'default' => q(פרנק לוקסמבורגי),
+				'currency' => q(פרנק לוקסמבורגי),
 			},
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(לט לטבי),
+				'currency' => q(לט לטבי),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(דינר לובי),
+				'currency' => q(דינר לובי),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(דירהם מרוקאי),
+				'currency' => q(דירהם מרוקאי),
 			},
 		},
 		'MAF' => {
 			display_name => {
-				'default' => q(פרנק מרוקאי),
+				'currency' => q(פרנק מרוקאי),
 			},
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(ליאו מולדובני),
+				'currency' => q(ליאו מולדובני),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(אריארי מלגשי),
+				'currency' => q(אריארי מלגשי),
 			},
 		},
 		'MGF' => {
 			display_name => {
-				'default' => q(פרנק מדגסקארי),
+				'currency' => q(פרנק מדגסקארי),
 			},
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(דינר מקדוני),
+				'currency' => q(דינר מקדוני),
 			},
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(קיאט מיאנמרי),
+				'currency' => q(קיאט מיאנמרי),
 			},
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(טוגריק מונגולי),
+				'currency' => q(טוגריק מונגולי),
 			},
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(פטקה של מקאו),
+				'currency' => q(פטקה של מקאו),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(אוגוויה מאוריטני),
+				'currency' => q(אוגוויה מאוריטני),
 			},
 		},
 		'MTL' => {
 			display_name => {
-				'default' => q(לירה מלטית),
+				'currency' => q(לירה מלטית),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(רופי מאוריציני),
+				'currency' => q(רופי מאוריציני),
 			},
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(רופיה מלדיבית),
+				'currency' => q(רופיה מלדיבית),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(קואצ׳ה מלאוי),
+				'currency' => q(קואצ׳ה מלאוי),
 			},
 		},
 		'MXN' => {
 			symbol => 'MX$',
 			display_name => {
-				'default' => q(פזו מקסיקני),
+				'currency' => q(פזו מקסיקני),
 				'many' => q(פזו מקסיקני),
 				'one' => q(פזו מקסיקני),
 				'other' => q(פזו מקסיקני),
@@ -3157,17 +3156,17 @@ has 'curriencies' => (
 		},
 		'MXP' => {
 			display_name => {
-				'default' => q(פזו מקסיקני (1861 – 1992)),
+				'currency' => q(פזו מקסיקני \(1861 – 1992\)),
 			},
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(רינגיט מלזי),
+				'currency' => q(רינגיט מלזי),
 			},
 		},
 		'MZE' => {
 			display_name => {
-				'default' => q(אסקודו מוזמביקי),
+				'currency' => q(אסקודו מוזמביקי),
 				'many' => q(אסקודו מוזמביקי),
 				'one' => q(אסקודו מוזמביקי),
 				'other' => q(אסקודואים מוזמביקיים),
@@ -3176,12 +3175,12 @@ has 'curriencies' => (
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(מטיקל),
+				'currency' => q(מטיקל),
 			},
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(מטיקל מוזמביני),
+				'currency' => q(מטיקל מוזמביני),
 				'many' => q(מטיקל מוזמביני),
 				'one' => q(מטיקל מוזמביני),
 				'other' => q(מטיקל מוזמביני),
@@ -3190,17 +3189,17 @@ has 'curriencies' => (
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(דולר נמיבי),
+				'currency' => q(דולר נמיבי),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(נאירה ניגרי),
+				'currency' => q(נאירה ניגרי),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(קורדובה ניקראגי),
+				'currency' => q(קורדובה ניקראגי),
 				'many' => q(קורדובה ניקראגי),
 				'one' => q(קורדובה ניקראגי),
 				'other' => q(קורדובה ניקראגי),
@@ -3209,188 +3208,188 @@ has 'curriencies' => (
 		},
 		'NLG' => {
 			display_name => {
-				'default' => q(גילדן הולנדי),
+				'currency' => q(גילדן הולנדי),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(כתר נורבגי),
+				'currency' => q(כתר נורבגי),
 			},
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(רופי נפאלי),
+				'currency' => q(רופי נפאלי),
 			},
 		},
 		'NZD' => {
 			symbol => 'NZ$',
 			display_name => {
-				'default' => q(דולר ניו זילנדי),
+				'currency' => q(דולר ניו זילנדי),
 			},
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(ריאל עומאני),
+				'currency' => q(ריאל עומאני),
 			},
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(בלבואה פנמי),
+				'currency' => q(בלבואה פנמי),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(סול פרואני חדש),
+				'currency' => q(סול פרואני חדש),
 			},
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(קינה של פפואה גינאה החדשה),
+				'currency' => q(קינה של פפואה גינאה החדשה),
 			},
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(פזו פיליפיני),
+				'currency' => q(פזו פיליפיני),
 			},
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(רופי פקיסטני),
+				'currency' => q(רופי פקיסטני),
 			},
 		},
 		'PLN' => {
 			display_name => {
-				'default' => q(זלוטי פולני),
+				'currency' => q(זלוטי פולני),
 			},
 		},
 		'PLZ' => {
 			display_name => {
-				'default' => q(זלוטי (1950 – 1995)),
+				'currency' => q(זלוטי \(1950 – 1995\)),
 			},
 		},
 		'PTE' => {
 			display_name => {
-				'default' => q(אסקודו פורטוגלי),
+				'currency' => q(אסקודו פורטוגלי),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(גוורני פראגוואי),
+				'currency' => q(גוורני פראגוואי),
 			},
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(ריאל קטארי),
+				'currency' => q(ריאל קטארי),
 			},
 		},
 		'ROL' => {
 			display_name => {
-				'default' => q(לאו רומני ישן),
+				'currency' => q(לאו רומני ישן),
 			},
 		},
 		'RON' => {
 			display_name => {
-				'default' => q(לאו רומני חדש),
+				'currency' => q(לאו רומני חדש),
 			},
 		},
 		'RSD' => {
 			display_name => {
-				'default' => q(דינר סרבי),
+				'currency' => q(דינר סרבי),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(רובל),
+				'currency' => q(רובל),
 			},
 		},
 		'RUR' => {
 			display_name => {
-				'default' => q(רובל רוסי (1991 – 1998)),
+				'currency' => q(רובל רוסי \(1991 – 1998\)),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(פרנק רואנדי),
+				'currency' => q(פרנק רואנדי),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(ריאל סעודי),
+				'currency' => q(ריאל סעודי),
 			},
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(דולר איי שלמה),
+				'currency' => q(דולר איי שלמה),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(רופי סיישלי),
+				'currency' => q(רופי סיישלי),
 			},
 		},
 		'SDD' => {
 			display_name => {
-				'default' => q(דינר סודני),
+				'currency' => q(דינר סודני),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(לירה סודנית),
+				'currency' => q(לירה סודנית),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(לירה סודנית (1957–1998)),
+				'currency' => q(לירה סודנית \(1957–1998\)),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(כתר שוודי),
+				'currency' => q(כתר שוודי),
 			},
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(דולר סינגפורי),
+				'currency' => q(דולר סינגפורי),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(פאונד סנט הלני),
+				'currency' => q(פאונד סנט הלני),
 			},
 		},
 		'SIT' => {
 			display_name => {
-				'default' => q(טולאר סלובני),
+				'currency' => q(טולאר סלובני),
 			},
 		},
 		'SKK' => {
 			display_name => {
-				'default' => q(קורונה סלובקי),
+				'currency' => q(קורונה סלובקי),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(ליאון סיירה לאוני),
+				'currency' => q(ליאון סיירה לאוני),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(שילינג סומאלי),
+				'currency' => q(שילינג סומאלי),
 			},
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(דולר סורינאמי),
+				'currency' => q(דולר סורינאמי),
 			},
 		},
 		'SRG' => {
 			display_name => {
-				'default' => q(גילדר סורינאמי),
+				'currency' => q(גילדר סורינאמי),
 			},
 		},
 		'SSP' => {
 			display_name => {
-				'default' => q(לירה דרום סודאנית),
+				'currency' => q(לירה דרום סודאנית),
 				'many' => q(לירה דרום סודאנית),
 				'one' => q(לירה דרום סודאנית),
 				'other' => q(לירה דרום סודאנית),
@@ -3399,17 +3398,17 @@ has 'curriencies' => (
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(דוברה של סן טומה ופרינסיפה),
+				'currency' => q(דוברה של סן טומה ופרינסיפה),
 			},
 		},
 		'SUR' => {
 			display_name => {
-				'default' => q(רובל סובייטי),
+				'currency' => q(רובל סובייטי),
 			},
 		},
 		'SVC' => {
 			display_name => {
-				'default' => q(קולון סלבדורי),
+				'currency' => q(קולון סלבדורי),
 				'many' => q(קולון סלבדורי),
 				'one' => q(קולון סלבדורי),
 				'other' => q(קולונים סלבדוריים),
@@ -3418,58 +3417,58 @@ has 'curriencies' => (
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(לירה סורית),
+				'currency' => q(לירה סורית),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(לילנגני סווזי),
+				'currency' => q(לילנגני סווזי),
 			},
 		},
 		'THB' => {
 			symbol => '฿',
 			display_name => {
-				'default' => q(בהט תאילנדי),
+				'currency' => q(בהט תאילנדי),
 			},
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(סומוני טג׳קיסטני),
+				'currency' => q(סומוני טג׳קיסטני),
 			},
 		},
 		'TMM' => {
 			display_name => {
-				'default' => q(מנאט טורקמאני),
+				'currency' => q(מנאט טורקמאני),
 			},
 		},
 		'TMT' => {
 			display_name => {
-				'default' => q(מנאט טורקמני),
+				'currency' => q(מנאט טורקמני),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(דינר טוניסאי),
+				'currency' => q(דינר טוניסאי),
 			},
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(פאאמגה טונגי),
+				'currency' => q(פאאמגה טונגי),
 			},
 		},
 		'TPE' => {
 			display_name => {
-				'default' => q(אסקודו טימוראי),
+				'currency' => q(אסקודו טימוראי),
 			},
 		},
 		'TRL' => {
 			display_name => {
-				'default' => q(לירה טורקית),
+				'currency' => q(לירה טורקית),
 			},
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(לירה טורקית חדשה),
+				'currency' => q(לירה טורקית חדשה),
 				'many' => q(לירה טורקית חדשה),
 				'one' => q(לירה טורקית חדשה),
 				'other' => q(לירה טורקית חדשה),
@@ -3478,13 +3477,13 @@ has 'curriencies' => (
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(דולר טרינידדי),
+				'currency' => q(דולר טרינידדי),
 			},
 		},
 		'TWD' => {
 			symbol => 'NT$',
 			display_name => {
-				'default' => q(דולר טייוואני חדש),
+				'currency' => q(דולר טייוואני חדש),
 				'many' => q(דולר טאייוני חדש),
 				'one' => q(דולר טאייוני חדש),
 				'other' => q(דולר טאייוני חדש),
@@ -3493,28 +3492,28 @@ has 'curriencies' => (
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(שילינג טנזני),
+				'currency' => q(שילינג טנזני),
 			},
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(גריבנה אוקראיני),
+				'currency' => q(גריבנה אוקראיני),
 			},
 		},
 		'UGS' => {
 			display_name => {
-				'default' => q(שילינג אוגנדי (1966 – 1987)),
+				'currency' => q(שילינג אוגנדי \(1966 – 1987\)),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(שילינג אוגנדי),
+				'currency' => q(שילינג אוגנדי),
 			},
 		},
 		'USD' => {
 			symbol => 'US$',
 			display_name => {
-				'default' => q(דולר אמריקאי),
+				'currency' => q(דולר אמריקאי),
 				'many' => q(דולר אמריקאי),
 				'one' => q(דולר אמריקאי),
 				'other' => q(דולר אמריקאי),
@@ -3523,162 +3522,162 @@ has 'curriencies' => (
 		},
 		'USN' => {
 			display_name => {
-				'default' => q(דולר אמריקאי (היום הבא)),
+				'currency' => q(דולר אמריקאי \(היום הבא\)),
 			},
 		},
 		'USS' => {
 			display_name => {
-				'default' => q(דולר אמריקאי (היום הזה)),
+				'currency' => q(דולר אמריקאי \(היום הזה\)),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(פזו אורוגוואי),
+				'currency' => q(פזו אורוגוואי),
 			},
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(סום אוזבקי),
+				'currency' => q(סום אוזבקי),
 			},
 		},
 		'VEB' => {
 			display_name => {
-				'default' => q(בוליבר ונצואלי (1871–2008)),
+				'currency' => q(בוליבר ונצואלי \(1871–2008\)),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(בוליבר ונצואלי),
+				'currency' => q(בוליבר ונצואלי),
 			},
 		},
 		'VND' => {
 			symbol => '₫',
 			display_name => {
-				'default' => q(דונג וייטנאמי),
+				'currency' => q(דונג וייטנאמי),
 			},
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(ואטו של ונואטו),
+				'currency' => q(ואטו של ונואטו),
 			},
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(טאלה סמואי),
+				'currency' => q(טאלה סמואי),
 			},
 		},
 		'XAF' => {
 			symbol => 'FCFA',
 			display_name => {
-				'default' => q(פרנק CFA BEAC),
+				'currency' => q(פרנק CFA BEAC),
 			},
 		},
 		'XAG' => {
 			display_name => {
-				'default' => q(כסף),
+				'currency' => q(כסף),
 			},
 		},
 		'XAU' => {
 			display_name => {
-				'default' => q(זהב),
+				'currency' => q(זהב),
 			},
 		},
 		'XCD' => {
 			symbol => 'EC$',
 			display_name => {
-				'default' => q(דולר מזרח קריבי),
+				'currency' => q(דולר מזרח קריבי),
 			},
 		},
 		'XDR' => {
 			display_name => {
-				'default' => q(זכויות משיכה מיוחדות),
+				'currency' => q(זכויות משיכה מיוחדות),
 			},
 		},
 		'XFO' => {
 			display_name => {
-				'default' => q(פרנק זהב),
+				'currency' => q(פרנק זהב),
 			},
 		},
 		'XOF' => {
 			symbol => 'CFA',
 			display_name => {
-				'default' => q(פרנק CFA BCEAO),
+				'currency' => q(פרנק CFA BCEAO),
 			},
 		},
 		'XPD' => {
 			display_name => {
-				'default' => q(פלדיום),
+				'currency' => q(פלדיום),
 			},
 		},
 		'XPF' => {
 			symbol => 'CFPF',
 			display_name => {
-				'default' => q(פרנק CFP),
+				'currency' => q(פרנק CFP),
 			},
 		},
 		'XPT' => {
 			display_name => {
-				'default' => q(פלטינה),
+				'currency' => q(פלטינה),
 			},
 		},
 		'XTS' => {
 			display_name => {
-				'default' => q(סימון למטרות בדיקה),
+				'currency' => q(סימון למטרות בדיקה),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(מטבע שאינו ידוע),
+				'currency' => q(מטבע שאינו ידוע),
 			},
 		},
 		'YDD' => {
 			display_name => {
-				'default' => q(דינר תימני),
+				'currency' => q(דינר תימני),
 			},
 		},
 		'YER' => {
 			display_name => {
-				'default' => q(ריאל תימני),
+				'currency' => q(ריאל תימני),
 			},
 		},
 		'YUD' => {
 			display_name => {
-				'default' => q(דינר יגוסלבי חדש),
+				'currency' => q(דינר יגוסלבי חדש),
 			},
 		},
 		'YUM' => {
 			display_name => {
-				'default' => q(דינר יגוסלבי),
+				'currency' => q(דינר יגוסלבי),
 			},
 		},
 		'ZAL' => {
 			display_name => {
-				'default' => q(ראנד דרום אפריקאי (כספי)),
+				'currency' => q(ראנד דרום אפריקאי \(כספי\)),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(ראנד דרום אפריקאי),
+				'currency' => q(ראנד דרום אפריקאי),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(קוואצ׳ה זמבית (1968–2012)),
+				'currency' => q(קוואצ׳ה זמבית \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(קוואצ׳ה זמבית),
+				'currency' => q(קוואצ׳ה זמבית),
 			},
 		},
 		'ZRN' => {
 			display_name => {
-				'default' => q(זאיר חדש),
+				'currency' => q(זאיר חדש),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(דולר זימבבואי),
+				'currency' => q(דולר זימבבואי),
 			},
 		},
 	} },
@@ -4167,8 +4166,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{לפנה״צ},
 					'pm' => q{אחה״צ},
+					'am' => q{לפנה״צ},
 				},
 			},
 		},
@@ -4295,33 +4294,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'islamic' => {
-			Ed => q{E ה-d},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E, d בMMM y G},
-			GyMMMd => q{d בMMM y G},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			MEd => q{E, d/M},
-			MMMEd => q{E, d בMMM},
-			MMMd => q{d בMMM},
-			Md => q{d/M},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			y => q{y G},
-			yyyy => q{y G},
-			yyyyM => q{M/y},
-			yyyyMEd => q{E, d.M.y},
-			yyyyMMM => q{MMM y},
-			yyyyMMMEd => q{E, d בMMM y},
-			yyyyMMMd => q{d בMMM y},
-			yyyyMd => q{d.M.y G},
-			yyyyQQQ => q{QQQ y},
-			yyyyQQQQ => q{QQQQ y},
-		},
 		'gregorian' => {
 			EHm => q{E H:mm},
 			EHms => q{E H:mm:ss},
@@ -4358,33 +4330,6 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{y QQQ},
 			yQQQQ => q{y QQQQ},
 		},
-		'hebrew' => {
-			Ed => q{E ה-d},
-			Gy => q{y G},
-			GyMMM => q{MMMM y G},
-			GyMMMEd => q{E, d MMMM y G},
-			GyMMMd => q{d MMMM y G},
-			M => q{MMMM},
-			MEd => q{E, d בMMMM},
-			MMM => q{MMMM},
-			MMMEd => q{E, d בMMMM},
-			MMMMEd => q{E, d בMMMM},
-			MMMMd => q{d בMMMM},
-			MMMd => q{d בMMMM},
-			Md => q{d בMMMM},
-			mmss => q{mm:ss},
-			y => q{y},
-			yyyy => q{y},
-			yyyyM => q{MMMM y},
-			yyyyMEd => q{E, d בMMMM y},
-			yyyyMMM => q{MMMM y},
-			yyyyMMMEd => q{E, d בMMMM y},
-			yyyyMMMM => q{MMMM y},
-			yyyyMMMd => q{d בMMMM y},
-			yyyyMd => q{d בMMMM y},
-			yyyyQQQ => q{QQQ y},
-			yyyyQQQQ => q{QQQQ y},
-		},
 		'generic' => {
 			Ed => q{E ה-d},
 			Gy => q{y G},
@@ -4416,6 +4361,60 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{d.M.y G},
 			yyyyQQQ => q{G y QQQ},
 			yyyyQQQQ => q{G y QQQQ},
+		},
+		'hebrew' => {
+			Ed => q{E ה-d},
+			Gy => q{y G},
+			GyMMM => q{MMMM y G},
+			GyMMMEd => q{E, d MMMM y G},
+			GyMMMd => q{d MMMM y G},
+			M => q{MMMM},
+			MEd => q{E, d בMMMM},
+			MMM => q{MMMM},
+			MMMEd => q{E, d בMMMM},
+			MMMMEd => q{E, d בMMMM},
+			MMMMd => q{d בMMMM},
+			MMMd => q{d בMMMM},
+			Md => q{d בMMMM},
+			mmss => q{mm:ss},
+			y => q{y},
+			yyyy => q{y},
+			yyyyM => q{MMMM y},
+			yyyyMEd => q{E, d בMMMM y},
+			yyyyMMM => q{MMMM y},
+			yyyyMMMEd => q{E, d בMMMM y},
+			yyyyMMMM => q{MMMM y},
+			yyyyMMMd => q{d בMMMM y},
+			yyyyMd => q{d בMMMM y},
+			yyyyQQQ => q{QQQ y},
+			yyyyQQQQ => q{QQQQ y},
+		},
+		'islamic' => {
+			Ed => q{E ה-d},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E, d בMMM y G},
+			GyMMMd => q{d בMMM y G},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			MEd => q{E, d/M},
+			MMMEd => q{E, d בMMM},
+			MMMd => q{d בMMM},
+			Md => q{d/M},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			y => q{y G},
+			yyyy => q{y G},
+			yyyyM => q{M/y},
+			yyyyMEd => q{E, d.M.y},
+			yyyyMMM => q{MMM y},
+			yyyyMMMEd => q{E, d בMMM y},
+			yyyyMMMd => q{d בMMM y},
+			yyyyMd => q{d.M.y G},
+			yyyyQQQ => q{QQQ y},
+			yyyyQQQQ => q{QQQQ y},
 		},
 	} },
 );
@@ -4534,78 +4533,6 @@ has 'datetime_formats_interval' => (
 				y => q{d.M.y – d.M.y},
 			},
 		},
-		'hebrew' => {
-			MEd => {
-				M => q{E d בMMMM – E d בMMMM},
-				d => q{E d בMMMM – E d בMMMM},
-			},
-			MMM => {
-				M => q{MMMM–MMMM},
-			},
-			MMMEd => {
-				M => q{E d בMMMM – E d בMMMM},
-				d => q{E d בMMMM – E d בMMMM},
-			},
-			MMMd => {
-				M => q{d בMMMM – d בMMMM},
-				d => q{d–d בMMMM},
-			},
-			Md => {
-				M => q{d בMMMM – d בMMMM},
-				d => q{d בMMMM – d בMMMM},
-			},
-			fallback => '{0} – {1}',
-			h => {
-				a => q{H – H},
-				h => q{H–H},
-			},
-			hm => {
-				a => q{H:mm – H:mm},
-				h => q{H:mm–H:mm},
-				m => q{H:mm–H:mm},
-			},
-			hmv => {
-				a => q{H:mm – H:mm v},
-				h => q{H:mm–H:mm v},
-				m => q{H:mm–H:mm v},
-			},
-			hv => {
-				a => q{H – H v},
-				h => q{H–H v},
-			},
-			yM => {
-				M => q{MMMM y – MMMM y},
-				y => q{MMMM y – MMMM y},
-			},
-			yMEd => {
-				M => q{E d בMMMM y – E d בMMMM y},
-				d => q{E d בMMMM y – E d בMMMM y},
-				y => q{E d בMMMM y – E d בMMMM y},
-			},
-			yMMM => {
-				M => q{MMMM–MMMM y},
-				y => q{MMMM y – MMMM y},
-			},
-			yMMMEd => {
-				M => q{E d בMMMM – E d בMMMM y},
-				d => q{E d בMMMM – E d בMMMM y},
-				y => q{E d בMMMM y – E d בMMMM y},
-			},
-			yMMMM => {
-				M => q{MMMM–MMMM y},
-				y => q{MMMM y – MMMM y},
-			},
-			yMMMd => {
-				M => q{d בMMMM – d בMMMM y},
-				d => q{d–d בMMMM y},
-				y => q{d בMMMM y – d בMMMM y},
-			},
-			yMd => {
-				M => q{d בMMMM y – d בMMMM y},
-				d => q{d בMMMM y – d בMMMM y},
-				y => q{d בMMMM y – d בMMMM y},
-			},
-		},
 		'generic' => {
 			H => {
 				H => q{HH–HH},
@@ -4702,6 +4629,78 @@ has 'datetime_formats_interval' => (
 				M => q{dd/MM/y – dd/MM/y},
 				d => q{dd/MM/y – dd/MM/y},
 				y => q{dd/MM/y – dd/MM/y},
+			},
+		},
+		'hebrew' => {
+			MEd => {
+				M => q{E d בMMMM – E d בMMMM},
+				d => q{E d בMMMM – E d בMMMM},
+			},
+			MMM => {
+				M => q{MMMM–MMMM},
+			},
+			MMMEd => {
+				M => q{E d בMMMM – E d בMMMM},
+				d => q{E d בMMMM – E d בMMMM},
+			},
+			MMMd => {
+				M => q{d בMMMM – d בMMMM},
+				d => q{d–d בMMMM},
+			},
+			Md => {
+				M => q{d בMMMM – d בMMMM},
+				d => q{d בMMMM – d בMMMM},
+			},
+			fallback => '{0} – {1}',
+			h => {
+				a => q{H – H},
+				h => q{H–H},
+			},
+			hm => {
+				a => q{H:mm – H:mm},
+				h => q{H:mm–H:mm},
+				m => q{H:mm–H:mm},
+			},
+			hmv => {
+				a => q{H:mm – H:mm v},
+				h => q{H:mm–H:mm v},
+				m => q{H:mm–H:mm v},
+			},
+			hv => {
+				a => q{H – H v},
+				h => q{H–H v},
+			},
+			yM => {
+				M => q{MMMM y – MMMM y},
+				y => q{MMMM y – MMMM y},
+			},
+			yMEd => {
+				M => q{E d בMMMM y – E d בMMMM y},
+				d => q{E d בMMMM y – E d בMMMM y},
+				y => q{E d בMMMM y – E d בMMMM y},
+			},
+			yMMM => {
+				M => q{MMMM–MMMM y},
+				y => q{MMMM y – MMMM y},
+			},
+			yMMMEd => {
+				M => q{E d בMMMM – E d בMMMM y},
+				d => q{E d בMMMM – E d בMMMM y},
+				y => q{E d בMMMM y – E d בMMMM y},
+			},
+			yMMMM => {
+				M => q{MMMM–MMMM y},
+				y => q{MMMM y – MMMM y},
+			},
+			yMMMd => {
+				M => q{d בMMMM – d בMMMM y},
+				d => q{d–d בMMMM y},
+				y => q{d בMMMM y – d בMMMM y},
+			},
+			yMd => {
+				M => q{d בMMMM y – d בMMMM y},
+				d => q{d בMMMM y – d בMMMM y},
+				y => q{d בMMMM y – d בMMMM y},
 			},
 		},
 	} },

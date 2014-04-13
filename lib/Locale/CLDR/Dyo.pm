@@ -1,6 +1,6 @@
-package Locale::CLDR::Dyo;
+package Locale::CLDR::Dyo v0.0.4;
 # This file auto generated from Data\common\main\dyo.xml
-#	on Mon 31 Mar 12:04:34 am GMT
+#	on Sun 13 Apr 10:01:11 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -315,147 +315,147 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AOA' => {
 			display_name => {
-				'default' => q(kwanza yati Angola),
+				'currency' => q(kwanza yati Angola),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(dolaar yati Ostraalia),
+				'currency' => q(dolaar yati Ostraalia),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(dinaar yati Bahrayn),
+				'currency' => q(dinaar yati Bahrayn),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(fraaŋ yati Burundi),
+				'currency' => q(fraaŋ yati Burundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(pula yati Boswana),
+				'currency' => q(pula yati Boswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(dolaar yati Kanada),
+				'currency' => q(dolaar yati Kanada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(fraaŋ yati Kongo),
+				'currency' => q(fraaŋ yati Kongo),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(yuan yati Siin),
+				'currency' => q(yuan yati Siin),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(eskuudo yati Kap Ver),
+				'currency' => q(eskuudo yati Kap Ver),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(fraaŋ yati Jibuti),
+				'currency' => q(fraaŋ yati Jibuti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(dinaar yati Alseri),
+				'currency' => q(dinaar yati Alseri),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(liiverey yati Esípt),
+				'currency' => q(liiverey yati Esípt),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(nafka yati Eritree),
+				'currency' => q(nafka yati Eritree),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(birr yati Ecoopi),
+				'currency' => q(birr yati Ecoopi),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(euro),
+				'currency' => q(euro),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(cedi yati Gaana),
+				'currency' => q(cedi yati Gaana),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(dalasi yati Gambi),
+				'currency' => q(dalasi yati Gambi),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(sili yati Giné),
+				'currency' => q(sili yati Giné),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(rupii yati End),
+				'currency' => q(rupii yati End),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(yen yati Sapoŋ),
+				'currency' => q(yen yati Sapoŋ),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(silliŋ yati Keniya),
+				'currency' => q(silliŋ yati Keniya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(fraaŋ yati Komor),
+				'currency' => q(fraaŋ yati Komor),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(dolaar yati Liberia),
+				'currency' => q(dolaar yati Liberia),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(dinaar yati Libia),
+				'currency' => q(dinaar yati Libia),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(ariari yati Madagaskaar),
+				'currency' => q(ariari yati Madagaskaar),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(ugiiya yati Mooritanii),
+				'currency' => q(ugiiya yati Mooritanii),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(kwacha yati Malawi),
+				'currency' => q(kwacha yati Malawi),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(seefa BEAC),
+				'currency' => q(seefa BEAC),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(seefa yati BCEAO),
+				'currency' => q(seefa yati BCEAO),
 			},
 		},
 	} },
@@ -647,7 +647,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -671,7 +671,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -714,3 +714,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

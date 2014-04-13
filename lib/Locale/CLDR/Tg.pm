@@ -1,6 +1,6 @@
-package Locale::CLDR::Tg;
+package Locale::CLDR::Tg v0.0.4;
 # This file auto generated from Data\common\main\tg.xml
-#	on Mon 31 Mar  2:10:43 am GMT
+#	on Sun 13 Apr 12:11:37 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -158,3 +158,212 @@ has 'alternate_quote_end' => (
 	default		=> qq{„},
 );
 
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'TJS' => {
+			symbol => 'сом',
+			display_name => {
+				'currency' => q(Сомонӣ),
+			},
+		},
+	} },
+);
+
+
+has 'calendar_months' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'Янв',
+							'Фев',
+							'Мар',
+							'Апр',
+							'Май',
+							'Июн',
+							'Июл',
+							'Авг',
+							'Сен',
+							'Окт',
+							'Ноя',
+							'Дек'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'Январ',
+							'Феврал',
+							'Март',
+							'Апрел',
+							'Май',
+							'Июн',
+							'Июл',
+							'Август',
+							'Сентябр',
+							'Октябр',
+							'Ноябр',
+							'Декабр'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_days' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						mon => 'Дшб',
+						tue => 'Сшб',
+						wed => 'Чшб',
+						thu => 'Пшб',
+						fri => 'Ҷмъ',
+						sat => 'Шнб',
+						sun => 'Яшб'
+					},
+					wide => {
+						mon => 'Душанбе',
+						tue => 'Сешанбе',
+						wed => 'Чоршанбе',
+						thu => 'Панҷшанбе',
+						fri => 'Ҷумъа',
+						sat => 'Шанбе',
+						sun => 'Якшанбе'
+					},
+				},
+			},
+	} },
+);
+
+has 'day_periods' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			'format' => {
+				'wide' => {
+					'pm' => q{па. чо.},
+					'am' => q{пе. чо.},
+				},
+			},
+		},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			abbreviated => {
+				'0' => 'ПеМ',
+				'1' => 'ПаМ'
+			},
+			wide => {
+				'0' => 'Пеш аз милод',
+				'1' => 'ПаМ'
+			},
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			'full' => q{EEEE, G y MMMM dd},
+			'long' => q{G y MMMM d},
+			'medium' => q{G y MMM d},
+			'short' => q{GGGGG yy/MM/dd},
+		},
+		'gregorian' => {
+			'full' => q{EEEE, y MMMM dd},
+			'long' => q{y MMMM d},
+			'medium' => q{y MMM d},
+			'short' => q{yy/MM/dd},
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			'full' => q{HH:mm:ss zzzz},
+			'long' => q{HH:mm:ss z},
+			'medium' => q{HH:mm:ss},
+			'short' => q{HH:mm},
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

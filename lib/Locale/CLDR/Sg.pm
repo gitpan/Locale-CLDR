@@ -1,6 +1,6 @@
-package Locale::CLDR::Sg;
+package Locale::CLDR::Sg v0.0.4;
 # This file auto generated from Data\common\main\sg.xml
-#	on Mon 31 Mar  1:50:53 am GMT
+#	on Sun 13 Apr 11:51:18 am GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use v5.18;
@@ -411,277 +411,277 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(dirâm tî âEmirâti tî Arâbo Ôko),
+				'currency' => q(dirâm tî âEmirâti tî Arâbo Ôko),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(kwânza tî Angoläa),
+				'currency' => q(kwânza tî Angoläa),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(dolära tî Ostralïi),
+				'currency' => q(dolära tî Ostralïi),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(dolùara tî Bahrâina),
+				'currency' => q(dolùara tî Bahrâina),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(farânga tî Burundïi),
+				'currency' => q(farânga tî Burundïi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(pûla tî Botswana),
+				'currency' => q(pûla tî Botswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(dolära tî kanadäa),
+				'currency' => q(dolära tî kanadäa),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(farânga tî Kongöo),
+				'currency' => q(farânga tî Kongöo),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(farânga tî Sûîsi),
+				'currency' => q(farânga tî Sûîsi),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(yuan renminbi tî Shîni),
+				'currency' => q(yuan renminbi tî Shîni),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(eskûêdo tî Kâpo-Vêre),
+				'currency' => q(eskûêdo tî Kâpo-Vêre),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(farânga tî Dibutïi),
+				'currency' => q(farânga tî Dibutïi),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(dinäri tî Alzerïi),
+				'currency' => q(dinäri tî Alzerïi),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(pôndo tî Kâmitâ),
+				'currency' => q(pôndo tî Kâmitâ),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(nakafa tî Eritrëe),
+				'currency' => q(nakafa tî Eritrëe),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(bir tî Etiopïi),
+				'currency' => q(bir tî Etiopïi),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(zoröo),
+				'currency' => q(zoröo),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(pôndo tî Anglëe),
+				'currency' => q(pôndo tî Anglëe),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(sêdi tî Ganäa),
+				'currency' => q(sêdi tî Ganäa),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(dalasi tî gambïi),
+				'currency' => q(dalasi tî gambïi),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(sili tî Ginëe),
+				'currency' => q(sili tî Ginëe),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(rupïi tî Ênnde),
+				'currency' => q(rupïi tî Ênnde),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(yêni tî Zapön),
+				'currency' => q(yêni tî Zapön),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(shilîngi tî Kenyäa),
+				'currency' => q(shilîngi tî Kenyäa),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(farânga tî Kömôro),
+				'currency' => q(farânga tî Kömôro),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(dolära tî Liberïa),
+				'currency' => q(dolära tî Liberïa),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(loti tî Lesôtho),
+				'currency' => q(loti tî Lesôtho),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(dinäar tî Libïi),
+				'currency' => q(dinäar tî Libïi),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(dirâm tî Marôko),
+				'currency' => q(dirâm tî Marôko),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(ariâri tî Madagasikära),
+				'currency' => q(ariâri tî Madagasikära),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(ugîya tî Moritanïi),
+				'currency' => q(ugîya tî Moritanïi),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(rupïi tî Mörîsi),
+				'currency' => q(rupïi tî Mörîsi),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(kwâtia tî Malawïi),
+				'currency' => q(kwâtia tî Malawïi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(metikala tî Mozambîka),
+				'currency' => q(metikala tî Mozambîka),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(dolära tî Namibïi),
+				'currency' => q(dolära tî Namibïi),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(nâîra tî Nizerïa),
+				'currency' => q(nâîra tî Nizerïa),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(farânga tî Ruandäa),
+				'currency' => q(farânga tî Ruandäa),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(riâli tî Saûdi Arabïi),
+				'currency' => q(riâli tî Saûdi Arabïi),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(rupïi tî Sëyshêle),
+				'currency' => q(rupïi tî Sëyshêle),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(pôndo tî Sudäan),
+				'currency' => q(pôndo tî Sudäan),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(pôndo tî Zûâ Sênt-Helêna),
+				'currency' => q(pôndo tî Zûâ Sênt-Helêna),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(leône tî Sierâ-Leône),
+				'currency' => q(leône tî Sierâ-Leône),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(shilîngi tî Somalïi),
+				'currency' => q(shilîngi tî Somalïi),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(dôbra tî Sâô Tomë na Prinsîpe),
+				'currency' => q(dôbra tî Sâô Tomë na Prinsîpe),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(lilangùeni tî Swazïlânde),
+				'currency' => q(lilangùeni tî Swazïlânde),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(dinära tî Tunizïi),
+				'currency' => q(dinära tî Tunizïi),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(shilîngi tî Tanzanïi),
+				'currency' => q(shilîngi tî Tanzanïi),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(shilîngi tî Ugandäa),
+				'currency' => q(shilîngi tî Ugandäa),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(dol$ara ttî äLetäa-Ôko tî Amerîka),
+				'currency' => q(dol$ara ttî äLetäa-Ôko tî Amerîka),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(farânga CFA (BEAC)),
+				'currency' => q(farânga CFA \(BEAC\)),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(farânga CFA (BCEAO)),
+				'currency' => q(farânga CFA \(BCEAO\)),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(rânde tî Mbongo-Afrîka),
+				'currency' => q(rânde tî Mbongo-Afrîka),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(kwâtia tî Zambïi (1968–2012)),
+				'currency' => q(kwâtia tî Zambïi \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(kwâtia tî Zambïi),
+				'currency' => q(kwâtia tî Zambïi),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(dolära tî Zimbäbwe),
+				'currency' => q(dolära tî Zimbäbwe),
 			},
 		},
 	} },
@@ -830,8 +830,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{LK},
 					'am' => q{ND},
+					'pm' => q{LK},
 				},
 			},
 		},
@@ -911,7 +911,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			M => q{M},
 			MMM => q{MMM},
 			MMMEd => q{E d MMM},
@@ -931,7 +931,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			M => q{M},
 			MMM => q{MMM},
 			MMMEd => q{E d MMM},
@@ -970,3 +970,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

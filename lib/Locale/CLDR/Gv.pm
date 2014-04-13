@@ -1,6 +1,6 @@
-package Locale::CLDR::Gv;
+package Locale::CLDR::Gv v0.0.4;
 # This file auto generated from Data\common\main\gv.xml
-#	on Mon 31 Mar 12:32:37 am GMT
+#	on Sun 13 Apr 10:30:52 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -54,3 +54,244 @@ has 'characters' => (
 	},
 );
 
+has 'number_currency_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'pattern' => {
+				'default' => {
+					'standard' => {
+						'negative' => '¤#,##0.00',
+						'positive' => '¤#,##0.00',
+					},
+				},
+			},
+		},
+} },
+);
+
+has 'calendar_months' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'J-guer',
+							'T-arree',
+							'Mayrnt',
+							'Avrril',
+							'Boaldyn',
+							'M-souree',
+							'J-souree',
+							'Luanistyn',
+							'M-fouyir',
+							'J-fouyir',
+							'M.Houney',
+							'M.Nollick'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'Jerrey-geuree',
+							'Toshiaght-arree',
+							'Mayrnt',
+							'Averil',
+							'Boaldyn',
+							'Mean-souree',
+							'Jerrey-souree',
+							'Luanistyn',
+							'Mean-fouyir',
+							'Jerrey-fouyir',
+							'Mee Houney',
+							'Mee ny Nollick'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_days' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						mon => 'Jel',
+						tue => 'Jem',
+						wed => 'Jerc',
+						thu => 'Jerd',
+						fri => 'Jeh',
+						sat => 'Jes',
+						sun => 'Jed'
+					},
+					wide => {
+						mon => 'Jelhein',
+						tue => 'Jemayrt',
+						wed => 'Jercean',
+						thu => 'Jerdein',
+						fri => 'Jeheiney',
+						sat => 'Jesarn',
+						sun => 'Jedoonee'
+					},
+				},
+			},
+	} },
+);
+
+has 'day_periods' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			'format' => {
+				'wide' => {
+					'am' => q{a.m.},
+					'pm' => q{p.m.},
+				},
+			},
+		},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			abbreviated => {
+				'0' => 'RC',
+				'1' => 'AD'
+			},
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			'full' => q{EEEE dd MMMM y G},
+			'long' => q{dd MMMM y G},
+			'medium' => q{MMM dd, y G},
+			'short' => q{dd/MM/yy GGGGG},
+		},
+		'gregorian' => {
+			'full' => q{EEEE dd MMMM y},
+			'long' => q{dd MMMM y},
+			'medium' => q{MMM dd, y},
+			'short' => q{dd/MM/yy},
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			'full' => q{HH:mm:ss zzzz},
+			'long' => q{HH:mm:ss z},
+			'medium' => q{HH:mm:ss},
+			'short' => q{HH:mm},
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'time_zone_names' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default	=> sub { {
+		'Europe_Central' => {
+			short => {
+				'daylight' => q(CEST),
+				'generic' => q(CET),
+				'standard' => q(CET),
+			},
+		},
+		'Europe_Eastern' => {
+			short => {
+				'daylight' => q(EEST),
+				'generic' => q(EET),
+				'standard' => q(EET),
+			},
+		},
+		'Europe_Western' => {
+			short => {
+				'daylight' => q(WEST),
+				'generic' => q(WET),
+				'standard' => q(WET),
+			},
+		},
+		'GMT' => {
+			short => {
+				'standard' => q(GMT),
+			},
+		},
+	 } }
+);
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

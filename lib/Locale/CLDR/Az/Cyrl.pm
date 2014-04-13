@@ -1,6 +1,6 @@
-package Locale::CLDR::Az::Cyrl;
+package Locale::CLDR::Az::Cyrl v0.0.4;
 # This file auto generated from Data\common\main\az_Cyrl.xml
-#	on Sun 30 Mar 11:42:57 pm GMT
+#	on Sun 13 Apr  9:38:56 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -100,3 +100,236 @@ has 'alternate_quote_end' => (
 	default		=> qq{›},
 );
 
+has 'number_symbols' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'decimal' => q(,),
+			'exponential' => q(E),
+			'group' => q(.),
+			'infinity' => q(∞),
+			'list' => q(;),
+			'minusSign' => q(-),
+			'nan' => q(NaN),
+			'perMille' => q(‰),
+			'percentSign' => q(%),
+			'plusSign' => q(+),
+			'superscriptingExponent' => q(),
+		},
+	} }
+);
+
+has 'number_currency_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'pattern' => {
+				'default' => {
+					'standard' => {
+						'negative' => '¤ #,##0.00',
+						'positive' => '¤ #,##0.00',
+					},
+				},
+			},
+		},
+} },
+);
+
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'AZN' => {
+			symbol => 'ман.',
+			display_name => {
+				'currency' => q(манат),
+			},
+		},
+	} },
+);
+
+
+has 'calendar_months' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					wide => {
+						nonleap => [
+							'јанвар',
+							'феврал',
+							'март',
+							'апрел',
+							'май',
+							'ијун',
+							'ијул',
+							'август',
+							'сентјабр',
+							'октјабр',
+							'нојабр',
+							'декабр'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_days' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					wide => {
+						mon => 'базар ертәси',
+						tue => 'чәршәнбә ахшамы',
+						wed => 'чәршәнбә',
+						thu => 'ҹүмә ахшамы',
+						fri => 'ҹүмә',
+						sat => 'шәнбә',
+						sun => 'базар'
+					},
+				},
+				'stand-alone' => {
+					narrow => {
+						mon => '1',
+						tue => '2',
+						wed => '3',
+						thu => '4',
+						fri => '5',
+						sat => '6',
+						sun => '7'
+					},
+				},
+			},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			'full' => q{EEEE, d, MMMM, y G},
+			'long' => q{d MMMM, y G},
+			'medium' => q{d MMM, y G},
+			'short' => q{dd.MM.y GGGGG},
+		},
+		'gregorian' => {
+			'full' => q{EEEE, d, MMMM, y},
+			'long' => q{d MMMM, y},
+			'medium' => q{d MMM, y},
+			'short' => q{dd.MM.yy},
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			'full' => q{HH:mm:ss zzzz},
+			'long' => q{HH:mm:ss z},
+			'medium' => q{HH:mm:ss},
+			'short' => q{HH:mm},
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			MEd => q{E, dd.MM},
+			MMM => q{LLL},
+			MMMEd => q{E, d, MMM},
+			MMMd => q{d MMM},
+			Md => q{dd.MM},
+			yM => q{MM.y},
+			yMEd => q{E, dd.MM.y},
+			yMMM => q{MMM, y},
+			yMMMEd => q{E, d, MMM, y},
+			yMMMd => q{d MMM, y},
+			yMd => q{dd.MM.y},
+		},
+		'generic' => {
+			MEd => q{E, dd.MM},
+			MMM => q{LLL},
+			MMMEd => q{E, d, MMM},
+			MMMd => q{d MMM},
+			Md => q{dd.MM},
+			yyyyM => q{MM.y G},
+			yyyyMEd => q{E, dd.MM.y G},
+			yyyyMMM => q{MMM, y G},
+			yyyyMMMEd => q{E, d, MMM, y G},
+			yyyyMMMd => q{d MMM, y G},
+			yyyyMd => q{dd.MM.y G},
+		},
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

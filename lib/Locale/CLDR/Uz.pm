@@ -1,6 +1,6 @@
-package Locale::CLDR::Uz;
+package Locale::CLDR::Uz v0.0.4;
 # This file auto generated from Data\common\main\uz.xml
-#	on Mon 31 Mar  2:22:27 am GMT
+#	on Sun 13 Apr 12:23:41 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -869,7 +869,7 @@ has 'units' => (
 						'other' => q({0} untsiya),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'one' => q({0} pm),
@@ -1058,7 +1058,7 @@ has 'units' => (
 						'other' => q({0} untsiya),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'one' => q({0} pm),
@@ -1247,7 +1247,7 @@ has 'units' => (
 						'other' => q({0} untsiya),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'one' => q({0} pm),
@@ -1296,7 +1296,6 @@ has 'units' => (
 				},
 			} }
 );
-
 
 has 'yesstr' => (
 	is			=> 'ro',
@@ -1570,14 +1569,14 @@ has 'curriencies' => (
 	default		=> sub { {
 		'ANG' => {
 			display_name => {
-				'default' => q(Golland Antil guldeni),
+				'currency' => q(Golland Antil guldeni),
 				'one' => q(Golland Antil guldeni),
 				'other' => q(Golland Antil guldeni),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(Argentina pesosi),
+				'currency' => q(Argentina pesosi),
 				'one' => q(Argentina pesosi),
 				'other' => q(Argentina pesosi),
 			},
@@ -1585,35 +1584,35 @@ has 'curriencies' => (
 		'AUD' => {
 			symbol => 'A$',
 			display_name => {
-				'default' => q(Avstraliya dollari),
+				'currency' => q(Avstraliya dollari),
 				'one' => q(Avstraliya dollari),
 				'other' => q(Avstraliya dollari),
 			},
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(Aruba florini),
+				'currency' => q(Aruba florini),
 				'one' => q(Aruba florini),
 				'other' => q(Aruba florini),
 			},
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(Barbados dollari),
+				'currency' => q(Barbados dollari),
 				'one' => q(Barbados dollari),
 				'other' => q(Barbados dollari),
 			},
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(Bermuda dollari),
+				'currency' => q(Bermuda dollari),
 				'one' => q(Bermuda dollari),
 				'other' => q(Bermuda dollari),
 			},
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(Boliviya bolviani),
+				'currency' => q(Boliviya bolviani),
 				'one' => q(Boliviya bolviani),
 				'other' => q(Boliviya bolviani),
 			},
@@ -1621,21 +1620,21 @@ has 'curriencies' => (
 		'BRL' => {
 			symbol => 'R$',
 			display_name => {
-				'default' => q(Brazil reali),
+				'currency' => q(Brazil reali),
 				'one' => q(Brazil reali),
 				'other' => q(Brazil reali),
 			},
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(Bagama dollari),
+				'currency' => q(Bagama dollari),
 				'one' => q(Bagama dollari),
 				'other' => q(Bagama dollari),
 			},
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(Beliz dollari),
+				'currency' => q(Beliz dollari),
 				'one' => q(Beliz dollari),
 				'other' => q(Beliz dollari),
 			},
@@ -1643,21 +1642,21 @@ has 'curriencies' => (
 		'CAD' => {
 			symbol => 'CA$',
 			display_name => {
-				'default' => q(Kanada dollari),
+				'currency' => q(Kanada dollari),
 				'one' => q(Kanada dollari),
 				'other' => q(Kanada dollari),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Shvetsariya franki),
+				'currency' => q(Shvetsariya franki),
 				'one' => q(Shvetsariya franki),
 				'other' => q(Shvetsariya franki),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(Chili pesosi),
+				'currency' => q(Chili pesosi),
 				'one' => q(Chili pesosi),
 				'other' => q(Chili pesosi),
 			},
@@ -1665,63 +1664,63 @@ has 'curriencies' => (
 		'CNY' => {
 			symbol => 'CN¥',
 			display_name => {
-				'default' => q(Xitoy yuani),
+				'currency' => q(Xitoy yuani),
 				'one' => q(Xitoy yuani),
 				'other' => q(Xitoy yuani),
 			},
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(Kolumbiya pesosi),
+				'currency' => q(Kolumbiya pesosi),
 				'one' => q(Kolumbiya pesosi),
 				'other' => q(Kolumbiya pesosi),
 			},
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(Kosta-Rika koloni),
+				'currency' => q(Kosta-Rika koloni),
 				'one' => q(Kosta-Rika koloni),
 				'other' => q(Kosta-Rika koloni),
 			},
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(Kuba Ayirboshlash pesosi),
+				'currency' => q(Kuba Ayirboshlash pesosi),
 				'one' => q(Kuba ayirboshlash pesosi),
 				'other' => q(Kuba ayirboshlash pesosi),
 			},
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(Kuba pesosi),
+				'currency' => q(Kuba pesosi),
 				'one' => q(Kuba pesosi),
 				'other' => q(Kuba pesosi),
 			},
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(Daniya kronasi),
+				'currency' => q(Daniya kronasi),
 				'one' => q(Daniya kronasi),
 				'other' => q(Daniya kronasi),
 			},
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(Dominikan pesosi),
+				'currency' => q(Dominikan pesosi),
 				'one' => q(Dominikan pesosi),
 				'other' => q(Dominikan pesosi),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Jazoir dinori),
+				'currency' => q(Jazoir dinori),
 				'one' => q(Jazoir dinori),
 				'other' => q(Jazoir dinori),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Misr funti),
+				'currency' => q(Misr funti),
 				'one' => q(Misr funti),
 				'other' => q(Misr funti),
 			},
@@ -1729,14 +1728,14 @@ has 'curriencies' => (
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(Yevro),
+				'currency' => q(Yevro),
 				'one' => q(Yevro),
 				'other' => q(Yevro),
 			},
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(Folklend oroli funti),
+				'currency' => q(Folklend oroli funti),
 				'one' => q(Folklend oroli funti),
 				'other' => q(Folklend oroli funti),
 			},
@@ -1744,21 +1743,21 @@ has 'curriencies' => (
 		'GBP' => {
 			symbol => '£',
 			display_name => {
-				'default' => q(Ingliz funt sterlingi),
+				'currency' => q(Ingliz funt sterlingi),
 				'one' => q(Ingliz funt sterlingi),
 				'other' => q(Ingliz funt sterlingi),
 			},
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(Gvatemala kvetzali),
+				'currency' => q(Gvatemala kvetzali),
 				'one' => q(Gvatemala kvetzali),
 				'other' => q(Gvatemala kvetzali),
 			},
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(Gayana dollari),
+				'currency' => q(Gayana dollari),
 				'one' => q(Gayana dollari),
 				'other' => q(Gayana dollari),
 			},
@@ -1766,28 +1765,28 @@ has 'curriencies' => (
 		'HKD' => {
 			symbol => 'HK$',
 			display_name => {
-				'default' => q(Gonkong dollari),
+				'currency' => q(Gonkong dollari),
 				'one' => q(Gonkong dollari),
 				'other' => q(Gonkong dollari),
 			},
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(Gonduras lempirasi),
+				'currency' => q(Gonduras lempirasi),
 				'one' => q(Gonduras lempirasi),
 				'other' => q(Gonduras lempirasi),
 			},
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(Gaiti gurdasi),
+				'currency' => q(Gaiti gurdasi),
 				'one' => q(Gaiti gurdasi),
 				'other' => q(Gaiti gurdasi),
 			},
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(Indoneziya rupiyasi),
+				'currency' => q(Indoneziya rupiyasi),
 				'one' => q(Indoneziya rupiyasi),
 				'other' => q(Indoneziya rupiyasi),
 			},
@@ -1798,14 +1797,14 @@ has 'curriencies' => (
 		'INR' => {
 			symbol => '₹',
 			display_name => {
-				'default' => q(Hind rupiyasi),
+				'currency' => q(Hind rupiyasi),
 				'one' => q(Hind rupiyasi),
 				'other' => q(Hind rupiyasi),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(Yamayka dollari),
+				'currency' => q(Yamayka dollari),
 				'one' => q(Yamayka dollari),
 				'other' => q(Yamayka dollari),
 			},
@@ -1813,7 +1812,7 @@ has 'curriencies' => (
 		'JPY' => {
 			symbol => 'JP¥',
 			display_name => {
-				'default' => q(Yapon yenasi),
+				'currency' => q(Yapon yenasi),
 				'one' => q(Yapon yenasi),
 				'other' => q(Yapon yenasi),
 			},
@@ -1821,28 +1820,28 @@ has 'curriencies' => (
 		'KRW' => {
 			symbol => '₩',
 			display_name => {
-				'default' => q(Janubiy Koreya voni),
+				'currency' => q(Janubiy Koreya voni),
 				'one' => q(Janubiy Koreya voni),
 				'other' => q(Janubiy Koreya voni),
 			},
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(Kayman oroli Dollari),
+				'currency' => q(Kayman oroli Dollari),
 				'one' => q(Kayman oroli dollari),
 				'other' => q(Kayman oroli dollari),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Liviya dinori),
+				'currency' => q(Liviya dinori),
 				'one' => q(Liviya dinori),
 				'other' => q(Liviya dinori),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Marokash dirhami),
+				'currency' => q(Marokash dirhami),
 				'one' => q(Marokash dirhami),
 				'other' => q(Marokash dirhami),
 			},
@@ -1850,21 +1849,21 @@ has 'curriencies' => (
 		'MXN' => {
 			symbol => 'MX$',
 			display_name => {
-				'default' => q(Meksika pesosi),
+				'currency' => q(Meksika pesosi),
 				'one' => q(Meksika pesosi),
 				'other' => q(Meksika pesosi),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(Nikaragua kordobasi),
+				'currency' => q(Nikaragua kordobasi),
 				'one' => q(Nikaragua kordobasi),
 				'other' => q(Nikaragua kordobasi),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(Norvegiya kronasi),
+				'currency' => q(Norvegiya kronasi),
 				'one' => q(Norvegiya kronasi),
 				'other' => q(Norvegiya kronasi),
 			},
@@ -1874,56 +1873,56 @@ has 'curriencies' => (
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(Panama balboasi),
+				'currency' => q(Panama balboasi),
 				'one' => q(Panama balboasi),
 				'other' => q(Panama balboasi),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(Peru nuyevo sol),
+				'currency' => q(Peru nuyevo sol),
 				'one' => q(Peru nuyevo sol),
 				'other' => q(Peru nuyevo sol),
 			},
 		},
 		'PLN' => {
 			display_name => {
-				'default' => q(Polsha zlotiyi),
+				'currency' => q(Polsha zlotiyi),
 				'one' => q(Polsha zlotiyi),
 				'other' => q(Polsha zlotiyi),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(Paragvay guarani),
+				'currency' => q(Paragvay guarani),
 				'one' => q(Paragvay guarani),
 				'other' => q(Paragvay guarani),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(Rus rubli),
+				'currency' => q(Rus rubli),
 				'one' => q(Rus rubli),
 				'other' => q(Rus rubli),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Saudiya Arabistoni riyoli),
+				'currency' => q(Saudiya Arabistoni riyoli),
 				'one' => q(Saudiya Arabistoni riyoli),
 				'other' => q(Saudiya Arabistoni riyoli),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(Shvetsiya kronasi),
+				'currency' => q(Shvetsiya kronasi),
 				'one' => q(Shvetsiya kronasi),
 				'other' => q(Shvetsiya kronasi),
 			},
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(Surinam dollari),
+				'currency' => q(Surinam dollari),
 				'one' => q(Surinam dollari),
 				'other' => q(Surinam dollari),
 			},
@@ -1931,21 +1930,21 @@ has 'curriencies' => (
 		'THB' => {
 			symbol => '฿',
 			display_name => {
-				'default' => q(Tayland bahti),
+				'currency' => q(Tayland bahti),
 				'one' => q(Tayland bahti),
 				'other' => q(Tayland bahti),
 			},
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(Turk lirasi),
+				'currency' => q(Turk lirasi),
 				'one' => q(Turk lirasi),
 				'other' => q(Turk lirasi),
 			},
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(Trinidad va Tobago dollari),
+				'currency' => q(Trinidad va Tobago dollari),
 				'one' => q(Trinidad va Tobago dollari),
 				'other' => q(Trinidad va Tobago dollari),
 			},
@@ -1953,7 +1952,7 @@ has 'curriencies' => (
 		'TWD' => {
 			symbol => 'NT$',
 			display_name => {
-				'default' => q(Yangi Tayvan dollari),
+				'currency' => q(Yangi Tayvan dollari),
 				'one' => q(Yangi Tayvan dollari),
 				'other' => q(Yangi Tayvan dollari),
 			},
@@ -1961,14 +1960,14 @@ has 'curriencies' => (
 		'USD' => {
 			symbol => 'US$',
 			display_name => {
-				'default' => q(AQSH dollari),
+				'currency' => q(AQSH dollari),
 				'one' => q(AQSH dollari),
 				'other' => q(AQSH dollari),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(Urugvay pesosi),
+				'currency' => q(Urugvay pesosi),
 				'one' => q(Urugvay pesosi),
 				'other' => q(Urugvay pesosi),
 			},
@@ -1976,14 +1975,14 @@ has 'curriencies' => (
 		'UZS' => {
 			symbol => 'soʻm',
 			display_name => {
-				'default' => q(Oʻzbekiston soʻm),
+				'currency' => q(Oʻzbekiston soʻm),
 				'one' => q(Oʻzbekiston soʻm),
 				'other' => q(Oʻzbekiston soʻm),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(Venesuela bolivari),
+				'currency' => q(Venesuela bolivari),
 				'one' => q(Venesuela bolivari),
 				'other' => q(Venesuela bolivari),
 			},
@@ -1997,7 +1996,7 @@ has 'curriencies' => (
 		'XCD' => {
 			symbol => 'EC$',
 			display_name => {
-				'default' => q(Sharqiy Karib dollari),
+				'currency' => q(Sharqiy Karib dollari),
 				'one' => q(Sharq Karib dollari),
 				'other' => q(Sharq Karib dollari),
 			},
@@ -2010,14 +2009,14 @@ has 'curriencies' => (
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(Noma'lum valyuta),
+				'currency' => q(Noma'lum valyuta),
 				'one' => q(Noma'lum valyuta),
 				'other' => q(Noma'lum valyuta),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Janubiy Afrika randi),
+				'currency' => q(Janubiy Afrika randi),
 				'one' => q(Janubiy Afrika randi),
 				'other' => q(Janubiy Afrika randi),
 			},
@@ -2408,6 +2407,30 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'generic' => {
+			Ed => q{d, E},
+			Gy => q{G y},
+			GyMMM => q{G y MMM},
+			GyMMMEd => q{G y MMM d, E},
+			GyMMMd => q{G y MMM d},
+			M => q{L},
+			MEd => q{MM-dd, E},
+			MMM => q{LLL},
+			MMMEd => q{MMM d, E},
+			MMMd => q{MMM d},
+			Md => q{MM-dd},
+			d => q{d},
+			y => q{G y},
+			yyyy => q{G y},
+			yyyyM => q{GGGGG y-MM},
+			yyyyMEd => q{GGGGG y-MM-dd, E},
+			yyyyMMM => q{G y MMM},
+			yyyyMMMEd => q{G y MMM d, E},
+			yyyyMMMd => q{G y MMM d},
+			yyyyMd => q{GGGGG y-MM-dd},
+			yyyyQQQ => q{G y QQQ},
+			yyyyQQQQ => q{G y QQQQ},
+		},
 		'gregorian' => {
 			EHm => q{E HH:mm},
 			EHms => q{E HH:mm:ss},
@@ -2442,30 +2465,6 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{y QQQ},
 			yQQQQ => q{y QQQQ},
 		},
-		'generic' => {
-			Ed => q{d, E},
-			Gy => q{G y},
-			GyMMM => q{G y MMM},
-			GyMMMEd => q{G y MMM d, E},
-			GyMMMd => q{G y MMM d},
-			M => q{L},
-			MEd => q{MM-dd, E},
-			MMM => q{LLL},
-			MMMEd => q{MMM d, E},
-			MMMd => q{MMM d},
-			Md => q{MM-dd},
-			d => q{d},
-			y => q{G y},
-			yyyy => q{G y},
-			yyyyM => q{GGGGG y-MM},
-			yyyyMEd => q{GGGGG y-MM-dd, E},
-			yyyyMMM => q{G y MMM},
-			yyyyMMMEd => q{G y MMM d, E},
-			yyyyMMMd => q{G y MMM d},
-			yyyyMd => q{GGGGG y-MM-dd},
-			yyyyQQQ => q{G y QQQ},
-			yyyyQQQQ => q{G y QQQQ},
-		},
 	} },
 );
 
@@ -2485,6 +2484,69 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'generic' => {
+			M => {
+				M => q{MM–MM},
+			},
+			MEd => {
+				M => q{MM-dd, E – MM-dd, E},
+				d => q{MM-dd, E – MM-dd, E},
+			},
+			MMM => {
+				M => q{LLL–LLL},
+			},
+			MMMEd => {
+				M => q{MMM d, E – MMM d, E},
+				d => q{MMM d, E – MMM d, E},
+			},
+			MMMd => {
+				M => q{MMM d – MMM d},
+				d => q{MMM d–d},
+			},
+			Md => {
+				M => q{MM-dd – MM-dd},
+				d => q{MM-dd – MM-dd},
+			},
+			d => {
+				d => q{d–d},
+			},
+			fallback => '{0} – {1}',
+			y => {
+				y => q{G y–y},
+			},
+			yM => {
+				M => q{GGGGG y-MM – y-MM},
+				y => q{GGGGG y-MM – y-MM},
+			},
+			yMEd => {
+				M => q{GGGGG y-MM-dd, E – y-MM-dd, E},
+				d => q{GGGGG y-MM-dd, E – y-MM-dd, E},
+				y => q{GGGGG y-MM-dd, E – y-MM-dd, E},
+			},
+			yMMM => {
+				M => q{G y MMM–MMM},
+				y => q{G y MMM – y MMM},
+			},
+			yMMMEd => {
+				M => q{G y MMM d, E – MMM d, E},
+				d => q{G y MMM d, E – MMM d, E},
+				y => q{G y MMM d, E – y MMM d, E},
+			},
+			yMMMM => {
+				M => q{G y MMMM–MMMM},
+				y => q{G y MMMM – y MMMM},
+			},
+			yMMMd => {
+				M => q{G y MMM d – MMM d},
+				d => q{G y MMM d–d},
+				y => q{G y MMM d – y MMM d},
+			},
+			yMd => {
+				M => q{GGGGG y-MM-dd – y-MM-dd},
+				d => q{GGGGG y-MM-dd – y-MM-dd},
+				y => q{GGGGG y-MM-dd – y-MM-dd},
+			},
+		},
 		'gregorian' => {
 			H => {
 				H => q{HH–HH},
@@ -2578,69 +2640,6 @@ has 'datetime_formats_interval' => (
 				M => q{y-MM-dd – y-MM-dd},
 				d => q{y-MM-dd – y-MM-dd},
 				y => q{y-MM-dd – y-MM-dd},
-			},
-		},
-		'generic' => {
-			M => {
-				M => q{MM–MM},
-			},
-			MEd => {
-				M => q{MM-dd, E – MM-dd, E},
-				d => q{MM-dd, E – MM-dd, E},
-			},
-			MMM => {
-				M => q{LLL–LLL},
-			},
-			MMMEd => {
-				M => q{MMM d, E – MMM d, E},
-				d => q{MMM d, E – MMM d, E},
-			},
-			MMMd => {
-				M => q{MMM d – MMM d},
-				d => q{MMM d–d},
-			},
-			Md => {
-				M => q{MM-dd – MM-dd},
-				d => q{MM-dd – MM-dd},
-			},
-			d => {
-				d => q{d–d},
-			},
-			fallback => '{0} – {1}',
-			y => {
-				y => q{G y–y},
-			},
-			yM => {
-				M => q{GGGGG y-MM – y-MM},
-				y => q{GGGGG y-MM – y-MM},
-			},
-			yMEd => {
-				M => q{GGGGG y-MM-dd, E – y-MM-dd, E},
-				d => q{GGGGG y-MM-dd, E – y-MM-dd, E},
-				y => q{GGGGG y-MM-dd, E – y-MM-dd, E},
-			},
-			yMMM => {
-				M => q{G y MMM–MMM},
-				y => q{G y MMM – y MMM},
-			},
-			yMMMEd => {
-				M => q{G y MMM d, E – MMM d, E},
-				d => q{G y MMM d, E – MMM d, E},
-				y => q{G y MMM d, E – y MMM d, E},
-			},
-			yMMMM => {
-				M => q{G y MMMM–MMMM},
-				y => q{G y MMMM – y MMMM},
-			},
-			yMMMd => {
-				M => q{G y MMM d – MMM d},
-				d => q{G y MMM d–d},
-				y => q{G y MMM d – y MMM d},
-			},
-			yMd => {
-				M => q{GGGGG y-MM-dd – y-MM-dd},
-				d => q{GGGGG y-MM-dd – y-MM-dd},
-				y => q{GGGGG y-MM-dd – y-MM-dd},
 			},
 		},
 	} },

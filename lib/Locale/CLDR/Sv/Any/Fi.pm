@@ -1,6 +1,6 @@
-package Locale::CLDR::Sv::Any::Fi;
+package Locale::CLDR::Sv::Any::Fi v0.0.4;
 # This file auto generated from Data\common\main\sv_FI.xml
-#	on Mon 31 Mar  2:05:33 am GMT
+#	on Sun 13 Apr 12:06:18 pm GMT
 # XML file generated 2014-02-26 15:19:38 -0600 (Wed, 26 Feb 2014)
 
 use v5.18;
@@ -186,4 +186,105 @@ has 'units' => (
 			} }
 );
 
+has 'listPatterns' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+				start => q({0}, {1}),
+				middle => q({0}, {1}),
+				end => q({0} och {1}),
+				2 => q({0} och {1}),
+		} }
+);
 
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			wide => {
+				'0' => 'före Kristus',
+				'1' => 'efter Kristus'
+			},
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			'full' => q{EEEE'en' 'den' d:'e' MMMM y},
+			'long' => q{d MMMM y},
+			'medium' => q{d MMM y},
+			'short' => q{dd-MM-y},
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'time_zone_names' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default	=> sub { {
+		hourFormat => q(+H:mm;−H:mm),
+		regionFormat => q(tidszon: {0}),
+		'Etc/Unknown' => {
+			exemplarCity => q#(okänd tidszon)#,
+		},
+	 } }
+);
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

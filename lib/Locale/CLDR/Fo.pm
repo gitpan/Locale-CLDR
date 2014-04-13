@@ -1,6 +1,6 @@
-package Locale::CLDR::Fo;
+package Locale::CLDR::Fo v0.0.4;
 # This file auto generated from Data\common\main\fo.xml
-#	on Mon 31 Mar 12:23:26 am GMT
+#	on Sun 13 Apr 10:21:19 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -998,7 +998,6 @@ has 'units' => (
 			} }
 );
 
-
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -1249,63 +1248,63 @@ has 'curriencies' => (
 		'DKK' => {
 			symbol => 'kr',
 			display_name => {
-				'default' => q(donsk króna),
+				'currency' => q(donsk króna),
 				'one' => q(donsk króna),
 				'other' => q(donska krónur),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(euro),
+				'currency' => q(euro),
 				'one' => q(euro),
 				'other' => q(euro),
 			},
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(íslendsk króna),
+				'currency' => q(íslendsk króna),
 				'one' => q(íslendsk króna),
 				'other' => q(íslendska krónur),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(norsk króna),
+				'currency' => q(norsk króna),
 				'one' => q(norsk króna),
 				'other' => q(norska krónur),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(svensk króna),
+				'currency' => q(svensk króna),
 				'one' => q(svensk króna),
 				'other' => q(svenska krónur),
 			},
 		},
 		'XAG' => {
 			display_name => {
-				'default' => q(unse sølv),
+				'currency' => q(unse sølv),
 				'one' => q(unse sølv),
 				'other' => q(unse sølv),
 			},
 		},
 		'XAU' => {
 			display_name => {
-				'default' => q(unse guld),
+				'currency' => q(unse guld),
 				'one' => q(unse guld),
 				'other' => q(unse guld),
 			},
 		},
 		'XPD' => {
 			display_name => {
-				'default' => q(unse palladium),
+				'currency' => q(unse palladium),
 				'one' => q(unse palladium),
 				'other' => q(unse palladium),
 			},
 		},
 		'XPT' => {
 			display_name => {
-				'default' => q(unse platin),
+				'currency' => q(unse platin),
 				'one' => q(unse platin),
 				'other' => q(unse platin),
 			},
@@ -1504,19 +1503,19 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'abbreviated' => {
-					'pm' => q{s.p.},
-					'am' => q{f.p.},
-				},
 				'wide' => {
 					'am' => q{um fyrrapartur},
 					'pm' => q{um seinnapartur},
 				},
+				'abbreviated' => {
+					'am' => q{f.p.},
+					'pm' => q{s.p.},
+				},
 			},
 			'stand-alone' => {
 				'wide' => {
-					'am' => q{fyrrapartur},
 					'pm' => q{seinnapartur},
+					'am' => q{fyrrapartur},
 				},
 			},
 		},
@@ -1869,3 +1868,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

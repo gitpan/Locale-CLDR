@@ -1,6 +1,6 @@
-package Locale::CLDR::Ln;
+package Locale::CLDR::Ln v0.0.4;
 # This file auto generated from Data\common\main\ln.xml
-#	on Mon 31 Mar  1:08:12 am GMT
+#	on Sun 13 Apr 11:08:10 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -554,435 +554,435 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Dirihamɛ ya Lémila alabo),
+				'currency' => q(Dirihamɛ ya Lémila alabo),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Kwanza ya Angóla),
+				'currency' => q(Kwanza ya Angóla),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(Peso y'Argentina),
+				'currency' => q(Peso y'Argentina),
 				'one' => q(Peso y'Argentina),
 				'other' => q(Peso y'Argentina),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Dolarɛ ya Ositali),
+				'currency' => q(Dolarɛ ya Ositali),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Dinarɛ ya Bahrɛnɛ),
+				'currency' => q(Dinarɛ ya Bahrɛnɛ),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Falánga ya Burundi),
+				'currency' => q(Falánga ya Burundi),
 			},
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(Boliviano),
+				'currency' => q(Boliviano),
 				'one' => q(Boliviano),
 				'other' => q(Boliviano),
 			},
 		},
 		'BRL' => {
 			display_name => {
-				'default' => q(Real ya Brazil),
+				'currency' => q(Real ya Brazil),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Pula ya Botswana),
+				'currency' => q(Pula ya Botswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Dolarɛ ya Kanadá),
+				'currency' => q(Dolarɛ ya Kanadá),
 			},
 		},
 		'CDF' => {
 			symbol => 'FC',
 			display_name => {
-				'default' => q(Falánga ya Kongó),
+				'currency' => q(Falánga ya Kongó),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Falánga ya Swisɛ),
+				'currency' => q(Falánga ya Swisɛ),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(Peso ya Shili),
+				'currency' => q(Peso ya Shili),
 				'one' => q(Peso ya Shili),
 				'other' => q(Peso ya Shili),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Yuanɛ Renminbi ya Sinɛ),
+				'currency' => q(Yuanɛ Renminbi ya Sinɛ),
 			},
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(Peso ya Kolombi),
+				'currency' => q(Peso ya Kolombi),
 				'one' => q(Peso ya Kolombi),
 				'other' => q(Peso ya Kolombi),
 			},
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(Colon ya Kosta Rika),
+				'currency' => q(Colon ya Kosta Rika),
 				'one' => q(Colon ya Kosta Rika),
 				'other' => q(Colon ya Kosta Rika),
 			},
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(Peso ya Kuba),
+				'currency' => q(Peso ya Kuba),
 				'one' => q(Peso ya Kuba),
 				'other' => q(Peso ya Kuba),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Esikudo ya Kapevɛrɛ),
+				'currency' => q(Esikudo ya Kapevɛrɛ),
 			},
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(Motolé Sheki),
+				'currency' => q(Motolé Sheki),
 				'one' => q(Motolé Sheki),
 				'other' => q(Motolé Sheki),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Falánga ya Dzibuti),
+				'currency' => q(Falánga ya Dzibuti),
 			},
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(Motolé ya Danemark),
+				'currency' => q(Motolé ya Danemark),
 				'one' => q(Motolé ya Danemark),
 				'other' => q(Motolé ya Danemark),
 			},
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(Peso Dominikani),
+				'currency' => q(Peso Dominikani),
 				'one' => q(Peso Dominikani),
 				'other' => q(Peso Dominikani),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Dinarɛ ya Alizeri),
+				'currency' => q(Dinarɛ ya Alizeri),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Paunɛ ya Ezípitɛ),
+				'currency' => q(Paunɛ ya Ezípitɛ),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Nakfa ya Elitlɛ),
+				'currency' => q(Nakfa ya Elitlɛ),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Birɛ ya Etsiópi),
+				'currency' => q(Birɛ ya Etsiópi),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Ɛlɔ́),
+				'currency' => q(Ɛlɔ́),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Paunɛ ya Angɛlɛtɛ́lɛ),
+				'currency' => q(Paunɛ ya Angɛlɛtɛ́lɛ),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Sedi ya Gana),
+				'currency' => q(Sedi ya Gana),
 			},
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(Cedi),
+				'currency' => q(Cedi),
 				'one' => q(Cedi),
 				'other' => q(Cedi),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Dalasi ya Gambi),
+				'currency' => q(Dalasi ya Gambi),
 			},
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(Falánga ya Gine),
+				'currency' => q(Falánga ya Gine),
 				'one' => q(Falánga ya Gine),
 				'other' => q(Falánga ya Gine),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Falánga ya Ginɛ),
+				'currency' => q(Falánga ya Ginɛ),
 			},
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(Gurde),
+				'currency' => q(Gurde),
 				'one' => q(Gurde),
 				'other' => q(Gurde),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Rupi ya Índɛ),
+				'currency' => q(Rupi ya Índɛ),
 			},
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(Motolé ya Islandi),
+				'currency' => q(Motolé ya Islandi),
 				'one' => q(Motolé ya Islandi),
 				'other' => q(Motolé ya Islandi),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Yeni ya Zapɔ),
+				'currency' => q(Yeni ya Zapɔ),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Shilingɛ ya Kenya),
+				'currency' => q(Shilingɛ ya Kenya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Falánga ya Komoro),
+				'currency' => q(Falánga ya Komoro),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Dolarɛ ya Liberya),
+				'currency' => q(Dolarɛ ya Liberya),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Loti ya Lesóto),
+				'currency' => q(Loti ya Lesóto),
 			},
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(Litas ya Litwani),
+				'currency' => q(Litas ya Litwani),
 				'one' => q(Litas ya Litwani),
 				'other' => q(Litas ya Litwani),
 			},
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(Lats ya Letoni),
+				'currency' => q(Lats ya Letoni),
 				'one' => q(Lats ya Letoni),
 				'other' => q(Lats ya Letoni),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Dinarɛ ya Libí),
+				'currency' => q(Dinarɛ ya Libí),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Dirihame ya Marokɛ),
+				'currency' => q(Dirihame ya Marokɛ),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Falánga ya Madagasikarɛ),
+				'currency' => q(Falánga ya Madagasikarɛ),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Ugwiya ya Moritani),
+				'currency' => q(Ugwiya ya Moritani),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Rupi ya Morisi),
+				'currency' => q(Rupi ya Morisi),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Kwasha ya Malawi),
+				'currency' => q(Kwasha ya Malawi),
 			},
 		},
 		'MXN' => {
 			display_name => {
-				'default' => q(Peso ya Mexiko),
+				'currency' => q(Peso ya Mexiko),
 				'one' => q(Peso ya Mexiko),
 				'other' => q(Peso ya Mexiko),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Metikali ya Mozambiki),
+				'currency' => q(Metikali ya Mozambiki),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Dolarɛ ya Namibi),
+				'currency' => q(Dolarɛ ya Namibi),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Naira ya Nizerya),
+				'currency' => q(Naira ya Nizerya),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(Motolé ya Norvej),
+				'currency' => q(Motolé ya Norvej),
 				'one' => q(Motolé ya Norvej),
 				'other' => q(Motolé ya Norvej),
 			},
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(Balboa),
+				'currency' => q(Balboa),
 				'one' => q(Balboa),
 				'other' => q(Balboa),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(Sol Sika),
+				'currency' => q(Sol Sika),
 				'one' => q(Sol Sika),
 				'other' => q(Sol Sika),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(Guarani),
+				'currency' => q(Guarani),
 				'one' => q(Guarani),
 				'other' => q(Guarani),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Falánga ya Rwanda),
+				'currency' => q(Falánga ya Rwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Riyalɛ ya Alabi Sawuditɛ),
+				'currency' => q(Riyalɛ ya Alabi Sawuditɛ),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Rupi ya Sɛshɛlɛ),
+				'currency' => q(Rupi ya Sɛshɛlɛ),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Dinarɛ ya Sudá),
+				'currency' => q(Dinarɛ ya Sudá),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(Paunɛ ya Sudá),
+				'currency' => q(Paunɛ ya Sudá),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(Motolé ya Swédi),
+				'currency' => q(Motolé ya Swédi),
 				'one' => q(Motolé ya Swédi),
 				'other' => q(Motolé ya Swédi),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Paunɛ ya Sántu elena),
+				'currency' => q(Paunɛ ya Sántu elena),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Leonɛ),
+				'currency' => q(Leonɛ),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Shilingɛ ya Somali),
+				'currency' => q(Shilingɛ ya Somali),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Dobra ya Sao Tomé mpé Presipe),
+				'currency' => q(Dobra ya Sao Tomé mpé Presipe),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lilangeni),
+				'currency' => q(Lilangeni),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Dinarɛ ya Tinizi),
+				'currency' => q(Dinarɛ ya Tinizi),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Shilingɛ ya Tanzani),
+				'currency' => q(Shilingɛ ya Tanzani),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Shilingɛ ya Uganda),
+				'currency' => q(Shilingɛ ya Uganda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Dolarɛ ya Ameriki),
+				'currency' => q(Dolarɛ ya Ameriki),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Falánga CFA BEAC),
+				'currency' => q(Falánga CFA BEAC),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Falánga CFA BCEAO),
+				'currency' => q(Falánga CFA BCEAO),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Randɛ ya Afríka Súdi),
+				'currency' => q(Randɛ ya Afríka Súdi),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Kwasha ya Zambi (1968–2012)),
+				'currency' => q(Kwasha ya Zambi \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Kwasha ya Zambi),
+				'currency' => q(Kwasha ya Zambi),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Dolarɛ ya Zimbabwɛ),
+				'currency' => q(Dolarɛ ya Zimbabwɛ),
 			},
 		},
 	} },
@@ -1212,7 +1212,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -1236,7 +1236,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},

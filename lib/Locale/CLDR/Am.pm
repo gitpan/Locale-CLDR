@@ -1,6 +1,6 @@
-package Locale::CLDR::Am;
+package Locale::CLDR::Am v0.0.4;
 # This file auto generated from Data\common\main\am.xml
-#	on Sun 30 Mar 11:35:19 pm GMT
+#	on Sun 13 Apr  9:31:21 am GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use v5.18;
@@ -1055,7 +1055,7 @@ has 'units' => (
 						'other' => q({0} አውንስ),
 					},
 					'per' => {
-						'default' => q({0} በ{1}),
+						'' => q({0} በ{1}),
 					},
 					'picometer' => {
 						'one' => q({0} ፒኮሜትር),
@@ -1244,7 +1244,7 @@ has 'units' => (
 						'other' => q({0} አውንስ),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'one' => q({0} ፒሜ),
@@ -1433,7 +1433,7 @@ has 'units' => (
 						'other' => q({0} አውንስ),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'one' => q({0} ፒሜ),
@@ -1482,7 +1482,6 @@ has 'units' => (
 				},
 			} }
 );
-
 
 has 'yesstr' => (
 	is			=> 'ro',
@@ -1758,47 +1757,47 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(የተባበሩት የአረብ ኤምረትስ ዲርሀም),
+				'currency' => q(የተባበሩት የአረብ ኤምረትስ ዲርሀም),
 				'one' => q(የተባበሩት የአረብ ኤምረትስ ዲርሀም),
 				'other' => q(የተባበሩት የአረብ ኤምረትስ ዲርሀም),
 			},
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(የአፍጋን አፍጋኒ),
+				'currency' => q(የአፍጋን አፍጋኒ),
 				'one' => q(የአፍጋን አፍጋኒ),
 				'other' => q(የአፍጋን አፍጋኒ),
 			},
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(የአልባንያ ሌክ),
+				'currency' => q(የአልባንያ ሌክ),
 				'one' => q(የአልባንያ ሌክ),
 				'other' => q(የአልባንያ ሌክ),
 			},
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(የአርመን ድራም),
+				'currency' => q(የአርመን ድራም),
 				'one' => q(የአርመን ድራም),
 				'other' => q(የአርመን ድራም),
 			},
 		},
 		'ANG' => {
 			display_name => {
-				'default' => q(ኔዘርላንድስ አንቲሊአን ጊልደር),
+				'currency' => q(ኔዘርላንድስ አንቲሊአን ጊልደር),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(የአንጎላ ኩዋንዛ),
+				'currency' => q(የአንጎላ ኩዋንዛ),
 				'one' => q(የአንጎላ ኩዋንዛ),
 				'other' => q(የአንጎላ ኩዋንዛ),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(የአርጀንቲና ፔሶ),
+				'currency' => q(የአርጀንቲና ፔሶ),
 				'one' => q(የአርጀንቲና ፔሶ),
 				'other' => q(የአርጀንቲና ፔሶ),
 			},
@@ -1806,84 +1805,84 @@ has 'curriencies' => (
 		'AUD' => {
 			symbol => 'AU$',
 			display_name => {
-				'default' => q(የአውስትራሊያ ዶላር),
+				'currency' => q(የአውስትራሊያ ዶላር),
 				'one' => q(የአውስትራሊያ ዶላር),
 				'other' => q(የአውስትራሊያ ዶላር),
 			},
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(አሩባን ፍሎሪን),
+				'currency' => q(አሩባን ፍሎሪን),
 				'one' => q(አሩባን ፍሎሪን),
 				'other' => q(አሩባን ፍሎሪን),
 			},
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(የአዛርባጃን ማናት),
+				'currency' => q(የአዛርባጃን ማናት),
 				'one' => q(የአዛርባጃን ማናት),
 				'other' => q(የአዛርባጃን ማናት),
 			},
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(የቦስኒያ ሄርዞጎቪና የሚመነዘር ማርክ),
+				'currency' => q(የቦስኒያ ሄርዞጎቪና የሚመነዘር ማርክ),
 				'one' => q(የቦስኒያ ሄርዞጎቪና የሚመነዘር ማርክ),
 				'other' => q(የቦስኒያ ሄርዞጎቪና የሚመነዘር ማርክ),
 			},
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(የባርቤዶስ ዶላር),
+				'currency' => q(የባርቤዶስ ዶላር),
 				'one' => q(የባርቤዶስ ዶላር),
 				'other' => q(የባርቤዶስ ዶላር),
 			},
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(የባንግላዲሽ ታካ),
+				'currency' => q(የባንግላዲሽ ታካ),
 				'one' => q(የባንግላዲሽ ታካ),
 				'other' => q(የባንግላዲሽ ታካ),
 			},
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(የቡልጋሪያ ሌቭ),
+				'currency' => q(የቡልጋሪያ ሌቭ),
 				'one' => q(የቡልጋሪያ ሌቭ),
 				'other' => q(የቡልጋሪያ ሌቭ),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(የባኽሬን ዲናር),
+				'currency' => q(የባኽሬን ዲናር),
 				'one' => q(የባኽሬን ዲናር),
 				'other' => q(የባኽሬን ዲናር),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(የብሩንዲ ፍራንክ),
+				'currency' => q(የብሩንዲ ፍራንክ),
 				'one' => q(የብሩንዲ ፍራንክ),
 				'other' => q(የብሩንዲ ፍራንክ),
 			},
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(የቤርሙዳ ዶላር),
+				'currency' => q(የቤርሙዳ ዶላር),
 				'one' => q(የቤርሙዳ ዶላር),
 				'other' => q(የቤርሙዳ ዶላር),
 			},
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(የብሩኔ ዶላር),
+				'currency' => q(የብሩኔ ዶላር),
 				'one' => q(የብሩኔ ዶላር),
 				'other' => q(የብሩኔ ዶላር),
 			},
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(የቦሊቪያ ቦሊቪያኖ),
+				'currency' => q(የቦሊቪያ ቦሊቪያኖ),
 				'one' => q(የቦሊቪያ ቦሊቪያኖ),
 				'other' => q(የቦሊቪያ ቦሊቪያኖ),
 			},
@@ -1891,70 +1890,70 @@ has 'curriencies' => (
 		'BRL' => {
 			symbol => 'R$',
 			display_name => {
-				'default' => q(የብራዚል ሪል),
+				'currency' => q(የብራዚል ሪል),
 				'one' => q(የብራዚል ሪል),
 				'other' => q(የብራዚል ሪል),
 			},
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(የባሃማስ ዶላር),
+				'currency' => q(የባሃማስ ዶላር),
 				'one' => q(የባሃማስ ዶላር),
 				'other' => q(የባሃማስ ዶላር),
 			},
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(ብሁታኒዝ ንጉልትረም),
+				'currency' => q(ብሁታኒዝ ንጉልትረም),
 				'one' => q(ብሁታኒዝ ንጉልትረም),
 				'other' => q(ብሁታኒዝ ንጉልትረም),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(የቦትስዋና ፑላ),
+				'currency' => q(የቦትስዋና ፑላ),
 				'one' => q(የቦትስዋና ፑላ),
 				'other' => q(የቦትስዋና ፑላ),
 			},
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(የቤላሩስያ ሩብል),
+				'currency' => q(የቤላሩስያ ሩብል),
 				'one' => q(የቤላሩስያ ሩብል),
 				'other' => q(የቤላሩስያ ሩብል),
 			},
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(የቤሊዝ ዶላር),
+				'currency' => q(የቤሊዝ ዶላር),
 				'one' => q(የቤሊዝ ዶላር),
 				'other' => q(የቤሊዝ ዶላር),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(የካናዳ ዶላር),
+				'currency' => q(የካናዳ ዶላር),
 				'one' => q(የካናዳ ዶላር),
 				'other' => q(የካናዳ ዶላር),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(የኮንጐ ፍራንክ ኮንጐሌዝ),
+				'currency' => q(የኮንጐ ፍራንክ ኮንጐሌዝ),
 				'one' => q(የኮንጐ ፍራንክ ኮንጐሌዝ),
 				'other' => q(የኮንጐ ፍራንክ ኮንጐሌዝ),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(የስዊስ ፍራንክ),
+				'currency' => q(የስዊስ ፍራንክ),
 				'one' => q(የስዊስ ፍራንክ),
 				'other' => q(የስዊስ ፍራንክ),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(የቺሊ ፔሶ),
+				'currency' => q(የቺሊ ፔሶ),
 				'one' => q(የቺሊ ፔሶ),
 				'other' => q(የቺሊ ፔሶ),
 			},
@@ -1962,91 +1961,91 @@ has 'curriencies' => (
 		'CNY' => {
 			symbol => 'CN¥',
 			display_name => {
-				'default' => q(የቻይና የን),
+				'currency' => q(የቻይና የን),
 				'one' => q(የቻይና የን),
 				'other' => q(የቻይና የን),
 			},
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(የኮሎምቢያ ፔሶ),
+				'currency' => q(የኮሎምቢያ ፔሶ),
 				'one' => q(የኮሎምቢያ ፔሶ),
 				'other' => q(የኮሎምቢያ ፔሶ),
 			},
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(የኮስታሪካ ኮሎን),
+				'currency' => q(የኮስታሪካ ኮሎን),
 				'one' => q(የኮስታሪካ ኮሎን),
 				'other' => q(የኮስታሪካ ኮሎን),
 			},
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(የኩባ የሚመነዘር ፔሶ),
+				'currency' => q(የኩባ የሚመነዘር ፔሶ),
 				'one' => q(የኩባ የሚመነዘር ፔሶ),
 				'other' => q(የኩባ የሚመነዘር ፔሶ),
 			},
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(የኩባ ፔሶ),
+				'currency' => q(የኩባ ፔሶ),
 				'one' => q(የኩባ ፔሶ),
 				'other' => q(የኩባ ፔሶ),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(የኬፕ ቫርዲ ኤስኩዶ),
+				'currency' => q(የኬፕ ቫርዲ ኤስኩዶ),
 				'one' => q(የኬፕ ቫርዲ ኤስኩዶ),
 				'other' => q(የኬፕ ቫርዲ ኤስኩዶ),
 			},
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(ቼክ ሪፐፕሊክ ኮሩና),
+				'currency' => q(ቼክ ሪፐፕሊክ ኮሩና),
 				'one' => q(ቼክ ሪፐፕሊክ ኮሩና),
 				'other' => q(ቼክ ሪፐብሊክ ኮሮና),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(የጅቡቲ ፍራንክ),
+				'currency' => q(የጅቡቲ ፍራንክ),
 				'one' => q(የጅቡቲ ፍራንክ),
 				'other' => q(የጅቡቲ ፍራንክ),
 			},
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(የዴንማርክ ክሮን),
+				'currency' => q(የዴንማርክ ክሮን),
 				'one' => q(የዴንማርክ ክሮን),
 				'other' => q(የዴንማርክ ክሮን),
 			},
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(የዶሚኒክ ፔሶ),
+				'currency' => q(የዶሚኒክ ፔሶ),
 				'one' => q(የዶሚኒክ ፔሶ),
 				'other' => q(የዶሚኒክ ፔሶ),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(የአልጄሪያ ዲናር),
+				'currency' => q(የአልጄሪያ ዲናር),
 				'one' => q(የአልጄሪያ ዲናር),
 				'other' => q(የአልጄሪያ ዲናር),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(የግብጽ ፓውንድ),
+				'currency' => q(የግብጽ ፓውንድ),
 				'one' => q(የግብጽ ፓውንድ),
 				'other' => q(የግብጽ ፓውንድ),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(ዬኤርትራ ናቅፋ),
+				'currency' => q(ዬኤርትራ ናቅፋ),
 				'one' => q(ዬኤርትራ ናቅፋ),
 				'other' => q(ዬኤርትራ ናቅፋ),
 			},
@@ -2054,7 +2053,7 @@ has 'curriencies' => (
 		'ETB' => {
 			symbol => 'ብር',
 			display_name => {
-				'default' => q(የኢትዮጵያ ብር),
+				'currency' => q(የኢትዮጵያ ብር),
 				'one' => q(የኢትዮጵያ ብር),
 				'other' => q(የኢትዮጵያ ብር),
 			},
@@ -2062,21 +2061,21 @@ has 'curriencies' => (
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(ዩሮ),
+				'currency' => q(ዩሮ),
 				'one' => q(ዩሮ),
 				'other' => q(ዩሮ),
 			},
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(የፊጂ ዶላር),
+				'currency' => q(የፊጂ ዶላር),
 				'one' => q(የፊጂ ዶላር),
 				'other' => q(የፊጂ ዶላር),
 			},
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(የፎክላንድ ደሴቶች ፓውንድ),
+				'currency' => q(የፎክላንድ ደሴቶች ፓውንድ),
 				'one' => q(የፎክላንድ ደሴቶች ፓውንድ),
 				'other' => q(የፎክላንድ ደሴቶች ፓውንድ),
 			},
@@ -2084,61 +2083,61 @@ has 'curriencies' => (
 		'GBP' => {
 			symbol => '£',
 			display_name => {
-				'default' => q(የእንግሊዝ ፓውንድ ስተርሊንግ),
+				'currency' => q(የእንግሊዝ ፓውንድ ስተርሊንግ),
 				'one' => q(የእንግሊዝ ፓውንድ ስተርሊንግ),
 				'other' => q(የእንግሊዝ ፓውንድ ስተርሊንግ),
 			},
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(የጆርጅያ ላሪ),
+				'currency' => q(የጆርጅያ ላሪ),
 				'one' => q(የጆርጅያ ላሪ),
 				'other' => q(የጆርጅያ ላሪ),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(የጋና ሴዲ),
+				'currency' => q(የጋና ሴዲ),
 			},
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(የጋና ሲዲ),
+				'currency' => q(የጋና ሲዲ),
 				'one' => q(የጋና ሲዲ),
 				'other' => q(የጋና ሲዲ),
 			},
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(ጊብራልታር ፓውንድ),
+				'currency' => q(ጊብራልታር ፓውንድ),
 				'one' => q(ጊብራልታር ፓውንድ),
 				'other' => q(ጊብራልታር ፓውንድ),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(የጋምቢያ ዳላሲ),
+				'currency' => q(የጋምቢያ ዳላሲ),
 				'one' => q(የጋምቢያ ዳላሲ),
 				'other' => q(የጋምቢያ ዳላሲ),
 			},
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(የጊኒ ፍራንክ),
+				'currency' => q(የጊኒ ፍራንክ),
 				'one' => q(የጊኒ ፍራንክ),
 				'other' => q(የጊኒ ፍራንክ),
 			},
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(ጓቲማላን ኩቲዛል),
+				'currency' => q(ጓቲማላን ኩቲዛል),
 				'one' => q(ጓቲማላን ኩቲዛል),
 				'other' => q(ጓቲማላን ኩቲዛል),
 			},
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(የጉየና ዶላር),
+				'currency' => q(የጉየና ዶላር),
 				'one' => q(የጉየና ዶላር),
 				'other' => q(የጉየና ዶላር),
 			},
@@ -2146,42 +2145,42 @@ has 'curriencies' => (
 		'HKD' => {
 			symbol => 'HK$',
 			display_name => {
-				'default' => q(የሆንግኮንግ ዶላር),
+				'currency' => q(የሆንግኮንግ ዶላር),
 				'one' => q(የሆንግኮንግ ዶላር),
 				'other' => q(የሆንግኮንግ ዶላር),
 			},
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(የሃንዱራ ሌምፓአይራ),
+				'currency' => q(የሃንዱራ ሌምፓአይራ),
 				'one' => q(የሃንዱራ ሌምፓአይራ),
 				'other' => q(የሃንዱራ ሌምፓአይራ),
 			},
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(የክሮሽያ ኩና),
+				'currency' => q(የክሮሽያ ኩና),
 				'one' => q(የክሮሽያ ኩና),
 				'other' => q(የክሮሽያ ኩና),
 			},
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(የሃያቲ ጓርዴ),
+				'currency' => q(የሃያቲ ጓርዴ),
 				'one' => q(የሃያቲ ጓርዴ),
 				'other' => q(የሃያቲ ጓርዴ),
 			},
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(የሁንጋሪ ፎሪንት),
+				'currency' => q(የሁንጋሪ ፎሪንት),
 				'one' => q(የሁንጋሪ ፎሪንት),
 				'other' => q(የሃንጋሪያን ፎሪንት),
 			},
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(የኢንዶኔዥያ ሩፒሃ),
+				'currency' => q(የኢንዶኔዥያ ሩፒሃ),
 				'one' => q(የኢንዶኔዥያ ሩፒሃ),
 				'other' => q(የኢንዶኔዥያ ሩፒሃ),
 			},
@@ -2189,7 +2188,7 @@ has 'curriencies' => (
 		'ILS' => {
 			symbol => '₪',
 			display_name => {
-				'default' => q(የእስራኤል አዲስ ሽቅል),
+				'currency' => q(የእስራኤል አዲስ ሽቅል),
 				'one' => q(የእስራኤል አዲስ ሽቅል),
 				'other' => q(የእስራኤል አዲስ ሽቅል),
 			},
@@ -2197,42 +2196,42 @@ has 'curriencies' => (
 		'INR' => {
 			symbol => '₹',
 			display_name => {
-				'default' => q(የሕንድ ሩፒ),
+				'currency' => q(የሕንድ ሩፒ),
 				'one' => q(የሕንድ ሩፒ),
 				'other' => q(የሕንድ ሩፒ),
 			},
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(የኢራቅ ዲናር),
+				'currency' => q(የኢራቅ ዲናር),
 				'one' => q(የኢራቅ ዲናር),
 				'other' => q(የኢራቅ ዲናር),
 			},
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(የኢራን ሪአል),
+				'currency' => q(የኢራን ሪአል),
 				'one' => q(የኢራን ሪአል),
 				'other' => q(የኢራን ሪአል),
 			},
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(የአይስላንድ ክሮና),
+				'currency' => q(የአይስላንድ ክሮና),
 				'one' => q(የአይስላንድ ክሮና),
 				'other' => q(የአይስላንድ ክሮና),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(የጃማይካ ዶላር),
+				'currency' => q(የጃማይካ ዶላር),
 				'one' => q(የጃማይካ ዶላር),
 				'other' => q(የጃማይካ ዶላር),
 			},
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(የጆርዳን ዲናር),
+				'currency' => q(የጆርዳን ዲናር),
 				'one' => q(የጆርዳን ዲናር),
 				'other' => q(የጆርዳን ዲናር),
 			},
@@ -2240,42 +2239,42 @@ has 'curriencies' => (
 		'JPY' => {
 			symbol => 'JP¥',
 			display_name => {
-				'default' => q(የጃፓን የን),
+				'currency' => q(የጃፓን የን),
 				'one' => q(የጃፓን የን),
 				'other' => q(የጃፓን የን),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(የኬኒያ ሺሊንግ),
+				'currency' => q(የኬኒያ ሺሊንግ),
 				'one' => q(የኬኒያ ሺሊንግ),
 				'other' => q(የኬኒያ ሺሊንግ),
 			},
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(የኪርጊስታን ሶም),
+				'currency' => q(የኪርጊስታን ሶም),
 				'one' => q(የኪርጊስታን ሶም),
 				'other' => q(የኪርጊስታን ሶም),
 			},
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(የካምቦዲያ ሬል),
+				'currency' => q(የካምቦዲያ ሬል),
 				'one' => q(የካምቦዲያ ሬል),
 				'other' => q(የካምቦዲያ ሬል),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(የኮሞሮ ፍራንክ),
+				'currency' => q(የኮሞሮ ፍራንክ),
 				'one' => q(የኮሞሮ ፍራንክ),
 				'other' => q(የኮሞሮ ፍራንክ),
 			},
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(የሰሜን ኮሪያ ዎን),
+				'currency' => q(የሰሜን ኮሪያ ዎን),
 				'one' => q(የሰሜን ኮሪያ ዎን),
 				'other' => q(የሰሜን ኮሪያ ዎን),
 			},
@@ -2283,159 +2282,159 @@ has 'curriencies' => (
 		'KRW' => {
 			symbol => '₩',
 			display_name => {
-				'default' => q(የደቡብ ኮሪያ ዎን),
+				'currency' => q(የደቡብ ኮሪያ ዎን),
 				'one' => q(የደቡብ ኮሪያ ዎን),
 				'other' => q(የደቡብ ኮሪያ ዎን),
 			},
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(የኩዌት ዲናር),
+				'currency' => q(የኩዌት ዲናር),
 				'one' => q(የኩዌት ዲናር),
 				'other' => q(የኩዌት ዲናር),
 			},
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(የካይማን ደሴቶች ዶላር),
+				'currency' => q(የካይማን ደሴቶች ዶላር),
 				'one' => q(የካይማን ደሴቶች ዶላር),
 				'other' => q(የካይማን ደሴቶች ዶላር),
 			},
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(የካዛኪስታን ተንጌ),
+				'currency' => q(የካዛኪስታን ተንጌ),
 				'one' => q(የካዛኪስታን ተንጌ),
 				'other' => q(የካዛኪስታን ተንጌ),
 			},
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(የላኦቲ ኪፕ),
+				'currency' => q(የላኦቲ ኪፕ),
 				'one' => q(የላኦቲ ኪፕ),
 				'other' => q(የላኦቲ ኪፕ),
 			},
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(የሊባኖስ ፓውንድ),
+				'currency' => q(የሊባኖስ ፓውንድ),
 				'one' => q(የሊባኖስ ፓውንድ),
 				'other' => q(የሊባኖስ ፓውንድ),
 			},
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(የሲሪላንካ ሩፒ),
+				'currency' => q(የሲሪላንካ ሩፒ),
 				'one' => q(የሲሪላንካ ሩፒ),
 				'other' => q(የሲሪላንካ ሩፒ),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(የላይቤሪያ ዶላር),
+				'currency' => q(የላይቤሪያ ዶላር),
 				'one' => q(የላይቤሪያ ዶላር),
 				'other' => q(የላይቤሪያ ዶላር),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(የሌሶቶ ሎቲ),
+				'currency' => q(የሌሶቶ ሎቲ),
 			},
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(ሊቱዌንያን ሊታስ),
+				'currency' => q(ሊቱዌንያን ሊታስ),
 				'one' => q(ሊቱዌንያን ሊታስ),
 				'other' => q(ሊቱዌንያን ሊታስ),
 			},
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(የላቲቫ ላትስ),
+				'currency' => q(የላቲቫ ላትስ),
 				'one' => q(የላቲቫ ላትስ),
 				'other' => q(የላቲቫ ላትስ),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(የሊቢያ ዲናር),
+				'currency' => q(የሊቢያ ዲናር),
 				'one' => q(የሊቢያ ዲናር),
 				'other' => q(የሊቢያ ዲናር),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(የሞሮኮ ዲርሀም),
+				'currency' => q(የሞሮኮ ዲርሀም),
 				'one' => q(የሞሮኮ ዲርሀም),
 				'other' => q(የሞሮኮ ዲርሀም),
 			},
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(ሞልዶቫን ሊኡ),
+				'currency' => q(ሞልዶቫን ሊኡ),
 				'one' => q(ሞልዶቫን ሊኡ),
 				'other' => q(ሞልዶቫን ሊኡ),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(የማደጋስካር ፋርንክ),
+				'currency' => q(የማደጋስካር ፋርንክ),
 				'one' => q(የማደጋስካር ፋርንክ),
 				'other' => q(የማደጋስካር ፋርንክ),
 			},
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(የሜቆድንያ ዲናር),
+				'currency' => q(የሜቆድንያ ዲናር),
 				'one' => q(የሜቆድንያ ዲናር),
 				'other' => q(የሜቆድንያ ዲናር),
 			},
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(ምያንማ ክያት),
+				'currency' => q(ምያንማ ክያት),
 				'one' => q(ምያንማ ክያት),
 				'other' => q(ምያንማ ክያት),
 			},
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(የሞንጎሊያን ቱግሪክ),
+				'currency' => q(የሞንጎሊያን ቱግሪክ),
 				'one' => q(የሞንጎሊያን ቱግሪክ),
 				'other' => q(የሞንጎሊያን ቱግሪክ),
 			},
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(የማካኔዝ ፓታካ),
+				'currency' => q(የማካኔዝ ፓታካ),
 				'one' => q(የማካኔዝ ፓታካ),
 				'other' => q(የማካኔዝ ፓታካ),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(የሞሪቴኒያ ኦውጉያ),
+				'currency' => q(የሞሪቴኒያ ኦውጉያ),
 				'one' => q(የሞሪቴኒያ ኦውጉያ),
 				'other' => q(የሞሪቴኒያ ኦውጉያ),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(የሞሪሸስ ሩፒ),
+				'currency' => q(የሞሪሸስ ሩፒ),
 				'one' => q(የሞሪሸስ ሩፒ),
 				'other' => q(የሞሪሸስ ሩፒ),
 			},
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(የማልዲቫ ሩፊያ),
+				'currency' => q(የማልዲቫ ሩፊያ),
 				'one' => q(የማልዲቫ ሩፊያ),
 				'other' => q(የማልዲቫ ሩፊያ),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(የማላዊ ኩዋቻ),
+				'currency' => q(የማላዊ ኩዋቻ),
 				'one' => q(የማላዊ ኩዋቻ),
 				'other' => q(የማላዊ ኩዋቻ),
 			},
@@ -2443,56 +2442,56 @@ has 'curriencies' => (
 		'MXN' => {
 			symbol => 'MX$',
 			display_name => {
-				'default' => q(የሜክሲኮ ፔሶ),
+				'currency' => q(የሜክሲኮ ፔሶ),
 				'one' => q(የሜክሲኮ ፔሶ),
 				'other' => q(የሜክሲኮ ፔሶ),
 			},
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(የማሌዥያ ሪንጊት),
+				'currency' => q(የማሌዥያ ሪንጊት),
 				'one' => q(የማሌዥያ ሪንጊት),
 				'other' => q(የማሌዥያ ሪንጊት),
 			},
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(የሞዛምቢክ ሜቲካል),
+				'currency' => q(የሞዛምቢክ ሜቲካል),
 				'one' => q(የሞዛምቢክ ሜቲካል),
 				'other' => q(የሞዛምቢክ ሜቲካል),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(የናሚቢያ ዶላር),
+				'currency' => q(የናሚቢያ ዶላር),
 				'one' => q(የናሚቢያ ዶላር),
 				'other' => q(የናሚቢያ ዶላር),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(የናይጄሪያ ናኢራ),
+				'currency' => q(የናይጄሪያ ናኢራ),
 				'one' => q(የናይጄሪያ ናኢራ),
 				'other' => q(የናይጄሪያ ናኢራ),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(የኒካራጓ ኮርዶባ),
+				'currency' => q(የኒካራጓ ኮርዶባ),
 				'one' => q(የኒካራጓ ኮርዶባ),
 				'other' => q(የኒካራጓ ኮርዶባ),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(የኖርዌይ ክሮን),
+				'currency' => q(የኖርዌይ ክሮን),
 				'one' => q(የኖርዌይ ክሮን),
 				'other' => q(የኖርዌይ ክሮን),
 			},
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(የኔፓል ሩፒ),
+				'currency' => q(የኔፓል ሩፒ),
 				'one' => q(የኔፓል ሩፒ),
 				'other' => q(የኔፓል ሩፒ),
 			},
@@ -2500,201 +2499,201 @@ has 'curriencies' => (
 		'NZD' => {
 			symbol => 'NZ$',
 			display_name => {
-				'default' => q(የኒውዚላንድ ዶላር),
+				'currency' => q(የኒውዚላንድ ዶላር),
 				'one' => q(የኒውዚላንድ ዶላር),
 				'other' => q(የኒውዚላንድ ዶላር),
 			},
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(የኦማን ሪአል),
+				'currency' => q(የኦማን ሪአል),
 				'one' => q(የኦማን ሪአል),
 				'other' => q(የኦማን ሪአል),
 			},
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(ፓናማኒአን ባልቦአ),
+				'currency' => q(ፓናማኒአን ባልቦአ),
 				'one' => q(ፓናማኒአን ባልቦአ),
 				'other' => q(ፓናማኒአን ባልቦአ),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(የፔሩቪያ ኑኤቮ ሶል),
+				'currency' => q(የፔሩቪያ ኑኤቮ ሶል),
 				'one' => q(የፔሩቪያ ኑኤቮ ሶል),
 				'other' => q(የፔሩቪያ ኑኤቮ ሶል),
 			},
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(የፓፕዋ ኒው ጊኒ ኪና),
+				'currency' => q(የፓፕዋ ኒው ጊኒ ኪና),
 				'one' => q(የፓፕዋ ኒው ጊኒ ኪና),
 				'other' => q(የፓፕዋ ኒው ጊኒ ኪና),
 			},
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(የፊሊፒንስ ፔሶ),
+				'currency' => q(የፊሊፒንስ ፔሶ),
 				'one' => q(የፊሊፒንስ ፔሶ),
 				'other' => q(የፊሊፒንስ ፔሶ),
 			},
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(የፓኪስታን ሩፒ),
+				'currency' => q(የፓኪስታን ሩፒ),
 				'one' => q(የፓኪስታን ሩፒ),
 				'other' => q(የፓኪስታን ሩፒ),
 			},
 		},
 		'PLN' => {
 			display_name => {
-				'default' => q(የፖላንድ ዝሎቲ),
+				'currency' => q(የፖላንድ ዝሎቲ),
 				'one' => q(የፖላንድ ዝሎቲ),
 				'other' => q(የፖላንድ ዝሎቲ),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(የፓራጓይ ጉአራኒ),
+				'currency' => q(የፓራጓይ ጉአራኒ),
 				'one' => q(የፓራጓይ ጉአራኒ),
 				'other' => q(የፓራጓይ ጉአራኒ),
 			},
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(የኳታር ሪአል),
+				'currency' => q(የኳታር ሪአል),
 				'one' => q(የኳታር ሪአል),
 				'other' => q(የኳታር ሪአል),
 			},
 		},
 		'RON' => {
 			display_name => {
-				'default' => q(የሮማኒያ ለው),
+				'currency' => q(የሮማኒያ ለው),
 				'one' => q(የሮማኒያ ለው),
 				'other' => q(የሮማኒያ ለው),
 			},
 		},
 		'RSD' => {
 			display_name => {
-				'default' => q(የሰርቢያ ዲናር),
+				'currency' => q(የሰርቢያ ዲናር),
 				'one' => q(የሰርቢያ ዲናር),
 				'other' => q(የሰርቢያ ዲናር),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(የሩስያ ሩብል),
+				'currency' => q(የሩስያ ሩብል),
 				'one' => q(የሩስያ ሩብል),
 				'other' => q(የሩስያ ሩብል),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(የሩዋንዳ ፍራንክ),
+				'currency' => q(የሩዋንዳ ፍራንክ),
 				'one' => q(የሩዋንዳ ፍራንክ),
 				'other' => q(የሩዋንዳ ፍራንክ),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(የሳውዲ ሪያል),
+				'currency' => q(የሳውዲ ሪያል),
 				'one' => q(የሳውዲ ሪያል),
 				'other' => q(የሳውዲ ሪያል),
 			},
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(የሰለሞን ደሴቶች ዶላር),
+				'currency' => q(የሰለሞን ደሴቶች ዶላር),
 				'one' => q(የሰለሞን ደሴቶች ዶላር),
 				'other' => q(የሰለሞን ደሴቶች ዶላር),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(የሲሼል ሩፒ),
+				'currency' => q(የሲሼል ሩፒ),
 				'one' => q(የሲሼል ሩፒ),
 				'other' => q(የሲሼል ሩፒ),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(የሱዳን ዲናር),
+				'currency' => q(የሱዳን ዲናር),
 				'one' => q(የሱዳን ዲናር),
 				'other' => q(የሱዳን ዲናር),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(የሱዳን ፓውንድ),
+				'currency' => q(የሱዳን ፓውንድ),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(የስዊድን ክሮና),
+				'currency' => q(የስዊድን ክሮና),
 				'one' => q(የስዊድን ክሮና),
 				'other' => q(የስዊድን ክሮና),
 			},
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(የሲንጋፖር ዶላር),
+				'currency' => q(የሲንጋፖር ዶላር),
 				'one' => q(የሲንጋፖር ዶላር),
 				'other' => q(የሲንጋፖር ዶላር),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(የሴይንት ሔሌና ፓውንድ),
+				'currency' => q(የሴይንት ሔሌና ፓውንድ),
 				'one' => q(የሴይንት ሔሌና ፓውንድ),
 				'other' => q(የሴይንት ሔሌና ፓውንድ),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(የሴራሊዎን ሊዎን),
+				'currency' => q(የሴራሊዎን ሊዎን),
 				'one' => q(የሴራሊዎን ሊዎን),
 				'other' => q(የሴራሊዎን ሊዎን),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(የሶማሌ ሺሊንግ),
+				'currency' => q(የሶማሌ ሺሊንግ),
 				'one' => q(የሶማሌ ሺሊንግ),
 				'other' => q(የሶማሌ ሺሊንግ),
 			},
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(የሰርናሜዝ ዶላር),
+				'currency' => q(የሰርናሜዝ ዶላር),
 				'one' => q(የሰርናሜዝ ዶላር),
 				'other' => q(የሰርናሜዝ ዶላር),
 			},
 		},
 		'SSP' => {
 			display_name => {
-				'default' => q(የደቡብ ሱዳን ፓውንድ),
+				'currency' => q(የደቡብ ሱዳን ፓውንድ),
 				'one' => q(የደቡብ ሱዳን ፓውንድ),
 				'other' => q(የደቡብ ሱዳን ፓውንድ),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(የሳኦ ቶመ እና ፕሪንሲፐ ዶብራ),
+				'currency' => q(የሳኦ ቶመ እና ፕሪንሲፐ ዶብራ),
 				'one' => q(የሳኦ ቶመ እና ፕሪንሲፐ ዶብራ),
 				'other' => q(የሳኦ ቶመ እና ፕሪንሲፐ ዶብራ),
 			},
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(የሲሪያ ፓውንድ),
+				'currency' => q(የሲሪያ ፓውንድ),
 				'one' => q(የሲሪያ ፓውንድ),
 				'other' => q(የሲሪያ ፓውንድ),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(የስዋዚላንድ ሊላንገኒ),
+				'currency' => q(የስዋዚላንድ ሊላንገኒ),
 				'one' => q(የስዋዚላንድ ሊላንገኒ),
 				'other' => q(የስዋዚላንድ ሊላንገኒ),
 			},
@@ -2702,47 +2701,47 @@ has 'curriencies' => (
 		'THB' => {
 			symbol => '฿',
 			display_name => {
-				'default' => q(የታይላንድ ባህት),
+				'currency' => q(የታይላንድ ባህት),
 				'one' => q(የታይላንድ ባህት),
 				'other' => q(የታይላንድ ባህት),
 			},
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(የታጂክስታን ሶሞኒ),
+				'currency' => q(የታጂክስታን ሶሞኒ),
 				'one' => q(የታጂክስታን ሶሞኒ),
 				'other' => q(የታጂክስታን ሶሞኒ),
 			},
 		},
 		'TMT' => {
 			display_name => {
-				'default' => q(ቱርክሜኒስታኒ ማናት),
+				'currency' => q(ቱርክሜኒስታኒ ማናት),
 				'one' => q(ቱርክሜኒስታኒ ማናት),
 				'other' => q(ቱርክሜኒስታኒ ማናት),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(የቱኒዚያ ዲናር),
+				'currency' => q(የቱኒዚያ ዲናር),
 				'one' => q(የቱኒዚያ ዲናር),
 				'other' => q(የቱኒዚያ ዲናር),
 			},
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(ቶንጋን ፓ'አንጋ),
+				'currency' => q(ቶንጋን ፓ'አንጋ),
 			},
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(የቱርክ ሊራ),
+				'currency' => q(የቱርክ ሊራ),
 				'one' => q(የቱርክ ሊራ),
 				'other' => q(የቱርክ ሊራ),
 			},
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(የትሪንዳድ እና ቶቤጎዶላር),
+				'currency' => q(የትሪንዳድ እና ቶቤጎዶላር),
 				'one' => q(የትሪንዳድ እና ቶቤጎዶላር),
 				'other' => q(የትሪንዳድ እና ቶቤጎዶላር),
 			},
@@ -2750,28 +2749,28 @@ has 'curriencies' => (
 		'TWD' => {
 			symbol => 'NT$',
 			display_name => {
-				'default' => q(የአዲሷ ታይዋን ዶላር),
+				'currency' => q(የአዲሷ ታይዋን ዶላር),
 				'one' => q(የአዲሷ ታይዋን ዶላር),
 				'other' => q(የአዲሷ ታይዋን ዶላር),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(የታንዛኒያ ሺሊንግ),
+				'currency' => q(የታንዛኒያ ሺሊንግ),
 				'one' => q(የታንዛኒያ ሺሊንግ),
 				'other' => q(የታንዛኒያ ሺሊንግ),
 			},
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(የዩክሬን ሀሪይቭኒአ),
+				'currency' => q(የዩክሬን ሀሪይቭኒአ),
 				'one' => q(የዩክሬን ሀሪይቭኒአ),
 				'other' => q(የዩክሬን ሀሪይቭኒአ),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(የዩጋንዳ ሺሊንግ),
+				'currency' => q(የዩጋንዳ ሺሊንግ),
 				'one' => q(የዩጋንዳ ሺሊንግ),
 				'other' => q(የዩጋንዳ ሺሊንግ),
 			},
@@ -2779,28 +2778,28 @@ has 'curriencies' => (
 		'USD' => {
 			symbol => 'US$',
 			display_name => {
-				'default' => q(የአሜሪካን ዶላር),
+				'currency' => q(የአሜሪካን ዶላር),
 				'one' => q(የአሜሪካን ዶላር),
 				'other' => q(የአሜሪካን ዶላር),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(የኡራጓይ ፔሶ),
+				'currency' => q(የኡራጓይ ፔሶ),
 				'one' => q(የኡራጓይ ፔሶ),
 				'other' => q(የኡራጓይ ፔሶ),
 			},
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(የኡዝፔኪስታን ሶም),
+				'currency' => q(የኡዝፔኪስታን ሶም),
 				'one' => q(የኡዝፔኪስታን ሶም),
 				'other' => q(የኡዝፔኪስታን ሶም),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(የቬንዝዌላ ቦሊቫር),
+				'currency' => q(የቬንዝዌላ ቦሊቫር),
 				'one' => q(የቬንዝዌላ ቦሊቫር),
 				'other' => q(የቬንዝዌላ ቦሊቫር),
 			},
@@ -2808,27 +2807,27 @@ has 'curriencies' => (
 		'VND' => {
 			symbol => '₫',
 			display_name => {
-				'default' => q(የቭየትናም ዶንግ),
+				'currency' => q(የቭየትናም ዶንግ),
 				'one' => q(የቭየትናም ዶንግ),
 				'other' => q(የቭየትናም ዶንግ),
 			},
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(የቫንዋንቱ ቫቱ),
+				'currency' => q(የቫንዋንቱ ቫቱ),
 				'one' => q(የቫንዋንቱ ቫቱ),
 				'other' => q(የቫንዋንቱ ቫቱ),
 			},
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(ሳሞአን ታላ),
+				'currency' => q(ሳሞአን ታላ),
 			},
 		},
 		'XAF' => {
 			symbol => 'FCFA',
 			display_name => {
-				'default' => q(ሴኤፍአ ፍራንክ ቤእአሴ),
+				'currency' => q(ሴኤፍአ ፍራንክ ቤእአሴ),
 				'one' => q(ሴኤፍአ ፍራንክ ቤእአሴ),
 				'other' => q(ሴኤፍአ ፍራንክ ቤእአሴ),
 			},
@@ -2836,7 +2835,7 @@ has 'curriencies' => (
 		'XCD' => {
 			symbol => 'EC$',
 			display_name => {
-				'default' => q(የምዕራብ ካሪብያን ዶላር),
+				'currency' => q(የምዕራብ ካሪብያን ዶላር),
 				'one' => q(የምዕራብ ካሪብያን ዶላር),
 				'other' => q(የምዕራብ ካሪብያን ዶላር),
 			},
@@ -2844,7 +2843,7 @@ has 'curriencies' => (
 		'XOF' => {
 			symbol => 'CFA',
 			display_name => {
-				'default' => q(ሴኤፍአ ፍራንክ ቤሴእአኦ),
+				'currency' => q(ሴኤፍአ ፍራንክ ቤሴእአኦ),
 				'one' => q(ሴኤፍአ ፍራንክ ቤሴእአኦ),
 				'other' => q(ሴኤፍአ ፍራንክ ቤሴእአኦ),
 			},
@@ -2852,47 +2851,47 @@ has 'curriencies' => (
 		'XPF' => {
 			symbol => 'CFPF',
 			display_name => {
-				'default' => q(ሲ ኤፍ ፒ ፍራንክ),
+				'currency' => q(ሲ ኤፍ ፒ ፍራንክ),
 				'one' => q(ሲ ኤፍ ፒ ፍራንክ),
 				'other' => q(ሲ ኤፍ ፒ ፍራንክ),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(ያልታወቀ ገንዘብ),
+				'currency' => q(ያልታወቀ ገንዘብ),
 			},
 		},
 		'YER' => {
 			display_name => {
-				'default' => q(የየመን ሪአል),
+				'currency' => q(የየመን ሪአል),
 				'one' => q(የየመን ሪአል),
 				'other' => q(የየመን ሪአል),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(የደቡብ አፍሪካ ራንድ),
+				'currency' => q(የደቡብ አፍሪካ ራንድ),
 				'one' => q(የደቡብ አፍሪካ ራንድ),
 				'other' => q(የደቡብ አፍሪካ ራንድ),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(የዛምቢያ ክዋቻ (1968–2012)),
-				'one' => q(የዛምቢያ ክዋቻ (1968–2012)),
-				'other' => q(የዛምቢያ ክዋቻ (1968–2012)),
+				'currency' => q(የዛምቢያ ክዋቻ \(1968–2012\)),
+				'one' => q(የዛምቢያ ክዋቻ \(1968–2012\)),
+				'other' => q(የዛምቢያ ክዋቻ \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(የዛምቢያ ክዋቻ),
+				'currency' => q(የዛምቢያ ክዋቻ),
 				'one' => q(የዛምቢያ ክዋቻ),
 				'other' => q(የዛምቢያ ክዋቻ),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(የዚምቧቡዌ ዶላር),
+				'currency' => q(የዚምቧቡዌ ዶላር),
 			},
 		},
 	} },

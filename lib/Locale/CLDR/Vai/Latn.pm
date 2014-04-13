@@ -1,6 +1,6 @@
-package Locale::CLDR::Vai::Latn;
+package Locale::CLDR::Vai::Latn v0.0.4;
 # This file auto generated from Data\common\main\vai_Latn.xml
-#	on Mon 31 Mar  2:23:19 am GMT
+#	on Sun 13 Apr 12:24:34 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -441,273 +441,273 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Yunaitɛ Arabhi Ɛmire Dihami),
+				'currency' => q(Yunaitɛ Arabhi Ɛmire Dihami),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Angola Kuwaŋza),
+				'currency' => q(Angola Kuwaŋza),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Ɔ́situwa Dala),
+				'currency' => q(Ɔ́situwa Dala),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Bharɛŋ Dina),
+				'currency' => q(Bharɛŋ Dina),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Bhurundi Furaŋki),
+				'currency' => q(Bhurundi Furaŋki),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Bhosuwana Pula),
+				'currency' => q(Bhosuwana Pula),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Kanada Dala),
+				'currency' => q(Kanada Dala),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Kóngo Furaŋki),
+				'currency' => q(Kóngo Furaŋki),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Suwesi Furaŋki),
+				'currency' => q(Suwesi Furaŋki),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Chaníĩ Yuwaŋ Rɛŋmimbi),
+				'currency' => q(Chaníĩ Yuwaŋ Rɛŋmimbi),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Ɛsikudo Cabovɛdiyano),
+				'currency' => q(Ɛsikudo Cabovɛdiyano),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Jibhuti Furaŋki),
+				'currency' => q(Jibhuti Furaŋki),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Agiriya Dina),
+				'currency' => q(Agiriya Dina),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Míséla Pɔɔ̃),
+				'currency' => q(Míséla Pɔɔ̃),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Ɛritera Nakifa),
+				'currency' => q(Ɛritera Nakifa),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Ítiyopiya Bhii),
+				'currency' => q(Ítiyopiya Bhii),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Yuro),
+				'currency' => q(Yuro),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Jengési Pɔɔ̃ Sitɛ́liŋ),
+				'currency' => q(Jengési Pɔɔ̃ Sitɛ́liŋ),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Gana Sidi),
+				'currency' => q(Gana Sidi),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Gambiya Dalasi),
+				'currency' => q(Gambiya Dalasi),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Gini Furaŋki),
+				'currency' => q(Gini Furaŋki),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Índiya Rupi),
+				'currency' => q(Índiya Rupi),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Japaniĩ Yɛŋ),
+				'currency' => q(Japaniĩ Yɛŋ),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Kénya Siyeŋ),
+				'currency' => q(Kénya Siyeŋ),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Komoro Furaŋki),
+				'currency' => q(Komoro Furaŋki),
 			},
 		},
 		'LRD' => {
 			symbol => '$',
 			display_name => {
-				'default' => q(Laibhiya Dala),
+				'currency' => q(Laibhiya Dala),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Lisóto Loti),
+				'currency' => q(Lisóto Loti),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Libhiya Dina),
+				'currency' => q(Libhiya Dina),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Mɔroko Dihami),
+				'currency' => q(Mɔroko Dihami),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Malagasi Ariyari),
+				'currency' => q(Malagasi Ariyari),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Mɔretani Yugiya),
+				'currency' => q(Mɔretani Yugiya),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Mɔreshɔ Rupi),
+				'currency' => q(Mɔreshɔ Rupi),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Malawi Kuwacha),
+				'currency' => q(Malawi Kuwacha),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Mozambiki Mɛtikali),
+				'currency' => q(Mozambiki Mɛtikali),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Namibiya Dala),
+				'currency' => q(Namibiya Dala),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Naĩjiriya Naĩra),
+				'currency' => q(Naĩjiriya Naĩra),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Rawunda Furaŋki),
+				'currency' => q(Rawunda Furaŋki),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Lahabu Sawodi Riya),
+				'currency' => q(Lahabu Sawodi Riya),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Sudaniĩ Pɔɔ̃),
+				'currency' => q(Sudaniĩ Pɔɔ̃),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Siŋ Hɛlina Pɔɔ̃),
+				'currency' => q(Siŋ Hɛlina Pɔɔ̃),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Liyɔɔ̀),
+				'currency' => q(Liyɔɔ̀),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Somaliya Siyeŋ),
+				'currency' => q(Somaliya Siyeŋ),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Sawo Tombe ɓɛ a Gbawo Dobura),
+				'currency' => q(Sawo Tombe ɓɛ a Gbawo Dobura),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lilangeni),
+				'currency' => q(Lilangeni),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Tunisiya Dina),
+				'currency' => q(Tunisiya Dina),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Taŋzaniya Siyeŋ),
+				'currency' => q(Taŋzaniya Siyeŋ),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Yuganda Siyeŋ),
+				'currency' => q(Yuganda Siyeŋ),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Poo Dala),
+				'currency' => q(Poo Dala),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Áfíríka Tɛ Sifa),
+				'currency' => q(Áfíríka Tɛ Sifa),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Áfíríka Tele Jíí Sifa),
+				'currency' => q(Áfíríka Tele Jíí Sifa),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Afirika Kɔi Leŋŋɛ lɔ Randi),
+				'currency' => q(Afirika Kɔi Leŋŋɛ lɔ Randi),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Zambiya Kuwacha (1968–2012)),
+				'currency' => q(Zambiya Kuwacha \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Zambiya Kuwacha),
+				'currency' => q(Zambiya Kuwacha),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Zimbhabhuwe Dala),
+				'currency' => q(Zimbhabhuwe Dala),
 			},
 		},
 	} },
@@ -831,7 +831,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -855,7 +855,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -898,3 +898,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

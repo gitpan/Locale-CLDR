@@ -1,6 +1,6 @@
-package Locale::CLDR::Shi::Latn;
+package Locale::CLDR::Shi::Latn v0.0.4;
 # This file auto generated from Data\common\main\shi_Latn.xml
-#	on Mon 31 Mar  1:51:00 am GMT
+#	on Sun 13 Apr 11:51:25 am GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use v5.18;
@@ -410,282 +410,282 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(adrim n limarat),
+				'currency' => q(adrim n limarat),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(kwanza n angula),
+				'currency' => q(kwanza n angula),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(adular n ustralya),
+				'currency' => q(adular n ustralya),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(adinar n bḥrayn),
+				'currency' => q(adinar n bḥrayn),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(frank n burundi),
+				'currency' => q(frank n burundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(abula n butswana),
+				'currency' => q(abula n butswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(adular n kanada),
+				'currency' => q(adular n kanada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(frank n kungu),
+				'currency' => q(frank n kungu),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(afrank n swisra),
+				'currency' => q(afrank n swisra),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(ayan n ccinwa),
+				'currency' => q(ayan n ccinwa),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(iskudu n kabbirdi),
+				'currency' => q(iskudu n kabbirdi),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(frank n djibuti),
+				'currency' => q(frank n djibuti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(adinar n dzayr),
+				'currency' => q(adinar n dzayr),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(ajnih n miṣṛ),
+				'currency' => q(ajnih n miṣṛ),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(nafka n iritirya),
+				'currency' => q(nafka n iritirya),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(bir n ityubya),
+				'currency' => q(bir n ityubya),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(uru),
+				'currency' => q(uru),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(ajnih astrlini n nngliz),
+				'currency' => q(ajnih astrlini n nngliz),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(sidi n ɣana),
+				'currency' => q(sidi n ɣana),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(dalasi n gambya),
+				'currency' => q(dalasi n gambya),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(frank n ɣinya),
+				'currency' => q(frank n ɣinya),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(arubi n lhind),
+				'currency' => q(arubi n lhind),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(ayan n lyaban),
+				'currency' => q(ayan n lyaban),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(acilin n kinya),
+				'currency' => q(acilin n kinya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(frank n qumuṛ),
+				'currency' => q(frank n qumuṛ),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(adular n libirya),
+				'currency' => q(adular n libirya),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(luti n liṣuṭu),
+				'currency' => q(luti n liṣuṭu),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(adinar n libya),
+				'currency' => q(adinar n libya),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(adrim n lmɣrib),
+				'currency' => q(adrim n lmɣrib),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(frank n madaɣacqar),
+				'currency' => q(frank n madaɣacqar),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(uqiyya n muṛiṭanya),
+				'currency' => q(uqiyya n muṛiṭanya),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(arubi n muris),
+				'currency' => q(arubi n muris),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(kwaca n malawi),
+				'currency' => q(kwaca n malawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(amitikl n muznbiq),
+				'currency' => q(amitikl n muznbiq),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(adular n namibya),
+				'currency' => q(adular n namibya),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(nayra n nijirya),
+				'currency' => q(nayra n nijirya),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(afrank n rwanda),
+				'currency' => q(afrank n rwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(aryal n ssaɛudiya),
+				'currency' => q(aryal n ssaɛudiya),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(arubi n ssicil),
+				'currency' => q(arubi n ssicil),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(adinar n ssudan),
+				'currency' => q(adinar n ssudan),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(ajnih n ssudan),
+				'currency' => q(ajnih n ssudan),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(ajnih n santilin),
+				'currency' => q(ajnih n santilin),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(liyun),
+				'currency' => q(liyun),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(acilin n ṣṣumal),
+				'currency' => q(acilin n ṣṣumal),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(adubra n sanṭumi),
+				'currency' => q(adubra n sanṭumi),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(lilanjini),
+				'currency' => q(lilanjini),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(adinar n tuns),
+				'currency' => q(adinar n tuns),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(acilin n ṭanẓanya),
+				'currency' => q(acilin n ṭanẓanya),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(acilin n uɣanda),
+				'currency' => q(acilin n uɣanda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(adular n iwunak imunn),
+				'currency' => q(adular n iwunak imunn),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(frank ṣifa),
+				'currency' => q(frank ṣifa),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(frank ṣifa bisaw),
+				'currency' => q(frank ṣifa bisaw),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(arand n afriqya n iffus),
+				'currency' => q(arand n afriqya n iffus),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(akwaca n zambya (1968–2012)),
+				'currency' => q(akwaca n zambya \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(akwaca n zambya),
+				'currency' => q(akwaca n zambya),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(adular n zimbabwi),
+				'currency' => q(adular n zimbabwi),
 			},
 		},
 	} },
@@ -904,7 +904,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			M => q{M},
 			MMM => q{MMM},
 			MMMEd => q{E d MMM},
@@ -924,7 +924,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			M => q{M},
 			MMM => q{MMM},
 			MMMEd => q{E d MMM},
@@ -963,3 +963,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

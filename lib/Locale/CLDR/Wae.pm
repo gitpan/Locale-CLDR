@@ -1,6 +1,6 @@
-package Locale::CLDR::Wae;
+package Locale::CLDR::Wae v0.0.4;
 # This file auto generated from Data\common\main\wae.xml
-#	on Mon 31 Mar  2:25:06 am GMT
+#	on Sun 13 Apr 12:26:24 pm GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use v5.18;
@@ -653,7 +653,6 @@ has 'units' => (
 			} }
 );
 
-
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -706,35 +705,35 @@ has 'curriencies' => (
 	default		=> sub { {
 		'BRL' => {
 			display_name => {
-				'default' => q(Brasilianiši Real),
+				'currency' => q(Brasilianiši Real),
 				'one' => q(Brasilianišä Real),
 				'other' => q(Brasilianiši Real),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Chinesiši Yuan),
+				'currency' => q(Chinesiši Yuan),
 				'one' => q(Chinesišä Yuan),
 				'other' => q(Chinesiši Yuan),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Euro),
+				'currency' => q(Euro),
 				'one' => q(Euro),
 				'other' => q(Euro),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Pfund),
+				'currency' => q(Pfund),
 				'one' => q(Pfund),
 				'other' => q(Pfund),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Indiši Rupie),
+				'currency' => q(Indiši Rupie),
 				'one' => q(Indišä Rupie),
 				'other' => q(Indiši Rupie),
 			},
@@ -742,7 +741,7 @@ has 'curriencies' => (
 		'JPY' => {
 			symbol => '¥',
 			display_name => {
-				'default' => q(Yen),
+				'currency' => q(Yen),
 				'one' => q(Yen),
 				'other' => q(Yen),
 			},
@@ -750,7 +749,7 @@ has 'curriencies' => (
 		'RUB' => {
 			symbol => 'руб',
 			display_name => {
-				'default' => q(Rubel),
+				'currency' => q(Rubel),
 				'one' => q(Rubel),
 				'other' => q(Rubel),
 			},
@@ -758,14 +757,14 @@ has 'curriencies' => (
 		'USD' => {
 			symbol => '$',
 			display_name => {
-				'default' => q(Dollar),
+				'currency' => q(Dollar),
 				'one' => q(Dollar),
 				'other' => q(Dollar),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(Unbekannti Wãrig),
+				'currency' => q(Unbekannti Wãrig),
 				'one' => q(Unbekannti Wãrig),
 				'other' => q(Unbekannti Wãrig),
 			},
@@ -1072,7 +1071,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d.},
 			M => q{LLL},
 			MEd => q{E, d. MMM},
@@ -1086,7 +1085,7 @@ has 'datetime_formats_available_formats' => (
 			yMMMEd => q{E, d. MMM y},
 			yMMMd => q{d. MMM y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d.},
 			M => q{LLL},
 			MEd => q{E, d. MMM},
@@ -1116,7 +1115,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH - HH},
 			},
@@ -1211,7 +1210,7 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd - y-MM-dd},
 			},
 		},
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH - HH},
 			},

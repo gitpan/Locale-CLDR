@@ -1,6 +1,6 @@
-package Locale::CLDR::As;
+package Locale::CLDR::As v0.0.4;
 # This file auto generated from Data\common\main\as.xml
-#	on Sun 30 Mar 11:40:21 pm GMT
+#	on Sun 13 Apr  9:36:18 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -147,3 +147,278 @@ has 'characters' => (
 	},
 );
 
+has 'default_numbering_system' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'beng',
+);
+
+has native_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'beng',
+);
+
+has 'number_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		decimalFormat => {
+			'default' => {
+				'0' => {
+					'default' => '#,##,##0.###',
+				},
+			},
+		},
+		percentFormat => {
+			'default' => {
+				'0' => {
+					'default' => '#,##,##0%',
+				},
+			},
+		},
+} },
+);
+
+has 'number_currency_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'pattern' => {
+				'default' => {
+					'standard' => {
+						'negative' => '¤ #,##,##0.00',
+						'positive' => '¤ #,##,##0.00',
+					},
+				},
+			},
+		},
+} },
+);
+
+has 'calendar_months' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'জানু',
+							'ফেব্ৰু',
+							'মাৰ্চ',
+							'এপ্ৰিল',
+							'মে',
+							'জুন',
+							'জুলাই',
+							'আগ',
+							'সেপ্ট',
+							'অক্টো',
+							'নভে',
+							'ডিসে'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'জানুৱাৰী',
+							'ফেব্ৰুৱাৰী',
+							'মাৰ্চ',
+							'এপ্ৰিল',
+							'মে',
+							'জুন',
+							'জুলাই',
+							'আগষ্ট',
+							'ছেপ্তেম্বৰ',
+							'অক্টোবৰ',
+							'নৱেম্বৰ',
+							'ডিচেম্বৰ'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_days' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						mon => 'সোম',
+						tue => 'মঙ্গল',
+						wed => 'বুধ',
+						thu => 'বৃহষ্পতি',
+						fri => 'শুক্ৰ',
+						sat => 'শনি',
+						sun => 'ৰবি'
+					},
+					wide => {
+						mon => 'সোমবাৰ',
+						tue => 'মঙ্গলবাৰ',
+						wed => 'বুধবাৰ',
+						thu => 'বৃহষ্পতিবাৰ',
+						fri => 'শুক্ৰবাৰ',
+						sat => 'শনিবাৰ',
+						sun => 'দেওবাৰ'
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_quarters' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					wide => {0 => 'প্ৰথম প্ৰহৰ',
+						1 => 'দ্বিতীয় প্ৰহৰ',
+						2 => 'তৃতীয় প্ৰহৰ',
+						3 => 'চতুৰ্থ প্ৰহৰ'
+					},
+				},
+			},
+	} },
+);
+
+has 'day_periods' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			'format' => {
+				'wide' => {
+					'pm' => q{অপৰাহ্ণ},
+					'am' => q{পূৰ্বাহ্ণ},
+				},
+			},
+		},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			'full' => q{EEEE, d MMMM, y G},
+			'long' => q{d MMMM, y G},
+			'medium' => q{dd-MM-y G},
+			'short' => q{d-M-y GGGGG},
+		},
+		'gregorian' => {
+			'full' => q{EEEE, d MMMM, y},
+			'long' => q{d MMMM, y},
+			'medium' => q{dd-MM-y},
+			'short' => q{d-M-y},
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			'full' => q{h.mm.ss a zzzz},
+			'long' => q{h.mm.ss a z},
+			'medium' => q{h.mm.ss a},
+			'short' => q{h.mm. a},
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'time_zone_names' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default	=> sub { {
+		'Asia/Calcutta' => {
+			exemplarCity => q#এলাহাৱাদ#,
+		},
+		'India' => {
+			long => {
+				'standard' => q(ভাৰতীয় সময়),
+			},
+			short => {
+				'standard' => q(ভা. স.),
+			},
+		},
+	 } }
+);
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

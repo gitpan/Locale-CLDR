@@ -1,6 +1,6 @@
-package Locale::CLDR::Nnh;
+package Locale::CLDR::Nnh v0.0.4;
 # This file auto generated from Data\common\main\nnh.xml
-#	on Mon 31 Mar  1:36:02 am GMT
+#	on Sun 13 Apr 11:36:09 am GMT
 # XML file generated 2013-08-30 23:19:50 -0500 (Fri, 30 Aug 2013)
 
 use v5.18;
@@ -124,3 +124,325 @@ has 'alternate_quote_end' => (
 	default		=> qq{”},
 );
 
+has 'number_symbols' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'decimal' => q(,),
+			'exponential' => q(),
+			'group' => q(.),
+			'infinity' => q(),
+			'list' => q(;),
+			'minusSign' => q(),
+			'nan' => q(),
+			'perMille' => q(),
+			'percentSign' => q(%),
+			'plusSign' => q(),
+			'superscriptingExponent' => q(),
+		},
+	} }
+);
+
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'XAF' => {
+			symbol => 'FCFA',
+			display_name => {
+				'currency' => q(feláŋ CFA),
+			},
+		},
+	} },
+);
+
+
+has 'calendar_months' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'saŋ tsetsɛ̀ɛ lùm',
+							'saŋ kàg ngwóŋ',
+							'saŋ lepyè shúm',
+							'saŋ cÿó',
+							'saŋ tsɛ̀ɛ cÿó',
+							'saŋ njÿoláʼ',
+							'saŋ tyɛ̀b tyɛ̀b mbʉ̀',
+							'saŋ mbʉ̀ŋ',
+							'saŋ ngwɔ̀ʼ mbÿɛ',
+							'saŋ tàŋa tsetsáʼ',
+							'saŋ mejwoŋó',
+							'saŋ lùm'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'saŋ tsetsɛ̀ɛ lùm',
+							'saŋ kàg ngwóŋ',
+							'saŋ lepyè shúm',
+							'saŋ cÿó',
+							'saŋ tsɛ̀ɛ cÿó',
+							'saŋ njÿoláʼ',
+							'saŋ tyɛ̀b tyɛ̀b mbʉ̀',
+							'saŋ mbʉ̀ŋ',
+							'saŋ ngwɔ̀ʼ mbÿɛ',
+							'saŋ tàŋa tsetsáʼ',
+							'saŋ mejwoŋó',
+							'saŋ lùm'
+						],
+						leap => [
+							
+						],
+					},
+				},
+				'stand-alone' => {
+					abbreviated => {
+						nonleap => [
+							'saŋ tsetsɛ̀ɛ lùm',
+							'saŋ kàg ngwóŋ',
+							'saŋ lepyè shúm',
+							'saŋ cÿó',
+							'saŋ tsɛ̀ɛ cÿó',
+							'saŋ njÿoláʼ',
+							'saŋ tyɛ̀b tyɛ̀b mbʉ̀',
+							'saŋ mbʉ̀ŋ',
+							'saŋ ngwɔ̀ʼ mbÿɛ',
+							'saŋ tàŋa tsetsáʼ',
+							'saŋ mejwoŋó',
+							'saŋ lùm'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'saŋ tsetsɛ̀ɛ lùm',
+							'saŋ kàg ngwóŋ',
+							'saŋ lepyè shúm',
+							'saŋ cÿó',
+							'saŋ tsɛ̀ɛ cÿó',
+							'saŋ njÿoláʼ',
+							'saŋ tyɛ̀b tyɛ̀b mbʉ̀',
+							'saŋ mbʉ̀ŋ',
+							'saŋ ngwɔ̀ʼ mbÿɛ',
+							'saŋ tàŋa tsetsáʼ',
+							'saŋ mejwoŋó',
+							'saŋ lùm'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_days' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						mon => 'mvfò lyɛ̌ʼ',
+						tue => 'mbɔ́ɔntè mvfò lyɛ̌ʼ',
+						wed => 'tsètsɛ̀ɛ lyɛ̌ʼ',
+						thu => 'mbɔ́ɔntè tsetsɛ̀ɛ lyɛ̌ʼ',
+						fri => 'mvfò màga lyɛ̌ʼ',
+						sat => 'màga lyɛ̌ʼ',
+						sun => 'lyɛʼɛ́ sẅíŋtè'
+					},
+					short => {
+						mon => 'mvfò lyɛ̌ʼ',
+						tue => 'mbɔ́ɔntè mvfò lyɛ̌ʼ',
+						wed => 'tsètsɛ̀ɛ lyɛ̌ʼ',
+						thu => 'mbɔ́ɔntè tsetsɛ̀ɛ lyɛ̌ʼ',
+						fri => 'mvfò màga lyɛ̌ʼ',
+						sat => 'màga lyɛ̌ʼ',
+						sun => 'lyɛʼɛ́ sẅíŋtè'
+					},
+					wide => {
+						mon => 'mvfò lyɛ̌ʼ',
+						tue => 'mbɔ́ɔntè mvfò lyɛ̌ʼ',
+						wed => 'tsètsɛ̀ɛ lyɛ̌ʼ',
+						thu => 'mbɔ́ɔntè tsetsɛ̀ɛ lyɛ̌ʼ',
+						fri => 'mvfò màga lyɛ̌ʼ',
+						sat => 'màga lyɛ̌ʼ',
+						sun => 'lyɛʼɛ́ sẅíŋtè'
+					},
+				},
+				'stand-alone' => {
+					abbreviated => {
+						mon => 'mvfò lyɛ̌ʼ',
+						tue => 'mbɔ́ɔntè mvfò lyɛ̌ʼ',
+						wed => 'tsètsɛ̀ɛ lyɛ̌ʼ',
+						thu => 'mbɔ́ɔntè tsetsɛ̀ɛ lyɛ̌ʼ',
+						fri => 'mvfò màga lyɛ̌ʼ',
+						sat => 'màga lyɛ̌ʼ',
+						sun => 'lyɛʼɛ́ sẅíŋtè'
+					},
+					short => {
+						mon => 'mvfò lyɛ̌ʼ',
+						tue => 'mbɔ́ɔntè mvfò lyɛ̌ʼ',
+						wed => 'tsètsɛ̀ɛ lyɛ̌ʼ',
+						thu => 'mbɔ́ɔntè tsetsɛ̀ɛ lyɛ̌ʼ',
+						fri => 'mvfò màga lyɛ̌ʼ',
+						sat => 'màga lyɛ̌ʼ',
+						sun => 'lyɛʼɛ́ sẅíŋtè'
+					},
+					wide => {
+						mon => 'mvfò lyɛ̌ʼ',
+						tue => 'mbɔ́ɔntè mvfò lyɛ̌ʼ',
+						wed => 'tsètsɛ̀ɛ lyɛ̌ʼ',
+						thu => 'mbɔ́ɔntè tsetsɛ̀ɛ lyɛ̌ʼ',
+						fri => 'mvfò màga lyɛ̌ʼ',
+						sat => 'màga lyɛ̌ʼ',
+						sun => 'lyɛʼɛ́ sẅíŋtè'
+					},
+				},
+			},
+	} },
+);
+
+has 'day_periods' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			'format' => {
+				'wide' => {
+					'pm' => q{ncwònzém},
+					'am' => q{mbaʼámbaʼ},
+				},
+			},
+		},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			abbreviated => {
+				'0' => 'm.z.Y.',
+				'1' => 'm.g.n.Y.'
+			},
+			wide => {
+				'0' => 'mé zyé Yěsô',
+				'1' => 'mé gÿo ńzyé Yěsô'
+			},
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			'full' => q{EEEE , 'lyɛ'̌ʼ d 'na' MMMM, y G},
+			'long' => q{'lyɛ'̌ʼ d 'na' MMMM, y G},
+			'medium' => q{d MMM, y G},
+			'short' => q{dd/MM/yy GGGGG},
+		},
+		'gregorian' => {
+			'full' => q{EEEE , 'lyɛ'̌ʼ d 'na' MMMM, y},
+			'long' => q{'lyɛ'̌ʼ d 'na' MMMM, y},
+			'medium' => q{d MMM, y},
+			'short' => q{dd/MM/yy},
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			'full' => q{{1},{0}},
+			'long' => q{{1}, {0}},
+		},
+		'gregorian' => {
+			'full' => q{{1},{0}},
+			'long' => q{{1}, {0}},
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			yMEd => q{E , 'lyɛ'̌ʼ d 'na' M, y},
+			yMMM => q{MMM y},
+			yMMMEd => q{E , 'lyɛ'̌ʼ d 'na' MMM, y},
+			yMMMd => q{'lyɛ'̌ʼ d 'na' MMMM, y},
+			yMd => q{d/M/y},
+		},
+		'generic' => {
+			yMEd => q{E , 'lyɛ'̌ʼ d 'na' M, y},
+			yMMM => q{MMM y},
+			yMMMEd => q{E , 'lyɛ'̌ʼ d 'na' MMM, y},
+			yMMMd => q{'lyɛ'̌ʼ d 'na' MMMM, y},
+			yMd => q{d/M/y},
+		},
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

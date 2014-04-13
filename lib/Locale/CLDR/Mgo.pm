@@ -1,6 +1,6 @@
-package Locale::CLDR::Mgo;
+package Locale::CLDR::Mgo v0.0.4;
 # This file auto generated from Data\common\main\mgo.xml
-#	on Mon 31 Mar  1:16:35 am GMT
+#	on Sun 13 Apr 11:16:39 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -186,7 +186,6 @@ has 'units' => (
 			} }
 );
 
-
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -291,12 +290,12 @@ has 'curriencies' => (
 		'XAF' => {
 			symbol => 'FCFA',
 			display_name => {
-				'default' => q(shirè),
+				'currency' => q(shirè),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(iku ikap mɔʼɔ),
+				'currency' => q(iku ikap mɔʼɔ),
 			},
 		},
 	} },

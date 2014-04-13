@@ -1,6 +1,6 @@
-package Locale::CLDR::Dz;
+package Locale::CLDR::Dz v0.0.4;
 # This file auto generated from Data\common\main\dz.xml
-#	on Mon 31 Mar 12:04:36 am GMT
+#	on Sun 13 Apr 10:01:13 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -745,7 +745,6 @@ has 'units' => (
 			} }
 );
 
-
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -948,379 +947,379 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(ཡུ་ནཱའི་ཊེཌ་ ཨ་རབ་ ཨེ་མེ་རེཊས་ཀྱི་དངུལ་ ཌིར་ཧཱམ),
+				'currency' => q(ཡུ་ནཱའི་ཊེཌ་ ཨ་རབ་ ཨེ་མེ་རེཊས་ཀྱི་དངུལ་ ཌིར་ཧཱམ),
 			},
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(ཨཕ་གཱན་གྱི་དངུལ་ ཨཕ་ག་ནི),
+				'currency' => q(ཨཕ་གཱན་གྱི་དངུལ་ ཨཕ་ག་ནི),
 			},
 		},
 		'AUD' => {
 			symbol => 'AU$',
 			display_name => {
-				'default' => q(ཨཱོས་ཊྲེ་ལི་ཡ་གི་དངུལ་ ཌོ་ལར),
+				'currency' => q(ཨཱོས་ཊྲེ་ལི་ཡ་གི་དངུལ་ ཌོ་ལར),
 			},
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(བྷང་ལ་དེཤ་གི་དངུལ་ ཏ་ཀ),
+				'currency' => q(བྷང་ལ་དེཤ་གི་དངུལ་ ཏ་ཀ),
 			},
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(བར་མུ་ཌ་གི་དངུལ་ ཌོ་ལར),
+				'currency' => q(བར་མུ་ཌ་གི་དངུལ་ ཌོ་ལར),
 			},
 		},
 		'BRL' => {
 			symbol => 'R$',
 			display_name => {
-				'default' => q(བྲ་ཛིལ་གྱི་དངུལ་ རེ་ཡལ),
+				'currency' => q(བྲ་ཛིལ་གྱི་དངུལ་ རེ་ཡལ),
 			},
 		},
 		'BTN' => {
 			symbol => 'Nu.',
 			display_name => {
-				'default' => q(དངུལ་ཀྲམ),
+				'currency' => q(དངུལ་ཀྲམ),
 			},
 		},
 		'CAD' => {
 			symbol => 'CA$',
 			display_name => {
-				'default' => q(ཀེ་ན་ཌ་གི་དངུལ་ ཌོ་ལར),
+				'currency' => q(ཀེ་ན་ཌ་གི་དངུལ་ ཌོ་ལར),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(སུ་ཡིས་ཀྱི་དངུལ་ ཕྲངཀ),
+				'currency' => q(སུ་ཡིས་ཀྱི་དངུལ་ ཕྲངཀ),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(ཅི་ལི་གི་དངུལ་ པེ་སོ),
+				'currency' => q(ཅི་ལི་གི་དངུལ་ པེ་སོ),
 			},
 		},
 		'CNY' => {
 			symbol => 'CN¥',
 			display_name => {
-				'default' => q(རྒྱ་ནག་གི་དངུལ་ ཡུ་ཝཱན),
+				'currency' => q(རྒྱ་ནག་གི་དངུལ་ ཡུ་ཝཱན),
 			},
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(ཀོ་ལོམ་བྷི་ཡ་གི་དངུལ་ པེ་སོ),
+				'currency' => q(ཀོ་ལོམ་བྷི་ཡ་གི་དངུལ་ པེ་སོ),
 			},
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(ཀིའུ་བྷ་གི་དངུལ་ པེ་སོ),
+				'currency' => q(ཀིའུ་བྷ་གི་དངུལ་ པེ་སོ),
 			},
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(ཌེན་མཱཀ་གི་དངུལ་ ཀྲོན),
+				'currency' => q(ཌེན་མཱཀ་གི་དངུལ་ ཀྲོན),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(ཨཱལ་ཇི་རི་ཡ་གི་དངུལ་ ཌའི་ནར),
+				'currency' => q(ཨཱལ་ཇི་རི་ཡ་གི་དངུལ་ ཌའི་ནར),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(ཨི་ཇིབཊ་གི་དངུལ་ པ་འུནཌ),
+				'currency' => q(ཨི་ཇིབཊ་གི་དངུལ་ པ་འུནཌ),
 			},
 		},
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(ཡུ་རོ༌དངུལ་),
+				'currency' => q(ཡུ་རོ༌དངུལ་),
 			},
 		},
 		'GBP' => {
 			symbol => '£',
 			display_name => {
-				'default' => q(བྲི་ཊིཤ་ པ་འུནཌ་ ཨིས་ཊར་ལིང),
+				'currency' => q(བྲི་ཊིཤ་ པ་འུནཌ་ ཨིས་ཊར་ལིང),
 			},
 		},
 		'HKD' => {
 			symbol => 'HK$',
 			display_name => {
-				'default' => q(ཧོང་ཀོང་གི་དངུལ་ ཌོ་ལར),
+				'currency' => q(ཧོང་ཀོང་གི་དངུལ་ ཌོ་ལར),
 			},
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(ཨིན་ཌོ་ནེ་ཤི་ཡ་གི་དངུལ་ རུ་པི་ཡ),
+				'currency' => q(ཨིན་ཌོ་ནེ་ཤི་ཡ་གི་དངུལ་ རུ་པི་ཡ),
 			},
 		},
 		'ILS' => {
 			symbol => 'ILS',
 			display_name => {
-				'default' => q(ཨིས་རེལ་གྱི་དངུལ་གསརཔ་ ཤེ་ཀེལ),
+				'currency' => q(ཨིས་རེལ་གྱི་དངུལ་གསརཔ་ ཤེ་ཀེལ),
 			},
 		},
 		'INR' => {
 			symbol => '₹',
 			display_name => {
-				'default' => q(རྒྱ་གར་གྱི་དངུལ་ རུ་པི),
+				'currency' => q(རྒྱ་གར་གྱི་དངུལ་ རུ་པི),
 			},
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(ཨི་རཱཀ་གི་དངུལ་ ཌི་ན),
+				'currency' => q(ཨི་རཱཀ་གི་དངུལ་ ཌི་ན),
 			},
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(ཨི་རཱན་གྱི་དངུལ་ རི་ཨཱལ),
+				'currency' => q(ཨི་རཱན་གྱི་དངུལ་ རི་ཨཱལ),
 			},
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(ཨཱཡིས་ལེནཌ་གི་དངུལ་ ཀྲོ་ན),
+				'currency' => q(ཨཱཡིས་ལེནཌ་གི་དངུལ་ ཀྲོ་ན),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(ཇཱ་མཻ་ཀ་གི་དངུལ་ ཌོ་ལར),
+				'currency' => q(ཇཱ་མཻ་ཀ་གི་དངུལ་ ཌོ་ལར),
 			},
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(ཇོར་ཌན་གྱི་དངུལ་ ཌི་ན),
+				'currency' => q(ཇོར་ཌན་གྱི་དངུལ་ ཌི་ན),
 			},
 		},
 		'JPY' => {
 			symbol => 'JP¥',
 			display_name => {
-				'default' => q(ཇཱ་པཱན་གྱི་དངུལ་ ཡེན),
+				'currency' => q(ཇཱ་པཱན་གྱི་དངུལ་ ཡེན),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(ཀེན་ཡ་གི་དངུལ་ ཤི་ལིང),
+				'currency' => q(ཀེན་ཡ་གི་དངུལ་ ཤི་ལིང),
 			},
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(ཀེམ་བྷོ་ཌི་ཡ་གི་དངུལ་ རི་ཨཱལ),
+				'currency' => q(ཀེམ་བྷོ་ཌི་ཡ་གི་དངུལ་ རི་ཨཱལ),
 			},
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(ནོརཐ་ ཀོ་རི་ཡ་གི་དངུལ་ ཝོན),
+				'currency' => q(ནོརཐ་ ཀོ་རི་ཡ་གི་དངུལ་ ཝོན),
 			},
 		},
 		'KRW' => {
 			symbol => 'KR₩',
 			display_name => {
-				'default' => q(སཱའུཐ་ ཀོ་རི་ཡ་གི་དངུལ་ ཝོན),
+				'currency' => q(སཱའུཐ་ ཀོ་རི་ཡ་གི་དངུལ་ ཝོན),
 			},
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(ཀུ་ཝེཊ་གི་དངུལ་ ཌི་ན),
+				'currency' => q(ཀུ་ཝེཊ་གི་དངུལ་ ཌི་ན),
 			},
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(ཀ་ཛགས་ཏཱན་གྱི་དངུལ་ ཏེང་གེ),
+				'currency' => q(ཀ་ཛགས་ཏཱན་གྱི་དངུལ་ ཏེང་གེ),
 			},
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(ལཱ་ཝོས་ཀྱི་དངུལ་ ཀིཔ),
+				'currency' => q(ལཱ་ཝོས་ཀྱི་དངུལ་ ཀིཔ),
 			},
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(ལེ་བ་ནོན་གྱི་དངུལ་ པ་འུནཌ),
+				'currency' => q(ལེ་བ་ནོན་གྱི་དངུལ་ པ་འུནཌ),
 			},
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(ཤྲི་ ལང་ཀ་གི་དངུལ་ རུ་པི),
+				'currency' => q(ཤྲི་ ལང་ཀ་གི་དངུལ་ རུ་པི),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(ལཱའི་བེ་རི་ཡ་གི་དངུལ་ ཌོ་ལར),
+				'currency' => q(ལཱའི་བེ་རི་ཡ་གི་དངུལ་ ཌོ་ལར),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(ལི་བི་ཡ་གི་དངུལ་ ཌི་ན),
+				'currency' => q(ལི་བི་ཡ་གི་དངུལ་ ཌི་ན),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(མོ་རོ་ཀོ་གི་དངུལ་ ཌིར་ཧཱམ),
+				'currency' => q(མོ་རོ་ཀོ་གི་དངུལ་ ཌིར་ཧཱམ),
 			},
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(མི་ཡཱན་མར་གྱི་དངུལ་ ཅཱཏ),
+				'currency' => q(མི་ཡཱན་མར་གྱི་དངུལ་ ཅཱཏ),
 			},
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(སོག་པོའི་དངུལ་ ཏུ་གྲིཀ),
+				'currency' => q(སོག་པོའི་དངུལ་ ཏུ་གྲིཀ),
 			},
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(མཱལ་དིབས་ཀྱི་དངུལ་ རུ་ཕི་ཡ),
+				'currency' => q(མཱལ་དིབས་ཀྱི་དངུལ་ རུ་ཕི་ཡ),
 			},
 		},
 		'MXN' => {
 			symbol => 'MX$',
 			display_name => {
-				'default' => q(མེཀ་སི་ཀོ་གི་དངུལ་ པེ་སོ),
+				'currency' => q(མེཀ་སི་ཀོ་གི་དངུལ་ པེ་སོ),
 			},
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(མ་ལེ་ཤི་ཡ་གི་དངུལ་ རིང་གིཊ),
+				'currency' => q(མ་ལེ་ཤི་ཡ་གི་དངུལ་ རིང་གིཊ),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(ནོར་ཝེ་གི་དངུལ་ ཀྲོ་ན),
+				'currency' => q(ནོར་ཝེ་གི་དངུལ་ ཀྲོ་ན),
 			},
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(བལ་པོའི་དངུལ་ རུ་པི),
+				'currency' => q(བལ་པོའི་དངུལ་ རུ་པི),
 			},
 		},
 		'NZD' => {
 			symbol => 'NZ$',
 			display_name => {
-				'default' => q(ནིའུ་ཛི་ལེནཌ་གི་དངུལ་ ཌོ་ལར),
+				'currency' => q(ནིའུ་ཛི་ལེནཌ་གི་དངུལ་ ཌོ་ལར),
 			},
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(ཨོ་མཱན་གྱི་དངུལ་ རི་ཨཱལ),
+				'currency' => q(ཨོ་མཱན་གྱི་དངུལ་ རི་ཨཱལ),
 			},
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(པ་ན་མ་གི་དངུལ་ བཱལ་བོ་ཝ),
+				'currency' => q(པ་ན་མ་གི་དངུལ་ བཱལ་བོ་ཝ),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(པ་རུ་གི་དངུལ་ ནུ་བོ་ སཱོལ),
+				'currency' => q(པ་རུ་གི་དངུལ་ ནུ་བོ་ སཱོལ),
 			},
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(ཕི་ལི་པིནས་གྱི་དངུལ་ པེ་སོ),
+				'currency' => q(ཕི་ལི་པིནས་གྱི་དངུལ་ པེ་སོ),
 			},
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(པ་ཀིས་ཏཱན་གྱི་དངུལ་ རུ་པི),
+				'currency' => q(པ་ཀིས་ཏཱན་གྱི་དངུལ་ རུ་པི),
 			},
 		},
 		'PLN' => {
 			display_name => {
-				'default' => q(པོ་ལེནཌ་ཀྱི་དངུལ ཛ྄ལོ་ཊི),
+				'currency' => q(པོ་ལེནཌ་ཀྱི་དངུལ ཛ྄ལོ་ཊི),
 			},
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(ཀ་ཊར་གྱི་དངུལ་ རི་ཨཱལ),
+				'currency' => q(ཀ་ཊར་གྱི་དངུལ་ རི་ཨཱལ),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(ཨུ་རུ་སུ་གི་དངུལ་ རུ་བཱལ),
+				'currency' => q(ཨུ་རུ་སུ་གི་དངུལ་ རུ་བཱལ),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(སཱཝ་དིའི་དངུལ་ རི་ཡཱལ),
+				'currency' => q(སཱཝ་དིའི་དངུལ་ རི་ཡཱལ),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(སེ་ཤཱལས་ཀྱི་དངུལ་ རུ་པི),
+				'currency' => q(སེ་ཤཱལས་ཀྱི་དངུལ་ རུ་པི),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(སུའི་ཌེན་གྱི་དངུལ་ ཀྲོ་ན),
+				'currency' => q(སུའི་ཌེན་གྱི་དངུལ་ ཀྲོ་ན),
 			},
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(སིང་ག་པོར་གྱི་དངུལ་ ཌོ་ལར),
+				'currency' => q(སིང་ག་པོར་གྱི་དངུལ་ ཌོ་ལར),
 			},
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(སི་རི་ཡ་གི་དངུལ་ པ་འུནཌ),
+				'currency' => q(སི་རི་ཡ་གི་དངུལ་ པ་འུནཌ),
 			},
 		},
 		'THB' => {
 			symbol => 'TH฿',
 			display_name => {
-				'default' => q(ཐཱའི་ལེནཌ་གི་དངུལ་ བཱཏ),
+				'currency' => q(ཐཱའི་ལེནཌ་གི་དངུལ་ བཱཏ),
 			},
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(ཏ་ཇི་ཀིས་ཏཱན་གྱི་དངུལ་ སོ་མོ་ནི),
+				'currency' => q(ཏ་ཇི་ཀིས་ཏཱན་གྱི་དངུལ་ སོ་མོ་ནི),
 			},
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(ཊཱར་ཀི་གི་དངུལ་ ལི་ར),
+				'currency' => q(ཊཱར་ཀི་གི་དངུལ་ ལི་ར),
 			},
 		},
 		'TWD' => {
 			symbol => 'NT$',
 			display_name => {
-				'default' => q(ཊཱའི་ཝཱན་གི་དངུལ ཌོ་ལར),
+				'currency' => q(ཊཱའི་ཝཱན་གི་དངུལ ཌོ་ལར),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(ཊཱན་ཛཱ་ནི་ཡ་གི་དངུལ་ ཤི་ལིང),
+				'currency' => q(ཊཱན་ཛཱ་ནི་ཡ་གི་དངུལ་ ཤི་ལིང),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(ཡུ་གྷེན་ཌ་གི་དངུལ་ ཤི་ལིང),
+				'currency' => q(ཡུ་གྷེན་ཌ་གི་དངུལ་ ཤི་ལིང),
 			},
 		},
 		'USD' => {
 			symbol => 'US$',
 			display_name => {
-				'default' => q(ཡུ་ཨེས་ ཌོ་ལར),
+				'currency' => q(ཡུ་ཨེས་ ཌོ་ལར),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(ཡུ་རུ་གུ་ཝའི་གི་དངུལ་ པེ་སོ),
+				'currency' => q(ཡུ་རུ་གུ་ཝའི་གི་དངུལ་ པེ་སོ),
 			},
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(ཨུས་བེ་ཀིས་ཏཱན་གྱི་དངུལ་ སོམ),
+				'currency' => q(ཨུས་བེ་ཀིས་ཏཱན་གྱི་དངུལ་ སོམ),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(བེ་ནི་ཛུ་ཝེ་ལ་གི་དངུལ་ བོ་ལི་བར),
+				'currency' => q(བེ་ནི་ཛུ་ཝེ་ལ་གི་དངུལ་ བོ་ལི་བར),
 			},
 		},
 		'VND' => {
 			display_name => {
-				'default' => q(བེཊ་ནཱམ་གྱི་དངུལ་ ཌོང),
+				'currency' => q(བེཊ་ནཱམ་གྱི་དངུལ་ ཌོང),
 			},
 		},
 		'XAF' => {
@@ -1328,12 +1327,12 @@ has 'curriencies' => (
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(མ་ཤེས་པའི་དངུལ),
+				'currency' => q(མ་ཤེས་པའི་དངུལ),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(སཱའུཐ་ ཨཕ་རི་ཀ་གི་དངུལ་ རཱནད),
+				'currency' => q(སཱའུཐ་ ཨཕ་རི་ཀ་གི་དངུལ་ རཱནད),
 			},
 		},
 	} },
@@ -1606,8 +1605,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'narrow' => {
-					'am' => q{སྔ་ཆ་},
 					'pm' => q{ཕྱི་ཆ་},
+					'am' => q{སྔ་ཆ་},
 				},
 				'wide' => {
 					'am' => q{སྔ་ཆ་},

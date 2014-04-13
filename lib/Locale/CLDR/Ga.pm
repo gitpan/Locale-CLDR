@@ -1,6 +1,6 @@
-package Locale::CLDR::Ga;
+package Locale::CLDR::Ga v0.0.4;
 # This file auto generated from Data\common\main\ga.xml
-#	on Mon 31 Mar 12:27:15 am GMT
+#	on Sun 13 Apr 10:25:19 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -664,1233 +664,1233 @@ has 'curriencies' => (
 	default		=> sub { {
 		'ADP' => {
 			display_name => {
-				'default' => q(Peseta Andóra),
+				'currency' => q(Peseta Andóra),
 			},
 		},
 		'AED' => {
 			display_name => {
-				'default' => q(Dirham Aontas na nÉimíríochtaí Arabacha),
+				'currency' => q(Dirham Aontas na nÉimíríochtaí Arabacha),
 			},
 		},
 		'AFA' => {
 			display_name => {
-				'default' => q(Afgainí (1927–2002)),
+				'currency' => q(Afgainí \(1927–2002\)),
 			},
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(Afgainí),
+				'currency' => q(Afgainí),
 			},
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(Lek Albánach),
+				'currency' => q(Lek Albánach),
 			},
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(Dram Airméanach),
+				'currency' => q(Dram Airméanach),
 			},
 		},
 		'ANG' => {
 			symbol => 'AÍ f.',
 			display_name => {
-				'default' => q(Guilder na nAntillí Ísiltíreach),
+				'currency' => q(Guilder na nAntillí Ísiltíreach),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Kwanza Angólach),
+				'currency' => q(Kwanza Angólach),
 			},
 		},
 		'AOK' => {
 			display_name => {
-				'default' => q(Kwanza Angólach (1977–1990)),
+				'currency' => q(Kwanza Angólach \(1977–1990\)),
 			},
 		},
 		'AON' => {
 			display_name => {
-				'default' => q(Kwanza Nua Angólach (1990–2000)),
+				'currency' => q(Kwanza Nua Angólach \(1990–2000\)),
 			},
 		},
 		'AOR' => {
 			display_name => {
-				'default' => q(Kwanza Reajustado Angólach (1995–1999)),
+				'currency' => q(Kwanza Reajustado Angólach \(1995–1999\)),
 			},
 		},
 		'ARA' => {
 			display_name => {
-				'default' => q(Austral Airgintíneach),
+				'currency' => q(Austral Airgintíneach),
 			},
 		},
 		'ARP' => {
 			display_name => {
-				'default' => q(Peso na Airgintíne (1983–1985)),
+				'currency' => q(Peso na Airgintíne \(1983–1985\)),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(Peso na Airgintíne),
+				'currency' => q(Peso na Airgintíne),
 			},
 		},
 		'ATS' => {
 			display_name => {
-				'default' => q(Scilling Ostarach),
+				'currency' => q(Scilling Ostarach),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Dollar Astrálach),
+				'currency' => q(Dollar Astrálach),
 			},
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(Guilder Aruba),
+				'currency' => q(Guilder Aruba),
 			},
 		},
 		'AZM' => {
 			display_name => {
-				'default' => q(Manat Asarbaiseánach),
+				'currency' => q(Manat Asarbaiseánach),
 			},
 		},
 		'BAD' => {
 			display_name => {
-				'default' => q(Dínear Bhoisnia-Heirseagaivéin),
+				'currency' => q(Dínear Bhoisnia-Heirseagaivéin),
 			},
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(Marc Inathraithe Bhoisnia-Heirseagaivéin),
+				'currency' => q(Marc Inathraithe Bhoisnia-Heirseagaivéin),
 			},
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(Dollar Bharbadóis),
+				'currency' => q(Dollar Bharbadóis),
 			},
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(Taka Bhanglaidéiseach),
+				'currency' => q(Taka Bhanglaidéiseach),
 			},
 		},
 		'BEC' => {
 			display_name => {
-				'default' => q(Franc Beilgeach (inathraithe)),
+				'currency' => q(Franc Beilgeach \(inathraithe\)),
 			},
 		},
 		'BEF' => {
 			display_name => {
-				'default' => q(Franc Beilgeach),
+				'currency' => q(Franc Beilgeach),
 			},
 		},
 		'BEL' => {
 			display_name => {
-				'default' => q(Franc Beilgeach (airgeadúil)),
+				'currency' => q(Franc Beilgeach \(airgeadúil\)),
 			},
 		},
 		'BGL' => {
 			display_name => {
-				'default' => q(Lev Bulgárach Crua),
+				'currency' => q(Lev Bulgárach Crua),
 			},
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(Lev Nua Bulgárach),
+				'currency' => q(Lev Nua Bulgárach),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Dínear na Bairéine),
+				'currency' => q(Dínear na Bairéine),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Franc na Burúine),
+				'currency' => q(Franc na Burúine),
 			},
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(Dollar Bheirmiúda),
+				'currency' => q(Dollar Bheirmiúda),
 			},
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(Dollar Bhrúiné),
+				'currency' => q(Dollar Bhrúiné),
 			},
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(Boliviano),
+				'currency' => q(Boliviano),
 			},
 		},
 		'BOP' => {
 			display_name => {
-				'default' => q(Peso na Bolaive),
+				'currency' => q(Peso na Bolaive),
 			},
 		},
 		'BOV' => {
 			display_name => {
-				'default' => q(Mvdol Bolavach),
+				'currency' => q(Mvdol Bolavach),
 			},
 		},
 		'BRB' => {
 			display_name => {
-				'default' => q(Cruzeiro Novo Brasaíleach (1967–1986)),
+				'currency' => q(Cruzeiro Novo Brasaíleach \(1967–1986\)),
 			},
 		},
 		'BRC' => {
 			display_name => {
-				'default' => q(Cruzado Brasaíleach),
+				'currency' => q(Cruzado Brasaíleach),
 			},
 		},
 		'BRE' => {
 			display_name => {
-				'default' => q(Cruzeiro Brasaíleach (1990–1993)),
+				'currency' => q(Cruzeiro Brasaíleach \(1990–1993\)),
 			},
 		},
 		'BRL' => {
 			display_name => {
-				'default' => q(Real Brasaíleach),
+				'currency' => q(Real Brasaíleach),
 			},
 		},
 		'BRN' => {
 			display_name => {
-				'default' => q(Cruzado Novo Brasaíleach),
+				'currency' => q(Cruzado Novo Brasaíleach),
 			},
 		},
 		'BRR' => {
 			display_name => {
-				'default' => q(Cruzeiro Brasaíleach),
+				'currency' => q(Cruzeiro Brasaíleach),
 			},
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(Dollar na mBahámaí),
+				'currency' => q(Dollar na mBahámaí),
 			},
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(Ngultrum Bútánach),
+				'currency' => q(Ngultrum Bútánach),
 			},
 		},
 		'BUK' => {
 			display_name => {
-				'default' => q(Kyat Burmach),
+				'currency' => q(Kyat Burmach),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Pula Botsuánach),
+				'currency' => q(Pula Botsuánach),
 			},
 		},
 		'BYB' => {
 			display_name => {
-				'default' => q(Rúbal Nua Béalarúiseach (1994–1999)),
+				'currency' => q(Rúbal Nua Béalarúiseach \(1994–1999\)),
 			},
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(Rúbal Béalarúiseach),
+				'currency' => q(Rúbal Béalarúiseach),
 			},
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(Dollar na Beilíse),
+				'currency' => q(Dollar na Beilíse),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Dollar Ceanada),
+				'currency' => q(Dollar Ceanada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Franc Congolais an Chongó),
+				'currency' => q(Franc Congolais an Chongó),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Franc na hEilvéise),
+				'currency' => q(Franc na hEilvéise),
 			},
 		},
 		'CLF' => {
 			display_name => {
-				'default' => q(Unidades de Fomento na Sile),
+				'currency' => q(Unidades de Fomento na Sile),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(Peso na Sile),
+				'currency' => q(Peso na Sile),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Yuan Renminbi Síneach),
+				'currency' => q(Yuan Renminbi Síneach),
 			},
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(Peso na Colóime),
+				'currency' => q(Peso na Colóime),
 			},
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(Colon Chósta Ríce),
+				'currency' => q(Colon Chósta Ríce),
 			},
 		},
 		'CSK' => {
 			display_name => {
-				'default' => q(Koruna Crua na Seicslóvaice),
+				'currency' => q(Koruna Crua na Seicslóvaice),
 			},
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(Peso Cúba),
+				'currency' => q(Peso Cúba),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Escudo na Rinne Verde),
+				'currency' => q(Escudo na Rinne Verde),
 			},
 		},
 		'CYP' => {
 			display_name => {
-				'default' => q(Punt na Cipire),
+				'currency' => q(Punt na Cipire),
 			},
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(Koruna Phoblacht na Seice),
+				'currency' => q(Koruna Phoblacht na Seice),
 			},
 		},
 		'DDM' => {
 			display_name => {
-				'default' => q(Ostmark na hOirGhearmáine),
+				'currency' => q(Ostmark na hOirGhearmáine),
 			},
 		},
 		'DEM' => {
 			display_name => {
-				'default' => q(Deutsche Mark),
+				'currency' => q(Deutsche Mark),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Franc Djibouti),
+				'currency' => q(Franc Djibouti),
 			},
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(Krone Danmhargach),
+				'currency' => q(Krone Danmhargach),
 			},
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(Peso Doimineacach),
+				'currency' => q(Peso Doimineacach),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Dínear na hAilgéire),
+				'currency' => q(Dínear na hAilgéire),
 			},
 		},
 		'ECS' => {
 			display_name => {
-				'default' => q(Sucre Eacuadóir),
+				'currency' => q(Sucre Eacuadóir),
 			},
 		},
 		'ECV' => {
 			display_name => {
-				'default' => q(Unidad de Valor Constante (UVC) Eacuadóir),
+				'currency' => q(Unidad de Valor Constante \(UVC\) Eacuadóir),
 			},
 		},
 		'EEK' => {
 			display_name => {
-				'default' => q(Kroon na hEastóine),
+				'currency' => q(Kroon na hEastóine),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Punt na hÉigipte),
+				'currency' => q(Punt na hÉigipte),
 			},
 		},
 		'ESP' => {
 			display_name => {
-				'default' => q(Peseta Spáinneach),
+				'currency' => q(Peseta Spáinneach),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Birr na hAetóipe),
+				'currency' => q(Birr na hAetóipe),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Euro),
+				'currency' => q(Euro),
 			},
 		},
 		'FIM' => {
 			display_name => {
-				'default' => q(Markka Fionnlannach),
+				'currency' => q(Markka Fionnlannach),
 			},
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(Dollar Fhidsí),
+				'currency' => q(Dollar Fhidsí),
 			},
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(Punt Oileáin Fháclainne),
+				'currency' => q(Punt Oileáin Fháclainne),
 			},
 		},
 		'FRF' => {
 			display_name => {
-				'default' => q(Franc Francach),
+				'currency' => q(Franc Francach),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Punt Steirling),
+				'currency' => q(Punt Steirling),
 			},
 		},
 		'GEK' => {
 			display_name => {
-				'default' => q(Kupon Larit na Grúise),
+				'currency' => q(Kupon Larit na Grúise),
 			},
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(Lari na Grúise),
+				'currency' => q(Lari na Grúise),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Cedi Ghána),
+				'currency' => q(Cedi Ghána),
 			},
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(Punt Ghiobráltair),
+				'currency' => q(Punt Ghiobráltair),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Dalasi Gaimbia),
+				'currency' => q(Dalasi Gaimbia),
 			},
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(Franc Guine),
+				'currency' => q(Franc Guine),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Syli Guine),
+				'currency' => q(Syli Guine),
 			},
 		},
 		'GQE' => {
 			display_name => {
-				'default' => q(Ekwele Guineana na Guine Meánchriosaí),
+				'currency' => q(Ekwele Guineana na Guine Meánchriosaí),
 			},
 		},
 		'GRD' => {
 			display_name => {
-				'default' => q(Drachma Gréagach),
+				'currency' => q(Drachma Gréagach),
 			},
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(Quetzal Guatamala),
+				'currency' => q(Quetzal Guatamala),
 			},
 		},
 		'GWE' => {
 			display_name => {
-				'default' => q(Escudo na Guine Portaingéalaí),
+				'currency' => q(Escudo na Guine Portaingéalaí),
 			},
 		},
 		'GWP' => {
 			display_name => {
-				'default' => q(Peso Guine-Bhissau),
+				'currency' => q(Peso Guine-Bhissau),
 			},
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(Dollar na Guáine),
+				'currency' => q(Dollar na Guáine),
 			},
 		},
 		'HKD' => {
 			display_name => {
-				'default' => q(Dollar Hong Cong),
+				'currency' => q(Dollar Hong Cong),
 			},
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(Lempira Hondúrais),
+				'currency' => q(Lempira Hondúrais),
 			},
 		},
 		'HRD' => {
 			display_name => {
-				'default' => q(Dínear na Cróite),
+				'currency' => q(Dínear na Cróite),
 			},
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(Kuna Crótach),
+				'currency' => q(Kuna Crótach),
 			},
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(Gourde Háití),
+				'currency' => q(Gourde Háití),
 			},
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(Forint Ungárach),
+				'currency' => q(Forint Ungárach),
 			},
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(Rupiah Indinéiseach),
+				'currency' => q(Rupiah Indinéiseach),
 			},
 		},
 		'IEP' => {
 			display_name => {
-				'default' => q(Punt Éireannach),
+				'currency' => q(Punt Éireannach),
 			},
 		},
 		'ILP' => {
 			display_name => {
-				'default' => q(Punt Iosraelach),
+				'currency' => q(Punt Iosraelach),
 			},
 		},
 		'ILS' => {
 			display_name => {
-				'default' => q(Sheqel Nua Iosraelach),
+				'currency' => q(Sheqel Nua Iosraelach),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Rúipí India),
+				'currency' => q(Rúipí India),
 			},
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(Dínear Irácach),
+				'currency' => q(Dínear Irácach),
 			},
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(Rial Iaránach),
+				'currency' => q(Rial Iaránach),
 			},
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(Krona Íoslannach),
+				'currency' => q(Krona Íoslannach),
 			},
 		},
 		'ITL' => {
 			display_name => {
-				'default' => q(Lira Iodálach),
+				'currency' => q(Lira Iodálach),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(Dollar Iamácach),
+				'currency' => q(Dollar Iamácach),
 			},
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(Dínear Iordánach),
+				'currency' => q(Dínear Iordánach),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Yen Seapánach),
+				'currency' => q(Yen Seapánach),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Scilling Céiniach),
+				'currency' => q(Scilling Céiniach),
 			},
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(Som na Cirgeastáine),
+				'currency' => q(Som na Cirgeastáine),
 			},
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(Riel na Cambóide),
+				'currency' => q(Riel na Cambóide),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Franc Chomóra),
+				'currency' => q(Franc Chomóra),
 			},
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(Won na Cóiré Thuaidh),
+				'currency' => q(Won na Cóiré Thuaidh),
 			},
 		},
 		'KRW' => {
 			display_name => {
-				'default' => q(Won na Cóiré Theas),
+				'currency' => q(Won na Cóiré Theas),
 			},
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(Dínear Cuátach),
+				'currency' => q(Dínear Cuátach),
 			},
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(Dollar Oileáin Cayman),
+				'currency' => q(Dollar Oileáin Cayman),
 			},
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(Tenge Casacstánach),
+				'currency' => q(Tenge Casacstánach),
 			},
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(Kip Laosach),
+				'currency' => q(Kip Laosach),
 			},
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(Punt na Liobáine),
+				'currency' => q(Punt na Liobáine),
 			},
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(Rúipí Srí Lanca),
+				'currency' => q(Rúipí Srí Lanca),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Dollar na Libéire),
+				'currency' => q(Dollar na Libéire),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Loti Leosóta),
+				'currency' => q(Loti Leosóta),
 			},
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(Lita Liotuánach),
+				'currency' => q(Lita Liotuánach),
 			},
 		},
 		'LTT' => {
 			display_name => {
-				'default' => q(Talonas Liotuánach),
+				'currency' => q(Talonas Liotuánach),
 			},
 		},
 		'LUF' => {
 			display_name => {
-				'default' => q(Franc Lucsamburg),
+				'currency' => q(Franc Lucsamburg),
 			},
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(Lats Laitviach),
+				'currency' => q(Lats Laitviach),
 			},
 		},
 		'LVR' => {
 			display_name => {
-				'default' => q(Rúbal Laitviach),
+				'currency' => q(Rúbal Laitviach),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Dínear Libia),
+				'currency' => q(Dínear Libia),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Dirham Mharacó),
+				'currency' => q(Dirham Mharacó),
 			},
 		},
 		'MAF' => {
 			display_name => {
-				'default' => q(Franc Mharacó),
+				'currency' => q(Franc Mharacó),
 			},
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(Leu Moldóvach),
+				'currency' => q(Leu Moldóvach),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Ariary Madagascar),
+				'currency' => q(Ariary Madagascar),
 			},
 		},
 		'MGF' => {
 			display_name => {
-				'default' => q(Franc Madagascar),
+				'currency' => q(Franc Madagascar),
 			},
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(Denar na Macadóine),
+				'currency' => q(Denar na Macadóine),
 			},
 		},
 		'MLF' => {
 			display_name => {
-				'default' => q(Franc Mhailí),
+				'currency' => q(Franc Mhailí),
 			},
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(Kyat Mhaenmar),
+				'currency' => q(Kyat Mhaenmar),
 			},
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(Tugrik Mongólach),
+				'currency' => q(Tugrik Mongólach),
 			},
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(Pataca Macao),
+				'currency' => q(Pataca Macao),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Ouguiya na Maratáine),
+				'currency' => q(Ouguiya na Maratáine),
 			},
 		},
 		'MTL' => {
 			display_name => {
-				'default' => q(Lira Maltach),
+				'currency' => q(Lira Maltach),
 			},
 		},
 		'MTP' => {
 			display_name => {
-				'default' => q(Punt Maltach),
+				'currency' => q(Punt Maltach),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Rúipí Oileán Mhuirís),
+				'currency' => q(Rúipí Oileán Mhuirís),
 			},
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(Maldive Islands Rufiyaa),
+				'currency' => q(Maldive Islands Rufiyaa),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Kwacha na Maláive),
+				'currency' => q(Kwacha na Maláive),
 			},
 		},
 		'MXN' => {
 			display_name => {
-				'default' => q(Peso Meicsiceo),
+				'currency' => q(Peso Meicsiceo),
 			},
 		},
 		'MXP' => {
 			display_name => {
-				'default' => q(Peso Airgid Meicsiceo (1861–1992)),
+				'currency' => q(Peso Airgid Meicsiceo \(1861–1992\)),
 			},
 		},
 		'MXV' => {
 			display_name => {
-				'default' => q(Unidad de Inversion (UDI) Meicsiceo),
+				'currency' => q(Unidad de Inversion \(UDI\) Meicsiceo),
 			},
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(Ringgit Malaeisia),
+				'currency' => q(Ringgit Malaeisia),
 			},
 		},
 		'MZE' => {
 			display_name => {
-				'default' => q(Escudo Mósaimbíce),
+				'currency' => q(Escudo Mósaimbíce),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Metical Mósaimbíce),
+				'currency' => q(Metical Mósaimbíce),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Dollar na Namaibe),
+				'currency' => q(Dollar na Namaibe),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Naira Nígéarach),
+				'currency' => q(Naira Nígéarach),
 			},
 		},
 		'NIC' => {
 			display_name => {
-				'default' => q(Cordoba Nicearagua),
+				'currency' => q(Cordoba Nicearagua),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(Cordoba Oro Nicearagua),
+				'currency' => q(Cordoba Oro Nicearagua),
 			},
 		},
 		'NLG' => {
 			display_name => {
-				'default' => q(Guilder Ísiltíreach),
+				'currency' => q(Guilder Ísiltíreach),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(Krone Ioruach),
+				'currency' => q(Krone Ioruach),
 			},
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(Rúipí Neipeáil),
+				'currency' => q(Rúipí Neipeáil),
 			},
 		},
 		'NZD' => {
 			display_name => {
-				'default' => q(Dollar na Nua-Shéalainne),
+				'currency' => q(Dollar na Nua-Shéalainne),
 			},
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(Rial Omain),
+				'currency' => q(Rial Omain),
 			},
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(Balboa Panamach),
+				'currency' => q(Balboa Panamach),
 			},
 		},
 		'PEI' => {
 			display_name => {
-				'default' => q(Inti Pheiriú),
+				'currency' => q(Inti Pheiriú),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(Sol Nuevo Pheiriú),
+				'currency' => q(Sol Nuevo Pheiriú),
 			},
 		},
 		'PES' => {
 			display_name => {
-				'default' => q(Sol Pheiriú),
+				'currency' => q(Sol Pheiriú),
 			},
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(Kina Nua-Ghuine Phapua),
+				'currency' => q(Kina Nua-Ghuine Phapua),
 			},
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(Peso Filipíneach),
+				'currency' => q(Peso Filipíneach),
 			},
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(Rúipí na Pacastáine),
+				'currency' => q(Rúipí na Pacastáine),
 			},
 		},
 		'PLN' => {
 			display_name => {
-				'default' => q(Zloty Polannach),
+				'currency' => q(Zloty Polannach),
 			},
 		},
 		'PLZ' => {
 			display_name => {
-				'default' => q(Zloty Polannach (1950–1995)),
+				'currency' => q(Zloty Polannach \(1950–1995\)),
 			},
 		},
 		'PTE' => {
 			display_name => {
-				'default' => q(Escudo Portaingélach),
+				'currency' => q(Escudo Portaingélach),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(Guarani Pharagua),
+				'currency' => q(Guarani Pharagua),
 			},
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(Rial Catarach),
+				'currency' => q(Rial Catarach),
 			},
 		},
 		'ROL' => {
 			display_name => {
-				'default' => q(Leu Rómánach),
+				'currency' => q(Leu Rómánach),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(Rúbal Rúiseach),
+				'currency' => q(Rúbal Rúiseach),
 			},
 		},
 		'RUR' => {
 			display_name => {
-				'default' => q(Rúbal Rúiseach (1991–1998)),
+				'currency' => q(Rúbal Rúiseach \(1991–1998\)),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Franc Ruanda),
+				'currency' => q(Franc Ruanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Riyal Sádach),
+				'currency' => q(Riyal Sádach),
 			},
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(Dollar Oileáin Solomon),
+				'currency' => q(Dollar Oileáin Solomon),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Rúipí na Séiséil),
+				'currency' => q(Rúipí na Séiséil),
 			},
 		},
 		'SDD' => {
 			display_name => {
-				'default' => q(Dínear na Súdáine),
+				'currency' => q(Dínear na Súdáine),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(Punt na Súdáine),
+				'currency' => q(Punt na Súdáine),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(Krona Sualannach),
+				'currency' => q(Krona Sualannach),
 			},
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(Dollar Singeapóir),
+				'currency' => q(Dollar Singeapóir),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Punt San Héilin),
+				'currency' => q(Punt San Héilin),
 			},
 		},
 		'SIT' => {
 			display_name => {
-				'default' => q(Tolar Slóvénach),
+				'currency' => q(Tolar Slóvénach),
 			},
 		},
 		'SKK' => {
 			display_name => {
-				'default' => q(Koruna na Slóvaice),
+				'currency' => q(Koruna na Slóvaice),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Leone Shiarra Leon),
+				'currency' => q(Leone Shiarra Leon),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Scilling na Sómáile),
+				'currency' => q(Scilling na Sómáile),
 			},
 		},
 		'SRG' => {
 			display_name => {
-				'default' => q(Guilder Shuranaim),
+				'currency' => q(Guilder Shuranaim),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Dobra Sao Tome agus Principe),
+				'currency' => q(Dobra Sao Tome agus Principe),
 			},
 		},
 		'SUR' => {
 			display_name => {
-				'default' => q(Rúbal Sóvéadach),
+				'currency' => q(Rúbal Sóvéadach),
 			},
 		},
 		'SVC' => {
 			display_name => {
-				'default' => q(Colon na Salvadóire),
+				'currency' => q(Colon na Salvadóire),
 			},
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(Punt Siria),
+				'currency' => q(Punt Siria),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lilangeni na Suasalainne),
+				'currency' => q(Lilangeni na Suasalainne),
 			},
 		},
 		'THB' => {
 			display_name => {
-				'default' => q(Baht na Téalainne),
+				'currency' => q(Baht na Téalainne),
 			},
 		},
 		'TJR' => {
 			display_name => {
-				'default' => q(Rúbal na Táidsíceastáine),
+				'currency' => q(Rúbal na Táidsíceastáine),
 			},
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(Somoni na Táidsíceastáine),
+				'currency' => q(Somoni na Táidsíceastáine),
 			},
 		},
 		'TMM' => {
 			display_name => {
-				'default' => q(Manat na An Tuircméanastáine),
+				'currency' => q(Manat na An Tuircméanastáine),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Dínear na Túinéise),
+				'currency' => q(Dínear na Túinéise),
 			},
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(Paʻanga Tonga),
+				'currency' => q(Paʻanga Tonga),
 			},
 		},
 		'TPE' => {
 			display_name => {
-				'default' => q(Escudo Tíomóir),
+				'currency' => q(Escudo Tíomóir),
 			},
 		},
 		'TRL' => {
 			display_name => {
-				'default' => q(Lira Turcach),
+				'currency' => q(Lira Turcach),
 			},
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(Dollar Oileáin na Tríonóide agus Tobága),
+				'currency' => q(Dollar Oileáin na Tríonóide agus Tobága),
 			},
 		},
 		'TWD' => {
 			display_name => {
-				'default' => q(Dollar Nua na Téaváine),
+				'currency' => q(Dollar Nua na Téaváine),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Scilling na Tansáine),
+				'currency' => q(Scilling na Tansáine),
 			},
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(Hryvnia Úcránach),
+				'currency' => q(Hryvnia Úcránach),
 			},
 		},
 		'UAK' => {
 			display_name => {
-				'default' => q(Karbovanetz Úcránach),
+				'currency' => q(Karbovanetz Úcránach),
 			},
 		},
 		'UGS' => {
 			display_name => {
-				'default' => q(Scilling Uganda (1966–1987)),
+				'currency' => q(Scilling Uganda \(1966–1987\)),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Scilling Uganda),
+				'currency' => q(Scilling Uganda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Dollar S.A.M.),
+				'currency' => q(Dollar S.A.M.),
 			},
 		},
 		'USN' => {
 			display_name => {
-				'default' => q(Dollar S.A.M. (an chéad lá eile)),
+				'currency' => q(Dollar S.A.M. \(an chéad lá eile\)),
 			},
 		},
 		'USS' => {
 			display_name => {
-				'default' => q(Dollar S.A.M. (an la céanna)),
+				'currency' => q(Dollar S.A.M. \(an la céanna\)),
 			},
 		},
 		'UYP' => {
 			display_name => {
-				'default' => q(Peso Uragua (1975–1993)),
+				'currency' => q(Peso Uragua \(1975–1993\)),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(Peso Uruguayo Uragua),
+				'currency' => q(Peso Uruguayo Uragua),
 			},
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(Sum na hÚisbéiceastáine),
+				'currency' => q(Sum na hÚisbéiceastáine),
 			},
 		},
 		'VEB' => {
 			display_name => {
-				'default' => q(Bolivar Veiniséala (1871–2008)),
+				'currency' => q(Bolivar Veiniséala \(1871–2008\)),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(Bolivar Veiniséala),
+				'currency' => q(Bolivar Veiniséala),
 			},
 		},
 		'VND' => {
 			display_name => {
-				'default' => q(Dong Vítneamach),
+				'currency' => q(Dong Vítneamach),
 			},
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(Vatu Vanuatú),
+				'currency' => q(Vatu Vanuatú),
 			},
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(Tala Samó Thiar),
+				'currency' => q(Tala Samó Thiar),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(CFA Franc BEAC),
+				'currency' => q(CFA Franc BEAC),
 			},
 		},
 		'XAU' => {
 			display_name => {
-				'default' => q(Ór),
+				'currency' => q(Ór),
 			},
 		},
 		'XBA' => {
 			display_name => {
-				'default' => q(Aonad Ilchodach Eorpach),
+				'currency' => q(Aonad Ilchodach Eorpach),
 			},
 		},
 		'XBB' => {
 			display_name => {
-				'default' => q(Aonad Airgeadaíochta Eorpach),
+				'currency' => q(Aonad Airgeadaíochta Eorpach),
 			},
 		},
 		'XBC' => {
 			display_name => {
-				'default' => q(Aonad Cuntais Eorpach (XBC)),
+				'currency' => q(Aonad Cuntais Eorpach \(XBC\)),
 			},
 		},
 		'XBD' => {
 			display_name => {
-				'default' => q(Aonad Cuntais Eorpach (XBD)),
+				'currency' => q(Aonad Cuntais Eorpach \(XBD\)),
 			},
 		},
 		'XCD' => {
 			display_name => {
-				'default' => q(Dollar Oirthear na Cairibe),
+				'currency' => q(Dollar Oirthear na Cairibe),
 			},
 		},
 		'XDR' => {
 			display_name => {
-				'default' => q(Cearta Speisialta Tarraingthe),
+				'currency' => q(Cearta Speisialta Tarraingthe),
 			},
 		},
 		'XEU' => {
 			display_name => {
-				'default' => q(Aonad Airgeadra Eorpach),
+				'currency' => q(Aonad Airgeadra Eorpach),
 			},
 		},
 		'XFO' => {
 			display_name => {
-				'default' => q(Franc Ór Francach),
+				'currency' => q(Franc Ór Francach),
 			},
 		},
 		'XFU' => {
 			display_name => {
-				'default' => q(UIC-Franc Francach),
+				'currency' => q(UIC-Franc Francach),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(CFA Franc BCEAO),
+				'currency' => q(CFA Franc BCEAO),
 			},
 		},
 		'XPF' => {
 			display_name => {
-				'default' => q(CFP Franc),
+				'currency' => q(CFP Franc),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(Airgeadra Anaithnid nó Neamhbhailí),
+				'currency' => q(Airgeadra Anaithnid nó Neamhbhailí),
 			},
 		},
 		'YDD' => {
 			display_name => {
-				'default' => q(Dínear Éimin),
+				'currency' => q(Dínear Éimin),
 			},
 		},
 		'YER' => {
 			display_name => {
-				'default' => q(Rial Éimin),
+				'currency' => q(Rial Éimin),
 			},
 		},
 		'YUD' => {
 			display_name => {
-				'default' => q(Dínear Crua Iúgslavach),
+				'currency' => q(Dínear Crua Iúgslavach),
 			},
 		},
 		'YUM' => {
 			display_name => {
-				'default' => q(Noviy Dinar Iúgslavach),
+				'currency' => q(Noviy Dinar Iúgslavach),
 			},
 		},
 		'YUN' => {
 			display_name => {
-				'default' => q(Dínear Inathraithe Iúgslavach),
+				'currency' => q(Dínear Inathraithe Iúgslavach),
 			},
 		},
 		'ZAL' => {
 			display_name => {
-				'default' => q(Rand na hAfraice Theas (airgeadúil)),
+				'currency' => q(Rand na hAfraice Theas \(airgeadúil\)),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Rand na hAfraice Theas),
+				'currency' => q(Rand na hAfraice Theas),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Kwacha Saimbiach (1968–2012)),
+				'currency' => q(Kwacha Saimbiach \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Kwacha Saimbiach),
+				'currency' => q(Kwacha Saimbiach),
 			},
 		},
 		'ZRN' => {
 			display_name => {
-				'default' => q(Zaire Nua Sáíreach),
+				'currency' => q(Zaire Nua Sáíreach),
 			},
 		},
 		'ZRZ' => {
 			display_name => {
-				'default' => q(Zaire Sáíreach),
+				'currency' => q(Zaire Sáíreach),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Dollar Siombábach),
+				'currency' => q(Dollar Siombábach),
 			},
 		},
 	} },
@@ -2039,8 +2039,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{p.m.},
 					'am' => q{a.m.},
+					'pm' => q{p.m.},
 				},
 			},
 		},

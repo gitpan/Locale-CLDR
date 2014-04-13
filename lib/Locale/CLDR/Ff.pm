@@ -1,6 +1,6 @@
-package Locale::CLDR::Ff;
+package Locale::CLDR::Ff v0.0.4;
 # This file auto generated from Data\common\main\ff.xml
-#	on Mon 31 Mar 12:20:48 am GMT
+#	on Sun 13 Apr 10:18:34 am GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use v5.18;
@@ -410,277 +410,277 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Dirham Emiraati Araab Dentuɗi),
+				'currency' => q(Dirham Emiraati Araab Dentuɗi),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Kwansaa Anngolaa),
+				'currency' => q(Kwansaa Anngolaa),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Dolaar Ostaraalii),
+				'currency' => q(Dolaar Ostaraalii),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Dinaar Bahrayn),
+				'currency' => q(Dinaar Bahrayn),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Mbuuɗu Burunndi),
+				'currency' => q(Mbuuɗu Burunndi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Pulaa Botwanaa),
+				'currency' => q(Pulaa Botwanaa),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Dolaar Kandaaa),
+				'currency' => q(Dolaar Kandaaa),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Faraa Konngo),
+				'currency' => q(Faraa Konngo),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Faraa Suwiis),
+				'currency' => q(Faraa Suwiis),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Yuam Siin),
+				'currency' => q(Yuam Siin),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Eskudoo Kap Weer),
+				'currency' => q(Eskudoo Kap Weer),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Faraa Jibutii),
+				'currency' => q(Faraa Jibutii),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Dinaar Alaseri),
+				'currency' => q(Dinaar Alaseri),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Liibar Ejipt),
+				'currency' => q(Liibar Ejipt),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Nafka Eriteree),
+				'currency' => q(Nafka Eriteree),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Biir Ecoppi),
+				'currency' => q(Biir Ecoppi),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Oroo),
+				'currency' => q(Oroo),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Liibar Sterling),
+				'currency' => q(Liibar Sterling),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Sedi Ganaa),
+				'currency' => q(Sedi Ganaa),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Dalasi Gammbi),
+				'currency' => q(Dalasi Gammbi),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Faraa Gine),
+				'currency' => q(Faraa Gine),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Rupii Enndo),
+				'currency' => q(Rupii Enndo),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Yen Sapoo),
+				'currency' => q(Yen Sapoo),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Siling Keñaa),
+				'currency' => q(Siling Keñaa),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Faraa Komoor),
+				'currency' => q(Faraa Komoor),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Dolaar Liberiyaa),
+				'currency' => q(Dolaar Liberiyaa),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Loti Lesotoo),
+				'currency' => q(Loti Lesotoo),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Dinaar Libi),
+				'currency' => q(Dinaar Libi),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Diraham Maruk),
+				'currency' => q(Diraham Maruk),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Ariyari Madagaskaar),
+				'currency' => q(Ariyari Madagaskaar),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Ugiyya Muritani),
+				'currency' => q(Ugiyya Muritani),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Rupii Moriis),
+				'currency' => q(Rupii Moriis),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Kuwacca Malaawi),
+				'currency' => q(Kuwacca Malaawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Metikal Mosammbik),
+				'currency' => q(Metikal Mosammbik),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Dolaar Namibii),
+				'currency' => q(Dolaar Namibii),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Nayraa Nijeriyaa),
+				'currency' => q(Nayraa Nijeriyaa),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Faraa Ruwanndaa),
+				'currency' => q(Faraa Ruwanndaa),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Riyaal Arabi Sawdit),
+				'currency' => q(Riyaal Arabi Sawdit),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Rupii Seysel),
+				'currency' => q(Rupii Seysel),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Liibar Sudaan),
+				'currency' => q(Liibar Sudaan),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Liibar Sent Helen),
+				'currency' => q(Liibar Sent Helen),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Lewoon Seraa Liyon),
+				'currency' => q(Lewoon Seraa Liyon),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Siling Soomali),
+				'currency' => q(Siling Soomali),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Dobra Sawo Tome e Prensipe),
+				'currency' => q(Dobra Sawo Tome e Prensipe),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lilangeni Swaasilannda),
+				'currency' => q(Lilangeni Swaasilannda),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Dinaar Tunisii),
+				'currency' => q(Dinaar Tunisii),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Siling Tansanii),
+				'currency' => q(Siling Tansanii),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Siling Uganndaa),
+				'currency' => q(Siling Uganndaa),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Dolaar Dowlaaji Dentuɗi),
+				'currency' => q(Dolaar Dowlaaji Dentuɗi),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Mbuuɗi Seefaa BEAC),
+				'currency' => q(Mbuuɗi Seefaa BEAC),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Mbuuɗu Seefaa BCEAO),
+				'currency' => q(Mbuuɗu Seefaa BCEAO),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Rannda Afrik Bŋ Worgo),
+				'currency' => q(Rannda Afrik Bŋ Worgo),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Kuwacca Sammbi (1968–2012)),
+				'currency' => q(Kuwacca Sammbi \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Kuwacca Sammbi),
+				'currency' => q(Kuwacca Sammbi),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Dolaar Simbaabuwe),
+				'currency' => q(Dolaar Simbaabuwe),
 			},
 		},
 	} },
@@ -973,3 +973,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

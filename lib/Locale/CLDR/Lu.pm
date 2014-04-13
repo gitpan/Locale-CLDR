@@ -1,6 +1,6 @@
-package Locale::CLDR::Lu;
+package Locale::CLDR::Lu v0.0.4;
 # This file auto generated from Data\common\main\lu.xml
-#	on Mon 31 Mar  1:14:07 am GMT
+#	on Sun 13 Apr 11:14:12 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -423,283 +423,283 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Ndiriha wa Lemila alabu),
+				'currency' => q(Ndiriha wa Lemila alabu),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Kwanza wa Angola),
+				'currency' => q(Kwanza wa Angola),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Ndola wa Ositali),
+				'currency' => q(Ndola wa Ositali),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Ndina wa Bahrene),
+				'currency' => q(Ndina wa Bahrene),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Nfalanga wa Bulundi),
+				'currency' => q(Nfalanga wa Bulundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Pula wa Botswana),
+				'currency' => q(Pula wa Botswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Ndola wa Kanada),
+				'currency' => q(Ndola wa Kanada),
 			},
 		},
 		'CDF' => {
 			symbol => 'FC',
 			display_name => {
-				'default' => q(Nfalanga wa Kongu),
+				'currency' => q(Nfalanga wa Kongu),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Nfalanga wa Swise),
+				'currency' => q(Nfalanga wa Swise),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Yuani Renminbi wa Shine),
+				'currency' => q(Yuani Renminbi wa Shine),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Esikuludo wa Kapevere),
+				'currency' => q(Esikuludo wa Kapevere),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Nfalanga wa Dzibuti),
+				'currency' => q(Nfalanga wa Dzibuti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Ndina wa Alijeri),
+				'currency' => q(Ndina wa Alijeri),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Pauni wa Mushidi),
+				'currency' => q(Pauni wa Mushidi),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Nakfa wa Elitle),
+				'currency' => q(Nakfa wa Elitle),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Bira wa Etshiopi),
+				'currency' => q(Bira wa Etshiopi),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Iro),
+				'currency' => q(Iro),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Pauni wa Angeletele),
+				'currency' => q(Pauni wa Angeletele),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Sedi wa Ngana),
+				'currency' => q(Sedi wa Ngana),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Ndalasi wa Ngambi),
+				'currency' => q(Ndalasi wa Ngambi),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Nfalanga wa Ngina),
+				'currency' => q(Nfalanga wa Ngina),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Rupi wa Inde),
+				'currency' => q(Rupi wa Inde),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Yeni wa Zapɔ),
+				'currency' => q(Yeni wa Zapɔ),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Nshili wa Kenya),
+				'currency' => q(Nshili wa Kenya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Nfalanga wa Komoru),
+				'currency' => q(Nfalanga wa Komoru),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Ndola wa Liberya),
+				'currency' => q(Ndola wa Liberya),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Loti wa Lesoto),
+				'currency' => q(Loti wa Lesoto),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Ndina wa Libi),
+				'currency' => q(Ndina wa Libi),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Ndiriha wa Maroke),
+				'currency' => q(Ndiriha wa Maroke),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Nfalanga wa Madagasikare),
+				'currency' => q(Nfalanga wa Madagasikare),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Ugwiya wa Moritani),
+				'currency' => q(Ugwiya wa Moritani),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Rupia wa Morisi),
+				'currency' => q(Rupia wa Morisi),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Kwasha wa Malawi),
+				'currency' => q(Kwasha wa Malawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Metikali wa Mozambiki),
+				'currency' => q(Metikali wa Mozambiki),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Ndola wa Namibi),
+				'currency' => q(Ndola wa Namibi),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Naira wa Nizerya),
+				'currency' => q(Naira wa Nizerya),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Nfalanga wa Rwanda),
+				'currency' => q(Nfalanga wa Rwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Riyale wa Alabu Nsawu),
+				'currency' => q(Riyale wa Alabu Nsawu),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Rupya wa Seshele),
+				'currency' => q(Rupya wa Seshele),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Ndina wa Suda),
+				'currency' => q(Ndina wa Suda),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(Pauni wa Suda),
+				'currency' => q(Pauni wa Suda),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Pauni wa Santu Elena),
+				'currency' => q(Pauni wa Santu Elena),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Leone),
+				'currency' => q(Leone),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Nshili wa Somali),
+				'currency' => q(Nshili wa Somali),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Dobra wa Sao Tome ne Presipe),
+				'currency' => q(Dobra wa Sao Tome ne Presipe),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lilangeni),
+				'currency' => q(Lilangeni),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Ndina wa Tinizi),
+				'currency' => q(Ndina wa Tinizi),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Nshili wa Tanzani),
+				'currency' => q(Nshili wa Tanzani),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Nshili wa Uganda),
+				'currency' => q(Nshili wa Uganda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Ndola wa Ameriki),
+				'currency' => q(Ndola wa Ameriki),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Nfalanga CFA BEAC),
+				'currency' => q(Nfalanga CFA BEAC),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Nfalanga CFA BCEAO),
+				'currency' => q(Nfalanga CFA BCEAO),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Rande wa Afrika wa Mwinshi),
+				'currency' => q(Rande wa Afrika wa Mwinshi),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Kwasha wa Zambi (1968–2012)),
+				'currency' => q(Kwasha wa Zambi \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Kwasha wa Zambi),
+				'currency' => q(Kwasha wa Zambi),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Ndola wa Zimbabwe),
+				'currency' => q(Ndola wa Zimbabwe),
 			},
 		},
 	} },
@@ -848,8 +848,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{Dilolo},
 					'am' => q{Dinda},
+					'pm' => q{Dilolo},
 				},
 			},
 		},
@@ -929,7 +929,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -953,7 +953,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -996,3 +996,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

@@ -1,6 +1,6 @@
-package Locale::CLDR::Sbp;
+package Locale::CLDR::Sbp v0.0.4;
 # This file auto generated from Data\common\main\sbp.xml
-#	on Mon 31 Mar  1:50:40 am GMT
+#	on Sun 13 Apr 11:51:05 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -432,278 +432,278 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Ihela ya Shitwa sha Shiyalabu),
+				'currency' => q(Ihela ya Shitwa sha Shiyalabu),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Ihela ya Angola),
+				'currency' => q(Ihela ya Angola),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Ihela ya Awusitilaliya),
+				'currency' => q(Ihela ya Awusitilaliya),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Ihela ya Bahaleni),
+				'currency' => q(Ihela ya Bahaleni),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Ihela ya Bulundi),
+				'currency' => q(Ihela ya Bulundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Ihela ya Botiswana),
+				'currency' => q(Ihela ya Botiswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Ihela ya Kanada),
+				'currency' => q(Ihela ya Kanada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Ihela ya Kongo),
+				'currency' => q(Ihela ya Kongo),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Ihela ya Uswisi),
+				'currency' => q(Ihela ya Uswisi),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Ihela ya Shina),
+				'currency' => q(Ihela ya Shina),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Ihela ya Kepuvede),
+				'currency' => q(Ihela ya Kepuvede),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Ihela ya Jibuti),
+				'currency' => q(Ihela ya Jibuti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Ihela ya Alijeliya),
+				'currency' => q(Ihela ya Alijeliya),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Ihela ya Misili),
+				'currency' => q(Ihela ya Misili),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Ihela ya Elitileya),
+				'currency' => q(Ihela ya Elitileya),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Ihela ya Uhabeshi),
+				'currency' => q(Ihela ya Uhabeshi),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Ihela ya Ulaya),
+				'currency' => q(Ihela ya Ulaya),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Ihela ya Uwingelesa),
+				'currency' => q(Ihela ya Uwingelesa),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Ihela ya Ghana),
+				'currency' => q(Ihela ya Ghana),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Ihela ya Gambiya),
+				'currency' => q(Ihela ya Gambiya),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Ihela ya Gine),
+				'currency' => q(Ihela ya Gine),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Ihela ya Indiya),
+				'currency' => q(Ihela ya Indiya),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Ihela ya Japani),
+				'currency' => q(Ihela ya Japani),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Ihela ya Kenya),
+				'currency' => q(Ihela ya Kenya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Ihela ya Komolo),
+				'currency' => q(Ihela ya Komolo),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Ihela ya Libeliya),
+				'currency' => q(Ihela ya Libeliya),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Ihela ya Lesoto),
+				'currency' => q(Ihela ya Lesoto),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Ihela ya Libiya),
+				'currency' => q(Ihela ya Libiya),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Ihela ya Moloko),
+				'currency' => q(Ihela ya Moloko),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Ihela ya Bukini),
+				'currency' => q(Ihela ya Bukini),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Ihela ya Molitaniya),
+				'currency' => q(Ihela ya Molitaniya),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Ihela ya Molisi),
+				'currency' => q(Ihela ya Molisi),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Ihela ya Malawi),
+				'currency' => q(Ihela ya Malawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Ihela ya Musumbiji),
+				'currency' => q(Ihela ya Musumbiji),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Ihela ya Namibiya),
+				'currency' => q(Ihela ya Namibiya),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Ihela ya Nijeliya),
+				'currency' => q(Ihela ya Nijeliya),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Ihela ya Lwanda),
+				'currency' => q(Ihela ya Lwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Ihela ya Sawudiya),
+				'currency' => q(Ihela ya Sawudiya),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Ihela ya Shelisheli),
+				'currency' => q(Ihela ya Shelisheli),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Ihela ya Sudani),
+				'currency' => q(Ihela ya Sudani),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Ihela ya Santahelena),
+				'currency' => q(Ihela ya Santahelena),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Ihela ya Siela Liyoni),
+				'currency' => q(Ihela ya Siela Liyoni),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Ihela ya Somaliya),
+				'currency' => q(Ihela ya Somaliya),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Ihela ya Sao Tome ni Pilinsipe),
+				'currency' => q(Ihela ya Sao Tome ni Pilinsipe),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Ihela ya Uswasi),
+				'currency' => q(Ihela ya Uswasi),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Ihela ya Tunisiya),
+				'currency' => q(Ihela ya Tunisiya),
 			},
 		},
 		'TZS' => {
 			symbol => 'TSh',
 			display_name => {
-				'default' => q(Ihela ya Tansaniya),
+				'currency' => q(Ihela ya Tansaniya),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Ihela ya Uganda),
+				'currency' => q(Ihela ya Uganda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Ihela ya Malekani),
+				'currency' => q(Ihela ya Malekani),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Ihela ya CFA BEAC),
+				'currency' => q(Ihela ya CFA BEAC),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Ihela ya CFA BCEAO),
+				'currency' => q(Ihela ya CFA BCEAO),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Ihela ya Afilika Kusini),
+				'currency' => q(Ihela ya Afilika Kusini),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Ihela ya Sambiya (1968–2012)),
+				'currency' => q(Ihela ya Sambiya \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Ihela ya Sambiya),
+				'currency' => q(Ihela ya Sambiya),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Ihela ya Simbabwe),
+				'currency' => q(Ihela ya Simbabwe),
 			},
 		},
 	} },
@@ -831,8 +831,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{Lwamilawu},
 					'pm' => q{Pashamihe},
+					'am' => q{Lwamilawu},
 				},
 			},
 		},
@@ -979,3 +979,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

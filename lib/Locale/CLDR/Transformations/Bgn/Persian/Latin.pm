@@ -1,6 +1,6 @@
-package Locale::CLDR::Transformations::Bgn::Persian::Latin;
+package Locale::CLDR::Transformations::Bgn::Persian::Latin v0.0.4;
 # This file auto generated from Data\common\transforms\Persian-Latin-BGN.xml
-#	on Sat 12 Apr  8:33:25 am GMT
+#	on Sun 13 Apr  9:30:08 am GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
 use v5.18;

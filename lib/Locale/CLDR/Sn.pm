@@ -1,6 +1,6 @@
-package Locale::CLDR::Sn;
+package Locale::CLDR::Sn v0.0.4;
 # This file auto generated from Data\common\main\sn.xml
-#	on Mon 31 Mar  1:56:09 am GMT
+#	on Sun 13 Apr 11:56:40 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -363,9 +363,6 @@ has 'nostr' => (
 	default		=> sub { qr'^(?i:Kwete|K|no|n)$' }
 );
 
-	} }
-);
-
 has 'number_currency_formats' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -395,282 +392,282 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Diramu re United Arab Emirates),
+				'currency' => q(Diramu re United Arab Emirates),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Kwanza ye Angola),
+				'currency' => q(Kwanza ye Angola),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Dora re Australia),
+				'currency' => q(Dora re Australia),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Dhinari re Bhahareni),
+				'currency' => q(Dhinari re Bhahareni),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Furenki re Bhurundi),
+				'currency' => q(Furenki re Bhurundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Pura re Botswana),
+				'currency' => q(Pura re Botswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Dora re Kanada),
+				'currency' => q(Dora re Kanada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Furenki re Kongo),
+				'currency' => q(Furenki re Kongo),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Furenki re Swisi),
+				'currency' => q(Furenki re Swisi),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Yuan Renminbi ye China),
+				'currency' => q(Yuan Renminbi ye China),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Dhora re Escudo),
+				'currency' => q(Dhora re Escudo),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Furenki re Jibhuti),
+				'currency' => q(Furenki re Jibhuti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Dhinari re Aljeria),
+				'currency' => q(Dhinari re Aljeria),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Paundi re Ijipita),
+				'currency' => q(Paundi re Ijipita),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Nakfa re Eritrea),
+				'currency' => q(Nakfa re Eritrea),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Dhora re Etiopia),
+				'currency' => q(Dhora re Etiopia),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Yuro),
+				'currency' => q(Yuro),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Paundi ye Bhiriteni),
+				'currency' => q(Paundi ye Bhiriteni),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Sedi ye Ghana),
+				'currency' => q(Sedi ye Ghana),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Dalasi ye Gambia),
+				'currency' => q(Dalasi ye Gambia),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Furenki re Gine),
+				'currency' => q(Furenki re Gine),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Rupe re India),
+				'currency' => q(Rupe re India),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Yeni ye Japani),
+				'currency' => q(Yeni ye Japani),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Shiringi ye Kenya),
+				'currency' => q(Shiringi ye Kenya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Furenki re Komoro),
+				'currency' => q(Furenki re Komoro),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Dora re Liberia),
+				'currency' => q(Dora re Liberia),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Loti ye Lesoto),
+				'currency' => q(Loti ye Lesoto),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Dinari re Libya),
+				'currency' => q(Dinari re Libya),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Dirham ye Moroko),
+				'currency' => q(Dirham ye Moroko),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Furenki re Malagasi),
+				'currency' => q(Furenki re Malagasi),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Ugwiya ye Moritania),
+				'currency' => q(Ugwiya ye Moritania),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Rupi ye Morishasi),
+				'currency' => q(Rupi ye Morishasi),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Kwacha ye Malawi),
+				'currency' => q(Kwacha ye Malawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Metika ye Mozambiki),
+				'currency' => q(Metika ye Mozambiki),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Dora re Namibia),
+				'currency' => q(Dora re Namibia),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Naira ye Nijeria),
+				'currency' => q(Naira ye Nijeria),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Furenki re Ruwanda),
+				'currency' => q(Furenki re Ruwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Riyali re Saudi),
+				'currency' => q(Riyali re Saudi),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Rupi re Seyisheri),
+				'currency' => q(Rupi re Seyisheri),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Dinari re Sudani),
+				'currency' => q(Dinari re Sudani),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(Paundi re Sudani),
+				'currency' => q(Paundi re Sudani),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Paundi re Senti Helena),
+				'currency' => q(Paundi re Senti Helena),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Leoni),
+				'currency' => q(Leoni),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Shiringi re Somalia),
+				'currency' => q(Shiringi re Somalia),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Dobra re Sao Tome ne Principe),
+				'currency' => q(Dobra re Sao Tome ne Principe),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lilangeni),
+				'currency' => q(Lilangeni),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Dinari re Tunisia),
+				'currency' => q(Dinari re Tunisia),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Shiringi re Tanzania),
+				'currency' => q(Shiringi re Tanzania),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Shiringi re Uganda),
+				'currency' => q(Shiringi re Uganda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Dora re Amerika),
+				'currency' => q(Dora re Amerika),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Furenki CFA BEAC),
+				'currency' => q(Furenki CFA BEAC),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Furenki CFA BCEAO),
+				'currency' => q(Furenki CFA BCEAO),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Randi),
+				'currency' => q(Randi),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Kwacha ye Zambia (1968–2012)),
+				'currency' => q(Kwacha ye Zambia \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Kwacha ye Zambia),
+				'currency' => q(Kwacha ye Zambia),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Dora re Zimbabwe),
+				'currency' => q(Dora re Zimbabwe),
 			},
 		},
 	} },
@@ -884,7 +881,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -907,7 +904,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -949,3 +946,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

@@ -1,6 +1,6 @@
-package Locale::CLDR::Uz::Cyrl;
+package Locale::CLDR::Uz::Cyrl v0.0.4;
 # This file auto generated from Data\common\main\uz_Cyrl.xml
-#	on Mon 31 Mar  2:22:52 am GMT
+#	on Sun 13 Apr 12:24:07 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -852,7 +852,7 @@ has 'units' => (
 						'other' => q({0} унция),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'one' => q({0} пм),
@@ -1041,7 +1041,7 @@ has 'units' => (
 						'other' => q({0} унция),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'one' => q({0} пм),
@@ -1230,7 +1230,7 @@ has 'units' => (
 						'other' => q({0} унция),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'one' => q({0} пм),
@@ -1279,7 +1279,6 @@ has 'units' => (
 				},
 			} }
 );
-
 
 has 'yesstr' => (
 	is			=> 'ro',
@@ -1553,14 +1552,14 @@ has 'curriencies' => (
 	default		=> sub { {
 		'ANG' => {
 			display_name => {
-				'default' => q(Голланд Антил гульдени),
+				'currency' => q(Голланд Антил гульдени),
 				'one' => q(Голланд Антил гульдени),
 				'other' => q(Голланд Антил гульдени),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(Аргентина песоси),
+				'currency' => q(Аргентина песоси),
 				'one' => q(Аргентина песоси),
 				'other' => q(Аргентина песоси),
 			},
@@ -1570,28 +1569,28 @@ has 'curriencies' => (
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(Аруба флорини),
+				'currency' => q(Аруба флорини),
 				'one' => q(Аруба флорини),
 				'other' => q(Аруба флорини),
 			},
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(Барбадос доллари),
+				'currency' => q(Барбадос доллари),
 				'one' => q(Барбадос доллари),
 				'other' => q(Барбадос доллари),
 			},
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(Бермуда доллари),
+				'currency' => q(Бермуда доллари),
 				'one' => q(Бермуда доллари),
 				'other' => q(Бермуда доллари),
 			},
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(Боливия болвиани),
+				'currency' => q(Боливия болвиани),
 				'one' => q(Боливия болвиани),
 				'other' => q(Боливия болвиани),
 			},
@@ -1599,21 +1598,21 @@ has 'curriencies' => (
 		'BRL' => {
 			symbol => 'R$',
 			display_name => {
-				'default' => q(Бразил реали),
+				'currency' => q(Бразил реали),
 				'one' => q(Бразил реали),
 				'other' => q(Бразил реали),
 			},
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(Багама доллари),
+				'currency' => q(Багама доллари),
 				'one' => q(Багама доллари),
 				'other' => q(Багама доллари),
 			},
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(Белиз доллари),
+				'currency' => q(Белиз доллари),
 				'one' => q(Белиз доллари),
 				'other' => q(Белиз доллари),
 			},
@@ -1621,14 +1620,14 @@ has 'curriencies' => (
 		'CAD' => {
 			symbol => 'CA$',
 			display_name => {
-				'default' => q(Канада доллари),
+				'currency' => q(Канада доллари),
 				'one' => q(Канада доллари),
 				'other' => q(Канада доллари),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(Чили песоси),
+				'currency' => q(Чили песоси),
 				'one' => q(Чили песоси),
 				'other' => q(Чили песоси),
 			},
@@ -1636,56 +1635,56 @@ has 'curriencies' => (
 		'CNY' => {
 			symbol => 'CN¥',
 			display_name => {
-				'default' => q(Хитой юани),
+				'currency' => q(Хитой юани),
 				'one' => q(Хитой юани),
 				'other' => q(Хитой юани),
 			},
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(Колумбия песоси),
+				'currency' => q(Колумбия песоси),
 				'one' => q(Колумбия песоси),
 				'other' => q(Колумбия песоси),
 			},
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(Коста-Рика колони),
+				'currency' => q(Коста-Рика колони),
 				'one' => q(Коста-Рика колони),
 				'other' => q(Коста-Рика колони),
 			},
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(Куба Айирбошлаш песоси),
+				'currency' => q(Куба Айирбошлаш песоси),
 				'one' => q(Куба айирбошлаш песоси),
 				'other' => q(Куба айирбошлаш песоси),
 			},
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(Куба песоси),
+				'currency' => q(Куба песоси),
 				'one' => q(Куба песоси),
 				'other' => q(Куба песоси),
 			},
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(Доминикан песоси),
+				'currency' => q(Доминикан песоси),
 				'one' => q(Доминикан песоси),
 				'other' => q(Доминикан песоси),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Жазоир динори),
+				'currency' => q(Жазоир динори),
 				'one' => q(Жазоир динори),
 				'other' => q(Жазоир динори),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Миср фунти),
+				'currency' => q(Миср фунти),
 				'one' => q(Миср фунти),
 				'other' => q(Миср фунти),
 			},
@@ -1693,14 +1692,14 @@ has 'curriencies' => (
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(Евро),
+				'currency' => q(Евро),
 				'one' => q(Евро),
 				'other' => q(Евро),
 			},
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(Фолькленд ороли фунти),
+				'currency' => q(Фолькленд ороли фунти),
 				'one' => q(Фолькленд ороли фунти),
 				'other' => q(Фолькленд ороли фунти),
 			},
@@ -1708,21 +1707,21 @@ has 'curriencies' => (
 		'GBP' => {
 			symbol => '£',
 			display_name => {
-				'default' => q(Инглиз фунт стерлинги),
+				'currency' => q(Инглиз фунт стерлинги),
 				'one' => q(Инглиз фунт стерлинги),
 				'other' => q(Инглиз фунт стерлинги),
 			},
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(Гватемала кветзали),
+				'currency' => q(Гватемала кветзали),
 				'one' => q(Гватемала кветзали),
 				'other' => q(Гватемала кветзали),
 			},
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(Гаяна доллари),
+				'currency' => q(Гаяна доллари),
 				'one' => q(Гаяна доллари),
 				'other' => q(Гаяна доллари),
 			},
@@ -1732,14 +1731,14 @@ has 'curriencies' => (
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(Гондурас лемпираси),
+				'currency' => q(Гондурас лемпираси),
 				'one' => q(Гондурас лемпираси),
 				'other' => q(Гондурас лемпираси),
 			},
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(Гаити гурдаси),
+				'currency' => q(Гаити гурдаси),
 				'one' => q(Гаити гурдаси),
 				'other' => q(Гаити гурдаси),
 			},
@@ -1750,12 +1749,12 @@ has 'curriencies' => (
 		'INR' => {
 			symbol => '₹',
 			display_name => {
-				'default' => q(Ҳинд рупияси),
+				'currency' => q(Ҳинд рупияси),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(Ямайка доллари),
+				'currency' => q(Ямайка доллари),
 				'one' => q(Ямайка доллари),
 				'other' => q(Ямайка доллари),
 			},
@@ -1763,7 +1762,7 @@ has 'curriencies' => (
 		'JPY' => {
 			symbol => 'JP¥',
 			display_name => {
-				'default' => q(Япон йенаси),
+				'currency' => q(Япон йенаси),
 				'one' => q(Япон йенаси),
 				'other' => q(Япон йенаси),
 			},
@@ -1773,21 +1772,21 @@ has 'curriencies' => (
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(Кайман ороли Доллари),
+				'currency' => q(Кайман ороли Доллари),
 				'one' => q(Кайман ороли доллари),
 				'other' => q(Кайман ороли доллари),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Ливия динори),
+				'currency' => q(Ливия динори),
 				'one' => q(Ливия динори),
 				'other' => q(Ливия динори),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Марокаш дирҳами),
+				'currency' => q(Марокаш дирҳами),
 				'one' => q(Марокаш дирҳами),
 				'other' => q(Марокаш дирҳами),
 			},
@@ -1795,14 +1794,14 @@ has 'curriencies' => (
 		'MXN' => {
 			symbol => 'MX$',
 			display_name => {
-				'default' => q(Мексика песоси),
+				'currency' => q(Мексика песоси),
 				'one' => q(Мексика песоси),
 				'other' => q(Мексика песоси),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(Никарагуа кордобаси),
+				'currency' => q(Никарагуа кордобаси),
 				'one' => q(Никарагуа кордобаси),
 				'other' => q(Никарагуа кордобаси),
 			},
@@ -1812,35 +1811,35 @@ has 'curriencies' => (
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(Панама бальбоаси),
+				'currency' => q(Панама бальбоаси),
 				'one' => q(Панама бальбоаси),
 				'other' => q(Панама бальбоаси),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(Перу нуево сол),
+				'currency' => q(Перу нуево сол),
 				'one' => q(Перу нуево сол),
 				'other' => q(Перу нуево сол),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(Парагвай гуарани),
+				'currency' => q(Парагвай гуарани),
 				'one' => q(Парагвай гуарани),
 				'other' => q(Парагвай гуарани),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(Рус рубли),
+				'currency' => q(Рус рубли),
 				'one' => q(Рус рубли),
 				'other' => q(Рус рубли),
 			},
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(Суринам доллари),
+				'currency' => q(Суринам доллари),
 				'one' => q(Суринам доллари),
 				'other' => q(Суринам доллари),
 			},
@@ -1850,7 +1849,7 @@ has 'curriencies' => (
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(Тринидад ва Тобаго доллари),
+				'currency' => q(Тринидад ва Тобаго доллари),
 				'one' => q(Тринидад ва Тобаго доллари),
 				'other' => q(Тринидад ва Тобаго доллари),
 			},
@@ -1861,14 +1860,14 @@ has 'curriencies' => (
 		'USD' => {
 			symbol => 'US$',
 			display_name => {
-				'default' => q(АҚШ доллари),
+				'currency' => q(АҚШ доллари),
 				'one' => q(АҚШ доллари),
 				'other' => q(АҚШ доллари),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(Уругвай песоси),
+				'currency' => q(Уругвай песоси),
 				'one' => q(Уругвай песоси),
 				'other' => q(Уругвай песоси),
 			},
@@ -1876,14 +1875,14 @@ has 'curriencies' => (
 		'UZS' => {
 			symbol => 'сўм',
 			display_name => {
-				'default' => q(Ўзбекистон сўм),
+				'currency' => q(Ўзбекистон сўм),
 				'one' => q(Ўзбекистон сўм),
 				'other' => q(Ўзбекистон сўм),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(Венесуэла боливари),
+				'currency' => q(Венесуэла боливари),
 				'one' => q(Венесуэла боливари),
 				'other' => q(Венесуэла боливари),
 			},
@@ -1897,7 +1896,7 @@ has 'curriencies' => (
 		'XCD' => {
 			symbol => 'EC$',
 			display_name => {
-				'default' => q(Шарқий Кариб доллари),
+				'currency' => q(Шарқий Кариб доллари),
 				'one' => q(Шарқ Кариб доллари),
 				'other' => q(Шарқ Кариб доллари),
 			},

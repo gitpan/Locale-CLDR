@@ -1,6 +1,6 @@
-package Locale::CLDR::My;
+package Locale::CLDR::My v0.0.4;
 # This file auto generated from Data\common\main\my.xml
-#	on Mon 31 Mar  1:26:55 am GMT
+#	on Sun 13 Apr 11:26:57 am GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use v5.18;
@@ -885,7 +885,7 @@ has 'units' => (
 						'other' => q({0}အောင်စ),
 					},
 					'per' => {
-						'default' => q({0}လျှင်{1}နှုန်း),
+						'' => q({0}လျှင်{1}နှုန်း),
 					},
 					'picometer' => {
 						'other' => q({0} ပီကိုမီတာ),
@@ -1028,7 +1028,7 @@ has 'units' => (
 						'other' => q({0} oz),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'other' => q({0} pm),
@@ -1171,7 +1171,7 @@ has 'units' => (
 						'other' => q({0} oz),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'other' => q({0} pm),
@@ -1209,7 +1209,6 @@ has 'units' => (
 				},
 			} }
 );
-
 
 has 'yesstr' => (
 	is			=> 'ro',
@@ -1455,1072 +1454,1072 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(အာရပ်ဒူဟမ်း),
+				'currency' => q(အာရပ်ဒူဟမ်း),
 				'other' => q(အာရပ်ဒူဟမ်း),
 			},
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(အာဖဂန်အာဖဂါနီ),
+				'currency' => q(အာဖဂန်အာဖဂါနီ),
 				'other' => q(အာဖဂန်အာဖဂါနီ),
 			},
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(အယ်လ်ဘီးနီးယားလီခ်),
+				'currency' => q(အယ်လ်ဘီးနီးယားလီခ်),
 				'other' => q(အယ်လ်ဘီးနီးယားလီခ်),
 			},
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(အာမေးနီးယားဒရမ်း),
+				'currency' => q(အာမေးနီးယားဒရမ်း),
 				'other' => q(အာမေးနီးယားဒရမ်း),
 			},
 		},
 		'ANG' => {
 			display_name => {
-				'default' => q(နယ်သာလန် အန်တီလန် ဂင်းဒါး),
+				'currency' => q(နယ်သာလန် အန်တီလန် ဂင်းဒါး),
 				'other' => q(နယ်သာလန် အန်တီလန် ဂင်းဒါး),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(အင်ဂိုလာ ကန်ဇာ),
+				'currency' => q(အင်ဂိုလာ ကန်ဇာ),
 				'other' => q(အင်ဂိုလာ ကန်ဇာ),
 			},
 		},
 		'ARP' => {
 			display_name => {
-				'default' => q(အာဂျင်တီးနား ပီဆို (၁၉၈၃–၁၉၈၅)),
+				'currency' => q(အာဂျင်တီးနား ပီဆို \(၁၉၈၃–၁၉၈၅\)),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(အာဂျင်တီးနား ပီဆို),
+				'currency' => q(အာဂျင်တီးနား ပီဆို),
 				'other' => q(အာဂျင်တီးနား ပီဆို),
 			},
 		},
 		'AUD' => {
 			symbol => 'A$',
 			display_name => {
-				'default' => q(ဩစတြေးလျ ဒေါ်လာ),
+				'currency' => q(ဩစတြေးလျ ဒေါ်လာ),
 				'other' => q(ဩစတြေးလျ ဒေါ်လာ),
 			},
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(အရူဘန် ဂင်းဒါး),
+				'currency' => q(အရူဘန် ဂင်းဒါး),
 			},
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(အဇာဘိုင်ဂျန်မာနတ်),
+				'currency' => q(အဇာဘိုင်ဂျန်မာနတ်),
 				'other' => q(အဇာဘိုင်ဂျန်မာနတ်),
 			},
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(ဘော့စနီးယား နှင့် ဟာဇီဂိုဘီးနားမတ်က်),
+				'currency' => q(ဘော့စနီးယား နှင့် ဟာဇီဂိုဘီးနားမတ်က်),
 				'other' => q(ဘော့စနီးယား နှင့် ဟာဇီဂိုဘီးနားမတ်က်),
 			},
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(ဘာဘဒီယံဒေါ်လာ),
+				'currency' => q(ဘာဘဒီယံဒေါ်လာ),
 				'other' => q(ဘာဘဒီယံဒေါ်လာ),
 			},
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(ဘင်္ဂလားဒေ့ရှ် တာကာ),
+				'currency' => q(ဘင်္ဂလားဒေ့ရှ် တာကာ),
 				'other' => q(ဘင်္ဂလားဒေ့ရှ် တာကာ),
 			},
 		},
 		'BEF' => {
 			display_name => {
-				'default' => q(ဘယ်လ်ဂျီယမ် ဖရန့်),
+				'currency' => q(ဘယ်လ်ဂျီယမ် ဖရန့်),
 			},
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(ဘူဂေးရီးယားလက်ဖ်),
+				'currency' => q(ဘူဂေးရီးယားလက်ဖ်),
 				'other' => q(ဘူဂေးရီးယားလက်ဖ်),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(ဘာရိန်းဒီနား),
+				'currency' => q(ဘာရိန်းဒီနား),
 				'other' => q(ဘာရိန်းဒီနား),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(ဘူရွန်ဒီ ဖရန့်),
+				'currency' => q(ဘူရွန်ဒီ ဖရန့်),
 				'other' => q(ဘူရွန်ဒီ ဖရန့်),
 			},
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(ဘာမူဒါ ဒေါ်လာ),
+				'currency' => q(ဘာမူဒါ ဒေါ်လာ),
 				'other' => q(ဘာမူဒါ ဒေါ်လာ),
 			},
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(ဘရူနိုင်း ဒေါ်လာ),
+				'currency' => q(ဘရူနိုင်း ဒေါ်လာ),
 				'other' => q(ဘရူနိုင်း ဒေါ်လာ),
 			},
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(ဘိုလီဘီယံ ဘိုလီဘီအားနို),
+				'currency' => q(ဘိုလီဘီယံ ဘိုလီဘီအားနို),
 				'other' => q(ဘိုလီဘီယံ ဘိုလီဘီအားနိုစ်),
 			},
 		},
 		'BOP' => {
 			display_name => {
-				'default' => q(ဘိုလီးဘီးယား ပီဆို),
+				'currency' => q(ဘိုလီးဘီးယား ပီဆို),
 			},
 		},
 		'BRL' => {
 			symbol => 'R$',
 			display_name => {
-				'default' => q(ဘရာဇီး ရီးယဲ),
+				'currency' => q(ဘရာဇီး ရီးယဲ),
 				'other' => q(ဘရာဇီး ရီးယဲ),
 			},
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(ဘဟားမား ဒေါ်လာ),
+				'currency' => q(ဘဟားမား ဒေါ်လာ),
 				'other' => q(ဘဟားမား ဒေါ်လာ),
 			},
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(ဘူတန်အံဂါလ်ထရန်),
+				'currency' => q(ဘူတန်အံဂါလ်ထရန်),
 				'other' => q(ဘူတန်အံဂါလ်ထရန်),
 			},
 		},
 		'BUK' => {
 			display_name => {
-				'default' => q(ဗမာ ကျပ်),
+				'currency' => q(ဗမာ ကျပ်),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(ဘော့စ်ဝါနာ ပုလ),
+				'currency' => q(ဘော့စ်ဝါနာ ပုလ),
 			},
 		},
 		'BYB' => {
 			display_name => {
-				'default' => q(ဘီလာရုစ် ရူဘယ်အသစ် (၁၉၉၄–၁၉၉၉)),
+				'currency' => q(ဘီလာရုစ် ရူဘယ်အသစ် \(၁၉၉၄–၁၉၉၉\)),
 			},
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(ဘီလာရုစ် ရူဘယ်),
+				'currency' => q(ဘီလာရုစ် ရူဘယ်),
 				'other' => q(ဘီလာရုစ် ရူဘယ်),
 			},
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(ဘေလီဇ် ဒေါ်လာ),
+				'currency' => q(ဘေလီဇ် ဒေါ်လာ),
 				'other' => q(ဘေလီဇ် ဒေါ်လာ),
 			},
 		},
 		'CAD' => {
 			symbol => 'CA$',
 			display_name => {
-				'default' => q(ကနေဒါ ဒေါ်လာ),
+				'currency' => q(ကနေဒါ ဒေါ်လာ),
 				'other' => q(ကနေဒါ ဒေါ်လာ),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(ကွန်ဂို ဖရန့်),
+				'currency' => q(ကွန်ဂို ဖရန့်),
 				'other' => q(ကွန်ဂို ဖရန့်),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(ဆွစ် ဖရန့်),
+				'currency' => q(ဆွစ် ဖရန့်),
 				'other' => q(ဆွစ် ဖရန့်),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(ချီလီ ပီဆို),
+				'currency' => q(ချီလီ ပီဆို),
 				'other' => q(ချီလီ ပီဆို),
 			},
 		},
 		'CNY' => {
 			symbol => 'CN¥',
 			display_name => {
-				'default' => q(တရုတ် ယွမ်),
+				'currency' => q(တရုတ် ယွမ်),
 				'other' => q(တရုတ် ယွမ်),
 			},
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(ကိုလံဘီယာ ပီဆို),
+				'currency' => q(ကိုလံဘီယာ ပီဆို),
 				'other' => q(ကိုလံဘီယာ ပီဆို),
 			},
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(ကော့စ်တာရီကာ ခိုလုံး),
+				'currency' => q(ကော့စ်တာရီကာ ခိုလုံး),
 				'other' => q(ကော့စ်တာရီကာ ခိုလုံး),
 			},
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(နိုင်ငျံခားငွေလဲလှယ်နိုင်သော ကျူးဘားပီဆို ငွေ။),
+				'currency' => q(နိုင်ငျံခားငွေလဲလှယ်နိုင်သော ကျူးဘားပီဆို ငွေ။),
 				'other' => q(နိုင်ငျံခားငွေလဲလှယ်နိုင်သော ကျူးဘားပီဆို ငွေ။),
 			},
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(ကျူးဘား ပီဆို),
+				'currency' => q(ကျူးဘား ပီဆို),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(ခေ့ပ်ဗာဒူ အက်စ်ခူဒို),
+				'currency' => q(ခေ့ပ်ဗာဒူ အက်စ်ခူဒို),
 				'other' => q(ခေ့ပ်ဗာဒူ အက်စ်ခူဒို),
 			},
 		},
 		'CYP' => {
 			display_name => {
-				'default' => q(ဆိုက်ပရက်စ် ပေါင်),
+				'currency' => q(ဆိုက်ပရက်စ် ပေါင်),
 			},
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(ချက်ခိုရိုနာ),
+				'currency' => q(ချက်ခိုရိုနာ),
 				'other' => q(ချက်ခိုရိုနာ),
 			},
 		},
 		'DEM' => {
 			display_name => {
-				'default' => q(ဂျာမဏီ မတ်),
+				'currency' => q(ဂျာမဏီ မတ်),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(ဂျီဘူတီ ဖရန့်),
+				'currency' => q(ဂျီဘူတီ ဖရန့်),
 				'other' => q(ဂျီဘူတီ ဖရန့်),
 			},
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(ဒိန်းမတ်ခရိုဏာ),
+				'currency' => q(ဒိန်းမတ်ခရိုဏာ),
 				'other' => q(ဒိန်းမတ် ခရိုဏာ),
 			},
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(ဒိုမီနီကန် ပီဆို),
+				'currency' => q(ဒိုမီနီကန် ပီဆို),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(အဲလ်ဂျီရီယန် ဒီနာ),
+				'currency' => q(အဲလ်ဂျီရီယန် ဒီနာ),
 				'other' => q(အဲလ်ဂျီရီယန် ဒီနာ),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(အီဂျစ် ပေါင်),
+				'currency' => q(အီဂျစ် ပေါင်),
 				'other' => q(အီဂျစ် ပေါင်),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(အီရီတရီအာနာ့ခ်ဖာ),
+				'currency' => q(အီရီတရီအာနာ့ခ်ဖာ),
 				'other' => q(အီရီတရီအာနာ့ခ်ဖာ),
 			},
 		},
 		'ESP' => {
 			display_name => {
-				'default' => q(စပိန် ပယ်စေးတာ),
+				'currency' => q(စပိန် ပယ်စေးတာ),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(အီသီယိုးပီးယားဘီးယာ),
+				'currency' => q(အီသီယိုးပီးယားဘီးယာ),
 				'other' => q(အီသီယိုးပီးယားဘီးယာ),
 			},
 		},
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(ယူရို),
+				'currency' => q(ယူရို),
 				'other' => q(ယူရို),
 			},
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(ဖီဂျီ ဒေါ်လာ),
+				'currency' => q(ဖီဂျီ ဒေါ်လာ),
 				'other' => q(ဖီဂျီ ဒေါ်လာ),
 			},
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(ဖောက်ကလန် ကျွန်းစု ပေါင်),
+				'currency' => q(ဖောက်ကလန် ကျွန်းစု ပေါင်),
 				'other' => q(ဖောက်ကလန် ကျွန်းစု ပေါင်),
 			},
 		},
 		'FRF' => {
 			display_name => {
-				'default' => q(ပြင်သစ် ဖရန့်),
+				'currency' => q(ပြင်သစ် ဖရန့်),
 			},
 		},
 		'GBP' => {
 			symbol => '£',
 			display_name => {
-				'default' => q(ဗြိတိသျှ ပေါင်),
+				'currency' => q(ဗြိတိသျှ ပေါင်),
 				'other' => q(ဗြိတိသျှ ပေါင်),
 			},
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(ဂျော်ဂျီယာလားရီ),
+				'currency' => q(ဂျော်ဂျီယာလားရီ),
 				'other' => q(ဂျော်ဂျီယာလားရီ),
 			},
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(ဂါနာ ဆဲဒီ),
+				'currency' => q(ဂါနာ ဆဲဒီ),
 				'other' => q(ဂါနာ ဆဲဒီ),
 			},
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(ဂျီဘရော်လ်တာ ပေါင်),
+				'currency' => q(ဂျီဘရော်လ်တာ ပေါင်),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(ဂန်ဘီယာ ဒါလာစီ),
+				'currency' => q(ဂန်ဘီယာ ဒါလာစီ),
 				'other' => q(ဂန်ဘီယာ ဒါလာစီ),
 			},
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(ဂီးနီ ဖရန့်),
+				'currency' => q(ဂီးနီ ဖရန့်),
 				'other' => q(ဂီရာနာ ဖရန့်),
 			},
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(ဂွာတီမာလာ ခက်ဇော်လ်),
+				'currency' => q(ဂွာတီမာလာ ခက်ဇော်လ်),
 				'other' => q(ဂွာတီမာလာ ခက်ဇော်လ်),
 			},
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(ဂူရာနာ ဒေါ်လာ),
+				'currency' => q(ဂူရာနာ ဒေါ်လာ),
 				'other' => q(ဂူရာနာ ဒေါ်လာ),
 			},
 		},
 		'HKD' => {
 			symbol => 'HK$',
 			display_name => {
-				'default' => q(ဟောင်ကောင် ဒေါ်လာ),
+				'currency' => q(ဟောင်ကောင် ဒေါ်လာ),
 			},
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(ဟွန်ဒူးရပ်စ် လန်းပီးရာ),
+				'currency' => q(ဟွန်ဒူးရပ်စ် လန်းပီးရာ),
 				'other' => q(ဟွန်ဒူးရပ်စ် လန်းပီးရာ),
 			},
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(ခရိုအေးရှားခူးနာ),
+				'currency' => q(ခရိုအေးရှားခူးနာ),
 				'other' => q(ခရိုအေးရှားခူးနာ),
 			},
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(ဟေတီဂူးအော်ဒ်),
+				'currency' => q(ဟေတီဂူးအော်ဒ်),
 				'other' => q(ဟေတီဂူးအော်ဒ်),
 			},
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(ဟန်ဂေရီယံဖော်ရင့်တ်),
+				'currency' => q(ဟန်ဂေရီယံဖော်ရင့်တ်),
 				'other' => q(ဟန်ဂေရီယံဖော်ရင့်တ်),
 			},
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(အင်ဒိုနီးရှား ရူပီးယား),
+				'currency' => q(အင်ဒိုနီးရှား ရူပီးယား),
 				'other' => q(အင်ဒိုနီးရှား ရူပီးယား),
 			},
 		},
 		'ILP' => {
 			display_name => {
-				'default' => q(အစ္စရေး ပေါင်),
+				'currency' => q(အစ္စရေး ပေါင်),
 			},
 		},
 		'ILS' => {
 			symbol => '₪',
 			display_name => {
-				'default' => q(အစ္စရေးရှဲကလ်အသစ်),
+				'currency' => q(အစ္စရေးရှဲကလ်အသစ်),
 				'other' => q(အစ္စရေးရှဲကလ်အသစ်),
 			},
 		},
 		'INR' => {
 			symbol => '₹',
 			display_name => {
-				'default' => q(အိန္ဒိယ ရူပီး),
+				'currency' => q(အိန္ဒိယ ရူပီး),
 				'other' => q(အိန္ဒိယ ရူပီး),
 			},
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(အီရပ်ဒီနား),
+				'currency' => q(အီရပ်ဒီနား),
 				'other' => q(အီရပ်ဒီနား),
 			},
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(အီရန်ရီအော်လ်),
+				'currency' => q(အီရန်ရီအော်လ်),
 				'other' => q(အီရန်ရီအော်လ်),
 			},
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(အိုက်စလန် ခရိုဏာ),
+				'currency' => q(အိုက်စလန် ခရိုဏာ),
 				'other' => q(အိုက်စလန် ခရိုဏာ),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(ဂျမေကာ ဒေါ်လာ),
+				'currency' => q(ဂျမေကာ ဒေါ်လာ),
 			},
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(ဂျော်ဒန်ဒီနား),
+				'currency' => q(ဂျော်ဒန်ဒီနား),
 				'other' => q(ဂျော်ဒန်ဒီနား),
 			},
 		},
 		'JPY' => {
 			symbol => 'JP¥',
 			display_name => {
-				'default' => q(ဂျပန်ယန်း),
+				'currency' => q(ဂျပန်ယန်း),
 				'other' => q(ဂျပန်ယန်း),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(ကင်ညာသျှီလင်),
+				'currency' => q(ကင်ညာသျှီလင်),
 				'other' => q(ကင်ညာသျှီလင်),
 			},
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(ခရူဂစ်စတန်ဆော်မ်),
+				'currency' => q(ခရူဂစ်စတန်ဆော်မ်),
 				'other' => q(ခရူဂစ်စတန်ဆော်မ်),
 			},
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(ကမ္ဘောဒီးယား ရီးယဲ),
+				'currency' => q(ကမ္ဘောဒီးယား ရီးယဲ),
 				'other' => q(ကမ္ဘောဒီးယား ရီးယဲ),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(ကိုမိုရိုစ် ဖရန့်),
+				'currency' => q(ကိုမိုရိုစ် ဖရန့်),
 				'other' => q(ကိုမိုရိုစ် ဖရန့်),
 			},
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(မြောက်ကိုးရီးယား ဝမ်),
+				'currency' => q(မြောက်ကိုးရီးယား ဝမ်),
 				'other' => q(မြောက်ကိုးရီးယား ဝမ်),
 			},
 		},
 		'KRW' => {
 			symbol => '₩',
 			display_name => {
-				'default' => q(တောင်ကိုးရီးယား ဝမ်),
+				'currency' => q(တောင်ကိုးရီးယား ဝမ်),
 				'other' => q(တောင်ကိုးရီးယား ဝမ်),
 			},
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(ကူဝိတ်ဒီနာ),
+				'currency' => q(ကူဝိတ်ဒီနာ),
 				'other' => q(ကူဝိတ်ဒီနာ),
 			},
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(ကေမန် ကျွန်းစု ဒေါ်လာ),
+				'currency' => q(ကေမန် ကျွန်းစု ဒေါ်လာ),
 				'other' => q(ကေမန် ကျွန်းစု ဒေါ်လာ),
 			},
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(ခရူဂစ်စတန်ထိန်ဂျီ),
+				'currency' => q(ခရူဂစ်စတန်ထိန်ဂျီ),
 				'other' => q(ခရူဂစ်စတန်ထိန်ဂျီ),
 			},
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(လာအိုခိပ်),
+				'currency' => q(လာအိုခိပ်),
 				'other' => q(လာအိုခိပ်),
 			},
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(လက်ဘနွန် ပေါင်),
+				'currency' => q(လက်ဘနွန် ပေါင်),
 				'other' => q(လက်ဘနွန် ပေါင်),
 			},
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(သီရိလင်္ကာ ရူပီး),
+				'currency' => q(သီရိလင်္ကာ ရူပီး),
 				'other' => q(သီရိလင်္ကာ ရူပီး),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(လိုင်ဘေးရီးယား ဒေါ်လာ),
+				'currency' => q(လိုင်ဘေးရီးယား ဒေါ်လာ),
 				'other' => q(လိုင်ဘေးရီးယား ဒေါ်လာ),
 			},
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(လစ်သူယေးနီးယားလီတားစ်),
+				'currency' => q(လစ်သူယေးနီးယားလီတားစ်),
 				'other' => q(လစ်သူယေးနီးယားလီတားစ်),
 			},
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(လတ်ဗီးယားလတ်),
+				'currency' => q(လတ်ဗီးယားလတ်),
 				'other' => q(လတ်ဗီးယားလတ်),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(လီဗျာ ဒီနာ),
+				'currency' => q(လီဗျာ ဒီနာ),
 				'other' => q(လီဗျာ ဒီနာ),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(မိုရိုကို ဒရမ်),
+				'currency' => q(မိုရိုကို ဒရမ်),
 				'other' => q(မိုရိုကို ဒရမ်),
 			},
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(မောလ်ဒိုဗာလယ်အို),
+				'currency' => q(မောလ်ဒိုဗာလယ်အို),
 				'other' => q(မောလ်ဒိုဗာလယ်အို),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(မလာဂစ်စီ အရီရရီ ငွေႀကး။),
+				'currency' => q(မလာဂစ်စီ အရီရရီ ငွေႀကး။),
 				'other' => q(မလာဂစ်စီ အရီရရီ ငွေႀကး။),
 			},
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(မာစီဒိုးနီးယားဒီနာ),
+				'currency' => q(မာစီဒိုးနီးယားဒီနာ),
 				'other' => q(မာစီဒိုးနီးယားဒီနာ),
 			},
 		},
 		'MMK' => {
 			symbol => 'K',
 			display_name => {
-				'default' => q(မြန်မာကျပ်),
+				'currency' => q(မြန်မာကျပ်),
 				'other' => q(မြန်မာကျပ်),
 			},
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(မွန်ဂိုးလီးယားထူးဂရခ်),
+				'currency' => q(မွန်ဂိုးလီးယားထူးဂရခ်),
 				'other' => q(မွန်ဂိုးလီးယားထူးဂရခ်),
 			},
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(မကာအိုပါတားကား),
+				'currency' => q(မကာအိုပါတားကား),
 				'other' => q(မကာအိုပါတားကား),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(မောရီတာနီအာအူဂီးယာ),
+				'currency' => q(မောရီတာနီအာအူဂီးယာ),
 				'other' => q(မောရီတာနီအာအူဂီးယာ),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(မော်ရေရှားစ် ရူပီ),
+				'currency' => q(မော်ရေရှားစ် ရူပီ),
 				'other' => q(မော်ရေရှားစ် ရူပီ),
 			},
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(မော်လ်ဒိုက်ရူးဖီရာ),
+				'currency' => q(မော်လ်ဒိုက်ရူးဖီရာ),
 				'other' => q(မော်လ်ဒိုက်ရူးဖီရာ),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(မာလာဝီခွါးချာ),
+				'currency' => q(မာလာဝီခွါးချာ),
 				'other' => q(မာလာဝီခွါးချာ),
 			},
 		},
 		'MXN' => {
 			symbol => 'MX$',
 			display_name => {
-				'default' => q(မက္ကဆီကို ပီဆို),
+				'currency' => q(မက္ကဆီကို ပီဆို),
 				'other' => q(မက္ကဆီကို ပီဆို),
 			},
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(မလေးရှား ရင်းဂစ်),
+				'currency' => q(မလေးရှား ရင်းဂစ်),
 				'other' => q(မလေးရှား ရင်းဂစ်),
 			},
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(မိုဇန်ဘစ်မက်တီခယ်လ်),
+				'currency' => q(မိုဇန်ဘစ်မက်တီခယ်လ်),
 				'other' => q(မိုဇန်ဘစ်မက်တီခယ်လ်),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(နမ်မီးဘီးယား ဒေါ်လာ),
+				'currency' => q(နမ်မီးဘီးယား ဒေါ်လာ),
 				'other' => q(နမ်မီးဘီးယား ဒေါ်လာ),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(နိုင်ဂျီးရီးယားနိုင်းရာ),
+				'currency' => q(နိုင်ဂျီးရီးယားနိုင်းရာ),
 				'other' => q(နိုင်ဂျီးရီးယားနိုင်းရာ),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(နီကာရာဂွာ ခိုးဒိုဘာ),
+				'currency' => q(နီကာရာဂွာ ခိုးဒိုဘာ),
 				'other' => q(နီကာရာဂွာ ခိုးဒိုဘာ),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(နော်ဝေ ခရိုဏာ),
+				'currency' => q(နော်ဝေ ခရိုဏာ),
 				'other' => q(နော်ဝေ ခရိုဏာ),
 			},
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(နီပေါ ရူပီး),
+				'currency' => q(နီပေါ ရူပီး),
 				'other' => q(နီပေါ ရူပီး),
 			},
 		},
 		'NZD' => {
 			symbol => 'NZ$',
 			display_name => {
-				'default' => q(နယူးဇီလန် ဒေါ်လာ),
+				'currency' => q(နယူးဇီလန် ဒေါ်လာ),
 				'other' => q(နယူးဇီလန် ဒေါ်လာ),
 			},
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(အိုမန်ရီအော်လ်),
+				'currency' => q(အိုမန်ရီအော်လ်),
 				'other' => q(အိုမန်ရီအော်လ်),
 			},
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(ပနားမား ဘလ်ဘိုးအာ),
+				'currency' => q(ပနားမား ဘလ်ဘိုးအာ),
 				'other' => q(ပနားမား ဘလ်ဘိုးအာ),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(ပီရူး နူအီဗိုဆိုးလ်),
+				'currency' => q(ပီရူး နူအီဗိုဆိုးလ်),
 				'other' => q(ပီရူး နူအီဗိုဆိုးလ်),
 			},
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(ပါပူရာနယူးဂီနီခီးနာ),
+				'currency' => q(ပါပူရာနယူးဂီနီခီးနာ),
 				'other' => q(ပါပူရာနယူးဂီနီခီးနာ),
 			},
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(ဖိလစ်ပိုင် ပီဆို),
+				'currency' => q(ဖိလစ်ပိုင် ပီဆို),
 				'other' => q(ဖိလစ်ပိုင် ပီဆို),
 			},
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(ပါကစ္စတန် ရူပီး),
+				'currency' => q(ပါကစ္စတန် ရူပီး),
 			},
 		},
 		'PLN' => {
 			display_name => {
-				'default' => q(ပိုလန် ဇ‌လော့တီ),
+				'currency' => q(ပိုလန် ဇ‌လော့တီ),
 				'other' => q(ပိုလန် ဇ‌လော့တီ),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(ပါရာဂွေးဂွါးအ်နီး),
+				'currency' => q(ပါရာဂွေးဂွါးအ်နီး),
 				'other' => q(ပါရာဂွေးဂွါးအ်နီး),
 			},
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(ကာတာရီအော်လ်),
+				'currency' => q(ကာတာရီအော်လ်),
 				'other' => q(ကာတာရီအော်လ်),
 			},
 		},
 		'RON' => {
 			display_name => {
-				'default' => q(ရိုမေးနီယားလယ်အို),
+				'currency' => q(ရိုမေးနီယားလယ်အို),
 				'other' => q(ရိုမေးနီယားလယ်အို),
 			},
 		},
 		'RSD' => {
 			display_name => {
-				'default' => q(ဆားဘီးယားဒယ်နား),
+				'currency' => q(ဆားဘီးယားဒယ်နား),
 				'other' => q(ဆားဘီးယားဒယ်နား),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(ရုရှ ရူဘယ်),
+				'currency' => q(ရုရှ ရူဘယ်),
 			},
 		},
 		'RUR' => {
 			display_name => {
-				'default' => q(ရုရှ ရူဘယ် (၁၉၉၁–၁၉၉၈)),
+				'currency' => q(ရုရှ ရူဘယ် \(၁၉၉၁–၁၉၉၈\)),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(ရဝန်ဒါ ဖရန့်),
+				'currency' => q(ရဝန်ဒါ ဖရန့်),
 				'other' => q(ရဝန်ဒါ ဖရန့်),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(ဆော်ဒီအာရေးဗီးယားရီယော်လ်),
+				'currency' => q(ဆော်ဒီအာရေးဗီးယားရီယော်လ်),
 				'other' => q(ဆော်ဒီအာရေးဗီးယားရီယော်လ်),
 			},
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(ဆော်လမွန်ကျွန်းစု ဒေါ်လာ),
+				'currency' => q(ဆော်လမွန်ကျွန်းစု ဒေါ်လာ),
 				'other' => q(ဆော်လမွန်ကျွန်းစု ဒေါ်လာ),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(ဆေးရှလ်ရူးပီး),
+				'currency' => q(ဆေးရှလ်ရူးပီး),
 				'other' => q(ဆေးရှလ်ရူးပီး),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(ဆူဒန် ပေါင်),
+				'currency' => q(ဆူဒန် ပေါင်),
 				'other' => q(ဆူဒန် ပေါင်),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(ဆူဒန် ပေါင်အဟောင်း),
+				'currency' => q(ဆူဒန် ပေါင်အဟောင်း),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(ဆွီဒင် ခရိုဏာ),
+				'currency' => q(ဆွီဒင် ခရိုဏာ),
 				'other' => q(ဆွီဒင် ခရိုဏာ),
 			},
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(စင်္ကာပူ ဒေါ်လာ),
+				'currency' => q(စင်္ကာပူ ဒေါ်လာ),
 				'other' => q(စင်္ကာပူ ဒေါ်လာ),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(စိန့်ဟဲလီနာ ပေါင်),
+				'currency' => q(စိန့်ဟဲလီနာ ပေါင်),
 				'other' => q(စိန့်ဟဲလီနာ ပေါင်),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(ဆီအဲရာ လီအိုနီယန် လီအိုနီ),
+				'currency' => q(ဆီအဲရာ လီအိုနီယန် လီအိုနီ),
 				'other' => q(ဆီအဲရာ လီအိုနီယန် လီအိုနီ),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(ဆိုမာလီသျှီလင်),
+				'currency' => q(ဆိုမာလီသျှီလင်),
 				'other' => q(ဆိုမာလီသျှီလင်),
 			},
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(ဆူရီနိမ်း ဒေါ်လာ),
+				'currency' => q(ဆူရီနိမ်း ဒေါ်လာ),
 				'other' => q(ဆူရီနိမ်း ဒေါ်လာ),
 			},
 		},
 		'SSP' => {
 			display_name => {
-				'default' => q(တောင်ဆူဒန်ပေါင်),
+				'currency' => q(တောင်ဆူဒန်ပေါင်),
 				'other' => q(တောင်ဆူဒန်ပေါင်),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(စိန့်တိုမီနှင့်ပရင်စီပ့် ဒိုဘရာ),
+				'currency' => q(စိန့်တိုမီနှင့်ပရင်စီပ့် ဒိုဘရာ),
 				'other' => q(စိန့်တိုမီနှင့်ပရင်စီပ့် ဒိုဘရာ),
 			},
 		},
 		'SUR' => {
 			display_name => {
-				'default' => q(ဆိုဗီယက် ရူဗယ်),
+				'currency' => q(ဆိုဗီယက် ရူဗယ်),
 			},
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(ဆီးရီးယား ပေါင်),
+				'currency' => q(ဆီးရီးယား ပေါင်),
 				'other' => q(ဆီးရီးယား ပေါင်),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(စွာဇီလန်လီလန်းဂီနီ),
+				'currency' => q(စွာဇီလန်လီလန်းဂီနီ),
 				'other' => q(စွာဇီလန်လီလန်းဂီနီ),
 			},
 		},
 		'THB' => {
 			symbol => '฿',
 			display_name => {
-				'default' => q(ထိုင်းဘတ်),
+				'currency' => q(ထိုင်းဘတ်),
 				'other' => q(ထိုင်းဘတ်),
 			},
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(တာဂျီကစ္စတန်ဆိုမိုနီ),
+				'currency' => q(တာဂျီကစ္စတန်ဆိုမိုနီ),
 				'other' => q(တာဂျီကစ္စတန်ဆိုမိုနီ),
 			},
 		},
 		'TMT' => {
 			display_name => {
-				'default' => q(တာခ်မီန့စ်တန်မာနတ်),
+				'currency' => q(တာခ်မီန့စ်တန်မာနတ်),
 				'other' => q(တာခ်မီန့စ်တန်မာနတ်),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(တူနီရှားဒီနာ),
+				'currency' => q(တူနီရှားဒီနာ),
 				'other' => q(တူနီရှားဒီနာ),
 			},
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(တွန်ဂါဗန်ဂါ),
+				'currency' => q(တွန်ဂါဗန်ဂါ),
 				'other' => q(တွန်ဂါဗန်ဂါ),
 			},
 		},
 		'TRL' => {
 			display_name => {
-				'default' => q(ရှေးဟောင်းတူရကီ လိုင်ရာ),
+				'currency' => q(ရှေးဟောင်းတူရကီ လိုင်ရာ),
 			},
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(တူရကီ လိုင်ရာ),
+				'currency' => q(တူရကီ လိုင်ရာ),
 				'other' => q(တူရကီ လိုင်ရာ),
 			},
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(ထရိုင်နီဒတ်နှင့်တိုဘာဂိုဒေါ်လာ),
+				'currency' => q(ထရိုင်နီဒတ်နှင့်တိုဘာဂိုဒေါ်လာ),
 				'other' => q(တရီနာဒတ်နှင့်တိုဘာဂိုဒေါ်လာ),
 			},
 		},
 		'TWD' => {
 			symbol => 'NT$',
 			display_name => {
-				'default' => q(ထိုင်ဝမ် ဒေါ်လာအသစ်),
+				'currency' => q(ထိုင်ဝမ် ဒေါ်လာအသစ်),
 				'other' => q(ထိုင်ဝမ် ဒေါ်လာအသစ်),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(တန်ဇန်းနီးယားသျှီလင်),
+				'currency' => q(တန်ဇန်းနီးယားသျှီလင်),
 				'other' => q(တန်ဇန်းနီးယားသျှီလင်),
 			},
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(ယူကရိန်း),
+				'currency' => q(ယူကရိန်း),
 				'other' => q(ယ),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(ယူဂန္ဓာသျှီလင်),
+				'currency' => q(ယူဂန္ဓာသျှီလင်),
 				'other' => q(ယူဂန္ဓာသျှီလင်),
 			},
 		},
 		'USD' => {
 			symbol => 'US$',
 			display_name => {
-				'default' => q(အမေရိကန် ဒေါ်လာ),
+				'currency' => q(အမေရိကန် ဒေါ်လာ),
 				'other' => q(အမေရိကန် ဒေါ်လာ),
 			},
 		},
 		'USN' => {
 			display_name => {
-				'default' => q(အမေရိကန် ဒေါ်လာ (နောက်နေ့)),
+				'currency' => q(အမေရိကန် ဒေါ်လာ \(နောက်နေ့\)),
 			},
 		},
 		'USS' => {
 			display_name => {
-				'default' => q(အမေရိကန် ဒေါ်လာ (တနေ့တည်း)),
+				'currency' => q(အမေရိကန် ဒေါ်လာ \(တနေ့တည်း\)),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(ဥရုဂွေးပီဆို),
+				'currency' => q(ဥရုဂွေးပီဆို),
 				'other' => q(ဥရုဂွေးပီဆို),
 			},
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(ဥဘက်ကစ္စတန်ဆော်မ်),
+				'currency' => q(ဥဘက်ကစ္စတန်ဆော်မ်),
 				'other' => q(ဥဘက်ကစ္စတန်ဆော်မ်),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(ဗင်နီဇွဲလား ဘိုလီဗာ),
+				'currency' => q(ဗင်နီဇွဲလား ဘိုလီဗာ),
 				'other' => q(ဗင်နီဇွဲလား ဘိုလီဗာ),
 			},
 		},
 		'VND' => {
 			symbol => '₫',
 			display_name => {
-				'default' => q(ဗီယက်နမ် ဒေါင်),
+				'currency' => q(ဗီယက်နမ် ဒေါင်),
 				'other' => q(ဗီယက်နမ် ဒေါင်),
 			},
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(ဗာနုအာတူဗားထူ),
+				'currency' => q(ဗာနုအာတူဗားထူ),
 				'other' => q(ဗာနုအာတူဗားထူ),
 			},
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(စမိုအထားလာ),
+				'currency' => q(စမိုအထားလာ),
 				'other' => q(စမိုအထားလာ),
 			},
 		},
 		'XAF' => {
 			symbol => 'FCFA',
 			display_name => {
-				'default' => q(ကင်မရွန်းဖရန့်),
+				'currency' => q(ကင်မရွန်းဖရန့်),
 				'other' => q(ကင်မရွန်းဖရန့်),
 			},
 		},
 		'XAG' => {
 			display_name => {
-				'default' => q(ငွေ),
+				'currency' => q(ငွေ),
 			},
 		},
 		'XAU' => {
 			display_name => {
-				'default' => q(ရွှေ),
+				'currency' => q(ရွှေ),
 			},
 		},
 		'XBB' => {
 			display_name => {
-				'default' => q(ဥရောပငွေကြေးစံနစ်),
+				'currency' => q(ဥရောပငွေကြေးစံနစ်),
 			},
 		},
 		'XCD' => {
 			symbol => 'EC$',
 			display_name => {
-				'default' => q(အရှေ့ကာရီဘီယံဒေါ်လာ),
+				'currency' => q(အရှေ့ကာရီဘီယံဒေါ်လာ),
 				'other' => q(အရှေ့ကာရီဘီယံဒေါ်လာ),
 			},
 		},
 		'XDR' => {
 			display_name => {
-				'default' => q(အထူးထုတ်ယူခွင့်),
+				'currency' => q(အထူးထုတ်ယူခွင့်),
 			},
 		},
 		'XOF' => {
 			symbol => 'CFA',
 			display_name => {
-				'default' => q(အိုင်ဗရီးကိုးစ်ဖရန့်),
+				'currency' => q(အိုင်ဗရီးကိုးစ်ဖရန့်),
 				'other' => q(အိုင်ဗရီးကိုးစ်ဖရန့်),
 			},
 		},
 		'XPF' => {
 			symbol => 'CFPF',
 			display_name => {
-				'default' => q(XPFဖရန့်),
+				'currency' => q(XPFဖရန့်),
 				'other' => q(XPFဖရန့်),
 			},
 		},
 		'XPT' => {
 			display_name => {
-				'default' => q(ပလက်တီနမ်),
+				'currency' => q(ပလက်တီနမ်),
 			},
 		},
 		'XTS' => {
 			display_name => {
-				'default' => q(စမ်းသပ် ငွေကြေး ကုဒ်),
+				'currency' => q(စမ်းသပ် ငွေကြေး ကုဒ်),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(မသိသို့မဟုတ်မရှိသောငွေကြေး),
+				'currency' => q(မသိသို့မဟုတ်မရှိသောငွေကြေး),
 				'other' => q(မသိ သို့မဟုတ် မရှိသော ငွေကြေး),
 			},
 		},
 		'YER' => {
 			display_name => {
-				'default' => q(ယီမင်ရီအော်လ်),
+				'currency' => q(ယီမင်ရီအော်လ်),
 				'other' => q(ယီမင်ရီအော်လ်),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(တောင်အဖရိက ရန်း),
+				'currency' => q(တောင်အဖရိက ရန်း),
 				'other' => q(တောင်အဖရိက ရန်း),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(ဇင်ဘာဘွေခွါးချာ),
+				'currency' => q(ဇင်ဘာဘွေခွါးချာ),
 				'other' => q(ဇင်ဘာဘွေခွါးချာ),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(ဇင်ဘာဘွေ ဒေါ်လာ),
+				'currency' => q(ဇင်ဘာဘွေ ဒေါ်လာ),
 			},
 		},
 	} },
@@ -2756,8 +2755,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{နံနက်},
 					'pm' => q{ညနေ},
+					'am' => q{နံနက်},
 				},
 			},
 		},

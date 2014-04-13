@@ -26,7 +26,7 @@ $verbose = 1 if grep /-v/, @ARGV;
 @ARGV = grep !/-v/, @ARGV;
 
 use version;
-our $VERSION = version->parse('0.0.1');
+our $VERSION = version->parse('0.0.4');
 my $CLDR_VERSION = version->parse('25');
 my $CLDR_PATH = 25;
 
@@ -425,7 +425,7 @@ sub process_header {
     $xml_generated=~s/^\$Date: (.*) \$$/$1/;
 
 	my $header = <<EOT;
-package $class;
+package $class v$VERSION;
 # This file auto generated from $xml_name
 #\ton $now GMT
 # XML file generated $xml_generated
@@ -1444,7 +1444,7 @@ EOT
 sub process_exemplar_characters {
     my ($file, $xpath) = @_;
 
-    say "Processing exemplarCharacters" if $verbose;
+    say "Processing Exemplar Characters" if $verbose;
     my $characters = findnodes($xpath, '/ldml/characters/exemplarCharacters');
     return unless $characters->size;
 
@@ -1731,7 +1731,6 @@ EOT
 \t\t\t} }
 );
 
-
 EOT
 }
 
@@ -1741,7 +1740,7 @@ sub process_posix {
     say 'Processing Posix' if $verbose;
     my $yes = findnodes($xpath, '/ldml/posix/messages/yesstr/text()');
     my $no  = findnodes($xpath, '/ldml/posix/messages/nostr/text()');
-    next unless $yes->size || $no->size;
+    return unless $yes->size || $no->size;
     $yes = $yes->size
       ? ($yes->get_nodelist)[0]->getValue()
       : '';
@@ -2026,12 +2025,12 @@ EOT
 				say $file "\t\t},";
 			}
 		}
-	}
-	print $file <<EOT;
+		print $file <<EOT;
 \t} }
 );
 
 EOT
+	}
 	
 	if (keys %formats) {
 		print $file <<EOT;
@@ -3347,7 +3346,7 @@ sub process_time_zone_names {
     my $time_zone_names = findnodes($xpath,
         q(/ldml/dates/timeZoneNames/*));
 
-    next unless $time_zone_names->size;
+    return unless $time_zone_names->size;
 
     print $file <<EOT;
 has 'time_zone_names' => (
@@ -4008,12 +4007,12 @@ sub write_out_number_formatter {
 	# write out the code for the CLDR::NumberFormater module
 	my $file = shift;
 	
+	say $file "package Locale::CLDR::NumberFormatter v$VERSION;";
 	binmode DATA, ':utf8';
 	print $file $_ while <DATA>;
 }
 
 __DATA__
-package Locale::CLDR::NumberFormatter;
 
 use v5.18;
 use mro 'c3';

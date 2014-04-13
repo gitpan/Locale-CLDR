@@ -1,6 +1,6 @@
-package Locale::CLDR::Sk;
+package Locale::CLDR::Sk v0.0.4;
 # This file auto generated from Data\common\main\sk.xml
-#	on Mon 31 Mar  1:53:09 am GMT
+#	on Sun 13 Apr 11:53:37 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -2074,7 +2074,6 @@ has 'units' => (
 			} }
 );
 
-
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -2400,12 +2399,12 @@ has 'curriencies' => (
 	default		=> sub { {
 		'ADP' => {
 			display_name => {
-				'default' => q(Andorská peseta),
+				'currency' => q(Andorská peseta),
 			},
 		},
 		'AED' => {
 			display_name => {
-				'default' => q(SAE dirham),
+				'currency' => q(SAE dirham),
 				'few' => q(SAE dirhamy),
 				'many' => q(SAE dirhamov),
 				'one' => q(SAE dirham),
@@ -2414,7 +2413,7 @@ has 'curriencies' => (
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(Afganský afgání),
+				'currency' => q(Afganský afgání),
 				'few' => q(afganské afgání),
 				'many' => q(afganského afgání),
 				'one' => q(afganský afgání),
@@ -2423,17 +2422,17 @@ has 'curriencies' => (
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(Albánsky lek),
+				'currency' => q(Albánsky lek),
 			},
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(Armenský dram),
+				'currency' => q(Armenský dram),
 			},
 		},
 		'ANG' => {
 			display_name => {
-				'default' => q(Antilský gulden),
+				'currency' => q(Antilský gulden),
 				'few' => q(antilské guldeny),
 				'many' => q(antilského guldena),
 				'one' => q(antilský gulden),
@@ -2442,48 +2441,48 @@ has 'curriencies' => (
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Angolská kwanza),
+				'currency' => q(Angolská kwanza),
 			},
 		},
 		'AOK' => {
 			display_name => {
-				'default' => q(Angolská kwanza (1977–1990)),
+				'currency' => q(Angolská kwanza \(1977–1990\)),
 			},
 		},
 		'AON' => {
 			display_name => {
-				'default' => q(Angolská nová kwanza (1990–2000)),
+				'currency' => q(Angolská nová kwanza \(1990–2000\)),
 			},
 		},
 		'AOR' => {
 			display_name => {
-				'default' => q(Angolská kwanza Reajustado (1995–1999)),
+				'currency' => q(Angolská kwanza Reajustado \(1995–1999\)),
 			},
 		},
 		'ARA' => {
 			display_name => {
-				'default' => q(Argentinský austral),
+				'currency' => q(Argentinský austral),
 			},
 		},
 		'ARP' => {
 			display_name => {
-				'default' => q(Argentinské peso (1983–1985)),
+				'currency' => q(Argentinské peso \(1983–1985\)),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(Argentinské peso),
+				'currency' => q(Argentinské peso),
 			},
 		},
 		'ATS' => {
 			display_name => {
-				'default' => q(Rakúsky šiling),
+				'currency' => q(Rakúsky šiling),
 			},
 		},
 		'AUD' => {
 			symbol => 'AUD',
 			display_name => {
-				'default' => q(Austrálsky dolár),
+				'currency' => q(Austrálsky dolár),
 				'few' => q(austrálske doláre),
 				'many' => q(austrálskeho dolára),
 				'one' => q(austrálsky dolár),
@@ -2492,21 +2491,21 @@ has 'curriencies' => (
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(Arubský guilder),
+				'currency' => q(Arubský guilder),
 			},
 		},
 		'AZM' => {
 			display_name => {
-				'default' => q(Azerbajdžanský manat (1993–2006)),
-				'few' => q(azerbajdžanské manaty (1993–2006)),
-				'many' => q(azerbajdžanského manatu (1993–2006)),
-				'one' => q(azerbajdžanský manat (1993–2006)),
-				'other' => q(azerbajdžanských manatov (1993–2006)),
+				'currency' => q(Azerbajdžanský manat \(1993–2006\)),
+				'few' => q(azerbajdžanské manaty \(1993–2006\)),
+				'many' => q(azerbajdžanského manatu \(1993–2006\)),
+				'one' => q(azerbajdžanský manat \(1993–2006\)),
+				'other' => q(azerbajdžanských manatov \(1993–2006\)),
 			},
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(Azerbajdžanský manat),
+				'currency' => q(Azerbajdžanský manat),
 				'few' => q(azerbajdžanské manaty),
 				'many' => q(azerbajdžanského manatu),
 				'one' => q(azerbajdžanský manat),
@@ -2515,12 +2514,12 @@ has 'curriencies' => (
 		},
 		'BAD' => {
 			display_name => {
-				'default' => q(Bosnianský dinár),
+				'currency' => q(Bosnianský dinár),
 			},
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(Bosnianska konvertibilná marka),
+				'currency' => q(Bosnianska konvertibilná marka),
 				'few' => q(bosnianske konvertibilné marky),
 				'many' => q(bosnianskej konvertibilnej marky),
 				'one' => q(bosnianska konvertibilná marka),
@@ -2529,7 +2528,7 @@ has 'curriencies' => (
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(Barbadoský dolár),
+				'currency' => q(Barbadoský dolár),
 				'few' => q(barbadoské doláre),
 				'many' => q(barbadoského dolára),
 				'one' => q(barbadoský dolár),
@@ -2538,32 +2537,32 @@ has 'curriencies' => (
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(Bangladéšska taka),
+				'currency' => q(Bangladéšska taka),
 			},
 		},
 		'BEC' => {
 			display_name => {
-				'default' => q(Belgický frank (konvertibilný)),
+				'currency' => q(Belgický frank \(konvertibilný\)),
 			},
 		},
 		'BEF' => {
 			display_name => {
-				'default' => q(Belgický frank),
+				'currency' => q(Belgický frank),
 			},
 		},
 		'BEL' => {
 			display_name => {
-				'default' => q(Belgický frank (finančný)),
+				'currency' => q(Belgický frank \(finančný\)),
 			},
 		},
 		'BGL' => {
 			display_name => {
-				'default' => q(Bulharský leva),
+				'currency' => q(Bulharský leva),
 			},
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(Bulharský lev),
+				'currency' => q(Bulharský lev),
 				'few' => q(bulharské leva),
 				'many' => q(bulharského leva),
 				'one' => q(bulharský lev),
@@ -2572,7 +2571,7 @@ has 'curriencies' => (
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Bahrajnský dinár),
+				'currency' => q(Bahrajnský dinár),
 				'few' => q(bahrajnské dináre),
 				'many' => q(bahrajnského dinára),
 				'one' => q(bahrajnský dinár),
@@ -2581,17 +2580,17 @@ has 'curriencies' => (
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Burundský frank),
+				'currency' => q(Burundský frank),
 			},
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(Bermudský dolár),
+				'currency' => q(Bermudský dolár),
 			},
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(Brunejský dolár),
+				'currency' => q(Brunejský dolár),
 				'few' => q(brunejské doláre),
 				'many' => q(brunejského dolára),
 				'one' => q(brunejský dolár),
@@ -2600,7 +2599,7 @@ has 'curriencies' => (
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(Bolívijské boliviano),
+				'currency' => q(Bolívijské boliviano),
 				'few' => q(bolívijské boliviany),
 				'many' => q(bolívijského boliviana),
 				'one' => q(bolívijské boliviano),
@@ -2609,33 +2608,33 @@ has 'curriencies' => (
 		},
 		'BOP' => {
 			display_name => {
-				'default' => q(Bolivíjske peso),
+				'currency' => q(Bolivíjske peso),
 			},
 		},
 		'BOV' => {
 			display_name => {
-				'default' => q(Bolivíjske mvdol),
+				'currency' => q(Bolivíjske mvdol),
 			},
 		},
 		'BRB' => {
 			display_name => {
-				'default' => q(Bolivíjske Cruzeiro Novo (1967–1986)),
+				'currency' => q(Bolivíjske Cruzeiro Novo \(1967–1986\)),
 			},
 		},
 		'BRC' => {
 			display_name => {
-				'default' => q(Bolivíjske cruzado),
+				'currency' => q(Bolivíjske cruzado),
 			},
 		},
 		'BRE' => {
 			display_name => {
-				'default' => q(Bolivíjske cruzeiro (1990–1993)),
+				'currency' => q(Bolivíjske cruzeiro \(1990–1993\)),
 			},
 		},
 		'BRL' => {
 			symbol => 'BRL',
 			display_name => {
-				'default' => q(Brazílsky real),
+				'currency' => q(Brazílsky real),
 				'few' => q(brazílske realy),
 				'many' => q(brazílskeho realu),
 				'one' => q(brazílsky real),
@@ -2644,22 +2643,22 @@ has 'curriencies' => (
 		},
 		'BRN' => {
 			display_name => {
-				'default' => q(Brazílske Cruzado Novo),
+				'currency' => q(Brazílske Cruzado Novo),
 			},
 		},
 		'BRR' => {
 			display_name => {
-				'default' => q(Brazílske cruzeiro),
+				'currency' => q(Brazílske cruzeiro),
 			},
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(Bahamský dolár),
+				'currency' => q(Bahamský dolár),
 			},
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(Bhutánsky ngultrum),
+				'currency' => q(Bhutánsky ngultrum),
 				'few' => q(bhutánske ngultrumy),
 				'many' => q(bhutánskeho ngultrumu),
 				'one' => q(bhutánsky ngultrum),
@@ -2668,12 +2667,12 @@ has 'curriencies' => (
 		},
 		'BUK' => {
 			display_name => {
-				'default' => q(Burmese Kyat),
+				'currency' => q(Burmese Kyat),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Botswanská pula),
+				'currency' => q(Botswanská pula),
 				'few' => q(botswanské puly),
 				'many' => q(botswanskej puly),
 				'one' => q(botswanská pula),
@@ -2682,16 +2681,16 @@ has 'curriencies' => (
 		},
 		'BYB' => {
 			display_name => {
-				'default' => q(Bieloruský nový rubeľ (1994–1999)),
-				'few' => q(bieloruské nové ruble (1994–1999)),
-				'many' => q(bieloruského nového rubľa (1994–1999)),
-				'one' => q(bieloruský nový rubeľ (1994–1999)),
-				'other' => q(bieloruských nových rubľov (1994–1999)),
+				'currency' => q(Bieloruský nový rubeľ \(1994–1999\)),
+				'few' => q(bieloruské nové ruble \(1994–1999\)),
+				'many' => q(bieloruského nového rubľa \(1994–1999\)),
+				'one' => q(bieloruský nový rubeľ \(1994–1999\)),
+				'other' => q(bieloruských nových rubľov \(1994–1999\)),
 			},
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(Bieloruský rubeľ),
+				'currency' => q(Bieloruský rubeľ),
 				'few' => q(bieloruské ruble),
 				'many' => q(bieloruského rubľa),
 				'one' => q(bieloruský rubeľ),
@@ -2700,7 +2699,7 @@ has 'curriencies' => (
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(Belizský dolár),
+				'currency' => q(Belizský dolár),
 				'few' => q(belizské doláre),
 				'many' => q(belizských dolárov),
 				'one' => q(belizský dolár),
@@ -2710,7 +2709,7 @@ has 'curriencies' => (
 		'CAD' => {
 			symbol => 'CAD',
 			display_name => {
-				'default' => q(Kanadský dolár),
+				'currency' => q(Kanadský dolár),
 				'few' => q(kanadské doláre),
 				'many' => q(kanadského dolára),
 				'one' => q(kanadský dolár),
@@ -2719,7 +2718,7 @@ has 'curriencies' => (
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Konžský frank),
+				'currency' => q(Konžský frank),
 				'few' => q(konžské franky),
 				'many' => q(konžského franku),
 				'one' => q(konžský frank),
@@ -2728,7 +2727,7 @@ has 'curriencies' => (
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Švajčiarsky frank),
+				'currency' => q(Švajčiarsky frank),
 				'few' => q(švajčiarske franky),
 				'many' => q(švajčiarskeho franku),
 				'one' => q(švajčiarsky frank),
@@ -2737,18 +2736,18 @@ has 'curriencies' => (
 		},
 		'CLF' => {
 			display_name => {
-				'default' => q(Čílske Unidades de Fomento),
+				'currency' => q(Čílske Unidades de Fomento),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(Čílske peso),
+				'currency' => q(Čílske peso),
 			},
 		},
 		'CNY' => {
 			symbol => 'CNY',
 			display_name => {
-				'default' => q(Čínsky jüan),
+				'currency' => q(Čínsky jüan),
 				'few' => q(čínske jüany),
 				'many' => q(čínskeho jüana),
 				'one' => q(čínsky jüan),
@@ -2757,7 +2756,7 @@ has 'curriencies' => (
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(Kolumbijské peso),
+				'currency' => q(Kolumbijské peso),
 				'few' => q(kolumbijské pesos),
 				'many' => q(kolumbijského pesa),
 				'one' => q(kolumbijské peso),
@@ -2766,7 +2765,7 @@ has 'curriencies' => (
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(Kostarický colón),
+				'currency' => q(Kostarický colón),
 				'few' => q(kostarické colóny),
 				'many' => q(kostarického colónu),
 				'one' => q(kostarický colón),
@@ -2775,12 +2774,12 @@ has 'curriencies' => (
 		},
 		'CSK' => {
 			display_name => {
-				'default' => q(Československá koruna),
+				'currency' => q(Československá koruna),
 			},
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(Kubánske konvertibilné peso),
+				'currency' => q(Kubánske konvertibilné peso),
 				'few' => q(kubánske konvertibilné pesos),
 				'many' => q(kubánskeho konvertibilného pesa),
 				'one' => q(kubánske konvertibilné peso),
@@ -2789,7 +2788,7 @@ has 'curriencies' => (
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(Kubánske peso),
+				'currency' => q(Kubánske peso),
 				'few' => q(kubánske pesos),
 				'many' => q(kubánskeho pesa),
 				'one' => q(kubánske peso),
@@ -2798,7 +2797,7 @@ has 'curriencies' => (
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Kapverdské escudo),
+				'currency' => q(Kapverdské escudo),
 				'few' => q(kapverdské escudá),
 				'many' => q(kapverdského escuda),
 				'one' => q(kapverdské escudo),
@@ -2807,12 +2806,12 @@ has 'curriencies' => (
 		},
 		'CYP' => {
 			display_name => {
-				'default' => q(Cypruská libra),
+				'currency' => q(Cypruská libra),
 			},
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(Česká koruna),
+				'currency' => q(Česká koruna),
 				'few' => q(české koruny),
 				'many' => q(českej koruny),
 				'one' => q(česká koruna),
@@ -2821,22 +2820,22 @@ has 'curriencies' => (
 		},
 		'DDM' => {
 			display_name => {
-				'default' => q(Východonemecká marka),
+				'currency' => q(Východonemecká marka),
 			},
 		},
 		'DEM' => {
 			display_name => {
-				'default' => q(Nemecká marka),
+				'currency' => q(Nemecká marka),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Džibutský frank),
+				'currency' => q(Džibutský frank),
 			},
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(Dánska koruna),
+				'currency' => q(Dánska koruna),
 				'few' => q(dánske koruny),
 				'many' => q(dánskej koruny),
 				'one' => q(dánska koruna),
@@ -2845,27 +2844,27 @@ has 'curriencies' => (
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(Dominikánske peso),
+				'currency' => q(Dominikánske peso),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Alžírsky dinár),
+				'currency' => q(Alžírsky dinár),
 			},
 		},
 		'ECS' => {
 			display_name => {
-				'default' => q(Ekuadorský sucre),
+				'currency' => q(Ekuadorský sucre),
 			},
 		},
 		'ECV' => {
 			display_name => {
-				'default' => q(Ekuadorský Unidad de Valor Constante (UVC)),
+				'currency' => q(Ekuadorský Unidad de Valor Constante \(UVC\)),
 			},
 		},
 		'EEK' => {
 			display_name => {
-				'default' => q(Estónska kroon),
+				'currency' => q(Estónska kroon),
 				'few' => q(estónske kroony),
 				'many' => q(estónskej kroony),
 				'one' => q(estónska kroon),
@@ -2874,28 +2873,28 @@ has 'curriencies' => (
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Egyptská libra),
+				'currency' => q(Egyptská libra),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Eritrejská nakfa),
+				'currency' => q(Eritrejská nakfa),
 			},
 		},
 		'ESP' => {
 			display_name => {
-				'default' => q(Španielská peseta),
+				'currency' => q(Španielská peseta),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Ethiopský birr),
+				'currency' => q(Ethiopský birr),
 			},
 		},
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(Euro),
+				'currency' => q(Euro),
 				'few' => q(eurá),
 				'many' => q(eura),
 				'one' => q(euro),
@@ -2904,12 +2903,12 @@ has 'curriencies' => (
 		},
 		'FIM' => {
 			display_name => {
-				'default' => q(Finská marka),
+				'currency' => q(Finská marka),
 			},
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(Fidžijský dolár),
+				'currency' => q(Fidžijský dolár),
 				'few' => q(fidžijské doláre),
 				'many' => q(fidžijského dolára),
 				'one' => q(fidžijský dolár),
@@ -2918,18 +2917,18 @@ has 'curriencies' => (
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(Falklandská libra),
+				'currency' => q(Falklandská libra),
 			},
 		},
 		'FRF' => {
 			display_name => {
-				'default' => q(Francúzsky frank),
+				'currency' => q(Francúzsky frank),
 			},
 		},
 		'GBP' => {
 			symbol => 'GBP',
 			display_name => {
-				'default' => q(Britská libra),
+				'currency' => q(Britská libra),
 				'few' => q(britskej libry),
 				'many' => q(britskej libry),
 				'one' => q(britská libra),
@@ -2938,26 +2937,26 @@ has 'curriencies' => (
 		},
 		'GEK' => {
 			display_name => {
-				'default' => q(Gruzínsky Kupon Larit),
+				'currency' => q(Gruzínsky Kupon Larit),
 			},
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(Gruzínsky lari),
+				'currency' => q(Gruzínsky lari),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Ghanský cedi (1979–2007)),
-				'few' => q(ghanské cedi (1979–2007)),
-				'many' => q(ghanského cedi (1979–2007)),
-				'one' => q(ghanský cedi (1979–2007)),
-				'other' => q(ghanských cedi (1979–2007)),
+				'currency' => q(Ghanský cedi \(1979–2007\)),
+				'few' => q(ghanské cedi \(1979–2007\)),
+				'many' => q(ghanského cedi \(1979–2007\)),
+				'one' => q(ghanský cedi \(1979–2007\)),
+				'other' => q(ghanských cedi \(1979–2007\)),
 			},
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(Ghanský cedi),
+				'currency' => q(Ghanský cedi),
 				'few' => q(ghanské cedi),
 				'many' => q(ghanského cedi),
 				'one' => q(ghanský cedi),
@@ -2966,12 +2965,12 @@ has 'curriencies' => (
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(Gibraltarská libra),
+				'currency' => q(Gibraltarská libra),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Gambijský dalasi),
+				'currency' => q(Gambijský dalasi),
 				'few' => q(gambijské dalasi),
 				'many' => q(gambijského dalasi),
 				'one' => q(gambijský dalasi),
@@ -2980,37 +2979,37 @@ has 'curriencies' => (
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(Guinejský frank),
+				'currency' => q(Guinejský frank),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Guinejský syli),
+				'currency' => q(Guinejský syli),
 			},
 		},
 		'GQE' => {
 			display_name => {
-				'default' => q(Rovníková Guinea Ekwele Guineana),
+				'currency' => q(Rovníková Guinea Ekwele Guineana),
 			},
 		},
 		'GRD' => {
 			display_name => {
-				'default' => q(Grécka drachma),
+				'currency' => q(Grécka drachma),
 			},
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(Guatemalský quetzal),
+				'currency' => q(Guatemalský quetzal),
 			},
 		},
 		'GWE' => {
 			display_name => {
-				'default' => q(Portugalská Guinea eskudo),
+				'currency' => q(Portugalská Guinea eskudo),
 			},
 		},
 		'GWP' => {
 			display_name => {
-				'default' => q(Guinea-Bissau peso),
+				'currency' => q(Guinea-Bissau peso),
 				'few' => q(Guinea-Bissau pesos),
 				'many' => q(Guinea-Bissau pesa),
 				'one' => q(Guinea-Bissau peso),
@@ -3019,13 +3018,13 @@ has 'curriencies' => (
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(Guyanský dolár),
+				'currency' => q(Guyanský dolár),
 			},
 		},
 		'HKD' => {
 			symbol => 'HKD',
 			display_name => {
-				'default' => q(Hongkonský dolár),
+				'currency' => q(Hongkonský dolár),
 				'few' => q(hongkonské doláre),
 				'many' => q(hongkonského dolára),
 				'one' => q(hongkonský dolár),
@@ -3034,7 +3033,7 @@ has 'curriencies' => (
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(Hoduraská lempira),
+				'currency' => q(Hoduraská lempira),
 				'few' => q(honduraské lempiry),
 				'many' => q(honduraskej lempiry),
 				'one' => q(honduraská lempira),
@@ -3043,22 +3042,22 @@ has 'curriencies' => (
 		},
 		'HRD' => {
 			display_name => {
-				'default' => q(Chorvátsky dinár),
+				'currency' => q(Chorvátsky dinár),
 			},
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(Chorvátska kuna),
+				'currency' => q(Chorvátska kuna),
 			},
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(Haitské gourde),
+				'currency' => q(Haitské gourde),
 			},
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(Maďarský forint),
+				'currency' => q(Maďarský forint),
 				'few' => q(maďarské forinty),
 				'many' => q(maďarského forinta),
 				'one' => q(maďarský forint),
@@ -3067,7 +3066,7 @@ has 'curriencies' => (
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(Indonézska rupia),
+				'currency' => q(Indonézska rupia),
 				'few' => q(indonézske rupie),
 				'many' => q(indonézskej rupie),
 				'one' => q(indonézska rupia),
@@ -3076,24 +3075,24 @@ has 'curriencies' => (
 		},
 		'IEP' => {
 			display_name => {
-				'default' => q(Írska libra),
+				'currency' => q(Írska libra),
 			},
 		},
 		'ILP' => {
 			display_name => {
-				'default' => q(Izraelská libra),
+				'currency' => q(Izraelská libra),
 			},
 		},
 		'ILS' => {
 			symbol => '₪',
 			display_name => {
-				'default' => q(Izraelský šekel),
+				'currency' => q(Izraelský šekel),
 			},
 		},
 		'INR' => {
 			symbol => 'INR',
 			display_name => {
-				'default' => q(Indická rupia),
+				'currency' => q(Indická rupia),
 				'few' => q(indické rupie),
 				'many' => q(indickej rupie),
 				'one' => q(indická rupia),
@@ -3102,38 +3101,38 @@ has 'curriencies' => (
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(Iracký dinár),
+				'currency' => q(Iracký dinár),
 			},
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(Iránsky rial),
+				'currency' => q(Iránsky rial),
 			},
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(Islandská krona),
+				'currency' => q(Islandská krona),
 			},
 		},
 		'ITL' => {
 			display_name => {
-				'default' => q(Talianská lira),
+				'currency' => q(Talianská lira),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(Jamajský dolár),
+				'currency' => q(Jamajský dolár),
 			},
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(Jordánsky dinár),
+				'currency' => q(Jordánsky dinár),
 			},
 		},
 		'JPY' => {
 			symbol => 'JPY',
 			display_name => {
-				'default' => q(Japonský jen),
+				'currency' => q(Japonský jen),
 				'few' => q(japonské jeny),
 				'many' => q(japonského jenu),
 				'one' => q(japonský jen),
@@ -3142,12 +3141,12 @@ has 'curriencies' => (
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Keňský šiling),
+				'currency' => q(Keňský šiling),
 			},
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(Kirgizský som),
+				'currency' => q(Kirgizský som),
 				'few' => q(kirgizské somy),
 				'many' => q(kirgizského somu),
 				'one' => q(kirgizský som),
@@ -3156,12 +3155,12 @@ has 'curriencies' => (
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(Kambodžský riel),
+				'currency' => q(Kambodžský riel),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Komorský frank),
+				'currency' => q(Komorský frank),
 				'few' => q(komorské franky),
 				'many' => q(komorského franku),
 				'one' => q(Comoro frank),
@@ -3170,13 +3169,13 @@ has 'curriencies' => (
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(Severokórejský won),
+				'currency' => q(Severokórejský won),
 			},
 		},
 		'KRW' => {
 			symbol => 'KRW',
 			display_name => {
-				'default' => q(Juhokórejský won),
+				'currency' => q(Juhokórejský won),
 				'few' => q(juhokórejské wony),
 				'many' => q(juhokórejského wonu),
 				'one' => q(juhokórejský won),
@@ -3185,7 +3184,7 @@ has 'curriencies' => (
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(Kuvajtský dinár),
+				'currency' => q(Kuvajtský dinár),
 				'few' => q(kuvajtské dináre),
 				'many' => q(kuvajtského dinára),
 				'one' => q(kuvajtský dinár),
@@ -3194,12 +3193,12 @@ has 'curriencies' => (
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(Kajmanský dolár),
+				'currency' => q(Kajmanský dolár),
 			},
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(Kazašské tenge),
+				'currency' => q(Kazašské tenge),
 				'few' => q(kazašské tenge),
 				'many' => q(kazašského tenge),
 				'one' => q(kazašské tenge),
@@ -3208,17 +3207,17 @@ has 'curriencies' => (
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(Laoský kip),
+				'currency' => q(Laoský kip),
 			},
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(Libanonská libra),
+				'currency' => q(Libanonská libra),
 			},
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(Srílanská rupia),
+				'currency' => q(Srílanská rupia),
 				'few' => q(srílanské rupie),
 				'many' => q(srílanskej rupie),
 				'one' => q(srílanská rupia),
@@ -3227,17 +3226,17 @@ has 'curriencies' => (
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Libérský dolár),
+				'currency' => q(Libérský dolár),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Lesothský loti),
+				'currency' => q(Lesothský loti),
 			},
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(Litovský litas),
+				'currency' => q(Litovský litas),
 				'few' => q(litovské litasy),
 				'many' => q(litovského litasa),
 				'one' => q(litovský litas),
@@ -3246,17 +3245,17 @@ has 'curriencies' => (
 		},
 		'LTT' => {
 			display_name => {
-				'default' => q(Litevský talonas),
+				'currency' => q(Litevský talonas),
 			},
 		},
 		'LUF' => {
 			display_name => {
-				'default' => q(Luxemburský frank),
+				'currency' => q(Luxemburský frank),
 			},
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(Lotyšský lat),
+				'currency' => q(Lotyšský lat),
 				'few' => q(lotyšské laty),
 				'many' => q(lotyšského latu),
 				'one' => q(lotyšský lat),
@@ -3265,62 +3264,62 @@ has 'curriencies' => (
 		},
 		'LVR' => {
 			display_name => {
-				'default' => q(Lotyšský rubeľ),
+				'currency' => q(Lotyšský rubeľ),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Libyjský dinár),
+				'currency' => q(Libyjský dinár),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Marocký dirham),
+				'currency' => q(Marocký dirham),
 			},
 		},
 		'MAF' => {
 			display_name => {
-				'default' => q(Marocký frank),
+				'currency' => q(Marocký frank),
 			},
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(Moldavský leu),
+				'currency' => q(Moldavský leu),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Madagaskarský ariary),
+				'currency' => q(Madagaskarský ariary),
 			},
 		},
 		'MGF' => {
 			display_name => {
-				'default' => q(Madagaskarský frank),
+				'currency' => q(Madagaskarský frank),
 			},
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(Macedónsky denár),
+				'currency' => q(Macedónsky denár),
 			},
 		},
 		'MLF' => {
 			display_name => {
-				'default' => q(Malský frank),
+				'currency' => q(Malský frank),
 			},
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(Myanmarský kyat),
+				'currency' => q(Myanmarský kyat),
 			},
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(Mongolský tugrik),
+				'currency' => q(Mongolský tugrik),
 			},
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(Macajská pataca),
+				'currency' => q(Macajská pataca),
 				'few' => q(macajské patacy),
 				'many' => q(macajskej patacy),
 				'one' => q(macajská pataca),
@@ -3329,7 +3328,7 @@ has 'curriencies' => (
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Mauritania Ouguiya),
+				'currency' => q(Mauritania Ouguiya),
 				'few' => q(mauritánske ukije),
 				'many' => q(mauritánskej ukije),
 				'one' => q(mauritánska ukija),
@@ -3338,17 +3337,17 @@ has 'curriencies' => (
 		},
 		'MTL' => {
 			display_name => {
-				'default' => q(Maltská lira),
+				'currency' => q(Maltská lira),
 			},
 		},
 		'MTP' => {
 			display_name => {
-				'default' => q(Maltská libra),
+				'currency' => q(Maltská libra),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Maurícijská rupia),
+				'currency' => q(Maurícijská rupia),
 				'few' => q(maurícijské rupie),
 				'many' => q(maurícijskej rupie),
 				'one' => q(maurícijská rupia),
@@ -3357,12 +3356,12 @@ has 'curriencies' => (
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(Maldivská rufiyaa),
+				'currency' => q(Maldivská rufiyaa),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Malawijská kwacha),
+				'currency' => q(Malawijská kwacha),
 				'few' => q(malawijské kwachy),
 				'many' => q(malawijskej kwachy),
 				'one' => q(malawijská kwacha),
@@ -3372,7 +3371,7 @@ has 'curriencies' => (
 		'MXN' => {
 			symbol => 'Mex$',
 			display_name => {
-				'default' => q(Mexické peso),
+				'currency' => q(Mexické peso),
 				'few' => q(mexické pesos),
 				'many' => q(mexického pesa),
 				'one' => q(mexické peso),
@@ -3381,17 +3380,17 @@ has 'curriencies' => (
 		},
 		'MXP' => {
 			display_name => {
-				'default' => q(Mexické striborné peso (1861–1992)),
+				'currency' => q(Mexické striborné peso \(1861–1992\)),
 			},
 		},
 		'MXV' => {
 			display_name => {
-				'default' => q(Mexické Unidad de Inversion (UDI)),
+				'currency' => q(Mexické Unidad de Inversion \(UDI\)),
 			},
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(Malajský ringgit),
+				'currency' => q(Malajský ringgit),
 				'few' => q(malajské ringgity),
 				'many' => q(malajského ringgitu),
 				'one' => q(malajský ringgit),
@@ -3400,7 +3399,7 @@ has 'curriencies' => (
 		},
 		'MZE' => {
 			display_name => {
-				'default' => q(Mozabické escudo),
+				'currency' => q(Mozabické escudo),
 				'few' => q(mozabické escudá),
 				'many' => q(mozabického escuda),
 				'one' => q(mozabické escudo),
@@ -3409,16 +3408,16 @@ has 'curriencies' => (
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Mozambický metical (1980–2006)),
-				'few' => q(mozambické meticaly (1980–2006)),
-				'many' => q(mozambického meticalu (1980–2006)),
-				'one' => q(mozambický metical (1980–2006)),
-				'other' => q(mozambických meticalov (1980–2006)),
+				'currency' => q(Mozambický metical \(1980–2006\)),
+				'few' => q(mozambické meticaly \(1980–2006\)),
+				'many' => q(mozambického meticalu \(1980–2006\)),
+				'one' => q(mozambický metical \(1980–2006\)),
+				'other' => q(mozambických meticalov \(1980–2006\)),
 			},
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(Mozambický metical),
+				'currency' => q(Mozambický metical),
 				'few' => q(mozambické meticaly),
 				'many' => q(mozambického meticalu),
 				'one' => q(mozambický metical),
@@ -3427,7 +3426,7 @@ has 'curriencies' => (
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Namibský dolár),
+				'currency' => q(Namibský dolár),
 				'few' => q(namíbijské doláre),
 				'many' => q(namíbijského dolára),
 				'one' => q(namíbijský dolár),
@@ -3436,21 +3435,21 @@ has 'curriencies' => (
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Nigerská naira),
+				'currency' => q(Nigerská naira),
 			},
 		},
 		'NIC' => {
 			display_name => {
-				'default' => q(Nikaragujská Cordoba (1988–1991)),
-				'few' => q(nikaragujské córdoby (1988–1991)),
-				'many' => q(nikaragujskej córdoby (1988–1991)),
-				'one' => q(nikaragujská córdoba (1988–1991)),
-				'other' => q(nikaragujských córdob (1988–1991)),
+				'currency' => q(Nikaragujská Cordoba \(1988–1991\)),
+				'few' => q(nikaragujské córdoby \(1988–1991\)),
+				'many' => q(nikaragujskej córdoby \(1988–1991\)),
+				'one' => q(nikaragujská córdoba \(1988–1991\)),
+				'other' => q(nikaragujských córdob \(1988–1991\)),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(Nikaragujská Cordoba),
+				'currency' => q(Nikaragujská Cordoba),
 				'few' => q(nikaragujské córdoby),
 				'many' => q(nikaragujskej córdoby),
 				'one' => q(nikaragujská córdoba),
@@ -3459,12 +3458,12 @@ has 'curriencies' => (
 		},
 		'NLG' => {
 			display_name => {
-				'default' => q(Nizozemský guilder),
+				'currency' => q(Nizozemský guilder),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(Nórska koruna),
+				'currency' => q(Nórska koruna),
 				'few' => q(nórske koruny),
 				'many' => q(nórskej koruny),
 				'one' => q(nórska koruna),
@@ -3473,33 +3472,33 @@ has 'curriencies' => (
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(Nepálska rupia),
+				'currency' => q(Nepálska rupia),
 			},
 		},
 		'NZD' => {
 			symbol => 'NZ$',
 			display_name => {
-				'default' => q(Novozélandský dolár),
+				'currency' => q(Novozélandský dolár),
 			},
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(Ománský rial),
+				'currency' => q(Ománský rial),
 			},
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(Panamská balboa),
+				'currency' => q(Panamská balboa),
 			},
 		},
 		'PEI' => {
 			display_name => {
-				'default' => q(Peruvský inti),
+				'currency' => q(Peruvský inti),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(Peruvský sol Nuevo),
+				'currency' => q(Peruvský sol Nuevo),
 				'few' => q(peruánske nové soly),
 				'many' => q(peruánskeho nového sola),
 				'one' => q(peruánsky nový sol),
@@ -3508,12 +3507,12 @@ has 'curriencies' => (
 		},
 		'PES' => {
 			display_name => {
-				'default' => q(Peruvský sol),
+				'currency' => q(Peruvský sol),
 			},
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(Papuánska kina),
+				'currency' => q(Papuánska kina),
 				'few' => q(papuánske kiny),
 				'many' => q(papuánskej kiny),
 				'one' => q(papuánska kina),
@@ -3522,18 +3521,18 @@ has 'curriencies' => (
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(Filipínske peso),
+				'currency' => q(Filipínske peso),
 			},
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(Pakistanská rupia),
+				'currency' => q(Pakistanská rupia),
 			},
 		},
 		'PLN' => {
 			symbol => 'zl',
 			display_name => {
-				'default' => q(Poľský zlotý),
+				'currency' => q(Poľský zlotý),
 				'few' => q(poľské zloté),
 				'many' => q(poľského zlotého),
 				'one' => q(poľský zlotý),
@@ -3542,21 +3541,21 @@ has 'curriencies' => (
 		},
 		'PLZ' => {
 			display_name => {
-				'default' => q(Polský zloty (1950–1995)),
-				'few' => q(poľské zloté (1950–1995)),
-				'many' => q(poľského zlotého (1950–1995)),
-				'one' => q(poľský zlotý (1950–1995)),
-				'other' => q(poľských zlotých (1950–1995)),
+				'currency' => q(Polský zloty \(1950–1995\)),
+				'few' => q(poľské zloté \(1950–1995\)),
+				'many' => q(poľského zlotého \(1950–1995\)),
+				'one' => q(poľský zlotý \(1950–1995\)),
+				'other' => q(poľských zlotých \(1950–1995\)),
 			},
 		},
 		'PTE' => {
 			display_name => {
-				'default' => q(Portugalské eskudo),
+				'currency' => q(Portugalské eskudo),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(Paraguayské guarani),
+				'currency' => q(Paraguayské guarani),
 				'few' => q(paraguayské guarani),
 				'many' => q(paraguayského guarani),
 				'one' => q(paraguajské guaraní),
@@ -3565,7 +3564,7 @@ has 'curriencies' => (
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(Katarský rial),
+				'currency' => q(Katarský rial),
 				'few' => q(katarské rialy),
 				'many' => q(katarského rialu),
 				'one' => q(katarský rial),
@@ -3574,16 +3573,16 @@ has 'curriencies' => (
 		},
 		'ROL' => {
 			display_name => {
-				'default' => q(Rumunský leu (1952–2006)),
-				'few' => q(rumunské leu (1952–2006)),
-				'many' => q(rumunského leu (1952–2006)),
-				'one' => q(rumunský leu (1952–2006)),
-				'other' => q(rumunských leu (1952–2006)),
+				'currency' => q(Rumunský leu \(1952–2006\)),
+				'few' => q(rumunské leu \(1952–2006\)),
+				'many' => q(rumunského leu \(1952–2006\)),
+				'one' => q(rumunský leu \(1952–2006\)),
+				'other' => q(rumunských leu \(1952–2006\)),
 			},
 		},
 		'RON' => {
 			display_name => {
-				'default' => q(Rumunský leu),
+				'currency' => q(Rumunský leu),
 				'few' => q(rumunské leu),
 				'many' => q(rumunského leu),
 				'one' => q(rumunský leu),
@@ -3592,7 +3591,7 @@ has 'curriencies' => (
 		},
 		'RSD' => {
 			display_name => {
-				'default' => q(Srbský dinár),
+				'currency' => q(Srbský dinár),
 				'few' => q(srbské dináre),
 				'many' => q(srbského dinára),
 				'one' => q(srbský dinár),
@@ -3601,7 +3600,7 @@ has 'curriencies' => (
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(Ruský rubeľ),
+				'currency' => q(Ruský rubeľ),
 				'few' => q(ruské ruble),
 				'many' => q(ruského rubľa),
 				'one' => q(ruský rubeľ),
@@ -3610,17 +3609,17 @@ has 'curriencies' => (
 		},
 		'RUR' => {
 			display_name => {
-				'default' => q(Ruský rubeľ (1991–1998)),
+				'currency' => q(Ruský rubeľ \(1991–1998\)),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Rwandský frank),
+				'currency' => q(Rwandský frank),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Saudskoarabský rial),
+				'currency' => q(Saudskoarabský rial),
 				'few' => q(saudskoarabské rialy),
 				'many' => q(saudskoarabského rialu),
 				'one' => q(saudskoarabský rial),
@@ -3629,7 +3628,7 @@ has 'curriencies' => (
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(Šalamúnsky dolár),
+				'currency' => q(Šalamúnsky dolár),
 				'few' => q(šalamúnske doláre),
 				'many' => q(šalamúnskeho dolára),
 				'one' => q(šalamúnsky dolár),
@@ -3638,7 +3637,7 @@ has 'curriencies' => (
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Seychelská rupia),
+				'currency' => q(Seychelská rupia),
 				'few' => q(seychelské rupie),
 				'many' => q(seychelskej rupie),
 				'one' => q(seychelská rupia),
@@ -3647,12 +3646,12 @@ has 'curriencies' => (
 		},
 		'SDD' => {
 			display_name => {
-				'default' => q(Sudánsky dinár),
+				'currency' => q(Sudánsky dinár),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Sudánska libra),
+				'currency' => q(Sudánska libra),
 				'few' => q(sudánske libry),
 				'many' => q(sudánskej libry),
 				'one' => q(sudánska libra),
@@ -3661,16 +3660,16 @@ has 'curriencies' => (
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(Sudánska libra (1957–1998)),
-				'few' => q(sudánske libry (1957–1998)),
-				'many' => q(sudánskej libry (1957–1998)),
-				'one' => q(sudánska libra (1957–1998)),
-				'other' => q(sudánskych libier (1957–1998)),
+				'currency' => q(Sudánska libra \(1957–1998\)),
+				'few' => q(sudánske libry \(1957–1998\)),
+				'many' => q(sudánskej libry \(1957–1998\)),
+				'one' => q(sudánska libra \(1957–1998\)),
+				'other' => q(sudánskych libier \(1957–1998\)),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(Švédska koruna),
+				'currency' => q(Švédska koruna),
 				'few' => q(švédske koruny),
 				'many' => q(švédskej koruny),
 				'one' => q(švédska koruna),
@@ -3679,12 +3678,12 @@ has 'curriencies' => (
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(Singapúrsky dolár),
+				'currency' => q(Singapúrsky dolár),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Svätohelenská libra),
+				'currency' => q(Svätohelenská libra),
 				'few' => q(svätohelenské libry),
 				'many' => q(svätohelenskej libry),
 				'one' => q(svätohelenská libra),
@@ -3693,17 +3692,17 @@ has 'curriencies' => (
 		},
 		'SIT' => {
 			display_name => {
-				'default' => q(Slovinský Tolar),
+				'currency' => q(Slovinský Tolar),
 			},
 		},
 		'SKK' => {
 			display_name => {
-				'default' => q(Slovenská koruna),
+				'currency' => q(Slovenská koruna),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Sierraleonský leone),
+				'currency' => q(Sierraleonský leone),
 				'few' => q(sierraleonské leone),
 				'many' => q(sierraleonského leone),
 				'one' => q(sierraleonský leone),
@@ -3712,12 +3711,12 @@ has 'curriencies' => (
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Somálsky šiling),
+				'currency' => q(Somálsky šiling),
 			},
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(Surinamský dolár),
+				'currency' => q(Surinamský dolár),
 				'few' => q(surinamské doláre),
 				'many' => q(surinamského dolára),
 				'one' => q(surinamský dolár),
@@ -3726,12 +3725,12 @@ has 'curriencies' => (
 		},
 		'SRG' => {
 			display_name => {
-				'default' => q(Surinamský guilder),
+				'currency' => q(Surinamský guilder),
 			},
 		},
 		'SSP' => {
 			display_name => {
-				'default' => q(Juhosudánska libra),
+				'currency' => q(Juhosudánska libra),
 				'few' => q(juhosudánske libry),
 				'many' => q(juhosudánskej libry),
 				'one' => q(juhosudánska libra),
@@ -3740,7 +3739,7 @@ has 'curriencies' => (
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Sao Tome a Principe dobra),
+				'currency' => q(Sao Tome a Principe dobra),
 				'few' => q(svätotomášske dobry),
 				'many' => q(svätotomášskej dobry),
 				'one' => q(svätotomášska dobra),
@@ -3749,12 +3748,12 @@ has 'curriencies' => (
 		},
 		'SUR' => {
 			display_name => {
-				'default' => q(Sovietsky rubeľ),
+				'currency' => q(Sovietsky rubeľ),
 			},
 		},
 		'SVC' => {
 			display_name => {
-				'default' => q(Salvádorský colón),
+				'currency' => q(Salvádorský colón),
 				'few' => q(salvádorské colóny),
 				'many' => q(salvádorského colóna),
 				'one' => q(salvádorský colón),
@@ -3763,12 +3762,12 @@ has 'curriencies' => (
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(Syrská libra),
+				'currency' => q(Syrská libra),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Svazijské lilangeni),
+				'currency' => q(Svazijské lilangeni),
 				'few' => q(svazijské lilangeni),
 				'many' => q(svazijského lilangeni),
 				'one' => q(svazijské lilangeni),
@@ -3778,7 +3777,7 @@ has 'curriencies' => (
 		'THB' => {
 			symbol => 'THB',
 			display_name => {
-				'default' => q(Thajský baht),
+				'currency' => q(Thajský baht),
 				'few' => q(thajské bahty),
 				'many' => q(thajského bahtu),
 				'one' => q(thajský baht),
@@ -3787,12 +3786,12 @@ has 'curriencies' => (
 		},
 		'TJR' => {
 			display_name => {
-				'default' => q(Tadžický rubeľ),
+				'currency' => q(Tadžický rubeľ),
 			},
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(Tadžické somoni),
+				'currency' => q(Tadžické somoni),
 				'few' => q(tadžické somoni),
 				'many' => q(tadžického somoni),
 				'one' => q(tadžické somoni),
@@ -3801,16 +3800,16 @@ has 'curriencies' => (
 		},
 		'TMM' => {
 			display_name => {
-				'default' => q(Turkménsky manat (1993–2009)),
-				'few' => q(turkménske manaty (1993–2009)),
-				'many' => q(turkménskeho manatu (1993–2009)),
-				'one' => q(turkménsky manat (1993–2009)),
-				'other' => q(turkménskych manatov (1993–2009)),
+				'currency' => q(Turkménsky manat \(1993–2009\)),
+				'few' => q(turkménske manaty \(1993–2009\)),
+				'many' => q(turkménskeho manatu \(1993–2009\)),
+				'one' => q(turkménsky manat \(1993–2009\)),
+				'other' => q(turkménskych manatov \(1993–2009\)),
 			},
 		},
 		'TMT' => {
 			display_name => {
-				'default' => q(Turkménsky manat),
+				'currency' => q(Turkménsky manat),
 				'few' => q(turkménske manaty),
 				'many' => q(turkménskeho manatu),
 				'one' => q(turkménsky manat),
@@ -3819,12 +3818,12 @@ has 'curriencies' => (
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Tuniský dinár),
+				'currency' => q(Tuniský dinár),
 			},
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(Tonga Paʻanga),
+				'currency' => q(Tonga Paʻanga),
 				'few' => q(tongské pa'anga),
 				'many' => q(tongského pa'anga),
 				'one' => q(tongská pa'anga),
@@ -3833,21 +3832,21 @@ has 'curriencies' => (
 		},
 		'TPE' => {
 			display_name => {
-				'default' => q(Timorské eskudo),
+				'currency' => q(Timorské eskudo),
 			},
 		},
 		'TRL' => {
 			display_name => {
-				'default' => q(Turecká lira (1922–2005)),
-				'few' => q(turecké líry (1922–2005)),
-				'many' => q(tureckej líry (1922–2005)),
-				'one' => q(turecká líra (1922–2005)),
-				'other' => q(tureckých lír (1922–2005)),
+				'currency' => q(Turecká lira \(1922–2005\)),
+				'few' => q(turecké líry \(1922–2005\)),
+				'many' => q(tureckej líry \(1922–2005\)),
+				'one' => q(turecká líra \(1922–2005\)),
+				'other' => q(tureckých lír \(1922–2005\)),
 			},
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(Turecká líra),
+				'currency' => q(Turecká líra),
 				'few' => q(turecké líry),
 				'many' => q(tureckej líry),
 				'one' => q(turecká líra),
@@ -3856,7 +3855,7 @@ has 'curriencies' => (
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(Trinidadsko-tobažský dolár),
+				'currency' => q(Trinidadsko-tobažský dolár),
 				'few' => q(trinidadsko-tobažské doláre),
 				'many' => q(trinidadsko-tobažského dolára),
 				'one' => q(trinidadsko-tobažský dolár),
@@ -3866,7 +3865,7 @@ has 'curriencies' => (
 		'TWD' => {
 			symbol => 'TWD',
 			display_name => {
-				'default' => q(Nový taiwanský dolár),
+				'currency' => q(Nový taiwanský dolár),
 				'few' => q(nové taiwanské doláre),
 				'many' => q(nového taiwanského dolára),
 				'one' => q(nový taiwanský dolár),
@@ -3875,12 +3874,12 @@ has 'curriencies' => (
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Tanzanský šiling),
+				'currency' => q(Tanzanský šiling),
 			},
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(Ukrainská hrivna),
+				'currency' => q(Ukrainská hrivna),
 				'few' => q(ukrajinské hrivny),
 				'many' => q(ukrajinskej hrivny),
 				'one' => q(ukrajinská hrivna),
@@ -3889,23 +3888,23 @@ has 'curriencies' => (
 		},
 		'UAK' => {
 			display_name => {
-				'default' => q(Ukrainský karbovanetz),
+				'currency' => q(Ukrainský karbovanetz),
 			},
 		},
 		'UGS' => {
 			display_name => {
-				'default' => q(Ugandan šiling (1966–1987)),
+				'currency' => q(Ugandan šiling \(1966–1987\)),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Ugandský šiling),
+				'currency' => q(Ugandský šiling),
 			},
 		},
 		'USD' => {
 			symbol => 'USD',
 			display_name => {
-				'default' => q(Americký dolár),
+				'currency' => q(Americký dolár),
 				'few' => q(americké doláre),
 				'many' => q(amerického dolára),
 				'one' => q(americký dolár),
@@ -3914,22 +3913,22 @@ has 'curriencies' => (
 		},
 		'USN' => {
 			display_name => {
-				'default' => q(US dolár (Next day)),
+				'currency' => q(US dolár \(Next day\)),
 			},
 		},
 		'USS' => {
 			display_name => {
-				'default' => q(US dolár (Same day)),
+				'currency' => q(US dolár \(Same day\)),
 			},
 		},
 		'UYP' => {
 			display_name => {
-				'default' => q(Uruguajské peso (1975–1993)),
+				'currency' => q(Uruguajské peso \(1975–1993\)),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(Uruguajské peso Uruguayo),
+				'currency' => q(Uruguajské peso Uruguayo),
 				'few' => q(uruguajské pesos),
 				'many' => q(uruguajských pesos),
 				'one' => q(uruguajské peso),
@@ -3938,7 +3937,7 @@ has 'curriencies' => (
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(Uzbecký sum),
+				'currency' => q(Uzbecký sum),
 				'few' => q(uzbecké sumy),
 				'many' => q(uzbeckého sumu),
 				'one' => q(uzbecký sum),
@@ -3947,23 +3946,23 @@ has 'curriencies' => (
 		},
 		'VEB' => {
 			display_name => {
-				'default' => q(Venezuelský bolívar (1871–2008)),
+				'currency' => q(Venezuelský bolívar \(1871–2008\)),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(Venezuelský bolívar),
+				'currency' => q(Venezuelský bolívar),
 			},
 		},
 		'VND' => {
 			symbol => '₫',
 			display_name => {
-				'default' => q(Vietnamský dong),
+				'currency' => q(Vietnamský dong),
 			},
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(Vanuatské vatu),
+				'currency' => q(Vanuatské vatu),
 				'few' => q(vanuatské vatu),
 				'many' => q(vanuatského vatu),
 				'one' => q(vanuatské vatu),
@@ -3972,7 +3971,7 @@ has 'curriencies' => (
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(Samojská tala),
+				'currency' => q(Samojská tala),
 				'few' => q(samojské taly),
 				'many' => q(samojskej taly),
 				'one' => q(samojská tala),
@@ -3982,18 +3981,18 @@ has 'curriencies' => (
 		'XAF' => {
 			symbol => 'FCFA',
 			display_name => {
-				'default' => q(CFA frank BEAC),
+				'currency' => q(CFA frank BEAC),
 			},
 		},
 		'XAU' => {
 			display_name => {
-				'default' => q(Zlato),
+				'currency' => q(Zlato),
 			},
 		},
 		'XCD' => {
 			symbol => 'EC$',
 			display_name => {
-				'default' => q(Východokaribský dolár),
+				'currency' => q(Východokaribský dolár),
 				'few' => q(východokaribské doláre),
 				'many' => q(východokaribského dolára),
 				'one' => q(východokaribský dolár),
@@ -4002,34 +4001,34 @@ has 'curriencies' => (
 		},
 		'XDR' => {
 			display_name => {
-				'default' => q(Špeciálne práva čerpania),
+				'currency' => q(Špeciálne práva čerpania),
 			},
 		},
 		'XFO' => {
 			display_name => {
-				'default' => q(Francúzsky zlatý frank),
+				'currency' => q(Francúzsky zlatý frank),
 			},
 		},
 		'XFU' => {
 			display_name => {
-				'default' => q(Francúzsky UIC-frank),
+				'currency' => q(Francúzsky UIC-frank),
 			},
 		},
 		'XOF' => {
 			symbol => 'CFA',
 			display_name => {
-				'default' => q(CFA frank BCEAO),
+				'currency' => q(CFA frank BCEAO),
 			},
 		},
 		'XPF' => {
 			symbol => 'CFPF',
 			display_name => {
-				'default' => q(CFP frank),
+				'currency' => q(CFP frank),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(Neznáma mena),
+				'currency' => q(Neznáma mena),
 				'few' => q(Neznáma mena),
 				'many' => q(Neznáma mena),
 				'one' => q(Neznáma mena),
@@ -4038,37 +4037,37 @@ has 'curriencies' => (
 		},
 		'YDD' => {
 			display_name => {
-				'default' => q(Jemenský dinár),
+				'currency' => q(Jemenský dinár),
 			},
 		},
 		'YER' => {
 			display_name => {
-				'default' => q(Jemenský rial),
+				'currency' => q(Jemenský rial),
 			},
 		},
 		'YUD' => {
 			display_name => {
-				'default' => q(Juhoslávsky dinár [YUD]),
+				'currency' => q(Juhoslávsky dinár [YUD]),
 			},
 		},
 		'YUM' => {
 			display_name => {
-				'default' => q(Juhoslávsky Noviy dinár),
+				'currency' => q(Juhoslávsky Noviy dinár),
 			},
 		},
 		'YUN' => {
 			display_name => {
-				'default' => q(Juhoslávsky dinár),
+				'currency' => q(Juhoslávsky dinár),
 			},
 		},
 		'ZAL' => {
 			display_name => {
-				'default' => q(Juhoafrický rand (financial)),
+				'currency' => q(Juhoafrický rand \(financial\)),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Juhoafrický rand),
+				'currency' => q(Juhoafrický rand),
 				'few' => q(juhoafrické randy),
 				'many' => q(juhoafrického randu),
 				'one' => q(juhoafrický rand),
@@ -4077,16 +4076,16 @@ has 'curriencies' => (
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Zambijská kwacha (1968–2012)),
-				'few' => q(zambijské kwachy (1968–2012)),
-				'many' => q(zambijskej kwachy (1968–2012)),
-				'one' => q(zambijská kwacha (1968–2012)),
-				'other' => q(zambijských kwách (1968–2012)),
+				'currency' => q(Zambijská kwacha \(1968–2012\)),
+				'few' => q(zambijské kwachy \(1968–2012\)),
+				'many' => q(zambijskej kwachy \(1968–2012\)),
+				'one' => q(zambijská kwacha \(1968–2012\)),
+				'other' => q(zambijských kwách \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Zambijská kwacha),
+				'currency' => q(Zambijská kwacha),
 				'few' => q(zambijské kwachy),
 				'many' => q(zambijskej kwachy),
 				'one' => q(zambijská kwacha),
@@ -4095,39 +4094,39 @@ has 'curriencies' => (
 		},
 		'ZRN' => {
 			display_name => {
-				'default' => q(Zairský nový zaire),
+				'currency' => q(Zairský nový zaire),
 			},
 		},
 		'ZRZ' => {
 			display_name => {
-				'default' => q(Zairský Zaire),
+				'currency' => q(Zairský Zaire),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Zimbabwiansky dolár (1980–2008)),
-				'few' => q(zimbabwianske doláre (1980–2008)),
-				'many' => q(zimbabwianskeho dolára (1980–2008)),
-				'one' => q(zimbabwiansky dolár (1980–2008)),
-				'other' => q(zimbabwianskych dolárov (1980–2008)),
+				'currency' => q(Zimbabwiansky dolár \(1980–2008\)),
+				'few' => q(zimbabwianske doláre \(1980–2008\)),
+				'many' => q(zimbabwianskeho dolára \(1980–2008\)),
+				'one' => q(zimbabwiansky dolár \(1980–2008\)),
+				'other' => q(zimbabwianskych dolárov \(1980–2008\)),
 			},
 		},
 		'ZWL' => {
 			display_name => {
-				'default' => q(Zimbabwiansky dolár (2009)),
-				'few' => q(zimbabwianske doláre (2009)),
-				'many' => q(zimbabwianskeho dolára (2009)),
-				'one' => q(zimbabwiansky dolár (2009)),
-				'other' => q(zimbabwianskych dolárov (2009)),
+				'currency' => q(Zimbabwiansky dolár \(2009\)),
+				'few' => q(zimbabwianske doláre \(2009\)),
+				'many' => q(zimbabwianskeho dolára \(2009\)),
+				'one' => q(zimbabwiansky dolár \(2009\)),
+				'other' => q(zimbabwianskych dolárov \(2009\)),
 			},
 		},
 		'ZWR' => {
 			display_name => {
-				'default' => q(Zimbabwiansky dolár (2008)),
-				'few' => q(zimbabwianske doláre (2008)),
-				'many' => q(zimbabwianskeho dolára (2008)),
-				'one' => q(zimbabwiansky dolár (2008)),
-				'other' => q(zimbabwianskych dolárov (2008)),
+				'currency' => q(Zimbabwiansky dolár \(2008\)),
+				'few' => q(zimbabwianske doláre \(2008\)),
+				'many' => q(zimbabwianskeho dolára \(2008\)),
+				'one' => q(zimbabwiansky dolár \(2008\)),
+				'other' => q(zimbabwianskych dolárov \(2008\)),
 			},
 		},
 	} },
@@ -4362,8 +4361,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{AM},
 					'pm' => q{PM},
+					'am' => q{AM},
 				},
 			},
 		},

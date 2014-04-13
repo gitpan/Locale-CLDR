@@ -1,6 +1,6 @@
-package Locale::CLDR::Zh::Hant::Hk;
+package Locale::CLDR::Zh::Hant::Hk v0.0.4;
 # This file auto generated from Data\common\main\zh_Hant_HK.xml
-#	on Mon 31 Mar  2:31:34 am GMT
+#	on Sun 13 Apr 12:32:52 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -349,7 +349,6 @@ has 'units' => (
 			} }
 );
 
-
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -362,9 +361,6 @@ has 'nostr' => (
 	isa			=> 'RegexpRef',
 	init_arg	=> undef,
 	default		=> sub { qr'^(?i:否|no|n)$' }
-);
-
-	} }
 );
 
 has 'number_currency_formats' => (
@@ -396,113 +392,113 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(阿拉伯聯合酋長國迪爾汗),
+				'currency' => q(阿拉伯聯合酋長國迪爾汗),
 				'other' => q(阿拉伯聯合酋長國迪爾汗),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(澳元),
+				'currency' => q(澳元),
 			},
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(亞塞拜疆馬納特),
+				'currency' => q(亞塞拜疆馬納特),
 				'other' => q(亞塞拜疆馬納特),
 			},
 		},
 		'BAD' => {
 			display_name => {
-				'default' => q(波斯尼亞-黑塞哥維那第納爾),
+				'currency' => q(波斯尼亞-黑塞哥維那第納爾),
 			},
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(波斯尼亞-黑塞哥維那可轉換馬克),
+				'currency' => q(波斯尼亞-黑塞哥維那可轉換馬克),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(加元),
+				'currency' => q(加元),
 			},
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(哥斯達黎加科郎),
+				'currency' => q(哥斯達黎加科郎),
 				'other' => q(哥斯達黎加科郎),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(埃塞俄比亞比爾),
+				'currency' => q(埃塞俄比亞比爾),
 				'other' => q(埃塞俄比亞比爾),
 			},
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(格魯吉亞拉里),
+				'currency' => q(格魯吉亞拉里),
 				'other' => q(格魯吉亞拉里),
 			},
 		},
 		'HKD' => {
 			symbol => '$',
 			display_name => {
-				'default' => q(港元),
+				'currency' => q(港元),
 			},
 		},
 		'ITL' => {
 			display_name => {
-				'default' => q(意大利里拉),
+				'currency' => q(意大利里拉),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(利比利亞元),
+				'currency' => q(利比利亞元),
 				'other' => q(利比利亞元),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(毛里求斯盧布),
+				'currency' => q(毛里求斯盧布),
 				'other' => q(毛里求斯盧布),
 			},
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(莫桑比克美提卡),
+				'currency' => q(莫桑比克美提卡),
 				'other' => q(莫桑比克美提卡),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(尼日利亞奈拉),
+				'currency' => q(尼日利亞奈拉),
 				'other' => q(尼日利亞奈拉),
 			},
 		},
 		'NZD' => {
 			display_name => {
-				'default' => q(紐西蘭元),
+				'currency' => q(紐西蘭元),
 			},
 		},
 		'RSD' => {
 			display_name => {
-				'default' => q(塞爾維亞第納爾),
+				'currency' => q(塞爾維亞第納爾),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(盧旺達法郎),
+				'currency' => q(盧旺達法郎),
 				'other' => q(盧旺達法郎),
 			},
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(新加坡元),
+				'currency' => q(新加坡元),
 			},
 		},
 		'TWD' => {
 			display_name => {
-				'default' => q(新台幣),
+				'currency' => q(新台幣),
 			},
 		},
 		'USD' => {
@@ -510,17 +506,17 @@ has 'curriencies' => (
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(中非法郎),
+				'currency' => q(中非法郎),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(多哥非洲共同體法郎),
+				'currency' => q(多哥非洲共同體法郎),
 			},
 		},
 		'XPF' => {
 			display_name => {
-				'default' => q(太平洋法郎),
+				'currency' => q(太平洋法郎),
 			},
 		},
 	} },
@@ -666,77 +662,77 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'generic') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-			last SWITCH;
-			}
 			if ($_ eq 'roc') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
 				return 'midDay' if $time >= 1200
 					&& $time < 1300;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'gregorian') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
 				return 'earlyMorning' if $time >= 400
 					&& $time < 600;
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'buddhist') {
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
 				return 'night' if $time >= 1800
 					&& $time < 2400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'chinese') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
 				return 'midDay' if $time >= 1200
 					&& $time < 1300;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'buddhist') {
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'gregorian') {
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'generic') {
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
 			last SWITCH;
@@ -846,41 +842,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			Ed => q{d E},
-			GyMMM => q{G y 年 M 月},
-			GyMMMEd => q{G y 年 M 月 d 日 (E)},
-			MEd => q{E, d/M},
-			MMMEd => q{M 月 d 日 (E)},
-			MMMd => q{M 月 d 日},
-			Md => q{d/M},
-			yyyyM => q{M/yGGGGG},
-			yyyyMEd => q{E, d/M/yGGGGG},
-			yyyyMMMEd => q{G y 年 M 月 d 日 (E)},
-			yyyyMd => q{d/M/yGGGGG},
-			yyyyQQQ => q{G y 年第QQQ},
-			yyyyQQQQ => q{G y 年QQQQ},
-		},
-		'buddhist' => {
-			MEd => q{M-d（E）},
-			Md => q{M-d},
-		},
-		'gregorian' => {
-			Ed => q{d E},
-			GyMMMEd => q{G y 年 M 月 d 日 (E)},
-			MEd => q{E, d/M},
-			MMMEd => q{M月d日 (E)},
-			MMdd => q{dd/MM},
-			Md => q{d/M},
-			yM => q{M/y},
-			yMEd => q{d/M/y（E）},
-			yMM => q{MM/y},
-			yMMM => q{y 年 M 月},
-			yMMMEd => q{y 年 M 月 d 日 (E)},
-			yMMMM => q{y 年 M 月},
-			yMMMd => q{y 年 M 月 d 日},
-			yMd => q{d/M/y},
-		},
 		'roc' => {
 			Gy => q{G y 年},
 			GyMMM => q{G y 年 M 月},
@@ -900,6 +861,41 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{d/M/yGGGGG},
 			yyyyQQQ => q{G y 年第QQQ},
 			yyyyQQQQ => q{G y 年QQQQ},
+		},
+		'generic' => {
+			Ed => q{d E},
+			GyMMM => q{G y 年 M 月},
+			GyMMMEd => q{G y 年 M 月 d 日 (E)},
+			MEd => q{E, d/M},
+			MMMEd => q{M 月 d 日 (E)},
+			MMMd => q{M 月 d 日},
+			Md => q{d/M},
+			yyyyM => q{M/yGGGGG},
+			yyyyMEd => q{E, d/M/yGGGGG},
+			yyyyMMMEd => q{G y 年 M 月 d 日 (E)},
+			yyyyMd => q{d/M/yGGGGG},
+			yyyyQQQ => q{G y 年第QQQ},
+			yyyyQQQQ => q{G y 年QQQQ},
+		},
+		'gregorian' => {
+			Ed => q{d E},
+			GyMMMEd => q{G y 年 M 月 d 日 (E)},
+			MEd => q{E, d/M},
+			MMMEd => q{M月d日 (E)},
+			MMdd => q{dd/MM},
+			Md => q{d/M},
+			yM => q{M/y},
+			yMEd => q{d/M/y（E）},
+			yMM => q{MM/y},
+			yMMM => q{y 年 M 月},
+			yMMMEd => q{y 年 M 月 d 日 (E)},
+			yMMMM => q{y 年 M 月},
+			yMMMd => q{y 年 M 月 d 日},
+			yMd => q{d/M/y},
+		},
+		'buddhist' => {
+			MEd => q{M-d（E）},
+			Md => q{M-d},
 		},
 	} },
 );

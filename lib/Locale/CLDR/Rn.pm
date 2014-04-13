@@ -1,6 +1,6 @@
-package Locale::CLDR::Rn;
+package Locale::CLDR::Rn v0.0.4;
 # This file auto generated from Data\common\main\rn.xml
-#	on Mon 31 Mar  1:45:31 am GMT
+#	on Sun 13 Apr 11:45:46 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -431,268 +431,268 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Idiramu ryo muri Leta Zunze Ubumwe z'Abarabu),
+				'currency' => q(Idiramu ryo muri Leta Zunze Ubumwe z'Abarabu),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Ikwanza ryo muri Angola),
+				'currency' => q(Ikwanza ryo muri Angola),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Idolari ryo muri Ositaraliya),
+				'currency' => q(Idolari ryo muri Ositaraliya),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Idinari ry'iribahireyini),
+				'currency' => q(Idinari ry'iribahireyini),
 			},
 		},
 		'BIF' => {
 			symbol => 'FBu',
 			display_name => {
-				'default' => q(Ifaranga ry'Uburundi),
+				'currency' => q(Ifaranga ry'Uburundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Ipula ryo muri Botswana),
+				'currency' => q(Ipula ryo muri Botswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Idolari rya Kanada),
+				'currency' => q(Idolari rya Kanada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Ifaranga rya Kongo),
+				'currency' => q(Ifaranga rya Kongo),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Ifaranga ry'Ubusuwisi),
+				'currency' => q(Ifaranga ry'Ubusuwisi),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Iyuwani ryo mu Bushinwa),
+				'currency' => q(Iyuwani ryo mu Bushinwa),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Irikaboveridiyano ryo muri Esikudo),
+				'currency' => q(Irikaboveridiyano ryo muri Esikudo),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Ifaranga ryo muri Jibuti),
+				'currency' => q(Ifaranga ryo muri Jibuti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Idinari ryo muri Alijeriya),
+				'currency' => q(Idinari ryo muri Alijeriya),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Ipawundi rya Misiri),
+				'currency' => q(Ipawundi rya Misiri),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Irinakufa ryo muri Eritereya),
+				'currency' => q(Irinakufa ryo muri Eritereya),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Ibiri ryo muri Etiyopiya),
+				'currency' => q(Ibiri ryo muri Etiyopiya),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Iyero),
+				'currency' => q(Iyero),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Ipawundi ryo mu Bwongereza),
+				'currency' => q(Ipawundi ryo mu Bwongereza),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Icedi ryo muri Gana),
+				'currency' => q(Icedi ryo muri Gana),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Idalasi ryo muri Gambiya),
+				'currency' => q(Idalasi ryo muri Gambiya),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Ifaranga ryo muri Gineya),
+				'currency' => q(Ifaranga ryo muri Gineya),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Irupiya ryo mu Buhindi),
+				'currency' => q(Irupiya ryo mu Buhindi),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Iyeni ry'Ubuyapani),
+				'currency' => q(Iyeni ry'Ubuyapani),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Ishilingi rya Kenya),
+				'currency' => q(Ishilingi rya Kenya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Ifaranga rya Komore),
+				'currency' => q(Ifaranga rya Komore),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Idolari rya Liberiya),
+				'currency' => q(Idolari rya Liberiya),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Iloti ryo muro Lesoto),
+				'currency' => q(Iloti ryo muro Lesoto),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Idinari rya Libiya),
+				'currency' => q(Idinari rya Libiya),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Idiramu ryo muri Maroke),
+				'currency' => q(Idiramu ryo muri Maroke),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Iriyari ryo muri Madagasikari),
+				'currency' => q(Iriyari ryo muri Madagasikari),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Ugwiya ryo muri Moritaniya),
+				'currency' => q(Ugwiya ryo muri Moritaniya),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Irupiya ryo mu birwa bya Morise),
+				'currency' => q(Irupiya ryo mu birwa bya Morise),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Ikwaca ryo muri Malawi),
+				'currency' => q(Ikwaca ryo muri Malawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Irimetikali ryo muri Mozambike),
+				'currency' => q(Irimetikali ryo muri Mozambike),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Idolari rya Namibiya),
+				'currency' => q(Idolari rya Namibiya),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Inayira ryo muri Nijeriya),
+				'currency' => q(Inayira ryo muri Nijeriya),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Ifaranga ry'u Rwanda),
+				'currency' => q(Ifaranga ry'u Rwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Iriyari ryo muri Arabiya Sawudite),
+				'currency' => q(Iriyari ryo muri Arabiya Sawudite),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Irupiya ryo mu birwa bya Sayisheli),
+				'currency' => q(Irupiya ryo mu birwa bya Sayisheli),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Ipawundi rya Sudani),
+				'currency' => q(Ipawundi rya Sudani),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Ipawundi rya Sente Helena),
+				'currency' => q(Ipawundi rya Sente Helena),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Ilewone),
+				'currency' => q(Ilewone),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Ishilingi ryo muri Somaliya),
+				'currency' => q(Ishilingi ryo muri Somaliya),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Idobura ryo muri Sawotome na Perensipe),
+				'currency' => q(Idobura ryo muri Sawotome na Perensipe),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Ililangeni),
+				'currency' => q(Ililangeni),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Idinari ryo muri Tuniziya),
+				'currency' => q(Idinari ryo muri Tuniziya),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Ishilingi rya Tanzaniya),
+				'currency' => q(Ishilingi rya Tanzaniya),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Ishilingi ry'Ubugande),
+				'currency' => q(Ishilingi ry'Ubugande),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Idolari ry'abanyamerika),
+				'currency' => q(Idolari ry'abanyamerika),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Irandi ryo muri Afurika y'Epfo),
+				'currency' => q(Irandi ryo muri Afurika y'Epfo),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Ikwaca ryo muri Zambiya (1968–2012)),
+				'currency' => q(Ikwaca ryo muri Zambiya \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Ikwaca ryo muri Zambiya),
+				'currency' => q(Ikwaca ryo muri Zambiya),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Idolari ryo muri Zimbabwe),
+				'currency' => q(Idolari ryo muri Zimbabwe),
 			},
 		},
 	} },
@@ -809,8 +809,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{Z.MU.},
 					'pm' => q{Z.MW.},
+					'am' => q{Z.MU.},
 				},
 			},
 		},
@@ -957,3 +957,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

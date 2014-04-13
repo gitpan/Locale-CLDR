@@ -1,6 +1,6 @@
-package Locale::CLDR::Bo;
+package Locale::CLDR::Bo v0.0.4;
 # This file auto generated from Data\common\main\bo.xml
-#	on Sun 30 Mar 11:48:44 pm GMT
+#	on Sun 13 Apr  9:44:43 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -455,22 +455,22 @@ has 'curriencies' => (
 		'CNY' => {
 			symbol => '¥',
 			display_name => {
-				'default' => q(ཡུ་ཨན་),
+				'currency' => q(ཡུ་ཨན་),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(རྒྱ་གར་སྒོར་མོ་),
+				'currency' => q(རྒྱ་གར་སྒོར་མོ་),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(ཨ་རིའི་སྒོར་མོ།),
+				'currency' => q(ཨ་རིའི་སྒོར་མོ།),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(མ་རྟོགས་པའི་ནུས་མེད་དངུལ་ལོར),
+				'currency' => q(མ་རྟོགས་པའི་ནུས་མེད་དངུལ་ལོར),
 			},
 		},
 	} },
@@ -706,11 +706,11 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			yMMMMd => q{སྦྱི་ལོ་y MMMMའི་ཙེས་dད},
 			yMMMd => q{y ལོ་འི་MMMཙེས་d},
 		},
-		'gregorian' => {
+		'generic' => {
 			yMMMMd => q{སྦྱི་ལོ་y MMMMའི་ཙེས་dད},
 			yMMMd => q{y ལོ་འི་MMMཙེས་d},
 		},

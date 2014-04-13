@@ -1,6 +1,6 @@
-package Locale::CLDR::Ks;
+package Locale::CLDR::Ks v0.0.4;
 # This file auto generated from Data\common\main\ks.xml
-#	on Mon 31 Mar  1:03:00 am GMT
+#	on Sun 13 Apr 11:02:37 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -1066,7 +1066,6 @@ has 'units' => (
 			} }
 );
 
-
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -1170,1257 +1169,1257 @@ has 'curriencies' => (
 	default		=> sub { {
 		'ADP' => {
 			display_name => {
-				'default' => q(اٮ۪ڑورَن پیسِٹا),
+				'currency' => q(اٮ۪ڑورَن پیسِٹا),
 			},
 		},
 		'AED' => {
 			display_name => {
-				'default' => q(مُتحدہ عرب اِمارات دِرہم),
+				'currency' => q(مُتحدہ عرب اِمارات دِرہم),
 			},
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(افغان افغٲنی),
+				'currency' => q(افغان افغٲنی),
 			},
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(اٮ۪لبینِیَن لِک),
+				'currency' => q(اٮ۪لبینِیَن لِک),
 			},
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(اَرمانٮ۪ن ڈرٛٮ۪م),
+				'currency' => q(اَرمانٮ۪ن ڈرٛٮ۪م),
 			},
 		},
 		'ANG' => {
 			display_name => {
-				'default' => q(نایدَرلینٛڑ اٮ۪نٹٕلیٖیَن گِلڑَر),
+				'currency' => q(نایدَرلینٛڑ اٮ۪نٹٕلیٖیَن گِلڑَر),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(اٮ۪نگولَن کوانزا),
+				'currency' => q(اٮ۪نگولَن کوانزا),
 			},
 		},
 		'AOR' => {
 			display_name => {
-				'default' => q(اٮ۪نگولَن کوانٛزا رٮ۪جِسٹاڑو),
+				'currency' => q(اٮ۪نگولَن کوانٛزا رٮ۪جِسٹاڑو),
 			},
 		},
 		'ARA' => {
 			display_name => {
-				'default' => q(أرجَنٹیٖن اَسٹرل),
+				'currency' => q(أرجَنٹیٖن اَسٹرل),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(أرجَنٹیٖن پِسو),
+				'currency' => q(أرجَنٹیٖن پِسو),
 			},
 		},
 		'ATS' => {
 			display_name => {
-				'default' => q(آسٹریَن شِلِنٛگ),
+				'currency' => q(آسٹریَن شِلِنٛگ),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(آسٹریلِیَن ڈالَر),
+				'currency' => q(آسٹریلِیَن ڈالَر),
 			},
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(اَروبَن فِلورِن),
+				'currency' => q(اَروبَن فِلورِن),
 			},
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(آزَرباجانی مَنَٹ),
+				'currency' => q(آزَرباجانی مَنَٹ),
 			},
 		},
 		'BAD' => {
 			display_name => {
-				'default' => q(بوزنِیاہَرزِگووِنا دیٖنار),
+				'currency' => q(بوزنِیاہَرزِگووِنا دیٖنار),
 			},
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(بوزنِیاہَرزِگووِنا کَنوٲٹیبٕل مارٕک),
+				'currency' => q(بوزنِیاہَرزِگووِنا کَنوٲٹیبٕل مارٕک),
 			},
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(بابیڑِیَن ڈالَر),
+				'currency' => q(بابیڑِیَن ڈالَر),
 			},
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(بَنگلادیٖشی ٹَکا),
+				'currency' => q(بَنگلادیٖشی ٹَکا),
 			},
 		},
 		'BEF' => {
 			display_name => {
-				'default' => q(بَلجِیَن فرینٛک),
+				'currency' => q(بَلجِیَن فرینٛک),
 			},
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(بیلگیرِیَن ہاڑ لِو),
+				'currency' => q(بیلگیرِیَن ہاڑ لِو),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(بحریٖنی دیٖنار),
+				'currency' => q(بحریٖنی دیٖنار),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(بُرُنڑِین فرینٛک),
+				'currency' => q(بُرُنڑِین فرینٛک),
 			},
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(بٔرمیوٗڑَن ڈالَر),
+				'currency' => q(بٔرمیوٗڑَن ڈالَر),
 			},
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(برٛونی ڈالَر),
+				'currency' => q(برٛونی ڈالَر),
 			},
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(بولِوِیَن بولوینو),
+				'currency' => q(بولِوِیَن بولوینو),
 			},
 		},
 		'BOP' => {
 			display_name => {
-				'default' => q(بولویَن پِسو),
+				'currency' => q(بولویَن پِسو),
 			},
 		},
 		'BOV' => {
 			display_name => {
-				'default' => q(بولوِیَن مَوڈال),
+				'currency' => q(بولوِیَن مَوڈال),
 			},
 		},
 		'BRB' => {
 			display_name => {
-				'default' => q(برٛازیٖلین کرٛوزِرو نووو),
+				'currency' => q(برٛازیٖلین کرٛوزِرو نووو),
 			},
 		},
 		'BRC' => {
 			display_name => {
-				'default' => q(برٛازیٖلین کرٛوزیڑو),
+				'currency' => q(برٛازیٖلین کرٛوزیڑو),
 			},
 		},
 		'BRE' => {
 			display_name => {
-				'default' => q(\(برٛازیٖلین کرٛوزِرو),
+				'currency' => q(\(برٛازیٖلین کرٛوزِرو),
 			},
 		},
 		'BRL' => {
 			display_name => {
-				'default' => q(برٛازیٖلین رِیَل),
+				'currency' => q(برٛازیٖلین رِیَل),
 			},
 		},
 		'BRN' => {
 			display_name => {
-				'default' => q(برٛازیٖلین کرٛوزیڑو نووو),
+				'currency' => q(برٛازیٖلین کرٛوزیڑو نووو),
 			},
 		},
 		'BRR' => {
 			display_name => {
-				'default' => q(برٛازیٖلین کرٛوزیرو),
+				'currency' => q(برٛازیٖلین کرٛوزیرو),
 			},
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(بہامِیَن ڈالر),
+				'currency' => q(بہامِیَن ڈالر),
 			},
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(بوٗٹینیٖز نگُلٹرٛم),
+				'currency' => q(بوٗٹینیٖز نگُلٹرٛم),
 			},
 		},
 		'BUK' => {
 			display_name => {
-				'default' => q(بٔرمیٖز کیٹ),
+				'currency' => q(بٔرمیٖز کیٹ),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(بوٹٕسوانَن پُلا),
+				'currency' => q(بوٹٕسوانَن پُلا),
 			},
 		},
 		'BYB' => {
 			display_name => {
-				'default' => q(بِلیروشِیَن نِو رِبٕل),
+				'currency' => q(بِلیروشِیَن نِو رِبٕل),
 			},
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(بِلیروشِیَن رِبٕل),
+				'currency' => q(بِلیروشِیَن رِبٕل),
 			},
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(بِلِزی ڈالر),
+				'currency' => q(بِلِزی ڈالر),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(کینَڑِیَن ڈالر),
+				'currency' => q(کینَڑِیَن ڈالر),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(کونٛگولیٖز فرٛیک),
+				'currency' => q(کونٛگولیٖز فرٛیک),
 			},
 		},
 		'CHE' => {
 			display_name => {
-				'default' => q(وِر یوٗرو),
+				'currency' => q(وِر یوٗرو),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(سُوِز فریک),
+				'currency' => q(سُوِز فریک),
 			},
 		},
 		'CHW' => {
 			display_name => {
-				'default' => q(وِر فرٛیک),
+				'currency' => q(وِر فرٛیک),
 			},
 		},
 		'CLF' => {
 			display_name => {
-				'default' => q(چِلِن یوٗنِڑیدیٖز ڑِ فومیٹو),
+				'currency' => q(چِلِن یوٗنِڑیدیٖز ڑِ فومیٹو),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(چِلِن پِسو),
+				'currency' => q(چِلِن پِسو),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(چینیٖز یَن رِنمِنبی),
+				'currency' => q(چینیٖز یَن رِنمِنبی),
 			},
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(کولَمبِین پِسو),
+				'currency' => q(کولَمبِین پِسو),
 			},
 		},
 		'COU' => {
 			display_name => {
-				'default' => q(ِٖیوٗنِڑیڑ ڑِ ویلور رِیل),
+				'currency' => q(ِٖیوٗنِڑیڑ ڑِ ویلور رِیل),
 			},
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(کوسٹا رِکَن کولَن),
+				'currency' => q(کوسٹا رِکَن کولَن),
 			},
 		},
 		'CSD' => {
 			display_name => {
-				'default' => q(پرٛون سٔربِین ڈالر),
+				'currency' => q(پرٛون سٔربِین ڈالر),
 			},
 		},
 		'CSK' => {
 			display_name => {
-				'default' => q(چِکوسولوواک ہاڑ کوروٗنا),
+				'currency' => q(چِکوسولوواک ہاڑ کوروٗنا),
 			},
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(کیوٗبَن پِسو),
+				'currency' => q(کیوٗبَن پِسو),
 			},
 		},
 		'CYP' => {
 			display_name => {
-				'default' => q(کیپروٹ پَوُڑ),
+				'currency' => q(کیپروٹ پَوُڑ),
 			},
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(چیک کوریٖنا),
+				'currency' => q(چیک کوریٖنا),
 			},
 		},
 		'DDM' => {
 			display_name => {
-				'default' => q(مٔشرِقی جٔرمَن مارٕک),
+				'currency' => q(مٔشرِقی جٔرمَن مارٕک),
 			},
 		},
 		'DEM' => {
 			display_name => {
-				'default' => q(جٔرمَن مارٕک),
+				'currency' => q(جٔرمَن مارٕک),
 			},
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(ڈٔنِش کرٛون),
+				'currency' => q(ڈٔنِش کرٛون),
 			},
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(ڈومِنِکَن پِسو),
+				'currency' => q(ڈومِنِکَن پِسو),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(اٮ۪لجیرِیَن ڈیٖنار),
+				'currency' => q(اٮ۪لجیرِیَن ڈیٖنار),
 			},
 		},
 		'EEK' => {
 			display_name => {
-				'default' => q(اٮ۪سٹونِیَن کرٛون),
+				'currency' => q(اٮ۪سٹونِیَن کرٛون),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(اِجِپٹِیَن پَوُنڑ),
+				'currency' => q(اِجِپٹِیَن پَوُنڑ),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(رِٹریٖن نَفکا),
+				'currency' => q(رِٹریٖن نَفکا),
 			},
 		},
 		'ESP' => {
 			display_name => {
-				'default' => q(سِپینِش پیسِٹا),
+				'currency' => q(سِپینِش پیسِٹا),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(اِتھوپِیَن بِر),
+				'currency' => q(اِتھوپِیَن بِر),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(یوٗرو),
+				'currency' => q(یوٗرو),
 			},
 		},
 		'FIM' => {
 			display_name => {
-				'default' => q(فِنِش مارکا),
+				'currency' => q(فِنِش مارکا),
 			},
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(فِجین ڈالر),
+				'currency' => q(فِجین ڈالر),
 			},
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(فیکلینٛڑِس آیلینٛڑ پونٛڑ),
+				'currency' => q(فیکلینٛڑِس آیلینٛڑ پونٛڑ),
 			},
 		},
 		'FRF' => {
 			display_name => {
-				'default' => q(فرٛانسِسی فرٛیک),
+				'currency' => q(فرٛانسِسی فرٛیک),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(برطٲنوی پاونٛڑ سٹٔرلِنٛگ),
+				'currency' => q(برطٲنوی پاونٛڑ سٹٔرلِنٛگ),
 			},
 		},
 		'GEK' => {
 			display_name => {
-				'default' => q(جارجِیَن کیوٗپَن لَرِٹ),
+				'currency' => q(جارجِیَن کیوٗپَن لَرِٹ),
 			},
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(جارجِیَن لاری),
+				'currency' => q(جارجِیَن لاری),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(گَنیٚیَن سٮ۪ڑی(۱۹۷۹–۲٠٠۷)),
+				'currency' => q(گَنیٚیَن سٮ۪ڑی\(۱۹۷۹–۲٠٠۷\)),
 			},
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(گَنیٚیَن سٮ۪ڑی),
+				'currency' => q(گَنیٚیَن سٮ۪ڑی),
 			},
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(گِبریلٹَر پَاونٛڑ),
+				'currency' => q(گِبریلٹَر پَاونٛڑ),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(گیمبِیاہُک دلاسی),
+				'currency' => q(گیمبِیاہُک دلاسی),
 			},
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(گِنِیَن فرٛینٛک),
+				'currency' => q(گِنِیَن فرٛینٛک),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(گِنِیَن سِلی),
+				'currency' => q(گِنِیَن سِلی),
 			},
 		},
 		'GQE' => {
 			display_name => {
-				'default' => q(اِکویٹورِیَل گِنِیَن اٮ۪کویٖل),
+				'currency' => q(اِکویٹورِیَل گِنِیَن اٮ۪کویٖل),
 			},
 		},
 		'GRD' => {
 			display_name => {
-				'default' => q(گریٖسُک ڑرٛٮ۪کما),
+				'currency' => q(گریٖسُک ڑرٛٮ۪کما),
 			},
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(گواٹَمالَن قیوٗٹزَل),
+				'currency' => q(گواٹَمالَن قیوٗٹزَل),
 			},
 		},
 		'GWE' => {
 			display_name => {
-				'default' => q(پورتگیٖزُک گِنی اٮ۪سکیوٗڑو),
+				'currency' => q(پورتگیٖزُک گِنی اٮ۪سکیوٗڑو),
 			},
 		},
 		'GWP' => {
 			display_name => {
-				'default' => q(گِنی بِساوُک پٮ۪سو),
+				'currency' => q(گِنی بِساوُک پٮ۪سو),
 			},
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(گَیَنیٖزُک ڑالَر),
+				'currency' => q(گَیَنیٖزُک ڑالَر),
 			},
 		},
 		'HKD' => {
 			display_name => {
-				'default' => q(حانٛگ کانٛگُک ڑالَر),
+				'currency' => q(حانٛگ کانٛگُک ڑالَر),
 			},
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(حونڑورنُک لٮ۪مپیٖرا),
+				'currency' => q(حونڑورنُک لٮ۪مپیٖرا),
 			},
 		},
 		'HRD' => {
 			display_name => {
-				'default' => q(کروایشنُک دیٖنار),
+				'currency' => q(کروایشنُک دیٖنار),
 			},
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(کروایشنُک کوٗنا),
+				'currency' => q(کروایشنُک کوٗنا),
 			},
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(حیشَنُک گوڑ),
+				'currency' => q(حیشَنُک گوڑ),
 			},
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(حَنگیرِیَن فورِنٛٹ),
+				'currency' => q(حَنگیرِیَن فورِنٛٹ),
 			},
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(اِنڑونیشیاہُک رُپِیاہ),
+				'currency' => q(اِنڑونیشیاہُک رُپِیاہ),
 			},
 		},
 		'IEP' => {
 			display_name => {
-				'default' => q(اَیرلینڑُک پاونٛڑ),
+				'currency' => q(اَیرلینڑُک پاونٛڑ),
 			},
 		},
 		'ILP' => {
 			display_name => {
-				'default' => q(اِزرٲیِلی پاونٛڑ),
+				'currency' => q(اِزرٲیِلی پاونٛڑ),
 			},
 		},
 		'ILS' => {
 			display_name => {
-				'default' => q(اِزرٲیِلی نٔوۍ شٮ۪قٕل),
+				'currency' => q(اِزرٲیِلی نٔوۍ شٮ۪قٕل),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(ہِندُستٲنۍ رۄپَے),
+				'currency' => q(ہِندُستٲنۍ رۄپَے),
 			},
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(ایٖراقُک دیٖنار),
+				'currency' => q(ایٖراقُک دیٖنار),
 			},
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(ایٖرانُک رِیال),
+				'currency' => q(ایٖرانُک رِیال),
 			},
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(اَیسلینٛڑُک کرٛونا),
+				'currency' => q(اَیسلینٛڑُک کرٛونا),
 			},
 		},
 		'ITL' => {
 			display_name => {
-				'default' => q(اِٹلیٖ یُک لیٖرا),
+				'currency' => q(اِٹلیٖ یُک لیٖرا),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(جَمَیکاہُک ڑالَر),
+				'currency' => q(جَمَیکاہُک ڑالَر),
 			},
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(جَرڑینیاہُک دیٖنار),
+				'currency' => q(جَرڑینیاہُک دیٖنار),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(جاپانُک یَن),
+				'currency' => q(جاپانُک یَن),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(کٮ۪نیَن شِلِنٛگ),
+				'currency' => q(کٮ۪نیَن شِلِنٛگ),
 			},
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(کِرگِستانُک سوم),
+				'currency' => q(کِرگِستانُک سوم),
 			},
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(کَمبوڑِیاہُک رِیال),
+				'currency' => q(کَمبوڑِیاہُک رِیال),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(کومورِیَن فرٛینٛک),
+				'currency' => q(کومورِیَن فرٛینٛک),
 			},
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(جنوٗبی کورِیَن وَن),
+				'currency' => q(جنوٗبی کورِیَن وَن),
 			},
 		},
 		'KRW' => {
 			display_name => {
-				'default' => q(ساوتھ کورِیَن وَن),
+				'currency' => q(ساوتھ کورِیَن وَن),
 			},
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(قُویتُک دیٖنار),
+				'currency' => q(قُویتُک دیٖنار),
 			},
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(کیمین ججیٖرُک ڑالَر),
+				'currency' => q(کیمین ججیٖرُک ڑالَر),
 			},
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(کزاکِستان ٹینٛج),
+				'currency' => q(کزاکِستان ٹینٛج),
 			},
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(لَوٹِیَن کِپ),
+				'currency' => q(لَوٹِیَن کِپ),
 			},
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(لیبنیٖزُک پاونٛڑ),
+				'currency' => q(لیبنیٖزُک پاونٛڑ),
 			},
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(سری لَنکاہٕچ رۄپَے),
+				'currency' => q(سری لَنکاہٕچ رۄپَے),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(لَیبیرِیَن ڑالَر),
+				'currency' => q(لَیبیرِیَن ڑالَر),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(لِسوتھو لوٹی),
+				'currency' => q(لِسوتھو لوٹی),
 			},
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(لِتھوینِیَن لِٹاس),
+				'currency' => q(لِتھوینِیَن لِٹاس),
 			},
 		},
 		'LTT' => {
 			display_name => {
-				'default' => q(لِتھوینِیَن ٹٮ۪لوناس),
+				'currency' => q(لِتھوینِیَن ٹٮ۪لوناس),
 			},
 		},
 		'LUC' => {
 			display_name => {
-				'default' => q(لَکزٕمبورگِیَن کَنؤرٹِبٕل فرٛینٛک),
+				'currency' => q(لَکزٕمبورگِیَن کَنؤرٹِبٕل فرٛینٛک),
 			},
 		},
 		'LUF' => {
 			display_name => {
-				'default' => q(لَکزٕمبورگِیَن فرٛینٛک),
+				'currency' => q(لَکزٕمبورگِیَن فرٛینٛک),
 			},
 		},
 		'LUL' => {
 			display_name => {
-				'default' => q(لَکزٕمبوگ فَینانشَل فرٛینٛک),
+				'currency' => q(لَکزٕمبوگ فَینانشَل فرٛینٛک),
 			},
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(لَتوِیَن لیٹس),
+				'currency' => q(لَتوِیَن لیٹس),
 			},
 		},
 		'LVR' => {
 			display_name => {
-				'default' => q(لَتوِیَن رَبٕل),
+				'currency' => q(لَتوِیَن رَبٕل),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(لِبیَن دیٖنار),
+				'currency' => q(لِبیَن دیٖنار),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(موروکَن دِرہَم),
+				'currency' => q(موروکَن دِرہَم),
 			},
 		},
 		'MAF' => {
 			display_name => {
-				'default' => q(موروکَن فرٛینٛک),
+				'currency' => q(موروکَن فرٛینٛک),
 			},
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(مولڑووین لیوٗ),
+				'currency' => q(مولڑووین لیوٗ),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(مٮ۪لٮ۪گیسی اٮ۪ریَری),
+				'currency' => q(مٮ۪لٮ۪گیسی اٮ۪ریَری),
 			},
 		},
 		'MGF' => {
 			display_name => {
-				'default' => q(مٮ۪لٮ۪گیسی فرٛینٛک),
+				'currency' => q(مٮ۪لٮ۪گیسی فرٛینٛک),
 			},
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(مٮ۪کَڑونِیَن دیٖنار),
+				'currency' => q(مٮ۪کَڑونِیَن دیٖنار),
 			},
 		},
 		'MLF' => {
 			display_name => {
-				'default' => q(میلِیَن فرٛینٛک),
+				'currency' => q(میلِیَن فرٛینٛک),
 			},
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(مِیانما کیاٹ),
+				'currency' => q(مِیانما کیاٹ),
 			},
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(مۄنگولِیَن ٹُگرِک),
+				'currency' => q(مۄنگولِیَن ٹُگرِک),
 			},
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(مٮ۪کانیٖز پَٹاکا),
+				'currency' => q(مٮ۪کانیٖز پَٹاکا),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(مورِٹینِیَن عوگیوٗیا),
+				'currency' => q(مورِٹینِیَن عوگیوٗیا),
 			},
 		},
 		'MTL' => {
 			display_name => {
-				'default' => q(مالٹیٖزُک لیٖرا),
+				'currency' => q(مالٹیٖزُک لیٖرا),
 			},
 		},
 		'MTP' => {
 			display_name => {
-				'default' => q(مالٹیٖزُک پاونٛڑ),
+				'currency' => q(مالٹیٖزُک پاونٛڑ),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(مورٮ۪شِیاہٕچ رۄپَے),
+				'currency' => q(مورٮ۪شِیاہٕچ رۄپَے),
 			},
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(مالدِیٖوِیَن رُفِیا),
+				'currency' => q(مالدِیٖوِیَن رُفِیا),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(مٮ۪لیوِیَن کواچا),
+				'currency' => q(مٮ۪لیوِیَن کواچا),
 			},
 		},
 		'MXN' => {
 			display_name => {
-				'default' => q(مٮ۪کسِکَن پٮ۪سو),
+				'currency' => q(مٮ۪کسِکَن پٮ۪سو),
 			},
 		},
 		'MXP' => {
 			display_name => {
-				'default' => q(مٮ۪کسِکَن سِلوَر پٮ۪سو (۱۸۶۱–۱۹۹۲)),
+				'currency' => q(مٮ۪کسِکَن سِلوَر پٮ۪سو \(۱۸۶۱–۱۹۹۲\)),
 			},
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(مَلیشِیَن رِنٛگِٹ),
+				'currency' => q(مَلیشِیَن رِنٛگِٹ),
 			},
 		},
 		'MZE' => {
 			display_name => {
-				'default' => q(موزیمبِکَن سکیوٗڑو),
+				'currency' => q(موزیمبِکَن سکیوٗڑو),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(پرٛون موزیمبِکَن مٮ۪ٹِکَل),
+				'currency' => q(پرٛون موزیمبِکَن مٮ۪ٹِکَل),
 			},
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(موزیمبِکَن مٮ۪ٹِکَل),
+				'currency' => q(موزیمبِکَن مٮ۪ٹِکَل),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(نامِبِیَن ڑالَر),
+				'currency' => q(نامِبِیَن ڑالَر),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(نَیجیرِیَن ڑالَر),
+				'currency' => q(نَیجیرِیَن ڑالَر),
 			},
 		},
 		'NIC' => {
 			display_name => {
-				'default' => q(نِکٮ۪راگُوٮ۪ن کورڑوبا),
+				'currency' => q(نِکٮ۪راگُوٮ۪ن کورڑوبا),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(نِکٮ۪راگُوٮ۪ن کورڑوبا اورو),
+				'currency' => q(نِکٮ۪راگُوٮ۪ن کورڑوبا اورو),
 			},
 		},
 		'NLG' => {
 			display_name => {
-				'default' => q(ڈَچ گِلڑَر),
+				'currency' => q(ڈَچ گِلڑَر),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(نورویٚیِنُک کرٛون),
+				'currency' => q(نورویٚیِنُک کرٛون),
 			},
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(نیپالٕچ رۄپَے),
+				'currency' => q(نیپالٕچ رۄپَے),
 			},
 		},
 		'NZD' => {
 			display_name => {
-				'default' => q(نِوزیٖلینٛڑُک ڑالَر),
+				'currency' => q(نِوزیٖلینٛڑُک ڑالَر),
 			},
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(اومِنی رِیال),
+				'currency' => q(اومِنی رِیال),
 			},
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(پانامانِیَن بالبوز),
+				'currency' => q(پانامانِیَن بالبوز),
 			},
 		},
 		'PEI' => {
 			display_name => {
-				'default' => q(پٔریوٗوِیَن اِنٛٹی),
+				'currency' => q(پٔریوٗوِیَن اِنٛٹی),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(پٔریوٗوِیَن نیوٗاوز سولٕز),
+				'currency' => q(پٔریوٗوِیَن نیوٗاوز سولٕز),
 			},
 		},
 		'PES' => {
 			display_name => {
-				'default' => q(پٔریوٗوِیَن سول),
+				'currency' => q(پٔریوٗوِیَن سول),
 			},
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(نیوٗ پیپُعا گِنِیَن کیٖنا),
+				'currency' => q(نیوٗ پیپُعا گِنِیَن کیٖنا),
 			},
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(پھِلِپایِٔن پٮ۪سو),
+				'currency' => q(پھِلِپایِٔن پٮ۪سو),
 			},
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(پاکِستٲنۍ رۄپَے),
+				'currency' => q(پاکِستٲنۍ رۄپَے),
 			},
 		},
 		'PLN' => {
 			display_name => {
-				'default' => q(پولِش زلوٹی),
+				'currency' => q(پولِش زلوٹی),
 			},
 		},
 		'PLZ' => {
 			display_name => {
-				'default' => q(پولِش زلوٹی(۱۹۵٠–۱۹۹۵)),
+				'currency' => q(پولِش زلوٹی\(۱۹۵٠–۱۹۹۵\)),
 			},
 		},
 		'PTE' => {
 			display_name => {
-				'default' => q(پورتُگیٖز اٮ۪سکیوٗڑو),
+				'currency' => q(پورتُگیٖز اٮ۪سکیوٗڑو),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(پٮ۪رٮ۪گیوٗوَیَن گُعارانی),
+				'currency' => q(پٮ۪رٮ۪گیوٗوَیَن گُعارانی),
 			},
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(قطاری رِیال),
+				'currency' => q(قطاری رِیال),
 			},
 		},
 		'RHD' => {
 			display_name => {
-				'default' => q(رھوڑیشِیَن ڑالَر),
+				'currency' => q(رھوڑیشِیَن ڑالَر),
 			},
 		},
 		'ROL' => {
 			display_name => {
-				'default' => q(اولڑ رومانِیَن لٮ۪یوٗ),
+				'currency' => q(اولڑ رومانِیَن لٮ۪یوٗ),
 			},
 		},
 		'RON' => {
 			display_name => {
-				'default' => q(رومانِیَن لٮ۪یوٗ),
+				'currency' => q(رومانِیَن لٮ۪یوٗ),
 			},
 		},
 		'RSD' => {
 			display_name => {
-				'default' => q(سٔربِیَن دیٖنار),
+				'currency' => q(سٔربِیَن دیٖنار),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(رٔشیَن رَبٕل),
+				'currency' => q(رٔشیَن رَبٕل),
 			},
 		},
 		'RUR' => {
 			display_name => {
-				'default' => q(رٔشیَن رَبٕل(۱۹۹۱–۱۹۹۸)),
+				'currency' => q(رٔشیَن رَبٕل\(۱۹۹۱–۱۹۹۸\)),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(روانٛڑَن فرانٛک),
+				'currency' => q(روانٛڑَن فرانٛک),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(سودیٖیُک رِیال),
+				'currency' => q(سودیٖیُک رِیال),
 			},
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(سولَمَن جٔزیٖرُک ڈالَر),
+				'currency' => q(سولَمَن جٔزیٖرُک ڈالَر),
 			},
 		},
 		'SDD' => {
 			display_name => {
-				'default' => q(پرون سوٗڈانُک دیٖنار),
+				'currency' => q(پرون سوٗڈانُک دیٖنار),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(سوٗڈانُک پونٛڈ),
+				'currency' => q(سوٗڈانُک پونٛڈ),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(پرون سوٗڈانُک پونٛڈ),
+				'currency' => q(پرون سوٗڈانُک پونٛڈ),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(سویٖڈِش کَرونا),
+				'currency' => q(سویٖڈِش کَرونا),
 			},
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(سِنگاپورُک ڈالَر),
+				'currency' => q(سِنگاپورُک ڈالَر),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(سینٹ ہیلِنا پونٛڈ),
+				'currency' => q(سینٹ ہیلِنا پونٛڈ),
 			},
 		},
 		'SIT' => {
 			display_name => {
-				'default' => q(سلووینُک ٹولَر),
+				'currency' => q(سلووینُک ٹولَر),
 			},
 		},
 		'SKK' => {
 			display_name => {
-				'default' => q(سلووَک کَرونا),
+				'currency' => q(سلووَک کَرونا),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(سومالی شِلِنٛگ),
+				'currency' => q(سومالی شِلِنٛگ),
 			},
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(سُریٖنامُک ڈالَر),
+				'currency' => q(سُریٖنامُک ڈالَر),
 			},
 		},
 		'SRG' => {
 			display_name => {
-				'default' => q(سُریٖنام گِلدَر),
+				'currency' => q(سُریٖنام گِلدَر),
 			},
 		},
 		'SUR' => {
 			display_name => {
-				'default' => q(سوویت روبٕل),
+				'currency' => q(سوویت روبٕل),
 			},
 		},
 		'SVC' => {
 			display_name => {
-				'default' => q(سَلویدَرُک کولَن),
+				'currency' => q(سَلویدَرُک کولَن),
 			},
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(سیٖریاہُک پونٛڈ),
+				'currency' => q(سیٖریاہُک پونٛڈ),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(سوازی لِلَنگیٚنی),
+				'currency' => q(سوازی لِلَنگیٚنی),
 			},
 		},
 		'THB' => {
 			display_name => {
-				'default' => q(تھایھک بات),
+				'currency' => q(تھایھک بات),
 			},
 		},
 		'TJR' => {
 			display_name => {
-				'default' => q(تاجکِستانُک رَبٕل),
+				'currency' => q(تاجکِستانُک رَبٕل),
 			},
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(تاجِکتانُک سَمونی),
+				'currency' => q(تاجِکتانُک سَمونی),
 			},
 		},
 		'TMM' => {
 			display_name => {
-				'default' => q(تُکَمَنِستانُک مَنَت),
+				'currency' => q(تُکَمَنِستانُک مَنَت),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(ٹُنیشیاہُک دیٖنار),
+				'currency' => q(ٹُنیشیاہُک دیٖنار),
 			},
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(ٹونگَن پانٛگا),
+				'currency' => q(ٹونگَن پانٛگا),
 			},
 		},
 		'TPE' => {
 			display_name => {
-				'default' => q(ٹیموریٚسو ایٚکیٖڈو),
+				'currency' => q(ٹیموریٚسو ایٚکیٖڈو),
 			},
 		},
 		'TRL' => {
 			display_name => {
-				'default' => q(پرون تُرکِش لیرا),
+				'currency' => q(پرون تُرکِش لیرا),
 			},
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(تُرکیہُک لیرا),
+				'currency' => q(تُرکیہُک لیرا),
 			},
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(ٹرِنہِ ڈیڈ تہٕ ٹوبیگو ڈالَر),
+				'currency' => q(ٹرِنہِ ڈیڈ تہٕ ٹوبیگو ڈالَر),
 			},
 		},
 		'TWD' => {
 			display_name => {
-				'default' => q(نوٚو تیوانُک ڈالَر),
+				'currency' => q(نوٚو تیوانُک ڈالَر),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(تَنزانیاہُک شِلِنٛگ),
+				'currency' => q(تَنزانیاہُک شِلِنٛگ),
 			},
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(یوٗکرینیاہُک ہرِوِنیا),
+				'currency' => q(یوٗکرینیاہُک ہرِوِنیا),
 			},
 		},
 		'UAK' => {
 			display_name => {
-				'default' => q(یوٗکرینیاہُک کاربووَنیٹس),
+				'currency' => q(یوٗکرینیاہُک کاربووَنیٹس),
 			},
 		},
 		'UGS' => {
 			display_name => {
-				'default' => q(اُگاداہُک شِلِنٛگ(۱۹۶۶–۱۹۸۷)),
+				'currency' => q(اُگاداہُک شِلِنٛگ\(۱۹۶۶–۱۹۸۷\)),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(اُگاداہُک شِلِنٛگ),
+				'currency' => q(اُگاداہُک شِلِنٛگ),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(یوٗ ایٚس ڈالَر),
+				'currency' => q(یوٗ ایٚس ڈالَر),
 			},
 		},
 		'USN' => {
 			display_name => {
-				'default' => q(یوٗ ایٚس ڈالَر(پَگاہ)),
+				'currency' => q(یوٗ ایٚس ڈالَر\(پَگاہ\)),
 			},
 		},
 		'USS' => {
 			display_name => {
-				'default' => q(یوٗ ایٚس ڈالَر(تَمی دًۄہ)),
+				'currency' => q(یوٗ ایٚس ڈالَر\(تَمی دًۄہ\)),
 			},
 		},
 		'UYI' => {
 			display_name => {
-				'default' => q(اُرگایَن پیٚسو یوٗنِڈیڈَس اِنڈیٚکسَس),
+				'currency' => q(اُرگایَن پیٚسو یوٗنِڈیڈَس اِنڈیٚکسَس),
 			},
 		},
 		'UYP' => {
 			display_name => {
-				'default' => q(اُرگایَن پیٚسو(۱۹۷۵–۱۹۹۳)),
+				'currency' => q(اُرگایَن پیٚسو\(۱۹۷۵–۱۹۹۳\)),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(اُروٗگایَن پیٚسو),
+				'currency' => q(اُروٗگایَن پیٚسو),
 			},
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(اُبیکِستان سوم),
+				'currency' => q(اُبیکِستان سوم),
 			},
 		},
 		'VEB' => {
 			display_name => {
-				'default' => q(وینٕزوٗلیُک بولِوَر (۱۸۷۱–۲۰۰۸)),
+				'currency' => q(وینٕزوٗلیُک بولِوَر \(۱۸۷۱–۲۰۰۸\)),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(وینٕزوٗلیُک بولِوَر),
+				'currency' => q(وینٕزوٗلیُک بولِوَر),
 			},
 		},
 		'VND' => {
 			display_name => {
-				'default' => q(وِیَنَمُک ڈانٛگ),
+				'currency' => q(وِیَنَمُک ڈانٛگ),
 			},
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(وَنوٗاَتوٗ وَتوٗ),
+				'currency' => q(وَنوٗاَتوٗ وَتوٗ),
 			},
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(سَمون تَلا),
+				'currency' => q(سَمون تَلا),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(سی ایٚف اے فرینک بی ایٖ اے سی),
+				'currency' => q(سی ایٚف اے فرینک بی ایٖ اے سی),
 			},
 		},
 		'XAG' => {
 			display_name => {
-				'default' => q(رۄپھ),
+				'currency' => q(رۄپھ),
 			},
 		},
 		'XAU' => {
 			display_name => {
-				'default' => q(سۄن),
+				'currency' => q(سۄن),
 			},
 		},
 		'XBA' => {
 			display_name => {
-				'default' => q(یوٗرپی کَمپوسِٹ یوٗنِٹ),
+				'currency' => q(یوٗرپی کَمپوسِٹ یوٗنِٹ),
 			},
 		},
 		'XBB' => {
 			display_name => {
-				'default' => q(یوٗرپی مونِٹَری یوٗنِٹ),
+				'currency' => q(یوٗرپی مونِٹَری یوٗنِٹ),
 			},
 		},
 		'XBC' => {
 			display_name => {
-				'default' => q(یوٗرپی یوٗنِٹ آف ایٚکاوُنٛٹ (ایکس بی سی)),
+				'currency' => q(یوٗرپی یوٗنِٹ آف ایٚکاوُنٛٹ \(ایکس بی سی\)),
 			},
 		},
 		'XBD' => {
 			display_name => {
-				'default' => q(یوٗرپی یوٗنِٹ آف ایٚکاوُنٛٹ (ایکس بی ڈی)),
+				'currency' => q(یوٗرپی یوٗنِٹ آف ایٚکاوُنٛٹ \(ایکس بی ڈی\)),
 			},
 		},
 		'XCD' => {
 			display_name => {
-				'default' => q(مَشرِقی کیرِبِیَن ڈالَر),
+				'currency' => q(مَشرِقی کیرِبِیَن ڈالَر),
 			},
 		},
 		'XDR' => {
 			display_name => {
-				'default' => q(خاص ڈرایِنٛگ رایٹس),
+				'currency' => q(خاص ڈرایِنٛگ رایٹس),
 			},
 		},
 		'XEU' => {
 			display_name => {
-				'default' => q(یوٗرپی کَرَنسی یوٗنِٹ),
+				'currency' => q(یوٗرپی کَرَنسی یوٗنِٹ),
 			},
 		},
 		'XFO' => {
 			display_name => {
-				'default' => q(فریٚنچ گولڈ فرینک),
+				'currency' => q(فریٚنچ گولڈ فرینک),
 			},
 		},
 		'XFU' => {
 			display_name => {
-				'default' => q(فریٛنچ یوٗ اے سی فرینک),
+				'currency' => q(فریٛنچ یوٗ اے سی فرینک),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(سی ایٚف اے فرینک بی سی ایٖ اے او),
+				'currency' => q(سی ایٚف اے فرینک بی سی ایٖ اے او),
 			},
 		},
 		'XPD' => {
 			display_name => {
-				'default' => q(پُلیڈیَم),
+				'currency' => q(پُلیڈیَم),
 			},
 		},
 		'XPF' => {
 			display_name => {
-				'default' => q(سی ایٚف پی فرینک),
+				'currency' => q(سی ایٚف پی فرینک),
 			},
 		},
 		'XPT' => {
 			display_name => {
-				'default' => q(پلیٹِنَم),
+				'currency' => q(پلیٹِنَم),
 			},
 		},
 		'XRE' => {
 			display_name => {
-				'default' => q(آر آے ایٚن ایٖ ٹی فَنٛڈ),
+				'currency' => q(آر آے ایٚن ایٖ ٹی فَنٛڈ),
 			},
 		},
 		'XTS' => {
 			display_name => {
-				'default' => q(ٹیٚسٹِنٛگ کَرَنسی کوڈ),
+				'currency' => q(ٹیٚسٹِنٛگ کَرَنسی کوڈ),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(اَنزٲنۍ یا نالَگہٕ ہار سِکہٕ),
+				'currency' => q(اَنزٲنۍ یا نالَگہٕ ہار سِکہٕ),
 			},
 		},
 		'YDD' => {
 			display_name => {
-				'default' => q(یَمنُک دیٖنار),
+				'currency' => q(یَمنُک دیٖنار),
 			},
 		},
 		'YER' => {
 			display_name => {
-				'default' => q(یَمنُک رِیال),
+				'currency' => q(یَمنُک رِیال),
 			},
 		},
 		'YUD' => {
 			display_name => {
-				'default' => q(یوگوسلاوِیَن ہاڑ دیٖنار),
+				'currency' => q(یوگوسلاوِیَن ہاڑ دیٖنار),
 			},
 		},
 		'YUM' => {
 			display_name => {
-				'default' => q(یوگوسلاوِیَن نووِے دیٖنار),
+				'currency' => q(یوگوسلاوِیَن نووِے دیٖنار),
 			},
 		},
 		'YUN' => {
 			display_name => {
-				'default' => q(یوگوسلاوِیَن کَنؤٹِبٕل دیٖنار),
+				'currency' => q(یوگوسلاوِیَن کَنؤٹِبٕل دیٖنار),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(ساوُتھ افریٖکاہُک رینڈ),
+				'currency' => q(ساوُتھ افریٖکاہُک رینڈ),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(زِمبابیُک کواچا (1968–2012)),
+				'currency' => q(زِمبابیُک کواچا \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(زِمبابیُک کواچا),
+				'currency' => q(زِمبابیُک کواچا),
 			},
 		},
 		'ZRN' => {
 			display_name => {
-				'default' => q(زایرِیَن نِو زایِر),
+				'currency' => q(زایرِیَن نِو زایِر),
 			},
 		},
 		'ZRZ' => {
 			display_name => {
-				'default' => q(زَیرُک ڈالَر),
+				'currency' => q(زَیرُک ڈالَر),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(زِمبابِیُک ڈالَر),
+				'currency' => q(زِمبابِیُک ڈالَر),
 			},
 		},
 	} },

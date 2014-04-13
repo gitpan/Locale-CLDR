@@ -1,6 +1,6 @@
-package Locale::CLDR::Gl;
+package Locale::CLDR::Gl v0.0.4;
 # This file auto generated from Data\common\main\gl.xml
-#	on Mon 31 Mar 12:28:09 am GMT
+#	on Sun 13 Apr 10:26:15 am GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use v5.18;
@@ -1098,7 +1098,6 @@ has 'units' => (
 			} }
 );
 
-
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -1352,249 +1351,249 @@ has 'curriencies' => (
 	default		=> sub { {
 		'ADP' => {
 			display_name => {
-				'default' => q(peseta andorrana),
+				'currency' => q(peseta andorrana),
 				'one' => q(peseta andorrana),
 				'other' => q(pesetas andorranas),
 			},
 		},
 		'AED' => {
 			display_name => {
-				'default' => q(Dirham dos Emiratos Árabes Unidos),
+				'currency' => q(Dirham dos Emiratos Árabes Unidos),
 			},
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(Afgani afgano),
+				'currency' => q(Afgani afgano),
 			},
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(Lek albanés),
+				'currency' => q(Lek albanés),
 			},
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(Dram armenio),
+				'currency' => q(Dram armenio),
 			},
 		},
 		'ANG' => {
 			display_name => {
-				'default' => q(Florín das Antillas Neerlandesas),
+				'currency' => q(Florín das Antillas Neerlandesas),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Kwanza angoleño),
+				'currency' => q(Kwanza angoleño),
 			},
 		},
 		'ARP' => {
 			display_name => {
-				'default' => q(Peso arxentino (1983–1985)),
-				'one' => q(peso arxentino (ARP)),
-				'other' => q(pesos arxentinos (ARP)),
+				'currency' => q(Peso arxentino \(1983–1985\)),
+				'one' => q(peso arxentino \(ARP\)),
+				'other' => q(pesos arxentinos \(ARP\)),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(Peso arxentino),
+				'currency' => q(Peso arxentino),
 				'one' => q(peso arxentino),
 				'other' => q(pesos arxentinos),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Dólar australiano),
+				'currency' => q(Dólar australiano),
 				'one' => q(dólar australiano),
 				'other' => q(dólares australianos),
 			},
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(Florín arubeño),
+				'currency' => q(Florín arubeño),
 			},
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(Manat acerbaixano),
+				'currency' => q(Manat acerbaixano),
 			},
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(Marco convertible de Bosnia e Hercegovina),
+				'currency' => q(Marco convertible de Bosnia e Hercegovina),
 			},
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(Dólar de Barbados),
+				'currency' => q(Dólar de Barbados),
 			},
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(Taka de Bangladesh),
+				'currency' => q(Taka de Bangladesh),
 			},
 		},
 		'BEC' => {
 			display_name => {
-				'default' => q(Franco belga (convertible)),
-				'one' => q(franco belga (convertible)),
-				'other' => q(francos belgas (convertibles)),
+				'currency' => q(Franco belga \(convertible\)),
+				'one' => q(franco belga \(convertible\)),
+				'other' => q(francos belgas \(convertibles\)),
 			},
 		},
 		'BEF' => {
 			display_name => {
-				'default' => q(Franco belga),
+				'currency' => q(Franco belga),
 				'one' => q(franco belga),
 				'other' => q(francos belgas),
 			},
 		},
 		'BEL' => {
 			display_name => {
-				'default' => q(Franco belga (financeiro)),
-				'one' => q(franco belga (financeiro)),
-				'other' => q(francos belgas (financeiros)),
+				'currency' => q(Franco belga \(financeiro\)),
+				'one' => q(franco belga \(financeiro\)),
+				'other' => q(francos belgas \(financeiros\)),
 			},
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(Lev búlgaro),
+				'currency' => q(Lev búlgaro),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Dinar de Baréin),
+				'currency' => q(Dinar de Baréin),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Franco burundés),
+				'currency' => q(Franco burundés),
 			},
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(Dólar das Bemudas),
+				'currency' => q(Dólar das Bemudas),
 			},
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(Dólar de Brunei),
+				'currency' => q(Dólar de Brunei),
 			},
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(Boliviano),
+				'currency' => q(Boliviano),
 				'one' => q(boliviano),
 				'other' => q(bolivianos),
 			},
 		},
 		'BOP' => {
 			display_name => {
-				'default' => q(Peso boliviano),
+				'currency' => q(Peso boliviano),
 				'one' => q(peso boliviano),
 				'other' => q(pesos bolivianos),
 			},
 		},
 		'BOV' => {
 			display_name => {
-				'default' => q(MVDOL boliviano),
+				'currency' => q(MVDOL boliviano),
 			},
 		},
 		'BRB' => {
 			display_name => {
-				'default' => q(Cruzeiro novo brasileiro (1967–1986)),
+				'currency' => q(Cruzeiro novo brasileiro \(1967–1986\)),
 				'one' => q(cruzeiro novo brasileiro),
 				'other' => q(cruzeiros novos brasileiros),
 			},
 		},
 		'BRC' => {
 			display_name => {
-				'default' => q(Cruzado brasileiro),
+				'currency' => q(Cruzado brasileiro),
 				'one' => q(cruzado brasileiro),
 				'other' => q(cruzados brasileiros),
 			},
 		},
 		'BRE' => {
 			display_name => {
-				'default' => q(Cruzeiro brasileiro (1990–1993)),
-				'one' => q(cruzeiro brasileiro (BRE)),
-				'other' => q(cruzeiros brasileiros (BRE)),
+				'currency' => q(Cruzeiro brasileiro \(1990–1993\)),
+				'one' => q(cruzeiro brasileiro \(BRE\)),
+				'other' => q(cruzeiros brasileiros \(BRE\)),
 			},
 		},
 		'BRL' => {
 			display_name => {
-				'default' => q(Real brasileiro),
+				'currency' => q(Real brasileiro),
 				'one' => q(real brasileiro),
 				'other' => q(reais brasileiros),
 			},
 		},
 		'BRN' => {
 			display_name => {
-				'default' => q(Cruzado novo brasileiro),
+				'currency' => q(Cruzado novo brasileiro),
 				'one' => q(cruzado novo brasileiro),
 				'other' => q(cruzados novos brasileiros),
 			},
 		},
 		'BRR' => {
 			display_name => {
-				'default' => q(Cruzeiro brasileiro),
+				'currency' => q(Cruzeiro brasileiro),
 				'one' => q(cruzeiro brasileiro),
 				'other' => q(cruzeiros brasileiros),
 			},
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(Dólar das Bahamas),
+				'currency' => q(Dólar das Bahamas),
 			},
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(Ngultrum butanés),
+				'currency' => q(Ngultrum butanés),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Pula botsuano),
+				'currency' => q(Pula botsuano),
 			},
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(Rublo bielorruso),
+				'currency' => q(Rublo bielorruso),
 			},
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(Dólar beliceño),
+				'currency' => q(Dólar beliceño),
 			},
 		},
 		'CAD' => {
 			symbol => '$CA',
 			display_name => {
-				'default' => q(Dólar canadiano),
+				'currency' => q(Dólar canadiano),
 				'one' => q(dólar canadiano),
 				'other' => q(dólares canadianos),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Franco congolés),
+				'currency' => q(Franco congolés),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Franco suízo),
+				'currency' => q(Franco suízo),
 				'one' => q(franco suízo),
 				'other' => q(francos suizos),
 			},
 		},
 		'CLF' => {
 			display_name => {
-				'default' => q(Unidades de fomento chilenas),
+				'currency' => q(Unidades de fomento chilenas),
 				'one' => q(unidade de fomento chilena),
 				'other' => q(unidades de fomento chilenas),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(Peso chileno),
+				'currency' => q(Peso chileno),
 				'one' => q(peso chileno),
 				'other' => q(pesos chilenos),
 			},
@@ -1602,144 +1601,144 @@ has 'curriencies' => (
 		'CNY' => {
 			symbol => 'CN¥',
 			display_name => {
-				'default' => q(Iuán chinés),
+				'currency' => q(Iuán chinés),
 				'one' => q(iuán chinés),
 				'other' => q(iuáns chineses),
 			},
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(Peso colombiano),
+				'currency' => q(Peso colombiano),
 				'one' => q(peso colombiano),
 				'other' => q(pesos colombianos),
 			},
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(Colón costarricense),
+				'currency' => q(Colón costarricense),
 				'one' => q(colón costarricense),
 				'other' => q(colóns costarricenses),
 			},
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(Peso cubano convertible),
+				'currency' => q(Peso cubano convertible),
 			},
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(Peso cubano),
+				'currency' => q(Peso cubano),
 				'one' => q(peso cubano),
 				'other' => q(pesos cubanos),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Escudo caboverdiano),
+				'currency' => q(Escudo caboverdiano),
 			},
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(Coroa checa),
+				'currency' => q(Coroa checa),
 			},
 		},
 		'DEM' => {
 			display_name => {
-				'default' => q(Marco alemán),
+				'currency' => q(Marco alemán),
 				'one' => q(marco alemán),
 				'other' => q(marcos alemáns),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Franco xibutiano),
+				'currency' => q(Franco xibutiano),
 			},
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(Coroa dinamarquesa),
+				'currency' => q(Coroa dinamarquesa),
 				'one' => q(coroa dinamarquesa),
 				'other' => q(coroas dinamarquesas),
 			},
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(Peso dominicano),
+				'currency' => q(Peso dominicano),
 				'one' => q(peso dominicano),
 				'other' => q(pesos dominicanos),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Dinar alxeriano),
+				'currency' => q(Dinar alxeriano),
 			},
 		},
 		'ECS' => {
 			display_name => {
-				'default' => q(Sucre ecuatoriano),
+				'currency' => q(Sucre ecuatoriano),
 				'one' => q(sucre ecuatoriano),
 				'other' => q(sucres ecuatorianos),
 			},
 		},
 		'ECV' => {
 			display_name => {
-				'default' => q(Unidade de valor constante ecuatoriana),
+				'currency' => q(Unidade de valor constante ecuatoriana),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Libra exipcia),
+				'currency' => q(Libra exipcia),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Nakfa eritreo),
+				'currency' => q(Nakfa eritreo),
 			},
 		},
 		'ESA' => {
 			display_name => {
-				'default' => q(Peseta española (conta A)),
+				'currency' => q(Peseta española \(conta A\)),
 			},
 		},
 		'ESB' => {
 			display_name => {
-				'default' => q(Peseta española (conta convertible)),
+				'currency' => q(Peseta española \(conta convertible\)),
 			},
 		},
 		'ESP' => {
 			symbol => '₧',
 			display_name => {
-				'default' => q(Peseta española),
+				'currency' => q(Peseta española),
 				'one' => q(peseta),
 				'other' => q(pesetas),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Birr etíope),
+				'currency' => q(Birr etíope),
 			},
 		},
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(Euro),
+				'currency' => q(Euro),
 				'one' => q(euro),
 				'other' => q(euros),
 			},
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(Dólar fixiano),
+				'currency' => q(Dólar fixiano),
 			},
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(Libra das Malvinas),
+				'currency' => q(Libra das Malvinas),
 			},
 		},
 		'FRF' => {
 			display_name => {
-				'default' => q(Franco francés),
+				'currency' => q(Franco francés),
 				'one' => q(franco francés),
 				'other' => q(francos franceses),
 			},
@@ -1747,764 +1746,764 @@ has 'curriencies' => (
 		'GBP' => {
 			symbol => '£',
 			display_name => {
-				'default' => q(Libra esterlina),
+				'currency' => q(Libra esterlina),
 				'one' => q(libra esterlina),
 				'other' => q(libras esterlinas),
 			},
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(Lari xeorxiano),
+				'currency' => q(Lari xeorxiano),
 			},
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(Cedi de Gana),
+				'currency' => q(Cedi de Gana),
 			},
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(Libra de Xibraltar),
+				'currency' => q(Libra de Xibraltar),
 				'one' => q(libra xibraltareña),
 				'other' => q(libras xibraltareñas),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Dalasi gambiano),
+				'currency' => q(Dalasi gambiano),
 			},
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(Franco guineano),
+				'currency' => q(Franco guineano),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Syli guineano),
+				'currency' => q(Syli guineano),
 			},
 		},
 		'GQE' => {
 			display_name => {
-				'default' => q(Ekwele guineana),
+				'currency' => q(Ekwele guineana),
 			},
 		},
 		'GRD' => {
 			display_name => {
-				'default' => q(Dracma grego),
+				'currency' => q(Dracma grego),
 			},
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(Quetzal guatemalteco),
+				'currency' => q(Quetzal guatemalteco),
 			},
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(Dólar güianés),
+				'currency' => q(Dólar güianés),
 			},
 		},
 		'HKD' => {
 			symbol => '$HK',
 			display_name => {
-				'default' => q(Dólar de Hong Kong),
+				'currency' => q(Dólar de Hong Kong),
 				'one' => q(dólar de Hong Kong),
 				'other' => q(dólares de Hong Kong),
 			},
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(Lempira hondureño),
+				'currency' => q(Lempira hondureño),
 			},
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(Kuna croata),
+				'currency' => q(Kuna croata),
 			},
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(Gourde haitiano),
+				'currency' => q(Gourde haitiano),
 			},
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(Florín húngaro),
+				'currency' => q(Florín húngaro),
 			},
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(Rupia indonesia),
+				'currency' => q(Rupia indonesia),
 				'one' => q(rupia indonesia),
 				'other' => q(rupias indonesias),
 			},
 		},
 		'IEP' => {
 			display_name => {
-				'default' => q(Libra irlandesa),
+				'currency' => q(Libra irlandesa),
 				'one' => q(libra irlandesa),
 				'other' => q(libras irlandesas),
 			},
 		},
 		'ILS' => {
 			display_name => {
-				'default' => q(Novo shequel israelí),
+				'currency' => q(Novo shequel israelí),
 			},
 		},
 		'INR' => {
 			symbol => '₹',
 			display_name => {
-				'default' => q(Rupia india),
+				'currency' => q(Rupia india),
 				'one' => q(rupia india),
 				'other' => q(rupias indias),
 			},
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(Dinar iraquí),
+				'currency' => q(Dinar iraquí),
 			},
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(Rial iraniano),
+				'currency' => q(Rial iraniano),
 			},
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(Coroa islandesa),
+				'currency' => q(Coroa islandesa),
 			},
 		},
 		'ITL' => {
 			display_name => {
-				'default' => q(Lira italiana),
+				'currency' => q(Lira italiana),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(Dólar xamaicano),
+				'currency' => q(Dólar xamaicano),
 			},
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(Dinar xordano),
+				'currency' => q(Dinar xordano),
 			},
 		},
 		'JPY' => {
 			symbol => '¥JP',
 			display_name => {
-				'default' => q(Ien xaponés),
+				'currency' => q(Ien xaponés),
 				'one' => q(ien xaponés),
 				'other' => q(iens xaponeses),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Chelín kenyano),
+				'currency' => q(Chelín kenyano),
 			},
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(Som quirguizo),
+				'currency' => q(Som quirguizo),
 			},
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(Riel camboxano),
+				'currency' => q(Riel camboxano),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Franco comoriano),
+				'currency' => q(Franco comoriano),
 			},
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(Won norcoreano),
+				'currency' => q(Won norcoreano),
 			},
 		},
 		'KRW' => {
 			symbol => '₩',
 			display_name => {
-				'default' => q(Won surcoreano),
+				'currency' => q(Won surcoreano),
 				'one' => q(won surcoreano),
 				'other' => q(wons surcoreanos),
 			},
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(Dinar kuwaití),
+				'currency' => q(Dinar kuwaití),
 			},
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(Dólar das Illas Caimán),
+				'currency' => q(Dólar das Illas Caimán),
 			},
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(Tenge casaco),
+				'currency' => q(Tenge casaco),
 			},
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(Kip laosiano),
+				'currency' => q(Kip laosiano),
 			},
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(Libra libanesa),
+				'currency' => q(Libra libanesa),
 			},
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(Rupia de Sri Lanka),
+				'currency' => q(Rupia de Sri Lanka),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Dólar liberiano),
+				'currency' => q(Dólar liberiano),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Loti de Lesoto),
+				'currency' => q(Loti de Lesoto),
 			},
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(Litas lituana),
+				'currency' => q(Litas lituana),
 			},
 		},
 		'LUC' => {
 			display_name => {
-				'default' => q(Franco convertible luxemburgués),
+				'currency' => q(Franco convertible luxemburgués),
 			},
 		},
 		'LUF' => {
 			display_name => {
-				'default' => q(Franco luxemburgués),
+				'currency' => q(Franco luxemburgués),
 			},
 		},
 		'LUL' => {
 			display_name => {
-				'default' => q(Franco financeiro luxemburgués),
+				'currency' => q(Franco financeiro luxemburgués),
 			},
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(Lats letón),
+				'currency' => q(Lats letón),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Dinar libio),
+				'currency' => q(Dinar libio),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Dirham marroquí),
+				'currency' => q(Dirham marroquí),
 			},
 		},
 		'MAF' => {
 			display_name => {
-				'default' => q(Franco marroquí),
+				'currency' => q(Franco marroquí),
 			},
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(Leu moldavo),
+				'currency' => q(Leu moldavo),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Ariary malgaxe),
+				'currency' => q(Ariary malgaxe),
 			},
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(Dinar macedonio),
+				'currency' => q(Dinar macedonio),
 			},
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(Kiat birmano),
+				'currency' => q(Kiat birmano),
 			},
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(Tugrik mongol),
+				'currency' => q(Tugrik mongol),
 			},
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(Pataca de Macau),
+				'currency' => q(Pataca de Macau),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Ouguiya mauritano),
+				'currency' => q(Ouguiya mauritano),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Rupia de Mauricio),
+				'currency' => q(Rupia de Mauricio),
 			},
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(Rupia maldiva),
+				'currency' => q(Rupia maldiva),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Kwacha de Malaui),
+				'currency' => q(Kwacha de Malaui),
 			},
 		},
 		'MXN' => {
 			symbol => '$MX',
 			display_name => {
-				'default' => q(Peso mexicano),
+				'currency' => q(Peso mexicano),
 				'one' => q(peso mexicano),
 				'other' => q(pesos mexicanos),
 			},
 		},
 		'MXP' => {
 			display_name => {
-				'default' => q(Peso de prata mexicano (1861–1992)),
+				'currency' => q(Peso de prata mexicano \(1861–1992\)),
 			},
 		},
 		'MXV' => {
 			display_name => {
-				'default' => q(Unidade de inversión mexicana),
+				'currency' => q(Unidade de inversión mexicana),
 			},
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(Ringgit malaio),
+				'currency' => q(Ringgit malaio),
 			},
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(Metical de Mozambique),
+				'currency' => q(Metical de Mozambique),
 				'one' => q(metical de Mozambique),
 				'other' => q(meticais de Mozambique),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Dólar namibio),
+				'currency' => q(Dólar namibio),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Naira nixeriano),
+				'currency' => q(Naira nixeriano),
 			},
 		},
 		'NIC' => {
 			display_name => {
-				'default' => q(Córdoba nicaragüense),
+				'currency' => q(Córdoba nicaragüense),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(Córdoba de ouro nicaragüense),
+				'currency' => q(Córdoba de ouro nicaragüense),
 			},
 		},
 		'NLG' => {
 			display_name => {
-				'default' => q(Florín holandés),
+				'currency' => q(Florín holandés),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(Coroa norueguesa),
+				'currency' => q(Coroa norueguesa),
 				'one' => q(coroa norueguesa),
 				'other' => q(coroas norueguesas),
 			},
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(Rupia nepalesa),
+				'currency' => q(Rupia nepalesa),
 			},
 		},
 		'NZD' => {
 			display_name => {
-				'default' => q(Dólar neozelandés),
+				'currency' => q(Dólar neozelandés),
 			},
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(Rial omaní),
+				'currency' => q(Rial omaní),
 			},
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(Balboa panameño),
+				'currency' => q(Balboa panameño),
 			},
 		},
 		'PEI' => {
 			display_name => {
-				'default' => q(Inti peruano),
+				'currency' => q(Inti peruano),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(Sol novo peruano),
+				'currency' => q(Sol novo peruano),
 			},
 		},
 		'PES' => {
 			display_name => {
-				'default' => q(Sol peruano),
+				'currency' => q(Sol peruano),
 			},
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(Kina de Papúa Nova Guinea),
+				'currency' => q(Kina de Papúa Nova Guinea),
 			},
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(Peso filipino),
+				'currency' => q(Peso filipino),
 			},
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(Rupia paquistaní),
+				'currency' => q(Rupia paquistaní),
 			},
 		},
 		'PLN' => {
 			display_name => {
-				'default' => q(Zloty polaco),
+				'currency' => q(Zloty polaco),
 				'one' => q(zloty polaco),
 				'other' => q(zlotys polacos),
 			},
 		},
 		'PTE' => {
 			display_name => {
-				'default' => q(Escudo portugués),
+				'currency' => q(Escudo portugués),
 				'one' => q(escudo portugués),
 				'other' => q(escudos portugueses),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(Guaraní paraguaio),
+				'currency' => q(Guaraní paraguaio),
 				'one' => q(Guaraní paraguaio),
 				'other' => q(Guaranís paraguaios),
 			},
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(Rial qatarí),
+				'currency' => q(Rial qatarí),
 			},
 		},
 		'RON' => {
 			display_name => {
-				'default' => q(Leu romanés),
+				'currency' => q(Leu romanés),
 				'one' => q(leu romanés),
 				'other' => q(lei romanés),
 			},
 		},
 		'RSD' => {
 			display_name => {
-				'default' => q(Dinar serbio),
+				'currency' => q(Dinar serbio),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(Rublo ruso),
+				'currency' => q(Rublo ruso),
 				'one' => q(rublo ruso),
 				'other' => q(rublos rusos),
 			},
 		},
 		'RUR' => {
 			display_name => {
-				'default' => q(Rublo ruso (1991–1998)),
+				'currency' => q(Rublo ruso \(1991–1998\)),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Franco ruandés),
+				'currency' => q(Franco ruandés),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Rial saudita),
+				'currency' => q(Rial saudita),
 				'one' => q(rial saudita),
 				'other' => q(riais sauditas),
 			},
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(Dólar das Illas Salomón),
+				'currency' => q(Dólar das Illas Salomón),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Rupia de Seixeles),
+				'currency' => q(Rupia de Seixeles),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Libra sudanesa),
+				'currency' => q(Libra sudanesa),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(Coroa sueca),
+				'currency' => q(Coroa sueca),
 				'one' => q(coroa sueca),
 				'other' => q(coroas suecas),
 			},
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(Dólar de Singapur),
+				'currency' => q(Dólar de Singapur),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Libra de Santa Helena),
+				'currency' => q(Libra de Santa Helena),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Leone de Serra Leoa),
+				'currency' => q(Leone de Serra Leoa),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Chelín somalí),
+				'currency' => q(Chelín somalí),
 			},
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(Dólar surinamés),
+				'currency' => q(Dólar surinamés),
 			},
 		},
 		'SSP' => {
 			display_name => {
-				'default' => q(Libra sursudanesa),
+				'currency' => q(Libra sursudanesa),
 				'one' => q(libra sursudanesa),
 				'other' => q(libras sursudanesa),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Dobra de San Tomé e Príncipe),
+				'currency' => q(Dobra de San Tomé e Príncipe),
 			},
 		},
 		'SUR' => {
 			display_name => {
-				'default' => q(Rublo soviético),
+				'currency' => q(Rublo soviético),
 				'one' => q(rublo soviético),
 				'other' => q(rublos soviéticos),
 			},
 		},
 		'SVC' => {
 			display_name => {
-				'default' => q(Colón salvadoreño),
+				'currency' => q(Colón salvadoreño),
 				'one' => q(colón salvadoreño),
 				'other' => q(colóns salvadoreños),
 			},
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(Libra siria),
+				'currency' => q(Libra siria),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lilanxeni de Suacilandia),
+				'currency' => q(Lilanxeni de Suacilandia),
 			},
 		},
 		'THB' => {
 			symbol => '฿',
 			display_name => {
-				'default' => q(Baht tailandés),
+				'currency' => q(Baht tailandés),
 				'one' => q(baht tailandés),
 				'other' => q(bahts tailandeses),
 			},
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(Somoni taxico),
+				'currency' => q(Somoni taxico),
 			},
 		},
 		'TMT' => {
 			display_name => {
-				'default' => q(Manat turcomano),
+				'currency' => q(Manat turcomano),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Dinar tunesino),
+				'currency' => q(Dinar tunesino),
 			},
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(Paʻanga de Tonga),
+				'currency' => q(Paʻanga de Tonga),
 			},
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(Lira turca),
+				'currency' => q(Lira turca),
 				'one' => q(lira turca),
 				'other' => q(liras turcas),
 			},
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(Dólar de Trinidade e Tobago),
+				'currency' => q(Dólar de Trinidade e Tobago),
 			},
 		},
 		'TWD' => {
 			display_name => {
-				'default' => q(Novo dólar taiwanés),
+				'currency' => q(Novo dólar taiwanés),
 				'one' => q(novo dólar taiwanés),
 				'other' => q(novos dólares taiwaneses),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Chelín tanzano),
+				'currency' => q(Chelín tanzano),
 			},
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(Grivna ucraína),
+				'currency' => q(Grivna ucraína),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Chelín ugandés),
+				'currency' => q(Chelín ugandés),
 			},
 		},
 		'USD' => {
 			symbol => '$',
 			display_name => {
-				'default' => q(Dólar estadounidense),
+				'currency' => q(Dólar estadounidense),
 				'one' => q(dólar estadounidense),
 				'other' => q(dólares estadounidenses),
 			},
 		},
 		'UYI' => {
 			display_name => {
-				'default' => q(Peso en unidades indexadas uruguaio),
+				'currency' => q(Peso en unidades indexadas uruguaio),
 			},
 		},
 		'UYP' => {
 			display_name => {
-				'default' => q(Peso uruguaio (1975–1993)),
+				'currency' => q(Peso uruguaio \(1975–1993\)),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(Peso uruguaio),
+				'currency' => q(Peso uruguaio),
 				'one' => q(peso uruguaio),
 				'other' => q(pesos uruguaios),
 			},
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(Som usbeco),
+				'currency' => q(Som usbeco),
 			},
 		},
 		'VEB' => {
 			display_name => {
-				'default' => q(Bolívar venezolano (1871–2008)),
-				'one' => q(bolívar venezolano (1871–2008)),
-				'other' => q(bolívares venezolanos (1871–2008)),
+				'currency' => q(Bolívar venezolano \(1871–2008\)),
+				'one' => q(bolívar venezolano \(1871–2008\)),
+				'other' => q(bolívares venezolanos \(1871–2008\)),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(Bolívar venezolano),
+				'currency' => q(Bolívar venezolano),
 				'one' => q(bolívar venezolano),
 				'other' => q(bolívares venezolanos),
 			},
 		},
 		'VND' => {
 			display_name => {
-				'default' => q(Dong vietnamita),
+				'currency' => q(Dong vietnamita),
 			},
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(Vatu vanuatense),
+				'currency' => q(Vatu vanuatense),
 			},
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(Tala samoano),
+				'currency' => q(Tala samoano),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Franco CFA BEAC),
+				'currency' => q(Franco CFA BEAC),
 			},
 		},
 		'XAG' => {
 			display_name => {
-				'default' => q(Prata),
+				'currency' => q(Prata),
 			},
 		},
 		'XAU' => {
 			display_name => {
-				'default' => q(Ouro),
+				'currency' => q(Ouro),
 			},
 		},
 		'XCD' => {
 			display_name => {
-				'default' => q(Dólar Caribe-Leste),
+				'currency' => q(Dólar Caribe-Leste),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Franco CFA BCEAO),
+				'currency' => q(Franco CFA BCEAO),
 			},
 		},
 		'XPD' => {
 			display_name => {
-				'default' => q(Paladio),
+				'currency' => q(Paladio),
 			},
 		},
 		'XPF' => {
 			display_name => {
-				'default' => q(Franco CFP),
+				'currency' => q(Franco CFP),
 			},
 		},
 		'XPT' => {
 			display_name => {
-				'default' => q(Platino),
+				'currency' => q(Platino),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(Unidade monetaria descoñecida ou non válida),
+				'currency' => q(Unidade monetaria descoñecida ou non válida),
 				'one' => q(unidade monetaria descoñecida ou non válida),
 				'other' => q(unidades monetarias descoñecidas ou non válidas),
 			},
 		},
 		'YER' => {
 			display_name => {
-				'default' => q(Rial iemení),
+				'currency' => q(Rial iemení),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Rand sudafricano),
+				'currency' => q(Rand sudafricano),
 				'one' => q(rand sudafricano),
 				'other' => q(rands sudafricanos),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Kwacha zambiano (1968–2012)),
+				'currency' => q(Kwacha zambiano \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Kwacha zambiano),
+				'currency' => q(Kwacha zambiano),
 			},
 		},
 	} },
@@ -2780,13 +2779,13 @@ has 'day_periods' => (
 					'pm' => q{p.m.},
 					'am' => q{a.m.},
 				},
-				'narrow' => {
-					'pm' => q{p},
-					'am' => q{a},
-				},
 				'abbreviated' => {
-					'pm' => q{p.m.},
 					'am' => q{a.m.},
+					'pm' => q{p.m.},
+				},
+				'narrow' => {
+					'am' => q{a},
+					'pm' => q{p},
 				},
 			},
 		},
@@ -2874,45 +2873,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			EHm => q{E HH:mm},
-			EHms => q{E HH:mm:ss},
-			Ed => q{d E},
-			Ehm => q{E h:mm a},
-			Ehms => q{E h:mm:ss a},
-			Gy => q{G y},
-			GyMMM => q{G y MMM},
-			GyMMMEd => q{G y MMM d, E},
-			GyMMMd => q{G y MMM d},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, d-M},
-			MMM => q{LLL},
-			MMMEd => q{E d MMM},
-			MMMMEd => q{E d MMMM},
-			MMMMd => q{d MMMM},
-			MMMd => q{d MMM},
-			MMdd => q{dd/MM},
-			Md => q{d-M},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y},
-			yM => q{M-y},
-			yMEd => q{E, d/M/y},
-			yMM => q{MM/y},
-			yMMM => q{MMM y},
-			yMMMEd => q{E, d MMM, y},
-			yMMMM => q{MMMM y},
-			yMMMd => q{d MMM, y},
-			yMd => q{d/M/y},
-			yQQQ => q{QQQ y},
-			yQQQQ => q{QQQQ y},
-		},
 		'generic' => {
 			Ed => q{d E},
 			Gy => q{G y},
@@ -2957,6 +2917,45 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{G QQQ y},
 			yyyyQQQQ => q{G y QQQQ},
 		},
+		'gregorian' => {
+			EHm => q{E HH:mm},
+			EHms => q{E HH:mm:ss},
+			Ed => q{d E},
+			Ehm => q{E h:mm a},
+			Ehms => q{E h:mm:ss a},
+			Gy => q{G y},
+			GyMMM => q{G y MMM},
+			GyMMMEd => q{G y MMM d, E},
+			GyMMMd => q{G y MMM d},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, d-M},
+			MMM => q{LLL},
+			MMMEd => q{E d MMM},
+			MMMMEd => q{E d MMMM},
+			MMMMd => q{d MMMM},
+			MMMd => q{d MMM},
+			MMdd => q{dd/MM},
+			Md => q{d-M},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y},
+			yM => q{M-y},
+			yMEd => q{E, d/M/y},
+			yMM => q{MM/y},
+			yMMM => q{MMM y},
+			yMMMEd => q{E, d MMM, y},
+			yMMMM => q{MMMM y},
+			yMMMd => q{d MMM, y},
+			yMd => q{d/M/y},
+			yQQQ => q{QQQ y},
+			yQQQQ => q{QQQQ y},
+		},
 	} },
 );
 
@@ -2976,7 +2975,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH–HH},
 			},
@@ -3071,7 +3070,7 @@ has 'datetime_formats_interval' => (
 				y => q{d/M/y – d/M/y},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH–HH},
 			},

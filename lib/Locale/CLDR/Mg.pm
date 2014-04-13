@@ -1,6 +1,6 @@
-package Locale::CLDR::Mg;
+package Locale::CLDR::Mg v0.0.4;
 # This file auto generated from Data\common\main\mg.xml
-#	on Mon 31 Mar  1:16:31 am GMT
+#	on Sun 13 Apr 11:16:35 am GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use v5.18;
@@ -364,9 +364,6 @@ has 'nostr' => (
 	default		=> sub { qr'^(?i:Tsia|T|no|n)$' }
 );
 
-	} }
-);
-
 has 'number_currency_formats' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -392,283 +389,283 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Dirham),
+				'currency' => q(Dirham),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(kwanza angoley),
+				'currency' => q(kwanza angoley),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Dolara aostralianina),
+				'currency' => q(Dolara aostralianina),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(dinar bahreïni),
+				'currency' => q(dinar bahreïni),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Farantsa Borondi),
+				'currency' => q(Farantsa Borondi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Pola botsoaney),
+				'currency' => q(Pola botsoaney),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Dôlara Kanadianina),
+				'currency' => q(Dôlara Kanadianina),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Farantsa kôngôley),
+				'currency' => q(Farantsa kôngôley),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Farantsa soisa),
+				'currency' => q(Farantsa soisa),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Yoan sinoa Renminbi),
+				'currency' => q(Yoan sinoa Renminbi),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Escudo),
+				'currency' => q(Escudo),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Farantsa Djibotianina),
+				'currency' => q(Farantsa Djibotianina),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Dinara alzerianina),
+				'currency' => q(Dinara alzerianina),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(vola venty ejipsiana),
+				'currency' => q(vola venty ejipsiana),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Nakfà Eritreanina),
+				'currency' => q(Nakfà Eritreanina),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Bir etiopianina),
+				'currency' => q(Bir etiopianina),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Eoro),
+				'currency' => q(Eoro),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(livre sterling),
+				'currency' => q(livre sterling),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(cédi),
+				'currency' => q(cédi),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Dalasi gambianina),
+				'currency' => q(Dalasi gambianina),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Farantsa Gineanina),
+				'currency' => q(Farantsa Gineanina),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Ropia Indianina),
+				'currency' => q(Ropia Indianina),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Yen Japoney),
+				'currency' => q(Yen Japoney),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Shilling kenianina),
+				'currency' => q(Shilling kenianina),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Farantsa Komorianina),
+				'currency' => q(Farantsa Komorianina),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Dôlara Liberianina),
+				'currency' => q(Dôlara Liberianina),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Loti),
+				'currency' => q(Loti),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Dinara Libyanina),
+				'currency' => q(Dinara Libyanina),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Dirham marokianina),
+				'currency' => q(Dirham marokianina),
 			},
 		},
 		'MGA' => {
 			symbol => 'Ar',
 			display_name => {
-				'default' => q(Ariary),
+				'currency' => q(Ariary),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Ouguiya moritanianina),
+				'currency' => q(Ouguiya moritanianina),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Ropia maorisianina),
+				'currency' => q(Ropia maorisianina),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(kwacha malawite),
+				'currency' => q(kwacha malawite),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Metikaly),
+				'currency' => q(Metikaly),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Dolara namibianina),
+				'currency' => q(Dolara namibianina),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Naira nigerianina),
+				'currency' => q(Naira nigerianina),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Farantsa Roande),
+				'currency' => q(Farantsa Roande),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Rial saodianina),
+				'currency' => q(Rial saodianina),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Ropia Seysheloà),
+				'currency' => q(Ropia Seysheloà),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Dinara Sodaney),
+				'currency' => q(Dinara Sodaney),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(livre soudanaise (1956–2007)),
+				'currency' => q(livre soudanaise \(1956–2007\)),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(livre de Sainte-Hélène),
+				'currency' => q(livre de Sainte-Hélène),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Leone),
+				'currency' => q(Leone),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Shilling somalianina),
+				'currency' => q(Shilling somalianina),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Dobra),
+				'currency' => q(Dobra),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lilangeni),
+				'currency' => q(Lilangeni),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Dinar tonizianina),
+				'currency' => q(Dinar tonizianina),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Shilling tanzanianina),
+				'currency' => q(Shilling tanzanianina),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Shilling ogandianina),
+				'currency' => q(Shilling ogandianina),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Dolara amerikanina),
+				'currency' => q(Dolara amerikanina),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Farantsa CFA (BEAC)),
+				'currency' => q(Farantsa CFA \(BEAC\)),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Farantsa CFA (BCEAO)),
+				'currency' => q(Farantsa CFA \(BCEAO\)),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Rand afrikanina tatsimo),
+				'currency' => q(Rand afrikanina tatsimo),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Kwacha zambianina (1968–2012)),
+				'currency' => q(Kwacha zambianina \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Kwacha zambianina),
+				'currency' => q(Kwacha zambianina),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Dôlara Zimbaboeanina),
+				'currency' => q(Dôlara Zimbaboeanina),
 			},
 		},
 	} },
@@ -882,7 +879,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			M => q{M},
 			MEd => q{E d/M},
 			MMM => q{MMM},
@@ -905,7 +902,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			M => q{M},
 			MEd => q{E d/M},
 			MMM => q{MMM},
@@ -947,3 +944,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

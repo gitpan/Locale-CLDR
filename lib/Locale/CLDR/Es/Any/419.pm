@@ -1,6 +1,6 @@
-package Locale::CLDR::Es::Any::419;
+package Locale::CLDR::Es::Any::419 v0.0.4;
 # This file auto generated from Data\common\main\es_419.xml
-#	on Mon 31 Mar 12:14:06 am GMT
+#	on Sun 13 Apr 10:11:30 am GMT
 # XML file generated 2014-01-08 23:02:40 -0600 (Wed, 08 Jan 2014)
 
 use v5.18;
@@ -145,3 +145,236 @@ has 'display_name_transform_name' => (
 	},
 );
 
+has 'number_symbols' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'decimal' => q(.),
+			'exponential' => q(),
+			'group' => q(,),
+			'infinity' => q(),
+			'list' => q(),
+			'minusSign' => q(),
+			'nan' => q(),
+			'perMille' => q(),
+			'percentSign' => q(),
+			'plusSign' => q(),
+			'superscriptingExponent' => q(),
+		},
+	} }
+);
+
+has 'number_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		decimalFormat => {
+			'short' => {
+				'1000' => {
+					'one' => '0',
+					'other' => '0',
+				},
+				'10000' => {
+					'one' => '00k',
+					'other' => '00k',
+				},
+				'100000' => {
+					'one' => '000k',
+					'other' => '000k',
+				},
+				'1000000' => {
+					'one' => '0 M',
+					'other' => '0 M',
+				},
+				'10000000' => {
+					'one' => '00 M',
+					'other' => '00 M',
+				},
+				'100000000' => {
+					'one' => '000 M',
+					'other' => '000 M',
+				},
+				'1000000000' => {
+					'one' => '0k M',
+					'other' => '0k M',
+				},
+				'10000000000' => {
+					'one' => '00k M',
+					'other' => '00k M',
+				},
+				'100000000000' => {
+					'one' => '000k M',
+					'other' => '000k M',
+				},
+				'1000000000000' => {
+					'one' => '0 B',
+					'other' => '0 B',
+				},
+				'10000000000000' => {
+					'one' => '00 B',
+					'other' => '00 B',
+				},
+				'100000000000000' => {
+					'one' => '000 B',
+					'other' => '000 B',
+				},
+			},
+		},
+} },
+);
+
+has 'number_currency_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'pattern' => {
+				'default' => {
+					'standard' => {
+						'negative' => '¤#,##0.00',
+						'positive' => '¤#,##0.00',
+					},
+				},
+			},
+		},
+} },
+);
+
+has 'calendar_quarters' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					narrow => {0 => '1',
+						1 => '2',
+						2 => '3',
+						3 => '4'
+					},
+				},
+			},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			yMEd => q{E d/M/y},
+		},
+		'generic' => {
+			yMEd => q{E d/M/y G},
+		},
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'time_zone_names' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default	=> sub { {
+		'Europe_Central' => {
+			short => {
+				'daylight' => q(∅∅∅),
+				'generic' => q(∅∅∅),
+				'standard' => q(∅∅∅),
+			},
+		},
+		'Europe_Eastern' => {
+			short => {
+				'daylight' => q(∅∅∅),
+				'generic' => q(∅∅∅),
+				'standard' => q(∅∅∅),
+			},
+		},
+		'Europe_Western' => {
+			short => {
+				'daylight' => q(∅∅∅),
+				'generic' => q(∅∅∅),
+				'standard' => q(∅∅∅),
+			},
+		},
+		'GMT' => {
+			short => {
+				'standard' => q(∅∅∅),
+			},
+		},
+	 } }
+);
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

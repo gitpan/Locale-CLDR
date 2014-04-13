@@ -1,6 +1,6 @@
-package Locale::CLDR::Ksh;
+package Locale::CLDR::Ksh v0.0.4;
 # This file auto generated from Data\common\main\ksh.xml
-#	on Mon 31 Mar  1:05:29 am GMT
+#	on Sun 13 Apr 11:05:16 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -1460,7 +1460,6 @@ has 'units' => (
 			} }
 );
 
-
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -1746,37 +1745,37 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(de vereineschte arraabesche Emiraate ier Dirham),
+				'currency' => q(de vereineschte arraabesche Emiraate ier Dirham),
 			},
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(Afjahni),
+				'currency' => q(Afjahni),
 			},
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(albaanesche Lek),
+				'currency' => q(albaanesche Lek),
 			},
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(armeenesche Dram),
+				'currency' => q(armeenesche Dram),
 			},
 		},
 		'ANG' => {
 			display_name => {
-				'default' => q(neederlängsch antillesche Jullde),
+				'currency' => q(neederlängsch antillesche Jullde),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(angjolaanesche Kwansa),
+				'currency' => q(angjolaanesche Kwansa),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(ajentiinesche Peeso),
+				'currency' => q(ajentiinesche Peeso),
 				'one' => q(ajentiinesche Peesos),
 				'other' => q(ajentiinesche Peesos),
 				'zero' => q(ajentiinesche Peesos),
@@ -1784,27 +1783,27 @@ has 'curriencies' => (
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(austraalesche Dollaa),
+				'currency' => q(austraalesche Dollaa),
 			},
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(arubesche Florin),
+				'currency' => q(arubesche Florin),
 			},
 		},
 		'AZM' => {
 			display_name => {
-				'default' => q(Asserbaidschaani Manat (1993–2006)),
+				'currency' => q(Asserbaidschaani Manat \(1993–2006\)),
 			},
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(Asserbaidschaani Manat),
+				'currency' => q(Asserbaidschaani Manat),
 			},
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(ömtuuschbaa Mark us Boßnije un dä Hächejovvina),
+				'currency' => q(ömtuuschbaa Mark us Boßnije un dä Hächejovvina),
 				'one' => q(öpmtuuschbaa Mark us Boßnije un dä Hächejovvina),
 				'other' => q(öpmtuuschbaa Mark us Boßnije un dä Hächejovvina),
 				'zero' => q(öpmtuuschbaa Mark us Boßnije un dä Hächejovvina),
@@ -1812,37 +1811,37 @@ has 'curriencies' => (
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(Barbados-Dollaa),
+				'currency' => q(Barbados-Dollaa),
 			},
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(Taka us Bangladäsch),
+				'currency' => q(Taka us Bangladäsch),
 			},
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(buljaaresche Lev),
+				'currency' => q(buljaaresche Lev),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Bachrainesche Denaa),
+				'currency' => q(Bachrainesche Denaa),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(burundesche Frang),
+				'currency' => q(burundesche Frang),
 			},
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(Bermuuda-Dollaa),
+				'currency' => q(Bermuuda-Dollaa),
 			},
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(Brunei-Dollaa),
+				'currency' => q(Brunei-Dollaa),
 				'one' => q(Brunei-Dollaaa),
 				'other' => q(Brunei-Dollaaa),
 				'zero' => q(Brunei-Dollaaa),
@@ -1850,7 +1849,7 @@ has 'curriencies' => (
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(Bollivijano),
+				'currency' => q(Bollivijano),
 				'one' => q(Bollivijano),
 				'other' => q(Bollivijano),
 				'zero' => q(Bollivijano),
@@ -1858,17 +1857,17 @@ has 'curriencies' => (
 		},
 		'BRL' => {
 			display_name => {
-				'default' => q(brasilljaanesche Real),
+				'currency' => q(brasilljaanesche Real),
 			},
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(bahama'sche Dollaa),
+				'currency' => q(bahama'sche Dollaa),
 			},
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(bhutanesesche Ngultrum),
+				'currency' => q(bhutanesesche Ngultrum),
 				'one' => q(Bhutanesesche Ngultrum),
 				'other' => q(Bhutanesesche Ngultrum),
 				'zero' => q(Bhutanesesche Ngultrum),
@@ -1876,17 +1875,17 @@ has 'curriencies' => (
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Pula us Bozwaana),
+				'currency' => q(Pula us Bozwaana),
 			},
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(wiißrußesche Rubel),
+				'currency' => q(wiißrußesche Rubel),
 			},
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(belizjaanesche Dollaa),
+				'currency' => q(belizjaanesche Dollaa),
 				'one' => q(Belizjaanesche Dollaa),
 				'other' => q(Belizjaanesche Dollaa),
 				'zero' => q(Belizjaanesche Dollaa),
@@ -1894,22 +1893,22 @@ has 'curriencies' => (
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(kannaadesche Dollaa),
+				'currency' => q(kannaadesche Dollaa),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(kongjoleesesche Frang),
+				'currency' => q(kongjoleesesche Frang),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(schweijzer Fränkli),
+				'currency' => q(schweijzer Fränkli),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(schileenesche Peeso),
+				'currency' => q(schileenesche Peeso),
 				'one' => q(schileenesche Peesos),
 				'other' => q(schileenesche Peesos),
 				'zero' => q(schileenesche Peesos),
@@ -1917,12 +1916,12 @@ has 'curriencies' => (
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(schineesesche Yuan Renminbi),
+				'currency' => q(schineesesche Yuan Renminbi),
 			},
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(kolumbesche Peso),
+				'currency' => q(kolumbesche Peso),
 				'one' => q(kolumbesche Pesos),
 				'other' => q(kolumbesche Pesos),
 				'zero' => q(kolumbesche Pesos),
@@ -1930,7 +1929,7 @@ has 'curriencies' => (
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(koßtarikaanesche Colón),
+				'currency' => q(koßtarikaanesche Colón),
 				'one' => q(Kaßtarikaanesche Colón),
 				'other' => q(Kaßtarikaanesche Colón),
 				'zero' => q(Kaßtarikaanesche Colón),
@@ -1938,7 +1937,7 @@ has 'curriencies' => (
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(ömtuuschbaa kubaanesche Pesos),
+				'currency' => q(ömtuuschbaa kubaanesche Pesos),
 				'one' => q(ömtuuschbaa kubaanesche Pesos),
 				'other' => q(ömtuuschbaa kubaanesche Pesos),
 				'zero' => q(ömtuuschbaa kubaanesche Pesos),
@@ -1946,7 +1945,7 @@ has 'curriencies' => (
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(kubaanesche Peesos),
+				'currency' => q(kubaanesche Peesos),
 				'one' => q(kubaanesche Peesos),
 				'other' => q(kubaanesche Peesos),
 				'zero' => q(kubaanesche Peesos),
@@ -1954,7 +1953,7 @@ has 'curriencies' => (
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(kapverdesche Eskuudos),
+				'currency' => q(kapverdesche Eskuudos),
 				'one' => q(kapverdesche Eskuudos),
 				'other' => q(kapverdesche Eskuudos),
 				'zero' => q(kapverdesche Eskuudos),
@@ -1962,7 +1961,7 @@ has 'curriencies' => (
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(tschäschesche Kruhne),
+				'currency' => q(tschäschesche Kruhne),
 				'one' => q(tschäschesche Kruhne),
 				'other' => q(tschäschesche Kruhne),
 				'zero' => q(tschäschesche Kruhne),
@@ -1970,12 +1969,12 @@ has 'curriencies' => (
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Frang uß Dschibuti),
+				'currency' => q(Frang uß Dschibuti),
 			},
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(dänesche Kruhne),
+				'currency' => q(dänesche Kruhne),
 				'one' => q(dänesche Kruhne),
 				'other' => q(dänesche Kruhne),
 				'zero' => q(dänesche Kruhne),
@@ -1983,7 +1982,7 @@ has 'curriencies' => (
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(dommenikaanesche Peesos),
+				'currency' => q(dommenikaanesche Peesos),
 				'one' => q(dommenikaanesche Peeso),
 				'other' => q(dommenikaanesche Peesos),
 				'zero' => q(dommenikaanesche Peesos),
@@ -1991,52 +1990,52 @@ has 'curriencies' => (
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(aljeresche Denaa),
+				'currency' => q(aljeresche Denaa),
 			},
 		},
 		'EEK' => {
 			display_name => {
-				'default' => q(Äßnesche Kruhne),
+				'currency' => q(Äßnesche Kruhne),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(äjiptesche Pongk),
+				'currency' => q(äjiptesche Pongk),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Nafka uß Erritreja),
+				'currency' => q(Nafka uß Erritreja),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(ätejoopesche Birr),
+				'currency' => q(ätejoopesche Birr),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Euro),
+				'currency' => q(Euro),
 			},
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(Fidschi-Dollaa),
+				'currency' => q(Fidschi-Dollaa),
 			},
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(Pongk vun de Falkland-Enselle),
+				'currency' => q(Pongk vun de Falkland-Enselle),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(brittesche £),
+				'currency' => q(brittesche £),
 			},
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(jeorjesche Lari),
+				'currency' => q(jeorjesche Lari),
 				'one' => q(jeorjesche LAri),
 				'other' => q(jeorjesche LAri),
 				'zero' => q(jeorjesche LAri),
@@ -2044,22 +2043,22 @@ has 'curriencies' => (
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(janaaesche Cedi),
+				'currency' => q(janaaesche Cedi),
 			},
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(jibraltaa'sche Pongk),
+				'currency' => q(jibraltaa'sche Pongk),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(jambesche Dalasi),
+				'currency' => q(jambesche Dalasi),
 			},
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(Jineea-Frang),
+				'currency' => q(Jineea-Frang),
 				'one' => q(Jineea-Franke),
 				'other' => q(Jineea-Franke),
 				'zero' => q(Jineea-Franke),
@@ -2067,67 +2066,67 @@ has 'curriencies' => (
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(juatemalesche Quetzal),
+				'currency' => q(juatemalesche Quetzal),
 			},
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(Juaana-Dollaa),
+				'currency' => q(Juaana-Dollaa),
 			},
 		},
 		'HKD' => {
 			display_name => {
-				'default' => q(Hongkong-Dollaa),
+				'currency' => q(Hongkong-Dollaa),
 			},
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(hondureanesche Lempira),
+				'currency' => q(hondureanesche Lempira),
 			},
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(krowaatesche Kuna),
+				'currency' => q(krowaatesche Kuna),
 			},
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(haiitesche Gourde),
+				'currency' => q(haiitesche Gourde),
 			},
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(unjarresche Forint),
+				'currency' => q(unjarresche Forint),
 			},
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(indoneesesche Ruupije),
+				'currency' => q(indoneesesche Ruupije),
 			},
 		},
 		'ILS' => {
 			display_name => {
-				'default' => q(ißraeelesche Schekel),
+				'currency' => q(ißraeelesche Schekel),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(indesche Ruupije),
+				'currency' => q(indesche Ruupije),
 			},
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(iraakesche Denaa),
+				'currency' => q(iraakesche Denaa),
 			},
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(persesche Rial),
+				'currency' => q(persesche Rial),
 			},
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(ißländesche Kruhne),
+				'currency' => q(ißländesche Kruhne),
 				'one' => q(ißländesche Kruhne),
 				'other' => q(ißländesche Kruhne),
 				'zero' => q(ißländesche Kruhne),
@@ -2135,22 +2134,22 @@ has 'curriencies' => (
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(jamaikaanesche Dollaa),
+				'currency' => q(jamaikaanesche Dollaa),
 			},
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(Jordaanesche Dollaa),
+				'currency' => q(Jordaanesche Dollaa),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(japaanesche Jen),
+				'currency' => q(japaanesche Jen),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Kenjaanesche Schillinge),
+				'currency' => q(Kenjaanesche Schillinge),
 				'one' => q(Kenjaanesche Schillinge),
 				'other' => q(Kenjaanesche Schillinge),
 				'zero' => q(Kenjaanesche Schillinge),
@@ -2158,42 +2157,42 @@ has 'curriencies' => (
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(kirjiisesche Som),
+				'currency' => q(kirjiisesche Som),
 			},
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(kambodschaanesche Riel),
+				'currency' => q(kambodschaanesche Riel),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(kommooresche Frang),
+				'currency' => q(kommooresche Frang),
 			},
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(noodkorejaansche Won),
+				'currency' => q(noodkorejaansche Won),
 			},
 		},
 		'KRW' => {
 			display_name => {
-				'default' => q(söödkorejaansche Won),
+				'currency' => q(söödkorejaansche Won),
 			},
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(kuwaitesche Denaa),
+				'currency' => q(kuwaitesche Denaa),
 			},
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(Kaimann-Dollaa),
+				'currency' => q(Kaimann-Dollaa),
 			},
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(kasakesche Tenge),
+				'currency' => q(kasakesche Tenge),
 				'one' => q(kasakstaanesche Tenge),
 				'other' => q(kasakstaanesche Tenge),
 				'zero' => q(kasakstaanesche Tenge),
@@ -2201,17 +2200,17 @@ has 'curriencies' => (
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(loaatesche Kip),
+				'currency' => q(loaatesche Kip),
 			},
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(libaneesesche Pongk),
+				'currency' => q(libaneesesche Pongk),
 			},
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(schrilankesche Ruupije),
+				'currency' => q(schrilankesche Ruupije),
 				'one' => q(schri-lankesche Ruupije),
 				'other' => q(schri-lankesche Ruupije),
 				'zero' => q(schri-lankesche Ruupije),
@@ -2219,87 +2218,87 @@ has 'curriencies' => (
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(liberijaanesche Dollaa),
+				'currency' => q(liberijaanesche Dollaa),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(lesoothesche Loti),
+				'currency' => q(lesoothesche Loti),
 			},
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(littouesche Litas),
+				'currency' => q(littouesche Litas),
 			},
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(lättesche Lats),
+				'currency' => q(lättesche Lats),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(libesche Denaa),
+				'currency' => q(libesche Denaa),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(marrokaanesche Dirhamm),
+				'currency' => q(marrokaanesche Dirhamm),
 			},
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(moldaavesche Leu),
+				'currency' => q(moldaavesche Leu),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(madajaskesche Ariary),
+				'currency' => q(madajaskesche Ariary),
 			},
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(mazedoonesche Denaa),
+				'currency' => q(mazedoonesche Denaa),
 			},
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(burmeesesche Kyat),
+				'currency' => q(burmeesesche Kyat),
 			},
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(mongjoolesche Tugrik),
+				'currency' => q(mongjoolesche Tugrik),
 			},
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(makaneesesche Pataca),
+				'currency' => q(makaneesesche Pataca),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(mauretanesche Ouguiya),
+				'currency' => q(mauretanesche Ouguiya),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(maurizjahnesche Ruupije),
+				'currency' => q(maurizjahnesche Ruupije),
 			},
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(mallediivesche Rufiyaa),
+				'currency' => q(mallediivesche Rufiyaa),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(malaawesche Kwache),
+				'currency' => q(malaawesche Kwache),
 			},
 		},
 		'MXN' => {
 			display_name => {
-				'default' => q(mexekaanesche Peeso),
+				'currency' => q(mexekaanesche Peeso),
 				'one' => q(mexekaanesche Peeso),
 				'other' => q(mexekaanesche Peeso),
 				'zero' => q(mexekaanesche Peeso),
@@ -2307,32 +2306,32 @@ has 'curriencies' => (
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(malaisesche Ringgit),
+				'currency' => q(malaisesche Ringgit),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(mosambikaanesche Metical (1980–2006)),
+				'currency' => q(mosambikaanesche Metical \(1980–2006\)),
 			},
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(mossambikaanesche Metical),
+				'currency' => q(mossambikaanesche Metical),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(namiibesche Dollaa),
+				'currency' => q(namiibesche Dollaa),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(nijerijaanesche Naira),
+				'currency' => q(nijerijaanesche Naira),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(nikarajaanesche Córdoba),
+				'currency' => q(nikarajaanesche Córdoba),
 				'one' => q(nikarajaanesche Córdoba),
 				'other' => q(nikarajaanesche Córdoba),
 				'zero' => q(nikarajaanesche Córdoba),
@@ -2340,7 +2339,7 @@ has 'curriencies' => (
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(norrweejesche Kruhne),
+				'currency' => q(norrweejesche Kruhne),
 				'one' => q(norrweejesche Kruhne),
 				'other' => q(norrweejesche Kruhne),
 				'zero' => q(norrweejesche Kruhne),
@@ -2348,22 +2347,22 @@ has 'curriencies' => (
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(nepaleesesche Ruupije),
+				'currency' => q(nepaleesesche Ruupije),
 			},
 		},
 		'NZD' => {
 			display_name => {
-				'default' => q(neuseeländesche Dollaa),
+				'currency' => q(neuseeländesche Dollaa),
 			},
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(ommaanesche Rijal),
+				'currency' => q(ommaanesche Rijal),
 			},
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(pannameesesche Balboa),
+				'currency' => q(pannameesesche Balboa),
 				'one' => q(pannameesesche Balboa),
 				'other' => q(pannameesesche Balboa),
 				'zero' => q(pannameesesche Balboa),
@@ -2371,17 +2370,17 @@ has 'curriencies' => (
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(perruaanesche Nuevo Sol),
+				'currency' => q(perruaanesche Nuevo Sol),
 			},
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(papua neujinejaanesche Kina),
+				'currency' => q(papua neujinejaanesche Kina),
 			},
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(fillipiinesche Pesos),
+				'currency' => q(fillipiinesche Pesos),
 				'one' => q(fillipiinesche Pesos),
 				'other' => q(fillipiinesche Pesos),
 				'zero' => q(fillipiinesche Pesos),
@@ -2389,12 +2388,12 @@ has 'curriencies' => (
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(pakestaanesche Ruupije),
+				'currency' => q(pakestaanesche Ruupije),
 			},
 		},
 		'PLN' => {
 			display_name => {
-				'default' => q(polnesche Złoty),
+				'currency' => q(polnesche Złoty),
 				'one' => q(polnesche Złoty),
 				'other' => q(polnesche Złoty),
 				'zero' => q(polnesche Złoty),
@@ -2402,62 +2401,62 @@ has 'curriencies' => (
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(parajuaanesche Juarani),
+				'currency' => q(parajuaanesche Juarani),
 			},
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(kataaresche Rijal),
+				'currency' => q(kataaresche Rijal),
 			},
 		},
 		'ROL' => {
 			display_name => {
-				'default' => q(romäänesche Leu (1952–2006)),
+				'currency' => q(romäänesche Leu \(1952–2006\)),
 			},
 		},
 		'RON' => {
 			display_name => {
-				'default' => q(romäänesche Leu),
+				'currency' => q(romäänesche Leu),
 			},
 		},
 		'RSD' => {
 			display_name => {
-				'default' => q(särbesche Denaare),
+				'currency' => q(särbesche Denaare),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(russesche Ruubel),
+				'currency' => q(russesche Ruubel),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(ruandesche Frang),
+				'currency' => q(ruandesche Frang),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(saudesche Rijal),
+				'currency' => q(saudesche Rijal),
 			},
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(solomonesche Dollaa),
+				'currency' => q(solomonesche Dollaa),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(seischellesche Ruupije),
+				'currency' => q(seischellesche Ruupije),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(sudaneesesche Pongk),
+				'currency' => q(sudaneesesche Pongk),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(schweedesche Kruhne),
+				'currency' => q(schweedesche Kruhne),
 				'one' => q(schweedesche Kruhne),
 				'other' => q(schweedesche Kruhne),
 				'zero' => q(schweedesche Kruhne),
@@ -2465,27 +2464,27 @@ has 'curriencies' => (
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(singjapurejaanesche Dollaa),
+				'currency' => q(singjapurejaanesche Dollaa),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Zint-Hellena-Pongk),
+				'currency' => q(Zint-Hellena-Pongk),
 			},
 		},
 		'SKK' => {
 			display_name => {
-				'default' => q(ßlovaakesche Kruhne),
+				'currency' => q(ßlovaakesche Kruhne),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(ẞjärra-lejoneesesche Leone),
+				'currency' => q(ẞjärra-lejoneesesche Leone),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(somaalesche Schillenge),
+				'currency' => q(somaalesche Schillenge),
 				'one' => q(somaalesche Schillenge),
 				'other' => q(somaalesche Schillenge),
 				'zero' => q(somaalesche Schillenge),
@@ -2493,12 +2492,12 @@ has 'curriencies' => (
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(sürinameesesche Dollaa),
+				'currency' => q(sürinameesesche Dollaa),
 			},
 		},
 		'SSP' => {
 			display_name => {
-				'default' => q(södsudaneesesche Pongk),
+				'currency' => q(södsudaneesesche Pongk),
 				'one' => q(södsudaneesesche Pongk),
 				'other' => q(södsudaneesesche Pongk),
 				'zero' => q(södsudaneesesche Pongk),
@@ -2506,7 +2505,7 @@ has 'curriencies' => (
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Dobra vun São Tomé un Príncipe),
+				'currency' => q(Dobra vun São Tomé un Príncipe),
 				'one' => q(Dobra vun São Tomé un Príncipe),
 				'other' => q(Dobra vun São Tomé un Príncipe),
 				'zero' => q(Dobra vun São Tomé un Príncipe),
@@ -2514,37 +2513,37 @@ has 'curriencies' => (
 		},
 		'SVC' => {
 			display_name => {
-				'default' => q(asalvadorejaanesche Cosan),
+				'currency' => q(asalvadorejaanesche Cosan),
 			},
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(süüresche Pund),
+				'currency' => q(süüresche Pund),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(swasiländesche Lilangeni),
+				'currency' => q(swasiländesche Lilangeni),
 			},
 		},
 		'THB' => {
 			display_name => {
-				'default' => q(tailändesche Baht),
+				'currency' => q(tailändesche Baht),
 			},
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(tadschikißtaanesche Somoni),
+				'currency' => q(tadschikißtaanesche Somoni),
 			},
 		},
 		'TMM' => {
 			display_name => {
-				'default' => q(turkmeneßtaanesche Manat (1993–2009)),
+				'currency' => q(turkmeneßtaanesche Manat \(1993–2009\)),
 			},
 		},
 		'TMT' => {
 			display_name => {
-				'default' => q(turkmeneßtaanesche Manat),
+				'currency' => q(turkmeneßtaanesche Manat),
 				'one' => q(turkmeneßtaanesche Manat),
 				'other' => q(turkmeneßtaanesche Manat),
 				'zero' => q(turkmeneßtaanesche Manat),
@@ -2552,22 +2551,22 @@ has 'curriencies' => (
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(tuneesesche Denaa),
+				'currency' => q(tuneesesche Denaa),
 			},
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(tongjanes Paʻangache),
+				'currency' => q(tongjanes Paʻangache),
 			},
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(törkesche Liire),
+				'currency' => q(törkesche Liire),
 			},
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(Dollaa uß Trinidad un Tobääjo),
+				'currency' => q(Dollaa uß Trinidad un Tobääjo),
 				'one' => q(Dollaa uß Trinidad un Tobääjo),
 				'other' => q(Dollaa uß Trinidad un Tobääjo),
 				'zero' => q(Dollaa uß Trinidad un Tobääjo),
@@ -2575,12 +2574,12 @@ has 'curriencies' => (
 		},
 		'TWD' => {
 			display_name => {
-				'default' => q(neu taiwaneesesche Dollaa),
+				'currency' => q(neu taiwaneesesche Dollaa),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(tansaanesche Schillenge),
+				'currency' => q(tansaanesche Schillenge),
 				'one' => q(tansaanesche Schillenge),
 				'other' => q(tansaanesche Schillenge),
 				'zero' => q(tansaanesche Schillenge),
@@ -2588,12 +2587,12 @@ has 'curriencies' => (
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(ukraijnesche Hryvnia),
+				'currency' => q(ukraijnesche Hryvnia),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(ujandesche Schillenge),
+				'currency' => q(ujandesche Schillenge),
 				'one' => q(ujandesche Schillenge),
 				'other' => q(ujandesche Schillenge),
 				'zero' => q(ujandesche Schillenge),
@@ -2601,12 +2600,12 @@ has 'curriencies' => (
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(ammärrikaanesche Dollaa),
+				'currency' => q(ammärrikaanesche Dollaa),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(urrujuwaische Peeso),
+				'currency' => q(urrujuwaische Peeso),
 				'one' => q(urrujuwaische Peeso),
 				'other' => q(urrujuwaische Peeso),
 				'zero' => q(urrujuwaische Peeso),
@@ -2614,67 +2613,67 @@ has 'curriencies' => (
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(ußbeekesche Som),
+				'currency' => q(ußbeekesche Som),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(venezuelaanesche Bolívar),
+				'currency' => q(venezuelaanesche Bolívar),
 			},
 		},
 		'VND' => {
 			display_name => {
-				'default' => q(vijätnammeesesche Dong),
+				'currency' => q(vijätnammeesesche Dong),
 			},
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(vanuatesche Vatu),
+				'currency' => q(vanuatesche Vatu),
 			},
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(samowaanesche Tala),
+				'currency' => q(samowaanesche Tala),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Kmmeruhner Frang),
+				'currency' => q(Kmmeruhner Frang),
 			},
 		},
 		'XAG' => {
 			display_name => {
-				'default' => q(Sellver),
+				'currency' => q(Sellver),
 			},
 		},
 		'XAU' => {
 			display_name => {
-				'default' => q(Jold),
+				'currency' => q(Jold),
 			},
 		},
 		'XCD' => {
 			display_name => {
-				'default' => q(oß-karribbesche Dollaa),
+				'currency' => q(oß-karribbesche Dollaa),
 			},
 		},
 		'XFO' => {
 			display_name => {
-				'default' => q(franzüüsesche Joldfranke),
+				'currency' => q(franzüüsesche Joldfranke),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Frang uß de Älfebeinköß),
+				'currency' => q(Frang uß de Älfebeinköß),
 			},
 		},
 		'XPD' => {
 			display_name => {
-				'default' => q(Palladijum),
+				'currency' => q(Palladijum),
 			},
 		},
 		'XPF' => {
 			display_name => {
-				'default' => q(polineesesche Frang),
+				'currency' => q(polineesesche Frang),
 				'one' => q(polineesesche Frang),
 				'other' => q(polineesesche Frang),
 				'zero' => q(polineesesche Frang),
@@ -2682,47 +2681,47 @@ has 'curriencies' => (
 		},
 		'XPT' => {
 			display_name => {
-				'default' => q(Plaatin),
+				'currency' => q(Plaatin),
 			},
 		},
 		'XTS' => {
 			display_name => {
-				'default' => q(Währong zum Prööfe),
+				'currency' => q(Währong zum Prööfe),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(onbikannte Währong),
+				'currency' => q(onbikannte Währong),
 			},
 		},
 		'YER' => {
 			display_name => {
-				'default' => q(jemenitesche Rijal),
+				'currency' => q(jemenitesche Rijal),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(södaffrekaanesche Rand),
+				'currency' => q(södaffrekaanesche Rand),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(sambesche Kwacha (1968–2012)),
+				'currency' => q(sambesche Kwacha \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(sambesche Kwacha),
+				'currency' => q(sambesche Kwacha),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(simbabwesche Dollaa (1980–2008)),
+				'currency' => q(simbabwesche Dollaa \(1980–2008\)),
 			},
 		},
 		'ZWL' => {
 			display_name => {
-				'default' => q(simbabwesche Dollaa (2009)),
+				'currency' => q(simbabwesche Dollaa \(2009\)),
 			},
 		},
 	} },
@@ -2907,19 +2906,19 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'pm' => q{Uhr nommendaachs},
-					'am' => q{Uhr vörmiddaachs},
-				},
 				'abbreviated' => {
 					'pm' => q{n.m.},
 					'am' => q{v.m.},
 				},
+				'wide' => {
+					'pm' => q{Uhr nommendaachs},
+					'am' => q{Uhr vörmiddaachs},
+				},
 			},
 			'stand-alone' => {
 				'wide' => {
-					'am' => q{Vormittag},
 					'pm' => q{Nachmittag},
+					'am' => q{Vormittag},
 				},
 			},
 		},
@@ -3012,7 +3011,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E 'dä' d.},
 			Hm => q{H:mm},
 			Hms => q{H:mm:ss},
@@ -3037,7 +3036,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQy},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E 'dä' d.},
 			Hm => q{H:mm},
 			Hms => q{H:mm:ss},
@@ -3078,7 +3077,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			M => {
 				M => q{M–M},
 			},
@@ -3118,7 +3117,7 @@ has 'datetime_formats_interval' => (
 				y => q{MMMM y – MMMM y},
 			},
 		},
-		'gregorian' => {
+		'generic' => {
 			M => {
 				M => q{M–M},
 			},

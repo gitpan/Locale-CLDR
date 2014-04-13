@@ -1,6 +1,6 @@
-package Locale::CLDR::Sr::Latn;
+package Locale::CLDR::Sr::Latn v0.0.4;
 # This file auto generated from Data\common\main\sr_Latn.xml
-#	on Mon 31 Mar  2:00:41 am GMT
+#	on Sun 13 Apr 12:01:19 pm GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use v5.18;
@@ -1981,7 +1981,6 @@ has 'units' => (
 			} }
 );
 
-
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -2271,7 +2270,7 @@ has 'curriencies' => (
 	default		=> sub { {
 		'ADP' => {
 			display_name => {
-				'default' => q(Andorska pezeta),
+				'currency' => q(Andorska pezeta),
 				'few' => q(andorske pezete),
 				'one' => q(andorska pezeta),
 				'other' => q(andorske pezete),
@@ -2279,7 +2278,7 @@ has 'curriencies' => (
 		},
 		'AED' => {
 			display_name => {
-				'default' => q(Ujedinjeni arapski emirati dirham),
+				'currency' => q(Ujedinjeni arapski emirati dirham),
 				'few' => q(UAE dirama),
 				'one' => q(UAE diram),
 				'other' => q(UAE dirama),
@@ -2287,15 +2286,15 @@ has 'curriencies' => (
 		},
 		'AFA' => {
 			display_name => {
-				'default' => q(Avganistanski avgani (1927–2002)),
-				'few' => q(avganistanska avgana (1927–2002)),
-				'one' => q(avganistanski avgani (1927–2002)),
-				'other' => q(avganistanskih avgana (1927–2002)),
+				'currency' => q(Avganistanski avgani \(1927–2002\)),
+				'few' => q(avganistanska avgana \(1927–2002\)),
+				'one' => q(avganistanski avgani \(1927–2002\)),
+				'other' => q(avganistanskih avgana \(1927–2002\)),
 			},
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(Avganistanski avgani),
+				'currency' => q(Avganistanski avgani),
 				'few' => q(avganistanska avgana),
 				'one' => q(avganistanski avgani),
 				'other' => q(avganistanskih avgana),
@@ -2310,7 +2309,7 @@ has 'curriencies' => (
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(Albanski lek),
+				'currency' => q(Albanski lek),
 				'few' => q(albanske leke),
 				'one' => q(albanski lek),
 				'other' => q(albanskih leka),
@@ -2318,7 +2317,7 @@ has 'curriencies' => (
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(Jermenski dram),
+				'currency' => q(Jermenski dram),
 				'few' => q(jermenska drama),
 				'one' => q(jermenski dram),
 				'other' => q(jermenska drama),
@@ -2326,7 +2325,7 @@ has 'curriencies' => (
 		},
 		'ANG' => {
 			display_name => {
-				'default' => q(Holandski antili gilder),
+				'currency' => q(Holandski antili gilder),
 				'few' => q(holandska antila),
 				'one' => q(holandsko-antilski gilder),
 				'other' => q(holandsko-antilskih gildera),
@@ -2334,7 +2333,7 @@ has 'curriencies' => (
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Angolijska kvanza),
+				'currency' => q(Angolijska kvanza),
 				'few' => q(angolijske kvanze),
 				'one' => q(angolijska kvanza),
 				'other' => q(angolijskih kvanzi),
@@ -2342,15 +2341,15 @@ has 'curriencies' => (
 		},
 		'AOK' => {
 			display_name => {
-				'default' => q(Angolijska kvanza (1977–1990)),
-				'few' => q(angolijske kvanze (1977–1990)),
-				'one' => q(angolijska kvanza (1977–1990)),
-				'other' => q(angolijskih kvanzi (1977–1990)),
+				'currency' => q(Angolijska kvanza \(1977–1990\)),
+				'few' => q(angolijske kvanze \(1977–1990\)),
+				'one' => q(angolijska kvanza \(1977–1990\)),
+				'other' => q(angolijskih kvanzi \(1977–1990\)),
 			},
 		},
 		'AON' => {
 			display_name => {
-				'default' => q(Angolijska nova kvanza (1990–2000)),
+				'currency' => q(Angolijska nova kvanza \(1990–2000\)),
 				'few' => q(angolijske nove kvanze),
 				'one' => q(angolijska nova kvanza),
 				'other' => q(angolijskih novih kvanzi),
@@ -2358,15 +2357,15 @@ has 'curriencies' => (
 		},
 		'AOR' => {
 			display_name => {
-				'default' => q(Angolijska kvanza reađustado (1995–1999)),
-				'few' => q(angolijske kvanze reađustado (1995–1999)),
-				'one' => q(angolijska kvanza reađustado (1995–1999)),
-				'other' => q(angolijskih kvanzi reađustado (1995–1999)),
+				'currency' => q(Angolijska kvanza reađustado \(1995–1999\)),
+				'few' => q(angolijske kvanze reađustado \(1995–1999\)),
+				'one' => q(angolijska kvanza reađustado \(1995–1999\)),
+				'other' => q(angolijskih kvanzi reađustado \(1995–1999\)),
 			},
 		},
 		'ARA' => {
 			display_name => {
-				'default' => q(Argentinski austral),
+				'currency' => q(Argentinski austral),
 				'few' => q(argentinska australa),
 				'one' => q(argentinski austral),
 				'other' => q(argentinskih australa),
@@ -2374,7 +2373,7 @@ has 'curriencies' => (
 		},
 		'ARL' => {
 			display_name => {
-				'default' => q(Argentinski pezos lej),
+				'currency' => q(Argentinski pezos lej),
 				'few' => q(argentinska pezos leja),
 				'one' => q(argentinski pezos lej),
 				'other' => q(argentinskih pezos leja),
@@ -2382,7 +2381,7 @@ has 'curriencies' => (
 		},
 		'ARM' => {
 			display_name => {
-				'default' => q(Argentinski pezos monedo nacional),
+				'currency' => q(Argentinski pezos monedo nacional),
 				'few' => q(argentinska pezos moneda nacional),
 				'one' => q(argentinski pezos monedo nacional),
 				'other' => q(argentinskih pezos moneda nacionala),
@@ -2390,15 +2389,15 @@ has 'curriencies' => (
 		},
 		'ARP' => {
 			display_name => {
-				'default' => q(Argentinski pezo (1983–1985)),
-				'few' => q(argentinska pezosa (1983–1985)),
-				'one' => q(argentinski pezo (1983–1985)),
-				'other' => q(argentinskih pezosa (1983–1985)),
+				'currency' => q(Argentinski pezo \(1983–1985\)),
+				'few' => q(argentinska pezosa \(1983–1985\)),
+				'one' => q(argentinski pezo \(1983–1985\)),
+				'other' => q(argentinskih pezosa \(1983–1985\)),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(Argentinski pezo),
+				'currency' => q(Argentinski pezo),
 				'few' => q(argentinska pezosa),
 				'one' => q(argentinski pezos),
 				'other' => q(argentinskih pezosa),
@@ -2406,7 +2405,7 @@ has 'curriencies' => (
 		},
 		'ATS' => {
 			display_name => {
-				'default' => q(Austrijski šiling),
+				'currency' => q(Austrijski šiling),
 				'few' => q(austrijska šilinga),
 				'one' => q(austrijski šiling),
 				'other' => q(austrijskih šilinga),
@@ -2415,7 +2414,7 @@ has 'curriencies' => (
 		'AUD' => {
 			symbol => 'A$',
 			display_name => {
-				'default' => q(Australijski dolar),
+				'currency' => q(Australijski dolar),
 				'few' => q(Australijska dolara),
 				'one' => q(australijski dolar),
 				'other' => q(australijskih dolara),
@@ -2423,7 +2422,7 @@ has 'curriencies' => (
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(Arubanski florin),
+				'currency' => q(Arubanski florin),
 				'few' => q(arubanska florina),
 				'one' => q(arubanski florin),
 				'other' => q(arubanskih florina),
@@ -2431,15 +2430,15 @@ has 'curriencies' => (
 		},
 		'AZM' => {
 			display_name => {
-				'default' => q(Azerbejdžanski manat (1993–2006)),
-				'few' => q(azerbejdžanska manata (1993–2006)),
-				'one' => q(azerbejdžanski manat (1993–2006)),
-				'other' => q(azerbejdžanskih manata (1993–2006)),
+				'currency' => q(Azerbejdžanski manat \(1993–2006\)),
+				'few' => q(azerbejdžanska manata \(1993–2006\)),
+				'one' => q(azerbejdžanski manat \(1993–2006\)),
+				'other' => q(azerbejdžanskih manata \(1993–2006\)),
 			},
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(Azerbejdžanski manat),
+				'currency' => q(Azerbejdžanski manat),
 				'few' => q(azerbejdžanska manata),
 				'one' => q(azerbejdžanski manat),
 				'other' => q(azerbejdžanskih manata),
@@ -2447,7 +2446,7 @@ has 'curriencies' => (
 		},
 		'BAD' => {
 			display_name => {
-				'default' => q(Bosansko-Hercegovački dinar),
+				'currency' => q(Bosansko-Hercegovački dinar),
 				'few' => q(bosansko-hercegovačka dinara),
 				'one' => q(bosansko-hercegovački dinar),
 				'other' => q(bosansko-hercegovačkih dinara),
@@ -2456,7 +2455,7 @@ has 'curriencies' => (
 		'BAM' => {
 			symbol => 'KM',
 			display_name => {
-				'default' => q(Konvertibilna marka),
+				'currency' => q(Konvertibilna marka),
 				'few' => q(bosansko-hercegovačke konvertibilne marke),
 				'one' => q(bosansko-hercegovačka konvertibilna marka),
 				'other' => q(bosansko-hercegovačkih konvertibilnih maraka),
@@ -2464,7 +2463,7 @@ has 'curriencies' => (
 		},
 		'BAN' => {
 			display_name => {
-				'default' => q(Bosansko-hercegovački novi dinar),
+				'currency' => q(Bosansko-hercegovački novi dinar),
 				'few' => q(bosansko-hercegovačka nova dinara),
 				'one' => q(bosansko-hercegovački novi dinar),
 				'other' => q(bosansko-hercegovačkih novih dinara),
@@ -2472,7 +2471,7 @@ has 'curriencies' => (
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(Barbadoški dolar),
+				'currency' => q(Barbadoški dolar),
 				'few' => q(barbadoška dolara),
 				'one' => q(barbadoški dolar),
 				'other' => q(barbadoških dolara),
@@ -2480,7 +2479,7 @@ has 'curriencies' => (
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(Bangladeška taka),
+				'currency' => q(Bangladeška taka),
 				'few' => q(bangladeške take),
 				'one' => q(bangladeška taka),
 				'other' => q(bangladeških taka),
@@ -2488,15 +2487,15 @@ has 'curriencies' => (
 		},
 		'BEC' => {
 			display_name => {
-				'default' => q(Belgijski franak (konvertibilni)),
-				'few' => q(belgijska franka (konvertibilna)),
-				'one' => q(belgijski franak (konvertibilni)),
-				'other' => q(belgijskih franaka (konvertibilnih)),
+				'currency' => q(Belgijski franak \(konvertibilni\)),
+				'few' => q(belgijska franka \(konvertibilna\)),
+				'one' => q(belgijski franak \(konvertibilni\)),
+				'other' => q(belgijskih franaka \(konvertibilnih\)),
 			},
 		},
 		'BEF' => {
 			display_name => {
-				'default' => q(Belgijski franak),
+				'currency' => q(Belgijski franak),
 				'few' => q(belgijska franka),
 				'one' => q(belgijski franak),
 				'other' => q(belgijskih franaka),
@@ -2504,15 +2503,15 @@ has 'curriencies' => (
 		},
 		'BEL' => {
 			display_name => {
-				'default' => q(Belgijski franak (finansijski)),
-				'few' => q(belgijska franka (finansijska)),
-				'one' => q(belgijski franak (finansijski)),
-				'other' => q(belgijskih franaka (finansijskih)),
+				'currency' => q(Belgijski franak \(finansijski\)),
+				'few' => q(belgijska franka \(finansijska\)),
+				'one' => q(belgijski franak \(finansijski\)),
+				'other' => q(belgijskih franaka \(finansijskih\)),
 			},
 		},
 		'BGL' => {
 			display_name => {
-				'default' => q(Bugarski tvrdi lev),
+				'currency' => q(Bugarski tvrdi lev),
 				'few' => q(bugarska tvrda leva),
 				'one' => q(bugarski tvrdi lev),
 				'other' => q(bugarskih tvrdih leva),
@@ -2520,7 +2519,7 @@ has 'curriencies' => (
 		},
 		'BGM' => {
 			display_name => {
-				'default' => q(Bugarski socijalistički lev),
+				'currency' => q(Bugarski socijalistički lev),
 				'few' => q(bugarska socijalistička leva),
 				'one' => q(bugarski socijalistički lev),
 				'other' => q(bugarskih socijalističkih leva),
@@ -2528,7 +2527,7 @@ has 'curriencies' => (
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(Bugarski lev),
+				'currency' => q(Bugarski lev),
 				'few' => q(bugarska leva),
 				'one' => q(bugarski lev),
 				'other' => q(bugarskih leva),
@@ -2536,7 +2535,7 @@ has 'curriencies' => (
 		},
 		'BGO' => {
 			display_name => {
-				'default' => q(Stari bugarski lev),
+				'currency' => q(Stari bugarski lev),
 				'few' => q(stara bugarska leva),
 				'one' => q(stari bugarski lev),
 				'other' => q(starih bugarskih leva),
@@ -2544,7 +2543,7 @@ has 'curriencies' => (
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Bahreinski dinar),
+				'currency' => q(Bahreinski dinar),
 				'few' => q(bahreinska dinara),
 				'one' => q(bahreinski dinar),
 				'other' => q(bahreinskih dinara),
@@ -2552,7 +2551,7 @@ has 'curriencies' => (
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Burundski franak),
+				'currency' => q(Burundski franak),
 				'few' => q(burundska franka),
 				'one' => q(burundski franak),
 				'other' => q(burundskih franaka),
@@ -2560,7 +2559,7 @@ has 'curriencies' => (
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(Bermudski dolar),
+				'currency' => q(Bermudski dolar),
 				'few' => q(bermudska dolara),
 				'one' => q(bermudski dolar),
 				'other' => q(bermudskih dolara),
@@ -2568,7 +2567,7 @@ has 'curriencies' => (
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(Brunejski dolar),
+				'currency' => q(Brunejski dolar),
 				'few' => q(brunejska dolara),
 				'one' => q(brunejski dolar),
 				'other' => q(brunejskih dolara),
@@ -2576,7 +2575,7 @@ has 'curriencies' => (
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(Bolivijski Boliviano),
+				'currency' => q(Bolivijski Boliviano),
 				'few' => q(bolivijska boliviana),
 				'one' => q(bolivijski boliviano),
 				'other' => q(bolivijskih boliviana),
@@ -2584,7 +2583,7 @@ has 'curriencies' => (
 		},
 		'BOL' => {
 			display_name => {
-				'default' => q(Stari bolivijski bolivijano),
+				'currency' => q(Stari bolivijski bolivijano),
 				'few' => q(stara bolivijska bolivijana),
 				'one' => q(stari bolivijski bolivijano),
 				'other' => q(starih bolivijskih bolivijana),
@@ -2592,7 +2591,7 @@ has 'curriencies' => (
 		},
 		'BOP' => {
 			display_name => {
-				'default' => q(Bolivijski pezo),
+				'currency' => q(Bolivijski pezo),
 				'few' => q(bolivijska pezosa),
 				'one' => q(bolivijski pezo),
 				'other' => q(bolivijskih pezosa),
@@ -2600,7 +2599,7 @@ has 'curriencies' => (
 		},
 		'BOV' => {
 			display_name => {
-				'default' => q(Bolivijski mvdol),
+				'currency' => q(Bolivijski mvdol),
 				'few' => q(bolivijska mvdola),
 				'one' => q(bolivijski mvdol),
 				'other' => q(bolivijskih mvdola),
@@ -2608,15 +2607,15 @@ has 'curriencies' => (
 		},
 		'BRB' => {
 			display_name => {
-				'default' => q(Brazilski novi kruzeiro (1967–1986)),
-				'few' => q(brazilska nova kruzeira (1967–1986)),
-				'one' => q(brazilski novi kruzeiro (1967–1986)),
-				'other' => q(brazilskih novih kruzeira (1967–1986)),
+				'currency' => q(Brazilski novi kruzeiro \(1967–1986\)),
+				'few' => q(brazilska nova kruzeira \(1967–1986\)),
+				'one' => q(brazilski novi kruzeiro \(1967–1986\)),
+				'other' => q(brazilskih novih kruzeira \(1967–1986\)),
 			},
 		},
 		'BRC' => {
 			display_name => {
-				'default' => q(Brazilijski kruzado),
+				'currency' => q(Brazilijski kruzado),
 				'few' => q(brazilska kruzadosa),
 				'one' => q(brazilski kruzados),
 				'other' => q(brazilskih kruzadosa),
@@ -2624,15 +2623,15 @@ has 'curriencies' => (
 		},
 		'BRE' => {
 			display_name => {
-				'default' => q(Brazilski kruzeiro (1990–1993)),
-				'few' => q(brazilska kruzeira (1990–1993)),
-				'one' => q(brazilski kruzeiro (1990–1993)),
-				'other' => q(brazilskih kruzeira (1990–1993)),
+				'currency' => q(Brazilski kruzeiro \(1990–1993\)),
+				'few' => q(brazilska kruzeira \(1990–1993\)),
+				'one' => q(brazilski kruzeiro \(1990–1993\)),
+				'other' => q(brazilskih kruzeira \(1990–1993\)),
 			},
 		},
 		'BRL' => {
 			display_name => {
-				'default' => q(Brazilski Real),
+				'currency' => q(Brazilski Real),
 				'few' => q(brazilska reala),
 				'one' => q(brazilski real),
 				'other' => q(brazilskih reala),
@@ -2640,7 +2639,7 @@ has 'curriencies' => (
 		},
 		'BRN' => {
 			display_name => {
-				'default' => q(Brazilijski novi kruzado),
+				'currency' => q(Brazilijski novi kruzado),
 				'few' => q(brazilska nova kruzada),
 				'one' => q(brazilski novi kruzado),
 				'other' => q(brazilskih novih kruzada),
@@ -2648,7 +2647,7 @@ has 'curriencies' => (
 		},
 		'BRR' => {
 			display_name => {
-				'default' => q(Brazilski kruzeiro),
+				'currency' => q(Brazilski kruzeiro),
 				'few' => q(brazilska kruzeira),
 				'one' => q(brazilski kruzeiro),
 				'other' => q(brazilskih kruzeira),
@@ -2656,7 +2655,7 @@ has 'curriencies' => (
 		},
 		'BRZ' => {
 			display_name => {
-				'default' => q(Stari brazilski kruzeiro),
+				'currency' => q(Stari brazilski kruzeiro),
 				'few' => q(stara brazilska kruzeira),
 				'one' => q(stari brazilski kruzeiro),
 				'other' => q(starih brazilskih kruzeira),
@@ -2664,7 +2663,7 @@ has 'curriencies' => (
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(Bahamski dolar),
+				'currency' => q(Bahamski dolar),
 				'few' => q(bahamska dolara),
 				'one' => q(bahamski dolar),
 				'other' => q(bahamskih dolara),
@@ -2672,7 +2671,7 @@ has 'curriencies' => (
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(Butanski ngultrum),
+				'currency' => q(Butanski ngultrum),
 				'few' => q(butanska ngultruma),
 				'one' => q(butanski ngultrum),
 				'other' => q(butanskih ngultruma),
@@ -2680,7 +2679,7 @@ has 'curriencies' => (
 		},
 		'BUK' => {
 			display_name => {
-				'default' => q(Burmanski kjat),
+				'currency' => q(Burmanski kjat),
 				'few' => q(burmanska kjata),
 				'one' => q(burmanski kjat),
 				'other' => q(burmanskih kjata),
@@ -2688,7 +2687,7 @@ has 'curriencies' => (
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Bocvanska pula),
+				'currency' => q(Bocvanska pula),
 				'few' => q(bocvanske pule),
 				'one' => q(bocvanska pula),
 				'other' => q(bocvanskih pula),
@@ -2696,15 +2695,15 @@ has 'curriencies' => (
 		},
 		'BYB' => {
 			display_name => {
-				'default' => q(Beloruska nova rublja (1994–1999)),
-				'few' => q(beloruske nove rublja (1994–1999)),
-				'one' => q(beloruska nova rublja (1994–1999)),
-				'other' => q(beloruskih novih rublji (1994–1999)),
+				'currency' => q(Beloruska nova rublja \(1994–1999\)),
+				'few' => q(beloruske nove rublja \(1994–1999\)),
+				'one' => q(beloruska nova rublja \(1994–1999\)),
+				'other' => q(beloruskih novih rublji \(1994–1999\)),
 			},
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(Beloruska rublja),
+				'currency' => q(Beloruska rublja),
 				'few' => q(beloruske rublje),
 				'one' => q(beloruska rublja),
 				'other' => q(beloruskih rublji),
@@ -2712,7 +2711,7 @@ has 'curriencies' => (
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(Belize dolar),
+				'currency' => q(Belize dolar),
 				'few' => q(belizeanska dolara),
 				'one' => q(belizeanski dolar),
 				'other' => q(belizeanskih dolara),
@@ -2720,7 +2719,7 @@ has 'curriencies' => (
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Kanadski dolar),
+				'currency' => q(Kanadski dolar),
 				'few' => q(kanadska dolara),
 				'one' => q(kanadski dolar),
 				'other' => q(kanadskih dolara),
@@ -2728,7 +2727,7 @@ has 'curriencies' => (
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Kongolski franak),
+				'currency' => q(Kongolski franak),
 				'few' => q(kongolska franka),
 				'one' => q(kongolski franak),
 				'other' => q(kongolskih franaka),
@@ -2736,7 +2735,7 @@ has 'curriencies' => (
 		},
 		'CHE' => {
 			display_name => {
-				'default' => q(WIR evro),
+				'currency' => q(WIR evro),
 				'few' => q(WIR evra),
 				'one' => q(WIR evro),
 				'other' => q(WIR evra),
@@ -2744,7 +2743,7 @@ has 'curriencies' => (
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Švajcarski franak),
+				'currency' => q(Švajcarski franak),
 				'few' => q(švajcarska franka),
 				'one' => q(švajcarski franak),
 				'other' => q(švajcarskih franaka),
@@ -2752,7 +2751,7 @@ has 'curriencies' => (
 		},
 		'CHW' => {
 			display_name => {
-				'default' => q(WIR franak),
+				'currency' => q(WIR franak),
 				'few' => q(WIR franka),
 				'one' => q(WIR franak),
 				'other' => q(WIR franaka),
@@ -2760,7 +2759,7 @@ has 'curriencies' => (
 		},
 		'CLE' => {
 			display_name => {
-				'default' => q(Čileanski eskudo),
+				'currency' => q(Čileanski eskudo),
 				'few' => q(čileanska eskuda),
 				'one' => q(čileanski eskudo),
 				'other' => q(čileanskih eskuda),
@@ -2768,7 +2767,7 @@ has 'curriencies' => (
 		},
 		'CLF' => {
 			display_name => {
-				'default' => q(Čileovski unidades se fomento),
+				'currency' => q(Čileovski unidades se fomento),
 				'few' => q(čileanska unidades de fomenta),
 				'one' => q(čileanski unidades de fomento),
 				'other' => q(čileanski unidadesi de fomento),
@@ -2776,7 +2775,7 @@ has 'curriencies' => (
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(Čileanski pezo),
+				'currency' => q(Čileanski pezo),
 				'few' => q(čileanska pezosa),
 				'one' => q(čileanski pezo),
 				'other' => q(čileanski pezosi),
@@ -2784,7 +2783,7 @@ has 'curriencies' => (
 		},
 		'CNX' => {
 			display_name => {
-				'default' => q(Dolar kineske narodne banke),
+				'currency' => q(Dolar kineske narodne banke),
 				'few' => q(dolara kineske narodne banke),
 				'one' => q(dolar kineske narodne banke),
 				'other' => q(dolara kineske narodne banke),
@@ -2793,7 +2792,7 @@ has 'curriencies' => (
 		'CNY' => {
 			symbol => 'CN¥',
 			display_name => {
-				'default' => q(Kineski juan renminbi),
+				'currency' => q(Kineski juan renminbi),
 				'few' => q(kineska juan),
 				'one' => q(kineski juan),
 				'other' => q(kineskih juana),
@@ -2801,7 +2800,7 @@ has 'curriencies' => (
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(Kolumbijski pezo),
+				'currency' => q(Kolumbijski pezo),
 				'few' => q(kolumbijska pezosa),
 				'one' => q(kolumbijski pezo),
 				'other' => q(kolumbijskih pezosa),
@@ -2809,7 +2808,7 @@ has 'curriencies' => (
 		},
 		'COU' => {
 			display_name => {
-				'default' => q(Unidad de valorški real),
+				'currency' => q(Unidad de valorški real),
 				'few' => q(nidad de valor reala),
 				'one' => q(unidad de valorški real),
 				'other' => q(unidad de valorških reala),
@@ -2817,7 +2816,7 @@ has 'curriencies' => (
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(Kostarikanski kolon),
+				'currency' => q(Kostarikanski kolon),
 				'few' => q(kostarikanska kolona),
 				'one' => q(kostarikanski kolon),
 				'other' => q(kostarikanski koloni),
@@ -2825,7 +2824,7 @@ has 'curriencies' => (
 		},
 		'CSD' => {
 			display_name => {
-				'default' => q(Stari srpski dinar),
+				'currency' => q(Stari srpski dinar),
 				'few' => q(stara srpska dinara),
 				'one' => q(stari srpski dinar),
 				'other' => q(starih srpskih dinara),
@@ -2833,7 +2832,7 @@ has 'curriencies' => (
 		},
 		'CSK' => {
 			display_name => {
-				'default' => q(Čehoslovačka tvrda kruna),
+				'currency' => q(Čehoslovačka tvrda kruna),
 				'few' => q(čehoslovačke tvrde krune),
 				'one' => q(čehoslovačka tvrda kruna),
 				'other' => q(čehoslovačkih tvrdih kruna),
@@ -2841,7 +2840,7 @@ has 'curriencies' => (
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(Kubanski konvertibilni peso),
+				'currency' => q(Kubanski konvertibilni peso),
 				'few' => q(kubanska konvertibilna pezosa),
 				'one' => q(kubanski konvertibilni peso),
 				'other' => q(kubanski konvertibilni pezos),
@@ -2849,7 +2848,7 @@ has 'curriencies' => (
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(Kubanski pezo),
+				'currency' => q(Kubanski pezo),
 				'few' => q(kubanska pezosa),
 				'one' => q(kubanski pezos),
 				'other' => q(kubanskih pezosa),
@@ -2857,7 +2856,7 @@ has 'curriencies' => (
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Zelenortski eskudo),
+				'currency' => q(Zelenortski eskudo),
 				'few' => q(zelenortska eskuda),
 				'one' => q(zelenortski eskudo),
 				'other' => q(zelenortskih eskuda),
@@ -2865,7 +2864,7 @@ has 'curriencies' => (
 		},
 		'CYP' => {
 			display_name => {
-				'default' => q(Kiparska funta),
+				'currency' => q(Kiparska funta),
 				'few' => q(kiparske funte),
 				'one' => q(kiparska funta),
 				'other' => q(kiparskih funti),
@@ -2874,7 +2873,7 @@ has 'curriencies' => (
 		'CZK' => {
 			symbol => 'Kč',
 			display_name => {
-				'default' => q(Češka kruna),
+				'currency' => q(Češka kruna),
 				'few' => q(češke krune),
 				'one' => q(češka kruna),
 				'other' => q(čeških kruna),
@@ -2882,7 +2881,7 @@ has 'curriencies' => (
 		},
 		'DDM' => {
 			display_name => {
-				'default' => q(Istočno-nemačka marka),
+				'currency' => q(Istočno-nemačka marka),
 				'few' => q(istočno-nemačke marke),
 				'one' => q(istočno-nemačka marka),
 				'other' => q(istočno-nemačkih maraka),
@@ -2890,7 +2889,7 @@ has 'curriencies' => (
 		},
 		'DEM' => {
 			display_name => {
-				'default' => q(Nemačka marka),
+				'currency' => q(Nemačka marka),
 				'few' => q(nemačke marke),
 				'one' => q(nemačka marka),
 				'other' => q(nemačkih maraka),
@@ -2898,7 +2897,7 @@ has 'curriencies' => (
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Džibutanski franak),
+				'currency' => q(Džibutanski franak),
 				'few' => q(džibutanska franka),
 				'one' => q(džibutanski franak),
 				'other' => q(džibutanskih franaka),
@@ -2906,7 +2905,7 @@ has 'curriencies' => (
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(Danska kruna),
+				'currency' => q(Danska kruna),
 				'few' => q(danske krune),
 				'one' => q(danska kruna),
 				'other' => q(danskih kruna),
@@ -2914,7 +2913,7 @@ has 'curriencies' => (
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(Dominikanski pezo),
+				'currency' => q(Dominikanski pezo),
 				'few' => q(dominikanska pezosa),
 				'one' => q(dominikanski pezo),
 				'other' => q(dominikanskih pezosa),
@@ -2922,7 +2921,7 @@ has 'curriencies' => (
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Alžirski dinar),
+				'currency' => q(Alžirski dinar),
 				'few' => q(alžirska dinara),
 				'one' => q(alžirski dinar),
 				'other' => q(alžirskih dinara),
@@ -2930,7 +2929,7 @@ has 'curriencies' => (
 		},
 		'ECS' => {
 			display_name => {
-				'default' => q(Ekvadorski sakr),
+				'currency' => q(Ekvadorski sakr),
 				'few' => q(ekvadorska sakra),
 				'one' => q(ekvadorski sakr),
 				'other' => q(ekvadorskih sakra),
@@ -2938,7 +2937,7 @@ has 'curriencies' => (
 		},
 		'ECV' => {
 			display_name => {
-				'default' => q(Ekvadorski unidad de valor konstante),
+				'currency' => q(Ekvadorski unidad de valor konstante),
 				'few' => q(ekvadorska unidad de valor konstanta),
 				'one' => q(ekvadorski unidad de valor konstante),
 				'other' => q(ekvadorskih unidad de valor konstanta),
@@ -2946,7 +2945,7 @@ has 'curriencies' => (
 		},
 		'EEK' => {
 			display_name => {
-				'default' => q(Estonska kroon),
+				'currency' => q(Estonska kroon),
 				'few' => q(estonske krune),
 				'one' => q(estonska kruna),
 				'other' => q(estonskih kruna),
@@ -2954,7 +2953,7 @@ has 'curriencies' => (
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Egipatska funta),
+				'currency' => q(Egipatska funta),
 				'few' => q(egipatske funte),
 				'one' => q(egipatska funta),
 				'other' => q(egipatskih funti),
@@ -2962,7 +2961,7 @@ has 'curriencies' => (
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Eritrejska nakfa),
+				'currency' => q(Eritrejska nakfa),
 				'few' => q(eritrejske nakfe),
 				'one' => q(eritrejska nakfa),
 				'other' => q(eritrejskih nakfi),
@@ -2970,23 +2969,23 @@ has 'curriencies' => (
 		},
 		'ESA' => {
 			display_name => {
-				'default' => q(Španska pezeta (račun)),
-				'few' => q(španske pezete (A račun)),
-				'one' => q(španska pezeta (A račun)),
-				'other' => q(španskih pezeta (A račun)),
+				'currency' => q(Španska pezeta \(račun\)),
+				'few' => q(španske pezete \(A račun\)),
+				'one' => q(španska pezeta \(A račun\)),
+				'other' => q(španskih pezeta \(A račun\)),
 			},
 		},
 		'ESB' => {
 			display_name => {
-				'default' => q(Španska pezeta (konvertibilniračun)),
-				'few' => q(španske pezete (konvertibilan račun)),
-				'one' => q(španska pezeta (konvertibilan račun)),
-				'other' => q(španskih pezeta (konvertibilan račun)),
+				'currency' => q(Španska pezeta \(konvertibilniračun\)),
+				'few' => q(španske pezete \(konvertibilan račun\)),
+				'one' => q(španska pezeta \(konvertibilan račun\)),
+				'other' => q(španskih pezeta \(konvertibilan račun\)),
 			},
 		},
 		'ESP' => {
 			display_name => {
-				'default' => q(Španska pezeta),
+				'currency' => q(Španska pezeta),
 				'few' => q(španska pezeta),
 				'one' => q(španska pezeta),
 				'other' => q(španske pezete),
@@ -2994,7 +2993,7 @@ has 'curriencies' => (
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Etiopijski bir),
+				'currency' => q(Etiopijski bir),
 				'few' => q(etiopijska bira),
 				'one' => q(etiopijski bir),
 				'other' => q(etiopijskih bira),
@@ -3003,7 +3002,7 @@ has 'curriencies' => (
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(Evro),
+				'currency' => q(Evro),
 				'few' => q(evra),
 				'one' => q(evro),
 				'other' => q(evra),
@@ -3011,7 +3010,7 @@ has 'curriencies' => (
 		},
 		'FIM' => {
 			display_name => {
-				'default' => q(Finska marka),
+				'currency' => q(Finska marka),
 				'few' => q(finske marke),
 				'one' => q(finska marka),
 				'other' => q(finskih maraka),
@@ -3019,7 +3018,7 @@ has 'curriencies' => (
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(Fidži dolar),
+				'currency' => q(Fidži dolar),
 				'few' => q(fidži dolara),
 				'one' => q(fidži dolar),
 				'other' => q(fidži dolara),
@@ -3027,7 +3026,7 @@ has 'curriencies' => (
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(Foklandska ostrva funta),
+				'currency' => q(Foklandska ostrva funta),
 				'few' => q(folklandske funte),
 				'one' => q(folklandska funta),
 				'other' => q(folklandskih funti),
@@ -3035,7 +3034,7 @@ has 'curriencies' => (
 		},
 		'FRF' => {
 			display_name => {
-				'default' => q(Francuski franak),
+				'currency' => q(Francuski franak),
 				'few' => q(francuska franka),
 				'one' => q(francuski franak),
 				'other' => q(francuskih franaka),
@@ -3044,7 +3043,7 @@ has 'curriencies' => (
 		'GBP' => {
 			symbol => '£',
 			display_name => {
-				'default' => q(Britanska funta sterlinga),
+				'currency' => q(Britanska funta sterlinga),
 				'few' => q(britanske funte sterlinga),
 				'one' => q(britanska funta sterlinga),
 				'other' => q(britanskih funti sterlinga),
@@ -3052,7 +3051,7 @@ has 'curriencies' => (
 		},
 		'GEK' => {
 			display_name => {
-				'default' => q(Gruzijski kupon larit),
+				'currency' => q(Gruzijski kupon larit),
 				'few' => q(gruzijska kupon larita),
 				'one' => q(gruzijski kupon larit),
 				'other' => q(gruzijskih kupon larita),
@@ -3060,7 +3059,7 @@ has 'curriencies' => (
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(Gruzijski lari),
+				'currency' => q(Gruzijski lari),
 				'few' => q(gruzijska larisa),
 				'one' => q(gruzijski laris),
 				'other' => q(gruzijskih larisa),
@@ -3068,15 +3067,15 @@ has 'curriencies' => (
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Ganski cedi (1979–2007)),
-				'few' => q(ganska ceda (1979–2007)),
-				'one' => q(ganski ced (1979–2007)),
-				'other' => q(ganskih ceda (1979–2007)),
+				'currency' => q(Ganski cedi \(1979–2007\)),
+				'few' => q(ganska ceda \(1979–2007\)),
+				'one' => q(ganski ced \(1979–2007\)),
+				'other' => q(ganskih ceda \(1979–2007\)),
 			},
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(Ganski cedi),
+				'currency' => q(Ganski cedi),
 				'few' => q(ganska ceda),
 				'one' => q(ganski ced),
 				'other' => q(ganskih ceda),
@@ -3084,7 +3083,7 @@ has 'curriencies' => (
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(Gibraltarska funta),
+				'currency' => q(Gibraltarska funta),
 				'few' => q(gibraltarske funte),
 				'one' => q(gibraltarska funta),
 				'other' => q(gibraltarskih funti),
@@ -3092,7 +3091,7 @@ has 'curriencies' => (
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Gambijski dalasi),
+				'currency' => q(Gambijski dalasi),
 				'few' => q(gambijska dalasa),
 				'one' => q(gambijski dalas),
 				'other' => q(gambijskih dalasa),
@@ -3100,7 +3099,7 @@ has 'curriencies' => (
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(Gvinejski franak),
+				'currency' => q(Gvinejski franak),
 				'few' => q(gvinejska franka),
 				'one' => q(gvinejski franak),
 				'other' => q(gvinejskih franaka),
@@ -3108,7 +3107,7 @@ has 'curriencies' => (
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Gvinejski sili),
+				'currency' => q(Gvinejski sili),
 				'few' => q(gvinejska sila),
 				'one' => q(gvinejski sili),
 				'other' => q(gvinejskih sila),
@@ -3116,7 +3115,7 @@ has 'curriencies' => (
 		},
 		'GQE' => {
 			display_name => {
-				'default' => q(Ekvatorijalno-gvinejski ekvele),
+				'currency' => q(Ekvatorijalno-gvinejski ekvele),
 				'few' => q(ekvatorijalno-gvinejska ekvela),
 				'one' => q(ekvatorijalno-gvinejski ekvele),
 				'other' => q(ekvatorijalno-gvinejskih ekvela),
@@ -3124,7 +3123,7 @@ has 'curriencies' => (
 		},
 		'GRD' => {
 			display_name => {
-				'default' => q(Grčka drahma),
+				'currency' => q(Grčka drahma),
 				'few' => q(grčke drahme),
 				'one' => q(grčka drahma),
 				'other' => q(grčkih drahmi),
@@ -3132,7 +3131,7 @@ has 'curriencies' => (
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(Gvatemalski kvecal),
+				'currency' => q(Gvatemalski kvecal),
 				'few' => q(gvatemalska kvecala),
 				'one' => q(gvatemalski kvecal),
 				'other' => q(gvatemalskih kvecala),
@@ -3140,7 +3139,7 @@ has 'curriencies' => (
 		},
 		'GWE' => {
 			display_name => {
-				'default' => q(Portugalska gvineja eskudo),
+				'currency' => q(Portugalska gvineja eskudo),
 				'few' => q(portugalsko-gvinejska eskuda),
 				'one' => q(portugalsko-gvinejski eskudo),
 				'other' => q(portugalsko-gvinejskih eskuda),
@@ -3148,7 +3147,7 @@ has 'curriencies' => (
 		},
 		'GWP' => {
 			display_name => {
-				'default' => q(Gvineja Bisao Pezo),
+				'currency' => q(Gvineja Bisao Pezo),
 				'few' => q(gvineja-bisaoška pezosa),
 				'one' => q(gvineja-bisaoški pezo),
 				'other' => q(gvineja-bisaoških pezosa),
@@ -3156,7 +3155,7 @@ has 'curriencies' => (
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(Gujanski dolar),
+				'currency' => q(Gujanski dolar),
 				'few' => q(gvajanska dolara),
 				'one' => q(gvajanski dolar),
 				'other' => q(gvajanskih dolara),
@@ -3165,7 +3164,7 @@ has 'curriencies' => (
 		'HKD' => {
 			symbol => 'HK$',
 			display_name => {
-				'default' => q(Hongkonški dolar),
+				'currency' => q(Hongkonški dolar),
 				'few' => q(hongkonška dolara),
 				'one' => q(hongkonški dolar),
 				'other' => q(hongkonških dolara),
@@ -3173,7 +3172,7 @@ has 'curriencies' => (
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(Honduraška lempira),
+				'currency' => q(Honduraška lempira),
 				'few' => q(honduraška lempira),
 				'one' => q(honduraški lempir),
 				'other' => q(honduraških lempira),
@@ -3181,7 +3180,7 @@ has 'curriencies' => (
 		},
 		'HRD' => {
 			display_name => {
-				'default' => q(Hrvatski dinar),
+				'currency' => q(Hrvatski dinar),
 				'few' => q(hrvatska dinara),
 				'one' => q(hrvatski dinar),
 				'other' => q(hrvatskih dinara),
@@ -3189,7 +3188,7 @@ has 'curriencies' => (
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(Hrvatska kuna),
+				'currency' => q(Hrvatska kuna),
 				'few' => q(hrvatske kune),
 				'one' => q(hrvatska kuna),
 				'other' => q(hrvatskih kuna),
@@ -3197,7 +3196,7 @@ has 'curriencies' => (
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(Haićanski gurd),
+				'currency' => q(Haićanski gurd),
 				'few' => q(haićanska gurda),
 				'one' => q(haićanski gurd),
 				'other' => q(haićanskih gurda),
@@ -3205,7 +3204,7 @@ has 'curriencies' => (
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(Mađarska forinta),
+				'currency' => q(Mađarska forinta),
 				'few' => q(mađarske forinte),
 				'one' => q(mađarska forinta),
 				'other' => q(mađarskih forinti),
@@ -3213,7 +3212,7 @@ has 'curriencies' => (
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(Indonežanska rupija),
+				'currency' => q(Indonežanska rupija),
 				'few' => q(indonežanske rupije),
 				'one' => q(indonežanska rupija),
 				'other' => q(indonežanskih rupija),
@@ -3221,7 +3220,7 @@ has 'curriencies' => (
 		},
 		'IEP' => {
 			display_name => {
-				'default' => q(Irska funta),
+				'currency' => q(Irska funta),
 				'few' => q(irske funte),
 				'one' => q(irska funta),
 				'other' => q(irskih funti),
@@ -3229,7 +3228,7 @@ has 'curriencies' => (
 		},
 		'ILP' => {
 			display_name => {
-				'default' => q(Izraelska funta),
+				'currency' => q(Izraelska funta),
 				'few' => q(izraelske funte),
 				'one' => q(izraelska funta),
 				'other' => q(izraelskih funti),
@@ -3237,7 +3236,7 @@ has 'curriencies' => (
 		},
 		'ILR' => {
 			display_name => {
-				'default' => q(Stari izraelski šekeli),
+				'currency' => q(Stari izraelski šekeli),
 				'few' => q(stari izraelski šekeli),
 				'one' => q(stari izraelski šekeli),
 				'other' => q(stari izraelski šekeli),
@@ -3246,7 +3245,7 @@ has 'curriencies' => (
 		'ILS' => {
 			symbol => '₪',
 			display_name => {
-				'default' => q(Izraelski novi šekel),
+				'currency' => q(Izraelski novi šekel),
 				'few' => q(izraelska nova šekela),
 				'one' => q(izraelski novi šekel),
 				'other' => q(izraelskih novih šekela),
@@ -3255,7 +3254,7 @@ has 'curriencies' => (
 		'INR' => {
 			symbol => '₹',
 			display_name => {
-				'default' => q(Indijska rupija),
+				'currency' => q(Indijska rupija),
 				'few' => q(indijske rupije),
 				'one' => q(indijska rupija),
 				'other' => q(indijskih rupija),
@@ -3263,7 +3262,7 @@ has 'curriencies' => (
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(Irački dinar),
+				'currency' => q(Irački dinar),
 				'few' => q(iračka dinara),
 				'one' => q(irački dinar),
 				'other' => q(iračkih dinara),
@@ -3271,7 +3270,7 @@ has 'curriencies' => (
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(Iranski rijal),
+				'currency' => q(Iranski rijal),
 				'few' => q(iranska rijala),
 				'one' => q(iranski rijal),
 				'other' => q(iranskih rijala),
@@ -3279,7 +3278,7 @@ has 'curriencies' => (
 		},
 		'ISJ' => {
 			display_name => {
-				'default' => q(Stara islandska kruna),
+				'currency' => q(Stara islandska kruna),
 				'few' => q(stara islandska kruna),
 				'one' => q(stara islandska kruna),
 				'other' => q(stara islandska kruna),
@@ -3287,7 +3286,7 @@ has 'curriencies' => (
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(Islandska kruna),
+				'currency' => q(Islandska kruna),
 				'few' => q(islandske krune),
 				'one' => q(islandska kruna),
 				'other' => q(islandskih kruna),
@@ -3295,7 +3294,7 @@ has 'curriencies' => (
 		},
 		'ITL' => {
 			display_name => {
-				'default' => q(Italijanska lira),
+				'currency' => q(Italijanska lira),
 				'few' => q(italijanske lire),
 				'one' => q(italijanska lira),
 				'other' => q(italijanske lire),
@@ -3303,7 +3302,7 @@ has 'curriencies' => (
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(Jamajkanski dolar),
+				'currency' => q(Jamajkanski dolar),
 				'few' => q(jamajkanska dolara),
 				'one' => q(jamajkanski dolar),
 				'other' => q(jamajkanskix dolara),
@@ -3311,7 +3310,7 @@ has 'curriencies' => (
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(Jordanski dinar),
+				'currency' => q(Jordanski dinar),
 				'few' => q(jordanska dinara),
 				'one' => q(jordanski dinar),
 				'other' => q(jordanskih dinara),
@@ -3320,7 +3319,7 @@ has 'curriencies' => (
 		'JPY' => {
 			symbol => '¥',
 			display_name => {
-				'default' => q(Japanski jen),
+				'currency' => q(Japanski jen),
 				'few' => q(japanska jena),
 				'one' => q(japanski jen),
 				'other' => q(japanskih jena),
@@ -3328,7 +3327,7 @@ has 'curriencies' => (
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Kenijski šiling),
+				'currency' => q(Kenijski šiling),
 				'few' => q(kenijska šilinga),
 				'one' => q(kenijski šiling),
 				'other' => q(kenijskih šilinga),
@@ -3336,7 +3335,7 @@ has 'curriencies' => (
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(Kirgistanski som),
+				'currency' => q(Kirgistanski som),
 				'few' => q(kirgistanska soma),
 				'one' => q(kirgistanski som),
 				'other' => q(kirgistanskih soma),
@@ -3344,7 +3343,7 @@ has 'curriencies' => (
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(Kambodžanski rijel),
+				'currency' => q(Kambodžanski rijel),
 				'few' => q(kambodžanska rijela),
 				'one' => q(kambodžanski rijel),
 				'other' => q(kambodžanskih rijela),
@@ -3352,7 +3351,7 @@ has 'curriencies' => (
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Komorski franak),
+				'currency' => q(Komorski franak),
 				'few' => q(komorska franka),
 				'one' => q(komorski franak),
 				'other' => q(komorskih franaka),
@@ -3360,7 +3359,7 @@ has 'curriencies' => (
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(Severnokorejski von),
+				'currency' => q(Severnokorejski von),
 				'few' => q(severnokorejska vona),
 				'one' => q(severnokorejski von),
 				'other' => q(severnokorejskih vona),
@@ -3368,7 +3367,7 @@ has 'curriencies' => (
 		},
 		'KRH' => {
 			display_name => {
-				'default' => q(Južnokorejski hvan),
+				'currency' => q(Južnokorejski hvan),
 				'few' => q(južnokorejska hvana),
 				'one' => q(južnokorejski hvan),
 				'other' => q(južnokorejskih hvana),
@@ -3376,7 +3375,7 @@ has 'curriencies' => (
 		},
 		'KRO' => {
 			display_name => {
-				'default' => q(Stari južnokorejski von),
+				'currency' => q(Stari južnokorejski von),
 				'few' => q(stara južnokorejska vona),
 				'one' => q(stari južnokorejski von),
 				'other' => q(starih južnokorejskih vona),
@@ -3385,7 +3384,7 @@ has 'curriencies' => (
 		'KRW' => {
 			symbol => '₩',
 			display_name => {
-				'default' => q(Južnokorejski Von),
+				'currency' => q(Južnokorejski Von),
 				'few' => q(južnokorejska vona),
 				'one' => q(južnokorejski von),
 				'other' => q(južnokorejskih vona),
@@ -3393,7 +3392,7 @@ has 'curriencies' => (
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(Kuvajtski dinar),
+				'currency' => q(Kuvajtski dinar),
 				'few' => q(kuvajtska dinara),
 				'one' => q(kuvajtski dinar),
 				'other' => q(kuvajtskih dinara),
@@ -3401,7 +3400,7 @@ has 'curriencies' => (
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(Kajmanska ostrva dolar),
+				'currency' => q(Kajmanska ostrva dolar),
 				'few' => q(kajmanska dolara),
 				'one' => q(kajmanski dolar),
 				'other' => q(kajmanskih dolara),
@@ -3409,7 +3408,7 @@ has 'curriencies' => (
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(Kazahstanski tendž),
+				'currency' => q(Kazahstanski tendž),
 				'few' => q(kazahstanske tendže),
 				'one' => q(kazahstanska tendža),
 				'other' => q(kazahstanskih tendži),
@@ -3417,7 +3416,7 @@ has 'curriencies' => (
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(Laoški kip),
+				'currency' => q(Laoški kip),
 				'few' => q(laoška kipa),
 				'one' => q(laoški kip),
 				'other' => q(laoški kipi),
@@ -3425,7 +3424,7 @@ has 'curriencies' => (
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(Libanska funta),
+				'currency' => q(Libanska funta),
 				'few' => q(libanske funte),
 				'one' => q(libanska funta),
 				'other' => q(libanskih funti),
@@ -3433,7 +3432,7 @@ has 'curriencies' => (
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(Šrilankanska rupija),
+				'currency' => q(Šrilankanska rupija),
 				'few' => q(šrilankanske rupije),
 				'one' => q(šrilankanska rupija),
 				'other' => q(šrilankanskih rupija),
@@ -3441,7 +3440,7 @@ has 'curriencies' => (
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Liberijski dolar),
+				'currency' => q(Liberijski dolar),
 				'few' => q(liberijska dolara),
 				'one' => q(liberijski dolar),
 				'other' => q(liberijskih dolara),
@@ -3449,7 +3448,7 @@ has 'curriencies' => (
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Lesoto loti),
+				'currency' => q(Lesoto loti),
 				'few' => q(lesotska lotisa),
 				'one' => q(lesotski lotis),
 				'other' => q(lesotskih lotisa),
@@ -3457,7 +3456,7 @@ has 'curriencies' => (
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(Litvanski litas),
+				'currency' => q(Litvanski litas),
 				'few' => q(litvanska litasa),
 				'one' => q(litvanski litas),
 				'other' => q(litvanskih litasa),
@@ -3465,7 +3464,7 @@ has 'curriencies' => (
 		},
 		'LTT' => {
 			display_name => {
-				'default' => q(Litvanski talonas),
+				'currency' => q(Litvanski talonas),
 				'few' => q(litvanska talonasa),
 				'one' => q(litvanski talonas),
 				'other' => q(litvanskih talonasa),
@@ -3473,7 +3472,7 @@ has 'curriencies' => (
 		},
 		'LUC' => {
 			display_name => {
-				'default' => q(Luksemburški konvertibilni franak),
+				'currency' => q(Luksemburški konvertibilni franak),
 				'few' => q(luksemburška konvertibilna franka),
 				'one' => q(luksemburški konvertibilni franak),
 				'other' => q(luksemburških konvertibilnih franaka),
@@ -3481,7 +3480,7 @@ has 'curriencies' => (
 		},
 		'LUF' => {
 			display_name => {
-				'default' => q(Luksemburški franak),
+				'currency' => q(Luksemburški franak),
 				'few' => q(luksemburška franka),
 				'one' => q(luksemburški franak),
 				'other' => q(luksemburški franci),
@@ -3489,7 +3488,7 @@ has 'curriencies' => (
 		},
 		'LUL' => {
 			display_name => {
-				'default' => q(Luksemburški finansijski franak),
+				'currency' => q(Luksemburški finansijski franak),
 				'few' => q(luksemburška finansijska franka),
 				'one' => q(luksemburški finansijski franak),
 				'other' => q(luksemburških finansijskih franaka),
@@ -3497,7 +3496,7 @@ has 'curriencies' => (
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(Latvijski lati),
+				'currency' => q(Latvijski lati),
 				'few' => q(latvijska lata),
 				'one' => q(latvijski lat),
 				'other' => q(latvijskih lata),
@@ -3505,7 +3504,7 @@ has 'curriencies' => (
 		},
 		'LVR' => {
 			display_name => {
-				'default' => q(Latvijska rublja),
+				'currency' => q(Latvijska rublja),
 				'few' => q(latvijske rublje),
 				'one' => q(latvijska rublja),
 				'other' => q(latvijskih rublji),
@@ -3513,7 +3512,7 @@ has 'curriencies' => (
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Libijski dinar),
+				'currency' => q(Libijski dinar),
 				'few' => q(libijska dinara),
 				'one' => q(libijski dinar),
 				'other' => q(libijskih dinara),
@@ -3521,7 +3520,7 @@ has 'curriencies' => (
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Marokanski dirham),
+				'currency' => q(Marokanski dirham),
 				'few' => q(marokanske dirhame),
 				'one' => q(marokanska dirhama),
 				'other' => q(marokanskih dirhama),
@@ -3529,7 +3528,7 @@ has 'curriencies' => (
 		},
 		'MAF' => {
 			display_name => {
-				'default' => q(Marokanski franak),
+				'currency' => q(Marokanski franak),
 				'few' => q(marokanska franka),
 				'one' => q(marokanski franak),
 				'other' => q(marokanskih franaka),
@@ -3537,7 +3536,7 @@ has 'curriencies' => (
 		},
 		'MCF' => {
 			display_name => {
-				'default' => q(Monegaskanski franak),
+				'currency' => q(Monegaskanski franak),
 				'few' => q(monegaskanska franka),
 				'one' => q(monegaskanski franak),
 				'other' => q(monegaskanskih franaka),
@@ -3545,7 +3544,7 @@ has 'curriencies' => (
 		},
 		'MDC' => {
 			display_name => {
-				'default' => q(Moldovanski kupon),
+				'currency' => q(Moldovanski kupon),
 				'few' => q(moldovanska kupona),
 				'one' => q(moldovanski kupon),
 				'other' => q(moldovanskih kupona),
@@ -3553,7 +3552,7 @@ has 'curriencies' => (
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(Moldavski lej),
+				'currency' => q(Moldavski lej),
 				'few' => q(moldavska leja),
 				'one' => q(moldavski lej),
 				'other' => q(moldavskih leja),
@@ -3561,7 +3560,7 @@ has 'curriencies' => (
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Malagasijski ariari),
+				'currency' => q(Malagasijski ariari),
 				'few' => q(malagasijska ariarija),
 				'one' => q(malagasijski ariari),
 				'other' => q(malagasijskih ariarija),
@@ -3569,7 +3568,7 @@ has 'curriencies' => (
 		},
 		'MGF' => {
 			display_name => {
-				'default' => q(Malagasijski franak),
+				'currency' => q(Malagasijski franak),
 				'few' => q(malagašajska franka),
 				'one' => q(malagašajski franak),
 				'other' => q(malagašajski franci),
@@ -3577,7 +3576,7 @@ has 'curriencies' => (
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(Makedonski denar),
+				'currency' => q(Makedonski denar),
 				'few' => q(makedonska denara),
 				'one' => q(makedonski denar),
 				'other' => q(makedonskih dinara),
@@ -3585,7 +3584,7 @@ has 'curriencies' => (
 		},
 		'MKN' => {
 			display_name => {
-				'default' => q(Stari makedonski denar),
+				'currency' => q(Stari makedonski denar),
 				'few' => q(stara makedonska denara),
 				'one' => q(stari makedonski denar),
 				'other' => q(starih makedonskih denara),
@@ -3593,7 +3592,7 @@ has 'curriencies' => (
 		},
 		'MLF' => {
 			display_name => {
-				'default' => q(Malijanski franak),
+				'currency' => q(Malijanski franak),
 				'few' => q(malijska franka),
 				'one' => q(malijski franak),
 				'other' => q(malijskih franaka),
@@ -3601,7 +3600,7 @@ has 'curriencies' => (
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(Mjanmarski kjat),
+				'currency' => q(Mjanmarski kjat),
 				'few' => q(mjanmarska kjata),
 				'one' => q(mjanmarski kjat),
 				'other' => q(mjanmarskih kjata),
@@ -3609,7 +3608,7 @@ has 'curriencies' => (
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(Mongolski tugrik),
+				'currency' => q(Mongolski tugrik),
 				'few' => q(mongolska tugrika),
 				'one' => q(mongolski tugrik),
 				'other' => q(mongolskih tugrika),
@@ -3617,7 +3616,7 @@ has 'curriencies' => (
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(Makaniška pataka),
+				'currency' => q(Makaniška pataka),
 				'few' => q(makaneške patake),
 				'one' => q(makaneška pataka),
 				'other' => q(makaneških pataka),
@@ -3625,7 +3624,7 @@ has 'curriencies' => (
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Mauritanijska ogija),
+				'currency' => q(Mauritanijska ogija),
 				'few' => q(mauritanijske ogije),
 				'one' => q(mauritanijska ogija),
 				'other' => q(mauritanijskih ogija),
@@ -3633,7 +3632,7 @@ has 'curriencies' => (
 		},
 		'MTL' => {
 			display_name => {
-				'default' => q(Malteška lira),
+				'currency' => q(Malteška lira),
 				'few' => q(malteške lire),
 				'one' => q(malteška lira),
 				'other' => q(malteških lira),
@@ -3641,7 +3640,7 @@ has 'curriencies' => (
 		},
 		'MTP' => {
 			display_name => {
-				'default' => q(Malteška funta),
+				'currency' => q(Malteška funta),
 				'few' => q(malteške funte),
 				'one' => q(malteška funta),
 				'other' => q(malteških funti),
@@ -3649,7 +3648,7 @@ has 'curriencies' => (
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Mauricijska rupija),
+				'currency' => q(Mauricijska rupija),
 				'few' => q(mauricijske rupije),
 				'one' => q(mauricijska rupija),
 				'other' => q(mauricijskih rupija),
@@ -3657,7 +3656,7 @@ has 'curriencies' => (
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(Maldivska rufija),
+				'currency' => q(Maldivska rufija),
 				'few' => q(maldivske rufije),
 				'one' => q(maldivska rufija),
 				'other' => q(maldivskih rufija),
@@ -3665,7 +3664,7 @@ has 'curriencies' => (
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Malavijska kvača),
+				'currency' => q(Malavijska kvača),
 				'few' => q(malavijske kvače),
 				'one' => q(malavijska kvača),
 				'other' => q(malavijskih kvača),
@@ -3673,7 +3672,7 @@ has 'curriencies' => (
 		},
 		'MXN' => {
 			display_name => {
-				'default' => q(Meksički pezo),
+				'currency' => q(Meksički pezo),
 				'few' => q(meksička pezosa),
 				'one' => q(meksički pezo),
 				'other' => q(meksičkih pezosa),
@@ -3681,7 +3680,7 @@ has 'curriencies' => (
 		},
 		'MXP' => {
 			display_name => {
-				'default' => q(Meksički srebrni pezo (1861–1992)),
+				'currency' => q(Meksički srebrni pezo \(1861–1992\)),
 				'few' => q(meksička srebrna pezosa),
 				'one' => q(meksički srebrni pezo),
 				'other' => q(meksičkih srebrnih pezosa),
@@ -3689,7 +3688,7 @@ has 'curriencies' => (
 		},
 		'MXV' => {
 			display_name => {
-				'default' => q(Meksički unidad de inversion (UDI)),
+				'currency' => q(Meksički unidad de inversion \(UDI\)),
 				'few' => q(meksička unidads de inverziona),
 				'one' => q(meksički unidads de inverzion),
 				'other' => q(meksičkih unidads de inverziona),
@@ -3697,7 +3696,7 @@ has 'curriencies' => (
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(Malezijski ringgit),
+				'currency' => q(Malezijski ringgit),
 				'few' => q(malezijska ringgita),
 				'one' => q(malezijski ringgit),
 				'other' => q(malezijskih ringgita),
@@ -3705,7 +3704,7 @@ has 'curriencies' => (
 		},
 		'MZE' => {
 			display_name => {
-				'default' => q(Mozambijski eskudo),
+				'currency' => q(Mozambijski eskudo),
 				'few' => q(mozambijska eskuda),
 				'one' => q(mozambijski eskudo),
 				'other' => q(mozambijskih eskuda),
@@ -3713,7 +3712,7 @@ has 'curriencies' => (
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Stari mozambijski metikal),
+				'currency' => q(Stari mozambijski metikal),
 				'few' => q(stara mozambijska metikala),
 				'one' => q(stari mozambijski metikal),
 				'other' => q(starih mozambijskih metikala),
@@ -3721,7 +3720,7 @@ has 'curriencies' => (
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(Mozambijski metikal),
+				'currency' => q(Mozambijski metikal),
 				'few' => q(mozambijska metikala),
 				'one' => q(mozambijski metikal),
 				'other' => q(mozambijskih metikala),
@@ -3729,7 +3728,7 @@ has 'curriencies' => (
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Namibijski dolar),
+				'currency' => q(Namibijski dolar),
 				'few' => q(namibijska dolara),
 				'one' => q(namibijski dolar),
 				'other' => q(namibijskih dolara),
@@ -3737,7 +3736,7 @@ has 'curriencies' => (
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Nigerijska naira),
+				'currency' => q(Nigerijska naira),
 				'few' => q(nigerijske naire),
 				'one' => q(nigerijska naira),
 				'other' => q(nigerijskih naira),
@@ -3745,7 +3744,7 @@ has 'curriencies' => (
 		},
 		'NIC' => {
 			display_name => {
-				'default' => q(Nikaragvanska kordoba),
+				'currency' => q(Nikaragvanska kordoba),
 				'few' => q(nikaragvanske kordobe),
 				'one' => q(nikaragvanska kordoba),
 				'other' => q(nikaragvanskih kordoba),
@@ -3753,7 +3752,7 @@ has 'curriencies' => (
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(Nikaragvanska zlatna kordoba),
+				'currency' => q(Nikaragvanska zlatna kordoba),
 				'few' => q(nikaragvanske zlatne kordobe),
 				'one' => q(nikaragvanska zlatna kordoba),
 				'other' => q(nikaragvanskih zlatnih kordoba),
@@ -3761,7 +3760,7 @@ has 'curriencies' => (
 		},
 		'NLG' => {
 			display_name => {
-				'default' => q(Holandski gulden),
+				'currency' => q(Holandski gulden),
 				'few' => q(holandska guldena),
 				'one' => q(holandski gulden),
 				'other' => q(holandskih guldena),
@@ -3769,7 +3768,7 @@ has 'curriencies' => (
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(Norveška kruna),
+				'currency' => q(Norveška kruna),
 				'few' => q(norveške krune),
 				'one' => q(norveška kruna),
 				'other' => q(norveških kruna),
@@ -3777,7 +3776,7 @@ has 'curriencies' => (
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(Nepalska rupija),
+				'currency' => q(Nepalska rupija),
 				'few' => q(nepalske rupije),
 				'one' => q(nepalska rupija),
 				'other' => q(nepalskih rupija),
@@ -3785,7 +3784,7 @@ has 'curriencies' => (
 		},
 		'NZD' => {
 			display_name => {
-				'default' => q(Novozelandski dolar),
+				'currency' => q(Novozelandski dolar),
 				'few' => q(novozelandska dolara),
 				'one' => q(novozelandski dolar),
 				'other' => q(novozelandskih dolara),
@@ -3793,7 +3792,7 @@ has 'curriencies' => (
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(Omanski rijal),
+				'currency' => q(Omanski rijal),
 				'few' => q(omanska rijala),
 				'one' => q(omanski rijal),
 				'other' => q(omanskih rijala),
@@ -3801,7 +3800,7 @@ has 'curriencies' => (
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(Panamska balboa),
+				'currency' => q(Panamska balboa),
 				'few' => q(panamske balboe),
 				'one' => q(panamska balboa),
 				'other' => q(panamskih balboa),
@@ -3809,7 +3808,7 @@ has 'curriencies' => (
 		},
 		'PEI' => {
 			display_name => {
-				'default' => q(Peruanski inti),
+				'currency' => q(Peruanski inti),
 				'few' => q(peruvijska intija),
 				'one' => q(peruvijski inti),
 				'other' => q(peruvijskih intija),
@@ -3817,7 +3816,7 @@ has 'curriencies' => (
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(Peruanski nuevo sol),
+				'currency' => q(Peruanski nuevo sol),
 				'few' => q(peruanska nuevo sola),
 				'one' => q(peruanski nuevo sol),
 				'other' => q(peruanskih nuevo sola),
@@ -3825,7 +3824,7 @@ has 'curriencies' => (
 		},
 		'PES' => {
 			display_name => {
-				'default' => q(Peruanski sol),
+				'currency' => q(Peruanski sol),
 				'few' => q(peruanska sola),
 				'one' => q(peruanski sol),
 				'other' => q(peruanskih sola),
@@ -3833,7 +3832,7 @@ has 'curriencies' => (
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(Papuanska kina),
+				'currency' => q(Papuanska kina),
 				'few' => q(papuanske kine),
 				'one' => q(papuanska kina),
 				'other' => q(papuanskih kina),
@@ -3841,7 +3840,7 @@ has 'curriencies' => (
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(Filipinski pezo),
+				'currency' => q(Filipinski pezo),
 				'few' => q(filipinska pezosa),
 				'one' => q(filipinski pezo),
 				'other' => q(filipinskih pezosa),
@@ -3849,7 +3848,7 @@ has 'curriencies' => (
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(Pakistanska rupija),
+				'currency' => q(Pakistanska rupija),
 				'few' => q(pakistanske rupije),
 				'one' => q(pakistanska rupija),
 				'other' => q(pakistanskih rupija),
@@ -3858,7 +3857,7 @@ has 'curriencies' => (
 		'PLN' => {
 			symbol => 'zl',
 			display_name => {
-				'default' => q(Poljski zlot),
+				'currency' => q(Poljski zlot),
 				'few' => q(poljska zlota),
 				'one' => q(poljski zlot),
 				'other' => q(poljskih zlota),
@@ -3866,15 +3865,15 @@ has 'curriencies' => (
 		},
 		'PLZ' => {
 			display_name => {
-				'default' => q(Poljski zloti (1950–1995)),
-				'few' => q(poljska zlota (1950–1995)),
-				'one' => q(poljski zlot (1950–1995)),
-				'other' => q(poljskih zlota (1950–1995)),
+				'currency' => q(Poljski zloti \(1950–1995\)),
+				'few' => q(poljska zlota \(1950–1995\)),
+				'one' => q(poljski zlot \(1950–1995\)),
+				'other' => q(poljskih zlota \(1950–1995\)),
 			},
 		},
 		'PTE' => {
 			display_name => {
-				'default' => q(Portugalski eskudo),
+				'currency' => q(Portugalski eskudo),
 				'few' => q(portugalska eskuda),
 				'one' => q(portugalski eskudo),
 				'other' => q(portugalskih eskuda),
@@ -3882,7 +3881,7 @@ has 'curriencies' => (
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(Paragvajski guarni),
+				'currency' => q(Paragvajski guarni),
 				'few' => q(paragvajska gvaranija),
 				'one' => q(paragvajski gvaranij),
 				'other' => q(paragvajskih gvaranija),
@@ -3890,7 +3889,7 @@ has 'curriencies' => (
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(Katarški rijal),
+				'currency' => q(Katarški rijal),
 				'few' => q(katarska rijala),
 				'one' => q(katarski rijal),
 				'other' => q(katarskih rijala),
@@ -3898,7 +3897,7 @@ has 'curriencies' => (
 		},
 		'RHD' => {
 			display_name => {
-				'default' => q(Rodejskidolar),
+				'currency' => q(Rodejskidolar),
 				'few' => q(rodežanska dolara),
 				'one' => q(rodežanski dolar),
 				'other' => q(rodežanskih dolara),
@@ -3906,7 +3905,7 @@ has 'curriencies' => (
 		},
 		'ROL' => {
 			display_name => {
-				'default' => q(Rumunski lej),
+				'currency' => q(Rumunski lej),
 				'few' => q(rumunska leja),
 				'one' => q(rumunski lej),
 				'other' => q(rumunskih leja),
@@ -3914,16 +3913,16 @@ has 'curriencies' => (
 		},
 		'RON' => {
 			display_name => {
-				'default' => q(Rumunski lej (1952–2006)),
-				'few' => q(rumunska leja (1952–2006)),
-				'one' => q(rumunski lej (1952–2006)),
-				'other' => q(rumunskih leja (1952–2006)),
+				'currency' => q(Rumunski lej \(1952–2006\)),
+				'few' => q(rumunska leja \(1952–2006\)),
+				'one' => q(rumunski lej \(1952–2006\)),
+				'other' => q(rumunskih leja \(1952–2006\)),
 			},
 		},
 		'RSD' => {
 			symbol => 'din.',
 			display_name => {
-				'default' => q(Srpski dinar),
+				'currency' => q(Srpski dinar),
 				'few' => q(srpska dinara),
 				'one' => q(srpski dinar),
 				'other' => q(srpskih dinara),
@@ -3931,7 +3930,7 @@ has 'curriencies' => (
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(Ruska rublja),
+				'currency' => q(Ruska rublja),
 				'few' => q(ruske rublje),
 				'one' => q(ruska rublja),
 				'other' => q(ruskih rublji),
@@ -3939,15 +3938,15 @@ has 'curriencies' => (
 		},
 		'RUR' => {
 			display_name => {
-				'default' => q(Ruska rublja (1991–1998)),
-				'few' => q(ruske rublje (1991–1998)),
-				'one' => q(ruska rublja (1991–1998)),
-				'other' => q(ruskih rublji (1991–1998)),
+				'currency' => q(Ruska rublja \(1991–1998\)),
+				'few' => q(ruske rublje \(1991–1998\)),
+				'one' => q(ruska rublja \(1991–1998\)),
+				'other' => q(ruskih rublji \(1991–1998\)),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Ruandski franak),
+				'currency' => q(Ruandski franak),
 				'few' => q(ruandska franka),
 				'one' => q(ruandski franak),
 				'other' => q(ruandskih franaka),
@@ -3955,7 +3954,7 @@ has 'curriencies' => (
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Saudijski rijal),
+				'currency' => q(Saudijski rijal),
 				'few' => q(saudijska rijala),
 				'one' => q(saudijski rijal),
 				'other' => q(saudijskih rijala),
@@ -3963,7 +3962,7 @@ has 'curriencies' => (
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(Solomonsko-ostrvski dolar),
+				'currency' => q(Solomonsko-ostrvski dolar),
 				'few' => q(solomonsko-ostrvska dolara),
 				'one' => q(solomonsko-ostrvski dolar),
 				'other' => q(solomonsko-ostrvskih dolara),
@@ -3971,7 +3970,7 @@ has 'curriencies' => (
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Sejšelska rupija),
+				'currency' => q(Sejšelska rupija),
 				'few' => q(sejšelske rupije),
 				'one' => q(sejšelska rupija),
 				'other' => q(sejšelskih rupija),
@@ -3979,7 +3978,7 @@ has 'curriencies' => (
 		},
 		'SDD' => {
 			display_name => {
-				'default' => q(Stari sudanski dinar),
+				'currency' => q(Stari sudanski dinar),
 				'few' => q(stara sudanska dinara),
 				'one' => q(stari sudanski dinar),
 				'other' => q(starih sudanskih dinara),
@@ -3987,7 +3986,7 @@ has 'curriencies' => (
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Sudanska funta),
+				'currency' => q(Sudanska funta),
 				'few' => q(sudanske funte),
 				'one' => q(sudanska funta),
 				'other' => q(sudanskih funti),
@@ -3995,7 +3994,7 @@ has 'curriencies' => (
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(Stara sudanska funta),
+				'currency' => q(Stara sudanska funta),
 				'few' => q(stare sudanske funte),
 				'one' => q(stara sudanska funta),
 				'other' => q(starih sudanskih funti),
@@ -4003,7 +4002,7 @@ has 'curriencies' => (
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(Švedska kruna),
+				'currency' => q(Švedska kruna),
 				'few' => q(švedske krune),
 				'one' => q(švedska kruna),
 				'other' => q(švedskih kruna),
@@ -4011,7 +4010,7 @@ has 'curriencies' => (
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(Singapurski dolar),
+				'currency' => q(Singapurski dolar),
 				'few' => q(singapurska dolara),
 				'one' => q(singapurski dolar),
 				'other' => q(singapurskih dolara),
@@ -4019,7 +4018,7 @@ has 'curriencies' => (
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Sv. jelenska funta),
+				'currency' => q(Sv. jelenska funta),
 				'few' => q(sv. jelenske funte),
 				'one' => q(sv. jelenska funta),
 				'other' => q(sv. jelenskih funti),
@@ -4027,7 +4026,7 @@ has 'curriencies' => (
 		},
 		'SIT' => {
 			display_name => {
-				'default' => q(Slovenački tolar),
+				'currency' => q(Slovenački tolar),
 				'few' => q(slovenačka tolara),
 				'one' => q(slovenački tolar),
 				'other' => q(slovenačkih tolara),
@@ -4035,7 +4034,7 @@ has 'curriencies' => (
 		},
 		'SKK' => {
 			display_name => {
-				'default' => q(Slovačka kruna),
+				'currency' => q(Slovačka kruna),
 				'few' => q(slovačke krune),
 				'one' => q(slovačka kruna),
 				'other' => q(slovačkih kruna),
@@ -4043,7 +4042,7 @@ has 'curriencies' => (
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Sijera-leonški leone),
+				'currency' => q(Sijera-leonški leone),
 				'few' => q(sijeraleonska leona),
 				'one' => q(sijeraleonski leone),
 				'other' => q(sijeraleonskih leona),
@@ -4051,7 +4050,7 @@ has 'curriencies' => (
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Somalijski šiling),
+				'currency' => q(Somalijski šiling),
 				'few' => q(somalijska šilinga),
 				'one' => q(somalijski šiling),
 				'other' => q(somalijskih šilinga),
@@ -4059,7 +4058,7 @@ has 'curriencies' => (
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(Surinamski dolar),
+				'currency' => q(Surinamski dolar),
 				'few' => q(surinamska dolara),
 				'one' => q(surinamski dolar),
 				'other' => q(surinamskih dolara),
@@ -4067,7 +4066,7 @@ has 'curriencies' => (
 		},
 		'SRG' => {
 			display_name => {
-				'default' => q(Surinamski gilder),
+				'currency' => q(Surinamski gilder),
 				'few' => q(surinamska gildera),
 				'one' => q(surinamski gilder),
 				'other' => q(surinamskih gildera),
@@ -4075,7 +4074,7 @@ has 'curriencies' => (
 		},
 		'SSP' => {
 			display_name => {
-				'default' => q(Južnosudanska funta),
+				'currency' => q(Južnosudanska funta),
 				'few' => q(južnosudanske funte),
 				'one' => q(južnosudanska funta),
 				'other' => q(južnosudanskih funti),
@@ -4083,7 +4082,7 @@ has 'curriencies' => (
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Sao Tome i Principe dobra),
+				'currency' => q(Sao Tome i Principe dobra),
 				'few' => q(sao tome i principe dobra),
 				'one' => q(sao tome i principe dobar),
 				'other' => q(sao tome i principe dobra),
@@ -4091,7 +4090,7 @@ has 'curriencies' => (
 		},
 		'SUR' => {
 			display_name => {
-				'default' => q(Sovjetska rublja),
+				'currency' => q(Sovjetska rublja),
 				'few' => q(sovjetske rublje),
 				'one' => q(sovjetska rublja),
 				'other' => q(sovjetskih rublji),
@@ -4099,7 +4098,7 @@ has 'curriencies' => (
 		},
 		'SVC' => {
 			display_name => {
-				'default' => q(Salvadorski kolon),
+				'currency' => q(Salvadorski kolon),
 				'few' => q(salvadorska kolona),
 				'one' => q(salvadorski kolon),
 				'other' => q(salvadorskih kolona),
@@ -4107,7 +4106,7 @@ has 'curriencies' => (
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(Sirijska funta),
+				'currency' => q(Sirijska funta),
 				'few' => q(sirijske funte),
 				'one' => q(sirijska funta),
 				'other' => q(sirijskih funti),
@@ -4115,7 +4114,7 @@ has 'curriencies' => (
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Svazi lilangeni),
+				'currency' => q(Svazi lilangeni),
 				'few' => q(svazi emalangena),
 				'one' => q(svazi emalangen),
 				'other' => q(svazi emalangena),
@@ -4124,7 +4123,7 @@ has 'curriencies' => (
 		'THB' => {
 			symbol => '฿',
 			display_name => {
-				'default' => q(Tai baht),
+				'currency' => q(Tai baht),
 				'few' => q(tai bahta),
 				'one' => q(tai baht),
 				'other' => q(tai bahta),
@@ -4132,7 +4131,7 @@ has 'curriencies' => (
 		},
 		'TJR' => {
 			display_name => {
-				'default' => q(Tadžihistanska rublja),
+				'currency' => q(Tadžihistanska rublja),
 				'few' => q(tadžihistanske rublje),
 				'one' => q(tadžihistanska rublja),
 				'other' => q(tadžihistanskih rublji),
@@ -4140,7 +4139,7 @@ has 'curriencies' => (
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(Tadžihistanski somon),
+				'currency' => q(Tadžihistanski somon),
 				'few' => q(tadžihistanska somona),
 				'one' => q(tadžihistanski somon),
 				'other' => q(tadžihistanskih somona),
@@ -4148,15 +4147,15 @@ has 'curriencies' => (
 		},
 		'TMM' => {
 			display_name => {
-				'default' => q(Turkmenistanski manat (1993–2009)),
-				'few' => q(turkmenistanska manata (1993–2009)),
-				'one' => q(turkmenistanski manat (1993–2009)),
-				'other' => q(turkmenistanski manat (1993–2009)),
+				'currency' => q(Turkmenistanski manat \(1993–2009\)),
+				'few' => q(turkmenistanska manata \(1993–2009\)),
+				'one' => q(turkmenistanski manat \(1993–2009\)),
+				'other' => q(turkmenistanski manat \(1993–2009\)),
 			},
 		},
 		'TMT' => {
 			display_name => {
-				'default' => q(Turkmenistanski manat),
+				'currency' => q(Turkmenistanski manat),
 				'few' => q(turkmenistanska manata),
 				'one' => q(turkmenistanski manat),
 				'other' => q(turkmenistanskih manata),
@@ -4164,7 +4163,7 @@ has 'curriencies' => (
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Tunežanski dinar),
+				'currency' => q(Tunežanski dinar),
 				'few' => q(tunežanska dinara),
 				'one' => q(tunežanski dinar),
 				'other' => q(tunežanskih dinara),
@@ -4172,7 +4171,7 @@ has 'curriencies' => (
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(Tongonška Panga),
+				'currency' => q(Tongonška Panga),
 				'few' => q(tongaške pange),
 				'one' => q(tongaška panga),
 				'other' => q(tongaških panga),
@@ -4180,7 +4179,7 @@ has 'curriencies' => (
 		},
 		'TPE' => {
 			display_name => {
-				'default' => q(Timorški eskudo),
+				'currency' => q(Timorški eskudo),
 				'few' => q(timorška eskuda),
 				'one' => q(timorški eskudo),
 				'other' => q(timorških eskuda),
@@ -4188,16 +4187,16 @@ has 'curriencies' => (
 		},
 		'TRL' => {
 			display_name => {
-				'default' => q(Turska lira (1922–2005)),
-				'few' => q(turske lire (1922–2005)),
-				'one' => q(turska lira (1922–2005)),
-				'other' => q(turskih lira (1922–2005)),
+				'currency' => q(Turska lira \(1922–2005\)),
+				'few' => q(turske lire \(1922–2005\)),
+				'one' => q(turska lira \(1922–2005\)),
+				'other' => q(turskih lira \(1922–2005\)),
 			},
 		},
 		'TRY' => {
 			symbol => 'Tl',
 			display_name => {
-				'default' => q(Turska lira),
+				'currency' => q(Turska lira),
 				'few' => q(turske lire),
 				'one' => q(turska lira),
 				'other' => q(turskih lira),
@@ -4205,7 +4204,7 @@ has 'curriencies' => (
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(Trinidad tobagoški dolar),
+				'currency' => q(Trinidad tobagoški dolar),
 				'few' => q(trinidad-tobagoška dolara),
 				'one' => q(trinidad-tobagoški dolar),
 				'other' => q(trinidad-tobagoških dolara),
@@ -4214,7 +4213,7 @@ has 'curriencies' => (
 		'TWD' => {
 			symbol => 'NT$',
 			display_name => {
-				'default' => q(Novi tajvanski dolar),
+				'currency' => q(Novi tajvanski dolar),
 				'few' => q(nova tajvanska dolara),
 				'one' => q(novi tajvanski dolar),
 				'other' => q(novih tajvanskih dolara),
@@ -4222,7 +4221,7 @@ has 'curriencies' => (
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Tanzanijski šiling),
+				'currency' => q(Tanzanijski šiling),
 				'few' => q(tanzanijska šilinga),
 				'one' => q(tanzanijski šiling),
 				'other' => q(tanzanijskih šilinga),
@@ -4230,7 +4229,7 @@ has 'curriencies' => (
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(Ukrajinska hrivnja),
+				'currency' => q(Ukrajinska hrivnja),
 				'few' => q(ukrajinske hrivnje),
 				'one' => q(ukrajinska hrivnja),
 				'other' => q(ukrajinskih hrivnji),
@@ -4238,7 +4237,7 @@ has 'curriencies' => (
 		},
 		'UAK' => {
 			display_name => {
-				'default' => q(Ukrajinski karbovaneti),
+				'currency' => q(Ukrajinski karbovaneti),
 				'few' => q(ukrajinska karbovanciva),
 				'one' => q(ukrajinski karbovanec),
 				'other' => q(ukrajinskih karbovanciva),
@@ -4246,15 +4245,15 @@ has 'curriencies' => (
 		},
 		'UGS' => {
 			display_name => {
-				'default' => q(Ugandski šiling (1966–1987)),
-				'few' => q(ugandijska šilinga (1966–1987)),
-				'one' => q(ugandijski šiling (1966–1987)),
-				'other' => q(ugandijskih šilinga (1966–1987)),
+				'currency' => q(Ugandski šiling \(1966–1987\)),
+				'few' => q(ugandijska šilinga \(1966–1987\)),
+				'one' => q(ugandijski šiling \(1966–1987\)),
+				'other' => q(ugandijskih šilinga \(1966–1987\)),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Ugandski šiling),
+				'currency' => q(Ugandski šiling),
 				'few' => q(ugandska šilinga),
 				'one' => q(ugandski šiling),
 				'other' => q(ugandskih šilinga),
@@ -4262,7 +4261,7 @@ has 'curriencies' => (
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Američki dolar),
+				'currency' => q(Američki dolar),
 				'few' => q(američka dolara),
 				'one' => q(američki dolar),
 				'other' => q(američkih dolara),
@@ -4270,23 +4269,23 @@ has 'curriencies' => (
 		},
 		'USN' => {
 			display_name => {
-				'default' => q(SAD dolar (sledeći dan)),
-				'few' => q(SAD dolara (sledeći dan)),
-				'one' => q(SAD dolar (sledeći dan)),
-				'other' => q(SAD dolara (sledeći dan)),
+				'currency' => q(SAD dolar \(sledeći dan\)),
+				'few' => q(SAD dolara \(sledeći dan\)),
+				'one' => q(SAD dolar \(sledeći dan\)),
+				'other' => q(SAD dolara \(sledeći dan\)),
 			},
 		},
 		'USS' => {
 			display_name => {
-				'default' => q(SAD dolar (isti dan)),
-				'few' => q(SAD dolara (isti dan)),
-				'one' => q(SAD dolar (isti dan)),
-				'other' => q(SAD dolara (isti dan)),
+				'currency' => q(SAD dolar \(isti dan\)),
+				'few' => q(SAD dolara \(isti dan\)),
+				'one' => q(SAD dolar \(isti dan\)),
+				'other' => q(SAD dolara \(isti dan\)),
 			},
 		},
 		'UYI' => {
 			display_name => {
-				'default' => q(Urugvajski pezo en unidades indeksadas),
+				'currency' => q(Urugvajski pezo en unidades indeksadas),
 				'few' => q(urugvajska pezosa en unidades indeksadesa),
 				'one' => q(urugvajski pezo en unidades indeksades),
 				'other' => q(ugvajskih pezosa en unidades indeksadesa),
@@ -4294,15 +4293,15 @@ has 'curriencies' => (
 		},
 		'UYP' => {
 			display_name => {
-				'default' => q(Urugvajski pezo (1975–1993)),
-				'few' => q(urugvajska pezosa (1975–1993)),
-				'one' => q(urugvajski pezo (1975–1993)),
-				'other' => q(urugvajskih pezosa (1975–1993)),
+				'currency' => q(Urugvajski pezo \(1975–1993\)),
+				'few' => q(urugvajska pezosa \(1975–1993\)),
+				'one' => q(urugvajski pezo \(1975–1993\)),
+				'other' => q(urugvajskih pezosa \(1975–1993\)),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(Urugvajski pezo),
+				'currency' => q(Urugvajski pezo),
 				'few' => q(urugvajska pezosa),
 				'one' => q(urugvajski pezo),
 				'other' => q(urugvajskih pezosa),
@@ -4310,7 +4309,7 @@ has 'curriencies' => (
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(Uzbekistanski som),
+				'currency' => q(Uzbekistanski som),
 				'few' => q(uzbekistanska soma),
 				'one' => q(uzbekistanski som),
 				'other' => q(uzbekistanskih soma),
@@ -4318,15 +4317,15 @@ has 'curriencies' => (
 		},
 		'VEB' => {
 			display_name => {
-				'default' => q(Venecuelanski bolivar (1871–2008)),
-				'few' => q(venecuelanska bolivara (1871–2008)),
-				'one' => q(venecuelanski bolivar (1871–2008)),
-				'other' => q(venecuelanskih bolivara (1871–2008)),
+				'currency' => q(Venecuelanski bolivar \(1871–2008\)),
+				'few' => q(venecuelanska bolivara \(1871–2008\)),
+				'one' => q(venecuelanski bolivar \(1871–2008\)),
+				'other' => q(venecuelanskih bolivara \(1871–2008\)),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(Venecuelanski bolivar),
+				'currency' => q(Venecuelanski bolivar),
 				'few' => q(venecuelanska bolivara),
 				'one' => q(venecuelanski bolivar),
 				'other' => q(venecuelanskih bolivara),
@@ -4335,7 +4334,7 @@ has 'curriencies' => (
 		'VND' => {
 			symbol => '₫',
 			display_name => {
-				'default' => q(Vijetnamski dong),
+				'currency' => q(Vijetnamski dong),
 				'few' => q(vijetnamska donga),
 				'one' => q(vijetnamski dong),
 				'other' => q(vijetnamskih donga),
@@ -4343,15 +4342,15 @@ has 'curriencies' => (
 		},
 		'VNN' => {
 			display_name => {
-				'default' => q(Vijetnamski dong (1978–1985)),
-				'few' => q(vijetnamska donga (1978–1985)),
-				'one' => q(vijetnamski dong (1978–1985)),
-				'other' => q(vijetnamskih donga (1978–1985)),
+				'currency' => q(Vijetnamski dong \(1978–1985\)),
+				'few' => q(vijetnamska donga \(1978–1985\)),
+				'one' => q(vijetnamski dong \(1978–1985\)),
+				'other' => q(vijetnamskih donga \(1978–1985\)),
 			},
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(Vanuatski vatu),
+				'currency' => q(Vanuatski vatu),
 				'few' => q(vanuatska vatua),
 				'one' => q(vanuatski vatu),
 				'other' => q(vanuatskih vatua),
@@ -4359,7 +4358,7 @@ has 'curriencies' => (
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(Samoanska tala),
+				'currency' => q(Samoanska tala),
 				'few' => q(samoanske tale),
 				'one' => q(samoanska tala),
 				'other' => q(samoanskih tala),
@@ -4368,7 +4367,7 @@ has 'curriencies' => (
 		'XAF' => {
 			symbol => 'FCFA',
 			display_name => {
-				'default' => q(CFA franak BEAC),
+				'currency' => q(CFA franak BEAC),
 				'few' => q(CFA franka BEAC),
 				'one' => q(CFA franak BEAC),
 				'other' => q(CFA franaka BEAC),
@@ -4376,7 +4375,7 @@ has 'curriencies' => (
 		},
 		'XAG' => {
 			display_name => {
-				'default' => q(Srebro),
+				'currency' => q(Srebro),
 				'few' => q(srebra),
 				'one' => q(srebro),
 				'other' => q(srebra),
@@ -4384,7 +4383,7 @@ has 'curriencies' => (
 		},
 		'XAU' => {
 			display_name => {
-				'default' => q(Zlato),
+				'currency' => q(Zlato),
 				'few' => q(zlata),
 				'one' => q(zlato),
 				'other' => q(zlata),
@@ -4392,7 +4391,7 @@ has 'curriencies' => (
 		},
 		'XBA' => {
 			display_name => {
-				'default' => q(Evropska kompozitna jedinica),
+				'currency' => q(Evropska kompozitna jedinica),
 				'few' => q(evropske kompozitne jedinice),
 				'one' => q(evropska kompozitna jedinica),
 				'other' => q(evropskih kompozitnih jedinica),
@@ -4400,31 +4399,31 @@ has 'curriencies' => (
 		},
 		'XBB' => {
 			display_name => {
-				'default' => q(Evropska novčana jedinica),
-				'few' => q(evropske novčane jedinice (XBB)),
-				'one' => q(evropska novčana jedinica (XBB)),
-				'other' => q(evropske novčane jedinice (XBB)),
+				'currency' => q(Evropska novčana jedinica),
+				'few' => q(evropske novčane jedinice \(XBB\)),
+				'one' => q(evropska novčana jedinica \(XBB\)),
+				'other' => q(evropske novčane jedinice \(XBB\)),
 			},
 		},
 		'XBC' => {
 			display_name => {
-				'default' => q(Evropska jedinica računa (XBC)),
-				'few' => q(evropske jedinice računa (XBC)),
-				'one' => q(evropska jedinica računa (XBC)),
-				'other' => q(evropskih jedinica računa (XBC)),
+				'currency' => q(Evropska jedinica računa \(XBC\)),
+				'few' => q(evropske jedinice računa \(XBC\)),
+				'one' => q(evropska jedinica računa \(XBC\)),
+				'other' => q(evropskih jedinica računa \(XBC\)),
 			},
 		},
 		'XBD' => {
 			display_name => {
-				'default' => q(Evropska jedinica računa (XBD)),
-				'few' => q(evropske jedinice računa (XBD)),
-				'one' => q(evropska jedinica računa (XBD)),
-				'other' => q(evropskih jedinica računa (XBD)),
+				'currency' => q(Evropska jedinica računa \(XBD\)),
+				'few' => q(evropske jedinice računa \(XBD\)),
+				'one' => q(evropska jedinica računa \(XBD\)),
+				'other' => q(evropskih jedinica računa \(XBD\)),
 			},
 		},
 		'XCD' => {
 			display_name => {
-				'default' => q(Istočno-karipski dolar),
+				'currency' => q(Istočno-karipski dolar),
 				'few' => q(istočno-karipska dolara),
 				'one' => q(istočno-karipski dolar),
 				'other' => q(istočno-karipskix dolara),
@@ -4432,7 +4431,7 @@ has 'curriencies' => (
 		},
 		'XDR' => {
 			display_name => {
-				'default' => q(Posebna crtaća prava),
+				'currency' => q(Posebna crtaća prava),
 				'few' => q(posebna crtaća prava),
 				'one' => q(posebno crtaće pravo),
 				'other' => q(posebnih crtaćih prava),
@@ -4440,15 +4439,15 @@ has 'curriencies' => (
 		},
 		'XEU' => {
 			display_name => {
-				'default' => q(Evropska valutna jedinica),
-				'few' => q(evropske novčane jedinice (XEU)),
-				'one' => q(evropska novčana jedinica (XEU)),
+				'currency' => q(Evropska valutna jedinica),
+				'few' => q(evropske novčane jedinice \(XEU\)),
+				'one' => q(evropska novčana jedinica \(XEU\)),
 				'other' => q(evropskih novčanih jedinica),
 			},
 		},
 		'XFO' => {
 			display_name => {
-				'default' => q(Francuski zlatni franak),
+				'currency' => q(Francuski zlatni franak),
 				'few' => q(francuska zlatna franka),
 				'one' => q(francuski zlatni franak),
 				'other' => q(francuskih zlatnih franaka),
@@ -4456,7 +4455,7 @@ has 'curriencies' => (
 		},
 		'XFU' => {
 			display_name => {
-				'default' => q(Francuski UIC-franak),
+				'currency' => q(Francuski UIC-franak),
 				'few' => q(francuska UIC-franka),
 				'one' => q(francuski UIC-franak),
 				'other' => q(francuskih UIC-franaka),
@@ -4465,7 +4464,7 @@ has 'curriencies' => (
 		'XOF' => {
 			symbol => 'CFA',
 			display_name => {
-				'default' => q(CFA franak BCEAO),
+				'currency' => q(CFA franak BCEAO),
 				'few' => q(CFA franka BCEAO),
 				'one' => q(CFA franak BCEAO),
 				'other' => q(CFA franaka BCEAO),
@@ -4473,7 +4472,7 @@ has 'curriencies' => (
 		},
 		'XPD' => {
 			display_name => {
-				'default' => q(Paladijum),
+				'currency' => q(Paladijum),
 				'few' => q(paladijuma),
 				'one' => q(paladijum),
 				'other' => q(paladijuma),
@@ -4482,7 +4481,7 @@ has 'curriencies' => (
 		'XPF' => {
 			symbol => 'CFPF',
 			display_name => {
-				'default' => q(CFP franak),
+				'currency' => q(CFP franak),
 				'few' => q(CFP franka),
 				'one' => q(CFP franak),
 				'other' => q(CFP franaka),
@@ -4490,7 +4489,7 @@ has 'curriencies' => (
 		},
 		'XPT' => {
 			display_name => {
-				'default' => q(Platina),
+				'currency' => q(Platina),
 				'few' => q(platine),
 				'one' => q(platina),
 				'other' => q(platina),
@@ -4498,7 +4497,7 @@ has 'curriencies' => (
 		},
 		'XRE' => {
 			display_name => {
-				'default' => q(RINET fond),
+				'currency' => q(RINET fond),
 				'few' => q(RINET fonda),
 				'one' => q(RINET fond),
 				'other' => q(RINET fondova),
@@ -4506,7 +4505,7 @@ has 'curriencies' => (
 		},
 		'XTS' => {
 			display_name => {
-				'default' => q(Kod testirane valute),
+				'currency' => q(Kod testirane valute),
 				'few' => q(koda testirane valute),
 				'one' => q(kod testirane valute),
 				'other' => q(kodova testirane valute),
@@ -4514,7 +4513,7 @@ has 'curriencies' => (
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(Nepoznata ili nevažeća valuta),
+				'currency' => q(Nepoznata ili nevažeća valuta),
 				'few' => q(nepoznate ili nevažeće valute),
 				'one' => q(nepoznata ili nevažeća valuta),
 				'other' => q(nepoznatih ili nevažećih valuta),
@@ -4522,7 +4521,7 @@ has 'curriencies' => (
 		},
 		'YDD' => {
 			display_name => {
-				'default' => q(Jemenski dinar),
+				'currency' => q(Jemenski dinar),
 				'few' => q(jemenska dolara),
 				'one' => q(jemenski dolar),
 				'other' => q(jemenskih dolara),
@@ -4530,7 +4529,7 @@ has 'curriencies' => (
 		},
 		'YER' => {
 			display_name => {
-				'default' => q(Jemenski rijal),
+				'currency' => q(Jemenski rijal),
 				'few' => q(jemenska rijala),
 				'one' => q(jemenski rijal),
 				'other' => q(jemenskih rijala),
@@ -4538,7 +4537,7 @@ has 'curriencies' => (
 		},
 		'YUD' => {
 			display_name => {
-				'default' => q(Jugoslovenski tvrdi dinar),
+				'currency' => q(Jugoslovenski tvrdi dinar),
 				'few' => q(jugoslovenska tvrda dinara),
 				'one' => q(jugoslovenski tvrdi dinar),
 				'other' => q(jugoslovenskih tvrdih dinara),
@@ -4546,7 +4545,7 @@ has 'curriencies' => (
 		},
 		'YUM' => {
 			display_name => {
-				'default' => q(Jugoslovenski novi dinar),
+				'currency' => q(Jugoslovenski novi dinar),
 				'few' => q(jugoslovenska nova dinara),
 				'one' => q(jugoslovenski novi dinar),
 				'other' => q(jugoslovenskih novih dinara),
@@ -4554,7 +4553,7 @@ has 'curriencies' => (
 		},
 		'YUN' => {
 			display_name => {
-				'default' => q(Jugoslovenski konvertibilni dinar),
+				'currency' => q(Jugoslovenski konvertibilni dinar),
 				'few' => q(jugoslovenska konvertibilna dinara),
 				'one' => q(jugoslovenski konvertibilni dinar),
 				'other' => q(jugoslovenskih konvertibilnih dinara),
@@ -4562,7 +4561,7 @@ has 'curriencies' => (
 		},
 		'YUR' => {
 			display_name => {
-				'default' => q(Jugoslovenski reformirani dinar),
+				'currency' => q(Jugoslovenski reformirani dinar),
 				'few' => q(jugoslovenska reformirana dinara),
 				'one' => q(jugoslovenski reformirani dinar),
 				'other' => q(jugoslovenskih reformiranih dinara),
@@ -4570,15 +4569,15 @@ has 'curriencies' => (
 		},
 		'ZAL' => {
 			display_name => {
-				'default' => q(Južno-afrički rand (finansijski)),
-				'few' => q(južnoafrička randa (finansijska)),
-				'one' => q(južnoafrički rand (finansijski)),
-				'other' => q(južnoafričkih randa (finansijskih)),
+				'currency' => q(Južno-afrički rand \(finansijski\)),
+				'few' => q(južnoafrička randa \(finansijska\)),
+				'one' => q(južnoafrički rand \(finansijski\)),
+				'other' => q(južnoafričkih randa \(finansijskih\)),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Južno-afrički rand),
+				'currency' => q(Južno-afrički rand),
 				'few' => q(južno-afrička randa),
 				'one' => q(južno-afrički rand),
 				'other' => q(južno-afričkih randa),
@@ -4586,15 +4585,15 @@ has 'curriencies' => (
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Zambijska kvača (1968–2012)),
-				'few' => q(zambijske kvače (1968–2012)),
-				'one' => q(zambijska kvača (1968–2012)),
-				'other' => q(zambijskih kvača (1968–2012)),
+				'currency' => q(Zambijska kvača \(1968–2012\)),
+				'few' => q(zambijske kvače \(1968–2012\)),
+				'one' => q(zambijska kvača \(1968–2012\)),
+				'other' => q(zambijskih kvača \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Zambijska kvača),
+				'currency' => q(Zambijska kvača),
 				'few' => q(zambijske kvače),
 				'one' => q(zambijska kvača),
 				'other' => q(zambijskih kvača),
@@ -4602,7 +4601,7 @@ has 'curriencies' => (
 		},
 		'ZRN' => {
 			display_name => {
-				'default' => q(Zairski novi zair),
+				'currency' => q(Zairski novi zair),
 				'few' => q(zairska nova zaira),
 				'one' => q(zairski novi zair),
 				'other' => q(zairskih novih zaira),
@@ -4610,7 +4609,7 @@ has 'curriencies' => (
 		},
 		'ZRZ' => {
 			display_name => {
-				'default' => q(Zairski zair),
+				'currency' => q(Zairski zair),
 				'few' => q(zairska zaira),
 				'one' => q(zairski zair),
 				'other' => q(zairskih zaira),
@@ -4618,26 +4617,26 @@ has 'curriencies' => (
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Zimbabveanski dolar (1980–2008)),
-				'few' => q(zimbabvejska dolara (1980–2008)),
-				'one' => q(zimbabvejski dolar (1980–2008)),
-				'other' => q(zimbabvejskih dolara (1980–2008)),
+				'currency' => q(Zimbabveanski dolar \(1980–2008\)),
+				'few' => q(zimbabvejska dolara \(1980–2008\)),
+				'one' => q(zimbabvejski dolar \(1980–2008\)),
+				'other' => q(zimbabvejskih dolara \(1980–2008\)),
 			},
 		},
 		'ZWL' => {
 			display_name => {
-				'default' => q(Zimbabveanski dolar (2009)),
-				'few' => q(zimbabvejska dolara (2009)),
-				'one' => q(zimbabvejski dolar (2009)),
-				'other' => q(zimbabvejskih dolara (2009)),
+				'currency' => q(Zimbabveanski dolar \(2009\)),
+				'few' => q(zimbabvejska dolara \(2009\)),
+				'one' => q(zimbabvejski dolar \(2009\)),
+				'other' => q(zimbabvejskih dolara \(2009\)),
 			},
 		},
 		'ZWR' => {
 			display_name => {
-				'default' => q(Zimbabveanski dolar (2008)),
-				'few' => q(zimbabvejska dolara (2008)),
-				'one' => q(zimbabvejski dolar (2008)),
-				'other' => q(zimbabvejskih dolara (2008)),
+				'currency' => q(Zimbabveanski dolar \(2008\)),
+				'few' => q(zimbabvejska dolara \(2008\)),
+				'one' => q(zimbabvejski dolar \(2008\)),
+				'other' => q(zimbabvejskih dolara \(2008\)),
 			},
 		},
 	} },
@@ -5520,44 +5519,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			Ed => q{E d.},
-			Gy => q{y. G},
-			GyMMM => q{MMM y. G},
-			GyMMMEd => q{E, d. MMM y. G},
-			GyMMMd => q{d. MMM y. G},
-			H => q{HH},
-			Hm => q{HH.mm},
-			Hms => q{HH.mm.ss},
-			M => q{L},
-			MEd => q{E, M-d},
-			MMM => q{LLL},
-			MMMEd => q{E d. MMM},
-			MMMMEd => q{E d. MMMM},
-			MMMMd => q{d. MMMM},
-			MMMd => q{d. MMM},
-			MMMdd => q{dd.MMM},
-			MMdd => q{MM-dd},
-			Md => q{d/M},
-			d => q{d},
-			h => q{hh a},
-			hm => q{hh.mm a},
-			hms => q{hh.mm.ss a},
-			ms => q{mm.ss},
-			y => q{y. G},
-			yyyy => q{y. G},
-			yyyyM => q{M.y. G},
-			yyyyMEd => q{E, d.M.y. G},
-			yyyyMM => q{MM.y. G},
-			yyyyMMM => q{MMM y. G},
-			yyyyMMMEd => q{E, d. MMM y. G},
-			yyyyMMMM => q{MMMM y. G},
-			yyyyMMMd => q{d. MMM y. G},
-			yyyyMMdd => q{dd.MM.y. G},
-			yyyyMd => q{d.M.y. G},
-			yyyyQQQ => q{QQQ, y. G},
-			yyyyQQQQ => q{QQQQ y. G},
-		},
 		'gregorian' => {
 			EHm => q{E, HH:mm},
 			EHms => q{E, HH:mm:ss},
@@ -5599,6 +5560,44 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ. y},
 			yQQQQ => q{QQQQ. y},
 		},
+		'generic' => {
+			Ed => q{E d.},
+			Gy => q{y. G},
+			GyMMM => q{MMM y. G},
+			GyMMMEd => q{E, d. MMM y. G},
+			GyMMMd => q{d. MMM y. G},
+			H => q{HH},
+			Hm => q{HH.mm},
+			Hms => q{HH.mm.ss},
+			M => q{L},
+			MEd => q{E, M-d},
+			MMM => q{LLL},
+			MMMEd => q{E d. MMM},
+			MMMMEd => q{E d. MMMM},
+			MMMMd => q{d. MMMM},
+			MMMd => q{d. MMM},
+			MMMdd => q{dd.MMM},
+			MMdd => q{MM-dd},
+			Md => q{d/M},
+			d => q{d},
+			h => q{hh a},
+			hm => q{hh.mm a},
+			hms => q{hh.mm.ss a},
+			ms => q{mm.ss},
+			y => q{y. G},
+			yyyy => q{y. G},
+			yyyyM => q{M.y. G},
+			yyyyMEd => q{E, d.M.y. G},
+			yyyyMM => q{MM.y. G},
+			yyyyMMM => q{MMM y. G},
+			yyyyMMMEd => q{E, d. MMM y. G},
+			yyyyMMMM => q{MMMM y. G},
+			yyyyMMMd => q{d. MMM y. G},
+			yyyyMMdd => q{dd.MM.y. G},
+			yyyyMd => q{d.M.y. G},
+			yyyyQQQ => q{QQQ, y. G},
+			yyyyQQQQ => q{QQQQ y. G},
+		},
 	} },
 );
 
@@ -5618,101 +5617,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			H => {
-				H => q{HH-HH},
-			},
-			Hm => {
-				H => q{HH.mm-HH.mm},
-				m => q{HH.mm-HH.mm},
-			},
-			Hmv => {
-				H => q{HH.mm-HH.mm v},
-				m => q{HH.mm-HH.mm v},
-			},
-			Hv => {
-				H => q{HH-HH v},
-			},
-			M => {
-				M => q{M-M},
-			},
-			MEd => {
-				M => q{E, d.M - E, d.M},
-				d => q{E, d.M - E, d.M},
-			},
-			MMM => {
-				M => q{MMM-MMM},
-			},
-			MMMEd => {
-				M => q{E, dd. MMM - E, dd. MMM},
-				d => q{E, dd. - E, dd. MMM},
-			},
-			MMMd => {
-				M => q{dd. MMM - dd. MMM},
-				d => q{dd.-dd. MMM},
-			},
-			Md => {
-				M => q{d.M - d.M},
-				d => q{d.M - d.M},
-			},
-			d => {
-				d => q{d-d},
-			},
-			fallback => '{0} - {1}',
-			h => {
-				a => q{h a - h a},
-				h => q{h-h a},
-			},
-			hm => {
-				a => q{h.mm a - h.mm a},
-				h => q{h.mm-h.mm a},
-				m => q{h.mm-h.mm a},
-			},
-			hmv => {
-				a => q{h.mm a - h.mm a v},
-				h => q{h.mm-h.mm a v},
-				m => q{h.mm-h.mm a v},
-			},
-			hv => {
-				a => q{h a - h a v},
-				h => q{h-h a v},
-			},
-			y => {
-				y => q{y-y},
-			},
-			yM => {
-				M => q{y M - M},
-				y => q{M.y - M.y},
-			},
-			yMEd => {
-				M => q{E, d.M.y. - E, d.M.y.},
-				d => q{E, d.M.y. - E, d.M.y.},
-				y => q{E, d.M.y. - E, d.M.y.},
-			},
-			yMMM => {
-				M => q{MMM-MMM y.},
-				y => q{MMM y. - MMM y.},
-			},
-			yMMMEd => {
-				M => q{E, dd. MMM - E, dd. MMM y.},
-				d => q{E, dd. - E, dd. MMM y.},
-				y => q{E, dd. MMM y. - E, dd. MMM y.},
-			},
-			yMMMM => {
-				M => q{y-MM – MM},
-				y => q{y-MM – y-MM},
-			},
-			yMMMd => {
-				M => q{dd. MMM - dd. MMM y.},
-				d => q{dd.-dd. MMM y.},
-				y => q{dd. MMM y. - dd. MMM y.},
-			},
-			yMd => {
-				M => q{d.M.y. - d.M.y.},
-				d => q{d.M.y. - d.M.y.},
-				y => q{d.M.y. - d.M.y.},
-			},
-		},
 		'gregorian' => {
 			H => {
 				H => q{HH-HH},
@@ -5778,6 +5682,101 @@ has 'datetime_formats_interval' => (
 			yM => {
 				M => q{y M - M},
 				y => q{y M - M},
+			},
+			yMEd => {
+				M => q{E, d.M.y. - E, d.M.y.},
+				d => q{E, d.M.y. - E, d.M.y.},
+				y => q{E, d.M.y. - E, d.M.y.},
+			},
+			yMMM => {
+				M => q{MMM-MMM y.},
+				y => q{MMM y. - MMM y.},
+			},
+			yMMMEd => {
+				M => q{E, dd. MMM - E, dd. MMM y.},
+				d => q{E, dd. - E, dd. MMM y.},
+				y => q{E, dd. MMM y. - E, dd. MMM y.},
+			},
+			yMMMM => {
+				M => q{y-MM – MM},
+				y => q{y-MM – y-MM},
+			},
+			yMMMd => {
+				M => q{dd. MMM - dd. MMM y.},
+				d => q{dd.-dd. MMM y.},
+				y => q{dd. MMM y. - dd. MMM y.},
+			},
+			yMd => {
+				M => q{d.M.y. - d.M.y.},
+				d => q{d.M.y. - d.M.y.},
+				y => q{d.M.y. - d.M.y.},
+			},
+		},
+		'generic' => {
+			H => {
+				H => q{HH-HH},
+			},
+			Hm => {
+				H => q{HH.mm-HH.mm},
+				m => q{HH.mm-HH.mm},
+			},
+			Hmv => {
+				H => q{HH.mm-HH.mm v},
+				m => q{HH.mm-HH.mm v},
+			},
+			Hv => {
+				H => q{HH-HH v},
+			},
+			M => {
+				M => q{M-M},
+			},
+			MEd => {
+				M => q{E, d.M - E, d.M},
+				d => q{E, d.M - E, d.M},
+			},
+			MMM => {
+				M => q{MMM-MMM},
+			},
+			MMMEd => {
+				M => q{E, dd. MMM - E, dd. MMM},
+				d => q{E, dd. - E, dd. MMM},
+			},
+			MMMd => {
+				M => q{dd. MMM - dd. MMM},
+				d => q{dd.-dd. MMM},
+			},
+			Md => {
+				M => q{d.M - d.M},
+				d => q{d.M - d.M},
+			},
+			d => {
+				d => q{d-d},
+			},
+			fallback => '{0} - {1}',
+			h => {
+				a => q{h a - h a},
+				h => q{h-h a},
+			},
+			hm => {
+				a => q{h.mm a - h.mm a},
+				h => q{h.mm-h.mm a},
+				m => q{h.mm-h.mm a},
+			},
+			hmv => {
+				a => q{h.mm a - h.mm a v},
+				h => q{h.mm-h.mm a v},
+				m => q{h.mm-h.mm a v},
+			},
+			hv => {
+				a => q{h a - h a v},
+				h => q{h-h a v},
+			},
+			y => {
+				y => q{y-y},
+			},
+			yM => {
+				M => q{y M - M},
+				y => q{M.y - M.y},
 			},
 			yMEd => {
 				M => q{E, d.M.y. - E, d.M.y.},

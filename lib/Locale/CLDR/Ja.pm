@@ -1,6 +1,6 @@
-package Locale::CLDR::Ja;
+package Locale::CLDR::Ja v0.0.4;
 # This file auto generated from Data\common\main\ja.xml
-#	on Mon 31 Mar 12:47:34 am GMT
+#	on Sun 13 Apr 10:46:25 am GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use v5.18;
@@ -1552,7 +1552,7 @@ has 'units' => (
 						'other' => q({0} オンス),
 					},
 					'per' => {
-						'default' => q(毎{1} {0}),
+						'' => q(毎{1} {0}),
 					},
 					'picometer' => {
 						'other' => q({0} ピコメートル),
@@ -1695,7 +1695,7 @@ has 'units' => (
 						'other' => q({0}oz),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'other' => q({0}pm),
@@ -1838,7 +1838,7 @@ has 'units' => (
 						'other' => q({0} オンス),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'other' => q({0} pm),
@@ -1876,7 +1876,6 @@ has 'units' => (
 				},
 			} }
 );
-
 
 has 'yesstr' => (
 	is			=> 'ro',
@@ -2123,1774 +2122,1774 @@ has 'curriencies' => (
 	default		=> sub { {
 		'ADP' => {
 			display_name => {
-				'default' => q(アンドラ ペセタ),
+				'currency' => q(アンドラ ペセタ),
 				'other' => q(アンドラ ペセタ),
 			},
 		},
 		'AED' => {
 			display_name => {
-				'default' => q(アラブ首長国連邦ディルハム),
+				'currency' => q(アラブ首長国連邦ディルハム),
 				'other' => q(アラブ首長国連邦ディルハム),
 			},
 		},
 		'AFA' => {
 			display_name => {
-				'default' => q(アフガニスタン アフガニー (1927–2002)),
-				'other' => q(アフガニスタン アフガニー (1927–2002)),
+				'currency' => q(アフガニスタン アフガニー \(1927–2002\)),
+				'other' => q(アフガニスタン アフガニー \(1927–2002\)),
 			},
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(アフガニー),
+				'currency' => q(アフガニー),
 				'other' => q(アフガニー),
 			},
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(アルバニア レク),
+				'currency' => q(アルバニア レク),
 				'other' => q(アルバニア レク),
 			},
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(アルメニア ドラム),
+				'currency' => q(アルメニア ドラム),
 				'other' => q(アルメニア ドラム),
 			},
 		},
 		'ANG' => {
 			display_name => {
-				'default' => q(オランダ領アンティル ギルダー),
+				'currency' => q(オランダ領アンティル ギルダー),
 				'other' => q(オランダ領アンティル ギルダー),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(クワンザ),
+				'currency' => q(クワンザ),
 				'other' => q(クワンザ),
 			},
 		},
 		'AOK' => {
 			display_name => {
-				'default' => q(アンゴラ クワンザ (1977–1991)),
-				'other' => q(アンゴラ クワンザ (1977–1991)),
+				'currency' => q(アンゴラ クワンザ \(1977–1991\)),
+				'other' => q(アンゴラ クワンザ \(1977–1991\)),
 			},
 		},
 		'AON' => {
 			display_name => {
-				'default' => q(アンゴラ 新クワンザ (1990–2000)),
-				'other' => q(アンゴラ 新クワンザ (1990–2000)),
+				'currency' => q(アンゴラ 新クワンザ \(1990–2000\)),
+				'other' => q(アンゴラ 新クワンザ \(1990–2000\)),
 			},
 		},
 		'AOR' => {
 			display_name => {
-				'default' => q(アンゴラ 旧クワンザ (1995–1999)),
-				'other' => q(アンゴラ 旧クワンザ (1995–1999)),
+				'currency' => q(アンゴラ 旧クワンザ \(1995–1999\)),
+				'other' => q(アンゴラ 旧クワンザ \(1995–1999\)),
 			},
 		},
 		'ARA' => {
 			display_name => {
-				'default' => q(アルゼンチン アゥストラール),
+				'currency' => q(アルゼンチン アゥストラール),
 				'other' => q(アルゼンチン アゥストラール),
 			},
 		},
 		'ARL' => {
 			display_name => {
-				'default' => q(アルゼンチン・ペソ・レイ（1970-1983）),
+				'currency' => q(アルゼンチン・ペソ・レイ（1970-1983）),
 				'other' => q(アルゼンチン・ペソ・レイ（1970-1983）),
 			},
 		},
 		'ARM' => {
 			display_name => {
-				'default' => q(アルゼンチン・ペソ（1881-1970）),
+				'currency' => q(アルゼンチン・ペソ（1881-1970）),
 				'other' => q(アルゼンチン・ペソ（1881-1970）),
 			},
 		},
 		'ARP' => {
 			display_name => {
-				'default' => q(アルゼンチン ペソ (1983–1985)),
-				'other' => q(アルゼンチン ペソ (1983–1985)),
+				'currency' => q(アルゼンチン ペソ \(1983–1985\)),
+				'other' => q(アルゼンチン ペソ \(1983–1985\)),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(アルゼンチン ペソ),
+				'currency' => q(アルゼンチン ペソ),
 				'other' => q(アルゼンチン ペソ),
 			},
 		},
 		'ATS' => {
 			display_name => {
-				'default' => q(オーストリア シリング),
+				'currency' => q(オーストリア シリング),
 				'other' => q(オーストリア シリング),
 			},
 		},
 		'AUD' => {
 			symbol => 'AU$',
 			display_name => {
-				'default' => q(オーストラリア ドル),
+				'currency' => q(オーストラリア ドル),
 				'other' => q(オーストラリア ドル),
 			},
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(アルバ ギルダー),
+				'currency' => q(アルバ ギルダー),
 				'other' => q(アルバ ギルダー),
 			},
 		},
 		'AZM' => {
 			display_name => {
-				'default' => q(アゼルバイジャン マナト (1993–2006)),
-				'other' => q(アゼルバイジャン マナト (1993–2006)),
+				'currency' => q(アゼルバイジャン マナト \(1993–2006\)),
+				'other' => q(アゼルバイジャン マナト \(1993–2006\)),
 			},
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(アゼルバイジャン マナト),
+				'currency' => q(アゼルバイジャン マナト),
 				'other' => q(アゼルバイジャン マナト),
 			},
 		},
 		'BAD' => {
 			display_name => {
-				'default' => q(ボスニア・ヘルツェゴビナ ディナール (1992–1994)),
-				'other' => q(ボスニア・ヘルツェゴビナ ディナール (1992–1994)),
+				'currency' => q(ボスニア・ヘルツェゴビナ ディナール \(1992–1994\)),
+				'other' => q(ボスニア・ヘルツェゴビナ ディナール \(1992–1994\)),
 			},
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(ボスニア マルク (BAM)),
-				'other' => q(ボスニア マルク (BAM)),
+				'currency' => q(ボスニア マルク \(BAM\)),
+				'other' => q(ボスニア マルク \(BAM\)),
 			},
 		},
 		'BAN' => {
 			display_name => {
-				'default' => q(ボスニア・ヘルツェゴビナ 新ディナール（1994-1997）),
+				'currency' => q(ボスニア・ヘルツェゴビナ 新ディナール（1994-1997）),
 				'other' => q(ボスニア・ヘルツェゴビナ 新ディナール（1994-1997）),
 			},
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(バルバドス ドル),
+				'currency' => q(バルバドス ドル),
 				'other' => q(バルバドス ドル),
 			},
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(バングラデシュ タカ),
+				'currency' => q(バングラデシュ タカ),
 				'other' => q(バングラデシュ タカ),
 			},
 		},
 		'BEC' => {
 			display_name => {
-				'default' => q(ベルギー フラン (BEC)),
-				'other' => q(ベルギー フラン (BEC)),
+				'currency' => q(ベルギー フラン \(BEC\)),
+				'other' => q(ベルギー フラン \(BEC\)),
 			},
 		},
 		'BEF' => {
 			display_name => {
-				'default' => q(ベルギー フラン),
+				'currency' => q(ベルギー フラン),
 				'other' => q(ベルギー フラン),
 			},
 		},
 		'BEL' => {
 			display_name => {
-				'default' => q(ベルギー フラン (BEL)),
-				'other' => q(ベルギー フラン (BEL)),
+				'currency' => q(ベルギー フラン \(BEL\)),
+				'other' => q(ベルギー フラン \(BEL\)),
 			},
 		},
 		'BGL' => {
 			display_name => {
-				'default' => q(ブルガリア レフ),
+				'currency' => q(ブルガリア レフ),
 				'other' => q(ブルガリア レフ),
 			},
 		},
 		'BGM' => {
 			display_name => {
-				'default' => q(ブルガリア社会主義 レフ),
+				'currency' => q(ブルガリア社会主義 レフ),
 				'other' => q(ブルガリア社会主義 レフ),
 			},
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(ブルガリア 新レフ),
+				'currency' => q(ブルガリア 新レフ),
 				'other' => q(ブルガリア 新レフ),
 			},
 		},
 		'BGO' => {
 			display_name => {
-				'default' => q(ブルガリア レフ（1879-1952）),
+				'currency' => q(ブルガリア レフ（1879-1952）),
 				'other' => q(ブルガリア レフ（1879-1952）),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(バーレーン ディナール),
+				'currency' => q(バーレーン ディナール),
 				'other' => q(バーレーン ディナール),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(ブルンジ フラン),
+				'currency' => q(ブルンジ フラン),
 				'other' => q(ブルンジ フラン),
 			},
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(バミューダ ドル),
+				'currency' => q(バミューダ ドル),
 				'other' => q(バミューダ ドル),
 			},
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(ブルネイ ドル),
+				'currency' => q(ブルネイ ドル),
 				'other' => q(ブルネイ ドル),
 			},
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(ボリビア ボリビアーノ),
+				'currency' => q(ボリビア ボリビアーノ),
 				'other' => q(ボリビア ボリビアーノ),
 			},
 		},
 		'BOL' => {
 			display_name => {
-				'default' => q(ボリビア ボリビアーノ (1863–1963)),
-				'other' => q(ボリビア ボリビアーノ (1863–1963)),
+				'currency' => q(ボリビア ボリビアーノ \(1863–1963\)),
+				'other' => q(ボリビア ボリビアーノ \(1863–1963\)),
 			},
 		},
 		'BOP' => {
 			display_name => {
-				'default' => q(ボリビア ペソ),
+				'currency' => q(ボリビア ペソ),
 				'other' => q(ボリビア ペソ),
 			},
 		},
 		'BOV' => {
 			display_name => {
-				'default' => q(ボリビア (Mvdol)),
-				'other' => q(ボリビア (Mvdol)),
+				'currency' => q(ボリビア \(Mvdol\)),
+				'other' => q(ボリビア \(Mvdol\)),
 			},
 		},
 		'BRB' => {
 			display_name => {
-				'default' => q(ブラジル 新クルゼイロ (1967–1986)),
-				'other' => q(ブラジル 新クルゼイロ (1967–1986)),
+				'currency' => q(ブラジル 新クルゼイロ \(1967–1986\)),
+				'other' => q(ブラジル 新クルゼイロ \(1967–1986\)),
 			},
 		},
 		'BRC' => {
 			display_name => {
-				'default' => q(ブラジル クルザード (1986–1989)),
-				'other' => q(ブラジル クルザード (1986–1989)),
+				'currency' => q(ブラジル クルザード \(1986–1989\)),
+				'other' => q(ブラジル クルザード \(1986–1989\)),
 			},
 		},
 		'BRE' => {
 			display_name => {
-				'default' => q(ブラジル クルゼイロ (1990–1993)),
-				'other' => q(ブラジル クルゼイロ (1990–1993)),
+				'currency' => q(ブラジル クルゼイロ \(1990–1993\)),
+				'other' => q(ブラジル クルゼイロ \(1990–1993\)),
 			},
 		},
 		'BRL' => {
 			symbol => 'R$',
 			display_name => {
-				'default' => q(ブラジル レアル),
+				'currency' => q(ブラジル レアル),
 				'other' => q(ブラジル レアル),
 			},
 		},
 		'BRN' => {
 			display_name => {
-				'default' => q(ブラジル 新クルザード (1989–1990)),
-				'other' => q(ブラジル 新クルザード (1989–1990)),
+				'currency' => q(ブラジル 新クルザード \(1989–1990\)),
+				'other' => q(ブラジル 新クルザード \(1989–1990\)),
 			},
 		},
 		'BRR' => {
 			display_name => {
-				'default' => q(ブラジル クルゼイロ (1993–1994)),
-				'other' => q(ブラジル クルゼイロ (1993–1994)),
+				'currency' => q(ブラジル クルゼイロ \(1993–1994\)),
+				'other' => q(ブラジル クルゼイロ \(1993–1994\)),
 			},
 		},
 		'BRZ' => {
 			display_name => {
-				'default' => q(ブラジル クルゼイロ（1942-1967）),
+				'currency' => q(ブラジル クルゼイロ（1942-1967）),
 				'other' => q(ブラジル クルゼイロ（1942-1967）),
 			},
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(バハマ ドル),
+				'currency' => q(バハマ ドル),
 				'other' => q(バハマ ドル),
 			},
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(ブータン ニュルタム),
+				'currency' => q(ブータン ニュルタム),
 				'other' => q(ブータン ニュルタム),
 			},
 		},
 		'BUK' => {
 			display_name => {
-				'default' => q(ビルマ チャット),
+				'currency' => q(ビルマ チャット),
 				'other' => q(ビルマ チャット),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(ボツワナ プラ),
+				'currency' => q(ボツワナ プラ),
 				'other' => q(ボツワナ プラ),
 			},
 		},
 		'BYB' => {
 			display_name => {
-				'default' => q(ベラルーシ 新ルーブル (1994–1999)),
-				'other' => q(ベラルーシ 新ルーブル (1994–1999)),
+				'currency' => q(ベラルーシ 新ルーブル \(1994–1999\)),
+				'other' => q(ベラルーシ 新ルーブル \(1994–1999\)),
 			},
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(ベラルーシ ルーブル),
+				'currency' => q(ベラルーシ ルーブル),
 				'other' => q(ベラルーシ ルーブル),
 			},
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(ベリーズ ドル),
+				'currency' => q(ベリーズ ドル),
 				'other' => q(ベリーズ ドル),
 			},
 		},
 		'CAD' => {
 			symbol => 'CA$',
 			display_name => {
-				'default' => q(カナダ ドル),
+				'currency' => q(カナダ ドル),
 				'other' => q(カナダ ドル),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(コンゴ フラン),
+				'currency' => q(コンゴ フラン),
 				'other' => q(コンゴ フラン),
 			},
 		},
 		'CHE' => {
 			display_name => {
-				'default' => q(ユーロ (WIR)),
-				'other' => q(ユーロ (WIR)),
+				'currency' => q(ユーロ \(WIR\)),
+				'other' => q(ユーロ \(WIR\)),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(スイス フラン),
+				'currency' => q(スイス フラン),
 				'other' => q(スイス フラン),
 			},
 		},
 		'CHW' => {
 			display_name => {
-				'default' => q(フラン (WIR)),
-				'other' => q(フラン (WIR)),
+				'currency' => q(フラン \(WIR\)),
+				'other' => q(フラン \(WIR\)),
 			},
 		},
 		'CLE' => {
 			display_name => {
-				'default' => q(チリ エスクード),
+				'currency' => q(チリ エスクード),
 				'other' => q(チリ エスクード),
 			},
 		},
 		'CLF' => {
 			display_name => {
-				'default' => q(チリ ウニダ・デ・フォメント (UF)),
-				'other' => q(チリ ウニダ・デ・フォメント (UF)),
+				'currency' => q(チリ ウニダ・デ・フォメント \(UF\)),
+				'other' => q(チリ ウニダ・デ・フォメント \(UF\)),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(チリ ペソ),
+				'currency' => q(チリ ペソ),
 				'other' => q(チリ ペソ),
 			},
 		},
 		'CNY' => {
 			symbol => '元',
 			display_name => {
-				'default' => q(中国人民元),
+				'currency' => q(中国人民元),
 				'other' => q(中国人民元),
 			},
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(コロンビア ペソ),
+				'currency' => q(コロンビア ペソ),
 				'other' => q(コロンビア ペソ),
 			},
 		},
 		'COU' => {
 			display_name => {
-				'default' => q(コロンビア レアル （UVR)),
-				'other' => q(コロンビア レアル （UVR)),
+				'currency' => q(コロンビア レアル （UVR\)),
+				'other' => q(コロンビア レアル （UVR\)),
 			},
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(コスタリカ コロン),
+				'currency' => q(コスタリカ コロン),
 				'other' => q(コスタリカ コロン),
 			},
 		},
 		'CSD' => {
 			display_name => {
-				'default' => q(セルビア ディナール (2002–2006)),
-				'other' => q(セルビア ディナール (2002–2006)),
+				'currency' => q(セルビア ディナール \(2002–2006\)),
+				'other' => q(セルビア ディナール \(2002–2006\)),
 			},
 		},
 		'CSK' => {
 			display_name => {
-				'default' => q(チェコスロバキア コルナ),
+				'currency' => q(チェコスロバキア コルナ),
 				'other' => q(チェコスロバキア コルナ),
 			},
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(キューバ 兌換ペソ),
+				'currency' => q(キューバ 兌換ペソ),
 				'other' => q(キューバ 兌換ペソ),
 			},
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(キューバ ペソ),
+				'currency' => q(キューバ ペソ),
 				'other' => q(キューバ ペソ),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(カーボベルデ エスクード),
+				'currency' => q(カーボベルデ エスクード),
 				'other' => q(カーボベルデ エスクード),
 			},
 		},
 		'CYP' => {
 			display_name => {
-				'default' => q(キプロス ポンド),
+				'currency' => q(キプロス ポンド),
 				'other' => q(キプロス ポンド),
 			},
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(チェコ コルナ),
+				'currency' => q(チェコ コルナ),
 				'other' => q(チェコ コルナ),
 			},
 		},
 		'DDM' => {
 			display_name => {
-				'default' => q(東ドイツ マルク),
+				'currency' => q(東ドイツ マルク),
 				'other' => q(東ドイツ マルク),
 			},
 		},
 		'DEM' => {
 			display_name => {
-				'default' => q(ドイツ マルク),
+				'currency' => q(ドイツ マルク),
 				'other' => q(ドイツ マルク),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(ジブチ フラン),
+				'currency' => q(ジブチ フラン),
 				'other' => q(ジブチ フラン),
 			},
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(デンマーク クローネ),
+				'currency' => q(デンマーク クローネ),
 				'other' => q(デンマーク クローネ),
 			},
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(ドミニカ ペソ),
+				'currency' => q(ドミニカ ペソ),
 				'other' => q(ドミニカ ペソ),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(アルジェリア ディナール),
+				'currency' => q(アルジェリア ディナール),
 				'other' => q(アルジェリア ディナール),
 			},
 		},
 		'ECS' => {
 			display_name => {
-				'default' => q(エクアドル スクレ),
+				'currency' => q(エクアドル スクレ),
 				'other' => q(エクアドル スクレ),
 			},
 		},
 		'ECV' => {
 			display_name => {
-				'default' => q(エクアドル (UVC)),
-				'other' => q(エクアドル (UVC)),
+				'currency' => q(エクアドル \(UVC\)),
+				'other' => q(エクアドル \(UVC\)),
 			},
 		},
 		'EEK' => {
 			display_name => {
-				'default' => q(エストニア クルーン),
+				'currency' => q(エストニア クルーン),
 				'other' => q(エストニア クルーン),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(エジプト ポンド),
+				'currency' => q(エジプト ポンド),
 				'other' => q(エジプト ポンド),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(エリトリア ナクファ),
+				'currency' => q(エリトリア ナクファ),
 				'other' => q(エリトリア ナクファ),
 			},
 		},
 		'ESA' => {
 			display_name => {
-				'default' => q(スペインペセタ（勘定A）),
+				'currency' => q(スペインペセタ（勘定A）),
 				'other' => q(スペインペセタ（勘定A）),
 			},
 		},
 		'ESB' => {
 			display_name => {
-				'default' => q(スペイン 兌換ペセタ),
+				'currency' => q(スペイン 兌換ペセタ),
 				'other' => q(スペイン 兌換ペセタ),
 			},
 		},
 		'ESP' => {
 			display_name => {
-				'default' => q(スペイン ペセタ),
+				'currency' => q(スペイン ペセタ),
 				'other' => q(スペイン ペセタ),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(エチオピア ブル),
+				'currency' => q(エチオピア ブル),
 				'other' => q(エチオピア ブル),
 			},
 		},
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(ユーロ),
+				'currency' => q(ユーロ),
 				'other' => q(ユーロ),
 			},
 		},
 		'FIM' => {
 			display_name => {
-				'default' => q(フィンランド マルカ),
+				'currency' => q(フィンランド マルカ),
 				'other' => q(フィンランド マルカ),
 			},
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(フィジー諸島 ドル),
+				'currency' => q(フィジー諸島 ドル),
 				'other' => q(フィジー諸島 ドル),
 			},
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(フォークランド（マルビナス）諸島 ポンド),
+				'currency' => q(フォークランド（マルビナス）諸島 ポンド),
 				'other' => q(フォークランド（マルビナス）諸島 ポンド),
 			},
 		},
 		'FRF' => {
 			display_name => {
-				'default' => q(フランス フラン),
+				'currency' => q(フランス フラン),
 				'other' => q(フランス フラン),
 			},
 		},
 		'GBP' => {
 			symbol => '£',
 			display_name => {
-				'default' => q(英国ポンド),
+				'currency' => q(英国ポンド),
 				'other' => q(英国ポンド),
 			},
 		},
 		'GEK' => {
 			display_name => {
-				'default' => q(グルジア クーポン ラリ),
+				'currency' => q(グルジア クーポン ラリ),
 				'other' => q(グルジア クーポン ラリ),
 			},
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(グルジア ラリ),
+				'currency' => q(グルジア ラリ),
 				'other' => q(グルジア ラリ),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(ガーナ セディ (1979–2007)),
-				'other' => q(ガーナ セディ (1979–2007)),
+				'currency' => q(ガーナ セディ \(1979–2007\)),
+				'other' => q(ガーナ セディ \(1979–2007\)),
 			},
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(ガーナ セディ),
+				'currency' => q(ガーナ セディ),
 				'other' => q(ガーナ セディ),
 			},
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(ジブラルタル ポンド),
+				'currency' => q(ジブラルタル ポンド),
 				'other' => q(ジブラルタル ポンド),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(ガンビア ダラシ),
+				'currency' => q(ガンビア ダラシ),
 				'other' => q(ガンビア ダラシ),
 			},
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(ギニア フラン),
+				'currency' => q(ギニア フラン),
 				'other' => q(ギニア フラン),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(ギニア シリー),
+				'currency' => q(ギニア シリー),
 				'other' => q(ギニア シリー),
 			},
 		},
 		'GQE' => {
 			display_name => {
-				'default' => q(赤道ギニア エクウェレ),
+				'currency' => q(赤道ギニア エクウェレ),
 				'other' => q(赤道ギニア エクウェレ),
 			},
 		},
 		'GRD' => {
 			display_name => {
-				'default' => q(ギリシャ ドラクマ),
+				'currency' => q(ギリシャ ドラクマ),
 				'other' => q(ギリシャ ドラクマ),
 			},
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(グアテマラ ケツァル),
+				'currency' => q(グアテマラ ケツァル),
 				'other' => q(グアテマラ ケツァル),
 			},
 		},
 		'GWE' => {
 			display_name => {
-				'default' => q(ポルトガル領ギニア エスクード),
+				'currency' => q(ポルトガル領ギニア エスクード),
 				'other' => q(ポルトガル領ギニア エスクード),
 			},
 		},
 		'GWP' => {
 			display_name => {
-				'default' => q(ギニアビサウ ペソ),
+				'currency' => q(ギニアビサウ ペソ),
 				'other' => q(ギニアビサウ ペソ),
 			},
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(ガイアナ ドル),
+				'currency' => q(ガイアナ ドル),
 				'other' => q(ガイアナ ドル),
 			},
 		},
 		'HKD' => {
 			symbol => 'HK$',
 			display_name => {
-				'default' => q(香港ドル),
+				'currency' => q(香港ドル),
 				'other' => q(香港ドル),
 			},
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(ホンジュラス レンピラ),
+				'currency' => q(ホンジュラス レンピラ),
 				'other' => q(ホンジュラス レンピラ),
 			},
 		},
 		'HRD' => {
 			display_name => {
-				'default' => q(クロアチア ディナール),
+				'currency' => q(クロアチア ディナール),
 				'other' => q(クロアチア ディナール),
 			},
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(クロアチア クーナ),
+				'currency' => q(クロアチア クーナ),
 				'other' => q(クロアチア クーナ),
 			},
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(ハイチ グールド),
+				'currency' => q(ハイチ グールド),
 				'other' => q(ハイチ グールド),
 			},
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(ハンガリー フォリント),
+				'currency' => q(ハンガリー フォリント),
 				'other' => q(ハンガリー フォリント),
 			},
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(インドネシア ルピア),
+				'currency' => q(インドネシア ルピア),
 				'other' => q(インドネシア ルピア),
 			},
 		},
 		'IEP' => {
 			display_name => {
-				'default' => q(アイリッシュ ポンド),
+				'currency' => q(アイリッシュ ポンド),
 				'other' => q(アイリッシュ ポンド),
 			},
 		},
 		'ILP' => {
 			display_name => {
-				'default' => q(イスラエル ポンド),
+				'currency' => q(イスラエル ポンド),
 				'other' => q(イスラエル ポンド),
 			},
 		},
 		'ILS' => {
 			symbol => '₪',
 			display_name => {
-				'default' => q(イスラエル新シェケル),
+				'currency' => q(イスラエル新シェケル),
 				'other' => q(イスラエル新シェケル),
 			},
 		},
 		'INR' => {
 			symbol => '₹',
 			display_name => {
-				'default' => q(インド ルピー),
+				'currency' => q(インド ルピー),
 				'other' => q(インド ルピー),
 			},
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(イラク ディナール),
+				'currency' => q(イラク ディナール),
 				'other' => q(イラク ディナール),
 			},
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(イラン リアル),
+				'currency' => q(イラン リアル),
 				'other' => q(イラン リアル),
 			},
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(アイスランド クローナ),
+				'currency' => q(アイスランド クローナ),
 				'other' => q(アイスランド クローナ),
 			},
 		},
 		'ITL' => {
 			display_name => {
-				'default' => q(イタリア リラ),
+				'currency' => q(イタリア リラ),
 				'other' => q(イタリア リラ),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(ジャマイカ ドル),
+				'currency' => q(ジャマイカ ドル),
 				'other' => q(ジャマイカ ドル),
 			},
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(ヨルダン ディナール),
+				'currency' => q(ヨルダン ディナール),
 				'other' => q(ヨルダン ディナール),
 			},
 		},
 		'JPY' => {
 			symbol => '￥',
 			display_name => {
-				'default' => q(日本円),
+				'currency' => q(日本円),
 				'other' => q(円),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(ケニア シリング),
+				'currency' => q(ケニア シリング),
 				'other' => q(ケニア シリング),
 			},
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(キルギスタン ソム),
+				'currency' => q(キルギスタン ソム),
 				'other' => q(キルギスタン ソム),
 			},
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(カンボジア リエル),
+				'currency' => q(カンボジア リエル),
 				'other' => q(カンボジア リエル),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(コモロ フラン),
+				'currency' => q(コモロ フラン),
 				'other' => q(コモロ フラン),
 			},
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(北朝鮮 ウォン),
+				'currency' => q(北朝鮮 ウォン),
 				'other' => q(北朝鮮 ウォン),
 			},
 		},
 		'KRH' => {
 			display_name => {
-				'default' => q(韓国 ファン（1953-1962）),
+				'currency' => q(韓国 ファン（1953-1962）),
 				'other' => q(韓国 ファン（1953-1962）),
 			},
 		},
 		'KRO' => {
 			display_name => {
-				'default' => q(韓国 ウォン（1945-1953）),
+				'currency' => q(韓国 ウォン（1945-1953）),
 				'other' => q(韓国 ウォン（1945-1953）),
 			},
 		},
 		'KRW' => {
 			symbol => '￦',
 			display_name => {
-				'default' => q(韓国 ウォン),
+				'currency' => q(韓国 ウォン),
 				'other' => q(韓国 ウォン),
 			},
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(クウェート ディナール),
+				'currency' => q(クウェート ディナール),
 				'other' => q(クウェート ディナール),
 			},
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(ケイマン諸島 ドル),
+				'currency' => q(ケイマン諸島 ドル),
 				'other' => q(ケイマン諸島 ドル),
 			},
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(カザフスタン テンゲ),
+				'currency' => q(カザフスタン テンゲ),
 				'other' => q(カザフスタン テンゲ),
 			},
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(ラオス キープ),
+				'currency' => q(ラオス キープ),
 				'other' => q(ラオス キープ),
 			},
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(レバノン ポンド),
+				'currency' => q(レバノン ポンド),
 				'other' => q(レバノン ポンド),
 			},
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(スリランカ ルピー),
+				'currency' => q(スリランカ ルピー),
 				'other' => q(スリランカ ルピー),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(リベリア ドル),
+				'currency' => q(リベリア ドル),
 				'other' => q(リベリア ドル),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(レソト ロティ),
+				'currency' => q(レソト ロティ),
 				'other' => q(レソト ロティ),
 			},
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(リトアニア リタス),
+				'currency' => q(リトアニア リタス),
 				'other' => q(リトアニア リタス),
 			},
 		},
 		'LTT' => {
 			display_name => {
-				'default' => q(リトアニア タロナ),
+				'currency' => q(リトアニア タロナ),
 				'other' => q(リトアニア タロナ),
 			},
 		},
 		'LUC' => {
 			display_name => {
-				'default' => q(ルクセンブルク 兌換フラン),
+				'currency' => q(ルクセンブルク 兌換フラン),
 				'other' => q(ルクセンブルク 兌換フラン),
 			},
 		},
 		'LUF' => {
 			display_name => {
-				'default' => q(ルクセンブルグ フラン),
+				'currency' => q(ルクセンブルグ フラン),
 				'other' => q(ルクセンブルグ フラン),
 			},
 		},
 		'LUL' => {
 			display_name => {
-				'default' => q(ルクセンブルク 金融フラン),
+				'currency' => q(ルクセンブルク 金融フラン),
 				'other' => q(ルクセンブルク 金融フラン),
 			},
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(ラトビア ラッツ),
+				'currency' => q(ラトビア ラッツ),
 				'other' => q(ラトビア ラッツ),
 			},
 		},
 		'LVR' => {
 			display_name => {
-				'default' => q(ラトビア ルーブル),
+				'currency' => q(ラトビア ルーブル),
 				'other' => q(ラトビア ルーブル),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(リビア ディナール),
+				'currency' => q(リビア ディナール),
 				'other' => q(リビア ディナール),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(モロッコ ディルハム),
+				'currency' => q(モロッコ ディルハム),
 				'other' => q(モロッコ ディルハム),
 			},
 		},
 		'MAF' => {
 			display_name => {
-				'default' => q(モロッコ フラン),
+				'currency' => q(モロッコ フラン),
 				'other' => q(モロッコ フラン),
 			},
 		},
 		'MCF' => {
 			display_name => {
-				'default' => q(モネガスク フラン),
+				'currency' => q(モネガスク フラン),
 				'other' => q(モネガスク フラン),
 			},
 		},
 		'MDC' => {
 			display_name => {
-				'default' => q(モルドバ クーポン),
+				'currency' => q(モルドバ クーポン),
 				'other' => q(モルドバ クーポン),
 			},
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(モルドバ レイ),
+				'currency' => q(モルドバ レイ),
 				'other' => q(モルドバ レイ),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(マダガスカル アリアリ),
+				'currency' => q(マダガスカル アリアリ),
 				'other' => q(マダガスカル アリアリ),
 			},
 		},
 		'MGF' => {
 			display_name => {
-				'default' => q(マラガシ フラン),
+				'currency' => q(マラガシ フラン),
 				'other' => q(マラガシ フラン),
 			},
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(マケドニア デナル),
+				'currency' => q(マケドニア デナル),
 				'other' => q(マケドニア デナル),
 			},
 		},
 		'MKN' => {
 			display_name => {
-				'default' => q(マケドニア ディナール（1992-1993）),
+				'currency' => q(マケドニア ディナール（1992-1993）),
 				'other' => q(マケドニア ディナール（1992-1993）),
 			},
 		},
 		'MLF' => {
 			display_name => {
-				'default' => q(マリ フラン),
+				'currency' => q(マリ フラン),
 				'other' => q(マリ フラン),
 			},
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(ミャンマー チャット),
+				'currency' => q(ミャンマー チャット),
 				'other' => q(ミャンマー チャット),
 			},
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(モンゴル トグログ),
+				'currency' => q(モンゴル トグログ),
 				'other' => q(モンゴル トグログ),
 			},
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(マカオ パタカ),
+				'currency' => q(マカオ パタカ),
 				'other' => q(マカオ パタカ),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(モーリタニア ウギア),
+				'currency' => q(モーリタニア ウギア),
 				'other' => q(モーリタニア ウギア),
 			},
 		},
 		'MTL' => {
 			display_name => {
-				'default' => q(マルタ リラ),
+				'currency' => q(マルタ リラ),
 				'other' => q(マルタ リラ),
 			},
 		},
 		'MTP' => {
 			display_name => {
-				'default' => q(マルタ ポンド),
+				'currency' => q(マルタ ポンド),
 				'other' => q(マルタ ポンド),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(モーリシャス ルピー),
+				'currency' => q(モーリシャス ルピー),
 				'other' => q(モーリシャス ルピー),
 			},
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(モルディブ諸島 ルフィア),
+				'currency' => q(モルディブ諸島 ルフィア),
 				'other' => q(モルディブ諸島 ルフィア),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(マラウィ クワチャ),
+				'currency' => q(マラウィ クワチャ),
 				'other' => q(マラウィ クワチャ),
 			},
 		},
 		'MXN' => {
 			symbol => 'MX$',
 			display_name => {
-				'default' => q(メキシコ ペソ),
+				'currency' => q(メキシコ ペソ),
 				'other' => q(メキシコ ペソ),
 			},
 		},
 		'MXP' => {
 			display_name => {
-				'default' => q(メキシコ ペソ (1861–1992)),
-				'other' => q(メキシコ ペソ (1861–1992)),
+				'currency' => q(メキシコ ペソ \(1861–1992\)),
+				'other' => q(メキシコ ペソ \(1861–1992\)),
 			},
 		},
 		'MXV' => {
 			display_name => {
-				'default' => q(メキシコ (UDI)),
-				'other' => q(メキシコ (UDI)),
+				'currency' => q(メキシコ \(UDI\)),
+				'other' => q(メキシコ \(UDI\)),
 			},
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(マレーシア リンギット),
+				'currency' => q(マレーシア リンギット),
 				'other' => q(マレーシア リンギット),
 			},
 		},
 		'MZE' => {
 			display_name => {
-				'default' => q(モザンピーク エスクード),
+				'currency' => q(モザンピーク エスクード),
 				'other' => q(モザンピーク エスクード),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(モザンビーク メティカル (1980–2006)),
-				'other' => q(モザンビーク メティカル (1980–2006)),
+				'currency' => q(モザンビーク メティカル \(1980–2006\)),
+				'other' => q(モザンビーク メティカル \(1980–2006\)),
 			},
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(モザンビーク メティカル),
+				'currency' => q(モザンビーク メティカル),
 				'other' => q(モザンビーク メティカル),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(ナミビア ドル),
+				'currency' => q(ナミビア ドル),
 				'other' => q(ナミビア ドル),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(ナイジェリア ナイラ),
+				'currency' => q(ナイジェリア ナイラ),
 				'other' => q(ナイジェリア ナイラ),
 			},
 		},
 		'NIC' => {
 			display_name => {
-				'default' => q(ニカラグア コルドバ (1988–1991)),
-				'other' => q(ニカラグア コルドバ (1988–1991)),
+				'currency' => q(ニカラグア コルドバ \(1988–1991\)),
+				'other' => q(ニカラグア コルドバ \(1988–1991\)),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(ニカラグア コルドバ オロ),
+				'currency' => q(ニカラグア コルドバ オロ),
 				'other' => q(ニカラグア コルドバ オロ),
 			},
 		},
 		'NLG' => {
 			display_name => {
-				'default' => q(オランダ ギルダー),
+				'currency' => q(オランダ ギルダー),
 				'other' => q(オランダ ギルダー),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(ノルウェー クローネ),
+				'currency' => q(ノルウェー クローネ),
 				'other' => q(ノルウェー クローネ),
 			},
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(ネパール ルピー),
+				'currency' => q(ネパール ルピー),
 				'other' => q(ネパール ルピー),
 			},
 		},
 		'NZD' => {
 			symbol => 'NZ$',
 			display_name => {
-				'default' => q(ニュージーランド ドル),
+				'currency' => q(ニュージーランド ドル),
 				'other' => q(ニュージーランド ドル),
 			},
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(オマーン リアル),
+				'currency' => q(オマーン リアル),
 				'other' => q(オマーン リアル),
 			},
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(パナマ バルボア),
+				'currency' => q(パナマ バルボア),
 				'other' => q(パナマ バルボア),
 			},
 		},
 		'PEI' => {
 			display_name => {
-				'default' => q(ペルー インティ),
+				'currency' => q(ペルー インティ),
 				'other' => q(ペルー インティ),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(ペルー 新ソル),
+				'currency' => q(ペルー 新ソル),
 				'other' => q(ペルー 新ソル),
 			},
 		},
 		'PES' => {
 			display_name => {
-				'default' => q(ペルー ソル (1863–1965)),
-				'other' => q(ペルー ソル (1863–1965)),
+				'currency' => q(ペルー ソル \(1863–1965\)),
+				'other' => q(ペルー ソル \(1863–1965\)),
 			},
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(パプアニューギニア キナ),
+				'currency' => q(パプアニューギニア キナ),
 				'other' => q(パプアニューギニア キナ),
 			},
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(フィリピン ペソ),
+				'currency' => q(フィリピン ペソ),
 				'other' => q(フィリピン ペソ),
 			},
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(パキスタン ルピー),
+				'currency' => q(パキスタン ルピー),
 				'other' => q(パキスタン ルピー),
 			},
 		},
 		'PLN' => {
 			display_name => {
-				'default' => q(ポーランド ズウォティ),
+				'currency' => q(ポーランド ズウォティ),
 				'other' => q(ポーランド ズウォティ),
 			},
 		},
 		'PLZ' => {
 			display_name => {
-				'default' => q(ポーランド ズウォティ (1950–1995)),
-				'other' => q(ポーランド ズウォティ (1950–1995)),
+				'currency' => q(ポーランド ズウォティ \(1950–1995\)),
+				'other' => q(ポーランド ズウォティ \(1950–1995\)),
 			},
 		},
 		'PTE' => {
 			display_name => {
-				'default' => q(ポルトガル エスクード),
+				'currency' => q(ポルトガル エスクード),
 				'other' => q(ポルトガル エスクード),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(パラグアイ グアラニ),
+				'currency' => q(パラグアイ グアラニ),
 				'other' => q(パラグアイ グアラニ),
 			},
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(カタール リアル),
+				'currency' => q(カタール リアル),
 				'other' => q(カタール リアル),
 			},
 		},
 		'RHD' => {
 			display_name => {
-				'default' => q(ローデシア ドル),
+				'currency' => q(ローデシア ドル),
 				'other' => q(ローデシア ドル),
 			},
 		},
 		'ROL' => {
 			display_name => {
-				'default' => q(ルーマニア レイ (1952–2006)),
-				'other' => q(ルーマニア レイ (1952–2006)),
+				'currency' => q(ルーマニア レイ \(1952–2006\)),
+				'other' => q(ルーマニア レイ \(1952–2006\)),
 			},
 		},
 		'RON' => {
 			display_name => {
-				'default' => q(ルーマニア レイ),
+				'currency' => q(ルーマニア レイ),
 				'other' => q(ルーマニア レイ),
 			},
 		},
 		'RSD' => {
 			display_name => {
-				'default' => q(ディナール (セルビア)),
-				'other' => q(ディナール (セルビア)),
+				'currency' => q(ディナール \(セルビア\)),
+				'other' => q(ディナール \(セルビア\)),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(ロシア ルーブル),
+				'currency' => q(ロシア ルーブル),
 				'other' => q(ロシア ルーブル),
 			},
 		},
 		'RUR' => {
 			display_name => {
-				'default' => q(ロシア ルーブル (1991–1998)),
-				'other' => q(ロシア ルーブル (1991–1998)),
+				'currency' => q(ロシア ルーブル \(1991–1998\)),
+				'other' => q(ロシア ルーブル \(1991–1998\)),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(ルワンダ フラン),
+				'currency' => q(ルワンダ フラン),
 				'other' => q(ルワンダ フラン),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(サウジ リヤル),
+				'currency' => q(サウジ リヤル),
 				'other' => q(サウジ リヤル),
 			},
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(ソロモン諸島 ドル),
+				'currency' => q(ソロモン諸島 ドル),
 				'other' => q(ソロモン諸島 ドル),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(セーシェル ルピー),
+				'currency' => q(セーシェル ルピー),
 				'other' => q(セーシェル ルピー),
 			},
 		},
 		'SDD' => {
 			display_name => {
-				'default' => q(スーダン ディナール (1992–2007)),
-				'other' => q(スーダン ディナール (1992–2007)),
+				'currency' => q(スーダン ディナール \(1992–2007\)),
+				'other' => q(スーダン ディナール \(1992–2007\)),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(スーダン ポンド),
+				'currency' => q(スーダン ポンド),
 				'other' => q(スーダン ポンド),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(スーダン ポンド (1957–1998)),
-				'other' => q(スーダン ポンド (1957–1998)),
+				'currency' => q(スーダン ポンド \(1957–1998\)),
+				'other' => q(スーダン ポンド \(1957–1998\)),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(スウェーデン クローナ),
+				'currency' => q(スウェーデン クローナ),
 				'other' => q(スウェーデン クローナ),
 			},
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(シンガポール ドル),
+				'currency' => q(シンガポール ドル),
 				'other' => q(シンガポール ドル),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(セントヘレナ島 ポンド),
+				'currency' => q(セントヘレナ島 ポンド),
 				'other' => q(セントヘレナ島 ポンド),
 			},
 		},
 		'SIT' => {
 			display_name => {
-				'default' => q(スロベニア トラール),
+				'currency' => q(スロベニア トラール),
 				'other' => q(スロベニア トラール),
 			},
 		},
 		'SKK' => {
 			display_name => {
-				'default' => q(スロバキア コルナ),
+				'currency' => q(スロバキア コルナ),
 				'other' => q(スロバキア コルナ),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(シエラレオネ レオン),
+				'currency' => q(シエラレオネ レオン),
 				'other' => q(シエラレオネ レオン),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(ソマリア シリング),
+				'currency' => q(ソマリア シリング),
 				'other' => q(ソマリア シリング),
 			},
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(スリナム ドル),
+				'currency' => q(スリナム ドル),
 				'other' => q(スリナム ドル),
 			},
 		},
 		'SRG' => {
 			display_name => {
-				'default' => q(スリナム ギルダー),
+				'currency' => q(スリナム ギルダー),
 				'other' => q(スリナム ギルダー),
 			},
 		},
 		'SSP' => {
 			display_name => {
-				'default' => q(南スーダン・ポンド),
+				'currency' => q(南スーダン・ポンド),
 				'other' => q(南スーダン・ポンド),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(サントメ・プリンシペ ドブラ),
+				'currency' => q(サントメ・プリンシペ ドブラ),
 				'other' => q(サントメ・プリンシペ ドブラ),
 			},
 		},
 		'SUR' => {
 			display_name => {
-				'default' => q(ソ連 ルーブル),
+				'currency' => q(ソ連 ルーブル),
 				'other' => q(ソ連 ルーブル),
 			},
 		},
 		'SVC' => {
 			display_name => {
-				'default' => q(エルサルバドル コロン),
+				'currency' => q(エルサルバドル コロン),
 				'other' => q(エルサルバドル コロン),
 			},
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(シリア ポンド),
+				'currency' => q(シリア ポンド),
 				'other' => q(シリア ポンド),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(スワジランド リランゲニ),
+				'currency' => q(スワジランド リランゲニ),
 				'other' => q(スワジランド リランゲニ),
 			},
 		},
 		'THB' => {
 			symbol => '฿',
 			display_name => {
-				'default' => q(タイ バーツ),
+				'currency' => q(タイ バーツ),
 				'other' => q(タイ バーツ),
 			},
 		},
 		'TJR' => {
 			display_name => {
-				'default' => q(タジキスタン ルーブル),
+				'currency' => q(タジキスタン ルーブル),
 				'other' => q(タジキスタン ルーブル),
 			},
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(タジキスタン ソモニ),
+				'currency' => q(タジキスタン ソモニ),
 				'other' => q(タジキスタン ソモニ),
 			},
 		},
 		'TMM' => {
 			display_name => {
-				'default' => q(トルクメニスタン マナト (1993–2009)),
-				'other' => q(トルクメニスタン マナト (1993–2009)),
+				'currency' => q(トルクメニスタン マナト \(1993–2009\)),
+				'other' => q(トルクメニスタン マナト \(1993–2009\)),
 			},
 		},
 		'TMT' => {
 			display_name => {
-				'default' => q(トルクメニスタン マナト),
+				'currency' => q(トルクメニスタン マナト),
 				'other' => q(トルクメニスタン マナト),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(チュニジア ディナール),
+				'currency' => q(チュニジア ディナール),
 				'other' => q(チュニジア ディナール),
 			},
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(トンガ パ・アンガ),
+				'currency' => q(トンガ パ・アンガ),
 				'other' => q(トンガ パ・アンガ),
 			},
 		},
 		'TPE' => {
 			display_name => {
-				'default' => q(ティモール エスクード),
+				'currency' => q(ティモール エスクード),
 				'other' => q(ティモール エスクード),
 			},
 		},
 		'TRL' => {
 			display_name => {
-				'default' => q(トルコ リラ (1922–2005)),
-				'other' => q(トルコ リラ (1922–2005)),
+				'currency' => q(トルコ リラ \(1922–2005\)),
+				'other' => q(トルコ リラ \(1922–2005\)),
 			},
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(新トルコリラ),
+				'currency' => q(新トルコリラ),
 				'other' => q(新トルコリラ),
 			},
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(トリニダードトバゴ ドル),
+				'currency' => q(トリニダードトバゴ ドル),
 				'other' => q(トリニダードトバゴ ドル),
 			},
 		},
 		'TWD' => {
 			symbol => 'NT$',
 			display_name => {
-				'default' => q(新台湾ドル),
+				'currency' => q(新台湾ドル),
 				'other' => q(新台湾ドル),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(タンザニア シリング),
+				'currency' => q(タンザニア シリング),
 				'other' => q(タンザニア シリング),
 			},
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(ウクライナ グリブナ),
+				'currency' => q(ウクライナ グリブナ),
 				'other' => q(ウクライナ グリブナ),
 			},
 		},
 		'UAK' => {
 			display_name => {
-				'default' => q(ウクライナ カルボバネツ),
+				'currency' => q(ウクライナ カルボバネツ),
 				'other' => q(ウクライナ カルボバネツ),
 			},
 		},
 		'UGS' => {
 			display_name => {
-				'default' => q(ウガンダ シリング (1966–1987)),
-				'other' => q(ウガンダ シリング (1966–1987)),
+				'currency' => q(ウガンダ シリング \(1966–1987\)),
+				'other' => q(ウガンダ シリング \(1966–1987\)),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(ウガンダ シリング),
+				'currency' => q(ウガンダ シリング),
 				'other' => q(ウガンダ シリング),
 			},
 		},
 		'USD' => {
 			symbol => '$',
 			display_name => {
-				'default' => q(米ドル),
+				'currency' => q(米ドル),
 				'other' => q(米ドル),
 			},
 		},
 		'USN' => {
 			display_name => {
-				'default' => q(米ドル (翌日)),
-				'other' => q(米ドル (翌日)),
+				'currency' => q(米ドル \(翌日\)),
+				'other' => q(米ドル \(翌日\)),
 			},
 		},
 		'USS' => {
 			display_name => {
-				'default' => q(米ドル (当日)),
-				'other' => q(米ドル (当日)),
+				'currency' => q(米ドル \(当日\)),
+				'other' => q(米ドル \(当日\)),
 			},
 		},
 		'UYI' => {
 			display_name => {
-				'default' => q(ウルグアイ ペソエン),
+				'currency' => q(ウルグアイ ペソエン),
 				'other' => q(ウルグアイ ペソエン),
 			},
 		},
 		'UYP' => {
 			display_name => {
-				'default' => q(ウルグアイ ペソ (1975–1993)),
-				'other' => q(ウルグアイ ペソ (1975–1993)),
+				'currency' => q(ウルグアイ ペソ \(1975–1993\)),
+				'other' => q(ウルグアイ ペソ \(1975–1993\)),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(ウルグアイ ペソ),
+				'currency' => q(ウルグアイ ペソ),
 				'other' => q(ウルグアイ ペソ),
 			},
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(ウズベキスタン スム),
+				'currency' => q(ウズベキスタン スム),
 				'other' => q(ウズベキスタン スム),
 			},
 		},
 		'VEB' => {
 			display_name => {
-				'default' => q(ベネズエラ ボリバル (1871–2008)),
-				'other' => q(ベネズエラ ボリバル (1871–2008)),
+				'currency' => q(ベネズエラ ボリバル \(1871–2008\)),
+				'other' => q(ベネズエラ ボリバル \(1871–2008\)),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(ベネズエラ ボリバル),
+				'currency' => q(ベネズエラ ボリバル),
 				'other' => q(ベネズエラ ボリバル),
 			},
 		},
 		'VND' => {
 			symbol => '₫',
 			display_name => {
-				'default' => q(ベトナム ドン),
+				'currency' => q(ベトナム ドン),
 				'other' => q(ベトナム ドン),
 			},
 		},
 		'VNN' => {
 			display_name => {
-				'default' => q(ベトナム ドン（1978-1985）),
+				'currency' => q(ベトナム ドン（1978-1985）),
 				'other' => q(ベトナム ドン（1978-1985）),
 			},
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(バヌアツ バツ),
+				'currency' => q(バヌアツ バツ),
 				'other' => q(バヌアツ バツ),
 			},
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(サモア タラ),
+				'currency' => q(サモア タラ),
 				'other' => q(サモア タラ),
 			},
 		},
 		'XAF' => {
 			symbol => 'FCFA',
 			display_name => {
-				'default' => q(CFA フラン（BEAC）),
+				'currency' => q(CFA フラン（BEAC）),
 				'other' => q(CFA フラン（BEAC）),
 			},
 		},
 		'XAG' => {
 			display_name => {
-				'default' => q(銀),
+				'currency' => q(銀),
 				'other' => q(銀),
 			},
 		},
 		'XAU' => {
 			display_name => {
-				'default' => q(金),
+				'currency' => q(金),
 				'other' => q(金),
 			},
 		},
 		'XBA' => {
 			display_name => {
-				'default' => q(ヨーロッパ混合単位 (EURCO)),
-				'other' => q(ヨーロッパ混合単位 (EURCO)),
+				'currency' => q(ヨーロッパ混合単位 \(EURCO\)),
+				'other' => q(ヨーロッパ混合単位 \(EURCO\)),
 			},
 		},
 		'XBB' => {
 			display_name => {
-				'default' => q(ヨーロッパ通貨単位 (EMU–6)),
-				'other' => q(ヨーロッパ通貨単位 (EMU–6)),
+				'currency' => q(ヨーロッパ通貨単位 \(EMU–6\)),
+				'other' => q(ヨーロッパ通貨単位 \(EMU–6\)),
 			},
 		},
 		'XBC' => {
 			display_name => {
-				'default' => q(ヨーロッパ勘定単位 (EUA–9)),
-				'other' => q(ヨーロッパ勘定単位 (EUA–9)),
+				'currency' => q(ヨーロッパ勘定単位 \(EUA–9\)),
+				'other' => q(ヨーロッパ勘定単位 \(EUA–9\)),
 			},
 		},
 		'XBD' => {
 			display_name => {
-				'default' => q(ヨーロッパ勘定単位 (EUA–17)),
-				'other' => q(ヨーロッパ勘定単位 (EUA–17)),
+				'currency' => q(ヨーロッパ勘定単位 \(EUA–17\)),
+				'other' => q(ヨーロッパ勘定単位 \(EUA–17\)),
 			},
 		},
 		'XCD' => {
 			symbol => 'EC$',
 			display_name => {
-				'default' => q(東カリブ ドル),
+				'currency' => q(東カリブ ドル),
 				'other' => q(東カリブ ドル),
 			},
 		},
 		'XDR' => {
 			display_name => {
-				'default' => q(特別引き出し権),
+				'currency' => q(特別引き出し権),
 				'other' => q(特別引き出し権),
 			},
 		},
 		'XEU' => {
 			display_name => {
-				'default' => q(ヨーロッパ通貨単位),
+				'currency' => q(ヨーロッパ通貨単位),
 				'other' => q(ヨーロッパ通貨単位),
 			},
 		},
 		'XFO' => {
 			display_name => {
-				'default' => q(フランス金フラン),
+				'currency' => q(フランス金フラン),
 				'other' => q(フランス金フラン),
 			},
 		},
 		'XFU' => {
 			display_name => {
-				'default' => q(フランス フラン (UIC)),
-				'other' => q(フランス フラン (UIC)),
+				'currency' => q(フランス フラン \(UIC\)),
+				'other' => q(フランス フラン \(UIC\)),
 			},
 		},
 		'XOF' => {
 			symbol => 'CFA',
 			display_name => {
-				'default' => q(CFA フラン（BCEAO）),
+				'currency' => q(CFA フラン（BCEAO）),
 				'other' => q(CFA フラン（BCEAO）),
 			},
 		},
 		'XPD' => {
 			display_name => {
-				'default' => q(パラジウム),
+				'currency' => q(パラジウム),
 				'other' => q(パラジウム),
 			},
 		},
 		'XPF' => {
 			symbol => 'CFPF',
 			display_name => {
-				'default' => q(CFP フラン),
+				'currency' => q(CFP フラン),
 				'other' => q(CFP フラン),
 			},
 		},
 		'XPT' => {
 			display_name => {
-				'default' => q(プラチナ),
+				'currency' => q(プラチナ),
 				'other' => q(プラチナ),
 			},
 		},
 		'XRE' => {
 			display_name => {
-				'default' => q(RINET基金),
+				'currency' => q(RINET基金),
 				'other' => q(RINET基金),
 			},
 		},
 		'XSU' => {
 			display_name => {
-				'default' => q(スクレ),
+				'currency' => q(スクレ),
 				'other' => q(スクレ),
 			},
 		},
 		'XTS' => {
 			display_name => {
-				'default' => q(テスト用通貨コード),
+				'currency' => q(テスト用通貨コード),
 				'other' => q(テスト用通貨コード),
 			},
 		},
 		'XUA' => {
 			display_name => {
-				'default' => q(UA (アフリカ開発銀行)),
-				'other' => q(UA (アフリカ開発銀行)),
+				'currency' => q(UA \(アフリカ開発銀行\)),
+				'other' => q(UA \(アフリカ開発銀行\)),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(不明または無効な通貨),
+				'currency' => q(不明または無効な通貨),
 				'other' => q(不明または無効な通貨),
 			},
 		},
 		'YDD' => {
 			display_name => {
-				'default' => q(イエメン ディナール),
+				'currency' => q(イエメン ディナール),
 				'other' => q(イエメン ディナール),
 			},
 		},
 		'YER' => {
 			display_name => {
-				'default' => q(イエメン リアル),
+				'currency' => q(イエメン リアル),
 				'other' => q(イエメン リアル),
 			},
 		},
 		'YUD' => {
 			display_name => {
-				'default' => q(ユーゴスラビア ハード・ディナール (1966–1990)),
-				'other' => q(ユーゴスラビア ハード・ディナール (1966–1990)),
+				'currency' => q(ユーゴスラビア ハード・ディナール \(1966–1990\)),
+				'other' => q(ユーゴスラビア ハード・ディナール \(1966–1990\)),
 			},
 		},
 		'YUM' => {
 			display_name => {
-				'default' => q(ユーゴスラビア ノビ・ディナール (1994–2002)),
-				'other' => q(ユーゴスラビア ノビ・ディナール (1994–2002)),
+				'currency' => q(ユーゴスラビア ノビ・ディナール \(1994–2002\)),
+				'other' => q(ユーゴスラビア ノビ・ディナール \(1994–2002\)),
 			},
 		},
 		'YUN' => {
 			display_name => {
-				'default' => q(ユーゴスラビア 兌換ディナール (1990–1992)),
-				'other' => q(ユーゴスラビア 兌換ディナール (1990–1992)),
+				'currency' => q(ユーゴスラビア 兌換ディナール \(1990–1992\)),
+				'other' => q(ユーゴスラビア 兌換ディナール \(1990–1992\)),
 			},
 		},
 		'YUR' => {
 			display_name => {
-				'default' => q(ユーゴスラビア 改革ディナール（1992-1993）),
+				'currency' => q(ユーゴスラビア 改革ディナール（1992-1993）),
 				'other' => q(ユーゴスラビア 改革ディナール（1992-1993）),
 			},
 		},
 		'ZAL' => {
 			display_name => {
-				'default' => q(南アフリカ ランド (ZAL)),
-				'other' => q(南アフリカ ランド (ZAL)),
+				'currency' => q(南アフリカ ランド \(ZAL\)),
+				'other' => q(南アフリカ ランド \(ZAL\)),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(南アフリカ ランド),
+				'currency' => q(南アフリカ ランド),
 				'other' => q(南アフリカ ランド),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(ザンビア クワチャ (1968–2012)),
-				'other' => q(ザンビア クワチャ (1968–2012)),
+				'currency' => q(ザンビア クワチャ \(1968–2012\)),
+				'other' => q(ザンビア クワチャ \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(ザンビア クワチャ),
+				'currency' => q(ザンビア クワチャ),
 				'other' => q(ザンビア クワチャ),
 			},
 		},
 		'ZRN' => {
 			display_name => {
-				'default' => q(ザイール 新ザイール (1993–1998)),
-				'other' => q(ザイール 新ザイール (1993–1998)),
+				'currency' => q(ザイール 新ザイール \(1993–1998\)),
+				'other' => q(ザイール 新ザイール \(1993–1998\)),
 			},
 		},
 		'ZRZ' => {
 			display_name => {
-				'default' => q(ザイール ザイール (1971–1993)),
-				'other' => q(ザイール ザイール (1971–1993)),
+				'currency' => q(ザイール ザイール \(1971–1993\)),
+				'other' => q(ザイール ザイール \(1971–1993\)),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(ジンバブエ ドル (1980–2008)),
-				'other' => q(ジンバブエ ドル (1980–2008)),
+				'currency' => q(ジンバブエ ドル \(1980–2008\)),
+				'other' => q(ジンバブエ ドル \(1980–2008\)),
 			},
 		},
 		'ZWL' => {
 			display_name => {
-				'default' => q(ジンバブエ ドル (2009)),
-				'other' => q(ジンバブエ ドル (2009)),
+				'currency' => q(ジンバブエ ドル \(2009\)),
+				'other' => q(ジンバブエ ドル \(2009\)),
 			},
 		},
 		'ZWR' => {
 			display_name => {
-				'default' => q(シンバブエ ドル（2008）),
+				'currency' => q(シンバブエ ドル（2008）),
 				'other' => q(シンバブエ ドル（2008）),
 			},
 		},
@@ -5177,14 +5176,14 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'narrow' => {
-					'pm' => q{午後},
+				'wide' => {
 					'noon' => q{正午},
+					'pm' => q{午後},
 					'am' => q{午前},
 				},
-				'wide' => {
-					'pm' => q{午後},
+				'narrow' => {
 					'am' => q{午前},
+					'pm' => q{午後},
 					'noon' => q{正午},
 				},
 			},
@@ -5895,41 +5894,120 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'chinese' => {
+		'gregorian' => {
 			EEEEd => q{d日EEEE},
+			EHm => q{HH 時 mm 分 (E)},
+			EHms => q{HH 時 mm 分 ss 秒 (E)},
 			Ed => q{d日(E)},
-			Gy => q{U年},
-			GyMMM => q{U年MMM},
-			GyMMMEEEEd => q{U年MMMd日EEEE},
-			GyMMMEd => q{U年MMMd日(E)},
-			GyMMMd => q{U年MMMd日},
+			Ehm => q{a K 時 mm 分 (E)},
+			Ehms => q{a K 時 mm 分 ss 秒 (E)},
+			Gy => q{Gy年},
+			GyMMM => q{Gy年M月},
+			GyMMMEEEEd => q{Gy年M月d日EEEE},
+			GyMMMEd => q{Gy年M月d日(E)},
+			GyMMMd => q{Gy年M月d日},
 			H => q{H時},
 			Hm => q{H:mm},
 			Hms => q{H:mm:ss},
-			M => q{MMM},
+			M => q{M月},
 			MEEEEd => q{M/dEEEE},
 			MEd => q{M/d(E)},
-			MMMEEEEd => q{MMMd日EEEE},
-			MMMEd => q{MMMd日(E)},
-			MMMd => q{MMMd日},
+			MMM => q{M月},
+			MMMEEEEd => q{M月d日EEEE},
+			MMMEd => q{M月d日(E)},
+			MMMd => q{M月d日},
 			Md => q{M/d},
 			d => q{d日},
 			h => q{aK時},
 			hm => q{aK:mm},
 			hms => q{aK:mm:ss},
-			y => q{U年},
-			yMd => q{U年M月d日},
-			yyyy => q{U年},
-			yyyyM => q{U年M月},
-			yyyyMEEEEd => q{U年M月d日EEEE},
-			yyyyMEd => q{U年M月d日(E)},
-			yyyyMMM => q{U年MMM},
-			yyyyMMMEEEEd => q{U年MMMd日EEEE},
-			yyyyMMMEd => q{U年MMMd日(E)},
-			yyyyMMMd => q{U年MMMd日},
-			yyyyMd => q{U年M月d日},
-			yyyyQQQ => q{U年QQQ},
-			yyyyQQQQ => q{U年QQQQ},
+			ms => q{mm:ss},
+			y => q{y年},
+			yM => q{y/M},
+			yMEEEEd => q{y/M/dEEEE},
+			yMEd => q{y/M/d(E)},
+			yMM => q{y/MM},
+			yMMM => q{y年M月},
+			yMMMEEEEd => q{y年M月d日EEEE},
+			yMMMEd => q{y年M月d日(E)},
+			yMMMd => q{y年M月d日},
+			yMd => q{y/M/d},
+			yQQQ => q{y/QQQ},
+			yQQQQ => q{yQQQQ},
+		},
+		'buddhist' => {
+			EEEEd => q{d日EEEE},
+			Ed => q{d日(E)},
+			Gy => q{GGGGy年},
+			GyMMM => q{GGGGy年M月},
+			GyMMMEEEEd => q{GGGGy年M月d日EEEE},
+			GyMMMEd => q{GGGGy年M月d日(E)},
+			GyMMMd => q{GGGGy年M月d日},
+			GyMd => q{GGGGy年M月d日},
+			H => q{H時},
+			Hm => q{H:mm},
+			Hms => q{H:mm:ss},
+			M => q{M月},
+			MEEEEd => q{M/dEEEE},
+			MEd => q{M/d(E)},
+			MMM => q{M月},
+			MMMEEEEd => q{M月d日EEEE},
+			MMMEd => q{M月d日(E)},
+			MMMd => q{M月d日},
+			Md => q{M/d},
+			d => q{d日},
+			h => q{aK時},
+			hm => q{aK:mm},
+			hms => q{aK:mm:ss},
+			ms => q{mm:ss},
+			y => q{GGGGy年},
+			yyyy => q{GGGGy年},
+			yyyyM => q{GGGGy年M月},
+			yyyyMEEEEd => q{GGGGy年M/dEEEE},
+			yyyyMEd => q{GGGGy年M/d(E)},
+			yyyyMM => q{Gy/MM},
+			yyyyMMM => q{GGGGy年M月},
+			yyyyMMMEEEEd => q{GGGGy年M月d日EEEE},
+			yyyyMMMEd => q{GGGGy年M月d日(E)},
+			yyyyMMMd => q{GGGGy年M月d日},
+			yyyyMd => q{Gy/M/d},
+		},
+		'generic' => {
+			EEEEd => q{d日EEEE},
+			Ed => q{d日(E)},
+			Gy => q{Gy年},
+			GyMMM => q{Gy年M月},
+			GyMMMEEEEd => q{Gy年M月d日EEEE},
+			GyMMMEd => q{Gy年M月d日(E)},
+			GyMMMd => q{Gy年M月d日},
+			H => q{H時},
+			Hm => q{H:mm},
+			Hms => q{H:mm:ss},
+			M => q{M月},
+			MEEEEd => q{M/dEEEE},
+			MEd => q{M/d(E)},
+			MMM => q{M月},
+			MMMEEEEd => q{M月d日EEEE},
+			MMMEd => q{M月d日(E)},
+			MMMd => q{M月d日},
+			Md => q{M/d},
+			d => q{d日},
+			h => q{aK時},
+			hm => q{aK:mm},
+			hms => q{aK:mm:ss},
+			ms => q{mm:ss},
+			y => q{Gy年},
+			yyyy => q{Gy年},
+			yyyyM => q{Gy/M},
+			yyyyMEEEEd => q{Gy/M/dEEEE},
+			yyyyMEd => q{Gy/M/d(E)},
+			yyyyMMM => q{Gy年M月},
+			yyyyMMMEEEEd => q{Gy年M月d日EEEE},
+			yyyyMMMEd => q{Gy年M月d日(E)},
+			yyyyMMMd => q{Gy年M月d日},
+			yyyyMd => q{Gy/M/d},
+			yyyyQQQ => q{Gy/QQQ},
+			yyyyQQQQ => q{GyQQQQ},
 		},
 		'islamic' => {
 			M => q{M月},
@@ -5976,84 +6054,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyMMMd => q{Gy年M月d日},
 			yyyyMd => q{Gy/M/d},
 		},
-		'generic' => {
-			EEEEd => q{d日EEEE},
-			Ed => q{d日(E)},
-			Gy => q{Gy年},
-			GyMMM => q{Gy年M月},
-			GyMMMEEEEd => q{Gy年M月d日EEEE},
-			GyMMMEd => q{Gy年M月d日(E)},
-			GyMMMd => q{Gy年M月d日},
-			H => q{H時},
-			Hm => q{H:mm},
-			Hms => q{H:mm:ss},
-			M => q{M月},
-			MEEEEd => q{M/dEEEE},
-			MEd => q{M/d(E)},
-			MMM => q{M月},
-			MMMEEEEd => q{M月d日EEEE},
-			MMMEd => q{M月d日(E)},
-			MMMd => q{M月d日},
-			Md => q{M/d},
-			d => q{d日},
-			h => q{aK時},
-			hm => q{aK:mm},
-			hms => q{aK:mm:ss},
-			ms => q{mm:ss},
-			y => q{Gy年},
-			yyyy => q{Gy年},
-			yyyyM => q{Gy/M},
-			yyyyMEEEEd => q{Gy/M/dEEEE},
-			yyyyMEd => q{Gy/M/d(E)},
-			yyyyMMM => q{Gy年M月},
-			yyyyMMMEEEEd => q{Gy年M月d日EEEE},
-			yyyyMMMEd => q{Gy年M月d日(E)},
-			yyyyMMMd => q{Gy年M月d日},
-			yyyyMd => q{Gy/M/d},
-			yyyyQQQ => q{Gy/QQQ},
-			yyyyQQQQ => q{GyQQQQ},
-		},
-		'gregorian' => {
-			EEEEd => q{d日EEEE},
-			EHm => q{HH 時 mm 分 (E)},
-			EHms => q{HH 時 mm 分 ss 秒 (E)},
-			Ed => q{d日(E)},
-			Ehm => q{a K 時 mm 分 (E)},
-			Ehms => q{a K 時 mm 分 ss 秒 (E)},
-			Gy => q{Gy年},
-			GyMMM => q{Gy年M月},
-			GyMMMEEEEd => q{Gy年M月d日EEEE},
-			GyMMMEd => q{Gy年M月d日(E)},
-			GyMMMd => q{Gy年M月d日},
-			H => q{H時},
-			Hm => q{H:mm},
-			Hms => q{H:mm:ss},
-			M => q{M月},
-			MEEEEd => q{M/dEEEE},
-			MEd => q{M/d(E)},
-			MMM => q{M月},
-			MMMEEEEd => q{M月d日EEEE},
-			MMMEd => q{M月d日(E)},
-			MMMd => q{M月d日},
-			Md => q{M/d},
-			d => q{d日},
-			h => q{aK時},
-			hm => q{aK:mm},
-			hms => q{aK:mm:ss},
-			ms => q{mm:ss},
-			y => q{y年},
-			yM => q{y/M},
-			yMEEEEd => q{y/M/dEEEE},
-			yMEd => q{y/M/d(E)},
-			yMM => q{y/MM},
-			yMMM => q{y年M月},
-			yMMMEEEEd => q{y年M月d日EEEE},
-			yMMMEd => q{y年M月d日(E)},
-			yMMMd => q{y年M月d日},
-			yMd => q{y/M/d},
-			yQQQ => q{y/QQQ},
-			yQQQQ => q{yQQQQ},
-		},
 		'roc' => {
 			M => q{M月},
 			MEd => q{M/d(E)},
@@ -6064,42 +6064,41 @@ has 'datetime_formats_available_formats' => (
 			d => q{d日},
 			y => q{Gy年},
 		},
-		'buddhist' => {
+		'chinese' => {
 			EEEEd => q{d日EEEE},
 			Ed => q{d日(E)},
-			Gy => q{GGGGy年},
-			GyMMM => q{GGGGy年M月},
-			GyMMMEEEEd => q{GGGGy年M月d日EEEE},
-			GyMMMEd => q{GGGGy年M月d日(E)},
-			GyMMMd => q{GGGGy年M月d日},
-			GyMd => q{GGGGy年M月d日},
+			Gy => q{U年},
+			GyMMM => q{U年MMM},
+			GyMMMEEEEd => q{U年MMMd日EEEE},
+			GyMMMEd => q{U年MMMd日(E)},
+			GyMMMd => q{U年MMMd日},
 			H => q{H時},
 			Hm => q{H:mm},
 			Hms => q{H:mm:ss},
-			M => q{M月},
+			M => q{MMM},
 			MEEEEd => q{M/dEEEE},
 			MEd => q{M/d(E)},
-			MMM => q{M月},
-			MMMEEEEd => q{M月d日EEEE},
-			MMMEd => q{M月d日(E)},
-			MMMd => q{M月d日},
+			MMMEEEEd => q{MMMd日EEEE},
+			MMMEd => q{MMMd日(E)},
+			MMMd => q{MMMd日},
 			Md => q{M/d},
 			d => q{d日},
 			h => q{aK時},
 			hm => q{aK:mm},
 			hms => q{aK:mm:ss},
-			ms => q{mm:ss},
-			y => q{GGGGy年},
-			yyyy => q{GGGGy年},
-			yyyyM => q{GGGGy年M月},
-			yyyyMEEEEd => q{GGGGy年M/dEEEE},
-			yyyyMEd => q{GGGGy年M/d(E)},
-			yyyyMM => q{Gy/MM},
-			yyyyMMM => q{GGGGy年M月},
-			yyyyMMMEEEEd => q{GGGGy年M月d日EEEE},
-			yyyyMMMEd => q{GGGGy年M月d日(E)},
-			yyyyMMMd => q{GGGGy年M月d日},
-			yyyyMd => q{Gy/M/d},
+			y => q{U年},
+			yMd => q{U年M月d日},
+			yyyy => q{U年},
+			yyyyM => q{U年M月},
+			yyyyMEEEEd => q{U年M月d日EEEE},
+			yyyyMEd => q{U年M月d日(E)},
+			yyyyMMM => q{U年MMM},
+			yyyyMMMEEEEd => q{U年MMMd日EEEE},
+			yyyyMMMEd => q{U年MMMd日(E)},
+			yyyyMMMd => q{U年MMMd日},
+			yyyyMd => q{U年M月d日},
+			yyyyQQQ => q{U年QQQ},
+			yyyyQQQQ => q{U年QQQQ},
 		},
 	} },
 );
@@ -6120,7 +6119,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'chinese' => {
+		'gregorian' => {
 			H => {
 				H => q{H時～H時},
 			},
@@ -6143,18 +6142,18 @@ has 'datetime_formats_interval' => (
 				d => q{MM/dd(E)～MM/dd(E)},
 			},
 			MMM => {
-				M => q{MMM～MMM},
+				M => q{M月～M月},
 			},
 			MMMEd => {
-				M => q{MMMd日(E)～MMMd日(E)},
-				d => q{MMMd日(E)～d日(E)},
+				M => q{M月d日(E)～M月d日(E)},
+				d => q{M月d日(E)～d日(E)},
 			},
 			MMMM => {
-				M => q{MMMM～MMMM},
+				M => q{M月～M月},
 			},
 			MMMd => {
-				M => q{MMMd日～MMMd日},
-				d => q{MMMd日～d日},
+				M => q{M月d日～M月d日},
+				d => q{M月d日～d日},
 			},
 			Md => {
 				M => q{MM/dd～MM/dd},
@@ -6183,39 +6182,39 @@ has 'datetime_formats_interval' => (
 				h => q{aK時～K時(v)},
 			},
 			y => {
-				y => q{U年～U年},
+				y => q{y年～y年},
 			},
 			yM => {
-				M => q{U/MM～U/MM},
-				y => q{U/MM～U/MM},
+				M => q{y/MM～y/MM},
+				y => q{y/MM～y/MM},
 			},
 			yMEd => {
-				M => q{U/MM/dd(E)～U/MM/dd(E)},
-				d => q{U/MM/dd(E)～U/MM/dd(E)},
-				y => q{U/MM/dd(E)～U/MM/dd(E)},
+				M => q{y/MM/dd(E)～y/MM/dd(E)},
+				d => q{y/MM/dd(E)～y/MM/dd(E)},
+				y => q{y/MM/dd(E)～y/MM/dd(E)},
 			},
 			yMMM => {
-				M => q{U年MMM～MMM},
-				y => q{U年MMM～U年MMM},
+				M => q{y年M月～M月},
+				y => q{y年M月～y年M月},
 			},
 			yMMMEd => {
-				M => q{U年MMMd日(E)～MMMd日(E)},
-				d => q{U年MMMd日(E)～d日(E)},
-				y => q{U年MMMd日(E)～U年MMMd日(E)},
+				M => q{y年M月d日(E)～M月d日(E)},
+				d => q{y年M月d日(E)～d日(E)},
+				y => q{y年M月d日(E)～y年M月d日(E)},
 			},
 			yMMMM => {
-				M => q{U年MMM～MMM},
-				y => q{U年MMM～U年MMM},
+				M => q{y年M月～M月},
+				y => q{y年M月～y年M月},
 			},
 			yMMMd => {
-				M => q{U年MMMd日～MMMd日},
-				d => q{U年MMMd日～d日},
-				y => q{U年MMMd日～U年MMMd日},
+				M => q{y年M月d日～M月d日},
+				d => q{y年M月d日～d日},
+				y => q{y年M月d日～y年M月d日},
 			},
 			yMd => {
-				M => q{U/MM/dd～U/MM/dd},
-				d => q{U/MM/dd～U/MM/dd},
-				y => q{U/MM/dd～U/MM/dd},
+				M => q{y/MM/dd～y/MM/dd},
+				d => q{y/MM/dd～y/MM/dd},
+				y => q{y/MM/dd～y/MM/dd},
 			},
 		},
 		'generic' => {
@@ -6316,7 +6315,7 @@ has 'datetime_formats_interval' => (
 				y => q{Gy/MM/dd～y/MM/dd},
 			},
 		},
-		'gregorian' => {
+		'chinese' => {
 			H => {
 				H => q{H時～H時},
 			},
@@ -6339,18 +6338,18 @@ has 'datetime_formats_interval' => (
 				d => q{MM/dd(E)～MM/dd(E)},
 			},
 			MMM => {
-				M => q{M月～M月},
+				M => q{MMM～MMM},
 			},
 			MMMEd => {
-				M => q{M月d日(E)～M月d日(E)},
-				d => q{M月d日(E)～d日(E)},
+				M => q{MMMd日(E)～MMMd日(E)},
+				d => q{MMMd日(E)～d日(E)},
 			},
 			MMMM => {
-				M => q{M月～M月},
+				M => q{MMMM～MMMM},
 			},
 			MMMd => {
-				M => q{M月d日～M月d日},
-				d => q{M月d日～d日},
+				M => q{MMMd日～MMMd日},
+				d => q{MMMd日～d日},
 			},
 			Md => {
 				M => q{MM/dd～MM/dd},
@@ -6379,39 +6378,39 @@ has 'datetime_formats_interval' => (
 				h => q{aK時～K時(v)},
 			},
 			y => {
-				y => q{y年～y年},
+				y => q{U年～U年},
 			},
 			yM => {
-				M => q{y/MM～y/MM},
-				y => q{y/MM～y/MM},
+				M => q{U/MM～U/MM},
+				y => q{U/MM～U/MM},
 			},
 			yMEd => {
-				M => q{y/MM/dd(E)～y/MM/dd(E)},
-				d => q{y/MM/dd(E)～y/MM/dd(E)},
-				y => q{y/MM/dd(E)～y/MM/dd(E)},
+				M => q{U/MM/dd(E)～U/MM/dd(E)},
+				d => q{U/MM/dd(E)～U/MM/dd(E)},
+				y => q{U/MM/dd(E)～U/MM/dd(E)},
 			},
 			yMMM => {
-				M => q{y年M月～M月},
-				y => q{y年M月～y年M月},
+				M => q{U年MMM～MMM},
+				y => q{U年MMM～U年MMM},
 			},
 			yMMMEd => {
-				M => q{y年M月d日(E)～M月d日(E)},
-				d => q{y年M月d日(E)～d日(E)},
-				y => q{y年M月d日(E)～y年M月d日(E)},
+				M => q{U年MMMd日(E)～MMMd日(E)},
+				d => q{U年MMMd日(E)～d日(E)},
+				y => q{U年MMMd日(E)～U年MMMd日(E)},
 			},
 			yMMMM => {
-				M => q{y年M月～M月},
-				y => q{y年M月～y年M月},
+				M => q{U年MMM～MMM},
+				y => q{U年MMM～U年MMM},
 			},
 			yMMMd => {
-				M => q{y年M月d日～M月d日},
-				d => q{y年M月d日～d日},
-				y => q{y年M月d日～y年M月d日},
+				M => q{U年MMMd日～MMMd日},
+				d => q{U年MMMd日～d日},
+				y => q{U年MMMd日～U年MMMd日},
 			},
 			yMd => {
-				M => q{y/MM/dd～y/MM/dd},
-				d => q{y/MM/dd～y/MM/dd},
-				y => q{y/MM/dd～y/MM/dd},
+				M => q{U/MM/dd～U/MM/dd},
+				d => q{U/MM/dd～U/MM/dd},
+				y => q{U/MM/dd～U/MM/dd},
 			},
 		},
 	} },

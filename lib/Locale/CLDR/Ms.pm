@@ -1,6 +1,6 @@
-package Locale::CLDR::Ms;
+package Locale::CLDR::Ms v0.0.4;
 # This file auto generated from Data\common\main\ms.xml
-#	on Mon 31 Mar  1:26:04 am GMT
+#	on Sun 13 Apr 11:26:06 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -1049,7 +1049,7 @@ has 'units' => (
 						'other' => q({0} auns),
 					},
 					'per' => {
-						'default' => q({0} per {1}),
+						'' => q({0} per {1}),
 					},
 					'picometer' => {
 						'other' => q({0} pikometer),
@@ -1192,7 +1192,7 @@ has 'units' => (
 						'other' => q({0} auns),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'other' => q({0} pm),
@@ -1335,7 +1335,7 @@ has 'units' => (
 						'other' => q({0} auns),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'other' => q({0} pm),
@@ -1373,7 +1373,6 @@ has 'units' => (
 				},
 			} }
 );
-
 
 has 'yesstr' => (
 	is			=> 'ro',
@@ -1592,239 +1591,239 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Dirham Emiriah Arab Bersatu),
+				'currency' => q(Dirham Emiriah Arab Bersatu),
 			},
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(Afghani Afghanistan),
+				'currency' => q(Afghani Afghanistan),
 				'other' => q(Afghani Afghanistan),
 			},
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(Lek Albania),
+				'currency' => q(Lek Albania),
 			},
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(Dram Armenia),
+				'currency' => q(Dram Armenia),
 			},
 		},
 		'ANG' => {
 			display_name => {
-				'default' => q(Guilder Antillean Netherland),
+				'currency' => q(Guilder Antillean Netherland),
 				'other' => q(Guilder Antillean Netherland),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Kwanza Angola),
+				'currency' => q(Kwanza Angola),
 				'other' => q(Kwanza Angola),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(Peso Argentina),
+				'currency' => q(Peso Argentina),
 				'other' => q(Peso Argentina),
 			},
 		},
 		'AUD' => {
 			symbol => 'A$',
 			display_name => {
-				'default' => q(Dolar Australia),
+				'currency' => q(Dolar Australia),
 				'other' => q(Dolar Australia),
 			},
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(Florin Aruba),
+				'currency' => q(Florin Aruba),
 				'other' => q(Florin Aruba),
 			},
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(Manat Azerbaijan),
+				'currency' => q(Manat Azerbaijan),
 			},
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(Mark Boleh Tukar Bosnia-Herzegovina),
+				'currency' => q(Mark Boleh Tukar Bosnia-Herzegovina),
 			},
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(Dolar Barbados),
+				'currency' => q(Dolar Barbados),
 				'other' => q(Dolar Barbados),
 			},
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(Taka Bangladesh),
+				'currency' => q(Taka Bangladesh),
 				'other' => q(Taka Bangladesh),
 			},
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(Lev Bulgaria),
+				'currency' => q(Lev Bulgaria),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Dinar Bahrain),
+				'currency' => q(Dinar Bahrain),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Franc Burundia),
+				'currency' => q(Franc Burundia),
 				'other' => q(Franc Burundia),
 			},
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(Dolar Bermuda),
+				'currency' => q(Dolar Bermuda),
 				'other' => q(Dolar Bermuda),
 			},
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(Dolar Brunei),
+				'currency' => q(Dolar Brunei),
 				'other' => q(Dolar Brunei),
 			},
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(Boliviano Bolivia),
+				'currency' => q(Boliviano Bolivia),
 				'other' => q(Boliviano Bolivia),
 			},
 		},
 		'BRL' => {
 			symbol => 'R$',
 			display_name => {
-				'default' => q(Real Brazil),
+				'currency' => q(Real Brazil),
 				'other' => q(Real Brazil),
 			},
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(Dolar Bahamas),
+				'currency' => q(Dolar Bahamas),
 				'other' => q(Dolar Bahamas),
 			},
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(Ngultrum Bhutan),
+				'currency' => q(Ngultrum Bhutan),
 				'other' => q(Ngultrum Bhutan),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Pula Botswana),
+				'currency' => q(Pula Botswana),
 			},
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(Ruble Belarus),
+				'currency' => q(Ruble Belarus),
 			},
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(Dolar Belize),
+				'currency' => q(Dolar Belize),
 				'other' => q(Dolar Belize),
 			},
 		},
 		'CAD' => {
 			symbol => 'CA$',
 			display_name => {
-				'default' => q(Dolar Kanada),
+				'currency' => q(Dolar Kanada),
 				'other' => q(Dolar Kanada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Franc Congo),
+				'currency' => q(Franc Congo),
 				'other' => q(Franc Congo),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Franc Switzerland),
+				'currency' => q(Franc Switzerland),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(Peso Chile),
+				'currency' => q(Peso Chile),
 				'other' => q(Peso Chile),
 			},
 		},
 		'CNY' => {
 			symbol => 'CN¥',
 			display_name => {
-				'default' => q(Yuan Cina),
+				'currency' => q(Yuan Cina),
 				'other' => q(Yuan Cina),
 			},
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(Peso Colombia),
+				'currency' => q(Peso Colombia),
 				'other' => q(Peso Colombia),
 			},
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(Colon Costa Rica),
+				'currency' => q(Colon Costa Rica),
 				'other' => q(Colon Costa Rica),
 			},
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(Peso Boleh Tukar Cuba),
+				'currency' => q(Peso Boleh Tukar Cuba),
 				'other' => q(Peso Boleh Tukar Cuba),
 			},
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(Peso Cuba),
+				'currency' => q(Peso Cuba),
 				'other' => q(Peso Cuba),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Escudo Tanjung Verde),
+				'currency' => q(Escudo Tanjung Verde),
 				'other' => q(Escudo Tanjung Verde),
 			},
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(Koruna Republik Czech),
+				'currency' => q(Koruna Republik Czech),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Franc Djibouti),
+				'currency' => q(Franc Djibouti),
 				'other' => q(Franc Djibouti),
 			},
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(Krone Denmark),
+				'currency' => q(Krone Denmark),
 			},
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(Peso Dominican),
+				'currency' => q(Peso Dominican),
 				'other' => q(Peso Dominican),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Dinar Algeria),
+				'currency' => q(Dinar Algeria),
 				'other' => q(Dinar Algeria),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Paun Mesir),
+				'currency' => q(Paun Mesir),
 				'other' => q(Paun Mesir),
 			},
 		},
@@ -1835,596 +1834,596 @@ has 'curriencies' => (
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Birr Ethiopia),
+				'currency' => q(Birr Ethiopia),
 				'other' => q(Birr Ethiopia),
 			},
 		},
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(Euro),
+				'currency' => q(Euro),
 			},
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(Dolar Fiji),
+				'currency' => q(Dolar Fiji),
 				'other' => q(Dolar Fiji),
 			},
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(Paun Kepulauan Falkland),
+				'currency' => q(Paun Kepulauan Falkland),
 				'other' => q(Paun Kepulauan Falkland),
 			},
 		},
 		'GBP' => {
 			symbol => '£',
 			display_name => {
-				'default' => q(Paun Sterling British),
+				'currency' => q(Paun Sterling British),
 			},
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(Lari Georgia),
+				'currency' => q(Lari Georgia),
 			},
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(Cedi Ghana),
+				'currency' => q(Cedi Ghana),
 				'other' => q(Cedi Ghana),
 			},
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(Paun Gibraltar),
+				'currency' => q(Paun Gibraltar),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Dalasi Gambia),
+				'currency' => q(Dalasi Gambia),
 				'other' => q(Dalasi Gambia),
 			},
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(Franc Guinea),
+				'currency' => q(Franc Guinea),
 				'other' => q(Franc Guinea),
 			},
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(Quetzal Guatemala),
+				'currency' => q(Quetzal Guatemala),
 				'other' => q(Quetzal Guatemala),
 			},
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(Dolar Guyana),
+				'currency' => q(Dolar Guyana),
 				'other' => q(Dolar Guyana),
 			},
 		},
 		'HKD' => {
 			symbol => 'HK$',
 			display_name => {
-				'default' => q(Dolar Hong Kong),
+				'currency' => q(Dolar Hong Kong),
 				'other' => q(Dolar Hong Kong),
 			},
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(Lempira Honduras),
+				'currency' => q(Lempira Honduras),
 				'other' => q(Lempira Honduras),
 			},
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(Kuna Croatia),
+				'currency' => q(Kuna Croatia),
 			},
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(Gourde Haiti),
+				'currency' => q(Gourde Haiti),
 				'other' => q(Gourde Haiti),
 			},
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(Forint Hungary),
+				'currency' => q(Forint Hungary),
 			},
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(Rupiah Indonesia),
+				'currency' => q(Rupiah Indonesia),
 				'other' => q(Rupiah Indonesia),
 			},
 		},
 		'ILS' => {
 			symbol => '₪',
 			display_name => {
-				'default' => q(Sheqel Baru Israel),
+				'currency' => q(Sheqel Baru Israel),
 			},
 		},
 		'INR' => {
 			symbol => '₹',
 			display_name => {
-				'default' => q(Rupee India),
+				'currency' => q(Rupee India),
 				'other' => q(Rupee India),
 			},
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(Dinar Iraq),
+				'currency' => q(Dinar Iraq),
 				'other' => q(Dinar Iraq),
 			},
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(Rial Iran),
+				'currency' => q(Rial Iran),
 				'other' => q(Rial Iran),
 			},
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(Krona Iceland),
+				'currency' => q(Krona Iceland),
 				'other' => q(Krona Iceland),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(Dolar Jamaica),
+				'currency' => q(Dolar Jamaica),
 				'other' => q(Dolar Jamaica),
 			},
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(Dinar Jordan),
+				'currency' => q(Dinar Jordan),
 				'other' => q(Dinar Jordan),
 			},
 		},
 		'JPY' => {
 			symbol => 'JP¥',
 			display_name => {
-				'default' => q(Yen Jepun),
+				'currency' => q(Yen Jepun),
 				'other' => q(Yen Jepun),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Syiling Kenya),
+				'currency' => q(Syiling Kenya),
 				'other' => q(Syiling Kenya),
 			},
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(Som Kyrgystani),
+				'currency' => q(Som Kyrgystani),
 				'other' => q(Som Kyrgystani),
 			},
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(Riel Kemboja),
+				'currency' => q(Riel Kemboja),
 				'other' => q(Riel Kemboja),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Franc Comoria),
+				'currency' => q(Franc Comoria),
 				'other' => q(Franc Comoria),
 			},
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(Won Korea Utara),
+				'currency' => q(Won Korea Utara),
 				'other' => q(Won Korea Utara),
 			},
 		},
 		'KRW' => {
 			symbol => '₩',
 			display_name => {
-				'default' => q(Won Korea Selatan),
+				'currency' => q(Won Korea Selatan),
 				'other' => q(Won Korea Selatan),
 			},
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(Dinar Kuwait),
+				'currency' => q(Dinar Kuwait),
 				'other' => q(Dinar Kuwait),
 			},
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(Dolar Kepulauan Cayman),
+				'currency' => q(Dolar Kepulauan Cayman),
 				'other' => q(Dolar Kepulauan Cayman),
 			},
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(Tenge Kazakhstan),
+				'currency' => q(Tenge Kazakhstan),
 				'other' => q(Tenge Kazakhstan),
 			},
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(Kip Laos),
+				'currency' => q(Kip Laos),
 				'other' => q(Kip Laos),
 			},
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(Paun Lubnan),
+				'currency' => q(Paun Lubnan),
 				'other' => q(Paun Lubnan),
 			},
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(Rupee Sri Lanka),
+				'currency' => q(Rupee Sri Lanka),
 				'other' => q(Rupee Sri Lanka),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Dolar Liberia),
+				'currency' => q(Dolar Liberia),
 				'other' => q(Dolar Liberia),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Loti Lesotho),
+				'currency' => q(Loti Lesotho),
 			},
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(Litas Lithuania),
+				'currency' => q(Litas Lithuania),
 			},
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(Lats Latvia),
+				'currency' => q(Lats Latvia),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Dinar Libya),
+				'currency' => q(Dinar Libya),
 				'other' => q(Dinar Libya),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Dirham Maghribi),
+				'currency' => q(Dirham Maghribi),
 				'other' => q(Dirham Maghribi),
 			},
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(Leu Moldova),
+				'currency' => q(Leu Moldova),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Ariary Malagasy),
+				'currency' => q(Ariary Malagasy),
 			},
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(Denar Macedonia),
+				'currency' => q(Denar Macedonia),
 			},
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(Kyat Myanma),
+				'currency' => q(Kyat Myanma),
 				'other' => q(Kyat Myanma),
 			},
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(Tugrik Mongolia),
+				'currency' => q(Tugrik Mongolia),
 				'other' => q(Tugrik Mongolia),
 			},
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(Pataca Macau),
+				'currency' => q(Pataca Macau),
 				'other' => q(Pataca Macau),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Ouguiya Mauritania),
+				'currency' => q(Ouguiya Mauritania),
 				'other' => q(Ouguiya Mauritania),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Rupee Mauritia),
+				'currency' => q(Rupee Mauritia),
 			},
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(Rufiyaa Maldives),
+				'currency' => q(Rufiyaa Maldives),
 				'other' => q(Rufiyaa Maldives),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Kwacha Malawi),
+				'currency' => q(Kwacha Malawi),
 			},
 		},
 		'MXN' => {
 			symbol => 'MX$',
 			display_name => {
-				'default' => q(Peso Mexico),
+				'currency' => q(Peso Mexico),
 				'other' => q(Peso Mexico),
 			},
 		},
 		'MYR' => {
 			symbol => 'RM',
 			display_name => {
-				'default' => q(Ringgit Malaysia),
+				'currency' => q(Ringgit Malaysia),
 				'other' => q(Ringgit Malaysia),
 			},
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(Metikal Mozambique),
+				'currency' => q(Metikal Mozambique),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Dolar Namibia),
+				'currency' => q(Dolar Namibia),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Naira Nigeria),
+				'currency' => q(Naira Nigeria),
 				'other' => q(Naira Nigeria),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(Cordoba Nicaragua),
+				'currency' => q(Cordoba Nicaragua),
 				'other' => q(Cordoba Nicaragua),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(Krone Norway),
+				'currency' => q(Krone Norway),
 			},
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(Rupee Nepal),
+				'currency' => q(Rupee Nepal),
 				'other' => q(Rupee Nepal),
 			},
 		},
 		'NZD' => {
 			symbol => 'NZ$',
 			display_name => {
-				'default' => q(Dolar New Zealand),
+				'currency' => q(Dolar New Zealand),
 				'other' => q(Dolar New Zealand),
 			},
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(Rial Oman),
+				'currency' => q(Rial Oman),
 				'other' => q(Rial Oman),
 			},
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(Balboa Panama),
+				'currency' => q(Balboa Panama),
 				'other' => q(Balboa Panama),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(Nuevo Sol Peru),
+				'currency' => q(Nuevo Sol Peru),
 				'other' => q(Nuevo Sol Peru),
 			},
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(Kina Papua New Guinea),
+				'currency' => q(Kina Papua New Guinea),
 				'other' => q(Kina Papua New Guinea),
 			},
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(Peso Filipina),
+				'currency' => q(Peso Filipina),
 				'other' => q(Peso Filipina),
 			},
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(Rupee Pakistan),
+				'currency' => q(Rupee Pakistan),
 				'other' => q(Rupee Pakistan),
 			},
 		},
 		'PLN' => {
 			display_name => {
-				'default' => q(Zloty Poland),
+				'currency' => q(Zloty Poland),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(Guarani Paraguay),
+				'currency' => q(Guarani Paraguay),
 				'other' => q(Guarani Paraguay),
 			},
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(Rial Qatar),
+				'currency' => q(Rial Qatar),
 				'other' => q(Rial Qatar),
 			},
 		},
 		'RON' => {
 			display_name => {
-				'default' => q(Leu Romania),
+				'currency' => q(Leu Romania),
 			},
 		},
 		'RSD' => {
 			display_name => {
-				'default' => q(Dinar Serbia),
+				'currency' => q(Dinar Serbia),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(Ruble Rusia),
+				'currency' => q(Ruble Rusia),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Franc Rwanda),
+				'currency' => q(Franc Rwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Riyal Saudi),
+				'currency' => q(Riyal Saudi),
 				'other' => q(Riyal Saudi),
 			},
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(Dolar Kepulauan Solomon),
+				'currency' => q(Dolar Kepulauan Solomon),
 				'other' => q(Dolar Kepulauan Solomon),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Rupee Seychelles),
+				'currency' => q(Rupee Seychelles),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Paun Sudan),
+				'currency' => q(Paun Sudan),
 				'other' => q(Paun Sudan),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(Krona Sweden),
+				'currency' => q(Krona Sweden),
 			},
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(Dolar Singapura),
+				'currency' => q(Dolar Singapura),
 				'other' => q(Dolar Singapura),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Paun Saint Helena),
+				'currency' => q(Paun Saint Helena),
 				'other' => q(Paun Saint Helena),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Leone Sierra Leone),
+				'currency' => q(Leone Sierra Leone),
 				'other' => q(Leone Sierra Leone),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Syiling Somali),
+				'currency' => q(Syiling Somali),
 			},
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(Dolar Surinam),
+				'currency' => q(Dolar Surinam),
 				'other' => q(Dolar Surinam),
 			},
 		},
 		'SSP' => {
 			display_name => {
-				'default' => q(Paun Sudan selatan),
+				'currency' => q(Paun Sudan selatan),
 				'other' => q(Paun Sudan selatan),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Dobra Sao Tome dan Principe),
+				'currency' => q(Dobra Sao Tome dan Principe),
 				'other' => q(Dobra Sao Tome dan Principe),
 			},
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(Paun Syria),
+				'currency' => q(Paun Syria),
 				'other' => q(Paun Syria),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lilangeni Swazi),
+				'currency' => q(Lilangeni Swazi),
 			},
 		},
 		'THB' => {
 			symbol => '฿',
 			display_name => {
-				'default' => q(Baht Thai),
+				'currency' => q(Baht Thai),
 				'other' => q(Baht Thai),
 			},
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(Somoni Tajikistan),
+				'currency' => q(Somoni Tajikistan),
 				'other' => q(Somoni Tajikistan),
 			},
 		},
 		'TMT' => {
 			display_name => {
-				'default' => q(Manat Turkmenistan),
+				'currency' => q(Manat Turkmenistan),
 				'other' => q(Manat Turkmenistan),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Dinar Tunisia),
+				'currency' => q(Dinar Tunisia),
 				'other' => q(Dinar Tunisia),
 			},
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(Tongan Paʻanga),
+				'currency' => q(Tongan Paʻanga),
 				'other' => q(Tongan Paʻanga),
 			},
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(Lira Turki),
+				'currency' => q(Lira Turki),
 				'other' => q(Lira Turki),
 			},
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(Dolar Trinidad dan Tobago),
+				'currency' => q(Dolar Trinidad dan Tobago),
 				'other' => q(Dolar Trinidad dan Tobago),
 			},
 		},
 		'TWD' => {
 			symbol => 'NT$',
 			display_name => {
-				'default' => q(Dolar Taiwan Baru),
+				'currency' => q(Dolar Taiwan Baru),
 				'other' => q(Dolar Taiwan Baru),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Syiling Tanzania),
+				'currency' => q(Syiling Tanzania),
 			},
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(Hryvnia Ukraine),
+				'currency' => q(Hryvnia Ukraine),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Syiling Uganda),
+				'currency' => q(Syiling Uganda),
 			},
 		},
 		'USD' => {
 			symbol => 'US$',
 			display_name => {
-				'default' => q(Dolar AS),
+				'currency' => q(Dolar AS),
 				'other' => q(Dolar AS),
 			},
 		},
@@ -2435,86 +2434,86 @@ has 'curriencies' => (
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(Som Uzbekistan),
+				'currency' => q(Som Uzbekistan),
 				'other' => q(Som Uzbekistan),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(Bolivar Venezuela),
+				'currency' => q(Bolivar Venezuela),
 				'other' => q(Bolivar Venezuela),
 			},
 		},
 		'VND' => {
 			symbol => '₫',
 			display_name => {
-				'default' => q(Dong Vietnam),
+				'currency' => q(Dong Vietnam),
 				'other' => q(Dong Vietnam),
 			},
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(Vatu Vanuatu),
+				'currency' => q(Vatu Vanuatu),
 				'other' => q(Vatu Vanuatu),
 			},
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(Tala Samoa),
+				'currency' => q(Tala Samoa),
 				'other' => q(Tala Samoa),
 			},
 		},
 		'XAF' => {
 			symbol => 'FCFA',
 			display_name => {
-				'default' => q(Franc CFA BEAC),
+				'currency' => q(Franc CFA BEAC),
 			},
 		},
 		'XCD' => {
 			symbol => 'EC$',
 			display_name => {
-				'default' => q(Dolar Caribbean Timur),
+				'currency' => q(Dolar Caribbean Timur),
 				'other' => q(Dolar Caribbean Timur),
 			},
 		},
 		'XOF' => {
 			symbol => 'CFA',
 			display_name => {
-				'default' => q(Franc CFA BCEAO),
+				'currency' => q(Franc CFA BCEAO),
 				'other' => q(Franc CFA BCEAO),
 			},
 		},
 		'XPF' => {
 			symbol => 'CFPF',
 			display_name => {
-				'default' => q(Franc CFP),
+				'currency' => q(Franc CFP),
 				'other' => q(Franc CFP),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(Mata Wang Tidak Diketahui),
+				'currency' => q(Mata Wang Tidak Diketahui),
 			},
 		},
 		'YER' => {
 			display_name => {
-				'default' => q(Rial Yaman),
+				'currency' => q(Rial Yaman),
 				'other' => q(Rial Yaman),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Rand Afrika Selatan),
+				'currency' => q(Rand Afrika Selatan),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Kwacha Zambia (1968–2012)),
+				'currency' => q(Kwacha Zambia \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Kwacha Zambia),
+				'currency' => q(Kwacha Zambia),
 			},
 		},
 	} },

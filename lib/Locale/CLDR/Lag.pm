@@ -1,6 +1,6 @@
-package Locale::CLDR::Lag;
+package Locale::CLDR::Lag v0.0.4;
 # This file auto generated from Data\common\main\lag.xml
-#	on Mon 31 Mar  1:08:04 am GMT
+#	on Sun 13 Apr 11:08:01 am GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use v5.18;
@@ -363,9 +363,6 @@ has 'nostr' => (
 	default		=> sub { qr'^(?i:Tʉkʉ|T|no|n)$' }
 );
 
-	} }
-);
-
 has 'curriencies' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -373,278 +370,278 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Diriháamu ya Ʉtemi wa Kɨaráabu),
+				'currency' => q(Diriháamu ya Ʉtemi wa Kɨaráabu),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Kwáanza ya Angóola),
+				'currency' => q(Kwáanza ya Angóola),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Dóola ya Ausitereelía),
+				'currency' => q(Dóola ya Ausitereelía),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Dináari ya Baharéeni),
+				'currency' => q(Dináari ya Baharéeni),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Faráanga ya Burúundi),
+				'currency' => q(Faráanga ya Burúundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Púula ya Botiswáana),
+				'currency' => q(Púula ya Botiswáana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Dóola ya Kánada),
+				'currency' => q(Dóola ya Kánada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Faráanga ya Kóongo),
+				'currency' => q(Faráanga ya Kóongo),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Faráaka ya Uswíisi),
+				'currency' => q(Faráaka ya Uswíisi),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Yúani Renimínibi ya Chíina),
+				'currency' => q(Yúani Renimínibi ya Chíina),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Esikúudo ya Kepuvéede),
+				'currency' => q(Esikúudo ya Kepuvéede),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Faráanga ya Jibóuti),
+				'currency' => q(Faráanga ya Jibóuti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Dináairi ya Alijéria),
+				'currency' => q(Dináairi ya Alijéria),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Páundi ya Mísiri),
+				'currency' => q(Páundi ya Mísiri),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Nákɨfa ya Eriterea),
+				'currency' => q(Nákɨfa ya Eriterea),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Bíiri ya Ʉhabéeshi),
+				'currency' => q(Bíiri ya Ʉhabéeshi),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Yúuro),
+				'currency' => q(Yúuro),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Páundi ya Ʉɨngɨréesa),
+				'currency' => q(Páundi ya Ʉɨngɨréesa),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Séedi ya Gáana),
+				'currency' => q(Séedi ya Gáana),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Daláasi ya Gámbia),
+				'currency' => q(Daláasi ya Gámbia),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Faráanga ya Gíine),
+				'currency' => q(Faráanga ya Gíine),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Rupía ya Índia),
+				'currency' => q(Rupía ya Índia),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Yéeni ya Japáani),
+				'currency' => q(Yéeni ya Japáani),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Shilíingi ya Kéenya),
+				'currency' => q(Shilíingi ya Kéenya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Faráanga ya Komóoro),
+				'currency' => q(Faráanga ya Komóoro),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Dóola ya Libéria),
+				'currency' => q(Dóola ya Libéria),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Lóoti ya Lesóoto),
+				'currency' => q(Lóoti ya Lesóoto),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Dináari ya Líbia),
+				'currency' => q(Dináari ya Líbia),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Diriháamu ya Moróoko),
+				'currency' => q(Diriháamu ya Moróoko),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Mpía ya bukini),
+				'currency' => q(Mpía ya bukini),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Ungwíiya ya Moritánia),
+				'currency' => q(Ungwíiya ya Moritánia),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Rupía ya Moríisi),
+				'currency' => q(Rupía ya Moríisi),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Kwáacha ya Maláawi),
+				'currency' => q(Kwáacha ya Maláawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Metikáali ya Musumbíiji),
+				'currency' => q(Metikáali ya Musumbíiji),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Dóola ya Namíbia),
+				'currency' => q(Dóola ya Namíbia),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Naíira ya Niijéria),
+				'currency' => q(Naíira ya Niijéria),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Faráanga ya Rwáanda),
+				'currency' => q(Faráanga ya Rwáanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Riyáali ya Saudía),
+				'currency' => q(Riyáali ya Saudía),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Rupía ya Shelishéeli),
+				'currency' => q(Rupía ya Shelishéeli),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Páundi ya Sudáani),
+				'currency' => q(Páundi ya Sudáani),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Páundi ya Mʉtakatíifu Heléena),
+				'currency' => q(Páundi ya Mʉtakatíifu Heléena),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Leóoni),
+				'currency' => q(Leóoni),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Shilíingi ya Somália),
+				'currency' => q(Shilíingi ya Somália),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Dóbura ya SaoTóome na Pirínsipe),
+				'currency' => q(Dóbura ya SaoTóome na Pirínsipe),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lilengéeni),
+				'currency' => q(Lilengéeni),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Dináari ya Tunísia),
+				'currency' => q(Dináari ya Tunísia),
 			},
 		},
 		'TZS' => {
 			symbol => 'TSh',
 			display_name => {
-				'default' => q(Shilíingi ya Taansanía),
+				'currency' => q(Shilíingi ya Taansanía),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Shilíingi ya Ugáanda),
+				'currency' => q(Shilíingi ya Ugáanda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Dóola ya Amerɨ́ka),
+				'currency' => q(Dóola ya Amerɨ́ka),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Faráanga ya CFA BEAC),
+				'currency' => q(Faráanga ya CFA BEAC),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Faráanga ya CFA BCEAO),
+				'currency' => q(Faráanga ya CFA BCEAO),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Ráandi ya Afɨrɨka ya Saame),
+				'currency' => q(Ráandi ya Afɨrɨka ya Saame),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Kwácha ya Sámbia (1968–2012)),
+				'currency' => q(Kwácha ya Sámbia \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Kwácha ya Sámbia),
+				'currency' => q(Kwácha ya Sámbia),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Dóola ya Simbáabwe),
+				'currency' => q(Dóola ya Simbáabwe),
 			},
 		},
 	} },
@@ -793,8 +790,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{TOO},
 					'pm' => q{MUU},
+					'am' => q{TOO},
 				},
 			},
 		},
@@ -939,3 +936,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

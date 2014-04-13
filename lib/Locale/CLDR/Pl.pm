@@ -1,6 +1,6 @@
-package Locale::CLDR::Pl;
+package Locale::CLDR::Pl v0.0.4;
 # This file auto generated from Data\common\main\pl.xml
-#	on Mon 31 Mar  1:38:16 am GMT
+#	on Sun 13 Apr 11:38:29 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -1582,7 +1582,7 @@ has 'units' => (
 						'other' => q({0} uncji),
 					},
 					'per' => {
-						'default' => q({0} na {1}),
+						'' => q({0} na {1}),
 					},
 					'picometer' => {
 						'few' => q({0} pikometry),
@@ -1863,7 +1863,7 @@ has 'units' => (
 						'other' => q({0} oz),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'few' => q({0} pm),
@@ -2144,7 +2144,7 @@ has 'units' => (
 						'other' => q({0} oz),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'few' => q({0} pm),
@@ -2215,7 +2215,6 @@ has 'units' => (
 				},
 			} }
 );
-
 
 has 'yesstr' => (
 	is			=> 'ro',
@@ -2542,7 +2541,7 @@ has 'curriencies' => (
 	default		=> sub { {
 		'ADP' => {
 			display_name => {
-				'default' => q(peseta andorska),
+				'currency' => q(peseta andorska),
 				'few' => q(pesety andorskie),
 				'many' => q(peset andorskich),
 				'one' => q(peseta andorska),
@@ -2551,7 +2550,7 @@ has 'curriencies' => (
 		},
 		'AED' => {
 			display_name => {
-				'default' => q(dirham arabski),
+				'currency' => q(dirham arabski),
 				'few' => q(dirhamy arabskie),
 				'many' => q(dirhamów arabskich),
 				'one' => q(dirham arabski),
@@ -2560,16 +2559,16 @@ has 'curriencies' => (
 		},
 		'AFA' => {
 			display_name => {
-				'default' => q(afgani (1927–2002)),
-				'few' => q(afgani (1927–2002)),
-				'many' => q(afgani (1927–2002)),
-				'one' => q(afgani (1927–2002)),
-				'other' => q(afgani (1927–2002)),
+				'currency' => q(afgani \(1927–2002\)),
+				'few' => q(afgani \(1927–2002\)),
+				'many' => q(afgani \(1927–2002\)),
+				'one' => q(afgani \(1927–2002\)),
+				'other' => q(afgani \(1927–2002\)),
 			},
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(afgani),
+				'currency' => q(afgani),
 				'few' => q(afgani),
 				'many' => q(afgani),
 				'one' => q(afgani),
@@ -2578,7 +2577,7 @@ has 'curriencies' => (
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(lek albański),
+				'currency' => q(lek albański),
 				'few' => q(leki albańskie),
 				'many' => q(leków albańskich),
 				'one' => q(lek albański),
@@ -2587,7 +2586,7 @@ has 'curriencies' => (
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(dram armeński),
+				'currency' => q(dram armeński),
 				'few' => q(dramy armeńskie),
 				'many' => q(dramów armeńskich),
 				'one' => q(dram ormiański),
@@ -2596,7 +2595,7 @@ has 'curriencies' => (
 		},
 		'ANG' => {
 			display_name => {
-				'default' => q(gulden antylski),
+				'currency' => q(gulden antylski),
 				'few' => q(guldeny antylskie),
 				'many' => q(guldenów antylskich),
 				'one' => q(gulden antylski),
@@ -2605,7 +2604,7 @@ has 'curriencies' => (
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(kwanza angolańska),
+				'currency' => q(kwanza angolańska),
 				'few' => q(kwanzy angolańskie),
 				'many' => q(kwanz angolańskich),
 				'one' => q(kwanza angolańska),
@@ -2614,44 +2613,44 @@ has 'curriencies' => (
 		},
 		'AOK' => {
 			display_name => {
-				'default' => q(kwanza angolańska (1977–1990)),
-				'few' => q(kwanzy angolańskie (1977–1990)),
-				'many' => q(kwanz angolańskich (1977–1990)),
-				'one' => q(kwanza angolańska (1977–1990)),
-				'other' => q(kwanza angolańska (1977–1990)),
+				'currency' => q(kwanza angolańska \(1977–1990\)),
+				'few' => q(kwanzy angolańskie \(1977–1990\)),
+				'many' => q(kwanz angolańskich \(1977–1990\)),
+				'one' => q(kwanza angolańska \(1977–1990\)),
+				'other' => q(kwanza angolańska \(1977–1990\)),
 			},
 		},
 		'AON' => {
 			display_name => {
-				'default' => q(nowa kwanza angolańska (1990–2000)),
-				'few' => q(nowe kwanzy angolańskie (1990–2000)),
-				'many' => q(nowych kwanz angolańskich (1990–2000)),
-				'one' => q(nowa kwanza angolańska (1990–2000)),
-				'other' => q(nowa kwanza angolańska (1990–2000)),
+				'currency' => q(nowa kwanza angolańska \(1990–2000\)),
+				'few' => q(nowe kwanzy angolańskie \(1990–2000\)),
+				'many' => q(nowych kwanz angolańskich \(1990–2000\)),
+				'one' => q(nowa kwanza angolańska \(1990–2000\)),
+				'other' => q(nowa kwanza angolańska \(1990–2000\)),
 			},
 		},
 		'AOR' => {
 			display_name => {
-				'default' => q(kwanza angolańska Reajustado (1995–1999)),
-				'few' => q(kwanzy angolańskie Reajustado (1995–1999)),
-				'many' => q(kwanz angolańskich Reajustado (1995–1999)),
-				'one' => q(kwanza angolańska Reajustado (1995–1999)),
-				'other' => q(kwanza angolańska Reajustado (1995–1999)),
+				'currency' => q(kwanza angolańska Reajustado \(1995–1999\)),
+				'few' => q(kwanzy angolańskie Reajustado \(1995–1999\)),
+				'many' => q(kwanz angolańskich Reajustado \(1995–1999\)),
+				'one' => q(kwanza angolańska Reajustado \(1995–1999\)),
+				'other' => q(kwanza angolańska Reajustado \(1995–1999\)),
 			},
 		},
 		'ARA' => {
 			display_name => {
-				'default' => q(austral argentyński),
+				'currency' => q(austral argentyński),
 			},
 		},
 		'ARP' => {
 			display_name => {
-				'default' => q(peso argentyńskie (1983–1985)),
+				'currency' => q(peso argentyńskie \(1983–1985\)),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(peso argentyńskie),
+				'currency' => q(peso argentyńskie),
 				'few' => q(pesos argentyńskie),
 				'many' => q(pesos argentyńskich),
 				'one' => q(peso argentyńskie),
@@ -2660,13 +2659,13 @@ has 'curriencies' => (
 		},
 		'ATS' => {
 			display_name => {
-				'default' => q(szyling austriacki),
+				'currency' => q(szyling austriacki),
 			},
 		},
 		'AUD' => {
 			symbol => 'AUD',
 			display_name => {
-				'default' => q(dolar australijski),
+				'currency' => q(dolar australijski),
 				'few' => q(dolary australijskie),
 				'many' => q(dolarów australijskich),
 				'one' => q(dolar australijski),
@@ -2675,7 +2674,7 @@ has 'curriencies' => (
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(florin arubański),
+				'currency' => q(florin arubański),
 				'few' => q(floriny arubańskie),
 				'many' => q(florinów arubańskich),
 				'one' => q(florin arubański),
@@ -2684,7 +2683,7 @@ has 'curriencies' => (
 		},
 		'AZM' => {
 			display_name => {
-				'default' => q(manat azerbejdżański),
+				'currency' => q(manat azerbejdżański),
 				'few' => q(manat azerbejdżański),
 				'many' => q(manat azerbejdżański),
 				'one' => q(manat azerbejdżański),
@@ -2693,7 +2692,7 @@ has 'curriencies' => (
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(manat azerski),
+				'currency' => q(manat azerski),
 				'few' => q(manaty azerskie),
 				'many' => q(manatów azerskich),
 				'one' => q(manat azerski),
@@ -2702,12 +2701,12 @@ has 'curriencies' => (
 		},
 		'BAD' => {
 			display_name => {
-				'default' => q(dinar Bośni i Hercegowiny),
+				'currency' => q(dinar Bośni i Hercegowiny),
 			},
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(marka zamienna Bośni i Hercegowiny),
+				'currency' => q(marka zamienna Bośni i Hercegowiny),
 				'few' => q(marki zamienne Bośni i Hercegowiny),
 				'many' => q(marek zamiennych Bośni i Hercegowiny),
 				'one' => q(marka zamienna Bośni i Hercegowiny),
@@ -2716,7 +2715,7 @@ has 'curriencies' => (
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(dolar Barbadosu),
+				'currency' => q(dolar Barbadosu),
 				'few' => q(dolary Barbadosu),
 				'many' => q(dolarów Barbadosu),
 				'one' => q(dolar Barbadosu),
@@ -2725,7 +2724,7 @@ has 'curriencies' => (
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(taka bengalska),
+				'currency' => q(taka bengalska),
 				'few' => q(taka bengalskie),
 				'many' => q(taka bengalskich),
 				'one' => q(taka bengalska),
@@ -2734,26 +2733,26 @@ has 'curriencies' => (
 		},
 		'BEC' => {
 			display_name => {
-				'default' => q(frank belgijski (zamienny)),
-				'few' => q(franki belgijskie (wymienialne)),
-				'many' => q(franków belgijskich (wymienialnych)),
-				'one' => q(frank belgijski (wymienialny)),
-				'other' => q(frank belgijski (zamienny)),
+				'currency' => q(frank belgijski \(zamienny\)),
+				'few' => q(franki belgijskie \(wymienialne\)),
+				'many' => q(franków belgijskich \(wymienialnych\)),
+				'one' => q(frank belgijski \(wymienialny\)),
+				'other' => q(frank belgijski \(zamienny\)),
 			},
 		},
 		'BEF' => {
 			display_name => {
-				'default' => q(frank belgijski),
+				'currency' => q(frank belgijski),
 			},
 		},
 		'BEL' => {
 			display_name => {
-				'default' => q(frank belgijski (finansowy)),
+				'currency' => q(frank belgijski \(finansowy\)),
 			},
 		},
 		'BGL' => {
 			display_name => {
-				'default' => q(lew bułgarski wymienny),
+				'currency' => q(lew bułgarski wymienny),
 				'few' => q(lewa bułgarskie wymienne),
 				'many' => q(lewa bułgarskich wymiennych),
 				'one' => q(lew bułgarski wymienny),
@@ -2762,7 +2761,7 @@ has 'curriencies' => (
 		},
 		'BGM' => {
 			display_name => {
-				'default' => q(lew bułgarski socjalistyczny),
+				'currency' => q(lew bułgarski socjalistyczny),
 				'few' => q(lew bułgarski socjalistyczny),
 				'many' => q(lew bułgarski socjalistyczny),
 				'one' => q(lew bułgarski socjalistyczny),
@@ -2771,7 +2770,7 @@ has 'curriencies' => (
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(lew bułgarski),
+				'currency' => q(lew bułgarski),
 				'few' => q(lewy bułgarskie),
 				'many' => q(lewów bułgarskich),
 				'one' => q(lew bułgarski),
@@ -2780,16 +2779,16 @@ has 'curriencies' => (
 		},
 		'BGO' => {
 			display_name => {
-				'default' => q(lew bułgarski (1879–1952)),
-				'few' => q(lew bułgarski (1879–1952)),
-				'many' => q(lew bułgarski (1879–1952)),
-				'one' => q(lew bułgarski (1879–1952)),
-				'other' => q(lew bułgarski (1879–1952)),
+				'currency' => q(lew bułgarski \(1879–1952\)),
+				'few' => q(lew bułgarski \(1879–1952\)),
+				'many' => q(lew bułgarski \(1879–1952\)),
+				'one' => q(lew bułgarski \(1879–1952\)),
+				'other' => q(lew bułgarski \(1879–1952\)),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(dinar bahrański),
+				'currency' => q(dinar bahrański),
 				'few' => q(dinary bahrańskie),
 				'many' => q(dinarów bahrańskich),
 				'one' => q(dinar bahrański),
@@ -2798,7 +2797,7 @@ has 'curriencies' => (
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(frank burundyjski),
+				'currency' => q(frank burundyjski),
 				'few' => q(franki burundyjskie),
 				'many' => q(franków burundyjskich),
 				'one' => q(frank burundyjski),
@@ -2807,7 +2806,7 @@ has 'curriencies' => (
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(dolar bermudzki),
+				'currency' => q(dolar bermudzki),
 				'few' => q(dolary bermudzkie),
 				'many' => q(dolarów bermudzkich),
 				'one' => q(dolar bermudzki),
@@ -2816,7 +2815,7 @@ has 'curriencies' => (
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(dolar brunejski),
+				'currency' => q(dolar brunejski),
 				'few' => q(dolary brunejskie),
 				'many' => q(dolarów brunejskich),
 				'one' => q(dolar brunejski),
@@ -2825,7 +2824,7 @@ has 'curriencies' => (
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(boliviano),
+				'currency' => q(boliviano),
 				'few' => q(boliviano),
 				'many' => q(boliviano),
 				'one' => q(boliviano),
@@ -2834,33 +2833,33 @@ has 'curriencies' => (
 		},
 		'BOP' => {
 			display_name => {
-				'default' => q(peso boliwijskie),
+				'currency' => q(peso boliwijskie),
 			},
 		},
 		'BOV' => {
 			display_name => {
-				'default' => q(mvdol boliwijski),
+				'currency' => q(mvdol boliwijski),
 			},
 		},
 		'BRB' => {
 			display_name => {
-				'default' => q(cruzeiro novo brazylijskie (1967–1986)),
+				'currency' => q(cruzeiro novo brazylijskie \(1967–1986\)),
 			},
 		},
 		'BRC' => {
 			display_name => {
-				'default' => q(cruzado brazylijskie),
+				'currency' => q(cruzado brazylijskie),
 			},
 		},
 		'BRE' => {
 			display_name => {
-				'default' => q(cruzeiro brazylijskie (1990–1993)),
+				'currency' => q(cruzeiro brazylijskie \(1990–1993\)),
 			},
 		},
 		'BRL' => {
 			symbol => 'R$',
 			display_name => {
-				'default' => q(real brazylijski),
+				'currency' => q(real brazylijski),
 				'few' => q(reale brazylijskie),
 				'many' => q(reali brazylijskich),
 				'one' => q(real brazylijski),
@@ -2869,17 +2868,17 @@ has 'curriencies' => (
 		},
 		'BRN' => {
 			display_name => {
-				'default' => q(nowe cruzado brazylijskie),
+				'currency' => q(nowe cruzado brazylijskie),
 			},
 		},
 		'BRR' => {
 			display_name => {
-				'default' => q(cruzeiro brazylijskie),
+				'currency' => q(cruzeiro brazylijskie),
 			},
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(dolar bahamski),
+				'currency' => q(dolar bahamski),
 				'few' => q(dolary bahamskie),
 				'many' => q(dolarów bahamskich),
 				'one' => q(dolar bahamski),
@@ -2888,7 +2887,7 @@ has 'curriencies' => (
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(ngultrum bhutański),
+				'currency' => q(ngultrum bhutański),
 				'few' => q(ngultrum bhutańskie),
 				'many' => q(ngultrum bhutańskich),
 				'one' => q(ngultrum bhutański),
@@ -2897,12 +2896,12 @@ has 'curriencies' => (
 		},
 		'BUK' => {
 			display_name => {
-				'default' => q(kyat birmański),
+				'currency' => q(kyat birmański),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(pula botswańska),
+				'currency' => q(pula botswańska),
 				'few' => q(pule botswańskie),
 				'many' => q(pul botswańskich),
 				'one' => q(pula botswańska),
@@ -2911,12 +2910,12 @@ has 'curriencies' => (
 		},
 		'BYB' => {
 			display_name => {
-				'default' => q(rubel białoruski (1994–1999)),
+				'currency' => q(rubel białoruski \(1994–1999\)),
 			},
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(rubel białoruski),
+				'currency' => q(rubel białoruski),
 				'few' => q(ruble białoruskie),
 				'many' => q(rubli białoruskich),
 				'one' => q(rubel białoruski),
@@ -2925,7 +2924,7 @@ has 'curriencies' => (
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(dolar belizeński),
+				'currency' => q(dolar belizeński),
 				'few' => q(dolary belizeńskie),
 				'many' => q(dolarów belizeńskich),
 				'one' => q(dolar belizeński),
@@ -2935,7 +2934,7 @@ has 'curriencies' => (
 		'CAD' => {
 			symbol => 'CAD',
 			display_name => {
-				'default' => q(dolar kanadyjski),
+				'currency' => q(dolar kanadyjski),
 				'few' => q(dolary kanadyjskie),
 				'many' => q(dolarów kanadyjskich),
 				'one' => q(dolar kanadyjski),
@@ -2944,7 +2943,7 @@ has 'curriencies' => (
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(frank kongijski),
+				'currency' => q(frank kongijski),
 				'few' => q(franki kongijskie),
 				'many' => q(franków kongijskich),
 				'one' => q(frank kongijski),
@@ -2953,7 +2952,7 @@ has 'curriencies' => (
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(frank szwajcarski),
+				'currency' => q(frank szwajcarski),
 				'few' => q(franki szwajcarskie),
 				'many' => q(franków szwajcarskich),
 				'one' => q(frank szwajcarski),
@@ -2962,7 +2961,7 @@ has 'curriencies' => (
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(peso chilijskie),
+				'currency' => q(peso chilijskie),
 				'few' => q(pesos chilijskie),
 				'many' => q(pesos chilijskich),
 				'one' => q(peso chilijskie),
@@ -2972,7 +2971,7 @@ has 'curriencies' => (
 		'CNY' => {
 			symbol => 'CNY',
 			display_name => {
-				'default' => q(juan chiński),
+				'currency' => q(juan chiński),
 				'few' => q(juany chińskie),
 				'many' => q(juanów chińskich),
 				'one' => q(juan chiński),
@@ -2981,7 +2980,7 @@ has 'curriencies' => (
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(peso kolumbijskie),
+				'currency' => q(peso kolumbijskie),
 				'few' => q(pesos kolumbijskie),
 				'many' => q(pesos kolumbijskich),
 				'one' => q(peso kolumbijskie),
@@ -2990,7 +2989,7 @@ has 'curriencies' => (
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(colon kostarykański),
+				'currency' => q(colon kostarykański),
 				'few' => q(colony kostarykańskie),
 				'many' => q(colonów kostarykańskich),
 				'one' => q(colon kostarykański),
@@ -2999,12 +2998,12 @@ has 'curriencies' => (
 		},
 		'CSD' => {
 			display_name => {
-				'default' => q(stary dinar serbski),
+				'currency' => q(stary dinar serbski),
 			},
 		},
 		'CSK' => {
 			display_name => {
-				'default' => q(korona czechosłowacka),
+				'currency' => q(korona czechosłowacka),
 				'few' => q(korony czechosłowackie),
 				'many' => q(koron czechosłowackich),
 				'one' => q(korona czechosłowacka),
@@ -3013,7 +3012,7 @@ has 'curriencies' => (
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(peso kubańskie wymienialne),
+				'currency' => q(peso kubańskie wymienialne),
 				'few' => q(pesos kubańskie wymienialne),
 				'many' => q(pesos kubańskich wymienialnych),
 				'one' => q(peso kubańskie wymienialne),
@@ -3022,7 +3021,7 @@ has 'curriencies' => (
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(peso kubańskie),
+				'currency' => q(peso kubańskie),
 				'few' => q(pesos kubańskie),
 				'many' => q(pesos kubańskich),
 				'one' => q(peso kubańskie),
@@ -3031,7 +3030,7 @@ has 'curriencies' => (
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(escudo zielonoprzylądkowe),
+				'currency' => q(escudo zielonoprzylądkowe),
 				'few' => q(escudo zielonoprzylądkowe),
 				'many' => q(escudo zielonoprzylądkowych),
 				'one' => q(escudo zielonoprzylądkowe),
@@ -3040,12 +3039,12 @@ has 'curriencies' => (
 		},
 		'CYP' => {
 			display_name => {
-				'default' => q(funt cypryjski),
+				'currency' => q(funt cypryjski),
 			},
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(korona czeska),
+				'currency' => q(korona czeska),
 				'few' => q(korony czeskie),
 				'many' => q(koron czeskich),
 				'one' => q(korona czeska),
@@ -3054,12 +3053,12 @@ has 'curriencies' => (
 		},
 		'DDM' => {
 			display_name => {
-				'default' => q(wschodnia marka wschodnioniemiecka),
+				'currency' => q(wschodnia marka wschodnioniemiecka),
 			},
 		},
 		'DEM' => {
 			display_name => {
-				'default' => q(marka niemiecka),
+				'currency' => q(marka niemiecka),
 				'few' => q(marki niemieckie),
 				'many' => q(marek niemieckich),
 				'one' => q(marka niemiecka),
@@ -3068,7 +3067,7 @@ has 'curriencies' => (
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(frank dżibutyjski),
+				'currency' => q(frank dżibutyjski),
 				'few' => q(franki dżibutyjskie),
 				'many' => q(franków dżibutyjskich),
 				'one' => q(frank dżibutyjski),
@@ -3077,7 +3076,7 @@ has 'curriencies' => (
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(korona duńska),
+				'currency' => q(korona duńska),
 				'few' => q(korony duńskie),
 				'many' => q(koron duńskich),
 				'one' => q(korona duńska),
@@ -3086,7 +3085,7 @@ has 'curriencies' => (
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(peso dominikańskie),
+				'currency' => q(peso dominikańskie),
 				'few' => q(pesos dominikańskie),
 				'many' => q(pesos dominikańskich),
 				'one' => q(peso dominikańskie),
@@ -3095,7 +3094,7 @@ has 'curriencies' => (
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(dinar algierski),
+				'currency' => q(dinar algierski),
 				'few' => q(dinary algierskie),
 				'many' => q(dinarów algierskich),
 				'one' => q(dinar algierski),
@@ -3104,12 +3103,12 @@ has 'curriencies' => (
 		},
 		'ECS' => {
 			display_name => {
-				'default' => q(sucre ekwadorski),
+				'currency' => q(sucre ekwadorski),
 			},
 		},
 		'EEK' => {
 			display_name => {
-				'default' => q(korona estońska),
+				'currency' => q(korona estońska),
 				'few' => q(korony estońskie),
 				'many' => q(koron estońskich),
 				'one' => q(korona estońska),
@@ -3118,7 +3117,7 @@ has 'curriencies' => (
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(funt egipski),
+				'currency' => q(funt egipski),
 				'few' => q(funty egipskie),
 				'many' => q(funtów egipskich),
 				'one' => q(funt egipski),
@@ -3127,7 +3126,7 @@ has 'curriencies' => (
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(nakfa erytrejska),
+				'currency' => q(nakfa erytrejska),
 				'few' => q(nakfy erytrejskie),
 				'many' => q(nakf erytrejskich),
 				'one' => q(nakfa erytrejska),
@@ -3136,26 +3135,26 @@ has 'curriencies' => (
 		},
 		'ESA' => {
 			display_name => {
-				'default' => q(peseta hiszpańska (Konto A)),
+				'currency' => q(peseta hiszpańska \(Konto A\)),
 			},
 		},
 		'ESB' => {
 			display_name => {
-				'default' => q(peseta hiszpańska (konto wymienne)),
-				'few' => q(pesety hiszpańskie (konto wymienialne)),
-				'many' => q(peset hiszpańskich (konto wymienialne)),
-				'one' => q(peseta hiszpańska (konto wymienialne)),
-				'other' => q(peseta hiszpańska (konto wymienne)),
+				'currency' => q(peseta hiszpańska \(konto wymienne\)),
+				'few' => q(pesety hiszpańskie \(konto wymienialne\)),
+				'many' => q(peset hiszpańskich \(konto wymienialne\)),
+				'one' => q(peseta hiszpańska \(konto wymienialne\)),
+				'other' => q(peseta hiszpańska \(konto wymienne\)),
 			},
 		},
 		'ESP' => {
 			display_name => {
-				'default' => q(peseta hiszpańska),
+				'currency' => q(peseta hiszpańska),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(birr etiopski),
+				'currency' => q(birr etiopski),
 				'few' => q(birra etiopskie),
 				'many' => q(birra etiopskich),
 				'one' => q(birr etiopski),
@@ -3164,7 +3163,7 @@ has 'curriencies' => (
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(euro),
+				'currency' => q(euro),
 				'few' => q(euro),
 				'many' => q(euro),
 				'one' => q(euro),
@@ -3173,12 +3172,12 @@ has 'curriencies' => (
 		},
 		'FIM' => {
 			display_name => {
-				'default' => q(marka fińska),
+				'currency' => q(marka fińska),
 			},
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(dolar fidżi),
+				'currency' => q(dolar fidżi),
 				'few' => q(dolary fidżyjskie),
 				'many' => q(dolarów fidżyjskich),
 				'one' => q(dolar fidżyjski),
@@ -3187,7 +3186,7 @@ has 'curriencies' => (
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(funt falklandzki),
+				'currency' => q(funt falklandzki),
 				'few' => q(funty falklandzkie),
 				'many' => q(funtów falklandzkich),
 				'one' => q(funt falklandzki),
@@ -3196,7 +3195,7 @@ has 'curriencies' => (
 		},
 		'FRF' => {
 			display_name => {
-				'default' => q(frank francuski),
+				'currency' => q(frank francuski),
 				'few' => q(franki francuskie),
 				'many' => q(franków francuskich),
 				'one' => q(frank francuski),
@@ -3206,7 +3205,7 @@ has 'curriencies' => (
 		'GBP' => {
 			symbol => 'GBP',
 			display_name => {
-				'default' => q(funt szterling),
+				'currency' => q(funt szterling),
 				'few' => q(funty szterlingi),
 				'many' => q(funtów szterlingów),
 				'one' => q(funt szterling),
@@ -3215,12 +3214,12 @@ has 'curriencies' => (
 		},
 		'GEK' => {
 			display_name => {
-				'default' => q(kupon gruziński larit),
+				'currency' => q(kupon gruziński larit),
 			},
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(lari gruzińskie),
+				'currency' => q(lari gruzińskie),
 				'few' => q(lari gruzińskie),
 				'many' => q(lari gruzińskich),
 				'one' => q(lari gruzińskie),
@@ -3229,12 +3228,12 @@ has 'curriencies' => (
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(cedi ghańskie (1979–2007)),
+				'currency' => q(cedi ghańskie \(1979–2007\)),
 			},
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(cedi ghański),
+				'currency' => q(cedi ghański),
 				'few' => q(cedi ghańskie),
 				'many' => q(cedi ghańskich),
 				'one' => q(cedi ghański),
@@ -3243,7 +3242,7 @@ has 'curriencies' => (
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(funt gibraltarski),
+				'currency' => q(funt gibraltarski),
 				'few' => q(funty gibraltarskie),
 				'many' => q(funtów gibraltarskich),
 				'one' => q(funt gibraltarski),
@@ -3252,7 +3251,7 @@ has 'curriencies' => (
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(dalasi gambijskie),
+				'currency' => q(dalasi gambijskie),
 				'few' => q(dalasi gambijskie),
 				'many' => q(dalasi gambijskich),
 				'one' => q(dalasi gambijskie),
@@ -3261,7 +3260,7 @@ has 'curriencies' => (
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(frank gwinejski),
+				'currency' => q(frank gwinejski),
 				'few' => q(franki gwinejskie),
 				'many' => q(franków gwinejskich),
 				'one' => q(frank gwinejski),
@@ -3270,22 +3269,22 @@ has 'curriencies' => (
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(syli gwinejskie),
+				'currency' => q(syli gwinejskie),
 			},
 		},
 		'GQE' => {
 			display_name => {
-				'default' => q(ekwele gwinejskie Gwinei Równikowej),
+				'currency' => q(ekwele gwinejskie Gwinei Równikowej),
 			},
 		},
 		'GRD' => {
 			display_name => {
-				'default' => q(drachma grecka),
+				'currency' => q(drachma grecka),
 			},
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(quetzal gwatemalski),
+				'currency' => q(quetzal gwatemalski),
 				'few' => q(quetzale gwatemalskie),
 				'many' => q(quetzali gwatemalskich),
 				'one' => q(quetzal gwatemalski),
@@ -3294,17 +3293,17 @@ has 'curriencies' => (
 		},
 		'GWE' => {
 			display_name => {
-				'default' => q(escudo Gwinea Portugalska),
+				'currency' => q(escudo Gwinea Portugalska),
 			},
 		},
 		'GWP' => {
 			display_name => {
-				'default' => q(peso Guinea-Bissau),
+				'currency' => q(peso Guinea-Bissau),
 			},
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(dolar gujański),
+				'currency' => q(dolar gujański),
 				'few' => q(dolary gujańskie),
 				'many' => q(dolarów gujańskich),
 				'one' => q(dolar gujański),
@@ -3314,7 +3313,7 @@ has 'curriencies' => (
 		'HKD' => {
 			symbol => 'HKD',
 			display_name => {
-				'default' => q(dolar hongkoński),
+				'currency' => q(dolar hongkoński),
 				'few' => q(dolary hongkońskie),
 				'many' => q(dolarów hongkońskich),
 				'one' => q(dolar hongkoński),
@@ -3323,7 +3322,7 @@ has 'curriencies' => (
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(lempira honduraska),
+				'currency' => q(lempira honduraska),
 				'few' => q(lempiry honduraskie),
 				'many' => q(lempir honduraskich),
 				'one' => q(lempira honduraska),
@@ -3332,12 +3331,12 @@ has 'curriencies' => (
 		},
 		'HRD' => {
 			display_name => {
-				'default' => q(dinar chorwacki),
+				'currency' => q(dinar chorwacki),
 			},
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(kuna chorwacka),
+				'currency' => q(kuna chorwacka),
 				'few' => q(kuny chorwackie),
 				'many' => q(kun chorwackich),
 				'one' => q(kuna chorwacka),
@@ -3346,7 +3345,7 @@ has 'curriencies' => (
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(gourde haitańskie),
+				'currency' => q(gourde haitańskie),
 				'few' => q(gourde haitańskie),
 				'many' => q(gourde haitańskich),
 				'one' => q(gourde haitańskie),
@@ -3355,7 +3354,7 @@ has 'curriencies' => (
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(forint węgierski),
+				'currency' => q(forint węgierski),
 				'few' => q(forinty węgierskie),
 				'many' => q(forintów węgierskich),
 				'one' => q(forint węgierski),
@@ -3364,7 +3363,7 @@ has 'curriencies' => (
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(rupia indonezyjska),
+				'currency' => q(rupia indonezyjska),
 				'few' => q(rupie indonezyjskie),
 				'many' => q(rupii indonezyjskich),
 				'one' => q(rupia indonezyjska),
@@ -3373,18 +3372,18 @@ has 'curriencies' => (
 		},
 		'IEP' => {
 			display_name => {
-				'default' => q(funt irlandzki),
+				'currency' => q(funt irlandzki),
 			},
 		},
 		'ILP' => {
 			display_name => {
-				'default' => q(funt izraelski),
+				'currency' => q(funt izraelski),
 			},
 		},
 		'ILS' => {
 			symbol => 'ILS',
 			display_name => {
-				'default' => q(nowy szekel izraelski),
+				'currency' => q(nowy szekel izraelski),
 				'few' => q(nowe szekle izraelskie),
 				'many' => q(nowych szekli izraelskich),
 				'one' => q(nowy szekel izraelski),
@@ -3394,7 +3393,7 @@ has 'curriencies' => (
 		'INR' => {
 			symbol => 'INR',
 			display_name => {
-				'default' => q(rupia indyjska),
+				'currency' => q(rupia indyjska),
 				'few' => q(rupie indyjskie),
 				'many' => q(rupii indyjskich),
 				'one' => q(rupia indyjska),
@@ -3403,7 +3402,7 @@ has 'curriencies' => (
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(dinar iracki),
+				'currency' => q(dinar iracki),
 				'few' => q(dinary irackie),
 				'many' => q(dinarów irackich),
 				'one' => q(dinar iracki),
@@ -3412,7 +3411,7 @@ has 'curriencies' => (
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(rial irański),
+				'currency' => q(rial irański),
 				'few' => q(riale irańskie),
 				'many' => q(riali irańskich),
 				'one' => q(rial irański),
@@ -3421,7 +3420,7 @@ has 'curriencies' => (
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(korona islandzka),
+				'currency' => q(korona islandzka),
 				'few' => q(korony islandzkie),
 				'many' => q(koron islandzkich),
 				'one' => q(korona islandzka),
@@ -3430,12 +3429,12 @@ has 'curriencies' => (
 		},
 		'ITL' => {
 			display_name => {
-				'default' => q(lir włoski),
+				'currency' => q(lir włoski),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(dolar jamajski),
+				'currency' => q(dolar jamajski),
 				'few' => q(dolary jamajskie),
 				'many' => q(dolarów jamajskich),
 				'one' => q(dolar jamajski),
@@ -3444,7 +3443,7 @@ has 'curriencies' => (
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(dinar jordański),
+				'currency' => q(dinar jordański),
 				'few' => q(dinary jordańskie),
 				'many' => q(dinarów jordańskich),
 				'one' => q(dinar jordański),
@@ -3454,7 +3453,7 @@ has 'curriencies' => (
 		'JPY' => {
 			symbol => 'JPY',
 			display_name => {
-				'default' => q(jen japoński),
+				'currency' => q(jen japoński),
 				'few' => q(jeny japońskie),
 				'many' => q(jenów japońskich),
 				'one' => q(jen japoński),
@@ -3463,7 +3462,7 @@ has 'curriencies' => (
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(szyling kenijski),
+				'currency' => q(szyling kenijski),
 				'few' => q(szylingi kenijskie),
 				'many' => q(szylingów kenijskich),
 				'one' => q(szyling kenijski),
@@ -3472,7 +3471,7 @@ has 'curriencies' => (
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(som kirgiski),
+				'currency' => q(som kirgiski),
 				'few' => q(somy kirgiskie),
 				'many' => q(somów kirgiskich),
 				'one' => q(som kirgiski),
@@ -3481,7 +3480,7 @@ has 'curriencies' => (
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(riel kambodżański),
+				'currency' => q(riel kambodżański),
 				'few' => q(riele kambodżańskie),
 				'many' => q(rieli kambodżańskich),
 				'one' => q(riel kambodżański),
@@ -3490,7 +3489,7 @@ has 'curriencies' => (
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(frank komoryjski),
+				'currency' => q(frank komoryjski),
 				'few' => q(franki komoryjskie),
 				'many' => q(franków komoryjskich),
 				'one' => q(frank komoryjski),
@@ -3499,7 +3498,7 @@ has 'curriencies' => (
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(won północnokoreański),
+				'currency' => q(won północnokoreański),
 				'few' => q(wony północnokoreańskie),
 				'many' => q(wonów północnokoreańskich),
 				'one' => q(won północnokoreański),
@@ -3509,7 +3508,7 @@ has 'curriencies' => (
 		'KRW' => {
 			symbol => 'KRW',
 			display_name => {
-				'default' => q(won południowokoreański),
+				'currency' => q(won południowokoreański),
 				'few' => q(wony południowokoreańskie),
 				'many' => q(wonów południowokoreańskich),
 				'one' => q(won południowokoreański),
@@ -3518,7 +3517,7 @@ has 'curriencies' => (
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(dinar kuwejcki),
+				'currency' => q(dinar kuwejcki),
 				'few' => q(dinary kuwejckie),
 				'many' => q(dinarów kuwejckich),
 				'one' => q(dinar kuwejcki),
@@ -3527,7 +3526,7 @@ has 'curriencies' => (
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(dolar kajmański),
+				'currency' => q(dolar kajmański),
 				'few' => q(dolary kajmańskie),
 				'many' => q(dolarów kajmańskich),
 				'one' => q(dolar kajmański),
@@ -3536,7 +3535,7 @@ has 'curriencies' => (
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(tenge kazachskie),
+				'currency' => q(tenge kazachskie),
 				'few' => q(tenge kazachskie),
 				'many' => q(tenge kazachskich),
 				'one' => q(tenge kazachskie),
@@ -3545,7 +3544,7 @@ has 'curriencies' => (
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(kip laotański),
+				'currency' => q(kip laotański),
 				'few' => q(kipy laotańskie),
 				'many' => q(kipów laotańskich),
 				'one' => q(kip laotański),
@@ -3554,7 +3553,7 @@ has 'curriencies' => (
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(funt libański),
+				'currency' => q(funt libański),
 				'few' => q(funty libańskie),
 				'many' => q(funtów libańskich),
 				'one' => q(funt libański),
@@ -3563,7 +3562,7 @@ has 'curriencies' => (
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(rupia lankijska),
+				'currency' => q(rupia lankijska),
 				'few' => q(rupie lankijskie),
 				'many' => q(rupii lankijskich),
 				'one' => q(rupia lankijska),
@@ -3572,7 +3571,7 @@ has 'curriencies' => (
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(dolar liberyjski),
+				'currency' => q(dolar liberyjski),
 				'few' => q(dolary liberyjskie),
 				'many' => q(dolarów liberyjskich),
 				'one' => q(dolar liberyjski),
@@ -3581,12 +3580,12 @@ has 'curriencies' => (
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(loti Lesoto),
+				'currency' => q(loti Lesoto),
 			},
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(lit litewski),
+				'currency' => q(lit litewski),
 				'few' => q(lity litewskie),
 				'many' => q(litów litewskich),
 				'one' => q(lit litewski),
@@ -3595,17 +3594,17 @@ has 'curriencies' => (
 		},
 		'LTT' => {
 			display_name => {
-				'default' => q(talon litewski),
+				'currency' => q(talon litewski),
 			},
 		},
 		'LUF' => {
 			display_name => {
-				'default' => q(frank luksemburski),
+				'currency' => q(frank luksemburski),
 			},
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(łat łotewski),
+				'currency' => q(łat łotewski),
 				'few' => q(łaty łotewskie),
 				'many' => q(łatów łotewskich),
 				'one' => q(łat łotewski),
@@ -3614,12 +3613,12 @@ has 'curriencies' => (
 		},
 		'LVR' => {
 			display_name => {
-				'default' => q(rubel łotewski),
+				'currency' => q(rubel łotewski),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(dinar libijski),
+				'currency' => q(dinar libijski),
 				'few' => q(dinary libijskie),
 				'many' => q(dinarów libijskich),
 				'one' => q(dinar libijski),
@@ -3628,7 +3627,7 @@ has 'curriencies' => (
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(dirham marokański),
+				'currency' => q(dirham marokański),
 				'few' => q(dirhamy marokańskie),
 				'many' => q(dirhamów marokańskich),
 				'one' => q(dirham marokański),
@@ -3637,7 +3636,7 @@ has 'curriencies' => (
 		},
 		'MAF' => {
 			display_name => {
-				'default' => q(frank marokański),
+				'currency' => q(frank marokański),
 				'few' => q(franki marokańskie),
 				'many' => q(franków marokańskich),
 				'one' => q(frank marokański),
@@ -3646,7 +3645,7 @@ has 'curriencies' => (
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(lej mołdawski),
+				'currency' => q(lej mołdawski),
 				'few' => q(leje mołdawskie),
 				'many' => q(lejów mołdawskich),
 				'one' => q(lej mołdawski),
@@ -3655,7 +3654,7 @@ has 'curriencies' => (
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(ariary malgaski),
+				'currency' => q(ariary malgaski),
 				'few' => q(ariary malgaskie),
 				'many' => q(ariary malgaskich),
 				'one' => q(ariary malgaski),
@@ -3664,12 +3663,12 @@ has 'curriencies' => (
 		},
 		'MGF' => {
 			display_name => {
-				'default' => q(frank malgaski),
+				'currency' => q(frank malgaski),
 			},
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(denar macedoński),
+				'currency' => q(denar macedoński),
 				'few' => q(denary macedońskie),
 				'many' => q(denarów macedońskich),
 				'one' => q(denar macedoński),
@@ -3678,12 +3677,12 @@ has 'curriencies' => (
 		},
 		'MLF' => {
 			display_name => {
-				'default' => q(frank malijski),
+				'currency' => q(frank malijski),
 			},
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(kiat birmański),
+				'currency' => q(kiat birmański),
 				'few' => q(kiaty birmańskie),
 				'many' => q(kiatów birmańskich),
 				'one' => q(kiat birmański),
@@ -3692,7 +3691,7 @@ has 'curriencies' => (
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(tugrik mongolski),
+				'currency' => q(tugrik mongolski),
 				'few' => q(tugriki mongolskie),
 				'many' => q(tugrików mongolskich),
 				'one' => q(tugrik mongolski),
@@ -3701,7 +3700,7 @@ has 'curriencies' => (
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(pataca Makau),
+				'currency' => q(pataca Makau),
 				'few' => q(pataca Makau),
 				'many' => q(pataca Makau),
 				'one' => q(pataca Makau),
@@ -3710,7 +3709,7 @@ has 'curriencies' => (
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(ouguiya mauretańska),
+				'currency' => q(ouguiya mauretańska),
 				'few' => q(ouguiya mauretańskie),
 				'many' => q(ouguiya mauretańskich),
 				'one' => q(ouguiya mauretańska),
@@ -3719,17 +3718,17 @@ has 'curriencies' => (
 		},
 		'MTL' => {
 			display_name => {
-				'default' => q(lira maltańska),
+				'currency' => q(lira maltańska),
 			},
 		},
 		'MTP' => {
 			display_name => {
-				'default' => q(funt maltański),
+				'currency' => q(funt maltański),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(rupia maurytyjska),
+				'currency' => q(rupia maurytyjska),
 				'few' => q(rupie maurytyjskie),
 				'many' => q(rupii maurytyjskich),
 				'one' => q(rupia maurytyjska),
@@ -3738,7 +3737,7 @@ has 'curriencies' => (
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(rupia malediwska),
+				'currency' => q(rupia malediwska),
 				'few' => q(rupie malediwskie),
 				'many' => q(rupii malediwskich),
 				'one' => q(rupia malediwska),
@@ -3747,7 +3746,7 @@ has 'curriencies' => (
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(kwacha malawska),
+				'currency' => q(kwacha malawska),
 				'few' => q(kwacha malawskie),
 				'many' => q(kwacha malawskich),
 				'one' => q(kwacha malawska),
@@ -3757,7 +3756,7 @@ has 'curriencies' => (
 		'MXN' => {
 			symbol => 'MXN',
 			display_name => {
-				'default' => q(peso meksykańskie),
+				'currency' => q(peso meksykańskie),
 				'few' => q(pesos meksykańskie),
 				'many' => q(pesos meksykańskich),
 				'one' => q(peso meksykańskie),
@@ -3766,12 +3765,12 @@ has 'curriencies' => (
 		},
 		'MXP' => {
 			display_name => {
-				'default' => q(peso srebrne meksykańskie (1861–1992)),
+				'currency' => q(peso srebrne meksykańskie \(1861–1992\)),
 			},
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(ringgit malezyjski),
+				'currency' => q(ringgit malezyjski),
 				'few' => q(ringgity malezyjskie),
 				'many' => q(ringgitów malezyjskich),
 				'one' => q(ringgit malezyjski),
@@ -3780,17 +3779,17 @@ has 'curriencies' => (
 		},
 		'MZE' => {
 			display_name => {
-				'default' => q(escudo mozambickie),
+				'currency' => q(escudo mozambickie),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(metical Mozambik),
+				'currency' => q(metical Mozambik),
 			},
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(metical mozambicki),
+				'currency' => q(metical mozambicki),
 				'few' => q(meticale mozambijskie),
 				'many' => q(meticali mozambijskich),
 				'one' => q(metical mozambijski),
@@ -3799,7 +3798,7 @@ has 'curriencies' => (
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(dolar namibijski),
+				'currency' => q(dolar namibijski),
 				'few' => q(dolary namibijskie),
 				'many' => q(dolarów namibijskich),
 				'one' => q(dolar namibijski),
@@ -3808,7 +3807,7 @@ has 'curriencies' => (
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(naira nigeryjska),
+				'currency' => q(naira nigeryjska),
 				'few' => q(nairy nigeryjskie),
 				'many' => q(nair nigeryjskich),
 				'one' => q(naira nigeryjska),
@@ -3817,16 +3816,16 @@ has 'curriencies' => (
 		},
 		'NIC' => {
 			display_name => {
-				'default' => q(cordoba nikaraguańska (1988–1991)),
-				'few' => q(cordoby nikaraguańskie (1988–1991)),
-				'many' => q(cordob nikaraguańskich (1988–1991)),
-				'one' => q(cordoba nikaraguańska (1988–1991)),
-				'other' => q(cordoby nikaraguańskiej (1988–1991)),
+				'currency' => q(cordoba nikaraguańska \(1988–1991\)),
+				'few' => q(cordoby nikaraguańskie \(1988–1991\)),
+				'many' => q(cordob nikaraguańskich \(1988–1991\)),
+				'one' => q(cordoba nikaraguańska \(1988–1991\)),
+				'other' => q(cordoby nikaraguańskiej \(1988–1991\)),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(cordoba nikaraguańska),
+				'currency' => q(cordoba nikaraguańska),
 				'few' => q(cordoby nikaraguańskie),
 				'many' => q(cordob nikaraguańskich),
 				'one' => q(cordoba nikaraguańska),
@@ -3835,12 +3834,12 @@ has 'curriencies' => (
 		},
 		'NLG' => {
 			display_name => {
-				'default' => q(gulden holenderski),
+				'currency' => q(gulden holenderski),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(korona norweska),
+				'currency' => q(korona norweska),
 				'few' => q(korony norweskie),
 				'many' => q(koron norweskich),
 				'one' => q(korona norweska),
@@ -3849,7 +3848,7 @@ has 'curriencies' => (
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(rupia nepalska),
+				'currency' => q(rupia nepalska),
 				'few' => q(rupie nepalskie),
 				'many' => q(rupii nepalskich),
 				'one' => q(rupia nepalska),
@@ -3859,7 +3858,7 @@ has 'curriencies' => (
 		'NZD' => {
 			symbol => 'NZD',
 			display_name => {
-				'default' => q(dolar nowozelandzki),
+				'currency' => q(dolar nowozelandzki),
 				'few' => q(dolary nowozelandzkie),
 				'many' => q(dolarów nowozelandzkich),
 				'one' => q(dolar nowozelandzki),
@@ -3868,7 +3867,7 @@ has 'curriencies' => (
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(rial omański),
+				'currency' => q(rial omański),
 				'few' => q(riale omańskie),
 				'many' => q(riali omańskich),
 				'one' => q(rial omański),
@@ -3877,7 +3876,7 @@ has 'curriencies' => (
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(balboa panamski),
+				'currency' => q(balboa panamski),
 				'few' => q(balboa panamskie),
 				'many' => q(balboa panamskich),
 				'one' => q(balboa panamski),
@@ -3886,12 +3885,12 @@ has 'curriencies' => (
 		},
 		'PEI' => {
 			display_name => {
-				'default' => q(inti peruwiański),
+				'currency' => q(inti peruwiański),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(nowy sol peruwiański),
+				'currency' => q(nowy sol peruwiański),
 				'few' => q(nowe sole peruwiańskie),
 				'many' => q(nowych soli peruwiańskich),
 				'one' => q(nowy sol peruwiański),
@@ -3900,12 +3899,12 @@ has 'curriencies' => (
 		},
 		'PES' => {
 			display_name => {
-				'default' => q(sol peruwiański),
+				'currency' => q(sol peruwiański),
 			},
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(kina Papua Nowa Gwinea),
+				'currency' => q(kina Papua Nowa Gwinea),
 				'few' => q(kina papuaskie),
 				'many' => q(kina papuaskich),
 				'one' => q(kina papuaska),
@@ -3914,7 +3913,7 @@ has 'curriencies' => (
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(peso filipińskie),
+				'currency' => q(peso filipińskie),
 				'few' => q(pesos filipińskie),
 				'many' => q(pesos filipińskich),
 				'one' => q(peso filipińskie),
@@ -3923,7 +3922,7 @@ has 'curriencies' => (
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(rupia pakistańska),
+				'currency' => q(rupia pakistańska),
 				'few' => q(rupie pakistańskie),
 				'many' => q(rupii pakistańskich),
 				'one' => q(rupia pakistańska),
@@ -3933,7 +3932,7 @@ has 'curriencies' => (
 		'PLN' => {
 			symbol => 'zł',
 			display_name => {
-				'default' => q(złoty polski),
+				'currency' => q(złoty polski),
 				'few' => q(złote polskie),
 				'many' => q(złotych polskich),
 				'one' => q(złoty polski),
@@ -3942,21 +3941,21 @@ has 'curriencies' => (
 		},
 		'PLZ' => {
 			display_name => {
-				'default' => q(złoty polski (1950–1995)),
-				'few' => q(złote polskie (1950–1995)),
-				'many' => q(złotych polskich (1950–1995)),
-				'one' => q(złoty polski (1950–1995)),
-				'other' => q(złotego polskiego (1950–1995)),
+				'currency' => q(złoty polski \(1950–1995\)),
+				'few' => q(złote polskie \(1950–1995\)),
+				'many' => q(złotych polskich \(1950–1995\)),
+				'one' => q(złoty polski \(1950–1995\)),
+				'other' => q(złotego polskiego \(1950–1995\)),
 			},
 		},
 		'PTE' => {
 			display_name => {
-				'default' => q(escudo portugalskie),
+				'currency' => q(escudo portugalskie),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(guarani paragwajskie),
+				'currency' => q(guarani paragwajskie),
 				'few' => q(guarani paragwajskie),
 				'many' => q(guarani paragwajskich),
 				'one' => q(guarani paragwajskie),
@@ -3965,7 +3964,7 @@ has 'curriencies' => (
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(rial katarski),
+				'currency' => q(rial katarski),
 				'few' => q(riale katarskie),
 				'many' => q(riali katarskich),
 				'one' => q(rial katarski),
@@ -3974,21 +3973,21 @@ has 'curriencies' => (
 		},
 		'RHD' => {
 			display_name => {
-				'default' => q(dolar rodezyjski),
+				'currency' => q(dolar rodezyjski),
 			},
 		},
 		'ROL' => {
 			display_name => {
-				'default' => q(lej rumuński (1952–2006)),
-				'few' => q(lei rumuńskie (1952–2006)),
-				'many' => q(lei rumuńskich (1952–2006)),
-				'one' => q(lej rumuński (1952–2006)),
-				'other' => q(leja rumuńskiego (1952–2006)),
+				'currency' => q(lej rumuński \(1952–2006\)),
+				'few' => q(lei rumuńskie \(1952–2006\)),
+				'many' => q(lei rumuńskich \(1952–2006\)),
+				'one' => q(lej rumuński \(1952–2006\)),
+				'other' => q(leja rumuńskiego \(1952–2006\)),
 			},
 		},
 		'RON' => {
 			display_name => {
-				'default' => q(leja rumuńska),
+				'currency' => q(leja rumuńska),
 				'few' => q(leje rumuńskie),
 				'many' => q(lejów rumuńskich),
 				'one' => q(lej rumuński),
@@ -3997,7 +3996,7 @@ has 'curriencies' => (
 		},
 		'RSD' => {
 			display_name => {
-				'default' => q(dinar serbski),
+				'currency' => q(dinar serbski),
 				'few' => q(dinary serbskie),
 				'many' => q(dinarów serbskich),
 				'one' => q(dinar serbski),
@@ -4006,7 +4005,7 @@ has 'curriencies' => (
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(rubel rosyjski),
+				'currency' => q(rubel rosyjski),
 				'few' => q(ruble rosyjskie),
 				'many' => q(rubli rosyjskich),
 				'one' => q(rubel rosyjski),
@@ -4015,16 +4014,16 @@ has 'curriencies' => (
 		},
 		'RUR' => {
 			display_name => {
-				'default' => q(rubel rosyjski (1991–1998)),
-				'few' => q(ruble rosyjskie (1991–1998)),
-				'many' => q(rubli rosyjskich (1991–1998)),
-				'one' => q(rubel rosyjski (1991–1998)),
-				'other' => q(rubla rosyjskiego (1991–1998)),
+				'currency' => q(rubel rosyjski \(1991–1998\)),
+				'few' => q(ruble rosyjskie \(1991–1998\)),
+				'many' => q(rubli rosyjskich \(1991–1998\)),
+				'one' => q(rubel rosyjski \(1991–1998\)),
+				'other' => q(rubla rosyjskiego \(1991–1998\)),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(frank ruandyjski),
+				'currency' => q(frank ruandyjski),
 				'few' => q(franki ruandyjskie),
 				'many' => q(franków ruandyjskich),
 				'one' => q(frank ruandyjski),
@@ -4033,7 +4032,7 @@ has 'curriencies' => (
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(rial saudyjski),
+				'currency' => q(rial saudyjski),
 				'few' => q(riale saudyjskie),
 				'many' => q(riali saudyjskich),
 				'one' => q(rial saudyjski),
@@ -4042,7 +4041,7 @@ has 'curriencies' => (
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(dolar Wysp Salomona),
+				'currency' => q(dolar Wysp Salomona),
 				'few' => q(dolary Wysp Salomona),
 				'many' => q(dolarów Wysp Salomona),
 				'one' => q(dolar Wysp Salomona),
@@ -4051,7 +4050,7 @@ has 'curriencies' => (
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(rupia seszelska),
+				'currency' => q(rupia seszelska),
 				'few' => q(rupie seszelskie),
 				'many' => q(rupii seszelskich),
 				'one' => q(rupia seszelska),
@@ -4060,12 +4059,12 @@ has 'curriencies' => (
 		},
 		'SDD' => {
 			display_name => {
-				'default' => q(dinar sudański),
+				'currency' => q(dinar sudański),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(funt sudański),
+				'currency' => q(funt sudański),
 				'few' => q(funty sudańskie),
 				'many' => q(funtów sudańskich),
 				'one' => q(funt sudański),
@@ -4074,16 +4073,16 @@ has 'curriencies' => (
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(funt sudański (1957–1998)),
-				'few' => q(funty sudańskie (1957–1998)),
-				'many' => q(funtów sudańskich (1957–1998)),
-				'one' => q(funt sudański (1957–1998)),
-				'other' => q(funta sudańskiego (1957–1998)),
+				'currency' => q(funt sudański \(1957–1998\)),
+				'few' => q(funty sudańskie \(1957–1998\)),
+				'many' => q(funtów sudańskich \(1957–1998\)),
+				'one' => q(funt sudański \(1957–1998\)),
+				'other' => q(funta sudańskiego \(1957–1998\)),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(korona szwedzka),
+				'currency' => q(korona szwedzka),
 				'few' => q(korony szwedzkie),
 				'many' => q(koron szwedzkich),
 				'one' => q(korona szwedzka),
@@ -4092,7 +4091,7 @@ has 'curriencies' => (
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(dolar singapurski),
+				'currency' => q(dolar singapurski),
 				'few' => q(dolary singapurskie),
 				'many' => q(dolarów singapurskich),
 				'one' => q(dolar singapurski),
@@ -4101,7 +4100,7 @@ has 'curriencies' => (
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(funt Wyspy Świętej Heleny),
+				'currency' => q(funt Wyspy Świętej Heleny),
 				'few' => q(funty Wyspy Świętej Heleny),
 				'many' => q(funtów Wyspy Świętej Heleny),
 				'one' => q(funt Wyspy Świętej Heleny),
@@ -4110,7 +4109,7 @@ has 'curriencies' => (
 		},
 		'SIT' => {
 			display_name => {
-				'default' => q(tolar słoweński),
+				'currency' => q(tolar słoweński),
 				'few' => q(tolary słoweńskie),
 				'many' => q(tolarów słoweńskich),
 				'one' => q(tolar słoweński),
@@ -4119,7 +4118,7 @@ has 'curriencies' => (
 		},
 		'SKK' => {
 			display_name => {
-				'default' => q(korona słowacka),
+				'currency' => q(korona słowacka),
 				'few' => q(korony słowackie),
 				'many' => q(koron słowackich),
 				'one' => q(korona słowacka),
@@ -4128,7 +4127,7 @@ has 'curriencies' => (
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(leone sierraleoński),
+				'currency' => q(leone sierraleoński),
 				'few' => q(leone sierraleońskie),
 				'many' => q(leone sierraleońskich),
 				'one' => q(leone sierraleoński),
@@ -4137,7 +4136,7 @@ has 'curriencies' => (
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(szyling somalijski),
+				'currency' => q(szyling somalijski),
 				'few' => q(szylingi somalijskie),
 				'many' => q(szylingów somalijskich),
 				'one' => q(szyling somalijski),
@@ -4146,7 +4145,7 @@ has 'curriencies' => (
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(dolar surinamski),
+				'currency' => q(dolar surinamski),
 				'few' => q(dolary surinamskie),
 				'many' => q(dolarów surinamskich),
 				'one' => q(dolar surinamski),
@@ -4155,12 +4154,12 @@ has 'curriencies' => (
 		},
 		'SRG' => {
 			display_name => {
-				'default' => q(gulden surinamski),
+				'currency' => q(gulden surinamski),
 			},
 		},
 		'SSP' => {
 			display_name => {
-				'default' => q(funt południowosudański),
+				'currency' => q(funt południowosudański),
 				'few' => q(funty południowosudańskie),
 				'many' => q(funtów południowosudańskich),
 				'one' => q(funt południowosudański),
@@ -4169,7 +4168,7 @@ has 'curriencies' => (
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(dobra Wysp Świętego Tomasza i Książęcej),
+				'currency' => q(dobra Wysp Świętego Tomasza i Książęcej),
 				'few' => q(dobry Wysp Świętego Tomasza i Książęcej),
 				'many' => q(dobr Wysp Świętego Tomasza i Książęcej),
 				'one' => q(dobra Wysp Świętego Tomasza i Książęcej),
@@ -4178,7 +4177,7 @@ has 'curriencies' => (
 		},
 		'SUR' => {
 			display_name => {
-				'default' => q(rubel radziecki),
+				'currency' => q(rubel radziecki),
 				'few' => q(ruble radzieckie),
 				'many' => q(rubli radzieckich),
 				'one' => q(rubel radziecki),
@@ -4187,12 +4186,12 @@ has 'curriencies' => (
 		},
 		'SVC' => {
 			display_name => {
-				'default' => q(colon salwadorski),
+				'currency' => q(colon salwadorski),
 			},
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(funt syryjski),
+				'currency' => q(funt syryjski),
 				'few' => q(funty syryjskie),
 				'many' => q(funtów syryjskich),
 				'one' => q(funt syryjski),
@@ -4201,7 +4200,7 @@ has 'curriencies' => (
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(lilangeni Suazi),
+				'currency' => q(lilangeni Suazi),
 				'few' => q(emalangeni Suazi),
 				'many' => q(emalangeni Suazi),
 				'one' => q(lilangeni Suazi),
@@ -4211,7 +4210,7 @@ has 'curriencies' => (
 		'THB' => {
 			symbol => 'THB',
 			display_name => {
-				'default' => q(baht tajski),
+				'currency' => q(baht tajski),
 				'few' => q(bahty tajskie),
 				'many' => q(bahtów tajskich),
 				'one' => q(baht tajski),
@@ -4220,12 +4219,12 @@ has 'curriencies' => (
 		},
 		'TJR' => {
 			display_name => {
-				'default' => q(rubel tadżycki),
+				'currency' => q(rubel tadżycki),
 			},
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(somoni tadżyckie),
+				'currency' => q(somoni tadżyckie),
 				'few' => q(somoni tadżyckie),
 				'many' => q(somoni tadżyckich),
 				'one' => q(somoni tadżyckie),
@@ -4234,16 +4233,16 @@ has 'curriencies' => (
 		},
 		'TMM' => {
 			display_name => {
-				'default' => q(manat turkmeński (1993–2009)),
-				'few' => q(manaty turkmeńskie (1993–2009)),
-				'many' => q(manatów turkmeńskich (1993–2009)),
-				'one' => q(manat turkmeński (1993–2009)),
-				'other' => q(manata turkmeńskiego (1993–2009)),
+				'currency' => q(manat turkmeński \(1993–2009\)),
+				'few' => q(manaty turkmeńskie \(1993–2009\)),
+				'many' => q(manatów turkmeńskich \(1993–2009\)),
+				'one' => q(manat turkmeński \(1993–2009\)),
+				'other' => q(manata turkmeńskiego \(1993–2009\)),
 			},
 		},
 		'TMT' => {
 			display_name => {
-				'default' => q(manat turkmeński),
+				'currency' => q(manat turkmeński),
 				'few' => q(manaty turkmeńskie),
 				'many' => q(manatów turkmeńskich),
 				'one' => q(manat turkmeński),
@@ -4252,7 +4251,7 @@ has 'curriencies' => (
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(dinar tunezyjski),
+				'currency' => q(dinar tunezyjski),
 				'few' => q(dinary tunezyjskie),
 				'many' => q(dinarów tunezyjskich),
 				'one' => q(dinar tunezyjski),
@@ -4261,7 +4260,7 @@ has 'curriencies' => (
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(pa'anga tongijska),
+				'currency' => q(pa'anga tongijska),
 				'few' => q(pa'anga tongijskie),
 				'many' => q(pa'anga tongijskich),
 				'one' => q(pa'anga tongijska),
@@ -4270,21 +4269,21 @@ has 'curriencies' => (
 		},
 		'TPE' => {
 			display_name => {
-				'default' => q(escudo timorskie),
+				'currency' => q(escudo timorskie),
 			},
 		},
 		'TRL' => {
 			display_name => {
-				'default' => q(lira turecka (1922–2005)),
-				'few' => q(liry tureckie (1922–2005)),
-				'many' => q(lir tureckich (1922–2005)),
-				'one' => q(lira turecka (1922–2005)),
-				'other' => q(liry tureckiej (1922–2005)),
+				'currency' => q(lira turecka \(1922–2005\)),
+				'few' => q(liry tureckie \(1922–2005\)),
+				'many' => q(lir tureckich \(1922–2005\)),
+				'one' => q(lira turecka \(1922–2005\)),
+				'other' => q(liry tureckiej \(1922–2005\)),
 			},
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(lira turecka),
+				'currency' => q(lira turecka),
 				'few' => q(liry tureckie),
 				'many' => q(lir tureckich),
 				'one' => q(lira turecka),
@@ -4293,7 +4292,7 @@ has 'curriencies' => (
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(dolar Trynidadu i Tobago),
+				'currency' => q(dolar Trynidadu i Tobago),
 				'few' => q(dolary Trynidadu i Tobago),
 				'many' => q(dolarów Trynidadu i Tobago),
 				'one' => q(dolar Trynidadu i Tobago),
@@ -4303,7 +4302,7 @@ has 'curriencies' => (
 		'TWD' => {
 			symbol => 'TWD',
 			display_name => {
-				'default' => q(nowy dolar tajwański),
+				'currency' => q(nowy dolar tajwański),
 				'few' => q(nowe dolary tajwańskie),
 				'many' => q(nowych dolarów tajwańskich),
 				'one' => q(nowy dolar tajwański),
@@ -4312,7 +4311,7 @@ has 'curriencies' => (
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(szyling tanzański),
+				'currency' => q(szyling tanzański),
 				'few' => q(szylingi tanzańskie),
 				'many' => q(szylingów tanzańskich),
 				'one' => q(szyling tanzański),
@@ -4321,7 +4320,7 @@ has 'curriencies' => (
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(hrywna ukraińska),
+				'currency' => q(hrywna ukraińska),
 				'few' => q(hrywny ukraińskie),
 				'many' => q(hrywien ukraińskich),
 				'one' => q(hrywna ukraińska),
@@ -4330,7 +4329,7 @@ has 'curriencies' => (
 		},
 		'UAK' => {
 			display_name => {
-				'default' => q(karbowaniec ukraiński),
+				'currency' => q(karbowaniec ukraiński),
 				'few' => q(karbowańce ukraińskie),
 				'many' => q(karbowańców ukraińskich),
 				'one' => q(karbowaniec ukraiński),
@@ -4339,12 +4338,12 @@ has 'curriencies' => (
 		},
 		'UGS' => {
 			display_name => {
-				'default' => q(szyling ugandyjski (1966–1987)),
+				'currency' => q(szyling ugandyjski \(1966–1987\)),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(szyling ugandyjski),
+				'currency' => q(szyling ugandyjski),
 				'few' => q(szylingi ugandyjskie),
 				'many' => q(szylingów ugandyjskich),
 				'one' => q(szyling ugandyjski),
@@ -4354,7 +4353,7 @@ has 'curriencies' => (
 		'USD' => {
 			symbol => 'USD',
 			display_name => {
-				'default' => q(dolar amerykański),
+				'currency' => q(dolar amerykański),
 				'few' => q(dolary amerykańskie),
 				'many' => q(dolarów amerykańskich),
 				'one' => q(dolar amerykański),
@@ -4363,12 +4362,12 @@ has 'curriencies' => (
 		},
 		'UYP' => {
 			display_name => {
-				'default' => q(peso urugwajskie (1975–1993)),
+				'currency' => q(peso urugwajskie \(1975–1993\)),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(peso urugwajskie),
+				'currency' => q(peso urugwajskie),
 				'few' => q(pesos urugwajskie),
 				'many' => q(pesos urugwajskich),
 				'one' => q(peso urugwajskie),
@@ -4377,7 +4376,7 @@ has 'curriencies' => (
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(som uzbecki),
+				'currency' => q(som uzbecki),
 				'few' => q(somy uzbeckie),
 				'many' => q(somów uzbeckich),
 				'one' => q(som uzbecki),
@@ -4386,16 +4385,16 @@ has 'curriencies' => (
 		},
 		'VEB' => {
 			display_name => {
-				'default' => q(boliwar wenezuelski (1871–2008)),
-				'few' => q(boliwary wenezuelskie (1871–2008)),
-				'many' => q(boliwarów wenezuelskich (1871–2008)),
-				'one' => q(boliwar wenezuelski (1871–2008)),
-				'other' => q(boliwary wenezuelskiego (1871–2008)),
+				'currency' => q(boliwar wenezuelski \(1871–2008\)),
+				'few' => q(boliwary wenezuelskie \(1871–2008\)),
+				'many' => q(boliwarów wenezuelskich \(1871–2008\)),
+				'one' => q(boliwar wenezuelski \(1871–2008\)),
+				'other' => q(boliwary wenezuelskiego \(1871–2008\)),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(boliwar wenezuelski),
+				'currency' => q(boliwar wenezuelski),
 				'few' => q(boliwary wenezuelskie),
 				'many' => q(boliwarów wenezuelskich),
 				'one' => q(boliwar wenezuelski),
@@ -4405,7 +4404,7 @@ has 'curriencies' => (
 		'VND' => {
 			symbol => 'VND',
 			display_name => {
-				'default' => q(dong wietnamski),
+				'currency' => q(dong wietnamski),
 				'few' => q(dongi wietnamskie),
 				'many' => q(dongów wietnamskich),
 				'one' => q(dong wietnamski),
@@ -4414,7 +4413,7 @@ has 'curriencies' => (
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(vatu Vanuatu),
+				'currency' => q(vatu Vanuatu),
 				'few' => q(vatu vanuatuańskie),
 				'many' => q(vatu vanuatuańskich),
 				'one' => q(vatu vanuatuańskie),
@@ -4423,7 +4422,7 @@ has 'curriencies' => (
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(tala samoańska),
+				'currency' => q(tala samoańska),
 				'few' => q(tala samoańskie),
 				'many' => q(tala samoańskich),
 				'one' => q(tala samoańskie),
@@ -4433,7 +4432,7 @@ has 'curriencies' => (
 		'XAF' => {
 			symbol => 'FCFA',
 			display_name => {
-				'default' => q(frank CFA BEAC),
+				'currency' => q(frank CFA BEAC),
 				'few' => q(franki CFA BEAC),
 				'many' => q(franków CFA BEAC),
 				'one' => q(frank CFA BEAC),
@@ -4442,38 +4441,38 @@ has 'curriencies' => (
 		},
 		'XAG' => {
 			display_name => {
-				'default' => q(srebro),
+				'currency' => q(srebro),
 			},
 		},
 		'XAU' => {
 			display_name => {
-				'default' => q(złoto),
+				'currency' => q(złoto),
 			},
 		},
 		'XBA' => {
 			display_name => {
-				'default' => q(jednostka emisji euroobligacji),
+				'currency' => q(jednostka emisji euroobligacji),
 			},
 		},
 		'XBB' => {
 			display_name => {
-				'default' => q(europejska jednostka monetarna),
+				'currency' => q(europejska jednostka monetarna),
 			},
 		},
 		'XBC' => {
 			display_name => {
-				'default' => q(europejska jednostka rozrachunkowa (XBC)),
+				'currency' => q(europejska jednostka rozrachunkowa \(XBC\)),
 			},
 		},
 		'XBD' => {
 			display_name => {
-				'default' => q(europejska jednostka rozrachunkowa (XBD)),
+				'currency' => q(europejska jednostka rozrachunkowa \(XBD\)),
 			},
 		},
 		'XCD' => {
 			symbol => 'EC$',
 			display_name => {
-				'default' => q(dolar wschodniokaraibski),
+				'currency' => q(dolar wschodniokaraibski),
 				'few' => q(dolary wschodniokaraibskie),
 				'many' => q(dolarów wschodniokaraibskich),
 				'one' => q(dolar wschodniokaraibski),
@@ -4482,28 +4481,28 @@ has 'curriencies' => (
 		},
 		'XDR' => {
 			display_name => {
-				'default' => q(specjalne prawa ciągnienia),
+				'currency' => q(specjalne prawa ciągnienia),
 			},
 		},
 		'XEU' => {
 			display_name => {
-				'default' => q(ECU),
+				'currency' => q(ECU),
 			},
 		},
 		'XFO' => {
 			display_name => {
-				'default' => q(frank złoty francuski),
+				'currency' => q(frank złoty francuski),
 			},
 		},
 		'XFU' => {
 			display_name => {
-				'default' => q(UIC-frank francuski),
+				'currency' => q(UIC-frank francuski),
 			},
 		},
 		'XOF' => {
 			symbol => 'CFA',
 			display_name => {
-				'default' => q(frank CFA),
+				'currency' => q(frank CFA),
 				'few' => q(franki CFA),
 				'many' => q(franków CFA),
 				'one' => q(frank CFA),
@@ -4512,13 +4511,13 @@ has 'curriencies' => (
 		},
 		'XPD' => {
 			display_name => {
-				'default' => q(pallad),
+				'currency' => q(pallad),
 			},
 		},
 		'XPF' => {
 			symbol => 'CFPF',
 			display_name => {
-				'default' => q(frank CFP),
+				'currency' => q(frank CFP),
 				'few' => q(franki CFP),
 				'many' => q(franków CFP),
 				'one' => q(frank CFP),
@@ -4527,17 +4526,17 @@ has 'curriencies' => (
 		},
 		'XPT' => {
 			display_name => {
-				'default' => q(platyna),
+				'currency' => q(platyna),
 			},
 		},
 		'XTS' => {
 			display_name => {
-				'default' => q(testowy kod waluty),
+				'currency' => q(testowy kod waluty),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(nieznana waluta),
+				'currency' => q(nieznana waluta),
 				'few' => q(nieznanej waluty),
 				'many' => q(nieznanej waluty),
 				'one' => q(nieznana waluta),
@@ -4546,12 +4545,12 @@ has 'curriencies' => (
 		},
 		'YDD' => {
 			display_name => {
-				'default' => q(dinar jemeński),
+				'currency' => q(dinar jemeński),
 			},
 		},
 		'YER' => {
 			display_name => {
-				'default' => q(rial jemeński),
+				'currency' => q(rial jemeński),
 				'few' => q(riale jemeńskie),
 				'many' => q(riali jemeńskich),
 				'one' => q(rial jemeński),
@@ -4560,22 +4559,22 @@ has 'curriencies' => (
 		},
 		'YUM' => {
 			display_name => {
-				'default' => q(nowy dinar jugosławiański),
+				'currency' => q(nowy dinar jugosławiański),
 			},
 		},
 		'YUN' => {
 			display_name => {
-				'default' => q(dinar jugosławiański wymienny),
+				'currency' => q(dinar jugosławiański wymienny),
 			},
 		},
 		'ZAL' => {
 			display_name => {
-				'default' => q(rand południowoafrykański (finansowy)),
+				'currency' => q(rand południowoafrykański \(finansowy\)),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(rand południowoafrykański),
+				'currency' => q(rand południowoafrykański),
 				'few' => q(randy południowoafrykańskie),
 				'many' => q(randów południowoafrykańskich),
 				'one' => q(rand południowoafrykański),
@@ -4584,16 +4583,16 @@ has 'curriencies' => (
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(kwacha zambijska (1968–2012)),
-				'few' => q(kwacha zambijskie (1968–2012)),
-				'many' => q(kwacha zambijskich (1968–2012)),
-				'one' => q(kwacha zambijska (1968–2012)),
-				'other' => q(kwacha zambijskiej (1968–2012)),
+				'currency' => q(kwacha zambijska \(1968–2012\)),
+				'few' => q(kwacha zambijskie \(1968–2012\)),
+				'many' => q(kwacha zambijskich \(1968–2012\)),
+				'one' => q(kwacha zambijska \(1968–2012\)),
+				'other' => q(kwacha zambijskiej \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(kwacha zambijska),
+				'currency' => q(kwacha zambijska),
 				'few' => q(kwacha zambijskie),
 				'many' => q(kwacha zambijskich),
 				'one' => q(kwacha zambijska),
@@ -4602,27 +4601,27 @@ has 'curriencies' => (
 		},
 		'ZRN' => {
 			display_name => {
-				'default' => q(nowy zair zairski),
+				'currency' => q(nowy zair zairski),
 			},
 		},
 		'ZRZ' => {
 			display_name => {
-				'default' => q(zair zairski),
+				'currency' => q(zair zairski),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(dolar Zimbabwe (1980–2008)),
+				'currency' => q(dolar Zimbabwe \(1980–2008\)),
 			},
 		},
 		'ZWL' => {
 			display_name => {
-				'default' => q(dolar Zimbabwe (2009)),
+				'currency' => q(dolar Zimbabwe \(2009\)),
 			},
 		},
 		'ZWR' => {
 			display_name => {
-				'default' => q(dolar Zimbabwe (2008)),
+				'currency' => q(dolar Zimbabwe \(2008\)),
 			},
 		},
 	} },
@@ -5540,196 +5539,196 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'persian') {
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'night' if $time >= 2200
-					&& $time < 300;
-			last SWITCH;
-			}
-			if ($_ eq 'japanese') {
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'night' if $time >= 2200
-					&& $time < 300;
-			last SWITCH;
-			}
-			if ($_ eq 'chinese') {
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'night' if $time >= 2200
-					&& $time < 300;
-			last SWITCH;
-			}
-			if ($_ eq 'islamic') {
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'night' if $time >= 2200
-					&& $time < 300;
-			last SWITCH;
-			}
-			if ($_ eq 'generic') {
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'night' if $time >= 2200
-					&& $time < 300;
-			last SWITCH;
-			}
-			if ($_ eq 'hebrew') {
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'night' if $time >= 2200
-					&& $time < 300;
-			last SWITCH;
-			}
 			if ($_ eq 'gregorian') {
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
 				return 'evening' if $time >= 1600
 					&& $time < 2200;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
 				return 'noon' if $time == 1200;
 				return 'earlyMorning' if $time >= 300
 					&& $time < 500;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'night' if $time >= 2200
-					&& $time < 300;
-			last SWITCH;
-			}
-			if ($_ eq 'roc') {
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'night' if $time >= 2200
-					&& $time < 300;
 			last SWITCH;
 			}
 			if ($_ eq 'buddhist') {
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
 				return 'evening' if $time >= 1600
 					&& $time < 2200;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
 				return 'noon' if $time == 1200;
 				return 'earlyMorning' if $time >= 300
 					&& $time < 500;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'night' if $time >= 2200
-					&& $time < 300;
-			last SWITCH;
-			}
-			if ($_ eq 'ethiopic') {
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'night' if $time >= 2200
-					&& $time < 300;
-			last SWITCH;
-			}
-			if ($_ eq 'indian') {
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'night' if $time >= 2200
-					&& $time < 300;
 			last SWITCH;
 			}
 			if ($_ eq 'coptic') {
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
 				return 'evening' if $time >= 1600
 					&& $time < 2200;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
 				return 'noon' if $time == 1200;
 				return 'earlyMorning' if $time >= 300
 					&& $time < 500;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
+			last SWITCH;
+			}
+			if ($_ eq 'islamic') {
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
 				return 'night' if $time >= 2200
 					&& $time < 300;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
+				return 'noon' if $time == 1200;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+			last SWITCH;
+			}
+			if ($_ eq 'hebrew') {
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
+				return 'noon' if $time == 1200;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+			last SWITCH;
+			}
+			if ($_ eq 'generic') {
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
+				return 'noon' if $time == 1200;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+			last SWITCH;
+			}
+			if ($_ eq 'persian') {
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
+				return 'noon' if $time == 1200;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+			last SWITCH;
+			}
+			if ($_ eq 'japanese') {
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
+				return 'noon' if $time == 1200;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+			last SWITCH;
+			}
+			if ($_ eq 'indian') {
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
+				return 'noon' if $time == 1200;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+			last SWITCH;
+			}
+			if ($_ eq 'ethiopic') {
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
+				return 'noon' if $time == 1200;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+			last SWITCH;
+			}
+			if ($_ eq 'chinese') {
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
+				return 'noon' if $time == 1200;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+			last SWITCH;
+			}
+			if ($_ eq 'roc') {
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
+				return 'noon' if $time == 1200;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
 			last SWITCH;
 			}
 		}
@@ -5746,13 +5745,13 @@ has 'day_periods' => (
 				'wide' => {
 					'afternoon' => q{po południu},
 					'earlyMorning' => q{nad ranem},
-					'night' => q{w nocy},
-					'pm' => q{PM},
-					'morning' => q{rano},
 					'am' => q{AM},
-					'lateMorning' => q{przed południem},
+					'night' => q{w nocy},
+					'morning' => q{rano},
 					'evening' => q{wieczorem},
+					'pm' => q{PM},
 					'noon' => q{w południe},
+					'lateMorning' => q{przed południem},
 				},
 			},
 		},
@@ -5935,6 +5934,41 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'generic' => {
+			Ed => q{E, d},
+			Gy => q{y G},
+			GyMMM => q{LLL y G},
+			GyMMMEd => q{E, d MMM y G},
+			GyMMMd => q{d MMM y G},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, d.MM},
+			MMM => q{LLL},
+			MMMEd => q{E, d MMM},
+			MMMMd => q{d MMMM},
+			MMMd => q{d MMM},
+			MMdd => q{d.MM},
+			Md => q{d.MM},
+			d => q{d},
+			h => q{hh a},
+			hm => q{hh:mm a},
+			hms => q{hh:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y G},
+			yyyy => q{y G},
+			yyyyM => q{MM.y G},
+			yyyyMEd => q{E, d.MM.y G},
+			yyyyMM => q{MM.y G},
+			yyyyMMM => q{LLL y G},
+			yyyyMMMEd => q{E, d MMM y G},
+			yyyyMMMM => q{LLLL y G},
+			yyyyMMMd => q{d MMM y G},
+			yyyyMd => q{d.MM.y G},
+			yyyyQQQ => q{QQQ y G},
+			yyyyQQQQ => q{QQQQ y G},
+		},
 		'gregorian' => {
 			EHm => q{E, HH:mm},
 			EHms => q{E, HH:mm:ss},
@@ -5973,41 +6007,6 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
-			Ed => q{E, d},
-			Gy => q{y G},
-			GyMMM => q{LLL y G},
-			GyMMMEd => q{E, d MMM y G},
-			GyMMMd => q{d MMM y G},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, d.MM},
-			MMM => q{LLL},
-			MMMEd => q{E, d MMM},
-			MMMMd => q{d MMMM},
-			MMMd => q{d MMM},
-			MMdd => q{d.MM},
-			Md => q{d.MM},
-			d => q{d},
-			h => q{hh a},
-			hm => q{hh:mm a},
-			hms => q{hh:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y G},
-			yyyy => q{y G},
-			yyyyM => q{MM.y G},
-			yyyyMEd => q{E, d.MM.y G},
-			yyyyMM => q{MM.y G},
-			yyyyMMM => q{LLL y G},
-			yyyyMMMEd => q{E, d MMM y G},
-			yyyyMMMM => q{LLLL y G},
-			yyyyMMMd => q{d MMM y G},
-			yyyyMd => q{d.MM.y G},
-			yyyyQQQ => q{QQQ y G},
-			yyyyQQQQ => q{QQQQ y G},
-		},
 	} },
 );
 
@@ -6027,101 +6026,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			H => {
-				H => q{HH–HH},
-			},
-			Hm => {
-				H => q{HH:mm–HH:mm},
-				m => q{HH:mm–HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm–HH:mm v},
-				m => q{HH:mm–HH:mm v},
-			},
-			Hv => {
-				H => q{HH–HH v},
-			},
-			M => {
-				M => q{MM-MM},
-			},
-			MEd => {
-				M => q{E, dd.MM – E, dd.MM},
-				d => q{E, dd.MM – E, dd.MM},
-			},
-			MMM => {
-				M => q{LLL–LLL},
-			},
-			MMMEd => {
-				M => q{E, d MMM - E, d MMM},
-				d => q{E, d MMM – E, d MMM},
-			},
-			MMMd => {
-				M => q{d MMM - d MMM},
-				d => q{d-d MMM},
-			},
-			Md => {
-				M => q{dd.MM–dd.MM},
-				d => q{dd.MM–dd.MM},
-			},
-			d => {
-				d => q{d–d},
-			},
-			fallback => '{0} – {1}',
-			h => {
-				a => q{h a – h a},
-				h => q{h–h a},
-			},
-			hm => {
-				a => q{h:mm a – h:mm a},
-				h => q{h:mm–h:mm a},
-				m => q{h:mm–h:mm a},
-			},
-			hmv => {
-				a => q{h:mm a – h:mm a v},
-				h => q{h:mm–h:mm a v},
-				m => q{h:mm-h:mm a v},
-			},
-			hv => {
-				a => q{h a – h a v},
-				h => q{h–h a v},
-			},
-			y => {
-				y => q{y–y},
-			},
-			yM => {
-				M => q{MM.y - MM.y},
-				y => q{MM.y - MM.y},
-			},
-			yMEd => {
-				M => q{E, dd.MM.y - E, dd.MM.y},
-				d => q{E, dd.MM.y - E, dd.MM.y},
-				y => q{E, dd.MM.y - E, dd.MM.y},
-			},
-			yMMM => {
-				M => q{LLL-LLL y},
-				y => q{LLL y - LLL y},
-			},
-			yMMMEd => {
-				M => q{E, d MMM - E, d MMM y},
-				d => q{E, d - E, d MMM y},
-				y => q{E, d MMM y - E, d MMM y},
-			},
-			yMMMM => {
-				M => q{LLLL-LLLL y},
-				y => q{LLLL y - LLLL y},
-			},
-			yMMMd => {
-				M => q{d MMM - d MMM y},
-				d => q{d-d MMM y},
-				y => q{d MMM y - d MMM y},
-			},
-			yMd => {
-				M => q{dd.MM-dd.MM.y},
-				d => q{dd-dd.MM.y},
-				y => q{dd.MM.y-dd.MM.y},
-			},
-		},
 		'generic' => {
 			H => {
 				H => q{HH–HH},
@@ -6215,6 +6119,101 @@ has 'datetime_formats_interval' => (
 				M => q{dd.MM-dd.MM.y GGGGG},
 				d => q{dd-dd.MM.y GGGGG},
 				y => q{dd.MM.y-dd.MM.y G},
+			},
+		},
+		'gregorian' => {
+			H => {
+				H => q{HH–HH},
+			},
+			Hm => {
+				H => q{HH:mm–HH:mm},
+				m => q{HH:mm–HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm–HH:mm v},
+				m => q{HH:mm–HH:mm v},
+			},
+			Hv => {
+				H => q{HH–HH v},
+			},
+			M => {
+				M => q{MM-MM},
+			},
+			MEd => {
+				M => q{E, dd.MM – E, dd.MM},
+				d => q{E, dd.MM – E, dd.MM},
+			},
+			MMM => {
+				M => q{LLL–LLL},
+			},
+			MMMEd => {
+				M => q{E, d MMM - E, d MMM},
+				d => q{E, d MMM – E, d MMM},
+			},
+			MMMd => {
+				M => q{d MMM - d MMM},
+				d => q{d-d MMM},
+			},
+			Md => {
+				M => q{dd.MM–dd.MM},
+				d => q{dd.MM–dd.MM},
+			},
+			d => {
+				d => q{d–d},
+			},
+			fallback => '{0} – {1}',
+			h => {
+				a => q{h a – h a},
+				h => q{h–h a},
+			},
+			hm => {
+				a => q{h:mm a – h:mm a},
+				h => q{h:mm–h:mm a},
+				m => q{h:mm–h:mm a},
+			},
+			hmv => {
+				a => q{h:mm a – h:mm a v},
+				h => q{h:mm–h:mm a v},
+				m => q{h:mm-h:mm a v},
+			},
+			hv => {
+				a => q{h a – h a v},
+				h => q{h–h a v},
+			},
+			y => {
+				y => q{y–y},
+			},
+			yM => {
+				M => q{MM.y - MM.y},
+				y => q{MM.y - MM.y},
+			},
+			yMEd => {
+				M => q{E, dd.MM.y - E, dd.MM.y},
+				d => q{E, dd.MM.y - E, dd.MM.y},
+				y => q{E, dd.MM.y - E, dd.MM.y},
+			},
+			yMMM => {
+				M => q{LLL-LLL y},
+				y => q{LLL y - LLL y},
+			},
+			yMMMEd => {
+				M => q{E, d MMM - E, d MMM y},
+				d => q{E, d - E, d MMM y},
+				y => q{E, d MMM y - E, d MMM y},
+			},
+			yMMMM => {
+				M => q{LLLL-LLLL y},
+				y => q{LLLL y - LLLL y},
+			},
+			yMMMd => {
+				M => q{d MMM - d MMM y},
+				d => q{d-d MMM y},
+				y => q{d MMM y - d MMM y},
+			},
+			yMd => {
+				M => q{dd.MM-dd.MM.y},
+				d => q{dd-dd.MM.y},
+				y => q{dd.MM.y-dd.MM.y},
 			},
 		},
 	} },

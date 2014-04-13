@@ -1,6 +1,6 @@
-package Locale::CLDR::Ha;
+package Locale::CLDR::Ha v0.0.4;
 # This file auto generated from Data\common\main\ha.xml
-#	on Mon 31 Mar 12:32:37 am GMT
+#	on Sun 13 Apr 10:30:53 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -504,278 +504,278 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Kuɗin Haɗaɗɗiyar Daular Larabawa),
+				'currency' => q(Kuɗin Haɗaɗɗiyar Daular Larabawa),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Kuɗin Angola),
+				'currency' => q(Kuɗin Angola),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Dalar Ostareliya),
+				'currency' => q(Dalar Ostareliya),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Kuɗin Baharan),
+				'currency' => q(Kuɗin Baharan),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Kuɗin Burundi),
+				'currency' => q(Kuɗin Burundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Kuɗin Baswana),
+				'currency' => q(Kuɗin Baswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Dalar Kanada),
+				'currency' => q(Dalar Kanada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Kuɗin Kongo),
+				'currency' => q(Kuɗin Kongo),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Kuɗin Suwizalan),
+				'currency' => q(Kuɗin Suwizalan),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Kuɗin Caina/Sin),
+				'currency' => q(Kuɗin Caina/Sin),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Kuɗin Tsibiran Kap Barde),
+				'currency' => q(Kuɗin Tsibiran Kap Barde),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Kuɗin Jibuti),
+				'currency' => q(Kuɗin Jibuti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Kuɗin Aljeriya),
+				'currency' => q(Kuɗin Aljeriya),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Fam kin Masar),
+				'currency' => q(Fam kin Masar),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Kuɗin Eritireya),
+				'currency' => q(Kuɗin Eritireya),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Kuɗin Habasha),
+				'currency' => q(Kuɗin Habasha),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Yuro),
+				'currency' => q(Yuro),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Fam kin Ingila),
+				'currency' => q(Fam kin Ingila),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Cedi),
+				'currency' => q(Cedi),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Kuɗin Gambiya),
+				'currency' => q(Kuɗin Gambiya),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Kuɗin Gini),
+				'currency' => q(Kuɗin Gini),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Kuɗin Indiya),
+				'currency' => q(Kuɗin Indiya),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Kuɗin Japan),
+				'currency' => q(Kuɗin Japan),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Sulen Kenya),
+				'currency' => q(Sulen Kenya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Kuɗin Kwamoras),
+				'currency' => q(Kuɗin Kwamoras),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Dalar Laberiya),
+				'currency' => q(Dalar Laberiya),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Kuɗin Lesoto),
+				'currency' => q(Kuɗin Lesoto),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Kuɗin Libiya),
+				'currency' => q(Kuɗin Libiya),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Kuɗin Maroko),
+				'currency' => q(Kuɗin Maroko),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Kuɗin Madagaskar),
+				'currency' => q(Kuɗin Madagaskar),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Kuɗin Moritaniya),
+				'currency' => q(Kuɗin Moritaniya),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Kuɗin Moritus),
+				'currency' => q(Kuɗin Moritus),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Kuɗin Malawi),
+				'currency' => q(Kuɗin Malawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Kuɗin Mozambik),
+				'currency' => q(Kuɗin Mozambik),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Dalar Namibiya),
+				'currency' => q(Dalar Namibiya),
 			},
 		},
 		'NGN' => {
 			symbol => '₦',
 			display_name => {
-				'default' => q(Naira),
+				'currency' => q(Naira),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Kuɗin Ruwanda),
+				'currency' => q(Kuɗin Ruwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Riyal),
+				'currency' => q(Riyal),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Kuɗin Saishal),
+				'currency' => q(Kuɗin Saishal),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Fam kin Sudan),
+				'currency' => q(Fam kin Sudan),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Fam kin San Helena),
+				'currency' => q(Fam kin San Helena),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Kuɗin Salewo),
+				'currency' => q(Kuɗin Salewo),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Sulen Somaliya),
+				'currency' => q(Sulen Somaliya),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Kuɗin Sawo Tome da Paransip),
+				'currency' => q(Kuɗin Sawo Tome da Paransip),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Kuɗin Lilangeni),
+				'currency' => q(Kuɗin Lilangeni),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Kuɗin Tunisiya),
+				'currency' => q(Kuɗin Tunisiya),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Sulen Tanzaniya),
+				'currency' => q(Sulen Tanzaniya),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Sule Yuganda),
+				'currency' => q(Sule Yuganda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Dalar Amurka),
+				'currency' => q(Dalar Amurka),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Kuɗin Sefa na Afirka Ta Tsakiya),
+				'currency' => q(Kuɗin Sefa na Afirka Ta Tsakiya),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Kuɗin Sefa na Afirka Ta Yamma),
+				'currency' => q(Kuɗin Sefa na Afirka Ta Yamma),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Kuɗin Afirka Ta Kudu),
+				'currency' => q(Kuɗin Afirka Ta Kudu),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Kuɗin Zambiya (1968–2012)),
+				'currency' => q(Kuɗin Zambiya \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Kuɗin Zambiya),
+				'currency' => q(Kuɗin Zambiya),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Dalar zimbabuwe),
+				'currency' => q(Dalar zimbabuwe),
 			},
 		},
 	} },
@@ -989,7 +989,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -1012,7 +1012,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -1054,3 +1054,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

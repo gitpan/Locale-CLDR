@@ -1,6 +1,6 @@
-package Locale::CLDR::Ig;
+package Locale::CLDR::Ig v0.0.4;
 # This file auto generated from Data\common\main\ig.xml
-#	on Mon 31 Mar 12:44:46 am GMT
+#	on Sun 13 Apr 10:43:31 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -145,9 +145,6 @@ has 'nostr' => (
 	default		=> sub { qr'^(?i:Mba|M|no|n)$' }
 );
 
-	} }
-);
-
 has 'number_currency_formats' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -177,13 +174,13 @@ has 'curriencies' => (
 	default		=> sub { {
 		'CVE' => {
 			display_name => {
-				'default' => q(Escudo Caboverdiano),
+				'currency' => q(Escudo Caboverdiano),
 			},
 		},
 		'NGN' => {
 			symbol => '₦',
 			display_name => {
-				'default' => q(Naịra),
+				'currency' => q(Naịra),
 			},
 		},
 	} },
@@ -446,3 +443,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

@@ -1,6 +1,6 @@
-package Locale::CLDR::Bem;
+package Locale::CLDR::Bem v0.0.4;
 # This file auto generated from Data\common\main\bem.xml
-#	on Sun 30 Mar 11:43:04 pm GMT
+#	on Sun 13 Apr  9:39:02 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -140,9 +140,6 @@ has 'nostr' => (
 	default		=> sub { qr'^(?i:Awe|A|no|n)$' }
 );
 
-	} }
-);
-
 has 'number_currency_formats' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -277,8 +274,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{akasuba},
 					'am' => q{uluchelo},
+					'pm' => q{akasuba},
 				},
 			},
 		},
@@ -358,7 +355,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -383,7 +380,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -427,3 +424,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

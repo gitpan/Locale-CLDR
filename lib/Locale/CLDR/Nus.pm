@@ -1,6 +1,6 @@
-package Locale::CLDR::Nus;
+package Locale::CLDR::Nus v0.0.4;
 # This file auto generated from Data\common\main\nus.xml
-#	on Mon 31 Mar  1:36:03 am GMT
+#	on Sun 13 Apr 11:36:10 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -544,3 +544,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

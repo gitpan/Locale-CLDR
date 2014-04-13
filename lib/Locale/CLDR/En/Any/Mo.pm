@@ -1,6 +1,6 @@
-package Locale::CLDR::En::Any::Mo;
+package Locale::CLDR::En::Any::Mo v0.0.4;
 # This file auto generated from Data\common\main\en_MO.xml
-#	on Mon 31 Mar 12:12:17 am GMT
+#	on Sun 13 Apr 10:09:30 am GMT
 # XML file generated 2013-08-18 23:26:52 -0500 (Sun, 18 Aug 2013)
 
 use v5.18;
@@ -10,3 +10,71 @@ use utf8;
 use Moose;
 
 extends('Locale::CLDR::En::Any');
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'MOP' => {
+			symbol => 'MOP$',
+		},
+		'USD' => {
+			symbol => 'US$',
+		},
+	} },
+);
+
+
+has 'time_zone_names' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default	=> sub { {
+		'Europe/London' => {
+			short => {
+				'daylight' => q(∅∅∅),
+			},
+		},
+		'Europe_Central' => {
+			short => {
+				'daylight' => q(∅∅∅),
+				'generic' => q(∅∅∅),
+				'standard' => q(∅∅∅),
+			},
+		},
+		'Europe_Eastern' => {
+			short => {
+				'daylight' => q(∅∅∅),
+				'generic' => q(∅∅∅),
+				'standard' => q(∅∅∅),
+			},
+		},
+		'Europe_Western' => {
+			short => {
+				'daylight' => q(∅∅∅),
+				'generic' => q(∅∅∅),
+				'standard' => q(∅∅∅),
+			},
+		},
+		'Hong_Kong' => {
+			short => {
+				'daylight' => q(HKST),
+				'generic' => q(HKT),
+				'standard' => q(HKT),
+			},
+		},
+		'Macau' => {
+			short => {
+				'daylight' => q(MDT),
+				'generic' => q(MST),
+				'standard' => q(MST),
+			},
+		},
+	 } }
+);
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

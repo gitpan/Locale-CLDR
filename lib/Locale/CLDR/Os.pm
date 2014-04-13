@@ -1,6 +1,6 @@
-package Locale::CLDR::Os;
+package Locale::CLDR::Os v0.0.4;
 # This file auto generated from Data\common\main\os.xml
-#	on Mon 31 Mar  1:36:09 am GMT
+#	on Sun 13 Apr 11:36:17 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -340,7 +340,6 @@ has 'units' => (
 			} }
 );
 
-
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -450,7 +449,7 @@ has 'curriencies' => (
 		'BRL' => {
 			symbol => 'R$',
 			display_name => {
-				'default' => q(Бразилиаг реал),
+				'currency' => q(Бразилиаг реал),
 				'one' => q(бразилиаг реал),
 				'other' => q(бразилиаг реалы),
 			},
@@ -458,7 +457,7 @@ has 'curriencies' => (
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(Евро),
+				'currency' => q(Евро),
 				'one' => q(евро),
 				'other' => q(евройы),
 			},
@@ -466,21 +465,21 @@ has 'curriencies' => (
 		'GBP' => {
 			symbol => '£',
 			display_name => {
-				'default' => q(Бритайнаг Стерлингы Фунт),
+				'currency' => q(Бритайнаг Стерлингы Фунт),
 				'one' => q(бритайнаг стерлингы фунт),
 				'other' => q(бритайнаг стерлингы фунты),
 			},
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(Лар),
+				'currency' => q(Лар),
 				'one' => q(лар),
 				'other' => q(лары),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(Сом),
+				'currency' => q(Сом),
 				'one' => q(сом),
 				'other' => q(сомы),
 			},
@@ -488,14 +487,14 @@ has 'curriencies' => (
 		'USD' => {
 			symbol => '$',
 			display_name => {
-				'default' => q(АИШ-ы Доллар),
+				'currency' => q(АИШ-ы Доллар),
 				'one' => q(АИШ-ы доллар),
 				'other' => q(АИШ-ы доллары),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(Нӕзонгӕ валютӕ),
+				'currency' => q(Нӕзонгӕ валютӕ),
 				'one' => q(нӕзонгӕ валютӕ),
 				'other' => q(нӕзонгӕ валютӕйы),
 			},
@@ -752,8 +751,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{ӕмбисбоны размӕ},
 					'pm' => q{ӕмбисбоны фӕстӕ},
+					'am' => q{ӕмбисбоны размӕ},
 				},
 			},
 		},

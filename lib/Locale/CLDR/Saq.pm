@@ -1,6 +1,6 @@
-package Locale::CLDR::Saq;
+package Locale::CLDR::Saq v0.0.4;
 # This file auto generated from Data\common\main\saq.xml
-#	on Mon 31 Mar  1:50:37 am GMT
+#	on Sun 13 Apr 11:51:01 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -364,9 +364,6 @@ has 'nostr' => (
 	default		=> sub { qr'^(?i:Nara)$' }
 );
 
-	} }
-);
-
 has 'number_currency_formats' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -396,278 +393,278 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Njilingi eel Falme za Kiarabu),
+				'currency' => q(Njilingi eel Falme za Kiarabu),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Njilingi eel Angola),
+				'currency' => q(Njilingi eel Angola),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(Njilingi eel Australia),
+				'currency' => q(Njilingi eel Australia),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Njilingi eel Bahareni),
+				'currency' => q(Njilingi eel Bahareni),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Njilingi eel Burundi),
+				'currency' => q(Njilingi eel Burundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Njilingi eel Botswana),
+				'currency' => q(Njilingi eel Botswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(Njilingi eel Kanada),
+				'currency' => q(Njilingi eel Kanada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Njilingi eel Kongo),
+				'currency' => q(Njilingi eel Kongo),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Njilingi eel Uswisi),
+				'currency' => q(Njilingi eel Uswisi),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(Njilingi eel China),
+				'currency' => q(Njilingi eel China),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Njilingi eel Kepuvede),
+				'currency' => q(Njilingi eel Kepuvede),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Njilingi eel Jibuti),
+				'currency' => q(Njilingi eel Jibuti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Njilingi eel Aljeria),
+				'currency' => q(Njilingi eel Aljeria),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Njilingi eel Misri),
+				'currency' => q(Njilingi eel Misri),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Njilingi eel Eritrea),
+				'currency' => q(Njilingi eel Eritrea),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Njilingi eel Uhabeshi),
+				'currency' => q(Njilingi eel Uhabeshi),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Yuro),
+				'currency' => q(Yuro),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Njilingi eel Uingereza),
+				'currency' => q(Njilingi eel Uingereza),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Njilingi eel Ghana),
+				'currency' => q(Njilingi eel Ghana),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Njilingi eel Gambia),
+				'currency' => q(Njilingi eel Gambia),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Njilingi eel Gine),
+				'currency' => q(Njilingi eel Gine),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(Njilingi eel India),
+				'currency' => q(Njilingi eel India),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(Njilingi eel Kijapani),
+				'currency' => q(Njilingi eel Kijapani),
 			},
 		},
 		'KES' => {
 			symbol => 'Ksh',
 			display_name => {
-				'default' => q(Njilingi eel Kenya),
+				'currency' => q(Njilingi eel Kenya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Njilingi eel Komoro),
+				'currency' => q(Njilingi eel Komoro),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Dola eel Liberia),
+				'currency' => q(Dola eel Liberia),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Njilingi eel Lesoto),
+				'currency' => q(Njilingi eel Lesoto),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Njilingi eel Libya),
+				'currency' => q(Njilingi eel Libya),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Njilingi eel Moroko),
+				'currency' => q(Njilingi eel Moroko),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Njilingi eel Bukini),
+				'currency' => q(Njilingi eel Bukini),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Njilingi eel Moritania),
+				'currency' => q(Njilingi eel Moritania),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Njilingi eel Morisi),
+				'currency' => q(Njilingi eel Morisi),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Njilingi eel Malawi),
+				'currency' => q(Njilingi eel Malawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Njilingi eel Msumbiji),
+				'currency' => q(Njilingi eel Msumbiji),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Njilingi eel Namibia),
+				'currency' => q(Njilingi eel Namibia),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Njilingi eel Nijeria),
+				'currency' => q(Njilingi eel Nijeria),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Njilingi eel Rwanda),
+				'currency' => q(Njilingi eel Rwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Njilingi eel Saudia),
+				'currency' => q(Njilingi eel Saudia),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Njilingi eel Shelisheli),
+				'currency' => q(Njilingi eel Shelisheli),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Paunt eel Sudani),
+				'currency' => q(Paunt eel Sudani),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Paunt eel Santahelena),
+				'currency' => q(Paunt eel Santahelena),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Leoni),
+				'currency' => q(Leoni),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Njilingi eel Somalia),
+				'currency' => q(Njilingi eel Somalia),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Njilingi eel Sao Tome na Principe),
+				'currency' => q(Njilingi eel Sao Tome na Principe),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lilangeni),
+				'currency' => q(Lilangeni),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Njilingi eel Tunisia),
+				'currency' => q(Njilingi eel Tunisia),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Njilingi eel Tanzania),
+				'currency' => q(Njilingi eel Tanzania),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Njilingi eel Uganda),
+				'currency' => q(Njilingi eel Uganda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Dola eel Marekani),
+				'currency' => q(Dola eel Marekani),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(Njilingi eel CFA BEAC),
+				'currency' => q(Njilingi eel CFA BEAC),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(Njilingi eel CFA BCEAO),
+				'currency' => q(Njilingi eel CFA BCEAO),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Njilingi eel Afrika Kusini),
+				'currency' => q(Njilingi eel Afrika Kusini),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Njilingi eel Zambia (1968–2012)),
+				'currency' => q(Njilingi eel Zambia \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Njilingi eel Zambia),
+				'currency' => q(Njilingi eel Zambia),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Dola eel Zimbabwe),
+				'currency' => q(Dola eel Zimbabwe),
 			},
 		},
 	} },
@@ -816,8 +813,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{Tesiran},
 					'pm' => q{Teipa},
+					'am' => q{Tesiran},
 				},
 			},
 		},
@@ -897,7 +894,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -920,7 +917,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -962,3 +959,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

@@ -1,6 +1,6 @@
-package Locale::CLDR::Gd;
+package Locale::CLDR::Gd v0.0.4;
 # This file auto generated from Data\common\main\gd.xml
-#	on Mon 31 Mar 12:28:07 am GMT
+#	on Sun 13 Apr 10:26:12 am GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -858,7 +858,6 @@ has 'units' => (
 			} }
 );
 
-
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -962,28 +961,28 @@ has 'curriencies' => (
 	default		=> sub { {
 		'CAD' => {
 			display_name => {
-				'default' => q(Dolar Canadach),
+				'currency' => q(Dolar Canadach),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Eòro),
+				'currency' => q(Eòro),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(Punnd Sasannach),
+				'currency' => q(Punnd Sasannach),
 			},
 		},
 		'IEP' => {
 			display_name => {
-				'default' => q(Punnd Èireannach),
+				'currency' => q(Punnd Èireannach),
 			},
 		},
 		'USD' => {
 			symbol => '$',
 			display_name => {
-				'default' => q(Dolar nan SA),
+				'currency' => q(Dolar nan SA),
 			},
 		},
 	} },
@@ -1132,8 +1131,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{m},
 					'pm' => q{f},
+					'am' => q{m},
 				},
 			},
 		},
@@ -1213,7 +1212,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			MEd => q{E, d/M},
 			MMMEd => q{E d MMM},
 			MMMMd => q{d MMMM},
@@ -1224,7 +1223,7 @@ has 'datetime_formats_available_formats' => (
 			yMMM => q{MMM y},
 			yMMMM => q{MMMM y},
 		},
-		'gregorian' => {
+		'generic' => {
 			MEd => q{E, d/M},
 			MMMEd => q{E d MMM},
 			MMMMd => q{d MMMM},
@@ -1251,7 +1250,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Hm => {
 				H => q{HH:mm-HH:mm},
 				m => q{HH:mm-HH:mm},
@@ -1326,7 +1325,7 @@ has 'datetime_formats_interval' => (
 				y => q{dd/MM/y - dd/MM/y},
 			},
 		},
-		'gregorian' => {
+		'generic' => {
 			Hm => {
 				H => q{HH:mm-HH:mm},
 				m => q{HH:mm-HH:mm},

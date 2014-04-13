@@ -1,6 +1,6 @@
-package Locale::CLDR::Hu::Any::Hu;
+package Locale::CLDR::Hu::Any::Hu v0.0.4;
 # This file auto generated from Data\common\main\hu_HU.xml
-#	on Mon 31 Mar 12:40:58 am GMT
+#	on Sun 13 Apr 10:39:33 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;
@@ -10,3 +10,9 @@ use utf8;
 use Moose;
 
 extends('Locale::CLDR::Hu::Any');
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

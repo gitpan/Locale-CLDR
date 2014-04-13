@@ -1,6 +1,6 @@
-package Locale::CLDR::Kkj;
+package Locale::CLDR::Kkj v0.0.4;
 # This file auto generated from Data\common\main\kkj.xml
-#	on Mon 31 Mar 12:55:42 am GMT
+#	on Sun 13 Apr 10:54:52 am GMT
 # XML file generated 2014-01-08 23:53:23 -0600 (Wed, 08 Jan 2014)
 
 use v5.18;
@@ -85,3 +85,332 @@ has 'alternate_quote_end' => (
 	default		=> qq{›},
 );
 
+has 'listPatterns' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+				start => q({0}, {1}),
+				middle => q({0}, {1}),
+				end => q({0}, {1}),
+		} }
+);
+
+has 'default_numbering_system' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has native_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has 'number_symbols' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'decimal' => q(,),
+			'exponential' => q(),
+			'group' => q(.),
+			'infinity' => q(),
+			'list' => q(),
+			'minusSign' => q(),
+			'nan' => q(),
+			'perMille' => q(),
+			'percentSign' => q(),
+			'plusSign' => q(),
+			'superscriptingExponent' => q(),
+		},
+	} }
+);
+
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'XAF' => {
+			symbol => 'FCFA',
+			display_name => {
+				'currency' => q(Franc CFA),
+			},
+		},
+	} },
+);
+
+
+has 'calendar_months' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					wide => {
+						nonleap => [
+							'pamba',
+							'wanja',
+							'mbiyɔ mɛndoŋgɔ',
+							'Nyɔlɔmbɔŋgɔ',
+							'Mɔnɔ ŋgbanja',
+							'Nyaŋgwɛ ŋgbanja',
+							'kuŋgwɛ',
+							'fɛ',
+							'njapi',
+							'nyukul',
+							'11',
+							'ɓulɓusɛ'
+						],
+						leap => [
+							
+						],
+					},
+				},
+				'stand-alone' => {
+					wide => {
+						nonleap => [
+							'pamba',
+							'wanja',
+							'mbiyɔ mɛndoŋgɔ',
+							'Nyɔlɔmbɔŋgɔ',
+							'Mɔnɔ ŋgbanja',
+							'Nyaŋgwɛ ŋgbanja',
+							'kuŋgwɛ',
+							'fɛ',
+							'njapi',
+							'nyukul',
+							'11',
+							'ɓulɓusɛ'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_days' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						mon => 'lundi',
+						tue => 'mardi',
+						wed => 'mɛrkɛrɛdi',
+						thu => 'yedi',
+						fri => 'vaŋdɛrɛdi',
+						sat => 'mɔnɔ sɔndi',
+						sun => 'sɔndi'
+					},
+					narrow => {
+						mon => 'lu',
+						tue => 'ma',
+						wed => 'mɛ',
+						thu => 'ye',
+						fri => 'va',
+						sat => 'ms',
+						sun => 'so'
+					},
+					short => {
+						mon => 'lundi',
+						tue => 'mardi',
+						wed => 'mɛrkɛrɛdi',
+						thu => 'yedi',
+						fri => 'vaŋdɛrɛdi',
+						sat => 'mɔnɔ sɔndi',
+						sun => 'sɔndi'
+					},
+					wide => {
+						mon => 'lundi',
+						tue => 'mardi',
+						wed => 'mɛrkɛrɛdi',
+						thu => 'yedi',
+						fri => 'vaŋdɛrɛdi',
+						sat => 'mɔnɔ sɔndi',
+						sun => 'sɔndi'
+					},
+				},
+				'stand-alone' => {
+					abbreviated => {
+						mon => 'lundi',
+						tue => 'mardi',
+						wed => 'mɛrkɛrɛdi',
+						thu => 'yedi',
+						fri => 'vaŋdɛrɛdi',
+						sat => 'mɔnɔ sɔndi',
+						sun => 'sɔndi'
+					},
+					narrow => {
+						mon => 'lu',
+						tue => 'ma',
+						wed => 'mɛ',
+						thu => 'ye',
+						fri => 'va',
+						sat => 'ms',
+						sun => 'so'
+					},
+					short => {
+						mon => 'lu',
+						tue => 'ma',
+						wed => 'mɛ',
+						thu => 'ye',
+						fri => 'va',
+						sat => 'ms',
+						sun => 'so'
+					},
+					wide => {
+						mon => 'lundi',
+						tue => 'mardi',
+						wed => 'mɛrkɛrɛdi',
+						thu => 'yedi',
+						fri => 'vaŋdɛrɛdi',
+						sat => 'mɔnɔ sɔndi',
+						sun => 'sɔndi'
+					},
+				},
+			},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			'full' => q{EEEE dd MMMM y G},
+			'long' => q{d MMMM y G},
+			'medium' => q{d MMM y G},
+			'short' => q{dd/MM y GGGGG},
+		},
+		'gregorian' => {
+			'full' => q{EEEE dd MMMM y},
+			'long' => q{d MMMM y},
+			'medium' => q{d MMM y},
+			'short' => q{dd/MM y},
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			'medium' => q{HH:mm:ss},
+			'short' => q{HH:mm},
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			'full' => q{{1} {0}},
+			'long' => q{{1} {0}},
+			'medium' => q{{1} {0}},
+			'short' => q{{1} {0}},
+		},
+		'gregorian' => {
+			'full' => q{{1} {0}},
+			'long' => q{{1} {0}},
+			'medium' => q{{1} {0}},
+			'short' => q{{1} {0}},
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			Ed => q{E d},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E d MMM y G},
+			GyMMMd => q{d MMM y G},
+			MEd => q{E dd/MM},
+			MMMEd => q{E d MMM},
+			MMMd => q{d MMM},
+			Md => q{dd/MM},
+			yyyyM => q{MM y GGGGG},
+			yyyyMEd => q{E dd/MM y GGGGG},
+			yyyyMMM => q{MMM y G},
+			yyyyMMMEd => q{E d MMM y G},
+			yyyyMMMd => q{d MMM y G},
+			yyyyMd => q{dd/MM y GGGGG},
+		},
+		'gregorian' => {
+			Ed => q{E d},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E d MMM y G},
+			GyMMMd => q{d MMM y G},
+			MEd => q{E dd/MM},
+			MMMEd => q{E d MMM},
+			MMMd => q{d MMM},
+			Md => q{dd/MM},
+			yM => q{MM y},
+			yMEd => q{E dd/MM y},
+			yMMM => q{MMM y},
+			yMMMEd => q{E d MMM y},
+			yMMMd => q{d MMM y},
+			yMd => q{dd/MM y},
+		},
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

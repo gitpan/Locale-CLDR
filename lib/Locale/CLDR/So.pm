@@ -1,6 +1,6 @@
-package Locale::CLDR::So;
+package Locale::CLDR::So v0.0.4;
 # This file auto generated from Data\common\main\so.xml
-#	on Mon 31 Mar  1:56:13 am GMT
+#	on Sun 13 Apr 11:56:44 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -536,43 +536,43 @@ has 'curriencies' => (
 	default		=> sub { {
 		'DJF' => {
 			display_name => {
-				'default' => q(Faran Jabbuuti),
+				'currency' => q(Faran Jabbuuti),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Birta Itoobbiya),
+				'currency' => q(Birta Itoobbiya),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(Yuuroo),
+				'currency' => q(Yuuroo),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Riyaalka Sacuudiga),
+				'currency' => q(Riyaalka Sacuudiga),
 			},
 		},
 		'SOS' => {
 			symbol => 'S',
 			display_name => {
-				'default' => q(Shilin soomaali),
+				'currency' => q(Shilin soomaali),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Shilin Tansaani),
+				'currency' => q(Shilin Tansaani),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(Doollar maraykan),
+				'currency' => q(Doollar maraykan),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(Lacag aan la qoon ama aan saxnayn),
+				'currency' => q(Lacag aan la qoon ama aan saxnayn),
 			},
 		},
 	} },
@@ -721,8 +721,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{gn.},
 					'am' => q{sn.},
+					'pm' => q{gn.},
 				},
 			},
 		},
@@ -802,7 +802,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -825,7 +825,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -864,7 +864,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			M => {
 				M => q{M-M},
 			},
@@ -941,7 +941,7 @@ has 'datetime_formats_interval' => (
 				y => q{dd/MM/y - dd/MM/y},
 			},
 		},
-		'gregorian' => {
+		'generic' => {
 			M => {
 				M => q{M-M},
 			},
@@ -1021,3 +1021,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

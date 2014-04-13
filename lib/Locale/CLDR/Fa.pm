@@ -1,6 +1,6 @@
-package Locale::CLDR::Fa;
+package Locale::CLDR::Fa v0.0.4;
 # This file auto generated from Data\common\main\fa.xml
-#	on Mon 31 Mar 12:18:24 am GMT
+#	on Sun 13 Apr 10:16:05 am GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use v5.18;
@@ -1379,7 +1379,7 @@ has 'units' => (
 						'other' => q({0} اونس),
 					},
 					'per' => {
-						'default' => q({0} بر {1}),
+						'' => q({0} بر {1}),
 					},
 					'picometer' => {
 						'one' => q({0} پیکومتر),
@@ -1568,7 +1568,7 @@ has 'units' => (
 						'other' => q({0}oz),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'one' => q({0}pm),
@@ -1757,7 +1757,7 @@ has 'units' => (
 						'other' => q({0} اونس),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'one' => q({0} پیکومتر),
@@ -1806,7 +1806,6 @@ has 'units' => (
 				},
 			} }
 );
-
 
 has 'yesstr' => (
 	is			=> 'ro',
@@ -2088,1109 +2087,1109 @@ has 'curriencies' => (
 	default		=> sub { {
 		'ADP' => {
 			display_name => {
-				'default' => q(پزتای آندورا),
+				'currency' => q(پزتای آندورا),
 			},
 		},
 		'AED' => {
 			display_name => {
-				'default' => q(درهم امارات متحدهٔ عربی),
+				'currency' => q(درهم امارات متحدهٔ عربی),
 			},
 		},
 		'AFA' => {
 			display_name => {
-				'default' => q(افغانی افغانستان (۱۹۲۷ تا ۲۰۰۲)),
+				'currency' => q(افغانی افغانستان \(۱۹۲۷ تا ۲۰۰۲\)),
 			},
 		},
 		'AFN' => {
 			symbol => '؋',
 			display_name => {
-				'default' => q(افغانی افغانستان),
+				'currency' => q(افغانی افغانستان),
 				'one' => q(افغانی افغانستان),
 				'other' => q(افغانی افغانستان),
 			},
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(لک آلبانی),
+				'currency' => q(لک آلبانی),
 			},
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(درم ارمنستان),
+				'currency' => q(درم ارمنستان),
 			},
 		},
 		'ANG' => {
 			display_name => {
-				'default' => q(گیلدر آنتیل هلند),
+				'currency' => q(گیلدر آنتیل هلند),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(کوانزای آنگولا),
+				'currency' => q(کوانزای آنگولا),
 			},
 		},
 		'ARP' => {
 			display_name => {
-				'default' => q(پزوی آرژانتین (۱۹۸۳ تا ۱۹۸۵)‏),
+				'currency' => q(پزوی آرژانتین \(۱۹۸۳ تا ۱۹۸۵\)‏),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(پزوی آرژانتین),
+				'currency' => q(پزوی آرژانتین),
 			},
 		},
 		'ATS' => {
 			display_name => {
-				'default' => q(شیلینگ اتریش),
+				'currency' => q(شیلینگ اتریش),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(دلار استرالیا),
+				'currency' => q(دلار استرالیا),
 			},
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(فلورین آروبا),
+				'currency' => q(فلورین آروبا),
 			},
 		},
 		'AZM' => {
 			display_name => {
-				'default' => q(منات جمهوری آذربایجان (۱۹۹۳ تا ۲۰۰۶)),
+				'currency' => q(منات جمهوری آذربایجان \(۱۹۹۳ تا ۲۰۰۶\)),
 			},
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(منات جمهوری آذربایجان),
+				'currency' => q(منات جمهوری آذربایجان),
 			},
 		},
 		'BAD' => {
 			display_name => {
-				'default' => q(دینار بوسنی و هرزگوین (۱۹۹۲ تا ۱۹۹۴)),
+				'currency' => q(دینار بوسنی و هرزگوین \(۱۹۹۲ تا ۱۹۹۴\)),
 			},
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(مارک تبدیل‌پذیر بوسنی و هرزگوین),
+				'currency' => q(مارک تبدیل‌پذیر بوسنی و هرزگوین),
 			},
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(دلار باربادوس),
+				'currency' => q(دلار باربادوس),
 			},
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(تاکای بنگلادش),
+				'currency' => q(تاکای بنگلادش),
 			},
 		},
 		'BEF' => {
 			display_name => {
-				'default' => q(فرانک بلژیک),
+				'currency' => q(فرانک بلژیک),
 			},
 		},
 		'BEL' => {
 			display_name => {
-				'default' => q(فرانک بلژیک (مالی)),
+				'currency' => q(فرانک بلژیک \(مالی\)),
 			},
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(لف بلغارستان),
+				'currency' => q(لف بلغارستان),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(دینار بحرین),
+				'currency' => q(دینار بحرین),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(فرانک بوروندی),
+				'currency' => q(فرانک بوروندی),
 			},
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(دلار برمودا),
+				'currency' => q(دلار برمودا),
 				'one' => q(دلار برمودا),
 				'other' => q(دلار برمودا),
 			},
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(دلار برونئی),
+				'currency' => q(دلار برونئی),
 			},
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(بولیویانوی بولیوی),
+				'currency' => q(بولیویانوی بولیوی),
 			},
 		},
 		'BOP' => {
 			display_name => {
-				'default' => q(پزوی بولیوی),
+				'currency' => q(پزوی بولیوی),
 			},
 		},
 		'BRL' => {
 			display_name => {
-				'default' => q(رئال برزیل),
+				'currency' => q(رئال برزیل),
 				'one' => q(رئال برزیل),
 				'other' => q(رئال برزیل),
 			},
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(دلار باهاما),
+				'currency' => q(دلار باهاما),
 			},
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(انگولتروم بوتان),
+				'currency' => q(انگولتروم بوتان),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(پولای بوتسوانا),
+				'currency' => q(پولای بوتسوانا),
 			},
 		},
 		'BYB' => {
 			display_name => {
-				'default' => q(روبل جدید بیلوروسی (۱۹۹۴ تا ۱۹۹۹)),
+				'currency' => q(روبل جدید بیلوروسی \(۱۹۹۴ تا ۱۹۹۹\)),
 			},
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(روبل بیلوروسی),
+				'currency' => q(روبل بیلوروسی),
 			},
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(دلار بلیز),
+				'currency' => q(دلار بلیز),
 			},
 		},
 		'CAD' => {
 			symbol => '$CA',
 			display_name => {
-				'default' => q(دلار کانادا),
+				'currency' => q(دلار کانادا),
 				'one' => q(دلار کانادا),
 				'other' => q(دلار کانادا),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(فرانک کنگو),
+				'currency' => q(فرانک کنگو),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(فرانک سوئیس),
+				'currency' => q(فرانک سوئیس),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(پزوی شیلی),
+				'currency' => q(پزوی شیلی),
 			},
 		},
 		'CNY' => {
 			symbol => '¥CN',
 			display_name => {
-				'default' => q(یوآن چین),
+				'currency' => q(یوآن چین),
 			},
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(پزوی کلمبیا),
+				'currency' => q(پزوی کلمبیا),
 			},
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(کولون کاستاریکا),
+				'currency' => q(کولون کاستاریکا),
 			},
 		},
 		'CSD' => {
 			display_name => {
-				'default' => q(دینار صربستان (۲۰۰۲ تا ۲۰۰۶)),
+				'currency' => q(دینار صربستان \(۲۰۰۲ تا ۲۰۰۶\)),
 			},
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(پزوی تبدیل‌پذیر کوبا),
+				'currency' => q(پزوی تبدیل‌پذیر کوبا),
 			},
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(پزوی کوبا),
+				'currency' => q(پزوی کوبا),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(اسکودوی کیپ‌ورد),
+				'currency' => q(اسکودوی کیپ‌ورد),
 			},
 		},
 		'CYP' => {
 			display_name => {
-				'default' => q(پوند قبرس),
+				'currency' => q(پوند قبرس),
 			},
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(کورونای جمهوری چک),
+				'currency' => q(کورونای جمهوری چک),
 			},
 		},
 		'DDM' => {
 			display_name => {
-				'default' => q(مارک آلمان شرقی),
+				'currency' => q(مارک آلمان شرقی),
 			},
 		},
 		'DEM' => {
 			display_name => {
-				'default' => q(مارک آلمان),
+				'currency' => q(مارک آلمان),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(فرانک جیبوتی),
+				'currency' => q(فرانک جیبوتی),
 			},
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(کرون دانمارک),
+				'currency' => q(کرون دانمارک),
 			},
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(پزوی جمهوری دومینیکن),
+				'currency' => q(پزوی جمهوری دومینیکن),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(دینار الجزایر),
+				'currency' => q(دینار الجزایر),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(لیرهٔ مصر),
+				'currency' => q(لیرهٔ مصر),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(ناکفای اریتره),
+				'currency' => q(ناکفای اریتره),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(بیر اتیوپی),
+				'currency' => q(بیر اتیوپی),
 			},
 		},
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(یورو),
+				'currency' => q(یورو),
 				'one' => q(یورو),
 				'other' => q(یورو),
 			},
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(دلار فیجی),
+				'currency' => q(دلار فیجی),
 			},
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(پوند جزایر فالکلند),
+				'currency' => q(پوند جزایر فالکلند),
 			},
 		},
 		'FRF' => {
 			display_name => {
-				'default' => q(فرانک فرانسه),
+				'currency' => q(فرانک فرانسه),
 			},
 		},
 		'GBP' => {
 			symbol => '£',
 			display_name => {
-				'default' => q(پوند بریتانیا),
+				'currency' => q(پوند بریتانیا),
 			},
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(لاری گرجستان),
+				'currency' => q(لاری گرجستان),
 			},
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(سدی غنا),
+				'currency' => q(سدی غنا),
 			},
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(پوند جبل‌الطارق),
+				'currency' => q(پوند جبل‌الطارق),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(دالاسی گامبیا),
+				'currency' => q(دالاسی گامبیا),
 			},
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(فرانک گینه),
+				'currency' => q(فرانک گینه),
 			},
 		},
 		'GRD' => {
 			display_name => {
-				'default' => q(دراخمای یونان),
+				'currency' => q(دراخمای یونان),
 			},
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(کتزال گواتمالا),
+				'currency' => q(کتزال گواتمالا),
 			},
 		},
 		'GWP' => {
 			display_name => {
-				'default' => q(پزوی گینهٔ بیسائو),
+				'currency' => q(پزوی گینهٔ بیسائو),
 			},
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(دلار گویان),
+				'currency' => q(دلار گویان),
 			},
 		},
 		'HKD' => {
 			symbol => '$HK',
 			display_name => {
-				'default' => q(دلار هنگ‌کنگ),
+				'currency' => q(دلار هنگ‌کنگ),
 			},
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(لمپیرای هندوراس),
+				'currency' => q(لمپیرای هندوراس),
 			},
 		},
 		'HRD' => {
 			display_name => {
-				'default' => q(دینار کرواسی),
+				'currency' => q(دینار کرواسی),
 			},
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(کونای کرواسی),
+				'currency' => q(کونای کرواسی),
 			},
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(گورد هائیتی),
+				'currency' => q(گورد هائیتی),
 			},
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(فورینت مجارستان),
+				'currency' => q(فورینت مجارستان),
 			},
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(روپیهٔ اندونزی),
+				'currency' => q(روپیهٔ اندونزی),
 			},
 		},
 		'IEP' => {
 			display_name => {
-				'default' => q(پوند ایرلند),
+				'currency' => q(پوند ایرلند),
 			},
 		},
 		'ILS' => {
 			symbol => '₪',
 			display_name => {
-				'default' => q(شقل جدید اسرائیل),
+				'currency' => q(شقل جدید اسرائیل),
 			},
 		},
 		'INR' => {
 			symbol => '₹',
 			display_name => {
-				'default' => q(روپیهٔ هند),
+				'currency' => q(روپیهٔ هند),
 				'one' => q(روپیهٔ هند),
 				'other' => q(روپیهٔ هند),
 			},
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(دینار عراق),
+				'currency' => q(دینار عراق),
 			},
 		},
 		'IRR' => {
 			symbol => 'ریال',
 			display_name => {
-				'default' => q(ریال ایران),
+				'currency' => q(ریال ایران),
 				'one' => q(ریال ایران),
 				'other' => q(ریال ایران),
 			},
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(کرونای ایسلند),
+				'currency' => q(کرونای ایسلند),
 			},
 		},
 		'ITL' => {
 			display_name => {
-				'default' => q(لیرهٔ ایتالیا),
+				'currency' => q(لیرهٔ ایتالیا),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(دلار جامائیکا),
+				'currency' => q(دلار جامائیکا),
 			},
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(دینار اردن),
+				'currency' => q(دینار اردن),
 			},
 		},
 		'JPY' => {
 			symbol => '¥',
 			display_name => {
-				'default' => q(ین ژاپن),
+				'currency' => q(ین ژاپن),
 				'one' => q(ین ژاپن),
 				'other' => q(ین ژاپن),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(شیلینگ کنیا),
+				'currency' => q(شیلینگ کنیا),
 			},
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(سوم قرقیزستان),
+				'currency' => q(سوم قرقیزستان),
 			},
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(ری‌یل کامبوج),
+				'currency' => q(ری‌یل کامبوج),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(فرانک کومورو),
+				'currency' => q(فرانک کومورو),
 			},
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(وون کرهٔ شمالی),
+				'currency' => q(وون کرهٔ شمالی),
 			},
 		},
 		'KRW' => {
 			symbol => '₩',
 			display_name => {
-				'default' => q(وون کرهٔ جنوبی),
+				'currency' => q(وون کرهٔ جنوبی),
 			},
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(دینار کویت),
+				'currency' => q(دینار کویت),
 			},
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(دلار جزایر کِیمن),
+				'currency' => q(دلار جزایر کِیمن),
 			},
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(تنگهٔ قزاقستان),
+				'currency' => q(تنگهٔ قزاقستان),
 			},
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(کیپ لائوس),
+				'currency' => q(کیپ لائوس),
 			},
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(لیرهٔ لبنان),
+				'currency' => q(لیرهٔ لبنان),
 			},
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(روپیهٔ سری‌لانکا),
+				'currency' => q(روپیهٔ سری‌لانکا),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(دلار لیبریا),
+				'currency' => q(دلار لیبریا),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(لوتی لسوتو),
+				'currency' => q(لوتی لسوتو),
 			},
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(لیتاس لیتوانی),
+				'currency' => q(لیتاس لیتوانی),
 			},
 		},
 		'LUF' => {
 			display_name => {
-				'default' => q(فرانک لوکزامبورگ),
+				'currency' => q(فرانک لوکزامبورگ),
 			},
 		},
 		'LUL' => {
 			display_name => {
-				'default' => q(فرانک مالی لوگزامبورگ),
+				'currency' => q(فرانک مالی لوگزامبورگ),
 			},
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(لاتس لتونی),
+				'currency' => q(لاتس لتونی),
 			},
 		},
 		'LVR' => {
 			display_name => {
-				'default' => q(روبل لتونی),
+				'currency' => q(روبل لتونی),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(دینار لیبی),
+				'currency' => q(دینار لیبی),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(درهم مراکش),
+				'currency' => q(درهم مراکش),
 			},
 		},
 		'MAF' => {
 			display_name => {
-				'default' => q(فرانک مراکش),
+				'currency' => q(فرانک مراکش),
 			},
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(لئوی مولداوی),
+				'currency' => q(لئوی مولداوی),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(آریاری مالاگاسی),
+				'currency' => q(آریاری مالاگاسی),
 			},
 		},
 		'MGF' => {
 			display_name => {
-				'default' => q(فرانک ماداگاسکار),
+				'currency' => q(فرانک ماداگاسکار),
 			},
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(دینار مقدونیه),
+				'currency' => q(دینار مقدونیه),
 			},
 		},
 		'MLF' => {
 			display_name => {
-				'default' => q(فرانک مالی),
+				'currency' => q(فرانک مالی),
 			},
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(کیات میانمار),
+				'currency' => q(کیات میانمار),
 			},
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(توگریک مغولستان),
+				'currency' => q(توگریک مغولستان),
 			},
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(پاتاکای ماکائو),
+				'currency' => q(پاتاکای ماکائو),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(اوگوئیای موریتانی),
+				'currency' => q(اوگوئیای موریتانی),
 			},
 		},
 		'MTL' => {
 			display_name => {
-				'default' => q(لیرهٔ مالت),
+				'currency' => q(لیرهٔ مالت),
 			},
 		},
 		'MTP' => {
 			display_name => {
-				'default' => q(پوند مالت),
+				'currency' => q(پوند مالت),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(روپیهٔ موریس),
+				'currency' => q(روپیهٔ موریس),
 			},
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(روپیهٔ مالدیو),
+				'currency' => q(روپیهٔ مالدیو),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(کواچای مالاوی),
+				'currency' => q(کواچای مالاوی),
 			},
 		},
 		'MXN' => {
 			symbol => '$MX',
 			display_name => {
-				'default' => q(پزوی مکزیک),
+				'currency' => q(پزوی مکزیک),
 			},
 		},
 		'MXP' => {
 			display_name => {
-				'default' => q(پزوی نقرهٔ مکزیک (۱۸۶۱ تا ۱۹۹۲)),
+				'currency' => q(پزوی نقرهٔ مکزیک \(۱۸۶۱ تا ۱۹۹۲\)),
 			},
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(رینگیت مالزی),
+				'currency' => q(رینگیت مالزی),
 			},
 		},
 		'MZE' => {
 			display_name => {
-				'default' => q(اسکودوی موزامبیک),
+				'currency' => q(اسکودوی موزامبیک),
 			},
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(متیکال موزامبیک),
+				'currency' => q(متیکال موزامبیک),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(دلار نامیبیا),
+				'currency' => q(دلار نامیبیا),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(نایرای نیجریه),
+				'currency' => q(نایرای نیجریه),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(کوردوبای نیکاراگوئه),
+				'currency' => q(کوردوبای نیکاراگوئه),
 			},
 		},
 		'NLG' => {
 			display_name => {
-				'default' => q(گیلدر هلند),
+				'currency' => q(گیلدر هلند),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(کرون نروژ),
+				'currency' => q(کرون نروژ),
 			},
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(روپیهٔ نپال),
+				'currency' => q(روپیهٔ نپال),
 			},
 		},
 		'NZD' => {
 			symbol => '$NZ',
 			display_name => {
-				'default' => q(دلار زلاند نو),
+				'currency' => q(دلار زلاند نو),
 			},
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(ریال عمان),
+				'currency' => q(ریال عمان),
 			},
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(بالبوای پاناما),
+				'currency' => q(بالبوای پاناما),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(نوئووسول پرو),
+				'currency' => q(نوئووسول پرو),
 			},
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(کینای پاپوا گینهٔ نو),
+				'currency' => q(کینای پاپوا گینهٔ نو),
 			},
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(پزوی فیلیپین),
+				'currency' => q(پزوی فیلیپین),
 			},
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(روپیهٔ پاکستان),
+				'currency' => q(روپیهٔ پاکستان),
 			},
 		},
 		'PLN' => {
 			display_name => {
-				'default' => q(زواتی لهستان),
+				'currency' => q(زواتی لهستان),
 			},
 		},
 		'PTE' => {
 			display_name => {
-				'default' => q(اسکودوی پرتغال),
+				'currency' => q(اسکودوی پرتغال),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(گوارانی پاراگوئه),
+				'currency' => q(گوارانی پاراگوئه),
 			},
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(ریال قطر),
+				'currency' => q(ریال قطر),
 			},
 		},
 		'RHD' => {
 			display_name => {
-				'default' => q(دلار رودزیا),
+				'currency' => q(دلار رودزیا),
 			},
 		},
 		'RON' => {
 			display_name => {
-				'default' => q(لئوی رومانی),
+				'currency' => q(لئوی رومانی),
 			},
 		},
 		'RSD' => {
 			display_name => {
-				'default' => q(دینار صربستان),
+				'currency' => q(دینار صربستان),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(روبل روسیه),
+				'currency' => q(روبل روسیه),
 				'one' => q(روبل روسیه),
 				'other' => q(روبل روسیه),
 			},
 		},
 		'RUR' => {
 			display_name => {
-				'default' => q(روبل روسیه (۱۹۹۱ تا ۱۹۹۸)),
+				'currency' => q(روبل روسیه \(۱۹۹۱ تا ۱۹۹۸\)),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(فرانک رواندا),
+				'currency' => q(فرانک رواندا),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(ریال سعودی),
+				'currency' => q(ریال سعودی),
 			},
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(دلار جزایر سلیمان),
+				'currency' => q(دلار جزایر سلیمان),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(روپیهٔ سیشل),
+				'currency' => q(روپیهٔ سیشل),
 			},
 		},
 		'SDD' => {
 			display_name => {
-				'default' => q(دینار سودان (۱۹۹۲ تا ۲۰۰۷)),
+				'currency' => q(دینار سودان \(۱۹۹۲ تا ۲۰۰۷\)),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(لیرهٔ سودان),
+				'currency' => q(لیرهٔ سودان),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(کرون سوئد),
+				'currency' => q(کرون سوئد),
 			},
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(دلار سنگاپور),
+				'currency' => q(دلار سنگاپور),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(پوند سنت هلن),
+				'currency' => q(پوند سنت هلن),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(لئون سیرالئون),
+				'currency' => q(لئون سیرالئون),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(شیلینگ سومالی),
+				'currency' => q(شیلینگ سومالی),
 			},
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(دلار سورینام),
+				'currency' => q(دلار سورینام),
 			},
 		},
 		'SRG' => {
 			display_name => {
-				'default' => q(گیلدر سورینام),
+				'currency' => q(گیلدر سورینام),
 			},
 		},
 		'SSP' => {
 			display_name => {
-				'default' => q(پوند سودان جنوبی),
+				'currency' => q(پوند سودان جنوبی),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(دوبرای سائوتومه و پرنسیپ),
+				'currency' => q(دوبرای سائوتومه و پرنسیپ),
 			},
 		},
 		'SUR' => {
 			display_name => {
-				'default' => q(روبل شوروی),
+				'currency' => q(روبل شوروی),
 			},
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(لیرهٔ سوریه),
+				'currency' => q(لیرهٔ سوریه),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(لیلانگنی سوازیلند),
+				'currency' => q(لیلانگنی سوازیلند),
 			},
 		},
 		'THB' => {
 			symbol => '฿',
 			display_name => {
-				'default' => q(بات تایلند),
+				'currency' => q(بات تایلند),
 			},
 		},
 		'TJR' => {
 			display_name => {
-				'default' => q(روبل تاجیکستان),
+				'currency' => q(روبل تاجیکستان),
 			},
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(سامانی تاجیکستان),
+				'currency' => q(سامانی تاجیکستان),
 			},
 		},
 		'TMM' => {
 			display_name => {
-				'default' => q(منات ترکمنستان (۱۹۹۳ تا ۲۰۰۹)),
+				'currency' => q(منات ترکمنستان \(۱۹۹۳ تا ۲۰۰۹\)),
 			},
 		},
 		'TMT' => {
 			display_name => {
-				'default' => q(منات ترکمنستان),
+				'currency' => q(منات ترکمنستان),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(دینار تونس),
+				'currency' => q(دینار تونس),
 			},
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(پاآنگای تونگا),
+				'currency' => q(پاآنگای تونگا),
 			},
 		},
 		'TPE' => {
 			display_name => {
-				'default' => q(اسکودوی تیمور),
+				'currency' => q(اسکودوی تیمور),
 			},
 		},
 		'TRL' => {
 			display_name => {
-				'default' => q(لیرهٔ ترکیه (۱۹۲۲ تا ۲۰۰۵)),
+				'currency' => q(لیرهٔ ترکیه \(۱۹۲۲ تا ۲۰۰۵\)),
 			},
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(لیرهٔ ترکیه),
+				'currency' => q(لیرهٔ ترکیه),
 			},
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(دلار ترینیداد و توباگو),
+				'currency' => q(دلار ترینیداد و توباگو),
 			},
 		},
 		'TWD' => {
 			display_name => {
-				'default' => q(دلار جدید تایوان),
+				'currency' => q(دلار جدید تایوان),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(شیلینگ تانزانیا),
+				'currency' => q(شیلینگ تانزانیا),
 			},
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(هریونیای اوکراین),
+				'currency' => q(هریونیای اوکراین),
 			},
 		},
 		'UGS' => {
 			display_name => {
-				'default' => q(شیلینگ اوگاندا (۱۹۶۶ تا ۱۹۸۷)),
+				'currency' => q(شیلینگ اوگاندا \(۱۹۶۶ تا ۱۹۸۷\)),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(شیلینگ اوگاندا),
+				'currency' => q(شیلینگ اوگاندا),
 			},
 		},
 		'USD' => {
 			symbol => '$',
 			display_name => {
-				'default' => q(دلار امریکا),
+				'currency' => q(دلار امریکا),
 				'one' => q(دلار امریکا),
 				'other' => q(دلار امریکا),
 			},
 		},
 		'USN' => {
 			display_name => {
-				'default' => q(دلار امریکا (روز بعد)),
+				'currency' => q(دلار امریکا \(روز بعد\)),
 			},
 		},
 		'USS' => {
 			display_name => {
-				'default' => q(دلار امریکا (همان روز)),
+				'currency' => q(دلار امریکا \(همان روز\)),
 			},
 		},
 		'UYP' => {
 			display_name => {
-				'default' => q(پزوی اوروگوئه (۱۹۷۵ تا ۱۹۹۳)),
+				'currency' => q(پزوی اوروگوئه \(۱۹۷۵ تا ۱۹۹۳\)),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(پزوی اوروگوئه),
+				'currency' => q(پزوی اوروگوئه),
 			},
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(سوم ازبکستان),
+				'currency' => q(سوم ازبکستان),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(بولیوار ونزوئلا),
+				'currency' => q(بولیوار ونزوئلا),
 			},
 		},
 		'VND' => {
 			symbol => '₫',
 			display_name => {
-				'default' => q(دانگ ویتنام),
+				'currency' => q(دانگ ویتنام),
 			},
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(واتوی وانوواتو),
+				'currency' => q(واتوی وانوواتو),
 			},
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(تالای ساموا),
+				'currency' => q(تالای ساموا),
 			},
 		},
 		'XAF' => {
 			symbol => 'FCFA',
 			display_name => {
-				'default' => q(فرانک CFA مرکز آفریقا),
+				'currency' => q(فرانک CFA مرکز آفریقا),
 			},
 		},
 		'XAG' => {
 			display_name => {
-				'default' => q(نقره),
+				'currency' => q(نقره),
 			},
 		},
 		'XAU' => {
 			display_name => {
-				'default' => q(طلا),
+				'currency' => q(طلا),
 			},
 		},
 		'XCD' => {
 			symbol => '$EC',
 			display_name => {
-				'default' => q(دلار شرق کارائیب),
+				'currency' => q(دلار شرق کارائیب),
 			},
 		},
 		'XFO' => {
 			display_name => {
-				'default' => q(فرانک طلای فرانسه),
+				'currency' => q(فرانک طلای فرانسه),
 			},
 		},
 		'XOF' => {
 			symbol => 'CFA',
 			display_name => {
-				'default' => q(فرانک CFA غرب آفریقا),
+				'currency' => q(فرانک CFA غرب آفریقا),
 			},
 		},
 		'XPD' => {
 			display_name => {
-				'default' => q(پالادیم),
+				'currency' => q(پالادیم),
 			},
 		},
 		'XPF' => {
 			symbol => 'CFPF',
 			display_name => {
-				'default' => q(فرانک CFP),
+				'currency' => q(فرانک CFP),
 			},
 		},
 		'XPT' => {
 			display_name => {
-				'default' => q(پلاتین),
+				'currency' => q(پلاتین),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(ارز نامشخص),
-				'one' => q((ارز نامشخص)),
-				'other' => q((ارز نامشخص)),
+				'currency' => q(ارز نامشخص),
+				'one' => q(\(ارز نامشخص\)),
+				'other' => q(\(ارز نامشخص\)),
 			},
 		},
 		'YDD' => {
 			display_name => {
-				'default' => q(دینار یمن),
+				'currency' => q(دینار یمن),
 			},
 		},
 		'YER' => {
 			display_name => {
-				'default' => q(ریال یمن),
+				'currency' => q(ریال یمن),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(راند افریقای جنوبی),
+				'currency' => q(راند افریقای جنوبی),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(کواچای زامبیا (۱۹۶۸ تا ۲۰۱۲)),
+				'currency' => q(کواچای زامبیا \(۱۹۶۸ تا ۲۰۱۲\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(کواچای زامبیا),
+				'currency' => q(کواچای زامبیا),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(دلار زیمبابوه (۱۹۸۰ تا ۲۰۰۸)),
+				'currency' => q(دلار زیمبابوه \(۱۹۸۰ تا ۲۰۰۸\)),
 			},
 		},
 		'ZWL' => {
 			display_name => {
-				'default' => q(دلار زیمبابوه (۲۰۰۹)),
+				'currency' => q(دلار زیمبابوه \(۲۰۰۹\)),
 			},
 		},
 		'ZWR' => {
 			display_name => {
-				'default' => q(دلار زیمبابوه (۲۰۰۸)),
+				'currency' => q(دلار زیمبابوه \(۲۰۰۸\)),
 			},
 		},
 	} },
@@ -3868,100 +3867,100 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'hebrew') {
+			if ($_ eq 'gregorian') {
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
 				return 'night' if $time >= 1900
 					&& $time < 2400;
 				return 'afternoon' if $time >= 1600
 					&& $time < 1900;
-				return 'earlyMorning' if $time >= 0100
-					&& $time < 0600;
+				return 'noon' if $time == 1200;
 				return 'midDay' if $time > 1200
 					&& $time < 1600;
+				return 'earlyMorning' if $time >= 0100
+					&& $time < 0600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 0100;
-				return 'noon' if $time == 1200;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'generic') {
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
 				return 'night' if $time >= 1900
 					&& $time < 2400;
 				return 'afternoon' if $time >= 1600
 					&& $time < 1900;
-				return 'earlyMorning' if $time >= 0100
-					&& $time < 0600;
+				return 'noon' if $time == 1200;
 				return 'midDay' if $time > 1200
 					&& $time < 1600;
+				return 'earlyMorning' if $time >= 0100
+					&& $time < 0600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 0100;
-				return 'noon' if $time == 1200;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'chinese') {
+			if ($_ eq 'hebrew') {
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
 				return 'night' if $time >= 1900
 					&& $time < 2400;
 				return 'afternoon' if $time >= 1600
 					&& $time < 1900;
-				return 'earlyMorning' if $time >= 0100
-					&& $time < 0600;
+				return 'noon' if $time == 1200;
 				return 'midDay' if $time > 1200
 					&& $time < 1600;
+				return 'earlyMorning' if $time >= 0100
+					&& $time < 0600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 0100;
-				return 'noon' if $time == 1200;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'islamic') {
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
 				return 'night' if $time >= 1900
 					&& $time < 2400;
 				return 'afternoon' if $time >= 1600
 					&& $time < 1900;
-				return 'earlyMorning' if $time >= 0100
-					&& $time < 0600;
+				return 'noon' if $time == 1200;
 				return 'midDay' if $time > 1200
 					&& $time < 1600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 0100;
-				return 'noon' if $time == 1200;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'gregorian') {
-				return 'night' if $time >= 1900
-					&& $time < 2400;
-				return 'afternoon' if $time >= 1600
-					&& $time < 1900;
 				return 'earlyMorning' if $time >= 0100
 					&& $time < 0600;
-				return 'midDay' if $time > 1200
-					&& $time < 1600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 0100;
-				return 'noon' if $time == 1200;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'persian') {
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
 				return 'night' if $time >= 1900
 					&& $time < 2400;
 				return 'afternoon' if $time >= 1600
 					&& $time < 1900;
-				return 'earlyMorning' if $time >= 0100
-					&& $time < 0600;
+				return 'noon' if $time == 1200;
 				return 'midDay' if $time > 1200
 					&& $time < 1600;
+				return 'earlyMorning' if $time >= 0100
+					&& $time < 0600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 0100;
-				return 'noon' if $time == 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'chinese') {
 				return 'morning' if $time >= 0600
 					&& $time < 1200;
+				return 'night' if $time >= 1900
+					&& $time < 2400;
+				return 'afternoon' if $time >= 1600
+					&& $time < 1900;
+				return 'noon' if $time == 1200;
+				return 'midDay' if $time > 1200
+					&& $time < 1600;
+				return 'earlyMorning' if $time >= 0100
+					&& $time < 0600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 0100;
 			last SWITCH;
 			}
 		}
@@ -3976,15 +3975,15 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{بعدازظهر},
-					'night' => q{شب},
-					'earlyMorning' => q{بامداد},
 					'afternoon' => q{عصر},
-					'am' => q{قبل‌ازظهر},
+					'earlyMorning' => q{بامداد},
 					'weeHours' => q{نیمه‌شب},
-					'midDay' => q{بعدازظهر},
+					'am' => q{قبل‌ازظهر},
 					'morning' => q{صبح},
+					'night' => q{شب},
+					'pm' => q{بعدازظهر},
 					'noon' => q{ظهر},
+					'midDay' => q{بعدازظهر},
 				},
 			},
 		},
@@ -4124,44 +4123,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'islamic' => {
-			Ed => q{E d},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E d MMM y G},
-			GyMMMd => q{d MMM y G},
-			H => q{H},
-			Hm => q{H:mm},
-			HmZ => q{HH:mm (Z)},
-			Hms => q{H:mm:ss},
-			M => q{L},
-			MEd => q{E M/d},
-			MMM => q{LLL},
-			MMMEd => q{E d LLL},
-			MMMMEd => q{E d LLLL},
-			MMMMd => q{d LLLL},
-			MMMd => q{d LLL},
-			Md => q{M/d},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y},
-			yM => q{y/M},
-			yMEd => q{E y/M/d},
-			yMMM => q{MMM y},
-			yMMMEd => q{E d MMM y},
-			yMMMM => q{MMMM y},
-			yQQQ => q{QQQ y},
-			yQQQQ => q{QQQQ y},
-			yyyy => q{y G},
-			yyyyMMM => q{MMM y G},
-			yyyyMMMEd => q{E d MMM y G},
-			yyyyMMMd => q{d MMM y G},
-			yyyyQQQ => q{QQQQ y G},
-			yyyyQQQQ => q{QQQQ y G},
-		},
 		'gregorian' => {
 			EHm => q{E H:mm},
 			EHms => q{E H:mm:ss},
@@ -4233,6 +4194,44 @@ has 'datetime_formats_available_formats' => (
 			yyyyMMMEd => q{E d MMM y G},
 			yyyyMMMd => q{d MMM y G},
 			yyyyMd => q{y/M/d G},
+			yyyyQQQ => q{QQQQ y G},
+			yyyyQQQQ => q{QQQQ y G},
+		},
+		'islamic' => {
+			Ed => q{E d},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E d MMM y G},
+			GyMMMd => q{d MMM y G},
+			H => q{H},
+			Hm => q{H:mm},
+			HmZ => q{HH:mm (Z)},
+			Hms => q{H:mm:ss},
+			M => q{L},
+			MEd => q{E M/d},
+			MMM => q{LLL},
+			MMMEd => q{E d LLL},
+			MMMMEd => q{E d LLLL},
+			MMMMd => q{d LLLL},
+			MMMd => q{d LLL},
+			Md => q{M/d},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y},
+			yM => q{y/M},
+			yMEd => q{E y/M/d},
+			yMMM => q{MMM y},
+			yMMMEd => q{E d MMM y},
+			yMMMM => q{MMMM y},
+			yQQQ => q{QQQ y},
+			yQQQQ => q{QQQQ y},
+			yyyy => q{y G},
+			yyyyMMM => q{MMM y G},
+			yyyyMMMEd => q{E d MMM y G},
+			yyyyMMMd => q{d MMM y G},
 			yyyyQQQ => q{QQQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
 		},

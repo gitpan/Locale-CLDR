@@ -1,6 +1,6 @@
-package Locale::CLDR::Ti;
+package Locale::CLDR::Ti v0.0.4;
 # This file auto generated from Data\common\main\ti.xml
-#	on Mon 31 Mar  2:13:47 am GMT
+#	on Sun 13 Apr 12:14:46 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -425,3 +425,333 @@ has 'characters' => (
 	},
 );
 
+has 'default_numbering_system' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has native_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has traditional_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'ethi',
+);
+
+has 'number_currency_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'pattern' => {
+				'default' => {
+					'standard' => {
+						'negative' => '¤#,##0.00',
+						'positive' => '¤#,##0.00',
+					},
+				},
+			},
+		},
+} },
+);
+
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'BRL' => {
+			display_name => {
+				'currency' => q(የብራዚል ሪል),
+			},
+		},
+		'CNY' => {
+			display_name => {
+				'currency' => q(የቻይና ዩአን ረንሚንቢ),
+			},
+		},
+		'ETB' => {
+			symbol => 'Br',
+			display_name => {
+				'currency' => q(የኢትዮጵያ ብር),
+			},
+		},
+		'EUR' => {
+			display_name => {
+				'currency' => q(አውሮ),
+			},
+		},
+		'GBP' => {
+			display_name => {
+				'currency' => q(የእንግሊዝ ፓውንድ ስተርሊንግ),
+			},
+		},
+		'INR' => {
+			display_name => {
+				'currency' => q(የሕንድ ሩፒ),
+			},
+		},
+		'JPY' => {
+			display_name => {
+				'currency' => q(የጃፓን የን),
+			},
+		},
+		'RUB' => {
+			display_name => {
+				'currency' => q(የራሻ ሩብል),
+			},
+		},
+		'USD' => {
+			display_name => {
+				'currency' => q(የአሜሪካን ዶላር),
+			},
+		},
+	} },
+);
+
+
+has 'calendar_months' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'ጃንዩ',
+							'ፌብሩ',
+							'ማርች',
+							'ኤፕረ',
+							'ሜይ',
+							'ጁን',
+							'ጁላይ',
+							'ኦገስ',
+							'ሴፕቴ',
+							'ኦክተ',
+							'ኖቬም',
+							'ዲሴም'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'ጃንዩወሪ',
+							'ፌብሩወሪ',
+							'ማርች',
+							'ኤፕረል',
+							'ሜይ',
+							'ጁን',
+							'ጁላይ',
+							'ኦገስት',
+							'ሴፕቴምበር',
+							'ኦክተውበር',
+							'ኖቬምበር',
+							'ዲሴምበር'
+						],
+						leap => [
+							
+						],
+					},
+				},
+				'stand-alone' => {
+					narrow => {
+						nonleap => [
+							'ጃ',
+							'ፌ',
+							'ማ',
+							'ኤ',
+							'ሜ',
+							'ጁ',
+							'ጁ',
+							'ኦ',
+							'ሴ',
+							'ኦ',
+							'ኖ',
+							'ዲ'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+	} },
+);
+
+has 'calendar_days' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'format' => {
+					wide => {
+						mon => 'ሰኑይ',
+						tue => 'ሠሉስ',
+						wed => 'ረቡዕ',
+						thu => 'ኃሙስ',
+						fri => 'ዓርቢ',
+						sat => 'ቀዳም',
+						sun => 'ሰንበት'
+					},
+				},
+				'stand-alone' => {
+					narrow => {
+						mon => 'ሰ',
+						tue => 'ሠ',
+						wed => 'ረ',
+						thu => 'ኃ',
+						fri => 'ዓ',
+						sat => 'ቀ',
+						sun => 'ሰ'
+					},
+				},
+			},
+	} },
+);
+
+has 'day_periods' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			'format' => {
+				'wide' => {
+					'pm' => q{ድሕር ሰዓት},
+					'am' => q{ንጉሆ ሰዓተ},
+				},
+			},
+		},
+	} },
+);
+
+has 'eras' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			abbreviated => {
+				'0' => 'ዓ/ዓ',
+				'1' => 'ዓ/ም'
+			},
+		},
+	} },
+);
+
+has 'date_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+			'full' => q{EEEE፣ dd MMMM መዓልቲ y G},
+			'long' => q{dd MMMM y G},
+			'medium' => q{dd-MMM-y G},
+			'short' => q{dd/MM/yy GGGGG},
+		},
+		'gregorian' => {
+			'full' => q{EEEE፣ dd MMMM መዓልቲ y G},
+			'long' => q{dd MMMM y},
+			'medium' => q{dd-MMM-y},
+			'short' => q{dd/MM/yy},
+		},
+	} },
+);
+
+has 'time_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+			'full' => q{h:mm:ss a zzzz},
+			'long' => q{h:mm:ss a z},
+			'medium' => q{h:mm:ss a},
+			'short' => q{h:mm a},
+		},
+	} },
+);
+
+has 'datetime_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'generic' => {
+		},
+		'gregorian' => {
+		},
+	} },
+);
+
+has 'datetime_formats_available_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			MMMMdd => q{dd MMMM},
+			MMdd => q{dd/MM},
+			yMM => q{MM/y},
+			yMMMM => q{MMMM y},
+			yQQQ => q{QQQ y},
+		},
+		'generic' => {
+			MMMMdd => q{dd MMMM},
+			MMdd => q{dd/MM},
+			yMM => q{MM/y},
+			yMMMM => q{MMMM y},
+			yQQQ => q{QQQ y},
+		},
+	} },
+);
+
+has 'datetime_formats_append_item' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'datetime_formats_interval' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+	} },
+);
+
+has 'time_zone_names' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default	=> sub { {
+		hourFormat => q(+HH:mm;-HH:mm),
+		gmtFormat => q(GMT{0}),
+	 } }
+);
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

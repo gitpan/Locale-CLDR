@@ -1,6 +1,6 @@
-package Locale::CLDR::Zh::Hans;
+package Locale::CLDR::Zh::Hans v0.0.4;
 # This file auto generated from Data\common\main\zh_Hans.xml
-#	on Mon 31 Mar  2:28:28 am GMT
+#	on Sun 13 Apr 12:29:44 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;
@@ -10,3 +10,9 @@ use utf8;
 use Moose;
 
 extends('Locale::CLDR::Zh');
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

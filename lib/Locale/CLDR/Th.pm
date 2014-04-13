@@ -1,6 +1,6 @@
-package Locale::CLDR::Th;
+package Locale::CLDR::Th v0.0.4;
 # This file auto generated from Data\common\main\th.xml
-#	on Mon 31 Mar  2:10:46 am GMT
+#	on Sun 13 Apr 12:11:40 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -1531,7 +1531,7 @@ has 'units' => (
 						'other' => q({0} ออนซ์),
 					},
 					'per' => {
-						'default' => q({0}ต่อ{1}),
+						'' => q({0}ต่อ{1}),
 					},
 					'picometer' => {
 						'other' => q({0} พิโกเมตร),
@@ -1674,7 +1674,7 @@ has 'units' => (
 						'other' => q({0}ออนซ์),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'other' => q({0}พิโกเมตร),
@@ -1817,7 +1817,7 @@ has 'units' => (
 						'other' => q({0} ออนซ์),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'other' => q({0} พิโกเมตร),
@@ -1855,7 +1855,6 @@ has 'units' => (
 				},
 			} }
 );
-
 
 has 'yesstr' => (
 	is			=> 'ro',
@@ -2088,1642 +2087,1642 @@ has 'curriencies' => (
 	default		=> sub { {
 		'ADP' => {
 			display_name => {
-				'default' => q(เปเซตาอันดอร์รา),
+				'currency' => q(เปเซตาอันดอร์รา),
 			},
 		},
 		'AED' => {
 			display_name => {
-				'default' => q(เดอร์แฮมสหรัฐอาหรับเอมิเรตส์),
+				'currency' => q(เดอร์แฮมสหรัฐอาหรับเอมิเรตส์),
 				'other' => q(เดอร์แฮมสหรัฐอาหรับเอมิเรตส์),
 			},
 		},
 		'AFA' => {
 			display_name => {
-				'default' => q(อัฟกานีอัฟกานิสถาน (1927–2002)),
+				'currency' => q(อัฟกานีอัฟกานิสถาน \(1927–2002\)),
 			},
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(อัฟกานิอัฟกานิสถาน),
+				'currency' => q(อัฟกานิอัฟกานิสถาน),
 				'other' => q(อัฟกานิอัฟกานิสถาน),
 			},
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(เลกแอลเบเนีย),
+				'currency' => q(เลกแอลเบเนีย),
 				'other' => q(เลกแอลเบเนีย),
 			},
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(แดรมอาร์เมเนีย),
+				'currency' => q(แดรมอาร์เมเนีย),
 				'other' => q(แดรมอาร์เมเนีย),
 			},
 		},
 		'ANG' => {
 			display_name => {
-				'default' => q(กิลเดอร์เนเธอร์แลนด์แอนทิลลิส),
+				'currency' => q(กิลเดอร์เนเธอร์แลนด์แอนทิลลิส),
 				'other' => q(กิลเดอร์เนเธอร์แลนด์แอนทิลลิส),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(กวานซาแองโกลา),
+				'currency' => q(กวานซาแองโกลา),
 				'other' => q(กวานซาแองโกลา),
 			},
 		},
 		'AOK' => {
 			display_name => {
-				'default' => q(กวานซาแองโกลา (1977–1990)),
+				'currency' => q(กวานซาแองโกลา \(1977–1990\)),
 			},
 		},
 		'AON' => {
 			display_name => {
-				'default' => q(นิวกวานซาแองโกลา (1990–2000)),
+				'currency' => q(นิวกวานซาแองโกลา \(1990–2000\)),
 			},
 		},
 		'AOR' => {
 			display_name => {
-				'default' => q(กวานซารีจัสทาโดแองโกลา (1995–1999)),
+				'currency' => q(กวานซารีจัสทาโดแองโกลา \(1995–1999\)),
 			},
 		},
 		'ARA' => {
 			display_name => {
-				'default' => q(ออสตรัลอาร์เจนตินา),
+				'currency' => q(ออสตรัลอาร์เจนตินา),
 			},
 		},
 		'ARL' => {
 			display_name => {
-				'default' => q(เปโซเลย์อาร์เจนตินา (1970–1983)),
+				'currency' => q(เปโซเลย์อาร์เจนตินา \(1970–1983\)),
 			},
 		},
 		'ARM' => {
 			display_name => {
-				'default' => q(เปโซอาร์เจนตินา (1881–1970)),
+				'currency' => q(เปโซอาร์เจนตินา \(1881–1970\)),
 			},
 		},
 		'ARP' => {
 			display_name => {
-				'default' => q(เปโซอาร์เจนตินา (1983–1985)),
+				'currency' => q(เปโซอาร์เจนตินา \(1983–1985\)),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(เปโซอาร์เจนตินา),
+				'currency' => q(เปโซอาร์เจนตินา),
 				'other' => q(เปโซอาร์เจนตินา),
 			},
 		},
 		'ATS' => {
 			display_name => {
-				'default' => q(ชิลลิงออสเตรีย),
+				'currency' => q(ชิลลิงออสเตรีย),
 			},
 		},
 		'AUD' => {
 			symbol => 'AU$',
 			display_name => {
-				'default' => q(ดอลลาร์ออสเตรเลีย),
+				'currency' => q(ดอลลาร์ออสเตรเลีย),
 				'other' => q(ดอลลาร์ออสเตรเลีย),
 			},
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(ฟลอรินอารูบา),
+				'currency' => q(ฟลอรินอารูบา),
 				'other' => q(ฟลอรินอารูบา),
 			},
 		},
 		'AZM' => {
 			display_name => {
-				'default' => q(มานัตอาเซอร์ไบจาน (1993–2006)),
+				'currency' => q(มานัตอาเซอร์ไบจาน \(1993–2006\)),
 			},
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(มานัตอาเซอร์ไบจาน),
+				'currency' => q(มานัตอาเซอร์ไบจาน),
 				'other' => q(มานัตอาเซอร์ไบจาน),
 			},
 		},
 		'BAD' => {
 			display_name => {
-				'default' => q(ดีนาร์บอสเนีย-เฮอร์เซโกวีนา),
+				'currency' => q(ดีนาร์บอสเนีย-เฮอร์เซโกวีนา),
 			},
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(มาร์กบอสเนีย-เฮอร์เซโกวีนา),
+				'currency' => q(มาร์กบอสเนีย-เฮอร์เซโกวีนา),
 				'other' => q(มาร์กบอสเนีย-เฮอร์เซโกวีนา),
 			},
 		},
 		'BAN' => {
 			display_name => {
-				'default' => q(ดีนาร์ใหม่บอสเนีย-เฮอร์เซโกวีนา (1994–1997)),
+				'currency' => q(ดีนาร์ใหม่บอสเนีย-เฮอร์เซโกวีนา \(1994–1997\)),
 			},
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(ดอลลาร์บาร์เบโดส),
+				'currency' => q(ดอลลาร์บาร์เบโดส),
 				'other' => q(ดอลลาร์บาร์เบโดส),
 			},
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(ตากาบังกลาเทศ),
+				'currency' => q(ตากาบังกลาเทศ),
 				'other' => q(ตากาบังกลาเทศ),
 			},
 		},
 		'BEC' => {
 			display_name => {
-				'default' => q(ฟรังก์เบลเยียม (เปลี่ยนแปลงได้)),
+				'currency' => q(ฟรังก์เบลเยียม \(เปลี่ยนแปลงได้\)),
 			},
 		},
 		'BEF' => {
 			display_name => {
-				'default' => q(ฟรังก์เบลเยียม),
+				'currency' => q(ฟรังก์เบลเยียม),
 			},
 		},
 		'BEL' => {
 			display_name => {
-				'default' => q(ฟรังก์เบลเยียม (การเงิน)),
+				'currency' => q(ฟรังก์เบลเยียม \(การเงิน\)),
 			},
 		},
 		'BGL' => {
 			display_name => {
-				'default' => q(ฮาร์ดเลฟบัลแกเรีย),
+				'currency' => q(ฮาร์ดเลฟบัลแกเรีย),
 			},
 		},
 		'BGM' => {
 			display_name => {
-				'default' => q(โซเชียลลิสต์เลฟบัลแกเรีย),
+				'currency' => q(โซเชียลลิสต์เลฟบัลแกเรีย),
 			},
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(เลฟบัลแกเรีย),
+				'currency' => q(เลฟบัลแกเรีย),
 				'other' => q(เลฟบัลแกเรีย),
 			},
 		},
 		'BGO' => {
 			display_name => {
-				'default' => q(เลฟบัลเกเรีย (1879–1952)),
+				'currency' => q(เลฟบัลเกเรีย \(1879–1952\)),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(ดีนาร์บาห์เรน),
+				'currency' => q(ดีนาร์บาห์เรน),
 				'other' => q(ดีนาร์บาห์เรน),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(ฟรังก์บุรุนดี),
+				'currency' => q(ฟรังก์บุรุนดี),
 				'other' => q(ฟรังก์บุรุนดี),
 			},
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(ดอลลาร์เบอร์มิวดา),
+				'currency' => q(ดอลลาร์เบอร์มิวดา),
 				'other' => q(ดอลลาร์เบอร์มิวดา),
 			},
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(ดอลลาร์บรูไน),
+				'currency' => q(ดอลลาร์บรูไน),
 				'other' => q(ดอลลาร์บรูไน),
 			},
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(โบลิเวียโนโบลิเวีย),
+				'currency' => q(โบลิเวียโนโบลิเวีย),
 				'other' => q(โบลิเวียโนโบลิเวีย),
 			},
 		},
 		'BOL' => {
 			display_name => {
-				'default' => q(โบลิเวียโนโบลิเวีย (1863–1963)),
+				'currency' => q(โบลิเวียโนโบลิเวีย \(1863–1963\)),
 			},
 		},
 		'BOP' => {
 			display_name => {
-				'default' => q(เปโซโบลิเวีย),
+				'currency' => q(เปโซโบลิเวีย),
 			},
 		},
 		'BOV' => {
 			display_name => {
-				'default' => q(มฟดอลโบลิเวีย),
+				'currency' => q(มฟดอลโบลิเวีย),
 			},
 		},
 		'BRB' => {
 			display_name => {
-				'default' => q(ครูเซโรโนโวบราซิล (1967–1986)),
+				'currency' => q(ครูเซโรโนโวบราซิล \(1967–1986\)),
 			},
 		},
 		'BRC' => {
 			display_name => {
-				'default' => q(ครูซาโดบราซิล),
+				'currency' => q(ครูซาโดบราซิล),
 			},
 		},
 		'BRE' => {
 			display_name => {
-				'default' => q(ครูเซโรบราซิล (1990–1993)),
+				'currency' => q(ครูเซโรบราซิล \(1990–1993\)),
 			},
 		},
 		'BRL' => {
 			symbol => 'R$',
 			display_name => {
-				'default' => q(เรียลบราซิล),
+				'currency' => q(เรียลบราซิล),
 				'other' => q(เรียลบราซิล),
 			},
 		},
 		'BRN' => {
 			display_name => {
-				'default' => q(ครูซาโดโนโวบราซิล),
+				'currency' => q(ครูซาโดโนโวบราซิล),
 			},
 		},
 		'BRR' => {
 			display_name => {
-				'default' => q(ครูเซโรบราซิล),
+				'currency' => q(ครูเซโรบราซิล),
 			},
 		},
 		'BRZ' => {
 			display_name => {
-				'default' => q(ครูเซโรบราซิล (1942–1967)),
+				'currency' => q(ครูเซโรบราซิล \(1942–1967\)),
 			},
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(ดอลลาร์บาฮามาส),
+				'currency' => q(ดอลลาร์บาฮามาส),
 				'other' => q(ดอลลาร์บาฮามาส),
 			},
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(เอ็งกุลตรัมภูฏาน),
+				'currency' => q(เอ็งกุลตรัมภูฏาน),
 				'other' => q(เอ็งกุลตรัมภูฏาน),
 			},
 		},
 		'BUK' => {
 			display_name => {
-				'default' => q(จ๊าดพม่า),
+				'currency' => q(จ๊าดพม่า),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(ปูลาบอตสวานา),
+				'currency' => q(ปูลาบอตสวานา),
 				'other' => q(ปูลาบอตสวานา),
 			},
 		},
 		'BYB' => {
 			display_name => {
-				'default' => q(นิวรูเบิลเบลารุส (1994–1999)),
+				'currency' => q(นิวรูเบิลเบลารุส \(1994–1999\)),
 			},
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(รูเบิลเบลารุส),
+				'currency' => q(รูเบิลเบลารุส),
 				'other' => q(รูเบิลเบลารุส),
 			},
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(ดอลลาร์เบลีซ),
+				'currency' => q(ดอลลาร์เบลีซ),
 				'other' => q(ดอลลาร์เบลีซ),
 			},
 		},
 		'CAD' => {
 			symbol => 'CA$',
 			display_name => {
-				'default' => q(ดอลลาร์แคนาดา),
+				'currency' => q(ดอลลาร์แคนาดา),
 				'other' => q(ดอลลาร์แคนาดา),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(ฟรังก์คองโก),
+				'currency' => q(ฟรังก์คองโก),
 				'other' => q(ฟรังก์คองโก),
 			},
 		},
 		'CHE' => {
 			display_name => {
-				'default' => q(ยูโรดับเบิลยูไออาร์),
+				'currency' => q(ยูโรดับเบิลยูไออาร์),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(ฟรังก์สวิส),
+				'currency' => q(ฟรังก์สวิส),
 				'other' => q(ฟรังก์สวิส),
 			},
 		},
 		'CHW' => {
 			display_name => {
-				'default' => q(ฟรังก์ดับเบิลยูไออาร์),
+				'currency' => q(ฟรังก์ดับเบิลยูไออาร์),
 			},
 		},
 		'CLE' => {
 			display_name => {
-				'default' => q(เอสคูโดชิลี),
+				'currency' => q(เอสคูโดชิลี),
 			},
 		},
 		'CLF' => {
 			display_name => {
-				'default' => q(ฟูเมนโตชิลี),
+				'currency' => q(ฟูเมนโตชิลี),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(เปโซชิลี),
+				'currency' => q(เปโซชิลี),
 				'other' => q(เปโซชิลี),
 			},
 		},
 		'CNY' => {
 			symbol => 'CN¥',
 			display_name => {
-				'default' => q(หยวนจีน),
+				'currency' => q(หยวนจีน),
 				'other' => q(หยวนจีน),
 			},
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(เปโซโคลอมเบีย),
+				'currency' => q(เปโซโคลอมเบีย),
 				'other' => q(เปโซโคลอมเบีย),
 			},
 		},
 		'COU' => {
 			display_name => {
-				'default' => q(วาเลอร์เรียลโคลอมเบีย),
+				'currency' => q(วาเลอร์เรียลโคลอมเบีย),
 			},
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(โกลองคอสตาริกา),
+				'currency' => q(โกลองคอสตาริกา),
 				'other' => q(โกลองคอสตาริกา),
 			},
 		},
 		'CSD' => {
 			display_name => {
-				'default' => q(ดีนาร์เซอร์เบียเก่า),
+				'currency' => q(ดีนาร์เซอร์เบียเก่า),
 			},
 		},
 		'CSK' => {
 			display_name => {
-				'default' => q(ฮาร์ดโครูนาเช็กโกสโลวัก),
+				'currency' => q(ฮาร์ดโครูนาเช็กโกสโลวัก),
 			},
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(เปโซคิวบา (แปลงสภาพ)),
-				'other' => q(เปโซคิวบา (แปลงสภาพ)),
+				'currency' => q(เปโซคิวบา \(แปลงสภาพ\)),
+				'other' => q(เปโซคิวบา \(แปลงสภาพ\)),
 			},
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(เปโซคิวบา),
+				'currency' => q(เปโซคิวบา),
 				'other' => q(เปโซคิวบา),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(เอสคูโดเคปเวิร์ด),
+				'currency' => q(เอสคูโดเคปเวิร์ด),
 				'other' => q(เอสคูโดเคปเวิร์ด),
 			},
 		},
 		'CYP' => {
 			display_name => {
-				'default' => q(ปอนด์ไซปรัส),
+				'currency' => q(ปอนด์ไซปรัส),
 			},
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(โครูนาสาธารณรัฐเช็ก),
+				'currency' => q(โครูนาสาธารณรัฐเช็ก),
 				'other' => q(โครูนาสาธารณรัฐเช็ก),
 			},
 		},
 		'DDM' => {
 			display_name => {
-				'default' => q(มาร์กเยอรมันตะวันออก),
+				'currency' => q(มาร์กเยอรมันตะวันออก),
 			},
 		},
 		'DEM' => {
 			display_name => {
-				'default' => q(มาร์กเยอรมัน),
+				'currency' => q(มาร์กเยอรมัน),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(ฟรังก์จิบูตี),
+				'currency' => q(ฟรังก์จิบูตี),
 				'other' => q(ฟรังก์จิบูตี),
 			},
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(โครนเดนมาร์ก),
+				'currency' => q(โครนเดนมาร์ก),
 				'other' => q(โครนเดนมาร์ก),
 			},
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(เปโซโดมินิกัน),
+				'currency' => q(เปโซโดมินิกัน),
 				'other' => q(เปโซโดมินิกัน),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(ดีนาร์แอลจีเรีย),
+				'currency' => q(ดีนาร์แอลจีเรีย),
 				'other' => q(ดีนาร์แอลจีเรีย),
 			},
 		},
 		'ECS' => {
 			display_name => {
-				'default' => q(ซูเกรเอกวาดอร์),
+				'currency' => q(ซูเกรเอกวาดอร์),
 			},
 		},
 		'ECV' => {
 			display_name => {
-				'default' => q(วาเลอร์คอนสแตนต์เอกวาดอร์),
+				'currency' => q(วาเลอร์คอนสแตนต์เอกวาดอร์),
 			},
 		},
 		'EEK' => {
 			display_name => {
-				'default' => q(ครูนเอสโตเนีย),
+				'currency' => q(ครูนเอสโตเนีย),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(ปอนด์อียิปต์),
+				'currency' => q(ปอนด์อียิปต์),
 				'other' => q(ปอนด์อียิปต์),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(แนกฟาเอริเทรีย),
+				'currency' => q(แนกฟาเอริเทรีย),
 				'other' => q(แนกฟาเอริเทรีย),
 			},
 		},
 		'ESA' => {
 			display_name => {
-				'default' => q(เปเซตาสเปน (บัญชีเอ)),
+				'currency' => q(เปเซตาสเปน \(บัญชีเอ\)),
 			},
 		},
 		'ESB' => {
 			display_name => {
-				'default' => q(เปเซตาสเปน (บัญชีที่เปลี่ยนแปลงได้)),
+				'currency' => q(เปเซตาสเปน \(บัญชีที่เปลี่ยนแปลงได้\)),
 			},
 		},
 		'ESP' => {
 			display_name => {
-				'default' => q(เปเซตาสเปน),
+				'currency' => q(เปเซตาสเปน),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(เบอรร์เอธิโอเปีย),
+				'currency' => q(เบอรร์เอธิโอเปีย),
 				'other' => q(เบอรร์เอธิโอเปีย),
 			},
 		},
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(ยูโร),
+				'currency' => q(ยูโร),
 				'other' => q(ยูโร),
 			},
 		},
 		'FIM' => {
 			display_name => {
-				'default' => q(มาร์กกาฟินแลนด์),
+				'currency' => q(มาร์กกาฟินแลนด์),
 			},
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(ดอลลาร์ฟิจิ),
+				'currency' => q(ดอลลาร์ฟิจิ),
 				'other' => q(ดอลลาร์ฟิจิ),
 			},
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(ปอนด์หมู่เกาะฟอล์กแลนด์),
+				'currency' => q(ปอนด์หมู่เกาะฟอล์กแลนด์),
 				'other' => q(ปอนด์หมู่เกาะฟอล์กแลนด์),
 			},
 		},
 		'FRF' => {
 			display_name => {
-				'default' => q(ฟรังก์ฝรั่งเศส),
+				'currency' => q(ฟรังก์ฝรั่งเศส),
 			},
 		},
 		'GBP' => {
 			symbol => '£',
 			display_name => {
-				'default' => q(ปอนด์สเตอร์ลิง (สหราชอาณาจักร)),
-				'other' => q(ปอนด์สเตอร์ลิง (สหราชอาณาจักร)),
+				'currency' => q(ปอนด์สเตอร์ลิง \(สหราชอาณาจักร\)),
+				'other' => q(ปอนด์สเตอร์ลิง \(สหราชอาณาจักร\)),
 			},
 		},
 		'GEK' => {
 			display_name => {
-				'default' => q(คูปอนลาริตจอร์เจีย),
+				'currency' => q(คูปอนลาริตจอร์เจีย),
 			},
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(ลารีจอร์เจีย),
+				'currency' => q(ลารีจอร์เจีย),
 				'other' => q(ลารีจอร์เจีย),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(เซดีกานา (1979–2007)),
+				'currency' => q(เซดีกานา \(1979–2007\)),
 			},
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(เซดีกานา),
+				'currency' => q(เซดีกานา),
 				'other' => q(เซดีกานา),
 			},
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(ปอนด์ยิบรอลตาร์),
+				'currency' => q(ปอนด์ยิบรอลตาร์),
 				'other' => q(ปอนด์ยิบรอลตาร์),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(ดาลาซีแกมเบีย),
+				'currency' => q(ดาลาซีแกมเบีย),
 				'other' => q(ดาลาซีแกมเบีย),
 			},
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(ฟรังก์กินี),
+				'currency' => q(ฟรังก์กินี),
 				'other' => q(ฟรังก์กินี),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(ไซลีกินี),
+				'currency' => q(ไซลีกินี),
 			},
 		},
 		'GQE' => {
 			display_name => {
-				'default' => q(เอ็กเวเลอิเควทอเรียลกินี),
+				'currency' => q(เอ็กเวเลอิเควทอเรียลกินี),
 			},
 		},
 		'GRD' => {
 			display_name => {
-				'default' => q(ดรัชมากรีก),
+				'currency' => q(ดรัชมากรีก),
 			},
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(เควตซัลกัวเตมาลา),
+				'currency' => q(เควตซัลกัวเตมาลา),
 				'other' => q(เควตซัลกัวเตมาลา),
 			},
 		},
 		'GWE' => {
 			display_name => {
-				'default' => q(เอสคูโดกินีโปรตุเกส),
+				'currency' => q(เอสคูโดกินีโปรตุเกส),
 			},
 		},
 		'GWP' => {
 			display_name => {
-				'default' => q(เปโซกินี-บิสเซา),
+				'currency' => q(เปโซกินี-บิสเซา),
 			},
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(ดอลลาร์กายอานา),
+				'currency' => q(ดอลลาร์กายอานา),
 				'other' => q(ดอลลาร์กายอานา),
 			},
 		},
 		'HKD' => {
 			symbol => 'HK$',
 			display_name => {
-				'default' => q(ดอลลาร์ฮ่องกง),
+				'currency' => q(ดอลลาร์ฮ่องกง),
 				'other' => q(ดอลลาร์ฮ่องกง),
 			},
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(เลมปิราฮอนดูรัส),
+				'currency' => q(เลมปิราฮอนดูรัส),
 				'other' => q(เลมปิราฮอนดูรัส),
 			},
 		},
 		'HRD' => {
 			display_name => {
-				'default' => q(ดีนาร์โครเอเชีย),
+				'currency' => q(ดีนาร์โครเอเชีย),
 			},
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(คูนาโครเอเชีย),
+				'currency' => q(คูนาโครเอเชีย),
 				'other' => q(คูนาโครเอเชีย),
 			},
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(กูร์ดเฮติ),
+				'currency' => q(กูร์ดเฮติ),
 				'other' => q(กูร์ดเฮติ),
 			},
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(ฟอรินต์ฮังการี),
+				'currency' => q(ฟอรินต์ฮังการี),
 				'other' => q(ฟอรินต์ฮังการี),
 			},
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(รูเปียห์อินโดนีเซีย),
+				'currency' => q(รูเปียห์อินโดนีเซีย),
 				'other' => q(รูเปียห์อินโดนีเซีย),
 			},
 		},
 		'IEP' => {
 			display_name => {
-				'default' => q(ปอนด์ไอริช),
+				'currency' => q(ปอนด์ไอริช),
 			},
 		},
 		'ILP' => {
 			display_name => {
-				'default' => q(ปอนด์อิสราเอล),
+				'currency' => q(ปอนด์อิสราเอล),
 			},
 		},
 		'ILS' => {
 			symbol => '₪',
 			display_name => {
-				'default' => q(นิวเชเกลอิสราเอล),
+				'currency' => q(นิวเชเกลอิสราเอล),
 				'other' => q(นิวเชเกลอิสราเอล),
 			},
 		},
 		'INR' => {
 			symbol => '₹',
 			display_name => {
-				'default' => q(รูปีอินเดีย),
+				'currency' => q(รูปีอินเดีย),
 				'other' => q(รูปีอินเดีย),
 			},
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(ดีนาร์อิรัก),
+				'currency' => q(ดีนาร์อิรัก),
 				'other' => q(ดีนาร์อิรัก),
 			},
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(เรียลอิหร่าน),
+				'currency' => q(เรียลอิหร่าน),
 				'other' => q(เรียลอิหร่าน),
 			},
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(โครนาไอซ์แลนด์),
+				'currency' => q(โครนาไอซ์แลนด์),
 				'other' => q(โครนาไอซ์แลนด์),
 			},
 		},
 		'ITL' => {
 			display_name => {
-				'default' => q(ลีราอิตาลี),
+				'currency' => q(ลีราอิตาลี),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(ดอลลาร์จาเมกา),
+				'currency' => q(ดอลลาร์จาเมกา),
 				'other' => q(ดอลลาร์จาเมกา),
 			},
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(ดีนาร์จอร์แดน),
+				'currency' => q(ดีนาร์จอร์แดน),
 				'other' => q(ดีนาร์จอร์แดน),
 			},
 		},
 		'JPY' => {
 			symbol => '¥',
 			display_name => {
-				'default' => q(เยนญี่ปุ่น),
+				'currency' => q(เยนญี่ปุ่น),
 				'other' => q(เยนญี่ปุ่น),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(ชิลลิ่งเคนยา),
+				'currency' => q(ชิลลิ่งเคนยา),
 				'other' => q(ชิลลิ่งเคนยา),
 			},
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(ซอมคีร์กีซสถาน),
+				'currency' => q(ซอมคีร์กีซสถาน),
 				'other' => q(ซอมคีร์กีซสถาน),
 			},
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(เรียลกัมพูชา),
+				'currency' => q(เรียลกัมพูชา),
 				'other' => q(เรียลกัมพูชา),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(ฟรังก์คอโมโรส),
+				'currency' => q(ฟรังก์คอโมโรส),
 				'other' => q(ฟรังก์คอโมโรส),
 			},
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(วอนเกาหลีเหนือ),
+				'currency' => q(วอนเกาหลีเหนือ),
 				'other' => q(วอนเกาหลีเหนือ),
 			},
 		},
 		'KRH' => {
 			display_name => {
-				'default' => q(ฮวานเกาหลีใต้ (1953–1962)),
+				'currency' => q(ฮวานเกาหลีใต้ \(1953–1962\)),
 			},
 		},
 		'KRO' => {
 			display_name => {
-				'default' => q(วอนเกาหลีใต้ (1945–1953)),
+				'currency' => q(วอนเกาหลีใต้ \(1945–1953\)),
 			},
 		},
 		'KRW' => {
 			symbol => '₩',
 			display_name => {
-				'default' => q(วอนเกาหลีใต้),
+				'currency' => q(วอนเกาหลีใต้),
 				'other' => q(วอนเกาหลีใต้),
 			},
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(ดีนาร์คูเวต),
+				'currency' => q(ดีนาร์คูเวต),
 				'other' => q(ดีนาร์คูเวต),
 			},
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(ดอลลาร์หมู่เกาะเคย์แมน),
+				'currency' => q(ดอลลาร์หมู่เกาะเคย์แมน),
 				'other' => q(ดอลลาร์หมู่เกาะเคย์แมน),
 			},
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(เทงเจคาซัคสถาน),
+				'currency' => q(เทงเจคาซัคสถาน),
 				'other' => q(เทงเจคาซัคสถาน),
 			},
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(กีบลาว),
+				'currency' => q(กีบลาว),
 				'other' => q(กีบลาว),
 			},
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(ปอนด์เลบานอน),
+				'currency' => q(ปอนด์เลบานอน),
 				'other' => q(ปอนด์เลบานอน),
 			},
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(รูปีศรีลังกา),
+				'currency' => q(รูปีศรีลังกา),
 				'other' => q(รูปีศรีลังกา),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(ดอลลาร์ไลบีเรีย),
+				'currency' => q(ดอลลาร์ไลบีเรีย),
 				'other' => q(ดอลลาร์ไลบีเรีย),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(โลตีเลโซโท),
+				'currency' => q(โลตีเลโซโท),
 			},
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(ลีตัสลิทัวเนีย),
+				'currency' => q(ลีตัสลิทัวเนีย),
 				'other' => q(ลีตัสลิทัวเนีย),
 			},
 		},
 		'LTT' => {
 			display_name => {
-				'default' => q(ทาโลนัสลิทัวเนีย),
+				'currency' => q(ทาโลนัสลิทัวเนีย),
 			},
 		},
 		'LUC' => {
 			display_name => {
-				'default' => q(คอนเวอร์ทิเบิลฟรังก์ลักเซมเบิร์ก),
+				'currency' => q(คอนเวอร์ทิเบิลฟรังก์ลักเซมเบิร์ก),
 			},
 		},
 		'LUF' => {
 			display_name => {
-				'default' => q(ฟรังก์ลักเซมเบิร์ก),
+				'currency' => q(ฟรังก์ลักเซมเบิร์ก),
 			},
 		},
 		'LUL' => {
 			display_name => {
-				'default' => q(ไฟแนลเชียลฟรังก์ลักเซมเบิร์ก),
+				'currency' => q(ไฟแนลเชียลฟรังก์ลักเซมเบิร์ก),
 			},
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(ลัตส์ลัตเวีย),
+				'currency' => q(ลัตส์ลัตเวีย),
 				'other' => q(ลัตส์ลัตเวีย),
 			},
 		},
 		'LVR' => {
 			display_name => {
-				'default' => q(รูเบิลลัตเวีย),
+				'currency' => q(รูเบิลลัตเวีย),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(ดีนาร์ลิเบีย),
+				'currency' => q(ดีนาร์ลิเบีย),
 				'other' => q(ดีนาร์ลิเบีย),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(ดีแรห์มโมร็อกโก),
+				'currency' => q(ดีแรห์มโมร็อกโก),
 				'other' => q(ดีแรห์มโมร็อกโก),
 			},
 		},
 		'MAF' => {
 			display_name => {
-				'default' => q(ฟรังก์โมร็อกโก),
+				'currency' => q(ฟรังก์โมร็อกโก),
 			},
 		},
 		'MCF' => {
 			display_name => {
-				'default' => q(ฟรังก์โมนาโก),
+				'currency' => q(ฟรังก์โมนาโก),
 			},
 		},
 		'MDC' => {
 			display_name => {
-				'default' => q(บัตรปันส่วนมอลโดวา),
+				'currency' => q(บัตรปันส่วนมอลโดวา),
 			},
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(ลิวมอลโดวา),
+				'currency' => q(ลิวมอลโดวา),
 				'other' => q(ลิวมอลโดวา),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(อาเรียรีมาลากาซี),
+				'currency' => q(อาเรียรีมาลากาซี),
 				'other' => q(อาเรียรีมาลากาซี),
 			},
 		},
 		'MGF' => {
 			display_name => {
-				'default' => q(ฟรังก์มาดากัสการ์),
+				'currency' => q(ฟรังก์มาดากัสการ์),
 			},
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(ดีนาร์มาซิโดเนีย),
+				'currency' => q(ดีนาร์มาซิโดเนีย),
 				'other' => q(ดีนาร์มาซิโดเนีย),
 			},
 		},
 		'MKN' => {
 			display_name => {
-				'default' => q(ดีนาร์มาซิโดเนีย (1992–1993)),
+				'currency' => q(ดีนาร์มาซิโดเนีย \(1992–1993\)),
 			},
 		},
 		'MLF' => {
 			display_name => {
-				'default' => q(ฟรังก์มาลี),
+				'currency' => q(ฟรังก์มาลี),
 			},
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(จ๊าตพม่า),
+				'currency' => q(จ๊าตพม่า),
 				'other' => q(จ๊าตพม่า),
 			},
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(ทูกริกมองโกเลีย),
+				'currency' => q(ทูกริกมองโกเลีย),
 				'other' => q(ทูกริกมองโกเลีย),
 			},
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(ปาตากามาเก๊า),
+				'currency' => q(ปาตากามาเก๊า),
 				'other' => q(ปาตากามาเก๊า),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(อูกียามอริเตเนีย),
+				'currency' => q(อูกียามอริเตเนีย),
 				'other' => q(อูกียามอริเตเนีย),
 			},
 		},
 		'MTL' => {
 			display_name => {
-				'default' => q(ลีรามอลตา),
+				'currency' => q(ลีรามอลตา),
 			},
 		},
 		'MTP' => {
 			display_name => {
-				'default' => q(ปอนด์มอลตา),
+				'currency' => q(ปอนด์มอลตา),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(รูปีมอริเชียส),
+				'currency' => q(รูปีมอริเชียส),
 				'other' => q(รูปีมอริเชียส),
 			},
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(รูฟิยามัลดีฟส์),
+				'currency' => q(รูฟิยามัลดีฟส์),
 				'other' => q(รูฟิยามัลดีฟส์),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(ควาชามาลาวี),
+				'currency' => q(ควาชามาลาวี),
 				'other' => q(ควาชามาลาวี),
 			},
 		},
 		'MXN' => {
 			symbol => 'MX$',
 			display_name => {
-				'default' => q(เปโซเม็กซิโก),
+				'currency' => q(เปโซเม็กซิโก),
 				'other' => q(เปโซเม็กซิโก),
 			},
 		},
 		'MXP' => {
 			display_name => {
-				'default' => q(เงินเปโซเม็กซิโก (1861–1992)),
+				'currency' => q(เงินเปโซเม็กซิโก \(1861–1992\)),
 			},
 		},
 		'MXV' => {
 			display_name => {
-				'default' => q(ยูนิแดด ดี อินเวอร์ชั่น เม็กซิโก),
+				'currency' => q(ยูนิแดด ดี อินเวอร์ชั่น เม็กซิโก),
 			},
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(ริงกิตมาเลเซีย),
+				'currency' => q(ริงกิตมาเลเซีย),
 				'other' => q(ริงกิตมาเลเซีย),
 			},
 		},
 		'MZE' => {
 			display_name => {
-				'default' => q(เอสคูโดโมซัมบิก),
+				'currency' => q(เอสคูโดโมซัมบิก),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(เมติคัลโมซัมบิกเก่า),
+				'currency' => q(เมติคัลโมซัมบิกเก่า),
 			},
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(เมติคัลโมซัมบิก),
+				'currency' => q(เมติคัลโมซัมบิก),
 				'other' => q(เมติคัลโมซัมบิก),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(ดอลลาร์นามิเบีย),
+				'currency' => q(ดอลลาร์นามิเบีย),
 				'other' => q(ดอลลาร์นามิเบีย),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(ไนราไนจีเรีย),
+				'currency' => q(ไนราไนจีเรีย),
 				'other' => q(ไนราไนจีเรีย),
 			},
 		},
 		'NIC' => {
 			display_name => {
-				'default' => q(คอร์โดบานิการากัว),
+				'currency' => q(คอร์โดบานิการากัว),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(กอร์โดบานิการากัว),
+				'currency' => q(กอร์โดบานิการากัว),
 				'other' => q(กอร์โดบานิการากัว),
 			},
 		},
 		'NLG' => {
 			display_name => {
-				'default' => q(กิลเดอร์เนเธอร์แลนด์),
+				'currency' => q(กิลเดอร์เนเธอร์แลนด์),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(โครนนอร์เวย์),
+				'currency' => q(โครนนอร์เวย์),
 				'other' => q(โครนนอร์เวย์),
 			},
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(รูปีเนปาล),
+				'currency' => q(รูปีเนปาล),
 				'other' => q(รูปีเนปาล),
 			},
 		},
 		'NZD' => {
 			symbol => 'NZ$',
 			display_name => {
-				'default' => q(ดอลลาร์นิวซีแลนด์),
+				'currency' => q(ดอลลาร์นิวซีแลนด์),
 				'other' => q(ดอลลาร์นิวซีแลนด์),
 			},
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(เรียลโอมาน),
+				'currency' => q(เรียลโอมาน),
 				'other' => q(เรียลโอมาน),
 			},
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(บัลบัวปานามา),
+				'currency' => q(บัลบัวปานามา),
 				'other' => q(บัลบัวปานามา),
 			},
 		},
 		'PEI' => {
 			display_name => {
-				'default' => q(อินตีเปรู),
+				'currency' => q(อินตีเปรู),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(นูโวซอลเปรู),
+				'currency' => q(นูโวซอลเปรู),
 				'other' => q(นูโวซอลเปรู),
 			},
 		},
 		'PES' => {
 			display_name => {
-				'default' => q(ซอลเปรู),
+				'currency' => q(ซอลเปรู),
 			},
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(กีนาปาปัวนิวกินี),
+				'currency' => q(กีนาปาปัวนิวกินี),
 				'other' => q(กีนาปาปัวนิวกินี),
 			},
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(เปโซฟิลิปปินส์),
+				'currency' => q(เปโซฟิลิปปินส์),
 				'other' => q(เปโซฟิลิปปินส์),
 			},
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(รูปีปากีสถาน),
+				'currency' => q(รูปีปากีสถาน),
 				'other' => q(รูปีปากีสถาน),
 			},
 		},
 		'PLN' => {
 			display_name => {
-				'default' => q(ซลอตีโปแลนด์),
+				'currency' => q(ซลอตีโปแลนด์),
 				'other' => q(ซลอตีโปแลนด์),
 			},
 		},
 		'PLZ' => {
 			display_name => {
-				'default' => q(ซลอตีโปแลนด์ (1950–1995)),
+				'currency' => q(ซลอตีโปแลนด์ \(1950–1995\)),
 			},
 		},
 		'PTE' => {
 			display_name => {
-				'default' => q(เอสคูโดโปรตุเกส),
+				'currency' => q(เอสคูโดโปรตุเกส),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(กวารานีปารากวัย),
+				'currency' => q(กวารานีปารากวัย),
 				'other' => q(กวารานีปารากวัย),
 			},
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(เรียลกาตาร์),
+				'currency' => q(เรียลกาตาร์),
 				'other' => q(เรียลกาตาร์),
 			},
 		},
 		'RHD' => {
 			display_name => {
-				'default' => q(ดอลลาร์โรดีเซีย),
+				'currency' => q(ดอลลาร์โรดีเซีย),
 			},
 		},
 		'ROL' => {
 			display_name => {
-				'default' => q(ลิวโรมาเนียเก่า),
+				'currency' => q(ลิวโรมาเนียเก่า),
 			},
 		},
 		'RON' => {
 			display_name => {
-				'default' => q(ลิวโรมาเนีย),
+				'currency' => q(ลิวโรมาเนีย),
 				'other' => q(ลิวโรมาเนีย),
 			},
 		},
 		'RSD' => {
 			display_name => {
-				'default' => q(ดีนาร์เซอร์เบีย),
+				'currency' => q(ดีนาร์เซอร์เบีย),
 				'other' => q(ดีนาร์เซอร์เบีย),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(รูเบิลรัสเซีย),
+				'currency' => q(รูเบิลรัสเซีย),
 				'other' => q(รูเบิลรัสเซีย),
 			},
 		},
 		'RUR' => {
 			display_name => {
-				'default' => q(รูเบิลรัสเซีย (1991–1998)),
+				'currency' => q(รูเบิลรัสเซีย \(1991–1998\)),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(ฟรังก์รวันดา),
+				'currency' => q(ฟรังก์รวันดา),
 				'other' => q(ฟรังก์รวันดา),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(ริยัลซาอุดีอาระเบีย),
+				'currency' => q(ริยัลซาอุดีอาระเบีย),
 				'other' => q(ริยัลซาอุดีอาระเบีย),
 			},
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(ดอลลาร์หมู่เกาะโซโลมอน),
+				'currency' => q(ดอลลาร์หมู่เกาะโซโลมอน),
 				'other' => q(ดอลลาร์หมู่เกาะโซโลมอน),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(รูปีเซเชลส์),
+				'currency' => q(รูปีเซเชลส์),
 				'other' => q(รูปีเซเชลส์),
 			},
 		},
 		'SDD' => {
 			display_name => {
-				'default' => q(ดีนาร์ซูดานเก่า),
+				'currency' => q(ดีนาร์ซูดานเก่า),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(ปอนด์ซูดาน),
+				'currency' => q(ปอนด์ซูดาน),
 				'other' => q(ปอนด์ซูดาน),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(ปอนด์ซูดานเก่า),
+				'currency' => q(ปอนด์ซูดานเก่า),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(โครนาสวีเดน),
+				'currency' => q(โครนาสวีเดน),
 				'other' => q(โครนาสวีเดน),
 			},
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(ดอลลาร์สิงคโปร์),
+				'currency' => q(ดอลลาร์สิงคโปร์),
 				'other' => q(ดอลลาร์สิงคโปร์),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(ปอนด์เซนต์เฮเลนา),
+				'currency' => q(ปอนด์เซนต์เฮเลนา),
 				'other' => q(ปอนด์เซนต์เฮเลนา),
 			},
 		},
 		'SIT' => {
 			display_name => {
-				'default' => q(ทอลาร์สโลวีเนีย),
+				'currency' => q(ทอลาร์สโลวีเนีย),
 			},
 		},
 		'SKK' => {
 			display_name => {
-				'default' => q(โครูนาสโลวัก),
+				'currency' => q(โครูนาสโลวัก),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(ลีโอนเซียร์ราลีโอน),
+				'currency' => q(ลีโอนเซียร์ราลีโอน),
 				'other' => q(ลีโอนเซียร์ราลีโอน),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(ชิลลิงโซมาเลีย),
+				'currency' => q(ชิลลิงโซมาเลีย),
 				'other' => q(ชิลลิงโซมาเลีย),
 			},
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(ดอลลาร์ซูรินาเม),
+				'currency' => q(ดอลลาร์ซูรินาเม),
 				'other' => q(ดอลลาร์ซูรินาเม),
 			},
 		},
 		'SRG' => {
 			display_name => {
-				'default' => q(กิลเดอร์ซูรินาเม),
+				'currency' => q(กิลเดอร์ซูรินาเม),
 			},
 		},
 		'SSP' => {
 			display_name => {
-				'default' => q(ปอนด์ซูดานใต้),
+				'currency' => q(ปอนด์ซูดานใต้),
 				'other' => q(ปอนด์ซูดานใต้),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(ดอบราเซาตูเมและปรินซิปี),
+				'currency' => q(ดอบราเซาตูเมและปรินซิปี),
 				'other' => q(ดอบราเซาตูเมและปรินซิปี),
 			},
 		},
 		'SUR' => {
 			display_name => {
-				'default' => q(รูเบิลโซเวียต),
+				'currency' => q(รูเบิลโซเวียต),
 			},
 		},
 		'SVC' => {
 			display_name => {
-				'default' => q(โคลอนเอลซัลวาดอร์),
+				'currency' => q(โคลอนเอลซัลวาดอร์),
 			},
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(ปอนด์ซีเรีย),
+				'currency' => q(ปอนด์ซีเรีย),
 				'other' => q(ปอนด์ซีเรีย),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(ลิลันเจนีสวาซิ),
+				'currency' => q(ลิลันเจนีสวาซิ),
 				'other' => q(ลิลันเจนีสวาซิ),
 			},
 		},
 		'THB' => {
 			symbol => '฿',
 			display_name => {
-				'default' => q(บาทไทย),
+				'currency' => q(บาทไทย),
 				'other' => q(บาทไทย),
 			},
 		},
 		'TJR' => {
 			display_name => {
-				'default' => q(รูเบิลทาจิกิสถาน),
+				'currency' => q(รูเบิลทาจิกิสถาน),
 			},
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(โซโมนิทาจิกิสถาน),
+				'currency' => q(โซโมนิทาจิกิสถาน),
 				'other' => q(โซโมนิทาจิกิสถาน),
 			},
 		},
 		'TMM' => {
 			display_name => {
-				'default' => q(มานัตเติร์กเมนิสถาน (1993–2009)),
+				'currency' => q(มานัตเติร์กเมนิสถาน \(1993–2009\)),
 			},
 		},
 		'TMT' => {
 			display_name => {
-				'default' => q(มานัตเติร์กเมนิสถาน),
+				'currency' => q(มานัตเติร์กเมนิสถาน),
 				'other' => q(มานัตเติร์กเมนิสถาน),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(ดีนาร์ตูนิเซีย),
+				'currency' => q(ดีนาร์ตูนิเซีย),
 				'other' => q(ดีนาร์ตูนิเซีย),
 			},
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(พาแองกาตองกา),
+				'currency' => q(พาแองกาตองกา),
 				'other' => q(พาแองกาตองกา),
 			},
 		},
 		'TPE' => {
 			display_name => {
-				'default' => q(เอสคูโดติมอร์),
+				'currency' => q(เอสคูโดติมอร์),
 			},
 		},
 		'TRL' => {
 			display_name => {
-				'default' => q(ลีราตุรกีเก่า),
+				'currency' => q(ลีราตุรกีเก่า),
 			},
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(ลีราตุรกี),
+				'currency' => q(ลีราตุรกี),
 				'other' => q(ลีราตุรกี),
 			},
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(ดอลลาร์ตรินิแดดและโตเบโก),
+				'currency' => q(ดอลลาร์ตรินิแดดและโตเบโก),
 				'other' => q(ดอลลาร์ตรินิแดดและโตเบโก),
 			},
 		},
 		'TWD' => {
 			symbol => 'NT$',
 			display_name => {
-				'default' => q(ดอลลาร์ไต้หวันใหม่),
+				'currency' => q(ดอลลาร์ไต้หวันใหม่),
 				'other' => q(ดอลลาร์ไต้หวันใหม่),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(ชิลลิงแทนซาเนีย),
+				'currency' => q(ชิลลิงแทนซาเนีย),
 				'other' => q(ชิลลิงแทนซาเนีย),
 			},
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(ฮรีฟเนียยูเครน),
+				'currency' => q(ฮรีฟเนียยูเครน),
 				'other' => q(ฮรีฟเนียยูเครน),
 			},
 		},
 		'UAK' => {
 			display_name => {
-				'default' => q(คาร์โบวาเนตซ์ยูเครน),
+				'currency' => q(คาร์โบวาเนตซ์ยูเครน),
 			},
 		},
 		'UGS' => {
 			display_name => {
-				'default' => q(ชิลลิงยูกันดา (1966–1987)),
+				'currency' => q(ชิลลิงยูกันดา \(1966–1987\)),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(ชิลลิงยูกันดา),
+				'currency' => q(ชิลลิงยูกันดา),
 				'other' => q(ชิลลิงยูกันดา),
 			},
 		},
 		'USD' => {
 			symbol => 'US$',
 			display_name => {
-				'default' => q(ดอลลาร์สหรัฐ),
+				'currency' => q(ดอลลาร์สหรัฐ),
 				'other' => q(ดอลลาร์สหรัฐ),
 			},
 		},
 		'USN' => {
 			display_name => {
-				'default' => q(ดอลลาร์สหรัฐ (วันถัดไป)),
-				'other' => q(ดอลลาร์สหรัฐ (วันถัดไป)),
+				'currency' => q(ดอลลาร์สหรัฐ \(วันถัดไป\)),
+				'other' => q(ดอลลาร์สหรัฐ \(วันถัดไป\)),
 			},
 		},
 		'USS' => {
 			display_name => {
-				'default' => q(ดอลลาร์สหรัฐ (วันเดียวกัน)),
-				'other' => q(ดอลลาร์สหรัฐ (วันเดียวกัน)),
+				'currency' => q(ดอลลาร์สหรัฐ \(วันเดียวกัน\)),
+				'other' => q(ดอลลาร์สหรัฐ \(วันเดียวกัน\)),
 			},
 		},
 		'UYI' => {
 			display_name => {
-				'default' => q(เปโซเอนยูนิแดดเซสอินเด็กซาแดสอุรุกวัย),
+				'currency' => q(เปโซเอนยูนิแดดเซสอินเด็กซาแดสอุรุกวัย),
 			},
 		},
 		'UYP' => {
 			display_name => {
-				'default' => q(เปโซอุรุกวัย (1975–1993)),
+				'currency' => q(เปโซอุรุกวัย \(1975–1993\)),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(เปโซอุรุกวัย),
+				'currency' => q(เปโซอุรุกวัย),
 				'other' => q(เปโซอุรุกวัย),
 			},
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(ซอมอุซเบกิสถาน),
+				'currency' => q(ซอมอุซเบกิสถาน),
 				'other' => q(ซอมอุซเบกิสถาน),
 			},
 		},
 		'VEB' => {
 			display_name => {
-				'default' => q(โบลิวาร์เวเนซุเอลา (1871–2008)),
+				'currency' => q(โบลิวาร์เวเนซุเอลา \(1871–2008\)),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(โบลิวาร์เวเนซุเอลา),
+				'currency' => q(โบลิวาร์เวเนซุเอลา),
 				'other' => q(โบลิวาร์เวเนซุเอลา),
 			},
 		},
 		'VND' => {
 			symbol => '₫',
 			display_name => {
-				'default' => q(ดองเวียดนาม),
+				'currency' => q(ดองเวียดนาม),
 				'other' => q(ดองเวียดนาม),
 			},
 		},
 		'VNN' => {
 			display_name => {
-				'default' => q(ดองเวียดนาม (1978–1985)),
+				'currency' => q(ดองเวียดนาม \(1978–1985\)),
 			},
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(วาตูวานูอาตู),
+				'currency' => q(วาตูวานูอาตู),
 				'other' => q(วาตูวานูอาตู),
 			},
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(ทาลาซามัว),
+				'currency' => q(ทาลาซามัว),
 				'other' => q(ทาลาซามัว),
 			},
 		},
 		'XAF' => {
 			symbol => 'FCFA',
 			display_name => {
-				'default' => q(ฟรังก์เซฟาธนาคารรัฐแอฟริกากลาง),
+				'currency' => q(ฟรังก์เซฟาธนาคารรัฐแอฟริกากลาง),
 				'other' => q(ฟรังก์เซฟาธนาคารรัฐแอฟริกากลาง),
 			},
 		},
 		'XAG' => {
 			display_name => {
-				'default' => q(เงิน),
+				'currency' => q(เงิน),
 			},
 		},
 		'XAU' => {
 			display_name => {
-				'default' => q(ทอง),
+				'currency' => q(ทอง),
 			},
 		},
 		'XBA' => {
 			display_name => {
-				'default' => q(หน่วยคอมโพสิตยุโรป),
+				'currency' => q(หน่วยคอมโพสิตยุโรป),
 			},
 		},
 		'XBB' => {
 			display_name => {
-				'default' => q(หน่วยโมเนทารียุโรป),
+				'currency' => q(หน่วยโมเนทารียุโรป),
 			},
 		},
 		'XBC' => {
 			display_name => {
-				'default' => q(หน่วยบัญชียุโรป [XBC]),
+				'currency' => q(หน่วยบัญชียุโรป [XBC]),
 			},
 		},
 		'XBD' => {
 			display_name => {
-				'default' => q(หน่วยบัญชียุโรป [XBD]),
+				'currency' => q(หน่วยบัญชียุโรป [XBD]),
 			},
 		},
 		'XCD' => {
 			symbol => 'EC$',
 			display_name => {
-				'default' => q(ดอลลาร์แคริบเบียนตะวันออก),
+				'currency' => q(ดอลลาร์แคริบเบียนตะวันออก),
 				'other' => q(ดอลลาร์แคริบเบียนตะวันออก),
 			},
 		},
 		'XDR' => {
 			display_name => {
-				'default' => q(สิทธิถอนเงินพิเศษ),
+				'currency' => q(สิทธิถอนเงินพิเศษ),
 			},
 		},
 		'XEU' => {
 			display_name => {
-				'default' => q(หน่วยสกุลเงินยุโรป),
+				'currency' => q(หน่วยสกุลเงินยุโรป),
 			},
 		},
 		'XFO' => {
 			display_name => {
-				'default' => q(ฟรังก์ทองฝรั่งเศส),
+				'currency' => q(ฟรังก์ทองฝรั่งเศส),
 			},
 		},
 		'XFU' => {
 			display_name => {
-				'default' => q(ฟรังก์ยูไอซีฝรั่งเศส),
+				'currency' => q(ฟรังก์ยูไอซีฝรั่งเศส),
 			},
 		},
 		'XOF' => {
 			symbol => 'CFA',
 			display_name => {
-				'default' => q(ฟรังก์เซฟาธนาคารกลางรัฐแอฟริกาตะวันตก),
+				'currency' => q(ฟรังก์เซฟาธนาคารกลางรัฐแอฟริกาตะวันตก),
 				'other' => q(ฟรังก์เซฟาธนาคารกลางรัฐแอฟริกาตะวันตก),
 			},
 		},
 		'XPD' => {
 			display_name => {
-				'default' => q(พัลเลเดียม),
+				'currency' => q(พัลเลเดียม),
 			},
 		},
 		'XPF' => {
 			symbol => 'CFPF',
 			display_name => {
-				'default' => q(ฟรังก์ซีเอฟพี),
+				'currency' => q(ฟรังก์ซีเอฟพี),
 				'other' => q(ฟรังก์ซีเอฟพี),
 			},
 		},
 		'XPT' => {
 			display_name => {
-				'default' => q(แพลตินัม),
+				'currency' => q(แพลตินัม),
 			},
 		},
 		'XRE' => {
 			display_name => {
-				'default' => q(กองทุนไรเน็ต),
+				'currency' => q(กองทุนไรเน็ต),
 			},
 		},
 		'XSU' => {
 			display_name => {
-				'default' => q(ซูเกร),
+				'currency' => q(ซูเกร),
 			},
 		},
 		'XTS' => {
 			display_name => {
-				'default' => q(รหัสทดสอบสกุลเงิน),
+				'currency' => q(รหัสทดสอบสกุลเงิน),
 			},
 		},
 		'XUA' => {
 			display_name => {
-				'default' => q(หน่วยบัญชี เอดีบี),
+				'currency' => q(หน่วยบัญชี เอดีบี),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(สกุลเงินที่ไม่รู้จัก),
-				'other' => q((สกุลเงินที่ไม่รู้จัก)),
+				'currency' => q(สกุลเงินที่ไม่รู้จัก),
+				'other' => q(\(สกุลเงินที่ไม่รู้จัก\)),
 			},
 		},
 		'YDD' => {
 			display_name => {
-				'default' => q(ดีนาร์เยเมน),
+				'currency' => q(ดีนาร์เยเมน),
 			},
 		},
 		'YER' => {
 			display_name => {
-				'default' => q(เรียลเยเมน),
+				'currency' => q(เรียลเยเมน),
 				'other' => q(เรียลเยเมน),
 			},
 		},
 		'YUD' => {
 			display_name => {
-				'default' => q(ฮาร์ดดีนาร์ยูโกสลาเวีย),
+				'currency' => q(ฮาร์ดดีนาร์ยูโกสลาเวีย),
 			},
 		},
 		'YUM' => {
 			display_name => {
-				'default' => q(โนวิย์ดีนาร์ยูโกสลาเวีย),
+				'currency' => q(โนวิย์ดีนาร์ยูโกสลาเวีย),
 			},
 		},
 		'YUN' => {
 			display_name => {
-				'default' => q(คอนเวอร์ทิเบิลดีนาร์ยูโกสลาเวีย),
+				'currency' => q(คอนเวอร์ทิเบิลดีนาร์ยูโกสลาเวีย),
 			},
 		},
 		'YUR' => {
 			display_name => {
-				'default' => q(ดีนาร์ปฏิรูปยูโกสลาเวีย (1992–1993)),
+				'currency' => q(ดีนาร์ปฏิรูปยูโกสลาเวีย \(1992–1993\)),
 			},
 		},
 		'ZAL' => {
 			display_name => {
-				'default' => q(แรนด์แอฟริกาใต้ (การเงิน)),
+				'currency' => q(แรนด์แอฟริกาใต้ \(การเงิน\)),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(แรนด์แอฟริกาใต้),
+				'currency' => q(แรนด์แอฟริกาใต้),
 				'other' => q(แรนด์แอฟริกาใต้),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(ควาชาแซมเบีย (1968–2012)),
+				'currency' => q(ควาชาแซมเบีย \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(ควาชาแซมเบีย),
+				'currency' => q(ควาชาแซมเบีย),
 				'other' => q(ควาชาแซมเบีย),
 			},
 		},
 		'ZRN' => {
 			display_name => {
-				'default' => q(นิวแซร์คองโก),
+				'currency' => q(นิวแซร์คองโก),
 			},
 		},
 		'ZRZ' => {
 			display_name => {
-				'default' => q(แซร์คองโก),
+				'currency' => q(แซร์คองโก),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(ดอลลาร์ซิมบับเว),
+				'currency' => q(ดอลลาร์ซิมบับเว),
 			},
 		},
 		'ZWL' => {
 			display_name => {
-				'default' => q(ดอลลาร์ซิมบับเว (2009)),
+				'currency' => q(ดอลลาร์ซิมบับเว \(2009\)),
 			},
 		},
 		'ZWR' => {
 			display_name => {
-				'default' => q(ดอลลาร์ซิมบับเว (2008)),
+				'currency' => q(ดอลลาร์ซิมบับเว \(2008\)),
 			},
 		},
 	} },
@@ -4939,8 +4938,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{หลังเที่ยง},
 					'am' => q{ก่อนเที่ยง},
+					'pm' => q{หลังเที่ยง},
 				},
 			},
 		},
@@ -5415,6 +5414,37 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'japanese' => {
+			Ed => q{E d},
+			Gy => q{G y},
+			GyMMM => q{MMM G y},
+			GyMMMEd => q{E d MMM G y},
+			GyMMMd => q{d MMM G y},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, d/M},
+			MMM => q{LLL},
+			MMMEd => q{E d MMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{G y},
+			yyyy => q{G y},
+			yyyyM => q{M/GGGGG y},
+			yyyyMEd => q{E d/M/GGGGG y},
+			yyyyMMM => q{MMM G y},
+			yyyyMMMEd => q{E d MMM G y},
+			yyyyMMMd => q{d MMM G y},
+			yyyyMd => q{d/M/GGGGG y},
+			yyyyQQQ => q{QQQ G y},
+			yyyyQQQQ => q{QQQQ G y},
+		},
 		'roc' => {
 			Ed => q{E d},
 			Gy => q{ปีGที่ y},
@@ -5444,6 +5474,47 @@ has 'datetime_formats_available_formats' => (
 			yyyyMMMd => q{d MMM G y},
 			yyyyMd => q{d/M/GGGGG y},
 			yyyyQQQ => q{QQQ G y},
+		},
+		'islamic' => {
+			M => q{L},
+			MEd => q{E, d/M},
+			MMM => q{LLL},
+			MMMEd => q{E d MMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			d => q{d},
+			y => q{G y},
+		},
+		'generic' => {
+			Ed => q{E d},
+			Gy => q{G y},
+			GyMMM => q{MMM G y},
+			GyMMMEd => q{E d MMM G y},
+			GyMMMd => q{d MMM G y},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E d/M},
+			MMM => q{LLL},
+			MMMEd => q{E d MMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{G y},
+			yyyy => q{G y},
+			yyyyM => q{M/y G},
+			yyyyMEd => q{E d/M/y GGGGG},
+			yyyyMMM => q{MMM G y},
+			yyyyMMMEd => q{E d MMM G y},
+			yyyyMMMd => q{d MMM G y},
+			yyyyMd => q{d/M/y GGGGG},
+			yyyyQQQ => q{QQQ G y},
+			yyyyQQQQ => q{QQQQ G y},
 		},
 		'gregorian' => {
 			EHm => q{E HH:mm},
@@ -5518,78 +5589,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{QQQ y},
 			yyyyQQQQ => q{QQQQ y},
 		},
-		'generic' => {
-			Ed => q{E d},
-			Gy => q{G y},
-			GyMMM => q{MMM G y},
-			GyMMMEd => q{E d MMM G y},
-			GyMMMd => q{d MMM G y},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E d/M},
-			MMM => q{LLL},
-			MMMEd => q{E d MMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{G y},
-			yyyy => q{G y},
-			yyyyM => q{M/y G},
-			yyyyMEd => q{E d/M/y GGGGG},
-			yyyyMMM => q{MMM G y},
-			yyyyMMMEd => q{E d MMM G y},
-			yyyyMMMd => q{d MMM G y},
-			yyyyMd => q{d/M/y GGGGG},
-			yyyyQQQ => q{QQQ G y},
-			yyyyQQQQ => q{QQQQ G y},
-		},
-		'japanese' => {
-			Ed => q{E d},
-			Gy => q{G y},
-			GyMMM => q{MMM G y},
-			GyMMMEd => q{E d MMM G y},
-			GyMMMd => q{d MMM G y},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, d/M},
-			MMM => q{LLL},
-			MMMEd => q{E d MMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{G y},
-			yyyy => q{G y},
-			yyyyM => q{M/GGGGG y},
-			yyyyMEd => q{E d/M/GGGGG y},
-			yyyyMMM => q{MMM G y},
-			yyyyMMMEd => q{E d MMM G y},
-			yyyyMMMd => q{d MMM G y},
-			yyyyMd => q{d/M/GGGGG y},
-			yyyyQQQ => q{QQQ G y},
-			yyyyQQQQ => q{QQQQ G y},
-		},
-		'islamic' => {
-			M => q{L},
-			MEd => q{E, d/M},
-			MMM => q{LLL},
-			MMMEd => q{E d MMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			d => q{d},
-			y => q{G y},
-		},
 	} },
 );
 
@@ -5609,6 +5608,101 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'generic' => {
+			H => {
+				H => q{H-H},
+			},
+			Hm => {
+				H => q{HH:mm-HH:mm},
+				m => q{HH:mm-HH:mm},
+			},
+			Hmv => {
+				H => q{H:mm-H:mm v},
+				m => q{H:mm-H:mm v},
+			},
+			Hv => {
+				H => q{H-H v},
+			},
+			M => {
+				M => q{M-M},
+			},
+			MEd => {
+				M => q{E d/M - E d/M},
+				d => q{E d - E d/M},
+			},
+			MMM => {
+				M => q{LLL-LLL},
+			},
+			MMMEd => {
+				M => q{E d MMM - E d MMM},
+				d => q{E d MMM - E d MMM},
+			},
+			MMMd => {
+				M => q{d MMM - d MMM},
+				d => q{d - d MMM},
+			},
+			Md => {
+				M => q{d/M - d/M},
+				d => q{d/M - d/M},
+			},
+			d => {
+				d => q{d-d},
+			},
+			fallback => '{0} - {1}',
+			h => {
+				a => q{h a - h a},
+				h => q{h-h a},
+			},
+			hm => {
+				a => q{h:mm a - h:mm a},
+				h => q{h:mm-h:mm a},
+				m => q{h:mm-h:mm a},
+			},
+			hmv => {
+				a => q{h:mm a - h:mm a v},
+				h => q{h:mm-h:mm a v},
+				m => q{h:mm-h:mm a v},
+			},
+			hv => {
+				a => q{h a - h a v},
+				h => q{h-h a v},
+			},
+			y => {
+				y => q{G y-y},
+			},
+			yM => {
+				M => q{M/y - M/y G},
+				y => q{M/y - M/y G},
+			},
+			yMEd => {
+				M => q{E d/M/y - E d/M/y G},
+				d => q{E d - E d/M/y G},
+				y => q{E d/M/y - E d/M/y G},
+			},
+			yMMM => {
+				M => q{MMM-MMM G y},
+				y => q{MMM y - MMM G y},
+			},
+			yMMMEd => {
+				M => q{E d MMM - E d MMM G y},
+				d => q{E d - E d MMM G y},
+				y => q{E d MMM y - E d MMM G y},
+			},
+			yMMMM => {
+				M => q{MMMM – MMMM G y},
+				y => q{MMMM y - MMMM G y},
+			},
+			yMMMd => {
+				M => q{d MMM - d MMM G y},
+				d => q{d-d MMM G y},
+				y => q{d MMM y - d MMM G y},
+			},
+			yMd => {
+				M => q{d/M/y - d/M/y G},
+				d => q{d-d/M/y G},
+				y => q{d/M/y - d/M/y G},
+			},
+		},
 		'gregorian' => {
 			H => {
 				H => q{HH–HH},
@@ -5797,101 +5891,6 @@ has 'datetime_formats_interval' => (
 				M => q{d/M/y - d/M/y},
 				d => q{d-d/M/y},
 				y => q{d/M/y - d/M/y},
-			},
-		},
-		'generic' => {
-			H => {
-				H => q{H-H},
-			},
-			Hm => {
-				H => q{HH:mm-HH:mm},
-				m => q{HH:mm-HH:mm},
-			},
-			Hmv => {
-				H => q{H:mm-H:mm v},
-				m => q{H:mm-H:mm v},
-			},
-			Hv => {
-				H => q{H-H v},
-			},
-			M => {
-				M => q{M-M},
-			},
-			MEd => {
-				M => q{E d/M - E d/M},
-				d => q{E d - E d/M},
-			},
-			MMM => {
-				M => q{LLL-LLL},
-			},
-			MMMEd => {
-				M => q{E d MMM - E d MMM},
-				d => q{E d MMM - E d MMM},
-			},
-			MMMd => {
-				M => q{d MMM - d MMM},
-				d => q{d - d MMM},
-			},
-			Md => {
-				M => q{d/M - d/M},
-				d => q{d/M - d/M},
-			},
-			d => {
-				d => q{d-d},
-			},
-			fallback => '{0} - {1}',
-			h => {
-				a => q{h a - h a},
-				h => q{h-h a},
-			},
-			hm => {
-				a => q{h:mm a - h:mm a},
-				h => q{h:mm-h:mm a},
-				m => q{h:mm-h:mm a},
-			},
-			hmv => {
-				a => q{h:mm a - h:mm a v},
-				h => q{h:mm-h:mm a v},
-				m => q{h:mm-h:mm a v},
-			},
-			hv => {
-				a => q{h a - h a v},
-				h => q{h-h a v},
-			},
-			y => {
-				y => q{G y-y},
-			},
-			yM => {
-				M => q{M/y - M/y G},
-				y => q{M/y - M/y G},
-			},
-			yMEd => {
-				M => q{E d/M/y - E d/M/y G},
-				d => q{E d - E d/M/y G},
-				y => q{E d/M/y - E d/M/y G},
-			},
-			yMMM => {
-				M => q{MMM-MMM G y},
-				y => q{MMM y - MMM G y},
-			},
-			yMMMEd => {
-				M => q{E d MMM - E d MMM G y},
-				d => q{E d - E d MMM G y},
-				y => q{E d MMM y - E d MMM G y},
-			},
-			yMMMM => {
-				M => q{MMMM – MMMM G y},
-				y => q{MMMM y - MMMM G y},
-			},
-			yMMMd => {
-				M => q{d MMM - d MMM G y},
-				d => q{d-d MMM G y},
-				y => q{d MMM y - d MMM G y},
-			},
-			yMd => {
-				M => q{d/M/y - d/M/y G},
-				d => q{d-d/M/y G},
-				y => q{d/M/y - d/M/y G},
 			},
 		},
 	} },

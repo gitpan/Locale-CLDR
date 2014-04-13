@@ -1,6 +1,6 @@
-package Locale::CLDR::En::Any::Bs;
+package Locale::CLDR::En::Any::Bs v0.0.4;
 # This file auto generated from Data\common\main\en_BS.xml
-#	on Mon 31 Mar 12:12:14 am GMT
+#	on Sun 13 Apr 10:09:20 am GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use v5.18;
@@ -28,4 +28,21 @@ has 'units' => (
 			} }
 );
 
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'BSD' => {
+			symbol => '$',
+		},
+	} },
+);
 
+
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

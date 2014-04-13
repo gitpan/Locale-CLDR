@@ -1,6 +1,6 @@
-package Locale::CLDR::Ksf;
+package Locale::CLDR::Ksf v0.0.4;
 # This file auto generated from Data\common\main\ksf.xml
-#	on Mon 31 Mar  1:05:25 am GMT
+#	on Sun 13 Apr 11:05:12 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -425,277 +425,277 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(mɔni mǝ á bǝlɔŋ bǝ kaksa bɛ táatáaŋzǝn),
+				'currency' => q(mɔni mǝ á bǝlɔŋ bǝ kaksa bɛ táatáaŋzǝn),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(mɔni mǝ á angóla),
+				'currency' => q(mɔni mǝ á angóla),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(mɔni mǝ á ɔstralí),
+				'currency' => q(mɔni mǝ á ɔstralí),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(mɔni mǝ á barǝ́n),
+				'currency' => q(mɔni mǝ á barǝ́n),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(mɔni mǝ á burundí),
+				'currency' => q(mɔni mǝ á burundí),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(mɔni mǝ á botswana),
+				'currency' => q(mɔni mǝ á botswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(mɔni mǝ á kanada),
+				'currency' => q(mɔni mǝ á kanada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(mɔni mǝ á kɔngó),
+				'currency' => q(mɔni mǝ á kɔngó),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(mɔni mǝ á swís),
+				'currency' => q(mɔni mǝ á swís),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(mɔni mǝ á cín),
+				'currency' => q(mɔni mǝ á cín),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(mɔni mǝ á kapvɛr),
+				'currency' => q(mɔni mǝ á kapvɛr),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(mɔni mǝ á dyibutí),
+				'currency' => q(mɔni mǝ á dyibutí),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(mɔni mǝ á aljɛrí),
+				'currency' => q(mɔni mǝ á aljɛrí),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(mɔni mǝ á ɛjípt),
+				'currency' => q(mɔni mǝ á ɛjípt),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(mɔni mǝ á ɛritrɛ́),
+				'currency' => q(mɔni mǝ á ɛritrɛ́),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(mɔni mǝ á ɛtyɔpí),
+				'currency' => q(mɔni mǝ á ɛtyɔpí),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(mɔni mǝ á pɛrɛsǝ́),
+				'currency' => q(mɔni mǝ á pɛrɛsǝ́),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(mɔni mǝ á ingɛrís),
+				'currency' => q(mɔni mǝ á ingɛrís),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(mɔni mǝ á gána),
+				'currency' => q(mɔni mǝ á gána),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(mɔni mǝ á gambí),
+				'currency' => q(mɔni mǝ á gambí),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(mɔni mǝ á ginɛ́),
+				'currency' => q(mɔni mǝ á ginɛ́),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(mɔni mǝ á indí),
+				'currency' => q(mɔni mǝ á indí),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(mɔni mǝ á japɔ́ŋ),
+				'currency' => q(mɔni mǝ á japɔ́ŋ),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(mɔni mǝ á kɛnya),
+				'currency' => q(mɔni mǝ á kɛnya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(mɔni mǝ á komɔr),
+				'currency' => q(mɔni mǝ á komɔr),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(mɔni mǝ á libɛrya),
+				'currency' => q(mɔni mǝ á libɛrya),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(mɔni mǝ á lǝsóto),
+				'currency' => q(mɔni mǝ á lǝsóto),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(mɔni mǝ á libí),
+				'currency' => q(mɔni mǝ á libí),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(mɔni mǝ á marɔk),
+				'currency' => q(mɔni mǝ á marɔk),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(mɔni mǝ á madagaska),
+				'currency' => q(mɔni mǝ á madagaska),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(mɔni mǝ á mwaritaní),
+				'currency' => q(mɔni mǝ á mwaritaní),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(mɔni mǝ á mwarís),
+				'currency' => q(mɔni mǝ á mwarís),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(mɔni mǝ á malawi),
+				'currency' => q(mɔni mǝ á malawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(mɔni mǝ á mosambík),
+				'currency' => q(mɔni mǝ á mosambík),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(mɔni mǝ á namibí),
+				'currency' => q(mɔni mǝ á namibí),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(mɔni mǝ á nijɛ́rya),
+				'currency' => q(mɔni mǝ á nijɛ́rya),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(mɔni mǝ á rwanda),
+				'currency' => q(mɔni mǝ á rwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(mɔni mǝ á arabí saodí),
+				'currency' => q(mɔni mǝ á arabí saodí),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(mɔni mǝ á sɛcɛl),
+				'currency' => q(mɔni mǝ á sɛcɛl),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(mɔni mǝ á sudan),
+				'currency' => q(mɔni mǝ á sudan),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(mɔni mǝ á sɛntɛ́len),
+				'currency' => q(mɔni mǝ á sɛntɛ́len),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(mɔni mǝ á syɛraleon),
+				'currency' => q(mɔni mǝ á syɛraleon),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(mɔni mǝ á somalí),
+				'currency' => q(mɔni mǝ á somalí),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(mɔni mǝ á saotomɛ́ ri priŋsib),
+				'currency' => q(mɔni mǝ á saotomɛ́ ri priŋsib),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(mɔni mǝ á swazilan),
+				'currency' => q(mɔni mǝ á swazilan),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(mɔni mǝ á tunɛsí),
+				'currency' => q(mɔni mǝ á tunɛsí),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(mɔni mǝ á tanzaní),
+				'currency' => q(mɔni mǝ á tanzaní),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(mɔni mǝ á uganda),
+				'currency' => q(mɔni mǝ á uganda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(mɔni mǝ á amɛrika),
+				'currency' => q(mɔni mǝ á amɛrika),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'default' => q(fráŋ),
+				'currency' => q(fráŋ),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'default' => q(mɔni mǝ á afríka aná wɛs),
+				'currency' => q(mɔni mǝ á afríka aná wɛs),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(mɔni mǝ á afrik anǝ a sud),
+				'currency' => q(mɔni mǝ á afrik anǝ a sud),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(mɔni mǝ á zambí (1968–2012)),
+				'currency' => q(mɔni mǝ á zambí \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(mɔni mǝ á zambí),
+				'currency' => q(mɔni mǝ á zambí),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(mɔni mǝ á zimbabwɛ́),
+				'currency' => q(mɔni mǝ á zimbabwɛ́),
 			},
 		},
 	} },
@@ -971,3 +971,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

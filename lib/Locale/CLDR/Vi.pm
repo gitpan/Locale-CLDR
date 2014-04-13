@@ -1,6 +1,6 @@
-package Locale::CLDR::Vi;
+package Locale::CLDR::Vi v0.0.4;
 # This file auto generated from Data\common\main\vi.xml
-#	on Mon 31 Mar  2:23:24 am GMT
+#	on Sun 13 Apr 12:24:40 pm GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -1508,7 +1508,7 @@ has 'units' => (
 						'other' => q({0} ao-xơ),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'other' => q({0} picômét),
@@ -1651,7 +1651,7 @@ has 'units' => (
 						'other' => q({0}oz),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'other' => q({0}pm),
@@ -1794,7 +1794,7 @@ has 'units' => (
 						'other' => q({0} oz),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'other' => q({0} pm),
@@ -1832,7 +1832,6 @@ has 'units' => (
 				},
 			} }
 );
-
 
 has 'yesstr' => (
 	is			=> 'ro',
@@ -2047,1631 +2046,1631 @@ has 'curriencies' => (
 	default		=> sub { {
 		'ADP' => {
 			display_name => {
-				'default' => q(Đồng Peseta của Andora),
+				'currency' => q(Đồng Peseta của Andora),
 			},
 		},
 		'AED' => {
 			display_name => {
-				'default' => q(Dirham UAE),
+				'currency' => q(Dirham UAE),
 				'other' => q(dirham UAE),
 			},
 		},
 		'AFA' => {
 			display_name => {
-				'default' => q(Đồng Afghani của Afghanistan (1927–2002)),
+				'currency' => q(Đồng Afghani của Afghanistan \(1927–2002\)),
 			},
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(Afghani Afghanistan),
+				'currency' => q(Afghani Afghanistan),
 				'other' => q(afghani Afghanistan),
 			},
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(Lek Albania),
+				'currency' => q(Lek Albania),
 				'other' => q(lek Albania),
 			},
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(Dram Armenia),
+				'currency' => q(Dram Armenia),
 				'other' => q(dram Armenia),
 			},
 		},
 		'ANG' => {
 			display_name => {
-				'default' => q(Guilder Tây Ấn Hà Lan),
+				'currency' => q(Guilder Tây Ấn Hà Lan),
 				'other' => q(guilder Tây Ấn Hà Lan),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Kwanza Angola),
+				'currency' => q(Kwanza Angola),
 				'other' => q(kwanza Angola),
 			},
 		},
 		'AOK' => {
 			display_name => {
-				'default' => q(Đồng Kwanza của Angola (1977–1991)),
+				'currency' => q(Đồng Kwanza của Angola \(1977–1991\)),
 			},
 		},
 		'AON' => {
 			display_name => {
-				'default' => q(Đồng Kwanza Mới của Angola (1990–2000)),
+				'currency' => q(Đồng Kwanza Mới của Angola \(1990–2000\)),
 			},
 		},
 		'AOR' => {
 			display_name => {
-				'default' => q(Đồng Kwanza Điều chỉnh lại của Angola (1995–1999)),
+				'currency' => q(Đồng Kwanza Điều chỉnh lại của Angola \(1995–1999\)),
 			},
 		},
 		'ARA' => {
 			display_name => {
-				'default' => q(Đồng Austral của Argentina),
+				'currency' => q(Đồng Austral của Argentina),
 			},
 		},
 		'ARL' => {
 			display_name => {
-				'default' => q(Đồng Peso Ley của Argentina (1970–1983)),
+				'currency' => q(Đồng Peso Ley của Argentina \(1970–1983\)),
 			},
 		},
 		'ARM' => {
 			display_name => {
-				'default' => q(Đồng Peso Argentina (1881–1970)),
+				'currency' => q(Đồng Peso Argentina \(1881–1970\)),
 			},
 		},
 		'ARP' => {
 			display_name => {
-				'default' => q(Đồng Peso Argentina (1983–1985)),
+				'currency' => q(Đồng Peso Argentina \(1983–1985\)),
 			},
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(Peso Argentina),
+				'currency' => q(Peso Argentina),
 				'other' => q(peso Argentina),
 			},
 		},
 		'ATS' => {
 			display_name => {
-				'default' => q(Đồng Schiling Áo),
+				'currency' => q(Đồng Schiling Áo),
 			},
 		},
 		'AUD' => {
 			symbol => 'AU$',
 			display_name => {
-				'default' => q(Đô la Australia),
+				'currency' => q(Đô la Australia),
 				'other' => q(đô la Australia),
 			},
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(Florin Aruba),
+				'currency' => q(Florin Aruba),
 				'other' => q(florin Aruba),
 			},
 		},
 		'AZM' => {
 			display_name => {
-				'default' => q(Đồng Manat của Azerbaijan (1993–2006)),
+				'currency' => q(Đồng Manat của Azerbaijan \(1993–2006\)),
 			},
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(Manat Azerbaijan),
+				'currency' => q(Manat Azerbaijan),
 				'other' => q(manat Azerbaijan),
 			},
 		},
 		'BAD' => {
 			display_name => {
-				'default' => q(Đồng Dinar của Bosnia-Herzegovina (1992–1994)),
+				'currency' => q(Đồng Dinar của Bosnia-Herzegovina \(1992–1994\)),
 			},
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(Mark Bosnia-Herzegovina có thể chuyển đổi),
+				'currency' => q(Mark Bosnia-Herzegovina có thể chuyển đổi),
 				'other' => q(mark Bosnia-Herzegovina có thể chuyển đổi),
 			},
 		},
 		'BAN' => {
 			display_name => {
-				'default' => q(Đồng Dinar Mới của Bosnia-Herzegovina (1994–1997)),
+				'currency' => q(Đồng Dinar Mới của Bosnia-Herzegovina \(1994–1997\)),
 			},
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(Đô la Barbados),
+				'currency' => q(Đô la Barbados),
 				'other' => q(đô la Barbados),
 			},
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(Taka Bangladesh),
+				'currency' => q(Taka Bangladesh),
 				'other' => q(taka Bangladesh),
 			},
 		},
 		'BEC' => {
 			display_name => {
-				'default' => q(Đồng Franc Bỉ (có thể chuyển đổi)),
+				'currency' => q(Đồng Franc Bỉ \(có thể chuyển đổi\)),
 			},
 		},
 		'BEF' => {
 			display_name => {
-				'default' => q(Đồng Franc Bỉ),
+				'currency' => q(Đồng Franc Bỉ),
 			},
 		},
 		'BEL' => {
 			display_name => {
-				'default' => q(Đồng Franc Bỉ (tài chính)),
+				'currency' => q(Đồng Franc Bỉ \(tài chính\)),
 			},
 		},
 		'BGL' => {
 			display_name => {
-				'default' => q(Đồng Lev Xu của Bun-ga-ri),
+				'currency' => q(Đồng Lev Xu của Bun-ga-ri),
 			},
 		},
 		'BGM' => {
 			display_name => {
-				'default' => q(Đồng Lev Xã hội chủ nghĩa của Bun-ga-ri),
+				'currency' => q(Đồng Lev Xã hội chủ nghĩa của Bun-ga-ri),
 			},
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(Lev Bulgaria),
+				'currency' => q(Lev Bulgaria),
 				'other' => q(lev Bulgaria),
 			},
 		},
 		'BGO' => {
 			display_name => {
-				'default' => q(Đồng Lev của Bun-ga-ri (1879–1952)),
+				'currency' => q(Đồng Lev của Bun-ga-ri \(1879–1952\)),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Dinar Bahrain),
+				'currency' => q(Dinar Bahrain),
 				'other' => q(dinar Bahrain),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Franc Burundi),
+				'currency' => q(Franc Burundi),
 				'other' => q(franc Burundi),
 			},
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(Đô la Bermuda),
+				'currency' => q(Đô la Bermuda),
 				'other' => q(đô la Bermuda),
 			},
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(Đô la Brunei),
+				'currency' => q(Đô la Brunei),
 				'other' => q(đô la Brunei),
 			},
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(Boliviano Bolivia),
+				'currency' => q(Boliviano Bolivia),
 				'other' => q(boliviano Bolivia),
 			},
 		},
 		'BOL' => {
 			display_name => {
-				'default' => q(Đồng Boliviano của Bolivia (1863–1963)),
+				'currency' => q(Đồng Boliviano của Bolivia \(1863–1963\)),
 			},
 		},
 		'BOP' => {
 			display_name => {
-				'default' => q(Đồng Peso Bolivia),
+				'currency' => q(Đồng Peso Bolivia),
 			},
 		},
 		'BOV' => {
 			display_name => {
-				'default' => q(Đồng Mvdol Bolivia),
+				'currency' => q(Đồng Mvdol Bolivia),
 			},
 		},
 		'BRB' => {
 			display_name => {
-				'default' => q(Đồng Cruzerio Mới của Braxin (1967–1986)),
+				'currency' => q(Đồng Cruzerio Mới của Braxin \(1967–1986\)),
 			},
 		},
 		'BRC' => {
 			display_name => {
-				'default' => q(Đồng Cruzado của Braxin (1986–1989)),
+				'currency' => q(Đồng Cruzado của Braxin \(1986–1989\)),
 			},
 		},
 		'BRE' => {
 			display_name => {
-				'default' => q(Đồng Cruzerio của Braxin (1990–1993)),
+				'currency' => q(Đồng Cruzerio của Braxin \(1990–1993\)),
 			},
 		},
 		'BRL' => {
 			symbol => 'R$',
 			display_name => {
-				'default' => q(Real Braxin),
+				'currency' => q(Real Braxin),
 				'other' => q(real Braxin),
 			},
 		},
 		'BRN' => {
 			display_name => {
-				'default' => q(Đồng Cruzado Mới của Braxin (1989–1990)),
+				'currency' => q(Đồng Cruzado Mới của Braxin \(1989–1990\)),
 			},
 		},
 		'BRR' => {
 			display_name => {
-				'default' => q(Đồng Cruzeiro của Braxin (1993–1994)),
+				'currency' => q(Đồng Cruzeiro của Braxin \(1993–1994\)),
 			},
 		},
 		'BRZ' => {
 			display_name => {
-				'default' => q(Đồng Cruzeiro của Braxin (1942–1967)),
+				'currency' => q(Đồng Cruzeiro của Braxin \(1942–1967\)),
 			},
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(Đô la Bahamas),
+				'currency' => q(Đô la Bahamas),
 				'other' => q(đô la Bahamas),
 			},
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(Ngultrum Bhutan),
+				'currency' => q(Ngultrum Bhutan),
 				'other' => q(ngultrum Bhutan),
 			},
 		},
 		'BUK' => {
 			display_name => {
-				'default' => q(Đồng Kyat Miến Điện),
+				'currency' => q(Đồng Kyat Miến Điện),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Pula Botswana),
+				'currency' => q(Pula Botswana),
 				'other' => q(pula Botswana),
 			},
 		},
 		'BYB' => {
 			display_name => {
-				'default' => q(Đồng Rúp Mới của Belarus (1994–1999)),
+				'currency' => q(Đồng Rúp Mới của Belarus \(1994–1999\)),
 			},
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(Rúp Belarus),
+				'currency' => q(Rúp Belarus),
 				'other' => q(rúp Belarus),
 			},
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(Đô la Belize),
+				'currency' => q(Đô la Belize),
 				'other' => q(đô la Belize),
 			},
 		},
 		'CAD' => {
 			symbol => 'CA$',
 			display_name => {
-				'default' => q(Đô la Canada),
+				'currency' => q(Đô la Canada),
 				'other' => q(đô la Canada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(Franc Congo),
+				'currency' => q(Franc Congo),
 				'other' => q(franc Congo),
 			},
 		},
 		'CHE' => {
 			display_name => {
-				'default' => q(Đồng Euro WIR),
+				'currency' => q(Đồng Euro WIR),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Franc Thụy sĩ),
+				'currency' => q(Franc Thụy sĩ),
 				'other' => q(franc Thụy sĩ),
 			},
 		},
 		'CHW' => {
 			display_name => {
-				'default' => q(Đồng France WIR),
+				'currency' => q(Đồng France WIR),
 			},
 		},
 		'CLE' => {
 			display_name => {
-				'default' => q(Đồng Escudo của Chile),
+				'currency' => q(Đồng Escudo của Chile),
 			},
 		},
 		'CLF' => {
 			display_name => {
-				'default' => q(Đơn vị Kế toán của Chile (UF)),
+				'currency' => q(Đơn vị Kế toán của Chile \(UF\)),
 			},
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(Peso Chile),
+				'currency' => q(Peso Chile),
 				'other' => q(peso Chile),
 			},
 		},
 		'CNY' => {
 			symbol => 'CN¥',
 			display_name => {
-				'default' => q(Nhân dân tệ),
+				'currency' => q(Nhân dân tệ),
 				'other' => q(nhân dân tệ),
 			},
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(Peso Colombia),
+				'currency' => q(Peso Colombia),
 				'other' => q(peso Colombia),
 			},
 		},
 		'COU' => {
 			display_name => {
-				'default' => q(Đơn vị Giá trị Thực của Colombia),
+				'currency' => q(Đơn vị Giá trị Thực của Colombia),
 			},
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(Colón Costa Rica),
+				'currency' => q(Colón Costa Rica),
 				'other' => q(colón Costa Rica),
 			},
 		},
 		'CSD' => {
 			display_name => {
-				'default' => q(Đồng Dinar của Serbia (2002–2006)),
+				'currency' => q(Đồng Dinar của Serbia \(2002–2006\)),
 			},
 		},
 		'CSK' => {
 			display_name => {
-				'default' => q(Đồng Koruna Xu của Czechoslovakia),
+				'currency' => q(Đồng Koruna Xu của Czechoslovakia),
 			},
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(Peso Cuba có thể chuyển đổi),
+				'currency' => q(Peso Cuba có thể chuyển đổi),
 				'other' => q(peso Cuba có thể chuyển đổi),
 			},
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(Peso Cuba),
+				'currency' => q(Peso Cuba),
 				'other' => q(peso Cuba),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Escudo Cape Verde),
+				'currency' => q(Escudo Cape Verde),
 				'other' => q(escudo Cape Verde),
 			},
 		},
 		'CYP' => {
 			display_name => {
-				'default' => q(Đồng Bảng Síp),
+				'currency' => q(Đồng Bảng Síp),
 			},
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(Koruna Cộng hòa Séc),
+				'currency' => q(Koruna Cộng hòa Séc),
 				'other' => q(koruna Cộng hòa Séc),
 			},
 		},
 		'DDM' => {
 			display_name => {
-				'default' => q(Đồng Mark Đông Đức),
+				'currency' => q(Đồng Mark Đông Đức),
 			},
 		},
 		'DEM' => {
 			display_name => {
-				'default' => q(Đồng Mark Đức),
+				'currency' => q(Đồng Mark Đức),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Franc Djibouti),
+				'currency' => q(Franc Djibouti),
 				'other' => q(franc Djibouti),
 			},
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(Krone Đan Mạch),
+				'currency' => q(Krone Đan Mạch),
 				'other' => q(krone Đan Mạch),
 			},
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(Peso Dominica),
+				'currency' => q(Peso Dominica),
 				'other' => q(peso Dominica),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Dinar Algeria),
+				'currency' => q(Dinar Algeria),
 				'other' => q(dinar Algeria),
 			},
 		},
 		'ECS' => {
 			display_name => {
-				'default' => q(Đồng Scure Ecuador),
+				'currency' => q(Đồng Scure Ecuador),
 			},
 		},
 		'ECV' => {
 			display_name => {
-				'default' => q(Đơn vị Giá trị Không đổi của Ecuador),
+				'currency' => q(Đơn vị Giá trị Không đổi của Ecuador),
 			},
 		},
 		'EEK' => {
 			display_name => {
-				'default' => q(Crun Extônia),
+				'currency' => q(Crun Extônia),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Bảng Ai Cập),
+				'currency' => q(Bảng Ai Cập),
 				'other' => q(bảng Ai Cập),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Nakfa Eritrea),
+				'currency' => q(Nakfa Eritrea),
 				'other' => q(nakfa Eritrea),
 			},
 		},
 		'ESA' => {
 			display_name => {
-				'default' => q(Đồng Peseta Tây Ban Nha (Tài khoản)),
+				'currency' => q(Đồng Peseta Tây Ban Nha \(Tài khoản\)),
 			},
 		},
 		'ESB' => {
 			display_name => {
-				'default' => q(Đồng Peseta Tây Ban Nha (tài khoản có thể chuyển đổi)),
+				'currency' => q(Đồng Peseta Tây Ban Nha \(tài khoản có thể chuyển đổi\)),
 			},
 		},
 		'ESP' => {
 			display_name => {
-				'default' => q(Đồng Peseta Tây Ban Nha),
+				'currency' => q(Đồng Peseta Tây Ban Nha),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Birr Ethiopia),
+				'currency' => q(Birr Ethiopia),
 				'other' => q(birr Ethiopia),
 			},
 		},
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(Euro),
+				'currency' => q(Euro),
 				'other' => q(euro),
 			},
 		},
 		'FIM' => {
 			display_name => {
-				'default' => q(Đồng Markka Phần Lan),
+				'currency' => q(Đồng Markka Phần Lan),
 			},
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(Đô la Fiji),
+				'currency' => q(Đô la Fiji),
 				'other' => q(đô la Fiji),
 			},
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(Bảng Quần đảo Falkland),
+				'currency' => q(Bảng Quần đảo Falkland),
 				'other' => q(bảng Quần đảo Falkland),
 			},
 		},
 		'FRF' => {
 			display_name => {
-				'default' => q(Franc Pháp),
+				'currency' => q(Franc Pháp),
 			},
 		},
 		'GBP' => {
 			symbol => '£',
 			display_name => {
-				'default' => q(Bảng Anh),
+				'currency' => q(Bảng Anh),
 				'other' => q(bảng Anh),
 			},
 		},
 		'GEK' => {
 			display_name => {
-				'default' => q(Đồng Kupon Larit của Georgia),
+				'currency' => q(Đồng Kupon Larit của Georgia),
 			},
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(Lari Gruzia),
+				'currency' => q(Lari Gruzia),
 				'other' => q(lari Gruzia),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(Cedi Ghana (1979–2007)),
+				'currency' => q(Cedi Ghana \(1979–2007\)),
 			},
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(Cedi Ghana),
+				'currency' => q(Cedi Ghana),
 				'other' => q(cedi Ghana),
 			},
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(Bảng Gibraltar),
+				'currency' => q(Bảng Gibraltar),
 				'other' => q(bảng Gibraltar),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Dalasi Gambia),
+				'currency' => q(Dalasi Gambia),
 				'other' => q(dalasi Gambia),
 			},
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(Franc Guinea),
+				'currency' => q(Franc Guinea),
 				'other' => q(franc Guinea),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(Syli Guinea),
+				'currency' => q(Syli Guinea),
 			},
 		},
 		'GQE' => {
 			display_name => {
-				'default' => q(Đồng Ekwele của Guinea Xích Đạo),
+				'currency' => q(Đồng Ekwele của Guinea Xích Đạo),
 			},
 		},
 		'GRD' => {
 			display_name => {
-				'default' => q(Drachma Hy Lạp),
+				'currency' => q(Drachma Hy Lạp),
 			},
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(Quetzal Guatemala),
+				'currency' => q(Quetzal Guatemala),
 				'other' => q(quetzal Guatemala),
 			},
 		},
 		'GWE' => {
 			display_name => {
-				'default' => q(Đồng Guinea Escudo Bồ Đào Nha),
+				'currency' => q(Đồng Guinea Escudo Bồ Đào Nha),
 			},
 		},
 		'GWP' => {
 			display_name => {
-				'default' => q(Peso Guinea-Bissau),
+				'currency' => q(Peso Guinea-Bissau),
 			},
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(Đô la Guyana),
+				'currency' => q(Đô la Guyana),
 				'other' => q(đô la Guyana),
 			},
 		},
 		'HKD' => {
 			symbol => 'HK$',
 			display_name => {
-				'default' => q(Đô la Hồng Kông),
+				'currency' => q(Đô la Hồng Kông),
 				'other' => q(đô la Hồng Kông),
 			},
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(Lempira Honduras),
+				'currency' => q(Lempira Honduras),
 				'other' => q(lempira Honduras),
 			},
 		},
 		'HRD' => {
 			display_name => {
-				'default' => q(Đồng Dinar Croatia),
+				'currency' => q(Đồng Dinar Croatia),
 			},
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(Kuna Croatia),
+				'currency' => q(Kuna Croatia),
 				'other' => q(kuna Croatia),
 			},
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(Gourde Haiti),
+				'currency' => q(Gourde Haiti),
 				'other' => q(gourde Haiti),
 			},
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(Forint Hungaria),
+				'currency' => q(Forint Hungaria),
 				'other' => q(forint Hungaria),
 			},
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(Rupiah Indonesia),
+				'currency' => q(Rupiah Indonesia),
 				'other' => q(rupiah Indonesia),
 			},
 		},
 		'IEP' => {
 			display_name => {
-				'default' => q(Pao Ai-len),
+				'currency' => q(Pao Ai-len),
 			},
 		},
 		'ILP' => {
 			display_name => {
-				'default' => q(Pao Ixraen),
+				'currency' => q(Pao Ixraen),
 			},
 		},
 		'ILS' => {
 			symbol => '₪',
 			display_name => {
-				'default' => q(Sheqel Israel mới),
+				'currency' => q(Sheqel Israel mới),
 				'other' => q(sheqel Israel mới),
 			},
 		},
 		'INR' => {
 			symbol => '₹',
 			display_name => {
-				'default' => q(Rupee Ấn Độ),
+				'currency' => q(Rupee Ấn Độ),
 				'other' => q(rupee Ấn Độ),
 			},
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(Dinar I-rắc),
+				'currency' => q(Dinar I-rắc),
 				'other' => q(dinar I-rắc),
 			},
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(Rial Iran),
+				'currency' => q(Rial Iran),
 				'other' => q(rial Iran),
 			},
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(Króna Iceland),
+				'currency' => q(Króna Iceland),
 				'other' => q(króna Iceland),
 			},
 		},
 		'ITL' => {
 			display_name => {
-				'default' => q(Lia Ý),
+				'currency' => q(Lia Ý),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(Đô la Jamaica),
+				'currency' => q(Đô la Jamaica),
 				'other' => q(đô la Jamaica),
 			},
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(Dinar Jordan),
+				'currency' => q(Dinar Jordan),
 				'other' => q(dinar Jordan),
 			},
 		},
 		'JPY' => {
 			symbol => 'JP¥',
 			display_name => {
-				'default' => q(Yên Nhật),
+				'currency' => q(Yên Nhật),
 				'other' => q(yên Nhật),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Shilling Kenya),
+				'currency' => q(Shilling Kenya),
 				'other' => q(shilling Kenya),
 			},
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(Som Kyrgyzstan),
+				'currency' => q(Som Kyrgyzstan),
 				'other' => q(som Kyrgyzstan),
 			},
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(Riel Campuchia),
+				'currency' => q(Riel Campuchia),
 				'other' => q(riel Campuchia),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Franc Comoros),
+				'currency' => q(Franc Comoros),
 				'other' => q(franc Comoros),
 			},
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(Won Triều Tiên),
+				'currency' => q(Won Triều Tiên),
 				'other' => q(won Triều Tiên),
 			},
 		},
 		'KRH' => {
 			display_name => {
-				'default' => q(Đồng Hwan Hàn Quốc (1953–1962)),
+				'currency' => q(Đồng Hwan Hàn Quốc \(1953–1962\)),
 			},
 		},
 		'KRO' => {
 			display_name => {
-				'default' => q(Đồng Won Hàn Quốc (1945–1953)),
+				'currency' => q(Đồng Won Hàn Quốc \(1945–1953\)),
 			},
 		},
 		'KRW' => {
 			symbol => '₩',
 			display_name => {
-				'default' => q(Won Hàn Quốc),
+				'currency' => q(Won Hàn Quốc),
 				'other' => q(won Hàn Quốc),
 			},
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(Dinar Kuwait),
+				'currency' => q(Dinar Kuwait),
 				'other' => q(dinar Kuwait),
 			},
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(Đô la Quần đảo Cayman),
+				'currency' => q(Đô la Quần đảo Cayman),
 				'other' => q(đô la Quần đảo Cayman),
 			},
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(Tenge Kazakhstan),
+				'currency' => q(Tenge Kazakhstan),
 				'other' => q(tenge Kazakhstan),
 			},
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(Kip Lào),
+				'currency' => q(Kip Lào),
 				'other' => q(kip Lào),
 			},
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(Bảng Li-băng),
+				'currency' => q(Bảng Li-băng),
 				'other' => q(bảng Li-băng),
 			},
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(Rupee Sri Lanka),
+				'currency' => q(Rupee Sri Lanka),
 				'other' => q(rupee Sri Lanka),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Đô la Liberia),
+				'currency' => q(Đô la Liberia),
 				'other' => q(đô la Liberia),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Đồng loti của Lesotho),
+				'currency' => q(Đồng loti của Lesotho),
 			},
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(Litas Lít-va),
+				'currency' => q(Litas Lít-va),
 				'other' => q(litas Lít-va),
 			},
 		},
 		'LTT' => {
 			display_name => {
-				'default' => q(Đồng Talonas Litva),
+				'currency' => q(Đồng Talonas Litva),
 			},
 		},
 		'LUC' => {
 			display_name => {
-				'default' => q(Đồng Franc Luxembourg có thể chuyển đổi),
+				'currency' => q(Đồng Franc Luxembourg có thể chuyển đổi),
 			},
 		},
 		'LUF' => {
 			display_name => {
-				'default' => q(Đồng Franc Luxembourg),
+				'currency' => q(Đồng Franc Luxembourg),
 			},
 		},
 		'LUL' => {
 			display_name => {
-				'default' => q(Đồng Franc Luxembourg tài chính),
+				'currency' => q(Đồng Franc Luxembourg tài chính),
 			},
 		},
 		'LVL' => {
 			display_name => {
-				'default' => q(Lats Lít-va),
+				'currency' => q(Lats Lít-va),
 				'other' => q(lats Lít-va),
 			},
 		},
 		'LVR' => {
 			display_name => {
-				'default' => q(Đồng Rúp Latvia),
+				'currency' => q(Đồng Rúp Latvia),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Dinar Libi),
+				'currency' => q(Dinar Libi),
 				'other' => q(dinar Libi),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Dirham Ma-rốc),
+				'currency' => q(Dirham Ma-rốc),
 				'other' => q(dirham Ma-rốc),
 			},
 		},
 		'MAF' => {
 			display_name => {
-				'default' => q(Đồng Franc Ma-rốc),
+				'currency' => q(Đồng Franc Ma-rốc),
 			},
 		},
 		'MCF' => {
 			display_name => {
-				'default' => q(Đồng Franc Monegasque),
+				'currency' => q(Đồng Franc Monegasque),
 			},
 		},
 		'MDC' => {
 			display_name => {
-				'default' => q(Đồng Cupon Moldova),
+				'currency' => q(Đồng Cupon Moldova),
 			},
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(Leu Moldova),
+				'currency' => q(Leu Moldova),
 				'other' => q(leu Moldova),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Ariary Malagasy),
+				'currency' => q(Ariary Malagasy),
 				'other' => q(ariary Malagasy),
 			},
 		},
 		'MGF' => {
 			display_name => {
-				'default' => q(Đồng Franc Magalasy),
+				'currency' => q(Đồng Franc Magalasy),
 			},
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(Denar Macedonia),
+				'currency' => q(Denar Macedonia),
 				'other' => q(denar Macedonia),
 			},
 		},
 		'MKN' => {
 			display_name => {
-				'default' => q(Đồng Denar Macedonia (1992–1993)),
+				'currency' => q(Đồng Denar Macedonia \(1992–1993\)),
 			},
 		},
 		'MLF' => {
 			display_name => {
-				'default' => q(Đồng Franc Mali),
+				'currency' => q(Đồng Franc Mali),
 			},
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(Kyat Myanma),
+				'currency' => q(Kyat Myanma),
 				'other' => q(kyat Myanma),
 			},
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(Tugrik Mông Cổ),
+				'currency' => q(Tugrik Mông Cổ),
 				'other' => q(tugrik Mông Cổ),
 			},
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(Pataca Ma Cao),
+				'currency' => q(Pataca Ma Cao),
 				'other' => q(pataca Ma Cao),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Ouguiya Mauritania),
+				'currency' => q(Ouguiya Mauritania),
 				'other' => q(ouguiya Mauritania),
 			},
 		},
 		'MTL' => {
 			display_name => {
-				'default' => q(Lia xứ Man-tơ),
+				'currency' => q(Lia xứ Man-tơ),
 			},
 		},
 		'MTP' => {
 			display_name => {
-				'default' => q(Đồng Bảng Malta),
+				'currency' => q(Đồng Bảng Malta),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Rupee Mauritius),
+				'currency' => q(Rupee Mauritius),
 				'other' => q(rupee Mauritius),
 			},
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(Rufiyaa Maldives),
+				'currency' => q(Rufiyaa Maldives),
 				'other' => q(rufiyaa Maldives),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Kwacha Malawi),
+				'currency' => q(Kwacha Malawi),
 				'other' => q(kwacha Malawi),
 			},
 		},
 		'MXN' => {
 			symbol => 'MX$',
 			display_name => {
-				'default' => q(Peso Mexico),
+				'currency' => q(Peso Mexico),
 				'other' => q(peso Mexico),
 			},
 		},
 		'MXP' => {
 			display_name => {
-				'default' => q(Đồng Peso Bạc Mê-hi-cô (1861–1992)),
+				'currency' => q(Đồng Peso Bạc Mê-hi-cô \(1861–1992\)),
 			},
 		},
 		'MXV' => {
 			display_name => {
-				'default' => q(Đơn vị Đầu tư Mê-hi-cô),
+				'currency' => q(Đơn vị Đầu tư Mê-hi-cô),
 			},
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(Ringgit Malaysia),
+				'currency' => q(Ringgit Malaysia),
 				'other' => q(ringgit Malaysia),
 			},
 		},
 		'MZE' => {
 			display_name => {
-				'default' => q(Đồng Escudo Mozambique),
+				'currency' => q(Đồng Escudo Mozambique),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Đồng Metical Mozambique (1980–2006)),
+				'currency' => q(Đồng Metical Mozambique \(1980–2006\)),
 			},
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(Metical Mozambique),
+				'currency' => q(Metical Mozambique),
 				'other' => q(metical Mozambique),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Đô la Namibia),
+				'currency' => q(Đô la Namibia),
 				'other' => q(đô la Namibia),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Naira Nigeria),
+				'currency' => q(Naira Nigeria),
 				'other' => q(naira Nigeria),
 			},
 		},
 		'NIC' => {
 			display_name => {
-				'default' => q(Đồng Córdoba Nicaragua (1988–1991)),
+				'currency' => q(Đồng Córdoba Nicaragua \(1988–1991\)),
 			},
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(Córdoba Nicaragua),
+				'currency' => q(Córdoba Nicaragua),
 				'other' => q(córdoba Nicaragua),
 			},
 		},
 		'NLG' => {
 			display_name => {
-				'default' => q(Đồng Guilder Hà Lan),
+				'currency' => q(Đồng Guilder Hà Lan),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(Krone Na Uy),
+				'currency' => q(Krone Na Uy),
 				'other' => q(krone Na Uy),
 			},
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(Rupee Nepal),
+				'currency' => q(Rupee Nepal),
 				'other' => q(rupee Nepal),
 			},
 		},
 		'NZD' => {
 			symbol => 'NZ$',
 			display_name => {
-				'default' => q(Đô la New Zealand),
+				'currency' => q(Đô la New Zealand),
 				'other' => q(đô la New Zealand),
 			},
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(Rial Oman),
+				'currency' => q(Rial Oman),
 				'other' => q(rial Oman),
 			},
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(Balboa Panama),
+				'currency' => q(Balboa Panama),
 				'other' => q(balboa Panama),
 			},
 		},
 		'PEI' => {
 			display_name => {
-				'default' => q(Đồng Inti Peru),
+				'currency' => q(Đồng Inti Peru),
 			},
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(Nuevo Sol Peru),
+				'currency' => q(Nuevo Sol Peru),
 				'other' => q(nuevo sol Peru),
 			},
 		},
 		'PES' => {
 			display_name => {
-				'default' => q(Đồng Sol Peru (1863–1965)),
+				'currency' => q(Đồng Sol Peru \(1863–1965\)),
 			},
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(Kina Papua New Guinean),
+				'currency' => q(Kina Papua New Guinean),
 				'other' => q(kina Papua New Guinean),
 			},
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(Peso Philipin),
+				'currency' => q(Peso Philipin),
 				'other' => q(peso Philipin),
 			},
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(Rupee Pakistan),
+				'currency' => q(Rupee Pakistan),
 				'other' => q(rupee Pakistan),
 			},
 		},
 		'PLN' => {
 			display_name => {
-				'default' => q(Zloty Ba Lan),
+				'currency' => q(Zloty Ba Lan),
 				'other' => q(Zloty Ba Lan),
 			},
 		},
 		'PLZ' => {
 			display_name => {
-				'default' => q(Đồng Zloty Ba Lan (1950–1995)),
+				'currency' => q(Đồng Zloty Ba Lan \(1950–1995\)),
 			},
 		},
 		'PTE' => {
 			display_name => {
-				'default' => q(Đồng Escudo Bồ Đào Nha),
+				'currency' => q(Đồng Escudo Bồ Đào Nha),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(Guarani Paraguay),
+				'currency' => q(Guarani Paraguay),
 				'other' => q(guarani Paraguay),
 			},
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(Rial Qatar),
+				'currency' => q(Rial Qatar),
 				'other' => q(rial Qatar),
 			},
 		},
 		'RHD' => {
 			display_name => {
-				'default' => q(Đồng Đô la Rhode),
+				'currency' => q(Đồng Đô la Rhode),
 			},
 		},
 		'ROL' => {
 			display_name => {
-				'default' => q(Đồng Leu Rumani (1952–2006)),
+				'currency' => q(Đồng Leu Rumani \(1952–2006\)),
 			},
 		},
 		'RON' => {
 			display_name => {
-				'default' => q(Leu Romania),
+				'currency' => q(Leu Romania),
 				'other' => q(leu Romania),
 			},
 		},
 		'RSD' => {
 			display_name => {
-				'default' => q(Dinar Serbia),
+				'currency' => q(Dinar Serbia),
 				'other' => q(dinar Serbia),
 			},
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(Rúp Nga),
+				'currency' => q(Rúp Nga),
 				'other' => q(Rúp Nga),
 			},
 		},
 		'RUR' => {
 			display_name => {
-				'default' => q(Đồng Rúp Nga (1991–1998)),
+				'currency' => q(Đồng Rúp Nga \(1991–1998\)),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Franc Rwanda),
+				'currency' => q(Franc Rwanda),
 				'other' => q(franc Rwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Riyal Ả Rập Xê-út),
+				'currency' => q(Riyal Ả Rập Xê-út),
 				'other' => q(riyal Ả Rập Xê-út),
 			},
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(Đô la quần đảo Solomon),
+				'currency' => q(Đô la quần đảo Solomon),
 				'other' => q(đô la quần đảo Solomon),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Rupee Seychelles),
+				'currency' => q(Rupee Seychelles),
 				'other' => q(rupee Seychelles),
 			},
 		},
 		'SDD' => {
 			display_name => {
-				'default' => q(Đồng Dinar Sudan (1992–2007)),
+				'currency' => q(Đồng Dinar Sudan \(1992–2007\)),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Bảng Sudan),
+				'currency' => q(Bảng Sudan),
 				'other' => q(bảng Sudan),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'default' => q(Đồng Bảng Sudan (1957–1998)),
+				'currency' => q(Đồng Bảng Sudan \(1957–1998\)),
 			},
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(Krona Thụy Điển),
+				'currency' => q(Krona Thụy Điển),
 				'other' => q(krona Thụy Điển),
 			},
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(Đô la Singapore),
+				'currency' => q(Đô la Singapore),
 				'other' => q(đô la Singapore),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Bảng Saint Helena),
+				'currency' => q(Bảng Saint Helena),
 				'other' => q(bảng Saint Helena),
 			},
 		},
 		'SIT' => {
 			display_name => {
-				'default' => q(Tôla Xlôvênia),
+				'currency' => q(Tôla Xlôvênia),
 			},
 		},
 		'SKK' => {
 			display_name => {
-				'default' => q(Cuaron Xlôvác),
+				'currency' => q(Cuaron Xlôvác),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Leone Sierra Leone),
+				'currency' => q(Leone Sierra Leone),
 				'other' => q(leone Sierra Leone),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Schilling Somali),
+				'currency' => q(Schilling Somali),
 				'other' => q(schilling Somali),
 			},
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(Đô la Suriname),
+				'currency' => q(Đô la Suriname),
 				'other' => q(đô la Suriname),
 			},
 		},
 		'SRG' => {
 			display_name => {
-				'default' => q(Đồng Guilder Surinam),
+				'currency' => q(Đồng Guilder Surinam),
 			},
 		},
 		'SSP' => {
 			display_name => {
-				'default' => q(Bảng Nam Sudan),
+				'currency' => q(Bảng Nam Sudan),
 				'other' => q(bảng Nam Sudan),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Dobra São Tomé và Príncipe),
+				'currency' => q(Dobra São Tomé và Príncipe),
 				'other' => q(dobra São Tomé và Príncipe),
 			},
 		},
 		'SUR' => {
 			display_name => {
-				'default' => q(Đồng Rúp Sô viết),
+				'currency' => q(Đồng Rúp Sô viết),
 			},
 		},
 		'SVC' => {
 			display_name => {
-				'default' => q(Đồng Colón Salvador),
+				'currency' => q(Đồng Colón Salvador),
 			},
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(Bảng Syria),
+				'currency' => q(Bảng Syria),
 				'other' => q(bảng Syria),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Lilangeni Swaziland),
+				'currency' => q(Lilangeni Swaziland),
 				'other' => q(emalangeni Swaziland),
 			},
 		},
 		'THB' => {
 			symbol => '฿',
 			display_name => {
-				'default' => q(Bạt Thái Lan),
+				'currency' => q(Bạt Thái Lan),
 				'other' => q(bạt Thái Lan),
 			},
 		},
 		'TJR' => {
 			display_name => {
-				'default' => q(Đồng Rúp Tajikistan),
+				'currency' => q(Đồng Rúp Tajikistan),
 			},
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(Somoni Tajikistan),
+				'currency' => q(Somoni Tajikistan),
 				'other' => q(somoni Tajikistan),
 			},
 		},
 		'TMM' => {
 			display_name => {
-				'default' => q(Đồng Manat Turkmenistan (1993–2009)),
+				'currency' => q(Đồng Manat Turkmenistan \(1993–2009\)),
 			},
 		},
 		'TMT' => {
 			display_name => {
-				'default' => q(Manat Turkmenistan),
+				'currency' => q(Manat Turkmenistan),
 				'other' => q(manat Turkmenistan),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Dinar Tunisia),
+				'currency' => q(Dinar Tunisia),
 				'other' => q(dinar Tunisia),
 			},
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(Paʻanga Tonga),
+				'currency' => q(Paʻanga Tonga),
 				'other' => q(paʻanga Tonga),
 			},
 		},
 		'TPE' => {
 			display_name => {
-				'default' => q(Đồng Escudo Timor),
+				'currency' => q(Đồng Escudo Timor),
 			},
 		},
 		'TRL' => {
 			display_name => {
-				'default' => q(Lia Thổ Nhĩ Kỳ (1922–2005)),
-				'other' => q(lia Thổ Nhĩ Kỳ (1922–2005)),
+				'currency' => q(Lia Thổ Nhĩ Kỳ \(1922–2005\)),
+				'other' => q(lia Thổ Nhĩ Kỳ \(1922–2005\)),
 			},
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(Lia Thổ Nhĩ Kỳ),
+				'currency' => q(Lia Thổ Nhĩ Kỳ),
 				'other' => q(lia Thổ Nhĩ Kỳ),
 			},
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(Đô la Trinidad và Tobago),
+				'currency' => q(Đô la Trinidad và Tobago),
 				'other' => q(đô la Trinidad và Tobago),
 			},
 		},
 		'TWD' => {
 			symbol => 'NT$',
 			display_name => {
-				'default' => q(Đô la Đài Loan mới),
+				'currency' => q(Đô la Đài Loan mới),
 				'other' => q(đô la Đài Loan mới),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Shilling Tanzania),
+				'currency' => q(Shilling Tanzania),
 				'other' => q(shilling Tanzania),
 			},
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(Hryvnia Ucraina),
+				'currency' => q(Hryvnia Ucraina),
 				'other' => q(hryvnia Ucraina),
 			},
 		},
 		'UAK' => {
 			display_name => {
-				'default' => q(Đồng Karbovanets Ucraina),
+				'currency' => q(Đồng Karbovanets Ucraina),
 			},
 		},
 		'UGS' => {
 			display_name => {
-				'default' => q(Đồng Shilling Uganda (1966–1987)),
+				'currency' => q(Đồng Shilling Uganda \(1966–1987\)),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Shilling Uganda),
+				'currency' => q(Shilling Uganda),
 				'other' => q(shilling Uganda),
 			},
 		},
 		'USD' => {
 			symbol => 'US$',
 			display_name => {
-				'default' => q(Đô la Mỹ),
+				'currency' => q(Đô la Mỹ),
 				'other' => q(đô la Mỹ),
 			},
 		},
 		'USN' => {
 			display_name => {
-				'default' => q(Đô la Mỹ (Ngày tiếp theo)),
+				'currency' => q(Đô la Mỹ \(Ngày tiếp theo\)),
 			},
 		},
 		'USS' => {
 			display_name => {
-				'default' => q(Đô la Mỹ (Cùng ngày)),
+				'currency' => q(Đô la Mỹ \(Cùng ngày\)),
 			},
 		},
 		'UYI' => {
 			display_name => {
-				'default' => q(Đồng Peso Uruguay (Đơn vị Theo chỉ số)),
+				'currency' => q(Đồng Peso Uruguay \(Đơn vị Theo chỉ số\)),
 			},
 		},
 		'UYP' => {
 			display_name => {
-				'default' => q(Đồng Peso Uruguay (1975–1993)),
+				'currency' => q(Đồng Peso Uruguay \(1975–1993\)),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(Peso Uruguay),
+				'currency' => q(Peso Uruguay),
 				'other' => q(peso Uruguay),
 			},
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(Som Uzbekistan),
+				'currency' => q(Som Uzbekistan),
 				'other' => q(som Uzbekistan),
 			},
 		},
 		'VEB' => {
 			display_name => {
-				'default' => q(Đồng bolívar của Venezuela (1871–2008)),
+				'currency' => q(Đồng bolívar của Venezuela \(1871–2008\)),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(Bolívar Venezuela),
+				'currency' => q(Bolívar Venezuela),
 				'other' => q(bolívar Venezuela),
 			},
 		},
 		'VND' => {
 			symbol => '₫',
 			display_name => {
-				'default' => q(Đồng Việt Nam),
+				'currency' => q(Đồng Việt Nam),
 				'other' => q(đồng Việt Nam),
 			},
 		},
 		'VNN' => {
 			display_name => {
-				'default' => q(Đồng Việt Nam (1978–1985)),
+				'currency' => q(Đồng Việt Nam \(1978–1985\)),
 			},
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(Vatu Vanuatu),
+				'currency' => q(Vatu Vanuatu),
 				'other' => q(vatu Vanuatu),
 			},
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(Tala Samoa),
+				'currency' => q(Tala Samoa),
 				'other' => q(tala Samoa),
 			},
 		},
 		'XAF' => {
 			symbol => 'FCFA',
 			display_name => {
-				'default' => q(CFA Franc BEAC),
+				'currency' => q(CFA Franc BEAC),
 				'other' => q(CFA Franc BEAC),
 			},
 		},
 		'XAG' => {
 			display_name => {
-				'default' => q(Bạc),
+				'currency' => q(Bạc),
 			},
 		},
 		'XAU' => {
 			display_name => {
-				'default' => q(Vàng),
+				'currency' => q(Vàng),
 			},
 		},
 		'XBA' => {
 			display_name => {
-				'default' => q(Đơn vị Tổng hợp Châu Âu),
+				'currency' => q(Đơn vị Tổng hợp Châu Âu),
 			},
 		},
 		'XBB' => {
 			display_name => {
-				'default' => q(Đơn vị Tiền tệ Châu Âu),
+				'currency' => q(Đơn vị Tiền tệ Châu Âu),
 			},
 		},
 		'XBC' => {
 			display_name => {
-				'default' => q(Đơn vị Kế toán Châu Âu (XBC)),
+				'currency' => q(Đơn vị Kế toán Châu Âu \(XBC\)),
 			},
 		},
 		'XBD' => {
 			display_name => {
-				'default' => q(Đơn vị Kế toán Châu Âu (XBD)),
+				'currency' => q(Đơn vị Kế toán Châu Âu \(XBD\)),
 			},
 		},
 		'XCD' => {
 			symbol => 'EC$',
 			display_name => {
-				'default' => q(Đô la Đông Caribê),
+				'currency' => q(Đô la Đông Caribê),
 				'other' => q(đô la Đông Caribê),
 			},
 		},
 		'XDR' => {
 			display_name => {
-				'default' => q(Quyền Rút vốn Đặc biệt),
+				'currency' => q(Quyền Rút vốn Đặc biệt),
 			},
 		},
 		'XEU' => {
 			display_name => {
-				'default' => q(Đơn vị Tiền Châu Âu),
+				'currency' => q(Đơn vị Tiền Châu Âu),
 			},
 		},
 		'XFO' => {
 			display_name => {
-				'default' => q(Đồng France Pháp Vàng),
+				'currency' => q(Đồng France Pháp Vàng),
 			},
 		},
 		'XFU' => {
 			display_name => {
-				'default' => q(Đồng UIC-Franc Pháp),
+				'currency' => q(Đồng UIC-Franc Pháp),
 			},
 		},
 		'XOF' => {
 			symbol => 'CFA',
 			display_name => {
-				'default' => q(Franc CFA BCEAO),
+				'currency' => q(Franc CFA BCEAO),
 				'other' => q(franc CFA BCEAO),
 			},
 		},
 		'XPD' => {
 			display_name => {
-				'default' => q(Paladi),
+				'currency' => q(Paladi),
 			},
 		},
 		'XPF' => {
 			symbol => 'CFPF',
 			display_name => {
-				'default' => q(Franc CFP),
+				'currency' => q(Franc CFP),
 				'other' => q(franc CFP),
 			},
 		},
 		'XPT' => {
 			display_name => {
-				'default' => q(Bạch kim),
+				'currency' => q(Bạch kim),
 			},
 		},
 		'XRE' => {
 			display_name => {
-				'default' => q(Quỹ RINET),
+				'currency' => q(Quỹ RINET),
 			},
 		},
 		'XTS' => {
 			display_name => {
-				'default' => q(Mã Tiền tệ Kiểm tra),
+				'currency' => q(Mã Tiền tệ Kiểm tra),
 			},
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(Tiền tệ chưa biết),
-				'other' => q((tiền tệ chưa biết)),
+				'currency' => q(Tiền tệ chưa biết),
+				'other' => q(\(tiền tệ chưa biết\)),
 			},
 		},
 		'YDD' => {
 			display_name => {
-				'default' => q(Đồng Dinar Yemen),
+				'currency' => q(Đồng Dinar Yemen),
 			},
 		},
 		'YER' => {
 			display_name => {
-				'default' => q(Rial Yemen),
+				'currency' => q(Rial Yemen),
 				'other' => q(rial Yemen),
 			},
 		},
 		'YUD' => {
 			display_name => {
-				'default' => q(Đồng Dinar Nam Tư Xu (1966–1990)),
+				'currency' => q(Đồng Dinar Nam Tư Xu \(1966–1990\)),
 			},
 		},
 		'YUM' => {
 			display_name => {
-				'default' => q(Đồng Dinar Nam Tư Mới (1994–2002)),
+				'currency' => q(Đồng Dinar Nam Tư Mới \(1994–2002\)),
 			},
 		},
 		'YUN' => {
 			display_name => {
-				'default' => q(Đồng Dinar Nam Tư Có thể chuyển đổi (1990–1992)),
+				'currency' => q(Đồng Dinar Nam Tư Có thể chuyển đổi \(1990–1992\)),
 			},
 		},
 		'YUR' => {
 			display_name => {
-				'default' => q(Đồng Dinar Nam Tư Tái cơ cấu (1992–1993)),
+				'currency' => q(Đồng Dinar Nam Tư Tái cơ cấu \(1992–1993\)),
 			},
 		},
 		'ZAL' => {
 			display_name => {
-				'default' => q(Đồng Rand Nam Phi (tài chính)),
+				'currency' => q(Đồng Rand Nam Phi \(tài chính\)),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Rand Nam Phi),
+				'currency' => q(Rand Nam Phi),
 				'other' => q(rand Nam Phi),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Đồng kwacha của Zambia (1968–2012)),
+				'currency' => q(Đồng kwacha của Zambia \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Kwacha Zambia),
+				'currency' => q(Kwacha Zambia),
 				'other' => q(kwacha Zambia),
 			},
 		},
 		'ZRN' => {
 			display_name => {
-				'default' => q(Đồng Zaire Mới (1993–1998)),
+				'currency' => q(Đồng Zaire Mới \(1993–1998\)),
 			},
 		},
 		'ZRZ' => {
 			display_name => {
-				'default' => q(Đồng Zaire (1971–1993)),
+				'currency' => q(Đồng Zaire \(1971–1993\)),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Đồng Đô la Zimbabwe (1980–2008)),
+				'currency' => q(Đồng Đô la Zimbabwe \(1980–2008\)),
 			},
 		},
 		'ZWL' => {
 			display_name => {
-				'default' => q(Đồng Đô la Zimbabwe (2009)),
+				'currency' => q(Đồng Đô la Zimbabwe \(2009\)),
 			},
 		},
 		'ZWR' => {
 			display_name => {
-				'default' => q(Đồng Đô la Zimbabwe (2008)),
+				'currency' => q(Đồng Đô la Zimbabwe \(2008\)),
 			},
 		},
 	} },
@@ -4675,6 +4674,10 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'buddhist' => {
+			M => q{'tháng' L},
+			MMM => q{LLL},
+		},
 		'gregorian' => {
 			EHm => q{E HH:mm},
 			EHms => q{E HH:mm:ss},
@@ -4715,14 +4718,6 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'roc' => {
-			M => q{'tháng' L},
-			MMM => q{LLL},
-		},
-		'buddhist' => {
-			M => q{'tháng' L},
-			MMM => q{LLL},
-		},
 		'generic' => {
 			Ed => q{E, dd},
 			Gy => q{'Năm' y G},
@@ -4758,6 +4753,10 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{d/M/y G},
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
+		},
+		'roc' => {
+			M => q{'tháng' L},
+			MMM => q{LLL},
 		},
 	} },
 );

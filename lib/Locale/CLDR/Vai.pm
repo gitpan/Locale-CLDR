@@ -1,6 +1,6 @@
-package Locale::CLDR::Vai;
+package Locale::CLDR::Vai v0.0.4;
 # This file auto generated from Data\common\main\vai.xml
-#	on Mon 31 Mar  2:23:16 am GMT
+#	on Sun 13 Apr 12:24:31 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -440,268 +440,268 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(ꖳꕯꔤꗳ ꕉꕟꔬ ꗡꕆꔓꔻ ꔵꕌꕆ),
+				'currency' => q(ꖳꕯꔤꗳ ꕉꕟꔬ ꗡꕆꔓꔻ ꔵꕌꕆ),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(ꕉꖐꕞ ꖴꕎꘋꕤ),
+				'currency' => q(ꕉꖐꕞ ꖴꕎꘋꕤ),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'default' => q(ꖺꔻꖤꔃꔷꕩ ꕜꕞꕌ),
+				'currency' => q(ꖺꔻꖤꔃꔷꕩ ꕜꕞꕌ),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(ꕑꗸꘋ),
+				'currency' => q(ꕑꗸꘋ),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(ꖜꖩꔺ ꖢꕟꘋꕃ),
+				'currency' => q(ꖜꖩꔺ ꖢꕟꘋꕃ),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(ꕷꖬꕎꕯ ꖛꕞ),
+				'currency' => q(ꕷꖬꕎꕯ ꖛꕞ),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'default' => q(ꕪꕯꕜ ꕜꕞꕌ),
+				'currency' => q(ꕪꕯꕜ ꕜꕞꕌ),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(ꖏꖐꕱ ꖢꕟꘋꕃ),
+				'currency' => q(ꖏꖐꕱ ꖢꕟꘋꕃ),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(ꖬꔃꕤ ꖨꕮꕊ ꖢꕟꘋꕃ),
+				'currency' => q(ꖬꔃꕤ ꖨꕮꕊ ꖢꕟꘋꕃ),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'default' => q(ꕦꕇꔧ ꖳꕎꘋ ꔓꕆꘋꔬ),
+				'currency' => q(ꕦꕇꔧ ꖳꕎꘋ ꔓꕆꘋꔬ),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(ꗡꔻꖴꖁ ꕪꕷꗲꗡꔵꕩꖆ),
+				'currency' => q(ꗡꔻꖴꖁ ꕪꕷꗲꗡꔵꕩꖆ),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(ꕀꖜꔳ ꖢꕟꘋꕃ),
+				'currency' => q(ꕀꖜꔳ ꖢꕟꘋꕃ),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(ꕉꔷꕀꔸꕩ ꔵꕯ),
+				'currency' => q(ꕉꔷꕀꔸꕩ ꔵꕯ),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(ꕆꔻꕞ ꗁꖻꘋ),
+				'currency' => q(ꕆꔻꕞ ꗁꖻꘋ),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(ꔀꔸꔳꕟ ꗁꖻꘋ),
+				'currency' => q(ꔀꔸꔳꕟ ꗁꖻꘋ),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(ꔤꕿꖎꔪꕩ ꔫꔤ),
+				'currency' => q(ꔤꕿꖎꔪꕩ ꔫꔤ),
 			},
 		},
 		'EUR' => {
 			display_name => {
-				'default' => q(ꖳꖄ),
+				'currency' => q(ꖳꖄ),
 			},
 		},
 		'GBP' => {
 			display_name => {
-				'default' => q(ꔛꔟꔻ ꗁꖻꘋ ꔻꗳꔷꘋ),
+				'currency' => q(ꔛꔟꔻ ꗁꖻꘋ ꔻꗳꔷꘋ),
 			},
 		},
 		'GHC' => {
 			display_name => {
-				'default' => q(ꕭꕌꕯ ꔻꔵ),
+				'currency' => q(ꕭꕌꕯ ꔻꔵ),
 			},
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(ꕭꔭꕩ ꕜꕞꔻ),
+				'currency' => q(ꕭꔭꕩ ꕜꕞꔻ),
 			},
 		},
 		'GNS' => {
 			display_name => {
-				'default' => q(ꕅꔤꕇ ꖢꕟꘋꕃ),
+				'currency' => q(ꕅꔤꕇ ꖢꕟꘋꕃ),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'default' => q(ꔤꔺꕩ ꖩꔪ),
+				'currency' => q(ꔤꔺꕩ ꖩꔪ),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'default' => q(ꕧꕐꕇꔧ ꘂꘋ),
+				'currency' => q(ꕧꕐꕇꔧ ꘂꘋ),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(ꔞꕰ ꔻꔝꘋ),
+				'currency' => q(ꔞꕰ ꔻꔝꘋ),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(ꖏꖒꖄ ꖢꕟꘋꕃ),
+				'currency' => q(ꖏꖒꖄ ꖢꕟꘋꕃ),
 			},
 		},
 		'LRD' => {
 			symbol => '$',
 			display_name => {
-				'default' => q(ꕞꔤꔫꕩ ꕜꕞꕌ),
+				'currency' => q(ꕞꔤꔫꕩ ꕜꕞꕌ),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(ꔷꖇꕿ ꖃꔳ),
+				'currency' => q(ꔷꖇꕿ ꖃꔳ),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(ꔷꔫꕩ ꔵꕯ),
+				'currency' => q(ꔷꔫꕩ ꔵꕯ),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(ꗞꕟꖏ ꔵꕌꕆ),
+				'currency' => q(ꗞꕟꖏ ꔵꕌꕆ),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(ꕮꕞꕭꕌꔻ ꕉꔸꕩꔸ),
+				'currency' => q(ꕮꕞꕭꕌꔻ ꕉꔸꕩꔸ),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(ꗞꔸꕚꕇꕰ ꖳꕅꕩ),
+				'currency' => q(ꗞꔸꕚꕇꕰ ꖳꕅꕩ),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(ꗞꔓꗔ ꖩꔪ),
+				'currency' => q(ꗞꔓꗔ ꖩꔪ),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(ꕮꕞꕌꔨ ꖴꕎꕦ),
+				'currency' => q(ꕮꕞꕌꔨ ꖴꕎꕦ),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(ꗞꕤꔭꕃ ꕆꔳꕪ),
+				'currency' => q(ꗞꕤꔭꕃ ꕆꔳꕪ),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(ꕯꕆꔫꕩ ꕜꕞꕌ),
+				'currency' => q(ꕯꕆꔫꕩ ꕜꕞꕌ),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(ꕯꔤꕀꔸꕩ ꕯꔤꕟ),
+				'currency' => q(ꕯꔤꕀꔸꕩ ꕯꔤꕟ),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(ꕟꖙꕡ ꖢꕟꘋꕃ),
+				'currency' => q(ꕟꖙꕡ ꖢꕟꘋꕃ),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(ꕢꖙꔵ ꔸꕩꔷ),
+				'currency' => q(ꕢꖙꔵ ꔸꕩꔷ),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(ꔖꗼꔷ ꖩꔪ),
+				'currency' => q(ꔖꗼꔷ ꖩꔪ),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(ꖬꗵꘋ ꗁꖻꘋ),
+				'currency' => q(ꖬꗵꘋ ꗁꖻꘋ),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(ꔻꘋ ꗥꔷꕯ ꗁꖻꘋ),
+				'currency' => q(ꔻꘋ ꗥꔷꕯ ꗁꖻꘋ),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(ꔷꗚꘋ),
+				'currency' => q(ꔷꗚꘋ),
 			},
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(ꖇꕮꔷ ꔻꔝꘋ),
+				'currency' => q(ꖇꕮꔷ ꔻꔝꘋ),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(ꕢꕴ ꕿꔈ ꗪ ꕉ ꕗꕴ ꖁꖜꕟ),
+				'currency' => q(ꕢꕴ ꕿꔈ ꗪ ꕉ ꕗꕴ ꖁꖜꕟ),
 			},
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(ꔷꕞꔟꕇ),
+				'currency' => q(ꔷꕞꔟꕇ),
 			},
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(ꖤꕇꔻꕩ ꔵꕯ),
+				'currency' => q(ꖤꕇꔻꕩ ꔵꕯ),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(ꕚꘋꕤꕇꕰ ꔻꔝꘋ),
+				'currency' => q(ꕚꘋꕤꕇꕰ ꔻꔝꘋ),
 			},
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(ꖳꕭꕡ ꔻꔝꘋ),
+				'currency' => q(ꖳꕭꕡ ꔻꔝꘋ),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'default' => q(ꕶꕱ ꕜꕞ),
+				'currency' => q(ꕶꕱ ꕜꕞ),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(ꕉꔱꔸꕪ ꗛꔤ ꔒꘋꗣ ꗏ ꕟꘋꔵ),
+				'currency' => q(ꕉꔱꔸꕪ ꗛꔤ ꔒꘋꗣ ꗏ ꕟꘋꔵ),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(ꕤꔭꕩ ꖴꕎꕦ (1968–2012)),
+				'currency' => q(ꕤꔭꕩ ꖴꕎꕦ \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(ꕤꔭꕩ ꖴꕎꕦ),
+				'currency' => q(ꕤꔭꕩ ꖴꕎꕦ),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(ꔽꕓꖜꔃ ꕜꕞ),
+				'currency' => q(ꔽꕓꖜꔃ ꕜꕞ),
 			},
 		},
 	} },
@@ -825,7 +825,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -848,7 +848,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -890,3 +890,9 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+# vim: tabstop=4

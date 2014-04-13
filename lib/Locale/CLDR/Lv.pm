@@ -1,6 +1,6 @@
-package Locale::CLDR::Lv;
+package Locale::CLDR::Lv v0.0.4;
 # This file auto generated from Data\common\main\lv.xml
-#	on Mon 31 Mar  1:14:19 am GMT
+#	on Sun 13 Apr 11:14:25 am GMT
 # XML file generated 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014)
 
 use v5.18;
@@ -1449,7 +1449,7 @@ has 'units' => (
 						'zero' => q({0} unces),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'one' => q({0} pikometrs),
@@ -1684,7 +1684,7 @@ has 'units' => (
 						'zero' => q({0}oz),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'one' => q({0}pm),
@@ -1919,7 +1919,7 @@ has 'units' => (
 						'zero' => q({0} oz),
 					},
 					'per' => {
-						'default' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
 						'one' => q({0} pm),
@@ -1979,7 +1979,6 @@ has 'units' => (
 				},
 			} }
 );
-
 
 has 'yesstr' => (
 	is			=> 'ro',
@@ -2270,7 +2269,7 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'default' => q(Apvienoto Arābu Emirātu dirhēms),
+				'currency' => q(Apvienoto Arābu Emirātu dirhēms),
 				'one' => q(Apvienoto Arābu Emirātu dirhēms),
 				'other' => q(Apvienoto Arābu Emirātu dirhēmi),
 				'zero' => q(Apvienoto Arābu Emirātu dirhēmi),
@@ -2278,7 +2277,7 @@ has 'curriencies' => (
 		},
 		'AFN' => {
 			display_name => {
-				'default' => q(Afganistānas afgāns),
+				'currency' => q(Afganistānas afgāns),
 				'one' => q(Afganistānas afgāns),
 				'other' => q(Afganistānas afgāni),
 				'zero' => q(Afganistānas afgāni),
@@ -2286,7 +2285,7 @@ has 'curriencies' => (
 		},
 		'ALL' => {
 			display_name => {
-				'default' => q(Albānijas leks),
+				'currency' => q(Albānijas leks),
 				'one' => q(Albānijas leks),
 				'other' => q(Albānijas leki),
 				'zero' => q(Albānijas leki),
@@ -2294,7 +2293,7 @@ has 'curriencies' => (
 		},
 		'AMD' => {
 			display_name => {
-				'default' => q(Armēnijas drams),
+				'currency' => q(Armēnijas drams),
 				'one' => q(Armēnijas drams),
 				'other' => q(Armēnijas drami),
 				'zero' => q(Armēnijas drami),
@@ -2302,7 +2301,7 @@ has 'curriencies' => (
 		},
 		'ANG' => {
 			display_name => {
-				'default' => q(Nīderlandes Antiļu guldenis),
+				'currency' => q(Nīderlandes Antiļu guldenis),
 				'one' => q(Nīderlandes Antiļu guldenis),
 				'other' => q(Nīderlandes Antiļu guldeņi),
 				'zero' => q(Nīderlandes Antiļu guldeņi),
@@ -2310,7 +2309,7 @@ has 'curriencies' => (
 		},
 		'AOA' => {
 			display_name => {
-				'default' => q(Angolas kvanza),
+				'currency' => q(Angolas kvanza),
 				'one' => q(Angolas kvanza),
 				'other' => q(Angolas kvanzas),
 				'zero' => q(Angolas kvanzas),
@@ -2318,7 +2317,7 @@ has 'curriencies' => (
 		},
 		'ARS' => {
 			display_name => {
-				'default' => q(Argentīnas peso),
+				'currency' => q(Argentīnas peso),
 				'one' => q(Argentīnas peso),
 				'other' => q(Argentīnas peso),
 				'zero' => q(Argentīnas peso),
@@ -2326,13 +2325,13 @@ has 'curriencies' => (
 		},
 		'ATS' => {
 			display_name => {
-				'default' => q(Austrijas šiliņš),
+				'currency' => q(Austrijas šiliņš),
 			},
 		},
 		'AUD' => {
 			symbol => 'AU$',
 			display_name => {
-				'default' => q(Austrālijas dolārs),
+				'currency' => q(Austrālijas dolārs),
 				'one' => q(Austrālijas dolārs),
 				'other' => q(Austrālijas dolāri),
 				'zero' => q(Austrālijas dolāri),
@@ -2340,7 +2339,7 @@ has 'curriencies' => (
 		},
 		'AWG' => {
 			display_name => {
-				'default' => q(Arubas guldenis),
+				'currency' => q(Arubas guldenis),
 				'one' => q(Arubas guldenis),
 				'other' => q(Arubas guldeņi),
 				'zero' => q(Arubas guldeņi),
@@ -2348,15 +2347,15 @@ has 'curriencies' => (
 		},
 		'AZM' => {
 			display_name => {
-				'default' => q(Azerbaidžānas manats (1993–2006)),
-				'one' => q(Azerbaidžānas manats (1993–2006)),
-				'other' => q(Azerbaidžānas manati (1993–2006)),
-				'zero' => q(Azerbaidžānas manati (1993–2006)),
+				'currency' => q(Azerbaidžānas manats \(1993–2006\)),
+				'one' => q(Azerbaidžānas manats \(1993–2006\)),
+				'other' => q(Azerbaidžānas manati \(1993–2006\)),
+				'zero' => q(Azerbaidžānas manati \(1993–2006\)),
 			},
 		},
 		'AZN' => {
 			display_name => {
-				'default' => q(Azerbaidžānas manats),
+				'currency' => q(Azerbaidžānas manats),
 				'one' => q(Azerbaidžānas manats),
 				'other' => q(Azerbaidžānas manati),
 				'zero' => q(Azerbaidžānas manati),
@@ -2364,7 +2363,7 @@ has 'curriencies' => (
 		},
 		'BAM' => {
 			display_name => {
-				'default' => q(Bosnijas un Hercogovinas marka),
+				'currency' => q(Bosnijas un Hercogovinas marka),
 				'one' => q(Bosnijas un Hercogovinas marka),
 				'other' => q(Bosnijas un Hercogovinas markas),
 				'zero' => q(Bosnijas un Hercogovinas markas),
@@ -2372,7 +2371,7 @@ has 'curriencies' => (
 		},
 		'BBD' => {
 			display_name => {
-				'default' => q(Barbadosas dolārs),
+				'currency' => q(Barbadosas dolārs),
 				'one' => q(Barbadosas dolārs),
 				'other' => q(Barbadosas dolāri),
 				'zero' => q(Barbadosas dolāri),
@@ -2380,7 +2379,7 @@ has 'curriencies' => (
 		},
 		'BDT' => {
 			display_name => {
-				'default' => q(Bangladešas taka),
+				'currency' => q(Bangladešas taka),
 				'one' => q(Bangladešas taka),
 				'other' => q(Bangladešas takas),
 				'zero' => q(Bangladešas takas),
@@ -2388,7 +2387,7 @@ has 'curriencies' => (
 		},
 		'BEF' => {
 			display_name => {
-				'default' => q(Beļģijas franks),
+				'currency' => q(Beļģijas franks),
 				'one' => q(Beļģijas franks),
 				'other' => q(Beļģijas franki),
 				'zero' => q(Beļģijas franki),
@@ -2396,7 +2395,7 @@ has 'curriencies' => (
 		},
 		'BGN' => {
 			display_name => {
-				'default' => q(Bulgārijas leva),
+				'currency' => q(Bulgārijas leva),
 				'one' => q(Bulgārijas leva),
 				'other' => q(Bulgārijas levas),
 				'zero' => q(Bulgārijas levas),
@@ -2404,7 +2403,7 @@ has 'curriencies' => (
 		},
 		'BHD' => {
 			display_name => {
-				'default' => q(Bahreinas dinārs),
+				'currency' => q(Bahreinas dinārs),
 				'one' => q(Bahreinas dinārs),
 				'other' => q(Bahreinas dināri),
 				'zero' => q(Bahreinas dināri),
@@ -2412,7 +2411,7 @@ has 'curriencies' => (
 		},
 		'BIF' => {
 			display_name => {
-				'default' => q(Burundi franks),
+				'currency' => q(Burundi franks),
 				'one' => q(Burundi franks),
 				'other' => q(Burundi franki),
 				'zero' => q(Burundi franki),
@@ -2420,7 +2419,7 @@ has 'curriencies' => (
 		},
 		'BMD' => {
 			display_name => {
-				'default' => q(Bermudu dolārs),
+				'currency' => q(Bermudu dolārs),
 				'one' => q(Bermudu dolārs),
 				'other' => q(Bermudu dolāri),
 				'zero' => q(Bermudu dolāri),
@@ -2428,7 +2427,7 @@ has 'curriencies' => (
 		},
 		'BND' => {
 			display_name => {
-				'default' => q(Brunejas dolārs),
+				'currency' => q(Brunejas dolārs),
 				'one' => q(Brunejas dolārs),
 				'other' => q(Brunejas dolāri),
 				'zero' => q(Brunejas dolāri),
@@ -2436,7 +2435,7 @@ has 'curriencies' => (
 		},
 		'BOB' => {
 			display_name => {
-				'default' => q(Bolīvijas boliviano),
+				'currency' => q(Bolīvijas boliviano),
 				'one' => q(Bolīvijas boliviano),
 				'other' => q(Bolīvijas boliviano),
 				'zero' => q(Bolīvijas boliviano),
@@ -2445,7 +2444,7 @@ has 'curriencies' => (
 		'BRL' => {
 			symbol => 'R$',
 			display_name => {
-				'default' => q(Brazīlijas reāls),
+				'currency' => q(Brazīlijas reāls),
 				'one' => q(Brazīlijas reāls),
 				'other' => q(Brazīlijas reāli),
 				'zero' => q(Brazīlijas reāli),
@@ -2453,7 +2452,7 @@ has 'curriencies' => (
 		},
 		'BSD' => {
 			display_name => {
-				'default' => q(Bahamu dolārs),
+				'currency' => q(Bahamu dolārs),
 				'one' => q(Bahamu dolārs),
 				'other' => q(Bahamu dolāri),
 				'zero' => q(Bahamu dolāri),
@@ -2461,7 +2460,7 @@ has 'curriencies' => (
 		},
 		'BTN' => {
 			display_name => {
-				'default' => q(Butānas ngultrums),
+				'currency' => q(Butānas ngultrums),
 				'one' => q(Butānas ngultrums),
 				'other' => q(Butānas ngultrumi),
 				'zero' => q(Butānas ngultrumi),
@@ -2469,7 +2468,7 @@ has 'curriencies' => (
 		},
 		'BWP' => {
 			display_name => {
-				'default' => q(Botsvānas pula),
+				'currency' => q(Botsvānas pula),
 				'one' => q(Botsvānas pula),
 				'other' => q(Botsvānas pulas),
 				'zero' => q(Botsvānas pulas),
@@ -2477,7 +2476,7 @@ has 'curriencies' => (
 		},
 		'BYR' => {
 			display_name => {
-				'default' => q(Baltkrievijas rubelis),
+				'currency' => q(Baltkrievijas rubelis),
 				'one' => q(Baltkrievijas rubelis),
 				'other' => q(Baltkrievijas rubeļi),
 				'zero' => q(Baltkrievijas rubeļi),
@@ -2485,7 +2484,7 @@ has 'curriencies' => (
 		},
 		'BZD' => {
 			display_name => {
-				'default' => q(Belizas dolārs),
+				'currency' => q(Belizas dolārs),
 				'one' => q(Belizas dolārs),
 				'other' => q(Belizas dolāri),
 				'zero' => q(Belizas dolāri),
@@ -2494,7 +2493,7 @@ has 'curriencies' => (
 		'CAD' => {
 			symbol => 'CA$',
 			display_name => {
-				'default' => q(Kanādas dolārs),
+				'currency' => q(Kanādas dolārs),
 				'one' => q(Kanādas dolārs),
 				'other' => q(Kanādas dolāri),
 				'zero' => q(Kanādas dolāri),
@@ -2502,7 +2501,7 @@ has 'curriencies' => (
 		},
 		'CDF' => {
 			display_name => {
-				'default' => q(KDR franks),
+				'currency' => q(KDR franks),
 				'one' => q(KDR franks),
 				'other' => q(KDR franki),
 				'zero' => q(KDR franki),
@@ -2510,7 +2509,7 @@ has 'curriencies' => (
 		},
 		'CHF' => {
 			display_name => {
-				'default' => q(Šveices franks),
+				'currency' => q(Šveices franks),
 				'one' => q(Šveices franks),
 				'other' => q(Šveices franki),
 				'zero' => q(Šveices franki),
@@ -2518,7 +2517,7 @@ has 'curriencies' => (
 		},
 		'CLP' => {
 			display_name => {
-				'default' => q(Čīles peso),
+				'currency' => q(Čīles peso),
 				'one' => q(Čīles peso),
 				'other' => q(Čīles peso),
 				'zero' => q(Čīles peso),
@@ -2527,7 +2526,7 @@ has 'curriencies' => (
 		'CNY' => {
 			symbol => 'CN¥',
 			display_name => {
-				'default' => q(Ķīnas juaņs),
+				'currency' => q(Ķīnas juaņs),
 				'one' => q(Ķīnas juaņs),
 				'other' => q(Ķīnas juaņi),
 				'zero' => q(Ķīnas juaņi),
@@ -2535,7 +2534,7 @@ has 'curriencies' => (
 		},
 		'COP' => {
 			display_name => {
-				'default' => q(Kolumbijas peso),
+				'currency' => q(Kolumbijas peso),
 				'one' => q(Kolumbijas peso),
 				'other' => q(Kolumbijas peso),
 				'zero' => q(Kolumbijas peso),
@@ -2543,12 +2542,12 @@ has 'curriencies' => (
 		},
 		'COU' => {
 			display_name => {
-				'default' => q(Kolumbijas reāls),
+				'currency' => q(Kolumbijas reāls),
 			},
 		},
 		'CRC' => {
 			display_name => {
-				'default' => q(Kostarikas kolons),
+				'currency' => q(Kostarikas kolons),
 				'one' => q(Kostarikas kolons),
 				'other' => q(Kostarikas koloni),
 				'zero' => q(Kostarikas koloni),
@@ -2556,7 +2555,7 @@ has 'curriencies' => (
 		},
 		'CUC' => {
 			display_name => {
-				'default' => q(Kubas konvertējamais peso),
+				'currency' => q(Kubas konvertējamais peso),
 				'one' => q(Kubas konvertējamais peso),
 				'other' => q(Kubas konvertējamie peso),
 				'zero' => q(Kubas konvertējamie peso),
@@ -2564,7 +2563,7 @@ has 'curriencies' => (
 		},
 		'CUP' => {
 			display_name => {
-				'default' => q(Kubas peso),
+				'currency' => q(Kubas peso),
 				'one' => q(Kubas peso),
 				'other' => q(Kubas peso),
 				'zero' => q(Kubas peso),
@@ -2572,7 +2571,7 @@ has 'curriencies' => (
 		},
 		'CVE' => {
 			display_name => {
-				'default' => q(Kaboverdes eskudo),
+				'currency' => q(Kaboverdes eskudo),
 				'one' => q(Kaboverdes eskudo),
 				'other' => q(Kaboverdes eskudo),
 				'zero' => q(Kaboverdes eskudo),
@@ -2580,12 +2579,12 @@ has 'curriencies' => (
 		},
 		'CYP' => {
 			display_name => {
-				'default' => q(Kipras mārciņa),
+				'currency' => q(Kipras mārciņa),
 			},
 		},
 		'CZK' => {
 			display_name => {
-				'default' => q(Čehijas krona),
+				'currency' => q(Čehijas krona),
 				'one' => q(Čehijas krona),
 				'other' => q(Čehijas kronas),
 				'zero' => q(Čehijas kronas),
@@ -2593,12 +2592,12 @@ has 'curriencies' => (
 		},
 		'DEM' => {
 			display_name => {
-				'default' => q(Vācijas marka),
+				'currency' => q(Vācijas marka),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'default' => q(Džibutijas franks),
+				'currency' => q(Džibutijas franks),
 				'one' => q(Džibutijas franks),
 				'other' => q(Džibutijas franki),
 				'zero' => q(Džibutijas franki),
@@ -2606,7 +2605,7 @@ has 'curriencies' => (
 		},
 		'DKK' => {
 			display_name => {
-				'default' => q(Dānijas krona),
+				'currency' => q(Dānijas krona),
 				'one' => q(Dānijas krona),
 				'other' => q(Dānijas kronas),
 				'zero' => q(Dānijas kronas),
@@ -2614,7 +2613,7 @@ has 'curriencies' => (
 		},
 		'DOP' => {
 			display_name => {
-				'default' => q(Dominikānas peso),
+				'currency' => q(Dominikānas peso),
 				'one' => q(Dominikānas peso),
 				'other' => q(Dominikānas peso),
 				'zero' => q(Dominikānas peso),
@@ -2622,7 +2621,7 @@ has 'curriencies' => (
 		},
 		'DZD' => {
 			display_name => {
-				'default' => q(Alžīrijas dinārs),
+				'currency' => q(Alžīrijas dinārs),
 				'one' => q(Alžīrijas dinārs),
 				'other' => q(Alžīrijas dināri),
 				'zero' => q(Alžīrijas dināri),
@@ -2630,12 +2629,12 @@ has 'curriencies' => (
 		},
 		'EEK' => {
 			display_name => {
-				'default' => q(Igaunijas krona),
+				'currency' => q(Igaunijas krona),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'default' => q(Ēģiptes mārciņa),
+				'currency' => q(Ēģiptes mārciņa),
 				'one' => q(Ēģiptes mārciņa),
 				'other' => q(Ēģiptes mārciņas),
 				'zero' => q(Ēģiptes mārciņas),
@@ -2643,7 +2642,7 @@ has 'curriencies' => (
 		},
 		'ERN' => {
 			display_name => {
-				'default' => q(Eritrejas nakfa),
+				'currency' => q(Eritrejas nakfa),
 				'one' => q(Eritrejas nakfa),
 				'other' => q(Eritrejas nakfas),
 				'zero' => q(Eritrejas nakfas),
@@ -2651,12 +2650,12 @@ has 'curriencies' => (
 		},
 		'ESP' => {
 			display_name => {
-				'default' => q(Spānijas peseta),
+				'currency' => q(Spānijas peseta),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'default' => q(Etiopijas birs),
+				'currency' => q(Etiopijas birs),
 				'one' => q(Etiopijas birs),
 				'other' => q(Etiopijas biri),
 				'zero' => q(Etiopijas biri),
@@ -2665,7 +2664,7 @@ has 'curriencies' => (
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'default' => q(eiro),
+				'currency' => q(eiro),
 				'one' => q(eiro),
 				'other' => q(eiro),
 				'zero' => q(eiro),
@@ -2673,12 +2672,12 @@ has 'curriencies' => (
 		},
 		'FIM' => {
 			display_name => {
-				'default' => q(Somijas marka),
+				'currency' => q(Somijas marka),
 			},
 		},
 		'FJD' => {
 			display_name => {
-				'default' => q(Fidži dolārs),
+				'currency' => q(Fidži dolārs),
 				'one' => q(Fidži dolārs),
 				'other' => q(Fidži dolāri),
 				'zero' => q(Fidži dolāri),
@@ -2686,7 +2685,7 @@ has 'curriencies' => (
 		},
 		'FKP' => {
 			display_name => {
-				'default' => q(Folklenda salu mārciņa),
+				'currency' => q(Folklenda salu mārciņa),
 				'one' => q(Folklenda salu mārciņa),
 				'other' => q(Folklenda salu mārciņas),
 				'zero' => q(Folklenda salu mārciņas),
@@ -2694,13 +2693,13 @@ has 'curriencies' => (
 		},
 		'FRF' => {
 			display_name => {
-				'default' => q(Francijas franks),
+				'currency' => q(Francijas franks),
 			},
 		},
 		'GBP' => {
 			symbol => '£',
 			display_name => {
-				'default' => q(Lielbritānijas sterliņu mārciņa),
+				'currency' => q(Lielbritānijas sterliņu mārciņa),
 				'one' => q(Lielbritānijas sterliņu mārciņa),
 				'other' => q(Lielbritānijas sterliņu mārciņas),
 				'zero' => q(Lielbritānijas sterliņu mārciņas),
@@ -2708,7 +2707,7 @@ has 'curriencies' => (
 		},
 		'GEL' => {
 			display_name => {
-				'default' => q(Gruzijas lari),
+				'currency' => q(Gruzijas lari),
 				'one' => q(Gruzijas lari),
 				'other' => q(Gruzijas lari),
 				'zero' => q(Gruzijas lari),
@@ -2716,7 +2715,7 @@ has 'curriencies' => (
 		},
 		'GHS' => {
 			display_name => {
-				'default' => q(Ganas sedi),
+				'currency' => q(Ganas sedi),
 				'one' => q(Ganas sedi),
 				'other' => q(Ganas sedi),
 				'zero' => q(Ganas sedi),
@@ -2724,7 +2723,7 @@ has 'curriencies' => (
 		},
 		'GIP' => {
 			display_name => {
-				'default' => q(Gibraltāra mārciņa),
+				'currency' => q(Gibraltāra mārciņa),
 				'one' => q(Gibraltāra mārciņa),
 				'other' => q(Gibraltāra mārciņas),
 				'zero' => q(Gibraltāra mārciņas),
@@ -2732,7 +2731,7 @@ has 'curriencies' => (
 		},
 		'GMD' => {
 			display_name => {
-				'default' => q(Gambijas dalasi),
+				'currency' => q(Gambijas dalasi),
 				'one' => q(Gambijas dalasi),
 				'other' => q(Gambijas dalasi),
 				'zero' => q(Gambijas dalasi),
@@ -2740,7 +2739,7 @@ has 'curriencies' => (
 		},
 		'GNF' => {
 			display_name => {
-				'default' => q(Gvinejas franks),
+				'currency' => q(Gvinejas franks),
 				'one' => q(Gvinejas franks),
 				'other' => q(Gvinejas franki),
 				'zero' => q(Gvinejas franki),
@@ -2748,12 +2747,12 @@ has 'curriencies' => (
 		},
 		'GRD' => {
 			display_name => {
-				'default' => q(Grieķijas drahma),
+				'currency' => q(Grieķijas drahma),
 			},
 		},
 		'GTQ' => {
 			display_name => {
-				'default' => q(Gvatemalas ketsals),
+				'currency' => q(Gvatemalas ketsals),
 				'one' => q(Gvatemalas ketsals),
 				'other' => q(Gvatemalas ketsali),
 				'zero' => q(Gvatemalas ketsali),
@@ -2761,7 +2760,7 @@ has 'curriencies' => (
 		},
 		'GYD' => {
 			display_name => {
-				'default' => q(Gajānas dolārs),
+				'currency' => q(Gajānas dolārs),
 				'one' => q(Gajānas dolārs),
 				'other' => q(Gajānas dolāri),
 				'zero' => q(Gajānas dolāri),
@@ -2770,7 +2769,7 @@ has 'curriencies' => (
 		'HKD' => {
 			symbol => 'HK$',
 			display_name => {
-				'default' => q(Honkongas dolārs),
+				'currency' => q(Honkongas dolārs),
 				'one' => q(Honkongas dolārs),
 				'other' => q(Honkongas dolāri),
 				'zero' => q(Honkongas dolāri),
@@ -2778,7 +2777,7 @@ has 'curriencies' => (
 		},
 		'HNL' => {
 			display_name => {
-				'default' => q(Hondurasas lempīra),
+				'currency' => q(Hondurasas lempīra),
 				'one' => q(Hondurasas lempīra),
 				'other' => q(Hondurasas lempīras),
 				'zero' => q(Hondurasas lempīras),
@@ -2786,7 +2785,7 @@ has 'curriencies' => (
 		},
 		'HRK' => {
 			display_name => {
-				'default' => q(Horvātijas kuna),
+				'currency' => q(Horvātijas kuna),
 				'one' => q(Horvātijas kuna),
 				'other' => q(Horvātijas kunas),
 				'zero' => q(Horvātijas kunas),
@@ -2794,7 +2793,7 @@ has 'curriencies' => (
 		},
 		'HTG' => {
 			display_name => {
-				'default' => q(Haiti gurds),
+				'currency' => q(Haiti gurds),
 				'one' => q(Haiti gurds),
 				'other' => q(Haiti gurdi),
 				'zero' => q(Haiti gurdi),
@@ -2802,7 +2801,7 @@ has 'curriencies' => (
 		},
 		'HUF' => {
 			display_name => {
-				'default' => q(Ungārijas forints),
+				'currency' => q(Ungārijas forints),
 				'one' => q(Ungārijas forints),
 				'other' => q(Ungārijas forinti),
 				'zero' => q(Ungārijas forinti),
@@ -2810,7 +2809,7 @@ has 'curriencies' => (
 		},
 		'IDR' => {
 			display_name => {
-				'default' => q(Indonēzijas rūpija),
+				'currency' => q(Indonēzijas rūpija),
 				'one' => q(Indonēzijas rūpija),
 				'other' => q(Indonēzijas rūpijas),
 				'zero' => q(Indonēzijas rūpijas),
@@ -2818,13 +2817,13 @@ has 'curriencies' => (
 		},
 		'IEP' => {
 			display_name => {
-				'default' => q(Īrijas mārciņa),
+				'currency' => q(Īrijas mārciņa),
 			},
 		},
 		'ILS' => {
 			symbol => '₪',
 			display_name => {
-				'default' => q(Izraēlas šekelis),
+				'currency' => q(Izraēlas šekelis),
 				'one' => q(Izraēlas šekelis),
 				'other' => q(Izraēlas šekeļi),
 				'zero' => q(Izraēlas šekeļi),
@@ -2833,7 +2832,7 @@ has 'curriencies' => (
 		'INR' => {
 			symbol => '₹',
 			display_name => {
-				'default' => q(Indijas rūpija),
+				'currency' => q(Indijas rūpija),
 				'one' => q(Indijas rūpija),
 				'other' => q(Indijas rūpijas),
 				'zero' => q(Indijas rūpijas),
@@ -2841,7 +2840,7 @@ has 'curriencies' => (
 		},
 		'IQD' => {
 			display_name => {
-				'default' => q(Irākas dinārs),
+				'currency' => q(Irākas dinārs),
 				'one' => q(Irākas dinārs),
 				'other' => q(Irākas dināri),
 				'zero' => q(Irākas dināri),
@@ -2849,7 +2848,7 @@ has 'curriencies' => (
 		},
 		'IRR' => {
 			display_name => {
-				'default' => q(Irānas riāls),
+				'currency' => q(Irānas riāls),
 				'one' => q(Irānas riāls),
 				'other' => q(Irānas riāli),
 				'zero' => q(Irānas riāli),
@@ -2857,7 +2856,7 @@ has 'curriencies' => (
 		},
 		'ISK' => {
 			display_name => {
-				'default' => q(Īslandes krona),
+				'currency' => q(Īslandes krona),
 				'one' => q(Īslandes krona),
 				'other' => q(Īslandes kronas),
 				'zero' => q(Īslandes kronas),
@@ -2865,12 +2864,12 @@ has 'curriencies' => (
 		},
 		'ITL' => {
 			display_name => {
-				'default' => q(Itālijas lira),
+				'currency' => q(Itālijas lira),
 			},
 		},
 		'JMD' => {
 			display_name => {
-				'default' => q(Jamaikas dolārs),
+				'currency' => q(Jamaikas dolārs),
 				'one' => q(Jamaikas dolārs),
 				'other' => q(Jamaikas dolāri),
 				'zero' => q(Jamaikas dolāri),
@@ -2878,7 +2877,7 @@ has 'curriencies' => (
 		},
 		'JOD' => {
 			display_name => {
-				'default' => q(Jordānas dinārs),
+				'currency' => q(Jordānas dinārs),
 				'one' => q(Jordānas dinārs),
 				'other' => q(Jordānas dināri),
 				'zero' => q(Jordānas dināri),
@@ -2887,7 +2886,7 @@ has 'curriencies' => (
 		'JPY' => {
 			symbol => '¥',
 			display_name => {
-				'default' => q(Japānas jena),
+				'currency' => q(Japānas jena),
 				'one' => q(Japānas jena),
 				'other' => q(Japānas jenas),
 				'zero' => q(Japānas jenas),
@@ -2895,7 +2894,7 @@ has 'curriencies' => (
 		},
 		'KES' => {
 			display_name => {
-				'default' => q(Kenijas šiliņš),
+				'currency' => q(Kenijas šiliņš),
 				'one' => q(Kenijas šiliņš),
 				'other' => q(Kenijas šiliņi),
 				'zero' => q(Kenijas šiliņi),
@@ -2903,7 +2902,7 @@ has 'curriencies' => (
 		},
 		'KGS' => {
 			display_name => {
-				'default' => q(Kirgizstānas soms),
+				'currency' => q(Kirgizstānas soms),
 				'one' => q(Kirgizstānas soms),
 				'other' => q(Kirgizstānas somi),
 				'zero' => q(Kirgizstānas somi),
@@ -2911,7 +2910,7 @@ has 'curriencies' => (
 		},
 		'KHR' => {
 			display_name => {
-				'default' => q(Kambodžas riels),
+				'currency' => q(Kambodžas riels),
 				'one' => q(Kambodžas riels),
 				'other' => q(Kambodžas rieli),
 				'zero' => q(Kambodžas rieli),
@@ -2919,7 +2918,7 @@ has 'curriencies' => (
 		},
 		'KMF' => {
 			display_name => {
-				'default' => q(Komoru franks),
+				'currency' => q(Komoru franks),
 				'one' => q(Komoru franks),
 				'other' => q(Komoru franki),
 				'zero' => q(Komoru franki),
@@ -2927,7 +2926,7 @@ has 'curriencies' => (
 		},
 		'KPW' => {
 			display_name => {
-				'default' => q(Ziemeļkorejas vona),
+				'currency' => q(Ziemeļkorejas vona),
 				'one' => q(Ziemeļkorejas vona),
 				'other' => q(Ziemeļkorejas vonas),
 				'zero' => q(Ziemeļkorejas vonas),
@@ -2936,7 +2935,7 @@ has 'curriencies' => (
 		'KRW' => {
 			symbol => '₩',
 			display_name => {
-				'default' => q(Dienvidkorejas vona),
+				'currency' => q(Dienvidkorejas vona),
 				'one' => q(Dienvidkorejas vona),
 				'other' => q(Dienvidkorejas vonas),
 				'zero' => q(Dienvidkorejas vonas),
@@ -2944,7 +2943,7 @@ has 'curriencies' => (
 		},
 		'KWD' => {
 			display_name => {
-				'default' => q(Kuveitas dinārs),
+				'currency' => q(Kuveitas dinārs),
 				'one' => q(Kuveitas dinārs),
 				'other' => q(Kuveitas dināri),
 				'zero' => q(Kuveitas dināri),
@@ -2952,7 +2951,7 @@ has 'curriencies' => (
 		},
 		'KYD' => {
 			display_name => {
-				'default' => q(Kaimanu salu dolārs),
+				'currency' => q(Kaimanu salu dolārs),
 				'one' => q(Kaimanu salu dolārs),
 				'other' => q(Kaimanu salu dolāri),
 				'zero' => q(Kaimanu salu dolāri),
@@ -2960,7 +2959,7 @@ has 'curriencies' => (
 		},
 		'KZT' => {
 			display_name => {
-				'default' => q(Kazahstānas tenge),
+				'currency' => q(Kazahstānas tenge),
 				'one' => q(Kazahstānas tenge),
 				'other' => q(Kazahstānas tenges),
 				'zero' => q(Kazahstānas tenges),
@@ -2968,7 +2967,7 @@ has 'curriencies' => (
 		},
 		'LAK' => {
 			display_name => {
-				'default' => q(Laosas kips),
+				'currency' => q(Laosas kips),
 				'one' => q(Laosas kips),
 				'other' => q(Laosas kipi),
 				'zero' => q(Laosas kipi),
@@ -2976,7 +2975,7 @@ has 'curriencies' => (
 		},
 		'LBP' => {
 			display_name => {
-				'default' => q(Libānas mārciņa),
+				'currency' => q(Libānas mārciņa),
 				'one' => q(Libānas mārciņa),
 				'other' => q(Libānas mārciņas),
 				'zero' => q(Libānas mārciņas),
@@ -2984,7 +2983,7 @@ has 'curriencies' => (
 		},
 		'LKR' => {
 			display_name => {
-				'default' => q(Šrilankas rūpija),
+				'currency' => q(Šrilankas rūpija),
 				'one' => q(Šrilankas rūpija),
 				'other' => q(Šrilankas rūpijas),
 				'zero' => q(Šrilankas rūpijas),
@@ -2992,7 +2991,7 @@ has 'curriencies' => (
 		},
 		'LRD' => {
 			display_name => {
-				'default' => q(Libērijas dolārs),
+				'currency' => q(Libērijas dolārs),
 				'one' => q(Libērijas dolārs),
 				'other' => q(Libērijas dolāri),
 				'zero' => q(Libērijas dolāri),
@@ -3000,12 +2999,12 @@ has 'curriencies' => (
 		},
 		'LSL' => {
 			display_name => {
-				'default' => q(Lesoto loti),
+				'currency' => q(Lesoto loti),
 			},
 		},
 		'LTL' => {
 			display_name => {
-				'default' => q(Lietuvas lits),
+				'currency' => q(Lietuvas lits),
 				'one' => q(Lietuvas lits),
 				'other' => q(Lietuvas liti),
 				'zero' => q(Lietuvas liti),
@@ -3013,13 +3012,13 @@ has 'curriencies' => (
 		},
 		'LUF' => {
 			display_name => {
-				'default' => q(Luksemburgas franks),
+				'currency' => q(Luksemburgas franks),
 			},
 		},
 		'LVL' => {
 			symbol => 'Ls',
 			display_name => {
-				'default' => q(Latvijas lats),
+				'currency' => q(Latvijas lats),
 				'one' => q(Latvijas lats),
 				'other' => q(Latvijas lati),
 				'zero' => q(Latvijas lati),
@@ -3027,12 +3026,12 @@ has 'curriencies' => (
 		},
 		'LVR' => {
 			display_name => {
-				'default' => q(Latvijas rublis),
+				'currency' => q(Latvijas rublis),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'default' => q(Lībijas dinārs),
+				'currency' => q(Lībijas dinārs),
 				'one' => q(Lībijas dinārs),
 				'other' => q(Lībijas dināri),
 				'zero' => q(Lībijas dināri),
@@ -3040,7 +3039,7 @@ has 'curriencies' => (
 		},
 		'MAD' => {
 			display_name => {
-				'default' => q(Marokas dirhēms),
+				'currency' => q(Marokas dirhēms),
 				'one' => q(Marokas dirhēms),
 				'other' => q(Marokas dirhēmi),
 				'zero' => q(Marokas dirhēmi),
@@ -3048,7 +3047,7 @@ has 'curriencies' => (
 		},
 		'MDL' => {
 			display_name => {
-				'default' => q(Moldovas leja),
+				'currency' => q(Moldovas leja),
 				'one' => q(Moldovas leja),
 				'other' => q(Moldovas lejas),
 				'zero' => q(Moldovas lejas),
@@ -3056,7 +3055,7 @@ has 'curriencies' => (
 		},
 		'MGA' => {
 			display_name => {
-				'default' => q(Madagaskaras ariari),
+				'currency' => q(Madagaskaras ariari),
 				'one' => q(Madagaskaras ariari),
 				'other' => q(Madagaskaras ariari),
 				'zero' => q(Madagaskaras ariari),
@@ -3064,7 +3063,7 @@ has 'curriencies' => (
 		},
 		'MKD' => {
 			display_name => {
-				'default' => q(Maķedonijas denārs),
+				'currency' => q(Maķedonijas denārs),
 				'one' => q(Maķedonijas denārs),
 				'other' => q(Maķedonijas denāri),
 				'zero' => q(Maķedonijas denāri),
@@ -3072,12 +3071,12 @@ has 'curriencies' => (
 		},
 		'MLF' => {
 			display_name => {
-				'default' => q(CFA (Āfrikas) franks),
+				'currency' => q(CFA \(Āfrikas\) franks),
 			},
 		},
 		'MMK' => {
 			display_name => {
-				'default' => q(Mjanmas kjats),
+				'currency' => q(Mjanmas kjats),
 				'one' => q(Mjanmas kjats),
 				'other' => q(Mjanmas kjati),
 				'zero' => q(Mjanmas kjati),
@@ -3085,7 +3084,7 @@ has 'curriencies' => (
 		},
 		'MNT' => {
 			display_name => {
-				'default' => q(Mongolijas tugriks),
+				'currency' => q(Mongolijas tugriks),
 				'one' => q(Mongolijas tugriks),
 				'other' => q(Mongolijas tugriki),
 				'zero' => q(Mongolijas tugriki),
@@ -3093,7 +3092,7 @@ has 'curriencies' => (
 		},
 		'MOP' => {
 			display_name => {
-				'default' => q(Makao pataka),
+				'currency' => q(Makao pataka),
 				'one' => q(Makao pataka),
 				'other' => q(Makao patakas),
 				'zero' => q(Makao patakas),
@@ -3101,7 +3100,7 @@ has 'curriencies' => (
 		},
 		'MRO' => {
 			display_name => {
-				'default' => q(Mauritānijas ugija),
+				'currency' => q(Mauritānijas ugija),
 				'one' => q(Mauritānijas ugija),
 				'other' => q(Mauritānijas ugijas),
 				'zero' => q(Mauritānijas ugijas),
@@ -3109,17 +3108,17 @@ has 'curriencies' => (
 		},
 		'MTL' => {
 			display_name => {
-				'default' => q(Maltas lira),
+				'currency' => q(Maltas lira),
 			},
 		},
 		'MTP' => {
 			display_name => {
-				'default' => q(Maltas mārciņa),
+				'currency' => q(Maltas mārciņa),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'default' => q(Maurīcijas rūpija),
+				'currency' => q(Maurīcijas rūpija),
 				'one' => q(Maurīcijas rūpija),
 				'other' => q(Maurīcijas rūpijas),
 				'zero' => q(Maurīcijas rūpijas),
@@ -3127,7 +3126,7 @@ has 'curriencies' => (
 		},
 		'MVR' => {
 			display_name => {
-				'default' => q(Maldīvijas rūfija),
+				'currency' => q(Maldīvijas rūfija),
 				'one' => q(Maldīvijas rūfija),
 				'other' => q(Maldīvijas rūfijas),
 				'zero' => q(Maldīvijas rūfijas),
@@ -3135,7 +3134,7 @@ has 'curriencies' => (
 		},
 		'MWK' => {
 			display_name => {
-				'default' => q(Malāvijas kvača),
+				'currency' => q(Malāvijas kvača),
 				'one' => q(Malāvijas kvača),
 				'other' => q(Malāvijas kvačas),
 				'zero' => q(Malāvijas kvačas),
@@ -3144,7 +3143,7 @@ has 'curriencies' => (
 		'MXN' => {
 			symbol => 'MX$',
 			display_name => {
-				'default' => q(Meksikas peso),
+				'currency' => q(Meksikas peso),
 				'one' => q(Meksikas peso),
 				'other' => q(Meksikas peso),
 				'zero' => q(Meksikas peso),
@@ -3152,7 +3151,7 @@ has 'curriencies' => (
 		},
 		'MYR' => {
 			display_name => {
-				'default' => q(Malaizijas ringits),
+				'currency' => q(Malaizijas ringits),
 				'one' => q(Malaizijas ringits),
 				'other' => q(Malaizijas ringiti),
 				'zero' => q(Malaizijas ringiti),
@@ -3160,12 +3159,12 @@ has 'curriencies' => (
 		},
 		'MZE' => {
 			display_name => {
-				'default' => q(Mozambikas eskudo),
+				'currency' => q(Mozambikas eskudo),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'default' => q(Mozambikas vecais metikals),
+				'currency' => q(Mozambikas vecais metikals),
 				'one' => q(Mozambikas vecais metikals),
 				'other' => q(Mozambikas vecie metikali),
 				'zero' => q(Mozambikas vecie metikali),
@@ -3173,7 +3172,7 @@ has 'curriencies' => (
 		},
 		'MZN' => {
 			display_name => {
-				'default' => q(Mozambikas metikals),
+				'currency' => q(Mozambikas metikals),
 				'one' => q(Mozambikas metikals),
 				'other' => q(Mozambikas metikali),
 				'zero' => q(Mozambikas metikali),
@@ -3181,7 +3180,7 @@ has 'curriencies' => (
 		},
 		'NAD' => {
 			display_name => {
-				'default' => q(Namībijas dolārs),
+				'currency' => q(Namībijas dolārs),
 				'one' => q(Namībijas dolārs),
 				'other' => q(Namībijas dolāri),
 				'zero' => q(Namībijas dolāri),
@@ -3189,7 +3188,7 @@ has 'curriencies' => (
 		},
 		'NGN' => {
 			display_name => {
-				'default' => q(Nigērijas naira),
+				'currency' => q(Nigērijas naira),
 				'one' => q(Nigērijas naira),
 				'other' => q(Nigērijas nairas),
 				'zero' => q(Nigērijas nairas),
@@ -3197,7 +3196,7 @@ has 'curriencies' => (
 		},
 		'NIO' => {
 			display_name => {
-				'default' => q(Nikaragvas kordoba),
+				'currency' => q(Nikaragvas kordoba),
 				'one' => q(Nikaragvas kordoba),
 				'other' => q(Nikaragvas kordobas),
 				'zero' => q(Nikaragvas kordobas),
@@ -3205,12 +3204,12 @@ has 'curriencies' => (
 		},
 		'NLG' => {
 			display_name => {
-				'default' => q(Nīderlandes guldenis),
+				'currency' => q(Nīderlandes guldenis),
 			},
 		},
 		'NOK' => {
 			display_name => {
-				'default' => q(Norvēģijas krona),
+				'currency' => q(Norvēģijas krona),
 				'one' => q(Norvēģijas krona),
 				'other' => q(Norvēģijas kronas),
 				'zero' => q(Norvēģijas kronas),
@@ -3218,7 +3217,7 @@ has 'curriencies' => (
 		},
 		'NPR' => {
 			display_name => {
-				'default' => q(Nepālas rūpija),
+				'currency' => q(Nepālas rūpija),
 				'one' => q(Nepālas rūpija),
 				'other' => q(Nepālas rūpijas),
 				'zero' => q(Nepālas rūpijas),
@@ -3227,7 +3226,7 @@ has 'curriencies' => (
 		'NZD' => {
 			symbol => 'NZ$',
 			display_name => {
-				'default' => q(Jaunzēlandes dolārs),
+				'currency' => q(Jaunzēlandes dolārs),
 				'one' => q(Jaunzēlandes dolārs),
 				'other' => q(Jaunzēlandes dolāri),
 				'zero' => q(Jaunzēlandes dolāri),
@@ -3235,7 +3234,7 @@ has 'curriencies' => (
 		},
 		'OMR' => {
 			display_name => {
-				'default' => q(Omānas riāls),
+				'currency' => q(Omānas riāls),
 				'one' => q(Omānas riāls),
 				'other' => q(Omānas riāli),
 				'zero' => q(Omānas riāli),
@@ -3243,7 +3242,7 @@ has 'curriencies' => (
 		},
 		'PAB' => {
 			display_name => {
-				'default' => q(Panamas balboa),
+				'currency' => q(Panamas balboa),
 				'one' => q(Panamas balboa),
 				'other' => q(Panamas balboa),
 				'zero' => q(Panamas balboa),
@@ -3251,7 +3250,7 @@ has 'curriencies' => (
 		},
 		'PEN' => {
 			display_name => {
-				'default' => q(Peru jaunais sols),
+				'currency' => q(Peru jaunais sols),
 				'one' => q(Peru jaunais sols),
 				'other' => q(Peru jaunie soli),
 				'zero' => q(Peru jaunie soli),
@@ -3259,7 +3258,7 @@ has 'curriencies' => (
 		},
 		'PGK' => {
 			display_name => {
-				'default' => q(Papua-Jaungvinejas kina),
+				'currency' => q(Papua-Jaungvinejas kina),
 				'one' => q(Papua-Jaungvinejas kina),
 				'other' => q(Papua-Jaungvinejas kinas),
 				'zero' => q(Papua-Jaungvinejas kinas),
@@ -3267,7 +3266,7 @@ has 'curriencies' => (
 		},
 		'PHP' => {
 			display_name => {
-				'default' => q(Filipīnu peso),
+				'currency' => q(Filipīnu peso),
 				'one' => q(Filipīnu peso),
 				'other' => q(Filipīnu peso),
 				'zero' => q(Filipīnu peso),
@@ -3275,7 +3274,7 @@ has 'curriencies' => (
 		},
 		'PKR' => {
 			display_name => {
-				'default' => q(Pakistānas rūpija),
+				'currency' => q(Pakistānas rūpija),
 				'one' => q(Pakistānas rūpija),
 				'other' => q(Pakistānas rūpijas),
 				'zero' => q(Pakistānas rūpijas),
@@ -3283,7 +3282,7 @@ has 'curriencies' => (
 		},
 		'PLN' => {
 			display_name => {
-				'default' => q(Polijas zlots),
+				'currency' => q(Polijas zlots),
 				'one' => q(Polijas zlots),
 				'other' => q(Polijas zloti),
 				'zero' => q(Polijas zloti),
@@ -3291,12 +3290,12 @@ has 'curriencies' => (
 		},
 		'PTE' => {
 			display_name => {
-				'default' => q(Portugāles eskudo),
+				'currency' => q(Portugāles eskudo),
 			},
 		},
 		'PYG' => {
 			display_name => {
-				'default' => q(Paragvajas guarani),
+				'currency' => q(Paragvajas guarani),
 				'one' => q(Paragvajas guarani),
 				'other' => q(Paragvajas guarani),
 				'zero' => q(Paragvajas guarani),
@@ -3304,7 +3303,7 @@ has 'curriencies' => (
 		},
 		'QAR' => {
 			display_name => {
-				'default' => q(Kataras riāls),
+				'currency' => q(Kataras riāls),
 				'one' => q(Kataras riāls),
 				'other' => q(Kataras riāli),
 				'zero' => q(Kataras riāli),
@@ -3312,7 +3311,7 @@ has 'curriencies' => (
 		},
 		'ROL' => {
 			display_name => {
-				'default' => q(Rumānijas vecā leja),
+				'currency' => q(Rumānijas vecā leja),
 				'one' => q(Rumānijas vecā leva),
 				'other' => q(Rumānijas vecās levas),
 				'zero' => q(Rumānijas vecās levas),
@@ -3320,7 +3319,7 @@ has 'curriencies' => (
 		},
 		'RON' => {
 			display_name => {
-				'default' => q(Rumānijas leja),
+				'currency' => q(Rumānijas leja),
 				'one' => q(Rumānijas leja),
 				'other' => q(Rumānijas lejas),
 				'zero' => q(Rumānijas lejas),
@@ -3328,7 +3327,7 @@ has 'curriencies' => (
 		},
 		'RSD' => {
 			display_name => {
-				'default' => q(Serbijas dinārs),
+				'currency' => q(Serbijas dinārs),
 				'one' => q(Serbijas dinārs),
 				'other' => q(Serbijas dināri),
 				'zero' => q(Serbijas dināri),
@@ -3336,7 +3335,7 @@ has 'curriencies' => (
 		},
 		'RUB' => {
 			display_name => {
-				'default' => q(Krievijas rublis),
+				'currency' => q(Krievijas rublis),
 				'one' => q(Krievijas rublis),
 				'other' => q(Krievijas rubļi),
 				'zero' => q(Krievijas rubļi),
@@ -3344,7 +3343,7 @@ has 'curriencies' => (
 		},
 		'RWF' => {
 			display_name => {
-				'default' => q(Ruandas franks),
+				'currency' => q(Ruandas franks),
 				'one' => q(Ruandas franks),
 				'other' => q(Ruandas franki),
 				'zero' => q(Ruandas franki),
@@ -3352,7 +3351,7 @@ has 'curriencies' => (
 		},
 		'SAR' => {
 			display_name => {
-				'default' => q(Saūda riāls),
+				'currency' => q(Saūda riāls),
 				'one' => q(Saūda riāls),
 				'other' => q(Saūda riāli),
 				'zero' => q(Saūda riāli),
@@ -3360,7 +3359,7 @@ has 'curriencies' => (
 		},
 		'SBD' => {
 			display_name => {
-				'default' => q(Zālamana Salu dolārs),
+				'currency' => q(Zālamana Salu dolārs),
 				'one' => q(Zālamana Salu dolārs),
 				'other' => q(Zālamana Salu dolāri),
 				'zero' => q(Zālamana Salu dolāri),
@@ -3368,7 +3367,7 @@ has 'curriencies' => (
 		},
 		'SCR' => {
 			display_name => {
-				'default' => q(Seišelu salu rūpija),
+				'currency' => q(Seišelu salu rūpija),
 				'one' => q(Seišelu salu rūpija),
 				'other' => q(Seišelu salu rūpijas),
 				'zero' => q(Seišelu salu rūpijas),
@@ -3376,7 +3375,7 @@ has 'curriencies' => (
 		},
 		'SDG' => {
 			display_name => {
-				'default' => q(Sudānas mārciņa),
+				'currency' => q(Sudānas mārciņa),
 				'one' => q(Sudānas mārciņa),
 				'other' => q(Sudānas mārciņas),
 				'zero' => q(Sudānas mārciņas),
@@ -3384,7 +3383,7 @@ has 'curriencies' => (
 		},
 		'SEK' => {
 			display_name => {
-				'default' => q(Zviedrijas krona),
+				'currency' => q(Zviedrijas krona),
 				'one' => q(Zviedrijas krona),
 				'other' => q(Zviedrijas kronas),
 				'zero' => q(Zviedrijas kronas),
@@ -3392,7 +3391,7 @@ has 'curriencies' => (
 		},
 		'SGD' => {
 			display_name => {
-				'default' => q(Singapūras dolārs),
+				'currency' => q(Singapūras dolārs),
 				'one' => q(Singapūras dolārs),
 				'other' => q(Singapūras dolāri),
 				'zero' => q(Singapūras dolāri),
@@ -3400,7 +3399,7 @@ has 'curriencies' => (
 		},
 		'SHP' => {
 			display_name => {
-				'default' => q(Sv.Helēnas salas mārciņa),
+				'currency' => q(Sv.Helēnas salas mārciņa),
 				'one' => q(Sv.Helēnas salas mārciņa),
 				'other' => q(Sv.Helēnas salas mārciņas),
 				'zero' => q(Sv.Helēnas salas mārciņas),
@@ -3408,17 +3407,17 @@ has 'curriencies' => (
 		},
 		'SIT' => {
 			display_name => {
-				'default' => q(Slovēnijas tolars),
+				'currency' => q(Slovēnijas tolars),
 			},
 		},
 		'SKK' => {
 			display_name => {
-				'default' => q(Slovakijas krona),
+				'currency' => q(Slovakijas krona),
 			},
 		},
 		'SLL' => {
 			display_name => {
-				'default' => q(Sjerraleones leone),
+				'currency' => q(Sjerraleones leone),
 				'one' => q(Sjerraleones leone),
 				'other' => q(Sjerraleones leones),
 				'zero' => q(Sjerraleones leones),
@@ -3426,7 +3425,7 @@ has 'curriencies' => (
 		},
 		'SOS' => {
 			display_name => {
-				'default' => q(Somālijas šiliņš),
+				'currency' => q(Somālijas šiliņš),
 				'one' => q(Somālijas šiliņš),
 				'other' => q(Somālijas šiliņi),
 				'zero' => q(Somālijas šiliņi),
@@ -3434,7 +3433,7 @@ has 'curriencies' => (
 		},
 		'SRD' => {
 			display_name => {
-				'default' => q(Surinamas dolārs),
+				'currency' => q(Surinamas dolārs),
 				'one' => q(Surinamas dolārs),
 				'other' => q(Surinamas dolāri),
 				'zero' => q(Surinamas dolāri),
@@ -3442,12 +3441,12 @@ has 'curriencies' => (
 		},
 		'SRG' => {
 			display_name => {
-				'default' => q(Surinamas guldenis),
+				'currency' => q(Surinamas guldenis),
 			},
 		},
 		'SSP' => {
 			display_name => {
-				'default' => q(Dienvidsudānas mārciņa),
+				'currency' => q(Dienvidsudānas mārciņa),
 				'one' => q(Dienvidsudānas mārciņa),
 				'other' => q(Dienvidsudānas mārciņas),
 				'zero' => q(Dienvidsudānas mārciņas),
@@ -3455,7 +3454,7 @@ has 'curriencies' => (
 		},
 		'STD' => {
 			display_name => {
-				'default' => q(Santome un Prinsipi dobra),
+				'currency' => q(Santome un Prinsipi dobra),
 				'one' => q(Santome un Prinsipi dobra),
 				'other' => q(Santome un Prinsipi dobras),
 				'zero' => q(Santome un Prinsipi dobras),
@@ -3463,12 +3462,12 @@ has 'curriencies' => (
 		},
 		'SVC' => {
 			display_name => {
-				'default' => q(Salvadoras kolons),
+				'currency' => q(Salvadoras kolons),
 			},
 		},
 		'SYP' => {
 			display_name => {
-				'default' => q(Sīrijas mārciņa),
+				'currency' => q(Sīrijas mārciņa),
 				'one' => q(Sīrijas mārciņa),
 				'other' => q(Sīrijas mārciņas),
 				'zero' => q(Sīrijas mārciņas),
@@ -3476,7 +3475,7 @@ has 'curriencies' => (
 		},
 		'SZL' => {
 			display_name => {
-				'default' => q(Svazilendas lilangeni),
+				'currency' => q(Svazilendas lilangeni),
 				'one' => q(Svazilendas lilangeni),
 				'other' => q(Svazilendas lilangeni),
 				'zero' => q(Svazilendas lilangeni),
@@ -3485,7 +3484,7 @@ has 'curriencies' => (
 		'THB' => {
 			symbol => '฿',
 			display_name => {
-				'default' => q(Taizemes bāts),
+				'currency' => q(Taizemes bāts),
 				'one' => q(Taizemes bāts),
 				'other' => q(Taizemes bāti),
 				'zero' => q(Taizemes bāti),
@@ -3493,7 +3492,7 @@ has 'curriencies' => (
 		},
 		'TJS' => {
 			display_name => {
-				'default' => q(Tadžikistānas somons),
+				'currency' => q(Tadžikistānas somons),
 				'one' => q(Tadžikistānas somons),
 				'other' => q(Tadžikistānas somoni),
 				'zero' => q(Tadžikistānas somoni),
@@ -3501,12 +3500,12 @@ has 'curriencies' => (
 		},
 		'TMM' => {
 			display_name => {
-				'default' => q(Turkmenistānas manats),
+				'currency' => q(Turkmenistānas manats),
 			},
 		},
 		'TMT' => {
 			display_name => {
-				'default' => q(Turkmenistānas jaunais manats),
+				'currency' => q(Turkmenistānas jaunais manats),
 				'one' => q(Turkmenistānas jaunais manats),
 				'other' => q(Turkmenistānas manati),
 				'zero' => q(Turkmenistānas manati),
@@ -3514,7 +3513,7 @@ has 'curriencies' => (
 		},
 		'TND' => {
 			display_name => {
-				'default' => q(Tunisijas dinārs),
+				'currency' => q(Tunisijas dinārs),
 				'one' => q(Tunisijas dinārs),
 				'other' => q(Tunisijas dināri),
 				'zero' => q(Tunisijas dināri),
@@ -3522,7 +3521,7 @@ has 'curriencies' => (
 		},
 		'TOP' => {
 			display_name => {
-				'default' => q(Tongas paanga),
+				'currency' => q(Tongas paanga),
 				'one' => q(Tongas paanga),
 				'other' => q(Tongas paangas),
 				'zero' => q(Tongas paangas),
@@ -3530,12 +3529,12 @@ has 'curriencies' => (
 		},
 		'TRL' => {
 			display_name => {
-				'default' => q(Turcijas lira),
+				'currency' => q(Turcijas lira),
 			},
 		},
 		'TRY' => {
 			display_name => {
-				'default' => q(Turcijas jaunā lira),
+				'currency' => q(Turcijas jaunā lira),
 				'one' => q(Turcijas jaunā lira),
 				'other' => q(Turcijas liras),
 				'zero' => q(Turcijas liras),
@@ -3543,7 +3542,7 @@ has 'curriencies' => (
 		},
 		'TTD' => {
 			display_name => {
-				'default' => q(Trinidādas un Tobāgo dolārs),
+				'currency' => q(Trinidādas un Tobāgo dolārs),
 				'one' => q(Trinidādas un Tobāgo dolārs),
 				'other' => q(Trinidādas un Tobāgo dolāri),
 				'zero' => q(Trinidādas un Tobāgo dolāri),
@@ -3552,7 +3551,7 @@ has 'curriencies' => (
 		'TWD' => {
 			symbol => 'NT$',
 			display_name => {
-				'default' => q(Taivānas jaunais dolārs),
+				'currency' => q(Taivānas jaunais dolārs),
 				'one' => q(Taivānas jaunais dolārs),
 				'other' => q(Taivānas jaunie dolāri),
 				'zero' => q(Taivānas jaunie dolāri),
@@ -3560,7 +3559,7 @@ has 'curriencies' => (
 		},
 		'TZS' => {
 			display_name => {
-				'default' => q(Tanzānijas šiliņš),
+				'currency' => q(Tanzānijas šiliņš),
 				'one' => q(Tanzānijas šiliņš),
 				'other' => q(Tanzānijas šiliņi),
 				'zero' => q(Tanzānijas šiliņi),
@@ -3568,7 +3567,7 @@ has 'curriencies' => (
 		},
 		'UAH' => {
 			display_name => {
-				'default' => q(Ukrainas grivna),
+				'currency' => q(Ukrainas grivna),
 				'one' => q(Ukrainas grivna),
 				'other' => q(Ukrainas grivnas),
 				'zero' => q(Ukrainas grivnas),
@@ -3576,7 +3575,7 @@ has 'curriencies' => (
 		},
 		'UGX' => {
 			display_name => {
-				'default' => q(Ugandas šiliņš),
+				'currency' => q(Ugandas šiliņš),
 				'one' => q(Ugandas šiliņš),
 				'other' => q(Ugandas šiliņi),
 				'zero' => q(Ugandas šiliņi),
@@ -3585,7 +3584,7 @@ has 'curriencies' => (
 		'USD' => {
 			symbol => '$',
 			display_name => {
-				'default' => q(ASV dolārs),
+				'currency' => q(ASV dolārs),
 				'one' => q(ASV dolārs),
 				'other' => q(ASV dolāri),
 				'zero' => q(ASV dolāri),
@@ -3593,7 +3592,7 @@ has 'curriencies' => (
 		},
 		'UYU' => {
 			display_name => {
-				'default' => q(Urugvajas peso),
+				'currency' => q(Urugvajas peso),
 				'one' => q(Urugvajas peso),
 				'other' => q(Urugvajas peso),
 				'zero' => q(Urugvajas peso),
@@ -3601,7 +3600,7 @@ has 'curriencies' => (
 		},
 		'UZS' => {
 			display_name => {
-				'default' => q(Uzbekistānas sums),
+				'currency' => q(Uzbekistānas sums),
 				'one' => q(Uzbekistānas sums),
 				'other' => q(Uzbekistānas sumi),
 				'zero' => q(Uzbekistānas sumi),
@@ -3609,15 +3608,15 @@ has 'curriencies' => (
 		},
 		'VEB' => {
 			display_name => {
-				'default' => q(Venecuēlas bolivārs (1871–2008)),
-				'one' => q(Venecuēlas bolivārs (1871–2008)),
-				'other' => q(Venecuēlas bolivāri (1871–2008)),
-				'zero' => q(Venecuēlas bolivāri (1871–2008)),
+				'currency' => q(Venecuēlas bolivārs \(1871–2008\)),
+				'one' => q(Venecuēlas bolivārs \(1871–2008\)),
+				'other' => q(Venecuēlas bolivāri \(1871–2008\)),
+				'zero' => q(Venecuēlas bolivāri \(1871–2008\)),
 			},
 		},
 		'VEF' => {
 			display_name => {
-				'default' => q(Venecuēlas bolivārs),
+				'currency' => q(Venecuēlas bolivārs),
 				'one' => q(Venecuēlas bolivārs),
 				'other' => q(Venecuēlas bolivāri),
 				'zero' => q(Venecuēlas bolivāri),
@@ -3626,7 +3625,7 @@ has 'curriencies' => (
 		'VND' => {
 			symbol => '₫',
 			display_name => {
-				'default' => q(Vjetnamas dongi),
+				'currency' => q(Vjetnamas dongi),
 				'one' => q(Vjetnamas dongi),
 				'other' => q(Vjetnamas dongi),
 				'zero' => q(Vjetnamas dongi),
@@ -3634,7 +3633,7 @@ has 'curriencies' => (
 		},
 		'VUV' => {
 			display_name => {
-				'default' => q(Vanuatu vatu),
+				'currency' => q(Vanuatu vatu),
 				'one' => q(Vanuatu vatu),
 				'other' => q(Vanuatu vatu),
 				'zero' => q(Vanuatu vatu),
@@ -3642,7 +3641,7 @@ has 'curriencies' => (
 		},
 		'WST' => {
 			display_name => {
-				'default' => q(Samoa tala),
+				'currency' => q(Samoa tala),
 				'one' => q(Samoa tala),
 				'other' => q(Samoa talas),
 				'zero' => q(Samoa talas),
@@ -3651,7 +3650,7 @@ has 'curriencies' => (
 		'XAF' => {
 			symbol => 'FCFA',
 			display_name => {
-				'default' => q(Centrālāfrikas CFA franks),
+				'currency' => q(Centrālāfrikas CFA franks),
 				'one' => q(Centrālāfrikas CFA franks),
 				'other' => q(Centrālāfrikas CFA franki),
 				'zero' => q(Centrālāfrikas CFA franki),
@@ -3659,7 +3658,7 @@ has 'curriencies' => (
 		},
 		'XAG' => {
 			display_name => {
-				'default' => q(sudrabs),
+				'currency' => q(sudrabs),
 				'one' => q(unces sudrabs),
 				'other' => q(unces sudrabs),
 				'zero' => q(unces sudrabs),
@@ -3667,7 +3666,7 @@ has 'curriencies' => (
 		},
 		'XAU' => {
 			display_name => {
-				'default' => q(zelts),
+				'currency' => q(zelts),
 				'one' => q(unces zelts),
 				'other' => q(unces zelts),
 				'zero' => q(unces zelts),
@@ -3675,7 +3674,7 @@ has 'curriencies' => (
 		},
 		'XBA' => {
 			display_name => {
-				'default' => q(Eiropas norēķinu vienība EURCO),
+				'currency' => q(Eiropas norēķinu vienība EURCO),
 				'one' => q(Eiropas norēķinu vienība EURCO),
 				'other' => q(Eiropas norēķinu vienības EURCO),
 				'zero' => q(Eiropas norēķinu vienības EURCO),
@@ -3683,29 +3682,29 @@ has 'curriencies' => (
 		},
 		'XBB' => {
 			display_name => {
-				'default' => q(Eiropas naudas vienība),
+				'currency' => q(Eiropas naudas vienība),
 			},
 		},
 		'XBC' => {
 			display_name => {
-				'default' => q(Eiropas norēķinu vienība (XBC)),
-				'one' => q(Eiropas norēķinu vienība (XBC)),
-				'other' => q(Eiropas norēķinu vienības (XBC)),
-				'zero' => q(Eiropas norēķinu vienības (XBC)),
+				'currency' => q(Eiropas norēķinu vienība \(XBC\)),
+				'one' => q(Eiropas norēķinu vienība \(XBC\)),
+				'other' => q(Eiropas norēķinu vienības \(XBC\)),
+				'zero' => q(Eiropas norēķinu vienības \(XBC\)),
 			},
 		},
 		'XBD' => {
 			display_name => {
-				'default' => q(Eiropas norēķinu vienība (XBD)),
-				'one' => q(Eiropas norēķinu vienība (XBD)),
-				'other' => q(Eiropas norēķinu vienības (XBD)),
-				'zero' => q(Eiropas norēķinu vienības (XBD)),
+				'currency' => q(Eiropas norēķinu vienība \(XBD\)),
+				'one' => q(Eiropas norēķinu vienība \(XBD\)),
+				'other' => q(Eiropas norēķinu vienības \(XBD\)),
+				'zero' => q(Eiropas norēķinu vienības \(XBD\)),
 			},
 		},
 		'XCD' => {
 			symbol => 'EC$',
 			display_name => {
-				'default' => q(Austrumkarību dolārs),
+				'currency' => q(Austrumkarību dolārs),
 				'one' => q(Austrumkarību dolārs),
 				'other' => q(Austrumkarību dolāri),
 				'zero' => q(Austrumkarību dolāri),
@@ -3713,28 +3712,28 @@ has 'curriencies' => (
 		},
 		'XDR' => {
 			display_name => {
-				'default' => q(Speciālās aizņēmuma tiesības),
+				'currency' => q(Speciālās aizņēmuma tiesības),
 			},
 		},
 		'XEU' => {
 			display_name => {
-				'default' => q(Eiropas norēķinu vienība),
+				'currency' => q(Eiropas norēķinu vienība),
 			},
 		},
 		'XFO' => {
 			display_name => {
-				'default' => q(Francijas zelta franks),
+				'currency' => q(Francijas zelta franks),
 			},
 		},
 		'XFU' => {
 			display_name => {
-				'default' => q(Francijas UIC franks),
+				'currency' => q(Francijas UIC franks),
 			},
 		},
 		'XOF' => {
 			symbol => 'CFA',
 			display_name => {
-				'default' => q(Rietumāfrikas CFA franks),
+				'currency' => q(Rietumāfrikas CFA franks),
 				'one' => q(Rietumāfrikas CFA franks),
 				'other' => q(Rietumāfrikas CFA franki),
 				'zero' => q(Rietumāfrikas CFA franki),
@@ -3742,7 +3741,7 @@ has 'curriencies' => (
 		},
 		'XPD' => {
 			display_name => {
-				'default' => q(pallādijs),
+				'currency' => q(pallādijs),
 				'one' => q(unces pallādijs),
 				'other' => q(unces pallādijs),
 				'zero' => q(unces pallādijs),
@@ -3751,7 +3750,7 @@ has 'curriencies' => (
 		'XPF' => {
 			symbol => 'CFPF',
 			display_name => {
-				'default' => q(CFP franks),
+				'currency' => q(CFP franks),
 				'one' => q(CFP franks),
 				'other' => q(CFP franki),
 				'zero' => q(CFP franki),
@@ -3759,7 +3758,7 @@ has 'curriencies' => (
 		},
 		'XPT' => {
 			display_name => {
-				'default' => q(platīns),
+				'currency' => q(platīns),
 				'one' => q(unces platīns),
 				'other' => q(unces platīns),
 				'zero' => q(unces platīns),
@@ -3767,7 +3766,7 @@ has 'curriencies' => (
 		},
 		'XTS' => {
 			display_name => {
-				'default' => q(Testa valūtas kods),
+				'currency' => q(Testa valūtas kods),
 				'one' => q(testa valūtas kods),
 				'other' => q(testa valūtas kods),
 				'zero' => q(testa valūtas kods),
@@ -3775,15 +3774,15 @@ has 'curriencies' => (
 		},
 		'XXX' => {
 			display_name => {
-				'default' => q(Nezināma valūta),
-				'one' => q((nezināma valūta)),
-				'other' => q((nezināma valūta)),
-				'zero' => q((nezināma valūta)),
+				'currency' => q(Nezināma valūta),
+				'one' => q(\(nezināma valūta\)),
+				'other' => q(\(nezināma valūta\)),
+				'zero' => q(\(nezināma valūta\)),
 			},
 		},
 		'YER' => {
 			display_name => {
-				'default' => q(Jemenas riāls),
+				'currency' => q(Jemenas riāls),
 				'one' => q(Jemenas riāls),
 				'other' => q(Jemenas riāli),
 				'zero' => q(Jemenas riāli),
@@ -3791,7 +3790,7 @@ has 'curriencies' => (
 		},
 		'ZAR' => {
 			display_name => {
-				'default' => q(Dienvidāfrikas rands),
+				'currency' => q(Dienvidāfrikas rands),
 				'one' => q(Dienvidāfrikas rands),
 				'other' => q(Dienvidāfrikas randi),
 				'zero' => q(Dienvidāfrikas randi),
@@ -3799,15 +3798,15 @@ has 'curriencies' => (
 		},
 		'ZMK' => {
 			display_name => {
-				'default' => q(Zambijas kvača (1968–2012)),
-				'one' => q(Zambijas kvača (1968–2012)),
-				'other' => q(Zambijas kvačas (1968–2012)),
-				'zero' => q(Zambijas kvačas (1968–2012)),
+				'currency' => q(Zambijas kvača \(1968–2012\)),
+				'one' => q(Zambijas kvača \(1968–2012\)),
+				'other' => q(Zambijas kvačas \(1968–2012\)),
+				'zero' => q(Zambijas kvačas \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'default' => q(Zambijas kvača),
+				'currency' => q(Zambijas kvača),
 				'one' => q(Zambijas kvača),
 				'other' => q(Zambijas kvačas),
 				'zero' => q(Zambijas kvačas),
@@ -3815,15 +3814,15 @@ has 'curriencies' => (
 		},
 		'ZWD' => {
 			display_name => {
-				'default' => q(Zimbabves dolārs),
+				'currency' => q(Zimbabves dolārs),
 			},
 		},
 		'ZWL' => {
 			display_name => {
-				'default' => q(Zimbabves dolārs (2009)),
-				'one' => q(Zimbabves dollārs (2009)),
-				'other' => q(Zimbabves dollāri (2009)),
-				'zero' => q(Zimbabves dollāri (2009)),
+				'currency' => q(Zimbabves dolārs \(2009\)),
+				'one' => q(Zimbabves dollārs \(2009\)),
+				'other' => q(Zimbabves dollāri \(2009\)),
+				'zero' => q(Zimbabves dollāri \(2009\)),
 			},
 		},
 	} },
@@ -4149,8 +4148,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{priekšpusdienā},
 					'pm' => q{pēcpusdienā},
+					'am' => q{priekšpusdienā},
 				},
 			},
 		},
