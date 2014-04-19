@@ -1,6 +1,6 @@
-package Locale::CLDR::Bs v0.0.4;
+package Locale::CLDR::Bs v0.0.5;
 # This file auto generated from Data\common\main\bs.xml
-#	on Sun 13 Apr  9:47:51 am GMT
+#	on Sat 19 Apr  3:31:12 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -4111,6 +4111,35 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'generic' => {
+			Ed => q{E, dd.},
+			Gy => q{y. G},
+			GyMMM => q{MMM y. G},
+			GyMMMEd => q{E, dd. MMM y. G},
+			GyMMMd => q{dd. MMM y. G},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, dd.MM.},
+			MMM => q{LLL},
+			MMMEd => q{E, dd. MMM},
+			MMMd => q{dd. MMM},
+			Md => q{dd.MM.},
+			d => q{d},
+			hm => q{hh:mm a},
+			hms => q{hh:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y. G},
+			yyyy => q{y. G},
+			yyyyM => q{MM.y. G},
+			yyyyMEd => q{E, dd.MM.y. G},
+			yyyyMMM => q{MMM y. G},
+			yyyyMMMEd => q{E, dd. MMM y. G},
+			yyyyMMMd => q{dd. MMM y. G},
+			yyyyMd => q{dd.MM.y. G},
+			yyyyQQQ => q{G y QQQ},
+			yyyyQQQQ => q{G y QQQQ},
+		},
 		'gregorian' => {
 			Ed => q{E, dd.},
 			Gy => q{y. G},
@@ -4162,35 +4191,6 @@ has 'datetime_formats_available_formats' => (
 			yMd => q{dd.MM.y. G},
 			yQQQ => q{y G QQQ},
 			yQQQQ => q{y G QQQQ},
-		},
-		'generic' => {
-			Ed => q{E, dd.},
-			Gy => q{y. G},
-			GyMMM => q{MMM y. G},
-			GyMMMEd => q{E, dd. MMM y. G},
-			GyMMMd => q{dd. MMM y. G},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, dd.MM.},
-			MMM => q{LLL},
-			MMMEd => q{E, dd. MMM},
-			MMMd => q{dd. MMM},
-			Md => q{dd.MM.},
-			d => q{d},
-			hm => q{hh:mm a},
-			hms => q{hh:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y. G},
-			yyyy => q{y. G},
-			yyyyM => q{MM.y. G},
-			yyyyMEd => q{E, dd.MM.y. G},
-			yyyyMMM => q{MMM y. G},
-			yyyyMMMEd => q{E, dd. MMM y. G},
-			yyyyMMMd => q{dd. MMM y. G},
-			yyyyMd => q{dd.MM.y. G},
-			yyyyQQQ => q{G y QQQ},
-			yyyyQQQQ => q{G y QQQQ},
 		},
 	} },
 );

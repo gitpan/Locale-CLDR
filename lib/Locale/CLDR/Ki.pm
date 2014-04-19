@@ -1,6 +1,6 @@
-package Locale::CLDR::Ki v0.0.4;
+package Locale::CLDR::Ki v0.0.5;
 # This file auto generated from Data\common\main\ki.xml
-#	on Sun 13 Apr 10:52:40 am GMT
+#	on Sat 19 Apr  4:34:09 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -813,8 +813,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{Hwaĩ-inĩ},
 					'am' => q{Kiroko},
+					'pm' => q{Hwaĩ-inĩ},
 				},
 			},
 		},
@@ -894,7 +894,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -917,7 +917,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},

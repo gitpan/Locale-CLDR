@@ -1,6 +1,6 @@
-package Locale::CLDR::Pl v0.0.4;
+package Locale::CLDR::Pl v0.0.5;
 # This file auto generated from Data\common\main\pl.xml
-#	on Sun 13 Apr 11:38:29 am GMT
+#	on Sat 19 Apr  5:18:47 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -5539,196 +5539,196 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'gregorian') {
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'night' if $time >= 2200
-					&& $time < 300;
+			if ($_ eq 'japanese') {
 				return 'lateMorning' if $time >= 1000
 					&& $time < 1200;
 				return 'afternoon' if $time > 1200
 					&& $time < 1600;
-				return 'noon' if $time == 1200;
 				return 'earlyMorning' if $time >= 300
 					&& $time < 500;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
 			last SWITCH;
 			}
 			if ($_ eq 'buddhist') {
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'night' if $time >= 2200
-					&& $time < 300;
 				return 'lateMorning' if $time >= 1000
 					&& $time < 1200;
 				return 'afternoon' if $time > 1200
 					&& $time < 1600;
-				return 'noon' if $time == 1200;
 				return 'earlyMorning' if $time >= 300
 					&& $time < 500;
-			last SWITCH;
-			}
-			if ($_ eq 'coptic') {
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
-				return 'morning' if $time >= 500
-					&& $time < 1000;
+				return 'noon' if $time == 1200;
 				return 'night' if $time >= 2200
 					&& $time < 300;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-			last SWITCH;
-			}
-			if ($_ eq 'islamic') {
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
 				return 'morning' if $time >= 500
 					&& $time < 1000;
-				return 'night' if $time >= 2200
-					&& $time < 300;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-			last SWITCH;
-			}
-			if ($_ eq 'hebrew') {
 				return 'evening' if $time >= 1600
 					&& $time < 2200;
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'night' if $time >= 2200
-					&& $time < 300;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-			last SWITCH;
-			}
-			if ($_ eq 'generic') {
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'night' if $time >= 2200
-					&& $time < 300;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-			last SWITCH;
-			}
-			if ($_ eq 'persian') {
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'night' if $time >= 2200
-					&& $time < 300;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-			last SWITCH;
-			}
-			if ($_ eq 'japanese') {
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'night' if $time >= 2200
-					&& $time < 300;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-			last SWITCH;
-			}
-			if ($_ eq 'indian') {
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'night' if $time >= 2200
-					&& $time < 300;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-			last SWITCH;
-			}
-			if ($_ eq 'ethiopic') {
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'night' if $time >= 2200
-					&& $time < 300;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-			last SWITCH;
-			}
-			if ($_ eq 'chinese') {
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'night' if $time >= 2200
-					&& $time < 300;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'afternoon' if $time > 1200
-					&& $time < 1600;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
 			last SWITCH;
 			}
 			if ($_ eq 'roc') {
-				return 'evening' if $time >= 1600
-					&& $time < 2200;
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'night' if $time >= 2200
-					&& $time < 300;
 				return 'lateMorning' if $time >= 1000
 					&& $time < 1200;
 				return 'afternoon' if $time > 1200
 					&& $time < 1600;
-				return 'noon' if $time == 1200;
 				return 'earlyMorning' if $time >= 300
 					&& $time < 500;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
+			last SWITCH;
+			}
+			if ($_ eq 'hebrew') {
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
+			last SWITCH;
+			}
+			if ($_ eq 'islamic') {
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
+			last SWITCH;
+			}
+			if ($_ eq 'ethiopic') {
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
+			last SWITCH;
+			}
+			if ($_ eq 'persian') {
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
+			last SWITCH;
+			}
+			if ($_ eq 'gregorian') {
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
+			last SWITCH;
+			}
+			if ($_ eq 'coptic') {
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
+			last SWITCH;
+			}
+			if ($_ eq 'generic') {
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
+			last SWITCH;
+			}
+			if ($_ eq 'chinese') {
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
+			last SWITCH;
+			}
+			if ($_ eq 'indian') {
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1600;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 2200
+					&& $time < 300;
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'evening' if $time >= 1600
+					&& $time < 2200;
 			last SWITCH;
 			}
 		}
@@ -5743,14 +5743,14 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'afternoon' => q{po południu},
-					'earlyMorning' => q{nad ranem},
-					'am' => q{AM},
+					'noon' => q{w południe},
 					'night' => q{w nocy},
 					'morning' => q{rano},
-					'evening' => q{wieczorem},
 					'pm' => q{PM},
-					'noon' => q{w południe},
+					'earlyMorning' => q{nad ranem},
+					'afternoon' => q{po południu},
+					'am' => q{AM},
+					'evening' => q{wieczorem},
 					'lateMorning' => q{przed południem},
 				},
 			},

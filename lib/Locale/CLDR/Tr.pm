@@ -1,6 +1,6 @@
-package Locale::CLDR::Tr v0.0.4;
+package Locale::CLDR::Tr v0.0.5;
 # This file auto generated from Data\common\main\tr.xml
-#	on Sun 13 Apr 12:15:01 pm GMT
+#	on Sat 19 Apr  5:54:41 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;

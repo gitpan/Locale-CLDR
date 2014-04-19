@@ -1,6 +1,6 @@
-package Locale::CLDR::Eu::Any::Es v0.0.4;
+package Locale::CLDR::Eu::Any::Es v0.0.5;
 # This file auto generated from Data\common\main\eu_ES.xml
-#	on Sun 13 Apr 10:15:59 am GMT
+#	on Sat 19 Apr  3:58:01 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

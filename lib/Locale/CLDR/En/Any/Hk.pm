@@ -1,6 +1,6 @@
-package Locale::CLDR::En::Any::Hk v0.0.4;
+package Locale::CLDR::En::Any::Hk v0.0.5;
 # This file auto generated from Data\common\main\en_HK.xml
-#	on Sun 13 Apr 10:09:27 am GMT
+#	on Sat 19 Apr  3:51:43 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use v5.18;
@@ -36,26 +36,26 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'gregorian') {
-				return 'noon' if $time == 1200;
+			if ($_ eq 'generic') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
+				return 'noon' if $time == 1200;
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'gregorian') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 			last SWITCH;
 			}
 			if ($_ eq 'japanese') {
-				return 'noon' if $time == 1200;
 				return 'am' if $time >= 000
 					&& $time < 1200;
-				return 'pm' if $time > 1200
-					&& $time < 2400;
-			last SWITCH;
-			}
-			if ($_ eq 'generic') {
 				return 'noon' if $time == 1200;
-				return 'am' if $time >= 000
-					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 			last SWITCH;

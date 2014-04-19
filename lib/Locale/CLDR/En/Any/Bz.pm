@@ -1,6 +1,6 @@
-package Locale::CLDR::En::Any::Bz v0.0.4;
+package Locale::CLDR::En::Any::Bz v0.0.5;
 # This file auto generated from Data\common\main\en_BZ.xml
-#	on Sun 13 Apr 10:09:21 am GMT
+#	on Sat 19 Apr  3:51:37 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use v5.18;
@@ -51,18 +51,18 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'gregorian') {
-				return 'noon' if $time == 1200;
+			if ($_ eq 'generic') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
+				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 			last SWITCH;
 			}
-			if ($_ eq 'generic') {
-				return 'noon' if $time == 1200;
+			if ($_ eq 'gregorian') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
+				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 			last SWITCH;

@@ -1,6 +1,6 @@
-package Locale::CLDR::Jgo v0.0.4;
+package Locale::CLDR::Jgo v0.0.5;
 # This file auto generated from Data\common\main\jgo.xml
-#	on Sun 13 Apr 10:49:35 am GMT
+#	on Sat 19 Apr  4:31:05 pm GMT
 # XML file generated 2014-02-24 11:09:08 -0600 (Mon, 24 Feb 2014)
 
 use v5.18;
@@ -605,8 +605,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ŋka mbɔ́t nji},
 					'am' => q{mbaꞌmbaꞌ},
+					'pm' => q{ŋka mbɔ́t nji},
 				},
 			},
 		},
@@ -690,17 +690,17 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			Ed => q{E d},
-			MEd => q{E, d.M},
-			Md => q{d.M},
-			yyyyMd => q{M.d.y G},
-		},
 		'gregorian' => {
 			Ed => q{E d},
 			MEd => q{E, d.M},
 			Md => q{d.M},
 			yMd => q{M.d.y},
+		},
+		'generic' => {
+			Ed => q{E d},
+			MEd => q{E, d.M},
+			Md => q{d.M},
+			yyyyMd => q{M.d.y G},
 		},
 	} },
 );
@@ -718,10 +718,10 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			fallback => '{0} – {1}',
 		},
-		'gregorian' => {
+		'generic' => {
 			fallback => '{0} – {1}',
 		},
 	} },

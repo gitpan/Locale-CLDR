@@ -1,6 +1,6 @@
-package Locale::CLDR::Az::Cyrl::Az v0.0.4;
+package Locale::CLDR::Az::Cyrl::Az v0.0.5;
 # This file auto generated from Data\common\main\az_Cyrl_AZ.xml
-#	on Sun 13 Apr  9:38:56 am GMT
+#	on Sat 19 Apr  3:22:24 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

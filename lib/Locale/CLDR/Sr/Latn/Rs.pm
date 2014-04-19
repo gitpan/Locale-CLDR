@@ -1,6 +1,6 @@
-package Locale::CLDR::Sr::Latn::Rs v0.0.4;
+package Locale::CLDR::Sr::Latn::Rs v0.0.5;
 # This file auto generated from Data\common\main\sr_Latn_RS.xml
-#	on Sun 13 Apr 12:04:23 pm GMT
+#	on Sat 19 Apr  5:44:12 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

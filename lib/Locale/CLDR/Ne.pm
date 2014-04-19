@@ -1,6 +1,6 @@
-package Locale::CLDR::Ne v0.0.4;
+package Locale::CLDR::Ne v0.0.5;
 # This file auto generated from Data\common\main\ne.xml
-#	on Sun 13 Apr 11:31:01 am GMT
+#	on Sat 19 Apr  5:11:39 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use v5.18;

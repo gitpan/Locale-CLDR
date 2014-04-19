@@ -1,6 +1,6 @@
-package Locale::CLDR::Lv v0.0.4;
+package Locale::CLDR::Lv v0.0.5;
 # This file auto generated from Data\common\main\lv.xml
-#	on Sun 13 Apr 11:14:25 am GMT
+#	on Sat 19 Apr  4:54:51 pm GMT
 # XML file generated 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014)
 
 use v5.18;
@@ -4148,8 +4148,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{pēcpusdienā},
 					'am' => q{priekšpusdienā},
+					'pm' => q{pēcpusdienā},
 				},
 			},
 		},

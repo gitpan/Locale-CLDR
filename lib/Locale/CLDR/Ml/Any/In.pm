@@ -1,6 +1,6 @@
-package Locale::CLDR::Ml::Any::In v0.0.4;
+package Locale::CLDR::Ml::Any::In v0.0.5;
 # This file auto generated from Data\common\main\ml_IN.xml
-#	on Sun 13 Apr 11:21:53 am GMT
+#	on Sat 19 Apr  5:02:26 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

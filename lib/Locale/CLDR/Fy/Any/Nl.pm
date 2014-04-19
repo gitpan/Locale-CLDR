@@ -1,6 +1,6 @@
-package Locale::CLDR::Fy::Any::Nl v0.0.4;
+package Locale::CLDR::Fy::Any::Nl v0.0.5;
 # This file auto generated from Data\common\main\fy_NL.xml
-#	on Sun 13 Apr 10:25:18 am GMT
+#	on Sat 19 Apr  4:07:09 pm GMT
 # XML file generated 2014-02-20 10:33:36 -0600 (Thu, 20 Feb 2014)
 
 use v5.18;

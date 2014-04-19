@@ -1,6 +1,6 @@
-package Locale::CLDR::St v0.0.4;
+package Locale::CLDR::St v0.0.5;
 # This file auto generated from Data\common\main\st.xml
-#	on Sun 13 Apr 12:04:25 pm GMT
+#	on Sat 19 Apr  5:44:13 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;

@@ -1,6 +1,6 @@
-package Locale::CLDR::Tig v0.0.4;
+package Locale::CLDR::Tig v0.0.5;
 # This file auto generated from Data\common\main\tig.xml
-#	on Sun 13 Apr 12:14:47 pm GMT
+#	on Sat 19 Apr  5:54:27 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -555,8 +555,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{ቀደም ሰርምዕል},
 					'pm' => q{ሓቆ ስርምዕል},
+					'am' => q{ቀደም ሰርምዕል},
 				},
 			},
 		},

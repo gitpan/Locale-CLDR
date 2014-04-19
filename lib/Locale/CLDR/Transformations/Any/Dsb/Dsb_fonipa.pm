@@ -1,6 +1,6 @@
-package Locale::CLDR::Transformations::Any::Dsb::Dsb_fonipa v0.0.4;
+package Locale::CLDR::Transformations::Any::Dsb::Dsb_fonipa v0.0.5;
 # This file auto generated from Data\common\transforms\dsb-dsb_FONIPA.xml
-#	on Sun 13 Apr  9:30:15 am GMT
+#	on Sat 19 Apr  3:14:00 pm GMT
 # XML file generated 2014-02-24 10:07:33 -0600 (Mon, 24 Feb 2014)
 
 use v5.18;

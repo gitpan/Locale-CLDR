@@ -1,6 +1,6 @@
-package Locale::CLDR::Brx v0.0.4;
+package Locale::CLDR::Brx v0.0.5;
 # This file auto generated from Data\common\main\brx.xml
-#	on Sun 13 Apr  9:45:20 am GMT
+#	on Sat 19 Apr  3:28:43 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;

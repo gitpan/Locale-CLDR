@@ -1,6 +1,6 @@
-package Locale::CLDR::Transformations::Any::Kannada::Bengali v0.0.4;
+package Locale::CLDR::Transformations::Any::Kannada::Bengali v0.0.5;
 # This file auto generated from Data\common\transforms\Kannada-Bengali.xml
-#	on Sun 13 Apr  9:30:03 am GMT
+#	on Sat 19 Apr  3:13:47 pm GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
 use v5.18;

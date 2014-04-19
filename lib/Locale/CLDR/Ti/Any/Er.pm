@@ -1,6 +1,6 @@
-package Locale::CLDR::Ti::Any::Er v0.0.4;
+package Locale::CLDR::Ti::Any::Er v0.0.5;
 # This file auto generated from Data\common\main\ti_ER.xml
-#	on Sun 13 Apr 12:14:46 pm GMT
+#	on Sat 19 Apr  5:54:27 pm GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use v5.18;
@@ -206,7 +206,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			MEd => {
 				M => q{E፡ MM-dd - E፡ MM-dd},
 				d => q{E፡ MM-dd - E፡ MM-dd},
@@ -256,7 +256,7 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd - y-MM-dd},
 			},
 		},
-		'gregorian' => {
+		'generic' => {
 			MEd => {
 				M => q{E፡ MM-dd - E፡ MM-dd},
 				d => q{E፡ MM-dd - E፡ MM-dd},

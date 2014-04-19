@@ -1,6 +1,6 @@
-package Locale::CLDR::Ne::Any::In v0.0.4;
+package Locale::CLDR::Ne::Any::In v0.0.5;
 # This file auto generated from Data\common\main\ne_IN.xml
-#	on Sun 13 Apr 11:33:03 am GMT
+#	on Sat 19 Apr  5:13:39 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use v5.18;
@@ -135,8 +135,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{पूर्वाह्न},
 					'pm' => q{अपराह्न},
+					'am' => q{पूर्वाह्न},
 				},
 			},
 		},

@@ -1,6 +1,6 @@
-package Locale::CLDR::Zu v0.0.4;
+package Locale::CLDR::Zu v0.0.5;
 # This file auto generated from Data\common\main\zu.xml
-#	on Sun 13 Apr 12:32:56 pm GMT
+#	on Sat 19 Apr  6:12:11 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use v5.18;
@@ -2459,16 +2459,16 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'narrow' => {
-					'pm' => q{p},
 					'am' => q{a},
-				},
-				'abbreviated' => {
-					'am' => q{AM},
-					'pm' => q{PM},
+					'pm' => q{p},
 				},
 				'wide' => {
 					'pm' => q{Ntambama},
 					'am' => q{Ekuseni},
+				},
+				'abbreviated' => {
+					'am' => q{AM},
+					'pm' => q{PM},
 				},
 			},
 		},

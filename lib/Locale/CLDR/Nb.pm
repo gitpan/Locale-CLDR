@@ -1,6 +1,6 @@
-package Locale::CLDR::Nb v0.0.4;
+package Locale::CLDR::Nb v0.0.5;
 # This file auto generated from Data\common\main\nb.xml
-#	on Sun 13 Apr 11:29:10 am GMT
+#	on Sat 19 Apr  5:09:51 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -4600,17 +4600,17 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
+				'narrow' => {
+					'am' => q{a},
+					'pm' => q{p},
+				},
+				'wide' => {
+					'am' => q{a.m.},
+					'pm' => q{p.m.},
+				},
 				'abbreviated' => {
 					'am' => q{a.m.},
 					'pm' => q{p.m.},
-				},
-				'narrow' => {
-					'pm' => q{p},
-					'am' => q{a},
-				},
-				'wide' => {
-					'pm' => q{p.m.},
-					'am' => q{a.m.},
 				},
 			},
 			'stand-alone' => {

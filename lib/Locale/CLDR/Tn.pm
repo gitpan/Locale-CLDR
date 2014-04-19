@@ -1,6 +1,6 @@
-package Locale::CLDR::Tn v0.0.4;
+package Locale::CLDR::Tn v0.0.5;
 # This file auto generated from Data\common\main\tn.xml
-#	on Sun 13 Apr 12:14:48 pm GMT
+#	on Sat 19 Apr  5:54:28 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;

@@ -1,6 +1,6 @@
-package Locale::CLDR::Mua v0.0.4;
+package Locale::CLDR::Mua v0.0.5;
 # This file auto generated from Data\common\main\mua.xml
-#	on Sun 13 Apr 11:26:52 am GMT
+#	on Sat 19 Apr  5:07:31 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -860,8 +860,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{comme},
 					'pm' => q{lilli},
+					'am' => q{comme},
 				},
 			},
 		},
@@ -941,7 +941,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -965,7 +965,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},

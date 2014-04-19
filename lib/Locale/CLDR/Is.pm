@@ -1,6 +1,6 @@
-package Locale::CLDR::Is v0.0.4;
+package Locale::CLDR::Is v0.0.5;
 # This file auto generated from Data\common\main\is.xml
-#	on Sun 13 Apr 10:43:33 am GMT
+#	on Sat 19 Apr  4:25:10 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -3801,8 +3801,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'narrow' => {
-					'pm' => q{e.h.},
 					'am' => q{f.h.},
+					'pm' => q{e.h.},
 				},
 				'wide' => {
 					'am' => q{f.h.},
@@ -3811,8 +3811,8 @@ has 'day_periods' => (
 			},
 			'stand-alone' => {
 				'wide' => {
-					'am' => q{árdegi},
 					'pm' => q{síðdegi},
+					'am' => q{árdegi},
 				},
 			},
 		},

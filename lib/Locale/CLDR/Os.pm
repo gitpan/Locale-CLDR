@@ -1,6 +1,6 @@
-package Locale::CLDR::Os v0.0.4;
+package Locale::CLDR::Os v0.0.5;
 # This file auto generated from Data\common\main\os.xml
-#	on Sun 13 Apr 11:36:17 am GMT
+#	on Sat 19 Apr  5:16:43 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -751,8 +751,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ӕмбисбоны фӕстӕ},
 					'am' => q{ӕмбисбоны размӕ},
+					'pm' => q{ӕмбисбоны фӕстӕ},
 				},
 			},
 		},
@@ -836,7 +836,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			H => q{HH},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -859,7 +859,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{y-'ӕм' 'азы' QQQ},
 			yQQQQ => q{y-'ӕм' 'азы' QQQQ},
 		},
-		'generic' => {
+		'gregorian' => {
 			H => q{HH},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -898,7 +898,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH–HH},
 			},
@@ -943,7 +943,7 @@ has 'datetime_formats_interval' => (
 				h => q{h–h a v},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH–HH},
 			},

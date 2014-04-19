@@ -1,6 +1,6 @@
-package Locale::CLDR::Fr::Any::Vu v0.0.4;
+package Locale::CLDR::Fr::Any::Vu v0.0.5;
 # This file auto generated from Data\common\main\fr_VU.xml
-#	on Sun 13 Apr 10:23:18 am GMT
+#	on Sat 19 Apr  4:05:10 pm GMT
 # XML file generated 2013-08-01 00:38:27 -0500 (Thu, 01 Aug 2013)
 
 use v5.18;

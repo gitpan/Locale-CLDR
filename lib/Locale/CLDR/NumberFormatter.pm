@@ -1,4 +1,4 @@
-package Locale::CLDR::NumberFormatter v0.0.4;
+package Locale::CLDR::NumberFormatter v0.0.5;
 
 use v5.18;
 use mro 'c3';

@@ -1,6 +1,6 @@
-package Locale::CLDR::Sv::Any::Fi v0.0.4;
+package Locale::CLDR::Sv::Any::Fi v0.0.5;
 # This file auto generated from Data\common\main\sv_FI.xml
-#	on Sun 13 Apr 12:06:18 pm GMT
+#	on Sat 19 Apr  5:46:05 pm GMT
 # XML file generated 2014-02-26 15:19:38 -0600 (Wed, 26 Feb 2014)
 
 use v5.18;

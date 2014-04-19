@@ -1,6 +1,6 @@
-package Locale::CLDR::Lt v0.0.4;
+package Locale::CLDR::Lt v0.0.5;
 # This file auto generated from Data\common\main\lt.xml
-#	on Sun 13 Apr 11:11:26 am GMT
+#	on Sat 19 Apr  4:51:56 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -5615,8 +5615,8 @@ has 'day_periods' => (
 					'pm' => q{pop.},
 				},
 				'wide' => {
-					'pm' => q{popiet},
 					'am' => q{priešpiet},
+					'pm' => q{popiet},
 				},
 			},
 		},

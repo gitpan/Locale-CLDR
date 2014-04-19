@@ -1,6 +1,6 @@
-package Locale::CLDR::En::Any::Bs v0.0.4;
+package Locale::CLDR::En::Any::Bs v0.0.5;
 # This file auto generated from Data\common\main\en_BS.xml
-#	on Sun 13 Apr 10:09:20 am GMT
+#	on Sat 19 Apr  3:51:36 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use v5.18;

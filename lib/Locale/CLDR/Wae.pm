@@ -1,6 +1,6 @@
-package Locale::CLDR::Wae v0.0.4;
+package Locale::CLDR::Wae v0.0.5;
 # This file auto generated from Data\common\main\wae.xml
-#	on Sun 13 Apr 12:26:24 pm GMT
+#	on Sat 19 Apr  6:05:44 pm GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use v5.18;

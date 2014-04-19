@@ -1,6 +1,6 @@
-package Locale::CLDR::Ar::Any::Sa v0.0.4;
+package Locale::CLDR::Ar::Any::Sa v0.0.5;
 # This file auto generated from Data\common\main\ar_SA.xml
-#	on Sun 13 Apr  9:36:17 am GMT
+#	on Sat 19 Apr  3:19:51 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;

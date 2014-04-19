@@ -1,6 +1,6 @@
-package Locale::CLDR::Mer v0.0.4;
+package Locale::CLDR::Mer v0.0.5;
 # This file auto generated from Data\common\main\mer.xml
-#	on Sun 13 Apr 11:16:27 am GMT
+#	on Sat 19 Apr  4:56:55 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -807,8 +807,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{RŨ},
 					'pm' => q{ŨG},
+					'am' => q{RŨ},
 				},
 			},
 		},

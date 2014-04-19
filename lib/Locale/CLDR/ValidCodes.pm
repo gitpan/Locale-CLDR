@@ -1,6 +1,6 @@
-package Locale::CLDR::ValidCodes v0.0.4;
+package Locale::CLDR::ValidCodes v0.0.5;
 # This file auto generated from Data\common\supplemental\supplementalMetadata.xml
-#	on Sun 13 Apr  9:29:19 am GMT
+#	on Sat 19 Apr  3:13:03 pm GMT
 # XML file generated 2014-03-03 15:14:02 -0600 (Mon, 03 Mar 2014)
 
 use v5.18;

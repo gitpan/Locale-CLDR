@@ -1,6 +1,6 @@
-package Locale::CLDR::He v0.0.4;
+package Locale::CLDR::He v0.0.5;
 # This file auto generated from Data\common\main\he.xml
-#	on Sun 13 Apr 10:30:59 am GMT
+#	on Sat 19 Apr  4:12:47 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -4166,8 +4166,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{אחה״צ},
 					'am' => q{לפנה״צ},
+					'pm' => q{אחה״צ},
 				},
 			},
 		},
@@ -4294,6 +4294,60 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'hebrew' => {
+			Ed => q{E ה-d},
+			Gy => q{y G},
+			GyMMM => q{MMMM y G},
+			GyMMMEd => q{E, d MMMM y G},
+			GyMMMd => q{d MMMM y G},
+			M => q{MMMM},
+			MEd => q{E, d בMMMM},
+			MMM => q{MMMM},
+			MMMEd => q{E, d בMMMM},
+			MMMMEd => q{E, d בMMMM},
+			MMMMd => q{d בMMMM},
+			MMMd => q{d בMMMM},
+			Md => q{d בMMMM},
+			mmss => q{mm:ss},
+			y => q{y},
+			yyyy => q{y},
+			yyyyM => q{MMMM y},
+			yyyyMEd => q{E, d בMMMM y},
+			yyyyMMM => q{MMMM y},
+			yyyyMMMEd => q{E, d בMMMM y},
+			yyyyMMMM => q{MMMM y},
+			yyyyMMMd => q{d בMMMM y},
+			yyyyMd => q{d בMMMM y},
+			yyyyQQQ => q{QQQ y},
+			yyyyQQQQ => q{QQQQ y},
+		},
+		'islamic' => {
+			Ed => q{E ה-d},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E, d בMMM y G},
+			GyMMMd => q{d בMMM y G},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			MEd => q{E, d/M},
+			MMMEd => q{E, d בMMM},
+			MMMd => q{d בMMM},
+			Md => q{d/M},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			y => q{y G},
+			yyyy => q{y G},
+			yyyyM => q{M/y},
+			yyyyMEd => q{E, d.M.y},
+			yyyyMMM => q{MMM y},
+			yyyyMMMEd => q{E, d בMMM y},
+			yyyyMMMd => q{d בMMM y},
+			yyyyMd => q{d.M.y G},
+			yyyyQQQ => q{QQQ y},
+			yyyyQQQQ => q{QQQQ y},
+		},
 		'gregorian' => {
 			EHm => q{E H:mm},
 			EHms => q{E H:mm:ss},
@@ -4362,60 +4416,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{G y QQQ},
 			yyyyQQQQ => q{G y QQQQ},
 		},
-		'hebrew' => {
-			Ed => q{E ה-d},
-			Gy => q{y G},
-			GyMMM => q{MMMM y G},
-			GyMMMEd => q{E, d MMMM y G},
-			GyMMMd => q{d MMMM y G},
-			M => q{MMMM},
-			MEd => q{E, d בMMMM},
-			MMM => q{MMMM},
-			MMMEd => q{E, d בMMMM},
-			MMMMEd => q{E, d בMMMM},
-			MMMMd => q{d בMMMM},
-			MMMd => q{d בMMMM},
-			Md => q{d בMMMM},
-			mmss => q{mm:ss},
-			y => q{y},
-			yyyy => q{y},
-			yyyyM => q{MMMM y},
-			yyyyMEd => q{E, d בMMMM y},
-			yyyyMMM => q{MMMM y},
-			yyyyMMMEd => q{E, d בMMMM y},
-			yyyyMMMM => q{MMMM y},
-			yyyyMMMd => q{d בMMMM y},
-			yyyyMd => q{d בMMMM y},
-			yyyyQQQ => q{QQQ y},
-			yyyyQQQQ => q{QQQQ y},
-		},
-		'islamic' => {
-			Ed => q{E ה-d},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E, d בMMM y G},
-			GyMMMd => q{d בMMM y G},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			MEd => q{E, d/M},
-			MMMEd => q{E, d בMMM},
-			MMMd => q{d בMMM},
-			Md => q{d/M},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			y => q{y G},
-			yyyy => q{y G},
-			yyyyM => q{M/y},
-			yyyyMEd => q{E, d.M.y},
-			yyyyMMM => q{MMM y},
-			yyyyMMMEd => q{E, d בMMM y},
-			yyyyMMMd => q{d בMMM y},
-			yyyyMd => q{d.M.y G},
-			yyyyQQQ => q{QQQ y},
-			yyyyQQQQ => q{QQQQ y},
-		},
 	} },
 );
 
@@ -4435,6 +4435,78 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'hebrew' => {
+			MEd => {
+				M => q{E d בMMMM – E d בMMMM},
+				d => q{E d בMMMM – E d בMMMM},
+			},
+			MMM => {
+				M => q{MMMM–MMMM},
+			},
+			MMMEd => {
+				M => q{E d בMMMM – E d בMMMM},
+				d => q{E d בMMMM – E d בMMMM},
+			},
+			MMMd => {
+				M => q{d בMMMM – d בMMMM},
+				d => q{d–d בMMMM},
+			},
+			Md => {
+				M => q{d בMMMM – d בMMMM},
+				d => q{d בMMMM – d בMMMM},
+			},
+			fallback => '{0} – {1}',
+			h => {
+				a => q{H – H},
+				h => q{H–H},
+			},
+			hm => {
+				a => q{H:mm – H:mm},
+				h => q{H:mm–H:mm},
+				m => q{H:mm–H:mm},
+			},
+			hmv => {
+				a => q{H:mm – H:mm v},
+				h => q{H:mm–H:mm v},
+				m => q{H:mm–H:mm v},
+			},
+			hv => {
+				a => q{H – H v},
+				h => q{H–H v},
+			},
+			yM => {
+				M => q{MMMM y – MMMM y},
+				y => q{MMMM y – MMMM y},
+			},
+			yMEd => {
+				M => q{E d בMMMM y – E d בMMMM y},
+				d => q{E d בMMMM y – E d בMMMM y},
+				y => q{E d בMMMM y – E d בMMMM y},
+			},
+			yMMM => {
+				M => q{MMMM–MMMM y},
+				y => q{MMMM y – MMMM y},
+			},
+			yMMMEd => {
+				M => q{E d בMMMM – E d בMMMM y},
+				d => q{E d בMMMM – E d בMMMM y},
+				y => q{E d בMMMM y – E d בMMMM y},
+			},
+			yMMMM => {
+				M => q{MMMM–MMMM y},
+				y => q{MMMM y – MMMM y},
+			},
+			yMMMd => {
+				M => q{d בMMMM – d בMMMM y},
+				d => q{d–d בMMMM y},
+				y => q{d בMMMM y – d בMMMM y},
+			},
+			yMd => {
+				M => q{d בMMMM y – d בMMMM y},
+				d => q{d בMMMM y – d בMMMM y},
+				y => q{d בMMMM y – d בMMMM y},
+			},
+		},
 		'gregorian' => {
 			H => {
 				H => q{H–H},
@@ -4629,78 +4701,6 @@ has 'datetime_formats_interval' => (
 				M => q{dd/MM/y – dd/MM/y},
 				d => q{dd/MM/y – dd/MM/y},
 				y => q{dd/MM/y – dd/MM/y},
-			},
-		},
-		'hebrew' => {
-			MEd => {
-				M => q{E d בMMMM – E d בMMMM},
-				d => q{E d בMMMM – E d בMMMM},
-			},
-			MMM => {
-				M => q{MMMM–MMMM},
-			},
-			MMMEd => {
-				M => q{E d בMMMM – E d בMMMM},
-				d => q{E d בMMMM – E d בMMMM},
-			},
-			MMMd => {
-				M => q{d בMMMM – d בMMMM},
-				d => q{d–d בMMMM},
-			},
-			Md => {
-				M => q{d בMMMM – d בMMMM},
-				d => q{d בMMMM – d בMMMM},
-			},
-			fallback => '{0} – {1}',
-			h => {
-				a => q{H – H},
-				h => q{H–H},
-			},
-			hm => {
-				a => q{H:mm – H:mm},
-				h => q{H:mm–H:mm},
-				m => q{H:mm–H:mm},
-			},
-			hmv => {
-				a => q{H:mm – H:mm v},
-				h => q{H:mm–H:mm v},
-				m => q{H:mm–H:mm v},
-			},
-			hv => {
-				a => q{H – H v},
-				h => q{H–H v},
-			},
-			yM => {
-				M => q{MMMM y – MMMM y},
-				y => q{MMMM y – MMMM y},
-			},
-			yMEd => {
-				M => q{E d בMMMM y – E d בMMMM y},
-				d => q{E d בMMMM y – E d בMMMM y},
-				y => q{E d בMMMM y – E d בMMMM y},
-			},
-			yMMM => {
-				M => q{MMMM–MMMM y},
-				y => q{MMMM y – MMMM y},
-			},
-			yMMMEd => {
-				M => q{E d בMMMM – E d בMMMM y},
-				d => q{E d בMMMM – E d בMMMM y},
-				y => q{E d בMMMM y – E d בMMMM y},
-			},
-			yMMMM => {
-				M => q{MMMM–MMMM y},
-				y => q{MMMM y – MMMM y},
-			},
-			yMMMd => {
-				M => q{d בMMMM – d בMMMM y},
-				d => q{d–d בMMMM y},
-				y => q{d בMMMM y – d בMMMM y},
-			},
-			yMd => {
-				M => q{d בMMMM y – d בMMMM y},
-				d => q{d בMMMM y – d בMMMM y},
-				y => q{d בMMMM y – d בMMMM y},
 			},
 		},
 	} },

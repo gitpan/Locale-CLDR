@@ -1,6 +1,6 @@
-package Locale::CLDR::So v0.0.4;
+package Locale::CLDR::So v0.0.5;
 # This file auto generated from Data\common\main\so.xml
-#	on Sun 13 Apr 11:56:44 am GMT
+#	on Sat 19 Apr  5:36:42 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -721,8 +721,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{sn.},
 					'pm' => q{gn.},
+					'am' => q{sn.},
 				},
 			},
 		},
@@ -802,7 +802,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -825,7 +825,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -864,7 +864,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			M => {
 				M => q{M-M},
 			},
@@ -941,7 +941,7 @@ has 'datetime_formats_interval' => (
 				y => q{dd/MM/y - dd/MM/y},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			M => {
 				M => q{M-M},
 			},

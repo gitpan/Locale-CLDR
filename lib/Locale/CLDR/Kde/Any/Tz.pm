@@ -1,6 +1,6 @@
-package Locale::CLDR::Kde::Any::Tz v0.0.4;
+package Locale::CLDR::Kde::Any::Tz v0.0.5;
 # This file auto generated from Data\common\main\kde_TZ.xml
-#	on Sun 13 Apr 10:52:28 am GMT
+#	on Sat 19 Apr  4:33:57 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

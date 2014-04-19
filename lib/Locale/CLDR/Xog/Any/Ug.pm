@@ -1,6 +1,6 @@
-package Locale::CLDR::Xog::Any::Ug v0.0.4;
+package Locale::CLDR::Xog::Any::Ug v0.0.5;
 # This file auto generated from Data\common\main\xog_UG.xml
-#	on Sun 13 Apr 12:26:32 pm GMT
+#	on Sat 19 Apr  6:05:51 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

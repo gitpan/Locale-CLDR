@@ -1,6 +1,6 @@
-package Locale::CLDR::Es::Any::Pa v0.0.4;
+package Locale::CLDR::Es::Any::Pa v0.0.5;
 # This file auto generated from Data\common\main\es_PA.xml
-#	on Sun 13 Apr 10:13:50 am GMT
+#	on Sat 19 Apr  3:55:57 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;
@@ -79,14 +79,14 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			MEd => q{E, MM/dd},
 			Md => q{MM/dd},
 			yM => q{MM/y},
 			yMEd => q{E MM/dd/y},
 			yMd => q{MM/dd/y},
 		},
-		'generic' => {
+		'gregorian' => {
 			MEd => q{E, MM/dd},
 			Md => q{MM/dd},
 			yM => q{MM/y},
@@ -109,7 +109,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH-HH},
 			},
@@ -196,7 +196,7 @@ has 'datetime_formats_interval' => (
 				y => q{MM/dd/y - MM/dd/y},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH-HH},
 			},

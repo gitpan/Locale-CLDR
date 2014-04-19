@@ -1,6 +1,6 @@
-package Locale::CLDR::Ga v0.0.4;
+package Locale::CLDR::Ga v0.0.5;
 # This file auto generated from Data\common\main\ga.xml
-#	on Sun 13 Apr 10:25:19 am GMT
+#	on Sat 19 Apr  4:07:10 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;

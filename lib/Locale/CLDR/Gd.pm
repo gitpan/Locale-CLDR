@@ -1,6 +1,6 @@
-package Locale::CLDR::Gd v0.0.4;
+package Locale::CLDR::Gd v0.0.5;
 # This file auto generated from Data\common\main\gd.xml
-#	on Sun 13 Apr 10:26:12 am GMT
+#	on Sat 19 Apr  4:08:03 pm GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;

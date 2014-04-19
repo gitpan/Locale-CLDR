@@ -1,6 +1,6 @@
-package Locale::CLDR::En::Any::Rw v0.0.4;
+package Locale::CLDR::En::Any::Rw v0.0.5;
 # This file auto generated from Data\common\main\en_RW.xml
-#	on Sun 13 Apr 10:09:34 am GMT
+#	on Sat 19 Apr  3:51:50 pm GMT
 # XML file generated 2013-08-22 18:59:54 -0500 (Thu, 22 Aug 2013)
 
 use v5.18;

@@ -1,6 +1,6 @@
-package Locale::CLDR::Om v0.0.4;
+package Locale::CLDR::Om v0.0.5;
 # This file auto generated from Data\common\main\om.xml
-#	on Sun 13 Apr 11:36:15 am GMT
+#	on Sat 19 Apr  5:16:40 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -458,14 +458,14 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			MMMMdd => q{dd MMMM},
 			MMdd => q{dd/MM},
 			yMM => q{MM/y},
 			yMMMM => q{MMMM y},
 			yQQQ => q{QQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			MMMMdd => q{dd MMMM},
 			MMdd => q{dd/MM},
 			yMM => q{MM/y},

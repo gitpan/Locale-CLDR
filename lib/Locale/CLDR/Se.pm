@@ -1,6 +1,6 @@
-package Locale::CLDR::Se v0.0.4;
+package Locale::CLDR::Se v0.0.5;
 # This file auto generated from Data\common\main\se.xml
-#	on Sun 13 Apr 11:51:09 am GMT
+#	on Sat 19 Apr  5:31:20 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -1785,8 +1785,8 @@ has 'day_periods' => (
 					'pm' => q{e.b.},
 				},
 				'wide' => {
-					'pm' => q{eahketbeaivet},
 					'am' => q{iđitbeaivet},
+					'pm' => q{eahketbeaivet},
 				},
 			},
 			'stand-alone' => {

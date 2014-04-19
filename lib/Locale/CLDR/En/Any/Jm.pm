@@ -1,6 +1,6 @@
-package Locale::CLDR::En::Any::Jm v0.0.4;
+package Locale::CLDR::En::Any::Jm v0.0.5;
 # This file auto generated from Data\common\main\en_JM.xml
-#	on Sun 13 Apr 10:09:29 am GMT
+#	on Sat 19 Apr  3:51:46 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use v5.18;
@@ -34,17 +34,17 @@ has 'day_period_data' => (
 		SWITCH:
 		for ($type) {
 			if ($_ eq 'generic') {
-				return 'noon' if $time == 1200;
 				return 'am' if $time >= 000
 					&& $time < 1200;
+				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 			last SWITCH;
 			}
 			if ($_ eq 'gregorian') {
-				return 'noon' if $time == 1200;
 				return 'am' if $time >= 000
 					&& $time < 1200;
+				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 			last SWITCH;
@@ -108,15 +108,15 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			MEd => q{E, d/M},
-			Md => q{d/M},
-			yMEd => q{E, d/M/y},
-		},
 		'generic' => {
 			MEd => q{E, d/M},
 			Md => q{d/M},
 			yyyyMEd => q{E, d/M/y G},
+		},
+		'gregorian' => {
+			MEd => q{E, d/M},
+			Md => q{d/M},
+			yMEd => q{E, d/M/y},
 		},
 	} },
 );
@@ -134,26 +134,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			MEd => {
-				M => q{E, d/M - E, d/M},
-				d => q{E, d/M - E, d/M},
-			},
-			Md => {
-				M => q{d/M - d/M},
-				d => q{d/M - d/M},
-			},
-			yMEd => {
-				M => q{E, d/M/y - E, d/M/y},
-				d => q{E, d/M/y - E, d/M/y},
-				y => q{E, d/M/y - E, d/M/y},
-			},
-			yMd => {
-				M => q{d/M/y - d/M/y},
-				d => q{d/M/y - d/M/y},
-				y => q{d/M/y - d/M/y},
-			},
-		},
 		'generic' => {
 			MEd => {
 				M => q{E, d/M - E, d/M},
@@ -172,6 +152,26 @@ has 'datetime_formats_interval' => (
 				M => q{d/M/y - d/M/y G},
 				d => q{d/M/y - d/M/y G},
 				y => q{d/M/y - d/M/y G},
+			},
+		},
+		'gregorian' => {
+			MEd => {
+				M => q{E, d/M - E, d/M},
+				d => q{E, d/M - E, d/M},
+			},
+			Md => {
+				M => q{d/M - d/M},
+				d => q{d/M - d/M},
+			},
+			yMEd => {
+				M => q{E, d/M/y - E, d/M/y},
+				d => q{E, d/M/y - E, d/M/y},
+				y => q{E, d/M/y - E, d/M/y},
+			},
+			yMd => {
+				M => q{d/M/y - d/M/y},
+				d => q{d/M/y - d/M/y},
+				y => q{d/M/y - d/M/y},
 			},
 		},
 	} },

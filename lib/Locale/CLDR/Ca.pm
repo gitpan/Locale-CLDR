@@ -1,6 +1,6 @@
-package Locale::CLDR::Ca v0.0.4;
+package Locale::CLDR::Ca v0.0.5;
 # This file auto generated from Data\common\main\ca.xml
-#	on Sun 13 Apr  9:53:06 am GMT
+#	on Sat 19 Apr  3:36:22 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -4872,16 +4872,6 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'buddhist' => {
-			M => q{L},
-			MEd => q{E, d/M},
-			MMM => q{LLL},
-			MMMEd => q{E d MMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			d => q{d},
-			y => q{y G},
-		},
 		'generic' => {
 			Ed => q{E d},
 			Gy => q{y G},
@@ -4916,6 +4906,16 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{d/M/y G},
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
+		},
+		'buddhist' => {
+			M => q{L},
+			MEd => q{E, d/M},
+			MMM => q{LLL},
+			MMMEd => q{E d MMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			d => q{d},
+			y => q{y G},
 		},
 	} },
 );

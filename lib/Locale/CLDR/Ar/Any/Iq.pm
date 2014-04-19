@@ -1,6 +1,6 @@
-package Locale::CLDR::Ar::Any::Iq v0.0.4;
+package Locale::CLDR::Ar::Any::Iq v0.0.5;
 # This file auto generated from Data\common\main\ar_IQ.xml
-#	on Sun 13 Apr  9:36:15 am GMT
+#	on Sat 19 Apr  3:19:49 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use v5.18;

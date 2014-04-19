@@ -1,6 +1,6 @@
-package Locale::CLDR::Byn v0.0.4;
+package Locale::CLDR::Byn v0.0.5;
 # This file auto generated from Data\common\main\byn.xml
-#	on Sun 13 Apr  9:53:03 am GMT
+#	on Sat 19 Apr  3:36:19 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -556,8 +556,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{ፋዱስ ጃብ},
 					'pm' => q{ፋዱስ ደምቢ},
+					'am' => q{ፋዱስ ጃብ},
 				},
 			},
 		},

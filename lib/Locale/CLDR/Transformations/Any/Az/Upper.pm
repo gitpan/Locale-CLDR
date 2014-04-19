@@ -1,6 +1,6 @@
-package Locale::CLDR::Transformations::Any::Az::Upper v0.0.4;
+package Locale::CLDR::Transformations::Any::Az::Upper v0.0.5;
 # This file auto generated from Data\common\transforms\az-Upper.xml
-#	on Sun 13 Apr  9:30:14 am GMT
+#	on Sat 19 Apr  3:13:59 pm GMT
 # XML file generated 2013-03-01 08:26:02 -0600 (Fri, 01 Mar 2013)
 
 use v5.18;

@@ -1,6 +1,6 @@
-package Locale::CLDR::Transformations::Bgn::Greek::Latin v0.0.4;
+package Locale::CLDR::Transformations::Bgn::Greek::Latin v0.0.5;
 # This file auto generated from Data\common\transforms\Greek-Latin-BGN.xml
-#	on Sun 13 Apr  9:29:58 am GMT
+#	on Sat 19 Apr  3:13:42 pm GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
 use v5.18;

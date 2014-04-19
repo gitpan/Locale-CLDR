@@ -1,6 +1,6 @@
-package Locale::CLDR::Transformations::Bgn::Katakana::Latin v0.0.4;
+package Locale::CLDR::Transformations::Bgn::Katakana::Latin v0.0.5;
 # This file auto generated from Data\common\transforms\Katakana-Latin-BGN.xml
-#	on Sun 13 Apr  9:30:03 am GMT
+#	on Sat 19 Apr  3:13:47 pm GMT
 # XML file generated 2013-07-18 08:57:06 -0500 (Thu, 18 Jul 2013)
 
 use v5.18;

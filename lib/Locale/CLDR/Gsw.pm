@@ -1,6 +1,6 @@
-package Locale::CLDR::Gsw v0.0.4;
+package Locale::CLDR::Gsw v0.0.5;
 # This file auto generated from Data\common\main\gsw.xml
-#	on Sun 13 Apr 10:27:27 am GMT
+#	on Sat 19 Apr  4:09:17 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -3905,19 +3905,19 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'abbreviated' => {
-					'pm' => q{n.m.},
-					'am' => q{v.m.},
-				},
 				'wide' => {
 					'am' => q{vorm.},
 					'pm' => q{nam.},
 				},
+				'abbreviated' => {
+					'pm' => q{n.m.},
+					'am' => q{v.m.},
+				},
 			},
 			'stand-alone' => {
 				'wide' => {
-					'am' => q{Vormittag},
 					'pm' => q{Namittag},
+					'am' => q{Vormittag},
 				},
 			},
 		},
@@ -4013,7 +4013,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d.},
 			H => q{H},
 			HHmm => q{HH:mm},
@@ -4043,7 +4043,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d.},
 			H => q{H},
 			HHmm => q{HH:mm},
@@ -4089,7 +4089,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH-HH},
 			},
@@ -4187,7 +4187,7 @@ has 'datetime_formats_interval' => (
 				y => q{dd.MM.y - dd.MM.y},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH-HH},
 			},

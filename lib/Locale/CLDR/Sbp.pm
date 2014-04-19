@@ -1,6 +1,6 @@
-package Locale::CLDR::Sbp v0.0.4;
+package Locale::CLDR::Sbp v0.0.5;
 # This file auto generated from Data\common\main\sbp.xml
-#	on Sun 13 Apr 11:51:05 am GMT
+#	on Sat 19 Apr  5:31:16 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -912,7 +912,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -936,7 +936,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},

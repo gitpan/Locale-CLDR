@@ -1,6 +1,6 @@
-package Locale::CLDR::Kkj v0.0.4;
+package Locale::CLDR::Kkj v0.0.5;
 # This file auto generated from Data\common\main\kkj.xml
-#	on Sun 13 Apr 10:54:52 am GMT
+#	on Sat 19 Apr  4:36:19 pm GMT
 # XML file generated 2014-01-08 23:53:23 -0600 (Wed, 08 Jan 2014)
 
 use v5.18;
@@ -355,23 +355,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			Ed => q{E d},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E d MMM y G},
-			GyMMMd => q{d MMM y G},
-			MEd => q{E dd/MM},
-			MMMEd => q{E d MMM},
-			MMMd => q{d MMM},
-			Md => q{dd/MM},
-			yyyyM => q{MM y GGGGG},
-			yyyyMEd => q{E dd/MM y GGGGG},
-			yyyyMMM => q{MMM y G},
-			yyyyMMMEd => q{E d MMM y G},
-			yyyyMMMd => q{d MMM y G},
-			yyyyMd => q{dd/MM y GGGGG},
-		},
 		'gregorian' => {
 			Ed => q{E d},
 			Gy => q{y G},
@@ -388,6 +371,23 @@ has 'datetime_formats_available_formats' => (
 			yMMMEd => q{E d MMM y},
 			yMMMd => q{d MMM y},
 			yMd => q{dd/MM y},
+		},
+		'generic' => {
+			Ed => q{E d},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E d MMM y G},
+			GyMMMd => q{d MMM y G},
+			MEd => q{E dd/MM},
+			MMMEd => q{E d MMM},
+			MMMd => q{d MMM},
+			Md => q{dd/MM},
+			yyyyM => q{MM y GGGGG},
+			yyyyMEd => q{E dd/MM y GGGGG},
+			yyyyMMM => q{MMM y G},
+			yyyyMMMEd => q{E d MMM y G},
+			yyyyMMMd => q{d MMM y G},
+			yyyyMd => q{dd/MM y GGGGG},
 		},
 	} },
 );

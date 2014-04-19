@@ -1,6 +1,6 @@
-package Locale::CLDR::Teo::Any::Ke v0.0.4;
+package Locale::CLDR::Teo::Any::Ke v0.0.5;
 # This file auto generated from Data\common\main\teo_KE.xml
-#	on Sun 13 Apr 12:11:37 pm GMT
+#	on Sat 19 Apr  5:51:20 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

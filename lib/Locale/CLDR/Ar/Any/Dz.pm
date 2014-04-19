@@ -1,6 +1,6 @@
-package Locale::CLDR::Ar::Any::Dz v0.0.4;
+package Locale::CLDR::Ar::Any::Dz v0.0.5;
 # This file auto generated from Data\common\main\ar_DZ.xml
-#	on Sun 13 Apr  9:36:14 am GMT
+#	on Sat 19 Apr  3:19:48 pm GMT
 # XML file generated 2014-01-08 23:53:23 -0600 (Wed, 08 Jan 2014)
 
 use v5.18;

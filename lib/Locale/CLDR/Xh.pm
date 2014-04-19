@@ -1,6 +1,6 @@
-package Locale::CLDR::Xh v0.0.4;
+package Locale::CLDR::Xh v0.0.5;
 # This file auto generated from Data\common\main\xh.xml
-#	on Sun 13 Apr 12:26:28 pm GMT
+#	on Sat 19 Apr  6:05:47 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;

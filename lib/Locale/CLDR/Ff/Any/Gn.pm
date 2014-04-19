@@ -1,6 +1,6 @@
-package Locale::CLDR::Ff::Any::Gn v0.0.4;
+package Locale::CLDR::Ff::Any::Gn v0.0.5;
 # This file auto generated from Data\common\main\ff_GN.xml
-#	on Sun 13 Apr 10:18:38 am GMT
+#	on Sat 19 Apr  4:00:31 pm GMT
 # XML file generated 2014-01-06 13:01:35 -0600 (Mon, 06 Jan 2014)
 
 use v5.18;

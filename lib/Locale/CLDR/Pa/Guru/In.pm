@@ -1,6 +1,6 @@
-package Locale::CLDR::Pa::Guru::In v0.0.4;
+package Locale::CLDR::Pa::Guru::In v0.0.5;
 # This file auto generated from Data\common\main\pa_Guru_IN.xml
-#	on Sun 13 Apr 11:38:26 am GMT
+#	on Sat 19 Apr  5:18:45 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

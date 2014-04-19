@@ -1,6 +1,6 @@
-package Locale::CLDR::Ug v0.0.4;
+package Locale::CLDR::Ug v0.0.5;
 # This file auto generated from Data\common\main\ug.xml
-#	on Sun 13 Apr 12:16:52 pm GMT
+#	on Sat 19 Apr  5:56:31 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use v5.18;
@@ -4410,13 +4410,13 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{چۈشتىن كېيىن},
-					'am' => q{چۈشتىن بۇرۇن},
 					'noon' => q{چۈش},
+					'am' => q{چۈشتىن بۇرۇن},
+					'pm' => q{چۈشتىن كېيىن},
 				},
 				'narrow' => {
-					'noon' => q{چۈش},
 					'pm' => q{چۈشتىن كېيىن},
+					'noon' => q{چۈش},
 					'am' => q{چۈشتىن بۇرۇن},
 				},
 			},

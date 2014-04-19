@@ -1,6 +1,6 @@
-package Locale::CLDR::Ks v0.0.4;
+package Locale::CLDR::Ks v0.0.5;
 # This file auto generated from Data\common\main\ks.xml
-#	on Sun 13 Apr 11:02:37 am GMT
+#	on Sat 19 Apr  4:43:45 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -2653,6 +2653,34 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'gregorian' => {
+			GGGGyMMMMEEEEdd => q{EEEE,dd MMMM GGGGy},
+			Gy => q{Gy},
+			GyMMM => q{MMM Gy},
+			GyMMMEd => q{EEE, MMM d, Gy},
+			GyMMMd => q{MMM d, Gy},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, M/d},
+			MMM => q{LLL},
+			MMMEd => q{E, MMM d},
+			MMMMEd => q{E, MMMM d},
+			MMMMd => q{MMMM d},
+			MMMd => q{d-MMM},
+			Md => q{M/d},
+			d => q{d},
+			hm => q{h:mm a},
+			ms => q{mm:ss},
+			y => q{y},
+			yM => q{M/y},
+			yMEd => q{EEE, M/d/y},
+			yMMM => q{MMM y},
+			yMMMEd => q{EEE, MMM d, y},
+			yMMMM => q{MMMM y},
+			yQQQ => q{QQQ y},
+			yQQQQ => q{QQQQ y},
+		},
 		'generic' => {
 			GGGGyMMMMEEEEdd => q{EEEE,dd MMMM GGGGy},
 			Gy => q{Gy},
@@ -2682,34 +2710,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyMMMd => q{MMM d, Gy},
 			yyyyQQQ => q{QQQ Gy},
 			yyyyQQQQ => q{QQQQ Gy},
-		},
-		'gregorian' => {
-			GGGGyMMMMEEEEdd => q{EEEE,dd MMMM GGGGy},
-			Gy => q{Gy},
-			GyMMM => q{MMM Gy},
-			GyMMMEd => q{EEE, MMM d, Gy},
-			GyMMMd => q{MMM d, Gy},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, M/d},
-			MMM => q{LLL},
-			MMMEd => q{E, MMM d},
-			MMMMEd => q{E, MMMM d},
-			MMMMd => q{MMMM d},
-			MMMd => q{d-MMM},
-			Md => q{M/d},
-			d => q{d},
-			hm => q{h:mm a},
-			ms => q{mm:ss},
-			y => q{y},
-			yM => q{M/y},
-			yMEd => q{EEE, M/d/y},
-			yMMM => q{MMM y},
-			yMMMEd => q{EEE, MMM d, y},
-			yMMMM => q{MMMM y},
-			yQQQ => q{QQQ y},
-			yQQQQ => q{QQQQ y},
 		},
 	} },
 );

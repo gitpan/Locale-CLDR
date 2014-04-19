@@ -1,6 +1,6 @@
-package Locale::CLDR::Os::Any::Ge v0.0.4;
+package Locale::CLDR::Os::Any::Ge v0.0.5;
 # This file auto generated from Data\common\main\os_GE.xml
-#	on Sun 13 Apr 11:36:18 am GMT
+#	on Sat 19 Apr  5:16:44 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

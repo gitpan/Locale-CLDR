@@ -1,6 +1,6 @@
-package Locale::CLDR::Fo v0.0.4;
+package Locale::CLDR::Fo v0.0.5;
 # This file auto generated from Data\common\main\fo.xml
-#	on Sun 13 Apr 10:21:19 am GMT
+#	on Sat 19 Apr  4:03:10 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -1503,19 +1503,19 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'am' => q{um fyrrapartur},
-					'pm' => q{um seinnapartur},
-				},
 				'abbreviated' => {
 					'am' => q{f.p.},
 					'pm' => q{s.p.},
 				},
+				'wide' => {
+					'am' => q{um fyrrapartur},
+					'pm' => q{um seinnapartur},
+				},
 			},
 			'stand-alone' => {
 				'wide' => {
-					'pm' => q{seinnapartur},
 					'am' => q{fyrrapartur},
+					'pm' => q{seinnapartur},
 				},
 			},
 		},

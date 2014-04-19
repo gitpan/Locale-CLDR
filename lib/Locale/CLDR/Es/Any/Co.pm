@@ -1,6 +1,6 @@
-package Locale::CLDR::Es::Any::Co v0.0.4;
+package Locale::CLDR::Es::Any::Co v0.0.5;
 # This file auto generated from Data\common\main\es_CO.xml
-#	on Sun 13 Apr 10:11:32 am GMT
+#	on Sat 19 Apr  3:53:45 pm GMT
 # XML file generated 2013-08-14 01:51:50 -0500 (Wed, 14 Aug 2013)
 
 use v5.18;
@@ -123,7 +123,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{H-H},
 			},
@@ -210,7 +210,7 @@ has 'datetime_formats_interval' => (
 				y => q{d/MM/y - d/MM/y},
 			},
 		},
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{H-H},
 			},

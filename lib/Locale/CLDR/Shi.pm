@@ -1,6 +1,6 @@
-package Locale::CLDR::Shi v0.0.4;
+package Locale::CLDR::Shi v0.0.5;
 # This file auto generated from Data\common\main\shi.xml
-#	on Sun 13 Apr 11:51:22 am GMT
+#	on Sat 19 Apr  5:31:32 pm GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use v5.18;
