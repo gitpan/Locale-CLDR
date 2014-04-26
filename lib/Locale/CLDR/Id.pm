@@ -1,6 +1,6 @@
-package Locale::CLDR::Id v0.0.5;
+package Locale::CLDR::Id v0.25.0;
 # This file auto generated from Data\common\main\id.xml
-#	on Sat 19 Apr  4:23:23 pm GMT
+#	on Mon 21 Apr 11:17:23 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -4782,108 +4782,17 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'coptic') {
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'midDay' if $time >= 1000
-					&& $time < 1500;
-				return 'night' if $time >= 1800
-					&& $time < 300;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-				return 'afternoon' if $time >= 1500
-					&& $time < 1800;
-			last SWITCH;
-			}
-			if ($_ eq 'gregorian') {
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'midDay' if $time >= 1000
-					&& $time < 1500;
-				return 'night' if $time >= 1800
-					&& $time < 300;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-				return 'afternoon' if $time >= 1500
-					&& $time < 1800;
-			last SWITCH;
-			}
 			if ($_ eq 'generic') {
 				return 'morning' if $time >= 500
 					&& $time < 1000;
 				return 'midDay' if $time >= 1000
 					&& $time < 1500;
-				return 'night' if $time >= 1800
-					&& $time < 300;
 				return 'earlyMorning' if $time >= 300
 					&& $time < 500;
 				return 'afternoon' if $time >= 1500
 					&& $time < 1800;
-			last SWITCH;
-			}
-			if ($_ eq 'chinese') {
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'midDay' if $time >= 1000
-					&& $time < 1500;
 				return 'night' if $time >= 1800
 					&& $time < 300;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-				return 'afternoon' if $time >= 1500
-					&& $time < 1800;
-			last SWITCH;
-			}
-			if ($_ eq 'indian') {
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'midDay' if $time >= 1000
-					&& $time < 1500;
-				return 'night' if $time >= 1800
-					&& $time < 300;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-				return 'afternoon' if $time >= 1500
-					&& $time < 1800;
-			last SWITCH;
-			}
-			if ($_ eq 'roc') {
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'midDay' if $time >= 1000
-					&& $time < 1500;
-				return 'night' if $time >= 1800
-					&& $time < 300;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-				return 'afternoon' if $time >= 1500
-					&& $time < 1800;
-			last SWITCH;
-			}
-			if ($_ eq 'hebrew') {
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'midDay' if $time >= 1000
-					&& $time < 1500;
-				return 'night' if $time >= 1800
-					&& $time < 300;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-				return 'afternoon' if $time >= 1500
-					&& $time < 1800;
-			last SWITCH;
-			}
-			if ($_ eq 'buddhist') {
-				return 'morning' if $time >= 500
-					&& $time < 1000;
-				return 'midDay' if $time >= 1000
-					&& $time < 1500;
-				return 'night' if $time >= 1800
-					&& $time < 300;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 500;
-				return 'afternoon' if $time >= 1500
-					&& $time < 1800;
 			last SWITCH;
 			}
 			if ($_ eq 'islamic') {
@@ -4891,25 +4800,64 @@ has 'day_period_data' => (
 					&& $time < 1000;
 				return 'midDay' if $time >= 1000
 					&& $time < 1500;
-				return 'night' if $time >= 1800
-					&& $time < 300;
 				return 'earlyMorning' if $time >= 300
 					&& $time < 500;
 				return 'afternoon' if $time >= 1500
 					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 300;
 			last SWITCH;
 			}
-			if ($_ eq 'japanese') {
+			if ($_ eq 'roc') {
 				return 'morning' if $time >= 500
 					&& $time < 1000;
 				return 'midDay' if $time >= 1000
 					&& $time < 1500;
-				return 'night' if $time >= 1800
-					&& $time < 300;
 				return 'earlyMorning' if $time >= 300
 					&& $time < 500;
 				return 'afternoon' if $time >= 1500
 					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 300;
+			last SWITCH;
+			}
+			if ($_ eq 'hebrew') {
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'midDay' if $time >= 1000
+					&& $time < 1500;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+				return 'afternoon' if $time >= 1500
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 300;
+			last SWITCH;
+			}
+			if ($_ eq 'gregorian') {
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'midDay' if $time >= 1000
+					&& $time < 1500;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+				return 'afternoon' if $time >= 1500
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 300;
+			last SWITCH;
+			}
+			if ($_ eq 'coptic') {
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'midDay' if $time >= 1000
+					&& $time < 1500;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+				return 'afternoon' if $time >= 1500
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 300;
 			last SWITCH;
 			}
 			if ($_ eq 'persian') {
@@ -4917,12 +4865,25 @@ has 'day_period_data' => (
 					&& $time < 1000;
 				return 'midDay' if $time >= 1000
 					&& $time < 1500;
-				return 'night' if $time >= 1800
-					&& $time < 300;
 				return 'earlyMorning' if $time >= 300
 					&& $time < 500;
 				return 'afternoon' if $time >= 1500
 					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 300;
+			last SWITCH;
+			}
+			if ($_ eq 'japanese') {
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'midDay' if $time >= 1000
+					&& $time < 1500;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+				return 'afternoon' if $time >= 1500
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 300;
 			last SWITCH;
 			}
 			if ($_ eq 'ethiopic') {
@@ -4930,12 +4891,51 @@ has 'day_period_data' => (
 					&& $time < 1000;
 				return 'midDay' if $time >= 1000
 					&& $time < 1500;
-				return 'night' if $time >= 1800
-					&& $time < 300;
 				return 'earlyMorning' if $time >= 300
 					&& $time < 500;
 				return 'afternoon' if $time >= 1500
 					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 300;
+			last SWITCH;
+			}
+			if ($_ eq 'indian') {
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'midDay' if $time >= 1000
+					&& $time < 1500;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+				return 'afternoon' if $time >= 1500
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 300;
+			last SWITCH;
+			}
+			if ($_ eq 'chinese') {
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'midDay' if $time >= 1000
+					&& $time < 1500;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+				return 'afternoon' if $time >= 1500
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 300;
+			last SWITCH;
+			}
+			if ($_ eq 'buddhist') {
+				return 'morning' if $time >= 500
+					&& $time < 1000;
+				return 'midDay' if $time >= 1000
+					&& $time < 1500;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 500;
+				return 'afternoon' if $time >= 1500
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 300;
 			last SWITCH;
 			}
 		}
@@ -4949,13 +4949,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'narrow' => {
-					'pm' => q{PM},
-					'am' => q{AM},
-				},
 				'wide' => {
 					'pm' => q{PM},
 					'am' => q{AM},
+				},
+				'narrow' => {
+					'am' => q{AM},
+					'pm' => q{PM},
 				},
 			},
 		},
@@ -5407,6 +5407,54 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'japanese' => {
+			M => q{L},
+			MEd => q{E, d/M},
+			MMM => q{LLL},
+			MMMEd => q{E, d MMM},
+			MMMMEd => q{E, d MMMM},
+			MMMMd => q{d MMMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			d => q{d},
+			y => q{G y},
+		},
+		'buddhist' => {
+			M => q{L},
+			MEd => q{E, d/M},
+			MMM => q{LLL},
+			MMMEd => q{E, d MMM},
+			MMMMEd => q{E, d MMMM},
+			MMMMd => q{d MMMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			d => q{d},
+			y => q{G y},
+		},
+		'roc' => {
+			M => q{L},
+			MEd => q{E, d/M},
+			MMM => q{LLL},
+			MMMEd => q{E, d MMM},
+			MMMMEd => q{E, d MMMM},
+			MMMMd => q{d MMMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			d => q{d},
+			y => q{G y},
+		},
+		'islamic' => {
+			M => q{L},
+			MEd => q{E, d/M},
+			MMM => q{LLL},
+			MMMEd => q{E, d MMM},
+			MMMMEd => q{E, d MMMM},
+			MMMMd => q{d MMMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			d => q{d},
+			y => q{y G},
+		},
 		'generic' => {
 			Ed => q{E, d},
 			Gy => q{y G},
@@ -5475,54 +5523,6 @@ has 'datetime_formats_available_formats' => (
 			yMd => q{d/M/y},
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
-		},
-		'islamic' => {
-			M => q{L},
-			MEd => q{E, d/M},
-			MMM => q{LLL},
-			MMMEd => q{E, d MMM},
-			MMMMEd => q{E, d MMMM},
-			MMMMd => q{d MMMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			d => q{d},
-			y => q{y G},
-		},
-		'roc' => {
-			M => q{L},
-			MEd => q{E, d/M},
-			MMM => q{LLL},
-			MMMEd => q{E, d MMM},
-			MMMMEd => q{E, d MMMM},
-			MMMMd => q{d MMMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			d => q{d},
-			y => q{G y},
-		},
-		'buddhist' => {
-			M => q{L},
-			MEd => q{E, d/M},
-			MMM => q{LLL},
-			MMMEd => q{E, d MMM},
-			MMMMEd => q{E, d MMMM},
-			MMMMd => q{d MMMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			d => q{d},
-			y => q{G y},
-		},
-		'japanese' => {
-			M => q{L},
-			MEd => q{E, d/M},
-			MMM => q{LLL},
-			MMMEd => q{E, d MMM},
-			MMMMEd => q{E, d MMMM},
-			MMMMd => q{d MMMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			d => q{d},
-			y => q{G y},
 		},
 	} },
 );

@@ -1,6 +1,6 @@
-package Locale::CLDR::Transformations::Any::Yo::Yo_bj v0.0.5;
+package Locale::CLDR::Transformations::Any::Yo::Yo_bj v0.25.0;
 # This file auto generated from Data\common\transforms\yo-yo_BJ.xml
-#	on Sat 19 Apr  3:14:04 pm GMT
+#	on Fri 25 Apr 10:55:11 pm GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use v5.18;

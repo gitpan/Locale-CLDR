@@ -1,6 +1,6 @@
-package Locale::CLDR::Kab::Any;
+package Locale::CLDR::Kab::Any v0.25.0;
 # This file auto generated
-#	on Sun 23 Mar  7:54:22 pm GMT
+#	on Mon 21 Apr 11:27:22 pm GMT
 
 use v5.18;
 use mro 'c3';

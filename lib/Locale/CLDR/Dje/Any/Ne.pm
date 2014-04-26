@@ -1,6 +1,6 @@
-package Locale::CLDR::Dje::Any::Ne v0.0.5;
+package Locale::CLDR::Dje::Any::Ne v0.25.0;
 # This file auto generated from Data\common\main\dje_NE.xml
-#	on Sat 19 Apr  3:43:48 pm GMT
+#	on Mon 21 Apr 10:38:59 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

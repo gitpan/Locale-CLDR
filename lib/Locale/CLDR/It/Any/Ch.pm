@@ -1,6 +1,6 @@
-package Locale::CLDR::It::Any::Ch v0.0.5;
+package Locale::CLDR::It::Any::Ch v0.25.0;
 # This file auto generated from Data\common\main\it_CH.xml
-#	on Sat 19 Apr  4:27:56 pm GMT
+#	on Mon 21 Apr 11:21:44 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -137,14 +137,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			HHmm => q{HH:mm},
-			HHmmss => q{HH:mm:ss},
-			MMdd => q{dd.MM},
-			hhmm => q{hh:mm a},
-			hhmmss => q{hh:mm:ss a},
-			yMM => q{MM.y},
-		},
 		'generic' => {
 			HHmm => q{HH:mm},
 			HHmmss => q{HH:mm:ss},
@@ -152,6 +144,14 @@ has 'datetime_formats_available_formats' => (
 			hhmm => q{hh:mm a},
 			hhmmss => q{hh:mm:ss a},
 			yMM => q{MM.y GGGGG},
+		},
+		'gregorian' => {
+			HHmm => q{HH:mm},
+			HHmmss => q{HH:mm:ss},
+			MMdd => q{dd.MM},
+			hhmm => q{hh:mm a},
+			hhmmss => q{hh:mm:ss a},
+			yMM => q{MM.y},
 		},
 	} },
 );
@@ -169,48 +169,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			MEd => {
-				M => q{E, dd.MM - E, dd.MM},
-				d => q{E, dd.MM - E, dd.MM},
-			},
-			MMMEd => {
-				M => q{E, d MMM - E, d MMM},
-				d => q{E, d - E, d MMM},
-			},
-			MMMd => {
-				M => q{d MMM - d MMM},
-				d => q{d-d MMM},
-			},
-			Md => {
-				M => q{dd.MM - dd.MM},
-				d => q{dd.MM - dd.MM},
-			},
-			yM => {
-				M => q{MM.y - MM.y},
-				y => q{MM.y - MM.y},
-			},
-			yMEd => {
-				M => q{E, dd.MM.y - E, dd.MM.y},
-				d => q{E, dd.MM.y - E, dd.MM.y},
-				y => q{E, dd.MM.y - E, dd.MM.y},
-			},
-			yMMMEd => {
-				M => q{E, d MMM - E, d MMM y},
-				d => q{E, d - E, d MMM y},
-				y => q{E, d MMM y - E, d MMM y},
-			},
-			yMMMd => {
-				M => q{d MMM - d MMM y},
-				d => q{d-d MMM y},
-				y => q{d MMM y - d MMM y},
-			},
-			yMd => {
-				M => q{dd.MM.y - dd.MM.y},
-				d => q{dd.MM.y - dd.MM.y},
-				y => q{dd.MM.y - dd.MM.y},
-			},
-		},
 		'generic' => {
 			MEd => {
 				M => q{E, dd.MM - E, dd.MM},
@@ -251,6 +209,48 @@ has 'datetime_formats_interval' => (
 				M => q{dd.MM.y - dd.MM.y G},
 				d => q{dd.MM.y - dd.MM.y G},
 				y => q{dd.MM.y - dd.MM.y G},
+			},
+		},
+		'gregorian' => {
+			MEd => {
+				M => q{E, dd.MM - E, dd.MM},
+				d => q{E, dd.MM - E, dd.MM},
+			},
+			MMMEd => {
+				M => q{E, d MMM - E, d MMM},
+				d => q{E, d - E, d MMM},
+			},
+			MMMd => {
+				M => q{d MMM - d MMM},
+				d => q{d-d MMM},
+			},
+			Md => {
+				M => q{dd.MM - dd.MM},
+				d => q{dd.MM - dd.MM},
+			},
+			yM => {
+				M => q{MM.y - MM.y},
+				y => q{MM.y - MM.y},
+			},
+			yMEd => {
+				M => q{E, dd.MM.y - E, dd.MM.y},
+				d => q{E, dd.MM.y - E, dd.MM.y},
+				y => q{E, dd.MM.y - E, dd.MM.y},
+			},
+			yMMMEd => {
+				M => q{E, d MMM - E, d MMM y},
+				d => q{E, d - E, d MMM y},
+				y => q{E, d MMM y - E, d MMM y},
+			},
+			yMMMd => {
+				M => q{d MMM - d MMM y},
+				d => q{d-d MMM y},
+				y => q{d MMM y - d MMM y},
+			},
+			yMd => {
+				M => q{dd.MM.y - dd.MM.y},
+				d => q{dd.MM.y - dd.MM.y},
+				y => q{dd.MM.y - dd.MM.y},
 			},
 		},
 	} },

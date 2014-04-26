@@ -1,6 +1,6 @@
-package Locale::CLDR::Gv::Any::Im v0.0.5;
+package Locale::CLDR::Gv::Any::Im v0.25.0;
 # This file auto generated from Data\common\main\gv_IM.xml
-#	on Sat 19 Apr  4:12:40 pm GMT
+#	on Mon 21 Apr 11:07:08 pm GMT
 # XML file generated 2013-08-22 09:07:34 -0500 (Thu, 22 Aug 2013)
 
 use v5.18;

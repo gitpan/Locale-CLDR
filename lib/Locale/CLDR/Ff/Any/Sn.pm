@@ -1,6 +1,6 @@
-package Locale::CLDR::Ff::Any::Sn v0.0.5;
+package Locale::CLDR::Ff::Any::Sn v0.25.0;
 # This file auto generated from Data\common\main\ff_SN.xml
-#	on Sat 19 Apr  4:00:31 pm GMT
+#	on Mon 21 Apr 10:55:35 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

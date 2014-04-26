@@ -1,4 +1,4 @@
-package Locale::CLDR::NumberFormatter v0.0.5;
+package Locale::CLDR::NumberFormatter v0.25.0;
 
 use v5.18;
 use mro 'c3';
@@ -151,9 +151,8 @@ sub get_formatted_number {
 	my @digits = $self->get_digits;
 	my @number_symbols_bundles = reverse $self->_find_bundle('number_symbols');
 	my %symbols = map { %{$_->number_symbols} } @number_symbols_bundles;
-	my $symbols_type_bundle = $self->_find_bundle('default_numbering_system');
+	my $symbols_type = $self->default_numbering_system;
 	
-	my $symbols_type = $symbols_type_bundle->default_numbering_system;
 	$symbols_type = $symbols{$symbols_type}{alias} if exists $symbols{$symbols_type}{alias};
 	
 	my $type = $number < 0 ? 'negative' : 'positive';
@@ -223,9 +222,7 @@ sub get_formatted_number {
 sub get_digits {
 	my $self = shift;
 	
-	my $bundle = $self->_find_bundle('default_numbering_system');
-	
-	my $numbering_system = $bundle->default_numbering_system();
+	my $numbering_system = $self->default_numbering_system();
 	
 	$numbering_system = 'latn' unless  $self->numbering_system->{$numbering_system}{type} eq 'numeric'; # Fall back to latn if the numbering system is not numeric
 	

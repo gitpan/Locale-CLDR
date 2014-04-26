@@ -1,6 +1,6 @@
-package Locale::CLDR::Swc v0.0.5;
+package Locale::CLDR::Swc v0.25.0;
 # This file auto generated from Data\common\main\swc.xml
-#	on Sat 19 Apr  5:46:51 pm GMT
+#	on Tue 22 Apr 12:38:47 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -846,8 +846,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{ya asubuyi},
 					'pm' => q{ya muchana},
+					'am' => q{ya asubuyi},
 				},
 			},
 		},

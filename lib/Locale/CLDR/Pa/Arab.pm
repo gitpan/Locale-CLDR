@@ -1,6 +1,6 @@
-package Locale::CLDR::Pa::Arab v0.0.5;
+package Locale::CLDR::Pa::Arab v0.25.0;
 # This file auto generated from Data\common\main\pa_Arab.xml
-#	on Sat 19 Apr  5:18:45 pm GMT
+#	on Tue 22 Apr 12:11:19 am GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use v5.18;

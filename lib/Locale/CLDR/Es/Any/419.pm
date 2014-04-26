@@ -1,6 +1,6 @@
-package Locale::CLDR::Es::Any::419 v0.0.5;
+package Locale::CLDR::Es::Any::419 v0.25.0;
 # This file auto generated from Data\common\main\es_419.xml
-#	on Sat 19 Apr  3:53:43 pm GMT
+#	on Mon 21 Apr 10:48:51 pm GMT
 # XML file generated 2014-01-08 23:02:40 -0600 (Wed, 08 Jan 2014)
 
 use v5.18;

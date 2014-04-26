@@ -1,6 +1,6 @@
-package Locale::CLDR::Zh::Hant::Mo v0.0.5;
+package Locale::CLDR::Zh::Hant::Mo v0.25.0;
 # This file auto generated from Data\common\main\zh_Hant_MO.xml
-#	on Sat 19 Apr  6:12:10 pm GMT
+#	on Tue 22 Apr  1:03:35 am GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use v5.18;
@@ -34,31 +34,31 @@ has 'day_period_data' => (
 		SWITCH:
 		for ($type) {
 			if ($_ eq 'gregorian') {
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
 				return 'midDay' if $time >= 1200
 					&& $time < 1300;
 			last SWITCH;
 			}
 			if ($_ eq 'generic') {
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
 				return 'midDay' if $time >= 1200
 					&& $time < 1300;
 			last SWITCH;

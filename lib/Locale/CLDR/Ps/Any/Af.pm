@@ -1,6 +1,6 @@
-package Locale::CLDR::Ps::Any::Af v0.0.5;
+package Locale::CLDR::Ps::Any::Af v0.25.0;
 # This file auto generated from Data\common\main\ps_AF.xml
-#	on Sat 19 Apr  5:20:30 pm GMT
+#	on Tue 22 Apr 12:13:04 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

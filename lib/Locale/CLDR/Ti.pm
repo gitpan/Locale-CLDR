@@ -1,6 +1,6 @@
-package Locale::CLDR::Ti v0.0.5;
+package Locale::CLDR::Ti v0.25.0;
 # This file auto generated from Data\common\main\ti.xml
-#	on Sat 19 Apr  5:54:26 pm GMT
+#	on Tue 22 Apr 12:46:05 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -630,8 +630,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{ንጉሆ ሰዓተ},
 					'pm' => q{ድሕር ሰዓት},
+					'am' => q{ንጉሆ ሰዓተ},
 				},
 			},
 		},

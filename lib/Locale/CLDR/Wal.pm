@@ -1,6 +1,6 @@
-package Locale::CLDR::Wal v0.0.5;
+package Locale::CLDR::Wal v0.25.0;
 # This file auto generated from Data\common\main\wal.xml
-#	on Sat 19 Apr  6:05:46 pm GMT
+#	on Tue 22 Apr 12:57:12 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;

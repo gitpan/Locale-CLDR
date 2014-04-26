@@ -1,6 +1,6 @@
-package Locale::CLDR::Vi v0.0.5;
+package Locale::CLDR::Vi v0.25.0;
 # This file auto generated from Data\common\main\vi.xml
-#	on Sat 19 Apr  6:04:04 pm GMT
+#	on Tue 22 Apr 12:55:30 am GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -4678,10 +4678,6 @@ has 'datetime_formats_available_formats' => (
 			M => q{'tháng' L},
 			MMM => q{LLL},
 		},
-		'roc' => {
-			M => q{'tháng' L},
-			MMM => q{LLL},
-		},
 		'gregorian' => {
 			EHm => q{E HH:mm},
 			EHms => q{E HH:mm:ss},
@@ -4757,6 +4753,10 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{d/M/y G},
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
+		},
+		'roc' => {
+			M => q{'tháng' L},
+			MMM => q{LLL},
 		},
 	} },
 );

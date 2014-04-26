@@ -1,6 +1,6 @@
-package Locale::CLDR::Ur::Any::In v0.0.5;
+package Locale::CLDR::Ur::Any::In v0.25.0;
 # This file auto generated from Data\common\main\ur_IN.xml
-#	on Sat 19 Apr  6:03:06 pm GMT
+#	on Tue 22 Apr 12:54:32 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;

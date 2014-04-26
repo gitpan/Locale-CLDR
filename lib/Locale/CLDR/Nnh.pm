@@ -1,6 +1,6 @@
-package Locale::CLDR::Nnh v0.0.5;
+package Locale::CLDR::Nnh v0.25.0;
 # This file auto generated from Data\common\main\nnh.xml
-#	on Sat 19 Apr  5:16:35 pm GMT
+#	on Tue 22 Apr 12:09:09 am GMT
 # XML file generated 2013-08-30 23:19:50 -0500 (Fri, 30 Aug 2013)
 
 use v5.18;
@@ -407,14 +407,14 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			yMEd => q{E , 'lyɛ'̌ʼ d 'na' M, y},
 			yMMM => q{MMM y},
 			yMMMEd => q{E , 'lyɛ'̌ʼ d 'na' MMM, y},
 			yMMMd => q{'lyɛ'̌ʼ d 'na' MMMM, y},
 			yMd => q{d/M/y},
 		},
-		'gregorian' => {
+		'generic' => {
 			yMEd => q{E , 'lyɛ'̌ʼ d 'na' M, y},
 			yMMM => q{MMM y},
 			yMMMEd => q{E , 'lyɛ'̌ʼ d 'na' MMM, y},

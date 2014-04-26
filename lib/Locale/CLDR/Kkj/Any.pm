@@ -1,6 +1,6 @@
-package Locale::CLDR::Kkj::Any;
+package Locale::CLDR::Kkj::Any v0.25.0;
 # This file auto generated
-#	on Sun 23 Mar  7:56:13 pm GMT
+#	on Mon 21 Apr 11:29:45 pm GMT
 
 use v5.18;
 use mro 'c3';

@@ -1,6 +1,6 @@
-package Locale::CLDR::Se::Any::No v0.0.5;
+package Locale::CLDR::Se::Any::No v0.25.0;
 # This file auto generated from Data\common\main\se_NO.xml
-#	on Sat 19 Apr  5:31:21 pm GMT
+#	on Tue 22 Apr 12:23:34 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

@@ -1,6 +1,6 @@
-package Locale::CLDR::Nus v0.0.5;
+package Locale::CLDR::Nus v0.25.0;
 # This file auto generated from Data\common\main\nus.xml
-#	on Sat 19 Apr  5:16:36 pm GMT
+#	on Tue 22 Apr 12:09:10 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -396,8 +396,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{TŊ},
 					'am' => q{RW},
+					'pm' => q{TŊ},
 				},
 			},
 		},
@@ -477,7 +477,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -501,7 +501,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},

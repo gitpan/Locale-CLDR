@@ -1,6 +1,6 @@
-package Locale::CLDR::Fa::Any::Af v0.0.5;
+package Locale::CLDR::Fa::Any::Af v0.25.0;
 # This file auto generated from Data\common\main\fa_AF.xml
-#	on Sat 19 Apr  4:00:27 pm GMT
+#	on Mon 21 Apr 10:55:31 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use v5.18;
@@ -398,36 +398,36 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'gregorian') {
-				return 'afternoon' if $time >= 1600
-					&& $time < 1900;
-				return 'earlyMorning' if $time >= 0100
-					&& $time < 0600;
+			if ($_ eq 'persian') {
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
+				return 'midDay' if $time > 1200
+					&& $time < 1600;
 				return 'noon' if $time == 1200;
 				return 'night' if $time >= 1900
 					&& $time < 2400;
-				return 'midDay' if $time > 1200
-					&& $time < 1600;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
+				return 'afternoon' if $time >= 1600
+					&& $time < 1900;
 				return 'weeHours' if $time >= 0000
 					&& $time < 0100;
+				return 'earlyMorning' if $time >= 0100
+					&& $time < 0600;
 			last SWITCH;
 			}
-			if ($_ eq 'persian') {
-				return 'afternoon' if $time >= 1600
-					&& $time < 1900;
-				return 'earlyMorning' if $time >= 0100
-					&& $time < 0600;
+			if ($_ eq 'gregorian') {
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
+				return 'midDay' if $time > 1200
+					&& $time < 1600;
 				return 'noon' if $time == 1200;
 				return 'night' if $time >= 1900
 					&& $time < 2400;
-				return 'midDay' if $time > 1200
-					&& $time < 1600;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
+				return 'afternoon' if $time >= 1600
+					&& $time < 1900;
 				return 'weeHours' if $time >= 0000
 					&& $time < 0100;
+				return 'earlyMorning' if $time >= 0100
+					&& $time < 0600;
 			last SWITCH;
 			}
 		}

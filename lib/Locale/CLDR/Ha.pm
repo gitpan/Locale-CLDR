@@ -1,6 +1,6 @@
-package Locale::CLDR::Ha v0.0.5;
+package Locale::CLDR::Ha v0.25.0;
 # This file auto generated from Data\common\main\ha.xml
-#	on Sat 19 Apr  4:12:40 pm GMT
+#	on Mon 21 Apr 11:07:08 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;

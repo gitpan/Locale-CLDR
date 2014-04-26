@@ -1,6 +1,6 @@
-package Locale::CLDR::Kab v0.0.5;
+package Locale::CLDR::Kab v0.25.0;
 # This file auto generated from Data\common\main\kab.xml
-#	on Sat 19 Apr  4:33:46 pm GMT
+#	on Mon 21 Apr 11:27:19 pm GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use v5.18;

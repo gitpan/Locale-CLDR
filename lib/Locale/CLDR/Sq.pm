@@ -1,6 +1,6 @@
-package Locale::CLDR::Sq v0.0.5;
+package Locale::CLDR::Sq v0.25.0;
 # This file auto generated from Data\common\main\sq.xml
-#	on Sat 19 Apr  5:36:45 pm GMT
+#	on Tue 22 Apr 12:28:57 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -2957,13 +2957,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'narrow' => {
-					'am' => q{AM},
-					'pm' => q{PM},
-				},
 				'wide' => {
 					'am' => q{paradite},
 					'pm' => q{pasdite},
+				},
+				'narrow' => {
+					'pm' => q{PM},
+					'am' => q{AM},
 				},
 			},
 		},

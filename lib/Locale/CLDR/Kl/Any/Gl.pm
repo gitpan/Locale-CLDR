@@ -1,6 +1,6 @@
-package Locale::CLDR::Kl::Any::Gl v0.0.5;
+package Locale::CLDR::Kl::Any::Gl v0.25.0;
 # This file auto generated from Data\common\main\kl_GL.xml
-#	on Sat 19 Apr  4:36:22 pm GMT
+#	on Mon 21 Apr 11:29:48 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

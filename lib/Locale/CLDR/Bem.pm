@@ -1,6 +1,6 @@
-package Locale::CLDR::Bem v0.0.5;
+package Locale::CLDR::Bem v0.25.0;
 # This file auto generated from Data\common\main\bem.xml
-#	on Sat 19 Apr  3:22:31 pm GMT
+#	on Mon 21 Apr 10:17:05 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -355,7 +355,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -380,7 +380,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},

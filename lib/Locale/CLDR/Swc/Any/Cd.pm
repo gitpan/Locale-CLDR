@@ -1,6 +1,6 @@
-package Locale::CLDR::Swc::Any::Cd v0.0.5;
+package Locale::CLDR::Swc::Any::Cd v0.25.0;
 # This file auto generated from Data\common\main\swc_CD.xml
-#	on Sat 19 Apr  5:46:55 pm GMT
+#	on Tue 22 Apr 12:38:50 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

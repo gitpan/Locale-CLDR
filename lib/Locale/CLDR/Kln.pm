@@ -1,6 +1,6 @@
-package Locale::CLDR::Kln v0.0.5;
+package Locale::CLDR::Kln v0.25.0;
 # This file auto generated from Data\common\main\kln.xml
-#	on Sat 19 Apr  4:36:23 pm GMT
+#	on Mon 21 Apr 11:29:48 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -812,13 +812,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'pm' => q{Kemo},
-					'am' => q{Beet},
-				},
 				'abbreviated' => {
-					'am' => q{BE},
 					'pm' => q{KE},
+					'am' => q{BE},
+				},
+				'wide' => {
+					'am' => q{Beet},
+					'pm' => q{Kemo},
 				},
 			},
 		},
@@ -898,7 +898,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -921,7 +921,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},

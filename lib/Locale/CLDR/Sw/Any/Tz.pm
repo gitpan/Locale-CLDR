@@ -1,6 +1,6 @@
-package Locale::CLDR::Sw::Any::Tz v0.0.5;
+package Locale::CLDR::Sw::Any::Tz v0.25.0;
 # This file auto generated from Data\common\main\sw_TZ.xml
-#	on Sat 19 Apr  5:46:51 pm GMT
+#	on Tue 22 Apr 12:38:46 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

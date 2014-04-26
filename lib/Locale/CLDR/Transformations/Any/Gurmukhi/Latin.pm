@@ -1,6 +1,6 @@
-package Locale::CLDR::Transformations::Any::Gurmukhi::Latin v0.0.5;
+package Locale::CLDR::Transformations::Any::Gurmukhi::Latin v0.25.0;
 # This file auto generated from Data\common\transforms\Gurmukhi-Latin.xml
-#	on Sat 19 Apr  3:13:43 pm GMT
+#	on Fri 25 Apr 10:54:50 pm GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
 use v5.18;

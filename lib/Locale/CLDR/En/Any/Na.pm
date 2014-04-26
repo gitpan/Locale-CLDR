@@ -1,6 +1,6 @@
-package Locale::CLDR::En::Any::Na v0.0.5;
+package Locale::CLDR::En::Any::Na v0.25.0;
 # This file auto generated from Data\common\main\en_NA.xml
-#	on Sat 19 Apr  3:51:48 pm GMT
+#	on Mon 21 Apr 10:46:58 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use v5.18;

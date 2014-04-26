@@ -1,6 +1,6 @@
-package Locale::CLDR::Ar::Any::Eg v0.0.5;
+package Locale::CLDR::Ar::Any::Eg v0.25.0;
 # This file auto generated from Data\common\main\ar_EG.xml
-#	on Sat 19 Apr  3:19:49 pm GMT
+#	on Mon 21 Apr 10:14:18 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;

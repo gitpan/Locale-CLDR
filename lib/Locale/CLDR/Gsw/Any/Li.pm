@@ -1,6 +1,6 @@
-package Locale::CLDR::Gsw::Any::Li v0.0.5;
+package Locale::CLDR::Gsw::Any::Li v0.25.0;
 # This file auto generated from Data\common\main\gsw_LI.xml
-#	on Sat 19 Apr  4:10:24 pm GMT
+#	on Mon 21 Apr 11:04:58 pm GMT
 # XML file generated 2013-08-22 18:59:54 -0500 (Thu, 22 Aug 2013)
 
 use v5.18;

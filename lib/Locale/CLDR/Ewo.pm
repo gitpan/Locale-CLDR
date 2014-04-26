@@ -1,6 +1,6 @@
-package Locale::CLDR::Ewo v0.0.5;
+package Locale::CLDR::Ewo v0.25.0;
 # This file auto generated from Data\common\main\ewo.xml
-#	on Sat 19 Apr  3:58:01 pm GMT
+#	on Mon 21 Apr 10:53:06 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -937,7 +937,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{d E},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -961,7 +961,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{d E},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},

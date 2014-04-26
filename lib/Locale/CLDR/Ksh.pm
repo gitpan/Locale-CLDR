@@ -1,6 +1,6 @@
-package Locale::CLDR::Ksh v0.0.5;
+package Locale::CLDR::Ksh v0.25.0;
 # This file auto generated from Data\common\main\ksh.xml
-#	on Sat 19 Apr  4:46:12 pm GMT
+#	on Mon 21 Apr 11:39:19 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -2911,14 +2911,14 @@ has 'day_periods' => (
 					'am' => q{v.m.},
 				},
 				'wide' => {
-					'am' => q{Uhr vörmiddaachs},
 					'pm' => q{Uhr nommendaachs},
+					'am' => q{Uhr vörmiddaachs},
 				},
 			},
 			'stand-alone' => {
 				'wide' => {
-					'am' => q{Vormittag},
 					'pm' => q{Nachmittag},
+					'am' => q{Vormittag},
 				},
 			},
 		},
@@ -3011,7 +3011,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E 'dä' d.},
 			Hm => q{H:mm},
 			Hms => q{H:mm:ss},
@@ -3036,7 +3036,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQy},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E 'dä' d.},
 			Hm => q{H:mm},
 			Hms => q{H:mm:ss},
@@ -3077,7 +3077,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			M => {
 				M => q{M–M},
 			},
@@ -3117,7 +3117,7 @@ has 'datetime_formats_interval' => (
 				y => q{MMMM y – MMMM y},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			M => {
 				M => q{M–M},
 			},

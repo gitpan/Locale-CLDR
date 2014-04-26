@@ -1,6 +1,6 @@
-package Locale::CLDR::Ar::Any::Ma v0.0.5;
+package Locale::CLDR::Ar::Any::Ma v0.25.0;
 # This file auto generated from Data\common\main\ar_MA.xml
-#	on Sat 19 Apr  3:19:50 pm GMT
+#	on Mon 21 Apr 10:14:20 pm GMT
 # XML file generated 2014-01-08 23:53:23 -0600 (Wed, 08 Jan 2014)
 
 use v5.18;
@@ -236,19 +236,19 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			MMdd => q{MM/dd},
-			Md => q{M/d},
-			yM => q{y/M},
-			yMM => q{y/MM},
-			yMd => q{y/M/d},
-		},
 		'generic' => {
 			MMdd => q{MM/dd},
 			Md => q{M/d},
 			yyyyM => q{G y/M},
 			yyyyMM => q{G y/MM},
 			yyyyMd => q{G y/M/d},
+		},
+		'gregorian' => {
+			MMdd => q{MM/dd},
+			Md => q{M/d},
+			yM => q{y/M},
+			yMM => q{y/MM},
+			yMd => q{y/M/d},
 		},
 	} },
 );
@@ -266,23 +266,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			MMMd => {
-				d => q{d‏-d MMM},
-			},
-			d => {
-				d => q{d‏-d},
-			},
-			y => {
-				y => q{y‏-y},
-			},
-			yMMMM => {
-				M => q{MM ‏- MM ‏–y},
-			},
-			yMMMd => {
-				d => q{d‏–d MMM، y},
-			},
-		},
 		'generic' => {
 			MMMd => {
 				d => q{d‏-d MMM},
@@ -298,6 +281,23 @@ has 'datetime_formats_interval' => (
 			},
 			yMMMd => {
 				d => q{d‏–d MMM، y G},
+			},
+		},
+		'gregorian' => {
+			MMMd => {
+				d => q{d‏-d MMM},
+			},
+			d => {
+				d => q{d‏-d},
+			},
+			y => {
+				y => q{y‏-y},
+			},
+			yMMMM => {
+				M => q{MM ‏- MM ‏–y},
+			},
+			yMMMd => {
+				d => q{d‏–d MMM، y},
 			},
 		},
 	} },

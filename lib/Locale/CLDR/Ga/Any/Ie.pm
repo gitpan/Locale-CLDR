@@ -1,6 +1,6 @@
-package Locale::CLDR::Ga::Any::Ie v0.0.5;
+package Locale::CLDR::Ga::Any::Ie v0.25.0;
 # This file auto generated from Data\common\main\ga_IE.xml
-#	on Sat 19 Apr  4:08:02 pm GMT
+#	on Mon 21 Apr 11:02:43 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

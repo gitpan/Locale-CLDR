@@ -1,6 +1,6 @@
-package Locale::CLDR::Bn::Any::In v0.0.5;
+package Locale::CLDR::Bn::Any::In v0.25.0;
 # This file auto generated from Data\common\main\bn_IN.xml
-#	on Sat 19 Apr  3:28:06 pm GMT
+#	on Mon 21 Apr 10:22:49 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;

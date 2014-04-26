@@ -1,6 +1,6 @@
-package Locale::CLDR::Ta::Any::In v0.0.5;
+package Locale::CLDR::Ta::Any::In v0.25.0;
 # This file auto generated from Data\common\main\ta_IN.xml
-#	on Sat 19 Apr  5:49:05 pm GMT
+#	on Tue 22 Apr 12:40:55 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

@@ -1,6 +1,6 @@
-package Locale::CLDR::Is::Any::Is v0.0.5;
+package Locale::CLDR::Is::Any::Is v0.25.0;
 # This file auto generated from Data\common\main\is_IS.xml
-#	on Sat 19 Apr  4:26:24 pm GMT
+#	on Mon 21 Apr 11:20:16 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

@@ -1,6 +1,6 @@
-package Locale::CLDR::Ksf v0.0.5;
+package Locale::CLDR::Ksf v0.25.0;
 # This file auto generated from Data\common\main\ksf.xml
-#	on Sat 19 Apr  4:46:07 pm GMT
+#	on Mon 21 Apr 11:39:14 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;

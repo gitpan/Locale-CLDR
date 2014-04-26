@@ -1,6 +1,6 @@
-package Locale::CLDR::Kam v0.0.5;
+package Locale::CLDR::Kam v0.25.0;
 # This file auto generated from Data\common\main\kam.xml
-#	on Sat 19 Apr  4:33:50 pm GMT
+#	on Mon 21 Apr 11:27:22 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -812,8 +812,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{Ĩyawĩoo},
 					'am' => q{Ĩyakwakya},
+					'pm' => q{Ĩyawĩoo},
 				},
 			},
 		},

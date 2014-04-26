@@ -1,6 +1,6 @@
-package Locale::CLDR::Vai::Latn v0.0.5;
+package Locale::CLDR::Vai::Latn v0.25.0;
 # This file auto generated from Data\common\main\vai_Latn.xml
-#	on Sat 19 Apr  6:03:59 pm GMT
+#	on Tue 22 Apr 12:55:25 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -831,7 +831,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -855,7 +855,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},

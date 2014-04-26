@@ -1,6 +1,6 @@
-package Locale::CLDR::En::Any::Sh v0.0.5;
+package Locale::CLDR::En::Any::Sh v0.25.0;
 # This file auto generated from Data\common\main\en_SH.xml
-#	on Sat 19 Apr  3:51:51 pm GMT
+#	on Mon 21 Apr 10:47:01 pm GMT
 # XML file generated 2013-08-22 18:59:54 -0500 (Thu, 22 Aug 2013)
 
 use v5.18;

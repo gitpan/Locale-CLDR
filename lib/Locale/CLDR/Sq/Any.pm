@@ -1,6 +1,6 @@
-package Locale::CLDR::Sq::Any;
+package Locale::CLDR::Sq::Any v0.25.0;
 # This file auto generated
-#	on Sun 23 Mar  8:56:25 pm GMT
+#	on Tue 22 Apr 12:30:15 am GMT
 
 use v5.18;
 use mro 'c3';

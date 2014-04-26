@@ -1,6 +1,6 @@
-package Locale::CLDR::Az v0.0.5;
+package Locale::CLDR::Az v0.25.0;
 # This file auto generated from Data\common\main\az.xml
-#	on Sat 19 Apr  3:20:24 pm GMT
+#	on Mon 21 Apr 10:14:54 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;

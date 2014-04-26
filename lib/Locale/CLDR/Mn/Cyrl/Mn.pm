@@ -1,6 +1,6 @@
-package Locale::CLDR::Mn::Cyrl::Mn v0.0.5;
+package Locale::CLDR::Mn::Cyrl::Mn v0.25.0;
 # This file auto generated from Data\common\main\mn_Cyrl_MN.xml
-#	on Sat 19 Apr  5:04:32 pm GMT
+#	on Mon 21 Apr 11:57:18 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

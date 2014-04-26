@@ -1,6 +1,6 @@
-package Locale::CLDR::Zgh v0.0.5;
+package Locale::CLDR::Zgh v0.25.0;
 # This file auto generated from Data\common\main\zgh.xml
-#	on Sat 19 Apr  6:05:59 pm GMT
+#	on Tue 22 Apr 12:57:25 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -875,8 +875,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{ⵜⵉⴼⴰⵡⵜ},
 					'pm' => q{ⵜⴰⴷⴳⴳⵯⴰⵜ},
+					'am' => q{ⵜⵉⴼⴰⵡⵜ},
 				},
 			},
 		},
@@ -956,6 +956,14 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'generic' => {
+			M => q{M},
+			MMM => q{MMM},
+			MMMEd => q{E d MMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			y => q{y},
+		},
 		'gregorian' => {
 			M => q{M},
 			MMM => q{MMM},
@@ -970,14 +978,6 @@ has 'datetime_formats_available_formats' => (
 			yMMMEd => q{E d MMM y},
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
-		},
-		'generic' => {
-			M => q{M},
-			MMM => q{MMM},
-			MMMEd => q{E d MMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			y => q{y},
 		},
 	} },
 );

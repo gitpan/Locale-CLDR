@@ -1,6 +1,6 @@
-package Locale::CLDR::Dz v0.0.5;
+package Locale::CLDR::Dz v0.25.0;
 # This file auto generated from Data\common\main\dz.xml
-#	on Sat 19 Apr  3:43:51 pm GMT
+#	on Mon 21 Apr 10:39:02 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -1604,11 +1604,11 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
+				'narrow' => {
 					'pm' => q{ཕྱི་ཆ་},
 					'am' => q{སྔ་ཆ་},
 				},
-				'narrow' => {
+				'wide' => {
 					'pm' => q{ཕྱི་ཆ་},
 					'am' => q{སྔ་ཆ་},
 				},

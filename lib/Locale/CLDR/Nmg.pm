@@ -1,6 +1,6 @@
-package Locale::CLDR::Nmg v0.0.5;
+package Locale::CLDR::Nmg v0.25.0;
 # This file auto generated from Data\common\main\nmg.xml
-#	on Sat 19 Apr  5:15:27 pm GMT
+#	on Tue 22 Apr 12:08:01 am GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use v5.18;
@@ -916,7 +916,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -940,7 +940,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},

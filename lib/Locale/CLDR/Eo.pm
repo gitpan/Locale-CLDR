@@ -1,6 +1,6 @@
-package Locale::CLDR::Eo v0.0.5;
+package Locale::CLDR::Eo v0.25.0;
 # This file auto generated from Data\common\main\eo.xml
-#	on Sat 19 Apr  3:51:54 pm GMT
+#	on Mon 21 Apr 10:47:04 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -651,8 +651,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{atm},
 					'pm' => q{ptm},
+					'am' => q{atm},
 				},
 			},
 		},

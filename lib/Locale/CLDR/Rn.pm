@@ -1,6 +1,6 @@
-package Locale::CLDR::Rn v0.0.5;
+package Locale::CLDR::Rn v0.25.0;
 # This file auto generated from Data\common\main\rn.xml
-#	on Sat 19 Apr  5:26:01 pm GMT
+#	on Tue 22 Apr 12:18:26 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -809,8 +809,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{Z.MU.},
 					'pm' => q{Z.MW.},
+					'am' => q{Z.MU.},
 				},
 			},
 		},
@@ -890,7 +890,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -914,7 +914,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},

@@ -1,6 +1,6 @@
-package Locale::CLDR::Transformations::Any::Traditional::Simplified v0.0.5;
+package Locale::CLDR::Transformations::Any::Traditional::Simplified v0.25.0;
 # This file auto generated from Data\common\transforms\Simplified-Traditional.xml
-#	on Sat 19 Apr  3:13:56 pm GMT
+#	on Fri 25 Apr 10:55:03 pm GMT
 # XML file generated 2014-02-11 22:47:57 -0600 (Tue, 11 Feb 2014)
 
 use v5.18;

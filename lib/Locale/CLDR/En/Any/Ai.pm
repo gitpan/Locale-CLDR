@@ -1,6 +1,6 @@
-package Locale::CLDR::En::Any::Ai v0.0.5;
+package Locale::CLDR::En::Any::Ai v0.25.0;
 # This file auto generated from Data\common\main\en_AI.xml
-#	on Sat 19 Apr  3:51:33 pm GMT
+#	on Mon 21 Apr 10:46:44 pm GMT
 # XML file generated 2013-08-22 18:59:54 -0500 (Thu, 22 Aug 2013)
 
 use v5.18;

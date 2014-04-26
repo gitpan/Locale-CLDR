@@ -1,6 +1,6 @@
-package Locale::CLDR::Twq::Any::Ne v0.0.5;
+package Locale::CLDR::Twq::Any::Ne v0.25.0;
 # This file auto generated from Data\common\main\twq_NE.xml
-#	on Sat 19 Apr  5:56:25 pm GMT
+#	on Tue 22 Apr 12:48:00 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

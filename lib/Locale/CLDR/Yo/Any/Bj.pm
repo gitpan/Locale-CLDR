@@ -1,6 +1,6 @@
-package Locale::CLDR::Yo::Any::Bj v0.0.5;
+package Locale::CLDR::Yo::Any::Bj v0.25.0;
 # This file auto generated from Data\common\main\yo_BJ.xml
-#	on Sat 19 Apr  6:05:56 pm GMT
+#	on Tue 22 Apr 12:57:22 am GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use v5.18;
@@ -840,8 +840,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{Àárɔ̀},
 					'pm' => q{Ɔ̀sán},
+					'am' => q{Àárɔ̀},
 				},
 			},
 		},
@@ -921,7 +921,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -944,7 +944,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},

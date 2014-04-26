@@ -1,6 +1,6 @@
-package Locale::CLDR::Uz::Latn v0.0.5;
+package Locale::CLDR::Uz::Latn v0.25.0;
 # This file auto generated from Data\common\main\uz_Latn.xml
-#	on Sat 19 Apr  6:03:55 pm GMT
+#	on Tue 22 Apr 12:55:22 am GMT
 # XML file generated 2013-08-05 17:45:59 -0500 (Mon, 05 Aug 2013)
 
 use v5.18;

@@ -1,6 +1,6 @@
-package Locale::CLDR::Km v0.0.5;
+package Locale::CLDR::Km v0.25.0;
 # This file auto generated from Data\common\main\km.xml
-#	on Sat 19 Apr  4:36:27 pm GMT
+#	on Mon 21 Apr 11:29:52 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -2489,8 +2489,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ល្ងាច},
 					'am' => q{ព្រឹក},
+					'pm' => q{ល្ងាច},
 				},
 			},
 		},

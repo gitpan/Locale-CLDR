@@ -1,6 +1,6 @@
-package Locale::CLDR::Fr::Any::Ch v0.0.5;
+package Locale::CLDR::Fr::Any::Ch v0.25.0;
 # This file auto generated from Data\common\main\fr_CH.xml
-#	on Sat 19 Apr  4:05:07 pm GMT
+#	on Mon 21 Apr 10:59:57 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -105,21 +105,21 @@ has 'day_period_data' => (
 			if ($_ eq 'generic') {
 				return 'morning' if $time >= 0000
 					&& $time < 1200;
-				return 'night' if $time >= 1900
-					&& $time < 2400;
 				return 'noon' if $time == 1200;
 				return 'afternoon' if $time > 1200
 					&& $time < 1900;
+				return 'night' if $time >= 1900
+					&& $time < 2400;
 			last SWITCH;
 			}
 			if ($_ eq 'gregorian') {
 				return 'morning' if $time >= 0000
 					&& $time < 1200;
-				return 'night' if $time >= 1900
-					&& $time < 2400;
 				return 'noon' if $time == 1200;
 				return 'afternoon' if $time > 1200
 					&& $time < 1900;
+				return 'night' if $time >= 1900
+					&& $time < 2400;
 			last SWITCH;
 			}
 		}

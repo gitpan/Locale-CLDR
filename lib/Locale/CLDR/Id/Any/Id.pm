@@ -1,6 +1,6 @@
-package Locale::CLDR::Id::Any::Id v0.0.5;
+package Locale::CLDR::Id::Any::Id v0.25.0;
 # This file auto generated from Data\common\main\id_ID.xml
-#	on Sat 19 Apr  4:25:07 pm GMT
+#	on Mon 21 Apr 11:19:03 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

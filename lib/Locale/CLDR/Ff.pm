@@ -1,6 +1,6 @@
-package Locale::CLDR::Ff v0.0.5;
+package Locale::CLDR::Ff v0.25.0;
 # This file auto generated from Data\common\main\ff.xml
-#	on Sat 19 Apr  4:00:28 pm GMT
+#	on Mon 21 Apr 10:55:32 pm GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use v5.18;
@@ -829,8 +829,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{subaka},
 					'pm' => q{kikiiɗe},
+					'am' => q{subaka},
 				},
 			},
 		},
@@ -910,7 +910,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			M => q{M},
 			MMM => q{MMM},
 			MMMEd => q{E d MMM},
@@ -932,7 +932,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			M => q{M},
 			MMM => q{MMM},
 			MMMEd => q{E d MMM},

@@ -1,6 +1,6 @@
-package Locale::CLDR::Gu v0.0.5;
+package Locale::CLDR::Gu v0.25.0;
 # This file auto generated from Data\common\main\gu.xml
-#	on Sat 19 Apr  4:10:26 pm GMT
+#	on Mon 21 Apr 11:05:00 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -3479,12 +3479,12 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{AM},
 					'pm' => q{PM},
+					'am' => q{AM},
 				},
 				'narrow' => {
-					'am' => q{AM},
 					'pm' => q{PM},
+					'am' => q{AM},
 				},
 			},
 		},

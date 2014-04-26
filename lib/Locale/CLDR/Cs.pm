@@ -1,6 +1,6 @@
-package Locale::CLDR::Cs v0.0.5;
+package Locale::CLDR::Cs v0.25.0;
 # This file auto generated from Data\common\main\cs.xml
-#	on Sat 19 Apr  3:38:12 pm GMT
+#	on Mon 21 Apr 10:33:10 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -5149,11 +5149,11 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
+				'narrow' => {
 					'am' => q{AM},
 					'pm' => q{PM},
 				},
-				'narrow' => {
+				'wide' => {
 					'pm' => q{PM},
 					'am' => q{AM},
 				},

@@ -1,6 +1,6 @@
-package Locale::CLDR::Haw v0.0.5;
+package Locale::CLDR::Haw v0.25.0;
 # This file auto generated from Data\common\main\haw.xml
-#	on Sat 19 Apr  4:12:44 pm GMT
+#	on Mon 21 Apr 11:07:12 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use v5.18;

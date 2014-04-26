@@ -1,6 +1,6 @@
-package Locale::CLDR::Sr::Cyrl::Xk v0.0.5;
+package Locale::CLDR::Sr::Cyrl::Xk v0.25.0;
 # This file auto generated from Data\common\main\sr_Cyrl_XK.xml
-#	on Sat 19 Apr  5:41:06 pm GMT
+#	on Tue 22 Apr 12:33:14 am GMT
 # XML file generated 2013-08-18 23:26:52 -0500 (Sun, 18 Aug 2013)
 
 use v5.18;

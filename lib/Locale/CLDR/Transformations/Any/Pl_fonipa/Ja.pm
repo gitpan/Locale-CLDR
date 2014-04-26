@@ -1,6 +1,6 @@
-package Locale::CLDR::Transformations::Any::Pl_fonipa::Ja v0.0.5;
+package Locale::CLDR::Transformations::Any::Pl_fonipa::Ja v0.25.0;
 # This file auto generated from Data\common\transforms\pl_FONIPA-ja.xml
-#	on Sat 19 Apr  3:14:02 pm GMT
+#	on Fri 25 Apr 10:55:09 pm GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
 use v5.18;

@@ -1,6 +1,6 @@
-package Locale::CLDR::Sk::Any;
+package Locale::CLDR::Sk::Any v0.25.0;
 # This file auto generated
-#	on Sun 23 Mar  8:54:47 pm GMT
+#	on Tue 22 Apr 12:27:17 am GMT
 
 use v5.18;
 use mro 'c3';

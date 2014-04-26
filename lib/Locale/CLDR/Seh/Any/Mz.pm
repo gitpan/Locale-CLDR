@@ -1,6 +1,6 @@
-package Locale::CLDR::Seh::Any::Mz v0.0.5;
+package Locale::CLDR::Seh::Any::Mz v0.25.0;
 # This file auto generated from Data\common\main\seh_MZ.xml
-#	on Sat 19 Apr  5:31:25 pm GMT
+#	on Tue 22 Apr 12:23:38 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

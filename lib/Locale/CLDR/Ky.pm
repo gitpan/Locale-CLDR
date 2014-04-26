@@ -1,6 +1,6 @@
-package Locale::CLDR::Ky v0.0.5;
+package Locale::CLDR::Ky v0.25.0;
 # This file auto generated from Data\common\main\ky.xml
-#	on Sat 19 Apr  4:46:44 pm GMT
+#	on Mon 21 Apr 11:39:51 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;

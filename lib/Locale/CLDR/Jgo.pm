@@ -1,6 +1,6 @@
-package Locale::CLDR::Jgo v0.0.5;
+package Locale::CLDR::Jgo v0.25.0;
 # This file auto generated from Data\common\main\jgo.xml
-#	on Sat 19 Apr  4:31:05 pm GMT
+#	on Mon 21 Apr 11:24:45 pm GMT
 # XML file generated 2014-02-24 11:09:08 -0600 (Mon, 24 Feb 2014)
 
 use v5.18;
@@ -605,8 +605,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{mbaꞌmbaꞌ},
 					'pm' => q{ŋka mbɔ́t nji},
+					'am' => q{mbaꞌmbaꞌ},
 				},
 			},
 		},

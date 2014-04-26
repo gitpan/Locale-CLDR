@@ -1,6 +1,6 @@
-package Locale::CLDR::Transformations::Any::Latin::Kannada v0.0.5;
+package Locale::CLDR::Transformations::Any::Latin::Kannada v0.25.0;
 # This file auto generated from Data\common\transforms\Latin-Kannada.xml
-#	on Sat 19 Apr  3:13:51 pm GMT
+#	on Fri 25 Apr 10:54:59 pm GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
 use v5.18;

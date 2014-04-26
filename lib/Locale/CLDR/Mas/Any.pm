@@ -1,6 +1,6 @@
-package Locale::CLDR::Mas::Any;
+package Locale::CLDR::Mas::Any v0.25.0;
 # This file auto generated
-#	on Sun 23 Mar  8:31:45 pm GMT
+#	on Mon 21 Apr 11:49:58 pm GMT
 
 use v5.18;
 use mro 'c3';

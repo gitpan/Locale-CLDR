@@ -1,6 +1,6 @@
-package Locale::CLDR::Ru::Any::Ua v0.0.5;
+package Locale::CLDR::Ru::Any::Ua v0.25.0;
 # This file auto generated from Data\common\main\ru_UA.xml
-#	on Sat 19 Apr  5:31:07 pm GMT
+#	on Tue 22 Apr 12:23:20 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -95,11 +95,11 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			yMMMd => q{d MMM y},
-		},
 		'generic' => {
 			yyyyMMMd => q{d MMM y G},
+		},
+		'gregorian' => {
+			yMMMd => q{d MMM y},
 		},
 	} },
 );
@@ -117,7 +117,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH-HH 'ч'.},
 			},
@@ -158,7 +158,7 @@ has 'datetime_formats_interval' => (
 				y => q{d MMM y - d MMM y},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH-HH 'ч'.},
 			},

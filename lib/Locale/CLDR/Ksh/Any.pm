@@ -1,6 +1,6 @@
-package Locale::CLDR::Ksh::Any;
+package Locale::CLDR::Ksh::Any v0.25.0;
 # This file auto generated
-#	on Sun 23 Mar  8:24:37 pm GMT
+#	on Mon 21 Apr 11:39:49 pm GMT
 
 use v5.18;
 use mro 'c3';

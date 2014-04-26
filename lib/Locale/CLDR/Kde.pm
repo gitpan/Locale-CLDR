@@ -1,6 +1,6 @@
-package Locale::CLDR::Kde v0.0.5;
+package Locale::CLDR::Kde v0.25.0;
 # This file auto generated from Data\common\main\kde.xml
-#	on Sat 19 Apr  4:33:54 pm GMT
+#	on Mon 21 Apr 11:27:26 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;

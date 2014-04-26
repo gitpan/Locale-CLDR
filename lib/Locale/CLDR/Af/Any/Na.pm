@@ -1,6 +1,6 @@
-package Locale::CLDR::Af::Any::Na v0.0.5;
+package Locale::CLDR::Af::Any::Na v0.25.0;
 # This file auto generated from Data\common\main\af_NA.xml
-#	on Sat 19 Apr  3:14:56 pm GMT
+#	on Mon 21 Apr 10:09:19 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;

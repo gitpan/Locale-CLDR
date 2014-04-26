@@ -1,6 +1,6 @@
-package Locale::CLDR::NumberingSystems v0.0.5;
+package Locale::CLDR::NumberingSystems v0.25.0;
 # This file auto generated from Data\common\supplemental\numberingSystems.xml
-#	on Sat 19 Apr  3:13:03 pm GMT
+#	on Fri 25 Apr 10:54:10 pm GMT
 # XML file generated 2014-02-13 11:57:02 -0600 (Thu, 13 Feb 2014)
 
 use v5.18;
@@ -252,6 +252,32 @@ has 'numbering_system' => (
 		},
 	}},
 );
+
+has '_default_numbering_system' => ( 
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default	=> '',
+	traits	=> ['String'],
+	handles	=> {
+		_set_default_nu		=> 'append',
+		_clear_default_nu	=> 'clear',
+		_test_default_nu	=> 'length',
+	},
+);
+
+sub default_numbering_system {
+	my $self = shift;
+	
+	if($self->_test_default_nu) {
+		return $self->_default_numbering_system;
+	}
+	else {
+		my $numbering_system = $self->_find_bundle('default_numbering_system')->default_numbering_system;
+		$self->_set_default_nu($numbering_system);
+		return $numbering_system
+	}
+}
 
 no Moose::Role;
 

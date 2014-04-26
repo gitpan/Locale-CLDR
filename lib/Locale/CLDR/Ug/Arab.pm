@@ -1,6 +1,6 @@
-package Locale::CLDR::Ug::Arab v0.0.5;
+package Locale::CLDR::Ug::Arab v0.25.0;
 # This file auto generated from Data\common\main\ug_Arab.xml
-#	on Sat 19 Apr  5:58:10 pm GMT
+#	on Tue 22 Apr 12:49:41 am GMT
 # XML file generated 2014-02-27 13:38:13 -0600 (Thu, 27 Feb 2014)
 
 use v5.18;

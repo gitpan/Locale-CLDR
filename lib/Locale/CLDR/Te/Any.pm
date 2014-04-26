@@ -1,6 +1,6 @@
-package Locale::CLDR::Te::Any;
+package Locale::CLDR::Te::Any v0.25.0;
 # This file auto generated
-#	on Sun 23 Mar  9:04:41 pm GMT
+#	on Tue 22 Apr 12:43:02 am GMT
 
 use v5.18;
 use mro 'c3';

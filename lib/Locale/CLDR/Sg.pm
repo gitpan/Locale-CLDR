@@ -1,6 +1,6 @@
-package Locale::CLDR::Sg v0.0.5;
+package Locale::CLDR::Sg v0.25.0;
 # This file auto generated from Data\common\main\sg.xml
-#	on Sat 19 Apr  5:31:29 pm GMT
+#	on Tue 22 Apr 12:23:42 am GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use v5.18;
@@ -830,8 +830,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{ND},
 					'pm' => q{LK},
+					'am' => q{ND},
 				},
 			},
 		},

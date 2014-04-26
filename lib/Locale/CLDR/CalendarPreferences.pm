@@ -1,6 +1,6 @@
-package Locale::CLDR::CalendarPreferences v0.0.5;
+package Locale::CLDR::CalendarPreferences v0.25.0;
 # This file auto generated from Data.xml
-#	on Sat 19 Apr  3:13:38 pm GMT
+#	on Fri 25 Apr 10:54:45 pm GMT
 # XML file generated 2014-03-13 15:53:16 -0500 (Thu, 13 Mar 2014)
 
 use v5.18;
@@ -56,14 +56,32 @@ has 'calendar_preferences' => (
 	}},
 );
 
+has '_default_calendar' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default	=> sub { { } },
+	traits	=> ['Hash'],
+	handles	=> {
+		_set_default_ca  => 'set',
+		_get_default_ca  => 'get',
+		_test_default_ca => 'exists',
+	},
+);
+
 sub default_calendar {
 	my ($self, $territory) = @_;
 
 	$territory //= $self->territory_id();
+	if ($self->_test_default_ca($territory)) {
+		return $self->_get_default_ca($territory);
+	}
 
 	my $preferences = $self->calendar_preferences();
 
 	my $default = $preferences->{$territory}[0] // 'gregorian';
+
+	$self->_set_default_ca($territory => $default);
 
 	return $default;
 }

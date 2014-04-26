@@ -1,6 +1,6 @@
-package Locale::CLDR::Vo v0.0.5;
+package Locale::CLDR::Vo v0.25.0;
 # This file auto generated from Data\common\main\vo.xml
-#	on Sat 19 Apr  6:05:39 pm GMT
+#	on Tue 22 Apr 12:57:05 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;
@@ -273,14 +273,14 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{büz.},
 					'earlyMorning' => q{gödo},
-					'afternoon' => q{poszedelo},
-					'noon' => q{zedelo},
 					'night' => q{neito},
-					'morning' => q{büzedelo},
-					'am' => q{posz.},
+					'noon' => q{zedelo},
 					'evening' => q{soaro},
+					'pm' => q{büz.},
+					'am' => q{posz.},
+					'morning' => q{büzedelo},
+					'afternoon' => q{poszedelo},
 				},
 			},
 		},

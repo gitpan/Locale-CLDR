@@ -1,6 +1,6 @@
-package Locale::CLDR::El v0.0.5;
+package Locale::CLDR::El v0.25.0;
 # This file auto generated from Data\common\main\el.xml
-#	on Sat 19 Apr  3:46:57 pm GMT
+#	on Mon 21 Apr 10:42:12 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -4564,23 +4564,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'japanese' => {
-			Ed => q{E d},
-			Gy => q{y G},
-			MEd => q{E, d/M},
-			MMM => q{LLL},
-			MMMEd => q{E, d MMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			y => q{y G},
-			yM => q{MM/y GGGGG},
-			yMEd => q{E, dd/MM/y GGGGG},
-			yMMM => q{LLL y GGGGG},
-			yMMMEd => q{E, d MMM, y G},
-			yMMMd => q{d MMM, y G},
-			yMd => q{dd/MM/y GGGGG},
-			yQQQ => q{y GGGGG QQQ},
-		},
 		'gregorian' => {
 			EHm => q{E HH:mm},
 			EHms => q{E HH:mm:ss},
@@ -4619,6 +4602,23 @@ has 'datetime_formats_available_formats' => (
 			yMd => q{d/M/y},
 			yQQQ => q{y QQQ},
 			yQQQQ => q{y QQQQ},
+		},
+		'japanese' => {
+			Ed => q{E d},
+			Gy => q{y G},
+			MEd => q{E, d/M},
+			MMM => q{LLL},
+			MMMEd => q{E, d MMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			y => q{y G},
+			yM => q{MM/y GGGGG},
+			yMEd => q{E, dd/MM/y GGGGG},
+			yMMM => q{LLL y GGGGG},
+			yMMMEd => q{E, d MMM, y G},
+			yMMMd => q{d MMM, y G},
+			yMd => q{dd/MM/y GGGGG},
+			yQQQ => q{y GGGGG QQQ},
 		},
 		'generic' => {
 			Ed => q{E d},

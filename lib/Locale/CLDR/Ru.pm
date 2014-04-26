@@ -1,6 +1,6 @@
-package Locale::CLDR::Ru v0.0.5;
+package Locale::CLDR::Ru v0.25.0;
 # This file auto generated from Data\common\main\ru.xml
-#	on Sat 19 Apr  5:28:13 pm GMT
+#	on Tue 22 Apr 12:20:33 am GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use v5.18;
@@ -5579,15 +5579,15 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'abbreviated' => {
+				'narrow' => {
 					'am' => q{AM},
 					'pm' => q{PM},
 				},
 				'wide' => {
-					'am' => q{AM},
 					'pm' => q{PM},
+					'am' => q{AM},
 				},
-				'narrow' => {
+				'abbreviated' => {
 					'pm' => q{PM},
 					'am' => q{AM},
 				},

@@ -1,6 +1,6 @@
-package Locale::CLDR::Lag v0.0.5;
+package Locale::CLDR::Lag v0.25.0;
 # This file auto generated from Data\common\main\lag.xml
-#	on Sat 19 Apr  4:48:44 pm GMT
+#	on Mon 21 Apr 11:41:50 pm GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use v5.18;
