@@ -1,6 +1,6 @@
-package Locale::CLDR::Uz::Cyrl v0.25.0;
+package Locale::CLDR::Uz::Cyrl v0.25.1;
 # This file auto generated from Data\common\main\uz_Cyrl.xml
-#	on Tue 22 Apr 12:54:59 am GMT
+#	on Sat 10 May  1:51:55 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;

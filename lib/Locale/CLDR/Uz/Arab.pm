@@ -1,6 +1,6 @@
-package Locale::CLDR::Uz::Arab v0.25.0;
+package Locale::CLDR::Uz::Arab v0.25.1;
 # This file auto generated from Data\common\main\uz_Arab.xml
-#	on Tue 22 Apr 12:54:57 am GMT
+#	on Sat 10 May  1:51:53 pm GMT
 # XML file generated 2014-03-10 13:02:01 -0500 (Mon, 10 Mar 2014)
 
 use v5.18;
@@ -314,11 +314,11 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			MMMMd => q{d نچی MMMM},
 			Md => q{M/d},
 		},
-		'generic' => {
+		'gregorian' => {
 			MMMMd => q{d نچی MMMM},
 			Md => q{M/d},
 		},

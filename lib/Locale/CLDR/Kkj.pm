@@ -1,6 +1,6 @@
-package Locale::CLDR::Kkj v0.25.0;
+package Locale::CLDR::Kkj v0.25.1;
 # This file auto generated from Data\common\main\kkj.xml
-#	on Mon 21 Apr 11:29:44 pm GMT
+#	on Sat 10 May 12:27:39 pm GMT
 # XML file generated 2014-01-08 23:53:23 -0600 (Wed, 08 Jan 2014)
 
 use v5.18;

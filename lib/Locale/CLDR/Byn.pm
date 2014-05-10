@@ -1,6 +1,6 @@
-package Locale::CLDR::Byn v0.25.0;
+package Locale::CLDR::Byn v0.25.1;
 # This file auto generated from Data\common\main\byn.xml
-#	on Mon 21 Apr 10:31:14 pm GMT
+#	on Sat 10 May 11:30:27 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;

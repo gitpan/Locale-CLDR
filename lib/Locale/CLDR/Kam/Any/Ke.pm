@@ -1,6 +1,6 @@
-package Locale::CLDR::Kam::Any::Ke v0.25.0;
+package Locale::CLDR::Kam::Any::Ke v0.25.1;
 # This file auto generated from Data\common\main\kam_KE.xml
-#	on Mon 21 Apr 11:27:26 pm GMT
+#	on Sat 10 May 12:25:21 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

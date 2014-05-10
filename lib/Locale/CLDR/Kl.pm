@@ -1,6 +1,6 @@
-package Locale::CLDR::Kl v0.25.0;
+package Locale::CLDR::Kl v0.25.1;
 # This file auto generated from Data\common\main\kl.xml
-#	on Mon 21 Apr 11:29:46 pm GMT
+#	on Sat 10 May 12:27:40 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -1617,13 +1617,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'am' => q{ulloqeqqata-tungaa},
-					'pm' => q{ulloqeqqata-kingorna},
-				},
 				'abbreviated' => {
 					'pm' => q{u.k.},
 					'am' => q{u.t.},
+				},
+				'wide' => {
+					'pm' => q{ulloqeqqata-kingorna},
+					'am' => q{ulloqeqqata-tungaa},
 				},
 			},
 		},

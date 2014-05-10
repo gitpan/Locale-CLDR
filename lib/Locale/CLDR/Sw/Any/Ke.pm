@@ -1,6 +1,6 @@
-package Locale::CLDR::Sw::Any::Ke v0.25.0;
+package Locale::CLDR::Sw::Any::Ke v0.25.1;
 # This file auto generated from Data\common\main\sw_KE.xml
-#	on Tue 22 Apr 12:38:46 am GMT
+#	on Sat 10 May  1:35:53 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use v5.18;

@@ -1,6 +1,6 @@
-package Locale::CLDR::Ebu v0.25.0;
+package Locale::CLDR::Ebu v0.25.1;
 # This file auto generated from Data\common\main\ebu.xml
-#	on Mon 21 Apr 10:39:30 pm GMT
+#	on Sat 10 May 11:38:15 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -812,8 +812,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{KI},
 					'pm' => q{UT},
+					'am' => q{KI},
 				},
 			},
 		},
@@ -893,7 +893,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -918,7 +918,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},

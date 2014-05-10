@@ -1,6 +1,6 @@
-package Locale::CLDR::It::Any::Ch v0.25.0;
+package Locale::CLDR::It::Any::Ch v0.25.1;
 # This file auto generated from Data\common\main\it_CH.xml
-#	on Mon 21 Apr 11:21:44 pm GMT
+#	on Sat 10 May 12:19:44 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;

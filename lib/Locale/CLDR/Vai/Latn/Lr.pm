@@ -1,6 +1,6 @@
-package Locale::CLDR::Vai::Latn::Lr v0.25.0;
+package Locale::CLDR::Vai::Latn::Lr v0.25.1;
 # This file auto generated from Data\common\main\vai_Latn_LR.xml
-#	on Tue 22 Apr 12:55:28 am GMT
+#	on Sat 10 May  1:52:23 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

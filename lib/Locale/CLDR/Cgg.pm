@@ -1,6 +1,6 @@
-package Locale::CLDR::Cgg v0.25.0;
+package Locale::CLDR::Cgg v0.25.1;
 # This file auto generated from Data\common\main\cgg.xml
-#	on Mon 21 Apr 10:33:03 pm GMT
+#	on Sat 10 May 11:32:10 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;

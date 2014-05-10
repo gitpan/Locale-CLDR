@@ -1,6 +1,6 @@
-package Locale::CLDR::Mua v0.25.0;
+package Locale::CLDR::Mua v0.25.1;
 # This file auto generated from Data\common\main\mua.xml
-#	on Tue 22 Apr 12:00:10 am GMT
+#	on Sat 10 May 12:57:43 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -860,8 +860,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{lilli},
 					'am' => q{comme},
+					'pm' => q{lilli},
 				},
 			},
 		},

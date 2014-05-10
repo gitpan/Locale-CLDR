@@ -1,6 +1,6 @@
-package Locale::CLDR::Currencies v0.25.0;
+package Locale::CLDR::Currencies v0.25.1;
 # This file auto generated from Data.xml
-#	on Fri 25 Apr 10:54:15 pm GMT
+#	on Sat 10 May 11:07:41 am GMT
 # XML file generated 2014-03-13 15:53:16 -0500 (Thu, 13 Mar 2014)
 
 use v5.18;
@@ -9,7 +9,7 @@ use utf8;
 
 use Moose::Role;
 
-has 'currency_fractions' => (
+has '_currency_fractions' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
@@ -411,14 +411,29 @@ has 'currency_fractions' => (
 			'cashdigits' => '0',
 			'cashrounding' => '0',
 		},
-	} },
+\t} },
 );
 
-has 'default_currency' => (
-	is			=> 'ro',
-	isa			=> 'HashRef',
-	init_arg	=> undef,
-	default		=> sub { {
+sub currency_fractions {
+	my ($self, $currency) = @_;
+	
+	my $currency_data = $self->_currency_fractions()->{$currency};
+	
+	$currency_data = {
+		digits 			=> 2,
+		cashdigits 		=> 2,
+		rounding 		=> 0,
+		cashrounding	=> 0,
+	} unless $currency_data;
+	
+	return $currency_data;
+}
+
+has '_default_currency' => (
+\tis\t\t\t=> 'ro',
+\tisa\t\t\t=> 'HashRef',
+\tinit_arg\t=> undef,
+\tdefault\t\t=> sub { {
 
 				'150' => 'EUR',
 				'AC' => 'SHP',

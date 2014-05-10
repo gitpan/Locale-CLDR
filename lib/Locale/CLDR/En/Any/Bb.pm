@@ -1,6 +1,6 @@
-package Locale::CLDR::En::Any::Bb v0.25.0;
+package Locale::CLDR::En::Any::Bb v0.25.1;
 # This file auto generated from Data\common\main\en_BB.xml
-#	on Mon 21 Apr 10:46:46 pm GMT
+#	on Sat 10 May 11:45:13 am GMT
 # XML file generated 2013-08-07 23:47:50 -0500 (Wed, 07 Aug 2013)
 
 use v5.18;

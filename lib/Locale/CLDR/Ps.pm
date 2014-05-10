@@ -1,6 +1,6 @@
-package Locale::CLDR::Ps v0.25.0;
+package Locale::CLDR::Ps v0.25.1;
 # This file auto generated from Data\common\main\ps.xml
-#	on Tue 22 Apr 12:13:04 am GMT
+#	on Sat 10 May  1:10:27 pm GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use v5.18;
@@ -415,8 +415,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{غ.م.},
 					'pm' => q{غ.و.},
+					'am' => q{غ.م.},
 				},
 			},
 		},
@@ -500,15 +500,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			H => q{H},
-			Hm => q{H:mm},
-			Hms => q{H:mm:ss},
-			MMMMd => q{d MMMM},
-			Md => q{M/d},
-			yM => q{y/M},
-			yMMMM => q{د y د MMMM},
-		},
 		'generic' => {
 			H => q{H},
 			Hm => q{H:mm},
@@ -517,6 +508,15 @@ has 'datetime_formats_available_formats' => (
 			Md => q{M/d},
 			yM => q{G y/M},
 			yMMMM => q{د G y د MMMM},
+		},
+		'gregorian' => {
+			H => q{H},
+			Hm => q{H:mm},
+			Hms => q{H:mm:ss},
+			MMMMd => q{d MMMM},
+			Md => q{M/d},
+			yM => q{y/M},
+			yMMMM => q{د y د MMMM},
 		},
 	} },
 );

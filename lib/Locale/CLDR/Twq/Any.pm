@@ -1,6 +1,6 @@
-package Locale::CLDR::Twq::Any v0.25.0;
+package Locale::CLDR::Twq::Any v0.25.1;
 # This file auto generated
-#	on Tue 22 Apr 12:48:00 am GMT
+#	on Sat 10 May  1:45:01 pm GMT
 
 use v5.18;
 use mro 'c3';

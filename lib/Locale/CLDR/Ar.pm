@@ -1,6 +1,6 @@
-package Locale::CLDR::Ar v0.25.0;
+package Locale::CLDR::Ar v0.25.1;
 # This file auto generated from Data\common\main\ar.xml
-#	on Mon 21 Apr 10:11:36 pm GMT
+#	on Sat 10 May 11:11:39 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -5777,8 +5777,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{ص},
 					'pm' => q{م},
+					'am' => q{ص},
 				},
 			},
 		},
@@ -6229,6 +6229,15 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
+		'islamic' => {
+			M => q{L},
+			Md => q{d/‏M},
+			d => q{d},
+			yyyyM => q{M‏/y G},
+			yyyyMEd => q{E، d/‏M/‏y G},
+			yyyyMMM => q{MMM y G},
+			yyyyMd => q{d‏/M‏/y G},
+		},
 		'generic' => {
 			Ed => q{E، d},
 			Gy => q{y G},
@@ -6260,15 +6269,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{d‏/M‏/y G},
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
-		},
-		'islamic' => {
-			M => q{L},
-			Md => q{d/‏M},
-			d => q{d},
-			yyyyM => q{M‏/y G},
-			yyyyMEd => q{E، d/‏M/‏y G},
-			yyyyMMM => q{MMM y G},
-			yyyyMd => q{d‏/M‏/y G},
 		},
 	} },
 );

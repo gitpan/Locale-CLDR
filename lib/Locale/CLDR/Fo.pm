@@ -1,6 +1,6 @@
-package Locale::CLDR::Fo v0.25.0;
+package Locale::CLDR::Fo v0.25.1;
 # This file auto generated from Data\common\main\fo.xml
-#	on Mon 21 Apr 10:58:07 pm GMT
+#	on Sat 10 May 11:56:25 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -1504,18 +1504,18 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{um fyrrapartur},
 					'pm' => q{um seinnapartur},
+					'am' => q{um fyrrapartur},
 				},
 				'abbreviated' => {
-					'pm' => q{s.p.},
 					'am' => q{f.p.},
+					'pm' => q{s.p.},
 				},
 			},
 			'stand-alone' => {
 				'wide' => {
-					'pm' => q{seinnapartur},
 					'am' => q{fyrrapartur},
+					'pm' => q{seinnapartur},
 				},
 			},
 		},
@@ -1607,7 +1607,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{d E},
 			H => q{HH},
 			Hm => q{HH:mm},
@@ -1633,7 +1633,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{y QQQ},
 			yQQQQ => q{y QQQQ},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{d E},
 			H => q{HH},
 			Hm => q{HH:mm},
@@ -1675,7 +1675,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH–HH},
 			},
@@ -1770,7 +1770,7 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd – y-MM-dd},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH–HH},
 			},

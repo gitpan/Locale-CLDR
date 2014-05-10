@@ -1,6 +1,6 @@
-package Locale::CLDR::Asa::Any v0.25.0;
+package Locale::CLDR::Asa::Any v0.25.1;
 # This file auto generated
-#	on Mon 21 Apr 10:14:26 pm GMT
+#	on Sat 10 May 11:14:23 am GMT
 
 use v5.18;
 use mro 'c3';

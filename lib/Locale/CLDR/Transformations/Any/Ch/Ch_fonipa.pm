@@ -1,6 +1,6 @@
-package Locale::CLDR::Transformations::Any::Ch::Ch_fonipa v0.25.0;
+package Locale::CLDR::Transformations::Any::Ch::Ch_fonipa v0.25.1;
 # This file auto generated from Data\common\transforms\ch-ch_FONIPA.xml
-#	on Fri 25 Apr 10:55:07 pm GMT
+#	on Sat 10 May 11:08:31 am GMT
 # XML file generated 2014-02-24 10:07:33 -0600 (Mon, 24 Feb 2014)
 
 use v5.18;

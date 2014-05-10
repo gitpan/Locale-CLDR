@@ -1,6 +1,6 @@
-package Locale::CLDR::Ti::Any::Er v0.25.0;
+package Locale::CLDR::Ti::Any::Er v0.25.1;
 # This file auto generated from Data\common\main\ti_ER.xml
-#	on Tue 22 Apr 12:46:06 am GMT
+#	on Sat 10 May  1:43:08 pm GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use v5.18;

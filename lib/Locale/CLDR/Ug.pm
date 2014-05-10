@@ -1,6 +1,6 @@
-package Locale::CLDR::Ug v0.25.0;
+package Locale::CLDR::Ug v0.25.1;
 # This file auto generated from Data\common\main\ug.xml
-#	on Tue 22 Apr 12:48:06 am GMT
+#	on Sat 10 May  1:45:06 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use v5.18;
@@ -4410,14 +4410,14 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'narrow' => {
-					'noon' => q{چۈش},
 					'am' => q{چۈشتىن بۇرۇن},
+					'noon' => q{چۈش},
 					'pm' => q{چۈشتىن كېيىن},
 				},
 				'wide' => {
 					'pm' => q{چۈشتىن كېيىن},
-					'am' => q{چۈشتىن بۇرۇن},
 					'noon' => q{چۈش},
+					'am' => q{چۈشتىن بۇرۇن},
 				},
 			},
 		},
@@ -4616,15 +4616,6 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'islamic' => {
-			M => q{L},
-			Md => q{d/‏M},
-			d => q{d},
-			yyyyM => q{M‏/y G},
-			yyyyMEd => q{E، d/‏M/‏y G},
-			yyyyMMM => q{MMM y G},
-			yyyyMd => q{d‏/M‏/y G},
-		},
 		'generic' => {
 			Ed => q{d E},
 			Gy => q{y G},
@@ -4648,6 +4639,15 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{M/d/y GGGGG},
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
+		},
+		'islamic' => {
+			M => q{L},
+			Md => q{d/‏M},
+			d => q{d},
+			yyyyM => q{M‏/y G},
+			yyyyMEd => q{E، d/‏M/‏y G},
+			yyyyMMM => q{MMM y G},
+			yyyyMd => q{d‏/M‏/y G},
 		},
 	} },
 );

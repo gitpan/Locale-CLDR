@@ -1,6 +1,6 @@
-package Locale::CLDR::Yo::Any::Bj v0.25.0;
+package Locale::CLDR::Yo::Any::Bj v0.25.1;
 # This file auto generated from Data\common\main\yo_BJ.xml
-#	on Tue 22 Apr 12:57:22 am GMT
+#	on Sat 10 May  1:54:16 pm GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use v5.18;

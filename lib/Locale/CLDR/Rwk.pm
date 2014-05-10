@@ -1,6 +1,6 @@
-package Locale::CLDR::Rwk v0.25.0;
+package Locale::CLDR::Rwk v0.25.1;
 # This file auto generated from Data\common\main\rwk.xml
-#	on Tue 22 Apr 12:23:21 am GMT
+#	on Sat 10 May  1:20:39 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -895,7 +895,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -918,7 +918,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},

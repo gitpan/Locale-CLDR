@@ -1,6 +1,6 @@
-package Locale::CLDR::Ru::Any::Kz v0.25.0;
+package Locale::CLDR::Ru::Any::Kz v0.25.1;
 # This file auto generated from Data\common\main\ru_KZ.xml
-#	on Tue 22 Apr 12:23:20 am GMT
+#	on Sat 10 May  1:20:37 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

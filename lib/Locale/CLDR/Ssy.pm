@@ -1,6 +1,6 @@
-package Locale::CLDR::Ssy v0.25.0;
+package Locale::CLDR::Ssy v0.25.1;
 # This file auto generated from Data\common\main\ssy.xml
-#	on Tue 22 Apr 12:36:13 am GMT
+#	on Sat 10 May  1:33:22 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;

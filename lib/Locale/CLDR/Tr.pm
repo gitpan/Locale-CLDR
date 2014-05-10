@@ -1,6 +1,6 @@
-package Locale::CLDR::Tr v0.25.0;
+package Locale::CLDR::Tr v0.25.1;
 # This file auto generated from Data\common\main\tr.xml
-#	on Tue 22 Apr 12:46:19 am GMT
+#	on Sat 10 May  1:43:21 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -4368,8 +4368,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{ÖÖ},
 					'pm' => q{ÖS},
+					'am' => q{ÖÖ},
 				},
 			},
 		},

@@ -1,6 +1,6 @@
-package Locale::CLDR::So v0.25.0;
+package Locale::CLDR::So v0.25.1;
 # This file auto generated from Data\common\main\so.xml
-#	on Tue 22 Apr 12:28:54 am GMT
+#	on Sat 10 May  1:26:08 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -721,8 +721,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{gn.},
 					'am' => q{sn.},
+					'pm' => q{gn.},
 				},
 			},
 		},

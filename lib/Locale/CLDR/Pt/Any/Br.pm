@@ -1,6 +1,6 @@
-package Locale::CLDR::Pt::Any::Br v0.25.0;
+package Locale::CLDR::Pt::Any::Br v0.25.1;
 # This file auto generated from Data\common\main\pt_BR.xml
-#	on Tue 22 Apr 12:14:57 am GMT
+#	on Sat 10 May  1:12:20 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

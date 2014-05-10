@@ -1,6 +1,6 @@
-package Locale::CLDR::Ast v0.25.0;
+package Locale::CLDR::Ast v0.25.1;
 # This file auto generated from Data\common\main\ast.xml
-#	on Mon 21 Apr 10:14:27 pm GMT
+#	on Sat 10 May 11:14:24 am GMT
 # XML file generated 2014-01-08 23:02:40 -0600 (Wed, 08 Jan 2014)
 
 use v5.18;
@@ -2455,7 +2455,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d},
 			H => q{HH},
 			Hm => q{HH:mm},
@@ -2481,7 +2481,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d},
 			H => q{HH},
 			Hm => q{HH:mm},
@@ -2523,7 +2523,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH–HH},
 			},
@@ -2618,7 +2618,7 @@ has 'datetime_formats_interval' => (
 				y => q{d/M/y – d/M/y},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH–HH},
 			},

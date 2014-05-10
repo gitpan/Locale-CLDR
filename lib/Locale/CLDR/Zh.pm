@@ -1,6 +1,6 @@
-package Locale::CLDR::Zh v0.25.0;
+package Locale::CLDR::Zh v0.25.1;
 # This file auto generated from Data\common\main\zh.xml
-#	on Tue 22 Apr 12:57:31 am GMT
+#	on Sat 10 May  1:54:25 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -4827,183 +4827,183 @@ has 'day_period_data' => (
 		SWITCH:
 		for ($type) {
 			if ($_ eq 'buddhist') {
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
 				return 'night' if $time >= 1800
 					&& $time < 2400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-			last SWITCH;
-			}
-			if ($_ eq 'indian') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-			last SWITCH;
-			}
-			if ($_ eq 'ethiopic') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-			last SWITCH;
-			}
-			if ($_ eq 'japanese') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-			last SWITCH;
-			}
-			if ($_ eq 'chinese') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
 			last SWITCH;
 			}
 			if ($_ eq 'gregorian') {
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
 				return 'night' if $time >= 1800
 					&& $time < 2400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-			last SWITCH;
-			}
-			if ($_ eq 'hebrew') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-			last SWITCH;
-			}
-			if ($_ eq 'persian') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-			last SWITCH;
-			}
-			if ($_ eq 'coptic') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-			last SWITCH;
-			}
-			if ($_ eq 'islamic') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-			last SWITCH;
-			}
-			if ($_ eq 'generic') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
 			last SWITCH;
 			}
 			if ($_ eq 'roc') {
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
 				return 'night' if $time >= 1800
 					&& $time < 2400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
+			last SWITCH;
+			}
+			if ($_ eq 'ethiopic') {
 				return 'morning' if $time >= 600
 					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
 				return 'midDay' if $time >= 1200
 					&& $time < 1300;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+			last SWITCH;
+			}
+			if ($_ eq 'chinese') {
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+			last SWITCH;
+			}
+			if ($_ eq 'islamic') {
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+			last SWITCH;
+			}
+			if ($_ eq 'persian') {
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+			last SWITCH;
+			}
+			if ($_ eq 'indian') {
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+			last SWITCH;
+			}
+			if ($_ eq 'generic') {
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+			last SWITCH;
+			}
+			if ($_ eq 'japanese') {
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+			last SWITCH;
+			}
+			if ($_ eq 'coptic') {
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+			last SWITCH;
+			}
+			if ($_ eq 'hebrew') {
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
 			last SWITCH;
 			}
 		}
@@ -5017,26 +5017,26 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'midDay' => q{中午},
-					'earlyMorning' => q{清晨},
-					'night' => q{晚上},
-					'noon' => q{中午},
-					'am' => q{上午},
-					'morning' => q{上午},
-					'pm' => q{下午},
-					'weeHours' => q{凌晨},
-					'afternoon' => q{下午},
-				},
 				'narrow' => {
+					'morning' => q{上午},
+					'noon' => q{中午},
+					'afternoon' => q{下午},
+					'am' => q{上午},
 					'night' => q{晚上},
+					'pm' => q{下午},
+					'midDay' => q{中午},
+					'earlyMorning' => q{清晨},
+					'weeHours' => q{凌晨},
+				},
+				'wide' => {
+					'pm' => q{下午},
 					'earlyMorning' => q{清晨},
 					'midDay' => q{中午},
-					'afternoon' => q{下午},
 					'weeHours' => q{凌晨},
-					'pm' => q{下午},
-					'morning' => q{上午},
+					'afternoon' => q{下午},
+					'night' => q{晚上},
 					'am' => q{上午},
+					'morning' => q{上午},
 					'noon' => q{中午},
 				},
 			},
@@ -5502,6 +5502,37 @@ has 'datetime_formats_available_formats' => (
 			Md => q{M-d},
 			d => q{d日},
 		},
+		'japanese' => {
+			Ed => q{d日E},
+			Gy => q{Gy年},
+			GyMMM => q{Gy年M月},
+			GyMMMEd => q{Gy年M月d日E},
+			GyMMMd => q{Gy年M月d日},
+			H => q{H时},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{M月},
+			MEd => q{M-dE},
+			MMM => q{LLL},
+			MMMEd => q{M月d日E},
+			MMMd => q{M月d日},
+			Md => q{M-d},
+			d => q{d日},
+			h => q{ah时},
+			hm => q{ah:mm},
+			hms => q{ah:mm:ss},
+			ms => q{mm:ss},
+			y => q{Gy年},
+			yyyy => q{Gy年},
+			yyyyM => q{Gy-MM},
+			yyyyMEd => q{Gy-M-d（E）},
+			yyyyMMM => q{Gy年M月},
+			yyyyMMMEd => q{Gy年M月d日E},
+			yyyyMMMd => q{Gy年M月d日},
+			yyyyMd => q{Gy-MM-dd},
+			yyyyQQQ => q{Gy年第Q季度},
+			yyyyQQQQ => q{Gy年QQQQ},
+		},
 		'generic' => {
 			Ed => q{d日E},
 			Gy => q{Gy年},
@@ -5559,75 +5590,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{Gy年第Q季度},
 			yyyyQQQQ => q{Gy年第Q季度},
 		},
-		'gregorian' => {
-			EHm => q{EHH:mm},
-			EHms => q{EHH:mm:ss},
-			Ed => q{d日E},
-			Ehm => q{Eah:mm},
-			Ehms => q{Eah:mm:ss},
-			Gy => q{Gy年},
-			GyMMM => q{Gy年M月},
-			GyMMMEd => q{Gy年M月d日E},
-			GyMMMd => q{Gy年M月d日},
-			H => q{H时},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{M月},
-			MEd => q{M/dE},
-			MMM => q{LLL},
-			MMMEd => q{M月d日E},
-			MMMMdd => q{M月dd日},
-			MMMd => q{M月d日},
-			MMdd => q{MM/dd},
-			Md => q{M/d},
-			d => q{d日},
-			h => q{ah时},
-			hm => q{ah:mm},
-			hms => q{ah:mm:ss},
-			ms => q{mm:ss},
-			y => q{y年},
-			yM => q{y/M},
-			yMEd => q{y/M/dE},
-			yMM => q{y年M月},
-			yMMM => q{y年M月},
-			yMMMEd => q{y年M月d日E},
-			yMMMM => q{y年M月},
-			yMMMd => q{y年M月d日},
-			yMd => q{y/M/d},
-			yQQQ => q{y年第Q季度},
-			yQQQQ => q{y年第Q季度},
-		},
-		'japanese' => {
-			Ed => q{d日E},
-			Gy => q{Gy年},
-			GyMMM => q{Gy年M月},
-			GyMMMEd => q{Gy年M月d日E},
-			GyMMMd => q{Gy年M月d日},
-			H => q{H时},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{M月},
-			MEd => q{M-dE},
-			MMM => q{LLL},
-			MMMEd => q{M月d日E},
-			MMMd => q{M月d日},
-			Md => q{M-d},
-			d => q{d日},
-			h => q{ah时},
-			hm => q{ah:mm},
-			hms => q{ah:mm:ss},
-			ms => q{mm:ss},
-			y => q{Gy年},
-			yyyy => q{Gy年},
-			yyyyM => q{Gy-MM},
-			yyyyMEd => q{Gy-M-d（E）},
-			yyyyMMM => q{Gy年M月},
-			yyyyMMMEd => q{Gy年M月d日E},
-			yyyyMMMd => q{Gy年M月d日},
-			yyyyMd => q{Gy-MM-dd},
-			yyyyQQQ => q{Gy年第Q季度},
-			yyyyQQQQ => q{Gy年QQQQ},
-		},
 		'chinese' => {
 			Ed => q{d日E},
 			Gy => q{U年},
@@ -5671,6 +5633,44 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{Gy-M-d},
 			yyyyQQQ => q{Gy年第Q季度},
 			yyyyQQQQ => q{Gy年QQQQ},
+		},
+		'gregorian' => {
+			EHm => q{EHH:mm},
+			EHms => q{EHH:mm:ss},
+			Ed => q{d日E},
+			Ehm => q{Eah:mm},
+			Ehms => q{Eah:mm:ss},
+			Gy => q{Gy年},
+			GyMMM => q{Gy年M月},
+			GyMMMEd => q{Gy年M月d日E},
+			GyMMMd => q{Gy年M月d日},
+			H => q{H时},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{M月},
+			MEd => q{M/dE},
+			MMM => q{LLL},
+			MMMEd => q{M月d日E},
+			MMMMdd => q{M月dd日},
+			MMMd => q{M月d日},
+			MMdd => q{MM/dd},
+			Md => q{M/d},
+			d => q{d日},
+			h => q{ah时},
+			hm => q{ah:mm},
+			hms => q{ah:mm:ss},
+			ms => q{mm:ss},
+			y => q{y年},
+			yM => q{y/M},
+			yMEd => q{y/M/dE},
+			yMM => q{y年M月},
+			yMMM => q{y年M月},
+			yMMMEd => q{y年M月d日E},
+			yMMMM => q{y年M月},
+			yMMMd => q{y年M月d日},
+			yMd => q{y/M/d},
+			yQQQ => q{y年第Q季度},
+			yQQQQ => q{y年第Q季度},
 		},
 	} },
 );
@@ -5786,6 +5786,90 @@ has 'datetime_formats_interval' => (
 				y => q{Gy/M/d – y/M/d},
 			},
 		},
+		'chinese' => {
+			Hv => {
+				H => q{HH–HH v},
+			},
+			M => {
+				M => q{L至L},
+			},
+			MEd => {
+				M => q{M-dE至M-dE},
+				d => q{M-dE至M-dE},
+			},
+			MMM => {
+				M => q{LLL至LLL},
+			},
+			MMMEd => {
+				M => q{MMMd日E至MMMd日E},
+				d => q{MMMd日E至d日E},
+			},
+			MMMd => {
+				M => q{MMMd日至MMMd日},
+				d => q{MMMd日至d日},
+			},
+			Md => {
+				M => q{M-d至M-d},
+				d => q{M-d至M-d},
+			},
+			d => {
+				d => q{d日至d日},
+			},
+			fallback => '{0}–{1}',
+			h => {
+				a => q{ah至ah时},
+				h => q{ah至h时},
+			},
+			hm => {
+				a => q{ah:mm至ah:mm},
+				h => q{ah:mm至h:mm},
+				m => q{ah:mm至h:mm},
+			},
+			hmv => {
+				a => q{vah:mm至ah:mm},
+				h => q{vah:mm至h:mm},
+				m => q{vah:mm至h:mm},
+			},
+			hv => {
+				a => q{vah至ah时},
+				h => q{vah至h时},
+			},
+			y => {
+				y => q{U至U},
+			},
+			yM => {
+				M => q{U-M至U-M},
+				y => q{U-M至U-M},
+			},
+			yMEd => {
+				M => q{U-M-dE至U-M-dE},
+				d => q{U-M-dE至U-M-dE},
+				y => q{U-M-dE至U-M-dE},
+			},
+			yMMM => {
+				M => q{U年MMM至MMM},
+				y => q{U年MMM至U年MMM},
+			},
+			yMMMEd => {
+				M => q{U年MMMd日E至MMMd日E},
+				d => q{U年MMMd日E至d日E},
+				y => q{U年MMMd日E至U年MMMd日E},
+			},
+			yMMMM => {
+				M => q{U年MMMM至MMMM},
+				y => q{U年MMMM至U年MMMM},
+			},
+			yMMMd => {
+				M => q{U年MMMd日至MMMd日},
+				d => q{U年MMMd日至d日},
+				y => q{U年MMMd日至U年MMMd日},
+			},
+			yMd => {
+				M => q{U-M-d至U-M-d},
+				d => q{U-M-d至U-M-d},
+				y => q{U-M-d至U-M-d},
+			},
+		},
 		'gregorian' => {
 			H => {
 				H => q{HH–HH},
@@ -5879,90 +5963,6 @@ has 'datetime_formats_interval' => (
 				M => q{y/M/d – y/M/d},
 				d => q{y/M/d – y/M/d},
 				y => q{y/M/d – y/M/d},
-			},
-		},
-		'chinese' => {
-			Hv => {
-				H => q{HH–HH v},
-			},
-			M => {
-				M => q{L至L},
-			},
-			MEd => {
-				M => q{M-dE至M-dE},
-				d => q{M-dE至M-dE},
-			},
-			MMM => {
-				M => q{LLL至LLL},
-			},
-			MMMEd => {
-				M => q{MMMd日E至MMMd日E},
-				d => q{MMMd日E至d日E},
-			},
-			MMMd => {
-				M => q{MMMd日至MMMd日},
-				d => q{MMMd日至d日},
-			},
-			Md => {
-				M => q{M-d至M-d},
-				d => q{M-d至M-d},
-			},
-			d => {
-				d => q{d日至d日},
-			},
-			fallback => '{0}–{1}',
-			h => {
-				a => q{ah至ah时},
-				h => q{ah至h时},
-			},
-			hm => {
-				a => q{ah:mm至ah:mm},
-				h => q{ah:mm至h:mm},
-				m => q{ah:mm至h:mm},
-			},
-			hmv => {
-				a => q{vah:mm至ah:mm},
-				h => q{vah:mm至h:mm},
-				m => q{vah:mm至h:mm},
-			},
-			hv => {
-				a => q{vah至ah时},
-				h => q{vah至h时},
-			},
-			y => {
-				y => q{U至U},
-			},
-			yM => {
-				M => q{U-M至U-M},
-				y => q{U-M至U-M},
-			},
-			yMEd => {
-				M => q{U-M-dE至U-M-dE},
-				d => q{U-M-dE至U-M-dE},
-				y => q{U-M-dE至U-M-dE},
-			},
-			yMMM => {
-				M => q{U年MMM至MMM},
-				y => q{U年MMM至U年MMM},
-			},
-			yMMMEd => {
-				M => q{U年MMMd日E至MMMd日E},
-				d => q{U年MMMd日E至d日E},
-				y => q{U年MMMd日E至U年MMMd日E},
-			},
-			yMMMM => {
-				M => q{U年MMMM至MMMM},
-				y => q{U年MMMM至U年MMMM},
-			},
-			yMMMd => {
-				M => q{U年MMMd日至MMMd日},
-				d => q{U年MMMd日至d日},
-				y => q{U年MMMd日至U年MMMd日},
-			},
-			yMd => {
-				M => q{U-M-d至U-M-d},
-				d => q{U-M-d至U-M-d},
-				y => q{U-M-d至U-M-d},
 			},
 		},
 	} },

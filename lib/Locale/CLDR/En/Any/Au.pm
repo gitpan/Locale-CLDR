@@ -1,6 +1,6 @@
-package Locale::CLDR::En::Any::Au v0.25.0;
+package Locale::CLDR::En::Any::Au v0.25.1;
 # This file auto generated from Data\common\main\en_AU.xml
-#	on Mon 21 Apr 10:46:44 pm GMT
+#	on Sat 10 May 11:45:12 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -111,43 +111,43 @@ has 'day_period_data' => (
 		SWITCH:
 		for ($type) {
 			if ($_ eq 'chinese') {
-				return 'pm' if $time > 1200
-					&& $time < 2400;
 				return 'am' if $time >= 000
 					&& $time < 1200;
 				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'japanese') {
 				return 'pm' if $time > 1200
 					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'generic') {
-				return 'pm' if $time > 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'islamic') {
-				return 'pm' if $time > 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'gregorian') {
-				return 'pm' if $time > 1200
-					&& $time < 2400;
 				return 'am' if $time >= 000
 					&& $time < 1200;
 				return 'noon' if $time == 1200;
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'japanese') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'noon' if $time == 1200;
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'generic') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'noon' if $time == 1200;
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'islamic') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'noon' if $time == 1200;
+				return 'pm' if $time > 1200
+					&& $time < 2400;
 			last SWITCH;
 			}
 		}

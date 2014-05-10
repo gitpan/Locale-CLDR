@@ -1,6 +1,6 @@
-package Locale::CLDR::Lkt::Any::Us v0.25.0;
+package Locale::CLDR::Lkt::Any::Us v0.25.1;
 # This file auto generated from Data\common\main\lkt_US.xml
-#	on Mon 21 Apr 11:41:58 pm GMT
+#	on Sat 10 May 12:39:43 pm GMT
 # XML file generated 2013-08-18 23:26:52 -0500 (Sun, 18 Aug 2013)
 
 use v5.18;

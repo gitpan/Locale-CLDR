@@ -28,7 +28,7 @@ $verbose = 1 if grep /-v/, @ARGV;
 use version;
 my $API_VERSION = 0;
 my $CLDR_VERSION = 25;
-my $REVISION = 0;
+my $REVISION = 1;
 our $VERSION = version->parse(join '.', $API_VERSION, $CLDR_VERSION, $REVISION);
 my $CLDR_PATH = $CLDR_VERSION;
 
@@ -790,9 +790,11 @@ sub process_era_boundries {
         q(/supplementalData/calendarData/calendar));
     
     print $file <<EOT;
-has 'era_boundry' => (
+has '_era_boundry' => (
 \tis\t\t\t=> 'ro',
 \tisa\t\t\t=> 'CodeRef',
+\ttraits\t\t=> ['Code'],
+\thandles\t\t=> { era_boundry => 'execute_method' },
 \tinit_arg\t=> undef,
 \tdefault\t\t=> sub { sub {
 \t\tmy (\$self, \$type, \$date) = \@_;
@@ -849,7 +851,7 @@ sub process_week_data {
         q(/supplementalData/weekData/minDays));
     
     print $file <<EOT;
-has 'week_data_min_days' => (
+has '_week_data_min_days' => (
 \tis\t\t\t=> 'ro',
 \tisa\t\t\t=> 'HashRef',
 \tinit_arg\t=> undef,
@@ -873,7 +875,7 @@ EOT
         q(/supplementalData/weekData/firstDay));
 
     print $file <<EOT;
-has 'week_data_first_day' => (
+has '_week_data_first_day' => (
 \tis\t\t\t=> 'ro',
 \tisa\t\t\t=> 'HashRef',
 \tinit_arg\t=> undef,
@@ -897,7 +899,7 @@ EOT
         q(/supplementalData/weekData/weekendStart));
 
     print $file <<EOT;
-has 'week_data_weekend_start' => (
+has '_week_data_weekend_start' => (
 \tis\t\t\t=> 'ro',
 \tisa\t\t\t=> 'HashRef',
 \tinit_arg\t=> undef,
@@ -921,7 +923,7 @@ EOT
         q(/supplementalData/weekData/weekendEnd));
 
     print $file <<EOT;
-has 'week_data_weekend_end' => (
+has '_week_data_weekend_end' => (
 \tis\t\t\t=> 'ro',
 \tisa\t\t\t=> 'HashRef',
 \tinit_arg\t=> undef,
@@ -962,7 +964,7 @@ EOT
         my @territories = split / /,$node->getAttribute('territories');
         my @ordering = split / /, $node->getAttribute('ordering');
         foreach my $territory (@territories) {
-            say $file "\t\t$territory => ['", join("','", @ordering), "'],";
+            say $file "\t\t'$territory' => ['", join("','", @ordering), "'],";
         }
     }
     print $file <<EOT;
@@ -985,14 +987,26 @@ has '_default_calendar' => (
 sub default_calendar {
 \tmy (\$self, \$territory) = \@_;
 
-\t\$territory //= \$self->territory_id();
+\t\$territory //= ( \$self->territory_id() || \$self->likely_subtag->territory_id );
 \tif (\$self->_test_default_ca(\$territory)) {
 \t\treturn \$self->_get_default_ca(\$territory);
 \t}
 
-\tmy \$preferences = \$self->calendar_preferences();
+\tmy \$calendar_preferences = \$self->calendar_preferences();
 
-\tmy \$default = \$preferences->{\$territory}[0] // 'gregorian';
+\tmy \$default;
+
+\tmy \$current_territory = \$territory;
+
+\twhile (! \$default) {
+\t\t\$default = \$calendar_preferences->{\$current_territory};
+\t\tif (\$default) {
+\t\t\t\$default = \$default->[0];
+\t\t}
+\t\telse {
+\t\t\t\$current_territory = \$self->territory_contained_by()->{\$current_territory}
+\t\t}
+\t}
 
 \t\$self->_set_default_ca(\$territory => \$default);
 
@@ -2212,7 +2226,7 @@ sub process_currency_data {
 	}
 	
 	say $file <<EOT;
-has 'currency_fractions' => (
+has '_currency_fractions' => (
 \tis\t\t\t=> 'ro',
 \tisa\t\t\t=> 'HashRef',
 \tinit_arg\t=> undef,
@@ -2227,11 +2241,26 @@ EOT
 		say $file "\t\t},";
 	}
 	
-	say $file <<EOT;
+	say $file <<'EOT';
 \t} },
 );
 
-has 'default_currency' => (
+sub currency_fractions {
+	my ($self, $currency) = @_;
+	
+	my $currency_data = $self->_currency_fractions()->{$currency};
+	
+	$currency_data = {
+		digits 			=> 2,
+		cashdigits 		=> 2,
+		rounding 		=> 0,
+		cashrounding	=> 0,
+	} unless $currency_data;
+	
+	return $currency_data;
+}
+
+has '_default_currency' => (
 \tis\t\t\t=> 'ro',
 \tisa\t\t\t=> 'HashRef',
 \tinit_arg\t=> undef,
@@ -4044,31 +4073,76 @@ use Moose::Role;
 
 # This method assumes a numeric numbering system. It will have to be re written to handle algorithmic systems later 
 sub format_number {
-	my ($self, $number, $format, $currency) = @_;
+	my ($self, $number, $format, $currency, $for_cash) = @_;
 	
 	$format //= '0';
 	
+	my $currency_data;
+	
 	# Check if we need a currency and have not been given one.
 	# In that case we look up the default currency for the locale
-	if ($format =~ tr/¤/¤/ && ! defined $currency) {
-		my $default_currency_bundle = $self->_find_bundle('default_currency');
-		$currency = $default_currency_bundle->default_currency()->{$self->territory};
+	if ($format =~ tr/¤/¤/) {
+	
+		$for_cash //=0;
+		
+		$currency = $self->default_currency()
+			if ! defined $currency;
+		
+		$currency_data = $self->_get_currency_data($currency);
+		
+		$currency = $self->currency_symbol($currency);
 	}
 	
-	$format = $self->parse_number_format($format);
+	$format = $self->parse_number_format($format, $currency, $currency_data, $for_cash);
 	
-	$number = $self->get_formatted_number($number, $format);
+	$number = $self->get_formatted_number($number, $format, $currency_data, $for_cash);
 	
 	return $number;
 }
 
+sub add_currency_symbol {
+	my ($self, $format, $symbol) = @_;
+	
+	return $format =~ s/¤/$symbol/r;
+}
+
+sub _get_currency_data {
+	my ($self, $currency) = @_;
+	
+	my $currency_data = $self->currency_fractions($currency);
+	
+	return $currency_data;
+}
+
+sub _get_currency_rounding {
+
+	my ($self, $currency_data, $for_cash) = @_;
+	
+	my $rounder = $for_cash ? 'cashrounding' : 'rounding' ;
+	
+	return $currency_data->{$rounder};
+}
+
+sub _get_currency_digits {
+	my ($self, $currency_data, $for_cash) = @_;
+	
+	my $digits = $for_cash ? 'cashdigits' : 'digits' ;
+	
+	return $currency_data->{$digits};
+}
+
+
 sub parse_number_format {
-	my ($self, $format) = @_;
+	my ($self, $format, $currency, $currency_data, $for_cash) = @_;
 
 	use feature 'state';
 	
 	state %cache;
+	
 	return $cache{$format} if exists $cache{$format};
+	
+	$format = $self->add_currency_symbol($format, $currency)
+		if defined $currency;
 	
 	my ($positive, $negative) = $format =~ /^((?:'[^']*')++ | [^';]+)+ (?:;(.+))?$/x;
 	
@@ -4120,6 +4194,9 @@ sub parse_number_format {
 		
 		my $rounding = $to_parse =~ /([1-9][0-9]*(?:\.[0-9]+)?)/;
 		$rounding ||= 0;
+		
+		$rounding = $self->_get_currency_rounding($currency_data, $for_cash)
+			if defined $currency;
 		
 		my ($integer, $decimal) = split /\./, $to_parse;
 		
@@ -4176,13 +4253,36 @@ sub parse_number_format {
 	return $cache{$format};
 }
 
-# Crappy rounding function
+# Rounding function
 sub round {
-	return int ($_[1] + .5 );
+	my ($self, $number, $increment, $decimal_digits) = @_;
+
+	if ($increment ) {
+		$number /= $increment;
+		$number = int ($number + .5 );
+		$number *= $increment;
+	}
+	
+	if ( $decimal_digits ) {
+		$number *= 10 ** $decimal_digits;
+		$number = int $number;
+		$number /= 10 ** $decimal_digits;
+		
+		my ($decimal) = $number =~ /(\..*)/; 
+		$decimal //= '.'; # No fraction so add a decimal point
+		
+		$number = int ($number) . $decimal . ('0' x ( $decimal_digits - length( $decimal ) +1 ));
+	}
+	else {
+		# No decimal digits wanted
+		$number = int $number;
+	}
+	
+	return $number;
 }
 
 sub get_formatted_number {
-	my ($self, $number, $format) = @_;
+	my ($self, $number, $format, $currency_data, $for_cash) = @_;
 	
 	my @digits = $self->get_digits;
 	my @number_symbols_bundles = reverse $self->_find_bundle('number_symbols');
@@ -4195,8 +4295,14 @@ sub get_formatted_number {
 	
 	$number *= $format->{$type}{multiplier};
 	
-	if ($format->{rounding}) {
-		$number = $format->{$type}{rounding} * $self->round( ($number / $format->{$type}{rounding}) );
+	if ($format->{rounding} || defined $for_cash) {
+		my $decimal_digits = 0;
+		
+		if (defined $for_cash) {
+			$decimal_digits = $self->_get_currency_digits($currency_data, $for_cash)
+		}
+		
+		$number = $self->round($number, $format->{$type}{rounding}, $decimal_digits);
 	}
 	
 	my $pad_zero = $format->{$type}{minimum_digits} - length "$number";

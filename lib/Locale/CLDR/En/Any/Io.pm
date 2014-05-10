@@ -1,6 +1,6 @@
-package Locale::CLDR::En::Any::Io v0.25.0;
+package Locale::CLDR::En::Any::Io v0.25.1;
 # This file auto generated from Data\common\main\en_IO.xml
-#	on Mon 21 Apr 10:46:56 pm GMT
+#	on Sat 10 May 11:45:23 am GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use v5.18;

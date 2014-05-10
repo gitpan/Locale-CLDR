@@ -1,6 +1,6 @@
-package Locale::CLDR::Bm v0.25.0;
+package Locale::CLDR::Bm v0.25.1;
 # This file auto generated from Data\common\main\bm.xml
-#	on Mon 21 Apr 10:19:55 pm GMT
+#	on Sat 10 May 11:19:40 am GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use v5.18;

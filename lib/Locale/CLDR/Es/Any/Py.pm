@@ -1,6 +1,6 @@
-package Locale::CLDR::Es::Any::Py v0.25.0;
+package Locale::CLDR::Es::Any::Py v0.25.1;
 # This file auto generated from Data\common\main\es_PY.xml
-#	on Mon 21 Apr 10:51:06 pm GMT
+#	on Sat 10 May 11:49:29 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;

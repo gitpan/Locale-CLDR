@@ -1,6 +1,6 @@
-package Locale::CLDR::Fur::Any::It v0.25.0;
+package Locale::CLDR::Fur::Any::It v0.25.1;
 # This file auto generated from Data\common\main\fur_IT.xml
-#	on Mon 21 Apr 11:00:05 pm GMT
+#	on Sat 10 May 11:58:22 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

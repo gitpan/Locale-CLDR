@@ -1,6 +1,6 @@
-package Locale::CLDR::EraBoundries v0.25.0;
+package Locale::CLDR::EraBoundries v0.25.1;
 # This file auto generated from Data.xml
-#	on Fri 25 Apr 10:54:13 pm GMT
+#	on Sat 10 May 11:07:38 am GMT
 # XML file generated 2014-03-13 15:53:16 -0500 (Thu, 13 Mar 2014)
 
 use v5.18;
@@ -9,9 +9,11 @@ use utf8;
 
 use Moose::Role;
 
-has 'era_boundry' => (
+has '_era_boundry' => (
 	is			=> 'ro',
 	isa			=> 'CodeRef',
+	traits		=> ['Code'],
+	handles		=> { era_boundry => 'execute_method' },
 	init_arg	=> undef,
 	default		=> sub { sub {
 		my ($self, $type, $date) = @_;

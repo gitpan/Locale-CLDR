@@ -1,6 +1,6 @@
-package Locale::CLDR::Si::Any v0.25.0;
+package Locale::CLDR::Si::Any v0.25.1;
 # This file auto generated
-#	on Tue 22 Apr 12:25:53 am GMT
+#	on Sat 10 May  1:23:08 pm GMT
 
 use v5.18;
 use mro 'c3';

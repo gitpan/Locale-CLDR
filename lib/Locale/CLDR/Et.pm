@@ -1,6 +1,6 @@
-package Locale::CLDR::Et v0.25.0;
+package Locale::CLDR::Et v0.25.1;
 # This file auto generated from Data\common\main\et.xml
-#	on Mon 21 Apr 10:51:09 pm GMT
+#	on Sat 10 May 11:49:32 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -3919,8 +3919,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'abbreviated' => {
-					'am' => q{e.k.},
 					'pm' => q{p.k.},
+					'am' => q{e.k.},
 				},
 				'wide' => {
 					'am' => q{AM},

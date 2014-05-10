@@ -1,6 +1,6 @@
-package Locale::CLDR::Lo v0.25.0;
+package Locale::CLDR::Lo v0.25.1;
 # This file auto generated from Data\common\main\lo.xml
-#	on Mon 21 Apr 11:42:06 pm GMT
+#	on Sat 10 May 12:39:51 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -5011,29 +5011,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'islamic' => {
-			H => q{H},
-			Hm => q{H:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, d/M},
-			MMM => q{LLL},
-			MMMEd => q{E MMM d},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			d => q{d},
-			h => q{ha},
-			hm => q{h mm a},
-			hms => q{H:mm:ss},
-			ms => q{mm:ss},
-			y => q{y},
-			yM => q{M/y},
-			yMEd => q{E M/d/y},
-			yMMM => q{MMM y},
-			yMMMEd => q{E,MMM d,y},
-			yQQQ => q{QQQ y},
-			yQQQQ => q{QQQQ y},
-		},
 		'generic' => {
 			Ed => q{E d},
 			Gy => q{G y},
@@ -5064,6 +5041,29 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{G d/M/y},
 			yyyyQQQ => q{G QQQ y},
 			yyyyQQQQ => q{G y QQQQ},
+		},
+		'islamic' => {
+			H => q{H},
+			Hm => q{H:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, d/M},
+			MMM => q{LLL},
+			MMMEd => q{E MMM d},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			d => q{d},
+			h => q{ha},
+			hm => q{h mm a},
+			hms => q{H:mm:ss},
+			ms => q{mm:ss},
+			y => q{y},
+			yM => q{M/y},
+			yMEd => q{E M/d/y},
+			yMMM => q{MMM y},
+			yMMMEd => q{E,MMM d,y},
+			yQQQ => q{QQQ y},
+			yQQQQ => q{QQQQ y},
 		},
 		'gregorian' => {
 			EHm => q{E HH:mm},

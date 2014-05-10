@@ -1,6 +1,6 @@
-package Locale::CLDR::Kln v0.25.0;
+package Locale::CLDR::Kln v0.25.1;
 # This file auto generated from Data\common\main\kln.xml
-#	on Mon 21 Apr 11:29:48 pm GMT
+#	on Sat 10 May 12:27:42 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -813,8 +813,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'abbreviated' => {
-					'pm' => q{KE},
 					'am' => q{BE},
+					'pm' => q{KE},
 				},
 				'wide' => {
 					'am' => q{Beet},

@@ -1,6 +1,6 @@
-package Locale::CLDR::Ky::Cyrl::Kg v0.25.0;
+package Locale::CLDR::Ky::Cyrl::Kg v0.25.1;
 # This file auto generated from Data\common\main\ky_Cyrl_KG.xml
-#	on Mon 21 Apr 11:41:50 pm GMT
+#	on Sat 10 May 12:39:35 pm GMT
 # XML file generated 2013-08-22 08:57:13 -0500 (Thu, 22 Aug 2013)
 
 use v5.18;

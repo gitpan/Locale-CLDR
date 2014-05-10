@@ -1,6 +1,6 @@
-package Locale::CLDR::Kok v0.25.0;
+package Locale::CLDR::Kok v0.25.1;
 # This file auto generated from Data\common\main\kok.xml
-#	on Mon 21 Apr 11:36:51 pm GMT
+#	on Sat 10 May 12:34:40 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;

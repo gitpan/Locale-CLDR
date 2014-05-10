@@ -1,6 +1,6 @@
-package Locale::CLDR::Mas v0.25.0;
+package Locale::CLDR::Mas v0.25.1;
 # This file auto generated from Data\common\main\mas.xml
-#	on Mon 21 Apr 11:49:54 pm GMT
+#	on Sat 10 May 12:47:34 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;

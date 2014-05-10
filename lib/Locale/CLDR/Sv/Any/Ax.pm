@@ -1,6 +1,6 @@
-package Locale::CLDR::Sv::Any::Ax v0.25.0;
+package Locale::CLDR::Sv::Any::Ax v0.25.1;
 # This file auto generated from Data\common\main\sv_AX.xml
-#	on Tue 22 Apr 12:38:02 am GMT
+#	on Sat 10 May  1:35:09 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use v5.18;

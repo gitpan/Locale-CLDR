@@ -1,6 +1,6 @@
-package Locale::CLDR::Vi v0.25.0;
+package Locale::CLDR::Vi v0.25.1;
 # This file auto generated from Data\common\main\vi.xml
-#	on Tue 22 Apr 12:55:30 am GMT
+#	on Sat 10 May  1:52:26 pm GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use v5.18;
@@ -4483,8 +4483,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{CH},
 					'am' => q{SA},
+					'pm' => q{CH},
 				},
 			},
 		},
@@ -4674,6 +4674,46 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'generic' => {
+			Ed => q{E, dd},
+			Gy => q{'Năm' y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E, dd MMM y G},
+			GyMMMd => q{dd MMM, y G},
+			H => q{HH'h'},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, dd-M},
+			MMM => q{LLL},
+			MMMEd => q{E, dd MMM},
+			MMMMEd => q{E, dd MMMM},
+			MMMMd => q{dd MMMM},
+			MMMd => q{dd MMM},
+			MMdd => q{dd-MM},
+			Md => q{dd-M},
+			d => q{'Ngày' dd},
+			h => q{h'h' a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{'Năm' y G},
+			yyyy => q{'Năm' y G},
+			yyyyM => q{M/y G},
+			yyyyMEd => q{E, dd-M-y G},
+			yyyyMM => q{MM-y G},
+			yyyyMMM => q{MMM y G},
+			yyyyMMMEd => q{E, dd MMM y G},
+			yyyyMMMM => q{MMMM y G},
+			yyyyMMMd => q{dd MMM, y G},
+			yyyyMd => q{d/M/y G},
+			yyyyQQQ => q{QQQ y G},
+			yyyyQQQQ => q{QQQQ y G},
+		},
+		'roc' => {
+			M => q{'tháng' L},
+			MMM => q{LLL},
+		},
 		'buddhist' => {
 			M => q{'tháng' L},
 			MMM => q{LLL},
@@ -4718,46 +4758,6 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
-			Ed => q{E, dd},
-			Gy => q{'Năm' y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E, dd MMM y G},
-			GyMMMd => q{dd MMM, y G},
-			H => q{HH'h'},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, dd-M},
-			MMM => q{LLL},
-			MMMEd => q{E, dd MMM},
-			MMMMEd => q{E, dd MMMM},
-			MMMMd => q{dd MMMM},
-			MMMd => q{dd MMM},
-			MMdd => q{dd-MM},
-			Md => q{dd-M},
-			d => q{'Ngày' dd},
-			h => q{h'h' a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{'Năm' y G},
-			yyyy => q{'Năm' y G},
-			yyyyM => q{M/y G},
-			yyyyMEd => q{E, dd-M-y G},
-			yyyyMM => q{MM-y G},
-			yyyyMMM => q{MMM y G},
-			yyyyMMMEd => q{E, dd MMM y G},
-			yyyyMMMM => q{MMMM y G},
-			yyyyMMMd => q{dd MMM, y G},
-			yyyyMd => q{d/M/y G},
-			yyyyQQQ => q{QQQ y G},
-			yyyyQQQQ => q{QQQQ y G},
-		},
-		'roc' => {
-			M => q{'tháng' L},
-			MMM => q{LLL},
-		},
 	} },
 );
 
@@ -4777,101 +4777,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			H => {
-				H => q{HH'h' - HH'h'},
-			},
-			Hm => {
-				H => q{HH:mm-HH:mm},
-				m => q{HH:mm-HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm-HH:mm v},
-				m => q{HH:mm-HH:mm v},
-			},
-			Hv => {
-				H => q{HH'h'-HH'h' v},
-			},
-			M => {
-				M => q{'Tháng' M - 'Tháng' M},
-			},
-			MEd => {
-				M => q{EEEE, dd/MM - EEEE, dd/MM},
-				d => q{EEEE, dd/MM - EEEE, dd/MM},
-			},
-			MMM => {
-				M => q{MMM-MMM},
-			},
-			MMMEd => {
-				M => q{EEEE, 'ngày' dd 'tháng' M - EEEE, 'ngày' dd 'tháng' M},
-				d => q{EEEE, 'ngày' dd - EEEE, 'ngày' dd 'tháng' M},
-			},
-			MMMd => {
-				M => q{'Ngày' dd 'tháng' M - 'Ngày' dd 'tháng' M},
-				d => q{'Ngày' dd 'tháng' M - 'Ngày' dd 'tháng' M},
-			},
-			Md => {
-				M => q{dd/MM - dd/MM},
-				d => q{dd/MM - dd/MM},
-			},
-			d => {
-				d => q{'Ngày' dd-dd},
-			},
-			fallback => '{0} - {1}',
-			h => {
-				a => q{h'h' a - h'h' a},
-				h => q{h'h' - h'h' a},
-			},
-			hm => {
-				a => q{h:mm a – h:mm a},
-				h => q{h:mm-h:mm a},
-				m => q{h:mm-h:mm a},
-			},
-			hmv => {
-				a => q{h:mm a – h:mm a v},
-				h => q{h:mm-h:mm a v},
-				m => q{h:mm-h:mm a v},
-			},
-			hv => {
-				a => q{h'h' a - h'h' a v},
-				h => q{h'h'-h'h' a v},
-			},
-			y => {
-				y => q{y-y},
-			},
-			yM => {
-				M => q{MM/y - MM/y},
-				y => q{MM/y - MM/y},
-			},
-			yMEd => {
-				M => q{EEEE, dd/MM/y - EEEE, dd/MM/y},
-				d => q{EEEE, dd/MM/y - EEEE, dd/MM/y},
-				y => q{EEEE, dd/MM/y - EEEE, dd/MM/y},
-			},
-			yMMM => {
-				M => q{'Tháng' M - 'Tháng' M 'năm' y},
-				y => q{'Tháng' M 'năm' y - 'Tháng' M 'năm' y},
-			},
-			yMMMEd => {
-				M => q{E, dd 'tháng' M - E, dd 'tháng' M, y},
-				d => q{EEEE, 'ngày' dd MMM - EEEE, 'ngày' dd MMM 'năm' y},
-				y => q{E, dd 'tháng' M, y - E, dd 'tháng' M, y},
-			},
-			yMMMM => {
-				M => q{MMMM-MMMM y},
-				y => q{MMMM y – MMMM y},
-			},
-			yMMMd => {
-				M => q{'Ngày' dd 'tháng' M - 'Ngày' dd 'tháng' M 'năm' y},
-				d => q{'Ngày' dd 'tháng' M - 'Ngày' dd 'tháng' M 'năm' y},
-				y => q{'Ngày' dd 'tháng' M 'năm' y - 'Ngày' dd 'tháng' M 'năm' y},
-			},
-			yMd => {
-				M => q{dd/MM/y - dd/MM/y},
-				d => q{dd/MM/y - dd/MM/y},
-				y => q{dd/MM/y - dd/MM/y},
-			},
-		},
 		'generic' => {
 			H => {
 				H => q{HH'h' - HH'h'},
@@ -4965,6 +4870,101 @@ has 'datetime_formats_interval' => (
 				M => q{dd/MM/y - dd/MM/y G},
 				d => q{dd/MM/y - dd/MM/y G},
 				y => q{dd/MM/y - dd/MM/y G},
+			},
+		},
+		'gregorian' => {
+			H => {
+				H => q{HH'h' - HH'h'},
+			},
+			Hm => {
+				H => q{HH:mm-HH:mm},
+				m => q{HH:mm-HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm-HH:mm v},
+				m => q{HH:mm-HH:mm v},
+			},
+			Hv => {
+				H => q{HH'h'-HH'h' v},
+			},
+			M => {
+				M => q{'Tháng' M - 'Tháng' M},
+			},
+			MEd => {
+				M => q{EEEE, dd/MM - EEEE, dd/MM},
+				d => q{EEEE, dd/MM - EEEE, dd/MM},
+			},
+			MMM => {
+				M => q{MMM-MMM},
+			},
+			MMMEd => {
+				M => q{EEEE, 'ngày' dd 'tháng' M - EEEE, 'ngày' dd 'tháng' M},
+				d => q{EEEE, 'ngày' dd - EEEE, 'ngày' dd 'tháng' M},
+			},
+			MMMd => {
+				M => q{'Ngày' dd 'tháng' M - 'Ngày' dd 'tháng' M},
+				d => q{'Ngày' dd 'tháng' M - 'Ngày' dd 'tháng' M},
+			},
+			Md => {
+				M => q{dd/MM - dd/MM},
+				d => q{dd/MM - dd/MM},
+			},
+			d => {
+				d => q{'Ngày' dd-dd},
+			},
+			fallback => '{0} - {1}',
+			h => {
+				a => q{h'h' a - h'h' a},
+				h => q{h'h' - h'h' a},
+			},
+			hm => {
+				a => q{h:mm a – h:mm a},
+				h => q{h:mm-h:mm a},
+				m => q{h:mm-h:mm a},
+			},
+			hmv => {
+				a => q{h:mm a – h:mm a v},
+				h => q{h:mm-h:mm a v},
+				m => q{h:mm-h:mm a v},
+			},
+			hv => {
+				a => q{h'h' a - h'h' a v},
+				h => q{h'h'-h'h' a v},
+			},
+			y => {
+				y => q{y-y},
+			},
+			yM => {
+				M => q{MM/y - MM/y},
+				y => q{MM/y - MM/y},
+			},
+			yMEd => {
+				M => q{EEEE, dd/MM/y - EEEE, dd/MM/y},
+				d => q{EEEE, dd/MM/y - EEEE, dd/MM/y},
+				y => q{EEEE, dd/MM/y - EEEE, dd/MM/y},
+			},
+			yMMM => {
+				M => q{'Tháng' M - 'Tháng' M 'năm' y},
+				y => q{'Tháng' M 'năm' y - 'Tháng' M 'năm' y},
+			},
+			yMMMEd => {
+				M => q{E, dd 'tháng' M - E, dd 'tháng' M, y},
+				d => q{EEEE, 'ngày' dd MMM - EEEE, 'ngày' dd MMM 'năm' y},
+				y => q{E, dd 'tháng' M, y - E, dd 'tháng' M, y},
+			},
+			yMMMM => {
+				M => q{MMMM-MMMM y},
+				y => q{MMMM y – MMMM y},
+			},
+			yMMMd => {
+				M => q{'Ngày' dd 'tháng' M - 'Ngày' dd 'tháng' M 'năm' y},
+				d => q{'Ngày' dd 'tháng' M - 'Ngày' dd 'tháng' M 'năm' y},
+				y => q{'Ngày' dd 'tháng' M 'năm' y - 'Ngày' dd 'tháng' M 'năm' y},
+			},
+			yMd => {
+				M => q{dd/MM/y - dd/MM/y},
+				d => q{dd/MM/y - dd/MM/y},
+				y => q{dd/MM/y - dd/MM/y},
 			},
 		},
 	} },

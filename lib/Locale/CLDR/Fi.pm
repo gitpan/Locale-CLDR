@@ -1,6 +1,6 @@
-package Locale::CLDR::Fi v0.25.0;
+package Locale::CLDR::Fi v0.25.1;
 # This file auto generated from Data\common\main\fi.xml
-#	on Mon 21 Apr 10:55:37 pm GMT
+#	on Sat 10 May 11:53:57 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use v5.18;
@@ -4748,15 +4748,15 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
+				'narrow' => {
 					'am' => q{ap.},
 					'pm' => q{ip.},
+				},
+				'wide' => {
+					'pm' => q{ip.},
+					'am' => q{ap.},
 				},
 				'abbreviated' => {
-					'am' => q{ap.},
-					'pm' => q{ip.},
-				},
-				'narrow' => {
 					'pm' => q{ip.},
 					'am' => q{ap.},
 				},
@@ -4919,24 +4919,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'chinese' => {
-			H => q{H},
-			Hm => q{H.mm},
-			Hms => q{H.mm.ss},
-			MEd => q{E d.M.},
-			MMMEd => q{E d.M.},
-			MMMd => q{d.M.},
-			Md => q{d.M.},
-			hm => q{h.mm a},
-			hms => q{h.mm.ss a},
-			ms => q{mm.ss},
-			y => q{y},
-			yyyy => q{y},
-			yyyyMEd => q{E d.M.y},
-			yyyyMMMEd => q{E d.M.y},
-			yyyyMMMd => q{d.M.y},
-			yyyyMd => q{d.M.y},
-		},
 		'generic' => {
 			Ed => q{E d.},
 			Gy => q{y G},
@@ -5007,6 +4989,24 @@ has 'datetime_formats_available_formats' => (
 			yMd => q{d.M.y},
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
+		},
+		'chinese' => {
+			H => q{H},
+			Hm => q{H.mm},
+			Hms => q{H.mm.ss},
+			MEd => q{E d.M.},
+			MMMEd => q{E d.M.},
+			MMMd => q{d.M.},
+			Md => q{d.M.},
+			hm => q{h.mm a},
+			hms => q{h.mm.ss a},
+			ms => q{mm.ss},
+			y => q{y},
+			yyyy => q{y},
+			yyyyMEd => q{E d.M.y},
+			yyyyMMMEd => q{E d.M.y},
+			yyyyMMMd => q{d.M.y},
+			yyyyMd => q{d.M.y},
 		},
 	} },
 );

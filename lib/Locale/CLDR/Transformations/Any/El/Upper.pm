@@ -1,6 +1,6 @@
-package Locale::CLDR::Transformations::Any::El::Upper v0.25.0;
+package Locale::CLDR::Transformations::Any::El::Upper v0.25.1;
 # This file auto generated from Data\common\transforms\el-Upper.xml
-#	on Fri 25 Apr 10:55:07 pm GMT
+#	on Sat 10 May 11:08:31 am GMT
 # XML file generated 2013-03-01 08:26:02 -0600 (Fri, 01 Mar 2013)
 
 use v5.18;

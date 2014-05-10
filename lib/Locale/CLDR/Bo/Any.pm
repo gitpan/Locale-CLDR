@@ -1,6 +1,6 @@
-package Locale::CLDR::Bo::Any v0.25.0;
+package Locale::CLDR::Bo::Any v0.25.1;
 # This file auto generated
-#	on Mon 21 Apr 10:22:50 pm GMT
+#	on Sat 10 May 11:22:29 am GMT
 
 use v5.18;
 use mro 'c3';

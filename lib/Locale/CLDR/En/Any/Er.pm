@@ -1,6 +1,6 @@
-package Locale::CLDR::En::Any::Er v0.25.0;
+package Locale::CLDR::En::Any::Er v0.25.1;
 # This file auto generated from Data\common\main\en_ER.xml
-#	on Mon 21 Apr 10:46:49 pm GMT
+#	on Sat 10 May 11:45:16 am GMT
 # XML file generated 2013-08-22 18:59:54 -0500 (Thu, 22 Aug 2013)
 
 use v5.18;

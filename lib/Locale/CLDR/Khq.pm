@@ -1,6 +1,6 @@
-package Locale::CLDR::Khq v0.25.0;
+package Locale::CLDR::Khq v0.25.1;
 # This file auto generated from Data\common\main\khq.xml
-#	on Mon 21 Apr 11:27:37 pm GMT
+#	on Sat 10 May 12:25:33 pm GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use v5.18;
@@ -834,8 +834,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{Adduha},
 					'pm' => q{Aluula},
+					'am' => q{Adduha},
 				},
 			},
 		},
@@ -915,7 +915,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			M => q{M},
 			MMM => q{MMM},
 			MMMEd => q{E d MMM},
@@ -937,7 +937,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			M => q{M},
 			MMM => q{MMM},
 			MMMEd => q{E d MMM},

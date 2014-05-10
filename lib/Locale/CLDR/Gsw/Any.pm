@@ -1,6 +1,6 @@
-package Locale::CLDR::Gsw::Any v0.25.0;
+package Locale::CLDR::Gsw::Any v0.25.1;
 # This file auto generated
-#	on Mon 21 Apr 11:04:58 pm GMT
+#	on Sat 10 May 12:03:12 pm GMT
 
 use v5.18;
 use mro 'c3';

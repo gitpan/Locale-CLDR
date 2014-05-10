@@ -1,6 +1,6 @@
-package Locale::CLDR::Dav::Any::Ke v0.25.0;
+package Locale::CLDR::Dav::Any::Ke v0.25.1;
 # This file auto generated from Data\common\main\dav_KE.xml
-#	on Mon 21 Apr 10:37:16 pm GMT
+#	on Sat 10 May 11:36:09 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

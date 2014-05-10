@@ -1,6 +1,6 @@
-package Locale::CLDR::WeekData v0.25.0;
+package Locale::CLDR::WeekData v0.25.1;
 # This file auto generated from Data.xml
-#	on Fri 25 Apr 10:54:45 pm GMT
+#	on Sat 10 May 11:08:11 am GMT
 # XML file generated 2014-03-13 15:53:16 -0500 (Thu, 13 Mar 2014)
 
 use v5.18;
@@ -9,7 +9,7 @@ use utf8;
 
 use Moose::Role;
 
-has 'week_data_min_days' => (
+has '_week_data_min_days' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
@@ -65,7 +65,7 @@ has 'week_data_min_days' => (
 	}},
 );
 
-has 'week_data_first_day' => (
+has '_week_data_first_day' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
@@ -226,7 +226,7 @@ has 'week_data_first_day' => (
 	}},
 );
 
-has 'week_data_weekend_start' => (
+has '_week_data_weekend_start' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
@@ -255,7 +255,7 @@ has 'week_data_weekend_start' => (
 	}},
 );
 
-has 'week_data_weekend_end' => (
+has '_week_data_weekend_end' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,

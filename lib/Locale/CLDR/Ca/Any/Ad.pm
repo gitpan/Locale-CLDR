@@ -1,6 +1,6 @@
-package Locale::CLDR::Ca::Any::Ad v0.25.0;
+package Locale::CLDR::Ca::Any::Ad v0.25.1;
 # This file auto generated from Data\common\main\ca_AD.xml
-#	on Mon 21 Apr 10:33:03 pm GMT
+#	on Sat 10 May 11:32:10 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

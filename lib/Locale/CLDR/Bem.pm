@@ -1,6 +1,6 @@
-package Locale::CLDR::Bem v0.25.0;
+package Locale::CLDR::Bem v0.25.1;
 # This file auto generated from Data\common\main\bem.xml
-#	on Mon 21 Apr 10:17:05 pm GMT
+#	on Sat 10 May 11:16:57 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use v5.18;
@@ -274,8 +274,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{akasuba},
 					'am' => q{uluchelo},
+					'pm' => q{akasuba},
 				},
 			},
 		},

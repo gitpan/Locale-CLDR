@@ -1,6 +1,6 @@
-package Locale::CLDR::Pa::Arab v0.25.0;
+package Locale::CLDR::Pa::Arab v0.25.1;
 # This file auto generated from Data\common\main\pa_Arab.xml
-#	on Tue 22 Apr 12:11:19 am GMT
+#	on Sat 10 May  1:08:44 pm GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use v5.18;
@@ -295,14 +295,14 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			HHmmss => q{HH:mm:ss},
 			Md => q{d/M},
 			mmss => q{mm:ss},
 			yMMM => q{MMM y},
 			yQQQ => q{QQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			HHmmss => q{HH:mm:ss},
 			Md => q{d/M},
 			mmss => q{mm:ss},

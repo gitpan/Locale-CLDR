@@ -1,6 +1,6 @@
-package Locale::CLDR::Naq::Any v0.25.0;
+package Locale::CLDR::Naq::Any v0.25.1;
 # This file auto generated
-#	on Tue 22 Apr 12:02:24 am GMT
+#	on Sat 10 May 12:59:55 pm GMT
 
 use v5.18;
 use mro 'c3';

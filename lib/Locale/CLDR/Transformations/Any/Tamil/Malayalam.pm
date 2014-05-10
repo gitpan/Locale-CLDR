@@ -1,6 +1,6 @@
-package Locale::CLDR::Transformations::Any::Tamil::Malayalam v0.25.0;
+package Locale::CLDR::Transformations::Any::Tamil::Malayalam v0.25.1;
 # This file auto generated from Data\common\transforms\Tamil-Malayalam.xml
-#	on Fri 25 Apr 10:55:05 pm GMT
+#	on Sat 10 May 11:08:29 am GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
 use v5.18;

@@ -1,6 +1,6 @@
-package Locale::CLDR::Transformations::Any::Uz_cyrl::Uz_latn v0.25.0;
+package Locale::CLDR::Transformations::Any::Uz_cyrl::Uz_latn v0.25.1;
 # This file auto generated from Data\common\transforms\uz_Cyrl-uz_Latn.xml
-#	on Fri 25 Apr 10:55:11 pm GMT
+#	on Sat 10 May 11:08:35 am GMT
 # XML file generated 2013-08-01 22:51:25 -0500 (Thu, 01 Aug 2013)
 
 use v5.18;

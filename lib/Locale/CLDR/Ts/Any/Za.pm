@@ -1,6 +1,6 @@
-package Locale::CLDR::Ts::Any::Za v0.25.0;
+package Locale::CLDR::Ts::Any::Za v0.25.1;
 # This file auto generated from Data\common\main\ts_ZA.xml
-#	on Tue 22 Apr 12:47:57 am GMT
+#	on Sat 10 May  1:44:57 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;

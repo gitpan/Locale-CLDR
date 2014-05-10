@@ -1,6 +1,6 @@
-package Locale::CLDR::Naq::Any::Na v0.25.0;
+package Locale::CLDR::Naq::Any::Na v0.25.1;
 # This file auto generated from Data\common\main\naq_NA.xml
-#	on Tue 22 Apr 12:02:24 am GMT
+#	on Sat 10 May 12:59:55 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use v5.18;
