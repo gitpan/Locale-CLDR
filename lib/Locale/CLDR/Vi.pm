@@ -1,9 +1,9 @@
 package Locale::CLDR::Vi v0.25.1;
 # This file auto generated from Data\common\main\vi.xml
-#	on Sat 10 May  1:52:26 pm GMT
+#	on Sun 11 May 12:49:54 am GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -4674,6 +4674,14 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'buddhist' => {
+			M => q{'tháng' L},
+			MMM => q{LLL},
+		},
+		'roc' => {
+			M => q{'tháng' L},
+			MMM => q{LLL},
+		},
 		'generic' => {
 			Ed => q{E, dd},
 			Gy => q{'Năm' y G},
@@ -4709,14 +4717,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{d/M/y G},
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
-		},
-		'roc' => {
-			M => q{'tháng' L},
-			MMM => q{LLL},
-		},
-		'buddhist' => {
-			M => q{'tháng' L},
-			MMM => q{LLL},
 		},
 		'gregorian' => {
 			EHm => q{E HH:mm},

@@ -1,9 +1,9 @@
 package Locale::CLDR::Sah::Any::Ru v0.25.1;
 # This file auto generated from Data\common\main\sah_RU.xml
-#	on Sat 10 May  1:20:43 pm GMT
+#	on Sun 11 May 12:17:31 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

@@ -1,9 +1,9 @@
 package Locale::CLDR::Bn v0.25.1;
 # This file auto generated from Data\common\main\bn.xml
-#	on Sat 10 May 11:19:46 am GMT
+#	on Sat 10 May 10:13:27 pm GMT
 # XML file generated 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -4130,11 +4130,11 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'narrow' => {
+				'wide' => {
 					'pm' => q{অপরাহ্ণ},
 					'am' => q{পূর্বাহ্ণ},
 				},
-				'wide' => {
+				'narrow' => {
 					'am' => q{পূর্বাহ্ণ},
 					'pm' => q{অপরাহ্ণ},
 				},

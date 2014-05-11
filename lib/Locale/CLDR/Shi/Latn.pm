@@ -1,9 +1,9 @@
 package Locale::CLDR::Shi::Latn v0.25.1;
 # This file auto generated from Data\common\main\shi_Latn.xml
-#	on Sat 10 May  1:21:06 pm GMT
+#	on Sun 11 May 12:17:55 am GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -823,8 +823,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{tifawt},
 					'pm' => q{tadggʷat},
+					'am' => q{tifawt},
 				},
 			},
 		},
@@ -904,7 +904,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			M => q{M},
 			MMM => q{MMM},
 			MMMEd => q{E d MMM},
@@ -924,7 +924,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			M => q{M},
 			MMM => q{MMM},
 			MMMEd => q{E d MMM},

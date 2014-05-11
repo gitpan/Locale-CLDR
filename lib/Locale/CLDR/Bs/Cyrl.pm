@@ -1,9 +1,9 @@
 package Locale::CLDR::Bs::Cyrl v0.25.1;
 # This file auto generated from Data\common\main\bs_Cyrl.xml
-#	on Sat 10 May 11:27:41 am GMT
+#	on Sat 10 May 10:21:26 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -4554,8 +4554,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{пре подне},
 					'pm' => q{поподне},
+					'am' => q{пре подне},
 				},
 			},
 		},
@@ -4973,6 +4973,30 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'islamic' => {
+			Ed => q{E, dd.},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, dd.MM.},
+			MMM => q{LLL},
+			MMMEd => q{E, dd. MMM},
+			MMMd => q{dd. MMM},
+			Md => q{dd.MM.},
+			d => q{d},
+			hm => q{hh:mm a},
+			hms => q{hh:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y. G},
+			yM => q{MM.y. G},
+			yMEd => q{E, dd.MM.y. G},
+			yMMM => q{MMM y. G},
+			yMMMEd => q{E, dd. MMM y. G},
+			yMMMd => q{dd. MMM y. G},
+			yMd => q{dd.MM.y. G},
+			yQQQ => q{y G QQQ},
+			yQQQQ => q{y G QQQQ},
+		},
 		'gregorian' => {
 			Ed => q{E, d.},
 			Gy => q{y. G},
@@ -5001,30 +5025,6 @@ has 'datetime_formats_available_formats' => (
 			yMd => q{dd.MM.y.},
 			yQQQ => q{y QQQ},
 			yQQQQ => q{y QQQQ},
-		},
-		'islamic' => {
-			Ed => q{E, dd.},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, dd.MM.},
-			MMM => q{LLL},
-			MMMEd => q{E, dd. MMM},
-			MMMd => q{dd. MMM},
-			Md => q{dd.MM.},
-			d => q{d},
-			hm => q{hh:mm a},
-			hms => q{hh:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y. G},
-			yM => q{MM.y. G},
-			yMEd => q{E, dd.MM.y. G},
-			yMMM => q{MMM y. G},
-			yMMMEd => q{E, dd. MMM y. G},
-			yMMMd => q{dd. MMM y. G},
-			yMd => q{dd.MM.y. G},
-			yQQQ => q{y G QQQ},
-			yQQQQ => q{y G QQQQ},
 		},
 		'generic' => {
 			Ed => q{E, d.},

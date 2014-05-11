@@ -1,9 +1,9 @@
 package Locale::CLDR::Es::Any::419 v0.25.1;
 # This file auto generated from Data\common\main\es_419.xml
-#	on Sat 10 May 11:47:15 am GMT
+#	on Sat 10 May 10:41:27 pm GMT
 # XML file generated 2014-01-08 23:02:40 -0600 (Wed, 08 Jan 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -314,11 +314,11 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			yMEd => q{E d/M/y},
-		},
 		'generic' => {
 			yMEd => q{E d/M/y G},
+		},
+		'gregorian' => {
+			yMEd => q{E d/M/y},
 		},
 	} },
 );

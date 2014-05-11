@@ -1,9 +1,9 @@
 package Locale::CLDR::Ar v0.25.1;
 # This file auto generated from Data\common\main\ar.xml
-#	on Sat 10 May 11:11:39 am GMT
+#	on Sat 10 May 10:05:04 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -5777,8 +5777,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{م},
 					'am' => q{ص},
+					'pm' => q{م},
 				},
 			},
 		},

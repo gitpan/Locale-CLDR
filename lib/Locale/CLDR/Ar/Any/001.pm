@@ -1,9 +1,9 @@
 package Locale::CLDR::Ar::Any::001 v0.25.1;
 # This file auto generated from Data\common\main\ar_001.xml
-#	on Sat 10 May 11:14:15 am GMT
+#	on Sat 10 May 10:07:46 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

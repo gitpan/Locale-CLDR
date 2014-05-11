@@ -1,9 +1,9 @@
 package Locale::CLDR::Si v0.25.1;
 # This file auto generated from Data\common\main\si.xml
-#	on Sat 10 May  1:21:10 pm GMT
+#	on Sun 11 May 12:18:00 am GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

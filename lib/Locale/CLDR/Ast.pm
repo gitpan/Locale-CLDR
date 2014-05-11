@@ -1,9 +1,9 @@
 package Locale::CLDR::Ast v0.25.1;
 # This file auto generated from Data\common\main\ast.xml
-#	on Sat 10 May 11:14:24 am GMT
+#	on Sat 10 May 10:07:56 pm GMT
 # XML file generated 2014-01-08 23:02:40 -0600 (Wed, 08 Jan 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

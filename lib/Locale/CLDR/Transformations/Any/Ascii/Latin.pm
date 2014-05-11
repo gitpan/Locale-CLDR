@@ -1,9 +1,9 @@
 package Locale::CLDR::Transformations::Any::Ascii::Latin v0.25.1;
 # This file auto generated from Data\common\transforms\Latin-ASCII.xml
-#	on Sat 10 May 11:08:20 am GMT
+#	on Sat 10 May 10:01:45 pm GMT
 # XML file generated 2013-08-05 13:50:51 -0500 (Mon, 05 Aug 2013)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

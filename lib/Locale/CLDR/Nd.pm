@@ -1,9 +1,9 @@
 package Locale::CLDR::Nd v0.25.1;
 # This file auto generated from Data\common\main\nd.xml
-#	on Sat 10 May  1:01:39 pm GMT
+#	on Sat 10 May 11:57:52 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

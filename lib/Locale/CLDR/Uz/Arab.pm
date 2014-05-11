@@ -1,9 +1,9 @@
 package Locale::CLDR::Uz::Arab v0.25.1;
 # This file auto generated from Data\common\main\uz_Arab.xml
-#	on Sat 10 May  1:51:53 pm GMT
+#	on Sun 11 May 12:49:22 am GMT
 # XML file generated 2014-03-10 13:02:01 -0500 (Mon, 10 Mar 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

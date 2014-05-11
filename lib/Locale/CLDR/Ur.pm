@@ -1,9 +1,9 @@
 package Locale::CLDR::Ur v0.25.1;
 # This file auto generated from Data\common\main\ur.xml
-#	on Sat 10 May  1:49:27 pm GMT
+#	on Sun 11 May 12:46:55 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -2850,11 +2850,11 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'am' => q{قبل دوپہر},
-					'pm' => q{بعد دوپہر},
-				},
 				'abbreviated' => {
+					'pm' => q{بعد دوپہر},
+					'am' => q{قبل دوپہر},
+				},
+				'wide' => {
 					'am' => q{قبل دوپہر},
 					'pm' => q{بعد دوپہر},
 				},

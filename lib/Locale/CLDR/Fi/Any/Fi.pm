@@ -1,9 +1,9 @@
 package Locale::CLDR::Fi::Any::Fi v0.25.1;
 # This file auto generated from Data\common\main\fi_FI.xml
-#	on Sat 10 May 11:55:41 am GMT
+#	on Sat 10 May 10:50:03 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

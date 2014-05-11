@@ -1,9 +1,9 @@
 package Locale::CLDR::Bn::Any::In v0.25.1;
 # This file auto generated from Data\common\main\bn_IN.xml
-#	on Sat 10 May 11:22:28 am GMT
+#	on Sat 10 May 10:16:10 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

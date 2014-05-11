@@ -1,9 +1,9 @@
 package Locale::CLDR::Az v0.25.1;
 # This file auto generated from Data\common\main\az.xml
-#	on Sat 10 May 11:14:51 am GMT
+#	on Sat 10 May 10:08:24 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

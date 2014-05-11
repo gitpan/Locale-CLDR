@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 # Do not normalise this test file. It has deliberately unnormalised characters in it.
-use v5.18;
+use v5.10;
 use strict;
 use warnings;
 use utf8;

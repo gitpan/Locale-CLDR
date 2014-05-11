@@ -8,7 +8,7 @@ Locale::CLDR - A Module to create locale objects with localisation data from the
 
 =head1 VERSION
 
-Version 0.25.0
+Version 0.25.1
 
 =head1 SYNOPSIS
 
@@ -35,7 +35,7 @@ or
  
 =cut
 
-use v5.18;
+use v5.10;
 use open ':encoding(utf8)';
 use utf8;
 use Moose;
@@ -52,6 +52,34 @@ use Class::MOP;
 use DateTime::Locale;
 use Unicode::Normalize();
 
+# Backwards compatibility
+BEGIN {
+	if (defined &CORE::fc) { #v5.16
+		*fc = \&CORE::fc;
+	}
+	else {
+		# This code taken from 
+		require Unicode::UCD;
+		*fc = sub {
+			my ($string) = @_;
+			
+			my $out = "";
+
+			for my $codepoint (unpack "U*", $string) {
+				my $mapping = Unicode::UCD::casefold($codepoint);
+				my @cp;
+				if (!defined $mapping) {
+					@cp = ($codepoint);
+				} else {
+					@cp = map hex, split / /, $mapping->{'full'};
+				}
+				$out .= pack "U*", @cp;
+			}
+
+			return $out;
+		};
+	}
+}
 =head1 ATTRIBUTES
 
 These can be passed into the constructor and all are optional.
@@ -1160,10 +1188,10 @@ sub BUILDARGS {
 	}
 
 	# Fix casing of args
-	$args{language_id}		= lc $args{language_id}		if defined $args{language_id};
-	$args{script_id}		= ucfirst lc $args{script_id}	if defined $args{script_id};
+	$args{language_id}	= lc $args{language_id}			if defined $args{language_id};
+	$args{script_id}	= ucfirst lc $args{script_id}	if defined $args{script_id};
 	$args{territory_id}	= uc $args{territory_id}		if defined $args{territory_id};
-	$args{variant_id}	= uc $args{variant_id}		if defined $args{variant_id};
+	$args{variant_id}	= uc $args{variant_id}			if defined $args{variant_id};
 	
 	# Set up undefined language
 	$args{language_id} //= 'und';
@@ -1888,6 +1916,7 @@ sub _set_casing {
 =head2 Segmentation
 
 This group of methods allow you to split a string in various ways
+Note you need Perl 5.18 or above for this
 
 =over 4
 
@@ -1897,8 +1926,15 @@ Splits a string on grapheme clusters using the locals segmentation rules.
 Returns a list of grapheme clusters.
 
 =cut
+# Need 5.18 and above
+sub _new_perl {
+	die "You need Perl 5.18 or later for this functionality\n"
+		 if $^V lt v5.18.0;
+}
 
 sub split_grapheme_clusters {
+	_new_perl();
+	
 	my ($self, $string) = @_;
 
 	my $rules = $self->break_grapheme_cluster;
@@ -1915,6 +1951,8 @@ Returns a list of words.
 =cut
 
 sub split_words {
+	_new_perl();
+	
 	my ($self, $string) = @_;
 
 	my $rules = $self->break_word;
@@ -1933,6 +1971,8 @@ could end.
 =cut
 
 sub split_sentences {
+	_new_perl();
+	
 	my ($self, $string) = @_;
 
 	my $rules = $self->break_sentence;
@@ -1951,6 +1991,8 @@ could end.
 =cut
 
 sub split_lines {
+	_new_perl();
+	
 	my ($self, $string) = @_;
 
 	my $rules = $self->break_line;
@@ -1970,21 +2012,22 @@ sub _split {
 	no warnings 'deprecated';
 	while (length($string) -1 != pos $string) {
 		my $rule_number = 0;
+		my $first;
 		foreach my $rule (@$rules) {
-			unless( $string =~ m{
+			unless( ($first) = $string =~ m{
 				\G
-				(?<first> $rule->[0] )
-				(?<second> $rule->[1] )
+				($rule->[0])
+				$rule->[1]
 			}msx) {
 				$rule_number++;
 				next;
 			}
-			my $location = pos($string) + length($+{first}) -1;
+			my $location = pos($string) + length($first) -1;
 			$split[$location] = $rule_number;
 			
 			# If the left hand side was part of a grapheme cluster 
 			# we have to jump past the entire cluster
-			my $length = length $+{first};
+			my $length = length $first;
 			my ($gc) = $string =~ /\G(\X)/;
 			$length = (! $grapheme_split && length($gc)) > $length ? length($gc) : $length;
 			pos($string)+= $length;
@@ -3428,7 +3471,9 @@ sub _build_prefers_24_hour_time {
 }
 
 # Sub to mangle Unicode regex to Perl regex
-sub _unicode_to_perl {
+# Backwards compatibility hack
+*_unicode_to_perl = eval <<'EOT' || \&_new_perl;
+sub {
 	my $regex = shift;
 
 	return '' unless length $regex;
@@ -3454,9 +3499,13 @@ sub _unicode_to_perl {
 	no warnings "experimental::regex_sets";
 	no warnings "deprecated"; # Because CLDR uses surrogates
 	return qr/$regex/x;
-}
+};
 
-sub _convert {
+EOT
+
+# Backwards compatibility hack
+*_convert = eval <<'EOT' || \&_new_perl;
+sub {
 	my $set = shift;
 	
 	# Some definitions
@@ -3529,6 +3578,8 @@ sub _convert {
 	
 	return "(?$set)";
 }
+
+EOT
 
 # The following pod is for methods defined in the Moose Role
 # files that are automatically generated from the data
@@ -3918,6 +3969,7 @@ L<http://search.cpan.org/dist/Locale-CLDR/>
 =head1 COPYRIGHT & LICENSE
 
 Copyright 2009-2014 John Imrie.
+Backwards compatible Case Folding Copyright Andrew Rodland  ARODLAND@cpan.org
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of either: the GNU General Public License as published

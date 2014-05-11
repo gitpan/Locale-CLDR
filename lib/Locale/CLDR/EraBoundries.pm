@@ -1,9 +1,9 @@
 package Locale::CLDR::EraBoundries v0.25.1;
 # This file auto generated from Data.xml
-#	on Sat 10 May 11:07:38 am GMT
+#	on Sat 10 May 10:01:04 pm GMT
 # XML file generated 2014-03-13 15:53:16 -0500 (Thu, 13 Mar 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

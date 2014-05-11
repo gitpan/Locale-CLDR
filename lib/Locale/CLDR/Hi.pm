@@ -1,9 +1,9 @@
 package Locale::CLDR::Hi v0.25.1;
 # This file auto generated from Data\common\main\hi.xml
-#	on Sat 10 May 12:07:49 pm GMT
+#	on Sat 10 May 11:02:26 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -3781,16 +3781,16 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'narrow' => {
-					'am' => q{पू},
 					'pm' => q{अ},
+					'am' => q{पू},
 				},
 				'wide' => {
 					'pm' => q{अपराह्न},
 					'am' => q{पूर्वाह्न},
 				},
 				'abbreviated' => {
-					'pm' => q{अपर},
 					'am' => q{पूर्व},
+					'pm' => q{अपर},
 				},
 			},
 		},

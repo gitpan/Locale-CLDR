@@ -1,9 +1,9 @@
 package Locale::CLDR::Nl::Any::Be v0.25.1;
 # This file auto generated from Data\common\main\nl_BE.xml
-#	on Sat 10 May  1:05:28 pm GMT
+#	on Sun 11 May 12:01:45 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -89,31 +89,31 @@ has 'day_period_data' => (
 		SWITCH:
 		for ($type) {
 			if ($_ eq 'generic') {
-				return 'evening' if $time >= 1700
-					&& $time < 2100;
 				return 'afternoon' if $time > 1200
 					&& $time < 1700;
-				return 'night' if $time >= 2100
-					&& $time < 2400;
 				return 'morning' if $time >= 900
 					&& $time < 1200;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 2100
+					&& $time < 2400;
 				return 'earlyMorning' if $time >= 000
 					&& $time < 900;
-				return 'noon' if $time == 1200;
+				return 'evening' if $time >= 1700
+					&& $time < 2100;
 			last SWITCH;
 			}
 			if ($_ eq 'gregorian') {
-				return 'evening' if $time >= 1700
-					&& $time < 2100;
 				return 'afternoon' if $time > 1200
 					&& $time < 1700;
-				return 'night' if $time >= 2100
-					&& $time < 2400;
 				return 'morning' if $time >= 900
 					&& $time < 1200;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 2100
+					&& $time < 2400;
 				return 'earlyMorning' if $time >= 000
 					&& $time < 900;
-				return 'noon' if $time == 1200;
+				return 'evening' if $time >= 1700
+					&& $time < 2100;
 			last SWITCH;
 			}
 		}

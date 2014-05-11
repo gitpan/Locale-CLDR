@@ -1,9 +1,9 @@
 package Locale::CLDR::Gl v0.25.1;
 # This file auto generated from Data\common\main\gl.xml
-#	on Sat 10 May 12:01:01 pm GMT
+#	on Sat 10 May 10:55:31 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -2775,15 +2775,15 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
+				'abbreviated' => {
+					'am' => q{a.m.},
+					'pm' => q{p.m.},
+				},
 				'narrow' => {
-					'pm' => q{p},
 					'am' => q{a},
+					'pm' => q{p},
 				},
 				'wide' => {
-					'pm' => q{p.m.},
-					'am' => q{a.m.},
-				},
-				'abbreviated' => {
 					'am' => q{a.m.},
 					'pm' => q{p.m.},
 				},

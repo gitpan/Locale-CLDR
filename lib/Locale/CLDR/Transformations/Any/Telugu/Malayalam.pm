@@ -1,9 +1,9 @@
 package Locale::CLDR::Transformations::Any::Telugu::Malayalam v0.25.1;
 # This file auto generated from Data\common\transforms\Telugu-Malayalam.xml
-#	on Sat 10 May 11:08:29 am GMT
+#	on Sat 10 May 10:01:54 pm GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

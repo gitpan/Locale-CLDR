@@ -1,9 +1,9 @@
 package Locale::CLDR::Or v0.25.1;
 # This file auto generated from Data\common\main\or.xml
-#	on Sat 10 May  1:06:42 pm GMT
+#	on Sun 11 May 12:03:02 am GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -1121,13 +1121,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
+				'narrow' => {
 					'am' => q{am},
 					'pm' => q{pm},
 				},
-				'narrow' => {
-					'pm' => q{pm},
+				'wide' => {
 					'am' => q{am},
+					'pm' => q{pm},
 				},
 			},
 		},
@@ -1199,19 +1199,19 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			MMMMd => q{MMMM d},
-			MMdd => q{dd-MM},
-			yMM => q{MM-y G},
-			yMMMM => q{MMMM y G},
-			yQQQ => q{QQQ y G},
-		},
 		'gregorian' => {
 			MMMMd => q{MMMM d},
 			MMdd => q{dd-MM},
 			yMM => q{MM-y},
 			yMMMM => q{MMMM y},
 			yQQQ => q{QQQ y},
+		},
+		'generic' => {
+			MMMMd => q{MMMM d},
+			MMdd => q{dd-MM},
+			yMM => q{MM-y G},
+			yMMMM => q{MMMM y G},
+			yQQQ => q{QQQ y G},
 		},
 	} },
 );

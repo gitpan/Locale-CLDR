@@ -1,9 +1,9 @@
 package Locale::CLDR::Fur v0.25.1;
 # This file auto generated from Data\common\main\fur.xml
-#	on Sat 10 May 11:58:17 am GMT
+#	on Sat 10 May 10:52:43 pm GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -1514,8 +1514,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{p.},
 					'am' => q{a.},
+					'pm' => q{p.},
 				},
 			},
 		},

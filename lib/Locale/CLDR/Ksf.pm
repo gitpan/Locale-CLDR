@@ -1,9 +1,9 @@
 package Locale::CLDR::Ksf v0.25.1;
 # This file auto generated from Data\common\main\ksf.xml
-#	on Sat 10 May 12:37:01 pm GMT
+#	on Sat 10 May 11:32:27 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

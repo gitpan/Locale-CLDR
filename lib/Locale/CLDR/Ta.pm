@@ -1,9 +1,9 @@
 package Locale::CLDR::Ta v0.25.1;
 # This file auto generated from Data\common\main\ta.xml
-#	on Sat 10 May  1:35:58 pm GMT
+#	on Sun 11 May 12:33:21 am GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -3397,47 +3397,47 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'generic') {
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1400;
-				return 'evening' if $time >= 1800
-					&& $time < 2200;
+			if ($_ eq 'chinese') {
 				return 'afternoon' if $time >= 1400
 					&& $time < 1800;
 				return 'night' if $time >= 2200
 					&& $time < 200;
 				return 'morning' if $time >= 600
 					&& $time < 1000;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1400;
+				return 'evening' if $time >= 1800
+					&& $time < 2200;
+				return 'earlyMorning' if $time >= 200
+					&& $time < 600;
+			last SWITCH;
+			}
+			if ($_ eq 'generic') {
+				return 'afternoon' if $time >= 1400
+					&& $time < 1800;
+				return 'night' if $time >= 2200
+					&& $time < 200;
+				return 'morning' if $time >= 600
+					&& $time < 1000;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1400;
+				return 'evening' if $time >= 1800
+					&& $time < 2200;
 				return 'earlyMorning' if $time >= 200
 					&& $time < 600;
 			last SWITCH;
 			}
 			if ($_ eq 'gregorian') {
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1400;
-				return 'evening' if $time >= 1800
-					&& $time < 2200;
 				return 'afternoon' if $time >= 1400
 					&& $time < 1800;
 				return 'night' if $time >= 2200
 					&& $time < 200;
 				return 'morning' if $time >= 600
 					&& $time < 1000;
-				return 'earlyMorning' if $time >= 200
-					&& $time < 600;
-			last SWITCH;
-			}
-			if ($_ eq 'chinese') {
 				return 'lateMorning' if $time >= 1000
 					&& $time < 1400;
 				return 'evening' if $time >= 1800
 					&& $time < 2200;
-				return 'afternoon' if $time >= 1400
-					&& $time < 1800;
-				return 'night' if $time >= 2200
-					&& $time < 200;
-				return 'morning' if $time >= 600
-					&& $time < 1000;
 				return 'earlyMorning' if $time >= 200
 					&& $time < 600;
 			last SWITCH;
@@ -3453,6 +3453,10 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
+				'abbreviated' => {
+					'am' => q{முற்பகல்},
+					'pm' => q{பிற்பகல்},
+				},
 				'narrow' => {
 					'pm' => q{PM},
 					'am' => q{AM},
@@ -3460,10 +3464,6 @@ has 'day_periods' => (
 				'wide' => {
 					'pm' => q{பிற்பகல்},
 					'am' => q{முற்பகல்},
-				},
-				'abbreviated' => {
-					'am' => q{முற்பகல்},
-					'pm' => q{பிற்பகல்},
 				},
 			},
 		},

@@ -1,9 +1,9 @@
 package Locale::CLDR::Tr v0.25.1;
 # This file auto generated from Data\common\main\tr.xml
-#	on Sat 10 May  1:43:21 pm GMT
+#	on Sun 11 May 12:40:46 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

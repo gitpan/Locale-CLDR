@@ -1,9 +1,9 @@
 package Locale::CLDR::Ka v0.25.1;
 # This file auto generated from Data\common\main\ka.xml
-#	on Sat 10 May 12:22:49 pm GMT
+#	on Sat 10 May 11:17:51 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -4190,20 +4190,20 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'noon' => q{შუადღე},
-					'pm' => q{საღამოს},
-					'am' => q{დილის},
-				},
 				'abbreviated' => {
 					'noon' => q{შუადღე},
 					'pm' => q{PM},
 					'am' => q{AM},
 				},
 				'narrow' => {
-					'noon' => q{შუადღე},
-					'pm' => q{PM},
 					'am' => q{AM},
+					'pm' => q{PM},
+					'noon' => q{შუადღე},
+				},
+				'wide' => {
+					'am' => q{დილის},
+					'pm' => q{საღამოს},
+					'noon' => q{შუადღე},
 				},
 			},
 		},

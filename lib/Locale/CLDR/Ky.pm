@@ -1,9 +1,9 @@
 package Locale::CLDR::Ky v0.25.1;
 # This file auto generated from Data\common\main\ky.xml
-#	on Sat 10 May 12:37:38 pm GMT
+#	on Sat 10 May 11:33:04 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

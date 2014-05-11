@@ -1,9 +1,9 @@
 package Locale::CLDR::Transformations::Any::Interindic::Kannada v0.25.1;
 # This file auto generated from Data\common\transforms\InterIndic-Kannada.xml
-#	on Sat 10 May 11:08:17 am GMT
+#	on Sat 10 May 10:01:43 pm GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

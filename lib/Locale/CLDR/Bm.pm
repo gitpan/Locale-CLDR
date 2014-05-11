@@ -1,9 +1,9 @@
 package Locale::CLDR::Bm v0.25.1;
 # This file auto generated from Data\common\main\bm.xml
-#	on Sat 10 May 11:19:40 am GMT
+#	on Sat 10 May 10:13:22 pm GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

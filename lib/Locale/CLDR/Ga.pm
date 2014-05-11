@@ -1,9 +1,9 @@
 package Locale::CLDR::Ga v0.25.1;
 # This file auto generated from Data\common\main\ga.xml
-#	on Sat 10 May 12:00:09 pm GMT
+#	on Sat 10 May 10:54:38 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -2120,24 +2120,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			Ed => q{E d},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E d MMM y G},
-			GyMMMd => q{d MMM y G},
-			M => q{LL},
-			MEd => q{E dd/MM},
-			MMMEd => q{E d MMM},
-			MMMd => q{d MMM},
-			Md => q{dd/MM},
-			yM => q{MM/y},
-			yMEd => q{E dd/MM/y},
-			yMMM => q{MMM y},
-			yMMMEd => q{E d MMM y},
-			yMMMd => q{d MMM y},
-			yMd => q{dd/MM/y},
-		},
 		'generic' => {
 			Ed => q{E d},
 			Gy => q{y G},
@@ -2155,6 +2137,24 @@ has 'datetime_formats_available_formats' => (
 			yyyyMMMEd => q{E d MMM y G},
 			yyyyMMMd => q{d MMM y G},
 			yyyyMd => q{dd/MM/y GGGGG},
+		},
+		'gregorian' => {
+			Ed => q{E d},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E d MMM y G},
+			GyMMMd => q{d MMM y G},
+			M => q{LL},
+			MEd => q{E dd/MM},
+			MMMEd => q{E d MMM},
+			MMMd => q{d MMM},
+			Md => q{dd/MM},
+			yM => q{MM/y},
+			yMEd => q{E dd/MM/y},
+			yMMM => q{MMM y},
+			yMMMEd => q{E d MMM y},
+			yMMMd => q{d MMM y},
+			yMd => q{dd/MM/y},
 		},
 	} },
 );

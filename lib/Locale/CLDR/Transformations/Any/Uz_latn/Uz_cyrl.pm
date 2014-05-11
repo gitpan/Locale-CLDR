@@ -1,9 +1,9 @@
 package Locale::CLDR::Transformations::Any::Uz_latn::Uz_cyrl v0.25.1;
 # This file auto generated from Data\common\transforms\uz_Cyrl-uz_Latn.xml
-#	on Sat 10 May 11:08:35 am GMT
+#	on Sat 10 May 10:01:59 pm GMT
 # XML file generated 2013-08-01 22:51:25 -0500 (Thu, 01 Aug 2013)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

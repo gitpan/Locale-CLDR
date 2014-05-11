@@ -1,6 +1,6 @@
 package Locale::CLDR::Xog::Any v0.25.1;
 # This file auto generated
-#	on Sat 10 May  1:54:11 pm GMT
+#	on Sun 11 May 12:51:40 am GMT
 
 use v5.18;
 use mro 'c3';

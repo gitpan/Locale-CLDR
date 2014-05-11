@@ -1,9 +1,9 @@
 package Locale::CLDR::Currencies v0.25.1;
 # This file auto generated from Data.xml
-#	on Sat 10 May 11:07:41 am GMT
+#	on Sat 10 May 10:01:07 pm GMT
 # XML file generated 2014-03-13 15:53:16 -0500 (Thu, 13 Mar 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -411,7 +411,7 @@ has '_currency_fractions' => (
 			'cashdigits' => '0',
 			'cashrounding' => '0',
 		},
-\t} },
+	} },
 );
 
 sub currency_fractions {
@@ -430,10 +430,10 @@ sub currency_fractions {
 }
 
 has '_default_currency' => (
-\tis\t\t\t=> 'ro',
-\tisa\t\t\t=> 'HashRef',
-\tinit_arg\t=> undef,
-\tdefault\t\t=> sub { {
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
 
 				'150' => 'EUR',
 				'AC' => 'SHP',

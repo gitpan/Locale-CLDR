@@ -2,26 +2,26 @@
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
-  'EXE_FILES' => [],
-  'NAME' => 'Locale::CLDR',
-  'PREREQ_PM' => {
-                   'LWP' => '6.03',
-                   'File::Spec' => '3.33',
-                   'Test::More' => '0.98',
-                   'DateTime' => '0.72',
-                   'version' => '0.95',
-                   'MooseX::ClassAttribute' => '0.26',
-                   'XML::XPath' => '1.13',
-                   'ok' => 0,
-                   'Moose' => '2.0401',
-                   'Archive::Zip' => '1.30',
-                   'FindBin' => '1.50',
-                   'Test::Exception' => 0,
-                   'Archive::Extract' => '0.58',
-                   'XML::Parser' => '2.41'
-                 },
   'INSTALLDIRS' => 'site',
-  'PL_FILES' => {},
-  'VERSION_FROM' => 'lib/Locale/CLDR.pm'
+  'PREREQ_PM' => {
+                   'Archive::Extract' => '0.58',
+                   'Archive::Zip' => '1.30',
+                   'XML::XPath' => '1.13',
+                   'FindBin' => '1.50',
+                   'LWP' => '6.03',
+                   'XML::Parser' => '2.41',
+                   'version' => '0.95',
+                   'Test::More' => '0.98',
+                   'MooseX::ClassAttribute' => '0.26',
+                   'ok' => 0,
+                   'DateTime' => '0.72',
+                   'File::Spec' => '3.33',
+                   'Moose' => '2.0401',
+                   'Test::Exception' => 0
+                 },
+  'NAME' => 'Locale::CLDR',
+  'VERSION_FROM' => 'lib/Locale/CLDR.pm',
+  'EXE_FILES' => [],
+  'PL_FILES' => {}
 )
 ;

@@ -1,6 +1,6 @@
 package Locale::CLDR::Sah::Any v0.25.1;
 # This file auto generated
-#	on Sat 10 May  1:20:43 pm GMT
+#	on Sun 11 May 12:17:31 am GMT
 
 use v5.18;
 use mro 'c3';

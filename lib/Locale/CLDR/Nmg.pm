@@ -1,9 +1,9 @@
 package Locale::CLDR::Nmg v0.25.1;
 # This file auto generated from Data\common\main\nmg.xml
-#	on Sat 10 May  1:05:29 pm GMT
+#	on Sun 11 May 12:01:46 am GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

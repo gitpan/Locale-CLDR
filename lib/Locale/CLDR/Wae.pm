@@ -1,9 +1,9 @@
 package Locale::CLDR::Wae v0.25.1;
 # This file auto generated from Data\common\main\wae.xml
-#	on Sat 10 May  1:54:04 pm GMT
+#	on Sun 11 May 12:51:33 am GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -1071,7 +1071,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d.},
 			M => q{LLL},
 			MEd => q{E, d. MMM},
@@ -1085,7 +1085,7 @@ has 'datetime_formats_available_formats' => (
 			yMMMEd => q{E, d. MMM y},
 			yMMMd => q{d. MMM y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d.},
 			M => q{LLL},
 			MEd => q{E, d. MMM},
@@ -1115,7 +1115,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH - HH},
 			},
@@ -1210,7 +1210,7 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd - y-MM-dd},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH - HH},
 			},

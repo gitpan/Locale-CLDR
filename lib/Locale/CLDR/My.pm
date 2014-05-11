@@ -1,9 +1,9 @@
 package Locale::CLDR::My v0.25.1;
 # This file auto generated from Data\common\main\my.xml
-#	on Sat 10 May 12:57:48 pm GMT
+#	on Sat 10 May 11:53:53 pm GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -2755,8 +2755,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{နံနက်},
 					'pm' => q{ညနေ},
+					'am' => q{နံနက်},
 				},
 			},
 		},

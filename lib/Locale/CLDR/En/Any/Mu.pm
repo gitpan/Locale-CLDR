@@ -1,9 +1,9 @@
 package Locale::CLDR::En::Any::Mu v0.25.1;
 # This file auto generated from Data\common\main\en_MU.xml
-#	on Sat 10 May 11:45:25 am GMT
+#	on Sat 10 May 10:39:33 pm GMT
 # XML file generated 2013-08-07 23:47:50 -0500 (Wed, 07 Aug 2013)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

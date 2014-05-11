@@ -1,9 +1,9 @@
 package Locale::CLDR::Ko v0.25.1;
 # This file auto generated from Data\common\main\ko.xml
-#	on Sat 10 May 12:31:50 pm GMT
+#	on Sat 10 May 11:27:08 pm GMT
 # XML file generated 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -4485,42 +4485,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'chinese' => {
-			EEEEd => q{d일 EEEE},
-			Ed => q{d일 (E)},
-			Gy => q{U년},
-			GyMMM => q{U년 MMM},
-			GyMMMEEEEd => q{U년 MMM d일 EEEE},
-			GyMMMEd => q{U년 MMM d일 (E)},
-			GyMMMd => q{U년 MMM d일},
-			H => q{H시},
-			Hms => q{H시 m분 s초},
-			M => q{M월},
-			MEEEEd => q{M. d. EEEE},
-			MEd => q{M. d. (E)},
-			MMM => q{LLL},
-			MMMEEEEd => q{MMM d일 EEEE},
-			MMMEd => q{MMM d일 (E)},
-			MMMd => q{MMM d일},
-			Md => q{M. d.},
-			d => q{d일},
-			h => q{a h시},
-			hm => q{a h:mm},
-			hms => q{a h:mm:ss},
-			y => q{U년},
-			yMd => q{U. M. d.},
-			yyyy => q{U년},
-			yyyyM => q{U. M.},
-			yyyyMEEEEd => q{U. M. d. EEEE},
-			yyyyMEd => q{U. M. d. (E)},
-			yyyyMMM => q{U년 MMM},
-			yyyyMMMEEEEd => q{U년 MMM d일 EEEE},
-			yyyyMMMEd => q{U년 MMM d일 (E)},
-			yyyyMMMd => q{U년 MMM d일},
-			yyyyMd => q{U. M. d.},
-			yyyyQQQ => q{U년 QQQ},
-			yyyyQQQQ => q{U년 QQQQ},
-		},
 		'gregorian' => {
 			EEEEd => q{d일 EEEE},
 			EHm => q{(E) HH:mm},
@@ -4601,6 +4565,42 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{G y. M. d.},
 			yyyyQQQ => q{G y년 QQQ},
 			yyyyQQQQ => q{G y년 QQQQ},
+		},
+		'chinese' => {
+			EEEEd => q{d일 EEEE},
+			Ed => q{d일 (E)},
+			Gy => q{U년},
+			GyMMM => q{U년 MMM},
+			GyMMMEEEEd => q{U년 MMM d일 EEEE},
+			GyMMMEd => q{U년 MMM d일 (E)},
+			GyMMMd => q{U년 MMM d일},
+			H => q{H시},
+			Hms => q{H시 m분 s초},
+			M => q{M월},
+			MEEEEd => q{M. d. EEEE},
+			MEd => q{M. d. (E)},
+			MMM => q{LLL},
+			MMMEEEEd => q{MMM d일 EEEE},
+			MMMEd => q{MMM d일 (E)},
+			MMMd => q{MMM d일},
+			Md => q{M. d.},
+			d => q{d일},
+			h => q{a h시},
+			hm => q{a h:mm},
+			hms => q{a h:mm:ss},
+			y => q{U년},
+			yMd => q{U. M. d.},
+			yyyy => q{U년},
+			yyyyM => q{U. M.},
+			yyyyMEEEEd => q{U. M. d. EEEE},
+			yyyyMEd => q{U. M. d. (E)},
+			yyyyMMM => q{U년 MMM},
+			yyyyMMMEEEEd => q{U년 MMM d일 EEEE},
+			yyyyMMMEd => q{U년 MMM d일 (E)},
+			yyyyMMMd => q{U년 MMM d일},
+			yyyyMd => q{U. M. d.},
+			yyyyQQQ => q{U년 QQQ},
+			yyyyQQQQ => q{U년 QQQQ},
 		},
 	} },
 );

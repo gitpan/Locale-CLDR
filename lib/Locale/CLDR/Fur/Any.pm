@@ -1,6 +1,6 @@
 package Locale::CLDR::Fur::Any v0.25.1;
 # This file auto generated
-#	on Sat 10 May 11:58:22 am GMT
+#	on Sat 10 May 10:52:49 pm GMT
 
 use v5.18;
 use mro 'c3';

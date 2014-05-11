@@ -1,9 +1,9 @@
 package Locale::CLDR::Transformations::Any::Bengali::Gurmukhi v0.25.1;
 # This file auto generated from Data\common\transforms\Bengali-Gurmukhi.xml
-#	on Sat 10 May 11:08:12 am GMT
+#	on Sat 10 May 10:01:38 pm GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

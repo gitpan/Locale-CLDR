@@ -1,9 +1,9 @@
 package Locale::CLDR::Rn::Any::Bi v0.25.1;
 # This file auto generated from Data\common\main\rn_BI.xml
-#	on Sat 10 May  1:15:50 pm GMT
+#	on Sun 11 May 12:12:29 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

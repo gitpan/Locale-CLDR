@@ -1,9 +1,9 @@
 package Locale::CLDR::Ff v0.25.1;
 # This file auto generated from Data\common\main\ff.xml
-#	on Sat 10 May 11:53:52 am GMT
+#	on Sat 10 May 10:48:12 pm GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

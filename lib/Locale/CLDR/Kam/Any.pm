@@ -1,6 +1,6 @@
 package Locale::CLDR::Kam::Any v0.25.1;
 # This file auto generated
-#	on Sat 10 May 12:25:21 pm GMT
+#	on Sat 10 May 11:20:28 pm GMT
 
 use v5.18;
 use mro 'c3';

@@ -1,6 +1,6 @@
 package Locale::CLDR::Khq::Any v0.25.1;
 # This file auto generated
-#	on Sat 10 May 12:25:36 pm GMT
+#	on Sat 10 May 11:20:42 pm GMT
 
 use v5.18;
 use mro 'c3';

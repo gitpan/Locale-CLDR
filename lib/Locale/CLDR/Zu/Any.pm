@@ -1,6 +1,6 @@
 package Locale::CLDR::Zu::Any v0.25.1;
 # This file auto generated
-#	on Sat 10 May  2:01:06 pm GMT
+#	on Sun 11 May 12:58:37 am GMT
 
 use v5.18;
 use mro 'c3';

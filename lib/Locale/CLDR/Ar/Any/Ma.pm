@@ -1,9 +1,9 @@
 package Locale::CLDR::Ar::Any::Ma v0.25.1;
 # This file auto generated from Data\common\main\ar_MA.xml
-#	on Sat 10 May 11:14:17 am GMT
+#	on Sat 10 May 10:07:48 pm GMT
 # XML file generated 2014-01-08 23:53:23 -0600 (Wed, 08 Jan 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

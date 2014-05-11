@@ -1,9 +1,9 @@
 package Locale::CLDR::Haw v0.25.1;
 # This file auto generated from Data\common\main\haw.xml
-#	on Sat 10 May 12:05:23 pm GMT
+#	on Sat 10 May 10:59:59 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

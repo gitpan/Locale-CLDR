@@ -1,9 +1,9 @@
 package Locale::CLDR::Ar::Any::Kw v0.25.1;
 # This file auto generated from Data\common\main\ar_KW.xml
-#	on Sat 10 May 11:14:17 am GMT
+#	on Sat 10 May 10:07:48 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

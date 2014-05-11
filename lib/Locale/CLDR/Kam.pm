@@ -1,9 +1,9 @@
 package Locale::CLDR::Kam v0.25.1;
 # This file auto generated from Data\common\main\kam.xml
-#	on Sat 10 May 12:25:18 pm GMT
+#	on Sat 10 May 11:20:24 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -812,8 +812,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{Ĩyawĩoo},
 					'am' => q{Ĩyakwakya},
+					'pm' => q{Ĩyawĩoo},
 				},
 			},
 		},
@@ -893,7 +893,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -916,7 +916,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},

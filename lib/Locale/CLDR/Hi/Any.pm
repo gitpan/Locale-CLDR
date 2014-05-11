@@ -1,6 +1,6 @@
 package Locale::CLDR::Hi::Any v0.25.1;
 # This file auto generated
-#	on Sat 10 May 12:09:55 pm GMT
+#	on Sat 10 May 11:04:35 pm GMT
 
 use v5.18;
 use mro 'c3';

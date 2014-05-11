@@ -1,9 +1,9 @@
 package Locale::CLDR::Transformations::Bgn::Amharic::Latin v0.25.1;
 # This file auto generated from Data\common\transforms\Amharic-Latin-BGN.xml
-#	on Sat 10 May 11:08:11 am GMT
+#	on Sat 10 May 10:01:37 pm GMT
 # XML file generated 2013-08-20 21:47:18 -0500 (Tue, 20 Aug 2013)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 

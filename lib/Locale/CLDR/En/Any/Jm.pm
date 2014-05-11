@@ -1,9 +1,9 @@
 package Locale::CLDR::En::Any::Jm v0.25.1;
 # This file auto generated from Data\common\main\en_JM.xml
-#	on Sat 10 May 11:45:23 am GMT
+#	on Sat 10 May 10:39:31 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -36,17 +36,17 @@ has 'day_period_data' => (
 			if ($_ eq 'gregorian') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
-				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
+				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'generic') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
-				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
+				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 		}

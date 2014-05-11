@@ -1,9 +1,9 @@
 package Locale::CLDR::Ia v0.25.1;
 # This file auto generated from Data\common\main\ia.xml
-#	on Sat 10 May 12:15:24 pm GMT
+#	on Sat 10 May 11:10:12 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -562,8 +562,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{a.m.},
 					'pm' => q{p.m.},
+					'am' => q{a.m.},
 				},
 			},
 		},

@@ -430,7 +430,7 @@ package $class v$VERSION;
 #\ton $now GMT
 # XML file generated $xml_generated
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
@@ -2242,7 +2242,7 @@ EOT
 	}
 	
 	say $file <<'EOT';
-\t} },
+	} },
 );
 
 sub currency_fractions {
@@ -2261,10 +2261,10 @@ sub currency_fractions {
 }
 
 has '_default_currency' => (
-\tis\t\t\t=> 'ro',
-\tisa\t\t\t=> 'HashRef',
-\tinit_arg\t=> undef,
-\tdefault\t\t=> sub { {
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
 EOT
 	
 	foreach my $territory (sort keys %default_currency) {

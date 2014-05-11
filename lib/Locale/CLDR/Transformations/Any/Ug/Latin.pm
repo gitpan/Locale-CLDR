@@ -1,9 +1,9 @@
 package Locale::CLDR::Transformations::Any::Ug::Latin v0.25.1;
 # This file auto generated from Data\common\transforms\ug-Latin.xml
-#	on Sat 10 May 11:08:35 am GMT
+#	on Sat 10 May 10:01:59 pm GMT
 # XML file generated 2014-02-27 11:17:08 -0600 (Thu, 27 Feb 2014)
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
 
