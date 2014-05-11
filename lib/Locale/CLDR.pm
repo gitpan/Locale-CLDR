@@ -2427,7 +2427,9 @@ sub unit {
 	$number = $self->format_number($number);
 	return $number unless $format;
 	
-	return $format =~ s/\{0\}/$number/gr;
+	$format =~ s/\{0\}/$number/g;
+	
+	return $format;
 }
 
 sub _unit_compound {
@@ -2466,7 +2468,9 @@ sub _unit_compound {
 	}
 	
 	$format =~ s/\{0\}/$dividend/g;
-	return $format =~ s/\{1\}/$divisor/gr;
+	$format =~ s/\{1\}/$divisor/g;
+	
+	return $format;
 }
 
 =item duration_unit($format, @data)
