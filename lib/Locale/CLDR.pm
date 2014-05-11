@@ -2707,7 +2707,8 @@ sub list {
 	}
 	
 	if (my $pattern = $list_data{scalar @data}) {
-		return $pattern=~s/\{([0-9]+)\}/$data[$1]/egr;
+		$pattern=~s/\{([0-9]+)\}/$data[$1]/eg;
+		return $pattern;
 	}
 	
 	my ($start, $middle, $end) = @list_data{qw( start middle end )};
