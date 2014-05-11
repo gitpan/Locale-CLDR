@@ -1,4 +1,8 @@
-package Locale::CLDR v0.25.1;
+package Locale::CLDR;
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 =encoding utf8
 
