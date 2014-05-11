@@ -2613,39 +2613,36 @@ sub transform {
 
 sub _transformation_transform {
 	my ($self, $text, $rules, $variant) = @_;
-	
-	use feature 'switch';
-	no warnings 'experimental';
-	
+		
 	foreach my $rule (@$rules) {
-		given (lc $rule->{to}) {
-			when ('nfc') {
+		for (lc $rule->{to}) {
+			if ($_ eq 'nfc') {
 				$text = Unicode::Normalize::NFC($text);
 			}
-			when ('nfd') {
+			elsif($_ eq 'nfd') {
 				$text = Unicode::Normalize::NFD($text);
 			}
-			when ('nfkd') {
+			elsif($_ eq 'nfkd') {
 				$text = Unicode::Normalize::NFKD($text);
 			}
-			when ('nfkc') {
+			elsif($_ eq 'nfkc') {
 				$text = Unicode::Normalize::NFKC($text);
 			}
-			when ('lower') {
+			elsif($_ eq 'lower') {
 				$text = lc($text);
 			}
-			when ('upper') {
+			elsif($_ eq 'upper') {
 				$text = uc($text);
 			}
-			when ('title') {
+			elsif($_ eq 'title') {
 				$text =~ s/(\X)/\u$1/g;
 			}
-			when ('null') {
+			elsif($_ eq 'null') {
 			}
-			when ('remove') {
+			elsif($_ eq 'remove') {
 				$text = '';
 			}
-			default {
+			else {
 				$text = $self->transform($text, $variant, $rule->{from}, $rule->to);
 			}
 		}
