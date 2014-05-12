@@ -1,6 +1,6 @@
 package Locale::CLDR::Transformations::Any::Latin::Arabic;
 # This file auto generated from Data\common\transforms\Arabic-Latin.xml
-#	on Mon 12 May  7:01:53 am GMT
+#	on Mon 12 May  8:27:02 pm GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
 use version;

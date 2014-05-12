@@ -4121,7 +4121,9 @@ sub format_number {
 sub add_currency_symbol {
 	my ($self, $format, $symbol) = @_;
 	
-	return $format =~ s/¤/$symbol/r;
+	$format =~ s/¤/$symbol/;
+	
+	return $format;
 }
 
 sub _get_currency_data {
