@@ -1,11 +1,16 @@
-package Locale::CLDR::En::Any::Ca v0.25.1;
+package Locale::CLDR::En::Any::Ca;
 # This file auto generated from Data\common\main\en_CA.xml
-#	on Sat 10 May 10:39:24 pm GMT
+#	on Mon 12 May  7:39:09 am GMT
 # XML file generated 2013-11-22 17:21:44 -0600 (Fri, 22 Nov 2013)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 
@@ -36,20 +41,20 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'gregorian') {
+			if ($_ eq 'generic') {
+				return 'noon' if $time == 1200;
 				return 'am' if $time >= 000
 					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'generic') {
+			if ($_ eq 'gregorian') {
+				return 'noon' if $time == 1200;
 				return 'am' if $time >= 000
 					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 		}

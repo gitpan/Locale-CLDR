@@ -1,11 +1,16 @@
-package Locale::CLDR::Sah v0.25.1;
+package Locale::CLDR::Sah;
 # This file auto generated from Data\common\main\sah.xml
-#	on Sun 11 May 12:17:31 am GMT
+#	on Mon 12 May  9:15:39 am GMT
 # XML file generated 2013-08-10 01:39:57 -0500 (Sat, 10 Aug 2013)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 
@@ -373,8 +378,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ЭК},
 					'am' => q{ЭИ},
+					'pm' => q{ЭК},
 				},
 			},
 		},

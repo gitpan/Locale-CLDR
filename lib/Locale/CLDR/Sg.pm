@@ -1,11 +1,16 @@
-package Locale::CLDR::Sg v0.25.1;
+package Locale::CLDR::Sg;
 # This file auto generated from Data\common\main\sg.xml
-#	on Sun 11 May 12:17:48 am GMT
+#	on Mon 12 May  9:15:56 am GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

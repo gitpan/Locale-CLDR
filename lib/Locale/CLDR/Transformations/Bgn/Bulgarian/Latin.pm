@@ -1,11 +1,16 @@
-package Locale::CLDR::Transformations::Bgn::Bulgarian::Latin v0.25.1;
+package Locale::CLDR::Transformations::Bgn::Bulgarian::Latin;
 # This file auto generated from Data\common\transforms\Bulgarian-Latin-BGN.xml
-#	on Sat 10 May 10:01:38 pm GMT
+#	on Mon 12 May  7:01:53 am GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

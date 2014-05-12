@@ -1,11 +1,16 @@
-package Locale::CLDR::Chr v0.25.1;
+package Locale::CLDR::Chr;
 # This file auto generated from Data\common\main\chr.xml
-#	on Sat 10 May 10:26:03 pm GMT
+#	on Mon 12 May  7:25:59 am GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 
@@ -681,20 +686,20 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'generic') {
+			if ($_ eq 'gregorian') {
+				return 'noon' if $time == 1200;
 				return 'am' if $time >= 000
 					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'gregorian') {
+			if ($_ eq 'generic') {
+				return 'noon' if $time == 1200;
 				return 'am' if $time >= 000
 					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 		}
@@ -709,8 +714,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{ᏌᎾᎴ},
 					'noon' => q{ᎢᎦ},
+					'am' => q{ᏌᎾᎴ},
 					'pm' => q{ᏒᎯᏱᎢᏗᏢ},
 				},
 			},

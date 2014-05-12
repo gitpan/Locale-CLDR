@@ -1,11 +1,16 @@
-package Locale::CLDR::Rn::Any::Bi v0.25.1;
+package Locale::CLDR::Rn::Any::Bi;
 # This file auto generated from Data\common\main\rn_BI.xml
-#	on Sun 11 May 12:12:29 am GMT
+#	on Mon 12 May  9:10:44 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

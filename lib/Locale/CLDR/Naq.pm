@@ -1,11 +1,16 @@
-package Locale::CLDR::Naq v0.25.1;
+package Locale::CLDR::Naq;
 # This file auto generated from Data\common\main\naq.xml
-#	on Sat 10 May 11:56:02 pm GMT
+#	on Mon 12 May  8:54:35 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 
@@ -814,8 +819,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ǃuias},
 					'am' => q{ǁgoagas},
+					'pm' => q{ǃuias},
 				},
 			},
 		},

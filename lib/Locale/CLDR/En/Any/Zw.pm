@@ -1,11 +1,16 @@
-package Locale::CLDR::En::Any::Zw v0.25.1;
+package Locale::CLDR::En::Any::Zw;
 # This file auto generated from Data\common\main\en_ZW.xml
-#	on Sat 10 May 10:39:39 pm GMT
+#	on Mon 12 May  7:39:24 am GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 
@@ -21,20 +26,20 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'generic') {
+			if ($_ eq 'gregorian') {
+				return 'noon' if $time == 1200;
 				return 'am' if $time >= 000
 					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'gregorian') {
+			if ($_ eq 'generic') {
+				return 'noon' if $time == 1200;
 				return 'am' if $time >= 000
 					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 		}
@@ -102,16 +107,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			MEd => q{E d/M},
-			MMMEd => q{E dd MMM},
-			MMMd => q{dd MMM},
-			Md => q{d/M},
-			yMEd => q{E, d/M/y},
-			yMMMEd => q{E, dd MMM, y},
-			yMMMd => q{dd MMM, y},
-			yMd => q{d/M/y},
-		},
 		'generic' => {
 			MEd => q{E d/M},
 			MMMEd => q{E dd MMM},
@@ -121,6 +116,16 @@ has 'datetime_formats_available_formats' => (
 			yyyyMMMEd => q{E, dd MMM, y G},
 			yyyyMMMd => q{dd MMM, y G},
 			yyyyMd => q{d/M/y G},
+		},
+		'gregorian' => {
+			MEd => q{E d/M},
+			MMMEd => q{E dd MMM},
+			MMMd => q{dd MMM},
+			Md => q{d/M},
+			yMEd => q{E, d/M/y},
+			yMMMEd => q{E, dd MMM, y},
+			yMMMd => q{dd MMM, y},
+			yMd => q{d/M/y},
 		},
 	} },
 );
@@ -138,83 +143,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			M => {
-				M => q{M-M},
-			},
-			MEd => {
-				M => q{E d/M - E d/M},
-				d => q{E d/M - E d/M},
-			},
-			MMM => {
-				M => q{MMM-MMM},
-			},
-			MMMEd => {
-				M => q{E dd MMM - E dd MMM},
-				d => q{E dd - E dd MMM},
-			},
-			MMMd => {
-				M => q{dd MMM - dd MMM},
-				d => q{dd-dd MMM},
-			},
-			Md => {
-				M => q{d/M - d/M},
-				d => q{d/M - d/M},
-			},
-			d => {
-				d => q{d-d},
-			},
-			fallback => '{0} - {1}',
-			h => {
-				a => q{h a - h a},
-				h => q{h-h a},
-			},
-			hm => {
-				a => q{h:mm a - h:mm a},
-				h => q{h:mm-h:mm a},
-				m => q{h:mm-h:mm a},
-			},
-			hmv => {
-				a => q{h:mm a - h:mm a v},
-				h => q{h:mm-h:mm a v},
-				m => q{h:mm-h:mm a v},
-			},
-			hv => {
-				a => q{h a - h a v},
-				h => q{h-h a v},
-			},
-			y => {
-				y => q{y-y},
-			},
-			yM => {
-				M => q{M/y - M/y},
-				y => q{M/y - M/y},
-			},
-			yMEd => {
-				M => q{E d/M/y - E d/M/y},
-				d => q{E d/M/y - E d/M/y},
-				y => q{E d/M/y - E d/M/y},
-			},
-			yMMM => {
-				M => q{MMM-MMM y},
-				y => q{MMM y - MMM y},
-			},
-			yMMMEd => {
-				M => q{E dd MMM - E dd MMM y},
-				d => q{E dd - E dd MMM y},
-				y => q{E dd MMM y - E dd MMM y},
-			},
-			yMMMd => {
-				M => q{dd MMM - dd MMM y},
-				d => q{dd-dd MMM y},
-				y => q{dd MMM y - dd MMM y},
-			},
-			yMd => {
-				M => q{d/M/y - d/M/y},
-				d => q{d/M/y - d/M/y},
-				y => q{d/M/y - d/M/y},
-			},
-		},
 		'generic' => {
 			M => {
 				M => q{M-M},
@@ -290,6 +218,83 @@ has 'datetime_formats_interval' => (
 				M => q{d/M/y - d/M/y G},
 				d => q{d/M/y - d/M/y G},
 				y => q{d/M/y - d/M/y G},
+			},
+		},
+		'gregorian' => {
+			M => {
+				M => q{M-M},
+			},
+			MEd => {
+				M => q{E d/M - E d/M},
+				d => q{E d/M - E d/M},
+			},
+			MMM => {
+				M => q{MMM-MMM},
+			},
+			MMMEd => {
+				M => q{E dd MMM - E dd MMM},
+				d => q{E dd - E dd MMM},
+			},
+			MMMd => {
+				M => q{dd MMM - dd MMM},
+				d => q{dd-dd MMM},
+			},
+			Md => {
+				M => q{d/M - d/M},
+				d => q{d/M - d/M},
+			},
+			d => {
+				d => q{d-d},
+			},
+			fallback => '{0} - {1}',
+			h => {
+				a => q{h a - h a},
+				h => q{h-h a},
+			},
+			hm => {
+				a => q{h:mm a - h:mm a},
+				h => q{h:mm-h:mm a},
+				m => q{h:mm-h:mm a},
+			},
+			hmv => {
+				a => q{h:mm a - h:mm a v},
+				h => q{h:mm-h:mm a v},
+				m => q{h:mm-h:mm a v},
+			},
+			hv => {
+				a => q{h a - h a v},
+				h => q{h-h a v},
+			},
+			y => {
+				y => q{y-y},
+			},
+			yM => {
+				M => q{M/y - M/y},
+				y => q{M/y - M/y},
+			},
+			yMEd => {
+				M => q{E d/M/y - E d/M/y},
+				d => q{E d/M/y - E d/M/y},
+				y => q{E d/M/y - E d/M/y},
+			},
+			yMMM => {
+				M => q{MMM-MMM y},
+				y => q{MMM y - MMM y},
+			},
+			yMMMEd => {
+				M => q{E dd MMM - E dd MMM y},
+				d => q{E dd - E dd MMM y},
+				y => q{E dd MMM y - E dd MMM y},
+			},
+			yMMMd => {
+				M => q{dd MMM - dd MMM y},
+				d => q{dd-dd MMM y},
+				y => q{dd MMM y - dd MMM y},
+			},
+			yMd => {
+				M => q{d/M/y - d/M/y},
+				d => q{d/M/y - d/M/y},
+				y => q{d/M/y - d/M/y},
 			},
 		},
 	} },

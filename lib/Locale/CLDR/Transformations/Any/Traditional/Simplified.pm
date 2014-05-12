@@ -1,11 +1,16 @@
-package Locale::CLDR::Transformations::Any::Traditional::Simplified v0.25.1;
+package Locale::CLDR::Transformations::Any::Traditional::Simplified;
 # This file auto generated from Data\common\transforms\Simplified-Traditional.xml
-#	on Sat 10 May 10:01:52 pm GMT
+#	on Mon 12 May  7:02:07 am GMT
 # XML file generated 2014-02-11 22:47:57 -0600 (Tue, 11 Feb 2014)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

@@ -1,11 +1,16 @@
-package Locale::CLDR::Fr::Any::Be v0.25.1;
+package Locale::CLDR::Fr::Any::Be;
 # This file auto generated from Data\common\main\fr_BE.xml
-#	on Sat 10 May 10:52:38 pm GMT
+#	on Mon 12 May  7:52:13 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 
@@ -42,24 +47,24 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'generic') {
-				return 'morning' if $time >= 0000
-					&& $time < 1200;
-				return 'noon' if $time == 1200;
-				return 'night' if $time >= 1900
-					&& $time < 2400;
-				return 'afternoon' if $time > 1200
-					&& $time < 1900;
-			last SWITCH;
-			}
 			if ($_ eq 'gregorian') {
 				return 'morning' if $time >= 0000
 					&& $time < 1200;
-				return 'noon' if $time == 1200;
-				return 'night' if $time >= 1900
-					&& $time < 2400;
 				return 'afternoon' if $time > 1200
 					&& $time < 1900;
+				return 'night' if $time >= 1900
+					&& $time < 2400;
+				return 'noon' if $time == 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'generic') {
+				return 'morning' if $time >= 0000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1900;
+				return 'night' if $time >= 1900
+					&& $time < 2400;
+				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 		}

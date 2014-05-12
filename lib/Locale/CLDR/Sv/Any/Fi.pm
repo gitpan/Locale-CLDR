@@ -1,11 +1,16 @@
-package Locale::CLDR::Sv::Any::Fi v0.25.1;
+package Locale::CLDR::Sv::Any::Fi;
 # This file auto generated from Data\common\main\sv_FI.xml
-#	on Sun 11 May 12:32:29 am GMT
+#	on Mon 12 May  9:30:17 am GMT
 # XML file generated 2014-02-26 15:19:38 -0600 (Wed, 26 Feb 2014)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

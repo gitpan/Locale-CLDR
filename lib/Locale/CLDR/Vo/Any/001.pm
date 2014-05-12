@@ -1,11 +1,16 @@
-package Locale::CLDR::Vo::Any::001 v0.25.1;
+package Locale::CLDR::Vo::Any::001;
 # This file auto generated from Data\common\main\vo_001.xml
-#	on Sun 11 May 12:51:29 am GMT
+#	on Mon 12 May  9:49:19 am GMT
 # XML file generated 2013-08-24 16:19:30 -0500 (Sat, 24 Aug 2013)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

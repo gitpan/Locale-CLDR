@@ -42,6 +42,8 @@ or
 use v5.10;
 use open ':encoding(utf8)';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
+
 use Moose;
 use MooseX::ClassAttribute;
 with 'Locale::CLDR::ValidCodes', 'Locale::CLDR::EraBoundries', 'Locale::CLDR::WeekData', 
@@ -62,7 +64,7 @@ BEGIN {
 		*fc = \&CORE::fc;
 	}
 	else {
-		# This code taken from 
+		# This code taken from Unicode::CaseFold by Andrew Rodland
 		require Unicode::UCD;
 		*fc = sub {
 			my ($string) = @_;

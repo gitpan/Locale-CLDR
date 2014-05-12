@@ -1,11 +1,16 @@
-package Locale::CLDR::Tn v0.25.1;
+package Locale::CLDR::Tn;
 # This file auto generated from Data\common\main\tn.xml
-#	on Sun 11 May 12:40:34 am GMT
+#	on Mon 12 May  9:38:22 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

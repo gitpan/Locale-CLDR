@@ -1,11 +1,16 @@
-package Locale::CLDR::Transformations::Any::Tr::Upper v0.25.1;
+package Locale::CLDR::Transformations::Any::Tr::Upper;
 # This file auto generated from Data\common\transforms\tr-Upper.xml
-#	on Sat 10 May 10:01:59 pm GMT
+#	on Mon 12 May  7:02:14 am GMT
 # XML file generated 2013-03-01 08:26:02 -0600 (Fri, 01 Mar 2013)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

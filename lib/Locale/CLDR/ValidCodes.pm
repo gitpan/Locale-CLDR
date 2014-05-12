@@ -1,11 +1,16 @@
-package Locale::CLDR::ValidCodes v0.25.1;
+package Locale::CLDR::ValidCodes;
 # This file auto generated from Data\common\supplemental\supplementalMetadata.xml
-#	on Sat 10 May 10:01:02 pm GMT
+#	on Mon 12 May  7:01:17 am GMT
 # XML file generated 2014-03-03 15:14:02 -0600 (Mon, 03 Mar 2014)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose::Role;
 

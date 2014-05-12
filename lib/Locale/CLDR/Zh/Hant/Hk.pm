@@ -1,11 +1,16 @@
-package Locale::CLDR::Zh::Hant::Hk v0.25.1;
+package Locale::CLDR::Zh::Hant::Hk;
 # This file auto generated from Data\common\main\zh_Hant_HK.xml
-#	on Sun 11 May 12:57:53 am GMT
+#	on Mon 12 May  9:55:46 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 
@@ -662,79 +667,79 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
+			if ($_ eq 'buddhist') {
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+			last SWITCH;
+			}
 			if ($_ eq 'gregorian') {
 				return 'earlyMorning' if $time >= 400
 					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
 				return 'night' if $time >= 1800
 					&& $time < 2400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
 			last SWITCH;
 			}
 			if ($_ eq 'roc') {
 				return 'earlyMorning' if $time >= 400
 					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
 				return 'night' if $time >= 1800
 					&& $time < 2400;
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-			last SWITCH;
-			}
-			if ($_ eq 'generic') {
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
 				return 'midDay' if $time >= 1200
 					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
 			last SWITCH;
 			}
 			if ($_ eq 'chinese') {
 				return 'earlyMorning' if $time >= 400
 					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
 				return 'night' if $time >= 1800
 					&& $time < 2400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
 			last SWITCH;
 			}
-			if ($_ eq 'buddhist') {
+			if ($_ eq 'generic') {
 				return 'earlyMorning' if $time >= 400
 					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
 				return 'night' if $time >= 1800
 					&& $time < 2400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
 			last SWITCH;
 			}
 		}
@@ -842,6 +847,41 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'gregorian' => {
+			Ed => q{d E},
+			GyMMMEd => q{G y 年 M 月 d 日 (E)},
+			MEd => q{E, d/M},
+			MMMEd => q{M月d日 (E)},
+			MMdd => q{dd/MM},
+			Md => q{d/M},
+			yM => q{M/y},
+			yMEd => q{d/M/y（E）},
+			yMM => q{MM/y},
+			yMMM => q{y 年 M 月},
+			yMMMEd => q{y 年 M 月 d 日 (E)},
+			yMMMM => q{y 年 M 月},
+			yMMMd => q{y 年 M 月 d 日},
+			yMd => q{d/M/y},
+		},
+		'buddhist' => {
+			MEd => q{M-d（E）},
+			Md => q{M-d},
+		},
+		'generic' => {
+			Ed => q{d E},
+			GyMMM => q{G y 年 M 月},
+			GyMMMEd => q{G y 年 M 月 d 日 (E)},
+			MEd => q{E, d/M},
+			MMMEd => q{M 月 d 日 (E)},
+			MMMd => q{M 月 d 日},
+			Md => q{d/M},
+			yyyyM => q{M/yGGGGG},
+			yyyyMEd => q{E, d/M/yGGGGG},
+			yyyyMMMEd => q{G y 年 M 月 d 日 (E)},
+			yyyyMd => q{d/M/yGGGGG},
+			yyyyQQQ => q{G y 年第QQQ},
+			yyyyQQQQ => q{G y 年QQQQ},
+		},
 		'roc' => {
 			Gy => q{G y 年},
 			GyMMM => q{G y 年 M 月},
@@ -861,41 +901,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{d/M/yGGGGG},
 			yyyyQQQ => q{G y 年第QQQ},
 			yyyyQQQQ => q{G y 年QQQQ},
-		},
-		'gregorian' => {
-			Ed => q{d E},
-			GyMMMEd => q{G y 年 M 月 d 日 (E)},
-			MEd => q{E, d/M},
-			MMMEd => q{M月d日 (E)},
-			MMdd => q{dd/MM},
-			Md => q{d/M},
-			yM => q{M/y},
-			yMEd => q{d/M/y（E）},
-			yMM => q{MM/y},
-			yMMM => q{y 年 M 月},
-			yMMMEd => q{y 年 M 月 d 日 (E)},
-			yMMMM => q{y 年 M 月},
-			yMMMd => q{y 年 M 月 d 日},
-			yMd => q{d/M/y},
-		},
-		'generic' => {
-			Ed => q{d E},
-			GyMMM => q{G y 年 M 月},
-			GyMMMEd => q{G y 年 M 月 d 日 (E)},
-			MEd => q{E, d/M},
-			MMMEd => q{M 月 d 日 (E)},
-			MMMd => q{M 月 d 日},
-			Md => q{d/M},
-			yyyyM => q{M/yGGGGG},
-			yyyyMEd => q{E, d/M/yGGGGG},
-			yyyyMMMEd => q{G y 年 M 月 d 日 (E)},
-			yyyyMd => q{d/M/yGGGGG},
-			yyyyQQQ => q{G y 年第QQQ},
-			yyyyQQQQ => q{G y 年QQQQ},
-		},
-		'buddhist' => {
-			MEd => q{M-d（E）},
-			Md => q{M-d},
 		},
 	} },
 );

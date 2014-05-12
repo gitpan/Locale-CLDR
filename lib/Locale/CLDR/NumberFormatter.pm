@@ -1,8 +1,14 @@
-package Locale::CLDR::NumberFormatter v0.25.1;
+package Locale::CLDR::NumberFormatter;
 
-use v5.18;
+use version;
+
+our $VERSION = version->declare('v0.25.1');
+
+
+use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose::Role;
 

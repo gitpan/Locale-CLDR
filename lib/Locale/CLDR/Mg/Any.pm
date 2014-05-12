@@ -1,9 +1,15 @@
-package Locale::CLDR::Mg::Any v0.25.1;
-# This file auto generated
-#	on Sat 10 May 11:43:35 pm GMT
+package Locale::CLDR::Mg::Any;
 
-use v5.18;
+# This file auto generated
+#	on Mon 12 May  8:42:23 am GMT
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
+
+use v5.10;
 use mro 'c3';
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

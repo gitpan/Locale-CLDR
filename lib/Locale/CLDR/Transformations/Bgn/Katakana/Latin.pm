@@ -1,11 +1,16 @@
-package Locale::CLDR::Transformations::Bgn::Katakana::Latin v0.25.1;
+package Locale::CLDR::Transformations::Bgn::Katakana::Latin;
 # This file auto generated from Data\common\transforms\Katakana-Latin-BGN.xml
-#	on Sat 10 May 10:01:44 pm GMT
+#	on Mon 12 May  7:01:59 am GMT
 # XML file generated 2013-07-18 08:57:06 -0500 (Thu, 18 Jul 2013)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

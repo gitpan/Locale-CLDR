@@ -1,11 +1,16 @@
-package Locale::CLDR::Transformations::Any::La::La_fonipa v0.25.1;
+package Locale::CLDR::Transformations::Any::La::La_fonipa;
 # This file auto generated from Data\common\transforms\la-la_FONIPA.xml
-#	on Sat 10 May 10:01:57 pm GMT
+#	on Mon 12 May  7:02:12 am GMT
 # XML file generated 2014-02-27 01:17:53 -0600 (Thu, 27 Feb 2014)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

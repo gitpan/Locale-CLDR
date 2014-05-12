@@ -1,11 +1,16 @@
-package Locale::CLDR::Transformations::Names::Han::Latin v0.25.1;
+package Locale::CLDR::Transformations::Names::Han::Latin;
 # This file auto generated from Data\common\transforms\Han-Latin-Names.xml
-#	on Sat 10 May 10:01:41 pm GMT
+#	on Mon 12 May  7:01:56 am GMT
 # XML file generated 2013-08-16 22:59:01 -0500 (Fri, 16 Aug 2013)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

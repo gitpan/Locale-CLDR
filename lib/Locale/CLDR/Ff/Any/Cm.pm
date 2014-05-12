@@ -1,11 +1,16 @@
-package Locale::CLDR::Ff::Any::Cm v0.25.1;
+package Locale::CLDR::Ff::Any::Cm;
 # This file auto generated from Data\common\main\ff_CM.xml
-#	on Sat 10 May 10:48:15 pm GMT
+#	on Mon 12 May  7:47:53 am GMT
 # XML file generated 2014-01-06 13:01:35 -0600 (Mon, 06 Jan 2014)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

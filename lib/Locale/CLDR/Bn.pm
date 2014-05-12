@@ -1,11 +1,16 @@
-package Locale::CLDR::Bn v0.25.1;
+package Locale::CLDR::Bn;
 # This file auto generated from Data\common\main\bn.xml
-#	on Sat 10 May 10:13:27 pm GMT
+#	on Mon 12 May  7:13:25 am GMT
 # XML file generated 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

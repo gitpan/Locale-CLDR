@@ -1,11 +1,16 @@
-package Locale::CLDR::Ta::Any::Sg v0.25.1;
+package Locale::CLDR::Ta::Any::Sg;
 # This file auto generated from Data\common\main\ta_SG.xml
-#	on Sun 11 May 12:35:24 am GMT
+#	on Mon 12 May  9:33:10 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

@@ -3,25 +3,25 @@ use ExtUtils::MakeMaker;
 WriteMakefile
 (
   'PL_FILES' => {},
-  'EXE_FILES' => [],
-  'NAME' => 'Locale::CLDR',
-  'INSTALLDIRS' => 'site',
-  'VERSION_FROM' => 'lib/Locale/CLDR.pm',
   'PREREQ_PM' => {
-                   'XML::Parser' => '2.41',
-                   'MooseX::ClassAttribute' => '0.26',
+                   'Archive::Zip' => '1.30',
                    'Test::More' => '0.98',
-                   'ok' => 0,
-                   'Moose' => '2.0401',
-                   'version' => '0.95',
+                   'XML::XPath' => '1.13',
+                   'File::Spec' => '3.33',
                    'LWP' => '6.03',
                    'FindBin' => '1.50',
-                   'Archive::Zip' => '1.30',
                    'Archive::Extract' => '0.58',
+                   'Moose' => '2.0401',
+                   'version' => '0.95',
+                   'MooseX::ClassAttribute' => '0.26',
+                   'Test::Exception' => 0,
                    'DateTime' => '0.72',
-                   'File::Spec' => '3.33',
-                   'XML::XPath' => '1.13',
-                   'Test::Exception' => 0
-                 }
+                   'XML::Parser' => '2.41',
+                   'ok' => 0
+                 },
+  'NAME' => 'Locale::CLDR',
+  'EXE_FILES' => [],
+  'INSTALLDIRS' => 'site',
+  'VERSION_FROM' => 'lib/Locale/CLDR.pm'
 )
 ;

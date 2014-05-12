@@ -1,11 +1,16 @@
-package Locale::CLDR::Ar::Any::Ma v0.25.1;
+package Locale::CLDR::Ar::Any::Ma;
 # This file auto generated from Data\common\main\ar_MA.xml
-#	on Sat 10 May 10:07:48 pm GMT
+#	on Mon 12 May  7:07:57 am GMT
 # XML file generated 2014-01-08 23:53:23 -0600 (Wed, 08 Jan 2014)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

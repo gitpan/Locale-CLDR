@@ -4,7 +4,7 @@ use v5.10;
 use strict;
 use warnings;
 use utf8;
-use feature 'unicode_strings';
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Test::More tests => 4;
 use Test::Exception;

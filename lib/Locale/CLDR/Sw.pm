@@ -1,11 +1,16 @@
-package Locale::CLDR::Sw v0.25.1;
+package Locale::CLDR::Sw;
 # This file auto generated from Data\common\main\sw.xml
-#	on Sun 11 May 12:32:30 am GMT
+#	on Mon 12 May  9:30:18 am GMT
 # XML file generated 2014-02-26 14:43:57 -0600 (Wed, 26 Feb 2014)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 
@@ -2807,8 +2812,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{AM},
 					'pm' => q{PM},
+					'am' => q{AM},
 				},
 			},
 		},

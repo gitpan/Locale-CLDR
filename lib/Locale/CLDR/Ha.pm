@@ -1,11 +1,16 @@
-package Locale::CLDR::Ha v0.25.1;
+package Locale::CLDR::Ha;
 # This file auto generated from Data\common\main\ha.xml
-#	on Sat 10 May 10:59:56 pm GMT
+#	on Mon 12 May  7:59:26 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

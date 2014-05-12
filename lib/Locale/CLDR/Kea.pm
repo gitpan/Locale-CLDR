@@ -1,11 +1,16 @@
-package Locale::CLDR::Kea v0.25.1;
+package Locale::CLDR::Kea;
 # This file auto generated from Data\common\main\kea.xml
-#	on Sat 10 May 11:20:32 pm GMT
+#	on Mon 12 May  8:19:46 am GMT
 # XML file generated 2013-11-15 12:32:44 -0600 (Fri, 15 Nov 2013)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 
@@ -1480,8 +1485,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{am},
 					'pm' => q{pm},
+					'am' => q{am},
 				},
 			},
 		},

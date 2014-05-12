@@ -1,11 +1,16 @@
-package Locale::CLDR::Nnh v0.25.1;
+package Locale::CLDR::Nnh;
 # This file auto generated from Data\common\main\nnh.xml
-#	on Sun 11 May 12:02:55 am GMT
+#	on Mon 12 May  9:01:23 am GMT
 # XML file generated 2013-08-30 23:19:50 -0500 (Fri, 30 Aug 2013)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

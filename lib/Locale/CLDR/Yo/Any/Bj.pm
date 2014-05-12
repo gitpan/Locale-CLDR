@@ -1,11 +1,16 @@
-package Locale::CLDR::Yo::Any::Bj v0.25.1;
+package Locale::CLDR::Yo::Any::Bj;
 # This file auto generated from Data\common\main\yo_BJ.xml
-#	on Sun 11 May 12:51:45 am GMT
+#	on Mon 12 May  9:49:36 am GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

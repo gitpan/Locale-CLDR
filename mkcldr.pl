@@ -391,12 +391,18 @@ sub process_class_any {
         my $now = DateTime->now->strftime('%a %e %b %l:%M:%S %P');
         open my $file, '>:utf8', "$lib_path.pm";
         print $file <<EOT;
-package $package v$VERSION;
+package $package;
+
 # This file auto generated
 #\ton $now GMT
 
-use v5.18;
+use version;
+
+our \$VERSION = version->declare('v$VERSION');
+
+use v5.10;
 use mro 'c3';
+use if \$^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 
@@ -425,14 +431,19 @@ sub process_header {
     $xml_generated=~s/^\$Date: (.*) \$$/$1/;
 
 	my $header = <<EOT;
-package $class v$VERSION;
+package $class;
 # This file auto generated from $xml_name
 #\ton $now GMT
 # XML file generated $xml_generated
 
+use version;
+
+our \$VERSION = version->declare('v$VERSION');
+
 use v5.10;
 use mro 'c3';
 use utf8;
+use if \$^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose$isRole;
 
@@ -4058,16 +4069,23 @@ sub write_out_number_formatter {
 	# write out the code for the CLDR::NumberFormater module
 	my $file = shift;
 	
-	say $file "package Locale::CLDR::NumberFormatter v$VERSION;";
+	say $file <<EOT;
+package Locale::CLDR::NumberFormatter;
+
+use version;
+
+our \$VERSION = version->declare('v$VERSION');
+EOT
 	binmode DATA, ':utf8';
 	print $file $_ while <DATA>;
 }
 
 __DATA__
 
-use v5.18;
+use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose::Role;
 

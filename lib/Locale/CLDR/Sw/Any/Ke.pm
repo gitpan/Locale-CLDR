@@ -1,11 +1,16 @@
-package Locale::CLDR::Sw::Any::Ke v0.25.1;
+package Locale::CLDR::Sw::Any::Ke;
 # This file auto generated from Data\common\main\sw_KE.xml
-#	on Sun 11 May 12:33:14 am GMT
+#	on Mon 12 May  9:31:01 am GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

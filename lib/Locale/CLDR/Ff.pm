@@ -1,11 +1,16 @@
-package Locale::CLDR::Ff v0.25.1;
+package Locale::CLDR::Ff;
 # This file auto generated from Data\common\main\ff.xml
-#	on Sat 10 May 10:48:12 pm GMT
+#	on Mon 12 May  7:47:50 am GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 
@@ -829,8 +834,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{kikiiɗe},
 					'am' => q{subaka},
+					'pm' => q{kikiiɗe},
 				},
 			},
 		},

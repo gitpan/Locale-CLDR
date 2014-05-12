@@ -1,11 +1,16 @@
-package Locale::CLDR::Te v0.25.1;
+package Locale::CLDR::Te;
 # This file auto generated from Data\common\main\te.xml
-#	on Sun 11 May 12:35:26 am GMT
+#	on Mon 12 May  9:33:12 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 
@@ -3550,59 +3555,59 @@ has 'day_period_data' => (
 		SWITCH:
 		for ($type) {
 			if ($_ eq 'islamic') {
+				return 'earlyMorning' if $time >= 300
+					&& $time < 600;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 1800
+					&& $time < 300;
 				return 'afternoon' if $time > 1200
 					&& $time < 1500;
 				return 'evening' if $time >= 1500
 					&& $time < 1800;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 600;
-				return 'night' if $time >= 1800
-					&& $time < 300;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'gregorian') {
+				return 'earlyMorning' if $time >= 300
+					&& $time < 600;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 1800
+					&& $time < 300;
 				return 'afternoon' if $time > 1200
 					&& $time < 1500;
 				return 'evening' if $time >= 1500
 					&& $time < 1800;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 600;
-				return 'night' if $time >= 1800
-					&& $time < 300;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'generic') {
-				return 'afternoon' if $time > 1200
-					&& $time < 1500;
-				return 'evening' if $time >= 1500
-					&& $time < 1800;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 600;
-				return 'night' if $time >= 1800
-					&& $time < 300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'indian') {
+				return 'earlyMorning' if $time >= 300
+					&& $time < 600;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 1800
+					&& $time < 300;
 				return 'afternoon' if $time > 1200
 					&& $time < 1500;
 				return 'evening' if $time >= 1500
 					&& $time < 1800;
-				return 'earlyMorning' if $time >= 300
-					&& $time < 600;
-				return 'night' if $time >= 1800
-					&& $time < 300;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'generic') {
+				return 'earlyMorning' if $time >= 300
+					&& $time < 600;
 				return 'noon' if $time == 1200;
+				return 'night' if $time >= 1800
+					&& $time < 300;
+				return 'afternoon' if $time > 1200
+					&& $time < 1500;
+				return 'evening' if $time >= 1500
+					&& $time < 1800;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
 			last SWITCH;
 			}
 		}
@@ -3617,14 +3622,14 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'morning' => q{మధ్యాహ్నం},
-					'pm' => q{PM},
-					'evening' => q{అర్ధరాత్రి},
-					'noon' => q{సాయంకాలం},
-					'night' => q{తెల్లవారుఝాము},
 					'earlyMorning' => q{ఉదయం},
-					'am' => q{AM},
 					'afternoon' => q{రాత్రి},
+					'am' => q{AM},
+					'pm' => q{PM},
+					'night' => q{తెల్లవారుఝాము},
+					'noon' => q{సాయంకాలం},
+					'morning' => q{మధ్యాహ్నం},
+					'evening' => q{అర్ధరాత్రి},
 				},
 				'narrow' => {
 					'am' => q{AM},

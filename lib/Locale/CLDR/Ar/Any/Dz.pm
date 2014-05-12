@@ -1,11 +1,16 @@
-package Locale::CLDR::Ar::Any::Dz v0.25.1;
+package Locale::CLDR::Ar::Any::Dz;
 # This file auto generated from Data\common\main\ar_DZ.xml
-#	on Sat 10 May 10:07:47 pm GMT
+#	on Mon 12 May  7:07:55 am GMT
 # XML file generated 2014-01-08 23:53:23 -0600 (Wed, 08 Jan 2014)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 
@@ -236,19 +241,19 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			MMdd => q{MM/dd},
-			Md => q{M/d},
-			yM => q{y/M},
-			yMM => q{y/MM},
-			yMd => q{y/M/d},
-		},
 		'generic' => {
 			MMdd => q{MM/dd},
 			Md => q{M/d},
 			yyyyM => q{G y/M},
 			yyyyMM => q{G y/MM},
 			yyyyMd => q{G y/M/d},
+		},
+		'gregorian' => {
+			MMdd => q{MM/dd},
+			Md => q{M/d},
+			yM => q{y/M},
+			yMM => q{y/MM},
+			yMd => q{y/M/d},
 		},
 	} },
 );
@@ -266,20 +271,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			M => {
-				M => q{M‏-M},
-			},
-			MMMd => {
-				d => q{d‏-d MMM},
-			},
-			d => {
-				d => q{d‏-d},
-			},
-			y => {
-				y => q{y‏-y},
-			},
-		},
 		'generic' => {
 			M => {
 				M => q{M‏-M},
@@ -292,6 +283,20 @@ has 'datetime_formats_interval' => (
 			},
 			y => {
 				y => q{G y‏-y},
+			},
+		},
+		'gregorian' => {
+			M => {
+				M => q{M‏-M},
+			},
+			MMMd => {
+				d => q{d‏-d MMM},
+			},
+			d => {
+				d => q{d‏-d},
+			},
+			y => {
+				y => q{y‏-y},
 			},
 		},
 	} },

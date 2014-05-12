@@ -1,11 +1,16 @@
-package Locale::CLDR::Ksf v0.25.1;
+package Locale::CLDR::Ksf;
 # This file auto generated from Data\common\main\ksf.xml
-#	on Sat 10 May 11:32:27 pm GMT
+#	on Mon 12 May  8:31:30 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 
@@ -823,8 +828,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{cɛɛ́nko},
 					'am' => q{sárúwá},
+					'pm' => q{cɛɛ́nko},
 				},
 			},
 		},

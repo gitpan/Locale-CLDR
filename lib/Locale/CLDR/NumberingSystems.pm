@@ -1,11 +1,16 @@
-package Locale::CLDR::NumberingSystems v0.25.1;
+package Locale::CLDR::NumberingSystems;
 # This file auto generated from Data\common\supplemental\numberingSystems.xml
-#	on Sat 10 May 10:01:02 pm GMT
+#	on Mon 12 May  7:01:17 am GMT
 # XML file generated 2014-02-13 11:57:02 -0600 (Thu, 13 Feb 2014)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose::Role;
 

@@ -1,11 +1,16 @@
-package Locale::CLDR::Fo::Any::Fo v0.25.1;
+package Locale::CLDR::Fo::Any::Fo;
 # This file auto generated from Data\common\main\fo_FO.xml
-#	on Sat 10 May 10:50:51 pm GMT
+#	on Mon 12 May  7:50:27 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 

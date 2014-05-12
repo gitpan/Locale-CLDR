@@ -1,11 +1,16 @@
-package Locale::CLDR::Ja v0.25.1;
+package Locale::CLDR::Ja;
 # This file auto generated from Data\common\main\ja.xml
-#	on Sat 10 May 11:14:43 pm GMT
+#	on Mon 12 May  8:14:03 am GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
+
+use version;
+
+our $VERSION = version->declare('v0.25.1');
 
 use v5.10;
 use mro 'c3';
 use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
 
@@ -5176,15 +5181,15 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'pm' => q{午後},
-					'noon' => q{正午},
-					'am' => q{午前},
-				},
 				'narrow' => {
 					'noon' => q{正午},
+					'am' => q{午前},
+					'pm' => q{午後},
+				},
+				'wide' => {
 					'pm' => q{午後},
 					'am' => q{午前},
+					'noon' => q{正午},
 				},
 			},
 		},
@@ -5894,19 +5899,13 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'roc' => {
-			M => q{M月},
-			MEd => q{M/d(E)},
-			MMM => q{M月},
-			MMMEd => q{M月d日(E)},
-			MMMd => q{M月d日},
-			Md => q{M/d},
-			d => q{d日},
-			y => q{Gy年},
-		},
-		'generic' => {
+		'gregorian' => {
 			EEEEd => q{d日EEEE},
+			EHm => q{HH 時 mm 分 (E)},
+			EHms => q{HH 時 mm 分 ss 秒 (E)},
 			Ed => q{d日(E)},
+			Ehm => q{a K 時 mm 分 (E)},
+			Ehms => q{a K 時 mm 分 ss 秒 (E)},
 			Gy => q{Gy年},
 			GyMMM => q{Gy年M月},
 			GyMMMEEEEd => q{Gy年M月d日EEEE},
@@ -5928,18 +5927,28 @@ has 'datetime_formats_available_formats' => (
 			hm => q{aK:mm},
 			hms => q{aK:mm:ss},
 			ms => q{mm:ss},
+			y => q{y年},
+			yM => q{y/M},
+			yMEEEEd => q{y/M/dEEEE},
+			yMEd => q{y/M/d(E)},
+			yMM => q{y/MM},
+			yMMM => q{y年M月},
+			yMMMEEEEd => q{y年M月d日EEEE},
+			yMMMEd => q{y年M月d日(E)},
+			yMMMd => q{y年M月d日},
+			yMd => q{y/M/d},
+			yQQQ => q{y/QQQ},
+			yQQQQ => q{yQQQQ},
+		},
+		'roc' => {
+			M => q{M月},
+			MEd => q{M/d(E)},
+			MMM => q{M月},
+			MMMEd => q{M月d日(E)},
+			MMMd => q{M月d日},
+			Md => q{M/d},
+			d => q{d日},
 			y => q{Gy年},
-			yyyy => q{Gy年},
-			yyyyM => q{Gy/M},
-			yyyyMEEEEd => q{Gy/M/dEEEE},
-			yyyyMEd => q{Gy/M/d(E)},
-			yyyyMMM => q{Gy年M月},
-			yyyyMMMEEEEd => q{Gy年M月d日EEEE},
-			yyyyMMMEd => q{Gy年M月d日(E)},
-			yyyyMMMd => q{Gy年M月d日},
-			yyyyMd => q{Gy/M/d},
-			yyyyQQQ => q{Gy/QQQ},
-			yyyyQQQQ => q{GyQQQQ},
 		},
 		'buddhist' => {
 			EEEEd => q{d日EEEE},
@@ -6013,6 +6022,53 @@ has 'datetime_formats_available_formats' => (
 			yyyyMMMd => q{Gy年M月d日},
 			yyyyMd => q{Gy/M/d},
 		},
+		'islamic' => {
+			M => q{M月},
+			MEd => q{M/d(E)},
+			MMM => q{M月},
+			MMMEd => q{M月d日(E)},
+			MMMd => q{M月d日},
+			Md => q{M/d},
+			d => q{d日},
+			y => q{Gy年},
+		},
+		'generic' => {
+			EEEEd => q{d日EEEE},
+			Ed => q{d日(E)},
+			Gy => q{Gy年},
+			GyMMM => q{Gy年M月},
+			GyMMMEEEEd => q{Gy年M月d日EEEE},
+			GyMMMEd => q{Gy年M月d日(E)},
+			GyMMMd => q{Gy年M月d日},
+			H => q{H時},
+			Hm => q{H:mm},
+			Hms => q{H:mm:ss},
+			M => q{M月},
+			MEEEEd => q{M/dEEEE},
+			MEd => q{M/d(E)},
+			MMM => q{M月},
+			MMMEEEEd => q{M月d日EEEE},
+			MMMEd => q{M月d日(E)},
+			MMMd => q{M月d日},
+			Md => q{M/d},
+			d => q{d日},
+			h => q{aK時},
+			hm => q{aK:mm},
+			hms => q{aK:mm:ss},
+			ms => q{mm:ss},
+			y => q{Gy年},
+			yyyy => q{Gy年},
+			yyyyM => q{Gy/M},
+			yyyyMEEEEd => q{Gy/M/dEEEE},
+			yyyyMEd => q{Gy/M/d(E)},
+			yyyyMMM => q{Gy年M月},
+			yyyyMMMEEEEd => q{Gy年M月d日EEEE},
+			yyyyMMMEd => q{Gy年M月d日(E)},
+			yyyyMMMd => q{Gy年M月d日},
+			yyyyMd => q{Gy/M/d},
+			yyyyQQQ => q{Gy/QQQ},
+			yyyyQQQQ => q{GyQQQQ},
+		},
 		'chinese' => {
 			EEEEd => q{d日EEEE},
 			Ed => q{d日(E)},
@@ -6049,57 +6105,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{U年QQQ},
 			yyyyQQQQ => q{U年QQQQ},
 		},
-		'islamic' => {
-			M => q{M月},
-			MEd => q{M/d(E)},
-			MMM => q{M月},
-			MMMEd => q{M月d日(E)},
-			MMMd => q{M月d日},
-			Md => q{M/d},
-			d => q{d日},
-			y => q{Gy年},
-		},
-		'gregorian' => {
-			EEEEd => q{d日EEEE},
-			EHm => q{HH 時 mm 分 (E)},
-			EHms => q{HH 時 mm 分 ss 秒 (E)},
-			Ed => q{d日(E)},
-			Ehm => q{a K 時 mm 分 (E)},
-			Ehms => q{a K 時 mm 分 ss 秒 (E)},
-			Gy => q{Gy年},
-			GyMMM => q{Gy年M月},
-			GyMMMEEEEd => q{Gy年M月d日EEEE},
-			GyMMMEd => q{Gy年M月d日(E)},
-			GyMMMd => q{Gy年M月d日},
-			H => q{H時},
-			Hm => q{H:mm},
-			Hms => q{H:mm:ss},
-			M => q{M月},
-			MEEEEd => q{M/dEEEE},
-			MEd => q{M/d(E)},
-			MMM => q{M月},
-			MMMEEEEd => q{M月d日EEEE},
-			MMMEd => q{M月d日(E)},
-			MMMd => q{M月d日},
-			Md => q{M/d},
-			d => q{d日},
-			h => q{aK時},
-			hm => q{aK:mm},
-			hms => q{aK:mm:ss},
-			ms => q{mm:ss},
-			y => q{y年},
-			yM => q{y/M},
-			yMEEEEd => q{y/M/dEEEE},
-			yMEd => q{y/M/d(E)},
-			yMM => q{y/MM},
-			yMMM => q{y年M月},
-			yMMMEEEEd => q{y年M月d日EEEE},
-			yMMMEd => q{y年M月d日(E)},
-			yMMMd => q{y年M月d日},
-			yMd => q{y/M/d},
-			yQQQ => q{y/QQQ},
-			yQQQQ => q{yQQQQ},
-		},
 	} },
 );
 
@@ -6119,6 +6124,104 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'gregorian' => {
+			H => {
+				H => q{H時～H時},
+			},
+			Hm => {
+				H => q{H時mm分～H時mm分},
+				m => q{H時mm分～H時mm分},
+			},
+			Hmv => {
+				H => q{H時mm分～H時mm分(v)},
+				m => q{H時mm分～H時mm分(v)},
+			},
+			Hv => {
+				H => q{H時～H時(v)},
+			},
+			M => {
+				M => q{M月～M月},
+			},
+			MEd => {
+				M => q{MM/dd(E)～MM/dd(E)},
+				d => q{MM/dd(E)～MM/dd(E)},
+			},
+			MMM => {
+				M => q{M月～M月},
+			},
+			MMMEd => {
+				M => q{M月d日(E)～M月d日(E)},
+				d => q{M月d日(E)～d日(E)},
+			},
+			MMMM => {
+				M => q{M月～M月},
+			},
+			MMMd => {
+				M => q{M月d日～M月d日},
+				d => q{M月d日～d日},
+			},
+			Md => {
+				M => q{MM/dd～MM/dd},
+				d => q{MM/dd～MM/dd},
+			},
+			d => {
+				d => q{d日～d日},
+			},
+			fallback => '{0}～{1}',
+			h => {
+				a => q{aK時～aK時},
+				h => q{aK時～K時},
+			},
+			hm => {
+				a => q{aK時mm分～aK時mm分},
+				h => q{aK時mm分～K時mm分},
+				m => q{aK時mm分～K時mm分},
+			},
+			hmv => {
+				a => q{aK時mm分～aK時mm分(v)},
+				h => q{aK時mm分～K時mm分(v)},
+				m => q{aK時mm分～K時mm分(v)},
+			},
+			hv => {
+				a => q{aK時～aK時(v)},
+				h => q{aK時～K時(v)},
+			},
+			y => {
+				y => q{y年～y年},
+			},
+			yM => {
+				M => q{y/MM～y/MM},
+				y => q{y/MM～y/MM},
+			},
+			yMEd => {
+				M => q{y/MM/dd(E)～y/MM/dd(E)},
+				d => q{y/MM/dd(E)～y/MM/dd(E)},
+				y => q{y/MM/dd(E)～y/MM/dd(E)},
+			},
+			yMMM => {
+				M => q{y年M月～M月},
+				y => q{y年M月～y年M月},
+			},
+			yMMMEd => {
+				M => q{y年M月d日(E)～M月d日(E)},
+				d => q{y年M月d日(E)～d日(E)},
+				y => q{y年M月d日(E)～y年M月d日(E)},
+			},
+			yMMMM => {
+				M => q{y年M月～M月},
+				y => q{y年M月～y年M月},
+			},
+			yMMMd => {
+				M => q{y年M月d日～M月d日},
+				d => q{y年M月d日～d日},
+				y => q{y年M月d日～y年M月d日},
+			},
+			yMd => {
+				M => q{y/MM/dd～y/MM/dd},
+				d => q{y/MM/dd～y/MM/dd},
+				y => q{y/MM/dd～y/MM/dd},
+			},
+		},
 		'generic' => {
 			H => {
 				H => q{H時～H時},
@@ -6313,104 +6416,6 @@ has 'datetime_formats_interval' => (
 				M => q{U/MM/dd～U/MM/dd},
 				d => q{U/MM/dd～U/MM/dd},
 				y => q{U/MM/dd～U/MM/dd},
-			},
-		},
-		'gregorian' => {
-			H => {
-				H => q{H時～H時},
-			},
-			Hm => {
-				H => q{H時mm分～H時mm分},
-				m => q{H時mm分～H時mm分},
-			},
-			Hmv => {
-				H => q{H時mm分～H時mm分(v)},
-				m => q{H時mm分～H時mm分(v)},
-			},
-			Hv => {
-				H => q{H時～H時(v)},
-			},
-			M => {
-				M => q{M月～M月},
-			},
-			MEd => {
-				M => q{MM/dd(E)～MM/dd(E)},
-				d => q{MM/dd(E)～MM/dd(E)},
-			},
-			MMM => {
-				M => q{M月～M月},
-			},
-			MMMEd => {
-				M => q{M月d日(E)～M月d日(E)},
-				d => q{M月d日(E)～d日(E)},
-			},
-			MMMM => {
-				M => q{M月～M月},
-			},
-			MMMd => {
-				M => q{M月d日～M月d日},
-				d => q{M月d日～d日},
-			},
-			Md => {
-				M => q{MM/dd～MM/dd},
-				d => q{MM/dd～MM/dd},
-			},
-			d => {
-				d => q{d日～d日},
-			},
-			fallback => '{0}～{1}',
-			h => {
-				a => q{aK時～aK時},
-				h => q{aK時～K時},
-			},
-			hm => {
-				a => q{aK時mm分～aK時mm分},
-				h => q{aK時mm分～K時mm分},
-				m => q{aK時mm分～K時mm分},
-			},
-			hmv => {
-				a => q{aK時mm分～aK時mm分(v)},
-				h => q{aK時mm分～K時mm分(v)},
-				m => q{aK時mm分～K時mm分(v)},
-			},
-			hv => {
-				a => q{aK時～aK時(v)},
-				h => q{aK時～K時(v)},
-			},
-			y => {
-				y => q{y年～y年},
-			},
-			yM => {
-				M => q{y/MM～y/MM},
-				y => q{y/MM～y/MM},
-			},
-			yMEd => {
-				M => q{y/MM/dd(E)～y/MM/dd(E)},
-				d => q{y/MM/dd(E)～y/MM/dd(E)},
-				y => q{y/MM/dd(E)～y/MM/dd(E)},
-			},
-			yMMM => {
-				M => q{y年M月～M月},
-				y => q{y年M月～y年M月},
-			},
-			yMMMEd => {
-				M => q{y年M月d日(E)～M月d日(E)},
-				d => q{y年M月d日(E)～d日(E)},
-				y => q{y年M月d日(E)～y年M月d日(E)},
-			},
-			yMMMM => {
-				M => q{y年M月～M月},
-				y => q{y年M月～y年M月},
-			},
-			yMMMd => {
-				M => q{y年M月d日～M月d日},
-				d => q{y年M月d日～d日},
-				y => q{y年M月d日～y年M月d日},
-			},
-			yMd => {
-				M => q{y/MM/dd～y/MM/dd},
-				d => q{y/MM/dd～y/MM/dd},
-				y => q{y/MM/dd～y/MM/dd},
 			},
 		},
 	} },
