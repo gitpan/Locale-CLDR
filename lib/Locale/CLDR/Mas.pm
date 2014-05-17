@@ -1,6 +1,6 @@
 package Locale::CLDR::Mas;
 # This file auto generated from Data\common\main\mas.xml
-#	on Mon 12 May  8:42:09 am GMT
+#	on Sat 17 May  3:55:29 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -329,7 +329,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[f q v x z])},
@@ -337,6 +339,10 @@ has 'characters' => (
 			main => qr{(?^u:[a á à â ā b c d e é è ê ē ɛ g h i í ì î ī ɨ j k l m n {ny} ŋ o ó ò ô ō ɔ p r {rr} s {sh} t u ú ù û ū ʉ {ʉ́} w {wu} y {yi}])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'E', 'Ɛ', 'G', 'H', 'I', 'Ɨ', 'J', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'Ɔ', 'P', 'R', 'S', 'T', 'U', 'Ʉ', 'W', 'Y'], };
+},
 );
 
 has 'quote_start' => (
@@ -809,8 +815,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{Ɛndámâ},
 					'am' => q{Ɛnkakɛnyá},
+					'pm' => q{Ɛndámâ},
 				},
 			},
 		},

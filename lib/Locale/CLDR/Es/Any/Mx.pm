@@ -1,6 +1,6 @@
 package Locale::CLDR::Es::Any::Mx;
 # This file auto generated from Data\common\main\es_MX.xml
-#	on Mon 12 May  7:41:17 am GMT
+#	on Sat 17 May  2:54:08 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -2975,8 +2975,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{p.m.},
 					'am' => q{a.m.},
+					'pm' => q{p.m.},
 				},
 			},
 		},

@@ -1,6 +1,6 @@
 package Locale::CLDR::Am;
 # This file auto generated from Data\common\main\am.xml
-#	on Mon 12 May  7:03:14 am GMT
+#	on Sat 17 May  2:15:27 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
@@ -844,7 +844,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			index => ['ሀ', 'ለ', 'ሐ', 'መ', 'ሠ', 'ረ', 'ሰ', 'ሸ', 'ቀ', 'ቈ', 'በ', 'ቨ', 'ተ', 'ቸ', 'ኀ', 'ኈ', 'ነ', 'ኘ', 'አ', 'ከ', 'ኰ', 'ኸ', 'ወ', 'ዐ', 'ዘ', 'ዠ', 'የ', 'ደ', 'ጀ', 'ገ', 'ጐ', 'ጠ', 'ጨ', 'ጰ', 'ጸ', 'ፀ', 'ፈ', 'ፐ'],
@@ -852,6 +854,10 @@ has 'characters' => (
 			punctuation => qr{(?^u:[‐ – , ፡ ፣ ፤ ፥ ፦ ! ? . ። ‹ › « » ( ) \[ \]])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['ሀ', 'ለ', 'ሐ', 'መ', 'ሠ', 'ረ', 'ሰ', 'ሸ', 'ቀ', 'ቈ', 'በ', 'ቨ', 'ተ', 'ቸ', 'ኀ', 'ኈ', 'ነ', 'ኘ', 'አ', 'ከ', 'ኰ', 'ኸ', 'ወ', 'ዐ', 'ዘ', 'ዠ', 'የ', 'ደ', 'ጀ', 'ገ', 'ጐ', 'ጠ', 'ጨ', 'ጰ', 'ጸ', 'ፀ', 'ፈ', 'ፐ'], };
+},
 );
 
 has 'ellipsis' => (
@@ -3318,8 +3324,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ከሰዓት},
 					'am' => q{ጥዋት},
+					'pm' => q{ከሰዓት},
 				},
 			},
 		},

@@ -1,6 +1,6 @@
 package Locale::CLDR::Mgh;
 # This file auto generated from Data\common\main\mgh.xml
-#	on Mon 12 May  8:42:23 am GMT
+#	on Sat 17 May  3:55:43 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
@@ -228,7 +228,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[q x])},
@@ -236,6 +238,10 @@ has 'characters' => (
 			main => qr{(?^u:[a b c d e f g h i j k l m n o p r s t u v w y z])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'Y', 'Z'], };
+},
 );
 
 has 'yesstr' => (
@@ -405,8 +411,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{mchochil'l},
 					'am' => q{wichishu},
+					'pm' => q{mchochil'l},
 				},
 			},
 		},

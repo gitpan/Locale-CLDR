@@ -1,6 +1,6 @@
 package Locale::CLDR::Eo;
 # This file auto generated from Data\common\main\eo.xml
-#	on Mon 12 May  7:39:24 am GMT
+#	on Sat 17 May  2:52:13 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
@@ -426,7 +426,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[q w x y])},
@@ -434,6 +436,10 @@ has 'characters' => (
 			main => qr{(?^u:[a b c ĉ d e f g ĝ h ĥ i j ĵ k l m n o p r s ŝ t u ŭ v z])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'Ĉ', 'D', 'E', 'F', 'G', 'Ĝ', 'H', 'Ĥ', 'I', 'J', 'Ĵ', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'Ŝ', 'T', 'U', 'Ŭ', 'V', 'Z'], };
+},
 );
 
 has 'number_symbols' => (
@@ -656,8 +662,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ptm},
 					'am' => q{atm},
+					'pm' => q{ptm},
 				},
 			},
 		},
@@ -749,93 +755,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			H => {
-				H => q{HH-HH},
-			},
-			Hm => {
-				H => q{HH:mm-HH:mm},
-				m => q{HH:mm-HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm-HH:mm v},
-				m => q{HH:mm-HH:mm v},
-			},
-			Hv => {
-				H => q{HH-HH v},
-			},
-			M => {
-				M => q{M-M},
-			},
-			MEd => {
-				M => q{E, MM-dd - E, MM-dd},
-				d => q{E, MM-dd - E, MM-dd},
-			},
-			MMM => {
-				M => q{MMM-MMM},
-			},
-			MMMEd => {
-				M => q{E, MMM-dd - E, MMM-dd},
-				d => q{E, MMM-dd - E, MMM-dd},
-			},
-			MMMd => {
-				M => q{MMM-dd - MMM-dd},
-				d => q{MMM-dd - MMM-dd},
-			},
-			Md => {
-				M => q{MM-dd - MM-dd},
-				d => q{MM-dd - MM-dd},
-			},
-			d => {
-				d => q{d-d},
-			},
-			fallback => '{0} - {1}',
-			h => {
-				h => q{h-h a},
-			},
-			hm => {
-				h => q{h:mm-h:mm a},
-				m => q{h:mm-h:mm a},
-			},
-			hmv => {
-				h => q{h:mm-h:mm a v},
-				m => q{h:mm-h:mm a v},
-			},
-			hv => {
-				h => q{h-h a v},
-			},
-			y => {
-				y => q{G y-y},
-			},
-			yM => {
-				M => q{G y-MM - y-MM},
-				y => q{G y-MM - y-MM},
-			},
-			yMEd => {
-				M => q{E, y-MM-dd - E, y-MM-dd},
-				d => q{E, y-MM-dd - E, y-MM-dd},
-				y => q{E, y-MM-dd - E, y-MM-dd},
-			},
-			yMMM => {
-				M => q{G y-MMM - y-MMM},
-				y => q{G y-MMM - y-MMM},
-			},
-			yMMMEd => {
-				M => q{E, d-'a' 'de' MMM - E, d-'a' 'de' MMM y G},
-				d => q{E, d-'a' - E, d-'a' 'de' MMM y G},
-				y => q{E, d-'a' 'de' MMM y - E, d-'a' 'de' MMM y G},
-			},
-			yMMMd => {
-				M => q{G y-MMM-dd - y-MMM-dd},
-				d => q{G y-MMM-dd - y-MMM-dd},
-				y => q{G y-MMM-dd - y-MMM-dd},
-			},
-			yMd => {
-				M => q{G y-MM-dd - y-MM-dd},
-				d => q{G y-MM-dd - y-MM-dd},
-				y => q{G y-MM-dd - y-MM-dd},
-			},
-		},
 		'gregorian' => {
 			H => {
 				H => q{HH-HH},
@@ -921,6 +840,93 @@ has 'datetime_formats_interval' => (
 				M => q{y-MM-dd - y-MM-dd},
 				d => q{y-MM-dd - y-MM-dd},
 				y => q{y-MM-dd - y-MM-dd},
+			},
+		},
+		'generic' => {
+			H => {
+				H => q{HH-HH},
+			},
+			Hm => {
+				H => q{HH:mm-HH:mm},
+				m => q{HH:mm-HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm-HH:mm v},
+				m => q{HH:mm-HH:mm v},
+			},
+			Hv => {
+				H => q{HH-HH v},
+			},
+			M => {
+				M => q{M-M},
+			},
+			MEd => {
+				M => q{E, MM-dd - E, MM-dd},
+				d => q{E, MM-dd - E, MM-dd},
+			},
+			MMM => {
+				M => q{MMM-MMM},
+			},
+			MMMEd => {
+				M => q{E, MMM-dd - E, MMM-dd},
+				d => q{E, MMM-dd - E, MMM-dd},
+			},
+			MMMd => {
+				M => q{MMM-dd - MMM-dd},
+				d => q{MMM-dd - MMM-dd},
+			},
+			Md => {
+				M => q{MM-dd - MM-dd},
+				d => q{MM-dd - MM-dd},
+			},
+			d => {
+				d => q{d-d},
+			},
+			fallback => '{0} - {1}',
+			h => {
+				h => q{h-h a},
+			},
+			hm => {
+				h => q{h:mm-h:mm a},
+				m => q{h:mm-h:mm a},
+			},
+			hmv => {
+				h => q{h:mm-h:mm a v},
+				m => q{h:mm-h:mm a v},
+			},
+			hv => {
+				h => q{h-h a v},
+			},
+			y => {
+				y => q{G y-y},
+			},
+			yM => {
+				M => q{G y-MM - y-MM},
+				y => q{G y-MM - y-MM},
+			},
+			yMEd => {
+				M => q{E, y-MM-dd - E, y-MM-dd},
+				d => q{E, y-MM-dd - E, y-MM-dd},
+				y => q{E, y-MM-dd - E, y-MM-dd},
+			},
+			yMMM => {
+				M => q{G y-MMM - y-MMM},
+				y => q{G y-MMM - y-MMM},
+			},
+			yMMMEd => {
+				M => q{E, d-'a' 'de' MMM - E, d-'a' 'de' MMM y G},
+				d => q{E, d-'a' - E, d-'a' 'de' MMM y G},
+				y => q{E, d-'a' 'de' MMM y - E, d-'a' 'de' MMM y G},
+			},
+			yMMMd => {
+				M => q{G y-MMM-dd - y-MMM-dd},
+				d => q{G y-MMM-dd - y-MMM-dd},
+				y => q{G y-MMM-dd - y-MMM-dd},
+			},
+			yMd => {
+				M => q{G y-MM-dd - y-MM-dd},
+				d => q{G y-MM-dd - y-MM-dd},
+				y => q{G y-MM-dd - y-MM-dd},
 			},
 		},
 	} },

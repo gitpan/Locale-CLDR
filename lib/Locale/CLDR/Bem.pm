@@ -1,6 +1,6 @@
 package Locale::CLDR::Bem;
 # This file auto generated from Data\common\main\bem.xml
-#	on Mon 12 May  7:10:37 am GMT
+#	on Sat 17 May  2:22:54 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -93,7 +93,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[d h q r v x z])},
@@ -101,6 +103,10 @@ has 'characters' => (
 			main => qr{(?^u:[a b c e f g i j k l m n o p s {sh} t u w y])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'E', 'F', 'G', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'S', '{SH}', 'T', 'U', 'W', 'Y'], };
+},
 );
 
 has 'quote_start' => (
@@ -360,7 +366,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -385,7 +391,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},

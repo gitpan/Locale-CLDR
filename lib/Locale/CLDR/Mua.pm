@@ -1,6 +1,6 @@
 package Locale::CLDR::Mua;
 # This file auto generated from Data\common\main\mua.xml
-#	on Mon 12 May  8:52:24 am GMT
+#	on Sat 17 May  4:05:48 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -317,7 +317,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[q x])},
@@ -325,6 +327,10 @@ has 'characters' => (
 			main => qr{(?^u:[a ã b ɓ c d ɗ e ë ǝ f g h i ĩ j k l m n ŋ o õ p r s t u v ṽ w y z])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'Ɓ', 'C', 'D', 'Ɗ', 'E', 'Ǝ', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'Y', 'Z'], };
+},
 );
 
 has 'quote_start' => (
@@ -865,8 +871,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{comme},
 					'pm' => q{lilli},
+					'am' => q{comme},
 				},
 			},
 		},

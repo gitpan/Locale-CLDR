@@ -1,7 +1,7 @@
 package Locale::CLDR::Eu::Any;
 
 # This file auto generated
-#	on Mon 12 May  7:45:24 am GMT
+#	on Sat 17 May  2:58:19 pm GMT
 
 use version;
 

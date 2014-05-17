@@ -1,6 +1,6 @@
 package Locale::CLDR::Wae;
 # This file auto generated from Data\common\main\wae.xml
-#	on Mon 12 May  9:49:23 am GMT
+#	on Sat 17 May  5:03:22 pm GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use version;
@@ -582,7 +582,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[à ă â å ā æ ç è ĕ ê ë ē ì ĭ î ï ī ñ ò ŏ ô ø ō œ ß ù ŭ û ū ÿ])},
@@ -590,6 +592,10 @@ has 'characters' => (
 			main => qr{(?^u:[a á ä ã b c č d e é f g h i í j k l m n o ó ö õ p q r s š t u ú ü ũ v w x y z])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'], };
+},
 );
 
 has 'quote_start' => (

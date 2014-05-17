@@ -1,6 +1,6 @@
 package Locale::CLDR::Ln::Any::Cd;
 # This file auto generated from Data\common\main\ln_CD.xml
-#	on Mon 12 May  8:34:19 am GMT
+#	on Sat 17 May  3:47:36 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

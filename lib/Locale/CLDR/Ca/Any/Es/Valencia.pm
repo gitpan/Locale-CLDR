@@ -1,6 +1,6 @@
 package Locale::CLDR::Ca::Any::Es::Valencia;
 # This file auto generated from Data\common\main\ca_ES_VALENCIA.xml
-#	on Mon 12 May  7:25:55 am GMT
+#	on Sat 17 May  2:38:20 pm GMT
 # XML file generated 2014-02-27 11:17:08 -0600 (Thu, 27 Feb 2014)
 
 use version;

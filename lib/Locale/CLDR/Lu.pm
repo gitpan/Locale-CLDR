@@ -1,6 +1,6 @@
 package Locale::CLDR::Lu;
 # This file auto generated from Data\common\main\lu.xml
-#	on Mon 12 May  8:40:00 am GMT
+#	on Sat 17 May  3:53:19 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -315,7 +315,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[g r x])},
@@ -323,6 +325,10 @@ has 'characters' => (
 			main => qr{(?^u:[a á à b c d e é è ɛ {ɛ́} {ɛ̀} f h i í ì j k l m n {ng} {ny} o ó ò ɔ {ɔ́} {ɔ̀} p {ph} q s {shi} t u ú ù v w y z])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'S', 'T', 'U', 'V', 'W', 'Y', 'Z'], };
+},
 );
 
 has 'quote_start' => (
@@ -934,7 +940,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -958,7 +964,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},

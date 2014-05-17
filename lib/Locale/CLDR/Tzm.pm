@@ -1,6 +1,6 @@
 package Locale::CLDR::Tzm;
 # This file auto generated from Data\common\main\tzm.xml
-#	on Mon 12 May  9:40:14 am GMT
+#	on Sat 17 May  4:54:07 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -317,7 +317,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[o p v])},
@@ -325,6 +327,10 @@ has 'characters' => (
 			main => qr{(?^u:[a b c d ḍ e ɛ f g {gʷ} ɣ h ḥ i j k {kʷ} l m n q r ṛ s ṣ t ṭ u w x y z])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'Ḍ', 'E', 'Ɛ', 'F', 'G', 'Ɣ', 'H', 'Ḥ', 'I', 'J', 'K', 'L', 'M', 'N', 'Q', 'R', 'Ṛ', 'S', 'Ṣ', 'T', 'Ṭ', 'U', 'W', 'X', 'Y', 'Z'], };
+},
 );
 
 has 'quote_start' => (
@@ -839,8 +845,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{Ḍeffir aza},
 					'am' => q{Zdat azal},
+					'pm' => q{Ḍeffir aza},
 				},
 			},
 		},

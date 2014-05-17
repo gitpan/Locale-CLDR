@@ -1,7 +1,7 @@
 package Locale::CLDR::Ksh::Any;
 
 # This file auto generated
-#	on Mon 12 May  8:32:04 am GMT
+#	on Sat 17 May  3:45:20 pm GMT
 
 use version;
 

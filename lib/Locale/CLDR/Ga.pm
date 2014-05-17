@@ -1,6 +1,6 @@
 package Locale::CLDR::Ga;
 # This file auto generated from Data\common\main\ga.xml
-#	on Mon 12 May  7:54:11 am GMT
+#	on Sat 17 May  3:07:14 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
@@ -599,7 +599,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[å ḃ ċ ḋ ḟ ġ j k ṁ ṗ q ṡ ṫ v w x y z])},
@@ -607,6 +609,10 @@ has 'characters' => (
 			main => qr{(?^u:[a á b c d e é f g h i í l m n o ó p r s t u ú])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'], };
+},
 );
 
 has 'yesstr' => (
@@ -2044,8 +2050,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{p.m.},
 					'am' => q{a.m.},
+					'pm' => q{p.m.},
 				},
 			},
 		},
@@ -2125,24 +2131,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			Ed => q{E d},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E d MMM y G},
-			GyMMMd => q{d MMM y G},
-			M => q{LL},
-			MEd => q{E dd/MM},
-			MMMEd => q{E d MMM},
-			MMMd => q{d MMM},
-			Md => q{dd/MM},
-			yM => q{MM/y},
-			yMEd => q{E dd/MM/y},
-			yMMM => q{MMM y},
-			yMMMEd => q{E d MMM y},
-			yMMMd => q{d MMM y},
-			yMd => q{dd/MM/y},
-		},
 		'generic' => {
 			Ed => q{E d},
 			Gy => q{y G},
@@ -2160,6 +2148,24 @@ has 'datetime_formats_available_formats' => (
 			yyyyMMMEd => q{E d MMM y G},
 			yyyyMMMd => q{d MMM y G},
 			yyyyMd => q{dd/MM/y GGGGG},
+		},
+		'gregorian' => {
+			Ed => q{E d},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E d MMM y G},
+			GyMMMd => q{d MMM y G},
+			M => q{LL},
+			MEd => q{E dd/MM},
+			MMMEd => q{E d MMM},
+			MMMd => q{d MMM},
+			Md => q{dd/MM},
+			yM => q{MM/y},
+			yMEd => q{E dd/MM/y},
+			yMMM => q{MMM y},
+			yMMMEd => q{E d MMM y},
+			yMMMd => q{d MMM y},
+			yMd => q{dd/MM/y},
 		},
 	} },
 );

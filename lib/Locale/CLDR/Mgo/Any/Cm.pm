@@ -1,6 +1,6 @@
 package Locale::CLDR::Mgo::Any::Cm;
 # This file auto generated from Data\common\main\mgo_CM.xml
-#	on Mon 12 May  8:42:25 am GMT
+#	on Sat 17 May  3:55:44 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

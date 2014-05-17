@@ -1,6 +1,6 @@
 package Locale::CLDR::Transformations::Any::Ascii::Latin;
 # This file auto generated from Data\common\transforms\Latin-ASCII.xml
-#	on Mon 12 May  8:27:10 pm GMT
+#	on Sat 17 May  2:14:12 pm GMT
 # XML file generated 2013-08-05 13:50:51 -0500 (Mon, 05 Aug 2013)
 
 use version;

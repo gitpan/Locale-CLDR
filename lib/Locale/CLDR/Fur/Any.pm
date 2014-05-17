@@ -1,7 +1,7 @@
 package Locale::CLDR::Fur::Any;
 
 # This file auto generated
-#	on Mon 12 May  7:52:23 am GMT
+#	on Sat 17 May  3:05:24 pm GMT
 
 use version;
 

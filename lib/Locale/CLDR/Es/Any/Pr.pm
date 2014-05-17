@@ -1,6 +1,6 @@
 package Locale::CLDR::Es::Any::Pr;
 # This file auto generated from Data\common\main\es_PR.xml
-#	on Mon 12 May  7:43:24 am GMT
+#	on Sat 17 May  2:56:17 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;

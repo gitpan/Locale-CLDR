@@ -1,6 +1,6 @@
 package Locale::CLDR::Ru::Any::Ru;
 # This file auto generated from Data\common\main\ru_RU.xml
-#	on Mon 12 May  9:15:35 am GMT
+#	on Sat 17 May  4:29:12 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

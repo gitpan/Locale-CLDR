@@ -1,6 +1,6 @@
 package Locale::CLDR::Ses;
 # This file auto generated from Data\common\main\ses.xml
-#	on Mon 12 May  9:15:53 am GMT
+#	on Sat 17 May  4:29:30 pm GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use version;
@@ -317,7 +317,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[v])},
@@ -325,6 +327,10 @@ has 'characters' => (
 			main => qr{(?^u:[a ã b c d e ẽ f g h i j k l m n ɲ ŋ o õ p q r s š t u w x y z ž])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'Ã', 'B', 'C', 'D', 'E', 'Ẽ', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ɲ', 'Ŋ', 'O', 'Õ', 'P', 'Q', 'R', 'S', 'Š', 'T', 'U', 'W', 'X', 'Y', 'Z', 'Ž'], };
+},
 );
 
 has 'quote_start' => (

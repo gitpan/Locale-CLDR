@@ -1,6 +1,6 @@
 package Locale::CLDR::Mg;
 # This file auto generated from Data\common\main\mg.xml
-#	on Mon 12 May  8:42:20 am GMT
+#	on Sat 17 May  3:55:39 pm GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use version;
@@ -317,7 +317,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[c q u w x])},
@@ -325,6 +327,10 @@ has 'characters' => (
 			main => qr{(?^u:[a à â b d e é è ê ë f g h i ì î ï j k l m n ñ o ô p r s t v y z])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'V', 'Y', 'Z'], };
+},
 );
 
 has 'quote_start' => (

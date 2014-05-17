@@ -1,6 +1,6 @@
 package Locale::CLDR::Is;
 # This file auto generated from Data\common\main\is.xml
-#	on Mon 12 May  8:11:22 am GMT
+#	on Sat 17 May  3:24:30 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -1164,7 +1164,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[c q w x z])},
@@ -1173,6 +1175,10 @@ has 'characters' => (
 			punctuation => qr{(?^u:[\- ‐ – — , ; \: ! ? . … ' ‘ ‚ " “ „ ( ) \[ \] § @ * / \& # † ‡ ′ ″])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'Á', 'B', 'C', 'D', 'Ð', 'E', 'É', 'F', 'G', 'H', 'I', 'Í', 'J', 'K', 'L', 'M', 'N', 'O', 'Ó', 'P', 'Q', 'R', 'S', 'T', 'U', 'Ú', 'V', 'W', 'X', 'Y', 'Ý', 'Z', 'Þ', 'Æ', 'Ö'], };
+},
 );
 
 has 'ellipsis' => (
@@ -3816,8 +3822,8 @@ has 'day_periods' => (
 			},
 			'stand-alone' => {
 				'wide' => {
-					'am' => q{árdegi},
 					'pm' => q{síðdegi},
+					'am' => q{árdegi},
 				},
 			},
 		},

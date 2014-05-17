@@ -1,6 +1,6 @@
 package Locale::CLDR::Or;
 # This file auto generated from Data\common\main\or.xml
-#	on Mon 12 May  9:01:30 am GMT
+#	on Sat 17 May  4:14:59 pm GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use version;
@@ -913,7 +913,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[‌‍])},
@@ -921,6 +923,10 @@ has 'characters' => (
 			main => qr{(?^u:[଼ ଅ ଆ ଇ ଈ ଉ ଊ ଋ ଏ ଐ ଓ ଔ ଁ ଂ ଃ କ ଖ ଗ ଘ ଙ ଚ ଛ ଜ ଝ ଞ ଟ ଠ ଡ {ଡ଼} ଢ {ଢ଼} ଣ ତ ଥ ଦ ଧ ନ ପ ଫ ବ ଭ ମ ଯ ୟ ର ଲ ଳ ଵ ୱ ଶ ଷ ସ ହ ା ି ୀ ୁ ୂ ୃ େ ୈ ୋ ୌ ୍])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['ଅ', 'ଆ', 'ଇ', 'ଈ', 'ଉ', 'ଊ', 'ଋ', 'ଏ', 'ଐ', 'ଓ', 'ଔ', 'କ', 'ଖ', 'ଗ', 'ଘ', 'ଙ', 'ଚ', 'ଛ', 'ଜ', 'ଝ', 'ଞ', 'ଟ', 'ଠ', 'ଡ', 'ଢ', 'ଣ', 'ତ', 'ଥ', 'ଦ', 'ଧ', 'ନ', 'ପ', 'ଫ', 'ବ', 'ଭ', 'ମ', 'ଯ', 'ର', 'ଲ', 'ଳ', 'ଶ', 'ଷ', 'ସ', 'ହ', '{କ\u0B4Dଷ}'], };
+},
 );
 
 has 'yesstr' => (
@@ -1126,13 +1132,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'narrow' => {
-					'am' => q{am},
-					'pm' => q{pm},
-				},
 				'wide' => {
-					'am' => q{am},
 					'pm' => q{pm},
+					'am' => q{am},
+				},
+				'narrow' => {
+					'pm' => q{pm},
+					'am' => q{am},
 				},
 			},
 		},
@@ -1204,19 +1210,19 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			MMMMd => q{MMMM d},
-			MMdd => q{dd-MM},
-			yMM => q{MM-y},
-			yMMMM => q{MMMM y},
-			yQQQ => q{QQQ y},
-		},
 		'generic' => {
 			MMMMd => q{MMMM d},
 			MMdd => q{dd-MM},
 			yMM => q{MM-y G},
 			yMMMM => q{MMMM y G},
 			yQQQ => q{QQQ y G},
+		},
+		'gregorian' => {
+			MMMMd => q{MMMM d},
+			MMdd => q{dd-MM},
+			yMM => q{MM-y},
+			yMMMM => q{MMMM y},
+			yQQQ => q{QQQ y},
 		},
 	} },
 );

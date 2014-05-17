@@ -1,6 +1,6 @@
 package Locale::CLDR::Chr::Any::Us;
 # This file auto generated from Data\common\main\chr_US.xml
-#	on Mon 12 May  7:26:00 am GMT
+#	on Sat 17 May  2:38:25 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

@@ -1,6 +1,6 @@
 package Locale::CLDR::Lag;
 # This file auto generated from Data\common\main\lag.xml
-#	on Mon 12 May  8:34:06 am GMT
+#	on Sat 17 May  3:47:22 pm GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use version;
@@ -317,13 +317,19 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'Ɨ', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'Ʉ', 'V', 'W', 'X', 'Y', 'Z'],
 			main => qr{(?^u:[a á b c d e é f g h i í ɨ j k l m n o ó p q r s t u ú ʉ v w x y z])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'Ɨ', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'Ʉ', 'V', 'W', 'X', 'Y', 'Z'], };
+},
 );
 
 has 'quote_start' => (
@@ -795,8 +801,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{MUU},
 					'am' => q{TOO},
+					'pm' => q{MUU},
 				},
 			},
 		},
@@ -876,7 +882,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -899,7 +905,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},

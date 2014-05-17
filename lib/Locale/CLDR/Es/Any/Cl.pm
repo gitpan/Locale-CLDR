@@ -1,6 +1,6 @@
 package Locale::CLDR::Es::Any::Cl;
 # This file auto generated from Data\common\main\es_CL.xml
-#	on Mon 12 May  7:41:11 am GMT
+#	on Sat 17 May  2:54:02 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;

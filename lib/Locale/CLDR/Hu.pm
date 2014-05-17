@@ -1,6 +1,6 @@
 package Locale::CLDR::Hu;
 # This file auto generated from Data\common\main\hu.xml
-#	on Mon 12 May  8:05:53 am GMT
+#	on Sat 17 May  3:18:59 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -1288,7 +1288,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[à ă â å ä ã ā æ ç è ĕ ê ë ē ì ĭ î ï ī ñ ò ŏ ô ø ō œ q ù ŭ û ū w x y ÿ])},
@@ -1297,6 +1299,10 @@ has 'characters' => (
 			punctuation => qr{(?^u:[\- – , ; \: ! ? . … ' ’ " ” „ « » ( ) \[ \] \{ \} ⟨ ⟩ § @ * / \& # ~ ⁒])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'Á', 'B', 'C', '{CS}', 'D', '{DZ}', '{DZS}', 'E', 'É', 'F', 'G', '{GY}', 'H', 'I', 'Í', 'J', 'K', 'L', '{LY}', 'M', 'N', '{NY}', 'O', 'Ó', 'Ö', 'Ő', 'P', 'Q', 'R', 'S', '{SZ}', 'T', '{TY}', 'U', 'Ú', 'Ü', 'Ű', 'V', 'W', 'X', 'Y', 'Z', '{ZS}'], };
+},
 );
 
 has 'ellipsis' => (
@@ -4862,12 +4868,12 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'narrow' => {
-					'pm' => q{du.},
 					'am' => q{de.},
+					'pm' => q{du.},
 				},
 				'wide' => {
-					'am' => q{de.},
 					'pm' => q{du.},
+					'am' => q{de.},
 				},
 			},
 		},

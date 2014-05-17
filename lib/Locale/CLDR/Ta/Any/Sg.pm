@@ -1,6 +1,6 @@
 package Locale::CLDR::Ta::Any::Sg;
 # This file auto generated from Data\common\main\ta_SG.xml
-#	on Mon 12 May  9:33:10 am GMT
+#	on Sat 17 May  4:46:57 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;

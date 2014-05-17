@@ -1,6 +1,6 @@
 package Locale::CLDR::Uz::Cyrl;
 # This file auto generated from Data\common\main\uz_Cyrl.xml
-#	on Mon 12 May  9:47:13 am GMT
+#	on Sat 17 May  5:01:10 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -638,7 +638,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[ц щ ы ь])},
@@ -646,6 +648,10 @@ has 'characters' => (
 			main => qr{(?^u:[а б в г ғ д е ё ж з и й к қ л м н о п р с т у ў ф х ҳ ч ш ъ э ю я])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['А', 'Б', 'В', 'Г', 'Ғ', 'Д', 'Е', 'Ж', 'З', 'И', 'Й', 'К', 'Қ', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ў', 'Ф', 'Х', 'Ҳ', 'Ч', 'Ш', 'Ъ', 'Э', 'Ю', 'Я'], };
+},
 );
 
 has 'ellipsis' => (

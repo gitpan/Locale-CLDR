@@ -1,6 +1,6 @@
 package Locale::CLDR::Pt::Any::St;
 # This file auto generated from Data\common\main\pt_ST.xml
-#	on Mon 12 May  9:09:23 am GMT
+#	on Sat 17 May  4:22:57 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

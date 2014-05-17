@@ -1,7 +1,7 @@
 package Locale::CLDR::Kkj::Any;
 
 # This file auto generated
-#	on Mon 12 May  8:22:01 am GMT
+#	on Sat 17 May  3:35:12 pm GMT
 
 use version;
 

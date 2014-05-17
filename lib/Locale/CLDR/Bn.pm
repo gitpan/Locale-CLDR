@@ -1,6 +1,6 @@
 package Locale::CLDR::Bn;
 # This file auto generated from Data\common\main\bn.xml
-#	on Mon 12 May  7:13:25 am GMT
+#	on Sat 17 May  2:25:44 pm GMT
 # XML file generated 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014)
 
 use version;
@@ -1172,7 +1172,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[‌‍ ৲ ৳ ৴ ৵ ৶ ৷ ৸ ৹ ৰ ৱ])},
@@ -1180,6 +1182,10 @@ has 'characters' => (
 			main => qr{(?^u:[় ৺ অ আ ই ঈ উ ঊ ঋ ৠ ঌ ৡ এ ঐ ও ঔ ং ঃ ঁ ক {ক্ষ} খ গ ঘ ঙ চ ছ জ ঝ ঞ ট ঠ ড {ড়} ঢ {ঢ়} ণ ত ৎ থ দ ধ ন প ফ ব ভ ম য {য়} র ল শ ষ স হ ঽ া ি ী ু ূ ৃ ৄ ৢ ৣ ে ৈ ো ৌ ্ ৗ])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['অ', 'আ', 'ই', 'ঈ', 'উ', 'ঊ', 'ঋ', 'এ', 'ঐ', 'ও', 'ঔ', 'ক', '{ক\u09CDষ}', 'খ', 'গ', 'ঘ', 'ঙ', 'চ', 'ছ', 'জ', 'ঝ', 'ঞ', 'ট', 'ঠ', 'ড', 'ঢ', 'ণ', 'ত', 'থ', 'দ', 'ধ', 'ন', 'প', 'ফ', 'ব', 'ভ', 'ম', 'য', 'র', 'ল', 'শ', 'ষ', 'স', 'হ'], };
+},
 );
 
 has 'ellipsis' => (
@@ -4135,13 +4141,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'pm' => q{অপরাহ্ণ},
-					'am' => q{পূর্বাহ্ণ},
-				},
 				'narrow' => {
 					'am' => q{পূর্বাহ্ণ},
 					'pm' => q{অপরাহ্ণ},
+				},
+				'wide' => {
+					'pm' => q{অপরাহ্ণ},
+					'am' => q{পূর্বাহ্ণ},
 				},
 			},
 		},

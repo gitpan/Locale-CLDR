@@ -1,6 +1,6 @@
 package Locale::CLDR::Zh::Hant::Tw;
 # This file auto generated from Data\common\main\zh_Hant_TW.xml
-#	on Mon 12 May  9:55:49 am GMT
+#	on Sat 17 May  5:09:52 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

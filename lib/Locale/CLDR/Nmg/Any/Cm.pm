@@ -1,6 +1,6 @@
 package Locale::CLDR::Nmg::Any::Cm;
 # This file auto generated from Data\common\main\nmg_CM.xml
-#	on Mon 12 May  9:00:19 am GMT
+#	on Sat 17 May  4:13:47 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

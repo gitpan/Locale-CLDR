@@ -1,6 +1,6 @@
 package Locale::CLDR::Tg;
 # This file auto generated from Data\common\main\tg.xml
-#	on Mon 12 May  9:35:20 am GMT
+#	on Sat 17 May  4:49:09 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
@@ -125,7 +125,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[ц щ ы ь])},
@@ -133,6 +135,10 @@ has 'characters' => (
 			main => qr{(?^u:[а б в г ғ д е ё ж з и ӣ й к қ л м н о п р с т у ӯ ф х ҳ ч ҷ ш ъ э ю я])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['А', 'Б', 'В', 'Г', 'Ғ', 'Д', 'Е', 'Ж', 'З', 'И', 'Й', 'К', 'Қ', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ҳ', 'Ч', 'Ҷ', 'Ш', 'Ъ', 'Э', 'Ю', 'Я'], };
+},
 );
 
 has 'quote_start' => (

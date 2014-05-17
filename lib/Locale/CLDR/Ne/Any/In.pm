@@ -1,6 +1,6 @@
 package Locale::CLDR::Ne::Any::In;
 # This file auto generated from Data\common\main\ne_IN.xml
-#	on Mon 12 May  8:58:28 am GMT
+#	on Sat 17 May  4:11:55 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use version;

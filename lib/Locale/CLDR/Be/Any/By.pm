@@ -1,6 +1,6 @@
 package Locale::CLDR::Be::Any::By;
 # This file auto generated from Data\common\main\be_BY.xml
-#	on Mon 12 May  7:10:37 am GMT
+#	on Sat 17 May  2:22:53 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

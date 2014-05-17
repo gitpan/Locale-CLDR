@@ -1,6 +1,6 @@
 package Locale::CLDR::Bs;
 # This file auto generated from Data\common\main\bs.xml
-#	on Mon 12 May  7:19:09 am GMT
+#	on Sat 17 May  2:31:31 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -1030,7 +1030,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[q w x y])},
@@ -1038,6 +1040,10 @@ has 'characters' => (
 			main => qr{(?^u:[a b c ć č d đ {dž} e f g h i j k l {lj} m n {nj} o p r s š t u v z ž])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'Ć', 'Č', 'D', '{DŽ}', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', '{LJ}', 'M', 'N', '{NJ}', 'O', 'P', 'Q', 'R', 'S', 'Š', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Ž'], };
+},
 );
 
 has 'quote_start' => (
@@ -4116,8 +4122,12 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'islamic' => {
+		'generic' => {
 			Ed => q{E, dd.},
+			Gy => q{y. G},
+			GyMMM => q{MMM y. G},
+			GyMMMEd => q{E, dd. MMM y. G},
+			GyMMMd => q{dd. MMM y. G},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -4131,14 +4141,15 @@ has 'datetime_formats_available_formats' => (
 			hms => q{hh:mm:ss a},
 			ms => q{mm:ss},
 			y => q{y. G},
-			yM => q{MM.y. G},
-			yMEd => q{E, dd.MM.y. G},
-			yMMM => q{MMM y. G},
-			yMMMEd => q{E, dd. MMM y. G},
-			yMMMd => q{dd. MMM y. G},
-			yMd => q{dd.MM.y. G},
-			yQQQ => q{y G QQQ},
-			yQQQQ => q{y G QQQQ},
+			yyyy => q{y. G},
+			yyyyM => q{MM.y. G},
+			yyyyMEd => q{E, dd.MM.y. G},
+			yyyyMMM => q{MMM y. G},
+			yyyyMMMEd => q{E, dd. MMM y. G},
+			yyyyMMMd => q{dd. MMM y. G},
+			yyyyMd => q{dd.MM.y. G},
+			yyyyQQQ => q{G y QQQ},
+			yyyyQQQQ => q{G y QQQQ},
 		},
 		'gregorian' => {
 			Ed => q{E, dd.},
@@ -4168,12 +4179,8 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{y QQQ},
 			yQQQQ => q{y QQQQ},
 		},
-		'generic' => {
+		'islamic' => {
 			Ed => q{E, dd.},
-			Gy => q{y. G},
-			GyMMM => q{MMM y. G},
-			GyMMMEd => q{E, dd. MMM y. G},
-			GyMMMd => q{dd. MMM y. G},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -4187,15 +4194,14 @@ has 'datetime_formats_available_formats' => (
 			hms => q{hh:mm:ss a},
 			ms => q{mm:ss},
 			y => q{y. G},
-			yyyy => q{y. G},
-			yyyyM => q{MM.y. G},
-			yyyyMEd => q{E, dd.MM.y. G},
-			yyyyMMM => q{MMM y. G},
-			yyyyMMMEd => q{E, dd. MMM y. G},
-			yyyyMMMd => q{dd. MMM y. G},
-			yyyyMd => q{dd.MM.y. G},
-			yyyyQQQ => q{G y QQQ},
-			yyyyQQQQ => q{G y QQQQ},
+			yM => q{MM.y. G},
+			yMEd => q{E, dd.MM.y. G},
+			yMMM => q{MMM y. G},
+			yMMMEd => q{E, dd. MMM y. G},
+			yMMMd => q{dd. MMM y. G},
+			yMd => q{dd.MM.y. G},
+			yQQQ => q{y G QQQ},
+			yQQQQ => q{y G QQQQ},
 		},
 	} },
 );

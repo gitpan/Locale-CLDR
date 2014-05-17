@@ -1,6 +1,6 @@
 package Locale::CLDR::Ro::Any::Md;
 # This file auto generated from Data\common\main\ro_MD.xml
-#	on Mon 12 May  9:12:04 am GMT
+#	on Sat 17 May  4:25:39 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

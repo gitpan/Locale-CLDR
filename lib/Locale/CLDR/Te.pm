@@ -1,6 +1,6 @@
 package Locale::CLDR::Te;
 # This file auto generated from Data\common\main\te.xml
-#	on Mon 12 May  9:33:12 am GMT
+#	on Sat 17 May  4:46:59 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -1180,7 +1180,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[‌‍ ౦ ౧ ౨ ౩ ౪ ౫ ౬ ౭ ౮ ౯])},
@@ -1188,6 +1190,10 @@ has 'characters' => (
 			main => qr{(?^u:[అ ఆ ఇ ఈ ఉ ఊ ఋ ౠ ఌ ౡ ఎ ఏ ఐ ఒ ఓ ఔ ఁ ం ః క ఖ గ ఘ ఙ చ ఛ జ ఝ ఞ ట ఠ డ ఢ ణ త థ ద ధ న ప ఫ బ భ మ య ర ఱ ల వ శ ష స హ ళ ా ి ీ ు ూ ృ ౄ ె ే ై ొ ో ౌ ్ ౕ ౖ])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['అ', 'ఆ', 'ఇ', 'ఈ', 'ఉ', 'ఊ', 'ఋ', 'ౠ', 'ఎ', 'ఏ', 'ఐ', 'ఒ', 'ఓ', 'ఔ', 'క', 'ఖ', 'గ', 'ఘ', 'ఙ', 'చ', 'ఛ', 'జ', 'ఝ', 'ఞ', 'ట', 'ఠ', 'డ', 'ఢ', 'ణ', 'త', 'థ', 'ద', 'ధ', 'న', 'ప', 'ఫ', 'బ', 'భ', 'మ', 'య', 'ర', 'ఱ', 'ల', 'వ', 'శ', 'ష', 'స', 'హ', 'ళ'], };
+},
 );
 
 has 'ellipsis' => (
@@ -3554,60 +3560,60 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'islamic') {
-				return 'earlyMorning' if $time >= 300
-					&& $time < 600;
-				return 'noon' if $time == 1200;
-				return 'night' if $time >= 1800
-					&& $time < 300;
-				return 'afternoon' if $time > 1200
-					&& $time < 1500;
-				return 'evening' if $time >= 1500
-					&& $time < 1800;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-			last SWITCH;
-			}
 			if ($_ eq 'gregorian') {
-				return 'earlyMorning' if $time >= 300
-					&& $time < 600;
-				return 'noon' if $time == 1200;
-				return 'night' if $time >= 1800
-					&& $time < 300;
 				return 'afternoon' if $time > 1200
 					&& $time < 1500;
-				return 'evening' if $time >= 1500
-					&& $time < 1800;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'indian') {
 				return 'earlyMorning' if $time >= 300
 					&& $time < 600;
-				return 'noon' if $time == 1200;
-				return 'night' if $time >= 1800
-					&& $time < 300;
-				return 'afternoon' if $time > 1200
-					&& $time < 1500;
-				return 'evening' if $time >= 1500
-					&& $time < 1800;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
+				return 'evening' if $time >= 1500
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 300;
+				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'generic') {
-				return 'earlyMorning' if $time >= 300
-					&& $time < 600;
-				return 'noon' if $time == 1200;
-				return 'night' if $time >= 1800
-					&& $time < 300;
 				return 'afternoon' if $time > 1200
 					&& $time < 1500;
-				return 'evening' if $time >= 1500
-					&& $time < 1800;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 600;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
+				return 'evening' if $time >= 1500
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 300;
+				return 'noon' if $time == 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'indian') {
+				return 'afternoon' if $time > 1200
+					&& $time < 1500;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 600;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'evening' if $time >= 1500
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 300;
+				return 'noon' if $time == 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'islamic') {
+				return 'afternoon' if $time > 1200
+					&& $time < 1500;
+				return 'earlyMorning' if $time >= 300
+					&& $time < 600;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'evening' if $time >= 1500
+					&& $time < 1800;
+				return 'night' if $time >= 1800
+					&& $time < 300;
+				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 		}
@@ -3621,19 +3627,19 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'earlyMorning' => q{ఉదయం},
-					'afternoon' => q{రాత్రి},
-					'am' => q{AM},
-					'pm' => q{PM},
-					'night' => q{తెల్లవారుఝాము},
-					'noon' => q{సాయంకాలం},
-					'morning' => q{మధ్యాహ్నం},
-					'evening' => q{అర్ధరాత్రి},
-				},
 				'narrow' => {
 					'am' => q{AM},
 					'pm' => q{PM},
+				},
+				'wide' => {
+					'night' => q{తెల్లవారుఝాము},
+					'noon' => q{సాయంకాలం},
+					'earlyMorning' => q{ఉదయం},
+					'afternoon' => q{రాత్రి},
+					'pm' => q{PM},
+					'am' => q{AM},
+					'morning' => q{మధ్యాహ్నం},
+					'evening' => q{అర్ధరాత్రి},
 				},
 			},
 		},

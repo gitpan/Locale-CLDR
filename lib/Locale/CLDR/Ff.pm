@@ -1,6 +1,6 @@
 package Locale::CLDR::Ff;
 # This file auto generated from Data\common\main\ff.xml
-#	on Mon 12 May  7:47:50 am GMT
+#	on Sat 17 May  3:00:47 pm GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use version;
@@ -317,7 +317,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[q v x z])},
@@ -325,6 +327,10 @@ has 'characters' => (
 			main => qr{(?^u:[a b ɓ c d ɗ e f g h i j k l m n ñ ŋ o p r s t u w y ƴ])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'Ɓ', 'C', 'D', 'Ɗ', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ñ', 'Ŋ', 'O', 'P', 'R', 'S', 'T', 'U', 'W', 'Y', 'Ƴ'], };
+},
 );
 
 has 'quote_start' => (

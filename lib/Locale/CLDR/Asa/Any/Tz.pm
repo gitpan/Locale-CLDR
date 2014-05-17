@@ -1,6 +1,6 @@
 package Locale::CLDR::Asa::Any::Tz;
 # This file auto generated from Data\common\main\asa_TZ.xml
-#	on Mon 12 May  7:08:03 am GMT
+#	on Sat 17 May  2:20:18 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

@@ -1,6 +1,6 @@
 package Locale::CLDR::Ki;
 # This file auto generated from Data\common\main\ki.xml
-#	on Mon 12 May  8:19:56 am GMT
+#	on Sat 17 May  3:33:07 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -317,7 +317,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[f l p q s v x z])},
@@ -325,6 +327,10 @@ has 'characters' => (
 			main => qr{(?^u:[a b c d e g h i ĩ j k m n o r t u ũ w y])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'E', 'G', 'H', 'I', 'J', 'K', 'M', 'N', 'O', 'R', 'T', 'U', 'W', 'Y'], };
+},
 );
 
 has 'quote_start' => (
@@ -818,8 +824,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{Hwaĩ-inĩ},
 					'am' => q{Kiroko},
+					'pm' => q{Hwaĩ-inĩ},
 				},
 			},
 		},

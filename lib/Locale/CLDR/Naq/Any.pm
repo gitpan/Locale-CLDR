@@ -1,7 +1,7 @@
 package Locale::CLDR::Naq::Any;
 
 # This file auto generated
-#	on Mon 12 May  8:54:38 am GMT
+#	on Sat 17 May  4:08:03 pm GMT
 
 use version;
 

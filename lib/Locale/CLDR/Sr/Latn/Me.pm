@@ -1,6 +1,6 @@
 package Locale::CLDR::Sr::Latn::Me;
 # This file auto generated from Data\common\main\sr_Latn_ME.xml
-#	on Mon 12 May  9:28:27 am GMT
+#	on Sat 17 May  4:42:11 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
@@ -86,7 +86,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			MMMEd => {
 				M => q{E, d.MM - E, d.MM},
 				d => q{E, d.MM - E, d.MM},
@@ -105,7 +105,7 @@ has 'datetime_formats_interval' => (
 				y => q{d.MM.y. - d.MM.y.},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			MMMEd => {
 				M => q{E, d.MM - E, d.MM},
 				d => q{E, d.MM - E, d.MM},

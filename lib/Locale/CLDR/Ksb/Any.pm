@@ -1,7 +1,7 @@
 package Locale::CLDR::Ksb::Any;
 
 # This file auto generated
-#	on Mon 12 May  8:31:29 am GMT
+#	on Sat 17 May  3:44:45 pm GMT
 
 use version;
 

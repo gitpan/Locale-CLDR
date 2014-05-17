@@ -1,6 +1,6 @@
 package Locale::CLDR::Pt::Any::Pt;
 # This file auto generated from Data\common\main\pt_PT.xml
-#	on Mon 12 May  9:07:13 am GMT
+#	on Sat 17 May  4:20:46 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -936,12 +936,18 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			punctuation => qr{(?^u:[\- ‐ – — , ; \: ! ? . … ' " “ ” « » ( ) \[ \] § @ * / \& # † ‡ ′ ″])},
 		};
 	},
+EOT
+: sub {
+	return { index =>  };
+},
 );
 
 has 'ellipsis' => (
@@ -3451,19 +3457,9 @@ has 'day_period_data' => (
 					&& $time < 1200;
 				return 'afternoon' if $time > 1200
 					&& $time < 1900;
+				return 'noon' if $time == 1200;
 				return 'night' if $time >= 1900
 					&& $time < 2400;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'islamic') {
-				return 'morning' if $time >= 0000
-					&& $time < 1200;
-				return 'afternoon' if $time > 1200
-					&& $time < 1900;
-				return 'night' if $time >= 1900
-					&& $time < 2400;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'buddhist') {
@@ -3471,39 +3467,9 @@ has 'day_period_data' => (
 					&& $time < 1200;
 				return 'afternoon' if $time > 1200
 					&& $time < 1900;
+				return 'noon' if $time == 1200;
 				return 'night' if $time >= 1900
 					&& $time < 2400;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'generic') {
-				return 'morning' if $time >= 0000
-					&& $time < 1200;
-				return 'afternoon' if $time > 1200
-					&& $time < 1900;
-				return 'night' if $time >= 1900
-					&& $time < 2400;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'chinese') {
-				return 'morning' if $time >= 0000
-					&& $time < 1200;
-				return 'afternoon' if $time > 1200
-					&& $time < 1900;
-				return 'night' if $time >= 1900
-					&& $time < 2400;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'hebrew') {
-				return 'morning' if $time >= 0000
-					&& $time < 1200;
-				return 'afternoon' if $time > 1200
-					&& $time < 1900;
-				return 'night' if $time >= 1900
-					&& $time < 2400;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'gregorian') {
@@ -3511,9 +3477,19 @@ has 'day_period_data' => (
 					&& $time < 1200;
 				return 'afternoon' if $time > 1200
 					&& $time < 1900;
+				return 'noon' if $time == 1200;
 				return 'night' if $time >= 1900
 					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'islamic') {
+				return 'morning' if $time >= 0000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1900;
 				return 'noon' if $time == 1200;
+				return 'night' if $time >= 1900
+					&& $time < 2400;
 			last SWITCH;
 			}
 			if ($_ eq 'roc') {
@@ -3521,9 +3497,39 @@ has 'day_period_data' => (
 					&& $time < 1200;
 				return 'afternoon' if $time > 1200
 					&& $time < 1900;
+				return 'noon' if $time == 1200;
 				return 'night' if $time >= 1900
 					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'hebrew') {
+				return 'morning' if $time >= 0000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1900;
 				return 'noon' if $time == 1200;
+				return 'night' if $time >= 1900
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'generic') {
+				return 'morning' if $time >= 0000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1900;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 1900
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'chinese') {
+				return 'morning' if $time >= 0000
+					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1900;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 1900
+					&& $time < 2400;
 			last SWITCH;
 			}
 		}
@@ -3541,19 +3547,19 @@ has 'day_periods' => (
 					'am' => q{da manhã},
 					'pm' => q{da tarde},
 				},
-				'abbreviated' => {
-					'pm' => q{p.m.},
-					'am' => q{a.m.},
-				},
 				'narrow' => {
+					'am' => q{a.m.},
+					'pm' => q{p.m.},
+				},
+				'abbreviated' => {
 					'pm' => q{p.m.},
 					'am' => q{a.m.},
 				},
 			},
 			'stand-alone' => {
 				'wide' => {
-					'am' => q{a.m.},
 					'pm' => q{p.m.},
+					'am' => q{a.m.},
 				},
 				'abbreviated' => {
 					'pm' => q{p.m.},

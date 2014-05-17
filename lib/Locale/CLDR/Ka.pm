@@ -1,6 +1,6 @@
 package Locale::CLDR::Ka;
 # This file auto generated from Data\common\main\ka.xml
-#	on Mon 12 May  8:17:08 am GMT
+#	on Sat 17 May  3:30:18 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -1112,7 +1112,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[ⴀ ⴁ ⴂ ⴃ ⴄ ⴅ ⴆ ჱ ⴡ ⴇ ⴈ ⴉ ⴊ ⴋ ⴌ ჲ ⴢ ⴍ ⴎ ⴏ ⴐ ⴑ ⴒ ჳ ⴣ ⴓ ⴔ ⴕ ⴖ ⴗ ⴘ ⴙ ⴚ ⴛ ⴜ ⴝ ⴞ ჴ ⴤ ⴟ ⴠ ჵ ⴥ ჶ ჷ ჸ ჹ ჺ])},
@@ -1121,6 +1123,10 @@ has 'characters' => (
 			punctuation => qr{(?^u:[\- ‐ – — , ; \: ! ? . … ჻ ' ‘ ‚ “ „ « » ( ) \[ \] \{ \} § @ * / \& # † ‡ ′ ″ №])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['ა', 'ბ', 'გ', 'დ', 'ე', 'ვ', 'ზ', 'თ', 'ი', 'კ', 'ლ', 'მ', 'ნ', 'ო', 'პ', 'ჟ', 'რ', 'ს', 'ტ', 'უ', 'ფ', 'ქ', 'ღ', 'ყ', 'შ', 'ჩ', 'ც', 'ძ', 'წ', 'ჭ', 'ხ', 'ჯ', 'ჰ'], };
+},
 );
 
 has 'ellipsis' => (
@@ -4195,20 +4201,20 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
+				'abbreviated' => {
+					'noon' => q{შუადღე},
+					'pm' => q{PM},
+					'am' => q{AM},
+				},
+				'narrow' => {
+					'pm' => q{PM},
+					'am' => q{AM},
+					'noon' => q{შუადღე},
+				},
 				'wide' => {
 					'pm' => q{საღამოს},
 					'am' => q{დილის},
 					'noon' => q{შუადღე},
-				},
-				'abbreviated' => {
-					'am' => q{AM},
-					'pm' => q{PM},
-					'noon' => q{შუადღე},
-				},
-				'narrow' => {
-					'noon' => q{შუადღე},
-					'am' => q{AM},
-					'pm' => q{PM},
 				},
 			},
 		},

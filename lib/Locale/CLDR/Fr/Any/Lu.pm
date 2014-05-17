@@ -1,6 +1,6 @@
 package Locale::CLDR::Fr::Any::Lu;
 # This file auto generated from Data\common\main\fr_LU.xml
-#	on Mon 12 May  7:52:16 am GMT
+#	on Sat 17 May  3:05:17 pm GMT
 # XML file generated 2013-08-30 17:35:54 -0500 (Fri, 30 Aug 2013)
 
 use version;

@@ -1,7 +1,7 @@
 package Locale::CLDR::Dje::Any;
 
 # This file auto generated
-#	on Mon 12 May  7:31:35 am GMT
+#	on Sat 17 May  2:44:10 pm GMT
 
 use version;
 

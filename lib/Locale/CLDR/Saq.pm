@@ -1,6 +1,6 @@
 package Locale::CLDR::Saq;
 # This file auto generated from Data\common\main\saq.xml
-#	on Mon 12 May  9:15:40 am GMT
+#	on Sat 17 May  4:29:17 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -317,7 +317,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[f q x z])},
@@ -325,6 +327,10 @@ has 'characters' => (
 			main => qr{(?^u:[a b c d e g h i j k l m n o p r s t u v w y])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'E', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'Y'], };
+},
 );
 
 has 'quote_start' => (
@@ -818,8 +824,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{Teipa},
 					'am' => q{Tesiran},
+					'pm' => q{Teipa},
 				},
 			},
 		},

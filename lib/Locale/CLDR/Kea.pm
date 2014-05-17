@@ -1,6 +1,6 @@
 package Locale::CLDR::Kea;
 # This file auto generated from Data\common\main\kea.xml
-#	on Mon 12 May  8:19:46 am GMT
+#	on Sat 17 May  3:32:57 pm GMT
 # XML file generated 2013-11-15 12:32:44 -0600 (Fri, 15 Nov 2013)
 
 use version;
@@ -591,7 +591,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[á à ă â å ä ã ā æ c ç é è ĕ ê ë ẽ ē í ì ĭ î ï ĩ ī {n̈} ó ò ŏ ô ö õ ø ō œ q {rr} ú ù ŭ û ü ũ ū w ÿ])},
@@ -599,6 +601,10 @@ has 'characters' => (
 			main => qr{(?^u:[a b d {dj} e f g h i j k l {lh} m n ñ {nh} o p r s t {tx} u v x y z])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'V', 'X', 'Z'], };
+},
 );
 
 has 'ellipsis' => (
@@ -1485,8 +1491,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{pm},
 					'am' => q{am},
+					'pm' => q{pm},
 				},
 			},
 		},

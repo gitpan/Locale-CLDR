@@ -1,6 +1,6 @@
 package Locale::CLDR::Ca::Any::It;
 # This file auto generated from Data\common\main\ca_IT.xml
-#	on Mon 12 May  7:25:55 am GMT
+#	on Sat 17 May  2:38:20 pm GMT
 # XML file generated 2013-08-18 23:26:52 -0500 (Sun, 18 Aug 2013)
 
 use version;

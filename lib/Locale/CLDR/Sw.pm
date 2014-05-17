@@ -1,6 +1,6 @@
 package Locale::CLDR::Sw;
 # This file auto generated from Data\common\main\sw.xml
-#	on Mon 12 May  9:30:18 am GMT
+#	on Sat 17 May  4:44:04 pm GMT
 # XML file generated 2014-02-26 14:43:57 -0600 (Wed, 26 Feb 2014)
 
 use version;
@@ -886,7 +886,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[c q x])},
@@ -894,6 +896,10 @@ has 'characters' => (
 			main => qr{(?^u:[a b {ch} d e f g h i j k l m n o p r s t u v w y z])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'Y', 'Z'], };
+},
 );
 
 has 'ellipsis' => (
@@ -2812,8 +2818,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{PM},
 					'am' => q{AM},
+					'pm' => q{PM},
 				},
 			},
 		},

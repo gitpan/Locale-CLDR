@@ -1,6 +1,6 @@
 package Locale::CLDR::Bo;
 # This file auto generated from Data\common\main\bo.xml
-#	on Mon 12 May  7:16:07 am GMT
+#	on Sat 17 May  2:28:27 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -339,7 +339,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[ༀ])},
@@ -348,6 +350,10 @@ has 'characters' => (
 			punctuation => qr{(?^u:[\: ་ །])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['ཀ', 'ཁ', 'ག', 'ང', 'ཅ', 'ཆ', 'ཇ', 'ཉ', 'ཏ', 'ཐ', 'ད', 'ན', 'པ', 'ཕ', 'བ', 'མ', 'ཙ', 'ཚ', 'ཛ', 'ཝ', 'ཞ', 'ཟ', 'འ', 'ཡ', 'ར', 'ལ', 'ཤ', 'ས', 'ཧ', 'ཨ'], };
+},
 );
 
 has 'yesstr' => (
@@ -642,8 +648,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{སྔ་དྲོ་},
 					'pm' => q{ཕྱི་དྲོ་},
+					'am' => q{སྔ་དྲོ་},
 				},
 			},
 		},

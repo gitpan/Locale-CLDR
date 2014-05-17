@@ -1,6 +1,6 @@
 package Locale::CLDR::Ta::Any::Lk;
 # This file auto generated from Data\common\main\ta_LK.xml
-#	on Mon 12 May  9:33:10 am GMT
+#	on Sat 17 May  4:46:57 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

@@ -1,6 +1,6 @@
 package Locale::CLDR::Et;
 # This file auto generated from Data\common\main\et.xml
-#	on Mon 12 May  7:43:27 am GMT
+#	on Sat 17 May  2:56:20 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -1234,7 +1234,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[á à â å ā æ ç é è ê ë ē í ì î ï ī ñ ó ò ŏ ô ø ō œ ú ù û ū])},
@@ -1242,6 +1244,10 @@ has 'characters' => (
 			main => qr{(?^u:[a b c d e f g h i j k l m n o p q r s š z ž t u v w õ ä ö ü x y])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'Š', 'Z', 'Ž', 'T', 'U', 'V', 'Õ', 'Ä', 'Ö', 'Ü', 'X', 'Y'], };
+},
 );
 
 has 'ellipsis' => (
@@ -3928,8 +3934,8 @@ has 'day_periods' => (
 					'pm' => q{p.k.},
 				},
 				'wide' => {
-					'am' => q{AM},
 					'pm' => q{PM},
+					'am' => q{AM},
 				},
 			},
 		},

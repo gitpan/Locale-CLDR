@@ -1,6 +1,6 @@
 package Locale::CLDR::Fil::Any::Ph;
 # This file auto generated from Data\common\main\fil_PH.xml
-#	on Mon 12 May  7:50:24 am GMT
+#	on Sat 17 May  3:03:24 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

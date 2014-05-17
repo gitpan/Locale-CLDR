@@ -1,6 +1,6 @@
 package Locale::CLDR::Yo::Any::Bj;
 # This file auto generated from Data\common\main\yo_BJ.xml
-#	on Mon 12 May  9:49:36 am GMT
+#	on Sat 17 May  5:03:34 pm GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use version;
@@ -371,7 +371,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[c q v x z])},
@@ -379,6 +381,10 @@ has 'characters' => (
 			main => qr{(?^u:[a á à b d e é è ɛ {ɛ́} {ɛ̀} f g {gb} h i í ì j k l m n o ó ò ɔ {ɔ́} {ɔ̀} p r s {sh} t u ú ù w y])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'], };
+},
 );
 
 has 'quote_start' => (

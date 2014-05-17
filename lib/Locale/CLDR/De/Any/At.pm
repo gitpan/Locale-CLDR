@@ -1,6 +1,6 @@
 package Locale::CLDR::De::Any::At;
 # This file auto generated from Data\common\main\de_AT.xml
-#	on Mon 12 May  7:31:30 am GMT
+#	on Sat 17 May  2:44:05 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -148,32 +148,32 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'gregorian') {
-				return 'earlyMorning' if $time >= 000
-					&& $time < 900;
-				return 'noon' if $time == 1200;
+			if ($_ eq 'generic') {
 				return 'night' if $time >= 2100
 					&& $time < 2400;
-				return 'afternoon' if $time > 1200
-					&& $time < 1700;
-				return 'evening' if $time >= 1700
-					&& $time < 2100;
+				return 'noon' if $time == 1200;
 				return 'morning' if $time >= 900
 					&& $time < 1200;
+				return 'evening' if $time >= 1700
+					&& $time < 2100;
+				return 'afternoon' if $time > 1200
+					&& $time < 1700;
+				return 'earlyMorning' if $time >= 000
+					&& $time < 900;
 			last SWITCH;
 			}
-			if ($_ eq 'generic') {
-				return 'earlyMorning' if $time >= 000
-					&& $time < 900;
-				return 'noon' if $time == 1200;
+			if ($_ eq 'gregorian') {
 				return 'night' if $time >= 2100
 					&& $time < 2400;
-				return 'afternoon' if $time > 1200
-					&& $time < 1700;
-				return 'evening' if $time >= 1700
-					&& $time < 2100;
+				return 'noon' if $time == 1200;
 				return 'morning' if $time >= 900
 					&& $time < 1200;
+				return 'evening' if $time >= 1700
+					&& $time < 2100;
+				return 'afternoon' if $time > 1200
+					&& $time < 1700;
+				return 'earlyMorning' if $time >= 000
+					&& $time < 900;
 			last SWITCH;
 			}
 		}

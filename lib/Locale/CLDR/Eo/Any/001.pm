@@ -1,6 +1,6 @@
 package Locale::CLDR::Eo::Any::001;
 # This file auto generated from Data\common\main\eo_001.xml
-#	on Mon 12 May  7:39:26 am GMT
+#	on Sat 17 May  2:52:14 pm GMT
 # XML file generated 2013-08-24 16:19:30 -0500 (Sat, 24 Aug 2013)
 
 use version;

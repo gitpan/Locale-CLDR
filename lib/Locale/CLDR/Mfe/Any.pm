@@ -1,7 +1,7 @@
 package Locale::CLDR::Mfe::Any;
 
 # This file auto generated
-#	on Mon 12 May  8:42:20 am GMT
+#	on Sat 17 May  3:55:39 pm GMT
 
 use version;
 

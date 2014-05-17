@@ -1,6 +1,6 @@
 package Locale::CLDR::Ebu;
 # This file auto generated from Data\common\main\ebu.xml
-#	on Mon 12 May  7:32:04 am GMT
+#	on Sat 17 May  2:44:40 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -317,13 +317,19 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'Ĩ', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'Ũ', 'V', 'W', 'X', 'Y', 'Z'],
 			main => qr{(?^u:[a b c d e f g h i ĩ j k l m n o p q r s t u ũ v w x y z])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'Ĩ', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'Ũ', 'V', 'W', 'X', 'Y', 'Z'], };
+},
 );
 
 has 'quote_start' => (
@@ -817,8 +823,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{UT},
 					'am' => q{KI},
+					'pm' => q{UT},
 				},
 			},
 		},

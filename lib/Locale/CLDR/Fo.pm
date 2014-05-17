@@ -1,6 +1,6 @@
 package Locale::CLDR::Fo;
 # This file auto generated from Data\common\main\fo.xml
-#	on Mon 12 May  7:50:25 am GMT
+#	on Sat 17 May  3:03:24 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
@@ -556,7 +556,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[c q w z])},
@@ -564,6 +566,10 @@ has 'characters' => (
 			main => qr{(?^u:[a á b d ð e f g h i í j k l m n o ó p r s t u ú v x y ý æ ø])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'Á', 'B', 'C', 'D', 'Ð', 'E', 'F', 'G', 'H', 'I', 'Í', 'J', 'K', 'L', 'M', 'N', 'O', 'Ó', 'P', 'Q', 'R', 'S', 'T', 'U', 'Ú', 'V', 'W', 'X', 'Y', 'Ý', 'Z', 'Æ', 'Ø'], };
+},
 );
 
 has 'ellipsis' => (

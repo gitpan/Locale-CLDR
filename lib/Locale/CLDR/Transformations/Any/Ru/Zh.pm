@@ -1,6 +1,6 @@
 package Locale::CLDR::Transformations::Any::Ru::Zh;
 # This file auto generated from Data\common\transforms\ru-zh.xml
-#	on Mon 12 May  8:27:24 pm GMT
+#	on Sat 17 May  2:14:25 pm GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
 use version;

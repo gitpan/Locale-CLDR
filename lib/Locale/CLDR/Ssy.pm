@@ -1,6 +1,6 @@
 package Locale::CLDR::Ssy;
 # This file auto generated from Data\common\main\ssy.xml
-#	on Mon 12 May  9:28:28 am GMT
+#	on Sat 17 May  4:42:12 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -69,7 +69,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[j p v z])},
@@ -77,6 +79,10 @@ has 'characters' => (
 			main => qr{(?^u:[a b t s e c k x i d q r f g o l m n u w h y])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'T', 'S', 'E', 'C', 'K', 'X', 'I', 'D', 'Q', 'R', 'F', 'G', 'O', 'L', 'M', 'N', 'U', 'W', 'H', 'Y'], };
+},
 );
 
 has 'number_currency_formats' => (

@@ -1,7 +1,7 @@
 package Locale::CLDR::Haw::Any;
 
 # This file auto generated
-#	on Mon 12 May  7:59:30 am GMT
+#	on Sat 17 May  3:12:35 pm GMT
 
 use version;
 

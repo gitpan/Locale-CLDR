@@ -1,6 +1,6 @@
 package Locale::CLDR::En::Any::Us::Posix;
 # This file auto generated from Data\common\main\en_US_POSIX.xml
-#	on Mon 12 May  7:39:22 am GMT
+#	on Sat 17 May  2:52:11 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;

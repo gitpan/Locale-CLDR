@@ -14,11 +14,15 @@ use ok 'Locale::CLDR';
 my $locale = Locale::CLDR->new('en');
 
 my $text = "adf543., Tiếng Viết\n\r45dfr.A new sentence";
-my @grapheme_clusters = $locale->split_grapheme_clusters($text);
 
-SKIP: {
-	skip "Segmentation requires Perl v5.18 or above", 4, if $^V lt v5.18.0;
-	
+if ($^V lt v5.18.0) {
+	dies_ok {$locale->split_grapheme_clusters($text)} "Can't call split_grapheme_clusters() with a Perl version less than 5.18";
+	dies_ok {$locale->split_words($text)} "Can't call split_words() with a Perl version less than 5.18";
+	dies_ok {$locale->split_sentences($text)} "Can't call split_sentences() with a Perl version less than 5.18";
+	dies_ok {$locale->split_lines($text)} "Can't call split_lines() with a Perl version less than 5.18";
+}
+else {
+	my @grapheme_clusters = $locale->split_grapheme_clusters($text);
 	is_deeply(\@grapheme_clusters, [
 		'a', 'd', 'f', '5', '4', '3', '.', ',', ' ', 'T', 'i', 'ế', 'n', 'g',
 		' ', 'V', 'i', 'ế', 't', "\n", "\r", '4', '5', 'd', 'f', 'r', '.', 

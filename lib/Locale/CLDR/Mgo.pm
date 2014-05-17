@@ -1,6 +1,6 @@
 package Locale::CLDR::Mgo;
 # This file auto generated from Data\common\main\mgo.xml
-#	on Mon 12 May  8:42:24 am GMT
+#	on Sat 17 May  3:55:43 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -102,7 +102,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[c h l q v x])},
@@ -111,6 +113,10 @@ has 'characters' => (
 			punctuation => qr{(?^u:[, ; \: ! ? . ' ‘ ’ " “ ”])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', '{CH}', 'D', 'E', 'Ə', 'F', 'G', '{GH}', 'I', 'J', 'K', 'M', 'N', 'Ŋ', 'O', 'Ɔ', 'P', 'R', 'S', 'T', 'U', 'W', 'Y', 'Z', 'ʼ'], };
+},
 );
 
 has 'ellipsis' => (
@@ -529,8 +535,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{PM},
 					'am' => q{AM},
+					'pm' => q{PM},
 				},
 			},
 		},
@@ -614,10 +620,10 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			d => q{d},
 		},
-		'gregorian' => {
+		'generic' => {
 			d => q{d},
 		},
 	} },
@@ -636,10 +642,10 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			fallback => '{0} – {1}',
 		},
-		'gregorian' => {
+		'generic' => {
 			fallback => '{0} – {1}',
 		},
 	} },

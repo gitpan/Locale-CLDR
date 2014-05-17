@@ -1,6 +1,6 @@
 package Locale::CLDR::Se;
 # This file auto generated from Data\common\main\se.xml
-#	on Mon 12 May  9:15:48 am GMT
+#	on Sat 17 May  4:29:25 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
@@ -557,7 +557,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[à ç é è í ń ñ ó ò q ú w x y ü ø æ å ä ã ö])},
@@ -565,6 +567,10 @@ has 'characters' => (
 			main => qr{(?^u:[a á b c č d đ e f g h i j k l m n ŋ o p r s š t ŧ u v z ž])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'Á', 'B', 'C', 'Č', 'D', 'Đ', 'E', 'É', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'P', 'Q', 'R', 'S', 'Š', 'T', 'Ŧ', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Ž', 'Ø', 'Æ', 'Å', 'Ä', 'Ö'], };
+},
 );
 
 has 'quote_start' => (
@@ -1786,8 +1792,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{eahketbeaivet},
 					'am' => q{iđitbeaivet},
+					'pm' => q{eahketbeaivet},
 				},
 				'abbreviated' => {
 					'pm' => q{e.b.},

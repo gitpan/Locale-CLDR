@@ -1,6 +1,6 @@
 package Locale::CLDR::Ru;
 # This file auto generated from Data\common\main\ru.xml
-#	on Mon 12 May  9:12:47 am GMT
+#	on Sat 17 May  4:26:23 pm GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use version;
@@ -1321,7 +1321,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[{а́} {е́} {и́} {о́} {у́} {ы́} {э́} {ю́} {я́}])},
@@ -1330,6 +1332,10 @@ has 'characters' => (
 			punctuation => qr{(?^u:[\- ‐ – — , ; \: ! ? . … ' ‘ ‚ " “ „ « » ( ) \[ \] \{ \} § @ * / \& #])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ы', 'Э', 'Ю', 'Я'], };
+},
 );
 
 has 'ellipsis' => (
@@ -5584,17 +5590,17 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
+				'wide' => {
+					'pm' => q{PM},
+					'am' => q{AM},
+				},
 				'narrow' => {
 					'pm' => q{PM},
 					'am' => q{AM},
 				},
 				'abbreviated' => {
-					'pm' => q{PM},
 					'am' => q{AM},
-				},
-				'wide' => {
 					'pm' => q{PM},
-					'am' => q{AM},
 				},
 			},
 		},
@@ -6015,39 +6021,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'chinese' => {
-			E => q{ccc},
-			Ed => q{E, d},
-			Gy => q{U},
-			GyMMM => q{LLL U},
-			GyMMMEd => q{E, d MMM U},
-			GyMMMd => q{d MMM U},
-			H => q{H},
-			Hm => q{H:mm},
-			Hms => q{H:mm:ss},
-			M => q{L},
-			MEd => q{E, dd.MM},
-			MMM => q{LLL},
-			MMMEd => q{ccc, d MMM},
-			MMMd => q{d MMM},
-			Md => q{dd.MM},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{U},
-			yyyy => q{U},
-			yyyyM => q{MM.y},
-			yyyyMEd => q{E, dd.MM.y},
-			yyyyMMM => q{LLL U},
-			yyyyMMMEd => q{E, d MMM U},
-			yyyyMMMM => q{LLLL U},
-			yyyyMMMd => q{d MMM U},
-			yyyyMd => q{dd.MM.y},
-			yyyyQQQ => q{QQQ U},
-			yyyyQQQQ => q{QQQQ U},
-		},
 		'generic' => {
 			E => q{ccc},
 			Ed => q{E, d},
@@ -6080,6 +6053,39 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{dd.MM.y G},
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y 'г'. G},
+		},
+		'chinese' => {
+			E => q{ccc},
+			Ed => q{E, d},
+			Gy => q{U},
+			GyMMM => q{LLL U},
+			GyMMMEd => q{E, d MMM U},
+			GyMMMd => q{d MMM U},
+			H => q{H},
+			Hm => q{H:mm},
+			Hms => q{H:mm:ss},
+			M => q{L},
+			MEd => q{E, dd.MM},
+			MMM => q{LLL},
+			MMMEd => q{ccc, d MMM},
+			MMMd => q{d MMM},
+			Md => q{dd.MM},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{U},
+			yyyy => q{U},
+			yyyyM => q{MM.y},
+			yyyyMEd => q{E, dd.MM.y},
+			yyyyMMM => q{LLL U},
+			yyyyMMMEd => q{E, d MMM U},
+			yyyyMMMM => q{LLLL U},
+			yyyyMMMd => q{d MMM U},
+			yyyyMd => q{dd.MM.y},
+			yyyyQQQ => q{QQQ U},
+			yyyyQQQQ => q{QQQQ U},
 		},
 		'gregorian' => {
 			E => q{ccc},

@@ -1,6 +1,6 @@
 package Locale::CLDR::Lkt;
 # This file auto generated from Data\common\main\lkt.xml
-#	on Mon 12 May  8:34:12 am GMT
+#	on Sat 17 May  3:47:29 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
@@ -220,7 +220,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[c d f {ȟʼ} j q r {sʼ} {šʼ} v x])},
@@ -229,6 +231,10 @@ has 'characters' => (
 			punctuation => qr{(?^u:[\- ‐ – — , ; \: ! ? . " “ ” ( ) \[ \] @ * / \& #])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'Č', 'E', 'G', 'Ǧ', 'H', 'Ȟ', 'I', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'P', 'S', 'Š', 'T', 'U', 'W', 'Y', 'Z', 'Ž'], };
+},
 );
 
 has 'units' => (

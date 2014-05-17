@@ -1,6 +1,6 @@
 package Locale::CLDR::Vun::Any::Tz;
 # This file auto generated from Data\common\main\vun_TZ.xml
-#	on Mon 12 May  9:49:23 am GMT
+#	on Sat 17 May  5:03:22 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

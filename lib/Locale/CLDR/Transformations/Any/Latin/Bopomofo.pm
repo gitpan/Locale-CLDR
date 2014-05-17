@@ -1,6 +1,6 @@
 package Locale::CLDR::Transformations::Any::Latin::Bopomofo;
 # This file auto generated from Data\common\transforms\Latin-Bopomofo.xml
-#	on Mon 12 May  8:27:11 pm GMT
+#	on Sat 17 May  2:14:13 pm GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
 use version;

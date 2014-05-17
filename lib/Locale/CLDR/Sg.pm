@@ -1,6 +1,6 @@
 package Locale::CLDR::Sg;
 # This file auto generated from Data\common\main\sg.xml
-#	on Mon 12 May  9:15:56 am GMT
+#	on Sat 17 May  4:29:33 pm GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use version;
@@ -318,7 +318,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[c q x])},
@@ -326,6 +328,10 @@ has 'characters' => (
 			main => qr{(?^u:[a â ä b d e ê ë f g h i î ï j k l m n o ô ö p r s t u ù û ü v w y z])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'Y', 'Z'], };
+},
 );
 
 has 'quote_start' => (

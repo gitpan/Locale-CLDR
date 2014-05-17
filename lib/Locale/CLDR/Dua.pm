@@ -1,6 +1,6 @@
 package Locale::CLDR::Dua;
 # This file auto generated from Data\common\main\dua.xml
-#	on Mon 12 May  7:31:35 am GMT
+#	on Sat 17 May  2:44:10 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -49,7 +49,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[h q v x z])},
@@ -57,6 +59,10 @@ has 'characters' => (
 			main => qr{(?^u:[a á b ɓ c d ɗ e é ɛ {ɛ́} f g i í j k l m n {ny} ŋ o ó ɔ {ɔ́} p r s t u ú ū w y])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'Ɓ', 'C', 'D', 'Ɗ', 'E', 'Ɛ', 'F', 'G', 'I', 'J', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'Ɔ', 'P', 'S', 'T', 'U', 'W', 'Y'], };
+},
 );
 
 has 'quote_start' => (

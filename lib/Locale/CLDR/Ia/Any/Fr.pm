@@ -1,6 +1,6 @@
 package Locale::CLDR::Ia::Any::Fr;
 # This file auto generated from Data\common\main\ia_FR.xml
-#	on Mon 12 May  8:09:38 am GMT
+#	on Sat 17 May  3:22:46 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

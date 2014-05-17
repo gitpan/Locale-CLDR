@@ -1,6 +1,6 @@
 package Locale::CLDR::En::Any::Ms;
 # This file auto generated from Data\common\main\en_MS.xml
-#	on Mon 12 May  7:39:18 am GMT
+#	on Sat 17 May  2:52:06 pm GMT
 # XML file generated 2013-08-22 18:59:54 -0500 (Thu, 22 Aug 2013)
 
 use version;

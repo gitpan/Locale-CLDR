@@ -1,6 +1,6 @@
 package Locale::CLDR::Ur;
 # This file auto generated from Data\common\main\ur.xml
-#	on Mon 12 May  9:44:44 am GMT
+#	on Sat 17 May  4:58:40 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -814,7 +814,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[؀؁؂؃‌‍‎‏ ً ٌ ٍ َ ُ ِ ّ ْ ٔ ٖ ٗ ٘ ٰ ۃ ٻ ٺ ټ ٽ ي])},
@@ -823,6 +825,10 @@ has 'characters' => (
 			punctuation => qr{(?^u:[، ؍ ٫ ٬ ؛ \: ؟ . ۔ ( ) \[ \]])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['ا', 'ب', 'پ', 'ت', 'ٹ', 'ث', 'ج', 'چ', 'ح', 'خ', 'د', 'ڈ', 'ذ', 'ر', 'ڑ', 'ز', 'ژ', 'س', 'ش', 'ص', 'ض', 'ط', 'ظ', 'ع', 'غ', 'ف', 'ق', 'ک', 'گ', 'ل', 'م', 'ن', 'و', 'ہ', 'ھ', 'ء', 'ی', 'ے'], };
+},
 );
 
 has 'ellipsis' => (
@@ -2855,13 +2861,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'abbreviated' => {
-					'am' => q{قبل دوپہر},
-					'pm' => q{بعد دوپہر},
-				},
 				'wide' => {
 					'am' => q{قبل دوپہر},
 					'pm' => q{بعد دوپہر},
+				},
+				'abbreviated' => {
+					'pm' => q{بعد دوپہر},
+					'am' => q{قبل دوپہر},
 				},
 			},
 		},

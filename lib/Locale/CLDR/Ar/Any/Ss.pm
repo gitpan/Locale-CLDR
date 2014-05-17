@@ -1,6 +1,6 @@
 package Locale::CLDR::Ar::Any::Ss;
 # This file auto generated from Data\common\main\ar_SS.xml
-#	on Mon 12 May  7:07:58 am GMT
+#	on Sat 17 May  2:20:13 pm GMT
 # XML file generated 2013-08-18 23:26:52 -0500 (Sun, 18 Aug 2013)
 
 use version;

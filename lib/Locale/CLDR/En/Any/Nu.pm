@@ -1,6 +1,6 @@
 package Locale::CLDR::En::Any::Nu;
 # This file auto generated from Data\common\main\en_NU.xml
-#	on Mon 12 May  7:39:19 am GMT
+#	on Sat 17 May  2:52:08 pm GMT
 # XML file generated 2013-08-22 18:59:54 -0500 (Thu, 22 Aug 2013)
 
 use version;

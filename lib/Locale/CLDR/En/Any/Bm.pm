@@ -1,6 +1,6 @@
 package Locale::CLDR::En::Any::Bm;
 # This file auto generated from Data\common\main\en_BM.xml
-#	on Mon 12 May  7:39:08 am GMT
+#	on Sat 17 May  2:51:56 pm GMT
 # XML file generated 2013-08-07 23:47:50 -0500 (Wed, 07 Aug 2013)
 
 use version;

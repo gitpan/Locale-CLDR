@@ -1,6 +1,6 @@
 package Locale::CLDR::Pa::Arab;
 # This file auto generated from Data\common\main\pa_Arab.xml
-#	on Mon 12 May  9:03:33 am GMT
+#	on Sat 17 May  4:17:03 pm GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use version;
@@ -78,7 +78,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[‎‏ أ ٻ ة ٺ ټ ٽ])},
@@ -86,6 +88,10 @@ has 'characters' => (
 			main => qr{(?^u:[ُ ء آ ؤ ئ ا ب پ ت ث ٹ ج چ ح خ د ذ ڈ ر ز ڑ ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن ں ه ھ ہ و ی ے])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['ء', 'آ', 'ؤ', 'ئ', 'ا', 'ب', 'پ', 'ت', 'ث', 'ٹ', 'ج', 'چ', 'ح', 'خ', 'د', 'ذ', 'ڈ', 'ر', 'ز', 'ڑ', 'ژ', 'س', 'ش', 'ص', 'ض', 'ط', 'ظ', 'ع', 'غ', 'ف', 'ق', 'ک', 'گ', 'ل', 'م', 'ن', 'ں', 'ه', 'ھ', 'ہ', 'و', 'ی', 'ے'], };
+},
 );
 
 has 'yesstr' => (

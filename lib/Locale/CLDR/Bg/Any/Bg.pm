@@ -1,6 +1,6 @@
 package Locale::CLDR::Bg::Any::Bg;
 # This file auto generated from Data\common\main\bg_BG.xml
-#	on Mon 12 May  7:13:19 am GMT
+#	on Sat 17 May  2:25:38 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

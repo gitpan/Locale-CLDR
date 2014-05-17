@@ -1,6 +1,6 @@
 package Locale::CLDR::Gl::Any::Es;
 # This file auto generated from Data\common\main\gl_ES.xml
-#	on Mon 12 May  7:56:10 am GMT
+#	on Sat 17 May  3:09:14 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

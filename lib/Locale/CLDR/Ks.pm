@@ -1,6 +1,6 @@
 package Locale::CLDR::Ks;
 # This file auto generated from Data\common\main\ks.xml
-#	on Mon 12 May  8:29:08 am GMT
+#	on Sat 17 May  3:42:23 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -1024,13 +1024,19 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[‎‏])},
 			main => qr{(?^u:[۪ۭ َ ُ ِ ٔ ٕ ٖ ٗ ٚ ٛ ء آ أ ٲ ؤ ا ٮ ب پ ت ث ٹ ج چ ح خ د ذ ڈ ر ز ڑ ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن ں ھ ہ و ۄ ی ۍ ے])},
 		};
 	},
+EOT
+: sub {
+	return { index =>  };
+},
 );
 
 has 'units' => (

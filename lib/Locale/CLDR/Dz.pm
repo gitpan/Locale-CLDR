@@ -1,6 +1,6 @@
 package Locale::CLDR::Dz;
 # This file auto generated from Data\common\main\dz.xml
-#	on Mon 12 May  7:31:38 am GMT
+#	on Sat 17 May  2:44:13 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -660,7 +660,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[྄ ཊ ཋ ཌ ཎ ཾ ཥ ྀ ཻ ཽ ྚ ྛ ྜ ྞ ྺ ྻ ྼ])},
@@ -669,6 +671,10 @@ has 'characters' => (
 			punctuation => qr{(?^u:[\- ‐ – — , ; \: ! ? . … ' ‘ ’ " “ ” ( ) \[ \] ༼ ༽ § @ * / \& # † ‡ ༄ ༅ ༆ ༈ ༉ ༊ ࿐ ࿑ ༒ ࿒ ࿓ ࿔ ༶ ྾ ྿ ༌ ། ༎ ༏ ༐ ༑ ༔ ༴])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['ཀ', 'ཁ', 'ག', 'ང', 'ཅ', 'ཆ', 'ཇ', 'ཉ', 'ཏ', 'ཐ', 'ད', 'ན', 'པ', 'ཕ', 'བ', 'མ', 'ཙ', 'ཚ', 'ཛ', 'ཝ', 'ཞ', 'ཟ', 'འ', 'ཡ', 'ར', 'ལ', 'ཤ', 'ས', 'ཧ', 'ཨ'], };
+},
 );
 
 has 'ellipsis' => (
@@ -1610,8 +1616,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ཕྱི་ཆ་},
 					'am' => q{སྔ་ཆ་},
+					'pm' => q{ཕྱི་ཆ་},
 				},
 				'narrow' => {
 					'am' => q{སྔ་ཆ་},

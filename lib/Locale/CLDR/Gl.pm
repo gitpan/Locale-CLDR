@@ -1,6 +1,6 @@
 package Locale::CLDR::Gl;
 # This file auto generated from Data\common\main\gl.xml
-#	on Mon 12 May  7:55:04 am GMT
+#	on Sat 17 May  3:08:08 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
@@ -811,7 +811,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[ª à â ä ã ç è ê ë ì î ï º ò ô ö õ ù û])},
@@ -820,6 +822,10 @@ has 'characters' => (
 			punctuation => qr{(?^u:[\- ‐ – — , ; \: ! ? . … ' ‘ ’ " “ ” ( ) \[ \] § @ * / \& # † ‡ ′ ″])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'], };
+},
 );
 
 has 'ellipsis' => (
@@ -2780,17 +2786,17 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'pm' => q{p.m.},
-					'am' => q{a.m.},
+				'narrow' => {
+					'pm' => q{p},
+					'am' => q{a},
 				},
 				'abbreviated' => {
 					'pm' => q{p.m.},
 					'am' => q{a.m.},
 				},
-				'narrow' => {
-					'pm' => q{p},
-					'am' => q{a},
+				'wide' => {
+					'am' => q{a.m.},
+					'pm' => q{p.m.},
 				},
 			},
 		},

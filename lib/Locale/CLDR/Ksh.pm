@@ -1,6 +1,6 @@
 package Locale::CLDR::Ksh;
 # This file auto generated from Data\common\main\ksh.xml
-#	on Mon 12 May  8:31:34 am GMT
+#	on Sat 17 May  3:44:50 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -762,7 +762,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[á à ă â å ä ã ā æ ç é è ĕ ê ë ē ğ í ì ĭ î ï ī ĳ ı ł ñ ó ò ŏ ô ö ø ō œ ú ù ŭ û ü ū ÿ])},
@@ -771,6 +773,10 @@ has 'characters' => (
 			punctuation => qr{(?^u:[_ ‐ – — ⸗ , ; \: ! ? . … ' ‘ ‚ " “ „ ( ) \[ \] \{ \} § @ * / \& # % † ‡ ° < = > ~ \$])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'], };
+},
 );
 
 has 'quote_start' => (
@@ -2911,19 +2917,19 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'pm' => q{Uhr nommendaachs},
-					'am' => q{Uhr vörmiddaachs},
-				},
 				'abbreviated' => {
 					'pm' => q{n.m.},
 					'am' => q{v.m.},
 				},
+				'wide' => {
+					'am' => q{Uhr vörmiddaachs},
+					'pm' => q{Uhr nommendaachs},
+				},
 			},
 			'stand-alone' => {
 				'wide' => {
-					'am' => q{Vormittag},
 					'pm' => q{Nachmittag},
+					'am' => q{Vormittag},
 				},
 			},
 		},

@@ -1,6 +1,6 @@
 package Locale::CLDR::Ak;
 # This file auto generated from Data\common\main\ak.xml
-#	on Mon 12 May  7:03:09 am GMT
+#	on Sat 17 May  2:15:22 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -316,7 +316,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[c j q v z])},
@@ -324,6 +326,10 @@ has 'characters' => (
 			main => qr{(?^u:[a b d e ɛ f g h i k l m n o ɔ p r s t u w y])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'E', 'Ɛ', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'Ɔ', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'], };
+},
 );
 
 has 'quote_start' => (

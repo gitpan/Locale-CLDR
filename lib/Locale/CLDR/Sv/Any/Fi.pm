@@ -1,6 +1,6 @@
 package Locale::CLDR::Sv::Any::Fi;
 # This file auto generated from Data\common\main\sv_FI.xml
-#	on Mon 12 May  9:30:17 am GMT
+#	on Sat 17 May  4:44:02 pm GMT
 # XML file generated 2014-02-26 15:19:38 -0600 (Wed, 26 Feb 2014)
 
 use version;
@@ -162,13 +162,19 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[ã ç ë í ñ ó š ÿ ü ž])},
 			main => qr{(?^u:[a à b c d e é f g h i j k l m n o p q r s t u v x y z å ä ö])},
 		};
 	},
+EOT
+: sub {
+	return { index =>  };
+},
 );
 
 has 'units' => (

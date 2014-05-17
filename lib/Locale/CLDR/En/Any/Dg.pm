@@ -1,6 +1,6 @@
 package Locale::CLDR::En::Any::Dg;
 # This file auto generated from Data\common\main\en_DG.xml
-#	on Mon 12 May  7:39:10 am GMT
+#	on Sat 17 May  2:51:58 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use version;

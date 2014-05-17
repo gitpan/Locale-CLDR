@@ -1,6 +1,6 @@
 package Locale::CLDR::Zh::Hant::Hk;
 # This file auto generated from Data\common\main\zh_Hant_HK.xml
-#	on Mon 12 May  9:55:46 am GMT
+#	on Sat 17 May  5:09:49 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -667,79 +667,79 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'buddhist') {
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-			last SWITCH;
-			}
-			if ($_ eq 'gregorian') {
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-			last SWITCH;
-			}
 			if ($_ eq 'roc') {
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'buddhist') {
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
 			last SWITCH;
 			}
 			if ($_ eq 'chinese') {
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
 			last SWITCH;
 			}
 			if ($_ eq 'generic') {
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'gregorian') {
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
 			last SWITCH;
 			}
 		}
@@ -847,41 +847,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			Ed => q{d E},
-			GyMMMEd => q{G y 年 M 月 d 日 (E)},
-			MEd => q{E, d/M},
-			MMMEd => q{M月d日 (E)},
-			MMdd => q{dd/MM},
-			Md => q{d/M},
-			yM => q{M/y},
-			yMEd => q{d/M/y（E）},
-			yMM => q{MM/y},
-			yMMM => q{y 年 M 月},
-			yMMMEd => q{y 年 M 月 d 日 (E)},
-			yMMMM => q{y 年 M 月},
-			yMMMd => q{y 年 M 月 d 日},
-			yMd => q{d/M/y},
-		},
-		'buddhist' => {
-			MEd => q{M-d（E）},
-			Md => q{M-d},
-		},
-		'generic' => {
-			Ed => q{d E},
-			GyMMM => q{G y 年 M 月},
-			GyMMMEd => q{G y 年 M 月 d 日 (E)},
-			MEd => q{E, d/M},
-			MMMEd => q{M 月 d 日 (E)},
-			MMMd => q{M 月 d 日},
-			Md => q{d/M},
-			yyyyM => q{M/yGGGGG},
-			yyyyMEd => q{E, d/M/yGGGGG},
-			yyyyMMMEd => q{G y 年 M 月 d 日 (E)},
-			yyyyMd => q{d/M/yGGGGG},
-			yyyyQQQ => q{G y 年第QQQ},
-			yyyyQQQQ => q{G y 年QQQQ},
-		},
 		'roc' => {
 			Gy => q{G y 年},
 			GyMMM => q{G y 年 M 月},
@@ -902,6 +867,41 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{G y 年第QQQ},
 			yyyyQQQQ => q{G y 年QQQQ},
 		},
+		'buddhist' => {
+			MEd => q{M-d（E）},
+			Md => q{M-d},
+		},
+		'generic' => {
+			Ed => q{d E},
+			GyMMM => q{G y 年 M 月},
+			GyMMMEd => q{G y 年 M 月 d 日 (E)},
+			MEd => q{E, d/M},
+			MMMEd => q{M 月 d 日 (E)},
+			MMMd => q{M 月 d 日},
+			Md => q{d/M},
+			yyyyM => q{M/yGGGGG},
+			yyyyMEd => q{E, d/M/yGGGGG},
+			yyyyMMMEd => q{G y 年 M 月 d 日 (E)},
+			yyyyMd => q{d/M/yGGGGG},
+			yyyyQQQ => q{G y 年第QQQ},
+			yyyyQQQQ => q{G y 年QQQQ},
+		},
+		'gregorian' => {
+			Ed => q{d E},
+			GyMMMEd => q{G y 年 M 月 d 日 (E)},
+			MEd => q{E, d/M},
+			MMMEd => q{M月d日 (E)},
+			MMdd => q{dd/MM},
+			Md => q{d/M},
+			yM => q{M/y},
+			yMEd => q{d/M/y（E）},
+			yMM => q{MM/y},
+			yMMM => q{y 年 M 月},
+			yMMMEd => q{y 年 M 月 d 日 (E)},
+			yMMMM => q{y 年 M 月},
+			yMMMd => q{y 年 M 月 d 日},
+			yMd => q{d/M/y},
+		},
 	} },
 );
 
@@ -918,6 +918,48 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'generic' => {
+			MEd => {
+				M => q{d/M (E) 至 d/M (E)},
+				d => q{d/M (E) 至 d/M (E)},
+			},
+			MMMEd => {
+				M => q{M 月 d 日 (E) 至 M 月 d 日 (E)},
+				d => q{M 月 d 日 (E) 至 d 日 (E)},
+			},
+			MMMd => {
+				M => q{M 月 d 日至 M 月 d 日},
+				d => q{M 月 d 日至 d 日},
+			},
+			Md => {
+				M => q{d/M 至 d/M},
+				d => q{d/M 至 d/M},
+			},
+			y => {
+				y => q{G y 年至 y 年},
+			},
+			yM => {
+				M => q{G M/y 至 M/y},
+			},
+			yMEd => {
+				M => q{G d/M/y (E) 至 d/M/y (E)},
+				d => q{G d/M/y (E) 至 d/M/y (E)},
+				y => q{G d/M/y (E) 至 d/M/y (E)},
+			},
+			yMMM => {
+				y => q{G y 年 M 月至 y 年 M 月},
+			},
+			yMMMEd => {
+				M => q{G y 年 M 月 d 日 (E) 至 M 月 d 日 (E)},
+				d => q{G y 年 M 月 d 日 (E) 至 d 日 (E)},
+				y => q{G y 年 M 月 d 日 (E) 至 y 年 M 月 d 日 (E)},
+			},
+			yMd => {
+				M => q{G d/M/y 至 d/M/y},
+				d => q{G d/M/y 至 d/M/y},
+				y => q{G d/M/y 至 d/M/y},
+			},
+		},
 		'gregorian' => {
 			MEd => {
 				M => q{d/M (E) 至 d/M (E)},
@@ -966,48 +1008,6 @@ has 'datetime_formats_interval' => (
 				M => q{d/M/y 至 d/M/y},
 				d => q{d/M/y 至 d/M/y},
 				y => q{d/M/y 至 d/M/y},
-			},
-		},
-		'generic' => {
-			MEd => {
-				M => q{d/M (E) 至 d/M (E)},
-				d => q{d/M (E) 至 d/M (E)},
-			},
-			MMMEd => {
-				M => q{M 月 d 日 (E) 至 M 月 d 日 (E)},
-				d => q{M 月 d 日 (E) 至 d 日 (E)},
-			},
-			MMMd => {
-				M => q{M 月 d 日至 M 月 d 日},
-				d => q{M 月 d 日至 d 日},
-			},
-			Md => {
-				M => q{d/M 至 d/M},
-				d => q{d/M 至 d/M},
-			},
-			y => {
-				y => q{G y 年至 y 年},
-			},
-			yM => {
-				M => q{G M/y 至 M/y},
-			},
-			yMEd => {
-				M => q{G d/M/y (E) 至 d/M/y (E)},
-				d => q{G d/M/y (E) 至 d/M/y (E)},
-				y => q{G d/M/y (E) 至 d/M/y (E)},
-			},
-			yMMM => {
-				y => q{G y 年 M 月至 y 年 M 月},
-			},
-			yMMMEd => {
-				M => q{G y 年 M 月 d 日 (E) 至 M 月 d 日 (E)},
-				d => q{G y 年 M 月 d 日 (E) 至 d 日 (E)},
-				y => q{G y 年 M 月 d 日 (E) 至 y 年 M 月 d 日 (E)},
-			},
-			yMd => {
-				M => q{G d/M/y 至 d/M/y},
-				d => q{G d/M/y 至 d/M/y},
-				y => q{G d/M/y 至 d/M/y},
 			},
 		},
 	} },

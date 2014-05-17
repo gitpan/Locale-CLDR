@@ -1,6 +1,6 @@
 package Locale::CLDR::Yo;
 # This file auto generated from Data\common\main\yo.xml
-#	on Mon 12 May  9:49:32 am GMT
+#	on Sat 17 May  5:03:31 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
@@ -371,7 +371,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[c q v x z])},
@@ -379,6 +381,10 @@ has 'characters' => (
 			main => qr{(?^u:[a á à b d e é è ẹ {ẹ́} {ẹ̀} f g {gb} h i í ì j k l m n o ó ò ọ {ọ́} {ọ̀} p r s ṣ t u ú ù w y])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'], };
+},
 );
 
 has 'quote_start' => (
@@ -845,8 +851,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{Ọ̀sán},
 					'am' => q{Àárọ̀},
+					'pm' => q{Ọ̀sán},
 				},
 			},
 		},

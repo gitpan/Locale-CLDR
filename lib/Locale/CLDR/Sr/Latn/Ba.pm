@@ -1,6 +1,6 @@
 package Locale::CLDR::Sr::Latn::Ba;
 # This file auto generated from Data\common\main\sr_Latn_BA.xml
-#	on Mon 12 May  9:28:27 am GMT
+#	on Sat 17 May  4:42:11 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

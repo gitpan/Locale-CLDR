@@ -1,9 +1,5 @@
 package Locale::CLDR;
 
-use version;
-
-our $VERSION = version->declare('v0.25.1');
-
 =encoding utf8
 
 =head1 NAME
@@ -18,6 +14,8 @@ Version 0.25.1
 
 This module provides a locale object you can use to localise your output.
 The localisation data comes from the Unicode Common Locale Data Repository.
+Most of this code can be used with Perl version 5.10 or above. There are a
+few parts of the code that require version 5.18 or above.
 
 =head1 USAGE
 
@@ -40,6 +38,9 @@ or
 =cut
 
 use v5.10;
+use version;
+our $VERSION = version->declare('v0.25.1');
+
 use open ':encoding(utf8)';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
@@ -2077,6 +2078,8 @@ sub is_exemplar_character {
 	my ($self, @parameters) = @_;
 	unshift @parameters, 'main' if @parameters == 1;
 
+	_new_perl() unless $parameters[0] eq 'index';
+	
 	my @bundles = $self->_find_bundle('characters');
 	foreach my $bundle (@bundles) {
 		my $characters = $bundle->characters->{lc $parameters[0]};

@@ -1,6 +1,6 @@
 package Locale::CLDR::Mr;
 # This file auto generated from Data\common\main\mr.xml
-#	on Mon 12 May  8:49:34 am GMT
+#	on Sat 17 May  4:02:57 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
@@ -1171,7 +1171,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[‌‍])},
@@ -1180,6 +1182,10 @@ has 'characters' => (
 			punctuation => qr{(?^u:[\- ‐ – — , ; \: ! ? . … ' ‘ ’ " “ ” ( ) \[ \] @ * / \& # ′ ″])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['\u200D', 'ॐ', '\u0902', 'ः', 'अ', 'आ', 'इ', 'ई', 'उ', 'ऊ', 'ऋ', 'ऌ', 'ए', 'ऐ', 'ऑ', 'ओ', 'औ', 'क', 'ख', 'ग', 'घ', 'ङ', 'च', 'छ', 'ज', 'झ', 'ञ', 'ट', 'ठ', 'ड', 'ढ', 'ण', 'त', 'थ', 'द', 'ध', 'न', 'प', 'फ', 'ब', 'भ', 'म', 'य', 'र', 'ल', 'व', 'श', 'ष', 'स', 'ह', 'ळ', 'ऽ', '\u0945', '\u094D'], };
+},
 );
 
 has 'ellipsis' => (
@@ -3506,17 +3512,17 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'am' => q{[AM]},
-					'pm' => q{[PM]},
-				},
 				'abbreviated' => {
 					'am' => q{AM},
 					'pm' => q{PM},
 				},
 				'narrow' => {
-					'am' => q{AM},
 					'pm' => q{PM},
+					'am' => q{AM},
+				},
+				'wide' => {
+					'am' => q{[AM]},
+					'pm' => q{[PM]},
 				},
 			},
 		},

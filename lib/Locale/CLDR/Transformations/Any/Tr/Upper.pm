@@ -1,6 +1,6 @@
 package Locale::CLDR::Transformations::Any::Tr::Upper;
 # This file auto generated from Data\common\transforms\tr-Upper.xml
-#	on Mon 12 May  8:27:24 pm GMT
+#	on Sat 17 May  2:14:26 pm GMT
 # XML file generated 2013-03-01 08:26:02 -0600 (Fri, 01 Mar 2013)
 
 use version;

@@ -1,6 +1,6 @@
 package Locale::CLDR::Tn;
 # This file auto generated from Data\common\main\tn.xml
-#	on Mon 12 May  9:38:22 am GMT
+#	on Sat 17 May  4:52:13 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
@@ -115,7 +115,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[c q v x z])},
@@ -123,6 +125,10 @@ has 'characters' => (
 			main => qr{(?^u:[a b d e ê f g h i j k l m n o ô p r s t u w y])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'], };
+},
 );
 
 has 'quote_start' => (

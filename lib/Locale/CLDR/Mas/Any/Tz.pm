@@ -1,6 +1,6 @@
 package Locale::CLDR::Mas::Any::Tz;
 # This file auto generated from Data\common\main\mas_TZ.xml
-#	on Mon 12 May  8:42:13 am GMT
+#	on Sat 17 May  3:55:32 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

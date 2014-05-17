@@ -1,6 +1,6 @@
 package Locale::CLDR::Sw::Any::Ke;
 # This file auto generated from Data\common\main\sw_KE.xml
-#	on Mon 12 May  9:31:01 am GMT
+#	on Sat 17 May  4:44:46 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use version;

@@ -1,6 +1,6 @@
 package Locale::CLDR::Az::Cyrl;
 # This file auto generated from Data\common\main\az_Cyrl.xml
-#	on Mon 12 May  7:10:30 am GMT
+#	on Sat 17 May  2:22:47 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -67,7 +67,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[ц щ ъ ь э ю я])},
@@ -75,6 +77,10 @@ has 'characters' => (
 			main => qr{(?^u:[а ә б в г ғ д е ж з и й ј к ҝ л м н о ө п р с т у ү ф х һ ч ҹ ш ы])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['А', 'Ә', 'Б', 'В', 'Г', 'Ғ', 'Д', 'Е', 'Ж', 'З', 'И', 'Й', 'Ј', 'К', 'Ҝ', 'Л', 'М', 'Н', 'О', 'Ө', 'П', 'Р', 'С', 'Т', 'У', 'Ү', 'Ф', 'Х', 'Һ', 'Ч', 'Ҹ', 'Ш', 'Ы'], };
+},
 );
 
 has 'quote_start' => (

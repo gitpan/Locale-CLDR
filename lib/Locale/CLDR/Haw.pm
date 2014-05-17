@@ -1,6 +1,6 @@
 package Locale::CLDR::Haw;
 # This file auto generated from Data\common\main\haw.xml
-#	on Mon 12 May  7:59:29 am GMT
+#	on Sat 17 May  3:12:34 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
@@ -117,7 +117,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[b c d f g j q r s t v x y z])},
@@ -125,6 +127,10 @@ has 'characters' => (
 			main => qr{(?^u:[a ā e ē i ī o ō u ū h k l m n p w ʻ])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'E', 'I', 'O', 'U', 'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'ʻ', 'X', 'Y', 'Z'], };
+},
 );
 
 has 'units' => (

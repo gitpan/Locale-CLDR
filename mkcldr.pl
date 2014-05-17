@@ -1518,19 +1518,25 @@ has 'characters' => (
 \tis\t\t\t=> 'ro',
 \tisa\t\t\t=> 'HashRef',
 \tinit_arg\t=> undef,
-\tdefault\t\t=> sub {
+\tdefault\t\t=> \$^V ge v5.18.0
+\t? eval <<'EOT'
+\tsub {
 \t\tno warnings 'experimental::regex_sets';
 \t\treturn {
 EOT
     foreach my $type (sort keys %data) {
         say $file "\t\t\t$type => $data{$type}";
     }
-    print $file <<EOT;
+    print $file <<EOFILE;
 \t\t};
 \t},
+EOT
+: sub {
+	return { index => $data{index} };
+},
 );
 
-EOT
+EOFILE
 }
 
 sub process_ellipsis {

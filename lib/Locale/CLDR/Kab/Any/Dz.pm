@@ -1,6 +1,6 @@
 package Locale::CLDR::Kab::Any::Dz;
 # This file auto generated from Data\common\main\kab_DZ.xml
-#	on Mon 12 May  8:19:38 am GMT
+#	on Sat 17 May  3:32:49 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

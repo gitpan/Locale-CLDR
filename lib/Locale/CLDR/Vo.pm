@@ -1,6 +1,6 @@
 package Locale::CLDR::Vo;
 # This file auto generated from Data\common\main\vo.xml
-#	on Mon 12 May  9:49:19 am GMT
+#	on Sat 17 May  5:03:18 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
@@ -37,7 +37,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[q w])},
@@ -46,6 +48,10 @@ has 'characters' => (
 			punctuation => qr{(?^u:[\- ‐ – — , ; \: ! ? . … ' ‘ ’ " “ ” « » ( ) \[ \] \{ \} § @ * / \& #])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'Ä', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'Ö', 'P', 'R', 'S', 'T', 'U', 'Ü', 'V', 'X', 'Y', 'Z'], };
+},
 );
 
 has 'ellipsis' => (
@@ -278,14 +284,14 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
+					'noon' => q{zedelo},
+					'night' => q{neito},
 					'afternoon' => q{poszedelo},
-					'am' => q{posz.},
-					'pm' => q{büz.},
 					'earlyMorning' => q{gödo},
 					'evening' => q{soaro},
+					'pm' => q{büz.},
+					'am' => q{posz.},
 					'morning' => q{büzedelo},
-					'night' => q{neito},
-					'noon' => q{zedelo},
 				},
 			},
 		},

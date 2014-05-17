@@ -1,6 +1,6 @@
 package Locale::CLDR::Mt;
 # This file auto generated from Data\common\main\mt.xml
-#	on Mon 12 May  8:52:23 am GMT
+#	on Sat 17 May  4:05:47 pm GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use version;
@@ -850,7 +850,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[c y])},
@@ -859,6 +861,10 @@ has 'characters' => (
 			punctuation => qr{(?^u:[\- , ; \: ! ? . ' ‘ ’ " “ ” ( ) \[ \] \{ \}])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'Ċ', 'C', 'D', 'E', 'F', 'Ġ', 'G', '{GĦ}', 'H', 'Ħ', 'I', '{IE}', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Ż', 'Z'], };
+},
 );
 
 has 'quote_start' => (
@@ -1174,8 +1180,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{WN},
 					'am' => q{QN},
+					'pm' => q{WN},
 				},
 			},
 		},

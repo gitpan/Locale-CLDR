@@ -1,6 +1,6 @@
 package Locale::CLDR::Se::Any::Fi;
 # This file auto generated from Data\common\main\se_FI.xml
-#	on Mon 12 May  9:15:49 am GMT
+#	on Sat 17 May  4:29:26 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use version;

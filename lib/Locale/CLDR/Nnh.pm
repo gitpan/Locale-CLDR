@@ -1,6 +1,6 @@
 package Locale::CLDR::Nnh;
 # This file auto generated from Data\common\main\nnh.xml
-#	on Mon 12 May  9:01:23 am GMT
+#	on Sat 17 May  4:14:52 pm GMT
 # XML file generated 2013-08-30 23:19:50 -0500 (Fri, 30 Aug 2013)
 
 use version;
@@ -90,7 +90,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[q r x])},
@@ -99,6 +101,10 @@ has 'characters' => (
 			punctuation => qr{(?^u:[, ; \: ! ? . ' ‘ ’ « »])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'E', 'Ɛ', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'Ɔ', 'P', '{Pf}', 'R', 'S', '{Sh}', 'T', '{Ts}', 'U', 'Ʉ', 'V', 'W', 'Ẅ', 'Y', 'Ÿ', 'Z', 'ʼ'], };
+},
 );
 
 has 'quote_start' => (

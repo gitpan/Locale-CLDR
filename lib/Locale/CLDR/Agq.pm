@@ -1,6 +1,6 @@
 package Locale::CLDR::Agq;
 # This file auto generated from Data\common\main\agq.xml
-#	on Mon 12 May  7:03:06 am GMT
+#	on Sat 17 May  2:15:18 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -317,7 +317,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[q r x])},
@@ -325,6 +327,10 @@ has 'characters' => (
 			main => qr{(?^u:[a à â ǎ ā b c d e è ê ě ē ɛ {ɛ̀} {ɛ̂} {ɛ̌} {ɛ̄} f g h i ì î ǐ ī ɨ {ɨ̀} {ɨ̂} {ɨ̌} {ɨ̄} k l m n ŋ o ò ô ǒ ō ɔ {ɔ̀} {ɔ̂} {ɔ̌} {ɔ̄} p s t u ù û ǔ ū ʉ {ʉ̀} {ʉ̂} {ʉ̌} {ʉ̄} v w y z ʔ])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'C', 'D', 'E', 'Ɛ', 'F', 'G', 'H', 'I', 'Ɨ', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'Ɔ', 'P', 'S', 'T', 'U', 'Ʉ', 'V', 'W', 'Y', 'Z', 'ʔ'], };
+},
 );
 
 has 'quote_start' => (
@@ -851,8 +857,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{a.k},
 					'am' => q{a.g},
+					'pm' => q{a.k},
 				},
 			},
 		},

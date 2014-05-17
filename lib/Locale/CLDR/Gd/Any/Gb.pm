@@ -1,6 +1,6 @@
 package Locale::CLDR::Gd::Any::Gb;
 # This file auto generated from Data\common\main\gd_GB.xml
-#	on Mon 12 May  7:55:02 am GMT
+#	on Sat 17 May  3:08:06 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

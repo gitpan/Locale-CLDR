@@ -1,6 +1,6 @@
 package Locale::CLDR::En::Any::Tt;
 # This file auto generated from Data\common\main\en_TT.xml
-#	on Mon 12 May  7:39:22 am GMT
+#	on Sat 17 May  2:52:11 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use version;

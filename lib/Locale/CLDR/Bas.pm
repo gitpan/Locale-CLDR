@@ -1,6 +1,6 @@
 package Locale::CLDR::Bas;
 # This file auto generated from Data\common\main\bas.xml
-#	on Mon 12 May  7:10:31 am GMT
+#	on Sat 17 May  2:22:48 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -314,7 +314,9 @@ has 'characters' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
 	init_arg	=> undef,
-	default		=> sub {
+	default		=> $^V ge v5.18.0
+	? eval <<'EOT'
+	sub {
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[q x])},
@@ -322,6 +324,10 @@ has 'characters' => (
 			main => qr{(?^u:[a á à â ǎ ā {a᷆}{a᷇} b ɓ c d e é è ê ě ē {e᷆}{e᷇} ɛ {ɛ́} {ɛ̀} {ɛ̂} {ɛ̌} {ɛ̄} {ɛ᷆}{ɛ᷇} f g h i í ì î ǐ ī {i᷆}{i᷇} j k l m n ń ǹ ŋ o ó ò ô ǒ ō {o᷆}{o᷇} ɔ {ɔ́} {ɔ̀} {ɔ̂} {ɔ̌} {ɔ̄} {ɔ᷆}{ɔ᷇} p r s t u ú ù û ǔ ū {u᷆}{u᷇} v w y z])},
 		};
 	},
+EOT
+: sub {
+	return { index => ['A', 'B', 'Ɓ', 'C', 'D', 'E', 'Ɛ', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'Ɔ', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'Y', 'Z'], };
+},
 );
 
 has 'quote_start' => (
@@ -939,7 +945,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -963,7 +969,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
