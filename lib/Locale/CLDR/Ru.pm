@@ -1,6 +1,6 @@
 package Locale::CLDR::Ru;
 # This file auto generated from Data\common\main\ru.xml
-#	on Sat 17 May  4:26:23 pm GMT
+#	on Sun 18 May 12:07:47 pm GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use version;
@@ -1334,9 +1334,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ы', 'Э', 'Ю', 'Я'], };
+		return { index => ['А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ы', 'Э', 'Ю', 'Я'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',
@@ -5590,15 +5591,15 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'pm' => q{PM},
-					'am' => q{AM},
-				},
 				'narrow' => {
-					'pm' => q{PM},
 					'am' => q{AM},
+					'pm' => q{PM},
 				},
 				'abbreviated' => {
+					'am' => q{AM},
+					'pm' => q{PM},
+				},
+				'wide' => {
 					'am' => q{AM},
 					'pm' => q{PM},
 				},

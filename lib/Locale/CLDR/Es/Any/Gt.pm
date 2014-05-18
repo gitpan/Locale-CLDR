@@ -1,6 +1,6 @@
 package Locale::CLDR::Es::Any::Gt;
 # This file auto generated from Data\common\main\es_GT.xml
-#	on Sat 17 May  2:54:04 pm GMT
+#	on Sun 18 May 10:34:09 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

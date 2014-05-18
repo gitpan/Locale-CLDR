@@ -1,6 +1,6 @@
 package Locale::CLDR::Ewo::Any::Cm;
 # This file auto generated from Data\common\main\ewo_CM.xml
-#	on Sat 17 May  2:58:22 pm GMT
+#	on Sun 18 May 10:38:29 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

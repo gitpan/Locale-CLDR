@@ -1,6 +1,6 @@
 package Locale::CLDR::Nl::Any::Bq;
 # This file auto generated from Data\common\main\nl_BQ.xml
-#	on Sat 17 May  4:13:43 pm GMT
+#	on Sun 18 May 11:55:04 am GMT
 # XML file generated 2013-08-22 18:59:54 -0500 (Thu, 22 Aug 2013)
 
 use version;

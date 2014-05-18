@@ -1,6 +1,6 @@
 package Locale::CLDR::He;
 # This file auto generated from Data\common\main\he.xml
-#	on Sat 17 May  3:12:37 pm GMT
+#	on Sun 18 May 10:52:55 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -1201,9 +1201,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ז', 'ח', 'ט', 'י', 'כ', 'ל', 'מ', 'נ', 'ס', 'ע', 'פ', 'צ', 'ק', 'ר', 'ש', 'ת'], };
+		return { index => ['א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ז', 'ח', 'ט', 'י', 'כ', 'ל', 'מ', 'נ', 'ס', 'ע', 'פ', 'צ', 'ק', 'ר', 'ש', 'ת'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',
@@ -4373,33 +4374,6 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{y QQQ},
 			yQQQQ => q{y QQQQ},
 		},
-		'hebrew' => {
-			Ed => q{E ה-d},
-			Gy => q{y G},
-			GyMMM => q{MMMM y G},
-			GyMMMEd => q{E, d MMMM y G},
-			GyMMMd => q{d MMMM y G},
-			M => q{MMMM},
-			MEd => q{E, d בMMMM},
-			MMM => q{MMMM},
-			MMMEd => q{E, d בMMMM},
-			MMMMEd => q{E, d בMMMM},
-			MMMMd => q{d בMMMM},
-			MMMd => q{d בMMMM},
-			Md => q{d בMMMM},
-			mmss => q{mm:ss},
-			y => q{y},
-			yyyy => q{y},
-			yyyyM => q{MMMM y},
-			yyyyMEd => q{E, d בMMMM y},
-			yyyyMMM => q{MMMM y},
-			yyyyMMMEd => q{E, d בMMMM y},
-			yyyyMMMM => q{MMMM y},
-			yyyyMMMd => q{d בMMMM y},
-			yyyyMd => q{d בMMMM y},
-			yyyyQQQ => q{QQQ y},
-			yyyyQQQQ => q{QQQQ y},
-		},
 		'islamic' => {
 			Ed => q{E ה-d},
 			Gy => q{y G},
@@ -4424,6 +4398,33 @@ has 'datetime_formats_available_formats' => (
 			yyyyMMMEd => q{E, d בMMM y},
 			yyyyMMMd => q{d בMMM y},
 			yyyyMd => q{d.M.y G},
+			yyyyQQQ => q{QQQ y},
+			yyyyQQQQ => q{QQQQ y},
+		},
+		'hebrew' => {
+			Ed => q{E ה-d},
+			Gy => q{y G},
+			GyMMM => q{MMMM y G},
+			GyMMMEd => q{E, d MMMM y G},
+			GyMMMd => q{d MMMM y G},
+			M => q{MMMM},
+			MEd => q{E, d בMMMM},
+			MMM => q{MMMM},
+			MMMEd => q{E, d בMMMM},
+			MMMMEd => q{E, d בMMMM},
+			MMMMd => q{d בMMMM},
+			MMMd => q{d בMMMM},
+			Md => q{d בMMMM},
+			mmss => q{mm:ss},
+			y => q{y},
+			yyyy => q{y},
+			yyyyM => q{MMMM y},
+			yyyyMEd => q{E, d בMMMM y},
+			yyyyMMM => q{MMMM y},
+			yyyyMMMEd => q{E, d בMMMM y},
+			yyyyMMMM => q{MMMM y},
+			yyyyMMMd => q{d בMMMM y},
+			yyyyMd => q{d בMMMM y},
 			yyyyQQQ => q{QQQ y},
 			yyyyQQQQ => q{QQQQ y},
 		},

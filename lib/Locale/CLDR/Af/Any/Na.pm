@@ -1,6 +1,6 @@
 package Locale::CLDR::Af::Any::Na;
 # This file auto generated from Data\common\main\af_NA.xml
-#	on Sat 17 May  2:15:18 pm GMT
+#	on Sun 18 May  9:55:30 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;

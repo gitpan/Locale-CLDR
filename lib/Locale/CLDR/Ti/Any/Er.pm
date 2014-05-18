@@ -1,6 +1,6 @@
 package Locale::CLDR::Ti::Any::Er;
 # This file auto generated from Data\common\main\ti_ER.xml
-#	on Sat 17 May  4:52:11 pm GMT
+#	on Sun 18 May 12:33:56 pm GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use version;
@@ -31,9 +31,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['ሀ', 'ለ', 'ሐ', 'መ', 'ረ', 'ሰ', 'ሸ', 'ቀ', 'ቈ', 'ቐ', 'ቘ', 'በ', 'ቨ', 'ተ', 'ቸ', 'ኀ', 'ኈ', 'ነ', 'ኘ', 'አ', 'ከ', 'ኰ', 'ኸ', 'ዀ', 'ወ', 'ዐ', 'ዘ', 'ዠ', 'የ', 'ደ', 'ጀ', 'ገ', 'ጐ', 'ጠ', 'ጨ', 'ጸ', 'ፈ', 'ፐ'], };
+		return { index => ['ሀ', 'ለ', 'ሐ', 'መ', 'ረ', 'ሰ', 'ሸ', 'ቀ', 'ቈ', 'ቐ', 'ቘ', 'በ', 'ቨ', 'ተ', 'ቸ', 'ኀ', 'ኈ', 'ነ', 'ኘ', 'አ', 'ከ', 'ኰ', 'ኸ', 'ዀ', 'ወ', 'ዐ', 'ዘ', 'ዠ', 'የ', 'ደ', 'ጀ', 'ገ', 'ጐ', 'ጠ', 'ጨ', 'ጸ', 'ፈ', 'ፐ'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',
@@ -217,7 +218,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			MEd => {
 				M => q{E፡ MM-dd - E፡ MM-dd},
 				d => q{E፡ MM-dd - E፡ MM-dd},
@@ -267,7 +268,7 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd - y-MM-dd},
 			},
 		},
-		'gregorian' => {
+		'generic' => {
 			MEd => {
 				M => q{E፡ MM-dd - E፡ MM-dd},
 				d => q{E፡ MM-dd - E፡ MM-dd},

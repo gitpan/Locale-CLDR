@@ -1,6 +1,6 @@
 package Locale::CLDR::Lag;
 # This file auto generated from Data\common\main\lag.xml
-#	on Sat 17 May  3:47:22 pm GMT
+#	on Sun 18 May 11:28:16 am GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use version;
@@ -328,9 +328,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'Ɨ', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'Ʉ', 'V', 'W', 'X', 'Y', 'Z'], };
+		return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'Ɨ', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'Ʉ', 'V', 'W', 'X', 'Y', 'Z'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',

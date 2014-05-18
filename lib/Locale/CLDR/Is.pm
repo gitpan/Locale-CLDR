@@ -1,6 +1,6 @@
 package Locale::CLDR::Is;
 # This file auto generated from Data\common\main\is.xml
-#	on Sat 17 May  3:24:30 pm GMT
+#	on Sun 18 May 11:05:03 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -1177,9 +1177,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'Á', 'B', 'C', 'D', 'Ð', 'E', 'É', 'F', 'G', 'H', 'I', 'Í', 'J', 'K', 'L', 'M', 'N', 'O', 'Ó', 'P', 'Q', 'R', 'S', 'T', 'U', 'Ú', 'V', 'W', 'X', 'Y', 'Ý', 'Z', 'Þ', 'Æ', 'Ö'], };
+		return { index => ['A', 'Á', 'B', 'C', 'D', 'Ð', 'E', 'É', 'F', 'G', 'H', 'I', 'Í', 'J', 'K', 'L', 'M', 'N', 'O', 'Ó', 'P', 'Q', 'R', 'S', 'T', 'U', 'Ú', 'V', 'W', 'X', 'Y', 'Ý', 'Z', 'Þ', 'Æ', 'Ö'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',

@@ -1,6 +1,6 @@
 package Locale::CLDR::Bo;
 # This file auto generated from Data\common\main\bo.xml
-#	on Sat 17 May  2:28:27 pm GMT
+#	on Sun 18 May 10:08:40 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -352,9 +352,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['ཀ', 'ཁ', 'ག', 'ང', 'ཅ', 'ཆ', 'ཇ', 'ཉ', 'ཏ', 'ཐ', 'ད', 'ན', 'པ', 'ཕ', 'བ', 'མ', 'ཙ', 'ཚ', 'ཛ', 'ཝ', 'ཞ', 'ཟ', 'འ', 'ཡ', 'ར', 'ལ', 'ཤ', 'ས', 'ཧ', 'ཨ'], };
+		return { index => ['ཀ', 'ཁ', 'ག', 'ང', 'ཅ', 'ཆ', 'ཇ', 'ཉ', 'ཏ', 'ཐ', 'ད', 'ན', 'པ', 'ཕ', 'བ', 'མ', 'ཙ', 'ཚ', 'ཛ', 'ཝ', 'ཞ', 'ཟ', 'འ', 'ཡ', 'ར', 'ལ', 'ཤ', 'ས', 'ཧ', 'ཨ'], };
 },
 );
+
 
 has 'yesstr' => (
 	is			=> 'ro',
@@ -648,8 +649,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ཕྱི་དྲོ་},
 					'am' => q{སྔ་དྲོ་},
+					'pm' => q{ཕྱི་དྲོ་},
 				},
 			},
 		},
@@ -717,11 +718,11 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			yMMMMd => q{སྦྱི་ལོ་y MMMMའི་ཙེས་dད},
 			yMMMd => q{y ལོ་འི་MMMཙེས་d},
 		},
-		'gregorian' => {
+		'generic' => {
 			yMMMMd => q{སྦྱི་ལོ་y MMMMའི་ཙེས་dད},
 			yMMMd => q{y ལོ་འི་MMMཙེས་d},
 		},

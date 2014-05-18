@@ -1,6 +1,6 @@
 package Locale::CLDR::Shi::Latn;
 # This file auto generated from Data\common\main\shi_Latn.xml
-#	on Sat 17 May  4:29:40 pm GMT
+#	on Sun 18 May 12:11:07 pm GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use version;
@@ -329,9 +329,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'Ḍ', 'E', 'Ɛ', 'F', 'G', '{Gʷ}', 'Ɣ', 'H', 'Ḥ', 'I', 'J', 'K', '{Kʷ}', 'L', 'M', 'N', 'Q', 'R', 'Ṛ', 'S', 'Ṣ', 'T', 'Ṭ', 'U', 'W', 'X', 'Y', 'Z'], };
+		return { index => ['A', 'B', 'C', 'D', 'Ḍ', 'E', 'Ɛ', 'F', 'G', '{Gʷ}', 'Ɣ', 'H', 'Ḥ', 'I', 'J', 'K', '{Kʷ}', 'L', 'M', 'N', 'Q', 'R', 'Ṛ', 'S', 'Ṣ', 'T', 'Ṭ', 'U', 'W', 'X', 'Y', 'Z'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',
@@ -915,7 +916,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			M => q{M},
 			MMM => q{MMM},
 			MMMEd => q{E d MMM},
@@ -935,7 +936,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			M => q{M},
 			MMM => q{MMM},
 			MMMEd => q{E d MMM},

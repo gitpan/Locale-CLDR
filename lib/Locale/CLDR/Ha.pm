@@ -1,6 +1,6 @@
 package Locale::CLDR::Ha;
 # This file auto generated from Data\common\main\ha.xml
-#	on Sat 17 May  3:12:31 pm GMT
+#	on Sun 18 May 10:52:49 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
@@ -394,9 +394,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'Ɓ', 'C', 'D', 'Ɗ', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'Ƙ', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', '{ʼY}', 'Z'], };
+		return { index => ['A', 'B', 'Ɓ', 'C', 'D', 'Ɗ', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'Ƙ', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', '{ʼY}', 'Z'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',

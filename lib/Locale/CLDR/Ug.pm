@@ -1,6 +1,6 @@
 package Locale::CLDR::Ug;
 # This file auto generated from Data\common\main\ug.xml
-#	on Sat 17 May  4:54:12 pm GMT
+#	on Sun 18 May 12:35:59 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
@@ -1276,9 +1276,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['ئ', 'ا', 'ە', 'ب', 'پ', 'ت', 'ج', 'چ', 'خ', 'د', 'ر', 'ز', 'ژ', 'س', 'ش', 'غ', 'ف', 'ق', 'ك', 'گ', 'ڭ', 'ل', 'م', 'ن', 'ھ', 'و', 'ۇ', 'ۆ', 'ۈ', 'ۋ', 'ې', 'ى', 'ي'], };
+		return { index => ['ئ', 'ا', 'ە', 'ب', 'پ', 'ت', 'ج', 'چ', 'خ', 'د', 'ر', 'ز', 'ژ', 'س', 'ش', 'غ', 'ف', 'ق', 'ك', 'گ', 'ڭ', 'ل', 'م', 'ن', 'ھ', 'و', 'ۇ', 'ۆ', 'ۈ', 'ۋ', 'ې', 'ى', 'ي'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',
@@ -4420,14 +4421,14 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'noon' => q{چۈش},
+				'narrow' => {
 					'am' => q{چۈشتىن بۇرۇن},
+					'noon' => q{چۈش},
 					'pm' => q{چۈشتىن كېيىن},
 				},
-				'narrow' => {
-					'pm' => q{چۈشتىن كېيىن},
+				'wide' => {
 					'am' => q{چۈشتىن بۇرۇن},
+					'pm' => q{چۈشتىن كېيىن},
 					'noon' => q{چۈش},
 				},
 			},
@@ -4627,6 +4628,15 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
+		'islamic' => {
+			M => q{L},
+			Md => q{d/‏M},
+			d => q{d},
+			yyyyM => q{M‏/y G},
+			yyyyMEd => q{E، d/‏M/‏y G},
+			yyyyMMM => q{MMM y G},
+			yyyyMd => q{d‏/M‏/y G},
+		},
 		'generic' => {
 			Ed => q{d E},
 			Gy => q{y G},
@@ -4650,15 +4660,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{M/d/y GGGGG},
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
-		},
-		'islamic' => {
-			M => q{L},
-			Md => q{d/‏M},
-			d => q{d},
-			yyyyM => q{M‏/y G},
-			yyyyMEd => q{E، d/‏M/‏y G},
-			yyyyMMM => q{MMM y G},
-			yyyyMd => q{d‏/M‏/y G},
 		},
 	} },
 );

@@ -1,6 +1,6 @@
 package Locale::CLDR::Tn;
 # This file auto generated from Data\common\main\tn.xml
-#	on Sat 17 May  4:52:13 pm GMT
+#	on Sun 18 May 12:33:57 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
@@ -127,9 +127,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'], };
+		return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',

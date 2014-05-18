@@ -1,6 +1,6 @@
 package Locale::CLDR::Wae;
 # This file auto generated from Data\common\main\wae.xml
-#	on Sat 17 May  5:03:22 pm GMT
+#	on Sun 18 May 12:45:17 pm GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use version;
@@ -594,9 +594,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'], };
+		return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',

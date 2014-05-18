@@ -1,6 +1,6 @@
 package Locale::CLDR::Uz::Arab::Af;
 # This file auto generated from Data\common\main\uz_Arab_AF.xml
-#	on Sat 17 May  5:01:09 pm GMT
+#	on Sun 18 May 12:43:02 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

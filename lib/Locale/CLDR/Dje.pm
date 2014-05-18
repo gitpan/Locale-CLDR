@@ -1,6 +1,6 @@
 package Locale::CLDR::Dje;
 # This file auto generated from Data\common\main\dje.xml
-#	on Sat 17 May  2:44:06 pm GMT
+#	on Sun 18 May 10:24:13 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -328,9 +328,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ɲ', 'Ŋ', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'W', 'X', 'Y', 'Z'], };
+		return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ɲ', 'Ŋ', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'W', 'X', 'Y', 'Z'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',
@@ -866,8 +867,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{Subbaahi},
 					'pm' => q{Zaarikay b},
+					'am' => q{Subbaahi},
 				},
 			},
 		},

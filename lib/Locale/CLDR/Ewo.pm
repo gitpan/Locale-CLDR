@@ -1,6 +1,6 @@
 package Locale::CLDR::Ewo;
 # This file auto generated from Data\common\main\ewo.xml
-#	on Sat 17 May  2:58:19 pm GMT
+#	on Sun 18 May 10:38:26 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -329,9 +329,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'D', 'E', 'Ə', 'Ɛ', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'Ɔ', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'Y', 'Z'], };
+		return { index => ['A', 'B', 'D', 'E', 'Ə', 'Ɛ', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'Ɔ', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'Y', 'Z'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',
@@ -867,8 +868,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ngəgógəle},
 					'am' => q{kíkíríg},
+					'pm' => q{ngəgógəle},
 				},
 			},
 		},
@@ -948,7 +949,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{d E},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -972,7 +973,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{d E},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},

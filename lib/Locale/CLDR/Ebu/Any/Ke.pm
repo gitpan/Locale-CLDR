@@ -1,6 +1,6 @@
 package Locale::CLDR::Ebu::Any::Ke;
 # This file auto generated from Data\common\main\ebu_KE.xml
-#	on Sat 17 May  2:44:43 pm GMT
+#	on Sun 18 May 10:24:49 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

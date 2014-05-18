@@ -1,7 +1,7 @@
 package Locale::CLDR::Ewo::Any;
 
 # This file auto generated
-#	on Sat 17 May  2:58:22 pm GMT
+#	on Sun 18 May 10:38:29 am GMT
 
 use version;
 

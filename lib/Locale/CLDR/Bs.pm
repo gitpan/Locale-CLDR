@@ -1,6 +1,6 @@
 package Locale::CLDR::Bs;
 # This file auto generated from Data\common\main\bs.xml
-#	on Sat 17 May  2:31:31 pm GMT
+#	on Sun 18 May 10:11:43 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -1042,9 +1042,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'Ć', 'Č', 'D', '{DŽ}', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', '{LJ}', 'M', 'N', '{NJ}', 'O', 'P', 'Q', 'R', 'S', 'Š', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Ž'], };
+		return { index => ['A', 'B', 'C', 'Ć', 'Č', 'D', '{DŽ}', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', '{LJ}', 'M', 'N', '{NJ}', 'O', 'P', 'Q', 'R', 'S', 'Š', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Ž'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',

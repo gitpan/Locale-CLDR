@@ -1,6 +1,6 @@
 package Locale::CLDR::Dz;
 # This file auto generated from Data\common\main\dz.xml
-#	on Sat 17 May  2:44:13 pm GMT
+#	on Sun 18 May 10:24:19 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -673,9 +673,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['ཀ', 'ཁ', 'ག', 'ང', 'ཅ', 'ཆ', 'ཇ', 'ཉ', 'ཏ', 'ཐ', 'ད', 'ན', 'པ', 'ཕ', 'བ', 'མ', 'ཙ', 'ཚ', 'ཛ', 'ཝ', 'ཞ', 'ཟ', 'འ', 'ཡ', 'ར', 'ལ', 'ཤ', 'ས', 'ཧ', 'ཨ'], };
+		return { index => ['ཀ', 'ཁ', 'ག', 'ང', 'ཅ', 'ཆ', 'ཇ', 'ཉ', 'ཏ', 'ཐ', 'ད', 'ན', 'པ', 'ཕ', 'བ', 'མ', 'ཙ', 'ཚ', 'ཛ', 'ཝ', 'ཞ', 'ཟ', 'འ', 'ཡ', 'ར', 'ལ', 'ཤ', 'ས', 'ཧ', 'ཨ'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',
@@ -1615,11 +1616,11 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'am' => q{སྔ་ཆ་},
-					'pm' => q{ཕྱི་ཆ་},
-				},
 				'narrow' => {
+					'pm' => q{ཕྱི་ཆ་},
+					'am' => q{སྔ་ཆ་},
+				},
+				'wide' => {
 					'am' => q{སྔ་ཆ་},
 					'pm' => q{ཕྱི་ཆ་},
 				},

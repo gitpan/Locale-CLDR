@@ -1,6 +1,6 @@
 package Locale::CLDR::Om::Any::Et;
 # This file auto generated from Data\common\main\om_ET.xml
-#	on Sat 17 May  4:14:58 pm GMT
+#	on Sun 18 May 11:56:19 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

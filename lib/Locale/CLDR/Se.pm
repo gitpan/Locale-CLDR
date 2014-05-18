@@ -1,6 +1,6 @@
 package Locale::CLDR::Se;
 # This file auto generated from Data\common\main\se.xml
-#	on Sat 17 May  4:29:25 pm GMT
+#	on Sun 18 May 12:10:51 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
@@ -569,9 +569,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'Á', 'B', 'C', 'Č', 'D', 'Đ', 'E', 'É', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'P', 'Q', 'R', 'S', 'Š', 'T', 'Ŧ', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Ž', 'Ø', 'Æ', 'Å', 'Ä', 'Ö'], };
+		return { index => ['A', 'Á', 'B', 'C', 'Č', 'D', 'Đ', 'E', 'É', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'P', 'Q', 'R', 'S', 'Š', 'T', 'Ŧ', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Ž', 'Ø', 'Æ', 'Å', 'Ä', 'Ö'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',
@@ -1796,8 +1797,8 @@ has 'day_periods' => (
 					'pm' => q{eahketbeaivet},
 				},
 				'abbreviated' => {
-					'pm' => q{e.b.},
 					'am' => q{i.b.},
+					'pm' => q{e.b.},
 				},
 			},
 			'stand-alone' => {

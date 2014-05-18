@@ -1,6 +1,6 @@
 package Locale::CLDR::Om;
 # This file auto generated from Data\common\main\om.xml
-#	on Sat 17 May  4:14:58 pm GMT
+#	on Sun 18 May 11:56:19 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
@@ -174,9 +174,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'], };
+		return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'], };
 },
 );
+
 
 has 'default_numbering_system' => (
 	is			=> 'ro',
@@ -392,8 +393,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{WD},
 					'pm' => q{WB},
+					'am' => q{WD},
 				},
 			},
 		},
@@ -469,14 +470,14 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			MMMMdd => q{dd MMMM},
 			MMdd => q{dd/MM},
 			yMM => q{MM/y},
 			yMMMM => q{MMMM y},
 			yQQQ => q{QQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			MMMMdd => q{dd MMMM},
 			MMdd => q{dd/MM},
 			yMM => q{MM/y},

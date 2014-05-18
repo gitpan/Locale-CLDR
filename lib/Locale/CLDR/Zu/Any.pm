@@ -1,7 +1,7 @@
 package Locale::CLDR::Zu::Any;
 
 # This file auto generated
-#	on Sat 17 May  5:10:33 pm GMT
+#	on Sun 18 May 12:52:35 pm GMT
 
 use version;
 

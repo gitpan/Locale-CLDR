@@ -1,6 +1,6 @@
 package Locale::CLDR::Nmg;
 # This file auto generated from Data\common\main\nmg.xml
-#	on Sat 17 May  4:13:44 pm GMT
+#	on Sun 18 May 11:55:05 am GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use version;
@@ -329,9 +329,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'Ɓ', 'C', 'D', 'E', 'Ǝ', 'Ɛ', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'Ɔ', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'Y'], };
+		return { index => ['A', 'B', 'Ɓ', 'C', 'D', 'E', 'Ǝ', 'Ɛ', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'Ɔ', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'Y'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',
@@ -846,8 +847,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{maná},
 					'pm' => q{kugú},
+					'am' => q{maná},
 				},
 			},
 		},
@@ -927,7 +928,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -951,7 +952,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},

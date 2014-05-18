@@ -1,6 +1,6 @@
 package Locale::CLDR::Khq;
 # This file auto generated from Data\common\main\khq.xml
-#	on Sat 17 May  3:33:04 pm GMT
+#	on Sun 18 May 11:13:45 am GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use version;
@@ -329,9 +329,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'Ã', 'B', 'C', 'D', 'E', 'Ẽ', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ɲ', 'Ŋ', 'O', 'Õ', 'P', 'Q', 'R', 'S', 'Š', 'T', 'U', 'W', 'X', 'Y', 'Z', 'Ž'], };
+		return { index => ['A', 'Ã', 'B', 'C', 'D', 'E', 'Ẽ', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ɲ', 'Ŋ', 'O', 'Õ', 'P', 'Q', 'R', 'S', 'Š', 'T', 'U', 'W', 'X', 'Y', 'Z', 'Ž'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',
@@ -926,7 +927,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			M => q{M},
 			MMM => q{MMM},
 			MMMEd => q{E d MMM},
@@ -948,7 +949,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			M => q{M},
 			MMM => q{MMM},
 			MMMEd => q{E d MMM},

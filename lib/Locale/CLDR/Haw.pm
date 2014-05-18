@@ -1,6 +1,6 @@
 package Locale::CLDR::Haw;
 # This file auto generated from Data\common\main\haw.xml
-#	on Sat 17 May  3:12:34 pm GMT
+#	on Sun 18 May 10:52:53 am GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
@@ -129,9 +129,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'E', 'I', 'O', 'U', 'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'ʻ', 'X', 'Y', 'Z'], };
+		return { index => ['A', 'E', 'I', 'O', 'U', 'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'ʻ', 'X', 'Y', 'Z'], };
 },
 );
+
 
 has 'units' => (
 	is			=> 'ro',

@@ -1,6 +1,6 @@
 package Locale::CLDR::Lv;
 # This file auto generated from Data\common\main\lv.xml
-#	on Sat 17 May  3:53:31 pm GMT
+#	on Sun 18 May 11:34:31 am GMT
 # XML file generated 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014)
 
 use version;
@@ -1212,9 +1212,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'Ā', 'B', 'C', 'Č', 'D', 'E', 'Ē', 'F', 'G', 'Ģ', 'H', 'I', 'Ī', 'Y', 'J', 'K', 'Ķ', 'L', 'Ļ', 'M', 'N', 'Ņ', 'O', 'P', 'Q', 'R', 'S', 'Š', 'T', 'U', 'Ū', 'V', 'W', 'X', 'Z', 'Ž'], };
+		return { index => ['A', 'Ā', 'B', 'C', 'Č', 'D', 'E', 'Ē', 'F', 'G', 'Ģ', 'H', 'I', 'Ī', 'Y', 'J', 'K', 'Ķ', 'L', 'Ļ', 'M', 'N', 'Ņ', 'O', 'P', 'Q', 'R', 'S', 'Š', 'T', 'U', 'Ū', 'V', 'W', 'X', 'Z', 'Ž'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',

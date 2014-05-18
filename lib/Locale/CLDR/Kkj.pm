@@ -1,6 +1,6 @@
 package Locale::CLDR::Kkj;
 # This file auto generated from Data\common\main\kkj.xml
-#	on Sat 17 May  3:35:12 pm GMT
+#	on Sun 18 May 11:15:55 am GMT
 # XML file generated 2014-01-08 23:53:23 -0600 (Wed, 08 Jan 2014)
 
 use version;
@@ -64,9 +64,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'Ɓ', 'C', 'D', 'Ɗ', '{Ɗy}', 'E', 'Ɛ', 'F', 'G', '{Gb}', '{Gw}', 'H', 'I', '{I\u0327}', 'J', 'K', '{Kp}', '{Kw}', 'L', 'M', '{Mb}', 'N', '{Nd}', 'ǋ', '{Ny}', 'Ŋ', '{Ŋg}', '{Ŋgb}', '{Ŋgw}', 'O', 'Ɔ', '{Ɔ\u0327}', 'P', 'R', 'S', 'T', 'U', '{U\u0327}', 'V', 'W', 'Y'], };
+		return { index => ['A', 'B', 'Ɓ', 'C', 'D', 'Ɗ', '{Ɗy}', 'E', 'Ɛ', 'F', 'G', '{Gb}', '{Gw}', 'H', 'I', '{I\u0327}', 'J', 'K', '{Kp}', '{Kw}', 'L', 'M', '{Mb}', 'N', '{Nd}', 'ǋ', '{Ny}', 'Ŋ', '{Ŋg}', '{Ŋgb}', '{Ŋgw}', 'O', 'Ɔ', '{Ɔ\u0327}', 'P', 'R', 'S', 'T', 'U', '{U\u0327}', 'V', 'W', 'Y'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',
@@ -366,23 +367,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			Ed => q{E d},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E d MMM y G},
-			GyMMMd => q{d MMM y G},
-			MEd => q{E dd/MM},
-			MMMEd => q{E d MMM},
-			MMMd => q{d MMM},
-			Md => q{dd/MM},
-			yyyyM => q{MM y GGGGG},
-			yyyyMEd => q{E dd/MM y GGGGG},
-			yyyyMMM => q{MMM y G},
-			yyyyMMMEd => q{E d MMM y G},
-			yyyyMMMd => q{d MMM y G},
-			yyyyMd => q{dd/MM y GGGGG},
-		},
 		'gregorian' => {
 			Ed => q{E d},
 			Gy => q{y G},
@@ -399,6 +383,23 @@ has 'datetime_formats_available_formats' => (
 			yMMMEd => q{E d MMM y},
 			yMMMd => q{d MMM y},
 			yMd => q{dd/MM y},
+		},
+		'generic' => {
+			Ed => q{E d},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E d MMM y G},
+			GyMMMd => q{d MMM y G},
+			MEd => q{E dd/MM},
+			MMMEd => q{E d MMM},
+			MMMd => q{d MMM},
+			Md => q{dd/MM},
+			yyyyM => q{MM y GGGGG},
+			yyyyMEd => q{E dd/MM y GGGGG},
+			yyyyMMM => q{MMM y G},
+			yyyyMMMEd => q{E d MMM y G},
+			yyyyMMMd => q{d MMM y G},
+			yyyyMd => q{dd/MM y GGGGG},
 		},
 	} },
 );

@@ -1,6 +1,6 @@
 package Locale::CLDR::Chr;
 # This file auto generated from Data\common\main\chr.xml
-#	on Sat 17 May  2:38:24 pm GMT
+#	on Sun 18 May 10:18:38 am GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
@@ -341,9 +341,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['Ꭰ', 'Ꭶ', 'Ꭽ', 'Ꮃ', 'Ꮉ', 'Ꮎ', 'Ꮖ', 'Ꮜ', 'Ꮣ', 'Ꮬ', 'Ꮳ', 'Ꮹ', 'Ꮿ'], };
+		return { index => ['Ꭰ', 'Ꭶ', 'Ꭽ', 'Ꮃ', 'Ꮉ', 'Ꮎ', 'Ꮖ', 'Ꮜ', 'Ꮣ', 'Ꮬ', 'Ꮳ', 'Ꮹ', 'Ꮿ'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',
@@ -692,20 +693,20 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'gregorian') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
+			if ($_ eq 'generic') {
+				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
-				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'generic') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
+			if ($_ eq 'gregorian') {
+				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
-				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
 			last SWITCH;
 			}
 		}
@@ -720,9 +721,9 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
+					'pm' => q{ᏒᎯᏱᎢᏗᏢ},
 					'noon' => q{ᎢᎦ},
 					'am' => q{ᏌᎾᎴ},
-					'pm' => q{ᏒᎯᏱᎢᏗᏢ},
 				},
 			},
 		},

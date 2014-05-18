@@ -1,6 +1,6 @@
 package Locale::CLDR::En::Any::Nr;
 # This file auto generated from Data\common\main\en_NR.xml
-#	on Sat 17 May  2:52:08 pm GMT
+#	on Sun 18 May 10:32:09 am GMT
 # XML file generated 2013-08-22 18:59:54 -0500 (Thu, 22 Aug 2013)
 
 use version;

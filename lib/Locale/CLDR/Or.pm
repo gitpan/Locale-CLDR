@@ -1,6 +1,6 @@
 package Locale::CLDR::Or;
 # This file auto generated from Data\common\main\or.xml
-#	on Sat 17 May  4:14:59 pm GMT
+#	on Sun 18 May 11:56:20 am GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use version;
@@ -925,9 +925,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['ଅ', 'ଆ', 'ଇ', 'ଈ', 'ଉ', 'ଊ', 'ଋ', 'ଏ', 'ଐ', 'ଓ', 'ଔ', 'କ', 'ଖ', 'ଗ', 'ଘ', 'ଙ', 'ଚ', 'ଛ', 'ଜ', 'ଝ', 'ଞ', 'ଟ', 'ଠ', 'ଡ', 'ଢ', 'ଣ', 'ତ', 'ଥ', 'ଦ', 'ଧ', 'ନ', 'ପ', 'ଫ', 'ବ', 'ଭ', 'ମ', 'ଯ', 'ର', 'ଲ', 'ଳ', 'ଶ', 'ଷ', 'ସ', 'ହ', '{କ\u0B4Dଷ}'], };
+		return { index => ['ଅ', 'ଆ', 'ଇ', 'ଈ', 'ଉ', 'ଊ', 'ଋ', 'ଏ', 'ଐ', 'ଓ', 'ଔ', 'କ', 'ଖ', 'ଗ', 'ଘ', 'ଙ', 'ଚ', 'ଛ', 'ଜ', 'ଝ', 'ଞ', 'ଟ', 'ଠ', 'ଡ', 'ଢ', 'ଣ', 'ତ', 'ଥ', 'ଦ', 'ଧ', 'ନ', 'ପ', 'ଫ', 'ବ', 'ଭ', 'ମ', 'ଯ', 'ର', 'ଲ', 'ଳ', 'ଶ', 'ଷ', 'ସ', 'ହ', '{କ\u0B4Dଷ}'], };
 },
 );
+
 
 has 'yesstr' => (
 	is			=> 'ro',
@@ -1210,19 +1211,19 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			MMMMd => q{MMMM d},
-			MMdd => q{dd-MM},
-			yMM => q{MM-y G},
-			yMMMM => q{MMMM y G},
-			yQQQ => q{QQQ y G},
-		},
 		'gregorian' => {
 			MMMMd => q{MMMM d},
 			MMdd => q{dd-MM},
 			yMM => q{MM-y},
 			yMMMM => q{MMMM y},
 			yQQQ => q{QQQ y},
+		},
+		'generic' => {
+			MMMMd => q{MMMM d},
+			MMdd => q{dd-MM},
+			yMM => q{MM-y G},
+			yMMMM => q{MMMM y G},
+			yQQQ => q{QQQ y G},
 		},
 	} },
 );

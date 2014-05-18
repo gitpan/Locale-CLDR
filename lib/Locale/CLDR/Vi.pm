@@ -1,6 +1,6 @@
 package Locale::CLDR::Vi;
 # This file auto generated from Data\common\main\vi.xml
-#	on Sat 17 May  5:01:42 pm GMT
+#	on Sun 18 May 12:43:35 pm GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use version;
@@ -1341,9 +1341,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'Ă', 'Â', 'B', 'C', 'D', 'Đ', 'E', 'Ê', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'Ô', 'Ơ', 'P', 'Q', 'R', 'S', 'T', 'U', 'Ư', 'V', 'W', 'X', 'Y', 'Z'], };
+		return { index => ['A', 'Ă', 'Â', 'B', 'C', 'D', 'Đ', 'E', 'Ê', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'Ô', 'Ơ', 'P', 'Q', 'R', 'S', 'T', 'U', 'Ư', 'V', 'W', 'X', 'Y', 'Z'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',
@@ -4685,6 +4686,14 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'buddhist' => {
+			M => q{'tháng' L},
+			MMM => q{LLL},
+		},
+		'roc' => {
+			M => q{'tháng' L},
+			MMM => q{LLL},
+		},
 		'generic' => {
 			Ed => q{E, dd},
 			Gy => q{'Năm' y G},
@@ -4720,10 +4729,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{d/M/y G},
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
-		},
-		'roc' => {
-			M => q{'tháng' L},
-			MMM => q{LLL},
 		},
 		'gregorian' => {
 			EHm => q{E HH:mm},
@@ -4764,10 +4769,6 @@ has 'datetime_formats_available_formats' => (
 			yMd => q{d/M/y},
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
-		},
-		'buddhist' => {
-			M => q{'tháng' L},
-			MMM => q{LLL},
 		},
 	} },
 );

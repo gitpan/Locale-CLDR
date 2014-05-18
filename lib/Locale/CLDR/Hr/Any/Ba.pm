@@ -1,6 +1,6 @@
 package Locale::CLDR::Hr::Any::Ba;
 # This file auto generated from Data\common\main\hr_BA.xml
-#	on Sat 17 May  3:18:57 pm GMT
+#	on Sun 18 May 10:59:24 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

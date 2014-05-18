@@ -1,6 +1,6 @@
 package Locale::CLDR::Fr::Any::Wf;
 # This file auto generated from Data\common\main\fr_WF.xml
-#	on Sat 17 May  3:05:18 pm GMT
+#	on Sun 18 May 10:45:29 am GMT
 # XML file generated 2013-08-22 18:59:54 -0500 (Thu, 22 Aug 2013)
 
 use version;

@@ -1,6 +1,6 @@
 package Locale::CLDR::Kea;
 # This file auto generated from Data\common\main\kea.xml
-#	on Sat 17 May  3:32:57 pm GMT
+#	on Sun 18 May 11:13:38 am GMT
 # XML file generated 2013-11-15 12:32:44 -0600 (Fri, 15 Nov 2013)
 
 use version;
@@ -603,9 +603,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'V', 'X', 'Z'], };
+		return { index => ['A', 'B', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'V', 'X', 'Z'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',
@@ -1491,8 +1492,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{am},
 					'pm' => q{pm},
+					'am' => q{am},
 				},
 			},
 		},

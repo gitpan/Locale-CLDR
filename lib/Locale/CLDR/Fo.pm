@@ -1,6 +1,6 @@
 package Locale::CLDR::Fo;
 # This file auto generated from Data\common\main\fo.xml
-#	on Sat 17 May  3:03:24 pm GMT
+#	on Sun 18 May 10:43:34 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
@@ -568,9 +568,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'Á', 'B', 'C', 'D', 'Ð', 'E', 'F', 'G', 'H', 'I', 'Í', 'J', 'K', 'L', 'M', 'N', 'O', 'Ó', 'P', 'Q', 'R', 'S', 'T', 'U', 'Ú', 'V', 'W', 'X', 'Y', 'Ý', 'Z', 'Æ', 'Ø'], };
+		return { index => ['A', 'Á', 'B', 'C', 'D', 'Ð', 'E', 'F', 'G', 'H', 'I', 'Í', 'J', 'K', 'L', 'M', 'N', 'O', 'Ó', 'P', 'Q', 'R', 'S', 'T', 'U', 'Ú', 'V', 'W', 'X', 'Y', 'Ý', 'Z', 'Æ', 'Ø'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',
@@ -1514,13 +1515,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'abbreviated' => {
-					'pm' => q{s.p.},
-					'am' => q{f.p.},
-				},
 				'wide' => {
 					'pm' => q{um seinnapartur},
 					'am' => q{um fyrrapartur},
+				},
+				'abbreviated' => {
+					'pm' => q{s.p.},
+					'am' => q{f.p.},
 				},
 			},
 			'stand-alone' => {
@@ -1618,7 +1619,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{d E},
 			H => q{HH},
 			Hm => q{HH:mm},
@@ -1644,7 +1645,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{y QQQ},
 			yQQQQ => q{y QQQQ},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{d E},
 			H => q{HH},
 			Hm => q{HH:mm},
@@ -1686,7 +1687,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH–HH},
 			},
@@ -1781,7 +1782,7 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd – y-MM-dd},
 			},
 		},
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH–HH},
 			},

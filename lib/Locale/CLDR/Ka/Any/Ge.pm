@@ -1,6 +1,6 @@
 package Locale::CLDR::Ka::Any::Ge;
 # This file auto generated from Data\common\main\ka_GE.xml
-#	on Sat 17 May  3:32:45 pm GMT
+#	on Sun 18 May 11:13:27 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

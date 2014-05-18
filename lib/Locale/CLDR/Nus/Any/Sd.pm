@@ -1,6 +1,6 @@
 package Locale::CLDR::Nus::Any::Sd;
 # This file auto generated from Data\common\main\nus_SD.xml
-#	on Sat 17 May  4:14:54 pm GMT
+#	on Sun 18 May 11:56:15 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

@@ -1,6 +1,6 @@
 package Locale::CLDR::Dyo::Any::Sn;
 # This file auto generated from Data\common\main\dyo_SN.xml
-#	on Sat 17 May  2:44:12 pm GMT
+#	on Sun 18 May 10:24:18 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

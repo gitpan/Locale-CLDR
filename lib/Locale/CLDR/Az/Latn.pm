@@ -1,6 +1,6 @@
 package Locale::CLDR::Az::Latn;
 # This file auto generated from Data\common\main\az_Latn.xml
-#	on Sat 17 May  2:22:47 pm GMT
+#	on Sun 18 May 10:03:00 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

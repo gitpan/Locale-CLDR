@@ -1,6 +1,6 @@
 package Locale::CLDR::Sr;
 # This file auto generated from Data\common\main\sr.xml
-#	on Sat 17 May  4:36:14 pm GMT
+#	on Sun 18 May 12:17:45 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -1213,9 +1213,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['А', 'Б', 'В', 'Г', 'Д', 'Ђ', 'Е', 'Ж', 'З', 'И', 'Ј', 'К', 'Л', 'Љ', 'М', 'Н', 'Њ', 'О', 'П', 'Р', 'С', 'Т', 'Ћ', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Џ', 'Ш'], };
+		return { index => ['А', 'Б', 'В', 'Г', 'Д', 'Ђ', 'Е', 'Ж', 'З', 'И', 'Ј', 'К', 'Л', 'Љ', 'М', 'Н', 'Њ', 'О', 'П', 'Р', 'С', 'Т', 'Ћ', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Џ', 'Ш'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',

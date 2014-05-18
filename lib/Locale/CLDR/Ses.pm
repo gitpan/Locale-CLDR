@@ -1,6 +1,6 @@
 package Locale::CLDR::Ses;
 # This file auto generated from Data\common\main\ses.xml
-#	on Sat 17 May  4:29:30 pm GMT
+#	on Sun 18 May 12:10:56 pm GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use version;
@@ -329,9 +329,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'Ã', 'B', 'C', 'D', 'E', 'Ẽ', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ɲ', 'Ŋ', 'O', 'Õ', 'P', 'Q', 'R', 'S', 'Š', 'T', 'U', 'W', 'X', 'Y', 'Z', 'Ž'], };
+		return { index => ['A', 'Ã', 'B', 'C', 'D', 'E', 'Ẽ', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ɲ', 'Ŋ', 'O', 'Õ', 'P', 'Q', 'R', 'S', 'Š', 'T', 'U', 'W', 'X', 'Y', 'Z', 'Ž'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',

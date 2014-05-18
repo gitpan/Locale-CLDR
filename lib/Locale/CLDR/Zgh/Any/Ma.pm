@@ -1,6 +1,6 @@
 package Locale::CLDR::Zgh::Any::Ma;
 # This file auto generated from Data\common\main\zgh_MA.xml
-#	on Sat 17 May  5:03:41 pm GMT
+#	on Sun 18 May 12:45:37 pm GMT
 # XML file generated 2013-07-26 22:28:11 -0500 (Fri, 26 Jul 2013)
 
 use version;

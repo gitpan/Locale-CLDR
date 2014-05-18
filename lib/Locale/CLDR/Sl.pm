@@ -1,6 +1,6 @@
 package Locale::CLDR::Sl;
 # This file auto generated from Data\common\main\sl.xml
-#	on Sat 17 May  4:33:13 pm GMT
+#	on Sun 18 May 12:14:42 pm GMT
 # XML file generated 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014)
 
 use version;
@@ -1187,9 +1187,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'Č', 'Ć', 'D', 'Đ', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'Š', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Ž'], };
+		return { index => ['A', 'B', 'C', 'Č', 'Ć', 'D', 'Đ', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'Š', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Ž'], };
 },
 );
+
 
 has 'more_information' => (
 	is			=> 'ro',
@@ -4104,8 +4105,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{pop.},
 					'am' => q{dop.},
+					'pm' => q{pop.},
 				},
 			},
 		},

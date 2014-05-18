@@ -1,6 +1,6 @@
 package Locale::CLDR::Tg;
 # This file auto generated from Data\common\main\tg.xml
-#	on Sat 17 May  4:49:09 pm GMT
+#	on Sun 18 May 12:30:51 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
@@ -137,9 +137,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['А', 'Б', 'В', 'Г', 'Ғ', 'Д', 'Е', 'Ж', 'З', 'И', 'Й', 'К', 'Қ', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ҳ', 'Ч', 'Ҷ', 'Ш', 'Ъ', 'Э', 'Ю', 'Я'], };
+		return { index => ['А', 'Б', 'В', 'Г', 'Ғ', 'Д', 'Е', 'Ж', 'З', 'И', 'Й', 'К', 'Қ', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ҳ', 'Ч', 'Ҷ', 'Ш', 'Ъ', 'Э', 'Ю', 'Я'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',

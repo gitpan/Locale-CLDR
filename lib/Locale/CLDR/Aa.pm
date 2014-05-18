@@ -1,6 +1,6 @@
 package Locale::CLDR::Aa;
 # This file auto generated from Data\common\main\aa.xml
-#	on Sat 17 May  2:14:26 pm GMT
+#	on Sun 18 May  9:54:39 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -63,9 +63,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'T', 'S', 'E', 'C', 'K', 'X', 'I', 'D', 'Q', 'R', 'F', 'G', 'O', 'L', 'M', 'N', 'U', 'W', 'H', 'Y'], };
+		return { index => ['A', 'B', 'T', 'S', 'E', 'C', 'K', 'X', 'I', 'D', 'Q', 'R', 'F', 'G', 'O', 'L', 'M', 'N', 'U', 'W', 'H', 'Y'], };
 },
 );
+
 
 has 'number_currency_formats' => (
 	is			=> 'ro',
@@ -217,8 +218,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{saaku},
 					'pm' => q{carra},
+					'am' => q{saaku},
 				},
 			},
 		},

@@ -1,6 +1,6 @@
 package Locale::CLDR::Sah;
 # This file auto generated from Data\common\main\sah.xml
-#	on Sat 17 May  4:29:16 pm GMT
+#	on Sun 18 May 12:10:42 pm GMT
 # XML file generated 2013-08-10 01:39:57 -0500 (Sat, 10 Aug 2013)
 
 use version;
@@ -151,9 +151,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['А', 'Б', 'Г', 'Ҕ', 'Д', '{Дь}', 'И', 'Й', 'К', 'Л', 'М', 'Н', '{Нь}', 'Ҥ', 'О', 'Ө', 'П', 'Р', 'С', 'Т', 'У', 'Ү', 'Х', 'Һ', 'Ч', 'Ы', 'Э'], };
+		return { index => ['А', 'Б', 'Г', 'Ҕ', 'Д', '{Дь}', 'И', 'Й', 'К', 'Л', 'М', 'Н', '{Нь}', 'Ҥ', 'О', 'Ө', 'П', 'Р', 'С', 'Т', 'У', 'Ү', 'Х', 'Һ', 'Ч', 'Ы', 'Э'], };
 },
 );
+
 
 has 'units' => (
 	is			=> 'ro',
@@ -384,8 +385,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ЭК},
 					'am' => q{ЭИ},
+					'pm' => q{ЭК},
 				},
 			},
 		},

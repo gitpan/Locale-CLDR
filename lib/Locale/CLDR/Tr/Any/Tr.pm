@@ -1,6 +1,6 @@
 package Locale::CLDR::Tr::Any::Tr;
 # This file auto generated from Data\common\main\tr_TR.xml
-#	on Sat 17 May  4:54:03 pm GMT
+#	on Sun 18 May 12:35:49 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

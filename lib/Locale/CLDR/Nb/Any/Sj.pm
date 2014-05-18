@@ -1,6 +1,6 @@
 package Locale::CLDR::Nb::Any::Sj;
 # This file auto generated from Data\common\main\nb_SJ.xml
-#	on Sat 17 May  4:09:49 pm GMT
+#	on Sun 18 May 11:51:06 am GMT
 # XML file generated 2013-08-22 18:59:54 -0500 (Thu, 22 Aug 2013)
 
 use version;

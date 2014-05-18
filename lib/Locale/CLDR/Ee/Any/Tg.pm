@@ -1,6 +1,6 @@
 package Locale::CLDR::Ee::Any::Tg;
 # This file auto generated from Data\common\main\ee_TG.xml
-#	on Sat 17 May  2:47:19 pm GMT
+#	on Sun 18 May 10:27:21 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

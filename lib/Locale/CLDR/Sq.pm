@@ -1,6 +1,6 @@
 package Locale::CLDR::Sq;
 # This file auto generated from Data\common\main\sq.xml
-#	on Sat 17 May  4:34:52 pm GMT
+#	on Sun 18 May 12:16:22 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -690,9 +690,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'Ç', 'D', '{DH}', 'E', 'Ë', 'F', 'G', '{GJ}', 'H', 'I', 'J', 'K', 'L', '{LL}', 'M', 'N', '{NJ}', 'O', 'P', 'Q', 'R', '{RR}', 'S', '{SH}', 'T', '{TH}', 'U', 'V', 'X', '{XH}', 'Y', 'Z', '{ZH}'], };
+		return { index => ['A', 'B', 'C', 'Ç', 'D', '{DH}', 'E', 'Ë', 'F', 'G', '{GJ}', 'H', 'I', 'J', 'K', 'L', '{LL}', 'M', 'N', '{NJ}', 'O', 'P', 'Q', 'R', '{RR}', 'S', '{SH}', 'T', '{TH}', 'U', 'V', 'X', '{XH}', 'Y', 'Z', '{ZH}'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',
@@ -2968,13 +2969,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'pm' => q{pasdite},
-					'am' => q{paradite},
-				},
 				'narrow' => {
 					'am' => q{AM},
 					'pm' => q{PM},
+				},
+				'wide' => {
+					'pm' => q{pasdite},
+					'am' => q{paradite},
 				},
 			},
 		},

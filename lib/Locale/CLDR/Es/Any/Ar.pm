@@ -1,6 +1,6 @@
 package Locale::CLDR::Es::Any::Ar;
 # This file auto generated from Data\common\main\es_AR.xml
-#	on Sat 17 May  2:54:01 pm GMT
+#	on Sun 18 May 10:34:05 am GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use version;

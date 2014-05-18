@@ -1,6 +1,6 @@
 package Locale::CLDR::En::Any::Zm;
 # This file auto generated from Data\common\main\en_ZM.xml
-#	on Sat 17 May  2:52:12 pm GMT
+#	on Sun 18 May 10:32:14 am GMT
 # XML file generated 2013-08-07 23:47:50 -0500 (Wed, 07 Aug 2013)
 
 use version;

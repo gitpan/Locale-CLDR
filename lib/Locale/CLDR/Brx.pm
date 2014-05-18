@@ -1,6 +1,6 @@
 package Locale::CLDR::Brx;
 # This file auto generated from Data\common\main\brx.xml
-#	on Sat 17 May  2:29:03 pm GMT
+#	on Sun 18 May 10:09:15 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -1028,9 +1028,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['अ', 'आ', 'इ', 'ई', 'उ', 'ऊ', 'ऍ', 'ए', 'ऐ', 'ऑ', 'ओ', 'औ', 'क', 'ख', 'ग', 'घ', 'च', 'छ', 'ज', 'झ', 'ञ', 'ट', 'ठ', 'ड', '{ड\u093C}', 'ढ', 'ण', 'त', 'थ', 'द', 'ध', 'न', 'प', 'फ', 'ब', 'भ', 'म', 'य', 'र', 'ल', 'ळ', 'व', 'श', 'ष', 'स', 'ह'], };
+		return { index => ['अ', 'आ', 'इ', 'ई', 'उ', 'ऊ', 'ऍ', 'ए', 'ऐ', 'ऑ', 'ओ', 'औ', 'क', 'ख', 'ग', 'घ', 'च', 'छ', 'ज', 'झ', 'ञ', 'ट', 'ठ', 'ड', '{ड\u093C}', 'ढ', 'ण', 'त', 'थ', 'द', 'ध', 'न', 'प', 'फ', 'ब', 'भ', 'म', 'य', 'र', 'ल', 'ळ', 'व', 'श', 'ष', 'स', 'ह'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',
@@ -2764,7 +2765,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			GGGGyMMMMEEEEdd => q{EEEE,dd MMMM GGGGy},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -2788,7 +2789,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			GGGGyMMMMEEEEdd => q{EEEE,dd MMMM GGGGy},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},

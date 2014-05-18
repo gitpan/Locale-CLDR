@@ -1,6 +1,6 @@
 package Locale::CLDR::Az::Cyrl;
 # This file auto generated from Data\common\main\az_Cyrl.xml
-#	on Sat 17 May  2:22:47 pm GMT
+#	on Sun 18 May 10:03:00 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -79,9 +79,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['А', 'Ә', 'Б', 'В', 'Г', 'Ғ', 'Д', 'Е', 'Ж', 'З', 'И', 'Й', 'Ј', 'К', 'Ҝ', 'Л', 'М', 'Н', 'О', 'Ө', 'П', 'Р', 'С', 'Т', 'У', 'Ү', 'Ф', 'Х', 'Һ', 'Ч', 'Ҹ', 'Ш', 'Ы'], };
+		return { index => ['А', 'Ә', 'Б', 'В', 'Г', 'Ғ', 'Д', 'Е', 'Ж', 'З', 'И', 'Й', 'Ј', 'К', 'Ҝ', 'Л', 'М', 'Н', 'О', 'Ө', 'П', 'Р', 'С', 'Т', 'У', 'Ү', 'Ф', 'Х', 'Һ', 'Ч', 'Ҹ', 'Ш', 'Ы'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',

@@ -1,6 +1,6 @@
 package Locale::CLDR::Zgh;
 # This file auto generated from Data\common\main\zgh.xml
-#	on Sat 17 May  5:03:38 pm GMT
+#	on Sun 18 May 12:45:33 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -361,9 +361,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['ⴰ', 'ⴱ', 'ⴳ', 'ⴷ', 'ⴹ', 'ⴻ', 'ⴼ', 'ⴽ', 'ⵀ', 'ⵃ', 'ⵄ', 'ⵅ', 'ⵇ', 'ⵉ', 'ⵊ', 'ⵍ', 'ⵎ', 'ⵏ', 'ⵓ', 'ⵔ', 'ⵕ', 'ⵖ', 'ⵙ', 'ⵚ', 'ⵛ', 'ⵜ', 'ⵟ', 'ⵡ', 'ⵢ', 'ⵣ', 'ⵥ'], };
+		return { index => ['ⴰ', 'ⴱ', 'ⴳ', 'ⴷ', 'ⴹ', 'ⴻ', 'ⴼ', 'ⴽ', 'ⵀ', 'ⵃ', 'ⵄ', 'ⵅ', 'ⵇ', 'ⵉ', 'ⵊ', 'ⵍ', 'ⵎ', 'ⵏ', 'ⵓ', 'ⵔ', 'ⵕ', 'ⵖ', 'ⵙ', 'ⵚ', 'ⵛ', 'ⵜ', 'ⵟ', 'ⵡ', 'ⵢ', 'ⵣ', 'ⵥ'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',
@@ -886,8 +887,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{ⵜⵉⴼⴰⵡⵜ},
 					'pm' => q{ⵜⴰⴷⴳⴳⵯⴰⵜ},
+					'am' => q{ⵜⵉⴼⴰⵡⵜ},
 				},
 			},
 		},
@@ -967,14 +968,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			M => q{M},
-			MMM => q{MMM},
-			MMMEd => q{E d MMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			y => q{y},
-		},
 		'gregorian' => {
 			M => q{M},
 			MMM => q{MMM},
@@ -989,6 +982,14 @@ has 'datetime_formats_available_formats' => (
 			yMMMEd => q{E d MMM y},
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
+		},
+		'generic' => {
+			M => q{M},
+			MMM => q{MMM},
+			MMMEd => q{E d MMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			y => q{y},
 		},
 	} },
 );

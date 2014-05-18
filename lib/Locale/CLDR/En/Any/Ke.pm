@@ -1,6 +1,6 @@
 package Locale::CLDR::En::Any::Ke;
 # This file auto generated from Data\common\main\en_KE.xml
-#	on Sat 17 May  2:52:05 pm GMT
+#	on Sun 18 May 10:32:06 am GMT
 # XML file generated 2013-08-07 23:47:50 -0500 (Wed, 07 Aug 2013)
 
 use version;

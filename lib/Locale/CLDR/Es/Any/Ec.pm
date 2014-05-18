@@ -1,6 +1,6 @@
 package Locale::CLDR::Es::Any::Ec;
 # This file auto generated from Data\common\main\es_EC.xml
-#	on Sat 17 May  2:54:03 pm GMT
+#	on Sun 18 May 10:34:08 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;

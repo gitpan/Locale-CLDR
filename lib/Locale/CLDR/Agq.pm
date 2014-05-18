@@ -1,6 +1,6 @@
 package Locale::CLDR::Agq;
 # This file auto generated from Data\common\main\agq.xml
-#	on Sat 17 May  2:15:18 pm GMT
+#	on Sun 18 May  9:55:31 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -329,9 +329,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'E', 'Ɛ', 'F', 'G', 'H', 'I', 'Ɨ', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'Ɔ', 'P', 'S', 'T', 'U', 'Ʉ', 'V', 'W', 'Y', 'Z', 'ʔ'], };
+		return { index => ['A', 'B', 'C', 'D', 'E', 'Ɛ', 'F', 'G', 'H', 'I', 'Ɨ', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'Ɔ', 'P', 'S', 'T', 'U', 'Ʉ', 'V', 'W', 'Y', 'Z', 'ʔ'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',
@@ -857,8 +858,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{a.g},
 					'pm' => q{a.k},
+					'am' => q{a.g},
 				},
 			},
 		},

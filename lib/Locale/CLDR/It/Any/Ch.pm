@@ -1,6 +1,6 @@
 package Locale::CLDR::It::Any::Ch;
 # This file auto generated from Data\common\main\it_CH.xml
-#	on Sat 17 May  3:27:09 pm GMT
+#	on Sun 18 May 11:07:45 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;

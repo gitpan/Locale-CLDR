@@ -1,6 +1,6 @@
 package Locale::CLDR::Th::Any::Th;
 # This file auto generated from Data\common\main\th_TH.xml
-#	on Sat 17 May  4:52:10 pm GMT
+#	on Sun 18 May 12:33:55 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

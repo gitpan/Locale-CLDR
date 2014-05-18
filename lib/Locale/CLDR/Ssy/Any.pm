@@ -1,7 +1,7 @@
 package Locale::CLDR::Ssy::Any;
 
 # This file auto generated
-#	on Sat 17 May  4:42:12 pm GMT
+#	on Sun 18 May 12:23:48 pm GMT
 
 use version;
 

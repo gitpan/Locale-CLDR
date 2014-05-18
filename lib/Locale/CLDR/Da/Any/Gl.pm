@@ -1,6 +1,6 @@
 package Locale::CLDR::Da::Any::Gl;
 # This file auto generated from Data\common\main\da_GL.xml
-#	on Sat 17 May  2:42:25 pm GMT
+#	on Sun 18 May 10:22:34 am GMT
 # XML file generated 2013-08-22 18:59:54 -0500 (Thu, 22 Aug 2013)
 
 use version;

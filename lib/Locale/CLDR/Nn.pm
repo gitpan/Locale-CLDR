@@ -1,6 +1,6 @@
 package Locale::CLDR::Nn;
 # This file auto generated from Data\common\main\nn.xml
-#	on Sat 17 May  4:13:49 pm GMT
+#	on Sun 18 May 11:55:10 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -1142,9 +1142,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Æ', 'Ø', 'Å'], };
+		return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Æ', 'Ø', 'Å'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',
@@ -3991,13 +3992,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'pm' => q{ettermiddag},
-					'am' => q{formiddag},
-				},
 				'abbreviated' => {
 					'pm' => q{e.m.},
 					'am' => q{f.m.},
+				},
+				'wide' => {
+					'pm' => q{ettermiddag},
+					'am' => q{formiddag},
 				},
 				'narrow' => {
 					'am' => q{f.m.},

@@ -1,6 +1,6 @@
 package Locale::CLDR::De::Any::Li;
 # This file auto generated from Data\common\main\de_LI.xml
-#	on Sat 17 May  2:44:06 pm GMT
+#	on Sun 18 May 10:24:12 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;

@@ -1,6 +1,6 @@
 package Locale::CLDR::Gd;
 # This file auto generated from Data\common\main\gd.xml
-#	on Sat 17 May  3:08:05 pm GMT
+#	on Sun 18 May 10:48:18 am GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use version;
@@ -741,9 +741,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U'], };
+		return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',

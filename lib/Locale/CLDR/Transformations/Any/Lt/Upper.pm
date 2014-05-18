@@ -1,6 +1,6 @@
 package Locale::CLDR::Transformations::Any::Lt::Upper;
 # This file auto generated from Data\common\transforms\lt-Upper.xml
-#	on Sat 17 May  2:14:24 pm GMT
+#	on Sun 18 May  9:54:37 am GMT
 # XML file generated 2013-03-01 08:26:02 -0600 (Fri, 01 Mar 2013)
 
 use version;
@@ -13,6 +13,11 @@ use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
+
+BEGIN {
+	die "Transliteration requires Perl 5.18 or above"
+		unless $^V ge v5.18.0;
+}
 
 no warnings 'experimental::regex_sets';
 has 'transforms' => (

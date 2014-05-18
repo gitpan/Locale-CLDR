@@ -1,6 +1,6 @@
 package Locale::CLDR::Lkt;
 # This file auto generated from Data\common\main\lkt.xml
-#	on Sat 17 May  3:47:29 pm GMT
+#	on Sun 18 May 11:28:23 am GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
@@ -233,9 +233,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'Č', 'E', 'G', 'Ǧ', 'H', 'Ȟ', 'I', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'P', 'S', 'Š', 'T', 'U', 'W', 'Y', 'Z', 'Ž'], };
+		return { index => ['A', 'B', 'Č', 'E', 'G', 'Ǧ', 'H', 'Ȟ', 'I', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'P', 'S', 'Š', 'T', 'U', 'W', 'Y', 'Z', 'Ž'], };
 },
 );
+
 
 has 'units' => (
 	is			=> 'ro',

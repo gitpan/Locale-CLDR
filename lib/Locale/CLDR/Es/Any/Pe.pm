@@ -1,6 +1,6 @@
 package Locale::CLDR::Es::Any::Pe;
 # This file auto generated from Data\common\main\es_PE.xml
-#	on Sat 17 May  2:56:16 pm GMT
+#	on Sun 18 May 10:36:22 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
@@ -100,7 +100,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH-HH},
 			},
@@ -187,7 +187,7 @@ has 'datetime_formats_interval' => (
 				y => q{d/MM/y - d/MM/y},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH-HH},
 			},

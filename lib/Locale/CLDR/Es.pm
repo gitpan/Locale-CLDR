@@ -1,6 +1,6 @@
 package Locale::CLDR::Es;
 # This file auto generated from Data\common\main\es.xml
-#	on Sat 17 May  2:52:16 pm GMT
+#	on Sun 18 May 10:32:18 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -1267,9 +1267,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'], };
+		return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',
@@ -4307,13 +4308,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
+				'narrow' => {
+					'am' => q{a.m.},
+					'pm' => q{p.m.},
+				},
 				'wide' => {
 					'am' => q{a. m.},
 					'pm' => q{p. m.},
-				},
-				'narrow' => {
-					'pm' => q{p.m.},
-					'am' => q{a.m.},
 				},
 			},
 		},

@@ -1,6 +1,6 @@
 package Locale::CLDR::Transformations::Bgn::Amharic::Latin;
 # This file auto generated from Data\common\transforms\Amharic-Latin-BGN.xml
-#	on Sat 17 May  2:14:04 pm GMT
+#	on Sun 18 May  9:54:17 am GMT
 # XML file generated 2013-08-20 21:47:18 -0500 (Tue, 20 Aug 2013)
 
 use version;
@@ -13,6 +13,11 @@ use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
+
+BEGIN {
+	die "Transliteration requires Perl 5.18 or above"
+		unless $^V ge v5.18.0;
+}
 
 no warnings 'experimental::regex_sets';
 has 'transforms' => (

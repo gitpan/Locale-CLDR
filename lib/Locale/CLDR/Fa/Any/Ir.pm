@@ -1,6 +1,6 @@
 package Locale::CLDR::Fa::Any::Ir;
 # This file auto generated from Data\common\main\fa_IR.xml
-#	on Sat 17 May  3:00:47 pm GMT
+#	on Sun 18 May 10:40:55 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

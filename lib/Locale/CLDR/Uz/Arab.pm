@@ -1,6 +1,6 @@
 package Locale::CLDR::Uz::Arab;
 # This file auto generated from Data\common\main\uz_Arab.xml
-#	on Sat 17 May  5:01:09 pm GMT
+#	on Sun 18 May 12:43:01 pm GMT
 # XML file generated 2014-03-10 13:02:01 -0500 (Mon, 10 Mar 2014)
 
 use version;
@@ -91,9 +91,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['ء', 'آ', 'أ', 'ؤ', 'ئ', 'ا', 'ب', 'پ', 'ة', 'ت', 'ث', 'ټ', 'ج', 'چ', 'ح', 'خ', 'ځ', 'څ', 'د', 'ذ', 'ډ', 'ر', 'ز', 'ړ', 'ږ', 'ژ', 'س', 'ش', 'ښ', 'ص', 'ض', 'ط', 'ظ', 'ع', 'غ', 'ف', 'ق', 'ک', 'ګ', 'گ', 'ل', 'م', 'ن', 'ڼ', 'ه', 'و', 'ۇ', 'ۉ', 'ي', 'ی', 'ۍ', 'ې'], };
+		return { index => ['ء', 'آ', 'أ', 'ؤ', 'ئ', 'ا', 'ب', 'پ', 'ة', 'ت', 'ث', 'ټ', 'ج', 'چ', 'ح', 'خ', 'ځ', 'څ', 'د', 'ذ', 'ډ', 'ر', 'ز', 'ړ', 'ږ', 'ژ', 'س', 'ش', 'ښ', 'ص', 'ض', 'ط', 'ظ', 'ع', 'غ', 'ف', 'ق', 'ک', 'ګ', 'گ', 'ل', 'م', 'ن', 'ڼ', 'ه', 'و', 'ۇ', 'ۉ', 'ي', 'ی', 'ۍ', 'ې'], };
 },
 );
+
 
 has 'default_numbering_system' => (
 	is			=> 'ro',
@@ -325,11 +326,11 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			MMMMd => q{d نچی MMMM},
 			Md => q{M/d},
 		},
-		'generic' => {
+		'gregorian' => {
 			MMMMd => q{d نچی MMMM},
 			Md => q{M/d},
 		},

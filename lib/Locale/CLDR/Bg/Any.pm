@@ -1,7 +1,7 @@
 package Locale::CLDR::Bg::Any;
 
 # This file auto generated
-#	on Sat 17 May  2:25:38 pm GMT
+#	on Sun 18 May 10:05:51 am GMT
 
 use version;
 

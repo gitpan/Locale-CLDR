@@ -1,6 +1,6 @@
 package Locale::CLDR::Ast;
 # This file auto generated from Data\common\main\ast.xml
-#	on Sat 17 May  2:20:19 pm GMT
+#	on Sun 18 May 10:00:32 am GMT
 # XML file generated 2014-01-08 23:02:40 -0600 (Wed, 08 Jan 2014)
 
 use version;
@@ -655,9 +655,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'L', 'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'X', 'Y', 'Z'], };
+		return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'L', 'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'X', 'Y', 'Z'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',
@@ -2383,8 +2384,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{AM},
 					'pm' => q{PM},
+					'am' => q{AM},
 				},
 			},
 		},

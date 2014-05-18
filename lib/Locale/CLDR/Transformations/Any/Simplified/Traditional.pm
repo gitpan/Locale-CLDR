@@ -1,6 +1,6 @@
 package Locale::CLDR::Transformations::Any::Simplified::Traditional;
 # This file auto generated from Data\common\transforms\Simplified-Traditional.xml
-#	on Sat 17 May  2:14:18 pm GMT
+#	on Sun 18 May  9:54:31 am GMT
 # XML file generated 2014-02-11 22:47:57 -0600 (Tue, 11 Feb 2014)
 
 use version;
@@ -13,6 +13,11 @@ use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
+
+BEGIN {
+	die "Transliteration requires Perl 5.18 or above"
+		unless $^V ge v5.18.0;
+}
 
 no warnings 'experimental::regex_sets';
 has 'transforms' => (

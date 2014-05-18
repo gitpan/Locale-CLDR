@@ -1,6 +1,6 @@
 package Locale::CLDR::Transformations::Any::Han::Latin;
 # This file auto generated from Data\common\transforms\Han-Latin.xml
-#	on Sat 17 May  2:14:08 pm GMT
+#	on Sun 18 May  9:54:21 am GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
@@ -13,6 +13,11 @@ use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
+
+BEGIN {
+	die "Transliteration requires Perl 5.18 or above"
+		unless $^V ge v5.18.0;
+}
 
 no warnings 'experimental::regex_sets';
 has 'transforms' => (

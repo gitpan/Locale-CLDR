@@ -1,6 +1,6 @@
 package Locale::CLDR::En::Any::Ca;
 # This file auto generated from Data\common\main\en_CA.xml
-#	on Sat 17 May  2:51:58 pm GMT
+#	on Sun 18 May 10:31:58 am GMT
 # XML file generated 2013-11-22 17:21:44 -0600 (Fri, 22 Nov 2013)
 
 use version;
@@ -41,20 +41,20 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'generic') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
+			if ($_ eq 'gregorian') {
+				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
-				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'gregorian') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
+			if ($_ eq 'generic') {
+				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
-				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
 			last SWITCH;
 			}
 		}

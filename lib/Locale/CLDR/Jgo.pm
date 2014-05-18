@@ -1,6 +1,6 @@
 package Locale::CLDR::Jgo;
 # This file auto generated from Data\common\main\jgo.xml
-#	on Sat 17 May  3:30:11 pm GMT
+#	on Sun 18 May 11:10:50 am GMT
 # XML file generated 2014-02-24 11:09:08 -0600 (Mon, 24 Feb 2014)
 
 use version;
@@ -200,9 +200,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'Ɛ', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ŋ', 'Ɔ', 'P', '{Pf}', 'S', '{Sh}', 'T', '{Ts}', 'U', 'Ʉ', '{Ʉ\u0308}', 'V', 'W', 'Ẅ', 'Y', 'Z', 'Ꞌ'], };
+		return { index => ['A', 'B', 'C', 'D', 'Ɛ', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ŋ', 'Ɔ', 'P', '{Pf}', 'S', '{Sh}', 'T', '{Ts}', 'U', 'Ʉ', '{Ʉ\u0308}', 'V', 'W', 'Ẅ', 'Y', 'Z', 'Ꞌ'], };
 },
 );
+
 
 has 'more_information' => (
 	is			=> 'ro',
@@ -701,17 +702,17 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			Ed => q{E d},
-			MEd => q{E, d.M},
-			Md => q{d.M},
-			yyyyMd => q{M.d.y G},
-		},
 		'gregorian' => {
 			Ed => q{E d},
 			MEd => q{E, d.M},
 			Md => q{d.M},
 			yMd => q{M.d.y},
+		},
+		'generic' => {
+			Ed => q{E d},
+			MEd => q{E, d.M},
+			Md => q{d.M},
+			yyyyMd => q{M.d.y G},
 		},
 	} },
 );
@@ -729,10 +730,10 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			fallback => '{0} – {1}',
 		},
-		'gregorian' => {
+		'generic' => {
 			fallback => '{0} – {1}',
 		},
 	} },

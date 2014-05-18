@@ -1,6 +1,6 @@
 package Locale::CLDR::Vo::Any::001;
 # This file auto generated from Data\common\main\vo_001.xml
-#	on Sat 17 May  5:03:18 pm GMT
+#	on Sun 18 May 12:45:13 pm GMT
 # XML file generated 2013-08-24 16:19:30 -0500 (Sat, 24 Aug 2013)
 
 use version;

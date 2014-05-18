@@ -1,6 +1,6 @@
 package Locale::CLDR::En::Any::Mp;
 # This file auto generated from Data\common\main\en_MP.xml
-#	on Sat 17 May  2:52:06 pm GMT
+#	on Sun 18 May 10:32:07 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

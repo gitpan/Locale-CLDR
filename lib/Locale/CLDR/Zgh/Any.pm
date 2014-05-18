@@ -1,7 +1,7 @@
 package Locale::CLDR::Zgh::Any;
 
 # This file auto generated
-#	on Sat 17 May  5:03:41 pm GMT
+#	on Sun 18 May 12:45:37 pm GMT
 
 use version;
 

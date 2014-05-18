@@ -1,6 +1,6 @@
 package Locale::CLDR::Byn::Any::Er;
 # This file auto generated from Data\common\main\byn_ER.xml
-#	on Sat 17 May  2:36:35 pm GMT
+#	on Sun 18 May 10:16:49 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

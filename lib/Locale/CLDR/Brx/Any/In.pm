@@ -1,6 +1,6 @@
 package Locale::CLDR::Brx::Any::In;
 # This file auto generated from Data\common\main\brx_IN.xml
-#	on Sat 17 May  2:31:29 pm GMT
+#	on Sun 18 May 10:11:41 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;

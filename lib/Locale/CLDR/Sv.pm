@@ -1,6 +1,6 @@
 package Locale::CLDR::Sv;
 # This file auto generated from Data\common\main\sv.xml
-#	on Sat 17 May  4:42:15 pm GMT
+#	on Sun 18 May 12:23:51 pm GMT
 # XML file generated 2014-03-10 16:39:54 -0500 (Mon, 10 Mar 2014)
 
 use version;
@@ -1365,9 +1365,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Å', 'Ä', 'Ö'], };
+		return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Å', 'Ä', 'Ö'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',
@@ -5101,13 +5102,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'abbreviated' => {
-					'pm' => q{EM},
-					'am' => q{FM},
-				},
 				'narrow' => {
 					'pm' => q{e},
 					'am' => q{f},
+				},
+				'abbreviated' => {
+					'am' => q{FM},
+					'pm' => q{EM},
 				},
 				'wide' => {
 					'am' => q{fm},
@@ -5115,17 +5116,17 @@ has 'day_periods' => (
 				},
 			},
 			'stand-alone' => {
-				'abbreviated' => {
-					'pm' => q{em},
-					'am' => q{fm},
-				},
 				'narrow' => {
 					'am' => q{f.m.},
 					'pm' => q{e.m.},
 				},
+				'abbreviated' => {
+					'am' => q{fm},
+					'pm' => q{em},
+				},
 				'wide' => {
-					'pm' => q{eftermiddag},
 					'am' => q{förmiddag},
+					'pm' => q{eftermiddag},
 				},
 			},
 		},

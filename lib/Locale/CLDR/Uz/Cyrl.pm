@@ -1,6 +1,6 @@
 package Locale::CLDR::Uz::Cyrl;
 # This file auto generated from Data\common\main\uz_Cyrl.xml
-#	on Sat 17 May  5:01:10 pm GMT
+#	on Sun 18 May 12:43:03 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -650,9 +650,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['А', 'Б', 'В', 'Г', 'Ғ', 'Д', 'Е', 'Ж', 'З', 'И', 'Й', 'К', 'Қ', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ў', 'Ф', 'Х', 'Ҳ', 'Ч', 'Ш', 'Ъ', 'Э', 'Ю', 'Я'], };
+		return { index => ['А', 'Б', 'В', 'Г', 'Ғ', 'Д', 'Е', 'Ж', 'З', 'И', 'Й', 'К', 'Қ', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ў', 'Ф', 'Х', 'Ҳ', 'Ч', 'Ш', 'Ъ', 'Э', 'Ю', 'Я'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',

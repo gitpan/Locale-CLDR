@@ -1,6 +1,6 @@
 package Locale::CLDR::Kln;
 # This file auto generated from Data\common\main\kln.xml
-#	on Sat 17 May  3:35:15 pm GMT
+#	on Sun 18 May 11:15:59 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -329,9 +329,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'E', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'W', 'Y'], };
+		return { index => ['A', 'B', 'C', 'D', 'E', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'W', 'Y'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',
@@ -823,13 +824,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
+				'abbreviated' => {
+					'pm' => q{KE},
+					'am' => q{BE},
+				},
 				'wide' => {
 					'am' => q{Beet},
 					'pm' => q{Kemo},
-				},
-				'abbreviated' => {
-					'am' => q{BE},
-					'pm' => q{KE},
 				},
 			},
 		},
@@ -909,7 +910,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -932,7 +933,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},

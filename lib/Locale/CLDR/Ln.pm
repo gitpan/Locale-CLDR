@@ -1,6 +1,6 @@
 package Locale::CLDR::Ln;
 # This file auto generated from Data\common\main\ln.xml
-#	on Sat 17 May  3:47:30 pm GMT
+#	on Sun 18 May 11:28:24 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -439,9 +439,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'E', 'Ɛ', 'F', 'G', '{Gb}', 'H', 'I', 'K', 'L', 'M', '{Mb}', '{Mp}', 'N', '{Nd}', '{Ng}', '{Nk}', '{Ns}', '{Nt}', '{Ny}', '{Nz}', 'O', 'Ɔ', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'Y', 'Z'], };
+		return { index => ['A', 'B', 'C', 'D', 'E', 'Ɛ', 'F', 'G', '{Gb}', 'H', 'I', 'K', 'L', 'M', '{Mb}', '{Mp}', 'N', '{Nd}', '{Ng}', '{Nk}', '{Ns}', '{Nt}', '{Ny}', '{Nz}', 'O', 'Ɔ', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'Y', 'Z'], };
 },
 );
+
 
 has 'more_information' => (
 	is			=> 'ro',
@@ -1142,8 +1143,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{ntɔ́ngɔ́},
 					'pm' => q{mpókwa},
+					'am' => q{ntɔ́ngɔ́},
 				},
 			},
 		},
@@ -1223,7 +1224,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -1247,7 +1248,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},

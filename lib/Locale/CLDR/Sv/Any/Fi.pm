@@ -1,6 +1,6 @@
 package Locale::CLDR::Sv::Any::Fi;
 # This file auto generated from Data\common\main\sv_FI.xml
-#	on Sat 17 May  4:44:02 pm GMT
+#	on Sun 18 May 12:25:40 pm GMT
 # XML file generated 2014-02-26 15:19:38 -0600 (Wed, 26 Feb 2014)
 
 use version;
@@ -173,9 +173,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index =>  };
+		return {};
 },
 );
+
 
 has 'units' => (
 	is			=> 'ro',

@@ -1,6 +1,6 @@
 package Locale::CLDR::Nb;
 # This file auto generated from Data\common\main\nb.xml
-#	on Sat 17 May  4:08:05 pm GMT
+#	on Sun 18 May 11:49:21 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -1360,9 +1360,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Æ', 'Ø', 'Å'], };
+		return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Æ', 'Ø', 'Å'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',
@@ -4611,17 +4612,17 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'narrow' => {
-					'am' => q{a},
-					'pm' => q{p},
-				},
 				'abbreviated' => {
 					'am' => q{a.m.},
 					'pm' => q{p.m.},
 				},
 				'wide' => {
-					'pm' => q{p.m.},
 					'am' => q{a.m.},
+					'pm' => q{p.m.},
+				},
+				'narrow' => {
+					'pm' => q{p},
+					'am' => q{a},
 				},
 			},
 			'stand-alone' => {

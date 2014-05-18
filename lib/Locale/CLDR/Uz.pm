@@ -1,6 +1,6 @@
 package Locale::CLDR::Uz;
 # This file auto generated from Data\common\main\uz.xml
-#	on Sat 17 May  5:00:45 pm GMT
+#	on Sun 18 May 12:42:37 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -667,9 +667,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', '{CH}', 'D', 'E', 'F', 'G', '{Gʻ}', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', '{Oʻ}', 'P', 'Q', 'R', 'S', '{SH}', 'T', 'U', 'V', 'X', 'Y', 'Z'], };
+		return { index => ['A', 'B', '{CH}', 'D', 'E', 'F', 'G', '{Gʻ}', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', '{Oʻ}', 'P', 'Q', 'R', 'S', '{SH}', 'T', 'U', 'V', 'X', 'Y', 'Z'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',
@@ -2325,8 +2326,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{PM},
 					'am' => q{AM},
+					'pm' => q{PM},
 				},
 			},
 		},

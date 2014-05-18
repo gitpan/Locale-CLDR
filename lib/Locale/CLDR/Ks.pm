@@ -1,6 +1,6 @@
 package Locale::CLDR::Ks;
 # This file auto generated from Data\common\main\ks.xml
-#	on Sat 17 May  3:42:23 pm GMT
+#	on Sun 18 May 11:23:12 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -1035,9 +1035,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index =>  };
+		return {};
 },
 );
+
 
 has 'units' => (
 	is			=> 'ro',

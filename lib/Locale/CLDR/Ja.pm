@@ -1,6 +1,6 @@
 package Locale::CLDR::Ja;
 # This file auto generated from Data\common\main\ja.xml
-#	on Sat 17 May  3:27:12 pm GMT
+#	on Sun 18 May 11:07:48 am GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use version;
@@ -1385,9 +1385,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['あ', 'か', 'さ', 'た', 'な', 'は', 'ま', 'や', 'ら', 'わ'], };
+		return { index => ['あ', 'か', 'さ', 'た', 'な', 'は', 'ま', 'や', 'ら', 'わ'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',
@@ -5187,15 +5188,15 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
+				'narrow' => {
+					'am' => q{午前},
+					'pm' => q{午後},
+					'noon' => q{正午},
+				},
 				'wide' => {
 					'noon' => q{正午},
-					'am' => q{午前},
 					'pm' => q{午後},
-				},
-				'narrow' => {
-					'noon' => q{正午},
 					'am' => q{午前},
-					'pm' => q{午後},
 				},
 			},
 		},
@@ -5905,26 +5906,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'islamic' => {
-			M => q{M月},
-			MEd => q{M/d(E)},
-			MMM => q{M月},
-			MMMEd => q{M月d日(E)},
-			MMMd => q{M月d日},
-			Md => q{M/d},
-			d => q{d日},
-			y => q{Gy年},
-		},
-		'roc' => {
-			M => q{M月},
-			MEd => q{M/d(E)},
-			MMM => q{M月},
-			MMMEd => q{M月d日(E)},
-			MMMd => q{M月d日},
-			Md => q{M/d},
-			d => q{d日},
-			y => q{Gy年},
-		},
 		'generic' => {
 			EEEEd => q{d日EEEE},
 			Ed => q{d日(E)},
@@ -5962,41 +5943,25 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{Gy/QQQ},
 			yyyyQQQQ => q{GyQQQQ},
 		},
-		'chinese' => {
-			EEEEd => q{d日EEEE},
-			Ed => q{d日(E)},
-			Gy => q{U年},
-			GyMMM => q{U年MMM},
-			GyMMMEEEEd => q{U年MMMd日EEEE},
-			GyMMMEd => q{U年MMMd日(E)},
-			GyMMMd => q{U年MMMd日},
-			H => q{H時},
-			Hm => q{H:mm},
-			Hms => q{H:mm:ss},
-			M => q{MMM},
-			MEEEEd => q{M/dEEEE},
+		'roc' => {
+			M => q{M月},
 			MEd => q{M/d(E)},
-			MMMEEEEd => q{MMMd日EEEE},
-			MMMEd => q{MMMd日(E)},
-			MMMd => q{MMMd日},
+			MMM => q{M月},
+			MMMEd => q{M月d日(E)},
+			MMMd => q{M月d日},
 			Md => q{M/d},
 			d => q{d日},
-			h => q{aK時},
-			hm => q{aK:mm},
-			hms => q{aK:mm:ss},
-			y => q{U年},
-			yMd => q{U年M月d日},
-			yyyy => q{U年},
-			yyyyM => q{U年M月},
-			yyyyMEEEEd => q{U年M月d日EEEE},
-			yyyyMEd => q{U年M月d日(E)},
-			yyyyMMM => q{U年MMM},
-			yyyyMMMEEEEd => q{U年MMMd日EEEE},
-			yyyyMMMEd => q{U年MMMd日(E)},
-			yyyyMMMd => q{U年MMMd日},
-			yyyyMd => q{U年M月d日},
-			yyyyQQQ => q{U年QQQ},
-			yyyyQQQQ => q{U年QQQQ},
+			y => q{Gy年},
+		},
+		'islamic' => {
+			M => q{M月},
+			MEd => q{M/d(E)},
+			MMM => q{M月},
+			MMMEd => q{M月d日(E)},
+			MMMd => q{M月d日},
+			Md => q{M/d},
+			d => q{d日},
+			y => q{Gy年},
 		},
 		'buddhist' => {
 			EEEEd => q{d日EEEE},
@@ -6034,6 +5999,42 @@ has 'datetime_formats_available_formats' => (
 			yyyyMMMEd => q{GGGGy年M月d日(E)},
 			yyyyMMMd => q{GGGGy年M月d日},
 			yyyyMd => q{Gy/M/d},
+		},
+		'chinese' => {
+			EEEEd => q{d日EEEE},
+			Ed => q{d日(E)},
+			Gy => q{U年},
+			GyMMM => q{U年MMM},
+			GyMMMEEEEd => q{U年MMMd日EEEE},
+			GyMMMEd => q{U年MMMd日(E)},
+			GyMMMd => q{U年MMMd日},
+			H => q{H時},
+			Hm => q{H:mm},
+			Hms => q{H:mm:ss},
+			M => q{MMM},
+			MEEEEd => q{M/dEEEE},
+			MEd => q{M/d(E)},
+			MMMEEEEd => q{MMMd日EEEE},
+			MMMEd => q{MMMd日(E)},
+			MMMd => q{MMMd日},
+			Md => q{M/d},
+			d => q{d日},
+			h => q{aK時},
+			hm => q{aK:mm},
+			hms => q{aK:mm:ss},
+			y => q{U年},
+			yMd => q{U年M月d日},
+			yyyy => q{U年},
+			yyyyM => q{U年M月},
+			yyyyMEEEEd => q{U年M月d日EEEE},
+			yyyyMEd => q{U年M月d日(E)},
+			yyyyMMM => q{U年MMM},
+			yyyyMMMEEEEd => q{U年MMMd日EEEE},
+			yyyyMMMEd => q{U年MMMd日(E)},
+			yyyyMMMd => q{U年MMMd日},
+			yyyyMd => q{U年M月d日},
+			yyyyQQQ => q{U年QQQ},
+			yyyyQQQQ => q{U年QQQQ},
 		},
 		'japanese' => {
 			EEEEd => q{d日EEEE},

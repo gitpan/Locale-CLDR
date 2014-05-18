@@ -1,6 +1,6 @@
 package Locale::CLDR::Sr::Cyrl::Ba;
 # This file auto generated from Data\common\main\sr_Cyrl_BA.xml
-#	on Sat 17 May  4:39:11 pm GMT
+#	on Sun 18 May 12:20:44 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
@@ -167,7 +167,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			MEd => {
 				M => q{E, MM-dd - E, MM-dd},
 				d => q{E, MM-dd - E, MM-dd},
@@ -191,7 +191,7 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd - y-MM-dd},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			MEd => {
 				M => q{E, MM-dd - E, MM-dd},
 				d => q{E, MM-dd - E, MM-dd},

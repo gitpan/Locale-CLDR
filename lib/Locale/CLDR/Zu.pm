@@ -1,6 +1,6 @@
 package Locale::CLDR::Zu;
 # This file auto generated from Data\common\main\zu.xml
-#	on Sat 17 May  5:09:53 pm GMT
+#	on Sun 18 May 12:51:54 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
@@ -811,9 +811,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'], };
+		return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',
@@ -2470,16 +2471,16 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'narrow' => {
-					'am' => q{a},
 					'pm' => q{p},
+					'am' => q{a},
 				},
 				'abbreviated' => {
 					'am' => q{AM},
 					'pm' => q{PM},
 				},
 				'wide' => {
-					'pm' => q{Ntambama},
 					'am' => q{Ekuseni},
+					'pm' => q{Ntambama},
 				},
 			},
 		},

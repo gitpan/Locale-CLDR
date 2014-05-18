@@ -1,6 +1,6 @@
 package Locale::CLDR::Pa::Arab;
 # This file auto generated from Data\common\main\pa_Arab.xml
-#	on Sat 17 May  4:17:03 pm GMT
+#	on Sun 18 May 11:58:24 am GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use version;
@@ -90,9 +90,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['ء', 'آ', 'ؤ', 'ئ', 'ا', 'ب', 'پ', 'ت', 'ث', 'ٹ', 'ج', 'چ', 'ح', 'خ', 'د', 'ذ', 'ڈ', 'ر', 'ز', 'ڑ', 'ژ', 'س', 'ش', 'ص', 'ض', 'ط', 'ظ', 'ع', 'غ', 'ف', 'ق', 'ک', 'گ', 'ل', 'م', 'ن', 'ں', 'ه', 'ھ', 'ہ', 'و', 'ی', 'ے'], };
+		return { index => ['ء', 'آ', 'ؤ', 'ئ', 'ا', 'ب', 'پ', 'ت', 'ث', 'ٹ', 'ج', 'چ', 'ح', 'خ', 'د', 'ذ', 'ڈ', 'ر', 'ز', 'ڑ', 'ژ', 'س', 'ش', 'ص', 'ض', 'ط', 'ظ', 'ع', 'غ', 'ف', 'ق', 'ک', 'گ', 'ل', 'م', 'ن', 'ں', 'ه', 'ھ', 'ہ', 'و', 'ی', 'ے'], };
 },
 );
+
 
 has 'yesstr' => (
 	is			=> 'ro',
@@ -306,14 +307,14 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			HHmmss => q{HH:mm:ss},
 			Md => q{d/M},
 			mmss => q{mm:ss},
 			yMMM => q{MMM y},
 			yQQQ => q{QQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			HHmmss => q{HH:mm:ss},
 			Md => q{d/M},
 			mmss => q{mm:ss},

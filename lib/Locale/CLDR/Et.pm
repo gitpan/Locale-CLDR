@@ -1,6 +1,6 @@
 package Locale::CLDR::Et;
 # This file auto generated from Data\common\main\et.xml
-#	on Sat 17 May  2:56:20 pm GMT
+#	on Sun 18 May 10:36:26 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -1246,9 +1246,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'Š', 'Z', 'Ž', 'T', 'U', 'V', 'Õ', 'Ä', 'Ö', 'Ü', 'X', 'Y'], };
+		return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'Š', 'Z', 'Ž', 'T', 'U', 'V', 'Õ', 'Ä', 'Ö', 'Ü', 'X', 'Y'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',
@@ -3929,13 +3930,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'abbreviated' => {
-					'am' => q{e.k.},
-					'pm' => q{p.k.},
-				},
 				'wide' => {
 					'pm' => q{PM},
 					'am' => q{AM},
+				},
+				'abbreviated' => {
+					'pm' => q{p.k.},
+					'am' => q{e.k.},
 				},
 			},
 		},

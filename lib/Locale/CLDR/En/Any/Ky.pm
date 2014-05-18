@@ -1,6 +1,6 @@
 package Locale::CLDR::En::Any::Ky;
 # This file auto generated from Data\common\main\en_KY.xml
-#	on Sat 17 May  2:52:06 pm GMT
+#	on Sun 18 May 10:32:07 am GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;

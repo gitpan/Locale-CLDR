@@ -1,6 +1,6 @@
 package Locale::CLDR::Fi;
 # This file auto generated from Data\common\main\fi.xml
-#	on Sat 17 May  3:00:52 pm GMT
+#	on Sun 18 May 10:41:01 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
@@ -1386,9 +1386,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Å', 'Ä', 'Ö'], };
+		return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Å', 'Ä', 'Ö'], };
 },
 );
+
 
 has 'ellipsis' => (
 	is			=> 'ro',
@@ -4759,17 +4760,17 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'pm' => q{ip.},
-					'am' => q{ap.},
-				},
 				'narrow' => {
-					'pm' => q{ip.},
 					'am' => q{ap.},
+					'pm' => q{ip.},
+				},
+				'wide' => {
+					'am' => q{ap.},
+					'pm' => q{ip.},
 				},
 				'abbreviated' => {
-					'am' => q{ap.},
 					'pm' => q{ip.},
+					'am' => q{ap.},
 				},
 			},
 			'stand-alone' => {
@@ -4930,24 +4931,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'chinese' => {
-			H => q{H},
-			Hm => q{H.mm},
-			Hms => q{H.mm.ss},
-			MEd => q{E d.M.},
-			MMMEd => q{E d.M.},
-			MMMd => q{d.M.},
-			Md => q{d.M.},
-			hm => q{h.mm a},
-			hms => q{h.mm.ss a},
-			ms => q{mm.ss},
-			y => q{y},
-			yyyy => q{y},
-			yyyyMEd => q{E d.M.y},
-			yyyyMMMEd => q{E d.M.y},
-			yyyyMMMd => q{d.M.y},
-			yyyyMd => q{d.M.y},
-		},
 		'generic' => {
 			Ed => q{E d.},
 			Gy => q{y G},
@@ -4981,6 +4964,24 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{d.M.y G},
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
+		},
+		'chinese' => {
+			H => q{H},
+			Hm => q{H.mm},
+			Hms => q{H.mm.ss},
+			MEd => q{E d.M.},
+			MMMEd => q{E d.M.},
+			MMMd => q{d.M.},
+			Md => q{d.M.},
+			hm => q{h.mm a},
+			hms => q{h.mm.ss a},
+			ms => q{mm.ss},
+			y => q{y},
+			yyyy => q{y},
+			yyyyMEd => q{E d.M.y},
+			yyyyMMMEd => q{E d.M.y},
+			yyyyMMMd => q{d.M.y},
+			yyyyMd => q{d.M.y},
 		},
 		'gregorian' => {
 			EHm => q{E H.mm},

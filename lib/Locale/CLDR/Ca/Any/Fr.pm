@@ -1,6 +1,6 @@
 package Locale::CLDR::Ca::Any::Fr;
 # This file auto generated from Data\common\main\ca_FR.xml
-#	on Sat 17 May  2:38:20 pm GMT
+#	on Sun 18 May 10:18:34 am GMT
 # XML file generated 2013-08-18 23:26:52 -0500 (Sun, 18 Aug 2013)
 
 use version;

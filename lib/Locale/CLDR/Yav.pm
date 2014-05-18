@@ -1,6 +1,6 @@
 package Locale::CLDR::Yav;
 # This file auto generated from Data\common\main\yav.xml
-#	on Sat 17 May  5:03:30 pm GMT
+#	on Sun 18 May 12:45:25 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
@@ -328,9 +328,10 @@ has 'characters' => (
 	},
 EOT
 : sub {
-	return { index => ['A', 'B', 'C', 'D', 'E', 'Ɛ', 'F', 'H', 'I', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'Ɔ', 'P', 'S', 'T', 'U', 'V', 'W', 'Y'], };
+		return { index => ['A', 'B', 'C', 'D', 'E', 'Ɛ', 'F', 'H', 'I', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'Ɔ', 'P', 'S', 'T', 'U', 'V', 'W', 'Y'], };
 },
 );
+
 
 has 'quote_start' => (
 	is			=> 'ro',

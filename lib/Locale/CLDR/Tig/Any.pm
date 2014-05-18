@@ -1,7 +1,7 @@
 package Locale::CLDR::Tig::Any;
 
 # This file auto generated
-#	on Sat 17 May  4:52:12 pm GMT
+#	on Sun 18 May 12:33:57 pm GMT
 
 use version;
 
