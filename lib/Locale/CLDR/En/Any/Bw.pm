@@ -1,11 +1,11 @@
 package Locale::CLDR::En::Any::Bw;
 # This file auto generated from Data\common\main\en_BW.xml
-#	on Sun 18 May 10:31:57 am GMT
+#	on Sun  1 Jun  2:48:50 pm GMT
 # XML file generated 2014-01-08 23:53:23 -0600 (Wed, 08 Jan 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -39,19 +39,19 @@ has 'day_period_data' => (
 		SWITCH:
 		for ($type) {
 			if ($_ eq 'generic') {
-				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'am' if $time >= 000
 					&& $time < 1200;
+				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'gregorian') {
-				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'am' if $time >= 000
 					&& $time < 1200;
+				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 		}

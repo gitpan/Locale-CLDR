@@ -1,11 +1,11 @@
 package Locale::CLDR::Mg;
 # This file auto generated from Data\common\main\mg.xml
-#	on Sun 18 May 11:36:41 am GMT
+#	on Sun  1 Jun  3:47:29 pm GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

@@ -1,11 +1,11 @@
 package Locale::CLDR::Fur;
 # This file auto generated from Data\common\main\fur.xml
-#	on Sun 18 May 10:45:30 am GMT
+#	on Sun  1 Jun  3:02:57 pm GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -1603,7 +1603,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{d E},
 			Hm => q{H:mm},
 			M => q{L},
@@ -1626,7 +1626,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{d E},
 			Hm => q{H:mm},
 			M => q{L},
@@ -1665,7 +1665,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH-HH},
 			},
@@ -1760,7 +1760,7 @@ has 'datetime_formats_interval' => (
 				y => q{dd/MM/y - dd/MM/y},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH-HH},
 			},

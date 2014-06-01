@@ -1,11 +1,11 @@
 package Locale::CLDR::Yo;
 # This file auto generated from Data\common\main\yo.xml
-#	on Sun 18 May 12:45:26 pm GMT
+#	on Sun  1 Jun  4:49:33 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

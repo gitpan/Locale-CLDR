@@ -1,11 +1,11 @@
 package Locale::CLDR::En::Any::001;
 # This file auto generated from Data\common\main\en_001.xml
-#	on Sun 18 May 10:31:53 am GMT
+#	on Sun  1 Jun  2:48:47 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

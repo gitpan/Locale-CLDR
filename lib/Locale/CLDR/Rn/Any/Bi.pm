@@ -1,11 +1,11 @@
 package Locale::CLDR::Rn::Any::Bi;
 # This file auto generated from Data\common\main\rn_BI.xml
-#	on Sun 18 May 12:05:40 pm GMT
+#	on Sun  1 Jun  4:12:34 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

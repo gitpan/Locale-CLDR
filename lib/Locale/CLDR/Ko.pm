@@ -1,11 +1,11 @@
 package Locale::CLDR::Ko;
 # This file auto generated from Data\common\main\ko.xml
-#	on Sun 18 May 11:20:15 am GMT
+#	on Sun  1 Jun  3:33:19 pm GMT
 # XML file generated 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -4077,8 +4077,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{오후},
 					'am' => q{오전},
+					'pm' => q{오후},
 				},
 			},
 		},

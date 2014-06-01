@@ -1,11 +1,11 @@
 package Locale::CLDR::Es::Any::Uy;
 # This file auto generated from Data\common\main\es_UY.xml
-#	on Sun 18 May 10:36:24 am GMT
+#	on Sun  1 Jun  2:53:19 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

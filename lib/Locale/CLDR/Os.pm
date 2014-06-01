@@ -1,11 +1,11 @@
 package Locale::CLDR::Os;
 # This file auto generated from Data\common\main\os.xml
-#	on Sun 18 May 11:56:21 am GMT
+#	on Sun  1 Jun  4:04:25 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

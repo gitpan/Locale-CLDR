@@ -1,11 +1,11 @@
 package Locale::CLDR::Wal;
 # This file auto generated from Data\common\main\wal.xml
-#	on Sun 18 May 12:45:20 pm GMT
+#	on Sun  1 Jun  4:49:27 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

@@ -1,11 +1,11 @@
 package Locale::CLDR::Be;
 # This file auto generated from Data\common\main\be.xml
-#	on Sun 18 May 10:03:05 am GMT
+#	on Sun  1 Jun  2:20:01 pm GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -1048,14 +1048,14 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{да палудня},
 					'pm' => q{пасля палудня},
+					'am' => q{да палудня},
 				},
 			},
 			'stand-alone' => {
 				'abbreviated' => {
-					'pm' => q{вечара},
 					'am' => q{раніцы},
+					'pm' => q{вечара},
 				},
 			},
 		},
@@ -1173,6 +1173,28 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
 		},
+		'buddhist' => {
+			Ed => q{E, d},
+			Gy => q{G y},
+			Hm => q{HH.mm},
+			Hms => q{HH.mm.ss},
+			M => q{L},
+			MEd => q{E, d.M},
+			MMM => q{LLL},
+			MMMEd => q{E, d MMM},
+			MMMd => q{d MMM},
+			Md => q{d.M},
+			d => q{d},
+			hm => q{h.mm a},
+			hms => q{h.mm.ss a},
+			y => q{G y},
+			yM => q{M.y},
+			yMEd => q{E, d.M.y},
+			yMMM => q{MMM y G},
+			yMMMEd => q{E, d MMM y G},
+			yMMMd => q{d MMM y G},
+			yMd => q{d.M.y},
+		},
 		'gregorian' => {
 			Gy => q{y G},
 			GyMMM => q{LLL y G},
@@ -1202,28 +1224,6 @@ has 'datetime_formats_available_formats' => (
 			yMd => q{d.M.y},
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
-		},
-		'buddhist' => {
-			Ed => q{E, d},
-			Gy => q{G y},
-			Hm => q{HH.mm},
-			Hms => q{HH.mm.ss},
-			M => q{L},
-			MEd => q{E, d.M},
-			MMM => q{LLL},
-			MMMEd => q{E, d MMM},
-			MMMd => q{d MMM},
-			Md => q{d.M},
-			d => q{d},
-			hm => q{h.mm a},
-			hms => q{h.mm.ss a},
-			y => q{G y},
-			yM => q{M.y},
-			yMEd => q{E, d.M.y},
-			yMMM => q{MMM y G},
-			yMMMEd => q{E, d MMM y G},
-			yMMMd => q{d MMM y G},
-			yMd => q{d.M.y},
 		},
 	} },
 );

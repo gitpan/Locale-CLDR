@@ -1,11 +1,11 @@
 package Locale::CLDR::Az::Cyrl;
 # This file auto generated from Data\common\main\az_Cyrl.xml
-#	on Sun 18 May 10:03:00 am GMT
+#	on Sun  1 Jun  2:19:56 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -294,19 +294,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			MEd => q{E, dd.MM},
-			MMM => q{LLL},
-			MMMEd => q{E, d, MMM},
-			MMMd => q{d MMM},
-			Md => q{dd.MM},
-			yyyyM => q{MM.y G},
-			yyyyMEd => q{E, dd.MM.y G},
-			yyyyMMM => q{MMM, y G},
-			yyyyMMMEd => q{E, d, MMM, y G},
-			yyyyMMMd => q{d MMM, y G},
-			yyyyMd => q{dd.MM.y G},
-		},
 		'gregorian' => {
 			MEd => q{E, dd.MM},
 			MMM => q{LLL},
@@ -319,6 +306,19 @@ has 'datetime_formats_available_formats' => (
 			yMMMEd => q{E, d, MMM, y},
 			yMMMd => q{d MMM, y},
 			yMd => q{dd.MM.y},
+		},
+		'generic' => {
+			MEd => q{E, dd.MM},
+			MMM => q{LLL},
+			MMMEd => q{E, d, MMM},
+			MMMd => q{d MMM},
+			Md => q{dd.MM},
+			yyyyM => q{MM.y G},
+			yyyyMEd => q{E, dd.MM.y G},
+			yyyyMMM => q{MMM, y G},
+			yyyyMMMEd => q{E, d, MMM, y G},
+			yyyyMMMd => q{d MMM, y G},
+			yyyyMd => q{dd.MM.y G},
 		},
 	} },
 );

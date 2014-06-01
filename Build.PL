@@ -12,6 +12,7 @@ my $builder = Module::Build->new(
         'MooseX::ClassAttribute'    => '0.26',
         'XML::Parser'               => '2.41',
         'XML::XPath'                => '1.13',
+        'perl'                      => '5.10.0',
     },
     dist_author         => q{John Imrie <john.imrie1@gmail.com>},
     dist_version_from   => 'lib/Locale/CLDR.pm',
@@ -28,7 +29,7 @@ my $builder = Module::Build->new(
     add_to_cleanup      => [ 'Locale-CLDR-*' ],
 	configure_requires => { 'Module::Build' => '0.40' },
     create_makefile_pl => 'traditional',
-	release_status => 'stable',
+	release_status => 'unstable',
 );
 
 $builder->create_build_script();

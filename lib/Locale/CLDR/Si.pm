@@ -1,11 +1,11 @@
 package Locale::CLDR::Si;
 # This file auto generated from Data\common\main\si.xml
-#	on Sun 18 May 12:11:12 pm GMT
+#	on Sun  1 Jun  4:17:21 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -2700,8 +2700,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{පෙ.ව.},
 					'pm' => q{ප.ව.},
+					'am' => q{පෙ.ව.},
 				},
 			},
 		},

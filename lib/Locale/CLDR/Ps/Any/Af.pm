@@ -1,11 +1,11 @@
 package Locale::CLDR::Ps::Any::Af;
 # This file auto generated from Data\common\main\ps_AF.xml
-#	on Sun 18 May 12:00:10 pm GMT
+#	on Sun  1 Jun  4:07:46 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

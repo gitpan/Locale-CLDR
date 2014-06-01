@@ -1,11 +1,11 @@
 package Locale::CLDR::Es;
 # This file auto generated from Data\common\main\es.xml
-#	on Sun 18 May 10:32:18 am GMT
+#	on Sun  1 Jun  2:49:13 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -4309,12 +4309,12 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'narrow' => {
-					'am' => q{a.m.},
 					'pm' => q{p.m.},
+					'am' => q{a.m.},
 				},
 				'wide' => {
-					'am' => q{a. m.},
 					'pm' => q{p. m.},
+					'am' => q{a. m.},
 				},
 			},
 		},
@@ -4510,38 +4510,6 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ 'de' y},
 		},
-		'chinese' => {
-			Ed => q{E d},
-			Gy => q{y},
-			GyMMM => q{M-y},
-			GyMMMEd => q{E, d-M-y},
-			GyMMMd => q{d-M-y},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, d-M},
-			MMM => q{L},
-			MMMEd => q{E d-M},
-			MMMd => q{d-M},
-			Md => q{d-M},
-			d => q{d},
-			h => q{hh a},
-			hm => q{hh:mm a},
-			hms => q{hh:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y},
-			yyyy => q{y},
-			yyyyM => q{M-y},
-			yyyyMEd => q{E, d-M-y},
-			yyyyMMM => q{M-y},
-			yyyyMMMEd => q{E, d-M-y},
-			yyyyMMMM => q{M-y},
-			yyyyMMMd => q{d-M-y},
-			yyyyMd => q{d-M-y},
-			yyyyQQQ => q{QQQ y},
-			yyyyQQQQ => q{QQQQ y},
-		},
 		'generic' => {
 			Ed => q{E d},
 			Gy => q{y G},
@@ -4575,6 +4543,38 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{d/M/y GGGGG},
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ 'de' y G},
+		},
+		'chinese' => {
+			Ed => q{E d},
+			Gy => q{y},
+			GyMMM => q{M-y},
+			GyMMMEd => q{E, d-M-y},
+			GyMMMd => q{d-M-y},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, d-M},
+			MMM => q{L},
+			MMMEd => q{E d-M},
+			MMMd => q{d-M},
+			Md => q{d-M},
+			d => q{d},
+			h => q{hh a},
+			hm => q{hh:mm a},
+			hms => q{hh:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y},
+			yyyy => q{y},
+			yyyyM => q{M-y},
+			yyyyMEd => q{E, d-M-y},
+			yyyyMMM => q{M-y},
+			yyyyMMMEd => q{E, d-M-y},
+			yyyyMMMM => q{M-y},
+			yyyyMMMd => q{d-M-y},
+			yyyyMd => q{d-M-y},
+			yyyyQQQ => q{QQQ y},
+			yyyyQQQQ => q{QQQQ y},
 		},
 	} },
 );

@@ -1,11 +1,11 @@
 package Locale::CLDR::Ar;
 # This file auto generated from Data\common\main\ar.xml
-#	on Sun 18 May  9:57:46 am GMT
+#	on Sun  1 Jun  2:14:11 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -6202,6 +6202,15 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'islamic' => {
+			M => q{L},
+			Md => q{d/‏M},
+			d => q{d},
+			yyyyM => q{M‏/y G},
+			yyyyMEd => q{E، d/‏M/‏y G},
+			yyyyMMM => q{MMM y G},
+			yyyyMd => q{d‏/M‏/y G},
+		},
 		'generic' => {
 			Ed => q{E، d},
 			Gy => q{y G},
@@ -6233,15 +6242,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{d‏/M‏/y G},
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
-		},
-		'islamic' => {
-			M => q{L},
-			Md => q{d/‏M},
-			d => q{d},
-			yyyyM => q{M‏/y G},
-			yyyyMEd => q{E، d/‏M/‏y G},
-			yyyyMMM => q{MMM y G},
-			yyyyMd => q{d‏/M‏/y G},
 		},
 		'gregorian' => {
 			EHm => q{E HH:mm},

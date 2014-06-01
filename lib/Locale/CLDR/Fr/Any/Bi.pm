@@ -1,11 +1,11 @@
 package Locale::CLDR::Fr::Any::Bi;
 # This file auto generated from Data\common\main\fr_BI.xml
-#	on Sun 18 May 10:45:26 am GMT
+#	on Sun  1 Jun  3:02:51 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

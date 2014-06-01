@@ -1,11 +1,11 @@
 package Locale::CLDR::Ne;
 # This file auto generated from Data\common\main\ne.xml
-#	on Sun 18 May 11:51:12 am GMT
+#	on Sun  1 Jun  3:59:58 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -3095,8 +3095,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{पूर्व मध्यान्ह},
 					'pm' => q{उत्तर मध्यान्ह},
+					'am' => q{पूर्व मध्यान्ह},
 				},
 			},
 		},

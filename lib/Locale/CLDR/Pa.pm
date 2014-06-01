@@ -1,11 +1,11 @@
 package Locale::CLDR::Pa;
 # This file auto generated from Data\common\main\pa.xml
-#	on Sun 18 May 11:56:24 am GMT
+#	on Sun  1 Jun  4:04:28 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

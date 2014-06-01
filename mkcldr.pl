@@ -28,7 +28,7 @@ $verbose = 1 if grep /-v/, @ARGV;
 use version;
 my $API_VERSION = 0;
 my $CLDR_VERSION = 25;
-my $REVISION = 1;
+my $REVISION = 2;
 our $VERSION = version->parse(join '.', $API_VERSION, $CLDR_VERSION, $REVISION);
 my $CLDR_PATH = $CLDR_VERSION;
 
@@ -141,7 +141,7 @@ $file_name = File::Spec->catfile($base_directory,
     'numberingSystems.xml'
 );
 
-my $xml = XML::XPath->new(
+$xml = XML::XPath->new(
     File::Spec->catfile($file_name));
 
 open my $file, '>', File::Spec->catfile($lib_directory, 'NumberingSystems.pm');
@@ -151,6 +151,43 @@ say "Processing file $file_name" if $verbose;
 # Note: The order of these calls is important
 process_header($file, 'Locale::CLDR::NumberingSystems', $CLDR_VERSION, $xml, $file_name, 1);
 process_numbering_systems($file, $xml);
+process_footer($file, 1);
+close $file;
+
+#Plaural rules
+$file_name = File::Spec->catfile($base_directory,
+    'supplemental',
+    'plurals.xml'
+);
+
+my $plural_xml = XML::XPath->new(
+    File::Spec->catfile($file_name));
+	
+$file_name = File::Spec->catfile($base_directory,
+    'supplemental',
+    'ordinals.xml'
+);
+
+my $ordanal_xml = XML::XPath->new(
+    File::Spec->catfile($file_name));
+
+open my $file, '>', File::Spec->catfile($lib_directory, 'Plurals.pm');
+
+say "Processing file $file_name" if $verbose;
+
+# Note: The order of these calls is important
+process_header($file, 'Locale::CLDR::Plurals', $CLDR_VERSION, $xml, $file_name, 1);
+process_plurals($file, $plural_xml, $ordanal_xml);
+
+$file_name = File::Spec->catfile($base_directory,
+    'supplemental',
+    'pluralRanges.xml'
+);
+
+my $plural_ranges_xml = XML::XPath->new(
+    File::Spec->catfile($file_name));
+
+process_plural_ranges($file, $plural_ranges_xml);
 process_footer($file, 1);
 close $file;
 
@@ -3506,6 +3543,154 @@ EOT
     say $file ");";
 }
 
+sub process_plurals {
+	my ($file, $cardanal_xml, $ordinal_xml) = @_;
+	
+	my %plurals;
+	foreach my $xml ($cardanal_xml, $ordinal_xml) {
+		my $plurals = findnodes($xml,
+			q(/supplementalData/plurals));
+		
+		foreach my $plural ($plurals->get_nodelist) {
+			my $type = $plural->getAttribute('type');
+			my $pluralRules = findnodes($xml, qq(/supplementalData/plurals[\@type='$type']/pluralRules));
+			foreach my $pluralRules_node ($pluralRules->get_nodelist) {
+				my $regions = $pluralRules_node->getAttribute('locales');
+				my @regions = split /\s+/, $regions;
+				my $pluralRule_nodes = findnodes($xml, qq(/supplementalData/plurals[\@type='$type']/pluralRules[\@locales="$regions"]/pluralRule));
+				foreach my $pluralRule ($pluralRule_nodes->get_nodelist) {
+					my $count = $pluralRule->getAttribute('count');
+					next if $count eq 'other';
+					my $rule = findnodes($xml, qq(/supplementalData/plurals[\@type='$type']/pluralRules[\@locales="$regions"]/pluralRule[\@count="$count"]/text()));
+					foreach my $region (@regions) {
+						$plurals{$type}{$region}{$count} = $rule;
+					}
+				}
+			}
+		}
+	}
+	
+	say  $file "my %_plurals = (";
+	
+	foreach my $type (sort keys %plurals) {
+		say $file "\t$type => {";
+		foreach my $region (sort keys %{$plurals{$type}}) {
+			say $file "\t\t$region => {";
+			foreach my $count ( sort keys %{$plurals{$type}{$region}} ) {
+				say $file "\t\t\t$count => sub {";
+				print $file <<'EOT';
+				
+				my $number = shift;
+				my $n = abs($number);
+				my $i = int($n);
+				my ($f) = $number =~ /\.(.*)$/;
+				$f //= '';
+				my $t = length $f ? $f + 0 : '';
+				my $v = length $f;
+				my $w = length $t;
+
+EOT
+				say $file "\t\t\t\t", get_format_rule( $plurals{$type}{$region}{$count});
+				say $file "\t\t\t},";
+			}
+			say $file "\t\t},";
+		}
+		say $file "\t},";
+	}
+	print $file <<'EOT';
+);
+
+sub plural {
+	my ($self, $number, $type) = @_;
+	$type //= 'cardinal';
+	my $language_id = $self->language_id || $self->likely_subtag->language_id;
+	
+	foreach my $count (qw( zero one two few many )) {
+		next unless exists $_plurals{$type}{$language_id}{$count};
+		return $count if $_plurals{$type}{$language_id}{$count}->($number);
+	}
+	return 'other';
+}
+
+EOT
+}
+
+sub process_plural_ranges {
+	my ($file, $xml) = @_;
+	
+	my %range;
+	my $plurals = findnodes($xml,
+		q(/supplementalData/plurals/pluralRanges)
+	);
+
+	foreach my $plural_node ($plurals->get_nodelist) {
+		my $locales = $plural_node->getAttribute('locales');
+		my @locales = split /\s+/, $locales;
+		my $range_nodes = findnodes($xml,
+			qq(/supplementalData/plurals/pluralRanges[\@locales='$locales']/pluralRange)
+		);
+	
+		foreach my $range_node ($range_nodes->get_nodelist) {
+			my ($start, $end, $result) = ($range_node->getAttribute('start'), $range_node->getAttribute('end'), $range_node->getAttribute('result'));
+			foreach my $locale (@locales) {
+				$range{$locale}{$start}{$end} = $result;
+			}
+		}
+	}
+	
+	say $file "my %_plural_ranges = (";
+	foreach my $locale (sort keys %range) {
+		say $file "\t$locale => {";
+		foreach my $start (sort keys %{$range{$locale}}) {
+			say $file "\t\t$start => {";
+			foreach my $end (sort keys %{$range{$locale}{$start}}) {
+				say $file "\t\t\t$end => '$range{$locale}{$start}{$end}',";
+			}
+			say $file "\t\t},";
+		}
+		say $file "\t},";
+	}
+	say $file <<'EOT';
+);
+	
+sub plural_range {
+	my ($self, $start, $end) = @_;
+	my $language_id = $self->language_id || $self->likely_subtag->language_id;
+	
+	$start = $self->plural($start) if $start =~ /^-?(?:[0-9]+\.)?[0-9]+$/;
+	$end   = $self->plural($end)   if $end   =~ /^-?(?:[0-9]+\.)?[0-9]+$/;
+	
+	return $_plural_ranges{$language_id}{$start}{$end} // 'other';
+}
+
+EOT
+}
+
+sub get_format_rule {
+	my $rule = shift;
+	
+	$rule =~ s/\@.*$//;
+	
+	return 1 unless $rule =~ /\S/; 
+	
+	# Basic substitutions
+	$rule =~ s/\b([niftvw])\b/\$$1/g;
+	
+	my $digit = qr/[0123456789]/;
+	my $value = qr/$digit+/;
+	my $decimal_value = qr/$value(?:\.$value)?/;
+	my $range = qr/$decimal_value\.\.$decimal_value/;
+	my $range_list = qr/(\$.*?)\s(!?)=\s((?:$range|$decimal_value)(?:,(?:$range|$decimal_value))*)/;
+	
+	$rule =~ s/$range_list/$2 scalar (grep {$1 == \$_} ($3))/g;
+	#$rule =~ s/\s=/ ==/g;
+	
+	$rule =~ s/\band\b/&&/g;
+	$rule =~ s/\bor\b/||/g;
+	
+	return "return $rule;";
+}
+
 sub process_footer {
     my $file = shift;
     my $isRole = shift;
@@ -4359,7 +4544,7 @@ sub get_formatted_number {
 		@parts = ($minor);
 		while (1) {
 			my ($major) = $integer =~ /($major_group)$/;
-			if (length $major) {
+			if (defined $major && length $major) {
 				$integer =~ s/$major_group$//;
 				unshift @parts, $major;
 			}

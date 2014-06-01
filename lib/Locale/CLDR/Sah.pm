@@ -1,11 +1,11 @@
 package Locale::CLDR::Sah;
 # This file auto generated from Data\common\main\sah.xml
-#	on Sun 18 May 12:10:42 pm GMT
+#	on Sun  1 Jun  4:16:55 pm GMT
 # XML file generated 2013-08-10 01:39:57 -0500 (Sat, 10 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

@@ -1,11 +1,11 @@
 package Locale::CLDR::Fr::Any::Pm;
 # This file auto generated from Data\common\main\fr_PM.xml
-#	on Sun 18 May 10:45:29 am GMT
+#	on Sun  1 Jun  3:02:55 pm GMT
 # XML file generated 2013-08-22 18:59:54 -0500 (Thu, 22 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

@@ -1,11 +1,11 @@
 package Locale::CLDR::Dz;
 # This file auto generated from Data\common\main\dz.xml
-#	on Sun 18 May 10:24:19 am GMT
+#	on Sun  1 Jun  2:41:35 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -1616,11 +1616,11 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'narrow' => {
-					'pm' => q{ཕྱི་ཆ་},
-					'am' => q{སྔ་ཆ་},
-				},
 				'wide' => {
+					'am' => q{སྔ་ཆ་},
+					'pm' => q{ཕྱི་ཆ་},
+				},
+				'narrow' => {
 					'am' => q{སྔ་ཆ་},
 					'pm' => q{ཕྱི་ཆ་},
 				},

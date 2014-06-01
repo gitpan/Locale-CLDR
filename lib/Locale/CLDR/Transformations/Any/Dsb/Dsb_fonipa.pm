@@ -1,11 +1,11 @@
 package Locale::CLDR::Transformations::Any::Dsb::Dsb_fonipa;
 # This file auto generated from Data\common\transforms\dsb-dsb_FONIPA.xml
-#	on Sun 18 May  9:54:35 am GMT
+#	on Sun  1 Jun  2:11:24 pm GMT
 # XML file generated 2014-02-24 10:07:33 -0600 (Mon, 24 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

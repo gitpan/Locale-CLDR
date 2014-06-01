@@ -1,11 +1,11 @@
 package Locale::CLDR::Hy::Any::Am;
 # This file auto generated from Data\common\main\hy_AM.xml
-#	on Sun 18 May 11:03:16 am GMT
+#	on Sun  1 Jun  3:18:47 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

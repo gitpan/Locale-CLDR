@@ -1,11 +1,11 @@
 package Locale::CLDR::Es::Any::Ec;
 # This file auto generated from Data\common\main\es_EC.xml
-#	on Sun 18 May 10:34:08 am GMT
+#	on Sun  1 Jun  2:51:03 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

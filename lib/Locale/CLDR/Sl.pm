@@ -1,11 +1,11 @@
 package Locale::CLDR::Sl;
 # This file auto generated from Data\common\main\sl.xml
-#	on Sun 18 May 12:14:42 pm GMT
+#	on Sun  1 Jun  4:20:21 pm GMT
 # XML file generated 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

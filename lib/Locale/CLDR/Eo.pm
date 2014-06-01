@@ -1,11 +1,11 @@
 package Locale::CLDR::Eo;
 # This file auto generated from Data\common\main\eo.xml
-#	on Sun 18 May 10:32:15 am GMT
+#	on Sun  1 Jun  2:49:09 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -663,8 +663,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{atm},
 					'pm' => q{ptm},
+					'am' => q{atm},
 				},
 			},
 		},

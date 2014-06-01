@@ -1,11 +1,11 @@
 package Locale::CLDR::Sv;
 # This file auto generated from Data\common\main\sv.xml
-#	on Sun 18 May 12:23:51 pm GMT
+#	on Sun  1 Jun  4:28:13 pm GMT
 # XML file generated 2014-03-10 16:39:54 -0500 (Mon, 10 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -5102,13 +5102,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'narrow' => {
-					'pm' => q{e},
-					'am' => q{f},
-				},
 				'abbreviated' => {
-					'am' => q{FM},
 					'pm' => q{EM},
+					'am' => q{FM},
+				},
+				'narrow' => {
+					'am' => q{f},
+					'pm' => q{e},
 				},
 				'wide' => {
 					'am' => q{fm},
@@ -5116,17 +5116,17 @@ has 'day_periods' => (
 				},
 			},
 			'stand-alone' => {
-				'narrow' => {
-					'am' => q{f.m.},
-					'pm' => q{e.m.},
-				},
 				'abbreviated' => {
-					'am' => q{fm},
 					'pm' => q{em},
+					'am' => q{fm},
 				},
 				'wide' => {
 					'am' => q{förmiddag},
 					'pm' => q{eftermiddag},
+				},
+				'narrow' => {
+					'am' => q{f.m.},
+					'pm' => q{e.m.},
 				},
 			},
 		},

@@ -1,11 +1,11 @@
 package Locale::CLDR::Transformations::Any::Katakana::Latin;
 # This file auto generated from Data\common\transforms\Latin-Katakana.xml
-#	on Sun 18 May  9:54:28 am GMT
+#	on Sun  1 Jun  2:11:17 pm GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

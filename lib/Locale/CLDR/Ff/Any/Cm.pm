@@ -1,11 +1,11 @@
 package Locale::CLDR::Ff::Any::Cm;
 # This file auto generated from Data\common\main\ff_CM.xml
-#	on Sun 18 May 10:40:59 am GMT
+#	on Sun  1 Jun  2:58:00 pm GMT
 # XML file generated 2014-01-06 13:01:35 -0600 (Mon, 06 Jan 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

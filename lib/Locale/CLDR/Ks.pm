@@ -1,11 +1,11 @@
 package Locale::CLDR::Ks;
 # This file auto generated from Data\common\main\ks.xml
-#	on Sun 18 May 11:23:12 am GMT
+#	on Sun  1 Jun  3:35:51 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

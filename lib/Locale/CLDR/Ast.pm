@@ -1,11 +1,11 @@
 package Locale::CLDR::Ast;
 # This file auto generated from Data\common\main\ast.xml
-#	on Sun 18 May 10:00:32 am GMT
+#	on Sun  1 Jun  2:17:09 pm GMT
 # XML file generated 2014-01-08 23:02:40 -0600 (Wed, 08 Jan 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

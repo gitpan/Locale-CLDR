@@ -1,11 +1,11 @@
 package Locale::CLDR::Cy;
 # This file auto generated from Data\common\main\cy.xml
-#	on Sun 18 May 10:20:19 am GMT
+#	on Sun  1 Jun  2:37:37 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -4553,9 +4553,9 @@ has 'day_periods' => (
 					'am' => q{AM},
 				},
 				'wide' => {
+					'am' => q{AM},
 					'noon' => q{hanner dydd},
 					'pm' => q{PM},
-					'am' => q{AM},
 				},
 			},
 		},

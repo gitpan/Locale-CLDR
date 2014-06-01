@@ -1,11 +1,11 @@
 package Locale::CLDR::Am;
 # This file auto generated from Data\common\main\am.xml
-#	on Sun 18 May  9:55:40 am GMT
+#	on Sun  1 Jun  2:12:20 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -3325,8 +3325,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{ጥዋት},
 					'pm' => q{ከሰዓት},
+					'am' => q{ጥዋት},
 				},
 			},
 		},

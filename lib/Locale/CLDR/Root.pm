@@ -1,11 +1,11 @@
 package Locale::CLDR::Root;
 # This file auto generated from Data\common\main\root.xml
-#	on Sun 18 May 12:07:07 pm GMT
+#	on Sun  1 Jun  4:13:49 pm GMT
 # XML file generated 2014-02-14 16:49:13 -0600 (Fri, 14 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -2226,28 +2226,14 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'chinese') {
+			if ($_ eq 'ethiopic-amete-alem') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
 				return 'pm' if $time >= 1200
 					&& $time < 2400;
 			last SWITCH;
 			}
-			if ($_ eq 'dangi') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-			last SWITCH;
-			}
-			if ($_ eq 'roc') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-			last SWITCH;
-			}
-			if ($_ eq 'islamic-rgsa') {
+			if ($_ eq 'coptic') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
 				return 'pm' if $time >= 1200
@@ -2261,21 +2247,7 @@ has 'day_period_data' => (
 					&& $time < 2400;
 			last SWITCH;
 			}
-			if ($_ eq 'islamic-umalqura') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-			last SWITCH;
-			}
-			if ($_ eq 'japanese') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-			last SWITCH;
-			}
-			if ($_ eq 'gregorian') {
+			if ($_ eq 'dangi') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
 				return 'pm' if $time >= 1200
@@ -2289,14 +2261,28 @@ has 'day_period_data' => (
 					&& $time < 2400;
 			last SWITCH;
 			}
-			if ($_ eq 'generic') {
+			if ($_ eq 'ethiopic') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
 				return 'pm' if $time >= 1200
 					&& $time < 2400;
 			last SWITCH;
 			}
-			if ($_ eq 'ethiopic') {
+			if ($_ eq 'hebrew') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'chinese') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'gregorian') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
 				return 'pm' if $time >= 1200
@@ -2317,27 +2303,6 @@ has 'day_period_data' => (
 					&& $time < 2400;
 			last SWITCH;
 			}
-			if ($_ eq 'indian') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-			last SWITCH;
-			}
-			if ($_ eq 'hebrew') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-			last SWITCH;
-			}
-			if ($_ eq 'coptic') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-			last SWITCH;
-			}
 			if ($_ eq 'islamic') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
@@ -2345,7 +2310,42 @@ has 'day_period_data' => (
 					&& $time < 2400;
 			last SWITCH;
 			}
-			if ($_ eq 'ethiopic-amete-alem') {
+			if ($_ eq 'japanese') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'islamic-rgsa') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'islamic-umalqura') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'indian') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'generic') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'roc') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
 				return 'pm' if $time >= 1200
@@ -2384,15 +2384,15 @@ has 'day_periods' => (
 		},
 		'gregorian' => {
 			'format' => {
-				'narrow' => {
-					'pm' => q{p},
-					'noon' => q{n},
-					'am' => q{a},
-				},
 				'wide' => {
-					'am' => q{AM},
 					'pm' => q{PM},
 					'noon' => q{noon},
+					'am' => q{AM},
+				},
+				'narrow' => {
+					'pm' => q{p},
+					'am' => q{a},
+					'noon' => q{n},
 				},
 				'abbreviated' => {
 					'alias' => 'wide',
@@ -3278,8 +3278,26 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'ethiopic' => {
+			'alias' => q{generic},
+		},
+		'buddhist' => {
+			'alias' => q{generic},
+		},
+		'coptic' => {
+			'alias' => q{generic},
+		},
+		'ethiopic-amete-alem' => {
+			'alias' => q{ethiopic},
+		},
 		'dangi' => {
 			'alias' => q{chinese},
+		},
+		'persian' => {
+			'alias' => q{generic},
+		},
+		'hebrew' => {
+			'alias' => q{generic},
 		},
 		'chinese' => {
 			Ed => q{d, E},
@@ -3312,15 +3330,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{y-MM-dd},
 			yyyyQQQ => q{U QQQ},
 			yyyyQQQQ => q{U QQQQ},
-		},
-		'islamic-rgsa' => {
-			'alias' => q{islamic},
-		},
-		'buddhist' => {
-			'alias' => q{generic},
-		},
-		'roc' => {
-			'alias' => q{generic},
 		},
 		'gregorian' => {
 			EHm => q{E HH:mm},
@@ -3356,38 +3365,23 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{y QQQ},
 			yQQQQ => q{y QQQQ},
 		},
-		'japanese' => {
-			'alias' => q{generic},
-		},
-		'islamic-umalqura' => {
+		'islamic-tbla' => {
 			'alias' => q{islamic},
-		},
-		'indian' => {
-			'alias' => q{generic},
 		},
 		'islamic-civil' => {
 			'alias' => q{islamic},
 		},
-		'islamic-tbla' => {
+		'islamic-rgsa' => {
 			'alias' => q{islamic},
+		},
+		'japanese' => {
+			'alias' => q{generic},
 		},
 		'islamic' => {
 			'alias' => q{generic},
 		},
-		'coptic' => {
-			'alias' => q{generic},
-		},
-		'hebrew' => {
-			'alias' => q{generic},
-		},
-		'ethiopic-amete-alem' => {
-			'alias' => q{ethiopic},
-		},
-		'persian' => {
-			'alias' => q{generic},
-		},
-		'ethiopic' => {
-			'alias' => q{generic},
+		'islamic-umalqura' => {
+			'alias' => q{islamic},
 		},
 		'generic' => {
 			EHm => q{E HH:mm},
@@ -3424,6 +3418,12 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{G y QQQ},
 			yyyyQQQQ => q{G y QQQQ},
 		},
+		'indian' => {
+			'alias' => q{generic},
+		},
+		'roc' => {
+			'alias' => q{generic},
+		},
 	} },
 );
 
@@ -3432,8 +3432,26 @@ has 'datetime_formats_append_item' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'ethiopic' => {
+			'alias' => q{generic},
+		},
+		'buddhist' => {
+			'alias' => q{generic},
+		},
+		'coptic' => {
+			'alias' => q{generic},
+		},
+		'ethiopic-amete-alem' => {
+			'alias' => q{ethiopic},
+		},
 		'dangi' => {
 			'alias' => q{chinese},
+		},
+		'persian' => {
+			'alias' => q{generic},
+		},
+		'hebrew' => {
+			'alias' => q{generic},
 		},
 		'chinese' => {
 			'Day' => '{0} ({2}: {1})',
@@ -3448,15 +3466,6 @@ has 'datetime_formats_append_item' => (
 			'Week' => '{0} ({2}: {1})',
 			'Year' => '{1} {0}',
 		},
-		'islamic-rgsa' => {
-			'alias' => q{islamic},
-		},
-		'buddhist' => {
-			'alias' => q{generic},
-		},
-		'roc' => {
-			'alias' => q{generic},
-		},
 		'gregorian' => {
 			'Day' => '{0} ({2}: {1})',
 			'Day-Of-Week' => '{0} {1}',
@@ -3470,38 +3479,23 @@ has 'datetime_formats_append_item' => (
 			'Week' => '{0} ({2}: {1})',
 			'Year' => '{1} {0}',
 		},
-		'japanese' => {
-			'alias' => q{generic},
-		},
-		'islamic-umalqura' => {
+		'islamic-tbla' => {
 			'alias' => q{islamic},
-		},
-		'indian' => {
-			'alias' => q{generic},
 		},
 		'islamic-civil' => {
 			'alias' => q{islamic},
 		},
-		'islamic-tbla' => {
+		'islamic-rgsa' => {
 			'alias' => q{islamic},
+		},
+		'japanese' => {
+			'alias' => q{generic},
 		},
 		'islamic' => {
 			'alias' => q{generic},
 		},
-		'coptic' => {
-			'alias' => q{generic},
-		},
-		'hebrew' => {
-			'alias' => q{generic},
-		},
-		'ethiopic-amete-alem' => {
-			'alias' => q{ethiopic},
-		},
-		'persian' => {
-			'alias' => q{generic},
-		},
-		'ethiopic' => {
-			'alias' => q{generic},
+		'islamic-umalqura' => {
+			'alias' => q{islamic},
 		},
 		'generic' => {
 			'Day' => '{0} ({2}: {1})',
@@ -3516,6 +3510,12 @@ has 'datetime_formats_append_item' => (
 			'Week' => '{0} ({2}: {1})',
 			'Year' => '{1} {0}',
 		},
+		'indian' => {
+			'alias' => q{generic},
+		},
+		'roc' => {
+			'alias' => q{generic},
+		},
 	} },
 );
 
@@ -3524,8 +3524,26 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'ethiopic' => {
+			'alias' => q{generic},
+		},
+		'buddhist' => {
+			'alias' => q{generic},
+		},
+		'coptic' => {
+			'alias' => q{generic},
+		},
+		'ethiopic-amete-alem' => {
+			'alias' => q{ethiopic},
+		},
 		'dangi' => {
 			'alias' => q{chinese},
+		},
+		'persian' => {
+			'alias' => q{generic},
+		},
+		'hebrew' => {
+			'alias' => q{generic},
 		},
 		'chinese' => {
 			H => {
@@ -3622,15 +3640,6 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd – y-MM-dd},
 			},
 		},
-		'islamic-rgsa' => {
-			'alias' => q{islamic},
-		},
-		'buddhist' => {
-			'alias' => q{generic},
-		},
-		'roc' => {
-			'alias' => q{generic},
-		},
 		'gregorian' => {
 			H => {
 				H => q{HH–HH},
@@ -3726,38 +3735,23 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd – y-MM-dd},
 			},
 		},
-		'japanese' => {
-			'alias' => q{generic},
-		},
-		'islamic-umalqura' => {
+		'islamic-tbla' => {
 			'alias' => q{islamic},
-		},
-		'indian' => {
-			'alias' => q{generic},
 		},
 		'islamic-civil' => {
 			'alias' => q{islamic},
 		},
-		'islamic-tbla' => {
+		'islamic-rgsa' => {
 			'alias' => q{islamic},
+		},
+		'japanese' => {
+			'alias' => q{generic},
 		},
 		'islamic' => {
 			'alias' => q{generic},
 		},
-		'coptic' => {
-			'alias' => q{generic},
-		},
-		'hebrew' => {
-			'alias' => q{generic},
-		},
-		'ethiopic-amete-alem' => {
-			'alias' => q{ethiopic},
-		},
-		'persian' => {
-			'alias' => q{generic},
-		},
-		'ethiopic' => {
-			'alias' => q{generic},
+		'islamic-umalqura' => {
+			'alias' => q{islamic},
 		},
 		'generic' => {
 			H => {
@@ -3853,6 +3847,12 @@ has 'datetime_formats_interval' => (
 				d => q{GGGGG y-MM-dd – y-MM-dd},
 				y => q{GGGGG y-MM-dd – y-MM-dd},
 			},
+		},
+		'indian' => {
+			'alias' => q{generic},
+		},
+		'roc' => {
+			'alias' => q{generic},
 		},
 	} },
 );

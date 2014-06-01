@@ -39,7 +39,7 @@ or
 
 use v5.10;
 use version;
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use open ':encoding(utf8)';
 use utf8;
@@ -50,7 +50,7 @@ use MooseX::ClassAttribute;
 with 'Locale::CLDR::ValidCodes', 'Locale::CLDR::EraBoundries', 'Locale::CLDR::WeekData', 
 	'Locale::CLDR::MeasurementSystem', 'Locale::CLDR::LikelySubtags', 'Locale::CLDR::NumberingSystems',
 	'Locale::CLDR::NumberFormatter', 'Locale::CLDR::TerritoryContainment', 'Locale::CLDR::CalendarPreferences',
-	'Locale::CLDR::Currencies';
+	'Locale::CLDR::Currencies', 'Locale::CLDR::Plurals';
 	
 use Class::Load;
 use namespace::autoclean;
@@ -87,6 +87,7 @@ BEGIN {
 		};
 	}
 }
+
 =head1 ATTRIBUTES
 
 These can be passed into the constructor and all are optional.
@@ -2070,7 +2071,9 @@ sub _split {
 
 Tests if the given character is used in the locale. There are 
 three possible types; c<main>, C<auxiliary> and c<punctuation>.
-If no type is given C<main> is assumed.
+If no type is given C<main> is assumed. Unless the C<index> type
+is given you will have to have a Perl version of 5.18 or above
+to use this method
 
 =cut
 
@@ -2481,8 +2484,8 @@ sub _unit_compound {
 =item duration_unit($format, @data)
 
 This method formats a duration. The format must be one of
-C<hm>, C<hms> or C<ms> corresponding to C<hour minuet>, 
-C<hour minuet second> and C<minuet second> respectively.
+C<hm>, C<hms> or C<ms> corresponding to C<hour minute>, 
+C<hour minute second> and C<minute second> respectively.
 The data must correspond to the given format. 
 
 =cut
@@ -2545,6 +2548,8 @@ sub is_no {
 =back
 
 =head2 Transliteration
+
+This method requires Perl version 5.18 or above to use
 
 =over 4
 
@@ -2749,13 +2754,13 @@ rules to calculate the type of pluralisation required for
 units, currencies and other data that changes depending on
 the plural state of the number
 
-=cut
+=item plural_range($start, $end)
 
-# Stub until I get onto numbers
-sub plural {
-	return 'one' if $_[1] =~ /1$/;
-	return 'other';
-}
+This method returns the plural type for the range $start to $end
+$start and $end can either be numbers or one of the plural types
+C<zero one two few many other>
+
+=cut
 
 sub _clear_calendar_data {
 	my $self = shift;
@@ -3475,8 +3480,6 @@ sub _build_prefers_24_hour_time {
 
 		my $self = shift;
 
-		my $territory_id = $self->territory_id || '001';
-
 		my $first_day = $self->week_data_first_day;
 		
 		return $days_2_number{$first_day};
@@ -3770,12 +3773,19 @@ the currency symbol C<¤> then the currency symbol for the currency code in $cur
 will be used. If $currency is undef() then the default currency code for the locale 
 will be used. 
 
+Note that currency codes are based on territory so if you do not pass in a currency 
+and your locale did not get passed a territory in the constructor you are going
+to end up with the L<likely sub tag's|/likely_subtags> idea of the currency. This
+functionality may be removed or at least changed to emit a warning in future 
+releases.
+
 $for_cash is only used during currency formatting. If true then cash rounding
 will be used otherwise financial rounding will be used. 
 
 =item add_currency_symbol($format, $symbol)
 
-This method returns the format with the currency symbol correctly inserted
+This method returns the format with the currency symbol $symbol correctly inserted
+into the format
 
 =item parse_number_format($format, $currency, $currency_data, $for_cash)
 
@@ -3885,7 +3895,12 @@ If no territory id is given then the current locales is used
 sub default_currency {
 	my ($self, $territory_id) = @_;
 	
-	$territory_id //= ($self->territory_id || $self->likely_subtag->territory_id);
+	$territory_id //= $self->territory_id;
+	
+	if (! $territory_id) {
+		 $territory_id = $self->likely_subtag->territory_id;
+		 warn "Locale::CLDR::default_currency:- No territory given using $territory_id at ";
+	}
 	
 	my $default_currencies = $self->_default_currency;
 	
@@ -3977,6 +3992,15 @@ L<http://search.cpan.org/dist/Locale-CLDR/>
 
 
 =head1 ACKNOWLEDGEMENTS
+
+Everyone at the Unicode Consortium for providing the data.
+
+Karl Williams for his tireless work on Unicode in the Perl 
+regex engine.
+
+Andrew Rodland for his L<Unicode::CaseFold> module that I
+pinched the fc() code from for early versions of Perl that
+don't have this function.
 
 
 =head1 COPYRIGHT & LICENSE

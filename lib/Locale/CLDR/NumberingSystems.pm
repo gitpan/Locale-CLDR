@@ -1,11 +1,11 @@
 package Locale::CLDR::NumberingSystems;
 # This file auto generated from Data\common\supplemental\numberingSystems.xml
-#	on Sun 18 May  9:53:41 am GMT
+#	on Sun  1 Jun  2:10:31 pm GMT
 # XML file generated 2014-02-13 11:57:02 -0600 (Thu, 13 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

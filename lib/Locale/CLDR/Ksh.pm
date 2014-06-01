@@ -1,11 +1,11 @@
 package Locale::CLDR::Ksh;
 # This file auto generated from Data\common\main\ksh.xml
-#	on Sun 18 May 11:25:41 am GMT
+#	on Sun  1 Jun  3:37:58 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -2918,19 +2918,19 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'am' => q{Uhr vörmiddaachs},
-					'pm' => q{Uhr nommendaachs},
-				},
 				'abbreviated' => {
 					'pm' => q{n.m.},
 					'am' => q{v.m.},
 				},
+				'wide' => {
+					'am' => q{Uhr vörmiddaachs},
+					'pm' => q{Uhr nommendaachs},
+				},
 			},
 			'stand-alone' => {
 				'wide' => {
-					'pm' => q{Nachmittag},
 					'am' => q{Vormittag},
+					'pm' => q{Nachmittag},
 				},
 			},
 		},

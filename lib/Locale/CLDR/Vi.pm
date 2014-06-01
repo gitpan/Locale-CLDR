@@ -1,11 +1,11 @@
 package Locale::CLDR::Vi;
 # This file auto generated from Data\common\main\vi.xml
-#	on Sun 18 May 12:43:35 pm GMT
+#	on Sun  1 Jun  4:47:49 pm GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -4495,8 +4495,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{CH},
 					'am' => q{SA},
+					'pm' => q{CH},
 				},
 			},
 		},
@@ -4690,10 +4690,6 @@ has 'datetime_formats_available_formats' => (
 			M => q{'tháng' L},
 			MMM => q{LLL},
 		},
-		'roc' => {
-			M => q{'tháng' L},
-			MMM => q{LLL},
-		},
 		'generic' => {
 			Ed => q{E, dd},
 			Gy => q{'Năm' y G},
@@ -4769,6 +4765,10 @@ has 'datetime_formats_available_formats' => (
 			yMd => q{d/M/y},
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
+		},
+		'roc' => {
+			M => q{'tháng' L},
+			MMM => q{LLL},
 		},
 	} },
 );

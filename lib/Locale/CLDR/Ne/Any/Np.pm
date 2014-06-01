@@ -1,11 +1,11 @@
 package Locale::CLDR::Ne::Any::Np;
 # This file auto generated from Data\common\main\ne_NP.xml
-#	on Sun 18 May 11:53:15 am GMT
+#	on Sun  1 Jun  4:01:43 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

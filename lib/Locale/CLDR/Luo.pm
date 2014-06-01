@@ -1,11 +1,11 @@
 package Locale::CLDR::Luo;
 # This file auto generated from Data\common\main\luo.xml
-#	on Sun 18 May 11:34:22 am GMT
+#	on Sun  1 Jun  3:45:29 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -821,8 +821,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{OD},
 					'pm' => q{OT},
+					'am' => q{OD},
 				},
 			},
 		},

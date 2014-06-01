@@ -1,11 +1,11 @@
 package Locale::CLDR::Brx;
 # This file auto generated from Data\common\main\brx.xml
-#	on Sun 18 May 10:09:15 am GMT
+#	on Sun  1 Jun  2:26:43 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -2680,8 +2680,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{बेलासे},
 					'am' => q{फुं},
+					'pm' => q{बेलासे},
 				},
 			},
 		},
@@ -2765,7 +2765,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			GGGGyMMMMEEEEdd => q{EEEE,dd MMMM GGGGy},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -2789,7 +2789,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			GGGGyMMMMEEEEdd => q{EEEE,dd MMMM GGGGy},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},

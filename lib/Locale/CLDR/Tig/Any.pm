@@ -1,11 +1,11 @@
 package Locale::CLDR::Tig::Any;
 
 # This file auto generated
-#	on Sun 18 May 12:33:57 pm GMT
+#	on Sun  1 Jun  4:38:19 pm GMT
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

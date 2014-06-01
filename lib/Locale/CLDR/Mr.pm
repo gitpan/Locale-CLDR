@@ -1,11 +1,11 @@
 package Locale::CLDR::Mr;
 # This file auto generated from Data\common\main\mr.xml
-#	on Sun 18 May 11:44:07 am GMT
+#	on Sun  1 Jun  3:53:53 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -3513,17 +3513,17 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'narrow' => {
-					'pm' => q{PM},
-					'am' => q{AM},
-				},
 				'abbreviated' => {
 					'pm' => q{PM},
 					'am' => q{AM},
 				},
 				'wide' => {
-					'pm' => q{[PM]},
 					'am' => q{[AM]},
+					'pm' => q{[PM]},
+				},
+				'narrow' => {
+					'am' => q{AM},
+					'pm' => q{PM},
 				},
 			},
 		},

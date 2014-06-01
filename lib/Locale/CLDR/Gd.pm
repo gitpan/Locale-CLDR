@@ -1,11 +1,11 @@
 package Locale::CLDR::Gd;
 # This file auto generated from Data\common\main\gd.xml
-#	on Sun 18 May 10:48:18 am GMT
+#	on Sun  1 Jun  3:05:51 pm GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -1224,7 +1224,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			MEd => q{E, d/M},
 			MMMEd => q{E d MMM},
 			MMMMd => q{d MMMM},
@@ -1235,7 +1235,7 @@ has 'datetime_formats_available_formats' => (
 			yMMM => q{MMM y},
 			yMMMM => q{MMMM y},
 		},
-		'gregorian' => {
+		'generic' => {
 			MEd => q{E, d/M},
 			MMMEd => q{E d MMM},
 			MMMMd => q{d MMMM},
@@ -1262,7 +1262,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Hm => {
 				H => q{HH:mm-HH:mm},
 				m => q{HH:mm-HH:mm},
@@ -1337,7 +1337,7 @@ has 'datetime_formats_interval' => (
 				y => q{dd/MM/y - dd/MM/y},
 			},
 		},
-		'gregorian' => {
+		'generic' => {
 			Hm => {
 				H => q{HH:mm-HH:mm},
 				m => q{HH:mm-HH:mm},

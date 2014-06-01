@@ -1,11 +1,11 @@
 package Locale::CLDR::Be::Any::By;
 # This file auto generated from Data\common\main\be_BY.xml
-#	on Sun 18 May 10:03:07 am GMT
+#	on Sun  1 Jun  2:20:03 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

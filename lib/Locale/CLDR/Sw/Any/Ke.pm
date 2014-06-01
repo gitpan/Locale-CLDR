@@ -1,11 +1,11 @@
 package Locale::CLDR::Sw::Any::Ke;
 # This file auto generated from Data\common\main\sw_KE.xml
-#	on Sun 18 May 12:26:25 pm GMT
+#	on Sun  1 Jun  4:30:48 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

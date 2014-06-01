@@ -1,11 +1,11 @@
 package Locale::CLDR::Twq;
 # This file auto generated from Data\common\main\twq.xml
-#	on Sun 18 May 12:35:50 pm GMT
+#	on Sun  1 Jun  4:40:12 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -868,8 +868,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{Subbaahi},
 					'pm' => q{Zaarikay b},
+					'am' => q{Subbaahi},
 				},
 			},
 		},

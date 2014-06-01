@@ -1,11 +1,11 @@
 package Locale::CLDR::Nb;
 # This file auto generated from Data\common\main\nb.xml
-#	on Sun 18 May 11:49:21 am GMT
+#	on Sun  1 Jun  3:58:22 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -4612,17 +4612,17 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'abbreviated' => {
-					'am' => q{a.m.},
-					'pm' => q{p.m.},
+				'narrow' => {
+					'am' => q{a},
+					'pm' => q{p},
 				},
 				'wide' => {
 					'am' => q{a.m.},
 					'pm' => q{p.m.},
 				},
-				'narrow' => {
-					'pm' => q{p},
-					'am' => q{a},
+				'abbreviated' => {
+					'pm' => q{p.m.},
+					'am' => q{a.m.},
 				},
 			},
 			'stand-alone' => {

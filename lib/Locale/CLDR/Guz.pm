@@ -1,11 +1,11 @@
 package Locale::CLDR::Guz;
 # This file auto generated from Data\common\main\guz.xml
-#	on Sun 18 May 10:52:45 am GMT
+#	on Sun  1 Jun  3:09:40 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

@@ -34,3 +34,9 @@ All dates are in ISO 8601 Format
 	- Added tests for the above changes
 	- Allow for use with Perl 5.10 and above
 	- Fixed tests to handle Perl 5.10 and above
+	
+0.25.2
+	- Added Pluralisation rules
+	- Added warning when falling back to the likely territory when getting a default currency.
+	- Added plural range code
+    - Added tests for above

@@ -1,11 +1,11 @@
 package Locale::CLDR::Nl::Any::Bq;
 # This file auto generated from Data\common\main\nl_BQ.xml
-#	on Sun 18 May 11:55:04 am GMT
+#	on Sun  1 Jun  4:03:18 pm GMT
 # XML file generated 2013-08-22 18:59:54 -0500 (Thu, 22 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

@@ -1,11 +1,11 @@
 package Locale::CLDR::Sv::Any::Ax;
 # This file auto generated from Data\common\main\sv_AX.xml
-#	on Sun 18 May 12:25:40 pm GMT
+#	on Sun  1 Jun  4:30:02 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

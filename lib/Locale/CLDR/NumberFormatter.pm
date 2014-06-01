@@ -2,7 +2,7 @@ package Locale::CLDR::NumberFormatter;
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 
 use v5.10;
@@ -263,7 +263,7 @@ sub get_formatted_number {
 		@parts = ($minor);
 		while (1) {
 			my ($major) = $integer =~ /($major_group)$/;
-			if (length $major) {
+			if (defined $major && length $major) {
 				$integer =~ s/$major_group$//;
 				unshift @parts, $major;
 			}

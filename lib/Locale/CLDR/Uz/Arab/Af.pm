@@ -1,11 +1,11 @@
 package Locale::CLDR::Uz::Arab::Af;
 # This file auto generated from Data\common\main\uz_Arab_AF.xml
-#	on Sun 18 May 12:43:02 pm GMT
+#	on Sun  1 Jun  4:47:16 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

@@ -1,11 +1,11 @@
 package Locale::CLDR::En::Any::Mo;
 # This file auto generated from Data\common\main\en_MO.xml
-#	on Sun 18 May 10:32:07 am GMT
+#	on Sun  1 Jun  2:49:01 pm GMT
 # XML file generated 2013-08-18 23:26:52 -0500 (Sun, 18 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

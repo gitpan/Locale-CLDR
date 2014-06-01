@@ -1,11 +1,11 @@
 package Locale::CLDR::Es::Any::Co;
 # This file auto generated from Data\common\main\es_CO.xml
-#	on Sun 18 May 10:34:07 am GMT
+#	on Sun  1 Jun  2:51:02 pm GMT
 # XML file generated 2013-08-14 01:51:50 -0500 (Wed, 14 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

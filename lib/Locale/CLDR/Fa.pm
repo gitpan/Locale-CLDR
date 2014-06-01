@@ -1,11 +1,11 @@
 package Locale::CLDR::Fa;
 # This file auto generated from Data\common\main\fa.xml
-#	on Sun 18 May 10:38:31 am GMT
+#	on Sun  1 Jun  2:55:24 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -3879,100 +3879,100 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'generic') {
-				return 'earlyMorning' if $time >= 0100
-					&& $time < 0600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 0100;
-				return 'noon' if $time == 1200;
-				return 'afternoon' if $time >= 1600
-					&& $time < 1900;
-				return 'midDay' if $time > 1200
-					&& $time < 1600;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
-				return 'night' if $time >= 1900
-					&& $time < 2400;
-			last SWITCH;
-			}
 			if ($_ eq 'persian') {
-				return 'earlyMorning' if $time >= 0100
-					&& $time < 0600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 0100;
 				return 'noon' if $time == 1200;
-				return 'afternoon' if $time >= 1600
-					&& $time < 1900;
-				return 'midDay' if $time > 1200
-					&& $time < 1600;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
 				return 'night' if $time >= 1900
 					&& $time < 2400;
-			last SWITCH;
-			}
-			if ($_ eq 'chinese') {
-				return 'earlyMorning' if $time >= 0100
-					&& $time < 0600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 0100;
-				return 'noon' if $time == 1200;
-				return 'afternoon' if $time >= 1600
-					&& $time < 1900;
-				return 'midDay' if $time > 1200
-					&& $time < 1600;
 				return 'morning' if $time >= 0600
 					&& $time < 1200;
-				return 'night' if $time >= 1900
-					&& $time < 2400;
-			last SWITCH;
-			}
-			if ($_ eq 'islamic') {
-				return 'earlyMorning' if $time >= 0100
-					&& $time < 0600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 0100;
-				return 'noon' if $time == 1200;
 				return 'afternoon' if $time >= 1600
 					&& $time < 1900;
-				return 'midDay' if $time > 1200
-					&& $time < 1600;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
-				return 'night' if $time >= 1900
-					&& $time < 2400;
-			last SWITCH;
-			}
-			if ($_ eq 'hebrew') {
 				return 'earlyMorning' if $time >= 0100
 					&& $time < 0600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 0100;
-				return 'noon' if $time == 1200;
-				return 'afternoon' if $time >= 1600
-					&& $time < 1900;
 				return 'midDay' if $time > 1200
 					&& $time < 1600;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
-				return 'night' if $time >= 1900
-					&& $time < 2400;
+				return 'weeHours' if $time >= 0000
+					&& $time < 0100;
 			last SWITCH;
 			}
 			if ($_ eq 'gregorian') {
-				return 'earlyMorning' if $time >= 0100
-					&& $time < 0600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 0100;
 				return 'noon' if $time == 1200;
-				return 'afternoon' if $time >= 1600
-					&& $time < 1900;
-				return 'midDay' if $time > 1200
-					&& $time < 1600;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
 				return 'night' if $time >= 1900
 					&& $time < 2400;
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
+				return 'afternoon' if $time >= 1600
+					&& $time < 1900;
+				return 'earlyMorning' if $time >= 0100
+					&& $time < 0600;
+				return 'midDay' if $time > 1200
+					&& $time < 1600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 0100;
+			last SWITCH;
+			}
+			if ($_ eq 'chinese') {
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 1900
+					&& $time < 2400;
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
+				return 'afternoon' if $time >= 1600
+					&& $time < 1900;
+				return 'earlyMorning' if $time >= 0100
+					&& $time < 0600;
+				return 'midDay' if $time > 1200
+					&& $time < 1600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 0100;
+			last SWITCH;
+			}
+			if ($_ eq 'hebrew') {
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 1900
+					&& $time < 2400;
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
+				return 'afternoon' if $time >= 1600
+					&& $time < 1900;
+				return 'earlyMorning' if $time >= 0100
+					&& $time < 0600;
+				return 'midDay' if $time > 1200
+					&& $time < 1600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 0100;
+			last SWITCH;
+			}
+			if ($_ eq 'islamic') {
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 1900
+					&& $time < 2400;
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
+				return 'afternoon' if $time >= 1600
+					&& $time < 1900;
+				return 'earlyMorning' if $time >= 0100
+					&& $time < 0600;
+				return 'midDay' if $time > 1200
+					&& $time < 1600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 0100;
+			last SWITCH;
+			}
+			if ($_ eq 'generic') {
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 1900
+					&& $time < 2400;
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
+				return 'afternoon' if $time >= 1600
+					&& $time < 1900;
+				return 'earlyMorning' if $time >= 0100
+					&& $time < 0600;
+				return 'midDay' if $time > 1200
+					&& $time < 1600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 0100;
 			last SWITCH;
 			}
 		}
@@ -3987,14 +3987,14 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'afternoon' => q{عصر},
-					'noon' => q{ظهر},
-					'weeHours' => q{نیمه‌شب},
-					'pm' => q{بعدازظهر},
-					'morning' => q{صبح},
-					'earlyMorning' => q{بامداد},
 					'night' => q{شب},
+					'earlyMorning' => q{بامداد},
+					'pm' => q{بعدازظهر},
+					'weeHours' => q{نیمه‌شب},
 					'am' => q{قبل‌ازظهر},
+					'noon' => q{ظهر},
+					'afternoon' => q{عصر},
+					'morning' => q{صبح},
 					'midDay' => q{بعدازظهر},
 				},
 			},
@@ -4173,6 +4173,40 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{QQQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
 		},
+		'generic' => {
+			Ed => q{E d},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E d MMM y G},
+			GyMMMd => q{d MMM y G},
+			H => q{H},
+			HHmmZ => q{HH:mm (Z)},
+			Hm => q{H:mm},
+			Hms => q{H:mm:ss},
+			M => q{L},
+			MEd => q{E M/d},
+			MMM => q{LLL},
+			MMMEd => q{E d LLL},
+			MMMMEd => q{E d LLLL},
+			MMMMd => q{d LLLL},
+			MMMd => q{d LLL},
+			Md => q{M/d},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y G},
+			yyyy => q{y G},
+			yyyyM => q{y/M G},
+			yyyyMEd => q{E y/M/d G},
+			yyyyMMM => q{MMM y G},
+			yyyyMMMEd => q{E d MMM y G},
+			yyyyMMMd => q{d MMM y G},
+			yyyyMd => q{y/M/d G},
+			yyyyQQQ => q{QQQQ y G},
+			yyyyQQQQ => q{QQQQ y G},
+		},
 		'gregorian' => {
 			EHm => q{E H:mm},
 			EHms => q{E H:mm:ss},
@@ -4213,40 +4247,6 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
-			Ed => q{E d},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E d MMM y G},
-			GyMMMd => q{d MMM y G},
-			H => q{H},
-			HHmmZ => q{HH:mm (Z)},
-			Hm => q{H:mm},
-			Hms => q{H:mm:ss},
-			M => q{L},
-			MEd => q{E M/d},
-			MMM => q{LLL},
-			MMMEd => q{E d LLL},
-			MMMMEd => q{E d LLLL},
-			MMMMd => q{d LLLL},
-			MMMd => q{d LLL},
-			Md => q{M/d},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y G},
-			yyyy => q{y G},
-			yyyyM => q{y/M G},
-			yyyyMEd => q{E y/M/d G},
-			yyyyMMM => q{MMM y G},
-			yyyyMMMEd => q{E d MMM y G},
-			yyyyMMMd => q{d MMM y G},
-			yyyyMd => q{y/M/d G},
-			yyyyQQQ => q{QQQQ y G},
-			yyyyQQQQ => q{QQQQ y G},
-		},
 	} },
 );
 
@@ -4255,11 +4255,11 @@ has 'datetime_formats_append_item' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			'Day-Of-Week' => '{1} {0}',
 			'Timezone' => '{0} ({1})',
 		},
-		'generic' => {
+		'gregorian' => {
 			'Day-Of-Week' => '{1} {0}',
 			'Timezone' => '{0} ({1})',
 		},
@@ -4271,101 +4271,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			H => {
-				H => q{H تا H},
-			},
-			Hm => {
-				H => q{H:mm تا H:mm},
-				m => q{H:mm تا H:mm},
-			},
-			Hmv => {
-				H => q{H:mm تا H:mm v},
-				m => q{H:mm تا H:mm v},
-			},
-			Hv => {
-				H => q{H تا H v},
-			},
-			M => {
-				M => q{M تا M},
-			},
-			MEd => {
-				M => q{E M/d تا E M/d},
-				d => q{E M/d تا E M/d},
-			},
-			MMM => {
-				M => q{LLL تا LLL},
-			},
-			MMMEd => {
-				M => q{E d LLL تا E d LLL},
-				d => q{E d LLL تا E d LLL},
-			},
-			MMMd => {
-				M => q{d LLL تا d LLL},
-				d => q{d تا d LLL},
-			},
-			Md => {
-				M => q{M/d تا M/d},
-				d => q{M/d تا M/d},
-			},
-			d => {
-				d => q{d تا d},
-			},
-			fallback => '{0} تا {1}',
-			h => {
-				a => q{h a تا h a},
-				h => q{h تا h a},
-			},
-			hm => {
-				a => q{h:mm a تا h:mm a},
-				h => q{h:mm تا h:mm a},
-				m => q{h:mm تا h:mm a},
-			},
-			hmv => {
-				a => q{h:mm a تا h:mm a v},
-				h => q{h:mm تا h:mm a v},
-				m => q{h:mm تا h:mm a v},
-			},
-			hv => {
-				a => q{h a تا h a v},
-				h => q{h تا h a v},
-			},
-			y => {
-				y => q{y تا y},
-			},
-			yM => {
-				M => q{y/M تا y/M},
-				y => q{y/M تا y/M},
-			},
-			yMEd => {
-				M => q{E y/M/d تا E y/M/d},
-				d => q{E y/M/d تا E y/M/d},
-				y => q{E y/M/d تا E y/M/d},
-			},
-			yMMM => {
-				M => q{LLL تا MMM y},
-				y => q{MMM y تا MMM y},
-			},
-			yMMMEd => {
-				M => q{E d LLL تا E d MMM y},
-				d => q{E d LLL تا E d MMM y},
-				y => q{E d MMM y تا E d MMM y},
-			},
-			yMMMM => {
-				M => q{LLLL تا MMMM y},
-				y => q{MMMM y تا MMMM y},
-			},
-			yMMMd => {
-				M => q{d LLL تا d MMM y},
-				d => q{d تا d MMM y},
-				y => q{d MMM y تا d MMM y},
-			},
-			yMd => {
-				M => q{y/M/d تا y/M/d},
-				d => q{y/M/d تا y/M/d},
-				y => q{y/M/d تا y/M/d},
-			},
-		},
 		'generic' => {
 			H => {
 				H => q{H تا H},
@@ -4459,6 +4364,101 @@ has 'datetime_formats_interval' => (
 				M => q{y/M/d تا y/M/d G},
 				d => q{y/M/d تا y/M/d G},
 				y => q{y/M/d تا y/M/d G},
+			},
+		},
+		'gregorian' => {
+			H => {
+				H => q{H تا H},
+			},
+			Hm => {
+				H => q{H:mm تا H:mm},
+				m => q{H:mm تا H:mm},
+			},
+			Hmv => {
+				H => q{H:mm تا H:mm v},
+				m => q{H:mm تا H:mm v},
+			},
+			Hv => {
+				H => q{H تا H v},
+			},
+			M => {
+				M => q{M تا M},
+			},
+			MEd => {
+				M => q{E M/d تا E M/d},
+				d => q{E M/d تا E M/d},
+			},
+			MMM => {
+				M => q{LLL تا LLL},
+			},
+			MMMEd => {
+				M => q{E d LLL تا E d LLL},
+				d => q{E d LLL تا E d LLL},
+			},
+			MMMd => {
+				M => q{d LLL تا d LLL},
+				d => q{d تا d LLL},
+			},
+			Md => {
+				M => q{M/d تا M/d},
+				d => q{M/d تا M/d},
+			},
+			d => {
+				d => q{d تا d},
+			},
+			fallback => '{0} تا {1}',
+			h => {
+				a => q{h a تا h a},
+				h => q{h تا h a},
+			},
+			hm => {
+				a => q{h:mm a تا h:mm a},
+				h => q{h:mm تا h:mm a},
+				m => q{h:mm تا h:mm a},
+			},
+			hmv => {
+				a => q{h:mm a تا h:mm a v},
+				h => q{h:mm تا h:mm a v},
+				m => q{h:mm تا h:mm a v},
+			},
+			hv => {
+				a => q{h a تا h a v},
+				h => q{h تا h a v},
+			},
+			y => {
+				y => q{y تا y},
+			},
+			yM => {
+				M => q{y/M تا y/M},
+				y => q{y/M تا y/M},
+			},
+			yMEd => {
+				M => q{E y/M/d تا E y/M/d},
+				d => q{E y/M/d تا E y/M/d},
+				y => q{E y/M/d تا E y/M/d},
+			},
+			yMMM => {
+				M => q{LLL تا MMM y},
+				y => q{MMM y تا MMM y},
+			},
+			yMMMEd => {
+				M => q{E d LLL تا E d MMM y},
+				d => q{E d LLL تا E d MMM y},
+				y => q{E d MMM y تا E d MMM y},
+			},
+			yMMMM => {
+				M => q{LLLL تا MMMM y},
+				y => q{MMMM y تا MMMM y},
+			},
+			yMMMd => {
+				M => q{d LLL تا d MMM y},
+				d => q{d تا d MMM y},
+				y => q{d MMM y تا d MMM y},
+			},
+			yMd => {
+				M => q{y/M/d تا y/M/d},
+				d => q{y/M/d تا y/M/d},
+				y => q{y/M/d تا y/M/d},
 			},
 		},
 	} },

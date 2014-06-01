@@ -1,11 +1,11 @@
 package Locale::CLDR::En::Any::Gm;
 # This file auto generated from Data\common\main\en_GM.xml
-#	on Sun 18 May 10:32:04 am GMT
+#	on Sun  1 Jun  2:48:58 pm GMT
 # XML file generated 2013-08-07 23:47:50 -0500 (Wed, 07 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

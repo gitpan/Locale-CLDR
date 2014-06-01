@@ -1,11 +1,11 @@
 package Locale::CLDR::Cs;
 # This file auto generated from Data\common\main\cs.xml
-#	on Sun 18 May 10:18:41 am GMT
+#	on Sun  1 Jun  2:36:05 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -5161,11 +5161,11 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'narrow' => {
-					'pm' => q{PM},
-					'am' => q{AM},
-				},
 				'wide' => {
+					'am' => q{AM},
+					'pm' => q{PM},
+				},
+				'narrow' => {
 					'pm' => q{PM},
 					'am' => q{AM},
 				},

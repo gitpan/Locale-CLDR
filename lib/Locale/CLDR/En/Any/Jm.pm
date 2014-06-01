@@ -1,11 +1,11 @@
 package Locale::CLDR::En::Any::Jm;
 # This file auto generated from Data\common\main\en_JM.xml
-#	on Sun 18 May 10:32:06 am GMT
+#	on Sun  1 Jun  2:49:00 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
@@ -38,20 +38,20 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'generic') {
-				return 'noon' if $time == 1200;
+			if ($_ eq 'gregorian') {
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'am' if $time >= 000
 					&& $time < 1200;
+				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'gregorian') {
-				return 'noon' if $time == 1200;
+			if ($_ eq 'generic') {
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'am' if $time >= 000
 					&& $time < 1200;
+				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 		}

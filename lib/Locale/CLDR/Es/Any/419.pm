@@ -1,11 +1,11 @@
 package Locale::CLDR::Es::Any::419;
 # This file auto generated from Data\common\main\es_419.xml
-#	on Sun 18 May 10:34:04 am GMT
+#	on Sun  1 Jun  2:51:00 pm GMT
 # XML file generated 2014-01-08 23:02:40 -0600 (Wed, 08 Jan 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';

@@ -1,11 +1,11 @@
 package Locale::CLDR::Transformations::Any::Simplified::Traditional;
 # This file auto generated from Data\common\transforms\Simplified-Traditional.xml
-#	on Sun 18 May  9:54:31 am GMT
+#	on Sun  1 Jun  2:11:19 pm GMT
 # XML file generated 2014-02-11 22:47:57 -0600 (Tue, 11 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.1');
+our $VERSION = version->declare('v0.25.2');
 
 use v5.10;
 use mro 'c3';
