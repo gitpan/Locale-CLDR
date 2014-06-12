@@ -1,11 +1,11 @@
 package Locale::CLDR::Mt;
 # This file auto generated from Data\common\main\mt.xml
-#	on Sun  1 Jun  3:56:21 pm GMT
+#	on Tue 10 Jun 10:04:18 pm GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,1019 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal-masculine','spellout-cardinal-feminine' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'and-typeA-feminine' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(' u =%spellout-cardinal-feminine=),
+				},
+				'max' => {
+					base_value => q(1),
+					rule => q(' u =%spellout-cardinal-feminine=),
+				},
+			},
+		},
+		'and-typeA-masculine' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(' u =%spellout-cardinal-masculine=),
+				},
+				'max' => {
+					base_value => q(1),
+					rule => q(' u =%spellout-cardinal-masculine=),
+				},
+			},
+		},
+		'and-typeB-feminine' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(' u =%%spellout-cardinal-typeB-feminine=),
+				},
+				'max' => {
+					base_value => q(1),
+					rule => q(' u =%%spellout-cardinal-typeB-feminine=),
+				},
+			},
+		},
+		'and-typeB-masculine' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(' u =%%spellout-cardinal-typeB-masculine=),
+				},
+				'max' => {
+					base_value => q(1),
+					rule => q(' u =%%spellout-cardinal-typeB-masculine=),
+				},
+			},
+		},
+		'lenient-parse' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(&[last primary ignorable ] ←← ' ' ←← ',' ←← '-' ←← '­'),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(&[last primary ignorable ] ←← ' ' ←← ',' ←← '-' ←← '­'),
+				},
+			},
+		},
+		'spellout-cardinal-feminine' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(żero),
+				},
+				'x.x' => {
+					rule => q(←← punt →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(waħda),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(żewġ),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tliet),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(erbaʼ),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(ħames),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(sitt),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(sebaʼ),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(tmien),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(disaʼ),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(għaxar),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(ħdax-il),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(tnax-il),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(tlettax-il),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(erbatax-il),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(ħmistax-il),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(sittax-il),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(sbatax-il),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(tmintax-il),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(dsatax-il),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q([→%spellout-cardinal-feminine→ u ]għoxrin),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q([→%spellout-cardinal-feminine→ u ]tletin),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q([→%spellout-cardinal-feminine→ u ]erbgħin),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q([→%spellout-cardinal-feminine→ u ]ħamsin),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q([→%spellout-cardinal-feminine→ u ]sittin),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q([→%spellout-cardinal-feminine→ u ]sebgħin),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q([→%spellout-cardinal-feminine→ u ]tmenin),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q([→%spellout-cardinal-feminine→ u ]disgħin),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(mitt),
+				},
+				'101' => {
+					base_value => q(101),
+					rule => q(mija u →%spellout-cardinal-feminine→),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(mitejn[ u →%spellout-cardinal-feminine→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(←%spellout-cardinal-masculine← mija[→%%and-typeA-feminine→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(elf[→%%and-typeA-feminine→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(elfejn[→%%and-typeA-feminine→]),
+				},
+				'3000' => {
+					base_value => q(3000),
+					rule => q(←%%thousands← elef[→%%and-typeA-feminine→]),
+				},
+				'11000' => {
+					base_value => q(11000),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← elf[→%%and-typeA-feminine→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(miljun[→%%and-typeA-feminine→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← miljuni[→%%and-typeA-feminine→]),
+				},
+				'11000000' => {
+					base_value => q(11000000),
+					divisor => q(1,000),
+					rule => q(←%spellout-cardinal-masculine← miljun[→%%and-typeA-feminine→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(biljun[→%%and-typeA-feminine→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-masculine← biljuni[→%%and-typeA-feminine→]),
+				},
+				'11000000000' => {
+					base_value => q(11000000000),
+					divisor => q(1,000),
+					rule => q(←%spellout-cardinal-masculine← biljun[→%%and-typeA-feminine→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(triljun[→%%and-typeA-feminine→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← triljuni[→%%and-typeA-feminine→]),
+				},
+				'11000000000000' => {
+					base_value => q(11000000000000),
+					divisor => q(1,000),
+					rule => q(←%spellout-cardinal-masculine← triljun[→%%and-typeA-feminine→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(kvadriljun[→%%and-typeA-feminine→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-masculine← kvadriljuni[→%%and-typeA-feminine→]),
+				},
+				'11000000000000000' => {
+					base_value => q(11000000000000000),
+					divisor => q(1,000),
+					rule => q(←%spellout-cardinal-masculine← kvadriljun[→%%and-typeA-feminine→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-masculine' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(żero),
+				},
+				'x.x' => {
+					rule => q(←← punt →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(wieħed),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(żewġ),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tliet),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(erbaʼ),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(ħames),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(sitt),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(sebaʼ),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(tmien),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(disaʼ),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(għaxar),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(ħdax-il),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(tnax-il),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(tlettax-il),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(erbatax-il),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(ħmistax-il),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(sittax-il),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(sbatax-il),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(tmintax-il),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(dsatax-il),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q([→%spellout-cardinal-masculine→ u ]għoxrin),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q([→%spellout-cardinal-masculine→ u ]tletin),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q([→%spellout-cardinal-masculine→ u ]erbgħin),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q([→%spellout-cardinal-masculine→ u ]ħamsin),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q([→%spellout-cardinal-masculine→ u ]sittin),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q([→%spellout-cardinal-masculine→ u ]sebgħin),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q([→%spellout-cardinal-masculine→ u ]tmenin),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q([→%spellout-cardinal-masculine→ u ]disgħin),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(mitt),
+				},
+				'101' => {
+					base_value => q(101),
+					rule => q(mija u →%spellout-cardinal-masculine→),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(mitejn[ u →%spellout-cardinal-masculine→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(←%spellout-cardinal-masculine← mija[→%%and-typeA-masculine→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(elf[→%%and-typeA-masculine→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(elfejn[→%%and-typeA-masculine→]),
+				},
+				'3000' => {
+					base_value => q(3000),
+					rule => q(←%%thousands← elef[→%%and-typeA-masculine→]),
+				},
+				'11000' => {
+					base_value => q(11000),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← elf[→%%and-typeA-masculine→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(miljun[→%%and-typeA-masculine→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← miljuni[→%%and-typeA-masculine→]),
+				},
+				'11000000' => {
+					base_value => q(11000000),
+					divisor => q(1,000),
+					rule => q(←%spellout-cardinal-masculine← miljun[→%%and-typeA-masculine→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(biljun[→%%and-typeA-masculine→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-masculine← biljuni[→%%and-typeA-masculine→]),
+				},
+				'11000000000' => {
+					base_value => q(11000000000),
+					divisor => q(1,000),
+					rule => q(←%spellout-cardinal-masculine← biljun[→%%and-typeA-masculine→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(triljun[→%%and-typeA-masculine→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← triljuni[→%%and-typeA-masculine→]),
+				},
+				'11000000000000' => {
+					base_value => q(11000000000000),
+					divisor => q(1,000),
+					rule => q(←%spellout-cardinal-masculine← triljun[→%%and-typeA-masculine→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(kvadriljun[→%%and-typeA-masculine→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-masculine← kvadriljuni[→%%and-typeA-masculine→]),
+				},
+				'11000000000000000' => {
+					base_value => q(11000000000000000),
+					divisor => q(1,000),
+					rule => q(←%spellout-cardinal-masculine← kvadriljun[→%%and-typeA-masculine→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-typeB-feminine' => {
+			'private' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(żero),
+				},
+				'x.x' => {
+					rule => q(←← punt →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(waħda),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(tnejn),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tlieta),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(erbgħa),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(ħamsa),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(sitta),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(sebgħa),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(tmienja),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(disgħa),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(għaxra),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(ħdax),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(tnax),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(tlettax),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(erbatax),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(ħmistax),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(sittax),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(sbatax),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(tmintax),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(dsatax),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q([→→ u ]għoxrin),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q([→→ u ]tletin),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q([→→ u ]erbgħin),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q([→→ u ]ħamsin),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q([→→ u ]sittin),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q([→→ u ]sebgħin),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q([→→ u ]tmenin),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q([→→ u ]disgħin),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(mija[ u →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(mitejn[ u →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(←%spellout-cardinal-masculine← mija[ u →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(elf[→%%and-typeB-feminine→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(elfejn[→%%and-typeB-feminine→]),
+				},
+				'3000' => {
+					base_value => q(3000),
+					rule => q(←%%thousands← elef[→%%and-typeB-feminine→]),
+				},
+				'11000' => {
+					base_value => q(11000),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← elf[→%%and-typeB-feminine→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(miljun[→%%and-typeB-feminine→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← miljuni[→%%and-typeB-feminine→]),
+				},
+				'11000000' => {
+					base_value => q(11000000),
+					divisor => q(1,000),
+					rule => q(←%spellout-cardinal-masculine← miljun[→%%and-typeB-feminine→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(biljun[→%%and-typeB-feminine→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-masculine← biljuni[→%%and-typeB-feminine→]),
+				},
+				'11000000000' => {
+					base_value => q(11000000000),
+					divisor => q(1,000),
+					rule => q(←%spellout-cardinal-masculine← biljun[→%%and-typeB-feminine→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(triljun[→%%and-typeB-feminine→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← triljuni[→%%and-typeB-feminine→]),
+				},
+				'11000000000000' => {
+					base_value => q(11000000000000),
+					divisor => q(1,000),
+					rule => q(←%spellout-cardinal-masculine← triljun[→%%and-typeB-feminine→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(kvadriljun[→%%and-typeB-feminine→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-masculine← kvadriljuni[→%%and-typeB-feminine→]),
+				},
+				'11000000000000000' => {
+					base_value => q(11000000000000000),
+					divisor => q(1,000),
+					rule => q(←%spellout-cardinal-masculine← kvadriljun[→%%and-typeB-feminine→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-typeB-masculine' => {
+			'private' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(żero),
+				},
+				'x.x' => {
+					rule => q(←← punt →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(wieħed),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(tnejn),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tlieta),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(erbgħa),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(ħamsa),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(sitta),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(sebgħa),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(tmienja),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(disgħa),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(għaxra),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(ħdax),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(tnax),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(tlettax),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(erbatax),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(ħmistax),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(sittax),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(sbatax),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(tmintax),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(dsatax),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q([→→ u ]għoxrin),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q([→→ u ]tletin),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q([→→ u ]erbgħin),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q([→→ u ]ħamsin),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q([→→ u ]sittin),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q([→→ u ]sebgħin),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q([→→ u ]tmenin),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q([→→ u ]disgħin),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(mija[ u →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(mitejn[ u →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(←%spellout-cardinal-masculine← mija[ u →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(elf[→%%and-typeB-masculine→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(elfejn[→%%and-typeB-masculine→]),
+				},
+				'3000' => {
+					base_value => q(3000),
+					rule => q(←%%thousands← elef[→%%and-typeB-masculine→]),
+				},
+				'11000' => {
+					base_value => q(11000),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← elf[→%%and-typeB-masculine→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(miljun[→%%and-typeB-masculine→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← miljuni[→%%and-typeB-masculine→]),
+				},
+				'11000000' => {
+					base_value => q(11000000),
+					divisor => q(1,000),
+					rule => q(←%spellout-cardinal-masculine← miljun[→%%and-typeB-masculine→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(biljun[→%%and-typeB-masculine→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-masculine← biljuni[→%%and-typeB-masculine→]),
+				},
+				'11000000000' => {
+					base_value => q(11000000000),
+					divisor => q(1,000),
+					rule => q(←%spellout-cardinal-masculine← biljun[→%%and-typeB-masculine→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(triljun[→%%and-typeB-masculine→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← triljuni[→%%and-typeB-masculine→]),
+				},
+				'11000000000000' => {
+					base_value => q(11000000000000),
+					divisor => q(1,000),
+					rule => q(←%spellout-cardinal-masculine← triljun[→%%and-typeB-masculine→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(kvadriljun[→%%and-typeB-masculine→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-masculine← kvadriljuni[→%%and-typeB-masculine→]),
+				},
+				'11000000000000000' => {
+					base_value => q(11000000000000000),
+					divisor => q(1,000),
+					rule => q(←%spellout-cardinal-masculine← kvadriljun[→%%and-typeB-masculine→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%%spellout-cardinal-typeB-masculine=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%%spellout-cardinal-typeB-masculine=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+		'thousands' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(ERROR-=0=),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tlitt),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(erbat),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(ħamest),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(sitt),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(sebat),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(tmint),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(disat),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(għaxart),
+				},
+				'max' => {
+					base_value => q(10),
+					rule => q(għaxart),
+				},
+			},
+		},
+	} },
+);
+
 has 'display_name_language' => (
 	is			=> 'ro',
 	isa			=> 'CodeRef',
@@ -1181,8 +2194,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{QN},
 					'pm' => q{WN},
+					'am' => q{QN},
 				},
 			},
 		},

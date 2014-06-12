@@ -1,11 +1,11 @@
 package Locale::CLDR::Zh::Hant::Hk;
 # This file auto generated from Data\common\main\zh_Hant_HK.xml
-#	on Sun  1 Jun  4:55:12 pm GMT
+#	on Tue 10 Jun 11:08:18 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,746 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Zh::Hant');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal-financial','spellout-cardinal','spellout-cardinal-alternate2','spellout-ordinal' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'cardinal-twenties' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(二),
+				},
+				'max' => {
+					base_value => q(2),
+					rule => q(二),
+				},
+			},
+		},
+		'financialnumber13' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(零=%spellout-cardinal-financial=),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(零壹=%spellout-cardinal-financial=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(零=%spellout-cardinal-financial=),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(=%spellout-cardinal-financial=),
+				},
+				'max' => {
+					base_value => q(1000000000000),
+					rule => q(=%spellout-cardinal-financial=),
+				},
+			},
+		},
+		'financialnumber2' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(零=%spellout-cardinal-financial=),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(壹=%spellout-cardinal-financial=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(=%spellout-cardinal-financial=),
+				},
+				'max' => {
+					base_value => q(20),
+					rule => q(=%spellout-cardinal-financial=),
+				},
+			},
+		},
+		'financialnumber3' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(零=%spellout-cardinal-financial=),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(零壹=%spellout-cardinal-financial=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(零=%spellout-cardinal-financial=),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(=%spellout-cardinal-financial=),
+				},
+				'max' => {
+					base_value => q(100),
+					rule => q(=%spellout-cardinal-financial=),
+				},
+			},
+		},
+		'financialnumber4' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(零=%spellout-cardinal-financial=),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(零壹=%spellout-cardinal-financial=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(零=%spellout-cardinal-financial=),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(=%spellout-cardinal-financial=),
+				},
+				'max' => {
+					base_value => q(1000),
+					rule => q(=%spellout-cardinal-financial=),
+				},
+			},
+		},
+		'financialnumber5' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(零=%spellout-cardinal-financial=),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(零壹=%spellout-cardinal-financial=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(零=%spellout-cardinal-financial=),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(=%spellout-cardinal-financial=),
+				},
+				'max' => {
+					base_value => q(10000),
+					rule => q(=%spellout-cardinal-financial=),
+				},
+			},
+		},
+		'financialnumber8' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(零=%spellout-cardinal-financial=),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(零壹=%spellout-cardinal-financial=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(零=%spellout-cardinal-financial=),
+				},
+				'10000000' => {
+					base_value => q(10000000),
+					rule => q(=%spellout-cardinal-financial=),
+				},
+				'max' => {
+					base_value => q(10000000),
+					rule => q(=%spellout-cardinal-financial=),
+				},
+			},
+		},
+		'number13' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(零=%spellout-numbering=),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(零一=%spellout-numbering=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(零=%spellout-numbering=),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(=%spellout-numbering=),
+				},
+				'max' => {
+					base_value => q(1000000000000),
+					rule => q(=%spellout-numbering=),
+				},
+			},
+		},
+		'number2' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(零=%spellout-numbering=),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(一=%spellout-numbering=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(=%spellout-numbering=),
+				},
+				'max' => {
+					base_value => q(20),
+					rule => q(=%spellout-numbering=),
+				},
+			},
+		},
+		'number3' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(零=%spellout-numbering=),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(零一=%spellout-numbering=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(零=%spellout-numbering=),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(=%spellout-numbering=),
+				},
+				'max' => {
+					base_value => q(100),
+					rule => q(=%spellout-numbering=),
+				},
+			},
+		},
+		'number4' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(零=%spellout-numbering=),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(零一=%spellout-numbering=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(零=%spellout-numbering=),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(=%spellout-numbering=),
+				},
+				'max' => {
+					base_value => q(1000),
+					rule => q(=%spellout-numbering=),
+				},
+			},
+		},
+		'number5' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(零=%spellout-numbering=),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(零一=%spellout-numbering=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(零=%spellout-numbering=),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(=%spellout-numbering=),
+				},
+				'max' => {
+					base_value => q(10000),
+					rule => q(=%spellout-numbering=),
+				},
+			},
+		},
+		'number8' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(零=%spellout-numbering=),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(零一=%spellout-numbering=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(零=%spellout-numbering=),
+				},
+				'10000000' => {
+					base_value => q(10000000),
+					rule => q(=%spellout-numbering=),
+				},
+				'max' => {
+					base_value => q(10000000),
+					rule => q(=%spellout-numbering=),
+				},
+			},
+		},
+		'spellout-cardinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(負→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(零),
+				},
+				'x.x' => {
+					rule => q(←←點→→→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(一),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(二),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(三),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(四),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(五),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(六),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(七),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(八),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(九),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(←%%cardinal-twenties←十[→%spellout-numbering→]),
+				},
+				'21' => {
+					base_value => q(21),
+					rule => q(廿[→%spellout-numbering→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(←%spellout-numbering←十[→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←%spellout-numbering←百[→%%number2→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-numbering←千[→%%number3→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(←%spellout-numbering←萬[→%%number4→]),
+				},
+				'100000000' => {
+					base_value => q(100000000),
+					rule => q(←%spellout-numbering←億[→%%number5→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-numbering←兆[→%%number8→]),
+				},
+				'10000000000000000' => {
+					base_value => q(10000000000000000),
+					rule => q(←%spellout-numbering←京[→%%number13→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,###0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,###0=),
+				},
+			},
+		},
+		'spellout-cardinal-alternate2' => {
+			'public' => {
+				'-x' => {
+					rule => q(負→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(零),
+				},
+				'x.x' => {
+					rule => q(=%spellout-cardinal=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(一),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(兩),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(三),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(四),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(五),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(六),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(七),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(八),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(九),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(←%%cardinal-twenties←十[→%spellout-numbering→]),
+				},
+				'21' => {
+					base_value => q(21),
+					rule => q(廿[→%spellout-numbering→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(←%spellout-numbering←十[→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←%spellout-numbering←百[→%%number2→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-numbering←千[→%%number3→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(←%spellout-numbering←萬[→%%number4→]),
+				},
+				'100000000' => {
+					base_value => q(100000000),
+					rule => q(←%spellout-numbering←億[→%%number5→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-numbering←兆[→%%number8→]),
+				},
+				'10000000000000000' => {
+					base_value => q(10000000000000000),
+					rule => q(←%spellout-numbering←京[→%%number13→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,###0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,###0=),
+				},
+			},
+		},
+		'spellout-cardinal-financial' => {
+			'public' => {
+				'-x' => {
+					rule => q(負→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(零),
+				},
+				'x.x' => {
+					rule => q(←←點→→→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(壹),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(貳),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(叁),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(肆),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(伍),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(陸),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(柒),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(捌),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(玖),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(拾[→→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(←←拾[→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←←佰[→%%financialnumber2→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←←仟[→%%financialnumber3→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(←%spellout-cardinal-financial←萬[→%%financialnumber4→]),
+				},
+				'100000000' => {
+					base_value => q(100000000),
+					rule => q(←%spellout-cardinal-financial←億[→%%financialnumber5→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-financial←兆[→%%financialnumber8→]),
+				},
+				'10000000000000000' => {
+					base_value => q(10000000000000000),
+					rule => q(←%spellout-cardinal-financial←京[→%%financialnumber13→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,###0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,###0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'-x' => {
+					rule => q(負→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(零),
+				},
+				'x.x' => {
+					rule => q(←←點→→→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(一),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(二),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(三),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(四),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(五),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(六),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(七),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(八),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(九),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(十[→→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(←←十[→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←←百[→%%number2→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←←千[→%%number3→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(←←萬[→%%number4→]),
+				},
+				'100000000' => {
+					base_value => q(100000000),
+					rule => q(←←億[→%%number5→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←←兆[→%%number8→]),
+				},
+				'10000000000000000' => {
+					base_value => q(10000000000000000),
+					rule => q(←←京[→%%number13→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,###0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,###0=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(=%%spellout-numbering-year-digits=),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(=%spellout-numbering=),
+				},
+				'max' => {
+					base_value => q(10000),
+					rule => q(=%spellout-numbering=),
+				},
+			},
+		},
+		'spellout-numbering-year-digits' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(←←→→→),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←←→→→),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←←→→→),
+				},
+				'max' => {
+					base_value => q(1000),
+					rule => q(←←→→→),
+				},
+			},
+		},
+		'spellout-ordinal' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(第=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+	} },
+);
+
 has 'display_name_language' => (
 	is			=> 'ro',
 	isa			=> 'CodeRef',
@@ -667,79 +1407,79 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'gregorian') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
+			if ($_ eq 'chinese') {
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
 				return 'midDay' if $time >= 1200
 					&& $time < 1300;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'roc') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
 				return 'midDay' if $time >= 1200
 					&& $time < 1300;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'buddhist') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
+			if ($_ eq 'gregorian') {
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
 				return 'midDay' if $time >= 1200
 					&& $time < 1300;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'generic') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
 				return 'midDay' if $time >= 1200
 					&& $time < 1300;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'chinese') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
+			if ($_ eq 'buddhist') {
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
 				return 'midDay' if $time >= 1200
 					&& $time < 1300;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
 			last SWITCH;
 			}
 		}
@@ -851,26 +1591,6 @@ has 'datetime_formats_available_formats' => (
 			MEd => q{M-d（E）},
 			Md => q{M-d},
 		},
-		'roc' => {
-			Gy => q{G y 年},
-			GyMMM => q{G y 年 M 月},
-			GyMMMEd => q{G y 年 M 月 d 日 (E)},
-			GyMMMd => q{G y 年 M 月 d 日},
-			MEd => q{d-M（E）},
-			MMMEd => q{M 月 d 日 (E)},
-			MMMd => q{M 月 d 日},
-			Md => q{d-M},
-			y => q{G y 年},
-			yyyy => q{G y 年},
-			yyyyM => q{M/yGGGGG},
-			yyyyMEd => q{E, d/M/yGGGGG},
-			yyyyMMM => q{G y 年 M 月},
-			yyyyMMMEd => q{G y 年 M 月 d 日 (E)},
-			yyyyMMMd => q{G y 年 M 月 d 日},
-			yyyyMd => q{d/M/yGGGGG},
-			yyyyQQQ => q{G y 年第QQQ},
-			yyyyQQQQ => q{G y 年QQQQ},
-		},
 		'gregorian' => {
 			Ed => q{d E},
 			GyMMMEd => q{G y 年 M 月 d 日 (E)},
@@ -898,6 +1618,26 @@ has 'datetime_formats_available_formats' => (
 			yyyyM => q{M/yGGGGG},
 			yyyyMEd => q{E, d/M/yGGGGG},
 			yyyyMMMEd => q{G y 年 M 月 d 日 (E)},
+			yyyyMd => q{d/M/yGGGGG},
+			yyyyQQQ => q{G y 年第QQQ},
+			yyyyQQQQ => q{G y 年QQQQ},
+		},
+		'roc' => {
+			Gy => q{G y 年},
+			GyMMM => q{G y 年 M 月},
+			GyMMMEd => q{G y 年 M 月 d 日 (E)},
+			GyMMMd => q{G y 年 M 月 d 日},
+			MEd => q{d-M（E）},
+			MMMEd => q{M 月 d 日 (E)},
+			MMMd => q{M 月 d 日},
+			Md => q{d-M},
+			y => q{G y 年},
+			yyyy => q{G y 年},
+			yyyyM => q{M/yGGGGG},
+			yyyyMEd => q{E, d/M/yGGGGG},
+			yyyyMMM => q{G y 年 M 月},
+			yyyyMMMEd => q{G y 年 M 月 d 日 (E)},
+			yyyyMMMd => q{G y 年 M 月 d 日},
 			yyyyMd => q{d/M/yGGGGG},
 			yyyyQQQ => q{G y 年第QQQ},
 			yyyyQQQQ => q{G y 年QQQQ},

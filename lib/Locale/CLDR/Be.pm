@@ -1,11 +1,11 @@
 package Locale::CLDR::Be;
 # This file auto generated from Data\common\main\be.xml
-#	on Sun  1 Jun  2:20:01 pm GMT
+#	on Tue 10 Jun  8:21:09 pm GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,1737 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal-masculine','spellout-cardinal-neuter','spellout-cardinal-feminine','spellout-ordinal-masculine','spellout-ordinal-feminine','spellout-ordinal-neuter' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'spellout-cardinal-feminine' => {
+			'public' => {
+				'-x' => {
+					rule => q(мінус →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(нуль),
+				},
+				'x.x' => {
+					rule => q(←← коска →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(адна),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(дзве),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(дваццаць[ →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(трыццаць[ →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(сорак[ →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(пяцьдзясят[ →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(шэсцьдзесят[ →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(семдзесят[ →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(восемдзесят[ →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(дзевяноста[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(сто[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(дзвесце[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(трыста[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(чатырыста[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(пяцьсот[ →→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(шэсцьсот[ →→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(семсот[ →→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(васямсот[ →→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(дзевяцьсот[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысяча[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-feminine← тысячы[ →→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(←%spellout-cardinal-feminine← тысяч[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine← мільён[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← мільёны[ →→]),
+				},
+				'5000000' => {
+					base_value => q(5000000),
+					rule => q(←%spellout-cardinal-masculine← мільёнаў[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine← мільярд[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-masculine← мільярды[ →→]),
+				},
+				'5000000000' => {
+					base_value => q(5000000000),
+					rule => q(←%spellout-cardinal-masculine← мільярдаў[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine← трыльён[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← трыльёны[ →→]),
+				},
+				'5000000000000' => {
+					base_value => q(5000000000000),
+					rule => q(←%spellout-cardinal-masculine← трылёнаў[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine← квадрыльён[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-masculine← квадрыльёны[ →→]),
+				},
+				'5000000000000000' => {
+					base_value => q(5000000000000000),
+					rule => q(←%spellout-cardinal-masculine← квадрыльёнаў[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-masculine' => {
+			'public' => {
+				'-x' => {
+					rule => q(мінус →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(нуль),
+				},
+				'x.x' => {
+					rule => q(←← коска →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(адзiн),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(два),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(тры),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(чатыры),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(пяць),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(шэсць),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(сем),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(восем),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(дзевяць),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(дзесяць),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(адзінаццаць),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(дванаццаць),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(трынаццаць),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(чатырнаццаць),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(пятнаццаць),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(шаснаццаць),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(сямнаццаць),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(васямнаццаць),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(дзевятнаццаць),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(дваццаць[ →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(трыццаць[ →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(сорак[ →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(пяцьдзесят[ →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(шэсцьдзесят[ →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(семдзесят[ →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(восемдзесят[ →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(дзевяноста[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(сто[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(дзвесце[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(трыста[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(чатырыста[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(пяцьсот[ →→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(шэсцьсот[ →→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(семсот[ →→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(восемсот[ →→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(дзевяцьсот[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысяча[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-feminine← тысячы[ →→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(←%spellout-cardinal-feminine← тысяч[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine← мільён[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← мільёны[ →→]),
+				},
+				'5000000' => {
+					base_value => q(5000000),
+					rule => q(←%spellout-cardinal-masculine← мільёнаў[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine← мільярд[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-masculine← мільярды[ →→]),
+				},
+				'5000000000' => {
+					base_value => q(5000000000),
+					rule => q(←%spellout-cardinal-masculine← мільярдаў[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine← трыльён[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← трыльёны[ →→]),
+				},
+				'5000000000000' => {
+					base_value => q(5000000000000),
+					rule => q(←%spellout-cardinal-masculine← трылёнаў[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine← квадрыльён[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-masculine← квадрыльёны[ →→]),
+				},
+				'5000000000000000' => {
+					base_value => q(5000000000000000),
+					rule => q(←%spellout-cardinal-masculine← квадрыльёнаў[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-neuter' => {
+			'public' => {
+				'-x' => {
+					rule => q(мінус →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(нуль),
+				},
+				'x.x' => {
+					rule => q(←← коска →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(адно),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(два),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(дваццаць[ →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(трыццаць[ →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(сорак[ →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(пяцьдзесят[ →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(шэсцьдзесят[ →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(семдзесят[ →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(восемдзесят[ →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(дзевяноста[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(сто[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(дзвесце[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(трыста[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(чатырыста[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(пяцьсот[ →→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(шэсцьсот[ →→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(сямсот[ →→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(васямсот[ →→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(дзевяцьсот[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысяча[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-feminine← тысячы[ →→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(←%spellout-cardinal-feminine← тысяч[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine← мільён[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← мільёны[ →→]),
+				},
+				'5000000' => {
+					base_value => q(5000000),
+					rule => q(←%spellout-cardinal-masculine← мільёнаў[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine← мільярд[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-masculine← мільярды[ →→]),
+				},
+				'5000000000' => {
+					base_value => q(5000000000),
+					rule => q(←%spellout-cardinal-masculine← мільярдаў[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine← трыльён[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← трыльёны[ →→]),
+				},
+				'5000000000000' => {
+					base_value => q(5000000000000),
+					rule => q(←%spellout-cardinal-masculine← трылёнаў[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine← квадрыльён[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-masculine← квадрыльёны[ →→]),
+				},
+				'5000000000000000' => {
+					base_value => q(5000000000000000),
+					rule => q(←%spellout-cardinal-masculine← квадрыльёнаў[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+		'spellout-ordinal-feminine' => {
+			'public' => {
+				'-x' => {
+					rule => q(мінус →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(нулявая),
+				},
+				'x.x' => {
+					rule => q(=#,##0.#=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(першая),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(другая),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(трэццяя),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(чацьвертая),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(пятая),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(шостая),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(сёмая),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(восьмая),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(дзявятая),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(дзясятая),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(адзінаццатая),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(дванаццатая),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(трынаццатая),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(чатырнаццатая),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(пятнаццатая),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(шаснаццатая),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(сямнаццатая),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(васямнаццатая),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(дзевятнаццатая),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(дваццатая),
+				},
+				'21' => {
+					base_value => q(21),
+					rule => q(дваццаць[ →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(трыццатая),
+				},
+				'31' => {
+					base_value => q(31),
+					rule => q(трыццаць[ →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(саракавая),
+				},
+				'41' => {
+					base_value => q(41),
+					rule => q(сорак[ →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(пяцідзесятая),
+				},
+				'51' => {
+					base_value => q(51),
+					rule => q(пяцідзясят[ →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(шэсцідзесятая),
+				},
+				'61' => {
+					base_value => q(61),
+					rule => q(шэсцьдзесят[ →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(семдзесятая),
+				},
+				'71' => {
+					base_value => q(71),
+					rule => q(семдзесят[ →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(васьмідзясятая),
+				},
+				'81' => {
+					base_value => q(81),
+					rule => q(восемдзесят[ →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(дзевяностая),
+				},
+				'91' => {
+					base_value => q(91),
+					rule => q(дзевяноста[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(сотая),
+				},
+				'101' => {
+					base_value => q(101),
+					rule => q(сто[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(дзвухсотая),
+				},
+				'201' => {
+					base_value => q(201),
+					rule => q(дзвесце[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(трохсотая),
+				},
+				'301' => {
+					base_value => q(301),
+					rule => q(трыста[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(чатырохсотая),
+				},
+				'401' => {
+					base_value => q(401),
+					rule => q(чатырыста[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(пяцісотая),
+				},
+				'501' => {
+					base_value => q(501),
+					rule => q(пяцьсот[ →→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(шасьцісотая),
+				},
+				'601' => {
+					base_value => q(601),
+					rule => q(шэсцьсот[ →→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(сямісотая),
+				},
+				'701' => {
+					base_value => q(701),
+					rule => q(семсот[ →→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(васьмісотая),
+				},
+				'801' => {
+					base_value => q(801),
+					rule => q(васямсот[ →→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(дзевяцісотая),
+				},
+				'901' => {
+					base_value => q(901),
+					rule => q(дзевяцьсот[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысячны),
+				},
+				'1001' => {
+					base_value => q(1001),
+					rule => q(←%spellout-cardinal-feminine← тысяча[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(дзвух тысячная),
+				},
+				'2001' => {
+					base_value => q(2001),
+					rule => q(←%spellout-cardinal-feminine← тысячы[ →→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(←%spellout-cardinal-feminine← тысячная),
+				},
+				'5001' => {
+					base_value => q(5001),
+					rule => q(←%spellout-cardinal-feminine← тысяч[ →→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(дзесяці тысячная),
+				},
+				'10001' => {
+					base_value => q(10001),
+					divisor => q(1000),
+					rule => q(дзесяць тысяч[ →→]),
+				},
+				'11000' => {
+					base_value => q(11000),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← тысяч[ →→]),
+				},
+				'20000' => {
+					base_value => q(20000),
+					rule => q(дваццаці тысячная),
+				},
+				'20001' => {
+					base_value => q(20001),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← тысяч[ →→]),
+				},
+				'21000' => {
+					base_value => q(21000),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысяча[ →→]),
+				},
+				'100000' => {
+					base_value => q(100000),
+					rule => q(сто тысячная),
+				},
+				'100001' => {
+					base_value => q(100001),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← тысяч[ →→]),
+				},
+				'110000' => {
+					base_value => q(110000),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысячная[ →→]),
+				},
+				'200000' => {
+					base_value => q(200000),
+					rule => q(дзвухсот тысячная),
+				},
+				'200001' => {
+					base_value => q(200001),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысячная[ →→]),
+				},
+				'300000' => {
+					base_value => q(300000),
+					rule => q(трохсот тысячная),
+				},
+				'300001' => {
+					base_value => q(300001),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысячная[ →→]),
+				},
+				'400000' => {
+					base_value => q(400000),
+					rule => q(чатырохсот тысячная),
+				},
+				'400001' => {
+					base_value => q(400001),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысячная[ →→]),
+				},
+				'500000' => {
+					base_value => q(500000),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысячнае[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine← мільён[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← мільёны[ →→]),
+				},
+				'5000000' => {
+					base_value => q(5000000),
+					rule => q(←%spellout-cardinal-masculine← мільёнаў[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine← мільярд[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-masculine← мільярды[ →→]),
+				},
+				'5000000000' => {
+					base_value => q(5000000000),
+					rule => q(←%spellout-cardinal-masculine← мільярдаў[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine← трыльён[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← трыльёны[ →→]),
+				},
+				'5000000000000' => {
+					base_value => q(5000000000000),
+					rule => q(←%spellout-cardinal-masculine← трылёнаў[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine← квадрыльён[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-masculine← квадрыльёны[ →→]),
+				},
+				'5000000000000000' => {
+					base_value => q(5000000000000000),
+					rule => q(←%spellout-cardinal-masculine← квадрыльёнаў[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-ordinal-masculine' => {
+			'public' => {
+				'-x' => {
+					rule => q(мінус →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(нулявы),
+				},
+				'x.x' => {
+					rule => q(=#,##0.#=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(першы),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(другі),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(трэйці),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(чацьверты),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(пяты),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(шосты),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(сёмы),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(восьмы),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(дзявяты),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(дзясяты),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(адзінаццаты),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(дванаццаты),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(трынаццаты),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(чатырнаццаты),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(пятнаццаты),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(шаснаццаты),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(сямнаццаты),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(васямнаццаты),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(дзевятнаццаты),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(дваццаты),
+				},
+				'21' => {
+					base_value => q(21),
+					rule => q(дваццаць[ →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(трыццаты),
+				},
+				'31' => {
+					base_value => q(31),
+					rule => q(трыццаць[ →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(саракавы),
+				},
+				'41' => {
+					base_value => q(41),
+					rule => q(сорак[ →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(пяцідзясяты),
+				},
+				'51' => {
+					base_value => q(51),
+					rule => q(пяцідзясят[ →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(шэсцьдзесяты),
+				},
+				'61' => {
+					base_value => q(61),
+					rule => q(шэсцьдзесят[ →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(семдзесяты),
+				},
+				'71' => {
+					base_value => q(71),
+					rule => q(семдзесят[ →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(васьмідзясяты),
+				},
+				'81' => {
+					base_value => q(81),
+					rule => q(восемдзесят[ →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(дзевяносты),
+				},
+				'91' => {
+					base_value => q(91),
+					rule => q(дзевяноста[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(соты),
+				},
+				'101' => {
+					base_value => q(101),
+					rule => q(сто[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(дзвухсоты),
+				},
+				'201' => {
+					base_value => q(201),
+					rule => q(дзвесце[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(трохсоты),
+				},
+				'301' => {
+					base_value => q(301),
+					rule => q(трыста[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(чатырохсоты),
+				},
+				'401' => {
+					base_value => q(401),
+					rule => q(чатырыста[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(пяцісоты),
+				},
+				'501' => {
+					base_value => q(501),
+					rule => q(пяцьсот[ →→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(шасьцісоты),
+				},
+				'601' => {
+					base_value => q(601),
+					rule => q(шэсцьсот[ →→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(сямісоты),
+				},
+				'701' => {
+					base_value => q(701),
+					rule => q(семсот[ →→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(васьмісоты),
+				},
+				'801' => {
+					base_value => q(801),
+					rule => q(васямсот[ →→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(дзевяцісоты),
+				},
+				'901' => {
+					base_value => q(901),
+					rule => q(дзевяцьсот[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысячны),
+				},
+				'1001' => {
+					base_value => q(1001),
+					rule => q(←%spellout-cardinal-feminine← тысяча[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(дзвух тысячны),
+				},
+				'2001' => {
+					base_value => q(2001),
+					rule => q(←%spellout-cardinal-feminine← тысячы[ →→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(←%spellout-cardinal-feminine← тысячны),
+				},
+				'5001' => {
+					base_value => q(5001),
+					rule => q(←%spellout-cardinal-feminine← тысяч[ →→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(дзесяці тысячны),
+				},
+				'10001' => {
+					base_value => q(10001),
+					divisor => q(1000),
+					rule => q(дзесяць тысяч[ →→]),
+				},
+				'11000' => {
+					base_value => q(11000),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← тысяч[ →→]),
+				},
+				'20000' => {
+					base_value => q(20000),
+					rule => q(дваццаці тысячны),
+				},
+				'20001' => {
+					base_value => q(20001),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← тысяч[ →→]),
+				},
+				'21000' => {
+					base_value => q(21000),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысяча[ →→]),
+				},
+				'100000' => {
+					base_value => q(100000),
+					rule => q(сто тысячны),
+				},
+				'100001' => {
+					base_value => q(100001),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← тысяч[ →→]),
+				},
+				'110000' => {
+					base_value => q(110000),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← тысячны[ →→]),
+				},
+				'200000' => {
+					base_value => q(200000),
+					rule => q(дзвухсот тысячны),
+				},
+				'200001' => {
+					base_value => q(200001),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← тысячны[ →→]),
+				},
+				'300000' => {
+					base_value => q(300000),
+					rule => q(трохсот тысячны),
+				},
+				'300001' => {
+					base_value => q(300001),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← тысячны[ →→]),
+				},
+				'400000' => {
+					base_value => q(400000),
+					rule => q(чатырохсот тысячны),
+				},
+				'400001' => {
+					base_value => q(400001),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← тысячны[ →→]),
+				},
+				'500000' => {
+					base_value => q(500000),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← тысячнае[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine← мільён[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← мільёны[ →→]),
+				},
+				'5000000' => {
+					base_value => q(5000000),
+					rule => q(←%spellout-cardinal-masculine← мільёнаў[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine← мільярд[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-masculine← мільярды[ →→]),
+				},
+				'5000000000' => {
+					base_value => q(5000000000),
+					rule => q(←%spellout-cardinal-masculine← мільярдаў[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine← трыльён[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← трыльёны[ →→]),
+				},
+				'5000000000000' => {
+					base_value => q(5000000000000),
+					rule => q(←%spellout-cardinal-masculine← трылёнаў[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine← квадрыльён[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-masculine← квадрыльёны[ →→]),
+				},
+				'5000000000000000' => {
+					base_value => q(5000000000000000),
+					rule => q(←%spellout-cardinal-masculine← квадрыльёнаў[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-ordinal-neuter' => {
+			'public' => {
+				'-x' => {
+					rule => q(мінус →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(нулявое),
+				},
+				'x.x' => {
+					rule => q(=#,##0.#=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(першае),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(другое),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(трэццяе),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(чацьвертае),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(пятае),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(шостае),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(сёмае),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(восьмае),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(дзявятае),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(дзясятае),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(адзінаццатае),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(дванаццатае),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(трынаццатае),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(чатырнаццатае),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(пятнаццатае),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(шаснаццатае),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(сямнаццатае),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(васямнаццатае),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(дзевятнаццатае),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(дваццатае),
+				},
+				'21' => {
+					base_value => q(21),
+					rule => q(дваццаць[ →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(трыццатае),
+				},
+				'31' => {
+					base_value => q(31),
+					rule => q(трыццаць[ →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(саракавое),
+				},
+				'41' => {
+					base_value => q(41),
+					rule => q(сорак[ →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(пяцьдзесятае),
+				},
+				'51' => {
+					base_value => q(51),
+					rule => q(пяцідзясят[ →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(шэсцідзясятае),
+				},
+				'61' => {
+					base_value => q(61),
+					rule => q(шэсцьдзесят[ →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(сямдзясятае),
+				},
+				'71' => {
+					base_value => q(71),
+					rule => q(семдзесят[ →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(васьмідзясятае),
+				},
+				'81' => {
+					base_value => q(81),
+					rule => q(восемдзесят[ →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(дзевяностае),
+				},
+				'91' => {
+					base_value => q(91),
+					rule => q(дзевяноста[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(сотае),
+				},
+				'101' => {
+					base_value => q(101),
+					rule => q(сто[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(дзвухсотае),
+				},
+				'201' => {
+					base_value => q(201),
+					rule => q(дзвесце[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(трохсотае),
+				},
+				'301' => {
+					base_value => q(301),
+					rule => q(трыста[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(чатырохсотае),
+				},
+				'401' => {
+					base_value => q(401),
+					rule => q(чатырыста[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(пяцісотае),
+				},
+				'501' => {
+					base_value => q(501),
+					rule => q(пяцьсот[ →→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(шасьцісотае),
+				},
+				'601' => {
+					base_value => q(601),
+					rule => q(шэсцьсот[ →→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(сямісотае),
+				},
+				'701' => {
+					base_value => q(701),
+					rule => q(семсот[ →→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(васьмісотае),
+				},
+				'801' => {
+					base_value => q(801),
+					rule => q(васямсот[ →→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(дзевяцісотае),
+				},
+				'901' => {
+					base_value => q(901),
+					rule => q(дзевяцьсот[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысячны),
+				},
+				'1001' => {
+					base_value => q(1001),
+					rule => q(←%spellout-cardinal-feminine← тысяча[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(дзвух тысячнае),
+				},
+				'2001' => {
+					base_value => q(2001),
+					rule => q(←%spellout-cardinal-feminine← тысячы[ →→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(←%spellout-cardinal-feminine← тысячнае),
+				},
+				'5001' => {
+					base_value => q(5001),
+					rule => q(←%spellout-cardinal-feminine← тысяч[ →→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(дзесяці тысячнае),
+				},
+				'10001' => {
+					base_value => q(10001),
+					divisor => q(1000),
+					rule => q(дзесяць тысяч[ →→]),
+				},
+				'11000' => {
+					base_value => q(11000),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← тысяч[ →→]),
+				},
+				'20000' => {
+					base_value => q(20000),
+					rule => q(дваццаці тысячнае),
+				},
+				'20001' => {
+					base_value => q(20001),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← тысяч[ →→]),
+				},
+				'21000' => {
+					base_value => q(21000),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысяча[ →→]),
+				},
+				'100000' => {
+					base_value => q(100000),
+					rule => q(сто тысячнае),
+				},
+				'100001' => {
+					base_value => q(100001),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← тысяч[ →→]),
+				},
+				'110000' => {
+					base_value => q(110000),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысячнае[ →→]),
+				},
+				'200000' => {
+					base_value => q(200000),
+					rule => q(дзвухсот тысячнае),
+				},
+				'200001' => {
+					base_value => q(200001),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысячнае[ →→]),
+				},
+				'300000' => {
+					base_value => q(300000),
+					rule => q(трохсот тысячнае),
+				},
+				'300001' => {
+					base_value => q(300001),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысячнае[ →→]),
+				},
+				'400000' => {
+					base_value => q(400000),
+					rule => q(чатырохсот тысячнае),
+				},
+				'400001' => {
+					base_value => q(400001),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысячнае[ →→]),
+				},
+				'500000' => {
+					base_value => q(500000),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысячнае[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine← мільён[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← мільёны[ →→]),
+				},
+				'5000000' => {
+					base_value => q(5000000),
+					rule => q(←%spellout-cardinal-masculine← мільёнаў[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine← мільярд[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-masculine← мільярды[ →→]),
+				},
+				'5000000000' => {
+					base_value => q(5000000000),
+					rule => q(←%spellout-cardinal-masculine← мільярдаў[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine← трыльён[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← трыльёны[ →→]),
+				},
+				'5000000000000' => {
+					base_value => q(5000000000000),
+					rule => q(←%spellout-cardinal-masculine← трылёнаў[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine← квадрыльён[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-masculine← квадрыльёны[ →→]),
+				},
+				'5000000000000000' => {
+					base_value => q(5000000000000000),
+					rule => q(←%spellout-cardinal-masculine← квадрыльёнаў[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -1054,8 +2785,8 @@ has 'day_periods' => (
 			},
 			'stand-alone' => {
 				'abbreviated' => {
-					'am' => q{раніцы},
 					'pm' => q{вечара},
+					'am' => q{раніцы},
 				},
 			},
 		},
@@ -1173,28 +2904,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
 		},
-		'buddhist' => {
-			Ed => q{E, d},
-			Gy => q{G y},
-			Hm => q{HH.mm},
-			Hms => q{HH.mm.ss},
-			M => q{L},
-			MEd => q{E, d.M},
-			MMM => q{LLL},
-			MMMEd => q{E, d MMM},
-			MMMd => q{d MMM},
-			Md => q{d.M},
-			d => q{d},
-			hm => q{h.mm a},
-			hms => q{h.mm.ss a},
-			y => q{G y},
-			yM => q{M.y},
-			yMEd => q{E, d.M.y},
-			yMMM => q{MMM y G},
-			yMMMEd => q{E, d MMM y G},
-			yMMMd => q{d MMM y G},
-			yMd => q{d.M.y},
-		},
 		'gregorian' => {
 			Gy => q{y G},
 			GyMMM => q{LLL y G},
@@ -1224,6 +2933,28 @@ has 'datetime_formats_available_formats' => (
 			yMd => q{d.M.y},
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
+		},
+		'buddhist' => {
+			Ed => q{E, d},
+			Gy => q{G y},
+			Hm => q{HH.mm},
+			Hms => q{HH.mm.ss},
+			M => q{L},
+			MEd => q{E, d.M},
+			MMM => q{LLL},
+			MMMEd => q{E, d MMM},
+			MMMd => q{d MMM},
+			Md => q{d.M},
+			d => q{d},
+			hm => q{h.mm a},
+			hms => q{h.mm.ss a},
+			y => q{G y},
+			yM => q{M.y},
+			yMEd => q{E, d.M.y},
+			yMMM => q{MMM y G},
+			yMMMEd => q{E, d MMM y G},
+			yMMMd => q{d MMM y G},
+			yMd => q{d.M.y},
 		},
 	} },
 );

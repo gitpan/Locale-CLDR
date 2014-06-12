@@ -1,11 +1,11 @@
 package Locale::CLDR::Sr;
 # This file auto generated from Data\common\main\sr.xml
-#	on Sun  1 Jun  4:22:59 pm GMT
+#	on Tue 10 Jun 10:34:45 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,603 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal-masculine','spellout-cardinal-neuter','spellout-cardinal-feminine','spellout-ordinal' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'ordi' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(и),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(' и =%spellout-ordinal=),
+				},
+				'max' => {
+					base_value => q(1),
+					rule => q(' и =%spellout-ordinal=),
+				},
+			},
+		},
+		'ordti' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(ти),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(' =%spellout-ordinal=),
+				},
+				'max' => {
+					base_value => q(1),
+					rule => q(' =%spellout-ordinal=),
+				},
+			},
+		},
+		'spellout-cardinal-feminine' => {
+			'public' => {
+				'-x' => {
+					rule => q(минус →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(нула),
+				},
+				'x.x' => {
+					rule => q(←← кома →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(једна),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(две),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(двадесет[ и →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(тридесет[ и →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(четрдесет[ и →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(педесет[ и →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(шездесет[ и →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(седамдесет[ и →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(осамдесет[ и →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(деведесет[ и →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(сто[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(двеста[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(триста[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(←%spellout-cardinal-feminine←сто[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-feminine← хиљаду[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-feminine← хиљада[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine← милион[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine← милијарда[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine← билион[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine← билијарда[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-masculine' => {
+			'public' => {
+				'-x' => {
+					rule => q(минус →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(нула),
+				},
+				'x.x' => {
+					rule => q(←← кома →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(један),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(два),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(три),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(четири),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(пет),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(шест),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(седам),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(осам),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(девет),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(десет),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(једанаест),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(дванаест),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(тринаест),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(четрнаест),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(петнаест),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(шеснаест),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(седамнаест),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(осамнаест),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(деветнаест),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(двадесет[ и →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(тридесет[ и →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(четрдесет[ и →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(педесет[ и →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(шездесет[ и →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(седамдесет[ и →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(осамдесет[ и →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(деведесет[ и →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(сто[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(двеста[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(триста[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(←%spellout-cardinal-feminine←сто[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-feminine← хиљаду[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-feminine← хиљада[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine← милион[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine← милијарда[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine← билион[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine← билијарда[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-neuter' => {
+			'public' => {
+				'-x' => {
+					rule => q(минус →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(нула),
+				},
+				'x.x' => {
+					rule => q(←← кома →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(једно),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(два),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(двадесет[ и →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(тридесет[ и →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(четрдесет[ и →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(педесет[ и →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(шездесет[ и →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(седамдесет[ и →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(осамдесет[ и →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(деведесет[ и →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(сто[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(двеста[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(триста[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(←%spellout-cardinal-feminine←сто[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-feminine← хиљаду[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-feminine← хиљада[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine← милион[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine← милијарда[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine← билион[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine← билијарда[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+		'spellout-ordinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(минус →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(нулти),
+				},
+				'x.x' => {
+					rule => q(=#,##0.#=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(први),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(други),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(трећи),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(четврти),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(пети),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(шести),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(седми),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(осми),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(девети),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(десети),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(једанаести),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(дванаести),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(тринаести),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(четрнаести),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(петнаести),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(шеснаести),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(седамнаести),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(осамнаести),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(деветнаести),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(двадесет→%%ordi→),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(тридесет→%%ordi→),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(четрдесет→%%ordi→),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(педесет→%%ordi→),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(шездесет→%%ordi→),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(седамдесет→%%ordi→),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(осамдесет→%%ordi→),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(деведесет→%%ordi→),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(сто→%%ordti→),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(двеста→%%ordti→),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(триста→%%ordti→),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(←%spellout-cardinal-feminine←сто→%%ordti→),
+				},
+				'max' => {
+					base_value => q(400),
+					rule => q(←%spellout-cardinal-feminine←сто→%%ordti→),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;

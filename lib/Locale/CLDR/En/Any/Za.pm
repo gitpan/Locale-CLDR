@@ -1,11 +1,11 @@
 package Locale::CLDR::En::Any::Za;
 # This file auto generated from Data\common\main\en_ZA.xml
-#	on Sun  1 Jun  2:49:08 pm GMT
+#	on Tue 10 Jun  8:50:17 pm GMT
 # XML file generated 2013-08-07 23:47:50 -0500 (Wed, 07 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -78,20 +78,20 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'generic') {
+			if ($_ eq 'gregorian') {
+				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'am' if $time >= 000
 					&& $time < 1200;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'gregorian') {
+			if ($_ eq 'generic') {
+				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'am' if $time >= 000
 					&& $time < 1200;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 		}

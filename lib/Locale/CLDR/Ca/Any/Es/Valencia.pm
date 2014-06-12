@@ -1,11 +1,11 @@
 package Locale::CLDR::Ca::Any::Es::Valencia;
 # This file auto generated from Data\common\main\ca_ES_VALENCIA.xml
-#	on Sun  1 Jun  2:35:58 pm GMT
+#	on Tue 10 Jun  8:36:40 pm GMT
 # XML file generated 2014-02-27 11:17:08 -0600 (Thu, 27 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';

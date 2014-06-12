@@ -1,11 +1,11 @@
 package Locale::CLDR::Nb;
 # This file auto generated from Data\common\main\nb.xml
-#	on Sun  1 Jun  3:58:22 pm GMT
+#	on Tue 10 Jun 10:06:37 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,284 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal-neuter','spellout-cardinal-masculine','spellout-cardinal-feminine','spellout-cardinal-reale' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'spellout-cardinal-feminine' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-reale=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-reale=),
+				},
+			},
+		},
+		'spellout-cardinal-masculine' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-reale=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-reale=),
+				},
+			},
+		},
+		'spellout-cardinal-neuter' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(null),
+				},
+				'x.x' => {
+					rule => q(←← komma →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(et),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(=%spellout-cardinal-reale=),
+				},
+				'max' => {
+					base_value => q(2),
+					rule => q(=%spellout-cardinal-reale=),
+				},
+			},
+		},
+		'spellout-cardinal-reale' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(null),
+				},
+				'x.x' => {
+					rule => q(←← komma →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(én),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(to),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tre),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(fire),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(fem),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(seks),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(syv),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(åtte),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(ni),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(ti),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(elve),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(tolv),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(tretten),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(fjorten),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(femten),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(seksten),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(sytten),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(atten),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(nitten),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q([→→­og­]tyve),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q([→→­og­]tredve),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q([→→­og­]førr),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q([→→­og­]femti),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q([→→­og­]seksti),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q([→→­og­]søtti),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q([→→­og­]åtti),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q([→→­og­]nitti),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(etthundre[­og­→→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←%spellout-cardinal-neuter←hundre[­og­→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-neuter← tusen[ og →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(én million[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←← millioner[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(én milliard[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←← milliarder[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(én billion[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←← billioner[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(én billiard[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←← billiarder[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-reale=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-reale=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'1100' => {
+					base_value => q(1100),
+					divisor => q(100),
+					rule => q(←←­hundre[­og­→→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(=%spellout-numbering=),
+				},
+				'max' => {
+					base_value => q(10000),
+					rule => q(=%spellout-numbering=),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -4617,8 +4895,8 @@ has 'day_periods' => (
 					'pm' => q{p},
 				},
 				'wide' => {
-					'am' => q{a.m.},
 					'pm' => q{p.m.},
+					'am' => q{a.m.},
 				},
 				'abbreviated' => {
 					'pm' => q{p.m.},

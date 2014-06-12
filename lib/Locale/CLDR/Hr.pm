@@ -1,11 +1,11 @@
 package Locale::CLDR::Hr;
 # This file auto generated from Data\common\main\hr.xml
-#	on Sun  1 Jun  3:13:55 pm GMT
+#	on Tue 10 Jun  9:15:36 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,835 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal-masculine','spellout-cardinal-neuter','spellout-cardinal-feminine','spellout-ordinal-masculine','spellout-ordinal-neuter','spellout-ordinal-feminine' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'spellout-cardinal-feminine' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(nula),
+				},
+				'x.x' => {
+					rule => q(←← zarez →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(jedna),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(dvije),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(dvadeset[ i →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(trideset[ i →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(četrdeset[ i →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(pedeset[ i →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(šezdeset[ i →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(sedamdeset[ i →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(osamdeset[ i →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(devedeset[ i →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(sto[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(dvjesto[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(tristo[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(četiristo[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(petsto[ →→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(šeststo[ →→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(sedamsto[ →→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(osamsto[ →→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(devetsto[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(tisuću[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-feminine← tisuće[ →→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(←%spellout-cardinal-feminine← tisuća[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine← milijun[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← milijuna[ →→]),
+				},
+				'5000000' => {
+					base_value => q(5000000),
+					rule => q(←%spellout-cardinal-masculine← milijuna[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-feminine← milijarda[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-feminine← milijarde[ →→]),
+				},
+				'5000000000' => {
+					base_value => q(5000000000),
+					rule => q(←%spellout-cardinal-feminine← milijardi[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine← bilijun[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← bilijuna[ →→]),
+				},
+				'5000000000000' => {
+					base_value => q(5000000000000),
+					rule => q(←%spellout-cardinal-masculine← bilijuna[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-feminine← bilijarda[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-feminine← bilijarde[ →→]),
+				},
+				'5000000000000000' => {
+					base_value => q(5000000000000000),
+					rule => q(←%spellout-cardinal-feminine← bilijardi[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-masculine' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(nula),
+				},
+				'x.x' => {
+					rule => q(←← zarez →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(jedan),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(dva),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tri),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(četiri),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(pet),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(šest),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(sedam),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(osam),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(devet),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(deset),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(jedanaest),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(dvanaest),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(trinaest),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(četrnaest),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(petnaest),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(šesnaest),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(sedamnaest),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(osamnaest),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(devetnaest),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(dvadeset[ i →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(trideset[ i →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(četrdeset[ i →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(pedeset[ i →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(šezdeset[ i →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(sedamdeset[ i →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(osamdeset[ i →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(devedeset[ i →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(sto[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(dvjesto[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(tristo[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(četiristo[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(petsto[ →→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(šeststo[ →→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(sedamsto[ →→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(osamsto[ →→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(devetsto[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(tisuću[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-feminine← tisuće[ →→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(←%spellout-cardinal-feminine← tisuća[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine← milijun[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← milijuna[ →→]),
+				},
+				'5000000' => {
+					base_value => q(5000000),
+					rule => q(←%spellout-cardinal-masculine← milijuna[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-feminine← milijarda[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-feminine← milijarde[ →→]),
+				},
+				'5000000000' => {
+					base_value => q(5000000000),
+					rule => q(←%spellout-cardinal-feminine← milijardi[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine← bilijun[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← bilijuna[ →→]),
+				},
+				'5000000000000' => {
+					base_value => q(5000000000000),
+					rule => q(←%spellout-cardinal-masculine← bilijuna[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-feminine← bilijarda[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-feminine← bilijarde[ →→]),
+				},
+				'5000000000000000' => {
+					base_value => q(5000000000000000),
+					rule => q(←%spellout-cardinal-feminine← bilijardi[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-neuter' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(nula),
+				},
+				'x.x' => {
+					rule => q(←← zarez →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(jedno),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(dva),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(dvadeset[ i →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(trideset[ i →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(četrdeset[ i →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(pedeset[ i →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(šezdeset[ i →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(sedamdeset[ i →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(osamdeset[ i →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(devedeset[ i →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(sto[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(dvjesto[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(tristo[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(četiristo[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(petsto[ →→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(šeststo[ →→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(sedamsto[ →→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(osamsto[ →→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(devetsto[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(tisuću[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-feminine← tisuće[ →→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(←%spellout-cardinal-feminine← tisuća[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine← milijun[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← milijuna[ →→]),
+				},
+				'5000000' => {
+					base_value => q(5000000),
+					rule => q(←%spellout-cardinal-masculine← milijuna[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-feminine← milijarda[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-feminine← milijarde[ →→]),
+				},
+				'5000000000' => {
+					base_value => q(5000000000),
+					rule => q(←%spellout-cardinal-feminine← milijardi[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine← bilijun[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← bilijuna[ →→]),
+				},
+				'5000000000000' => {
+					base_value => q(5000000000000),
+					rule => q(←%spellout-cardinal-masculine← bilijuna[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-feminine← bilijarda[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-feminine← bilijarde[ →→]),
+				},
+				'5000000000000000' => {
+					base_value => q(5000000000000000),
+					rule => q(←%spellout-cardinal-feminine← bilijardi[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+		'spellout-ordinal-base' => {
+			'private' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(nula),
+				},
+				'x.x' => {
+					rule => q(=#,##0.#=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(prv),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(drug),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(treć),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(četvrt),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(pet),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(šest),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(sedm),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(osm),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(devet),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(deset),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(=%spellout-numbering=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(dvadeset[ →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(trideset[ →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(četrdeset[ →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(pedeset[ →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(šezdeset[ →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(sedamdeset[ →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(osamdeset[ →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(devedeset[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(st[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(dvest[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(trist[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(četrist[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(petst[ →→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(šest[ →→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(sedamst[ →→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(osamst[ →→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(devetst[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(tisuću[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-feminine← tisuće[ →→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(←%spellout-cardinal-feminine← tisuću[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine← milijun[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← milijuny[ →→]),
+				},
+				'5000000' => {
+					base_value => q(5000000),
+					rule => q(←%spellout-cardinal-masculine← milijun[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine← miliarda[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-masculine← miliardy[ →→]),
+				},
+				'5000000000' => {
+					base_value => q(5000000000),
+					rule => q(←%spellout-cardinal-masculine← miliarda[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine← bilijun[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← bilijuny[ →→]),
+				},
+				'5000000000000' => {
+					base_value => q(5000000000000),
+					rule => q(←%spellout-cardinal-masculine← bilijun[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine← biliarda[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-masculine← biliardy[ →→]),
+				},
+				'5000000000000000' => {
+					base_value => q(5000000000000000),
+					rule => q(←%spellout-cardinal-masculine← biliarda[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-ordinal-feminine' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%%spellout-ordinal-base=a),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%%spellout-ordinal-base=a),
+				},
+			},
+		},
+		'spellout-ordinal-masculine' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%%spellout-ordinal-base=i),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%%spellout-ordinal-base=i),
+				},
+			},
+		},
+		'spellout-ordinal-neuter' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%%spellout-ordinal-base=o),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(=%%spellout-ordinal-base=e),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(=%%spellout-ordinal-base=o),
+				},
+				'max' => {
+					base_value => q(4),
+					rule => q(=%%spellout-ordinal-base=o),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -5021,116 +5850,116 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'buddhist') {
-				return 'afternoon' if $time > 1200
-					&& $time < 1700;
-				return 'night' if $time >= 2100
-					&& $time < 2400;
-				return 'morning' if $time >= 900
-					&& $time < 1200;
-				return 'evening' if $time >= 1700
-					&& $time < 2100;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 000
-					&& $time < 900;
-			last SWITCH;
-			}
 			if ($_ eq 'japanese') {
-				return 'afternoon' if $time > 1200
-					&& $time < 1700;
-				return 'night' if $time >= 2100
-					&& $time < 2400;
 				return 'morning' if $time >= 900
 					&& $time < 1200;
+				return 'night' if $time >= 2100
+					&& $time < 2400;
+				return 'afternoon' if $time > 1200
+					&& $time < 1700;
 				return 'evening' if $time >= 1700
 					&& $time < 2100;
-				return 'noon' if $time == 1200;
 				return 'earlyMorning' if $time >= 000
 					&& $time < 900;
+				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'islamic') {
-				return 'afternoon' if $time > 1200
-					&& $time < 1700;
-				return 'night' if $time >= 2100
-					&& $time < 2400;
+			if ($_ eq 'buddhist') {
 				return 'morning' if $time >= 900
 					&& $time < 1200;
-				return 'evening' if $time >= 1700
-					&& $time < 2100;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 000
-					&& $time < 900;
-			last SWITCH;
-			}
-			if ($_ eq 'gregorian') {
-				return 'afternoon' if $time > 1200
-					&& $time < 1700;
 				return 'night' if $time >= 2100
 					&& $time < 2400;
-				return 'morning' if $time >= 900
-					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1700;
 				return 'evening' if $time >= 1700
 					&& $time < 2100;
-				return 'noon' if $time == 1200;
 				return 'earlyMorning' if $time >= 000
 					&& $time < 900;
+				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'roc') {
-				return 'afternoon' if $time > 1200
-					&& $time < 1700;
-				return 'night' if $time >= 2100
-					&& $time < 2400;
 				return 'morning' if $time >= 900
 					&& $time < 1200;
-				return 'evening' if $time >= 1700
-					&& $time < 2100;
-				return 'noon' if $time == 1200;
-				return 'earlyMorning' if $time >= 000
-					&& $time < 900;
-			last SWITCH;
-			}
-			if ($_ eq 'generic') {
-				return 'afternoon' if $time > 1200
-					&& $time < 1700;
 				return 'night' if $time >= 2100
 					&& $time < 2400;
-				return 'morning' if $time >= 900
-					&& $time < 1200;
+				return 'afternoon' if $time > 1200
+					&& $time < 1700;
 				return 'evening' if $time >= 1700
 					&& $time < 2100;
-				return 'noon' if $time == 1200;
 				return 'earlyMorning' if $time >= 000
 					&& $time < 900;
+				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'hebrew') {
-				return 'afternoon' if $time > 1200
-					&& $time < 1700;
-				return 'night' if $time >= 2100
-					&& $time < 2400;
 				return 'morning' if $time >= 900
 					&& $time < 1200;
+				return 'night' if $time >= 2100
+					&& $time < 2400;
+				return 'afternoon' if $time > 1200
+					&& $time < 1700;
 				return 'evening' if $time >= 1700
 					&& $time < 2100;
-				return 'noon' if $time == 1200;
 				return 'earlyMorning' if $time >= 000
 					&& $time < 900;
+				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'chinese') {
-				return 'afternoon' if $time > 1200
-					&& $time < 1700;
-				return 'night' if $time >= 2100
-					&& $time < 2400;
 				return 'morning' if $time >= 900
 					&& $time < 1200;
+				return 'night' if $time >= 2100
+					&& $time < 2400;
+				return 'afternoon' if $time > 1200
+					&& $time < 1700;
 				return 'evening' if $time >= 1700
 					&& $time < 2100;
-				return 'noon' if $time == 1200;
 				return 'earlyMorning' if $time >= 000
 					&& $time < 900;
+				return 'noon' if $time == 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'generic') {
+				return 'morning' if $time >= 900
+					&& $time < 1200;
+				return 'night' if $time >= 2100
+					&& $time < 2400;
+				return 'afternoon' if $time > 1200
+					&& $time < 1700;
+				return 'evening' if $time >= 1700
+					&& $time < 2100;
+				return 'earlyMorning' if $time >= 000
+					&& $time < 900;
+				return 'noon' if $time == 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'gregorian') {
+				return 'morning' if $time >= 900
+					&& $time < 1200;
+				return 'night' if $time >= 2100
+					&& $time < 2400;
+				return 'afternoon' if $time > 1200
+					&& $time < 1700;
+				return 'evening' if $time >= 1700
+					&& $time < 2100;
+				return 'earlyMorning' if $time >= 000
+					&& $time < 900;
+				return 'noon' if $time == 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'islamic') {
+				return 'morning' if $time >= 900
+					&& $time < 1200;
+				return 'night' if $time >= 2100
+					&& $time < 2400;
+				return 'afternoon' if $time > 1200
+					&& $time < 1700;
+				return 'evening' if $time >= 1700
+					&& $time < 2100;
+				return 'earlyMorning' if $time >= 000
+					&& $time < 900;
+				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 		}
@@ -5144,36 +5973,36 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'narrow' => {
-					'night' => q{noću},
-					'morning' => q{prijepodne},
-					'afternoon' => q{popodne},
-					'noon' => q{n},
-					'evening' => q{navečer},
-					'earlyMorning' => q{ujutro},
-				},
 				'wide' => {
 					'noon' => q{podne},
-					'am' => q{AM},
 					'pm' => q{PM},
+					'am' => q{AM},
+				},
+				'narrow' => {
+					'morning' => q{prijepodne},
+					'noon' => q{n},
+					'night' => q{noću},
+					'evening' => q{navečer},
+					'earlyMorning' => q{ujutro},
+					'afternoon' => q{popodne},
 				},
 				'abbreviated' => {
-					'earlyMorning' => q{ujutro},
+					'morning' => q{prijepodne},
 					'noon' => q{podne},
 					'evening' => q{navečer},
 					'afternoon' => q{popodne},
+					'earlyMorning' => q{ujutro},
 					'night' => q{noću},
-					'morning' => q{prijepodne},
 				},
 			},
 			'stand-alone' => {
 				'abbreviated' => {
-					'afternoon' => q{popodne},
-					'night' => q{noću},
-					'morning' => q{prijepodne},
-					'noon' => q{podne},
 					'evening' => q{navečer},
 					'earlyMorning' => q{ujutro},
+					'afternoon' => q{popodne},
+					'night' => q{noću},
+					'noon' => q{podne},
+					'morning' => q{prijepodne},
 				},
 			},
 		},
@@ -5330,6 +6159,45 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'gregorian' => {
+			EHm => q{E HH:mm},
+			EHms => q{E HH:mm:ss},
+			Ed => q{E, d.},
+			Ehm => q{E h:mm a},
+			Ehms => q{E h:mm:ss a},
+			Gy => q{y. G},
+			GyMMM => q{LLL y. G},
+			GyMMMEd => q{E, d. MMM y. G},
+			GyMMMd => q{d. MMM y. G},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L.},
+			MEd => q{E, d. M.},
+			MMM => q{LLL},
+			MMMEd => q{E, d. MMM},
+			MMMMEd => q{E, d. MMMM},
+			MMMMd => q{d. MMMM},
+			MMMd => q{d. MMM},
+			MMdd => q{dd. MM.},
+			Md => q{d. M.},
+			d => q{d.},
+			h => q{h a},
+			hm => q{hh:mm a},
+			hms => q{hh:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y.},
+			yM => q{M. y.},
+			yMEd => q{E, d. M. y.},
+			yMM => q{MM. y.},
+			yMMM => q{LLL y.},
+			yMMMEd => q{E, d. MMM y.},
+			yMMMM => q{LLLL y.},
+			yMMMd => q{d. MMM y.},
+			yMd => q{d. M. y.},
+			yQQQ => q{QQQ y.},
+			yQQQQ => q{QQQQ y.},
+		},
 		'generic' => {
 			Ed => q{E, d.},
 			Gy => q{y. G},
@@ -5371,45 +6239,6 @@ has 'datetime_formats_available_formats' => (
 			MMMd => q{d. MMM},
 			d => q{d.},
 		},
-		'gregorian' => {
-			EHm => q{E HH:mm},
-			EHms => q{E HH:mm:ss},
-			Ed => q{E, d.},
-			Ehm => q{E h:mm a},
-			Ehms => q{E h:mm:ss a},
-			Gy => q{y. G},
-			GyMMM => q{LLL y. G},
-			GyMMMEd => q{E, d. MMM y. G},
-			GyMMMd => q{d. MMM y. G},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L.},
-			MEd => q{E, d. M.},
-			MMM => q{LLL},
-			MMMEd => q{E, d. MMM},
-			MMMMEd => q{E, d. MMMM},
-			MMMMd => q{d. MMMM},
-			MMMd => q{d. MMM},
-			MMdd => q{dd. MM.},
-			Md => q{d. M.},
-			d => q{d.},
-			h => q{h a},
-			hm => q{hh:mm a},
-			hms => q{hh:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y.},
-			yM => q{M. y.},
-			yMEd => q{E, d. M. y.},
-			yMM => q{MM. y.},
-			yMMM => q{LLL y.},
-			yMMMEd => q{E, d. MMM y.},
-			yMMMM => q{LLLL y.},
-			yMMMd => q{d. MMM y.},
-			yMd => q{d. M. y.},
-			yQQQ => q{QQQ y.},
-			yQQQQ => q{QQQQ y.},
-		},
 		'japanese' => {
 			Ed => q{E, d.},
 			Gy => q{y. GGG},
@@ -5445,101 +6274,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			H => {
-				H => q{HH - HH'h'},
-			},
-			Hm => {
-				H => q{HH:mm-HH:mm},
-				m => q{HH:mm-HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm-HH:mm v},
-				m => q{HH:mm-HH:mm v},
-			},
-			Hv => {
-				H => q{HH - HH 'h' v},
-			},
-			M => {
-				M => q{MM. - MM.},
-			},
-			MEd => {
-				M => q{E, dd.MM. - E, dd.MM.},
-				d => q{E, dd.MM. - E, dd.MM.},
-			},
-			MMM => {
-				M => q{LLL-LLL},
-			},
-			MMMEd => {
-				M => q{E, dd. MMM - E, dd. MMM},
-				d => q{E, dd. - E, dd. MMM},
-			},
-			MMMd => {
-				M => q{dd. MMM - dd. MMM},
-				d => q{dd. - dd. MMM},
-			},
-			Md => {
-				M => q{dd.MM. - dd.MM.},
-				d => q{dd.MM. - dd.MM.},
-			},
-			d => {
-				d => q{dd. - dd.},
-			},
-			fallback => '{0} – {1}',
-			h => {
-				a => q{h a - h a},
-				h => q{h - h'h' a},
-			},
-			hm => {
-				a => q{h:mm a - h:mm a},
-				h => q{h:mm-h:mm a},
-				m => q{h:mm-h:mm a},
-			},
-			hmv => {
-				a => q{h:mm a - h:mm a v},
-				h => q{h:mm-h:mm a v},
-				m => q{h:mm-h:mm a v},
-			},
-			hv => {
-				a => q{h a - h a v},
-				h => q{h - h 'h' a v},
-			},
-			y => {
-				y => q{y. - y. G},
-			},
-			yM => {
-				M => q{MM.y. - MM.y. G},
-				y => q{MM.y. - MM.y. G},
-			},
-			yMEd => {
-				M => q{E, dd.MM.y. - E, dd.MM.y. G},
-				d => q{E, dd.MM.y. - E, dd.MM.y. G},
-				y => q{E, dd.MM.y. - E, dd.MM.y. G},
-			},
-			yMMM => {
-				M => q{LLL-LLL y. G},
-				y => q{LLL y. - LLL y. G},
-			},
-			yMMMEd => {
-				M => q{E, dd. MMM - E, dd. MMM y. G},
-				d => q{E, dd. - E, dd. MMM y. G},
-				y => q{E, dd. MMM y. - E, dd. MMM y. G},
-			},
-			yMMMM => {
-				M => q{LLLL - LLLL y. G},
-				y => q{LLLL y. - LLLL y. G},
-			},
-			yMMMd => {
-				M => q{dd. MMM - dd. MMM y. G},
-				d => q{dd. - dd. MMM y. G},
-				y => q{dd. MMM y. - dd. MMM y. G},
-			},
-			yMd => {
-				M => q{dd.MM.y. - dd.MM.y. G},
-				d => q{dd.MM.y. - dd.MM.y. G},
-				y => q{dd.MM.y. - dd.MM.y. G},
-			},
-		},
 		'gregorian' => {
 			H => {
 				H => q{HH-HH'h'},
@@ -5633,6 +6367,101 @@ has 'datetime_formats_interval' => (
 				M => q{dd.MM.y. - dd.MM.y.},
 				d => q{dd.MM.y. - dd.MM.y.},
 				y => q{dd.MM.y. - dd.MM.y.},
+			},
+		},
+		'generic' => {
+			H => {
+				H => q{HH - HH'h'},
+			},
+			Hm => {
+				H => q{HH:mm-HH:mm},
+				m => q{HH:mm-HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm-HH:mm v},
+				m => q{HH:mm-HH:mm v},
+			},
+			Hv => {
+				H => q{HH - HH 'h' v},
+			},
+			M => {
+				M => q{MM. - MM.},
+			},
+			MEd => {
+				M => q{E, dd.MM. - E, dd.MM.},
+				d => q{E, dd.MM. - E, dd.MM.},
+			},
+			MMM => {
+				M => q{LLL-LLL},
+			},
+			MMMEd => {
+				M => q{E, dd. MMM - E, dd. MMM},
+				d => q{E, dd. - E, dd. MMM},
+			},
+			MMMd => {
+				M => q{dd. MMM - dd. MMM},
+				d => q{dd. - dd. MMM},
+			},
+			Md => {
+				M => q{dd.MM. - dd.MM.},
+				d => q{dd.MM. - dd.MM.},
+			},
+			d => {
+				d => q{dd. - dd.},
+			},
+			fallback => '{0} – {1}',
+			h => {
+				a => q{h a - h a},
+				h => q{h - h'h' a},
+			},
+			hm => {
+				a => q{h:mm a - h:mm a},
+				h => q{h:mm-h:mm a},
+				m => q{h:mm-h:mm a},
+			},
+			hmv => {
+				a => q{h:mm a - h:mm a v},
+				h => q{h:mm-h:mm a v},
+				m => q{h:mm-h:mm a v},
+			},
+			hv => {
+				a => q{h a - h a v},
+				h => q{h - h 'h' a v},
+			},
+			y => {
+				y => q{y. - y. G},
+			},
+			yM => {
+				M => q{MM.y. - MM.y. G},
+				y => q{MM.y. - MM.y. G},
+			},
+			yMEd => {
+				M => q{E, dd.MM.y. - E, dd.MM.y. G},
+				d => q{E, dd.MM.y. - E, dd.MM.y. G},
+				y => q{E, dd.MM.y. - E, dd.MM.y. G},
+			},
+			yMMM => {
+				M => q{LLL-LLL y. G},
+				y => q{LLL y. - LLL y. G},
+			},
+			yMMMEd => {
+				M => q{E, dd. MMM - E, dd. MMM y. G},
+				d => q{E, dd. - E, dd. MMM y. G},
+				y => q{E, dd. MMM y. - E, dd. MMM y. G},
+			},
+			yMMMM => {
+				M => q{LLLL - LLLL y. G},
+				y => q{LLLL y. - LLLL y. G},
+			},
+			yMMMd => {
+				M => q{dd. MMM - dd. MMM y. G},
+				d => q{dd. - dd. MMM y. G},
+				y => q{dd. MMM y. - dd. MMM y. G},
+			},
+			yMd => {
+				M => q{dd.MM.y. - dd.MM.y. G},
+				d => q{dd.MM.y. - dd.MM.y. G},
+				y => q{dd.MM.y. - dd.MM.y. G},
 			},
 		},
 	} },

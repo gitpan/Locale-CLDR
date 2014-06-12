@@ -1,11 +1,11 @@
 package Locale::CLDR::Gsw;
 # This file auto generated from Data\common\main\gsw.xml
-#	on Sun  1 Jun  3:06:53 pm GMT
+#	on Tue 10 Jun  9:07:36 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -3917,13 +3917,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'am' => q{vorm.},
-					'pm' => q{nam.},
-				},
 				'abbreviated' => {
 					'pm' => q{n.m.},
 					'am' => q{v.m.},
+				},
+				'wide' => {
+					'am' => q{vorm.},
+					'pm' => q{nam.},
 				},
 			},
 			'stand-alone' => {

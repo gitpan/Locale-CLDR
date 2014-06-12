@@ -1,11 +1,11 @@
 package Locale::CLDR::Fy::Any::Nl;
 # This file auto generated from Data\common\main\fy_NL.xml
-#	on Sun  1 Jun  3:05:03 pm GMT
+#	on Tue 10 Jun  9:05:32 pm GMT
 # XML file generated 2014-02-20 10:33:36 -0600 (Thu, 20 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';

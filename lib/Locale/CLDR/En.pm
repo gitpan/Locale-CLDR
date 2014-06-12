@@ -1,11 +1,11 @@
 package Locale::CLDR::En;
 # This file auto generated from Data\common\main\en.xml
-#	on Sun  1 Jun  2:47:14 pm GMT
+#	on Tue 10 Jun  8:48:21 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,766 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-numbering-verbose','spellout-cardinal','spellout-cardinal-verbose','spellout-ordinal','spellout-ordinal-verbose','digits-ordinal' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'2d-year' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(hundred),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(oh-=%spellout-numbering=),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(=%spellout-numbering=),
+				},
+				'max' => {
+					base_value => q(10),
+					rule => q(=%spellout-numbering=),
+				},
+			},
+		},
+		'and' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(' and =%spellout-cardinal-verbose=),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(' =%spellout-cardinal-verbose=),
+				},
+				'max' => {
+					base_value => q(100),
+					rule => q(' =%spellout-cardinal-verbose=),
+				},
+			},
+		},
+		'and-o' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(th),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(' and =%spellout-ordinal-verbose=),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(' =%spellout-ordinal-verbose=),
+				},
+				'max' => {
+					base_value => q(100),
+					rule => q(' =%spellout-ordinal-verbose=),
+				},
+			},
+		},
+		'commas' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(' and =%spellout-cardinal-verbose=),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(, =%spellout-cardinal-verbose=),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(, ←%spellout-cardinal-verbose← thousand[→%%commas→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(, =%spellout-cardinal-verbose=),
+				},
+				'max' => {
+					base_value => q(1000000),
+					rule => q(, =%spellout-cardinal-verbose=),
+				},
+			},
+		},
+		'commas-o' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(th),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(' and =%spellout-ordinal-verbose=),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(, =%spellout-ordinal-verbose=),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(, ←%spellout-cardinal-verbose← thousand→%%commas-o→),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(, =%spellout-ordinal-verbose=),
+				},
+				'max' => {
+					base_value => q(1000000),
+					rule => q(, =%spellout-ordinal-verbose=),
+				},
+			},
+		},
+		'digits-ordinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=#,##0==%%digits-ordinal-indicator=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=#,##0==%%digits-ordinal-indicator=),
+				},
+			},
+		},
+		'digits-ordinal-indicator' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(th),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(st),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(nd),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(rd),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(th),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(→→),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(→→),
+				},
+				'max' => {
+					base_value => q(100),
+					rule => q(→→),
+				},
+			},
+		},
+		'spellout-cardinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(zero),
+				},
+				'x.x' => {
+					rule => q(←← point →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(one),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(two),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(three),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(four),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(five),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(six),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(seven),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(eight),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(nine),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(ten),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(eleven),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(twelve),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(thirteen),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(fourteen),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(fifteen),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(sixteen),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(seventeen),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(eighteen),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(nineteen),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(twenty[-→→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(thirty[-→→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(forty[-→→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(fifty[-→→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(sixty[-→→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(seventy[-→→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(eighty[-→→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(ninety[-→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←← hundred[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←← thousand[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←← million[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←← billion[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←← trillion[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←← quadrillion[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-verbose' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(←← point →→),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←← hundred[→%%and→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←← thousand[→%%and→]),
+				},
+				'100000' => {
+					base_value => q(100000),
+					divisor => q(1000),
+					rule => q(←← thousand[→%%commas→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←← million[→%%commas→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←← billion[→%%commas→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←← trillion[→%%commas→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←← quadrillion[→%%commas→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+			},
+		},
+		'spellout-numbering-verbose' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-verbose=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-verbose=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'1010' => {
+					base_value => q(1010),
+					divisor => q(100),
+					rule => q(←← →%%2d-year→),
+				},
+				'1100' => {
+					base_value => q(1100),
+					divisor => q(100),
+					rule => q(←← →%%2d-year→),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(=%spellout-numbering=),
+				},
+				'2010' => {
+					base_value => q(2010),
+					divisor => q(100),
+					rule => q(←← →%%2d-year→),
+				},
+				'2100' => {
+					base_value => q(2100),
+					divisor => q(100),
+					rule => q(←← →%%2d-year→),
+				},
+				'3000' => {
+					base_value => q(3000),
+					rule => q(=%spellout-numbering=),
+				},
+				'3010' => {
+					base_value => q(3010),
+					divisor => q(100),
+					rule => q(←← →%%2d-year→),
+				},
+				'3100' => {
+					base_value => q(3100),
+					divisor => q(100),
+					rule => q(←← →%%2d-year→),
+				},
+				'4000' => {
+					base_value => q(4000),
+					rule => q(=%spellout-numbering=),
+				},
+				'4010' => {
+					base_value => q(4010),
+					divisor => q(100),
+					rule => q(←← →%%2d-year→),
+				},
+				'4100' => {
+					base_value => q(4100),
+					divisor => q(100),
+					rule => q(←← →%%2d-year→),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(=%spellout-numbering=),
+				},
+				'5010' => {
+					base_value => q(5010),
+					divisor => q(100),
+					rule => q(←← →%%2d-year→),
+				},
+				'5100' => {
+					base_value => q(5100),
+					divisor => q(100),
+					rule => q(←← →%%2d-year→),
+				},
+				'6000' => {
+					base_value => q(6000),
+					rule => q(=%spellout-numbering=),
+				},
+				'6010' => {
+					base_value => q(6010),
+					divisor => q(100),
+					rule => q(←← →%%2d-year→),
+				},
+				'6100' => {
+					base_value => q(6100),
+					divisor => q(100),
+					rule => q(←← →%%2d-year→),
+				},
+				'7000' => {
+					base_value => q(7000),
+					rule => q(=%spellout-numbering=),
+				},
+				'7010' => {
+					base_value => q(7010),
+					divisor => q(100),
+					rule => q(←← →%%2d-year→),
+				},
+				'7100' => {
+					base_value => q(7100),
+					divisor => q(100),
+					rule => q(←← →%%2d-year→),
+				},
+				'8000' => {
+					base_value => q(8000),
+					rule => q(=%spellout-numbering=),
+				},
+				'8010' => {
+					base_value => q(8010),
+					divisor => q(100),
+					rule => q(←← →%%2d-year→),
+				},
+				'8100' => {
+					base_value => q(8100),
+					divisor => q(100),
+					rule => q(←← →%%2d-year→),
+				},
+				'9000' => {
+					base_value => q(9000),
+					rule => q(=%spellout-numbering=),
+				},
+				'9010' => {
+					base_value => q(9010),
+					divisor => q(100),
+					rule => q(←← →%%2d-year→),
+				},
+				'9100' => {
+					base_value => q(9100),
+					divisor => q(100),
+					rule => q(←← →%%2d-year→),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(=%spellout-numbering=),
+				},
+				'max' => {
+					base_value => q(10000),
+					rule => q(=%spellout-numbering=),
+				},
+			},
+		},
+		'spellout-ordinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(zeroth),
+				},
+				'x.x' => {
+					rule => q(=#,##0.#=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(first),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(second),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(third),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(fourth),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(fifth),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(sixth),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(seventh),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(eighth),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(ninth),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(tenth),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(eleventh),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(twelfth),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(=%spellout-numbering=th),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(twen→%%tieth→),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(thir→%%tieth→),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(for→%%tieth→),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(fif→%%tieth→),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(six→%%tieth→),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(seven→%%tieth→),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(eigh→%%tieth→),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(nine→%%tieth→),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←%spellout-numbering← hundred→%%th→),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-numbering← thousand→%%th→),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-numbering← million→%%th→),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-numbering← billion→%%th→),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-numbering← trillion→%%th→),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-numbering← quadrillion→%%th→),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=.),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=.),
+				},
+			},
+		},
+		'spellout-ordinal-verbose' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-ordinal=),
+				},
+				'x.x' => {
+					rule => q(=#,##0.#=),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←%spellout-numbering-verbose← hundred→%%and-o→),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-numbering-verbose← thousand→%%and-o→),
+				},
+				'100000' => {
+					base_value => q(100000),
+					divisor => q(1000),
+					rule => q(←%spellout-numbering-verbose← thousand→%%commas-o→),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-numbering-verbose← million→%%commas-o→),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-numbering-verbose← billion→%%commas-o→),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-numbering-verbose← trillion→%%commas-o→),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-numbering-verbose← quadrillion→%%commas-o→),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=.),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=.),
+				},
+			},
+		},
+		'th' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(th),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(' =%spellout-ordinal=),
+				},
+				'max' => {
+					base_value => q(1),
+					rule => q(' =%spellout-ordinal=),
+				},
+			},
+		},
+		'tieth' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(tieth),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(ty-=%spellout-ordinal=),
+				},
+				'max' => {
+					base_value => q(1),
+					rule => q(ty-=%spellout-ordinal=),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -4502,68 +5262,68 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'buddhist') {
-				return 'pm' if $time > 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'japanese') {
-				return 'pm' if $time > 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
 			if ($_ eq 'islamic') {
+				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'am' if $time >= 000
 					&& $time < 1200;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'gregorian') {
-				return 'pm' if $time > 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'roc') {
-				return 'pm' if $time > 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'generic') {
+				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'am' if $time >= 000
 					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'gregorian') {
 				return 'noon' if $time == 1200;
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+				return 'am' if $time >= 000
+					&& $time < 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'hebrew') {
+				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'am' if $time >= 000
 					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'roc') {
 				return 'noon' if $time == 1200;
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+				return 'am' if $time >= 000
+					&& $time < 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'chinese') {
+				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'am' if $time >= 000
 					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'buddhist') {
 				return 'noon' if $time == 1200;
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'japanese') {
+				return 'noon' if $time == 1200;
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+				return 'am' if $time >= 000
+					&& $time < 1200;
 			last SWITCH;
 			}
 		}
@@ -4578,14 +5338,14 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{pm},
 					'am' => q{am},
+					'pm' => q{pm},
 					'noon' => q{noon},
 				},
 				'narrow' => {
-					'noon' => q{n},
 					'am' => q{a},
 					'pm' => q{p},
+					'noon' => q{n},
 				},
 			},
 		},
@@ -4750,16 +5510,16 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'chinese' => {
+		'gregorian' => {
 			EHm => q{E HH:mm},
 			EHms => q{E HH:mm:ss},
 			Ed => q{d E},
 			Ehm => q{E h:mm a},
 			Ehms => q{E h:mm:ss a},
-			Gy => q{U},
-			GyMMM => q{MMM U},
-			GyMMMEd => q{E, MMM d, U},
-			GyMMMd => q{MMM d, U},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E, MMM d, y G},
+			GyMMMd => q{MMM d, y G},
 			H => q{HH},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -4774,17 +5534,15 @@ has 'datetime_formats_available_formats' => (
 			hm => q{h:mm a},
 			hms => q{h:mm:ss a},
 			ms => q{mm:ss},
-			y => q{U},
+			y => q{y},
+			yM => q{M/y},
+			yMEd => q{E, M/d/y},
+			yMMM => q{MMM y},
+			yMMMEd => q{E, MMM d, y},
+			yMMMd => q{MMM d, y},
 			yMd => q{M/d/y},
-			yyyy => q{U},
-			yyyyM => q{M/y},
-			yyyyMEd => q{E, M/d/y},
-			yyyyMMM => q{MMM U},
-			yyyyMMMEd => q{E, MMM d, U},
-			yyyyMMMd => q{MMM d, U},
-			yyyyMd => q{M/d/y},
-			yyyyQQQ => q{QQQ U},
-			yyyyQQQQ => q{QQQQ U},
+			yQQQ => q{QQQ y},
+			yQQQQ => q{QQQQ y},
 		},
 		'generic' => {
 			EHm => q{E HH:mm},
@@ -4821,16 +5579,16 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
 		},
-		'gregorian' => {
+		'chinese' => {
 			EHm => q{E HH:mm},
 			EHms => q{E HH:mm:ss},
 			Ed => q{d E},
 			Ehm => q{E h:mm a},
 			Ehms => q{E h:mm:ss a},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E, MMM d, y G},
-			GyMMMd => q{MMM d, y G},
+			Gy => q{U},
+			GyMMM => q{MMM U},
+			GyMMMEd => q{E, MMM d, U},
+			GyMMMd => q{MMM d, U},
 			H => q{HH},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -4845,15 +5603,17 @@ has 'datetime_formats_available_formats' => (
 			hm => q{h:mm a},
 			hms => q{h:mm:ss a},
 			ms => q{mm:ss},
-			y => q{y},
-			yM => q{M/y},
-			yMEd => q{E, M/d/y},
-			yMMM => q{MMM y},
-			yMMMEd => q{E, MMM d, y},
-			yMMMd => q{MMM d, y},
+			y => q{U},
 			yMd => q{M/d/y},
-			yQQQ => q{QQQ y},
-			yQQQQ => q{QQQQ y},
+			yyyy => q{U},
+			yyyyM => q{M/y},
+			yyyyMEd => q{E, M/d/y},
+			yyyyMMM => q{MMM U},
+			yyyyMMMEd => q{E, MMM d, U},
+			yyyyMMMd => q{MMM d, U},
+			yyyyMd => q{M/d/y},
+			yyyyQQQ => q{QQQ U},
+			yyyyQQQQ => q{QQQQ U},
 		},
 	} },
 );
@@ -4863,7 +5623,7 @@ has 'datetime_formats_append_item' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			'Day' => '{0} ({2}: {1})',
 			'Day-Of-Week' => '{0} {1}',
 			'Era' => '{0} {1}',
@@ -4876,7 +5636,7 @@ has 'datetime_formats_append_item' => (
 			'Week' => '{0} ({2}: {1})',
 			'Year' => '{0} {1}',
 		},
-		'gregorian' => {
+		'generic' => {
 			'Day' => '{0} ({2}: {1})',
 			'Day-Of-Week' => '{0} {1}',
 			'Era' => '{0} {1}',
@@ -4897,7 +5657,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'chinese' => {
+		'gregorian' => {
 			H => {
 				H => q{HH – HH},
 			},
@@ -4957,7 +5717,7 @@ has 'datetime_formats_interval' => (
 				h => q{h – h a v},
 			},
 			y => {
-				y => q{U – U},
+				y => q{y – y},
 			},
 			yM => {
 				M => q{M/y – M/y},
@@ -4969,22 +5729,22 @@ has 'datetime_formats_interval' => (
 				y => q{E, M/d/y – E, M/d/y},
 			},
 			yMMM => {
-				M => q{MMM – MMM U},
-				y => q{MMM U – MMM U},
+				M => q{MMM – MMM y},
+				y => q{MMM y – MMM y},
 			},
 			yMMMEd => {
-				M => q{E, MMM d – E, MMM d, U},
-				d => q{E, MMM d – E, MMM d, U},
-				y => q{E, MMM d, U – E, MMM d, U},
+				M => q{E, MMM d – E, MMM d, y},
+				d => q{E, MMM d – E, MMM d, y},
+				y => q{E, MMM d, y – E, MMM d, y},
 			},
 			yMMMM => {
-				M => q{MMMM – MMMM U},
-				y => q{MMMM U – MMMM U},
+				M => q{MMMM – MMMM y},
+				y => q{MMMM y – MMMM y},
 			},
 			yMMMd => {
-				M => q{MMM d – MMM d, U},
-				d => q{MMM d – d, U},
-				y => q{MMM d, U – MMM d, U},
+				M => q{MMM d – MMM d, y},
+				d => q{MMM d – d, y},
+				y => q{MMM d, y – MMM d, y},
 			},
 			yMd => {
 				M => q{M/d/y – M/d/y},
@@ -5087,7 +5847,7 @@ has 'datetime_formats_interval' => (
 				y => q{M/d/y – M/d/y GGGGG},
 			},
 		},
-		'gregorian' => {
+		'chinese' => {
 			H => {
 				H => q{HH – HH},
 			},
@@ -5147,7 +5907,7 @@ has 'datetime_formats_interval' => (
 				h => q{h – h a v},
 			},
 			y => {
-				y => q{y – y},
+				y => q{U – U},
 			},
 			yM => {
 				M => q{M/y – M/y},
@@ -5159,22 +5919,22 @@ has 'datetime_formats_interval' => (
 				y => q{E, M/d/y – E, M/d/y},
 			},
 			yMMM => {
-				M => q{MMM – MMM y},
-				y => q{MMM y – MMM y},
+				M => q{MMM – MMM U},
+				y => q{MMM U – MMM U},
 			},
 			yMMMEd => {
-				M => q{E, MMM d – E, MMM d, y},
-				d => q{E, MMM d – E, MMM d, y},
-				y => q{E, MMM d, y – E, MMM d, y},
+				M => q{E, MMM d – E, MMM d, U},
+				d => q{E, MMM d – E, MMM d, U},
+				y => q{E, MMM d, U – E, MMM d, U},
 			},
 			yMMMM => {
-				M => q{MMMM – MMMM y},
-				y => q{MMMM y – MMMM y},
+				M => q{MMMM – MMMM U},
+				y => q{MMMM U – MMMM U},
 			},
 			yMMMd => {
-				M => q{MMM d – MMM d, y},
-				d => q{MMM d – d, y},
-				y => q{MMM d, y – MMM d, y},
+				M => q{MMM d – MMM d, U},
+				d => q{MMM d – d, U},
+				y => q{MMM d, U – MMM d, U},
 			},
 			yMd => {
 				M => q{M/d/y – M/d/y},

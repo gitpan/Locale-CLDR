@@ -1,11 +1,11 @@
 package Locale::CLDR::Zh::Hant::Mo;
 # This file auto generated from Data\common\main\zh_Hant_MO.xml
-#	on Sun  1 Jun  4:55:15 pm GMT
+#	on Tue 10 Jun 11:08:21 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -39,33 +39,33 @@ has 'day_period_data' => (
 		SWITCH:
 		for ($type) {
 			if ($_ eq 'gregorian') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
 				return 'midDay' if $time >= 1200
 					&& $time < 1300;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'generic') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
 				return 'midDay' if $time >= 1200
 					&& $time < 1300;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
 			last SWITCH;
 			}
 		}
@@ -133,13 +133,13 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			MEd => q{M-d (E)},
-			Md => q{M-d},
-		},
 		'gregorian' => {
 			MEd => q{E, M-d},
 			MMdd => q{dd-MM},
+			Md => q{M-d},
+		},
+		'generic' => {
+			MEd => q{M-d (E)},
 			Md => q{M-d},
 		},
 	} },
@@ -158,55 +158,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			MEd => {
-				M => q{M月d日E至M月d日E},
-				d => q{M月d日E至d日E},
-			},
-			MMMEd => {
-				M => q{MM月d日E至MM月d日E},
-				d => q{MM月d日E至d日E},
-			},
-			MMMd => {
-				M => q{MM月d日至MM月d日},
-				d => q{MM月d日至d日},
-			},
-			Md => {
-				M => q{M月d日至M月d日},
-				d => q{M月d日至d日},
-			},
-			h => {
-				h => q{ah至h時},
-			},
-			yM => {
-				M => q{Gy年M月至M月},
-				y => q{Gy年M月至y年M月},
-			},
-			yMEd => {
-				M => q{Gy年M月d日E至M月d日E},
-				d => q{Gy年M月d日E至d日E},
-				y => q{Gy年M月d日E至y年M月d日E},
-			},
-			yMMM => {
-				M => q{Gy年MM月至MM月},
-				y => q{Gy年MM月至y年MM月},
-			},
-			yMMMEd => {
-				M => q{Gy年MM月d日E至MM月d日E},
-				d => q{Gy年MM月d日E至d日E},
-				y => q{Gy年MM月d日E至y年MM月d日E},
-			},
-			yMMMd => {
-				M => q{Gy年MM月d日至MM月d日},
-				d => q{Gy年MM月d日至d日},
-				y => q{Gy年MM月d日至y年MM月d日},
-			},
-			yMd => {
-				M => q{Gy年M月d日至M月d日},
-				d => q{Gy年M月d日至d日},
-				y => q{Gy年M月d日至y年M月d日},
-			},
-		},
 		'gregorian' => {
 			MEd => {
 				M => q{M月d日E至M月d日E},
@@ -254,6 +205,55 @@ has 'datetime_formats_interval' => (
 				M => q{y年M月d日至M月d日},
 				d => q{y年M月d日至d日},
 				y => q{y年M月d日至y年M月d日},
+			},
+		},
+		'generic' => {
+			MEd => {
+				M => q{M月d日E至M月d日E},
+				d => q{M月d日E至d日E},
+			},
+			MMMEd => {
+				M => q{MM月d日E至MM月d日E},
+				d => q{MM月d日E至d日E},
+			},
+			MMMd => {
+				M => q{MM月d日至MM月d日},
+				d => q{MM月d日至d日},
+			},
+			Md => {
+				M => q{M月d日至M月d日},
+				d => q{M月d日至d日},
+			},
+			h => {
+				h => q{ah至h時},
+			},
+			yM => {
+				M => q{Gy年M月至M月},
+				y => q{Gy年M月至y年M月},
+			},
+			yMEd => {
+				M => q{Gy年M月d日E至M月d日E},
+				d => q{Gy年M月d日E至d日E},
+				y => q{Gy年M月d日E至y年M月d日E},
+			},
+			yMMM => {
+				M => q{Gy年MM月至MM月},
+				y => q{Gy年MM月至y年MM月},
+			},
+			yMMMEd => {
+				M => q{Gy年MM月d日E至MM月d日E},
+				d => q{Gy年MM月d日E至d日E},
+				y => q{Gy年MM月d日E至y年MM月d日E},
+			},
+			yMMMd => {
+				M => q{Gy年MM月d日至MM月d日},
+				d => q{Gy年MM月d日至d日},
+				y => q{Gy年MM月d日至y年MM月d日},
+			},
+			yMd => {
+				M => q{Gy年M月d日至M月d日},
+				d => q{Gy年M月d日至d日},
+				y => q{Gy年M月d日至y年M月d日},
 			},
 		},
 	} },

@@ -1,11 +1,11 @@
 package Locale::CLDR::Tn;
 # This file auto generated from Data\common\main\tn.xml
-#	on Sun  1 Jun  4:38:20 pm GMT
+#	on Tue 10 Jun 10:50:43 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';

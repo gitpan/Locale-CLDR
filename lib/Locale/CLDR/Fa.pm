@@ -1,11 +1,11 @@
 package Locale::CLDR::Fa;
 # This file auto generated from Data\common\main\fa.xml
-#	on Sun  1 Jun  2:55:24 pm GMT
+#	on Tue 10 Jun  8:56:37 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,229 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'spellout-cardinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(منفی →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(صفر),
+				},
+				'x.x' => {
+					rule => q(←← ممیز →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(یک),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(دو),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(سه),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(چهار),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(پنج),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(شش),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(هفت),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(هشت),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(نه),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(ده),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(یازده),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(دوازده),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(سیزده),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(چهارده),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(پانزده),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(شانزده),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(هفده),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(هجده),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(نوزده),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(بیست[ و →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(سی[ و →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(چهل[ و →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(پنجاه[ و →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(شصت[ و →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(هفتاد[ و →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(هشتاد[ و →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(نود[ و →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(صد[ و →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(دویست[ و →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(سیصد[ و →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(چهارصد[ و →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(پانصد[ و →→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(ششصد[ و →→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(هفتصد[ و →→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(هشتصد[ و →→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(نهصد[ و →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←← هزار[ و →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←← میلیون[ و →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←← میلیارد[ و →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←← هزار میلیارد[ و →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -3879,100 +4102,100 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'persian') {
+			if ($_ eq 'islamic') {
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
 				return 'noon' if $time == 1200;
 				return 'night' if $time >= 1900
 					&& $time < 2400;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
-				return 'afternoon' if $time >= 1600
-					&& $time < 1900;
-				return 'earlyMorning' if $time >= 0100
-					&& $time < 0600;
 				return 'midDay' if $time > 1200
 					&& $time < 1600;
+				return 'afternoon' if $time >= 1600
+					&& $time < 1900;
 				return 'weeHours' if $time >= 0000
 					&& $time < 0100;
+				return 'earlyMorning' if $time >= 0100
+					&& $time < 0600;
 			last SWITCH;
 			}
 			if ($_ eq 'gregorian') {
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
 				return 'noon' if $time == 1200;
 				return 'night' if $time >= 1900
 					&& $time < 2400;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
-				return 'afternoon' if $time >= 1600
-					&& $time < 1900;
-				return 'earlyMorning' if $time >= 0100
-					&& $time < 0600;
 				return 'midDay' if $time > 1200
 					&& $time < 1600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 0100;
-			last SWITCH;
-			}
-			if ($_ eq 'chinese') {
-				return 'noon' if $time == 1200;
-				return 'night' if $time >= 1900
-					&& $time < 2400;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
 				return 'afternoon' if $time >= 1600
 					&& $time < 1900;
-				return 'earlyMorning' if $time >= 0100
-					&& $time < 0600;
-				return 'midDay' if $time > 1200
-					&& $time < 1600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 0100;
-			last SWITCH;
-			}
-			if ($_ eq 'hebrew') {
-				return 'noon' if $time == 1200;
-				return 'night' if $time >= 1900
-					&& $time < 2400;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
-				return 'afternoon' if $time >= 1600
-					&& $time < 1900;
 				return 'earlyMorning' if $time >= 0100
 					&& $time < 0600;
-				return 'midDay' if $time > 1200
-					&& $time < 1600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 0100;
-			last SWITCH;
-			}
-			if ($_ eq 'islamic') {
-				return 'noon' if $time == 1200;
-				return 'night' if $time >= 1900
-					&& $time < 2400;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
-				return 'afternoon' if $time >= 1600
-					&& $time < 1900;
-				return 'earlyMorning' if $time >= 0100
-					&& $time < 0600;
-				return 'midDay' if $time > 1200
-					&& $time < 1600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 0100;
 			last SWITCH;
 			}
 			if ($_ eq 'generic') {
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
 				return 'noon' if $time == 1200;
 				return 'night' if $time >= 1900
 					&& $time < 2400;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
-				return 'afternoon' if $time >= 1600
-					&& $time < 1900;
-				return 'earlyMorning' if $time >= 0100
-					&& $time < 0600;
 				return 'midDay' if $time > 1200
 					&& $time < 1600;
+				return 'afternoon' if $time >= 1600
+					&& $time < 1900;
 				return 'weeHours' if $time >= 0000
 					&& $time < 0100;
+				return 'earlyMorning' if $time >= 0100
+					&& $time < 0600;
+			last SWITCH;
+			}
+			if ($_ eq 'chinese') {
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 1900
+					&& $time < 2400;
+				return 'midDay' if $time > 1200
+					&& $time < 1600;
+				return 'afternoon' if $time >= 1600
+					&& $time < 1900;
+				return 'weeHours' if $time >= 0000
+					&& $time < 0100;
+				return 'earlyMorning' if $time >= 0100
+					&& $time < 0600;
+			last SWITCH;
+			}
+			if ($_ eq 'persian') {
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 1900
+					&& $time < 2400;
+				return 'midDay' if $time > 1200
+					&& $time < 1600;
+				return 'afternoon' if $time >= 1600
+					&& $time < 1900;
+				return 'weeHours' if $time >= 0000
+					&& $time < 0100;
+				return 'earlyMorning' if $time >= 0100
+					&& $time < 0600;
+			last SWITCH;
+			}
+			if ($_ eq 'hebrew') {
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
+				return 'noon' if $time == 1200;
+				return 'night' if $time >= 1900
+					&& $time < 2400;
+				return 'midDay' if $time > 1200
+					&& $time < 1600;
+				return 'afternoon' if $time >= 1600
+					&& $time < 1900;
+				return 'weeHours' if $time >= 0000
+					&& $time < 0100;
+				return 'earlyMorning' if $time >= 0100
+					&& $time < 0600;
 			last SWITCH;
 			}
 		}
@@ -3987,15 +4210,15 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'night' => q{شب},
-					'earlyMorning' => q{بامداد},
-					'pm' => q{بعدازظهر},
+					'afternoon' => q{عصر},
+					'noon' => q{ظهر},
+					'morning' => q{صبح},
 					'weeHours' => q{نیمه‌شب},
 					'am' => q{قبل‌ازظهر},
-					'noon' => q{ظهر},
-					'afternoon' => q{عصر},
-					'morning' => q{صبح},
 					'midDay' => q{بعدازظهر},
+					'earlyMorning' => q{بامداد},
+					'night' => q{شب},
+					'pm' => q{بعدازظهر},
 				},
 			},
 		},
@@ -4135,44 +4358,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'islamic' => {
-			Ed => q{E d},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E d MMM y G},
-			GyMMMd => q{d MMM y G},
-			H => q{H},
-			Hm => q{H:mm},
-			HmZ => q{HH:mm (Z)},
-			Hms => q{H:mm:ss},
-			M => q{L},
-			MEd => q{E M/d},
-			MMM => q{LLL},
-			MMMEd => q{E d LLL},
-			MMMMEd => q{E d LLLL},
-			MMMMd => q{d LLLL},
-			MMMd => q{d LLL},
-			Md => q{M/d},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y},
-			yM => q{y/M},
-			yMEd => q{E y/M/d},
-			yMMM => q{MMM y},
-			yMMMEd => q{E d MMM y},
-			yMMMM => q{MMMM y},
-			yQQQ => q{QQQ y},
-			yQQQQ => q{QQQQ y},
-			yyyy => q{y G},
-			yyyyMMM => q{MMM y G},
-			yyyyMMMEd => q{E d MMM y G},
-			yyyyMMMd => q{d MMM y G},
-			yyyyQQQ => q{QQQQ y G},
-			yyyyQQQQ => q{QQQQ y G},
-		},
 		'generic' => {
 			Ed => q{E d},
 			Gy => q{y G},
@@ -4246,6 +4431,44 @@ has 'datetime_formats_available_formats' => (
 			yMd => q{y/M/d},
 			yQQQ => q{QQQQ y},
 			yQQQQ => q{QQQQ y},
+		},
+		'islamic' => {
+			Ed => q{E d},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E d MMM y G},
+			GyMMMd => q{d MMM y G},
+			H => q{H},
+			Hm => q{H:mm},
+			HmZ => q{HH:mm (Z)},
+			Hms => q{H:mm:ss},
+			M => q{L},
+			MEd => q{E M/d},
+			MMM => q{LLL},
+			MMMEd => q{E d LLL},
+			MMMMEd => q{E d LLLL},
+			MMMMd => q{d LLLL},
+			MMMd => q{d LLL},
+			Md => q{M/d},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y},
+			yM => q{y/M},
+			yMEd => q{E y/M/d},
+			yMMM => q{MMM y},
+			yMMMEd => q{E d MMM y},
+			yMMMM => q{MMMM y},
+			yQQQ => q{QQQ y},
+			yQQQQ => q{QQQQ y},
+			yyyy => q{y G},
+			yyyyMMM => q{MMM y G},
+			yyyyMMMEd => q{E d MMM y G},
+			yyyyMMMd => q{d MMM y G},
+			yyyyQQQ => q{QQQQ y G},
+			yyyyQQQQ => q{QQQQ y G},
 		},
 	} },
 );

@@ -1,11 +1,11 @@
 package Locale::CLDR::Km;
 # This file auto generated from Data\common\main\km.xml
-#	on Sun  1 Jun  3:29:44 pm GMT
+#	on Tue 10 Jun  9:33:48 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,202 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal','spellout-ordinal','digits-ordinal' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'digits-ordinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(ទី=#,##0=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(ទី=#,##0=),
+				},
+			},
+		},
+		'lenient-parse' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(&[last primary ignorable ] ←← ' ' ←← '​' ←← '­'),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(&[last primary ignorable ] ←← ' ' ←← '​' ←← '­'),
+				},
+			},
+		},
+		'spellout-cardinal' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'-x' => {
+					rule => q(ដក​→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(សូន្យ),
+				},
+				'x.x' => {
+					rule => q(←←​ចុច​→→→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(មួយ),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(ពីរ),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(បី),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(បួន),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(ប្រាំ),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(ប្រាំមួយ),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(ប្រាំពីរ),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(ប្រាំបី),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(ប្រាំបួន),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(ដប់[​→→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(ម្ភៃ[​→→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(សាមសិប[​→→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(សែសិប[​→→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(ហាសិប[​→→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(ហុកសិប[​→→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(ចិតសិប[​→→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(ប៉ែតសិប[​→→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(កៅសិប[​→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←←​រយ[​→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←←​ពាន់[​→→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(←←​ម៉ឺន[​→→]),
+				},
+				'100000' => {
+					base_value => q(100000),
+					rule => q(←←​សែន[​→→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←←​លាន[​→→]),
+				},
+				'10000000000' => {
+					base_value => q(10000000000),
+					rule => q(←←​ពាន់​កោដិ[​→→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+			},
+		},
+		'spellout-ordinal' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(ទី=%spellout-cardinal=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(ទី=%spellout-cardinal=),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -2501,8 +2697,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{ព្រឹក},
 					'pm' => q{ល្ងាច},
+					'am' => q{ព្រឹក},
 				},
 			},
 		},

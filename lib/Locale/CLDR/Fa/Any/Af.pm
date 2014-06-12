@@ -1,11 +1,11 @@
 package Locale::CLDR::Fa::Any::Af;
 # This file auto generated from Data\common\main\fa_AF.xml
-#	on Sun  1 Jun  2:57:55 pm GMT
+#	on Tue 10 Jun  8:59:04 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,213 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Fa::Any');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'spellout-cardinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(منفی →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(صفر),
+				},
+				'x.x' => {
+					rule => q(←← عشاریه →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(یک),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(دو),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(سه),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(چهار),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(پنج),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(شش),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(هفت),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(هشت),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(نه),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(ده),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(یازده),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(دوازده),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(سیزده),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(چهارده),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(پانزده),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(شانزده),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(هفده),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(هجده),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(نزده),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(بیست[ و →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(سی[ و →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(چهل[ و →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(پنجاه[ و →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(شصت[ و →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(هفتاد[ و →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(هشتاد[ و →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(نود[ و →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(صد[ و →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←←صد[ و →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(←←‌صد[ و →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(←←صد[ و →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←← هزار[ و →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←← میلیون[ و →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←← میلیارد[ و →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←← بیلیون[ و →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←← بیلیارد[ و →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+	} },
+);
+
 has 'display_name_language' => (
 	is			=> 'ro',
 	isa			=> 'CodeRef',
@@ -411,35 +618,35 @@ has 'day_period_data' => (
 		SWITCH:
 		for ($type) {
 			if ($_ eq 'persian') {
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
 				return 'noon' if $time == 1200;
 				return 'night' if $time >= 1900
 					&& $time < 2400;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
-				return 'afternoon' if $time >= 1600
-					&& $time < 1900;
-				return 'earlyMorning' if $time >= 0100
-					&& $time < 0600;
 				return 'midDay' if $time > 1200
 					&& $time < 1600;
+				return 'afternoon' if $time >= 1600
+					&& $time < 1900;
 				return 'weeHours' if $time >= 0000
 					&& $time < 0100;
+				return 'earlyMorning' if $time >= 0100
+					&& $time < 0600;
 			last SWITCH;
 			}
 			if ($_ eq 'gregorian') {
+				return 'morning' if $time >= 0600
+					&& $time < 1200;
 				return 'noon' if $time == 1200;
 				return 'night' if $time >= 1900
 					&& $time < 2400;
-				return 'morning' if $time >= 0600
-					&& $time < 1200;
-				return 'afternoon' if $time >= 1600
-					&& $time < 1900;
-				return 'earlyMorning' if $time >= 0100
-					&& $time < 0600;
 				return 'midDay' if $time > 1200
 					&& $time < 1600;
+				return 'afternoon' if $time >= 1600
+					&& $time < 1900;
 				return 'weeHours' if $time >= 0000
 					&& $time < 0100;
+				return 'earlyMorning' if $time >= 0100
+					&& $time < 0600;
 			last SWITCH;
 			}
 		}

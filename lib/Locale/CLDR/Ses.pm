@@ -1,11 +1,11 @@
 package Locale::CLDR::Ses;
 # This file auto generated from Data\common\main\ses.xml
-#	on Sun  1 Jun  4:17:07 pm GMT
+#	on Tue 10 Jun 10:28:01 pm GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -927,7 +927,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			M => q{M},
 			MMM => q{MMM},
 			MMMEd => q{E d MMM},
@@ -949,7 +949,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			M => q{M},
 			MMM => q{MMM},
 			MMMEd => q{E d MMM},

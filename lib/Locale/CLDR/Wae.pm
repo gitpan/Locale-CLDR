@@ -1,11 +1,11 @@
 package Locale::CLDR::Wae;
 # This file auto generated from Data\common\main\wae.xml
-#	on Sun  1 Jun  4:49:25 pm GMT
+#	on Tue 10 Jun 11:01:51 pm GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';

@@ -1,11 +1,11 @@
 package Locale::CLDR::Lv;
 # This file auto generated from Data\common\main\lv.xml
-#	on Sun  1 Jun  3:45:37 pm GMT
+#	on Tue 10 Jun  9:52:01 pm GMT
 # XML file generated 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,341 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal-masculine','spellout-cardinal-feminine' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'spellout-cardinal-feminine' => {
+			'public' => {
+				'-x' => {
+					rule => q(mīnus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(nulle),
+				},
+				'x.x' => {
+					rule => q(←← komats →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(viena),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(divas),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(trīs),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(četras),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(piecas),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(sešas),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(septiņas),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(astoņas),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(deviņas),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(←%%spellout-prefixed←desmit[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(simt[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←%%spellout-prefixed←simt[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(tūkstoš[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%%spellout-prefixed←tūkstoš[ →→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← tūkstoši[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(viens miljons[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← miljoni[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(viens miljards[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-masculine← miljardi[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(viens biljons[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← biljoni[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(viens biljards[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-masculine← biljardi[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-masculine' => {
+			'public' => {
+				'-x' => {
+					rule => q(mīnus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(nulle),
+				},
+				'x.x' => {
+					rule => q(←← komats →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(viens),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(divi),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(trīs),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(četri),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(pieci),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(seši),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(septiņi),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(astoņi),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(deviņi),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(desmit),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(→%%spellout-prefixed→padsmit),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(←%%spellout-prefixed←desmit[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(simt[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←%%spellout-prefixed←simt[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(tūkstoš[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%%spellout-prefixed←tūkstoš[ →→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					divisor => q(1000),
+					rule => q(←%spellout-cardinal-masculine← tūkstoši[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(viens miljons[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← miljoni[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(viens miljards[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-masculine← miljardi[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(viens biljons[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← biljoni[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(viens biljards[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-masculine← biljardi[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+		'spellout-prefixed' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(ERROR),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(vien),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(div),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(trīs),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(četr),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(piec),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(seš),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(septiņ),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(astoņ),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(deviņ),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(ERROR),
+				},
+				'max' => {
+					base_value => q(10),
+					rule => q(ERROR),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -4160,8 +4495,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{pēcpusdienā},
 					'am' => q{priekšpusdienā},
+					'pm' => q{pēcpusdienā},
 				},
 			},
 		},

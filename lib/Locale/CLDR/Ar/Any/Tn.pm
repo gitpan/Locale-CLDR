@@ -1,11 +1,11 @@
 package Locale::CLDR::Ar::Any::Tn;
 # This file auto generated from Data\common\main\ar_TN.xml
-#	on Sun  1 Jun  2:17:01 pm GMT
+#	on Tue 10 Jun  8:18:30 pm GMT
 # XML file generated 2014-01-08 23:53:23 -0600 (Wed, 08 Jan 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';

@@ -1,11 +1,11 @@
 package Locale::CLDR::Ro;
 # This file auto generated from Data\common\main\ro.xml
-#	on Sun  1 Jun  4:12:36 pm GMT
+#	on Tue 10 Jun 10:22:51 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,356 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal-masculine','spellout-cardinal-feminine','spellout-cardinal-neuter','digits-ordinal' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'digits-ordinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=#,##0=a),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=#,##0=a),
+				},
+			},
+		},
+		'spellout-cardinal-feminine' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(zero),
+				},
+				'x.x' => {
+					rule => q(←← virgulă →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(una),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(două),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(→→sprezece),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(←%spellout-cardinal-feminine←zeci[ şi →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(una sută[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←%spellout-cardinal-feminine← sute[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(una mie[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-feminine← mii[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-neuter← milion[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-neuter← milioane[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-neuter← miliard[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-neuter← miliarde[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-neuter← bilion[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-neuter← bilioane[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-neuter← biliard[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-neuter← biliarde[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-masculine' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(zero),
+				},
+				'x.x' => {
+					rule => q(←← virgulă →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(unu),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(doi),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(trei),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(patru),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(cinci),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(şase),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(şapte),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(opt),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(nouă),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(zece),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(unsprezece),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(→→sprezece),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(←%spellout-cardinal-feminine←zeci[ şi →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(una sută[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←%spellout-cardinal-feminine← sute[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(una mie[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-feminine← mii[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-neuter← milion[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-neuter← milioane[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-neuter← miliard[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-neuter← miliarde[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-neuter← bilion[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-neuter← bilioane[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-neuter← biliard[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-neuter← biliarde[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-neuter' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(zero),
+				},
+				'x.x' => {
+					rule => q(←← virgulă →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(unu),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(=%spellout-cardinal-feminine=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(←%spellout-cardinal-feminine←zeci[ şi →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(una sută[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←%spellout-cardinal-feminine← sute[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(una mie[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-feminine← mii[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-neuter← milion[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-neuter← milioane[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-neuter← miliard[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-neuter← miliarde[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-neuter← bilion[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-neuter← bilioane[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-neuter← biliard[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-neuter← biliarde[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -4699,8 +5049,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{a.m.},
 					'pm' => q{p.m.},
+					'am' => q{a.m.},
 				},
 			},
 		},

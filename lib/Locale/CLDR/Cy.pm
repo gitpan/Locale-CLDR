@@ -1,11 +1,11 @@
 package Locale::CLDR::Cy;
 # This file auto generated from Data\common\main\cy.xml
-#	on Sun  1 Jun  2:37:37 pm GMT
+#	on Tue 10 Jun  8:38:26 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,423 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal-masculine','spellout-cardinal-masculine-before-consonant','spellout-cardinal-feminine','spellout-cardinal-feminine-before-consonant' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'spellout-cardinal-feminine' => {
+			'public' => {
+				'-x' => {
+					rule => q(minws →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(dim),
+				},
+				'x.x' => {
+					rule => q(←← pwynt →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(un),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(dwy),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tair),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(pedair),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(pump),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(chwech),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(saith),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(wyth),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(naw),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(un deg[ →→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(dau ddeg[ →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← deg[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← cant[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← mil[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← miliwn[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← biliwn[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← triliwn[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← kwadriliwn[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-feminine-before-consonant' => {
+			'public' => {
+				'-x' => {
+					rule => q(minws →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(dim),
+				},
+				'x.x' => {
+					rule => q(←← pwynt →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(un),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(dwy),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tair),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(pedair),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(pum),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(chwe),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(saith),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(wyth),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(naw),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(un deg[ →→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(dau ddeg[ →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← deg[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← cant[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← mil[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← miliwn[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← biliwn[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← triliwn[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← kwadriliwn[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-masculine' => {
+			'public' => {
+				'-x' => {
+					rule => q(minws →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(dim),
+				},
+				'x.x' => {
+					rule => q(←← pwynt →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(un),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(dau),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tri),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(pedwar),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(pump),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(chwech),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(saith),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(wyth),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(naw),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(un deg[ →→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(dau ddeg[ →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← deg[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← cant[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← mil[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← miliwn[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← biliwn[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← triliwn[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← kwadriliwn[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-masculine-before-consonant' => {
+			'public' => {
+				'-x' => {
+					rule => q(minws →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(dim),
+				},
+				'x.x' => {
+					rule => q(←← pwynt →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(un),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(dau),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tri),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(pedwar),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(pum),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(chwe),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(saith),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(wyth),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(naw),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(un deg[ →→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(dau ddeg[ →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← deg[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← cant[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← mil[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← miliwn[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← biliwn[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← triliwn[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine-before-consonant← kwadriliwn[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -4548,14 +4965,14 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
+				'wide' => {
+					'pm' => q{PM},
+					'am' => q{AM},
+					'noon' => q{hanner dydd},
+				},
 				'narrow' => {
 					'pm' => q{PM},
 					'am' => q{AM},
-				},
-				'wide' => {
-					'am' => q{AM},
-					'noon' => q{hanner dydd},
-					'pm' => q{PM},
 				},
 			},
 		},

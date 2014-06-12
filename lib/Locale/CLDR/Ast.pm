@@ -1,11 +1,11 @@
 package Locale::CLDR::Ast;
 # This file auto generated from Data\common\main\ast.xml
-#	on Sun  1 Jun  2:17:09 pm GMT
+#	on Tue 10 Jun  8:18:36 pm GMT
 # XML file generated 2014-01-08 23:02:40 -0600 (Wed, 08 Jan 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -2384,8 +2384,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{PM},
 					'am' => q{AM},
+					'pm' => q{PM},
 				},
 			},
 		},
@@ -2467,7 +2467,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d},
 			H => q{HH},
 			Hm => q{HH:mm},
@@ -2493,7 +2493,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d},
 			H => q{HH},
 			Hm => q{HH:mm},
@@ -2535,7 +2535,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH–HH},
 			},
@@ -2630,7 +2630,7 @@ has 'datetime_formats_interval' => (
 				y => q{d/M/y – d/M/y},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH–HH},
 			},

@@ -1,11 +1,11 @@
 package Locale::CLDR::Gv::Any::Im;
 # This file auto generated from Data\common\main\gv_IM.xml
-#	on Sun  1 Jun  3:09:44 pm GMT
+#	on Tue 10 Jun  9:10:51 pm GMT
 # XML file generated 2013-08-22 09:07:34 -0500 (Thu, 22 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';

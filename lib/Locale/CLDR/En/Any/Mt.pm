@@ -1,11 +1,11 @@
 package Locale::CLDR::En::Any::Mt;
 # This file auto generated from Data\common\main\en_MT.xml
-#	on Sun  1 Jun  2:49:02 pm GMT
+#	on Tue 10 Jun  8:50:12 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -41,20 +41,20 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'generic') {
+			if ($_ eq 'gregorian') {
+				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'am' if $time >= 000
 					&& $time < 1200;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'gregorian') {
+			if ($_ eq 'generic') {
+				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'am' if $time >= 000
 					&& $time < 1200;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 		}

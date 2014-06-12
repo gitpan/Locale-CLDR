@@ -1,11 +1,11 @@
 package Locale::CLDR::Se;
 # This file auto generated from Data\common\main\se.xml
-#	on Sun  1 Jun  4:17:02 pm GMT
+#	on Tue 10 Jun 10:27:56 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,154 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'spellout-cardinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(eret →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(nolla),
+				},
+				'x.x' => {
+					rule => q(←← pilkku →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(okta),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(guokte),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(golbma),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(njeallje),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(vihtta),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(guhtta),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(čieža),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(gávcci),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(ovcci),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(logi),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(→→­nuppe­lohkái),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(←←­logi[­→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←←­čuođi[­→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←←­duhát[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←← miljon[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←← miljard[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←← biljon[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←← biljard[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'-x' => {
+					rule => q(eret →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'1100' => {
+					base_value => q(1100),
+					divisor => q(100),
+					rule => q(←←­čuođi[­→→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(=%spellout-numbering=),
+				},
+				'max' => {
+					base_value => q(10000),
+					rule => q(=%spellout-numbering=),
+				},
+			},
+		},
+	} },
+);
+
 has 'display_name_language' => (
 	is			=> 'ro',
 	isa			=> 'CodeRef',
@@ -1792,13 +1940,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'abbreviated' => {
-					'am' => q{i.b.},
-					'pm' => q{e.b.},
-				},
 				'wide' => {
 					'am' => q{iđitbeaivet},
 					'pm' => q{eahketbeaivet},
+				},
+				'abbreviated' => {
+					'pm' => q{e.b.},
+					'am' => q{i.b.},
 				},
 			},
 			'stand-alone' => {

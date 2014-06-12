@@ -1,11 +1,11 @@
 package Locale::CLDR::Eo;
 # This file auto generated from Data\common\main\eo.xml
-#	on Sun  1 Jun  2:49:09 pm GMT
+#	on Tue 10 Jun  8:50:19 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,173 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal','spellout-ordinal' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'spellout-cardinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(nulo),
+				},
+				'x.x' => {
+					rule => q(←← komo →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(unu),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(du),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tri),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(kvar),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(kvin),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(ses),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(sep),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(ok),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(naŭ),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(dek[ →→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(←←dek[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(cent[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←←cent[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(mil[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←← mil[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(miliono[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←← milionoj[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(miliardo[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←← miliardoj[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(biliono[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←← bilionoj[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(biliardo[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←← biliardoj[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+		'spellout-ordinal' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=a),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=a),
+				},
+			},
+		},
+	} },
+);
+
 has 'display_name_language' => (
 	is			=> 'ro',
 	isa			=> 'CodeRef',
@@ -756,93 +923,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			H => {
-				H => q{HH-HH},
-			},
-			Hm => {
-				H => q{HH:mm-HH:mm},
-				m => q{HH:mm-HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm-HH:mm v},
-				m => q{HH:mm-HH:mm v},
-			},
-			Hv => {
-				H => q{HH-HH v},
-			},
-			M => {
-				M => q{M-M},
-			},
-			MEd => {
-				M => q{E, MM-dd - E, MM-dd},
-				d => q{E, MM-dd - E, MM-dd},
-			},
-			MMM => {
-				M => q{MMM-MMM},
-			},
-			MMMEd => {
-				M => q{E, MMM-dd - E, MMM-dd},
-				d => q{E, MMM-dd - E, MMM-dd},
-			},
-			MMMd => {
-				M => q{MMM-dd - MMM-dd},
-				d => q{MMM-dd - MMM-dd},
-			},
-			Md => {
-				M => q{MM-dd - MM-dd},
-				d => q{MM-dd - MM-dd},
-			},
-			d => {
-				d => q{d-d},
-			},
-			fallback => '{0} - {1}',
-			h => {
-				h => q{h-h a},
-			},
-			hm => {
-				h => q{h:mm-h:mm a},
-				m => q{h:mm-h:mm a},
-			},
-			hmv => {
-				h => q{h:mm-h:mm a v},
-				m => q{h:mm-h:mm a v},
-			},
-			hv => {
-				h => q{h-h a v},
-			},
-			y => {
-				y => q{G y-y},
-			},
-			yM => {
-				M => q{G y-MM - y-MM},
-				y => q{G y-MM - y-MM},
-			},
-			yMEd => {
-				M => q{E, y-MM-dd - E, y-MM-dd},
-				d => q{E, y-MM-dd - E, y-MM-dd},
-				y => q{E, y-MM-dd - E, y-MM-dd},
-			},
-			yMMM => {
-				M => q{G y-MMM - y-MMM},
-				y => q{G y-MMM - y-MMM},
-			},
-			yMMMEd => {
-				M => q{E, d-'a' 'de' MMM - E, d-'a' 'de' MMM y G},
-				d => q{E, d-'a' - E, d-'a' 'de' MMM y G},
-				y => q{E, d-'a' 'de' MMM y - E, d-'a' 'de' MMM y G},
-			},
-			yMMMd => {
-				M => q{G y-MMM-dd - y-MMM-dd},
-				d => q{G y-MMM-dd - y-MMM-dd},
-				y => q{G y-MMM-dd - y-MMM-dd},
-			},
-			yMd => {
-				M => q{G y-MM-dd - y-MM-dd},
-				d => q{G y-MM-dd - y-MM-dd},
-				y => q{G y-MM-dd - y-MM-dd},
-			},
-		},
 		'gregorian' => {
 			H => {
 				H => q{HH-HH},
@@ -928,6 +1008,93 @@ has 'datetime_formats_interval' => (
 				M => q{y-MM-dd - y-MM-dd},
 				d => q{y-MM-dd - y-MM-dd},
 				y => q{y-MM-dd - y-MM-dd},
+			},
+		},
+		'generic' => {
+			H => {
+				H => q{HH-HH},
+			},
+			Hm => {
+				H => q{HH:mm-HH:mm},
+				m => q{HH:mm-HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm-HH:mm v},
+				m => q{HH:mm-HH:mm v},
+			},
+			Hv => {
+				H => q{HH-HH v},
+			},
+			M => {
+				M => q{M-M},
+			},
+			MEd => {
+				M => q{E, MM-dd - E, MM-dd},
+				d => q{E, MM-dd - E, MM-dd},
+			},
+			MMM => {
+				M => q{MMM-MMM},
+			},
+			MMMEd => {
+				M => q{E, MMM-dd - E, MMM-dd},
+				d => q{E, MMM-dd - E, MMM-dd},
+			},
+			MMMd => {
+				M => q{MMM-dd - MMM-dd},
+				d => q{MMM-dd - MMM-dd},
+			},
+			Md => {
+				M => q{MM-dd - MM-dd},
+				d => q{MM-dd - MM-dd},
+			},
+			d => {
+				d => q{d-d},
+			},
+			fallback => '{0} - {1}',
+			h => {
+				h => q{h-h a},
+			},
+			hm => {
+				h => q{h:mm-h:mm a},
+				m => q{h:mm-h:mm a},
+			},
+			hmv => {
+				h => q{h:mm-h:mm a v},
+				m => q{h:mm-h:mm a v},
+			},
+			hv => {
+				h => q{h-h a v},
+			},
+			y => {
+				y => q{G y-y},
+			},
+			yM => {
+				M => q{G y-MM - y-MM},
+				y => q{G y-MM - y-MM},
+			},
+			yMEd => {
+				M => q{E, y-MM-dd - E, y-MM-dd},
+				d => q{E, y-MM-dd - E, y-MM-dd},
+				y => q{E, y-MM-dd - E, y-MM-dd},
+			},
+			yMMM => {
+				M => q{G y-MMM - y-MMM},
+				y => q{G y-MMM - y-MMM},
+			},
+			yMMMEd => {
+				M => q{E, d-'a' 'de' MMM - E, d-'a' 'de' MMM y G},
+				d => q{E, d-'a' - E, d-'a' 'de' MMM y G},
+				y => q{E, d-'a' 'de' MMM y - E, d-'a' 'de' MMM y G},
+			},
+			yMMMd => {
+				M => q{G y-MMM-dd - y-MMM-dd},
+				d => q{G y-MMM-dd - y-MMM-dd},
+				y => q{G y-MMM-dd - y-MMM-dd},
+			},
+			yMd => {
+				M => q{G y-MM-dd - y-MM-dd},
+				d => q{G y-MM-dd - y-MM-dd},
+				y => q{G y-MM-dd - y-MM-dd},
 			},
 		},
 	} },

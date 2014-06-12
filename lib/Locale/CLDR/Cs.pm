@@ -1,11 +1,11 @@
 package Locale::CLDR::Cs;
 # This file auto generated from Data\common\main\cs.xml
-#	on Sun  1 Jun  2:36:05 pm GMT
+#	on Tue 10 Jun  8:36:47 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,513 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal-masculine','spellout-cardinal-neuter','spellout-cardinal-feminine' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'spellout-cardinal-feminine' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(nula),
+				},
+				'x.x' => {
+					rule => q(←← čárka →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(jedna),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(dvě),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(←%spellout-cardinal-masculine←cet[ →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(padesát[ →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(šedesát[ →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(sedmdesát[ →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(osmdesát[ →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(devadesát[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(sto[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←%spellout-cardinal-feminine← stě[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(←%spellout-cardinal-feminine← sta[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(←%spellout-cardinal-feminine← set[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-feminine← tisíc[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-feminine← tisíce[ →→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(←%spellout-cardinal-feminine← tisíc[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine← milión[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← milióny[ →→]),
+				},
+				'5000000' => {
+					base_value => q(5000000),
+					rule => q(←%spellout-cardinal-masculine← miliónů[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine← miliarda[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-masculine← miliardy[ →→]),
+				},
+				'5000000000' => {
+					base_value => q(5000000000),
+					rule => q(←%spellout-cardinal-masculine← miliardů[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine← bilión[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← bilióny[ →→]),
+				},
+				'5000000000000' => {
+					base_value => q(5000000000000),
+					rule => q(←%spellout-cardinal-masculine← biliónů[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine← biliarda[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-masculine← biliardy[ →→]),
+				},
+				'5000000000000000' => {
+					base_value => q(5000000000000000),
+					rule => q(←%spellout-cardinal-masculine← biliardů[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-masculine' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(nula),
+				},
+				'x.x' => {
+					rule => q(←← čárka →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(jeden),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(dva),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tři),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(čtyři),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(pět),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(šest),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(sedm),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(osm),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(devět),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(deset),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(jedenáct),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(dvanáct),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(třináct),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(čtrnáct),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(patnáct),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(šestnáct),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(sedmnáct),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(osmnáct),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(devatenáct),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(←%spellout-cardinal-masculine←cet[ →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(padesát[ →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(šedesát[ →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(sedmdesát[ →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(osmdesát[ →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(devadesát[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(sto[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←%spellout-cardinal-feminine← stě[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(←%spellout-cardinal-feminine← sta[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(←%spellout-cardinal-feminine← set[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-feminine← tisíc[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-feminine← tisíce[ →→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(←%spellout-cardinal-feminine← tisíc[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine← milión[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← milióny[ →→]),
+				},
+				'5000000' => {
+					base_value => q(5000000),
+					rule => q(←%spellout-cardinal-masculine← miliónů[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine← miliarda[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-masculine← miliardy[ →→]),
+				},
+				'5000000000' => {
+					base_value => q(5000000000),
+					rule => q(←%spellout-cardinal-masculine← miliardů[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine← bilión[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← bilióny[ →→]),
+				},
+				'5000000000000' => {
+					base_value => q(5000000000000),
+					rule => q(←%spellout-cardinal-masculine← biliónů[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine← biliarda[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-masculine← biliardy[ →→]),
+				},
+				'5000000000000000' => {
+					base_value => q(5000000000000000),
+					rule => q(←%spellout-cardinal-masculine← biliardů[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-neuter' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(nula),
+				},
+				'x.x' => {
+					rule => q(←← čárka →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(jedno),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(dvě),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(←%spellout-cardinal-masculine←cet[ →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(padesát[ →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(šedesát[ →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(sedmdesát[ →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(osmdesát[ →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(devadesát[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(sto[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←%spellout-cardinal-feminine← stě[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(←%spellout-cardinal-feminine← sta[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(←%spellout-cardinal-feminine← set[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-feminine← tisíc[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-feminine← tisíce[ →→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(←%spellout-cardinal-feminine← tisíc[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine← milión[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← milióny[ →→]),
+				},
+				'5000000' => {
+					base_value => q(5000000),
+					rule => q(←%spellout-cardinal-masculine← miliónů[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine← miliarda[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-masculine← miliardy[ →→]),
+				},
+				'5000000000' => {
+					base_value => q(5000000000),
+					rule => q(←%spellout-cardinal-masculine← miliardů[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine← bilión[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← bilióny[ →→]),
+				},
+				'5000000000000' => {
+					base_value => q(5000000000000),
+					rule => q(←%spellout-cardinal-masculine← biliónů[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine← biliarda[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-masculine← biliardy[ →→]),
+				},
+				'5000000000000000' => {
+					base_value => q(5000000000000000),
+					rule => q(←%spellout-cardinal-masculine← biliardů[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -5161,13 +5668,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'am' => q{AM},
-					'pm' => q{PM},
-				},
 				'narrow' => {
 					'pm' => q{PM},
 					'am' => q{AM},
+				},
+				'wide' => {
+					'am' => q{AM},
+					'pm' => q{PM},
 				},
 			},
 		},

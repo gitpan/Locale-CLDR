@@ -1,11 +1,11 @@
 package Locale::CLDR::Lag;
 # This file auto generated from Data\common\main\lag.xml
-#	on Sun  1 Jun  3:40:11 pm GMT
+#	on Tue 10 Jun  9:45:51 pm GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -802,8 +802,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{MUU},
 					'am' => q{TOO},
+					'pm' => q{MUU},
 				},
 			},
 		},

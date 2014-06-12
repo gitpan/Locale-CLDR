@@ -1,11 +1,11 @@
 package Locale::CLDR::Root;
 # This file auto generated from Data\common\main\root.xml
-#	on Sun  1 Jun  4:13:49 pm GMT
+#	on Tue 10 Jun 10:24:15 pm GMT
 # XML file generated 2014-02-14 16:49:13 -0600 (Fri, 14 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -313,6 +313,2153 @@ has 'LineBreak_rules' => (
 		'30.11' => ' $RI × $RI ',
 	}}
 );
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'armenian-lower','armenian-upper','ethiopic','georgian','greek-lower','greek-upper','hebrew','roman-lower','roman-upper','tamil','digits-ordinal','spellout-numbering-year','spellout-numbering','spellout-cardinal','spellout-ordinal' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'armenian-lower' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(0),
+				},
+				'x.x' => {
+					rule => q(=#,##0.00=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(ա),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(բ),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(գ),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(դ),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(ե),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(զ),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(է),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(ը),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(թ),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(ժ[→→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(ի[→→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(լ[→→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(խ[→→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(ծ[→→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(կ[→→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(հ[→→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(ձ[→→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(ղ[→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(ճ[→→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(մ[→→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(յ[→→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(ն[→→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(շ[→→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(ո[→→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(չ[→→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(պ[→→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(ջ[→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(ռ[→→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(ս[→→]),
+				},
+				'3000' => {
+					base_value => q(3000),
+					rule => q(վ[→→]),
+				},
+				'4000' => {
+					base_value => q(4000),
+					rule => q(տ[→→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(ր[→→]),
+				},
+				'6000' => {
+					base_value => q(6000),
+					rule => q(ց[→→]),
+				},
+				'7000' => {
+					base_value => q(7000),
+					rule => q(ւ[→→]),
+				},
+				'8000' => {
+					base_value => q(8000),
+					rule => q(փ[→→]),
+				},
+				'9000' => {
+					base_value => q(9000),
+					rule => q(ք[→→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(10000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'armenian-upper' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(0),
+				},
+				'x.x' => {
+					rule => q(=#,##0.00=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(Ա),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(Բ),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(Գ),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(Դ),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(Ե),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(Զ),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(Է),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(Ը),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(Թ),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(Ժ[→→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(Ի[→→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(Լ[→→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(Խ[→→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(Ծ[→→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(Կ[→→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(Հ[→→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(Ձ[→→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(Ղ[→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(Ճ[→→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(Մ[→→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(Յ[→→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(Ն[→→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(Շ[→→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(Ո[→→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(Չ[→→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(Պ[→→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(Ջ[→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(Ռ[→→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(Ս[→→]),
+				},
+				'3000' => {
+					base_value => q(3000),
+					rule => q(Վ[→→]),
+				},
+				'4000' => {
+					base_value => q(4000),
+					rule => q(Տ[→→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(Ր[→→]),
+				},
+				'6000' => {
+					base_value => q(6000),
+					rule => q(Ց[→→]),
+				},
+				'7000' => {
+					base_value => q(7000),
+					rule => q(Ւ[→→]),
+				},
+				'8000' => {
+					base_value => q(8000),
+					rule => q(Փ[→→]),
+				},
+				'9000' => {
+					base_value => q(9000),
+					rule => q(Ք[→→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(10000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'digits-ordinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=#,##0=.),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=#,##0=.),
+				},
+			},
+		},
+		'ethiopic' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(ባዶ),
+				},
+				'x.x' => {
+					rule => q(←←፡→→→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(፩),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(፪),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(፫),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(፬),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(፭),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(፮),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(፯),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(፰),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(፱),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(፲[→→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(፳[→→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(፴[→→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(፵[→→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(፶[→→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(፷[→→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(፸[→→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(፹[→→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(፺[→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(፻[→→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←←፻[→→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(፼[→→]),
+				},
+				'20000' => {
+					base_value => q(20000),
+					rule => q(←←፼[→→]),
+				},
+				'100000000' => {
+					base_value => q(100000000),
+					rule => q(፼፼[→→]),
+				},
+				'200000000' => {
+					base_value => q(200000000),
+					rule => q(←←፼፼[→→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(፼፼፼[→→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←←፼፼፼[→→]),
+				},
+				'10000000000000000' => {
+					base_value => q(10000000000000000),
+					rule => q(፼፼፼፼[→→]),
+				},
+				'20000000000000000' => {
+					base_value => q(20000000000000000),
+					rule => q(←←፼፼፼፼[→→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,###0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,###0=),
+				},
+			},
+		},
+		'georgian' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=#,##0=),
+				},
+				'x.x' => {
+					rule => q(=#,##0.00=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(ა),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(ბ),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(გ),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(დ),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(ე),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(ვ),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(ზ),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(ჱ),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(თ),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(ი[→→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(კ[→→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(ლ[→→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(მ[→→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(ნ[→→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(ჲ[→→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(ო[→→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(პ[→→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(ჟ[→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(რ[→→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(ს[→→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(ტ[→→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(უ[→→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(ჳ[→→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(ფ[→→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(ქ[→→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(ღ[→→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(ყ[→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(შ[→→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(ჩ[→→]),
+				},
+				'3000' => {
+					base_value => q(3000),
+					rule => q(ც[→→]),
+				},
+				'4000' => {
+					base_value => q(4000),
+					rule => q(ძ[→→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(წ[→→]),
+				},
+				'6000' => {
+					base_value => q(6000),
+					rule => q(ჭ[→→]),
+				},
+				'7000' => {
+					base_value => q(7000),
+					rule => q(ხ[→→]),
+				},
+				'8000' => {
+					base_value => q(8000),
+					rule => q(ჴ[→→]),
+				},
+				'9000' => {
+					base_value => q(9000),
+					rule => q(ჵ[→→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(ჯ[→→]),
+				},
+				'20000' => {
+					base_value => q(20000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(20000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'greek-lower' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(00),
+				},
+				'x.x' => {
+					rule => q(=#,##0.00=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(=%%greek-numeral-minuscules=´),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'greek-numeral-majuscules' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(Α),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(Β),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(Γ),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(Δ),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(Ε),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(Ϝ),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(Ζ),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(Η),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(Θ),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(Ι[→→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(Κ[→→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(Λ[→→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(Μ[→→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(Ν[→→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(Ξ[→→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(Ο[→→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(Π[→→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(Ϟ[→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(Ρ[→→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(Σ[→→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(Τ[→→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(Υ[→→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(Φ[→→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(Χ[→→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(Ψ[→→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(Ω[→→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(Ϡ[→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(͵Α[→→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(͵Β[→→]),
+				},
+				'3000' => {
+					base_value => q(3000),
+					rule => q(͵Γ[→→]),
+				},
+				'4000' => {
+					base_value => q(4000),
+					rule => q(͵Δ[→→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(͵Ε[→→]),
+				},
+				'6000' => {
+					base_value => q(6000),
+					rule => q(͵Ϝ[→→]),
+				},
+				'7000' => {
+					base_value => q(7000),
+					rule => q(͵Ζ[→→]),
+				},
+				'8000' => {
+					base_value => q(8000),
+					rule => q(͵Η[→→]),
+				},
+				'9000' => {
+					base_value => q(9000),
+					rule => q(͵Θ[→→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(͵Ι[→→]),
+				},
+				'20000' => {
+					base_value => q(20000),
+					rule => q(͵Κ[→→]),
+				},
+				'30000' => {
+					base_value => q(30000),
+					rule => q(͵Λ[→→]),
+				},
+				'40000' => {
+					base_value => q(40000),
+					rule => q(͵Μ[→→]),
+				},
+				'50000' => {
+					base_value => q(50000),
+					rule => q(͵Ν[→→]),
+				},
+				'60000' => {
+					base_value => q(60000),
+					rule => q(͵Ξ[→→]),
+				},
+				'70000' => {
+					base_value => q(70000),
+					rule => q(͵Ο[→→]),
+				},
+				'80000' => {
+					base_value => q(80000),
+					rule => q(͵Π[→→]),
+				},
+				'90000' => {
+					base_value => q(90000),
+					rule => q(͵Ϟ[→→]),
+				},
+				'100000' => {
+					base_value => q(100000),
+					rule => q(͵Ρ[→→]),
+				},
+				'200000' => {
+					base_value => q(200000),
+					rule => q(͵Σ[→→]),
+				},
+				'300000' => {
+					base_value => q(300000),
+					rule => q(͵Τ[→→]),
+				},
+				'400000' => {
+					base_value => q(400000),
+					rule => q(͵Υ[→→]),
+				},
+				'500000' => {
+					base_value => q(500000),
+					rule => q(͵Φ[→→]),
+				},
+				'600000' => {
+					base_value => q(600000),
+					rule => q(͵Χ[→→]),
+				},
+				'700000' => {
+					base_value => q(700000),
+					rule => q(͵Ψ[→→]),
+				},
+				'800000' => {
+					base_value => q(800000),
+					rule => q(͵Ω[→→]),
+				},
+				'900000' => {
+					base_value => q(900000),
+					rule => q(͵Ϡ[→→]),
+				},
+				'max' => {
+					base_value => q(900000),
+					rule => q(͵Ϡ[→→]),
+				},
+			},
+		},
+		'greek-numeral-minuscules' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(α),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(β),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(γ),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(δ),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(ε),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(ϝ),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(ζ),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(η),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(θ),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(ι[→→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(κ[→→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(λ[→→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(μ[→→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(ν[→→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(ξ[→→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(ο[→→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(π[→→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(ϟ[→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(ρ[→→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(σ[→→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(τ[→→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(υ[→→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(φ[→→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(χ[→→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(ψ[→→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(ω[→→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(ϡ[→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(͵α[→→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(͵β[→→]),
+				},
+				'3000' => {
+					base_value => q(3000),
+					rule => q(͵γ[→→]),
+				},
+				'4000' => {
+					base_value => q(4000),
+					rule => q(͵δ[→→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(͵ε[→→]),
+				},
+				'6000' => {
+					base_value => q(6000),
+					rule => q(͵ϝ[→→]),
+				},
+				'7000' => {
+					base_value => q(7000),
+					rule => q(͵ζ[→→]),
+				},
+				'8000' => {
+					base_value => q(8000),
+					rule => q(͵η[→→]),
+				},
+				'9000' => {
+					base_value => q(9000),
+					rule => q(͵θ[→→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(͵ι[→→]),
+				},
+				'20000' => {
+					base_value => q(20000),
+					rule => q(͵κ[→→]),
+				},
+				'30000' => {
+					base_value => q(30000),
+					rule => q(͵λ[→→]),
+				},
+				'40000' => {
+					base_value => q(40000),
+					rule => q(͵μ[→→]),
+				},
+				'50000' => {
+					base_value => q(50000),
+					rule => q(͵ν[→→]),
+				},
+				'60000' => {
+					base_value => q(60000),
+					rule => q(͵ξ[→→]),
+				},
+				'70000' => {
+					base_value => q(70000),
+					rule => q(͵ο[→→]),
+				},
+				'80000' => {
+					base_value => q(80000),
+					rule => q(͵π[→→]),
+				},
+				'90000' => {
+					base_value => q(90000),
+					rule => q(͵ϟ[→→]),
+				},
+				'100000' => {
+					base_value => q(100000),
+					rule => q(͵ρ[→→]),
+				},
+				'200000' => {
+					base_value => q(200000),
+					rule => q(͵σ[→→]),
+				},
+				'300000' => {
+					base_value => q(300000),
+					rule => q(͵τ[→→]),
+				},
+				'400000' => {
+					base_value => q(400000),
+					rule => q(͵υ[→→]),
+				},
+				'500000' => {
+					base_value => q(500000),
+					rule => q(͵φ[→→]),
+				},
+				'600000' => {
+					base_value => q(600000),
+					rule => q(͵χ[→→]),
+				},
+				'700000' => {
+					base_value => q(700000),
+					rule => q(͵ψ[→→]),
+				},
+				'800000' => {
+					base_value => q(800000),
+					rule => q(͵ω[→→]),
+				},
+				'900000' => {
+					base_value => q(900000),
+					rule => q(͵ϡ[→→]),
+				},
+				'max' => {
+					base_value => q(900000),
+					rule => q(͵ϡ[→→]),
+				},
+			},
+		},
+		'greek-upper' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(00),
+				},
+				'x.x' => {
+					rule => q(=#,##0.00=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(=%%greek-numeral-majuscules=´),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'hebrew' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(אפס),
+				},
+				'x.x' => {
+					rule => q(=#,##0.00=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(א׳),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(ב׳),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(ג׳),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(ד׳),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(ה׳),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(ו׳),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(ז׳),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(ח׳),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(ט׳),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(י׳),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(י[→%%hebrew-final→]),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(ט״ו),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(ט״ז),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(י[→%%hebrew-final→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(כ׳),
+				},
+				'21' => {
+					base_value => q(21),
+					rule => q(כ[→%%hebrew-final→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(ל׳),
+				},
+				'31' => {
+					base_value => q(31),
+					rule => q(ל[→%%hebrew-final→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(מ׳),
+				},
+				'41' => {
+					base_value => q(41),
+					rule => q(מ[→%%hebrew-final→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(נ׳),
+				},
+				'51' => {
+					base_value => q(51),
+					rule => q(נ[→%%hebrew-final→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(ס׳),
+				},
+				'61' => {
+					base_value => q(61),
+					rule => q(ס[→%%hebrew-final→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(ע׳),
+				},
+				'71' => {
+					base_value => q(71),
+					rule => q(ע[→%%hebrew-final→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(פ׳),
+				},
+				'81' => {
+					base_value => q(81),
+					rule => q(פ[→%%hebrew-final→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(צ׳),
+				},
+				'91' => {
+					base_value => q(91),
+					rule => q(צ[→%%hebrew-final→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(ק׳),
+				},
+				'101' => {
+					base_value => q(101),
+					rule => q(ק[→%%hebrew-final→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(ר׳),
+				},
+				'201' => {
+					base_value => q(201),
+					rule => q(ר[→%%hebrew-final→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(ש׳),
+				},
+				'301' => {
+					base_value => q(301),
+					rule => q(ש[→%%hebrew-final→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(ת׳),
+				},
+				'401' => {
+					base_value => q(401),
+					rule => q(ת[→%%hebrew-final→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(ת״ק),
+				},
+				'501' => {
+					base_value => q(501),
+					rule => q(תק[→%%hebrew-final→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(ת״ר),
+				},
+				'601' => {
+					base_value => q(601),
+					rule => q(תר[→%%hebrew-final→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(ת״ש),
+				},
+				'701' => {
+					base_value => q(701),
+					rule => q(תש[→%%hebrew-final→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(ת״ת),
+				},
+				'801' => {
+					base_value => q(801),
+					rule => q(תת[→%%hebrew-final→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(תת״ק),
+				},
+				'901' => {
+					base_value => q(901),
+					rule => q(תתק[→%%hebrew-final→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(אלף),
+				},
+				'1001' => {
+					base_value => q(1001),
+					rule => q(←%%hebrew-thousands←[→→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(אלפיים),
+				},
+				'2001' => {
+					base_value => q(2001),
+					rule => q(←%%hebrew-thousands←[→→]),
+				},
+				'3000' => {
+					base_value => q(3000),
+					rule => q(←← אלפים),
+				},
+				'3001' => {
+					base_value => q(3001),
+					rule => q(←%%hebrew-thousands←[→→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(אלף אלפים),
+				},
+				'1000001' => {
+					base_value => q(1000001),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000001),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'hebrew-digit' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(אפס),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(א),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(ב),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(ג),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(ד),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(ה),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(ו),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(ז),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(ח),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(ט),
+				},
+				'max' => {
+					base_value => q(9),
+					rule => q(ט),
+				},
+			},
+		},
+		'hebrew-final' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(אפס),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(״א),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(״ב),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(״ג),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(״ד),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(״ה),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(״ו),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(״ז),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(״ח),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(״ט),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(״י),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(י״[→%%hebrew-digit→]),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(ט״ו),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(ט״ז),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(י״[→%%hebrew-digit→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(״כ),
+				},
+				'21' => {
+					base_value => q(21),
+					rule => q(כ״[→%%hebrew-digit→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(״ל),
+				},
+				'31' => {
+					base_value => q(31),
+					rule => q(ל״[→%%hebrew-digit→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(״מ),
+				},
+				'41' => {
+					base_value => q(41),
+					rule => q(מ״[→%%hebrew-digit→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(״נ),
+				},
+				'51' => {
+					base_value => q(51),
+					rule => q(נ״[→%%hebrew-digit→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(״ס),
+				},
+				'61' => {
+					base_value => q(61),
+					rule => q(ס״[→%%hebrew-digit→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(״ע),
+				},
+				'71' => {
+					base_value => q(71),
+					rule => q(ע״[→%%hebrew-digit→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(״פ),
+				},
+				'81' => {
+					base_value => q(81),
+					rule => q(פ״[→%%hebrew-digit→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(״צ),
+				},
+				'91' => {
+					base_value => q(91),
+					rule => q(צ״[→%%hebrew-digit→]),
+				},
+				'max' => {
+					base_value => q(91),
+					rule => q(צ״[→%%hebrew-digit→]),
+				},
+			},
+		},
+		'hebrew-thousands' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%hebrew=),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(=%hebrew=[׳]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(=%hebrew=[׳]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(=%hebrew=[׳]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(=%hebrew=[׳]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(=%hebrew=),
+				},
+				'401' => {
+					base_value => q(401),
+					rule => q(=%hebrew=׳),
+				},
+				'max' => {
+					base_value => q(401),
+					rule => q(=%hebrew=׳),
+				},
+			},
+		},
+		'roman-lower' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(n),
+				},
+				'x.x' => {
+					rule => q(=#,##0.00=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(i),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(ii),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(iii),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(iv),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(v),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(vi),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(vii),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(viii),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(ix),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(x[→→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(xx[→→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(xxx[→→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(xl[→→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(l[→→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(lx[→→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(lxx[→→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(lxxx[→→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(xc[→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(c[→→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(cc[→→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(ccc[→→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(cd[→→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(d[→→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(dc[→→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(dcc[→→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(dccc[→→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(cm[→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(m[→→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(mm[→→]),
+				},
+				'3000' => {
+					base_value => q(3000),
+					rule => q(mmm[→→]),
+				},
+				'4000' => {
+					base_value => q(4000),
+					rule => q(mmmm[→→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(5000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'roman-upper' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(N),
+				},
+				'x.x' => {
+					rule => q(=#,##0.00=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(I),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(II),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(III),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(IV),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(V),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(VI),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(VII),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(VIII),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(IX),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(X[→→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(XX[→→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(XXX[→→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(XL[→→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(L[→→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(LX[→→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(LXX[→→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(LXXX[→→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(XC[→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(C[→→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(CC[→→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(CCC[→→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(CD[→→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(D[→→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(DC[→→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(DCC[→→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(DCCC[→→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(CM[→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(M[→→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(MM[→→]),
+				},
+				'3000' => {
+					base_value => q(3000),
+					rule => q(MMM[→→]),
+				},
+				'4000' => {
+					base_value => q(4000),
+					rule => q(Mↁ[→→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(ↁ[→→]),
+				},
+				'6000' => {
+					base_value => q(6000),
+					rule => q(ↁM[→→]),
+				},
+				'7000' => {
+					base_value => q(7000),
+					rule => q(ↁMM[→→]),
+				},
+				'8000' => {
+					base_value => q(8000),
+					rule => q(ↁMMM[→→]),
+				},
+				'9000' => {
+					base_value => q(9000),
+					rule => q(Mↂ[→→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(ↂ[→→]),
+				},
+				'20000' => {
+					base_value => q(20000),
+					rule => q(ↂↂ[→→]),
+				},
+				'30000' => {
+					base_value => q(30000),
+					rule => q(ↂↂↂ[→→]),
+				},
+				'40000' => {
+					base_value => q(40000),
+					rule => q(ↂↇ[→→]),
+				},
+				'50000' => {
+					base_value => q(50000),
+					rule => q(ↇ[→→]),
+				},
+				'60000' => {
+					base_value => q(60000),
+					rule => q(ↇↂ[→→]),
+				},
+				'70000' => {
+					base_value => q(70000),
+					rule => q(ↇↂↂ[→→]),
+				},
+				'80000' => {
+					base_value => q(80000),
+					rule => q(ↇↂↂↂ[→→]),
+				},
+				'90000' => {
+					base_value => q(90000),
+					rule => q(ↂↈ[→→]),
+				},
+				'100000' => {
+					base_value => q(100000),
+					rule => q(ↈ[→→]),
+				},
+				'200000' => {
+					base_value => q(200000),
+					rule => q(ↈↈ[→→]),
+				},
+				'300000' => {
+					base_value => q(300000),
+					rule => q(ↈↈↈ[→→]),
+				},
+				'400000' => {
+					base_value => q(400000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(400000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=#,##0.#=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=#,##0.#=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=#,##0.#=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=#,##0.#=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+		'spellout-ordinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=#,##0.#=.),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=#,##0.#=.),
+				},
+			},
+		},
+		'tamil' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(௦),
+				},
+				'x.x' => {
+					rule => q(=#,##0.00=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(௧),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(௨),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(௩),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(௪),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(௫),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(௬),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(௭),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(௮),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(௯),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(௰[→→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(←←௰[→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(௱[→→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←←௱[→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(௲[→→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←←௲[→→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					divisor => q(100000),
+					rule => q(←←௱௲[→%%tamil-thousands→]),
+				},
+				'100000000' => {
+					base_value => q(100000000),
+					rule => q(=#,##,##0=),
+				},
+				'max' => {
+					base_value => q(100000000),
+					rule => q(=#,##,##0=),
+				},
+			},
+		},
+		'tamil-thousands' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%tamil=),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←←௲[→→]),
+				},
+				'max' => {
+					base_value => q(1000),
+					rule => q(←←௲[→→]),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -2226,35 +4373,14 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'ethiopic-amete-alem') {
+			if ($_ eq 'islamic') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
 				return 'pm' if $time >= 1200
 					&& $time < 2400;
 			last SWITCH;
 			}
-			if ($_ eq 'coptic') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-			last SWITCH;
-			}
-			if ($_ eq 'buddhist') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-			last SWITCH;
-			}
-			if ($_ eq 'dangi') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-			last SWITCH;
-			}
-			if ($_ eq 'persian') {
+			if ($_ eq 'islamic-umalqura') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
 				return 'pm' if $time >= 1200
@@ -2262,6 +4388,13 @@ has 'day_period_data' => (
 			last SWITCH;
 			}
 			if ($_ eq 'ethiopic') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'roc') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
 				return 'pm' if $time >= 1200
@@ -2282,56 +4415,7 @@ has 'day_period_data' => (
 					&& $time < 2400;
 			last SWITCH;
 			}
-			if ($_ eq 'gregorian') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-			last SWITCH;
-			}
 			if ($_ eq 'islamic-tbla') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-			last SWITCH;
-			}
-			if ($_ eq 'islamic-civil') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-			last SWITCH;
-			}
-			if ($_ eq 'islamic') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-			last SWITCH;
-			}
-			if ($_ eq 'japanese') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-			last SWITCH;
-			}
-			if ($_ eq 'islamic-rgsa') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-			last SWITCH;
-			}
-			if ($_ eq 'islamic-umalqura') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-			last SWITCH;
-			}
-			if ($_ eq 'indian') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
 				return 'pm' if $time >= 1200
@@ -2345,7 +4429,70 @@ has 'day_period_data' => (
 					&& $time < 2400;
 			last SWITCH;
 			}
-			if ($_ eq 'roc') {
+			if ($_ eq 'gregorian') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'dangi') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'coptic') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'indian') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'ethiopic-amete-alem') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'islamic-civil') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'islamic-rgsa') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'japanese') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'buddhist') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+			last SWITCH;
+			}
+			if ($_ eq 'persian') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
 				return 'pm' if $time >= 1200
@@ -2384,15 +4531,15 @@ has 'day_periods' => (
 		},
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'pm' => q{PM},
-					'noon' => q{noon},
-					'am' => q{AM},
-				},
 				'narrow' => {
+					'noon' => q{n},
 					'pm' => q{p},
 					'am' => q{a},
-					'noon' => q{n},
+				},
+				'wide' => {
+					'noon' => q{noon},
+					'pm' => q{PM},
+					'am' => q{AM},
 				},
 				'abbreviated' => {
 					'alias' => 'wide',
@@ -3278,109 +5425,40 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'ethiopic' => {
-			'alias' => q{generic},
+		'dangi' => {
+			'alias' => q{chinese},
 		},
-		'buddhist' => {
-			'alias' => q{generic},
+		'islamic-rgsa' => {
+			'alias' => q{islamic},
 		},
-		'coptic' => {
+		'indian' => {
 			'alias' => q{generic},
 		},
 		'ethiopic-amete-alem' => {
 			'alias' => q{ethiopic},
 		},
-		'dangi' => {
-			'alias' => q{chinese},
-		},
-		'persian' => {
+		'coptic' => {
 			'alias' => q{generic},
-		},
-		'hebrew' => {
-			'alias' => q{generic},
-		},
-		'chinese' => {
-			Ed => q{d, E},
-			Gy => q{U},
-			GyMMM => q{U MMM},
-			GyMMMEd => q{U MMM d, E},
-			GyMMMd => q{U MMM d},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{MM-dd, E},
-			MMM => q{LLL},
-			MMMEd => q{MMM d, E},
-			MMMd => q{MMM d},
-			Md => q{MM-dd},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{U},
-			yMd => q{y-MM-dd},
-			yyyy => q{U},
-			yyyyM => q{y-MM},
-			yyyyMEd => q{y-MM-dd, E},
-			yyyyMMM => q{U MMM},
-			yyyyMMMEd => q{U MMM d, E},
-			yyyyMMMd => q{U MMM d},
-			yyyyMd => q{y-MM-dd},
-			yyyyQQQ => q{U QQQ},
-			yyyyQQQQ => q{U QQQQ},
-		},
-		'gregorian' => {
-			EHm => q{E HH:mm},
-			EHms => q{E HH:mm:ss},
-			Ed => q{d, E},
-			Ehm => q{E h:mm a},
-			Ehms => q{E h:mm:ss a},
-			Gy => q{G y},
-			GyMMM => q{G y MMM},
-			GyMMMEd => q{G y MMM d, E},
-			GyMMMd => q{G y MMM d},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{MM-dd, E},
-			MMM => q{LLL},
-			MMMEd => q{MMM d, E},
-			MMMd => q{MMM d},
-			Md => q{MM-dd},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y},
-			yM => q{y-MM},
-			yMEd => q{y-MM-dd, E},
-			yMMM => q{y MMM},
-			yMMMEd => q{y MMM d, E},
-			yMMMd => q{y MMM d},
-			yMd => q{y-MM-dd},
-			yQQQ => q{y QQQ},
-			yQQQQ => q{y QQQQ},
-		},
-		'islamic-tbla' => {
-			'alias' => q{islamic},
 		},
 		'islamic-civil' => {
 			'alias' => q{islamic},
 		},
-		'islamic-rgsa' => {
-			'alias' => q{islamic},
+		'buddhist' => {
+			'alias' => q{generic},
 		},
 		'japanese' => {
+			'alias' => q{generic},
+		},
+		'persian' => {
 			'alias' => q{generic},
 		},
 		'islamic' => {
 			'alias' => q{generic},
 		},
 		'islamic-umalqura' => {
+			'alias' => q{islamic},
+		},
+		'islamic-tbla' => {
 			'alias' => q{islamic},
 		},
 		'generic' => {
@@ -3418,11 +5496,80 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{G y QQQ},
 			yyyyQQQQ => q{G y QQQQ},
 		},
-		'indian' => {
-			'alias' => q{generic},
+		'gregorian' => {
+			EHm => q{E HH:mm},
+			EHms => q{E HH:mm:ss},
+			Ed => q{d, E},
+			Ehm => q{E h:mm a},
+			Ehms => q{E h:mm:ss a},
+			Gy => q{G y},
+			GyMMM => q{G y MMM},
+			GyMMMEd => q{G y MMM d, E},
+			GyMMMd => q{G y MMM d},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{MM-dd, E},
+			MMM => q{LLL},
+			MMMEd => q{MMM d, E},
+			MMMd => q{MMM d},
+			Md => q{MM-dd},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y},
+			yM => q{y-MM},
+			yMEd => q{y-MM-dd, E},
+			yMMM => q{y MMM},
+			yMMMEd => q{y MMM d, E},
+			yMMMd => q{y MMM d},
+			yMd => q{y-MM-dd},
+			yQQQ => q{y QQQ},
+			yQQQQ => q{y QQQQ},
 		},
 		'roc' => {
 			'alias' => q{generic},
+		},
+		'ethiopic' => {
+			'alias' => q{generic},
+		},
+		'hebrew' => {
+			'alias' => q{generic},
+		},
+		'chinese' => {
+			Ed => q{d, E},
+			Gy => q{U},
+			GyMMM => q{U MMM},
+			GyMMMEd => q{U MMM d, E},
+			GyMMMd => q{U MMM d},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{MM-dd, E},
+			MMM => q{LLL},
+			MMMEd => q{MMM d, E},
+			MMMd => q{MMM d},
+			Md => q{MM-dd},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{U},
+			yMd => q{y-MM-dd},
+			yyyy => q{U},
+			yyyyM => q{y-MM},
+			yyyyMEd => q{y-MM-dd, E},
+			yyyyMMM => q{U MMM},
+			yyyyMMMEd => q{U MMM d, E},
+			yyyyMMMd => q{U MMM d},
+			yyyyMd => q{y-MM-dd},
+			yyyyQQQ => q{U QQQ},
+			yyyyQQQQ => q{U QQQQ},
 		},
 	} },
 );
@@ -3432,28 +5579,43 @@ has 'datetime_formats_append_item' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'ethiopic' => {
-			'alias' => q{generic},
+		'dangi' => {
+			'alias' => q{chinese},
 		},
-		'buddhist' => {
-			'alias' => q{generic},
+		'islamic-rgsa' => {
+			'alias' => q{islamic},
 		},
-		'coptic' => {
+		'indian' => {
 			'alias' => q{generic},
 		},
 		'ethiopic-amete-alem' => {
 			'alias' => q{ethiopic},
 		},
-		'dangi' => {
-			'alias' => q{chinese},
+		'coptic' => {
+			'alias' => q{generic},
+		},
+		'islamic-civil' => {
+			'alias' => q{islamic},
+		},
+		'buddhist' => {
+			'alias' => q{generic},
+		},
+		'japanese' => {
+			'alias' => q{generic},
 		},
 		'persian' => {
 			'alias' => q{generic},
 		},
-		'hebrew' => {
+		'islamic' => {
 			'alias' => q{generic},
 		},
-		'chinese' => {
+		'islamic-umalqura' => {
+			'alias' => q{islamic},
+		},
+		'islamic-tbla' => {
+			'alias' => q{islamic},
+		},
+		'generic' => {
 			'Day' => '{0} ({2}: {1})',
 			'Day-Of-Week' => '{0} {1}',
 			'Era' => '{1} {0}',
@@ -3479,25 +5641,16 @@ has 'datetime_formats_append_item' => (
 			'Week' => '{0} ({2}: {1})',
 			'Year' => '{1} {0}',
 		},
-		'islamic-tbla' => {
-			'alias' => q{islamic},
-		},
-		'islamic-civil' => {
-			'alias' => q{islamic},
-		},
-		'islamic-rgsa' => {
-			'alias' => q{islamic},
-		},
-		'japanese' => {
+		'roc' => {
 			'alias' => q{generic},
 		},
-		'islamic' => {
+		'ethiopic' => {
 			'alias' => q{generic},
 		},
-		'islamic-umalqura' => {
-			'alias' => q{islamic},
+		'hebrew' => {
+			'alias' => q{generic},
 		},
-		'generic' => {
+		'chinese' => {
 			'Day' => '{0} ({2}: {1})',
 			'Day-Of-Week' => '{0} {1}',
 			'Era' => '{1} {0}',
@@ -3510,12 +5663,6 @@ has 'datetime_formats_append_item' => (
 			'Week' => '{0} ({2}: {1})',
 			'Year' => '{1} {0}',
 		},
-		'indian' => {
-			'alias' => q{generic},
-		},
-		'roc' => {
-			'alias' => q{generic},
-		},
 	} },
 );
 
@@ -3524,22 +5671,236 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'ethiopic' => {
-			'alias' => q{generic},
+		'dangi' => {
+			'alias' => q{chinese},
 		},
-		'buddhist' => {
-			'alias' => q{generic},
+		'islamic-rgsa' => {
+			'alias' => q{islamic},
 		},
-		'coptic' => {
+		'indian' => {
 			'alias' => q{generic},
 		},
 		'ethiopic-amete-alem' => {
 			'alias' => q{ethiopic},
 		},
-		'dangi' => {
-			'alias' => q{chinese},
+		'coptic' => {
+			'alias' => q{generic},
+		},
+		'islamic-civil' => {
+			'alias' => q{islamic},
+		},
+		'buddhist' => {
+			'alias' => q{generic},
+		},
+		'japanese' => {
+			'alias' => q{generic},
 		},
 		'persian' => {
+			'alias' => q{generic},
+		},
+		'islamic' => {
+			'alias' => q{generic},
+		},
+		'islamic-umalqura' => {
+			'alias' => q{islamic},
+		},
+		'islamic-tbla' => {
+			'alias' => q{islamic},
+		},
+		'generic' => {
+			H => {
+				H => q{HH–HH},
+			},
+			Hm => {
+				H => q{HH:mm–HH:mm},
+				m => q{HH:mm–HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm–HH:mm v},
+				m => q{HH:mm–HH:mm v},
+			},
+			Hv => {
+				H => q{HH–HH v},
+			},
+			M => {
+				M => q{MM–MM},
+			},
+			MEd => {
+				M => q{MM-dd, E – MM-dd, E},
+				d => q{MM-dd, E – MM-dd, E},
+			},
+			MMM => {
+				M => q{LLL–LLL},
+			},
+			MMMEd => {
+				M => q{MMM d, E – MMM d, E},
+				d => q{MMM d, E – MMM d, E},
+			},
+			MMMd => {
+				M => q{MMM d – MMM d},
+				d => q{MMM d–d},
+			},
+			Md => {
+				M => q{MM-dd – MM-dd},
+				d => q{MM-dd – MM-dd},
+			},
+			d => {
+				d => q{d–d},
+			},
+			fallback => '{0} – {1}',
+			h => {
+				a => q{h a – h a},
+				h => q{h–h a},
+			},
+			hm => {
+				a => q{h:mm a – h:mm a},
+				h => q{h:mm–h:mm a},
+				m => q{h:mm–h:mm a},
+			},
+			hmv => {
+				a => q{h:mm a – h:mm a v},
+				h => q{h:mm–h:mm a v},
+				m => q{h:mm–h:mm a v},
+			},
+			hv => {
+				a => q{h a – h a v},
+				h => q{h–h a v},
+			},
+			y => {
+				y => q{G y–y},
+			},
+			yM => {
+				M => q{GGGGG y-MM – y-MM},
+				y => q{GGGGG y-MM – y-MM},
+			},
+			yMEd => {
+				M => q{GGGGG y-MM-dd, E – y-MM-dd, E},
+				d => q{GGGGG y-MM-dd, E – y-MM-dd, E},
+				y => q{GGGGG y-MM-dd, E – y-MM-dd, E},
+			},
+			yMMM => {
+				M => q{G y MMM–MMM},
+				y => q{G y MMM – y MMM},
+			},
+			yMMMEd => {
+				M => q{G y MMM d, E – MMM d, E},
+				d => q{G y MMM d, E – MMM d, E},
+				y => q{G y MMM d, E – y MMM d, E},
+			},
+			yMMMM => {
+				M => q{G y MMMM–MMMM},
+				y => q{G y MMMM – y MMMM},
+			},
+			yMMMd => {
+				M => q{G y MMM d – MMM d},
+				d => q{G y MMM d–d},
+				y => q{G y MMM d – y MMM d},
+			},
+			yMd => {
+				M => q{GGGGG y-MM-dd – y-MM-dd},
+				d => q{GGGGG y-MM-dd – y-MM-dd},
+				y => q{GGGGG y-MM-dd – y-MM-dd},
+			},
+		},
+		'gregorian' => {
+			H => {
+				H => q{HH–HH},
+			},
+			Hm => {
+				H => q{HH:mm–HH:mm},
+				m => q{HH:mm–HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm–HH:mm v},
+				m => q{HH:mm–HH:mm v},
+			},
+			Hv => {
+				H => q{HH–HH v},
+			},
+			M => {
+				M => q{MM–MM},
+			},
+			MEd => {
+				M => q{MM-dd, E – MM-dd, E},
+				d => q{MM-dd, E – MM-dd, E},
+			},
+			MMM => {
+				M => q{LLL–LLL},
+			},
+			MMMEd => {
+				M => q{MMM d, E – MMM d, E},
+				d => q{MMM d, E – MMM d, E},
+			},
+			MMMd => {
+				M => q{MMM d – MMM d},
+				d => q{MMM d–d},
+			},
+			Md => {
+				M => q{MM-dd – MM-dd},
+				d => q{MM-dd – MM-dd},
+			},
+			d => {
+				d => q{d–d},
+			},
+			fallback => '{0} – {1}',
+			h => {
+				a => q{h a – h a},
+				h => q{h–h a},
+			},
+			hm => {
+				a => q{h:mm a – h:mm a},
+				h => q{h:mm–h:mm a},
+				m => q{h:mm–h:mm a},
+			},
+			hmv => {
+				a => q{h:mm a – h:mm a v},
+				h => q{h:mm–h:mm a v},
+				m => q{h:mm–h:mm a v},
+			},
+			hv => {
+				a => q{h a – h a v},
+				h => q{h–h a v},
+			},
+			y => {
+				y => q{y–y},
+			},
+			yM => {
+				M => q{y-MM – y-MM},
+				y => q{y-MM – y-MM},
+			},
+			yMEd => {
+				M => q{y-MM-dd, E – y-MM-dd, E},
+				d => q{y-MM-dd, E – y-MM-dd, E},
+				y => q{y-MM-dd, E – y-MM-dd, E},
+			},
+			yMMM => {
+				M => q{y MMM–MMM},
+				y => q{y MMM – y MMM},
+			},
+			yMMMEd => {
+				M => q{y MMM d, E – MMM d, E},
+				d => q{y MMM d, E – MMM d, E},
+				y => q{y MMM d, E – y MMM d, E},
+			},
+			yMMMM => {
+				M => q{y MMMM–MMMM},
+				y => q{y MMMM – y MMMM},
+			},
+			yMMMd => {
+				M => q{y MMM d – MMM d},
+				d => q{y MMM d–d},
+				y => q{y MMM d – y MMM d},
+			},
+			yMd => {
+				M => q{y-MM-dd – y-MM-dd},
+				d => q{y-MM-dd – y-MM-dd},
+				y => q{y-MM-dd – y-MM-dd},
+			},
+		},
+		'roc' => {
+			'alias' => q{generic},
+		},
+		'ethiopic' => {
 			'alias' => q{generic},
 		},
 		'hebrew' => {
@@ -3639,220 +6000,6 @@ has 'datetime_formats_interval' => (
 				d => q{y-MM-dd – y-MM-dd},
 				y => q{y-MM-dd – y-MM-dd},
 			},
-		},
-		'gregorian' => {
-			H => {
-				H => q{HH–HH},
-			},
-			Hm => {
-				H => q{HH:mm–HH:mm},
-				m => q{HH:mm–HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm–HH:mm v},
-				m => q{HH:mm–HH:mm v},
-			},
-			Hv => {
-				H => q{HH–HH v},
-			},
-			M => {
-				M => q{MM–MM},
-			},
-			MEd => {
-				M => q{MM-dd, E – MM-dd, E},
-				d => q{MM-dd, E – MM-dd, E},
-			},
-			MMM => {
-				M => q{LLL–LLL},
-			},
-			MMMEd => {
-				M => q{MMM d, E – MMM d, E},
-				d => q{MMM d, E – MMM d, E},
-			},
-			MMMd => {
-				M => q{MMM d – MMM d},
-				d => q{MMM d–d},
-			},
-			Md => {
-				M => q{MM-dd – MM-dd},
-				d => q{MM-dd – MM-dd},
-			},
-			d => {
-				d => q{d–d},
-			},
-			fallback => '{0} – {1}',
-			h => {
-				a => q{h a – h a},
-				h => q{h–h a},
-			},
-			hm => {
-				a => q{h:mm a – h:mm a},
-				h => q{h:mm–h:mm a},
-				m => q{h:mm–h:mm a},
-			},
-			hmv => {
-				a => q{h:mm a – h:mm a v},
-				h => q{h:mm–h:mm a v},
-				m => q{h:mm–h:mm a v},
-			},
-			hv => {
-				a => q{h a – h a v},
-				h => q{h–h a v},
-			},
-			y => {
-				y => q{y–y},
-			},
-			yM => {
-				M => q{y-MM – y-MM},
-				y => q{y-MM – y-MM},
-			},
-			yMEd => {
-				M => q{y-MM-dd, E – y-MM-dd, E},
-				d => q{y-MM-dd, E – y-MM-dd, E},
-				y => q{y-MM-dd, E – y-MM-dd, E},
-			},
-			yMMM => {
-				M => q{y MMM–MMM},
-				y => q{y MMM – y MMM},
-			},
-			yMMMEd => {
-				M => q{y MMM d, E – MMM d, E},
-				d => q{y MMM d, E – MMM d, E},
-				y => q{y MMM d, E – y MMM d, E},
-			},
-			yMMMM => {
-				M => q{y MMMM–MMMM},
-				y => q{y MMMM – y MMMM},
-			},
-			yMMMd => {
-				M => q{y MMM d – MMM d},
-				d => q{y MMM d–d},
-				y => q{y MMM d – y MMM d},
-			},
-			yMd => {
-				M => q{y-MM-dd – y-MM-dd},
-				d => q{y-MM-dd – y-MM-dd},
-				y => q{y-MM-dd – y-MM-dd},
-			},
-		},
-		'islamic-tbla' => {
-			'alias' => q{islamic},
-		},
-		'islamic-civil' => {
-			'alias' => q{islamic},
-		},
-		'islamic-rgsa' => {
-			'alias' => q{islamic},
-		},
-		'japanese' => {
-			'alias' => q{generic},
-		},
-		'islamic' => {
-			'alias' => q{generic},
-		},
-		'islamic-umalqura' => {
-			'alias' => q{islamic},
-		},
-		'generic' => {
-			H => {
-				H => q{HH–HH},
-			},
-			Hm => {
-				H => q{HH:mm–HH:mm},
-				m => q{HH:mm–HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm–HH:mm v},
-				m => q{HH:mm–HH:mm v},
-			},
-			Hv => {
-				H => q{HH–HH v},
-			},
-			M => {
-				M => q{MM–MM},
-			},
-			MEd => {
-				M => q{MM-dd, E – MM-dd, E},
-				d => q{MM-dd, E – MM-dd, E},
-			},
-			MMM => {
-				M => q{LLL–LLL},
-			},
-			MMMEd => {
-				M => q{MMM d, E – MMM d, E},
-				d => q{MMM d, E – MMM d, E},
-			},
-			MMMd => {
-				M => q{MMM d – MMM d},
-				d => q{MMM d–d},
-			},
-			Md => {
-				M => q{MM-dd – MM-dd},
-				d => q{MM-dd – MM-dd},
-			},
-			d => {
-				d => q{d–d},
-			},
-			fallback => '{0} – {1}',
-			h => {
-				a => q{h a – h a},
-				h => q{h–h a},
-			},
-			hm => {
-				a => q{h:mm a – h:mm a},
-				h => q{h:mm–h:mm a},
-				m => q{h:mm–h:mm a},
-			},
-			hmv => {
-				a => q{h:mm a – h:mm a v},
-				h => q{h:mm–h:mm a v},
-				m => q{h:mm–h:mm a v},
-			},
-			hv => {
-				a => q{h a – h a v},
-				h => q{h–h a v},
-			},
-			y => {
-				y => q{G y–y},
-			},
-			yM => {
-				M => q{GGGGG y-MM – y-MM},
-				y => q{GGGGG y-MM – y-MM},
-			},
-			yMEd => {
-				M => q{GGGGG y-MM-dd, E – y-MM-dd, E},
-				d => q{GGGGG y-MM-dd, E – y-MM-dd, E},
-				y => q{GGGGG y-MM-dd, E – y-MM-dd, E},
-			},
-			yMMM => {
-				M => q{G y MMM–MMM},
-				y => q{G y MMM – y MMM},
-			},
-			yMMMEd => {
-				M => q{G y MMM d, E – MMM d, E},
-				d => q{G y MMM d, E – MMM d, E},
-				y => q{G y MMM d, E – y MMM d, E},
-			},
-			yMMMM => {
-				M => q{G y MMMM–MMMM},
-				y => q{G y MMMM – y MMMM},
-			},
-			yMMMd => {
-				M => q{G y MMM d – MMM d},
-				d => q{G y MMM d–d},
-				y => q{G y MMM d – y MMM d},
-			},
-			yMd => {
-				M => q{GGGGG y-MM-dd – y-MM-dd},
-				d => q{GGGGG y-MM-dd – y-MM-dd},
-				y => q{GGGGG y-MM-dd – y-MM-dd},
-			},
-		},
-		'indian' => {
-			'alias' => q{generic},
-		},
-		'roc' => {
-			'alias' => q{generic},
 		},
 	} },
 );

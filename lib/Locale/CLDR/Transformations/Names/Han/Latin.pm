@@ -1,11 +1,11 @@
 package Locale::CLDR::Transformations::Names::Han::Latin;
 # This file auto generated from Data\common\transforms\Han-Latin-Names.xml
-#	on Sun  1 Jun  2:11:09 pm GMT
+#	on Tue 10 Jun  8:12:22 pm GMT
 # XML file generated 2013-08-16 22:59:01 -0500 (Fri, 16 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';

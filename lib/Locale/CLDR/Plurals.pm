@@ -1,11 +1,11 @@
 package Locale::CLDR::Plurals;
 # This file auto generated from Data\common\supplemental\ordinals.xml
-#	on Sun  1 Jun  2:10:32 pm GMT
+#	on Tue 10 Jun  8:11:39 pm GMT
 # XML file generated 2014-02-13 11:57:02 -0600 (Thu, 13 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';

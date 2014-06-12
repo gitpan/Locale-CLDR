@@ -1,11 +1,11 @@
 package Locale::CLDR::Kl;
 # This file auto generated from Data\common\main\kl.xml
-#	on Sun  1 Jun  3:29:38 pm GMT
+#	on Tue 10 Jun  9:33:41 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,293 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'numbertimes' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(ataaseq),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(marlunnik),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(pingasunik),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(sisamanik),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(tallimanik),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(arfinilinnik),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(arfineq-marlunnik),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(arfineq-pingasunik),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(arfineq-sisamanik),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(qulinik),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(aqqanilinik),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(aqqaneq-marlunnik),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(aqqaneq-pingasunik),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(aqqaneq-sisamanik),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(aqqaneq-tallimanik),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(arfersanilinnik),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(arfersaneq-marlunnik),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(arfersaneq-pingasunik),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(arfersaneq-sisamanik),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(←%%numbertimes← qulillit[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(uutritit[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←%%numbertimes← uutritillit[ →→]),
+				},
+				'max' => {
+					base_value => q(200),
+					rule => q(←%%numbertimes← uutritillit[ →→]),
+				},
+			},
+		},
+		'spellout-cardinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(nuulu),
+				},
+				'x.x' => {
+					rule => q(←← komma →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(ataaseq),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(marluk),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(pingasut),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(sisamat),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(tallimat),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(arfinillit),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(arfineq-marluk),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(arfineq-pingasut),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(arfineq-sisamat),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(qulit),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(aqqanilit),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(aqqaneq-marluk),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(aqqaneq-pingasut),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(aqqaneq-sisamat),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(aqqaneq-tallimat),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(arfersanillit),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(arfersaneq-marluk),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(arfersaneq-pingasut),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(arfersaneq-sisamat),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(←%%numbertimes← qulillit[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(uutritit[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←%%numbertimes← uutritillit[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(tuusintit[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%%numbertimes← tuusintillit[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(millionit[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%%numbertimes← millionillit[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(milliardit[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%%numbertimes← milliardillit[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(billionit[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%%numbertimes← billioniillit[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(billiardit[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%%numbertimes← billiardillit[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -1629,13 +1916,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'pm' => q{ulloqeqqata-kingorna},
-					'am' => q{ulloqeqqata-tungaa},
-				},
 				'abbreviated' => {
 					'am' => q{u.t.},
 					'pm' => q{u.k.},
+				},
+				'wide' => {
+					'am' => q{ulloqeqqata-tungaa},
+					'pm' => q{ulloqeqqata-kingorna},
 				},
 			},
 		},

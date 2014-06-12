@@ -1,11 +1,11 @@
 package Locale::CLDR::Gl;
 # This file auto generated from Data\common\main\gl.xml
-#	on Sun  1 Jun  3:05:53 pm GMT
+#	on Tue 10 Jun  9:06:27 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -2796,8 +2796,8 @@ has 'day_periods' => (
 					'am' => q{a.m.},
 				},
 				'narrow' => {
-					'am' => q{a},
 					'pm' => q{p},
+					'am' => q{a},
 				},
 			},
 		},

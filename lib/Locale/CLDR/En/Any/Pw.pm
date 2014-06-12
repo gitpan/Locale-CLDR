@@ -1,11 +1,11 @@
 package Locale::CLDR::En::Any::Pw;
 # This file auto generated from Data\common\main\en_PW.xml
-#	on Sun  1 Jun  2:49:05 pm GMT
+#	on Tue 10 Jun  8:50:15 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';

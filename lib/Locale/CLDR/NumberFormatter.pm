@@ -2,7 +2,7 @@ package Locale::CLDR::NumberFormatter;
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 
 use v5.10;
@@ -12,11 +12,27 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose::Role;
 
-# This method assumes a numeric numbering system. It will have to be re written to handle algorithmic systems later 
 sub format_number {
 	my ($self, $number, $format, $currency, $for_cash) = @_;
 	
-	$format //= '0';
+	# Check if we want to format a none numeric number type
+	if(!defined $format) {
+		my $numbering_system = $self->default_numbering_system();
+		if ($self->numbering_system->{$numbering_system}{type} eq 'algorithmic') {
+			$format = $self->numbering_system->{$numbering_system}{data};
+		}
+		else {
+			$format = '0';
+		}
+	}
+	
+	# First check to see if this is an algorithmic format
+	my @valid_formats = $self->_get_valid_algorithmic_formats();
+	
+	if (grep {$_ eq $format} @valid_formats) {
+		return $self->_algorithmic_number_format($number, $format);
+	}
+		
 	
 	my $currency_data;
 	
@@ -73,7 +89,6 @@ sub _get_currency_digits {
 	
 	return $currency_data->{$digits};
 }
-
 
 sub parse_number_format {
 	my ($self, $format, $currency, $currency_data, $for_cash) = @_;
@@ -167,9 +182,9 @@ sub parse_number_format {
 			# Check for grouping
 			my ($grouping) = split /\./, $to_parse;
 			my @groups = split /,/, $grouping;
-			shift @groups if @groups == 3;
+			shift @groups;
 			($major_group, $minor_group) = map {length} @groups;
-			$minor_group = $major_group if @groups == 1;
+			$minor_group //= $major_group;
 		}
 		
 		$cache{$format}{$type} = {
@@ -254,41 +269,21 @@ sub get_formatted_number {
 	}
 	
 	# Handle grouping
-	my ($minor_group, $major_group) = map { '.' x $_ } ($format->{$type}{minor_group}, $format->{$type}{major_group});
 	my ($integer, $decimal) = split /\./, $number;
-	my ($minor) = $integer =~ /($minor_group)$/;
-	my @parts;
-	if (length $minor) {
-		$integer =~ s/$minor_group$//;
-		@parts = ($minor);
-		while (1) {
-			my ($major) = $integer =~ /($major_group)$/;
-			if (defined $major && length $major) {
-				$integer =~ s/$major_group$//;
-				unshift @parts, $major;
-			}
-			else {
-				unshift @parts, $integer;
-				last;
-			}
-		}
-	}
-	else {
-		@parts = ($integer);
+
+	my ($separator, $decimal_point) = ($symbols{$symbols_type}{group}, $symbols{$symbols_type}{decimal});
+	my ($minor_group, $major_group) = ($format->{$type}{minor_group}, $format->{$type}{major_group});
+	
+	if (defined $minor_group) {
+		# Fast commify using unpack
+		my $pattern = "(A$minor_group)(A$major_group)*";
+		$number = reverse join $separator, grep {length} unpack $pattern, reverse $integer;
 	}
 	
-	shift @parts unless length $parts[0];
-	
-	$number = join( ',', @parts);
-	$number.= ".$decimal" if defined $decimal;
+	$number.= "$decimal_point$decimal" if defined $decimal;
 	
 	# Fix digits
 	$number =~ s/([0-9])/$digits[$1]/eg;
-	
-	# Fix separator and decimal point
-	my ($separator, $decimal_point) = ($symbols{$symbols_type}{group}, $symbols{$symbols_type}{decimal});
-	$number =~ s/,/$separator/g;
-	$number =~ s/\./$decimal_point/;
 		
 	my ($prefix, $suffix) = ( $format->{$type}{prefix}, $format->{$type}{suffix});
 	
@@ -316,6 +311,284 @@ sub get_digits {
 	return @$digits;
 }
 
+# RBNF
+# Note that there are a couple of assumptions with the way
+# I handle Rule Base Number Formats.
+# 1) The number is treated as a string for as long as possible
+#	This allows things like -0.0 to be correctly formatted
+# 2) There is no fall back. All the rule sets are self contained
+#	in a bundle. Fall back is used to find a bundle but once a 
+#	bundle is found no further processing of the bundle chain
+#	is done. This was found by trial and error when attempting 
+#	to process -0.0 correctly into English.
+sub _get_valid_algorithmic_formats {
+	my $self = shift;
+	
+	my @formats = map { @{$_->valid_algorithmic_formats()} } $self->_find_bundle('valid_algorithmic_formats');
+	
+	my %seen;
+	return sort grep { ! $seen{$_}++ } @formats;
+}
+
+# Main entry point to RBNF
+sub _algorithmic_number_format {
+	my ($self, $number, $format_name, $type) = @_;
+	
+	my $format_data = $self->_get_algorithmic_number_format_data_by_name($format_name, $type);
+	
+	return $number unless $format_data;
+	
+	return $self->_process_algorithmic_number_data($number, $format_data);
+}
+
+sub _get_algorithmic_number_format_data_by_name {
+	my ($self, $format_name, $type) = @_;
+	$type //= 'public';
+	
+	my %data = ();
+	
+	my @data_bundles = $self->_find_bundle('algorithmic_number_format_data');
+	foreach my $data_bundle (@data_bundles) {
+		my $data = $data_bundle->algorithmic_number_format_data();
+		next unless $data->{$format_name};
+		next unless $data->{$format_name}{$type};
+		
+		foreach my $rule (keys %{$data->{$format_name}{$type}}) {
+			$data{$rule} = $data->{$format_name}{$type}{$rule};
+		}
+		
+		last;
+	}
+	
+	return keys %data ? \%data : undef;
+}
+	
+sub _process_algorithmic_number_data {
+	my ($self, $number, $format_data, $in_fraction_rule_set) = @_;
+	
+	$in_fraction_rule_set //= 0;
+	
+	my $format = $self->_get_algorithmic_number_format($number, $format_data);
+	
+	my $format_rule = $format->{rule};
+	my $divisor = $format->{divisor} // 10;
+	my $base_value = $format->{base_value} // '';
+	
+	# Negative numbers
+	if ($number =~ /^-/) {
+		my $positive_number = $number;
+		$positive_number =~ s/^-//;
+		
+		if ($format_rule =~ /→→/) {
+			$format_rule =~ s/→→/$self->_process_algorithmic_number_data($positive_number, $format_data)/e;
+		}
+		elsif((my $rule_name) = $format_rule =~ /→(.+)→/) {
+			my $type = 'public';
+			if ($rule_name =~ s/^%%/%/) {
+				$type = 'private';
+			}
+			my $format_data = $self->_get_algorithmic_number_format_data_by_name($rule_name, $type);
+			if($format_data) {
+				# was a valid name
+				$format_rule =~ s/→(.+)→/$self->_process_algorithmic_number_data($positive_number, $format_data)/e;
+			}
+			else {
+				# Assume a format
+				$format_rule =~ s/→(.+)→/$self->format_number($positive_number, $1)/e;
+			}
+		}
+		elsif($format_rule =~ /=%%.*=/) {
+			$format_rule =~ s/=%%(.*?)=/$self->_algorithmic_number_format($number, $1, 'private')/eg;
+		}
+		elsif($format_rule =~ /=%.*=/) {
+			$format_rule =~ s/=%(.*?)=/$self->_algorithmic_number_format($number, $1, 'public')/eg;
+		}
+		elsif($format_rule =~ /=.*=/) {
+			$format_rule =~ s/=(.*?)=/$self->format_number($number, $1)/eg;
+		}
+	}
+	# Fractions
+	elsif( $number =~ /\./ ) {
+		my $in_fraction_rule_set = 1;
+		my ($integer, $fraction) = $number =~ /^([^.])*\.(.*)$/;
+		
+		if ($number >= 0 && $number < 1) {
+			$format_rule =~ s/\[.*\]//;
+		}
+		else {
+			$format_rule =~ s/[\[\]]//g;
+		}
+		
+		if ($format_rule =~ /→→/) {
+			$format_rule =~ s/→→/$self->_process_algorithmic_number_data_fractions($fraction, $format_data)/e;
+		}
+		elsif((my $rule_name) = $format_rule =~ /→(.*)→/) {
+			my $type = 'public';
+			if ($rule_name =~ s/^%%/%/) {
+				$type = 'private';
+			}
+			my $format_data = $self->_get_algorithmic_number_format_data_by_name($rule_name, $type);
+			if ($format_data) {
+				$format_rule =~ s/→(.*)→/$self->_process_algorithmic_number_data_fractions($fraction, $format_data)/e;
+			}
+			else {
+				$format_rule =~ s/→(.*)→/$self->format_number($fraction, $1)/e;
+			}
+		}
+		
+		if ($format_rule =~ /←←/) {
+			$format_rule =~ s/←←/$self->_process_algorithmic_number_data($integer, $format_data, $in_fraction_rule_set)/e;
+		}
+		elsif((my $rule_name) = $format_rule =~ /←(.+)←/) {
+			my $type = 'public';
+			if ($rule_name =~ s/^%%/%/) {
+				$type = 'private';
+			}
+			my $format_data = $self->_get_algorithmic_number_format_data_by_name($rule_name, $type);
+			if ($format_data) {
+				$format_rule =~ s/←(.*)←/$self->_process_algorithmic_number_data($integer, $format_data, $in_fraction_rule_set)/e;
+			}
+			else {
+				$format_rule =~ s/←(.*)←/$self->format_number($integer, $1)/e;
+			}
+		}
+		
+		if($format_rule =~ /=.*=/) {
+			if($format_rule =~ /=%%.*=/) {
+				$format_rule =~ s/=%%(.*?)=/$self->_algorithmic_number_format($number, $1, 'private')/eg;
+			}
+			elsif($format_rule =~ /=%.*=/) {
+				$format_rule =~ s/=%(.*?)=/$self->_algorithmic_number_format($number, $1, 'public')/eg;
+			}
+			else {
+				$format_rule =~ s/=(.*?)=/$self->format_number($integer, $1)/eg;
+			}
+		}
+	}
+	
+	# Everything else
+	else {
+		# At this stage we have a non negative integer
+		if ($format_rule =~ /\[.*\]/) {
+			if ($in_fraction_rule_set && $number * $base_value == 1) {
+				$format_rule =~ s/\[.*\]//;
+			}
+			# Not fractional rule set      Number is a multiple of $divisor and the multiple is even
+			elsif (! $in_fraction_rule_set && ! ($number % $base_value) ) {
+				$format_rule =~ s/\[.*\]//;
+			}
+			else {
+				$format_rule =~ s/[\[\]]//g;
+			}
+		}
+		
+		if ($in_fraction_rule_set) {
+			if (my ($rule_name) = $format_rule =~ /←(.*)←/) {
+				if (length $rule_name) {
+					my $type = 'public';
+					if ($rule_name =~ s/^%%/%/) {
+						$type = 'private';
+					}
+					my $format_data = $self->_get_algorithmic_number_format_data_by_name($rule_name, $type);
+					if ($format_data) {
+						$format_rule =~ s/←(.*)←/$self->_process_algorithmic_number_data($number * $base_value, $format_data, $in_fraction_rule_set)/e;
+					}
+					else {
+						$format_rule =~ s/←(.*)←/$self->format_number($number * $base_value, $1)/e;
+					}
+				}
+				else {
+					$format_rule =~ s/←←/$self->_process_algorithmic_number_data($number * $base_value, $format_data, $in_fraction_rule_set)/e;
+				}
+			}
+			elsif($format_rule =~ /=.*=/) {
+				$format_rule =~ s/=(.*?)=/$self->format_number($number, $1)/eg;
+			}
+		}
+		else {
+			if (my ($rule_name) = $format_rule =~ /→(.*)→/) {
+				if (length $rule_name) {
+					my $type = 'public';
+					if ($rule_name =~ s/^%%/%/) {
+						$type = 'private';
+					}
+					my $format_data = $self->_get_algorithmic_number_format_data_by_name($rule_name, $type);
+					if ($format_data) {
+						$format_rule =~ s/→(.+)→/$self->_process_algorithmic_number_data($number % $base_value, $format_data)/e;
+					}
+					else {
+						$format_rule =~ s/→(.*)→/$self->format_number($number % $base_value, $1)/e;
+					}
+				}
+				else {
+					$format_rule =~ s/→→/$self->_process_algorithmic_number_data($number % $base_value, $format_data)/e;
+				}
+			}
+			
+			if (my ($rule_name) = $format_rule =~ /←(.*)←/) {
+				if (length $rule_name) {
+					my $type = 'public';
+					if ($rule_name =~ s/^%%/%/) {
+						$type = 'private';
+					}
+					my $format_data = $self->_get_algorithmic_number_format_data_by_name($rule_name, $type);
+					if ($format_data) {
+						$format_rule =~ s|←(.*)←|$self->_process_algorithmic_number_data(int ($number / $divisor), $format_data)|e;
+					}
+					else {
+						$format_rule =~ s|←(.*)←|$self->format_number(int($number / $divisor), $1)|e;
+					}
+				}
+				else {
+					$format_rule =~ s|←←|$self->_process_algorithmic_number_data(int($number / $divisor), $format_data)|e;
+				}
+			}
+			
+			if($format_rule =~ /=.*=/) {
+				if($format_rule =~ /=%%.*=/) {
+					$format_rule =~ s/=%%(.*?)=/$self->_algorithmic_number_format($number, $1, 'private')/eg;
+				}
+				elsif($format_rule =~ /=%.*=/) {
+					$format_rule =~ s/=%(.*?)=/$self->_algorithmic_number_format($number, $1, 'public')/eg;
+				}
+				else {
+					$format_rule =~ s/=(.*?)=/$self->format_number($number, $1)/eg;
+				}
+			}
+		}
+	}
+	
+	return $format_rule;
+}
+
+sub _process_algorithmic_number_data_fractions {
+	my ($self, $fraction, $format_data) = @_;
+	
+	my $result = '';
+	foreach my $digit (split //, $fraction) {
+		$result .= $self->_process_algorithmic_number_data($digit, $format_data, 1);
+	}
+	
+	return $result;
+}
+
+sub _get_algorithmic_number_format {
+	my ($self, $number, $format_data) = @_;
+	
+	return $format_data->{'-x'} if $number =~ /^-/ && exists $format_data->{'-x'};
+	return $format_data->{'x.x'} if $number =~ /\./ && exists $format_data->{'x.x'};
+	return $format_data->{0} if $number == 0 || $number =~ /^-/;
+	return $format_data->{max} if $number >= $format_data->{max}{base_value};
+	
+	my $previous = 0;
+	foreach my $key (sort { $a <=> $b } grep /^[0-9]+$/, keys %$format_data) {
+		next if $key == 0;
+		return $format_data->{$key} if $number == $key;
+		return $format_data->{$previous} if $number < $key;
+		$previous = $key;
+	}
+}
+	
 no Moose::Role;
 
 1;

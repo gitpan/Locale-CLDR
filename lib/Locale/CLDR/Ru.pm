@@ -1,11 +1,11 @@
 package Locale::CLDR::Ru;
 # This file auto generated from Data\common\main\ru.xml
-#	on Sun  1 Jun  4:14:23 pm GMT
+#	on Tue 10 Jun 10:24:54 pm GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,537 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal-masculine','spellout-cardinal-neuter','spellout-cardinal-feminine' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'spellout-cardinal-feminine' => {
+			'public' => {
+				'-x' => {
+					rule => q(минус →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(ноль),
+				},
+				'x.x' => {
+					rule => q(←← запятая →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(одна),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(две),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(двадцать[ →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(тридцать[ →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(сорок[ →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(пятьдесят[ →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(шестьдесят[ →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(семьдесят[ →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(восемьдесят[ →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(девяносто[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(сто[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←%spellout-cardinal-feminine←сти[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(←%spellout-cardinal-feminine←ста[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(←%spellout-cardinal-feminine←сот[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысяча[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-feminine← тысячи[ →→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(←%spellout-cardinal-feminine← тысяч[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine← миллион[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← миллионы[ →→]),
+				},
+				'5000000' => {
+					base_value => q(5000000),
+					rule => q(←%spellout-cardinal-masculine← миллионов[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine← миллиард[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-masculine← миллиарды[ →→]),
+				},
+				'5000000000' => {
+					base_value => q(5000000000),
+					rule => q(←%spellout-cardinal-masculine← миллиардов[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine← биллион[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← биллионы[ →→]),
+				},
+				'5000000000000' => {
+					base_value => q(5000000000000),
+					rule => q(←%spellout-cardinal-masculine← биллионов[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine← биллиард[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-masculine← биллиарды[ →→]),
+				},
+				'5000000000000000' => {
+					base_value => q(5000000000000000),
+					rule => q(←%spellout-cardinal-masculine← биллиардов[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-masculine' => {
+			'public' => {
+				'-x' => {
+					rule => q(минус →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(ноль),
+				},
+				'x.x' => {
+					rule => q(←← запятая →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(один),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(два),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(три),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(четыре),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(пять),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(шесть),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(семь),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(восемь),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(девять),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(десять),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(одиннадцать),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(двенадцать),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(тринадцать),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(четырнадцать),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(пятнадцать),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(шестнадцать),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(семнадцать),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(восемнадцать),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(девятнадцать),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(двадцать[ →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(тридцать[ →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(сорок[ →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(пятьдесят[ →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(шестьдесят[ →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(семьдесят[ →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(восемьдесят[ →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(девяносто[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(сто[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←%spellout-cardinal-feminine←сти[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(←%spellout-cardinal-feminine←ста[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(←%spellout-cardinal-feminine←сот[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысяча[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-feminine← тысячи[ →→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(←%spellout-cardinal-feminine← тысяч[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine← миллион[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← миллионы[ →→]),
+				},
+				'5000000' => {
+					base_value => q(5000000),
+					rule => q(←%spellout-cardinal-masculine← миллионов[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine← миллиард[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-masculine← миллиарды[ →→]),
+				},
+				'5000000000' => {
+					base_value => q(5000000000),
+					rule => q(←%spellout-cardinal-masculine← миллиардов[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine← биллион[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← биллионы[ →→]),
+				},
+				'5000000000000' => {
+					base_value => q(5000000000000),
+					rule => q(←%spellout-cardinal-masculine← биллионов[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine← биллиард[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-masculine← биллиарды[ →→]),
+				},
+				'5000000000000000' => {
+					base_value => q(5000000000000000),
+					rule => q(←%spellout-cardinal-masculine← биллиардов[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-neuter' => {
+			'public' => {
+				'-x' => {
+					rule => q(минус →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(ноль),
+				},
+				'x.x' => {
+					rule => q(←← запятая →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(одно),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(два),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(двадцать[ →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(тридцать[ →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(сорок[ →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(пятьдесят[ →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(шестьдесят[ →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(семьдесят[ →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(восемьдесят[ →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(девяносто[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(сто[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←%spellout-cardinal-feminine←сти[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(←%spellout-cardinal-feminine←ста[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(←%spellout-cardinal-feminine←сот[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-feminine← тысяча[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-feminine← тысячи[ →→]),
+				},
+				'5000' => {
+					base_value => q(5000),
+					rule => q(←%spellout-cardinal-feminine← тысяч[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-masculine← миллион[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← миллионы[ →→]),
+				},
+				'5000000' => {
+					base_value => q(5000000),
+					rule => q(←%spellout-cardinal-masculine← миллионов[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%spellout-cardinal-masculine← миллиард[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-masculine← миллиарды[ →→]),
+				},
+				'5000000000' => {
+					base_value => q(5000000000),
+					rule => q(←%spellout-cardinal-masculine← миллиардов[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%spellout-cardinal-masculine← биллион[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← биллионы[ →→]),
+				},
+				'5000000000000' => {
+					base_value => q(5000000000000),
+					rule => q(←%spellout-cardinal-masculine← биллионов[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%spellout-cardinal-masculine← биллиард[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-masculine← биллиарды[ →→]),
+				},
+				'5000000000000000' => {
+					base_value => q(5000000000000000),
+					rule => q(←%spellout-cardinal-masculine← биллиардов[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -5591,17 +6122,17 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'abbreviated' => {
-					'pm' => q{PM},
+				'narrow' => {
 					'am' => q{AM},
+					'pm' => q{PM},
 				},
 				'wide' => {
 					'am' => q{AM},
 					'pm' => q{PM},
 				},
-				'narrow' => {
-					'pm' => q{PM},
+				'abbreviated' => {
 					'am' => q{AM},
+					'pm' => q{PM},
 				},
 			},
 		},
@@ -6022,6 +6553,39 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'chinese' => {
+			E => q{ccc},
+			Ed => q{E, d},
+			Gy => q{U},
+			GyMMM => q{LLL U},
+			GyMMMEd => q{E, d MMM U},
+			GyMMMd => q{d MMM U},
+			H => q{H},
+			Hm => q{H:mm},
+			Hms => q{H:mm:ss},
+			M => q{L},
+			MEd => q{E, dd.MM},
+			MMM => q{LLL},
+			MMMEd => q{ccc, d MMM},
+			MMMd => q{d MMM},
+			Md => q{dd.MM},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{U},
+			yyyy => q{U},
+			yyyyM => q{MM.y},
+			yyyyMEd => q{E, dd.MM.y},
+			yyyyMMM => q{LLL U},
+			yyyyMMMEd => q{E, d MMM U},
+			yyyyMMMM => q{LLLL U},
+			yyyyMMMd => q{d MMM U},
+			yyyyMd => q{dd.MM.y},
+			yyyyQQQ => q{QQQ U},
+			yyyyQQQQ => q{QQQQ U},
+		},
 		'gregorian' => {
 			E => q{ccc},
 			EHm => q{E HH:mm},
@@ -6060,39 +6624,6 @@ has 'datetime_formats_available_formats' => (
 			yMd => q{dd.MM.y},
 			yQQQ => q{QQQ y 'г'.},
 			yQQQQ => q{QQQQ y 'г'.},
-		},
-		'chinese' => {
-			E => q{ccc},
-			Ed => q{E, d},
-			Gy => q{U},
-			GyMMM => q{LLL U},
-			GyMMMEd => q{E, d MMM U},
-			GyMMMd => q{d MMM U},
-			H => q{H},
-			Hm => q{H:mm},
-			Hms => q{H:mm:ss},
-			M => q{L},
-			MEd => q{E, dd.MM},
-			MMM => q{LLL},
-			MMMEd => q{ccc, d MMM},
-			MMMd => q{d MMM},
-			Md => q{dd.MM},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{U},
-			yyyy => q{U},
-			yyyyM => q{MM.y},
-			yyyyMEd => q{E, dd.MM.y},
-			yyyyMMM => q{LLL U},
-			yyyyMMMEd => q{E, d MMM U},
-			yyyyMMMM => q{LLLL U},
-			yyyyMMMd => q{d MMM U},
-			yyyyMd => q{dd.MM.y},
-			yyyyQQQ => q{QQQ U},
-			yyyyQQQQ => q{QQQQ U},
 		},
 		'generic' => {
 			E => q{ccc},

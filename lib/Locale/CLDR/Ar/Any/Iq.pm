@@ -1,11 +1,11 @@
 package Locale::CLDR::Ar::Any::Iq;
 # This file auto generated from Data\common\main\ar_IQ.xml
-#	on Sun  1 Jun  2:16:57 pm GMT
+#	on Tue 10 Jun  8:18:28 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';

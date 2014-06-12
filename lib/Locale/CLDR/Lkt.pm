@@ -1,11 +1,11 @@
 package Locale::CLDR::Lkt;
 # This file auto generated from Data\common\main\lkt.xml
-#	on Sun  1 Jun  3:40:17 pm GMT
+#	on Tue 10 Jun  9:45:58 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';

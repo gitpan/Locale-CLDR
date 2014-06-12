@@ -1,11 +1,11 @@
 package Locale::CLDR::Th;
 # This file auto generated from Data\common\main\th.xml
-#	on Sun  1 Jun  4:35:17 pm GMT
+#	on Tue 10 Jun 10:47:43 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,182 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal','spellout-ordinal','digits-ordinal' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'alt-ones' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(เอ็ด),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(=%spellout-cardinal=),
+				},
+				'max' => {
+					base_value => q(2),
+					rule => q(=%spellout-cardinal=),
+				},
+			},
+		},
+		'digits-ordinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(ที่−→#,##0→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(ที่​=#,##0=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(ที่​=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(ลบ​→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(ศูนย์),
+				},
+				'x.x' => {
+					rule => q(←←​จุด​→→→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(หนึ่ง),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(สอง),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(สาม),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(สี่),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(ห้า),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(หก),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(เจ็ด),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(แปด),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(เก้า),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(สิบ[​→%%alt-ones→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(ยี่​สิบ[​→%%alt-ones→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(←←​สิบ[​→%%alt-ones→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←←​ร้อย[​→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←←​พัน[​→→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(←←​หมื่น[​→→]),
+				},
+				'100000' => {
+					base_value => q(100000),
+					rule => q(←←​แสน[​→→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←←​ล้าน[​→→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+		'spellout-ordinal' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(ที่​=%spellout-cardinal=),
+				},
+				'x.x' => {
+					rule => q(=#,##0.#=),
+				},
+				'max' => {
+					rule => q(=#,##0.#=),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -5426,6 +5602,72 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'japanese' => {
+			Ed => q{E d},
+			Gy => q{G y},
+			GyMMM => q{MMM G y},
+			GyMMMEd => q{E d MMM G y},
+			GyMMMd => q{d MMM G y},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, d/M},
+			MMM => q{LLL},
+			MMMEd => q{E d MMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{G y},
+			yyyy => q{G y},
+			yyyyM => q{M/GGGGG y},
+			yyyyMEd => q{E d/M/GGGGG y},
+			yyyyMMM => q{MMM G y},
+			yyyyMMMEd => q{E d MMM G y},
+			yyyyMMMd => q{d MMM G y},
+			yyyyMd => q{d/M/GGGGG y},
+			yyyyQQQ => q{QQQ G y},
+			yyyyQQQQ => q{QQQQ G y},
+		},
+		'buddhist' => {
+			Ed => q{E d},
+			Gy => q{G y},
+			GyMMM => q{MMM G y},
+			GyMMMEd => q{E d MMM G y},
+			GyMMMd => q{d MMM G y},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E d/M},
+			MMM => q{LLL},
+			MMMEd => q{E d MMM},
+			MMMMEd => q{E d MMMM},
+			MMMMd => q{d MMMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			mmss => q{mm:ss},
+			ms => q{mm:ss},
+			y => q{G y},
+			yyyy => q{G y},
+			yyyyM => q{M/y},
+			yyyyMEd => q{E d/M/y},
+			yyyyMMM => q{MMM y},
+			yyyyMMMEd => q{E d MMM y},
+			yyyyMMMM => q{MMMM y},
+			yyyyMMMd => q{d MMM y},
+			yyyyMd => q{d/M/y},
+			yyyyQQQ => q{QQQ y},
+			yyyyQQQQ => q{QQQQ y},
+		},
 		'roc' => {
 			Ed => q{E d},
 			Gy => q{ปีGที่ y},
@@ -5455,6 +5697,37 @@ has 'datetime_formats_available_formats' => (
 			yyyyMMMd => q{d MMM G y},
 			yyyyMd => q{d/M/GGGGG y},
 			yyyyQQQ => q{QQQ G y},
+		},
+		'generic' => {
+			Ed => q{E d},
+			Gy => q{G y},
+			GyMMM => q{MMM G y},
+			GyMMMEd => q{E d MMM G y},
+			GyMMMd => q{d MMM G y},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E d/M},
+			MMM => q{LLL},
+			MMMEd => q{E d MMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{G y},
+			yyyy => q{G y},
+			yyyyM => q{M/y G},
+			yyyyMEd => q{E d/M/y GGGGG},
+			yyyyMMM => q{MMM G y},
+			yyyyMMMEd => q{E d MMM G y},
+			yyyyMMMd => q{d MMM G y},
+			yyyyMd => q{d/M/y GGGGG},
+			yyyyQQQ => q{QQQ G y},
+			yyyyQQQQ => q{QQQQ G y},
 		},
 		'gregorian' => {
 			EHm => q{E HH:mm},
@@ -5494,103 +5767,6 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
-			Ed => q{E d},
-			Gy => q{G y},
-			GyMMM => q{MMM G y},
-			GyMMMEd => q{E d MMM G y},
-			GyMMMd => q{d MMM G y},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E d/M},
-			MMM => q{LLL},
-			MMMEd => q{E d MMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{G y},
-			yyyy => q{G y},
-			yyyyM => q{M/y G},
-			yyyyMEd => q{E d/M/y GGGGG},
-			yyyyMMM => q{MMM G y},
-			yyyyMMMEd => q{E d MMM G y},
-			yyyyMMMd => q{d MMM G y},
-			yyyyMd => q{d/M/y GGGGG},
-			yyyyQQQ => q{QQQ G y},
-			yyyyQQQQ => q{QQQQ G y},
-		},
-		'buddhist' => {
-			Ed => q{E d},
-			Gy => q{G y},
-			GyMMM => q{MMM G y},
-			GyMMMEd => q{E d MMM G y},
-			GyMMMd => q{d MMM G y},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E d/M},
-			MMM => q{LLL},
-			MMMEd => q{E d MMM},
-			MMMMEd => q{E d MMMM},
-			MMMMd => q{d MMMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			mmss => q{mm:ss},
-			ms => q{mm:ss},
-			y => q{G y},
-			yyyy => q{G y},
-			yyyyM => q{M/y},
-			yyyyMEd => q{E d/M/y},
-			yyyyMMM => q{MMM y},
-			yyyyMMMEd => q{E d MMM y},
-			yyyyMMMM => q{MMMM y},
-			yyyyMMMd => q{d MMM y},
-			yyyyMd => q{d/M/y},
-			yyyyQQQ => q{QQQ y},
-			yyyyQQQQ => q{QQQQ y},
-		},
-		'japanese' => {
-			Ed => q{E d},
-			Gy => q{G y},
-			GyMMM => q{MMM G y},
-			GyMMMEd => q{E d MMM G y},
-			GyMMMd => q{d MMM G y},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, d/M},
-			MMM => q{LLL},
-			MMMEd => q{E d MMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{G y},
-			yyyy => q{G y},
-			yyyyM => q{M/GGGGG y},
-			yyyyMEd => q{E d/M/GGGGG y},
-			yyyyMMM => q{MMM G y},
-			yyyyMMMEd => q{E d MMM G y},
-			yyyyMMMd => q{d MMM G y},
-			yyyyMd => q{d/M/GGGGG y},
-			yyyyQQQ => q{QQQ G y},
-			yyyyQQQQ => q{QQQQ G y},
-		},
 		'islamic' => {
 			M => q{L},
 			MEd => q{E, d/M},
@@ -5620,20 +5796,20 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'buddhist' => {
 			H => {
-				H => q{HH–HH},
+				H => q{H-H},
 			},
 			Hm => {
-				H => q{HH:mm-HH:mm},
-				m => q{HH:mm-HH:mm},
+				H => q{H:mm-H:mm},
+				m => q{H:mm-H:mm},
 			},
 			Hmv => {
 				H => q{H:mm-H:mm v},
 				m => q{H:mm-H:mm v},
 			},
 			Hv => {
-				H => q{HH–HH v},
+				H => q{H-H v},
 			},
 			M => {
 				M => q{M-M},
@@ -5660,7 +5836,7 @@ has 'datetime_formats_interval' => (
 			d => {
 				d => q{d-d},
 			},
-			fallback => '{0} – {1}',
+			fallback => '{0} - {1}',
 			h => {
 				a => q{h a - h a},
 				h => q{h-h a},
@@ -5692,7 +5868,7 @@ has 'datetime_formats_interval' => (
 				y => q{E d/M/y - E d/M/y},
 			},
 			yMMM => {
-				M => q{MMM–MMM y},
+				M => q{MMM-MMM y},
 				y => q{MMM y - MMM y},
 			},
 			yMMMEd => {
@@ -5701,7 +5877,7 @@ has 'datetime_formats_interval' => (
 				y => q{E d MMM y - E d MMM y},
 			},
 			yMMMM => {
-				M => q{MMMM–MMMM y},
+				M => q{MMMM-MMMM y},
 				y => q{MMMM y - MMMM y},
 			},
 			yMMMd => {
@@ -5810,20 +5986,20 @@ has 'datetime_formats_interval' => (
 				y => q{d/M/y - d/M/y G},
 			},
 		},
-		'buddhist' => {
+		'gregorian' => {
 			H => {
-				H => q{H-H},
+				H => q{HH–HH},
 			},
 			Hm => {
-				H => q{H:mm-H:mm},
-				m => q{H:mm-H:mm},
+				H => q{HH:mm-HH:mm},
+				m => q{HH:mm-HH:mm},
 			},
 			Hmv => {
 				H => q{H:mm-H:mm v},
 				m => q{H:mm-H:mm v},
 			},
 			Hv => {
-				H => q{H-H v},
+				H => q{HH–HH v},
 			},
 			M => {
 				M => q{M-M},
@@ -5850,7 +6026,7 @@ has 'datetime_formats_interval' => (
 			d => {
 				d => q{d-d},
 			},
-			fallback => '{0} - {1}',
+			fallback => '{0} – {1}',
 			h => {
 				a => q{h a - h a},
 				h => q{h-h a},
@@ -5882,7 +6058,7 @@ has 'datetime_formats_interval' => (
 				y => q{E d/M/y - E d/M/y},
 			},
 			yMMM => {
-				M => q{MMM-MMM y},
+				M => q{MMM–MMM y},
 				y => q{MMM y - MMM y},
 			},
 			yMMMEd => {
@@ -5891,7 +6067,7 @@ has 'datetime_formats_interval' => (
 				y => q{E d MMM y - E d MMM y},
 			},
 			yMMMM => {
-				M => q{MMMM-MMMM y},
+				M => q{MMMM–MMMM y},
 				y => q{MMMM y - MMMM y},
 			},
 			yMMMd => {

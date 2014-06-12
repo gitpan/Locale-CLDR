@@ -1,11 +1,11 @@
 package Locale::CLDR::Ja;
 # This file auto generated from Data\common\main\ja.xml
-#	on Sun  1 Jun  3:22:40 pm GMT
+#	on Tue 10 Jun  9:25:38 pm GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -45,6 +45,305 @@ has 'LineBreak_variables' => (
 		'$NS' => '\p{Line_Break=Nonstarter}',
 	]}
 );
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal-financial','spellout-cardinal','spellout-ordinal','digits-ordinal' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'digits-ordinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(第−→#,###0→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(第=#,###0=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(第=#,###0=),
+				},
+			},
+		},
+		'spellout-cardinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(マイナス→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(〇),
+				},
+				'x.x' => {
+					rule => q(←←・→→→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(一),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(二),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(三),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(四),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(五),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(六),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(七),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(八),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(九),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(十[→→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(←←十[→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(百[→→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←←百[→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(千[→→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←←千[→→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(←←万[→→]),
+				},
+				'100000000' => {
+					base_value => q(100000000),
+					rule => q(←←億[→→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←←兆[→→]),
+				},
+				'10000000000000000' => {
+					base_value => q(10000000000000000),
+					rule => q(←←京[→→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,###0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,###0=),
+				},
+			},
+		},
+		'spellout-cardinal-financial' => {
+			'public' => {
+				'-x' => {
+					rule => q(マイナス→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(零),
+				},
+				'x.x' => {
+					rule => q(←←点→→→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(壱),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(弐),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(参),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(四),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(伍),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(六),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(七),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(八),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(九),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(拾[→→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(←←拾[→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←←百[→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←←千[→→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(←←萬[→→]),
+				},
+				'100000000' => {
+					base_value => q(100000000),
+					rule => q(←←億[→→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←←兆[→→]),
+				},
+				'10000000000000000' => {
+					base_value => q(10000000000000000),
+					rule => q(←←京[→→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,###0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,###0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(元),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(=%spellout-numbering=),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(=%%spellout-numbering-year-digits=),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(=%spellout-numbering=),
+				},
+				'max' => {
+					base_value => q(10000),
+					rule => q(=%spellout-numbering=),
+				},
+			},
+		},
+		'spellout-numbering-year-digits' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(←←→→→),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←←→→→),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←←→→→),
+				},
+				'max' => {
+					base_value => q(1000),
+					rule => q(←←→→→),
+				},
+			},
+		},
+		'spellout-ordinal' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(第=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -5189,14 +5488,14 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
+					'pm' => q{午後},
 					'am' => q{午前},
 					'noon' => q{正午},
-					'pm' => q{午後},
 				},
 				'narrow' => {
-					'noon' => q{正午},
 					'am' => q{午前},
 					'pm' => q{午後},
+					'noon' => q{正午},
 				},
 			},
 		},
@@ -5906,7 +6205,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'roc' => {
+		'islamic' => {
 			M => q{M月},
 			MEd => q{M/d(E)},
 			MMM => q{M月},
@@ -5915,120 +6214,6 @@ has 'datetime_formats_available_formats' => (
 			Md => q{M/d},
 			d => q{d日},
 			y => q{Gy年},
-		},
-		'gregorian' => {
-			EEEEd => q{d日EEEE},
-			EHm => q{HH 時 mm 分 (E)},
-			EHms => q{HH 時 mm 分 ss 秒 (E)},
-			Ed => q{d日(E)},
-			Ehm => q{a K 時 mm 分 (E)},
-			Ehms => q{a K 時 mm 分 ss 秒 (E)},
-			Gy => q{Gy年},
-			GyMMM => q{Gy年M月},
-			GyMMMEEEEd => q{Gy年M月d日EEEE},
-			GyMMMEd => q{Gy年M月d日(E)},
-			GyMMMd => q{Gy年M月d日},
-			H => q{H時},
-			Hm => q{H:mm},
-			Hms => q{H:mm:ss},
-			M => q{M月},
-			MEEEEd => q{M/dEEEE},
-			MEd => q{M/d(E)},
-			MMM => q{M月},
-			MMMEEEEd => q{M月d日EEEE},
-			MMMEd => q{M月d日(E)},
-			MMMd => q{M月d日},
-			Md => q{M/d},
-			d => q{d日},
-			h => q{aK時},
-			hm => q{aK:mm},
-			hms => q{aK:mm:ss},
-			ms => q{mm:ss},
-			y => q{y年},
-			yM => q{y/M},
-			yMEEEEd => q{y/M/dEEEE},
-			yMEd => q{y/M/d(E)},
-			yMM => q{y/MM},
-			yMMM => q{y年M月},
-			yMMMEEEEd => q{y年M月d日EEEE},
-			yMMMEd => q{y年M月d日(E)},
-			yMMMd => q{y年M月d日},
-			yMd => q{y/M/d},
-			yQQQ => q{y/QQQ},
-			yQQQQ => q{yQQQQ},
-		},
-		'chinese' => {
-			EEEEd => q{d日EEEE},
-			Ed => q{d日(E)},
-			Gy => q{U年},
-			GyMMM => q{U年MMM},
-			GyMMMEEEEd => q{U年MMMd日EEEE},
-			GyMMMEd => q{U年MMMd日(E)},
-			GyMMMd => q{U年MMMd日},
-			H => q{H時},
-			Hm => q{H:mm},
-			Hms => q{H:mm:ss},
-			M => q{MMM},
-			MEEEEd => q{M/dEEEE},
-			MEd => q{M/d(E)},
-			MMMEEEEd => q{MMMd日EEEE},
-			MMMEd => q{MMMd日(E)},
-			MMMd => q{MMMd日},
-			Md => q{M/d},
-			d => q{d日},
-			h => q{aK時},
-			hm => q{aK:mm},
-			hms => q{aK:mm:ss},
-			y => q{U年},
-			yMd => q{U年M月d日},
-			yyyy => q{U年},
-			yyyyM => q{U年M月},
-			yyyyMEEEEd => q{U年M月d日EEEE},
-			yyyyMEd => q{U年M月d日(E)},
-			yyyyMMM => q{U年MMM},
-			yyyyMMMEEEEd => q{U年MMMd日EEEE},
-			yyyyMMMEd => q{U年MMMd日(E)},
-			yyyyMMMd => q{U年MMMd日},
-			yyyyMd => q{U年M月d日},
-			yyyyQQQ => q{U年QQQ},
-			yyyyQQQQ => q{U年QQQQ},
-		},
-		'generic' => {
-			EEEEd => q{d日EEEE},
-			Ed => q{d日(E)},
-			Gy => q{Gy年},
-			GyMMM => q{Gy年M月},
-			GyMMMEEEEd => q{Gy年M月d日EEEE},
-			GyMMMEd => q{Gy年M月d日(E)},
-			GyMMMd => q{Gy年M月d日},
-			H => q{H時},
-			Hm => q{H:mm},
-			Hms => q{H:mm:ss},
-			M => q{M月},
-			MEEEEd => q{M/dEEEE},
-			MEd => q{M/d(E)},
-			MMM => q{M月},
-			MMMEEEEd => q{M月d日EEEE},
-			MMMEd => q{M月d日(E)},
-			MMMd => q{M月d日},
-			Md => q{M/d},
-			d => q{d日},
-			h => q{aK時},
-			hm => q{aK:mm},
-			hms => q{aK:mm:ss},
-			ms => q{mm:ss},
-			y => q{Gy年},
-			yyyy => q{Gy年},
-			yyyyM => q{Gy/M},
-			yyyyMEEEEd => q{Gy/M/dEEEE},
-			yyyyMEd => q{Gy/M/d(E)},
-			yyyyMMM => q{Gy年M月},
-			yyyyMMMEEEEd => q{Gy年M月d日EEEE},
-			yyyyMMMEd => q{Gy年M月d日(E)},
-			yyyyMMMd => q{Gy年M月d日},
-			yyyyMd => q{Gy/M/d},
-			yyyyQQQ => q{Gy/QQQ},
-			yyyyQQQQ => q{GyQQQQ},
 		},
 		'buddhist' => {
 			EEEEd => q{d日EEEE},
@@ -6102,7 +6287,121 @@ has 'datetime_formats_available_formats' => (
 			yyyyMMMd => q{Gy年M月d日},
 			yyyyMd => q{Gy/M/d},
 		},
-		'islamic' => {
+		'gregorian' => {
+			EEEEd => q{d日EEEE},
+			EHm => q{HH 時 mm 分 (E)},
+			EHms => q{HH 時 mm 分 ss 秒 (E)},
+			Ed => q{d日(E)},
+			Ehm => q{a K 時 mm 分 (E)},
+			Ehms => q{a K 時 mm 分 ss 秒 (E)},
+			Gy => q{Gy年},
+			GyMMM => q{Gy年M月},
+			GyMMMEEEEd => q{Gy年M月d日EEEE},
+			GyMMMEd => q{Gy年M月d日(E)},
+			GyMMMd => q{Gy年M月d日},
+			H => q{H時},
+			Hm => q{H:mm},
+			Hms => q{H:mm:ss},
+			M => q{M月},
+			MEEEEd => q{M/dEEEE},
+			MEd => q{M/d(E)},
+			MMM => q{M月},
+			MMMEEEEd => q{M月d日EEEE},
+			MMMEd => q{M月d日(E)},
+			MMMd => q{M月d日},
+			Md => q{M/d},
+			d => q{d日},
+			h => q{aK時},
+			hm => q{aK:mm},
+			hms => q{aK:mm:ss},
+			ms => q{mm:ss},
+			y => q{y年},
+			yM => q{y/M},
+			yMEEEEd => q{y/M/dEEEE},
+			yMEd => q{y/M/d(E)},
+			yMM => q{y/MM},
+			yMMM => q{y年M月},
+			yMMMEEEEd => q{y年M月d日EEEE},
+			yMMMEd => q{y年M月d日(E)},
+			yMMMd => q{y年M月d日},
+			yMd => q{y/M/d},
+			yQQQ => q{y/QQQ},
+			yQQQQ => q{yQQQQ},
+		},
+		'generic' => {
+			EEEEd => q{d日EEEE},
+			Ed => q{d日(E)},
+			Gy => q{Gy年},
+			GyMMM => q{Gy年M月},
+			GyMMMEEEEd => q{Gy年M月d日EEEE},
+			GyMMMEd => q{Gy年M月d日(E)},
+			GyMMMd => q{Gy年M月d日},
+			H => q{H時},
+			Hm => q{H:mm},
+			Hms => q{H:mm:ss},
+			M => q{M月},
+			MEEEEd => q{M/dEEEE},
+			MEd => q{M/d(E)},
+			MMM => q{M月},
+			MMMEEEEd => q{M月d日EEEE},
+			MMMEd => q{M月d日(E)},
+			MMMd => q{M月d日},
+			Md => q{M/d},
+			d => q{d日},
+			h => q{aK時},
+			hm => q{aK:mm},
+			hms => q{aK:mm:ss},
+			ms => q{mm:ss},
+			y => q{Gy年},
+			yyyy => q{Gy年},
+			yyyyM => q{Gy/M},
+			yyyyMEEEEd => q{Gy/M/dEEEE},
+			yyyyMEd => q{Gy/M/d(E)},
+			yyyyMMM => q{Gy年M月},
+			yyyyMMMEEEEd => q{Gy年M月d日EEEE},
+			yyyyMMMEd => q{Gy年M月d日(E)},
+			yyyyMMMd => q{Gy年M月d日},
+			yyyyMd => q{Gy/M/d},
+			yyyyQQQ => q{Gy/QQQ},
+			yyyyQQQQ => q{GyQQQQ},
+		},
+		'chinese' => {
+			EEEEd => q{d日EEEE},
+			Ed => q{d日(E)},
+			Gy => q{U年},
+			GyMMM => q{U年MMM},
+			GyMMMEEEEd => q{U年MMMd日EEEE},
+			GyMMMEd => q{U年MMMd日(E)},
+			GyMMMd => q{U年MMMd日},
+			H => q{H時},
+			Hm => q{H:mm},
+			Hms => q{H:mm:ss},
+			M => q{MMM},
+			MEEEEd => q{M/dEEEE},
+			MEd => q{M/d(E)},
+			MMMEEEEd => q{MMMd日EEEE},
+			MMMEd => q{MMMd日(E)},
+			MMMd => q{MMMd日},
+			Md => q{M/d},
+			d => q{d日},
+			h => q{aK時},
+			hm => q{aK:mm},
+			hms => q{aK:mm:ss},
+			y => q{U年},
+			yMd => q{U年M月d日},
+			yyyy => q{U年},
+			yyyyM => q{U年M月},
+			yyyyMEEEEd => q{U年M月d日EEEE},
+			yyyyMEd => q{U年M月d日(E)},
+			yyyyMMM => q{U年MMM},
+			yyyyMMMEEEEd => q{U年MMMd日EEEE},
+			yyyyMMMEd => q{U年MMMd日(E)},
+			yyyyMMMd => q{U年MMMd日},
+			yyyyMd => q{U年M月d日},
+			yyyyQQQ => q{U年QQQ},
+			yyyyQQQQ => q{U年QQQQ},
+		},
+		'roc' => {
 			M => q{M月},
 			MEd => q{M/d(E)},
 			MMM => q{M月},
@@ -6229,104 +6528,6 @@ has 'datetime_formats_interval' => (
 				y => q{y/MM/dd～y/MM/dd},
 			},
 		},
-		'chinese' => {
-			H => {
-				H => q{H時～H時},
-			},
-			Hm => {
-				H => q{H時mm分～H時mm分},
-				m => q{H時mm分～H時mm分},
-			},
-			Hmv => {
-				H => q{H時mm分～H時mm分(v)},
-				m => q{H時mm分～H時mm分(v)},
-			},
-			Hv => {
-				H => q{H時～H時(v)},
-			},
-			M => {
-				M => q{M月～M月},
-			},
-			MEd => {
-				M => q{MM/dd(E)～MM/dd(E)},
-				d => q{MM/dd(E)～MM/dd(E)},
-			},
-			MMM => {
-				M => q{MMM～MMM},
-			},
-			MMMEd => {
-				M => q{MMMd日(E)～MMMd日(E)},
-				d => q{MMMd日(E)～d日(E)},
-			},
-			MMMM => {
-				M => q{MMMM～MMMM},
-			},
-			MMMd => {
-				M => q{MMMd日～MMMd日},
-				d => q{MMMd日～d日},
-			},
-			Md => {
-				M => q{MM/dd～MM/dd},
-				d => q{MM/dd～MM/dd},
-			},
-			d => {
-				d => q{d日～d日},
-			},
-			fallback => '{0}～{1}',
-			h => {
-				a => q{aK時～aK時},
-				h => q{aK時～K時},
-			},
-			hm => {
-				a => q{aK時mm分～aK時mm分},
-				h => q{aK時mm分～K時mm分},
-				m => q{aK時mm分～K時mm分},
-			},
-			hmv => {
-				a => q{aK時mm分～aK時mm分(v)},
-				h => q{aK時mm分～K時mm分(v)},
-				m => q{aK時mm分～K時mm分(v)},
-			},
-			hv => {
-				a => q{aK時～aK時(v)},
-				h => q{aK時～K時(v)},
-			},
-			y => {
-				y => q{U年～U年},
-			},
-			yM => {
-				M => q{U/MM～U/MM},
-				y => q{U/MM～U/MM},
-			},
-			yMEd => {
-				M => q{U/MM/dd(E)～U/MM/dd(E)},
-				d => q{U/MM/dd(E)～U/MM/dd(E)},
-				y => q{U/MM/dd(E)～U/MM/dd(E)},
-			},
-			yMMM => {
-				M => q{U年MMM～MMM},
-				y => q{U年MMM～U年MMM},
-			},
-			yMMMEd => {
-				M => q{U年MMMd日(E)～MMMd日(E)},
-				d => q{U年MMMd日(E)～d日(E)},
-				y => q{U年MMMd日(E)～U年MMMd日(E)},
-			},
-			yMMMM => {
-				M => q{U年MMM～MMM},
-				y => q{U年MMM～U年MMM},
-			},
-			yMMMd => {
-				M => q{U年MMMd日～MMMd日},
-				d => q{U年MMMd日～d日},
-				y => q{U年MMMd日～U年MMMd日},
-			},
-			yMd => {
-				M => q{U/MM/dd～U/MM/dd},
-				d => q{U/MM/dd～U/MM/dd},
-				y => q{U/MM/dd～U/MM/dd},
-			},
-		},
 		'generic' => {
 			H => {
 				H => q{H時～H時},
@@ -6423,6 +6624,104 @@ has 'datetime_formats_interval' => (
 				M => q{Gy/MM/dd～y/MM/dd},
 				d => q{Gy/MM/dd～y/MM/dd},
 				y => q{Gy/MM/dd～y/MM/dd},
+			},
+		},
+		'chinese' => {
+			H => {
+				H => q{H時～H時},
+			},
+			Hm => {
+				H => q{H時mm分～H時mm分},
+				m => q{H時mm分～H時mm分},
+			},
+			Hmv => {
+				H => q{H時mm分～H時mm分(v)},
+				m => q{H時mm分～H時mm分(v)},
+			},
+			Hv => {
+				H => q{H時～H時(v)},
+			},
+			M => {
+				M => q{M月～M月},
+			},
+			MEd => {
+				M => q{MM/dd(E)～MM/dd(E)},
+				d => q{MM/dd(E)～MM/dd(E)},
+			},
+			MMM => {
+				M => q{MMM～MMM},
+			},
+			MMMEd => {
+				M => q{MMMd日(E)～MMMd日(E)},
+				d => q{MMMd日(E)～d日(E)},
+			},
+			MMMM => {
+				M => q{MMMM～MMMM},
+			},
+			MMMd => {
+				M => q{MMMd日～MMMd日},
+				d => q{MMMd日～d日},
+			},
+			Md => {
+				M => q{MM/dd～MM/dd},
+				d => q{MM/dd～MM/dd},
+			},
+			d => {
+				d => q{d日～d日},
+			},
+			fallback => '{0}～{1}',
+			h => {
+				a => q{aK時～aK時},
+				h => q{aK時～K時},
+			},
+			hm => {
+				a => q{aK時mm分～aK時mm分},
+				h => q{aK時mm分～K時mm分},
+				m => q{aK時mm分～K時mm分},
+			},
+			hmv => {
+				a => q{aK時mm分～aK時mm分(v)},
+				h => q{aK時mm分～K時mm分(v)},
+				m => q{aK時mm分～K時mm分(v)},
+			},
+			hv => {
+				a => q{aK時～aK時(v)},
+				h => q{aK時～K時(v)},
+			},
+			y => {
+				y => q{U年～U年},
+			},
+			yM => {
+				M => q{U/MM～U/MM},
+				y => q{U/MM～U/MM},
+			},
+			yMEd => {
+				M => q{U/MM/dd(E)～U/MM/dd(E)},
+				d => q{U/MM/dd(E)～U/MM/dd(E)},
+				y => q{U/MM/dd(E)～U/MM/dd(E)},
+			},
+			yMMM => {
+				M => q{U年MMM～MMM},
+				y => q{U年MMM～U年MMM},
+			},
+			yMMMEd => {
+				M => q{U年MMMd日(E)～MMMd日(E)},
+				d => q{U年MMMd日(E)～d日(E)},
+				y => q{U年MMMd日(E)～U年MMMd日(E)},
+			},
+			yMMMM => {
+				M => q{U年MMM～MMM},
+				y => q{U年MMM～U年MMM},
+			},
+			yMMMd => {
+				M => q{U年MMMd日～MMMd日},
+				d => q{U年MMMd日～d日},
+				y => q{U年MMMd日～U年MMMd日},
+			},
+			yMd => {
+				M => q{U/MM/dd～U/MM/dd},
+				d => q{U/MM/dd～U/MM/dd},
+				y => q{U/MM/dd～U/MM/dd},
 			},
 		},
 	} },

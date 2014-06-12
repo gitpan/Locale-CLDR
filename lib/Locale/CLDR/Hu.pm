@@ -1,11 +1,11 @@
 package Locale::CLDR::Hu;
 # This file auto generated from Data\common\main\hu.xml
-#	on Sun  1 Jun  3:15:29 pm GMT
+#	on Tue 10 Jun  9:17:23 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,528 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal','spellout-cardinal-verbose','spellout-ordinal','spellout-ordinal-verbose' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'spellout-cardinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(mínusz →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(nulla),
+				},
+				'x.x' => {
+					rule => q(←← egész →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(egy),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(kettő),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(három),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(négy),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(öt),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(hat),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(hét),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(nyolc),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(kilenc),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(tíz),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(tizen­→→),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(húsz),
+				},
+				'21' => {
+					base_value => q(21),
+					rule => q(huszon­→→),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(harminc[­→→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(negyven[­→→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(ötven[­→→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(hatvan[­→→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(hetven[­→→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(nyolcvan[­→→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(kilencven[­→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(száz[­→→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←%%spellout-cardinal-initial←­száz[­→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(ezer[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%%spellout-cardinal-initial←­ezer[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%%spellout-cardinal-initial← millió[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←%%spellout-cardinal-initial← milliárd[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←%%spellout-cardinal-initial← billió[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←%%spellout-cardinal-initial← billiárd[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-initial' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(egy),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(két),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(=%spellout-cardinal=),
+				},
+				'max' => {
+					base_value => q(3),
+					rule => q(=%spellout-cardinal=),
+				},
+			},
+		},
+		'spellout-cardinal-verbose' => {
+			'public' => {
+				'-x' => {
+					rule => q(mínusz →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+				'x.x' => {
+					rule => q(←← egész →→),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←←­száz[­→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←←­ezer[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←← millió[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←← milliárd[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←← billió[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(←← billiárd[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'-x' => {
+					rule => q(mínusz →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'1100' => {
+					base_value => q(1100),
+					divisor => q(100),
+					rule => q(←←­száz[­→→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(=%spellout-numbering=),
+				},
+				'max' => {
+					base_value => q(10000),
+					rule => q(=%spellout-numbering=),
+				},
+			},
+		},
+		'spellout-ordinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(mínusz →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(nulla),
+				},
+				'x.x' => {
+					rule => q(=#,##0.#=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(első),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(második),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(=%%spellout-ordinal-larger=),
+				},
+				'max' => {
+					base_value => q(3),
+					rule => q(=%%spellout-ordinal-larger=),
+				},
+			},
+		},
+		'spellout-ordinal-adik' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(adik),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(=%%spellout-ordinal-larger=),
+				},
+				'max' => {
+					base_value => q(1),
+					rule => q(=%%spellout-ordinal-larger=),
+				},
+			},
+		},
+		'spellout-ordinal-larger' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(edik),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(egyedik),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(kettedik),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(harmadik),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(negyedik),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(ötödik),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(hatodik),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(hetedik),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(nyolcadik),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(kilencedik),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(tizedik),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(tizen→→),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(huszadik),
+				},
+				'21' => {
+					base_value => q(21),
+					rule => q(huszon→→),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(harminc→%%spellout-ordinal-adik→),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(negyven→→),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(ötven→→),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(hatvan→%%spellout-ordinal-adik→),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(hetven→→),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(nyolcvan→%%spellout-ordinal-adik→),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(kilencven→→),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(száz→%%spellout-ordinal-adik→),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←%%spellout-cardinal-initial←száz→%%spellout-ordinal-adik→),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(ezr→→),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%%spellout-cardinal-initial←ezr→→),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%%spellout-cardinal-initial← milliom→%%spellout-ordinal-odik→),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(=#,##0=.),
+				},
+				'max' => {
+					base_value => q(1000000000),
+					rule => q(=#,##0=.),
+				},
+			},
+		},
+		'spellout-ordinal-odik' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(odik),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(=%%spellout-ordinal-larger=),
+				},
+				'max' => {
+					base_value => q(1),
+					rule => q(=%%spellout-ordinal-larger=),
+				},
+			},
+		},
+		'spellout-ordinal-verbose' => {
+			'public' => {
+				'-x' => {
+					rule => q(mínusz →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(nulla),
+				},
+				'x.x' => {
+					rule => q(=#,##0.#=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(első),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(második),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(=%%spellout-ordinal-verbose-larger=),
+				},
+				'max' => {
+					base_value => q(3),
+					rule => q(=%%spellout-ordinal-verbose-larger=),
+				},
+			},
+		},
+		'spellout-ordinal-verbose-adik' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(adik),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(=%%spellout-ordinal-verbose-larger=),
+				},
+				'max' => {
+					base_value => q(1),
+					rule => q(=%%spellout-ordinal-verbose-larger=),
+				},
+			},
+		},
+		'spellout-ordinal-verbose-larger' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%%spellout-ordinal-larger=),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←%spellout-cardinal-verbose←száz→%%spellout-ordinal-verbose-adik→),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-verbose←ezr→→),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←%spellout-cardinal-verbose← milliom→%%spellout-ordinal-verbose-odik→),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(=#,##0=.),
+				},
+				'max' => {
+					base_value => q(1000000000),
+					rule => q(=#,##0=.),
+				},
+			},
+		},
+		'spellout-ordinal-verbose-odik' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(odik),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(=%%spellout-ordinal-verbose-larger=),
+				},
+				'max' => {
+					base_value => q(1),
+					rule => q(=%%spellout-ordinal-verbose-larger=),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -4868,13 +5390,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'pm' => q{du.},
-					'am' => q{de.},
-				},
 				'narrow' => {
 					'pm' => q{du.},
 					'am' => q{de.},
+				},
+				'wide' => {
+					'am' => q{de.},
+					'pm' => q{du.},
 				},
 			},
 		},
@@ -5062,39 +5584,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			Ed => q{d., E},
-			Gy => q{G y.},
-			GyMMM => q{G y. MMM},
-			GyMMMEd => q{G y. MMM d., E},
-			GyMMMd => q{G y. MMM d.},
-			H => q{H},
-			Hm => q{H:mm},
-			Hms => q{H:mm:ss},
-			M => q{L},
-			MEd => q{M. d., E},
-			MMM => q{LLL},
-			MMMEd => q{MMM d., E},
-			MMMMd => q{MMMM d.},
-			MMMd => q{MMM d.},
-			Md => q{M. d.},
-			d => q{d},
-			h => q{a h},
-			hm => q{a h:mm},
-			hms => q{a h:mm:ss},
-			ms => q{mm:ss},
-			y => q{G y.},
-			yyyy => q{G y.},
-			yyyyM => q{G y. MM.},
-			yyyyMEd => q{G y. MM. dd., E},
-			yyyyMMM => q{G y. MMM},
-			yyyyMMMEd => q{G y. MMM d., E},
-			yyyyMMMM => q{G y. MMMM},
-			yyyyMMMd => q{G y. MMM d.},
-			yyyyMd => q{G y. MM. dd.},
-			yyyyQQQ => q{G y. QQQ},
-			yyyyQQQQ => q{G y. QQQQ},
-		},
 		'gregorian' => {
 			EHm => q{E HH:mm},
 			EHms => q{E HH:mm:ss},
@@ -5132,6 +5621,39 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{y. QQQ},
 			yQQQQ => q{y. QQQQ},
 		},
+		'generic' => {
+			Ed => q{d., E},
+			Gy => q{G y.},
+			GyMMM => q{G y. MMM},
+			GyMMMEd => q{G y. MMM d., E},
+			GyMMMd => q{G y. MMM d.},
+			H => q{H},
+			Hm => q{H:mm},
+			Hms => q{H:mm:ss},
+			M => q{L},
+			MEd => q{M. d., E},
+			MMM => q{LLL},
+			MMMEd => q{MMM d., E},
+			MMMMd => q{MMMM d.},
+			MMMd => q{MMM d.},
+			Md => q{M. d.},
+			d => q{d},
+			h => q{a h},
+			hm => q{a h:mm},
+			hms => q{a h:mm:ss},
+			ms => q{mm:ss},
+			y => q{G y.},
+			yyyy => q{G y.},
+			yyyyM => q{G y. MM.},
+			yyyyMEd => q{G y. MM. dd., E},
+			yyyyMMM => q{G y. MMM},
+			yyyyMMMEd => q{G y. MMM d., E},
+			yyyyMMMM => q{G y. MMMM},
+			yyyyMMMd => q{G y. MMM d.},
+			yyyyMd => q{G y. MM. dd.},
+			yyyyQQQ => q{G y. QQQ},
+			yyyyQQQQ => q{G y. QQQQ},
+		},
 	} },
 );
 
@@ -5151,101 +5673,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			H => {
-				H => q{H-H},
-			},
-			Hm => {
-				H => q{H:mm-H:mm},
-				m => q{H:mm-H:mm},
-			},
-			Hmv => {
-				H => q{H:mm-H:mm v},
-				m => q{H:mm-H:mm v},
-			},
-			Hv => {
-				H => q{H-H v},
-			},
-			M => {
-				M => q{M–M.},
-			},
-			MEd => {
-				M => q{MM. dd., E – MM. dd., E},
-				d => q{MM. dd., E – MM. dd., E},
-			},
-			MMM => {
-				M => q{MMM–MMM},
-			},
-			MMMEd => {
-				M => q{MMM d., E – MMM d., E},
-				d => q{MMM d., E – d., E},
-			},
-			MMMd => {
-				M => q{MMM d. – MMM d.},
-				d => q{MMM d–d.},
-			},
-			Md => {
-				M => q{MM. dd. – MM. dd.},
-				d => q{MM. dd–dd.},
-			},
-			d => {
-				d => q{d–d.},
-			},
-			fallback => '{0} – {1}',
-			h => {
-				a => q{a h – a h},
-				h => q{a h–h},
-			},
-			hm => {
-				a => q{a h:mm – a h:mm},
-				h => q{a h:mm–h:mm},
-				m => q{a h:mm–h:mm},
-			},
-			hmv => {
-				a => q{a h:mm – a h:mm v},
-				h => q{a h:mm–h:mm v},
-				m => q{a h:mm–h:mm v},
-			},
-			hv => {
-				a => q{a h – a h v},
-				h => q{a h–h v},
-			},
-			y => {
-				y => q{G y–y.},
-			},
-			yM => {
-				M => q{G y. MM–MM.},
-				y => q{G y. MM. – y. MM.},
-			},
-			yMEd => {
-				M => q{G y. MM. dd., E – MM. dd., E},
-				d => q{G y. MM. dd., E – dd., E},
-				y => q{G y. MM. dd., E – y. MM. dd., E},
-			},
-			yMMM => {
-				M => q{G y. MMM–MMM},
-				y => q{G y. MMM – y. MMM},
-			},
-			yMMMEd => {
-				M => q{G y. MMM d., E – MMM d., E},
-				d => q{G y. MMM d., E – MMM d., E},
-				y => q{G y. MMM d., E – y. MMM d., E},
-			},
-			yMMMM => {
-				M => q{G y. MMMM–MMMM},
-				y => q{G y. MMMM – y. MMMM},
-			},
-			yMMMd => {
-				M => q{G y. MMM d. – MMM d.},
-				d => q{G y. MMM d–d.},
-				y => q{G y. MMM d. – y. MMM d.},
-			},
-			yMd => {
-				M => q{G y. MM. dd. – MM. dd.},
-				d => q{G y. MM. dd–dd.},
-				y => q{G y. MM. dd. – y. MM. dd.},
-			},
-		},
 		'gregorian' => {
 			H => {
 				H => q{H-H},
@@ -5339,6 +5766,101 @@ has 'datetime_formats_interval' => (
 				M => q{y. MM. dd. – MM. dd.},
 				d => q{y. MM. dd–dd.},
 				y => q{y. MM. dd. – y. MM. dd.},
+			},
+		},
+		'generic' => {
+			H => {
+				H => q{H-H},
+			},
+			Hm => {
+				H => q{H:mm-H:mm},
+				m => q{H:mm-H:mm},
+			},
+			Hmv => {
+				H => q{H:mm-H:mm v},
+				m => q{H:mm-H:mm v},
+			},
+			Hv => {
+				H => q{H-H v},
+			},
+			M => {
+				M => q{M–M.},
+			},
+			MEd => {
+				M => q{MM. dd., E – MM. dd., E},
+				d => q{MM. dd., E – MM. dd., E},
+			},
+			MMM => {
+				M => q{MMM–MMM},
+			},
+			MMMEd => {
+				M => q{MMM d., E – MMM d., E},
+				d => q{MMM d., E – d., E},
+			},
+			MMMd => {
+				M => q{MMM d. – MMM d.},
+				d => q{MMM d–d.},
+			},
+			Md => {
+				M => q{MM. dd. – MM. dd.},
+				d => q{MM. dd–dd.},
+			},
+			d => {
+				d => q{d–d.},
+			},
+			fallback => '{0} – {1}',
+			h => {
+				a => q{a h – a h},
+				h => q{a h–h},
+			},
+			hm => {
+				a => q{a h:mm – a h:mm},
+				h => q{a h:mm–h:mm},
+				m => q{a h:mm–h:mm},
+			},
+			hmv => {
+				a => q{a h:mm – a h:mm v},
+				h => q{a h:mm–h:mm v},
+				m => q{a h:mm–h:mm v},
+			},
+			hv => {
+				a => q{a h – a h v},
+				h => q{a h–h v},
+			},
+			y => {
+				y => q{G y–y.},
+			},
+			yM => {
+				M => q{G y. MM–MM.},
+				y => q{G y. MM. – y. MM.},
+			},
+			yMEd => {
+				M => q{G y. MM. dd., E – MM. dd., E},
+				d => q{G y. MM. dd., E – dd., E},
+				y => q{G y. MM. dd., E – y. MM. dd., E},
+			},
+			yMMM => {
+				M => q{G y. MMM–MMM},
+				y => q{G y. MMM – y. MMM},
+			},
+			yMMMEd => {
+				M => q{G y. MMM d., E – MMM d., E},
+				d => q{G y. MMM d., E – MMM d., E},
+				y => q{G y. MMM d., E – y. MMM d., E},
+			},
+			yMMMM => {
+				M => q{G y. MMMM–MMMM},
+				y => q{G y. MMMM – y. MMMM},
+			},
+			yMMMd => {
+				M => q{G y. MMM d. – MMM d.},
+				d => q{G y. MMM d–d.},
+				y => q{G y. MMM d. – y. MMM d.},
+			},
+			yMd => {
+				M => q{G y. MM. dd. – MM. dd.},
+				d => q{G y. MM. dd–dd.},
+				y => q{G y. MM. dd. – y. MM. dd.},
 			},
 		},
 	} },

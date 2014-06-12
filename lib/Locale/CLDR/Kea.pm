@@ -1,11 +1,11 @@
 package Locale::CLDR::Kea;
 # This file auto generated from Data\common\main\kea.xml
-#	on Sun  1 Jun  3:27:39 pm GMT
+#	on Tue 10 Jun  9:31:24 pm GMT
 # XML file generated 2013-11-15 12:32:44 -0600 (Fri, 15 Nov 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -1492,8 +1492,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{pm},
 					'am' => q{am},
+					'pm' => q{pm},
 				},
 			},
 		},
@@ -1581,7 +1581,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E, d},
 			H => q{HH},
 			HHmm => q{HH:mm},
@@ -1615,7 +1615,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E, d},
 			H => q{HH},
 			HHmm => q{HH:mm},
@@ -1665,7 +1665,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH–HH},
 			},
@@ -1760,7 +1760,7 @@ has 'datetime_formats_interval' => (
 				y => q{dd/MM/y – dd/MM/y},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH–HH},
 			},

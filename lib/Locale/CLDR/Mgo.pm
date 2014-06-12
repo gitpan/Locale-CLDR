@@ -1,11 +1,11 @@
 package Locale::CLDR::Mgo;
 # This file auto generated from Data\common\main\mgo.xml
-#	on Sun  1 Jun  3:47:33 pm GMT
+#	on Tue 10 Jun  9:54:14 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -536,8 +536,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{AM},
 					'pm' => q{PM},
+					'am' => q{AM},
 				},
 			},
 		},
@@ -621,10 +621,10 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			d => q{d},
 		},
-		'gregorian' => {
+		'generic' => {
 			d => q{d},
 		},
 	} },
@@ -643,10 +643,10 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			fallback => '{0} – {1}',
 		},
-		'gregorian' => {
+		'generic' => {
 			fallback => '{0} – {1}',
 		},
 	} },

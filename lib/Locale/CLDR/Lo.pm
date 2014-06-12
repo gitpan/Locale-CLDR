@@ -1,11 +1,11 @@
 package Locale::CLDR::Lo;
 # This file auto generated from Data\common\main\lo.xml
-#	on Sun  1 Jun  3:40:26 pm GMT
+#	on Tue 10 Jun  9:46:07 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,182 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal','spellout-ordinal','digits-ordinal' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'alt-ones' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(ເອັດ),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(=%spellout-cardinal=),
+				},
+				'max' => {
+					base_value => q(2),
+					rule => q(=%spellout-cardinal=),
+				},
+			},
+		},
+		'digits-ordinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(ที่−→#,##0→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(ที่​=#,##0=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(ที่​=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(ลบ​→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(ศูนย์),
+				},
+				'x.x' => {
+					rule => q(←←​จุด​→→→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(ໜຶ່ງ),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(ສອງ),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(ສາມ),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(ສີ່),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(ຫ້າ),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(ຫົກ),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(ເຈັດ),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(ແປດ),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(ເກົ້າ),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(ສິບ[​→%%alt-ones→]),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(ຊາວ[​→%%alt-ones→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(←←​ສິບ[​→%%alt-ones→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←←​ร้อย[​→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←←​พัน[​→→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(←←​หมื่น[​→→]),
+				},
+				'100000' => {
+					base_value => q(100000),
+					rule => q(←←​แสน[​→→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←←​ล้าน[​→→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+		'spellout-ordinal' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(ที่​=%spellout-cardinal=),
+				},
+				'x.x' => {
+					rule => q(=#,##0.#=),
+				},
+				'max' => {
+					rule => q(=#,##0.#=),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -5023,29 +5199,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'islamic' => {
-			H => q{H},
-			Hm => q{H:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, d/M},
-			MMM => q{LLL},
-			MMMEd => q{E MMM d},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			d => q{d},
-			h => q{ha},
-			hm => q{h mm a},
-			hms => q{H:mm:ss},
-			ms => q{mm:ss},
-			y => q{y},
-			yM => q{M/y},
-			yMEd => q{E M/d/y},
-			yMMM => q{MMM y},
-			yMMMEd => q{E,MMM d,y},
-			yQQQ => q{QQQ y},
-			yQQQQ => q{QQQQ y},
-		},
 		'gregorian' => {
 			EHm => q{E HH:mm},
 			EHms => q{E HH:mm:ss},
@@ -5110,6 +5263,29 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{G d/M/y},
 			yyyyQQQ => q{G QQQ y},
 			yyyyQQQQ => q{G y QQQQ},
+		},
+		'islamic' => {
+			H => q{H},
+			Hm => q{H:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, d/M},
+			MMM => q{LLL},
+			MMMEd => q{E MMM d},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			d => q{d},
+			h => q{ha},
+			hm => q{h mm a},
+			hms => q{H:mm:ss},
+			ms => q{mm:ss},
+			y => q{y},
+			yM => q{M/y},
+			yMEd => q{E M/d/y},
+			yMMM => q{MMM y},
+			yMMMEd => q{E,MMM d,y},
+			yQQQ => q{QQQ y},
+			yQQQQ => q{QQQQ y},
 		},
 	} },
 );

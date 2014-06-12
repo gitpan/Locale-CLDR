@@ -1,11 +1,11 @@
 package Locale::CLDR::Fo;
 # This file auto generated from Data\common\main\fo.xml
-#	on Sun  1 Jun  3:00:50 pm GMT
+#	on Tue 10 Jun  9:01:44 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,458 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal-masculine','spellout-cardinal-neuter','spellout-cardinal-feminine' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'spellout-cardinal-feminine' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(null),
+				},
+				'x.x' => {
+					rule => q(←← komma →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(ein),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(tvær),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tríggjar),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(fýre),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(tjúgo[­→→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(tríati[­→→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(fýrati[­→→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(fimmti[­→→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(seksti[­→→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(sjeyti[­→→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(áttati[­→→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(níti[­→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←%spellout-cardinal-neuter←­hundrað[­og­→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-neuter← tusin[ og →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(ein millión[ og →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-feminine← millióner[ og →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(ein milliard[ og →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-feminine← milliarder[ og →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(ein billión[ og →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-feminine← billióner[ og →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(ein billiard[ og →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-feminine← billiarder[ og →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-masculine' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(null),
+				},
+				'x.x' => {
+					rule => q(←← komma →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(ein),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(tveir),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tríggir),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(fýre),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(fimm),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(seks),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(sjey),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(átta),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(níggju),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(tíggju),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(ellivu),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(tólv),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(trettan),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(fjúrtan),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(fímtan),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(sekstan),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(seytan),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(átjan),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(nítjan),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(tjúgo[­→→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(tríati[­→→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(fýrati[­→→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(fimmti[­→→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(seksti[­→→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(sjeyti[­→→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(áttati[­→→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(níti[­→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←%spellout-cardinal-neuter←­hundrað[­og­→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-neuter← tusin[ og →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(ein millión[ og →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-feminine← millióner[ og →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(ein milliard[ og →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-feminine← milliarder[ og →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(ein billión[ og →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-feminine← billióner[ og →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(ein billiard[ og →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-feminine← billiarder[ og →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-neuter' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(null),
+				},
+				'x.x' => {
+					rule => q(←← komma →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(eitt),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(tvey),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(trý),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(fýre),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(tjúgo[­→→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(tríati[­→→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(fýrati[­→→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(fimmti[­→→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(seksti[­→→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(sjeyti[­→→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(áttati[­→→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(níti[­→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←%spellout-cardinal-neuter←­hundrað[­og­→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-neuter← tusin[ og →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(ein millión[ og →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-feminine← millióner[ og →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(ein milliard[ og →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-feminine← milliarder[ og →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(ein billión[ og →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-feminine← billióner[ og →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(ein billiard[ og →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-feminine← billiarder[ og →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'-x' => {
+					rule => q(mínus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'1100' => {
+					base_value => q(1100),
+					divisor => q(100),
+					rule => q(←←­hundrað[­og­→→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(=%spellout-numbering=),
+				},
+				'max' => {
+					base_value => q(10000),
+					rule => q(=%spellout-numbering=),
+				},
+			},
+		},
+	} },
+);
+
 has 'display_name_language' => (
 	is			=> 'ro',
 	isa			=> 'CodeRef',

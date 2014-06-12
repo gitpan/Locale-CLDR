@@ -1,11 +1,11 @@
 package Locale::CLDR::En::Any::Ie;
 # This file auto generated from Data\common\main\en_IE.xml
-#	on Sun  1 Jun  2:48:59 pm GMT
+#	on Tue 10 Jun  8:50:10 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -27,19 +27,19 @@ has 'day_period_data' => (
 		SWITCH:
 		for ($type) {
 			if ($_ eq 'generic') {
+				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'am' if $time >= 000
 					&& $time < 1200;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'gregorian') {
+				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'am' if $time >= 000
 					&& $time < 1200;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 		}
@@ -54,8 +54,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{p.m.},
 					'am' => q{a.m.},
+					'pm' => q{p.m.},
 				},
 			},
 		},

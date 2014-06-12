@@ -1,11 +1,11 @@
 package Locale::CLDR::Yo;
 # This file auto generated from Data\common\main\yo.xml
-#	on Sun  1 Jun  4:49:33 pm GMT
+#	on Tue 10 Jun 11:01:59 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -852,8 +852,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{Ọ̀sán},
 					'am' => q{Àárọ̀},
+					'pm' => q{Ọ̀sán},
 				},
 			},
 		},
@@ -933,7 +933,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -956,7 +956,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},

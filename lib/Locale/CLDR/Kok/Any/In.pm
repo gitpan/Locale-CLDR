@@ -1,11 +1,11 @@
 package Locale::CLDR::Kok::Any::In;
 # This file auto generated from Data\common\main\kok_IN.xml
-#	on Sun  1 Jun  3:35:50 pm GMT
+#	on Tue 10 Jun  9:40:50 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';

@@ -1,11 +1,11 @@
 package Locale::CLDR::Fr::Any::Lu;
 # This file auto generated from Data\common\main\fr_LU.xml
-#	on Sun  1 Jun  3:02:55 pm GMT
+#	on Tue 10 Jun  9:03:38 pm GMT
 # XML file generated 2013-08-30 17:35:54 -0500 (Fri, 30 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';

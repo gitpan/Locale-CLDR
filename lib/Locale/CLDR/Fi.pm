@@ -1,11 +1,11 @@
 package Locale::CLDR::Fi;
 # This file auto generated from Data\common\main\fi.xml
-#	on Sun  1 Jun  2:58:02 pm GMT
+#	on Tue 10 Jun  8:59:10 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -35,6 +35,298 @@ has 'LineBreak_rules' => (
 		'21.01' => ' × ($BA | $HH) ',
 	}}
 );
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal','spellout-ordinal' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'spellout-cardinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(miinus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(nolla),
+				},
+				'x.x' => {
+					rule => q(←← pilkku →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(yksi),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(kaksi),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(kolme),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(neljä),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(viisi),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(kuusi),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(seitsemän),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(kahdeksan),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(yhdeksän),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(kymmenen),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(→→toista),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(←←kymmentä[­→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(sata[­→→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←←­sataa[­→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(tuhat[­→→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←←­tuhatta[­→→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(←← miljoona[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←← miljoonaa[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(←← miljardi[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←← miljardia[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(←← biljoona[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←← biljoonaa[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'-x' => {
+					rule => q(miinus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+		'spellout-ordinal' => {
+			'public' => {
+				'-x' => {
+					rule => q(miinus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(nolla),
+				},
+				'x.x' => {
+					rule => q(=#,##0.#=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(ensimmäinen),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(toinen),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(kolmas),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(neljäs),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(viides),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(kuudes),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(seitsemäs),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(kahdeksas),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(yhdeksäs),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(kymmenes),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(yhdestoista),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(kahdestoista),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(→→toista),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(←%%spellout-ordinal-larger←kymmenes[→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(sadas[→→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(←%%spellout-ordinal-larger←sadas[→→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(tuhannes[→→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%%spellout-ordinal-larger←tuhannes[→→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(miljoonas[→→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%%spellout-ordinal-larger← miljoonas[→→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(miljardis[→→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%%spellout-ordinal-larger← miljardis[→→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(biljoonas[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%%spellout-ordinal-larger← biljoonas[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-ordinal-larger' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(kahdes),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(=%spellout-ordinal=),
+				},
+				'max' => {
+					base_value => q(3),
+					rule => q(=%spellout-ordinal=),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -4765,8 +5057,8 @@ has 'day_periods' => (
 					'am' => q{ap.},
 				},
 				'wide' => {
-					'am' => q{ap.},
 					'pm' => q{ip.},
+					'am' => q{ap.},
 				},
 				'abbreviated' => {
 					'am' => q{ap.},
@@ -4931,6 +5223,40 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'generic' => {
+			Ed => q{E d.},
+			Gy => q{y G},
+			GyMMM => q{LLL y G},
+			GyMMMEd => q{E d. MMM y G},
+			GyMMMd => q{d. MMM y G},
+			H => q{H},
+			Hm => q{H.mm},
+			Hms => q{H.mm.ss},
+			M => q{L},
+			MEd => q{E d.M.},
+			MMM => q{LLL},
+			MMMEd => q{ccc d. MMM},
+			MMMd => q{d. MMM},
+			Md => q{d.M.},
+			d => q{d},
+			h => q{h a},
+			hm => q{h.mm a},
+			hms => q{h.mm.ss a},
+			ms => q{mm.ss},
+			y => q{y G},
+			yyyy => q{y G},
+			yyyyM => q{L.y G},
+			yyyyMEd => q{E d.M.y G},
+			yyyyMM => q{M.y G},
+			yyyyMMM => q{LLL y G},
+			yyyyMMMEd => q{E d. MMM y G},
+			yyyyMMMM => q{LLLL y G},
+			yyyyMMMMccccd => q{cccc d. MMMM y G},
+			yyyyMMMd => q{d. MMM y G},
+			yyyyMd => q{d.M.y G},
+			yyyyQQQ => q{QQQ y G},
+			yyyyQQQQ => q{QQQQ y G},
+		},
 		'gregorian' => {
 			EHm => q{E H.mm},
 			EHms => q{E H.mm.ss},
@@ -4967,40 +5293,6 @@ has 'datetime_formats_available_formats' => (
 			yMd => q{d.M.y},
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
-		},
-		'generic' => {
-			Ed => q{E d.},
-			Gy => q{y G},
-			GyMMM => q{LLL y G},
-			GyMMMEd => q{E d. MMM y G},
-			GyMMMd => q{d. MMM y G},
-			H => q{H},
-			Hm => q{H.mm},
-			Hms => q{H.mm.ss},
-			M => q{L},
-			MEd => q{E d.M.},
-			MMM => q{LLL},
-			MMMEd => q{ccc d. MMM},
-			MMMd => q{d. MMM},
-			Md => q{d.M.},
-			d => q{d},
-			h => q{h a},
-			hm => q{h.mm a},
-			hms => q{h.mm.ss a},
-			ms => q{mm.ss},
-			y => q{y G},
-			yyyy => q{y G},
-			yyyyM => q{L.y G},
-			yyyyMEd => q{E d.M.y G},
-			yyyyMM => q{M.y G},
-			yyyyMMM => q{LLL y G},
-			yyyyMMMEd => q{E d. MMM y G},
-			yyyyMMMM => q{LLLL y G},
-			yyyyMMMMccccd => q{cccc d. MMMM y G},
-			yyyyMMMd => q{d. MMM y G},
-			yyyyMd => q{d.M.y G},
-			yyyyQQQ => q{QQQ y G},
-			yyyyQQQQ => q{QQQQ y G},
 		},
 		'chinese' => {
 			H => q{H},
@@ -5039,104 +5331,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			H => {
-				H => q{H–H},
-			},
-			Hm => {
-				H => q{H.mm–H.mm},
-				m => q{H.mm–H.mm},
-			},
-			Hmv => {
-				H => q{H.mm–H.mm v},
-				m => q{H.mm–H.mm v},
-			},
-			Hv => {
-				H => q{H–H v},
-			},
-			M => {
-				M => q{L.–L.},
-			},
-			MEd => {
-				M => q{E d.M. – E d.M.},
-				d => q{E d. – E d.M.},
-			},
-			MMM => {
-				M => q{LLL–LLLL},
-			},
-			MMMEd => {
-				M => q{E d. MMMM – E d. MMMM},
-				d => q{E d. – E d. MMMM},
-			},
-			MMMM => {
-				M => q{LLL–LLLL},
-			},
-			MMMd => {
-				M => q{d. MMMM – d. MMMM},
-				d => q{d.–d. MMMM},
-			},
-			Md => {
-				M => q{d.M.–d.M.},
-				d => q{d.–d.M.},
-			},
-			d => {
-				d => q{d.–d.},
-			},
-			fallback => '{0}–{1}',
-			h => {
-				a => q{h a – h a},
-				h => q{h–h a},
-			},
-			hm => {
-				a => q{h.mm a – h.mm a},
-				h => q{h.mm–h.mm a},
-				m => q{h.mm–h.mm a},
-			},
-			hmv => {
-				a => q{h.mm a – h.mm a v},
-				h => q{h.mm–h.mm a v},
-				m => q{h.mm–h.mm a v},
-			},
-			hv => {
-				a => q{h a – h a v},
-				h => q{h–h a v},
-			},
-			y => {
-				y => q{y–y},
-			},
-			yM => {
-				M => q{LLL–LLLL y},
-				y => q{LLLL y – LLLL y},
-			},
-			yMEd => {
-				M => q{E d.M.y – E d.M.y},
-				d => q{E d.M.y – E d.M.y},
-				y => q{E d.M.y – E d.M.y},
-			},
-			yMMM => {
-				M => q{LLL–LLLL y},
-				y => q{LLLL y – LLLL y},
-			},
-			yMMMEd => {
-				M => q{E d. MMMM – E d. MMMM y},
-				d => q{E d. – E d. MMMM y},
-				y => q{E d. MMMM y – E d. MMMM y},
-			},
-			yMMMM => {
-				M => q{LLL–LLLL y},
-				y => q{LLLL y – LLLL y},
-			},
-			yMMMd => {
-				M => q{d. MMMM – d. MMMM y},
-				d => q{d.–d. MMMM y},
-				y => q{d. MMMM y – d. MMMM y},
-			},
-			yMd => {
-				M => q{d.M.–d.M.y},
-				d => q{d.–d.M.y},
-				y => q{d.M.y–d.M.y},
-			},
-		},
 		'generic' => {
 			H => {
 				H => q{H–H},
@@ -5233,6 +5427,104 @@ has 'datetime_formats_interval' => (
 				M => q{d.M.–d.M.y G},
 				d => q{d.–d.M.y G},
 				y => q{d.M.y–d.M.y G},
+			},
+		},
+		'gregorian' => {
+			H => {
+				H => q{H–H},
+			},
+			Hm => {
+				H => q{H.mm–H.mm},
+				m => q{H.mm–H.mm},
+			},
+			Hmv => {
+				H => q{H.mm–H.mm v},
+				m => q{H.mm–H.mm v},
+			},
+			Hv => {
+				H => q{H–H v},
+			},
+			M => {
+				M => q{L.–L.},
+			},
+			MEd => {
+				M => q{E d.M. – E d.M.},
+				d => q{E d. – E d.M.},
+			},
+			MMM => {
+				M => q{LLL–LLLL},
+			},
+			MMMEd => {
+				M => q{E d. MMMM – E d. MMMM},
+				d => q{E d. – E d. MMMM},
+			},
+			MMMM => {
+				M => q{LLL–LLLL},
+			},
+			MMMd => {
+				M => q{d. MMMM – d. MMMM},
+				d => q{d.–d. MMMM},
+			},
+			Md => {
+				M => q{d.M.–d.M.},
+				d => q{d.–d.M.},
+			},
+			d => {
+				d => q{d.–d.},
+			},
+			fallback => '{0}–{1}',
+			h => {
+				a => q{h a – h a},
+				h => q{h–h a},
+			},
+			hm => {
+				a => q{h.mm a – h.mm a},
+				h => q{h.mm–h.mm a},
+				m => q{h.mm–h.mm a},
+			},
+			hmv => {
+				a => q{h.mm a – h.mm a v},
+				h => q{h.mm–h.mm a v},
+				m => q{h.mm–h.mm a v},
+			},
+			hv => {
+				a => q{h a – h a v},
+				h => q{h–h a v},
+			},
+			y => {
+				y => q{y–y},
+			},
+			yM => {
+				M => q{LLL–LLLL y},
+				y => q{LLLL y – LLLL y},
+			},
+			yMEd => {
+				M => q{E d.M.y – E d.M.y},
+				d => q{E d.M.y – E d.M.y},
+				y => q{E d.M.y – E d.M.y},
+			},
+			yMMM => {
+				M => q{LLL–LLLL y},
+				y => q{LLLL y – LLLL y},
+			},
+			yMMMEd => {
+				M => q{E d. MMMM – E d. MMMM y},
+				d => q{E d. – E d. MMMM y},
+				y => q{E d. MMMM y – E d. MMMM y},
+			},
+			yMMMM => {
+				M => q{LLL–LLLL y},
+				y => q{LLLL y – LLLL y},
+			},
+			yMMMd => {
+				M => q{d. MMMM – d. MMMM y},
+				d => q{d.–d. MMMM y},
+				y => q{d. MMMM y – d. MMMM y},
+			},
+			yMd => {
+				M => q{d.M.–d.M.y},
+				d => q{d.–d.M.y},
+				y => q{d.M.y–d.M.y},
 			},
 		},
 	} },

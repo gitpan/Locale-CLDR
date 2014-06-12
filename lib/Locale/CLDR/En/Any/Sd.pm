@@ -1,11 +1,11 @@
 package Locale::CLDR::En::Any::Sd;
 # This file auto generated from Data\common\main\en_SD.xml
-#	on Sun  1 Jun  2:49:05 pm GMT
+#	on Tue 10 Jun  8:50:15 pm GMT
 # XML file generated 2013-08-22 18:59:54 -0500 (Thu, 22 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';

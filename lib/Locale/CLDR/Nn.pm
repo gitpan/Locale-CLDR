@@ -1,11 +1,11 @@
 package Locale::CLDR::Nn;
 # This file auto generated from Data\common\main\nn.xml
-#	on Sun  1 Jun  4:03:23 pm GMT
+#	on Tue 10 Jun 10:12:20 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,280 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal-neuter','spellout-cardinal-masculine','spellout-cardinal-feminine','spellout-cardinal-reale' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'spellout-cardinal-feminine' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-reale=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-reale=),
+				},
+			},
+		},
+		'spellout-cardinal-masculine' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-reale=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-reale=),
+				},
+			},
+		},
+		'spellout-cardinal-neuter' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(null),
+				},
+				'x.x' => {
+					rule => q(←← komma →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(eitt),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(=%spellout-cardinal-reale=),
+				},
+				'max' => {
+					base_value => q(2),
+					rule => q(=%spellout-cardinal-reale=),
+				},
+			},
+		},
+		'spellout-cardinal-reale' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(null),
+				},
+				'x.x' => {
+					rule => q(←← komma →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(éin),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(to),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tre),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(fire),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(fem),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(seks),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(sju),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(åtte),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(ni),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(ti),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(elleve),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(tolv),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(tretten),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(fjorten),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(femten),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(seksten),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(sytten),
+				},
+				'18' => {
+					base_value => q(18),
+					rule => q(atten),
+				},
+				'19' => {
+					base_value => q(19),
+					rule => q(nitten),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(tjue[­→→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(tretti[­→→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(førti[­→→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(femti[­→→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(seksti[­→→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(søtti[­→→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(åtti[­→→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(nitti[­→→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←%spellout-cardinal-neuter← hundre[ og →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-neuter← tusen[ og →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(éin miljon[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←← miljoner[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(éin miljard[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←← miljarder[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(éin biljon[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←← biljoner[ →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(éin biljard[ →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←← biljarder[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-reale=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-reale=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'1100' => {
+					base_value => q(1100),
+					divisor => q(100),
+					rule => q(←← hundre[ og →→]),
+				},
+				'10000' => {
+					base_value => q(10000),
+					rule => q(=%spellout-numbering=),
+				},
+				'max' => {
+					base_value => q(10000),
+					rule => q(=%spellout-numbering=),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -3992,17 +4266,17 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
+				'abbreviated' => {
+					'pm' => q{e.m.},
+					'am' => q{f.m.},
+				},
 				'wide' => {
-					'pm' => q{ettermiddag},
 					'am' => q{formiddag},
+					'pm' => q{ettermiddag},
 				},
 				'narrow' => {
 					'pm' => q{e.m.},
 					'am' => q{f.m.},
-				},
-				'abbreviated' => {
-					'am' => q{f.m.},
-					'pm' => q{e.m.},
 				},
 			},
 		},
@@ -4090,35 +4364,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			Ed => q{E d.},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E d. MMM y G},
-			GyMMMd => q{d. MMM y G},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			MEd => q{E d.M},
-			MMMEd => q{E d. MMM},
-			MMMMd => q{d. MMMM},
-			MMMd => q{d. MMM},
-			MMdd => q{d.M.},
-			Md => q{d.M.},
-			d => q{d.},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			yM => q{M y},
-			yMEd => q{E d.M.y},
-			yMM => q{MM.y},
-			yMMM => q{MMM y},
-			yMMMEd => q{E d. MMM y},
-			yMMMM => q{MMMM y},
-			yMMMd => q{d. MMM y},
-			yMd => q{d.M.y},
-			yQQQ => q{QQQ y},
-			yQQQQ => q{QQQQ y},
-		},
 		'generic' => {
 			Ed => q{E d.},
 			Gy => q{y G},
@@ -4153,6 +4398,35 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
 		},
+		'gregorian' => {
+			Ed => q{E d.},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E d. MMM y G},
+			GyMMMd => q{d. MMM y G},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			MEd => q{E d.M},
+			MMMEd => q{E d. MMM},
+			MMMMd => q{d. MMMM},
+			MMMd => q{d. MMM},
+			MMdd => q{d.M.},
+			Md => q{d.M.},
+			d => q{d.},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			yM => q{M y},
+			yMEd => q{E d.M.y},
+			yMM => q{MM.y},
+			yMMM => q{MMM y},
+			yMMMEd => q{E d. MMM y},
+			yMMMM => q{MMMM y},
+			yMMMd => q{d. MMM y},
+			yMd => q{d.M.y},
+			yQQQ => q{QQQ y},
+			yQQQQ => q{QQQQ y},
+		},
 	} },
 );
 
@@ -4169,91 +4443,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			Hm => {
-				H => q{HH:mm–HH:mm},
-				m => q{HH:mm–HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm–HH:mm v},
-				m => q{HH:mm–HH:mm v},
-			},
-			M => {
-				M => q{M.–M.},
-			},
-			MEd => {
-				M => q{E dd.MM.–E dd.MM.},
-				d => q{E dd.MM.–E dd.MM.},
-			},
-			MMM => {
-				M => q{MMM–MMM},
-			},
-			MMMEd => {
-				M => q{E d. MMM–E d. MMM},
-				d => q{E d.–E d. MMM},
-			},
-			MMMd => {
-				M => q{d. MMM–d. MMM},
-				d => q{d.–d. MMM},
-			},
-			Md => {
-				M => q{dd.MM–dd.MM},
-				d => q{dd.MM–dd.MM},
-			},
-			d => {
-				d => q{d.–d.},
-			},
-			fallback => '{0} – {1}',
-			h => {
-				h => q{h–h a},
-			},
-			hm => {
-				h => q{h:mm–h:mm a},
-				m => q{h:mm–h:mm a},
-			},
-			hmv => {
-				h => q{h:mm–h:mm a v},
-				m => q{h:mm–h:mm a v},
-			},
-			hv => {
-				h => q{h–h a v},
-			},
-			y => {
-				y => q{y–y},
-			},
-			yM => {
-				M => q{MM.y–MM.y},
-				y => q{MM.y–MM.y},
-			},
-			yMEd => {
-				M => q{E dd.MM.y–E dd.MM.y},
-				d => q{E dd.MM.y–E dd.MM.y},
-				y => q{E dd.MM.y–E dd.MM.y},
-			},
-			yMMM => {
-				M => q{MMM–MMM y},
-				y => q{MMM y–MMM y},
-			},
-			yMMMEd => {
-				M => q{E d. MMM–E d. MMM y},
-				d => q{E d.–E d. MMM y},
-				y => q{E d. MMM y–E d. MMM},
-			},
-			yMMMM => {
-				M => q{MMMM–MMMM y},
-				y => q{MMMM y–MMMM y},
-			},
-			yMMMd => {
-				M => q{d. MMM–d. MMM y},
-				d => q{d.–d. MMM y},
-				y => q{d. MMM y–d. MMM y},
-			},
-			yMd => {
-				M => q{dd.MM.y–dd.MM.y},
-				d => q{dd.MM.y–dd.MM.y},
-				y => q{dd.MM.y–dd.MM.y},
-			},
-		},
 		'generic' => {
 			H => {
 				H => q{HH–HH},
@@ -4347,6 +4536,91 @@ has 'datetime_formats_interval' => (
 				M => q{dd.MM.y–dd.MM.y G},
 				d => q{dd.MM.y–dd.MM.y G},
 				y => q{dd.MM.y–dd.MM.y G},
+			},
+		},
+		'gregorian' => {
+			Hm => {
+				H => q{HH:mm–HH:mm},
+				m => q{HH:mm–HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm–HH:mm v},
+				m => q{HH:mm–HH:mm v},
+			},
+			M => {
+				M => q{M.–M.},
+			},
+			MEd => {
+				M => q{E dd.MM.–E dd.MM.},
+				d => q{E dd.MM.–E dd.MM.},
+			},
+			MMM => {
+				M => q{MMM–MMM},
+			},
+			MMMEd => {
+				M => q{E d. MMM–E d. MMM},
+				d => q{E d.–E d. MMM},
+			},
+			MMMd => {
+				M => q{d. MMM–d. MMM},
+				d => q{d.–d. MMM},
+			},
+			Md => {
+				M => q{dd.MM–dd.MM},
+				d => q{dd.MM–dd.MM},
+			},
+			d => {
+				d => q{d.–d.},
+			},
+			fallback => '{0} – {1}',
+			h => {
+				h => q{h–h a},
+			},
+			hm => {
+				h => q{h:mm–h:mm a},
+				m => q{h:mm–h:mm a},
+			},
+			hmv => {
+				h => q{h:mm–h:mm a v},
+				m => q{h:mm–h:mm a v},
+			},
+			hv => {
+				h => q{h–h a v},
+			},
+			y => {
+				y => q{y–y},
+			},
+			yM => {
+				M => q{MM.y–MM.y},
+				y => q{MM.y–MM.y},
+			},
+			yMEd => {
+				M => q{E dd.MM.y–E dd.MM.y},
+				d => q{E dd.MM.y–E dd.MM.y},
+				y => q{E dd.MM.y–E dd.MM.y},
+			},
+			yMMM => {
+				M => q{MMM–MMM y},
+				y => q{MMM y–MMM y},
+			},
+			yMMMEd => {
+				M => q{E d. MMM–E d. MMM y},
+				d => q{E d.–E d. MMM y},
+				y => q{E d. MMM y–E d. MMM},
+			},
+			yMMMM => {
+				M => q{MMMM–MMMM y},
+				y => q{MMMM y–MMMM y},
+			},
+			yMMMd => {
+				M => q{d. MMM–d. MMM y},
+				d => q{d.–d. MMM y},
+				y => q{d. MMM y–d. MMM y},
+			},
+			yMd => {
+				M => q{dd.MM.y–dd.MM.y},
+				d => q{dd.MM.y–dd.MM.y},
+				y => q{dd.MM.y–dd.MM.y},
 			},
 		},
 	} },

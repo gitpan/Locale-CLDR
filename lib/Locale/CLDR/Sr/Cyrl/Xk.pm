@@ -1,11 +1,11 @@
 package Locale::CLDR::Sr::Cyrl::Xk;
 # This file auto generated from Data\common\main\sr_Cyrl_XK.xml
-#	on Sun  1 Jun  4:25:32 pm GMT
+#	on Tue 10 Jun 10:37:43 pm GMT
 # XML file generated 2013-08-18 23:26:52 -0500 (Sun, 18 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';

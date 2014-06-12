@@ -1,11 +1,11 @@
 package Locale::CLDR::Ar::Any::Qa;
 # This file auto generated from Data\common\main\ar_QA.xml
-#	on Sun  1 Jun  2:16:59 pm GMT
+#	on Tue 10 Jun  8:18:30 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';

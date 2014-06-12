@@ -1,11 +1,11 @@
 package Locale::CLDR::Or;
 # This file auto generated from Data\common\main\or.xml
-#	on Sun  1 Jun  4:04:24 pm GMT
+#	on Tue 10 Jun 10:13:30 pm GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -1133,13 +1133,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'pm' => q{pm},
-					'am' => q{am},
-				},
 				'narrow' => {
 					'pm' => q{pm},
 					'am' => q{am},
+				},
+				'wide' => {
+					'am' => q{am},
+					'pm' => q{pm},
 				},
 			},
 		},
@@ -1211,19 +1211,19 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			MMMMd => q{MMMM d},
-			MMdd => q{dd-MM},
-			yMM => q{MM-y G},
-			yMMMM => q{MMMM y G},
-			yQQQ => q{QQQ y G},
-		},
 		'gregorian' => {
 			MMMMd => q{MMMM d},
 			MMdd => q{dd-MM},
 			yMM => q{MM-y},
 			yMMMM => q{MMMM y},
 			yQQQ => q{QQQ y},
+		},
+		'generic' => {
+			MMMMd => q{MMMM d},
+			MMdd => q{dd-MM},
+			yMM => q{MM-y G},
+			yMMMM => q{MMMM y G},
+			yQQQ => q{QQQ y G},
 		},
 	} },
 );

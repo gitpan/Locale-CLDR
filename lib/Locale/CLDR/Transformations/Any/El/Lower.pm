@@ -1,11 +1,11 @@
 package Locale::CLDR::Transformations::Any::El::Lower;
 # This file auto generated from Data\common\transforms\el-Lower.xml
-#	on Sun  1 Jun  2:11:24 pm GMT
+#	on Tue 10 Jun  8:12:37 pm GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';

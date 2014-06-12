@@ -1,11 +1,11 @@
 package Locale::CLDR::Vo::Any::001;
 # This file auto generated from Data\common\main\vo_001.xml
-#	on Sun  1 Jun  4:49:20 pm GMT
+#	on Tue 10 Jun 11:01:47 pm GMT
 # XML file generated 2013-08-24 16:19:30 -0500 (Sat, 24 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';

@@ -1,11 +1,11 @@
 package Locale::CLDR::Transformations::Any::Publishing::Any;
 # This file auto generated from Data\common\transforms\Any-Publishing.xml
-#	on Sun  1 Jun  2:11:06 pm GMT
+#	on Tue 10 Jun  8:12:19 pm GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';

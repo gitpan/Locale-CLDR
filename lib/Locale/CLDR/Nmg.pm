@@ -1,11 +1,11 @@
 package Locale::CLDR::Nmg;
 # This file auto generated from Data\common\main\nmg.xml
-#	on Sun  1 Jun  4:03:18 pm GMT
+#	on Tue 10 Jun 10:12:15 pm GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -847,8 +847,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{kugú},
 					'am' => q{maná},
+					'pm' => q{kugú},
 				},
 			},
 		},

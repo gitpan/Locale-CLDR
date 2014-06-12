@@ -1,11 +1,11 @@
 package Locale::CLDR::Es::Any::419;
 # This file auto generated from Data\common\main\es_419.xml
-#	on Sun  1 Jun  2:51:00 pm GMT
+#	on Tue 10 Jun  8:52:06 pm GMT
 # XML file generated 2014-01-08 23:02:40 -0600 (Wed, 08 Jan 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,1640 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Es::Any');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal-masculine','spellout-cardinal-feminine','spellout-ordinal-masculine-adjective','spellout-ordinal-masculine-plural','spellout-ordinal-masculine','spellout-ordinal-feminine-plural','spellout-ordinal-feminine','digits-ordinal-masculine-adjective','digits-ordinal-masculine','digits-ordinal-feminine','digits-ordinal' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'digits-ordinal' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%digits-ordinal-masculine=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%digits-ordinal-masculine=),
+				},
+			},
+		},
+		'digits-ordinal-feminine' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=#,##0==%%dord-femabbrev=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=#,##0==%%dord-femabbrev=),
+				},
+			},
+		},
+		'digits-ordinal-masculine' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=#,##0=º),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=#,##0=º),
+				},
+			},
+		},
+		'digits-ordinal-masculine-adjective' => {
+			'public' => {
+				'-x' => {
+					rule => q(−→→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=#,##0==%%dord-mascabbrev=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=#,##0==%%dord-mascabbrev=),
+				},
+			},
+		},
+		'dord-femabbrev' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(ª),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(ª),
+				},
+			},
+		},
+		'dord-mascabbrev' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(º),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(ᵉʳ),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(º),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(ᵉʳ),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(º),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(→→),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(→→),
+				},
+				'max' => {
+					base_value => q(100),
+					rule => q(→→),
+				},
+			},
+		},
+		'lenient-parse' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(&[last primary ignorable ] ←← ' ' ←← ',' ←← '-' ←← '­'),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(&[last primary ignorable ] ←← ' ' ←← ',' ←← '-' ←← '­'),
+				},
+			},
+		},
+		'spellout-cardinal-feminine' => {
+			'public' => {
+				'-x' => {
+					rule => q(menos →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(cero),
+				},
+				'x.x' => {
+					rule => q(←← coma →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(una),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(=%spellout-numbering=),
+				},
+				'21' => {
+					base_value => q(21),
+					rule => q(veintiuna),
+				},
+				'22' => {
+					base_value => q(22),
+					rule => q(=%spellout-numbering=),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(treinta[ y →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(cuarenta[ y →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(cincuenta[ y →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(sesenta[ y →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(setenta[ y →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(ochenta[ y →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(noventa[ y →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(cien),
+				},
+				'101' => {
+					base_value => q(101),
+					rule => q(ciento →→),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(dos­cientas[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(tres­cientas[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(cuatro­cientas[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(quinientas[ →→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(seis­cientas[ →→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(sete­cientas[ →→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(ocho­cientas[ →→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(nove­cientas[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(mil[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-masculine← mil[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(un millón[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← millones[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(un billón[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← billiones[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-masculine' => {
+			'public' => {
+				'-x' => {
+					rule => q(menos →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(cero),
+				},
+				'x.x' => {
+					rule => q(←← coma →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(un),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(=%spellout-numbering=),
+				},
+				'21' => {
+					base_value => q(21),
+					rule => q(veintiún),
+				},
+				'22' => {
+					base_value => q(22),
+					rule => q(=%spellout-numbering=),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(treinta[ y →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(cuarenta[ y →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(cincuenta[ y →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(sesenta[ y →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(setenta[ y →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(ochenta[ y →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(noventa[ y →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(cien),
+				},
+				'101' => {
+					base_value => q(101),
+					rule => q(ciento →→),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(doscientos[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(trescientos[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(cuatrocientos[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(quinientos[ →→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(seis­cientos[ →→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(sete­cientos[ →→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(ocho­cientos[ →→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(nove­cientos[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(mil[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-masculine← mil[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(un millón[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← millones[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(un billón[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← billiones[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'-x' => {
+					rule => q(menos →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(cero),
+				},
+				'x.x' => {
+					rule => q(←← coma →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(uno),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(dos),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tres),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(cuatro),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(cinco),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(seis),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(siete),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(ocho),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(nueve),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(diez),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(once),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(doce),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(trece),
+				},
+				'14' => {
+					base_value => q(14),
+					rule => q(catorce),
+				},
+				'15' => {
+					base_value => q(15),
+					rule => q(quince),
+				},
+				'16' => {
+					base_value => q(16),
+					rule => q(dieciséis),
+				},
+				'17' => {
+					base_value => q(17),
+					rule => q(dieci→→),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(veinte),
+				},
+				'21' => {
+					base_value => q(21),
+					rule => q(veintiuno),
+				},
+				'22' => {
+					base_value => q(22),
+					rule => q(veintidós),
+				},
+				'23' => {
+					base_value => q(23),
+					rule => q(veintitrés),
+				},
+				'24' => {
+					base_value => q(24),
+					rule => q(veinticuatro),
+				},
+				'25' => {
+					base_value => q(25),
+					rule => q(veinticinco),
+				},
+				'26' => {
+					base_value => q(26),
+					rule => q(veintiséis),
+				},
+				'27' => {
+					base_value => q(27),
+					rule => q(veinti→→),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(treinta[ y →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(cuarenta[ y →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(cincuenta[ y →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(sesenta[ y →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(setenta[ y →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(ochenta[ y →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(noventa[ y →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(cien),
+				},
+				'101' => {
+					base_value => q(101),
+					rule => q(ciento →→),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(doscientos[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(trescientos[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(cuatrocientos[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(quinientos[ →→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(seiscientos[ →→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(setecientos[ →→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(ochocientos[ →→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(novecientos[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(mil[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-masculine← mil[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(un millón[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← millones[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(un billón[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← billiones[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+		'spellout-ordinal-feminine' => {
+			'public' => {
+				'-x' => {
+					rule => q(menos →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(cero),
+				},
+				'x.x' => {
+					rule => q(=#,##0.#=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(primera),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(segunda),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tercera),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(cuarta),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(quinta),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(sexta),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(séptima),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(octava),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(novena),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(décima),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(undécima),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(duodécima),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(decima→→),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(vigésima[ →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(trigésima[ →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(cuadragésima[ →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(quincuagésima[ →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(sexagésima[ →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(septuagésima[ →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(octogésima[ →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(nonagésima[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(centésima[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(ducentésima[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(tricentésima[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(cuadringentésima[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(quingentésima[ →→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(sexcentésima[ →→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(septingentésima[ →→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(octingésima[ →→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(noningentésima[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(milésima[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-masculine← milésima[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(un millonésima[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← millonésima[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(un billonésima[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← billonésima[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=ª),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=ª),
+				},
+			},
+		},
+		'spellout-ordinal-feminine-plural' => {
+			'public' => {
+				'-x' => {
+					rule => q(menos →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(cero),
+				},
+				'x.x' => {
+					rule => q(=#,##0.#=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(primeras),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(segundas),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(terceras),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(cuartas),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(quintas),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(sextas),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(séptimas),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(octavas),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(novenas),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(décimas),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(undécimas),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(duodécimas),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(decima→→),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(vigésimas),
+				},
+				'21' => {
+					base_value => q(21),
+					rule => q(vigésima[ →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(trigésimas),
+				},
+				'31' => {
+					base_value => q(31),
+					rule => q(trigésima[ →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(cuadragésimas),
+				},
+				'41' => {
+					base_value => q(41),
+					rule => q(cuadragésima[ →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(quincuagésimas),
+				},
+				'51' => {
+					base_value => q(51),
+					rule => q(quincuagésima[ →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(sexagésimas),
+				},
+				'61' => {
+					base_value => q(61),
+					rule => q(sexagésima[ →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(septuagésimas),
+				},
+				'71' => {
+					base_value => q(71),
+					rule => q(septuagésima[ →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(octogésimas),
+				},
+				'81' => {
+					base_value => q(81),
+					rule => q(octogésima[ →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(nonagésimas),
+				},
+				'91' => {
+					base_value => q(91),
+					rule => q(nonagésima[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(centésimas),
+				},
+				'101' => {
+					base_value => q(101),
+					rule => q(centésima[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(ducentésimas),
+				},
+				'201' => {
+					base_value => q(201),
+					rule => q(ducentésima[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(tricentésimas),
+				},
+				'301' => {
+					base_value => q(301),
+					rule => q(tricentésima[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(cuadringentésimas),
+				},
+				'401' => {
+					base_value => q(401),
+					rule => q(cuadringentésima[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(quingentésimas),
+				},
+				'501' => {
+					base_value => q(501),
+					rule => q(quingentésima[ →→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(sexcentésimas),
+				},
+				'601' => {
+					base_value => q(601),
+					rule => q(sexcentésima[ →→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(septingentésimas),
+				},
+				'701' => {
+					base_value => q(701),
+					rule => q(septingentésima[ →→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(octingésimas),
+				},
+				'801' => {
+					base_value => q(801),
+					rule => q(octingésima[ →→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(noningentésimas),
+				},
+				'901' => {
+					base_value => q(901),
+					rule => q(noningentésima[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(milésimas),
+				},
+				'1001' => {
+					base_value => q(1001),
+					rule => q(milésima[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-masculine← milésimas),
+				},
+				'2001' => {
+					base_value => q(2001),
+					rule => q(←%spellout-cardinal-masculine← milésima[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(un millonésimas),
+				},
+				'1000001' => {
+					base_value => q(1000001),
+					rule => q(un millonésima[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← millonésimas),
+				},
+				'2000001' => {
+					base_value => q(2000001),
+					rule => q(←%spellout-cardinal-masculine← millonésima[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(un billonésimas),
+				},
+				'1000000000001' => {
+					base_value => q(1000000000001),
+					rule => q(un billonésima[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← billonésimas),
+				},
+				'2000000000001' => {
+					base_value => q(2000000000001),
+					rule => q(←%spellout-cardinal-masculine← billonésima[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=ª),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=ª),
+				},
+			},
+		},
+		'spellout-ordinal-masculine' => {
+			'public' => {
+				'-x' => {
+					rule => q(menos →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(cero),
+				},
+				'x.x' => {
+					rule => q(=#,##0.#=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(primero),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(segundo),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tercero),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(cuarto),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(quinto),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(sexto),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(séptimo),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(octavo),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(noveno),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(décimo),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(undécimo),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(duodécimo),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(decimo→→),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(vigésimo[ →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(trigésimo[ →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(cuadragésimo[ →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(quincuagésimo[ →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(sexagésimo[ →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(septuagésimo[ →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(octogésimo[ →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(nonagésimo[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(centésimo[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(ducentésimo[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(tricentésimo[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(cuadringentésimo[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(quingentésimo[ →→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(sexcentésimo[ →→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(septingentésimo[ →→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(octingésimo[ →→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(noningentésimo[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(milésimo[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-masculine← milésimo[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(un millonésimo[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← millonésimo[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(un billonésimo[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← billonésimo[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=º),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=º),
+				},
+			},
+		},
+		'spellout-ordinal-masculine-adjective' => {
+			'public' => {
+				'-x' => {
+					rule => q(menos →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(cero),
+				},
+				'x.x' => {
+					rule => q(=#,##0.#=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(primer),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(segundo),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tercer),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(cuarto),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(quinto),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(sexto),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(séptimo),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(octavo),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(noveno),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(décimo),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(undécimo),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(duodécimo),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(decimo→→),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(vigésimo[ →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(trigésimo[ →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(cuadragésimo[ →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(quincuagésimo[ →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(sexagésimo[ →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(septuagésimo[ →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(octogésimo[ →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(nonagésimo[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(centésimo[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(ducentésimo[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(tricentésimo[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(cuadringentésimo[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(quingentésimo[ →→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(sexcentésimo[ →→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(septingentésimo[ →→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(octingésimo[ →→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(noningentésimo[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(milésimo[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-masculine← milésimo[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(un millonésimo[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← millonésimo[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(un billonésimo[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← billonésimo[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=º),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=º),
+				},
+			},
+		},
+		'spellout-ordinal-masculine-plural' => {
+			'public' => {
+				'-x' => {
+					rule => q(menos →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(cero),
+				},
+				'x.x' => {
+					rule => q(=#,##0.#=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(primeros),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(segundos),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(terceros),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(cuartos),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(quintos),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(sextos),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(séptimos),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(octavos),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(novenos),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(décimos),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(undécimos),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(duodécimos),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(decimo→→),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(vigésimos),
+				},
+				'21' => {
+					base_value => q(21),
+					rule => q(vigésimo[ →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(trigésimos),
+				},
+				'31' => {
+					base_value => q(31),
+					rule => q(trigésimo[ →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(cuadragésimos),
+				},
+				'41' => {
+					base_value => q(41),
+					rule => q(cuadragésimo[ →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(quincuagésimos),
+				},
+				'51' => {
+					base_value => q(51),
+					rule => q(quincuagésimo[ →→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(sexagésimos),
+				},
+				'61' => {
+					base_value => q(61),
+					rule => q(sexagésimo[ →→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(septuagésimos),
+				},
+				'71' => {
+					base_value => q(71),
+					rule => q(septuagésimo[ →→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(octogésimos),
+				},
+				'81' => {
+					base_value => q(81),
+					rule => q(octogésimo[ →→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(nonagésimos),
+				},
+				'91' => {
+					base_value => q(91),
+					rule => q(nonagésimo[ →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(centésimos),
+				},
+				'101' => {
+					base_value => q(101),
+					rule => q(centésimo[ →→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(ducentésimos),
+				},
+				'201' => {
+					base_value => q(201),
+					rule => q(ducentésimo[ →→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(tricentésimos),
+				},
+				'301' => {
+					base_value => q(301),
+					rule => q(tricentésimo[ →→]),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(cuadringentésimos),
+				},
+				'401' => {
+					base_value => q(401),
+					rule => q(cuadringentésimo[ →→]),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(quingentésimos),
+				},
+				'501' => {
+					base_value => q(501),
+					rule => q(quingentésimo[ →→]),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(sexcentésimos),
+				},
+				'601' => {
+					base_value => q(601),
+					rule => q(sexcentésimo[ →→]),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(septingentésimos),
+				},
+				'701' => {
+					base_value => q(701),
+					rule => q(septingentésimo[ →→]),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(octingésimos),
+				},
+				'801' => {
+					base_value => q(801),
+					rule => q(octingésimo[ →→]),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(noningentésimos),
+				},
+				'901' => {
+					base_value => q(901),
+					rule => q(noningentésimo[ →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(milésimos),
+				},
+				'1001' => {
+					base_value => q(1001),
+					rule => q(milésimo[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(←%spellout-cardinal-masculine← milésimos),
+				},
+				'2001' => {
+					base_value => q(2001),
+					rule => q(←%spellout-cardinal-masculine← milésimo[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(un millonésimos),
+				},
+				'1000001' => {
+					base_value => q(1000001),
+					rule => q(un millonésimo[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-masculine← millonésimos),
+				},
+				'2000001' => {
+					base_value => q(2000001),
+					rule => q(←%spellout-cardinal-masculine← millonésimo[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(un billonésimos),
+				},
+				'1000000000001' => {
+					base_value => q(1000000000001),
+					rule => q(un billonésimo[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-masculine← billonésimos),
+				},
+				'2000000000001' => {
+					base_value => q(2000000000001),
+					rule => q(←%spellout-cardinal-masculine← billonésimo[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=º),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=º),
+				},
+			},
+		},
+	} },
+);
+
 has 'display_name_language' => (
 	is			=> 'ro',
 	isa			=> 'CodeRef',
@@ -319,11 +1953,11 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			yMEd => q{E d/M/y},
-		},
 		'generic' => {
 			yMEd => q{E d/M/y G},
+		},
+		'gregorian' => {
+			yMEd => q{E d/M/y},
 		},
 	} },
 );

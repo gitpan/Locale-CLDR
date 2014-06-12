@@ -1,11 +1,11 @@
 package Locale::CLDR::Sq;
 # This file auto generated from Data\common\main\sq.xml
-#	on Sun  1 Jun  4:21:47 pm GMT
+#	on Tue 10 Jun 10:33:23 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,263 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal-masculine','spellout-cardinal-feminine' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'spellout-cardinal-feminine' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(zero),
+				},
+				'x.x' => {
+					rule => q(←← presje →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(një),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(dy),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tri),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(njëzet[ e →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(tridhjetë[ e →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(dyzet[ e →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(←%spellout-cardinal-feminine←dhjetë[ e →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←%spellout-cardinal-masculine←qind[ e →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-masculine← mijë[ e →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(një milion[ e →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-feminine← milionë[ e →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(një miliar[ e →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-feminine← miliarë[ e →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(një bilion[ e →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-feminine← bilionë[ e →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(një biliar[ e →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-feminine← biliarë[ e →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-masculine' => {
+			'public' => {
+				'-x' => {
+					rule => q(minus →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(zero),
+				},
+				'x.x' => {
+					rule => q(←← presje →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(një),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(dy),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(tre),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(katër),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(pesë),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(gjashtë),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(shtatë),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(tetë),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(nëntë),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(dhjetë),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(→%spellout-cardinal-masculine→mbëdhjetë),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(njëzet[ e →→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(tridhjetë[ e →→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(dyzet[ e →→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(←%spellout-cardinal-feminine←dhjetë[ e →→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(←%spellout-cardinal-masculine←qind[ e →→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(←%spellout-cardinal-masculine← mijë[ e →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(një milion[ e →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(←%spellout-cardinal-feminine← milionë[ e →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(një miliar[ e →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(←%spellout-cardinal-feminine← miliarë[ e →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(një bilion[ e →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(←%spellout-cardinal-feminine← bilionë[ e →→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(një biliar[ e →→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(←%spellout-cardinal-feminine← biliarë[ e →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+				'max' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -2970,8 +3227,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{paradite},
 					'pm' => q{pasdite},
+					'am' => q{paradite},
 				},
 				'narrow' => {
 					'pm' => q{PM},
@@ -3067,41 +3324,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			Ed => q{E d},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E d MMM y G},
-			GyMMMd => q{d MMM y G},
-			H => q{H},
-			Hm => q{H.mm},
-			Hms => q{H.mm.ss},
-			M => q{L},
-			MEd => q{E d/M},
-			MMM => q{LLL},
-			MMMEd => q{E d MMM},
-			MMMMEd => q{E d MMMM},
-			MMMMd => q{d MMMM},
-			MMMd => q{d MMM},
-			MMdd => q{MM-dd},
-			Md => q{d/M},
-			d => q{d},
-			h => q{h.a},
-			hm => q{h.mm.a},
-			hms => q{h.mm.ss.a},
-			ms => q{mm.ss},
-			y => q{y G},
-			yyyy => q{y G},
-			yyyyM => q{M/y G},
-			yyyyMEd => q{E d/M/y G},
-			yyyyMMM => q{MMM y G},
-			yyyyMMMEd => q{E d MMM y G},
-			yyyyMMMM => q{MMMM y G},
-			yyyyMMMd => q{d MMM y G},
-			yyyyMd => q{d/M/y GGGGG},
-			yyyyQQQ => q{QQQ y G},
-			yyyyQQQQ => q{QQQQ y G},
-		},
 		'gregorian' => {
 			EHm => q{E HH:mm},
 			EHms => q{E HH:mm:ss},
@@ -3140,6 +3362,41 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
+		'generic' => {
+			Ed => q{E d},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E d MMM y G},
+			GyMMMd => q{d MMM y G},
+			H => q{H},
+			Hm => q{H.mm},
+			Hms => q{H.mm.ss},
+			M => q{L},
+			MEd => q{E d/M},
+			MMM => q{LLL},
+			MMMEd => q{E d MMM},
+			MMMMEd => q{E d MMMM},
+			MMMMd => q{d MMMM},
+			MMMd => q{d MMM},
+			MMdd => q{MM-dd},
+			Md => q{d/M},
+			d => q{d},
+			h => q{h.a},
+			hm => q{h.mm.a},
+			hms => q{h.mm.ss.a},
+			ms => q{mm.ss},
+			y => q{y G},
+			yyyy => q{y G},
+			yyyyM => q{M/y G},
+			yyyyMEd => q{E d/M/y G},
+			yyyyMMM => q{MMM y G},
+			yyyyMMMEd => q{E d MMM y G},
+			yyyyMMMM => q{MMMM y G},
+			yyyyMMMd => q{d MMM y G},
+			yyyyMd => q{d/M/y GGGGG},
+			yyyyQQQ => q{QQQ y G},
+			yyyyQQQQ => q{QQQQ y G},
+		},
 	} },
 );
 
@@ -3159,87 +3416,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			M => {
-				M => q{M-M},
-			},
-			MEd => {
-				M => q{E dd/MM - E dd/MM},
-				d => q{E dd/MM - E dd/MM},
-			},
-			MMM => {
-				M => q{MMM-MMM},
-			},
-			MMMEd => {
-				M => q{E dd MMM - E dd MMM},
-				d => q{E dd - E dd MMM},
-			},
-			MMMd => {
-				M => q{dd MMM - dd MMM},
-				d => q{dd-dd MMM},
-			},
-			Md => {
-				M => q{dd/MM - dd/MM},
-				d => q{dd/MM - dd/MM},
-			},
-			d => {
-				d => q{d-d},
-			},
-			fallback => '{0} - {1}',
-			h => {
-				a => q{h.a - h.a},
-				h => q{h.-h.a},
-			},
-			hm => {
-				a => q{h.mm.a - h.mm.a},
-				h => q{h.mm.-h.mm.a},
-				m => q{h.mm.-h.mm.a},
-			},
-			hmv => {
-				a => q{h.mm.a - h.mm.a v},
-				h => q{h.mm.-h.mm.a v},
-				m => q{h.mm.-h.mm.a v},
-			},
-			hv => {
-				a => q{h.a - h.a v},
-				h => q{h.-h.a v},
-			},
-			y => {
-				y => q{y-y G},
-			},
-			yM => {
-				M => q{MM/y - MM/y G},
-				y => q{MM/y - MM/y G},
-			},
-			yMEd => {
-				M => q{E dd/MM/y - E dd/MM/y G},
-				d => q{E dd/MM/y - E dd/MM/y G},
-				y => q{E dd/MM/y - E dd/MM/y G},
-			},
-			yMMM => {
-				M => q{MMM - MMM y G},
-				y => q{MMM y - MMM y G},
-			},
-			yMMMEd => {
-				M => q{E d MMM - E d MMM y G},
-				d => q{E d - E d MMM y G},
-				y => q{E d MMM y - E d MMM y G},
-			},
-			yMMMM => {
-				M => q{MMMM-MMMM y G},
-				y => q{MMMM-MMMM y G},
-			},
-			yMMMd => {
-				M => q{dd MMM - dd MMM y G},
-				d => q{dd-dd MMM y G},
-				y => q{dd MMM y - dd MMM y G},
-			},
-			yMd => {
-				M => q{dd/MM/y - dd/MM/y G},
-				d => q{dd/MM/y - dd/MM/y G},
-				y => q{dd/MM/y - dd/MM/y G},
-			},
-		},
 		'gregorian' => {
 			H => {
 				H => q{HH-HH},
@@ -3333,6 +3509,87 @@ has 'datetime_formats_interval' => (
 				M => q{dd/MM/y - dd/MM/y},
 				d => q{dd/MM/y - dd/MM/y},
 				y => q{dd/MM/y - dd/MM/y},
+			},
+		},
+		'generic' => {
+			M => {
+				M => q{M-M},
+			},
+			MEd => {
+				M => q{E dd/MM - E dd/MM},
+				d => q{E dd/MM - E dd/MM},
+			},
+			MMM => {
+				M => q{MMM-MMM},
+			},
+			MMMEd => {
+				M => q{E dd MMM - E dd MMM},
+				d => q{E dd - E dd MMM},
+			},
+			MMMd => {
+				M => q{dd MMM - dd MMM},
+				d => q{dd-dd MMM},
+			},
+			Md => {
+				M => q{dd/MM - dd/MM},
+				d => q{dd/MM - dd/MM},
+			},
+			d => {
+				d => q{d-d},
+			},
+			fallback => '{0} - {1}',
+			h => {
+				a => q{h.a - h.a},
+				h => q{h.-h.a},
+			},
+			hm => {
+				a => q{h.mm.a - h.mm.a},
+				h => q{h.mm.-h.mm.a},
+				m => q{h.mm.-h.mm.a},
+			},
+			hmv => {
+				a => q{h.mm.a - h.mm.a v},
+				h => q{h.mm.-h.mm.a v},
+				m => q{h.mm.-h.mm.a v},
+			},
+			hv => {
+				a => q{h.a - h.a v},
+				h => q{h.-h.a v},
+			},
+			y => {
+				y => q{y-y G},
+			},
+			yM => {
+				M => q{MM/y - MM/y G},
+				y => q{MM/y - MM/y G},
+			},
+			yMEd => {
+				M => q{E dd/MM/y - E dd/MM/y G},
+				d => q{E dd/MM/y - E dd/MM/y G},
+				y => q{E dd/MM/y - E dd/MM/y G},
+			},
+			yMMM => {
+				M => q{MMM - MMM y G},
+				y => q{MMM y - MMM y G},
+			},
+			yMMMEd => {
+				M => q{E d MMM - E d MMM y G},
+				d => q{E d - E d MMM y G},
+				y => q{E d MMM y - E d MMM y G},
+			},
+			yMMMM => {
+				M => q{MMMM-MMMM y G},
+				y => q{MMMM-MMMM y G},
+			},
+			yMMMd => {
+				M => q{dd MMM - dd MMM y G},
+				d => q{dd-dd MMM y G},
+				y => q{dd MMM y - dd MMM y G},
+			},
+			yMd => {
+				M => q{dd/MM/y - dd/MM/y G},
+				d => q{dd/MM/y - dd/MM/y G},
+				y => q{dd/MM/y - dd/MM/y G},
 			},
 		},
 	} },

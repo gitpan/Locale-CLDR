@@ -1,11 +1,11 @@
 package Locale::CLDR::He;
 # This file auto generated from Data\common\main\he.xml
-#	on Sun  1 Jun  3:09:49 pm GMT
+#	on Tue 10 Jun  9:10:58 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.2');
+our $VERSION = version->declare('v0.25.3');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,1406 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Root');
+has 'valid_algorithmic_formats' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {[ 'spellout-numbering-year','spellout-numbering','spellout-cardinal-feminine','spellout-cardinal-masculine','spellout-construct-masculine','spellout-ordinal-masculine','spellout-ordinal-feminine' ]},
+);
+
+has 'algorithmic_number_format_data' => (
+	is => 'ro',
+	isa => 'HashRef',
+	init_arg => undef,
+	default => sub { {
+		'and-feminine' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(ו=%spellout-numbering=),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(ושתיים),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(ו=%spellout-numbering=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(עשרים),
+				},
+				'21' => {
+					base_value => q(21),
+					rule => q(עשרים →→),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(שלושים),
+				},
+				'31' => {
+					base_value => q(31),
+					rule => q(שלושים →→),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(ארבעים),
+				},
+				'41' => {
+					base_value => q(41),
+					rule => q(ארבעים →→),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(חמישים),
+				},
+				'51' => {
+					base_value => q(51),
+					rule => q(חמישים →→),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(שישים),
+				},
+				'61' => {
+					base_value => q(61),
+					rule => q(שישים →→),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(שבעים),
+				},
+				'71' => {
+					base_value => q(71),
+					rule => q(שבעים →→),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(שמונים),
+				},
+				'81' => {
+					base_value => q(81),
+					rule => q(שמונים →→),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(תשעים),
+				},
+				'91' => {
+					base_value => q(91),
+					rule => q(תשעים →→),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(מאה),
+				},
+				'101' => {
+					base_value => q(101),
+					rule => q(מאה →→),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(מאתיים),
+				},
+				'201' => {
+					base_value => q(201),
+					rule => q(מאתיים →→),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(שלוש מאות),
+				},
+				'301' => {
+					base_value => q(301),
+					rule => q(שלוש מאות →→),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(ארבע מאות),
+				},
+				'401' => {
+					base_value => q(401),
+					rule => q(ארבע מאות →→),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(חמש מאות),
+				},
+				'501' => {
+					base_value => q(501),
+					rule => q(חמש מאות →→),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(שש מאות),
+				},
+				'601' => {
+					base_value => q(601),
+					rule => q(שש מאות →→),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(שבע מאות),
+				},
+				'701' => {
+					base_value => q(701),
+					rule => q(שבע מאות →→),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(שמונה מאות),
+				},
+				'801' => {
+					base_value => q(801),
+					rule => q(שמונה מאות →→),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(תשע מאות),
+				},
+				'901' => {
+					base_value => q(901),
+					rule => q(תשע מאות →→),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(אלף[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(אלפיים[ →→]),
+				},
+				'3000' => {
+					base_value => q(3000),
+					rule => q(←%%and-thousands← אלפים[ →→]),
+				},
+				'11000' => {
+					base_value => q(11000),
+					divisor => q(1000),
+					rule => q(←%%and-masculine← אלף[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(מיליון[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(שני מיליון[ →→]),
+				},
+				'3000000' => {
+					base_value => q(3000000),
+					rule => q(←%%and-masculine← מיליון[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(מיליארד[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(שני מיליארד[ →→]),
+				},
+				'3000000000' => {
+					base_value => q(3000000000),
+					rule => q(←%%and-masculine← מיליארד[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(ביליון[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(שני ביליון[ →→]),
+				},
+				'3000000000000' => {
+					base_value => q(3000000000000),
+					rule => q(←%%and-masculine← ביליון[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'and-masculine' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(ו=%%spellout-numbering-m=),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(עשרים),
+				},
+				'21' => {
+					base_value => q(21),
+					rule => q(עשרים →→),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(שלושים),
+				},
+				'31' => {
+					base_value => q(31),
+					rule => q(שלושים →→),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(ארבעים),
+				},
+				'41' => {
+					base_value => q(41),
+					rule => q(ארבעים →→),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(חמישים),
+				},
+				'51' => {
+					base_value => q(51),
+					rule => q(חמישים →→),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(שישים),
+				},
+				'61' => {
+					base_value => q(61),
+					rule => q(שישים →→),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(שבעים),
+				},
+				'71' => {
+					base_value => q(71),
+					rule => q(שבעים →→),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(שמונים),
+				},
+				'81' => {
+					base_value => q(81),
+					rule => q(שמונים →→),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(תשעים),
+				},
+				'91' => {
+					base_value => q(91),
+					rule => q(תשעים →→),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(מאה),
+				},
+				'101' => {
+					base_value => q(101),
+					rule => q(מאה →→),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(מאתיים),
+				},
+				'201' => {
+					base_value => q(201),
+					rule => q(מאתיים →→),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(שלוש מאות),
+				},
+				'301' => {
+					base_value => q(301),
+					rule => q(שלוש מאות →→),
+				},
+				'400' => {
+					base_value => q(400),
+					rule => q(ארבע מאות),
+				},
+				'401' => {
+					base_value => q(401),
+					rule => q(ארבע מאות →→),
+				},
+				'500' => {
+					base_value => q(500),
+					rule => q(חמש מאות),
+				},
+				'501' => {
+					base_value => q(501),
+					rule => q(חמש מאות →→),
+				},
+				'600' => {
+					base_value => q(600),
+					rule => q(שש מאות),
+				},
+				'601' => {
+					base_value => q(601),
+					rule => q(שש מאות →→),
+				},
+				'700' => {
+					base_value => q(700),
+					rule => q(שבע מאות),
+				},
+				'701' => {
+					base_value => q(701),
+					rule => q(שבע מאות →→),
+				},
+				'800' => {
+					base_value => q(800),
+					rule => q(שמונה מאות),
+				},
+				'801' => {
+					base_value => q(801),
+					rule => q(שמונה מאות →→),
+				},
+				'900' => {
+					base_value => q(900),
+					rule => q(תשע מאות),
+				},
+				'901' => {
+					base_value => q(901),
+					rule => q(תשע מאות →→),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(אלף[ →→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(אלפיים[ →→]),
+				},
+				'3000' => {
+					base_value => q(3000),
+					rule => q(←%%and-thousands← אלפים[ →→]),
+				},
+				'11000' => {
+					base_value => q(11000),
+					divisor => q(1000),
+					rule => q(←%%and-masculine← אלף[ →→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(מיליון[ →→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(שני מיליון[ →→]),
+				},
+				'3000000' => {
+					base_value => q(3000000),
+					rule => q(←%%and-masculine← מיליון[ →→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(מיליארד[ →→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(שני מיליארד[ →→]),
+				},
+				'3000000000' => {
+					base_value => q(3000000000),
+					rule => q(←%%and-masculine← מיליארד[ →→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(ביליון[ →→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(שני ביליון[ →→]),
+				},
+				'3000000000000' => {
+					base_value => q(3000000000000),
+					rule => q(←%%and-masculine← ביליון[ →→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'and-thousands' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(ERROR-=0=),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(ו=%%thousands=),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(ERROR-=0=),
+				},
+				'max' => {
+					base_value => q(11),
+					rule => q(ERROR-=0=),
+				},
+			},
+		},
+		'spellout-cardinal-feminine' => {
+			'public' => {
+				'-x' => {
+					rule => q(מינוס →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(אפס),
+				},
+				'x.x' => {
+					rule => q(←%spellout-numbering← נקודה →→ ),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(אחת),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(שתיים),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(שלוש),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(ארבע),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(חמש),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(שש),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(שבע),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(שמונה),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(תשע),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(עשר),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(אחת עשרה),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(שתיים עשרה),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(→→ עשרה),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(עשרים[ →%%and-feminine→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(שלושים[ →%%and-feminine→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(ארבעים[ →%%and-feminine→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(חמישים[ →%%and-feminine→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(שישים[ →%%and-feminine→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(שבעים[ →%%and-feminine→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(שמונים[ →%%and-feminine→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(תשעים[ →%%and-feminine→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(מאה[ →%%and-feminine→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(מאתיים[ →%%and-feminine→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(←%spellout-numbering← מאות[ →%%and-feminine→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(אלף[ →%%and-feminine→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(אלפיים[ →%%and-feminine→]),
+				},
+				'3000' => {
+					base_value => q(3000),
+					rule => q(←%%thousands← אלפים[ →%%and-feminine→]),
+				},
+				'11000' => {
+					base_value => q(11000),
+					divisor => q(1000),
+					rule => q(←%%spellout-numbering-m← אלף[ →%%and-feminine→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(מיליון[ →%%and-feminine→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(שני מיליון[ →%%and-feminine→]),
+				},
+				'3000000' => {
+					base_value => q(3000000),
+					rule => q(←%%spellout-numbering-m← מיליון[ →%%and-feminine→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(מיליארד[ →%%and-feminine→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(שני מיליארד[ →%%and-feminine→]),
+				},
+				'3000000000' => {
+					base_value => q(3000000000),
+					rule => q(←%%spellout-numbering-m← מיליארד[ →%%and-feminine→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(ביליון[ →%%and-feminine→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(שני ביליון[ →%%and-feminine→]),
+				},
+				'3000000000000' => {
+					base_value => q(3000000000000),
+					rule => q(←%%spellout-numbering-m← ביליון[ →%%and-feminine→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(טריליון[ →%%and-feminine→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(שני טריליון[ →%%and-feminine→]),
+				},
+				'3000000000000000' => {
+					base_value => q(3000000000000000),
+					rule => q(←%%spellout-numbering-m← טריליון[ →%%and-feminine→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-cardinal-masculine' => {
+			'public' => {
+				'-x' => {
+					rule => q(מינוס →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(אפס),
+				},
+				'x.x' => {
+					rule => q(←%%spellout-numbering-m← נקודה →→ ),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(אחד),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(שניים),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(שלושה),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(ארבעה),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(חמישה),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(שישה),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(שבעה),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(שמונה),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(תשעה),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(עשרה),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(אחד עשר),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(שניים עשר),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(→→ עשר),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(עשרים[ →%%and-masculine→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(שלושים[ →%%and-masculine→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(ארבעים[ →%%and-masculine→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(חמישים[ →%%and-masculine→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(שישים[ →%%and-masculine→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(שבעים[ →%%and-masculine→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(שמונים[ →%%and-masculine→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(תשעים[ →%%and-masculine→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(מאה[ →%%and-masculine→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(מאתיים[ →%%and-masculine→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(←%spellout-numbering← מאות[ →%%and-masculine→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(אלף[ →%%and-masculine→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(אלפיים[ →%%and-masculine→]),
+				},
+				'3000' => {
+					base_value => q(3000),
+					rule => q(←%%thousands← אלפים[ →%%and-masculine→]),
+				},
+				'11000' => {
+					base_value => q(11000),
+					divisor => q(1000),
+					rule => q(←%%spellout-numbering-m← אלף[ →%%and-masculine→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(מיליון[ →%%and-masculine→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(שני מיליון[ →%%and-masculine→]),
+				},
+				'3000000' => {
+					base_value => q(3000000),
+					rule => q(←%%spellout-numbering-m← מיליון[ →%%and-masculine→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(מיליארד[ →%%and-masculine→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(שני מיליארד[ →%%and-masculine→]),
+				},
+				'3000000000' => {
+					base_value => q(3000000000),
+					rule => q(←%%spellout-numbering-m← מיליארד[ →%%and-masculine→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(ביליון[ →%%and-masculine→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(שני ביליון[ →%%and-masculine→]),
+				},
+				'3000000000000' => {
+					base_value => q(3000000000000),
+					rule => q(←%%spellout-numbering-m← ביליון[ →%%and-masculine→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(טריליון[ →%%and-masculine→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(שני טריליון[ →%%and-masculine→]),
+				},
+				'3000000000000000' => {
+					base_value => q(3000000000000000),
+					rule => q(←%%spellout-numbering-m← טריליון[ →%%and-masculine→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-construct-masculine' => {
+			'public' => {
+				'-x' => {
+					rule => q(מינוס →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-cardinal-masculine= ),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(אחד),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(שני),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(שלושת),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(ארבעת),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(חמשת),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(ששת),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(שבעת),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(שמונת),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(תשעת),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(עשרת),
+				},
+				'max' => {
+					base_value => q(10),
+					rule => q(עשרת),
+				},
+			},
+		},
+		'spellout-numbering' => {
+			'public' => {
+				'-x' => {
+					rule => q(מינוס →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(אפס),
+				},
+				'x.x' => {
+					rule => q(←← נקודה →→),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(אחת),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(שתיים),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(שלוש),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(ארבע),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(חמש),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(שש),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(שבע),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(שמונה),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(תשע),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(עשר),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(אחת עשרה),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(שתים עשרה),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(→→ עשרה),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(עשרים[ →%%and-feminine→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(שלושים[ →%%and-feminine→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(ארבעים[ →%%and-feminine→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(חמישים[ →%%and-feminine→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(שישים[ →%%and-feminine→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(שבעים[ →%%and-feminine→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(שמונים[ →%%and-feminine→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(תשעים[ →%%and-feminine→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(מאה[ →%%and-feminine→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(מאתיים[ →%%and-feminine→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(←%spellout-numbering← מאות[ →%%and-feminine→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(אלף[ →%%and-feminine→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(אלפיים[ →%%and-feminine→]),
+				},
+				'3000' => {
+					base_value => q(3000),
+					rule => q(←%%thousands← אלפים[ →%%and-feminine→]),
+				},
+				'11000' => {
+					base_value => q(11000),
+					divisor => q(1000),
+					rule => q(←%%spellout-numbering-m← אלף[ →%%and-feminine→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(מיליון[ →%%and-feminine→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(שני מיליון[ →%%and-feminine→]),
+				},
+				'3000000' => {
+					base_value => q(3000000),
+					rule => q(←%%spellout-numbering-m← מיליון[ →%%and-feminine→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(מיליארד[ →%%and-feminine→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(שני מיליארד[ →%%and-feminine→]),
+				},
+				'3000000000' => {
+					base_value => q(3000000000),
+					rule => q(←%%spellout-numbering-m← מיליארד[ →%%and-feminine→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(ביליון[ →%%and-feminine→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(שני ביליון[ →%%and-feminine→]),
+				},
+				'3000000000000' => {
+					base_value => q(3000000000000),
+					rule => q(←%%spellout-numbering-m← ביליון[ →%%and-feminine→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(טריליון[ →%%and-feminine→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(שני טריליון[ →%%and-feminine→]),
+				},
+				'3000000000000000' => {
+					base_value => q(3000000000000000),
+					rule => q(←%%spellout-numbering-m← טריליון[ →%%and-feminine→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering-m' => {
+			'private' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(אפס),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(אחד),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(שניים),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(שלושה),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(ארבעה),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(חמישה),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(שישה),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(שבעה),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(שמונה),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(תשעה),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(עשרה),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(אחד עשר),
+				},
+				'12' => {
+					base_value => q(12),
+					rule => q(שניים עשר),
+				},
+				'13' => {
+					base_value => q(13),
+					rule => q(→→ עשר),
+				},
+				'20' => {
+					base_value => q(20),
+					rule => q(עשרים[ →%%and-masculine→]),
+				},
+				'30' => {
+					base_value => q(30),
+					rule => q(שלושים[ →%%and-masculine→]),
+				},
+				'40' => {
+					base_value => q(40),
+					rule => q(ארבעים[ →%%and-masculine→]),
+				},
+				'50' => {
+					base_value => q(50),
+					rule => q(חמישים[ →%%and-masculine→]),
+				},
+				'60' => {
+					base_value => q(60),
+					rule => q(שישים[ →%%and-masculine→]),
+				},
+				'70' => {
+					base_value => q(70),
+					rule => q(שבעים[ →%%and-masculine→]),
+				},
+				'80' => {
+					base_value => q(80),
+					rule => q(שמונים[ →%%and-masculine→]),
+				},
+				'90' => {
+					base_value => q(90),
+					rule => q(תשעים[ →%%and-masculine→]),
+				},
+				'100' => {
+					base_value => q(100),
+					rule => q(מאה[ →%%and-masculine→]),
+				},
+				'200' => {
+					base_value => q(200),
+					rule => q(מאתיים[ →%%and-masculine→]),
+				},
+				'300' => {
+					base_value => q(300),
+					rule => q(←%spellout-numbering← מאות[ →%%and-masculine→]),
+				},
+				'1000' => {
+					base_value => q(1000),
+					rule => q(אלף[ →%%and-masculine→]),
+				},
+				'2000' => {
+					base_value => q(2000),
+					rule => q(אלפיים[ →%%and-masculine→]),
+				},
+				'3000' => {
+					base_value => q(3000),
+					rule => q(←%%thousands← אלפים[ →%%and-masculine→]),
+				},
+				'11000' => {
+					base_value => q(11000),
+					divisor => q(1000),
+					rule => q(←%%spellout-numbering-m← אלף[ →%%and-masculine→]),
+				},
+				'1000000' => {
+					base_value => q(1000000),
+					rule => q(מיליון[ →%%and-masculine→]),
+				},
+				'2000000' => {
+					base_value => q(2000000),
+					rule => q(שני מיליון[ →%%and-masculine→]),
+				},
+				'3000000' => {
+					base_value => q(3000000),
+					rule => q(←%%spellout-numbering-m← מיליון[ →%%and-masculine→]),
+				},
+				'1000000000' => {
+					base_value => q(1000000000),
+					rule => q(מיליארד[ →%%and-masculine→]),
+				},
+				'2000000000' => {
+					base_value => q(2000000000),
+					rule => q(שני מיליארד[ →%%and-masculine→]),
+				},
+				'3000000000' => {
+					base_value => q(3000000000),
+					rule => q(←%%spellout-numbering-m← מיליארד[ →%%and-masculine→]),
+				},
+				'1000000000000' => {
+					base_value => q(1000000000000),
+					rule => q(ביליון[ →%%and-masculine→]),
+				},
+				'2000000000000' => {
+					base_value => q(2000000000000),
+					rule => q(שני ביליון[ →%%and-masculine→]),
+				},
+				'3000000000000' => {
+					base_value => q(3000000000000),
+					rule => q(←%%spellout-numbering-m← ביליון[ →%%and-masculine→]),
+				},
+				'1000000000000000' => {
+					base_value => q(1000000000000000),
+					rule => q(טריליון[ →%%and-masculine→]),
+				},
+				'2000000000000000' => {
+					base_value => q(2000000000000000),
+					rule => q(שני טריליון[ →%%and-masculine→]),
+				},
+				'3000000000000000' => {
+					base_value => q(3000000000000000),
+					rule => q(←%%spellout-numbering-m← טריליון[ →%%and-masculine→]),
+				},
+				'1000000000000000000' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+				'max' => {
+					base_value => q(1000000000000000000),
+					rule => q(=#,##0=),
+				},
+			},
+		},
+		'spellout-numbering-year' => {
+			'public' => {
+				'0' => {
+					base_value => q(0),
+					rule => q(=%spellout-numbering=),
+				},
+				'x.x' => {
+					rule => q(=#,###0.#=),
+				},
+				'max' => {
+					rule => q(=#,###0.#=),
+				},
+			},
+		},
+		'spellout-ordinal-feminine' => {
+			'public' => {
+				'-x' => {
+					rule => q(מינוס →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(מספר אפס),
+				},
+				'x.x' => {
+					rule => q(=#,##0.#=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(ראשונה),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(שניה),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(שלישית),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(רביעית),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(חמישית),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(שישית),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(שביעית),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(שמינית),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(תשיעית),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(עשירית),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(=%spellout-numbering=),
+				},
+				'max' => {
+					base_value => q(11),
+					rule => q(=%spellout-numbering=),
+				},
+			},
+		},
+		'spellout-ordinal-masculine' => {
+			'public' => {
+				'-x' => {
+					rule => q(מינוס →→),
+				},
+				'0' => {
+					base_value => q(0),
+					rule => q(מספר אפס),
+				},
+				'x.x' => {
+					rule => q(=#,##0.#=),
+				},
+				'1' => {
+					base_value => q(1),
+					rule => q(ראשון),
+				},
+				'2' => {
+					base_value => q(2),
+					rule => q(שני),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(שלישי),
+				},
+				'4' => {
+					base_value => q(4),
+					rule => q(רביעי),
+				},
+				'5' => {
+					base_value => q(5),
+					rule => q(חמישי),
+				},
+				'6' => {
+					base_value => q(6),
+					rule => q(שישי),
+				},
+				'7' => {
+					base_value => q(7),
+					rule => q(שביעי),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(שמיני),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(תשיעי),
+				},
+				'10' => {
+					base_value => q(10),
+					rule => q(עשירי),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(=%%spellout-numbering-m=),
+				},
+				'max' => {
+					base_value => q(11),
+					rule => q(=%%spellout-numbering-m=),
+				},
+			},
+		},
+		'thousands' => {
+			'private' => {
+				'1' => {
+					base_value => q(1),
+					rule => q(ERROR-=0=),
+				},
+				'3' => {
+					base_value => q(3),
+					rule => q(=%spellout-numbering=ת),
+				},
+				'8' => {
+					base_value => q(8),
+					rule => q(שמונת),
+				},
+				'9' => {
+					base_value => q(9),
+					rule => q(=%spellout-numbering=ת),
+				},
+				'11' => {
+					base_value => q(11),
+					rule => q(ERROR-=0=),
+				},
+				'max' => {
+					base_value => q(11),
+					rule => q(ERROR-=0=),
+				},
+			},
+		},
+	} },
+);
+
 # Need to add code for Key type pattern
 sub display_name_pattern {
 	my ($self, $name, $territory, $script, $variant) = @_;
@@ -4306,6 +5706,65 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'hebrew' => {
+			Ed => q{E ה-d},
+			Gy => q{y G},
+			GyMMM => q{MMMM y G},
+			GyMMMEd => q{E, d MMMM y G},
+			GyMMMd => q{d MMMM y G},
+			M => q{MMMM},
+			MEd => q{E, d בMMMM},
+			MMM => q{MMMM},
+			MMMEd => q{E, d בMMMM},
+			MMMMEd => q{E, d בMMMM},
+			MMMMd => q{d בMMMM},
+			MMMd => q{d בMMMM},
+			Md => q{d בMMMM},
+			mmss => q{mm:ss},
+			y => q{y},
+			yyyy => q{y},
+			yyyyM => q{MMMM y},
+			yyyyMEd => q{E, d בMMMM y},
+			yyyyMMM => q{MMMM y},
+			yyyyMMMEd => q{E, d בMMMM y},
+			yyyyMMMM => q{MMMM y},
+			yyyyMMMd => q{d בMMMM y},
+			yyyyMd => q{d בMMMM y},
+			yyyyQQQ => q{QQQ y},
+			yyyyQQQQ => q{QQQQ y},
+		},
+		'generic' => {
+			Ed => q{E ה-d},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E, d בMMM y G},
+			GyMMMd => q{d בMMM y G},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, d/M},
+			MMM => q{LLL},
+			MMMEd => q{E, d בMMM},
+			MMMd => q{d בMMM},
+			Md => q{d/M},
+			d => q{d},
+			h => q{‏h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y G},
+			yyyy => q{y G},
+			yyyyM => q{M.y G},
+			yyyyMEd => q{E, d/M/y G},
+			yyyyMM => q{MM/y G},
+			yyyyMMM => q{MMM y G},
+			yyyyMMMEd => q{E, d בMMM y G},
+			yyyyMMMd => q{d בMMM y G},
+			yyyyMd => q{d.M.y G},
+			yyyyQQQ => q{G y QQQ},
+			yyyyQQQQ => q{G y QQQQ},
+		},
 		'gregorian' => {
 			EHm => q{E H:mm},
 			EHms => q{E H:mm:ss},
@@ -4342,33 +5801,6 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{y QQQ},
 			yQQQQ => q{y QQQQ},
 		},
-		'hebrew' => {
-			Ed => q{E ה-d},
-			Gy => q{y G},
-			GyMMM => q{MMMM y G},
-			GyMMMEd => q{E, d MMMM y G},
-			GyMMMd => q{d MMMM y G},
-			M => q{MMMM},
-			MEd => q{E, d בMMMM},
-			MMM => q{MMMM},
-			MMMEd => q{E, d בMMMM},
-			MMMMEd => q{E, d בMMMM},
-			MMMMd => q{d בMMMM},
-			MMMd => q{d בMMMM},
-			Md => q{d בMMMM},
-			mmss => q{mm:ss},
-			y => q{y},
-			yyyy => q{y},
-			yyyyM => q{MMMM y},
-			yyyyMEd => q{E, d בMMMM y},
-			yyyyMMM => q{MMMM y},
-			yyyyMMMEd => q{E, d בMMMM y},
-			yyyyMMMM => q{MMMM y},
-			yyyyMMMd => q{d בMMMM y},
-			yyyyMd => q{d בMMMM y},
-			yyyyQQQ => q{QQQ y},
-			yyyyQQQQ => q{QQQQ y},
-		},
 		'islamic' => {
 			Ed => q{E ה-d},
 			Gy => q{y G},
@@ -4396,38 +5828,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{QQQ y},
 			yyyyQQQQ => q{QQQQ y},
 		},
-		'generic' => {
-			Ed => q{E ה-d},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E, d בMMM y G},
-			GyMMMd => q{d בMMM y G},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, d/M},
-			MMM => q{LLL},
-			MMMEd => q{E, d בMMM},
-			MMMd => q{d בMMM},
-			Md => q{d/M},
-			d => q{d},
-			h => q{‏h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y G},
-			yyyy => q{y G},
-			yyyyM => q{M.y G},
-			yyyyMEd => q{E, d/M/y G},
-			yyyyMM => q{MM/y G},
-			yyyyMMM => q{MMM y G},
-			yyyyMMMEd => q{E, d בMMM y G},
-			yyyyMMMd => q{d בMMM y G},
-			yyyyMd => q{d.M.y G},
-			yyyyQQQ => q{G y QQQ},
-			yyyyQQQQ => q{G y QQQQ},
-		},
 	} },
 );
 
@@ -4447,104 +5847,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			H => {
-				H => q{H–H},
-			},
-			Hm => {
-				H => q{H:mm–H:mm},
-				m => q{H:mm–H:mm},
-			},
-			Hmv => {
-				H => q{H:mm–H:mm v},
-				m => q{H:mm–H:mm v},
-			},
-			Hv => {
-				H => q{H–H v},
-			},
-			M => {
-				M => q{M–M},
-			},
-			MEd => {
-				M => q{EEEE d.M – EEEE d.M},
-				d => q{EEEE d.M–EEEE d.M},
-			},
-			MMM => {
-				M => q{MMM–MMM},
-			},
-			MMMEd => {
-				M => q{EEEE d MMM – EEEE d MMM},
-				d => q{EEEE d MMM – EEEE d MMM},
-			},
-			MMMM => {
-				M => q{LLLL–LLLL},
-			},
-			MMMd => {
-				M => q{d MMM–d MMM},
-				d => q{d–d MMM},
-			},
-			Md => {
-				M => q{d.M–d.M},
-				d => q{d.M–d.M},
-			},
-			d => {
-				d => q{d–d},
-			},
-			fallback => '{0} – {1}',
-			h => {
-				a => q{h a – h a},
-				h => q{h–h a},
-			},
-			hm => {
-				a => q{h:mm a – h:mm a},
-				h => q{h:mm–h:mm a},
-				m => q{h:mm–h:mm a},
-			},
-			hmv => {
-				a => q{h:mm a – h:mm a v},
-				h => q{h:mm–h:mm a v},
-				m => q{h:mm–h:mm a v},
-			},
-			hv => {
-				a => q{h a – h a v},
-				h => q{h–h a v},
-			},
-			y => {
-				y => q{y–y},
-			},
-			yM => {
-				M => q{M.y–M.y},
-				y => q{M.y‏-M.y},
-			},
-			yMEd => {
-				M => q{EEEE d.M.y – EEEE d.M.y},
-				d => q{EEEE d.M.y – EEEE d.M.y},
-				y => q{EEEE d.M.y – EEEE d.M.y},
-			},
-			yMMM => {
-				M => q{MMM–MMM y},
-				y => q{MMM y – MMM y},
-			},
-			yMMMEd => {
-				M => q{EEEE d MMM – EEEE d MMM y},
-				d => q{EEEE d MMM – EEEE d MMM y},
-				y => q{EEEE d MMM y – EEEE d MMM y},
-			},
-			yMMMM => {
-				M => q{MMMM–MMMM y},
-				y => q{MMMM y–MMMM y},
-			},
-			yMMMd => {
-				M => q{d MMM – d MMM y},
-				d => q{d–d MMM y},
-				y => q{d MMM y – d MMM y},
-			},
-			yMd => {
-				M => q{d.M.y – d.M.y},
-				d => q{dd.M.y – dd.M.y},
-				y => q{d.M.y – d.M.y},
-			},
-		},
 		'hebrew' => {
 			MEd => {
 				M => q{E d בMMMM – E d בMMMM},
@@ -4713,6 +6015,104 @@ has 'datetime_formats_interval' => (
 				M => q{dd/MM/y – dd/MM/y},
 				d => q{dd/MM/y – dd/MM/y},
 				y => q{dd/MM/y – dd/MM/y},
+			},
+		},
+		'gregorian' => {
+			H => {
+				H => q{H–H},
+			},
+			Hm => {
+				H => q{H:mm–H:mm},
+				m => q{H:mm–H:mm},
+			},
+			Hmv => {
+				H => q{H:mm–H:mm v},
+				m => q{H:mm–H:mm v},
+			},
+			Hv => {
+				H => q{H–H v},
+			},
+			M => {
+				M => q{M–M},
+			},
+			MEd => {
+				M => q{EEEE d.M – EEEE d.M},
+				d => q{EEEE d.M–EEEE d.M},
+			},
+			MMM => {
+				M => q{MMM–MMM},
+			},
+			MMMEd => {
+				M => q{EEEE d MMM – EEEE d MMM},
+				d => q{EEEE d MMM – EEEE d MMM},
+			},
+			MMMM => {
+				M => q{LLLL–LLLL},
+			},
+			MMMd => {
+				M => q{d MMM–d MMM},
+				d => q{d–d MMM},
+			},
+			Md => {
+				M => q{d.M–d.M},
+				d => q{d.M–d.M},
+			},
+			d => {
+				d => q{d–d},
+			},
+			fallback => '{0} – {1}',
+			h => {
+				a => q{h a – h a},
+				h => q{h–h a},
+			},
+			hm => {
+				a => q{h:mm a – h:mm a},
+				h => q{h:mm–h:mm a},
+				m => q{h:mm–h:mm a},
+			},
+			hmv => {
+				a => q{h:mm a – h:mm a v},
+				h => q{h:mm–h:mm a v},
+				m => q{h:mm–h:mm a v},
+			},
+			hv => {
+				a => q{h a – h a v},
+				h => q{h–h a v},
+			},
+			y => {
+				y => q{y–y},
+			},
+			yM => {
+				M => q{M.y–M.y},
+				y => q{M.y‏-M.y},
+			},
+			yMEd => {
+				M => q{EEEE d.M.y – EEEE d.M.y},
+				d => q{EEEE d.M.y – EEEE d.M.y},
+				y => q{EEEE d.M.y – EEEE d.M.y},
+			},
+			yMMM => {
+				M => q{MMM–MMM y},
+				y => q{MMM y – MMM y},
+			},
+			yMMMEd => {
+				M => q{EEEE d MMM – EEEE d MMM y},
+				d => q{EEEE d MMM – EEEE d MMM y},
+				y => q{EEEE d MMM y – EEEE d MMM y},
+			},
+			yMMMM => {
+				M => q{MMMM–MMMM y},
+				y => q{MMMM y–MMMM y},
+			},
+			yMMMd => {
+				M => q{d MMM – d MMM y},
+				d => q{d–d MMM y},
+				y => q{d MMM y – d MMM y},
+			},
+			yMd => {
+				M => q{d.M.y – d.M.y},
+				d => q{dd.M.y – dd.M.y},
+				y => q{d.M.y – d.M.y},
 			},
 		},
 	} },
