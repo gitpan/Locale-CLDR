@@ -1,11 +1,11 @@
 package Locale::CLDR::El;
 # This file auto generated from Data\common\main\el.xml
-#	on Tue 10 Jun  8:45:31 pm GMT
+#	on Fri 20 Jun 11:16:40 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -34,185 +34,232 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'spellout-cardinal-feminine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(μείον →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(μηδέν),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← κόμμα →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(μία),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(δύο),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(τρεις),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(τέσσερις),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(πέντε),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(έξι),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(επτά),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(οκτώ),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(εννέα),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(δέκα),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(έντεκα),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(δώδεκα),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(δεκα­→→),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(είκοσι[ →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(τριάντα[ →→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(σαράντα[ →→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(πενήντα[ →→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(εξήντα[ →→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(εβδομήντα[ →→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(ογδόντα[ →→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(εννενήντα[ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(εκατό[ν →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(διακόσιες[ →→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(τριακόσιες[ →→]),
 				},
 				'400' => {
 					base_value => q(400),
+					divisor => q(100),
 					rule => q(τετρακόσιες[ →→]),
 				},
 				'500' => {
 					base_value => q(500),
+					divisor => q(100),
 					rule => q(πεντακόσιες[ →→]),
 				},
 				'600' => {
 					base_value => q(600),
+					divisor => q(100),
 					rule => q(εξακόσιες[ →→]),
 				},
 				'700' => {
 					base_value => q(700),
+					divisor => q(100),
 					rule => q(επτακόσιες[ →→]),
 				},
 				'800' => {
 					base_value => q(800),
+					divisor => q(100),
 					rule => q(οκτακόσιες[ →→]),
 				},
 				'900' => {
 					base_value => q(900),
+					divisor => q(100),
 					rule => q(εννιακόσιες[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(χίλιες[ →→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-feminine← χίλιάδες[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-neuter← εκατομμύριο[ →→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-neuter← εκατομμύρια[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-neuter← δισεκατομμύριο[ →→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-neuter← δισεκατομμύρια[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-neuter← τρισεκατομμύριο[ →→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-neuter← τρισεκατομμύρια[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-neuter← τετράκις εκατομμύριο[ →→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-neuter← τετράκις εκατομμύρια[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -220,181 +267,226 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-masculine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(μείον →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(μηδέν),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← κόμμα →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(ένας),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(δύο),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(τρεις),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(τέσσερις),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(πέντε),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(έξι),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(επτά),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(οκτώ),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(εννέα),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(δέκα),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(έντεκα),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(δώδεκα),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(δεκα­→→),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(είκοσι[ →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(τριάντα[ →→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(σαράντα[ →→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(πενήντα[ →→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(εξήντα[ →→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(εβδομήντα[ →→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(ογδόντα[ →→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(εννενήντα[ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(εκατό[ν →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(διακόσιοι[ →→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(τριακόσιοι[ →→]),
 				},
 				'400' => {
 					base_value => q(400),
+					divisor => q(100),
 					rule => q(τετρακόσιοι[ →→]),
 				},
 				'500' => {
 					base_value => q(500),
+					divisor => q(100),
 					rule => q(πεντακόσιοι[ →→]),
 				},
 				'600' => {
 					base_value => q(600),
+					divisor => q(100),
 					rule => q(εξακόσιοι[ →→]),
 				},
 				'700' => {
 					base_value => q(700),
+					divisor => q(100),
 					rule => q(επτακόσιοι[ →→]),
 				},
 				'800' => {
 					base_value => q(800),
+					divisor => q(100),
 					rule => q(οκτακόσιοι[ →→]),
 				},
 				'900' => {
 					base_value => q(900),
+					divisor => q(100),
 					rule => q(εννιακόσιοι[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(χίλιοι[ →→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-feminine← χίλιάδες[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-neuter← εκατομμύριο[ →→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-neuter← εκατομμύρια[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-neuter← δισεκατομμύριο[ →→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-neuter← δισεκατομμύρια[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-neuter← τρισεκατομμύριο[ →→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-neuter← τρισεκατομμύρια[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-neuter← τετράκις εκατομμύριο[ →→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-neuter← τετράκις εκατομμύρια[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -402,181 +494,226 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-neuter' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(μείον →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(μηδέν),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← κόμμα →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(ένα),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(δύο),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(τρία),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(τέσσερα),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(πέντε),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(έξι),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(επτά),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(οκτώ),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(εννέα),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(δέκα),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(έντεκα),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(δώδεκα),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(δεκα­→→),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(είκοσι[ →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(τριάντα[ →→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(σαράντα[ →→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(πενήντα[ →→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(εξήντα[ →→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(εβδομήντα[ →→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(ογδόντα[ →→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(εννενήντα[ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(εκατό[ν →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(διακόσια[ →→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(τριακόσια[ →→]),
 				},
 				'400' => {
 					base_value => q(400),
+					divisor => q(100),
 					rule => q(τετρακόσια[ →→]),
 				},
 				'500' => {
 					base_value => q(500),
+					divisor => q(100),
 					rule => q(πεντακόσια[ →→]),
 				},
 				'600' => {
 					base_value => q(600),
+					divisor => q(100),
 					rule => q(εξακόσια[ →→]),
 				},
 				'700' => {
 					base_value => q(700),
+					divisor => q(100),
 					rule => q(επτακόσια[ →→]),
 				},
 				'800' => {
 					base_value => q(800),
+					divisor => q(100),
 					rule => q(οκτακόσια[ →→]),
 				},
 				'900' => {
 					base_value => q(900),
+					divisor => q(100),
 					rule => q(εννιακόσια[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(χίλια[ →→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-feminine← χίλιάδες[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-neuter← εκατομμύριο[ →→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-neuter← εκατομμύρια[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-neuter← δισεκατομμύριο[ →→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-neuter← δισεκατομμύρια[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-neuter← τρισεκατομμύριο[ →→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-neuter← τρισεκατομμύρια[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-neuter← τετράκις εκατομμύριο[ →→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-neuter← τετράκις εκατομμύρια[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -585,10 +722,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-neuter=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-neuter=),
 				},
 			},
@@ -597,12 +736,15 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 			},
@@ -610,169 +752,211 @@ has 'algorithmic_number_format_data' => (
 		'spellout-ordinal-feminine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(μείον →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(μηδενική),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,##0.#=),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(πρώτη),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(δεύτερη),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(τρίτη),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(τέταρτη),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(πέμπτη),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(έκτη),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(έβδομη),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(όγδοη),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(ένατη),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(δέκατη),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(ενδέκατη),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(δωδέκατη),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(δέκατη[ →→]),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(εικοστή[ →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(τριακοστή[ →→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(τεσσαρακοστή[ →→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(πεντηκοστή[ →→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(εξηκοστή[ →→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(εβδομηκοστή[ →→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(ογδοηκοστή[ →→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(εννενηκοστή[ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(εκατοστή[ →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(διακοσιοστή[ →→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(τριακοσιοστή[ →→]),
 				},
 				'400' => {
 					base_value => q(400),
+					divisor => q(100),
 					rule => q(τρετρακοσιοστή[ →→]),
 				},
 				'500' => {
 					base_value => q(500),
+					divisor => q(100),
 					rule => q(πεντακοσιοστή[ →→]),
 				},
 				'600' => {
 					base_value => q(600),
+					divisor => q(100),
 					rule => q(εξακοσιοστή[ →→]),
 				},
 				'700' => {
 					base_value => q(700),
+					divisor => q(100),
 					rule => q(επτακοσιοστή[ →→]),
 				},
 				'800' => {
 					base_value => q(800),
+					divisor => q(100),
 					rule => q(οκτακοσιοστή[ →→]),
 				},
 				'900' => {
 					base_value => q(900),
+					divisor => q(100),
 					rule => q(εννεακοσιοστή[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(χιλιοστή[ →→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(δισχιλιοστή[ →→]),
 				},
 				'3000' => {
 					base_value => q(3000),
+					divisor => q(1000),
 					rule => q(τρισχιλιοστή[ →→]),
 				},
 				'4000' => {
 					base_value => q(4000),
+					divisor => q(1000),
 					rule => q(τετράκις χιλιοστή[ →→]),
 				},
 				'5000' => {
 					base_value => q(5000),
+					divisor => q(1000),
 					rule => q(πεντάκις χιλιοστή[ →→]),
 				},
 				'6000' => {
 					base_value => q(6000),
+					divisor => q(1000),
 					rule => q(εξάκις χιλιοστή[ →→]),
 				},
 				'7000' => {
 					base_value => q(7000),
+					divisor => q(1000),
 					rule => q(επτάκις χιλιοστή[ →→]),
 				},
 				'8000' => {
 					base_value => q(8000),
+					divisor => q(1000),
 					rule => q(οκτάκις χιλιοστή[ →→]),
 				},
 				'9000' => {
 					base_value => q(9000),
+					divisor => q(1000),
 					rule => q(εννεάκις χιλιοστή[ →→]),
 				},
 				'10000' => {
@@ -787,26 +971,32 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-neuter← εκατομμυριοστή [ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-neuter← δισεκατομμυριοστή[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-neuter← τρισεκατομμυριοστή[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-neuter← τετράκις εκατομμυριοστή[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=.),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=.),
 				},
 			},
@@ -814,169 +1004,211 @@ has 'algorithmic_number_format_data' => (
 		'spellout-ordinal-masculine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(μείον →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(μηδενικός),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,##0.#=),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(πρώτος),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(δεύτερος),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(τρίτος),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(τέταρτος),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(πέμπτος),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(έκτος),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(έβδομος),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(όγδοος),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(ένατος),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(δέκατος),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(ενδέκατος),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(δωδέκατος),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(δέκατος[ →→]),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(εικοστός[ →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(τριακοστός[ →→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(τεσσαρακοστός[ →→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(πεντηκοστός[ →→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(εξηκοστός[ →→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(εβδομηκοστός[ →→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(ογδοηκοστός[ →→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(εννενηκοστός[ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(εκατοστός[ →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(διακοσιοστός[ →→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(τριακοσιοστός[ →→]),
 				},
 				'400' => {
 					base_value => q(400),
+					divisor => q(100),
 					rule => q(τετρακοσιοστός[ →→]),
 				},
 				'500' => {
 					base_value => q(500),
+					divisor => q(100),
 					rule => q(πεντακοσιοστός[ →→]),
 				},
 				'600' => {
 					base_value => q(600),
+					divisor => q(100),
 					rule => q(εξακοσιοστός[ →→]),
 				},
 				'700' => {
 					base_value => q(700),
+					divisor => q(100),
 					rule => q(επτακοσιοστός[ →→]),
 				},
 				'800' => {
 					base_value => q(800),
+					divisor => q(100),
 					rule => q(οκτακοσιοστός[ →→]),
 				},
 				'900' => {
 					base_value => q(900),
+					divisor => q(100),
 					rule => q(εννεακοσιοστός[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(χιλιοστός[ →→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(δισχιλιοστός[ →→]),
 				},
 				'3000' => {
 					base_value => q(3000),
+					divisor => q(1000),
 					rule => q(τρισχιλιοστός[ →→]),
 				},
 				'4000' => {
 					base_value => q(4000),
+					divisor => q(1000),
 					rule => q(τετράκις χιλιοστός[ →→]),
 				},
 				'5000' => {
 					base_value => q(5000),
+					divisor => q(1000),
 					rule => q(πεντάκις χιλιοστός[ →→]),
 				},
 				'6000' => {
 					base_value => q(6000),
+					divisor => q(1000),
 					rule => q(εξάκις χιλιοστός[ →→]),
 				},
 				'7000' => {
 					base_value => q(7000),
+					divisor => q(1000),
 					rule => q(επτάκις χιλιοστός[ →→]),
 				},
 				'8000' => {
 					base_value => q(8000),
+					divisor => q(1000),
 					rule => q(οκτάκις χιλιοστός[ →→]),
 				},
 				'9000' => {
 					base_value => q(9000),
+					divisor => q(1000),
 					rule => q(εννεάκις χιλιοστός[ →→]),
 				},
 				'10000' => {
@@ -991,26 +1223,32 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-neuter← εκατομμυριοστός [ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-neuter← δισεκατομμυριοστός[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-neuter← τρισεκατομμυριοστός[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-neuter← τετράκις εκατομμυριοστός[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=.),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=.),
 				},
 			},
@@ -1018,166 +1256,207 @@ has 'algorithmic_number_format_data' => (
 		'spellout-ordinal-neuter' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(μείον →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(μηδενικό),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(πρώτο),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(δεύτερο),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(τρίτο),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(τέταρτο),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(πέμπτο),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(έκτο),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(έβδομο),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(όγδο),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(ένατο),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(δέκατο),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(ενδέκατο),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(δωδέκατο),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(δέκατο[ →→]),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(εικοστό[ →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(τριακοστό[ →→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(τεσσαρακοστό[ →→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(πεντηκοστό[ →→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(εξηκοστό[ →→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(εβδομηκοστό[ →→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(ογδοηκοστό[ →→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(εννενηκοστό[ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(εκατοστό[ →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(διακοσιοστό[ →→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(τριακοσιοστό[ →→]),
 				},
 				'400' => {
 					base_value => q(400),
+					divisor => q(100),
 					rule => q(τετρακοσιοστό[ →→]),
 				},
 				'500' => {
 					base_value => q(500),
+					divisor => q(100),
 					rule => q(πεντακοσιοστό[ →→]),
 				},
 				'600' => {
 					base_value => q(600),
+					divisor => q(100),
 					rule => q(εξακοσιοστός[ →→]),
 				},
 				'700' => {
 					base_value => q(700),
+					divisor => q(100),
 					rule => q(επτακοσιοστό[ →→]),
 				},
 				'800' => {
 					base_value => q(800),
+					divisor => q(100),
 					rule => q(οκτακοσιοστό[ →→]),
 				},
 				'900' => {
 					base_value => q(900),
+					divisor => q(100),
 					rule => q(εννεακοσιοστό[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(χιλιοστό[ →→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(δισχιλιοστό[ →→]),
 				},
 				'3000' => {
 					base_value => q(3000),
+					divisor => q(1000),
 					rule => q(τρισχιλιοστό[ →→]),
 				},
 				'4000' => {
 					base_value => q(4000),
+					divisor => q(1000),
 					rule => q(τετράκις χιλιοστό[ →→]),
 				},
 				'5000' => {
 					base_value => q(5000),
+					divisor => q(1000),
 					rule => q(πεντάκις χιλιοστό[ →→]),
 				},
 				'6000' => {
 					base_value => q(6000),
+					divisor => q(1000),
 					rule => q(εξάκις χιλιοστό[ →→]),
 				},
 				'7000' => {
 					base_value => q(7000),
+					divisor => q(1000),
 					rule => q(επτάκις χιλιοστό[ →→]),
 				},
 				'8000' => {
 					base_value => q(8000),
+					divisor => q(1000),
 					rule => q(οκτάκις χιλιοστό[ →→]),
 				},
 				'9000' => {
 					base_value => q(9000),
+					divisor => q(1000),
 					rule => q(εννεάκις χιλιοστό[ →→]),
 				},
 				'10000' => {
@@ -1192,26 +1471,32 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-neuter← εκατομμυριοστό [ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-neuter← δισεκατομμυριοστό[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-neuter← τρισεκατομμυριοστό[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-neuter← τετράκις εκατομμυριοστό[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=.),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=.),
 				},
 			},
@@ -5641,8 +5926,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{μ.μ.},
 					'am' => q{π.μ.},
+					'pm' => q{μ.μ.},
 				},
 			},
 		},
@@ -5772,6 +6057,59 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'japanese' => {
+			Ed => q{E d},
+			Gy => q{y G},
+			MEd => q{E, d/M},
+			MMM => q{LLL},
+			MMMEd => q{E, d MMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			y => q{y G},
+			yM => q{MM/y GGGGG},
+			yMEd => q{E, dd/MM/y GGGGG},
+			yMMM => q{LLL y GGGGG},
+			yMMMEd => q{E, d MMM, y G},
+			yMMMd => q{d MMM, y G},
+			yMd => q{dd/MM/y GGGGG},
+			yQQQ => q{y GGGGG QQQ},
+		},
+		'generic' => {
+			Ed => q{E d},
+			Gy => q{y G},
+			GyMMM => q{LLL y G},
+			GyMMMEd => q{E, d MMM y G},
+			GyMMMd => q{d MMM y G},
+			H => q{HH},
+			HHmm => q{HH:mm},
+			HHmmss => q{HH:mm:ss},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, d/M},
+			MMM => q{LLL},
+			MMMEd => q{E, d MMM},
+			MMMMEd => q{E, d MMMM},
+			MMMMd => q{d MMMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y},
+			yyyy => q{y G},
+			yyyyM => q{M/y G},
+			yyyyMEd => q{E, d/M/y G},
+			yyyyMMM => q{LLL y G},
+			yyyyMMMEd => q{E, d MMM y G},
+			yyyyMMMM => q{LLLL y G},
+			yyyyMMMd => q{d MMM y G},
+			yyyyMd => q{d/M/y G},
+			yyyyQQQ => q{G y QQQ},
+			yyyyQQQQ => q{G y QQQQ},
+		},
 		'gregorian' => {
 			EHm => q{E HH:mm},
 			EHms => q{E HH:mm:ss},
@@ -5811,59 +6149,6 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{y QQQ},
 			yQQQQ => q{y QQQQ},
 		},
-		'generic' => {
-			Ed => q{E d},
-			Gy => q{y G},
-			GyMMM => q{LLL y G},
-			GyMMMEd => q{E, d MMM y G},
-			GyMMMd => q{d MMM y G},
-			H => q{HH},
-			HHmm => q{HH:mm},
-			HHmmss => q{HH:mm:ss},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, d/M},
-			MMM => q{LLL},
-			MMMEd => q{E, d MMM},
-			MMMMEd => q{E, d MMMM},
-			MMMMd => q{d MMMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y},
-			yyyy => q{y G},
-			yyyyM => q{M/y G},
-			yyyyMEd => q{E, d/M/y G},
-			yyyyMMM => q{LLL y G},
-			yyyyMMMEd => q{E, d MMM y G},
-			yyyyMMMM => q{LLLL y G},
-			yyyyMMMd => q{d MMM y G},
-			yyyyMd => q{d/M/y G},
-			yyyyQQQ => q{G y QQQ},
-			yyyyQQQQ => q{G y QQQQ},
-		},
-		'japanese' => {
-			Ed => q{E d},
-			Gy => q{y G},
-			MEd => q{E, d/M},
-			MMM => q{LLL},
-			MMMEd => q{E, d MMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			y => q{y G},
-			yM => q{MM/y GGGGG},
-			yMEd => q{E, dd/MM/y GGGGG},
-			yMMM => q{LLL y GGGGG},
-			yMMMEd => q{E, d MMM, y G},
-			yMMMd => q{d MMM, y G},
-			yMd => q{dd/MM/y GGGGG},
-			yQQQ => q{y GGGGG QQQ},
-		},
 	} },
 );
 
@@ -5883,101 +6168,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			H => {
-				H => q{HH–HH},
-			},
-			Hm => {
-				H => q{HH:mm–HH:mm},
-				m => q{HH:mm–HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm–HH:mm v},
-				m => q{HH:mm–HH:mm v},
-			},
-			Hv => {
-				H => q{HH–HH v},
-			},
-			M => {
-				M => q{M-M},
-			},
-			MEd => {
-				M => q{E, dd/MM - E, dd/MM},
-				d => q{E, dd/MM - E, dd/MM},
-			},
-			MMM => {
-				M => q{LLL-LLL},
-			},
-			MMMEd => {
-				M => q{E, dd MMM - E, dd MMM},
-				d => q{E, dd - E, dd MMM},
-			},
-			MMMd => {
-				M => q{dd MMM - dd MMM},
-				d => q{dd-dd MMM},
-			},
-			Md => {
-				M => q{dd/MM - dd/MM},
-				d => q{dd/MM - dd/MM},
-			},
-			d => {
-				d => q{d-d},
-			},
-			fallback => '{0} - {1}',
-			h => {
-				a => q{h a - h a},
-				h => q{h-h a},
-			},
-			hm => {
-				a => q{h:mm a - h:mm a},
-				h => q{h:mm-h:mm a},
-				m => q{h:mm-h:mm a},
-			},
-			hmv => {
-				a => q{h:mm a - h:mm a v},
-				h => q{h:mm-h:mm a v},
-				m => q{h:mm-h:mm a v},
-			},
-			hv => {
-				a => q{h a - h a v},
-				h => q{h-h a v},
-			},
-			y => {
-				y => q{y-y},
-			},
-			yM => {
-				M => q{MM/y - MM/y},
-				y => q{MM/y - MM/y},
-			},
-			yMEd => {
-				M => q{E, dd/MM/y - E, dd/MM/y},
-				d => q{E, dd/MM/y - E, dd/MM/y},
-				y => q{E, dd/MM/y - E, dd/MM/y},
-			},
-			yMMM => {
-				M => q{LLL-LLL y},
-				y => q{MMM y - MMM y},
-			},
-			yMMMEd => {
-				M => q{E, dd MMM - E, dd MMM y},
-				d => q{E, dd MMM - E, dd MMM y},
-				y => q{E, dd MMM y - E, dd MMM y},
-			},
-			yMMMM => {
-				M => q{LLLL-LLLL y},
-				y => q{LLLL y - LLLL y},
-			},
-			yMMMd => {
-				M => q{dd MMM - dd MMM y},
-				d => q{dd-dd MMM y},
-				y => q{dd MMM y - dd MMM y},
-			},
-			yMd => {
-				M => q{dd/MM/y - dd/MM/y},
-				d => q{dd/MM/y - dd/MM/y},
-				y => q{dd/MM/y - dd/MM/y},
-			},
-		},
 		'generic' => {
 			H => {
 				H => q{HH–HH},
@@ -6071,6 +6261,101 @@ has 'datetime_formats_interval' => (
 				M => q{dd/MM/y - dd/MM/y G},
 				d => q{dd/MM/y - dd/MM/y G},
 				y => q{dd/MM/y - dd/MM/y G},
+			},
+		},
+		'gregorian' => {
+			H => {
+				H => q{HH–HH},
+			},
+			Hm => {
+				H => q{HH:mm–HH:mm},
+				m => q{HH:mm–HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm–HH:mm v},
+				m => q{HH:mm–HH:mm v},
+			},
+			Hv => {
+				H => q{HH–HH v},
+			},
+			M => {
+				M => q{M-M},
+			},
+			MEd => {
+				M => q{E, dd/MM - E, dd/MM},
+				d => q{E, dd/MM - E, dd/MM},
+			},
+			MMM => {
+				M => q{LLL-LLL},
+			},
+			MMMEd => {
+				M => q{E, dd MMM - E, dd MMM},
+				d => q{E, dd - E, dd MMM},
+			},
+			MMMd => {
+				M => q{dd MMM - dd MMM},
+				d => q{dd-dd MMM},
+			},
+			Md => {
+				M => q{dd/MM - dd/MM},
+				d => q{dd/MM - dd/MM},
+			},
+			d => {
+				d => q{d-d},
+			},
+			fallback => '{0} - {1}',
+			h => {
+				a => q{h a - h a},
+				h => q{h-h a},
+			},
+			hm => {
+				a => q{h:mm a - h:mm a},
+				h => q{h:mm-h:mm a},
+				m => q{h:mm-h:mm a},
+			},
+			hmv => {
+				a => q{h:mm a - h:mm a v},
+				h => q{h:mm-h:mm a v},
+				m => q{h:mm-h:mm a v},
+			},
+			hv => {
+				a => q{h a - h a v},
+				h => q{h-h a v},
+			},
+			y => {
+				y => q{y-y},
+			},
+			yM => {
+				M => q{MM/y - MM/y},
+				y => q{MM/y - MM/y},
+			},
+			yMEd => {
+				M => q{E, dd/MM/y - E, dd/MM/y},
+				d => q{E, dd/MM/y - E, dd/MM/y},
+				y => q{E, dd/MM/y - E, dd/MM/y},
+			},
+			yMMM => {
+				M => q{LLL-LLL y},
+				y => q{MMM y - MMM y},
+			},
+			yMMMEd => {
+				M => q{E, dd MMM - E, dd MMM y},
+				d => q{E, dd MMM - E, dd MMM y},
+				y => q{E, dd MMM y - E, dd MMM y},
+			},
+			yMMMM => {
+				M => q{LLLL-LLLL y},
+				y => q{LLLL y - LLLL y},
+			},
+			yMMMd => {
+				M => q{dd MMM - dd MMM y},
+				d => q{dd-dd MMM y},
+				y => q{dd MMM y - dd MMM y},
+			},
+			yMd => {
+				M => q{dd/MM/y - dd/MM/y},
+				d => q{dd/MM/y - dd/MM/y},
+				y => q{dd/MM/y - dd/MM/y},
 			},
 		},
 	} },

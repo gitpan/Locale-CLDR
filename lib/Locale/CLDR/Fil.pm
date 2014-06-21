@@ -1,11 +1,11 @@
 package Locale::CLDR::Fil;
 # This file auto generated from Data\common\main\fil.xml
-#	on Tue 10 Jun  9:01:00 pm GMT
+#	on Fri 20 Jun 11:32:15 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,18 +26,23 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'digits-ordinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(−→→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ika=#,##0=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ika=#,##0=),
 				},
 			},
@@ -46,62 +51,77 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(isáng),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(dalawáng),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(tatlóng),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(ápat na),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(limáng),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(anim na),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(pitóng),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(walóng),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(siyám na),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(sampûng),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(labíng-→→),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(←%%number-times← pû[’t →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%%number-times← daán[ at →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%%number-times← libó[’t →→]),
 				},
 				'max' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%%number-times← libó[’t →→]),
 				},
 			},
@@ -109,93 +129,116 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(walâ),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← tuldok →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(isá),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(dalawá),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(tatló),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(ápat),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(limá),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(anim),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(pitó),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(waló),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(siyám),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(sampû),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(labíng-→→),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(←%%number-times← pû[’t →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%%number-times← daán[ at →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%%number-times← libó[’t →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%%number-times← milyón[ at →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%%number-times← bilyón[ at →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%%number-times← trilyón[ at →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%%number-times← katrilyón[ at →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -204,10 +247,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 			},
@@ -216,12 +261,15 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 			},
@@ -230,12 +278,15 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ika =%spellout-cardinal=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,##0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,##0.#=),
 				},
 			},
@@ -3386,12 +3437,12 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'abbreviated' => {
-					'pm' => q{PM},
 					'am' => q{AM},
+					'pm' => q{PM},
 				},
 				'wide' => {
-					'pm' => q{PM},
 					'am' => q{AM},
+					'pm' => q{PM},
 				},
 				'narrow' => {
 					'am' => q{a},

@@ -1,11 +1,11 @@
 package Locale::CLDR::Ga;
 # This file auto generated from Data\common\main\ga.xml
-#	on Tue 10 Jun  9:05:33 pm GMT
+#	on Fri 20 Jun 11:37:01 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,19 +26,24 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'2d-year' => {
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(agus =%spellout-numbering=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(=%%spellout-numbering-no-a=),
 				},
 				'max' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(=%%spellout-numbering-no-a=),
 				},
 			},
@@ -47,26 +52,32 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(billiún),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%%spellout-cardinal-prefixpart= billiún),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(=%%spellout-cardinal-prefixpart= billiún déag),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%spellout-cardinal-prefixpart= billiún),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%%hundreds←→%%is-billions→),
 				},
 				'max' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%%hundreds←→%%is-billions→),
 				},
 			},
@@ -74,14 +85,17 @@ has 'algorithmic_number_format_data' => (
 		'digits-ordinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(−→→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=#,##0=ú),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=#,##0=ú),
 				},
 			},
@@ -90,42 +104,52 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(céad),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(dhá chéad),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(trí chéad),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(ceithre chéad),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(cúig chéad),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(sé chéad),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(seacht gcéad),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(ocht gcéad),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(naoi gcéad),
 				},
 				'max' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(naoi gcéad),
 				},
 			},
@@ -134,18 +158,22 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(' is),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(→→),
 				},
 				'max' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(→→),
 				},
 			},
@@ -154,22 +182,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(' billiún),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' is =%%spellout-cardinal-prefixpart= billiún),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(' is =%%billions=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%is= =%%billions=),
 				},
 				'max' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%is= =%%billions=),
 				},
 			},
@@ -178,22 +211,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(' =%%million=),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' is =%%spellout-cardinal-prefixpart= =%%million=),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(' is =%%millions=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%is= =%%millions=),
 				},
 				'max' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%is= =%%millions=),
 				},
 			},
@@ -202,14 +240,17 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(' is =%spellout-numbering=),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-numbering=),
 				},
 				'max' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-numbering=),
 				},
 			},
@@ -218,14 +259,17 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(' is =%%numberp=),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%%numberp=),
 				},
 				'max' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%%numberp=),
 				},
 			},
@@ -234,22 +278,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(' quadrilliún),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' is =%%spellout-cardinal-prefixpart= quadrilliún),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(' is =%%quadrillions=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%is= =%%quadrillions=),
 				},
 				'max' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%is= =%%quadrillions=),
 				},
 			},
@@ -258,22 +307,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(' =%%thousand=),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' is =%%spellout-cardinal-prefixpart= =%%thousand=),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(' is =%%thousands=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%is= =%%thousands=),
 				},
 				'max' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%is= =%%thousands=),
 				},
 			},
@@ -282,22 +336,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(' =%%trillion=),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' is =%%spellout-cardinal-prefixpart= =%%trillion=),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(' is =%%trillions=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%is= =%%trillions=),
 				},
 				'max' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%is= =%%trillions=),
 				},
 			},
@@ -306,10 +365,12 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(& ' ' , ',' ),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(& ' ' , ',' ),
 				},
 			},
@@ -318,22 +379,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(milliún),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(mhilliún),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(milliún),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(→→),
 				},
 				'max' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(→→),
 				},
 			},
@@ -342,18 +408,22 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(milliún),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%%spellout-cardinal-prefixpart= =%%millionsp=),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%%hundreds←→%%is-millions→),
 				},
 				'max' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%%hundreds←→%%is-millions→),
 				},
 			},
@@ -362,18 +432,22 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%%million=),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(=%%million= déag),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%million=),
 				},
 				'max' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%million=),
 				},
 			},
@@ -382,22 +456,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%%spellout-cardinal-prefixpart=),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(dó dhéag),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(=%%spellout-cardinal-prefixpart= déag),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%spellout-cardinal-prefixpart=),
 				},
 				'max' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%spellout-cardinal-prefixpart=),
 				},
 			},
@@ -406,26 +485,32 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(quadrilliún),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%%spellout-cardinal-prefixpart= quadrilliún),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(=%%spellout-cardinal-prefixpart= quadrilliún déag),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%spellout-cardinal-prefixpart= quadrilliún),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%%hundreds←→%%is-quadrillions→),
 				},
 				'max' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%%hundreds←→%%is-quadrillions→),
 				},
 			},
@@ -434,10 +519,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 			},
@@ -446,114 +533,142 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(náid),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(aon),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(dhá),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(trí),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(ceithre),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(cúig),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(sé),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(seacht),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(ocht),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(naoi),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(deich),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(→→),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(fiche[ is →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(tríocha[ is →→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(daichead[ is →→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(caoga[ is →→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(seasca[ is →→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(seachtó[ is →→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(ochtó[ is →→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(nócha[ is →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%%hundreds←[→%%is-numberp→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%%thousands←[, →%%numberp→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%%millions←[, →%%numberp→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%%billions←[, →%%numberp→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%%trillions←[, →%%numberp→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%%quadrillions←[, →%%numberp→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -561,129 +676,161 @@ has 'algorithmic_number_format_data' => (
 		'spellout-numbering' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(míneas →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(a náid),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← pointe →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(a haon),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(a dó),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(a trí),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(a ceathair),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(a cúig),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(a sé),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(a seacht),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(a hocht),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(a naoi),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(a deich),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(→→ déag),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(→→ dhéag),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(→→ déag),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(fiche[ →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(tríocha[ →→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(daichead[ →→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(caoga[ →→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(seasca[ →→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(seachtó[ →→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(ochtó[ →→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(nócha[ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%%hundreds←[→%%is-number→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%%thousands←[, →%spellout-numbering→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%%millions←[, →%spellout-numbering→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%%billions←[, →%spellout-numbering→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%%trillions←[, →%spellout-numbering→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%%quadrillions←[, →%spellout-numbering→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -692,66 +839,82 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(náid),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(aon),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(dó),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(trí),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(ceathair),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(cúig),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(sé),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(seacht),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(ocht),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(naoi),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(deich),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(→→ déag),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(→→ dhéag),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(→→ déag),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%spellout-numbering=),
 				},
 				'max' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%spellout-numbering=),
 				},
 			},
@@ -759,13 +922,16 @@ has 'algorithmic_number_format_data' => (
 		'spellout-numbering-year' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(míneas →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,##0.#=),
 				},
 				'1000' => {
@@ -775,10 +941,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(=%spellout-numbering=),
 				},
 				'max' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(=%spellout-numbering=),
 				},
 			},
@@ -787,22 +955,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(míle),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(mhíle),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(míle),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(→→),
 				},
 				'max' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(→→),
 				},
 			},
@@ -811,18 +984,22 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%%thousand=),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(=%%thousand= dhéag),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%thousand=),
 				},
 				'max' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%thousand=),
 				},
 			},
@@ -831,18 +1008,22 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(míle),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%%spellout-cardinal-prefixpart= =%%thousandp=),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%%hundreds←→%%is-thousands→),
 				},
 				'max' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%%hundreds←→%%is-thousands→),
 				},
 			},
@@ -851,22 +1032,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(dtrilliún),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(thrilliún),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(dtrilliún),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(→→),
 				},
 				'max' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(→→),
 				},
 			},
@@ -875,18 +1061,22 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(thrilliún),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%%spellout-cardinal-prefixpart= =%%trillionsp=),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%%hundreds←→%%is-trillions→),
 				},
 				'max' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%%hundreds←→%%is-trillions→),
 				},
 			},
@@ -895,18 +1085,22 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%%trillion=),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(=%%trillion= déag),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%trillion=),
 				},
 				'max' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%%trillion=),
 				},
 			},
@@ -3031,24 +3225,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			Ed => q{E d},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E d MMM y G},
-			GyMMMd => q{d MMM y G},
-			M => q{LL},
-			MEd => q{E dd/MM},
-			MMMEd => q{E d MMM},
-			MMMd => q{d MMM},
-			Md => q{dd/MM},
-			yM => q{MM/y},
-			yMEd => q{E dd/MM/y},
-			yMMM => q{MMM y},
-			yMMMEd => q{E d MMM y},
-			yMMMd => q{d MMM y},
-			yMd => q{dd/MM/y},
-		},
 		'generic' => {
 			Ed => q{E d},
 			Gy => q{y G},
@@ -3066,6 +3242,24 @@ has 'datetime_formats_available_formats' => (
 			yyyyMMMEd => q{E d MMM y G},
 			yyyyMMMd => q{d MMM y G},
 			yyyyMd => q{dd/MM/y GGGGG},
+		},
+		'gregorian' => {
+			Ed => q{E d},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E d MMM y G},
+			GyMMMd => q{d MMM y G},
+			M => q{LL},
+			MEd => q{E dd/MM},
+			MMMEd => q{E d MMM},
+			MMMd => q{d MMM},
+			Md => q{dd/MM},
+			yM => q{MM/y},
+			yMEd => q{E dd/MM/y},
+			yMMM => q{MMM y},
+			yMMMEd => q{E d MMM y},
+			yMMMd => q{d MMM y},
+			yMd => q{dd/MM/y},
 		},
 	} },
 );

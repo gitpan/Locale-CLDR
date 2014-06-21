@@ -1,11 +1,11 @@
 package Locale::CLDR::Sr::Latn;
 # This file auto generated from Data\common\main\sr_Latn.xml
-#	on Tue 10 Jun 10:37:45 pm GMT
+#	on Sat 21 Jun  1:09:38 am GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,165 +26,207 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'spellout-cardinal-feminine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(nula),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← zarez →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(jedinica),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(dve),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-masculine=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(dvadeset[ →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(trideset[ →→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(četrdeset[ →→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(pedeset[ →→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(šezdeset[ →→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(sedamdeset[ →→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(osamdeset[ →→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(devedeset[ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(sto[ →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(dvesto[ →→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(tristo[ →→]),
 				},
 				'400' => {
 					base_value => q(400),
+					divisor => q(100),
 					rule => q(četristo[ →→]),
 				},
 				'500' => {
 					base_value => q(500),
+					divisor => q(100),
 					rule => q(petsto[ →→]),
 				},
 				'600' => {
 					base_value => q(600),
+					divisor => q(100),
 					rule => q(šesto[ →→]),
 				},
 				'700' => {
 					base_value => q(700),
+					divisor => q(100),
 					rule => q(sedamsto[ →→]),
 				},
 				'800' => {
 					base_value => q(800),
+					divisor => q(100),
 					rule => q(osamsto[ →→]),
 				},
 				'900' => {
 					base_value => q(900),
+					divisor => q(100),
 					rule => q(devetsto[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(tisuću[ →→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-feminine← tisuće[ →→]),
 				},
 				'5000' => {
 					base_value => q(5000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-feminine← tisuću[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← milijun[ →→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← milijuny[ →→]),
 				},
 				'5000000' => {
 					base_value => q(5000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← milijun[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← miliarda[ →→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← miliardy[ →→]),
 				},
 				'5000000000' => {
 					base_value => q(5000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← miliarda[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← bilijun[ →→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← bilijuny[ →→]),
 				},
 				'5000000000000' => {
 					base_value => q(5000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← bilijun[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← biliarda[ →→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← biliardy[ →→]),
 				},
 				'5000000000000000' => {
 					base_value => q(5000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← biliarda[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -192,225 +234,281 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-masculine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(nula),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← zarez →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(jedan),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(dva),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(tri),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(četiri),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(pet),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(šest),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(sedam),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(osam),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(devet),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(deset),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(jedenaest),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(dvanaest),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(trinaest),
 				},
 				'14' => {
 					base_value => q(14),
+					divisor => q(10),
 					rule => q(četrnaest),
 				},
 				'15' => {
 					base_value => q(15),
+					divisor => q(10),
 					rule => q(petnaest),
 				},
 				'16' => {
 					base_value => q(16),
+					divisor => q(10),
 					rule => q(šestnaest),
 				},
 				'17' => {
 					base_value => q(17),
+					divisor => q(10),
 					rule => q(sedamnaest),
 				},
 				'18' => {
 					base_value => q(18),
+					divisor => q(10),
 					rule => q(osamnaest),
 				},
 				'19' => {
 					base_value => q(19),
+					divisor => q(10),
 					rule => q(devetnaest),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(dvadeset[ →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(trideset[ →→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(četrdeset[ →→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(pedeset[ →→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(šezdeset[ →→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(sedamdeset[ →→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(osamdeset[ →→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(devedeset[ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(sto[ →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(dvesto[ →→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(tristo[ →→]),
 				},
 				'400' => {
 					base_value => q(400),
+					divisor => q(100),
 					rule => q(četristo[ →→]),
 				},
 				'500' => {
 					base_value => q(500),
+					divisor => q(100),
 					rule => q(petsto[ →→]),
 				},
 				'600' => {
 					base_value => q(600),
+					divisor => q(100),
 					rule => q(šesto[ →→]),
 				},
 				'700' => {
 					base_value => q(700),
+					divisor => q(100),
 					rule => q(sedamsto[ →→]),
 				},
 				'800' => {
 					base_value => q(800),
+					divisor => q(100),
 					rule => q(osamsto[ →→]),
 				},
 				'900' => {
 					base_value => q(900),
+					divisor => q(100),
 					rule => q(devetsto[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(tisuću[ →→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-feminine← tisuća[ →→]),
 				},
 				'5000' => {
 					base_value => q(5000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-feminine← tisuću[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← milijun[ →→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← milijuny[ →→]),
 				},
 				'5000000' => {
 					base_value => q(5000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← milijun[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← miliarda[ →→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← miliardy[ →→]),
 				},
 				'5000000000' => {
 					base_value => q(5000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← miliarda[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← bilijun[ →→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← bilijuny[ →→]),
 				},
 				'5000000000000' => {
 					base_value => q(5000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← bilijun[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← biliarda[ →→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← biliardy[ →→]),
 				},
 				'5000000000000000' => {
 					base_value => q(5000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← biliarda[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -418,161 +516,201 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-neuter' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(nula),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← zarez →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(jedno),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(dva),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-masculine=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(dvadeset[ →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(trideset[ →→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(četrdeset[ →→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(pedeset[ →→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(šezdeset[ →→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(sedamdeset[ →→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(osamdeset[ →→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(devedeset[ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(sto[ →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(dvesto[ →→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(tristo[ →→]),
 				},
 				'400' => {
 					base_value => q(400),
+					divisor => q(100),
 					rule => q(četristo[ →→]),
 				},
 				'500' => {
 					base_value => q(500),
+					divisor => q(100),
 					rule => q(petsto[ →→]),
 				},
 				'600' => {
 					base_value => q(600),
+					divisor => q(100),
 					rule => q(šesto[ →→]),
 				},
 				'700' => {
 					base_value => q(700),
+					divisor => q(100),
 					rule => q(sedamsto[ →→]),
 				},
 				'800' => {
 					base_value => q(800),
+					divisor => q(100),
 					rule => q(osamsto[ →→]),
 				},
 				'900' => {
 					base_value => q(900),
+					divisor => q(100),
 					rule => q(devetsto[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(tisuću[ →→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-feminine← tisuće[ →→]),
 				},
 				'5000' => {
 					base_value => q(5000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-feminine← tisuću[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← milijun[ →→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← milijuny[ →→]),
 				},
 				'5000000' => {
 					base_value => q(5000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← milijun[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← miliarda[ →→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← miliardy[ →→]),
 				},
 				'5000000000' => {
 					base_value => q(5000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← miliarda[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← bilijun[ →→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← bilijuny[ →→]),
 				},
 				'5000000000000' => {
 					base_value => q(5000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← bilijun[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← biliarda[ →→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← biliardy[ →→]),
 				},
 				'5000000000000000' => {
 					base_value => q(5000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← biliarda[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -581,10 +719,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-masculine=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-masculine=),
 				},
 			},
@@ -593,12 +733,15 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 			},
@@ -5699,8 +5842,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{popodne},
 					'am' => q{pre podne},
+					'pm' => q{popodne},
 				},
 			},
 		},
@@ -6122,44 +6265,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			Ed => q{E d.},
-			Gy => q{y. G},
-			GyMMM => q{MMM y. G},
-			GyMMMEd => q{E, d. MMM y. G},
-			GyMMMd => q{d. MMM y. G},
-			H => q{HH},
-			Hm => q{HH.mm},
-			Hms => q{HH.mm.ss},
-			M => q{L},
-			MEd => q{E, M-d},
-			MMM => q{LLL},
-			MMMEd => q{E d. MMM},
-			MMMMEd => q{E d. MMMM},
-			MMMMd => q{d. MMMM},
-			MMMd => q{d. MMM},
-			MMMdd => q{dd.MMM},
-			MMdd => q{MM-dd},
-			Md => q{d/M},
-			d => q{d},
-			h => q{hh a},
-			hm => q{hh.mm a},
-			hms => q{hh.mm.ss a},
-			ms => q{mm.ss},
-			y => q{y. G},
-			yyyy => q{y. G},
-			yyyyM => q{M.y. G},
-			yyyyMEd => q{E, d.M.y. G},
-			yyyyMM => q{MM.y. G},
-			yyyyMMM => q{MMM y. G},
-			yyyyMMMEd => q{E, d. MMM y. G},
-			yyyyMMMM => q{MMMM y. G},
-			yyyyMMMd => q{d. MMM y. G},
-			yyyyMMdd => q{dd.MM.y. G},
-			yyyyMd => q{d.M.y. G},
-			yyyyQQQ => q{QQQ, y. G},
-			yyyyQQQQ => q{QQQQ y. G},
-		},
 		'gregorian' => {
 			EHm => q{E, HH:mm},
 			EHms => q{E, HH:mm:ss},
@@ -6201,6 +6306,44 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ. y},
 			yQQQQ => q{QQQQ. y},
 		},
+		'generic' => {
+			Ed => q{E d.},
+			Gy => q{y. G},
+			GyMMM => q{MMM y. G},
+			GyMMMEd => q{E, d. MMM y. G},
+			GyMMMd => q{d. MMM y. G},
+			H => q{HH},
+			Hm => q{HH.mm},
+			Hms => q{HH.mm.ss},
+			M => q{L},
+			MEd => q{E, M-d},
+			MMM => q{LLL},
+			MMMEd => q{E d. MMM},
+			MMMMEd => q{E d. MMMM},
+			MMMMd => q{d. MMMM},
+			MMMd => q{d. MMM},
+			MMMdd => q{dd.MMM},
+			MMdd => q{MM-dd},
+			Md => q{d/M},
+			d => q{d},
+			h => q{hh a},
+			hm => q{hh.mm a},
+			hms => q{hh.mm.ss a},
+			ms => q{mm.ss},
+			y => q{y. G},
+			yyyy => q{y. G},
+			yyyyM => q{M.y. G},
+			yyyyMEd => q{E, d.M.y. G},
+			yyyyMM => q{MM.y. G},
+			yyyyMMM => q{MMM y. G},
+			yyyyMMMEd => q{E, d. MMM y. G},
+			yyyyMMMM => q{MMMM y. G},
+			yyyyMMMd => q{d. MMM y. G},
+			yyyyMMdd => q{dd.MM.y. G},
+			yyyyMd => q{d.M.y. G},
+			yyyyQQQ => q{QQQ, y. G},
+			yyyyQQQQ => q{QQQQ y. G},
+		},
 	} },
 );
 
@@ -6220,101 +6363,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			H => {
-				H => q{HH-HH},
-			},
-			Hm => {
-				H => q{HH.mm-HH.mm},
-				m => q{HH.mm-HH.mm},
-			},
-			Hmv => {
-				H => q{HH.mm-HH.mm v},
-				m => q{HH.mm-HH.mm v},
-			},
-			Hv => {
-				H => q{HH-HH v},
-			},
-			M => {
-				M => q{M-M},
-			},
-			MEd => {
-				M => q{E, d.M - E, d.M},
-				d => q{E, d.M - E, d.M},
-			},
-			MMM => {
-				M => q{MMM-MMM},
-			},
-			MMMEd => {
-				M => q{E, dd. MMM - E, dd. MMM},
-				d => q{E, dd. - E, dd. MMM},
-			},
-			MMMd => {
-				M => q{dd. MMM - dd. MMM},
-				d => q{dd.-dd. MMM},
-			},
-			Md => {
-				M => q{d.M - d.M},
-				d => q{d.M - d.M},
-			},
-			d => {
-				d => q{d-d},
-			},
-			fallback => '{0} - {1}',
-			h => {
-				a => q{h a - h a},
-				h => q{h-h a},
-			},
-			hm => {
-				a => q{h.mm a - h.mm a},
-				h => q{h.mm-h.mm a},
-				m => q{h.mm-h.mm a},
-			},
-			hmv => {
-				a => q{h.mm a - h.mm a v},
-				h => q{h.mm-h.mm a v},
-				m => q{h.mm-h.mm a v},
-			},
-			hv => {
-				a => q{h a - h a v},
-				h => q{h-h a v},
-			},
-			y => {
-				y => q{y-y},
-			},
-			yM => {
-				M => q{y M - M},
-				y => q{M.y - M.y},
-			},
-			yMEd => {
-				M => q{E, d.M.y. - E, d.M.y.},
-				d => q{E, d.M.y. - E, d.M.y.},
-				y => q{E, d.M.y. - E, d.M.y.},
-			},
-			yMMM => {
-				M => q{MMM-MMM y.},
-				y => q{MMM y. - MMM y.},
-			},
-			yMMMEd => {
-				M => q{E, dd. MMM - E, dd. MMM y.},
-				d => q{E, dd. - E, dd. MMM y.},
-				y => q{E, dd. MMM y. - E, dd. MMM y.},
-			},
-			yMMMM => {
-				M => q{y-MM – MM},
-				y => q{y-MM – y-MM},
-			},
-			yMMMd => {
-				M => q{dd. MMM - dd. MMM y.},
-				d => q{dd.-dd. MMM y.},
-				y => q{dd. MMM y. - dd. MMM y.},
-			},
-			yMd => {
-				M => q{d.M.y. - d.M.y.},
-				d => q{d.M.y. - d.M.y.},
-				y => q{d.M.y. - d.M.y.},
-			},
-		},
 		'gregorian' => {
 			H => {
 				H => q{HH-HH},
@@ -6380,6 +6428,101 @@ has 'datetime_formats_interval' => (
 			yM => {
 				M => q{y M - M},
 				y => q{y M - M},
+			},
+			yMEd => {
+				M => q{E, d.M.y. - E, d.M.y.},
+				d => q{E, d.M.y. - E, d.M.y.},
+				y => q{E, d.M.y. - E, d.M.y.},
+			},
+			yMMM => {
+				M => q{MMM-MMM y.},
+				y => q{MMM y. - MMM y.},
+			},
+			yMMMEd => {
+				M => q{E, dd. MMM - E, dd. MMM y.},
+				d => q{E, dd. - E, dd. MMM y.},
+				y => q{E, dd. MMM y. - E, dd. MMM y.},
+			},
+			yMMMM => {
+				M => q{y-MM – MM},
+				y => q{y-MM – y-MM},
+			},
+			yMMMd => {
+				M => q{dd. MMM - dd. MMM y.},
+				d => q{dd.-dd. MMM y.},
+				y => q{dd. MMM y. - dd. MMM y.},
+			},
+			yMd => {
+				M => q{d.M.y. - d.M.y.},
+				d => q{d.M.y. - d.M.y.},
+				y => q{d.M.y. - d.M.y.},
+			},
+		},
+		'generic' => {
+			H => {
+				H => q{HH-HH},
+			},
+			Hm => {
+				H => q{HH.mm-HH.mm},
+				m => q{HH.mm-HH.mm},
+			},
+			Hmv => {
+				H => q{HH.mm-HH.mm v},
+				m => q{HH.mm-HH.mm v},
+			},
+			Hv => {
+				H => q{HH-HH v},
+			},
+			M => {
+				M => q{M-M},
+			},
+			MEd => {
+				M => q{E, d.M - E, d.M},
+				d => q{E, d.M - E, d.M},
+			},
+			MMM => {
+				M => q{MMM-MMM},
+			},
+			MMMEd => {
+				M => q{E, dd. MMM - E, dd. MMM},
+				d => q{E, dd. - E, dd. MMM},
+			},
+			MMMd => {
+				M => q{dd. MMM - dd. MMM},
+				d => q{dd.-dd. MMM},
+			},
+			Md => {
+				M => q{d.M - d.M},
+				d => q{d.M - d.M},
+			},
+			d => {
+				d => q{d-d},
+			},
+			fallback => '{0} - {1}',
+			h => {
+				a => q{h a - h a},
+				h => q{h-h a},
+			},
+			hm => {
+				a => q{h.mm a - h.mm a},
+				h => q{h.mm-h.mm a},
+				m => q{h.mm-h.mm a},
+			},
+			hmv => {
+				a => q{h.mm a - h.mm a v},
+				h => q{h.mm-h.mm a v},
+				m => q{h.mm-h.mm a v},
+			},
+			hv => {
+				a => q{h a - h a v},
+				h => q{h-h a v},
+			},
+			y => {
+				y => q{y-y},
+			},
+			yM => {
+				M => q{y M - M},
+				y => q{M.y - M.y},
 			},
 			yMEd => {
 				M => q{E, d.M.y. - E, d.M.y.},

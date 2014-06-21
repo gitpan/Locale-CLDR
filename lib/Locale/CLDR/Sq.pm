@@ -1,11 +1,11 @@
 package Locale::CLDR::Sq;
 # This file auto generated from Data\common\main\sq.xml
-#	on Tue 10 Jun 10:33:23 pm GMT
+#	on Sat 21 Jun  1:05:17 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,97 +26,122 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'spellout-cardinal-feminine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(zero),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← presje →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(një),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(dy),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(tri),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-masculine=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(njëzet[ e →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(tridhjetë[ e →→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(dyzet[ e →→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(←%spellout-cardinal-feminine←dhjetë[ e →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-masculine←qind[ e →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-masculine← mijë[ e →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(një milion[ e →→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-feminine← milionë[ e →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(një miliar[ e →→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-feminine← miliarë[ e →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(një bilion[ e →→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-feminine← bilionë[ e →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(një biliar[ e →→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-feminine← biliarë[ e →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -124,121 +149,151 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-masculine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(zero),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← presje →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(një),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(dy),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(tre),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(katër),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(pesë),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(gjashtë),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(shtatë),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(tetë),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(nëntë),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(dhjetë),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(→%spellout-cardinal-masculine→mbëdhjetë),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(njëzet[ e →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(tridhjetë[ e →→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(dyzet[ e →→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(←%spellout-cardinal-feminine←dhjetë[ e →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-masculine←qind[ e →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-masculine← mijë[ e →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(një milion[ e →→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-feminine← milionë[ e →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(një miliar[ e →→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-feminine← miliarë[ e →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(një bilion[ e →→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-feminine← bilionë[ e →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(një biliar[ e →→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-feminine← biliarë[ e →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -247,10 +302,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-masculine=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-masculine=),
 				},
 			},
@@ -259,12 +316,15 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 			},

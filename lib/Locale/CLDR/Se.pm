@@ -1,11 +1,11 @@
 package Locale::CLDR::Se;
 # This file auto generated from Data\common\main\se.xml
-#	on Tue 10 Jun 10:27:56 pm GMT
+#	on Sat 21 Jun 12:59:50 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,97 +26,122 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'spellout-cardinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(eret →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(nolla),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← pilkku →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(okta),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(guokte),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(golbma),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(njeallje),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(vihtta),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(guhtta),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(čieža),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(gávcci),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(ovcci),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(logi),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(→→­nuppe­lohkái),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(←←­logi[­→→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←←­čuođi[­→→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←←­duhát[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←← miljon[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←← miljard[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←← biljon[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←← biljard[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -125,10 +150,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 			},
@@ -136,13 +163,16 @@ has 'algorithmic_number_format_data' => (
 		'spellout-numbering-year' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(eret →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'1100' => {
@@ -152,10 +182,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(=%spellout-numbering=),
 				},
 				'max' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(=%spellout-numbering=),
 				},
 			},
@@ -1951,8 +1983,8 @@ has 'day_periods' => (
 			},
 			'stand-alone' => {
 				'wide' => {
-					'pm' => q{eahketbeaivi},
 					'am' => q{iđitbeaivi},
+					'pm' => q{eahketbeaivi},
 				},
 			},
 		},

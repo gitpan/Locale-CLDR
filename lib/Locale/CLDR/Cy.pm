@@ -1,11 +1,11 @@
 package Locale::CLDR::Cy;
 # This file auto generated from Data\common\main\cy.xml
-#	on Tue 10 Jun  8:38:26 pm GMT
+#	on Fri 20 Jun 11:09:36 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,97 +26,122 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'spellout-cardinal-feminine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minws →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(dim),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← pwynt →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(un),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(dwy),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(tair),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(pedair),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(pump),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(chwech),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(saith),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(wyth),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(naw),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(un deg[ →→]),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(dau ddeg[ →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← deg[ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← cant[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← mil[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← miliwn[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← biliwn[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← triliwn[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← kwadriliwn[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -124,93 +149,116 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-feminine-before-consonant' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minws →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(dim),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← pwynt →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(un),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(dwy),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(tair),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(pedair),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(pum),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(chwe),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(saith),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(wyth),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(naw),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(un deg[ →→]),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(dau ddeg[ →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← deg[ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← cant[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← mil[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← miliwn[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← biliwn[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← triliwn[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← kwadriliwn[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -218,93 +266,116 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-masculine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minws →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(dim),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← pwynt →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(un),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(dau),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(tri),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(pedwar),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(pump),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(chwech),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(saith),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(wyth),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(naw),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(un deg[ →→]),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(dau ddeg[ →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← deg[ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← cant[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← mil[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← miliwn[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← biliwn[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← triliwn[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← kwadriliwn[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -312,93 +383,116 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-masculine-before-consonant' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minws →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(dim),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← pwynt →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(un),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(dau),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(tri),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(pedwar),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(pum),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(chwe),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(saith),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(wyth),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(naw),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(un deg[ →→]),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(dau ddeg[ →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← deg[ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← cant[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← mil[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← miliwn[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← biliwn[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← triliwn[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine-before-consonant← kwadriliwn[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -407,10 +501,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-masculine=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-masculine=),
 				},
 			},
@@ -419,12 +515,15 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 			},
@@ -4966,13 +5065,13 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
+					'noon' => q{hanner dydd},
 					'pm' => q{PM},
 					'am' => q{AM},
-					'noon' => q{hanner dydd},
 				},
 				'narrow' => {
-					'pm' => q{PM},
 					'am' => q{AM},
+					'pm' => q{PM},
 				},
 			},
 		},

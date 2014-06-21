@@ -1,11 +1,11 @@
 package Locale::CLDR::En::Any::Au;
 # This file auto generated from Data\common\main\en_AU.xml
-#	on Tue 10 Jun  8:50:00 pm GMT
+#	on Fri 20 Jun 11:21:18 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -115,44 +115,44 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'gregorian') {
-				return 'noon' if $time == 1200;
-				return 'pm' if $time > 1200
-					&& $time < 2400;
+			if ($_ eq 'islamic') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'generic') {
-				return 'noon' if $time == 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
+				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'chinese') {
-				return 'noon' if $time == 1200;
-				return 'pm' if $time > 1200
-					&& $time < 2400;
 				return 'am' if $time >= 000
 					&& $time < 1200;
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'islamic') {
-				return 'noon' if $time == 1200;
-				return 'pm' if $time > 1200
-					&& $time < 2400;
+			if ($_ eq 'gregorian') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+				return 'noon' if $time == 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'generic') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'japanese') {
-				return 'noon' if $time == 1200;
-				return 'pm' if $time > 1200
-					&& $time < 2400;
 				return 'am' if $time >= 000
 					&& $time < 1200;
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 		}
@@ -272,11 +272,11 @@ has 'datetime_formats_available_formats' => (
 			yMEd => q{E, d/M/y},
 			yMd => q{d/M/y},
 		},
-		'gregorian' => {
+		'islamic' => {
 			yMEd => q{E, d/M/y},
 			yMd => q{d/M/y},
 		},
-		'islamic' => {
+		'gregorian' => {
 			yMEd => q{E, d/M/y},
 			yMd => q{d/M/y},
 		},

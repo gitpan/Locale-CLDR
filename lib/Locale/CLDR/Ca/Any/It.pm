@@ -1,11 +1,11 @@
 package Locale::CLDR::Ca::Any::It;
 # This file auto generated from Data\common\main\ca_IT.xml
-#	on Tue 10 Jun  8:36:40 pm GMT
+#	on Fri 20 Jun 11:07:49 pm GMT
 # XML file generated 2013-08-18 23:26:52 -0500 (Sun, 18 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';

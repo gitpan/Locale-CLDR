@@ -1,11 +1,11 @@
 package Locale::CLDR::Yo::Any::Bj;
 # This file auto generated from Data\common\main\yo_BJ.xml
-#	on Tue 10 Jun 11:02:03 pm GMT
+#	on Sat 21 Jun  1:33:47 am GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -852,8 +852,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{Ɔ̀sán},
 					'am' => q{Àárɔ̀},
+					'pm' => q{Ɔ̀sán},
 				},
 			},
 		},
@@ -933,7 +933,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -956,7 +956,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},

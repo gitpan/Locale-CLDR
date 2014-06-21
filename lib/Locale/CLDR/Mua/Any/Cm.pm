@@ -1,11 +1,11 @@
 package Locale::CLDR::Mua::Any::Cm;
 # This file auto generated from Data\common\main\mua_CM.xml
-#	on Tue 10 Jun 10:04:23 pm GMT
+#	on Sat 21 Jun 12:36:00 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';

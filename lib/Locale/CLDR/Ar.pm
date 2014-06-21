@@ -1,11 +1,11 @@
 package Locale::CLDR::Ar;
 # This file auto generated from Data\common\main\ar.xml
-#	on Tue 10 Jun  8:15:48 pm GMT
+#	on Fri 20 Jun 10:46:50 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,18 +26,23 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'digits-ordinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(−→→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=#,##0=.),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=#,##0=.),
 				},
 			},
@@ -45,121 +50,151 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-feminine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(ناقص →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(صفر),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← فاصل →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(واحدة),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(إثنتان),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(ثلاثة),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(أربعة),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(خمسة),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(ستة),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(سبعة),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(ثمانية),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(تسعة),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(عشرة),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(إحدى عشر),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(إثنتا عشرة),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(→%spellout-numbering→ عشر),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q([→%spellout-numbering→ و ]عشرون),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q([→%spellout-numbering→ و ]ثلاثون),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q([→%spellout-numbering→ و ]أربعون),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q([→%spellout-numbering→ و ]خمسون),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q([→%spellout-numbering→ و ]ستون),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q([→%spellout-numbering→ و ]سبعون),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q([→%spellout-numbering→ و ]ثمانون),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q([→%spellout-numbering→ و ]تسعون),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(مائة[ و →%spellout-numbering→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(مائتان[ و →%spellout-numbering→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(←%spellout-numbering← مائة[ و →%spellout-numbering→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(ألف[ و →%spellout-numbering→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(ألفي[ و →%spellout-numbering→]),
 				},
 				'3000' => {
 					base_value => q(3000),
+					divisor => q(1000),
 					rule => q(←%spellout-numbering← آلاف[ و →%spellout-numbering→]),
 				},
 				'11000' => {
@@ -169,42 +204,52 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(مليون[ و →%spellout-numbering→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%%spellout-numbering-m← مليون[ و →%spellout-numbering→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(مليار[ و →%spellout-numbering→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%%spellout-numbering-m← مليار[ و →%spellout-numbering→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(بليون[ و →%spellout-numbering→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%%spellout-numbering-m← بليون[ و →%spellout-numbering→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(بليار[ و →%spellout-numbering→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%%spellout-numbering-m← بليار[ و →%spellout-numbering→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -212,121 +257,151 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-masculine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(ناقص →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(صفر),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←%%spellout-numbering-m← فاصل →→ ),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(واحد),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(إثنان),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(ثلاثة),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(أربعة),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(خمسة),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(ستة),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(سبعة),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(ثمانية),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(تسعة),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(عشرة),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(إحدى عشر),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(إثنا عشر),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(→→ عشر),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q([→%%spellout-numbering-m→ و ]عشرون),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q([→%%spellout-numbering-m→ و ]ثلاثون),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q([→%%spellout-numbering-m→ و ]أربعون),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q([→%%spellout-numbering-m→ و ]خمسون),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q([→%%spellout-numbering-m→ و ]ستون),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q([→%%spellout-numbering-m→ و ]سبعون),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q([→%%spellout-numbering-m→ و ]ثمانون),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q([→%%spellout-numbering-m→ و ]تسعون),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(مائة[ و →%%spellout-numbering-m→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(مائتان[ و →%%spellout-numbering-m→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(←%spellout-numbering← مائة[ و →%%spellout-numbering-m→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(ألف[ و →%%spellout-numbering-m→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(ألفي[ و →%%spellout-numbering-m→]),
 				},
 				'3000' => {
 					base_value => q(3000),
+					divisor => q(1000),
 					rule => q(←%spellout-numbering← آلاف[ و →%%spellout-numbering-m→]),
 				},
 				'11000' => {
@@ -336,42 +411,52 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(مليون[ و →%%spellout-numbering-m→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%%spellout-numbering-m← مليون[ و →%%spellout-numbering-m→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(مليار[ و →%%spellout-numbering-m→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%%spellout-numbering-m← مليار[ و →%%spellout-numbering-m→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(بليون[ و →%%spellout-numbering-m→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%%spellout-numbering-m← بليون[ و →%%spellout-numbering-m→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(بليار[ و →%%spellout-numbering-m→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%%spellout-numbering-m← بليار[ و →%%spellout-numbering-m→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -379,121 +464,151 @@ has 'algorithmic_number_format_data' => (
 		'spellout-numbering' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(ناقص →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(صفر),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← فاصل →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(واحد),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(إثنان),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(ثلاثة),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(أربعة),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(خمسة),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(ستة),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(سبعة),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(ثمانية),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(تسعة),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(عشرة),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(إحدى عشر),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(إثنا عشر),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(→%spellout-numbering→ عشر),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q([→%spellout-numbering→ و ]عشرون),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q([→%spellout-numbering→ و ]ثلاثون),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q([→%spellout-numbering→ و ]أربعون),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q([→%spellout-numbering→ و ]خمسون),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q([→%spellout-numbering→ و ]ستون),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q([→%spellout-numbering→ و ]سبعون),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q([→%spellout-numbering→ و ]ثمانون),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q([→%spellout-numbering→ و ]تسعون),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(مائة[ و →%spellout-numbering→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(مائتان[ و →%spellout-numbering→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(←%spellout-numbering← مائة[ و →%spellout-numbering→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(ألف[ و →%spellout-numbering→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(ألفين[ و →%spellout-numbering→]),
 				},
 				'3000' => {
 					base_value => q(3000),
+					divisor => q(1000),
 					rule => q(←%spellout-numbering← آلاف[ و →%spellout-numbering→]),
 				},
 				'11000' => {
@@ -503,42 +618,52 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(مليون[ و →%spellout-numbering→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%%spellout-numbering-m← مليون[ و →%spellout-numbering→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(مليار[ و →%spellout-numbering→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%%spellout-numbering-m← مليار[ و →%spellout-numbering→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(بليون[ و →%spellout-numbering→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%%spellout-numbering-m← بليون[ و →%spellout-numbering→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(بليار[ و →%spellout-numbering→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%%spellout-numbering-m← بليار[ و →%spellout-numbering→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -547,114 +672,142 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(صفر),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(واحد),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(إثنان),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(ثلاثة),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(أربعة),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(خمسة),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(ستة),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(سبعة),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(ثمانية),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(تسعة),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(عشرة),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(إحدى عشر),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(إثنا عشر),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(→→ عشر),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q([→%%spellout-numbering-m→ و ]عشرون),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q([→%%spellout-numbering-m→ و ]ثلاثون),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q([→%%spellout-numbering-m→ و ]أربعون),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q([→%%spellout-numbering-m→ و ]خمسون),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q([→%%spellout-numbering-m→ و ]ستون),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q([→%%spellout-numbering-m→ و ]سبعون),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q([→%%spellout-numbering-m→ و ]ثمانون),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q([→%%spellout-numbering-m→ و ]تسعون),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(مائة[ و →%%spellout-numbering-m→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(مائتان[ و →%%spellout-numbering-m→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(←%spellout-numbering← مائة[ و →%%spellout-numbering-m→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(ألف[ و →%%spellout-numbering-m→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(ألفي[ و →%%spellout-numbering-m→]),
 				},
 				'3000' => {
 					base_value => q(3000),
+					divisor => q(1000),
 					rule => q(←%spellout-numbering← آلاف[ و →%%spellout-numbering-m→]),
 				},
 				'11000' => {
@@ -664,42 +817,52 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(مليون[ و →%%spellout-numbering-m→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%%spellout-numbering-m← مليون[ و →%%spellout-numbering-m→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(مليار[ و →%%spellout-numbering-m→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%%spellout-numbering-m← مليار[ و →%%spellout-numbering-m→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(بليون[ و →%%spellout-numbering-m→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%%spellout-numbering-m← بليون[ و →%%spellout-numbering-m→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(بليار[ و →%%spellout-numbering-m→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%%spellout-numbering-m← بليار[ و →%%spellout-numbering-m→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -708,12 +871,15 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 			},
@@ -6495,8 +6661,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{ص},
 					'pm' => q{م},
+					'am' => q{ص},
 				},
 			},
 		},
@@ -6908,15 +7074,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'islamic' => {
-			M => q{L},
-			Md => q{d/‏M},
-			d => q{d},
-			yyyyM => q{M‏/y G},
-			yyyyMEd => q{E، d/‏M/‏y G},
-			yyyyMMM => q{MMM y G},
-			yyyyMd => q{d‏/M‏/y G},
-		},
 		'gregorian' => {
 			EHm => q{E HH:mm},
 			EHms => q{E HH:mm:ss},
@@ -6955,6 +7112,15 @@ has 'datetime_formats_available_formats' => (
 			yMd => q{d‏/M‏/y},
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
+		},
+		'islamic' => {
+			M => q{L},
+			Md => q{d/‏M},
+			d => q{d},
+			yyyyM => q{M‏/y G},
+			yyyyMEd => q{E، d/‏M/‏y G},
+			yyyyMMM => q{MMM y G},
+			yyyyMd => q{d‏/M‏/y G},
 		},
 		'generic' => {
 			Ed => q{E، d},

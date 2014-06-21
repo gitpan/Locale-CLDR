@@ -1,11 +1,11 @@
 package Locale::CLDR::Nnh::Any::Cm;
 # This file auto generated from Data\common\main\nnh_CM.xml
-#	on Tue 10 Jun 10:13:24 pm GMT
+#	on Sat 21 Jun 12:44:55 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';

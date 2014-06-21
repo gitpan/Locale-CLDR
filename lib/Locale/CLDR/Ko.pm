@@ -1,11 +1,11 @@
 package Locale::CLDR::Ko;
 # This file auto generated from Data\common\main\ko.xml
-#	on Tue 10 Jun  9:37:56 pm GMT
+#	on Sat 21 Jun 12:09:39 am GMT
 # XML file generated 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,89 +26,112 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'spellout-cardinal-financial' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(마이너스 →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(영),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-sinokorean=),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(일),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(이),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(삼),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(사),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(오),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(육),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(칠),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(팔),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(구),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(←←십[→→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←←백[→→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←←천[→→]),
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(←←만[→→]),
 				},
 				'100000000' => {
 					base_value => q(100000000),
+					divisor => q(100000000),
 					rule => q(←←억[→→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←←조[→→]),
 				},
 				'10000000000000000' => {
 					base_value => q(10000000000000000),
+					divisor => q(10000000000000000),
 					rule => q(←←경[→→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,###0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,###0=),
 				},
 			},
@@ -116,93 +139,116 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-native' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(마이너스 →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(영),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-sinokorean=),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(하나),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(둘),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(셋),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(넷),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(다섯),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(여섯),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(일곱),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(여덟),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(아홉),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(열[ →→]),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(스물[→→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(서른[→→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(마흔[→→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(쉰[→→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(예순[→→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(일흔[→→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(여든[→→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(아흔[→→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(=%spellout-cardinal-sinokorean=),
 				},
 				'max' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(=%spellout-cardinal-sinokorean=),
 				},
 			},
@@ -210,133 +256,166 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-native-attributive' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(마이너스 →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(영),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-sinokorean=),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(한),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(두),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(세),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(네),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(다섯),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(여섯),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(일곱),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(여덟),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(아홉),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(열[→→]),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(스무),
 				},
 				'21' => {
 					base_value => q(21),
+					divisor => q(10),
 					rule => q(스물[→→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(서른[→→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(마흔[→→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(쉰[→→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(예순[→→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(일흔[→→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(여든[→→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(아흔[→→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(백[→→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-sinokorean←백[→→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(천[→→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-sinokorean←천[→→]),
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(만[ →→]),
 				},
 				'20000' => {
 					base_value => q(20000),
+					divisor => q(10000),
 					rule => q(←%spellout-cardinal-sinokorean←만[ →→]),
 				},
 				'100000000' => {
 					base_value => q(100000000),
+					divisor => q(100000000),
 					rule => q(←%spellout-cardinal-sinokorean←억[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-sinokorean←조[ →→]),
 				},
 				'10000000000000000' => {
 					base_value => q(10000000000000000),
+					divisor => q(10000000000000000),
 					rule => q(←%spellout-cardinal-sinokorean←경[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,###0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,###0=),
 				},
 			},
@@ -344,101 +423,126 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-sinokorean' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(마이너스 →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(영),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←←점→→→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(일),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(이),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(삼),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(사),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(오),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(육),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(칠),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(팔),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(구),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(십[→→]),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(←←십[→→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(백[→→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(←←백[→→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(천[→→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←←천[→→]),
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(만[ →→]),
 				},
 				'20000' => {
 					base_value => q(20000),
+					divisor => q(10000),
 					rule => q(←←만[ →→]),
 				},
 				'100000000' => {
 					base_value => q(100000000),
+					divisor => q(100000000),
 					rule => q(←←억[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←←조[ →→]),
 				},
 				'10000000000000000' => {
 					base_value => q(10000000000000000),
+					divisor => q(10000000000000000),
 					rule => q(←←경[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,###0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,###0=),
 				},
 			},
@@ -447,20 +551,25 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(공),
 				},
 				'0.x' => {
+					divisor => q(1),
 					rule => q(←%spellout-cardinal-sinokorean←점→→→),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←←점→→→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-sinokorean=),
 				},
 				'max' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-sinokorean=),
 				},
 			},
@@ -469,12 +578,15 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 			},
@@ -482,16 +594,20 @@ has 'algorithmic_number_format_data' => (
 		'spellout-ordinal-native' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(마이너스 →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%%spellout-ordinal-native-priv=째),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 			},
@@ -499,16 +615,20 @@ has 'algorithmic_number_format_data' => (
 		'spellout-ordinal-native-count' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(마이너스 →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%%spellout-ordinal-native-count-smaller= 번째),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 			},
@@ -517,86 +637,107 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(영),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(한),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-native-attributive=),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(서른[→→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(마흔[→→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(쉰[→%spellout-cardinal-native-attributive→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(예순[→%spellout-cardinal-native-attributive→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(일흔[→%spellout-cardinal-native-attributive→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(여든[→%spellout-cardinal-native-attributive→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(아흔[→%spellout-cardinal-native-attributive→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(백[→→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-sinokorean←백[→→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(천[→→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-sinokorean←천[→→]),
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(만[ →→]),
 				},
 				'20000' => {
 					base_value => q(20000),
+					divisor => q(10000),
 					rule => q(←%spellout-cardinal-sinokorean←만[ →→]),
 				},
 				'100000000' => {
 					base_value => q(100000000),
+					divisor => q(100000000),
 					rule => q(←%spellout-cardinal-sinokorean←억[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-sinokorean←조[ →→]),
 				},
 				'10000000000000000' => {
 					base_value => q(10000000000000000),
+					divisor => q(10000000000000000),
 					rule => q(←%spellout-cardinal-sinokorean←경[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,###0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,###0=),
 				},
 			},
@@ -605,22 +746,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(영),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(첫),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-native-attributive=),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(=%%spellout-ordinal-native-count-larger=),
 				},
 				'max' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(=%%spellout-ordinal-native-count-larger=),
 				},
 			},
@@ -629,22 +775,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(영),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(첫),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(둘),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(=%%spellout-ordinal-native-smaller=),
 				},
 				'max' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(=%%spellout-ordinal-native-smaller=),
 				},
 			},
@@ -653,126 +804,157 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(한),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(두),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(셋),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(넷),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(다섯),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(여섯),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(일곱),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(여덟),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(아홉),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(열[→→]),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(스무),
 				},
 				'21' => {
 					base_value => q(21),
+					divisor => q(10),
 					rule => q(스물[→→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(서른[→→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(마흔[→→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(쉰[→→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(예순[→→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(일흔[→→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(여든[→→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(아흔[→→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(백[→%%spellout-ordinal-native-smaller-x02→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-sinokorean←백[→%%spellout-ordinal-native-smaller-x02→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(천[→%%spellout-ordinal-native-smaller-x02→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-sinokorean←천[→%%spellout-ordinal-native-smaller-x02→]),
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(만[ →%%spellout-ordinal-native-smaller-x02→]),
 				},
 				'20000' => {
 					base_value => q(20000),
+					divisor => q(10000),
 					rule => q(←%spellout-cardinal-sinokorean←만[ →%%spellout-ordinal-native-smaller-x02→]),
 				},
 				'100000000' => {
 					base_value => q(100000000),
+					divisor => q(100000000),
 					rule => q(←%spellout-cardinal-sinokorean←억[ →%%spellout-ordinal-native-smaller-x02→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-sinokorean←조[ →%%spellout-ordinal-native-smaller-x02→]),
 				},
 				'10000000000000000' => {
 					base_value => q(10000000000000000),
+					divisor => q(10000000000000000),
 					rule => q(←%spellout-cardinal-sinokorean←경[ →%%spellout-ordinal-native-smaller-x02→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,###0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,###0=),
 				},
 			},
@@ -781,18 +963,22 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%%spellout-ordinal-native-smaller=),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(둘),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(=%%spellout-ordinal-native-smaller=),
 				},
 				'max' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(=%%spellout-ordinal-native-smaller=),
 				},
 			},
@@ -801,18 +987,22 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-ordinal-native=),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(=%spellout-cardinal-sinokorean=째),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(=%%spellout-ordinal-sinokorean-count-larger=째),
 				},
 				'max' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(=%%spellout-ordinal-sinokorean-count-larger=째),
 				},
 			},
@@ -820,21 +1010,26 @@ has 'algorithmic_number_format_data' => (
 		'spellout-ordinal-sinokorean-count' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(마이너스 →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%%spellout-ordinal-native-count-smaller= 번째),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(=%%spellout-ordinal-sinokorean-count-smaller= 번째),
 				},
 				'max' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(=%%spellout-ordinal-sinokorean-count-smaller= 번째),
 				},
 			},
@@ -843,106 +1038,132 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(일),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(이),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(삼),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(사),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(오),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(육),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(칠),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(팔),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(구),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(십[→→]),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(←←십[→→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(오십[→→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(육십[→→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(칠십[→→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(팔십[→→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(구십[→→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(백[→→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(←←백[→→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(천[→→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←←천[→→]),
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(만[ →→]),
 				},
 				'20000' => {
 					base_value => q(20000),
+					divisor => q(10000),
 					rule => q(←←만[ →→]),
 				},
 				'100000000' => {
 					base_value => q(100000000),
+					divisor => q(100000000),
 					rule => q(←←억[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←←조[ →→]),
 				},
 				'10000000000000000' => {
 					base_value => q(10000000000000000),
+					divisor => q(10000000000000000),
 					rule => q(←←경[ →→]),
 				},
 				'max' => {
 					base_value => q(10000000000000000),
+					divisor => q(10000000000000000),
 					rule => q(←←경[ →→]),
 				},
 			},
@@ -951,70 +1172,87 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(영),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(한),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(두),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(세),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(네),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(다섯),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(여섯),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(일곱),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(여덟),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(아홉),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(열[→→]),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(스무),
 				},
 				'21' => {
 					base_value => q(21),
+					divisor => q(10),
 					rule => q(스물[→→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(서른[→→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(마흔[→→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(=%%spellout-ordinal-sinokorean-count-larger=),
 				},
 				'max' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(=%%spellout-ordinal-sinokorean-count-larger=),
 				},
 			},
@@ -5084,8 +5322,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{오전},
 					'pm' => q{오후},
+					'am' => q{오전},
 				},
 			},
 		},
@@ -5504,44 +5742,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			EEEEd => q{d일 EEEE},
-			Ed => q{d일 (E)},
-			Gy => q{G y년},
-			GyMMM => q{G y년 MMM},
-			GyMMMEEEEd => q{G y년 MMM d일 EEEE},
-			GyMMMEd => q{G y년 MMM d일 (E)},
-			GyMMMd => q{G y년 MMM d일},
-			H => q{H시},
-			HHmmss => q{HH:mm:ss},
-			Hm => q{HH:mm},
-			Hms => q{H시 m분 s초},
-			M => q{M월},
-			MEEEEd => q{M. d. EEEE},
-			MEd => q{M. d. (E)},
-			MMM => q{LLL},
-			MMMEEEEd => q{MMM d일 EEEE},
-			MMMEd => q{MMM d일 (E)},
-			MMMd => q{MMM d일},
-			Md => q{M. d.},
-			d => q{d일},
-			h => q{a h시},
-			hm => q{a h:mm},
-			hms => q{a h:mm:ss},
-			ms => q{mm:ss},
-			y => q{G y년},
-			yyyy => q{G y년},
-			yyyyM => q{G y. M.},
-			yyyyMEEEEd => q{G y. M. d. EEEE},
-			yyyyMEd => q{G y. M. d. (E)},
-			yyyyMMM => q{G y년 MMM},
-			yyyyMMMEEEEd => q{G y년 MMM d일 EEEE},
-			yyyyMMMEd => q{G y년 MMM d일 (E)},
-			yyyyMMMd => q{G y년 MMM d일},
-			yyyyMd => q{G y. M. d.},
-			yyyyQQQ => q{G y년 QQQ},
-			yyyyQQQQ => q{G y년 QQQQ},
-		},
 		'gregorian' => {
 			EEEEd => q{d일 EEEE},
 			EHm => q{(E) HH:mm},
@@ -5621,6 +5821,44 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{U년 QQQ},
 			yyyyQQQQ => q{U년 QQQQ},
 		},
+		'generic' => {
+			EEEEd => q{d일 EEEE},
+			Ed => q{d일 (E)},
+			Gy => q{G y년},
+			GyMMM => q{G y년 MMM},
+			GyMMMEEEEd => q{G y년 MMM d일 EEEE},
+			GyMMMEd => q{G y년 MMM d일 (E)},
+			GyMMMd => q{G y년 MMM d일},
+			H => q{H시},
+			HHmmss => q{HH:mm:ss},
+			Hm => q{HH:mm},
+			Hms => q{H시 m분 s초},
+			M => q{M월},
+			MEEEEd => q{M. d. EEEE},
+			MEd => q{M. d. (E)},
+			MMM => q{LLL},
+			MMMEEEEd => q{MMM d일 EEEE},
+			MMMEd => q{MMM d일 (E)},
+			MMMd => q{MMM d일},
+			Md => q{M. d.},
+			d => q{d일},
+			h => q{a h시},
+			hm => q{a h:mm},
+			hms => q{a h:mm:ss},
+			ms => q{mm:ss},
+			y => q{G y년},
+			yyyy => q{G y년},
+			yyyyM => q{G y. M.},
+			yyyyMEEEEd => q{G y. M. d. EEEE},
+			yyyyMEd => q{G y. M. d. (E)},
+			yyyyMMM => q{G y년 MMM},
+			yyyyMMMEEEEd => q{G y년 MMM d일 EEEE},
+			yyyyMMMEd => q{G y년 MMM d일 (E)},
+			yyyyMMMd => q{G y년 MMM d일},
+			yyyyMd => q{G y. M. d.},
+			yyyyQQQ => q{G y년 QQQ},
+			yyyyQQQQ => q{G y년 QQQQ},
+		},
 	} },
 );
 
@@ -5640,6 +5878,109 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'gregorian' => {
+			H => {
+				H => q{HH ~ HH시},
+			},
+			Hm => {
+				H => q{HH:mm ~ HH:mm},
+				m => q{HH:mm ~ HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm ~ HH:mm v},
+				m => q{HH:mm ~ HH:mm v},
+			},
+			Hv => {
+				H => q{HH ~ HH시 v},
+			},
+			M => {
+				M => q{M월 ~ M월},
+			},
+			MEd => {
+				M => q{M. d (E) ~ M. d (E)},
+				d => q{M. d (E) ~ M. d (E)},
+			},
+			MMM => {
+				M => q{MMM ~ MMM},
+			},
+			MMMEd => {
+				M => q{M월 d일 (E) ~ M월 d일 (E)},
+				d => q{M월 d일 (E) ~ d일 (E)},
+			},
+			MMMM => {
+				M => q{LLLL-LLLL},
+			},
+			MMMd => {
+				M => q{M월 d일 ~ M월 d일},
+				d => q{M월 d일 ~ d일},
+			},
+			Md => {
+				M => q{M. d ~ M. d},
+				d => q{M. d ~ M. d},
+			},
+			d => {
+				d => q{d일 ~ d일},
+			},
+			fallback => '{0} ~ {1}',
+			h => {
+				a => q{a h시 ~ a h시},
+				h => q{a h시 ~ h시},
+			},
+			hm => {
+				a => q{a h:mm ~ a h:mm},
+				h => q{a h:mm~h:mm},
+				m => q{a h:mm~h:mm},
+			},
+			hmv => {
+				a => q{a h:mm ~ a h:mm v},
+				h => q{a h:mm~h:mm v},
+				m => q{a h:mm~h:mm v},
+			},
+			hv => {
+				a => q{a h시 ~ a h시(v)},
+				h => q{a h시 ~ h시(v)},
+			},
+			y => {
+				y => q{y년 ~ y년},
+			},
+			yM => {
+				M => q{y. M ~ y. M},
+				y => q{y. M ~ y. M},
+			},
+			yMEd => {
+				M => q{y. M. d. (E) ~ y. M. d. (E)},
+				d => q{y. M. d. (E) ~ y. M. d. (E)},
+				y => q{y. M. d. (E) ~ y. M. d. (E)},
+			},
+			yMMM => {
+				M => q{y년 M월~M월},
+				y => q{y년 M월 ~ y년 M월},
+			},
+			yMMMEEEEd => {
+				M => q{y년 M월 d일 EEEE ~ M월 d일 EEEE},
+				d => q{y년 M월 d일 EEEE ~ d일 EEEE},
+				y => q{y년 M월 d일 EEEE ~ y년 M월 d일 EEEE},
+			},
+			yMMMEd => {
+				M => q{y년 M월 d일 (E) ~ M월 d일 (E)},
+				d => q{y년 M월 d일 (E) ~ d일 (E)},
+				y => q{y년 M월 d일 (E) ~ y년 M월 d일 (E)},
+			},
+			yMMMM => {
+				M => q{y년 MM월 ~ MM월},
+				y => q{y년 MM월 ~ y년 MM월},
+			},
+			yMMMd => {
+				M => q{y년 M월 d일 ~ M월 d일},
+				d => q{y년 M월 d일~d일},
+				y => q{y년 M월 d일 ~ y년 M월 d일},
+			},
+			yMd => {
+				M => q{y. M. d. ~ y. M. d.},
+				d => q{y. M. d. ~ y. M. d.},
+				y => q{y. M. d. ~ y. M. d.},
+			},
+		},
 		'generic' => {
 			H => {
 				H => q{HH ~ HH시},
@@ -5745,109 +6086,6 @@ has 'datetime_formats_interval' => (
 				M => q{G y. M. d. ~ y. M. d.},
 				d => q{G y. M. d. ~ y. M. d.},
 				y => q{G y. M. d. ~ y. M. d.},
-			},
-		},
-		'gregorian' => {
-			H => {
-				H => q{HH ~ HH시},
-			},
-			Hm => {
-				H => q{HH:mm ~ HH:mm},
-				m => q{HH:mm ~ HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm ~ HH:mm v},
-				m => q{HH:mm ~ HH:mm v},
-			},
-			Hv => {
-				H => q{HH ~ HH시 v},
-			},
-			M => {
-				M => q{M월 ~ M월},
-			},
-			MEd => {
-				M => q{M. d (E) ~ M. d (E)},
-				d => q{M. d (E) ~ M. d (E)},
-			},
-			MMM => {
-				M => q{MMM ~ MMM},
-			},
-			MMMEd => {
-				M => q{M월 d일 (E) ~ M월 d일 (E)},
-				d => q{M월 d일 (E) ~ d일 (E)},
-			},
-			MMMM => {
-				M => q{LLLL-LLLL},
-			},
-			MMMd => {
-				M => q{M월 d일 ~ M월 d일},
-				d => q{M월 d일 ~ d일},
-			},
-			Md => {
-				M => q{M. d ~ M. d},
-				d => q{M. d ~ M. d},
-			},
-			d => {
-				d => q{d일 ~ d일},
-			},
-			fallback => '{0} ~ {1}',
-			h => {
-				a => q{a h시 ~ a h시},
-				h => q{a h시 ~ h시},
-			},
-			hm => {
-				a => q{a h:mm ~ a h:mm},
-				h => q{a h:mm~h:mm},
-				m => q{a h:mm~h:mm},
-			},
-			hmv => {
-				a => q{a h:mm ~ a h:mm v},
-				h => q{a h:mm~h:mm v},
-				m => q{a h:mm~h:mm v},
-			},
-			hv => {
-				a => q{a h시 ~ a h시(v)},
-				h => q{a h시 ~ h시(v)},
-			},
-			y => {
-				y => q{y년 ~ y년},
-			},
-			yM => {
-				M => q{y. M ~ y. M},
-				y => q{y. M ~ y. M},
-			},
-			yMEd => {
-				M => q{y. M. d. (E) ~ y. M. d. (E)},
-				d => q{y. M. d. (E) ~ y. M. d. (E)},
-				y => q{y. M. d. (E) ~ y. M. d. (E)},
-			},
-			yMMM => {
-				M => q{y년 M월~M월},
-				y => q{y년 M월 ~ y년 M월},
-			},
-			yMMMEEEEd => {
-				M => q{y년 M월 d일 EEEE ~ M월 d일 EEEE},
-				d => q{y년 M월 d일 EEEE ~ d일 EEEE},
-				y => q{y년 M월 d일 EEEE ~ y년 M월 d일 EEEE},
-			},
-			yMMMEd => {
-				M => q{y년 M월 d일 (E) ~ M월 d일 (E)},
-				d => q{y년 M월 d일 (E) ~ d일 (E)},
-				y => q{y년 M월 d일 (E) ~ y년 M월 d일 (E)},
-			},
-			yMMMM => {
-				M => q{y년 MM월 ~ MM월},
-				y => q{y년 MM월 ~ y년 MM월},
-			},
-			yMMMd => {
-				M => q{y년 M월 d일 ~ M월 d일},
-				d => q{y년 M월 d일~d일},
-				y => q{y년 M월 d일 ~ y년 M월 d일},
-			},
-			yMd => {
-				M => q{y. M. d. ~ y. M. d.},
-				d => q{y. M. d. ~ y. M. d.},
-				y => q{y. M. d. ~ y. M. d.},
 			},
 		},
 	} },

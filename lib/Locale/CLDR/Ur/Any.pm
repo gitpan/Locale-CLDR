@@ -1,11 +1,11 @@
 package Locale::CLDR::Ur::Any;
 
 # This file auto generated
-#	on Tue 10 Jun 10:59:13 pm GMT
+#	on Sat 21 Jun  1:30:59 am GMT
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';

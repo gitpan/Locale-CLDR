@@ -1,11 +1,11 @@
 package Locale::CLDR::Rwk;
 # This file auto generated from Data\common\main\rwk.xml
-#	on Tue 10 Jun 10:27:45 pm GMT
+#	on Sat 21 Jun 12:59:39 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -826,8 +826,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{kyiukonyi},
 					'am' => q{utuko},
+					'pm' => q{kyiukonyi},
 				},
 			},
 		},

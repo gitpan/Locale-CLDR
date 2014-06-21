@@ -1,11 +1,11 @@
 package Locale::CLDR::Hi;
 # This file auto generated from Data\common\main\hi.xml
-#	on Tue 10 Jun  9:13:24 pm GMT
+#	on Fri 20 Jun 11:44:59 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,18 +26,23 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'digits-ordinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(−→→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=#,##,##0=.),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=#,##,##0=.),
 				},
 			},
@@ -45,441 +50,551 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(ऋण →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(शून्य),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← दशमलव →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(एक),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(दो),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(तीन),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(चार),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(पाँच),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(छह),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(सात),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(आठ),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(नौ),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(दस),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(ग्यारह),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(बारह),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(तेरह),
 				},
 				'14' => {
 					base_value => q(14),
+					divisor => q(10),
 					rule => q(चौदह),
 				},
 				'15' => {
 					base_value => q(15),
+					divisor => q(10),
 					rule => q(पन्द्रह),
 				},
 				'16' => {
 					base_value => q(16),
+					divisor => q(10),
 					rule => q(सोलह),
 				},
 				'17' => {
 					base_value => q(17),
+					divisor => q(10),
 					rule => q(सत्रह),
 				},
 				'18' => {
 					base_value => q(18),
+					divisor => q(10),
 					rule => q(अठारह),
 				},
 				'19' => {
 					base_value => q(19),
+					divisor => q(10),
 					rule => q(उन्नीस),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(बीस),
 				},
 				'21' => {
 					base_value => q(21),
+					divisor => q(10),
 					rule => q(इक्कीस),
 				},
 				'22' => {
 					base_value => q(22),
+					divisor => q(10),
 					rule => q(बाईस),
 				},
 				'23' => {
 					base_value => q(23),
+					divisor => q(10),
 					rule => q(तेईस),
 				},
 				'24' => {
 					base_value => q(24),
+					divisor => q(10),
 					rule => q(चौबीस),
 				},
 				'25' => {
 					base_value => q(25),
+					divisor => q(10),
 					rule => q(पच्चीस),
 				},
 				'26' => {
 					base_value => q(26),
+					divisor => q(10),
 					rule => q(छब्बीस),
 				},
 				'27' => {
 					base_value => q(27),
+					divisor => q(10),
 					rule => q(सत्ताईस),
 				},
 				'28' => {
 					base_value => q(28),
+					divisor => q(10),
 					rule => q(अट्ठाईस),
 				},
 				'29' => {
 					base_value => q(29),
+					divisor => q(10),
 					rule => q(उनतीस),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(तीस),
 				},
 				'31' => {
 					base_value => q(31),
+					divisor => q(10),
 					rule => q(इकतीस),
 				},
 				'32' => {
 					base_value => q(32),
+					divisor => q(10),
 					rule => q(बत्तीस),
 				},
 				'33' => {
 					base_value => q(33),
+					divisor => q(10),
 					rule => q(तैंतीस),
 				},
 				'34' => {
 					base_value => q(34),
+					divisor => q(10),
 					rule => q(चौंतीस),
 				},
 				'35' => {
 					base_value => q(35),
+					divisor => q(10),
 					rule => q(पैंतीस),
 				},
 				'36' => {
 					base_value => q(36),
+					divisor => q(10),
 					rule => q(छत्तीस),
 				},
 				'37' => {
 					base_value => q(37),
+					divisor => q(10),
 					rule => q(सैंतीस),
 				},
 				'38' => {
 					base_value => q(38),
+					divisor => q(10),
 					rule => q(अड़तीस),
 				},
 				'39' => {
 					base_value => q(39),
+					divisor => q(10),
 					rule => q(उनतालीस),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(चालीस),
 				},
 				'41' => {
 					base_value => q(41),
+					divisor => q(10),
 					rule => q(इकतालीस),
 				},
 				'42' => {
 					base_value => q(42),
+					divisor => q(10),
 					rule => q(बयालीस),
 				},
 				'43' => {
 					base_value => q(43),
+					divisor => q(10),
 					rule => q(तैंतालीस),
 				},
 				'44' => {
 					base_value => q(44),
+					divisor => q(10),
 					rule => q(चौवालीस),
 				},
 				'45' => {
 					base_value => q(45),
+					divisor => q(10),
 					rule => q(पैंतालीस),
 				},
 				'46' => {
 					base_value => q(46),
+					divisor => q(10),
 					rule => q(छियालीस),
 				},
 				'47' => {
 					base_value => q(47),
+					divisor => q(10),
 					rule => q(सैंतालीस),
 				},
 				'48' => {
 					base_value => q(48),
+					divisor => q(10),
 					rule => q(अड़तालीस),
 				},
 				'49' => {
 					base_value => q(49),
+					divisor => q(10),
 					rule => q(उनचास),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(पचास),
 				},
 				'51' => {
 					base_value => q(51),
+					divisor => q(10),
 					rule => q(इक्यावन),
 				},
 				'52' => {
 					base_value => q(52),
+					divisor => q(10),
 					rule => q(बावन),
 				},
 				'53' => {
 					base_value => q(53),
+					divisor => q(10),
 					rule => q(तिरेपन),
 				},
 				'54' => {
 					base_value => q(54),
+					divisor => q(10),
 					rule => q(चौवन),
 				},
 				'55' => {
 					base_value => q(55),
+					divisor => q(10),
 					rule => q(पचपन),
 				},
 				'56' => {
 					base_value => q(56),
+					divisor => q(10),
 					rule => q(छप्पन),
 				},
 				'57' => {
 					base_value => q(57),
+					divisor => q(10),
 					rule => q(सत्तावन),
 				},
 				'58' => {
 					base_value => q(58),
+					divisor => q(10),
 					rule => q(अट्ठावन),
 				},
 				'59' => {
 					base_value => q(59),
+					divisor => q(10),
 					rule => q(उनसठ),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(साठ),
 				},
 				'61' => {
 					base_value => q(61),
+					divisor => q(10),
 					rule => q(इकसठ),
 				},
 				'62' => {
 					base_value => q(62),
+					divisor => q(10),
 					rule => q(बासठ),
 				},
 				'63' => {
 					base_value => q(63),
+					divisor => q(10),
 					rule => q(तिरेसठ),
 				},
 				'64' => {
 					base_value => q(64),
+					divisor => q(10),
 					rule => q(चौंसठ),
 				},
 				'65' => {
 					base_value => q(65),
+					divisor => q(10),
 					rule => q(पैंसठ),
 				},
 				'66' => {
 					base_value => q(66),
+					divisor => q(10),
 					rule => q(छियासठ),
 				},
 				'67' => {
 					base_value => q(67),
+					divisor => q(10),
 					rule => q(सड़सठ),
 				},
 				'68' => {
 					base_value => q(68),
+					divisor => q(10),
 					rule => q(अड़सठ),
 				},
 				'69' => {
 					base_value => q(69),
+					divisor => q(10),
 					rule => q(उनहत्तर),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(सत्तर),
 				},
 				'71' => {
 					base_value => q(71),
+					divisor => q(10),
 					rule => q(इकहत्तर),
 				},
 				'72' => {
 					base_value => q(72),
+					divisor => q(10),
 					rule => q(बहत्तर),
 				},
 				'73' => {
 					base_value => q(73),
+					divisor => q(10),
 					rule => q(तिहत्तर),
 				},
 				'74' => {
 					base_value => q(74),
+					divisor => q(10),
 					rule => q(चौहत्तर),
 				},
 				'75' => {
 					base_value => q(75),
+					divisor => q(10),
 					rule => q(पचहत्तर),
 				},
 				'76' => {
 					base_value => q(76),
+					divisor => q(10),
 					rule => q(छिहत्तर),
 				},
 				'77' => {
 					base_value => q(77),
+					divisor => q(10),
 					rule => q(सतहत्तर),
 				},
 				'78' => {
 					base_value => q(78),
+					divisor => q(10),
 					rule => q(अठहत्तर),
 				},
 				'79' => {
 					base_value => q(79),
+					divisor => q(10),
 					rule => q(उनासी),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(अस्सी),
 				},
 				'81' => {
 					base_value => q(81),
+					divisor => q(10),
 					rule => q(इक्यासी),
 				},
 				'82' => {
 					base_value => q(82),
+					divisor => q(10),
 					rule => q(बयासी),
 				},
 				'83' => {
 					base_value => q(83),
+					divisor => q(10),
 					rule => q(तिरासी),
 				},
 				'84' => {
 					base_value => q(84),
+					divisor => q(10),
 					rule => q(चौरासी),
 				},
 				'85' => {
 					base_value => q(85),
+					divisor => q(10),
 					rule => q(पचासी),
 				},
 				'86' => {
 					base_value => q(86),
+					divisor => q(10),
 					rule => q(छियासी),
 				},
 				'87' => {
 					base_value => q(87),
+					divisor => q(10),
 					rule => q(सत्तासी),
 				},
 				'88' => {
 					base_value => q(88),
+					divisor => q(10),
 					rule => q(अट्ठासी),
 				},
 				'89' => {
 					base_value => q(89),
+					divisor => q(10),
 					rule => q(नवासी),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(नब्बे),
 				},
 				'91' => {
 					base_value => q(91),
+					divisor => q(10),
 					rule => q(इक्यानबे),
 				},
 				'92' => {
 					base_value => q(92),
+					divisor => q(10),
 					rule => q(बानबे),
 				},
 				'93' => {
 					base_value => q(93),
+					divisor => q(10),
 					rule => q(तिरानबे),
 				},
 				'94' => {
 					base_value => q(94),
+					divisor => q(10),
 					rule => q(चौरानबे),
 				},
 				'95' => {
 					base_value => q(95),
+					divisor => q(10),
 					rule => q(पंचानबे),
 				},
 				'96' => {
 					base_value => q(96),
+					divisor => q(10),
 					rule => q(छियानबे),
 				},
 				'97' => {
 					base_value => q(97),
+					divisor => q(10),
 					rule => q(सत्तानबे),
 				},
 				'98' => {
 					base_value => q(98),
+					divisor => q(10),
 					rule => q(अट्ठानबे),
 				},
 				'99' => {
 					base_value => q(99),
+					divisor => q(10),
 					rule => q(निन्यानबे),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←← सौ[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←← हज़ार[ →→]),
 				},
 				'100000' => {
 					base_value => q(100000),
+					divisor => q(100000),
 					rule => q(←← लाख[ →→]),
 				},
 				'10000000' => {
 					base_value => q(10000000),
+					divisor => q(10000000),
 					rule => q(←← करोड़[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←← अरब[ →→]),
 				},
 				'100000000000' => {
 					base_value => q(100000000000),
+					divisor => q(100000000000),
 					rule => q(←← खरब[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##,##0=),
 				},
 			},
@@ -488,10 +603,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 			},
@@ -500,12 +617,15 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 			},
@@ -513,45 +633,56 @@ has 'algorithmic_number_format_data' => (
 		'spellout-ordinal-feminine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(ऋण →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(शून्यवी),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,##0.#=),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(पहली),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(दूसरी),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(तीसरी),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(चौथी),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(पाँचवी),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(छठी),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=वी),
 				},
 				'max' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=वी),
 				},
 			},
@@ -559,45 +690,56 @@ has 'algorithmic_number_format_data' => (
 		'spellout-ordinal-masculine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(ऋण →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(शून्यवाँ),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,##0.#=),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(पहला),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(दूसरा),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(तीसरा),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(चौथा),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(पाँचवाँ),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(छठा),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=वाँ),
 				},
 				'max' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=वाँ),
 				},
 			},
@@ -4383,16 +4525,16 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'abbreviated' => {
-					'am' => q{पूर्व},
 					'pm' => q{अपर},
-				},
-				'narrow' => {
-					'pm' => q{अ},
-					'am' => q{पू},
+					'am' => q{पूर्व},
 				},
 				'wide' => {
 					'pm' => q{अपराह्न},
 					'am' => q{पूर्वाह्न},
+				},
+				'narrow' => {
+					'am' => q{पू},
+					'pm' => q{अ},
 				},
 			},
 		},

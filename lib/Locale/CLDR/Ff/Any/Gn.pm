@@ -1,11 +1,11 @@
 package Locale::CLDR::Ff::Any::Gn;
 # This file auto generated from Data\common\main\ff_GN.xml
-#	on Tue 10 Jun  8:59:08 pm GMT
+#	on Fri 20 Jun 11:30:27 pm GMT
 # XML file generated 2014-01-06 13:01:35 -0600 (Mon, 06 Jan 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';

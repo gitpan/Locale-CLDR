@@ -1,11 +1,11 @@
 package Locale::CLDR::Ia;
 # This file auto generated from Data\common\main\ia.xml
-#	on Tue 10 Jun  9:21:09 pm GMT
+#	on Fri 20 Jun 11:52:51 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';

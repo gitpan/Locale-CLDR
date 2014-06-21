@@ -1,11 +1,11 @@
 package Locale::CLDR::Nn;
 # This file auto generated from Data\common\main\nn.xml
-#	on Tue 10 Jun 10:12:20 pm GMT
+#	on Sat 21 Jun 12:43:50 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,15 +26,19 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'spellout-cardinal-feminine' => {
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-reale=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-reale=),
 				},
 			},
@@ -43,10 +47,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-reale=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-reale=),
 				},
 			},
@@ -54,25 +60,31 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-neuter' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(null),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← komma →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(eitt),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-reale=),
 				},
 				'max' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-reale=),
 				},
 			},
@@ -80,169 +92,211 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-reale' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(null),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← komma →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(éin),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(to),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(tre),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(fire),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(fem),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(seks),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(sju),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(åtte),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(ni),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(ti),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(elleve),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(tolv),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(tretten),
 				},
 				'14' => {
 					base_value => q(14),
+					divisor => q(10),
 					rule => q(fjorten),
 				},
 				'15' => {
 					base_value => q(15),
+					divisor => q(10),
 					rule => q(femten),
 				},
 				'16' => {
 					base_value => q(16),
+					divisor => q(10),
 					rule => q(seksten),
 				},
 				'17' => {
 					base_value => q(17),
+					divisor => q(10),
 					rule => q(sytten),
 				},
 				'18' => {
 					base_value => q(18),
+					divisor => q(10),
 					rule => q(atten),
 				},
 				'19' => {
 					base_value => q(19),
+					divisor => q(10),
 					rule => q(nitten),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(tjue[­→→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(tretti[­→→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(førti[­→→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(femti[­→→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(seksti[­→→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(søtti[­→→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(åtti[­→→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(nitti[­→→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-neuter← hundre[ og →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-neuter← tusen[ og →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(éin miljon[ →→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←← miljoner[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(éin miljard[ →→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←← miljarder[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(éin biljon[ →→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←← biljoner[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(éin biljard[ →→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←← biljarder[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -251,10 +305,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-reale=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-reale=),
 				},
 			},
@@ -262,13 +318,16 @@ has 'algorithmic_number_format_data' => (
 		'spellout-numbering-year' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'1100' => {
@@ -278,10 +337,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(=%spellout-numbering=),
 				},
 				'max' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(=%spellout-numbering=),
 				},
 			},
@@ -4266,15 +4327,15 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'abbreviated' => {
-					'pm' => q{e.m.},
-					'am' => q{f.m.},
-				},
 				'wide' => {
 					'am' => q{formiddag},
 					'pm' => q{ettermiddag},
 				},
 				'narrow' => {
+					'pm' => q{e.m.},
+					'am' => q{f.m.},
+				},
+				'abbreviated' => {
 					'pm' => q{e.m.},
 					'am' => q{f.m.},
 				},

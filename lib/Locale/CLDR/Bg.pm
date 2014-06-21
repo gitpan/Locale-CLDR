@@ -1,11 +1,11 @@
 package Locale::CLDR::Bg;
 # This file auto generated from Data\common\main\bg.xml
-#	on Tue 10 Jun  8:21:18 pm GMT
+#	on Fri 20 Jun 10:52:33 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,145 +26,182 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'spellout-cardinal-feminine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(минус →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(нула),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← кома →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(едно),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(две),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-masculine=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(двадесет[ и →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(тридесет[ и →→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(четиридесет[ и →→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(петдесет[ и →→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(шестдесет[ и →→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(седемдесет[ и →→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(осемдесет[ и →→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(деветдесет[ и →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(сто[ →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(двеста[ →→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(триста[ →→]),
 				},
 				'400' => {
 					base_value => q(400),
+					divisor => q(100),
 					rule => q(четиристотин[ →→]),
 				},
 				'500' => {
 					base_value => q(500),
+					divisor => q(100),
 					rule => q(петстотин[ →→]),
 				},
 				'600' => {
 					base_value => q(600),
+					divisor => q(100),
 					rule => q(шестстотин[ →→]),
 				},
 				'700' => {
 					base_value => q(700),
+					divisor => q(100),
 					rule => q(седемстотин[ →→]),
 				},
 				'800' => {
 					base_value => q(800),
+					divisor => q(100),
 					rule => q(осемстотин[ →→]),
 				},
 				'900' => {
 					base_value => q(900),
+					divisor => q(100),
 					rule => q(деветстотин[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(хиляда[ →→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-feminine← хиляди[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← милион[ →→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← милиона[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← милиард[ →→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← милиарда[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← трилион[ →→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← трилиона[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← квадрилион[ →→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← квадрилиона[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -172,205 +209,256 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-masculine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(минус →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(нула),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← кома →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(един),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(два),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(три),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(четири),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(пет),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(шест),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(седем),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(осем),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(девет),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(десет),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(единадесет),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(дванадесет),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(тринадесет),
 				},
 				'14' => {
 					base_value => q(14),
+					divisor => q(10),
 					rule => q(четиринадесет),
 				},
 				'15' => {
 					base_value => q(15),
+					divisor => q(10),
 					rule => q(петнадесет),
 				},
 				'16' => {
 					base_value => q(16),
+					divisor => q(10),
 					rule => q(шестнадесет),
 				},
 				'17' => {
 					base_value => q(17),
+					divisor => q(10),
 					rule => q(седемнадесет),
 				},
 				'18' => {
 					base_value => q(18),
+					divisor => q(10),
 					rule => q(осемнадесет),
 				},
 				'19' => {
 					base_value => q(19),
+					divisor => q(10),
 					rule => q(деветнадесет),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(двадесет[ и →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(тридесет[ и →→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(четиридесет[ и →→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(петдесет[ и →→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(шестдесет[ и →→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(седемдесет[ и →→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(осемдесет[ и →→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(деветдесет[ и →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(сто[ →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(двеста[ →→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(триста[ →→]),
 				},
 				'400' => {
 					base_value => q(400),
+					divisor => q(100),
 					rule => q(четиристотин[ →→]),
 				},
 				'500' => {
 					base_value => q(500),
+					divisor => q(100),
 					rule => q(петстотин[ →→]),
 				},
 				'600' => {
 					base_value => q(600),
+					divisor => q(100),
 					rule => q(шестстотин[ →→]),
 				},
 				'700' => {
 					base_value => q(700),
+					divisor => q(100),
 					rule => q(седемстотин[ →→]),
 				},
 				'800' => {
 					base_value => q(800),
+					divisor => q(100),
 					rule => q(осемстотин[ →→]),
 				},
 				'900' => {
 					base_value => q(900),
+					divisor => q(100),
 					rule => q(деветстотин[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(хиляда[ →→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-feminine← хиляди[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← милион[ →→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← милиона[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← милиард[ →→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← милиарда[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← трилион[ →→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← трилиона[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← квадрилион[ →→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← квадрилиона[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -379,10 +467,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-feminine=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-feminine=),
 				},
 			},
@@ -391,12 +481,15 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 			},
@@ -4627,114 +4720,114 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'indian') {
-				return 'morning' if $time >= 600
-					&& $time < 1000;
-				return 'midDay' if $time > 1200
-					&& $time < 1500;
-				return 'earlyMorning' if $time >= 500
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 500;
-				return 'night' if $time >= 2200
-					&& $time < 2400;
+			if ($_ eq 'generic') {
+				return 'afternoon' if $time >= 1500
+					&& $time < 1800;
 				return 'lateEvening' if $time >= 2000
 					&& $time < 2200;
+				return 'midDay' if $time > 1200
+					&& $time < 1500;
 				return 'lateMorning' if $time >= 1000
 					&& $time < 1200;
 				return 'evening' if $time >= 1800
 					&& $time < 2000;
-				return 'afternoon' if $time >= 1500
-					&& $time < 1800;
+				return 'night' if $time >= 2200
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1000;
+				return 'earlyMorning' if $time >= 500
+					&& $time < 600;
 				return 'noon' if $time == 1200;
+				return 'weeHours' if $time >= 0000
+					&& $time < 500;
 			last SWITCH;
 			}
 			if ($_ eq 'hebrew') {
-				return 'morning' if $time >= 600
-					&& $time < 1000;
-				return 'midDay' if $time > 1200
-					&& $time < 1500;
-				return 'earlyMorning' if $time >= 500
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 500;
-				return 'night' if $time >= 2200
-					&& $time < 2400;
+				return 'afternoon' if $time >= 1500
+					&& $time < 1800;
 				return 'lateEvening' if $time >= 2000
 					&& $time < 2200;
+				return 'midDay' if $time > 1200
+					&& $time < 1500;
 				return 'lateMorning' if $time >= 1000
 					&& $time < 1200;
 				return 'evening' if $time >= 1800
 					&& $time < 2000;
-				return 'afternoon' if $time >= 1500
-					&& $time < 1800;
+				return 'night' if $time >= 2200
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1000;
+				return 'earlyMorning' if $time >= 500
+					&& $time < 600;
 				return 'noon' if $time == 1200;
+				return 'weeHours' if $time >= 0000
+					&& $time < 500;
 			last SWITCH;
 			}
-			if ($_ eq 'gregorian') {
-				return 'morning' if $time >= 600
-					&& $time < 1000;
-				return 'midDay' if $time > 1200
-					&& $time < 1500;
-				return 'earlyMorning' if $time >= 500
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 500;
-				return 'night' if $time >= 2200
-					&& $time < 2400;
+			if ($_ eq 'indian') {
+				return 'afternoon' if $time >= 1500
+					&& $time < 1800;
 				return 'lateEvening' if $time >= 2000
 					&& $time < 2200;
+				return 'midDay' if $time > 1200
+					&& $time < 1500;
 				return 'lateMorning' if $time >= 1000
 					&& $time < 1200;
 				return 'evening' if $time >= 1800
 					&& $time < 2000;
-				return 'afternoon' if $time >= 1500
-					&& $time < 1800;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'generic') {
-				return 'morning' if $time >= 600
-					&& $time < 1000;
-				return 'midDay' if $time > 1200
-					&& $time < 1500;
-				return 'earlyMorning' if $time >= 500
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 500;
 				return 'night' if $time >= 2200
 					&& $time < 2400;
-				return 'lateEvening' if $time >= 2000
-					&& $time < 2200;
-				return 'lateMorning' if $time >= 1000
-					&& $time < 1200;
-				return 'evening' if $time >= 1800
-					&& $time < 2000;
-				return 'afternoon' if $time >= 1500
-					&& $time < 1800;
+				return 'morning' if $time >= 600
+					&& $time < 1000;
+				return 'earlyMorning' if $time >= 500
+					&& $time < 600;
 				return 'noon' if $time == 1200;
+				return 'weeHours' if $time >= 0000
+					&& $time < 500;
 			last SWITCH;
 			}
 			if ($_ eq 'islamic') {
-				return 'morning' if $time >= 600
-					&& $time < 1000;
-				return 'midDay' if $time > 1200
-					&& $time < 1500;
-				return 'earlyMorning' if $time >= 500
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 500;
-				return 'night' if $time >= 2200
-					&& $time < 2400;
+				return 'afternoon' if $time >= 1500
+					&& $time < 1800;
 				return 'lateEvening' if $time >= 2000
 					&& $time < 2200;
+				return 'midDay' if $time > 1200
+					&& $time < 1500;
 				return 'lateMorning' if $time >= 1000
 					&& $time < 1200;
 				return 'evening' if $time >= 1800
 					&& $time < 2000;
+				return 'night' if $time >= 2200
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1000;
+				return 'earlyMorning' if $time >= 500
+					&& $time < 600;
+				return 'noon' if $time == 1200;
+				return 'weeHours' if $time >= 0000
+					&& $time < 500;
+			last SWITCH;
+			}
+			if ($_ eq 'gregorian') {
 				return 'afternoon' if $time >= 1500
 					&& $time < 1800;
+				return 'lateEvening' if $time >= 2000
+					&& $time < 2200;
+				return 'midDay' if $time > 1200
+					&& $time < 1500;
+				return 'lateMorning' if $time >= 1000
+					&& $time < 1200;
+				return 'evening' if $time >= 1800
+					&& $time < 2000;
+				return 'night' if $time >= 2200
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1000;
+				return 'earlyMorning' if $time >= 500
+					&& $time < 600;
 				return 'noon' if $time == 1200;
+				return 'weeHours' if $time >= 0000
+					&& $time < 500;
 			last SWITCH;
 			}
 		}
@@ -4749,8 +4842,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{пр.об.},
 					'pm' => q{сл.об.},
+					'am' => q{пр.об.},
 				},
 			},
 		},

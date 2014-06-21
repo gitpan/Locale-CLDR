@@ -1,11 +1,11 @@
 package Locale::CLDR::Sv::Any::Fi;
 # This file auto generated from Data\common\main\sv_FI.xml
-#	on Tue 10 Jun 10:42:34 pm GMT
+#	on Sat 21 Jun  1:14:31 am GMT
 # XML file generated 2014-02-26 15:19:38 -0600 (Wed, 26 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';

@@ -2,7 +2,7 @@ package Locale::CLDR::NumberFormatter;
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 
 use v5.10;
@@ -24,6 +24,12 @@ sub format_number {
 		else {
 			$format = '0';
 		}
+	}
+
+	# Some of these algorithmic formats are in locale/type/name format
+	if (my ($locale_id, $type, $format) = $format =~ m(^(.*?)/(.*?)/(.*?)$)) {
+		my $locale = Locale::CLDR->new($locale_id);
+		return $locale->format_number($number, $format);
 	}
 	
 	# First check to see if this is an algorithmic format
@@ -371,7 +377,7 @@ sub _process_algorithmic_number_data {
 	my $format = $self->_get_algorithmic_number_format($number, $format_data);
 	
 	my $format_rule = $format->{rule};
-	my $divisor = $format->{divisor} // 10;
+	my $divisor = $format->{divisor};
 	my $base_value = $format->{base_value} // '';
 	
 	# Negative numbers
@@ -474,7 +480,7 @@ sub _process_algorithmic_number_data {
 				$format_rule =~ s/\[.*\]//;
 			}
 			# Not fractional rule set      Number is a multiple of $divisor and the multiple is even
-			elsif (! $in_fraction_rule_set && ! ($number % $base_value) ) {
+			elsif (! $in_fraction_rule_set && ! ($number % $divisor) ) {
 				$format_rule =~ s/\[.*\]//;
 			}
 			else {
@@ -514,14 +520,14 @@ sub _process_algorithmic_number_data {
 					}
 					my $format_data = $self->_get_algorithmic_number_format_data_by_name($rule_name, $type);
 					if ($format_data) {
-						$format_rule =~ s/→(.+)→/$self->_process_algorithmic_number_data($number % $base_value, $format_data)/e;
+						$format_rule =~ s/→(.+)→/$self->_process_algorithmic_number_data($number % $divisor, $format_data)/e;
 					}
 					else {
-						$format_rule =~ s/→(.*)→/$self->format_number($number % $base_value, $1)/e;
+						$format_rule =~ s/→(.*)→/$self->format_number($number % $divisor, $1)/e;
 					}
 				}
 				else {
-					$format_rule =~ s/→→/$self->_process_algorithmic_number_data($number % $base_value, $format_data)/e;
+					$format_rule =~ s/→→/$self->_process_algorithmic_number_data($number % $divisor, $format_data)/e;
 				}
 			}
 			
@@ -575,6 +581,7 @@ sub _process_algorithmic_number_data_fractions {
 sub _get_algorithmic_number_format {
 	my ($self, $number, $format_data) = @_;
 	
+	use bignum;
 	return $format_data->{'-x'} if $number =~ /^-/ && exists $format_data->{'-x'};
 	return $format_data->{'x.x'} if $number =~ /\./ && exists $format_data->{'x.x'};
 	return $format_data->{0} if $number == 0 || $number =~ /^-/;

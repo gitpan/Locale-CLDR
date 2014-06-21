@@ -1,11 +1,11 @@
 package Locale::CLDR::Or;
 # This file auto generated from Data\common\main\or.xml
-#	on Tue 10 Jun 10:13:30 pm GMT
+#	on Sat 21 Jun 12:45:01 am GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -1133,13 +1133,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'narrow' => {
+				'wide' => {
 					'pm' => q{pm},
 					'am' => q{am},
 				},
-				'wide' => {
-					'am' => q{am},
+				'narrow' => {
 					'pm' => q{pm},
+					'am' => q{am},
 				},
 			},
 		},

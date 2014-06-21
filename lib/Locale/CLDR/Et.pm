@@ -1,11 +1,11 @@
 package Locale::CLDR::Et;
 # This file auto generated from Data\common\main\et.xml
-#	on Tue 10 Jun  8:54:29 pm GMT
+#	on Fri 20 Jun 11:26:00 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,113 +26,142 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'spellout-cardinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(miinus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(null),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← koma →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(üks),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(kaks),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(kolm),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(neli),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(viis),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(kuus),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(seitse),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(kaheksa),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(üheksa),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(kümme),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(→→teist),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(←←kümmend[ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←←sada[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←← tuhat[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←← miljon[ →→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←← miljonit[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←← miljard[ →→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←← miljardit[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←← biljon[ →→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←← biljonit[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←← biljard[ →→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←← biljardit[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -141,10 +170,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 			},
@@ -152,13 +183,16 @@ has 'algorithmic_number_format_data' => (
 		'spellout-numbering-year' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(miinus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'1100' => {
@@ -168,10 +202,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(=%spellout-numbering=),
 				},
 				'max' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(=%spellout-numbering=),
 				},
 			},
@@ -4094,13 +4130,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'abbreviated' => {
-					'am' => q{e.k.},
-					'pm' => q{p.k.},
-				},
 				'wide' => {
-					'am' => q{AM},
 					'pm' => q{PM},
+					'am' => q{AM},
+				},
+				'abbreviated' => {
+					'pm' => q{p.k.},
+					'am' => q{e.k.},
 				},
 			},
 		},

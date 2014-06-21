@@ -1,11 +1,11 @@
 package Locale::CLDR::Sr;
 # This file auto generated from Data\common\main\sr.xml
-#	on Tue 10 Jun 10:34:45 pm GMT
+#	on Sat 21 Jun  1:06:38 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,19 +26,24 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'ordi' => {
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(и),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' и =%spellout-ordinal=),
 				},
 				'max' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' и =%spellout-ordinal=),
 				},
 			},
@@ -47,14 +52,17 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ти),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-ordinal=),
 				},
 				'max' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-ordinal=),
 				},
 			},
@@ -62,105 +70,131 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-feminine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(минус →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(нула),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← кома →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(једна),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(две),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-masculine=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(двадесет[ и →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(тридесет[ и →→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(четрдесет[ и →→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(педесет[ и →→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(шездесет[ и →→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(седамдесет[ и →→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(осамдесет[ и →→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(деведесет[ и →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(сто[ →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(двеста[ →→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(триста[ →→]),
 				},
 				'400' => {
 					base_value => q(400),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-feminine←сто[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-feminine← хиљаду[ →→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-feminine← хиљада[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← милион[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← милијарда[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← билион[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← билијарда[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -168,169 +202,211 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-masculine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(минус →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(нула),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← кома →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(један),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(два),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(три),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(четири),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(пет),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(шест),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(седам),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(осам),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(девет),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(десет),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(једанаест),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(дванаест),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(тринаест),
 				},
 				'14' => {
 					base_value => q(14),
+					divisor => q(10),
 					rule => q(четрнаест),
 				},
 				'15' => {
 					base_value => q(15),
+					divisor => q(10),
 					rule => q(петнаест),
 				},
 				'16' => {
 					base_value => q(16),
+					divisor => q(10),
 					rule => q(шеснаест),
 				},
 				'17' => {
 					base_value => q(17),
+					divisor => q(10),
 					rule => q(седамнаест),
 				},
 				'18' => {
 					base_value => q(18),
+					divisor => q(10),
 					rule => q(осамнаест),
 				},
 				'19' => {
 					base_value => q(19),
+					divisor => q(10),
 					rule => q(деветнаест),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(двадесет[ и →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(тридесет[ и →→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(четрдесет[ и →→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(педесет[ и →→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(шездесет[ и →→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(седамдесет[ и →→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(осамдесет[ и →→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(деведесет[ и →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(сто[ →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(двеста[ →→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(триста[ →→]),
 				},
 				'400' => {
 					base_value => q(400),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-feminine←сто[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-feminine← хиљаду[ →→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-feminine← хиљада[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← милион[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← милијарда[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← билион[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← билијарда[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -338,105 +414,131 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-neuter' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(минус →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(нула),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← кома →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(једно),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(два),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-masculine=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(двадесет[ и →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(тридесет[ и →→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(четрдесет[ и →→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(педесет[ и →→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(шездесет[ и →→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(седамдесет[ и →→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(осамдесет[ и →→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(деведесет[ и →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(сто[ →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(двеста[ →→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(триста[ →→]),
 				},
 				'400' => {
 					base_value => q(400),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-feminine←сто[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-feminine← хиљаду[ →→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-feminine← хиљада[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← милион[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← милијарда[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← билион[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← билијарда[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -445,10 +547,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-masculine=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-masculine=),
 				},
 			},
@@ -457,12 +561,15 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 			},
@@ -470,141 +577,176 @@ has 'algorithmic_number_format_data' => (
 		'spellout-ordinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(минус →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(нулти),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,##0.#=),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(први),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(други),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(трећи),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(четврти),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(пети),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(шести),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(седми),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(осми),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(девети),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(десети),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(једанаести),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(дванаести),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(тринаести),
 				},
 				'14' => {
 					base_value => q(14),
+					divisor => q(10),
 					rule => q(четрнаести),
 				},
 				'15' => {
 					base_value => q(15),
+					divisor => q(10),
 					rule => q(петнаести),
 				},
 				'16' => {
 					base_value => q(16),
+					divisor => q(10),
 					rule => q(шеснаести),
 				},
 				'17' => {
 					base_value => q(17),
+					divisor => q(10),
 					rule => q(седамнаести),
 				},
 				'18' => {
 					base_value => q(18),
+					divisor => q(10),
 					rule => q(осамнаести),
 				},
 				'19' => {
 					base_value => q(19),
+					divisor => q(10),
 					rule => q(деветнаести),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(двадесет→%%ordi→),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(тридесет→%%ordi→),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(четрдесет→%%ordi→),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(педесет→%%ordi→),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(шездесет→%%ordi→),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(седамдесет→%%ordi→),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(осамдесет→%%ordi→),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(деведесет→%%ordi→),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(сто→%%ordti→),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(двеста→%%ordti→),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(триста→%%ordti→),
 				},
 				'400' => {
 					base_value => q(400),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-feminine←сто→%%ordti→),
 				},
 				'max' => {
 					base_value => q(400),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-feminine←сто→%%ordti→),
 				},
 			},
@@ -5705,8 +5847,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{поподне},
 					'am' => q{пре подне},
+					'pm' => q{поподне},
 				},
 			},
 		},
@@ -6128,44 +6270,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			Ed => q{E d.},
-			Gy => q{y. G},
-			GyMMM => q{MMM y. G},
-			GyMMMEd => q{E, d. MMM y. G},
-			GyMMMd => q{d. MMM y. G},
-			H => q{HH},
-			Hm => q{HH.mm},
-			Hms => q{HH.mm.ss},
-			M => q{L},
-			MEd => q{E, M-d},
-			MMM => q{LLL},
-			MMMEd => q{E d. MMM},
-			MMMMEd => q{E d. MMMM},
-			MMMMd => q{d. MMMM},
-			MMMd => q{d. MMM},
-			MMMdd => q{dd.MMM},
-			MMdd => q{MM-dd},
-			Md => q{d/M},
-			d => q{d},
-			h => q{hh a},
-			hm => q{hh.mm a},
-			hms => q{hh.mm.ss a},
-			ms => q{mm.ss},
-			y => q{y. G},
-			yyyy => q{y. G},
-			yyyyM => q{M.y. G},
-			yyyyMEd => q{E, d.M.y. G},
-			yyyyMM => q{MM.y. G},
-			yyyyMMM => q{MMM y. G},
-			yyyyMMMEd => q{E, d. MMM y. G},
-			yyyyMMMM => q{MMMM y. G},
-			yyyyMMMd => q{d. MMM y. G},
-			yyyyMMdd => q{dd.MM.y. G},
-			yyyyMd => q{d.M.y. G},
-			yyyyQQQ => q{QQQ, y. G},
-			yyyyQQQQ => q{QQQQ y. G},
-		},
 		'gregorian' => {
 			EHm => q{E, HH:mm},
 			EHms => q{E, HH:mm:ss},
@@ -6207,6 +6311,44 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ. y},
 			yQQQQ => q{QQQQ. y},
 		},
+		'generic' => {
+			Ed => q{E d.},
+			Gy => q{y. G},
+			GyMMM => q{MMM y. G},
+			GyMMMEd => q{E, d. MMM y. G},
+			GyMMMd => q{d. MMM y. G},
+			H => q{HH},
+			Hm => q{HH.mm},
+			Hms => q{HH.mm.ss},
+			M => q{L},
+			MEd => q{E, M-d},
+			MMM => q{LLL},
+			MMMEd => q{E d. MMM},
+			MMMMEd => q{E d. MMMM},
+			MMMMd => q{d. MMMM},
+			MMMd => q{d. MMM},
+			MMMdd => q{dd.MMM},
+			MMdd => q{MM-dd},
+			Md => q{d/M},
+			d => q{d},
+			h => q{hh a},
+			hm => q{hh.mm a},
+			hms => q{hh.mm.ss a},
+			ms => q{mm.ss},
+			y => q{y. G},
+			yyyy => q{y. G},
+			yyyyM => q{M.y. G},
+			yyyyMEd => q{E, d.M.y. G},
+			yyyyMM => q{MM.y. G},
+			yyyyMMM => q{MMM y. G},
+			yyyyMMMEd => q{E, d. MMM y. G},
+			yyyyMMMM => q{MMMM y. G},
+			yyyyMMMd => q{d. MMM y. G},
+			yyyyMMdd => q{dd.MM.y. G},
+			yyyyMd => q{d.M.y. G},
+			yyyyQQQ => q{QQQ, y. G},
+			yyyyQQQQ => q{QQQQ y. G},
+		},
 	} },
 );
 
@@ -6226,101 +6368,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			H => {
-				H => q{HH-HH},
-			},
-			Hm => {
-				H => q{HH.mm-HH.mm},
-				m => q{HH.mm-HH.mm},
-			},
-			Hmv => {
-				H => q{HH.mm-HH.mm v},
-				m => q{HH.mm-HH.mm v},
-			},
-			Hv => {
-				H => q{HH-HH v},
-			},
-			M => {
-				M => q{M-M},
-			},
-			MEd => {
-				M => q{E, d.M - E, d.M},
-				d => q{E, d.M - E, d.M},
-			},
-			MMM => {
-				M => q{MMM-MMM},
-			},
-			MMMEd => {
-				M => q{E, dd. MMM - E, dd. MMM},
-				d => q{E, dd. - E, dd. MMM},
-			},
-			MMMd => {
-				M => q{dd. MMM - dd. MMM},
-				d => q{dd.-dd. MMM},
-			},
-			Md => {
-				M => q{d.M - d.M},
-				d => q{d.M - d.M},
-			},
-			d => {
-				d => q{d-d},
-			},
-			fallback => '{0} - {1}',
-			h => {
-				a => q{h a - h a},
-				h => q{h-h a},
-			},
-			hm => {
-				a => q{h.mm a - h.mm a},
-				h => q{h.mm-h.mm a},
-				m => q{h.mm-h.mm a},
-			},
-			hmv => {
-				a => q{h.mm a - h.mm a v},
-				h => q{h.mm-h.mm a v},
-				m => q{h.mm-h.mm a v},
-			},
-			hv => {
-				a => q{h a - h a v},
-				h => q{h-h a v},
-			},
-			y => {
-				y => q{y-y},
-			},
-			yM => {
-				M => q{y M - M},
-				y => q{M.y - M.y},
-			},
-			yMEd => {
-				M => q{E, d.M.y. - E, d.M.y.},
-				d => q{E, d.M.y. - E, d.M.y.},
-				y => q{E, d.M.y. - E, d.M.y.},
-			},
-			yMMM => {
-				M => q{MMM-MMM y.},
-				y => q{MMM y. - MMM y.},
-			},
-			yMMMEd => {
-				M => q{E, dd. MMM - E, dd. MMM y.},
-				d => q{E, dd. - E, dd. MMM y.},
-				y => q{E, dd. MMM y. - E, dd. MMM y.},
-			},
-			yMMMM => {
-				M => q{y-MM – MM},
-				y => q{y-MM – y-MM},
-			},
-			yMMMd => {
-				M => q{dd. MMM - dd. MMM y.},
-				d => q{dd.-dd. MMM y.},
-				y => q{dd. MMM y. - dd. MMM y.},
-			},
-			yMd => {
-				M => q{d.M.y. - d.M.y.},
-				d => q{d.M.y. - d.M.y.},
-				y => q{d.M.y. - d.M.y.},
-			},
-		},
 		'gregorian' => {
 			H => {
 				H => q{HH-HH},
@@ -6386,6 +6433,101 @@ has 'datetime_formats_interval' => (
 			yM => {
 				M => q{y M - M},
 				y => q{y M - M},
+			},
+			yMEd => {
+				M => q{E, d.M.y. - E, d.M.y.},
+				d => q{E, d.M.y. - E, d.M.y.},
+				y => q{E, d.M.y. - E, d.M.y.},
+			},
+			yMMM => {
+				M => q{MMM-MMM y.},
+				y => q{MMM y. - MMM y.},
+			},
+			yMMMEd => {
+				M => q{E, dd. MMM - E, dd. MMM y.},
+				d => q{E, dd. - E, dd. MMM y.},
+				y => q{E, dd. MMM y. - E, dd. MMM y.},
+			},
+			yMMMM => {
+				M => q{y-MM – MM},
+				y => q{y-MM – y-MM},
+			},
+			yMMMd => {
+				M => q{dd. MMM - dd. MMM y.},
+				d => q{dd.-dd. MMM y.},
+				y => q{dd. MMM y. - dd. MMM y.},
+			},
+			yMd => {
+				M => q{d.M.y. - d.M.y.},
+				d => q{d.M.y. - d.M.y.},
+				y => q{d.M.y. - d.M.y.},
+			},
+		},
+		'generic' => {
+			H => {
+				H => q{HH-HH},
+			},
+			Hm => {
+				H => q{HH.mm-HH.mm},
+				m => q{HH.mm-HH.mm},
+			},
+			Hmv => {
+				H => q{HH.mm-HH.mm v},
+				m => q{HH.mm-HH.mm v},
+			},
+			Hv => {
+				H => q{HH-HH v},
+			},
+			M => {
+				M => q{M-M},
+			},
+			MEd => {
+				M => q{E, d.M - E, d.M},
+				d => q{E, d.M - E, d.M},
+			},
+			MMM => {
+				M => q{MMM-MMM},
+			},
+			MMMEd => {
+				M => q{E, dd. MMM - E, dd. MMM},
+				d => q{E, dd. - E, dd. MMM},
+			},
+			MMMd => {
+				M => q{dd. MMM - dd. MMM},
+				d => q{dd.-dd. MMM},
+			},
+			Md => {
+				M => q{d.M - d.M},
+				d => q{d.M - d.M},
+			},
+			d => {
+				d => q{d-d},
+			},
+			fallback => '{0} - {1}',
+			h => {
+				a => q{h a - h a},
+				h => q{h-h a},
+			},
+			hm => {
+				a => q{h.mm a - h.mm a},
+				h => q{h.mm-h.mm a},
+				m => q{h.mm-h.mm a},
+			},
+			hmv => {
+				a => q{h.mm a - h.mm a v},
+				h => q{h.mm-h.mm a v},
+				m => q{h.mm-h.mm a v},
+			},
+			hv => {
+				a => q{h a - h a v},
+				h => q{h-h a v},
+			},
+			y => {
+				y => q{y-y},
+			},
+			yM => {
+				M => q{y M - M},
+				y => q{M.y - M.y},
 			},
 			yMEd => {
 				M => q{E, d.M.y. - E, d.M.y.},

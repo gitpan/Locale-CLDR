@@ -1,11 +1,11 @@
 package Locale::CLDR::Ti;
 # This file auto generated from Data\common\main\ti.xml
-#	on Tue 10 Jun 10:50:41 pm GMT
+#	on Sat 21 Jun  1:22:32 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';

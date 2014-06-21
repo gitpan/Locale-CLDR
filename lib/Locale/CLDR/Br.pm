@@ -1,11 +1,11 @@
 package Locale::CLDR::Br;
 # This file auto generated from Data\common\main\br.xml
-#	on Tue 10 Jun  8:26:48 pm GMT
+#	on Fri 20 Jun 10:57:59 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';

@@ -1,11 +1,11 @@
 package Locale::CLDR::Aa;
 # This file auto generated from Data\common\main\aa.xml
-#	on Tue 10 Jun  8:12:41 pm GMT
+#	on Fri 20 Jun 10:43:46 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -218,8 +218,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{saaku},
 					'pm' => q{carra},
+					'am' => q{saaku},
 				},
 			},
 		},

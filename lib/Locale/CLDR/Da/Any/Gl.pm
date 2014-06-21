@@ -1,11 +1,11 @@
 package Locale::CLDR::Da::Any::Gl;
 # This file auto generated from Data\common\main\da_GL.xml
-#	on Tue 10 Jun  8:40:40 pm GMT
+#	on Fri 20 Jun 11:11:52 pm GMT
 # XML file generated 2013-08-22 18:59:54 -0500 (Thu, 22 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';

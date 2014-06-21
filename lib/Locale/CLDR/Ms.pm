@@ -1,11 +1,11 @@
 package Locale::CLDR::Ms;
 # This file auto generated from Data\common\main\ms.xml
-#	on Tue 10 Jun 10:03:34 pm GMT
+#	on Sat 21 Jun 12:35:04 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,18 +26,23 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'digits-ordinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(ke−→#,##0→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ke=#,##0=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ke=#,##0=),
 				},
 			},
@@ -45,105 +50,131 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(kosong),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← titik →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(satu),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(dua),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(tiga),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(empat),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(lima),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(enam),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(tujuh),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(lapan),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(sembilan),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(sepuluh),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(sebelas),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(→→ belas),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(←← puluh[ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(seratus[ →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(←← ratus[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(seribu[ →→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←← ribu[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←← juta[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(←← milyar[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←← bilyun[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←← bilyar[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -152,10 +183,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 			},
@@ -164,12 +197,15 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 			},
@@ -177,25 +213,31 @@ has 'algorithmic_number_format_data' => (
 		'spellout-ordinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(kekosong),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,##0.#=),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(pertama),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(ke=%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(ke=%spellout-cardinal=),
 				},
 			},

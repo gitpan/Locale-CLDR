@@ -1,11 +1,11 @@
 package Locale::CLDR::Ky;
 # This file auto generated from Data\common\main\ky.xml
-#	on Tue 10 Jun  9:43:51 pm GMT
+#	on Sat 21 Jun 12:15:34 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,19 +26,24 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'and' => {
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(' жана =%spellout-cardinal-verbose=),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(' =%spellout-cardinal-verbose=),
 				},
 				'max' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(' =%spellout-cardinal-verbose=),
 				},
 			},
@@ -47,22 +52,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(' жана =%spellout-cardinal-verbose=),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(, =%spellout-cardinal-verbose=),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(, ←%spellout-cardinal-verbose← миң[→%%commas→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(, =%spellout-cardinal-verbose=),
 				},
 				'max' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(, =%spellout-cardinal-verbose=),
 				},
 			},
@@ -70,14 +80,17 @@ has 'algorithmic_number_format_data' => (
 		'digits-ordinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(−→→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=#,##0==%%digits-ordinal-indicator=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=#,##0==%%digits-ordinal-indicator=),
 				},
 			},
@@ -86,10 +99,12 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(''инчи),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(''инчи),
 				},
 			},
@@ -97,165 +112,206 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(минус →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(нөл),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← бүтүн →%%z-spellout-fraction→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(бир),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(эки),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(үч),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(төрт),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(беш),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(алты),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(жети),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(сегиз),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(тогуз),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(он[ →→]),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(жыйырма[ →→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(отуз[ →→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(кырк[ →→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(элүү[ →→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(алтымыш[ →→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(жетимиш[ →→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(сексен[ →→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(токсон[ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(жүз),
 				},
 				'101' => {
 					base_value => q(101),
+					divisor => q(100),
 					rule => q(←← жүз[ →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(←← жүз[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(миң),
 				},
 				'1001' => {
 					base_value => q(1001),
+					divisor => q(1000),
 					rule => q(←← миң[ →→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←← миң[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(миллион),
 				},
 				'1000001' => {
 					base_value => q(1000001),
+					divisor => q(1000000),
 					rule => q(←← миллион[ →→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←← миллион[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(миллиард),
 				},
 				'1000000001' => {
 					base_value => q(1000000001),
+					divisor => q(1000000000),
 					rule => q(←← миллиард[ →→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←← миллиард[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(триллион),
 				},
 				'1000000000001' => {
 					base_value => q(1000000000001),
+					divisor => q(1000000000000),
 					rule => q(←← триллион[ →→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←← триллион[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(квадриллион),
 				},
 				'1000000000000001' => {
 					base_value => q(1000000000000001),
+					divisor => q(1000000000000000),
 					rule => q(←← квадриллион[ →→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←← квадриллион[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -263,97 +319,121 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-verbose' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(минус →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← бүтүн →%%z-spellout-fraction→),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(жүз),
 				},
 				'101' => {
 					base_value => q(101),
+					divisor => q(100),
 					rule => q(←← жүз[→%%and→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(←← жүз[→%%and→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(миң),
 				},
 				'1001' => {
 					base_value => q(1001),
+					divisor => q(1000),
 					rule => q(←← миң[→%%and→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←← миң[→%%and→]),
 				},
 				'100000' => {
 					base_value => q(100000),
+					divisor => q(100000),
 					rule => q(←← миң[→%%commas→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(миллион),
 				},
 				'1000001' => {
 					base_value => q(1000001),
+					divisor => q(1000000),
 					rule => q(←← миллион[→%%commas→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←← миллион[→%%commas→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(миллиард),
 				},
 				'1000000001' => {
 					base_value => q(1000000001),
+					divisor => q(1000000000),
 					rule => q(←← миллиард[→%%commas→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←← миллиард[→%%commas→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(триллион),
 				},
 				'1000000000001' => {
 					base_value => q(1000000000001),
+					divisor => q(1000000000000),
 					rule => q(←← триллион[→%%commas→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←← триллион[→%%commas→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(квадриллион),
 				},
 				'1000000000000001' => {
 					base_value => q(1000000000000001),
+					divisor => q(1000000000000000),
 					rule => q(←← квадриллион[→%%commas→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←← квадриллион[→%%commas→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -362,10 +442,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 			},
@@ -374,12 +456,15 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 			},
@@ -387,165 +472,206 @@ has 'algorithmic_number_format_data' => (
 		'spellout-ordinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(минус →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(нөлүнчү),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,##0.#=),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(биринчи),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(экинчи),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(үчүнчү),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(төртүнчү),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(бешинчи),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(алтынчы),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(жетинчи),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(сегизинчи),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(тогузунчу),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(он→%%унчу→),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(жыйырма→%%нчы→),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(отуз→%%унчу→),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(кырк→%%ынчы→),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(элүү→%%нчү→),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(алтымыш→%%ынчы→),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(жетимиш→%%инчи→),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(сексен→%%инчи→),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(токсон→%%унчу→),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(жүзүнчү),
 				},
 				'101' => {
 					base_value => q(101),
+					divisor => q(100),
 					rule => q(←%spellout-numbering← жүз→%%үнчү→),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(←%spellout-numbering← жүз→%%үнчү→),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(миңиңчи),
 				},
 				'1001' => {
 					base_value => q(1001),
+					divisor => q(1000),
 					rule => q(←%spellout-numbering← миң→%%иңчи→),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←%spellout-numbering← миң→%%иңчи→),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(миллионунчу),
 				},
 				'1000001' => {
 					base_value => q(1000001),
+					divisor => q(1000000),
 					rule => q(←%spellout-numbering← миллион→%%унчу→),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-numbering← миллион→%%унчу→),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(миллиардынчы),
 				},
 				'1000000001' => {
 					base_value => q(1000000001),
+					divisor => q(1000000000),
 					rule => q(←%spellout-numbering← миллиард→%%ынчы→),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-numbering← миллиард→%%ынчы→),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(триллионунчу),
 				},
 				'1000000000001' => {
 					base_value => q(1000000000001),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-numbering← триллион→%%унчу→),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-numbering← триллион→%%унчу→),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(квадриллионунчу),
 				},
 				'1000000000000001' => {
 					base_value => q(1000000000000001),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-numbering← квадриллион→%%унчу→),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-numbering← квадриллион→%%унчу→),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0='инчи),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0='инчи),
 				},
 			},
@@ -554,54 +680,67 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(ондон ←%spellout-numbering←),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(жүздөн ←%spellout-numbering←),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(миңден ←%spellout-numbering←),
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(он миңден ←%spellout-numbering←),
 				},
 				'100000' => {
 					base_value => q(100000),
+					divisor => q(100000),
 					rule => q(жүз миңден ←%spellout-numbering←),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(миллиондон ←%spellout-numbering←),
 				},
 				'10000000' => {
 					base_value => q(10000000),
+					divisor => q(10000000),
 					rule => q(он миллиондон ←%spellout-numbering←),
 				},
 				'100000000' => {
 					base_value => q(100000000),
+					divisor => q(100000000),
 					rule => q(жүз миллиондон ←%spellout-numbering←),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(миллиарддан ←%spellout-numbering←),
 				},
 				'10000000000' => {
 					base_value => q(10000000000),
+					divisor => q(10000000000),
 					rule => q(он миллиарддан ←%spellout-numbering←),
 				},
 				'100000000000' => {
 					base_value => q(100000000000),
+					divisor => q(100000000000),
 					rule => q(жүз миллиарддан ←%spellout-numbering←),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(0* ←#,##0←←),
 				},
 				'max' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(0* ←#,##0←←),
 				},
 			},
@@ -610,14 +749,17 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(инчи),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-ordinal=),
 				},
 				'max' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-ordinal=),
 				},
 			},
@@ -626,14 +768,17 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(иңчи),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-ordinal=),
 				},
 				'max' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-ordinal=),
 				},
 			},
@@ -642,14 +787,17 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(нчы),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-ordinal=),
 				},
 				'max' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-ordinal=),
 				},
 			},
@@ -658,14 +806,17 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(нчү),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-ordinal=),
 				},
 				'max' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-ordinal=),
 				},
 			},
@@ -674,14 +825,17 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(унчу),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-ordinal=),
 				},
 				'max' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-ordinal=),
 				},
 			},
@@ -690,14 +844,17 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ынчы),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-ordinal=),
 				},
 				'max' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-ordinal=),
 				},
 			},
@@ -706,14 +863,17 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(үнчү),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-ordinal=),
 				},
 				'max' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-ordinal=),
 				},
 			},

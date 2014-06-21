@@ -1,11 +1,11 @@
 package Locale::CLDR::Km;
 # This file auto generated from Data\common\main\km.xml
-#	on Tue 10 Jun  9:33:48 pm GMT
+#	on Sat 21 Jun 12:05:36 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,18 +26,23 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'digits-ordinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(−→→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ទី=#,##0=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ទី=#,##0=),
 				},
 			},
@@ -46,10 +51,12 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(&[last primary ignorable ] ←← ' ' ←← '​' ←← '­'),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(&[last primary ignorable ] ←← ' ' ←← '​' ←← '­'),
 				},
 			},
@@ -58,10 +65,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 			},
@@ -69,117 +78,146 @@ has 'algorithmic_number_format_data' => (
 		'spellout-numbering' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(ដក​→→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(សូន្យ),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←←​ចុច​→→→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(មួយ),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(ពីរ),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(បី),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(បួន),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(ប្រាំ),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(ប្រាំមួយ),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(ប្រាំពីរ),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(ប្រាំបី),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(ប្រាំបួន),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(ដប់[​→→]),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(ម្ភៃ[​→→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(សាមសិប[​→→]),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(សែសិប[​→→]),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(ហាសិប[​→→]),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(ហុកសិប[​→→]),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(ចិតសិប[​→→]),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(ប៉ែតសិប[​→→]),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(កៅសិប[​→→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←←​រយ[​→→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←←​ពាន់[​→→]),
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(←←​ម៉ឺន[​→→]),
 				},
 				'100000' => {
 					base_value => q(100000),
+					divisor => q(100000),
 					rule => q(←←​សែន[​→→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←←​លាន[​→→]),
 				},
 				'10000000000' => {
 					base_value => q(10000000000),
+					divisor => q(10000000000),
 					rule => q(←←​ពាន់​កោដិ[​→→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -188,10 +226,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 			},
@@ -200,10 +240,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ទី=%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ទី=%spellout-cardinal=),
 				},
 			},
@@ -2697,8 +2739,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ល្ងាច},
 					'am' => q{ព្រឹក},
+					'pm' => q{ល្ងាច},
 				},
 			},
 		},
@@ -2797,37 +2839,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			Ed => q{d E},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E, d MMM y G},
-			GyMMMd => q{d MMM y G},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, d/M},
-			MMM => q{LLL},
-			MMMEd => q{E d MMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y G},
-			yyyy => q{y G},
-			yyyyM => q{GGGGG M/y},
-			yyyyMEd => q{E, d-M-y G},
-			yyyyMMM => q{MMM y G},
-			yyyyMMMEd => q{E, d MMM y G},
-			yyyyMMMd => q{d MMM y G},
-			yyyyMd => q{d-M-y G},
-			yyyyQQQ => q{QQQ y G},
-			yyyyQQQQ => q{QQQQ y G},
-		},
 		'gregorian' => {
 			EHm => q{E HH:mm},
 			EHms => q{E HH:mm:ss},
@@ -2862,6 +2873,37 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
+		'generic' => {
+			Ed => q{d E},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E, d MMM y G},
+			GyMMMd => q{d MMM y G},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, d/M},
+			MMM => q{LLL},
+			MMMEd => q{E d MMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y G},
+			yyyy => q{y G},
+			yyyyM => q{GGGGG M/y},
+			yyyyMEd => q{E, d-M-y G},
+			yyyyMMM => q{MMM y G},
+			yyyyMMMEd => q{E, d MMM y G},
+			yyyyMMMd => q{d MMM y G},
+			yyyyMd => q{d-M-y G},
+			yyyyQQQ => q{QQQ y G},
+			yyyyQQQQ => q{QQQQ y G},
+		},
 	} },
 );
 
@@ -2881,101 +2923,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			H => {
-				H => q{H-H},
-			},
-			Hm => {
-				H => q{H:mm-H:mm},
-				m => q{H:mm-H:mm},
-			},
-			Hmv => {
-				H => q{H:mm-H:mm v},
-				m => q{H:mm-H:mm v},
-			},
-			Hv => {
-				H => q{H-H v},
-			},
-			M => {
-				M => q{M-M},
-			},
-			MEd => {
-				M => q{E, d/M - E, d/M},
-				d => q{E, d/M– E, d/M},
-			},
-			MMM => {
-				M => q{MMM-MMM},
-			},
-			MMMEd => {
-				M => q{E, d MMM - E, d MMM},
-				d => q{E, d MMM - E, d MMM},
-			},
-			MMMd => {
-				M => q{d MMM - d MMM},
-				d => q{d-d MMM},
-			},
-			Md => {
-				M => q{d/M - d/M},
-				d => q{d/M– d/M},
-			},
-			d => {
-				d => q{d-d},
-			},
-			fallback => '{0} - {1}',
-			h => {
-				a => q{h a – h a},
-				h => q{h-h a},
-			},
-			hm => {
-				a => q{h:mm a – h:mm a},
-				h => q{h:mm-h:mm a},
-				m => q{h:mm-h:mm a},
-			},
-			hmv => {
-				a => q{h:mm a – h:mm a v},
-				h => q{h:mm-h:mm a v},
-				m => q{h:mm-h:mm a v},
-			},
-			hv => {
-				a => q{h a – h a v},
-				h => q{h-h a v},
-			},
-			y => {
-				y => q{y-y G},
-			},
-			yM => {
-				M => q{M/y - M/y G},
-				y => q{M/y - M/y G},
-			},
-			yMEd => {
-				M => q{E, d/M/y - E, d/M/y G},
-				d => q{E, d/M/y - E, d/M/y G},
-				y => q{E, d/M/y - E, d/M/y G},
-			},
-			yMMM => {
-				M => q{MM – MM-y G},
-				y => q{MM-y – MM-y G},
-			},
-			yMMMEd => {
-				M => q{E, dd MMM y - E, dd MMM y G},
-				d => q{E, dd MMM y - E, dd MMM y G},
-				y => q{E, dd-MM-y – E, dd MMM y G},
-			},
-			yMMMM => {
-				M => q{MM – MM y G},
-				y => q{MM-y – MM-y G},
-			},
-			yMMMd => {
-				M => q{d MMM y – d MMM},
-				d => q{d-d MMM y G},
-				y => q{d MMM y - d MMM y G},
-			},
-			yMd => {
-				M => q{d/M/y - d/M/y G},
-				d => q{d/M/y - d/M/y G},
-				y => q{d/M/y - d/M/y G},
-			},
-		},
 		'gregorian' => {
 			H => {
 				H => q{H-H},
@@ -3069,6 +3016,101 @@ has 'datetime_formats_interval' => (
 				M => q{d/M/y - d/M/y},
 				d => q{d/M/y - d/M/y},
 				y => q{d/M/y - d/M/y},
+			},
+		},
+		'generic' => {
+			H => {
+				H => q{H-H},
+			},
+			Hm => {
+				H => q{H:mm-H:mm},
+				m => q{H:mm-H:mm},
+			},
+			Hmv => {
+				H => q{H:mm-H:mm v},
+				m => q{H:mm-H:mm v},
+			},
+			Hv => {
+				H => q{H-H v},
+			},
+			M => {
+				M => q{M-M},
+			},
+			MEd => {
+				M => q{E, d/M - E, d/M},
+				d => q{E, d/M– E, d/M},
+			},
+			MMM => {
+				M => q{MMM-MMM},
+			},
+			MMMEd => {
+				M => q{E, d MMM - E, d MMM},
+				d => q{E, d MMM - E, d MMM},
+			},
+			MMMd => {
+				M => q{d MMM - d MMM},
+				d => q{d-d MMM},
+			},
+			Md => {
+				M => q{d/M - d/M},
+				d => q{d/M– d/M},
+			},
+			d => {
+				d => q{d-d},
+			},
+			fallback => '{0} - {1}',
+			h => {
+				a => q{h a – h a},
+				h => q{h-h a},
+			},
+			hm => {
+				a => q{h:mm a – h:mm a},
+				h => q{h:mm-h:mm a},
+				m => q{h:mm-h:mm a},
+			},
+			hmv => {
+				a => q{h:mm a – h:mm a v},
+				h => q{h:mm-h:mm a v},
+				m => q{h:mm-h:mm a v},
+			},
+			hv => {
+				a => q{h a – h a v},
+				h => q{h-h a v},
+			},
+			y => {
+				y => q{y-y G},
+			},
+			yM => {
+				M => q{M/y - M/y G},
+				y => q{M/y - M/y G},
+			},
+			yMEd => {
+				M => q{E, d/M/y - E, d/M/y G},
+				d => q{E, d/M/y - E, d/M/y G},
+				y => q{E, d/M/y - E, d/M/y G},
+			},
+			yMMM => {
+				M => q{MM – MM-y G},
+				y => q{MM-y – MM-y G},
+			},
+			yMMMEd => {
+				M => q{E, dd MMM y - E, dd MMM y G},
+				d => q{E, dd MMM y - E, dd MMM y G},
+				y => q{E, dd-MM-y – E, dd MMM y G},
+			},
+			yMMMM => {
+				M => q{MM – MM y G},
+				y => q{MM-y – MM-y G},
+			},
+			yMMMd => {
+				M => q{d MMM y – d MMM},
+				d => q{d-d MMM y G},
+				y => q{d MMM y - d MMM y G},
+			},
+			yMd => {
+				M => q{d/M/y - d/M/y G},
+				d => q{d/M/y - d/M/y G},
+				y => q{d/M/y - d/M/y G},
 			},
 		},
 	} },

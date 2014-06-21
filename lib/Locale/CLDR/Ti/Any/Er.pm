@@ -1,11 +1,11 @@
 package Locale::CLDR::Ti::Any::Er;
 # This file auto generated from Data\common\main\ti_ER.xml
-#	on Tue 10 Jun 10:50:42 pm GMT
+#	on Sat 21 Jun  1:22:32 am GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';

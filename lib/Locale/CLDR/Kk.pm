@@ -1,11 +1,11 @@
 package Locale::CLDR::Kk;
 # This file auto generated from Data\common\main\kk.xml
-#	on Tue 10 Jun  9:31:39 pm GMT
+#	on Sat 21 Jun 12:03:28 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -2862,8 +2862,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{түске дейін},
 					'pm' => q{түстен кейін},
+					'am' => q{түске дейін},
 				},
 			},
 		},

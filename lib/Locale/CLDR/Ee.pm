@@ -1,11 +1,11 @@
 package Locale::CLDR::Ee;
 # This file auto generated from Data\common\main\ee.xml
-#	on Tue 10 Jun  8:42:58 pm GMT
+#	on Fri 20 Jun 11:14:09 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,27 +26,34 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'after-billions' => {
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(' kpakple =%spellout-cardinal=),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(' kple =%spellout-cardinal=),
 				},
 				'100000000' => {
 					base_value => q(100000000),
+					divisor => q(100000000),
 					rule => q(' kple =%spellout-cardinal=),
 				},
 				'100000000000' => {
 					base_value => q(100000000000),
+					divisor => q(100000000000),
 					rule => q(' =%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(100000000000),
+					divisor => q(100000000000),
 					rule => q(' =%spellout-cardinal=),
 				},
 			},
@@ -55,14 +62,17 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(' kpakple =%spellout-cardinal=),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(' =%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(' =%spellout-cardinal=),
 				},
 			},
@@ -71,70 +81,87 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(kple =%spellout-cardinal=),
 				},
 				'21' => {
 					base_value => q(21),
+					divisor => q(10),
 					rule => q(=%spellout-cardinal=),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(kple =%spellout-cardinal=),
 				},
 				'31' => {
 					base_value => q(31),
+					divisor => q(10),
 					rule => q(=%spellout-cardinal=),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q(kple =%spellout-cardinal=),
 				},
 				'41' => {
 					base_value => q(41),
+					divisor => q(10),
 					rule => q(=%spellout-cardinal=),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q(kple =%spellout-cardinal=),
 				},
 				'51' => {
 					base_value => q(51),
+					divisor => q(10),
 					rule => q(=%spellout-cardinal=),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q(kple =%spellout-cardinal=),
 				},
 				'61' => {
 					base_value => q(61),
+					divisor => q(10),
 					rule => q(=%spellout-cardinal=),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q(kple =%spellout-cardinal=),
 				},
 				'71' => {
 					base_value => q(71),
+					divisor => q(10),
 					rule => q(=%spellout-cardinal=),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q(kple =%spellout-cardinal=),
 				},
 				'81' => {
 					base_value => q(81),
+					divisor => q(10),
 					rule => q(=%spellout-cardinal=),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q(kple =%spellout-cardinal=),
 				},
 				'91' => {
 					base_value => q(91),
+					divisor => q(10),
 					rule => q(=%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(91),
+					divisor => q(10),
 					rule => q(=%spellout-cardinal=),
 				},
 			},
@@ -143,18 +170,22 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(' kpakple =%spellout-cardinal=),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(' kple =%spellout-cardinal=),
 				},
 				'100000' => {
 					base_value => q(100000),
+					divisor => q(100000),
 					rule => q(' =%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(100000),
+					divisor => q(100000),
 					rule => q(' =%spellout-cardinal=),
 				},
 			},
@@ -163,14 +194,17 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(' kple =%spellout-cardinal=),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(' =%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(' =%spellout-cardinal=),
 				},
 			},
@@ -178,22 +212,27 @@ has 'algorithmic_number_format_data' => (
 		'digits-ordinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(−→→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=#,##0= lia),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(=#,##0= tɔ),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=#,##0= lia),
 				},
 				'max' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=#,##0= lia),
 				},
 			},
@@ -202,62 +241,77 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ɖekeo),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(ɖekɛ),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(eve),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(etɔ̃),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(ene),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(atɔ̃),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(ade),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(adre),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(enyi),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(asieke),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(ewo),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(wui→→),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(bla←←[ vɔ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(alafa ←%spellout-cardinal←[ →%%after-hundreds→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(akpe ←%spellout-cardinal←[→%%after-thousands→]),
 				},
 				'100000' => {
@@ -267,22 +321,27 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(miliɔn ←%spellout-cardinal←[→%%after-millions→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(miliɔn akpe ←%spellout-cardinal←[→%%after-millions→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(biliɔn ←%spellout-cardinal←[→%%after-billions→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -290,28 +349,35 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(→→ xlẽyimegbee),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ɖekeo),
 				},
 				'0.x' => {
+					divisor => q(1),
 					rule => q(kakɛ →→),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← kple kakɛ →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(ɖeka),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%%spellout-base=),
 				},
 				'max' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%%spellout-base=),
 				},
 			},
@@ -320,10 +386,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 			},
@@ -332,12 +400,15 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 			},
@@ -345,25 +416,31 @@ has 'algorithmic_number_format_data' => (
 		'spellout-ordinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(→→ xlẽyimegbee),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ɖekeolia),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,##0.0=lia),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(gbãtɔ),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=lia),
 				},
 				'max' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=lia),
 				},
 			},
@@ -4526,181 +4603,181 @@ has 'day_period_data' => (
 			if ($_ eq 'generic') {
 				return 'night' if $time >= 2100
 					&& $time < 400;
+				return 'afternoon' if $time >= 1400
+					&& $time < 1800;
+				return 'earlyAfternoon' if $time >= 1200
+					&& $time < 1400;
 				return 'weeHours' if $time >= 0400
 					&& $time < 0500;
 				return 'evening' if $time >= 1800
 					&& $time < 2100;
-				return 'afternoon' if $time >= 1400
-					&& $time < 1800;
 				return 'morning' if $time >= 0500
 					&& $time < 1200;
-				return 'earlyAfternoon' if $time >= 1200
-					&& $time < 1400;
-			last SWITCH;
-			}
-			if ($_ eq 'gregorian') {
-				return 'night' if $time >= 2100
-					&& $time < 400;
-				return 'weeHours' if $time >= 0400
-					&& $time < 0500;
-				return 'evening' if $time >= 1800
-					&& $time < 2100;
-				return 'afternoon' if $time >= 1400
-					&& $time < 1800;
-				return 'morning' if $time >= 0500
-					&& $time < 1200;
-				return 'earlyAfternoon' if $time >= 1200
-					&& $time < 1400;
-			last SWITCH;
-			}
-			if ($_ eq 'roc') {
-				return 'night' if $time >= 2100
-					&& $time < 400;
-				return 'weeHours' if $time >= 0400
-					&& $time < 0500;
-				return 'evening' if $time >= 1800
-					&& $time < 2100;
-				return 'afternoon' if $time >= 1400
-					&& $time < 1800;
-				return 'morning' if $time >= 0500
-					&& $time < 1200;
-				return 'earlyAfternoon' if $time >= 1200
-					&& $time < 1400;
-			last SWITCH;
-			}
-			if ($_ eq 'hebrew') {
-				return 'night' if $time >= 2100
-					&& $time < 400;
-				return 'weeHours' if $time >= 0400
-					&& $time < 0500;
-				return 'evening' if $time >= 1800
-					&& $time < 2100;
-				return 'afternoon' if $time >= 1400
-					&& $time < 1800;
-				return 'morning' if $time >= 0500
-					&& $time < 1200;
-				return 'earlyAfternoon' if $time >= 1200
-					&& $time < 1400;
-			last SWITCH;
-			}
-			if ($_ eq 'ethiopic') {
-				return 'night' if $time >= 2100
-					&& $time < 400;
-				return 'weeHours' if $time >= 0400
-					&& $time < 0500;
-				return 'evening' if $time >= 1800
-					&& $time < 2100;
-				return 'afternoon' if $time >= 1400
-					&& $time < 1800;
-				return 'morning' if $time >= 0500
-					&& $time < 1200;
-				return 'earlyAfternoon' if $time >= 1200
-					&& $time < 1400;
-			last SWITCH;
-			}
-			if ($_ eq 'chinese') {
-				return 'night' if $time >= 2100
-					&& $time < 400;
-				return 'weeHours' if $time >= 0400
-					&& $time < 0500;
-				return 'evening' if $time >= 1800
-					&& $time < 2100;
-				return 'afternoon' if $time >= 1400
-					&& $time < 1800;
-				return 'morning' if $time >= 0500
-					&& $time < 1200;
-				return 'earlyAfternoon' if $time >= 1200
-					&& $time < 1400;
 			last SWITCH;
 			}
 			if ($_ eq 'persian') {
 				return 'night' if $time >= 2100
 					&& $time < 400;
+				return 'afternoon' if $time >= 1400
+					&& $time < 1800;
+				return 'earlyAfternoon' if $time >= 1200
+					&& $time < 1400;
 				return 'weeHours' if $time >= 0400
 					&& $time < 0500;
 				return 'evening' if $time >= 1800
 					&& $time < 2100;
-				return 'afternoon' if $time >= 1400
-					&& $time < 1800;
 				return 'morning' if $time >= 0500
 					&& $time < 1200;
-				return 'earlyAfternoon' if $time >= 1200
-					&& $time < 1400;
 			last SWITCH;
 			}
-			if ($_ eq 'buddhist') {
+			if ($_ eq 'roc') {
 				return 'night' if $time >= 2100
 					&& $time < 400;
+				return 'afternoon' if $time >= 1400
+					&& $time < 1800;
+				return 'earlyAfternoon' if $time >= 1200
+					&& $time < 1400;
 				return 'weeHours' if $time >= 0400
 					&& $time < 0500;
 				return 'evening' if $time >= 1800
 					&& $time < 2100;
-				return 'afternoon' if $time >= 1400
-					&& $time < 1800;
 				return 'morning' if $time >= 0500
 					&& $time < 1200;
-				return 'earlyAfternoon' if $time >= 1200
-					&& $time < 1400;
-			last SWITCH;
-			}
-			if ($_ eq 'japanese') {
-				return 'night' if $time >= 2100
-					&& $time < 400;
-				return 'weeHours' if $time >= 0400
-					&& $time < 0500;
-				return 'evening' if $time >= 1800
-					&& $time < 2100;
-				return 'afternoon' if $time >= 1400
-					&& $time < 1800;
-				return 'morning' if $time >= 0500
-					&& $time < 1200;
-				return 'earlyAfternoon' if $time >= 1200
-					&& $time < 1400;
 			last SWITCH;
 			}
 			if ($_ eq 'indian') {
 				return 'night' if $time >= 2100
 					&& $time < 400;
+				return 'afternoon' if $time >= 1400
+					&& $time < 1800;
+				return 'earlyAfternoon' if $time >= 1200
+					&& $time < 1400;
 				return 'weeHours' if $time >= 0400
 					&& $time < 0500;
 				return 'evening' if $time >= 1800
 					&& $time < 2100;
-				return 'afternoon' if $time >= 1400
-					&& $time < 1800;
 				return 'morning' if $time >= 0500
 					&& $time < 1200;
-				return 'earlyAfternoon' if $time >= 1200
-					&& $time < 1400;
 			last SWITCH;
 			}
 			if ($_ eq 'coptic') {
 				return 'night' if $time >= 2100
 					&& $time < 400;
+				return 'afternoon' if $time >= 1400
+					&& $time < 1800;
+				return 'earlyAfternoon' if $time >= 1200
+					&& $time < 1400;
 				return 'weeHours' if $time >= 0400
 					&& $time < 0500;
 				return 'evening' if $time >= 1800
 					&& $time < 2100;
-				return 'afternoon' if $time >= 1400
-					&& $time < 1800;
 				return 'morning' if $time >= 0500
 					&& $time < 1200;
-				return 'earlyAfternoon' if $time >= 1200
-					&& $time < 1400;
 			last SWITCH;
 			}
 			if ($_ eq 'islamic') {
 				return 'night' if $time >= 2100
 					&& $time < 400;
+				return 'afternoon' if $time >= 1400
+					&& $time < 1800;
+				return 'earlyAfternoon' if $time >= 1200
+					&& $time < 1400;
 				return 'weeHours' if $time >= 0400
 					&& $time < 0500;
 				return 'evening' if $time >= 1800
 					&& $time < 2100;
-				return 'afternoon' if $time >= 1400
-					&& $time < 1800;
 				return 'morning' if $time >= 0500
 					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'japanese') {
+				return 'night' if $time >= 2100
+					&& $time < 400;
+				return 'afternoon' if $time >= 1400
+					&& $time < 1800;
 				return 'earlyAfternoon' if $time >= 1200
 					&& $time < 1400;
+				return 'weeHours' if $time >= 0400
+					&& $time < 0500;
+				return 'evening' if $time >= 1800
+					&& $time < 2100;
+				return 'morning' if $time >= 0500
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'hebrew') {
+				return 'night' if $time >= 2100
+					&& $time < 400;
+				return 'afternoon' if $time >= 1400
+					&& $time < 1800;
+				return 'earlyAfternoon' if $time >= 1200
+					&& $time < 1400;
+				return 'weeHours' if $time >= 0400
+					&& $time < 0500;
+				return 'evening' if $time >= 1800
+					&& $time < 2100;
+				return 'morning' if $time >= 0500
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'ethiopic') {
+				return 'night' if $time >= 2100
+					&& $time < 400;
+				return 'afternoon' if $time >= 1400
+					&& $time < 1800;
+				return 'earlyAfternoon' if $time >= 1200
+					&& $time < 1400;
+				return 'weeHours' if $time >= 0400
+					&& $time < 0500;
+				return 'evening' if $time >= 1800
+					&& $time < 2100;
+				return 'morning' if $time >= 0500
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'chinese') {
+				return 'night' if $time >= 2100
+					&& $time < 400;
+				return 'afternoon' if $time >= 1400
+					&& $time < 1800;
+				return 'earlyAfternoon' if $time >= 1200
+					&& $time < 1400;
+				return 'weeHours' if $time >= 0400
+					&& $time < 0500;
+				return 'evening' if $time >= 1800
+					&& $time < 2100;
+				return 'morning' if $time >= 0500
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'buddhist') {
+				return 'night' if $time >= 2100
+					&& $time < 400;
+				return 'afternoon' if $time >= 1400
+					&& $time < 1800;
+				return 'earlyAfternoon' if $time >= 1200
+					&& $time < 1400;
+				return 'weeHours' if $time >= 0400
+					&& $time < 0500;
+				return 'evening' if $time >= 1800
+					&& $time < 2100;
+				return 'morning' if $time >= 0500
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'gregorian') {
+				return 'night' if $time >= 2100
+					&& $time < 400;
+				return 'afternoon' if $time >= 1400
+					&& $time < 1800;
+				return 'earlyAfternoon' if $time >= 1200
+					&& $time < 1400;
+				return 'weeHours' if $time >= 0400
+					&& $time < 0500;
+				return 'evening' if $time >= 1800
+					&& $time < 2100;
+				return 'morning' if $time >= 0500
+					&& $time < 1200;
 			last SWITCH;
 			}
 		}
@@ -4714,19 +4791,19 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
+				'wide' => {
+					'am' => q{ŋdi},
+					'night' => q{zã},
+					'earlyMorning' => q{fɔŋli},
+					'morning' => q{ŋdi},
+					'pm' => q{ɣetrɔ},
+					'afternoon' => q{ɣetrɔ},
+					'earlyAfternoon' => q{ŋdɔ},
+					'evening' => q{fiẽ},
+				},
 				'narrow' => {
 					'pm' => q{ɣ},
 					'am' => q{ŋ},
-				},
-				'wide' => {
-					'earlyAfternoon' => q{ŋdɔ},
-					'evening' => q{fiẽ},
-					'afternoon' => q{ɣetrɔ},
-					'morning' => q{ŋdi},
-					'earlyMorning' => q{fɔŋli},
-					'am' => q{ŋdi},
-					'night' => q{zã},
-					'pm' => q{ɣetrɔ},
 				},
 			},
 		},
@@ -4915,16 +4992,16 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'japanese' => {
+			MMMEd => q{E MMM d 'lia'},
+			hms => q{a 'ga' h:mm:ss},
+			ms => q{'aɖabaƒoƒo' mm:ss},
+		},
 		'buddhist' => {
 			h => q{a 'ga' h},
 			hm => q{a 'ga' h: 'aɖabaƒoƒo' mm},
 			hms => q{a 'ga' h: 'aɖabaƒoƒo' mm:ss},
 			ms => q{'ga' mm:ss},
-		},
-		'japanese' => {
-			MMMEd => q{E MMM d 'lia'},
-			hms => q{a 'ga' h:mm:ss},
-			ms => q{'aɖabaƒoƒo' mm:ss},
 		},
 		'gregorian' => {
 			Ed => q{E d},
@@ -4959,6 +5036,13 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
+		'roc' => {
+			MMMEd => q{E MMM d 'lia'},
+			h => q{a 'ga' h},
+			hm => q{a 'ga' h:mm},
+			hms => q{a 'ga' h:mm:ss},
+			ms => q{'aɖabaƒoƒo' mm:ss},
+		},
 		'generic' => {
 			Ed => q{E d},
 			Gy => q{y G},
@@ -4992,13 +5076,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{M/d/y G},
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
-		},
-		'roc' => {
-			MMMEd => q{E MMM d 'lia'},
-			h => q{a 'ga' h},
-			hm => q{a 'ga' h:mm},
-			hms => q{a 'ga' h:mm:ss},
-			ms => q{'aɖabaƒoƒo' mm:ss},
 		},
 	} },
 );

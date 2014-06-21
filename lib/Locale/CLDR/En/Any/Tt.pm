@@ -1,11 +1,11 @@
 package Locale::CLDR::En::Any::Tt;
 # This file auto generated from Data\common\main\en_TT.xml
-#	on Tue 10 Jun  8:50:17 pm GMT
+#	on Fri 20 Jun 11:21:34 pm GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';

@@ -1,11 +1,11 @@
 package Locale::CLDR::De;
 # This file auto generated from Data\common\main\de.xml
-#	on Tue 10 Jun  8:40:46 pm GMT
+#	on Fri 20 Jun 11:11:57 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,73 +26,92 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'spellout-cardinal-feminine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(null),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← Komma →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(eine),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-masculine←­hundert[­→→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-masculine←­tausend[­→→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(eine Million[ →→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-feminine← Millionen[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(eine Milliarde[ →→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-feminine← Milliarden[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(eine Billion[ →→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-feminine← Billionen[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(eine Billiarde[ →→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-feminine← Billiarden[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -100,69 +119,86 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-masculine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(null),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← Komma →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(ein),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-masculine←­hundert[­→→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-masculine←­tausend[­→→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(eine Million[ →→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-feminine← Millionen[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(eine Milliarde[ →→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-feminine← Milliarden[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(eine Billion[ →→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-feminine← Billionen[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(eine Billiarde[ →→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-feminine← Billiarden[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -171,10 +207,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-masculine=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal-masculine=),
 				},
 			},
@@ -182,157 +220,196 @@ has 'algorithmic_number_format_data' => (
 		'spellout-numbering' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(null),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← Komma →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(eins),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(zwei),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(drei),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(vier),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(fünf),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(sechs),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(sieben),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(acht),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(neun),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(zehn),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(elf),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(zwölf),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(→→zehn),
 				},
 				'16' => {
 					base_value => q(16),
+					divisor => q(10),
 					rule => q(sechzehn),
 				},
 				'17' => {
 					base_value => q(17),
+					divisor => q(10),
 					rule => q(siebzehn),
 				},
 				'18' => {
 					base_value => q(18),
+					divisor => q(10),
 					rule => q(→→zehn),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-masculine→­und­]zwanzig),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-masculine→­und­]dreißig),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-masculine→­und­]vierzig),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-masculine→­und­]fünfzig),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-masculine→­und­]sechzig),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-masculine→­und­]siebzig),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-masculine→­und­]achtzig),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-masculine→­und­]neunzig),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-masculine←­hundert[­→→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-masculine←­tausend[­→→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(eine Million[ →→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-feminine← Millionen[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(eine Milliarde[ →→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-feminine← Milliarden[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(eine Billion[ →→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-feminine← Billionen[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(eine Billiarde[ →→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-feminine← Billiarden[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -340,13 +417,16 @@ has 'algorithmic_number_format_data' => (
 		'spellout-numbering-year' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'1100' => {
@@ -356,10 +436,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(=%spellout-numbering=),
 				},
 				'max' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(=%spellout-numbering=),
 				},
 			},
@@ -367,101 +449,126 @@ has 'algorithmic_number_format_data' => (
 		'spellout-ordinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(nullte),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,##0.#=),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(erste),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(zweite),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(dritte),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(vierte),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(fünfte),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(sechste),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(siebte),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(achte),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=te),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%spellout-numbering=ste),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-masculine←­hundert→%%ste→),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal-masculine←­tausend→%%ste→),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(eine Million→%%ste2→),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-feminine← Millionen→%%ste2→),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(eine Milliarde→%%ste2→),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-feminine← Milliarden→%%ste2→),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(eine Billion→%%ste→),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-feminine← Billionen→%%ste2→),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(eine Billiarde→%%ste2→),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-feminine← Billiarden→%%ste2→),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=.),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=.),
 				},
 			},
@@ -470,14 +577,17 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ste),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(­=%spellout-ordinal=),
 				},
 				'max' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(­=%spellout-ordinal=),
 				},
 			},
@@ -486,14 +596,17 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ste),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-ordinal=),
 				},
 				'max' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' =%spellout-ordinal=),
 				},
 			},
@@ -4862,116 +4975,116 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'buddhist') {
+			if ($_ eq 'islamic') {
+				return 'noon' if $time == 1200;
+				return 'evening' if $time >= 1700
+					&& $time < 2100;
+				return 'earlyMorning' if $time >= 000
+					&& $time < 900;
 				return 'morning' if $time >= 900
 					&& $time < 1200;
 				return 'night' if $time >= 2100
 					&& $time < 2400;
 				return 'afternoon' if $time > 1200
 					&& $time < 1700;
-				return 'evening' if $time >= 1700
-					&& $time < 2100;
-				return 'earlyMorning' if $time >= 000
-					&& $time < 900;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'japanese') {
-				return 'morning' if $time >= 900
-					&& $time < 1200;
-				return 'night' if $time >= 2100
-					&& $time < 2400;
-				return 'afternoon' if $time > 1200
-					&& $time < 1700;
-				return 'evening' if $time >= 1700
-					&& $time < 2100;
-				return 'earlyMorning' if $time >= 000
-					&& $time < 900;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'gregorian') {
-				return 'morning' if $time >= 900
-					&& $time < 1200;
-				return 'night' if $time >= 2100
-					&& $time < 2400;
-				return 'afternoon' if $time > 1200
-					&& $time < 1700;
-				return 'evening' if $time >= 1700
-					&& $time < 2100;
-				return 'earlyMorning' if $time >= 000
-					&& $time < 900;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'generic') {
-				return 'morning' if $time >= 900
-					&& $time < 1200;
-				return 'night' if $time >= 2100
-					&& $time < 2400;
-				return 'afternoon' if $time > 1200
-					&& $time < 1700;
-				return 'evening' if $time >= 1700
-					&& $time < 2100;
-				return 'earlyMorning' if $time >= 000
-					&& $time < 900;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'chinese') {
-				return 'morning' if $time >= 900
-					&& $time < 1200;
-				return 'night' if $time >= 2100
-					&& $time < 2400;
-				return 'afternoon' if $time > 1200
-					&& $time < 1700;
-				return 'evening' if $time >= 1700
-					&& $time < 2100;
-				return 'earlyMorning' if $time >= 000
-					&& $time < 900;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'hebrew') {
-				return 'morning' if $time >= 900
-					&& $time < 1200;
-				return 'night' if $time >= 2100
-					&& $time < 2400;
-				return 'afternoon' if $time > 1200
-					&& $time < 1700;
-				return 'evening' if $time >= 1700
-					&& $time < 2100;
-				return 'earlyMorning' if $time >= 000
-					&& $time < 900;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'roc') {
+				return 'noon' if $time == 1200;
+				return 'evening' if $time >= 1700
+					&& $time < 2100;
+				return 'earlyMorning' if $time >= 000
+					&& $time < 900;
 				return 'morning' if $time >= 900
 					&& $time < 1200;
 				return 'night' if $time >= 2100
 					&& $time < 2400;
 				return 'afternoon' if $time > 1200
 					&& $time < 1700;
-				return 'evening' if $time >= 1700
-					&& $time < 2100;
-				return 'earlyMorning' if $time >= 000
-					&& $time < 900;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'islamic') {
+			if ($_ eq 'generic') {
+				return 'noon' if $time == 1200;
+				return 'evening' if $time >= 1700
+					&& $time < 2100;
+				return 'earlyMorning' if $time >= 000
+					&& $time < 900;
 				return 'morning' if $time >= 900
 					&& $time < 1200;
 				return 'night' if $time >= 2100
 					&& $time < 2400;
 				return 'afternoon' if $time > 1200
 					&& $time < 1700;
+			last SWITCH;
+			}
+			if ($_ eq 'hebrew') {
+				return 'noon' if $time == 1200;
 				return 'evening' if $time >= 1700
 					&& $time < 2100;
 				return 'earlyMorning' if $time >= 000
 					&& $time < 900;
+				return 'morning' if $time >= 900
+					&& $time < 1200;
+				return 'night' if $time >= 2100
+					&& $time < 2400;
+				return 'afternoon' if $time > 1200
+					&& $time < 1700;
+			last SWITCH;
+			}
+			if ($_ eq 'chinese') {
 				return 'noon' if $time == 1200;
+				return 'evening' if $time >= 1700
+					&& $time < 2100;
+				return 'earlyMorning' if $time >= 000
+					&& $time < 900;
+				return 'morning' if $time >= 900
+					&& $time < 1200;
+				return 'night' if $time >= 2100
+					&& $time < 2400;
+				return 'afternoon' if $time > 1200
+					&& $time < 1700;
+			last SWITCH;
+			}
+			if ($_ eq 'gregorian') {
+				return 'noon' if $time == 1200;
+				return 'evening' if $time >= 1700
+					&& $time < 2100;
+				return 'earlyMorning' if $time >= 000
+					&& $time < 900;
+				return 'morning' if $time >= 900
+					&& $time < 1200;
+				return 'night' if $time >= 2100
+					&& $time < 2400;
+				return 'afternoon' if $time > 1200
+					&& $time < 1700;
+			last SWITCH;
+			}
+			if ($_ eq 'buddhist') {
+				return 'noon' if $time == 1200;
+				return 'evening' if $time >= 1700
+					&& $time < 2100;
+				return 'earlyMorning' if $time >= 000
+					&& $time < 900;
+				return 'morning' if $time >= 900
+					&& $time < 1200;
+				return 'night' if $time >= 2100
+					&& $time < 2400;
+				return 'afternoon' if $time > 1200
+					&& $time < 1700;
+			last SWITCH;
+			}
+			if ($_ eq 'japanese') {
+				return 'noon' if $time == 1200;
+				return 'evening' if $time >= 1700
+					&& $time < 2100;
+				return 'earlyMorning' if $time >= 000
+					&& $time < 900;
+				return 'morning' if $time >= 900
+					&& $time < 1200;
+				return 'night' if $time >= 2100
+					&& $time < 2400;
+				return 'afternoon' if $time > 1200
+					&& $time < 1700;
 			last SWITCH;
 			}
 		}
@@ -4986,23 +5099,23 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'noon' => q{Mittag},
-					'evening' => q{abends},
-					'afternoon' => q{nachmittags},
-					'morning' => q{vormittags},
 					'am' => q{vorm.},
-					'earlyMorning' => q{morgens},
 					'night' => q{nachts},
+					'noon' => q{Mittag},
+					'morning' => q{vormittags},
+					'earlyMorning' => q{morgens},
 					'pm' => q{nachm.},
+					'afternoon' => q{nachmittags},
+					'evening' => q{abends},
 				},
 			},
 			'stand-alone' => {
 				'wide' => {
-					'morning' => q{Vormittag},
+					'afternoon' => q{Nachmittag},
 					'night' => q{Nacht},
 					'evening' => q{Abend},
-					'afternoon' => q{Nachmittag},
 					'earlyMorning' => q{Morgen},
+					'morning' => q{Vormittag},
 					'noon' => q{Mittag},
 				},
 			},
@@ -5164,38 +5277,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'chinese' => {
-			Ed => q{E, d.},
-			Gy => q{U},
-			GyMMM => q{MMM U},
-			GyMMMEd => q{E, d. MMM U},
-			GyMMMd => q{d. MMM U},
-			H => q{HH 'Uhr'},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, d.M.},
-			MMM => q{LLL},
-			MMMEd => q{E, d. MMM},
-			MMMd => q{d. MMM},
-			Md => q{d.M.},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{U},
-			yyyy => q{U},
-			yyyyM => q{M.y},
-			yyyyMEd => q{E, d.M.y},
-			yyyyMMM => q{MMM U},
-			yyyyMMMEd => q{E, d. MMM U},
-			yyyyMMMM => q{MMMM U},
-			yyyyMMMd => q{d. MMM U},
-			yyyyMd => q{d.M.y},
-			yyyyQQQ => q{QQQ U},
-			yyyyQQQQ => q{QQQQ U},
-		},
 		'generic' => {
 			Ed => q{E, d.},
 			Gy => q{y G},
@@ -5267,6 +5348,38 @@ has 'datetime_formats_available_formats' => (
 			yMd => q{d.M.y},
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
+		},
+		'chinese' => {
+			Ed => q{E, d.},
+			Gy => q{U},
+			GyMMM => q{MMM U},
+			GyMMMEd => q{E, d. MMM U},
+			GyMMMd => q{d. MMM U},
+			H => q{HH 'Uhr'},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, d.M.},
+			MMM => q{LLL},
+			MMMEd => q{E, d. MMM},
+			MMMd => q{d. MMM},
+			Md => q{d.M.},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{U},
+			yyyy => q{U},
+			yyyyM => q{M.y},
+			yyyyMEd => q{E, d.M.y},
+			yyyyMMM => q{MMM U},
+			yyyyMMMEd => q{E, d. MMM U},
+			yyyyMMMM => q{MMMM U},
+			yyyyMMMd => q{d. MMM U},
+			yyyyMd => q{d.M.y},
+			yyyyQQQ => q{QQQ U},
+			yyyyQQQQ => q{QQQQ U},
 		},
 	} },
 );

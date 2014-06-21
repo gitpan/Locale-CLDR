@@ -1,11 +1,11 @@
 package Locale::CLDR::Es::Any::Cl;
 # This file auto generated from Data\common\main\es_CL.xml
-#	on Tue 10 Jun  8:52:08 pm GMT
+#	on Fri 20 Jun 11:23:45 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -19,7 +19,9 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 	} },
 );
 

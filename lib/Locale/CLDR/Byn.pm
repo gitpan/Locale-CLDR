@@ -1,11 +1,11 @@
 package Locale::CLDR::Byn;
 # This file auto generated from Data\common\main\byn.xml
-#	on Tue 10 Jun  8:34:55 pm GMT
+#	on Fri 20 Jun 11:05:58 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';

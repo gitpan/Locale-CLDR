@@ -1,11 +1,11 @@
 package Locale::CLDR::Ff;
 # This file auto generated from Data\common\main\ff.xml
-#	on Tue 10 Jun  8:59:04 pm GMT
+#	on Fri 20 Jun 11:30:24 pm GMT
 # XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';

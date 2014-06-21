@@ -1,11 +1,11 @@
 package Locale::CLDR::Lo;
 # This file auto generated from Data\common\main\lo.xml
-#	on Tue 10 Jun  9:46:07 pm GMT
+#	on Sat 21 Jun 12:17:51 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,19 +26,24 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'alt-ones' => {
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(ເອັດ),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 			},
@@ -46,14 +51,17 @@ has 'algorithmic_number_format_data' => (
 		'digits-ordinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(ที่−→#,##0→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ที่​=#,##0=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ที่​=#,##0=),
 				},
 			},
@@ -61,89 +69,111 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(ลบ​→→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ศูนย์),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←←​จุด​→→→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(ໜຶ່ງ),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(ສອງ),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(ສາມ),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(ສີ່),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(ຫ້າ),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(ຫົກ),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(ເຈັດ),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(ແປດ),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(ເກົ້າ),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(ສິບ[​→%%alt-ones→]),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(ຊາວ[​→%%alt-ones→]),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q(←←​ສິບ[​→%%alt-ones→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←←​ร้อย[​→→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←←​พัน[​→→]),
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(←←​หมื่น[​→→]),
 				},
 				'100000' => {
 					base_value => q(100000),
+					divisor => q(100000),
 					rule => q(←←​แสน[​→→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(←←​ล้าน[​→→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -152,10 +182,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 			},
@@ -164,12 +196,15 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 			},
@@ -178,12 +213,15 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ที่​=%spellout-cardinal=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,##0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,##0.#=),
 				},
 			},
@@ -4770,8 +4808,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{ກ່ອນທ່ຽງ},
 					'pm' => q{ຫຼັງທ່ຽງ},
+					'am' => q{ກ່ອນທ່ຽງ},
 				},
 			},
 		},

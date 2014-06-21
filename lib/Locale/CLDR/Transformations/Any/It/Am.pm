@@ -1,11 +1,11 @@
 package Locale::CLDR::Transformations::Any::It::Am;
 # This file auto generated from Data\common\transforms\it-am.xml
-#	on Tue 10 Jun  8:12:38 pm GMT
+#	on Fri 20 Jun 10:43:43 pm GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';

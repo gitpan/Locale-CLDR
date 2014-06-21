@@ -1,11 +1,11 @@
 package Locale::CLDR::En::Any::Ag;
 # This file auto generated from Data\common\main\en_AG.xml
-#	on Tue 10 Jun  8:50:00 pm GMT
+#	on Fri 20 Jun 11:21:17 pm GMT
 # XML file generated 2013-08-07 23:47:50 -0500 (Wed, 07 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';

@@ -1,11 +1,11 @@
 package Locale::CLDR::Es::Any::Pa;
 # This file auto generated from Data\common\main\es_PA.xml
-#	on Tue 10 Jun  8:54:24 pm GMT
+#	on Fri 20 Jun 11:25:55 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -19,7 +19,9 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 	} },
 );
 
@@ -92,14 +94,14 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			MEd => q{E, MM/dd},
 			Md => q{MM/dd},
 			yM => q{MM/y},
 			yMEd => q{E MM/dd/y},
 			yMd => q{MM/dd/y},
 		},
-		'generic' => {
+		'gregorian' => {
 			MEd => q{E, MM/dd},
 			Md => q{MM/dd},
 			yM => q{MM/y},
@@ -122,7 +124,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH-HH},
 			},
@@ -209,7 +211,7 @@ has 'datetime_formats_interval' => (
 				y => q{MM/dd/y - MM/dd/y},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH-HH},
 			},

@@ -1,11 +1,11 @@
 package Locale::CLDR::Nnh;
 # This file auto generated from Data\common\main\nnh.xml
-#	on Tue 10 Jun 10:13:23 pm GMT
+#	on Sat 21 Jun 12:44:54 am GMT
 # XML file generated 2013-08-30 23:19:50 -0500 (Fri, 30 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -338,8 +338,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ncwònzém},
 					'am' => q{mbaʼámbaʼ},
+					'pm' => q{ncwònzém},
 				},
 			},
 		},

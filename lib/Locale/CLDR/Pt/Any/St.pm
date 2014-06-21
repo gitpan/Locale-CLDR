@@ -1,11 +1,11 @@
 package Locale::CLDR::Pt::Any::St;
 # This file auto generated from Data\common\main\pt_ST.xml
-#	on Tue 10 Jun 10:21:28 pm GMT
+#	on Sat 21 Jun 12:53:05 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -19,7 +19,9 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 	} },
 );
 

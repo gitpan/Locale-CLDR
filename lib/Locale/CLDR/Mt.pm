@@ -1,11 +1,11 @@
 package Locale::CLDR::Mt;
 # This file auto generated from Data\common\main\mt.xml
-#	on Tue 10 Jun 10:04:18 pm GMT
+#	on Sat 21 Jun 12:35:47 am GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,19 +26,24 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'and-typeA-feminine' => {
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' u =%spellout-cardinal-feminine=),
 				},
 				'max' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' u =%spellout-cardinal-feminine=),
 				},
 			},
@@ -47,14 +52,17 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' u =%spellout-cardinal-masculine=),
 				},
 				'max' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' u =%spellout-cardinal-masculine=),
 				},
 			},
@@ -63,14 +71,17 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' u =%%spellout-cardinal-typeB-feminine=),
 				},
 				'max' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' u =%%spellout-cardinal-typeB-feminine=),
 				},
 			},
@@ -79,14 +90,17 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' u =%%spellout-cardinal-typeB-masculine=),
 				},
 				'max' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(' u =%%spellout-cardinal-typeB-masculine=),
 				},
 			},
@@ -95,10 +109,12 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(&[last primary ignorable ] ←← ' ' ←← ',' ←← '-' ←← '­'),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(&[last primary ignorable ] ←← ' ' ←← ',' ←← '-' ←← '­'),
 				},
 			},
@@ -106,149 +122,186 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-feminine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(żero),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← punt →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(waħda),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(żewġ),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(tliet),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(erbaʼ),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(ħames),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(sitt),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(sebaʼ),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(tmien),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(disaʼ),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(għaxar),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(ħdax-il),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(tnax-il),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(tlettax-il),
 				},
 				'14' => {
 					base_value => q(14),
+					divisor => q(10),
 					rule => q(erbatax-il),
 				},
 				'15' => {
 					base_value => q(15),
+					divisor => q(10),
 					rule => q(ħmistax-il),
 				},
 				'16' => {
 					base_value => q(16),
+					divisor => q(10),
 					rule => q(sittax-il),
 				},
 				'17' => {
 					base_value => q(17),
+					divisor => q(10),
 					rule => q(sbatax-il),
 				},
 				'18' => {
 					base_value => q(18),
+					divisor => q(10),
 					rule => q(tmintax-il),
 				},
 				'19' => {
 					base_value => q(19),
+					divisor => q(10),
 					rule => q(dsatax-il),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-feminine→ u ]għoxrin),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-feminine→ u ]tletin),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-feminine→ u ]erbgħin),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-feminine→ u ]ħamsin),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-feminine→ u ]sittin),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-feminine→ u ]sebgħin),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-feminine→ u ]tmenin),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-feminine→ u ]disgħin),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(mitt),
 				},
 				'101' => {
 					base_value => q(101),
+					divisor => q(100),
 					rule => q(mija u →%spellout-cardinal-feminine→),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(mitejn[ u →%spellout-cardinal-feminine→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-masculine← mija[→%%and-typeA-feminine→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(elf[→%%and-typeA-feminine→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(elfejn[→%%and-typeA-feminine→]),
 				},
 				'3000' => {
 					base_value => q(3000),
+					divisor => q(1000),
 					rule => q(←%%thousands← elef[→%%and-typeA-feminine→]),
 				},
 				'11000' => {
@@ -258,10 +311,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(miljun[→%%and-typeA-feminine→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← miljuni[→%%and-typeA-feminine→]),
 				},
 				'11000000' => {
@@ -271,10 +326,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(biljun[→%%and-typeA-feminine→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← biljuni[→%%and-typeA-feminine→]),
 				},
 				'11000000000' => {
@@ -284,10 +341,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(triljun[→%%and-typeA-feminine→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← triljuni[→%%and-typeA-feminine→]),
 				},
 				'11000000000000' => {
@@ -297,10 +356,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(kvadriljun[→%%and-typeA-feminine→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← kvadriljuni[→%%and-typeA-feminine→]),
 				},
 				'11000000000000000' => {
@@ -310,10 +371,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -321,149 +384,186 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-masculine' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(żero),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← punt →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(wieħed),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(żewġ),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(tliet),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(erbaʼ),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(ħames),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(sitt),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(sebaʼ),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(tmien),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(disaʼ),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(għaxar),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(ħdax-il),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(tnax-il),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(tlettax-il),
 				},
 				'14' => {
 					base_value => q(14),
+					divisor => q(10),
 					rule => q(erbatax-il),
 				},
 				'15' => {
 					base_value => q(15),
+					divisor => q(10),
 					rule => q(ħmistax-il),
 				},
 				'16' => {
 					base_value => q(16),
+					divisor => q(10),
 					rule => q(sittax-il),
 				},
 				'17' => {
 					base_value => q(17),
+					divisor => q(10),
 					rule => q(sbatax-il),
 				},
 				'18' => {
 					base_value => q(18),
+					divisor => q(10),
 					rule => q(tmintax-il),
 				},
 				'19' => {
 					base_value => q(19),
+					divisor => q(10),
 					rule => q(dsatax-il),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-masculine→ u ]għoxrin),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-masculine→ u ]tletin),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-masculine→ u ]erbgħin),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-masculine→ u ]ħamsin),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-masculine→ u ]sittin),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-masculine→ u ]sebgħin),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-masculine→ u ]tmenin),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q([→%spellout-cardinal-masculine→ u ]disgħin),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(mitt),
 				},
 				'101' => {
 					base_value => q(101),
+					divisor => q(100),
 					rule => q(mija u →%spellout-cardinal-masculine→),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(mitejn[ u →%spellout-cardinal-masculine→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-masculine← mija[→%%and-typeA-masculine→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(elf[→%%and-typeA-masculine→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(elfejn[→%%and-typeA-masculine→]),
 				},
 				'3000' => {
 					base_value => q(3000),
+					divisor => q(1000),
 					rule => q(←%%thousands← elef[→%%and-typeA-masculine→]),
 				},
 				'11000' => {
@@ -473,10 +573,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(miljun[→%%and-typeA-masculine→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← miljuni[→%%and-typeA-masculine→]),
 				},
 				'11000000' => {
@@ -486,10 +588,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(biljun[→%%and-typeA-masculine→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← biljuni[→%%and-typeA-masculine→]),
 				},
 				'11000000000' => {
@@ -499,10 +603,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(triljun[→%%and-typeA-masculine→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← triljuni[→%%and-typeA-masculine→]),
 				},
 				'11000000000000' => {
@@ -512,10 +618,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(kvadriljun[→%%and-typeA-masculine→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← kvadriljuni[→%%and-typeA-masculine→]),
 				},
 				'11000000000000000' => {
@@ -525,10 +633,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -536,145 +646,181 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-typeB-feminine' => {
 			'private' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(żero),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← punt →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(waħda),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(tnejn),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(tlieta),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(erbgħa),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(ħamsa),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(sitta),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(sebgħa),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(tmienja),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(disgħa),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(għaxra),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(ħdax),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(tnax),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(tlettax),
 				},
 				'14' => {
 					base_value => q(14),
+					divisor => q(10),
 					rule => q(erbatax),
 				},
 				'15' => {
 					base_value => q(15),
+					divisor => q(10),
 					rule => q(ħmistax),
 				},
 				'16' => {
 					base_value => q(16),
+					divisor => q(10),
 					rule => q(sittax),
 				},
 				'17' => {
 					base_value => q(17),
+					divisor => q(10),
 					rule => q(sbatax),
 				},
 				'18' => {
 					base_value => q(18),
+					divisor => q(10),
 					rule => q(tmintax),
 				},
 				'19' => {
 					base_value => q(19),
+					divisor => q(10),
 					rule => q(dsatax),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q([→→ u ]għoxrin),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q([→→ u ]tletin),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q([→→ u ]erbgħin),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q([→→ u ]ħamsin),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q([→→ u ]sittin),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q([→→ u ]sebgħin),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q([→→ u ]tmenin),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q([→→ u ]disgħin),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(mija[ u →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(mitejn[ u →→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-masculine← mija[ u →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(elf[→%%and-typeB-feminine→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(elfejn[→%%and-typeB-feminine→]),
 				},
 				'3000' => {
 					base_value => q(3000),
+					divisor => q(1000),
 					rule => q(←%%thousands← elef[→%%and-typeB-feminine→]),
 				},
 				'11000' => {
@@ -684,10 +830,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(miljun[→%%and-typeB-feminine→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← miljuni[→%%and-typeB-feminine→]),
 				},
 				'11000000' => {
@@ -697,10 +845,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(biljun[→%%and-typeB-feminine→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← biljuni[→%%and-typeB-feminine→]),
 				},
 				'11000000000' => {
@@ -710,10 +860,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(triljun[→%%and-typeB-feminine→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← triljuni[→%%and-typeB-feminine→]),
 				},
 				'11000000000000' => {
@@ -723,10 +875,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(kvadriljun[→%%and-typeB-feminine→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← kvadriljuni[→%%and-typeB-feminine→]),
 				},
 				'11000000000000000' => {
@@ -736,10 +890,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -747,145 +903,181 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-typeB-masculine' => {
 			'private' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(żero),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← punt →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(wieħed),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(tnejn),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(tlieta),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(erbgħa),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(ħamsa),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(sitta),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(sebgħa),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(tmienja),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(disgħa),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(għaxra),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(ħdax),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(tnax),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(tlettax),
 				},
 				'14' => {
 					base_value => q(14),
+					divisor => q(10),
 					rule => q(erbatax),
 				},
 				'15' => {
 					base_value => q(15),
+					divisor => q(10),
 					rule => q(ħmistax),
 				},
 				'16' => {
 					base_value => q(16),
+					divisor => q(10),
 					rule => q(sittax),
 				},
 				'17' => {
 					base_value => q(17),
+					divisor => q(10),
 					rule => q(sbatax),
 				},
 				'18' => {
 					base_value => q(18),
+					divisor => q(10),
 					rule => q(tmintax),
 				},
 				'19' => {
 					base_value => q(19),
+					divisor => q(10),
 					rule => q(dsatax),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q([→→ u ]għoxrin),
 				},
 				'30' => {
 					base_value => q(30),
+					divisor => q(10),
 					rule => q([→→ u ]tletin),
 				},
 				'40' => {
 					base_value => q(40),
+					divisor => q(10),
 					rule => q([→→ u ]erbgħin),
 				},
 				'50' => {
 					base_value => q(50),
+					divisor => q(10),
 					rule => q([→→ u ]ħamsin),
 				},
 				'60' => {
 					base_value => q(60),
+					divisor => q(10),
 					rule => q([→→ u ]sittin),
 				},
 				'70' => {
 					base_value => q(70),
+					divisor => q(10),
 					rule => q([→→ u ]sebgħin),
 				},
 				'80' => {
 					base_value => q(80),
+					divisor => q(10),
 					rule => q([→→ u ]tmenin),
 				},
 				'90' => {
 					base_value => q(90),
+					divisor => q(10),
 					rule => q([→→ u ]disgħin),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(mija[ u →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(mitejn[ u →→]),
 				},
 				'300' => {
 					base_value => q(300),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal-masculine← mija[ u →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(elf[→%%and-typeB-masculine→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(elfejn[→%%and-typeB-masculine→]),
 				},
 				'3000' => {
 					base_value => q(3000),
+					divisor => q(1000),
 					rule => q(←%%thousands← elef[→%%and-typeB-masculine→]),
 				},
 				'11000' => {
@@ -895,10 +1087,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(miljun[→%%and-typeB-masculine→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%spellout-cardinal-masculine← miljuni[→%%and-typeB-masculine→]),
 				},
 				'11000000' => {
@@ -908,10 +1102,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(biljun[→%%and-typeB-masculine→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%spellout-cardinal-masculine← biljuni[→%%and-typeB-masculine→]),
 				},
 				'11000000000' => {
@@ -921,10 +1117,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(triljun[→%%and-typeB-masculine→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal-masculine← triljuni[→%%and-typeB-masculine→]),
 				},
 				'11000000000000' => {
@@ -934,10 +1132,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(kvadriljun[→%%and-typeB-masculine→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%spellout-cardinal-masculine← kvadriljuni[→%%and-typeB-masculine→]),
 				},
 				'11000000000000000' => {
@@ -947,10 +1147,12 @@ has 'algorithmic_number_format_data' => (
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -959,10 +1161,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%%spellout-cardinal-typeB-masculine=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%%spellout-cardinal-typeB-masculine=),
 				},
 			},
@@ -971,12 +1175,15 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 			},
@@ -985,42 +1192,52 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(ERROR-=0=),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(tlitt),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(erbat),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(ħamest),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(sitt),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(sebat),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(tmint),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(disat),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(għaxart),
 				},
 				'max' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(għaxart),
 				},
 			},
@@ -2275,13 +2492,13 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			MMMMd => q{d 'ta'’ MMMM},
-			yMMMM => q{MMMM 'ta'’ y},
-		},
 		'generic' => {
 			MMMMd => q{d 'ta'’ MMMM},
 			yMMMM => q{MMMM 'ta'’ y G},
+		},
+		'gregorian' => {
+			MMMMd => q{d 'ta'’ MMMM},
+			yMMMM => q{MMMM 'ta'’ y},
 		},
 	} },
 );
@@ -2299,93 +2516,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			H => {
-				H => q{HH-HH},
-			},
-			Hm => {
-				H => q{HH:mm-HH:mm},
-				m => q{HH:mm-HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm-HH:mm v},
-				m => q{HH:mm-HH:mm v},
-			},
-			Hv => {
-				H => q{HH-HH v},
-			},
-			M => {
-				M => q{M-M},
-			},
-			MEd => {
-				M => q{E, dd/MM - E, dd/MM},
-				d => q{E, dd/MM - E, dd/MM},
-			},
-			MMM => {
-				M => q{MMM-MMM},
-			},
-			MMMEd => {
-				M => q{E, d 'ta'’ MMM - E, d 'ta'’ MMM},
-				d => q{E, d 'ta'’ - E, d 'ta'’ MMM},
-			},
-			MMMd => {
-				M => q{d 'ta'’ MMM - d 'ta'’ MMM},
-				d => q{d 'ta'’-d 'ta'’ MMM},
-			},
-			Md => {
-				M => q{dd/MM - dd/MM},
-				d => q{dd/MM - dd/MM},
-			},
-			d => {
-				d => q{d-d},
-			},
-			fallback => '{0} - {1}',
-			h => {
-				h => q{h-h a},
-			},
-			hm => {
-				h => q{h:mm-h:mm a},
-				m => q{h:mm-h:mm a},
-			},
-			hmv => {
-				h => q{h:mm-h:mm a v},
-				m => q{h:mm-h:mm a v},
-			},
-			hv => {
-				h => q{h-h a v},
-			},
-			y => {
-				y => q{y-y},
-			},
-			yM => {
-				M => q{MM/y - MM/y},
-				y => q{MM/y - MM/y},
-			},
-			yMEd => {
-				M => q{E, dd/MM/y - E, dd/MM/y},
-				d => q{E, dd/MM/y - E, dd/MM/y},
-				y => q{E, dd/MM/y - E, dd/MM/y},
-			},
-			yMMM => {
-				M => q{MMM-MMM y},
-				y => q{MMM y - MMM y},
-			},
-			yMMMEd => {
-				M => q{E, d 'ta'’ MMM - E, d 'ta'’ MMM y},
-				d => q{E, d 'ta'’ - E, d 'ta'’ MMM y},
-				y => q{E, d 'ta'’ MMM y - E, d 'ta'’ MMM y},
-			},
-			yMMMd => {
-				M => q{d 'ta'’ MMM - d 'ta'’ MMM y},
-				d => q{d 'ta'’-d 'ta'’ MMM y},
-				y => q{d 'ta'’ MMM y - d 'ta'’ MMM y},
-			},
-			yMd => {
-				M => q{dd/MM/y - dd/MM/y},
-				d => q{dd/MM/y - dd/MM/y},
-				y => q{dd/MM/y - dd/MM/y},
-			},
-		},
 		'generic' => {
 			H => {
 				H => q{HH-HH},
@@ -2471,6 +2601,93 @@ has 'datetime_formats_interval' => (
 				M => q{dd/MM/y - dd/MM/y G},
 				d => q{dd/MM/y - dd/MM/y G},
 				y => q{dd/MM/y - dd/MM/y G},
+			},
+		},
+		'gregorian' => {
+			H => {
+				H => q{HH-HH},
+			},
+			Hm => {
+				H => q{HH:mm-HH:mm},
+				m => q{HH:mm-HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm-HH:mm v},
+				m => q{HH:mm-HH:mm v},
+			},
+			Hv => {
+				H => q{HH-HH v},
+			},
+			M => {
+				M => q{M-M},
+			},
+			MEd => {
+				M => q{E, dd/MM - E, dd/MM},
+				d => q{E, dd/MM - E, dd/MM},
+			},
+			MMM => {
+				M => q{MMM-MMM},
+			},
+			MMMEd => {
+				M => q{E, d 'ta'’ MMM - E, d 'ta'’ MMM},
+				d => q{E, d 'ta'’ - E, d 'ta'’ MMM},
+			},
+			MMMd => {
+				M => q{d 'ta'’ MMM - d 'ta'’ MMM},
+				d => q{d 'ta'’-d 'ta'’ MMM},
+			},
+			Md => {
+				M => q{dd/MM - dd/MM},
+				d => q{dd/MM - dd/MM},
+			},
+			d => {
+				d => q{d-d},
+			},
+			fallback => '{0} - {1}',
+			h => {
+				h => q{h-h a},
+			},
+			hm => {
+				h => q{h:mm-h:mm a},
+				m => q{h:mm-h:mm a},
+			},
+			hmv => {
+				h => q{h:mm-h:mm a v},
+				m => q{h:mm-h:mm a v},
+			},
+			hv => {
+				h => q{h-h a v},
+			},
+			y => {
+				y => q{y-y},
+			},
+			yM => {
+				M => q{MM/y - MM/y},
+				y => q{MM/y - MM/y},
+			},
+			yMEd => {
+				M => q{E, dd/MM/y - E, dd/MM/y},
+				d => q{E, dd/MM/y - E, dd/MM/y},
+				y => q{E, dd/MM/y - E, dd/MM/y},
+			},
+			yMMM => {
+				M => q{MMM-MMM y},
+				y => q{MMM y - MMM y},
+			},
+			yMMMEd => {
+				M => q{E, d 'ta'’ MMM - E, d 'ta'’ MMM y},
+				d => q{E, d 'ta'’ - E, d 'ta'’ MMM y},
+				y => q{E, d 'ta'’ MMM y - E, d 'ta'’ MMM y},
+			},
+			yMMMd => {
+				M => q{d 'ta'’ MMM - d 'ta'’ MMM y},
+				d => q{d 'ta'’-d 'ta'’ MMM y},
+				y => q{d 'ta'’ MMM y - d 'ta'’ MMM y},
+			},
+			yMd => {
+				M => q{dd/MM/y - dd/MM/y},
+				d => q{dd/MM/y - dd/MM/y},
+				y => q{dd/MM/y - dd/MM/y},
 			},
 		},
 	} },

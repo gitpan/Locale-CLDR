@@ -1,11 +1,11 @@
 package Locale::CLDR::Kl;
 # This file auto generated from Data\common\main\kl.xml
-#	on Tue 10 Jun  9:33:41 pm GMT
+#	on Sat 21 Jun 12:05:27 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,99 +26,124 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'numbertimes' => {
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(ataaseq),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(marlunnik),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(pingasunik),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(sisamanik),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(tallimanik),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(arfinilinnik),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(arfineq-marlunnik),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(arfineq-pingasunik),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(arfineq-sisamanik),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(qulinik),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(aqqanilinik),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(aqqaneq-marlunnik),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(aqqaneq-pingasunik),
 				},
 				'14' => {
 					base_value => q(14),
+					divisor => q(10),
 					rule => q(aqqaneq-sisamanik),
 				},
 				'15' => {
 					base_value => q(15),
+					divisor => q(10),
 					rule => q(aqqaneq-tallimanik),
 				},
 				'16' => {
 					base_value => q(16),
+					divisor => q(10),
 					rule => q(arfersanilinnik),
 				},
 				'17' => {
 					base_value => q(17),
+					divisor => q(10),
 					rule => q(arfersaneq-marlunnik),
 				},
 				'18' => {
 					base_value => q(18),
+					divisor => q(10),
 					rule => q(arfersaneq-pingasunik),
 				},
 				'19' => {
 					base_value => q(19),
+					divisor => q(10),
 					rule => q(arfersaneq-sisamanik),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(←%%numbertimes← qulillit[ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(uutritit[ →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(←%%numbertimes← uutritillit[ →→]),
 				},
 				'max' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(←%%numbertimes← uutritillit[ →→]),
 				},
 			},
@@ -126,149 +151,186 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(minus →→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(nuulu),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←← komma →→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(ataaseq),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(marluk),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(pingasut),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(sisamat),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(tallimat),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(arfinillit),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(arfineq-marluk),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(arfineq-pingasut),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(arfineq-sisamat),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(qulit),
 				},
 				'11' => {
 					base_value => q(11),
+					divisor => q(10),
 					rule => q(aqqanilit),
 				},
 				'12' => {
 					base_value => q(12),
+					divisor => q(10),
 					rule => q(aqqaneq-marluk),
 				},
 				'13' => {
 					base_value => q(13),
+					divisor => q(10),
 					rule => q(aqqaneq-pingasut),
 				},
 				'14' => {
 					base_value => q(14),
+					divisor => q(10),
 					rule => q(aqqaneq-sisamat),
 				},
 				'15' => {
 					base_value => q(15),
+					divisor => q(10),
 					rule => q(aqqaneq-tallimat),
 				},
 				'16' => {
 					base_value => q(16),
+					divisor => q(10),
 					rule => q(arfersanillit),
 				},
 				'17' => {
 					base_value => q(17),
+					divisor => q(10),
 					rule => q(arfersaneq-marluk),
 				},
 				'18' => {
 					base_value => q(18),
+					divisor => q(10),
 					rule => q(arfersaneq-pingasut),
 				},
 				'19' => {
 					base_value => q(19),
+					divisor => q(10),
 					rule => q(arfersaneq-sisamat),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(←%%numbertimes← qulillit[ →→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(uutritit[ →→]),
 				},
 				'200' => {
 					base_value => q(200),
+					divisor => q(100),
 					rule => q(←%%numbertimes← uutritillit[ →→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(tuusintit[ →→]),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(←%%numbertimes← tuusintillit[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
+					divisor => q(1000000),
 					rule => q(millionit[ →→]),
 				},
 				'2000000' => {
 					base_value => q(2000000),
+					divisor => q(1000000),
 					rule => q(←%%numbertimes← millionillit[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
+					divisor => q(1000000000),
 					rule => q(milliardit[ →→]),
 				},
 				'2000000000' => {
 					base_value => q(2000000000),
+					divisor => q(1000000000),
 					rule => q(←%%numbertimes← milliardillit[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(billionit[ →→]),
 				},
 				'2000000000000' => {
 					base_value => q(2000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%%numbertimes← billioniillit[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(billiardit[ →→]),
 				},
 				'2000000000000000' => {
 					base_value => q(2000000000000000),
+					divisor => q(1000000000000000),
 					rule => q(←%%numbertimes← billiardillit[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,##0=),
 				},
 			},
@@ -277,10 +339,12 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 			},
@@ -289,12 +353,15 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 			},
@@ -1916,13 +1983,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
+				'wide' => {
+					'pm' => q{ulloqeqqata-kingorna},
+					'am' => q{ulloqeqqata-tungaa},
+				},
 				'abbreviated' => {
 					'am' => q{u.t.},
 					'pm' => q{u.k.},
-				},
-				'wide' => {
-					'am' => q{ulloqeqqata-tungaa},
-					'pm' => q{ulloqeqqata-kingorna},
 				},
 			},
 		},

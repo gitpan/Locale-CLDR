@@ -1,11 +1,11 @@
 package Locale::CLDR::Zh::Hant;
 # This file auto generated from Data\common\main\zh_Hant.xml
-#	on Tue 10 Jun 11:05:18 pm GMT
+#	on Sat 21 Jun  1:37:03 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.3');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
 use mro 'c3';
@@ -26,27 +26,34 @@ has 'algorithmic_number_format_data' => (
 	is => 'ro',
 	isa => 'HashRef',
 	init_arg => undef,
-	default => sub { {
+	default => sub { 
+		use bignum;
+		return {
 		'cardinal-alternate2-13' => {
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(零=%spellout-numbering=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(零一=%spellout-cardinal-alternate2=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(零=%spellout-cardinal-alternate2=),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(=%spellout-cardinal-alternate2=),
 				},
 				'max' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(=%spellout-cardinal-alternate2=),
 				},
 			},
@@ -55,18 +62,22 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(零=%spellout-numbering=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(一=%spellout-numbering=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%spellout-numbering=),
 				},
 				'max' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%spellout-numbering=),
 				},
 			},
@@ -75,22 +86,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(零=%spellout-numbering=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(零一=%spellout-cardinal-alternate2=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(零=%spellout-cardinal-alternate2=),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(=%spellout-cardinal-alternate2=),
 				},
 				'max' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(=%spellout-cardinal-alternate2=),
 				},
 			},
@@ -99,22 +115,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(零=%spellout-numbering=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(零一=%spellout-cardinal-alternate2=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(零=%spellout-cardinal-alternate2=),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(=%spellout-cardinal-alternate2=),
 				},
 				'max' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(=%spellout-cardinal-alternate2=),
 				},
 			},
@@ -123,22 +144,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(零=%spellout-numbering=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(零一=%spellout-cardinal-alternate2=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(零=%spellout-cardinal-alternate2=),
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(=%spellout-cardinal-alternate2=),
 				},
 				'max' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(=%spellout-cardinal-alternate2=),
 				},
 			},
@@ -147,22 +173,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(零=%spellout-numbering=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(零一=%spellout-cardinal-alternate2=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(零=%spellout-cardinal-alternate2=),
 				},
 				'10000000' => {
 					base_value => q(10000000),
+					divisor => q(10000000),
 					rule => q(=%spellout-cardinal-alternate2=),
 				},
 				'max' => {
 					base_value => q(10000000),
+					divisor => q(10000000),
 					rule => q(=%spellout-cardinal-alternate2=),
 				},
 			},
@@ -171,22 +202,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(零=%spellout-numbering=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(零一=%spellout-cardinal=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(零=%spellout-cardinal=),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(=%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(=%spellout-cardinal=),
 				},
 			},
@@ -195,18 +231,22 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(零=%spellout-numbering=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(一=%spellout-numbering=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%spellout-numbering=),
 				},
 				'max' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%spellout-numbering=),
 				},
 			},
@@ -215,22 +255,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(零=%spellout-numbering=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(零一=%spellout-cardinal=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(零=%spellout-cardinal=),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(=%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(=%spellout-cardinal=),
 				},
 			},
@@ -239,22 +284,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(零=%spellout-numbering=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(零一=%spellout-cardinal=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(零=%spellout-cardinal=),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(=%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(=%spellout-cardinal=),
 				},
 			},
@@ -263,22 +313,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(零=%spellout-numbering=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(零一=%spellout-cardinal=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(零=%spellout-cardinal=),
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(=%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(=%spellout-cardinal=),
 				},
 			},
@@ -287,22 +342,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(零=%spellout-numbering=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(零一=%spellout-cardinal=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(零=%spellout-cardinal=),
 				},
 				'10000000' => {
 					base_value => q(10000000),
+					divisor => q(10000000),
 					rule => q(=%spellout-cardinal=),
 				},
 				'max' => {
 					base_value => q(10000000),
+					divisor => q(10000000),
 					rule => q(=%spellout-cardinal=),
 				},
 			},
@@ -310,14 +370,17 @@ has 'algorithmic_number_format_data' => (
 		'digits-ordinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(第−→#,###0→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(第=#,###0=),
 				},
 				'max' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(第=#,###0=),
 				},
 			},
@@ -326,22 +389,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(零=%spellout-cardinal-financial=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(零壹=%spellout-cardinal-financial=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(零=%spellout-cardinal-financial=),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(=%spellout-cardinal-financial=),
 				},
 				'max' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(=%spellout-cardinal-financial=),
 				},
 			},
@@ -350,18 +418,22 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(零=%spellout-cardinal-financial=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(壹=%spellout-cardinal-financial=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%spellout-cardinal-financial=),
 				},
 				'max' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(=%spellout-cardinal-financial=),
 				},
 			},
@@ -370,22 +442,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(零=%spellout-cardinal-financial=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(零壹=%spellout-cardinal-financial=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(零=%spellout-cardinal-financial=),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(=%spellout-cardinal-financial=),
 				},
 				'max' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(=%spellout-cardinal-financial=),
 				},
 			},
@@ -394,22 +471,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(零=%spellout-cardinal-financial=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(零壹=%spellout-cardinal-financial=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(零=%spellout-cardinal-financial=),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(=%spellout-cardinal-financial=),
 				},
 				'max' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(=%spellout-cardinal-financial=),
 				},
 			},
@@ -418,22 +500,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(零=%spellout-cardinal-financial=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(零壹=%spellout-cardinal-financial=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(零=%spellout-cardinal-financial=),
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(=%spellout-cardinal-financial=),
 				},
 				'max' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(=%spellout-cardinal-financial=),
 				},
 			},
@@ -442,22 +529,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(零=%spellout-cardinal-financial=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(零壹=%spellout-cardinal-financial=),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(零=%spellout-cardinal-financial=),
 				},
 				'10000000' => {
 					base_value => q(10000000),
+					divisor => q(10000000),
 					rule => q(=%spellout-cardinal-financial=),
 				},
 				'max' => {
 					base_value => q(10000000),
+					divisor => q(10000000),
 					rule => q(=%spellout-cardinal-financial=),
 				},
 			},
@@ -465,85 +557,106 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(負→→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(零),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←←點→→→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(一),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(二),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(三),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(四),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(五),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(六),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(七),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(八),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(九),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(=%spellout-numbering=),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←←百[→%%cardinal2→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←←千[→%%cardinal3→]),
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(←←萬[→%%cardinal4→]),
 				},
 				'100000000' => {
 					base_value => q(100000000),
+					divisor => q(100000000),
 					rule => q(←←億[→%%cardinal5→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←←兆[→%%cardinal8→]),
 				},
 				'10000000000000000' => {
 					base_value => q(10000000000000000),
+					divisor => q(10000000000000000),
 					rule => q(←←京[→%%cardinal13→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,###0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,###0=),
 				},
 			},
@@ -551,85 +664,106 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-alternate2' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(負→→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(零),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=%spellout-cardinal=),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(一),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(兩),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(三),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(四),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(五),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(六),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(七),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(八),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(九),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(=%spellout-numbering=),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←←百[→%%cardinal-alternate2-2→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←←千[→%%cardinal-alternate2-3→]),
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(←←萬[→%%cardinal-alternate2-4→]),
 				},
 				'100000000' => {
 					base_value => q(100000000),
+					divisor => q(100000000),
 					rule => q(←←億[→%%cardinal-alternate2-5→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←←兆[→%%cardinal-alternate2-8→]),
 				},
 				'10000000000000000' => {
 					base_value => q(10000000000000000),
+					divisor => q(10000000000000000),
 					rule => q(←←京[→%%cardinal-alternate2-13→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,###0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,###0=),
 				},
 			},
@@ -637,89 +771,111 @@ has 'algorithmic_number_format_data' => (
 		'spellout-cardinal-financial' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(負→→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(零),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←←點→→→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(壹),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(貳),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(參),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(肆),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(伍),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(陸),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(柒),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(捌),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(玖),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(拾[→→]),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(←←拾[→→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←←佰[→%%financialnumber2→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←←仟[→%%financialnumber3→]),
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(←←萬[→%%financialnumber4→]),
 				},
 				'100000000' => {
 					base_value => q(100000000),
+					divisor => q(100000000),
 					rule => q(←←億[→%%financialnumber5→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←←兆[→%%financialnumber8→]),
 				},
 				'10000000000000000' => {
 					base_value => q(10000000000000000),
+					divisor => q(10000000000000000),
 					rule => q(←←京[→%%financialnumber13→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,###0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,###0=),
 				},
 			},
@@ -727,89 +883,111 @@ has 'algorithmic_number_format_data' => (
 		'spellout-numbering' => {
 			'public' => {
 				'-x' => {
+					divisor => q(1),
 					rule => q(負→→),
 				},
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(〇),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(←%spellout-cardinal←點→→→),
 				},
 				'1' => {
 					base_value => q(1),
+					divisor => q(1),
 					rule => q(一),
 				},
 				'2' => {
 					base_value => q(2),
+					divisor => q(1),
 					rule => q(二),
 				},
 				'3' => {
 					base_value => q(3),
+					divisor => q(1),
 					rule => q(三),
 				},
 				'4' => {
 					base_value => q(4),
+					divisor => q(1),
 					rule => q(四),
 				},
 				'5' => {
 					base_value => q(5),
+					divisor => q(1),
 					rule => q(五),
 				},
 				'6' => {
 					base_value => q(6),
+					divisor => q(1),
 					rule => q(六),
 				},
 				'7' => {
 					base_value => q(7),
+					divisor => q(1),
 					rule => q(七),
 				},
 				'8' => {
 					base_value => q(8),
+					divisor => q(1),
 					rule => q(八),
 				},
 				'9' => {
 					base_value => q(9),
+					divisor => q(1),
 					rule => q(九),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(十[→→]),
 				},
 				'20' => {
 					base_value => q(20),
+					divisor => q(10),
 					rule => q(←←十[→→]),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←%spellout-cardinal←百[→%%cardinal2→]),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←%spellout-cardinal←千[→%%cardinal3→]),
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(←%spellout-cardinal←萬[→%%cardinal4→]),
 				},
 				'100000000' => {
 					base_value => q(100000000),
+					divisor => q(100000000),
 					rule => q(←%spellout-cardinal←億[→%%cardinal5→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
+					divisor => q(1000000000000),
 					rule => q(←%spellout-cardinal←兆[→%%cardinal8→]),
 				},
 				'10000000000000000' => {
 					base_value => q(10000000000000000),
+					divisor => q(10000000000000000),
 					rule => q(←%spellout-cardinal←京[→%%cardinal13→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,###0=),
 				},
 				'max' => {
 					base_value => q(1000000000000000000),
+					divisor => q(1000000000000000000),
 					rule => q(=#,###0=),
 				},
 			},
@@ -818,89 +996,111 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(=%spellout-numbering=),
 				},
 				'1001' => {
 					base_value => q(1001),
+					divisor => q(1000),
 					rule => q(=%%spellout-numbering-year-digits=),
 				},
 				'2000' => {
 					base_value => q(2000),
+					divisor => q(1000),
 					rule => q(=%spellout-numbering=),
 				},
 				'2001' => {
 					base_value => q(2001),
+					divisor => q(1000),
 					rule => q(=%%spellout-numbering-year-digits=),
 				},
 				'3000' => {
 					base_value => q(3000),
+					divisor => q(1000),
 					rule => q(=%spellout-numbering=),
 				},
 				'3001' => {
 					base_value => q(3001),
+					divisor => q(1000),
 					rule => q(=%%spellout-numbering-year-digits=),
 				},
 				'4000' => {
 					base_value => q(4000),
+					divisor => q(1000),
 					rule => q(=%spellout-numbering=),
 				},
 				'4001' => {
 					base_value => q(4001),
+					divisor => q(1000),
 					rule => q(=%%spellout-numbering-year-digits=),
 				},
 				'5000' => {
 					base_value => q(5000),
+					divisor => q(1000),
 					rule => q(=%spellout-numbering=),
 				},
 				'5001' => {
 					base_value => q(5001),
+					divisor => q(1000),
 					rule => q(=%%spellout-numbering-year-digits=),
 				},
 				'6000' => {
 					base_value => q(6000),
+					divisor => q(1000),
 					rule => q(=%spellout-numbering=),
 				},
 				'6001' => {
 					base_value => q(6001),
+					divisor => q(1000),
 					rule => q(=%%spellout-numbering-year-digits=),
 				},
 				'7000' => {
 					base_value => q(7000),
+					divisor => q(1000),
 					rule => q(=%spellout-numbering=),
 				},
 				'7001' => {
 					base_value => q(7001),
+					divisor => q(1000),
 					rule => q(=%%spellout-numbering-year-digits=),
 				},
 				'8000' => {
 					base_value => q(8000),
+					divisor => q(1000),
 					rule => q(=%spellout-numbering=),
 				},
 				'8001' => {
 					base_value => q(8001),
+					divisor => q(1000),
 					rule => q(=%%spellout-numbering-year-digits=),
 				},
 				'9000' => {
 					base_value => q(9000),
+					divisor => q(1000),
 					rule => q(=%spellout-numbering=),
 				},
 				'9001' => {
 					base_value => q(9001),
+					divisor => q(1000),
 					rule => q(=%%spellout-numbering-year-digits=),
 				},
 				'10000' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(=%spellout-numbering=),
 				},
 				'max' => {
 					base_value => q(10000),
+					divisor => q(10000),
 					rule => q(=%spellout-numbering=),
 				},
 			},
@@ -909,22 +1109,27 @@ has 'algorithmic_number_format_data' => (
 			'private' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(=%spellout-numbering=),
 				},
 				'10' => {
 					base_value => q(10),
+					divisor => q(10),
 					rule => q(←←→→→),
 				},
 				'100' => {
 					base_value => q(100),
+					divisor => q(100),
 					rule => q(←←→→→),
 				},
 				'1000' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←←→→→),
 				},
 				'max' => {
 					base_value => q(1000),
+					divisor => q(1000),
 					rule => q(←←→→→),
 				},
 			},
@@ -933,12 +1138,15 @@ has 'algorithmic_number_format_data' => (
 			'public' => {
 				'0' => {
 					base_value => q(0),
+					divisor => q(1),
 					rule => q(第=%spellout-numbering=),
 				},
 				'x.x' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 				'max' => {
+					divisor => q(1),
 					rule => q(=#,###0.#=),
 				},
 			},
@@ -6032,198 +6240,198 @@ has 'day_period_data' => (
 		SWITCH:
 		for ($type) {
 			if ($_ eq 'japanese') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
 				return 'night' if $time >= 1800
 					&& $time < 2400;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'buddhist') {
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
 				return 'midDay' if $time >= 1200
 					&& $time < 1300;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'persian') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
 				return 'earlyMorning' if $time >= 400
 					&& $time < 600;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'chinese') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
 				return 'night' if $time >= 1800
 					&& $time < 2400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
 			last SWITCH;
 			}
-			if ($_ eq 'hebrew') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
+			if ($_ eq 'buddhist') {
 				return 'night' if $time >= 1800
 					&& $time < 2400;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'roc') {
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
 				return 'midDay' if $time >= 1200
 					&& $time < 1300;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-				return 'night' if $time >= 1800
-					&& $time < 2400;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
 			last SWITCH;
 			}
 			if ($_ eq 'ethiopic') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
 				return 'night' if $time >= 1800
 					&& $time < 2400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
 			last SWITCH;
 			}
 			if ($_ eq 'gregorian') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
 				return 'night' if $time >= 1800
 					&& $time < 2400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+			last SWITCH;
+			}
+			if ($_ eq 'hebrew') {
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+			last SWITCH;
+			}
+			if ($_ eq 'persian') {
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+			last SWITCH;
+			}
+			if ($_ eq 'roc') {
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
 			last SWITCH;
 			}
 			if ($_ eq 'generic') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
 				return 'night' if $time >= 1800
 					&& $time < 2400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
 			last SWITCH;
 			}
 			if ($_ eq 'dangi') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
 				return 'night' if $time >= 1800
 					&& $time < 2400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
 			last SWITCH;
 			}
 			if ($_ eq 'islamic') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
 				return 'night' if $time >= 1800
 					&& $time < 2400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
 			last SWITCH;
 			}
 			if ($_ eq 'coptic') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
 				return 'night' if $time >= 1800
 					&& $time < 2400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
 			last SWITCH;
 			}
 			if ($_ eq 'indian') {
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
 				return 'night' if $time >= 1800
 					&& $time < 2400;
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
 			last SWITCH;
 			}
 		}
@@ -6237,27 +6445,27 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'narrow' => {
-					'afternoon' => q{下午},
-					'noon' => q{中午},
-					'earlyMorning' => q{清晨},
-					'weeHours' => q{凌晨},
-					'am' => q{上午},
-					'midDay' => q{中午},
-					'pm' => q{下午},
-					'night' => q{晚上},
-					'morning' => q{上午},
-				},
 				'wide' => {
 					'afternoon' => q{下午},
+					'pm' => q{下午},
+					'midDay' => q{中午},
+					'night' => q{晚上},
+					'am' => q{上午},
+					'earlyMorning' => q{清晨},
+					'morning' => q{上午},
 					'noon' => q{中午},
+					'weeHours' => q{凌晨},
+				},
+				'narrow' => {
+					'weeHours' => q{凌晨},
+					'noon' => q{中午},
+					'earlyMorning' => q{清晨},
+					'morning' => q{上午},
+					'am' => q{上午},
 					'night' => q{晚上},
 					'pm' => q{下午},
-					'earlyMorning' => q{清晨},
-					'weeHours' => q{凌晨},
-					'am' => q{上午},
 					'midDay' => q{中午},
-					'morning' => q{上午},
+					'afternoon' => q{下午},
 				},
 			},
 		},
@@ -6726,7 +6934,148 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'gregorian' => {
+			EHm => q{E HH:mm},
+			EHms => q{E HH:mm:ss},
+			Ed => q{d日（E）},
+			Ehm => q{E a h:mm},
+			Ehms => q{E a h:mm:ss},
+			Gy => q{G y 年},
+			GyMMM => q{G y 年 M 月},
+			GyMMMEd => q{G y 年 M 月 d 日E},
+			GyMMMd => q{G y 年 M 月 d 日},
+			H => q{H時},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{M月},
+			MEd => q{M/d（E）},
+			MMM => q{LLL},
+			MMMEd => q{M月d日E},
+			MMMMdd => q{M月dd日},
+			MMMd => q{M月d日},
+			MMdd => q{MM/dd},
+			Md => q{M/d},
+			d => q{d日},
+			h => q{ah時},
+			hm => q{ah:mm},
+			hms => q{ah:mm:ss},
+			ms => q{mm:ss},
+			y => q{y年},
+			yM => q{y/M},
+			yMEd => q{y/M/d（E）},
+			yMM => q{y-MM},
+			yMMM => q{y年M月},
+			yMMMEd => q{y年M月d日E},
+			yMMMM => q{y年M月},
+			yMMMd => q{y年M月d日},
+			yMd => q{y/M/d},
+			yQQQ => q{y年QQQ},
+			yQQQQ => q{y年QQQQ},
+		},
+		'buddhist' => {
+			Ed => q{d日（E）},
+			Gy => q{Gy年},
+			GyMMM => q{Gy年M月},
+			GyMMMEd => q{Gy年M月d日E},
+			GyMMMd => q{Gy年M月d日},
+			M => q{M月},
+			MEd => q{M/d（E）},
+			MMM => q{LLL},
+			MMMEd => q{M月d日E},
+			MMMd => q{M月d日},
+			Md => q{M/d},
+			d => q{d日},
+			y => q{Gy年},
+			yyyy => q{Gy年},
+			yyyyM => q{Gy/M},
+			yyyyMEd => q{Gy/M/d（E）},
+			yyyyMMM => q{Gy年M月},
+			yyyyMMMEd => q{Gy年M月d日E},
+			yyyyMMMd => q{Gy年M月d日},
+			yyyyMd => q{Gy/M/d},
+			yyyyQQQ => q{Gy年QQQ},
+			yyyyQQQQ => q{Gy年QQQQ},
+		},
+		'chinese' => {
+			Ed => q{d日E},
+			Gy => q{U年},
+			GyMMM => q{U年MMM},
+			GyMMMEd => q{U年MMMd日E},
+			GyMMMd => q{U年MMMd日},
+			M => q{MMM},
+			MEd => q{M/dE},
+			MMMEd => q{MMMd日E},
+			MMMd => q{MMMd日},
+			Md => q{M/d},
+			d => q{d日},
+			y => q{U年},
+			yMd => q{U年MMMd日},
+			yyyy => q{U年},
+			yyyyM => q{U年MMM},
+			yyyyMEd => q{U年MMMd日，E},
+			yyyyMMM => q{U年MMM},
+			yyyyMMMEd => q{U年MMMd日E},
+			yyyyMMMd => q{U年MMMd日},
+			yyyyMd => q{U年MMMd日},
+			yyyyQQQ => q{U年QQQQ},
+			yyyyQQQQ => q{U年QQQQ},
+		},
+		'japanese' => {
+			Ed => q{d日（E）},
+			Gy => q{Gy年},
+			GyMMM => q{Gy年M月},
+			GyMMMEd => q{Gy年M月d日E},
+			GyMMMd => q{Gy年M月d日},
+			H => q{H時},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{M月},
+			MEd => q{M/d（E）},
+			MMM => q{LLL},
+			MMMEd => q{M月d日E},
+			MMMd => q{MMM d},
+			Md => q{M/d},
+			d => q{d日},
+			h => q{ah時},
+			hm => q{ah:mm},
+			hms => q{ah:mm:ss},
+			ms => q{mm:ss},
+			y => q{Gy年},
+			yyyy => q{Gy年},
+			yyyyM => q{Gy/M},
+			yyyyMEd => q{Gy/M/d（E）},
+			yyyyMMM => q{Gy年M月},
+			yyyyMMMEd => q{Gy年M月d日E},
+			yyyyMMMd => q{Gy年M月d日},
+			yyyyMd => q{Gy/M/d},
+			yyyyQQQ => q{Gy年QQQ},
+			yyyyQQQQ => q{Gy年QQQQ},
+		},
 		'islamic' => {
+			Ed => q{d日（E）},
+			Gy => q{Gy年},
+			GyMMM => q{Gy年M月},
+			GyMMMEd => q{Gy年M月d日E},
+			GyMMMd => q{Gy年M月d日},
+			M => q{M月},
+			MEd => q{M/d（E）},
+			MMM => q{LLL},
+			MMMEd => q{M月d日E},
+			MMMd => q{M月d日},
+			Md => q{M/d},
+			d => q{d日},
+			y => q{Gy年},
+			yyyy => q{Gy年},
+			yyyyM => q{Gy/M},
+			yyyyMEd => q{Gy/M/d（E）},
+			yyyyMMM => q{Gy年M月},
+			yyyyMMMEd => q{Gy年M月d日E},
+			yyyyMMMd => q{Gy年M月d日},
+			yyyyMd => q{Gy/M/d},
+			yyyyQQQ => q{Gy年QQQ},
+			yyyyQQQQ => q{Gy年QQQQ},
+		},
+		'roc' => {
 			Ed => q{d日（E）},
 			Gy => q{Gy年},
 			GyMMM => q{Gy年M月},
@@ -6781,147 +7130,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{G y 年 QQQ},
 			yyyyQQQQ => q{G y 年 QQQQ},
 		},
-		'gregorian' => {
-			EHm => q{E HH:mm},
-			EHms => q{E HH:mm:ss},
-			Ed => q{d日（E）},
-			Ehm => q{E a h:mm},
-			Ehms => q{E a h:mm:ss},
-			Gy => q{G y 年},
-			GyMMM => q{G y 年 M 月},
-			GyMMMEd => q{G y 年 M 月 d 日E},
-			GyMMMd => q{G y 年 M 月 d 日},
-			H => q{H時},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{M月},
-			MEd => q{M/d（E）},
-			MMM => q{LLL},
-			MMMEd => q{M月d日E},
-			MMMMdd => q{M月dd日},
-			MMMd => q{M月d日},
-			MMdd => q{MM/dd},
-			Md => q{M/d},
-			d => q{d日},
-			h => q{ah時},
-			hm => q{ah:mm},
-			hms => q{ah:mm:ss},
-			ms => q{mm:ss},
-			y => q{y年},
-			yM => q{y/M},
-			yMEd => q{y/M/d（E）},
-			yMM => q{y-MM},
-			yMMM => q{y年M月},
-			yMMMEd => q{y年M月d日E},
-			yMMMM => q{y年M月},
-			yMMMd => q{y年M月d日},
-			yMd => q{y/M/d},
-			yQQQ => q{y年QQQ},
-			yQQQQ => q{y年QQQQ},
-		},
-		'roc' => {
-			Ed => q{d日（E）},
-			Gy => q{Gy年},
-			GyMMM => q{Gy年M月},
-			GyMMMEd => q{Gy年M月d日E},
-			GyMMMd => q{Gy年M月d日},
-			M => q{M月},
-			MEd => q{M/d（E）},
-			MMM => q{LLL},
-			MMMEd => q{M月d日E},
-			MMMd => q{M月d日},
-			Md => q{M/d},
-			d => q{d日},
-			y => q{Gy年},
-			yyyy => q{Gy年},
-			yyyyM => q{Gy/M},
-			yyyyMEd => q{Gy/M/d（E）},
-			yyyyMMM => q{Gy年M月},
-			yyyyMMMEd => q{Gy年M月d日E},
-			yyyyMMMd => q{Gy年M月d日},
-			yyyyMd => q{Gy/M/d},
-			yyyyQQQ => q{Gy年QQQ},
-			yyyyQQQQ => q{Gy年QQQQ},
-		},
-		'chinese' => {
-			Ed => q{d日E},
-			Gy => q{U年},
-			GyMMM => q{U年MMM},
-			GyMMMEd => q{U年MMMd日E},
-			GyMMMd => q{U年MMMd日},
-			M => q{MMM},
-			MEd => q{M/dE},
-			MMMEd => q{MMMd日E},
-			MMMd => q{MMMd日},
-			Md => q{M/d},
-			d => q{d日},
-			y => q{U年},
-			yMd => q{U年MMMd日},
-			yyyy => q{U年},
-			yyyyM => q{U年MMM},
-			yyyyMEd => q{U年MMMd日，E},
-			yyyyMMM => q{U年MMM},
-			yyyyMMMEd => q{U年MMMd日E},
-			yyyyMMMd => q{U年MMMd日},
-			yyyyMd => q{U年MMMd日},
-			yyyyQQQ => q{U年QQQQ},
-			yyyyQQQQ => q{U年QQQQ},
-		},
-		'buddhist' => {
-			Ed => q{d日（E）},
-			Gy => q{Gy年},
-			GyMMM => q{Gy年M月},
-			GyMMMEd => q{Gy年M月d日E},
-			GyMMMd => q{Gy年M月d日},
-			M => q{M月},
-			MEd => q{M/d（E）},
-			MMM => q{LLL},
-			MMMEd => q{M月d日E},
-			MMMd => q{M月d日},
-			Md => q{M/d},
-			d => q{d日},
-			y => q{Gy年},
-			yyyy => q{Gy年},
-			yyyyM => q{Gy/M},
-			yyyyMEd => q{Gy/M/d（E）},
-			yyyyMMM => q{Gy年M月},
-			yyyyMMMEd => q{Gy年M月d日E},
-			yyyyMMMd => q{Gy年M月d日},
-			yyyyMd => q{Gy/M/d},
-			yyyyQQQ => q{Gy年QQQ},
-			yyyyQQQQ => q{Gy年QQQQ},
-		},
-		'japanese' => {
-			Ed => q{d日（E）},
-			Gy => q{Gy年},
-			GyMMM => q{Gy年M月},
-			GyMMMEd => q{Gy年M月d日E},
-			GyMMMd => q{Gy年M月d日},
-			H => q{H時},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{M月},
-			MEd => q{M/d（E）},
-			MMM => q{LLL},
-			MMMEd => q{M月d日E},
-			MMMd => q{MMM d},
-			Md => q{M/d},
-			d => q{d日},
-			h => q{ah時},
-			hm => q{ah:mm},
-			hms => q{ah:mm:ss},
-			ms => q{mm:ss},
-			y => q{Gy年},
-			yyyy => q{Gy年},
-			yyyyM => q{Gy/M},
-			yyyyMEd => q{Gy/M/d（E）},
-			yyyyMMM => q{Gy年M月},
-			yyyyMMMEd => q{Gy年M月d日E},
-			yyyyMMMd => q{Gy年M月d日},
-			yyyyMd => q{Gy/M/d},
-			yyyyQQQ => q{Gy年QQQ},
-			yyyyQQQQ => q{Gy年QQQQ},
-		},
 	} },
 );
 
@@ -6941,104 +7149,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			H => {
-				H => q{HH–HH},
-			},
-			Hm => {
-				H => q{HH:mm–HH:mm},
-				m => q{HH:mm–HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm–HH:mm [v]},
-				m => q{HH:mm–HH:mm [v]},
-			},
-			Hv => {
-				H => q{HH–HH [v]},
-			},
-			M => {
-				M => q{M月至M月},
-			},
-			MEd => {
-				M => q{M/d E至 M/d E},
-				d => q{M/d E至 M/d E},
-			},
-			MMM => {
-				M => q{LLL至LLL},
-			},
-			MMMEd => {
-				M => q{M 月 d 日E至 M 月 d 日E},
-				d => q{M 月 d 日E至 d 日E},
-			},
-			MMMM => {
-				M => q{LLLL至LLLL},
-			},
-			MMMd => {
-				M => q{M月d日至M月d日},
-				d => q{M月d日至d日},
-			},
-			Md => {
-				M => q{M/d至M/d},
-				d => q{M/d至M/d},
-			},
-			d => {
-				d => q{d日至d日},
-			},
-			fallback => '{0}至{1}',
-			h => {
-				a => q{ah時至ah時},
-				h => q{ah時至h時},
-			},
-			hm => {
-				a => q{ah:mm至ah:mm},
-				h => q{ah:mm至h:mm},
-				m => q{ah:mm至h:mm},
-			},
-			hmv => {
-				a => q{ah:mm至ah:mm [v]},
-				h => q{ah:mm至h:mm [v]},
-				m => q{ah:mm至h:mm [v]},
-			},
-			hv => {
-				a => q{ah時至ah時 [v]},
-				h => q{ah時至h時 [v]},
-			},
-			y => {
-				y => q{G y 至 y},
-			},
-			yM => {
-				M => q{G y/M 至 y/M},
-				y => q{G y/M 至 y/M},
-			},
-			yMEd => {
-				M => q{G y/M/d E至 y/M/d E},
-				d => q{G y/M/d E至 y/M/d E},
-				y => q{G y/M/d E至 y/M/d E},
-			},
-			yMMM => {
-				M => q{G y 年 M 月至 M 月},
-				y => q{G y年M月至y年M月},
-			},
-			yMMMEd => {
-				M => q{G y 年 M 月 d 日E至 M 月 d 日E},
-				d => q{G y 年 M 月 d 日E 至 d 日E},
-				y => q{G y 年 M 月 d 日E至 y 年 M 月 d 日E},
-			},
-			yMMMM => {
-				M => q{G y 年 M 月至 M 月},
-				y => q{G y 年 M 月至 y 年 M 月},
-			},
-			yMMMd => {
-				M => q{G y 年 M 月 d 日至 M 月 d 日},
-				d => q{G y 年 M 月 d 日至 d 日},
-				y => q{G y 年 M 月 d 日至 y 年 M 月 d 日},
-			},
-			yMd => {
-				M => q{G y/M/d 至 y/M/d},
-				d => q{G y/M/d 至 y/M/d},
-				y => q{G y/M/d 至 y/M/d},
-			},
-		},
 		'gregorian' => {
 			H => {
 				H => q{HH–HH},
@@ -7226,6 +7336,104 @@ has 'datetime_formats_interval' => (
 				M => q{U/M/d至U/M/d},
 				d => q{U/M/d至U/M/d},
 				y => q{U/M/d至U/M/d},
+			},
+		},
+		'generic' => {
+			H => {
+				H => q{HH–HH},
+			},
+			Hm => {
+				H => q{HH:mm–HH:mm},
+				m => q{HH:mm–HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm–HH:mm [v]},
+				m => q{HH:mm–HH:mm [v]},
+			},
+			Hv => {
+				H => q{HH–HH [v]},
+			},
+			M => {
+				M => q{M月至M月},
+			},
+			MEd => {
+				M => q{M/d E至 M/d E},
+				d => q{M/d E至 M/d E},
+			},
+			MMM => {
+				M => q{LLL至LLL},
+			},
+			MMMEd => {
+				M => q{M 月 d 日E至 M 月 d 日E},
+				d => q{M 月 d 日E至 d 日E},
+			},
+			MMMM => {
+				M => q{LLLL至LLLL},
+			},
+			MMMd => {
+				M => q{M月d日至M月d日},
+				d => q{M月d日至d日},
+			},
+			Md => {
+				M => q{M/d至M/d},
+				d => q{M/d至M/d},
+			},
+			d => {
+				d => q{d日至d日},
+			},
+			fallback => '{0}至{1}',
+			h => {
+				a => q{ah時至ah時},
+				h => q{ah時至h時},
+			},
+			hm => {
+				a => q{ah:mm至ah:mm},
+				h => q{ah:mm至h:mm},
+				m => q{ah:mm至h:mm},
+			},
+			hmv => {
+				a => q{ah:mm至ah:mm [v]},
+				h => q{ah:mm至h:mm [v]},
+				m => q{ah:mm至h:mm [v]},
+			},
+			hv => {
+				a => q{ah時至ah時 [v]},
+				h => q{ah時至h時 [v]},
+			},
+			y => {
+				y => q{G y 至 y},
+			},
+			yM => {
+				M => q{G y/M 至 y/M},
+				y => q{G y/M 至 y/M},
+			},
+			yMEd => {
+				M => q{G y/M/d E至 y/M/d E},
+				d => q{G y/M/d E至 y/M/d E},
+				y => q{G y/M/d E至 y/M/d E},
+			},
+			yMMM => {
+				M => q{G y 年 M 月至 M 月},
+				y => q{G y年M月至y年M月},
+			},
+			yMMMEd => {
+				M => q{G y 年 M 月 d 日E至 M 月 d 日E},
+				d => q{G y 年 M 月 d 日E 至 d 日E},
+				y => q{G y 年 M 月 d 日E至 y 年 M 月 d 日E},
+			},
+			yMMMM => {
+				M => q{G y 年 M 月至 M 月},
+				y => q{G y 年 M 月至 y 年 M 月},
+			},
+			yMMMd => {
+				M => q{G y 年 M 月 d 日至 M 月 d 日},
+				d => q{G y 年 M 月 d 日至 d 日},
+				y => q{G y 年 M 月 d 日至 y 年 M 月 d 日},
+			},
+			yMd => {
+				M => q{G y/M/d 至 y/M/d},
+				d => q{G y/M/d 至 y/M/d},
+				y => q{G y/M/d 至 y/M/d},
 			},
 		},
 	} },
