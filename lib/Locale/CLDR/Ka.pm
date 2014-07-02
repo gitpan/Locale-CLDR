@@ -1,14 +1,14 @@
 package Locale::CLDR::Ka;
 # This file auto generated from Data\common\main\ka.xml
-#	on Sat 21 Jun 12:00:35 am GMT
+#	on Tue  1 Jul 12:06:45 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
 use v5.10;
-use mro 'c3';
+use MRO::Compat 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -4525,20 +4525,20 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'narrow' => {
+				'abbreviated' => {
 					'pm' => q{PM},
 					'am' => q{AM},
 					'noon' => q{შუადღე},
 				},
 				'wide' => {
 					'am' => q{დილის},
-					'pm' => q{საღამოს},
 					'noon' => q{შუადღე},
+					'pm' => q{საღამოს},
 				},
-				'abbreviated' => {
+				'narrow' => {
+					'pm' => q{PM},
 					'noon' => q{შუადღე},
 					'am' => q{AM},
-					'pm' => q{PM},
 				},
 			},
 		},

@@ -1,14 +1,14 @@
 package Locale::CLDR::Es::Any::Gt;
 # This file auto generated from Data\common\main\es_GT.xml
-#	on Fri 20 Jun 11:23:48 pm GMT
+#	on Mon 30 Jun 11:29:57 pm GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
 use v5.10;
-use mro 'c3';
+use MRO::Compat 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -110,7 +110,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH-HH},
 			},
@@ -197,7 +197,7 @@ has 'datetime_formats_interval' => (
 				y => q{d/MM/y - d/MM/y},
 			},
 		},
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH-HH},
 			},

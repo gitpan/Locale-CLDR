@@ -1,14 +1,14 @@
 package Locale::CLDR::Wae;
 # This file auto generated from Data\common\main\wae.xml
-#	on Sat 21 Jun  1:33:35 am GMT
+#	on Tue  1 Jul  1:40:01 am GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
 use v5.10;
-use mro 'c3';
+use MRO::Compat 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -1083,7 +1083,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d.},
 			M => q{LLL},
 			MEd => q{E, d. MMM},
@@ -1097,7 +1097,7 @@ has 'datetime_formats_available_formats' => (
 			yMMMEd => q{E, d. MMM y},
 			yMMMd => q{d. MMM y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d.},
 			M => q{LLL},
 			MEd => q{E, d. MMM},
@@ -1127,7 +1127,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH - HH},
 			},
@@ -1222,7 +1222,7 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd - y-MM-dd},
 			},
 		},
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH - HH},
 			},

@@ -1,14 +1,14 @@
 package Locale::CLDR::CalendarPreferences;
 # This file auto generated from Data.xml
-#	on Fri 20 Jun 10:43:24 pm GMT
+#	on Mon 30 Jun 10:49:42 pm GMT
 # XML file generated 2014-03-13 15:53:16 -0500 (Thu, 13 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
 use v5.10;
-use mro 'c3';
+use MRO::Compat 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 

@@ -1,14 +1,14 @@
 package Locale::CLDR::Am;
 # This file auto generated from Data\common\main\am.xml
-#	on Fri 20 Jun 10:44:47 pm GMT
+#	on Mon 30 Jun 10:51:07 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
 use v5.10;
-use mro 'c3';
+use MRO::Compat 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -3554,8 +3554,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ከሰዓት},
 					'am' => q{ጥዋት},
+					'pm' => q{ከሰዓት},
 				},
 			},
 		},

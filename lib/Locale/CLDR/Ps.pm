@@ -1,14 +1,14 @@
 package Locale::CLDR::Ps;
 # This file auto generated from Data\common\main\ps.xml
-#	on Sat 21 Jun 12:48:50 am GMT
+#	on Tue  1 Jul 12:55:09 am GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
 use v5.10;
-use mro 'c3';
+use MRO::Compat 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -512,15 +512,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			H => q{H},
-			Hm => q{H:mm},
-			Hms => q{H:mm:ss},
-			MMMMd => q{d MMMM},
-			Md => q{M/d},
-			yM => q{G y/M},
-			yMMMM => q{د G y د MMMM},
-		},
 		'gregorian' => {
 			H => q{H},
 			Hm => q{H:mm},
@@ -529,6 +520,15 @@ has 'datetime_formats_available_formats' => (
 			Md => q{M/d},
 			yM => q{y/M},
 			yMMMM => q{د y د MMMM},
+		},
+		'generic' => {
+			H => q{H},
+			Hm => q{H:mm},
+			Hms => q{H:mm:ss},
+			MMMMd => q{d MMMM},
+			Md => q{M/d},
+			yM => q{G y/M},
+			yMMMM => q{د G y د MMMM},
 		},
 	} },
 );

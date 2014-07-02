@@ -1,14 +1,14 @@
 package Locale::CLDR::Vi;
 # This file auto generated from Data\common\main\vi.xml
-#	on Sat 21 Jun  1:31:56 am GMT
+#	on Tue  1 Jul  1:38:21 am GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
 use v5.10;
-use mro 'c3';
+use MRO::Compat 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -4983,10 +4983,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'roc' => {
-			M => q{'tháng' L},
-			MMM => q{LLL},
-		},
 		'generic' => {
 			Ed => q{E, dd},
 			Gy => q{'Năm' y G},
@@ -5022,6 +5018,14 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{d/M/y G},
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
+		},
+		'roc' => {
+			M => q{'tháng' L},
+			MMM => q{LLL},
+		},
+		'buddhist' => {
+			M => q{'tháng' L},
+			MMM => q{LLL},
 		},
 		'gregorian' => {
 			EHm => q{E HH:mm},
@@ -5062,10 +5066,6 @@ has 'datetime_formats_available_formats' => (
 			yMd => q{d/M/y},
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
-		},
-		'buddhist' => {
-			M => q{'tháng' L},
-			MMM => q{LLL},
 		},
 	} },
 );

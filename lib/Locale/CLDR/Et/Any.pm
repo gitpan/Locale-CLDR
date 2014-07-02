@@ -1,14 +1,14 @@
 package Locale::CLDR::Et::Any;
 
 # This file auto generated
-#	on Fri 20 Jun 11:27:10 pm GMT
+#	on Mon 30 Jun 11:33:18 pm GMT
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
-use v5.10;
-use mro 'c3';
+use v5.8;
+use MRO::Compat 'c3';
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;

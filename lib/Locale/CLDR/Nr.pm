@@ -1,14 +1,14 @@
 package Locale::CLDR::Nr;
 # This file auto generated from Data\common\main\nr.xml
-#	on Sat 21 Jun 12:44:55 am GMT
+#	on Tue  1 Jul 12:51:13 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
 use v5.10;
-use mro 'c3';
+use MRO::Compat 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 

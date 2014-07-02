@@ -1,14 +1,14 @@
 package Locale::CLDR::Nn;
 # This file auto generated from Data\common\main\nn.xml
-#	on Sat 21 Jun 12:43:50 am GMT
+#	on Tue  1 Jul 12:50:09 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
 use v5.10;
-use mro 'c3';
+use MRO::Compat 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -4327,17 +4327,17 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'am' => q{formiddag},
-					'pm' => q{ettermiddag},
+				'abbreviated' => {
+					'am' => q{f.m.},
+					'pm' => q{e.m.},
 				},
 				'narrow' => {
 					'pm' => q{e.m.},
 					'am' => q{f.m.},
 				},
-				'abbreviated' => {
-					'pm' => q{e.m.},
-					'am' => q{f.m.},
+				'wide' => {
+					'am' => q{formiddag},
+					'pm' => q{ettermiddag},
 				},
 			},
 		},

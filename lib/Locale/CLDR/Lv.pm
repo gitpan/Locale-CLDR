@@ -1,14 +1,14 @@
 package Locale::CLDR::Lv;
 # This file auto generated from Data\common\main\lv.xml
-#	on Sat 21 Jun 12:23:41 am GMT
+#	on Tue  1 Jul 12:29:54 am GMT
 # XML file generated 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
 use v5.10;
-use mro 'c3';
+use MRO::Compat 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -4571,8 +4571,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{priekšpusdienā},
 					'pm' => q{pēcpusdienā},
+					'am' => q{priekšpusdienā},
 				},
 			},
 		},

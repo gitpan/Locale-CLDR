@@ -1,14 +1,14 @@
 package Locale::CLDR::Hi;
 # This file auto generated from Data\common\main\hi.xml
-#	on Fri 20 Jun 11:44:59 pm GMT
+#	on Mon 30 Jun 11:51:06 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
 use v5.10;
-use mro 'c3';
+use MRO::Compat 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -4524,10 +4524,6 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'abbreviated' => {
-					'pm' => q{अपर},
-					'am' => q{पूर्व},
-				},
 				'wide' => {
 					'pm' => q{अपराह्न},
 					'am' => q{पूर्वाह्न},
@@ -4535,6 +4531,10 @@ has 'day_periods' => (
 				'narrow' => {
 					'am' => q{पू},
 					'pm' => q{अ},
+				},
+				'abbreviated' => {
+					'am' => q{पूर्व},
+					'pm' => q{अपर},
 				},
 			},
 		},

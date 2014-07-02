@@ -1,14 +1,14 @@
 package Locale::CLDR::Ks;
 # This file auto generated from Data\common\main\ks.xml
-#	on Sat 21 Jun 12:12:39 am GMT
+#	on Tue  1 Jul 12:18:49 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
 use v5.10;
-use mro 'c3';
+use MRO::Compat 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -2665,6 +2665,34 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'gregorian' => {
+			GGGGyMMMMEEEEdd => q{EEEE,dd MMMM GGGGy},
+			Gy => q{Gy},
+			GyMMM => q{MMM Gy},
+			GyMMMEd => q{EEE, MMM d, Gy},
+			GyMMMd => q{MMM d, Gy},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, M/d},
+			MMM => q{LLL},
+			MMMEd => q{E, MMM d},
+			MMMMEd => q{E, MMMM d},
+			MMMMd => q{MMMM d},
+			MMMd => q{d-MMM},
+			Md => q{M/d},
+			d => q{d},
+			hm => q{h:mm a},
+			ms => q{mm:ss},
+			y => q{y},
+			yM => q{M/y},
+			yMEd => q{EEE, M/d/y},
+			yMMM => q{MMM y},
+			yMMMEd => q{EEE, MMM d, y},
+			yMMMM => q{MMMM y},
+			yQQQ => q{QQQ y},
+			yQQQQ => q{QQQQ y},
+		},
 		'generic' => {
 			GGGGyMMMMEEEEdd => q{EEEE,dd MMMM GGGGy},
 			Gy => q{Gy},
@@ -2694,34 +2722,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyMMMd => q{MMM d, Gy},
 			yyyyQQQ => q{QQQ Gy},
 			yyyyQQQQ => q{QQQQ Gy},
-		},
-		'gregorian' => {
-			GGGGyMMMMEEEEdd => q{EEEE,dd MMMM GGGGy},
-			Gy => q{Gy},
-			GyMMM => q{MMM Gy},
-			GyMMMEd => q{EEE, MMM d, Gy},
-			GyMMMd => q{MMM d, Gy},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, M/d},
-			MMM => q{LLL},
-			MMMEd => q{E, MMM d},
-			MMMMEd => q{E, MMMM d},
-			MMMMd => q{MMMM d},
-			MMMd => q{d-MMM},
-			Md => q{M/d},
-			d => q{d},
-			hm => q{h:mm a},
-			ms => q{mm:ss},
-			y => q{y},
-			yM => q{M/y},
-			yMEd => q{EEE, M/d/y},
-			yMMM => q{MMM y},
-			yMMMEd => q{EEE, MMM d, y},
-			yMMMM => q{MMMM y},
-			yQQQ => q{QQQ y},
-			yQQQQ => q{QQQQ y},
 		},
 	} },
 );

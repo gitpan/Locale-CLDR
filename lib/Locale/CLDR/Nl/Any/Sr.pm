@@ -1,14 +1,14 @@
 package Locale::CLDR::Nl::Any::Sr;
 # This file auto generated from Data\common\main\nl_SR.xml
-#	on Sat 21 Jun 12:43:45 am GMT
+#	on Tue  1 Jul 12:50:04 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
 use v5.10;
-use mro 'c3';
+use MRO::Compat 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 

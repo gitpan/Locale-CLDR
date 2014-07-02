@@ -1,14 +1,14 @@
 package Locale::CLDR::Ksh;
 # This file auto generated from Data\common\main\ksh.xml
-#	on Sat 21 Jun 12:15:02 am GMT
+#	on Tue  1 Jul 12:21:13 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
 use v5.10;
-use mro 'c3';
+use MRO::Compat 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -2918,19 +2918,19 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'abbreviated' => {
-					'pm' => q{n.m.},
-					'am' => q{v.m.},
-				},
 				'wide' => {
 					'am' => q{Uhr vörmiddaachs},
 					'pm' => q{Uhr nommendaachs},
 				},
+				'abbreviated' => {
+					'am' => q{v.m.},
+					'pm' => q{n.m.},
+				},
 			},
 			'stand-alone' => {
 				'wide' => {
-					'am' => q{Vormittag},
 					'pm' => q{Nachmittag},
+					'am' => q{Vormittag},
 				},
 			},
 		},
@@ -3023,7 +3023,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E 'dä' d.},
 			Hm => q{H:mm},
 			Hms => q{H:mm:ss},
@@ -3048,7 +3048,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQy},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E 'dä' d.},
 			Hm => q{H:mm},
 			Hms => q{H:mm:ss},
@@ -3089,7 +3089,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			M => {
 				M => q{M–M},
 			},
@@ -3129,7 +3129,7 @@ has 'datetime_formats_interval' => (
 				y => q{MMMM y – MMMM y},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			M => {
 				M => q{M–M},
 			},

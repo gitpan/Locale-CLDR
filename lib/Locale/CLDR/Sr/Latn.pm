@@ -1,14 +1,14 @@
 package Locale::CLDR::Sr::Latn;
 # This file auto generated from Data\common\main\sr_Latn.xml
-#	on Sat 21 Jun  1:09:38 am GMT
+#	on Tue  1 Jul  1:16:00 am GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
 use v5.10;
-use mro 'c3';
+use MRO::Compat 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -5842,8 +5842,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{pre podne},
 					'pm' => q{popodne},
+					'am' => q{pre podne},
 				},
 			},
 		},

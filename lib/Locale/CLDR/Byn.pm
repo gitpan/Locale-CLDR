@@ -1,14 +1,14 @@
 package Locale::CLDR::Byn;
 # This file auto generated from Data\common\main\byn.xml
-#	on Fri 20 Jun 11:05:58 pm GMT
+#	on Mon 30 Jun 11:12:12 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
 use v5.10;
-use mro 'c3';
+use MRO::Compat 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -568,8 +568,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{ፋዱስ ጃብ},
 					'pm' => q{ፋዱስ ደምቢ},
+					'am' => q{ፋዱስ ጃብ},
 				},
 			},
 		},

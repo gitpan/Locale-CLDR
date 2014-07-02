@@ -1,14 +1,14 @@
 package Locale::CLDR::El;
 # This file auto generated from Data\common\main\el.xml
-#	on Fri 20 Jun 11:16:40 pm GMT
+#	on Mon 30 Jun 11:22:52 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
 use v5.10;
-use mro 'c3';
+use MRO::Compat 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -5926,8 +5926,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{π.μ.},
 					'pm' => q{μ.μ.},
+					'am' => q{π.μ.},
 				},
 			},
 		},
@@ -6057,23 +6057,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'japanese' => {
-			Ed => q{E d},
-			Gy => q{y G},
-			MEd => q{E, d/M},
-			MMM => q{LLL},
-			MMMEd => q{E, d MMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			y => q{y G},
-			yM => q{MM/y GGGGG},
-			yMEd => q{E, dd/MM/y GGGGG},
-			yMMM => q{LLL y GGGGG},
-			yMMMEd => q{E, d MMM, y G},
-			yMMMd => q{d MMM, y G},
-			yMd => q{dd/MM/y GGGGG},
-			yQQQ => q{y GGGGG QQQ},
-		},
 		'generic' => {
 			Ed => q{E d},
 			Gy => q{y G},
@@ -6148,6 +6131,23 @@ has 'datetime_formats_available_formats' => (
 			yMd => q{d/M/y},
 			yQQQ => q{y QQQ},
 			yQQQQ => q{y QQQQ},
+		},
+		'japanese' => {
+			Ed => q{E d},
+			Gy => q{y G},
+			MEd => q{E, d/M},
+			MMM => q{LLL},
+			MMMEd => q{E, d MMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			y => q{y G},
+			yM => q{MM/y GGGGG},
+			yMEd => q{E, dd/MM/y GGGGG},
+			yMMM => q{LLL y GGGGG},
+			yMMMEd => q{E, d MMM, y G},
+			yMMMd => q{d MMM, y G},
+			yMd => q{dd/MM/y GGGGG},
+			yQQQ => q{y GGGGG QQQ},
 		},
 	} },
 );

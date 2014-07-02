@@ -1,14 +1,14 @@
 package Locale::CLDR::Tig;
 # This file auto generated from Data\common\main\tig.xml
-#	on Sat 21 Jun  1:22:33 am GMT
+#	on Tue  1 Jul  1:28:58 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
 use v5.10;
-use mro 'c3';
+use MRO::Compat 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 

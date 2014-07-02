@@ -1,14 +1,14 @@
 package Locale::CLDR::Cy;
 # This file auto generated from Data\common\main\cy.xml
-#	on Fri 20 Jun 11:09:36 pm GMT
+#	on Mon 30 Jun 11:15:49 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.25.5');
 
 use v5.10;
-use mro 'c3';
+use MRO::Compat 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -5064,14 +5064,14 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'noon' => q{hanner dydd},
+				'narrow' => {
 					'pm' => q{PM},
 					'am' => q{AM},
 				},
-				'narrow' => {
-					'am' => q{AM},
+				'wide' => {
 					'pm' => q{PM},
+					'am' => q{AM},
+					'noon' => q{hanner dydd},
 				},
 			},
 		},
