@@ -1,14 +1,14 @@
 package Locale::CLDR::Si;
 # This file auto generated from Data\common\main\si.xml
-#	on Tue  1 Jul  1:06:29 am GMT
+#	on Sat 21 Jun  1:00:11 am GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 

@@ -1,14 +1,14 @@
 package Locale::CLDR::Asa;
 # This file auto generated from Data\common\main\asa.xml
-#	on Mon 30 Jun 10:55:53 pm GMT
+#	on Fri 20 Jun 10:49:35 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -824,8 +824,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ichamthi},
 					'am' => q{icheheavo},
+					'pm' => q{ichamthi},
 				},
 			},
 		},

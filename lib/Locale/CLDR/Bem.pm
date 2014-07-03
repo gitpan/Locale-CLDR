@@ -1,14 +1,14 @@
 package Locale::CLDR::Bem;
 # This file auto generated from Data\common\main\bem.xml
-#	on Mon 30 Jun 10:58:45 pm GMT
+#	on Fri 20 Jun 10:52:28 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -286,8 +286,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{uluchelo},
 					'pm' => q{akasuba},
+					'am' => q{uluchelo},
 				},
 			},
 		},
@@ -367,7 +367,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -392,7 +392,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},

@@ -1,14 +1,14 @@
 package Locale::CLDR::Pa::Arab;
 # This file auto generated from Data\common\main\pa_Arab.xml
-#	on Tue  1 Jul 12:53:20 am GMT
+#	on Sat 21 Jun 12:47:03 am GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 

@@ -1,14 +1,14 @@
 package Locale::CLDR::Es::Any::419;
 # This file auto generated from Data\common\main\es_419.xml
-#	on Mon 30 Jun 11:29:39 pm GMT
+#	on Fri 20 Jun 11:23:31 pm GMT
 # XML file generated 2014-01-08 23:02:40 -0600 (Wed, 08 Jan 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -2349,11 +2349,11 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			yMEd => q{E d/M/y G},
-		},
 		'gregorian' => {
 			yMEd => q{E d/M/y},
+		},
+		'generic' => {
+			yMEd => q{E d/M/y G},
 		},
 	} },
 );

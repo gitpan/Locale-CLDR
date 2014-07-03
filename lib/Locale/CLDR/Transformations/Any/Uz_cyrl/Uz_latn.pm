@@ -1,14 +1,14 @@
 package Locale::CLDR::Transformations::Any::Uz_cyrl::Uz_latn;
 # This file auto generated from Data\common\transforms\uz_Cyrl-uz_Latn.xml
-#	on Mon 30 Jun 10:50:04 pm GMT
+#	on Fri 20 Jun 10:43:46 pm GMT
 # XML file generated 2013-08-01 22:51:25 -0500 (Thu, 01 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 

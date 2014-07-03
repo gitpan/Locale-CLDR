@@ -1,14 +1,14 @@
 package Locale::CLDR::Km;
 # This file auto generated from Data\common\main\km.xml
-#	on Tue  1 Jul 12:11:46 am GMT
+#	on Sat 21 Jun 12:05:36 am GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -2739,8 +2739,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ល្ងាច},
 					'am' => q{ព្រឹក},
+					'pm' => q{ល្ងាច},
 				},
 			},
 		},

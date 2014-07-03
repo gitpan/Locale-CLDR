@@ -1,14 +1,14 @@
 package Locale::CLDR::Ne::Any::In;
 # This file auto generated from Data\common\main\ne_IN.xml
-#	on Tue  1 Jul 12:48:15 am GMT
+#	on Sat 21 Jun 12:41:57 am GMT
 # XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -140,8 +140,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{अपराह्न},
 					'am' => q{पूर्वाह्न},
+					'pm' => q{अपराह्न},
 				},
 			},
 		},

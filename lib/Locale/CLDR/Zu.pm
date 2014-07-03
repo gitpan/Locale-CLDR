@@ -1,14 +1,14 @@
 package Locale::CLDR::Zu;
 # This file auto generated from Data\common\main\zu.xml
-#	on Tue  1 Jul  1:46:40 am GMT
+#	on Sat 21 Jun  1:40:13 am GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -2470,17 +2470,17 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'abbreviated' => {
-					'am' => q{AM},
-					'pm' => q{PM},
-				},
-				'wide' => {
-					'pm' => q{Ntambama},
-					'am' => q{Ekuseni},
-				},
 				'narrow' => {
 					'am' => q{a},
 					'pm' => q{p},
+				},
+				'wide' => {
+					'am' => q{Ekuseni},
+					'pm' => q{Ntambama},
+				},
+				'abbreviated' => {
+					'pm' => q{PM},
+					'am' => q{AM},
 				},
 			},
 		},

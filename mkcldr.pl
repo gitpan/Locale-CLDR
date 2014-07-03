@@ -28,7 +28,7 @@ $verbose = 1 if grep /-v/, @ARGV;
 use version;
 my $API_VERSION = 0;
 my $CLDR_VERSION = 25;
-my $REVISION = 5;
+my $REVISION = 4;
 our $VERSION = version->parse(join '.', $API_VERSION, $CLDR_VERSION, $REVISION);
 my $CLDR_PATH = $CLDR_VERSION;
 
@@ -122,11 +122,6 @@ my $xml = XML::XPath->new(
 # Number Formatter
 open my $file, '>', File::Spec->catfile($lib_directory, 'NumberFormatter.pm');
 write_out_number_formatter($file);
-close $file;
-
-# Collator
-open my $file, '>', File::Spec->catfile($lib_directory, 'Collator.pm');
-write_out_collator($file);
 close $file;
 
 # Likely sub-tags
@@ -310,15 +305,15 @@ foreach my $file_name ( sort grep /^[^.]/, readdir($dir) ) {
 }
 
 #Collation
-# First convert the base collation file into a moose role
+# First move the base collation file into directory in the package file space
 say "Copying base collation file" if $verbose;
 open (my $Allkeys_in, '<', File::Spec->catfile($base_directory, 'uca', 'allkeys_CLDR.txt'));
-open (my $Allkeys_out, '>', File::Spec->catfile($lib_directory, 'CollatorBase.pm'));
-process_header($Allkeys_out, 'Locale::CLDR::CollatorBase', $CLDR_VERSION, undef, File::Spec->catfile($base_directory, 'uca', 'allkeys_CLDR.txt'), 1);
-process_collation_base($Allkeys_in, $Allkeys_out);
-process_footer($Allkeys_out,1);
+open (my $Allkeys_out, '>', File::Spec->catfile($lib_directory, 'allkeys_CLDR.txt'));
+print $Allkeys_out $_ while (<$Allkeys_in>);
 close $Allkeys_in;
 close $Allkeys_out;
+
+
 
 # Main directory
 my $main_directory = File::Spec->catdir($base_directory, 'main');
@@ -462,8 +457,8 @@ use version;
 
 our \$VERSION = version->declare('v$VERSION');
 
-use v5.8;
-use MRO::Compat 'c3';
+use v5.10;
+use mro 'c3';
 use if \$^V ge v5.12.0, feature => 'unicode_strings';
 
 use Moose;
@@ -486,27 +481,24 @@ sub process_header {
 
     $xml_name =~s/^.*(Data.*)$/$1/;
     my $now = DateTime->now->strftime('%a %e %b %l:%M:%S %P');
-    my $xml_generated = $xpath
-		? ( findnodes($xpath, '/ldml/identity/generation')
-			|| findnodes($xpath, '/supplementalData/generation')
-			)->get_node->getAttribute('date')
-		: '';
+    my $xml_generated = ( findnodes($xpath, '/ldml/identity/generation')
+        || findnodes($xpath, '/supplementalData/generation')
+    )->get_node->getAttribute('date');
 
     $xml_generated=~s/^\$Date: (.*) \$$/$1/;
-	$xml_generated = "# XML file generated $xml_generated" if $xml_generated;
 
 	my $header = <<EOT;
 package $class;
 # This file auto generated from $xml_name
 #\ton $now GMT
-$xml_generated
+# XML file generated $xml_generated
 
 use version;
 
 our \$VERSION = version->declare('v$VERSION');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if \$^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -520,72 +512,6 @@ EOT
 		
 		say $file "extends('$parent');" unless $isRole;
 	}
-}
-
-sub process_collation_base {
-	my ($Allkeys_in, $Allkeys_out) = @_;
-
-	print $Allkeys_out <<EOT;
-has 'collation_base' => (
-	is => 'ro',
-	isa => 'HashRef',
-	init_arg => undef,
-	init_arg => undef,
-	default => sub {
-		{
-EOT
-	
-	my @character_sequences;
-	
-	my $max_variable = chr 0;
-	my $min_variable = chr 0xFFFF;
-	
-	while (<$Allkeys_in>) {
-		next unless my ($character, $ce_list, $name) = /^([^;]+?)\s+;([^#]+?)\s+# (.*)/;
-		$character = join '', map { chr hex } split / /, $character;
-		
-		push @character_sequences, $character if length $character > 1;
-		my @ce_list = $ce_list =~ /\[([^]]+)\]/g;
-		
-		# Variable weightings
-		if ( my ($weight) = $ce_list[0] =~ /^\*([0-9]{4})\./ ) {
-			$weight = chr hex $weight;
-			$max_variable = $weight if $weight gt $max_variable;
-			$min_variable = $weight if $weight lt $min_variable;
-		}
-		
-		$ce_list = join '', map { map { chr hex } grep {length} split /\./ } @ce_list;
-		$ce_list =~ s/^\*//;
-		
-		# escape for output
-		foreach ( $character, $ce_list, $max_variable, $min_variable ) {
-			s/\\/\\\\/g;
-			s/'/\\'/g;
-		}
-		
-		say $Allkeys_out "'$character' => '$ce_list',"
-	}
-	
-	print $Allkeys_out <<EOT;
-		}
-	}
-);
-
-has min_variable => (
-	is => 'ro',
-	isa => 'Str',
-	init_arg => undef,
-	default => '$min_variable'
-);
-
-has max_variable => (
-	is => 'ro',
-	isa => 'Str',
-	init_arg => undef,
-	default => '$max_variable'
-);
-
-EOT
 }
 
 sub process_valid_languages {
@@ -4470,31 +4396,13 @@ use version;
 our \$VERSION = version->declare('v$VERSION');
 EOT
 	binmode DATA, ':utf8';
-	while (my $line = <DATA>) {
-		last if $line =~ /^__DATA__/;
-		print $file $line;
-	}
-}
-
-sub write_out_collator {
-	# In order to keep git out of the CLDR directory we need to 
-	# write out the code for the CLDR::Collator module
-	my $file = shift;
-	
-	say $file <<EOT;
-package Locale::CLDR::Collator;
-
-use version;
-
-our \$VERSION = version->declare('v$VERSION');
-EOT
-	print $file $_ while (<DATA>);
+	print $file $_ while <DATA>;
 }
 
 __DATA__
 
-use v5.8;
-use MRO::Compat 'c3';
+use v5.10;
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -5085,120 +4993,6 @@ sub _get_algorithmic_number_format {
 }
 	
 no Moose::Role;
-
-1;
-
-# vim: tabstop=4
-
-__DATA__
-
-use v5.8;
-use MRO::Compat 'c3';
-use utf8;
-use if $^V ge v5.12.0, feature => 'unicode_strings';
-
-use Unicode::Normalize('NFD');
-
-use Moose;
-
-with 'Locale::CLDR::CollatorBase';
-
-# Converts $string into a string of Collation Ellements
-sub getSortKey {
-	my ($self, $string) = @_;
-	
-	$string = NFD($string);
-	
-	(my $ce = $string) =~ s/(.)/ $self->collation_base()->{$1} /eg;
-	
-	my $ce_length = length($ce) / 4;
-	
-	my $max_level = 4;
-	my $key = '';
-	
-	my @lvl_re = (
-		undef,
-		'(.)...' x $ce_length,
-		'.(.)..' x $ce_length,
-		'..(.).' x $ce_length,
-		'...(.)' x $ce_length,
-	);
-	
-	foreach my $level ( 1 .. $max_level ) {
-		$key .= join '', grep {$_ ne "\x0"} $ce =~ /^$lvl_re[$level]$/;
-		$key .= "\x0";
-	}
-	
-	return $key;
-}
-
-# sorts a list according to the locales collation rules
-sub sort {
-	my $self = shift;
-	
-	return map { $_->[0]}
-		sort { $a->[1] cmp $b->[1] }
-		map { [$_, $self->getSortKey($_)] }
-		@_;
-}
-
-sub cmp {
-	my ($self, $a, $b) = @_;
-	
-	return $self->getSortKey($a) cmp $self->getSortKey($b);
-}
-
-sub eq {
-	my ($self, $a, $b) = @_;
-	
-	return $self->getSortKey($a) eq $self->getSortKey($b);
-}
-
-sub ne {
-	my ($self, $a, $b) = @_;
-	
-	return $self->getSortKey($a) ne $self->getSortKey($b);
-}
-
-sub lt {
-	my ($self, $a, $b) = @_;
-	
-	return $self->getSortKey($a) lt $self->getSortKey($b);
-}
-
-sub le {
-	my ($self, $a, $b) = @_;
-	
-	return $self->getSortKey($a) le $self->getSortKey($b);
-}
-sub gt {
-	my ($self, $a, $b) = @_;
-	
-	return $self->getSortKey($a) lt $self->getSortKey($b);
-}
-
-sub ge {
-	my ($self, $a, $b) = @_;
-	
-	return $self->getSortKey($a) le $self->getSortKey($b);
-}
-
-# Get Human readable sort key
-sub viewSortKey {
-	my ($self, $a) = @_;
-	
-	my $sort_key = $self->getSortKey($a);
-	
-	my @levels = split/\x0/, $sort_key;
-	
-	foreach my $level (@levels) {
-		$level = join ' ',  map { sprintf '%0.4X', $_ } split //, $level;
-	}
-	
-	return '[ ' . join (' | ', @levels) . ' ]';
-}
-
-no Moose;
 
 1;
 

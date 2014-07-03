@@ -1,14 +1,14 @@
 package Locale::CLDR::En::Any::Bz;
 # This file auto generated from Data\common\main\en_BZ.xml
-#	on Mon 30 Jun 11:27:30 pm GMT
+#	on Fri 20 Jun 11:21:21 pm GMT
 # XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -56,20 +56,20 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'gregorian') {
+			if ($_ eq 'generic') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'noon' if $time == 1200;
-				return 'am' if $time >= 000
-					&& $time < 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'generic') {
+			if ($_ eq 'gregorian') {
+				return 'am' if $time >= 000
+					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'noon' if $time == 1200;
-				return 'am' if $time >= 000
-					&& $time < 1200;
 			last SWITCH;
 			}
 		}

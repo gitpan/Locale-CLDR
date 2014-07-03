@@ -1,14 +1,14 @@
 package Locale::CLDR::Ar::Any::Eg;
 # This file auto generated from Data\common\main\ar_EG.xml
-#	on Mon 30 Jun 10:55:49 pm GMT
+#	on Fri 20 Jun 10:49:31 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 

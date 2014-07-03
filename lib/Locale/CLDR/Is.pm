@@ -1,14 +1,14 @@
 package Locale::CLDR::Is;
 # This file auto generated from Data\common\main\is.xml
-#	on Tue  1 Jul 12:00:44 am GMT
+#	on Fri 20 Jun 11:54:35 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -4371,13 +4371,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'am' => q{f.h.},
-					'pm' => q{e.h.},
-				},
 				'narrow' => {
 					'am' => q{f.h.},
 					'pm' => q{e.h.},
+				},
+				'wide' => {
+					'pm' => q{e.h.},
+					'am' => q{f.h.},
 				},
 			},
 			'stand-alone' => {

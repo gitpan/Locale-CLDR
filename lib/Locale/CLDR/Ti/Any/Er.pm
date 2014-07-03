@@ -1,14 +1,14 @@
 package Locale::CLDR::Ti::Any::Er;
 # This file auto generated from Data\common\main\ti_ER.xml
-#	on Tue  1 Jul  1:28:57 am GMT
+#	on Sat 21 Jun  1:22:32 am GMT
 # XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -218,7 +218,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			MEd => {
 				M => q{E፡ MM-dd - E፡ MM-dd},
 				d => q{E፡ MM-dd - E፡ MM-dd},
@@ -268,7 +268,7 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd - y-MM-dd},
 			},
 		},
-		'gregorian' => {
+		'generic' => {
 			MEd => {
 				M => q{E፡ MM-dd - E፡ MM-dd},
 				d => q{E፡ MM-dd - E፡ MM-dd},

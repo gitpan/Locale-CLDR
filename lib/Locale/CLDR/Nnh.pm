@@ -1,14 +1,14 @@
 package Locale::CLDR::Nnh;
 # This file auto generated from Data\common\main\nnh.xml
-#	on Tue  1 Jul 12:51:13 am GMT
+#	on Sat 21 Jun 12:44:54 am GMT
 # XML file generated 2013-08-30 23:19:50 -0500 (Fri, 30 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -419,14 +419,14 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			yMEd => q{E , 'lyɛ'̌ʼ d 'na' M, y},
 			yMMM => q{MMM y},
 			yMMMEd => q{E , 'lyɛ'̌ʼ d 'na' MMM, y},
 			yMMMd => q{'lyɛ'̌ʼ d 'na' MMMM, y},
 			yMd => q{d/M/y},
 		},
-		'gregorian' => {
+		'generic' => {
 			yMEd => q{E , 'lyɛ'̌ʼ d 'na' M, y},
 			yMMM => q{MMM y},
 			yMMMEd => q{E , 'lyɛ'̌ʼ d 'na' MMM, y},

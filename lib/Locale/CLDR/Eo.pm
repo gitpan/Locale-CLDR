@@ -1,14 +1,14 @@
 package Locale::CLDR::Eo;
 # This file auto generated from Data\common\main\eo.xml
-#	on Mon 30 Jun 11:27:46 pm GMT
+#	on Fri 20 Jun 11:21:36 pm GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 

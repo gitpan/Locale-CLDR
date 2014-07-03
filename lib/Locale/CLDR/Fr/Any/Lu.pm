@@ -1,14 +1,14 @@
 package Locale::CLDR::Fr::Any::Lu;
 # This file auto generated from Data\common\main\fr_LU.xml
-#	on Mon 30 Jun 11:41:15 pm GMT
+#	on Fri 20 Jun 11:35:08 pm GMT
 # XML file generated 2013-08-30 17:35:54 -0500 (Fri, 30 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 

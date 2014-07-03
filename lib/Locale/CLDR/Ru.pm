@@ -1,14 +1,14 @@
 package Locale::CLDR::Ru;
 # This file auto generated from Data\common\main\ru.xml
-#	on Tue  1 Jul  1:03:06 am GMT
+#	on Sat 21 Jun 12:56:48 am GMT
 # XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -6254,11 +6254,11 @@ has 'day_periods' => (
 					'am' => q{AM},
 					'pm' => q{PM},
 				},
-				'narrow' => {
-					'am' => q{AM},
-					'pm' => q{PM},
-				},
 				'wide' => {
+					'pm' => q{PM},
+					'am' => q{AM},
+				},
+				'narrow' => {
 					'am' => q{AM},
 					'pm' => q{PM},
 				},
@@ -6681,6 +6681,39 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'chinese' => {
+			E => q{ccc},
+			Ed => q{E, d},
+			Gy => q{U},
+			GyMMM => q{LLL U},
+			GyMMMEd => q{E, d MMM U},
+			GyMMMd => q{d MMM U},
+			H => q{H},
+			Hm => q{H:mm},
+			Hms => q{H:mm:ss},
+			M => q{L},
+			MEd => q{E, dd.MM},
+			MMM => q{LLL},
+			MMMEd => q{ccc, d MMM},
+			MMMd => q{d MMM},
+			Md => q{dd.MM},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{U},
+			yyyy => q{U},
+			yyyyM => q{MM.y},
+			yyyyMEd => q{E, dd.MM.y},
+			yyyyMMM => q{LLL U},
+			yyyyMMMEd => q{E, d MMM U},
+			yyyyMMMM => q{LLLL U},
+			yyyyMMMd => q{d MMM U},
+			yyyyMd => q{dd.MM.y},
+			yyyyQQQ => q{QQQ U},
+			yyyyQQQQ => q{QQQQ U},
+		},
 		'gregorian' => {
 			E => q{ccc},
 			EHm => q{E HH:mm},
@@ -6719,39 +6752,6 @@ has 'datetime_formats_available_formats' => (
 			yMd => q{dd.MM.y},
 			yQQQ => q{QQQ y 'г'.},
 			yQQQQ => q{QQQQ y 'г'.},
-		},
-		'chinese' => {
-			E => q{ccc},
-			Ed => q{E, d},
-			Gy => q{U},
-			GyMMM => q{LLL U},
-			GyMMMEd => q{E, d MMM U},
-			GyMMMd => q{d MMM U},
-			H => q{H},
-			Hm => q{H:mm},
-			Hms => q{H:mm:ss},
-			M => q{L},
-			MEd => q{E, dd.MM},
-			MMM => q{LLL},
-			MMMEd => q{ccc, d MMM},
-			MMMd => q{d MMM},
-			Md => q{dd.MM},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{U},
-			yyyy => q{U},
-			yyyyM => q{MM.y},
-			yyyyMEd => q{E, dd.MM.y},
-			yyyyMMM => q{LLL U},
-			yyyyMMMEd => q{E, d MMM U},
-			yyyyMMMM => q{LLLL U},
-			yyyyMMMd => q{d MMM U},
-			yyyyMd => q{dd.MM.y},
-			yyyyQQQ => q{QQQ U},
-			yyyyQQQQ => q{QQQQ U},
 		},
 		'generic' => {
 			E => q{ccc},

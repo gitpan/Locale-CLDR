@@ -1,14 +1,14 @@
 package Locale::CLDR::Bs;
 # This file auto generated from Data\common\main\bs.xml
-#	on Mon 30 Jun 11:07:11 pm GMT
+#	on Fri 20 Jun 11:00:57 pm GMT
 # XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -4707,30 +4707,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'islamic' => {
-			Ed => q{E, dd.},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, dd.MM.},
-			MMM => q{LLL},
-			MMMEd => q{E, dd. MMM},
-			MMMd => q{dd. MMM},
-			Md => q{dd.MM.},
-			d => q{d},
-			hm => q{hh:mm a},
-			hms => q{hh:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y. G},
-			yM => q{MM.y. G},
-			yMEd => q{E, dd.MM.y. G},
-			yMMM => q{MMM y. G},
-			yMMMEd => q{E, dd. MMM y. G},
-			yMMMd => q{dd. MMM y. G},
-			yMd => q{dd.MM.y. G},
-			yQQQ => q{y G QQQ},
-			yQQQQ => q{y G QQQQ},
-		},
 		'generic' => {
 			Ed => q{E, dd.},
 			Gy => q{y. G},
@@ -4759,6 +4735,30 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{dd.MM.y. G},
 			yyyyQQQ => q{G y QQQ},
 			yyyyQQQQ => q{G y QQQQ},
+		},
+		'islamic' => {
+			Ed => q{E, dd.},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, dd.MM.},
+			MMM => q{LLL},
+			MMMEd => q{E, dd. MMM},
+			MMMd => q{dd. MMM},
+			Md => q{dd.MM.},
+			d => q{d},
+			hm => q{hh:mm a},
+			hms => q{hh:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y. G},
+			yM => q{MM.y. G},
+			yMEd => q{E, dd.MM.y. G},
+			yMMM => q{MMM y. G},
+			yMMMEd => q{E, dd. MMM y. G},
+			yMMMd => q{dd. MMM y. G},
+			yMd => q{dd.MM.y. G},
+			yQQQ => q{y G QQQ},
+			yQQQQ => q{y G QQQQ},
 		},
 		'gregorian' => {
 			Ed => q{E, dd.},

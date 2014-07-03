@@ -1,14 +1,14 @@
 package Locale::CLDR::Kl;
 # This file auto generated from Data\common\main\kl.xml
-#	on Tue  1 Jul 12:11:37 am GMT
+#	on Sat 21 Jun 12:05:27 am GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -1983,13 +1983,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'abbreviated' => {
-					'pm' => q{u.k.},
-					'am' => q{u.t.},
-				},
 				'wide' => {
-					'am' => q{ulloqeqqata-tungaa},
 					'pm' => q{ulloqeqqata-kingorna},
+					'am' => q{ulloqeqqata-tungaa},
+				},
+				'abbreviated' => {
+					'am' => q{u.t.},
+					'pm' => q{u.k.},
 				},
 			},
 		},
@@ -2081,7 +2081,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E, d},
 			H => q{HH},
 			Hm => q{HH:mm},
@@ -2102,7 +2102,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{y QQQQ},
 			yQQQQ => q{y QQQQ},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E, d},
 			H => q{HH},
 			Hm => q{HH:mm},
@@ -2139,7 +2139,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH–HH},
 			},
@@ -2234,7 +2234,7 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd – y-MM-dd},
 			},
 		},
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH–HH},
 			},

@@ -1,14 +1,14 @@
 package Locale::CLDR::Af::Any::Na;
 # This file auto generated from Data\common\main\af_NA.xml
-#	on Mon 30 Jun 10:50:58 pm GMT
+#	on Fri 20 Jun 10:44:38 pm GMT
 # XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 

@@ -1,14 +1,14 @@
 package Locale::CLDR::Se;
 # This file auto generated from Data\common\main\se.xml
-#	on Tue  1 Jul  1:06:08 am GMT
+#	on Sat 21 Jun 12:59:50 am GMT
 # XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
@@ -1972,19 +1972,19 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'abbreviated' => {
-					'am' => q{i.b.},
-					'pm' => q{e.b.},
-				},
 				'wide' => {
 					'am' => q{iđitbeaivet},
 					'pm' => q{eahketbeaivet},
 				},
+				'abbreviated' => {
+					'pm' => q{e.b.},
+					'am' => q{i.b.},
+				},
 			},
 			'stand-alone' => {
 				'wide' => {
-					'pm' => q{eahketbeaivi},
 					'am' => q{iđitbeaivi},
+					'pm' => q{eahketbeaivi},
 				},
 			},
 		},

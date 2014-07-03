@@ -1,14 +1,14 @@
 package Locale::CLDR::Mt;
 # This file auto generated from Data\common\main\mt.xml
-#	on Tue  1 Jul 12:42:04 am GMT
+#	on Sat 21 Jun 12:35:47 am GMT
 # XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 

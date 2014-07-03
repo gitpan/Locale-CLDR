@@ -1,14 +1,14 @@
 package Locale::CLDR::Zh::Hans;
 # This file auto generated from Data\common\main\zh_Hans.xml
-#	on Tue  1 Jul  1:43:22 am GMT
+#	on Sat 21 Jun  1:36:56 am GMT
 # XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.5');
+our $VERSION = version->declare('v0.25.4');
 
 use v5.10;
-use MRO::Compat 'c3';
+use mro 'c3';
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
