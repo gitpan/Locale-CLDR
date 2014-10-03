@@ -1181,6 +1181,5 @@ t/17-DateTime.t
 t/18-Overrides.t
 t/19-Currency.t
 t/20-Plurals.t
-t/21-Collation.t
 t/pod-coverage.t
 t/pod.t

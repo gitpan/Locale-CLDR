@@ -23,7 +23,7 @@ name: Locale-CLDR
 provides:
   Locale::CLDR:
     file: lib/Locale/CLDR.pm
-    version: v0.26.0
+    version: v0.26.1
   Locale::CLDR::Aa:
     file: lib/Locale/CLDR/Aa.pm
     version: v0.26.0
@@ -3493,4 +3493,4 @@ requires:
   version: '0.95'
 resources:
   license: http://dev.perl.org/licenses/
-version: v0.26.0
+version: v0.26.1
