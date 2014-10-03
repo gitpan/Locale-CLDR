@@ -1,11 +1,11 @@
 package Locale::CLDR::Es::Any::Pe;
 # This file auto generated from Data\common\main\es_PE.xml
-#	on Fri 20 Jun 11:25:56 pm GMT
-# XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
+#	on Thu  2 Oct 11:02:23 am GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -15,16 +15,6 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Es::Any');
-has 'algorithmic_number_format_data' => (
-	is => 'ro',
-	isa => 'HashRef',
-	init_arg => undef,
-	default => sub { 
-		use bignum;
-		return {
-	} },
-);
-
 has 'curriencies' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -110,7 +100,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH-HH},
 			},
@@ -141,7 +131,6 @@ has 'datetime_formats_interval' => (
 			},
 			MMMd => {
 				M => q{d 'de' MMM 'al' d 'de' MMM},
-				d => q{d-d 'de' MMM},
 			},
 			Md => {
 				M => q{d/MM - d/MM},
@@ -197,10 +186,7 @@ has 'datetime_formats_interval' => (
 				y => q{d/MM/y - d/MM/y},
 			},
 		},
-		'generic' => {
-			H => {
-				H => q{HH-HH},
-			},
+		'gregorian' => {
 			Hm => {
 				H => q{HH:mm-HH:mm},
 				m => q{HH:mm-HH:mm},
@@ -228,7 +214,6 @@ has 'datetime_formats_interval' => (
 			},
 			MMMd => {
 				M => q{d 'de' MMM 'al' d 'de' MMM},
-				d => q{d-d 'de' MMM},
 			},
 			Md => {
 				M => q{d/MM - d/MM},
@@ -265,7 +250,6 @@ has 'datetime_formats_interval' => (
 				y => q{E d/MM/y - E d/MM/y},
 			},
 			yMMM => {
-				M => q{MMM-MMM 'de' y},
 				y => q{MMM 'de' y 'a' MMM 'de' y},
 			},
 			yMMMEd => {
@@ -275,7 +259,6 @@ has 'datetime_formats_interval' => (
 			},
 			yMMMd => {
 				M => q{d 'de' MMM 'al' d 'de' MMM 'de' y},
-				d => q{d-d 'de' MMM 'de' y},
 				y => q{d 'de' MMM 'de' y 'al' d 'de' MMM 'de' y},
 			},
 			yMd => {

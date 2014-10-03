@@ -1,11 +1,11 @@
 package Locale::CLDR::EraBoundries;
 # This file auto generated from Data.xml
-#	on Fri 20 Jun 10:42:52 pm GMT
-# XML file generated 2014-03-13 15:53:16 -0500 (Thu, 13 Mar 2014)
+#	on Thu  2 Oct 10:05:43 am GMT
+# XML file generated 2014-09-11 12:17:53 -0500 (Thu, 11 Sep 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -27,7 +27,7 @@ has '_era_boundry' => (
 		SWITCH:
 		for ($type) {
 			if ($_ eq 'gregorian') {
-				$return = 0 if $date <= 01231;
+				$return = 0 if $date <= 1231;
 				$return = 1 if $date >= 10101;
 			last SWITCH
 			}
@@ -294,15 +294,15 @@ has '_era_boundry' => (
 			last SWITCH
 			}
 			if ($_ eq 'chinese') {
-				$return = 0 if $date >= 0263601;
+				$return = 0 if $date >= 263601;
 			last SWITCH
 			}
 			if ($_ eq 'hebrew') {
-				$return = 0 if $date >= 0376010;
+				$return = 0 if $date >= 376010;
 			last SWITCH
 			}
 			if ($_ eq 'buddhist') {
-				$return = 0 if $date >= 054201;
+				$return = 0 if $date >= 54201;
 			last SWITCH
 			}
 			if ($_ eq 'coptic') {
@@ -315,12 +315,16 @@ has '_era_boundry' => (
 			last SWITCH
 			}
 			if ($_ eq 'dangi') {
-				$return = 0 if $date >= 0233201;
+				$return = 0 if $date >= 233201;
 			last SWITCH
 			}
 			if ($_ eq 'ethiopic') {
 				$return = 0 if $date <= 80828;
 				$return = 1 if $date >= 80829;
+			last SWITCH
+			}
+			if ($_ eq 'ethiopic-amete-alem') {
+				$return = 0 if $date <= 549208;
 			last SWITCH
 			}
 			if ($_ eq 'indian') {

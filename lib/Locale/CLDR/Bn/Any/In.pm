@@ -1,11 +1,11 @@
 package Locale::CLDR::Bn::Any::In;
 # This file auto generated from Data\common\main\bn_IN.xml
-#	on Fri 20 Jun 10:57:56 pm GMT
-# XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
+#	on Thu  2 Oct 10:24:34 am GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -396,11 +396,6 @@ has 'time_zone_names' => (
 		'French_Southern' => {
 			long => {
 				'standard' => q(ফরাসি দক্ষিণ এবং আন্টার্কটিক সময়),
-			},
-		},
-		'Guyana' => {
-			long => {
-				'standard' => q(গুয়ানা সময়),
 			},
 		},
 		'Indian_Ocean' => {

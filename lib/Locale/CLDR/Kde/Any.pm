@@ -1,11 +1,11 @@
 package Locale::CLDR::Kde::Any;
 
 # This file auto generated
-#	on Sat 21 Jun 12:03:12 am GMT
+#	on Thu  2 Oct 11:59:12 am GMT
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';

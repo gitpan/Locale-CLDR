@@ -1,11 +1,11 @@
 package Locale::CLDR::TerritoryContainment;
 # This file auto generated from Data.xml
-#	on Fri 20 Jun 10:43:24 pm GMT
-# XML file generated 2014-03-13 15:53:16 -0500 (Thu, 13 Mar 2014)
+#	on Thu  2 Oct 10:06:15 am GMT
+# XML file generated 2014-09-11 12:17:53 -0500 (Thu, 11 Sep 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -20,7 +20,7 @@ has 'territory_contains' => (
 	init_arg	=> undef,
 	default		=> sub { {
 
-		'EU' => [ qw( AT BE CY CZ DE DK EE ES FI FR GB GR HU IE IT LT LU LV MT NL PL PT SE SI SK BG RO ) ], 
+		'EU' => [ qw( AT BE CY CZ DE DK EE ES FI FR GB GR HR HU IE IT LT LU LV MT NL PL PT SE SI SK BG RO ) ], 
 		'QO' => [ qw( AQ BV CC CX GS HM IO TF UM AC CP DG TA ) ], 
 		'001' => [ qw( 019 002 150 142 009 ) ], 
 		'002' => [ qw( 015 011 017 014 018 ) ], 
@@ -168,7 +168,7 @@ has 'territory_contained_by' => (
 		'HK' => '030', 
 		'HM' => 'QO', 
 		'HN' => '013', 
-		'HR' => '039', 
+		'HR' => 'EU', 
 		'HT' => '029', 
 		'HU' => 'EU', 
 		'IC' => '015', 

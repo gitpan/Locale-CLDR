@@ -1,11 +1,11 @@
 package Locale::CLDR::Be;
 # This file auto generated from Data\common\main\be.xml
-#	on Fri 20 Jun 10:52:11 pm GMT
-# XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
+#	on Thu  2 Oct 10:18:34 am GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -147,77 +147,27 @@ has 'algorithmic_number_format_data' => (
 				'1000' => {
 					base_value => q(1000),
 					divisor => q(1000),
-					rule => q(←%spellout-cardinal-feminine← тысяча[ →→]),
-				},
-				'2000' => {
-					base_value => q(2000),
-					divisor => q(1000),
-					rule => q(←%spellout-cardinal-feminine← тысячы[ →→]),
-				},
-				'5000' => {
-					base_value => q(5000),
-					divisor => q(1000),
-					rule => q(←%spellout-cardinal-feminine← тысяч[ →→]),
+					rule => q(←%spellout-cardinal-feminine← $(cardinal,one{тысяча}few{тысячы}other{тысяч})$[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
 					divisor => q(1000000),
-					rule => q(←%spellout-cardinal-masculine← мільён[ →→]),
-				},
-				'2000000' => {
-					base_value => q(2000000),
-					divisor => q(1000000),
-					rule => q(←%spellout-cardinal-masculine← мільёны[ →→]),
-				},
-				'5000000' => {
-					base_value => q(5000000),
-					divisor => q(1000000),
-					rule => q(←%spellout-cardinal-masculine← мільёнаў[ →→]),
+					rule => q(←%spellout-cardinal-masculine← $(cardinal,one{мільён}few{мільёны}other{мільёнаў})$[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
 					divisor => q(1000000000),
-					rule => q(←%spellout-cardinal-masculine← мільярд[ →→]),
-				},
-				'2000000000' => {
-					base_value => q(2000000000),
-					divisor => q(1000000000),
-					rule => q(←%spellout-cardinal-masculine← мільярды[ →→]),
-				},
-				'5000000000' => {
-					base_value => q(5000000000),
-					divisor => q(1000000000),
-					rule => q(←%spellout-cardinal-masculine← мільярдаў[ →→]),
+					rule => q(←%spellout-cardinal-masculine← $(cardinal,one{мільярд}few{мільярды}other{мільярдаў})$[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
 					divisor => q(1000000000000),
-					rule => q(←%spellout-cardinal-masculine← трыльён[ →→]),
-				},
-				'2000000000000' => {
-					base_value => q(2000000000000),
-					divisor => q(1000000000000),
-					rule => q(←%spellout-cardinal-masculine← трыльёны[ →→]),
-				},
-				'5000000000000' => {
-					base_value => q(5000000000000),
-					divisor => q(1000000000000),
-					rule => q(←%spellout-cardinal-masculine← трылёнаў[ →→]),
+					rule => q(←%spellout-cardinal-masculine← $(cardinal,one{трыльён}few{трыльёны}other{трылёнаў})$[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
 					divisor => q(1000000000000000),
-					rule => q(←%spellout-cardinal-masculine← квадрыльён[ →→]),
-				},
-				'2000000000000000' => {
-					base_value => q(2000000000000000),
-					divisor => q(1000000000000000),
-					rule => q(←%spellout-cardinal-masculine← квадрыльёны[ →→]),
-				},
-				'5000000000000000' => {
-					base_value => q(5000000000000000),
-					divisor => q(1000000000000000),
-					rule => q(←%spellout-cardinal-masculine← квадрыльёнаў[ →→]),
+					rule => q(←%spellout-cardinal-masculine← $(cardinal,one{квадрыльён}few{квадрыльёны}other{квадрыльёнаў})$[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
@@ -429,77 +379,27 @@ has 'algorithmic_number_format_data' => (
 				'1000' => {
 					base_value => q(1000),
 					divisor => q(1000),
-					rule => q(←%spellout-cardinal-feminine← тысяча[ →→]),
-				},
-				'2000' => {
-					base_value => q(2000),
-					divisor => q(1000),
-					rule => q(←%spellout-cardinal-feminine← тысячы[ →→]),
-				},
-				'5000' => {
-					base_value => q(5000),
-					divisor => q(1000),
-					rule => q(←%spellout-cardinal-feminine← тысяч[ →→]),
+					rule => q(←%spellout-cardinal-feminine← $(cardinal,one{тысяча}few{тысячы}other{тысяч})$[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
 					divisor => q(1000000),
-					rule => q(←%spellout-cardinal-masculine← мільён[ →→]),
-				},
-				'2000000' => {
-					base_value => q(2000000),
-					divisor => q(1000000),
-					rule => q(←%spellout-cardinal-masculine← мільёны[ →→]),
-				},
-				'5000000' => {
-					base_value => q(5000000),
-					divisor => q(1000000),
-					rule => q(←%spellout-cardinal-masculine← мільёнаў[ →→]),
+					rule => q(←%spellout-cardinal-masculine← $(cardinal,one{мільён}few{мільёны}other{мільёнаў})$[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
 					divisor => q(1000000000),
-					rule => q(←%spellout-cardinal-masculine← мільярд[ →→]),
-				},
-				'2000000000' => {
-					base_value => q(2000000000),
-					divisor => q(1000000000),
-					rule => q(←%spellout-cardinal-masculine← мільярды[ →→]),
-				},
-				'5000000000' => {
-					base_value => q(5000000000),
-					divisor => q(1000000000),
-					rule => q(←%spellout-cardinal-masculine← мільярдаў[ →→]),
+					rule => q(←%spellout-cardinal-masculine← $(cardinal,one{мільярд}few{мільярды}other{мільярдаў})$[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
 					divisor => q(1000000000000),
-					rule => q(←%spellout-cardinal-masculine← трыльён[ →→]),
-				},
-				'2000000000000' => {
-					base_value => q(2000000000000),
-					divisor => q(1000000000000),
-					rule => q(←%spellout-cardinal-masculine← трыльёны[ →→]),
-				},
-				'5000000000000' => {
-					base_value => q(5000000000000),
-					divisor => q(1000000000000),
-					rule => q(←%spellout-cardinal-masculine← трылёнаў[ →→]),
+					rule => q(←%spellout-cardinal-masculine← $(cardinal,one{трыльён}few{трыльёны}other{трылёнаў})$[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
 					divisor => q(1000000000000000),
-					rule => q(←%spellout-cardinal-masculine← квадрыльён[ →→]),
-				},
-				'2000000000000000' => {
-					base_value => q(2000000000000000),
-					divisor => q(1000000000000000),
-					rule => q(←%spellout-cardinal-masculine← квадрыльёны[ →→]),
-				},
-				'5000000000000000' => {
-					base_value => q(5000000000000000),
-					divisor => q(1000000000000000),
-					rule => q(←%spellout-cardinal-masculine← квадрыльёнаў[ →→]),
+					rule => q(←%spellout-cardinal-masculine← $(cardinal,one{квадрыльён}few{квадрыльёны}other{квадрыльёнаў})$[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
@@ -631,77 +531,27 @@ has 'algorithmic_number_format_data' => (
 				'1000' => {
 					base_value => q(1000),
 					divisor => q(1000),
-					rule => q(←%spellout-cardinal-feminine← тысяча[ →→]),
-				},
-				'2000' => {
-					base_value => q(2000),
-					divisor => q(1000),
-					rule => q(←%spellout-cardinal-feminine← тысячы[ →→]),
-				},
-				'5000' => {
-					base_value => q(5000),
-					divisor => q(1000),
-					rule => q(←%spellout-cardinal-feminine← тысяч[ →→]),
+					rule => q(←%spellout-cardinal-feminine← $(cardinal,one{тысяча}few{тысячы}other{тысяч})$[ →→]),
 				},
 				'1000000' => {
 					base_value => q(1000000),
 					divisor => q(1000000),
-					rule => q(←%spellout-cardinal-masculine← мільён[ →→]),
-				},
-				'2000000' => {
-					base_value => q(2000000),
-					divisor => q(1000000),
-					rule => q(←%spellout-cardinal-masculine← мільёны[ →→]),
-				},
-				'5000000' => {
-					base_value => q(5000000),
-					divisor => q(1000000),
-					rule => q(←%spellout-cardinal-masculine← мільёнаў[ →→]),
+					rule => q(←%spellout-cardinal-masculine← $(cardinal,one{мільён}few{мільёны}other{мільёнаў})$[ →→]),
 				},
 				'1000000000' => {
 					base_value => q(1000000000),
 					divisor => q(1000000000),
-					rule => q(←%spellout-cardinal-masculine← мільярд[ →→]),
-				},
-				'2000000000' => {
-					base_value => q(2000000000),
-					divisor => q(1000000000),
-					rule => q(←%spellout-cardinal-masculine← мільярды[ →→]),
-				},
-				'5000000000' => {
-					base_value => q(5000000000),
-					divisor => q(1000000000),
-					rule => q(←%spellout-cardinal-masculine← мільярдаў[ →→]),
+					rule => q(←%spellout-cardinal-masculine← $(cardinal,one{мільярд}few{мільярды}other{мільярдаў})$[ →→]),
 				},
 				'1000000000000' => {
 					base_value => q(1000000000000),
 					divisor => q(1000000000000),
-					rule => q(←%spellout-cardinal-masculine← трыльён[ →→]),
-				},
-				'2000000000000' => {
-					base_value => q(2000000000000),
-					divisor => q(1000000000000),
-					rule => q(←%spellout-cardinal-masculine← трыльёны[ →→]),
-				},
-				'5000000000000' => {
-					base_value => q(5000000000000),
-					divisor => q(1000000000000),
-					rule => q(←%spellout-cardinal-masculine← трылёнаў[ →→]),
+					rule => q(←%spellout-cardinal-masculine← $(cardinal,one{трыльён}few{трыльёны}other{трылёнаў})$[ →→]),
 				},
 				'1000000000000000' => {
 					base_value => q(1000000000000000),
 					divisor => q(1000000000000000),
-					rule => q(←%spellout-cardinal-masculine← квадрыльён[ →→]),
-				},
-				'2000000000000000' => {
-					base_value => q(2000000000000000),
-					divisor => q(1000000000000000),
-					rule => q(←%spellout-cardinal-masculine← квадрыльёны[ →→]),
-				},
-				'5000000000000000' => {
-					base_value => q(5000000000000000),
-					divisor => q(1000000000000000),
-					rule => q(←%spellout-cardinal-masculine← квадрыльёнаў[ →→]),
+					rule => q(←%spellout-cardinal-masculine← $(cardinal,one{квадрыльён}few{квадрыльёны}other{квадрыльёнаў})$[ →→]),
 				},
 				'1000000000000000000' => {
 					base_value => q(1000000000000000000),
@@ -2308,7 +2158,7 @@ has 'display_name_language' => (
  				'und' => 'невядомая мова',
  				'ur' => 'урду',
  				'uz' => 'узбекская',
- 				'vi' => 'в\'етнамская',
+ 				'vi' => 'в’етнамская',
  				'vo' => 'валапюк',
  				'xh' => 'хоса',
  				'yi' => 'ідыш',
@@ -2389,7 +2239,7 @@ has 'display_name_territory' => (
  			'154' => 'Паўночная Еўропа',
  			'155' => 'Заходняя Еўропа',
  			'AD' => 'Андора',
- 			'AE' => 'Аб\'яднаныя Арабскія Эміраты',
+ 			'AE' => 'Аб’яднаныя Арабскія Эміраты',
  			'AF' => 'Афганістан',
  			'AG' => 'Антыгуа і Барбуда',
  			'AI' => 'Ангілья',
@@ -2433,7 +2283,7 @@ has 'display_name_territory' => (
  			'CG' => 'Конга',
  			'CG@alt=variant' => 'Рэспубліка Конга',
  			'CH' => 'Швейцарыя',
- 			'CI' => 'Кот-д\'Івуар',
+ 			'CI' => 'Кот-д’Івуар',
  			'CK' => 'Астравы Кука',
  			'CL' => 'Чылі',
  			'CM' => 'Камерун',
@@ -2537,7 +2387,7 @@ has 'display_name_territory' => (
  			'MK' => 'Македонія, БЮР',
  			'MK@alt=variant' => 'Рэспубліка Македонія',
  			'ML' => 'Малі',
- 			'MM' => 'М\'янма',
+ 			'MM' => 'М’янма',
  			'MN' => 'Манголія',
  			'MO' => 'Макао, Кітай (САР)',
  			'MO@alt=short' => 'Макаа',
@@ -2572,7 +2422,7 @@ has 'display_name_territory' => (
  			'PH' => 'Філіпіны',
  			'PK' => 'Пакістан',
  			'PL' => 'Польшча',
- 			'PM' => 'Сен-П\'ер і Мікелон',
+ 			'PM' => 'Сен-П’ер і Мікелон',
  			'PN' => 'Астравы Піткэрн',
  			'PR' => 'Пуэрта-Рыка',
  			'PS' => 'Палестынскія тэрыторыі',
@@ -2632,7 +2482,7 @@ has 'display_name_territory' => (
  			'VE' => 'Венесуэла',
  			'VG' => 'Брытанскія Віргінскія астравы',
  			'VI' => 'Амерыканскія Віргінскія астравы',
- 			'VN' => 'В\'етнам',
+ 			'VN' => 'В’етнам',
  			'VU' => 'Вануату',
  			'WF' => 'Уоліс і Футуна',
  			'WS' => 'Самоа',
@@ -2656,6 +2506,7 @@ has 'display_name_key' => (
 			'calendar' => 'каляндар',
  			'collation' => 'параўнаньне тэксту',
  			'currency' => 'валюта',
+ 			'numbers' => 'лічбы',
 
 		}
 	},
@@ -2676,6 +2527,11 @@ has 'display_name_type' => (
  				'islamic-civil' => q{мусульманскі свецкі каляндар},
  				'japanese' => q{японскі каляндар},
  			},
+ 			'collation' => {
+ 				'ducet' => q{стандартнае сартаванне Unicode},
+ 				'search' => q{пошук},
+ 				'standard' => q{стандартнае сартаванне},
+ 			},
 
 		}
 	},
@@ -2688,6 +2544,7 @@ has 'display_name_measurement_system' => (
 	default		=> sub { 
 		{
 			'metric' => q{метрычная},
+ 			'UK' => q{брытанская},
  			'US' => q{ЗША},
 
 		}
@@ -2764,46 +2621,76 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'day' => {
+						'' => q(дня),
 						'few' => q({0} дні),
 						'many' => q({0} дзён),
 						'one' => q({0} дзень),
 						'other' => q({0} дня),
 					},
 					'hour' => {
+						'' => q(гадзіны),
 						'few' => q({0} гадзіны),
 						'many' => q({0} гадзін),
 						'one' => q({0} гадзіна),
 						'other' => q({0} гадзіны),
 					},
 					'minute' => {
+						'' => q(хвіліны),
 						'few' => q({0} хвіліны),
 						'many' => q({0} хвілін),
 						'one' => q({0} хвіліна),
 						'other' => q({0} хвіліны),
 					},
 					'month' => {
+						'' => q(месяца),
 						'few' => q({0} месяца),
 						'many' => q({0} месяцаў),
 						'one' => q({0} месяц),
 						'other' => q({0} месяца),
 					},
 					'second' => {
+						'' => q(сэкунды),
 						'few' => q({0} сэкунды),
 						'many' => q({0} сэкунд),
 						'one' => q({0} сэкунда),
 						'other' => q({0} сэкунды),
 					},
 					'week' => {
+						'' => q(тыдня),
 						'few' => q({0} тыдні),
 						'many' => q({0} тыдняў),
 						'one' => q({0} тыдзень),
 						'other' => q({0} тыдня),
 					},
 					'year' => {
+						'' => q(году),
 						'few' => q({0} гады),
 						'many' => q({0} гадоў),
 						'one' => q({0} год),
 						'other' => q({0} году),
+					},
+				},
+				'short' => {
+					'day' => {
+						'' => q(дня),
+					},
+					'hour' => {
+						'' => q(гадзіны),
+					},
+					'minute' => {
+						'' => q(хвіліны),
+					},
+					'month' => {
+						'' => q(месяца),
+					},
+					'second' => {
+						'' => q(сэкунды),
+					},
+					'week' => {
+						'' => q(тыдня),
+					},
+					'year' => {
+						'' => q(году),
 					},
 				},
 			} }
@@ -2830,16 +2717,7 @@ has 'number_symbols' => (
 	default		=> sub { {
 		'latn' => {
 			'decimal' => q(,),
-			'exponential' => q(),
 			'group' => q( ),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -3174,8 +3052,8 @@ has 'day_periods' => (
 			},
 			'stand-alone' => {
 				'abbreviated' => {
-					'am' => q{раніцы},
 					'pm' => q{вечара},
+					'am' => q{раніцы},
 				},
 			},
 		},
@@ -3263,6 +3141,28 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'buddhist' => {
+			Ed => q{E, d},
+			Gy => q{G y},
+			Hm => q{HH.mm},
+			Hms => q{HH.mm.ss},
+			M => q{L},
+			MEd => q{E, d.M},
+			MMM => q{LLL},
+			MMMEd => q{E, d MMM},
+			MMMd => q{d MMM},
+			Md => q{d.M},
+			d => q{d},
+			hm => q{h.mm a},
+			hms => q{h.mm.ss a},
+			y => q{G y},
+			yM => q{M.y},
+			yMEd => q{E, d.M.y},
+			yMMM => q{MMM y G},
+			yMMMEd => q{E, d MMM y G},
+			yMMMd => q{d MMM y G},
+			yMd => q{d.M.y},
+		},
 		'generic' => {
 			Ed => q{E, d},
 			Gy => q{y G},
@@ -3292,28 +3192,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{d.M.y G},
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
-		},
-		'buddhist' => {
-			Ed => q{E, d},
-			Gy => q{G y},
-			Hm => q{HH.mm},
-			Hms => q{HH.mm.ss},
-			M => q{L},
-			MEd => q{E, d.M},
-			MMM => q{LLL},
-			MMMEd => q{E, d MMM},
-			MMMd => q{d MMM},
-			Md => q{d.M},
-			d => q{d},
-			hm => q{h.mm a},
-			hms => q{h.mm.ss a},
-			y => q{G y},
-			yM => q{M.y},
-			yMEd => q{E, d.M.y},
-			yMMM => q{MMM y G},
-			yMMMEd => q{E, d MMM y G},
-			yMMMd => q{d MMM y G},
-			yMd => q{d.M.y},
 		},
 		'gregorian' => {
 			Gy => q{y G},

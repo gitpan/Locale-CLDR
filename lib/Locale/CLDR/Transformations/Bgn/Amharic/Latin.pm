@@ -1,11 +1,11 @@
 package Locale::CLDR::Transformations::Bgn::Amharic::Latin;
 # This file auto generated from Data\common\transforms\Amharic-Latin-BGN.xml
-#	on Fri 20 Jun 10:43:24 pm GMT
+#	on Thu  2 Oct 10:06:16 am GMT
 # XML file generated 2013-08-20 21:47:18 -0500 (Tue, 20 Aug 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';

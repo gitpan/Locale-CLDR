@@ -1,11 +1,11 @@
 package Locale::CLDR::Ne::Any::In;
 # This file auto generated from Data\common\main\ne_IN.xml
-#	on Sat 21 Jun 12:41:57 am GMT
-# XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
+#	on Thu  2 Oct  1:12:14 pm GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,24 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Ne::Any');
+has 'display_name_language' => (
+	is			=> 'ro',
+	isa			=> 'CodeRef',
+	init_arg	=> undef,
+	default		=> sub { 
+		 sub {
+			 my %languages = (
+				'ar_001' => 'अधुनिक प्रमाणिक अरबी',
+
+			);
+			if (@_) {
+				return $languages{$_[0]};
+			}
+			return \%languages;
+		}
+	},
+);
+
 has 'display_name_measurement_system' => (
 	is			=> 'ro',
 	isa			=> 'HashRef[Str]',
@@ -34,8 +52,14 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'week' => {
+						'' => q(सप्ताह),
 						'one' => q({0} साता),
 						'other' => q({0} सप्ताह),
+					},
+				},
+				'short' => {
+					'week' => {
+						'' => q(सप्ताह),
 					},
 				},
 			} }
@@ -132,6 +156,25 @@ has 'calendar_days' => (
 	} },
 );
 
+has 'calendar_quarters' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+			'gregorian' => {
+				'stand-alone' => {
+					abbreviated => {0 => 'पहिलो सत्र',
+						1 => 'दोस्रो सत्र'
+					},
+					wide => {1 => 'दोस्रो सत्र',
+						2 => 'तेस्रो सत्र',
+						3 => 'चौथो सत्र'
+					},
+				},
+			},
+	} },
+);
+
 has 'day_periods' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -140,8 +183,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{पूर्वाह्न},
 					'pm' => q{अपराह्न},
+					'am' => q{पूर्वाह्न},
 				},
 			},
 		},

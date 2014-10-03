@@ -1,11 +1,11 @@
 package Locale::CLDR::Fo;
 # This file auto generated from Data\common\main\fo.xml
-#	on Fri 20 Jun 11:32:59 pm GMT
-# XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
+#	on Thu  2 Oct 11:14:28 am GMT
+# XML file generated 2014-08-11 11:10:03 -0500 (Mon, 11 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -1201,82 +1201,102 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'arc-minute' => {
+						'' => q(bueminuttir),
 						'one' => q({0} bueminutt),
 						'other' => q({0} bueminuttir),
 					},
 					'arc-second' => {
+						'' => q(buesekundir),
 						'one' => q({0} buesekund),
 						'other' => q({0} buesekundir),
 					},
 					'celsius' => {
+						'' => q(gradir Celsius),
 						'one' => q({0} grad Celsius),
 						'other' => q({0} gradir Celsius),
 					},
 					'centimeter' => {
+						'' => q(sentimeter),
 						'one' => q({0} sentimeter),
 						'other' => q({0} sentimeter),
 					},
 					'day' => {
+						'' => q(samdøgur),
 						'one' => q({0} samdøgur),
 						'other' => q({0} samdøgur),
 					},
 					'degree' => {
+						'' => q(gradir),
 						'one' => q({0} grad),
 						'other' => q({0} gradir),
 					},
 					'fahrenheit' => {
+						'' => q(gradir Fahrenheit),
 						'one' => q({0} grad Fahrenheit),
 						'other' => q({0} gradir Fahrenheit),
 					},
 					'g-force' => {
+						'' => q(tyngdakraft Jørðin),
 						'one' => q({0} tyngdakraft Jørðin),
 						'other' => q({0} tyngdakraft Jørðin),
 					},
 					'gram' => {
+						'' => q(gram),
 						'one' => q({0} gram),
 						'other' => q({0} gram),
 					},
 					'hectare' => {
+						'' => q(hektar),
 						'one' => q({0} hektar),
 						'other' => q({0} hektar),
 					},
 					'hectopascal' => {
+						'' => q(hektopascal),
 						'one' => q({0} hektopascal),
 						'other' => q({0} hektopascal),
 					},
 					'hour' => {
+						'' => q(tímar),
 						'one' => q({0} tími),
 						'other' => q({0} tímar),
 					},
 					'kilogram' => {
+						'' => q(kilogram),
 						'one' => q({0} kilogram),
 						'other' => q({0} kilogram),
 					},
 					'kilometer' => {
+						'' => q(kilometer),
 						'one' => q({0} kilometer),
 						'other' => q({0} kilometer),
 					},
 					'meter' => {
+						'' => q(meter),
 						'one' => q({0} meter),
 						'other' => q({0} meter),
 					},
 					'millibar' => {
+						'' => q(millibar),
 						'one' => q({0} millibar),
 						'other' => q({0} millibar),
 					},
 					'millimeter' => {
+						'' => q(millimeter),
 						'one' => q({0} millimeter),
 						'other' => q({0} millimeter),
 					},
 					'millisecond' => {
+						'' => q(millissekundir),
 						'one' => q({0} millisekund),
 						'other' => q({0} millissekundir),
 					},
 					'minute' => {
+						'' => q(minuttir),
 						'one' => q({0} minuttur),
 						'other' => q({0} minuttir),
 					},
 					'month' => {
+						'' => q(mánaðir),
 						'one' => q({0} mánadur),
 						'other' => q({0} mánaðir),
 					},
@@ -1284,18 +1304,22 @@ has 'units' => (
 						'' => q({0} á {1}),
 					},
 					'picometer' => {
+						'' => q(pikometer),
 						'one' => q({0} pikometer),
 						'other' => q({0} pikometer),
 					},
 					'second' => {
+						'' => q(sekundir),
 						'one' => q({0} sekund),
 						'other' => q({0} sekundir),
 					},
 					'week' => {
+						'' => q(vikur),
 						'one' => q({0} vika),
 						'other' => q({0} vikur),
 					},
 					'year' => {
+						'' => q(ára),
 						'one' => q({0} ár),
 						'other' => q({0} ára),
 					},
@@ -1435,18 +1459,22 @@ has 'units' => (
 				},
 				'short' => {
 					'arc-minute' => {
+						'' => q(bueminuttir),
 						'one' => q({0}′),
 						'other' => q({0}′),
 					},
 					'arc-second' => {
+						'' => q(buesekundir),
 						'one' => q({0}″),
 						'other' => q({0}″),
 					},
 					'celsius' => {
+						'' => q(gradir Celsius),
 						'one' => q({0}°C),
 						'other' => q({0}°C),
 					},
 					'centimeter' => {
+						'' => q(sentimeter),
 						'one' => q({0} cm),
 						'other' => q({0} cm),
 					},
@@ -1455,42 +1483,52 @@ has 'units' => (
 						'other' => q({0} km³),
 					},
 					'day' => {
+						'' => q(samdøgur),
 						'one' => q({0} d),
 						'other' => q({0} d),
 					},
 					'degree' => {
+						'' => q(gradir),
 						'one' => q({0}°),
 						'other' => q({0}°),
 					},
 					'fahrenheit' => {
+						'' => q(gradir Fahrenheit),
 						'one' => q({0}°F),
 						'other' => q({0}°F),
 					},
 					'g-force' => {
+						'' => q(tyngdakraft Jørðin),
 						'one' => q({0} G),
 						'other' => q({0} G),
 					},
 					'gram' => {
+						'' => q(gram),
 						'one' => q({0} g),
 						'other' => q({0} g),
 					},
 					'hectare' => {
+						'' => q(hektar),
 						'one' => q({0} ha),
 						'other' => q({0} ha),
 					},
 					'hectopascal' => {
+						'' => q(hektopascal),
 						'one' => q({0} hPa),
 						'other' => q({0} hPa),
 					},
 					'hour' => {
+						'' => q(tímar),
 						'one' => q({0} h),
 						'other' => q({0} h),
 					},
 					'kilogram' => {
+						'' => q(kilogram),
 						'one' => q({0} kg),
 						'other' => q({0} kg),
 					},
 					'kilometer' => {
+						'' => q(kilometer),
 						'one' => q({0} km),
 						'other' => q({0} km),
 					},
@@ -1507,6 +1545,7 @@ has 'units' => (
 						'other' => q({0} l),
 					},
 					'meter' => {
+						'' => q(meter),
 						'one' => q({0} m),
 						'other' => q({0} m),
 					},
@@ -1515,22 +1554,27 @@ has 'units' => (
 						'other' => q({0} m/s),
 					},
 					'millibar' => {
+						'' => q(millibar),
 						'one' => q({0} mbar),
 						'other' => q({0} mbar),
 					},
 					'millimeter' => {
+						'' => q(millimeter),
 						'one' => q({0} mm),
 						'other' => q({0} mm),
 					},
 					'millisecond' => {
+						'' => q(millissekundir),
 						'one' => q({0} ms),
 						'other' => q({0} ms),
 					},
 					'minute' => {
+						'' => q(minuttir),
 						'one' => q({0} min),
 						'other' => q({0} min),
 					},
 					'month' => {
+						'' => q(mánaðir),
 						'one' => q({0} mán),
 						'other' => q({0} mán),
 					},
@@ -1538,10 +1582,12 @@ has 'units' => (
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(pikometer),
 						'one' => q({0} pm),
 						'other' => q({0} pm),
 					},
 					'second' => {
+						'' => q(sekundir),
 						'one' => q({0} s),
 						'other' => q({0} s),
 					},
@@ -1558,10 +1604,12 @@ has 'units' => (
 						'other' => q({0} W),
 					},
 					'week' => {
+						'' => q(vikur),
 						'one' => q({0} v),
 						'other' => q({0} v),
 					},
 					'year' => {
+						'' => q(ára),
 						'one' => q({0} á),
 						'other' => q({0} á),
 					},
@@ -1611,7 +1659,6 @@ has 'number_symbols' => (
 			'perMille' => q(‰),
 			'percentSign' => q(%),
 			'plusSign' => q(+),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -2075,12 +2122,12 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{um fyrrapartur},
 					'pm' => q{um seinnapartur},
+					'am' => q{um fyrrapartur},
 				},
 				'abbreviated' => {
-					'am' => q{f.p.},
 					'pm' => q{s.p.},
+					'am' => q{f.p.},
 				},
 			},
 			'stand-alone' => {

@@ -1,11 +1,11 @@
 package Locale::CLDR::Ky::Cyrl::Kg;
 # This file auto generated from Data\common\main\ky_Cyrl_KG.xml
-#	on Sat 21 Jun 12:17:35 am GMT
-# XML file generated 2013-08-22 08:57:13 -0500 (Thu, 22 Aug 2013)
+#	on Thu  2 Oct 12:13:53 pm GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';

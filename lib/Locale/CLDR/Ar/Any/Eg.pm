@@ -1,11 +1,11 @@
 package Locale::CLDR::Ar::Any::Eg;
 # This file auto generated from Data\common\main\ar_EG.xml
-#	on Fri 20 Jun 10:49:31 pm GMT
-# XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
+#	on Thu  2 Oct 10:13:58 am GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -24,7 +24,6 @@ has 'display_name_language' => (
 			 my %languages = (
 				'ady' => 'الأديغة',
  				'ae' => 'الأفستانية',
- 				'af' => 'الأفريقانية',
  				'agq' => 'الأغيمية',
  				'alt' => 'الألطية الجنوبية',
  				'an' => 'الأرغونية',
@@ -32,7 +31,6 @@ has 'display_name_language' => (
  				'as' => 'الأساميزية',
  				'asa' => 'الآسو',
  				'av' => 'الآفارية',
- 				'az' => 'الأذربيجانية',
  				'ban' => 'اللغة البالينية',
  				'bbj' => 'لغة الغومالا',
  				'be' => 'البيلاروسية',
@@ -92,7 +90,6 @@ has 'display_name_language' => (
  				'nl_BE' => 'الفلمنكية',
  				'nmg' => 'لغة الكواسيو',
  				'nnh' => 'لغة النجيمبون',
- 				'nus' => 'النوير',
  				'rof' => 'الرومبو',
  				'rom' => 'الغجرية',
  				'rwk' => 'الروا',
@@ -149,17 +146,7 @@ has 'number_symbols' => (
 	init_arg	=> undef,
 	default		=> sub { {
 		'arab' => {
-			'decimal' => q(),
-			'exponential' => q(),
-			'group' => q(),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
 			'nan' => q(NaN),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -264,27 +251,6 @@ has 'time_zone_names' => (
 		'America/Matamoros' => {
 			exemplarCity => q#ماتامروس#,
 		},
-		'America_Central' => {
-			long => {
-				'daylight' => q(التوقيت الصيفي المركزي لأمريكا الشمالية),
-				'generic' => q(التوقيت المركزي لأمريكا الشمالية),
-				'standard' => q(التوقيت الرسمي المركزي لأمريكا الشمالية),
-			},
-		},
-		'America_Eastern' => {
-			long => {
-				'daylight' => q(التوقيت الصيفي الشرقي لأمريكا الشمالية),
-				'generic' => q(التوقيت الشرقي لأمريكا الشمالية),
-				'standard' => q(التوقيت الرسمي الشرقي لأمريكا الشمالية),
-			},
-		},
-		'America_Mountain' => {
-			long => {
-				'daylight' => q(التوقيت الجبلي الصيفي لأمريكا الشمالية),
-				'generic' => q(التوقيت الجبلي لأمريكا الشمالية),
-				'standard' => q(التوقيت الجبلي الرسمي لأمريكا الشمالية),
-			},
-		},
 		'America_Pacific' => {
 			long => {
 				'daylight' => q(توقيت المحيط الهادي الصيفي لأمريكا الشمالية),
@@ -294,13 +260,6 @@ has 'time_zone_names' => (
 		},
 		'Asia/Hebron' => {
 			exemplarCity => q#هبرون#,
-		},
-		'Pierre_Miquelon' => {
-			long => {
-				'daylight' => q(توقيت سانت بيير وميكولون الصيفي),
-				'generic' => q(توقيت سانت بيير وميكولون),
-				'standard' => q(توقيت سانت بيير وميكولون الرسمي),
-			},
 		},
 	 } }
 );

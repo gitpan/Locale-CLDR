@@ -1,11 +1,11 @@
 package Locale::CLDR::Haw;
 # This file auto generated from Data\common\main\haw.xml
-#	on Fri 20 Jun 11:42:21 pm GMT
-# XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
+#	on Thu  2 Oct 11:31:13 am GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -141,30 +141,37 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'day' => {
+						'' => q(lā),
 						'one' => q({0} lā),
 						'other' => q({0} lā),
 					},
 					'hour' => {
+						'' => q(hola),
 						'one' => q({0} hola),
 						'other' => q({0} hola),
 					},
 					'minute' => {
+						'' => q(minuke),
 						'one' => q({0} minuke),
 						'other' => q({0} minuke),
 					},
 					'month' => {
+						'' => q(mahina),
 						'one' => q({0} mahina),
 						'other' => q({0} mahina),
 					},
 					'second' => {
+						'' => q(kekona),
 						'one' => q({0} kekona),
 						'other' => q({0} kekona),
 					},
 					'week' => {
+						'' => q(pule),
 						'one' => q({0} pule),
 						'other' => q({0} pule),
 					},
 					'year' => {
+						'' => q(makahiki),
 						'one' => q({0} makahiki),
 						'other' => q({0} makahiki),
 					},
@@ -177,6 +184,29 @@ has 'units' => (
 					'fahrenheit' => {
 						'one' => q({0}°),
 						'other' => q({0}°),
+					},
+				},
+				'short' => {
+					'day' => {
+						'' => q(lā),
+					},
+					'hour' => {
+						'' => q(hola),
+					},
+					'minute' => {
+						'' => q(minuke),
+					},
+					'month' => {
+						'' => q(mahina),
+					},
+					'second' => {
+						'' => q(kekona),
+					},
+					'week' => {
+						'' => q(pule),
+					},
+					'year' => {
+						'' => q(makahiki),
 					},
 				},
 			} }

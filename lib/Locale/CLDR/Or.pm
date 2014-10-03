@@ -1,11 +1,11 @@
 package Locale::CLDR::Or;
 # This file auto generated from Data\common\main\or.xml
-#	on Sat 21 Jun 12:45:01 am GMT
-# XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
+#	on Thu  2 Oct  1:16:44 pm GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -31,6 +31,7 @@ has 'display_name_language' => (
  				'ae' => 'ଅବେସ୍ତନ',
  				'af' => 'ଆଫ୍ରିକାନସ୍',
  				'afh' => 'ଆଫ୍ରିହିଲି',
+ 				'agq' => 'ଆଘେମ',
  				'ain' => 'ଆଇନୁ',
  				'ak' => 'ଅକନ୍',
  				'akk' => 'ଆକାଡିଆନ୍',
@@ -41,11 +42,13 @@ has 'display_name_language' => (
  				'ang' => 'ପୁରୁଣା ଇଁରାଜୀ',
  				'anp' => 'ଅଁଗୀକା',
  				'ar' => 'ଆରବିକ୍',
+ 				'ar_001' => 'ମାନକ ଆରବିକ',
  				'arc' => 'ଆରାମାଇକ୍',
  				'arn' => 'ଆରାଉକାନିଆନ୍',
  				'arp' => 'ଆରାପାହୋ',
  				'arw' => 'ଆରୱକ',
  				'as' => 'ଆସାମୀ',
+ 				'asa' => 'ଆସୁ',
  				'ast' => 'ଆଷ୍ଟୁରିଆନ୍',
  				'av' => 'ଆଭାରିକ୍',
  				'awa' => 'ଆୱାଧି',
@@ -58,6 +61,7 @@ has 'display_name_language' => (
  				'be' => 'ବେଲାରୁଷିଆନ୍',
  				'bej' => 'ବେଜା',
  				'bem' => 'ବେମ୍ବା',
+ 				'bez' => 'ବେନା',
  				'bg' => 'ବୁଲଗେରିଆନ୍',
  				'bho' => 'ଭୋଜପୁରୀ',
  				'bi' => 'ବିସଲାମା',
@@ -89,6 +93,7 @@ has 'display_name_language' => (
  				'chp' => 'ଚିପେୱାନ୍',
  				'chr' => 'ଚେରୋକୀ',
  				'chy' => 'ଚେଚେନା',
+ 				'ckb' => 'ସୋରାନି କୁର୍ଦିଶ',
  				'co' => 'କୋର୍ସିକାନ୍',
  				'cop' => 'କପ୍ଟିକ୍',
  				'cr' => 'କ୍ରୀ',
@@ -349,6 +354,7 @@ has 'display_name_language' => (
  				'rn' => 'ରୁଣ୍ଡି',
  				'ro' => 'ରୋମାନିଆନ୍',
  				'ro_MD' => 'ମୋଲଡୋଭିଆନ୍',
+ 				'rof' => 'ରୋମ୍ବୋ',
  				'rom' => 'ରୋମାନି',
  				'root' => 'ମୂଳ',
  				'ru' => 'ରଷିଆନ୍',
@@ -726,6 +732,7 @@ has 'display_name_territory' => (
  			'FI' => 'ଫିନଲ୍ୟାଣ୍ଡ',
  			'FJ' => 'ଫିଜି',
  			'FK' => 'ଫଲ୍କଲ୍ୟାଣ୍ଡ ଦ୍ବୀପପୁଞ୍ଜ',
+ 			'FK@alt=variant' => 'FK',
  			'FM' => 'ମାଇକ୍ରୋନେସିଆ',
  			'FO' => 'ଫାରୋଇ ଦ୍ବୀପପୁଞ୍ଜ',
  			'FR' => 'ଫ୍ରାନ୍ସ',
@@ -887,6 +894,7 @@ has 'display_name_territory' => (
  			'UG' => 'ଉଗାଣ୍ଡା',
  			'UM' => 'ୟୁନାଇଟେଡ୍ ଷ୍ଟେଟସ୍ ମାଇନର୍ ଆଉଟଲେଇଂ ଦ୍ବୀପପୁଞ୍ଜ',
  			'US' => 'ଯୁକ୍ତ ରାଷ୍ଟ୍ର ଆମେରିକା',
+ 			'US@alt=short' => 'ୟୁ.ଏସ୍',
  			'UY' => 'ଉରୁଗୁଏ',
  			'UZ' => 'ଉଜବେକିସ୍ଥାନ୍',
  			'VA' => 'ଭାଟିକାନ୍',
@@ -965,16 +973,7 @@ has 'number_symbols' => (
 	default		=> sub { {
 		'latn' => {
 			'decimal' => q(.),
-			'exponential' => q(),
 			'group' => q(,),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -1040,13 +1039,32 @@ has 'calendar_months' => (
 	default		=> sub { {
 			'gregorian' => {
 				'format' => {
+					abbreviated => {
+						nonleap => [
+							'ଜାନୁଆରୀ',
+							'ଫେବୃଆରୀ',
+							'ମାର୍ଚ୍ଚ',
+							'ଅପ୍ରେଲ',
+							'ମଇ',
+							'ଜୁନ',
+							'ଜୁଲାଇ',
+							'ଅଗଷ୍ଟ',
+							'ସେପ୍ଟେମ୍ବର',
+							'ଅକ୍ଟୋବର',
+							'ନଭେମ୍ବର',
+							'ଡିସେମ୍ବର'
+						],
+						leap => [
+							
+						],
+					},
 					wide => {
 						nonleap => [
 							'ଜାନୁଆରୀ',
-							'ଫେବ୍ରୁୟାରୀ',
+							'ଫେବୃଆରୀ',
 							'ମାର୍ଚ୍ଚ',
 							'ଅପ୍ରେଲ',
-							'ମେ',
+							'ମଇ',
 							'ଜୁନ',
 							'ଜୁଲାଇ',
 							'ଅଗଷ୍ଟ',
@@ -1061,13 +1079,32 @@ has 'calendar_months' => (
 					},
 				},
 				'stand-alone' => {
+					abbreviated => {
+						nonleap => [
+							'ଜାନୁଆରୀ',
+							'ଫେବୃଆରୀ',
+							'ମାର୍ଚ୍ଚ',
+							'ଅପ୍ରେଲ',
+							'ମଇ',
+							'ଜୁନ',
+							'ଜୁଲାଇ',
+							'ଅଗଷ୍ଟ',
+							'ସେପ୍ଟେମ୍ବର',
+							'ଅକ୍ଟୋବର',
+							'ନଭେମ୍ବର',
+							'ଡିସେମ୍ବର'
+						],
+						leap => [
+							
+						],
+					},
 					narrow => {
 						nonleap => [
 							'ଜା',
 							'ଫେ',
 							'ମା',
 							'ଅ',
-							'ମେ',
+							'ମଇ',
 							'ଜୁ',
 							'ଜୁ',
 							'ଅ',
@@ -1075,6 +1112,25 @@ has 'calendar_months' => (
 							'ଅ',
 							'ନ',
 							'ଡି'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'ଜାନୁଆରୀ',
+							'ଫେବୃଆରୀ',
+							'ମାର୍ଚ୍ଚ',
+							'ଅପ୍ରେଲ',
+							'ମଇ',
+							'ଜୁନ',
+							'ଜୁଲାଇ',
+							'ଅଗଷ୍ଟ',
+							'ସେପ୍ଟେମ୍ବର',
+							'ଅକ୍ଟୋବର',
+							'ନଭେମ୍ବର',
+							'ଡିସେମ୍ବର'
 						],
 						leap => [
 							
@@ -1112,6 +1168,15 @@ has 'calendar_days' => (
 					},
 				},
 				'stand-alone' => {
+					abbreviated => {
+						mon => 'ସୋମ',
+						tue => 'ମଙ୍ଗଳ',
+						wed => 'ବୁଧ',
+						thu => 'ଗୁରୁ',
+						fri => 'ଶୁକ୍ର',
+						sat => 'ଶନି',
+						sun => 'ରବି'
+					},
 					narrow => {
 						mon => 'ସୋ',
 						tue => 'ମ',
@@ -1134,12 +1199,12 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{pm},
 					'am' => q{am},
+					'pm' => q{pm},
 				},
 				'narrow' => {
-					'pm' => q{pm},
 					'am' => q{am},
+					'pm' => q{pm},
 				},
 			},
 		},
@@ -1211,19 +1276,19 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			MMMMd => q{MMMM d},
-			MMdd => q{dd-MM},
-			yMM => q{MM-y},
-			yMMMM => q{MMMM y},
-			yQQQ => q{QQQ y},
-		},
 		'generic' => {
 			MMMMd => q{MMMM d},
 			MMdd => q{dd-MM},
 			yMM => q{MM-y G},
 			yMMMM => q{MMMM y G},
 			yQQQ => q{QQQ y G},
+		},
+		'gregorian' => {
+			MMMMd => q{MMMM d},
+			MMdd => q{dd-MM},
+			yMM => q{MM-y},
+			yMMMM => q{MMMM y},
+			yQQQ => q{QQQ y},
 		},
 	} },
 );

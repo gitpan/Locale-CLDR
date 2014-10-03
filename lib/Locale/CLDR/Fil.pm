@@ -1,11 +1,11 @@
 package Locale::CLDR::Fil;
 # This file auto generated from Data\common\main\fil.xml
-#	on Fri 20 Jun 11:32:15 pm GMT
-# XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
+#	on Thu  2 Oct 11:12:26 am GMT
+# XML file generated 2014-08-14 15:10:07 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -320,38 +320,50 @@ has 'display_name_language' => (
 				'ab' => 'Abkhazian',
  				'ach' => 'Acoli',
  				'af' => 'Afrikaans',
+ 				'agq' => 'Aghem',
  				'ak' => 'Akan',
  				'am' => 'Amharic',
- 				'ar' => 'Arabic',
- 				'ar_001' => 'Modern Standard Arabic',
+ 				'ar' => 'Arabe',
+ 				'ar_001' => 'Modernong Karaniwang Arabe',
+ 				'arn' => 'Mapuche',
  				'as' => 'Assamese',
+ 				'asa' => 'Asu',
  				'ay' => 'Aymara',
  				'az' => 'Azerbaijani',
  				'az@alt=short' => 'Azeri',
+ 				'ba' => 'Bashkir',
  				'be' => 'Belarusian',
  				'bem' => 'Bemba',
+ 				'bez' => 'Bena',
  				'bg' => 'Bulgarian',
+ 				'bm' => 'Bambara',
  				'bn' => 'Bengali',
  				'bo' => 'Tibetan',
  				'br' => 'Breton',
+ 				'brx' => 'Bodo',
  				'bs' => 'Bosnian',
  				'ca' => 'Catalan',
+ 				'cgg' => 'Chiga',
  				'chr' => 'Cherokee',
  				'ckb' => 'Sorani Kurdish',
  				'co' => 'Corsican',
  				'cs' => 'Czech',
  				'cy' => 'Welsh',
  				'da' => 'Danish',
+ 				'dav' => 'Taita',
  				'de' => 'German',
- 				'de_AT' => 'Austrian German',
- 				'de_CH' => 'Swiss High German',
+ 				'dje' => 'Zarma',
+ 				'dsb' => 'Lower Sorbian',
+ 				'dua' => 'Duala',
  				'dv' => 'Divehi',
+ 				'dyo' => 'Jola-Fonyi',
  				'dz' => 'Dzongkha',
+ 				'ebu' => 'Embu',
  				'ee' => 'Ewe',
  				'efi' => 'Efik',
  				'el' => 'Greek',
  				'en' => 'Ingles',
- 				'en_AU' => 'Ingles sa Australia',
+ 				'en_AU' => 'Ingles ng Australya',
  				'en_CA' => 'Ingles sa Canada',
  				'en_GB' => 'Ingles (UK)',
  				'en_GB@alt=short' => 'Ingles (U.K.)',
@@ -375,16 +387,20 @@ has 'display_name_language' => (
  				'fy' => 'Western Frisian',
  				'ga' => 'Irish',
  				'gaa' => 'Ga',
+ 				'gag' => 'Gagauz',
  				'gd' => 'Scots Gaelic',
  				'gl' => 'Galician',
  				'gn' => 'Guarani',
  				'gsw' => 'Swiss German',
  				'gu' => 'Gujarati',
+ 				'guz' => 'Gusii',
+ 				'gv' => 'Manx',
  				'ha' => 'Hausa',
  				'haw' => 'Hawaiian',
  				'he' => 'Hebrew',
  				'hi' => 'Hindi',
  				'hr' => 'Croatian',
+ 				'hsb' => 'Upper Sorbian',
  				'ht' => 'Haitian',
  				'hu' => 'Hungarian',
  				'hy' => 'Armenian',
@@ -392,46 +408,78 @@ has 'display_name_language' => (
  				'id' => 'Indonesian',
  				'ie' => 'Interlingue',
  				'ig' => 'Igbo',
+ 				'ii' => 'Sichuan Yi',
  				'is' => 'Icelandic',
  				'it' => 'Italian',
+ 				'iu' => 'Inuktitut',
  				'ja' => 'Japanese',
+ 				'jgo' => 'Ngomba',
+ 				'jmc' => 'Machame',
  				'jv' => 'Javanese',
  				'ka' => 'Georgian',
+ 				'kab' => 'Kabyle',
+ 				'kam' => 'Kamba',
+ 				'kde' => 'Makonde',
+ 				'kea' => 'Kabuverdianu',
  				'kg' => 'Kongo',
+ 				'khq' => 'Koyra Chiini',
+ 				'ki' => 'Kikuyu',
  				'kk' => 'Kazakh',
+ 				'kl' => 'Kalaallisut',
+ 				'kln' => 'Kalenjin',
  				'km' => 'Khmer',
  				'kn' => 'Kannada',
  				'ko' => 'Korean',
+ 				'koi' => 'Komi-Permyak',
+ 				'kok' => 'Konkani',
  				'ks' => 'Kashmiri',
+ 				'ksb' => 'Shambala',
+ 				'ksf' => 'Bafia',
  				'ku' => 'Kurdish',
+ 				'kw' => 'Cornish',
  				'ky' => 'Kirghiz',
  				'la' => 'Latin',
+ 				'lag' => 'Langi',
  				'lb' => 'Luxembourgish',
  				'lg' => 'Ganda',
+ 				'lkt' => 'Lakota',
  				'ln' => 'Lingala',
  				'lo' => 'Lao',
  				'loz' => 'Lozi',
  				'lt' => 'Lithuanian',
+ 				'lu' => 'Luba-Katanga',
  				'lua' => 'Luba-Lulua',
+ 				'luo' => 'Luo',
+ 				'luy' => 'Luyia',
  				'lv' => 'Latvian',
+ 				'mas' => 'Masai',
+ 				'mer' => 'Meru',
  				'mfe' => 'Morisyen',
  				'mg' => 'Malagasy',
+ 				'mgh' => 'Makhuwa-Meetto',
+ 				'mgo' => 'Meta’',
  				'mi' => 'Maori',
  				'mk' => 'Macedonian',
  				'ml' => 'Malayalam',
  				'mn' => 'Mongolian',
+ 				'moh' => 'Mohawk',
  				'mr' => 'Marathi',
  				'ms' => 'Malay',
  				'mt' => 'Maltese',
+ 				'mua' => 'Mundang',
  				'my' => 'Burmese',
+ 				'naq' => 'Nama',
  				'nb' => 'Norwegian Bokmal',
  				'nd' => 'North Ndebele',
  				'ne' => 'Nepali',
  				'nl' => 'Dutch',
  				'nl_BE' => 'Flemish',
+ 				'nmg' => 'Kwasio',
  				'nn' => 'Norwegian Nynorsk',
  				'no' => 'Norwegian',
+ 				'nqo' => 'N’Ko',
  				'nso' => 'Northern Sotho',
+ 				'nus' => 'Nuer',
  				'ny' => 'Nyanja',
  				'nyn' => 'Nyankole',
  				'oc' => 'Occitan',
@@ -442,24 +490,37 @@ has 'display_name_language' => (
  				'pl' => 'Polish',
  				'ps' => 'Pashto',
  				'ps@alt=variant' => 'Pushto',
- 				'pt' => 'Portuguese',
+ 				'pt' => 'Portuges',
  				'pt_BR' => 'Brazilian Portuguese',
  				'pt_PT' => 'European Portuguese',
  				'qu' => 'Quechua',
+ 				'quc' => 'Kʼicheʼ',
  				'rm' => 'Romansh',
  				'rn' => 'Rundi',
  				'ro' => 'Romanian',
+ 				'ro_MD' => 'Moldavian',
+ 				'rof' => 'Rombo',
  				'ru' => 'Russian',
  				'rw' => 'Kinyarwanda',
+ 				'rwk' => 'Rwa',
  				'sa' => 'Sanskrit',
+ 				'saq' => 'Samburu',
+ 				'sbp' => 'Sangu',
  				'sd' => 'Sindhi',
  				'se' => 'Northern Sami',
+ 				'seh' => 'Sena',
+ 				'ses' => 'Koyraboro Senni',
  				'sg' => 'Sango',
  				'sh' => 'Serbo-Croatian',
+ 				'shi' => 'Tachelhit',
  				'si' => 'Sinhala',
  				'sk' => 'Slovak',
  				'sl' => 'Slovenian',
  				'sm' => 'Samoan',
+ 				'sma' => 'Southern Sami',
+ 				'smj' => 'Lule Sami',
+ 				'smn' => 'Inari Sami',
+ 				'sms' => 'Skolt Sami',
  				'sn' => 'Shona',
  				'so' => 'Somali',
  				'sq' => 'Albanian',
@@ -470,8 +531,10 @@ has 'display_name_language' => (
  				'sv' => 'Swedish',
  				'sw' => 'Swahili',
  				'swb' => 'Comorian',
+ 				'swc' => 'Swahili (Congo)',
  				'ta' => 'Tamil',
  				'te' => 'Telugu',
+ 				'teo' => 'Teso',
  				'tet' => 'Tetum',
  				'tg' => 'Tajik',
  				'th' => 'Thai',
@@ -487,26 +550,30 @@ has 'display_name_language' => (
  				'tt' => 'Tatar',
  				'tum' => 'Tumbuka',
  				'tw' => 'Twi',
+ 				'twq' => 'Tasawaq',
  				'ty' => 'Tahitian',
+ 				'tzm' => 'Tamazight ng Gitnang Atlas',
  				'ug' => 'Uyghur',
  				'ug@alt=variant' => 'Uighur',
  				'uk' => 'Ukranian',
  				'und' => 'Hindi Kilalang Wika',
  				'ur' => 'Urdu',
  				'uz' => 'Uzbek',
+ 				'vai' => 'Vai',
  				've' => 'Venda',
  				'vi' => 'Vietnamese',
+ 				'vun' => 'Vunjo',
  				'wo' => 'Wolof',
  				'xh' => 'Xhosa',
+ 				'xog' => 'Soga',
  				'yi' => 'Yiddish',
  				'yo' => 'Yoruba',
  				'yue' => 'Cantonese',
  				'zgh' => 'Standard Moroccan Tamazight',
  				'zh' => 'Chinese',
  				'zh_Hans' => 'Simplified Chinese',
- 				'zh_Hant' => 'Traditional Chinese',
  				'zu' => 'Zulu',
- 				'zxx' => 'Walang nilalamang linguistic',
+ 				'zxx' => 'Walang nilalaman na ukol sa wika',
 
 			);
 			if (@_) {
@@ -563,8 +630,8 @@ has 'display_name_script' => (
  			'Thai' => 'Thai',
  			'Tibt' => 'Tibetan',
  			'Zsym' => 'Mga Simbolo',
- 			'Zxxx' => 'Unwritten',
- 			'Zyyy' => 'Common',
+ 			'Zxxx' => 'Hindi Nakasulat',
+ 			'Zyyy' => 'Karaniwan',
  			'Zzzz' => 'Hindi Kilalang Script',
 
 			);
@@ -584,33 +651,33 @@ has 'display_name_territory' => (
 		{
 			'001' => 'Mundo',
  			'002' => 'Africa',
- 			'003' => 'North America',
+ 			'003' => 'Hilagang Amerika',
  			'005' => 'South America',
  			'009' => 'Oceania',
- 			'011' => 'Western Africa',
- 			'013' => 'Central America',
- 			'014' => 'Eastern Africa',
- 			'015' => 'Northern Africa',
- 			'017' => 'Middle Africa',
- 			'018' => 'Southern Africa',
+ 			'011' => 'Kanlurang Africa',
+ 			'013' => 'Gitnang Amerika',
+ 			'014' => 'Silangang Africa',
+ 			'015' => 'Hilagang Africa',
+ 			'017' => 'Gitnang Africa',
+ 			'018' => 'Katimugang Africa',
  			'019' => 'Americas',
- 			'021' => 'Northern America',
+ 			'021' => 'Rehiyon ng Hilagang Amerika',
  			'029' => 'Carribbean',
- 			'030' => 'Eastern Asia',
- 			'034' => 'Southern Asia',
- 			'035' => 'South-Eastern Asia',
- 			'039' => 'Southern Europe',
+ 			'030' => 'Silangang Asya',
+ 			'034' => 'Katimugang Asya',
+ 			'035' => 'Timog-Silangang Asya',
+ 			'039' => 'Katimugang Europe',
  			'053' => 'Australasia',
  			'054' => 'Melanesia',
- 			'057' => 'Micronesian Region',
+ 			'057' => 'Rehiyon ng Micronesia',
  			'061' => 'Polynesia',
- 			'142' => 'Asia',
- 			'143' => 'Central Asia',
- 			'145' => 'Western Asia',
+ 			'142' => 'Asya',
+ 			'143' => 'Gitnang Asya',
+ 			'145' => 'Kanlurang Asya',
  			'150' => 'Europe',
- 			'151' => 'Eastern Europe',
- 			'154' => 'Northern Europe',
- 			'155' => 'Western Europe',
+ 			'151' => 'Silangang Europe',
+ 			'154' => 'Hilagang Europe',
+ 			'155' => 'Kanlurang Europe',
  			'419' => 'Latin America',
  			'AC' => 'Acsencion island',
  			'AD' => 'Andorra',
@@ -659,7 +726,7 @@ has 'display_name_territory' => (
  			'CG' => 'Congo - Brazzaville',
  			'CG@alt=variant' => 'Congo (Republic)',
  			'CH' => 'Switzerland',
- 			'CI' => 'Côte d\'Ivoire',
+ 			'CI' => 'Côte d’Ivoire',
  			'CI@alt=variant' => 'Ivory Coast',
  			'CK' => 'Cook Islands',
  			'CL' => 'Chile',
@@ -685,7 +752,7 @@ has 'display_name_territory' => (
  			'EC' => 'Ecuador',
  			'EE' => 'Estonia',
  			'EG' => 'Egypt',
- 			'EH' => 'Western Sahara',
+ 			'EH' => 'Kanlurang Sahara',
  			'ER' => 'Eritrea',
  			'ES' => 'Spain',
  			'ET' => 'Ethiopia',
@@ -836,7 +903,7 @@ has 'display_name_territory' => (
  			'SN' => 'Senegal',
  			'SO' => 'Somalia',
  			'SR' => 'Suriname',
- 			'SS' => 'South Sudan',
+ 			'SS' => 'Timog Sudan',
  			'ST' => 'São Tomé and Príncipe',
  			'SV' => 'El Salvador',
  			'SX' => 'Sint Maarten',
@@ -913,7 +980,7 @@ has 'display_name_key' => (
  			'colcasefirst' => 'Uppercase/Lowercase na Pagsusunud-sunod',
  			'colcaselevel' => 'Case Sensitive na Pag-uuri-uri',
  			'colhiraganaquaternary' => 'Pag-uuri-uri ng Kana',
- 			'collation' => 'Ayos ng Pag-uuri-uri',
+ 			'collation' => 'Pagkakasunud-sunod ng Ayos',
  			'colnormalization' => 'Normalized na Pag-uuri-uri',
  			'colnumeric' => 'Numeric na Pag-uuri-uri',
  			'colstrength' => 'Lakas ng Pag-uuri-uri',
@@ -938,13 +1005,15 @@ has 'display_name_type' => (
  				'buddhist' => q{Kalendaryo ng Buddhist},
  				'chinese' => q{Kalendaryong Chinese},
  				'coptic' => q{Coptic Calendar},
- 				'ethiopic' => q{Kalendaryong Ethiopic},
+ 				'dangi' => q{Dangi na Kalendaryo},
+ 				'ethiopic' => q{Kalendaryo ng Ethiopia},
  				'ethiopic-amete-alem' => q{Kalendaryong Ethiopic Amete Alem},
- 				'gregorian' => q{Kalendaryong Gregorian},
- 				'hebrew' => q{Hebrew Calendar},
+ 				'gregorian' => q{Gregorian na Kalendaryo},
+ 				'hebrew' => q{Hebrew na Kalendaryo},
  				'indian' => q{Pambansang Kalendaryong Indian},
  				'islamic' => q{Kalendaryong Islamic},
  				'islamic-civil' => q{Kalendaryong Islamic-Civil},
+ 				'iso8601' => q{ISO-8601 na Kalendaryo},
  				'japanese' => q{Kalendaryong Japanese},
  				'persian' => q{Kalendaryong Persian},
  				'roc' => q{Kalendaryong Minguo},
@@ -973,15 +1042,15 @@ has 'display_name_type' => (
  			'collation' => {
  				'big5han' => q{Pagkakasunod-sunod ng Pag-uuri ng Tradisyunal na Chinese - Big5},
  				'dictionary' => q{Pagkakasunud-sunod ng Pag-uuri ng Diksyunaryo},
- 				'ducet' => q{Default na Ayos ng Pag-uuri ng Unicode},
+ 				'ducet' => q{Default na Pagkakasunud-sunod ng Ayos ng Unicode},
  				'gb2312han' => q{Pagkakasunud-sunod ng Pag-uuri ng Pinasimpleng Chinese - GB2312},
  				'phonebook' => q{Pagkakasunud-sunod ng Pag-uuri ng Phonebook},
  				'phonetic' => q{Phonetic na Ayos ng Pag-uuri-uri},
  				'pinyin' => q{Pagkakasunud-sunod ng Pag-uuri ng Pinyin},
  				'reformed' => q{Pagkakasunud-sunod ng Pag-uuri ng Na-reform},
- 				'search' => q{Paghahanap na May Layuning Pangkalahatan},
+ 				'search' => q{Pangkalahatang Paghahanap},
  				'searchjl' => q{Maghanap Ayon sa Unang Katinig ng Hangul},
- 				'standard' => q{Karaniwang Ayos ng Pag-uuri-uri},
+ 				'standard' => q{Karaniwang Pagkakasunud-sunod ng Ayos},
  				'stroke' => q{Pagkakasunud-sunod ng Pag-uuri ng Stroke},
  				'traditional' => q{Tradisyunal na Pagkakasunud-sunod ng Pag-uuri},
  				'unihan' => q{Pagkakasunud-sunod ng Pag-uuri ng Radical-Stroke},
@@ -1002,44 +1071,44 @@ has 'display_name_type' => (
  				'tertiary' => q{Pag-uri-uriin ang Mga Accent/Case/Lapad},
  			},
  			'numbers' => {
- 				'arab' => q{Arabic-Indic Digits},
- 				'arabext' => q{Extended Arabic-Indic Digits},
- 				'armn' => q{Armenian Numerals},
+ 				'arab' => q{Arabic-Indic na Mga Digit},
+ 				'arabext' => q{Extendend Arabic-Indic na Mga Digit},
+ 				'armn' => q{Armenian na Mga Numeral},
  				'armnlow' => q{Armenian Lowercase Numerals},
- 				'beng' => q{Bengali Digits},
- 				'deva' => q{Devanagari Digits},
- 				'ethi' => q{Ethiopic Numerals},
+ 				'beng' => q{Bengali na Mga Digit},
+ 				'deva' => q{Devanagari na Mga Digit},
+ 				'ethi' => q{Mga Numeral ng Ethiopia},
  				'finance' => q{Mga Pampinansyang Numeral},
  				'fullwide' => q{Full Width Digits},
- 				'geor' => q{Georgian Numerals},
- 				'grek' => q{Greek Numerals},
+ 				'geor' => q{Georgian na Mga Numeral},
+ 				'grek' => q{Greek na Mga Numeral},
  				'greklow' => q{Greek Lowercase Numerals},
- 				'gujr' => q{Gujarati Digits},
- 				'guru' => q{Gurmukhi Digits},
- 				'hanidec' => q{Chinese Decimal Numerals},
- 				'hans' => q{Simplified Chinese Numerals},
- 				'hansfin' => q{Simplified Chinese Financial Numerals},
- 				'hant' => q{Traditional Chinese Numerals},
- 				'hantfin' => q{Traditional Chinese Financial Numerals},
- 				'hebr' => q{Hebrew Numerals},
- 				'jpan' => q{Japanese Numerals},
- 				'jpanfin' => q{Japanese Financial Numerals},
- 				'khmr' => q{Khmer Digits},
- 				'knda' => q{Kannada Digits},
- 				'laoo' => q{Lao Digits},
+ 				'gujr' => q{Gujarati na Mga Digit},
+ 				'guru' => q{Gurmukhi na Mga Digit},
+ 				'hanidec' => q{Chinese Decimal na Mga Numeral},
+ 				'hans' => q{Simplified Chinese na Mga Numeral},
+ 				'hansfin' => q{Simplified Chinese na Mga Numeral para sa Pananalapi},
+ 				'hant' => q{Traditional Chinese na Mga Numeral},
+ 				'hantfin' => q{Traditional Chinese na Mga Numeral para sa Pananalapi},
+ 				'hebr' => q{Hebrew na Mga Numeral},
+ 				'jpan' => q{Japanese na Mga Numeral},
+ 				'jpanfin' => q{Japanese na Mga Numeral para sa Pananalapi},
+ 				'khmr' => q{Khmer na Mga Digit},
+ 				'knda' => q{Kannada na Mga Digit},
+ 				'laoo' => q{Lao na Mga Digit},
  				'latn' => q{Western Digits},
- 				'mlym' => q{Malayalam Digits},
+ 				'mlym' => q{Malayalam na Mga Digit},
  				'mong' => q{Mongolian Digits},
- 				'mymr' => q{Myanmar Digits},
+ 				'mymr' => q{Myanmar na Mga Digit},
  				'native' => q{Mga Native na Digit},
- 				'orya' => q{Oriya Digits},
- 				'roman' => q{Roman Numerals},
+ 				'orya' => q{Oriya na Mga Digit},
+ 				'roman' => q{Mga Roman Numeral},
  				'romanlow' => q{Roman Lowercase Numerals},
- 				'taml' => q{Tamil Numerals},
- 				'tamldec' => q{Tamil Digits},
- 				'telu' => q{Telugu Digits},
- 				'thai' => q{Thai Digits},
- 				'tibt' => q{Tibetan Digits},
+ 				'taml' => q{Tamil na Mga Numeral},
+ 				'tamldec' => q{Tamil na Mga Digit},
+ 				'telu' => q{Telugu na Mga Digit},
+ 				'thai' => q{Thai na Mga Digit},
+ 				'tibt' => q{Tibetan na Mga Digit},
  				'traditional' => q{Mga Tradisyunal na Numeral},
  				'vaii' => q{Mga Vai na Digit},
  			},
@@ -1187,189 +1256,590 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'acre' => {
+						'' => q(acres),
 						'one' => q({0} acre),
 						'other' => q({0} acres),
 					},
+					'acre-foot' => {
+						'' => q(acre-feet),
+						'one' => q({0} acre-foot),
+						'other' => q({0} acre-feet),
+					},
+					'ampere' => {
+						'' => q(amperes),
+						'one' => q({0} ampere),
+						'other' => q({0} amperes),
+					},
 					'arc-minute' => {
+						'' => q(arcminutes),
 						'one' => q({0} minute),
 						'other' => q({0} minutes),
 					},
 					'arc-second' => {
+						'' => q(arcseconds),
 						'one' => q({0} second),
 						'other' => q({0} seconds),
 					},
+					'astronomical-unit' => {
+						'' => q(astronomical units),
+						'one' => q({0} astronomical unit),
+						'other' => q({0} astronomical units),
+					},
+					'bit' => {
+						'' => q(bits),
+						'one' => q({0} bit),
+						'other' => q({0} bits),
+					},
+					'byte' => {
+						'' => q(bytes),
+						'one' => q({0} byte),
+						'other' => q({0} byte),
+					},
+					'calorie' => {
+						'' => q(calories),
+						'one' => q({0} calorie),
+						'other' => q({0} calories),
+					},
+					'carat' => {
+						'' => q(karat),
+						'one' => q({0} karat),
+						'other' => q({0} karat),
+					},
 					'celsius' => {
+						'' => q(degrees Celsius),
 						'one' => q({0} degree Celsius),
 						'other' => q({0} degrees Celsius),
 					},
+					'centiliter' => {
+						'' => q(sentilitro),
+						'one' => q({0} sentilitro),
+						'other' => q({0} sentilitro),
+					},
 					'centimeter' => {
+						'' => q(sentimetro),
 						'one' => q({0} sentimetro),
 						'other' => q({0} sentimetro),
 					},
+					'cubic-centimeter' => {
+						'' => q(kubiko sentimetro),
+						'one' => q({0} kubiko sentimetro),
+						'other' => q({0} kubiko sentimetro),
+					},
+					'cubic-foot' => {
+						'' => q(kubiko talampakan),
+						'one' => q({0} kubiko talampakan),
+						'other' => q({0} kubiko talampakan),
+					},
+					'cubic-inch' => {
+						'' => q(kubiko pulgada),
+						'one' => q({0} kubiko pulgada),
+						'other' => q({0} kubiko pulgada),
+					},
 					'cubic-kilometer' => {
-						'one' => q({0} cubic kilometer),
-						'other' => q({0} cubic kilometers),
+						'' => q(kubiko kilometro),
+						'one' => q({0} kubiko kilometro),
+						'other' => q({0} kubiko kilometro),
+					},
+					'cubic-meter' => {
+						'' => q(kubiko metro),
+						'one' => q({0} kubiko metro),
+						'other' => q({0} kubiko metro),
 					},
 					'cubic-mile' => {
-						'one' => q({0} cubic mile),
-						'other' => q({0} cubic miles),
+						'' => q(kubiko milya),
+						'one' => q({0} kubiko milya),
+						'other' => q({0} kubiko milya),
+					},
+					'cubic-yard' => {
+						'' => q(kubiko yarda),
+						'one' => q({0} kubiko yarda),
+						'other' => q({0} kubiko yarda),
+					},
+					'cup' => {
+						'' => q(tasa),
+						'one' => q({0} tasa),
+						'other' => q({0} tasa),
 					},
 					'day' => {
+						'' => q(araw),
 						'one' => q({0} araw),
 						'other' => q({0} araw),
 					},
+					'deciliter' => {
+						'' => q(decilitro),
+						'one' => q({0} decilitro),
+						'other' => q({0} decilitro),
+					},
+					'decimeter' => {
+						'' => q(decimetro),
+						'one' => q({0} decimetro),
+						'other' => q({0} decimetro),
+					},
 					'degree' => {
+						'' => q(degrees),
 						'one' => q({0} degree),
 						'other' => q({0} degrees),
 					},
 					'fahrenheit' => {
+						'' => q(degrees Fahrenheit),
 						'one' => q({0} degree Fahrenheit),
 						'other' => q({0} degrees Fahrenheit),
 					},
+					'fluid-ounce' => {
+						'' => q(fluid ounces),
+						'one' => q({0} fluid ounce),
+						'other' => q({0} fluid ounces),
+					},
+					'foodcalorie' => {
+						'' => q(Calories),
+						'one' => q({0} Calorie),
+						'other' => q({0} Calories),
+					},
 					'foot' => {
+						'' => q(talampakan),
 						'one' => q({0} talampakan),
 						'other' => q({0} talampakan),
 					},
 					'g-force' => {
+						'' => q(g-force),
 						'one' => q({0} g-force),
 						'other' => q({0} g-force),
 					},
+					'gallon' => {
+						'' => q(galon),
+						'one' => q({0} galon),
+						'other' => q({0} galon),
+					},
+					'gigabit' => {
+						'' => q(gigabits),
+						'one' => q({0} gigabit),
+						'other' => q({0} gigabits),
+					},
+					'gigabyte' => {
+						'' => q(gigabytes),
+						'one' => q({0} gigabyte),
+						'other' => q({0} gigabytes),
+					},
+					'gigahertz' => {
+						'' => q(gigahertz),
+						'one' => q({0} gigahertz),
+						'other' => q({0} gigahertz),
+					},
+					'gigawatt' => {
+						'' => q(gigawatts),
+						'one' => q({0} gigawatt),
+						'other' => q({0} gigawatts),
+					},
 					'gram' => {
+						'' => q(gramo),
 						'one' => q({0} gramo),
 						'other' => q({0} gramo),
 					},
 					'hectare' => {
+						'' => q(hektarya),
 						'one' => q({0} ektarya),
 						'other' => q({0} ektarya),
 					},
+					'hectoliter' => {
+						'' => q(hektolitro),
+						'one' => q({0} hektolitro),
+						'other' => q({0} hektolitro),
+					},
 					'hectopascal' => {
+						'' => q(hectopascal),
 						'one' => q({0} hectopascal),
 						'other' => q({0} hectopascal),
 					},
+					'hertz' => {
+						'' => q(hertz),
+						'one' => q({0} hertz),
+						'other' => q({0} hertz),
+					},
 					'horsepower' => {
+						'' => q(horsepower),
 						'one' => q({0} horsepower),
 						'other' => q({0} horsepower),
 					},
 					'hour' => {
+						'' => q({0} kada oras),
 						'one' => q({0} oras),
 						'other' => q({0} oras),
 					},
 					'inch' => {
+						'' => q(pulgada),
 						'one' => q({0} pulgada),
 						'other' => q({0} pulgada),
 					},
 					'inch-hg' => {
-						'one' => q({0} inch of mercury),
+						'' => q(inch of mercury),
+						'one' => q({0} pulgada ng asoge),
 						'other' => q({0} inch of mercury),
 					},
+					'joule' => {
+						'' => q(joules),
+						'one' => q({0} joule),
+						'other' => q({0} joules),
+					},
+					'karat' => {
+						'' => q(karat),
+						'one' => q({0} karat),
+						'other' => q({0} karat),
+					},
+					'kelvin' => {
+						'' => q(degrees kelvin),
+						'one' => q({0} degree kelvin),
+						'other' => q({0} degrees kelvin),
+					},
+					'kilobit' => {
+						'' => q(kilobits),
+						'one' => q({0} kilobit),
+						'other' => q({0} kilobits),
+					},
+					'kilobyte' => {
+						'' => q(kilobytes),
+						'one' => q({0} kilobyte),
+						'other' => q({0} kilobytes),
+					},
+					'kilocalorie' => {
+						'' => q(kilocalories),
+						'one' => q({0} kilocalorie),
+						'other' => q({0} kilocalories),
+					},
 					'kilogram' => {
+						'' => q(kilo),
 						'one' => q({0} kilo),
 						'other' => q({0} kilo),
 					},
+					'kilohertz' => {
+						'' => q(kilohertz),
+						'one' => q({0} kilohertz),
+						'other' => q({0} kilohertz),
+					},
+					'kilojoule' => {
+						'' => q(kilojoules),
+						'one' => q({0} kilojoule),
+						'other' => q({0} kilojoules),
+					},
 					'kilometer' => {
+						'' => q(kilometro),
 						'one' => q({0} kilometro),
 						'other' => q({0} kilometro),
 					},
 					'kilometer-per-hour' => {
-						'one' => q({0} kilometer per hour),
-						'other' => q({0} kilometers per hour),
+						'' => q(kilometro kada oras),
+						'one' => q({0} kilometro kada oras),
+						'other' => q({0} kilometro kada oras),
 					},
 					'kilowatt' => {
+						'' => q(kilowatts),
 						'one' => q({0} kilowatt),
 						'other' => q({0} kilowatts),
 					},
+					'kilowatt-hour' => {
+						'' => q(kilowatt-hours),
+						'one' => q({0} kilowatt hour),
+						'other' => q({0} kilowatt-hours),
+					},
 					'light-year' => {
+						'' => q(light year),
 						'one' => q({0} light year),
 						'other' => q({0} light year),
 					},
 					'liter' => {
+						'' => q(litro),
 						'one' => q({0} litro),
 						'other' => q({0} litro),
 					},
+					'liter-per-kilometer' => {
+						'' => q(litro kada kilometro),
+						'one' => q({0} litro kada kilometro),
+						'other' => q({0} litro kada kilometro),
+					},
+					'lux' => {
+						'' => q(lux),
+						'one' => q({0} lux),
+						'other' => q({0} lux),
+					},
+					'megabit' => {
+						'' => q(megabits),
+						'one' => q({0} megabit),
+						'other' => q({0} megabits),
+					},
+					'megabyte' => {
+						'' => q(megabytes),
+						'one' => q({0} megabyte),
+						'other' => q({0} megabytes),
+					},
+					'megahertz' => {
+						'' => q(megahertz),
+						'one' => q({0} megahertz),
+						'other' => q({0} megahertz),
+					},
+					'megaliter' => {
+						'' => q(megalitro),
+						'one' => q({0} megalitro),
+						'other' => q({0} megalitro),
+					},
+					'megawatt' => {
+						'' => q(megawatts),
+						'one' => q({0} megawatt),
+						'other' => q({0} megawatts),
+					},
 					'meter' => {
+						'' => q(metro),
 						'one' => q({0} metro),
 						'other' => q({0} metro),
 					},
 					'meter-per-second' => {
-						'one' => q({0} meter per second),
-						'other' => q({0} meters per second),
+						'' => q(metro kada segundo),
+						'one' => q({0} metro kada segundo),
+						'other' => q({0} metro kada segundo),
+					},
+					'meter-per-second-squared' => {
+						'' => q(metro kada segundo kwadrado),
+						'one' => q({0} metro kada segundo kwadrado),
+						'other' => q({0} metro kada segundo kwadrado),
+					},
+					'metric-ton' => {
+						'' => q(metrikong tonelada),
+						'one' => q({0} metrikong tonelada),
+						'other' => q({0} metrikong tonelada),
+					},
+					'microgram' => {
+						'' => q(micrograms),
+						'one' => q({0} microgram),
+						'other' => q({0} micrograms),
+					},
+					'micrometer' => {
+						'' => q(micrometro),
+						'one' => q({0} micrometro),
+						'other' => q({0} micrometro),
+					},
+					'microsecond' => {
+						'' => q(mikrosegundo),
+						'one' => q({0} mikrosegundo),
+						'other' => q({0} mikrosegundo),
 					},
 					'mile' => {
+						'' => q(milya),
 						'one' => q({0} milya),
 						'other' => q({0} milya),
 					},
+					'mile-per-gallon' => {
+						'' => q(milya kada galon),
+						'one' => q({0} milya kada galon),
+						'other' => q({0} milya kada galon),
+					},
 					'mile-per-hour' => {
-						'one' => q({0} mile per hour),
-						'other' => q({0} miles per hour),
+						'' => q(milya kada oras),
+						'one' => q({0} milya kada oras),
+						'other' => q({0} milya kada oras),
+					},
+					'milliampere' => {
+						'' => q(milliamperes),
+						'one' => q({0} milliampere),
+						'other' => q({0} milliamperes),
 					},
 					'millibar' => {
+						'' => q(millibar),
 						'one' => q({0} millibar),
 						'other' => q({0} millibar),
 					},
+					'milligram' => {
+						'' => q(milligrams),
+						'one' => q({0} milligram),
+						'other' => q({0} milligrams),
+					},
+					'milliliter' => {
+						'' => q(mililitro),
+						'one' => q({0} mililitro),
+						'other' => q({0} mililitro),
+					},
 					'millimeter' => {
+						'' => q(milimetro),
 						'one' => q({0} milimetro),
 						'other' => q({0} milimetro),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(milimetro ng asoge),
+						'one' => q({0} milimetro ng asoge),
+						'other' => q({0} milimetro ng asoge),
+					},
 					'millisecond' => {
-						'one' => q({0} millisecond),
-						'other' => q({0} millisecond),
+						'' => q(milisegundo),
+						'one' => q({0} milisegundo),
+						'other' => q({0} milisegundo),
+					},
+					'milliwatt' => {
+						'' => q(milliwatts),
+						'one' => q({0} milliwatt),
+						'other' => q({0} milliwatts),
 					},
 					'minute' => {
+						'' => q(minuto),
 						'one' => q({0} minuto),
 						'other' => q({0} minuto),
 					},
 					'month' => {
+						'' => q(buwan),
 						'one' => q({0} buwan),
 						'other' => q({0} buwan),
 					},
+					'nanometer' => {
+						'' => q(nanometro),
+						'one' => q({0} nanometro),
+						'other' => q({0} nanometro),
+					},
+					'nanosecond' => {
+						'' => q(nanosegundo),
+						'one' => q({0} nanosegundo),
+						'other' => q({0} nanosegundo),
+					},
+					'nautical-mile' => {
+						'' => q(nautical miles),
+						'one' => q({0} nautical mile),
+						'other' => q({0} nautical miles),
+					},
+					'ohm' => {
+						'' => q(ohms),
+						'one' => q({0} ohm),
+						'other' => q({0} ohms),
+					},
 					'ounce' => {
+						'' => q(ounce),
 						'one' => q({0} ounce),
 						'other' => q({0} ounce),
+					},
+					'ounce-troy' => {
+						'' => q(troy ounces),
+						'one' => q({0} troy ounce),
+						'other' => q({0} troy ounces),
+					},
+					'parsec' => {
+						'' => q(parsecs),
+						'one' => q({0} parsec),
+						'other' => q({0} parsecs),
 					},
 					'per' => {
 						'' => q({0} bawat {1}),
 					},
 					'picometer' => {
+						'' => q(picometer),
 						'one' => q({0} picometer),
 						'other' => q({0} picometer),
 					},
+					'pint' => {
+						'' => q(pints),
+						'one' => q({0} pint),
+						'other' => q({0} pints),
+					},
 					'pound' => {
+						'' => q(pound),
 						'one' => q({0} pound),
 						'other' => q({0} pound),
 					},
+					'pound-per-square-inch' => {
+						'' => q(libra kada isang pulgadang parisukat),
+						'one' => q({0} libra bawa't isang pulgadang parisukat),
+						'other' => q({0} libra bawa't isang pulgadang parisukat),
+					},
+					'quart' => {
+						'' => q(quarts),
+						'one' => q({0} quart),
+						'other' => q({0} quarts),
+					},
+					'radian' => {
+						'' => q(radians),
+						'one' => q({0} radian),
+						'other' => q({0} radians),
+					},
 					'second' => {
+						'' => q({0} kada segundo),
 						'one' => q({0} segundo),
 						'other' => q({0} segundo),
 					},
+					'square-centimeter' => {
+						'' => q(sentimetro kwadrado),
+						'one' => q({0} sentimetro kwadrado),
+						'other' => q({0} sentimetro kwadrado),
+					},
 					'square-foot' => {
-						'one' => q({0} square foot),
-						'other' => q({0} square feet),
+						'' => q(talampakan parisukat),
+						'one' => q({0} talampakan parisukat),
+						'other' => q({0} talampakan parisukat),
+					},
+					'square-inch' => {
+						'' => q(pulgada kwadrado),
+						'one' => q({0} pulgada kwadrado),
+						'other' => q({0} pulgada kwadrado),
 					},
 					'square-kilometer' => {
-						'one' => q({0} square kilometer),
+						'' => q(kilometro kwadrado),
+						'one' => q({0} kilometro kwadrado),
 						'other' => q({0} square kilometer),
 					},
 					'square-meter' => {
-						'one' => q({0} square meter),
+						'' => q(metro kwadrado),
+						'one' => q({0} metro kwadrado),
 						'other' => q({0} square meter),
 					},
 					'square-mile' => {
-						'one' => q({0} square mile),
-						'other' => q({0} square miles),
+						'' => q(milya kwadrado),
+						'one' => q({0} milya parisukat),
+						'other' => q({0} milya parisukat),
+					},
+					'square-yard' => {
+						'' => q(yarda parisukat),
+						'one' => q({0} yarda parisukat),
+						'other' => q({0} yarda parisukat),
+					},
+					'tablespoon' => {
+						'' => q(kutsara),
+						'one' => q({0} kutsara),
+						'other' => q({0} kutsara),
+					},
+					'teaspoon' => {
+						'' => q(kutsarita),
+						'one' => q({0} kutsarita),
+						'other' => q({0} kutsarita),
+					},
+					'terabit' => {
+						'' => q(terabits),
+						'one' => q({0} terabit),
+						'other' => q({0} terabits),
+					},
+					'terabyte' => {
+						'' => q(terabytes),
+						'one' => q({0} terabyte),
+						'other' => q({0} terabytes),
+					},
+					'ton' => {
+						'' => q(tonelada),
+						'one' => q({0} tonelada),
+						'other' => q({0} tonelada),
+					},
+					'volt' => {
+						'' => q(volts),
+						'one' => q({0} volt),
+						'other' => q({0} volts),
 					},
 					'watt' => {
+						'' => q(watts),
 						'one' => q({0} watt),
 						'other' => q({0} watts),
 					},
 					'week' => {
+						'' => q(linggo),
 						'one' => q({0} linggo),
 						'other' => q({0} linggo),
 					},
 					'yard' => {
+						'' => q(yarda),
 						'one' => q({0} yarda),
 						'other' => q({0} yarda),
 					},
 					'year' => {
+						'' => q(taon),
 						'one' => q({0} taon),
 						'other' => q({0} taon),
 					},
@@ -1388,10 +1858,12 @@ has 'units' => (
 						'other' => q({0}″),
 					},
 					'celsius' => {
+						'' => q(⁰C),
 						'one' => q({0}°),
 						'other' => q({0}°),
 					},
 					'centimeter' => {
+						'' => q(cm),
 						'one' => q({0}cm),
 						'other' => q({0}cm),
 					},
@@ -1404,7 +1876,8 @@ has 'units' => (
 						'other' => q({0}mi³),
 					},
 					'day' => {
-						'one' => q({0}d),
+						'' => q(araw),
+						'one' => q({0} araw),
 						'other' => q({0}d),
 					},
 					'degree' => {
@@ -1424,6 +1897,7 @@ has 'units' => (
 						'other' => q({0}G),
 					},
 					'gram' => {
+						'' => q(gramo),
 						'one' => q({0}g),
 						'other' => q({0}g),
 					},
@@ -1440,6 +1914,7 @@ has 'units' => (
 						'other' => q({0}hp),
 					},
 					'hour' => {
+						'' => q(oras),
 						'one' => q({0}h),
 						'other' => q({0}h),
 					},
@@ -1452,14 +1927,17 @@ has 'units' => (
 						'other' => q({0}" Hg),
 					},
 					'kilogram' => {
+						'' => q(kg),
 						'one' => q({0}kg),
 						'other' => q({0}kg),
 					},
 					'kilometer' => {
+						'' => q(km),
 						'one' => q({0}km),
 						'other' => q({0}km),
 					},
 					'kilometer-per-hour' => {
+						'' => q(km/hr),
 						'one' => q({0}kph),
 						'other' => q({0}kph),
 					},
@@ -1472,10 +1950,12 @@ has 'units' => (
 						'other' => q({0}ly),
 					},
 					'liter' => {
+						'' => q(litro),
 						'one' => q({0}l),
 						'other' => q({0}l),
 					},
 					'meter' => {
+						'' => q(metro),
 						'one' => q({0}m),
 						'other' => q({0}m),
 					},
@@ -1496,18 +1976,22 @@ has 'units' => (
 						'other' => q({0}mb),
 					},
 					'millimeter' => {
+						'' => q(mm),
 						'one' => q({0}mm),
 						'other' => q({0}mm),
 					},
 					'millisecond' => {
+						'' => q(mseg),
 						'one' => q({0}ms),
 						'other' => q({0}ms),
 					},
 					'minute' => {
+						'' => q(min.),
 						'one' => q({0}m),
 						'other' => q({0}m),
 					},
 					'month' => {
+						'' => q(buwan),
 						'one' => q({0}m),
 						'other' => q({0}m),
 					},
@@ -1527,6 +2011,7 @@ has 'units' => (
 						'other' => q({0}#),
 					},
 					'second' => {
+						'' => q(seg.),
 						'one' => q({0}s),
 						'other' => q({0}s),
 					},
@@ -1551,6 +2036,7 @@ has 'units' => (
 						'other' => q({0}W),
 					},
 					'week' => {
+						'' => q(wk),
 						'one' => q({0}w),
 						'other' => q({0}w),
 					},
@@ -1559,195 +2045,597 @@ has 'units' => (
 						'other' => q({0}yd),
 					},
 					'year' => {
+						'' => q(yr),
 						'one' => q({0}y),
 						'other' => q({0}y),
 					},
 				},
 				'short' => {
 					'acre' => {
+						'' => q(acres),
 						'one' => q({0} ac),
 						'other' => q({0} ac),
 					},
+					'acre-foot' => {
+						'' => q(acre ft),
+						'one' => q({0} ac ft),
+						'other' => q({0} ac ft),
+					},
+					'ampere' => {
+						'' => q(amp),
+						'one' => q({0} A),
+						'other' => q({0} A),
+					},
 					'arc-minute' => {
+						'' => q(arcmins),
 						'one' => q({0} min),
-						'other' => q({0} min),
+						'other' => q({0} arcmins),
 					},
 					'arc-second' => {
+						'' => q(arcsecs),
 						'one' => q({0} sec),
 						'other' => q({0} secs),
 					},
+					'astronomical-unit' => {
+						'' => q(au),
+						'one' => q({0} au),
+						'other' => q({0} au),
+					},
+					'bit' => {
+						'' => q(bit),
+						'one' => q({0} bit),
+						'other' => q({0} bit),
+					},
+					'byte' => {
+						'' => q(byte),
+						'one' => q({0} byte),
+						'other' => q({0} byte),
+					},
+					'calorie' => {
+						'' => q(cal),
+						'one' => q({0} cal),
+						'other' => q({0} cal),
+					},
+					'carat' => {
+						'' => q(karat),
+						'one' => q({0} KD),
+						'other' => q({0} KD),
+					},
 					'celsius' => {
+						'' => q(deg. C),
 						'one' => q({0}°C),
 						'other' => q({0}°C),
 					},
+					'centiliter' => {
+						'' => q(cL),
+						'one' => q({0} cL),
+						'other' => q({0} cL),
+					},
 					'centimeter' => {
+						'' => q(cm),
 						'one' => q({0} cm),
 						'other' => q({0} cm),
 					},
+					'cubic-centimeter' => {
+						'' => q(cm³),
+						'one' => q({0} cm³),
+						'other' => q({0} cm³),
+					},
+					'cubic-foot' => {
+						'' => q(talampakan³),
+						'one' => q({0} ft³),
+						'other' => q({0} ft³),
+					},
+					'cubic-inch' => {
+						'' => q(pulgada³),
+						'one' => q({0} in³),
+						'other' => q({0} in³),
+					},
 					'cubic-kilometer' => {
+						'' => q(km³),
 						'one' => q({0} km³),
 						'other' => q({0} km³),
 					},
+					'cubic-meter' => {
+						'' => q(m³),
+						'one' => q({0} m³),
+						'other' => q({0} m³),
+					},
 					'cubic-mile' => {
+						'' => q(mi³),
 						'one' => q({0} mi³),
 						'other' => q({0} mi³),
 					},
+					'cubic-yard' => {
+						'' => q(yarda³),
+						'one' => q({0} yd³),
+						'other' => q({0} yd³),
+					},
+					'cup' => {
+						'' => q(tasa),
+						'one' => q({0} c),
+						'other' => q({0} c),
+					},
 					'day' => {
+						'' => q(araw),
 						'one' => q({0} araw),
 						'other' => q({0} araw),
 					},
+					'deciliter' => {
+						'' => q(dL),
+						'one' => q({0} dL),
+						'other' => q({0} dL),
+					},
+					'decimeter' => {
+						'' => q(dm),
+						'one' => q({0} dm),
+						'other' => q({0} dm),
+					},
 					'degree' => {
+						'' => q(degrees),
 						'one' => q({0} deg),
 						'other' => q({0} deg),
 					},
 					'fahrenheit' => {
+						'' => q(deg. F),
 						'one' => q({0}°F),
 						'other' => q({0}°F),
 					},
+					'fluid-ounce' => {
+						'' => q(fl oz),
+						'one' => q({0} fl oz),
+						'other' => q({0} fl oz),
+					},
+					'foodcalorie' => {
+						'' => q(Cal),
+						'one' => q({0} Cal),
+						'other' => q({0} Cal),
+					},
 					'foot' => {
+						'' => q(talampakan),
 						'one' => q({0} ft),
 						'other' => q({0} ft),
 					},
 					'g-force' => {
+						'' => q(g-force),
 						'one' => q({0} G),
 						'other' => q({0} G),
 					},
+					'gallon' => {
+						'' => q(gal),
+						'one' => q({0} gal),
+						'other' => q({0} gal),
+					},
+					'gigabit' => {
+						'' => q(Gbit),
+						'one' => q({0} Gb),
+						'other' => q({0} Gb),
+					},
+					'gigabyte' => {
+						'' => q(GByte),
+						'one' => q({0} GB),
+						'other' => q({0} GB),
+					},
+					'gigahertz' => {
+						'' => q(GHz),
+						'one' => q({0} GHz),
+						'other' => q({0} GHz),
+					},
+					'gigawatt' => {
+						'' => q(GW),
+						'one' => q({0} GW),
+						'other' => q({0} GW),
+					},
 					'gram' => {
+						'' => q(gramo),
 						'one' => q({0} g),
 						'other' => q({0} g),
 					},
 					'hectare' => {
+						'' => q(hektarya),
 						'one' => q({0} ha),
 						'other' => q({0} ha),
 					},
+					'hectoliter' => {
+						'' => q(hL),
+						'one' => q({0} hL),
+						'other' => q({0} hL),
+					},
 					'hectopascal' => {
+						'' => q(hPa),
 						'one' => q({0} hPa),
 						'other' => q({0} hPa),
 					},
+					'hertz' => {
+						'' => q(Hz),
+						'one' => q({0} Hz),
+						'other' => q({0} Hz),
+					},
 					'horsepower' => {
+						'' => q(hp),
 						'one' => q({0} hp),
 						'other' => q({0} hp),
 					},
 					'hour' => {
+						'' => q({0}/h),
 						'one' => q({0} hr),
 						'other' => q({0} hrs),
 					},
 					'inch' => {
+						'' => q(pulgada),
 						'one' => q({0} in),
 						'other' => q({0} in),
 					},
 					'inch-hg' => {
+						'' => q(in Hg),
 						'one' => q({0} inHg),
 						'other' => q({0} inHg),
 					},
+					'joule' => {
+						'' => q(joules),
+						'one' => q({0} J),
+						'other' => q({0} J),
+					},
+					'karat' => {
+						'' => q(karat),
+						'one' => q({0} kt),
+						'other' => q({0} kt),
+					},
+					'kelvin' => {
+						'' => q(deg. K),
+						'one' => q({0}°K),
+						'other' => q({0}°K),
+					},
+					'kilobit' => {
+						'' => q(kbit),
+						'one' => q({0} kb),
+						'other' => q({0} kb),
+					},
+					'kilobyte' => {
+						'' => q(kByte),
+						'one' => q({0} kB),
+						'other' => q({0} kB),
+					},
+					'kilocalorie' => {
+						'' => q(kcal),
+						'one' => q({0} kcal),
+						'other' => q({0} kcal),
+					},
 					'kilogram' => {
+						'' => q(kg),
 						'one' => q({0} kg),
 						'other' => q({0} kg),
 					},
+					'kilohertz' => {
+						'' => q(kHz),
+						'one' => q({0} kHz),
+						'other' => q({0} kHz),
+					},
+					'kilojoule' => {
+						'' => q(kilojoule),
+						'one' => q({0} kJ),
+						'other' => q({0} kJ),
+					},
 					'kilometer' => {
+						'' => q(km),
 						'one' => q({0} km),
 						'other' => q({0} km),
 					},
 					'kilometer-per-hour' => {
+						'' => q(km/hr),
 						'one' => q({0} kph),
 						'other' => q({0} kph),
 					},
 					'kilowatt' => {
+						'' => q(kW),
 						'one' => q({0} kW),
 						'other' => q({0} kW),
 					},
+					'kilowatt-hour' => {
+						'' => q(kW-hour),
+						'one' => q({0} kWh),
+						'other' => q({0} kWh),
+					},
 					'light-year' => {
+						'' => q(light yr),
 						'one' => q({0} ly),
 						'other' => q({0} ly),
 					},
 					'liter' => {
+						'' => q(litro),
 						'one' => q({0} l),
 						'other' => q({0} l),
 					},
+					'liter-per-kilometer' => {
+						'' => q(litro/km),
+						'one' => q({0} L/km),
+						'other' => q({0} L/km),
+					},
+					'lux' => {
+						'' => q(lux),
+						'one' => q({0} lx),
+						'other' => q({0} lx),
+					},
+					'megabit' => {
+						'' => q(Mbit),
+						'one' => q({0} Mb),
+						'other' => q({0} Mb),
+					},
+					'megabyte' => {
+						'' => q(MByte),
+						'one' => q({0} MB),
+						'other' => q({0} MB),
+					},
+					'megahertz' => {
+						'' => q(MHz),
+						'one' => q({0} MHz),
+						'other' => q({0} MHz),
+					},
+					'megaliter' => {
+						'' => q(ML),
+						'one' => q({0} ML),
+						'other' => q({0} ML),
+					},
+					'megawatt' => {
+						'' => q(MW),
+						'one' => q({0} MW),
+						'other' => q({0} MW),
+					},
 					'meter' => {
+						'' => q(metro),
 						'one' => q({0} m),
 						'other' => q({0} m),
 					},
 					'meter-per-second' => {
+						'' => q(meter/sec),
 						'one' => q({0} m/s),
 						'other' => q({0} m/s),
 					},
+					'meter-per-second-squared' => {
+						'' => q(metro/segundo²),
+						'one' => q({0} m/s²),
+						'other' => q({0} m/s²),
+					},
+					'metric-ton' => {
+						'' => q(t),
+						'one' => q({0} t),
+						'other' => q({0} t),
+					},
+					'microgram' => {
+						'' => q(µg),
+						'one' => q({0} µg),
+						'other' => q({0} µg),
+					},
+					'micrometer' => {
+						'' => q(µmetro),
+						'one' => q({0} µm),
+						'other' => q({0} µm),
+					},
+					'microsecond' => {
+						'' => q(μseg),
+						'one' => q({0} μs),
+						'other' => q({0} μs),
+					},
 					'mile' => {
+						'' => q(milya),
 						'one' => q({0} mi),
 						'other' => q({0} mi),
 					},
+					'mile-per-gallon' => {
+						'' => q(milya kada galon),
+						'one' => q({0} mpg),
+						'other' => q({0} mpg),
+					},
 					'mile-per-hour' => {
+						'' => q(milya/oras),
 						'one' => q({0} mph),
 						'other' => q({0} mph),
 					},
+					'milliampere' => {
+						'' => q(milliamps),
+						'one' => q({0} mA),
+						'other' => q({0} mA),
+					},
 					'millibar' => {
+						'' => q(mbar),
 						'one' => q({0} mb),
 						'other' => q({0} mb),
 					},
+					'milligram' => {
+						'' => q(mg),
+						'one' => q({0} mg),
+						'other' => q({0} mg),
+					},
+					'milliliter' => {
+						'' => q(mL),
+						'one' => q({0} mL),
+						'other' => q({0} mL),
+					},
 					'millimeter' => {
+						'' => q(mm),
 						'one' => q({0} mm),
 						'other' => q({0} mm),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(milimetro ng asoge),
+						'one' => q({0} mm Hg),
+						'other' => q({0} mm Hg),
+					},
 					'millisecond' => {
+						'' => q(miliseg),
 						'one' => q({0} ms),
 						'other' => q({0} ms),
 					},
+					'milliwatt' => {
+						'' => q(mW),
+						'one' => q({0} mW),
+						'other' => q({0} mW),
+					},
 					'minute' => {
-						'one' => q({0} min),
-						'other' => q({0} mins),
+						'' => q(min.),
+						'one' => q({0} min.),
+						'other' => q({0} min.),
 					},
 					'month' => {
+						'' => q(buwan),
 						'one' => q({0} mth),
 						'other' => q({0} mths),
 					},
+					'nanometer' => {
+						'' => q(nm),
+						'one' => q({0} nm),
+						'other' => q({0} nm),
+					},
+					'nanosecond' => {
+						'' => q(nanoseg),
+						'one' => q({0} ns),
+						'other' => q({0} ns),
+					},
+					'nautical-mile' => {
+						'' => q(nmi),
+						'one' => q({0} nmi),
+						'other' => q({0} nmi),
+					},
+					'ohm' => {
+						'' => q(ohms),
+						'one' => q({0} Ω),
+						'other' => q({0} Ω),
+					},
 					'ounce' => {
+						'' => q(oz),
 						'one' => q({0} oz),
 						'other' => q({0} oz),
+					},
+					'ounce-troy' => {
+						'' => q(oz troy),
+						'one' => q({0} oz t),
+						'other' => q({0} oz t),
+					},
+					'parsec' => {
+						'' => q(parsecs),
+						'one' => q({0} pc),
+						'other' => q({0} pc),
 					},
 					'per' => {
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(pm),
 						'one' => q({0} pm),
 						'other' => q({0} pm),
 					},
+					'pint' => {
+						'' => q(pints),
+						'one' => q({0} pt),
+						'other' => q({0} pt),
+					},
 					'pound' => {
+						'' => q(pound),
 						'one' => q({0} lb),
 						'other' => q({0} lb),
 					},
+					'pound-per-square-inch' => {
+						'' => q(psi),
+						'one' => q({0} psi),
+						'other' => q({0} psi),
+					},
+					'quart' => {
+						'' => q(qts),
+						'one' => q({0} qt),
+						'other' => q({0} qt),
+					},
+					'radian' => {
+						'' => q(radians),
+						'one' => q({0} rad),
+						'other' => q({0} rad),
+					},
 					'second' => {
-						'one' => q({0} sec),
-						'other' => q({0} secs),
+						'' => q({0}/s),
+						'one' => q({0} seg.),
+						'other' => q({0} seg.),
+					},
+					'square-centimeter' => {
+						'' => q(cm²),
+						'one' => q({0} cm²),
+						'other' => q({0} cm²),
 					},
 					'square-foot' => {
+						'' => q(sq feet),
 						'one' => q({0} sq ft),
 						'other' => q({0} sq ft),
 					},
+					'square-inch' => {
+						'' => q(pulgada²),
+						'one' => q({0} in²),
+						'other' => q({0} in²),
+					},
 					'square-kilometer' => {
+						'' => q(km²),
 						'one' => q({0} km²),
 						'other' => q({0} km²),
 					},
 					'square-meter' => {
+						'' => q(meter²),
 						'one' => q({0} m²),
 						'other' => q({0} m²),
 					},
 					'square-mile' => {
+						'' => q(sq mile),
 						'one' => q({0} sq mi),
 						'other' => q({0} sq mi),
 					},
+					'square-yard' => {
+						'' => q(yarda²),
+						'one' => q({0} yd²),
+						'other' => q({0} yd²),
+					},
+					'tablespoon' => {
+						'' => q(tbsp),
+						'one' => q({0} tbsp),
+						'other' => q({0} tbsp),
+					},
+					'teaspoon' => {
+						'' => q(tsp),
+						'one' => q({0} tsp),
+						'other' => q({0} tsp),
+					},
+					'terabit' => {
+						'' => q(Tbit),
+						'one' => q({0} Tb),
+						'other' => q({0} Tb),
+					},
+					'terabyte' => {
+						'' => q(TByte),
+						'one' => q({0} TB),
+						'other' => q({0} TB),
+					},
+					'ton' => {
+						'' => q(tonelada),
+						'one' => q({0} tn),
+						'other' => q({0} tn),
+					},
+					'volt' => {
+						'' => q(volts),
+						'one' => q({0} V),
+						'other' => q({0} V),
+					},
 					'watt' => {
+						'' => q(watts),
 						'one' => q({0} W),
 						'other' => q({0} W),
 					},
 					'week' => {
+						'' => q(linggo),
 						'one' => q({0} wk),
 						'other' => q({0} wks),
 					},
 					'yard' => {
+						'' => q(yarda),
 						'one' => q({0} yd),
 						'other' => q({0} yd),
 					},
 					'year' => {
+						'' => q(taon),
 						'one' => q({0} yr),
 						'other' => q({0} yrs),
 					},
@@ -1779,6 +2667,20 @@ has 'listPatterns' => (
 				end => q({0}, {1}),
 				2 => q({0}, {1}),
 		} }
+);
+
+has 'default_numbering_system' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has native_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
 );
 
 has 'number_symbols' => (
@@ -2014,6 +2916,7 @@ has 'curriencies' => (
 			},
 		},
 		'AFN' => {
+			symbol => 'AFN',
 			display_name => {
 				'currency' => q(Afghan Afghani),
 				'one' => q(Afghan Afghani),
@@ -2021,6 +2924,7 @@ has 'curriencies' => (
 			},
 		},
 		'ALL' => {
+			symbol => 'ALL',
 			display_name => {
 				'currency' => q(Albanian Lek),
 				'one' => q(Albanian lek),
@@ -2035,6 +2939,7 @@ has 'curriencies' => (
 			},
 		},
 		'ANG' => {
+			symbol => 'ANG',
 			display_name => {
 				'currency' => q(Netherlands Antillean Guilder),
 				'one' => q(Netherlands Antillean guilder),
@@ -2049,6 +2954,7 @@ has 'curriencies' => (
 			},
 		},
 		'ARS' => {
+			symbol => 'ARS',
 			display_name => {
 				'currency' => q(Argentine Peso),
 				'one' => q(Argentine peso),
@@ -2058,12 +2964,13 @@ has 'curriencies' => (
 		'AUD' => {
 			symbol => 'A$',
 			display_name => {
-				'currency' => q(Australian Dollar),
-				'one' => q(Australian dollar),
-				'other' => q(Australian dollars),
+				'currency' => q(Dolyar ng Australya),
+				'one' => q(dolyar ng Australya),
+				'other' => q(dolyares ng Australya),
 			},
 		},
 		'AWG' => {
+			symbol => 'AWG',
 			display_name => {
 				'currency' => q(Aruban Florin),
 				'one' => q(Aruban florin),
@@ -2078,6 +2985,7 @@ has 'curriencies' => (
 			},
 		},
 		'BAM' => {
+			symbol => 'BAM',
 			display_name => {
 				'currency' => q(Bosnia-Herzegovina Convertible Mark),
 				'one' => q(Bosnia-Herzegovina convertible mark),
@@ -2085,13 +2993,15 @@ has 'curriencies' => (
 			},
 		},
 		'BBD' => {
+			symbol => 'BBD',
 			display_name => {
-				'currency' => q(Barbadian Dollar),
-				'one' => q(Barbadian dollar),
-				'other' => q(Barbadian dollars),
+				'currency' => q(Dolyar ng Barbados),
+				'one' => q(dolyar ng Barbados),
+				'other' => q(dolyares ng Barbados),
 			},
 		},
 		'BDT' => {
+			symbol => 'BDT',
 			display_name => {
 				'currency' => q(Bangladeshi Taka),
 				'one' => q(Bangladeshi taka),
@@ -2099,6 +3009,7 @@ has 'curriencies' => (
 			},
 		},
 		'BGN' => {
+			symbol => 'BGN',
 			display_name => {
 				'currency' => q(Bulgarian Lev),
 				'one' => q(Bulgarian lev),
@@ -2120,20 +3031,23 @@ has 'curriencies' => (
 			},
 		},
 		'BMD' => {
+			symbol => 'BMD',
 			display_name => {
-				'currency' => q(Bermudan Dollar),
-				'one' => q(Bermudan dollar),
-				'other' => q(Bermudan dollars),
+				'currency' => q(Dolyar ng Bermuda),
+				'one' => q(dolyar ng Bermuda),
+				'other' => q(dolyares ng Bermuda),
 			},
 		},
 		'BND' => {
+			symbol => 'BND',
 			display_name => {
-				'currency' => q(Brunei Dollar),
-				'one' => q(Brunei dollar),
-				'other' => q(Brunei dollars),
+				'currency' => q(Dolyar ng Brunei),
+				'one' => q(dolyar ng Brunei),
+				'other' => q(dolyar ng Brunei),
 			},
 		},
 		'BOB' => {
+			symbol => 'BOB',
 			display_name => {
 				'currency' => q(Bolivian Boliviano),
 				'one' => q(Bolivian boliviano),
@@ -2149,13 +3063,15 @@ has 'curriencies' => (
 			},
 		},
 		'BSD' => {
+			symbol => 'BSD',
 			display_name => {
-				'currency' => q(Bahamian Dollar),
-				'one' => q(Bahamian dollar),
-				'other' => q(Bahamian dollars),
+				'currency' => q(Dolyar ng Bahamas),
+				'one' => q(dolyar ng Bahamas),
+				'other' => q(dolyares ng Bahamas),
 			},
 		},
 		'BTN' => {
+			symbol => 'BTN',
 			display_name => {
 				'currency' => q(Bhutanese Ngultrum),
 				'one' => q(Bhutanese ngultrum),
@@ -2170,6 +3086,7 @@ has 'curriencies' => (
 			},
 		},
 		'BYR' => {
+			symbol => 'BYR',
 			display_name => {
 				'currency' => q(Belarusian Ruble),
 				'one' => q(Belarusian ruble),
@@ -2177,18 +3094,19 @@ has 'curriencies' => (
 			},
 		},
 		'BZD' => {
+			symbol => 'BZD',
 			display_name => {
-				'currency' => q(Belize Dollar),
-				'one' => q(Belize dollar),
-				'other' => q(Belize dollars),
+				'currency' => q(Dolyar ng Belize),
+				'one' => q(dolyar ng Belize),
+				'other' => q(dolyares ng Belize),
 			},
 		},
 		'CAD' => {
 			symbol => 'CA$',
 			display_name => {
-				'currency' => q(Canadian Dollar),
-				'one' => q(Canadian dollar),
-				'other' => q(Canadian dollars),
+				'currency' => q(Dolyar ng Canada),
+				'one' => q(dolyar ng Canada),
+				'other' => q(Dolyares ng Canada),
 			},
 		},
 		'CDF' => {
@@ -2199,6 +3117,7 @@ has 'curriencies' => (
 			},
 		},
 		'CHF' => {
+			symbol => 'CHF',
 			display_name => {
 				'currency' => q(Swiss Franc),
 				'one' => q(Swiss franc),
@@ -2206,10 +3125,11 @@ has 'curriencies' => (
 			},
 		},
 		'CLP' => {
+			symbol => 'CLP',
 			display_name => {
-				'currency' => q(Chilean Peso),
-				'one' => q(Chilean peso),
-				'other' => q(Chilean pesos),
+				'currency' => q(Piso ng Chile),
+				'one' => q(piso ng Chile),
+				'other' => q(piso ng Chile),
 			},
 		},
 		'CNY' => {
@@ -2221,13 +3141,15 @@ has 'curriencies' => (
 			},
 		},
 		'COP' => {
+			symbol => 'COP',
 			display_name => {
-				'currency' => q(Colombian Peso),
-				'one' => q(Colombian peso),
-				'other' => q(Colombian pesos),
+				'currency' => q(Piso ng Colombia),
+				'one' => q(piso ng Colombia),
+				'other' => q(Piso ng Colombia),
 			},
 		},
 		'CRC' => {
+			symbol => 'CRC',
 			display_name => {
 				'currency' => q(Costa Rican Colón),
 				'one' => q(Costa Rican colón),
@@ -2235,17 +3157,19 @@ has 'curriencies' => (
 			},
 		},
 		'CUC' => {
+			symbol => 'CUC',
 			display_name => {
-				'currency' => q(Cuban Convertible Peso),
-				'one' => q(Cuban convertible peso),
-				'other' => q(Cuban convertible pesos),
+				'currency' => q(Convertible na Piso ng Cuba),
+				'one' => q(Convertible na piso ng Cuba),
+				'other' => q(Convertible na Piso ng Cuba),
 			},
 		},
 		'CUP' => {
+			symbol => 'CUP',
 			display_name => {
-				'currency' => q(Cuban Peso),
-				'one' => q(Cuban peso),
-				'other' => q(Cuban pesos),
+				'currency' => q(Piso ng Cuba),
+				'one' => q(piso ng Cuba),
+				'other' => q(piso ng Cuba),
 			},
 		},
 		'CVE' => {
@@ -2256,6 +3180,7 @@ has 'curriencies' => (
 			},
 		},
 		'CZK' => {
+			symbol => 'CZK',
 			display_name => {
 				'currency' => q(Czech Republic Koruna),
 				'one' => q(Czech Republic koruna),
@@ -2275,6 +3200,7 @@ has 'curriencies' => (
 			},
 		},
 		'DKK' => {
+			symbol => 'DKK',
 			display_name => {
 				'currency' => q(Denmark Krone),
 				'one' => q(Danish krone),
@@ -2282,10 +3208,11 @@ has 'curriencies' => (
 			},
 		},
 		'DOP' => {
+			symbol => 'DOP',
 			display_name => {
-				'currency' => q(Dominican Peso),
-				'one' => q(Dominican peso),
-				'other' => q(Dominican pesos),
+				'currency' => q(Piso ng Dominican),
+				'one' => q(Piso ng Dominican),
+				'other' => q(piso ng Dominican),
 			},
 		},
 		'DZD' => {
@@ -2331,12 +3258,13 @@ has 'curriencies' => (
 		},
 		'FJD' => {
 			display_name => {
-				'currency' => q(Fijian Dollar),
-				'one' => q(Fijian dollar),
-				'other' => q(Fijian dollars),
+				'currency' => q(Dolyar ng Fiji),
+				'one' => q(dolyar ng Fiji),
+				'other' => q(dolyares ng Fiji),
 			},
 		},
 		'FKP' => {
+			symbol => 'FKP',
 			display_name => {
 				'currency' => q(Falkland Islands Pound),
 				'one' => q(Falkland Islands pound),
@@ -2371,6 +3299,7 @@ has 'curriencies' => (
 			},
 		},
 		'GIP' => {
+			symbol => 'GIP',
 			display_name => {
 				'currency' => q(Gibraltar Pound),
 				'one' => q(Gibraltar pound),
@@ -2392,6 +3321,7 @@ has 'curriencies' => (
 			},
 		},
 		'GTQ' => {
+			symbol => 'GTQ',
 			display_name => {
 				'currency' => q(Guatemalan Quetzal),
 				'one' => q(Guatemalan quetzal),
@@ -2399,21 +3329,23 @@ has 'curriencies' => (
 			},
 		},
 		'GYD' => {
+			symbol => 'GYD',
 			display_name => {
-				'currency' => q(Guyanaese Dollar),
-				'one' => q(Guyanaese dollar),
-				'other' => q(Guyanaese dollars),
+				'currency' => q(Dolyar ng Guyanese),
+				'one' => q(dolyar ng Guyanese),
+				'other' => q(dolyares ng Guyanese),
 			},
 		},
 		'HKD' => {
 			symbol => 'HK$',
 			display_name => {
-				'currency' => q(Hong Kong Dollar),
-				'one' => q(Hong Kong dollar),
-				'other' => q(Hong Kong dollars),
+				'currency' => q(Dolyar ng Hong Kong),
+				'one' => q(dolyar ng Hong Kong),
+				'other' => q(dolyares ng Hong Kong),
 			},
 		},
 		'HNL' => {
+			symbol => 'HNL',
 			display_name => {
 				'currency' => q(Honduran Lempira),
 				'one' => q(Honduran lempira),
@@ -2421,6 +3353,7 @@ has 'curriencies' => (
 			},
 		},
 		'HRK' => {
+			symbol => 'HRK',
 			display_name => {
 				'currency' => q(Croatian Kuna),
 				'one' => q(Croatian kuna),
@@ -2428,6 +3361,7 @@ has 'curriencies' => (
 			},
 		},
 		'HTG' => {
+			symbol => 'HTG',
 			display_name => {
 				'currency' => q(Haitian Gourde),
 				'one' => q(Haitian gourde),
@@ -2435,6 +3369,7 @@ has 'curriencies' => (
 			},
 		},
 		'HUF' => {
+			symbol => 'HUF',
 			display_name => {
 				'currency' => q(Hungarian Forint),
 				'one' => q(Hungarian forint),
@@ -2442,6 +3377,7 @@ has 'curriencies' => (
 			},
 		},
 		'IDR' => {
+			symbol => 'IDR',
 			display_name => {
 				'currency' => q(Indonesian Rupiah),
 				'one' => q(Indonesian rupiah),
@@ -2472,6 +3408,7 @@ has 'curriencies' => (
 			},
 		},
 		'IRR' => {
+			symbol => 'IRR',
 			display_name => {
 				'currency' => q(Iranian Rial),
 				'one' => q(Iranian rial),
@@ -2479,6 +3416,7 @@ has 'curriencies' => (
 			},
 		},
 		'ISK' => {
+			symbol => 'ISK',
 			display_name => {
 				'currency' => q(Icelandic Króna),
 				'one' => q(Icelandic króna),
@@ -2486,10 +3424,11 @@ has 'curriencies' => (
 			},
 		},
 		'JMD' => {
+			symbol => 'JMD',
 			display_name => {
-				'currency' => q(Jamaican Dollar),
-				'one' => q(Jamaican dollar),
-				'other' => q(Jamaican dollars),
+				'currency' => q(Dolyar ng Jamaica),
+				'one' => q(dolyar ng Jamaica),
+				'other' => q(dolyares ng Jamaica),
 			},
 		},
 		'JOD' => {
@@ -2522,6 +3461,7 @@ has 'curriencies' => (
 			},
 		},
 		'KHR' => {
+			symbol => 'KHR',
 			display_name => {
 				'currency' => q(Cambodian Riel),
 				'one' => q(Cambodian riel),
@@ -2536,6 +3476,7 @@ has 'curriencies' => (
 			},
 		},
 		'KPW' => {
+			symbol => 'KPW',
 			display_name => {
 				'currency' => q(North Korean Won),
 				'one' => q(North Korean won),
@@ -2558,10 +3499,11 @@ has 'curriencies' => (
 			},
 		},
 		'KYD' => {
+			symbol => 'KYD',
 			display_name => {
-				'currency' => q(Cayman Islands Dollar),
-				'one' => q(Cayman Islands dollar),
-				'other' => q(Cayman Islands dollars),
+				'currency' => q(Dolyar ng Cayman Islands),
+				'one' => q(dolyar ng Cayman Islands),
+				'other' => q(dolyares ng Cayman Islands),
 			},
 		},
 		'KZT' => {
@@ -2572,6 +3514,7 @@ has 'curriencies' => (
 			},
 		},
 		'LAK' => {
+			symbol => 'LAK',
 			display_name => {
 				'currency' => q(Laotian Kip),
 				'one' => q(Laotian kip),
@@ -2586,6 +3529,7 @@ has 'curriencies' => (
 			},
 		},
 		'LKR' => {
+			symbol => 'LKR',
 			display_name => {
 				'currency' => q(Sri Lankan Rupee),
 				'one' => q(Sri Lankan rupee),
@@ -2594,9 +3538,9 @@ has 'curriencies' => (
 		},
 		'LRD' => {
 			display_name => {
-				'currency' => q(Liberian Dollar),
-				'one' => q(Liberian dollar),
-				'other' => q(Liberian dollars),
+				'currency' => q(Dolyar ng Liberia),
+				'one' => q(dolyar ng Liberia),
+				'other' => q(dolyares ng Liberia),
 			},
 		},
 		'LSL' => {
@@ -2605,6 +3549,7 @@ has 'curriencies' => (
 			},
 		},
 		'LTL' => {
+			symbol => 'LTL',
 			display_name => {
 				'currency' => q(Lithuanian Litas),
 				'one' => q(Lithuanian litas),
@@ -2612,6 +3557,7 @@ has 'curriencies' => (
 			},
 		},
 		'LVL' => {
+			symbol => 'LVL',
 			display_name => {
 				'currency' => q(Latvian Lats),
 				'one' => q(Latvian lats),
@@ -2633,6 +3579,7 @@ has 'curriencies' => (
 			},
 		},
 		'MDL' => {
+			symbol => 'MDL',
 			display_name => {
 				'currency' => q(Moldovan Leu),
 				'one' => q(Moldovan leu),
@@ -2647,6 +3594,7 @@ has 'curriencies' => (
 			},
 		},
 		'MKD' => {
+			symbol => 'MKD',
 			display_name => {
 				'currency' => q(Macedonian Denar),
 				'one' => q(Macedonian denar),
@@ -2654,6 +3602,7 @@ has 'curriencies' => (
 			},
 		},
 		'MMK' => {
+			symbol => 'MMK',
 			display_name => {
 				'currency' => q(Myanmar Kyat),
 				'one' => q(Myanmar kyat),
@@ -2661,6 +3610,7 @@ has 'curriencies' => (
 			},
 		},
 		'MNT' => {
+			symbol => 'MNT',
 			display_name => {
 				'currency' => q(Mongolian Tugrik),
 				'one' => q(Mongolian tugrik),
@@ -2668,6 +3618,7 @@ has 'curriencies' => (
 			},
 		},
 		'MOP' => {
+			symbol => 'MOP',
 			display_name => {
 				'currency' => q(Macanese Pataca),
 				'one' => q(Macanese pataca),
@@ -2689,6 +3640,7 @@ has 'curriencies' => (
 			},
 		},
 		'MVR' => {
+			symbol => 'MVR',
 			display_name => {
 				'currency' => q(Maldivian Rufiyaa),
 				'one' => q(Maldivian rufiyaa),
@@ -2705,12 +3657,13 @@ has 'curriencies' => (
 		'MXN' => {
 			symbol => 'MX$',
 			display_name => {
-				'currency' => q(Mexican Peso),
-				'one' => q(Mexican peso),
-				'other' => q(Mexican pesos),
+				'currency' => q(Piso ng Mexico),
+				'one' => q(piso ng Mexico),
+				'other' => q(Piso ng Mexico),
 			},
 		},
 		'MYR' => {
+			symbol => 'MYR',
 			display_name => {
 				'currency' => q(Malaysian Ringgit),
 				'one' => q(Malaysian ringgit),
@@ -2726,9 +3679,9 @@ has 'curriencies' => (
 		},
 		'NAD' => {
 			display_name => {
-				'currency' => q(Namibian Dollar),
-				'one' => q(Namibian dollar),
-				'other' => q(Namibian dollars),
+				'currency' => q(Dolyar ng Namibia),
+				'one' => q(dolyar ng Namibia),
+				'other' => q(dolyares ng Namibia),
 			},
 		},
 		'NGN' => {
@@ -2739,6 +3692,7 @@ has 'curriencies' => (
 			},
 		},
 		'NIO' => {
+			symbol => 'NIO',
 			display_name => {
 				'currency' => q(Nicaraguan Córdoba),
 				'one' => q(Nicaraguan córdoba),
@@ -2746,6 +3700,7 @@ has 'curriencies' => (
 			},
 		},
 		'NOK' => {
+			symbol => 'NOK',
 			display_name => {
 				'currency' => q(Norwegian Krone),
 				'one' => q(Norwegian krone),
@@ -2753,6 +3708,7 @@ has 'curriencies' => (
 			},
 		},
 		'NPR' => {
+			symbol => 'NPR',
 			display_name => {
 				'currency' => q(Nepalese Rupee),
 				'one' => q(Nepalese rupee),
@@ -2762,9 +3718,9 @@ has 'curriencies' => (
 		'NZD' => {
 			symbol => 'NZ$',
 			display_name => {
-				'currency' => q(New Zealand Dollar),
-				'one' => q(New Zealand dollar),
-				'other' => q(New Zealand dollars),
+				'currency' => q(Dolyar ng New Zealand),
+				'one' => q(dolyares ng New Zealand),
+				'other' => q(dolyares ng New Zealand),
 			},
 		},
 		'OMR' => {
@@ -2775,6 +3731,7 @@ has 'curriencies' => (
 			},
 		},
 		'PAB' => {
+			symbol => 'PAB',
 			display_name => {
 				'currency' => q(Panamanian Balboa),
 				'one' => q(Panamanian balboa),
@@ -2782,6 +3739,7 @@ has 'curriencies' => (
 			},
 		},
 		'PEN' => {
+			symbol => 'PEN',
 			display_name => {
 				'currency' => q(Peruvian Nuevo Sol),
 				'one' => q(Peruvian nuevo sol),
@@ -2798,12 +3756,13 @@ has 'curriencies' => (
 		'PHP' => {
 			symbol => '₱',
 			display_name => {
-				'currency' => q(Philippine Peso),
-				'one' => q(Philippine peso),
-				'other' => q(Philippine pesos),
+				'currency' => q(Piso ng Pilipinas),
+				'one' => q(piso ng Pilipinas),
+				'other' => q(piso ng Pilipinas),
 			},
 		},
 		'PKR' => {
+			symbol => 'PKR',
 			display_name => {
 				'currency' => q(Pakistani Rupee),
 				'one' => q(Pakistani rupee),
@@ -2811,6 +3770,7 @@ has 'curriencies' => (
 			},
 		},
 		'PLN' => {
+			symbol => 'PLN',
 			display_name => {
 				'currency' => q(Polish Zloty),
 				'one' => q(Polish zloty),
@@ -2818,6 +3778,7 @@ has 'curriencies' => (
 			},
 		},
 		'PYG' => {
+			symbol => 'PYG',
 			display_name => {
 				'currency' => q(Paraguayan Guarani),
 				'one' => q(Paraguayan guarani),
@@ -2832,6 +3793,7 @@ has 'curriencies' => (
 			},
 		},
 		'RON' => {
+			symbol => 'RON',
 			display_name => {
 				'currency' => q(Romanian Leu),
 				'one' => q(Romanian leu),
@@ -2839,6 +3801,7 @@ has 'curriencies' => (
 			},
 		},
 		'RSD' => {
+			symbol => 'RSD',
 			display_name => {
 				'currency' => q(Serbian Dinar),
 				'one' => q(Serbian dinar),
@@ -2846,6 +3809,7 @@ has 'curriencies' => (
 			},
 		},
 		'RUB' => {
+			symbol => 'RUB',
 			display_name => {
 				'currency' => q(Russian Ruble),
 				'one' => q(Russian ruble),
@@ -2868,9 +3832,9 @@ has 'curriencies' => (
 		},
 		'SBD' => {
 			display_name => {
-				'currency' => q(Solomon Islands Dollar),
-				'one' => q(Solomon Islands dollar),
-				'other' => q(Solomon Islands dollars),
+				'currency' => q(Dolyar ng Solomon Islands),
+				'one' => q(dolyar ng Solomon Islands),
+				'other' => q(dolyar ng Solomon Islands),
 			},
 		},
 		'SCR' => {
@@ -2888,6 +3852,7 @@ has 'curriencies' => (
 			},
 		},
 		'SEK' => {
+			symbol => 'SEK',
 			display_name => {
 				'currency' => q(Swedish Krona),
 				'one' => q(Swedish krona),
@@ -2895,10 +3860,11 @@ has 'curriencies' => (
 			},
 		},
 		'SGD' => {
+			symbol => 'SGD',
 			display_name => {
-				'currency' => q(Singapore Dollar),
-				'one' => q(Singapore dollar),
-				'other' => q(Singapore dollars),
+				'currency' => q(Dolyar ng Singapore),
+				'one' => q(dolyar ng Singapore),
+				'other' => q(dolyares ng Singapore),
 			},
 		},
 		'SHP' => {
@@ -2933,10 +3899,11 @@ has 'curriencies' => (
 			},
 		},
 		'SRD' => {
+			symbol => 'SRD',
 			display_name => {
-				'currency' => q(Surinamese Dollar),
-				'one' => q(Surinamese dollar),
-				'other' => q(Surinamese dollars),
+				'currency' => q(Dolyar ng Suriname),
+				'one' => q(dolyar ng Suriname),
+				'other' => q(dolyares ng Suriname),
 			},
 		},
 		'SSP' => {
@@ -3011,18 +3978,19 @@ has 'curriencies' => (
 			},
 		},
 		'TTD' => {
+			symbol => 'TTD',
 			display_name => {
-				'currency' => q(Trinidad and Tobago Dollar),
-				'one' => q(Trinidad and Tobago dollar),
-				'other' => q(Trinidad and Tobago dollars),
+				'currency' => q(Dolyar ng Trinidad and Tobago),
+				'one' => q(dolyar ng Trinidad and Tobago),
+				'other' => q(dolyares ng Trinidad and Tobago),
 			},
 		},
 		'TWD' => {
 			symbol => 'NT$',
 			display_name => {
-				'currency' => q(New Taiwan Dollar),
-				'one' => q(New Taiwan dollar),
-				'other' => q(New Taiwan dollars),
+				'currency' => q(Dolyar ng New Taiwan),
+				'one' => q(dolyar ng New Taiwan),
+				'other' => q(dolyares ng New Taiwan),
 			},
 		},
 		'TZS' => {
@@ -3033,6 +4001,7 @@ has 'curriencies' => (
 			},
 		},
 		'UAH' => {
+			symbol => 'UAH',
 			display_name => {
 				'currency' => q(Ukrainian Hryvnia),
 				'one' => q(Ukrainian hryvnia),
@@ -3049,16 +4018,17 @@ has 'curriencies' => (
 		'USD' => {
 			symbol => '$',
 			display_name => {
-				'currency' => q(US Dollar),
-				'one' => q(US dollar),
-				'other' => q(US dollars),
+				'currency' => q(Dolyar ng US),
+				'one' => q(dolyar ng US),
+				'other' => q(dolyares ng US),
 			},
 		},
 		'UYU' => {
+			symbol => 'UYU',
 			display_name => {
-				'currency' => q(Uruguayan Peso),
-				'one' => q(Uruguayan peso),
-				'other' => q(Uruguayan pesos),
+				'currency' => q(Piso ng Uruguay),
+				'one' => q(piso ng Uruguay),
+				'other' => q(piso ng Uruguay),
 			},
 		},
 		'UZS' => {
@@ -3074,6 +4044,7 @@ has 'curriencies' => (
 			},
 		},
 		'VEF' => {
+			symbol => 'VEF',
 			display_name => {
 				'currency' => q(Venezuelan Bolívar),
 				'one' => q(Venezuelan bolívar),
@@ -3113,9 +4084,9 @@ has 'curriencies' => (
 		'XCD' => {
 			symbol => 'EC$',
 			display_name => {
-				'currency' => q(East Caribbean Dollar),
-				'one' => q(East Caribbean dollar),
-				'other' => q(East Caribbean dollars),
+				'currency' => q(Dolyar ng Silangang Caribbean),
+				'one' => q(dolyar ng Silangang Caribbean),
+				'other' => q(dolyares ng Silangang Caribbean),
 			},
 		},
 		'XOF' => {
@@ -3436,17 +4407,19 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'abbreviated' => {
-					'am' => q{AM},
-					'pm' => q{PM},
-				},
 				'wide' => {
 					'am' => q{AM},
+					'noon' => q{tanghali},
 					'pm' => q{PM},
 				},
 				'narrow' => {
-					'am' => q{a},
 					'pm' => q{p},
+					'noon' => q{tanghali},
+					'am' => q{a},
+				},
+				'abbreviated' => {
+					'pm' => q{PM},
+					'am' => q{AM},
 				},
 			},
 		},
@@ -3462,6 +4435,10 @@ has 'eras' => (
 		},
 		'gregorian' => {
 			abbreviated => {
+				'0' => 'BC',
+				'1' => 'AD'
+			},
+			wide => {
 				'0' => 'BC',
 				'1' => 'AD'
 			},
@@ -3511,14 +4488,14 @@ has 'datetime_formats' => (
 	init_arg	=> undef,
 	default		=> sub { {
 		'generic' => {
-			'full' => q{{1} 'ng' {0}},
-			'long' => q{{1} 'ng' {0}},
+			'full' => q{{1} 'nang' {0}},
+			'long' => q{{1} 'nang' {0}},
 			'medium' => q{{1}, {0}},
 			'short' => q{{1}, {0}},
 		},
 		'gregorian' => {
-			'full' => q{{1} 'ng' {0}},
-			'long' => q{{1} 'ng' {0}},
+			'full' => q{{1} 'nang' {0}},
+			'long' => q{{1} 'nang' {0}},
 			'medium' => q{{1}, {0}},
 			'short' => q{{1}, {0}},
 		},
@@ -3530,44 +4507,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			EHm => q{E HH:mm},
-			EHms => q{E HH:mm:ss},
-			Ed => q{d E},
-			Ehm => q{E h:mm a},
-			Ehms => q{E h:mm:ss a},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E, MMM d, y G},
-			GyMMMd => q{MMM d, y G},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, M/d},
-			MMM => q{LLL},
-			MMMEd => q{E, MMM d},
-			MMMMEd => q{E, MMMM d},
-			MMMMd => q{MMMM d},
-			MMMd => q{MMM d},
-			Md => q{M/d},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y},
-			yM => q{M/y},
-			yMEd => q{E, M/d/y},
-			yMM => q{MM/y},
-			yMMM => q{MMM y},
-			yMMMEd => q{E, MMM d, y},
-			yMMMM => q{MMMM y},
-			yMMMd => q{MMM d, y},
-			yMd => q{M/d/y},
-			yQQQ => q{QQQ y},
-			yQQQQ => q{QQQQ y},
-		},
 		'generic' => {
 			Ed => q{d E},
 			Gy => q{y G},
@@ -3603,6 +4542,45 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
 		},
+		'gregorian' => {
+			E => q{ccc},
+			EHm => q{E HH:mm},
+			EHms => q{E HH:mm:ss},
+			Ed => q{d E},
+			Ehm => q{E h:mm a},
+			Ehms => q{E h:mm:ss a},
+			Gy => q{G y},
+			GyMMM => q{G y MMM},
+			GyMMMEd => q{G y MMM d, E},
+			GyMMMd => q{G y MMM d},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, M/d},
+			MMM => q{LLL},
+			MMMEd => q{E, MMM d},
+			MMMMEd => q{E, MMMM d},
+			MMMMd => q{MMMM d},
+			MMMd => q{MMM d},
+			Md => q{M/d},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y},
+			yM => q{M/y},
+			yMEd => q{E, M/d/y},
+			yMM => q{MM/y},
+			yMMM => q{MMM y},
+			yMMMEd => q{E, MMM d, y},
+			yMMMM => q{MMMM y},
+			yMMMd => q{MMM d, y},
+			yMd => q{M/d/y},
+			yQQQ => q{QQQ y},
+			yQQQQ => q{QQQQ y},
+		},
 	} },
 );
 
@@ -3622,101 +4600,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			H => {
-				H => q{HH–HH},
-			},
-			Hm => {
-				H => q{HH:mm–HH:mm},
-				m => q{HH:mm–HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm–HH:mm v},
-				m => q{HH:mm–HH:mm v},
-			},
-			Hv => {
-				H => q{HH–HH v},
-			},
-			M => {
-				M => q{M–M},
-			},
-			MEd => {
-				M => q{E, M/d – E, M/d},
-				d => q{E, M/d – E, M/d},
-			},
-			MMM => {
-				M => q{MMM–MMM},
-			},
-			MMMEd => {
-				M => q{E, MMM d – E, MMM d},
-				d => q{E, MMM d – E, MMM d},
-			},
-			MMMd => {
-				M => q{MMM d – MMM d},
-				d => q{MMM d–d},
-			},
-			Md => {
-				M => q{M/d – M/d},
-				d => q{M/d – M/d},
-			},
-			d => {
-				d => q{d–d},
-			},
-			fallback => '{0} – {1}',
-			h => {
-				a => q{h a – h a},
-				h => q{h–h a},
-			},
-			hm => {
-				a => q{h:mm a – h:mm a},
-				h => q{h:mm–h:mm a},
-				m => q{h:mm–h:mm a},
-			},
-			hmv => {
-				a => q{h:mm a – h:mm a v},
-				h => q{h:mm–h:mm a v},
-				m => q{h:mm–h:mm a v},
-			},
-			hv => {
-				a => q{h a – h a v},
-				h => q{h–h a v},
-			},
-			y => {
-				y => q{y–y},
-			},
-			yM => {
-				M => q{M/y – M/y},
-				y => q{M/y – M/y},
-			},
-			yMEd => {
-				M => q{E, M/d/y – E, M/d/y},
-				d => q{E, M/d/y – E, M/d/y},
-				y => q{E, M/d/y – E, M/d/y},
-			},
-			yMMM => {
-				M => q{MMM–MMM y},
-				y => q{MMM y – MMM y},
-			},
-			yMMMEd => {
-				M => q{E, MMM d – E, MMM d, y},
-				d => q{E, MMM d – E, MMM d, y},
-				y => q{E, MMM d, y – E, MMM d, y},
-			},
-			yMMMM => {
-				M => q{MMMM–MMMM y},
-				y => q{MMMM y – MMMM y},
-			},
-			yMMMd => {
-				M => q{MMM d – MMM d, y},
-				d => q{MMM d–d, y},
-				y => q{MMM d, y – MMM d, y},
-			},
-			yMd => {
-				M => q{M/d/y – M/d/y},
-				d => q{M/d/y – M/d/y},
-				y => q{M/d/y – M/d/y},
-			},
-		},
 		'generic' => {
 			H => {
 				H => q{HH–HH},
@@ -3812,6 +4695,101 @@ has 'datetime_formats_interval' => (
 				y => q{M/d/y – M/d/y GGGGG},
 			},
 		},
+		'gregorian' => {
+			H => {
+				H => q{HH–HH},
+			},
+			Hm => {
+				H => q{HH:mm–HH:mm},
+				m => q{HH:mm–HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm–HH:mm v},
+				m => q{HH:mm–HH:mm v},
+			},
+			Hv => {
+				H => q{HH–HH v},
+			},
+			M => {
+				M => q{M–M},
+			},
+			MEd => {
+				M => q{E, M/d – E, M/d},
+				d => q{E, M/d – E, M/d},
+			},
+			MMM => {
+				M => q{MMM–MMM},
+			},
+			MMMEd => {
+				M => q{E, MMM d – E, MMM d},
+				d => q{E, MMM d – E, MMM d},
+			},
+			MMMd => {
+				M => q{MMM d – MMM d},
+				d => q{MMM d–d},
+			},
+			Md => {
+				M => q{M/d – M/d},
+				d => q{M/d – M/d},
+			},
+			d => {
+				d => q{d–d},
+			},
+			fallback => '{0} – {1}',
+			h => {
+				a => q{h a – h a},
+				h => q{h–h a},
+			},
+			hm => {
+				a => q{h:mm a – h:mm a},
+				h => q{h:mm–h:mm a},
+				m => q{h:mm–h:mm a},
+			},
+			hmv => {
+				a => q{h:mm a – h:mm a v},
+				h => q{h:mm–h:mm a v},
+				m => q{h:mm–h:mm a v},
+			},
+			hv => {
+				a => q{h a – h a v},
+				h => q{h–h a v},
+			},
+			y => {
+				y => q{y–y},
+			},
+			yM => {
+				M => q{M/y – M/y},
+				y => q{M/y – M/y},
+			},
+			yMEd => {
+				M => q{E, M/d/y – E, M/d/y},
+				d => q{E, M/d/y – E, M/d/y},
+				y => q{E, M/d/y – E, M/d/y},
+			},
+			yMMM => {
+				M => q{MMM–MMM y},
+				y => q{MMM y – MMM y},
+			},
+			yMMMEd => {
+				M => q{E, MMM d – E, MMM d, y},
+				d => q{E, MMM d – E, MMM d, y},
+				y => q{E, MMM d, y – E, MMM d, y},
+			},
+			yMMMM => {
+				M => q{MMMM–MMMM y},
+				y => q{MMMM y – MMMM y},
+			},
+			yMMMd => {
+				M => q{MMM d – MMM d, y},
+				d => q{MMM d–d, y},
+				y => q{MMM d, y – MMM d, y},
+			},
+			yMd => {
+				M => q{M/d/y – M/d/y},
+				d => q{M/d/y – M/d/y},
+				y => q{M/d/y – M/d/y},
+			},
+		},
 	} },
 );
 
@@ -3824,61 +4802,388 @@ has 'time_zone_names' => (
 		gmtFormat => q(GMT{0}),
 		gmtZeroFormat => q(GMT),
 		regionFormat => q(Oras sa {0}),
-		regionFormat => q({0} Daylight Time),
-		regionFormat => q({0} Standard Time),
+		regionFormat => q(Daylight Time ng {0}),
+		regionFormat => q(Standard Time ng {0}),
 		fallbackFormat => q({1} ({0})),
 		'Afghanistan' => {
 			long => {
-				'standard' => q(Afghanistan Time),
+				'standard' => q(Oras ng Afghanistan),
 			},
+		},
+		'Africa/Abidjan' => {
+			exemplarCity => q#Abidjan#,
+		},
+		'Africa/Accra' => {
+			exemplarCity => q#Accra#,
+		},
+		'Africa/Addis_Ababa' => {
+			exemplarCity => q#Addis Ababa#,
+		},
+		'Africa/Algiers' => {
+			exemplarCity => q#Algiers#,
 		},
 		'Africa/Asmera' => {
 			exemplarCity => q#Asmara#,
 		},
+		'Africa/Bamako' => {
+			exemplarCity => q#Bamako#,
+		},
+		'Africa/Bangui' => {
+			exemplarCity => q#Bangui#,
+		},
+		'Africa/Banjul' => {
+			exemplarCity => q#Banjul#,
+		},
+		'Africa/Bissau' => {
+			exemplarCity => q#Bissau#,
+		},
+		'Africa/Blantyre' => {
+			exemplarCity => q#Blantyre#,
+		},
+		'Africa/Brazzaville' => {
+			exemplarCity => q#Brazzaville#,
+		},
+		'Africa/Bujumbura' => {
+			exemplarCity => q#Bujumbura#,
+		},
+		'Africa/Cairo' => {
+			exemplarCity => q#Cairo#,
+		},
+		'Africa/Casablanca' => {
+			exemplarCity => q#Casablanca#,
+		},
+		'Africa/Ceuta' => {
+			exemplarCity => q#Ceuta#,
+		},
+		'Africa/Conakry' => {
+			exemplarCity => q#Conakry#,
+		},
+		'Africa/Dakar' => {
+			exemplarCity => q#Dakar#,
+		},
+		'Africa/Dar_es_Salaam' => {
+			exemplarCity => q#Dar es Salaam#,
+		},
+		'Africa/Djibouti' => {
+			exemplarCity => q#Djibouti#,
+		},
+		'Africa/Douala' => {
+			exemplarCity => q#Douala#,
+		},
+		'Africa/El_Aaiun' => {
+			exemplarCity => q#El Aaiun#,
+		},
+		'Africa/Freetown' => {
+			exemplarCity => q#Freetown#,
+		},
+		'Africa/Gaborone' => {
+			exemplarCity => q#Gaborone#,
+		},
+		'Africa/Harare' => {
+			exemplarCity => q#Harare#,
+		},
+		'Africa/Johannesburg' => {
+			exemplarCity => q#Johannesburg#,
+		},
+		'Africa/Juba' => {
+			exemplarCity => q#Juba#,
+		},
+		'Africa/Kampala' => {
+			exemplarCity => q#Kampala#,
+		},
+		'Africa/Khartoum' => {
+			exemplarCity => q#Khartoum#,
+		},
+		'Africa/Kigali' => {
+			exemplarCity => q#Kigali#,
+		},
+		'Africa/Kinshasa' => {
+			exemplarCity => q#Kinshasa#,
+		},
+		'Africa/Lagos' => {
+			exemplarCity => q#Lagos#,
+		},
+		'Africa/Libreville' => {
+			exemplarCity => q#Libreville#,
+		},
+		'Africa/Lome' => {
+			exemplarCity => q#Lome#,
+		},
+		'Africa/Luanda' => {
+			exemplarCity => q#Luanda#,
+		},
+		'Africa/Lubumbashi' => {
+			exemplarCity => q#Lubumbashi#,
+		},
+		'Africa/Lusaka' => {
+			exemplarCity => q#Lusaka#,
+		},
+		'Africa/Malabo' => {
+			exemplarCity => q#Malabo#,
+		},
+		'Africa/Maputo' => {
+			exemplarCity => q#Maputo#,
+		},
+		'Africa/Maseru' => {
+			exemplarCity => q#Maseru#,
+		},
+		'Africa/Mbabane' => {
+			exemplarCity => q#Mbabane#,
+		},
+		'Africa/Mogadishu' => {
+			exemplarCity => q#Mogadishu#,
+		},
+		'Africa/Monrovia' => {
+			exemplarCity => q#Monrovia#,
+		},
+		'Africa/Nairobi' => {
+			exemplarCity => q#Nairobi#,
+		},
+		'Africa/Ndjamena' => {
+			exemplarCity => q#Ndjamena#,
+		},
+		'Africa/Niamey' => {
+			exemplarCity => q#Niamey#,
+		},
+		'Africa/Nouakchott' => {
+			exemplarCity => q#Nouakchott#,
+		},
+		'Africa/Ouagadougou' => {
+			exemplarCity => q#Ouagadougou#,
+		},
+		'Africa/Porto-Novo' => {
+			exemplarCity => q#Porto-Novo#,
+		},
+		'Africa/Sao_Tome' => {
+			exemplarCity => q#Sao Tome#,
+		},
+		'Africa/Tripoli' => {
+			exemplarCity => q#Tripoli#,
+		},
+		'Africa/Tunis' => {
+			exemplarCity => q#Tunis#,
+		},
+		'Africa/Windhoek' => {
+			exemplarCity => q#Windhoek#,
+		},
 		'Africa_Central' => {
 			long => {
-				'standard' => q(Central Africa Time),
+				'standard' => q(Oras ng Gitnang Africa),
 			},
 		},
 		'Africa_Eastern' => {
 			long => {
-				'standard' => q(East Africa Time),
+				'standard' => q(Oras ng Silangang Afica),
 			},
 		},
 		'Africa_Southern' => {
 			long => {
-				'standard' => q(South Africa Time),
+				'standard' => q(Oras ng Timog Africa),
 			},
 		},
 		'Africa_Western' => {
 			long => {
-				'daylight' => q(West Africa Summer Time),
-				'generic' => q(West Africa Time),
-				'standard' => q(West Africa Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Kanlurang Africa),
+				'generic' => q(Oras ng Kanlurang Africa),
+				'standard' => q(Standard Time ng Kanlurang Africa),
 			},
 		},
 		'Alaska' => {
 			long => {
-				'daylight' => q(Alaska Daylight Time),
-				'generic' => q(Alaska Time),
-				'standard' => q(Alaska Standard Time),
+				'daylight' => q(Daylight Time ng Alaska),
+				'generic' => q(Oras ng Alaska),
+				'standard' => q(Standard Time ng Alaska),
 			},
 		},
 		'Amazon' => {
 			long => {
-				'daylight' => q(Amazon Summer Time),
-				'generic' => q(Amazon Time),
-				'standard' => q(Amazon Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Amazon),
+				'generic' => q(Oras ng Amazon),
+				'standard' => q(Standard Time ng Amazon),
 			},
+		},
+		'America/Adak' => {
+			exemplarCity => q#Adak#,
+		},
+		'America/Anchorage' => {
+			exemplarCity => q#Anchorage#,
+		},
+		'America/Anguilla' => {
+			exemplarCity => q#Anguilla#,
+		},
+		'America/Antigua' => {
+			exemplarCity => q#Antigua#,
+		},
+		'America/Araguaina' => {
+			exemplarCity => q#Araguaina#,
+		},
+		'America/Argentina/La_Rioja' => {
+			exemplarCity => q#La Rioja#,
+		},
+		'America/Argentina/Rio_Gallegos' => {
+			exemplarCity => q#Rio Gallegos#,
+		},
+		'America/Argentina/Salta' => {
+			exemplarCity => q#Salta#,
+		},
+		'America/Argentina/San_Juan' => {
+			exemplarCity => q#San Juan#,
+		},
+		'America/Argentina/San_Luis' => {
+			exemplarCity => q#San Luis#,
+		},
+		'America/Argentina/Tucuman' => {
+			exemplarCity => q#Tucuman#,
+		},
+		'America/Argentina/Ushuaia' => {
+			exemplarCity => q#Ushuaia#,
+		},
+		'America/Aruba' => {
+			exemplarCity => q#Aruba#,
 		},
 		'America/Asuncion' => {
 			exemplarCity => q#Asunción#,
 		},
+		'America/Bahia' => {
+			exemplarCity => q#Bahia#,
+		},
+		'America/Bahia_Banderas' => {
+			exemplarCity => q#Bahia Banderas#,
+		},
+		'America/Barbados' => {
+			exemplarCity => q#Barbados#,
+		},
+		'America/Belem' => {
+			exemplarCity => q#Belem#,
+		},
+		'America/Belize' => {
+			exemplarCity => q#Belize#,
+		},
+		'America/Blanc-Sablon' => {
+			exemplarCity => q#Blanc-Sablon#,
+		},
+		'America/Boa_Vista' => {
+			exemplarCity => q#Boa Vista#,
+		},
+		'America/Bogota' => {
+			exemplarCity => q#Bogota#,
+		},
+		'America/Boise' => {
+			exemplarCity => q#Boise#,
+		},
+		'America/Buenos_Aires' => {
+			exemplarCity => q#Buenos Aires#,
+		},
+		'America/Cambridge_Bay' => {
+			exemplarCity => q#Cambridge Bay#,
+		},
+		'America/Campo_Grande' => {
+			exemplarCity => q#Campo Grande#,
+		},
+		'America/Cancun' => {
+			exemplarCity => q#Cancun#,
+		},
+		'America/Caracas' => {
+			exemplarCity => q#Caracas#,
+		},
+		'America/Catamarca' => {
+			exemplarCity => q#Catamarca#,
+		},
+		'America/Cayenne' => {
+			exemplarCity => q#Cayenne#,
+		},
+		'America/Cayman' => {
+			exemplarCity => q#Cayman#,
+		},
+		'America/Chicago' => {
+			exemplarCity => q#Chicago#,
+		},
+		'America/Chihuahua' => {
+			exemplarCity => q#Chihuahua#,
+		},
 		'America/Coral_Harbour' => {
 			exemplarCity => q#Atikokan#,
 		},
+		'America/Cordoba' => {
+			exemplarCity => q#Cordoba#,
+		},
+		'America/Costa_Rica' => {
+			exemplarCity => q#Costa Rica#,
+		},
+		'America/Creston' => {
+			exemplarCity => q#Creston#,
+		},
+		'America/Cuiaba' => {
+			exemplarCity => q#Cuiaba#,
+		},
+		'America/Curacao' => {
+			exemplarCity => q#Curacao#,
+		},
+		'America/Danmarkshavn' => {
+			exemplarCity => q#Danmarkshavn#,
+		},
+		'America/Dawson' => {
+			exemplarCity => q#Dawson#,
+		},
+		'America/Dawson_Creek' => {
+			exemplarCity => q#Dawson Creek#,
+		},
+		'America/Denver' => {
+			exemplarCity => q#Denver#,
+		},
+		'America/Detroit' => {
+			exemplarCity => q#Detroit#,
+		},
+		'America/Dominica' => {
+			exemplarCity => q#Dominica#,
+		},
+		'America/Edmonton' => {
+			exemplarCity => q#Edmonton#,
+		},
+		'America/Eirunepe' => {
+			exemplarCity => q#Eirunepe#,
+		},
+		'America/El_Salvador' => {
+			exemplarCity => q#El Salvador#,
+		},
+		'America/Fortaleza' => {
+			exemplarCity => q#Fortaleza#,
+		},
+		'America/Glace_Bay' => {
+			exemplarCity => q#Glace Bay#,
+		},
 		'America/Godthab' => {
 			exemplarCity => q#Nuuk#,
+		},
+		'America/Goose_Bay' => {
+			exemplarCity => q#Goose Bay#,
+		},
+		'America/Grand_Turk' => {
+			exemplarCity => q#Grand Turk#,
+		},
+		'America/Grenada' => {
+			exemplarCity => q#Grenada#,
+		},
+		'America/Guadeloupe' => {
+			exemplarCity => q#Guadeloupe#,
+		},
+		'America/Guatemala' => {
+			exemplarCity => q#Guatemala#,
+		},
+		'America/Guayaquil' => {
+			exemplarCity => q#Guayaquil#,
+		},
+		'America/Guyana' => {
+			exemplarCity => q#Guyana#,
+		},
+		'America/Halifax' => {
+			exemplarCity => q#Halifax#,
+		},
+		'America/Havana' => {
+			exemplarCity => q#Havana#,
+		},
+		'America/Hermosillo' => {
+			exemplarCity => q#Hermosillo#,
 		},
 		'America/Indiana/Knox' => {
 			exemplarCity => q#Knox, Indiana#,
@@ -3901,11 +5206,110 @@ has 'time_zone_names' => (
 		'America/Indiana/Winamac' => {
 			exemplarCity => q#Winamac, Indiana#,
 		},
+		'America/Indianapolis' => {
+			exemplarCity => q#Indianapolis#,
+		},
+		'America/Inuvik' => {
+			exemplarCity => q#Inuvik#,
+		},
+		'America/Iqaluit' => {
+			exemplarCity => q#Iqaluit#,
+		},
+		'America/Jamaica' => {
+			exemplarCity => q#Jamaica#,
+		},
+		'America/Jujuy' => {
+			exemplarCity => q#Jujuy#,
+		},
+		'America/Juneau' => {
+			exemplarCity => q#Juneau#,
+		},
 		'America/Kentucky/Monticello' => {
 			exemplarCity => q#Monticello, Kentucky#,
 		},
+		'America/Kralendijk' => {
+			exemplarCity => q#Kralendijk#,
+		},
+		'America/La_Paz' => {
+			exemplarCity => q#La Paz#,
+		},
+		'America/Lima' => {
+			exemplarCity => q#Lima#,
+		},
+		'America/Los_Angeles' => {
+			exemplarCity => q#Los Angeles#,
+		},
+		'America/Louisville' => {
+			exemplarCity => q#Louisville#,
+		},
 		'America/Lower_Princes' => {
-			exemplarCity => q#Lower Prince's Quarter#,
+			exemplarCity => q#Lower Prince’s Quarter#,
+		},
+		'America/Maceio' => {
+			exemplarCity => q#Maceio#,
+		},
+		'America/Managua' => {
+			exemplarCity => q#Managua#,
+		},
+		'America/Manaus' => {
+			exemplarCity => q#Manaus#,
+		},
+		'America/Marigot' => {
+			exemplarCity => q#Marigot#,
+		},
+		'America/Martinique' => {
+			exemplarCity => q#Martinique#,
+		},
+		'America/Matamoros' => {
+			exemplarCity => q#Matamoros#,
+		},
+		'America/Mazatlan' => {
+			exemplarCity => q#Mazatlan#,
+		},
+		'America/Mendoza' => {
+			exemplarCity => q#Mendoza#,
+		},
+		'America/Menominee' => {
+			exemplarCity => q#Menominee#,
+		},
+		'America/Merida' => {
+			exemplarCity => q#Merida#,
+		},
+		'America/Metlakatla' => {
+			exemplarCity => q#Metlakatla#,
+		},
+		'America/Mexico_City' => {
+			exemplarCity => q#Lungsod ng Mexico#,
+		},
+		'America/Miquelon' => {
+			exemplarCity => q#Miquelon#,
+		},
+		'America/Moncton' => {
+			exemplarCity => q#Moncton#,
+		},
+		'America/Monterrey' => {
+			exemplarCity => q#Monterrey#,
+		},
+		'America/Montevideo' => {
+			exemplarCity => q#Montevideo#,
+		},
+		'America/Montserrat' => {
+			exemplarCity => q#Montserrat#,
+		},
+		'America/Nassau' => {
+			exemplarCity => q#Nassau#,
+		},
+		'America/New_York' => {
+			exemplarCity => q#New York#,
+		},
+		'America/Nipigon' => {
+			exemplarCity => q#Nipigon#,
+		},
+		'America/Nome' => {
+			exemplarCity => q#Nome#,
+		},
+		'America/Noronha' => {
+			exemplarCity => q#Noronha#,
 		},
 		'America/North_Dakota/Beulah' => {
 			exemplarCity => q#Beulah, North Dakota#,
@@ -3916,8 +5320,71 @@ has 'time_zone_names' => (
 		'America/North_Dakota/New_Salem' => {
 			exemplarCity => q#New Salem, North Dakota#,
 		},
+		'America/Ojinaga' => {
+			exemplarCity => q#Ojinaga#,
+		},
+		'America/Panama' => {
+			exemplarCity => q#Panama#,
+		},
+		'America/Pangnirtung' => {
+			exemplarCity => q#Pangnirtung#,
+		},
+		'America/Paramaribo' => {
+			exemplarCity => q#Paramaribo#,
+		},
+		'America/Phoenix' => {
+			exemplarCity => q#Phoenix#,
+		},
+		'America/Port-au-Prince' => {
+			exemplarCity => q#Port-au-Prince#,
+		},
+		'America/Port_of_Spain' => {
+			exemplarCity => q#Puwerto ng Espanya#,
+		},
+		'America/Porto_Velho' => {
+			exemplarCity => q#Porto Velho#,
+		},
+		'America/Puerto_Rico' => {
+			exemplarCity => q#Puerto Rico#,
+		},
+		'America/Rainy_River' => {
+			exemplarCity => q#Rainy River#,
+		},
+		'America/Rankin_Inlet' => {
+			exemplarCity => q#Makipot na Look ng Rankin#,
+		},
+		'America/Recife' => {
+			exemplarCity => q#Recife#,
+		},
+		'America/Regina' => {
+			exemplarCity => q#Regina#,
+		},
+		'America/Resolute' => {
+			exemplarCity => q#Resolute#,
+		},
+		'America/Rio_Branco' => {
+			exemplarCity => q#Rio Branco#,
+		},
+		'America/Santa_Isabel' => {
+			exemplarCity => q#Santa Isabel#,
+		},
+		'America/Santarem' => {
+			exemplarCity => q#Santarem#,
+		},
+		'America/Santiago' => {
+			exemplarCity => q#Santiago#,
+		},
+		'America/Santo_Domingo' => {
+			exemplarCity => q#Santo Domingo#,
+		},
+		'America/Sao_Paulo' => {
+			exemplarCity => q#Sao Paulo#,
+		},
 		'America/Scoresbysund' => {
 			exemplarCity => q#Ittoqqortoormiit#,
+		},
+		'America/Sitka' => {
+			exemplarCity => q#Sitka#,
 		},
 		'America/St_Barthelemy' => {
 			exemplarCity => q#Saint Barthélemy#,
@@ -3937,32 +5404,68 @@ has 'time_zone_names' => (
 		'America/St_Vincent' => {
 			exemplarCity => q#St. Vincent#,
 		},
+		'America/Swift_Current' => {
+			exemplarCity => q#Swift Current#,
+		},
+		'America/Tegucigalpa' => {
+			exemplarCity => q#Tegucigalpa#,
+		},
+		'America/Thule' => {
+			exemplarCity => q#Thule#,
+		},
+		'America/Thunder_Bay' => {
+			exemplarCity => q#Thunder Bay#,
+		},
+		'America/Tijuana' => {
+			exemplarCity => q#Tijuana#,
+		},
+		'America/Toronto' => {
+			exemplarCity => q#Toronto#,
+		},
+		'America/Tortola' => {
+			exemplarCity => q#Tortola#,
+		},
+		'America/Vancouver' => {
+			exemplarCity => q#Vancouver#,
+		},
+		'America/Whitehorse' => {
+			exemplarCity => q#Whitehorse#,
+		},
+		'America/Winnipeg' => {
+			exemplarCity => q#Winnipeg#,
+		},
+		'America/Yakutat' => {
+			exemplarCity => q#Yakutat#,
+		},
+		'America/Yellowknife' => {
+			exemplarCity => q#Yellowknife#,
+		},
 		'America_Central' => {
 			long => {
-				'daylight' => q(North American Central Daylight Time),
-				'generic' => q(North American Central Time),
-				'standard' => q(North American Central Standard Time),
+				'daylight' => q(Central Daylight Time ng Hilagang Amerika),
+				'generic' => q(Central Time ng Hilagang Amerika),
+				'standard' => q(Central Standard Time ng Hilagang Amerika),
 			},
 		},
 		'America_Eastern' => {
 			long => {
-				'daylight' => q(North American Eastern Daylight Time),
-				'generic' => q(North American Eastern Time),
-				'standard' => q(North American Eastern Standard Time),
+				'daylight' => q(Eastern Daylight Time ng Hilagang Amerika),
+				'generic' => q(Eastern Time ng Hilagang Amerika),
+				'standard' => q(Eastern Standard Time ng Hilagang Amerika),
 			},
 		},
 		'America_Mountain' => {
 			long => {
-				'daylight' => q(North American Mountain Daylight Time),
-				'generic' => q(North American Mountain Time),
-				'standard' => q(North American Mountain Standard Time),
+				'daylight' => q(Daylight Time sa Bundok ng Hilagang Amerika),
+				'generic' => q(Oras sa Bundok ng Hilagang Amerika),
+				'standard' => q(Standard Time sa Bundok ng Hilagang Amerika),
 			},
 		},
 		'America_Pacific' => {
 			long => {
-				'daylight' => q(North American Pacific Daylight Time),
-				'generic' => q(North American Pacific Time),
-				'standard' => q(North American Pacific Standard Time),
+				'daylight' => q(Pacific Daylight Time ng Hilagang Amerika),
+				'generic' => q(Pacific Time ng Hilagang Amerika),
+				'standard' => q(Pacific Standard Time ng Hilagang Amerika),
 			},
 		},
 		'Anadyr' => {
@@ -3972,284 +5475,781 @@ has 'time_zone_names' => (
 				'standard' => q(Standard Time sa Anadyr),
 			},
 		},
+		'Antarctica/Casey' => {
+			exemplarCity => q#Casey#,
+		},
+		'Antarctica/Davis' => {
+			exemplarCity => q#Davis#,
+		},
 		'Antarctica/DumontDUrville' => {
 			exemplarCity => q#Dumont d’Urville#,
 		},
+		'Antarctica/Macquarie' => {
+			exemplarCity => q#Macquarie#,
+		},
+		'Antarctica/Mawson' => {
+			exemplarCity => q#Mawson#,
+		},
+		'Antarctica/McMurdo' => {
+			exemplarCity => q#McMurdo#,
+		},
+		'Antarctica/Palmer' => {
+			exemplarCity => q#Palmer#,
+		},
+		'Antarctica/Rothera' => {
+			exemplarCity => q#Rothera#,
+		},
+		'Antarctica/Syowa' => {
+			exemplarCity => q#Syowa#,
+		},
+		'Antarctica/Troll' => {
+			exemplarCity => q#Troll#,
+		},
+		'Antarctica/Vostok' => {
+			exemplarCity => q#Vostok#,
+		},
+		'Apia' => {
+			long => {
+				'daylight' => q(Apia Daylight Time),
+				'generic' => q(Apia Time),
+				'standard' => q(Apia Standard Time),
+			},
+		},
 		'Arabian' => {
 			long => {
-				'daylight' => q(Arabian Daylight Time),
-				'generic' => q(Arabian Time),
-				'standard' => q(Arabian Standard Time),
+				'daylight' => q(Daylight Time ng Arabia),
+				'generic' => q(Oras ng Arabia),
+				'standard' => q(Standard Time ng Arabia),
 			},
+		},
+		'Arctic/Longyearbyen' => {
+			exemplarCity => q#Longyearbyen#,
 		},
 		'Argentina' => {
 			long => {
-				'daylight' => q(Argentina Summer Time),
-				'generic' => q(Argentina Time),
-				'standard' => q(Argentina Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Argentina),
+				'generic' => q(Oras ng Argentina),
+				'standard' => q(Standard Time ng Argentina),
 			},
 		},
 		'Argentina_Western' => {
 			long => {
-				'daylight' => q(Western Argentina Summer Time),
-				'generic' => q(Western Argentina Time),
-				'standard' => q(Western Argentina Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Kanlurang Argentina),
+				'generic' => q(Oras ng Kanlurang Argentina),
+				'standard' => q(Standard Time ng Kanlurang Argentina),
 			},
 		},
 		'Armenia' => {
 			long => {
-				'daylight' => q(Armenia Summer Time),
-				'generic' => q(Armenia Time),
-				'standard' => q(Armenia Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Armenia),
+				'generic' => q(Oras ng Armenia),
+				'standard' => q(Standard Time ng Armenia),
 			},
+		},
+		'Asia/Aden' => {
+			exemplarCity => q#Aden#,
+		},
+		'Asia/Almaty' => {
+			exemplarCity => q#Almaty#,
+		},
+		'Asia/Amman' => {
+			exemplarCity => q#Amman#,
+		},
+		'Asia/Anadyr' => {
+			exemplarCity => q#Anadyr#,
+		},
+		'Asia/Aqtau' => {
+			exemplarCity => q#Aqtau#,
+		},
+		'Asia/Aqtobe' => {
+			exemplarCity => q#Aqtobe#,
+		},
+		'Asia/Ashgabat' => {
+			exemplarCity => q#Ashgabat#,
+		},
+		'Asia/Baghdad' => {
+			exemplarCity => q#Baghdad#,
+		},
+		'Asia/Bahrain' => {
+			exemplarCity => q#Bahrain#,
+		},
+		'Asia/Baku' => {
+			exemplarCity => q#Baku#,
+		},
+		'Asia/Bangkok' => {
+			exemplarCity => q#Bangkok#,
+		},
+		'Asia/Beirut' => {
+			exemplarCity => q#Beirut#,
+		},
+		'Asia/Bishkek' => {
+			exemplarCity => q#Bishkek#,
+		},
+		'Asia/Brunei' => {
+			exemplarCity => q#Brunei#,
 		},
 		'Asia/Calcutta' => {
 			exemplarCity => q#Kolkata#,
 		},
+		'Asia/Choibalsan' => {
+			exemplarCity => q#Choibalsan#,
+		},
+		'Asia/Chongqing' => {
+			exemplarCity => q#Chongqing#,
+		},
+		'Asia/Colombo' => {
+			exemplarCity => q#Colombo#,
+		},
+		'Asia/Damascus' => {
+			exemplarCity => q#Damascus#,
+		},
+		'Asia/Dhaka' => {
+			exemplarCity => q#Dhaka#,
+		},
+		'Asia/Dili' => {
+			exemplarCity => q#Dili#,
+		},
+		'Asia/Dubai' => {
+			exemplarCity => q#Dubai#,
+		},
+		'Asia/Dushanbe' => {
+			exemplarCity => q#Dushanbe#,
+		},
+		'Asia/Gaza' => {
+			exemplarCity => q#Gaza#,
+		},
+		'Asia/Harbin' => {
+			exemplarCity => q#Harbin#,
+		},
+		'Asia/Hebron' => {
+			exemplarCity => q#Hebron#,
+		},
+		'Asia/Hong_Kong' => {
+			exemplarCity => q#Hong Kong#,
+		},
+		'Asia/Hovd' => {
+			exemplarCity => q#Hovd#,
+		},
+		'Asia/Irkutsk' => {
+			exemplarCity => q#Irkutsk#,
+		},
+		'Asia/Jakarta' => {
+			exemplarCity => q#Jakarta#,
+		},
+		'Asia/Jayapura' => {
+			exemplarCity => q#Jayapura#,
+		},
+		'Asia/Jerusalem' => {
+			exemplarCity => q#Jerusalem#,
+		},
+		'Asia/Kabul' => {
+			exemplarCity => q#Kabul#,
+		},
+		'Asia/Kamchatka' => {
+			exemplarCity => q#Kamchatka#,
+		},
+		'Asia/Karachi' => {
+			exemplarCity => q#Karachi#,
+		},
+		'Asia/Kashgar' => {
+			exemplarCity => q#Kashgar#,
+		},
 		'Asia/Katmandu' => {
 			exemplarCity => q#Kathmandu#,
 		},
+		'Asia/Khandyga' => {
+			exemplarCity => q#Khandyga#,
+		},
+		'Asia/Krasnoyarsk' => {
+			exemplarCity => q#Krasnoyarsk#,
+		},
+		'Asia/Kuala_Lumpur' => {
+			exemplarCity => q#Kuala Lumpur#,
+		},
+		'Asia/Kuching' => {
+			exemplarCity => q#Kuching#,
+		},
+		'Asia/Kuwait' => {
+			exemplarCity => q#Kuwait#,
+		},
+		'Asia/Macau' => {
+			exemplarCity => q#Macau#,
+		},
+		'Asia/Magadan' => {
+			exemplarCity => q#Magadan#,
+		},
+		'Asia/Makassar' => {
+			exemplarCity => q#Makassar#,
+		},
+		'Asia/Manila' => {
+			exemplarCity => q#Maynila#,
+		},
+		'Asia/Muscat' => {
+			exemplarCity => q#Muscat#,
+		},
+		'Asia/Nicosia' => {
+			exemplarCity => q#Nicosia#,
+		},
+		'Asia/Novokuznetsk' => {
+			exemplarCity => q#Novokuznetsk#,
+		},
+		'Asia/Novosibirsk' => {
+			exemplarCity => q#Novosibirsk#,
+		},
+		'Asia/Omsk' => {
+			exemplarCity => q#Omsk#,
+		},
+		'Asia/Oral' => {
+			exemplarCity => q#Oral#,
+		},
+		'Asia/Phnom_Penh' => {
+			exemplarCity => q#Phnom Penh#,
+		},
+		'Asia/Pontianak' => {
+			exemplarCity => q#Pontianak#,
+		},
+		'Asia/Pyongyang' => {
+			exemplarCity => q#Pyongyang#,
+		},
+		'Asia/Qatar' => {
+			exemplarCity => q#Qatar#,
+		},
+		'Asia/Qyzylorda' => {
+			exemplarCity => q#Qyzylorda#,
+		},
+		'Asia/Rangoon' => {
+			exemplarCity => q#Rangoon#,
+		},
+		'Asia/Riyadh' => {
+			exemplarCity => q#Riyadh#,
+		},
 		'Asia/Saigon' => {
-			exemplarCity => q#Ho Chi Minh City#,
+			exemplarCity => q#Lungsod ng Ho Chi Minh#,
+		},
+		'Asia/Sakhalin' => {
+			exemplarCity => q#Sakhalin#,
+		},
+		'Asia/Samarkand' => {
+			exemplarCity => q#Samarkand#,
+		},
+		'Asia/Seoul' => {
+			exemplarCity => q#Seoul#,
+		},
+		'Asia/Shanghai' => {
+			exemplarCity => q#Shanghai#,
+		},
+		'Asia/Singapore' => {
+			exemplarCity => q#Singapore#,
+		},
+		'Asia/Taipei' => {
+			exemplarCity => q#Taipei#,
+		},
+		'Asia/Tashkent' => {
+			exemplarCity => q#Tashkent#,
+		},
+		'Asia/Tbilisi' => {
+			exemplarCity => q#Tbilisi#,
+		},
+		'Asia/Tehran' => {
+			exemplarCity => q#Tehran#,
+		},
+		'Asia/Thimphu' => {
+			exemplarCity => q#Thimphu#,
+		},
+		'Asia/Tokyo' => {
+			exemplarCity => q#Tokyo#,
+		},
+		'Asia/Ulaanbaatar' => {
+			exemplarCity => q#Ulaanbaatar#,
+		},
+		'Asia/Urumqi' => {
+			exemplarCity => q#Urumqi#,
+		},
+		'Asia/Ust-Nera' => {
+			exemplarCity => q#Ust-Nera#,
+		},
+		'Asia/Vientiane' => {
+			exemplarCity => q#Vientiane#,
+		},
+		'Asia/Vladivostok' => {
+			exemplarCity => q#Vladivostok#,
+		},
+		'Asia/Yakutsk' => {
+			exemplarCity => q#Yakutsk#,
+		},
+		'Asia/Yekaterinburg' => {
+			exemplarCity => q#Yekaterinburg#,
+		},
+		'Asia/Yerevan' => {
+			exemplarCity => q#Yerevan#,
 		},
 		'Atlantic' => {
 			long => {
-				'daylight' => q(Atlantic Daylight Time),
-				'generic' => q(Atlantic Time),
-				'standard' => q(Atlantic Standard Time),
+				'daylight' => q(Daylight Time ng Atlantiko),
+				'generic' => q(Oras ng Atlantic),
+				'standard' => q(Standard Time ng Atlantiko),
 			},
+		},
+		'Atlantic/Azores' => {
+			exemplarCity => q#Azores#,
+		},
+		'Atlantic/Bermuda' => {
+			exemplarCity => q#Bermuda#,
+		},
+		'Atlantic/Canary' => {
+			exemplarCity => q#Canary#,
+		},
+		'Atlantic/Cape_Verde' => {
+			exemplarCity => q#Cape Verde#,
 		},
 		'Atlantic/Faeroe' => {
 			exemplarCity => q#Faroe#,
 		},
+		'Atlantic/Madeira' => {
+			exemplarCity => q#Madeira#,
+		},
+		'Atlantic/Reykjavik' => {
+			exemplarCity => q#Reykjavik#,
+		},
+		'Atlantic/South_Georgia' => {
+			exemplarCity => q#South Georgia#,
+		},
 		'Atlantic/St_Helena' => {
 			exemplarCity => q#St. Helena#,
 		},
+		'Atlantic/Stanley' => {
+			exemplarCity => q#Stanley#,
+		},
+		'Australia/Adelaide' => {
+			exemplarCity => q#Adelaide#,
+		},
+		'Australia/Brisbane' => {
+			exemplarCity => q#Brisbane#,
+		},
+		'Australia/Broken_Hill' => {
+			exemplarCity => q#Broken Hill#,
+		},
+		'Australia/Currie' => {
+			exemplarCity => q#Currie#,
+		},
+		'Australia/Darwin' => {
+			exemplarCity => q#Darwin#,
+		},
+		'Australia/Eucla' => {
+			exemplarCity => q#Eucla#,
+		},
+		'Australia/Hobart' => {
+			exemplarCity => q#Hobart#,
+		},
+		'Australia/Lindeman' => {
+			exemplarCity => q#Lindeman#,
+		},
+		'Australia/Lord_Howe' => {
+			exemplarCity => q#Lord Howe#,
+		},
+		'Australia/Melbourne' => {
+			exemplarCity => q#Melbourne#,
+		},
+		'Australia/Perth' => {
+			exemplarCity => q#Perth#,
+		},
+		'Australia/Sydney' => {
+			exemplarCity => q#Sydney#,
+		},
 		'Australia_Central' => {
 			long => {
-				'daylight' => q(Australian Central Daylight Time),
-				'generic' => q(Central Australia Time),
-				'standard' => q(Australian Central Standard Time),
+				'daylight' => q(Daylight Time ng Gitnang Australya),
+				'generic' => q(Oras ng Gitnang Australya),
+				'standard' => q(Standard Time ng Gitnang Australya),
 			},
 		},
 		'Australia_CentralWestern' => {
 			long => {
-				'daylight' => q(Australian Central Western Daylight Time),
-				'generic' => q(Australian Central Western Time),
-				'standard' => q(Australian Central Western Standard Time),
+				'daylight' => q(Daylight Time ng Gitnang Kanluran ng Australya),
+				'generic' => q(Oras ng Gitnang Kanluran ng Australya),
+				'standard' => q(Standard Time ng Gitnang Kanluran ng Australya),
 			},
 		},
 		'Australia_Eastern' => {
 			long => {
-				'daylight' => q(Australian Eastern Daylight Time),
-				'generic' => q(Eastern Australia Time),
-				'standard' => q(Australian Eastern Standard Time),
+				'daylight' => q(Daylight Time ng Silangang Australya),
+				'generic' => q(Oras ng Silangang Australya),
+				'standard' => q(Standard Time ng Silangang Australya),
 			},
 		},
 		'Australia_Western' => {
 			long => {
-				'daylight' => q(Australian Western Daylight Time),
-				'generic' => q(Western Australia Time),
-				'standard' => q(Australian Western Standard Time),
+				'daylight' => q(Daylight Time ng Kanlurang Australya),
+				'generic' => q(Oras ng Kanlurang Australya),
+				'standard' => q(Standard Time ng Kanlurang Australya),
 			},
 		},
 		'Azerbaijan' => {
 			long => {
-				'daylight' => q(Azerbaijan Summer Time),
-				'generic' => q(Azerbaijan Time),
-				'standard' => q(Azerbaijan Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Azerbaijan),
+				'generic' => q(Oras ng Azerbaijan),
+				'standard' => q(Standard Time ng Azerbaijan),
 			},
 		},
 		'Azores' => {
 			long => {
-				'daylight' => q(Azores Summer Time),
-				'generic' => q(Azores Time),
-				'standard' => q(Azores Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Azores),
+				'generic' => q(Oras ng Azores),
+				'standard' => q(Standard Time ng Azores),
 			},
 		},
 		'Bangladesh' => {
 			long => {
-				'daylight' => q(Bangladesh Summer Time),
-				'generic' => q(Bangladesh Time),
-				'standard' => q(Bangladesh Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Bangladesh),
+				'generic' => q(Oras ng Bangladesh),
+				'standard' => q(Standard Time ng Bangladesh),
 			},
 		},
 		'Bhutan' => {
 			long => {
-				'standard' => q(Bhutan Time),
+				'standard' => q(Oras ng Bhutan),
 			},
 		},
 		'Bolivia' => {
 			long => {
-				'standard' => q(Bolivia Time),
+				'standard' => q(Oras ng Bolivia),
 			},
 		},
 		'Brasilia' => {
 			long => {
-				'daylight' => q(Brasilia Summer Time),
-				'generic' => q(Brasilia Time),
-				'standard' => q(Brasilia Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Brasilia),
+				'generic' => q(Oras ng Brasilia),
+				'standard' => q(Standard Time ng Brasilia),
 			},
 		},
 		'Brunei' => {
 			long => {
-				'standard' => q(Brunei Darussalam Time),
+				'standard' => q(Oras ng Brunei Darussalam),
 			},
 		},
 		'Cape_Verde' => {
 			long => {
-				'daylight' => q(Cape Verde Summer Time),
-				'generic' => q(Cape Verde Time),
-				'standard' => q(Cape Verde Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Cape Verde),
+				'generic' => q(Oras ng Cape Verde),
+				'standard' => q(Standard Time ng Cape Verde),
 			},
 		},
 		'Chamorro' => {
 			long => {
-				'standard' => q(Chamorro Time),
+				'standard' => q(Oras ng Chamorro),
 			},
 		},
 		'Chatham' => {
 			long => {
-				'daylight' => q(Chatham Daylight Time),
-				'generic' => q(Chatham Time),
-				'standard' => q(Chatham Standard Time),
+				'daylight' => q(Daylight Time ng Chatham),
+				'generic' => q(Oras ng Chatham),
+				'standard' => q(Standard Time ng Chatham),
 			},
 		},
 		'Chile' => {
 			long => {
-				'daylight' => q(Chile Summer Time),
-				'generic' => q(Chile Time),
-				'standard' => q(Chile Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Chile),
+				'generic' => q(Oras ng Chile),
+				'standard' => q(Standard Time ng Chile),
 			},
 		},
 		'China' => {
 			long => {
-				'daylight' => q(China Daylight Time),
-				'generic' => q(China Time),
-				'standard' => q(China Standard Time),
+				'daylight' => q(Daylight Time ng China),
+				'generic' => q(Oras ng China),
+				'standard' => q(Standard Time ng China),
 			},
 		},
 		'Choibalsan' => {
 			long => {
-				'daylight' => q(Choibalsan Summer Time),
-				'generic' => q(Choibalsan Time),
-				'standard' => q(Choibalsan Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Choibalsan),
+				'generic' => q(Oras ng Choibalsan),
+				'standard' => q(Standard Time ng Choibalsan),
 			},
 		},
 		'Christmas' => {
 			long => {
-				'standard' => q(Christmas Island Time),
+				'standard' => q(Oras ng Christmas Island),
 			},
 		},
 		'Cocos' => {
 			long => {
-				'standard' => q(Cocos Islands Time),
+				'standard' => q(Oras ng Cocos Islands),
 			},
 		},
 		'Colombia' => {
 			long => {
-				'daylight' => q(Colombia Summer Time),
-				'generic' => q(Colombia Time),
-				'standard' => q(Colombia Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Colombia),
+				'generic' => q(Oras ng Colombia),
+				'standard' => q(Standard Time ng Colombia),
 			},
 		},
 		'Cook' => {
 			long => {
-				'daylight' => q(Cook Islands Half Summer Time),
-				'generic' => q(Cook Islands Time),
-				'standard' => q(Cook Islands Standard Time),
+				'daylight' => q(Oras sa ng Cook Islands sa Kalahit ng Tag-init),
+				'generic' => q(Oras ng Cook Islands),
+				'standard' => q(Standard Time ng Cook Islands),
 			},
 		},
 		'Cuba' => {
 			long => {
-				'daylight' => q(Cuba Daylight Time),
+				'daylight' => q(Daylight Time ng Cuba),
 				'generic' => q(Cuba Time),
-				'standard' => q(Cuba Standard Time),
+				'standard' => q(Standard Time ng Cuba),
 			},
 		},
 		'Davis' => {
 			long => {
-				'standard' => q(Davis Time),
+				'standard' => q(Oras ng Davis),
 			},
 		},
 		'DumontDUrville' => {
 			long => {
-				'standard' => q(Dumont-d’Urville Time),
+				'standard' => q(Oras ng Dumont-d’Urville),
 			},
 		},
 		'East_Timor' => {
 			long => {
-				'standard' => q(East Timor Time),
+				'standard' => q(Oras ng East Timor),
 			},
 		},
 		'Easter' => {
 			long => {
-				'daylight' => q(Easter Island Summer Time),
-				'generic' => q(Easter Island Time),
-				'standard' => q(Easter Island Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Easter Island),
+				'generic' => q(Oras ng Easter Island),
+				'standard' => q(Standard Time ng Easter Island),
 			},
 		},
 		'Ecuador' => {
 			long => {
-				'standard' => q(Ecuador Time),
+				'standard' => q(Oras ng Ecuador),
 			},
 		},
 		'Etc/Unknown' => {
-			exemplarCity => q#Di-tiyak na Lungsod#,
+			exemplarCity => q#Di-kilalang Lungsod#,
+		},
+		'Europe/Amsterdam' => {
+			exemplarCity => q#Amsterdam#,
+		},
+		'Europe/Andorra' => {
+			exemplarCity => q#Andorra#,
+		},
+		'Europe/Athens' => {
+			exemplarCity => q#Athens#,
+		},
+		'Europe/Belgrade' => {
+			exemplarCity => q#Belgrade#,
+		},
+		'Europe/Berlin' => {
+			exemplarCity => q#Berlin#,
+		},
+		'Europe/Bratislava' => {
+			exemplarCity => q#Bratislava#,
+		},
+		'Europe/Brussels' => {
+			exemplarCity => q#Brussels#,
+		},
+		'Europe/Bucharest' => {
+			exemplarCity => q#Bucharest#,
+		},
+		'Europe/Budapest' => {
+			exemplarCity => q#Budapest#,
+		},
+		'Europe/Busingen' => {
+			exemplarCity => q#Busingen#,
+		},
+		'Europe/Chisinau' => {
+			exemplarCity => q#Chisinau#,
+		},
+		'Europe/Copenhagen' => {
+			exemplarCity => q#Copenhagen#,
 		},
 		'Europe/Dublin' => {
+			exemplarCity => q#Dublin#,
 			long => {
-				'daylight' => q(Irish Summer Time),
+				'daylight' => q(Standard Time ng Ireland),
 			},
 		},
+		'Europe/Gibraltar' => {
+			exemplarCity => q#Gibraltar#,
+		},
+		'Europe/Guernsey' => {
+			exemplarCity => q#Guernsey#,
+		},
+		'Europe/Helsinki' => {
+			exemplarCity => q#Helsinki#,
+		},
+		'Europe/Isle_of_Man' => {
+			exemplarCity => q#Isle of Man#,
+		},
+		'Europe/Istanbul' => {
+			exemplarCity => q#Istanbul#,
+		},
+		'Europe/Jersey' => {
+			exemplarCity => q#Jersey#,
+		},
+		'Europe/Kaliningrad' => {
+			exemplarCity => q#Kaliningrad#,
+		},
+		'Europe/Kiev' => {
+			exemplarCity => q#Kiev#,
+		},
+		'Europe/Lisbon' => {
+			exemplarCity => q#Lisbon#,
+		},
+		'Europe/Ljubljana' => {
+			exemplarCity => q#Ljubljana#,
+		},
 		'Europe/London' => {
+			exemplarCity => q#London#,
 			long => {
-				'daylight' => q(British Summer Time),
+				'daylight' => q(Oras sa Tag-init ng Britain),
 			},
+		},
+		'Europe/Luxembourg' => {
+			exemplarCity => q#Luxembourg#,
+		},
+		'Europe/Madrid' => {
+			exemplarCity => q#Madrid#,
+		},
+		'Europe/Malta' => {
+			exemplarCity => q#Malta#,
+		},
+		'Europe/Mariehamn' => {
+			exemplarCity => q#Mariehamn#,
+		},
+		'Europe/Minsk' => {
+			exemplarCity => q#Minsk#,
+		},
+		'Europe/Monaco' => {
+			exemplarCity => q#Monaco#,
+		},
+		'Europe/Moscow' => {
+			exemplarCity => q#Moscow#,
+		},
+		'Europe/Oslo' => {
+			exemplarCity => q#Oslo#,
+		},
+		'Europe/Paris' => {
+			exemplarCity => q#Paris#,
+		},
+		'Europe/Podgorica' => {
+			exemplarCity => q#Podgorica#,
+		},
+		'Europe/Prague' => {
+			exemplarCity => q#Prague#,
+		},
+		'Europe/Riga' => {
+			exemplarCity => q#Riga#,
+		},
+		'Europe/Rome' => {
+			exemplarCity => q#Rome#,
+		},
+		'Europe/Samara' => {
+			exemplarCity => q#Samara#,
+		},
+		'Europe/San_Marino' => {
+			exemplarCity => q#San Marino#,
+		},
+		'Europe/Sarajevo' => {
+			exemplarCity => q#Sarajevo#,
+		},
+		'Europe/Simferopol' => {
+			exemplarCity => q#Simferopol#,
+		},
+		'Europe/Skopje' => {
+			exemplarCity => q#Skopje#,
+		},
+		'Europe/Sofia' => {
+			exemplarCity => q#Sofia#,
+		},
+		'Europe/Stockholm' => {
+			exemplarCity => q#Stockholm#,
+		},
+		'Europe/Tallinn' => {
+			exemplarCity => q#Tallinn#,
+		},
+		'Europe/Tirane' => {
+			exemplarCity => q#Tirane#,
+		},
+		'Europe/Uzhgorod' => {
+			exemplarCity => q#Uzhgorod#,
+		},
+		'Europe/Vaduz' => {
+			exemplarCity => q#Vaduz#,
+		},
+		'Europe/Vatican' => {
+			exemplarCity => q#Vatican#,
+		},
+		'Europe/Vienna' => {
+			exemplarCity => q#Vienna#,
+		},
+		'Europe/Vilnius' => {
+			exemplarCity => q#Vilnius#,
+		},
+		'Europe/Volgograd' => {
+			exemplarCity => q#Volgograd#,
+		},
+		'Europe/Warsaw' => {
+			exemplarCity => q#Warsaw#,
+		},
+		'Europe/Zagreb' => {
+			exemplarCity => q#Zagreb#,
+		},
+		'Europe/Zaporozhye' => {
+			exemplarCity => q#Zaporozhye#,
+		},
+		'Europe/Zurich' => {
+			exemplarCity => q#Zurich#,
 		},
 		'Europe_Central' => {
 			long => {
-				'daylight' => q(Central European Summer Time),
-				'generic' => q(Central European Time),
-				'standard' => q(Central European Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Gitnang Europe),
+				'generic' => q(Oras ng Gitnang Europe),
+				'standard' => q(Standard Time ng Gitnang Europe),
 			},
 		},
 		'Europe_Eastern' => {
 			long => {
-				'daylight' => q(Eastern European Summer Time),
-				'generic' => q(Eastern European Time),
-				'standard' => q(Eastern European Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Silangang Europe),
+				'generic' => q(Oras ng Silangang Europe),
+				'standard' => q(Standard Time ng Silangang Europe),
+			},
+		},
+		'Europe_Further_Eastern' => {
+			long => {
+				'standard' => q(Further-eastern Europe Time),
 			},
 		},
 		'Europe_Western' => {
 			long => {
-				'daylight' => q(Western European Summer Time),
-				'generic' => q(Western European Time),
-				'standard' => q(Western European Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Kanlurang Europe),
+				'generic' => q(Oras ng Kanlurang Europe),
+				'standard' => q(Standard Time ng Kanlurang Europe),
 			},
 		},
 		'Falkland' => {
 			long => {
-				'daylight' => q(Falkland Islands Summer Time),
-				'generic' => q(Falkland Islands Time),
-				'standard' => q(Falkland Islands Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Falkland Islands),
+				'generic' => q(Oras ng Falkland Islands),
+				'standard' => q(Standard Time ng Falkland Islands),
 			},
 		},
 		'Fiji' => {
 			long => {
-				'daylight' => q(Fiji Summer Time),
-				'generic' => q(Fiji Time),
-				'standard' => q(Fiji Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Fiji),
+				'generic' => q(Oras ng Fiji),
+				'standard' => q(Standard Time ng Fiji),
 			},
 		},
 		'French_Guiana' => {
 			long => {
-				'standard' => q(French Guiana Time),
+				'standard' => q(Oras ng French Guiana),
 			},
 		},
 		'French_Southern' => {
 			long => {
-				'standard' => q(French Southern and Antarctic Time),
+				'standard' => q(Oras sa Katimugan ng France at Antartiko),
 			},
 		},
 		'GMT' => {
@@ -4259,130 +6259,160 @@ has 'time_zone_names' => (
 		},
 		'Galapagos' => {
 			long => {
-				'standard' => q(Galapagos Time),
+				'standard' => q(Oras ng Galapagos),
 			},
 		},
 		'Gambier' => {
 			long => {
-				'standard' => q(Gambier Time),
+				'standard' => q(Oras ng Gambier),
 			},
 		},
 		'Georgia' => {
 			long => {
-				'daylight' => q(Georgia Summer Time),
-				'generic' => q(Georgia Time),
-				'standard' => q(Georgia Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Georgia),
+				'generic' => q(Oras ng Georgia),
+				'standard' => q(Standard Time ng Georgia),
 			},
 		},
 		'Gilbert_Islands' => {
 			long => {
-				'standard' => q(Gilbert Islands Time),
+				'standard' => q(Oras ng Gilbert Islands),
 			},
 		},
 		'Greenland_Eastern' => {
 			long => {
-				'daylight' => q(East Greenland Summer Time),
-				'generic' => q(East Greenland Time),
-				'standard' => q(East Greenland Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Silangang Greenland),
+				'generic' => q(Oras ng Silangang Greenland),
+				'standard' => q(Standard Time ng Silangang Greenland),
 			},
 		},
 		'Greenland_Western' => {
 			long => {
-				'daylight' => q(West Greenland Summer Time),
-				'generic' => q(West Greenland Time),
-				'standard' => q(West Greenland Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Kanlurang Greenland),
+				'generic' => q(Oras ng Kanlurang Greenland),
+				'standard' => q(Standard Time ng Kanlurang Greenland),
 			},
 		},
 		'Gulf' => {
 			long => {
-				'standard' => q(Gulf Time),
+				'standard' => q(Oras ng Gulf),
 			},
 		},
 		'Guyana' => {
 			long => {
-				'standard' => q(Guyana Time),
+				'standard' => q(Oras ng Guyana),
 			},
 		},
 		'Hawaii_Aleutian' => {
 			long => {
-				'daylight' => q(Hawaii-Aleutian Daylight Time),
-				'generic' => q(Hawaii-Aleutian Time),
-				'standard' => q(Hawaii-Aleutian Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Hawaii-Aleutian),
+				'generic' => q(Oras ng Hawaii-Aleutian),
+				'standard' => q(Standard Time ng Hawaii-Aleutian),
 			},
 		},
 		'Hong_Kong' => {
 			long => {
-				'daylight' => q(Hong Kong Summer Time),
-				'generic' => q(Hong Kong Time),
-				'standard' => q(Hong Kong Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Hong Kong),
+				'generic' => q(Oras ng Hong Kong),
+				'standard' => q(Standard Time ng Hong Kong),
 			},
 		},
 		'Hovd' => {
 			long => {
-				'daylight' => q(Hovd Summer Time),
-				'generic' => q(Hovd Time),
-				'standard' => q(Hovd Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Hovd),
+				'generic' => q(Time ng Hovd),
+				'standard' => q(Standard TIme ng Hovd),
 			},
 		},
 		'India' => {
 			long => {
-				'standard' => q(India Time),
+				'standard' => q(Standard Time ng India),
 			},
+		},
+		'Indian/Antananarivo' => {
+			exemplarCity => q#Antananarivo#,
+		},
+		'Indian/Chagos' => {
+			exemplarCity => q#Chagos#,
+		},
+		'Indian/Christmas' => {
+			exemplarCity => q#Christmas#,
+		},
+		'Indian/Cocos' => {
+			exemplarCity => q#Cocos#,
+		},
+		'Indian/Comoro' => {
+			exemplarCity => q#Comoro#,
+		},
+		'Indian/Kerguelen' => {
+			exemplarCity => q#Kerguelen#,
+		},
+		'Indian/Mahe' => {
+			exemplarCity => q#Mahe#,
+		},
+		'Indian/Maldives' => {
+			exemplarCity => q#Maldives#,
+		},
+		'Indian/Mauritius' => {
+			exemplarCity => q#Mauritius#,
+		},
+		'Indian/Mayotte' => {
+			exemplarCity => q#Mayotte#,
 		},
 		'Indian/Reunion' => {
 			exemplarCity => q#Réunion#,
 		},
 		'Indian_Ocean' => {
 			long => {
-				'standard' => q(Indian Ocean Time),
+				'standard' => q(Oras ng Indian Ocean),
 			},
 		},
 		'Indochina' => {
 			long => {
-				'standard' => q(Indochina Time),
+				'standard' => q(Oras ng Indochina),
 			},
 		},
 		'Indonesia_Central' => {
 			long => {
-				'standard' => q(Central Indonesia Time),
+				'standard' => q(Oras ng Gitnang Indonesiya),
 			},
 		},
 		'Indonesia_Eastern' => {
 			long => {
-				'standard' => q(Eastern Indonesia Time),
+				'standard' => q(Oras ng Silangang Indonesiya),
 			},
 		},
 		'Indonesia_Western' => {
 			long => {
-				'standard' => q(Western Indonesia Time),
+				'standard' => q(Oras ng Kanlurang Indonesiya),
 			},
 		},
 		'Iran' => {
 			long => {
-				'daylight' => q(Iran Daylight Time),
-				'generic' => q(Iran Time),
-				'standard' => q(Iran Standard Time),
+				'daylight' => q(Daylight Time ng Iran),
+				'generic' => q(Oras ng Iran),
+				'standard' => q(Standard Time ng Iran),
 			},
 		},
 		'Irkutsk' => {
 			long => {
-				'daylight' => q(Irkutsk Summer Time),
-				'generic' => q(Irkutsk Time),
-				'standard' => q(Irkutsk Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Irkutsk),
+				'generic' => q(Oras ng Irkutsk),
+				'standard' => q(Standard Time ng Irkutsk),
 			},
 		},
 		'Israel' => {
 			long => {
-				'daylight' => q(Israel Daylight Time),
-				'generic' => q(Israel Time),
-				'standard' => q(Israel Standard Time),
+				'daylight' => q(Daylight Time ng Israel),
+				'generic' => q(Oras ng Israel),
+				'standard' => q(Standard Time ng Israel),
 			},
 		},
 		'Japan' => {
 			long => {
-				'daylight' => q(Japan Daylight Time),
-				'generic' => q(Japan Time),
-				'standard' => q(Japan Standard Time),
+				'daylight' => q(Daylight Time ng Japan),
+				'generic' => q(Oras ng Japan),
+				'standard' => q(Standard Time ng Japan),
 			},
 		},
 		'Kamchatka' => {
@@ -4394,256 +6424,378 @@ has 'time_zone_names' => (
 		},
 		'Kazakhstan_Eastern' => {
 			long => {
-				'standard' => q(East Kazakhstan Time),
+				'standard' => q(Oras ng Silangang Kazakhstan),
 			},
 		},
 		'Kazakhstan_Western' => {
 			long => {
-				'standard' => q(West Kazakhstan Time),
+				'standard' => q(Oras ng Kanlurang Kazakhstan),
 			},
 		},
 		'Korea' => {
 			long => {
-				'daylight' => q(Korean Daylight Time),
-				'generic' => q(Korean Time),
-				'standard' => q(Korean Standard Time),
+				'daylight' => q(Daylight Time ng Korea),
+				'generic' => q(Oras ng Korea),
+				'standard' => q(Standard Time ng Korea),
 			},
 		},
 		'Kosrae' => {
 			long => {
-				'standard' => q(Kosrae Time),
+				'standard' => q(Oras ng Kosrae),
 			},
 		},
 		'Krasnoyarsk' => {
 			long => {
-				'daylight' => q(Krasnoyarsk Summer Time),
-				'generic' => q(Krasnoyarsk Time),
-				'standard' => q(Krasnoyarsk Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Krasnoyarsk),
+				'generic' => q(Oras ng Krasnoyarsk),
+				'standard' => q(Standard Time ng Krasnoyarsk),
 			},
 		},
 		'Kyrgystan' => {
 			long => {
-				'standard' => q(Kyrgystan Time),
+				'standard' => q(Oras ng Kyrgystan),
 			},
 		},
 		'Line_Islands' => {
 			long => {
-				'standard' => q(Line Islands Time),
+				'standard' => q(Oras ng Line Islands),
 			},
 		},
 		'Lord_Howe' => {
 			long => {
-				'daylight' => q(Lord Howe Daylight Time),
-				'generic' => q(Lord Howe Time),
-				'standard' => q(Lord Howe Standard Time),
+				'daylight' => q(Daylight Time ng Lord Howe),
+				'generic' => q(Oras ng Lord Howe),
+				'standard' => q(Standard Time ng Lord Howe),
 			},
 		},
 		'Macquarie' => {
 			long => {
-				'standard' => q(Macquarie Island Time),
+				'standard' => q(Oras ng Macquarie Island),
 			},
 		},
 		'Magadan' => {
 			long => {
-				'daylight' => q(Magadan Summer Time),
-				'generic' => q(Magadan Time),
-				'standard' => q(Magadan Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Magadan),
+				'generic' => q(Oras ng Magadan),
+				'standard' => q(Standard Time ng Magadan),
 			},
 		},
 		'Malaysia' => {
 			long => {
-				'standard' => q(Malaysia Time),
+				'standard' => q(Oras ng Malaysia),
 			},
 		},
 		'Maldives' => {
 			long => {
-				'standard' => q(Maldives Time),
+				'standard' => q(Oras ng Maldives),
 			},
 		},
 		'Marquesas' => {
 			long => {
-				'standard' => q(Marquesas Time),
+				'standard' => q(Oras ng Marquesas),
 			},
 		},
 		'Marshall_Islands' => {
 			long => {
-				'standard' => q(Marshall Islands Time),
+				'standard' => q(Oras ng Marshall Islands),
 			},
 		},
 		'Mauritius' => {
 			long => {
-				'daylight' => q(Mauritius Summer Time),
-				'generic' => q(Mauritius Time),
-				'standard' => q(Mauritius Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Mauritius),
+				'generic' => q(Oras ng Mauritius),
+				'standard' => q(Standard Time ng Mauritius),
 			},
 		},
 		'Mawson' => {
 			long => {
-				'standard' => q(Mawson Time),
+				'standard' => q(Oras ng Mawson),
+			},
+		},
+		'Mexico_Northwest' => {
+			long => {
+				'daylight' => q(Daylight Time ng Hilagang-kanlurang Mexico),
+				'generic' => q(Oras ng Hilagang-kanlurang Mexico),
+				'standard' => q(Standard Time ng Hilagang-kanlurang Mexico),
+			},
+		},
+		'Mexico_Pacific' => {
+			long => {
+				'daylight' => q(Pacific Daylight Time ng Mexico),
+				'generic' => q(Pacific Time ng Mexico),
+				'standard' => q(Pacific Standard Time ng Mexico),
 			},
 		},
 		'Mongolia' => {
 			long => {
-				'daylight' => q(Ulan Bator Summer Time),
-				'generic' => q(Ulan Bator Time),
-				'standard' => q(Ulan Bator Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Ulan Bator),
+				'generic' => q(Oras ng Ulan Bator),
+				'standard' => q(Standard Time ng Ulan Bator),
 			},
 		},
 		'Moscow' => {
 			long => {
-				'daylight' => q(Moscow Summer Time),
-				'generic' => q(Moscow Time),
-				'standard' => q(Moscow Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Moscow),
+				'generic' => q(Oras ng Moscow),
+				'standard' => q(Standard Time ng Moscow),
 			},
 		},
 		'Myanmar' => {
 			long => {
-				'standard' => q(Myanmar Time),
+				'standard' => q(Oras ng Myanmar),
 			},
 		},
 		'Nauru' => {
 			long => {
-				'standard' => q(Nauru Time),
+				'standard' => q(Oras ng Nauru),
 			},
 		},
 		'Nepal' => {
 			long => {
-				'standard' => q(Nepal Time),
+				'standard' => q(Oras ng Nepal),
 			},
 		},
 		'New_Caledonia' => {
 			long => {
-				'daylight' => q(New Caledonia Summer Time),
-				'generic' => q(New Caledonia Time),
-				'standard' => q(New Caledonia Standard Time),
+				'daylight' => q(Oras sa Tag-init ng New Caledonia),
+				'generic' => q(Oras ng New Caledonia),
+				'standard' => q(Standard Time ng New Caledonia),
 			},
 		},
 		'New_Zealand' => {
 			long => {
-				'daylight' => q(New Zealand Daylight Time),
-				'generic' => q(New Zealand Time),
-				'standard' => q(New Zealand Standard Time),
+				'daylight' => q(Daylight Time ng New Zealand),
+				'generic' => q(Oras ng New Zealand),
+				'standard' => q(Standard Time ng New Zealand),
 			},
 		},
 		'Newfoundland' => {
 			long => {
-				'daylight' => q(Newfoundland Daylight Time),
-				'generic' => q(Newfoundland Time),
-				'standard' => q(Newfoundland Standard Time),
+				'daylight' => q(Daylight Time ng Newfoundland),
+				'generic' => q(Oras ng Newfoundland),
+				'standard' => q(Standard Time ng Newfoundland),
 			},
 		},
 		'Niue' => {
 			long => {
-				'standard' => q(Niue Time),
+				'standard' => q(Oras ng Niue),
 			},
 		},
 		'Norfolk' => {
 			long => {
-				'standard' => q(Norfolk Island Time),
+				'standard' => q(Oras ng Norfolk Island),
 			},
 		},
 		'Noronha' => {
 			long => {
-				'daylight' => q(Fernando de Noronha Summer Time),
-				'generic' => q(Fernando de Noronha Time),
-				'standard' => q(Fernando de Noronha Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Fernando de Noronha),
+				'generic' => q(Oras ng Fernando de Noronha),
+				'standard' => q(Standard Time ng Fernando de Noronha),
 			},
 		},
 		'Novosibirsk' => {
 			long => {
-				'daylight' => q(Novosibirsk Summer Time),
-				'generic' => q(Novosibirsk Time),
-				'standard' => q(Novosibirsk Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Novosibirsk),
+				'generic' => q(Oras ng Novosibirsk),
+				'standard' => q(Standard Time ng Novosibirsk),
 			},
 		},
 		'Omsk' => {
 			long => {
-				'daylight' => q(Omsk Summer Time),
-				'generic' => q(Omsk Time),
-				'standard' => q(Omsk Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Omsk),
+				'generic' => q(Oras ng Omsk),
+				'standard' => q(Standard Time ng Omsk),
 			},
+		},
+		'Pacific/Apia' => {
+			exemplarCity => q#Apia#,
+		},
+		'Pacific/Auckland' => {
+			exemplarCity => q#Auckland#,
+		},
+		'Pacific/Chatham' => {
+			exemplarCity => q#Chatham#,
+		},
+		'Pacific/Easter' => {
+			exemplarCity => q#Easter#,
+		},
+		'Pacific/Efate' => {
+			exemplarCity => q#Efate#,
+		},
+		'Pacific/Enderbury' => {
+			exemplarCity => q#Enderbury#,
+		},
+		'Pacific/Fakaofo' => {
+			exemplarCity => q#Fakaofo#,
+		},
+		'Pacific/Fiji' => {
+			exemplarCity => q#Fiji#,
+		},
+		'Pacific/Funafuti' => {
+			exemplarCity => q#Funafuti#,
+		},
+		'Pacific/Galapagos' => {
+			exemplarCity => q#Galapagos#,
+		},
+		'Pacific/Gambier' => {
+			exemplarCity => q#Gambier#,
+		},
+		'Pacific/Guadalcanal' => {
+			exemplarCity => q#Guadalcanal#,
+		},
+		'Pacific/Guam' => {
+			exemplarCity => q#Guam#,
+		},
+		'Pacific/Honolulu' => {
+			exemplarCity => q#Honolulu#,
+		},
+		'Pacific/Johnston' => {
+			exemplarCity => q#Johnston#,
+		},
+		'Pacific/Kiritimati' => {
+			exemplarCity => q#Kiritimati#,
+		},
+		'Pacific/Kosrae' => {
+			exemplarCity => q#Kosrae#,
+		},
+		'Pacific/Kwajalein' => {
+			exemplarCity => q#Kwajalein#,
+		},
+		'Pacific/Majuro' => {
+			exemplarCity => q#Majuro#,
+		},
+		'Pacific/Marquesas' => {
+			exemplarCity => q#Marquesas#,
+		},
+		'Pacific/Midway' => {
+			exemplarCity => q#Midway#,
+		},
+		'Pacific/Nauru' => {
+			exemplarCity => q#Nauru#,
+		},
+		'Pacific/Niue' => {
+			exemplarCity => q#Niue#,
+		},
+		'Pacific/Norfolk' => {
+			exemplarCity => q#Norfolk#,
+		},
+		'Pacific/Noumea' => {
+			exemplarCity => q#Noumea#,
+		},
+		'Pacific/Pago_Pago' => {
+			exemplarCity => q#Pago Pago#,
+		},
+		'Pacific/Palau' => {
+			exemplarCity => q#Palau#,
+		},
+		'Pacific/Pitcairn' => {
+			exemplarCity => q#Pitcairn#,
 		},
 		'Pacific/Ponape' => {
 			exemplarCity => q#Pohnpei#,
 		},
+		'Pacific/Port_Moresby' => {
+			exemplarCity => q#Port Moresby#,
+		},
+		'Pacific/Rarotonga' => {
+			exemplarCity => q#Rarotonga#,
+		},
+		'Pacific/Saipan' => {
+			exemplarCity => q#Saipan#,
+		},
+		'Pacific/Tahiti' => {
+			exemplarCity => q#Tahiti#,
+		},
+		'Pacific/Tarawa' => {
+			exemplarCity => q#Tarawa#,
+		},
+		'Pacific/Tongatapu' => {
+			exemplarCity => q#Tongatapu#,
+		},
 		'Pacific/Truk' => {
 			exemplarCity => q#Chuuk#,
 		},
+		'Pacific/Wake' => {
+			exemplarCity => q#Wake#,
+		},
+		'Pacific/Wallis' => {
+			exemplarCity => q#Wallis#,
+		},
 		'Pakistan' => {
 			long => {
-				'daylight' => q(Pakistan Summer Time),
-				'generic' => q(Pakistan Time),
-				'standard' => q(Pakistan Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Pakistan),
+				'generic' => q(Oras ng Pakistan),
+				'standard' => q(Standard Time ng Pakistan),
 			},
 		},
 		'Palau' => {
 			long => {
-				'standard' => q(Palau Time),
+				'standard' => q(Oras ng Palau),
 			},
 		},
 		'Papua_New_Guinea' => {
 			long => {
-				'standard' => q(Papua New Guinea Time),
+				'standard' => q(Oras ng Papua New Guinea),
 			},
 		},
 		'Paraguay' => {
 			long => {
-				'daylight' => q(Paraguay Summer Time),
-				'generic' => q(Paraguay Time),
-				'standard' => q(Paraguay Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Paraguay),
+				'generic' => q(Oras ng Paraguay),
+				'standard' => q(Standard Time ng Paraguay),
 			},
 		},
 		'Peru' => {
 			long => {
-				'daylight' => q(Peru Summer Time),
-				'generic' => q(Peru Time),
-				'standard' => q(Peru Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Peru),
+				'generic' => q(Oras ng Peru),
+				'standard' => q(Standard Time ng Peru),
 			},
 		},
 		'Philippines' => {
 			long => {
-				'daylight' => q(Philippine Summer Time),
-				'generic' => q(Philippine Time),
-				'standard' => q(Philippine Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Pilipinas),
+				'generic' => q(Oras ng Pilipinas),
+				'standard' => q(Standard Time ng Pilipinas),
 			},
 		},
 		'Phoenix_Islands' => {
 			long => {
-				'standard' => q(Phoenix Islands Time),
+				'standard' => q(Oras ng Phoenix Islands),
 			},
 		},
 		'Pierre_Miquelon' => {
 			long => {
-				'daylight' => q(Saint Pierre and Miquelon Daylight Time),
-				'generic' => q(Saint Pierre and Miquelon Time),
-				'standard' => q(Saint Pierre and Miquelon Standard Time),
+				'daylight' => q(Daylight Time ng Saint Pierre and Miquelon),
+				'generic' => q(Oras ng Saint Pierre and Miquelon),
+				'standard' => q(Standard Time ng Saint Pierre and Miquelon),
 			},
 		},
 		'Pitcairn' => {
 			long => {
-				'standard' => q(Pitcairn Time),
+				'standard' => q(Oras ng Pitcairn),
 			},
 		},
 		'Ponape' => {
 			long => {
-				'standard' => q(Ponape Time),
+				'standard' => q(Oras ng Ponape),
 			},
 		},
 		'Reunion' => {
 			long => {
-				'standard' => q(Reunion Time),
+				'standard' => q(Oras sa Reunion),
 			},
 		},
 		'Rothera' => {
 			long => {
-				'standard' => q(Rothera Time),
+				'standard' => q(Oras ng Rothera),
 			},
 		},
 		'Sakhalin' => {
 			long => {
-				'daylight' => q(Sakhalin Summer Time),
-				'generic' => q(Sakhalin Time),
-				'standard' => q(Sakhalin Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Sakhalin),
+				'generic' => q(Oras ng Sakhalin),
+				'standard' => q(Standard Time ng Sakhalin),
 			},
 		},
 		'Samara' => {
@@ -4655,154 +6807,154 @@ has 'time_zone_names' => (
 		},
 		'Samoa' => {
 			long => {
-				'daylight' => q(Samoa Daylight Time),
-				'generic' => q(Samoa Time),
-				'standard' => q(Samoa Standard Time),
+				'daylight' => q(Daylight Time ng Samoa),
+				'generic' => q(Oras ng Samoa),
+				'standard' => q(Standard Time ng Samoa),
 			},
 		},
 		'Seychelles' => {
 			long => {
-				'standard' => q(Seychelles Time),
+				'standard' => q(Oras ng Seychelles),
 			},
 		},
 		'Singapore' => {
 			long => {
-				'standard' => q(Singapore Time),
+				'standard' => q(Standard Time ng Singapore),
 			},
 		},
 		'Solomon' => {
 			long => {
-				'standard' => q(Solomon Islands Time),
+				'standard' => q(Oras ng Solomon Islands),
 			},
 		},
 		'South_Georgia' => {
 			long => {
-				'standard' => q(South Georgia Time),
+				'standard' => q(Oras ng South Georgia),
 			},
 		},
 		'Suriname' => {
 			long => {
-				'standard' => q(Suriname Time),
+				'standard' => q(Oras ng Suriname),
 			},
 		},
 		'Syowa' => {
 			long => {
-				'standard' => q(Syowa Time),
+				'standard' => q(Oras ng Syowa),
 			},
 		},
 		'Tahiti' => {
 			long => {
-				'standard' => q(Tahiti Time),
+				'standard' => q(Oras ng Tahiti),
 			},
 		},
 		'Taipei' => {
 			long => {
-				'daylight' => q(Taipei Daylight Time),
-				'generic' => q(Taipei Time),
-				'standard' => q(Taipei Standard Time),
+				'daylight' => q(Daylight Time ng Taipei),
+				'generic' => q(Oras ng Taipei),
+				'standard' => q(Standard Time ng Taipei),
 			},
 		},
 		'Tajikistan' => {
 			long => {
-				'standard' => q(Tajikistan Time),
+				'standard' => q(Oras ng Tajikistan),
 			},
 		},
 		'Tokelau' => {
 			long => {
-				'standard' => q(Tokelau Time),
+				'standard' => q(Oras ng Tokelau),
 			},
 		},
 		'Tonga' => {
 			long => {
-				'daylight' => q(Tonga Summer Time),
-				'generic' => q(Tonga Time),
-				'standard' => q(Tonga Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Tonga),
+				'generic' => q(Oras ng Tonga),
+				'standard' => q(Standard Time ng Tonga),
 			},
 		},
 		'Truk' => {
 			long => {
-				'standard' => q(Chuuk Time),
+				'standard' => q(Oras ng Chuuk),
 			},
 		},
 		'Turkmenistan' => {
 			long => {
-				'daylight' => q(Turkmenistan Summer Time),
-				'generic' => q(Turkmenistan Time),
-				'standard' => q(Turkmenistan Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Turkmenistan),
+				'generic' => q(Oras ng Turkmenistan),
+				'standard' => q(Standard Time ng Turkmenistan),
 			},
 		},
 		'Tuvalu' => {
 			long => {
-				'standard' => q(Tuvalu Time),
+				'standard' => q(Oras ng Tuvalu),
 			},
 		},
 		'Uruguay' => {
 			long => {
-				'daylight' => q(Uruguay Summer Time),
-				'generic' => q(Uruguay Time),
-				'standard' => q(Uruguay Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Uruguay),
+				'generic' => q(Oras ng Uruguay),
+				'standard' => q(Standard Time ng Uruguay),
 			},
 		},
 		'Uzbekistan' => {
 			long => {
-				'daylight' => q(Uzbekistan Summer Time),
-				'generic' => q(Uzbekistan Time),
-				'standard' => q(Uzbekistan Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Uzbekistan),
+				'generic' => q(Oras ng Uzbekistan),
+				'standard' => q(Standard Time ng Uzbekistan),
 			},
 		},
 		'Vanuatu' => {
 			long => {
-				'daylight' => q(Vanuatu Summer Time),
-				'generic' => q(Vanuatu Time),
-				'standard' => q(Vanuatu Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Vanuatu),
+				'generic' => q(Oras ng Vanuatu),
+				'standard' => q(Standard Time ng Vanuatu),
 			},
 		},
 		'Venezuela' => {
 			long => {
-				'standard' => q(Venezuela Time),
+				'standard' => q(Oras ng Venezuela),
 			},
 		},
 		'Vladivostok' => {
 			long => {
-				'daylight' => q(Vladivostok Summer Time),
-				'generic' => q(Vladivostok Time),
-				'standard' => q(Vladivostok Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Vladivostok),
+				'generic' => q(Oras ng Vladivostok),
+				'standard' => q(Standard Time ng Vladivostok),
 			},
 		},
 		'Volgograd' => {
 			long => {
-				'daylight' => q(Volgograd Summer Time),
-				'generic' => q(Volgograd Time),
-				'standard' => q(Volgograd Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Volgograd),
+				'generic' => q(Oras ng Volgograd),
+				'standard' => q(Standard Time ng Volgograd),
 			},
 		},
 		'Vostok' => {
 			long => {
-				'standard' => q(Vostok Time),
+				'standard' => q(Oras ng Vostok),
 			},
 		},
 		'Wake' => {
 			long => {
-				'standard' => q(Wake Island Time),
+				'standard' => q(Oras ng Wake Island),
 			},
 		},
 		'Wallis' => {
 			long => {
-				'standard' => q(Wallis and Futuna Time),
+				'standard' => q(Oras ng Wallis and Futuna),
 			},
 		},
 		'Yakutsk' => {
 			long => {
-				'daylight' => q(Yakutsk Summer Time),
-				'generic' => q(Yakutsk Time),
-				'standard' => q(Yakutsk Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Yakutsk),
+				'generic' => q(Oras ng Yakutsk),
+				'standard' => q(Standard Time ng Yakutsk),
 			},
 		},
 		'Yekaterinburg' => {
 			long => {
-				'daylight' => q(Yekaterinburg Summer Time),
-				'generic' => q(Yekaterinburg Time),
-				'standard' => q(Yekaterinburg Standard Time),
+				'daylight' => q(Oras sa Tag-init ng Yekaterinburg),
+				'generic' => q(Oras ng Yekaterinburg),
+				'standard' => q(Standard Time ng Yekaterinburg),
 			},
 		},
 	 } }

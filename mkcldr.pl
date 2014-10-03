@@ -17,6 +17,7 @@ use DateTime;
 use XML::Parser;
 use Text::ParseWords;
 use List::MoreUtils qw( any );
+use Unicode::UCD qw(charinfo);
 no warnings "experimental::regex_sets";
 
 my $start_time = time();
@@ -27,8 +28,8 @@ $verbose = 1 if grep /-v/, @ARGV;
 
 use version;
 my $API_VERSION = 0;
-my $CLDR_VERSION = 25;
-my $REVISION = 4;
+my $CLDR_VERSION = 26;
+my $REVISION = 0;
 our $VERSION = version->parse(join '.', $API_VERSION, $CLDR_VERSION, $REVISION);
 my $CLDR_PATH = $CLDR_VERSION;
 
@@ -124,6 +125,18 @@ open my $file, '>', File::Spec->catfile($lib_directory, 'NumberFormatter.pm');
 write_out_number_formatter($file);
 close $file;
 
+# Collator
+
+=for comment
+
+open my $file, '>', File::Spec->catfile($lib_directory, 'Collator.pm');
+write_out_collator($file);
+close $file;
+
+=end
+
+=cut
+
 # Likely sub-tags
 open $file, '>', File::Spec->catfile($lib_directory, 'LikelySubtags.pm');
 
@@ -211,7 +224,6 @@ say "Processing file $file_name" if $verbose;
 
 # Note: The order of these calls is important
 process_header($file, 'Locale::CLDR::ValidCodes', $CLDR_VERSION, $xml, $file_name, 1);
-process_cp($xml);
 process_valid_languages($file, $xml);
 process_valid_scripts($file, $xml);
 process_valid_territories($file, $xml);
@@ -304,16 +316,22 @@ foreach my $file_name ( sort grep /^[^.]/, readdir($dir) ) {
     process_transforms($transformations_directory, $xml, $full_file_name);
 }
 
+=for comment
+
 #Collation
-# First move the base collation file into directory in the package file space
+# First convert the base collation file into a moose role
 say "Copying base collation file" if $verbose;
-open (my $Allkeys_in, '<', File::Spec->catfile($base_directory, 'uca', 'allkeys_CLDR.txt'));
-open (my $Allkeys_out, '>', File::Spec->catfile($lib_directory, 'allkeys_CLDR.txt'));
-print $Allkeys_out $_ while (<$Allkeys_in>);
+open (my $Allkeys_in, '<', File::Spec->catfile($base_directory, 'uca', 'FractionalUCA.txt'));
+open (my $Allkeys_out, '>', File::Spec->catfile($lib_directory, 'CollatorBase.pm'));
+process_header($Allkeys_out, 'Locale::CLDR::CollatorBase', $CLDR_VERSION, undef, File::Spec->catfile($base_directory, 'uca', 'allkeys_CLDR.txt'), 1);
+process_collation_base($Allkeys_in, $Allkeys_out);
+process_footer($Allkeys_out,1);
 close $Allkeys_in;
 close $Allkeys_out;
 
+=end
 
+=cut
 
 # Main directory
 my $main_directory = File::Spec->catdir($base_directory, 'main');
@@ -374,7 +392,6 @@ foreach my $file_name ( sort grep /^[^.]/, readdir($dir) ) {
     process_header($file, "Locale::CLDR::$package", $CLDR_VERSION, $xml, $full_file_name);
     process_segments($file, $segment_xml) if $segment_xml;
 	process_rbnf($file, $rbnf_xml) if $rbnf_xml;
-    process_cp($xml);
     process_display_pattern($file, $xml);
     process_display_language($file, $xml);
     process_display_script($file, $xml);
@@ -481,17 +498,20 @@ sub process_header {
 
     $xml_name =~s/^.*(Data.*)$/$1/;
     my $now = DateTime->now->strftime('%a %e %b %l:%M:%S %P');
-    my $xml_generated = ( findnodes($xpath, '/ldml/identity/generation')
-        || findnodes($xpath, '/supplementalData/generation')
-    )->get_node->getAttribute('date');
+    my $xml_generated = $xpath
+		? ( findnodes($xpath, '/ldml/identity/generation')
+			|| findnodes($xpath, '/supplementalData/generation')
+			)->get_node->getAttribute('date')
+		: '';
 
     $xml_generated=~s/^\$Date: (.*) \$$/$1/;
+	$xml_generated = "# XML file generated $xml_generated" if $xml_generated;
 
 	my $header = <<EOT;
 package $class;
 # This file auto generated from $xml_name
 #\ton $now GMT
-# XML file generated $xml_generated
+$xml_generated
 
 use version;
 
@@ -513,6 +533,117 @@ EOT
 		say $file "extends('$parent');" unless $isRole;
 	}
 }
+
+=for comment
+
+sub process_collation_base {
+	my ($Allkeys_in, $Allkeys_out) = @_;
+
+	print $Allkeys_out <<EOT;
+has 'collation_base' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	traits 		=> ['Hash'],
+	handles		=> {
+		_set_ce	=> 'set',
+		get_collation_element	=> 'get',
+	},
+	default		=> sub {
+		{
+EOT
+	
+	my @character_sequences;
+	my %top_bytes = ();
+	my %ce = ();
+	my ($max_variable, $min_variable);
+	
+	while (<$Allkeys_in>) {
+		next if /^#/;
+		next if /^$/;
+		
+		#Top Byte
+		if (my ($top_byte, $category) = /^\[top_byte\t(\p{AHex}{2})\t([A-Za-z ]+)(?:\tCOMPRESS)? \]) {
+			my @category = split / /, $category;
+			@top_byte{@category} = (hex $top_byte) x @category;
+		}
+		# CE
+		elsif (my ($character, $primary, $secondary, $tertiary) = /^((?:\p{AHex}{4,6}[| ]?)+; \[([^U+,]*),([^,]*),(.*?)\]/) {
+			foreach ($primary, $secondary, $tertiary) {
+				s/\s+//;
+				my @bytes = map {chr hex} /(..)/g;
+				$_ = join '', @bytes;
+			}
+			
+			@character = split /[| ]+/, $character;
+			$character = join '', map {chr hex} @character;
+			
+			push @character_sequences, $character if @character > 1;
+			
+			$primary .= "\0" x 3 - length $primary;
+			$secondary .= "\0" x 2 - length $secondary;
+			$tertiary .= "\0" x 2 - length $tertiary;
+			$ce{$character} = [$primary, $secondary, $tertiary];
+		}
+		elsif (my ($character, $primary, $secondary, $tertiary) = /^((?:\p{AHex}{4,6}[| ]?)+; \[U+(\p{AHex}+)(,[^,]+)?(,(.*?)\]/) {
+			my $same = $ce{chr hex $primary};
+			foreach ($secondary, $tertiary) {
+				next unless defined;
+				s/\s+//;
+				my @bytes = map {chr hex} /(..)/g;
+				$_ = join '', @bytes;
+			}
+			
+			if (defined $tertiary) {
+				$same=~s/^(...)..../$1$secondary$tertiary/;
+			}
+			elsif (defined $secondary) {
+				$same=~s/^(.....)../$1$secondary/;
+			}
+			
+			$ce{$character} = $same;
+		}
+		
+	my $character_sequences = join "','", 
+		map {$_->[0]} 
+		sort {$b->[1] <=> $a->[1]}
+		map {[$_ => length $_]}
+		@character_sequences;
+	
+	print $Allkeys_out <<EOT;
+		}
+	}
+);
+
+has min_variable => (
+	is => 'ro',
+	isa => 'Str',
+	init_arg => undef,
+	default => '$min_variable'
+);
+
+has max_variable => (
+	is => 'ro',
+	isa => 'Str',
+	init_arg => undef,
+	default => '$max_variable'
+);
+
+has '_sort_digraphs' => (
+	is => 'ro',
+	isa => 'ArrayRef',
+	init_arg => undef,
+	default => sub {['$character_sequences']},
+	writer => '_set_sort_digraphs',
+	reader => '_get_sort_digraphs',
+);
+
+EOT
+}
+
+=end
+
+=cut
 
 sub process_valid_languages {
     my ($file, $xpath) = @_;
@@ -888,6 +1019,7 @@ EOT
                 $m //= '0';
                 $d //= '0';
                 $start = sprintf('%d%0.2d%0.2d',$y,$m,$d);
+				$start =~ s/^0+//;
                 say $file "\t\t\t\t\$return = $type if \$date >= $start;";
             }
             if (length $end) {
@@ -895,6 +1027,7 @@ EOT
                 $m //= '0';
                 $d //= '0';
                 $end = sprintf('%d%0.2d%0.2d',$y,$m,$d);
+				$end =~ s/^0+//;
                 say $file "\t\t\t\t\$return = $type if \$date <= $end;";
             }
         }
@@ -1107,33 +1240,6 @@ EOT
 );
 EOT
 
-}
-
-# CP elements are used to encode characters outside the character range 
-# allowable in XML
-sub process_cp {
-    my ($xpath) = @_;
-
-    say "Processing Cp"
-        if $verbose;
-
-    foreach my $character ( $xpath->findnodes('//cp')) {
-        my $parent = $character->getParentNode;
-        my @siblings = $parent->getChildNodes;
-        my $text = '';
-        foreach my $sibling (@siblings) {
-            if ($sibling->isTextNode) {
-                $text.=$sibling->getNodeValue;
-            }
-            else {
-                my $hex = $character->getAttribute('hex');
-                my $chr = chr(hex $hex);
-                $text .= $chr;
-            }
-            $parent->removeChild($sibling);
-        }
-        $parent->appendChild(XML::XPath::Node::Text->new($text));
-    }
 }
 
 sub process_display_pattern {
@@ -1985,7 +2091,6 @@ sub process_numbers {
 				$symbols{$type}{alias} = $alias;
 			}
 			else {
-				$symbols{$type}{$symbol} = '';
 				my $nodes = findnodes($xpath, qq(/ldml/numbers/symbols[\@numberSystem="$type"]/$symbol/text()));
 				next unless $nodes->size;
 				$symbols{$type}{$symbol} = ($nodes->get_nodelist)[0]->getValue;
@@ -4396,8 +4501,32 @@ use version;
 our \$VERSION = version->declare('v$VERSION');
 EOT
 	binmode DATA, ':utf8';
-	print $file $_ while <DATA>;
+	while (my $line = <DATA>) {
+		last if $line =~ /^__DATA__/;
+		print $file $line;
+	}
 }
+
+=for comment
+
+sub write_out_collator {
+	# In order to keep git out of the CLDR directory we need to 
+	# write out the code for the CLDR::Collator module
+	my $file = shift;
+	
+	say $file <<EOT;
+package Locale::CLDR::Collator;
+
+use version;
+
+our \$VERSION = version->declare('v$VERSION');
+EOT
+	print $file $_ while (<DATA>);
+}
+
+=end
+
+=cut
 
 __DATA__
 
@@ -4993,6 +5122,189 @@ sub _get_algorithmic_number_format {
 }
 	
 no Moose::Role;
+
+1;
+
+# vim: tabstop=4
+
+__DATA__
+package Locale::CLDR::Collator;
+
+use version;
+
+our $VERSION = version->declare('v0.25.5');
+
+use v5.10;
+use mro 'c3';
+use utf8;
+use if $^V ge v5.12.0, feature => 'unicode_strings';
+
+use Unicode::Normalize('NFD');
+
+use Moose;
+
+with 'Locale::CLDR::CollatorBase';
+
+has 'type' => (
+	is => 'ro',
+	isa => 'Str',
+	default => 'standard',
+);
+
+has 'locale' => (
+	is => 'ro',
+	isa => 'Locale::CLDR',
+	required => 1,
+);
+
+has 'strength' => (
+	is => 'ro',
+	isa => 'Int',
+	default => 3,
+);
+
+# Set up the locale overrides
+sub BUILD {
+	my $self = shift;
+	
+	my $overrides = $self->locale->collation_overrides($self->type);
+	
+	foreach my $override (@$overrides) {
+		$self->_set_ce(@$override);
+	}
+}
+
+sub _get_sort_digraphs_rx {
+	my $self = shift;
+	
+	my $digraphs = $self->_get_sort_digraphs();
+	
+	my $rx = join '|', @$digraphs, '.';
+	
+	return qr/$rx/;
+}
+
+# Converts $string into a string of Collation Elements
+sub getSortKey {
+	my ($self, $string) = @_;
+	
+	$string = NFD($string);
+	
+	my $entity_rx = $self->_get_sort_digraphs_rx();
+	
+	(my $ce = $string) =~ s/($entity_rx)/ $self->get_collation_element($1) || do { my $ce = $self->generate_ce($1); $self->_set_ce($1, $ce); $ce } /eg;
+		
+	my $ce_length = length($ce) / 4;
+	
+	my $max_level = $self->strength;
+	my $key = '';
+	
+	my @lvl_re = (
+		undef,
+		'(.)...' x $ce_length,
+		'.(.)..' x $ce_length,
+		'..(.).' x $ce_length,
+		'...(.)' x $ce_length,
+	);
+	
+	foreach my $level ( 1 .. $max_level ) {
+		$key .= join '', grep {$_ ne "\x0"} $ce =~ /^$lvl_re[$level]$/;
+		$key .= "\x0";
+	}
+	
+	return $key;
+}
+
+sub generate_ce {
+	my ($character) = @_;
+	
+	my $base;
+	
+	if ($character =~ /\p{Unified_Ideograph}/) {
+		if ($character =~ /\p{Block=CJK_Unified_Ideograph}/ || $character =~ /\p{Block=CJK_Compatibility_Ideographs}/) {
+			$base = 0xFB40;
+		}
+		else {
+			$base = 0xFB80;
+		}
+	}
+	else {
+		$base = 0xFBC0;
+	}
+	
+	my $aaaa = $base + unpack( 'L', (pack ('L', ord($character)) >> 15));
+	my $bbbb = unpack('L', (pack('L', ord($character)) & 0x7FFF) | 0x8000);
+	
+	return join '', map {chr($_)} $aaaa, 0x0020, 0x0002,0, $bbbb,0,0,0;
+}
+
+# sorts a list according to the locales collation rules
+sub sort {
+	my $self = shift;
+	
+	return map { $_->[0]}
+		sort { $a->[1] cmp $b->[1] }
+		map { [$_, $self->getSortKey($_)] }
+		@_;
+}
+
+sub cmp {
+	my ($self, $a, $b) = @_;
+	
+	return $self->getSortKey($a) cmp $self->getSortKey($b);
+}
+
+sub eq {
+	my ($self, $a, $b) = @_;
+	
+	return $self->getSortKey($a) eq $self->getSortKey($b);
+}
+
+sub ne {
+	my ($self, $a, $b) = @_;
+	
+	return $self->getSortKey($a) ne $self->getSortKey($b);
+}
+
+sub lt {
+	my ($self, $a, $b) = @_;
+	
+	return $self->getSortKey($a) lt $self->getSortKey($b);
+}
+
+sub le {
+	my ($self, $a, $b) = @_;
+	
+	return $self->getSortKey($a) le $self->getSortKey($b);
+}
+sub gt {
+	my ($self, $a, $b) = @_;
+	
+	return $self->getSortKey($a) lt $self->getSortKey($b);
+}
+
+sub ge {
+	my ($self, $a, $b) = @_;
+	
+	return $self->getSortKey($a) le $self->getSortKey($b);
+}
+
+# Get Human readable sort key
+sub viewSortKey {
+	my ($self, $sort_key) = @_;
+	
+#	my $sort_key = $self->getSortKey($a);
+	
+	my @levels = split/\x0/, $sort_key;
+	
+	foreach my $level (@levels) {
+		$level = join ' ',  map { sprintf '%0.4X', ord } split //, $level;
+	}
+	
+	return '[ ' . join (' | ', @levels) . ' ]';
+}
+
+no Moose;
 
 1;
 

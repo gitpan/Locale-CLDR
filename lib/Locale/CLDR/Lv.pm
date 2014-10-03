@@ -1,11 +1,11 @@
 package Locale::CLDR::Lv;
 # This file auto generated from Data\common\main\lv.xml
-#	on Sat 21 Jun 12:23:41 am GMT
-# XML file generated 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014)
+#	on Thu  2 Oct 12:21:50 pm GMT
+# XML file generated 2014-08-14 15:10:07 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -604,6 +604,7 @@ has 'display_name_language' => (
  				'fy' => 'rietumfrīzu',
  				'ga' => 'īru',
  				'gaa' => 'ga',
+ 				'gag' => 'gagauzu',
  				'gay' => 'gajo',
  				'gba' => 'gbaju',
  				'gd' => 'gēlu',
@@ -687,6 +688,7 @@ has 'display_name_language' => (
  				'kmb' => 'kimbundu',
  				'kn' => 'kannadu',
  				'ko' => 'korejiešu',
+ 				'koi' => 'komiešu-permiešu',
  				'kok' => 'konkanu',
  				'kos' => 'kosrājiešu',
  				'kpe' => 'kpellu',
@@ -713,6 +715,7 @@ has 'display_name_language' => (
  				'lez' => 'lezgīnu',
  				'lg' => 'gandu',
  				'li' => 'limburgiešu',
+ 				'lkt' => 'lakotu',
  				'ln' => 'lingala',
  				'lo' => 'laosiešu',
  				'lol' => 'mongu',
@@ -819,6 +822,7 @@ has 'display_name_language' => (
  				'pt_BR' => 'Brazīlijas portugāļu',
  				'pt_PT' => 'Eiropas portugāļu',
  				'qu' => 'kečvu',
+ 				'quc' => 'kiče',
  				'raj' => 'radžastāņu',
  				'rap' => 'rapanuju',
  				'rar' => 'rarotongiešu',
@@ -863,8 +867,8 @@ has 'display_name_language' => (
  				'sl' => 'slovēņu',
  				'sm' => 'samoāņu',
  				'sma' => 'dienvidsāmu',
- 				'smj' => 'luleo sāmu',
- 				'smn' => 'inari sāmu',
+ 				'smj' => 'Luleo sāmu',
+ 				'smn' => 'Inari sāmu',
  				'sms' => 'skoltsāmu',
  				'sn' => 'šonu',
  				'snk' => 'soninku',
@@ -1183,7 +1187,7 @@ has 'display_name_territory' => (
  			'FI' => 'Somija',
  			'FJ' => 'Fidži',
  			'FK' => 'Folklenda salas',
- 			'FK@alt=variant' => 'Folklenda salas (Malvinu salas)',
+ 			'FK@alt=variant' => 'Folklenda (Malvinu) salas',
  			'FM' => 'Mikronēzija',
  			'FO' => 'Fēru Salas',
  			'FR' => 'Francija',
@@ -1313,7 +1317,7 @@ has 'display_name_territory' => (
  			'RW' => 'Ruanda',
  			'SA' => 'Saūda Arābija',
  			'SB' => 'Zālamana salas',
- 			'SC' => 'Seišeļu salas',
+ 			'SC' => 'Šeišelu salas',
  			'SD' => 'Sudāna',
  			'SE' => 'Zviedrija',
  			'SG' => 'Singapūra',
@@ -1445,7 +1449,7 @@ has 'display_name_type' => (
  				'chinese' => q{ķīniešu kalendārs},
  				'coptic' => q{Koptu kalendārs},
  				'dangi' => q{dangi kalendārs},
- 				'ethiopic' => q{Etiopiešu kalendārs},
+ 				'ethiopic' => q{etiopiešu kalendārs},
  				'ethiopic-amete-alem' => q{Etiopiešu kalendārs},
  				'gregorian' => q{Gregora kalendārs},
  				'hebrew' => q{ebreju kalendārs},
@@ -1454,7 +1458,7 @@ has 'display_name_type' => (
  				'islamic-civil' => q{islāma pilsoņu kalendārs},
  				'iso8601' => q{ISO 8601 kalendārs},
  				'japanese' => q{japāņu kalendārs},
- 				'persian' => q{Persiešu kalendārs},
+ 				'persian' => q{persiešu kalendārs},
  				'roc' => q{Ķīnas Republikas kalendārs},
  			},
  			'colalternate' => {
@@ -1697,234 +1701,706 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'acre' => {
+						'' => q(akri),
 						'one' => q({0} akrs),
 						'other' => q({0} akri),
 						'zero' => q({0} akri),
 					},
+					'acre-foot' => {
+						'' => q(akrpēdas),
+						'one' => q({0} akrpēda),
+						'other' => q({0} akrpēdas),
+						'zero' => q({0} akrpēdas),
+					},
+					'ampere' => {
+						'' => q(ampēri),
+						'one' => q({0} ampērs),
+						'other' => q({0} ampēri),
+						'zero' => q({0} ampēri),
+					},
 					'arc-minute' => {
-						'one' => q({0} minūte),
-						'other' => q({0} minūtes),
-						'zero' => q({0} minūtes),
+						'' => q(leņķa minūtes),
+						'one' => q({0} leņķa minūte),
+						'other' => q({0} leņķa minūtes),
+						'zero' => q({0} leņķa minūtes),
 					},
 					'arc-second' => {
-						'one' => q({0} sekunde),
-						'other' => q({0} sekundes),
-						'zero' => q({0} sekundes),
+						'' => q(leņķa sekundes),
+						'one' => q({0} leņķa sekunde),
+						'other' => q({0} leņķa sekundes),
+						'zero' => q({0} leņķa sekundes),
+					},
+					'astronomical-unit' => {
+						'' => q(astronomiskās vienības),
+						'one' => q({0} astronomiskā vienība),
+						'other' => q({0} astronomiskās vienības),
+						'zero' => q({0} astronomiskās vienības),
+					},
+					'bit' => {
+						'' => q(biti),
+						'one' => q({0} bits),
+						'other' => q({0} biti),
+						'zero' => q({0} biti),
+					},
+					'byte' => {
+						'' => q(baiti),
+						'one' => q({0} baits),
+						'other' => q({0} baiti),
+						'zero' => q({0} baiti),
+					},
+					'calorie' => {
+						'' => q(kalorijas),
+						'one' => q({0} kalorija),
+						'other' => q({0} kalorijas),
+						'zero' => q({0} kalorijas),
+					},
+					'carat' => {
+						'' => q(karāti),
+						'one' => q({0} karāts),
+						'other' => q({0} karāti),
+						'zero' => q({0} karāti),
 					},
 					'celsius' => {
+						'' => q(Celsija grādi),
 						'one' => q({0} Celsija grāds),
 						'other' => q({0} Celsija grādi),
 						'zero' => q({0} Celsija grādi),
 					},
+					'centiliter' => {
+						'' => q(centilitri),
+						'one' => q({0} centilitrs),
+						'other' => q({0} centilitri),
+						'zero' => q({0} centilitri),
+					},
 					'centimeter' => {
+						'' => q(centimetri),
 						'one' => q({0} centimetrs),
 						'other' => q({0} centimetri),
 						'zero' => q({0} centimetri),
 					},
+					'cubic-centimeter' => {
+						'' => q(kubikcentimetri),
+						'one' => q({0} kubikcentimetrs),
+						'other' => q({0} kubikcentimetri),
+						'zero' => q({0} kubikcentimetri),
+					},
+					'cubic-foot' => {
+						'' => q(kubikpēdas),
+						'one' => q({0} kubikpēda),
+						'other' => q({0} kubikpēdas),
+						'zero' => q({0} kubikpēdas),
+					},
+					'cubic-inch' => {
+						'' => q(kubikcollas),
+						'one' => q({0} kubikcolla),
+						'other' => q({0} kubikcollas),
+						'zero' => q({0} kubikcollas),
+					},
 					'cubic-kilometer' => {
+						'' => q(kubikkilometri),
 						'one' => q({0} kubikkilometrs),
 						'other' => q({0} kubikkilometri),
 						'zero' => q({0} kubikkilometri),
 					},
+					'cubic-meter' => {
+						'' => q(kubikmetri),
+						'one' => q({0} kubikmetrs),
+						'other' => q({0} kubikmetri),
+						'zero' => q({0} kubikmetri),
+					},
 					'cubic-mile' => {
+						'' => q(kubikjūdzes),
 						'one' => q({0} kubikjūdze),
 						'other' => q({0} kubikjūdzes),
 						'zero' => q({0} kubikjūdzes),
 					},
+					'cubic-yard' => {
+						'' => q(kubikjardi),
+						'one' => q({0} kubikjards),
+						'other' => q({0} kubikjardi),
+						'zero' => q({0} kubikjardi),
+					},
+					'cup' => {
+						'' => q(glāzes),
+						'one' => q({0} glāze),
+						'other' => q({0} glāzes),
+						'zero' => q({0} glāzes),
+					},
 					'day' => {
+						'' => q(dienas),
 						'one' => q({0} diena),
 						'other' => q({0} dienas),
 						'zero' => q({0} dienas),
 					},
+					'deciliter' => {
+						'' => q(decilitri),
+						'one' => q({0} decilitrs),
+						'other' => q({0} decilitri),
+						'zero' => q({0} decilitri),
+					},
+					'decimeter' => {
+						'' => q(decimetri),
+						'one' => q({0} decimetrs),
+						'other' => q({0} decimetri),
+						'zero' => q({0} decimetri),
+					},
 					'degree' => {
+						'' => q(grādi),
 						'one' => q({0} grāds),
 						'other' => q({0} grādi),
 						'zero' => q({0} grādi),
 					},
 					'fahrenheit' => {
+						'' => q(Fārenheita grādi),
 						'one' => q({0} Fārenheita grāds),
 						'other' => q({0} Fārenheita grādi),
 						'zero' => q({0} Fārenheita grādi),
 					},
+					'fluid-ounce' => {
+						'' => q(šķidruma unces),
+						'one' => q({0} šķidruma unce),
+						'other' => q({0} šķidruma unces),
+						'zero' => q({0} šķidruma unces),
+					},
+					'foodcalorie' => {
+						'' => q(kalorijas),
+						'one' => q({0} kalorija),
+						'other' => q({0} kalorijas),
+						'zero' => q({0} kalorijas),
+					},
 					'foot' => {
+						'' => q(pēdas),
 						'one' => q({0} pēda),
 						'other' => q({0} pēdas),
 						'zero' => q({0} pēdas),
 					},
 					'g-force' => {
+						'' => q(Brīvās krišanas paātrinājums:),
 						'one' => q(Brīvās krišanas paātrinājums: {0}),
 						'other' => q(Brīvās krišanas paātrinājums: {0}),
 						'zero' => q(Brīvās krišanas paātrinājums: {0}),
 					},
+					'gallon' => {
+						'' => q(galoni),
+						'one' => q({0} galons),
+						'other' => q({0} galoni),
+						'zero' => q({0} galoni),
+					},
+					'gigabit' => {
+						'' => q(gigabiti),
+						'one' => q({0} gigabits),
+						'other' => q({0} gigabiti),
+						'zero' => q({0} gigabiti),
+					},
+					'gigabyte' => {
+						'' => q(gigabaiti),
+						'one' => q({0} gigabaits),
+						'other' => q({0} gigabaiti),
+						'zero' => q({0} gigabaiti),
+					},
+					'gigahertz' => {
+						'' => q(gigaherci),
+						'one' => q({0} gigahercs),
+						'other' => q({0} gigaherci),
+						'zero' => q({0} gigaherci),
+					},
+					'gigawatt' => {
+						'' => q(gigavati),
+						'one' => q({0} gigavats),
+						'other' => q({0} gigavati),
+						'zero' => q({0} gigavati),
+					},
 					'gram' => {
+						'' => q(grami),
 						'one' => q({0} grams),
 						'other' => q({0} grami),
 						'zero' => q({0} grami),
 					},
 					'hectare' => {
+						'' => q(hektāri),
 						'one' => q({0} hektārs),
 						'other' => q({0} hektāri),
 						'zero' => q({0} hektāri),
 					},
+					'hectoliter' => {
+						'' => q(hektolitri),
+						'one' => q({0} hektolitrs),
+						'other' => q({0} hektolitri),
+						'zero' => q({0} hektolitri),
+					},
 					'hectopascal' => {
+						'' => q(hektopaskāli),
 						'one' => q({0} hektopaskāls),
 						'other' => q({0} hektopaskāli),
 						'zero' => q({0} hektopaskāli),
 					},
+					'hertz' => {
+						'' => q(herci),
+						'one' => q({0} hercs),
+						'other' => q({0} herci),
+						'zero' => q({0} herci),
+					},
 					'horsepower' => {
+						'' => q(zirgspēki),
 						'one' => q({0} zirgspēks),
 						'other' => q({0} zirgspēki),
 						'zero' => q({0} zirgspēki),
 					},
 					'hour' => {
+						'' => q({0} stundā),
 						'one' => q({0} stunda),
 						'other' => q({0} stundas),
 						'zero' => q({0} stundas),
 					},
 					'inch' => {
+						'' => q(collas),
 						'one' => q({0} colla),
 						'other' => q({0} collas),
 						'zero' => q({0} collas),
 					},
 					'inch-hg' => {
+						'' => q(dzīvsudraba staba collas),
 						'one' => q({0} dzīvsudraba staba colla),
 						'other' => q({0} dzīvsudraba staba collas),
 						'zero' => q({0} dzīvsudraba staba collas),
 					},
+					'joule' => {
+						'' => q(džouli),
+						'one' => q({0} džouls),
+						'other' => q({0} džouli),
+						'zero' => q({0} džouli),
+					},
+					'karat' => {
+						'' => q(karāti),
+						'one' => q({0} karāts),
+						'other' => q({0} karāti),
+						'zero' => q({0} karāti),
+					},
+					'kelvin' => {
+						'' => q(kelvini),
+						'one' => q({0} kelvins),
+						'other' => q({0} kelvini),
+						'zero' => q({0} kelvini),
+					},
+					'kilobit' => {
+						'' => q(kilobiti),
+						'one' => q({0} kilobits),
+						'other' => q({0} kilobiti),
+						'zero' => q({0} kilobiti),
+					},
+					'kilobyte' => {
+						'' => q(kilobaiti),
+						'one' => q({0} kilobaits),
+						'other' => q({0} kilobaiti),
+						'zero' => q({0} kilobaiti),
+					},
+					'kilocalorie' => {
+						'' => q(kilokalorijas),
+						'one' => q({0} kilokalorija),
+						'other' => q({0} kilokalorijas),
+						'zero' => q({0} kilokalorijas),
+					},
 					'kilogram' => {
+						'' => q(kilogrami),
 						'one' => q({0} kilograms),
 						'other' => q({0} kilogrami),
 						'zero' => q({0} kilogrami),
 					},
+					'kilohertz' => {
+						'' => q(kiloherci),
+						'one' => q({0} kilohercs),
+						'other' => q({0} kiloherci),
+						'zero' => q({0} kiloherci),
+					},
+					'kilojoule' => {
+						'' => q(kilodžouli),
+						'one' => q({0} kilodžouls),
+						'other' => q({0} kilodžouli),
+						'zero' => q({0} kilodžouli),
+					},
 					'kilometer' => {
+						'' => q(kilometri),
 						'one' => q({0} kilometrs),
 						'other' => q({0} kilometri),
 						'zero' => q({0} kilometri),
 					},
 					'kilometer-per-hour' => {
+						'' => q(kilometri stundā),
 						'one' => q({0} kilometrs stundā),
 						'other' => q({0} kilometri stundā),
 						'zero' => q({0} kilometri stundā),
 					},
 					'kilowatt' => {
+						'' => q(kilovati),
 						'one' => q({0} kilovats),
 						'other' => q({0} kilovati),
 						'zero' => q({0} kilovati),
 					},
+					'kilowatt-hour' => {
+						'' => q(kilovatstundas),
+						'one' => q({0} kilovatstunda),
+						'other' => q({0} kilovatstundas),
+						'zero' => q({0} kilovatstundas),
+					},
 					'light-year' => {
+						'' => q(gaismas gadi),
 						'one' => q({0} gaismas gads),
 						'other' => q({0} gaismas gadi),
 						'zero' => q({0} gaismas gadi),
 					},
 					'liter' => {
+						'' => q(litri),
 						'one' => q({0} litrs),
 						'other' => q({0} litri),
 						'zero' => q({0} litri),
 					},
+					'liter-per-kilometer' => {
+						'' => q(litri uz kilometru),
+						'one' => q({0} litrs uz kilometru),
+						'other' => q({0} litri uz kilometru),
+						'zero' => q({0} litri uz kilometru),
+					},
+					'lux' => {
+						'' => q(lukss),
+						'one' => q({0} lukss),
+						'other' => q({0} luksi),
+						'zero' => q({0} luksi),
+					},
+					'megabit' => {
+						'' => q(megabiti),
+						'one' => q({0} megabits),
+						'other' => q({0} megabiti),
+						'zero' => q({0} megabiti),
+					},
+					'megabyte' => {
+						'' => q(megabaiti),
+						'one' => q({0} megabaits),
+						'other' => q({0} megabaits),
+						'zero' => q({0} megabaiti),
+					},
+					'megahertz' => {
+						'' => q(megaherci),
+						'one' => q({0} megahercs),
+						'other' => q({0} megaherci),
+						'zero' => q({0} megaherci),
+					},
+					'megaliter' => {
+						'' => q(megalitri),
+						'one' => q({0} megalitrs),
+						'other' => q({0} megalitri),
+						'zero' => q({0} megalitri),
+					},
+					'megawatt' => {
+						'' => q(megavati),
+						'one' => q({0} megavats),
+						'other' => q({0} megavati),
+						'zero' => q({0} megavati),
+					},
 					'meter' => {
+						'' => q(metri),
 						'one' => q({0} metrs),
 						'other' => q({0} metri),
 						'zero' => q({0} metri),
 					},
 					'meter-per-second' => {
+						'' => q(metri sekundē),
 						'one' => q({0} metrs sekundē),
 						'other' => q({0} metri sekundē),
 						'zero' => q({0} metri sekundē),
 					},
+					'meter-per-second-squared' => {
+						'' => q(metri sekundē kvadrātā),
+						'one' => q({0} metrs sekundē kvadrātā),
+						'other' => q({0} metri sekundē kvadrātā),
+						'zero' => q({0} metri sekundē kvadrātā),
+					},
+					'metric-ton' => {
+						'' => q(metriskās tonnas),
+						'one' => q({0} metriskā tonna),
+						'other' => q({0} metriskās tonnas),
+						'zero' => q({0} metriskās tonnas),
+					},
+					'microgram' => {
+						'' => q(mikrogrami),
+						'one' => q({0} mikrograms),
+						'other' => q({0} mikrogrami),
+						'zero' => q({0} mikrogrami),
+					},
+					'micrometer' => {
+						'' => q(mikrometri),
+						'one' => q({0} mikrometrs),
+						'other' => q({0} mikrometri),
+						'zero' => q({0} mikrometri),
+					},
+					'microsecond' => {
+						'' => q(mikrosekundes),
+						'one' => q({0} mikrosekunde),
+						'other' => q({0} mikrosekundes),
+						'zero' => q({0} mikrosekundes),
+					},
 					'mile' => {
+						'' => q(jūdzes),
 						'one' => q({0} jūdze),
 						'other' => q({0} jūdzes),
 						'zero' => q({0} jūdzes),
 					},
+					'mile-per-gallon' => {
+						'' => q(jūdzes ar galonu),
+						'one' => q({0} jūdze ar galonu),
+						'other' => q({0} jūdzes ar galonu),
+						'zero' => q({0} jūdzes ar galonu),
+					},
 					'mile-per-hour' => {
+						'' => q(jūdzes stundā),
 						'one' => q({0} jūdze stundā),
 						'other' => q({0} jūdzes stundā),
 						'zero' => q({0} jūdzes stundā),
 					},
+					'milliampere' => {
+						'' => q(miliampēri),
+						'one' => q({0} miliampērs),
+						'other' => q({0} miliampēri),
+						'zero' => q({0} miliampēri),
+					},
 					'millibar' => {
+						'' => q(milibāri),
 						'one' => q({0} milibārs),
 						'other' => q({0} milibāri),
 						'zero' => q({0} milibāri),
 					},
+					'milligram' => {
+						'' => q(miligrami),
+						'one' => q({0} miligrams),
+						'other' => q({0} miligrami),
+						'zero' => q({0} miligrami),
+					},
+					'milliliter' => {
+						'' => q(mililitri),
+						'one' => q({0} mililitrs),
+						'other' => q({0} mililitri),
+						'zero' => q({0} mililitri),
+					},
 					'millimeter' => {
+						'' => q(milimetri),
 						'one' => q({0} milimetrs),
 						'other' => q({0} milimetri),
 						'zero' => q({0} milimetri),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(dzīvsudraba staba milimetri),
+						'one' => q({0} dzīvsudraba staba milimetrs),
+						'other' => q({0} dzīvsudraba staba milimetri),
+						'zero' => q({0} dzīvsudraba staba milimetri),
+					},
 					'millisecond' => {
+						'' => q(milisekundes),
 						'one' => q({0} milisekunde),
 						'other' => q({0} milisekundes),
 						'zero' => q({0} milisekundes),
 					},
+					'milliwatt' => {
+						'' => q(milivati),
+						'one' => q({0} milivats),
+						'other' => q({0} milivati),
+						'zero' => q({0} milivati),
+					},
 					'minute' => {
+						'' => q(minūtes),
 						'one' => q({0} minūte),
 						'other' => q({0} minūtes),
 						'zero' => q({0} minūtes),
 					},
 					'month' => {
+						'' => q(mēneši),
 						'one' => q({0} mēnesis),
 						'other' => q({0} mēneši),
 						'zero' => q({0} mēneši),
 					},
+					'nanometer' => {
+						'' => q(nanometri),
+						'one' => q({0} nanometrs),
+						'other' => q({0} nanometri),
+						'zero' => q({0} nanometri),
+					},
+					'nanosecond' => {
+						'' => q(nanosekundes),
+						'one' => q({0} nanosekunde),
+						'other' => q({0} nanosekundes),
+						'zero' => q({0} nanosekundes),
+					},
+					'nautical-mile' => {
+						'' => q(jūras jūdzes),
+						'one' => q({0} jūras jūdze),
+						'other' => q({0} jūras jūdzes),
+						'zero' => q({0} jūras jūdzes),
+					},
+					'ohm' => {
+						'' => q(omi),
+						'one' => q({0} oms),
+						'other' => q({0} omi),
+						'zero' => q({0} omi),
+					},
 					'ounce' => {
+						'' => q(unces),
 						'one' => q({0} unce),
 						'other' => q({0} unces),
 						'zero' => q({0} unces),
+					},
+					'ounce-troy' => {
+						'' => q(Trojas unces),
+						'one' => q({0} Trojas unce),
+						'other' => q({0} Trojas unces),
+						'zero' => q({0} Trojas unces),
+					},
+					'parsec' => {
+						'' => q(parseki),
+						'one' => q({0} parseks),
+						'other' => q({0} parseki),
+						'zero' => q({0} parseki),
 					},
 					'per' => {
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(pikometri),
 						'one' => q({0} pikometrs),
 						'other' => q({0} pikometri),
 						'zero' => q({0} pikometri),
 					},
+					'pint' => {
+						'' => q(pintes),
+						'one' => q({0} pinte),
+						'other' => q({0} pintes),
+						'zero' => q({0} pintes),
+					},
 					'pound' => {
+						'' => q(mārciņas),
 						'one' => q({0} mārciņa),
 						'other' => q({0} mārciņas),
 						'zero' => q({0} mārciņas),
 					},
+					'pound-per-square-inch' => {
+						'' => q(mārciņas uz kvadrātcollu),
+						'one' => q({0} mārciņa uz kvadrātcollu),
+						'other' => q({0} mārciņas uz kvadrātcollu),
+						'zero' => q({0} mārciņas uz kvadrātcollu),
+					},
+					'quart' => {
+						'' => q(kvartas),
+						'one' => q({0} kvarta),
+						'other' => q({0} kvartas),
+						'zero' => q({0} kvartas),
+					},
+					'radian' => {
+						'' => q(radiāni),
+						'one' => q({0} radiāns),
+						'other' => q({0} radiāni),
+						'zero' => q({0} radiāni),
+					},
 					'second' => {
+						'' => q({0} sekundē),
 						'one' => q({0} sekunde),
 						'other' => q({0} sekundes),
 						'zero' => q({0} sekundes),
 					},
+					'square-centimeter' => {
+						'' => q(kvadrātcentimetri),
+						'one' => q({0} kvadrātcentimetrs),
+						'other' => q({0} kvadrātcentimetri),
+						'zero' => q({0} kvadrātcentimetri),
+					},
 					'square-foot' => {
+						'' => q(kvadrātpēdas),
 						'one' => q({0} kvadrātpēda),
 						'other' => q({0} kvadrātpēdas),
 						'zero' => q({0} kvadrātpēdas),
 					},
+					'square-inch' => {
+						'' => q(kvadrātcollas),
+						'one' => q({0} kvadrātcolla),
+						'other' => q({0} kvadrātcollas),
+						'zero' => q({0} kvadrātcollas),
+					},
 					'square-kilometer' => {
+						'' => q(kvadrātkilometri),
 						'one' => q({0} kvadrātkilometrs),
 						'other' => q({0} kvadrātkilometri),
 						'zero' => q({0} kvadrātkilometri),
 					},
 					'square-meter' => {
+						'' => q(kvadrātmetri),
 						'one' => q({0} kvadrātmetrs),
 						'other' => q({0} kvadrātmetri),
 						'zero' => q({0} kvadrātmetri),
 					},
 					'square-mile' => {
+						'' => q(kvadrātjūdzes),
 						'one' => q({0} kvadrātjūdze),
 						'other' => q({0} kvadrātjūdzes),
 						'zero' => q({0} kvadrātjūdzes),
 					},
+					'square-yard' => {
+						'' => q(kvadrātjardi),
+						'one' => q({0} kvadrātjards),
+						'other' => q({0} kvadrātjardi),
+						'zero' => q({0} kvadrātjardi),
+					},
+					'tablespoon' => {
+						'' => q(ēdamkarotes),
+						'one' => q({0} ēdamkarote),
+						'other' => q({0} ēdamkarotes),
+						'zero' => q({0} ēdamkarotes),
+					},
+					'teaspoon' => {
+						'' => q(tējkarotes),
+						'one' => q({0} tējkarote),
+						'other' => q({0} tējkarotes),
+						'zero' => q({0} tējkarotes),
+					},
+					'terabit' => {
+						'' => q(terabiti),
+						'one' => q({0} terabits),
+						'other' => q({0} terabiti),
+						'zero' => q({0} terabiti),
+					},
+					'terabyte' => {
+						'' => q(terabaiti),
+						'one' => q({0} terabaits),
+						'other' => q({0} terabaiti),
+						'zero' => q({0} terabaiti),
+					},
+					'ton' => {
+						'' => q(tonnas),
+						'one' => q({0} tonna),
+						'other' => q({0} tonnas),
+						'zero' => q({0} tonnas),
+					},
+					'volt' => {
+						'' => q(volti),
+						'one' => q({0} volts),
+						'other' => q({0} volti),
+						'zero' => q({0} volti),
+					},
 					'watt' => {
+						'' => q(vati),
 						'one' => q({0} vats),
 						'other' => q({0} vati),
 						'zero' => q({0} vati),
 					},
 					'week' => {
+						'' => q(nedēļas),
 						'one' => q({0} nedēļa),
 						'other' => q({0} nedēļas),
 						'zero' => q({0} nedēļas),
 					},
 					'yard' => {
+						'' => q(jardi),
 						'one' => q({0} jards),
 						'other' => q({0} jardi),
 						'zero' => q({0} jardi),
 					},
 					'year' => {
+						'' => q(gadi),
 						'one' => q({0} gads),
 						'other' => q({0} gadi),
 						'zero' => q({0} gadi),
@@ -1947,11 +2423,13 @@ has 'units' => (
 						'zero' => q({0}″),
 					},
 					'celsius' => {
-						'one' => q({0}°),
-						'other' => q({0}°),
-						'zero' => q({0}°),
+						'' => q(°C),
+						'one' => q({0} °C),
+						'other' => q({0} °C),
+						'zero' => q({0} °C),
 					},
 					'centimeter' => {
+						'' => q(cm),
 						'one' => q({0}cm),
 						'other' => q({0}cm),
 						'zero' => q({0}cm),
@@ -1967,6 +2445,7 @@ has 'units' => (
 						'zero' => q({0}mi³),
 					},
 					'day' => {
+						'' => q(d.),
 						'one' => q({0}d),
 						'other' => q({0}d),
 						'zero' => q({0}d),
@@ -1992,6 +2471,7 @@ has 'units' => (
 						'zero' => q({0}G),
 					},
 					'gram' => {
+						'' => q(g),
 						'one' => q({0}g),
 						'other' => q({0}g),
 						'zero' => q({0}g),
@@ -2012,6 +2492,7 @@ has 'units' => (
 						'zero' => q({0} ZS),
 					},
 					'hour' => {
+						'' => q(h),
 						'one' => q({0}h),
 						'other' => q({0}h),
 						'zero' => q({0}h),
@@ -2027,16 +2508,19 @@ has 'units' => (
 						'zero' => q({0}inHg),
 					},
 					'kilogram' => {
+						'' => q(kg),
 						'one' => q({0}kg),
 						'other' => q({0}kg),
 						'zero' => q({0}kg),
 					},
 					'kilometer' => {
+						'' => q(km),
 						'one' => q({0}km),
 						'other' => q({0}km),
 						'zero' => q({0}km),
 					},
 					'kilometer-per-hour' => {
+						'' => q(km/h),
 						'one' => q({0}km/h),
 						'other' => q({0}km/h),
 						'zero' => q({0}km/h),
@@ -2047,16 +2531,19 @@ has 'units' => (
 						'zero' => q({0}kW),
 					},
 					'light-year' => {
-						'one' => q({0}ly),
-						'other' => q({0}ly),
-						'zero' => q({0}ly),
+						'' => q(g.g.),
+						'one' => q({0}g.g.),
+						'other' => q({0}g.g.),
+						'zero' => q({0}g.g.),
 					},
 					'liter' => {
+						'' => q(l),
 						'one' => q({0}l),
 						'other' => q({0}l),
 						'zero' => q({0}l),
 					},
 					'meter' => {
+						'' => q(m),
 						'one' => q({0}m),
 						'other' => q({0}m),
 						'zero' => q({0}m),
@@ -2082,21 +2569,25 @@ has 'units' => (
 						'zero' => q({0}mbar),
 					},
 					'millimeter' => {
+						'' => q(mm),
 						'one' => q({0}mm),
 						'other' => q({0}mm),
 						'zero' => q({0}mm),
 					},
 					'millisecond' => {
+						'' => q(ms),
 						'one' => q({0}ms),
 						'other' => q({0}ms),
 						'zero' => q({0}ms),
 					},
 					'minute' => {
+						'' => q(min),
 						'one' => q({0} min),
 						'other' => q({0} min),
 						'zero' => q({0} min),
 					},
 					'month' => {
+						'' => q(mēn.),
 						'one' => q({0} mēn.),
 						'other' => q({0} mēn.),
 						'zero' => q({0} mēn.),
@@ -2120,6 +2611,7 @@ has 'units' => (
 						'zero' => q({0}lb),
 					},
 					'second' => {
+						'' => q(s),
 						'one' => q({0}s),
 						'other' => q({0}s),
 						'zero' => q({0}s),
@@ -2150,6 +2642,7 @@ has 'units' => (
 						'zero' => q({0}W),
 					},
 					'week' => {
+						'' => q(ned.),
 						'one' => q({0} ned.),
 						'other' => q({0} ned.),
 						'zero' => q({0} ned.),
@@ -2160,6 +2653,7 @@ has 'units' => (
 						'zero' => q({0}yd),
 					},
 					'year' => {
+						'' => q(g.),
 						'one' => q({0}g.),
 						'other' => q({0}g.),
 						'zero' => q({0}g.),
@@ -2167,234 +2661,706 @@ has 'units' => (
 				},
 				'short' => {
 					'acre' => {
+						'' => q(ac),
 						'one' => q({0} ac),
 						'other' => q({0} ac),
 						'zero' => q({0} ac),
 					},
+					'acre-foot' => {
+						'' => q(ac ft),
+						'one' => q({0} ac ft),
+						'other' => q({0} ac ft),
+						'zero' => q({0} ac ft),
+					},
+					'ampere' => {
+						'' => q(A),
+						'one' => q({0} A),
+						'other' => q({0} A),
+						'zero' => q({0} A),
+					},
 					'arc-minute' => {
-						'one' => q({0} min),
-						'other' => q({0} min),
-						'zero' => q({0} min),
+						'' => q(′),
+						'one' => q({0}′),
+						'other' => q({0}′),
+						'zero' => q({0}′),
 					},
 					'arc-second' => {
-						'one' => q({0} s),
-						'other' => q({0} s),
-						'zero' => q({0} s),
+						'' => q(″),
+						'one' => q({0}″),
+						'other' => q({0}″),
+						'zero' => q({0}″),
+					},
+					'astronomical-unit' => {
+						'' => q(a.v.),
+						'one' => q({0} a.v.),
+						'other' => q({0} a.v.),
+						'zero' => q({0} a.v.),
+					},
+					'bit' => {
+						'' => q(b),
+						'one' => q({0} b),
+						'other' => q({0} b),
+						'zero' => q({0} b),
+					},
+					'byte' => {
+						'' => q(B),
+						'one' => q({0} B),
+						'other' => q({0} B),
+						'zero' => q({0} B),
+					},
+					'calorie' => {
+						'' => q(cal),
+						'one' => q({0} cal),
+						'other' => q({0} cal),
+						'zero' => q({0} cal),
+					},
+					'carat' => {
+						'' => q(CD),
+						'one' => q({0} CD),
+						'other' => q({0} CD),
+						'zero' => q({0} CD),
 					},
 					'celsius' => {
+						'' => q(°C),
 						'one' => q({0} °C),
 						'other' => q({0} °C),
 						'zero' => q({0} °C),
 					},
+					'centiliter' => {
+						'' => q(cl),
+						'one' => q({0} cl),
+						'other' => q({0} cl),
+						'zero' => q({0} cl),
+					},
 					'centimeter' => {
+						'' => q(cm),
 						'one' => q({0} cm),
 						'other' => q({0} cm),
 						'zero' => q({0} cm),
 					},
+					'cubic-centimeter' => {
+						'' => q(cm³),
+						'one' => q({0} cm³),
+						'other' => q({0} cm³),
+						'zero' => q({0} cm³),
+					},
+					'cubic-foot' => {
+						'' => q(ft³),
+						'one' => q({0} ft³),
+						'other' => q({0} ft³),
+						'zero' => q({0} ft³),
+					},
+					'cubic-inch' => {
+						'' => q(in³),
+						'one' => q({0} in³),
+						'other' => q({0} in³),
+						'zero' => q({0} in³),
+					},
 					'cubic-kilometer' => {
+						'' => q(km³),
 						'one' => q({0} km³),
 						'other' => q({0} km³),
 						'zero' => q({0} km³),
 					},
+					'cubic-meter' => {
+						'' => q(m³),
+						'one' => q({0} m³),
+						'other' => q({0} m³),
+						'zero' => q({0} m³),
+					},
 					'cubic-mile' => {
+						'' => q(mi³),
 						'one' => q({0} mi³),
 						'other' => q({0} mi³),
 						'zero' => q({0} mi³),
 					},
+					'cubic-yard' => {
+						'' => q(yd³),
+						'one' => q({0} yd³),
+						'other' => q({0} yd³),
+						'zero' => q({0} yd³),
+					},
+					'cup' => {
+						'' => q(gl.),
+						'one' => q({0} gl.),
+						'other' => q({0} gl.),
+						'zero' => q({0} gl.),
+					},
 					'day' => {
-						'one' => q({0} d),
-						'other' => q({0} d),
-						'zero' => q({0} d),
+						'' => q(d.),
+						'one' => q({0} d.),
+						'other' => q({0} d.),
+						'zero' => q({0} d.),
+					},
+					'deciliter' => {
+						'' => q(dl),
+						'one' => q({0} dl),
+						'other' => q({0} dl),
+						'zero' => q({0} dl),
+					},
+					'decimeter' => {
+						'' => q(dm),
+						'one' => q({0} dm),
+						'other' => q({0} dm),
+						'zero' => q({0} dm),
 					},
 					'degree' => {
+						'' => q(°),
 						'one' => q({0}°),
 						'other' => q({0}°),
 						'zero' => q({0}°),
 					},
 					'fahrenheit' => {
+						'' => q(°F),
 						'one' => q({0} °F),
 						'other' => q({0} °F),
 						'zero' => q({0} °F),
 					},
+					'fluid-ounce' => {
+						'' => q(fl oz),
+						'one' => q({0} fl oz),
+						'other' => q({0} fl oz),
+						'zero' => q({0} fl oz),
+					},
+					'foodcalorie' => {
+						'' => q(cal),
+						'one' => q({0} cal),
+						'other' => q({0} cal),
+						'zero' => q({0} cal),
+					},
 					'foot' => {
+						'' => q(ft),
 						'one' => q({0} ft),
 						'other' => q({0} ft),
 						'zero' => q({0} ft),
 					},
 					'g-force' => {
+						'' => q(Brīvās krišanas paātrinājums:),
 						'one' => q({0} G),
 						'other' => q({0} G),
 						'zero' => q({0} G),
 					},
+					'gallon' => {
+						'' => q(gal),
+						'one' => q({0} gal),
+						'other' => q({0} gal),
+						'zero' => q({0} gal),
+					},
+					'gigabit' => {
+						'' => q(Gb),
+						'one' => q({0} Gb),
+						'other' => q({0} Gb),
+						'zero' => q({0} Gb),
+					},
+					'gigabyte' => {
+						'' => q(GB),
+						'one' => q({0} GB),
+						'other' => q({0} GB),
+						'zero' => q({0} GB),
+					},
+					'gigahertz' => {
+						'' => q(GHz),
+						'one' => q({0} GHz),
+						'other' => q({0} GHz),
+						'zero' => q({0} GHz),
+					},
+					'gigawatt' => {
+						'' => q(GW),
+						'one' => q({0} GW),
+						'other' => q({0} GW),
+						'zero' => q({0} GW),
+					},
 					'gram' => {
+						'' => q(g),
 						'one' => q({0} g),
 						'other' => q({0} g),
 						'zero' => q({0} g),
 					},
 					'hectare' => {
+						'' => q(ha),
 						'one' => q({0} ha),
 						'other' => q({0} ha),
 						'zero' => q({0} ha),
 					},
+					'hectoliter' => {
+						'' => q(hl),
+						'one' => q({0} hl),
+						'other' => q({0} hl),
+						'zero' => q({0} hl),
+					},
 					'hectopascal' => {
+						'' => q(hPa),
 						'one' => q({0} hPa),
 						'other' => q({0} hPa),
 						'zero' => q({0} hPa),
 					},
+					'hertz' => {
+						'' => q(Hz),
+						'one' => q({0} Hz),
+						'other' => q({0} Hz),
+						'zero' => q({0} Hz),
+					},
 					'horsepower' => {
+						'' => q(ZS),
 						'one' => q({0} ZS),
 						'other' => q({0} ZS),
 						'zero' => q({0} ZS),
 					},
 					'hour' => {
-						'one' => q({0} h),
-						'other' => q({0} h),
-						'zero' => q({0} h),
+						'' => q({0}/st.),
+						'one' => q({0} st.),
+						'other' => q({0} st.),
+						'zero' => q({0} st.),
 					},
 					'inch' => {
-						'one' => q({0} in),
-						'other' => q({0} in),
-						'zero' => q({0} in),
+						'' => q(c.),
+						'one' => q({0} c.),
+						'other' => q({0} c.),
+						'zero' => q({0} c.),
 					},
 					'inch-hg' => {
+						'' => q(inHg),
 						'one' => q({0} inHg),
 						'other' => q({0} inHg),
 						'zero' => q({0} inHg),
 					},
+					'joule' => {
+						'' => q(J),
+						'one' => q({0} J),
+						'other' => q({0} J),
+						'zero' => q({0} J),
+					},
+					'karat' => {
+						'' => q(kt),
+						'one' => q({0} kt),
+						'other' => q({0} kt),
+						'zero' => q({0} kt),
+					},
+					'kelvin' => {
+						'' => q(K),
+						'one' => q({0} K),
+						'other' => q({0} K),
+						'zero' => q({0} K),
+					},
+					'kilobit' => {
+						'' => q(Kb),
+						'one' => q({0} Kb),
+						'other' => q({0} Kb),
+						'zero' => q({0} Kb),
+					},
+					'kilobyte' => {
+						'' => q(KB),
+						'one' => q({0} KB),
+						'other' => q({0} KB),
+						'zero' => q({0} KB),
+					},
+					'kilocalorie' => {
+						'' => q(kcal),
+						'one' => q({0} kcal),
+						'other' => q({0} kcal),
+						'zero' => q({0} kcal),
+					},
 					'kilogram' => {
+						'' => q(kg),
 						'one' => q({0} kg),
 						'other' => q({0} kg),
 						'zero' => q({0} kg),
 					},
+					'kilohertz' => {
+						'' => q(kHz),
+						'one' => q({0} kHz),
+						'other' => q({0} kHz),
+						'zero' => q({0} kHz),
+					},
+					'kilojoule' => {
+						'' => q(kJ),
+						'one' => q({0} kJ),
+						'other' => q({0} kJ),
+						'zero' => q({0} kJ),
+					},
 					'kilometer' => {
+						'' => q(kilometri),
 						'one' => q({0} km),
 						'other' => q({0} km),
 						'zero' => q({0} km),
 					},
 					'kilometer-per-hour' => {
-						'one' => q({0} km/h),
-						'other' => q({0} km/h),
-						'zero' => q({0} km/h),
+						'' => q(km/st.),
+						'one' => q({0} km/st.),
+						'other' => q({0} km/st.),
+						'zero' => q({0} km/st.),
 					},
 					'kilowatt' => {
+						'' => q(kW),
 						'one' => q({0} kW),
 						'other' => q({0} kW),
 						'zero' => q({0} kW),
 					},
+					'kilowatt-hour' => {
+						'' => q(kWh),
+						'one' => q({0} kWh),
+						'other' => q({0} kWh),
+						'zero' => q({0} kWh),
+					},
 					'light-year' => {
-						'one' => q({0} ly),
-						'other' => q({0} ly),
-						'zero' => q({0} ly),
+						'' => q(g.g.),
+						'one' => q({0} g.g.),
+						'other' => q({0} g.g.),
+						'zero' => q({0} g.g.),
 					},
 					'liter' => {
+						'' => q(l),
 						'one' => q({0} l),
 						'other' => q({0} l),
 						'zero' => q({0} l),
 					},
+					'liter-per-kilometer' => {
+						'' => q(l/km),
+						'one' => q({0} l/km),
+						'other' => q({0} l/km),
+						'zero' => q({0} l/km),
+					},
+					'lux' => {
+						'' => q(lx),
+						'one' => q({0} lx),
+						'other' => q({0} lx),
+						'zero' => q({0} lx),
+					},
+					'megabit' => {
+						'' => q(Mb),
+						'one' => q({0} Mb),
+						'other' => q({0} Mb),
+						'zero' => q({0} Mb),
+					},
+					'megabyte' => {
+						'' => q(MB),
+						'one' => q({0} MB),
+						'other' => q({0} MB),
+						'zero' => q({0} MB),
+					},
+					'megahertz' => {
+						'' => q(MHz),
+						'one' => q({0} MHz),
+						'other' => q({0} MHz),
+						'zero' => q({0} MHz),
+					},
+					'megaliter' => {
+						'' => q(ML),
+						'one' => q({0} ML),
+						'other' => q({0} ML),
+						'zero' => q({0} ML),
+					},
+					'megawatt' => {
+						'' => q(MW),
+						'one' => q({0} MW),
+						'other' => q({0} MW),
+						'zero' => q({0} MW),
+					},
 					'meter' => {
+						'' => q(m),
 						'one' => q({0} m),
 						'other' => q({0} m),
 						'zero' => q({0} m),
 					},
 					'meter-per-second' => {
+						'' => q(m/s),
 						'one' => q({0} m/s),
 						'other' => q({0} m/s),
 						'zero' => q({0} m/s),
 					},
+					'meter-per-second-squared' => {
+						'' => q(m/s²),
+						'one' => q({0} m/s²),
+						'other' => q({0} m/s²),
+						'zero' => q({0} m/s²),
+					},
+					'metric-ton' => {
+						'' => q(t),
+						'one' => q({0} t),
+						'other' => q({0} t),
+						'zero' => q({0} t),
+					},
+					'microgram' => {
+						'' => q(µg),
+						'one' => q({0} µg),
+						'other' => q({0} µg),
+						'zero' => q({0} µg),
+					},
+					'micrometer' => {
+						'' => q(µm),
+						'one' => q({0} µm),
+						'other' => q({0} µm),
+						'zero' => q({0} µm),
+					},
+					'microsecond' => {
+						'' => q(μs),
+						'one' => q({0} μs),
+						'other' => q({0} μs),
+						'zero' => q({0} μs),
+					},
 					'mile' => {
+						'' => q(mi),
 						'one' => q({0} mi),
 						'other' => q({0} mi),
 						'zero' => q({0} mi),
 					},
+					'mile-per-gallon' => {
+						'' => q(mpg),
+						'one' => q({0} mpg),
+						'other' => q({0} mpg),
+						'zero' => q({0} mpg),
+					},
 					'mile-per-hour' => {
+						'' => q(mi/h),
 						'one' => q({0} mi/h),
 						'other' => q({0} mi/h),
 						'zero' => q({0} mi/h),
 					},
+					'milliampere' => {
+						'' => q(mA),
+						'one' => q({0} mA),
+						'other' => q({0} mA),
+						'zero' => q({0} mA),
+					},
 					'millibar' => {
+						'' => q(mbar),
 						'one' => q({0} mbar),
 						'other' => q({0} mbar),
 						'zero' => q({0} mbar),
 					},
+					'milligram' => {
+						'' => q(mg),
+						'one' => q({0} mg),
+						'other' => q({0} mg),
+						'zero' => q({0} mg),
+					},
+					'milliliter' => {
+						'' => q(ml),
+						'one' => q({0} ml),
+						'other' => q({0} ml),
+						'zero' => q({0} ml),
+					},
 					'millimeter' => {
+						'' => q(mm),
 						'one' => q({0} mm),
 						'other' => q({0} mm),
 						'zero' => q({0} mm),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(mmHg),
+						'one' => q({0} mmHg),
+						'other' => q({0} mmHg),
+						'zero' => q({0} mmHg),
+					},
 					'millisecond' => {
+						'' => q(ms),
 						'one' => q({0} ms),
 						'other' => q({0} ms),
 						'zero' => q({0} ms),
 					},
+					'milliwatt' => {
+						'' => q(mW),
+						'one' => q({0} mW),
+						'other' => q({0} mW),
+						'zero' => q({0} mW),
+					},
 					'minute' => {
-						'one' => q({0} min),
-						'other' => q({0} min),
-						'zero' => q({0} min),
+						'' => q(min.),
+						'one' => q({0} min.),
+						'other' => q({0} min.),
+						'zero' => q({0} min.),
 					},
 					'month' => {
+						'' => q(mēneši),
 						'one' => q({0} mēn.),
 						'other' => q({0} mēn.),
 						'zero' => q({0} mēn.),
 					},
+					'nanometer' => {
+						'' => q(nm),
+						'one' => q({0} nm),
+						'other' => q({0} nm),
+						'zero' => q({0} nm),
+					},
+					'nanosecond' => {
+						'' => q(ns),
+						'one' => q({0} ns),
+						'other' => q({0} ns),
+						'zero' => q({0} ns),
+					},
+					'nautical-mile' => {
+						'' => q(nmi),
+						'one' => q({0} nmi),
+						'other' => q({0} nmi),
+						'zero' => q({0} nmi),
+					},
+					'ohm' => {
+						'' => q(Ω),
+						'one' => q({0} Ω),
+						'other' => q({0} Ω),
+						'zero' => q({0} Ω),
+					},
 					'ounce' => {
+						'' => q(oz),
 						'one' => q({0} oz),
 						'other' => q({0} oz),
 						'zero' => q({0} oz),
+					},
+					'ounce-troy' => {
+						'' => q(oz t),
+						'one' => q({0} oz t),
+						'other' => q({0} oz t),
+						'zero' => q({0} oz t),
+					},
+					'parsec' => {
+						'' => q(pc),
+						'one' => q({0} pc),
+						'other' => q({0} pc),
+						'zero' => q({0} pc),
 					},
 					'per' => {
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(pm),
 						'one' => q({0} pm),
 						'other' => q({0} pm),
 						'zero' => q({0} pm),
 					},
+					'pint' => {
+						'' => q(pt),
+						'one' => q({0} pt),
+						'other' => q({0} pt),
+						'zero' => q({0} pt),
+					},
 					'pound' => {
+						'' => q(lb),
 						'one' => q({0} lb),
 						'other' => q({0} lb),
 						'zero' => q({0} lb),
 					},
+					'pound-per-square-inch' => {
+						'' => q(psi),
+						'one' => q({0} psi),
+						'other' => q({0} psi),
+						'zero' => q({0} psi),
+					},
+					'quart' => {
+						'' => q(qt),
+						'one' => q({0} qt),
+						'other' => q({0} qt),
+						'zero' => q({0} qt),
+					},
+					'radian' => {
+						'' => q(rad),
+						'one' => q({0} rad),
+						'other' => q({0} rad),
+						'zero' => q({0} rad),
+					},
 					'second' => {
-						'one' => q({0} s),
-						'other' => q({0} s),
-						'zero' => q({0} s),
+						'' => q({0}/sek.),
+						'one' => q({0} sek.),
+						'other' => q({0} sek.),
+						'zero' => q({0} sek.),
+					},
+					'square-centimeter' => {
+						'' => q(cm²),
+						'one' => q({0} cm²),
+						'other' => q({0} cm²),
+						'zero' => q({0} cm²),
 					},
 					'square-foot' => {
+						'' => q(ft²),
 						'one' => q({0} ft²),
 						'other' => q({0} ft²),
 						'zero' => q({0} ft²),
 					},
+					'square-inch' => {
+						'' => q(in²),
+						'one' => q({0} in²),
+						'other' => q({0} in²),
+						'zero' => q({0} in²),
+					},
 					'square-kilometer' => {
+						'' => q(km²),
 						'one' => q({0} km²),
 						'other' => q({0} km²),
 						'zero' => q({0} km²),
 					},
 					'square-meter' => {
+						'' => q(m²),
 						'one' => q({0} m²),
 						'other' => q({0} m²),
 						'zero' => q({0} m²),
 					},
 					'square-mile' => {
+						'' => q(mi²),
 						'one' => q({0} mi²),
 						'other' => q({0} mi²),
 						'zero' => q({0} mi²),
 					},
+					'square-yard' => {
+						'' => q(yd²),
+						'one' => q({0} yd²),
+						'other' => q({0} yd²),
+						'zero' => q({0} yd²),
+					},
+					'tablespoon' => {
+						'' => q(ĒK),
+						'one' => q({0} ĒK),
+						'other' => q({0} ĒK),
+						'zero' => q({0} ĒK),
+					},
+					'teaspoon' => {
+						'' => q(TK),
+						'one' => q({0} TK),
+						'other' => q({0} TK),
+						'zero' => q({0} TK),
+					},
+					'terabit' => {
+						'' => q(Tb),
+						'one' => q({0} Tb),
+						'other' => q({0} Tb),
+						'zero' => q({0} Tb),
+					},
+					'terabyte' => {
+						'' => q(TB),
+						'one' => q({0} TB),
+						'other' => q({0} TB),
+						'zero' => q({0} TB),
+					},
+					'ton' => {
+						'' => q(tonnas),
+						'one' => q({0} tonna),
+						'other' => q({0} tonnas),
+						'zero' => q({0} tonnas),
+					},
+					'volt' => {
+						'' => q(V),
+						'one' => q({0} V),
+						'other' => q({0} V),
+						'zero' => q({0} V),
+					},
 					'watt' => {
+						'' => q(W),
 						'one' => q({0} W),
 						'other' => q({0} W),
 						'zero' => q({0} W),
 					},
 					'week' => {
+						'' => q(ned.),
 						'one' => q({0} ned.),
 						'other' => q({0} ned.),
 						'zero' => q({0} ned.),
 					},
 					'yard' => {
+						'' => q(yd),
 						'one' => q({0} yd),
 						'other' => q({0} yd),
 						'zero' => q({0} yd),
 					},
 					'year' => {
+						'' => q(g.),
 						'one' => q({0} g.),
 						'other' => q({0} g.),
 						'zero' => q({0} g.),
@@ -2407,14 +3373,14 @@ has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
 	init_arg	=> undef,
-	default		=> sub { qr'^(?i:jā|ja|j|yes|y)$' }
+	default		=> sub { qr'^(?i:jā|j|yes|y)$' }
 );
 
 has 'nostr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
 	init_arg	=> undef,
-	default		=> sub { qr'^(?i:nē|ne|n)$' }
+	default		=> sub { qr'^(?i:nē|n)$' }
 );
 
 has 'listPatterns' => (
@@ -2427,6 +3393,20 @@ has 'listPatterns' => (
 				end => q({0} un {1}),
 				2 => q({0} un {1}),
 		} }
+);
+
+has 'default_numbering_system' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has native_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
 );
 
 has 'number_symbols' => (
@@ -2445,7 +3425,7 @@ has 'number_symbols' => (
 			'perMille' => q(‰),
 			'percentSign' => q(%),
 			'plusSign' => q(+),
-			'superscriptingExponent' => q(·),
+			'superscriptingExponent' => q(×),
 		},
 	} }
 );
@@ -2672,12 +3652,12 @@ has 'number_currency_formats' => (
 			'pattern' => {
 				'default' => {
 					'accounting' => {
-						'negative' => '¤#,##0.00',
-						'positive' => '¤#,##0.00',
+						'negative' => '¤#0.00',
+						'positive' => '¤#0.00',
 					},
 					'standard' => {
-						'negative' => '¤#,##0.00',
-						'positive' => '¤#,##0.00',
+						'negative' => '¤#0.00',
+						'positive' => '¤#0.00',
 					},
 				},
 			},
@@ -2691,14 +3671,16 @@ has 'curriencies' => (
 	init_arg	=> undef,
 	default		=> sub { {
 		'AED' => {
+			symbol => 'AED',
 			display_name => {
 				'currency' => q(Apvienoto Arābu Emirātu dirhēms),
-				'one' => q(Apvienoto Arābu Emirātu dirhēms),
-				'other' => q(Apvienoto Arābu Emirātu dirhēmi),
-				'zero' => q(Apvienoto Arābu Emirātu dirhēmi),
+				'one' => q(AAE dirhēms),
+				'other' => q(AAE dirhēmi),
+				'zero' => q(AAE dirhēmi),
 			},
 		},
 		'AFN' => {
+			symbol => 'AFN',
 			display_name => {
 				'currency' => q(Afganistānas afgāns),
 				'one' => q(Afganistānas afgāns),
@@ -2707,6 +3689,7 @@ has 'curriencies' => (
 			},
 		},
 		'ALL' => {
+			symbol => 'ALL',
 			display_name => {
 				'currency' => q(Albānijas leks),
 				'one' => q(Albānijas leks),
@@ -2715,6 +3698,7 @@ has 'curriencies' => (
 			},
 		},
 		'AMD' => {
+			symbol => 'AMD',
 			display_name => {
 				'currency' => q(Armēnijas drams),
 				'one' => q(Armēnijas drams),
@@ -2723,6 +3707,7 @@ has 'curriencies' => (
 			},
 		},
 		'ANG' => {
+			symbol => 'ANG',
 			display_name => {
 				'currency' => q(Nīderlandes Antiļu guldenis),
 				'one' => q(Nīderlandes Antiļu guldenis),
@@ -2731,6 +3716,7 @@ has 'curriencies' => (
 			},
 		},
 		'AOA' => {
+			symbol => 'AOA',
 			display_name => {
 				'currency' => q(Angolas kvanza),
 				'one' => q(Angolas kvanza),
@@ -2739,6 +3725,7 @@ has 'curriencies' => (
 			},
 		},
 		'ARS' => {
+			symbol => 'ARS',
 			display_name => {
 				'currency' => q(Argentīnas peso),
 				'one' => q(Argentīnas peso),
@@ -2761,6 +3748,7 @@ has 'curriencies' => (
 			},
 		},
 		'AWG' => {
+			symbol => 'AWG',
 			display_name => {
 				'currency' => q(Arubas guldenis),
 				'one' => q(Arubas guldenis),
@@ -2777,6 +3765,7 @@ has 'curriencies' => (
 			},
 		},
 		'AZN' => {
+			symbol => 'AZN',
 			display_name => {
 				'currency' => q(Azerbaidžānas manats),
 				'one' => q(Azerbaidžānas manats),
@@ -2785,6 +3774,7 @@ has 'curriencies' => (
 			},
 		},
 		'BAM' => {
+			symbol => 'BAM',
 			display_name => {
 				'currency' => q(Bosnijas un Hercogovinas marka),
 				'one' => q(Bosnijas un Hercogovinas marka),
@@ -2793,6 +3783,7 @@ has 'curriencies' => (
 			},
 		},
 		'BBD' => {
+			symbol => 'BBD',
 			display_name => {
 				'currency' => q(Barbadosas dolārs),
 				'one' => q(Barbadosas dolārs),
@@ -2801,6 +3792,7 @@ has 'curriencies' => (
 			},
 		},
 		'BDT' => {
+			symbol => 'BDT',
 			display_name => {
 				'currency' => q(Bangladešas taka),
 				'one' => q(Bangladešas taka),
@@ -2817,6 +3809,7 @@ has 'curriencies' => (
 			},
 		},
 		'BGN' => {
+			symbol => 'BGN',
 			display_name => {
 				'currency' => q(Bulgārijas leva),
 				'one' => q(Bulgārijas leva),
@@ -2825,6 +3818,7 @@ has 'curriencies' => (
 			},
 		},
 		'BHD' => {
+			symbol => 'BHD',
 			display_name => {
 				'currency' => q(Bahreinas dinārs),
 				'one' => q(Bahreinas dinārs),
@@ -2833,6 +3827,7 @@ has 'curriencies' => (
 			},
 		},
 		'BIF' => {
+			symbol => 'BIF',
 			display_name => {
 				'currency' => q(Burundi franks),
 				'one' => q(Burundi franks),
@@ -2841,6 +3836,7 @@ has 'curriencies' => (
 			},
 		},
 		'BMD' => {
+			symbol => 'BMD',
 			display_name => {
 				'currency' => q(Bermudu dolārs),
 				'one' => q(Bermudu dolārs),
@@ -2849,6 +3845,7 @@ has 'curriencies' => (
 			},
 		},
 		'BND' => {
+			symbol => 'BND',
 			display_name => {
 				'currency' => q(Brunejas dolārs),
 				'one' => q(Brunejas dolārs),
@@ -2857,6 +3854,7 @@ has 'curriencies' => (
 			},
 		},
 		'BOB' => {
+			symbol => 'BOB',
 			display_name => {
 				'currency' => q(Bolīvijas boliviano),
 				'one' => q(Bolīvijas boliviano),
@@ -2874,6 +3872,7 @@ has 'curriencies' => (
 			},
 		},
 		'BSD' => {
+			symbol => 'BSD',
 			display_name => {
 				'currency' => q(Bahamu dolārs),
 				'one' => q(Bahamu dolārs),
@@ -2882,6 +3881,7 @@ has 'curriencies' => (
 			},
 		},
 		'BTN' => {
+			symbol => 'BTN',
 			display_name => {
 				'currency' => q(Butānas ngultrums),
 				'one' => q(Butānas ngultrums),
@@ -2890,14 +3890,16 @@ has 'curriencies' => (
 			},
 		},
 		'BWP' => {
+			symbol => 'BWP',
 			display_name => {
-				'currency' => q(Botsvānas pula),
-				'one' => q(Botsvānas pula),
-				'other' => q(Botsvānas pulas),
-				'zero' => q(Botsvānas pulas),
+				'currency' => q(Botsvanas pula),
+				'one' => q(Botsvanas pula),
+				'other' => q(Botsvanas pulas),
+				'zero' => q(Botsvanas pulas),
 			},
 		},
 		'BYR' => {
+			symbol => 'BYR',
 			display_name => {
 				'currency' => q(Baltkrievijas rubelis),
 				'one' => q(Baltkrievijas rubelis),
@@ -2906,6 +3908,7 @@ has 'curriencies' => (
 			},
 		},
 		'BZD' => {
+			symbol => 'BZD',
 			display_name => {
 				'currency' => q(Belizas dolārs),
 				'one' => q(Belizas dolārs),
@@ -2923,6 +3926,7 @@ has 'curriencies' => (
 			},
 		},
 		'CDF' => {
+			symbol => 'CDF',
 			display_name => {
 				'currency' => q(KDR franks),
 				'one' => q(KDR franks),
@@ -2931,6 +3935,7 @@ has 'curriencies' => (
 			},
 		},
 		'CHF' => {
+			symbol => 'CHF',
 			display_name => {
 				'currency' => q(Šveices franks),
 				'one' => q(Šveices franks),
@@ -2939,6 +3944,7 @@ has 'curriencies' => (
 			},
 		},
 		'CLP' => {
+			symbol => 'CLP',
 			display_name => {
 				'currency' => q(Čīles peso),
 				'one' => q(Čīles peso),
@@ -2956,6 +3962,7 @@ has 'curriencies' => (
 			},
 		},
 		'COP' => {
+			symbol => 'COP',
 			display_name => {
 				'currency' => q(Kolumbijas peso),
 				'one' => q(Kolumbijas peso),
@@ -2969,6 +3976,7 @@ has 'curriencies' => (
 			},
 		},
 		'CRC' => {
+			symbol => 'CRC',
 			display_name => {
 				'currency' => q(Kostarikas kolons),
 				'one' => q(Kostarikas kolons),
@@ -2977,6 +3985,7 @@ has 'curriencies' => (
 			},
 		},
 		'CUC' => {
+			symbol => 'CUC',
 			display_name => {
 				'currency' => q(Kubas konvertējamais peso),
 				'one' => q(Kubas konvertējamais peso),
@@ -2985,6 +3994,7 @@ has 'curriencies' => (
 			},
 		},
 		'CUP' => {
+			symbol => 'CUP',
 			display_name => {
 				'currency' => q(Kubas peso),
 				'one' => q(Kubas peso),
@@ -2993,6 +4003,7 @@ has 'curriencies' => (
 			},
 		},
 		'CVE' => {
+			symbol => 'CVE',
 			display_name => {
 				'currency' => q(Kaboverdes eskudo),
 				'one' => q(Kaboverdes eskudo),
@@ -3006,6 +4017,7 @@ has 'curriencies' => (
 			},
 		},
 		'CZK' => {
+			symbol => 'CZK',
 			display_name => {
 				'currency' => q(Čehijas krona),
 				'one' => q(Čehijas krona),
@@ -3019,6 +4031,7 @@ has 'curriencies' => (
 			},
 		},
 		'DJF' => {
+			symbol => 'DJF',
 			display_name => {
 				'currency' => q(Džibutijas franks),
 				'one' => q(Džibutijas franks),
@@ -3027,6 +4040,7 @@ has 'curriencies' => (
 			},
 		},
 		'DKK' => {
+			symbol => 'DKK',
 			display_name => {
 				'currency' => q(Dānijas krona),
 				'one' => q(Dānijas krona),
@@ -3035,6 +4049,7 @@ has 'curriencies' => (
 			},
 		},
 		'DOP' => {
+			symbol => 'DOP',
 			display_name => {
 				'currency' => q(Dominikānas peso),
 				'one' => q(Dominikānas peso),
@@ -3043,6 +4058,7 @@ has 'curriencies' => (
 			},
 		},
 		'DZD' => {
+			symbol => 'DZD',
 			display_name => {
 				'currency' => q(Alžīrijas dinārs),
 				'one' => q(Alžīrijas dinārs),
@@ -3056,6 +4072,7 @@ has 'curriencies' => (
 			},
 		},
 		'EGP' => {
+			symbol => 'EGP',
 			display_name => {
 				'currency' => q(Ēģiptes mārciņa),
 				'one' => q(Ēģiptes mārciņa),
@@ -3064,6 +4081,7 @@ has 'curriencies' => (
 			},
 		},
 		'ERN' => {
+			symbol => 'ERN',
 			display_name => {
 				'currency' => q(Eritrejas nakfa),
 				'one' => q(Eritrejas nakfa),
@@ -3077,6 +4095,7 @@ has 'curriencies' => (
 			},
 		},
 		'ETB' => {
+			symbol => 'ETB',
 			display_name => {
 				'currency' => q(Etiopijas birs),
 				'one' => q(Etiopijas birs),
@@ -3099,6 +4118,7 @@ has 'curriencies' => (
 			},
 		},
 		'FJD' => {
+			symbol => 'FJD',
 			display_name => {
 				'currency' => q(Fidži dolārs),
 				'one' => q(Fidži dolārs),
@@ -3107,11 +4127,12 @@ has 'curriencies' => (
 			},
 		},
 		'FKP' => {
+			symbol => 'FKP',
 			display_name => {
-				'currency' => q(Folklenda salu mārciņa),
-				'one' => q(Folklenda salu mārciņa),
-				'other' => q(Folklenda salu mārciņas),
-				'zero' => q(Folklenda salu mārciņas),
+				'currency' => q(Folklenda Salu mārciņa),
+				'one' => q(Folklenda Salu mārciņa),
+				'other' => q(Folklenda Salu mārciņas),
+				'zero' => q(Folklenda Salu mārciņas),
 			},
 		},
 		'FRF' => {
@@ -3129,6 +4150,7 @@ has 'curriencies' => (
 			},
 		},
 		'GEL' => {
+			symbol => 'GEL',
 			display_name => {
 				'currency' => q(Gruzijas lari),
 				'one' => q(Gruzijas lari),
@@ -3137,6 +4159,7 @@ has 'curriencies' => (
 			},
 		},
 		'GHS' => {
+			symbol => 'GHS',
 			display_name => {
 				'currency' => q(Ganas sedi),
 				'one' => q(Ganas sedi),
@@ -3145,6 +4168,7 @@ has 'curriencies' => (
 			},
 		},
 		'GIP' => {
+			symbol => 'GIP',
 			display_name => {
 				'currency' => q(Gibraltāra mārciņa),
 				'one' => q(Gibraltāra mārciņa),
@@ -3153,6 +4177,7 @@ has 'curriencies' => (
 			},
 		},
 		'GMD' => {
+			symbol => 'GMD',
 			display_name => {
 				'currency' => q(Gambijas dalasi),
 				'one' => q(Gambijas dalasi),
@@ -3161,6 +4186,7 @@ has 'curriencies' => (
 			},
 		},
 		'GNF' => {
+			symbol => 'GNF',
 			display_name => {
 				'currency' => q(Gvinejas franks),
 				'one' => q(Gvinejas franks),
@@ -3174,6 +4200,7 @@ has 'curriencies' => (
 			},
 		},
 		'GTQ' => {
+			symbol => 'GTQ',
 			display_name => {
 				'currency' => q(Gvatemalas ketsals),
 				'one' => q(Gvatemalas ketsals),
@@ -3182,6 +4209,7 @@ has 'curriencies' => (
 			},
 		},
 		'GYD' => {
+			symbol => 'GYD',
 			display_name => {
 				'currency' => q(Gajānas dolārs),
 				'one' => q(Gajānas dolārs),
@@ -3199,6 +4227,7 @@ has 'curriencies' => (
 			},
 		},
 		'HNL' => {
+			symbol => 'HNL',
 			display_name => {
 				'currency' => q(Hondurasas lempīra),
 				'one' => q(Hondurasas lempīra),
@@ -3207,6 +4236,7 @@ has 'curriencies' => (
 			},
 		},
 		'HRK' => {
+			symbol => 'HRK',
 			display_name => {
 				'currency' => q(Horvātijas kuna),
 				'one' => q(Horvātijas kuna),
@@ -3215,6 +4245,7 @@ has 'curriencies' => (
 			},
 		},
 		'HTG' => {
+			symbol => 'HTG',
 			display_name => {
 				'currency' => q(Haiti gurds),
 				'one' => q(Haiti gurds),
@@ -3223,6 +4254,7 @@ has 'curriencies' => (
 			},
 		},
 		'HUF' => {
+			symbol => 'HUF',
 			display_name => {
 				'currency' => q(Ungārijas forints),
 				'one' => q(Ungārijas forints),
@@ -3231,6 +4263,7 @@ has 'curriencies' => (
 			},
 		},
 		'IDR' => {
+			symbol => 'IDR',
 			display_name => {
 				'currency' => q(Indonēzijas rūpija),
 				'one' => q(Indonēzijas rūpija),
@@ -3262,6 +4295,7 @@ has 'curriencies' => (
 			},
 		},
 		'IQD' => {
+			symbol => 'IQD',
 			display_name => {
 				'currency' => q(Irākas dinārs),
 				'one' => q(Irākas dinārs),
@@ -3270,6 +4304,7 @@ has 'curriencies' => (
 			},
 		},
 		'IRR' => {
+			symbol => 'IRR',
 			display_name => {
 				'currency' => q(Irānas riāls),
 				'one' => q(Irānas riāls),
@@ -3278,6 +4313,7 @@ has 'curriencies' => (
 			},
 		},
 		'ISK' => {
+			symbol => 'ISK',
 			display_name => {
 				'currency' => q(Īslandes krona),
 				'one' => q(Īslandes krona),
@@ -3291,6 +4327,7 @@ has 'curriencies' => (
 			},
 		},
 		'JMD' => {
+			symbol => 'JMD',
 			display_name => {
 				'currency' => q(Jamaikas dolārs),
 				'one' => q(Jamaikas dolārs),
@@ -3299,6 +4336,7 @@ has 'curriencies' => (
 			},
 		},
 		'JOD' => {
+			symbol => 'JOD',
 			display_name => {
 				'currency' => q(Jordānas dinārs),
 				'one' => q(Jordānas dinārs),
@@ -3316,6 +4354,7 @@ has 'curriencies' => (
 			},
 		},
 		'KES' => {
+			symbol => 'KES',
 			display_name => {
 				'currency' => q(Kenijas šiliņš),
 				'one' => q(Kenijas šiliņš),
@@ -3324,6 +4363,7 @@ has 'curriencies' => (
 			},
 		},
 		'KGS' => {
+			symbol => 'KGS',
 			display_name => {
 				'currency' => q(Kirgizstānas soms),
 				'one' => q(Kirgizstānas soms),
@@ -3332,6 +4372,7 @@ has 'curriencies' => (
 			},
 		},
 		'KHR' => {
+			symbol => 'KHR',
 			display_name => {
 				'currency' => q(Kambodžas riels),
 				'one' => q(Kambodžas riels),
@@ -3340,6 +4381,7 @@ has 'curriencies' => (
 			},
 		},
 		'KMF' => {
+			symbol => 'KMF',
 			display_name => {
 				'currency' => q(Komoru franks),
 				'one' => q(Komoru franks),
@@ -3348,6 +4390,7 @@ has 'curriencies' => (
 			},
 		},
 		'KPW' => {
+			symbol => 'KPW',
 			display_name => {
 				'currency' => q(Ziemeļkorejas vona),
 				'one' => q(Ziemeļkorejas vona),
@@ -3365,6 +4408,7 @@ has 'curriencies' => (
 			},
 		},
 		'KWD' => {
+			symbol => 'KWD',
 			display_name => {
 				'currency' => q(Kuveitas dinārs),
 				'one' => q(Kuveitas dinārs),
@@ -3373,6 +4417,7 @@ has 'curriencies' => (
 			},
 		},
 		'KYD' => {
+			symbol => 'KYD',
 			display_name => {
 				'currency' => q(Kaimanu salu dolārs),
 				'one' => q(Kaimanu salu dolārs),
@@ -3381,6 +4426,7 @@ has 'curriencies' => (
 			},
 		},
 		'KZT' => {
+			symbol => 'KZT',
 			display_name => {
 				'currency' => q(Kazahstānas tenge),
 				'one' => q(Kazahstānas tenge),
@@ -3389,6 +4435,7 @@ has 'curriencies' => (
 			},
 		},
 		'LAK' => {
+			symbol => 'LAK',
 			display_name => {
 				'currency' => q(Laosas kips),
 				'one' => q(Laosas kips),
@@ -3397,6 +4444,7 @@ has 'curriencies' => (
 			},
 		},
 		'LBP' => {
+			symbol => 'LBP',
 			display_name => {
 				'currency' => q(Libānas mārciņa),
 				'one' => q(Libānas mārciņa),
@@ -3405,6 +4453,7 @@ has 'curriencies' => (
 			},
 		},
 		'LKR' => {
+			symbol => 'LKR',
 			display_name => {
 				'currency' => q(Šrilankas rūpija),
 				'one' => q(Šrilankas rūpija),
@@ -3413,6 +4462,7 @@ has 'curriencies' => (
 			},
 		},
 		'LRD' => {
+			symbol => 'LRD',
 			display_name => {
 				'currency' => q(Libērijas dolārs),
 				'one' => q(Libērijas dolārs),
@@ -3426,6 +4476,7 @@ has 'curriencies' => (
 			},
 		},
 		'LTL' => {
+			symbol => 'LTL',
 			display_name => {
 				'currency' => q(Lietuvas lits),
 				'one' => q(Lietuvas lits),
@@ -3453,6 +4504,7 @@ has 'curriencies' => (
 			},
 		},
 		'LYD' => {
+			symbol => 'LYD',
 			display_name => {
 				'currency' => q(Lībijas dinārs),
 				'one' => q(Lībijas dinārs),
@@ -3461,6 +4513,7 @@ has 'curriencies' => (
 			},
 		},
 		'MAD' => {
+			symbol => 'MAD',
 			display_name => {
 				'currency' => q(Marokas dirhēms),
 				'one' => q(Marokas dirhēms),
@@ -3469,6 +4522,7 @@ has 'curriencies' => (
 			},
 		},
 		'MDL' => {
+			symbol => 'MDL',
 			display_name => {
 				'currency' => q(Moldovas leja),
 				'one' => q(Moldovas leja),
@@ -3477,6 +4531,7 @@ has 'curriencies' => (
 			},
 		},
 		'MGA' => {
+			symbol => 'MGA',
 			display_name => {
 				'currency' => q(Madagaskaras ariari),
 				'one' => q(Madagaskaras ariari),
@@ -3485,6 +4540,7 @@ has 'curriencies' => (
 			},
 		},
 		'MKD' => {
+			symbol => 'MKD',
 			display_name => {
 				'currency' => q(Maķedonijas denārs),
 				'one' => q(Maķedonijas denārs),
@@ -3498,6 +4554,7 @@ has 'curriencies' => (
 			},
 		},
 		'MMK' => {
+			symbol => 'MMK',
 			display_name => {
 				'currency' => q(Mjanmas kjats),
 				'one' => q(Mjanmas kjats),
@@ -3506,6 +4563,7 @@ has 'curriencies' => (
 			},
 		},
 		'MNT' => {
+			symbol => 'MNT',
 			display_name => {
 				'currency' => q(Mongolijas tugriks),
 				'one' => q(Mongolijas tugriks),
@@ -3514,6 +4572,7 @@ has 'curriencies' => (
 			},
 		},
 		'MOP' => {
+			symbol => 'MOP',
 			display_name => {
 				'currency' => q(Makao pataka),
 				'one' => q(Makao pataka),
@@ -3522,6 +4581,7 @@ has 'curriencies' => (
 			},
 		},
 		'MRO' => {
+			symbol => 'MRO',
 			display_name => {
 				'currency' => q(Mauritānijas ugija),
 				'one' => q(Mauritānijas ugija),
@@ -3540,6 +4600,7 @@ has 'curriencies' => (
 			},
 		},
 		'MUR' => {
+			symbol => 'MUR',
 			display_name => {
 				'currency' => q(Maurīcijas rūpija),
 				'one' => q(Maurīcijas rūpija),
@@ -3548,6 +4609,7 @@ has 'curriencies' => (
 			},
 		},
 		'MVR' => {
+			symbol => 'MVR',
 			display_name => {
 				'currency' => q(Maldīvijas rūfija),
 				'one' => q(Maldīvijas rūfija),
@@ -3556,6 +4618,7 @@ has 'curriencies' => (
 			},
 		},
 		'MWK' => {
+			symbol => 'MWK',
 			display_name => {
 				'currency' => q(Malāvijas kvača),
 				'one' => q(Malāvijas kvača),
@@ -3573,6 +4636,7 @@ has 'curriencies' => (
 			},
 		},
 		'MYR' => {
+			symbol => 'MYR',
 			display_name => {
 				'currency' => q(Malaizijas ringits),
 				'one' => q(Malaizijas ringits),
@@ -3594,6 +4658,7 @@ has 'curriencies' => (
 			},
 		},
 		'MZN' => {
+			symbol => 'MZN',
 			display_name => {
 				'currency' => q(Mozambikas metikals),
 				'one' => q(Mozambikas metikals),
@@ -3602,6 +4667,7 @@ has 'curriencies' => (
 			},
 		},
 		'NAD' => {
+			symbol => 'NAD',
 			display_name => {
 				'currency' => q(Namībijas dolārs),
 				'one' => q(Namībijas dolārs),
@@ -3610,6 +4676,7 @@ has 'curriencies' => (
 			},
 		},
 		'NGN' => {
+			symbol => 'NGN',
 			display_name => {
 				'currency' => q(Nigērijas naira),
 				'one' => q(Nigērijas naira),
@@ -3618,6 +4685,7 @@ has 'curriencies' => (
 			},
 		},
 		'NIO' => {
+			symbol => 'NIO',
 			display_name => {
 				'currency' => q(Nikaragvas kordoba),
 				'one' => q(Nikaragvas kordoba),
@@ -3631,6 +4699,7 @@ has 'curriencies' => (
 			},
 		},
 		'NOK' => {
+			symbol => 'NOK',
 			display_name => {
 				'currency' => q(Norvēģijas krona),
 				'one' => q(Norvēģijas krona),
@@ -3639,6 +4708,7 @@ has 'curriencies' => (
 			},
 		},
 		'NPR' => {
+			symbol => 'NPR',
 			display_name => {
 				'currency' => q(Nepālas rūpija),
 				'one' => q(Nepālas rūpija),
@@ -3656,6 +4726,7 @@ has 'curriencies' => (
 			},
 		},
 		'OMR' => {
+			symbol => 'OMR',
 			display_name => {
 				'currency' => q(Omānas riāls),
 				'one' => q(Omānas riāls),
@@ -3664,6 +4735,7 @@ has 'curriencies' => (
 			},
 		},
 		'PAB' => {
+			symbol => 'PAB',
 			display_name => {
 				'currency' => q(Panamas balboa),
 				'one' => q(Panamas balboa),
@@ -3672,6 +4744,7 @@ has 'curriencies' => (
 			},
 		},
 		'PEN' => {
+			symbol => 'PEN',
 			display_name => {
 				'currency' => q(Peru jaunais sols),
 				'one' => q(Peru jaunais sols),
@@ -3680,6 +4753,7 @@ has 'curriencies' => (
 			},
 		},
 		'PGK' => {
+			symbol => 'PGK',
 			display_name => {
 				'currency' => q(Papua-Jaungvinejas kina),
 				'one' => q(Papua-Jaungvinejas kina),
@@ -3688,6 +4762,7 @@ has 'curriencies' => (
 			},
 		},
 		'PHP' => {
+			symbol => 'PHP',
 			display_name => {
 				'currency' => q(Filipīnu peso),
 				'one' => q(Filipīnu peso),
@@ -3696,6 +4771,7 @@ has 'curriencies' => (
 			},
 		},
 		'PKR' => {
+			symbol => 'PKR',
 			display_name => {
 				'currency' => q(Pakistānas rūpija),
 				'one' => q(Pakistānas rūpija),
@@ -3704,6 +4780,7 @@ has 'curriencies' => (
 			},
 		},
 		'PLN' => {
+			symbol => 'PLN',
 			display_name => {
 				'currency' => q(Polijas zlots),
 				'one' => q(Polijas zlots),
@@ -3717,6 +4794,7 @@ has 'curriencies' => (
 			},
 		},
 		'PYG' => {
+			symbol => 'PYG',
 			display_name => {
 				'currency' => q(Paragvajas guarani),
 				'one' => q(Paragvajas guarani),
@@ -3725,6 +4803,7 @@ has 'curriencies' => (
 			},
 		},
 		'QAR' => {
+			symbol => 'QAR',
 			display_name => {
 				'currency' => q(Kataras riāls),
 				'one' => q(Kataras riāls),
@@ -3741,6 +4820,7 @@ has 'curriencies' => (
 			},
 		},
 		'RON' => {
+			symbol => 'RON',
 			display_name => {
 				'currency' => q(Rumānijas leja),
 				'one' => q(Rumānijas leja),
@@ -3749,6 +4829,7 @@ has 'curriencies' => (
 			},
 		},
 		'RSD' => {
+			symbol => 'RSD',
 			display_name => {
 				'currency' => q(Serbijas dinārs),
 				'one' => q(Serbijas dinārs),
@@ -3757,6 +4838,7 @@ has 'curriencies' => (
 			},
 		},
 		'RUB' => {
+			symbol => 'RUB',
 			display_name => {
 				'currency' => q(Krievijas rublis),
 				'one' => q(Krievijas rublis),
@@ -3765,6 +4847,7 @@ has 'curriencies' => (
 			},
 		},
 		'RWF' => {
+			symbol => 'RWF',
 			display_name => {
 				'currency' => q(Ruandas franks),
 				'one' => q(Ruandas franks),
@@ -3773,6 +4856,7 @@ has 'curriencies' => (
 			},
 		},
 		'SAR' => {
+			symbol => 'SAR',
 			display_name => {
 				'currency' => q(Saūda riāls),
 				'one' => q(Saūda riāls),
@@ -3781,6 +4865,7 @@ has 'curriencies' => (
 			},
 		},
 		'SBD' => {
+			symbol => 'SBD',
 			display_name => {
 				'currency' => q(Zālamana Salu dolārs),
 				'one' => q(Zālamana Salu dolārs),
@@ -3789,6 +4874,7 @@ has 'curriencies' => (
 			},
 		},
 		'SCR' => {
+			symbol => 'SCR',
 			display_name => {
 				'currency' => q(Seišelu salu rūpija),
 				'one' => q(Seišelu salu rūpija),
@@ -3797,6 +4883,7 @@ has 'curriencies' => (
 			},
 		},
 		'SDG' => {
+			symbol => 'SDG',
 			display_name => {
 				'currency' => q(Sudānas mārciņa),
 				'one' => q(Sudānas mārciņa),
@@ -3805,6 +4892,7 @@ has 'curriencies' => (
 			},
 		},
 		'SEK' => {
+			symbol => 'SEK',
 			display_name => {
 				'currency' => q(Zviedrijas krona),
 				'one' => q(Zviedrijas krona),
@@ -3813,6 +4901,7 @@ has 'curriencies' => (
 			},
 		},
 		'SGD' => {
+			symbol => 'SGD',
 			display_name => {
 				'currency' => q(Singapūras dolārs),
 				'one' => q(Singapūras dolārs),
@@ -3821,6 +4910,7 @@ has 'curriencies' => (
 			},
 		},
 		'SHP' => {
+			symbol => 'SHP',
 			display_name => {
 				'currency' => q(Sv.Helēnas salas mārciņa),
 				'one' => q(Sv.Helēnas salas mārciņa),
@@ -3839,6 +4929,7 @@ has 'curriencies' => (
 			},
 		},
 		'SLL' => {
+			symbol => 'SLL',
 			display_name => {
 				'currency' => q(Sjerraleones leone),
 				'one' => q(Sjerraleones leone),
@@ -3847,6 +4938,7 @@ has 'curriencies' => (
 			},
 		},
 		'SOS' => {
+			symbol => 'SOS',
 			display_name => {
 				'currency' => q(Somālijas šiliņš),
 				'one' => q(Somālijas šiliņš),
@@ -3855,6 +4947,7 @@ has 'curriencies' => (
 			},
 		},
 		'SRD' => {
+			symbol => 'SRD',
 			display_name => {
 				'currency' => q(Surinamas dolārs),
 				'one' => q(Surinamas dolārs),
@@ -3868,6 +4961,7 @@ has 'curriencies' => (
 			},
 		},
 		'SSP' => {
+			symbol => 'SSP',
 			display_name => {
 				'currency' => q(Dienvidsudānas mārciņa),
 				'one' => q(Dienvidsudānas mārciņa),
@@ -3876,6 +4970,7 @@ has 'curriencies' => (
 			},
 		},
 		'STD' => {
+			symbol => 'STD',
 			display_name => {
 				'currency' => q(Santome un Prinsipi dobra),
 				'one' => q(Santome un Prinsipi dobra),
@@ -3889,6 +4984,7 @@ has 'curriencies' => (
 			},
 		},
 		'SYP' => {
+			symbol => 'SYP',
 			display_name => {
 				'currency' => q(Sīrijas mārciņa),
 				'one' => q(Sīrijas mārciņa),
@@ -3897,6 +4993,7 @@ has 'curriencies' => (
 			},
 		},
 		'SZL' => {
+			symbol => 'SZL',
 			display_name => {
 				'currency' => q(Svazilendas lilangeni),
 				'one' => q(Svazilendas lilangeni),
@@ -3914,6 +5011,7 @@ has 'curriencies' => (
 			},
 		},
 		'TJS' => {
+			symbol => 'TJS',
 			display_name => {
 				'currency' => q(Tadžikistānas somons),
 				'one' => q(Tadžikistānas somons),
@@ -3923,18 +5021,23 @@ has 'curriencies' => (
 		},
 		'TMM' => {
 			display_name => {
-				'currency' => q(Turkmenistānas manats),
+				'currency' => q(Turkmenistānas manats \(1993–2009\)),
+				'one' => q(Turkmenistānas manats \(1993–2009\)),
+				'other' => q(Turkmenistānas manati \(1993–2009\)),
+				'zero' => q(Turkmenistānas manati \(1993–2009\)),
 			},
 		},
 		'TMT' => {
+			symbol => 'TMT',
 			display_name => {
-				'currency' => q(Turkmenistānas jaunais manats),
-				'one' => q(Turkmenistānas jaunais manats),
+				'currency' => q(Turkmenistānas manats),
+				'one' => q(Turkmenistānas manats),
 				'other' => q(Turkmenistānas manati),
 				'zero' => q(Turkmenistānas manati),
 			},
 		},
 		'TND' => {
+			symbol => 'TND',
 			display_name => {
 				'currency' => q(Tunisijas dinārs),
 				'one' => q(Tunisijas dinārs),
@@ -3943,6 +5046,7 @@ has 'curriencies' => (
 			},
 		},
 		'TOP' => {
+			symbol => 'TOP',
 			display_name => {
 				'currency' => q(Tongas paanga),
 				'one' => q(Tongas paanga),
@@ -3952,18 +5056,23 @@ has 'curriencies' => (
 		},
 		'TRL' => {
 			display_name => {
-				'currency' => q(Turcijas lira),
+				'currency' => q(Turcijas lira \(1922–2005\)),
+				'one' => q(Turcijas lira \(1922–2005\)),
+				'other' => q(Turcijas liras \(1922–2005\)),
+				'zero' => q(Turcijas liras \(1922–2005\)),
 			},
 		},
 		'TRY' => {
+			symbol => 'TRY',
 			display_name => {
-				'currency' => q(Turcijas jaunā lira),
-				'one' => q(Turcijas jaunā lira),
+				'currency' => q(Turcijas lira),
+				'one' => q(Turcijas lira),
 				'other' => q(Turcijas liras),
 				'zero' => q(Turcijas liras),
 			},
 		},
 		'TTD' => {
+			symbol => 'TTD',
 			display_name => {
 				'currency' => q(Trinidādas un Tobāgo dolārs),
 				'one' => q(Trinidādas un Tobāgo dolārs),
@@ -3981,6 +5090,7 @@ has 'curriencies' => (
 			},
 		},
 		'TZS' => {
+			symbol => 'TZS',
 			display_name => {
 				'currency' => q(Tanzānijas šiliņš),
 				'one' => q(Tanzānijas šiliņš),
@@ -3989,6 +5099,7 @@ has 'curriencies' => (
 			},
 		},
 		'UAH' => {
+			symbol => 'UAH',
 			display_name => {
 				'currency' => q(Ukrainas grivna),
 				'one' => q(Ukrainas grivna),
@@ -3997,6 +5108,7 @@ has 'curriencies' => (
 			},
 		},
 		'UGX' => {
+			symbol => 'UGX',
 			display_name => {
 				'currency' => q(Ugandas šiliņš),
 				'one' => q(Ugandas šiliņš),
@@ -4014,6 +5126,7 @@ has 'curriencies' => (
 			},
 		},
 		'UYU' => {
+			symbol => 'UYU',
 			display_name => {
 				'currency' => q(Urugvajas peso),
 				'one' => q(Urugvajas peso),
@@ -4022,6 +5135,7 @@ has 'curriencies' => (
 			},
 		},
 		'UZS' => {
+			symbol => 'UZS',
 			display_name => {
 				'currency' => q(Uzbekistānas sums),
 				'one' => q(Uzbekistānas sums),
@@ -4038,6 +5152,7 @@ has 'curriencies' => (
 			},
 		},
 		'VEF' => {
+			symbol => 'VEF',
 			display_name => {
 				'currency' => q(Venecuēlas bolivārs),
 				'one' => q(Venecuēlas bolivārs),
@@ -4055,6 +5170,7 @@ has 'curriencies' => (
 			},
 		},
 		'VUV' => {
+			symbol => 'VUV',
 			display_name => {
 				'currency' => q(Vanuatu vatu),
 				'one' => q(Vanuatu vatu),
@@ -4063,6 +5179,7 @@ has 'curriencies' => (
 			},
 		},
 		'WST' => {
+			symbol => 'WST',
 			display_name => {
 				'currency' => q(Samoa tala),
 				'one' => q(Samoa tala),
@@ -4204,6 +5321,7 @@ has 'curriencies' => (
 			},
 		},
 		'YER' => {
+			symbol => 'YER',
 			display_name => {
 				'currency' => q(Jemenas riāls),
 				'one' => q(Jemenas riāls),
@@ -4212,14 +5330,16 @@ has 'curriencies' => (
 			},
 		},
 		'ZAR' => {
+			symbol => 'ZAR',
 			display_name => {
-				'currency' => q(Dienvidāfrikas rands),
-				'one' => q(Dienvidāfrikas rands),
-				'other' => q(Dienvidāfrikas randi),
-				'zero' => q(Dienvidāfrikas randi),
+				'currency' => q(Dienvidāfrikas rends),
+				'one' => q(Dienvidāfrikas rends),
+				'other' => q(Dienvidāfrikas rendi),
+				'zero' => q(Dienvidāfrikas rendi),
 			},
 		},
 		'ZMK' => {
+			symbol => 'ZMK',
 			display_name => {
 				'currency' => q(Zambijas kvača \(1968–2012\)),
 				'one' => q(Zambijas kvača \(1968–2012\)),
@@ -4228,6 +5348,7 @@ has 'curriencies' => (
 			},
 		},
 		'ZMW' => {
+			symbol => 'ZMW',
 			display_name => {
 				'currency' => q(Zambijas kvača),
 				'one' => q(Zambijas kvača),
@@ -4526,10 +5647,10 @@ has 'calendar_quarters' => (
 	default		=> sub { {
 			'gregorian' => {
 				'format' => {
-					abbreviated => {0 => 'C1',
-						1 => 'C2',
-						2 => 'C3',
-						3 => 'C4'
+					abbreviated => {0 => '1. cet.',
+						1 => '2. cet.',
+						2 => '3. cet.',
+						3 => '4. cet.'
 					},
 					narrow => {0 => '1.',
 						1 => '2.',
@@ -4543,10 +5664,10 @@ has 'calendar_quarters' => (
 					},
 				},
 				'stand-alone' => {
-					abbreviated => {0 => 'C1',
-						1 => 'C2',
-						2 => 'C3',
-						3 => 'C4'
+					abbreviated => {0 => '1. cet.',
+						1 => '2. cet.',
+						2 => '3. cet.',
+						3 => '4. cet.'
 					},
 					narrow => {0 => '1.',
 						1 => '2.',
@@ -4571,8 +5692,14 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{priekšpusdienā},
 					'pm' => q{pēcpusdienā},
+					'noon' => q{pusdienlaikā},
+					'am' => q{priekšpusdienā},
+				},
+				'narrow' => {
+					'noon' => q{pusd.},
+					'am' => q{priekšp.},
+					'pm' => q{pēcp.},
 				},
 			},
 		},
@@ -4680,41 +5807,8 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			Ed => q{E, d.},
-			Gy => q{y. 'g'. G},
-			GyMMM => q{y. 'g'. MMM G},
-			GyMMMEd => q{E, y. 'g'. d. MMM G},
-			GyMMMd => q{y. 'g'. d. MMM G},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, dd.MM.},
-			MMM => q{LLL},
-			MMMEd => q{E, d. MMM},
-			MMMMEd => q{E, d. MMMM},
-			MMMMd => q{d. MMMM},
-			MMMd => q{d. MMM},
-			Md => q{dd.MM.},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y. 'g'. G},
-			yyyy => q{y. 'g'. G},
-			yyyyM => q{MM.y. G},
-			yyyyMEd => q{E, d.M.y. G},
-			yyyyMMM => q{y. 'g'. MMM G},
-			yyyyMMMEd => q{E, y. 'g'. d. MMM G},
-			yyyyMMMM => q{y. 'g'. MMMM G},
-			yyyyMMMd => q{y. 'g'. d. MMM G},
-			yyyyMd => q{d.MM.y. G},
-			yyyyQQQ => q{QQQ y G},
-			yyyyQQQQ => q{y. 'gada' QQQQ G},
-		},
 		'gregorian' => {
+			E => q{ccc},
 			EHm => q{E, HH:mm},
 			EHms => q{E, HH:mm:ss},
 			Ed => q{E, d.},
@@ -4749,8 +5843,42 @@ has 'datetime_formats_available_formats' => (
 			yMMMM => q{y. 'g'. MMMM},
 			yMMMd => q{y. 'g'. d. MMM},
 			yMd => q{d.M.y.},
-			yQQQ => q{QQQ y},
+			yQQQ => q{y. 'g'. QQQ},
 			yQQQQ => q{y. 'g'. QQQQ},
+		},
+		'generic' => {
+			Ed => q{E, d.},
+			Gy => q{y. 'g'. G},
+			GyMMM => q{y. 'g'. MMM G},
+			GyMMMEd => q{E, y. 'g'. d. MMM G},
+			GyMMMd => q{y. 'g'. d. MMM G},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, dd.MM.},
+			MMM => q{LLL},
+			MMMEd => q{E, d. MMM},
+			MMMMEd => q{E, d. MMMM},
+			MMMMd => q{d. MMMM},
+			MMMd => q{d. MMM},
+			Md => q{dd.MM.},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y. 'g'. G},
+			yyyy => q{y. 'g'. G},
+			yyyyM => q{MM.y. G},
+			yyyyMEd => q{E, d.M.y. G},
+			yyyyMMM => q{y. 'g'. MMM G},
+			yyyyMMMEd => q{E, y. 'g'. d. MMM G},
+			yyyyMMMM => q{y. 'g'. MMMM G},
+			yyyyMMMd => q{y. 'g'. d. MMM G},
+			yyyyMd => q{d.MM.y. G},
+			yyyyQQQ => q{QQQ y G},
+			yyyyQQQQ => q{y. 'gada' QQQQ G},
 		},
 	} },
 );
@@ -4771,6 +5899,101 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'gregorian' => {
+			H => {
+				H => q{HH–HH},
+			},
+			Hm => {
+				H => q{HH:mm–HH:mm},
+				m => q{HH:mm–HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm–HH:mm v},
+				m => q{HH:mm–HH:mm v},
+			},
+			Hv => {
+				H => q{HH–HH v},
+			},
+			M => {
+				M => q{MM.–MM.},
+			},
+			MEd => {
+				M => q{E, dd.MM – E, dd.MM},
+				d => q{E, dd.MM – E, dd.MM},
+			},
+			MMM => {
+				M => q{LLL–LLL},
+			},
+			MMMEd => {
+				M => q{E, d. MMM – E, d. MMM},
+				d => q{E, d. MMM – E, d. MMM},
+			},
+			MMMd => {
+				M => q{d. MMM – d. MMM},
+				d => q{d.–d. MMM},
+			},
+			Md => {
+				M => q{dd.MM–dd.MM},
+				d => q{dd.MM.–dd.MM.},
+			},
+			d => {
+				d => q{d.–d.},
+			},
+			fallback => '{0} - {1}',
+			h => {
+				a => q{h a – h a},
+				h => q{h–h a},
+			},
+			hm => {
+				a => q{h:mm a – h:mm a},
+				h => q{h:mm–h:mm a},
+				m => q{h:mm–h:mm a},
+			},
+			hmv => {
+				a => q{h:mm a – h:mm a v},
+				h => q{h:mm–h:mm a v},
+				m => q{h:mm–h:mm a, v},
+			},
+			hv => {
+				a => q{h a – h a v},
+				h => q{h–h a v},
+			},
+			y => {
+				y => q{y.–y.},
+			},
+			yM => {
+				M => q{MM.y.–MM.y.},
+				y => q{MM.y.–MM.y.},
+			},
+			yMEd => {
+				M => q{E, dd.MM.y. – E, dd.MM.y.},
+				d => q{E, dd.MM.y. – E, dd.MM.y.},
+				y => q{E, dd.MM.y. – E, dd.MM.y.},
+			},
+			yMMM => {
+				M => q{y. 'gada' MMM–MMM},
+				y => q{y. 'gada' MMM – y. 'gada' MMM},
+			},
+			yMMMEd => {
+				M => q{E, y. 'gada' d. MMM – E, y. 'gada' d. MMM},
+				d => q{E, y. 'gada' d. MMM – E, y. 'gada' d. MMM},
+				y => q{E, y. 'gada' d. MMM – E, y. 'gada' d. MMM},
+			},
+			yMMMM => {
+				M => q{y. 'gada' MMMM–MMMM},
+				y => q{y. 'gada' MMMM – y. 'gada' MMMM},
+			},
+			yMMMd => {
+				M => q{y. 'gada' d. MMM – d. MMM},
+				d => q{y. 'gada' d.–d. MMM},
+				y => q{y. 'gada' d. MMM – y. 'gada' d. MMM},
+			},
+			yMd => {
+				M => q{dd.MM.y.–dd.MM.y.},
+				d => q{dd.MM.y.–dd.MM.y.},
+				y => q{dd.MM.y.–dd.MM.y.},
+			},
+		},
 		'generic' => {
 			H => {
 				H => q{HH–HH},
@@ -4866,101 +6089,6 @@ has 'datetime_formats_interval' => (
 				y => q{dd.MM.y.–dd.MM.y. GGGGG},
 			},
 		},
-		'gregorian' => {
-			H => {
-				H => q{HH–HH},
-			},
-			Hm => {
-				H => q{HH:mm–HH:mm},
-				m => q{HH:mm–HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm–HH:mm v},
-				m => q{HH:mm–HH:mm v},
-			},
-			Hv => {
-				H => q{HH–HH v},
-			},
-			M => {
-				M => q{MM.–MM.},
-			},
-			MEd => {
-				M => q{E, dd.MM – E, dd.MM},
-				d => q{E, dd.MM – E, dd.MM},
-			},
-			MMM => {
-				M => q{LLL–LLL},
-			},
-			MMMEd => {
-				M => q{E, d. MMM – E, d. MMM},
-				d => q{E, d. MMM – E, d. MMM},
-			},
-			MMMd => {
-				M => q{d. MMM – d. MMM},
-				d => q{d.–d. MMM},
-			},
-			Md => {
-				M => q{dd.MM–dd.MM},
-				d => q{dd.MM.–dd.MM.},
-			},
-			d => {
-				d => q{d.–d.},
-			},
-			fallback => '{0} - {1}',
-			h => {
-				a => q{h a – h a},
-				h => q{h–h a},
-			},
-			hm => {
-				a => q{h:mm a – h:mm a},
-				h => q{h:mm–h:mm a},
-				m => q{h:mm–h:mm a},
-			},
-			hmv => {
-				a => q{h:mm a – h:mm a v},
-				h => q{h:mm–h:mm a v},
-				m => q{h:mm–h:mm a v},
-			},
-			hv => {
-				a => q{h a – h a v},
-				h => q{h–h a v},
-			},
-			y => {
-				y => q{y.–y.},
-			},
-			yM => {
-				M => q{MM.y.–MM.y.},
-				y => q{MM.y.–MM.y.},
-			},
-			yMEd => {
-				M => q{E, dd.MM.y. – E, dd.MM.y.},
-				d => q{E, dd.MM.y. – E, dd.MM.y.},
-				y => q{E, dd.MM.y. – E, dd.MM.y.},
-			},
-			yMMM => {
-				M => q{y. 'gada' MMM–MMM},
-				y => q{y. 'gada' MMM – y. 'gada' MMM},
-			},
-			yMMMEd => {
-				M => q{E, y. 'gada' d. MMM – E, y. 'gada' d. MMM},
-				d => q{E, y. 'gada' d. MMM – E, y. 'gada' d. MMM},
-				y => q{E, y. 'gada' d. MMM – E, y. 'gada' d. MMM},
-			},
-			yMMMM => {
-				M => q{y. 'gada' MMMM–MMMM},
-				y => q{y. 'gada' MMMM – y. 'gada' MMMM},
-			},
-			yMMMd => {
-				M => q{y. 'gada' d. MMM – d. MMM},
-				d => q{y. 'gada' d.–d. MMM},
-				y => q{y. 'gada' d. MMM – y. 'gada' d. MMM},
-			},
-			yMd => {
-				M => q{dd.MM.y.–dd.MM.y.},
-				d => q{dd.MM.y.–dd.MM.y.},
-				y => q{dd.MM.y.–dd.MM.y.},
-			},
-		},
 	} },
 );
 
@@ -4996,6 +6124,9 @@ has 'time_zone_names' => (
 		'Africa/Asmera' => {
 			exemplarCity => q#Asmara#,
 		},
+		'Africa/Bamako' => {
+			exemplarCity => q#Bamako#,
+		},
 		'Africa/Bangui' => {
 			exemplarCity => q#Bangi#,
 		},
@@ -5021,7 +6152,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Kasablanka#,
 		},
 		'Africa/Ceuta' => {
-			exemplarCity => q#Seūta#,
+			exemplarCity => q#Seuta#,
 		},
 		'Africa/Conakry' => {
 			exemplarCity => q#Konakri#,
@@ -5044,14 +6175,26 @@ has 'time_zone_names' => (
 		'Africa/Freetown' => {
 			exemplarCity => q#Frītauna#,
 		},
+		'Africa/Gaborone' => {
+			exemplarCity => q#Gaborone#,
+		},
+		'Africa/Harare' => {
+			exemplarCity => q#Harare#,
+		},
 		'Africa/Johannesburg' => {
 			exemplarCity => q#Johannesburga#,
 		},
 		'Africa/Juba' => {
 			exemplarCity => q#Džūba#,
 		},
+		'Africa/Kampala' => {
+			exemplarCity => q#Kampala#,
+		},
 		'Africa/Khartoum' => {
 			exemplarCity => q#Hartūma#,
+		},
+		'Africa/Kigali' => {
+			exemplarCity => q#Kigali#,
 		},
 		'Africa/Kinshasa' => {
 			exemplarCity => q#Kinšasa#,
@@ -5062,14 +6205,38 @@ has 'time_zone_names' => (
 		'Africa/Libreville' => {
 			exemplarCity => q#Librevila#,
 		},
+		'Africa/Lome' => {
+			exemplarCity => q#Lome#,
+		},
+		'Africa/Luanda' => {
+			exemplarCity => q#Luanda#,
+		},
 		'Africa/Lubumbashi' => {
 			exemplarCity => q#Lubumbaši#,
+		},
+		'Africa/Lusaka' => {
+			exemplarCity => q#Lusaka#,
+		},
+		'Africa/Malabo' => {
+			exemplarCity => q#Malabo#,
+		},
+		'Africa/Maputo' => {
+			exemplarCity => q#Maputu#,
+		},
+		'Africa/Maseru' => {
+			exemplarCity => q#Maseru#,
+		},
+		'Africa/Mbabane' => {
+			exemplarCity => q#Mbabane#,
 		},
 		'Africa/Mogadishu' => {
 			exemplarCity => q#Mogadīšo#,
 		},
 		'Africa/Monrovia' => {
 			exemplarCity => q#Monrovija#,
+		},
+		'Africa/Nairobi' => {
+			exemplarCity => q#Nairobi#,
 		},
 		'Africa/Ndjamena' => {
 			exemplarCity => q#Ndžamena#,
@@ -5110,7 +6277,7 @@ has 'time_zone_names' => (
 		},
 		'Africa_Southern' => {
 			long => {
-				'standard' => q(Dienvidāfrikas laiks),
+				'standard' => q(Dienvidāfrikas ziemas laiks),
 			},
 		},
 		'Africa_Western' => {
@@ -5150,10 +6317,13 @@ has 'time_zone_names' => (
 			exemplarCity => q#Aragvaina#,
 		},
 		'America/Argentina/La_Rioja' => {
-			exemplarCity => q#Larioha#,
+			exemplarCity => q#Larjoha#,
 		},
 		'America/Argentina/Rio_Gallegos' => {
 			exemplarCity => q#Riogaljegosa#,
+		},
+		'America/Argentina/Salta' => {
+			exemplarCity => q#Salta#,
 		},
 		'America/Argentina/San_Juan' => {
 			exemplarCity => q#Sanhuana#,
@@ -5166,6 +6336,9 @@ has 'time_zone_names' => (
 		},
 		'America/Argentina/Ushuaia' => {
 			exemplarCity => q#Ušuaja#,
+		},
+		'America/Aruba' => {
+			exemplarCity => q#Aruba#,
 		},
 		'America/Asuncion' => {
 			exemplarCity => q#Asunsjona#,
@@ -5186,10 +6359,13 @@ has 'time_zone_names' => (
 			exemplarCity => q#Beliza#,
 		},
 		'America/Blanc-Sablon' => {
-			exemplarCity => q#Blanksablona#,
+			exemplarCity => q#Blansablona#,
 		},
 		'America/Boa_Vista' => {
 			exemplarCity => q#Boavista#,
+		},
+		'America/Bogota' => {
+			exemplarCity => q#Bogota#,
 		},
 		'America/Boise' => {
 			exemplarCity => q#Boisisitija#,
@@ -5198,13 +6374,13 @@ has 'time_zone_names' => (
 			exemplarCity => q#Buenosairesa#,
 		},
 		'America/Cambridge_Bay' => {
-			exemplarCity => q#Kembridžbeja#,
+			exemplarCity => q#Keimbridžbeja#,
 		},
 		'America/Campo_Grande' => {
 			exemplarCity => q#Kampugrandi#,
 		},
 		'America/Cancun' => {
-			exemplarCity => q#Kankūna#,
+			exemplarCity => q#Kankuna#,
 		},
 		'America/Caracas' => {
 			exemplarCity => q#Karakasa#,
@@ -5222,13 +6398,13 @@ has 'time_zone_names' => (
 			exemplarCity => q#Čikāga#,
 		},
 		'America/Chihuahua' => {
-			exemplarCity => q#Čihuahua#,
+			exemplarCity => q#Čivava#,
 		},
 		'America/Coral_Harbour' => {
-			exemplarCity => q#Koralharbora#,
+			exemplarCity => q#Atikokana#,
 		},
 		'America/Cordoba' => {
-			exemplarCity => q#Kordoba#,
+			exemplarCity => q#Kordova#,
 		},
 		'America/Costa_Rica' => {
 			exemplarCity => q#Kostarika#,
@@ -5246,7 +6422,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Denmārkšavna#,
 		},
 		'America/Dawson' => {
-			exemplarCity => q#Dausona#,
+			exemplarCity => q#Dousona#,
 		},
 		'America/Dawson_Creek' => {
 			exemplarCity => q#Dousonkrīka#,
@@ -5264,13 +6440,13 @@ has 'time_zone_names' => (
 			exemplarCity => q#Edmontona#,
 		},
 		'America/Eirunepe' => {
-			exemplarCity => q#Eirenupe#,
+			exemplarCity => q#Eirunepe#,
 		},
 		'America/El_Salvador' => {
 			exemplarCity => q#Salvadora#,
 		},
 		'America/Fortaleza' => {
-			exemplarCity => q#Fortalesa#,
+			exemplarCity => q#Fortaleza#,
 		},
 		'America/Glace_Bay' => {
 			exemplarCity => q#Gleisbeja#,
@@ -5300,7 +6476,10 @@ has 'time_zone_names' => (
 			exemplarCity => q#Gajāna#,
 		},
 		'America/Halifax' => {
-			exemplarCity => q#Halifaksa#,
+			exemplarCity => q#Helifeksa#,
+		},
+		'America/Havana' => {
+			exemplarCity => q#Havana#,
 		},
 		'America/Hermosillo' => {
 			exemplarCity => q#Ermosiljo#,
@@ -5312,10 +6491,10 @@ has 'time_zone_names' => (
 			exemplarCity => q#Marengo, Indiāna#,
 		},
 		'America/Indiana/Petersburg' => {
-			exemplarCity => q#Pēterburga, Indiāna#,
+			exemplarCity => q#Pītersbērga, Indiāna#,
 		},
 		'America/Indiana/Tell_City' => {
-			exemplarCity => q#Tellsitija, Indiāna#,
+			exemplarCity => q#Telsitija, Indiāna#,
 		},
 		'America/Indiana/Vevay' => {
 			exemplarCity => q#Vīveja, Indiāna#,
@@ -5324,7 +6503,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Vinsensa, Indiāna#,
 		},
 		'America/Indiana/Winamac' => {
-			exemplarCity => q#Vinimaka, Indiāna#,
+			exemplarCity => q#Vinamaka, Indiāna#,
 		},
 		'America/Indianapolis' => {
 			exemplarCity => q#Indianapolisa#,
@@ -5339,13 +6518,13 @@ has 'time_zone_names' => (
 			exemplarCity => q#Jamaika#,
 		},
 		'America/Jujuy' => {
-			exemplarCity => q#Žužuja#,
+			exemplarCity => q#Huhuja#,
 		},
 		'America/Juneau' => {
 			exemplarCity => q#Džuno#,
 		},
 		'America/Kentucky/Monticello' => {
-			exemplarCity => q#Montiselo, Kentuki#,
+			exemplarCity => q#Montičelo, Kentuki#,
 		},
 		'America/Kralendijk' => {
 			exemplarCity => q#Krālendeika#,
@@ -5353,17 +6532,20 @@ has 'time_zone_names' => (
 		'America/La_Paz' => {
 			exemplarCity => q#Lapasa#,
 		},
+		'America/Lima' => {
+			exemplarCity => q#Lima#,
+		},
 		'America/Los_Angeles' => {
 			exemplarCity => q#Losandželosa#,
 		},
 		'America/Louisville' => {
-			exemplarCity => q#Luisvilla#,
+			exemplarCity => q#Lūivila#,
 		},
 		'America/Lower_Princes' => {
 			exemplarCity => q#Louerprinseskvotera#,
 		},
 		'America/Maceio' => {
-			exemplarCity => q#Maseio#,
+			exemplarCity => q#Masejo#,
 		},
 		'America/Managua' => {
 			exemplarCity => q#Managva#,
@@ -5381,13 +6563,19 @@ has 'time_zone_names' => (
 			exemplarCity => q#Matamorosa#,
 		},
 		'America/Mazatlan' => {
-			exemplarCity => q#Masatlāna#,
+			exemplarCity => q#Masatlana#,
 		},
 		'America/Mendoza' => {
 			exemplarCity => q#Mendosa#,
 		},
 		'America/Menominee' => {
 			exemplarCity => q#Menominī#,
+		},
+		'America/Merida' => {
+			exemplarCity => q#Merida#,
+		},
+		'America/Metlakatla' => {
+			exemplarCity => q#Metlakatla#,
 		},
 		'America/Mexico_City' => {
 			exemplarCity => q#Mehiko#,
@@ -5399,7 +6587,10 @@ has 'time_zone_names' => (
 			exemplarCity => q#Monktona#,
 		},
 		'America/Monterrey' => {
-			exemplarCity => q#Montereja#,
+			exemplarCity => q#Monterreja#,
+		},
+		'America/Montevideo' => {
+			exemplarCity => q#Montevideo#,
 		},
 		'America/Montserrat' => {
 			exemplarCity => q#Montserrata#,
@@ -5420,19 +6611,25 @@ has 'time_zone_names' => (
 			exemplarCity => q#Noroņa#,
 		},
 		'America/North_Dakota/Beulah' => {
-			exemplarCity => q#Bjula#,
+			exemplarCity => q#Bjula, Ziemeļdakota#,
 		},
 		'America/North_Dakota/Center' => {
-			exemplarCity => q#Centra, Ziemeļdakota#,
+			exemplarCity => q#Sentera, Ziemeļdakota#,
 		},
 		'America/North_Dakota/New_Salem' => {
-			exemplarCity => q#Ņūsalema, Ziemeļdakota#,
+			exemplarCity => q#Ņūseilema, Ziemeļdakota#,
 		},
 		'America/Ojinaga' => {
 			exemplarCity => q#Ohinaga#,
 		},
+		'America/Panama' => {
+			exemplarCity => q#Panama#,
+		},
 		'America/Pangnirtung' => {
-			exemplarCity => q#Pangnirtanga#,
+			exemplarCity => q#Pannirtuna#,
+		},
+		'America/Paramaribo' => {
+			exemplarCity => q#Paramaribo#,
 		},
 		'America/Phoenix' => {
 			exemplarCity => q#Fīniksa#,
@@ -5444,7 +6641,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Portofspeina#,
 		},
 		'America/Porto_Velho' => {
-			exemplarCity => q#Portuvelju#,
+			exemplarCity => q#Portuveļu#,
 		},
 		'America/Puerto_Rico' => {
 			exemplarCity => q#Puertoriko#,
@@ -5459,7 +6656,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Resifi#,
 		},
 		'America/Regina' => {
-			exemplarCity => q#Regīna#,
+			exemplarCity => q#Ridžaina#,
 		},
 		'America/Resolute' => {
 			exemplarCity => q#Rezolūta#,
@@ -5468,7 +6665,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Riobranko#,
 		},
 		'America/Santa_Isabel' => {
-			exemplarCity => q#Santaizabela#,
+			exemplarCity => q#Santaisabela#,
 		},
 		'America/Santarem' => {
 			exemplarCity => q#Santarena#,
@@ -5483,7 +6680,10 @@ has 'time_zone_names' => (
 			exemplarCity => q#Sanpaulu#,
 		},
 		'America/Scoresbysund' => {
-			exemplarCity => q#Skoresbisunda#,
+			exemplarCity => q#Itokortormita#,
+		},
+		'America/Sitka' => {
+			exemplarCity => q#Sitka#,
 		},
 		'America/St_Barthelemy' => {
 			exemplarCity => q#Senbartelmī#,
@@ -5498,7 +6698,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Sentlūsija#,
 		},
 		'America/St_Thomas' => {
-			exemplarCity => q#Senttomasa sala#,
+			exemplarCity => q#Sentomasa#,
 		},
 		'America/St_Vincent' => {
 			exemplarCity => q#Sentvinsenta#,
@@ -5510,13 +6710,19 @@ has 'time_zone_names' => (
 			exemplarCity => q#Tegusigalpa#,
 		},
 		'America/Thule' => {
-			exemplarCity => q#Tūle#,
+			exemplarCity => q#Tule#,
 		},
 		'America/Thunder_Bay' => {
 			exemplarCity => q#Tanderbeja#,
 		},
 		'America/Tijuana' => {
-			exemplarCity => q#Tihuāna#,
+			exemplarCity => q#Tihuana#,
+		},
+		'America/Toronto' => {
+			exemplarCity => q#Toronto#,
+		},
+		'America/Tortola' => {
+			exemplarCity => q#Tortola#,
 		},
 		'America/Vancouver' => {
 			exemplarCity => q#Vankūvera#,
@@ -5569,7 +6775,7 @@ has 'time_zone_names' => (
 			},
 		},
 		'Antarctica/Casey' => {
-			exemplarCity => q#Kesija#,
+			exemplarCity => q#Keisi#,
 		},
 		'Antarctica/Davis' => {
 			exemplarCity => q#Deivisa#,
@@ -5581,28 +6787,38 @@ has 'time_zone_names' => (
 			exemplarCity => q#Makvori#,
 		},
 		'Antarctica/Mawson' => {
-			exemplarCity => q#Mavsona#,
+			exemplarCity => q#Mosona#,
 		},
 		'Antarctica/McMurdo' => {
 			exemplarCity => q#Makmerdo#,
 		},
 		'Antarctica/Palmer' => {
-			exemplarCity => q#Palmera#,
+			exemplarCity => q#Pālmera#,
 		},
 		'Antarctica/Rothera' => {
 			exemplarCity => q#Rotera#,
 		},
 		'Antarctica/Syowa' => {
-			exemplarCity => q#Sjova#,
+			exemplarCity => q#Šova#,
+		},
+		'Antarctica/Troll' => {
+			exemplarCity => q#Trolla#,
 		},
 		'Antarctica/Vostok' => {
 			exemplarCity => q#Vostoka#,
 		},
+		'Apia' => {
+			long => {
+				'daylight' => q(Apijas vasaras laiks),
+				'generic' => q(Apijas laiks),
+				'standard' => q(Apijas ziemas laiks),
+			},
+		},
 		'Arabian' => {
 			long => {
-				'daylight' => q(Saūda Arābijas vasaras laiks),
-				'generic' => q(Saūda Arābijas laiks),
-				'standard' => q(Saūda Arābijas ziemas laiks),
+				'daylight' => q(Arābijas pussalas vasaras laiks),
+				'generic' => q(Arābijas pussalas laiks),
+				'standard' => q(Arābijas pussalas ziemas laiks),
 			},
 		},
 		'Arctic/Longyearbyen' => {
@@ -5645,7 +6861,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Aktau#,
 		},
 		'Asia/Aqtobe' => {
-			exemplarCity => q#Aktobe#,
+			exemplarCity => q#Aktebe#,
 		},
 		'Asia/Ashgabat' => {
 			exemplarCity => q#Ašgabata#,
@@ -5655,6 +6871,9 @@ has 'time_zone_names' => (
 		},
 		'Asia/Bahrain' => {
 			exemplarCity => q#Bahreina#,
+		},
+		'Asia/Baku' => {
+			exemplarCity => q#Baku#,
 		},
 		'Asia/Bangkok' => {
 			exemplarCity => q#Bangkoka#,
@@ -5669,13 +6888,13 @@ has 'time_zone_names' => (
 			exemplarCity => q#Bruneja#,
 		},
 		'Asia/Calcutta' => {
-			exemplarCity => q#Kolkata#,
+			exemplarCity => q#Kalkāta#,
 		},
 		'Asia/Choibalsan' => {
 			exemplarCity => q#Čoibalsana#,
 		},
 		'Asia/Chongqing' => {
-			exemplarCity => q#Čuncina#,
+			exemplarCity => q#Čuncjina#,
 		},
 		'Asia/Colombo' => {
 			exemplarCity => q#Kolombo#,
@@ -5686,11 +6905,17 @@ has 'time_zone_names' => (
 		'Asia/Dhaka' => {
 			exemplarCity => q#Daka#,
 		},
+		'Asia/Dili' => {
+			exemplarCity => q#Dili#,
+		},
 		'Asia/Dubai' => {
 			exemplarCity => q#Dubaija#,
 		},
 		'Asia/Dushanbe' => {
 			exemplarCity => q#Dušanbe#,
+		},
+		'Asia/Gaza' => {
+			exemplarCity => q#Gaza#,
 		},
 		'Asia/Harbin' => {
 			exemplarCity => q#Harbina#,
@@ -5711,7 +6936,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Džakarta#,
 		},
 		'Asia/Jayapura' => {
-			exemplarCity => q#Džajapūra#,
+			exemplarCity => q#Džajapura#,
 		},
 		'Asia/Jerusalem' => {
 			exemplarCity => q#Jeruzaleme#,
@@ -5726,7 +6951,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Karāči#,
 		},
 		'Asia/Kashgar' => {
-			exemplarCity => q#Kašgara#,
+			exemplarCity => q#Keškera#,
 		},
 		'Asia/Katmandu' => {
 			exemplarCity => q#Katmandu#,
@@ -5741,7 +6966,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Kualalumpura#,
 		},
 		'Asia/Kuching' => {
-			exemplarCity => q#Kučinga#,
+			exemplarCity => q#Kučina#,
 		},
 		'Asia/Kuwait' => {
 			exemplarCity => q#Kuveita#,
@@ -5750,16 +6975,19 @@ has 'time_zone_names' => (
 			exemplarCity => q#Makao#,
 		},
 		'Asia/Magadan' => {
-			exemplarCity => q#Magadāna#,
+			exemplarCity => q#Magadana#,
 		},
 		'Asia/Makassar' => {
 			exemplarCity => q#Makasara#,
+		},
+		'Asia/Manila' => {
+			exemplarCity => q#Manila#,
 		},
 		'Asia/Muscat' => {
 			exemplarCity => q#Maskata#,
 		},
 		'Asia/Nicosia' => {
-			exemplarCity => q#Nikozija#,
+			exemplarCity => q#Nikosija#,
 		},
 		'Asia/Novokuznetsk' => {
 			exemplarCity => q#Novokuzņecka#,
@@ -5771,7 +6999,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Omska#,
 		},
 		'Asia/Oral' => {
-			exemplarCity => q#Orāla#,
+			exemplarCity => q#Orala#,
 		},
 		'Asia/Phnom_Penh' => {
 			exemplarCity => q#Pnompeņa#,
@@ -5818,8 +7046,14 @@ has 'time_zone_names' => (
 		'Asia/Tashkent' => {
 			exemplarCity => q#Taškenta#,
 		},
+		'Asia/Tbilisi' => {
+			exemplarCity => q#Tbilisi#,
+		},
 		'Asia/Tehran' => {
 			exemplarCity => q#Teherāna#,
+		},
+		'Asia/Thimphu' => {
+			exemplarCity => q#Thimphu#,
 		},
 		'Asia/Tokyo' => {
 			exemplarCity => q#Tokija#,
@@ -5858,6 +7092,9 @@ has 'time_zone_names' => (
 		'Atlantic/Azores' => {
 			exemplarCity => q#Azoru salas#,
 		},
+		'Atlantic/Bermuda' => {
+			exemplarCity => q#Bermuda#,
+		},
 		'Atlantic/Canary' => {
 			exemplarCity => q#Kanāriju salas#,
 		},
@@ -5866,6 +7103,9 @@ has 'time_zone_names' => (
 		},
 		'Atlantic/Faeroe' => {
 			exemplarCity => q#Fēru salas#,
+		},
+		'Atlantic/Madeira' => {
+			exemplarCity => q#Madeira#,
 		},
 		'Atlantic/Reykjavik' => {
 			exemplarCity => q#Reikjavika#,
@@ -5889,22 +7129,22 @@ has 'time_zone_names' => (
 			exemplarCity => q#Brokenhila#,
 		},
 		'Australia/Currie' => {
-			exemplarCity => q#Kerija#,
+			exemplarCity => q#Kari#,
 		},
 		'Australia/Darwin' => {
 			exemplarCity => q#Dārvina#,
 		},
 		'Australia/Eucla' => {
-			exemplarCity => q#Jūkla#,
+			exemplarCity => q#Jukla#,
 		},
 		'Australia/Hobart' => {
-			exemplarCity => q#Hobarta#,
+			exemplarCity => q#Hobārta#,
 		},
 		'Australia/Lindeman' => {
 			exemplarCity => q#Lindemana#,
 		},
 		'Australia/Lord_Howe' => {
-			exemplarCity => q#Lordhova#,
+			exemplarCity => q#Lordhava#,
 		},
 		'Australia/Melbourne' => {
 			exemplarCity => q#Melburna#,
@@ -5939,7 +7179,7 @@ has 'time_zone_names' => (
 		'Australia_Western' => {
 			long => {
 				'daylight' => q(Austrālijas rietumu vasaras laiks),
-				'generic' => q(Rietumaustrālijas laiks),
+				'generic' => q(Austrālijas rietumu laiks),
 				'standard' => q(Austrālijas rietumu ziemas laiks),
 			},
 		},
@@ -6102,6 +7342,9 @@ has 'time_zone_names' => (
 		'Europe/Berlin' => {
 			exemplarCity => q#Berlīne#,
 		},
+		'Europe/Bratislava' => {
+			exemplarCity => q#Bratislava#,
+		},
 		'Europe/Brussels' => {
 			exemplarCity => q#Brisele#,
 		},
@@ -6123,7 +7366,7 @@ has 'time_zone_names' => (
 		'Europe/Dublin' => {
 			exemplarCity => q#Dublina#,
 			long => {
-				'daylight' => q(Īrijas vasaras laiks),
+				'daylight' => q(Īrijas ziemas laiks),
 			},
 		},
 		'Europe/Gibraltar' => {
@@ -6131,6 +7374,9 @@ has 'time_zone_names' => (
 		},
 		'Europe/Guernsey' => {
 			exemplarCity => q#Gērnsija#,
+		},
+		'Europe/Helsinki' => {
+			exemplarCity => q#Helsinki#,
 		},
 		'Europe/Isle_of_Man' => {
 			exemplarCity => q#Menas sala#,
@@ -6165,6 +7411,9 @@ has 'time_zone_names' => (
 		'Europe/Madrid' => {
 			exemplarCity => q#Madride#,
 		},
+		'Europe/Malta' => {
+			exemplarCity => q#Malta#,
+		},
 		'Europe/Mariehamn' => {
 			exemplarCity => q#Mariehamna#,
 		},
@@ -6177,8 +7426,14 @@ has 'time_zone_names' => (
 		'Europe/Moscow' => {
 			exemplarCity => q#Maskava#,
 		},
+		'Europe/Oslo' => {
+			exemplarCity => q#Oslo#,
+		},
 		'Europe/Paris' => {
 			exemplarCity => q#Parīze#,
+		},
+		'Europe/Podgorica' => {
+			exemplarCity => q#Podgorica#,
 		},
 		'Europe/Prague' => {
 			exemplarCity => q#Prāga#,
@@ -6189,6 +7444,9 @@ has 'time_zone_names' => (
 		'Europe/Rome' => {
 			exemplarCity => q#Roma#,
 		},
+		'Europe/Samara' => {
+			exemplarCity => q#Samara#,
+		},
 		'Europe/San_Marino' => {
 			exemplarCity => q#Sanmarīno#,
 		},
@@ -6197,6 +7455,9 @@ has 'time_zone_names' => (
 		},
 		'Europe/Simferopol' => {
 			exemplarCity => q#Simferopole#,
+		},
+		'Europe/Skopje' => {
+			exemplarCity => q#Skopje#,
 		},
 		'Europe/Sofia' => {
 			exemplarCity => q#Sofija#,
@@ -6211,7 +7472,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Tirāna#,
 		},
 		'Europe/Uzhgorod' => {
-			exemplarCity => q#Užgoroda#,
+			exemplarCity => q#Užhoroda#,
 		},
 		'Europe/Vaduz' => {
 			exemplarCity => q#Vaduca#,
@@ -6262,6 +7523,11 @@ has 'time_zone_names' => (
 				'daylight' => q(EEST),
 				'generic' => q(EET),
 				'standard' => q(EET),
+			},
+		},
+		'Europe_Further_Eastern' => {
+			long => {
+				'standard' => q(Austrumeiropas laika josla (FET)),
 			},
 		},
 		'Europe_Western' => {
@@ -6348,7 +7614,7 @@ has 'time_zone_names' => (
 		},
 		'Guyana' => {
 			long => {
-				'standard' => q(Gvijānas laiks),
+				'standard' => q(Gajānas laiks),
 			},
 		},
 		'Hawaii_Aleutian' => {
@@ -6381,7 +7647,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Antananarivu#,
 		},
 		'Indian/Chagos' => {
-			exemplarCity => q#Čagosa#,
+			exemplarCity => q#Čagosu arhipelāgs#,
 		},
 		'Indian/Christmas' => {
 			exemplarCity => q#Ziemsvētku sala#,
@@ -6393,10 +7659,13 @@ has 'time_zone_names' => (
 			exemplarCity => q#Komoras#,
 		},
 		'Indian/Kerguelen' => {
-			exemplarCity => q#Kergelēna#,
+			exemplarCity => q#Kergelēna sala#,
+		},
+		'Indian/Mahe' => {
+			exemplarCity => q#Mae#,
 		},
 		'Indian/Maldives' => {
-			exemplarCity => q#Maldīvu salas#,
+			exemplarCity => q#Maldīvija#,
 		},
 		'Indian/Mauritius' => {
 			exemplarCity => q#Maurīcija#,
@@ -6510,7 +7779,7 @@ has 'time_zone_names' => (
 			long => {
 				'daylight' => q(Lorda Hava salas vasaras laiks),
 				'generic' => q(Lorda Hava salas laiks),
-				'standard' => q(Lorda Hava salas standarta laiks),
+				'standard' => q(Lorda Hava salas ziemas laiks),
 			},
 		},
 		'Macquarie' => {
@@ -6520,9 +7789,9 @@ has 'time_zone_names' => (
 		},
 		'Magadan' => {
 			long => {
-				'daylight' => q(Magadānas vasaras laiks),
+				'daylight' => q(Magadanas vasaras laiks),
 				'generic' => q(Magadanas laiks),
-				'standard' => q(Magadānas ziemas laiks),
+				'standard' => q(Magadanas ziemas laiks),
 			},
 		},
 		'Malaysia' => {
@@ -6555,6 +7824,20 @@ has 'time_zone_names' => (
 		'Mawson' => {
 			long => {
 				'standard' => q(Mosonas laiks),
+			},
+		},
+		'Mexico_Northwest' => {
+			long => {
+				'daylight' => q(Ziemeļrietumu Meksikas vasaras laiks),
+				'generic' => q(Ziemeļrietumu Meksikas laiks),
+				'standard' => q(Ziemeļrietumu Meksikas ziemas laiks),
+			},
+		},
+		'Mexico_Pacific' => {
+			long => {
+				'daylight' => q(Meksikas Klusā okeāna piekrastes vasaras laiks),
+				'generic' => q(Meksikas Klusā okeāna piekrastes laiks),
+				'standard' => q(Meksikas Klusā okeāna piekrastes ziemas laiks),
 			},
 		},
 		'Mongolia' => {
@@ -6597,14 +7880,14 @@ has 'time_zone_names' => (
 			long => {
 				'daylight' => q(Jaunzēlandes vasaras laiks),
 				'generic' => q(Jaunzēlandes laiks),
-				'standard' => q(Jaunzēlandes standarta laiks),
+				'standard' => q(Jaunzēlandes ziemas laiks),
 			},
 		},
 		'Newfoundland' => {
 			long => {
 				'daylight' => q(Ņūfaundlendas vasaras laiks),
 				'generic' => q(Ņūfaundlendas laiks),
-				'standard' => q(Ņūfaundlendas standarta laiks),
+				'standard' => q(Ņūfaundlendas ziemas laiks),
 			},
 		},
 		'Niue' => {
@@ -6650,17 +7933,26 @@ has 'time_zone_names' => (
 		'Pacific/Easter' => {
 			exemplarCity => q#Lieldienu sala#,
 		},
+		'Pacific/Efate' => {
+			exemplarCity => q#Efate#,
+		},
 		'Pacific/Enderbury' => {
-			exemplarCity => q#Enderburija#,
+			exemplarCity => q#Enderberija#,
+		},
+		'Pacific/Fakaofo' => {
+			exemplarCity => q#Fakaofo#,
 		},
 		'Pacific/Fiji' => {
 			exemplarCity => q#Fidži#,
+		},
+		'Pacific/Funafuti' => {
+			exemplarCity => q#Funafuti#,
 		},
 		'Pacific/Galapagos' => {
 			exemplarCity => q#Galapagu salas#,
 		},
 		'Pacific/Gambier' => {
-			exemplarCity => q#Gambjera#,
+			exemplarCity => q#Gambjē salas#,
 		},
 		'Pacific/Guadalcanal' => {
 			exemplarCity => q#Gvadalkanala#,
@@ -6668,8 +7960,11 @@ has 'time_zone_names' => (
 		'Pacific/Guam' => {
 			exemplarCity => q#Guama#,
 		},
+		'Pacific/Honolulu' => {
+			exemplarCity => q#Honolulu#,
+		},
 		'Pacific/Johnston' => {
-			exemplarCity => q#Džonstauna#,
+			exemplarCity => q#Džonstona atols#,
 		},
 		'Pacific/Kiritimati' => {
 			exemplarCity => q#Kirisimasi#,
@@ -6684,10 +7979,16 @@ has 'time_zone_names' => (
 			exemplarCity => q#Madžuro#,
 		},
 		'Pacific/Marquesas' => {
-			exemplarCity => q#Markvesa#,
+			exemplarCity => q#Marķīza salas#,
 		},
 		'Pacific/Midway' => {
-			exemplarCity => q#Midveja#,
+			exemplarCity => q#Midvejs#,
+		},
+		'Pacific/Nauru' => {
+			exemplarCity => q#Nauru#,
+		},
+		'Pacific/Niue' => {
+			exemplarCity => q#Niue#,
 		},
 		'Pacific/Norfolk' => {
 			exemplarCity => q#Norfolka#,
@@ -6698,6 +7999,9 @@ has 'time_zone_names' => (
 		'Pacific/Pago_Pago' => {
 			exemplarCity => q#Pagopago#,
 		},
+		'Pacific/Palau' => {
+			exemplarCity => q#Palau#,
+		},
 		'Pacific/Pitcairn' => {
 			exemplarCity => q#Pitkērna#,
 		},
@@ -6706,6 +8010,9 @@ has 'time_zone_names' => (
 		},
 		'Pacific/Port_Moresby' => {
 			exemplarCity => q#Portmorsbi#,
+		},
+		'Pacific/Rarotonga' => {
+			exemplarCity => q#Rarotonga#,
 		},
 		'Pacific/Saipan' => {
 			exemplarCity => q#Saipana#,
@@ -6716,11 +8023,14 @@ has 'time_zone_names' => (
 		'Pacific/Tarawa' => {
 			exemplarCity => q#Tarava#,
 		},
+		'Pacific/Tongatapu' => {
+			exemplarCity => q#Tongatapu#,
+		},
 		'Pacific/Truk' => {
-			exemplarCity => q#Trūka#,
+			exemplarCity => q#Čūka#,
 		},
 		'Pacific/Wake' => {
-			exemplarCity => q#Veika#,
+			exemplarCity => q#Veika sala#,
 		},
 		'Pacific/Wallis' => {
 			exemplarCity => q#Volisa#,
@@ -6813,7 +8123,7 @@ has 'time_zone_names' => (
 			long => {
 				'daylight' => q(Samoa vasaras laiks),
 				'generic' => q(Samoa laiks),
-				'standard' => q(Samoa standarta laiks),
+				'standard' => q(Samoa ziemas laiks),
 			},
 		},
 		'Seychelles' => {

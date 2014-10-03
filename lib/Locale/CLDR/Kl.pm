@@ -1,11 +1,11 @@
 package Locale::CLDR::Kl;
 # This file auto generated from Data\common\main\kl.xml
-#	on Sat 21 Jun 12:05:27 am GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct 12:01:39 pm GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -807,7 +807,6 @@ has 'characters' => (
 	sub {
 		no warnings 'experimental::regex_sets';
 		return {
-			auxiliary => qr{(?^u:[b c d h x z æ ø å])},
 			index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Æ', 'Ø', 'Å'],
 			main => qr{(?^u:[a á â ã b c d e é ê f g h i í î ĩ j k l m n o ô p q ĸ r s t u ú û ũ v w x y z æ ø å])},
 		};
@@ -885,142 +884,177 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'acre' => {
+						'' => q(amerikanske tønde land),
 						'one' => q({0} amerikanskt tønde land),
 						'other' => q({0} amerikanske tønde land),
 					},
 					'arc-minute' => {
+						'' => q(bueminutsi),
 						'one' => q({0} bueminutsi),
 						'other' => q({0} bueminutsi),
 					},
 					'arc-second' => {
+						'' => q(buesekundi),
 						'one' => q({0} buesekundi),
 						'other' => q({0} buesekundi),
 					},
 					'celsius' => {
+						'' => q(gradi Celsius),
 						'one' => q({0} gradi Celsius),
 						'other' => q({0} gradi Celsius),
 					},
 					'centimeter' => {
+						'' => q(centimeteri),
 						'one' => q({0} centimeteri),
 						'other' => q({0} centimeteri),
 					},
 					'cubic-kilometer' => {
+						'' => q(kubikkilometeri),
 						'one' => q({0} kubikkilometeri),
 						'other' => q({0} kubikkilometeri),
 					},
 					'cubic-mile' => {
+						'' => q(engelske kubikmil),
 						'one' => q({0} engelsk kubikmil),
 						'other' => q({0} engelske kubikmil),
 					},
 					'day' => {
+						'' => q(ulloq unnuarlu),
 						'one' => q({0} ulloq unnuarlu),
 						'other' => q({0} ulloq unnuarlu),
 					},
 					'degree' => {
+						'' => q(gradi),
 						'one' => q({0} gradi),
 						'other' => q({0} gradi),
 					},
 					'fahrenheit' => {
+						'' => q(gradi Fahrenheit),
 						'one' => q({0} gradi Fahrenheit),
 						'other' => q({0} gradi Fahrenheit),
 					},
 					'foot' => {
+						'' => q(fod),
 						'one' => q({0} fod),
 						'other' => q({0} fod),
 					},
 					'g-force' => {
+						'' => q(Jordgravitationer),
 						'one' => q({0} Jordgravitation),
 						'other' => q({0} Jordgravitationer),
 					},
 					'gram' => {
+						'' => q(grammi),
 						'one' => q({0} grammi),
 						'other' => q({0} grammi),
 					},
 					'hectare' => {
+						'' => q(hektari),
 						'one' => q({0} hektari),
 						'other' => q({0} hektari),
 					},
 					'hectopascal' => {
+						'' => q(hektopascali),
 						'one' => q({0} hektopascali),
 						'other' => q({0} hektopascali),
 					},
 					'horsepower' => {
+						'' => q(hestekrafter),
 						'one' => q({0} hestekraft),
 						'other' => q({0} hestekrafter),
 					},
 					'hour' => {
+						'' => q(nalunaaquttap-akunnera),
 						'one' => q({0} nalunaaquttap-akunnera),
 						'other' => q({0} nalunaaquttap-akunnera),
 					},
 					'inch' => {
+						'' => q(tommer),
 						'one' => q({0} tomme),
 						'other' => q({0} tommer),
 					},
 					'inch-hg' => {
+						'' => q(tommer kviksølv),
 						'one' => q({0} tomme kviksølv),
 						'other' => q({0} tommer kviksølv),
 					},
 					'kilogram' => {
+						'' => q(kilogrammi),
 						'one' => q({0} kilogrammi),
 						'other' => q({0} kilogrammi),
 					},
 					'kilometer' => {
+						'' => q(kilometeri),
 						'one' => q({0} kilometeri),
 						'other' => q({0} kilometeri),
 					},
 					'kilometer-per-hour' => {
+						'' => q(kilometeri per nalunaaquttap-akunnera),
 						'one' => q({0} kilometeri per nalunaaquttap-akunnera),
 						'other' => q({0} kilometeri per nalunaaquttap-akunnera),
 					},
 					'kilowatt' => {
+						'' => q(kilowatti),
 						'one' => q({0} kilowatti),
 						'other' => q({0} kilowatti),
 					},
 					'light-year' => {
+						'' => q(lysukioq),
 						'one' => q({0} lysukioq),
 						'other' => q({0} lysukioq),
 					},
 					'liter' => {
+						'' => q(literi),
 						'one' => q({0} literi),
 						'other' => q({0} literi),
 					},
 					'meter' => {
+						'' => q(meteri),
 						'one' => q({0} meteri),
 						'other' => q({0} meteri),
 					},
 					'meter-per-second' => {
+						'' => q(meteri per sekundi),
 						'one' => q({0} meteri per sekundi),
 						'other' => q({0} meteri per sekundi),
 					},
 					'mile' => {
+						'' => q(engelske mil),
 						'one' => q({0} engelsk mil),
 						'other' => q({0} engelske mil),
 					},
 					'mile-per-hour' => {
+						'' => q(engelske mil per nalunaaquttap-akunnera),
 						'one' => q({0} engelsk mil per nalunaaquttap-akunnera),
 						'other' => q({0} engelske mil per nalunaaquttap-akunnera),
 					},
 					'millibar' => {
+						'' => q(millibari),
 						'one' => q({0} millibari),
 						'other' => q({0} millibari),
 					},
 					'millimeter' => {
+						'' => q(millimeteri),
 						'one' => q({0} millimeteri),
 						'other' => q({0} millimeteri),
 					},
 					'millisecond' => {
+						'' => q(millisekundi),
 						'one' => q({0} millisekundi),
 						'other' => q({0} millisekundi),
 					},
 					'minute' => {
+						'' => q(minutsi),
 						'one' => q({0} minutsi),
 						'other' => q({0} minutsi),
 					},
 					'month' => {
+						'' => q(qaammat),
 						'one' => q({0} qaammat),
 						'other' => q({0} qaammat),
 					},
 					'ounce' => {
+						'' => q(unser),
 						'one' => q({0} unse),
 						'other' => q({0} unser),
 					},
@@ -1028,46 +1062,57 @@ has 'units' => (
 						'' => q({0} per {1}),
 					},
 					'picometer' => {
+						'' => q(pikometeri),
 						'one' => q({0} pikometeri),
 						'other' => q({0} pikometeri),
 					},
 					'pound' => {
+						'' => q(skålpund),
 						'one' => q({0} skålpund),
 						'other' => q({0} skålpund),
 					},
 					'second' => {
+						'' => q(sekundi),
 						'one' => q({0} sekundi),
 						'other' => q({0} sekundi),
 					},
 					'square-foot' => {
+						'' => q(kvadratfod),
 						'one' => q({0} kvadratfod),
 						'other' => q({0} kvadratfod),
 					},
 					'square-kilometer' => {
+						'' => q(kvadratkilometeri),
 						'one' => q({0} kvadratkilometeri),
 						'other' => q({0} kvadratkilometeri),
 					},
 					'square-meter' => {
+						'' => q(kvadratmeteri),
 						'one' => q({0} kvadratmeteri),
 						'other' => q({0} kvadratmeteri),
 					},
 					'square-mile' => {
+						'' => q(engelske kvadratmil),
 						'one' => q({0} engelsk kvadratmil),
 						'other' => q({0} engelske kvadratmil),
 					},
 					'watt' => {
+						'' => q(watti),
 						'one' => q({0} watti),
 						'other' => q({0} watti),
 					},
 					'week' => {
+						'' => q(sapaatip-akunnera),
 						'one' => q({0} sapaatip-akunnera),
 						'other' => q({0} sapaatip-akunnera),
 					},
 					'yard' => {
+						'' => q(engelske yard),
 						'one' => q({0} engelsk yard),
 						'other' => q({0} engelske yard),
 					},
 					'year' => {
+						'' => q(ukioq),
 						'one' => q({0} ukioq),
 						'other' => q({0} ukioq),
 					},
@@ -1263,142 +1308,177 @@ has 'units' => (
 				},
 				'short' => {
 					'acre' => {
+						'' => q(amerikanske tønde land),
 						'one' => q({0} ac),
 						'other' => q({0} ac),
 					},
 					'arc-minute' => {
+						'' => q(bueminutsi),
 						'one' => q({0}′),
 						'other' => q({0}′),
 					},
 					'arc-second' => {
+						'' => q(buesekundi),
 						'one' => q({0}″),
 						'other' => q({0}″),
 					},
 					'celsius' => {
+						'' => q(gradi Celsius),
 						'one' => q({0}°C),
 						'other' => q({0}°C),
 					},
 					'centimeter' => {
+						'' => q(centimeteri),
 						'one' => q({0} cm),
 						'other' => q({0} cm),
 					},
 					'cubic-kilometer' => {
+						'' => q(kubikkilometeri),
 						'one' => q({0} km³),
 						'other' => q({0} km³),
 					},
 					'cubic-mile' => {
+						'' => q(engelske kubikmil),
 						'one' => q({0} mi³),
 						'other' => q({0} mi³),
 					},
 					'day' => {
+						'' => q(ulloq unnuarlu),
 						'one' => q({0} d),
 						'other' => q({0} d),
 					},
 					'degree' => {
+						'' => q(gradi),
 						'one' => q({0}°),
 						'other' => q({0}°),
 					},
 					'fahrenheit' => {
+						'' => q(gradi Fahrenheit),
 						'one' => q({0}°F),
 						'other' => q({0}°F),
 					},
 					'foot' => {
+						'' => q(fod),
 						'one' => q({0} fod),
 						'other' => q({0} fod),
 					},
 					'g-force' => {
+						'' => q(Jordgravitationer),
 						'one' => q({0} G),
 						'other' => q({0} G),
 					},
 					'gram' => {
+						'' => q(grammi),
 						'one' => q({0} g),
 						'other' => q({0} g),
 					},
 					'hectare' => {
+						'' => q(hektari),
 						'one' => q({0} ha),
 						'other' => q({0} ha),
 					},
 					'hectopascal' => {
+						'' => q(hektopascali),
 						'one' => q({0} hPa),
 						'other' => q({0} hPa),
 					},
 					'horsepower' => {
+						'' => q(hestekrafter),
 						'one' => q({0} hk),
 						'other' => q({0} hk),
 					},
 					'hour' => {
+						'' => q(nalunaaquttap-akunnera),
 						'one' => q({0} h),
 						'other' => q({0} h),
 					},
 					'inch' => {
+						'' => q(tommer),
 						'one' => q({0} tomme),
 						'other' => q({0} tommer),
 					},
 					'inch-hg' => {
+						'' => q(tommer kviksølv),
 						'one' => q({0} inHg),
 						'other' => q({0} inHg),
 					},
 					'kilogram' => {
+						'' => q(kilogrammi),
 						'one' => q({0} kg),
 						'other' => q({0} kg),
 					},
 					'kilometer' => {
+						'' => q(kilometeri),
 						'one' => q({0} km),
 						'other' => q({0} km),
 					},
 					'kilometer-per-hour' => {
+						'' => q(kilometeri per nalunaaquttap-akunnera),
 						'one' => q({0} km/h),
 						'other' => q({0} km/h),
 					},
 					'kilowatt' => {
+						'' => q(kilowatti),
 						'one' => q({0} kW),
 						'other' => q({0} kW),
 					},
 					'light-year' => {
+						'' => q(lysukioq),
 						'one' => q({0} lysukioq),
 						'other' => q({0} lysukioq),
 					},
 					'liter' => {
+						'' => q(literi),
 						'one' => q({0} l),
 						'other' => q({0} l),
 					},
 					'meter' => {
+						'' => q(meteri),
 						'one' => q({0} m),
 						'other' => q({0} m),
 					},
 					'meter-per-second' => {
+						'' => q(meteri per sekundi),
 						'one' => q({0} m/s),
 						'other' => q({0} m/s),
 					},
 					'mile' => {
+						'' => q(engelske mil),
 						'one' => q({0} mi),
 						'other' => q({0} mi),
 					},
 					'mile-per-hour' => {
+						'' => q(engelske mil per nalunaaquttap-akunnera),
 						'one' => q({0} mi/h),
 						'other' => q({0} mi/h),
 					},
 					'millibar' => {
+						'' => q(millibari),
 						'one' => q({0} mbar),
 						'other' => q({0} mbar),
 					},
 					'millimeter' => {
+						'' => q(millimeteri),
 						'one' => q({0} mm),
 						'other' => q({0} mm),
 					},
 					'millisecond' => {
+						'' => q(millisekundi),
 						'one' => q({0} ms),
 						'other' => q({0} ms),
 					},
 					'minute' => {
+						'' => q(minutsi),
 						'one' => q({0} min),
 						'other' => q({0} min),
 					},
 					'month' => {
+						'' => q(qaammat),
 						'one' => q({0} mån),
 						'other' => q({0} mån),
 					},
 					'ounce' => {
+						'' => q(unser),
 						'one' => q({0} unse),
 						'other' => q({0} unser),
 					},
@@ -1406,46 +1486,57 @@ has 'units' => (
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(pikometeri),
 						'one' => q({0} pm),
 						'other' => q({0} pm),
 					},
 					'pound' => {
+						'' => q(skålpund),
 						'one' => q({0} skålpund),
 						'other' => q({0} skålpund),
 					},
 					'second' => {
+						'' => q(sekundi),
 						'one' => q({0} s),
 						'other' => q({0} s),
 					},
 					'square-foot' => {
+						'' => q(kvadratfod),
 						'one' => q({0} ft²),
 						'other' => q({0} ft²),
 					},
 					'square-kilometer' => {
+						'' => q(kvadratkilometeri),
 						'one' => q({0} km²),
 						'other' => q({0} km²),
 					},
 					'square-meter' => {
+						'' => q(kvadratmeteri),
 						'one' => q({0} m²),
 						'other' => q({0} m²),
 					},
 					'square-mile' => {
+						'' => q(engelske kvadratmil),
 						'one' => q({0} mi²),
 						'other' => q({0} mi²),
 					},
 					'watt' => {
+						'' => q(watti),
 						'one' => q({0} W),
 						'other' => q({0} W),
 					},
 					'week' => {
+						'' => q(sapaatip-akunnera),
 						'one' => q({0} u),
 						'other' => q({0} u),
 					},
 					'yard' => {
+						'' => q(engelske yard),
 						'one' => q({0} yd),
 						'other' => q({0} yd),
 					},
 					'year' => {
+						'' => q(ukioq),
 						'one' => q({0} ukioq),
 						'other' => q({0} ukioq),
 					},
@@ -1701,7 +1792,7 @@ has 'curriencies' => (
 	init_arg	=> undef,
 	default		=> sub { {
 		'DKK' => {
-			symbol => 'kr',
+			symbol => 'kr.',
 			display_name => {
 				'currency' => q(danmarkimut koruuni),
 				'one' => q(danskinut koruuni),
@@ -1984,8 +2075,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ulloqeqqata-kingorna},
 					'am' => q{ulloqeqqata-tungaa},
+					'pm' => q{ulloqeqqata-kingorna},
 				},
 				'abbreviated' => {
 					'am' => q{u.t.},
@@ -2081,7 +2172,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E, d},
 			H => q{HH},
 			Hm => q{HH:mm},
@@ -2102,7 +2193,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{y QQQQ},
 			yQQQQ => q{y QQQQ},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E, d},
 			H => q{HH},
 			Hm => q{HH:mm},
@@ -2139,7 +2230,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH–HH},
 			},
@@ -2234,7 +2325,7 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd – y-MM-dd},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH–HH},
 			},

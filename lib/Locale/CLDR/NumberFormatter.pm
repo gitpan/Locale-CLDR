@@ -2,7 +2,7 @@ package Locale::CLDR::NumberFormatter;
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 
 use v5.10;
@@ -601,3 +601,4 @@ no Moose::Role;
 1;
 
 # vim: tabstop=4
+

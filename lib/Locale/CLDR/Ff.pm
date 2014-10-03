@@ -1,11 +1,11 @@
 package Locale::CLDR::Ff;
 # This file auto generated from Data\common\main\ff.xml
-#	on Fri 20 Jun 11:30:24 pm GMT
-# XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
+#	on Thu  2 Oct 11:09:22 am GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -172,7 +172,7 @@ has 'display_name_territory' => (
  			'HU' => 'Onngiri',
  			'ID' => 'Enndonesii',
  			'IE' => 'Irlannda',
- 			'IL' => 'Israa\'iila',
+ 			'IL' => 'Israa’iila',
  			'IN' => 'Enndo',
  			'IO' => 'Keeriindi britaani to maayo enndo',
  			'IQ' => 'Iraak',
@@ -383,16 +383,7 @@ has 'number_symbols' => (
 	default		=> sub { {
 		'latn' => {
 			'decimal' => q(,),
-			'exponential' => q(),
 			'group' => q( ),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );

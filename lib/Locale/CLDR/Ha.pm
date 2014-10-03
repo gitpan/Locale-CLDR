@@ -1,11 +1,11 @@
 package Locale::CLDR::Ha;
 # This file auto generated from Data\common\main\ha.xml
-#	on Fri 20 Jun 11:42:18 pm GMT
-# XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
+#	on Thu  2 Oct 11:31:09 am GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -40,18 +40,18 @@ has 'display_name_language' => (
  				'de' => 'Jamusanci',
  				'el' => 'Girkanci',
  				'en' => 'Turanci',
- 				'eo' => 'D\'an/\'Yar Kabilar Andalus',
+ 				'eo' => 'Dʼan/ʼYar Kabilar Andalus',
  				'es' => 'Ispaniyanci',
  				'et' => 'Istoniyanci',
- 				'eu' => 'Dan/\'Yar Kabilar Bas',
+ 				'eu' => 'Dan/ʼYar Kabilar Bas',
  				'fa' => 'Parisanci',
  				'fi' => 'Yaren mutanen Finland',
  				'fil' => 'Dan Filifin',
  				'fo' => 'Faroese',
  				'fr' => 'Faransanci',
- 				'fy' => 'K\'abilan Firsi',
+ 				'fy' => 'Kʼabilan Firsi',
  				'ga' => 'Dan Ailan',
- 				'gd' => 'K\'abilan Scots Gaelic',
+ 				'gd' => 'Kʼabilan Scots Gaelic',
  				'gl' => 'Bagalike',
  				'gn' => 'Guwaraniyanci',
  				'gu' => 'Gujarati',
@@ -71,7 +71,7 @@ has 'display_name_language' => (
  				'jv' => 'Jabananci',
  				'ka' => 'Jojiyanci',
  				'km' => 'Harshen Kimar',
- 				'kn' => 'Dan/\'Yar Kabilar Kannada',
+ 				'kn' => 'Dan/ʼYar Kabilar Kannada',
  				'ko' => 'Harshen Koreya',
  				'ku' => 'Kurdanci',
  				'ky' => 'Kirgizanci',
@@ -83,7 +83,7 @@ has 'display_name_language' => (
  				'mk' => 'Dan Masedoniya',
  				'ml' => 'Kabilar Maleyalam',
  				'mn' => 'Mongolian',
- 				'mr' => 'K\'abilan Marathi',
+ 				'mr' => 'Kʼabilan Marathi',
  				'ms' => 'Harshen Malai',
  				'mt' => 'Harshen Maltis',
  				'my' => 'Burmanci',
@@ -109,14 +109,14 @@ has 'display_name_language' => (
  				'sk' => 'Basulake',
  				'sl' => 'Basulabe',
  				'so' => 'Somali',
- 				'sq' => 'D\'an/\'Yar Kabilar Albaniya',
+ 				'sq' => 'Dʼan/ʼYar Kabilar Albaniya',
  				'sr' => 'Sabiyan',
  				'st' => 'Sesotanci',
  				'su' => 'Sundanese',
  				'sv' => 'Harshen Suwedan',
  				'sw' => 'Harshen Suwahili',
  				'ta' => 'Tamil',
- 				'te' => 'D\'an/\'Yar Kabilar Telug',
+ 				'te' => 'Dʼan/ʼYar Kabilar Telug',
  				'th' => 'Thai',
  				'ti' => 'Tigriyanci',
  				'tk' => 'Tukmenistanci',
@@ -237,7 +237,7 @@ has 'display_name_territory' => (
  			'HU' => 'Hungari',
  			'ID' => 'Indunusiya',
  			'IE' => 'Ayalan',
- 			'IL' => 'Izira\'ila',
+ 			'IL' => 'Iziraʼila',
  			'IN' => 'Indiya',
  			'IO' => 'Yankin Birtaniya Na Tekun Indiya',
  			'IQ' => 'Iraƙi',
@@ -438,7 +438,7 @@ has 'nostr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
 	init_arg	=> undef,
-	default		=> sub { qr'^(?i:a'a|a|no|n)$' }
+	default		=> sub { qr'^(?i:aʼa|a|no|n)$' }
 );
 
 has 'number_symbols' => (
@@ -448,16 +448,7 @@ has 'number_symbols' => (
 	default		=> sub { {
 		'latn' => {
 			'decimal' => q(.),
-			'exponential' => q(),
 			'group' => q(,),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -886,7 +877,7 @@ has 'calendar_days' => (
 						tue => 'Talata',
 						wed => 'Laraba',
 						thu => 'Alhamis',
-						fri => 'Jumma\'a',
+						fri => 'Jummaʼa',
 						sat => 'Asabar',
 						sun => 'Lahadi'
 					},

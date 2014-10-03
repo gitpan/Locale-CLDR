@@ -1,11 +1,11 @@
 package Locale::CLDR::Mg;
 # This file auto generated from Data\common\main\mg.xml
-#	on Sat 21 Jun 12:25:49 am GMT
-# XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
+#	on Thu  2 Oct 12:52:43 pm GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -117,8 +117,8 @@ has 'display_name_territory' => (
  			'BY' => 'Belarosy',
  			'BZ' => 'Belize',
  			'CA' => 'Kanada',
- 			'CD' => 'Repoblikan\'i Kongo',
- 			'CF' => 'Repoblika Ivon\'Afrika',
+ 			'CD' => 'Repoblikan’i Kongo',
+ 			'CF' => 'Repoblika Ivon’Afrika',
  			'CG' => 'Kôngô',
  			'CH' => 'Soisa',
  			'CI' => 'Côte d’Ivoire',
@@ -131,7 +131,7 @@ has 'display_name_territory' => (
  			'CU' => 'Kiobà',
  			'CV' => 'Nosy Cap-Vert',
  			'CY' => 'Sypra',
- 			'CZ' => 'Repoblikan\'i Tseky',
+ 			'CZ' => 'Repoblikan’i Tseky',
  			'DE' => 'Alemaina',
  			'DJ' => 'Djiboti',
  			'DK' => 'Danmarka',
@@ -294,7 +294,7 @@ has 'display_name_territory' => (
  			'US' => 'Etazonia',
  			'UY' => 'Orogoay',
  			'UZ' => 'Ozbekistan',
- 			'VA' => 'Firenen\'i Vatikana',
+ 			'VA' => 'Firenen’i Vatikana',
  			'VC' => 'Saint-Vincent-et-les Grenadines',
  			'VE' => 'Venezoelà',
  			'VG' => 'Nosy britanika virijiny',
@@ -831,8 +831,8 @@ has 'eras' => (
 				'1' => 'AD'
 			},
 			wide => {
-				'0' => 'Alohan\'i JK',
-				'1' => 'Aorian\'i JK'
+				'0' => 'Alohan’i JK',
+				'1' => 'Aorian’i JK'
 			},
 		},
 	} },

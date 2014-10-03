@@ -1,11 +1,11 @@
 package Locale::CLDR::Fy;
 # This file auto generated from Data\common\main\fy.xml
-#	on Fri 20 Jun 11:35:18 pm GMT
-# XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
+#	on Thu  2 Oct 11:18:07 am GMT
+# XML file generated 2014-08-11 11:10:03 -0500 (Mon, 11 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -76,7 +76,7 @@ has 'display_name_language' => (
  				'ban' => 'Balineesk',
  				'bas' => 'Basa',
  				'bax' => 'Bamoun',
- 				'bbj' => 'Ghomala\'',
+ 				'bbj' => 'Ghomala’',
  				'be' => 'Wyt-Russysk',
  				'bej' => 'Beja',
  				'bem' => 'Bemba',
@@ -331,10 +331,10 @@ has 'display_name_language' => (
  				'mg' => 'Malagasysk',
  				'mga' => 'Middeliers',
  				'mgh' => 'Makhuwa-Meetto',
- 				'mgo' => 'Meta\'',
+ 				'mgo' => 'Meta’',
  				'mh' => 'Marshallees',
  				'mi' => 'Maori',
- 				'mic' => 'Mi\'kmaq',
+ 				'mic' => 'Mi’kmaq',
  				'min' => 'Minangkabau',
  				'mk' => 'Macedonysk',
  				'ml' => 'Malayalam',
@@ -842,6 +842,7 @@ has 'display_name_territory' => (
  			'DJ' => 'Djibouti',
  			'DK' => 'Denemarken',
  			'DM' => 'Dominika',
+ 			'DO' => 'Dominikaanske Republyk',
  			'DZ' => 'Algerije',
  			'EA' => 'Ceuta en Melilla',
  			'EC' => 'Ecuador',
@@ -923,6 +924,7 @@ has 'display_name_territory' => (
  			'LU' => 'Luxemburg',
  			'LV' => 'Letlân',
  			'LY' => 'Libië',
+ 			'MA' => 'Marokko',
  			'MC' => 'Monaco',
  			'MD' => 'Moldavië',
  			'ME' => 'Montenegro',
@@ -934,7 +936,6 @@ has 'display_name_territory' => (
  			'ML' => 'Mali',
  			'MM' => 'Myanmar (Birma)',
  			'MN' => 'Mongolië',
- 			'mo' => 'Marokko',
  			'MO' => 'Macao SAR van Sina',
  			'MO@alt=short' => 'Macao',
  			'MP' => 'Noardlike Marianeneilannen',
@@ -995,7 +996,6 @@ has 'display_name_territory' => (
  			'SK' => 'Slowakije',
  			'SL' => 'Sierra Leone',
  			'SM' => 'San Marino',
- 			'sn' => 'Sûd-Afrika',
  			'SN' => 'Senegal',
  			'SO' => 'Somalië',
  			'SR' => 'Suriname',
@@ -1016,7 +1016,6 @@ has 'display_name_territory' => (
  			'TL' => 'East-Timor',
  			'TM' => 'Turkmenistan',
  			'TN' => 'Tunesië',
- 			'to' => 'Dominikaanske Republyk',
  			'TO' => 'Tonga',
  			'TR' => 'Turkije',
  			'TT' => 'Trinidad en Tobago',
@@ -1042,6 +1041,7 @@ has 'display_name_territory' => (
  			'XK' => 'Kosovo',
  			'YE' => 'Jemen',
  			'YT' => 'Mayotte',
+ 			'ZA' => 'Sûd-Afrika',
  			'ZM' => 'Zambia',
  			'ZW' => 'Zimbabwe',
  			'ZZ' => 'Unbekend gebiet',
@@ -1411,142 +1411,177 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'acre' => {
+						'' => q(ares),
 						'one' => q({0} are),
 						'other' => q({0} ares),
 					},
 					'arc-minute' => {
+						'' => q(boogminuten),
 						'one' => q({0} boogminút),
 						'other' => q({0} boogminuten),
 					},
 					'arc-second' => {
+						'' => q(boogsekonden),
 						'one' => q({0} boogsekonde),
 						'other' => q({0} boogsekonden),
 					},
 					'celsius' => {
+						'' => q(graden Celsius),
 						'one' => q({0} graad Celsius),
 						'other' => q({0} graden Celsius),
 					},
 					'centimeter' => {
+						'' => q(sentimeter),
 						'one' => q({0} sentimeter),
 						'other' => q({0} sentimeter),
 					},
 					'cubic-kilometer' => {
+						'' => q(kubike kilometer),
 						'one' => q({0} kubike kilometer),
 						'other' => q({0} kubike kilometer),
 					},
 					'cubic-mile' => {
+						'' => q(kubike myl),
 						'one' => q({0} kubike myl),
 						'other' => q({0} kubike myl),
 					},
 					'day' => {
+						'' => q(deien),
 						'one' => q({0} dei),
 						'other' => q({0} deien),
 					},
 					'degree' => {
+						'' => q(booggraden),
 						'one' => q({0} booggraad),
 						'other' => q({0} booggraden),
 					},
 					'fahrenheit' => {
+						'' => q(graden Fahrenheit),
 						'one' => q({0} graad Fahrenheit),
 						'other' => q({0} graden Fahrenheit),
 					},
 					'foot' => {
+						'' => q(foet),
 						'one' => q({0} foet),
 						'other' => q({0} foet),
 					},
 					'g-force' => {
+						'' => q(G-krachten),
 						'one' => q({0} G-kracht),
 						'other' => q({0} G-krachten),
 					},
 					'gram' => {
+						'' => q(gram),
 						'one' => q({0} gram),
 						'other' => q({0} gram),
 					},
 					'hectare' => {
+						'' => q(hektare),
 						'one' => q({0} hektare),
 						'other' => q({0} hektare),
 					},
 					'hectopascal' => {
+						'' => q(hektopaskal),
 						'one' => q({0} hektopaskal),
 						'other' => q({0} hektopaskal),
 					},
 					'horsepower' => {
+						'' => q(hynstekrêften),
 						'one' => q({0} hynstekrêft),
 						'other' => q({0} hynstekrêften),
 					},
 					'hour' => {
+						'' => q(oere),
 						'one' => q({0} oere),
 						'other' => q({0} oere),
 					},
 					'inch' => {
+						'' => q(tommen),
 						'one' => q({0} tomme),
 						'other' => q({0} tommen),
 					},
 					'inch-hg' => {
+						'' => q(inHg),
 						'one' => q({0} inHg),
 						'other' => q({0} inHg),
 					},
 					'kilogram' => {
+						'' => q(kilogram),
 						'one' => q({0} kilogram),
 						'other' => q({0} kilogram),
 					},
 					'kilometer' => {
+						'' => q(kilometer),
 						'one' => q({0} kilometer),
 						'other' => q({0} kilometer),
 					},
 					'kilometer-per-hour' => {
+						'' => q(kilometer de oere),
 						'one' => q({0} kilometer de oere),
 						'other' => q({0} kilometer de oere),
 					},
 					'kilowatt' => {
+						'' => q(kilowatt),
 						'one' => q({0} kilowatt),
 						'other' => q({0} kilowatt),
 					},
 					'light-year' => {
+						'' => q(ljochtjier),
 						'one' => q({0} ljochtjier),
 						'other' => q({0} ljochtjier),
 					},
 					'liter' => {
+						'' => q(liter),
 						'one' => q({0} liter),
 						'other' => q({0} liter),
 					},
 					'meter' => {
+						'' => q(meter),
 						'one' => q({0} meter),
 						'other' => q({0} meter),
 					},
 					'meter-per-second' => {
+						'' => q(meter de sekonde),
 						'one' => q({0} meter de sekonde),
 						'other' => q({0} meter de sekonde),
 					},
 					'mile' => {
+						'' => q(myl),
 						'one' => q({0} myl),
 						'other' => q({0} myl),
 					},
 					'mile-per-hour' => {
+						'' => q(myl de oere),
 						'one' => q({0} myl de oere),
 						'other' => q({0} myl de oere),
 					},
 					'millibar' => {
+						'' => q(millibar),
 						'one' => q({0} millibar),
 						'other' => q({0} millibar),
 					},
 					'millimeter' => {
+						'' => q(millimeter),
 						'one' => q({0} millimeter),
 						'other' => q({0} millimeter),
 					},
 					'millisecond' => {
+						'' => q(millisekonden),
 						'one' => q({0} millisekonde),
 						'other' => q({0} millisekonden),
 					},
 					'minute' => {
+						'' => q(minuten),
 						'one' => q({0} minút),
 						'other' => q({0} minuten),
 					},
 					'month' => {
+						'' => q(moanneen),
 						'one' => q({0} moanne),
 						'other' => q({0} moanneen),
 					},
 					'ounce' => {
+						'' => q(oz),
 						'one' => q({0} oz),
 						'other' => q({0} oz),
 					},
@@ -1554,46 +1589,57 @@ has 'units' => (
 						'' => q({0} per {1}),
 					},
 					'picometer' => {
+						'' => q(pikometer),
 						'one' => q({0} pikometer),
 						'other' => q({0} pikometer),
 					},
 					'pound' => {
+						'' => q(lb),
 						'one' => q({0} lb),
 						'other' => q({0} lb),
 					},
 					'second' => {
+						'' => q(sekonden),
 						'one' => q({0} sekonde),
 						'other' => q({0} sekonden),
 					},
 					'square-foot' => {
+						'' => q(fjouwerkante foet),
 						'one' => q({0} fjouwerkante foet),
 						'other' => q({0} fjouwerkante foet),
 					},
 					'square-kilometer' => {
+						'' => q(fjouwerkante kilometer),
 						'one' => q({0} fjouwerkante kilometer),
 						'other' => q({0} fjouwerkante kilometer),
 					},
 					'square-meter' => {
+						'' => q(fjouwerkante meter),
 						'one' => q({0} fjouwerkante meter),
 						'other' => q({0} fjouwerkante meter),
 					},
 					'square-mile' => {
+						'' => q(fjouwerkante myl),
 						'one' => q({0} fjouwerkante myl),
 						'other' => q({0} fjouwerkante myl),
 					},
 					'watt' => {
+						'' => q(watt),
 						'one' => q({0} watt),
 						'other' => q({0} watt),
 					},
 					'week' => {
+						'' => q(wiken),
 						'one' => q({0} wike),
 						'other' => q({0} wiken),
 					},
 					'yard' => {
+						'' => q(yards),
 						'one' => q({0} yard),
 						'other' => q({0} yards),
 					},
 					'year' => {
+						'' => q(jier),
 						'one' => q({0} jier),
 						'other' => q({0} jier),
 					},
@@ -1789,142 +1835,177 @@ has 'units' => (
 				},
 				'short' => {
 					'acre' => {
+						'' => q(ares),
 						'one' => q({0} are),
 						'other' => q({0} ares),
 					},
 					'arc-minute' => {
+						'' => q(boogminuten),
 						'one' => q({0}′),
 						'other' => q({0}′),
 					},
 					'arc-second' => {
+						'' => q(boogsekonden),
 						'one' => q({0}″),
 						'other' => q({0}″),
 					},
 					'celsius' => {
+						'' => q(graden Celsius),
 						'one' => q({0}°C),
 						'other' => q({0}°C),
 					},
 					'centimeter' => {
+						'' => q(sentimeter),
 						'one' => q({0} sm),
 						'other' => q({0} sm),
 					},
 					'cubic-kilometer' => {
+						'' => q(kubike kilometer),
 						'one' => q({0} km³),
 						'other' => q({0} km³),
 					},
 					'cubic-mile' => {
+						'' => q(kubike myl),
 						'one' => q({0} mi³),
 						'other' => q({0} mi³),
 					},
 					'day' => {
+						'' => q(deien),
 						'one' => q({0} dei),
 						'other' => q({0} deien),
 					},
 					'degree' => {
+						'' => q(booggraden),
 						'one' => q({0}°),
 						'other' => q({0}°),
 					},
 					'fahrenheit' => {
+						'' => q(graden Fahrenheit),
 						'one' => q({0}°F),
 						'other' => q({0}°F),
 					},
 					'foot' => {
+						'' => q(foet),
 						'one' => q({0} ft),
 						'other' => q({0} ft),
 					},
 					'g-force' => {
+						'' => q(G-krachten),
 						'one' => q({0} G),
 						'other' => q({0} G),
 					},
 					'gram' => {
+						'' => q(gram),
 						'one' => q({0} g),
 						'other' => q({0} g),
 					},
 					'hectare' => {
+						'' => q(hektare),
 						'one' => q({0} ha),
 						'other' => q({0} ha),
 					},
 					'hectopascal' => {
+						'' => q(hektopaskal),
 						'one' => q({0} hPa),
 						'other' => q({0} hPa),
 					},
 					'horsepower' => {
+						'' => q(hynstekrêften),
 						'one' => q({0} pk),
 						'other' => q({0} pk),
 					},
 					'hour' => {
+						'' => q(oere),
 						'one' => q({0} oere),
 						'other' => q({0} oere),
 					},
 					'inch' => {
+						'' => q(tommen),
 						'one' => q({0} tm),
 						'other' => q({0} tm),
 					},
 					'inch-hg' => {
+						'' => q(inHg),
 						'one' => q({0} inHg),
 						'other' => q({0} inHg),
 					},
 					'kilogram' => {
+						'' => q(kilogram),
 						'one' => q({0} kg),
 						'other' => q({0} kg),
 					},
 					'kilometer' => {
+						'' => q(kilometer),
 						'one' => q({0} km),
 						'other' => q({0} km),
 					},
 					'kilometer-per-hour' => {
+						'' => q(kilometer de oere),
 						'one' => q({0} km/h),
 						'other' => q({0} km/h),
 					},
 					'kilowatt' => {
+						'' => q(kilowatt),
 						'one' => q({0} kW),
 						'other' => q({0} kW),
 					},
 					'light-year' => {
+						'' => q(ljochtjier),
 						'one' => q({0} lj),
 						'other' => q({0} lj),
 					},
 					'liter' => {
+						'' => q(liter),
 						'one' => q({0} l),
 						'other' => q({0} l),
 					},
 					'meter' => {
+						'' => q(meter),
 						'one' => q({0} m),
 						'other' => q({0} m),
 					},
 					'meter-per-second' => {
+						'' => q(meter de sekonde),
 						'one' => q({0} m/s),
 						'other' => q({0} m/s),
 					},
 					'mile' => {
+						'' => q(myl),
 						'one' => q({0} mi),
 						'other' => q({0} mi),
 					},
 					'mile-per-hour' => {
+						'' => q(myl de oere),
 						'one' => q({0} mi/h),
 						'other' => q({0} mi/h),
 					},
 					'millibar' => {
+						'' => q(millibar),
 						'one' => q({0} mbar),
 						'other' => q({0} mbar),
 					},
 					'millimeter' => {
+						'' => q(millimeter),
 						'one' => q({0} mm),
 						'other' => q({0} mm),
 					},
 					'millisecond' => {
+						'' => q(millisekonden),
 						'one' => q({0} ms),
 						'other' => q({0} ms),
 					},
 					'minute' => {
+						'' => q(minuten),
 						'one' => q({0} min),
 						'other' => q({0} min),
 					},
 					'month' => {
+						'' => q(moanneen),
 						'one' => q({0} mn),
 						'other' => q({0} mn),
 					},
 					'ounce' => {
+						'' => q(oz),
 						'one' => q({0} oz),
 						'other' => q({0} oz),
 					},
@@ -1932,46 +2013,57 @@ has 'units' => (
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(pikometer),
 						'one' => q({0} pm),
 						'other' => q({0} pm),
 					},
 					'pound' => {
+						'' => q(lb),
 						'one' => q({0} lb),
 						'other' => q({0} lb),
 					},
 					'second' => {
+						'' => q(sekonden),
 						'one' => q({0} sek.),
 						'other' => q({0} sek.),
 					},
 					'square-foot' => {
+						'' => q(fjouwerkante foet),
 						'one' => q({0} ft²),
 						'other' => q({0} ft²),
 					},
 					'square-kilometer' => {
+						'' => q(fjouwerkante kilometer),
 						'one' => q({0} km²),
 						'other' => q({0} km²),
 					},
 					'square-meter' => {
+						'' => q(fjouwerkante meter),
 						'one' => q({0} m²),
 						'other' => q({0} m²),
 					},
 					'square-mile' => {
+						'' => q(fjouwerkante myl),
 						'one' => q({0} mi²),
 						'other' => q({0} mi²),
 					},
 					'watt' => {
+						'' => q(watt),
 						'one' => q({0} W),
 						'other' => q({0} W),
 					},
-					'wike' => {
+					'week' => {
+						'' => q(wiken),
 						'one' => q({0} wk),
 						'other' => q({0} wkn),
 					},
 					'yard' => {
+						'' => q(yards),
 						'one' => q({0} yd),
 						'other' => q({0} yd),
 					},
 					'year' => {
+						'' => q(jier),
 						'one' => q({0} jr),
 						'other' => q({0} jr),
 					},
@@ -4363,7 +4455,7 @@ has 'calendar_months' => (
 							'Baramhat',
 							'Baramundah',
 							'Bashans',
-							'Ba\'unah',
+							'Ba’unah',
 							'Abib',
 							'Misra',
 							'Nasi'
@@ -4403,7 +4495,7 @@ has 'calendar_months' => (
 							'Baramhat',
 							'Baramundah',
 							'Bashans',
-							'Ba\'unah',
+							'Ba’unah',
 							'Abib',
 							'Misra',
 							'Nasi'
@@ -4425,7 +4517,7 @@ has 'calendar_months' => (
 							'Baramhat',
 							'Baramundah',
 							'Bashans',
-							'Ba\'unah',
+							'Ba’unah',
 							'Abib',
 							'Misra',
 							'Nasi'
@@ -4465,7 +4557,7 @@ has 'calendar_months' => (
 							'Baramhat',
 							'Baramundah',
 							'Bashans',
-							'Ba\'unah',
+							'Ba’unah',
 							'Abib',
 							'Misra',
 							'Nasi'
@@ -4528,7 +4620,7 @@ has 'calendar_months' => (
 							'Teqemt',
 							'Hedar',
 							'Tahsas',
-							'T\'er',
+							'T’er',
 							'Yäkatit',
 							'Mägabit',
 							'Miyazya',
@@ -4568,7 +4660,7 @@ has 'calendar_months' => (
 							'Teqemt',
 							'Hedar',
 							'Tahsas',
-							'T\'er',
+							'T’er',
 							'Yäkatit',
 							'Mägabit',
 							'Miyazya',
@@ -4590,7 +4682,7 @@ has 'calendar_months' => (
 							'Teqemt',
 							'Hedar',
 							'Tahsas',
-							'T\'er',
+							'T’er',
 							'Yäkatit',
 							'Mägabit',
 							'Miyazya',
@@ -4630,7 +4722,7 @@ has 'calendar_months' => (
 							'Teqemt',
 							'Hedar',
 							'Tahsas',
-							'T\'er',
+							'T’er',
 							'Yäkatit',
 							'Mägabit',
 							'Miyazya',
@@ -5376,18 +5468,18 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'abbreviated' => {
-					'noon' => q{12 oere 's middeis},
-				},
-				'narrow' => {
-					'am' => q{AM},
-					'pm' => q{PM},
-					'noon' => q{n},
-				},
 				'wide' => {
 					'am' => q{AM},
+					'noon' => q{12 oere ‘s middeis},
 					'pm' => q{PM},
-					'noon' => q{12 oere 's middeis},
+				},
+				'narrow' => {
+					'noon' => q{n},
+					'am' => q{AM},
+					'pm' => q{PM},
+				},
+				'abbreviated' => {
+					'noon' => q{12 oere ‘s middeis},
 				},
 			},
 			'stand-alone' => {
@@ -5866,6 +5958,65 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'buddhist' => {
+			Ed => q{E d},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E d MMM y G},
+			GyMMMd => q{d MMM y G},
+			M => q{L},
+			MEd => q{E d-M},
+			MMM => q{LLL},
+			MMMEd => q{E d MMM},
+			MMMMd => q{d MMMM},
+			MMMd => q{d MMM},
+			Md => q{d-M},
+			d => q{d},
+			y => q{y G},
+			yyyy => q{y G},
+			yyyyM => q{M-y GGGGG},
+			yyyyMEd => q{E d-M-y GGGGG},
+			yyyyMMM => q{MMM y G},
+			yyyyMMMEd => q{E d MMM y G},
+			yyyyMMMM => q{MMMM y G},
+			yyyyMMMd => q{d MMM y G},
+			yyyyMd => q{d-M-y GGGGG},
+			yyyyQQQ => q{QQQ y G},
+			yyyyQQQQ => q{QQQQ y G},
+		},
+		'chinese' => {
+			Ed => q{E d},
+			Gy => q{U},
+			GyMMM => q{MMM U},
+			GyMMMEd => q{E d MMM U},
+			GyMMMd => q{d MMM U},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E d-M},
+			MMM => q{LLL},
+			MMMEd => q{E d MMM},
+			MMMMd => q{d MMMM},
+			MMMd => q{d MMM},
+			Md => q{d-M},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{U},
+			yyyy => q{U},
+			yyyyM => q{M-y},
+			yyyyMEd => q{E d-M-y},
+			yyyyMMM => q{MMM U},
+			yyyyMMMEd => q{E d MMM U},
+			yyyyMMMM => q{MMMM U},
+			yyyyMMMd => q{d MMM U},
+			yyyyMd => q{d-M-y},
+			yyyyQQQ => q{QQQ U},
+			yyyyQQQQ => q{QQQQ U},
+		},
 		'generic' => {
 			Ed => q{E d},
 			Gy => q{y G},
@@ -5925,32 +6076,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
 		},
-		'islamic' => {
-			Ed => q{E d},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E d MMM y G},
-			GyMMMd => q{d MMM y G},
-			M => q{L},
-			MEd => q{E d-M},
-			MMM => q{LLL},
-			MMMEd => q{E d MMM},
-			MMMMd => q{d MMMM},
-			MMMd => q{d MMM},
-			Md => q{d-M},
-			d => q{d},
-			y => q{y G},
-			yyyy => q{y G},
-			yyyyM => q{M-y GGGGG},
-			yyyyMEd => q{E d-M-y GGGGG},
-			yyyyMMM => q{MMM y G},
-			yyyyMMMEd => q{E d MMM y G},
-			yyyyMMMM => q{MMMM y G},
-			yyyyMMMd => q{d MMM y G},
-			yyyyMd => q{d-M-y GGGGG},
-			yyyyQQQ => q{QQQ y G},
-			yyyyQQQQ => q{QQQQ y G},
-		},
 		'japanese' => {
 			Ed => q{E d},
 			Gy => q{y G},
@@ -5977,40 +6102,7 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
 		},
-		'chinese' => {
-			Ed => q{E d},
-			Gy => q{U},
-			GyMMM => q{MMM U},
-			GyMMMEd => q{E d MMM U},
-			GyMMMd => q{d MMM U},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E d-M},
-			MMM => q{LLL},
-			MMMEd => q{E d MMM},
-			MMMMd => q{d MMMM},
-			MMMd => q{d MMM},
-			Md => q{d-M},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{U},
-			yyyy => q{U},
-			yyyyM => q{M-y},
-			yyyyMEd => q{E d-M-y},
-			yyyyMMM => q{MMM U},
-			yyyyMMMEd => q{E d MMM U},
-			yyyyMMMM => q{MMMM U},
-			yyyyMMMd => q{d MMM U},
-			yyyyMd => q{d-M-y},
-			yyyyQQQ => q{QQQ U},
-			yyyyQQQQ => q{QQQQ U},
-		},
-		'buddhist' => {
+		'islamic' => {
 			Ed => q{E d},
 			Gy => q{y G},
 			GyMMM => q{MMM y G},
@@ -6827,7 +6919,7 @@ has 'time_zone_names' => (
 		},
 		'DumontDUrville' => {
 			long => {
-				'standard' => q(Dumont-d'Urville tiid),
+				'standard' => q(Dumont-d’Urville tiid),
 			},
 		},
 		'East_Timor' => {

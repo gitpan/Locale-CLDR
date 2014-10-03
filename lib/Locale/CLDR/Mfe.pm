@@ -1,11 +1,11 @@
 package Locale::CLDR::Mfe;
 # This file auto generated from Data\common\main\mfe.xml
-#	on Sat 21 Jun 12:25:46 am GMT
-# XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
+#	on Thu  2 Oct 12:52:40 pm GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -121,7 +121,7 @@ has 'display_name_territory' => (
  			'CF' => 'Repiblik Lafrik Santral',
  			'CG' => 'Kongo',
  			'CH' => 'Laswis',
- 			'CI' => 'Côte d\'Ivoire',
+ 			'CI' => 'Côte d’Ivoire',
  			'CK' => 'Zil Cook',
  			'CL' => 'Shili',
  			'CM' => 'Kamerounn',
@@ -381,17 +381,7 @@ has 'number_symbols' => (
 	init_arg	=> undef,
 	default		=> sub { {
 		'latn' => {
-			'decimal' => q(),
-			'exponential' => q(),
 			'group' => q( ),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );

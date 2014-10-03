@@ -1,11 +1,11 @@
 package Locale::CLDR::Eo;
 # This file auto generated from Data\common\main\eo.xml
-#	on Fri 20 Jun 11:21:36 pm GMT
-# XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
+#	on Thu  2 Oct 10:58:50 am GMT
+# XML file generated 2014-07-24 16:13:58 -0500 (Thu, 24 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -219,6 +219,22 @@ has 'algorithmic_number_format_data' => (
 	} },
 );
 
+# Need to add code for Key type pattern
+sub display_name_pattern {
+	my ($self, $name, $territory, $script, $variant) = @_;
+
+	my $display_pattern = '{0} ({1})';
+	$display_pattern =~s/\{0\}/$name/g;
+	my $subtags = join '{0}, {1}', grep {$_} (
+		$territory,
+		$script,
+		$variant,
+	);
+
+	$display_pattern =~s/\{1\}/$subtags/g;
+	return $display_pattern;
+}
+
 has 'display_name_language' => (
 	is			=> 'ro',
 	isa			=> 'CodeRef',
@@ -229,8 +245,11 @@ has 'display_name_language' => (
 				'aa' => 'afara',
  				'ab' => 'abĥaza',
  				'af' => 'afrikansa',
+ 				'ak' => 'akana',
  				'am' => 'amhara',
  				'ar' => 'araba',
+ 				'ar_001' => 'moderna norma araba',
+ 				'arn' => 'mapuĉa',
  				'as' => 'asama',
  				'ay' => 'ajmara',
  				'az' => 'azerbajĝana',
@@ -238,23 +257,39 @@ has 'display_name_language' => (
  				'be' => 'belorusa',
  				'bg' => 'bulgara',
  				'bi' => 'bislamo',
+ 				'bm' => 'bambara',
  				'bn' => 'bengala',
  				'bo' => 'tibeta',
  				'br' => 'bretona',
+ 				'brx' => 'bodoa',
  				'bs' => 'bosnia',
  				'ca' => 'kataluna',
+ 				'chr' => 'ĉeroka',
+ 				'ckb' => 'sorana',
  				'co' => 'korsika',
  				'cs' => 'ĉeĥa',
  				'cy' => 'kimra',
  				'da' => 'dana',
  				'de' => 'germana',
+ 				'de_AT' => 'aŭstra germana',
+ 				'de_CH' => 'svisa germana',
+ 				'dsb' => 'malsuprasoraba',
  				'dv' => 'mahla',
  				'dz' => 'dzonko',
  				'efi' => 'ibibioefika',
  				'el' => 'greka',
  				'en' => 'angla',
+ 				'en_AU' => 'aŭstralia angla',
+ 				'en_CA' => 'kanada angla',
+ 				'en_GB' => 'brita angla',
+ 				'en_GB@alt=short' => 'brita angla',
+ 				'en_US' => 'usona angla',
+ 				'en_US@alt=short' => 'usona angla',
  				'eo' => 'esperanto',
  				'es' => 'hispana',
+ 				'es_419' => 'amerika hispana',
+ 				'es_ES' => 'eŭropa hispana',
+ 				'es_MX' => 'meksika hispana',
  				'et' => 'estona',
  				'eu' => 'eŭska',
  				'fa' => 'persa',
@@ -263,6 +298,8 @@ has 'display_name_language' => (
  				'fj' => 'fiĝia',
  				'fo' => 'feroa',
  				'fr' => 'franca',
+ 				'fr_CA' => 'kanada franca',
+ 				'fr_CH' => 'svisa franca',
  				'fy' => 'frisa',
  				'ga' => 'irlanda',
  				'gd' => 'gaela',
@@ -315,6 +352,7 @@ has 'display_name_language' => (
  				'nb' => 'dannorvega',
  				'ne' => 'nepala',
  				'nl' => 'nederlanda',
+ 				'nl_BE' => 'flandra',
  				'nn' => 'novnorvega',
  				'no' => 'norvega',
  				'oc' => 'okcitana',
@@ -362,7 +400,7 @@ has 'display_name_language' => (
  				'tr' => 'turka',
  				'ts' => 'conga',
  				'tt' => 'tatara',
- 				'tw' => 'akana',
+ 				'tw' => 'tw',
  				'ug' => 'ujgura',
  				'uk' => 'ukraina',
  				'und' => 'nekonata lingvo',
@@ -388,6 +426,34 @@ has 'display_name_language' => (
 			return \%languages;
 		}
 	},
+);
+
+has 'display_name_script' => (
+	is			=> 'ro',
+	isa			=> 'CodeRef',
+	init_arg	=> undef,
+	default		=> sub {
+		sub {
+			my %scripts = (
+			'Arab' => 'araba',
+ 			'Cyrl' => 'cirila',
+ 			'Hans' => 'simpligita',
+ 			'Hans@alt=stand-alone' => 'simpligita ĉina',
+ 			'Hant' => 'tradicia',
+ 			'Hant@alt=stand-alone' => 'tradicia ĉina',
+ 			'Jpan' => 'japana',
+ 			'Kore' => 'korea',
+ 			'Latn' => 'latina',
+ 			'Zxxx' => 'neskribata',
+ 			'Zzzz' => 'nekonata skribsistemo',
+
+			);
+			if ( @_ ) {
+				return $scripts{$_[0]};
+			}
+			return \%scripts;
+		}
+	}
 );
 
 has 'display_name_territory' => (
@@ -480,6 +546,7 @@ has 'display_name_territory' => (
  			'GU' => 'Gvamo',
  			'GW' => 'Gvineo-Bisaŭo',
  			'GY' => 'Gujano',
+ 			'HK' => 'Honkongo',
  			'HM' => 'Herda kaj Makdonaldaj Insuloj',
  			'HN' => 'Honduro',
  			'HR' => 'Kroatujo',
@@ -621,6 +688,56 @@ has 'display_name_territory' => (
  			'ZA' => 'Sud-Afriko',
  			'ZM' => 'Zambio',
  			'ZW' => 'Zimbabvo',
+ 			'ZZ' => 'nekonata regiono',
+
+		}
+	},
+);
+
+has 'display_name_type' => (
+	is			=> 'ro',
+	isa			=> 'HashRef[HashRef[Str]]',
+	init_arg	=> undef,
+	default		=> sub {
+		{
+			'calendar' => {
+ 				'gregorian' => q{gregoria kalendaro},
+ 				'iso8601' => q{kalendaro ISO-8601},
+ 			},
+ 			'collation' => {
+ 				'standard' => q{norma ordigo},
+ 			},
+ 			'numbers' => {
+ 				'latn' => q{eŭropaj ciferoj},
+ 			},
+
+		}
+	},
+);
+
+has 'display_name_measurement_system' => (
+	is			=> 'ro',
+	isa			=> 'HashRef[Str]',
+	init_arg	=> undef,
+	default		=> sub { 
+		{
+			'metric' => q{metra},
+ 			'UK' => q{brita},
+ 			'US' => q{usona},
+
+		}
+	},
+);
+
+has 'display_name_code_patterns' => (
+	is			=> 'ro',
+	isa			=> 'HashRef[Str]',
+	init_arg	=> undef,
+	default		=> sub { 
+		{
+			'language' => 'Lingvo: {0}',
+ 			'script' => 'Skribsistemo: {0}',
+ 			'territory' => 'Regiono: {0}',
 
 		}
 	},
@@ -638,6 +755,7 @@ has 'characters' => (
 			auxiliary => qr{(?^u:[q w x y])},
 			index => ['A', 'B', 'C', 'Ĉ', 'D', 'E', 'F', 'G', 'Ĝ', 'H', 'Ĥ', 'I', 'J', 'Ĵ', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'Ŝ', 'T', 'U', 'Ŭ', 'V', 'Z'],
 			main => qr{(?^u:[a b c ĉ d e f g ĝ h ĥ i j ĵ k l m n o p r s ŝ t u ŭ v z])},
+			punctuation => qr{(?^u:[\- ‐ – — , ; \: ! ? . … ' ‘ ’ " “ ” ( ) \[ \] \{ \} /])},
 		};
 	},
 EOT
@@ -647,6 +765,641 @@ EOT
 );
 
 
+has 'ellipsis' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub {
+		return {
+			'final' => '{0}…',
+			'initial' => '…{0}',
+			'medial' => '{0}…{1}',
+		};
+	},
+);
+
+has 'more_information' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> qq{?},
+);
+
+has 'quote_start' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> qq{“},
+);
+
+has 'quote_end' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> qq{”},
+);
+
+has 'alternate_quote_start' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> qq{‘},
+);
+
+has 'alternate_quote_end' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> qq{’},
+);
+
+has 'duration_units' => (
+	is			=> 'ro',
+	isa			=> 'HashRef[Str]',
+	init_arg	=> undef,
+	default		=> sub { {
+				hm => 'h:mm',
+				hms => 'h:mm:ss',
+				ms => 'm:ss',
+			} }
+);
+
+has 'units' => (
+	is			=> 'ro',
+	isa			=> 'HashRef[HashRef[HashRef[Str]]]',
+	init_arg	=> undef,
+	default		=> sub { {
+				'long' => {
+					'acre' => {
+						'' => q(akreoj),
+						'one' => q({0} akreo),
+						'other' => q({0} akreoj),
+					},
+					'astronomical-unit' => {
+						'' => q(astronomiaj unuoj),
+						'one' => q({0} astronomia unuo),
+						'other' => q({0} astronomiaj unuoj),
+					},
+					'bit' => {
+						'' => q(bitoj),
+						'one' => q({0} bito),
+						'other' => q({0} bitoj),
+					},
+					'byte' => {
+						'' => q(bajtoj),
+						'one' => q({0} bajto),
+						'other' => q({0} bajtoj),
+					},
+					'celsius' => {
+						'' => q(gradoj celsiaj),
+						'one' => q({0} grado celsia),
+						'other' => q({0} gradoj celsiaj),
+					},
+					'centimeter' => {
+						'' => q(centimetroj),
+						'one' => q({0} centimetro),
+						'other' => q({0} centimetroj),
+					},
+					'day' => {
+						'' => q(tagoj),
+						'one' => q({0} tago),
+						'other' => q({0} tagoj),
+					},
+					'decimeter' => {
+						'' => q(decimetroj),
+						'one' => q({0} decimetro),
+						'other' => q({0} decimetroj),
+					},
+					'fathom' => {
+						'' => q(klaftoj),
+						'one' => q({0} klafto),
+						'other' => q({0} klaftoj),
+					},
+					'foot' => {
+						'' => q(futoj),
+						'one' => q({0} futo),
+						'other' => q({0} futoj),
+					},
+					'furlong' => {
+						'' => q(stadioj),
+						'one' => q({0} stadio),
+						'other' => q({0} stadioj),
+					},
+					'gigabit' => {
+						'' => q(gigabitoj),
+						'one' => q({0} gigabito),
+						'other' => q({0} gigabitoj),
+					},
+					'gigabyte' => {
+						'' => q(gigabajtoj),
+						'one' => q({0} gigabajto),
+						'other' => q({0} gigabajtoj),
+					},
+					'gram' => {
+						'' => q(gramoj),
+						'one' => q({0} gramo),
+						'other' => q({0} gramoj),
+					},
+					'hectare' => {
+						'' => q(hektaroj),
+						'one' => q({0} hektaro),
+						'other' => q({0} hektaroj),
+					},
+					'hour' => {
+						'' => q({0} por horo),
+						'one' => q({0} horo),
+						'other' => q({0} horoj),
+					},
+					'inch' => {
+						'' => q(coloj),
+						'one' => q({0} colo),
+						'other' => q({0} coloj),
+					},
+					'kilobit' => {
+						'' => q(kilobitoj),
+						'one' => q({0} kilobito),
+						'other' => q({0} kilobitoj),
+					},
+					'kilobyte' => {
+						'' => q(kilobajtoj),
+						'one' => q({0} kilobajto),
+						'other' => q({0} kilobajtoj),
+					},
+					'kilogram' => {
+						'' => q(kilogramoj),
+						'one' => q({0} kilogramo),
+						'other' => q({0} kilogramoj),
+					},
+					'kilometer' => {
+						'' => q(kilometroj),
+						'one' => q({0} kilometro),
+						'other' => q({0} kilometroj),
+					},
+					'kilometer-per-hour' => {
+						'' => q(kilometroj en horo),
+						'one' => q({0} kilometro en horo),
+						'other' => q({0} kilometroj en horo),
+					},
+					'light-year' => {
+						'' => q(lumjaroj),
+						'one' => q({0} lumjaro),
+						'other' => q({0} lumjaroj),
+					},
+					'liter' => {
+						'' => q(litroj),
+						'one' => q({0} litro),
+						'other' => q({0} litroj),
+					},
+					'megabit' => {
+						'' => q(megabitoj),
+						'one' => q({0} megabito),
+						'other' => q({0} megabitoj),
+					},
+					'megabyte' => {
+						'' => q(megabajtoj),
+						'one' => q({0} megabajto),
+						'other' => q({0} megabajtoj),
+					},
+					'meter' => {
+						'' => q(metroj),
+						'one' => q({0} metro),
+						'other' => q({0} metroj),
+					},
+					'micrometer' => {
+						'' => q(mikrometroj),
+						'one' => q({0} mikrometro),
+						'other' => q({0} mikrometroj),
+					},
+					'mile' => {
+						'' => q(mejloj),
+						'one' => q({0} mejlo),
+						'other' => q({0} mejloj),
+					},
+					'millimeter' => {
+						'' => q(milimetroj),
+						'one' => q({0} milimetro),
+						'other' => q({0} milimetroj),
+					},
+					'millisecond' => {
+						'' => q(milisekundoj),
+						'one' => q({0} milisekundo),
+						'other' => q({0} milisekundoj),
+					},
+					'minute' => {
+						'' => q(minutoj),
+						'one' => q({0} minuto),
+						'other' => q({0} minutoj),
+					},
+					'month' => {
+						'' => q(monatoj),
+						'one' => q({0} monato),
+						'other' => q({0} monatoj),
+					},
+					'nanometer' => {
+						'' => q(nanometroj),
+						'one' => q({0} nanometro),
+						'other' => q({0} nanometroj),
+					},
+					'nautical-mile' => {
+						'' => q(marmejloj),
+						'one' => q({0} marmejlo),
+						'other' => q({0} marmejloj),
+					},
+					'parsec' => {
+						'' => q(parsekoj),
+						'one' => q({0} parseko),
+						'other' => q({0} parsekoj),
+					},
+					'picometer' => {
+						'' => q(pikometroj),
+						'one' => q({0} pikometro),
+						'other' => q({0} pikometroj),
+					},
+					'second' => {
+						'' => q({0} por sekundo),
+						'one' => q({0} sekundo),
+						'other' => q({0} sekundoj),
+					},
+					'square-centimeter' => {
+						'' => q(kvadrataj centimetroj),
+						'one' => q({0} kvadrata centimetro),
+						'other' => q({0} kvadrataj centimetroj),
+					},
+					'square-foot' => {
+						'' => q(kvadrataj futoj),
+						'one' => q({0} kvadrata futo),
+						'other' => q({0} kvadrataj futoj),
+					},
+					'square-inch' => {
+						'' => q(kvadrataj coloj),
+						'one' => q({0} kvadrata colo),
+						'other' => q({0} kvadrataj coloj),
+					},
+					'square-kilometer' => {
+						'' => q(kvadrataj kilometroj),
+						'one' => q({0} kvadrata kilometro),
+						'other' => q({0} kvadrataj kilometroj),
+					},
+					'square-meter' => {
+						'' => q(kvadrataj metroj),
+						'one' => q({0} kvadrata metro),
+						'other' => q({0} kvadrataj metroj),
+					},
+					'square-mile' => {
+						'' => q(kvadrataj mejloj),
+						'one' => q({0} kvadrata mejlo),
+						'other' => q({0} kvadrataj mejloj),
+					},
+					'square-yard' => {
+						'' => q(kvadrataj jardoj),
+						'one' => q({0} kvadrata jardo),
+						'other' => q({0} kvadrataj jardoj),
+					},
+					'terabit' => {
+						'' => q(terabitoj),
+						'one' => q({0} terabito),
+						'other' => q({0} terabitoj),
+					},
+					'terabyte' => {
+						'' => q(terabajtoj),
+						'one' => q({0} terabajto),
+						'other' => q({0} terabajtoj),
+					},
+					'week' => {
+						'' => q(semajnoj),
+						'one' => q({0} semajno),
+						'other' => q({0} semajnoj),
+					},
+					'yard' => {
+						'' => q(jardoj),
+						'one' => q({0} jardo),
+						'other' => q({0} jardoj),
+					},
+					'year' => {
+						'' => q(jaroj),
+						'one' => q({0} jaro),
+						'other' => q({0} jaroj),
+					},
+				},
+				'narrow' => {
+					'astronomical-unit' => {
+						'' => q(au),
+						'one' => q({0}au),
+						'other' => q({0}au),
+					},
+					'celsius' => {
+						'' => q(°C),
+						'one' => q({0}°C),
+						'other' => q({0}°C),
+					},
+					'centimeter' => {
+						'' => q(cm),
+						'one' => q({0}cm),
+						'other' => q({0}cm),
+					},
+					'day' => {
+						'' => q(t.),
+						'one' => q({0}t.),
+						'other' => q({0}t.),
+					},
+					'decimeter' => {
+						'' => q(dm),
+						'one' => q({0}dm),
+						'other' => q({0}dm),
+					},
+					'degree' => {
+						'one' => q({0}°),
+						'other' => q({0}°),
+					},
+					'gram' => {
+						'' => q(g),
+						'one' => q({0}g),
+						'other' => q({0}g),
+					},
+					'hectare' => {
+						'' => q(ha),
+						'one' => q({0}ha),
+						'other' => q({0}ha),
+					},
+					'hour' => {
+						'' => q({0}/h.),
+						'one' => q({0}h.),
+						'other' => q({0}h.),
+					},
+					'kilogram' => {
+						'' => q(kg),
+						'one' => q({0}kg),
+						'other' => q({0}kg),
+					},
+					'kilometer' => {
+						'' => q(km),
+						'one' => q({0}km),
+						'other' => q({0}km),
+					},
+					'kilometer-per-hour' => {
+						'' => q(km/h),
+						'one' => q({0}km/h),
+						'other' => q({0}km/h),
+					},
+					'light-year' => {
+						'' => q(lj),
+						'one' => q({0}lj),
+						'other' => q({0}lj),
+					},
+					'liter' => {
+						'' => q(L),
+						'one' => q({0}L),
+						'other' => q({0}L),
+					},
+					'meter' => {
+						'' => q(m),
+						'one' => q({0}m),
+						'other' => q({0}m),
+					},
+					'micrometer' => {
+						'' => q(µm),
+						'one' => q({0}µm),
+						'other' => q({0}µm),
+					},
+					'millimeter' => {
+						'' => q(mm),
+						'one' => q({0}mm),
+						'other' => q({0}mm),
+					},
+					'millisecond' => {
+						'' => q(ms.),
+						'one' => q({0}ms.),
+						'other' => q({0}ms.),
+					},
+					'minute' => {
+						'' => q(m.),
+						'one' => q({0}m.),
+						'other' => q({0}m.),
+					},
+					'nanometer' => {
+						'' => q(nm),
+						'one' => q({0}nm),
+						'other' => q({0}nm),
+					},
+					'parsec' => {
+						'' => q(pc),
+						'one' => q({0}pc),
+						'other' => q({0}pc),
+					},
+					'picometer' => {
+						'' => q(pm),
+						'one' => q({0}pm),
+						'other' => q({0}pm),
+					},
+					'second' => {
+						'' => q({0}/s.),
+						'one' => q({0}s.),
+						'other' => q({0}s.),
+					},
+					'square-centimeter' => {
+						'' => q(cm²),
+						'one' => q({0}cm²),
+						'other' => q({0}cm²),
+					},
+					'square-kilometer' => {
+						'' => q(km²),
+						'one' => q({0}km²),
+						'other' => q({0}km²),
+					},
+					'square-meter' => {
+						'' => q(m²),
+						'one' => q({0}m²),
+						'other' => q({0}m²),
+					},
+					'year' => {
+						'' => q(j.),
+						'one' => q({0}j.),
+						'other' => q({0}j.),
+					},
+				},
+				'short' => {
+					'astronomical-unit' => {
+						'' => q(au),
+						'one' => q({0} au),
+						'other' => q({0} au),
+					},
+					'celsius' => {
+						'' => q(°C),
+						'one' => q({0} °C),
+						'other' => q({0} °C),
+					},
+					'centimeter' => {
+						'' => q(cm),
+						'one' => q({0} cm),
+						'other' => q({0} cm),
+					},
+					'day' => {
+						'' => q(tago),
+						'one' => q({0} t.),
+						'other' => q({0} t.),
+					},
+					'decimeter' => {
+						'' => q(dm),
+						'one' => q({0} dm),
+						'other' => q({0} dm),
+					},
+					'gram' => {
+						'' => q(g),
+						'one' => q({0} g),
+						'other' => q({0} g),
+					},
+					'hectare' => {
+						'' => q(ha),
+						'one' => q({0} ha),
+						'other' => q({0} ha),
+					},
+					'hour' => {
+						'' => q({0}/h.),
+						'one' => q({0} h.),
+						'other' => q({0} h.),
+					},
+					'kilogram' => {
+						'' => q(kg),
+						'one' => q({0} kg),
+						'other' => q({0} kg),
+					},
+					'kilometer' => {
+						'' => q(km),
+						'one' => q({0} km),
+						'other' => q({0} km),
+					},
+					'kilometer-per-hour' => {
+						'' => q(km/h),
+						'one' => q({0} km/h),
+						'other' => q({0} km/h),
+					},
+					'light-year' => {
+						'' => q(lj),
+						'one' => q({0} lj),
+						'other' => q({0} lj),
+					},
+					'liter' => {
+						'' => q(L),
+						'one' => q({0} L),
+						'other' => q({0} L),
+					},
+					'meter' => {
+						'' => q(m),
+						'one' => q({0} m),
+						'other' => q({0} m),
+					},
+					'micrometer' => {
+						'' => q(µm),
+						'one' => q({0} µm),
+						'other' => q({0} µm),
+					},
+					'millimeter' => {
+						'' => q(mm),
+						'one' => q({0} mm),
+						'other' => q({0} mm),
+					},
+					'millisecond' => {
+						'' => q(milisekundo),
+						'one' => q({0} ms.),
+						'other' => q({0} ms.),
+					},
+					'minute' => {
+						'' => q(minuto),
+						'one' => q({0} m.),
+						'other' => q({0} m.),
+					},
+					'month' => {
+						'' => q(monato),
+						'one' => q({0} mon.),
+						'other' => q({0} mon.),
+					},
+					'nanometer' => {
+						'' => q(nm),
+						'one' => q({0} nm),
+						'other' => q({0} nm),
+					},
+					'parsec' => {
+						'' => q(pc),
+						'one' => q({0} pc),
+						'other' => q({0} pc),
+					},
+					'picometer' => {
+						'' => q(pm),
+						'one' => q({0} pm),
+						'other' => q({0} pm),
+					},
+					'second' => {
+						'' => q({0}/s.),
+						'one' => q({0} s.),
+						'other' => q({0} s.),
+					},
+					'square-centimeter' => {
+						'' => q(cm²),
+						'one' => q({0} cm²),
+						'other' => q({0} cm²),
+					},
+					'square-kilometer' => {
+						'' => q(km²),
+						'one' => q({0} km²),
+						'other' => q({0} km²),
+					},
+					'square-meter' => {
+						'' => q(m²),
+						'one' => q({0} m²),
+						'other' => q({0} m²),
+					},
+					'week' => {
+						'' => q(semajno),
+					},
+					'year' => {
+						'' => q(jaro),
+						'one' => q({0} j.),
+						'other' => q({0} j.),
+					},
+				},
+			} }
+);
+
+has 'yesstr' => (
+	is			=> 'ro',
+	isa			=> 'RegexpRef',
+	init_arg	=> undef,
+	default		=> sub { qr'^(?i:jes|j|yes|y)$' }
+);
+
+has 'nostr' => (
+	is			=> 'ro',
+	isa			=> 'RegexpRef',
+	init_arg	=> undef,
+	default		=> sub { qr'^(?i:ne|n)$' }
+);
+
+has 'listPatterns' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+				start => q({0}, {1}),
+				middle => q({0}, {1}),
+				end => q({0} kaj {1}),
+				2 => q({0} kaj {1}),
+		} }
+);
+
+has 'default_numbering_system' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has native_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
 has 'number_symbols' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -654,18 +1407,36 @@ has 'number_symbols' => (
 	default		=> sub { {
 		'latn' => {
 			'decimal' => q(,),
-			'exponential' => q(),
 			'group' => q( ),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
+			'infinity' => q(∞),
+			'minusSign' => q(−),
+			'perMille' => q(‰),
+			'percentSign' => q(%),
+			'plusSign' => q(+),
 		},
 	} }
+);
+
+has 'number_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		decimalFormat => {
+			'default' => {
+				'0' => {
+					'' => '#,##0.###',
+				},
+			},
+		},
+		percentFormat => {
+			'default' => {
+				'0' => {
+					'' => '#,##0%',
+				},
+			},
+		},
+} },
 );
 
 has 'curriencies' => (
@@ -674,53 +1445,187 @@ has 'curriencies' => (
 	init_arg	=> undef,
 	default		=> sub { {
 		'AUD' => {
+			symbol => 'AU$',
 			display_name => {
-				'currency' => q(aŭstrala dolaro),
+				'currency' => q(Aŭstralia dolaro),
+				'one' => q(aŭstralia dolaro),
+				'other' => q(aŭstraliaj dolaroj),
 			},
 		},
 		'BRL' => {
+			symbol => 'R$',
 			display_name => {
-				'currency' => q(brazila realo),
+				'currency' => q(Brazila realo),
+				'one' => q(brazila realo),
+				'other' => q(brazilaj realoj),
+			},
+		},
+		'CAD' => {
+			symbol => 'CA$',
+			display_name => {
+				'currency' => q(Kanada dolaro),
+				'one' => q(kanada dolaro),
+				'other' => q(kanadaj dolaroj),
+			},
+		},
+		'CHF' => {
+			symbol => 'CHF',
+			display_name => {
+				'currency' => q(Svisa franko),
+				'one' => q(svisa franko),
+				'other' => q(svisaj frankoj),
 			},
 		},
 		'CNY' => {
+			symbol => 'CN¥',
 			display_name => {
-				'currency' => q(ĉina juano),
+				'currency' => q(Ĉina juano),
+				'one' => q(ĉina juano),
+				'other' => q(ĉinaj juanoj),
+			},
+		},
+		'DKK' => {
+			symbol => 'DKK',
+			display_name => {
+				'currency' => q(Dana krono),
+				'one' => q(dana krono),
+				'other' => q(danaj kronoj),
 			},
 		},
 		'EUR' => {
+			symbol => '€',
 			display_name => {
-				'currency' => q(eŭro),
+				'currency' => q(Eŭro),
+				'one' => q(eŭro),
+				'other' => q(eŭroj),
 			},
 		},
 		'GBP' => {
+			symbol => '£',
 			display_name => {
-				'currency' => q(brita sterlinga funto),
+				'currency' => q(Brita pundo),
+				'one' => q(brita pundo),
+				'other' => q(britaj pundoj),
+			},
+		},
+		'HKD' => {
+			symbol => 'HK$',
+			display_name => {
+				'currency' => q(Honkonga dolaro),
+				'one' => q(honkonga dolaro),
+				'other' => q(honkongaj dolaroj),
+			},
+		},
+		'IDR' => {
+			symbol => 'IDR',
+			display_name => {
+				'currency' => q(Indonezia rupio),
+				'one' => q(Indonezia rupio),
+				'other' => q(Indoneziaj rupioj),
 			},
 		},
 		'INR' => {
+			symbol => '₹',
 			display_name => {
-				'currency' => q(hinda rupio),
+				'currency' => q(Barata rupio),
+				'one' => q(barata rupio),
+				'other' => q(barataj rupioj),
 			},
 		},
 		'JPY' => {
+			symbol => 'JP¥',
 			display_name => {
-				'currency' => q(japana eno),
+				'currency' => q(Japana eno),
+				'one' => q(japana eno),
+				'other' => q(japanaj enoj),
+			},
+		},
+		'KRW' => {
+			symbol => '₩',
+			display_name => {
+				'currency' => q(Sud-korea ŭono),
+				'one' => q(sud-korea ŭono),
+				'other' => q(sud-koreaj ŭonoj),
+			},
+		},
+		'MXN' => {
+			symbol => 'MX$',
+			display_name => {
+				'currency' => q(Meksika peso),
+				'one' => q(meksika peso),
+				'other' => q(meksikaj pesoj),
 			},
 		},
 		'NOK' => {
+			symbol => 'NOK',
 			display_name => {
-				'currency' => q(norvega krono),
+				'currency' => q(Norvega krono),
+				'one' => q(norvega krono),
+				'other' => q(norvegaj kronoj),
+			},
+		},
+		'PLN' => {
+			symbol => 'PLN',
+			display_name => {
+				'currency' => q(Pola zloto),
+				'one' => q(pola zloto),
+				'other' => q(polaj zlotoj),
 			},
 		},
 		'RUB' => {
+			symbol => 'RUB',
 			display_name => {
-				'currency' => q(rusa rublo),
+				'currency' => q(Rusa rublo),
+				'one' => q(rusa rublo),
+				'other' => q(rusaj rubloj),
+			},
+		},
+		'SAR' => {
+			symbol => 'SAR',
+			display_name => {
+				'currency' => q(Sauda rialo),
+				'one' => q(sauda rialo),
+				'other' => q(saudaj rialoj),
+			},
+		},
+		'SEK' => {
+			symbol => 'SEK',
+			display_name => {
+				'currency' => q(Sveda krono),
+				'one' => q(sveda krono),
+				'other' => q(svedaj kronoj),
+			},
+		},
+		'THB' => {
+			symbol => '฿',
+			display_name => {
+				'currency' => q(Taja bahto),
+				'one' => q(taja bahto),
+				'other' => q(tajaj bahtoj),
+			},
+		},
+		'TRY' => {
+			symbol => '₺',
+			display_name => {
+				'currency' => q(Turka liro),
+				'one' => q(turka liro),
+				'other' => q(turkaj liroj),
+			},
+		},
+		'TWD' => {
+			symbol => 'NT$',
+			display_name => {
+				'currency' => q(Nova tajvana dolaro),
+				'one' => q(nova tajvana dolaro),
+				'other' => q(novaj tajvanaj dolaroj),
 			},
 		},
 		'USD' => {
+			symbol => 'US$',
 			display_name => {
-				'currency' => q(usona dolaro),
+				'currency' => q(Usona dolaro),
+				'one' => q(usona dolaro),
+				'other' => q(usonaj dolaroj),
 			},
 		},
 		'XAG' => {
@@ -753,6 +1658,21 @@ has 'curriencies' => (
 				'currency' => q(plateno),
 			},
 		},
+		'XXX' => {
+			display_name => {
+				'currency' => q(Nekonata valuto),
+				'one' => q(nekonata monunuo),
+				'other' => q(nekonataj monunuoj),
+			},
+		},
+		'ZAR' => {
+			symbol => 'ZAR',
+			display_name => {
+				'currency' => q(Sud-afrika rando),
+				'one' => q(sud-afrika rando),
+				'other' => q(sud-afrikaj randoj),
+			},
+		},
 	} },
 );
 
@@ -778,6 +1698,46 @@ has 'calendar_months' => (
 							'okt',
 							'nov',
 							'dec'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'januaro',
+							'februaro',
+							'marto',
+							'aprilo',
+							'majo',
+							'junio',
+							'julio',
+							'aŭgusto',
+							'septembro',
+							'oktobro',
+							'novembro',
+							'decembro'
+						],
+						leap => [
+							
+						],
+					},
+				},
+				'stand-alone' => {
+					narrow => {
+						nonleap => [
+							'J',
+							'F',
+							'M',
+							'A',
+							'M',
+							'J',
+							'J',
+							'A',
+							'S',
+							'O',
+							'N',
+							'D'
 						],
 						leap => [
 							
@@ -833,6 +1793,26 @@ has 'calendar_days' => (
 						sun => 'dimanĉo'
 					},
 				},
+				'stand-alone' => {
+					narrow => {
+						mon => 'L',
+						tue => 'M',
+						wed => 'M',
+						thu => 'Ĵ',
+						fri => 'V',
+						sat => 'S',
+						sun => 'D'
+					},
+					wide => {
+						mon => 'lundo',
+						tue => 'mardo',
+						wed => 'merkredo',
+						thu => 'ĵaŭdo',
+						fri => 'vendredo',
+						sat => 'sabato',
+						sun => 'dimanĉo'
+					},
+				},
 			},
 	} },
 );
@@ -849,10 +1829,22 @@ has 'calendar_quarters' => (
 						2 => 'K3',
 						3 => 'K4'
 					},
-					wide => {0 => '1a kvaronjaro',
-						1 => '2a kvaronjaro',
-						2 => '3a kvaronjaro',
-						3 => '4a kvaronjaro'
+					wide => {0 => '1-a kvaronjaro',
+						1 => '2-a kvaronjaro',
+						2 => '3-a kvaronjaro',
+						3 => '4-a kvaronjaro'
+					},
+				},
+				'stand-alone' => {
+					narrow => {0 => '1',
+						1 => '2',
+						2 => '3',
+						3 => '4'
+					},
+					wide => {0 => '1-a kvaronjaro',
+						1 => '2-a kvaronjaro',
+						2 => '3-a kvaronjaro',
+						3 => '4-a kvaronjaro'
 					},
 				},
 			},
@@ -869,6 +1861,12 @@ has 'day_periods' => (
 				'wide' => {
 					'pm' => q{ptm},
 					'am' => q{atm},
+					'noon' => q{tagmezo},
+				},
+				'narrow' => {
+					'noon' => q{t},
+					'am' => q{a},
+					'pm' => q{p},
 				},
 			},
 		},
@@ -884,6 +1882,14 @@ has 'eras' => (
 		},
 		'gregorian' => {
 			abbreviated => {
+				'0' => 'aK',
+				'1' => 'pK'
+			},
+			narrow => {
+				'0' => 'aK',
+				'1' => 'pK'
+			},
+			wide => {
 				'0' => 'aK',
 				'1' => 'pK'
 			},
@@ -944,6 +1950,18 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'gregorian' => {
+			Ed => q{E d},
+			MMMEd => q{E 'la' d-'an' 'de' MMM},
+			MMMd => q{d MMM},
+			d => q{d},
+			y => q{y},
+			yMMM => q{MMM y},
+			yMMMEd => q{E 'la' d-'an' 'de' MMM y},
+			yMMMd => q{d MMM y},
+			yQQQ => q{QQQ y},
+			yQQQQ => q{QQQQ y},
+		},
 	} },
 );
 
@@ -960,93 +1978,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			H => {
-				H => q{HH-HH},
-			},
-			Hm => {
-				H => q{HH:mm-HH:mm},
-				m => q{HH:mm-HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm-HH:mm v},
-				m => q{HH:mm-HH:mm v},
-			},
-			Hv => {
-				H => q{HH-HH v},
-			},
-			M => {
-				M => q{M-M},
-			},
-			MEd => {
-				M => q{E, MM-dd - E, MM-dd},
-				d => q{E, MM-dd - E, MM-dd},
-			},
-			MMM => {
-				M => q{MMM-MMM},
-			},
-			MMMEd => {
-				M => q{E, MMM-dd - E, MMM-dd},
-				d => q{E, MMM-dd - E, MMM-dd},
-			},
-			MMMd => {
-				M => q{MMM-dd - MMM-dd},
-				d => q{MMM-dd - MMM-dd},
-			},
-			Md => {
-				M => q{MM-dd - MM-dd},
-				d => q{MM-dd - MM-dd},
-			},
-			d => {
-				d => q{d-d},
-			},
-			fallback => '{0} - {1}',
-			h => {
-				h => q{h-h a},
-			},
-			hm => {
-				h => q{h:mm-h:mm a},
-				m => q{h:mm-h:mm a},
-			},
-			hmv => {
-				h => q{h:mm-h:mm a v},
-				m => q{h:mm-h:mm a v},
-			},
-			hv => {
-				h => q{h-h a v},
-			},
-			y => {
-				y => q{G y-y},
-			},
-			yM => {
-				M => q{G y-MM - y-MM},
-				y => q{G y-MM - y-MM},
-			},
-			yMEd => {
-				M => q{E, y-MM-dd - E, y-MM-dd},
-				d => q{E, y-MM-dd - E, y-MM-dd},
-				y => q{E, y-MM-dd - E, y-MM-dd},
-			},
-			yMMM => {
-				M => q{G y-MMM - y-MMM},
-				y => q{G y-MMM - y-MMM},
-			},
-			yMMMEd => {
-				M => q{E, d-'a' 'de' MMM - E, d-'a' 'de' MMM y G},
-				d => q{E, d-'a' - E, d-'a' 'de' MMM y G},
-				y => q{E, d-'a' 'de' MMM y - E, d-'a' 'de' MMM y G},
-			},
-			yMMMd => {
-				M => q{G y-MMM-dd - y-MMM-dd},
-				d => q{G y-MMM-dd - y-MMM-dd},
-				y => q{G y-MMM-dd - y-MMM-dd},
-			},
-			yMd => {
-				M => q{G y-MM-dd - y-MM-dd},
-				d => q{G y-MM-dd - y-MM-dd},
-				y => q{G y-MM-dd - y-MM-dd},
-			},
-		},
 		'gregorian' => {
 			H => {
 				H => q{HH-HH},
@@ -1087,7 +2018,7 @@ has 'datetime_formats_interval' => (
 			d => {
 				d => q{d-d},
 			},
-			fallback => '{0} - {1}',
+			fallback => '{0} – {1}',
 			h => {
 				h => q{h-h a},
 			},
@@ -1134,9 +2065,291 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd - y-MM-dd},
 			},
 		},
+		'generic' => {
+			H => {
+				H => q{HH-HH},
+			},
+			Hm => {
+				H => q{HH:mm-HH:mm},
+				m => q{HH:mm-HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm-HH:mm v},
+				m => q{HH:mm-HH:mm v},
+			},
+			Hv => {
+				H => q{HH-HH v},
+			},
+			M => {
+				M => q{M-M},
+			},
+			MEd => {
+				M => q{E, MM-dd - E, MM-dd},
+				d => q{E, MM-dd - E, MM-dd},
+			},
+			MMM => {
+				M => q{MMM-MMM},
+			},
+			MMMEd => {
+				M => q{E, MMM-dd - E, MMM-dd},
+				d => q{E, MMM-dd - E, MMM-dd},
+			},
+			MMMd => {
+				M => q{MMM-dd - MMM-dd},
+				d => q{MMM-dd - MMM-dd},
+			},
+			Md => {
+				M => q{MM-dd - MM-dd},
+				d => q{MM-dd - MM-dd},
+			},
+			d => {
+				d => q{d-d},
+			},
+			fallback => '{0} – {1}',
+			h => {
+				h => q{h-h a},
+			},
+			hm => {
+				h => q{h:mm-h:mm a},
+				m => q{h:mm-h:mm a},
+			},
+			hmv => {
+				h => q{h:mm-h:mm a v},
+				m => q{h:mm-h:mm a v},
+			},
+			hv => {
+				h => q{h-h a v},
+			},
+			y => {
+				y => q{G y-y},
+			},
+			yM => {
+				M => q{G y-MM - y-MM},
+				y => q{G y-MM - y-MM},
+			},
+			yMEd => {
+				M => q{E, y-MM-dd - E, y-MM-dd},
+				d => q{E, y-MM-dd - E, y-MM-dd},
+				y => q{E, y-MM-dd - E, y-MM-dd},
+			},
+			yMMM => {
+				M => q{G y-MMM - y-MMM},
+				y => q{G y-MMM - y-MMM},
+			},
+			yMMMEd => {
+				M => q{E, d-'a' 'de' MMM - E, d-'a' 'de' MMM y G},
+				d => q{E, d-'a' - E, d-'a' 'de' MMM y G},
+				y => q{E, d-'a' 'de' MMM y - E, d-'a' 'de' MMM y G},
+			},
+			yMMMd => {
+				M => q{G y-MMM-dd - y-MMM-dd},
+				d => q{G y-MMM-dd - y-MMM-dd},
+				y => q{G y-MMM-dd - y-MMM-dd},
+			},
+			yMd => {
+				M => q{G y-MM-dd - y-MM-dd},
+				d => q{G y-MM-dd - y-MM-dd},
+				y => q{G y-MM-dd - y-MM-dd},
+			},
+		},
 	} },
 );
 
+has 'time_zone_names' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default	=> sub { {
+		hourFormat => q(+HH:mm;−HH:mm),
+		gmtFormat => q(UTC{0}),
+		gmtZeroFormat => q(UTC),
+		regionFormat => q(tempo de {0}),
+		regionFormat => q(somera tempo de {0}),
+		regionFormat => q(norma tempo de {0}),
+		fallbackFormat => q({1} ({0})),
+		'Africa_Central' => {
+			long => {
+				'standard' => q(centra afrika tempo),
+			},
+		},
+		'Africa_Eastern' => {
+			long => {
+				'standard' => q(orienta afrika tempo),
+			},
+		},
+		'Africa_Southern' => {
+			long => {
+				'standard' => q(suda afrika tempo),
+			},
+		},
+		'Africa_Western' => {
+			long => {
+				'daylight' => q(okcidenta afrika somera tempo),
+				'generic' => q(okcidenta afrika tempo),
+				'standard' => q(okcidenta afrika norma tempo),
+			},
+		},
+		'America_Central' => {
+			long => {
+				'daylight' => q(centra nord-amerika somera tempo),
+				'generic' => q(centra nord-amerika tempo),
+				'standard' => q(centra nord-amerika norma tempo),
+			},
+		},
+		'America_Eastern' => {
+			long => {
+				'daylight' => q(orienta nord-amerika somera tempo),
+				'generic' => q(orienta nord-amerika tempo),
+				'standard' => q(orienta nord-amerika norma tempo),
+			},
+		},
+		'America_Mountain' => {
+			long => {
+				'daylight' => q(monta nord-amerika somera tempo),
+				'generic' => q(monta nord-amerika tempo),
+				'standard' => q(monta nord-amerika norma tempo),
+			},
+		},
+		'America_Pacific' => {
+			long => {
+				'daylight' => q(pacifika nord-amerika somera tempo),
+				'generic' => q(pacifika nord-amerika tempo),
+				'standard' => q(pacifika nord-amerika norma tempo),
+			},
+		},
+		'Arabian' => {
+			long => {
+				'daylight' => q(araba somera tempo),
+				'generic' => q(araba tempo),
+				'standard' => q(araba norma tempo),
+			},
+		},
+		'Atlantic' => {
+			long => {
+				'daylight' => q(atlantika nord-amerika somera tempo),
+				'generic' => q(atlantika nord-amerika tempo),
+				'standard' => q(atlantika nord-amerika norma tempo),
+			},
+		},
+		'Australia_Central' => {
+			long => {
+				'daylight' => q(centra aŭstralia somera tempo),
+				'generic' => q(centra aŭstralia tempo),
+				'standard' => q(centra aŭstralia norma tempo),
+			},
+		},
+		'Australia_CentralWestern' => {
+			long => {
+				'daylight' => q(centrokcidenta aŭstralia somera tempo),
+				'generic' => q(centrokcidenta aŭstralia tempo),
+				'standard' => q(centrokcidenta aŭstralia norma tempo),
+			},
+		},
+		'Australia_Eastern' => {
+			long => {
+				'daylight' => q(orienta aŭstralia somera tempo),
+				'generic' => q(orienta aŭstralia tempo),
+				'standard' => q(orienta aŭstralia norma tempo),
+			},
+		},
+		'Australia_Western' => {
+			long => {
+				'daylight' => q(okcidenta aŭstralia somera tempo),
+				'generic' => q(okcidenta aŭstralia tempo),
+				'standard' => q(okcidenta aŭstralia norma tempo),
+			},
+		},
+		'China' => {
+			long => {
+				'daylight' => q(ĉina somera tempo),
+				'generic' => q(ĉina tempo),
+				'standard' => q(ĉina norma tempo),
+			},
+		},
+		'Etc/Unknown' => {
+			exemplarCity => q#nekonata urbo#,
+		},
+		'Europe_Central' => {
+			long => {
+				'daylight' => q(centra eŭropa somera tempo),
+				'generic' => q(centra eŭropa tempo),
+				'standard' => q(centra eŭropa norma tempo),
+			},
+		},
+		'Europe_Eastern' => {
+			long => {
+				'daylight' => q(orienta eŭropa somera tempo),
+				'generic' => q(orienta eŭropa tempo),
+				'standard' => q(orienta eŭropa norma tempo),
+			},
+		},
+		'Europe_Western' => {
+			long => {
+				'daylight' => q(okcidenta eŭropa somera tempo),
+				'generic' => q(okcidenta eŭropa tempo),
+				'standard' => q(okcidenta eŭropa norma tempo),
+			},
+		},
+		'GMT' => {
+			long => {
+				'standard' => q(universala tempo kunordigita),
+			},
+		},
+		'India' => {
+			long => {
+				'standard' => q(barata tempo),
+			},
+		},
+		'Indochina' => {
+			long => {
+				'standard' => q(hindoĉina tempo),
+			},
+		},
+		'Indonesia_Central' => {
+			long => {
+				'standard' => q(centra indonezia tempo),
+			},
+		},
+		'Indonesia_Eastern' => {
+			long => {
+				'standard' => q(orienta indonezia tempo),
+			},
+		},
+		'Indonesia_Western' => {
+			long => {
+				'standard' => q(okcidenta indonezia tempo),
+			},
+		},
+		'Israel' => {
+			long => {
+				'daylight' => q(israela somera tempo),
+				'generic' => q(israela tempo),
+				'standard' => q(israela norma tempo),
+			},
+		},
+		'Japan' => {
+			long => {
+				'daylight' => q(japana somera tempo),
+				'generic' => q(japana tempo),
+				'standard' => q(japana norma tempo),
+			},
+		},
+		'Korea' => {
+			long => {
+				'daylight' => q(korea somera tempo),
+				'generic' => q(korea tempo),
+				'standard' => q(korea norma tempo),
+			},
+		},
+		'Moscow' => {
+			long => {
+				'daylight' => q(moskva somera tempo),
+				'generic' => q(moskva tempo),
+				'standard' => q(moskva norma tempo),
+			},
+		},
+	 } }
+);
 no Moose;
 __PACKAGE__->meta->make_immutable;
 

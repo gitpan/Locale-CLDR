@@ -1,11 +1,11 @@
 package Locale::CLDR::Zgh::Any::Ma;
 # This file auto generated from Data\common\main\zgh_MA.xml
-#	on Sat 21 Jun  1:33:54 am GMT
-# XML file generated 2013-07-26 22:28:11 -0500 (Fri, 26 Jul 2013)
+#	on Thu  2 Oct  2:21:13 pm GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';

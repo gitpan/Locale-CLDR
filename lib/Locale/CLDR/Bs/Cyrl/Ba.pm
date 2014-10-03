@@ -1,11 +1,11 @@
 package Locale::CLDR::Bs::Cyrl::Ba;
 # This file auto generated from Data\common\main\bs_Cyrl_BA.xml
-#	on Fri 20 Jun 11:05:57 pm GMT
-# XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
+#	on Thu  2 Oct 10:34:16 am GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';

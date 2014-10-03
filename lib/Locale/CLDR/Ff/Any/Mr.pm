@@ -1,11 +1,11 @@
 package Locale::CLDR::Ff::Any::Mr;
 # This file auto generated from Data\common\main\ff_MR.xml
-#	on Fri 20 Jun 11:30:27 pm GMT
-# XML file generated 2014-01-06 13:01:35 -0600 (Mon, 06 Jan 2014)
+#	on Thu  2 Oct 11:09:25 am GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';

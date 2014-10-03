@@ -1,11 +1,11 @@
 package Locale::CLDR::Af::Any::Na;
 # This file auto generated from Data\common\main\af_NA.xml
-#	on Fri 20 Jun 10:44:38 pm GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct 10:08:51 am GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -66,13 +66,11 @@ has 'date_formats' => (
 			'full' => q{EEEE d MMMM y G},
 			'long' => q{d MMMM y G},
 			'medium' => q{d MMM y G},
-			'short' => q{GGGGG y-MM-dd},
 		},
 		'gregorian' => {
 			'full' => q{EEEE d MMMM y},
 			'long' => q{d MMMM y},
 			'medium' => q{d MMM y},
-			'short' => q{y-MM-dd},
 		},
 	} },
 );

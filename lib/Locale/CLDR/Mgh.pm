@@ -1,11 +1,11 @@
 package Locale::CLDR::Mgh;
 # This file auto generated from Data\common\main\mgh.xml
-#	on Sat 21 Jun 12:25:52 am GMT
-# XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
+#	on Thu  2 Oct 12:52:47 pm GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -256,7 +256,7 @@ has 'nostr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
 	init_arg	=> undef,
-	default		=> sub { qr'^(?i:akin'tuna|a|no|n)$' }
+	default		=> sub { qr'^(?i:akin’tuna|a|no|n)$' }
 );
 
 has 'number_symbols' => (
@@ -266,16 +266,7 @@ has 'number_symbols' => (
 	default		=> sub { {
 		'latn' => {
 			'decimal' => q(,),
-			'exponential' => q(),
 			'group' => q(.),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -331,7 +322,7 @@ has 'calendar_months' => (
 							'Mweri wo tisa',
 							'Mweri wo kumi',
 							'Mweri wo kumi na moja',
-							'Mweri wo kumi na yel\'li'
+							'Mweri wo kumi na yel’li'
 						],
 						leap => [
 							
@@ -413,7 +404,7 @@ has 'day_periods' => (
 			'format' => {
 				'wide' => {
 					'am' => q{wichishu},
-					'pm' => q{mchochil'l},
+					'pm' => q{mchochil’l},
 				},
 			},
 		},
@@ -493,7 +484,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -517,7 +508,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},

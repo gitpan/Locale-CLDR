@@ -1,11 +1,11 @@
 package Locale::CLDR::ValidCodes;
 # This file auto generated from Data\common\supplemental\supplementalMetadata.xml
-#	on Fri 20 Jun 10:42:49 pm GMT
-# XML file generated 2014-03-03 15:14:02 -0600 (Mon, 03 Mar 2014)
+#	on Thu  2 Oct 10:05:41 am GMT
+# XML file generated 2014-09-17 00:43:03 -0500 (Wed, 17 Sep 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -27,13 +27,16 @@ has 'valid_languages' => (
  ada
  ady
  ae
+ aeb
  af
  afh
  agq
  ain
  ak
  akk
+ akz
  ale
+ aln
  alt
  am
  an
@@ -42,38 +45,53 @@ has 'valid_languages' => (
  ar
  arc
  arn
+ aro
  arp
+ arq
  arw
+ ary
+ arz
  as
  asa
+ ase
  ast
  av
+ avk
  awa
  ay
  az
+ azb
  ba
  bal
  ban
+ bar
  bas
  bax
+ bbc
  bbj
  bfd
  be
  bej
  bem
+ bew
  bez
+ bfq
  bg
  bho
  bi
  bik
  bin
+ bjn
  bkm
  bla
  bm
  bn
  bo
+ bpy
+ bqi
  br
  bra
+ brh
  brx
  bs
  bss
@@ -103,6 +121,7 @@ has 'valid_languages' => (
  ckb
  co
  cop
+ cps
  cr
  crh
  cs
@@ -122,6 +141,7 @@ has 'valid_languages' => (
  dje
  doi
  dsb
+ dtp
  dua
  dum
  dv
@@ -132,6 +152,7 @@ has 'valid_languages' => (
  ebu
  ee
  efi
+ egl
  egy
  eka
  el
@@ -140,36 +161,46 @@ has 'valid_languages' => (
  enm
  eo
  es
+ esu
  et
  eu
  ewo
+ ext
  fa
  fan
  fat
  ff
  fi
  fil
+ fit
  fj
  fo
  fon
  fr
+ frc
  frm
  fro
+ frp
  frr
  frs
  fur
  fy
  ga
  gaa
+ gag
+ gan
  gay
  gba
+ gbz
  gd
  gez
  gil
  gl
+ glk
  gmh
  gn
  goh
+ gom
  gon
  gor
  got
@@ -177,20 +208,25 @@ has 'valid_languages' => (
  grc
  gsw
  gu
+ guc
+ gur
  guz
  gv
  gwi
  ha
  hai
+ hak
  haw
  he
  hi
+ hif
  hil
  hit
  hmn
  ho
  hr
  hsb
+ hsn
  ht
  hu
  hup
@@ -210,12 +246,15 @@ has 'valid_languages' => (
  is
  it
  iu
+ izh
  ja
+ jam
  jbo
  jgo
  jmc
  jpr
  jrb
+ jut
  jv
  ka
  kaa
@@ -229,12 +268,16 @@ has 'valid_languages' => (
  kcg
  kde
  kea
+ ken
  kfo
  kg
+ kgp
  kha
  kho
  khq
+ khw
  ki
+ kiu
  kj
  kk
  kkj
@@ -244,11 +287,14 @@ has 'valid_languages' => (
  kmb
  kn
  ko
+ koi
  kok
  kos
  kpe
  kr
  krc
+ kri
+ krj
  krl
  kru
  ks
@@ -268,14 +314,19 @@ has 'valid_languages' => (
  lam
  lb
  lez
+ lfn
  lg
  li
+ lij
+ liv
  lkt
+ lmo
  ln
  lo
  lol
  loz
  lt
+ ltg
  lu
  lua
  lui
@@ -284,6 +335,8 @@ has 'valid_languages' => (
  lus
  luy
  lv
+ lzh
+ lzz
  mad
  maf
  mag
@@ -313,6 +366,7 @@ has 'valid_languages' => (
  moh
  mos
  mr
+ mrj
  ms
  mt
  mua
@@ -320,10 +374,13 @@ has 'valid_languages' => (
  mus
  mwl
  mwr
+ mwv
  my
  mye
  myv
+ mzn
  na
+ nan
  nap
  naq
  nb
@@ -334,6 +391,7 @@ has 'valid_languages' => (
  ng
  nia
  niu
+ njo
  nl
  nmg
  nn
@@ -341,6 +399,7 @@ has 'valid_languages' => (
  no
  nog
  non
+ nov
  nqo
  nr
  nso
@@ -365,25 +424,39 @@ has 'valid_languages' => (
  pam
  pap
  pau
+ pcd
+ pdc
+ pdt
  peo
+ pfl
  phn
  pi
  pl
+ pms
+ pnt
  pon
+ prg
  pro
  ps
  pt
  qu
+ quc
+ qug
  raj
  rap
  rar
+ rgn
+ rif
  rm
  rn
  ro
  rof
  rom
  root
+ rtm
  ru
+ rue
+ rug
  rup
  rw
  rwk
@@ -394,19 +467,23 @@ has 'valid_languages' => (
  saq
  sas
  sat
+ saz
  sba
  sbp
  sc
  scn
  sco
  sd
+ sdc
  se
  see
  seh
+ sei
  sel
  ses
  sg
  sga
+ sgs
  sh
  shi
  shn
@@ -415,6 +492,8 @@ has 'valid_languages' => (
  sid
  sk
  sl
+ sli
+ sly
  sm
  sma
  smj
@@ -431,6 +510,7 @@ has 'valid_languages' => (
  ss
  ssy
  st
+ stq
  su
  suk
  sus
@@ -441,7 +521,9 @@ has 'valid_languages' => (
  swc
  syc
  syr
+ szl
  ta
+ tcy
  te
  tem
  teo
@@ -454,19 +536,24 @@ has 'valid_languages' => (
  tiv
  tk
  tkl
+ tkr
  tl
  tlh
  tli
+ tly
  tmh
  tn
  to
  tog
  tpi
  tr
+ tru
  trv
  ts
+ tsd
  tsi
  tt
+ ttt
  tum
  tvl
  tw
@@ -484,9 +571,14 @@ has 'valid_languages' => (
  uz
  vai
  ve
+ vec
+ vep
  vi
+ vls
+ vmf
  vo
  vot
+ vro
  vun
  wa
  wae
@@ -494,8 +586,10 @@ has 'valid_languages' => (
  war
  was
  wo
+ wuu
  xal
  xh
+ xmf
  xog
  yao
  yap
@@ -503,10 +597,12 @@ has 'valid_languages' => (
  ybb
  yi
  yo
+ yrl
  yue
  za
  zap
  zbl
+ zea
  zen
  zgh
  zh
@@ -612,6 +708,7 @@ has 'valid_scripts' => (
  Merc
  Mero
  Mlym
+ Modi
  Mong
  Moon
  Mroo
@@ -628,6 +725,7 @@ has 'valid_scripts' => (
  Orya
  Osma
  Palm
+ Pauc
  Perm
  Phag
  Phli
@@ -695,6 +793,7 @@ has 'valid_scripts' => (
  Sgnw
  Shaw
  Shrd
+ Sidd
  Sind
  Sinh
  Sora
@@ -1177,6 +1276,7 @@ has 'valid_keys' => (
 		],
 		co	=> [
 			'big5han',
+			'compat',
 			'dict',
 			'dictionary',
 			'direct',
@@ -1711,6 +1811,8 @@ has 'valid_keys' => (
 			'Antarctica/Rothera',
 			'aqsyw',
 			'Antarctica/Syowa',
+			'aqtrl',
+			'Antarctica/Troll',
 			'aqvos',
 			'Antarctica/Vostok',
 			'arbue',
@@ -1918,15 +2020,12 @@ has 'valid_keys' => (
 			'cmdla',
 			'Africa/Douala',
 			'cnckg',
-			'Asia/Chongqing Asia/Chungking',
 			'cnhrb',
-			'Asia/Harbin',
 			'cnkhg',
-			'Asia/Kashgar',
 			'cnsha',
-			'Asia/Shanghai PRC',
+			'Asia/Shanghai Asia/Chongqing Asia/Chungking Asia/Harbin PRC',
 			'cnurc',
-			'Asia/Urumqi',
+			'Asia/Urumqi Asia/Kashgar',
 			'cobog',
 			'America/Bogota',
 			'crsjo',
@@ -2297,6 +2396,8 @@ has 'valid_keys' => (
 			'Europe/Bucharest',
 			'rsbeg',
 			'Europe/Belgrade',
+			'ruchita',
+			'Asia/Chita',
 			'rudyr',
 			'Asia/Anadyr',
 			'rugdx',
@@ -2321,6 +2422,8 @@ has 'valid_keys' => (
 			'Asia/Novosibirsk',
 			'rupkc',
 			'Asia/Kamchatka',
+			'rusred',
+			'Asia/Srednekolymsk',
 			'ruunera',
 			'Asia/Ust-Nera',
 			'ruuus',
@@ -2669,7 +2772,7 @@ has 'language_aliases' => (
 	'pes' => 'fa',
 	'plt' => 'mg',
 	'pnb' => 'lah',
-	'qxp' => 'qu',
+	'quz' => 'qu',
 	'rmy' => 'rom',
 	'spy' => 'kln',
 	'src' => 'sc',
@@ -2872,6 +2975,26 @@ has 'language_aliases' => (
 	'zha' => 'za',
 	'zho' => 'zh',
 	'zul' => 'zu',
+	'alb' => 'sq',
+	'arm' => 'hy',
+	'baq' => 'eu',
+	'bur' => 'my',
+	'chi' => 'zh',
+	'cze' => 'cs',
+	'dut' => 'nl',
+	'fre' => 'fr',
+	'geo' => 'ka',
+	'ger' => 'de',
+	'gre' => 'el',
+	'ice' => 'is',
+	'mac' => 'mk',
+	'mao' => 'mi',
+	'may' => 'ms',
+	'per' => 'fa',
+	'rum' => 'ro',
+	'slo' => 'sk',
+	'tib' => 'bo',
+	'wel' => 'cy',
 	}},
 );
 has 'territory_aliases' => (

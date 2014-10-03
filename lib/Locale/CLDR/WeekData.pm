@@ -1,11 +1,11 @@
 package Locale::CLDR::WeekData;
 # This file auto generated from Data.xml
-#	on Fri 20 Jun 10:43:24 pm GMT
-# XML file generated 2014-03-13 15:53:16 -0500 (Thu, 13 Mar 2014)
+#	on Thu  2 Oct 10:06:15 am GMT
+# XML file generated 2014-09-11 12:17:53 -0500 (Thu, 11 Sep 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -237,18 +237,18 @@ has '_week_data_weekend_start' => (
 	init_arg	=> undef,
 	default	=> sub { {
 		'AF' => 'thu',
-		'DZ' => 'thu',
-		'IR' => 'thu',
-		'OM' => 'thu',
 		'AE' => 'fri',
 		'BH' => 'fri',
+		'DZ' => 'fri',
 		'EG' => 'fri',
 		'IL' => 'fri',
 		'IQ' => 'fri',
+		'IR' => 'fri',
 		'JO' => 'fri',
 		'KW' => 'fri',
 		'LY' => 'fri',
 		'MA' => 'fri',
+		'OM' => 'fri',
 		'QA' => 'fri',
 		'SA' => 'fri',
 		'SD' => 'fri',
@@ -266,11 +266,10 @@ has '_week_data_weekend_end' => (
 	init_arg	=> undef,
 	default	=> sub { {
 		'AF' => 'fri',
-		'DZ' => 'fri',
 		'IR' => 'fri',
-		'OM' => 'fri',
 		'AE' => 'sat',
 		'BH' => 'sat',
+		'DZ' => 'sat',
 		'EG' => 'sat',
 		'IL' => 'sat',
 		'IQ' => 'sat',
@@ -278,6 +277,7 @@ has '_week_data_weekend_end' => (
 		'KW' => 'sat',
 		'LY' => 'sat',
 		'MA' => 'sat',
+		'OM' => 'sat',
 		'QA' => 'sat',
 		'SA' => 'sat',
 		'SD' => 'sat',

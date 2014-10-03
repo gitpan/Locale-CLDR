@@ -1,11 +1,11 @@
 package Locale::CLDR::Ps;
 # This file auto generated from Data\common\main\ps.xml
-#	on Sat 21 Jun 12:48:50 am GMT
-# XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
+#	on Thu  2 Oct  1:21:53 pm GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -263,6 +263,22 @@ EOT
 );
 
 
+has 'units' => (
+	is			=> 'ro',
+	isa			=> 'HashRef[HashRef[HashRef[Str]]]',
+	init_arg	=> undef,
+	default		=> sub { {
+				'long' => {
+					'day' => {
+						'' => q(ورځ),
+					},
+					'year' => {
+						'' => q(کالونه),
+					},
+				},
+			} }
+);
+
 has 'default_numbering_system' => (
 	is			=> 'ro',
 	isa			=> 'Str',
@@ -286,27 +302,15 @@ has 'number_symbols' => (
 			'decimal' => q(٫),
 			'exponential' => q(×۱۰^),
 			'group' => q(٬),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
 			'percentSign' => q(٪),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 		'latn' => {
 			'decimal' => q(,),
 			'exponential' => q(E),
 			'group' => q(.),
-			'infinity' => q(),
-			'list' => q(),
 			'minusSign' => q(‎−),
-			'nan' => q(),
-			'perMille' => q(),
 			'percentSign' => q(%),
 			'plusSign' => q(‎+),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -378,8 +382,8 @@ has 'calendar_months' => (
 						nonleap => [
 							'وری',
 							'غویی',
-							'غبرګولی',
-							'چنګاښ',
+							'غبرگولی',
+							'چنگاښ',
 							'زمری',
 							'وږی',
 							'تله',
@@ -427,8 +431,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{غ.و.},
 					'am' => q{غ.م.},
+					'pm' => q{غ.و.},
 				},
 			},
 		},
@@ -512,15 +516,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			H => q{H},
-			Hm => q{H:mm},
-			Hms => q{H:mm:ss},
-			MMMMd => q{d MMMM},
-			Md => q{M/d},
-			yM => q{G y/M},
-			yMMMM => q{د G y د MMMM},
-		},
 		'gregorian' => {
 			H => q{H},
 			Hm => q{H:mm},
@@ -529,6 +524,15 @@ has 'datetime_formats_available_formats' => (
 			Md => q{M/d},
 			yM => q{y/M},
 			yMMMM => q{د y د MMMM},
+		},
+		'generic' => {
+			H => q{H},
+			Hm => q{H:mm},
+			Hms => q{H:mm:ss},
+			MMMMd => q{d MMMM},
+			Md => q{M/d},
+			yM => q{G y/M},
+			yMMMM => q{د G y د MMMM},
 		},
 	} },
 );
@@ -558,8 +562,27 @@ has 'time_zone_names' => (
 	init_arg	=> undef,
 	default	=> sub { {
 		regionFormat => q(د {0} په وخت),
+		'Almaty' => {
+			long => {
+				'daylight' => q(∅∅∅),
+				'generic' => q(الماتا په وخت),
+				'standard' => q(∅∅∅),
+			},
+		},
 		'Asia/Kabul' => {
 			exemplarCity => q#کابل#,
+		},
+		'Europe_Western' => {
+			long => {
+				'daylight' => q(∅∅∅),
+				'generic' => q(لوېديزې اروپا وخت),
+				'standard' => q(∅∅∅),
+			},
+		},
+		'GMT' => {
+			long => {
+				'standard' => q(گرينويچ وخت),
+			},
 		},
 	 } }
 );

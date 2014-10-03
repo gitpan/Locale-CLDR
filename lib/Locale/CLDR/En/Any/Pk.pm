@@ -1,11 +1,11 @@
 package Locale::CLDR::En::Any::Pk;
 # This file auto generated from Data\common\main\en_PK.xml
-#	on Fri 20 Jun 11:21:32 pm GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct 10:58:45 am GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -63,9 +63,6 @@ has 'curriencies' => (
 		'PKR' => {
 			symbol => 'Rs',
 		},
-		'USD' => {
-			symbol => 'US$',
-		},
 	} },
 );
 
@@ -82,19 +79,19 @@ has 'day_period_data' => (
 		SWITCH:
 		for ($type) {
 			if ($_ eq 'gregorian') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'generic') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
 			last SWITCH;
 			}
 		}
@@ -120,15 +117,11 @@ has 'date_formats' => (
 	default		=> sub { {
 		'generic' => {
 			'full' => q{EEEE d MMMM y G},
-			'long' => q{d MMMM y G},
 			'medium' => q{dd-MMM-y G},
-			'short' => q{dd/MM/y GGGGG},
 		},
 		'gregorian' => {
 			'full' => q{EEEE d MMMM y},
-			'long' => q{d MMMM y},
 			'medium' => q{dd-MMM-y},
-			'short' => q{dd/MM/y},
 		},
 	} },
 );

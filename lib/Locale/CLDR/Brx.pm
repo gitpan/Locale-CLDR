@@ -1,11 +1,11 @@
 package Locale::CLDR::Brx;
 # This file auto generated from Data\common\main\brx.xml
-#	on Fri 20 Jun 10:58:32 pm GMT
-# XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
+#	on Thu  2 Oct 10:25:49 am GMT
+# XML file generated 2014-08-14 15:10:07 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -1068,32 +1068,62 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'day' => {
+						'' => q(सान),
 						'one' => q({0} सान),
 						'other' => q({0} सान),
 					},
 					'hour' => {
+						'' => q(घंटे),
 						'one' => q({0} रिंगा),
 						'other' => q({0} घंटे),
 					},
 					'minute' => {
+						'' => q(मिन.),
 						'one' => q({0} मिन.),
 						'other' => q({0} मिन.),
 					},
 					'month' => {
+						'' => q(महीने),
 						'one' => q({0} महीना),
 						'other' => q({0} महीने),
 					},
 					'second' => {
+						'' => q(सेकं.),
 						'one' => q({0} सेकं.),
 						'other' => q({0} सेकं.),
 					},
 					'week' => {
+						'' => q(सप्ताह),
 						'one' => q({0} सप्ताह),
 						'other' => q({0} सप्ताह),
 					},
 					'year' => {
+						'' => q(साल),
 						'one' => q({0} साल),
 						'other' => q({0} साल),
+					},
+				},
+				'short' => {
+					'day' => {
+						'' => q(सान),
+					},
+					'hour' => {
+						'' => q(घंटे),
+					},
+					'minute' => {
+						'' => q(मिन.),
+					},
+					'month' => {
+						'' => q(महीने),
+					},
+					'second' => {
+						'' => q(सेकं.),
+					},
+					'week' => {
+						'' => q(सप्ताह),
+					},
+					'year' => {
+						'' => q(साल),
 					},
 				},
 			} }
@@ -1143,7 +1173,6 @@ has 'number_symbols' => (
 			'perMille' => q(‰),
 			'percentSign' => q(%),
 			'plusSign' => q(+),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -2680,8 +2709,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{फुं},
 					'pm' => q{बेलासे},
+					'am' => q{फुं},
 				},
 			},
 		},

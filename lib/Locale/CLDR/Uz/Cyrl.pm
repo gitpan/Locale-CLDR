@@ -1,11 +1,11 @@
 package Locale::CLDR::Uz::Cyrl;
 # This file auto generated from Data\common\main\uz_Cyrl.xml
-#	on Sat 21 Jun  1:31:25 am GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct  2:17:18 pm GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -724,142 +724,177 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'acre' => {
+						'' => q(ac),
 						'one' => q({0} ac),
 						'other' => q({0} ac),
 					},
 					'arc-minute' => {
+						'' => q(′),
 						'one' => q({0}′),
 						'other' => q({0}′),
 					},
 					'arc-second' => {
+						'' => q(″),
 						'one' => q({0}″),
 						'other' => q({0}″),
 					},
 					'celsius' => {
+						'' => q(°C),
 						'one' => q({0}°C),
 						'other' => q({0}°C),
 					},
 					'centimeter' => {
+						'' => q(см),
 						'one' => q({0} см),
 						'other' => q({0} см),
 					},
 					'cubic-kilometer' => {
+						'' => q(km³),
 						'one' => q({0} km³),
 						'other' => q({0} km³),
 					},
 					'cubic-mile' => {
+						'' => q(mi³),
 						'one' => q({0} mi³),
 						'other' => q({0} mi³),
 					},
 					'day' => {
+						'' => q(кун),
 						'one' => q({0} кун),
 						'other' => q({0} кун),
 					},
 					'degree' => {
+						'' => q(°),
 						'one' => q({0}°),
 						'other' => q({0}°),
 					},
 					'fahrenheit' => {
+						'' => q(°F),
 						'one' => q({0}°F),
 						'other' => q({0}°F),
 					},
 					'foot' => {
+						'' => q(фут),
 						'one' => q({0} фут),
 						'other' => q({0} фут),
 					},
 					'g-force' => {
+						'' => q(G),
 						'one' => q({0} G),
 						'other' => q({0} G),
 					},
 					'gram' => {
+						'' => q(г),
 						'one' => q({0} г),
 						'other' => q({0} г),
 					},
 					'hectare' => {
+						'' => q(ha),
 						'one' => q({0} ha),
 						'other' => q({0} ha),
 					},
 					'hectopascal' => {
+						'' => q(hPa),
 						'one' => q({0} hPa),
 						'other' => q({0} hPa),
 					},
 					'horsepower' => {
+						'' => q(hp),
 						'one' => q({0} hp),
 						'other' => q({0} hp),
 					},
 					'hour' => {
+						'' => q(соат),
 						'one' => q({0} соат),
 						'other' => q({0} соат),
 					},
 					'inch' => {
+						'' => q(дюйм),
 						'one' => q({0} дюйм),
 						'other' => q({0} дюйм),
 					},
 					'inch-hg' => {
+						'' => q(inHg),
 						'one' => q({0} inHg),
 						'other' => q({0} inHg),
 					},
 					'kilogram' => {
+						'' => q(кг),
 						'one' => q({0} кг),
 						'other' => q({0} кг),
 					},
 					'kilometer' => {
+						'' => q(км),
 						'one' => q({0} км),
 						'other' => q({0} км),
 					},
 					'kilometer-per-hour' => {
+						'' => q(km/h),
 						'one' => q({0} km/h),
 						'other' => q({0} km/h),
 					},
 					'kilowatt' => {
+						'' => q(kW),
 						'one' => q({0} kW),
 						'other' => q({0} kW),
 					},
 					'light-year' => {
+						'' => q(ё.й.),
 						'one' => q({0} ё.й.),
 						'other' => q({0} ё.й.),
 					},
 					'liter' => {
+						'' => q(l),
 						'one' => q({0} l),
 						'other' => q({0} l),
 					},
 					'meter' => {
+						'' => q(м),
 						'one' => q({0} м),
 						'other' => q({0} м),
 					},
 					'meter-per-second' => {
+						'' => q(m/s),
 						'one' => q({0} m/s),
 						'other' => q({0} m/s),
 					},
 					'mile' => {
+						'' => q(миля),
 						'one' => q({0} миля),
 						'other' => q({0} миля),
 					},
 					'mile-per-hour' => {
+						'' => q(mi/h),
 						'one' => q({0} mi/h),
 						'other' => q({0} mi/h),
 					},
 					'millibar' => {
+						'' => q(mbar),
 						'one' => q({0} mbar),
 						'other' => q({0} mbar),
 					},
 					'millimeter' => {
+						'' => q(мм),
 						'one' => q({0} мм),
 						'other' => q({0} мм),
 					},
 					'millisecond' => {
+						'' => q(миллисония),
 						'one' => q({0} миллисония),
 						'other' => q({0} миллисония),
 					},
 					'minute' => {
+						'' => q(дақиқа),
 						'one' => q({0} дақиқа),
 						'other' => q({0} дақиқа),
 					},
 					'month' => {
+						'' => q(ой),
 						'one' => q({0} ой),
 						'other' => q({0} ой),
 					},
 					'ounce' => {
+						'' => q(унция),
 						'one' => q({0} унция),
 						'other' => q({0} унция),
 					},
@@ -867,46 +902,57 @@ has 'units' => (
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(пм),
 						'one' => q({0} пм),
 						'other' => q({0} пм),
 					},
 					'pound' => {
+						'' => q(фунт),
 						'one' => q({0} фунт),
 						'other' => q({0} фунт),
 					},
 					'second' => {
+						'' => q(сония),
 						'one' => q({0} сония),
 						'other' => q({0} сония),
 					},
 					'square-foot' => {
+						'' => q(ft²),
 						'one' => q({0} ft²),
 						'other' => q({0} ft²),
 					},
 					'square-kilometer' => {
+						'' => q(km²),
 						'one' => q({0} km²),
 						'other' => q({0} km²),
 					},
 					'square-meter' => {
+						'' => q(m²),
 						'one' => q({0} m²),
 						'other' => q({0} m²),
 					},
 					'square-mile' => {
+						'' => q(mi²),
 						'one' => q({0} mi²),
 						'other' => q({0} mi²),
 					},
 					'watt' => {
+						'' => q(W),
 						'one' => q({0} W),
 						'other' => q({0} W),
 					},
 					'week' => {
+						'' => q(ҳафта),
 						'one' => q({0} ҳафта),
 						'other' => q({0} ҳафта),
 					},
 					'yard' => {
+						'' => q(ярд),
 						'one' => q({0} ярд),
 						'other' => q({0} ярд),
 					},
 					'year' => {
+						'' => q(йил),
 						'one' => q({0} йил),
 						'other' => q({0} йил),
 					},
@@ -1102,142 +1148,177 @@ has 'units' => (
 				},
 				'short' => {
 					'acre' => {
+						'' => q(ac),
 						'one' => q({0} ac),
 						'other' => q({0} ac),
 					},
 					'arc-minute' => {
+						'' => q(′),
 						'one' => q({0}′),
 						'other' => q({0}′),
 					},
 					'arc-second' => {
+						'' => q(″),
 						'one' => q({0}″),
 						'other' => q({0}″),
 					},
 					'celsius' => {
+						'' => q(°C),
 						'one' => q({0}°C),
 						'other' => q({0}°C),
 					},
 					'centimeter' => {
+						'' => q(см),
 						'one' => q({0} см),
 						'other' => q({0} см),
 					},
 					'cubic-kilometer' => {
+						'' => q(km³),
 						'one' => q({0} km³),
 						'other' => q({0} km³),
 					},
 					'cubic-mile' => {
+						'' => q(mi³),
 						'one' => q({0} mi³),
 						'other' => q({0} mi³),
 					},
 					'day' => {
+						'' => q(кун),
 						'one' => q({0} кун),
 						'other' => q({0} кун),
 					},
 					'degree' => {
+						'' => q(°),
 						'one' => q({0}°),
 						'other' => q({0}°),
 					},
 					'fahrenheit' => {
+						'' => q(°F),
 						'one' => q({0}°F),
 						'other' => q({0}°F),
 					},
 					'foot' => {
+						'' => q(фут),
 						'one' => q({0} фут),
 						'other' => q({0} фут),
 					},
 					'g-force' => {
+						'' => q(G),
 						'one' => q({0} G),
 						'other' => q({0} G),
 					},
 					'gram' => {
+						'' => q(г),
 						'one' => q({0} г),
 						'other' => q({0} г),
 					},
 					'hectare' => {
+						'' => q(ha),
 						'one' => q({0} ha),
 						'other' => q({0} ha),
 					},
 					'hectopascal' => {
+						'' => q(hPa),
 						'one' => q({0} hPa),
 						'other' => q({0} hPa),
 					},
 					'horsepower' => {
+						'' => q(hp),
 						'one' => q({0} hp),
 						'other' => q({0} hp),
 					},
 					'hour' => {
+						'' => q(соат),
 						'one' => q({0} соат),
 						'other' => q({0} соат),
 					},
 					'inch' => {
+						'' => q(дюйм),
 						'one' => q({0} дюйм),
 						'other' => q({0} дюйм),
 					},
 					'inch-hg' => {
+						'' => q(inHg),
 						'one' => q({0} inHg),
 						'other' => q({0} inHg),
 					},
 					'kilogram' => {
+						'' => q(кг),
 						'one' => q({0} кг),
 						'other' => q({0} кг),
 					},
 					'kilometer' => {
+						'' => q(км),
 						'one' => q({0} км),
 						'other' => q({0} км),
 					},
 					'kilometer-per-hour' => {
+						'' => q(km/h),
 						'one' => q({0} km/h),
 						'other' => q({0} km/h),
 					},
 					'kilowatt' => {
+						'' => q(kW),
 						'one' => q({0} kW),
 						'other' => q({0} kW),
 					},
 					'light-year' => {
+						'' => q(ё.й.),
 						'one' => q({0} ё.й.),
 						'other' => q({0} ё.й.),
 					},
 					'liter' => {
+						'' => q(l),
 						'one' => q({0} l),
 						'other' => q({0} l),
 					},
 					'meter' => {
+						'' => q(м),
 						'one' => q({0} м),
 						'other' => q({0} м),
 					},
 					'meter-per-second' => {
+						'' => q(m/s),
 						'one' => q({0} m/s),
 						'other' => q({0} m/s),
 					},
 					'mile' => {
+						'' => q(миля),
 						'one' => q({0} миля),
 						'other' => q({0} миля),
 					},
 					'mile-per-hour' => {
+						'' => q(mi/h),
 						'one' => q({0} mi/h),
 						'other' => q({0} mi/h),
 					},
 					'millibar' => {
+						'' => q(mbar),
 						'one' => q({0} mbar),
 						'other' => q({0} mbar),
 					},
 					'millimeter' => {
+						'' => q(мм),
 						'one' => q({0} мм),
 						'other' => q({0} мм),
 					},
 					'millisecond' => {
+						'' => q(миллисония),
 						'one' => q({0} мс),
 						'other' => q({0} мс),
 					},
 					'minute' => {
+						'' => q(дақиқа),
 						'one' => q({0} дақ),
 						'other' => q({0} дақ),
 					},
 					'month' => {
+						'' => q(ой),
 						'one' => q({0} ой),
 						'other' => q({0} ой),
 					},
 					'ounce' => {
+						'' => q(унция),
 						'one' => q({0} унция),
 						'other' => q({0} унция),
 					},
@@ -1245,46 +1326,57 @@ has 'units' => (
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(пм),
 						'one' => q({0} пм),
 						'other' => q({0} пм),
 					},
 					'pound' => {
+						'' => q(фунт),
 						'one' => q({0} фунт),
 						'other' => q({0} фунт),
 					},
 					'second' => {
+						'' => q(сония),
 						'one' => q({0} сония),
 						'other' => q({0} сония),
 					},
 					'square-foot' => {
+						'' => q(ft²),
 						'one' => q({0} ft²),
 						'other' => q({0} ft²),
 					},
 					'square-kilometer' => {
+						'' => q(km²),
 						'one' => q({0} km²),
 						'other' => q({0} km²),
 					},
 					'square-meter' => {
+						'' => q(m²),
 						'one' => q({0} m²),
 						'other' => q({0} m²),
 					},
 					'square-mile' => {
+						'' => q(mi²),
 						'one' => q({0} mi²),
 						'other' => q({0} mi²),
 					},
 					'watt' => {
+						'' => q(W),
 						'one' => q({0} W),
 						'other' => q({0} W),
 					},
 					'week' => {
+						'' => q(ҳафта),
 						'one' => q({0} ҳафт),
 						'other' => q({0} ҳафт),
 					},
 					'yard' => {
+						'' => q(ярд),
 						'one' => q({0} ярд),
 						'other' => q({0} ярд),
 					},
 					'year' => {
+						'' => q(йил),
 						'one' => q({0} й),
 						'other' => q({0} й),
 					},
@@ -1328,7 +1420,6 @@ has 'number_symbols' => (
 			'exponential' => q(×۱۰^),
 			'group' => q(٬),
 			'infinity' => q(∞),
-			'list' => q(),
 			'minusSign' => q(-),
 			'nan' => q(NaN),
 			'perMille' => q(؉),
@@ -1341,7 +1432,6 @@ has 'number_symbols' => (
 			'exponential' => q(E),
 			'group' => q( ),
 			'infinity' => q(∞),
-			'list' => q(),
 			'minusSign' => q(-),
 			'nan' => q(NaN),
 			'perMille' => q(‰),
@@ -2305,6 +2395,30 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'generic' => {
+			Ed => q{d, E},
+			Gy => q{G y},
+			GyMMM => q{G y MMM},
+			GyMMMEd => q{G y MMM d, E},
+			GyMMMd => q{G y MMM d},
+			M => q{L},
+			MEd => q{MM-dd, E},
+			MMM => q{LLL},
+			MMMEd => q{MMM d, E},
+			MMMd => q{MMM d},
+			Md => q{MM-dd},
+			d => q{d},
+			y => q{G y},
+			yyyy => q{G y},
+			yyyyM => q{GGGGG y-MM},
+			yyyyMEd => q{GGGGG y-MM-dd, E},
+			yyyyMMM => q{G y MMM},
+			yyyyMMMEd => q{G y MMM d, E},
+			yyyyMMMd => q{G y MMM d},
+			yyyyMd => q{GGGGG y-MM-dd},
+			yyyyQQQ => q{G y QQQ},
+			yyyyQQQQ => q{G y QQQQ},
+		},
 		'gregorian' => {
 			EHm => q{E HH:mm},
 			EHms => q{E HH:mm:ss},
@@ -2339,30 +2453,6 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{y QQQ},
 			yQQQQ => q{y QQQQ},
 		},
-		'generic' => {
-			Ed => q{d, E},
-			Gy => q{G y},
-			GyMMM => q{G y MMM},
-			GyMMMEd => q{G y MMM d, E},
-			GyMMMd => q{G y MMM d},
-			M => q{L},
-			MEd => q{MM-dd, E},
-			MMM => q{LLL},
-			MMMEd => q{MMM d, E},
-			MMMd => q{MMM d},
-			Md => q{MM-dd},
-			d => q{d},
-			y => q{G y},
-			yyyy => q{G y},
-			yyyyM => q{GGGGG y-MM},
-			yyyyMEd => q{GGGGG y-MM-dd, E},
-			yyyyMMM => q{G y MMM},
-			yyyyMMMEd => q{G y MMM d, E},
-			yyyyMMMd => q{G y MMM d},
-			yyyyMd => q{GGGGG y-MM-dd},
-			yyyyQQQ => q{G y QQQ},
-			yyyyQQQQ => q{G y QQQQ},
-		},
 	} },
 );
 
@@ -2382,6 +2472,69 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'generic' => {
+			M => {
+				M => q{MM–MM},
+			},
+			MEd => {
+				M => q{MM-dd, E – MM-dd, E},
+				d => q{MM-dd, E – MM-dd, E},
+			},
+			MMM => {
+				M => q{LLL–LLL},
+			},
+			MMMEd => {
+				M => q{MMM d, E – MMM d, E},
+				d => q{MMM d, E – MMM d, E},
+			},
+			MMMd => {
+				M => q{MMM d – MMM d},
+				d => q{MMM d–d},
+			},
+			Md => {
+				M => q{MM-dd – MM-dd},
+				d => q{MM-dd – MM-dd},
+			},
+			d => {
+				d => q{d–d},
+			},
+			fallback => '{0} – {1}',
+			y => {
+				y => q{G y–y},
+			},
+			yM => {
+				M => q{GGGGG y-MM – y-MM},
+				y => q{GGGGG y-MM – y-MM},
+			},
+			yMEd => {
+				M => q{GGGGG y-MM-dd, E – y-MM-dd, E},
+				d => q{GGGGG y-MM-dd, E – y-MM-dd, E},
+				y => q{GGGGG y-MM-dd, E – y-MM-dd, E},
+			},
+			yMMM => {
+				M => q{G y MMM–MMM},
+				y => q{G y MMM – y MMM},
+			},
+			yMMMEd => {
+				M => q{G y MMM d, E – MMM d, E},
+				d => q{G y MMM d, E – MMM d, E},
+				y => q{G y MMM d, E – y MMM d, E},
+			},
+			yMMMM => {
+				M => q{G y MMMM–MMMM},
+				y => q{G y MMMM – y MMMM},
+			},
+			yMMMd => {
+				M => q{G y MMM d – MMM d},
+				d => q{G y MMM d–d},
+				y => q{G y MMM d – y MMM d},
+			},
+			yMd => {
+				M => q{GGGGG y-MM-dd – y-MM-dd},
+				d => q{GGGGG y-MM-dd – y-MM-dd},
+				y => q{GGGGG y-MM-dd – y-MM-dd},
+			},
+		},
 		'gregorian' => {
 			H => {
 				H => q{HH–HH},
@@ -2477,69 +2630,6 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd – y-MM-dd},
 			},
 		},
-		'generic' => {
-			M => {
-				M => q{MM–MM},
-			},
-			MEd => {
-				M => q{MM-dd, E – MM-dd, E},
-				d => q{MM-dd, E – MM-dd, E},
-			},
-			MMM => {
-				M => q{LLL–LLL},
-			},
-			MMMEd => {
-				M => q{MMM d, E – MMM d, E},
-				d => q{MMM d, E – MMM d, E},
-			},
-			MMMd => {
-				M => q{MMM d – MMM d},
-				d => q{MMM d–d},
-			},
-			Md => {
-				M => q{MM-dd – MM-dd},
-				d => q{MM-dd – MM-dd},
-			},
-			d => {
-				d => q{d–d},
-			},
-			fallback => '{0} – {1}',
-			y => {
-				y => q{G y–y},
-			},
-			yM => {
-				M => q{GGGGG y-MM – y-MM},
-				y => q{GGGGG y-MM – y-MM},
-			},
-			yMEd => {
-				M => q{GGGGG y-MM-dd, E – y-MM-dd, E},
-				d => q{GGGGG y-MM-dd, E – y-MM-dd, E},
-				y => q{GGGGG y-MM-dd, E – y-MM-dd, E},
-			},
-			yMMM => {
-				M => q{G y MMM–MMM},
-				y => q{G y MMM – y MMM},
-			},
-			yMMMEd => {
-				M => q{G y MMM d, E – MMM d, E},
-				d => q{G y MMM d, E – MMM d, E},
-				y => q{G y MMM d, E – y MMM d, E},
-			},
-			yMMMM => {
-				M => q{G y MMMM–MMMM},
-				y => q{G y MMMM – y MMMM},
-			},
-			yMMMd => {
-				M => q{G y MMM d – MMM d},
-				d => q{G y MMM d–d},
-				y => q{G y MMM d – y MMM d},
-			},
-			yMd => {
-				M => q{GGGGG y-MM-dd – y-MM-dd},
-				d => q{GGGGG y-MM-dd – y-MM-dd},
-				y => q{GGGGG y-MM-dd – y-MM-dd},
-			},
-		},
 	} },
 );
 
@@ -2630,7 +2720,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Monticello, Kentucky#,
 		},
 		'America/Lower_Princes' => {
-			exemplarCity => q#Lower Prince's Quarter#,
+			exemplarCity => q#Lower Princeʼs Quarter#,
 		},
 		'America/North_Dakota/Beulah' => {
 			exemplarCity => q#Beulah, North Dakota#,

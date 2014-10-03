@@ -1,11 +1,11 @@
 package Locale::CLDR::Sq::Any::Mk;
 # This file auto generated from Data\common\main\sq_MK.xml
-#	on Sat 21 Jun  1:06:35 am GMT
-# XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
+#	on Thu  2 Oct  1:44:16 pm GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';

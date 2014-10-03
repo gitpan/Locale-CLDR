@@ -1,11 +1,11 @@
 package Locale::CLDR::Zh;
 # This file auto generated from Data\common\main\zh.xml
-#	on Sat 21 Jun  1:33:56 am GMT
-# XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
+#	on Thu  2 Oct  2:21:16 pm GMT
+# XML file generated 2014-08-14 15:10:07 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -1364,7 +1364,7 @@ has 'display_name_language' => (
  				'ar' => '阿拉伯文',
  				'ar_001' => '现代标准阿拉伯文',
  				'arc' => '阿拉米文',
- 				'arn' => '阿劳坎文',
+ 				'arn' => '马普切文',
  				'arp' => '阿拉帕霍文',
  				'arw' => '阿拉瓦克文',
  				'as' => '阿萨姆文',
@@ -1498,6 +1498,7 @@ has 'display_name_language' => (
  				'fy' => '西弗里西亚文',
  				'ga' => '爱尔兰文',
  				'gaa' => '加文',
+ 				'gag' => '加告兹文',
  				'gay' => '迦约文',
  				'gba' => '葛巴亚文',
  				'gd' => '苏格兰盖尔文',
@@ -1581,6 +1582,7 @@ has 'display_name_language' => (
  				'kmb' => '金邦杜文',
  				'kn' => '卡纳达文',
  				'ko' => '韩文',
+ 				'koi' => '科米-彼尔米亚克文',
  				'kok' => '刚卡尼文',
  				'kos' => '科斯拉伊文',
  				'kpe' => '克佩列文',
@@ -1607,6 +1609,7 @@ has 'display_name_language' => (
  				'lez' => '莱兹依昂文',
  				'lg' => '卢干达文',
  				'li' => '淋布尔吉文',
+ 				'lkt' => '拉科塔文',
  				'ln' => '林加拉文',
  				'lo' => '老挝文',
  				'lol' => '芒戈文',
@@ -1713,6 +1716,7 @@ has 'display_name_language' => (
  				'pt_BR' => '巴西葡萄牙文',
  				'pt_PT' => '欧洲葡萄牙文',
  				'qu' => '盖丘亚文',
+ 				'quc' => '基切文',
  				'raj' => '拉贾斯坦文',
  				'rap' => '拉帕努伊文',
  				'rar' => '拉罗汤加文',
@@ -1757,7 +1761,7 @@ has 'display_name_language' => (
  				'sl' => '斯洛文尼亚文',
  				'sm' => '萨摩亚文',
  				'sma' => '南萨米文',
- 				'smj' => '律勒欧萨莫斯文',
+ 				'smj' => '律勒欧萨米文',
  				'smn' => '伊纳里萨米文',
  				'sms' => '斯科特萨米文',
  				'sn' => '绍纳文',
@@ -2031,7 +2035,7 @@ has 'display_name_script' => (
  			'Zinh' => '遗传学术语',
  			'Zmth' => '数学符号',
  			'Zsym' => '符号',
- 			'Zxxx' => '非书写语言',
+ 			'Zxxx' => '非书面文字',
  			'Zyyy' => '通用',
  			'Zzzz' => '未知文字',
 
@@ -2467,6 +2471,7 @@ has 'display_name_type' => (
  				'indian' => q{印度国家日历},
  				'islamic' => q{伊斯兰日历},
  				'islamic-civil' => q{伊斯兰希吉来日历},
+ 				'iso8601' => q{国际标准历法},
  				'japanese' => q{日本日历},
  				'persian' => q{波斯日历},
  				'roc' => q{民国日历},
@@ -2726,144 +2731,474 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'acre' => {
+						'' => q(英亩),
 						'other' => q({0}英亩),
 					},
+					'acre-foot' => {
+						'' => q(英亩英尺),
+						'other' => q({0}英亩英尺),
+					},
+					'ampere' => {
+						'' => q(安培),
+						'other' => q({0}安培),
+					},
 					'arc-minute' => {
-						'other' => q({0}分钟),
+						'' => q(弧分),
+						'other' => q({0}弧分),
 					},
 					'arc-second' => {
-						'other' => q({0}秒钟),
+						'' => q(弧秒),
+						'other' => q({0}弧秒),
+					},
+					'astronomical-unit' => {
+						'' => q(天文单位),
+						'other' => q({0}天文单位),
+					},
+					'bit' => {
+						'' => q(比特),
+						'other' => q({0}比特),
+					},
+					'byte' => {
+						'' => q(字节),
+						'other' => q({0}字节),
+					},
+					'calorie' => {
+						'' => q(卡路里),
+						'other' => q({0}卡路里),
+					},
+					'carat' => {
+						'' => q(克拉),
+						'other' => q({0}克拉),
 					},
 					'celsius' => {
+						'' => q(摄氏度),
 						'other' => q({0}摄氏度),
 					},
+					'centiliter' => {
+						'' => q(厘升),
+						'other' => q({0}厘升),
+					},
 					'centimeter' => {
+						'' => q(厘米),
 						'other' => q({0}厘米),
 					},
+					'cubic-centimeter' => {
+						'' => q(立方厘米),
+						'other' => q({0}立方厘米),
+					},
+					'cubic-foot' => {
+						'' => q(立方英尺),
+						'other' => q({0}立方英尺),
+					},
+					'cubic-inch' => {
+						'' => q(立方英寸),
+						'other' => q({0}立方英寸),
+					},
 					'cubic-kilometer' => {
+						'' => q(立方公里),
 						'other' => q({0}立方公里),
 					},
+					'cubic-meter' => {
+						'' => q(立方米),
+						'other' => q({0}立方米),
+					},
 					'cubic-mile' => {
+						'' => q(立方英里),
 						'other' => q({0}立方英里),
 					},
+					'cubic-yard' => {
+						'' => q(立方码),
+						'other' => q({0}立方码),
+					},
+					'cup' => {
+						'' => q(杯),
+						'other' => q({0}杯),
+					},
 					'day' => {
+						'' => q(天),
 						'other' => q({0}天),
 					},
+					'deciliter' => {
+						'' => q(分升),
+						'other' => q({0}分升),
+					},
+					'decimeter' => {
+						'' => q(分米),
+						'other' => q({0}分米),
+					},
 					'degree' => {
+						'' => q(度),
 						'other' => q({0}度),
 					},
 					'fahrenheit' => {
+						'' => q(华氏度),
 						'other' => q({0}华氏度),
 					},
+					'fluid-ounce' => {
+						'' => q(液盎司),
+						'other' => q({0}液盎司),
+					},
+					'foodcalorie' => {
+						'' => q(卡路里),
+						'other' => q({0}卡路里),
+					},
 					'foot' => {
+						'' => q(英尺),
 						'other' => q({0}英尺),
 					},
 					'g-force' => {
+						'' => q(G力),
 						'other' => q({0}G力),
 					},
+					'gallon' => {
+						'' => q(加仑),
+						'other' => q({0}加仑),
+					},
+					'gigabit' => {
+						'' => q(吉比特),
+						'other' => q({0}吉比特),
+					},
+					'gigabyte' => {
+						'' => q(吉字节),
+						'other' => q({0}吉字节),
+					},
+					'gigahertz' => {
+						'' => q(吉赫),
+						'other' => q({0}吉赫),
+					},
+					'gigawatt' => {
+						'' => q(吉瓦),
+						'other' => q({0}吉瓦),
+					},
 					'gram' => {
+						'' => q(克),
 						'other' => q({0}克),
 					},
 					'hectare' => {
+						'' => q(公顷),
 						'other' => q({0}公顷),
 					},
+					'hectoliter' => {
+						'' => q(公石),
+						'other' => q({0}公石),
+					},
 					'hectopascal' => {
+						'' => q(百帕斯卡),
 						'other' => q({0}百帕斯卡),
 					},
+					'hertz' => {
+						'' => q(赫兹),
+						'other' => q({0}赫兹),
+					},
 					'horsepower' => {
+						'' => q(马力),
 						'other' => q({0}马力),
 					},
 					'hour' => {
+						'' => q({0}/小时),
 						'other' => q({0}小时),
 					},
 					'inch' => {
+						'' => q(英寸),
 						'other' => q({0}英寸),
 					},
 					'inch-hg' => {
+						'' => q(英寸汞柱),
 						'other' => q({0}英寸汞柱),
 					},
+					'joule' => {
+						'' => q(焦耳),
+						'other' => q({0}焦耳),
+					},
+					'karat' => {
+						'' => q(克拉),
+						'other' => q({0}克拉),
+					},
+					'kelvin' => {
+						'' => q(开尔文),
+						'other' => q({0}开尔文),
+					},
+					'kilobit' => {
+						'' => q(千比特),
+						'other' => q({0}千比特),
+					},
+					'kilobyte' => {
+						'' => q(千字节),
+						'other' => q({0}千字节),
+					},
+					'kilocalorie' => {
+						'' => q(千卡),
+						'other' => q({0}千卡),
+					},
 					'kilogram' => {
+						'' => q(千克),
 						'other' => q({0}千克),
 					},
+					'kilohertz' => {
+						'' => q(千赫),
+						'other' => q({0}千赫),
+					},
+					'kilojoule' => {
+						'' => q(千焦),
+						'other' => q({0}千焦),
+					},
 					'kilometer' => {
+						'' => q(公里),
 						'other' => q({0}公里),
 					},
 					'kilometer-per-hour' => {
+						'' => q(千米每小时),
 						'other' => q({0}千米每小时),
 					},
 					'kilowatt' => {
+						'' => q(千瓦),
 						'other' => q({0}千瓦),
 					},
+					'kilowatt-hour' => {
+						'' => q(千瓦时),
+						'other' => q({0}千瓦时),
+					},
 					'light-year' => {
+						'' => q(光年),
 						'other' => q({0}光年),
 					},
 					'liter' => {
+						'' => q(公升),
 						'other' => q({0}公升),
 					},
+					'liter-per-kilometer' => {
+						'' => q(升每公里),
+						'other' => q({0}升每公里),
+					},
+					'lux' => {
+						'' => q(勒克斯),
+						'other' => q({0}勒克斯),
+					},
+					'megabit' => {
+						'' => q(兆比特),
+						'other' => q({0}兆比特),
+					},
+					'megabyte' => {
+						'' => q(兆字节),
+						'other' => q({0}兆字节),
+					},
+					'megahertz' => {
+						'' => q(兆赫),
+						'other' => q({0}兆赫),
+					},
+					'megaliter' => {
+						'' => q(兆升),
+						'other' => q({0}兆升),
+					},
+					'megawatt' => {
+						'' => q(兆瓦),
+						'other' => q({0}兆瓦),
+					},
 					'meter' => {
+						'' => q(米),
 						'other' => q({0}米),
 					},
 					'meter-per-second' => {
+						'' => q(米每秒),
 						'other' => q({0}米每秒),
 					},
+					'meter-per-second-squared' => {
+						'' => q(米/秒²),
+						'other' => q({0}米/秒²),
+					},
+					'metric-ton' => {
+						'' => q(公吨),
+						'other' => q({0}公吨),
+					},
+					'microgram' => {
+						'' => q(微克),
+						'other' => q({0}微克),
+					},
+					'micrometer' => {
+						'' => q(微米),
+						'other' => q({0}微米),
+					},
+					'microsecond' => {
+						'' => q(微秒),
+						'other' => q({0}微秒),
+					},
 					'mile' => {
+						'' => q(英里),
 						'other' => q({0}英里),
 					},
+					'mile-per-gallon' => {
+						'' => q(英里每加仑),
+						'other' => q({0}英里每加仑),
+					},
 					'mile-per-hour' => {
+						'' => q(英里每小时),
 						'other' => q({0}英里每小时),
 					},
+					'milliampere' => {
+						'' => q(毫安),
+						'other' => q({0}毫安),
+					},
 					'millibar' => {
+						'' => q(毫巴),
 						'other' => q({0}毫巴),
 					},
+					'milligram' => {
+						'' => q(毫克),
+						'other' => q({0}毫克),
+					},
+					'milliliter' => {
+						'' => q(毫升),
+						'other' => q({0}毫升),
+					},
 					'millimeter' => {
+						'' => q(毫米),
 						'other' => q({0}毫米),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(毫米汞柱),
+						'other' => q({0}毫米汞柱),
+					},
 					'millisecond' => {
+						'' => q(毫秒),
 						'other' => q({0}毫秒),
 					},
+					'milliwatt' => {
+						'' => q(毫瓦),
+						'other' => q({0}毫瓦),
+					},
 					'minute' => {
+						'' => q(分钟),
 						'other' => q({0}分钟),
 					},
 					'month' => {
+						'' => q(个月),
 						'other' => q({0}个月),
 					},
+					'nanometer' => {
+						'' => q(纳米),
+						'other' => q({0}纳米),
+					},
+					'nanosecond' => {
+						'' => q(纳秒),
+						'other' => q({0}纳秒),
+					},
+					'nautical-mile' => {
+						'' => q(海里),
+						'other' => q({0}海里),
+					},
+					'ohm' => {
+						'' => q(欧姆),
+						'other' => q({0}欧姆),
+					},
 					'ounce' => {
+						'' => q(盎司),
 						'other' => q({0}盎司),
+					},
+					'ounce-troy' => {
+						'' => q(金衡制盎司),
+						'other' => q({0}金衡制盎司),
+					},
+					'parsec' => {
+						'' => q(秒差距),
+						'other' => q({0}秒差距),
 					},
 					'per' => {
 						'' => q({0}每{1}),
 					},
 					'picometer' => {
+						'' => q(皮米),
 						'other' => q({0}皮米),
 					},
+					'pint' => {
+						'' => q(品脱),
+						'other' => q({0}品脱),
+					},
 					'pound' => {
+						'' => q(磅),
 						'other' => q({0}磅),
 					},
+					'pound-per-square-inch' => {
+						'' => q(磅/平方英寸),
+						'other' => q({0}磅每平方英寸),
+					},
+					'quart' => {
+						'' => q(夸脱),
+						'other' => q({0}夸脱),
+					},
+					'radian' => {
+						'' => q(弧度),
+						'other' => q({0}弧度),
+					},
 					'second' => {
+						'' => q({0}/秒),
 						'other' => q({0}秒钟),
 					},
+					'square-centimeter' => {
+						'' => q(平方厘米),
+						'other' => q({0}平方厘米),
+					},
 					'square-foot' => {
+						'' => q(平方英尺),
 						'other' => q({0}平方英尺),
 					},
+					'square-inch' => {
+						'' => q(平方英寸),
+						'other' => q({0}平方英寸),
+					},
 					'square-kilometer' => {
+						'' => q(平方公里),
 						'other' => q({0}平方公里),
 					},
 					'square-meter' => {
+						'' => q(平方米),
 						'other' => q({0}平方米),
 					},
 					'square-mile' => {
+						'' => q(平方英里),
 						'other' => q({0}平方英里),
 					},
+					'square-yard' => {
+						'' => q(平方码),
+						'other' => q({0}平方码),
+					},
+					'tablespoon' => {
+						'' => q(汤匙),
+						'other' => q({0}汤匙),
+					},
+					'teaspoon' => {
+						'' => q(茶匙),
+						'other' => q({0}茶匙),
+					},
+					'terabit' => {
+						'' => q(太比特),
+						'other' => q({0}太比特),
+					},
+					'terabyte' => {
+						'' => q(太字节),
+						'other' => q({0}太字节),
+					},
+					'ton' => {
+						'' => q(吨),
+						'other' => q({0}吨),
+					},
+					'volt' => {
+						'' => q(伏特),
+						'other' => q({0}伏特),
+					},
 					'watt' => {
+						'' => q(瓦特),
 						'other' => q({0}瓦特),
 					},
 					'week' => {
+						'' => q(周),
 						'other' => q({0}周),
 					},
 					'yard' => {
+						'' => q(码),
 						'other' => q({0}码),
 					},
 					'year' => {
+						'' => q(年),
 						'other' => q({0}年),
 					},
 				},
@@ -2878,10 +3213,12 @@ has 'units' => (
 						'other' => q({0}″),
 					},
 					'celsius' => {
+						'' => q(摄氏度),
 						'other' => q({0}°),
 					},
 					'centimeter' => {
-						'other' => q({0}cm),
+						'' => q(厘米),
+						'other' => q({0}厘米),
 					},
 					'cubic-kilometer' => {
 						'other' => q({0}km³),
@@ -2890,6 +3227,7 @@ has 'units' => (
 						'other' => q({0}mi³),
 					},
 					'day' => {
+						'' => q(天),
 						'other' => q({0}天),
 					},
 					'degree' => {
@@ -2905,6 +3243,7 @@ has 'units' => (
 						'other' => q({0}G),
 					},
 					'gram' => {
+						'' => q(克),
 						'other' => q({0}克),
 					},
 					'hectare' => {
@@ -2917,6 +3256,7 @@ has 'units' => (
 						'other' => q({0}hp),
 					},
 					'hour' => {
+						'' => q(小时),
 						'other' => q({0}小时),
 					},
 					'inch' => {
@@ -2926,13 +3266,16 @@ has 'units' => (
 						'other' => q({0}" Hg),
 					},
 					'kilogram' => {
+						'' => q(千克),
 						'other' => q({0}千克),
 					},
 					'kilometer' => {
-						'other' => q({0}km),
+						'' => q(公里),
+						'other' => q({0}公里),
 					},
 					'kilometer-per-hour' => {
-						'other' => q({0}km/h),
+						'' => q(千米/小时),
+						'other' => q({0}千米/小时),
 					},
 					'kilowatt' => {
 						'other' => q({0}kW),
@@ -2941,10 +3284,12 @@ has 'units' => (
 						'other' => q({0}ly),
 					},
 					'liter' => {
-						'other' => q({0}l),
+						'' => q(升),
+						'other' => q({0}升),
 					},
 					'meter' => {
-						'other' => q({0}m),
+						'' => q(米),
+						'other' => q({0}米),
 					},
 					'meter-per-second' => {
 						'other' => q({0}m/s),
@@ -2959,15 +3304,19 @@ has 'units' => (
 						'other' => q({0}mb),
 					},
 					'millimeter' => {
-						'other' => q({0}mm),
+						'' => q(毫米),
+						'other' => q({0}毫米),
 					},
 					'millisecond' => {
+						'' => q(毫秒),
 						'other' => q({0}毫秒),
 					},
 					'minute' => {
+						'' => q(分钟),
 						'other' => q({0}分钟),
 					},
 					'month' => {
+						'' => q(个月),
 						'other' => q({0}个月),
 					},
 					'ounce' => {
@@ -2983,6 +3332,7 @@ has 'units' => (
 						'other' => q({0}磅),
 					},
 					'second' => {
+						'' => q(秒),
 						'other' => q({0}秒),
 					},
 					'square-foot' => {
@@ -3001,155 +3351,487 @@ has 'units' => (
 						'other' => q({0}W),
 					},
 					'week' => {
+						'' => q(周),
 						'other' => q({0}周),
 					},
 					'yard' => {
 						'other' => q({0}yd),
 					},
 					'year' => {
+						'' => q(年),
 						'other' => q({0}年),
 					},
 				},
 				'short' => {
 					'acre' => {
-						'other' => q({0} ac),
+						'' => q(英亩),
+						'other' => q({0}英亩),
+					},
+					'acre-foot' => {
+						'' => q(英亩英尺),
+						'other' => q({0}英亩英尺),
+					},
+					'ampere' => {
+						'' => q(安培),
+						'other' => q({0}安),
 					},
 					'arc-minute' => {
-						'other' => q({0}分),
+						'' => q(弧分),
+						'other' => q({0}弧分),
 					},
 					'arc-second' => {
-						'other' => q({0}秒),
+						'' => q(弧秒),
+						'other' => q({0}弧秒),
+					},
+					'astronomical-unit' => {
+						'' => q(天文单位),
+						'other' => q({0}天文单位),
+					},
+					'bit' => {
+						'' => q(比特),
+						'other' => q({0}比特),
+					},
+					'byte' => {
+						'' => q(字节),
+						'other' => q({0}字节),
+					},
+					'calorie' => {
+						'' => q(卡),
+						'other' => q({0}卡),
+					},
+					'carat' => {
+						'' => q(克拉),
+						'other' => q({0}克拉),
 					},
 					'celsius' => {
+						'' => q(摄氏度),
 						'other' => q({0}°C),
 					},
+					'centiliter' => {
+						'' => q(厘升),
+						'other' => q({0}厘升),
+					},
 					'centimeter' => {
-						'other' => q({0} cm),
+						'' => q(厘米),
+						'other' => q({0}厘米),
+					},
+					'cubic-centimeter' => {
+						'' => q(立方厘米),
+						'other' => q({0}立方厘米),
+					},
+					'cubic-foot' => {
+						'' => q(立方英尺),
+						'other' => q({0}立方英尺),
+					},
+					'cubic-inch' => {
+						'' => q(立方英寸),
+						'other' => q({0}立方英寸),
 					},
 					'cubic-kilometer' => {
-						'other' => q({0} km³),
+						'' => q(立方公里),
+						'other' => q({0}立方公里),
+					},
+					'cubic-meter' => {
+						'' => q(立方米),
+						'other' => q({0}立方米),
 					},
 					'cubic-mile' => {
-						'other' => q({0} mi³),
+						'' => q(立方英里),
+						'other' => q({0}立方英里),
+					},
+					'cubic-yard' => {
+						'' => q(立方码),
+						'other' => q({0}立方码),
+					},
+					'cup' => {
+						'' => q(杯),
+						'other' => q({0}杯),
 					},
 					'day' => {
+						'' => q(天),
 						'other' => q({0}天),
 					},
+					'deciliter' => {
+						'' => q(分升),
+						'other' => q({0}分升),
+					},
+					'decimeter' => {
+						'' => q(分米),
+						'other' => q({0}分米),
+					},
 					'degree' => {
+						'' => q(度),
 						'other' => q({0}°),
 					},
 					'fahrenheit' => {
+						'' => q(华氏度),
 						'other' => q({0}°F),
 					},
+					'fluid-ounce' => {
+						'' => q(液盎司),
+						'other' => q({0}液盎司),
+					},
+					'foodcalorie' => {
+						'' => q(卡),
+						'other' => q({0}卡),
+					},
 					'foot' => {
-						'other' => q({0} ft),
+						'' => q(英尺),
+						'other' => q({0}英尺),
 					},
 					'g-force' => {
+						'' => q(G力),
 						'other' => q({0} G),
 					},
+					'gallon' => {
+						'' => q(加仑),
+						'other' => q({0}加仑),
+					},
+					'gigabit' => {
+						'' => q(吉比特),
+						'other' => q({0}吉比特),
+					},
+					'gigabyte' => {
+						'' => q(吉字节),
+						'other' => q({0}吉字节),
+					},
+					'gigahertz' => {
+						'' => q(吉赫),
+						'other' => q({0}吉赫),
+					},
+					'gigawatt' => {
+						'' => q(吉瓦),
+						'other' => q({0}吉瓦),
+					},
 					'gram' => {
+						'' => q(克),
 						'other' => q({0}克),
 					},
 					'hectare' => {
+						'' => q(公顷),
 						'other' => q({0} ha),
 					},
+					'hectoliter' => {
+						'' => q(公石),
+						'other' => q({0}公石),
+					},
 					'hectopascal' => {
-						'other' => q({0} hPa),
+						'' => q(百帕斯卡),
+						'other' => q({0}百帕),
+					},
+					'hertz' => {
+						'' => q(赫兹),
+						'other' => q({0}赫),
 					},
 					'horsepower' => {
-						'other' => q({0} hp),
+						'' => q(马力),
+						'other' => q({0}马力),
 					},
 					'hour' => {
+						'' => q({0}/小时),
 						'other' => q({0}小时),
 					},
 					'inch' => {
-						'other' => q({0} in),
+						'' => q(英寸),
+						'other' => q({0}英寸),
 					},
 					'inch-hg' => {
-						'other' => q({0} inHg),
+						'' => q(英寸汞柱),
+						'other' => q({0}英寸汞柱),
+					},
+					'joule' => {
+						'' => q(焦耳),
+						'other' => q({0}焦耳),
+					},
+					'karat' => {
+						'' => q(克拉),
+						'other' => q({0}克拉),
+					},
+					'kelvin' => {
+						'' => q(开),
+						'other' => q({0}K),
+					},
+					'kilobit' => {
+						'' => q(千比特),
+						'other' => q({0}千比特),
+					},
+					'kilobyte' => {
+						'' => q(千字节),
+						'other' => q({0}千字节),
+					},
+					'kilocalorie' => {
+						'' => q(千卡),
+						'other' => q({0}千卡),
 					},
 					'kilogram' => {
+						'' => q(千克),
 						'other' => q({0}千克),
 					},
+					'kilohertz' => {
+						'' => q(千赫),
+						'other' => q({0}千赫),
+					},
+					'kilojoule' => {
+						'' => q(千焦),
+						'other' => q({0}千焦),
+					},
 					'kilometer' => {
-						'other' => q({0} km),
+						'' => q(公里),
+						'other' => q({0}公里),
 					},
 					'kilometer-per-hour' => {
+						'' => q(千米/小时),
 						'other' => q({0}千米/小时),
 					},
 					'kilowatt' => {
-						'other' => q({0} kW),
+						'' => q(千瓦),
+						'other' => q({0}千瓦),
+					},
+					'kilowatt-hour' => {
+						'' => q(千瓦时),
+						'other' => q({0}千瓦时),
 					},
 					'light-year' => {
+						'' => q(光年),
 						'other' => q({0} ly),
 					},
 					'liter' => {
+						'' => q(公升),
 						'other' => q({0}升),
 					},
+					'liter-per-kilometer' => {
+						'' => q(升/公里),
+						'other' => q({0}升/公里),
+					},
+					'lux' => {
+						'' => q(勒克斯),
+						'other' => q({0}勒克斯),
+					},
+					'megabit' => {
+						'' => q(兆比特),
+						'other' => q({0}兆比特),
+					},
+					'megabyte' => {
+						'' => q(兆字节),
+						'other' => q({0}兆字节),
+					},
+					'megahertz' => {
+						'' => q(兆赫),
+						'other' => q({0}兆赫),
+					},
+					'megaliter' => {
+						'' => q(兆升),
+						'other' => q({0}兆升),
+					},
+					'megawatt' => {
+						'' => q(兆瓦),
+						'other' => q({0}兆瓦),
+					},
 					'meter' => {
+						'' => q(米),
 						'other' => q({0} m),
 					},
 					'meter-per-second' => {
+						'' => q(米/秒),
 						'other' => q({0}米/秒),
 					},
+					'meter-per-second-squared' => {
+						'' => q(米/秒²),
+						'other' => q({0}米/秒²),
+					},
+					'metric-ton' => {
+						'' => q(公吨),
+						'other' => q({0}公吨),
+					},
+					'microgram' => {
+						'' => q(微克),
+						'other' => q({0}微克),
+					},
+					'micrometer' => {
+						'' => q(微米),
+						'other' => q({0}微米),
+					},
+					'microsecond' => {
+						'' => q(微秒),
+						'other' => q({0}微秒),
+					},
 					'mile' => {
-						'other' => q({0} mi),
+						'' => q(英里),
+						'other' => q({0}英里),
+					},
+					'mile-per-gallon' => {
+						'' => q(英里/加仑),
+						'other' => q({0}英里/加仑),
 					},
 					'mile-per-hour' => {
+						'' => q(英里/小时),
 						'other' => q({0}英里/小时),
 					},
+					'milliampere' => {
+						'' => q(毫安),
+						'other' => q({0}毫安),
+					},
 					'millibar' => {
-						'other' => q({0} mb),
+						'' => q(毫巴),
+						'other' => q({0}毫巴),
+					},
+					'milligram' => {
+						'' => q(毫克),
+						'other' => q({0}毫克),
+					},
+					'milliliter' => {
+						'' => q(毫升),
+						'other' => q({0}毫升),
 					},
 					'millimeter' => {
-						'other' => q({0} mm),
+						'' => q(毫米),
+						'other' => q({0}毫米),
+					},
+					'millimeter-of-mercury' => {
+						'' => q(毫米汞柱),
+						'other' => q({0}毫米汞柱),
 					},
 					'millisecond' => {
+						'' => q(毫秒),
 						'other' => q({0}毫秒),
 					},
+					'milliwatt' => {
+						'' => q(毫瓦),
+						'other' => q({0}毫瓦),
+					},
 					'minute' => {
+						'' => q(分钟),
 						'other' => q({0}分钟),
 					},
 					'month' => {
+						'' => q(个月),
 						'other' => q({0}个月),
 					},
+					'nanometer' => {
+						'' => q(纳米),
+						'other' => q({0}纳米),
+					},
+					'nanosecond' => {
+						'' => q(纳秒),
+						'other' => q({0}纳秒),
+					},
+					'nautical-mile' => {
+						'' => q(海里),
+						'other' => q({0}海里),
+					},
+					'ohm' => {
+						'' => q(欧姆),
+						'other' => q({0}欧),
+					},
 					'ounce' => {
+						'' => q(盎司),
 						'other' => q({0}盎司),
+					},
+					'ounce-troy' => {
+						'' => q(金衡制盎司),
+						'other' => q({0}金衡制盎司),
+					},
+					'parsec' => {
+						'' => q(秒差距),
+						'other' => q({0}秒差距),
 					},
 					'per' => {
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(皮米),
 						'other' => q({0} pm),
 					},
+					'pint' => {
+						'' => q(品脱),
+						'other' => q({0}品脱),
+					},
 					'pound' => {
+						'' => q(磅),
 						'other' => q({0}磅),
 					},
+					'pound-per-square-inch' => {
+						'' => q(磅/平方英寸),
+						'other' => q({0}磅/平方英寸),
+					},
+					'quart' => {
+						'' => q(夸脱),
+						'other' => q({0}夸脱),
+					},
+					'radian' => {
+						'' => q(弧度),
+						'other' => q({0}弧度),
+					},
 					'second' => {
+						'' => q({0}/秒),
 						'other' => q({0}秒),
 					},
+					'square-centimeter' => {
+						'' => q(平方厘米),
+						'other' => q({0}平方厘米),
+					},
 					'square-foot' => {
+						'' => q(平方英尺),
 						'other' => q({0} ft²),
 					},
+					'square-inch' => {
+						'' => q(平方英寸),
+						'other' => q({0}平方英寸),
+					},
 					'square-kilometer' => {
-						'other' => q({0} km²),
+						'' => q(平方公里),
+						'other' => q({0}平方公里),
 					},
 					'square-meter' => {
-						'other' => q({0} m²),
+						'' => q(平方米),
+						'other' => q({0}平方米),
 					},
 					'square-mile' => {
-						'other' => q({0} mi²),
+						'' => q(平方英里),
+						'other' => q({0}平方英里),
+					},
+					'square-yard' => {
+						'' => q(平方码),
+						'other' => q({0}平方码),
+					},
+					'tablespoon' => {
+						'' => q(汤匙),
+						'other' => q({0}汤匙),
+					},
+					'teaspoon' => {
+						'' => q(茶匙),
+						'other' => q({0}茶匙),
+					},
+					'terabit' => {
+						'' => q(太比特),
+						'other' => q({0}太比特),
+					},
+					'terabyte' => {
+						'' => q(太字节),
+						'other' => q({0}太字节),
+					},
+					'ton' => {
+						'' => q(吨),
+						'other' => q({0}吨),
+					},
+					'volt' => {
+						'' => q(伏特),
+						'other' => q({0}伏),
 					},
 					'watt' => {
+						'' => q(瓦特),
 						'other' => q({0}瓦),
 					},
 					'week' => {
+						'' => q(周),
 						'other' => q({0}周),
 					},
 					'yard' => {
+						'' => q(码),
 						'other' => q({0} yd),
 					},
 					'year' => {
+						'' => q(年),
 						'other' => q({0}年),
 					},
 				},
@@ -3400,11 +4082,14 @@ has 'curriencies' => (
 	init_arg	=> undef,
 	default		=> sub { {
 		'ADP' => {
+			symbol => 'ADP',
 			display_name => {
 				'currency' => q(安道尔比塞塔),
+				'other' => q(安道尔比塞塔),
 			},
 		},
 		'AED' => {
+			symbol => 'AED',
 			display_name => {
 				'currency' => q(阿联酋迪拉姆),
 				'other' => q(阿联酋迪拉姆),
@@ -3416,79 +4101,108 @@ has 'curriencies' => (
 			},
 		},
 		'AFN' => {
+			symbol => 'AFN',
 			display_name => {
 				'currency' => q(阿富汗尼),
 				'other' => q(阿富汗尼),
 			},
 		},
+		'ALK' => {
+			symbol => 'ALK',
+			display_name => {
+				'currency' => q(阿尔巴尼亚列克\(1946–1965\)),
+				'other' => q(阿尔巴尼亚列克\(1946–1965\)),
+			},
+		},
 		'ALL' => {
+			symbol => 'ALL',
 			display_name => {
 				'currency' => q(阿尔巴尼亚列克),
 				'other' => q(阿尔巴尼亚列克),
 			},
 		},
 		'AMD' => {
+			symbol => 'AMD',
 			display_name => {
 				'currency' => q(亚美尼亚德拉姆),
 				'other' => q(亚美尼亚德拉姆),
 			},
 		},
 		'ANG' => {
+			symbol => 'ANG',
 			display_name => {
 				'currency' => q(荷属安的列斯盾),
 				'other' => q(荷属安的列斯盾),
 			},
 		},
 		'AOA' => {
+			symbol => 'AOA',
 			display_name => {
 				'currency' => q(安哥拉宽扎),
 				'other' => q(安哥拉宽扎),
 			},
 		},
 		'AOK' => {
+			symbol => 'AOK',
 			display_name => {
 				'currency' => q(安哥拉宽扎 \(1977–1990\)),
+				'other' => q(安哥拉宽扎 \(1977–1990\)),
 			},
 		},
 		'AON' => {
+			symbol => 'AON',
 			display_name => {
 				'currency' => q(安哥拉新宽扎 \(1990–2000\)),
+				'other' => q(安哥拉新宽扎 \(1990–2000\)),
 			},
 		},
 		'AOR' => {
+			symbol => 'AOR',
 			display_name => {
 				'currency' => q(安哥拉重新调整宽扎 \(1995–1999\)),
+				'other' => q(安哥拉重新调整宽扎 \(1995–1999\)),
 			},
 		},
 		'ARA' => {
+			symbol => 'ARA',
 			display_name => {
 				'currency' => q(阿根廷奥斯特拉尔),
+				'other' => q(阿根廷奥斯特拉尔),
 			},
 		},
 		'ARL' => {
+			symbol => 'ARL',
 			display_name => {
 				'currency' => q(阿根廷法定比索 \(1970–1983\)),
+				'other' => q(阿根廷法定比索 \(1970–1983\)),
 			},
 		},
 		'ARM' => {
+			symbol => 'ARM',
 			display_name => {
 				'currency' => q(阿根廷比索 \(1881–1970\)),
+				'other' => q(阿根廷比索 \(1881–1970\)),
 			},
 		},
 		'ARP' => {
+			symbol => 'ARP',
 			display_name => {
 				'currency' => q(阿根廷比索 \(1983–1985\)),
+				'other' => q(阿根廷比索 \(1983–1985\)),
 			},
 		},
 		'ARS' => {
+			symbol => 'ARS',
 			display_name => {
 				'currency' => q(阿根廷比索),
 				'other' => q(阿根廷比索),
 			},
 		},
 		'ATS' => {
+			symbol => 'ATS',
 			display_name => {
 				'currency' => q(奥地利先令),
+				'other' => q(奥地利先令),
 			},
 		},
 		'AUD' => {
@@ -3499,144 +4213,185 @@ has 'curriencies' => (
 			},
 		},
 		'AWG' => {
+			symbol => 'AWG',
 			display_name => {
 				'currency' => q(阿鲁巴基尔德元),
 				'other' => q(阿鲁巴基尔德元),
 			},
 		},
 		'AZM' => {
+			symbol => 'AZM',
 			display_name => {
 				'currency' => q(阿塞拜疆马纳特 \(1993–2006\)),
+				'other' => q(阿塞拜疆马纳特 \(1993–2006\)),
 			},
 		},
 		'AZN' => {
+			symbol => 'AZN',
 			display_name => {
 				'currency' => q(阿塞拜疆马纳特),
 				'other' => q(阿塞拜疆马纳特),
 			},
 		},
 		'BAD' => {
+			symbol => 'BAD',
 			display_name => {
 				'currency' => q(波士尼亚-赫塞哥维纳第纳尔 \(1992–1994\)),
+				'other' => q(波士尼亚-赫塞哥维纳第纳尔 \(1992–1994\)),
 			},
 		},
 		'BAM' => {
+			symbol => 'BAM',
 			display_name => {
 				'currency' => q(波斯尼亚-黑塞哥维那可兑换马克),
 				'other' => q(波斯尼亚-黑塞哥维那可兑换马克),
 			},
 		},
 		'BAN' => {
+			symbol => 'BAN',
 			display_name => {
 				'currency' => q(波士尼亚-赫塞哥维纳新第纳尔 \(1994–1997\)),
+				'other' => q(波士尼亚-赫塞哥维纳新第纳尔 \(1994–1997\)),
 			},
 		},
 		'BBD' => {
+			symbol => 'BBD',
 			display_name => {
 				'currency' => q(巴巴多斯元),
 				'other' => q(巴巴多斯元),
 			},
 		},
 		'BDT' => {
+			symbol => 'BDT',
 			display_name => {
 				'currency' => q(孟加拉塔卡),
 				'other' => q(孟加拉塔卡),
 			},
 		},
 		'BEC' => {
+			symbol => 'BEC',
 			display_name => {
 				'currency' => q(比利时法郎（可兑换）),
+				'other' => q(比利时法郎（可兑换）),
 			},
 		},
 		'BEF' => {
+			symbol => 'BEF',
 			display_name => {
 				'currency' => q(比利时法郎),
+				'other' => q(比利时法郎),
 			},
 		},
 		'BEL' => {
+			symbol => 'BEL',
 			display_name => {
 				'currency' => q(比利时法郎（金融）),
+				'other' => q(比利时法郎（金融）),
 			},
 		},
 		'BGL' => {
+			symbol => 'BGL',
 			display_name => {
 				'currency' => q(保加利亚硬列弗),
+				'other' => q(保加利亚硬列弗),
 			},
 		},
 		'BGM' => {
+			symbol => 'BGM',
 			display_name => {
 				'currency' => q(保加利亚社会党列弗),
+				'other' => q(保加利亚社会党列弗),
 			},
 		},
 		'BGN' => {
+			symbol => 'BGN',
 			display_name => {
 				'currency' => q(保加利亚新列弗),
 				'other' => q(保加利亚新列弗),
 			},
 		},
 		'BGO' => {
+			symbol => 'BGO',
 			display_name => {
 				'currency' => q(保加利亚列弗 \(1879–1952\)),
+				'other' => q(保加利亚列弗 \(1879–1952\)),
 			},
 		},
 		'BHD' => {
+			symbol => 'BHD',
 			display_name => {
 				'currency' => q(巴林第纳尔),
 				'other' => q(巴林第纳尔),
 			},
 		},
 		'BIF' => {
+			symbol => 'BIF',
 			display_name => {
 				'currency' => q(布隆迪法郎),
 				'other' => q(布隆迪法郎),
 			},
 		},
 		'BMD' => {
+			symbol => 'BMD',
 			display_name => {
 				'currency' => q(百慕大元),
 				'other' => q(百慕大元),
 			},
 		},
 		'BND' => {
+			symbol => 'BND',
 			display_name => {
 				'currency' => q(文莱元),
 				'other' => q(文莱元),
 			},
 		},
 		'BOB' => {
+			symbol => 'BOB',
 			display_name => {
 				'currency' => q(玻利维亚诺),
 				'other' => q(玻利维亚诺),
 			},
 		},
 		'BOL' => {
+			symbol => 'BOL',
 			display_name => {
 				'currency' => q(玻利维亚诺 \(1863–1963\)),
+				'other' => q(玻利维亚诺 \(1863–1963\)),
 			},
 		},
 		'BOP' => {
+			symbol => 'BOP',
 			display_name => {
 				'currency' => q(玻利维亚比索),
+				'other' => q(玻利维亚比索),
 			},
 		},
 		'BOV' => {
+			symbol => 'BOV',
 			display_name => {
 				'currency' => q(玻利维亚 Mvdol（资金）),
+				'other' => q(玻利维亚 Mvdol（资金）),
 			},
 		},
 		'BRB' => {
+			symbol => 'BRB',
 			display_name => {
 				'currency' => q(巴西新克鲁赛罗 \(1967–1986\)),
+				'other' => q(巴西新克鲁赛罗 \(1967–1986\)),
 			},
 		},
 		'BRC' => {
+			symbol => 'BRC',
 			display_name => {
 				'currency' => q(巴西克鲁扎多 \(1986–1989\)),
+				'other' => q(巴西克鲁扎多 \(1986–1989\)),
 			},
 		},
 		'BRE' => {
+			symbol => 'BRE',
 			display_name => {
 				'currency' => q(巴西克鲁塞罗 \(1990–1993\)),
+				'other' => q(巴西克鲁塞罗 \(1990–1993\)),
 			},
 		},
 		'BRL' => {
@@ -3647,27 +4402,35 @@ has 'curriencies' => (
 			},
 		},
 		'BRN' => {
+			symbol => 'BRN',
 			display_name => {
 				'currency' => q(巴西新克鲁扎多 \(1989–1990\)),
+				'other' => q(巴西新克鲁扎多 \(1989–1990\)),
 			},
 		},
 		'BRR' => {
+			symbol => 'BRR',
 			display_name => {
 				'currency' => q(巴西克鲁塞罗 \(1993–1994\)),
+				'other' => q(巴西克鲁塞罗 \(1993–1994\)),
 			},
 		},
 		'BRZ' => {
+			symbol => 'BRZ',
 			display_name => {
 				'currency' => q(巴西克鲁塞罗 \(1942–1967\)),
+				'other' => q(巴西克鲁塞罗 \(1942–1967\)),
 			},
 		},
 		'BSD' => {
+			symbol => 'BSD',
 			display_name => {
 				'currency' => q(巴哈马元),
 				'other' => q(巴哈马元),
 			},
 		},
 		'BTN' => {
+			symbol => 'BTN',
 			display_name => {
 				'currency' => q(不丹努尔特鲁姆),
 				'other' => q(不丹努尔特鲁姆),
@@ -3679,23 +4442,28 @@ has 'curriencies' => (
 			},
 		},
 		'BWP' => {
+			symbol => 'BWP',
 			display_name => {
 				'currency' => q(博茨瓦纳普拉),
 				'other' => q(博茨瓦纳普拉),
 			},
 		},
 		'BYB' => {
+			symbol => 'BYB',
 			display_name => {
 				'currency' => q(白俄罗斯新卢布 \(1994–1999\)),
+				'other' => q(白俄罗斯新卢布 \(1994–1999\)),
 			},
 		},
 		'BYR' => {
+			symbol => 'BYR',
 			display_name => {
 				'currency' => q(白俄罗斯卢布),
 				'other' => q(白俄罗斯卢布),
 			},
 		},
 		'BZD' => {
+			symbol => 'BZD',
 			display_name => {
 				'currency' => q(伯利兹元),
 				'other' => q(伯利兹元),
@@ -3709,38 +4477,49 @@ has 'curriencies' => (
 			},
 		},
 		'CDF' => {
+			symbol => 'CDF',
 			display_name => {
 				'currency' => q(刚果法郎),
 				'other' => q(刚果法郎),
 			},
 		},
 		'CHE' => {
+			symbol => 'CHE',
 			display_name => {
 				'currency' => q(欧元 \(WIR\)),
+				'other' => q(欧元 \(WIR\)),
 			},
 		},
 		'CHF' => {
+			symbol => 'CHF',
 			display_name => {
 				'currency' => q(瑞士法郎),
 				'other' => q(瑞士法郎),
 			},
 		},
 		'CHW' => {
+			symbol => 'CHW',
 			display_name => {
 				'currency' => q(法郎 \(WIR\)),
+				'other' => q(法郎 \(WIR\)),
 			},
 		},
 		'CLE' => {
+			symbol => 'CLE',
 			display_name => {
 				'currency' => q(智利埃斯库多),
+				'other' => q(智利埃斯库多),
 			},
 		},
 		'CLF' => {
+			symbol => 'CLF',
 			display_name => {
 				'currency' => q(智利（资金）),
+				'other' => q(智利（资金）),
 			},
 		},
 		'CLP' => {
+			symbol => 'CLP',
 			display_name => {
 				'currency' => q(智利比索),
 				'other' => q(智利比索),
@@ -3754,138 +4533,175 @@ has 'curriencies' => (
 			},
 		},
 		'COP' => {
+			symbol => 'COP',
 			display_name => {
 				'currency' => q(哥伦比亚比索),
 				'other' => q(哥伦比亚比索),
 			},
 		},
 		'COU' => {
+			symbol => 'COU',
 			display_name => {
 				'currency' => q(哥伦比亚币),
+				'other' => q(哥伦比亚币),
 			},
 		},
 		'CRC' => {
+			symbol => 'CRC',
 			display_name => {
 				'currency' => q(哥斯达黎加科朗),
 				'other' => q(哥斯达黎加科朗),
 			},
 		},
 		'CSD' => {
+			symbol => 'CSD',
 			display_name => {
 				'currency' => q(旧塞尔维亚第纳尔),
+				'other' => q(旧塞尔维亚第纳尔),
 			},
 		},
 		'CSK' => {
+			symbol => 'CSK',
 			display_name => {
 				'currency' => q(捷克硬克郎),
+				'other' => q(捷克硬克郎),
 			},
 		},
 		'CUC' => {
+			symbol => 'CUC',
 			display_name => {
 				'currency' => q(古巴可兑换比索),
 				'other' => q(古巴可兑换比索),
 			},
 		},
 		'CUP' => {
+			symbol => 'CUP',
 			display_name => {
 				'currency' => q(古巴比索),
 				'other' => q(古巴比索),
 			},
 		},
 		'CVE' => {
+			symbol => 'CVE',
 			display_name => {
 				'currency' => q(佛得角埃斯库多),
 				'other' => q(佛得角埃斯库多),
 			},
 		},
 		'CYP' => {
+			symbol => 'CYP',
 			display_name => {
 				'currency' => q(塞浦路斯镑),
+				'other' => q(塞浦路斯镑),
 			},
 		},
 		'CZK' => {
+			symbol => 'CZK',
 			display_name => {
 				'currency' => q(捷克克郎),
 				'other' => q(捷克克郎),
 			},
 		},
 		'DDM' => {
+			symbol => 'DDM',
 			display_name => {
 				'currency' => q(东德奥斯特马克),
+				'other' => q(东德奥斯特马克),
 			},
 		},
 		'DEM' => {
+			symbol => 'DEM',
 			display_name => {
 				'currency' => q(德国马克),
+				'other' => q(德国马克),
 			},
 		},
 		'DJF' => {
+			symbol => 'DJF',
 			display_name => {
 				'currency' => q(吉布提法郎),
 				'other' => q(吉布提法郎),
 			},
 		},
 		'DKK' => {
+			symbol => 'DKK',
 			display_name => {
 				'currency' => q(丹麦克朗),
 				'other' => q(丹麦克朗),
 			},
 		},
 		'DOP' => {
+			symbol => 'DOP',
 			display_name => {
 				'currency' => q(多米尼加比索),
 				'other' => q(多米尼加比索),
 			},
 		},
 		'DZD' => {
+			symbol => 'DZD',
 			display_name => {
 				'currency' => q(阿尔及利亚第纳尔),
 				'other' => q(阿尔及利亚第纳尔),
 			},
 		},
 		'ECS' => {
+			symbol => 'ECS',
 			display_name => {
 				'currency' => q(厄瓜多尔苏克雷),
+				'other' => q(厄瓜多尔苏克雷),
 			},
 		},
 		'ECV' => {
+			symbol => 'ECV',
 			display_name => {
 				'currency' => q(厄瓜多尔 \(UVC\)),
+				'other' => q(厄瓜多尔 \(UVC\)),
 			},
 		},
 		'EEK' => {
+			symbol => 'EEK',
 			display_name => {
 				'currency' => q(爱沙尼亚克朗),
+				'other' => q(爱沙尼亚克朗),
 			},
 		},
 		'EGP' => {
+			symbol => 'EGP',
 			display_name => {
 				'currency' => q(埃及镑),
 				'other' => q(埃及镑),
 			},
 		},
 		'ERN' => {
+			symbol => 'ERN',
 			display_name => {
 				'currency' => q(厄立特里亚纳克法),
 				'other' => q(厄立特里亚纳克法),
 			},
 		},
 		'ESA' => {
+			symbol => 'ESA',
 			display_name => {
 				'currency' => q(西班牙比塞塔（帐户 A）),
+				'other' => q(西班牙比塞塔（帐户 A）),
 			},
 		},
 		'ESB' => {
+			symbol => 'ESB',
 			display_name => {
 				'currency' => q(西班牙比塞塔（兑换帐户）),
+				'other' => q(西班牙比塞塔（兑换帐户）),
 			},
 		},
 		'ESP' => {
+			symbol => 'ESP',
 			display_name => {
 				'currency' => q(西班牙比塞塔),
+				'other' => q(西班牙比塞塔),
 			},
 		},
 		'ETB' => {
+			symbol => 'ETB',
 			display_name => {
 				'currency' => q(埃塞俄比亚比尔),
 				'other' => q(埃塞俄比亚比尔),
@@ -3899,25 +4715,31 @@ has 'curriencies' => (
 			},
 		},
 		'FIM' => {
+			symbol => 'FIM',
 			display_name => {
 				'currency' => q(芬兰马克),
+				'other' => q(芬兰马克),
 			},
 		},
 		'FJD' => {
+			symbol => 'FJD',
 			display_name => {
 				'currency' => q(斐济元),
 				'other' => q(斐济元),
 			},
 		},
 		'FKP' => {
+			symbol => 'FKP',
 			display_name => {
 				'currency' => q(福克兰群岛镑),
 				'other' => q(福克兰群岛镑),
 			},
 		},
 		'FRF' => {
+			symbol => 'FRF',
 			display_name => {
 				'currency' => q(法国法郎),
+				'other' => q(法国法郎),
 			},
 		},
 		'GBP' => {
@@ -3928,77 +4750,98 @@ has 'curriencies' => (
 			},
 		},
 		'GEK' => {
+			symbol => 'GEK',
 			display_name => {
 				'currency' => q(乔治亚库蓬拉瑞特),
+				'other' => q(乔治亚库蓬拉瑞特),
 			},
 		},
 		'GEL' => {
+			symbol => 'GEL',
 			display_name => {
 				'currency' => q(格鲁吉亚拉里),
 				'other' => q(格鲁吉亚拉里),
 			},
 		},
 		'GHC' => {
+			symbol => 'GHC',
 			display_name => {
 				'currency' => q(加纳塞第),
+				'other' => q(加纳塞第),
 			},
 		},
 		'GHS' => {
+			symbol => 'GHS',
 			display_name => {
 				'currency' => q(加纳塞地),
 				'other' => q(加纳塞地),
 			},
 		},
 		'GIP' => {
+			symbol => 'GIP',
 			display_name => {
 				'currency' => q(直布罗陀镑),
 				'other' => q(直布罗陀镑),
 			},
 		},
 		'GMD' => {
+			symbol => 'GMD',
 			display_name => {
 				'currency' => q(冈比亚达拉西),
 				'other' => q(冈比亚达拉西),
 			},
 		},
 		'GNF' => {
+			symbol => 'GNF',
 			display_name => {
 				'currency' => q(几内亚法郎),
 				'other' => q(几内亚法郎),
 			},
 		},
 		'GNS' => {
+			symbol => 'GNS',
 			display_name => {
 				'currency' => q(几内亚西里),
+				'other' => q(几内亚西里),
 			},
 		},
 		'GQE' => {
+			symbol => 'GQE',
 			display_name => {
 				'currency' => q(赤道几内亚埃奎勒),
+				'other' => q(赤道几内亚埃奎勒),
 			},
 		},
 		'GRD' => {
+			symbol => 'GRD',
 			display_name => {
 				'currency' => q(希腊德拉克马),
+				'other' => q(希腊德拉克马),
 			},
 		},
 		'GTQ' => {
+			symbol => 'GTQ',
 			display_name => {
 				'currency' => q(危地马拉格查尔),
 				'other' => q(危地马拉格查尔),
 			},
 		},
 		'GWE' => {
+			symbol => 'GWE',
 			display_name => {
 				'currency' => q(葡萄牙几内亚埃斯库多),
+				'other' => q(葡萄牙几内亚埃斯库多),
 			},
 		},
 		'GWP' => {
+			symbol => 'GWP',
 			display_name => {
 				'currency' => q(几内亚比绍比索),
+				'other' => q(几内亚比绍比索),
 			},
 		},
 		'GYD' => {
+			symbol => 'GYD',
 			display_name => {
 				'currency' => q(圭亚那元),
 				'other' => q(圭亚那元),
@@ -4012,48 +4855,66 @@ has 'curriencies' => (
 			},
 		},
 		'HNL' => {
+			symbol => 'HNL',
 			display_name => {
 				'currency' => q(洪都拉斯伦皮拉),
 				'other' => q(洪都拉斯伦皮拉),
 			},
 		},
 		'HRD' => {
+			symbol => 'HRD',
 			display_name => {
 				'currency' => q(克罗地亚第纳尔),
+				'other' => q(克罗地亚第纳尔),
 			},
 		},
 		'HRK' => {
+			symbol => 'HRK',
 			display_name => {
 				'currency' => q(克罗地亚库纳),
 				'other' => q(克罗地亚库纳),
 			},
 		},
 		'HTG' => {
+			symbol => 'HTG',
 			display_name => {
 				'currency' => q(海地古德),
 				'other' => q(海地古德),
 			},
 		},
 		'HUF' => {
+			symbol => 'HUF',
 			display_name => {
 				'currency' => q(匈牙利福林),
 				'other' => q(匈牙利福林),
 			},
 		},
 		'IDR' => {
+			symbol => 'IDR',
 			display_name => {
 				'currency' => q(印度尼西亚盾),
 				'other' => q(印度尼西亚盾),
 			},
 		},
 		'IEP' => {
+			symbol => 'IEP',
 			display_name => {
 				'currency' => q(爱尔兰镑),
+				'other' => q(爱尔兰镑),
 			},
 		},
 		'ILP' => {
+			symbol => 'ILP',
 			display_name => {
 				'currency' => q(以色列镑),
+				'other' => q(以色列镑),
+			},
+		},
+		'ILR' => {
+			symbol => 'ILS',
+			display_name => {
+				'currency' => q(以色列谢克尔\(1980–1985\)),
+				'other' => q(以色列谢克尔\(1980–1985\)),
 			},
 		},
 		'ILS' => {
@@ -4071,35 +4932,49 @@ has 'curriencies' => (
 			},
 		},
 		'IQD' => {
+			symbol => 'IQD',
 			display_name => {
 				'currency' => q(伊拉克第纳尔),
 				'other' => q(伊拉克第纳尔),
 			},
 		},
 		'IRR' => {
+			symbol => 'IRR',
 			display_name => {
 				'currency' => q(伊朗里亚尔),
 				'other' => q(伊朗里亚尔),
 			},
 		},
+		'ISJ' => {
+			symbol => 'ISJ',
+			display_name => {
+				'currency' => q(冰岛克朗\(1918–1981\)),
+				'other' => q(冰岛克朗\(1918–1981\)),
+			},
+		},
 		'ISK' => {
+			symbol => 'ISK',
 			display_name => {
 				'currency' => q(冰岛克朗),
 				'other' => q(冰岛克朗),
 			},
 		},
 		'ITL' => {
+			symbol => 'ITL',
 			display_name => {
 				'currency' => q(意大利里拉),
+				'other' => q(意大利里拉),
 			},
 		},
 		'JMD' => {
+			symbol => 'JMD',
 			display_name => {
 				'currency' => q(牙买加元),
 				'other' => q(牙买加元),
 			},
 		},
 		'JOD' => {
+			symbol => 'JOD',
 			display_name => {
 				'currency' => q(约旦第纳尔),
 				'other' => q(约旦第纳尔),
@@ -4113,30 +4988,35 @@ has 'curriencies' => (
 			},
 		},
 		'KES' => {
+			symbol => 'KES',
 			display_name => {
 				'currency' => q(肯尼亚先令),
 				'other' => q(肯尼亚先令),
 			},
 		},
 		'KGS' => {
+			symbol => 'KGS',
 			display_name => {
 				'currency' => q(吉尔吉斯斯坦索姆),
 				'other' => q(吉尔吉斯斯坦索姆),
 			},
 		},
 		'KHR' => {
+			symbol => 'KHR',
 			display_name => {
 				'currency' => q(柬埔寨瑞尔),
 				'other' => q(柬埔寨瑞尔),
 			},
 		},
 		'KMF' => {
+			symbol => 'KMF',
 			display_name => {
 				'currency' => q(科摩罗法郎),
 				'other' => q(科摩罗法郎),
 			},
 		},
 		'KPW' => {
+			symbol => 'KPW',
 			display_name => {
 				'currency' => q(朝鲜元),
 				'other' => q(朝鲜元),
@@ -4160,196 +5040,245 @@ has 'curriencies' => (
 			},
 		},
 		'KWD' => {
+			symbol => 'KWD',
 			display_name => {
 				'currency' => q(科威特第纳尔),
 				'other' => q(科威特第纳尔),
 			},
 		},
 		'KYD' => {
+			symbol => 'KYD',
 			display_name => {
 				'currency' => q(开曼元),
 				'other' => q(开曼元),
 			},
 		},
 		'KZT' => {
+			symbol => 'KZT',
 			display_name => {
 				'currency' => q(哈萨克斯坦坚戈),
 				'other' => q(哈萨克斯坦坚戈),
 			},
 		},
 		'LAK' => {
+			symbol => 'LAK',
 			display_name => {
 				'currency' => q(老挝基普),
 				'other' => q(老挝基普),
 			},
 		},
 		'LBP' => {
+			symbol => 'LBP',
 			display_name => {
 				'currency' => q(黎巴嫩镑),
 				'other' => q(黎巴嫩镑),
 			},
 		},
 		'LKR' => {
+			symbol => 'LKR',
 			display_name => {
 				'currency' => q(斯里兰卡卢比),
 				'other' => q(斯里兰卡卢比),
 			},
 		},
 		'LRD' => {
+			symbol => 'LRD',
 			display_name => {
 				'currency' => q(利比里亚元),
 				'other' => q(利比里亚元),
 			},
 		},
 		'LSL' => {
+			symbol => 'LSL',
 			display_name => {
 				'currency' => q(莱索托洛蒂),
+				'other' => q(莱索托洛蒂),
 			},
 		},
 		'LTL' => {
+			symbol => 'LTL',
 			display_name => {
 				'currency' => q(立陶宛立特),
 				'other' => q(立陶宛立特),
 			},
 		},
 		'LTT' => {
+			symbol => 'LTT',
 			display_name => {
 				'currency' => q(立陶宛塔咯呐司),
+				'other' => q(立陶宛塔咯呐司),
 			},
 		},
 		'LUC' => {
+			symbol => 'LUC',
 			display_name => {
 				'currency' => q(卢森堡可兑换法郎),
+				'other' => q(卢森堡可兑换法郎),
 			},
 		},
 		'LUF' => {
+			symbol => 'LUF',
 			display_name => {
 				'currency' => q(卢森堡法郎),
+				'other' => q(卢森堡法郎),
 			},
 		},
 		'LUL' => {
+			symbol => 'LUL',
 			display_name => {
 				'currency' => q(卢森堡金融法郎),
+				'other' => q(卢森堡金融法郎),
 			},
 		},
 		'LVL' => {
+			symbol => 'LVL',
 			display_name => {
 				'currency' => q(拉脱维亚拉特),
 				'other' => q(拉脱维亚拉特),
 			},
 		},
 		'LVR' => {
+			symbol => 'LVR',
 			display_name => {
 				'currency' => q(拉脱维亚卢布),
+				'other' => q(拉脱维亚卢布),
 			},
 		},
 		'LYD' => {
+			symbol => 'LYD',
 			display_name => {
 				'currency' => q(利比亚第纳尔),
 				'other' => q(利比亚第纳尔),
 			},
 		},
 		'MAD' => {
+			symbol => 'MAD',
 			display_name => {
 				'currency' => q(摩洛哥迪拉姆),
 				'other' => q(摩洛哥迪拉姆),
 			},
 		},
 		'MAF' => {
+			symbol => 'MAF',
 			display_name => {
 				'currency' => q(摩洛哥法郎),
+				'other' => q(摩洛哥法郎),
 			},
 		},
 		'MCF' => {
+			symbol => 'MCF',
 			display_name => {
 				'currency' => q(摩纳哥法郎),
+				'other' => q(摩纳哥法郎),
 			},
 		},
 		'MDC' => {
+			symbol => 'MDC',
 			display_name => {
 				'currency' => q(摩尔多瓦库邦),
+				'other' => q(摩尔多瓦库邦),
 			},
 		},
 		'MDL' => {
+			symbol => 'MDL',
 			display_name => {
 				'currency' => q(摩尔多瓦列伊),
 				'other' => q(摩尔多瓦列伊),
 			},
 		},
 		'MGA' => {
+			symbol => 'MGA',
 			display_name => {
 				'currency' => q(马达加斯加阿里亚里),
 				'other' => q(马达加斯加阿里亚里),
 			},
 		},
 		'MGF' => {
+			symbol => 'MGF',
 			display_name => {
 				'currency' => q(马达加斯加法郎),
+				'other' => q(马达加斯加法郎),
 			},
 		},
 		'MKD' => {
+			symbol => 'MKD',
 			display_name => {
 				'currency' => q(马其顿第纳尔),
 				'other' => q(马其顿第纳尔),
 			},
 		},
 		'MKN' => {
+			symbol => 'MKN',
 			display_name => {
 				'currency' => q(马其顿第纳尔 \(1992–1993\)),
+				'other' => q(马其顿第纳尔 \(1992–1993\)),
 			},
 		},
 		'MLF' => {
+			symbol => 'MLF',
 			display_name => {
 				'currency' => q(马里法郎),
+				'other' => q(马里法郎),
 			},
 		},
 		'MMK' => {
+			symbol => 'MMK',
 			display_name => {
 				'currency' => q(缅甸元),
 				'other' => q(缅甸元),
 			},
 		},
 		'MNT' => {
+			symbol => 'MNT',
 			display_name => {
 				'currency' => q(蒙古图格里克),
 				'other' => q(蒙古图格里克),
 			},
 		},
 		'MOP' => {
+			symbol => 'MOP',
 			display_name => {
 				'currency' => q(澳门元),
 				'other' => q(澳门元),
 			},
 		},
 		'MRO' => {
+			symbol => 'MRO',
 			display_name => {
 				'currency' => q(毛里塔尼亚乌吉亚),
 				'other' => q(毛里塔尼亚乌吉亚),
 			},
 		},
 		'MTL' => {
+			symbol => 'MTL',
 			display_name => {
 				'currency' => q(马耳他里拉),
+				'other' => q(马耳他里拉),
 			},
 		},
 		'MTP' => {
+			symbol => 'MTP',
 			display_name => {
 				'currency' => q(马耳他镑),
+				'other' => q(马耳他镑),
 			},
 		},
 		'MUR' => {
+			symbol => 'MUR',
 			display_name => {
 				'currency' => q(毛里求斯卢比),
 				'other' => q(毛里求斯卢比),
 			},
 		},
 		'MVR' => {
+			symbol => 'MVR',
 			display_name => {
 				'currency' => q(马尔代夫卢菲亚),
 				'other' => q(马尔代夫卢菲亚),
 			},
 		},
 		'MWK' => {
+			symbol => 'MWK',
 			display_name => {
 				'currency' => q(马拉维克瓦查),
 				'other' => q(马拉维克瓦查),
@@ -4363,72 +5292,91 @@ has 'curriencies' => (
 			},
 		},
 		'MXP' => {
+			symbol => 'MXP',
 			display_name => {
 				'currency' => q(墨西哥银比索 \(1861–1992\)),
+				'other' => q(墨西哥银比索 \(1861–1992\)),
 			},
 		},
 		'MXV' => {
+			symbol => 'MXV',
 			display_name => {
 				'currency' => q(墨西哥（资金）),
+				'other' => q(墨西哥（资金）),
 			},
 		},
 		'MYR' => {
+			symbol => 'MYR',
 			display_name => {
 				'currency' => q(马来西亚林吉特),
 				'other' => q(马来西亚林吉特),
 			},
 		},
 		'MZE' => {
+			symbol => 'MZE',
 			display_name => {
 				'currency' => q(莫桑比克埃斯库多),
+				'other' => q(莫桑比克埃斯库多),
 			},
 		},
 		'MZM' => {
+			symbol => 'MZM',
 			display_name => {
 				'currency' => q(旧莫桑比克美提卡),
+				'other' => q(旧莫桑比克美提卡),
 			},
 		},
 		'MZN' => {
+			symbol => 'MZN',
 			display_name => {
 				'currency' => q(莫桑比克美提卡),
 				'other' => q(莫桑比克美提卡),
 			},
 		},
 		'NAD' => {
+			symbol => 'NAD',
 			display_name => {
 				'currency' => q(纳米比亚元),
 				'other' => q(纳米比亚元),
 			},
 		},
 		'NGN' => {
+			symbol => 'NGN',
 			display_name => {
 				'currency' => q(尼日利亚奈拉),
 				'other' => q(尼日利亚奈拉),
 			},
 		},
 		'NIC' => {
+			symbol => 'NIC',
 			display_name => {
 				'currency' => q(尼加拉瓜科多巴 \(1988–1991\)),
+				'other' => q(尼加拉瓜科多巴 \(1988–1991\)),
 			},
 		},
 		'NIO' => {
+			symbol => 'NIO',
 			display_name => {
 				'currency' => q(尼加拉瓜金科多巴),
 				'other' => q(尼加拉瓜金科多巴),
 			},
 		},
 		'NLG' => {
+			symbol => 'NLG',
 			display_name => {
 				'currency' => q(荷兰盾),
+				'other' => q(荷兰盾),
 			},
 		},
 		'NOK' => {
+			symbol => 'NOK',
 			display_name => {
 				'currency' => q(挪威克朗),
 				'other' => q(挪威克朗),
 			},
 		},
 		'NPR' => {
+			symbol => 'NPR',
 			display_name => {
 				'currency' => q(尼泊尔卢比),
 				'other' => q(尼泊尔卢比),
@@ -4442,232 +5390,287 @@ has 'curriencies' => (
 			},
 		},
 		'OMR' => {
+			symbol => 'OMR',
 			display_name => {
 				'currency' => q(阿曼里亚尔),
 				'other' => q(阿曼里亚尔),
 			},
 		},
 		'PAB' => {
+			symbol => 'PAB',
 			display_name => {
 				'currency' => q(巴拿马巴波亚),
 				'other' => q(巴拿马巴波亚),
 			},
 		},
 		'PEI' => {
+			symbol => 'PEI',
 			display_name => {
 				'currency' => q(秘鲁印第),
+				'other' => q(秘鲁印第),
 			},
 		},
 		'PEN' => {
+			symbol => 'PEN',
 			display_name => {
 				'currency' => q(秘鲁新索尔),
 				'other' => q(秘鲁新索尔),
 			},
 		},
 		'PES' => {
+			symbol => 'PES',
 			display_name => {
 				'currency' => q(秘鲁索尔 \(1863–1965\)),
+				'other' => q(秘鲁索尔 \(1863–1965\)),
 			},
 		},
 		'PGK' => {
+			symbol => 'PGK',
 			display_name => {
 				'currency' => q(巴布亚新几内亚基那),
 				'other' => q(巴布亚新几内亚基那),
 			},
 		},
 		'PHP' => {
+			symbol => 'PHP',
 			display_name => {
 				'currency' => q(菲律宾比索),
 				'other' => q(菲律宾比索),
 			},
 		},
 		'PKR' => {
+			symbol => 'PKR',
 			display_name => {
 				'currency' => q(巴基斯坦卢比),
 				'other' => q(巴基斯坦卢比),
 			},
 		},
 		'PLN' => {
+			symbol => 'PLN',
 			display_name => {
 				'currency' => q(波兰兹罗提),
 				'other' => q(波兰兹罗提),
 			},
 		},
 		'PLZ' => {
+			symbol => 'PLZ',
 			display_name => {
 				'currency' => q(波兰兹罗提 \(1950–1995\)),
+				'other' => q(波兰兹罗提 \(1950–1995\)),
 			},
 		},
 		'PTE' => {
+			symbol => 'PTE',
 			display_name => {
 				'currency' => q(葡萄牙埃斯库多),
+				'other' => q(葡萄牙埃斯库多),
 			},
 		},
 		'PYG' => {
+			symbol => 'PYG',
 			display_name => {
 				'currency' => q(巴拉圭瓜拉尼),
 				'other' => q(巴拉圭瓜拉尼),
 			},
 		},
 		'QAR' => {
+			symbol => 'QAR',
 			display_name => {
 				'currency' => q(卡塔尔里亚尔),
 				'other' => q(卡塔尔里亚尔),
 			},
 		},
 		'RHD' => {
+			symbol => 'RHD',
 			display_name => {
 				'currency' => q(罗得西亚元),
+				'other' => q(罗得西亚元),
 			},
 		},
 		'ROL' => {
+			symbol => 'ROL',
 			display_name => {
 				'currency' => q(旧罗马尼亚列伊),
+				'other' => q(旧罗马尼亚列伊),
 			},
 		},
 		'RON' => {
+			symbol => 'RON',
 			display_name => {
 				'currency' => q(罗马尼亚列伊),
 				'other' => q(罗马尼亚列伊),
 			},
 		},
 		'RSD' => {
+			symbol => 'RSD',
 			display_name => {
 				'currency' => q(塞尔维亚第纳尔),
 				'other' => q(塞尔维亚第纳尔),
 			},
 		},
 		'RUB' => {
+			symbol => 'RUB',
 			display_name => {
 				'currency' => q(俄罗斯卢布),
 				'other' => q(俄罗斯卢布),
 			},
 		},
 		'RUR' => {
+			symbol => 'RUR',
 			display_name => {
 				'currency' => q(俄国卢布 \(1991–1998\)),
+				'other' => q(俄国卢布 \(1991–1998\)),
 			},
 		},
 		'RWF' => {
+			symbol => 'RWF',
 			display_name => {
 				'currency' => q(卢旺达法郎),
 				'other' => q(卢旺达法郎),
 			},
 		},
 		'SAR' => {
+			symbol => 'SAR',
 			display_name => {
 				'currency' => q(沙特里亚尔),
 				'other' => q(沙特里亚尔),
 			},
 		},
 		'SBD' => {
+			symbol => 'SBD',
 			display_name => {
 				'currency' => q(所罗门群岛元),
 				'other' => q(所罗门群岛元),
 			},
 		},
 		'SCR' => {
+			symbol => 'SCR',
 			display_name => {
 				'currency' => q(塞舌尔卢比),
 				'other' => q(塞舌尔卢比),
 			},
 		},
 		'SDD' => {
+			symbol => 'SDD',
 			display_name => {
 				'currency' => q(苏丹第纳尔 \(1992–2007\)),
+				'other' => q(苏丹第纳尔 \(1992–2007\)),
 			},
 		},
 		'SDG' => {
+			symbol => 'SDG',
 			display_name => {
 				'currency' => q(苏丹镑),
 				'other' => q(苏丹镑),
 			},
 		},
 		'SDP' => {
+			symbol => 'SDP',
 			display_name => {
 				'currency' => q(旧苏丹镑),
+				'other' => q(旧苏丹镑),
 			},
 		},
 		'SEK' => {
+			symbol => 'SEK',
 			display_name => {
 				'currency' => q(瑞典克朗),
 				'other' => q(瑞典克朗),
 			},
 		},
 		'SGD' => {
+			symbol => 'SGD',
 			display_name => {
 				'currency' => q(新加坡元),
 				'other' => q(新加坡元),
 			},
 		},
 		'SHP' => {
+			symbol => 'SHP',
 			display_name => {
 				'currency' => q(圣赫勒拿群岛磅),
 				'other' => q(圣赫勒拿群岛磅),
 			},
 		},
 		'SIT' => {
+			symbol => 'SIT',
 			display_name => {
 				'currency' => q(斯洛文尼亚托拉尔),
+				'other' => q(斯洛文尼亚托拉尔),
 			},
 		},
 		'SKK' => {
+			symbol => 'SKK',
 			display_name => {
 				'currency' => q(斯洛伐克克朗),
+				'other' => q(斯洛伐克克朗),
 			},
 		},
 		'SLL' => {
+			symbol => 'SLL',
 			display_name => {
 				'currency' => q(塞拉利昂利昂),
 				'other' => q(塞拉利昂利昂),
 			},
 		},
 		'SOS' => {
+			symbol => 'SOS',
 			display_name => {
 				'currency' => q(索马里先令),
 				'other' => q(索马里先令),
 			},
 		},
 		'SRD' => {
+			symbol => 'SRD',
 			display_name => {
 				'currency' => q(苏里南元),
 				'other' => q(苏里南元),
 			},
 		},
 		'SRG' => {
+			symbol => 'SRG',
 			display_name => {
 				'currency' => q(苏里南盾),
+				'other' => q(苏里南盾),
 			},
 		},
 		'SSP' => {
+			symbol => 'SSP',
 			display_name => {
 				'currency' => q(南苏丹镑),
 				'other' => q(南苏丹镑),
 			},
 		},
 		'STD' => {
+			symbol => 'STD',
 			display_name => {
 				'currency' => q(圣多美和普林西比多布拉),
 				'other' => q(圣多美和普林西比多布拉),
 			},
 		},
 		'SUR' => {
+			symbol => 'SUR',
 			display_name => {
 				'currency' => q(苏联卢布),
+				'other' => q(苏联卢布),
 			},
 		},
 		'SVC' => {
+			symbol => 'SVC',
 			display_name => {
 				'currency' => q(萨尔瓦多科朗),
+				'other' => q(萨尔瓦多科朗),
 			},
 		},
 		'SYP' => {
+			symbol => 'SYP',
 			display_name => {
 				'currency' => q(叙利亚镑),
 				'other' => q(叙利亚镑),
 			},
 		},
 		'SZL' => {
+			symbol => 'SZL',
 			display_name => {
 				'currency' => q(斯威士兰里兰吉尼),
 				'other' => q(斯威士兰里兰吉尼),
@@ -4681,34 +5684,42 @@ has 'curriencies' => (
 			},
 		},
 		'TJR' => {
+			symbol => 'TJR',
 			display_name => {
 				'currency' => q(塔吉克斯坦卢布),
+				'other' => q(塔吉克斯坦卢布),
 			},
 		},
 		'TJS' => {
+			symbol => 'TJS',
 			display_name => {
 				'currency' => q(塔吉克斯坦索莫尼),
 				'other' => q(塔吉克斯坦索莫尼),
 			},
 		},
 		'TMM' => {
+			symbol => 'TMM',
 			display_name => {
 				'currency' => q(土库曼斯坦马纳特 \(1993–2009\)),
+				'other' => q(土库曼斯坦马纳特 \(1993–2009\)),
 			},
 		},
 		'TMT' => {
+			symbol => 'TMT',
 			display_name => {
 				'currency' => q(土库曼斯坦马纳特),
 				'other' => q(土库曼斯坦马纳特),
 			},
 		},
 		'TND' => {
+			symbol => 'TND',
 			display_name => {
 				'currency' => q(突尼斯第纳尔),
 				'other' => q(突尼斯第纳尔),
 			},
 		},
 		'TOP' => {
+			symbol => 'TOP',
 			display_name => {
 				'currency' => q(汤加潘加),
 				'other' => q(汤加潘加),
@@ -4720,17 +5731,21 @@ has 'curriencies' => (
 			},
 		},
 		'TRL' => {
+			symbol => 'TRL',
 			display_name => {
 				'currency' => q(土耳其里拉 \(1922–2005\)),
+				'other' => q(土耳其里拉 \(1922–2005\)),
 			},
 		},
 		'TRY' => {
+			symbol => 'TRY',
 			display_name => {
 				'currency' => q(土耳其里拉),
 				'other' => q(土耳其里拉),
 			},
 		},
 		'TTD' => {
+			symbol => 'TTD',
 			display_name => {
 				'currency' => q(特立尼达和多巴哥元),
 				'other' => q(特立尼达和多巴哥元),
@@ -4744,28 +5759,35 @@ has 'curriencies' => (
 			},
 		},
 		'TZS' => {
+			symbol => 'TZS',
 			display_name => {
 				'currency' => q(坦桑尼亚先令),
 				'other' => q(坦桑尼亚先令),
 			},
 		},
 		'UAH' => {
+			symbol => 'UAH',
 			display_name => {
 				'currency' => q(乌克兰格里夫纳),
 				'other' => q(乌克兰格里夫纳),
 			},
 		},
 		'UAK' => {
+			symbol => 'UAK',
 			display_name => {
 				'currency' => q(乌克兰币),
+				'other' => q(乌克兰币),
 			},
 		},
 		'UGS' => {
+			symbol => 'UGS',
 			display_name => {
 				'currency' => q(乌干达先令 \(1966–1987\)),
+				'other' => q(乌干达先令 \(1966–1987\)),
 			},
 		},
 		'UGX' => {
+			symbol => 'UGX',
 			display_name => {
 				'currency' => q(乌干达先令),
 				'other' => q(乌干达先令),
@@ -4779,43 +5801,56 @@ has 'curriencies' => (
 			},
 		},
 		'USN' => {
+			symbol => 'USN',
 			display_name => {
 				'currency' => q(美元（次日）),
+				'other' => q(美元（次日）),
 			},
 		},
 		'USS' => {
+			symbol => 'USS',
 			display_name => {
 				'currency' => q(美元（当日）),
+				'other' => q(美元（当日）),
 			},
 		},
 		'UYI' => {
+			symbol => 'UYI',
 			display_name => {
 				'currency' => q(乌拉圭比索（索引单位）),
+				'other' => q(乌拉圭比索（索引单位）),
 			},
 		},
 		'UYP' => {
+			symbol => 'UYP',
 			display_name => {
 				'currency' => q(乌拉圭比索 \(1975–1993\)),
+				'other' => q(乌拉圭比索 \(1975–1993\)),
 			},
 		},
 		'UYU' => {
+			symbol => 'UYU',
 			display_name => {
 				'currency' => q(乌拉圭比索),
 				'other' => q(乌拉圭比索),
 			},
 		},
 		'UZS' => {
+			symbol => 'UZS',
 			display_name => {
 				'currency' => q(乌兹别克斯坦苏姆),
 				'other' => q(乌兹别克斯坦苏姆),
 			},
 		},
 		'VEB' => {
+			symbol => 'VEB',
 			display_name => {
 				'currency' => q(委内瑞拉玻利瓦尔 \(1871–2008\)),
+				'other' => q(委内瑞拉玻利瓦尔 \(1871–2008\)),
 			},
 		},
 		'VEF' => {
+			symbol => 'VEF',
 			display_name => {
 				'currency' => q(委内瑞拉玻利瓦尔),
 				'other' => q(委内瑞拉玻利瓦尔),
@@ -4834,12 +5869,14 @@ has 'curriencies' => (
 			},
 		},
 		'VUV' => {
+			symbol => 'VUV',
 			display_name => {
 				'currency' => q(瓦努阿图瓦图),
 				'other' => q(瓦努阿图瓦图),
 			},
 		},
 		'WST' => {
+			symbol => 'WST',
 			display_name => {
 				'currency' => q(萨摩亚塔拉),
 				'other' => q(萨摩亚塔拉),
@@ -4895,8 +5932,10 @@ has 'curriencies' => (
 			},
 		},
 		'XEU' => {
+			symbol => 'XEU',
 			display_name => {
 				'currency' => q(欧洲货币单位),
+				'other' => q(欧洲货币单位),
 			},
 		},
 		'XFO' => {
@@ -4950,81 +5989,108 @@ has 'curriencies' => (
 			},
 		},
 		'YDD' => {
+			symbol => 'YDD',
 			display_name => {
 				'currency' => q(也门第纳尔),
+				'other' => q(也门第纳尔),
 			},
 		},
 		'YER' => {
+			symbol => 'YER',
 			display_name => {
 				'currency' => q(也门里亚尔),
 				'other' => q(也门里亚尔),
 			},
 		},
 		'YUD' => {
+			symbol => 'YUD',
 			display_name => {
 				'currency' => q(南斯拉夫硬第纳尔 \(1966–1990\)),
+				'other' => q(南斯拉夫硬第纳尔 \(1966–1990\)),
 			},
 		},
 		'YUM' => {
+			symbol => 'YUM',
 			display_name => {
 				'currency' => q(南斯拉夫新第纳尔 \(1994–2002\)),
+				'other' => q(南斯拉夫新第纳尔 \(1994–2002\)),
 			},
 		},
 		'YUN' => {
+			symbol => 'YUN',
 			display_name => {
 				'currency' => q(南斯拉夫可兑换第纳尔 \(1990–1992\)),
+				'other' => q(南斯拉夫可兑换第纳尔 \(1990–1992\)),
 			},
 		},
 		'YUR' => {
+			symbol => 'YUR',
 			display_name => {
 				'currency' => q(南斯拉夫改良第纳尔 \(1992–1993\)),
+				'other' => q(南斯拉夫改良第纳尔 \(1992–1993\)),
 			},
 		},
 		'ZAL' => {
+			symbol => 'ZAL',
 			display_name => {
 				'currency' => q(南非兰特 \(金融\)),
+				'other' => q(南非兰特 \(金融\)),
 			},
 		},
 		'ZAR' => {
+			symbol => 'ZAR',
 			display_name => {
 				'currency' => q(南非兰特),
 				'other' => q(南非兰特),
 			},
 		},
 		'ZMK' => {
+			symbol => 'ZMK',
 			display_name => {
 				'currency' => q(赞比亚克瓦查 \(1968–2012\)),
+				'other' => q(赞比亚克瓦查 \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
+			symbol => 'ZMW',
 			display_name => {
 				'currency' => q(赞比亚克瓦查),
 				'other' => q(赞比亚克瓦查),
 			},
 		},
 		'ZRN' => {
+			symbol => 'ZRN',
 			display_name => {
 				'currency' => q(新扎伊尔 \(1993–1998\)),
+				'other' => q(新扎伊尔 \(1993–1998\)),
 			},
 		},
 		'ZRZ' => {
+			symbol => 'ZRZ',
 			display_name => {
 				'currency' => q(扎伊尔 \(1971–1993\)),
+				'other' => q(扎伊尔 \(1971–1993\)),
 			},
 		},
 		'ZWD' => {
+			symbol => 'ZWD',
 			display_name => {
 				'currency' => q(津巴布韦元 \(1980–2008\)),
+				'other' => q(津巴布韦元 \(1980–2008\)),
 			},
 		},
 		'ZWL' => {
+			symbol => 'ZWL',
 			display_name => {
 				'currency' => q(津巴布韦元 \(2009\)),
+				'other' => q(津巴布韦元 \(2009\)),
 			},
 		},
 		'ZWR' => {
+			symbol => 'ZWR',
 			display_name => {
 				'currency' => q(津巴布韦元 \(2008\)),
+				'other' => q(津巴布韦元 \(2008\)),
 			},
 		},
 	} },
@@ -6142,184 +7208,184 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'japanese') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-			last SWITCH;
-			}
-			if ($_ eq 'hebrew') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-			last SWITCH;
-			}
-			if ($_ eq 'buddhist') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-			last SWITCH;
-			}
-			if ($_ eq 'gregorian') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-			last SWITCH;
-			}
-			if ($_ eq 'chinese') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-			last SWITCH;
-			}
-			if ($_ eq 'ethiopic') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-			last SWITCH;
-			}
 			if ($_ eq 'roc') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
 				return 'earlyMorning' if $time >= 400
 					&& $time < 600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'persian') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
+			if ($_ eq 'japanese') {
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
 				return 'earlyMorning' if $time >= 400
 					&& $time < 600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
-			last SWITCH;
-			}
-			if ($_ eq 'generic') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
 				return 'midDay' if $time >= 1200
 					&& $time < 1300;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
 			last SWITCH;
 			}
 			if ($_ eq 'indian') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
 				return 'earlyMorning' if $time >= 400
 					&& $time < 600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'gregorian') {
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'islamic') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
 				return 'earlyMorning' if $time >= 400
 					&& $time < 600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'persian') {
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'chinese') {
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'hebrew') {
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'coptic') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
 				return 'earlyMorning' if $time >= 400
 					&& $time < 600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'ethiopic') {
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'buddhist') {
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'generic') {
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
 			last SWITCH;
 			}
 		}
@@ -6333,26 +7399,26 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
+				'wide' => {
+					'noon' => q{中午},
+					'night' => q{晚上},
+					'weeHours' => q{凌晨},
+					'morning' => q{上午},
+					'earlyMorning' => q{清晨},
+					'afternoon' => q{下午},
+					'am' => q{上午},
+					'midDay' => q{中午},
+					'pm' => q{下午},
+				},
 				'narrow' => {
 					'earlyMorning' => q{清晨},
-					'morning' => q{上午},
-					'noon' => q{中午},
-					'weeHours' => q{凌晨},
-					'night' => q{晚上},
-					'am' => q{上午},
-					'afternoon' => q{下午},
-					'pm' => q{下午},
-					'midDay' => q{中午},
-				},
-				'wide' => {
-					'pm' => q{下午},
-					'midDay' => q{中午},
 					'afternoon' => q{下午},
 					'am' => q{上午},
+					'midDay' => q{中午},
+					'pm' => q{下午},
+					'noon' => q{中午},
 					'night' => q{晚上},
 					'weeHours' => q{凌晨},
-					'noon' => q{中午},
-					'earlyMorning' => q{清晨},
 					'morning' => q{上午},
 				},
 			},
@@ -6841,30 +7907,49 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{Gy年第Q季度},
 			yyyyQQQQ => q{Gy年第Q季度},
 		},
-		'roc' => {
+		'chinese' => {
 			Ed => q{d日E},
-			Gy => q{Gy年},
-			GyMMM => q{Gy年M月},
-			GyMMMEd => q{Gy年M月d日E},
-			GyMMMd => q{Gy年M月d日},
+			Gy => q{U年},
+			GyMMM => q{U年MMM},
+			GyMMMEd => q{U年MMMd日E},
+			GyMMMd => q{U年MMMd日},
+			M => q{MMM},
+			MEd => q{M-dE},
+			MMMEd => q{MMMd日E},
+			MMMd => q{MMMd日},
+			Md => q{M-d},
+			d => q{d日},
+			y => q{U年},
+			yMd => q{U年MMMd日},
+			yyyy => q{U年},
+			yyyyM => q{U年MMM},
+			yyyyMEd => q{U年MMMd日，E},
+			yyyyMMM => q{U年MMM},
+			yyyyMMMEd => q{U年MMMd日E},
+			yyyyMMMd => q{U年MMMd日},
+			yyyyMd => q{U年MMMd日},
+			yyyyQQQ => q{U年QQQQ},
+			yyyyQQQQ => q{U年QQQQ},
+		},
+		'buddhist' => {
 			M => q{M月},
-			MEd => q{M/dE},
+			MEd => q{M-dE},
 			MMM => q{LLL},
 			MMMEd => q{M月d日E},
 			MMMd => q{M月d日},
-			Md => q{M/d},
+			Md => q{M-d},
 			d => q{d日},
 			y => q{Gy年},
 			yyyy => q{Gy年},
-			yyyyM => q{Gy年M月},
-			yyyyMEd => q{Gy/M/dE},
+			yyyyM => q{Gy-M},
+			yyyyMEd => q{Gy-M-d（E）},
 			yyyyMMM => q{Gy年M月},
 			yyyyMMMEd => q{Gy年M月d日E},
 			yyyyMMMM => q{Gy年M月},
 			yyyyMMMd => q{Gy年M月d日},
-			yyyyMd => q{Gy/M/d},
+			yyyyMd => q{Gy-M-d},
 			yyyyQQQ => q{Gy年第Q季度},
-			yyyyQQQQ => q{Gy年第Q季度},
+			yyyyQQQQ => q{Gy年QQQQ},
 		},
 		'islamic' => {
 			M => q{M月},
@@ -6874,6 +7959,45 @@ has 'datetime_formats_available_formats' => (
 			MMMd => q{M月d日},
 			Md => q{M-d},
 			d => q{d日},
+		},
+		'gregorian' => {
+			E => q{ccc},
+			EHm => q{EHH:mm},
+			EHms => q{EHH:mm:ss},
+			Ed => q{d日E},
+			Ehm => q{Eah:mm},
+			Ehms => q{Eah:mm:ss},
+			Gy => q{Gy年},
+			GyMMM => q{Gy年M月},
+			GyMMMEd => q{Gy年M月d日E},
+			GyMMMd => q{Gy年M月d日},
+			H => q{H时},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{M月},
+			MEd => q{M/dE},
+			MMM => q{LLL},
+			MMMEd => q{M月d日E},
+			MMMMdd => q{M月dd日},
+			MMMd => q{M月d日},
+			MMdd => q{MM/dd},
+			Md => q{M/d},
+			d => q{d日},
+			h => q{ah时},
+			hm => q{ah:mm},
+			hms => q{ah:mm:ss},
+			ms => q{mm:ss},
+			y => q{y年},
+			yM => q{y年M月},
+			yMEd => q{y/M/dE},
+			yMM => q{y年M月},
+			yMMM => q{y年M月},
+			yMMMEd => q{y年M月d日E},
+			yMMMM => q{y年M月},
+			yMMMd => q{y年M月d日},
+			yMd => q{y/M/d},
+			yQQQ => q{y年第Q季度},
+			yQQQQ => q{y年第Q季度},
 		},
 		'japanese' => {
 			Ed => q{d日E},
@@ -6906,87 +8030,30 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{Gy年第Q季度},
 			yyyyQQQQ => q{Gy年QQQQ},
 		},
-		'buddhist' => {
-			M => q{M月},
-			MEd => q{M-dE},
-			MMM => q{LLL},
-			MMMEd => q{M月d日E},
-			MMMd => q{M月d日},
-			Md => q{M-d},
-			d => q{d日},
-			y => q{Gy年},
-			yyyy => q{Gy年},
-			yyyyM => q{Gy-M},
-			yyyyMEd => q{Gy-M-d（E）},
-			yyyyMMM => q{Gy年M月},
-			yyyyMMMEd => q{Gy年M月d日E},
-			yyyyMMMM => q{Gy年M月},
-			yyyyMMMd => q{Gy年M月d日},
-			yyyyMd => q{Gy-M-d},
-			yyyyQQQ => q{Gy年第Q季度},
-			yyyyQQQQ => q{Gy年QQQQ},
-		},
-		'chinese' => {
+		'roc' => {
 			Ed => q{d日E},
-			Gy => q{U年},
-			GyMMM => q{U年MMM},
-			GyMMMEd => q{U年MMMd日E},
-			GyMMMd => q{U年MMMd日},
-			M => q{MMM},
-			MEd => q{M-dE},
-			MMMEd => q{MMMd日E},
-			MMMd => q{MMMd日},
-			Md => q{M-d},
-			d => q{d日},
-			y => q{U年},
-			yMd => q{U年MMMd日},
-			yyyy => q{U年},
-			yyyyM => q{U年MMM},
-			yyyyMEd => q{U年MMMd日，E},
-			yyyyMMM => q{U年MMM},
-			yyyyMMMEd => q{U年MMMd日E},
-			yyyyMMMd => q{U年MMMd日},
-			yyyyMd => q{U年MMMd日},
-			yyyyQQQ => q{U年QQQQ},
-			yyyyQQQQ => q{U年QQQQ},
-		},
-		'gregorian' => {
-			EHm => q{EHH:mm},
-			EHms => q{EHH:mm:ss},
-			Ed => q{d日E},
-			Ehm => q{Eah:mm},
-			Ehms => q{Eah:mm:ss},
 			Gy => q{Gy年},
 			GyMMM => q{Gy年M月},
 			GyMMMEd => q{Gy年M月d日E},
 			GyMMMd => q{Gy年M月d日},
-			H => q{H时},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
 			M => q{M月},
 			MEd => q{M/dE},
 			MMM => q{LLL},
 			MMMEd => q{M月d日E},
-			MMMMdd => q{M月dd日},
 			MMMd => q{M月d日},
-			MMdd => q{MM/dd},
 			Md => q{M/d},
 			d => q{d日},
-			h => q{ah时},
-			hm => q{ah:mm},
-			hms => q{ah:mm:ss},
-			ms => q{mm:ss},
-			y => q{y年},
-			yM => q{y/M},
-			yMEd => q{y/M/dE},
-			yMM => q{y年M月},
-			yMMM => q{y年M月},
-			yMMMEd => q{y年M月d日E},
-			yMMMM => q{y年M月},
-			yMMMd => q{y年M月d日},
-			yMd => q{y/M/d},
-			yQQQ => q{y年第Q季度},
-			yQQQQ => q{y年第Q季度},
+			y => q{Gy年},
+			yyyy => q{Gy年},
+			yyyyM => q{Gy年M月},
+			yyyyMEd => q{Gy/M/dE},
+			yyyyMMM => q{Gy年M月},
+			yyyyMMMEd => q{Gy年M月d日E},
+			yyyyMMMM => q{Gy年M月},
+			yyyyMMMd => q{Gy年M月d日},
+			yyyyMd => q{Gy/M/d},
+			yyyyQQQ => q{Gy年第Q季度},
+			yyyyQQQQ => q{Gy年第Q季度},
 		},
 	} },
 );
@@ -7775,7 +8842,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#门多萨#,
 		},
 		'America/Menominee' => {
-			exemplarCity => q#密诺米尼#,
+			exemplarCity => q#梅诺米尼#,
 		},
 		'America/Merida' => {
 			exemplarCity => q#梅里达#,
@@ -8007,8 +9074,18 @@ has 'time_zone_names' => (
 		'Antarctica/Syowa' => {
 			exemplarCity => q#昭和#,
 		},
+		'Antarctica/Troll' => {
+			exemplarCity => q#特罗尔#,
+		},
 		'Antarctica/Vostok' => {
 			exemplarCity => q#沃斯托克#,
+		},
+		'Apia' => {
+			long => {
+				'daylight' => q(阿皮亚夏令时间),
+				'generic' => q(阿皮亚时间),
+				'standard' => q(阿皮亚标准时间),
+			},
 		},
 		'Aqtau' => {
 			long => {
@@ -8581,7 +9658,7 @@ has 'time_zone_names' => (
 		'Europe/Dublin' => {
 			exemplarCity => q#都柏林#,
 			long => {
-				'daylight' => q(爱尔兰夏令时间),
+				'daylight' => q(爱尔兰标准时间),
 			},
 		},
 		'Europe/Gibraltar' => {
@@ -8730,6 +9807,11 @@ has 'time_zone_names' => (
 				'standard' => q(东欧标准时间),
 			},
 		},
+		'Europe_Further_Eastern' => {
+			long => {
+				'standard' => q(远东标准时间),
+			},
+		},
 		'Europe_Western' => {
 			long => {
 				'daylight' => q(西欧夏令时间),
@@ -8809,7 +9891,7 @@ has 'time_zone_names' => (
 		},
 		'Gulf' => {
 			long => {
-				'standard' => q(海湾时间),
+				'standard' => q(海湾标准时间),
 			},
 		},
 		'Guyana' => {
@@ -9357,7 +10439,7 @@ has 'time_zone_names' => (
 		},
 		'Singapore' => {
 			long => {
-				'standard' => q(新加坡时间),
+				'standard' => q(新加坡标准时间),
 			},
 		},
 		'Solomon' => {

@@ -1,11 +1,11 @@
 package Locale::CLDR::Zh::Hans::Hk;
 # This file auto generated from Data\common\main\zh_Hans_HK.xml
-#	on Sat 21 Jun  1:36:56 am GMT
-# XML file generated 2014-01-08 23:53:23 -0600 (Wed, 08 Jan 2014)
+#	on Thu  2 Oct  2:24:23 pm GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -46,7 +46,6 @@ has 'display_name_script' => (
 			'Knda' => '卡纳塔克文',
  			'Sinh' => '辛哈拉文',
  			'Thaa' => '塔安娜文',
- 			'Zxxx' => '非书面文字',
  			'Zzzz' => '未知语系',
 
 			);
@@ -122,6 +121,14 @@ has 'units' => (
 	init_arg	=> undef,
 	default		=> sub { {
 				'long' => {
+					'karat' => {
+						'' => q(开),
+						'other' => q({0}开),
+					},
+					'kelvin' => {
+						'' => q(开氏度),
+						'other' => q({0}开氏度),
+					},
 					'per' => {
 						'' => q({0}/{1}),
 					},
@@ -130,8 +137,8 @@ has 'units' => (
 					},
 				},
 				'narrow' => {
-					'centimeter' => {
-						'other' => q({0}厘米),
+					'celsius' => {
+						'other' => q({0}°C),
 					},
 					'foot' => {
 						'other' => q({0}英尺),
@@ -139,20 +146,11 @@ has 'units' => (
 					'inch' => {
 						'other' => q({0}英寸),
 					},
-					'kilometer' => {
-						'other' => q({0}公里),
-					},
 					'light-year' => {
 						'other' => q({0}光年),
 					},
-					'meter' => {
-						'other' => q({0}米),
-					},
 					'mile' => {
 						'other' => q({0}英里),
-					},
-					'millimeter' => {
-						'other' => q({0}毫米),
 					},
 					'picometer' => {
 						'other' => q({0}皮米),
@@ -162,29 +160,22 @@ has 'units' => (
 					},
 				},
 				'short' => {
-					'centimeter' => {
-						'other' => q({0}厘米),
+					'g-force' => {
+						'other' => q({0}G力),
 					},
-					'foot' => {
-						'other' => q({0}英尺),
+					'karat' => {
+						'' => q(开),
+						'other' => q({0}开),
 					},
-					'inch' => {
-						'other' => q({0}英寸),
-					},
-					'kilometer' => {
-						'other' => q({0}公里),
+					'kelvin' => {
+						'' => q(开氏度),
+						'other' => q({0}°K),
 					},
 					'light-year' => {
 						'other' => q({0}光年),
 					},
 					'meter' => {
 						'other' => q({0}米),
-					},
-					'mile' => {
-						'other' => q({0}英里),
-					},
-					'millimeter' => {
-						'other' => q({0}毫米),
 					},
 					'picometer' => {
 						'other' => q({0}皮米),
@@ -203,33 +194,6 @@ has 'number_formats' => (
 	default		=> sub { {
 		decimalFormat => {
 			'long' => {
-				'1000' => {
-					'other' => '0千',
-				},
-				'10000' => {
-					'other' => '0万',
-				},
-				'100000' => {
-					'other' => '00万',
-				},
-				'1000000' => {
-					'other' => '000万',
-				},
-				'10000000' => {
-					'other' => '0000万',
-				},
-				'100000000' => {
-					'other' => '0亿',
-				},
-				'1000000000' => {
-					'other' => '00亿',
-				},
-				'10000000000' => {
-					'other' => '000亿',
-				},
-				'100000000000' => {
-					'other' => '0000亿',
-				},
 				'1000000000000' => {
 					'other' => '0万亿',
 				},
@@ -241,33 +205,6 @@ has 'number_formats' => (
 				},
 			},
 			'short' => {
-				'1000' => {
-					'other' => '0千',
-				},
-				'10000' => {
-					'other' => '0万',
-				},
-				'100000' => {
-					'other' => '00万',
-				},
-				'1000000' => {
-					'other' => '000万',
-				},
-				'10000000' => {
-					'other' => '0000万',
-				},
-				'100000000' => {
-					'other' => '0亿',
-				},
-				'1000000000' => {
-					'other' => '00亿',
-				},
-				'10000000000' => {
-					'other' => '000亿',
-				},
-				'100000000000' => {
-					'other' => '0000亿',
-				},
 				'1000000000000' => {
 					'other' => '0万亿',
 				},
@@ -290,10 +227,6 @@ has 'number_currency_formats' => (
 		'latn' => {
 			'pattern' => {
 				'default' => {
-					'accounting' => {
-						'negative' => '(¤#,##0.00)',
-						'positive' => '¤#,##0.00',
-					},
 					'standard' => {
 						'negative' => '¤#,##0.00',
 						'positive' => '¤#,##0.00',
@@ -315,8 +248,8 @@ has 'curriencies' => (
 				'other' => q(阿鲁巴弗罗林),
 			},
 		},
-		'HKD' => {
-			symbol => '$',
+		'CNY' => {
+			symbol => 'CN¥',
 		},
 		'HNL' => {
 			display_name => {
@@ -368,109 +301,109 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'generic') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
+			if ($_ eq 'buddhist') {
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
 				return 'earlyMorning' if $time >= 400
 					&& $time < 600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'roc') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
 				return 'earlyMorning' if $time >= 400
 					&& $time < 600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
-			last SWITCH;
-			}
-			if ($_ eq 'japanese') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
 				return 'midDay' if $time >= 1200
 					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
-			last SWITCH;
-			}
-			if ($_ eq 'islamic') {
 				return 'night' if $time >= 1800
 					&& $time < 2400;
-				return 'afternoon' if $time >= 1300
-					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
 				return 'morning' if $time >= 600
 					&& $time < 1200;
-				return 'earlyMorning' if $time >= 400
-					&& $time < 600;
-				return 'weeHours' if $time >= 0000
-					&& $time < 400;
 			last SWITCH;
 			}
 			if ($_ eq 'chinese') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
 				return 'earlyMorning' if $time >= 400
 					&& $time < 600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'japanese') {
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'gregorian') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
 				return 'earlyMorning' if $time >= 400
 					&& $time < 600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'buddhist') {
-				return 'night' if $time >= 1800
-					&& $time < 2400;
+			if ($_ eq 'generic') {
 				return 'afternoon' if $time >= 1300
 					&& $time < 1800;
-				return 'midDay' if $time >= 1200
-					&& $time < 1300;
-				return 'morning' if $time >= 600
-					&& $time < 1200;
 				return 'earlyMorning' if $time >= 400
 					&& $time < 600;
 				return 'weeHours' if $time >= 0000
 					&& $time < 400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'islamic') {
+				return 'afternoon' if $time >= 1300
+					&& $time < 1800;
+				return 'earlyMorning' if $time >= 400
+					&& $time < 600;
+				return 'weeHours' if $time >= 0000
+					&& $time < 400;
+				return 'midDay' if $time >= 1200
+					&& $time < 1300;
+				return 'night' if $time >= 1800
+					&& $time < 2400;
+				return 'morning' if $time >= 600
+					&& $time < 1200;
 			last SWITCH;
 			}
 		}
@@ -505,45 +438,26 @@ has 'date_formats' => (
 	init_arg	=> undef,
 	default		=> sub { {
 		'buddhist' => {
-			'full' => q{Gy年M月d日EEEE},
-			'long' => q{Gy年M月d日},
-			'medium' => q{Gy年M月d日},
 			'short' => q{Gd/M/yy},
 		},
 		'chinese' => {
 			'full' => q{U年MMMd日EEEE},
 			'long' => q{U年MMMd日},
 			'medium' => q{U年MMMd日},
-			'short' => q{U-M-d},
 		},
 		'generic' => {
-			'full' => q{Gy年M月d日EEEE},
-			'long' => q{Gy年M月d日},
-			'medium' => q{Gy年M月d日},
 			'short' => q{d/M/yyGGGGG},
 		},
 		'gregorian' => {
-			'full' => q{y年M月d日EEEE},
-			'long' => q{y年M月d日},
-			'medium' => q{y年M月d日},
 			'short' => q{d/M/yy},
 		},
 		'islamic' => {
-			'full' => q{Gy年M月d日EEEE},
-			'long' => q{Gy年M月d日},
-			'medium' => q{Gy年M月d日},
 			'short' => q{Gd/M/yy},
 		},
 		'japanese' => {
-			'full' => q{Gy年M月d日EEEE},
-			'long' => q{Gy年M月d日},
-			'medium' => q{Gy年M月d日},
 			'short' => q{Gd/M/yy},
 		},
 		'roc' => {
-			'full' => q{Gy年M月d日EEEE},
-			'long' => q{Gy年M月d日},
-			'medium' => q{Gy年M月d日},
 			'short' => q{Gd/M/yy},
 		},
 	} },
@@ -589,8 +503,6 @@ has 'datetime_formats' => (
 		'gregorian' => {
 			'full' => q{{1}{0}},
 			'long' => q{{1}{0}},
-			'medium' => q{{1} {0}},
-			'short' => q{{1} {0}},
 		},
 		'islamic' => {
 		},
@@ -606,6 +518,18 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'gregorian' => {
+			HHmm => q{HH:mm},
+			M => q{L},
+			MEd => q{E, d/M},
+			MMMMdd => q{M月d日},
+			MMdd => q{dd/MM},
+			Md => q{d/M},
+			yM => q{M/y},
+			yMEd => q{d/M/y（E）},
+			yMM => q{MM/y},
+			yMd => q{d/M/y},
+		},
 		'generic' => {
 			HHmm => q{HH:mm},
 			M => q{L},
@@ -625,18 +549,6 @@ has 'datetime_formats_available_formats' => (
 		'japanese' => {
 			MEd => q{M/dE},
 			Md => q{M/d},
-		},
-		'gregorian' => {
-			HHmm => q{HH:mm},
-			M => q{L},
-			MEd => q{E, d/M},
-			MMMMdd => q{M月d日},
-			MMdd => q{dd/MM},
-			Md => q{d/M},
-			yM => q{M/y},
-			yMEd => q{d/M/y（E）},
-			yMM => q{MM/y},
-			yMd => q{d/M/y},
 		},
 		'buddhist' => {
 			M => q{L},
@@ -658,6 +570,35 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'gregorian' => {
+			Hmv => {
+				H => q{vHH:mm–HH:mm},
+				m => q{vHH:mm–HH:mm},
+			},
+			Hv => {
+				H => q{vHH–HH},
+			},
+			fallback => '{0}–{1}',
+			h => {
+				h => q{ah至h时},
+			},
+			yM => {
+				M => q{y年M月至y年M月},
+			},
+			yMEd => {
+				M => q{d/M/yE至d/M/yE},
+				d => q{d/M/yE至d/M/yE},
+				y => q{d/M/yE至d/M/yE},
+			},
+			yMMMEd => {
+				d => q{y年M月d日E至M月d日E},
+			},
+			yMd => {
+				M => q{d/M/y至d/M/y},
+				d => q{d/M/y至d/M/y},
+				y => q{d/M/y至d/M/y},
+			},
+		},
 		'generic' => {
 			Hmv => {
 				H => q{vHH:mm–HH:mm},
@@ -690,35 +631,6 @@ has 'datetime_formats_interval' => (
 				y => q{d/M/y至d/M/y},
 			},
 		},
-		'gregorian' => {
-			Hmv => {
-				H => q{vHH:mm–HH:mm},
-				m => q{vHH:mm–HH:mm},
-			},
-			Hv => {
-				H => q{vHH–HH},
-			},
-			fallback => '{0}–{1}',
-			h => {
-				h => q{ah至h时},
-			},
-			yM => {
-				M => q{y年M月至y年M月},
-			},
-			yMEd => {
-				M => q{d/M/yE至d/M/yE},
-				d => q{d/M/yE至d/M/yE},
-				y => q{d/M/yE至d/M/yE},
-			},
-			yMMMEd => {
-				d => q{y年M月d日E至M月d日E},
-			},
-			yMd => {
-				M => q{d/M/y至d/M/y},
-				d => q{d/M/y至d/M/y},
-				y => q{d/M/y至d/M/y},
-			},
-		},
 	} },
 );
 
@@ -727,8 +639,12 @@ has 'time_zone_names' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default	=> sub { {
+		gmtFormat => q(GMT {0}),
 		'America/Danmarkshavn' => {
 			exemplarCity => q#丹马克沙伏#,
+		},
+		'America/Pangnirtung' => {
+			exemplarCity => q#旁尼唐#,
 		},
 		'America/Santo_Domingo' => {
 			exemplarCity => q#圣多明戈#,

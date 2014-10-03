@@ -1,11 +1,11 @@
 package Locale::CLDR::Es::Any::Ec;
 # This file auto generated from Data\common\main\es_EC.xml
-#	on Fri 20 Jun 11:23:47 pm GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct 11:01:53 am GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -15,16 +15,6 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Es::Any');
-has 'algorithmic_number_format_data' => (
-	is => 'ro',
-	isa => 'HashRef',
-	init_arg => undef,
-	default => sub { 
-		use bignum;
-		return {
-	} },
-);
-
 has 'number_symbols' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -32,16 +22,7 @@ has 'number_symbols' => (
 	default		=> sub { {
 		'latn' => {
 			'decimal' => q(,),
-			'exponential' => q(),
 			'group' => q(.),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -63,6 +44,18 @@ has 'number_currency_formats' => (
 		},
 } },
 );
+
+has 'curriencies' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'USD' => {
+			symbol => '$',
+		},
+	} },
+);
+
 
 has 'eras' => (
 	is			=> 'ro',
@@ -164,7 +157,6 @@ has 'datetime_formats_interval' => (
 			},
 			MMMd => {
 				M => q{d 'de' MMM 'al' d 'de' MMM},
-				d => q{d-d 'de' MMM},
 			},
 			Md => {
 				M => q{dd/MM - dd/MM},
@@ -251,7 +243,6 @@ has 'datetime_formats_interval' => (
 			},
 			MMMd => {
 				M => q{d 'de' MMM 'al' d 'de' MMM},
-				d => q{d-d 'de' MMM},
 			},
 			Md => {
 				M => q{dd/MM - dd/MM},
@@ -288,7 +279,6 @@ has 'datetime_formats_interval' => (
 				y => q{E dd/MM/y - E dd/MM/y},
 			},
 			yMMM => {
-				M => q{MMM-MMM 'de' y},
 				y => q{MMM 'de' y 'a' MMM 'de' y},
 			},
 			yMMMEd => {
@@ -298,7 +288,6 @@ has 'datetime_formats_interval' => (
 			},
 			yMMMd => {
 				M => q{d 'de' MMM 'al' d 'de' MMM 'de' y},
-				d => q{d-d 'de' MMM 'de' y},
 				y => q{d 'de' MMM 'de' y 'al' d 'de' MMM 'de' y},
 			},
 			yMd => {

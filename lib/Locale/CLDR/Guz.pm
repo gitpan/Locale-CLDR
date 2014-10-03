@@ -1,11 +1,11 @@
 package Locale::CLDR::Guz;
 # This file auto generated from Data\common\main\guz.xml
-#	on Fri 20 Jun 11:42:14 pm GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct 11:31:05 am GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -807,7 +807,7 @@ has 'calendar_quarters' => (
 						2 => 'E3',
 						3 => 'E4'
 					},
-					wide => {0 => 'Erobo entang\'ani',
+					wide => {0 => 'Erobo entang’ani',
 						1 => 'Erobo yakabere',
 						2 => 'Erobo yagatato',
 						3 => 'Erobo yakane'
@@ -906,7 +906,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -929,7 +929,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},

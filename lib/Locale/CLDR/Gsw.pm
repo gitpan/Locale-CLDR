@@ -1,11 +1,11 @@
 package Locale::CLDR::Gsw;
 # This file auto generated from Data\common\main\gsw.xml
-#	on Fri 20 Jun 11:39:07 pm GMT
-# XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
+#	on Thu  2 Oct 11:27:57 am GMT
+# XML file generated 2014-08-07 13:24:47 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -1110,142 +1110,177 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'acre' => {
+						'' => q(Acre),
 						'one' => q({0} Acre),
 						'other' => q({0} Acre),
 					},
 					'arc-minute' => {
+						'' => q(Winkelminute),
 						'one' => q({0} Winkelminute),
 						'other' => q({0} Winkelminute),
 					},
 					'arc-second' => {
+						'' => q(Winkelsekunde),
 						'one' => q({0} Winkelsekunde),
 						'other' => q({0} Winkelsekunde),
 					},
 					'celsius' => {
+						'' => q(Grad Celsius),
 						'one' => q({0} Grad Celsius),
 						'other' => q({0} Grad Celsius),
 					},
 					'centimeter' => {
+						'' => q(Zentimeter),
 						'one' => q({0} Zentimeter),
 						'other' => q({0} Zentimeter),
 					},
 					'cubic-kilometer' => {
+						'' => q(Kubikkilometer),
 						'one' => q({0} Kubikkilometer),
 						'other' => q({0} Kubikkilometer),
 					},
 					'cubic-mile' => {
+						'' => q(Kubikmeile),
 						'one' => q({0} Kubikmeile),
 						'other' => q({0} Kubikmeile),
 					},
 					'day' => {
+						'' => q(Tääg),
 						'one' => q({0} Taag),
 						'other' => q({0} Tääg),
 					},
 					'degree' => {
+						'' => q(Grad),
 						'one' => q({0} Grad),
 						'other' => q({0} Grad),
 					},
 					'fahrenheit' => {
+						'' => q(Grad Fahrenheit),
 						'one' => q({0} Grad Fahrenheit),
 						'other' => q({0} Grad Fahrenheit),
 					},
 					'foot' => {
+						'' => q(Fuess),
 						'one' => q({0} Fuess),
 						'other' => q({0} Fuess),
 					},
 					'g-force' => {
+						'' => q(-fachi Erdbeschlünigung),
 						'one' => q({0}-fachi Erdbeschlünigung),
 						'other' => q({0}-fachi Erdbeschlünigung),
 					},
 					'gram' => {
+						'' => q(Gramm),
 						'one' => q({0} Gramm),
 						'other' => q({0} Gramm),
 					},
 					'hectare' => {
+						'' => q(Hektar),
 						'one' => q({0} Hektar),
 						'other' => q({0} Hektar),
 					},
 					'hectopascal' => {
+						'' => q(Hektopascal),
 						'one' => q({0} Hektopascal),
 						'other' => q({0} Hektopascal),
 					},
 					'horsepower' => {
+						'' => q(Pferdestärke),
 						'one' => q({0} Pferdestärke),
 						'other' => q({0} Pferdestärke),
 					},
 					'hour' => {
+						'' => q(Schtunde),
 						'one' => q({0} Schtund),
 						'other' => q({0} Schtunde),
 					},
 					'inch' => {
+						'' => q(Zoll),
 						'one' => q({0} Zoll),
 						'other' => q({0} Zoll),
 					},
 					'inch-hg' => {
+						'' => q(Zoll Quecksilbersüüle),
 						'one' => q({0} Zoll Quecksilbersüüle),
 						'other' => q({0} Zoll Quecksilbersüüle),
 					},
 					'kilogram' => {
+						'' => q(Kilogramm),
 						'one' => q({0} Kilogramm),
 						'other' => q({0} Kilogramm),
 					},
 					'kilometer' => {
+						'' => q(Kilometer),
 						'one' => q({0} Kilometer),
 						'other' => q({0} Kilometer),
 					},
 					'kilometer-per-hour' => {
+						'' => q(Kilometer pro Stund),
 						'one' => q({0} Kilometer pro Stund),
 						'other' => q({0} Kilometer pro Stund),
 					},
 					'kilowatt' => {
+						'' => q(Kilowatt),
 						'one' => q({0} Kilowatt),
 						'other' => q({0} Kilowatt),
 					},
 					'light-year' => {
+						'' => q(Liechtjahr),
 						'one' => q({0} Liechtjahr),
 						'other' => q({0} Liechtjahr),
 					},
 					'liter' => {
+						'' => q(Liter),
 						'one' => q({0} Liter),
 						'other' => q({0} Liter),
 					},
 					'meter' => {
+						'' => q(Meter),
 						'one' => q({0} Meter),
 						'other' => q({0} Meter),
 					},
 					'meter-per-second' => {
+						'' => q(Meter pro Sekunde),
 						'one' => q({0} Meter pro Sekunde),
 						'other' => q({0} Meter pro Sekunde),
 					},
 					'mile' => {
+						'' => q(Meile),
 						'one' => q({0} Meile),
 						'other' => q({0} Meile),
 					},
 					'mile-per-hour' => {
+						'' => q(Meile pro Stund),
 						'one' => q({0} Meile pro Stund),
 						'other' => q({0} Meile pro Stund),
 					},
 					'millibar' => {
+						'' => q(Millibar),
 						'one' => q({0} Millibar),
 						'other' => q({0} Millibar),
 					},
 					'millimeter' => {
+						'' => q(Millimeter),
 						'one' => q({0} Millimeter),
 						'other' => q({0} Millimeter),
 					},
 					'millisecond' => {
+						'' => q(Millisekunde),
 						'one' => q({0} Millisekunde),
 						'other' => q({0} Millisekunde),
 					},
 					'minute' => {
+						'' => q(Minuute),
 						'one' => q({0} Minuute),
 						'other' => q({0} Minuute),
 					},
 					'month' => {
+						'' => q(Mönet),
 						'one' => q({0} Monet),
 						'other' => q({0} Mönet),
 					},
 					'ounce' => {
+						'' => q(Unze),
 						'one' => q({0} Unze),
 						'other' => q({0} Unze),
 					},
@@ -1253,46 +1288,57 @@ has 'units' => (
 						'' => q({0} pro {1}),
 					},
 					'picometer' => {
+						'' => q(Pikometer),
 						'one' => q({0} Pikometer),
 						'other' => q({0} Pikometer),
 					},
 					'pound' => {
+						'' => q(Pfund),
 						'one' => q({0} Pfund),
 						'other' => q({0} Pfund),
 					},
 					'second' => {
+						'' => q(Sekunde),
 						'one' => q({0} Sekunde),
 						'other' => q({0} Sekunde),
 					},
 					'square-foot' => {
+						'' => q(Quadratfuess),
 						'one' => q({0} Quadratfuess),
 						'other' => q({0} Quadratfuess),
 					},
 					'square-kilometer' => {
+						'' => q(Quadratkilometer),
 						'one' => q({0} Quadratkilometer),
 						'other' => q({0} Quadratkilometer),
 					},
 					'square-meter' => {
+						'' => q(Quadratmeter),
 						'one' => q({0} Quadratmeter),
 						'other' => q({0} Quadratmeter),
 					},
 					'square-mile' => {
+						'' => q(Quadratmeile),
 						'one' => q({0} Quadratmeile),
 						'other' => q({0} Quadratmeile),
 					},
 					'watt' => {
+						'' => q(Watt),
 						'one' => q({0} Watt),
 						'other' => q({0} Watt),
 					},
 					'week' => {
+						'' => q(Wuche),
 						'one' => q({0} Wuche),
 						'other' => q({0} Wuche),
 					},
 					'yard' => {
+						'' => q(Yard),
 						'one' => q({0} Yard),
 						'other' => q({0} Yard),
 					},
 					'year' => {
+						'' => q(Jahr),
 						'one' => q({0} Jahr),
 						'other' => q({0} Jahr),
 					},
@@ -1476,138 +1522,175 @@ has 'units' => (
 				},
 				'short' => {
 					'acre' => {
+						'' => q(Acre),
 						'one' => q({0} ac),
 						'other' => q({0} ac),
 					},
 					'arc-minute' => {
+						'' => q(Winkelminute),
 						'one' => q({0}′),
 						'other' => q({0}′),
 					},
 					'arc-second' => {
+						'' => q(Winkelsekunde),
 						'one' => q({0}″),
 						'other' => q({0}″),
 					},
 					'celsius' => {
+						'' => q(Grad Celsius),
 						'one' => q({0}°C),
 						'other' => q({0}°C),
 					},
 					'centimeter' => {
+						'' => q(Zentimeter),
 						'one' => q({0} cm),
 						'other' => q({0} cm),
 					},
 					'cubic-kilometer' => {
+						'' => q(Kubikkilometer),
 						'one' => q({0} km³),
 						'other' => q({0} km³),
 					},
 					'cubic-mile' => {
+						'' => q(Kubikmeile),
 						'one' => q({0} mi³),
 						'other' => q({0} mi³),
 					},
 					'day' => {
+						'' => q(Tääg),
 						'one' => q({0} d),
 						'other' => q({0} d),
 					},
 					'degree' => {
+						'' => q(Grad),
 						'one' => q({0}°),
 						'other' => q({0}°),
 					},
 					'fahrenheit' => {
+						'' => q(Grad Fahrenheit),
 						'one' => q({0}°F),
 						'other' => q({0}°F),
 					},
 					'foot' => {
+						'' => q(Fuess),
 						'one' => q({0} Fuess),
 						'other' => q({0} Fuess),
 					},
 					'g-force' => {
+						'' => q(-fachi Erdbeschlünigung),
 						'one' => q({0} G),
 						'other' => q({0} G),
 					},
 					'gram' => {
+						'' => q(Gramm),
 						'one' => q({0} g),
 						'other' => q({0} g),
 					},
 					'hectare' => {
+						'' => q(Hektar),
 						'one' => q({0} ha),
 						'other' => q({0} ha),
 					},
 					'hectopascal' => {
+						'' => q(Hektopascal),
 						'one' => q({0} hPa),
 						'other' => q({0} hPa),
 					},
 					'horsepower' => {
+						'' => q(Pferdestärke),
 						'one' => q({0} PS),
 						'other' => q({0} PS),
 					},
 					'hour' => {
+						'' => q(Schtunde),
 						'one' => q({0} h),
 						'other' => q({0} h),
 					},
 					'inch' => {
+						'' => q(Zoll),
 						'one' => q({0} Zoll),
 						'other' => q({0} Zoll),
 					},
 					'inch-hg' => {
+						'' => q(Zoll Quecksilbersüüle),
 						'one' => q({0} inHg),
 						'other' => q({0} inHg),
 					},
 					'kilogram' => {
+						'' => q(Kilogramm),
 						'one' => q({0} kg),
 						'other' => q({0} kg),
 					},
 					'kilometer' => {
+						'' => q(Kilometer),
 						'one' => q({0} km),
 						'other' => q({0} km),
 					},
 					'kilometer-per-hour' => {
+						'' => q(Kilometer pro Stund),
 						'one' => q({0} km/h),
 						'other' => q({0} km/h),
 					},
 					'kilowatt' => {
+						'' => q(Kilowatt),
 						'one' => q({0} kW),
 						'other' => q({0} kW),
 					},
 					'light-year' => {
+						'' => q(Liechtjahr),
 						'one' => q({0} Liechtjahr),
 						'other' => q({0} Liechtjahr),
 					},
 					'liter' => {
+						'' => q(Liter),
 						'one' => q({0} l),
 						'other' => q({0} l),
 					},
 					'meter' => {
+						'' => q(Meter),
 						'one' => q({0} m),
 						'other' => q({0} m),
 					},
 					'meter-per-second' => {
+						'' => q(Meter pro Sekunde),
 						'one' => q({0} m/s),
 						'other' => q({0} m/s),
 					},
 					'mile' => {
+						'' => q(Meile),
 						'one' => q({0} mi),
 						'other' => q({0} mi),
 					},
 					'mile-per-hour' => {
+						'' => q(Meile pro Stund),
 						'one' => q({0} mi/h),
 						'other' => q({0} mi/h),
 					},
 					'millibar' => {
+						'' => q(Millibar),
 						'one' => q({0} mbar),
 						'other' => q({0} mbar),
 					},
 					'millimeter' => {
+						'' => q(Millimeter),
 						'one' => q({0} mm),
 						'other' => q({0} mm),
 					},
 					'millisecond' => {
+						'' => q(Millisekunde),
 						'one' => q({0} ms),
 						'other' => q({0} ms),
 					},
 					'minute' => {
+						'' => q(Minuute),
 						'one' => q({0} min),
 						'other' => q({0} min),
 					},
+					'month' => {
+						'' => q(Mönet),
+					},
 					'ounce' => {
+						'' => q(Unze),
 						'one' => q({0} Unze),
 						'other' => q({0} Unze),
 					},
@@ -1615,40 +1698,55 @@ has 'units' => (
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(Pikometer),
 						'one' => q({0} pm),
 						'other' => q({0} pm),
 					},
 					'pound' => {
+						'' => q(Pfund),
 						'one' => q({0} Pfund),
 						'other' => q({0} Pfund),
 					},
 					'second' => {
+						'' => q(Sekunde),
 						'one' => q({0} s),
 						'other' => q({0} s),
 					},
 					'square-foot' => {
+						'' => q(Quadratfuess),
 						'one' => q({0} ft²),
 						'other' => q({0} ft²),
 					},
 					'square-kilometer' => {
+						'' => q(Quadratkilometer),
 						'one' => q({0} km²),
 						'other' => q({0} km²),
 					},
 					'square-meter' => {
+						'' => q(Quadratmeter),
 						'one' => q({0} m²),
 						'other' => q({0} m²),
 					},
 					'square-mile' => {
+						'' => q(Quadratmeile),
 						'one' => q({0} mi²),
 						'other' => q({0} mi²),
 					},
 					'watt' => {
+						'' => q(Watt),
 						'one' => q({0} W),
 						'other' => q({0} W),
 					},
+					'week' => {
+						'' => q(Wuche),
+					},
 					'yard' => {
+						'' => q(Yard),
 						'one' => q({0} yd),
 						'other' => q({0} yd),
+					},
+					'year' => {
+						'' => q(Jahr),
 					},
 				},
 			} }
@@ -1696,7 +1794,6 @@ has 'number_symbols' => (
 			'perMille' => q(‰),
 			'percentSign' => q(%),
 			'plusSign' => q(+),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -4025,7 +4122,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d.},
 			H => q{H},
 			HHmm => q{HH:mm},
@@ -4055,7 +4152,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d.},
 			H => q{H},
 			HHmm => q{HH:mm},
@@ -4101,7 +4198,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH-HH},
 			},
@@ -4199,7 +4296,7 @@ has 'datetime_formats_interval' => (
 				y => q{dd.MM.y - dd.MM.y},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH-HH},
 			},
@@ -4438,8 +4535,15 @@ has 'time_zone_names' => (
 		'America/St_Vincent' => {
 			exemplarCity => q#St. Vincent#,
 		},
+		'America_Central' => {
+			long => {
+				'daylight' => q(Amerika-Zentraal Summerziit),
+				'generic' => q(Amerika-Zentraal Ziit),
+				'standard' => q(Amerika-Zentraal Schtandardziit),
+			},
+		},
 		'Antarctica/DumontDUrville' => {
-			exemplarCity => q#Dumont D'Urville#,
+			exemplarCity => q#Dumont D’Urville#,
 		},
 		'Antarctica/Vostok' => {
 			exemplarCity => q#Woschtok#,

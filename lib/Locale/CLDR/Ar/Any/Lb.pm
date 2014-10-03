@@ -1,11 +1,11 @@
 package Locale::CLDR::Ar::Any::Lb;
 # This file auto generated from Data\common\main\ar_LB.xml
-#	on Fri 20 Jun 10:49:32 pm GMT
-# XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
+#	on Thu  2 Oct 10:13:59 am GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -36,16 +36,7 @@ has 'number_symbols' => (
 	default		=> sub { {
 		'latn' => {
 			'decimal' => q(,),
-			'exponential' => q(),
 			'group' => q(.),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );

@@ -1,11 +1,11 @@
 package Locale::CLDR::Jgo;
 # This file auto generated from Data\common\main\jgo.xml
-#	on Sat 21 Jun 12:00:29 am GMT
-# XML file generated 2014-02-24 11:09:08 -0600 (Mon, 24 Feb 2014)
+#	on Thu  2 Oct 11:56:28 am GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -49,7 +49,7 @@ has 'display_name_script' => (
 			my %scripts = (
 			'Latn' => 'mík -ŋwaꞌnɛ yi ɛ́ líŋɛ́nɛ Latɛ̂ŋ',
  			'Zxxx' => 'ntúu yi pɛ́ ká ŋwaꞌnε',
- 			'Zzzz' => 'ntɛ-ŋwaꞌnɛ yí pɛ́ ká kɛ́ jí',
+ 			'Zzzz' => 'ntɛ-ŋwaꞌnɛ yí pɛ́ ká kɛ́ jí',
 
 			);
 			if ( @_ ) {
@@ -247,24 +247,46 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'day' => {
+						'' => q(lɛ́Ꞌ),
 						'one' => q({0} lɛ́Ꞌ),
 						'other' => q({0} lɛ́Ꞌ),
 					},
 					'hour' => {
+						'' => q(háwa),
 						'one' => q({0} háwa),
 						'other' => q({0} háwa),
 					},
 					'minute' => {
+						'' => q(minút),
 						'one' => q({0} minút),
 						'other' => q({0} minút),
 					},
 					'month' => {
+						'' => q(pɛsaŋ),
 						'one' => q(pɛsaŋ {0}),
 						'other' => q(pɛsaŋ {0}),
 					},
 					'year' => {
+						'' => q(ŋguꞋ),
 						'one' => q(ŋguꞋ {0}),
 						'other' => q(ŋguꞋ {0}),
+					},
+				},
+				'short' => {
+					'day' => {
+						'' => q(lɛ́Ꞌ),
+					},
+					'hour' => {
+						'' => q(háwa),
+					},
+					'minute' => {
+						'' => q(minút),
+					},
+					'month' => {
+						'' => q(pɛsaŋ),
+					},
+					'year' => {
+						'' => q(ŋguꞋ),
 					},
 				},
 			} }
@@ -326,7 +348,6 @@ has 'number_symbols' => (
 			'perMille' => q(‰),
 			'percentSign' => q(%),
 			'plusSign' => q(+),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );

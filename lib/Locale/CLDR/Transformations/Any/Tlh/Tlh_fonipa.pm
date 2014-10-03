@@ -1,11 +1,11 @@
 package Locale::CLDR::Transformations::Any::Tlh::Tlh_fonipa;
 # This file auto generated from Data\common\transforms\tlh-tlh_FONIPA.xml
-#	on Fri 20 Jun 10:43:45 pm GMT
+#	on Thu  2 Oct 10:06:38 am GMT
 # XML file generated 2014-02-27 00:58:10 -0600 (Thu, 27 Feb 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';

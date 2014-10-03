@@ -1,11 +1,11 @@
 package Locale::CLDR::De::Any::At;
 # This file auto generated from Data\common\main\de_AT.xml
-#	on Fri 20 Jun 11:13:31 pm GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct 10:47:43 am GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -148,30 +148,30 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'generic') {
-				return 'noon' if $time == 1200;
-				return 'evening' if $time >= 1700
-					&& $time < 2100;
-				return 'earlyMorning' if $time >= 000
-					&& $time < 900;
-				return 'morning' if $time >= 900
-					&& $time < 1200;
+			if ($_ eq 'gregorian') {
 				return 'night' if $time >= 2100
 					&& $time < 2400;
+				return 'morning' if $time >= 900
+					&& $time < 1200;
+				return 'noon' if $time == 1200;
+				return 'earlyMorning' if $time >= 000
+					&& $time < 900;
+				return 'evening' if $time >= 1700
+					&& $time < 2100;
 				return 'afternoon' if $time > 1200
 					&& $time < 1700;
 			last SWITCH;
 			}
-			if ($_ eq 'gregorian') {
-				return 'noon' if $time == 1200;
-				return 'evening' if $time >= 1700
-					&& $time < 2100;
-				return 'earlyMorning' if $time >= 000
-					&& $time < 900;
-				return 'morning' if $time >= 900
-					&& $time < 1200;
+			if ($_ eq 'generic') {
 				return 'night' if $time >= 2100
 					&& $time < 2400;
+				return 'morning' if $time >= 900
+					&& $time < 1200;
+				return 'noon' if $time == 1200;
+				return 'earlyMorning' if $time >= 000
+					&& $time < 900;
+				return 'evening' if $time >= 1700
+					&& $time < 2100;
 				return 'afternoon' if $time > 1200
 					&& $time < 1700;
 			last SWITCH;
@@ -204,6 +204,7 @@ has 'date_formats' => (
 		'gregorian' => {
 			'full' => q{EEEE, dd. MMMM y},
 			'long' => q{dd. MMMM y},
+			'medium' => q{dd. MMM y},
 		},
 	} },
 );

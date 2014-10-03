@@ -1,11 +1,11 @@
 package Locale::CLDR::Rn;
 # This file auto generated from Data\common\main\rn.xml
-#	on Sat 21 Jun 12:54:22 am GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct  1:27:04 pm GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -84,13 +84,13 @@ has 'display_name_territory' => (
 	default		=> sub { 
 		{
 			'AD' => 'Andora',
- 			'AE' => 'Leta Zunze Ubumwe z\'Abarabu',
+ 			'AE' => 'Leta Zunze Ubumwe z’Abarabu',
  			'AF' => 'Afuganisitani',
  			'AG' => 'Antigwa na Baribuda',
  			'AI' => 'Angwila',
  			'AL' => 'Alubaniya',
  			'AM' => 'Arumeniya',
- 			'AN' => 'Antiye y\'Abaholandi',
+ 			'AN' => 'Antiye y’Abaholandi',
  			'AO' => 'Angola',
  			'AR' => 'Arijantine',
  			'AS' => 'Samowa nyamerika',
@@ -153,7 +153,7 @@ has 'display_name_territory' => (
  			'GB' => 'Ubwongereza',
  			'GD' => 'Gerenada',
  			'GE' => 'Jeworujiya',
- 			'GF' => 'Gwayana y\'Abafaransa',
+ 			'GF' => 'Gwayana y’Abafaransa',
  			'GH' => 'Gana',
  			'GI' => 'Juburalitari',
  			'GL' => 'Gurunilandi',
@@ -174,7 +174,7 @@ has 'display_name_territory' => (
  			'IE' => 'Irilandi',
  			'IL' => 'Isiraheli',
  			'IN' => 'Ubuhindi',
- 			'IO' => 'Intara y\'Ubwongereza yo mu birwa by\'Abahindi',
+ 			'IO' => 'Intara y’Ubwongereza yo mu birwa by’Abahindi',
  			'IQ' => 'Iraki',
  			'IR' => 'Irani',
  			'IS' => 'Ayisilandi',
@@ -188,8 +188,8 @@ has 'display_name_territory' => (
  			'KI' => 'Kiribati',
  			'KM' => 'Izinga rya Komore',
  			'KN' => 'Sekitsi na Nevisi',
- 			'KP' => 'Koreya y\'amajaruguru',
- 			'KR' => 'Koreya y\'amajepfo',
+ 			'KP' => 'Koreya y’amajaruguru',
+ 			'KR' => 'Koreya y’amajepfo',
  			'KW' => 'Koweti',
  			'KY' => 'Ibirwa bya Keyimani',
  			'KZ' => 'Kazakisitani',
@@ -239,7 +239,7 @@ has 'display_name_territory' => (
  			'OM' => 'Omani',
  			'PA' => 'Panama',
  			'PE' => 'Peru',
- 			'PF' => 'Polineziya y\'Abafaransa',
+ 			'PF' => 'Polineziya y’Abafaransa',
  			'PG' => 'Papuwa Niyugineya',
  			'PH' => 'Amazinga ya Filipine',
  			'PK' => 'Pakisitani',
@@ -280,7 +280,7 @@ has 'display_name_territory' => (
  			'TH' => 'Tayilandi',
  			'TJ' => 'Tajikisitani',
  			'TK' => 'Tokelawu',
- 			'TL' => 'Timoru y\'iburasirazuba',
+ 			'TL' => 'Timoru y’iburasirazuba',
  			'TM' => 'Turukumenisitani',
  			'TN' => 'Tuniziya',
  			'TO' => 'Tonga',
@@ -297,15 +297,15 @@ has 'display_name_territory' => (
  			'VA' => 'Umurwa wa Vatikani',
  			'VC' => 'Sevensa na Gerenadine',
  			'VE' => 'Venezuwela',
- 			'VG' => 'Ibirwa by\'isugi by\'Abongereza',
- 			'VI' => 'Amazinga y\'Isugi y\'Abanyamerika',
+ 			'VG' => 'Ibirwa by’isugi by’Abongereza',
+ 			'VI' => 'Amazinga y’Isugi y’Abanyamerika',
  			'VN' => 'Viyetinamu',
  			'VU' => 'Vanuwatu',
  			'WF' => 'Walisi na Futuna',
  			'WS' => 'Samowa',
  			'YE' => 'Yemeni',
  			'YT' => 'Mayote',
- 			'ZA' => 'Afurika y\'Epfo',
+ 			'ZA' => 'Afurika y’Epfo',
  			'ZM' => 'Zambiya',
  			'ZW' => 'Zimbabwe',
 
@@ -382,16 +382,7 @@ has 'number_symbols' => (
 	default		=> sub { {
 		'latn' => {
 			'decimal' => q(,),
-			'exponential' => q(),
 			'group' => q(.),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -443,7 +434,7 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'currency' => q(Idiramu ryo muri Leta Zunze Ubumwe z'Abarabu),
+				'currency' => q(Idiramu ryo muri Leta Zunze Ubumwe z’Abarabu),
 			},
 		},
 		'AOA' => {
@@ -458,13 +449,13 @@ has 'curriencies' => (
 		},
 		'BHD' => {
 			display_name => {
-				'currency' => q(Idinari ry'iribahireyini),
+				'currency' => q(Idinari ry’iribahireyini),
 			},
 		},
 		'BIF' => {
 			symbol => 'FBu',
 			display_name => {
-				'currency' => q(Ifaranga ry'Uburundi),
+				'currency' => q(Ifaranga ry’Uburundi),
 			},
 		},
 		'BWP' => {
@@ -484,7 +475,7 @@ has 'curriencies' => (
 		},
 		'CHF' => {
 			display_name => {
-				'currency' => q(Ifaranga ry'Ubusuwisi),
+				'currency' => q(Ifaranga ry’Ubusuwisi),
 			},
 		},
 		'CNY' => {
@@ -554,7 +545,7 @@ has 'curriencies' => (
 		},
 		'JPY' => {
 			display_name => {
-				'currency' => q(Iyeni ry'Ubuyapani),
+				'currency' => q(Iyeni ry’Ubuyapani),
 			},
 		},
 		'KES' => {
@@ -624,7 +615,7 @@ has 'curriencies' => (
 		},
 		'RWF' => {
 			display_name => {
-				'currency' => q(Ifaranga ry'u Rwanda),
+				'currency' => q(Ifaranga ry’u Rwanda),
 			},
 		},
 		'SAR' => {
@@ -679,17 +670,17 @@ has 'curriencies' => (
 		},
 		'UGX' => {
 			display_name => {
-				'currency' => q(Ishilingi ry'Ubugande),
+				'currency' => q(Ishilingi ry’Ubugande),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'currency' => q(Idolari ry'abanyamerika),
+				'currency' => q(Idolari ry’abanyamerika),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'currency' => q(Irandi ryo muri Afurika y'Epfo),
+				'currency' => q(Irandi ryo muri Afurika y’Epfo),
 			},
 		},
 		'ZMK' => {
@@ -784,7 +775,7 @@ has 'calendar_days' => (
 						thu => 'Ku wa kane',
 						fri => 'Ku wa gatanu',
 						sat => 'Ku wa gatandatu',
-						sun => 'Ku w\'indwi'
+						sun => 'Ku w’indwi'
 					},
 				},
 			},
@@ -803,10 +794,10 @@ has 'calendar_quarters' => (
 						2 => 'I3',
 						3 => 'I4'
 					},
-					wide => {0 => 'Igice ca mbere c\'umwaka',
-						1 => 'Igice ca kabiri c\'umwaka',
-						2 => 'Igice ca gatatu c\'umwaka',
-						3 => 'Igice ca kane c\'umwaka'
+					wide => {0 => 'Igice ca mbere c’umwaka',
+						1 => 'Igice ca kabiri c’umwaka',
+						2 => 'Igice ca gatatu c’umwaka',
+						3 => 'Igice ca kane c’umwaka'
 					},
 				},
 			},
@@ -821,8 +812,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{Z.MW.},
 					'am' => q{Z.MU.},
+					'pm' => q{Z.MW.},
 				},
 			},
 		},

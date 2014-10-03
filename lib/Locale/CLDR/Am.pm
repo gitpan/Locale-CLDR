@@ -1,11 +1,11 @@
 package Locale::CLDR::Am;
 # This file auto generated from Data\common\main\am.xml
-#	on Fri 20 Jun 10:44:47 pm GMT
-# XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
+#	on Thu  2 Oct 10:09:01 am GMT
+# XML file generated 2014-08-14 15:10:07 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -271,36 +271,49 @@ has 'display_name_language' => (
  				'ab' => 'አብሐዚኛ',
  				'ach' => 'አኮሊኛ',
  				'af' => 'አፍሪካንኛ',
+ 				'agq' => 'አገም',
  				'ak' => 'አካንኛ',
  				'am' => 'አማርኛ',
- 				'ar' => 'ዐርቢኛ',
- 				'ar_001' => 'ዘመናዊ መደበኛ አረብኛ',
+ 				'ar' => 'ዓረብኛ',
+ 				'ar_001' => 'ዘመናዊ መደበኛ ዓረብኛ',
+ 				'arn' => 'ማፑቼ',
  				'as' => 'አሳሜዛዊ',
+ 				'asa' => 'አሱ',
  				'ay' => 'አያማርኛ',
  				'az' => 'አዘርባጃንኛ',
  				'az@alt=short' => 'አዜሪ',
  				'ba' => 'ባስኪርኛ',
  				'be' => 'ቤላራሻኛ',
  				'bem' => 'ቤምባ',
+ 				'bez' => 'ቤና',
  				'bg' => 'ቡልጋሪኛ',
  				'bi' => 'ቢስላምኛ',
+ 				'bm' => 'ባምባርኛ',
  				'bn' => 'ቤንጋሊኛ',
  				'bo' => 'ቲቤታንኛ',
  				'br' => 'ብሬቶንኛ',
+ 				'brx' => 'ቦዶ',
  				'bs' => 'ቦስኒያንኛ',
  				'byn' => 'ብሊን',
  				'ca' => 'ካታላንኛ',
+ 				'cgg' => 'ቺጋኛ',
  				'chr' => 'ቼሮኬኛ',
  				'ckb' => 'የሶራኒ ኩርድኛ',
  				'co' => 'ኮርሲካኛ',
  				'cs' => 'ቼክኛ',
  				'cy' => 'ወልሽ',
  				'da' => 'ዴኒሽ',
+ 				'dav' => 'ታይታኛ',
  				'de' => 'ጀርመን',
  				'de_AT' => 'የኦስትሪያ ጀርመን',
  				'de_CH' => 'የስዊዝ ከፍተኛ ጀርመንኛ',
+ 				'dje' => 'ዛርማኛ',
+ 				'dsb' => 'የታችኛው ሶርቢያንኛ',
+ 				'dua' => 'ዱዋላኛ',
  				'dv' => 'ዲቬህ',
+ 				'dyo' => 'ጆላ ፎንያኛ',
  				'dz' => 'ድዞንግኻኛ',
+ 				'ebu' => 'ኢቦኛ',
  				'ee' => 'ኢዊ',
  				'efi' => 'ኤፊክ',
  				'el' => 'ግሪክኛ',
@@ -328,17 +341,21 @@ has 'display_name_language' => (
  				'fy' => 'የምዕራብ ፍሪስኛ',
  				'ga' => 'አይሪሽ',
  				'gaa' => 'ጋ',
+ 				'gag' => 'ጋጉዝኛ',
  				'gd' => 'እስኮትስ ጌልክኛ',
  				'gez' => 'ግዕዝኛ',
- 				'gl' => 'ጌሊክ',
+ 				'gl' => 'ጋሊሺያ',
  				'gn' => 'ጓራኒኛ',
  				'gsw' => 'የስዊዝ ጀርመን',
  				'gu' => 'ጉጃርቲኛ',
+ 				'guz' => 'ጉስሊኛ',
+ 				'gv' => 'ማንክስኛ',
  				'ha' => 'ሃውሳኛ',
  				'haw' => 'ሃዊያኛ',
  				'he' => 'ዕብራስጥ',
  				'hi' => 'ሒንዱኛ',
  				'hr' => 'ክሮሽያንኛ',
+ 				'hsb' => 'የላይኛው ሶርቢያንኛ',
  				'ht' => 'ሃይትኛ',
  				'hu' => 'ሀንጋሪኛ',
  				'hy' => 'አርመናዊ',
@@ -346,50 +363,80 @@ has 'display_name_language' => (
  				'id' => 'ኢንዶኔዥኛ',
  				'ie' => 'እንተርሊንግወ',
  				'ig' => 'ኢግቦኛ',
+ 				'ii' => 'ሲቹንዪኛ',
  				'ik' => 'እኑፒያቅኛ',
  				'is' => 'አይስላንድኛ',
  				'it' => 'ጣሊያንኛ',
  				'iu' => 'እኑክቲቱትኛ',
  				'ja' => 'ጃፓንኛ',
+ 				'jgo' => 'ንጎባኛ',
+ 				'jmc' => 'ማቻሜኛ',
  				'jv' => 'ጃቫንኛ',
  				'ka' => 'ጆርጂያን',
+ 				'kab' => 'ካብይል',
+ 				'kam' => 'ካምባ',
+ 				'kde' => 'ማኮንዴ',
+ 				'kea' => 'ካቡቨርዲያኑ',
  				'kg' => 'ኮንጎኛ',
+ 				'khq' => 'ኮይራ ቺኒ',
+ 				'ki' => 'ኪኩዩ',
  				'kk' => 'ካዛክኛ',
  				'kl' => 'ካላሊሱትኛ',
+ 				'kln' => 'ካለንጂን',
  				'km' => 'ክመርኛ ማእከላዊ',
  				'kn' => 'ካናዳኛ',
  				'ko' => 'ኮሪያኛ',
+ 				'koi' => 'ኮሚ ፔርምያክ',
+ 				'kok' => 'ኮካኒ',
  				'ks' => 'ካሽሚርኛ',
+ 				'ksb' => 'ሻምባላ',
+ 				'ksf' => 'ባፊያ',
  				'ku' => 'ኩርድሽኛ',
+ 				'kw' => 'ኮርኒሽ',
  				'ky' => 'ኪርጊዝኛ',
  				'la' => 'ላቲንኛ',
+ 				'lag' => 'ላንጊ',
  				'lb' => 'ሉክዘምበርገርኛ',
  				'lg' => 'ጋንዳኛ',
+ 				'lkt' => 'ላኮታ',
  				'ln' => 'ሊንጋላኛ',
  				'lo' => 'ላውስኛ',
  				'loz' => 'ሎዚኛ',
  				'lt' => 'ሉቴንያንኛ',
+ 				'lu' => 'ሉባ ካታንጋ',
  				'lua' => 'ሉባ-ሉሏ',
+ 				'luo' => 'ሉኦ',
+ 				'luy' => 'ሉዪያ',
  				'lv' => 'ላትቪያን',
+ 				'mas' => 'ማሳይ',
+ 				'mer' => 'ሜሩ',
  				'mfe' => 'ሞሪሲየኛ',
  				'mg' => 'ማላጋስኛ',
+ 				'mgh' => 'ማኩዋ ሜቶ',
+ 				'mgo' => 'ሜታ',
  				'mi' => 'ማዮሪኛ',
  				'mk' => 'ማሴዶንኛ',
  				'ml' => 'ማላያላምኛ',
  				'mn' => 'ሞንጎላዊኛ',
+ 				'moh' => 'ሞሃውክ',
  				'mr' => 'ማራቲኛ',
  				'ms' => 'ማላይኛ',
  				'mt' => 'ማልቲስኛ',
+ 				'mua' => 'ሙንዳንግ',
  				'my' => 'ቡርማኛ',
  				'na' => 'ናኡሩ',
+ 				'naq' => 'ናማ',
  				'nb' => 'የኖርዌይ ቦክማል',
  				'nd' => 'ሰሜን ንዴብሌ',
  				'ne' => 'ኔፓሊኛ',
  				'nl' => 'ደች',
  				'nl_BE' => 'ፍሌሚሽ',
+ 				'nmg' => 'ክዋሲዮ',
  				'nn' => 'የኖርዌይ ናይኖርስክ',
  				'no' => 'ኖርዌጂያን',
+ 				'nqo' => 'ንኮ',
  				'nso' => 'ሰሜናዊ ሶቶ',
+ 				'nus' => 'ኑዌር',
  				'ny' => 'ንያንጃ',
  				'nyn' => 'ኒያንኮልኛ',
  				'oc' => 'ኦኪታንኛ',
@@ -404,22 +451,34 @@ has 'display_name_language' => (
  				'pt_BR' => 'የብራዚል ፖርቹጋልኛ',
  				'pt_PT' => 'የአውሮፓ ፖርቹጋልኛ',
  				'qu' => 'ኵቿኛ',
+ 				'quc' => 'ኪቼ',
  				'rm' => 'ሮማንሽ',
  				'rn' => 'ሩንዲኛ',
  				'ro' => 'ሮማኒያን',
  				'ro_MD' => 'ሞልዳቫዊና',
+ 				'rof' => 'ሮምቦ',
  				'ru' => 'ራሽኛ',
  				'rw' => 'ኪንያርዋንድኛ',
+ 				'rwk' => 'ርዋ',
  				'sa' => 'ሳንስክሪትኛ',
+ 				'saq' => 'ሳምቡሩ',
+ 				'sbp' => 'ሳንጉ',
  				'sd' => 'ሲንድሂኛ',
  				'se' => 'ሰሜናዊ ሳሚ',
+ 				'seh' => 'ሴና',
+ 				'ses' => 'ኮይራቦሮ ሴኒ',
  				'sg' => 'ሳንጎኛ',
  				'sh' => 'ሰርቦ-ክሮኤሽያኛ',
+ 				'shi' => 'ታቼልሂት',
  				'si' => 'ሲንሃልኛ',
  				'sid' => 'ሲዳምኛ',
  				'sk' => 'ስሎቫክኛ',
  				'sl' => 'ስሎቪኛ',
  				'sm' => 'ሳሞአኛ',
+ 				'sma' => 'ደቡባዊ ሳሚ',
+ 				'smj' => 'ሉሌ ሳሚ',
+ 				'smn' => 'ኢናሪ ሳሚ',
+ 				'sms' => 'ስኮልት ሳሚ',
  				'sn' => 'ሾናኛ',
  				'so' => 'ሱማልኛ',
  				'sq' => 'ልቤኒኛ',
@@ -429,8 +488,10 @@ has 'display_name_language' => (
  				'su' => 'ሱዳንኛ',
  				'sv' => 'ስዊድንኛ',
  				'sw' => 'ስዋሂሊኛ',
+ 				'swc' => 'ኮንጎ ስዋሂሊ',
  				'ta' => 'ታሚልኛ',
  				'te' => 'ተሉጉኛ',
+ 				'teo' => 'ቴሶ',
  				'tet' => 'ቴተም',
  				'tg' => 'ታጂኪኛ',
  				'th' => 'ታይኛ',
@@ -447,22 +508,27 @@ has 'display_name_language' => (
  				'tt' => 'ታታርኛ',
  				'tum' => 'ቱምቡካ',
  				'tw' => 'ትዊኛ',
+ 				'twq' => 'ታሳዋቅ',
  				'ty' => 'ታሂታንኛ',
+ 				'tzm' => 'መካከለኛ አትላስ ታማዚግት',
  				'ug' => 'ኡዊግሁርኛ',
  				'ug@alt=variant' => 'ኡይገር',
  				'uk' => 'ዩክሬንኛ',
  				'und' => 'ያልታወቀ ቋንቋ',
  				'ur' => 'ኡርዱኛ',
  				'uz' => 'ኡዝቤክኛ',
+ 				'vai' => 'ቫይ',
  				've' => 'ቬንዳ',
  				'vi' => 'ቪትናምኛ',
  				'vo' => 'ቮላፑክኛ',
+ 				'vun' => 'ቩንጆ',
  				'wo' => 'ዎሎፍኛ',
  				'xh' => 'ዞሳኛ',
+ 				'xog' => 'ሶጋ',
  				'yi' => 'ይዲሽኛ',
  				'yo' => 'ዮሩባዊኛ',
  				'za' => 'ዡዋንግኛ',
- 				'zgh' => 'zgh',
+ 				'zgh' => 'መደበኛ የሞሮኮ ታማዚግት',
  				'zh' => 'ቻይንኛ',
  				'zh_Hans' => 'ቀለል ያለ ቻይንኛ',
  				'zh_Hant' => 'ባህላዊ ቻይንኛ',
@@ -526,7 +592,7 @@ has 'display_name_script' => (
  			'Lina' => 'ሊኒያር ኤ',
  			'Linb' => 'ሊኒያር ቢ',
  			'Mlym' => 'ማላያልም',
- 			'Mong' => 'ሞንጎሊያዊ',
+ 			'Mong' => 'ሞንጎሊያኛ',
  			'Mymr' => 'ምያንማር',
  			'Ogam' => 'ኦግሀም',
  			'Orya' => 'ኦሪያ',
@@ -539,7 +605,7 @@ has 'display_name_script' => (
  			'Tale' => 'ታኢ ለ',
  			'Talu' => 'አዲስ ታኢ ሉ',
  			'Taml' => 'ታሚል',
- 			'Telu' => 'ተልጉ',
+ 			'Telu' => 'ተሉጉ',
  			'Tglg' => 'ታጋሎግ',
  			'Thaa' => 'ታና',
  			'Thai' => 'ታይ',
@@ -612,7 +678,7 @@ has 'display_name_territory' => (
  			'AR' => 'አርጀንቲና',
  			'AS' => 'የአሜሪካ ሳሞአ',
  			'AT' => 'ኦስትሪያ',
- 			'AU' => 'አውስትሬሊያ',
+ 			'AU' => 'አውስትራልያ',
  			'AW' => 'አሩባ',
  			'AX' => 'የአላንድ ደሴቶች',
  			'AZ' => 'አዘርባጃን',
@@ -678,7 +744,7 @@ has 'display_name_territory' => (
  			'EU' => 'የአውሮፓ ህብረት',
  			'FI' => 'ፊንላንድ',
  			'FJ' => 'ፊጂ',
- 			'FK' => 'የፎልክላንድ ደሴቶች',
+ 			'FK' => 'የፎክላንድ ደሴቶች',
  			'FK@alt=variant' => 'ፎክላንድ ደሴቶች (ኢስላስ ማልቪናስ)',
  			'FM' => 'ሚክሮኔዢያ',
  			'FO' => 'የፋሮ ደሴቶች',
@@ -691,7 +757,7 @@ has 'display_name_territory' => (
  			'GF' => 'የፈረንሳይ ጉዊአና',
  			'GG' => 'ጉርነሲ',
  			'GH' => 'ጋና',
- 			'GI' => 'ጊብራልታር',
+ 			'GI' => 'ጂብራልተር',
  			'GL' => 'ግሪንላንድ',
  			'GM' => 'ጋምቢያ',
  			'GN' => 'ጊኒ',
@@ -754,7 +820,7 @@ has 'display_name_territory' => (
  			'MF' => 'ሴንት ማርቲን',
  			'MG' => 'ማዳጋስካር',
  			'MH' => 'ማርሻል አይላንድ',
- 			'MK' => 'ማከዶኒያ',
+ 			'MK' => 'መቄዶንያ',
  			'MK@alt=variant' => 'መቄዶንያ (የቀድሞ የዩጎስላቭ መቄዶንያ ሪፐብሊክ)',
  			'ML' => 'ማሊ',
  			'MM' => 'ማይናማር(በርማ)',
@@ -766,7 +832,7 @@ has 'display_name_territory' => (
  			'MR' => 'ሞሪቴኒያ',
  			'MS' => 'ሞንትሴራት',
  			'MT' => 'ማልታ',
- 			'MU' => 'ማሩሸስ',
+ 			'MU' => 'ሞሪሸስ',
  			'MV' => 'ማልዲቭስ',
  			'MW' => 'ማላዊ',
  			'MX' => 'ሜክሲኮ',
@@ -850,13 +916,13 @@ has 'display_name_territory' => (
  			'UG' => 'ዩጋንዳ',
  			'UM' => 'የዩ ኤስ ጠረፍ ላይ ያሉ ደሴቶች',
  			'US' => 'ዩናይትድ ስቴትስ',
- 			'US@alt=short' => 'US',
+ 			'US@alt=short' => 'ዩ ኤስ',
  			'UY' => 'ኡራጓይ',
- 			'UZ' => 'ዩዝበኪስታን',
+ 			'UZ' => 'ኡዝቤኪስታን',
  			'VA' => 'ቫቲካን ከተማ',
  			'VC' => 'ቅዱስ ቪንሴንት እና ግሬናዲንስ',
  			'VE' => 'ቬንዙዌላ',
- 			'VG' => 'የእንግሊዝ ድንግል ደሴቶች',
+ 			'VG' => 'የእንግሊዝ ቨርጂን ደሴቶች',
  			'VI' => 'የአሜሪካ ቨርጂን ደሴቶች',
  			'VN' => 'ቬትናም',
  			'VU' => 'ቫኑአቱ',
@@ -911,6 +977,7 @@ has 'display_name_type' => (
  				'buddhist' => q{የቡዲስት ቀን አቆጣጠር},
  				'chinese' => q{የቻይና የቀን አቆጣጠር},
  				'coptic' => q{የኮፕቲክ የቀን አቆጣጠር},
+ 				'dangi' => q{የዳንጊ የቀን አቆጣጠር},
  				'ethiopic' => q{የኢትዮጵያ የቀን አቆጣጠር},
  				'ethiopic-amete-alem' => q{የኢትዮፒክ አመተ አለም የቀን አቆጣጠር},
  				'gregorian' => q{የግሪጎሪያን ቀን አቆጣጠር},
@@ -918,6 +985,7 @@ has 'display_name_type' => (
  				'indian' => q{የህንድ ብሔራዊ የቀን አቆጣጠር},
  				'islamic' => q{የእስላማዊ የሰዓት አቆጣጠር},
  				'islamic-civil' => q{የእስላም ህዝባዊ የቀን አቆጣጠር},
+ 				'iso8601' => q{ISO-8601 የቀን አቆጣጠር},
  				'japanese' => q{የጃፓን የቀን አቆጣጠር},
  				'persian' => q{የፐርሽያ የቀን አቆጣጠር},
  				'roc' => q{የሚንጉ የቀን አቆጣጠር},
@@ -954,6 +1022,7 @@ has 'display_name_type' => (
  				'reformed' => q{ዳግም የተፈጠረ የድርድር ቅደም ተከተል},
  				'search' => q{ለጠቅላላ ጉዳይ ፍለጋ},
  				'searchjl' => q{በሃንጉል የመጀመሪያ ተነባቢ ፈልግ},
+ 				'standard' => q{መደበኛ},
  				'stroke' => q{የበትር ድርድር ቅደም ተከተል},
  				'traditional' => q{ባህላዊ የድርድር ቅደም ተከተል},
  				'unihan' => q{የመሰረታዊ በትር ድርድር ቅደም ተከተል},
@@ -1099,6 +1168,9 @@ has 'ellipsis' => (
 			'final' => '{0}…',
 			'initial' => '…{0}',
 			'medial' => '{0}…{1}',
+			'word-final' => '{0} …',
+			'word-initial' => '… {0}',
+			'word-medial' => '{0} … {1}',
 		};
 	},
 );
@@ -1156,189 +1228,590 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'acre' => {
+						'' => q(ኤክር),
 						'one' => q({0} ኤክር),
 						'other' => q({0} ኤክር),
 					},
+					'acre-foot' => {
+						'' => q(ac ft),
+						'one' => q({0} ac ft),
+						'other' => q({0} ac ft),
+					},
+					'ampere' => {
+						'' => q(amp),
+						'one' => q({0} A),
+						'other' => q({0} A),
+					},
 					'arc-minute' => {
+						'' => q(ደቂቃ),
 						'one' => q({0} ደቂቃ),
 						'other' => q({0} ደቂቃ),
 					},
 					'arc-second' => {
+						'' => q(ሰከንድ),
 						'one' => q({0} ሰከንድ),
 						'other' => q({0} ሰከንድ),
 					},
+					'astronomical-unit' => {
+						'' => q(au),
+						'one' => q({0} au),
+						'other' => q({0} au),
+					},
+					'bit' => {
+						'' => q(ቢት),
+						'one' => q({0} ቢት),
+						'other' => q({0} ቢት),
+					},
+					'byte' => {
+						'' => q(ባይት),
+						'one' => q({0} ባይት),
+						'other' => q({0} ባይት),
+					},
+					'calorie' => {
+						'' => q(cal),
+						'one' => q({0} cal),
+						'other' => q({0} cal),
+					},
+					'carat' => {
+						'' => q(CD),
+						'one' => q({0} CD),
+						'other' => q({0} CD),
+					},
 					'celsius' => {
+						'' => q(ዲግሪ ሴልሺየስ),
 						'one' => q({0} ዲግሪ ሴልሺየስ),
 						'other' => q({0} ዲግሪ ሴልሺየስ),
 					},
+					'centiliter' => {
+						'' => q(cL),
+						'one' => q({0} cL),
+						'other' => q({0} cL),
+					},
 					'centimeter' => {
+						'' => q(ሴንቲሜትር),
 						'one' => q({0} ሴንቲሜትር),
 						'other' => q({0} ሴንቲሜትር),
 					},
+					'cubic-centimeter' => {
+						'' => q(cm³),
+						'one' => q({0} cm³),
+						'other' => q({0} cm³),
+					},
+					'cubic-foot' => {
+						'' => q(ft³),
+						'one' => q({0} ft³),
+						'other' => q({0} ft³),
+					},
+					'cubic-inch' => {
+						'' => q(in³),
+						'one' => q({0} in³),
+						'other' => q({0} in³),
+					},
 					'cubic-kilometer' => {
+						'' => q(ኩቢክ ኪሎሜትር),
 						'one' => q({0} ኩቢክ ኪሎሜትር),
 						'other' => q({0} ኩቢክ ኪሎሜትር),
 					},
+					'cubic-meter' => {
+						'' => q(m³),
+						'one' => q({0} m³),
+						'other' => q({0} m³),
+					},
 					'cubic-mile' => {
+						'' => q(ኩቢክ ማይል),
 						'one' => q({0} ኩቢክ ማይል),
 						'other' => q({0} ኩቢክ ማይል),
 					},
+					'cubic-yard' => {
+						'' => q(yd³),
+						'one' => q({0} yd³),
+						'other' => q({0} yd³),
+					},
+					'cup' => {
+						'' => q(cup),
+						'one' => q({0} c),
+						'other' => q({0} c),
+					},
 					'day' => {
+						'' => q(ቀናት),
 						'one' => q({0} ቀናት),
 						'other' => q({0} ቀናት),
 					},
+					'deciliter' => {
+						'' => q(dL),
+						'one' => q({0} dL),
+						'other' => q({0} dL),
+					},
+					'decimeter' => {
+						'' => q(dm),
+						'one' => q({0} dm),
+						'other' => q({0} dm),
+					},
 					'degree' => {
+						'' => q(ዲግሪ),
 						'one' => q({0} ዲግሪ),
 						'other' => q({0} ዲግሪ),
 					},
 					'fahrenheit' => {
+						'' => q(ዲግሪ ፋራንሃይት),
 						'one' => q({0} ዲግሪ ፋራንሃይት),
 						'other' => q({0} ዲግሪ ፋራንሃይት),
 					},
+					'fluid-ounce' => {
+						'' => q(fl oz),
+						'one' => q({0} fl oz),
+						'other' => q({0} fl oz),
+					},
+					'foodcalorie' => {
+						'' => q(Cal),
+						'one' => q({0} Cal),
+						'other' => q({0} Cal),
+					},
 					'foot' => {
+						'' => q(ጫማ),
 						'one' => q({0} ጫማ),
 						'other' => q({0} ጫማ),
 					},
 					'g-force' => {
+						'' => q(ጂ-ኃይል),
 						'one' => q({0} ጂ-ኃይል),
 						'other' => q({0} ጂ-ኃይል),
 					},
+					'gallon' => {
+						'' => q(gal),
+						'one' => q({0} gal),
+						'other' => q({0} gal),
+					},
+					'gigabit' => {
+						'' => q(ጊባይት),
+						'one' => q({0} ጊባይት),
+						'other' => q({0} ጊባይት),
+					},
+					'gigabyte' => {
+						'' => q(ጊባ),
+						'one' => q({0} ጊባ),
+						'other' => q({0} ጊባ),
+					},
+					'gigahertz' => {
+						'' => q(GHz),
+						'one' => q({0} GHz),
+						'other' => q({0} GHz),
+					},
+					'gigawatt' => {
+						'' => q(GW),
+						'one' => q({0} GW),
+						'other' => q({0} GW),
+					},
 					'gram' => {
+						'' => q(ግራም),
 						'one' => q({0} ግራም),
 						'other' => q({0} ግራም),
 					},
 					'hectare' => {
+						'' => q(ሄክታር),
 						'one' => q({0} ሄክታር),
 						'other' => q({0} ሄክታር),
 					},
+					'hectoliter' => {
+						'' => q(hL),
+						'one' => q({0} hL),
+						'other' => q({0} hL),
+					},
 					'hectopascal' => {
+						'' => q(ሄክቶፓስካል),
 						'one' => q({0} ሄክቶፓስካል),
 						'other' => q({0} ሄክቶፓስካል),
 					},
+					'hertz' => {
+						'' => q(Hz),
+						'one' => q({0} Hz),
+						'other' => q({0} Hz),
+					},
 					'horsepower' => {
-						'one' => q({0} የፈረስ ኃይል),
-						'other' => q({0} የፈረስ ኃይል),
+						'' => q(የፈረስ ጉልበት),
+						'one' => q({0} የፈረስ ጉልበት),
+						'other' => q({0} የፈረስ ጉልበት),
 					},
 					'hour' => {
+						'' => q({0}/ሰ),
 						'one' => q({0} ሰዓት),
 						'other' => q({0} ሰዓቶች),
 					},
 					'inch' => {
+						'' => q(ኢንች),
 						'one' => q({0} ኢንች),
 						'other' => q({0} ኢንች),
 					},
 					'inch-hg' => {
+						'' => q(ኢንች ሜርኩሪ),
 						'one' => q({0} ኢንች ሜርኩሪ),
 						'other' => q({0} ኢንች ሜርኩሪ),
 					},
+					'joule' => {
+						'' => q(joule),
+						'one' => q({0} J),
+						'other' => q({0} J),
+					},
+					'karat' => {
+						'' => q(ካራት),
+						'one' => q({0} ካራት),
+						'other' => q({0} ካራት),
+					},
+					'kelvin' => {
+						'' => q(K),
+						'one' => q({0} K),
+						'other' => q({0} K),
+					},
+					'kilobit' => {
+						'' => q(ኪባይት),
+						'one' => q({0} ኪባይት),
+						'other' => q({0} ኪባይት),
+					},
+					'kilobyte' => {
+						'' => q(ኪባ),
+						'one' => q({0} ኪባ),
+						'other' => q({0} ኪባ),
+					},
+					'kilocalorie' => {
+						'' => q(kcal),
+						'one' => q({0} kcal),
+						'other' => q({0} kcal),
+					},
 					'kilogram' => {
+						'' => q(ኪሎግራም),
 						'one' => q({0} ኪሎግራም),
 						'other' => q({0} ኪሎግራም),
 					},
+					'kilohertz' => {
+						'' => q(kHz),
+						'one' => q({0} kHz),
+						'other' => q({0} kHz),
+					},
+					'kilojoule' => {
+						'' => q(kJ),
+						'one' => q({0} kJ),
+						'other' => q({0} kJ),
+					},
 					'kilometer' => {
+						'' => q(ኪሎሜትር),
 						'one' => q({0} ኪሎሜትር),
 						'other' => q({0} ኪሎሜትር),
 					},
 					'kilometer-per-hour' => {
+						'' => q(ኪሎሜትር በሰዓት),
 						'one' => q({0} ኪሎሜትር በሰዓት),
 						'other' => q({0} ኪሎሜትር በሰዓት),
 					},
 					'kilowatt' => {
+						'' => q(ኪሎዋት),
 						'one' => q({0} ኪሎዋት),
 						'other' => q({0} ኪሎዋት),
 					},
+					'kilowatt-hour' => {
+						'' => q(kWh),
+						'one' => q({0} kWh),
+						'other' => q({0} kWh),
+					},
 					'light-year' => {
+						'' => q(የብርሃን ዓመት),
 						'one' => q({0} የብርሃን ዓመት),
 						'other' => q({0} የብርሃን ዓመት),
 					},
 					'liter' => {
+						'' => q(ሊትር),
 						'one' => q({0} ሊትር),
 						'other' => q({0} ሊትር),
 					},
+					'liter-per-kilometer' => {
+						'' => q(ሊ/ኪሜ),
+						'one' => q({0} ሊ/ኪሜ),
+						'other' => q({0} ሊ/ኪሜ),
+					},
+					'lux' => {
+						'' => q(lx),
+						'one' => q({0} lx),
+						'other' => q({0} lx),
+					},
+					'megabit' => {
+						'' => q(ሜባ),
+						'one' => q({0} ሜባ),
+						'other' => q({0} ሜባ),
+					},
+					'megabyte' => {
+						'' => q(ሜባይት),
+						'one' => q({0} ሜባይት),
+						'other' => q({0} ሜባይት),
+					},
+					'megahertz' => {
+						'' => q(MHz),
+						'one' => q({0} MHz),
+						'other' => q({0} MHz),
+					},
+					'megaliter' => {
+						'' => q(ML),
+						'one' => q({0} ML),
+						'other' => q({0} ML),
+					},
+					'megawatt' => {
+						'' => q(MW),
+						'one' => q({0} MW),
+						'other' => q({0} MW),
+					},
 					'meter' => {
+						'' => q(ሜትር),
 						'one' => q({0} ሜትር),
 						'other' => q({0} ሜትር),
 					},
 					'meter-per-second' => {
+						'' => q(ሜትር በሰከንድ),
 						'one' => q({0} ሜትር በሰከንድ),
 						'other' => q({0} ሜትር በሰከንድ),
 					},
+					'meter-per-second-squared' => {
+						'' => q(m/s²),
+						'one' => q({0} m/s²),
+						'other' => q({0} m/s²),
+					},
+					'metric-ton' => {
+						'' => q(t),
+						'one' => q({0} t),
+						'other' => q({0} t),
+					},
+					'microgram' => {
+						'' => q(µg),
+						'one' => q({0} µg),
+						'other' => q({0} µg),
+					},
+					'micrometer' => {
+						'' => q(µm),
+						'one' => q({0} µm),
+						'other' => q({0} µm),
+					},
+					'microsecond' => {
+						'' => q(ማይክሮሰከንድ),
+						'one' => q({0} ማይክሮሰከንድ),
+						'other' => q({0} ማይክሮሰከንድ),
+					},
 					'mile' => {
+						'' => q(ማይል),
 						'one' => q({0} ማይል),
 						'other' => q({0} ማይል),
 					},
+					'mile-per-gallon' => {
+						'' => q(mpg),
+						'one' => q({0} mpg),
+						'other' => q({0} mpg),
+					},
 					'mile-per-hour' => {
+						'' => q(ማይል በሰዓት),
 						'one' => q({0} ማይል በሰዓት),
 						'other' => q({0} ማይል በሰዓት),
 					},
+					'milliampere' => {
+						'' => q(mA),
+						'one' => q({0} mA),
+						'other' => q({0} mA),
+					},
 					'millibar' => {
+						'' => q(ሚሊባር),
 						'one' => q({0} ሚሊባር),
 						'other' => q({0} ሚሊባር),
 					},
+					'milligram' => {
+						'' => q(mg),
+						'one' => q({0} mg),
+						'other' => q({0} mg),
+					},
+					'milliliter' => {
+						'' => q(mL),
+						'one' => q({0} mL),
+						'other' => q({0} mL),
+					},
 					'millimeter' => {
+						'' => q(ሚሊሜትር),
 						'one' => q({0} ሚሊሜትር),
 						'other' => q({0} ሚሊሜትር),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(mm Hg),
+						'one' => q({0} mm Hg),
+						'other' => q({0} mm Hg),
+					},
 					'millisecond' => {
+						'' => q(ሚሊሰከንድ),
 						'one' => q({0} ሚሊሰከንድ),
 						'other' => q({0} ሚሊሰከንድ),
 					},
+					'milliwatt' => {
+						'' => q(mW),
+						'one' => q({0} mW),
+						'other' => q({0} mW),
+					},
 					'minute' => {
+						'' => q(ደቂቃዎች),
 						'one' => q({0} ደቂቃ),
 						'other' => q({0} ደቂቃዎች),
 					},
 					'month' => {
+						'' => q(ወራት),
 						'one' => q({0} ወር),
 						'other' => q({0} ወራት),
 					},
+					'nanometer' => {
+						'' => q(nm),
+						'one' => q({0} nm),
+						'other' => q({0} nm),
+					},
+					'nanosecond' => {
+						'' => q(ናኖሰከንድ),
+						'one' => q({0} ናኖሰከንድ),
+						'other' => q({0} ናኖሰከንድ),
+					},
+					'nautical-mile' => {
+						'' => q(nmi),
+						'one' => q({0} nmi),
+						'other' => q({0} nmi),
+					},
+					'ohm' => {
+						'' => q(ohm),
+						'one' => q({0} Ω),
+						'other' => q({0} Ω),
+					},
 					'ounce' => {
+						'' => q(አውንስ),
 						'one' => q({0} አውንስ),
 						'other' => q({0} አውንስ),
+					},
+					'ounce-troy' => {
+						'' => q(oz t),
+						'one' => q({0} oz t),
+						'other' => q({0} oz t),
+					},
+					'parsec' => {
+						'' => q(pc),
+						'one' => q({0} pc),
+						'other' => q({0} pc),
 					},
 					'per' => {
 						'' => q({0} በ{1}),
 					},
 					'picometer' => {
+						'' => q(ፒኮሜትር),
 						'one' => q({0} ፒኮሜትር),
 						'other' => q({0} ፒኮሜትር),
 					},
+					'pint' => {
+						'' => q(pt),
+						'one' => q({0} pt),
+						'other' => q({0} pt),
+					},
 					'pound' => {
+						'' => q(ፓውንድ),
 						'one' => q({0} ፓውንድ),
 						'other' => q({0} ፓውንድ),
 					},
+					'pound-per-square-inch' => {
+						'' => q(psi),
+						'one' => q({0} psi),
+						'other' => q({0} psi),
+					},
+					'quart' => {
+						'' => q(qt),
+						'one' => q({0} qt),
+						'other' => q({0} qt),
+					},
+					'radian' => {
+						'' => q(rad),
+						'one' => q({0} rad),
+						'other' => q({0} rad),
+					},
 					'second' => {
+						'' => q({0}/ሰከ),
 						'one' => q({0} ሰከንድ),
 						'other' => q({0} ሰከንዶች),
 					},
+					'square-centimeter' => {
+						'' => q(cm²),
+						'one' => q({0} cm²),
+						'other' => q({0} cm²),
+					},
 					'square-foot' => {
+						'' => q(ካሬ ጫማ),
 						'one' => q({0} ካሬ ጫማ),
 						'other' => q({0} ካሬ ጫማ),
 					},
+					'square-inch' => {
+						'' => q(in²),
+						'one' => q({0} in²),
+						'other' => q({0} in²),
+					},
 					'square-kilometer' => {
+						'' => q(ካሬ ኪሎሜትር),
 						'one' => q({0} ካሬ ኪሎሜትር),
 						'other' => q({0} ካሬ ኪሎሜትር),
 					},
 					'square-meter' => {
+						'' => q(ካሬ ሜትር),
 						'one' => q({0} ካሬ ሜትር),
 						'other' => q({0} ካሬ ሜትር),
 					},
 					'square-mile' => {
+						'' => q(ካሬ ማይል),
 						'one' => q({0} ካሬ ማይል),
 						'other' => q({0} ካሬ ማይል),
 					},
+					'square-yard' => {
+						'' => q(yd²),
+						'one' => q({0} yd²),
+						'other' => q({0} yd²),
+					},
+					'tablespoon' => {
+						'' => q(tbsp),
+						'one' => q({0} tbsp),
+						'other' => q({0} tbsp),
+					},
+					'teaspoon' => {
+						'' => q(tsp),
+						'one' => q({0} tsp),
+						'other' => q({0} tsp),
+					},
+					'terabit' => {
+						'' => q(ቴባ),
+						'one' => q({0} ቴባ),
+						'other' => q({0} ቴባ),
+					},
+					'terabyte' => {
+						'' => q(ቴባይት),
+						'one' => q({0} ቴባይት),
+						'other' => q({0} ቴባይት),
+					},
+					'ton' => {
+						'' => q(ቶን),
+						'one' => q({0} ቶን),
+						'other' => q({0} ቶን),
+					},
+					'volt' => {
+						'' => q(volt),
+						'one' => q({0} V),
+						'other' => q({0} V),
+					},
 					'watt' => {
+						'' => q(ዋት),
 						'one' => q({0} ዋት),
 						'other' => q({0} ዋት),
 					},
 					'week' => {
+						'' => q(ሳምንታት),
 						'one' => q({0} ሳምንት),
 						'other' => q({0} ሳምንታት),
 					},
 					'yard' => {
+						'' => q(ያርድ),
 						'one' => q({0} ያርድ),
 						'other' => q({0} ያርድ),
 					},
 					'year' => {
+						'' => q(ዓመታት),
 						'one' => q({0} ዓመታት),
 						'other' => q({0} ዓመታት),
 					},
@@ -1357,10 +1830,12 @@ has 'units' => (
 						'other' => q({0}″),
 					},
 					'celsius' => {
+						'' => q(ዲግሪ ሴልሺየስ),
 						'one' => q({0}°),
 						'other' => q({0}°),
 					},
 					'centimeter' => {
+						'' => q(ሴንቲሜትር),
 						'one' => q({0} ሴሜ),
 						'other' => q({0} ሴሜ),
 					},
@@ -1373,6 +1848,7 @@ has 'units' => (
 						'other' => q({0} ማይል³),
 					},
 					'day' => {
+						'' => q(ቀናት),
 						'one' => q({0} ቀ),
 						'other' => q({0} ቀ),
 					},
@@ -1393,6 +1869,7 @@ has 'units' => (
 						'other' => q({0} ጂ),
 					},
 					'gram' => {
+						'' => q(ግራም),
 						'one' => q({0} ግ),
 						'other' => q({0} ግ),
 					},
@@ -1409,6 +1886,7 @@ has 'units' => (
 						'other' => q({0} የፈረስ ኃይል),
 					},
 					'hour' => {
+						'' => q(ሰዓቶች),
 						'one' => q({0} ሰ),
 						'other' => q({0} ሰ),
 					},
@@ -1421,14 +1899,17 @@ has 'units' => (
 						'other' => q({0} inHg),
 					},
 					'kilogram' => {
+						'' => q(ኪሎግራም),
 						'one' => q({0} ኪግ),
 						'other' => q({0} ኪግ),
 					},
 					'kilometer' => {
+						'' => q(ኪሎሜትር),
 						'one' => q({0} ኪሜ),
 						'other' => q({0} ኪሜ),
 					},
 					'kilometer-per-hour' => {
+						'' => q(ኪሎሜትር በሰዓት),
 						'one' => q({0} ኪሜ/ሰ),
 						'other' => q({0} ኪሜ/ሰ),
 					},
@@ -1441,10 +1922,12 @@ has 'units' => (
 						'other' => q({0} ly),
 					},
 					'liter' => {
+						'' => q(ሊትር),
 						'one' => q({0} ሊ),
 						'other' => q({0} ሊ),
 					},
 					'meter' => {
+						'' => q(ሜትር),
 						'one' => q({0} ሜ),
 						'other' => q({0} ሜ),
 					},
@@ -1465,18 +1948,22 @@ has 'units' => (
 						'other' => q({0} ሚባ),
 					},
 					'millimeter' => {
+						'' => q(ሚሊሜትር),
 						'one' => q({0} ሚሜ),
 						'other' => q({0} ሚሜ),
 					},
 					'millisecond' => {
+						'' => q(ሚሊሰከንድ),
 						'one' => q({0} ሚሴ),
 						'other' => q({0} ሚሴ),
 					},
 					'minute' => {
+						'' => q(ደቂቃዎች),
 						'one' => q({0} ደ),
 						'other' => q({0} ደ),
 					},
 					'month' => {
+						'' => q(ወራት),
 						'one' => q({0} ወር),
 						'other' => q({0} ወር),
 					},
@@ -1496,8 +1983,9 @@ has 'units' => (
 						'other' => q({0} ፓውንድ),
 					},
 					'second' => {
-						'one' => q({0} ሴ),
-						'other' => q({0} ሴ),
+						'' => q(ሰከንድ),
+						'one' => q({0} ሰ),
+						'other' => q({0} ሰ),
 					},
 					'square-foot' => {
 						'one' => q({0} ጫማ²),
@@ -1515,11 +2003,15 @@ has 'units' => (
 						'one' => q({0} ማይል²),
 						'other' => q({0} ማይል²),
 					},
+					'terabyte' => {
+						'' => q(ቴባይት),
+					},
 					'watt' => {
 						'one' => q({0} ዋ),
 						'other' => q({0} ዋ),
 					},
 					'week' => {
+						'' => q(ሳምንታት),
 						'one' => q({0} ሳምንት),
 						'other' => q({0} ሳምንት),
 					},
@@ -1528,195 +2020,597 @@ has 'units' => (
 						'other' => q({0} ያርድ),
 					},
 					'year' => {
+						'' => q(ዓመታት),
 						'one' => q({0} ዓመት),
-						'other' => q({0} y),
+						'other' => q({0} ዓ),
 					},
 				},
 				'short' => {
 					'acre' => {
+						'' => q(ኤክር),
 						'one' => q({0} ኤክር),
 						'other' => q({0} ኤክር),
 					},
+					'acre-foot' => {
+						'' => q(ac ft),
+						'one' => q({0} ac ft),
+						'other' => q({0} ac ft),
+					},
+					'ampere' => {
+						'' => q(amp),
+						'one' => q({0} A),
+						'other' => q({0} A),
+					},
 					'arc-minute' => {
+						'' => q(ደቂቃ),
 						'one' => q({0} ደቂቃ),
 						'other' => q({0} ደቂቃ),
 					},
 					'arc-second' => {
+						'' => q(ሰከንድ),
 						'one' => q({0} ሰከንድ),
 						'other' => q({0} ሰከንድ),
 					},
+					'astronomical-unit' => {
+						'' => q(au),
+						'one' => q({0} au),
+						'other' => q({0} au),
+					},
+					'bit' => {
+						'' => q(ቢት),
+						'one' => q({0} ቢት),
+						'other' => q({0} ቢት),
+					},
+					'byte' => {
+						'' => q(ባይት),
+						'one' => q({0} ባይት),
+						'other' => q({0} ባይት),
+					},
+					'calorie' => {
+						'' => q(cal),
+						'one' => q({0} cal),
+						'other' => q({0} cal),
+					},
+					'carat' => {
+						'' => q(CD),
+						'one' => q({0} CD),
+						'other' => q({0} CD),
+					},
 					'celsius' => {
+						'' => q(ዲግሪ ሴልሺየስ),
 						'one' => q({0}°ሴ),
 						'other' => q({0}°ሴ),
 					},
+					'centiliter' => {
+						'' => q(cL),
+						'one' => q({0} cL),
+						'other' => q({0} cL),
+					},
 					'centimeter' => {
+						'' => q(ሴንቲሜትር),
 						'one' => q({0} ሴሜ),
 						'other' => q({0} ሴሜ),
 					},
+					'cubic-centimeter' => {
+						'' => q(cm³),
+						'one' => q({0} cm³),
+						'other' => q({0} cm³),
+					},
+					'cubic-foot' => {
+						'' => q(ft³),
+						'one' => q({0} ft³),
+						'other' => q({0} ft³),
+					},
+					'cubic-inch' => {
+						'' => q(in³),
+						'one' => q({0} in³),
+						'other' => q({0} in³),
+					},
 					'cubic-kilometer' => {
+						'' => q(ኩቢክ ኪሎሜትር),
 						'one' => q({0} ኪሜ³),
 						'other' => q({0} ኪሜ³),
 					},
+					'cubic-meter' => {
+						'' => q(m³),
+						'one' => q({0} m³),
+						'other' => q({0} m³),
+					},
 					'cubic-mile' => {
+						'' => q(ኩቢክ ማይል),
 						'one' => q({0} ማይል³),
 						'other' => q({0} ማይል³),
 					},
+					'cubic-yard' => {
+						'' => q(yd³),
+						'one' => q({0} yd³),
+						'other' => q({0} yd³),
+					},
+					'cup' => {
+						'' => q(cup),
+						'one' => q({0} c),
+						'other' => q({0} c),
+					},
 					'day' => {
+						'' => q(ቀናት),
 						'one' => q({0} ቀናት),
 						'other' => q({0} ቀናት),
 					},
+					'deciliter' => {
+						'' => q(dL),
+						'one' => q({0} dL),
+						'other' => q({0} dL),
+					},
+					'decimeter' => {
+						'' => q(dm),
+						'one' => q({0} dm),
+						'other' => q({0} dm),
+					},
 					'degree' => {
+						'' => q(ዲግሪ),
 						'one' => q({0}°ዲግሪ),
 						'other' => q({0}°ዲግሪ),
 					},
 					'fahrenheit' => {
+						'' => q(ዲግሪ ፋራንሃይት),
 						'one' => q({0}°ፋ),
 						'other' => q({0}°ፋ),
 					},
+					'fluid-ounce' => {
+						'' => q(fl oz),
+						'one' => q({0} fl oz),
+						'other' => q({0} fl oz),
+					},
+					'foodcalorie' => {
+						'' => q(Cal),
+						'one' => q({0} Cal),
+						'other' => q({0} Cal),
+					},
 					'foot' => {
+						'' => q(ጫማ),
 						'one' => q({0} ጫማ),
 						'other' => q({0} ጫማ),
 					},
 					'g-force' => {
+						'' => q(ጂ-ኃይል),
 						'one' => q({0} ጂ),
 						'other' => q({0} ጂ),
 					},
+					'gallon' => {
+						'' => q(gal),
+						'one' => q({0} gal),
+						'other' => q({0} gal),
+					},
+					'gigabit' => {
+						'' => q(ጊባይት),
+						'one' => q({0} ጊባይት),
+						'other' => q({0} ጊባይት),
+					},
+					'gigabyte' => {
+						'' => q(ጊባ),
+						'one' => q({0} ጊባ),
+						'other' => q({0} ጊባ),
+					},
+					'gigahertz' => {
+						'' => q(GHz),
+						'one' => q({0} GHz),
+						'other' => q({0} GHz),
+					},
+					'gigawatt' => {
+						'' => q(GW),
+						'one' => q({0} GW),
+						'other' => q({0} GW),
+					},
 					'gram' => {
+						'' => q(ግራም),
 						'one' => q({0} ግ),
 						'other' => q({0} ግ),
 					},
 					'hectare' => {
+						'' => q(ሄክታር),
 						'one' => q({0} ሄክታር),
 						'other' => q({0} ሄክታር),
 					},
+					'hectoliter' => {
+						'' => q(hL),
+						'one' => q({0} hL),
+						'other' => q({0} hL),
+					},
 					'hectopascal' => {
+						'' => q(ሄክቶፓስካል),
 						'one' => q({0} ሄክቶፓስካል),
 						'other' => q({0} ሄክቶፓስካል),
 					},
+					'hertz' => {
+						'' => q(Hz),
+						'one' => q({0} Hz),
+						'other' => q({0} Hz),
+					},
 					'horsepower' => {
-						'one' => q({0} የፈረስ ኃይል),
-						'other' => q({0} የፈረስ ኃይል),
+						'' => q(የፈረስ ጉልበት),
+						'one' => q({0} የፈረስ ጉልበት),
+						'other' => q({0} የፈረስ ጉልበት),
 					},
 					'hour' => {
+						'' => q({0}/ሰ),
 						'one' => q({0} ሰዓ),
 						'other' => q({0} ሰዓ),
 					},
 					'inch' => {
+						'' => q(ኢንች),
 						'one' => q({0} ኢንች),
 						'other' => q({0} ኢንች),
 					},
 					'inch-hg' => {
+						'' => q(ኢንች ሜርኩሪ),
 						'one' => q({0} ኢንች ሜርኩሪ),
 						'other' => q({0} ኢንች ሜርኩሪ),
 					},
+					'joule' => {
+						'' => q(joule),
+						'one' => q({0} J),
+						'other' => q({0} J),
+					},
+					'karat' => {
+						'' => q(ካራት),
+						'one' => q({0} ካራት),
+						'other' => q({0} ካራት),
+					},
+					'kelvin' => {
+						'' => q(K),
+						'one' => q({0} K),
+						'other' => q({0} K),
+					},
+					'kilobit' => {
+						'' => q(ኪባይት),
+						'one' => q({0} ኪባይት),
+						'other' => q({0} ኪባይት),
+					},
+					'kilobyte' => {
+						'' => q(ኪባ),
+						'one' => q({0} ኪባ),
+						'other' => q({0} ኪባ),
+					},
+					'kilocalorie' => {
+						'' => q(kcal),
+						'one' => q({0} kcal),
+						'other' => q({0} kcal),
+					},
 					'kilogram' => {
+						'' => q(ኪሎግራም),
 						'one' => q({0} ኪግ),
 						'other' => q({0} ኪግ),
 					},
+					'kilohertz' => {
+						'' => q(kHz),
+						'one' => q({0} kHz),
+						'other' => q({0} kHz),
+					},
+					'kilojoule' => {
+						'' => q(kJ),
+						'one' => q({0} kJ),
+						'other' => q({0} kJ),
+					},
 					'kilometer' => {
+						'' => q(ኪሎሜትር),
 						'one' => q({0} ኪሜ),
 						'other' => q({0} ኪሜ),
 					},
 					'kilometer-per-hour' => {
+						'' => q(ኪሎሜትር በሰዓት),
 						'one' => q({0} ኪሜ/ሰ),
 						'other' => q({0} ኪሜ/ሰ),
 					},
 					'kilowatt' => {
+						'' => q(ኪሎዋት),
 						'one' => q({0} ኪዋ),
 						'other' => q({0} ኪዋ),
 					},
+					'kilowatt-hour' => {
+						'' => q(kWh),
+						'one' => q({0} kWh),
+						'other' => q({0} kWh),
+					},
 					'light-year' => {
+						'' => q(የብርሃን ዓመት),
 						'one' => q({0} ly),
 						'other' => q({0} ly),
 					},
 					'liter' => {
+						'' => q(ሊትር),
 						'one' => q({0} ሊ),
 						'other' => q({0} ሊ),
 					},
+					'liter-per-kilometer' => {
+						'' => q(ሊ/ኪሜ),
+						'one' => q({0} ሊ/ኪሜ),
+						'other' => q({0} ሊ/ኪሜ),
+					},
+					'lux' => {
+						'' => q(lx),
+						'one' => q({0} lx),
+						'other' => q({0} lx),
+					},
+					'megabit' => {
+						'' => q(ሜባ),
+						'one' => q({0} ሜባ),
+						'other' => q({0} ሜባ),
+					},
+					'megabyte' => {
+						'' => q(ሜባይት),
+						'one' => q({0} ሜባይት),
+						'other' => q({0} ሜባይት),
+					},
+					'megahertz' => {
+						'' => q(MHz),
+						'one' => q({0} MHz),
+						'other' => q({0} MHz),
+					},
+					'megaliter' => {
+						'' => q(ML),
+						'one' => q({0} ML),
+						'other' => q({0} ML),
+					},
+					'megawatt' => {
+						'' => q(MW),
+						'one' => q({0} MW),
+						'other' => q({0} MW),
+					},
 					'meter' => {
+						'' => q(ሜትር),
 						'one' => q({0} ሜ),
 						'other' => q({0} ሜ),
 					},
 					'meter-per-second' => {
+						'' => q(ሜትር በሰከንድ),
 						'one' => q({0} ሜ/ሴ),
 						'other' => q({0} ሜ/ሴ),
 					},
+					'meter-per-second-squared' => {
+						'' => q(m/s²),
+						'one' => q({0} m/s²),
+						'other' => q({0} m/s²),
+					},
+					'metric-ton' => {
+						'' => q(t),
+						'one' => q({0} t),
+						'other' => q({0} t),
+					},
+					'microgram' => {
+						'' => q(µg),
+						'one' => q({0} µg),
+						'other' => q({0} µg),
+					},
+					'micrometer' => {
+						'' => q(µm),
+						'one' => q({0} µm),
+						'other' => q({0} µm),
+					},
+					'microsecond' => {
+						'' => q(ማይክሮሰከንድ),
+						'one' => q({0} ማይክሮሰከንድ),
+						'other' => q({0} ማይክሮሰከንድ),
+					},
 					'mile' => {
+						'' => q(ማይል),
 						'one' => q({0} ማይል),
 						'other' => q({0} ማይል),
 					},
+					'mile-per-gallon' => {
+						'' => q(mpg),
+						'one' => q({0} mpg),
+						'other' => q({0} mpg),
+					},
 					'mile-per-hour' => {
+						'' => q(ማይል በሰዓት),
 						'one' => q({0} ማይል/ሰ),
 						'other' => q({0} ማይል/ሰ),
 					},
+					'milliampere' => {
+						'' => q(mA),
+						'one' => q({0} mA),
+						'other' => q({0} mA),
+					},
 					'millibar' => {
+						'' => q(ሚሊባር),
 						'one' => q({0} ሚባ),
 						'other' => q({0} ሚባ),
 					},
+					'milligram' => {
+						'' => q(mg),
+						'one' => q({0} mg),
+						'other' => q({0} mg),
+					},
+					'milliliter' => {
+						'' => q(mL),
+						'one' => q({0} mL),
+						'other' => q({0} mL),
+					},
 					'millimeter' => {
+						'' => q(ሚሊሜትር),
 						'one' => q({0} ሚሜ),
 						'other' => q({0} ሚሜ),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(mm Hg),
+						'one' => q({0} mm Hg),
+						'other' => q({0} mm Hg),
+					},
 					'millisecond' => {
+						'' => q(ሚሊሰከንድ),
 						'one' => q({0} ሚሴ),
 						'other' => q({0} ሚሴ),
 					},
+					'milliwatt' => {
+						'' => q(mW),
+						'one' => q({0} mW),
+						'other' => q({0} mW),
+					},
 					'minute' => {
+						'' => q(ደቂቃዎች),
 						'one' => q({0} ደቂ),
 						'other' => q({0} ደቂቃ),
 					},
 					'month' => {
+						'' => q(ወራት),
 						'one' => q({0} ወራት),
 						'other' => q({0} ወራት),
 					},
+					'nanometer' => {
+						'' => q(nm),
+						'one' => q({0} nm),
+						'other' => q({0} nm),
+					},
+					'nanosecond' => {
+						'' => q(ናኖሰከንድ),
+						'one' => q({0} ናኖሰከንድ),
+						'other' => q({0} ናኖሰከንድ),
+					},
+					'nautical-mile' => {
+						'' => q(nmi),
+						'one' => q({0} nmi),
+						'other' => q({0} nmi),
+					},
+					'ohm' => {
+						'' => q(ohm),
+						'one' => q({0} Ω),
+						'other' => q({0} Ω),
+					},
 					'ounce' => {
+						'' => q(አውንስ),
 						'one' => q({0} አውንስ),
 						'other' => q({0} አውንስ),
+					},
+					'ounce-troy' => {
+						'' => q(oz t),
+						'one' => q({0} oz t),
+						'other' => q({0} oz t),
+					},
+					'parsec' => {
+						'' => q(pc),
+						'one' => q({0} pc),
+						'other' => q({0} pc),
 					},
 					'per' => {
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(ፒኮሜትር),
 						'one' => q({0} ፒሜ),
 						'other' => q({0} ፒሜ),
 					},
+					'pint' => {
+						'' => q(pt),
+						'one' => q({0} pt),
+						'other' => q({0} pt),
+					},
 					'pound' => {
+						'' => q(ፓውንድ),
 						'one' => q({0} ፓውንድ),
 						'other' => q({0} ፓውንድ),
 					},
+					'pound-per-square-inch' => {
+						'' => q(psi),
+						'one' => q({0} psi),
+						'other' => q({0} psi),
+					},
+					'quart' => {
+						'' => q(qt),
+						'one' => q({0} qt),
+						'other' => q({0} qt),
+					},
+					'radian' => {
+						'' => q(rad),
+						'one' => q({0} rad),
+						'other' => q({0} rad),
+					},
 					'second' => {
+						'' => q({0}/ሰከ),
 						'one' => q({0} ሰከ),
 						'other' => q({0} ሰከ),
 					},
+					'square-centimeter' => {
+						'' => q(cm²),
+						'one' => q({0} cm²),
+						'other' => q({0} cm²),
+					},
 					'square-foot' => {
+						'' => q(ካሬ ጫማ),
 						'one' => q({0} ካሬ ጫማ),
 						'other' => q({0} ካሬ ጫማ),
 					},
+					'square-inch' => {
+						'' => q(in²),
+						'one' => q({0} in²),
+						'other' => q({0} in²),
+					},
 					'square-kilometer' => {
+						'' => q(ካሬ ኪሎሜትር),
 						'one' => q({0} ኪሜ²),
 						'other' => q({0} ኪሜ²),
 					},
 					'square-meter' => {
+						'' => q(ካሬ ሜትር),
 						'one' => q({0} ሜ²),
 						'other' => q({0} ሜ²),
 					},
 					'square-mile' => {
+						'' => q(ካሬ ማይል),
 						'one' => q({0} ካሬ ማይል),
 						'other' => q({0} ካሬ ማይል),
 					},
+					'square-yard' => {
+						'' => q(yd²),
+						'one' => q({0} yd²),
+						'other' => q({0} yd²),
+					},
+					'tablespoon' => {
+						'' => q(tbsp),
+						'one' => q({0} tbsp),
+						'other' => q({0} tbsp),
+					},
+					'teaspoon' => {
+						'' => q(tsp),
+						'one' => q({0} tsp),
+						'other' => q({0} tsp),
+					},
+					'terabit' => {
+						'' => q(ቴባ),
+						'one' => q({0} ቴባ),
+						'other' => q({0} ቴባ),
+					},
+					'terabyte' => {
+						'' => q(ቴባይት),
+						'one' => q({0} ቴባይት),
+						'other' => q({0} ቴባይት),
+					},
+					'ton' => {
+						'' => q(ቶን),
+						'one' => q({0} ቶን),
+						'other' => q({0} ቶን),
+					},
+					'volt' => {
+						'' => q(volt),
+						'one' => q({0} V),
+						'other' => q({0} V),
+					},
 					'watt' => {
+						'' => q(ዋት),
 						'one' => q({0} ዋ),
 						'other' => q({0} ዋ),
 					},
 					'week' => {
+						'' => q(ሳምንታት),
 						'one' => q({0} ሳምንት),
 						'other' => q({0} ሳምንታት),
 					},
 					'yard' => {
+						'' => q(ያርድ),
 						'one' => q({0} ያርድ),
 						'other' => q({0} ያርድ),
 					},
 					'year' => {
+						'' => q(ዓመታት),
 						'one' => q({0} ዓመት),
 						'other' => q({0} ዓመታት),
 					},
@@ -1997,6 +2891,7 @@ has 'curriencies' => (
 	init_arg	=> undef,
 	default		=> sub { {
 		'AED' => {
+			symbol => 'AED',
 			display_name => {
 				'currency' => q(የተባበሩት የአረብ ኤምረትስ ዲርሀም),
 				'one' => q(የተባበሩት የአረብ ኤምረትስ ዲርሀም),
@@ -2004,6 +2899,7 @@ has 'curriencies' => (
 			},
 		},
 		'AFN' => {
+			symbol => 'AFN',
 			display_name => {
 				'currency' => q(የአፍጋን አፍጋኒ),
 				'one' => q(የአፍጋን አፍጋኒ),
@@ -2011,6 +2907,7 @@ has 'curriencies' => (
 			},
 		},
 		'ALL' => {
+			symbol => 'ALL',
 			display_name => {
 				'currency' => q(የአልባንያ ሌክ),
 				'one' => q(የአልባንያ ሌክ),
@@ -2018,6 +2915,7 @@ has 'curriencies' => (
 			},
 		},
 		'AMD' => {
+			symbol => 'AMD',
 			display_name => {
 				'currency' => q(የአርመን ድራም),
 				'one' => q(የአርመን ድራም),
@@ -2025,11 +2923,15 @@ has 'curriencies' => (
 			},
 		},
 		'ANG' => {
+			symbol => 'ANG',
 			display_name => {
 				'currency' => q(ኔዘርላንድስ አንቲሊአን ጊልደር),
+				'one' => q(ኔዘርላንድስ አንቲሊአን ጊልደር),
+				'other' => q(ኔዘርላንድስ አንቲሊአን ጊልደር),
 			},
 		},
 		'AOA' => {
+			symbol => 'AOA',
 			display_name => {
 				'currency' => q(የአንጎላ ኩዋንዛ),
 				'one' => q(የአንጎላ ኩዋንዛ),
@@ -2037,6 +2939,7 @@ has 'curriencies' => (
 			},
 		},
 		'ARS' => {
+			symbol => 'ARS',
 			display_name => {
 				'currency' => q(የአርጀንቲና ፔሶ),
 				'one' => q(የአርጀንቲና ፔሶ),
@@ -2052,6 +2955,7 @@ has 'curriencies' => (
 			},
 		},
 		'AWG' => {
+			symbol => 'AWG',
 			display_name => {
 				'currency' => q(አሩባን ፍሎሪን),
 				'one' => q(አሩባን ፍሎሪን),
@@ -2059,6 +2963,7 @@ has 'curriencies' => (
 			},
 		},
 		'AZN' => {
+			symbol => 'AZN',
 			display_name => {
 				'currency' => q(የአዛርባጃን ማናት),
 				'one' => q(የአዛርባጃን ማናት),
@@ -2066,6 +2971,7 @@ has 'curriencies' => (
 			},
 		},
 		'BAM' => {
+			symbol => 'BAM',
 			display_name => {
 				'currency' => q(የቦስኒያ ሄርዞጎቪና የሚመነዘር ማርክ),
 				'one' => q(የቦስኒያ ሄርዞጎቪና የሚመነዘር ማርክ),
@@ -2073,6 +2979,7 @@ has 'curriencies' => (
 			},
 		},
 		'BBD' => {
+			symbol => 'BBD',
 			display_name => {
 				'currency' => q(የባርቤዶስ ዶላር),
 				'one' => q(የባርቤዶስ ዶላር),
@@ -2080,6 +2987,7 @@ has 'curriencies' => (
 			},
 		},
 		'BDT' => {
+			symbol => 'BDT',
 			display_name => {
 				'currency' => q(የባንግላዲሽ ታካ),
 				'one' => q(የባንግላዲሽ ታካ),
@@ -2087,6 +2995,7 @@ has 'curriencies' => (
 			},
 		},
 		'BGN' => {
+			symbol => 'BGN',
 			display_name => {
 				'currency' => q(የቡልጋሪያ ሌቭ),
 				'one' => q(የቡልጋሪያ ሌቭ),
@@ -2094,6 +3003,7 @@ has 'curriencies' => (
 			},
 		},
 		'BHD' => {
+			symbol => 'BHD',
 			display_name => {
 				'currency' => q(የባኽሬን ዲናር),
 				'one' => q(የባኽሬን ዲናር),
@@ -2101,6 +3011,7 @@ has 'curriencies' => (
 			},
 		},
 		'BIF' => {
+			symbol => 'BIF',
 			display_name => {
 				'currency' => q(የብሩንዲ ፍራንክ),
 				'one' => q(የብሩንዲ ፍራንክ),
@@ -2108,6 +3019,7 @@ has 'curriencies' => (
 			},
 		},
 		'BMD' => {
+			symbol => 'BMD',
 			display_name => {
 				'currency' => q(የቤርሙዳ ዶላር),
 				'one' => q(የቤርሙዳ ዶላር),
@@ -2115,6 +3027,7 @@ has 'curriencies' => (
 			},
 		},
 		'BND' => {
+			symbol => 'BND',
 			display_name => {
 				'currency' => q(የብሩኔ ዶላር),
 				'one' => q(የብሩኔ ዶላር),
@@ -2122,6 +3035,7 @@ has 'curriencies' => (
 			},
 		},
 		'BOB' => {
+			symbol => 'BOB',
 			display_name => {
 				'currency' => q(የቦሊቪያ ቦሊቪያኖ),
 				'one' => q(የቦሊቪያ ቦሊቪያኖ),
@@ -2137,6 +3051,7 @@ has 'curriencies' => (
 			},
 		},
 		'BSD' => {
+			symbol => 'BSD',
 			display_name => {
 				'currency' => q(የባሃማስ ዶላር),
 				'one' => q(የባሃማስ ዶላር),
@@ -2144,6 +3059,7 @@ has 'curriencies' => (
 			},
 		},
 		'BTN' => {
+			symbol => 'BTN',
 			display_name => {
 				'currency' => q(ብሁታኒዝ ንጉልትረም),
 				'one' => q(ብሁታኒዝ ንጉልትረም),
@@ -2151,6 +3067,7 @@ has 'curriencies' => (
 			},
 		},
 		'BWP' => {
+			symbol => 'BWP',
 			display_name => {
 				'currency' => q(የቦትስዋና ፑላ),
 				'one' => q(የቦትስዋና ፑላ),
@@ -2158,6 +3075,7 @@ has 'curriencies' => (
 			},
 		},
 		'BYR' => {
+			symbol => 'BYR',
 			display_name => {
 				'currency' => q(የቤላሩስያ ሩብል),
 				'one' => q(የቤላሩስያ ሩብል),
@@ -2165,6 +3083,7 @@ has 'curriencies' => (
 			},
 		},
 		'BZD' => {
+			symbol => 'BZD',
 			display_name => {
 				'currency' => q(የቤሊዝ ዶላር),
 				'one' => q(የቤሊዝ ዶላር),
@@ -2172,6 +3091,7 @@ has 'curriencies' => (
 			},
 		},
 		'CAD' => {
+			symbol => 'CA$',
 			display_name => {
 				'currency' => q(የካናዳ ዶላር),
 				'one' => q(የካናዳ ዶላር),
@@ -2179,6 +3099,7 @@ has 'curriencies' => (
 			},
 		},
 		'CDF' => {
+			symbol => 'CDF',
 			display_name => {
 				'currency' => q(የኮንጐ ፍራንክ ኮንጐሌዝ),
 				'one' => q(የኮንጐ ፍራንክ ኮንጐሌዝ),
@@ -2186,6 +3107,7 @@ has 'curriencies' => (
 			},
 		},
 		'CHF' => {
+			symbol => 'CHF',
 			display_name => {
 				'currency' => q(የስዊስ ፍራንክ),
 				'one' => q(የስዊስ ፍራንክ),
@@ -2193,6 +3115,7 @@ has 'curriencies' => (
 			},
 		},
 		'CLP' => {
+			symbol => 'CLP',
 			display_name => {
 				'currency' => q(የቺሊ ፔሶ),
 				'one' => q(የቺሊ ፔሶ),
@@ -2208,6 +3131,7 @@ has 'curriencies' => (
 			},
 		},
 		'COP' => {
+			symbol => 'COP',
 			display_name => {
 				'currency' => q(የኮሎምቢያ ፔሶ),
 				'one' => q(የኮሎምቢያ ፔሶ),
@@ -2215,6 +3139,7 @@ has 'curriencies' => (
 			},
 		},
 		'CRC' => {
+			symbol => 'CRC',
 			display_name => {
 				'currency' => q(የኮስታሪካ ኮሎን),
 				'one' => q(የኮስታሪካ ኮሎን),
@@ -2222,6 +3147,7 @@ has 'curriencies' => (
 			},
 		},
 		'CUC' => {
+			symbol => 'CUC',
 			display_name => {
 				'currency' => q(የኩባ የሚመነዘር ፔሶ),
 				'one' => q(የኩባ የሚመነዘር ፔሶ),
@@ -2229,6 +3155,7 @@ has 'curriencies' => (
 			},
 		},
 		'CUP' => {
+			symbol => 'CUP',
 			display_name => {
 				'currency' => q(የኩባ ፔሶ),
 				'one' => q(የኩባ ፔሶ),
@@ -2236,6 +3163,7 @@ has 'curriencies' => (
 			},
 		},
 		'CVE' => {
+			symbol => 'CVE',
 			display_name => {
 				'currency' => q(የኬፕ ቫርዲ ኤስኩዶ),
 				'one' => q(የኬፕ ቫርዲ ኤስኩዶ),
@@ -2243,13 +3171,15 @@ has 'curriencies' => (
 			},
 		},
 		'CZK' => {
+			symbol => 'CZK',
 			display_name => {
-				'currency' => q(ቼክ ሪፐፕሊክ ኮሩና),
-				'one' => q(ቼክ ሪፐፕሊክ ኮሩና),
+				'currency' => q(ቼክ ሪፐብሊክ ኮሩና),
+				'one' => q(ቼክ ሪፐብሊክ ኮሩና),
 				'other' => q(ቼክ ሪፐብሊክ ኮሮና),
 			},
 		},
 		'DJF' => {
+			symbol => 'DJF',
 			display_name => {
 				'currency' => q(የጅቡቲ ፍራንክ),
 				'one' => q(የጅቡቲ ፍራንክ),
@@ -2257,6 +3187,7 @@ has 'curriencies' => (
 			},
 		},
 		'DKK' => {
+			symbol => 'DKK',
 			display_name => {
 				'currency' => q(የዴንማርክ ክሮን),
 				'one' => q(የዴንማርክ ክሮን),
@@ -2264,6 +3195,7 @@ has 'curriencies' => (
 			},
 		},
 		'DOP' => {
+			symbol => 'DOP',
 			display_name => {
 				'currency' => q(የዶሚኒክ ፔሶ),
 				'one' => q(የዶሚኒክ ፔሶ),
@@ -2271,6 +3203,7 @@ has 'curriencies' => (
 			},
 		},
 		'DZD' => {
+			symbol => 'DZD',
 			display_name => {
 				'currency' => q(የአልጄሪያ ዲናር),
 				'one' => q(የአልጄሪያ ዲናር),
@@ -2278,6 +3211,7 @@ has 'curriencies' => (
 			},
 		},
 		'EGP' => {
+			symbol => 'EGP',
 			display_name => {
 				'currency' => q(የግብጽ ፓውንድ),
 				'one' => q(የግብጽ ፓውንድ),
@@ -2285,10 +3219,11 @@ has 'curriencies' => (
 			},
 		},
 		'ERN' => {
+			symbol => 'ERN',
 			display_name => {
-				'currency' => q(ዬኤርትራ ናቅፋ),
-				'one' => q(ዬኤርትራ ናቅፋ),
-				'other' => q(ዬኤርትራ ናቅፋ),
+				'currency' => q(የኤርትራ ናቅፋ),
+				'one' => q(የኤርትራ ናቅፋ),
+				'other' => q(የኤርትራ ናቅፋ),
 			},
 		},
 		'ETB' => {
@@ -2308,6 +3243,7 @@ has 'curriencies' => (
 			},
 		},
 		'FJD' => {
+			symbol => 'FJD',
 			display_name => {
 				'currency' => q(የፊጂ ዶላር),
 				'one' => q(የፊጂ ዶላር),
@@ -2315,6 +3251,7 @@ has 'curriencies' => (
 			},
 		},
 		'FKP' => {
+			symbol => 'FKP',
 			display_name => {
 				'currency' => q(የፎክላንድ ደሴቶች ፓውንድ),
 				'one' => q(የፎክላንድ ደሴቶች ፓውንድ),
@@ -2330,6 +3267,7 @@ has 'curriencies' => (
 			},
 		},
 		'GEL' => {
+			symbol => 'GEL',
 			display_name => {
 				'currency' => q(የጆርጅያ ላሪ),
 				'one' => q(የጆርጅያ ላሪ),
@@ -2342,6 +3280,7 @@ has 'curriencies' => (
 			},
 		},
 		'GHS' => {
+			symbol => 'GHS',
 			display_name => {
 				'currency' => q(የጋና ሲዲ),
 				'one' => q(የጋና ሲዲ),
@@ -2349,13 +3288,15 @@ has 'curriencies' => (
 			},
 		},
 		'GIP' => {
+			symbol => 'GIP',
 			display_name => {
-				'currency' => q(ጊብራልታር ፓውንድ),
-				'one' => q(ጊብራልታር ፓውንድ),
-				'other' => q(ጊብራልታር ፓውንድ),
+				'currency' => q(ጂብራልተር ፓውንድ),
+				'one' => q(ጂብራልተር ፓውንድ),
+				'other' => q(ጂብራልተር ፓውንድ),
 			},
 		},
 		'GMD' => {
+			symbol => 'GMD',
 			display_name => {
 				'currency' => q(የጋምቢያ ዳላሲ),
 				'one' => q(የጋምቢያ ዳላሲ),
@@ -2363,6 +3304,7 @@ has 'curriencies' => (
 			},
 		},
 		'GNF' => {
+			symbol => 'GNF',
 			display_name => {
 				'currency' => q(የጊኒ ፍራንክ),
 				'one' => q(የጊኒ ፍራንክ),
@@ -2370,6 +3312,7 @@ has 'curriencies' => (
 			},
 		},
 		'GTQ' => {
+			symbol => 'GTQ',
 			display_name => {
 				'currency' => q(ጓቲማላን ኩቲዛል),
 				'one' => q(ጓቲማላን ኩቲዛል),
@@ -2377,6 +3320,7 @@ has 'curriencies' => (
 			},
 		},
 		'GYD' => {
+			symbol => 'GYD',
 			display_name => {
 				'currency' => q(የጉየና ዶላር),
 				'one' => q(የጉየና ዶላር),
@@ -2392,6 +3336,7 @@ has 'curriencies' => (
 			},
 		},
 		'HNL' => {
+			symbol => 'HNL',
 			display_name => {
 				'currency' => q(የሃንዱራ ሌምፓአይራ),
 				'one' => q(የሃንዱራ ሌምፓአይራ),
@@ -2399,6 +3344,7 @@ has 'curriencies' => (
 			},
 		},
 		'HRK' => {
+			symbol => 'HRK',
 			display_name => {
 				'currency' => q(የክሮሽያ ኩና),
 				'one' => q(የክሮሽያ ኩና),
@@ -2406,6 +3352,7 @@ has 'curriencies' => (
 			},
 		},
 		'HTG' => {
+			symbol => 'HTG',
 			display_name => {
 				'currency' => q(የሃያቲ ጓርዴ),
 				'one' => q(የሃያቲ ጓርዴ),
@@ -2413,6 +3360,7 @@ has 'curriencies' => (
 			},
 		},
 		'HUF' => {
+			symbol => 'HUF',
 			display_name => {
 				'currency' => q(የሁንጋሪ ፎሪንት),
 				'one' => q(የሁንጋሪ ፎሪንት),
@@ -2420,6 +3368,7 @@ has 'curriencies' => (
 			},
 		},
 		'IDR' => {
+			symbol => 'IDR',
 			display_name => {
 				'currency' => q(የኢንዶኔዥያ ሩፒሃ),
 				'one' => q(የኢንዶኔዥያ ሩፒሃ),
@@ -2443,6 +3392,7 @@ has 'curriencies' => (
 			},
 		},
 		'IQD' => {
+			symbol => 'IQD',
 			display_name => {
 				'currency' => q(የኢራቅ ዲናር),
 				'one' => q(የኢራቅ ዲናር),
@@ -2450,6 +3400,7 @@ has 'curriencies' => (
 			},
 		},
 		'IRR' => {
+			symbol => 'IRR',
 			display_name => {
 				'currency' => q(የኢራን ሪአል),
 				'one' => q(የኢራን ሪአል),
@@ -2457,6 +3408,7 @@ has 'curriencies' => (
 			},
 		},
 		'ISK' => {
+			symbol => 'ISK',
 			display_name => {
 				'currency' => q(የአይስላንድ ክሮና),
 				'one' => q(የአይስላንድ ክሮና),
@@ -2464,6 +3416,7 @@ has 'curriencies' => (
 			},
 		},
 		'JMD' => {
+			symbol => 'JMD',
 			display_name => {
 				'currency' => q(የጃማይካ ዶላር),
 				'one' => q(የጃማይካ ዶላር),
@@ -2471,6 +3424,7 @@ has 'curriencies' => (
 			},
 		},
 		'JOD' => {
+			symbol => 'JOD',
 			display_name => {
 				'currency' => q(የጆርዳን ዲናር),
 				'one' => q(የጆርዳን ዲናር),
@@ -2486,6 +3440,7 @@ has 'curriencies' => (
 			},
 		},
 		'KES' => {
+			symbol => 'KES',
 			display_name => {
 				'currency' => q(የኬኒያ ሺሊንግ),
 				'one' => q(የኬኒያ ሺሊንግ),
@@ -2493,6 +3448,7 @@ has 'curriencies' => (
 			},
 		},
 		'KGS' => {
+			symbol => 'KGS',
 			display_name => {
 				'currency' => q(የኪርጊስታን ሶም),
 				'one' => q(የኪርጊስታን ሶም),
@@ -2500,6 +3456,7 @@ has 'curriencies' => (
 			},
 		},
 		'KHR' => {
+			symbol => 'KHR',
 			display_name => {
 				'currency' => q(የካምቦዲያ ሬል),
 				'one' => q(የካምቦዲያ ሬል),
@@ -2507,6 +3464,7 @@ has 'curriencies' => (
 			},
 		},
 		'KMF' => {
+			symbol => 'KMF',
 			display_name => {
 				'currency' => q(የኮሞሮ ፍራንክ),
 				'one' => q(የኮሞሮ ፍራንክ),
@@ -2514,6 +3472,7 @@ has 'curriencies' => (
 			},
 		},
 		'KPW' => {
+			symbol => 'KPW',
 			display_name => {
 				'currency' => q(የሰሜን ኮሪያ ዎን),
 				'one' => q(የሰሜን ኮሪያ ዎን),
@@ -2529,6 +3488,7 @@ has 'curriencies' => (
 			},
 		},
 		'KWD' => {
+			symbol => 'KWD',
 			display_name => {
 				'currency' => q(የኩዌት ዲናር),
 				'one' => q(የኩዌት ዲናር),
@@ -2536,6 +3496,7 @@ has 'curriencies' => (
 			},
 		},
 		'KYD' => {
+			symbol => 'KYD',
 			display_name => {
 				'currency' => q(የካይማን ደሴቶች ዶላር),
 				'one' => q(የካይማን ደሴቶች ዶላር),
@@ -2543,6 +3504,7 @@ has 'curriencies' => (
 			},
 		},
 		'KZT' => {
+			symbol => 'KZT',
 			display_name => {
 				'currency' => q(የካዛኪስታን ተንጌ),
 				'one' => q(የካዛኪስታን ተንጌ),
@@ -2550,6 +3512,7 @@ has 'curriencies' => (
 			},
 		},
 		'LAK' => {
+			symbol => 'LAK',
 			display_name => {
 				'currency' => q(የላኦቲ ኪፕ),
 				'one' => q(የላኦቲ ኪፕ),
@@ -2557,6 +3520,7 @@ has 'curriencies' => (
 			},
 		},
 		'LBP' => {
+			symbol => 'LBP',
 			display_name => {
 				'currency' => q(የሊባኖስ ፓውንድ),
 				'one' => q(የሊባኖስ ፓውንድ),
@@ -2564,6 +3528,7 @@ has 'curriencies' => (
 			},
 		},
 		'LKR' => {
+			symbol => 'LKR',
 			display_name => {
 				'currency' => q(የሲሪላንካ ሩፒ),
 				'one' => q(የሲሪላንካ ሩፒ),
@@ -2571,6 +3536,7 @@ has 'curriencies' => (
 			},
 		},
 		'LRD' => {
+			symbol => 'LRD',
 			display_name => {
 				'currency' => q(የላይቤሪያ ዶላር),
 				'one' => q(የላይቤሪያ ዶላር),
@@ -2583,6 +3549,7 @@ has 'curriencies' => (
 			},
 		},
 		'LTL' => {
+			symbol => 'LTL',
 			display_name => {
 				'currency' => q(ሊቱዌንያን ሊታስ),
 				'one' => q(ሊቱዌንያን ሊታስ),
@@ -2590,6 +3557,7 @@ has 'curriencies' => (
 			},
 		},
 		'LVL' => {
+			symbol => 'LVL',
 			display_name => {
 				'currency' => q(የላቲቫ ላትስ),
 				'one' => q(የላቲቫ ላትስ),
@@ -2597,6 +3565,7 @@ has 'curriencies' => (
 			},
 		},
 		'LYD' => {
+			symbol => 'LYD',
 			display_name => {
 				'currency' => q(የሊቢያ ዲናር),
 				'one' => q(የሊቢያ ዲናር),
@@ -2604,6 +3573,7 @@ has 'curriencies' => (
 			},
 		},
 		'MAD' => {
+			symbol => 'MAD',
 			display_name => {
 				'currency' => q(የሞሮኮ ዲርሀም),
 				'one' => q(የሞሮኮ ዲርሀም),
@@ -2611,6 +3581,7 @@ has 'curriencies' => (
 			},
 		},
 		'MDL' => {
+			symbol => 'MDL',
 			display_name => {
 				'currency' => q(ሞልዶቫን ሊኡ),
 				'one' => q(ሞልዶቫን ሊኡ),
@@ -2618,13 +3589,15 @@ has 'curriencies' => (
 			},
 		},
 		'MGA' => {
+			symbol => 'MGA',
 			display_name => {
-				'currency' => q(የማደጋስካር ፋርንክ),
-				'one' => q(የማደጋስካር ፋርንክ),
-				'other' => q(የማደጋስካር ፋርንክ),
+				'currency' => q(የማደጋስካር ማላጋስይ አሪያርይ),
+				'one' => q(የማደጋስካር ማላጋስይ አሪያርይ),
+				'other' => q(የማደጋስካር ማላጋስይ አሪያርይ),
 			},
 		},
 		'MKD' => {
+			symbol => 'MKD',
 			display_name => {
 				'currency' => q(የሜቆድንያ ዲናር),
 				'one' => q(የሜቆድንያ ዲናር),
@@ -2632,6 +3605,7 @@ has 'curriencies' => (
 			},
 		},
 		'MMK' => {
+			symbol => 'MMK',
 			display_name => {
 				'currency' => q(ምያንማ ክያት),
 				'one' => q(ምያንማ ክያት),
@@ -2639,6 +3613,7 @@ has 'curriencies' => (
 			},
 		},
 		'MNT' => {
+			symbol => 'MNT',
 			display_name => {
 				'currency' => q(የሞንጎሊያን ቱግሪክ),
 				'one' => q(የሞንጎሊያን ቱግሪክ),
@@ -2646,6 +3621,7 @@ has 'curriencies' => (
 			},
 		},
 		'MOP' => {
+			symbol => 'MOP',
 			display_name => {
 				'currency' => q(የማካኔዝ ፓታካ),
 				'one' => q(የማካኔዝ ፓታካ),
@@ -2653,6 +3629,7 @@ has 'curriencies' => (
 			},
 		},
 		'MRO' => {
+			symbol => 'MRO',
 			display_name => {
 				'currency' => q(የሞሪቴኒያ ኦውጉያ),
 				'one' => q(የሞሪቴኒያ ኦውጉያ),
@@ -2660,6 +3637,7 @@ has 'curriencies' => (
 			},
 		},
 		'MUR' => {
+			symbol => 'MUR',
 			display_name => {
 				'currency' => q(የሞሪሸስ ሩፒ),
 				'one' => q(የሞሪሸስ ሩፒ),
@@ -2667,6 +3645,7 @@ has 'curriencies' => (
 			},
 		},
 		'MVR' => {
+			symbol => 'MVR',
 			display_name => {
 				'currency' => q(የማልዲቫ ሩፊያ),
 				'one' => q(የማልዲቫ ሩፊያ),
@@ -2674,6 +3653,7 @@ has 'curriencies' => (
 			},
 		},
 		'MWK' => {
+			symbol => 'MWK',
 			display_name => {
 				'currency' => q(የማላዊ ኩዋቻ),
 				'one' => q(የማላዊ ኩዋቻ),
@@ -2689,6 +3669,7 @@ has 'curriencies' => (
 			},
 		},
 		'MYR' => {
+			symbol => 'MYR',
 			display_name => {
 				'currency' => q(የማሌዥያ ሪንጊት),
 				'one' => q(የማሌዥያ ሪንጊት),
@@ -2696,6 +3677,7 @@ has 'curriencies' => (
 			},
 		},
 		'MZN' => {
+			symbol => 'MZN',
 			display_name => {
 				'currency' => q(የሞዛምቢክ ሜቲካል),
 				'one' => q(የሞዛምቢክ ሜቲካል),
@@ -2703,6 +3685,7 @@ has 'curriencies' => (
 			},
 		},
 		'NAD' => {
+			symbol => 'NAD',
 			display_name => {
 				'currency' => q(የናሚቢያ ዶላር),
 				'one' => q(የናሚቢያ ዶላር),
@@ -2710,13 +3693,15 @@ has 'curriencies' => (
 			},
 		},
 		'NGN' => {
+			symbol => 'NGN',
 			display_name => {
-				'currency' => q(የናይጄሪያ ናኢራ),
-				'one' => q(የናይጄሪያ ናኢራ),
-				'other' => q(የናይጄሪያ ናኢራ),
+				'currency' => q(የናይጄሪያ ናይራ),
+				'one' => q(የናይጄሪያ ናይራ),
+				'other' => q(የናይጄሪያ ናይራ),
 			},
 		},
 		'NIO' => {
+			symbol => 'NIO',
 			display_name => {
 				'currency' => q(የኒካራጓ ኮርዶባ),
 				'one' => q(የኒካራጓ ኮርዶባ),
@@ -2724,6 +3709,7 @@ has 'curriencies' => (
 			},
 		},
 		'NOK' => {
+			symbol => 'NOK',
 			display_name => {
 				'currency' => q(የኖርዌይ ክሮን),
 				'one' => q(የኖርዌይ ክሮን),
@@ -2731,6 +3717,7 @@ has 'curriencies' => (
 			},
 		},
 		'NPR' => {
+			symbol => 'NPR',
 			display_name => {
 				'currency' => q(የኔፓል ሩፒ),
 				'one' => q(የኔፓል ሩፒ),
@@ -2746,6 +3733,7 @@ has 'curriencies' => (
 			},
 		},
 		'OMR' => {
+			symbol => 'OMR',
 			display_name => {
 				'currency' => q(የኦማን ሪአል),
 				'one' => q(የኦማን ሪአል),
@@ -2753,6 +3741,7 @@ has 'curriencies' => (
 			},
 		},
 		'PAB' => {
+			symbol => 'PAB',
 			display_name => {
 				'currency' => q(ፓናማኒአን ባልቦአ),
 				'one' => q(ፓናማኒአን ባልቦአ),
@@ -2760,6 +3749,7 @@ has 'curriencies' => (
 			},
 		},
 		'PEN' => {
+			symbol => 'PEN',
 			display_name => {
 				'currency' => q(የፔሩቪያ ኑኤቮ ሶል),
 				'one' => q(የፔሩቪያ ኑኤቮ ሶል),
@@ -2767,6 +3757,7 @@ has 'curriencies' => (
 			},
 		},
 		'PGK' => {
+			symbol => 'PGK',
 			display_name => {
 				'currency' => q(የፓፕዋ ኒው ጊኒ ኪና),
 				'one' => q(የፓፕዋ ኒው ጊኒ ኪና),
@@ -2774,6 +3765,7 @@ has 'curriencies' => (
 			},
 		},
 		'PHP' => {
+			symbol => 'PHP',
 			display_name => {
 				'currency' => q(የፊሊፒንስ ፔሶ),
 				'one' => q(የፊሊፒንስ ፔሶ),
@@ -2781,6 +3773,7 @@ has 'curriencies' => (
 			},
 		},
 		'PKR' => {
+			symbol => 'PKR',
 			display_name => {
 				'currency' => q(የፓኪስታን ሩፒ),
 				'one' => q(የፓኪስታን ሩፒ),
@@ -2788,6 +3781,7 @@ has 'curriencies' => (
 			},
 		},
 		'PLN' => {
+			symbol => 'PLN',
 			display_name => {
 				'currency' => q(የፖላንድ ዝሎቲ),
 				'one' => q(የፖላንድ ዝሎቲ),
@@ -2795,6 +3789,7 @@ has 'curriencies' => (
 			},
 		},
 		'PYG' => {
+			symbol => 'PYG',
 			display_name => {
 				'currency' => q(የፓራጓይ ጉአራኒ),
 				'one' => q(የፓራጓይ ጉአራኒ),
@@ -2802,6 +3797,7 @@ has 'curriencies' => (
 			},
 		},
 		'QAR' => {
+			symbol => 'QAR',
 			display_name => {
 				'currency' => q(የኳታር ሪአል),
 				'one' => q(የኳታር ሪአል),
@@ -2809,6 +3805,7 @@ has 'curriencies' => (
 			},
 		},
 		'RON' => {
+			symbol => 'RON',
 			display_name => {
 				'currency' => q(የሮማኒያ ለው),
 				'one' => q(የሮማኒያ ለው),
@@ -2816,6 +3813,7 @@ has 'curriencies' => (
 			},
 		},
 		'RSD' => {
+			symbol => 'RSD',
 			display_name => {
 				'currency' => q(የሰርቢያ ዲናር),
 				'one' => q(የሰርቢያ ዲናር),
@@ -2823,6 +3821,7 @@ has 'curriencies' => (
 			},
 		},
 		'RUB' => {
+			symbol => 'RUB',
 			display_name => {
 				'currency' => q(የሩስያ ሩብል),
 				'one' => q(የሩስያ ሩብል),
@@ -2830,6 +3829,7 @@ has 'curriencies' => (
 			},
 		},
 		'RWF' => {
+			symbol => 'RWF',
 			display_name => {
 				'currency' => q(የሩዋንዳ ፍራንክ),
 				'one' => q(የሩዋንዳ ፍራንክ),
@@ -2837,6 +3837,7 @@ has 'curriencies' => (
 			},
 		},
 		'SAR' => {
+			symbol => 'SAR',
 			display_name => {
 				'currency' => q(የሳውዲ ሪያል),
 				'one' => q(የሳውዲ ሪያል),
@@ -2844,6 +3845,7 @@ has 'curriencies' => (
 			},
 		},
 		'SBD' => {
+			symbol => 'SBD',
 			display_name => {
 				'currency' => q(የሰለሞን ደሴቶች ዶላር),
 				'one' => q(የሰለሞን ደሴቶች ዶላር),
@@ -2851,6 +3853,7 @@ has 'curriencies' => (
 			},
 		},
 		'SCR' => {
+			symbol => 'SCR',
 			display_name => {
 				'currency' => q(የሲሼል ሩፒ),
 				'one' => q(የሲሼል ሩፒ),
@@ -2858,6 +3861,7 @@ has 'curriencies' => (
 			},
 		},
 		'SDG' => {
+			symbol => 'SDG',
 			display_name => {
 				'currency' => q(የሱዳን ዲናር),
 				'one' => q(የሱዳን ዲናር),
@@ -2870,6 +3874,7 @@ has 'curriencies' => (
 			},
 		},
 		'SEK' => {
+			symbol => 'SEK',
 			display_name => {
 				'currency' => q(የስዊድን ክሮና),
 				'one' => q(የስዊድን ክሮና),
@@ -2877,6 +3882,7 @@ has 'curriencies' => (
 			},
 		},
 		'SGD' => {
+			symbol => 'SGD',
 			display_name => {
 				'currency' => q(የሲንጋፖር ዶላር),
 				'one' => q(የሲንጋፖር ዶላር),
@@ -2884,6 +3890,7 @@ has 'curriencies' => (
 			},
 		},
 		'SHP' => {
+			symbol => 'SHP',
 			display_name => {
 				'currency' => q(የሴይንት ሔሌና ፓውንድ),
 				'one' => q(የሴይንት ሔሌና ፓውንድ),
@@ -2891,6 +3898,7 @@ has 'curriencies' => (
 			},
 		},
 		'SLL' => {
+			symbol => 'SLL',
 			display_name => {
 				'currency' => q(የሴራሊዎን ሊዎን),
 				'one' => q(የሴራሊዎን ሊዎን),
@@ -2898,6 +3906,7 @@ has 'curriencies' => (
 			},
 		},
 		'SOS' => {
+			symbol => 'SOS',
 			display_name => {
 				'currency' => q(የሶማሌ ሺሊንግ),
 				'one' => q(የሶማሌ ሺሊንግ),
@@ -2905,6 +3914,7 @@ has 'curriencies' => (
 			},
 		},
 		'SRD' => {
+			symbol => 'SRD',
 			display_name => {
 				'currency' => q(የሰርናሜዝ ዶላር),
 				'one' => q(የሰርናሜዝ ዶላር),
@@ -2912,6 +3922,7 @@ has 'curriencies' => (
 			},
 		},
 		'SSP' => {
+			symbol => 'SSP',
 			display_name => {
 				'currency' => q(የደቡብ ሱዳን ፓውንድ),
 				'one' => q(የደቡብ ሱዳን ፓውንድ),
@@ -2919,6 +3930,7 @@ has 'curriencies' => (
 			},
 		},
 		'STD' => {
+			symbol => 'STD',
 			display_name => {
 				'currency' => q(የሳኦ ቶመ እና ፕሪንሲፐ ዶብራ),
 				'one' => q(የሳኦ ቶመ እና ፕሪንሲፐ ዶብራ),
@@ -2926,6 +3938,7 @@ has 'curriencies' => (
 			},
 		},
 		'SYP' => {
+			symbol => 'SYP',
 			display_name => {
 				'currency' => q(የሲሪያ ፓውንድ),
 				'one' => q(የሲሪያ ፓውንድ),
@@ -2933,6 +3946,7 @@ has 'curriencies' => (
 			},
 		},
 		'SZL' => {
+			symbol => 'SZL',
 			display_name => {
 				'currency' => q(የስዋዚላንድ ሊላንገኒ),
 				'one' => q(የስዋዚላንድ ሊላንገኒ),
@@ -2948,6 +3962,7 @@ has 'curriencies' => (
 			},
 		},
 		'TJS' => {
+			symbol => 'TJS',
 			display_name => {
 				'currency' => q(የታጂክስታን ሶሞኒ),
 				'one' => q(የታጂክስታን ሶሞኒ),
@@ -2955,6 +3970,7 @@ has 'curriencies' => (
 			},
 		},
 		'TMT' => {
+			symbol => 'TMT',
 			display_name => {
 				'currency' => q(ቱርክሜኒስታኒ ማናት),
 				'one' => q(ቱርክሜኒስታኒ ማናት),
@@ -2962,6 +3978,7 @@ has 'curriencies' => (
 			},
 		},
 		'TND' => {
+			symbol => 'TND',
 			display_name => {
 				'currency' => q(የቱኒዚያ ዲናር),
 				'one' => q(የቱኒዚያ ዲናር),
@@ -2969,11 +3986,15 @@ has 'curriencies' => (
 			},
 		},
 		'TOP' => {
+			symbol => 'TOP',
 			display_name => {
-				'currency' => q(ቶንጋን ፓ'አንጋ),
+				'currency' => q(ቶንጋን ፓ’አንጋ),
+				'one' => q(ቶንጋን ፓ’አንጋ),
+				'other' => q(ቶንጋን ፓ’አንጋ),
 			},
 		},
 		'TRY' => {
+			symbol => 'TRY',
 			display_name => {
 				'currency' => q(የቱርክ ሊራ),
 				'one' => q(የቱርክ ሊራ),
@@ -2981,6 +4002,7 @@ has 'curriencies' => (
 			},
 		},
 		'TTD' => {
+			symbol => 'TTD',
 			display_name => {
 				'currency' => q(የትሪንዳድ እና ቶቤጎዶላር),
 				'one' => q(የትሪንዳድ እና ቶቤጎዶላር),
@@ -2996,6 +4018,7 @@ has 'curriencies' => (
 			},
 		},
 		'TZS' => {
+			symbol => 'TZS',
 			display_name => {
 				'currency' => q(የታንዛኒያ ሺሊንግ),
 				'one' => q(የታንዛኒያ ሺሊንግ),
@@ -3003,6 +4026,7 @@ has 'curriencies' => (
 			},
 		},
 		'UAH' => {
+			symbol => 'UAH',
 			display_name => {
 				'currency' => q(የዩክሬን ሀሪይቭኒአ),
 				'one' => q(የዩክሬን ሀሪይቭኒአ),
@@ -3010,6 +4034,7 @@ has 'curriencies' => (
 			},
 		},
 		'UGX' => {
+			symbol => 'UGX',
 			display_name => {
 				'currency' => q(የዩጋንዳ ሺሊንግ),
 				'one' => q(የዩጋንዳ ሺሊንግ),
@@ -3025,6 +4050,7 @@ has 'curriencies' => (
 			},
 		},
 		'UYU' => {
+			symbol => 'UYU',
 			display_name => {
 				'currency' => q(የኡራጓይ ፔሶ),
 				'one' => q(የኡራጓይ ፔሶ),
@@ -3032,6 +4058,7 @@ has 'curriencies' => (
 			},
 		},
 		'UZS' => {
+			symbol => 'UZS',
 			display_name => {
 				'currency' => q(የኡዝፔኪስታን ሶም),
 				'one' => q(የኡዝፔኪስታን ሶም),
@@ -3039,6 +4066,7 @@ has 'curriencies' => (
 			},
 		},
 		'VEF' => {
+			symbol => 'VEF',
 			display_name => {
 				'currency' => q(የቬንዝዌላ ቦሊቫር),
 				'one' => q(የቬንዝዌላ ቦሊቫር),
@@ -3054,6 +4082,7 @@ has 'curriencies' => (
 			},
 		},
 		'VUV' => {
+			symbol => 'VUV',
 			display_name => {
 				'currency' => q(የቫንዋንቱ ቫቱ),
 				'one' => q(የቫንዋንቱ ቫቱ),
@@ -3061,8 +4090,11 @@ has 'curriencies' => (
 			},
 		},
 		'WST' => {
+			symbol => 'WST',
 			display_name => {
 				'currency' => q(ሳሞአን ታላ),
+				'one' => q(ሳሞአን ታላ),
+				'other' => q(ሳሞአን ታላ),
 			},
 		},
 		'XAF' => {
@@ -3100,9 +4132,12 @@ has 'curriencies' => (
 		'XXX' => {
 			display_name => {
 				'currency' => q(ያልታወቀ ገንዘብ),
+				'one' => q(ያልታወቀ ገንዘብ),
+				'other' => q(ያልታወቀ ገንዘብ),
 			},
 		},
 		'YER' => {
+			symbol => 'YER',
 			display_name => {
 				'currency' => q(የየመን ሪአል),
 				'one' => q(የየመን ሪአል),
@@ -3110,6 +4145,7 @@ has 'curriencies' => (
 			},
 		},
 		'ZAR' => {
+			symbol => 'ZAR',
 			display_name => {
 				'currency' => q(የደቡብ አፍሪካ ራንድ),
 				'one' => q(የደቡብ አፍሪካ ራንድ),
@@ -3124,6 +4160,7 @@ has 'curriencies' => (
 			},
 		},
 		'ZMW' => {
+			symbol => 'ZMW',
 			display_name => {
 				'currency' => q(የዛምቢያ ክዋቻ),
 				'one' => q(የዛምቢያ ክዋቻ),
@@ -3283,7 +4320,7 @@ has 'calendar_months' => (
 							'ጁላይ',
 							'ኦገስ',
 							'ሴፕቴ',
-							'ኦክተ',
+							'ኦክቶ',
 							'ኖቬም',
 							'ዲሴም'
 						],
@@ -3321,7 +4358,7 @@ has 'calendar_months' => (
 							'ጁላይ',
 							'ኦገስት',
 							'ሴፕቴምበር',
-							'ኦክተውበር',
+							'ኦክቶበር',
 							'ኖቬምበር',
 							'ዲሴምበር'
 						],
@@ -3553,8 +4590,14 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
+				'narrow' => {
+					'pm' => q{ከ},
+					'noon' => q{ቀ},
+					'am' => q{ጠ},
+				},
 				'wide' => {
 					'pm' => q{ከሰዓት},
+					'noon' => q{ቀትር},
 					'am' => q{ጥዋት},
 				},
 			},
@@ -3672,6 +4715,44 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'gregorian' => {
+			E => q{ccc},
+			EHm => q{E HH:mm},
+			EHms => q{E HH:mm:ss},
+			Ed => q{E d},
+			Ehm => q{E h:mm a},
+			Ehms => q{E h:mm:ss a},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E፣ MMM d፣ y G},
+			GyMMMd => q{MMM d፣ y G},
+			H => q{H},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, M/d},
+			MMM => q{LLL},
+			MMMEd => q{E, MMM d},
+			MMMMEd => q{E, MMMM d},
+			MMMMd => q{MMMM d},
+			MMMd => q{MMM d},
+			Md => q{M/d},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y},
+			yM => q{M/y},
+			yMEd => q{E፣ d/M/y},
+			yMMM => q{MMM y},
+			yMMMEd => q{E፣ MMM d y},
+			yMMMM => q{MMMM y},
+			yMMMd => q{d MMM y},
+			yMd => q{d/M/y},
+			yQQQ => q{QQQ y},
+			yQQQQ => q{QQQQ y},
+		},
 		'generic' => {
 			Ed => q{E d},
 			Gy => q{y G},
@@ -3714,43 +4795,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{G y QQQ},
 			yyyyQQQQ => q{G y QQQQ},
 		},
-		'gregorian' => {
-			EHm => q{E HH:mm},
-			EHms => q{E HH:mm:ss},
-			Ed => q{E d},
-			Ehm => q{E h:mm a},
-			Ehms => q{E h:mm:ss a},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E፣ MMM d፣ y G},
-			GyMMMd => q{MMM d፣ y G},
-			H => q{H},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, M/d},
-			MMM => q{LLL},
-			MMMEd => q{E, MMM d},
-			MMMMEd => q{E, MMMM d},
-			MMMMd => q{MMMM d},
-			MMMd => q{MMM d},
-			Md => q{M/d},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y},
-			yM => q{M/y},
-			yMEd => q{E፣ d/M/y},
-			yMMM => q{MMM y},
-			yMMMEd => q{E፣ MMM d y},
-			yMMMM => q{MMMM y},
-			yMMMd => q{d MMM y},
-			yMd => q{d/M/y},
-			yQQQ => q{QQQ y},
-			yQQQQ => q{QQQQ y},
-		},
 	} },
 );
 
@@ -3770,7 +4814,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH–HH},
 			},
@@ -3865,7 +4909,7 @@ has 'datetime_formats_interval' => (
 				y => q{d/M/y – d/M/y},
 			},
 		},
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH–HH},
 			},
@@ -4098,7 +5142,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#ማሴሩ#,
 		},
 		'Africa/Mbabane' => {
-			exemplarCity => q#ምባቤን#,
+			exemplarCity => q#ምባባኔ#,
 		},
 		'Africa/Mogadishu' => {
 			exemplarCity => q#ሞቃዲሹ#,
@@ -4134,7 +5178,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#ቱኒዝ#,
 		},
 		'Africa/Windhoek' => {
-			exemplarCity => q#ዊንድሆይክ#,
+			exemplarCity => q#ዊንድሆክ#,
 		},
 		'Africa_Central' => {
 			long => {
@@ -4530,7 +5574,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#ረጂና#,
 		},
 		'America/Resolute' => {
-			exemplarCity => q#ቆራጥ#,
+			exemplarCity => q#ሪዞሊዩት#,
 		},
 		'America/Rio_Branco' => {
 			exemplarCity => q#ሪዮ ብራንኮ#,
@@ -4548,7 +5592,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#ሳንቶ ዶሚንጎ#,
 		},
 		'America/Sao_Paulo' => {
-			exemplarCity => q#ሴኦ ፖሎ#,
+			exemplarCity => q#ሳኦ ፖሎ#,
 		},
 		'America/Scoresbysund' => {
 			exemplarCity => q#ስኮርስባይሰንድ#,
@@ -4672,8 +5716,18 @@ has 'time_zone_names' => (
 		'Antarctica/Syowa' => {
 			exemplarCity => q#ስዮዋ#,
 		},
+		'Antarctica/Troll' => {
+			exemplarCity => q#ትሮል#,
+		},
 		'Antarctica/Vostok' => {
 			exemplarCity => q#ቭስቶክ#,
+		},
+		'Apia' => {
+			long => {
+				'daylight' => q(የአፒያ የቀን ጊዜ ሰዓት),
+				'generic' => q(የአፒያ ሰዓት),
+				'standard' => q(የአፒያ መደበኛ ሰዓት),
+			},
 		},
 		'Arabian' => {
 			long => {
@@ -5207,7 +6261,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#ብራቲስላቫ#,
 		},
 		'Europe/Brussels' => {
-			exemplarCity => q#ብራስል#,
+			exemplarCity => q#ብራሰልስ#,
 		},
 		'Europe/Bucharest' => {
 			exemplarCity => q#ቡካሬስት#,
@@ -5226,6 +6280,9 @@ has 'time_zone_names' => (
 		},
 		'Europe/Dublin' => {
 			exemplarCity => q#ደብሊን#,
+			long => {
+				'daylight' => q(የአይሪሽ መደበኛ ሰዓት አቆጣጠር),
+			},
 		},
 		'Europe/Gibraltar' => {
 			exemplarCity => q#ጂብራልታር#,
@@ -5259,6 +6316,9 @@ has 'time_zone_names' => (
 		},
 		'Europe/London' => {
 			exemplarCity => q#ለንደን#,
+			long => {
+				'daylight' => q(የብሪትሽ የበጋ ሰዓት አቆጣጠር),
+			},
 		},
 		'Europe/Luxembourg' => {
 			exemplarCity => q#ሉክሰምበርግ#,
@@ -5345,10 +6405,10 @@ has 'time_zone_names' => (
 			exemplarCity => q#ቮልጎራድ#,
 		},
 		'Europe/Warsaw' => {
-			exemplarCity => q#ዋርሳው#,
+			exemplarCity => q#ዋርሶው#,
 		},
 		'Europe/Zagreb' => {
-			exemplarCity => q#ዛግረብ#,
+			exemplarCity => q#ዛግሬብ#,
 		},
 		'Europe/Zaporozhye' => {
 			exemplarCity => q#ዛፖሮዚይ#,
@@ -5368,6 +6428,11 @@ has 'time_zone_names' => (
 				'daylight' => q(የምስራቃዊ አውሮፓ ክረምት ሰዓት),
 				'generic' => q(የምስራቃዊ አውሮፓ ሰዓት),
 				'standard' => q(የምስራቃዊ አውሮፓ መደበኛ ሰዓት),
+			},
+		},
+		'Europe_Further_Eastern' => {
+			long => {
+				'standard' => q(የሩቅ ምስራቅ የአውሮፓ ሰዓት),
 			},
 		},
 		'Europe_Western' => {
@@ -5659,6 +6724,20 @@ has 'time_zone_names' => (
 		'Mawson' => {
 			long => {
 				'standard' => q(የማውሰን ሰዓት),
+			},
+		},
+		'Mexico_Northwest' => {
+			long => {
+				'daylight' => q(ሰሜናዊ ምእራብ የሜክሲኮ የቀን ሰዓት አቆጣጠር),
+				'generic' => q(ሰሜናዊ ምእራብ የሜክሲኮ ሰዓት አቆጣጠር),
+				'standard' => q(ሰሜናዊ ምእራብ የሜክሲኮ መደበኛ ሰዓት አቆጣጠር),
+			},
+		},
+		'Mexico_Pacific' => {
+			long => {
+				'daylight' => q(የሜክሲኮ ፓሲፊክ የቀን ሰዓት አቆጣጠር),
+				'generic' => q(የሜክሲኮ ፓሲፊክ ሰዓት አቆጣጠር),
+				'standard' => q(የሜክሲኮ ፓሲፊክ መደበኛ ሰዓት አቆጣጠር),
 			},
 		},
 		'Mongolia' => {

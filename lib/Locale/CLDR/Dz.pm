@@ -1,11 +1,11 @@
 package Locale::CLDR::Dz;
 # This file auto generated from Data\common\main\dz.xml
-#	on Fri 20 Jun 11:13:38 pm GMT
-# XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
+#	on Thu  2 Oct 10:48:50 am GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -733,25 +733,55 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'day' => {
+						'' => q(ཉིན་ཞག་),
 						'other' => q(ཉིན་ཞག་ {0}),
 					},
 					'hour' => {
+						'' => q(ཆུ་ཚོད་),
 						'other' => q(ཆུ་ཚོད་ {0}),
 					},
 					'minute' => {
+						'' => q(སྐར་མ་),
 						'other' => q(སྐར་མ་ {0}),
 					},
 					'month' => {
+						'' => q(ཟླཝ་),
 						'other' => q(ཟླཝ་ {0}),
 					},
 					'second' => {
+						'' => q(སྐར་ཆ་),
 						'other' => q(སྐར་ཆ་ {0}),
 					},
 					'week' => {
+						'' => q(བངུན་ཕྲག་),
 						'other' => q(བངུན་ཕྲག་ {0}),
 					},
 					'year' => {
+						'' => q(ལོ་འཁོར་),
 						'other' => q(ལོ་འཁོར་ {0}),
+					},
+				},
+				'short' => {
+					'day' => {
+						'' => q(ཉིན་ཞག་),
+					},
+					'hour' => {
+						'' => q(ཆུ་ཚོད་),
+					},
+					'minute' => {
+						'' => q(སྐར་མ་),
+					},
+					'month' => {
+						'' => q(ཟླཝ་),
+					},
+					'second' => {
+						'' => q(སྐར་ཆ་),
+					},
+					'week' => {
+						'' => q(བངུན་ཕྲག་),
+					},
+					'year' => {
+						'' => q(ལོ་འཁོར་),
 					},
 				},
 			} }
@@ -813,7 +843,6 @@ has 'number_symbols' => (
 			'perMille' => q(‰),
 			'percentSign' => q(%),
 			'plusSign' => q(+),
-			'superscriptingExponent' => q(),
 		},
 		'tibt' => {
 			'decimal' => q(.),
@@ -826,7 +855,6 @@ has 'number_symbols' => (
 			'perMille' => q(‰),
 			'percentSign' => q(%),
 			'plusSign' => q(+),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -1616,13 +1644,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'pm' => q{ཕྱི་ཆ་},
-					'am' => q{སྔ་ཆ་},
-				},
 				'narrow' => {
 					'pm' => q{ཕྱི་ཆ་},
 					'am' => q{སྔ་ཆ་},
+				},
+				'wide' => {
+					'am' => q{སྔ་ཆ་},
+					'pm' => q{ཕྱི་ཆ་},
 				},
 			},
 		},

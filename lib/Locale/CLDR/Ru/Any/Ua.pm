@@ -1,11 +1,11 @@
 package Locale::CLDR::Ru::Any::Ua;
 # This file auto generated from Data\common\main\ru_UA.xml
-#	on Sat 21 Jun 12:59:38 am GMT
-# XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
+#	on Thu  2 Oct  1:33:54 pm GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -100,9 +100,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			yyyyMMMd => q{d MMM y G},
-		},
 		'gregorian' => {
 			yMMMd => q{d MMM y},
 		},
@@ -122,7 +119,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH-HH 'ч'.},
 			},
@@ -163,7 +160,7 @@ has 'datetime_formats_interval' => (
 				y => q{d MMM y - d MMM y},
 			},
 		},
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH-HH 'ч'.},
 			},

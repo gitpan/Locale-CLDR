@@ -1,11 +1,11 @@
 package Locale::CLDR::Ms::Latn::Sg;
 # This file auto generated from Data\common\main\ms_Latn_SG.xml
-#	on Sat 21 Jun 12:35:47 am GMT
-# XML file generated 2013-08-21 15:03:23 -0500 (Wed, 21 Aug 2013)
+#	on Thu  2 Oct  1:04:32 pm GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';

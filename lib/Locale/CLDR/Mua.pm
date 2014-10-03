@@ -1,11 +1,11 @@
 package Locale::CLDR::Mua;
 # This file auto generated from Data\common\main\mua.xml
-#	on Sat 21 Jun 12:35:57 am GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct  1:04:42 pm GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -383,16 +383,7 @@ has 'number_symbols' => (
 	default		=> sub { {
 		'latn' => {
 			'decimal' => q(,),
-			'exponential' => q(),
 			'group' => q(.),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -824,7 +815,7 @@ has 'calendar_days' => (
 						thu => 'Comkaldǝɓlii',
 						fri => 'Comgaisuu',
 						sat => 'Comzyeɓsuu',
-						sun => 'Com\'yakke'
+						sun => 'Com’yakke'
 					},
 				},
 				'stand-alone' => {
@@ -857,7 +848,7 @@ has 'calendar_quarters' => (
 					wide => {0 => 'Tai fĩi sai ma tǝn kee zah',
 						1 => 'Tai fĩi sai zah lǝn gwa ma kee',
 						2 => 'Tai fĩi sai zah lǝn sai ma kee',
-						3 => 'Tai fĩi sai ma coo kee zah \'na'
+						3 => 'Tai fĩi sai ma coo kee zah ‘na'
 					},
 				},
 			},
@@ -872,8 +863,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{comme},
 					'pm' => q{lilli},
+					'am' => q{comme},
 				},
 			},
 		},
@@ -953,7 +944,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -977,7 +968,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},

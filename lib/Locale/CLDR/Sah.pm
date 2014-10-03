@@ -1,11 +1,11 @@
 package Locale::CLDR::Sah;
 # This file auto generated from Data\common\main\sah.xml
-#	on Sat 21 Jun 12:59:42 am GMT
-# XML file generated 2013-08-10 01:39:57 -0500 (Sat, 10 Aug 2013)
+#	on Thu  2 Oct  1:33:59 pm GMT
+# XML file generated 2014-08-11 11:10:03 -0500 (Mon, 11 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -163,28 +163,84 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'day' => {
+						'' => q(күн),
 						'other' => q({0} күн),
 					},
 					'hour' => {
+						'' => q(чаас),
 						'other' => q({0} чаас),
 					},
 					'minute' => {
+						'' => q(мүнүүтэ),
 						'other' => q({0} мүнүүтэ),
 					},
 					'month' => {
+						'' => q(ый),
 						'other' => q({0} ый),
 					},
 					'second' => {
+						'' => q(сөкүүндэ),
 						'other' => q({0} сөкүүндэ),
 					},
 					'week' => {
+						'' => q(нэдиэлэ),
 						'other' => q({0} нэдиэлэ),
 					},
 					'year' => {
+						'' => q(сыл),
 						'other' => q({0} сыл),
 					},
 				},
+				'short' => {
+					'day' => {
+						'' => q(күн),
+					},
+					'hour' => {
+						'' => q(чаас),
+					},
+					'minute' => {
+						'' => q(мүнүүтэ),
+					},
+					'month' => {
+						'' => q(ый),
+					},
+					'second' => {
+						'' => q(сөкүүндэ),
+					},
+					'week' => {
+						'' => q(нэдиэлэ),
+					},
+					'year' => {
+						'' => q(сыл),
+					},
+				},
 			} }
+);
+
+has 'default_numbering_system' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has native_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has 'number_symbols' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'decimal' => q(.),
+			'group' => q(,),
+		},
+	} }
 );
 
 has 'curriencies' => (
@@ -385,8 +441,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{ЭК},
 					'am' => q{ЭИ},
+					'pm' => q{ЭК},
 				},
 			},
 		},
@@ -437,6 +493,8 @@ has 'time_formats' => (
 		'generic' => {
 		},
 		'gregorian' => {
+			'long' => q{HH:mm:ss z},
+			'medium' => q{HH:mm:ss},
 		},
 	} },
 );
@@ -458,6 +516,9 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'gregorian' => {
+			y => q{y},
+		},
 	} },
 );
 
@@ -477,6 +538,16 @@ has 'datetime_formats_interval' => (
 	} },
 );
 
+has 'time_zone_names' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default	=> sub { {
+		'Etc/Unknown' => {
+			exemplarCity => q#Биллибэт#,
+		},
+	 } }
+);
 no Moose;
 __PACKAGE__->meta->make_immutable;
 

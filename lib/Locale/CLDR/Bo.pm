@@ -1,11 +1,11 @@
 package Locale::CLDR::Bo;
 # This file auto generated from Data\common\main\bo.xml
-#	on Fri 20 Jun 10:57:56 pm GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct 10:24:35 am GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -23,7 +23,7 @@ has 'display_name_language' => (
 		 sub {
 			 my %languages = (
 				'bn' => 'བྷང་ག་ལའི་སྐད།',
- 				'bo' => 'པོད་སྐད་',
+ 				'bo' => 'བོད་སྐད་',
  				'da' => 'ཏེན་མག་གི་སྐད།',
  				'de' => 'འཇར་མན་གྱི།',
  				'dz' => 'རྫོང་ཁ',
@@ -392,29 +392,11 @@ has 'number_symbols' => (
 	default		=> sub { {
 		'latn' => {
 			'decimal' => q(.),
-			'exponential' => q(),
 			'group' => q(,),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
 			'nan' => q(NaN),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 		'tibt' => {
-			'decimal' => q(),
-			'exponential' => q(),
-			'group' => q(),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
 			'nan' => q(ཨང་མེན་),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -549,27 +531,27 @@ has 'calendar_days' => (
 					abbreviated => {
 						mon => 'ཟླ་བ་',
 						tue => 'མིག་དམར་',
-						wed => 'ཧླག་པ་',
+						wed => 'ལྷག་པ་',
 						thu => 'ཕུར་བུ་',
-						fri => 'སངས་',
+						fri => 'པ་སངས་',
 						sat => 'སྤེན་པ་',
 						sun => 'ཉི་མ་'
 					},
 					narrow => {
 						mon => 'ཟླ',
 						tue => 'མི',
-						wed => 'ཧླག',
+						wed => 'ལྷ',
 						thu => 'ཕུ',
-						fri => 'ས',
+						fri => 'པ',
 						sat => 'སྤེ',
 						sun => 'ཉི'
 					},
 					wide => {
 						mon => 'གཟའ་ཟླ་བ་',
 						tue => 'གཟའ་མིག་དམར་',
-						wed => 'གཟའ་ཧླག་པ་',
+						wed => 'གཟའ་ལྷག་པ་',
 						thu => 'གཟའ་ཕུར་བུ་',
-						fri => 'གཟའ་སངས་',
+						fri => 'གཟའ་པ་སངས་',
 						sat => 'གཟའ་སྤེན་པ་',
 						sun => 'གཟའ་ཉི་མ་'
 					},
@@ -578,27 +560,27 @@ has 'calendar_days' => (
 					abbreviated => {
 						mon => 'ཟླ་བ་',
 						tue => 'མིག་དམར་',
-						wed => 'ཧླག་པ་',
+						wed => 'ལྷག་པ་',
 						thu => 'ཕུར་བུ་',
-						fri => 'སངས་',
+						fri => 'པ་སངས་',
 						sat => 'སྤེན་པ་',
 						sun => 'ཉི་མ་'
 					},
 					narrow => {
 						mon => 'ཟླ',
 						tue => 'མི',
-						wed => 'ཧླ',
+						wed => 'ལྷ',
 						thu => 'ཕུ',
-						fri => 'ས',
+						fri => 'པ',
 						sat => 'སྤེ',
 						sun => 'ཉི'
 					},
 					wide => {
 						mon => 'གཟའ་ཟླ་བ་',
 						tue => 'གཟའ་མིག་དམར་',
-						wed => 'གཟའ་ཧླག་པ་',
+						wed => 'གཟའ་ལྷག་པ་',
 						thu => 'གཟའ་ཕུར་བུ་',
-						fri => 'གཟའ་སངས་',
+						fri => 'གཟའ་པ་སངས་',
 						sat => 'གཟའ་སྤེན་པ་',
 						sun => 'གཟའ་ཉི་མ་'
 					},
@@ -649,8 +631,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{སྔ་དྲོ་},
 					'pm' => q{ཕྱི་དྲོ་},
+					'am' => q{སྔ་དྲོ་},
 				},
 			},
 		},
@@ -679,11 +661,11 @@ has 'date_formats' => (
 	init_arg	=> undef,
 	default		=> sub { {
 		'generic' => {
-			'long' => q{G སྦྱི་ལོ་y MMMMའི་ཙེས་dད},
+			'long' => q{G སྤྱི་ལོ་y MMMMའི་ཙེས་dད},
 			'medium' => q{G y ལོ་འི་MMMཙེས་d},
 		},
 		'gregorian' => {
-			'long' => q{སྦྱི་ལོ་y MMMMའི་ཙེས་dད},
+			'long' => q{སྤྱི་ལོ་y MMMMའི་ཙེས་dད},
 			'medium' => q{y ལོ་འི་MMMཙེས་d},
 		},
 	} },
@@ -719,12 +701,13 @@ has 'datetime_formats_available_formats' => (
 	init_arg	=> undef,
 	default		=> sub { {
 		'gregorian' => {
-			yMMMMd => q{སྦྱི་ལོ་y MMMMའི་ཙེས་dད},
+			yMMMMd => q{སྤྱི་ལོ་y MMMMའི་ཙེས་dད},
 			yMMMd => q{y ལོ་འི་MMMཙེས་d},
 		},
 		'generic' => {
-			yMMMMd => q{སྦྱི་ལོ་y MMMMའི་ཙེས་dད},
-			yMMMd => q{y ལོ་འི་MMMཙེས་d},
+			yMMMMd => q{G སྤྱི་ལོ་y MMMMའི་ཙེས་dད},
+			yMMMd => q{G y ལོ་འི་MMMཙེས་d},
+			yyyyMMMd => q{G y ལོ་འི་MMMཙེས་d},
 		},
 	} },
 );

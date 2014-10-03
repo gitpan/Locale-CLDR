@@ -1,11 +1,11 @@
 package Locale::CLDR::Ak;
 # This file auto generated from Data\common\main\ak.xml
-#	on Fri 20 Jun 10:44:42 pm GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct 10:08:55 am GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -120,7 +120,7 @@ has 'display_name_territory' => (
  			'CF' => 'Afrika Finimfin Man',
  			'CG' => 'Kongo',
  			'CH' => 'Swetzaland',
- 			'CI' => 'La Côte d\'Ivoire',
+ 			'CI' => 'La Côte d’Ivoire',
  			'CK' => 'Kook Nsupɔw',
  			'CL' => 'Kyili',
  			'CM' => 'Kamɛrun',
@@ -382,16 +382,7 @@ has 'number_symbols' => (
 	default		=> sub { {
 		'latn' => {
 			'decimal' => q(.),
-			'exponential' => q(),
 			'group' => q(,),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );

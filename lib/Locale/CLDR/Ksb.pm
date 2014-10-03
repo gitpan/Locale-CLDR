@@ -1,11 +1,11 @@
 package Locale::CLDR::Ksb;
 # This file auto generated from Data\common\main\ksb.xml
-#	on Sat 21 Jun 12:14:54 am GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct 12:11:12 pm GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -809,7 +809,7 @@ has 'calendar_quarters' => (
 					},
 					wide => {0 => 'Lobo ya bosi',
 						1 => 'Lobo ya mbii',
-						2 => 'Lobo ya nnd\'atu',
+						2 => 'Lobo ya nnd’atu',
 						3 => 'Lobo ya nne'
 					},
 				},
@@ -825,8 +825,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{nyiaghuo},
 					'am' => q{makeo},
+					'pm' => q{nyiaghuo},
 				},
 			},
 		},

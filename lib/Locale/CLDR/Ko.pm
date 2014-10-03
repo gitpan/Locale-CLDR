@@ -1,11 +1,11 @@
 package Locale::CLDR::Ko;
 # This file auto generated from Data\common\main\ko.xml
-#	on Sat 21 Jun 12:09:39 am GMT
-# XML file generated 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014)
+#	on Thu  2 Oct 12:05:55 pm GMT
+# XML file generated 2014-09-03 21:52:43 -0500 (Wed, 03 Sep 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -1290,7 +1290,8 @@ has 'display_name_language' => (
  				'ada' => '아당메어',
  				'ady' => '아닥헤어',
  				'ae' => '아베스타어',
- 				'af' => '남아공 공용어',
+ 				'aeb' => '튀니지 아랍어',
+ 				'af' => '아프리칸스어',
  				'afh' => '아프리히리어',
  				'agq' => '아그햄어',
  				'ain' => '아이누어',
@@ -1307,7 +1308,10 @@ has 'display_name_language' => (
  				'arc' => '아람어',
  				'arn' => '아라우칸어',
  				'arp' => '아라파호어',
+ 				'arq' => '알제리 아랍어',
  				'arw' => '아라와크어',
+ 				'ary' => '모로코 아랍어',
+ 				'arz' => '이집트 아랍어',
  				'as' => '아샘어',
  				'asa' => '아수어',
  				'ast' => '아스투리아어',
@@ -1316,6 +1320,7 @@ has 'display_name_language' => (
  				'ay' => '아이마라어',
  				'az' => '아제르바이잔어',
  				'az@alt=short' => '아제리어',
+ 				'azb' => '남아제르바이잔어',
  				'ba' => '바슈키르어',
  				'bal' => '발루치어',
  				'ban' => '발리어',
@@ -1339,6 +1344,7 @@ has 'display_name_language' => (
  				'bo' => '티베트어',
  				'br' => '브르타뉴어',
  				'bra' => '브라지어',
+ 				'brh' => '브라후이어',
  				'brx' => '보도어',
  				'bs' => '보스니아어',
  				'bss' => '아쿠즈어',
@@ -1406,7 +1412,6 @@ has 'display_name_language' => (
  				'en_AU' => '영어(호주)',
  				'en_CA' => '영어 (캐나다)',
  				'en_GB' => '영어 (영국식)',
- 				'en_US' => '영어 (미국식)',
  				'enm' => '영어, 중세',
  				'eo' => '에스페란토어',
  				'es' => '스페인어',
@@ -1435,15 +1440,19 @@ has 'display_name_language' => (
  				'fy' => '프리지아어',
  				'ga' => '아일랜드어',
  				'gaa' => '가어',
+ 				'gag' => '가가우스어',
  				'gay' => '가요어',
  				'gba' => '그바야어',
+ 				'gbz' => '조로아스터 다리어',
  				'gd' => '스코틀랜드 게일어',
  				'gez' => '게이즈어',
  				'gil' => '키리바시어',
  				'gl' => '갈리시아어',
+ 				'glk' => '길라키어',
  				'gmh' => '중세 고지 독일어',
  				'gn' => '과라니어',
  				'goh' => '고대 고지 독일어',
+ 				'gom' => '고아 콘칸어',
  				'gon' => '곤디어',
  				'gor' => '고론탈로어',
  				'got' => '고트어',
@@ -1459,6 +1468,7 @@ has 'display_name_language' => (
  				'haw' => '하와이어',
  				'he' => '히브리어',
  				'hi' => '힌디어',
+ 				'hif' => '피지 힌디어',
  				'hil' => '헤리가뇬어',
  				'hit' => '하타이트어',
  				'hmn' => '히몸어',
@@ -1486,6 +1496,7 @@ has 'display_name_language' => (
  				'iu' => '이눅티투트어',
  				'ja' => '일본어',
  				'jbo' => '로반어',
+ 				'jgo' => '응곰바어',
  				'jmc' => '마차메어',
  				'jpr' => '유대-페르시아어',
  				'jrb' => '유대-아라비아어',
@@ -1507,6 +1518,7 @@ has 'display_name_language' => (
  				'kha' => '카시어',
  				'kho' => '호탄어',
  				'khq' => '코이라 친니어',
+ 				'khw' => '코와르어',
  				'ki' => '키쿠유어',
  				'kj' => '쿠안야마어',
  				'kk' => '카자흐어',
@@ -1517,6 +1529,7 @@ has 'display_name_language' => (
  				'kmb' => '킴분두어',
  				'kn' => '칸나다어',
  				'ko' => '한국어',
+ 				'koi' => '코미페르먀크어',
  				'kok' => '코카니어',
  				'kos' => '코스라이엔어',
  				'kpe' => '크펠레어',
@@ -1541,8 +1554,10 @@ has 'display_name_language' => (
  				'lam' => '람바어',
  				'lb' => '룩셈부르크어',
  				'lez' => '레즈기안어',
+ 				'lfn' => '링구아 프랑카 노바',
  				'lg' => '간다어',
  				'li' => '림버거어',
+ 				'lkt' => '라코타어',
  				'ln' => '링갈라어',
  				'lo' => '라오어',
  				'lol' => '몽구어',
@@ -1572,6 +1587,7 @@ has 'display_name_language' => (
  				'mg' => '말라가시어',
  				'mga' => '아일랜드어, 중세',
  				'mgh' => '마크후와-메토어',
+ 				'mgo' => '메타어',
  				'mh' => '마셜제도어',
  				'mi' => '마오리어',
  				'mic' => '미크맥어',
@@ -1584,6 +1600,7 @@ has 'display_name_language' => (
  				'moh' => '모호크어',
  				'mos' => '모시어',
  				'mr' => '마라티어',
+ 				'mrj' => '서부 마리어',
  				'ms' => '말레이어',
  				'mt' => '몰타어',
  				'mua' => '문당어',
@@ -1594,6 +1611,7 @@ has 'display_name_language' => (
  				'my' => '버마어',
  				'mye' => '미예네어',
  				'myv' => '엘즈야어',
+ 				'mzn' => '마잔데라니어',
  				'na' => '나우루어',
  				'nap' => '나폴리어',
  				'naq' => '나마어',
@@ -1641,6 +1659,7 @@ has 'display_name_language' => (
  				'phn' => '페니키아어',
  				'pi' => '팔리어',
  				'pl' => '폴란드어',
+ 				'pnt' => '폰틱어',
  				'pon' => '폼페이어',
  				'pro' => '고대 프로방스어',
  				'ps' => '파슈토어',
@@ -1648,6 +1667,7 @@ has 'display_name_language' => (
  				'pt_BR' => '포르투갈어 (브라질)',
  				'pt_PT' => '유럽식 포르투갈어',
  				'qu' => '케추아어',
+ 				'quc' => '키체어',
  				'raj' => '라자스탄어',
  				'rap' => '라파뉴이',
  				'rar' => '라로통가어',
@@ -1659,6 +1679,7 @@ has 'display_name_language' => (
  				'rom' => '집시어',
  				'root' => '어근',
  				'ru' => '러시아어',
+ 				'rue' => '루신어',
  				'rup' => '아로마니아어',
  				'rw' => '르완다어',
  				'rwk' => '르와어',
@@ -1722,16 +1743,18 @@ has 'display_name_language' => (
  				'teo' => '테조어',
  				'ter' => '테레노어',
  				'tet' => '테툼어',
- 				'tg' => '타지키스탄어',
+ 				'tg' => '타지크어',
  				'th' => '태국어',
  				'ti' => '티그리냐어',
  				'tig' => '티그레어',
  				'tiv' => '티비어',
  				'tk' => '투르크멘어',
  				'tkl' => '토켈라우제도어',
+ 				'tkr' => '차후르어',
  				'tl' => '타갈로그어',
  				'tlh' => '클링온어',
  				'tli' => '틀링깃족어',
+ 				'tly' => '탈리쉬어',
  				'tmh' => '타마섹어',
  				'tn' => '세츠와나어',
  				'to' => '통가어',
@@ -1809,6 +1832,7 @@ has 'display_name_script' => (
 		sub {
 			my %scripts = (
 			'Afak' => '아파카 문자',
+ 			'Aghb' => '코카시안 알바니아 문자',
  			'Arab' => '아랍 문자',
  			'Arab@alt=variant' => '페르소-아라비아어',
  			'Armi' => '아랍제국 문자',
@@ -1841,6 +1865,7 @@ has 'display_name_script' => (
  			'Egyd' => '고대 이집트 민중문자',
  			'Egyh' => '고대 이집트 신관문자',
  			'Egyp' => '고대 이집트 신성문자',
+ 			'Elba' => '엘바산 문자',
  			'Ethi' => '에티오피아 문자',
  			'Geok' => '그루지야 쿠츠리 문자',
  			'Geor' => '그루지야 문자',
@@ -1890,6 +1915,7 @@ has 'display_name_script' => (
  			'Loma' => '로마 문자',
  			'Lyci' => '리키아 문자',
  			'Lydi' => '리디아 문자',
+ 			'Mahj' => '마하자니 문자',
  			'Mand' => '만다이아 문자',
  			'Mani' => '마니교 문자',
  			'Maya' => '마야 상형 문자',
@@ -1931,6 +1957,7 @@ has 'display_name_script' => (
  			'Sgnw' => '수화 문자',
  			'Shaw' => '샤비안 문자',
  			'Shrd' => '사라다 문자',
+ 			'Sidd' => '실담자',
  			'Sind' => '쿠다와디 문자',
  			'Sinh' => '신할라 문자',
  			'Sora' => '소라 솜펭 문자',
@@ -1998,10 +2025,10 @@ has 'display_name_territory' => (
  			'018' => '남부 아프리카',
  			'019' => '아메리카 대륙',
  			'021' => '북부 아메리카',
- 			'029' => '카리브 해 제도',
+ 			'029' => '카리브 제도',
  			'030' => '동아시아',
  			'034' => '남아시아',
- 			'035' => '동남 아시아',
+ 			'035' => '동남아시아',
  			'039' => '남유럽',
  			'053' => '오스트랄라시아',
  			'054' => '멜라네시아',
@@ -2146,7 +2173,7 @@ has 'display_name_territory' => (
  			'KH' => '캄보디아',
  			'KI' => '키리바시',
  			'KM' => '코모로스',
- 			'KN' => '세인트크리스토퍼 네비스',
+ 			'KN' => '세인트 키츠 네비스',
  			'KP' => '조선 민주주의 인민 공화국',
  			'KR' => '대한민국',
  			'KW' => '쿠웨이트',
@@ -2208,8 +2235,8 @@ has 'display_name_territory' => (
  			'PH' => '필리핀',
  			'PK' => '파키스탄',
  			'PL' => '폴란드',
- 			'PM' => '세인트피에르-미케롱',
- 			'PN' => '핏케언섬',
+ 			'PM' => '생피에르 미클롱',
+ 			'PN' => '핏케언 섬',
  			'PR' => '푸에르토리코',
  			'PS' => '팔레스타인 지구',
  			'PS@alt=short' => '팔레스타인',
@@ -2283,7 +2310,7 @@ has 'display_name_territory' => (
  			'ZA' => '남아프리카',
  			'ZM' => '잠비아',
  			'ZW' => '짐바브웨',
- 			'ZZ' => '알수없거나 유효하지 않은 지역',
+ 			'ZZ' => '알려지지 않은 지역',
 
 		}
 	},
@@ -2395,6 +2422,7 @@ has 'display_name_type' => (
  				'indian' => q{인도력},
  				'islamic' => q{이슬람력},
  				'islamic-civil' => q{이슬람 상용력},
+ 				'iso8601' => q{ISO-8601 달력},
  				'japanese' => q{일본력},
  				'persian' => q{페르시안력},
  				'roc' => q{대만력},
@@ -2458,6 +2486,8 @@ has 'display_name_type' => (
  				'armnlow' => q{아르메니아 소문자 숫자},
  				'bali' => q{발리 숫자},
  				'beng' => q{뱅골 숫자},
+ 				'brah' => q{브라미 숫자},
+ 				'cakm' => q{챠크마 숫자},
  				'cham' => q{참 숫자},
  				'deva' => q{데바나가리 숫자},
  				'ethi' => q{에티오피아 숫자},
@@ -2494,9 +2524,11 @@ has 'display_name_type' => (
  				'native' => q{기본 숫자},
  				'olck' => q{올치키 숫자},
  				'orya' => q{오리야 숫자},
+ 				'osma' => q{오스마냐 숫자},
  				'roman' => q{로마 숫자},
  				'romanlow' => q{로마 소문자 숫자},
  				'saur' => q{사우라슈트라 숫자},
+ 				'shrd' => q{샤라다 숫자},
  				'sund' => q{순다 숫자},
  				'taml' => q{타밀어 숫자},
  				'tamldec' => q{타밀 숫자},
@@ -2518,8 +2550,8 @@ has 'display_name_measurement_system' => (
 	default		=> sub { 
 		{
 			'metric' => q{미터법},
- 			'UK' => q{영국},
- 			'US' => q{미국},
+ 			'UK' => q{영국식},
+ 			'US' => q{미국식},
 
 		}
 	},
@@ -2651,144 +2683,474 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'acre' => {
+						'' => q(에이커),
 						'other' => q({0}에이커),
 					},
+					'acre-foot' => {
+						'' => q(에이커 피트),
+						'other' => q({0}에이커 피트),
+					},
+					'ampere' => {
+						'' => q(암페어),
+						'other' => q({0}암페어),
+					},
 					'arc-minute' => {
-						'other' => q({0}분),
+						'' => q(분각),
+						'other' => q({0}분각),
 					},
 					'arc-second' => {
-						'other' => q({0}초),
+						'' => q(각초),
+						'other' => q({0}각초),
+					},
+					'astronomical-unit' => {
+						'' => q(천문 단위),
+						'other' => q({0} 천문 단위),
+					},
+					'bit' => {
+						'' => q(비트),
+						'other' => q({0}비트),
+					},
+					'byte' => {
+						'' => q(바이트),
+						'other' => q({0}바이트),
+					},
+					'calorie' => {
+						'' => q(칼로리),
+						'other' => q({0}칼로리),
+					},
+					'carat' => {
+						'' => q(캐럿),
+						'other' => q({0}캐럿),
 					},
 					'celsius' => {
+						'' => q(°C),
 						'other' => q(섭씨 {0}도),
 					},
+					'centiliter' => {
+						'' => q(센티리터),
+						'other' => q({0}센티리터),
+					},
 					'centimeter' => {
+						'' => q(센티미터),
 						'other' => q({0}센티미터),
 					},
+					'cubic-centimeter' => {
+						'' => q(세제곱센티미터),
+						'other' => q({0}세제곱센티미터),
+					},
+					'cubic-foot' => {
+						'' => q(세제곱피트),
+						'other' => q({0}세제곱피트),
+					},
+					'cubic-inch' => {
+						'' => q(세제곱인치),
+						'other' => q({0}세제곱인치),
+					},
 					'cubic-kilometer' => {
+						'' => q(세제곱킬로미터),
 						'other' => q({0}세제곱킬로미터),
 					},
+					'cubic-meter' => {
+						'' => q(세제곱미터),
+						'other' => q({0}세제곱미터),
+					},
 					'cubic-mile' => {
+						'' => q(세제곱마일),
 						'other' => q({0}세제곱마일),
 					},
+					'cubic-yard' => {
+						'' => q(세제곱야드),
+						'other' => q({0}세제곱야드),
+					},
+					'cup' => {
+						'' => q(컵),
+						'other' => q({0}컵),
+					},
 					'day' => {
+						'' => q(일),
 						'other' => q({0}일),
 					},
+					'deciliter' => {
+						'' => q(데시리터),
+						'other' => q({0}데시리터),
+					},
+					'decimeter' => {
+						'' => q(데시미터),
+						'other' => q({0}데시미터),
+					},
 					'degree' => {
+						'' => q(도),
 						'other' => q({0}도),
 					},
 					'fahrenheit' => {
+						'' => q(°F),
 						'other' => q(화씨 {0}도),
 					},
+					'fluid-ounce' => {
+						'' => q(액량 온스),
+						'other' => q({0}액량 온스),
+					},
+					'foodcalorie' => {
+						'' => q(칼로리),
+						'other' => q({0}칼로리),
+					},
 					'foot' => {
+						'' => q(피트),
 						'other' => q({0}피트),
 					},
 					'g-force' => {
-						'other' => q({0}중력가속도),
+						'' => q(중력가속도),
+						'other' => q({0} 중력가속도),
+					},
+					'gallon' => {
+						'' => q(갤런),
+						'other' => q({0}갤런),
+					},
+					'gigabit' => {
+						'' => q(기가비트),
+						'other' => q({0}기가비트),
+					},
+					'gigabyte' => {
+						'' => q(기가바이트),
+						'other' => q({0}기가바이트),
+					},
+					'gigahertz' => {
+						'' => q(기가헤르츠),
+						'other' => q({0}기가헤르츠),
+					},
+					'gigawatt' => {
+						'' => q(기가와트),
+						'other' => q({0}기가와트),
 					},
 					'gram' => {
+						'' => q(그램),
 						'other' => q({0}그램),
 					},
 					'hectare' => {
+						'' => q(헥타르),
 						'other' => q({0}헥타르),
 					},
+					'hectoliter' => {
+						'' => q(헥토리터),
+						'other' => q({0}헥토리터),
+					},
 					'hectopascal' => {
+						'' => q(헥토파스칼),
 						'other' => q({0}헥토파스칼),
 					},
+					'hertz' => {
+						'' => q(헤르츠),
+						'other' => q({0}헤르츠),
+					},
 					'horsepower' => {
+						'' => q(마력),
 						'other' => q({0}마력),
 					},
 					'hour' => {
+						'' => q({0}/h),
 						'other' => q({0}시간),
 					},
 					'inch' => {
+						'' => q(인치),
 						'other' => q({0}인치),
 					},
 					'inch-hg' => {
+						'' => q(수은주인치),
 						'other' => q({0}수은주인치),
 					},
+					'joule' => {
+						'' => q(줄),
+						'other' => q({0}줄),
+					},
+					'karat' => {
+						'' => q(캐럿),
+						'other' => q({0}캐럿),
+					},
+					'kelvin' => {
+						'' => q(켈빈),
+						'other' => q({0}켈빈),
+					},
+					'kilobit' => {
+						'' => q(킬로비트),
+						'other' => q({0}킬로비트),
+					},
+					'kilobyte' => {
+						'' => q(킬로바이트),
+						'other' => q({0}킬로바이트),
+					},
+					'kilocalorie' => {
+						'' => q(킬로칼로리),
+						'other' => q({0}킬로칼로리),
+					},
 					'kilogram' => {
+						'' => q(킬로그램),
 						'other' => q({0}킬로그램),
 					},
+					'kilohertz' => {
+						'' => q(킬로헤르츠),
+						'other' => q({0}킬로헤르츠),
+					},
+					'kilojoule' => {
+						'' => q(킬로줄),
+						'other' => q({0}킬로줄),
+					},
 					'kilometer' => {
+						'' => q(킬로미터),
 						'other' => q({0}킬로미터),
 					},
 					'kilometer-per-hour' => {
+						'' => q(km/h),
 						'other' => q(시속 {0}킬로미터),
 					},
 					'kilowatt' => {
+						'' => q(킬로와트),
 						'other' => q({0}킬로와트),
 					},
+					'kilowatt-hour' => {
+						'' => q(킬로와트시),
+						'other' => q({0}킬로와트시),
+					},
 					'light-year' => {
+						'' => q(광년),
 						'other' => q({0}광년),
 					},
 					'liter' => {
+						'' => q(리터),
 						'other' => q({0}리터),
 					},
+					'liter-per-kilometer' => {
+						'' => q(킬로미터당 리터),
+						'other' => q(킬로미터당 {0}리터),
+					},
+					'lux' => {
+						'' => q(룩스),
+						'other' => q({0}룩스),
+					},
+					'megabit' => {
+						'' => q(메가비트),
+						'other' => q({0}메가비트),
+					},
+					'megabyte' => {
+						'' => q(메가바이트),
+						'other' => q({0}메가바이트),
+					},
+					'megahertz' => {
+						'' => q(메가헤르츠),
+						'other' => q({0}메가헤르츠),
+					},
+					'megaliter' => {
+						'' => q(메가리터),
+						'other' => q({0}메가리터),
+					},
+					'megawatt' => {
+						'' => q(메가와트),
+						'other' => q({0}메가와트),
+					},
 					'meter' => {
+						'' => q(미터),
 						'other' => q({0}미터),
 					},
 					'meter-per-second' => {
+						'' => q(m/s),
 						'other' => q(초속 {0}미터),
 					},
+					'meter-per-second-squared' => {
+						'' => q(m/s²),
+						'other' => q({0}m/s²),
+					},
+					'metric-ton' => {
+						'' => q(메트릭 톤),
+						'other' => q({0}메트릭 톤),
+					},
+					'microgram' => {
+						'' => q(마이크로그램),
+						'other' => q({0}마이크로그램),
+					},
+					'micrometer' => {
+						'' => q(마이크로미터),
+						'other' => q({0}마이크로미터),
+					},
+					'microsecond' => {
+						'' => q(마이크로초),
+						'other' => q({0}마이크로초),
+					},
 					'mile' => {
+						'' => q(마일),
 						'other' => q({0}마일),
 					},
+					'mile-per-gallon' => {
+						'' => q(갤런당 마일),
+						'other' => q(갤런당 {0}마일),
+					},
 					'mile-per-hour' => {
+						'' => q(mi/h),
 						'other' => q(시속 {0}마일),
 					},
+					'milliampere' => {
+						'' => q(밀리암페어),
+						'other' => q({0}밀리암페어),
+					},
 					'millibar' => {
+						'' => q(밀리바),
 						'other' => q({0}밀리바),
 					},
+					'milligram' => {
+						'' => q(밀리그램),
+						'other' => q({0}밀리그램),
+					},
+					'milliliter' => {
+						'' => q(밀리리터),
+						'other' => q({0}밀리리터),
+					},
 					'millimeter' => {
+						'' => q(밀리미터),
 						'other' => q({0}밀리미터),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(수은주밀리미터),
+						'other' => q({0}수은주밀리미터),
+					},
 					'millisecond' => {
+						'' => q(밀리초),
 						'other' => q({0}밀리초),
 					},
+					'milliwatt' => {
+						'' => q(밀리와트),
+						'other' => q({0}밀리와트),
+					},
 					'minute' => {
+						'' => q(분),
 						'other' => q({0}분),
 					},
 					'month' => {
+						'' => q(개월),
 						'other' => q({0}개월),
 					},
+					'nanometer' => {
+						'' => q(나노미터),
+						'other' => q({0}나노미터),
+					},
+					'nanosecond' => {
+						'' => q(나노초),
+						'other' => q({0}나노초),
+					},
+					'nautical-mile' => {
+						'' => q(해리),
+						'other' => q({0}해리),
+					},
+					'ohm' => {
+						'' => q(옴),
+						'other' => q({0}옴),
+					},
 					'ounce' => {
+						'' => q(온스),
 						'other' => q({0}온스),
+					},
+					'ounce-troy' => {
+						'' => q(트로이 온스),
+						'other' => q({0}트로이 온스),
+					},
+					'parsec' => {
+						'' => q(파섹),
+						'other' => q({0}파섹),
 					},
 					'per' => {
 						'' => q({1}당 {0}),
 					},
 					'picometer' => {
+						'' => q(피코미터),
 						'other' => q({0}피코미터),
 					},
+					'pint' => {
+						'' => q(파인트),
+						'other' => q({0}파인트),
+					},
 					'pound' => {
+						'' => q(파운드),
 						'other' => q({0}파운드),
 					},
+					'pound-per-square-inch' => {
+						'' => q(제곱인치당 파운드),
+						'other' => q({0}제곱인치당 파운드),
+					},
+					'quart' => {
+						'' => q(쿼트),
+						'other' => q({0}쿼트),
+					},
+					'radian' => {
+						'' => q(라디안),
+						'other' => q({0}라디안),
+					},
 					'second' => {
+						'' => q({0}/s),
 						'other' => q({0}초),
 					},
+					'square-centimeter' => {
+						'' => q(제곱센티미터),
+						'other' => q({0}제곱센티미터),
+					},
 					'square-foot' => {
+						'' => q(제곱피트),
 						'other' => q({0}제곱피트),
 					},
+					'square-inch' => {
+						'' => q(제곱인치),
+						'other' => q({0}제곱인치),
+					},
 					'square-kilometer' => {
+						'' => q(제곱킬로미터),
 						'other' => q({0}제곱킬로미터),
 					},
 					'square-meter' => {
+						'' => q(제곱미터),
 						'other' => q({0}제곱미터),
 					},
 					'square-mile' => {
+						'' => q(제곱마일),
 						'other' => q({0}제곱마일),
 					},
+					'square-yard' => {
+						'' => q(제곱야드),
+						'other' => q({0}제곱야드),
+					},
+					'tablespoon' => {
+						'' => q(테이블스푼),
+						'other' => q({0}테이블스푼),
+					},
+					'teaspoon' => {
+						'' => q(티스푼),
+						'other' => q({0}티스푼),
+					},
+					'terabit' => {
+						'' => q(테라비트),
+						'other' => q({0}테라비트),
+					},
+					'terabyte' => {
+						'' => q(테라바이트),
+						'other' => q({0}테라바이트),
+					},
+					'ton' => {
+						'' => q(톤),
+						'other' => q({0}톤),
+					},
+					'volt' => {
+						'' => q(볼트),
+						'other' => q({0}볼트),
+					},
 					'watt' => {
+						'' => q(와트),
 						'other' => q({0}와트),
 					},
 					'week' => {
+						'' => q(주),
 						'other' => q({0}주),
 					},
 					'yard' => {
+						'' => q(야드),
 						'other' => q({0}야드),
 					},
 					'year' => {
+						'' => q(년),
 						'other' => q({0}년),
 					},
 				},
@@ -2803,9 +3165,11 @@ has 'units' => (
 						'other' => q({0}″),
 					},
 					'celsius' => {
-						'other' => q({0}°),
+						'' => q(°C),
+						'other' => q({0}°C),
 					},
 					'centimeter' => {
+						'' => q(cm),
 						'other' => q({0}cm),
 					},
 					'cubic-kilometer' => {
@@ -2815,6 +3179,7 @@ has 'units' => (
 						'other' => q({0}mi³),
 					},
 					'day' => {
+						'' => q(일),
 						'other' => q({0}일),
 					},
 					'degree' => {
@@ -2830,6 +3195,7 @@ has 'units' => (
 						'other' => q({0}G),
 					},
 					'gram' => {
+						'' => q(그램),
 						'other' => q({0}g),
 					},
 					'hectare' => {
@@ -2842,6 +3208,7 @@ has 'units' => (
 						'other' => q({0}HP),
 					},
 					'hour' => {
+						'' => q(시간),
 						'other' => q({0}시간),
 					},
 					'inch' => {
@@ -2851,12 +3218,15 @@ has 'units' => (
 						'other' => q({0}"Hg),
 					},
 					'kilogram' => {
+						'' => q(kg),
 						'other' => q({0}kg),
 					},
 					'kilometer' => {
+						'' => q(km),
 						'other' => q({0}km),
 					},
 					'kilometer-per-hour' => {
+						'' => q(km/h),
 						'other' => q({0}km/h),
 					},
 					'kilowatt' => {
@@ -2866,9 +3236,11 @@ has 'units' => (
 						'other' => q({0}ly),
 					},
 					'liter' => {
+						'' => q(리터),
 						'other' => q({0}ℓ),
 					},
 					'meter' => {
+						'' => q(미터),
 						'other' => q({0}m),
 					},
 					'meter-per-second' => {
@@ -2884,15 +3256,19 @@ has 'units' => (
 						'other' => q({0}mb),
 					},
 					'millimeter' => {
+						'' => q(mm),
 						'other' => q({0}mm),
 					},
 					'millisecond' => {
+						'' => q(ms),
 						'other' => q({0}ms),
 					},
 					'minute' => {
+						'' => q(분),
 						'other' => q({0}분),
 					},
 					'month' => {
+						'' => q(개월),
 						'other' => q({0}개월),
 					},
 					'ounce' => {
@@ -2908,6 +3284,7 @@ has 'units' => (
 						'other' => q({0}lb),
 					},
 					'second' => {
+						'' => q(초),
 						'other' => q({0}초),
 					},
 					'square-foot' => {
@@ -2926,155 +3303,487 @@ has 'units' => (
 						'other' => q({0}W),
 					},
 					'week' => {
+						'' => q(주),
 						'other' => q({0}주),
 					},
 					'yard' => {
 						'other' => q({0}yd),
 					},
 					'year' => {
+						'' => q(년),
 						'other' => q({0}년),
 					},
 				},
 				'short' => {
 					'acre' => {
-						'other' => q({0}ac),
+						'' => q(에이커),
+						'other' => q({0}에이커),
+					},
+					'acre-foot' => {
+						'' => q(ac ft),
+						'other' => q({0}ac ft),
+					},
+					'ampere' => {
+						'' => q(amp),
+						'other' => q({0}A),
 					},
 					'arc-minute' => {
-						'other' => q({0}분),
+						'' => q(′),
+						'other' => q({0}′),
 					},
 					'arc-second' => {
-						'other' => q({0}초),
+						'' => q(″),
+						'other' => q({0}″),
+					},
+					'astronomical-unit' => {
+						'' => q(au),
+						'other' => q({0}au),
+					},
+					'bit' => {
+						'' => q(bit),
+						'other' => q({0}bit),
+					},
+					'byte' => {
+						'' => q(byte),
+						'other' => q({0}byte),
+					},
+					'calorie' => {
+						'' => q(cal),
+						'other' => q({0}cal),
+					},
+					'carat' => {
+						'' => q(CD),
+						'other' => q({0}CD),
 					},
 					'celsius' => {
+						'' => q(°C),
 						'other' => q({0}°C),
 					},
+					'centiliter' => {
+						'' => q(cL),
+						'other' => q({0}cL),
+					},
 					'centimeter' => {
+						'' => q(cm),
 						'other' => q({0}cm),
 					},
+					'cubic-centimeter' => {
+						'' => q(cm³),
+						'other' => q({0}cm³),
+					},
+					'cubic-foot' => {
+						'' => q(ft³),
+						'other' => q({0}ft³),
+					},
+					'cubic-inch' => {
+						'' => q(in³),
+						'other' => q({0}in³),
+					},
 					'cubic-kilometer' => {
+						'' => q(km³),
 						'other' => q({0}km³),
 					},
+					'cubic-meter' => {
+						'' => q(m³),
+						'other' => q({0}m³),
+					},
 					'cubic-mile' => {
+						'' => q(mi³),
 						'other' => q({0}mi³),
 					},
+					'cubic-yard' => {
+						'' => q(yd³),
+						'other' => q({0}yd³),
+					},
+					'cup' => {
+						'' => q(컵),
+						'other' => q({0}컵),
+					},
 					'day' => {
+						'' => q(일),
 						'other' => q({0}일),
 					},
+					'deciliter' => {
+						'' => q(dL),
+						'other' => q({0}dL),
+					},
+					'decimeter' => {
+						'' => q(dm),
+						'other' => q({0}dm),
+					},
 					'degree' => {
-						'other' => q({0}도),
+						'' => q(°),
+						'other' => q({0}°),
 					},
 					'fahrenheit' => {
+						'' => q(°F),
 						'other' => q({0}°F),
 					},
+					'fluid-ounce' => {
+						'' => q(fl oz),
+						'other' => q({0}fl oz),
+					},
+					'foodcalorie' => {
+						'' => q(Cal),
+						'other' => q({0}Cal),
+					},
 					'foot' => {
+						'' => q(피트),
 						'other' => q({0}ft),
 					},
 					'g-force' => {
-						'other' => q({0} G),
+						'' => q(중력가속도),
+						'other' => q({0}G),
+					},
+					'gallon' => {
+						'' => q(gal),
+						'other' => q({0}gal),
+					},
+					'gigabit' => {
+						'' => q(Gbit),
+						'other' => q({0}Gb),
+					},
+					'gigabyte' => {
+						'' => q(GByte),
+						'other' => q({0}GB),
+					},
+					'gigahertz' => {
+						'' => q(GHz),
+						'other' => q({0}GHz),
+					},
+					'gigawatt' => {
+						'' => q(GW),
+						'other' => q({0}GW),
 					},
 					'gram' => {
+						'' => q(그램),
 						'other' => q({0}g),
 					},
 					'hectare' => {
+						'' => q(헥타르),
 						'other' => q({0}ha),
 					},
+					'hectoliter' => {
+						'' => q(hL),
+						'other' => q({0}hL),
+					},
 					'hectopascal' => {
+						'' => q(hPa),
 						'other' => q({0}hPa),
 					},
+					'hertz' => {
+						'' => q(Hz),
+						'other' => q({0}Hz),
+					},
 					'horsepower' => {
+						'' => q(hp),
 						'other' => q({0}HP),
 					},
 					'hour' => {
+						'' => q({0}/h),
 						'other' => q({0}시간),
 					},
 					'inch' => {
+						'' => q(in),
 						'other' => q({0}in),
 					},
 					'inch-hg' => {
+						'' => q(inHg),
 						'other' => q({0}inHg),
 					},
+					'joule' => {
+						'' => q(줄),
+						'other' => q({0}줄),
+					},
+					'karat' => {
+						'' => q(kt),
+						'other' => q({0}kt),
+					},
+					'kelvin' => {
+						'' => q(K),
+						'other' => q({0}K),
+					},
+					'kilobit' => {
+						'' => q(kbit),
+						'other' => q({0}kb),
+					},
+					'kilobyte' => {
+						'' => q(kB),
+						'other' => q({0}kB),
+					},
+					'kilocalorie' => {
+						'' => q(kcal),
+						'other' => q({0}kcal),
+					},
 					'kilogram' => {
+						'' => q(kg),
 						'other' => q({0}kg),
 					},
+					'kilohertz' => {
+						'' => q(kHz),
+						'other' => q({0}kHz),
+					},
+					'kilojoule' => {
+						'' => q(kJ),
+						'other' => q({0}kJ),
+					},
 					'kilometer' => {
+						'' => q(km),
 						'other' => q({0}km),
 					},
 					'kilometer-per-hour' => {
+						'' => q(km/h),
 						'other' => q(시속 {0}km),
 					},
 					'kilowatt' => {
+						'' => q(kW),
 						'other' => q({0}kW),
 					},
+					'kilowatt-hour' => {
+						'' => q(kWh),
+						'other' => q({0}kWh),
+					},
 					'light-year' => {
+						'' => q(ly),
 						'other' => q({0}ly),
 					},
 					'liter' => {
+						'' => q(리터),
 						'other' => q({0}L),
 					},
+					'liter-per-kilometer' => {
+						'' => q(L/km),
+						'other' => q({0}L/km),
+					},
+					'lux' => {
+						'' => q(lx),
+						'other' => q({0}lx),
+					},
+					'megabit' => {
+						'' => q(Mbit),
+						'other' => q({0}Mb),
+					},
+					'megabyte' => {
+						'' => q(MB),
+						'other' => q({0}MB),
+					},
+					'megahertz' => {
+						'' => q(MHz),
+						'other' => q({0}MHz),
+					},
+					'megaliter' => {
+						'' => q(ML),
+						'other' => q({0}ML),
+					},
+					'megawatt' => {
+						'' => q(MW),
+						'other' => q({0}MW),
+					},
 					'meter' => {
+						'' => q(미터),
 						'other' => q({0}m),
 					},
 					'meter-per-second' => {
+						'' => q(m/s),
 						'other' => q(초속 {0}m),
 					},
+					'meter-per-second-squared' => {
+						'' => q(m/s²),
+						'other' => q({0}m/s²),
+					},
+					'metric-ton' => {
+						'' => q(t),
+						'other' => q({0}t),
+					},
+					'microgram' => {
+						'' => q(µg),
+						'other' => q({0}µg),
+					},
+					'micrometer' => {
+						'' => q(µm),
+						'other' => q({0}µm),
+					},
+					'microsecond' => {
+						'' => q(μs),
+						'other' => q({0}μs),
+					},
 					'mile' => {
+						'' => q(마일),
 						'other' => q({0}mil),
 					},
+					'mile-per-gallon' => {
+						'' => q(mpg),
+						'other' => q({0}mpg),
+					},
 					'mile-per-hour' => {
+						'' => q(mi/h),
 						'other' => q(시속 {0}mi),
 					},
+					'milliampere' => {
+						'' => q(mA),
+						'other' => q({0}mA),
+					},
 					'millibar' => {
+						'' => q(mbar),
 						'other' => q({0}mb),
 					},
+					'milligram' => {
+						'' => q(mg),
+						'other' => q({0}mg),
+					},
+					'milliliter' => {
+						'' => q(mL),
+						'other' => q({0}mL),
+					},
 					'millimeter' => {
+						'' => q(mm),
 						'other' => q({0}mm),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(mm Hg),
+						'other' => q({0}mm Hg),
+					},
 					'millisecond' => {
+						'' => q(밀리초),
 						'other' => q({0}ms),
 					},
+					'milliwatt' => {
+						'' => q(mW),
+						'other' => q({0}mW),
+					},
 					'minute' => {
+						'' => q(분),
 						'other' => q({0}분),
 					},
 					'month' => {
+						'' => q(개월),
 						'other' => q({0}개월),
 					},
+					'nanometer' => {
+						'' => q(nm),
+						'other' => q({0}nm),
+					},
+					'nanosecond' => {
+						'' => q(ns),
+						'other' => q({0}ns),
+					},
+					'nautical-mile' => {
+						'' => q(nmi),
+						'other' => q({0}nmi),
+					},
+					'ohm' => {
+						'' => q(ohm),
+						'other' => q({0}Ω),
+					},
 					'ounce' => {
+						'' => q(oz),
 						'other' => q({0}oz),
+					},
+					'ounce-troy' => {
+						'' => q(oz t),
+						'other' => q({0}oz t),
+					},
+					'parsec' => {
+						'' => q(파섹),
+						'other' => q({0}pc),
 					},
 					'per' => {
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(pm),
 						'other' => q({0}pm),
 					},
+					'pint' => {
+						'' => q(pt),
+						'other' => q({0}pt),
+					},
 					'pound' => {
+						'' => q(lb),
 						'other' => q({0}lb),
 					},
+					'pound-per-square-inch' => {
+						'' => q(psi),
+						'other' => q({0}psi),
+					},
+					'quart' => {
+						'' => q(qt),
+						'other' => q({0}qt),
+					},
+					'radian' => {
+						'' => q(rad),
+						'other' => q({0}rad),
+					},
 					'second' => {
+						'' => q({0}/s),
 						'other' => q({0}초),
 					},
+					'square-centimeter' => {
+						'' => q(cm²),
+						'other' => q({0}cm²),
+					},
 					'square-foot' => {
+						'' => q(제곱피트),
 						'other' => q({0}ft²),
 					},
+					'square-inch' => {
+						'' => q(in²),
+						'other' => q({0}in²),
+					},
 					'square-kilometer' => {
+						'' => q(km²),
 						'other' => q({0}km²),
 					},
 					'square-meter' => {
+						'' => q(m²),
 						'other' => q({0}m²),
 					},
 					'square-mile' => {
+						'' => q(mi²),
 						'other' => q({0}mi²),
 					},
+					'square-yard' => {
+						'' => q(yd²),
+						'other' => q({0}yd²),
+					},
+					'tablespoon' => {
+						'' => q(tbsp),
+						'other' => q({0}tbsp),
+					},
+					'teaspoon' => {
+						'' => q(tsp),
+						'other' => q({0}tsp),
+					},
+					'terabit' => {
+						'' => q(Tbit),
+						'other' => q({0}Tb),
+					},
+					'terabyte' => {
+						'' => q(TByte),
+						'other' => q({0}TB),
+					},
+					'ton' => {
+						'' => q(tn),
+						'other' => q({0}tn),
+					},
+					'volt' => {
+						'' => q(volt),
+						'other' => q({0}V),
+					},
 					'watt' => {
+						'' => q(w),
 						'other' => q({0}W),
 					},
 					'week' => {
+						'' => q(주),
 						'other' => q({0}주),
 					},
 					'yard' => {
-						'other' => q({0}yd),
+						'' => q(야드),
+						'other' => q({0}야드),
 					},
 					'year' => {
+						'' => q(년),
 						'other' => q({0}년),
 					},
 				},
@@ -3092,7 +3801,7 @@ has 'nostr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
 	init_arg	=> undef,
-	default		=> sub { qr'^(?i:아니오|no|n)$' }
+	default		=> sub { qr'^(?i:아니요|no|n)$' }
 );
 
 has 'listPatterns' => (
@@ -3105,6 +3814,20 @@ has 'listPatterns' => (
 				end => q({0} {1}),
 				2 => q({0} {1}),
 		} }
+);
+
+has 'default_numbering_system' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has native_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
 );
 
 has 'number_symbols' => (
@@ -3302,8 +4025,10 @@ has 'curriencies' => (
 			},
 		},
 		'AED' => {
+			symbol => 'AED',
 			display_name => {
 				'currency' => q(아랍에미리트 디르함),
+				'other' => q(아랍에미리트 디르함),
 			},
 		},
 		'AFA' => {
@@ -3312,28 +4037,38 @@ has 'curriencies' => (
 			},
 		},
 		'AFN' => {
+			symbol => 'AFN',
 			display_name => {
 				'currency' => q(아프가니스탄 아프가니),
+				'other' => q(아프가니스탄 아프가니),
 			},
 		},
 		'ALL' => {
+			symbol => 'ALL',
 			display_name => {
 				'currency' => q(알바니아 레크),
+				'other' => q(알바니아 레크),
 			},
 		},
 		'AMD' => {
+			symbol => 'AMD',
 			display_name => {
 				'currency' => q(아르메니아 드람),
+				'other' => q(아르메니아 드람),
 			},
 		},
 		'ANG' => {
+			symbol => 'ANG',
 			display_name => {
 				'currency' => q(네덜란드령 안틸레스 길더),
+				'other' => q(네덜란드령 안틸레스 길더),
 			},
 		},
 		'AOA' => {
+			symbol => 'AOA',
 			display_name => {
 				'currency' => q(앙골라 콴자),
+				'other' => q(앙골라 콴자),
 			},
 		},
 		'AOK' => {
@@ -3372,8 +4107,10 @@ has 'curriencies' => (
 			},
 		},
 		'ARS' => {
+			symbol => 'ARS',
 			display_name => {
 				'currency' => q(아르헨티나 페소),
+				'other' => q(아르헨티나 페소),
 			},
 		},
 		'ATS' => {
@@ -3385,11 +4122,14 @@ has 'curriencies' => (
 			symbol => 'AU$',
 			display_name => {
 				'currency' => q(호주 달러),
+				'other' => q(호주 달러),
 			},
 		},
 		'AWG' => {
+			symbol => 'AWG',
 			display_name => {
 				'currency' => q(아루바 플로린),
+				'other' => q(아루바 플로린),
 			},
 		},
 		'AZM' => {
@@ -3398,8 +4138,10 @@ has 'curriencies' => (
 			},
 		},
 		'AZN' => {
+			symbol => 'AZN',
 			display_name => {
 				'currency' => q(아제르바이잔 마나트),
+				'other' => q(아제르바이잔 마나트),
 			},
 		},
 		'BAD' => {
@@ -3408,8 +4150,10 @@ has 'curriencies' => (
 			},
 		},
 		'BAM' => {
+			symbol => 'BAM',
 			display_name => {
 				'currency' => q(보스니아-헤르체고비나 태환 마르크),
+				'other' => q(보스니아-헤르체고비나 태환 마르크),
 			},
 		},
 		'BAN' => {
@@ -3418,13 +4162,17 @@ has 'curriencies' => (
 			},
 		},
 		'BBD' => {
+			symbol => 'BBD',
 			display_name => {
 				'currency' => q(바베이도스 달러),
+				'other' => q(바베이도스 달러),
 			},
 		},
 		'BDT' => {
+			symbol => 'BDT',
 			display_name => {
 				'currency' => q(방글라데시 타카),
+				'other' => q(방글라데시 타카),
 			},
 		},
 		'BEC' => {
@@ -3453,9 +4201,10 @@ has 'curriencies' => (
 			},
 		},
 		'BGN' => {
+			symbol => 'BGN',
 			display_name => {
 				'currency' => q(불가리아 레프),
-				'other' => q(불가리아 신권 렛),
+				'other' => q(불가리아 레프),
 			},
 		},
 		'BGO' => {
@@ -3464,28 +4213,38 @@ has 'curriencies' => (
 			},
 		},
 		'BHD' => {
+			symbol => 'BHD',
 			display_name => {
 				'currency' => q(바레인 디나르),
+				'other' => q(바레인 디나르),
 			},
 		},
 		'BIF' => {
+			symbol => 'BIF',
 			display_name => {
 				'currency' => q(부룬디 프랑),
+				'other' => q(부룬디 프랑),
 			},
 		},
 		'BMD' => {
+			symbol => 'BMD',
 			display_name => {
 				'currency' => q(버뮤다 달러),
+				'other' => q(버뮤다 달러),
 			},
 		},
 		'BND' => {
+			symbol => 'BND',
 			display_name => {
 				'currency' => q(부루나이 달러),
+				'other' => q(부루나이 달러),
 			},
 		},
 		'BOB' => {
+			symbol => 'BOB',
 			display_name => {
 				'currency' => q(볼리비아노),
+				'other' => q(볼리비아노),
 			},
 		},
 		'BOL' => {
@@ -3522,6 +4281,7 @@ has 'curriencies' => (
 			symbol => 'R$',
 			display_name => {
 				'currency' => q(브라질 레알),
+				'other' => q(브라질 헤알),
 			},
 		},
 		'BRN' => {
@@ -3540,11 +4300,14 @@ has 'curriencies' => (
 			},
 		},
 		'BSD' => {
+			symbol => 'BSD',
 			display_name => {
 				'currency' => q(바하마 달러),
+				'other' => q(바하마 달러),
 			},
 		},
 		'BTN' => {
+			symbol => 'BTN',
 			display_name => {
 				'currency' => q(부탄 눌투눔),
 				'other' => q(부탄 눌투눔),
@@ -3556,8 +4319,10 @@ has 'curriencies' => (
 			},
 		},
 		'BWP' => {
+			symbol => 'BWP',
 			display_name => {
 				'currency' => q(보츠와나 폴라),
+				'other' => q(보츠와나 폴라),
 			},
 		},
 		'BYB' => {
@@ -3566,24 +4331,31 @@ has 'curriencies' => (
 			},
 		},
 		'BYR' => {
+			symbol => 'BYR',
 			display_name => {
 				'currency' => q(벨라루스 루블),
+				'other' => q(벨라루스 루블),
 			},
 		},
 		'BZD' => {
+			symbol => 'BZD',
 			display_name => {
 				'currency' => q(벨리즈 달러),
+				'other' => q(벨리즈 달러),
 			},
 		},
 		'CAD' => {
 			symbol => 'CA$',
 			display_name => {
 				'currency' => q(캐나다 달러),
+				'other' => q(캐나다 달러),
 			},
 		},
 		'CDF' => {
+			symbol => 'CDF',
 			display_name => {
 				'currency' => q(콩고 프랑 콩골라스),
+				'other' => q(콩고 프랑 콩골라스),
 			},
 		},
 		'CHE' => {
@@ -3592,8 +4364,10 @@ has 'curriencies' => (
 			},
 		},
 		'CHF' => {
+			symbol => 'CHF',
 			display_name => {
 				'currency' => q(스위스 프랑),
+				'other' => q(스위스 프랑),
 			},
 		},
 		'CHW' => {
@@ -3612,8 +4386,10 @@ has 'curriencies' => (
 			},
 		},
 		'CLP' => {
+			symbol => 'CLP',
 			display_name => {
 				'currency' => q(칠레 페소),
+				'other' => q(칠레 페소),
 			},
 		},
 		'CNY' => {
@@ -3624,8 +4400,10 @@ has 'curriencies' => (
 			},
 		},
 		'COP' => {
+			symbol => 'COP',
 			display_name => {
 				'currency' => q(콜롬비아 페소),
+				'other' => q(콜롬비아 페소),
 			},
 		},
 		'COU' => {
@@ -3634,8 +4412,10 @@ has 'curriencies' => (
 			},
 		},
 		'CRC' => {
+			symbol => 'CRC',
 			display_name => {
 				'currency' => q(코스타리카 콜론),
+				'other' => q(코스타리카 콜론),
 			},
 		},
 		'CSD' => {
@@ -3649,18 +4429,24 @@ has 'curriencies' => (
 			},
 		},
 		'CUC' => {
+			symbol => 'CUC',
 			display_name => {
 				'currency' => q(쿠바 태환 페소),
+				'other' => q(쿠바 태환 페소),
 			},
 		},
 		'CUP' => {
+			symbol => 'CUP',
 			display_name => {
 				'currency' => q(쿠바 페소),
+				'other' => q(쿠바 페소),
 			},
 		},
 		'CVE' => {
+			symbol => 'CVE',
 			display_name => {
 				'currency' => q(카보베르데 에스쿠도),
+				'other' => q(카보베르데 에스쿠도),
 			},
 		},
 		'CYP' => {
@@ -3669,8 +4455,10 @@ has 'curriencies' => (
 			},
 		},
 		'CZK' => {
+			symbol => 'CZK',
 			display_name => {
 				'currency' => q(체코 공화국 코루나),
+				'other' => q(체코 공화국 코루나),
 			},
 		},
 		'DDM' => {
@@ -3684,23 +4472,31 @@ has 'curriencies' => (
 			},
 		},
 		'DJF' => {
+			symbol => 'DJF',
 			display_name => {
 				'currency' => q(지부티 프랑),
+				'other' => q(지부티 프랑),
 			},
 		},
 		'DKK' => {
+			symbol => 'DKK',
 			display_name => {
 				'currency' => q(덴마크 크로네),
+				'other' => q(덴마크 크로네),
 			},
 		},
 		'DOP' => {
+			symbol => 'DOP',
 			display_name => {
 				'currency' => q(도미니카 페소),
+				'other' => q(도미니카 페소),
 			},
 		},
 		'DZD' => {
+			symbol => 'DZD',
 			display_name => {
 				'currency' => q(알제리 디나르),
+				'other' => q(알제리 디나르),
 			},
 		},
 		'ECS' => {
@@ -3719,13 +4515,17 @@ has 'curriencies' => (
 			},
 		},
 		'EGP' => {
+			symbol => 'EGP',
 			display_name => {
 				'currency' => q(이집트 파운드),
+				'other' => q(이집트 파운드),
 			},
 		},
 		'ERN' => {
+			symbol => 'ERN',
 			display_name => {
 				'currency' => q(에리트리아 나크파),
+				'other' => q(에리트리아 나크파),
 			},
 		},
 		'ESA' => {
@@ -3744,14 +4544,17 @@ has 'curriencies' => (
 			},
 		},
 		'ETB' => {
+			symbol => 'ETB',
 			display_name => {
 				'currency' => q(이디오피아 비르),
+				'other' => q(이디오피아 비르),
 			},
 		},
 		'EUR' => {
 			symbol => '€',
 			display_name => {
-				'currency' => q(유로화),
+				'currency' => q(유로),
+				'other' => q(유로),
 			},
 		},
 		'FIM' => {
@@ -3760,13 +4563,17 @@ has 'curriencies' => (
 			},
 		},
 		'FJD' => {
+			symbol => 'FJD',
 			display_name => {
 				'currency' => q(피지 달러),
+				'other' => q(피지 달러),
 			},
 		},
 		'FKP' => {
+			symbol => 'FKP',
 			display_name => {
 				'currency' => q(포클랜드제도 파운드),
+				'other' => q(포클랜드제도 파운드),
 			},
 		},
 		'FRF' => {
@@ -3777,7 +4584,8 @@ has 'curriencies' => (
 		'GBP' => {
 			symbol => '£',
 			display_name => {
-				'currency' => q(영국령 파운드 스털링),
+				'currency' => q(파운드),
+				'other' => q(영국령 파운드 스털링),
 			},
 		},
 		'GEK' => {
@@ -3786,6 +4594,7 @@ has 'curriencies' => (
 			},
 		},
 		'GEL' => {
+			symbol => 'GEL',
 			display_name => {
 				'currency' => q(조지아 라리),
 				'other' => q(조지아 라리),
@@ -3797,23 +4606,31 @@ has 'curriencies' => (
 			},
 		},
 		'GHS' => {
+			symbol => 'GHS',
 			display_name => {
 				'currency' => q(가나 시디),
+				'other' => q(가나 시디),
 			},
 		},
 		'GIP' => {
+			symbol => 'GIP',
 			display_name => {
 				'currency' => q(지브롤터 파운드),
+				'other' => q(지브롤터 파운드),
 			},
 		},
 		'GMD' => {
+			symbol => 'GMD',
 			display_name => {
 				'currency' => q(감비아 달라시),
+				'other' => q(감비아 달라시),
 			},
 		},
 		'GNF' => {
+			symbol => 'GNF',
 			display_name => {
 				'currency' => q(기니 프랑),
+				'other' => q(기니 프랑),
 			},
 		},
 		'GNS' => {
@@ -3832,8 +4649,10 @@ has 'curriencies' => (
 			},
 		},
 		'GTQ' => {
+			symbol => 'GTQ',
 			display_name => {
 				'currency' => q(과테말라 케트살),
+				'other' => q(과테말라 케트살),
 			},
 		},
 		'GWE' => {
@@ -3847,19 +4666,24 @@ has 'curriencies' => (
 			},
 		},
 		'GYD' => {
+			symbol => 'GYD',
 			display_name => {
 				'currency' => q(가이아나 달러),
+				'other' => q(가이아나 달러),
 			},
 		},
 		'HKD' => {
 			symbol => 'HK$',
 			display_name => {
 				'currency' => q(홍콩 달러),
+				'other' => q(홍콩 달러),
 			},
 		},
 		'HNL' => {
+			symbol => 'HNL',
 			display_name => {
 				'currency' => q(온두라스 렘피라),
+				'other' => q(온두라스 렘피라),
 			},
 		},
 		'HRD' => {
@@ -3868,23 +4692,31 @@ has 'curriencies' => (
 			},
 		},
 		'HRK' => {
+			symbol => 'HRK',
 			display_name => {
 				'currency' => q(크로아티아 쿠나),
+				'other' => q(크로아티아 쿠나),
 			},
 		},
 		'HTG' => {
+			symbol => 'HTG',
 			display_name => {
 				'currency' => q(하이티 구르드),
+				'other' => q(하이티 구르드),
 			},
 		},
 		'HUF' => {
+			symbol => 'HUF',
 			display_name => {
 				'currency' => q(헝가리 포린트),
+				'other' => q(헝가리 포린트),
 			},
 		},
 		'IDR' => {
+			symbol => 'IDR',
 			display_name => {
 				'currency' => q(인도네시아 루피아),
+				'other' => q(인도네시아 루피아),
 			},
 		},
 		'IEP' => {
@@ -3901,27 +4733,35 @@ has 'curriencies' => (
 			symbol => '₪',
 			display_name => {
 				'currency' => q(이스라엘 신권 세켈),
+				'other' => q(이스라엘 신권 세켈),
 			},
 		},
 		'INR' => {
 			symbol => '₹',
 			display_name => {
 				'currency' => q(인도 루피),
+				'other' => q(인도 루피),
 			},
 		},
 		'IQD' => {
+			symbol => 'IQD',
 			display_name => {
 				'currency' => q(이라크 디나르),
+				'other' => q(이라크 디나르),
 			},
 		},
 		'IRR' => {
+			symbol => 'IRR',
 			display_name => {
 				'currency' => q(이란 리얄),
+				'other' => q(이란 리얄),
 			},
 		},
 		'ISK' => {
+			symbol => 'ISK',
 			display_name => {
 				'currency' => q(아이슬란드 크로나),
+				'other' => q(아이슬란드 크로나),
 			},
 		},
 		'ITL' => {
@@ -3930,44 +4770,59 @@ has 'curriencies' => (
 			},
 		},
 		'JMD' => {
+			symbol => 'JMD',
 			display_name => {
 				'currency' => q(자메이카 달러),
+				'other' => q(자메이카 달러),
 			},
 		},
 		'JOD' => {
+			symbol => 'JOD',
 			display_name => {
 				'currency' => q(요르단 디나르),
+				'other' => q(요르단 디나르),
 			},
 		},
 		'JPY' => {
 			symbol => 'JP¥',
 			display_name => {
 				'currency' => q(일본 엔화),
+				'other' => q(일본 엔화),
 			},
 		},
 		'KES' => {
+			symbol => 'KES',
 			display_name => {
 				'currency' => q(케냐 실링),
+				'other' => q(케냐 실링),
 			},
 		},
 		'KGS' => {
+			symbol => 'KGS',
 			display_name => {
 				'currency' => q(키르기스스탄 솜),
+				'other' => q(키르기스스탄 솜),
 			},
 		},
 		'KHR' => {
+			symbol => 'KHR',
 			display_name => {
 				'currency' => q(캄보디아 리얄),
+				'other' => q(캄보디아 리얄),
 			},
 		},
 		'KMF' => {
+			symbol => 'KMF',
 			display_name => {
 				'currency' => q(코모르 프랑),
+				'other' => q(코모르 프랑),
 			},
 		},
 		'KPW' => {
+			symbol => 'KPW',
 			display_name => {
 				'currency' => q(조선 민주주의 인민 공화국 원),
+				'other' => q(조선 민주주의 인민 공화국 원),
 			},
 		},
 		'KRH' => {
@@ -3979,41 +4834,56 @@ has 'curriencies' => (
 			symbol => '₩',
 			display_name => {
 				'currency' => q(대한민국 원),
+				'other' => q(대한민국 원),
 			},
 		},
 		'KWD' => {
+			symbol => 'KWD',
 			display_name => {
 				'currency' => q(쿠웨이트 디나르),
+				'other' => q(쿠웨이트 디나르),
 			},
 		},
 		'KYD' => {
+			symbol => 'KYD',
 			display_name => {
 				'currency' => q(케이맨 제도 달러),
+				'other' => q(케이맨 제도 달러),
 			},
 		},
 		'KZT' => {
+			symbol => 'KZT',
 			display_name => {
 				'currency' => q(카자흐스탄 텐게),
+				'other' => q(카자흐스탄 텐게),
 			},
 		},
 		'LAK' => {
+			symbol => 'LAK',
 			display_name => {
 				'currency' => q(라오스 키프),
+				'other' => q(라오스 키프),
 			},
 		},
 		'LBP' => {
+			symbol => 'LBP',
 			display_name => {
 				'currency' => q(레바논 파운드),
+				'other' => q(레바논 파운드),
 			},
 		},
 		'LKR' => {
+			symbol => 'LKR',
 			display_name => {
 				'currency' => q(스리랑카 루피),
+				'other' => q(스리랑카 루피),
 			},
 		},
 		'LRD' => {
+			symbol => 'LRD',
 			display_name => {
 				'currency' => q(라이베리아 달러),
+				'other' => q(라이베리아 달러),
 			},
 		},
 		'LSL' => {
@@ -4022,8 +4892,10 @@ has 'curriencies' => (
 			},
 		},
 		'LTL' => {
+			symbol => 'LTL',
 			display_name => {
 				'currency' => q(리투아니아 리타),
+				'other' => q(리투아니아 리타),
 			},
 		},
 		'LTT' => {
@@ -4047,8 +4919,10 @@ has 'curriencies' => (
 			},
 		},
 		'LVL' => {
+			symbol => 'LVL',
 			display_name => {
 				'currency' => q(라트비아 라트),
+				'other' => q(라트비아 라트),
 			},
 		},
 		'LVR' => {
@@ -4057,13 +4931,17 @@ has 'curriencies' => (
 			},
 		},
 		'LYD' => {
+			symbol => 'LYD',
 			display_name => {
 				'currency' => q(리비아 디나르),
+				'other' => q(리비아 디나르),
 			},
 		},
 		'MAD' => {
+			symbol => 'MAD',
 			display_name => {
 				'currency' => q(모로코 디렘),
+				'other' => q(모로코 디렘),
 			},
 		},
 		'MAF' => {
@@ -4082,13 +4960,17 @@ has 'curriencies' => (
 			},
 		},
 		'MDL' => {
+			symbol => 'MDL',
 			display_name => {
 				'currency' => q(몰도바 레이),
+				'other' => q(몰도바 레이),
 			},
 		},
 		'MGA' => {
+			symbol => 'MGA',
 			display_name => {
 				'currency' => q(마다가스카르 아리아리),
+				'other' => q(마다가스카르 아리아리),
 			},
 		},
 		'MGF' => {
@@ -4097,8 +4979,10 @@ has 'curriencies' => (
 			},
 		},
 		'MKD' => {
+			symbol => 'MKD',
 			display_name => {
 				'currency' => q(마케도니아 디나르),
+				'other' => q(마케도니아 디나르),
 			},
 		},
 		'MLF' => {
@@ -4107,23 +4991,31 @@ has 'curriencies' => (
 			},
 		},
 		'MMK' => {
+			symbol => 'MMK',
 			display_name => {
 				'currency' => q(미얀마 키얏),
+				'other' => q(미얀마 키얏),
 			},
 		},
 		'MNT' => {
+			symbol => 'MNT',
 			display_name => {
 				'currency' => q(몽골 투그릭),
+				'other' => q(몽골 투그릭),
 			},
 		},
 		'MOP' => {
+			symbol => 'MOP',
 			display_name => {
 				'currency' => q(마카오 파타카),
+				'other' => q(마카오 파타카),
 			},
 		},
 		'MRO' => {
+			symbol => 'MRO',
 			display_name => {
 				'currency' => q(모리타니 우기야),
+				'other' => q(모리타니 우기야),
 			},
 		},
 		'MTL' => {
@@ -4137,24 +5029,31 @@ has 'curriencies' => (
 			},
 		},
 		'MUR' => {
+			symbol => 'MUR',
 			display_name => {
 				'currency' => q(모리셔스 루피),
+				'other' => q(모리셔스 루피),
 			},
 		},
 		'MVR' => {
+			symbol => 'MVR',
 			display_name => {
 				'currency' => q(몰디브 제도 루피아),
+				'other' => q(몰디브 제도 루피아),
 			},
 		},
 		'MWK' => {
+			symbol => 'MWK',
 			display_name => {
 				'currency' => q(말라위 콰쳐),
+				'other' => q(말라위 콰쳐),
 			},
 		},
 		'MXN' => {
 			symbol => 'MX$',
 			display_name => {
 				'currency' => q(멕시코 페소),
+				'other' => q(멕시코 페소),
 			},
 		},
 		'MXP' => {
@@ -4168,8 +5067,10 @@ has 'curriencies' => (
 			},
 		},
 		'MYR' => {
+			symbol => 'MYR',
 			display_name => {
 				'currency' => q(말레이시아 링깃),
+				'other' => q(말레이시아 링깃),
 			},
 		},
 		'MZE' => {
@@ -4183,18 +5084,24 @@ has 'curriencies' => (
 			},
 		},
 		'MZN' => {
+			symbol => 'MZN',
 			display_name => {
 				'currency' => q(모잠비크 메티칼),
+				'other' => q(모잠비크 메티칼),
 			},
 		},
 		'NAD' => {
+			symbol => 'NAD',
 			display_name => {
 				'currency' => q(나미비아 달러),
+				'other' => q(나미비아 달러),
 			},
 		},
 		'NGN' => {
+			symbol => 'NGN',
 			display_name => {
 				'currency' => q(니제르 나이라),
+				'other' => q(니제르 나이라),
 			},
 		},
 		'NIC' => {
@@ -4203,8 +5110,10 @@ has 'curriencies' => (
 			},
 		},
 		'NIO' => {
+			symbol => 'NIO',
 			display_name => {
 				'currency' => q(니카라과 코르도바 오로),
+				'other' => q(니카라과 코르도바 오로),
 			},
 		},
 		'NLG' => {
@@ -4213,29 +5122,38 @@ has 'curriencies' => (
 			},
 		},
 		'NOK' => {
+			symbol => 'NOK',
 			display_name => {
 				'currency' => q(노르웨이 크로네),
+				'other' => q(노르웨이 크로네),
 			},
 		},
 		'NPR' => {
+			symbol => 'NPR',
 			display_name => {
 				'currency' => q(네팔 루피),
+				'other' => q(네팔 루피),
 			},
 		},
 		'NZD' => {
 			symbol => 'NZ$',
 			display_name => {
 				'currency' => q(뉴질랜드 달러),
+				'other' => q(뉴질랜드 달러),
 			},
 		},
 		'OMR' => {
+			symbol => 'OMR',
 			display_name => {
 				'currency' => q(오만 리얄),
+				'other' => q(오만 리얄),
 			},
 		},
 		'PAB' => {
+			symbol => 'PAB',
 			display_name => {
 				'currency' => q(파나마 발보아),
+				'other' => q(파나마 발보아),
 			},
 		},
 		'PEI' => {
@@ -4244,8 +5162,10 @@ has 'curriencies' => (
 			},
 		},
 		'PEN' => {
+			symbol => 'PEN',
 			display_name => {
 				'currency' => q(페루 누에보 솔),
+				'other' => q(페루 누에보 솔),
 			},
 		},
 		'PES' => {
@@ -4254,23 +5174,31 @@ has 'curriencies' => (
 			},
 		},
 		'PGK' => {
+			symbol => 'PGK',
 			display_name => {
 				'currency' => q(파푸아뉴기니 키나),
+				'other' => q(파푸아뉴기니 키나),
 			},
 		},
 		'PHP' => {
+			symbol => 'PHP',
 			display_name => {
 				'currency' => q(필리핀 페소),
+				'other' => q(필리핀 페소),
 			},
 		},
 		'PKR' => {
+			symbol => 'PKR',
 			display_name => {
 				'currency' => q(파키스탄 루피),
+				'other' => q(파키스탄 루피),
 			},
 		},
 		'PLN' => {
+			symbol => 'PLN',
 			display_name => {
 				'currency' => q(폴란드 즐로티),
+				'other' => q(폴란드 즐로티),
 			},
 		},
 		'PLZ' => {
@@ -4284,13 +5212,17 @@ has 'curriencies' => (
 			},
 		},
 		'PYG' => {
+			symbol => 'PYG',
 			display_name => {
 				'currency' => q(파라과이 과라니),
+				'other' => q(파라과이 과라니),
 			},
 		},
 		'QAR' => {
+			symbol => 'QAR',
 			display_name => {
 				'currency' => q(카타르 리얄),
+				'other' => q(카타르 리얄),
 			},
 		},
 		'RHD' => {
@@ -4304,18 +5236,24 @@ has 'curriencies' => (
 			},
 		},
 		'RON' => {
+			symbol => 'RON',
 			display_name => {
 				'currency' => q(루마니아 레우),
+				'other' => q(루마니아 레우),
 			},
 		},
 		'RSD' => {
+			symbol => 'RSD',
 			display_name => {
 				'currency' => q(세르비아 디나르),
+				'other' => q(세르비아 디나르),
 			},
 		},
 		'RUB' => {
+			symbol => 'RUB',
 			display_name => {
 				'currency' => q(러시아 루블),
+				'other' => q(러시아 루블),
 			},
 		},
 		'RUR' => {
@@ -4324,21 +5262,28 @@ has 'curriencies' => (
 			},
 		},
 		'RWF' => {
+			symbol => 'RWF',
 			display_name => {
 				'currency' => q(르완다 프랑),
+				'other' => q(르완다 프랑),
 			},
 		},
 		'SAR' => {
+			symbol => 'SAR',
 			display_name => {
 				'currency' => q(사우디아라비아 리얄),
+				'other' => q(사우디아라비아 리얄),
 			},
 		},
 		'SBD' => {
+			symbol => 'SBD',
 			display_name => {
 				'currency' => q(솔로몬 제도 달러),
+				'other' => q(솔로몬 제도 달러),
 			},
 		},
 		'SCR' => {
+			symbol => 'SCR',
 			display_name => {
 				'currency' => q(세이셸 루피),
 				'other' => q(세이셸 루피),
@@ -4350,8 +5295,10 @@ has 'curriencies' => (
 			},
 		},
 		'SDG' => {
+			symbol => 'SDG',
 			display_name => {
 				'currency' => q(수단 파운드),
+				'other' => q(수단 파운드),
 			},
 		},
 		'SDP' => {
@@ -4360,18 +5307,24 @@ has 'curriencies' => (
 			},
 		},
 		'SEK' => {
+			symbol => 'SEK',
 			display_name => {
 				'currency' => q(스웨덴 크로나),
+				'other' => q(스웨덴 크로나),
 			},
 		},
 		'SGD' => {
+			symbol => 'SGD',
 			display_name => {
 				'currency' => q(싱가폴 달러),
+				'other' => q(싱가폴 달러),
 			},
 		},
 		'SHP' => {
+			symbol => 'SHP',
 			display_name => {
 				'currency' => q(세인트헬레나 파운드),
+				'other' => q(세인트헬레나 파운드),
 			},
 		},
 		'SIT' => {
@@ -4385,18 +5338,24 @@ has 'curriencies' => (
 			},
 		},
 		'SLL' => {
+			symbol => 'SLL',
 			display_name => {
 				'currency' => q(시에라리온 리온),
+				'other' => q(시에라리온 리온),
 			},
 		},
 		'SOS' => {
+			symbol => 'SOS',
 			display_name => {
 				'currency' => q(소말리아 실링),
+				'other' => q(소말리아 실링),
 			},
 		},
 		'SRD' => {
+			symbol => 'SRD',
 			display_name => {
 				'currency' => q(수리남 달러),
+				'other' => q(수리남 달러),
 			},
 		},
 		'SRG' => {
@@ -4405,13 +5364,17 @@ has 'curriencies' => (
 			},
 		},
 		'SSP' => {
+			symbol => 'SSP',
 			display_name => {
 				'currency' => q(남수단 파운드),
+				'other' => q(남수단 파운드),
 			},
 		},
 		'STD' => {
+			symbol => 'STD',
 			display_name => {
 				'currency' => q(상투메 프린시페 도브라),
+				'other' => q(상투메 프린시페 도브라),
 			},
 		},
 		'SUR' => {
@@ -4425,19 +5388,24 @@ has 'curriencies' => (
 			},
 		},
 		'SYP' => {
+			symbol => 'SYP',
 			display_name => {
 				'currency' => q(시리아 파운드),
+				'other' => q(시리아 파운드),
 			},
 		},
 		'SZL' => {
+			symbol => 'SZL',
 			display_name => {
 				'currency' => q(스와질란드 릴랑게니),
+				'other' => q(스와질란드 릴랑게니),
 			},
 		},
 		'THB' => {
 			symbol => '฿',
 			display_name => {
 				'currency' => q(태국 바트),
+				'other' => q(태국 바트),
 			},
 		},
 		'TJR' => {
@@ -4446,8 +5414,10 @@ has 'curriencies' => (
 			},
 		},
 		'TJS' => {
+			symbol => 'TJS',
 			display_name => {
 				'currency' => q(타지키스탄 소모니),
+				'other' => q(타지키스탄 소모니),
 			},
 		},
 		'TMM' => {
@@ -4456,18 +5426,24 @@ has 'curriencies' => (
 			},
 		},
 		'TMT' => {
+			symbol => 'TMT',
 			display_name => {
 				'currency' => q(투르크메니스탄 마나트),
+				'other' => q(투르크메니스탄 마나트),
 			},
 		},
 		'TND' => {
+			symbol => 'TND',
 			display_name => {
 				'currency' => q(튀니지 디나르),
+				'other' => q(튀니지 디나르),
 			},
 		},
 		'TOP' => {
+			symbol => 'TOP',
 			display_name => {
 				'currency' => q(통가 파앙가),
+				'other' => q(통가 파앙가),
 			},
 		},
 		'TPE' => {
@@ -4481,14 +5457,17 @@ has 'curriencies' => (
 			},
 		},
 		'TRY' => {
+			symbol => 'TRY',
 			display_name => {
 				'currency' => q(신 터키 리라),
 				'other' => q(신 터키 리라),
 			},
 		},
 		'TTD' => {
+			symbol => 'TTD',
 			display_name => {
 				'currency' => q(트리니다드 토바고 달러),
+				'other' => q(트리니다드 토바고 달러),
 			},
 		},
 		'TWD' => {
@@ -4499,13 +5478,17 @@ has 'curriencies' => (
 			},
 		},
 		'TZS' => {
+			symbol => 'TZS',
 			display_name => {
 				'currency' => q(탄자니아 실링),
+				'other' => q(탄자니아 실링),
 			},
 		},
 		'UAH' => {
+			symbol => 'UAH',
 			display_name => {
 				'currency' => q(우크라이나 그리브나),
+				'other' => q(우크라이나 그리브나),
 			},
 		},
 		'UAK' => {
@@ -4519,14 +5502,17 @@ has 'curriencies' => (
 			},
 		},
 		'UGX' => {
+			symbol => 'UGX',
 			display_name => {
 				'currency' => q(우간다 실링),
+				'other' => q(우간다 실링),
 			},
 		},
 		'USD' => {
 			symbol => 'US$',
 			display_name => {
 				'currency' => q(미국 달러),
+				'other' => q(미국 달러),
 			},
 		},
 		'USN' => {
@@ -4550,13 +5536,17 @@ has 'curriencies' => (
 			},
 		},
 		'UYU' => {
+			symbol => 'UYU',
 			display_name => {
 				'currency' => q(우루과이 페소 우루과요),
+				'other' => q(우루과이 페소 우루과요),
 			},
 		},
 		'UZS' => {
+			symbol => 'UZS',
 			display_name => {
 				'currency' => q(우즈베키스탄 숨),
+				'other' => q(우즈베키스탄 숨),
 			},
 		},
 		'VEB' => {
@@ -4565,14 +5555,17 @@ has 'curriencies' => (
 			},
 		},
 		'VEF' => {
+			symbol => 'VEF',
 			display_name => {
-				'currency' => q(베네주엘라 볼리바르),
+				'currency' => q(베네수엘라 볼리바르),
+				'other' => q(베네수엘라 볼리바르),
 			},
 		},
 		'VND' => {
 			symbol => '₫',
 			display_name => {
 				'currency' => q(베트남 동),
+				'other' => q(베트남 동),
 			},
 		},
 		'VNN' => {
@@ -4581,13 +5574,17 @@ has 'curriencies' => (
 			},
 		},
 		'VUV' => {
+			symbol => 'VUV',
 			display_name => {
 				'currency' => q(바누아투 바투),
+				'other' => q(바누아투 바투),
 			},
 		},
 		'WST' => {
+			symbol => 'WST',
 			display_name => {
 				'currency' => q(서 사모아 탈라),
+				'other' => q(서 사모아 탈라),
 			},
 		},
 		'XAF' => {
@@ -4631,6 +5628,7 @@ has 'curriencies' => (
 			symbol => 'EC$',
 			display_name => {
 				'currency' => q(동카리브 달러),
+				'other' => q(동카리브 달러),
 			},
 		},
 		'XDR' => {
@@ -4690,6 +5688,7 @@ has 'curriencies' => (
 		'XXX' => {
 			display_name => {
 				'currency' => q(알 수 없는 통화단위),
+				'other' => q(알 수 없는 통화단위),
 			},
 		},
 		'YDD' => {
@@ -4698,8 +5697,10 @@ has 'curriencies' => (
 			},
 		},
 		'YER' => {
+			symbol => 'YER',
 			display_name => {
 				'currency' => q(예멘 리알),
+				'other' => q(예멘 리알),
 			},
 		},
 		'YUD' => {
@@ -4723,8 +5724,10 @@ has 'curriencies' => (
 			},
 		},
 		'ZAR' => {
+			symbol => 'ZAR',
 			display_name => {
 				'currency' => q(남아프리카 랜드),
+				'other' => q(남아프리카 랜드),
 			},
 		},
 		'ZMK' => {
@@ -4733,8 +5736,10 @@ has 'curriencies' => (
 			},
 		},
 		'ZMW' => {
+			symbol => 'ZMW',
 			display_name => {
 				'currency' => q(잠비아 콰쳐),
+				'other' => q(잠비아 콰쳐),
 			},
 		},
 		'ZRN' => {
@@ -4771,6 +5776,69 @@ has 'calendar_months' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+			'chinese' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'1월',
+							'2월',
+							'3월',
+							'4월',
+							'5월',
+							'6월',
+							'7월',
+							'8월',
+							'9월',
+							'10월',
+							'11월',
+							'12월'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'1월',
+							'2월',
+							'3월',
+							'4월',
+							'5월',
+							'6월',
+							'7월',
+							'8월',
+							'9월',
+							'10월',
+							'11월',
+							'12월'
+						],
+						leap => [
+							
+						],
+					},
+				},
+				'stand-alone' => {
+					narrow => {
+						nonleap => [
+							'1',
+							'2',
+							'3',
+							'4',
+							'5',
+							'6',
+							'7',
+							'8',
+							'9',
+							'10',
+							'11',
+							'12'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
 			'coptic' => {
 				'format' => {
 					abbreviated => {
@@ -5122,6 +6190,25 @@ has 'calendar_months' => (
 							
 						],
 					},
+					wide => {
+						nonleap => [
+							'1월',
+							'2월',
+							'3월',
+							'4월',
+							'5월',
+							'6월',
+							'7월',
+							'8월',
+							'9월',
+							'10월',
+							'11월',
+							'12월'
+						],
+						leap => [
+							
+						],
+					},
 				},
 			},
 			'hebrew' => {
@@ -5227,6 +6314,15 @@ has 'calendar_days' => (
 						sat => '토',
 						sun => '일'
 					},
+					narrow => {
+						mon => '월',
+						tue => '화',
+						wed => '수',
+						thu => '목',
+						fri => '금',
+						sat => '토',
+						sun => '일'
+					},
 					short => {
 						mon => '월',
 						tue => '화',
@@ -5247,6 +6343,15 @@ has 'calendar_days' => (
 					},
 				},
 				'stand-alone' => {
+					abbreviated => {
+						mon => '월',
+						tue => '화',
+						wed => '수',
+						thu => '목',
+						fri => '금',
+						sat => '토',
+						sun => '일'
+					},
 					narrow => {
 						mon => '월',
 						tue => '화',
@@ -5264,6 +6369,15 @@ has 'calendar_days' => (
 						fri => '금',
 						sat => '토',
 						sun => '일'
+					},
+					wide => {
+						mon => '월요일',
+						tue => '화요일',
+						wed => '수요일',
+						thu => '목요일',
+						fri => '금요일',
+						sat => '토요일',
+						sun => '일요일'
 					},
 				},
 			},
@@ -5321,9 +6435,15 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'pm' => q{오후},
+				'narrow' => {
 					'am' => q{오전},
+					'noon' => q{정오},
+					'pm' => q{오후},
+				},
+				'wide' => {
+					'noon' => q{정오},
+					'am' => q{오전},
+					'pm' => q{오후},
 				},
 			},
 		},
@@ -5356,8 +6476,8 @@ has 'eras' => (
 				'1' => '서기'
 			},
 			wide => {
-				'0' => '서력기원전',
-				'1' => '서력기원'
+				'0' => '기원전',
+				'1' => '서기'
 			},
 		},
 		'hebrew' => {
@@ -5627,16 +6747,16 @@ has 'date_formats' => (
 		'buddhist' => {
 		},
 		'chinese' => {
-			'full' => q{U년 M월 d일 EEEE},
-			'long' => q{U년 M월 d일},
+			'full' => q{U년 MMM d일 EEEE},
+			'long' => q{U년 MMM d일},
 			'medium' => q{y. M. d.},
 			'short' => q{y. M. d.},
 		},
 		'coptic' => {
 		},
 		'dangi' => {
-			'full' => q{U년 M월 d일 EEEE},
-			'long' => q{U년 M월 d일},
+			'full' => q{U년 MMM d일 EEEE},
+			'long' => q{U년 MMM d일},
 			'medium' => q{y. M. d.},
 			'short' => q{y. M. d.},
 		},
@@ -5742,49 +6862,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			EEEEd => q{d일 EEEE},
-			EHm => q{(E) HH:mm},
-			EHms => q{(E) HH:mm:ss},
-			Ed => q{d일 (E)},
-			Ehm => q{(E) a h:mm},
-			Ehms => q{(E) a h:mm:ss},
-			Gy => q{G y년},
-			GyMMM => q{G y년 MMM},
-			GyMMMEEEEd => q{G y년 MMM d일 EEEE},
-			GyMMMEd => q{G y년 MMM d일 (E)},
-			GyMMMd => q{G y년 MMM d일},
-			H => q{H시},
-			HHmmss => q{HH:mm:ss},
-			Hm => q{HH:mm},
-			Hms => q{H시 m분 s초},
-			M => q{M월},
-			MEEEEd => q{M. d. EEEE},
-			MEd => q{M. d. (E)},
-			MMM => q{LLL},
-			MMMEEEEd => q{MMM d일 EEEE},
-			MMMEd => q{MMM d일 (E)},
-			MMMd => q{MMM d일},
-			Md => q{M. d.},
-			d => q{d일},
-			h => q{a h시},
-			hm => q{a h:mm},
-			hms => q{a h:mm:ss},
-			mmss => q{mm:ss},
-			ms => q{mm:ss},
-			y => q{y년},
-			yM => q{y. M.},
-			yMEEEEd => q{y. M. d. EEEE},
-			yMEd => q{y. M. d. (E)},
-			yMM => q{y. M.},
-			yMMM => q{y년 MMM},
-			yMMMEEEEd => q{y년 MMM d일 EEEE},
-			yMMMEd => q{y년 MMM d일 (E)},
-			yMMMd => q{y년 MMM d일},
-			yMd => q{y. M. d.},
-			yQQQ => q{y년 QQQ},
-			yQQQQ => q{y년 QQQQ},
-		},
 		'chinese' => {
 			EEEEd => q{d일 EEEE},
 			Ed => q{d일 (E)},
@@ -5795,7 +6872,7 @@ has 'datetime_formats_available_formats' => (
 			GyMMMd => q{U년 MMM d일},
 			H => q{H시},
 			Hms => q{H시 m분 s초},
-			M => q{M월},
+			M => q{MMM},
 			MEEEEd => q{M. d. EEEE},
 			MEd => q{M. d. (E)},
 			MMM => q{LLL},
@@ -5859,6 +6936,50 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{G y년 QQQ},
 			yyyyQQQQ => q{G y년 QQQQ},
 		},
+		'gregorian' => {
+			E => q{ccc},
+			EEEEd => q{d일 EEEE},
+			EHm => q{(E) HH:mm},
+			EHms => q{(E) HH:mm:ss},
+			Ed => q{d일 (E)},
+			Ehm => q{(E) a h:mm},
+			Ehms => q{(E) a h:mm:ss},
+			Gy => q{G y년},
+			GyMMM => q{G y년 MMM},
+			GyMMMEEEEd => q{G y년 MMM d일 EEEE},
+			GyMMMEd => q{G y년 MMM d일 (E)},
+			GyMMMd => q{G y년 MMM d일},
+			H => q{H시},
+			HHmmss => q{HH:mm:ss},
+			Hm => q{HH:mm},
+			Hms => q{H시 m분 s초},
+			M => q{M월},
+			MEEEEd => q{M. d. EEEE},
+			MEd => q{M. d. (E)},
+			MMM => q{LLL},
+			MMMEEEEd => q{MMM d일 EEEE},
+			MMMEd => q{MMM d일 (E)},
+			MMMd => q{MMM d일},
+			Md => q{M. d.},
+			d => q{d일},
+			h => q{a h시},
+			hm => q{a h:mm},
+			hms => q{a h:mm:ss},
+			mmss => q{mm:ss},
+			ms => q{mm:ss},
+			y => q{y년},
+			yM => q{y. M.},
+			yMEEEEd => q{y. M. d. EEEE},
+			yMEd => q{y. M. d. (E)},
+			yMM => q{y. M.},
+			yMMM => q{y년 MMM},
+			yMMMEEEEd => q{y년 MMM d일 EEEE},
+			yMMMEd => q{y년 MMM d일 (E)},
+			yMMMd => q{y년 MMM d일},
+			yMd => q{y. M. d.},
+			yQQQ => q{y년 QQQ},
+			yQQQQ => q{y년 QQQQ},
+		},
 	} },
 );
 
@@ -5878,109 +6999,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			H => {
-				H => q{HH ~ HH시},
-			},
-			Hm => {
-				H => q{HH:mm ~ HH:mm},
-				m => q{HH:mm ~ HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm ~ HH:mm v},
-				m => q{HH:mm ~ HH:mm v},
-			},
-			Hv => {
-				H => q{HH ~ HH시 v},
-			},
-			M => {
-				M => q{M월 ~ M월},
-			},
-			MEd => {
-				M => q{M. d (E) ~ M. d (E)},
-				d => q{M. d (E) ~ M. d (E)},
-			},
-			MMM => {
-				M => q{MMM ~ MMM},
-			},
-			MMMEd => {
-				M => q{M월 d일 (E) ~ M월 d일 (E)},
-				d => q{M월 d일 (E) ~ d일 (E)},
-			},
-			MMMM => {
-				M => q{LLLL-LLLL},
-			},
-			MMMd => {
-				M => q{M월 d일 ~ M월 d일},
-				d => q{M월 d일 ~ d일},
-			},
-			Md => {
-				M => q{M. d ~ M. d},
-				d => q{M. d ~ M. d},
-			},
-			d => {
-				d => q{d일 ~ d일},
-			},
-			fallback => '{0} ~ {1}',
-			h => {
-				a => q{a h시 ~ a h시},
-				h => q{a h시 ~ h시},
-			},
-			hm => {
-				a => q{a h:mm ~ a h:mm},
-				h => q{a h:mm~h:mm},
-				m => q{a h:mm~h:mm},
-			},
-			hmv => {
-				a => q{a h:mm ~ a h:mm v},
-				h => q{a h:mm~h:mm v},
-				m => q{a h:mm~h:mm v},
-			},
-			hv => {
-				a => q{a h시 ~ a h시(v)},
-				h => q{a h시 ~ h시(v)},
-			},
-			y => {
-				y => q{y년 ~ y년},
-			},
-			yM => {
-				M => q{y. M ~ y. M},
-				y => q{y. M ~ y. M},
-			},
-			yMEd => {
-				M => q{y. M. d. (E) ~ y. M. d. (E)},
-				d => q{y. M. d. (E) ~ y. M. d. (E)},
-				y => q{y. M. d. (E) ~ y. M. d. (E)},
-			},
-			yMMM => {
-				M => q{y년 M월~M월},
-				y => q{y년 M월 ~ y년 M월},
-			},
-			yMMMEEEEd => {
-				M => q{y년 M월 d일 EEEE ~ M월 d일 EEEE},
-				d => q{y년 M월 d일 EEEE ~ d일 EEEE},
-				y => q{y년 M월 d일 EEEE ~ y년 M월 d일 EEEE},
-			},
-			yMMMEd => {
-				M => q{y년 M월 d일 (E) ~ M월 d일 (E)},
-				d => q{y년 M월 d일 (E) ~ d일 (E)},
-				y => q{y년 M월 d일 (E) ~ y년 M월 d일 (E)},
-			},
-			yMMMM => {
-				M => q{y년 MM월 ~ MM월},
-				y => q{y년 MM월 ~ y년 MM월},
-			},
-			yMMMd => {
-				M => q{y년 M월 d일 ~ M월 d일},
-				d => q{y년 M월 d일~d일},
-				y => q{y년 M월 d일 ~ y년 M월 d일},
-			},
-			yMd => {
-				M => q{y. M. d. ~ y. M. d.},
-				d => q{y. M. d. ~ y. M. d.},
-				y => q{y. M. d. ~ y. M. d.},
-			},
-		},
 		'generic' => {
 			H => {
 				H => q{HH ~ HH시},
@@ -6088,6 +7106,109 @@ has 'datetime_formats_interval' => (
 				y => q{G y. M. d. ~ y. M. d.},
 			},
 		},
+		'gregorian' => {
+			H => {
+				H => q{H ~ H시},
+			},
+			Hm => {
+				H => q{HH:mm ~ HH:mm},
+				m => q{HH:mm ~ HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm ~ HH:mm v},
+				m => q{HH:mm ~ HH:mm v},
+			},
+			Hv => {
+				H => q{HH ~ HH시 v},
+			},
+			M => {
+				M => q{M월~M월},
+			},
+			MEd => {
+				M => q{M. d (E) ~ M. d (E)},
+				d => q{M. d (E) ~ M. d (E)},
+			},
+			MMM => {
+				M => q{MMM~MMM},
+			},
+			MMMEd => {
+				M => q{M월 d일 (E) ~ M월 d일 (E)},
+				d => q{M월 d일 (E) ~ d일 (E)},
+			},
+			MMMM => {
+				M => q{LLLL-LLLL},
+			},
+			MMMd => {
+				M => q{M월 d일 ~ M월 d일},
+				d => q{MMM d일~d일},
+			},
+			Md => {
+				M => q{M. d ~ M. d},
+				d => q{M. d ~ M. d},
+			},
+			d => {
+				d => q{d일~d일},
+			},
+			fallback => '{0} ~ {1}',
+			h => {
+				a => q{a h시 ~ a h시},
+				h => q{a h시 ~ h시},
+			},
+			hm => {
+				a => q{a h:mm ~ a h:mm},
+				h => q{a h:mm~h:mm},
+				m => q{a h:mm~h:mm},
+			},
+			hmv => {
+				a => q{a h:mm ~ a h:mm v},
+				h => q{a h:mm~h:mm v},
+				m => q{a h:mm~h:mm v},
+			},
+			hv => {
+				a => q{a h시 ~ a h시(v)},
+				h => q{a h시 ~ h시(v)},
+			},
+			y => {
+				y => q{y년 ~ y년},
+			},
+			yM => {
+				M => q{y. M ~ y. M},
+				y => q{y. M ~ y. M},
+			},
+			yMEd => {
+				M => q{y. M. d. (E) ~ y. M. d. (E)},
+				d => q{y. M. d. (E) ~ y. M. d. (E)},
+				y => q{y. M. d. (E) ~ y. M. d. (E)},
+			},
+			yMMM => {
+				M => q{y년 M월~M월},
+				y => q{y년 M월 ~ y년 M월},
+			},
+			yMMMEEEEd => {
+				M => q{y년 M월 d일 EEEE ~ M월 d일 EEEE},
+				d => q{y년 M월 d일 EEEE ~ d일 EEEE},
+				y => q{y년 M월 d일 EEEE ~ y년 M월 d일 EEEE},
+			},
+			yMMMEd => {
+				M => q{y년 M월 d일 (E) ~ M월 d일 (E)},
+				d => q{y년 M월 d일 (E) ~ d일 (E)},
+				y => q{y년 M월 d일 (E) ~ y년 M월 d일 (E)},
+			},
+			yMMMM => {
+				M => q{y년 MMMM ~ MMMM},
+				y => q{y년 MMMM ~ y년 MMMM},
+			},
+			yMMMd => {
+				M => q{y년 M월 d일 ~ M월 d일},
+				d => q{y년 M월 d일~d일},
+				y => q{y년 M월 d일 ~ y년 M월 d일},
+			},
+			yMd => {
+				M => q{y. M. d. ~ y. M. d.},
+				d => q{y. M. d. ~ y. M. d.},
+				y => q{y. M. d. ~ y. M. d.},
+			},
+		},
 	} },
 );
 
@@ -6100,9 +7221,9 @@ has 'time_zone_names' => (
 		gmtFormat => q(GMT{0}),
 		gmtZeroFormat => q(GMT),
 		regionFormat => q({0} 시간),
-		regionFormat => q({0} 일광 절약 시간),
+		regionFormat => q({0} 하계 표준시),
 		regionFormat => q({0} 표준시),
-		fallbackFormat => q({1} ({0})),
+		fallbackFormat => q({1}({0})),
 		'Acre' => {
 			long => {
 				'daylight' => q(아크레 하계 표준시),
@@ -6654,7 +7775,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#포트오브스페인#,
 		},
 		'America/Porto_Velho' => {
-			exemplarCity => q#포르토 벨로#,
+			exemplarCity => q#포르투벨류#,
 		},
 		'America/Puerto_Rico' => {
 			exemplarCity => q#푸에르토리코#,
@@ -6675,7 +7796,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#리졸루트#,
 		},
 		'America/Rio_Branco' => {
-			exemplarCity => q#리오 브랑코#,
+			exemplarCity => q#히우 브랑쿠#,
 		},
 		'America/Santa_Isabel' => {
 			exemplarCity => q#산타 이사벨#,
@@ -6814,8 +7935,18 @@ has 'time_zone_names' => (
 		'Antarctica/Syowa' => {
 			exemplarCity => q#쇼와#,
 		},
+		'Antarctica/Troll' => {
+			exemplarCity => q#트롤#,
+		},
 		'Antarctica/Vostok' => {
 			exemplarCity => q#보스토크#,
+		},
+		'Apia' => {
+			long => {
+				'daylight' => q(아피아 하계 표준시),
+				'generic' => q(아피아 시간),
+				'standard' => q(아피아 표준시),
+			},
 		},
 		'Aqtau' => {
 			long => {
@@ -7240,7 +8371,7 @@ has 'time_zone_names' => (
 		},
 		'Brunei' => {
 			long => {
-				'standard' => q(브루나이 왕국 시간),
+				'standard' => q(브루나이 시간),
 			},
 		},
 		'Cape_Verde' => {
@@ -7262,7 +8393,7 @@ has 'time_zone_names' => (
 		},
 		'Chatham' => {
 			long => {
-				'daylight' => q(채텀 일광 절약 시간대),
+				'daylight' => q(채텀 하계 표준시),
 				'generic' => q(채텀 시간),
 				'standard' => q(채텀 표준시),
 			},
@@ -7350,7 +8481,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#알 수 없는 장소#,
 		},
 		'Europe/Amsterdam' => {
-			exemplarCity => q#암스텔담#,
+			exemplarCity => q#암스테르담#,
 		},
 		'Europe/Andorra' => {
 			exemplarCity => q#안도라#,
@@ -7437,7 +8568,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#몰타#,
 		},
 		'Europe/Mariehamn' => {
-			exemplarCity => q#마리에하먼#,
+			exemplarCity => q#마리에함#,
 		},
 		'Europe/Minsk' => {
 			exemplarCity => q#민스크#,
@@ -7535,6 +8666,11 @@ has 'time_zone_names' => (
 				'daylight' => q(동부유럽 하계 표준시),
 				'generic' => q(동부유럽 시간),
 				'standard' => q(동부유럽 표준시),
+			},
+		},
+		'Europe_Further_Eastern' => {
+			long => {
+				'standard' => q(극동 유럽 표준시),
 			},
 		},
 		'Europe_Western' => {
@@ -7710,7 +8846,7 @@ has 'time_zone_names' => (
 		},
 		'Iran' => {
 			long => {
-				'daylight' => q(이란 일광 절약 시간대),
+				'daylight' => q(이란 하계 표준시),
 				'generic' => q(이란 시간),
 				'standard' => q(이란 표준시),
 			},
@@ -7845,6 +8981,20 @@ has 'time_zone_names' => (
 				'standard' => q(모슨 시간),
 			},
 		},
+		'Mexico_Northwest' => {
+			long => {
+				'daylight' => q(멕시코 북서부 하계 표준시),
+				'generic' => q(멕시코 북서부 시간),
+				'standard' => q(멕시코 북서부 표준시),
+			},
+		},
+		'Mexico_Pacific' => {
+			long => {
+				'daylight' => q(멕시코 태평양 하계 표준시),
+				'generic' => q(멕시코 태평양 시간),
+				'standard' => q(멕시코 태평양 표준시),
+			},
+		},
 		'Mongolia' => {
 			long => {
 				'daylight' => q(울란바토르 하계 표준시),
@@ -7883,7 +9033,7 @@ has 'time_zone_names' => (
 		},
 		'New_Zealand' => {
 			long => {
-				'daylight' => q(뉴질랜드 일광 절약 시간대),
+				'daylight' => q(뉴질랜드 하계 표준시),
 				'generic' => q(뉴질랜드 시간),
 				'standard' => q(뉴질랜드 표준시),
 			},
@@ -8180,7 +9330,7 @@ has 'time_zone_names' => (
 		},
 		'Taipei' => {
 			long => {
-				'daylight' => q(대만 일광 절약 시간대),
+				'daylight' => q(대만 하계 표준시),
 				'generic' => q(대만 시간),
 				'standard' => q(대만 표준시),
 			},

@@ -1,11 +1,11 @@
 package Locale::CLDR::Nnh;
 # This file auto generated from Data\common\main\nnh.xml
-#	on Sat 21 Jun 12:44:54 am GMT
-# XML file generated 2013-08-30 23:19:50 -0500 (Fri, 30 Aug 2013)
+#	on Thu  2 Oct  1:16:37 pm GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -97,7 +97,7 @@ has 'characters' => (
 		return {
 			auxiliary => qr{(?^u:[q r x])},
 			index => ['A', 'B', 'C', 'D', 'E', 'Ɛ', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ŋ', 'O', 'Ɔ', 'P', '{Pf}', 'R', 'S', '{Sh}', 'T', '{Ts}', 'U', 'Ʉ', 'V', 'W', 'Ẅ', 'Y', 'Ÿ', 'Z', 'ʼ'],
-			main => qr{(?^u:[a á à â ǎ b c d e é è ê ě ɛ {ɛ́} {ɛ̀} {ɛ̂} {ɛ̌} f g h i í ì j k l m n ŋ o ó ò ô ǒ ɔ {ɔ́} {ɔ̀} {ɔ̂} {ɔ̌} p {pf} s {sh} t {ts} u ú ù û ǔ ʉ {ʉ́} {ʉ̀} {ʉ̂} {ʉ̌} v w ẅ y ÿ z ʼ])},
+			main => qr{(?^u:[a á à â ǎ b c d e é è ê ě ɛ {ɛ́} {ɛ̀} {ɛ̂} {ɛ̌} f g h i í ì j k l m ḿ n ń ŋ o ó ò ô ǒ ɔ {ɔ́} {ɔ̀} {ɔ̂} {ɔ̌} p {pf} s {sh} t {ts} u ú ù û ǔ ʉ {ʉ́} {ʉ̀} {ʉ̂} {ʉ̌} v w ẅ y ÿ z ʼ])},
 			punctuation => qr{(?^u:[, ; \: ! ? . ' ‘ ’ « »])},
 		};
 	},
@@ -143,18 +143,44 @@ has 'number_symbols' => (
 	default		=> sub { {
 		'latn' => {
 			'decimal' => q(,),
-			'exponential' => q(),
 			'group' => q(.),
-			'infinity' => q(),
 			'list' => q(;),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
 			'percentSign' => q(%),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
+);
+
+has 'number_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		decimalFormat => {
+			'default' => {
+				'0' => {
+					'default' => '#,##0.###',
+				},
+			},
+		},
+} },
+);
+
+has 'number_currency_formats' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'latn' => {
+			'pattern' => {
+				'default' => {
+					'standard' => {
+						'negative' => '¤ #,##0.00',
+						'positive' => '¤ #,##0.00',
+					},
+				},
+			},
+		},
+} },
 );
 
 has 'curriencies' => (
@@ -419,14 +445,14 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			yMEd => q{E , 'lyɛ'̌ʼ d 'na' M, y},
 			yMMM => q{MMM y},
 			yMMMEd => q{E , 'lyɛ'̌ʼ d 'na' MMM, y},
 			yMMMd => q{'lyɛ'̌ʼ d 'na' MMMM, y},
 			yMd => q{d/M/y},
 		},
-		'generic' => {
+		'gregorian' => {
 			yMEd => q{E , 'lyɛ'̌ʼ d 'na' M, y},
 			yMMM => q{MMM y},
 			yMMMEd => q{E , 'lyɛ'̌ʼ d 'na' MMM, y},

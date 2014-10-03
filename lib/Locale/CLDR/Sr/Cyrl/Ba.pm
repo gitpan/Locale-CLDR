@@ -1,11 +1,11 @@
 package Locale::CLDR::Sr::Cyrl::Ba;
 # This file auto generated from Data\common\main\sr_Cyrl_BA.xml
-#	on Sat 21 Jun  1:09:36 am GMT
-# XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
+#	on Thu  2 Oct  1:47:21 pm GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -15,24 +15,6 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Sr::Cyrl');
-has 'display_name_language' => (
-	is			=> 'ro',
-	isa			=> 'CodeRef',
-	init_arg	=> undef,
-	default		=> sub { 
-		 sub {
-			 my %languages = (
-				'sr' => 'српски',
-
-			);
-			if (@_) {
-				return $languages{$_[0]};
-			}
-			return \%languages;
-		}
-	},
-);
-
 has 'curriencies' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -167,7 +149,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			MEd => {
 				M => q{E, MM-dd - E, MM-dd},
 				d => q{E, MM-dd - E, MM-dd},
@@ -191,7 +173,7 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd - y-MM-dd},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			MEd => {
 				M => q{E, MM-dd - E, MM-dd},
 				d => q{E, MM-dd - E, MM-dd},

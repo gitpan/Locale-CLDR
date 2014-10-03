@@ -1,11 +1,11 @@
 package Locale::CLDR::Nyn;
 # This file auto generated from Data\common\main\nyn.xml
-#	on Sat 21 Jun 12:44:57 am GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct  1:16:40 pm GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -213,7 +213,7 @@ has 'display_name_territory' => (
  			'ML' => 'Mari',
  			'MM' => 'Myanamar',
  			'MN' => 'Mongoria',
- 			'MP' => 'Ebizinga by\'amatemba ga Mariana',
+ 			'MP' => 'Ebizinga by’amatemba ga Mariana',
  			'MQ' => 'Martinique',
  			'MR' => 'Mauriteeniya',
  			'MS' => 'Montserrati',

@@ -1,11 +1,11 @@
 package Locale::CLDR::Luo;
 # This file auto generated from Data\common\main\luo.xml
-#	on Sat 21 Jun 12:23:32 am GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct 12:21:41 pm GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -710,7 +710,7 @@ has 'calendar_months' => (
 							'Dwe mar Achiel',
 							'Dwe mar Ariyo',
 							'Dwe mar Adek',
-							'Dwe mar Ang\'wen',
+							'Dwe mar Ang’wen',
 							'Dwe mar Abich',
 							'Dwe mar Auchiel',
 							'Dwe mar Abiriyo',
@@ -770,7 +770,7 @@ has 'calendar_days' => (
 						mon => 'Wuok Tich',
 						tue => 'Tich Ariyo',
 						wed => 'Tich Adek',
-						thu => 'Tich Ang\'wen',
+						thu => 'Tich Ang’wen',
 						fri => 'Tich Abich',
 						sat => 'Ngeso',
 						sun => 'Jumapil'

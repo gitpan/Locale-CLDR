@@ -1,11 +1,11 @@
 package Locale::CLDR::Ar::Any::Dz;
 # This file auto generated from Data\common\main\ar_DZ.xml
-#	on Fri 20 Jun 10:49:30 pm GMT
-# XML file generated 2014-01-08 23:53:23 -0600 (Wed, 08 Jan 2014)
+#	on Thu  2 Oct 10:13:58 am GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -27,31 +27,9 @@ has 'number_symbols' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'arab' => {
-			'decimal' => q(٫),
-			'exponential' => q(),
-			'group' => q(٬),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
-		},
 		'latn' => {
 			'decimal' => q(,),
-			'exponential' => q(),
 			'group' => q(.),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );

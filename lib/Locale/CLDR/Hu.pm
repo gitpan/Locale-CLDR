@@ -1,11 +1,11 @@
 package Locale::CLDR::Hu;
 # This file auto generated from Data\common\main\hu.xml
-#	on Fri 20 Jun 11:49:06 pm GMT
-# XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
+#	on Thu  2 Oct 11:40:14 am GMT
+# XML file generated 2014-08-14 15:10:07 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -833,6 +833,7 @@ has 'display_name_language' => (
  				'fy' => 'fríz',
  				'ga' => 'ír',
  				'gaa' => 'ga',
+ 				'gag' => 'gagauz',
  				'gay' => 'gajo',
  				'gba' => 'gbaja',
  				'gd' => 'skót gael',
@@ -850,7 +851,7 @@ has 'display_name_language' => (
  				'gsw' => 'svájci német',
  				'gu' => 'gudzsarati',
  				'guz' => 'guszii',
- 				'gv' => 'Man-szigeti',
+ 				'gv' => 'man-szigeti',
  				'gwi' => 'gvicsin',
  				'ha' => 'hausza',
  				'hai' => 'haida',
@@ -916,6 +917,7 @@ has 'display_name_language' => (
  				'kmb' => 'kimbundu',
  				'kn' => 'kannada',
  				'ko' => 'koreai',
+ 				'koi' => 'komi-permják',
  				'kok' => 'konkani',
  				'kos' => 'kosrei',
  				'kpe' => 'kpelle',
@@ -942,6 +944,7 @@ has 'display_name_language' => (
  				'lez' => 'lezg',
  				'lg' => 'ganda',
  				'li' => 'limburgi',
+ 				'lkt' => 'lakota',
  				'ln' => 'lingala',
  				'lo' => 'laoszi',
  				'lol' => 'mongó',
@@ -971,7 +974,7 @@ has 'display_name_language' => (
  				'mg' => 'málgas',
  				'mga' => 'közép ír',
  				'mgh' => 'makua-metó',
- 				'mgo' => 'meta\'',
+ 				'mgo' => 'meta’',
  				'mh' => 'marshalli',
  				'mi' => 'maori',
  				'mic' => 'mikmak',
@@ -1013,7 +1016,7 @@ has 'display_name_language' => (
  				'no' => 'norvég',
  				'nog' => 'nogaj',
  				'non' => 'óskandináv',
- 				'nqo' => 'n\'kó',
+ 				'nqo' => 'n’kó',
  				'nr' => 'déli ndebele',
  				'nso' => 'északi szotó',
  				'nus' => 'nuer',
@@ -1048,6 +1051,7 @@ has 'display_name_language' => (
  				'pt_BR' => 'brazíliai portugál',
  				'pt_PT' => 'európai portugál',
  				'qu' => 'kecsua',
+ 				'quc' => 'kicse',
  				'raj' => 'radzsasztáni',
  				'rap' => 'rapanui',
  				'rar' => 'rarotongai',
@@ -1287,7 +1291,7 @@ has 'display_name_script' => (
  			'Moon' => 'Moon',
  			'Mtei' => 'Meitei mayek',
  			'Mymr' => 'Burmai',
- 			'Nkoo' => 'N\'ko',
+ 			'Nkoo' => 'N’ko',
  			'Ogam' => 'Ogham',
  			'Olck' => 'Ol chiki',
  			'Orkh' => 'Orhon',
@@ -1413,7 +1417,7 @@ has 'display_name_territory' => (
  			'BH' => 'Bahrein',
  			'BI' => 'Burundi',
  			'BJ' => 'Benin',
- 			'BL' => 'Saint Barthélemy',
+ 			'BL' => 'Saint-Barthélemy',
  			'BM' => 'Bermuda',
  			'BN' => 'Brunei',
  			'BO' => 'Bolívia',
@@ -1764,6 +1768,7 @@ has 'display_name_type' => (
  				'buddhist' => q{Buddhista naptár},
  				'chinese' => q{Kínai naptár},
  				'coptic' => q{Kopt naptár},
+ 				'dangi' => q{Dangi naptár},
  				'ethiopic' => q{Etióp naptár},
  				'ethiopic-amete-alem' => q{Etióp amete alem naptár},
  				'gregorian' => q{Gergely-naptár},
@@ -1771,6 +1776,7 @@ has 'display_name_type' => (
  				'indian' => q{Indiai nemzeti naptár},
  				'islamic' => q{Iszlám naptár},
  				'islamic-civil' => q{Iszlám civil naptár},
+ 				'iso8601' => q{ISO-8601 naptár},
  				'japanese' => q{Japán naptár},
  				'persian' => q{Perzsa naptár},
  				'roc' => q{Kínai köztársasági naptár},
@@ -2014,189 +2020,590 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'acre' => {
-						'one' => q({0} acre),
-						'other' => q({0} acre),
+						'' => q(hold),
+						'one' => q({0} hold),
+						'other' => q({0} hold),
+					},
+					'acre-foot' => {
+						'' => q(hold-láb),
+						'one' => q({0} hold-láb),
+						'other' => q({0} hold-láb),
+					},
+					'ampere' => {
+						'' => q(amper),
+						'one' => q({0} amper),
+						'other' => q({0} amper),
 					},
 					'arc-minute' => {
-						'one' => q({0} perc),
-						'other' => q({0} perc),
+						'' => q(ívperc),
+						'one' => q({0} ívperc),
+						'other' => q({0} ívperc),
 					},
 					'arc-second' => {
-						'one' => q({0} másodperc),
-						'other' => q({0} másodperc),
+						'' => q(ívmásodperc),
+						'one' => q({0} ívmásodperc),
+						'other' => q({0} ívmásodperc),
+					},
+					'astronomical-unit' => {
+						'' => q(csillagászati egység),
+						'one' => q({0} csillagászati egység),
+						'other' => q({0} csillagászati egység),
+					},
+					'bit' => {
+						'' => q(bit),
+						'one' => q({0} bit),
+						'other' => q({0} bit),
+					},
+					'byte' => {
+						'' => q(bájt),
+						'one' => q({0} bájt),
+						'other' => q({0} bájt),
+					},
+					'calorie' => {
+						'' => q(kalória),
+						'one' => q({0} kalória),
+						'other' => q({0} kalória),
+					},
+					'carat' => {
+						'' => q(karát),
+						'one' => q({0} karát),
+						'other' => q({0} karát),
 					},
 					'celsius' => {
+						'' => q(Celsius-fok),
 						'one' => q({0} Celsius-fok),
 						'other' => q({0} Celsius-fok),
 					},
+					'centiliter' => {
+						'' => q(centiliter),
+						'one' => q({0} centiliter),
+						'other' => q({0} centiliter),
+					},
 					'centimeter' => {
+						'' => q(centiméter),
 						'one' => q({0} centiméter),
 						'other' => q({0} centiméter),
 					},
+					'cubic-centimeter' => {
+						'' => q(köbcentiméter),
+						'one' => q({0} köbcentiméter),
+						'other' => q({0} köbcentiméter),
+					},
+					'cubic-foot' => {
+						'' => q(köbláb),
+						'one' => q({0} köbláb),
+						'other' => q({0} köbláb),
+					},
+					'cubic-inch' => {
+						'' => q(köbhüvelyk),
+						'one' => q({0} köbhüvelyk),
+						'other' => q({0} köbhüvelyk),
+					},
 					'cubic-kilometer' => {
+						'' => q(köbkilométer),
 						'one' => q({0} köbkilométer),
 						'other' => q({0} köbkilométer),
 					},
+					'cubic-meter' => {
+						'' => q(köbméter),
+						'one' => q({0} köbméter),
+						'other' => q({0} köbméter),
+					},
 					'cubic-mile' => {
+						'' => q(köbmérföld),
 						'one' => q({0} köbmérföld),
 						'other' => q({0} köbmérföld),
 					},
+					'cubic-yard' => {
+						'' => q(köbyard),
+						'one' => q({0} köbyard),
+						'other' => q({0} köbyard),
+					},
+					'cup' => {
+						'' => q(csésze),
+						'one' => q({0} csésze),
+						'other' => q({0} csésze),
+					},
 					'day' => {
+						'' => q(nap),
 						'one' => q({0} nap),
 						'other' => q({0} nap),
 					},
+					'deciliter' => {
+						'' => q(deciliter),
+						'one' => q({0} deciliter),
+						'other' => q({0} deciliter),
+					},
+					'decimeter' => {
+						'' => q(deciméter),
+						'one' => q({0} deciméter),
+						'other' => q({0} deciméter),
+					},
 					'degree' => {
+						'' => q(fok),
 						'one' => q({0} fok),
 						'other' => q({0} fok),
 					},
 					'fahrenheit' => {
+						'' => q(Fahrenheit-fok),
 						'one' => q({0} Fahrenheit-fok),
 						'other' => q({0} Fahrenheit-fok),
 					},
+					'fluid-ounce' => {
+						'' => q(folyadékuncia),
+						'one' => q({0} folyadékuncia),
+						'other' => q({0} folyadékuncia),
+					},
+					'foodcalorie' => {
+						'' => q(kalória),
+						'one' => q({0} kalória),
+						'other' => q({0} kalória),
+					},
 					'foot' => {
+						'' => q(láb),
 						'one' => q({0} láb),
 						'other' => q({0} láb),
 					},
 					'g-force' => {
-						'one' => q({0} g gyorsulás),
-						'other' => q({0} g gyorsulás),
+						'' => q(G gyorsulás),
+						'one' => q({0} G gyorsulás),
+						'other' => q({0} G gyorsulás),
+					},
+					'gallon' => {
+						'' => q(gallon),
+						'one' => q({0} gallon),
+						'other' => q({0} gallon),
+					},
+					'gigabit' => {
+						'' => q(gigabit),
+						'one' => q({0} gigabit),
+						'other' => q({0} gigabit),
+					},
+					'gigabyte' => {
+						'' => q(gigabájt),
+						'one' => q({0} gigabájt),
+						'other' => q({0} gigabájt),
+					},
+					'gigahertz' => {
+						'' => q(gigahertz),
+						'one' => q({0} gigahertz),
+						'other' => q({0} gigahertz),
+					},
+					'gigawatt' => {
+						'' => q(gigawatt),
+						'one' => q({0} gigawatt),
+						'other' => q({0} gigawatt),
 					},
 					'gram' => {
+						'' => q(gramm),
 						'one' => q({0} gramm),
 						'other' => q({0} gramm),
 					},
 					'hectare' => {
+						'' => q(hektár),
 						'one' => q({0} hektár),
 						'other' => q({0} hektár),
 					},
+					'hectoliter' => {
+						'' => q(hektoliter),
+						'one' => q({0} hektoliter),
+						'other' => q({0} hektoliter),
+					},
 					'hectopascal' => {
+						'' => q(hektopascal),
 						'one' => q({0} hektopascal),
 						'other' => q({0} hektopascal),
 					},
+					'hertz' => {
+						'' => q(hertz),
+						'one' => q({0} hertz),
+						'other' => q({0} hertz),
+					},
 					'horsepower' => {
+						'' => q(lóerő),
 						'one' => q({0} lóerő),
 						'other' => q({0} lóerő),
 					},
 					'hour' => {
+						'' => q({0}/óra),
 						'one' => q({0} óra),
 						'other' => q({0} óra),
 					},
 					'inch' => {
+						'' => q(hüvelyk),
 						'one' => q({0} hüvelyk),
 						'other' => q({0} hüvelyk),
 					},
 					'inch-hg' => {
+						'' => q(higanyhüvelyk),
 						'one' => q({0} higanyhüvelyk),
 						'other' => q({0} higanyhüvelyk),
 					},
+					'joule' => {
+						'' => q(joule),
+						'one' => q({0} joule),
+						'other' => q({0} joule),
+					},
+					'karat' => {
+						'' => q(karát),
+						'one' => q({0} karát),
+						'other' => q({0} karát),
+					},
+					'kelvin' => {
+						'' => q(kelvin),
+						'one' => q({0} kelvin),
+						'other' => q({0} kelvin),
+					},
+					'kilobit' => {
+						'' => q(kilobit),
+						'one' => q({0} kilobit),
+						'other' => q({0} kilobit),
+					},
+					'kilobyte' => {
+						'' => q(kilobájt),
+						'one' => q({0} kilobájt),
+						'other' => q({0} kilobájt),
+					},
+					'kilocalorie' => {
+						'' => q(kilokalória),
+						'one' => q({0} kilokalória),
+						'other' => q({0} kilokalória),
+					},
 					'kilogram' => {
+						'' => q(kilogramm),
 						'one' => q({0} kilogramm),
 						'other' => q({0} kilogramm),
 					},
+					'kilohertz' => {
+						'' => q(kilohertz),
+						'one' => q({0} kilohertz),
+						'other' => q({0} kilohertz),
+					},
+					'kilojoule' => {
+						'' => q(kilojoule),
+						'one' => q({0} kilojoule),
+						'other' => q({0} kilojoule),
+					},
 					'kilometer' => {
+						'' => q(kilométer),
 						'one' => q({0} kilométer),
 						'other' => q({0} kilométer),
 					},
 					'kilometer-per-hour' => {
+						'' => q(kilométer per óra),
 						'one' => q({0} kilométer per óra),
 						'other' => q({0} kilométer per óra),
 					},
 					'kilowatt' => {
+						'' => q(kilowatt),
 						'one' => q({0} kilowatt),
 						'other' => q({0} kilowatt),
 					},
+					'kilowatt-hour' => {
+						'' => q(kilowattóra),
+						'one' => q({0} kilowattóra),
+						'other' => q({0} kilowattóra),
+					},
 					'light-year' => {
+						'' => q(fényév),
 						'one' => q({0} fényév),
 						'other' => q({0} fényév),
 					},
 					'liter' => {
+						'' => q(liter),
 						'one' => q({0} liter),
 						'other' => q({0} liter),
 					},
+					'liter-per-kilometer' => {
+						'' => q(liter per kilométer),
+						'one' => q({0} liter per kilométer),
+						'other' => q({0} liter per kilométer),
+					},
+					'lux' => {
+						'' => q(lux),
+						'one' => q({0} lux),
+						'other' => q({0} lux),
+					},
+					'megabit' => {
+						'' => q(megabit),
+						'one' => q({0} megabit),
+						'other' => q({0} megabit),
+					},
+					'megabyte' => {
+						'' => q(megabájt),
+						'one' => q({0} megabájt),
+						'other' => q({0} megabájt),
+					},
+					'megahertz' => {
+						'' => q(megahertz),
+						'one' => q({0} megahertz),
+						'other' => q({0} megahertz),
+					},
+					'megaliter' => {
+						'' => q(megaliter),
+						'one' => q({0} megaliter),
+						'other' => q({0} megaliter),
+					},
+					'megawatt' => {
+						'' => q(megawatt),
+						'one' => q({0} megawatt),
+						'other' => q({0} megawatt),
+					},
 					'meter' => {
+						'' => q(méter),
 						'one' => q({0} méter),
 						'other' => q({0} méter),
 					},
 					'meter-per-second' => {
+						'' => q(méter per másodperc),
 						'one' => q({0} méter per másodperc),
 						'other' => q({0} méter per másodperc),
 					},
+					'meter-per-second-squared' => {
+						'' => q(méter per másodpercnégyzet),
+						'one' => q({0} méter per másodpercnégyzet),
+						'other' => q({0} méter per másodpercnégyzet),
+					},
+					'metric-ton' => {
+						'' => q(metrikus tonna),
+						'one' => q({0} metrikus tonna),
+						'other' => q({0} metrikus tonna),
+					},
+					'microgram' => {
+						'' => q(mikrogramm),
+						'one' => q({0} mikrogramm),
+						'other' => q({0} mikrogramm),
+					},
+					'micrometer' => {
+						'' => q(mikrométer),
+						'one' => q({0} mikrométer),
+						'other' => q({0} mikrométer),
+					},
+					'microsecond' => {
+						'' => q(mikroszekundum),
+						'one' => q({0} mikroszekundum),
+						'other' => q({0} mikroszekundum),
+					},
 					'mile' => {
+						'' => q(mérföld),
 						'one' => q({0} mérföld),
 						'other' => q({0} mérföld),
 					},
+					'mile-per-gallon' => {
+						'' => q(mérföld per gallon),
+						'one' => q({0} mérföld per gallon),
+						'other' => q({0} mérföld per gallon),
+					},
 					'mile-per-hour' => {
+						'' => q(mérföld per óra),
 						'one' => q({0} mérföld per óra),
 						'other' => q({0} mérföld per óra),
 					},
+					'milliampere' => {
+						'' => q(milliamper),
+						'one' => q({0} milliamper),
+						'other' => q({0} milliamper),
+					},
 					'millibar' => {
+						'' => q(millibar),
 						'one' => q({0} millibar),
 						'other' => q({0} millibar),
 					},
+					'milligram' => {
+						'' => q(milligramm),
+						'one' => q({0} milligramm),
+						'other' => q({0} milligramm),
+					},
+					'milliliter' => {
+						'' => q(milliliter),
+						'one' => q({0} milliliter),
+						'other' => q({0} milliliter),
+					},
 					'millimeter' => {
+						'' => q(milliméter),
 						'one' => q({0} milliméter),
 						'other' => q({0} milliméter),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(mm Hg),
+						'one' => q({0} higanymilliméter),
+						'other' => q({0} higanymilliméter),
+					},
 					'millisecond' => {
+						'' => q(ezredmásodperc),
 						'one' => q({0} ezredmásodperc),
 						'other' => q({0} ezredmásodperc),
 					},
+					'milliwatt' => {
+						'' => q(milliwatt),
+						'one' => q({0} milliwatt),
+						'other' => q({0} milliwatt),
+					},
 					'minute' => {
+						'' => q(perc),
 						'one' => q({0} perc),
 						'other' => q({0} perc),
 					},
 					'month' => {
+						'' => q(hónap),
 						'one' => q({0} hónap),
 						'other' => q({0} hónap),
 					},
+					'nanometer' => {
+						'' => q(nanométer),
+						'one' => q({0} nanométer),
+						'other' => q({0} nanométer),
+					},
+					'nanosecond' => {
+						'' => q(nanoszekundum),
+						'one' => q({0} nanoszekundum),
+						'other' => q({0} nanoszekundum),
+					},
+					'nautical-mile' => {
+						'' => q(tengeri mérföld),
+						'one' => q({0} tengeri mérföld),
+						'other' => q({0} tengeri mérföld),
+					},
+					'ohm' => {
+						'' => q(ohm),
+						'one' => q({0} ohm),
+						'other' => q({0} ohm),
+					},
 					'ounce' => {
+						'' => q(uncia),
 						'one' => q({0} uncia),
 						'other' => q({0} uncia),
+					},
+					'ounce-troy' => {
+						'' => q(troy uncia),
+						'one' => q({0} troy uncia),
+						'other' => q({0} troy uncia),
+					},
+					'parsec' => {
+						'' => q(parszek),
+						'one' => q({0} parszek),
+						'other' => q({0} parszek),
 					},
 					'per' => {
 						'' => q({0} per {1}),
 					},
 					'picometer' => {
+						'' => q(pikométer),
 						'one' => q({0} pikométer),
 						'other' => q({0} pikométer),
 					},
+					'pint' => {
+						'' => q(pint),
+						'one' => q({0} pint),
+						'other' => q({0} pint),
+					},
 					'pound' => {
+						'' => q(font),
 						'one' => q({0} font),
 						'other' => q({0} font),
 					},
+					'pound-per-square-inch' => {
+						'' => q(font per négyzethüvelyk),
+						'one' => q({0} font per négyzethüvelyk),
+						'other' => q({0} font per négyzethüvelyk),
+					},
+					'quart' => {
+						'' => q(quart),
+						'one' => q({0} quart),
+						'other' => q({0} quart),
+					},
+					'radian' => {
+						'' => q(radián),
+						'one' => q({0} radián),
+						'other' => q({0} radián),
+					},
 					'second' => {
+						'' => q({0}/másodperc),
 						'one' => q({0} másodperc),
 						'other' => q({0} másodperc),
 					},
+					'square-centimeter' => {
+						'' => q(négyzetcentiméter),
+						'one' => q({0} négyzetcentiméter),
+						'other' => q({0} négyzetcentiméter),
+					},
 					'square-foot' => {
+						'' => q(négyzetláb),
 						'one' => q({0} négyzetláb),
 						'other' => q({0} négyzetláb),
 					},
+					'square-inch' => {
+						'' => q(négyzethüvelyk),
+						'one' => q({0} négyzethüvelyk),
+						'other' => q({0} négyzethüvelyk),
+					},
 					'square-kilometer' => {
+						'' => q(négyzetkilométer),
 						'one' => q({0} négyzetkilométer),
 						'other' => q({0} négyzetkilométer),
 					},
 					'square-meter' => {
+						'' => q(négyzetméter),
 						'one' => q({0} négyzetméter),
 						'other' => q({0} négyzetméter),
 					},
 					'square-mile' => {
+						'' => q(négyzetmérföld),
 						'one' => q({0} négyzetmérföld),
 						'other' => q({0} négyzetmérföld),
 					},
+					'square-yard' => {
+						'' => q(négyzetyard),
+						'one' => q({0} négyzetyard),
+						'other' => q({0} négyzetyard),
+					},
+					'tablespoon' => {
+						'' => q(evőkanál),
+						'one' => q({0} evőkanál),
+						'other' => q({0} evőkanál),
+					},
+					'teaspoon' => {
+						'' => q(kávéskanál),
+						'one' => q({0} kávéskanál),
+						'other' => q({0} kávéskanál),
+					},
+					'terabit' => {
+						'' => q(terabit),
+						'one' => q({0} terabit),
+						'other' => q({0} terabit),
+					},
+					'terabyte' => {
+						'' => q(terabájt),
+						'one' => q({0} terabájt),
+						'other' => q({0} terabájt),
+					},
+					'ton' => {
+						'' => q(tonna),
+						'one' => q({0} tonna),
+						'other' => q({0} tonna),
+					},
+					'volt' => {
+						'' => q(volt),
+						'one' => q({0} volt),
+						'other' => q({0} volt),
+					},
 					'watt' => {
+						'' => q(watt),
 						'one' => q({0} watt),
 						'other' => q({0} watt),
 					},
 					'week' => {
+						'' => q(hét),
 						'one' => q({0} hét),
 						'other' => q({0} hét),
 					},
 					'yard' => {
+						'' => q(yard),
 						'one' => q({0} yard),
 						'other' => q({0} yard),
 					},
 					'year' => {
+						'' => q(év),
 						'one' => q({0} év),
 						'other' => q({0} év),
 					},
@@ -2215,10 +2622,12 @@ has 'units' => (
 						'other' => q({0}″),
 					},
 					'celsius' => {
-						'one' => q({0} °),
-						'other' => q({0} °),
+						'' => q(°C),
+						'one' => q({0} °C),
+						'other' => q({0} °C),
 					},
 					'centimeter' => {
+						'' => q(cm),
 						'one' => q({0} cm),
 						'other' => q({0} cm),
 					},
@@ -2231,6 +2640,7 @@ has 'units' => (
 						'other' => q({0} mi³),
 					},
 					'day' => {
+						'' => q(nap),
 						'one' => q({0} nap),
 						'other' => q({0} nap),
 					},
@@ -2251,6 +2661,7 @@ has 'units' => (
 						'other' => q({0} G),
 					},
 					'gram' => {
+						'' => q(g),
 						'one' => q({0} g),
 						'other' => q({0} g),
 					},
@@ -2267,6 +2678,7 @@ has 'units' => (
 						'other' => q({0} LE),
 					},
 					'hour' => {
+						'' => q(h),
 						'one' => q({0} h),
 						'other' => q({0} h),
 					},
@@ -2279,14 +2691,17 @@ has 'units' => (
 						'other' => q({0} inHg),
 					},
 					'kilogram' => {
+						'' => q(kg),
 						'one' => q({0} kg),
 						'other' => q({0} kg),
 					},
 					'kilometer' => {
+						'' => q(km),
 						'one' => q({0} km),
 						'other' => q({0} km),
 					},
 					'kilometer-per-hour' => {
+						'' => q(km/h),
 						'one' => q({0} km/h),
 						'other' => q({0} km/h),
 					},
@@ -2299,10 +2714,12 @@ has 'units' => (
 						'other' => q({0} fényév),
 					},
 					'liter' => {
+						'' => q(l),
 						'one' => q({0} l),
 						'other' => q({0} l),
 					},
 					'meter' => {
+						'' => q(m),
 						'one' => q({0} m),
 						'other' => q({0} m),
 					},
@@ -2323,18 +2740,22 @@ has 'units' => (
 						'other' => q({0} mb),
 					},
 					'millimeter' => {
+						'' => q(mm),
 						'one' => q({0} mm),
 						'other' => q({0} mm),
 					},
 					'millisecond' => {
+						'' => q(ms),
 						'one' => q({0} ms),
 						'other' => q({0} ms),
 					},
 					'minute' => {
+						'' => q(min),
 						'one' => q({0} min),
 						'other' => q({0} min),
 					},
 					'month' => {
+						'' => q(hónap),
 						'one' => q({0} h.),
 						'other' => q({0} h.),
 					},
@@ -2354,6 +2775,7 @@ has 'units' => (
 						'other' => q({0} font),
 					},
 					'second' => {
+						'' => q(s),
 						'one' => q({0} s),
 						'other' => q({0} s),
 					},
@@ -2378,6 +2800,7 @@ has 'units' => (
 						'other' => q({0} W),
 					},
 					'week' => {
+						'' => q(hét),
 						'one' => q({0} hét),
 						'other' => q({0} hét),
 					},
@@ -2386,195 +2809,597 @@ has 'units' => (
 						'other' => q({0} yd),
 					},
 					'year' => {
+						'' => q(év),
 						'one' => q({0} év),
 						'other' => q({0} év),
 					},
 				},
 				'short' => {
 					'acre' => {
-						'one' => q({0} ac),
-						'other' => q({0} ac),
+						'' => q(kh),
+						'one' => q({0} kh),
+						'other' => q({0} kh),
+					},
+					'acre-foot' => {
+						'' => q(ac ft),
+						'one' => q({0} ac ft),
+						'other' => q({0} ac ft),
+					},
+					'ampere' => {
+						'' => q(A),
+						'one' => q({0} A),
+						'other' => q({0} A),
 					},
 					'arc-minute' => {
+						'' => q(ívperc),
 						'one' => q({0}′),
 						'other' => q({0}′),
 					},
 					'arc-second' => {
+						'' => q(ívmásodperc),
 						'one' => q({0}″),
 						'other' => q({0}″),
 					},
+					'astronomical-unit' => {
+						'' => q(CsE),
+						'one' => q({0} CsE),
+						'other' => q({0} CsE),
+					},
+					'bit' => {
+						'' => q(bit),
+						'one' => q({0} bit),
+						'other' => q({0} bit),
+					},
+					'byte' => {
+						'' => q(bájt),
+						'one' => q({0} bájt),
+						'other' => q({0} bájt),
+					},
+					'calorie' => {
+						'' => q(cal),
+						'one' => q({0} cal),
+						'other' => q({0} cal),
+					},
+					'carat' => {
+						'' => q(Kt),
+						'one' => q({0} Kt),
+						'other' => q({0} Kt),
+					},
 					'celsius' => {
+						'' => q(°C),
 						'one' => q({0} °C),
 						'other' => q({0} °C),
 					},
+					'centiliter' => {
+						'' => q(cl),
+						'one' => q({0} cl),
+						'other' => q({0} cl),
+					},
 					'centimeter' => {
+						'' => q(cm),
 						'one' => q({0} cm),
 						'other' => q({0} cm),
 					},
+					'cubic-centimeter' => {
+						'' => q(cm³),
+						'one' => q({0} cm³),
+						'other' => q({0} cm³),
+					},
+					'cubic-foot' => {
+						'' => q(ft³),
+						'one' => q({0} ft³),
+						'other' => q({0} ft³),
+					},
+					'cubic-inch' => {
+						'' => q(in³),
+						'one' => q({0} in³),
+						'other' => q({0} in³),
+					},
 					'cubic-kilometer' => {
+						'' => q(km³),
 						'one' => q({0} km³),
 						'other' => q({0} km³),
 					},
+					'cubic-meter' => {
+						'' => q(m³),
+						'one' => q({0} m³),
+						'other' => q({0} m³),
+					},
 					'cubic-mile' => {
+						'' => q(mi³),
 						'one' => q({0} mi³),
 						'other' => q({0} mi³),
 					},
+					'cubic-yard' => {
+						'' => q(yd³),
+						'one' => q({0} yd³),
+						'other' => q({0} yd³),
+					},
+					'cup' => {
+						'' => q(cs.),
+						'one' => q({0} cs.),
+						'other' => q({0} cs.),
+					},
 					'day' => {
+						'' => q(nap),
 						'one' => q({0} nap),
 						'other' => q({0} nap),
 					},
+					'deciliter' => {
+						'' => q(dl),
+						'one' => q({0} dl),
+						'other' => q({0} dl),
+					},
+					'decimeter' => {
+						'' => q(dm),
+						'one' => q({0} dm),
+						'other' => q({0} dm),
+					},
 					'degree' => {
+						'' => q(fok),
 						'one' => q({0} fok),
 						'other' => q({0} fok),
 					},
 					'fahrenheit' => {
+						'' => q(°F),
 						'one' => q({0} °F),
 						'other' => q({0} °F),
 					},
+					'fluid-ounce' => {
+						'' => q(fl oz),
+						'one' => q({0} fl oz),
+						'other' => q({0} fl oz),
+					},
+					'foodcalorie' => {
+						'' => q(cal),
+						'one' => q({0} cal),
+						'other' => q({0} cal),
+					},
 					'foot' => {
+						'' => q(láb),
 						'one' => q({0} láb),
 						'other' => q({0} láb),
 					},
 					'g-force' => {
+						'' => q(G gyorsulás),
 						'one' => q({0} G),
 						'other' => q({0} G),
 					},
+					'gallon' => {
+						'' => q(gal),
+						'one' => q({0} gal),
+						'other' => q({0} gal),
+					},
+					'gigabit' => {
+						'' => q(Gb),
+						'one' => q({0} Gb),
+						'other' => q({0} Gb),
+					},
+					'gigabyte' => {
+						'' => q(GB),
+						'one' => q({0} GB),
+						'other' => q({0} GB),
+					},
+					'gigahertz' => {
+						'' => q(GHz),
+						'one' => q({0} GHz),
+						'other' => q({0} GHz),
+					},
+					'gigawatt' => {
+						'' => q(GW),
+						'one' => q({0} GW),
+						'other' => q({0} GW),
+					},
 					'gram' => {
+						'' => q(g),
 						'one' => q({0} g),
 						'other' => q({0} g),
 					},
 					'hectare' => {
+						'' => q(ha),
 						'one' => q({0} ha),
 						'other' => q({0} ha),
 					},
+					'hectoliter' => {
+						'' => q(hl),
+						'one' => q({0} hl),
+						'other' => q({0} hl),
+					},
 					'hectopascal' => {
+						'' => q(hPa),
 						'one' => q({0} hPa),
 						'other' => q({0} hPa),
 					},
+					'hertz' => {
+						'' => q(Hz),
+						'one' => q({0} Hz),
+						'other' => q({0} Hz),
+					},
 					'horsepower' => {
+						'' => q(LE),
 						'one' => q({0} LE),
 						'other' => q({0} LE),
 					},
 					'hour' => {
+						'' => q({0}/h),
 						'one' => q({0} h),
 						'other' => q({0} h),
 					},
 					'inch' => {
+						'' => q(hüvelyk),
 						'one' => q({0} hüvelyk),
 						'other' => q({0} hüvelyk),
 					},
 					'inch-hg' => {
+						'' => q(inHg),
 						'one' => q({0} inHg),
 						'other' => q({0} inHg),
 					},
+					'joule' => {
+						'' => q(J),
+						'one' => q({0} J),
+						'other' => q({0} J),
+					},
+					'karat' => {
+						'' => q(kt),
+						'one' => q({0} kt),
+						'other' => q({0} kt),
+					},
+					'kelvin' => {
+						'' => q(K),
+						'one' => q({0} K),
+						'other' => q({0} K),
+					},
+					'kilobit' => {
+						'' => q(kb),
+						'one' => q({0} kb),
+						'other' => q({0} kb),
+					},
+					'kilobyte' => {
+						'' => q(kB),
+						'one' => q({0} kB),
+						'other' => q({0} kB),
+					},
+					'kilocalorie' => {
+						'' => q(kcal),
+						'one' => q({0} kcal),
+						'other' => q({0} kcal),
+					},
 					'kilogram' => {
+						'' => q(kg),
 						'one' => q({0} kg),
 						'other' => q({0} kg),
 					},
+					'kilohertz' => {
+						'' => q(kHz),
+						'one' => q({0} kHz),
+						'other' => q({0} kHz),
+					},
+					'kilojoule' => {
+						'' => q(kJ),
+						'one' => q({0} kJ),
+						'other' => q({0} kJ),
+					},
 					'kilometer' => {
+						'' => q(km),
 						'one' => q({0} km),
 						'other' => q({0} km),
 					},
 					'kilometer-per-hour' => {
+						'' => q(km/h),
 						'one' => q({0} km/h),
 						'other' => q({0} km/h),
 					},
 					'kilowatt' => {
+						'' => q(kW),
 						'one' => q({0} kW),
 						'other' => q({0} kW),
 					},
+					'kilowatt-hour' => {
+						'' => q(kWh),
+						'one' => q({0} kWh),
+						'other' => q({0} kWh),
+					},
 					'light-year' => {
+						'' => q(fényév),
 						'one' => q({0} fényév),
 						'other' => q({0} fényév),
 					},
 					'liter' => {
+						'' => q(l),
 						'one' => q({0} l),
 						'other' => q({0} l),
 					},
+					'liter-per-kilometer' => {
+						'' => q(l/km),
+						'one' => q({0} l/km),
+						'other' => q({0} l/km),
+					},
+					'lux' => {
+						'' => q(lx),
+						'one' => q({0} lx),
+						'other' => q({0} lx),
+					},
+					'megabit' => {
+						'' => q(Mb),
+						'one' => q({0} Mb),
+						'other' => q({0} Mb),
+					},
+					'megabyte' => {
+						'' => q(MB),
+						'one' => q({0} MB),
+						'other' => q({0} MB),
+					},
+					'megahertz' => {
+						'' => q(MHz),
+						'one' => q({0} MHz),
+						'other' => q({0} MHz),
+					},
+					'megaliter' => {
+						'' => q(Ml),
+						'one' => q({0} Ml),
+						'other' => q({0} Ml),
+					},
+					'megawatt' => {
+						'' => q(MW),
+						'one' => q({0} MW),
+						'other' => q({0} MW),
+					},
 					'meter' => {
+						'' => q(m),
 						'one' => q({0} m),
 						'other' => q({0} m),
 					},
 					'meter-per-second' => {
+						'' => q(m/s),
 						'one' => q({0} m/s),
 						'other' => q({0} m/s),
 					},
+					'meter-per-second-squared' => {
+						'' => q(m/s²),
+						'one' => q({0} m/s²),
+						'other' => q({0} m/s²),
+					},
+					'metric-ton' => {
+						'' => q(t),
+						'one' => q({0} t),
+						'other' => q({0} t),
+					},
+					'microgram' => {
+						'' => q(µg),
+						'one' => q({0} µg),
+						'other' => q({0} µg),
+					},
+					'micrometer' => {
+						'' => q(µm),
+						'one' => q({0} µm),
+						'other' => q({0} µm),
+					},
+					'microsecond' => {
+						'' => q(μs),
+						'one' => q({0} μs),
+						'other' => q({0} μs),
+					},
 					'mile' => {
+						'' => q(mf),
 						'one' => q({0} mf),
 						'other' => q({0} mf),
 					},
+					'mile-per-gallon' => {
+						'' => q(mpg),
+						'one' => q({0} mpg),
+						'other' => q({0} mpg),
+					},
 					'mile-per-hour' => {
+						'' => q(mph),
 						'one' => q({0} mph),
 						'other' => q({0} mph),
 					},
+					'milliampere' => {
+						'' => q(mA),
+						'one' => q({0} mA),
+						'other' => q({0} mA),
+					},
 					'millibar' => {
+						'' => q(mbar),
 						'one' => q({0} mb),
 						'other' => q({0} mb),
 					},
+					'milligram' => {
+						'' => q(mg),
+						'one' => q({0} mg),
+						'other' => q({0} mg),
+					},
+					'milliliter' => {
+						'' => q(ml),
+						'one' => q({0} ml),
+						'other' => q({0} ml),
+					},
 					'millimeter' => {
+						'' => q(mm),
 						'one' => q({0} mm),
 						'other' => q({0} mm),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(mm Hg),
+						'one' => q({0} mm Hg),
+						'other' => q({0} mm Hg),
+					},
 					'millisecond' => {
+						'' => q(ms),
 						'one' => q({0} ms),
 						'other' => q({0} ms),
 					},
+					'milliwatt' => {
+						'' => q(mW),
+						'one' => q({0} mW),
+						'other' => q({0} mW),
+					},
 					'minute' => {
+						'' => q(min),
 						'one' => q({0} min),
 						'other' => q({0} min),
 					},
 					'month' => {
+						'' => q(hónap),
 						'one' => q({0} hónap),
 						'other' => q({0} hónap),
 					},
+					'nanometer' => {
+						'' => q(nm),
+						'one' => q({0} nm),
+						'other' => q({0} nm),
+					},
+					'nanosecond' => {
+						'' => q(ns),
+						'one' => q({0} ns),
+						'other' => q({0} ns),
+					},
+					'nautical-mile' => {
+						'' => q(nmi),
+						'one' => q({0} nmi),
+						'other' => q({0} nmi),
+					},
+					'ohm' => {
+						'' => q(Ω),
+						'one' => q({0} Ω),
+						'other' => q({0} Ω),
+					},
 					'ounce' => {
-						'one' => q({0} uncia),
-						'other' => q({0} uncia),
+						'' => q(oz),
+						'one' => q({0} oz),
+						'other' => q({0} oz),
+					},
+					'ounce-troy' => {
+						'' => q(oz t),
+						'one' => q({0} oz t),
+						'other' => q({0} oz t),
+					},
+					'parsec' => {
+						'' => q(pc),
+						'one' => q({0} pc),
+						'other' => q({0} pc),
 					},
 					'per' => {
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(pm),
 						'one' => q({0} pm),
 						'other' => q({0} pm),
 					},
+					'pint' => {
+						'' => q(pt),
+						'one' => q({0} pt),
+						'other' => q({0} pt),
+					},
 					'pound' => {
-						'one' => q({0} font),
-						'other' => q({0} font),
+						'' => q(lb),
+						'one' => q({0} lb),
+						'other' => q({0} lb),
+					},
+					'pound-per-square-inch' => {
+						'' => q(psi),
+						'one' => q({0} psi),
+						'other' => q({0} psi),
+					},
+					'quart' => {
+						'' => q(qt),
+						'one' => q({0} qt),
+						'other' => q({0} qt),
+					},
+					'radian' => {
+						'' => q(rad),
+						'one' => q({0} rad),
+						'other' => q({0} rad),
 					},
 					'second' => {
+						'' => q({0}/s),
 						'one' => q({0} s),
 						'other' => q({0} s),
 					},
+					'square-centimeter' => {
+						'' => q(cm²),
+						'one' => q({0} cm²),
+						'other' => q({0} cm²),
+					},
 					'square-foot' => {
+						'' => q(ft²),
 						'one' => q({0} ft²),
 						'other' => q({0} ft²),
 					},
+					'square-inch' => {
+						'' => q(in²),
+						'one' => q({0} in²),
+						'other' => q({0} in²),
+					},
 					'square-kilometer' => {
+						'' => q(km²),
 						'one' => q({0} km²),
 						'other' => q({0} km²),
 					},
 					'square-meter' => {
+						'' => q(m²),
 						'one' => q({0} m²),
 						'other' => q({0} m²),
 					},
 					'square-mile' => {
+						'' => q(mf²),
 						'one' => q({0} mf²),
 						'other' => q({0} mf²),
 					},
+					'square-yard' => {
+						'' => q(yd²),
+						'one' => q({0} yd²),
+						'other' => q({0} yd²),
+					},
+					'tablespoon' => {
+						'' => q(ek.),
+						'one' => q({0} ek.),
+						'other' => q({0} ek.),
+					},
+					'teaspoon' => {
+						'' => q(kk.),
+						'one' => q({0} kk.),
+						'other' => q({0} kk.),
+					},
+					'terabit' => {
+						'' => q(Tb),
+						'one' => q({0} Tb),
+						'other' => q({0} Tb),
+					},
+					'terabyte' => {
+						'' => q(TB),
+						'one' => q({0} TB),
+						'other' => q({0} TB),
+					},
+					'ton' => {
+						'' => q(tn),
+						'one' => q({0} tn),
+						'other' => q({0} tn),
+					},
+					'volt' => {
+						'' => q(V),
+						'one' => q({0} V),
+						'other' => q({0} V),
+					},
 					'watt' => {
+						'' => q(W),
 						'one' => q({0} W),
 						'other' => q({0} W),
 					},
 					'week' => {
+						'' => q(hét),
 						'one' => q({0} hét),
 						'other' => q({0} hét),
 					},
 					'yard' => {
+						'' => q(yd),
 						'one' => q({0} yd),
 						'other' => q({0} yd),
 					},
 					'year' => {
+						'' => q(év),
 						'one' => q({0} év),
 						'other' => q({0} év),
 					},
@@ -2606,6 +3431,20 @@ has 'listPatterns' => (
 				end => q({0} és {1}),
 				2 => q({0} és {1}),
 		} }
+);
+
+has 'default_numbering_system' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has native_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
 );
 
 has 'number_symbols' => (
@@ -2841,6 +3680,7 @@ has 'curriencies' => (
 			},
 		},
 		'AED' => {
+			symbol => 'AED',
 			display_name => {
 				'currency' => q(EAE-dirham),
 				'one' => q(EAE-dirham),
@@ -2855,6 +3695,7 @@ has 'curriencies' => (
 			},
 		},
 		'AFN' => {
+			symbol => 'AFN',
 			display_name => {
 				'currency' => q(afgán afghani),
 				'one' => q(afgán afghani),
@@ -2862,6 +3703,7 @@ has 'curriencies' => (
 			},
 		},
 		'ALL' => {
+			symbol => 'ALL',
 			display_name => {
 				'currency' => q(albán lek),
 				'one' => q(albán lek),
@@ -2869,6 +3711,7 @@ has 'curriencies' => (
 			},
 		},
 		'AMD' => {
+			symbol => 'AMD',
 			display_name => {
 				'currency' => q(örmény dram),
 				'one' => q(örmény dram),
@@ -2876,6 +3719,7 @@ has 'curriencies' => (
 			},
 		},
 		'ANG' => {
+			symbol => 'ANG',
 			display_name => {
 				'currency' => q(holland antilláki forint),
 				'one' => q(holland antilláki forint),
@@ -2883,6 +3727,7 @@ has 'curriencies' => (
 			},
 		},
 		'AOA' => {
+			symbol => 'AOA',
 			display_name => {
 				'currency' => q(angolai kwanza),
 				'one' => q(angolai kwanza),
@@ -2925,6 +3770,7 @@ has 'curriencies' => (
 			},
 		},
 		'ARS' => {
+			symbol => 'ARS',
 			display_name => {
 				'currency' => q(argentin peso),
 				'one' => q(argentin peso),
@@ -2947,6 +3793,7 @@ has 'curriencies' => (
 			},
 		},
 		'AWG' => {
+			symbol => 'AWG',
 			display_name => {
 				'currency' => q(arubai florin),
 				'one' => q(arubai florin),
@@ -2961,6 +3808,7 @@ has 'curriencies' => (
 			},
 		},
 		'AZN' => {
+			symbol => 'AZN',
 			display_name => {
 				'currency' => q(azerbajdzsáni manat),
 				'one' => q(azerbajdzsáni manat),
@@ -2975,6 +3823,7 @@ has 'curriencies' => (
 			},
 		},
 		'BAM' => {
+			symbol => 'BAM',
 			display_name => {
 				'currency' => q(bosznia-hercegovinai konvertibilis márka),
 				'one' => q(bosznia-hercegovinai konvertibilis márka),
@@ -2982,6 +3831,7 @@ has 'curriencies' => (
 			},
 		},
 		'BBD' => {
+			symbol => 'BBD',
 			display_name => {
 				'currency' => q(barbadosi dollár),
 				'one' => q(barbadosi dollár),
@@ -2989,6 +3839,7 @@ has 'curriencies' => (
 			},
 		},
 		'BDT' => {
+			symbol => 'BDT',
 			display_name => {
 				'currency' => q(bangladesi taka),
 				'one' => q(bangladesi taka),
@@ -3024,6 +3875,7 @@ has 'curriencies' => (
 			},
 		},
 		'BGN' => {
+			symbol => 'BGN',
 			display_name => {
 				'currency' => q(bolgár új leva),
 				'one' => q(bolgár új leva),
@@ -3031,6 +3883,7 @@ has 'curriencies' => (
 			},
 		},
 		'BHD' => {
+			symbol => 'BHD',
 			display_name => {
 				'currency' => q(bahreini dinár),
 				'one' => q(bahreini dinár),
@@ -3038,6 +3891,7 @@ has 'curriencies' => (
 			},
 		},
 		'BIF' => {
+			symbol => 'BIF',
 			display_name => {
 				'currency' => q(burundi frank),
 				'one' => q(burundi frank),
@@ -3045,6 +3899,7 @@ has 'curriencies' => (
 			},
 		},
 		'BMD' => {
+			symbol => 'BMD',
 			display_name => {
 				'currency' => q(bermudai dollár),
 				'one' => q(bermudai dollár),
@@ -3052,6 +3907,7 @@ has 'curriencies' => (
 			},
 		},
 		'BND' => {
+			symbol => 'BND',
 			display_name => {
 				'currency' => q(brunei dollár),
 				'one' => q(brunei dollár),
@@ -3059,6 +3915,7 @@ has 'curriencies' => (
 			},
 		},
 		'BOB' => {
+			symbol => 'BOB',
 			display_name => {
 				'currency' => q(bolíviai boliviano),
 				'one' => q(bolíviai boliviano),
@@ -3123,6 +3980,7 @@ has 'curriencies' => (
 			},
 		},
 		'BSD' => {
+			symbol => 'BSD',
 			display_name => {
 				'currency' => q(bahamai dollár),
 				'one' => q(bahamai dollár),
@@ -3130,6 +3988,7 @@ has 'curriencies' => (
 			},
 		},
 		'BTN' => {
+			symbol => 'BTN',
 			display_name => {
 				'currency' => q(bhutáni ngultrum),
 				'one' => q(bhutáni ngultrum),
@@ -3142,6 +4001,7 @@ has 'curriencies' => (
 			},
 		},
 		'BWP' => {
+			symbol => 'BWP',
 			display_name => {
 				'currency' => q(botswanai pula),
 				'one' => q(botswanai pula),
@@ -3154,6 +4014,7 @@ has 'curriencies' => (
 			},
 		},
 		'BYR' => {
+			symbol => 'BYR',
 			display_name => {
 				'currency' => q(fehérorosz rubel),
 				'one' => q(fehérorosz rubel),
@@ -3161,6 +4022,7 @@ has 'curriencies' => (
 			},
 		},
 		'BZD' => {
+			symbol => 'BZD',
 			display_name => {
 				'currency' => q(belize-i dollár),
 				'one' => q(belize-i dollár),
@@ -3176,6 +4038,7 @@ has 'curriencies' => (
 			},
 		},
 		'CDF' => {
+			symbol => 'CDF',
 			display_name => {
 				'currency' => q(kongói frank),
 				'one' => q(kongói frank),
@@ -3188,6 +4051,7 @@ has 'curriencies' => (
 			},
 		},
 		'CHF' => {
+			symbol => 'CHF',
 			display_name => {
 				'currency' => q(svájci frank),
 				'one' => q(svájci frank),
@@ -3205,6 +4069,7 @@ has 'curriencies' => (
 			},
 		},
 		'CLP' => {
+			symbol => 'CLP',
 			display_name => {
 				'currency' => q(chilei peso),
 				'one' => q(chilei peso),
@@ -3214,12 +4079,13 @@ has 'curriencies' => (
 		'CNY' => {
 			symbol => 'CNY',
 			display_name => {
-				'currency' => q(Kínai jüan renminbi),
-				'one' => q(Kínai jüan renminbi),
-				'other' => q(Kínai jüan renminbi),
+				'currency' => q(kínai jüan),
+				'one' => q(kínai jüan),
+				'other' => q(kínai jüan),
 			},
 		},
 		'COP' => {
+			symbol => 'COP',
 			display_name => {
 				'currency' => q(kolumbiai peso),
 				'one' => q(kolumbiai peso),
@@ -3232,6 +4098,7 @@ has 'curriencies' => (
 			},
 		},
 		'CRC' => {
+			symbol => 'CRC',
 			display_name => {
 				'currency' => q(Costa Rica-i colon),
 				'one' => q(Costa Rica-i colon),
@@ -3249,6 +4116,7 @@ has 'curriencies' => (
 			},
 		},
 		'CUC' => {
+			symbol => 'CUC',
 			display_name => {
 				'currency' => q(kubai konvertibilis peso),
 				'one' => q(kubai konvertibilis peso),
@@ -3256,6 +4124,7 @@ has 'curriencies' => (
 			},
 		},
 		'CUP' => {
+			symbol => 'CUP',
 			display_name => {
 				'currency' => q(kubai peso),
 				'one' => q(kubai peso),
@@ -3263,6 +4132,7 @@ has 'curriencies' => (
 			},
 		},
 		'CVE' => {
+			symbol => 'CVE',
 			display_name => {
 				'currency' => q(Cape Verde-i escudo),
 				'one' => q(Cape Verde-i escudo),
@@ -3275,6 +4145,7 @@ has 'curriencies' => (
 			},
 		},
 		'CZK' => {
+			symbol => 'CZK',
 			display_name => {
 				'currency' => q(cseh korona),
 				'one' => q(cseh korona),
@@ -3292,6 +4163,7 @@ has 'curriencies' => (
 			},
 		},
 		'DJF' => {
+			symbol => 'DJF',
 			display_name => {
 				'currency' => q(dzsibuti frank),
 				'one' => q(dzsibuti frank),
@@ -3299,6 +4171,7 @@ has 'curriencies' => (
 			},
 		},
 		'DKK' => {
+			symbol => 'DKK',
 			display_name => {
 				'currency' => q(dán korona),
 				'one' => q(dán korona),
@@ -3306,6 +4179,7 @@ has 'curriencies' => (
 			},
 		},
 		'DOP' => {
+			symbol => 'DOP',
 			display_name => {
 				'currency' => q(dominikai peso),
 				'one' => q(dominikai peso),
@@ -3313,6 +4187,7 @@ has 'curriencies' => (
 			},
 		},
 		'DZD' => {
+			symbol => 'DZD',
 			display_name => {
 				'currency' => q(algériai dínár),
 				'one' => q(algériai dínár),
@@ -3335,6 +4210,7 @@ has 'curriencies' => (
 			},
 		},
 		'EGP' => {
+			symbol => 'EGP',
 			display_name => {
 				'currency' => q(egyiptomi font),
 				'one' => q(egyiptomi font),
@@ -3342,6 +4218,7 @@ has 'curriencies' => (
 			},
 		},
 		'ERN' => {
+			symbol => 'ERN',
 			display_name => {
 				'currency' => q(eritreai nakfa),
 				'one' => q(eritreai nakfa),
@@ -3364,6 +4241,7 @@ has 'curriencies' => (
 			},
 		},
 		'ETB' => {
+			symbol => 'ETB',
 			display_name => {
 				'currency' => q(etiópiai birr),
 				'one' => q(etiópiai birr),
@@ -3384,6 +4262,7 @@ has 'curriencies' => (
 			},
 		},
 		'FJD' => {
+			symbol => 'FJD',
 			display_name => {
 				'currency' => q(fidzsi dollár),
 				'one' => q(fidzsi dollár),
@@ -3391,6 +4270,7 @@ has 'curriencies' => (
 			},
 		},
 		'FKP' => {
+			symbol => 'FKP',
 			display_name => {
 				'currency' => q(falkland-szigeteki font),
 				'one' => q(falkland-szigeteki font),
@@ -3416,6 +4296,7 @@ has 'curriencies' => (
 			},
 		},
 		'GEL' => {
+			symbol => 'GEL',
 			display_name => {
 				'currency' => q(grúz lari),
 				'one' => q(grúz lari),
@@ -3428,6 +4309,7 @@ has 'curriencies' => (
 			},
 		},
 		'GHS' => {
+			symbol => 'GHS',
 			display_name => {
 				'currency' => q(ghánai cedi),
 				'one' => q(ghánai cedi),
@@ -3435,6 +4317,7 @@ has 'curriencies' => (
 			},
 		},
 		'GIP' => {
+			symbol => 'GIP',
 			display_name => {
 				'currency' => q(gibraltári font),
 				'one' => q(gibraltári font),
@@ -3442,6 +4325,7 @@ has 'curriencies' => (
 			},
 		},
 		'GMD' => {
+			symbol => 'GMD',
 			display_name => {
 				'currency' => q(gambiai dalasi),
 				'one' => q(gambiai dalasi),
@@ -3449,6 +4333,7 @@ has 'curriencies' => (
 			},
 		},
 		'GNF' => {
+			symbol => 'GNF',
 			display_name => {
 				'currency' => q(guineai frank),
 				'one' => q(guineai frank),
@@ -3473,6 +4358,7 @@ has 'curriencies' => (
 			},
 		},
 		'GTQ' => {
+			symbol => 'GTQ',
 			display_name => {
 				'currency' => q(guatemalai quetzal),
 				'one' => q(guatemalai quetzal),
@@ -3490,6 +4376,7 @@ has 'curriencies' => (
 			},
 		},
 		'GYD' => {
+			symbol => 'GYD',
 			display_name => {
 				'currency' => q(guyanai dollár),
 				'one' => q(guyanai dollár),
@@ -3505,6 +4392,7 @@ has 'curriencies' => (
 			},
 		},
 		'HNL' => {
+			symbol => 'HNL',
 			display_name => {
 				'currency' => q(hodurasi lempira),
 				'one' => q(hodurasi lempira),
@@ -3517,6 +4405,7 @@ has 'curriencies' => (
 			},
 		},
 		'HRK' => {
+			symbol => 'HRK',
 			display_name => {
 				'currency' => q(horvát kuna),
 				'one' => q(horvát kuna),
@@ -3524,6 +4413,7 @@ has 'curriencies' => (
 			},
 		},
 		'HTG' => {
+			symbol => 'HTG',
 			display_name => {
 				'currency' => q(haiti gourde),
 				'one' => q(haiti gourde),
@@ -3531,7 +4421,7 @@ has 'curriencies' => (
 			},
 		},
 		'HUF' => {
-			symbol => 'Ft',
+			symbol => 'HUF',
 			display_name => {
 				'currency' => q(magyar forint),
 				'one' => q(magyar forint),
@@ -3539,6 +4429,7 @@ has 'curriencies' => (
 			},
 		},
 		'IDR' => {
+			symbol => 'IDR',
 			display_name => {
 				'currency' => q(indonéz rúpia),
 				'one' => q(indonéz rúpia),
@@ -3572,6 +4463,7 @@ has 'curriencies' => (
 			},
 		},
 		'IQD' => {
+			symbol => 'IQD',
 			display_name => {
 				'currency' => q(iraki dínár),
 				'one' => q(iraki dínár),
@@ -3579,6 +4471,7 @@ has 'curriencies' => (
 			},
 		},
 		'IRR' => {
+			symbol => 'IRR',
 			display_name => {
 				'currency' => q(iráni rial),
 				'one' => q(iráni rial),
@@ -3586,6 +4479,7 @@ has 'curriencies' => (
 			},
 		},
 		'ISK' => {
+			symbol => 'ISK',
 			display_name => {
 				'currency' => q(izlandi korona),
 				'one' => q(izlandi korona),
@@ -3598,6 +4492,7 @@ has 'curriencies' => (
 			},
 		},
 		'JMD' => {
+			symbol => 'JMD',
 			display_name => {
 				'currency' => q(jamaicai dollár),
 				'one' => q(jamaicai dollár),
@@ -3605,6 +4500,7 @@ has 'curriencies' => (
 			},
 		},
 		'JOD' => {
+			symbol => 'JOD',
 			display_name => {
 				'currency' => q(jordániai dínár),
 				'one' => q(jordániai dínár),
@@ -3620,6 +4516,7 @@ has 'curriencies' => (
 			},
 		},
 		'KES' => {
+			symbol => 'KES',
 			display_name => {
 				'currency' => q(kenyai shilling),
 				'one' => q(kenyai shilling),
@@ -3627,6 +4524,7 @@ has 'curriencies' => (
 			},
 		},
 		'KGS' => {
+			symbol => 'KGS',
 			display_name => {
 				'currency' => q(kirgizisztáni szom),
 				'one' => q(kirgizisztáni szom),
@@ -3634,6 +4532,7 @@ has 'curriencies' => (
 			},
 		},
 		'KHR' => {
+			symbol => 'KHR',
 			display_name => {
 				'currency' => q(kambodzsai riel),
 				'one' => q(kambodzsai riel),
@@ -3641,6 +4540,7 @@ has 'curriencies' => (
 			},
 		},
 		'KMF' => {
+			symbol => 'KMF',
 			display_name => {
 				'currency' => q(comorei frank),
 				'one' => q(comorei frank),
@@ -3648,6 +4548,7 @@ has 'curriencies' => (
 			},
 		},
 		'KPW' => {
+			symbol => 'KPW',
 			display_name => {
 				'currency' => q(észak-koreai won),
 				'one' => q(észak-koreai won),
@@ -3663,6 +4564,7 @@ has 'curriencies' => (
 			},
 		},
 		'KWD' => {
+			symbol => 'KWD',
 			display_name => {
 				'currency' => q(kuvaiti dínár),
 				'one' => q(kuvaiti dínár),
@@ -3670,6 +4572,7 @@ has 'curriencies' => (
 			},
 		},
 		'KYD' => {
+			symbol => 'KYD',
 			display_name => {
 				'currency' => q(kajmán-szigeteki dollár),
 				'one' => q(kajmán-szigeteki dollár),
@@ -3677,6 +4580,7 @@ has 'curriencies' => (
 			},
 		},
 		'KZT' => {
+			symbol => 'KZT',
 			display_name => {
 				'currency' => q(kazahsztáni tenge),
 				'one' => q(kazahsztáni tenge),
@@ -3684,6 +4588,7 @@ has 'curriencies' => (
 			},
 		},
 		'LAK' => {
+			symbol => 'LAK',
 			display_name => {
 				'currency' => q(laoszi kip),
 				'one' => q(laoszi kip),
@@ -3691,6 +4596,7 @@ has 'curriencies' => (
 			},
 		},
 		'LBP' => {
+			symbol => 'LBP',
 			display_name => {
 				'currency' => q(libanoni font),
 				'one' => q(libanoni font),
@@ -3698,6 +4604,7 @@ has 'curriencies' => (
 			},
 		},
 		'LKR' => {
+			symbol => 'LKR',
 			display_name => {
 				'currency' => q(Srí Lanka-i rúpia),
 				'one' => q(Srí Lanka-i rúpia),
@@ -3705,6 +4612,7 @@ has 'curriencies' => (
 			},
 		},
 		'LRD' => {
+			symbol => 'LRD',
 			display_name => {
 				'currency' => q(libériai dollár),
 				'one' => q(libériai dollár),
@@ -3717,6 +4625,7 @@ has 'curriencies' => (
 			},
 		},
 		'LTL' => {
+			symbol => 'LTL',
 			display_name => {
 				'currency' => q(litvániai litas),
 				'one' => q(litvániai litas),
@@ -3744,6 +4653,7 @@ has 'curriencies' => (
 			},
 		},
 		'LVL' => {
+			symbol => 'LVL',
 			display_name => {
 				'currency' => q(lett lats),
 				'one' => q(lett lats),
@@ -3756,6 +4666,7 @@ has 'curriencies' => (
 			},
 		},
 		'LYD' => {
+			symbol => 'LYD',
 			display_name => {
 				'currency' => q(líbiai dínár),
 				'one' => q(líbiai dínár),
@@ -3763,6 +4674,7 @@ has 'curriencies' => (
 			},
 		},
 		'MAD' => {
+			symbol => 'MAD',
 			display_name => {
 				'currency' => q(marokkói dirham),
 				'one' => q(marokkói dirham),
@@ -3775,6 +4687,7 @@ has 'curriencies' => (
 			},
 		},
 		'MDL' => {
+			symbol => 'MDL',
 			display_name => {
 				'currency' => q(moldován lei),
 				'one' => q(moldován lei),
@@ -3782,6 +4695,7 @@ has 'curriencies' => (
 			},
 		},
 		'MGA' => {
+			symbol => 'MGA',
 			display_name => {
 				'currency' => q(madagaszkári ariary),
 				'one' => q(madagaszkári ariary),
@@ -3794,6 +4708,7 @@ has 'curriencies' => (
 			},
 		},
 		'MKD' => {
+			symbol => 'MKD',
 			display_name => {
 				'currency' => q(macedon dínár),
 				'one' => q(macedon dínár),
@@ -3806,6 +4721,7 @@ has 'curriencies' => (
 			},
 		},
 		'MMK' => {
+			symbol => 'MMK',
 			display_name => {
 				'currency' => q(mianmari kyat),
 				'one' => q(mianmari kyat),
@@ -3813,6 +4729,7 @@ has 'curriencies' => (
 			},
 		},
 		'MNT' => {
+			symbol => 'MNT',
 			display_name => {
 				'currency' => q(mongóliai tugrik),
 				'one' => q(mongóliai tugrik),
@@ -3820,6 +4737,7 @@ has 'curriencies' => (
 			},
 		},
 		'MOP' => {
+			symbol => 'MOP',
 			display_name => {
 				'currency' => q(makaói pataca),
 				'one' => q(makaói pataca),
@@ -3827,6 +4745,7 @@ has 'curriencies' => (
 			},
 		},
 		'MRO' => {
+			symbol => 'MRO',
 			display_name => {
 				'currency' => q(mauritániai ouguiya),
 				'one' => q(mauritániai ouguiya),
@@ -3844,6 +4763,7 @@ has 'curriencies' => (
 			},
 		},
 		'MUR' => {
+			symbol => 'MUR',
 			display_name => {
 				'currency' => q(mauritiusi rúpia),
 				'one' => q(mauritiusi rúpia),
@@ -3851,6 +4771,7 @@ has 'curriencies' => (
 			},
 		},
 		'MVR' => {
+			symbol => 'MVR',
 			display_name => {
 				'currency' => q(maldív-szigeteki rufiyaa),
 				'one' => q(maldív-szigeteki rufiyaa),
@@ -3858,6 +4779,7 @@ has 'curriencies' => (
 			},
 		},
 		'MWK' => {
+			symbol => 'MWK',
 			display_name => {
 				'currency' => q(malawi kwacha),
 				'one' => q(malawi kwacha),
@@ -3883,6 +4805,7 @@ has 'curriencies' => (
 			},
 		},
 		'MYR' => {
+			symbol => 'MYR',
 			display_name => {
 				'currency' => q(malajziai ringgit),
 				'one' => q(malajziai ringgit),
@@ -3900,6 +4823,7 @@ has 'curriencies' => (
 			},
 		},
 		'MZN' => {
+			symbol => 'MZN',
 			display_name => {
 				'currency' => q(mozambiki metikális),
 				'one' => q(mozambiki metikális),
@@ -3907,6 +4831,7 @@ has 'curriencies' => (
 			},
 		},
 		'NAD' => {
+			symbol => 'NAD',
 			display_name => {
 				'currency' => q(namíbiai dollár),
 				'one' => q(namíbiai dollár),
@@ -3914,6 +4839,7 @@ has 'curriencies' => (
 			},
 		},
 		'NGN' => {
+			symbol => 'NGN',
 			display_name => {
 				'currency' => q(nigériai naira),
 				'one' => q(nigériai naira),
@@ -3926,6 +4852,7 @@ has 'curriencies' => (
 			},
 		},
 		'NIO' => {
+			symbol => 'NIO',
 			display_name => {
 				'currency' => q(nicaraguai córdoba),
 				'one' => q(nicaraguai córdoba),
@@ -3938,6 +4865,7 @@ has 'curriencies' => (
 			},
 		},
 		'NOK' => {
+			symbol => 'NOK',
 			display_name => {
 				'currency' => q(norvég korona),
 				'one' => q(norvég korona),
@@ -3945,6 +4873,7 @@ has 'curriencies' => (
 			},
 		},
 		'NPR' => {
+			symbol => 'NPR',
 			display_name => {
 				'currency' => q(nepáli rúpia),
 				'one' => q(nepáli rúpia),
@@ -3960,6 +4889,7 @@ has 'curriencies' => (
 			},
 		},
 		'OMR' => {
+			symbol => 'OMR',
 			display_name => {
 				'currency' => q(ománi rial),
 				'one' => q(ománi rial),
@@ -3967,6 +4897,7 @@ has 'curriencies' => (
 			},
 		},
 		'PAB' => {
+			symbol => 'PAB',
 			display_name => {
 				'currency' => q(panamai balboa),
 				'one' => q(panamai balboa),
@@ -3979,6 +4910,7 @@ has 'curriencies' => (
 			},
 		},
 		'PEN' => {
+			symbol => 'PEN',
 			display_name => {
 				'currency' => q(perui sol nuevo),
 				'one' => q(perui sol nuevo),
@@ -3991,6 +4923,7 @@ has 'curriencies' => (
 			},
 		},
 		'PGK' => {
+			symbol => 'PGK',
 			display_name => {
 				'currency' => q(pápua új-guineai kina),
 				'one' => q(pápua új-guineai kina),
@@ -3998,6 +4931,7 @@ has 'curriencies' => (
 			},
 		},
 		'PHP' => {
+			symbol => 'PHP',
 			display_name => {
 				'currency' => q(fülöp-szigeteki peso),
 				'one' => q(fülöp-szigeteki peso),
@@ -4005,6 +4939,7 @@ has 'curriencies' => (
 			},
 		},
 		'PKR' => {
+			symbol => 'PKR',
 			display_name => {
 				'currency' => q(pakisztáni rúpia),
 				'one' => q(pakisztáni rúpia),
@@ -4012,6 +4947,7 @@ has 'curriencies' => (
 			},
 		},
 		'PLN' => {
+			symbol => 'PLN',
 			display_name => {
 				'currency' => q(lengyel zloty),
 				'one' => q(lengyel zloty),
@@ -4029,6 +4965,7 @@ has 'curriencies' => (
 			},
 		},
 		'PYG' => {
+			symbol => 'PYG',
 			display_name => {
 				'currency' => q(paraguayi guarani),
 				'one' => q(paraguayi guarani),
@@ -4036,6 +4973,7 @@ has 'curriencies' => (
 			},
 		},
 		'QAR' => {
+			symbol => 'QAR',
 			display_name => {
 				'currency' => q(katari rial),
 				'one' => q(katari rial),
@@ -4057,6 +4995,7 @@ has 'curriencies' => (
 			},
 		},
 		'RON' => {
+			symbol => 'RON',
 			display_name => {
 				'currency' => q(román lej),
 				'one' => q(román lej),
@@ -4064,6 +5003,7 @@ has 'curriencies' => (
 			},
 		},
 		'RSD' => {
+			symbol => 'RSD',
 			display_name => {
 				'currency' => q(szerb dínár),
 				'one' => q(szerb dínár),
@@ -4071,6 +5011,7 @@ has 'curriencies' => (
 			},
 		},
 		'RUB' => {
+			symbol => 'RUB',
 			display_name => {
 				'currency' => q(orosz rubel),
 				'one' => q(orosz rubel),
@@ -4085,6 +5026,7 @@ has 'curriencies' => (
 			},
 		},
 		'RWF' => {
+			symbol => 'RWF',
 			display_name => {
 				'currency' => q(ruandai frank),
 				'one' => q(ruandai frank),
@@ -4092,6 +5034,7 @@ has 'curriencies' => (
 			},
 		},
 		'SAR' => {
+			symbol => 'SAR',
 			display_name => {
 				'currency' => q(szaúdi riyal),
 				'one' => q(szaúdi riyal),
@@ -4099,6 +5042,7 @@ has 'curriencies' => (
 			},
 		},
 		'SBD' => {
+			symbol => 'SBD',
 			display_name => {
 				'currency' => q(salamon-szigeteki dollár),
 				'one' => q(salamon-szigeteki dollár),
@@ -4106,6 +5050,7 @@ has 'curriencies' => (
 			},
 		},
 		'SCR' => {
+			symbol => 'SCR',
 			display_name => {
 				'currency' => q(seychelle-szigeteki rúpia),
 				'one' => q(seychelle-szigeteki rúpia),
@@ -4120,6 +5065,7 @@ has 'curriencies' => (
 			},
 		},
 		'SDG' => {
+			symbol => 'SDG',
 			display_name => {
 				'currency' => q(szudáni font),
 				'one' => q(szudáni font),
@@ -4134,6 +5080,7 @@ has 'curriencies' => (
 			},
 		},
 		'SEK' => {
+			symbol => 'SEK',
 			display_name => {
 				'currency' => q(svéd korona),
 				'one' => q(svéd korona),
@@ -4141,6 +5088,7 @@ has 'curriencies' => (
 			},
 		},
 		'SGD' => {
+			symbol => 'SGD',
 			display_name => {
 				'currency' => q(szingapúri dollár),
 				'one' => q(szingapúri dollár),
@@ -4148,6 +5096,7 @@ has 'curriencies' => (
 			},
 		},
 		'SHP' => {
+			symbol => 'SHP',
 			display_name => {
 				'currency' => q(Szent Ilona-i font),
 				'one' => q(Szent Ilona-i font),
@@ -4165,6 +5114,7 @@ has 'curriencies' => (
 			},
 		},
 		'SLL' => {
+			symbol => 'SLL',
 			display_name => {
 				'currency' => q(Sierra Leone-i leone),
 				'one' => q(Sierra Leone-i leone),
@@ -4172,6 +5122,7 @@ has 'curriencies' => (
 			},
 		},
 		'SOS' => {
+			symbol => 'SOS',
 			display_name => {
 				'currency' => q(szomáli shilling),
 				'one' => q(szomáli shilling),
@@ -4179,6 +5130,7 @@ has 'curriencies' => (
 			},
 		},
 		'SRD' => {
+			symbol => 'SRD',
 			display_name => {
 				'currency' => q(suriname-i dollár),
 				'one' => q(suriname-i dollár),
@@ -4191,6 +5143,7 @@ has 'curriencies' => (
 			},
 		},
 		'SSP' => {
+			symbol => 'SSP',
 			display_name => {
 				'currency' => q(dél-szudáni font),
 				'one' => q(dél-szudáni font),
@@ -4198,6 +5151,7 @@ has 'curriencies' => (
 			},
 		},
 		'STD' => {
+			symbol => 'STD',
 			display_name => {
 				'currency' => q(São Tomé és Príncipe-i dobra),
 				'one' => q(São Tomé és Príncipe-i dobra),
@@ -4215,6 +5169,7 @@ has 'curriencies' => (
 			},
 		},
 		'SYP' => {
+			symbol => 'SYP',
 			display_name => {
 				'currency' => q(szíriai font),
 				'one' => q(szíriai font),
@@ -4222,6 +5177,7 @@ has 'curriencies' => (
 			},
 		},
 		'SZL' => {
+			symbol => 'SZL',
 			display_name => {
 				'currency' => q(szváziföldi lilangeni),
 				'one' => q(szváziföldi lilangeni),
@@ -4242,6 +5198,7 @@ has 'curriencies' => (
 			},
 		},
 		'TJS' => {
+			symbol => 'TJS',
 			display_name => {
 				'currency' => q(tádzsikisztáni somoni),
 				'one' => q(tádzsikisztáni somoni),
@@ -4256,6 +5213,7 @@ has 'curriencies' => (
 			},
 		},
 		'TMT' => {
+			symbol => 'TMT',
 			display_name => {
 				'currency' => q(türkmenisztáni manat),
 				'one' => q(türkmenisztáni manat),
@@ -4263,6 +5221,7 @@ has 'curriencies' => (
 			},
 		},
 		'TND' => {
+			symbol => 'TND',
 			display_name => {
 				'currency' => q(tunéziai dínár),
 				'one' => q(tunéziai dínár),
@@ -4270,6 +5229,7 @@ has 'curriencies' => (
 			},
 		},
 		'TOP' => {
+			symbol => 'TOP',
 			display_name => {
 				'currency' => q(tongai paanga),
 				'one' => q(tongai paanga),
@@ -4289,6 +5249,7 @@ has 'curriencies' => (
 			},
 		},
 		'TRY' => {
+			symbol => 'TRY',
 			display_name => {
 				'currency' => q(török líra),
 				'one' => q(török líra),
@@ -4296,6 +5257,7 @@ has 'curriencies' => (
 			},
 		},
 		'TTD' => {
+			symbol => 'TTD',
 			display_name => {
 				'currency' => q(Trinidad és Tobago-i dollár),
 				'one' => q(Trinidad és Tobago-i dollár),
@@ -4311,6 +5273,7 @@ has 'curriencies' => (
 			},
 		},
 		'TZS' => {
+			symbol => 'TZS',
 			display_name => {
 				'currency' => q(tanzániai shilling),
 				'one' => q(tanzániai shilling),
@@ -4318,6 +5281,7 @@ has 'curriencies' => (
 			},
 		},
 		'UAH' => {
+			symbol => 'UAH',
 			display_name => {
 				'currency' => q(ukrán hrivnya),
 				'one' => q(ukrán hrivnya),
@@ -4337,6 +5301,7 @@ has 'curriencies' => (
 			},
 		},
 		'UGX' => {
+			symbol => 'UGX',
 			display_name => {
 				'currency' => q(ugandai shilling),
 				'one' => q(ugandai shilling),
@@ -4344,7 +5309,7 @@ has 'curriencies' => (
 			},
 		},
 		'USD' => {
-			symbol => '$',
+			symbol => 'USD',
 			display_name => {
 				'currency' => q(USA-dollár),
 				'one' => q(USA-dollár),
@@ -4376,6 +5341,7 @@ has 'curriencies' => (
 			},
 		},
 		'UYU' => {
+			symbol => 'UYU',
 			display_name => {
 				'currency' => q(uruguay-i peso),
 				'one' => q(uruguayi peso),
@@ -4383,6 +5349,7 @@ has 'curriencies' => (
 			},
 		},
 		'UZS' => {
+			symbol => 'UZS',
 			display_name => {
 				'currency' => q(üzbegisztáni szum),
 				'one' => q(üzbegisztáni szum),
@@ -4397,6 +5364,7 @@ has 'curriencies' => (
 			},
 		},
 		'VEF' => {
+			symbol => 'VEF',
 			display_name => {
 				'currency' => q(venezuelai bolivar),
 				'one' => q(venezuelai bolivar),
@@ -4412,6 +5380,7 @@ has 'curriencies' => (
 			},
 		},
 		'VUV' => {
+			symbol => 'VUV',
 			display_name => {
 				'currency' => q(vanuatui vatu),
 				'one' => q(vanuatui vatu),
@@ -4419,6 +5388,7 @@ has 'curriencies' => (
 			},
 		},
 		'WST' => {
+			symbol => 'WST',
 			display_name => {
 				'currency' => q(nyugat-szamoai tala),
 				'one' => q(nyugat-szamoai tala),
@@ -4554,6 +5524,7 @@ has 'curriencies' => (
 			},
 		},
 		'YER' => {
+			symbol => 'YER',
 			display_name => {
 				'currency' => q(jemeni rial),
 				'one' => q(jemeni rial),
@@ -4581,6 +5552,7 @@ has 'curriencies' => (
 			},
 		},
 		'ZAR' => {
+			symbol => 'ZAR',
 			display_name => {
 				'currency' => q(dél-afrikai rand),
 				'one' => q(dél-afrikai rand),
@@ -4588,11 +5560,13 @@ has 'curriencies' => (
 			},
 		},
 		'ZMK' => {
+			symbol => 'ZMK',
 			display_name => {
 				'currency' => q(Zambiai kwacha \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
+			symbol => 'ZMW',
 			display_name => {
 				'currency' => q(zambiai kwacha),
 				'one' => q(zambiai kwacha),
@@ -5507,13 +6481,15 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'am' => q{de.},
-					'pm' => q{du.},
-				},
 				'narrow' => {
 					'pm' => q{du.},
 					'am' => q{de.},
+					'noon' => q{dél},
+				},
+				'wide' => {
+					'am' => q{de.},
+					'noon' => q{dél},
+					'pm' => q{du.},
 				},
 			},
 		},
@@ -5735,6 +6711,7 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQQ => q{G y. QQQQ},
 		},
 		'gregorian' => {
+			E => q{ccc},
 			EHm => q{E HH:mm},
 			EHms => q{E HH:mm:ss},
 			Ed => q{d., E},
@@ -6004,8 +6981,14 @@ has 'time_zone_names' => (
 		},
 		'Afghanistan' => {
 			long => {
-				'standard' => q(Afganisztáni idő),
+				'standard' => q(afganisztáni idő),
 			},
+		},
+		'Africa/Abidjan' => {
+			exemplarCity => q#Abidjan#,
+		},
+		'Africa/Accra' => {
+			exemplarCity => q#Accra#,
 		},
 		'Africa/Addis_Ababa' => {
 			exemplarCity => q#Addisz-Abeba#,
@@ -6016,8 +6999,41 @@ has 'time_zone_names' => (
 		'Africa/Asmera' => {
 			exemplarCity => q#Asmera#,
 		},
+		'Africa/Bamako' => {
+			exemplarCity => q#Bamako#,
+		},
+		'Africa/Bangui' => {
+			exemplarCity => q#Bangui#,
+		},
+		'Africa/Banjul' => {
+			exemplarCity => q#Banjul#,
+		},
+		'Africa/Bissau' => {
+			exemplarCity => q#Bissau#,
+		},
+		'Africa/Blantyre' => {
+			exemplarCity => q#Blantyre#,
+		},
+		'Africa/Brazzaville' => {
+			exemplarCity => q#Brazzaville#,
+		},
+		'Africa/Bujumbura' => {
+			exemplarCity => q#Bujumbura#,
+		},
 		'Africa/Cairo' => {
 			exemplarCity => q#Kairó#,
+		},
+		'Africa/Casablanca' => {
+			exemplarCity => q#Casablanca#,
+		},
+		'Africa/Ceuta' => {
+			exemplarCity => q#Ceuta#,
+		},
+		'Africa/Conakry' => {
+			exemplarCity => q#Conakry#,
+		},
+		'Africa/Dakar' => {
+			exemplarCity => q#Dakar#,
 		},
 		'Africa/Dar_es_Salaam' => {
 			exemplarCity => q#Dar es-Salaam#,
@@ -6025,48 +7041,132 @@ has 'time_zone_names' => (
 		'Africa/Djibouti' => {
 			exemplarCity => q#Dzsibuti#,
 		},
+		'Africa/Douala' => {
+			exemplarCity => q#Douala#,
+		},
 		'Africa/El_Aaiun' => {
 			exemplarCity => q#El-Ajún#,
+		},
+		'Africa/Freetown' => {
+			exemplarCity => q#Freetown#,
+		},
+		'Africa/Gaborone' => {
+			exemplarCity => q#Gaborone#,
+		},
+		'Africa/Harare' => {
+			exemplarCity => q#Harare#,
+		},
+		'Africa/Johannesburg' => {
+			exemplarCity => q#Johannesburg#,
+		},
+		'Africa/Juba' => {
+			exemplarCity => q#Juba#,
+		},
+		'Africa/Kampala' => {
+			exemplarCity => q#Kampala#,
 		},
 		'Africa/Khartoum' => {
 			exemplarCity => q#Kartúm#,
 		},
+		'Africa/Kigali' => {
+			exemplarCity => q#Kigali#,
+		},
+		'Africa/Kinshasa' => {
+			exemplarCity => q#Kinshasa#,
+		},
+		'Africa/Lagos' => {
+			exemplarCity => q#Lagos#,
+		},
+		'Africa/Libreville' => {
+			exemplarCity => q#Libreville#,
+		},
+		'Africa/Lome' => {
+			exemplarCity => q#Lome#,
+		},
+		'Africa/Luanda' => {
+			exemplarCity => q#Luanda#,
+		},
+		'Africa/Lubumbashi' => {
+			exemplarCity => q#Lubumbashi#,
+		},
+		'Africa/Lusaka' => {
+			exemplarCity => q#Lusaka#,
+		},
 		'Africa/Malabo' => {
 			exemplarCity => q#Malabó#,
+		},
+		'Africa/Maputo' => {
+			exemplarCity => q#Maputo#,
+		},
+		'Africa/Maseru' => {
+			exemplarCity => q#Maseru#,
+		},
+		'Africa/Mbabane' => {
+			exemplarCity => q#Mbabane#,
+		},
+		'Africa/Mogadishu' => {
+			exemplarCity => q#Mogadishu#,
+		},
+		'Africa/Monrovia' => {
+			exemplarCity => q#Monrovia#,
+		},
+		'Africa/Nairobi' => {
+			exemplarCity => q#Nairobi#,
+		},
+		'Africa/Ndjamena' => {
+			exemplarCity => q#Ndjamena#,
+		},
+		'Africa/Niamey' => {
+			exemplarCity => q#Niamey#,
+		},
+		'Africa/Nouakchott' => {
+			exemplarCity => q#Nouakchott#,
+		},
+		'Africa/Ouagadougou' => {
+			exemplarCity => q#Ouagadougou#,
+		},
+		'Africa/Porto-Novo' => {
+			exemplarCity => q#Porto-Novo#,
 		},
 		'Africa/Sao_Tome' => {
 			exemplarCity => q#São Tomé#,
 		},
+		'Africa/Tripoli' => {
+			exemplarCity => q#Tripoli#,
+		},
 		'Africa/Tunis' => {
 			exemplarCity => q#Tunisz#,
 		},
+		'Africa/Windhoek' => {
+			exemplarCity => q#Windhoek#,
+		},
 		'Africa_Central' => {
 			long => {
-				'standard' => q(Közép-afrikai idő),
+				'standard' => q(közép-afrikai téli idő),
 			},
 		},
 		'Africa_Eastern' => {
 			long => {
-				'standard' => q(Kelet-afrikai idő),
+				'standard' => q(kelet-afrikai téli idő),
 			},
 		},
 		'Africa_Southern' => {
 			long => {
-				'standard' => q(Dél-afrikai idő),
+				'standard' => q(dél-afrikai téli idő),
 			},
 		},
 		'Africa_Western' => {
 			long => {
-				'daylight' => q(Nyugat-afrikai nyári idő),
-				'generic' => q(Nyugat-afrikai idő),
-				'standard' => q(Nyugat-afrikai zónaidő),
+				'daylight' => q(nyugat-afrikai nyári idő),
+				'generic' => q(nyugat-afrikai időzóna),
+				'standard' => q(nyugat-afrikai téli idő),
 			},
 		},
 		'Alaska' => {
 			long => {
-				'daylight' => q(Alaszkai nyári idő),
-				'generic' => q(Alaszkai idő),
-				'standard' => q(Alaszkai zónaidő),
+				'daylight' => q(alaszkai nyári idő),
+				'generic' => q(alaszkai idő),
+				'standard' => q(alaszkai zónaidő),
 			},
 		},
 		'Almaty' => {
@@ -6078,34 +7178,109 @@ has 'time_zone_names' => (
 		},
 		'Amazon' => {
 			long => {
-				'daylight' => q(Amazóniai nyári idő),
-				'generic' => q(Amazóniai idő),
-				'standard' => q(Amazóniai zónaidő),
+				'daylight' => q(amazóniai nyári idő),
+				'generic' => q(amazóniai idő),
+				'standard' => q(amazóniai téli idő),
 			},
+		},
+		'America/Adak' => {
+			exemplarCity => q#Adak#,
+		},
+		'America/Anchorage' => {
+			exemplarCity => q#Anchorage#,
+		},
+		'America/Anguilla' => {
+			exemplarCity => q#Anguilla#,
+		},
+		'America/Antigua' => {
+			exemplarCity => q#Antigua#,
 		},
 		'America/Araguaina' => {
 			exemplarCity => q#Araguaína#,
 		},
+		'America/Argentina/La_Rioja' => {
+			exemplarCity => q#La Rioja#,
+		},
 		'America/Argentina/Rio_Gallegos' => {
 			exemplarCity => q#Río Gallegos#,
+		},
+		'America/Argentina/Salta' => {
+			exemplarCity => q#Salta#,
+		},
+		'America/Argentina/San_Juan' => {
+			exemplarCity => q#San Juan#,
+		},
+		'America/Argentina/San_Luis' => {
+			exemplarCity => q#San Luis#,
 		},
 		'America/Argentina/Tucuman' => {
 			exemplarCity => q#Tucumán#,
 		},
+		'America/Argentina/Ushuaia' => {
+			exemplarCity => q#Ushuaia#,
+		},
+		'America/Aruba' => {
+			exemplarCity => q#Aruba#,
+		},
 		'America/Asuncion' => {
 			exemplarCity => q#Asunción#,
+		},
+		'America/Bahia' => {
+			exemplarCity => q#Bahia#,
+		},
+		'America/Bahia_Banderas' => {
+			exemplarCity => q#Bahia Banderas#,
+		},
+		'America/Barbados' => {
+			exemplarCity => q#Barbados#,
 		},
 		'America/Belem' => {
 			exemplarCity => q#Belém#,
 		},
+		'America/Belize' => {
+			exemplarCity => q#Belize#,
+		},
+		'America/Blanc-Sablon' => {
+			exemplarCity => q#Blanc-Sablon#,
+		},
+		'America/Boa_Vista' => {
+			exemplarCity => q#Boa Vista#,
+		},
 		'America/Bogota' => {
 			exemplarCity => q#Bogotá#,
+		},
+		'America/Boise' => {
+			exemplarCity => q#Boise#,
+		},
+		'America/Buenos_Aires' => {
+			exemplarCity => q#Buenos Aires#,
+		},
+		'America/Cambridge_Bay' => {
+			exemplarCity => q#Cambridge Bay#,
+		},
+		'America/Campo_Grande' => {
+			exemplarCity => q#Campo Grande#,
 		},
 		'America/Cancun' => {
 			exemplarCity => q#Cancún#,
 		},
+		'America/Caracas' => {
+			exemplarCity => q#Caracas#,
+		},
+		'America/Catamarca' => {
+			exemplarCity => q#Catamarca#,
+		},
+		'America/Cayenne' => {
+			exemplarCity => q#Cayenne#,
+		},
 		'America/Cayman' => {
 			exemplarCity => q#Kajmán-szigetek#,
+		},
+		'America/Chicago' => {
+			exemplarCity => q#Chicago#,
+		},
+		'America/Chihuahua' => {
+			exemplarCity => q#Chihuahua#,
 		},
 		'America/Coral_Harbour' => {
 			exemplarCity => q#Atikokan#,
@@ -6113,11 +7288,38 @@ has 'time_zone_names' => (
 		'America/Cordoba' => {
 			exemplarCity => q#Córdoba#,
 		},
+		'America/Costa_Rica' => {
+			exemplarCity => q#Costa Rica#,
+		},
+		'America/Creston' => {
+			exemplarCity => q#Creston#,
+		},
 		'America/Cuiaba' => {
 			exemplarCity => q#Cuiabá#,
 		},
+		'America/Curacao' => {
+			exemplarCity => q#Curacao#,
+		},
+		'America/Danmarkshavn' => {
+			exemplarCity => q#Danmarkshavn#,
+		},
+		'America/Dawson' => {
+			exemplarCity => q#Dawson#,
+		},
+		'America/Dawson_Creek' => {
+			exemplarCity => q#Dawson Creek#,
+		},
+		'America/Denver' => {
+			exemplarCity => q#Denver#,
+		},
+		'America/Detroit' => {
+			exemplarCity => q#Detroit#,
+		},
 		'America/Dominica' => {
 			exemplarCity => q#Dominika#,
+		},
+		'America/Edmonton' => {
+			exemplarCity => q#Edmonton#,
 		},
 		'America/Eirunepe' => {
 			exemplarCity => q#Eirunepé#,
@@ -6125,11 +7327,44 @@ has 'time_zone_names' => (
 		'America/El_Salvador' => {
 			exemplarCity => q#Salvador#,
 		},
+		'America/Fortaleza' => {
+			exemplarCity => q#Fortaleza#,
+		},
+		'America/Glace_Bay' => {
+			exemplarCity => q#Glace Bay#,
+		},
 		'America/Godthab' => {
 			exemplarCity => q#Nuuk#,
 		},
+		'America/Goose_Bay' => {
+			exemplarCity => q#Goose Bay#,
+		},
+		'America/Grand_Turk' => {
+			exemplarCity => q#Grand Turk#,
+		},
+		'America/Grenada' => {
+			exemplarCity => q#Grenada#,
+		},
+		'America/Guadeloupe' => {
+			exemplarCity => q#Guadeloupe#,
+		},
+		'America/Guatemala' => {
+			exemplarCity => q#Guatemala#,
+		},
+		'America/Guayaquil' => {
+			exemplarCity => q#Guayaquil#,
+		},
+		'America/Guyana' => {
+			exemplarCity => q#Guyana#,
+		},
+		'America/Halifax' => {
+			exemplarCity => q#Halifax#,
+		},
 		'America/Havana' => {
 			exemplarCity => q#Havanna#,
+		},
+		'America/Hermosillo' => {
+			exemplarCity => q#Hermosillo#,
 		},
 		'America/Indiana/Knox' => {
 			exemplarCity => q#Knox, Indiana#,
@@ -6152,23 +7387,110 @@ has 'time_zone_names' => (
 		'America/Indiana/Winamac' => {
 			exemplarCity => q#Winamac, Indiana#,
 		},
+		'America/Indianapolis' => {
+			exemplarCity => q#Indianapolis#,
+		},
+		'America/Inuvik' => {
+			exemplarCity => q#Inuvik#,
+		},
+		'America/Iqaluit' => {
+			exemplarCity => q#Iqaluit#,
+		},
+		'America/Jamaica' => {
+			exemplarCity => q#Jamaica#,
+		},
+		'America/Jujuy' => {
+			exemplarCity => q#Jujuy#,
+		},
+		'America/Juneau' => {
+			exemplarCity => q#Juneau#,
+		},
 		'America/Kentucky/Monticello' => {
 			exemplarCity => q#Monticello, Kentucky#,
 		},
+		'America/Kralendijk' => {
+			exemplarCity => q#Kralendijk#,
+		},
+		'America/La_Paz' => {
+			exemplarCity => q#La Paz#,
+		},
+		'America/Lima' => {
+			exemplarCity => q#Lima#,
+		},
+		'America/Los_Angeles' => {
+			exemplarCity => q#Los Angeles#,
+		},
+		'America/Louisville' => {
+			exemplarCity => q#Louisville#,
+		},
 		'America/Lower_Princes' => {
-			exemplarCity => q#Lower Prince's Quarter#,
+			exemplarCity => q#Lower Prince’s Quarter#,
 		},
 		'America/Maceio' => {
 			exemplarCity => q#Maceió#,
 		},
+		'America/Managua' => {
+			exemplarCity => q#Managua#,
+		},
+		'America/Manaus' => {
+			exemplarCity => q#Manaus#,
+		},
+		'America/Marigot' => {
+			exemplarCity => q#Marigot#,
+		},
+		'America/Martinique' => {
+			exemplarCity => q#Martinique#,
+		},
+		'America/Matamoros' => {
+			exemplarCity => q#Matamoros#,
+		},
 		'America/Mazatlan' => {
 			exemplarCity => q#Mazatlán#,
+		},
+		'America/Mendoza' => {
+			exemplarCity => q#Mendoza#,
+		},
+		'America/Menominee' => {
+			exemplarCity => q#Menominee#,
 		},
 		'America/Merida' => {
 			exemplarCity => q#Mérida#,
 		},
+		'America/Metlakatla' => {
+			exemplarCity => q#Metlakatla#,
+		},
 		'America/Mexico_City' => {
 			exemplarCity => q#Mexikóváros#,
+		},
+		'America/Miquelon' => {
+			exemplarCity => q#Miquelon#,
+		},
+		'America/Moncton' => {
+			exemplarCity => q#Moncton#,
+		},
+		'America/Monterrey' => {
+			exemplarCity => q#Monterrey#,
+		},
+		'America/Montevideo' => {
+			exemplarCity => q#Montevideo#,
+		},
+		'America/Montserrat' => {
+			exemplarCity => q#Montserrat#,
+		},
+		'America/Nassau' => {
+			exemplarCity => q#Nassau#,
+		},
+		'America/New_York' => {
+			exemplarCity => q#New York#,
+		},
+		'America/Nipigon' => {
+			exemplarCity => q#Nipigon#,
+		},
+		'America/Nome' => {
+			exemplarCity => q#Nome#,
+		},
+		'America/Noronha' => {
+			exemplarCity => q#Noronha#,
 		},
 		'America/North_Dakota/Beulah' => {
 			exemplarCity => q#Beulah, Észak-Dakota#,
@@ -6179,8 +7501,62 @@ has 'time_zone_names' => (
 		'America/North_Dakota/New_Salem' => {
 			exemplarCity => q#New Salem, Észak-Dakota#,
 		},
+		'America/Ojinaga' => {
+			exemplarCity => q#Ojinaga#,
+		},
+		'America/Panama' => {
+			exemplarCity => q#Panama#,
+		},
+		'America/Pangnirtung' => {
+			exemplarCity => q#Pangnirtung#,
+		},
+		'America/Paramaribo' => {
+			exemplarCity => q#Paramaribo#,
+		},
+		'America/Phoenix' => {
+			exemplarCity => q#Phoenix#,
+		},
+		'America/Port-au-Prince' => {
+			exemplarCity => q#Port-au-Prince#,
+		},
+		'America/Port_of_Spain' => {
+			exemplarCity => q#Port of Spain#,
+		},
+		'America/Porto_Velho' => {
+			exemplarCity => q#Porto Velho#,
+		},
+		'America/Puerto_Rico' => {
+			exemplarCity => q#Puerto Rico#,
+		},
+		'America/Rainy_River' => {
+			exemplarCity => q#Rainy River#,
+		},
+		'America/Rankin_Inlet' => {
+			exemplarCity => q#Rankin Inlet#,
+		},
+		'America/Recife' => {
+			exemplarCity => q#Recife#,
+		},
+		'America/Regina' => {
+			exemplarCity => q#Regina#,
+		},
+		'America/Resolute' => {
+			exemplarCity => q#Resolute#,
+		},
 		'America/Rio_Branco' => {
 			exemplarCity => q#Río Branco#,
+		},
+		'America/Santa_Isabel' => {
+			exemplarCity => q#Santa Isabel#,
+		},
+		'America/Santarem' => {
+			exemplarCity => q#Santarem#,
+		},
+		'America/Santiago' => {
+			exemplarCity => q#Santiago#,
+		},
+		'America/Santo_Domingo' => {
+			exemplarCity => q#Santo Domingo#,
 		},
 		'America/Sao_Paulo' => {
 			exemplarCity => q#São Paulo#,
@@ -6188,8 +7564,11 @@ has 'time_zone_names' => (
 		'America/Scoresbysund' => {
 			exemplarCity => q#Ittoqqortoormiit#,
 		},
+		'America/Sitka' => {
+			exemplarCity => q#Sitka#,
+		},
 		'America/St_Barthelemy' => {
-			exemplarCity => q#Saint Barthélemy#,
+			exemplarCity => q#Saint-Barthélemy#,
 		},
 		'America/St_Johns' => {
 			exemplarCity => q#St. John’s#,
@@ -6206,32 +7585,68 @@ has 'time_zone_names' => (
 		'America/St_Vincent' => {
 			exemplarCity => q#St. Vincent#,
 		},
+		'America/Swift_Current' => {
+			exemplarCity => q#Swift Current#,
+		},
+		'America/Tegucigalpa' => {
+			exemplarCity => q#Tegucigalpa#,
+		},
+		'America/Thule' => {
+			exemplarCity => q#Thule#,
+		},
+		'America/Thunder_Bay' => {
+			exemplarCity => q#Thunder Bay#,
+		},
+		'America/Tijuana' => {
+			exemplarCity => q#Tijuana#,
+		},
+		'America/Toronto' => {
+			exemplarCity => q#Toronto#,
+		},
+		'America/Tortola' => {
+			exemplarCity => q#Tortola#,
+		},
+		'America/Vancouver' => {
+			exemplarCity => q#Vancouver#,
+		},
+		'America/Whitehorse' => {
+			exemplarCity => q#Whitehorse#,
+		},
+		'America/Winnipeg' => {
+			exemplarCity => q#Winnipeg#,
+		},
+		'America/Yakutat' => {
+			exemplarCity => q#Yakutat#,
+		},
+		'America/Yellowknife' => {
+			exemplarCity => q#Yellowknife#,
+		},
 		'America_Central' => {
 			long => {
-				'daylight' => q(Középső államokbeli nyári idő),
-				'generic' => q(Középső államokbeli idő),
-				'standard' => q(Középső államokbeli zónaidő),
+				'daylight' => q(középső államokbeli nyári idő),
+				'generic' => q(középső államokbeli idő),
+				'standard' => q(középső államokbeli zónaidő),
 			},
 		},
 		'America_Eastern' => {
 			long => {
-				'daylight' => q(Keleti államokbeli nyári idő),
-				'generic' => q(Keleti államokbeli idő),
-				'standard' => q(Keleti államokbeli zónaidő),
+				'daylight' => q(keleti államokbeli nyári idő),
+				'generic' => q(keleti államokbeli idő),
+				'standard' => q(keleti államokbeli zónaidő),
 			},
 		},
 		'America_Mountain' => {
 			long => {
-				'daylight' => q(Hegyvidéki nyári idő),
-				'generic' => q(Hegyvidéki idő),
-				'standard' => q(Hegyvidéki zónaidő),
+				'daylight' => q(hegyvidéki nyári idő),
+				'generic' => q(hegyvidéki idő),
+				'standard' => q(hegyvidéki zónaidő),
 			},
 		},
 		'America_Pacific' => {
 			long => {
-				'daylight' => q(Csendes-óceáni nyári idő),
-				'generic' => q(Csendes-óceáni idő),
-				'standard' => q(Csendes-óceáni zónaidő),
+				'daylight' => q(csendes-óceáni nyári idő),
+				'generic' => q(csendes-óceáni idő),
+				'standard' => q(csendes-óceáni zónaidő),
 			},
 		},
 		'Anadyr' => {
@@ -6241,11 +7656,45 @@ has 'time_zone_names' => (
 				'standard' => q(Anadíri zónaidő),
 			},
 		},
+		'Antarctica/Casey' => {
+			exemplarCity => q#Casey#,
+		},
+		'Antarctica/Davis' => {
+			exemplarCity => q#Davis#,
+		},
 		'Antarctica/DumontDUrville' => {
 			exemplarCity => q#Dumont d’Urville#,
 		},
+		'Antarctica/Macquarie' => {
+			exemplarCity => q#Macquarie#,
+		},
+		'Antarctica/Mawson' => {
+			exemplarCity => q#Mawson#,
+		},
+		'Antarctica/McMurdo' => {
+			exemplarCity => q#McMurdo#,
+		},
+		'Antarctica/Palmer' => {
+			exemplarCity => q#Palmer#,
+		},
+		'Antarctica/Rothera' => {
+			exemplarCity => q#Rothera#,
+		},
+		'Antarctica/Syowa' => {
+			exemplarCity => q#Syowa#,
+		},
+		'Antarctica/Troll' => {
+			exemplarCity => q#Troll#,
+		},
 		'Antarctica/Vostok' => {
 			exemplarCity => q#Vosztok#,
+		},
+		'Apia' => {
+			long => {
+				'daylight' => q(apiai nyári idő),
+				'generic' => q(apiai idő),
+				'standard' => q(apiai téli idő),
+			},
 		},
 		'Aqtau' => {
 			long => {
@@ -6263,30 +7712,33 @@ has 'time_zone_names' => (
 		},
 		'Arabian' => {
 			long => {
-				'daylight' => q(Arab nyári idő),
-				'generic' => q(Arab idő),
-				'standard' => q(Arab zónaidő),
+				'daylight' => q(arab nyári idő),
+				'generic' => q(arab idő),
+				'standard' => q(arab téli idő),
 			},
+		},
+		'Arctic/Longyearbyen' => {
+			exemplarCity => q#Longyearbyen#,
 		},
 		'Argentina' => {
 			long => {
 				'daylight' => q(Argentínai nyári idő),
-				'generic' => q(Argentínai idő),
-				'standard' => q(Argentínai zónaidő),
+				'generic' => q(argentínai idő),
+				'standard' => q(argentínai téli idő),
 			},
 		},
 		'Argentina_Western' => {
 			long => {
-				'daylight' => q(Nyugat-argentínai nyári idő),
-				'generic' => q(Nyugat-argentínai idő),
-				'standard' => q(Nyugat-argentínai zónaidő),
+				'daylight' => q(nyugat-argentínai nyári idő),
+				'generic' => q(nyugat-argentínai időzóna),
+				'standard' => q(nyugat-argentínai téli idő),
 			},
 		},
 		'Armenia' => {
 			long => {
-				'daylight' => q(Örmény nyári idő),
-				'generic' => q(Örmény idő),
-				'standard' => q(Örmény zónaidő),
+				'daylight' => q(örményországi nyári idő),
+				'generic' => q(örményországi idő),
+				'standard' => q(örményországi téli idő),
 			},
 		},
 		'Asia/Aden' => {
@@ -6316,11 +7768,20 @@ has 'time_zone_names' => (
 		'Asia/Bahrain' => {
 			exemplarCity => q#Bahrein#,
 		},
+		'Asia/Baku' => {
+			exemplarCity => q#Baku#,
+		},
+		'Asia/Bangkok' => {
+			exemplarCity => q#Bangkok#,
+		},
 		'Asia/Beirut' => {
 			exemplarCity => q#Bejrút#,
 		},
 		'Asia/Bishkek' => {
 			exemplarCity => q#Biskek#,
+		},
+		'Asia/Brunei' => {
+			exemplarCity => q#Brunei#,
 		},
 		'Asia/Calcutta' => {
 			exemplarCity => q#Kalkutta#,
@@ -6331,23 +7792,53 @@ has 'time_zone_names' => (
 		'Asia/Chongqing' => {
 			exemplarCity => q#Csungking#,
 		},
+		'Asia/Colombo' => {
+			exemplarCity => q#Colombo#,
+		},
 		'Asia/Damascus' => {
 			exemplarCity => q#Damaszkusz#,
 		},
 		'Asia/Dhaka' => {
 			exemplarCity => q#Dháka#,
 		},
+		'Asia/Dili' => {
+			exemplarCity => q#Dili#,
+		},
+		'Asia/Dubai' => {
+			exemplarCity => q#Dubai#,
+		},
+		'Asia/Dushanbe' => {
+			exemplarCity => q#Dushanbe#,
+		},
 		'Asia/Gaza' => {
 			exemplarCity => q#Gáza#,
+		},
+		'Asia/Harbin' => {
+			exemplarCity => q#Harbin#,
+		},
+		'Asia/Hebron' => {
+			exemplarCity => q#Hebron#,
 		},
 		'Asia/Hong_Kong' => {
 			exemplarCity => q#Hongkong#,
 		},
+		'Asia/Hovd' => {
+			exemplarCity => q#Hovd#,
+		},
 		'Asia/Irkutsk' => {
 			exemplarCity => q#Irkutszk#,
 		},
+		'Asia/Jakarta' => {
+			exemplarCity => q#Jakarta#,
+		},
+		'Asia/Jayapura' => {
+			exemplarCity => q#Jayapura#,
+		},
 		'Asia/Jerusalem' => {
 			exemplarCity => q#Jeruzsálem#,
+		},
+		'Asia/Kabul' => {
+			exemplarCity => q#Kabul#,
 		},
 		'Asia/Kamchatka' => {
 			exemplarCity => q#Kamcsatka#,
@@ -6367,6 +7858,9 @@ has 'time_zone_names' => (
 		'Asia/Krasnoyarsk' => {
 			exemplarCity => q#Krasznojarszk#,
 		},
+		'Asia/Kuala_Lumpur' => {
+			exemplarCity => q#Kuala Lumpur#,
+		},
 		'Asia/Kuching' => {
 			exemplarCity => q#Kucseng#,
 		},
@@ -6382,6 +7876,15 @@ has 'time_zone_names' => (
 		'Asia/Makassar' => {
 			exemplarCity => q#Makasar#,
 		},
+		'Asia/Manila' => {
+			exemplarCity => q#Manila#,
+		},
+		'Asia/Muscat' => {
+			exemplarCity => q#Muscat#,
+		},
+		'Asia/Nicosia' => {
+			exemplarCity => q#Nicosia#,
+		},
 		'Asia/Novokuznetsk' => {
 			exemplarCity => q#Novokuznyeck#,
 		},
@@ -6391,6 +7894,15 @@ has 'time_zone_names' => (
 		'Asia/Omsk' => {
 			exemplarCity => q#Omszk#,
 		},
+		'Asia/Oral' => {
+			exemplarCity => q#Oral#,
+		},
+		'Asia/Phnom_Penh' => {
+			exemplarCity => q#Phnom Penh#,
+		},
+		'Asia/Pontianak' => {
+			exemplarCity => q#Pontianak#,
+		},
 		'Asia/Pyongyang' => {
 			exemplarCity => q#Phenjan#,
 		},
@@ -6399,6 +7911,9 @@ has 'time_zone_names' => (
 		},
 		'Asia/Qyzylorda' => {
 			exemplarCity => q#Kizilorda#,
+		},
+		'Asia/Rangoon' => {
+			exemplarCity => q#Rangoon#,
 		},
 		'Asia/Riyadh' => {
 			exemplarCity => q#Rijád#,
@@ -6433,8 +7948,11 @@ has 'time_zone_names' => (
 		'Asia/Tehran' => {
 			exemplarCity => q#Teherán#,
 		},
+		'Asia/Thimphu' => {
+			exemplarCity => q#Thimphu#,
+		},
 		'Asia/Tokyo' => {
-			exemplarCity => q#Tokio#,
+			exemplarCity => q#Tokió#,
 		},
 		'Asia/Ulaanbaatar' => {
 			exemplarCity => q#Ulánbátor#,
@@ -6462,13 +7980,16 @@ has 'time_zone_names' => (
 		},
 		'Atlantic' => {
 			long => {
-				'daylight' => q(Atlanti-óceáni nyári idő),
-				'generic' => q(Atlanti-óceáni idő),
-				'standard' => q(Atlanti-óceáni zónaidő),
+				'daylight' => q(atlanti-óceáni nyári idő),
+				'generic' => q(atlanti-óceáni idő),
+				'standard' => q(atlanti-óceáni zónaidő),
 			},
 		},
 		'Atlantic/Azores' => {
 			exemplarCity => q#Azori-szigetek#,
+		},
+		'Atlantic/Bermuda' => {
+			exemplarCity => q#Bermuda#,
 		},
 		'Atlantic/Canary' => {
 			exemplarCity => q#Kanári-szigetek#,
@@ -6479,6 +8000,9 @@ has 'time_zone_names' => (
 		'Atlantic/Faeroe' => {
 			exemplarCity => q#Faroe#,
 		},
+		'Atlantic/Madeira' => {
+			exemplarCity => q#Madeira#,
+		},
 		'Atlantic/Reykjavik' => {
 			exemplarCity => q#Reykjavík#,
 		},
@@ -6488,70 +8012,109 @@ has 'time_zone_names' => (
 		'Atlantic/St_Helena' => {
 			exemplarCity => q#Szent Ilona#,
 		},
+		'Atlantic/Stanley' => {
+			exemplarCity => q#Stanley#,
+		},
+		'Australia/Adelaide' => {
+			exemplarCity => q#Adelaide#,
+		},
+		'Australia/Brisbane' => {
+			exemplarCity => q#Brisbane#,
+		},
+		'Australia/Broken_Hill' => {
+			exemplarCity => q#Broken Hill#,
+		},
+		'Australia/Currie' => {
+			exemplarCity => q#Currie#,
+		},
+		'Australia/Darwin' => {
+			exemplarCity => q#Darwin#,
+		},
+		'Australia/Eucla' => {
+			exemplarCity => q#Eucla#,
+		},
+		'Australia/Hobart' => {
+			exemplarCity => q#Hobart#,
+		},
+		'Australia/Lindeman' => {
+			exemplarCity => q#Lindeman#,
+		},
+		'Australia/Lord_Howe' => {
+			exemplarCity => q#Lord Howe#,
+		},
+		'Australia/Melbourne' => {
+			exemplarCity => q#Melbourne#,
+		},
+		'Australia/Perth' => {
+			exemplarCity => q#Perth#,
+		},
+		'Australia/Sydney' => {
+			exemplarCity => q#Sydney#,
+		},
 		'Australia_Central' => {
 			long => {
-				'daylight' => q(Ausztrál középső nyári idő),
-				'generic' => q(Közép-ausztráliai idő),
-				'standard' => q(Ausztrál középső zónaidő),
+				'daylight' => q(közép-ausztráliai nyári idő),
+				'generic' => q(közép-ausztráliai idő),
+				'standard' => q(közép-ausztráliai téli idő),
 			},
 		},
 		'Australia_CentralWestern' => {
 			long => {
-				'daylight' => q(Ausztrál középső nyugati nyári idő),
-				'generic' => q(Ausztrál középső nyugati idő),
-				'standard' => q(Ausztrál középső nyugati zónaidő),
+				'daylight' => q(közép-nyugat-ausztráliai nyári idő),
+				'generic' => q(közép-nyugat-ausztráliai idő),
+				'standard' => q(közép-nyugat-ausztráliai téli idő),
 			},
 		},
 		'Australia_Eastern' => {
 			long => {
-				'daylight' => q(Ausztrál keleti nyári idő),
-				'generic' => q(Kelet-ausztrál idő),
-				'standard' => q(Ausztrál keleti zónaidő),
+				'daylight' => q(kelet-ausztráliai nyári idő),
+				'generic' => q(kelet-ausztráliai idő),
+				'standard' => q(kelet-ausztráliai téli idő),
 			},
 		},
 		'Australia_Western' => {
 			long => {
-				'daylight' => q(Ausztrál nyugati nyári idő),
-				'generic' => q(Nyugat-ausztrál idő),
-				'standard' => q(Ausztrál nyugati zónaidő),
+				'daylight' => q(nyugat-ausztráliai nyári idő),
+				'generic' => q(nyugat-ausztráliai idő),
+				'standard' => q(nyugat-ausztráliai téli idő),
 			},
 		},
 		'Azerbaijan' => {
 			long => {
-				'daylight' => q(Azerbajdzsáni nyári idő),
+				'daylight' => q(azerbajdzsáni nyári idő),
 				'generic' => q(Azerbajdzsáni idő),
-				'standard' => q(Azerbajdzsáni zónaidő),
+				'standard' => q(azerbajdzsáni téli idő),
 			},
 		},
 		'Azores' => {
 			long => {
-				'daylight' => q(Azori nyári idő),
-				'generic' => q(Azori idő),
-				'standard' => q(Azori zónaidő),
+				'daylight' => q(azori nyári idő),
+				'generic' => q(azori időzóna),
+				'standard' => q(azori téli idő),
 			},
 		},
 		'Bangladesh' => {
 			long => {
-				'daylight' => q(Bangladesi nyári idő),
-				'generic' => q(Bangladesi idő),
-				'standard' => q(Bangladesi zónaidő),
+				'daylight' => q(bangladesi nyári idő),
+				'generic' => q(bangladesi idő),
+				'standard' => q(bangladesi téli idő),
 			},
 		},
 		'Bhutan' => {
 			long => {
-				'standard' => q(Butáni idő),
+				'standard' => q(butáni idő),
 			},
 		},
 		'Bolivia' => {
 			long => {
-				'standard' => q(Bolíviai idő),
+				'standard' => q(bolíviai téli idő),
 			},
 		},
 		'Brasilia' => {
 			long => {
-				'daylight' => q(Brazíliai nyári idő),
-				'generic' => q(Brazíliai idő),
-				'standard' => q(Brazíliai zónaidő),
+				'daylight' => q(brazíliai nyári idő),
+				'generic' => q(brazíliai idő),
+				'standard' => q(brazíliai téli idő),
 			},
 		},
 		'Brunei' => {
@@ -6561,100 +8124,100 @@ has 'time_zone_names' => (
 		},
 		'Cape_Verde' => {
 			long => {
-				'daylight' => q(Zöld-foki-szigeteki nyári idő),
-				'generic' => q(Zöld-foki-szigeteki idő),
-				'standard' => q(Zöld-foki-szigeteki zónaidő),
+				'daylight' => q(zöld-foki-szigeteki nyári idő),
+				'generic' => q(zöld-foki-szigeteki időzóna),
+				'standard' => q(zöld-foki-szigeteki téli idő),
 			},
 		},
 		'Chamorro' => {
 			long => {
-				'standard' => q(Chamorrói idő),
+				'standard' => q(chamorrói téli idő),
 			},
 		},
 		'Chatham' => {
 			long => {
-				'daylight' => q(Chathami nyári idő),
-				'generic' => q(Chathami idő),
-				'standard' => q(Chathami zónaidő),
+				'daylight' => q(chathami nyári idő),
+				'generic' => q(chathami idő),
+				'standard' => q(chathami téli idő),
 			},
 		},
 		'Chile' => {
 			long => {
-				'daylight' => q(Chilei nyári idő),
-				'generic' => q(Chilei idő),
-				'standard' => q(Chilei zónaidő),
+				'daylight' => q(chilei nyári idő),
+				'generic' => q(chilei időzóna),
+				'standard' => q(chilei téli idő),
 			},
 		},
 		'China' => {
 			long => {
-				'daylight' => q(Kínai nyári idő),
-				'generic' => q(Kínai idő),
-				'standard' => q(Kínai zónaidő),
+				'daylight' => q(kínai nyári idő),
+				'generic' => q(kínai idő),
+				'standard' => q(kínai téli idő),
 			},
 		},
 		'Choibalsan' => {
 			long => {
-				'daylight' => q(Csojbalszani nyári idő),
-				'generic' => q(Csojbalszani idő),
-				'standard' => q(Csojbalszani zónaidő),
+				'daylight' => q(csojbalszani nyári idő),
+				'generic' => q(csojbalszani idő),
+				'standard' => q(csojbalszani téli idő),
 			},
 		},
 		'Christmas' => {
 			long => {
-				'standard' => q(Karácsony-szigeti idő),
+				'standard' => q(karácsony-szigeti téli idő),
 			},
 		},
 		'Cocos' => {
 			long => {
-				'standard' => q(Kókusz-szigeteki idő),
+				'standard' => q(kókusz-szigeteki téli idő),
 			},
 		},
 		'Colombia' => {
 			long => {
-				'daylight' => q(Kolumbiai nyári idő),
-				'generic' => q(Kolumbiai idő),
-				'standard' => q(Kolumbiai zónaidő),
+				'daylight' => q(kolumbiai nyári idő),
+				'generic' => q(kolumbiai idő),
+				'standard' => q(kolumbiai téli idő),
 			},
 		},
 		'Cook' => {
 			long => {
-				'daylight' => q(Cook-szigeteki fél nyári idő),
-				'generic' => q(Cook-szigeteki idő),
-				'standard' => q(Cook-szigeteki zónaidő),
+				'daylight' => q(cook-szigeteki fél nyári idő),
+				'generic' => q(cook-szigeteki idő),
+				'standard' => q(cook-szigeteki téli idő),
 			},
 		},
 		'Cuba' => {
 			long => {
-				'daylight' => q(Kubai nyári idő),
-				'generic' => q(Kubai idő),
-				'standard' => q(Kubai zónaidő),
+				'daylight' => q(kubai nyári idő),
+				'generic' => q(kubai időzóna),
+				'standard' => q(kubai téli idő),
 			},
 		},
 		'Davis' => {
 			long => {
-				'standard' => q(Davisi idő),
+				'standard' => q(davisi idő),
 			},
 		},
 		'DumontDUrville' => {
 			long => {
-				'standard' => q(Dumont-d'Urville-i idő),
+				'standard' => q(dumont-d’Urville-i idő),
 			},
 		},
 		'East_Timor' => {
 			long => {
-				'standard' => q(Kelet-timori idő),
+				'standard' => q(kelet-timori téli idő),
 			},
 		},
 		'Easter' => {
 			long => {
-				'daylight' => q(Húsvét-szigeteki nyári idő),
-				'generic' => q(Húsvét-szigeteki idő),
-				'standard' => q(Húsvét-szigeteki zónaidő),
+				'daylight' => q(húsvét-szigeti nyári idő),
+				'generic' => q(húsvét-szigeti időzóna),
+				'standard' => q(húsvét-szigeti téli idő),
 			},
 		},
 		'Ecuador' => {
 			long => {
-				'standard' => q(Ecuadori idő),
+				'standard' => q(ecuadori téli idő),
 			},
 		},
 		'Etc/Unknown' => {
@@ -6663,11 +8226,17 @@ has 'time_zone_names' => (
 		'Europe/Amsterdam' => {
 			exemplarCity => q#Amszterdam#,
 		},
+		'Europe/Andorra' => {
+			exemplarCity => q#Andorra#,
+		},
 		'Europe/Athens' => {
 			exemplarCity => q#Athén#,
 		},
 		'Europe/Belgrade' => {
 			exemplarCity => q#Belgrád#,
+		},
+		'Europe/Berlin' => {
+			exemplarCity => q#Berlin#,
 		},
 		'Europe/Bratislava' => {
 			exemplarCity => q#Pozsony#,
@@ -6678,25 +8247,41 @@ has 'time_zone_names' => (
 		'Europe/Bucharest' => {
 			exemplarCity => q#Bukarest#,
 		},
+		'Europe/Budapest' => {
+			exemplarCity => q#Budapest#,
+		},
 		'Europe/Busingen' => {
 			exemplarCity => q#Büsingen#,
+		},
+		'Europe/Chisinau' => {
+			exemplarCity => q#Chisinau#,
 		},
 		'Europe/Copenhagen' => {
 			exemplarCity => q#Koppenhága#,
 		},
 		'Europe/Dublin' => {
+			exemplarCity => q#Dublin#,
 			long => {
-				'daylight' => q(Ír nyári idő),
+				'daylight' => q(ír nyári idő),
 			},
 		},
 		'Europe/Gibraltar' => {
 			exemplarCity => q#Gibraltár#,
+		},
+		'Europe/Guernsey' => {
+			exemplarCity => q#Guernsey#,
+		},
+		'Europe/Helsinki' => {
+			exemplarCity => q#Helsinki#,
 		},
 		'Europe/Isle_of_Man' => {
 			exemplarCity => q#Man-sziget#,
 		},
 		'Europe/Istanbul' => {
 			exemplarCity => q#Isztanbul#,
+		},
+		'Europe/Jersey' => {
+			exemplarCity => q#Jersey#,
 		},
 		'Europe/Kaliningrad' => {
 			exemplarCity => q#Kalinyingrád#,
@@ -6707,28 +8292,50 @@ has 'time_zone_names' => (
 		'Europe/Lisbon' => {
 			exemplarCity => q#Lisszabon#,
 		},
+		'Europe/Ljubljana' => {
+			exemplarCity => q#Ljubljana#,
+		},
 		'Europe/London' => {
+			exemplarCity => q#London#,
 			long => {
-				'daylight' => q(Brit nyári idő),
+				'daylight' => q(brit nyári idő),
 			},
 		},
 		'Europe/Luxembourg' => {
 			exemplarCity => q#Luxemburg#,
 		},
+		'Europe/Madrid' => {
+			exemplarCity => q#Madrid#,
+		},
 		'Europe/Malta' => {
 			exemplarCity => q#Málta#,
+		},
+		'Europe/Mariehamn' => {
+			exemplarCity => q#Mariehamn#,
 		},
 		'Europe/Minsk' => {
 			exemplarCity => q#Minszk#,
 		},
+		'Europe/Monaco' => {
+			exemplarCity => q#Monaco#,
+		},
 		'Europe/Moscow' => {
 			exemplarCity => q#Moszkva#,
+		},
+		'Europe/Oslo' => {
+			exemplarCity => q#Oslo#,
 		},
 		'Europe/Paris' => {
 			exemplarCity => q#Párizs#,
 		},
+		'Europe/Podgorica' => {
+			exemplarCity => q#Podgorica#,
+		},
 		'Europe/Prague' => {
 			exemplarCity => q#Prága#,
+		},
+		'Europe/Riga' => {
+			exemplarCity => q#Riga#,
 		},
 		'Europe/Rome' => {
 			exemplarCity => q#Róma#,
@@ -6736,14 +8343,23 @@ has 'time_zone_names' => (
 		'Europe/Samara' => {
 			exemplarCity => q#Szamara#,
 		},
+		'Europe/San_Marino' => {
+			exemplarCity => q#San Marino#,
+		},
 		'Europe/Sarajevo' => {
 			exemplarCity => q#Szarajevó#,
 		},
 		'Europe/Simferopol' => {
 			exemplarCity => q#Szimferopol#,
 		},
+		'Europe/Skopje' => {
+			exemplarCity => q#Skopje#,
+		},
 		'Europe/Sofia' => {
 			exemplarCity => q#Szófia#,
+		},
+		'Europe/Stockholm' => {
+			exemplarCity => q#Stockholm#,
 		},
 		'Europe/Tallinn' => {
 			exemplarCity => q#Tallin#,
@@ -6754,6 +8370,9 @@ has 'time_zone_names' => (
 		'Europe/Uzhgorod' => {
 			exemplarCity => q#Ungvár#,
 		},
+		'Europe/Vaduz' => {
+			exemplarCity => q#Vaduz#,
+		},
 		'Europe/Vatican' => {
 			exemplarCity => q#Vatikán#,
 		},
@@ -6761,7 +8380,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Bécs#,
 		},
 		'Europe/Vilnius' => {
-			exemplarCity => q#Vilniusz#,
+			exemplarCity => q#Vilnius#,
 		},
 		'Europe/Volgograd' => {
 			exemplarCity => q#Volgográd#,
@@ -6780,9 +8399,9 @@ has 'time_zone_names' => (
 		},
 		'Europe_Central' => {
 			long => {
-				'daylight' => q(Közép-európai nyári idő),
-				'generic' => q(Közép-európai idő),
-				'standard' => q(Közép-európai zónaidő),
+				'daylight' => q(közép-európai nyári idő),
+				'generic' => q(közép-európai időzóna),
+				'standard' => q(közép-európai téli idő),
 			},
 			short => {
 				'daylight' => q(CEST),
@@ -6792,9 +8411,9 @@ has 'time_zone_names' => (
 		},
 		'Europe_Eastern' => {
 			long => {
-				'daylight' => q(Kelet-európai nyári idő),
-				'generic' => q(Kelet-európai idő),
-				'standard' => q(Kelet-európai zónaidő),
+				'daylight' => q(kelet-európai nyári idő),
+				'generic' => q(kelet-európai időzóna),
+				'standard' => q(kelet-európai téli idő),
 			},
 			short => {
 				'daylight' => q(EEST),
@@ -6802,11 +8421,16 @@ has 'time_zone_names' => (
 				'standard' => q(EET),
 			},
 		},
+		'Europe_Further_Eastern' => {
+			long => {
+				'standard' => q(kalinyingrádi idő),
+			},
+		},
 		'Europe_Western' => {
 			long => {
-				'daylight' => q(Nyugat-európai nyári idő),
-				'generic' => q(Nyugat-európai idő),
-				'standard' => q(Nyugat-európai zónaidő),
+				'daylight' => q(nyugat-európai nyári idő),
+				'generic' => q(nyugat-európai időzóna),
+				'standard' => q(nyugat-európai téli idő),
 			},
 			short => {
 				'daylight' => q(WEST),
@@ -6816,31 +8440,31 @@ has 'time_zone_names' => (
 		},
 		'Falkland' => {
 			long => {
-				'daylight' => q(Falkland-szigeteki nyári idő),
-				'generic' => q(Falkland-szigeteki idő),
-				'standard' => q(Falkland-szigeteki zónaidő),
+				'daylight' => q(falkland-szigeteki nyári idő),
+				'generic' => q(falkland-szigeteki idő),
+				'standard' => q(falkland-szigeteki téli idő),
 			},
 		},
 		'Fiji' => {
 			long => {
-				'daylight' => q(Fidzsi nyári idő),
-				'generic' => q(Fidzsi idő),
-				'standard' => q(Fidzsi zónaidő),
+				'daylight' => q(fidzsi nyári idő),
+				'generic' => q(fidzsi idő),
+				'standard' => q(fidzsi téli idő),
 			},
 		},
 		'French_Guiana' => {
 			long => {
-				'standard' => q(Francia-guianai idő),
+				'standard' => q(francia-guianai idő),
 			},
 		},
 		'French_Southern' => {
 			long => {
-				'standard' => q(Francia déli és antarktikus idő),
+				'standard' => q(francia déli és antarktiszi idő),
 			},
 		},
 		'GMT' => {
 			long => {
-				'standard' => q(Greenwichi középidő),
+				'standard' => q(greenwichi középidő, téli idő),
 			},
 			short => {
 				'standard' => q(GMT),
@@ -6848,38 +8472,38 @@ has 'time_zone_names' => (
 		},
 		'Galapagos' => {
 			long => {
-				'standard' => q(Galapagosi idő),
+				'standard' => q(galápagosi téli idő),
 			},
 		},
 		'Gambier' => {
 			long => {
-				'standard' => q(Gambieri idő),
+				'standard' => q(gambieri idő),
 			},
 		},
 		'Georgia' => {
 			long => {
-				'daylight' => q(Grúz nyári idő),
-				'generic' => q(Grúz idő),
-				'standard' => q(Grúz zónaidő),
+				'daylight' => q(grúziai nyári idő),
+				'generic' => q(grúziai idő),
+				'standard' => q(grúziai téli idő),
 			},
 		},
 		'Gilbert_Islands' => {
 			long => {
-				'standard' => q(Gilbert-szigeteki idő),
+				'standard' => q(gilbert-szigeteki idő),
 			},
 		},
 		'Greenland_Eastern' => {
 			long => {
-				'daylight' => q(Kelet-grönlandi nyári idő),
-				'generic' => q(Kelet-grönlandi idő),
-				'standard' => q(Kelet-grönlandi zónaidő),
+				'daylight' => q(kelet-grönlandi nyári idő),
+				'generic' => q(kelet-grönlandi időzóna),
+				'standard' => q(kelet-grönlandi téli idő),
 			},
 		},
 		'Greenland_Western' => {
 			long => {
-				'daylight' => q(Nyugat-grönlandi nyári idő),
-				'generic' => q(Nyugat-grönlandi idő),
-				'standard' => q(Nyugat-grönlandi zónaidő),
+				'daylight' => q(nyugat-grönlandi nyári idő),
+				'generic' => q(nyugat-grönlandi időzóna),
+				'standard' => q(nyugat-grönlandi téli idő),
 			},
 		},
 		'Guam' => {
@@ -6889,39 +8513,45 @@ has 'time_zone_names' => (
 		},
 		'Gulf' => {
 			long => {
-				'standard' => q(Öbölbeli zónaidő),
+				'standard' => q(öbölbeli téli idő),
 			},
 		},
 		'Guyana' => {
 			long => {
-				'standard' => q(Guyanai idő),
+				'standard' => q(guyanai téli idő),
 			},
 		},
 		'Hawaii_Aleutian' => {
 			long => {
-				'daylight' => q(Hawaii-aleuti nyári idő),
-				'generic' => q(Hawaii-aleuti idő),
-				'standard' => q(Hawaii-aleuti zónaidő),
+				'daylight' => q(hawaii-aleuti nyári idő),
+				'generic' => q(hawaii-aleut időzóna),
+				'standard' => q(hawaii-aleuti téli idő),
 			},
 		},
 		'Hong_Kong' => {
 			long => {
-				'daylight' => q(Hongkongi nyári idő),
-				'generic' => q(Hongkongi idő),
-				'standard' => q(Hongkongi zónaidő),
+				'daylight' => q(hongkongi nyári idő),
+				'generic' => q(hongkongi időzóna),
+				'standard' => q(hongkongi téli idő),
 			},
 		},
 		'Hovd' => {
 			long => {
-				'daylight' => q(Hovdi nyári idő),
-				'generic' => q(Hovdi idő),
-				'standard' => q(Hovdi zónaidő),
+				'daylight' => q(hovdi nyári idő),
+				'generic' => q(hovdi idő),
+				'standard' => q(hovdi téli idő),
 			},
 		},
 		'India' => {
 			long => {
-				'standard' => q(Indiai zónaidő),
+				'standard' => q(indiai téli idő),
 			},
+		},
+		'Indian/Antananarivo' => {
+			exemplarCity => q#Antananarivo#,
+		},
+		'Indian/Chagos' => {
+			exemplarCity => q#Chagos#,
 		},
 		'Indian/Christmas' => {
 			exemplarCity => q#Karácsony-sziget#,
@@ -6932,63 +8562,75 @@ has 'time_zone_names' => (
 		'Indian/Comoro' => {
 			exemplarCity => q#Komoró#,
 		},
+		'Indian/Kerguelen' => {
+			exemplarCity => q#Kerguelen#,
+		},
+		'Indian/Mahe' => {
+			exemplarCity => q#Mahe#,
+		},
 		'Indian/Maldives' => {
 			exemplarCity => q#Maldív-szigetek#,
+		},
+		'Indian/Mauritius' => {
+			exemplarCity => q#Mauritius#,
+		},
+		'Indian/Mayotte' => {
+			exemplarCity => q#Mayotte#,
 		},
 		'Indian/Reunion' => {
 			exemplarCity => q#Réunion#,
 		},
 		'Indian_Ocean' => {
 			long => {
-				'standard' => q(Indiai-óceáni idő),
+				'standard' => q(indiai-óceáni idő),
 			},
 		},
 		'Indochina' => {
 			long => {
-				'standard' => q(Indokínai idő),
+				'standard' => q(indokínai idő),
 			},
 		},
 		'Indonesia_Central' => {
 			long => {
-				'standard' => q(Közép-indonéziai idő),
+				'standard' => q(közép-indonéziai idő),
 			},
 		},
 		'Indonesia_Eastern' => {
 			long => {
-				'standard' => q(Kelet-indonéziai idő),
+				'standard' => q(kelet-indonéziai idő),
 			},
 		},
 		'Indonesia_Western' => {
 			long => {
-				'standard' => q(Nyugat-indonéziai idő),
+				'standard' => q(nyugat-indonéziai téli idő),
 			},
 		},
 		'Iran' => {
 			long => {
-				'daylight' => q(Iráni nyári idő),
-				'generic' => q(Iráni idő),
-				'standard' => q(Iráni zónaidő),
+				'daylight' => q(iráni nyári idő),
+				'generic' => q(iráni idő),
+				'standard' => q(iráni téli idő),
 			},
 		},
 		'Irkutsk' => {
 			long => {
-				'daylight' => q(Irkutszki nyári idő),
-				'generic' => q(Irkutszki idő),
-				'standard' => q(Irkutszki zónaidő),
+				'daylight' => q(irkutszki nyári idő),
+				'generic' => q(irkutszki idő),
+				'standard' => q(irkutszki téli idő),
 			},
 		},
 		'Israel' => {
 			long => {
-				'daylight' => q(Izraeli nyári idő),
-				'generic' => q(Izraeli idő),
-				'standard' => q(Izraeli zónaidő),
+				'daylight' => q(izraeli nyári idő),
+				'generic' => q(izraeli idő),
+				'standard' => q(izraeli téli idő),
 			},
 		},
 		'Japan' => {
 			long => {
-				'daylight' => q(Japán nyári idő),
-				'generic' => q(Japán idő),
-				'standard' => q(Japán zónaidő),
+				'daylight' => q(japán nyári idő),
+				'generic' => q(japán idő),
+				'standard' => q(japán téli idő),
 			},
 		},
 		'Kamchatka' => {
@@ -7000,36 +8642,36 @@ has 'time_zone_names' => (
 		},
 		'Kazakhstan_Eastern' => {
 			long => {
-				'standard' => q(Kelet-kazahsztáni idő),
+				'standard' => q(kelet-kazahsztáni idő),
 			},
 		},
 		'Kazakhstan_Western' => {
 			long => {
-				'standard' => q(Nyugat-kazahsztáni idő),
+				'standard' => q(nyugat-kazahsztáni idő),
 			},
 		},
 		'Korea' => {
 			long => {
-				'daylight' => q(Koreai nyári idő),
-				'generic' => q(Koreai idő),
-				'standard' => q(Koreai zónaidő),
+				'daylight' => q(koreai nyári idő),
+				'generic' => q(koreai idő),
+				'standard' => q(koreai téli idő),
 			},
 		},
 		'Kosrae' => {
 			long => {
-				'standard' => q(Kosraei idő),
+				'standard' => q(kosraei idő),
 			},
 		},
 		'Krasnoyarsk' => {
 			long => {
-				'daylight' => q(Krasznojarszki nyári idő),
-				'generic' => q(Krasznojarszki idő),
-				'standard' => q(Krasznojarszki zónaidő),
+				'daylight' => q(krasznojarszki nyári idő),
+				'generic' => q(krasznojarszki idő),
+				'standard' => q(krasznojarszki téli idő),
 			},
 		},
 		'Kyrgystan' => {
 			long => {
-				'standard' => q(Kirgiz idő),
+				'standard' => q(kirgizisztáni idő),
 			},
 		},
 		'Lanka' => {
@@ -7039,14 +8681,14 @@ has 'time_zone_names' => (
 		},
 		'Line_Islands' => {
 			long => {
-				'standard' => q(Line-szigeteki idő),
+				'standard' => q(sor-szigeteki idő),
 			},
 		},
 		'Lord_Howe' => {
 			long => {
-				'daylight' => q(Lord Howe-i nyári idő),
-				'generic' => q(Lord Howe-i idő),
-				'standard' => q(Lord Howe-i zónaidő),
+				'daylight' => q(Lord Howe-szigeti nyári idő),
+				'generic' => q(Lord Howe-szigeti idő),
+				'standard' => q(Lord Howe-szigeti téli idő),
 			},
 		},
 		'Macau' => {
@@ -7058,113 +8700,127 @@ has 'time_zone_names' => (
 		},
 		'Macquarie' => {
 			long => {
-				'standard' => q(Macquarie-i idő),
+				'standard' => q(macquarie-szigeti téli idő),
 			},
 		},
 		'Magadan' => {
 			long => {
-				'daylight' => q(Magadáni nyári idő),
-				'generic' => q(Magadáni idő),
-				'standard' => q(Magadáni zónaidő),
+				'daylight' => q(magadáni nyári idő),
+				'generic' => q(magadáni idő),
+				'standard' => q(magadani téli idő),
 			},
 		},
 		'Malaysia' => {
 			long => {
-				'standard' => q(Malajziai idő),
+				'standard' => q(malajziai idő),
 			},
 		},
 		'Maldives' => {
 			long => {
-				'standard' => q(Maldív-szigeteki idő),
+				'standard' => q(maldív-szigeteki idő),
 			},
 		},
 		'Marquesas' => {
 			long => {
-				'standard' => q(Marquesasi idő),
+				'standard' => q(marquises-szigeteki idő),
 			},
 		},
 		'Marshall_Islands' => {
 			long => {
-				'standard' => q(Marshall-szigeteki idő),
+				'standard' => q(marshall-szigeteki idő),
 			},
 		},
 		'Mauritius' => {
 			long => {
-				'daylight' => q(Mauritiusi nyári idő),
-				'generic' => q(Mauritiusi idő),
-				'standard' => q(Mauritiusi zónaidő),
+				'daylight' => q(mauritiusi nyári idő),
+				'generic' => q(mauritiusi időzóna),
+				'standard' => q(mauritiusi téli idő),
 			},
 		},
 		'Mawson' => {
 			long => {
-				'standard' => q(Mawsoni idő),
+				'standard' => q(mawsoni idő),
+			},
+		},
+		'Mexico_Northwest' => {
+			long => {
+				'daylight' => q(északnyugat-mexikói nyári idő),
+				'generic' => q(északnyugat-mexikói idő),
+				'standard' => q(északnyugat-mexikói zónaidő),
+			},
+		},
+		'Mexico_Pacific' => {
+			long => {
+				'daylight' => q(mexikói csendes-óceáni nyári idő),
+				'generic' => q(mexikói csendes-óceáni idő),
+				'standard' => q(mexikói csendes-óceáni zónaidő),
 			},
 		},
 		'Mongolia' => {
 			long => {
-				'daylight' => q(Ulánbátori nyári idő),
-				'generic' => q(Ulánbátori idő),
-				'standard' => q(Ulánbátori zónaidő),
+				'daylight' => q(ulánbátori nyári idő),
+				'generic' => q(ulánbátori idő),
+				'standard' => q(ulánbátori téli idő),
 			},
 		},
 		'Moscow' => {
 			long => {
-				'daylight' => q(Moszkvai nyári idő),
-				'generic' => q(Moszkvai idő),
-				'standard' => q(Moszkvai zónaidő),
+				'daylight' => q(moszkvai nyári idő),
+				'generic' => q(moszkvai idő),
+				'standard' => q(moszkvai téli idő),
 			},
 		},
 		'Myanmar' => {
 			long => {
-				'standard' => q(Mianmari idő),
+				'standard' => q(mianmari idő),
 			},
 		},
 		'Nauru' => {
 			long => {
-				'standard' => q(Naurui idő),
+				'standard' => q(naurui idő),
 			},
 		},
 		'Nepal' => {
 			long => {
-				'standard' => q(Nepáli idő),
+				'standard' => q(nepáli idő),
 			},
 		},
 		'New_Caledonia' => {
 			long => {
-				'daylight' => q(Új-kaledóniai nyári idő),
-				'generic' => q(Új-kaledóniai idő),
-				'standard' => q(Új-kaledóniai zónaidő),
+				'daylight' => q(új-kaledóniai nyári idő),
+				'generic' => q(új-kaledóniai idő),
+				'standard' => q(új-kaledóniai téli idő),
 			},
 		},
 		'New_Zealand' => {
 			long => {
-				'daylight' => q(Új-zélandi nyári idő),
-				'generic' => q(Új-zélandi idő),
-				'standard' => q(Új-zélandi zónaidő),
+				'daylight' => q(új-zélandi nyári idő),
+				'generic' => q(új-zélandi idő),
+				'standard' => q(új-zélandi téli idő),
 			},
 		},
 		'Newfoundland' => {
 			long => {
-				'daylight' => q(Új-fundlandi nyári idő),
-				'generic' => q(Új-fundlandi idő),
-				'standard' => q(Új-fundlandi zónaidő),
+				'daylight' => q(új-fundlandi nyári idő),
+				'generic' => q(új-fundlandi idő),
+				'standard' => q(új-fundlandi zónaidő),
 			},
 		},
 		'Niue' => {
 			long => {
-				'standard' => q(Niuei idő),
+				'standard' => q(niuei idő),
 			},
 		},
 		'Norfolk' => {
 			long => {
-				'standard' => q(Norfolk-szigeteki idő),
+				'standard' => q(norfolk-szigeteki idő),
 			},
 		},
 		'Noronha' => {
 			long => {
 				'daylight' => q(Fernando de Noronha-i nyári idő),
 				'generic' => q(Fernando de Noronha-i idő),
-				'standard' => q(Fernando de Noronha-i zónaidő),
+				'standard' => q(Fernando de Noronha-i téli idő),
 			},
 		},
 		'North_Mariana' => {
@@ -7174,17 +8830,23 @@ has 'time_zone_names' => (
 		},
 		'Novosibirsk' => {
 			long => {
-				'daylight' => q(Novoszibirszki nyári idő),
-				'generic' => q(Novoszibirszki idő),
-				'standard' => q(Novoszibirszki zónaidő),
+				'daylight' => q(novoszibirszki nyári idő),
+				'generic' => q(novoszibirszki idő),
+				'standard' => q(novoszibirszki téli idő),
 			},
 		},
 		'Omsk' => {
 			long => {
-				'daylight' => q(Omszki nyári idő),
-				'generic' => q(Omszki idő),
-				'standard' => q(Omszki zónaidő),
+				'daylight' => q(omszki nyári idő),
+				'generic' => q(omszki idő),
+				'standard' => q(omszki téli idő),
 			},
+		},
+		'Pacific/Apia' => {
+			exemplarCity => q#Apia#,
+		},
+		'Pacific/Auckland' => {
+			exemplarCity => q#Auckland#,
 		},
 		'Pacific/Chatham' => {
 			exemplarCity => q#Chatham-szigetek#,
@@ -7192,14 +8854,38 @@ has 'time_zone_names' => (
 		'Pacific/Easter' => {
 			exemplarCity => q#Húsvét-szigetek#,
 		},
+		'Pacific/Efate' => {
+			exemplarCity => q#Efate#,
+		},
+		'Pacific/Enderbury' => {
+			exemplarCity => q#Enderbury#,
+		},
+		'Pacific/Fakaofo' => {
+			exemplarCity => q#Fakaofo#,
+		},
 		'Pacific/Fiji' => {
 			exemplarCity => q#Fidzsi#,
+		},
+		'Pacific/Funafuti' => {
+			exemplarCity => q#Funafuti#,
 		},
 		'Pacific/Galapagos' => {
 			exemplarCity => q#Galapagos-szigetek#,
 		},
 		'Pacific/Gambier' => {
 			exemplarCity => q#Gambier-szigetek#,
+		},
+		'Pacific/Guadalcanal' => {
+			exemplarCity => q#Guadalcanal#,
+		},
+		'Pacific/Guam' => {
+			exemplarCity => q#Guam#,
+		},
+		'Pacific/Honolulu' => {
+			exemplarCity => q#Honolulu#,
+		},
+		'Pacific/Johnston' => {
+			exemplarCity => q#Johnston#,
 		},
 		'Pacific/Kiritimati' => {
 			exemplarCity => q#Kiritimati-sziget#,
@@ -7219,59 +8905,98 @@ has 'time_zone_names' => (
 		'Pacific/Midway' => {
 			exemplarCity => q#Midway-szigetek#,
 		},
+		'Pacific/Nauru' => {
+			exemplarCity => q#Nauru#,
+		},
+		'Pacific/Niue' => {
+			exemplarCity => q#Niue#,
+		},
+		'Pacific/Norfolk' => {
+			exemplarCity => q#Norfolk#,
+		},
+		'Pacific/Noumea' => {
+			exemplarCity => q#Noumea#,
+		},
+		'Pacific/Pago_Pago' => {
+			exemplarCity => q#Pago Pago#,
+		},
+		'Pacific/Palau' => {
+			exemplarCity => q#Palau#,
+		},
 		'Pacific/Pitcairn' => {
 			exemplarCity => q#Pitcairn-szigetek#,
 		},
 		'Pacific/Ponape' => {
 			exemplarCity => q#Ponape-szigetek#,
 		},
+		'Pacific/Port_Moresby' => {
+			exemplarCity => q#Port Moresby#,
+		},
+		'Pacific/Rarotonga' => {
+			exemplarCity => q#Rarotonga#,
+		},
+		'Pacific/Saipan' => {
+			exemplarCity => q#Saipan#,
+		},
+		'Pacific/Tahiti' => {
+			exemplarCity => q#Tahiti#,
+		},
+		'Pacific/Tarawa' => {
+			exemplarCity => q#Tarawa#,
+		},
+		'Pacific/Tongatapu' => {
+			exemplarCity => q#Tongatapu#,
+		},
 		'Pacific/Truk' => {
-			exemplarCity => q#Truk-szigetek#,
+			exemplarCity => q#Chuuk#,
 		},
 		'Pacific/Wake' => {
 			exemplarCity => q#Wake-sziget#,
 		},
+		'Pacific/Wallis' => {
+			exemplarCity => q#Wallis#,
+		},
 		'Pakistan' => {
 			long => {
-				'daylight' => q(Pakisztáni nyári idő),
-				'generic' => q(Pakisztáni idő),
-				'standard' => q(Pakisztáni zónaidő),
+				'daylight' => q(pakisztáni nyári idő),
+				'generic' => q(pakisztáni idő),
+				'standard' => q(pakisztáni téli idő),
 			},
 		},
 		'Palau' => {
 			long => {
-				'standard' => q(Palaui idő),
+				'standard' => q(palaui idő),
 			},
 		},
 		'Papua_New_Guinea' => {
 			long => {
-				'standard' => q(Pápua új-guineai idő),
+				'standard' => q(pápua új-guineai idő),
 			},
 		},
 		'Paraguay' => {
 			long => {
-				'daylight' => q(Paraguayi nyári idő),
-				'generic' => q(Paraguayi idő),
-				'standard' => q(Paraguayi zónaidő),
+				'daylight' => q(paraguayi nyári idő),
+				'generic' => q(paraguayi idő),
+				'standard' => q(paraguayi téli idő),
 			},
 		},
 		'Peru' => {
 			long => {
-				'daylight' => q(Perui nyári idő),
-				'generic' => q(Perui idő),
-				'standard' => q(Perui zónaidő),
+				'daylight' => q(perui nyári idő),
+				'generic' => q(perui idő),
+				'standard' => q(perui téli idő),
 			},
 		},
 		'Philippines' => {
 			long => {
-				'daylight' => q(Fülöp-szigeteki nyári idő),
-				'generic' => q(Fülöp-szigeteki idő),
-				'standard' => q(Fülöp-szigeteki zónaidő),
+				'daylight' => q(fülöp-szigeteki nyári idő),
+				'generic' => q(fülöp-szigeteki idő),
+				'standard' => q(fülöp-szigeteki téli idő),
 			},
 		},
 		'Phoenix_Islands' => {
 			long => {
-				'standard' => q(Phoenix-szigeteki idő),
+				'standard' => q(phoenix-szigeteki téli idő),
 			},
 		},
 		'Pierre_Miquelon' => {
@@ -7283,12 +9008,12 @@ has 'time_zone_names' => (
 		},
 		'Pitcairn' => {
 			long => {
-				'standard' => q(Pitcairni idő),
+				'standard' => q(pitcairn-szigeteki idő),
 			},
 		},
 		'Ponape' => {
 			long => {
-				'standard' => q(Ponapei idő),
+				'standard' => q(ponape-szigeti idő),
 			},
 		},
 		'Qyzylorda' => {
@@ -7300,19 +9025,19 @@ has 'time_zone_names' => (
 		},
 		'Reunion' => {
 			long => {
-				'standard' => q(Réunioni idő),
+				'standard' => q(réunioni idő),
 			},
 		},
 		'Rothera' => {
 			long => {
-				'standard' => q(Rotherai idő),
+				'standard' => q(rotherai idő),
 			},
 		},
 		'Sakhalin' => {
 			long => {
-				'daylight' => q(Szahalini nyári idő),
-				'generic' => q(Szahalini idő),
-				'standard' => q(Szahalini zónaidő),
+				'daylight' => q(szahalini nyári idő),
+				'generic' => q(szahalini idő),
+				'standard' => q(szahalini téli idő),
 			},
 		},
 		'Samara' => {
@@ -7324,154 +9049,154 @@ has 'time_zone_names' => (
 		},
 		'Samoa' => {
 			long => {
-				'daylight' => q(Szamoai nyári idő),
-				'generic' => q(Szamoai idő),
-				'standard' => q(Szamoai zónaidő),
+				'daylight' => q(szamoai nyári idő),
+				'generic' => q(szamoai idő),
+				'standard' => q(szamoai téli idő),
 			},
 		},
 		'Seychelles' => {
 			long => {
-				'standard' => q(Seychelle-szigeteki idő),
+				'standard' => q(seychelle-szigeteki idő),
 			},
 		},
 		'Singapore' => {
 			long => {
-				'standard' => q(Szingapúri zónaidő),
+				'standard' => q(szingapúri téli idő),
 			},
 		},
 		'Solomon' => {
 			long => {
-				'standard' => q(Salamon-szigeteki idő),
+				'standard' => q(salamon-szigeteki idő),
 			},
 		},
 		'South_Georgia' => {
 			long => {
-				'standard' => q(Dél-georgiai idő),
+				'standard' => q(déli-georgiai idő),
 			},
 		},
 		'Suriname' => {
 			long => {
-				'standard' => q(Szurinámi idő),
+				'standard' => q(szurinámi idő),
 			},
 		},
 		'Syowa' => {
 			long => {
-				'standard' => q(Syowai idő),
+				'standard' => q(syowai idő),
 			},
 		},
 		'Tahiti' => {
 			long => {
-				'standard' => q(Tahiti idő),
+				'standard' => q(tahiti idő),
 			},
 		},
 		'Taipei' => {
 			long => {
-				'daylight' => q(Taipei nyári idő),
-				'generic' => q(Taipei idő),
-				'standard' => q(Taipei zónaidő),
+				'daylight' => q(taipei nyári idő),
+				'generic' => q(taipei idő),
+				'standard' => q(taipei téli idő),
 			},
 		},
 		'Tajikistan' => {
 			long => {
-				'standard' => q(Tádzsikisztáni idő),
+				'standard' => q(tádzsikisztáni idő),
 			},
 		},
 		'Tokelau' => {
 			long => {
-				'standard' => q(Tokelaui idő),
+				'standard' => q(tokelaui idő),
 			},
 		},
 		'Tonga' => {
 			long => {
-				'daylight' => q(Tongai nyári idő),
-				'generic' => q(Tongai idő),
-				'standard' => q(Tongai zónaidő),
+				'daylight' => q(tongai nyári idő),
+				'generic' => q(tongai idő),
+				'standard' => q(tongai téli idő),
 			},
 		},
 		'Truk' => {
 			long => {
-				'standard' => q(Truki idő),
+				'standard' => q(truki idő),
 			},
 		},
 		'Turkmenistan' => {
 			long => {
-				'daylight' => q(Türkmenisztáni nyári idő),
-				'generic' => q(Türkmenisztáni idő),
-				'standard' => q(Türkmenisztáni zónaidő),
+				'daylight' => q(türkmenisztáni nyári idő),
+				'generic' => q(türkmenisztáni idő),
+				'standard' => q(türkmenisztáni téli idő),
 			},
 		},
 		'Tuvalu' => {
 			long => {
-				'standard' => q(Tuvalui idő),
+				'standard' => q(tuvalui idő),
 			},
 		},
 		'Uruguay' => {
 			long => {
-				'daylight' => q(Uruguayi nyári idő),
-				'generic' => q(Uruguayi idő),
-				'standard' => q(Uruguayi zónaidő),
+				'daylight' => q(uruguayi nyári idő),
+				'generic' => q(uruguayi idő),
+				'standard' => q(uruguayi téli idő),
 			},
 		},
 		'Uzbekistan' => {
 			long => {
-				'daylight' => q(Üzbegisztáni nyári idő),
-				'generic' => q(Üzbegisztáni idő),
-				'standard' => q(Üzbegisztáni zónaidő),
+				'daylight' => q(üzbegisztáni nyári idő),
+				'generic' => q(üzbegisztáni idő),
+				'standard' => q(üzbegisztáni téli idő),
 			},
 		},
 		'Vanuatu' => {
 			long => {
-				'daylight' => q(Vanuatui nyári idő),
-				'generic' => q(Vanuatui idő),
-				'standard' => q(Vanuatui zónaidő),
+				'daylight' => q(vanuatui nyári idő),
+				'generic' => q(vanuatui idő),
+				'standard' => q(vanuatui téli idő),
 			},
 		},
 		'Venezuela' => {
 			long => {
-				'standard' => q(Venezuelai idő),
+				'standard' => q(venezuelai idő),
 			},
 		},
 		'Vladivostok' => {
 			long => {
-				'daylight' => q(Vlagyivosztoki nyári idő),
-				'generic' => q(Vlagyivosztoki idő),
-				'standard' => q(Vlagyivosztoki zónaidő),
+				'daylight' => q(vlagyivosztoki nyári idő),
+				'generic' => q(vlagyivosztoki idő),
+				'standard' => q(vlagyivosztoki téli idő),
 			},
 		},
 		'Volgograd' => {
 			long => {
-				'daylight' => q(Volgográdi nyári idő),
-				'generic' => q(Volgográdi idő),
-				'standard' => q(Volgográdi zónaidő),
+				'daylight' => q(volgográdi nyári idő),
+				'generic' => q(volgográdi idő),
+				'standard' => q(volgográdi téli idő),
 			},
 		},
 		'Vostok' => {
 			long => {
-				'standard' => q(Vosztoki idő),
+				'standard' => q(vosztoki idő),
 			},
 		},
 		'Wake' => {
 			long => {
-				'standard' => q(Wake-szigeti idő),
+				'standard' => q(wake-szigeti idő),
 			},
 		},
 		'Wallis' => {
 			long => {
-				'standard' => q(Wallis és futunai idő),
+				'standard' => q(Wallis és Futuna-i idő),
 			},
 		},
 		'Yakutsk' => {
 			long => {
 				'daylight' => q(Jakutszki nyári idő),
-				'generic' => q(Jakutszki idő),
-				'standard' => q(Jakutszki zónaidő),
+				'generic' => q(jakutszki idő),
+				'standard' => q(jakutszki téli idő),
 			},
 		},
 		'Yekaterinburg' => {
 			long => {
 				'daylight' => q(Jekatyerinburgi nyári idő),
 				'generic' => q(Jekatyerinburgi idő),
-				'standard' => q(Jekatyerinburgi zónaidő),
+				'standard' => q(jekatyerinburgi téli idő),
 			},
 		},
 	 } }

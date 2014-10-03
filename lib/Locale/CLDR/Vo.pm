@@ -1,11 +1,11 @@
 package Locale::CLDR::Vo;
 # This file auto generated from Data\common\main\vo.xml
-#	on Sat 21 Jun  1:33:31 am GMT
-# XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
+#	on Thu  2 Oct  2:20:49 pm GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -22,13 +22,39 @@ has 'display_name_language' => (
 	default		=> sub { 
 		 sub {
 			 my %languages = (
-				'vo' => 'Volapük',
+				'en' => 'Linglänapük',
+ 				'eo' => 'Sperantapük',
+ 				'es' => 'Spanyänapük',
+ 				'pt' => 'Portugänapük',
+ 				'ru' => 'Rusänapük',
+ 				'vo' => 'Volapük',
 
 			);
 			if (@_) {
 				return $languages{$_[0]};
 			}
 			return \%languages;
+		}
+	},
+);
+
+has 'display_name_territory' => (
+	is			=> 'ro',
+	isa			=> 'HashRef[Str]',
+	init_arg	=> undef,
+	default		=> sub { 
+		{
+			'DE' => 'Deutän',
+ 			'ES' => 'Spanyän',
+ 			'FR' => 'Fransän',
+ 			'GE' => 'Grusiyän',
+ 			'GR' => 'Grikän',
+ 			'IT' => 'Litaliyän',
+ 			'MX' => 'Mäxikän',
+ 			'NR' => 'Naureän',
+ 			'PT' => 'Portugän',
+ 			'PW' => 'Palauäns',
+
 		}
 	},
 );
@@ -42,7 +68,7 @@ has 'characters' => (
 	sub {
 		no warnings 'experimental::regex_sets';
 		return {
-			auxiliary => qr{(?^u:[q w])},
+			auxiliary => qr{(?^u:[w])},
 			index => ['A', 'Ä', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'Ö', 'P', 'R', 'S', 'T', 'U', 'Ü', 'V', 'X', 'Y', 'Z'],
 			main => qr{(?^u:[a ä b c d e f g h i j k l m n o ö p q r s š t u ü v x y z])},
 			punctuation => qr{(?^u:[\- ‐ – — , ; \: ! ? . … ' ‘ ’ " “ ” « » ( ) \[ \] \{ \} § @ * / \& #])},
@@ -285,14 +311,14 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'afternoon' => q{poszedelo},
-					'pm' => q{büz.},
-					'evening' => q{soaro},
 					'night' => q{neito},
-					'am' => q{posz.},
 					'morning' => q{büzedelo},
-					'earlyMorning' => q{gödo},
 					'noon' => q{zedelo},
+					'evening' => q{soaro},
+					'pm' => q{büz.},
+					'am' => q{posz.},
+					'afternoon' => q{poszedelo},
+					'earlyMorning' => q{gödo},
 				},
 			},
 		},

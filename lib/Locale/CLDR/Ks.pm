@@ -1,11 +1,11 @@
 package Locale::CLDR::Ks;
 # This file auto generated from Data\common\main\ks.xml
-#	on Sat 21 Jun 12:12:39 am GMT
-# XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
+#	on Thu  2 Oct 12:08:57 pm GMT
+# XML file generated 2014-08-14 15:10:07 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -1047,32 +1047,62 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'day' => {
+						'' => q(دۄہ),
 						'one' => q({0} دۄہ),
 						'other' => q({0} دۄہ),
 					},
 					'hour' => {
+						'' => q(گٲنٛٹہٕ),
 						'one' => q({0} گَنٹہٕ),
 						'other' => q({0} گٲنٛٹہٕ),
 					},
 					'minute' => {
+						'' => q(مِنَٹ),
 						'one' => q({0} مِنَٹ),
 						'other' => q({0} مِنَٹ),
 					},
 					'month' => {
+						'' => q(ریٚتھ),
 						'one' => q({0} ریٚتھ),
 						'other' => q({0} ریٚتھ),
 					},
 					'second' => {
+						'' => q(سیٚکَنٛڈ),
 						'one' => q({0} سیٚکَنٛڈ),
 						'other' => q({0} سیٚکَنٛڈ),
 					},
 					'week' => {
+						'' => q(ہَفتہٕ),
 						'one' => q({0} ہَفتہٕ),
 						'other' => q({0} ہَفتہٕ),
 					},
 					'year' => {
+						'' => q(ؤری),
 						'one' => q({0} ؤری),
 						'other' => q({0} ؤری),
+					},
+				},
+				'short' => {
+					'day' => {
+						'' => q(دۄہ),
+					},
+					'hour' => {
+						'' => q(گٲنٛٹہٕ),
+					},
+					'minute' => {
+						'' => q(مِنَٹ),
+					},
+					'month' => {
+						'' => q(ریٚتھ),
+					},
+					'second' => {
+						'' => q(سیٚکَنٛڈ),
+					},
+					'week' => {
+						'' => q(ہَفتہٕ),
+					},
+					'year' => {
+						'' => q(ؤری),
 					},
 				},
 			} }
@@ -1122,7 +1152,6 @@ has 'number_symbols' => (
 			'perMille' => q(‰),
 			'percentSign' => q(%),
 			'plusSign' => q(‎+),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -1326,7 +1355,7 @@ has 'curriencies' => (
 		},
 		'BRE' => {
 			display_name => {
-				'currency' => q(\(برٛازیٖلین کرٛوزِرو),
+				'currency' => q(برٛازیٖلین کرٛوزِرو),
 			},
 		},
 		'BRL' => {
@@ -2665,6 +2694,34 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'gregorian' => {
+			GGGGyMMMMEEEEdd => q{EEEE,dd MMMM GGGGy},
+			Gy => q{Gy},
+			GyMMM => q{MMM Gy},
+			GyMMMEd => q{EEE, MMM d, Gy},
+			GyMMMd => q{MMM d, Gy},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, M/d},
+			MMM => q{LLL},
+			MMMEd => q{E, MMM d},
+			MMMMEd => q{E, MMMM d},
+			MMMMd => q{MMMM d},
+			MMMd => q{d-MMM},
+			Md => q{M/d},
+			d => q{d},
+			hm => q{h:mm a},
+			ms => q{mm:ss},
+			y => q{y},
+			yM => q{M/y},
+			yMEd => q{EEE, M/d/y},
+			yMMM => q{MMM y},
+			yMMMEd => q{EEE, MMM d, y},
+			yMMMM => q{MMMM y},
+			yQQQ => q{QQQ y},
+			yQQQQ => q{QQQQ y},
+		},
 		'generic' => {
 			GGGGyMMMMEEEEdd => q{EEEE,dd MMMM GGGGy},
 			Gy => q{Gy},
@@ -2694,34 +2751,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyMMMd => q{MMM d, Gy},
 			yyyyQQQ => q{QQQ Gy},
 			yyyyQQQQ => q{QQQQ Gy},
-		},
-		'gregorian' => {
-			GGGGyMMMMEEEEdd => q{EEEE,dd MMMM GGGGy},
-			Gy => q{Gy},
-			GyMMM => q{MMM Gy},
-			GyMMMEd => q{EEE, MMM d, Gy},
-			GyMMMd => q{MMM d, Gy},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, M/d},
-			MMM => q{LLL},
-			MMMEd => q{E, MMM d},
-			MMMMEd => q{E, MMMM d},
-			MMMMd => q{MMMM d},
-			MMMd => q{d-MMM},
-			Md => q{M/d},
-			d => q{d},
-			hm => q{h:mm a},
-			ms => q{mm:ss},
-			y => q{y},
-			yM => q{M/y},
-			yMEd => q{EEE, M/d/y},
-			yMMM => q{MMM y},
-			yMMMEd => q{EEE, MMM d, y},
-			yMMMM => q{MMMM y},
-			yQQQ => q{QQQ y},
-			yQQQQ => q{QQQQ y},
 		},
 	} },
 );

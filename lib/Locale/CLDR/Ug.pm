@@ -1,11 +1,11 @@
 package Locale::CLDR::Ug;
 # This file auto generated from Data\common\main\ug.xml
-#	on Sat 21 Jun  1:24:33 am GMT
-# XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
+#	on Thu  2 Oct  2:08:27 pm GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -331,7 +331,7 @@ has 'display_name_language' => (
  				'mg' => 'ماداغاسقارچە',
  				'mga' => 'ئوتتۇرا ئەسىر ئىرېلاندچە',
  				'mgh' => 'ماكۇۋاچە',
- 				'mgo' => 'مېتاچە\'',
+ 				'mgo' => 'مېتاچە’',
  				'mh' => 'مارشالچە',
  				'mi' => 'ماۋرىچە',
  				'mic' => 'مىكماكچە',
@@ -1316,134 +1316,167 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'acre' => {
+						'' => q(ئىنگلىز موسى),
 						'one' => q({0} ئىنگلىز موسى),
 						'other' => q({0} ئىنگلىز موسى),
 					},
 					'celsius' => {
+						'' => q(سېلسىيە گرادۇس),
 						'one' => q({0} سېلسىيە گرادۇس),
 						'other' => q({0} سېلسىيە گرادۇس),
 					},
 					'centimeter' => {
+						'' => q(سانتىمېتىر),
 						'one' => q({0} سانتىمېتىر),
 						'other' => q({0} سانتىمېتىر),
 					},
 					'cubic-kilometer' => {
+						'' => q(كۇب كىلومېتىر),
 						'one' => q({0} كۇب كىلومېتىر),
 						'other' => q({0} كۇب كىلومېتىر),
 					},
 					'cubic-mile' => {
+						'' => q(كۇب مىل),
 						'one' => q({0} كۇب مىل),
 						'other' => q({0} كۇب مىل),
 					},
 					'day' => {
+						'' => q(كۈن),
 						'one' => q({0} كۈن),
 						'other' => q({0} كۈن),
 					},
 					'degree' => {
+						'' => q(گىرادۇس),
 						'one' => q({0} گىرادۇس),
 						'other' => q({0} گىرادۇس),
 					},
 					'fahrenheit' => {
+						'' => q(فارېنگېيت گرادۇس),
 						'one' => q({0} فارېنگېيت گرادۇس),
 						'other' => q({0} فارېنگېيت گرادۇس),
 					},
 					'foot' => {
+						'' => q(فۇت),
 						'one' => q({0} فۇت),
 						'other' => q({0} فۇت),
 					},
 					'g-force' => {
+						'' => q(ئېغىرلىق كۈچى),
 						'one' => q({0} ئېغىرلىق كۈچى),
 						'other' => q({0} ئېغىرلىق كۈچى),
 					},
 					'gram' => {
+						'' => q(گرام),
 						'one' => q({0} گرام),
 						'other' => q({0} گرام),
 					},
 					'hectare' => {
+						'' => q(hectares),
 						'one' => q({0} گېكتار),
 						'other' => q({0} hectares),
 					},
 					'hectopascal' => {
+						'' => q(يۈز پاسكال),
 						'one' => q({0} يۈز پاسكال),
 						'other' => q({0} يۈز پاسكال),
 					},
 					'horsepower' => {
+						'' => q(ئات كۈچى),
 						'one' => q({0} ئات كۈچى),
 						'other' => q({0} ئات كۈچى),
 					},
 					'hour' => {
+						'' => q(سائەت),
 						'one' => q({0} سائەت),
 						'other' => q({0} سائەت),
 					},
 					'inch' => {
+						'' => q(ديۇيم),
 						'one' => q({0} ديۇيم),
 						'other' => q({0} ديۇيم),
 					},
 					'inch-hg' => {
+						'' => q(ديۇيم سىماب تۈۋرۇكى),
 						'one' => q({0} ديۇيم سىماب تۈۋرۇكى),
 						'other' => q({0} ديۇيم سىماب تۈۋرۇكى),
 					},
 					'kilogram' => {
+						'' => q(كىلوگرام),
 						'one' => q({0} كىلوگرام),
 						'other' => q({0} كىلوگرام),
 					},
 					'kilometer' => {
+						'' => q(كىلومېتىر),
 						'one' => q({0} كىلومېتىر),
 						'other' => q({0} كىلومېتىر),
 					},
 					'kilometer-per-hour' => {
+						'' => q(كىلومېتىر ھەر سائەت),
 						'one' => q({0} كىلومېتىر ھەر سائەت),
 						'other' => q({0} كىلومېتىر ھەر سائەت),
 					},
 					'kilowatt' => {
+						'' => q(كىلوۋات),
 						'one' => q({0} كىلوۋات),
 						'other' => q({0} كىلوۋات),
 					},
 					'light-year' => {
+						'' => q(يورۇقلۇق يىلى),
 						'one' => q({0} يورۇقلۇق يىلى),
 						'other' => q({0} يورۇقلۇق يىلى),
 					},
 					'liter' => {
+						'' => q(لىتېر),
 						'one' => q({0} لىتېر),
 						'other' => q({0} لىتېر),
 					},
 					'meter' => {
+						'' => q(مېتىر),
 						'one' => q({0} مېتىر),
 						'other' => q({0} مېتىر),
 					},
 					'meter-per-second' => {
+						'' => q(مېتىر ھەر سېكۇنت),
 						'one' => q({0} مېتىر ھەر سېكۇنت),
 						'other' => q({0} مېتىر ھەر سېكۇنت),
 					},
 					'mile' => {
+						'' => q(مىل),
 						'one' => q({0} مىل),
 						'other' => q({0} مىل),
 					},
 					'mile-per-hour' => {
+						'' => q(مىل ھەر سائەت),
 						'one' => q({0} مىل ھەر سائەت),
 						'other' => q({0} مىل ھەر سائەت),
 					},
 					'millibar' => {
+						'' => q(مىللىبار),
 						'one' => q({0} مىللىبار),
 						'other' => q({0} مىللىبار),
 					},
 					'millimeter' => {
+						'' => q(مىللىمېتىر),
 						'one' => q({0} مىللىمېتىر),
 						'other' => q({0} مىللىمېتىر),
 					},
 					'millisecond' => {
+						'' => q(مىللى سېكۇنت),
 						'one' => q({0} مىللى سېكۇنت),
 						'other' => q({0} مىللى سېكۇنت),
 					},
 					'minute' => {
+						'' => q(مىنۇت),
 						'one' => q({0} مىنۇت),
 						'other' => q({0} مىنۇت),
 					},
 					'month' => {
+						'' => q(ئاي),
 						'one' => q({0} ئاي),
 						'other' => q({0} ئاي),
 					},
 					'ounce' => {
+						'' => q(ئۇنسىيە),
 						'one' => q({0} ئۇنسىيە),
 						'other' => q({0} ئۇنسىيە),
 					},
@@ -1451,46 +1484,57 @@ has 'units' => (
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(پىكومېتىر),
 						'one' => q({0} پىكومېتىر),
 						'other' => q({0} پىكومېتىر),
 					},
 					'pound' => {
+						'' => q(قاداق),
 						'one' => q({0} قاداق),
 						'other' => q({0} قاداق),
 					},
 					'second' => {
+						'' => q(سېكۇنت),
 						'one' => q({0} سېكۇنت),
 						'other' => q({0} سېكۇنت),
 					},
 					'square-foot' => {
+						'' => q(كۋادرات فۇت),
 						'one' => q({0} كۋادرات فۇت),
 						'other' => q({0} كۋادرات فۇت),
 					},
 					'square-kilometer' => {
+						'' => q(كۋادرات كىلومېتىر),
 						'one' => q({0} كۋادرات كىلومېتىر),
 						'other' => q({0} كۋادرات كىلومېتىر),
 					},
 					'square-meter' => {
+						'' => q(كۋادرات مېتىر),
 						'one' => q({0} كۋادرات مېتىر),
 						'other' => q({0} كۋادرات مېتىر),
 					},
 					'square-mile' => {
+						'' => q(كۋادرات مىل),
 						'one' => q({0} كۋادرات مىل),
 						'other' => q({0} كۋادرات مىل),
 					},
 					'watt' => {
+						'' => q(ۋات),
 						'one' => q({0} ۋات),
 						'other' => q({0} ۋات),
 					},
 					'week' => {
+						'' => q(ھەپتە),
 						'one' => q({0} ھەپتە),
 						'other' => q({0} ھەپتە),
 					},
 					'yard' => {
+						'' => q(يارد),
 						'one' => q({0} يارد),
 						'other' => q({0} يارد),
 					},
 					'year' => {
+						'' => q(يىل),
 						'one' => q({0} يىل),
 						'other' => q({0} يىل),
 					},
@@ -1667,134 +1711,167 @@ has 'units' => (
 				},
 				'short' => {
 					'acre' => {
+						'' => q(ئىنگلىز موسى),
 						'one' => q({0} ئىنگلىز موسى),
 						'other' => q({0} ئىنگلىز موسى),
 					},
 					'celsius' => {
+						'' => q(سېلسىيە گرادۇس),
 						'one' => q({0}°C),
 						'other' => q({0}°C),
 					},
 					'centimeter' => {
+						'' => q(سانتىمېتىر),
 						'one' => q({0} سانتىمېتىر),
 						'other' => q({0} سانتىمېتىر),
 					},
 					'cubic-kilometer' => {
+						'' => q(كۇب كىلومېتىر),
 						'one' => q({0} km³),
 						'other' => q({0} km³),
 					},
 					'cubic-mile' => {
+						'' => q(كۇب مىل),
 						'one' => q({0} mi³),
 						'other' => q({0} mi³),
 					},
 					'day' => {
+						'' => q(كۈن),
 						'one' => q({0} كۈن),
 						'other' => q({0} كۈن),
 					},
 					'degree' => {
+						'' => q(گىرادۇس),
 						'one' => q({0} گىرادۇس),
 						'other' => q({0} گىرادۇس),
 					},
 					'fahrenheit' => {
+						'' => q(فارېنگېيت گرادۇس),
 						'one' => q({0}°F),
 						'other' => q({0}°F),
 					},
 					'foot' => {
+						'' => q(فۇت),
 						'one' => q({0} پۇت),
 						'other' => q({0} پۇت),
 					},
 					'g-force' => {
+						'' => q(ئېغىرلىق كۈچى),
 						'one' => q({0} G),
 						'other' => q({0} G),
 					},
 					'gram' => {
+						'' => q(گرام),
 						'one' => q({0} g),
 						'other' => q({0} g),
 					},
 					'hectare' => {
+						'' => q(hectares),
 						'one' => q({0} گېكتار),
 						'other' => q({0} گېكتار),
 					},
 					'hectopascal' => {
+						'' => q(يۈز پاسكال),
 						'one' => q({0} ھېكتوپاسكال),
 						'other' => q({0} ھېكتوپاسكال),
 					},
 					'horsepower' => {
+						'' => q(ئات كۈچى),
 						'one' => q({0} ئات كۈچى),
 						'other' => q({0} ئات كۈچى),
 					},
 					'hour' => {
+						'' => q(سائەت),
 						'one' => q({0} سائەت),
 						'other' => q({0} سائەت),
 					},
 					'inch' => {
+						'' => q(ديۇيم),
 						'one' => q({0} ئىنگلىز چىسى),
 						'other' => q({0} ئىنگلىز چىسى),
 					},
 					'inch-hg' => {
+						'' => q(ديۇيم سىماب تۈۋرۇكى),
 						'one' => q({0} inHg),
 						'other' => q({0} inHg),
 					},
 					'kilogram' => {
+						'' => q(كىلوگرام),
 						'one' => q({0} kg),
 						'other' => q({0} kg),
 					},
 					'kilometer' => {
+						'' => q(كىلومېتىر),
 						'one' => q({0} كىلومېتىر),
 						'other' => q({0} كىلومېتىر),
 					},
 					'kilometer-per-hour' => {
+						'' => q(كىلومېتىر ھەر سائەت),
 						'one' => q({0} سائەت/كىلومېتىر),
 						'other' => q({0} سائەت/كىلومېتىر),
 					},
 					'kilowatt' => {
+						'' => q(كىلوۋات),
 						'one' => q({0} kW),
 						'other' => q({0} kW),
 					},
 					'light-year' => {
+						'' => q(يورۇقلۇق يىلى),
 						'one' => q({0} يورۇقلۇق يىلى),
 						'other' => q({0} يورۇقلۇق يىلى),
 					},
 					'liter' => {
+						'' => q(لىتېر),
 						'one' => q({0} l),
 						'other' => q({0} l),
 					},
 					'meter' => {
+						'' => q(مېتىر),
 						'one' => q({0} مېتىر),
 						'other' => q({0} مېتىر),
 					},
 					'meter-per-second' => {
+						'' => q(مېتىر ھەر سېكۇنت),
 						'one' => q({0} سېكۇنت/مېتىر),
 						'other' => q({0} سېكۇنت/مېتىر),
 					},
 					'mile' => {
+						'' => q(مىل),
 						'one' => q({0} مىل),
 						'other' => q({0} مىل),
 					},
 					'mile-per-hour' => {
+						'' => q(مىل ھەر سائەت),
 						'one' => q({0} سائەت/مىل),
 						'other' => q({0} سائەت/مىل),
 					},
 					'millibar' => {
+						'' => q(مىللىبار),
 						'one' => q({0} mbar),
 						'other' => q({0} mbar),
 					},
 					'millimeter' => {
+						'' => q(مىللىمېتىر),
 						'one' => q({0} مىللىمېتىر),
 						'other' => q({0} مىللىمېتىر),
 					},
 					'millisecond' => {
+						'' => q(مىللى سېكۇنت),
 						'one' => q({0} مىللىسېكۇنت),
 						'other' => q({0} مىللىسېكۇنت),
 					},
 					'minute' => {
+						'' => q(مىنۇت),
 						'one' => q({0} مىنۇت),
 						'other' => q({0} مىنۇت),
 					},
 					'month' => {
+						'' => q(ئاي),
 						'one' => q({0} ئاي),
 						'other' => q({0} ئاي),
 					},
 					'ounce' => {
+						'' => q(ئۇنسىيە),
 						'one' => q({0} ئۇنسىيە),
 						'other' => q({0} ئۇنسىيە),
 					},
@@ -1802,46 +1879,57 @@ has 'units' => (
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(پىكومېتىر),
 						'one' => q({0} پىكومېتىر),
 						'other' => q({0} پىكومېتىر),
 					},
 					'pound' => {
+						'' => q(قاداق),
 						'one' => q({0} قاداق),
 						'other' => q({0} قاداق),
 					},
 					'second' => {
+						'' => q(سېكۇنت),
 						'one' => q({0} سېكۇنت),
 						'other' => q({0} سېكۇنت),
 					},
 					'square-foot' => {
+						'' => q(كۋادرات فۇت),
 						'one' => q({0} كۋادرات فۇت),
 						'other' => q({0} كۋادرات فۇت),
 					},
 					'square-kilometer' => {
+						'' => q(كۋادرات كىلومېتىر),
 						'one' => q({0} km²),
 						'other' => q({0} km²),
 					},
 					'square-meter' => {
+						'' => q(كۋادرات مېتىر),
 						'one' => q({0} m²),
 						'other' => q({0} m²),
 					},
 					'square-mile' => {
+						'' => q(كۋادرات مىل),
 						'one' => q({0} كۋادرات مىل),
 						'other' => q({0} كۋادرات مىل),
 					},
 					'watt' => {
+						'' => q(ۋات),
 						'one' => q({0} W),
 						'other' => q({0} W),
 					},
 					'week' => {
+						'' => q(ھەپتە),
 						'one' => q({0} ھەپتە),
 						'other' => q({0} ھەپتە),
 					},
 					'yard' => {
+						'' => q(يارد),
 						'one' => q({0} يارد),
 						'other' => q({0} يارد),
 					},
 					'year' => {
+						'' => q(يىل),
 						'one' => q({0} يىل),
 						'other' => q({0} يىل),
 					},
@@ -1892,7 +1980,6 @@ has 'number_symbols' => (
 			'exponential' => q(E),
 			'group' => q(,),
 			'infinity' => q(∞),
-			'list' => q(),
 			'minusSign' => q(-),
 			'nan' => q(NaN),
 			'perMille' => q(‰),
@@ -1938,28 +2025,28 @@ has 'number_formats' => (
 					'other' => '000مىليون',
 				},
 				'1000000000' => {
-					'one' => '0 مىليارد',
-					'other' => '0 مىليارد',
+					'one' => '0مىليارد',
+					'other' => '0مىليارد',
 				},
 				'10000000000' => {
-					'one' => '00 مىليارد',
-					'other' => '00 مىليارد',
+					'one' => '00مىليارد',
+					'other' => '00مىليارد',
 				},
 				'100000000000' => {
-					'one' => '000 مىليارد',
-					'other' => '000 مىليارد',
+					'one' => '000مىليارد',
+					'other' => '000مىليارد',
 				},
 				'1000000000000' => {
-					'one' => '0 تىرىليون',
-					'other' => '0 تىرىليون',
+					'one' => '0T',
+					'other' => '0T',
 				},
 				'10000000000000' => {
-					'one' => '00 تىرىليون',
-					'other' => '00 تىرىليون',
+					'one' => '00T',
+					'other' => '00T',
 				},
 				'100000000000000' => {
-					'one' => '000 تىرىليون',
-					'other' => '000 تىرىليون',
+					'one' => '000T',
+					'other' => '000T',
 				},
 			},
 			'long' => {
@@ -2038,16 +2125,28 @@ has 'number_formats' => (
 					'other' => '000مىليون',
 				},
 				'1000000000' => {
-					'one' => '0 مىليارد',
-					'other' => '0 مىليارد',
+					'one' => '0مىليارد',
+					'other' => '0مىليارد',
 				},
 				'10000000000' => {
-					'one' => '00 مىليارد',
-					'other' => '00 مىليارد',
+					'one' => '00مىليارد',
+					'other' => '00مىليارد',
+				},
+				'100000000000' => {
+					'one' => '000مىليارد',
+					'other' => '000مىليارد',
 				},
 				'1000000000000' => {
-					'one' => '0 تىرىليون',
-					'other' => '0 تىرىليون',
+					'one' => '0T',
+					'other' => '0T',
+				},
+				'10000000000000' => {
+					'one' => '00T',
+					'other' => '00T',
+				},
+				'100000000000000' => {
+					'one' => '000T',
+					'other' => '000T',
 				},
 			},
 		},
@@ -4421,15 +4520,15 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'noon' => q{چۈش},
-					'pm' => q{چۈشتىن كېيىن},
-					'am' => q{چۈشتىن بۇرۇن},
-				},
 				'narrow' => {
+					'am' => q{چۈشتىن بۇرۇن},
+					'noon' => q{چۈش},
+					'pm' => q{چۈشتىن كېيىن},
+				},
+				'wide' => {
+					'pm' => q{چۈشتىن كېيىن},
 					'noon' => q{چۈش},
 					'am' => q{چۈشتىن بۇرۇن},
-					'pm' => q{چۈشتىن كېيىن},
 				},
 			},
 		},
@@ -4594,39 +4693,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'islamic' => {
-			M => q{L},
-			Md => q{d/‏M},
-			d => q{d},
-			yyyyM => q{M‏/y G},
-			yyyyMEd => q{E، d/‏M/‏y G},
-			yyyyMMM => q{MMM y G},
-			yyyyMd => q{d‏/M‏/y G},
-		},
-		'generic' => {
-			Ed => q{d E},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E، MMM d، y G},
-			GyMMMd => q{MMM d، y G},
-			M => q{L},
-			MEd => q{E، M/d},
-			MMM => q{LLL},
-			MMMEd => q{E، MMM d},
-			MMMd => q{MMM d},
-			Md => q{M/d},
-			d => q{d},
-			y => q{y G},
-			yyyy => q{y G},
-			yyyyM => q{M/y GGGGG},
-			yyyyMEd => q{E، M/d/y GGGGG},
-			yyyyMMM => q{MMM y G},
-			yyyyMMMEd => q{E، MMM d، y G},
-			yyyyMMMd => q{MMM d، y G},
-			yyyyMd => q{M/d/y GGGGG},
-			yyyyQQQ => q{QQQ y G},
-			yyyyQQQQ => q{QQQQ y G},
-		},
 		'gregorian' => {
 			EHm => q{E HH:mm},
 			EHms => q{E HH:mm:ss},
@@ -4661,6 +4727,39 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
+		'islamic' => {
+			M => q{L},
+			Md => q{d/‏M},
+			d => q{d},
+			yyyyM => q{M‏/y G},
+			yyyyMEd => q{E، d/‏M/‏y G},
+			yyyyMMM => q{MMM y G},
+			yyyyMd => q{d‏/M‏/y G},
+		},
+		'generic' => {
+			Ed => q{d E},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E، MMM d، y G},
+			GyMMMd => q{MMM d، y G},
+			M => q{L},
+			MEd => q{E، M/d},
+			MMM => q{LLL},
+			MMMEd => q{E، MMM d},
+			MMMd => q{MMM d},
+			Md => q{M/d},
+			d => q{d},
+			y => q{y G},
+			yyyy => q{y G},
+			yyyyM => q{M/y GGGGG},
+			yyyyMEd => q{E، M/d/y GGGGG},
+			yyyyMMM => q{MMM y G},
+			yyyyMMMEd => q{E، MMM d، y G},
+			yyyyMMMd => q{MMM d، y G},
+			yyyyMd => q{M/d/y GGGGG},
+			yyyyQQQ => q{QQQ y G},
+			yyyyQQQQ => q{QQQQ y G},
+		},
 	} },
 );
 
@@ -4680,69 +4779,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			M => {
-				M => q{M – M},
-			},
-			MEd => {
-				M => q{E، M/d – E، M/d},
-				d => q{E، M/d – E، M/d},
-			},
-			MMM => {
-				M => q{MMM – MMM},
-			},
-			MMMEd => {
-				M => q{E، MMM d – E، MMM d},
-				d => q{E، MMM d – E، MMM d},
-			},
-			MMMd => {
-				M => q{MMM d – MMM d},
-				d => q{MMM d – d},
-			},
-			Md => {
-				M => q{M/d – M/d},
-				d => q{M/d – M/d},
-			},
-			d => {
-				d => q{d – d},
-			},
-			fallback => '{0} – {1}',
-			y => {
-				y => q{y – y G},
-			},
-			yM => {
-				M => q{M/y – M/y GGGGG},
-				y => q{M/y – M/y GGGGG},
-			},
-			yMEd => {
-				M => q{E، M/d/y – E، M/d/y GGGGG},
-				d => q{E، M/d/y – E، M/d/y GGGGG},
-				y => q{E، M/d/y – E، M/d/y GGGGG},
-			},
-			yMMM => {
-				M => q{MMM – MMM y G},
-				y => q{MMM y – MMM y G},
-			},
-			yMMMEd => {
-				M => q{E، MMM d – E، MMM d، y G},
-				d => q{E، MMM d – E، MMM d، y G},
-				y => q{E، MMM d، y – E، MMM d، y G},
-			},
-			yMMMM => {
-				M => q{MMMM – MMMM y G},
-				y => q{MMMM y – MMMM y G},
-			},
-			yMMMd => {
-				M => q{MMM d – MMM d، y G},
-				d => q{MMM d – d، y G},
-				y => q{MMM d، y – MMM d، y G},
-			},
-			yMd => {
-				M => q{M/d/y – M/d/y GGGGG},
-				d => q{M/d/y – M/d/y GGGGG},
-				y => q{M/d/y – M/d/y GGGGG},
-			},
-		},
 		'gregorian' => {
 			H => {
 				H => q{HH – HH},
@@ -4836,6 +4872,69 @@ has 'datetime_formats_interval' => (
 				M => q{M/d/y – M/d/y},
 				d => q{M/d/y – M/d/y},
 				y => q{M/d/y – M/d/y},
+			},
+		},
+		'generic' => {
+			M => {
+				M => q{M – M},
+			},
+			MEd => {
+				M => q{E، M/d – E، M/d},
+				d => q{E، M/d – E، M/d},
+			},
+			MMM => {
+				M => q{MMM – MMM},
+			},
+			MMMEd => {
+				M => q{E، MMM d – E، MMM d},
+				d => q{E، MMM d – E، MMM d},
+			},
+			MMMd => {
+				M => q{MMM d – MMM d},
+				d => q{MMM d – d},
+			},
+			Md => {
+				M => q{M/d – M/d},
+				d => q{M/d – M/d},
+			},
+			d => {
+				d => q{d – d},
+			},
+			fallback => '{0} – {1}',
+			y => {
+				y => q{y – y G},
+			},
+			yM => {
+				M => q{M/y – M/y GGGGG},
+				y => q{M/y – M/y GGGGG},
+			},
+			yMEd => {
+				M => q{E، M/d/y – E، M/d/y GGGGG},
+				d => q{E، M/d/y – E، M/d/y GGGGG},
+				y => q{E، M/d/y – E، M/d/y GGGGG},
+			},
+			yMMM => {
+				M => q{MMM – MMM y G},
+				y => q{MMM y – MMM y G},
+			},
+			yMMMEd => {
+				M => q{E، MMM d – E، MMM d، y G},
+				d => q{E، MMM d – E، MMM d، y G},
+				y => q{E، MMM d، y – E، MMM d، y G},
+			},
+			yMMMM => {
+				M => q{MMMM – MMMM y G},
+				y => q{MMMM y – MMMM y G},
+			},
+			yMMMd => {
+				M => q{MMM d – MMM d، y G},
+				d => q{MMM d – d، y G},
+				y => q{MMM d، y – MMM d، y G},
+			},
+			yMd => {
+				M => q{M/d/y – M/d/y GGGGG},
+				d => q{M/d/y – M/d/y GGGGG},
+				y => q{M/d/y – M/d/y GGGGG},
 			},
 		},
 	} },

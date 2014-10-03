@@ -1,11 +1,11 @@
 package Locale::CLDR::Transformations::Any::Lt::Lower;
 # This file auto generated from Data\common\transforms\lt-Lower.xml
-#	on Fri 20 Jun 10:43:43 pm GMT
-# XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
+#	on Thu  2 Oct 10:06:36 am GMT
+# XML file generated 2014-08-25 21:17:25 -0500 (Mon, 25 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -55,28 +55,28 @@ has 'transforms' => (
 				{
 					before  => q(),
 					after   => q((?^u:[^\p{ccc=Not_Reordered}\p{ccc=Above}]*\p{ccc=Above})),
-					replace => q((?^u:Į)),
-					result  => q(į\u0307),
+					replace => q((?^u:I\u0328)),
+					result  => q(i\u0328\u0307),
 					revisit => 0,
 				},
 				{
 					before  => q(),
 					after   => q(),
-					replace => q((?^u:Ì)),
+					replace => q((?^u:I\u0300)),
 					result  => q(i\u0307\u0300),
 					revisit => 0,
 				},
 				{
 					before  => q(),
 					after   => q(),
-					replace => q((?^u:Í)),
+					replace => q((?^u:I\u0301)),
 					result  => q(i\u0307\u0301),
 					revisit => 0,
 				},
 				{
 					before  => q(),
 					after   => q(),
-					replace => q((?^u:Ĩ)),
+					replace => q((?^u:I\u0303)),
 					result  => q(i\u0307\u0303),
 					revisit => 0,
 				},

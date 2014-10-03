@@ -1,11 +1,11 @@
 package Locale::CLDR::En::Any::Gi;
 # This file auto generated from Data\common\main\en_GI.xml
-#	on Fri 20 Jun 11:21:26 pm GMT
-# XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
+#	on Thu  2 Oct 10:58:40 am GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -25,9 +25,6 @@ has 'curriencies' => (
 		},
 		'GIP' => {
 			symbol => '£',
-		},
-		'USD' => {
-			symbol => 'US$',
 		},
 	} },
 );

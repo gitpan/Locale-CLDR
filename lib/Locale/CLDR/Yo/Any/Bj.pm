@@ -1,11 +1,11 @@
 package Locale::CLDR::Yo::Any::Bj;
 # This file auto generated from Data\common\main\yo_BJ.xml
-#	on Sat 21 Jun  1:33:47 am GMT
-# XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
+#	on Thu  2 Oct  2:21:06 pm GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -22,103 +22,13 @@ has 'display_name_language' => (
 	default		=> sub { 
 		 sub {
 			 my %languages = (
-				'af' => 'Èdè Afrikani',
- 				'ak' => 'Èdè Akani',
- 				'am' => 'Èdè Amariki',
- 				'ar' => 'Èdè Arabiki',
- 				'as' => 'Ti Assam',
- 				'az' => 'Èdè Azerbaijani',
- 				'be' => 'Èdè Belarusi',
- 				'bg' => 'Èdè Bugaria',
- 				'bn' => 'Èdè Bengali',
- 				'br' => 'Èdè Bretoni',
- 				'bs' => 'Èdè Bosnia',
- 				'ca' => 'Èdè Catala',
- 				'cs' => 'Èdè seeki',
- 				'cy' => 'Èdè Welshi',
- 				'da' => 'Èdè Ilɛ̀ Denmark',
+				'da' => 'Èdè Ilɛ̀ Denmark',
  				'de' => 'Èdè Ilɛ̀ Gemani',
- 				'el' => 'Èdè Giriki',
  				'en' => 'Èdè Gɛ̀ɛ́sì',
- 				'eo' => 'Èdè Esperanto',
- 				'es' => 'Èdè Sipanisi',
- 				'et' => 'Èdè Estonia',
- 				'eu' => 'Èdè Baski',
- 				'fa' => 'Èdè Pasia',
- 				'fi' => 'Èdè Finisi',
- 				'fil' => 'Èdè Tagalogi',
- 				'fo' => 'Èdè Faroesi',
- 				'fr' => 'Èdè Faransé',
- 				'fy' => 'Èdè Frisia',
- 				'ga' => 'Èdè Ireland',
- 				'gd' => 'Èdè Gaelik ti Ilu Scotland',
- 				'gl' => 'Èdè Galicia',
- 				'gn' => 'Èdè Guarani',
- 				'gu' => 'Èdè Gujarati',
- 				'ha' => 'Èdè Hausa',
- 				'he' => 'Èdè Heberu',
- 				'hi' => 'Èdè Hindi',
- 				'hr' => 'Èdè Kroatia',
- 				'hu' => 'Èdè Hungaria',
- 				'hy' => 'Èdè Ile Armenia',
- 				'ia' => 'Èdè pipo',
- 				'id' => 'Èdè Indonasia',
- 				'ie' => 'Iru Èdè',
- 				'ig' => 'Èdè Ibo',
- 				'is' => 'Èdè Icelandic',
- 				'it' => 'Èdè Italiani',
- 				'ja' => 'Èdè Japanisi',
- 				'jv' => 'Èdè Javanasi',
- 				'ka' => 'Èdè Georgia',
- 				'km' => 'Èdè kameri',
- 				'kn' => 'Èdè Kannada',
- 				'ko' => 'Èdè Koria',
- 				'la' => 'Èdè Latini',
- 				'lt' => 'Èdè Lithuania',
- 				'lv' => 'Èdè Latvianu',
- 				'mk' => 'Èdè Macedonia',
- 				'mr' => 'Èdè marathi',
- 				'ms' => 'Èdè Malaya',
- 				'mt' => 'Èdè Malta',
- 				'my' => 'Èdè Bumiisi',
- 				'ne' => 'Èdè Nepali',
- 				'nl' => 'Èdè Duki',
- 				'no' => 'Èdè Norway',
- 				'oc' => 'Èdè Occitani',
- 				'pa' => 'Èdè Punjabi',
  				'pl' => 'Èdè Ilɛ̀ Polandi',
  				'pt' => 'Èdè Pɔtugi',
- 				'ro' => 'Èdè Romania',
  				'ru' => 'Èdè ̣Rɔɔsia',
- 				'rw' => 'Èdè Ruwanda',
- 				'sa' => 'Èdè awon ara Indo',
- 				'sd' => 'Èdè Sindhi',
- 				'sh' => 'Èdè Serbo-Croatiani',
- 				'si' => 'Èdè Sinhalese',
- 				'sk' => 'Èdè Slovaki',
- 				'sl' => 'Èdè Slovenia',
- 				'so' => 'Èdè ara Somalia',
- 				'sq' => 'Èdè Albania',
- 				'sr' => 'Èdè Serbia',
- 				'st' => 'Èdè Sesoto',
- 				'su' => 'Èdè Sudani',
- 				'sv' => 'Èdè Suwidiisi',
- 				'sw' => 'Èdè Swahili',
- 				'ta' => 'Èdè Tamili',
- 				'te' => 'Èdè Telugu',
- 				'th' => 'Èdè Tai',
- 				'ti' => 'Èdè Tigrinya',
- 				'tk' => 'Èdè Turkmen',
- 				'tlh' => 'Èdè Klingoni',
  				'tr' => 'Èdè Tɔɔkisi',
- 				'uk' => 'Èdè Ukania',
- 				'ur' => 'Èdè Udu',
- 				'uz' => 'Èdè Uzbek',
- 				'vi' => 'Èdè Jetinamu',
- 				'xh' => 'Èdè Xhosa',
- 				'yi' => 'Èdè Yiddishi',
- 				'yo' => 'Èdè Yorùbá',
- 				'zh' => 'Èdè Mandari',
  				'zu' => 'Èdè Shulu',
 
 			);
@@ -323,7 +233,6 @@ has 'display_name_territory' => (
  			'SN' => 'Orílɛ́ède Sɛnɛga',
  			'SO' => 'Orílɛ́ède Somalia',
  			'SR' => 'Orílɛ́ède Surinami',
- 			'SS' => 'Gúúsù Sudan',
  			'ST' => 'Orílɛ́ède Sao tomi ati piriishipi',
  			'SV' => 'Orílɛ́ède Ɛɛsáfádò',
  			'SY' => 'Orílɛ́ède Siria',
@@ -376,45 +285,15 @@ has 'characters' => (
 	sub {
 		no warnings 'experimental::regex_sets';
 		return {
-			auxiliary => qr{(?^u:[c q v x z])},
-			index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'],
 			main => qr{(?^u:[a á à b d e é è ɛ {ɛ́} {ɛ̀} f g {gb} h i í ì j k l m n o ó ò ɔ {ɔ́} {ɔ̀} p r s {sh} t u ú ù w y])},
 		};
 	},
 EOT
 : sub {
-		return { index => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'], };
+		return {};
 },
 );
 
-
-has 'quote_start' => (
-	is			=> 'ro',
-	isa			=> 'Str',
-	init_arg	=> undef,
-	default		=> qq{“},
-);
-
-has 'quote_end' => (
-	is			=> 'ro',
-	isa			=> 'Str',
-	init_arg	=> undef,
-	default		=> qq{”},
-);
-
-has 'alternate_quote_start' => (
-	is			=> 'ro',
-	isa			=> 'Str',
-	init_arg	=> undef,
-	default		=> qq{‘},
-);
-
-has 'alternate_quote_end' => (
-	is			=> 'ro',
-	isa			=> 'Str',
-	init_arg	=> undef,
-	default		=> qq{’},
-);
 
 has 'yesstr' => (
 	is			=> 'ro',
@@ -428,28 +307,6 @@ has 'nostr' => (
 	isa			=> 'RegexpRef',
 	init_arg	=> undef,
 	default		=> sub { qr'^(?i:Bɛ́ɛ̀kɔ́|K)$' }
-);
-
-has 'number_currency_formats' => (
-	is			=> 'ro',
-	isa			=> 'HashRef',
-	init_arg	=> undef,
-	default		=> sub { {
-		'latn' => {
-			'pattern' => {
-				'default' => {
-					'accounting' => {
-						'negative' => '(¤#,##0.00)',
-						'positive' => '¤#,##0.00',
-					},
-					'standard' => {
-						'negative' => '¤#,##0.00',
-						'positive' => '¤#,##0.00',
-					},
-				},
-			},
-		},
-} },
 );
 
 has 'curriencies' => (
@@ -535,11 +392,6 @@ has 'curriencies' => (
 		'ETB' => {
 			display_name => {
 				'currency' => q(Biri ti Orílɛ́ède Eutopia),
-			},
-		},
-		'EUR' => {
-			display_name => {
-				'currency' => q(Uro),
 			},
 		},
 		'GBP' => {
@@ -633,7 +485,6 @@ has 'curriencies' => (
 			},
 		},
 		'NGN' => {
-			symbol => '₦',
 			display_name => {
 				'currency' => q(Naira ti Orílɛ́ède Nàìjíríà),
 			},
@@ -668,11 +519,6 @@ has 'curriencies' => (
 				'currency' => q(Pɔɔun ti Orílɛ́ède ̣Elena),
 			},
 		},
-		'SLL' => {
-			display_name => {
-				'currency' => q(Lioni),
-			},
-		},
 		'SOS' => {
 			display_name => {
 				'currency' => q(Sile ti Orílɛ́ède Somali),
@@ -681,11 +527,6 @@ has 'curriencies' => (
 		'STD' => {
 			display_name => {
 				'currency' => q(Dobira ti Orílɛ́ède Sao tome Ati Pirisipe),
-			},
-		},
-		'SZL' => {
-			display_name => {
-				'currency' => q(Lilangeni),
 			},
 		},
 		'TND' => {
@@ -829,11 +670,6 @@ has 'calendar_quarters' => (
 	default		=> sub { {
 			'gregorian' => {
 				'format' => {
-					abbreviated => {0 => 'K1',
-						1 => 'K2',
-						2 => 'K3',
-						3 => 'K4'
-					},
 					wide => {0 => 'Kɔ́tà Kínní',
 						1 => 'Kɔ́tà Kejì',
 						2 => 'Kɔ́à Keta',
@@ -865,17 +701,7 @@ has 'eras' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-		},
 		'gregorian' => {
-			abbreviated => {
-				'0' => 'SK',
-				'1' => 'LK'
-			},
-			wide => {
-				'0' => 'Saju Kristi',
-				'1' => 'Lehin Kristi'
-			},
 		},
 	} },
 );
@@ -885,17 +711,7 @@ has 'date_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			'full' => q{EEEE, d MMMM y G},
-			'long' => q{d MMMM y G},
-			'medium' => q{d MMM y G},
-			'short' => q{dd/MM/y GGGGG},
-		},
 		'gregorian' => {
-			'full' => q{EEEE, d MMMM y},
-			'long' => q{d MMMM y},
-			'medium' => q{d MMM y},
-			'short' => q{dd/MM/y},
 		},
 	} },
 );
@@ -905,13 +721,7 @@ has 'time_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-		},
 		'gregorian' => {
-			'full' => q{h:mm:ss a zzzz},
-			'long' => q{h:mm:ss a z},
-			'medium' => q{h:mm:ss a},
-			'short' => q{h:mm a},
 		},
 	} },
 );
@@ -921,8 +731,6 @@ has 'datetime_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-		},
 		'gregorian' => {
 		},
 	} },
@@ -933,52 +741,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, M/d},
-			MMM => q{LLL},
-			MMMEd => q{E, MMM d},
-			MMMMEd => q{E, MMMM d},
-			MMMMd => q{MMMM d},
-			MMMd => q{MMM d},
-			Md => q{M/d},
-			d => q{d},
-			hm => q{h:mm a},
-			ms => q{mm:ss},
-			y => q{y},
-			yM => q{M/y},
-			yMEd => q{E, M/d/y},
-			yMMM => q{MMM y},
-			yMMMEd => q{E, MMM d, y},
-			yMMMM => q{MMMM y},
-			yQQQ => q{QQQ y},
-			yQQQQ => q{QQQQ y},
-		},
-		'gregorian' => {
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, M/d},
-			MMM => q{LLL},
-			MMMEd => q{E, MMM d},
-			MMMMEd => q{E, MMMM d},
-			MMMMd => q{MMMM d},
-			MMMd => q{MMM d},
-			Md => q{M/d},
-			d => q{d},
-			hm => q{h:mm a},
-			ms => q{mm:ss},
-			y => q{y},
-			yM => q{M/y},
-			yMEd => q{E, M/d/y},
-			yMMM => q{MMM y},
-			yMMMEd => q{E, MMM d, y},
-			yMMMM => q{MMMM y},
-			yQQQ => q{QQQ y},
-			yQQQQ => q{QQQQ y},
-		},
 	} },
 );
 

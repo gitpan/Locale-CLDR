@@ -1,11 +1,11 @@
 package Locale::CLDR::Transformations::Any::Numericpinyin::Latin;
 # This file auto generated from Data\common\transforms\Latin-NumericPinyin.xml
-#	on Fri 20 Jun 10:43:35 pm GMT
-# XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
+#	on Thu  2 Oct 10:06:27 am GMT
+# XML file generated 2014-08-12 23:23:18 -0500 (Tue, 12 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -48,21 +48,21 @@ has 'transforms' => (
 				{
 					before  => q(),
 					after   => q(),
-					replace => q((?^u:([aAeEiIoOuUüÜ \{ ü \} \{ Ü \}])((?[[a-z A-Z] - ([aAeEiIoOuUüÜ \{ ü \} \{ Ü \}])])*)([1-5]))),
+					replace => q((?^u:([aAeEiIoOuU \{ ü \} \{ Ü \} vV])((?[[a-z A-Z] - ([aAeEiIoOuU \{ ü \} \{ Ü \} vV])])*)([1-5]))),
 					result  => q($1&NumericPinyin-Pinyin($3)$2),
 					revisit => 0,
 				},
 				{
 					before  => q(),
 					after   => q(),
-					replace => q((?^u:([oO])((?[[aAeEiIoOuUüÜ \{ ü \} \{ Ü \}]-[aeAE]])*(?[[a-z A-Z] - ([aAeEiIoOuUüÜ \{ ü \} \{ Ü \}])])*)([1-5]))),
+					replace => q((?^u:([oO])((?[[aAeEiIoOuU \{ ü \} \{ Ü \} vV]-[aeAE]])*(?[[a-z A-Z] - ([aAeEiIoOuU \{ ü \} \{ Ü \} vV])])*)([1-5]))),
 					result  => q($1&NumericPinyin-Pinyin($3)$2),
 					revisit => 0,
 				},
 				{
 					before  => q(),
 					after   => q(),
-					replace => q((?^u:([aAeE])([aAeEiIoOuUüÜ \{ ü \} \{ Ü \}]*(?[[a-z A-Z] - ([aAeEiIoOuUüÜ \{ ü \} \{ Ü \}])])*)([1-5]))),
+					replace => q((?^u:([aAeE])([aAeEiIoOuU \{ ü \} \{ Ü \} vV]*(?[[a-z A-Z] - ([aAeEiIoOuU \{ ü \} \{ Ü \} vV])])*)([1-5]))),
 					result  => q($1&NumericPinyin-Pinyin($3)$2),
 					revisit => 0,
 				},

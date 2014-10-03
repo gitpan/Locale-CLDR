@@ -1,11 +1,11 @@
 package Locale::CLDR::Currencies;
 # This file auto generated from Data.xml
-#	on Fri 20 Jun 10:42:54 pm GMT
-# XML file generated 2014-03-13 15:53:16 -0500 (Thu, 13 Mar 2014)
+#	on Thu  2 Oct 10:05:46 am GMT
+# XML file generated 2014-09-11 12:17:53 -0500 (Thu, 11 Sep 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -75,9 +75,9 @@ has '_currency_fractions' => (
 			'cashrounding' => '5',
 		},
 		CLF => {
-			'digits' => '0',
+			'digits' => '4',
 			'rounding' => '0',
-			'cashdigits' => '0',
+			'cashdigits' => '4',
 			'cashrounding' => '0',
 		},
 		CLP => {
@@ -135,9 +135,9 @@ has '_currency_fractions' => (
 			'cashrounding' => '0',
 		},
 		HUF => {
-			'digits' => '0',
+			'digits' => '2',
 			'rounding' => '0',
-			'cashdigits' => '0',
+			'cashdigits' => '2',
 			'cashrounding' => '0',
 		},
 		IDR => {

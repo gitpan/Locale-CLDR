@@ -1,11 +1,11 @@
 package Locale::CLDR::Kln;
 # This file auto generated from Data\common\main\kln.xml
-#	on Sat 21 Jun 12:05:31 am GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct 12:01:43 pm GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -121,7 +121,7 @@ has 'display_name_territory' => (
  			'CF' => 'Emetab Afrika nebo Kwen',
  			'CG' => 'Emetab Congo - Brazzaville',
  			'CH' => 'Emetab Switzerland',
- 			'CI' => 'Emetab Côte d\'Ivoire',
+ 			'CI' => 'Emetab Côte d’Ivoire',
  			'CK' => 'Ikwembeyotab Cook',
  			'CL' => 'Emetab Chile',
  			'CM' => 'Emetab Cameroon',
@@ -712,10 +712,10 @@ has 'calendar_months' => (
 					wide => {
 						nonleap => [
 							'Mulgul',
-							'Ng\'atyato',
+							'Ng’atyato',
 							'Kiptamo',
 							'Iwat kut',
-							'Ng\'eiyet',
+							'Ng’eiyet',
 							'Waki',
 							'Roptui',
 							'Kipkogaga',
@@ -772,9 +772,9 @@ has 'calendar_days' => (
 					},
 					wide => {
 						mon => 'Betut netai',
-						tue => 'Betutab aeng\'',
+						tue => 'Betutab aeng’',
 						wed => 'Betutab somok',
-						thu => 'Betutab ang\'wan',
+						thu => 'Betutab ang’wan',
 						fri => 'Betutab mut',
 						sat => 'Betutab lo',
 						sun => 'Betutab tisap'
@@ -808,9 +808,9 @@ has 'calendar_quarters' => (
 						3 => 'R4'
 					},
 					wide => {0 => 'Robo netai',
-						1 => 'Robo nebo aeng\'',
+						1 => 'Robo nebo aeng’',
 						2 => 'Robo nebo somok',
-						3 => 'Robo nebo ang\'wan'
+						3 => 'Robo nebo ang’wan'
 					},
 				},
 			},
@@ -824,13 +824,13 @@ has 'day_periods' => (
 	default		=> sub { {
 		'gregorian' => {
 			'format' => {
-				'wide' => {
-					'am' => q{Beet},
-					'pm' => q{Kemo},
-				},
 				'abbreviated' => {
 					'pm' => q{KE},
 					'am' => q{BE},
+				},
+				'wide' => {
+					'am' => q{Beet},
+					'pm' => q{Kemo},
 				},
 			},
 		},
@@ -910,7 +910,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -933,7 +933,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},

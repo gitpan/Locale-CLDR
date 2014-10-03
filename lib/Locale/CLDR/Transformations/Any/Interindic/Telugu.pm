@@ -1,11 +1,11 @@
 package Locale::CLDR::Transformations::Any::Interindic::Telugu;
 # This file auto generated from Data\common\transforms\InterIndic-Telugu.xml
-#	on Fri 20 Jun 10:43:30 pm GMT
+#	on Thu  2 Oct 10:06:22 am GMT
 # XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';

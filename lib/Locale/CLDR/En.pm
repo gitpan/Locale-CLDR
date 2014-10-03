@@ -1,11 +1,11 @@
 package Locale::CLDR::En;
 # This file auto generated from Data\common\main\en.xml
-#	on Fri 20 Jun 11:19:37 pm GMT
-# XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
+#	on Thu  2 Oct 10:54:56 am GMT
+# XML file generated 2014-08-31 14:23:52 -0500 (Sun, 31 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -168,56 +168,12 @@ has 'algorithmic_number_format_data' => (
 				'0' => {
 					base_value => q(0),
 					divisor => q(1),
-					rule => q(=#,##0==%%digits-ordinal-indicator=),
+					rule => q(=#,##0=$(ordinal,one{st}two{nd}few{rd}other{th})$),
 				},
 				'max' => {
 					base_value => q(0),
 					divisor => q(1),
-					rule => q(=#,##0==%%digits-ordinal-indicator=),
-				},
-			},
-		},
-		'digits-ordinal-indicator' => {
-			'private' => {
-				'0' => {
-					base_value => q(0),
-					divisor => q(1),
-					rule => q(th),
-				},
-				'1' => {
-					base_value => q(1),
-					divisor => q(1),
-					rule => q(st),
-				},
-				'2' => {
-					base_value => q(2),
-					divisor => q(1),
-					rule => q(nd),
-				},
-				'3' => {
-					base_value => q(3),
-					divisor => q(1),
-					rule => q(rd),
-				},
-				'4' => {
-					base_value => q(4),
-					divisor => q(1),
-					rule => q(th),
-				},
-				'20' => {
-					base_value => q(20),
-					divisor => q(10),
-					rule => q(→→),
-				},
-				'100' => {
-					base_value => q(100),
-					divisor => q(100),
-					rule => q(→→),
-				},
-				'max' => {
-					base_value => q(100),
-					divisor => q(100),
-					rule => q(→→),
+					rule => q(=#,##0=$(ordinal,one{st}two{nd}few{rd}other{th})$),
 				},
 			},
 		},
@@ -955,13 +911,16 @@ has 'display_name_language' => (
  				'ada' => 'Adangme',
  				'ady' => 'Adyghe',
  				'ae' => 'Avestan',
+ 				'aeb' => 'Tunisian Arabic',
  				'af' => 'Afrikaans',
  				'afh' => 'Afrihili',
  				'agq' => 'Aghem',
  				'ain' => 'Ainu',
  				'ak' => 'Akan',
  				'akk' => 'Akkadian',
+ 				'akz' => 'Alabama',
  				'ale' => 'Aleut',
+ 				'aln' => 'Gheg Albanian',
  				'alt' => 'Southern Altai',
  				'am' => 'Amharic',
  				'an' => 'Aragonese',
@@ -971,39 +930,54 @@ has 'display_name_language' => (
  				'ar_001' => 'Modern Standard Arabic',
  				'arc' => 'Aramaic',
  				'arn' => 'Mapuche',
+ 				'aro' => 'Araona',
  				'arp' => 'Arapaho',
+ 				'arq' => 'Algerian Arabic',
  				'arw' => 'Arawak',
+ 				'ary' => 'Moroccan Arabic',
+ 				'arz' => 'Egyptian Arabic',
  				'as' => 'Assamese',
  				'asa' => 'Asu',
+ 				'ase' => 'American Sign Language',
  				'ast' => 'Asturian',
  				'av' => 'Avaric',
+ 				'avk' => 'Kotava',
  				'awa' => 'Awadhi',
  				'ay' => 'Aymara',
  				'az' => 'Azerbaijani',
  				'az@alt=short' => 'Azeri',
+ 				'azb' => 'South Azerbaijani',
  				'ba' => 'Bashkir',
  				'bal' => 'Baluchi',
  				'ban' => 'Balinese',
+ 				'bar' => 'Bavarian',
  				'bas' => 'Basaa',
  				'bax' => 'Bamun',
+ 				'bbc' => 'Batak Toba',
  				'bbj' => 'Ghomala',
  				'be' => 'Belarusian',
  				'bej' => 'Beja',
  				'bem' => 'Bemba',
+ 				'bew' => 'Betawi',
  				'bez' => 'Bena',
  				'bfd' => 'Bafut',
+ 				'bfq' => 'Badaga',
  				'bg' => 'Bulgarian',
  				'bho' => 'Bhojpuri',
  				'bi' => 'Bislama',
  				'bik' => 'Bikol',
  				'bin' => 'Bini',
+ 				'bjn' => 'Banjar',
  				'bkm' => 'Kom',
  				'bla' => 'Siksika',
  				'bm' => 'Bambara',
  				'bn' => 'Bengali',
  				'bo' => 'Tibetan',
+ 				'bpy' => 'Bishnupriya',
+ 				'bqi' => 'Bakhtiari',
  				'br' => 'Breton',
  				'bra' => 'Braj',
+ 				'brh' => 'Brahui',
  				'brx' => 'Bodo',
  				'bs' => 'Bosnian',
  				'bss' => 'Akoose',
@@ -1033,6 +1007,7 @@ has 'display_name_language' => (
  				'ckb' => 'Sorani Kurdish',
  				'co' => 'Corsican',
  				'cop' => 'Coptic',
+ 				'cps' => 'Capiznon',
  				'cr' => 'Cree',
  				'crh' => 'Crimean Turkish',
  				'cs' => 'Czech',
@@ -1054,6 +1029,7 @@ has 'display_name_language' => (
  				'dje' => 'Zarma',
  				'doi' => 'Dogri',
  				'dsb' => 'Lower Sorbian',
+ 				'dtp' => 'Central Dusun',
  				'dua' => 'Duala',
  				'dum' => 'Middle Dutch',
  				'dv' => 'Divehi',
@@ -1064,6 +1040,7 @@ has 'display_name_language' => (
  				'ebu' => 'Embu',
  				'ee' => 'Ewe',
  				'efi' => 'Efik',
+ 				'egl' => 'Emilian',
  				'egy' => 'Ancient Egyptian',
  				'eka' => 'Ekajuk',
  				'el' => 'Greek',
@@ -1081,38 +1058,48 @@ has 'display_name_language' => (
  				'es_419' => 'Latin American Spanish',
  				'es_ES' => 'European Spanish',
  				'es_MX' => 'Mexican Spanish',
+ 				'esu' => 'Central Yupik',
  				'et' => 'Estonian',
  				'eu' => 'Basque',
  				'ewo' => 'Ewondo',
+ 				'ext' => 'Extremaduran',
  				'fa' => 'Persian',
  				'fan' => 'Fang',
  				'fat' => 'Fanti',
  				'ff' => 'Fulah',
  				'fi' => 'Finnish',
  				'fil' => 'Filipino',
+ 				'fit' => 'Tornedalen Finnish',
  				'fj' => 'Fijian',
  				'fo' => 'Faroese',
  				'fon' => 'Fon',
  				'fr' => 'French',
  				'fr_CA' => 'Canadian French',
  				'fr_CH' => 'Swiss French',
+ 				'frc' => 'Cajun French',
  				'frm' => 'Middle French',
  				'fro' => 'Old French',
+ 				'frp' => 'Arpitan',
  				'frr' => 'Northern Frisian',
  				'frs' => 'Eastern Frisian',
  				'fur' => 'Friulian',
  				'fy' => 'Western Frisian',
  				'ga' => 'Irish',
  				'gaa' => 'Ga',
+ 				'gag' => 'Gagauz',
+ 				'gan' => 'Gan Chinese',
  				'gay' => 'Gayo',
  				'gba' => 'Gbaya',
+ 				'gbz' => 'Zoroastrian Dari',
  				'gd' => 'Scottish Gaelic',
  				'gez' => 'Geez',
  				'gil' => 'Gilbertese',
  				'gl' => 'Galician',
+ 				'glk' => 'Gilaki',
  				'gmh' => 'Middle High German',
  				'gn' => 'Guarani',
  				'goh' => 'Old High German',
+ 				'gom' => 'Goan Konkani',
  				'gon' => 'Gondi',
  				'gor' => 'Gorontalo',
  				'got' => 'Gothic',
@@ -1120,20 +1107,25 @@ has 'display_name_language' => (
  				'grc' => 'Ancient Greek',
  				'gsw' => 'Swiss German',
  				'gu' => 'Gujarati',
+ 				'guc' => 'Wayuu',
+ 				'gur' => 'Frafra',
  				'guz' => 'Gusii',
  				'gv' => 'Manx',
  				'gwi' => 'Gwichʼin',
  				'ha' => 'Hausa',
  				'hai' => 'Haida',
+ 				'hak' => 'Hakka Chinese',
  				'haw' => 'Hawaiian',
  				'he' => 'Hebrew',
  				'hi' => 'Hindi',
+ 				'hif' => 'Fiji Hindi',
  				'hil' => 'Hiligaynon',
  				'hit' => 'Hittite',
  				'hmn' => 'Hmong',
  				'ho' => 'Hiri Motu',
  				'hr' => 'Croatian',
  				'hsb' => 'Upper Sorbian',
+ 				'hsn' => 'Xiang Chinese',
  				'ht' => 'Haitian',
  				'hu' => 'Hungarian',
  				'hup' => 'Hupa',
@@ -1153,12 +1145,15 @@ has 'display_name_language' => (
  				'is' => 'Icelandic',
  				'it' => 'Italian',
  				'iu' => 'Inuktitut',
+ 				'izh' => 'Ingrian',
  				'ja' => 'Japanese',
+ 				'jam' => 'Jamaican Creole English',
  				'jbo' => 'Lojban',
  				'jgo' => 'Ngomba',
  				'jmc' => 'Machame',
  				'jpr' => 'Judeo-Persian',
  				'jrb' => 'Judeo-Arabic',
+ 				'jut' => 'Jutish',
  				'jv' => 'Javanese',
  				'ka' => 'Georgian',
  				'kaa' => 'Kara-Kalpak',
@@ -1172,12 +1167,16 @@ has 'display_name_language' => (
  				'kcg' => 'Tyap',
  				'kde' => 'Makonde',
  				'kea' => 'Kabuverdianu',
+ 				'ken' => 'Kenyang',
  				'kfo' => 'Koro',
  				'kg' => 'Kongo',
+ 				'kgp' => 'Kaingang',
  				'kha' => 'Khasi',
  				'kho' => 'Khotanese',
  				'khq' => 'Koyra Chiini',
+ 				'khw' => 'Khowar',
  				'ki' => 'Kikuyu',
+ 				'kiu' => 'Kirmanjki',
  				'kj' => 'Kuanyama',
  				'kk' => 'Kazakh',
  				'kkj' => 'Kako',
@@ -1187,11 +1186,14 @@ has 'display_name_language' => (
  				'kmb' => 'Kimbundu',
  				'kn' => 'Kannada',
  				'ko' => 'Korean',
+ 				'koi' => 'Komi-Permyak',
  				'kok' => 'Konkani',
  				'kos' => 'Kosraean',
  				'kpe' => 'Kpelle',
  				'kr' => 'Kanuri',
  				'krc' => 'Karachay-Balkar',
+ 				'kri' => 'Krio',
+ 				'krj' => 'Kinaray-a',
  				'krl' => 'Karelian',
  				'kru' => 'Kurukh',
  				'ks' => 'Kashmiri',
@@ -1212,14 +1214,19 @@ has 'display_name_language' => (
  				'lam' => 'Lamba',
  				'lb' => 'Luxembourgish',
  				'lez' => 'Lezghian',
+ 				'lfn' => 'Lingua Franca Nova',
  				'lg' => 'Ganda',
  				'li' => 'Limburgish',
+ 				'lij' => 'Ligurian',
+ 				'liv' => 'Livonian',
  				'lkt' => 'Lakota',
+ 				'lmo' => 'Lombard',
  				'ln' => 'Lingala',
  				'lo' => 'Lao',
  				'lol' => 'Mongo',
  				'loz' => 'Lozi',
  				'lt' => 'Lithuanian',
+ 				'ltg' => 'Latgalian',
  				'lu' => 'Luba-Katanga',
  				'lua' => 'Luba-Lulua',
  				'lui' => 'Luiseno',
@@ -1228,6 +1235,8 @@ has 'display_name_language' => (
  				'lus' => 'Mizo',
  				'luy' => 'Luyia',
  				'lv' => 'Latvian',
+ 				'lzh' => 'Literary Chinese',
+ 				'lzz' => 'Laz',
  				'mad' => 'Madurese',
  				'maf' => 'Mafa',
  				'mag' => 'Magahi',
@@ -1244,7 +1253,7 @@ has 'display_name_language' => (
  				'mg' => 'Malagasy',
  				'mga' => 'Middle Irish',
  				'mgh' => 'Makhuwa-Meetto',
- 				'mgo' => 'Meta\'',
+ 				'mgo' => 'Metaʼ',
  				'mh' => 'Marshallese',
  				'mi' => 'Maori',
  				'mic' => 'Micmac',
@@ -1257,6 +1266,7 @@ has 'display_name_language' => (
  				'moh' => 'Mohawk',
  				'mos' => 'Mossi',
  				'mr' => 'Marathi',
+ 				'mrj' => 'Western Mari',
  				'ms' => 'Malay',
  				'mt' => 'Maltese',
  				'mua' => 'Mundang',
@@ -1264,10 +1274,13 @@ has 'display_name_language' => (
  				'mus' => 'Creek',
  				'mwl' => 'Mirandese',
  				'mwr' => 'Marwari',
+ 				'mwv' => 'Mentawai',
  				'my' => 'Burmese',
  				'mye' => 'Myene',
  				'myv' => 'Erzya',
+ 				'mzn' => 'Mazanderani',
  				'na' => 'Nauru',
+ 				'nan' => 'Min Nan Chinese',
  				'nap' => 'Neapolitan',
  				'naq' => 'Nama',
  				'nb' => 'Norwegian Bokmål',
@@ -1278,6 +1291,7 @@ has 'display_name_language' => (
  				'ng' => 'Ndonga',
  				'nia' => 'Nias',
  				'niu' => 'Niuean',
+ 				'njo' => 'Ao Naga',
  				'nl' => 'Dutch',
  				'nl_BE' => 'Flemish',
  				'nmg' => 'Kwasio',
@@ -1286,7 +1300,8 @@ has 'display_name_language' => (
  				'no' => 'Norwegian',
  				'nog' => 'Nogai',
  				'non' => 'Old Norse',
- 				'nqo' => 'N’Ko',
+ 				'nov' => 'Novial',
+ 				'nqo' => 'NʼKo',
  				'nr' => 'South Ndebele',
  				'nso' => 'Northern Sotho',
  				'nus' => 'Nuer',
@@ -1310,11 +1325,18 @@ has 'display_name_language' => (
  				'pam' => 'Pampanga',
  				'pap' => 'Papiamento',
  				'pau' => 'Palauan',
+ 				'pcd' => 'Picard',
+ 				'pdc' => 'Pennsylvania German',
+ 				'pdt' => 'Plautdietsch',
  				'peo' => 'Old Persian',
+ 				'pfl' => 'Palatine German',
  				'phn' => 'Phoenician',
  				'pi' => 'Pali',
  				'pl' => 'Polish',
+ 				'pms' => 'Piedmontese',
+ 				'pnt' => 'Pontic',
  				'pon' => 'Pohnpeian',
+ 				'prg' => 'Prussian',
  				'pro' => 'Old Provençal',
  				'ps' => 'Pashto',
  				'ps@alt=variant' => 'Pushto',
@@ -1322,9 +1344,13 @@ has 'display_name_language' => (
  				'pt_BR' => 'Brazilian Portuguese',
  				'pt_PT' => 'European Portuguese',
  				'qu' => 'Quechua',
+ 				'quc' => 'Kʼicheʼ',
+ 				'qug' => 'Chimborazo Highland Quichua',
  				'raj' => 'Rajasthani',
  				'rap' => 'Rapanui',
  				'rar' => 'Rarotongan',
+ 				'rgn' => 'Romagnol',
+ 				'rif' => 'Riffian',
  				'rm' => 'Romansh',
  				'rn' => 'Rundi',
  				'ro' => 'Romanian',
@@ -1332,7 +1358,10 @@ has 'display_name_language' => (
  				'rof' => 'Rombo',
  				'rom' => 'Romany',
  				'root' => 'Root',
+ 				'rtm' => 'Rotuman',
  				'ru' => 'Russian',
+ 				'rue' => 'Rusyn',
+ 				'rug' => 'Roviana',
  				'rup' => 'Aromanian',
  				'rw' => 'Kinyarwanda',
  				'rwk' => 'Rwa',
@@ -1343,19 +1372,23 @@ has 'display_name_language' => (
  				'saq' => 'Samburu',
  				'sas' => 'Sasak',
  				'sat' => 'Santali',
+ 				'saz' => 'Saurashtra',
  				'sba' => 'Ngambay',
  				'sbp' => 'Sangu',
  				'sc' => 'Sardinian',
  				'scn' => 'Sicilian',
  				'sco' => 'Scots',
  				'sd' => 'Sindhi',
+ 				'sdc' => 'Sassarese Sardinian',
  				'se' => 'Northern Sami',
  				'see' => 'Seneca',
  				'seh' => 'Sena',
+ 				'sei' => 'Seri',
  				'sel' => 'Selkup',
  				'ses' => 'Koyraboro Senni',
  				'sg' => 'Sango',
  				'sga' => 'Old Irish',
+ 				'sgs' => 'Samogitian',
  				'sh' => 'Serbo-Croatian',
  				'shi' => 'Tachelhit',
  				'shn' => 'Shan',
@@ -1364,6 +1397,8 @@ has 'display_name_language' => (
  				'sid' => 'Sidamo',
  				'sk' => 'Slovak',
  				'sl' => 'Slovenian',
+ 				'sli' => 'Lower Silesian',
+ 				'sly' => 'Selayar',
  				'sm' => 'Samoan',
  				'sma' => 'Southern Sami',
  				'smj' => 'Lule Sami',
@@ -1380,6 +1415,7 @@ has 'display_name_language' => (
  				'ss' => 'Swati',
  				'ssy' => 'Saho',
  				'st' => 'Southern Sotho',
+ 				'stq' => 'Saterland Frisian',
  				'su' => 'Sundanese',
  				'suk' => 'Sukuma',
  				'sus' => 'Susu',
@@ -1390,7 +1426,9 @@ has 'display_name_language' => (
  				'swc' => 'Congo Swahili',
  				'syc' => 'Classical Syriac',
  				'syr' => 'Syriac',
+ 				'szl' => 'Silesian',
  				'ta' => 'Tamil',
+ 				'tcy' => 'Tulu',
  				'te' => 'Telugu',
  				'tem' => 'Timne',
  				'teo' => 'Teso',
@@ -1403,19 +1441,24 @@ has 'display_name_language' => (
  				'tiv' => 'Tiv',
  				'tk' => 'Turkmen',
  				'tkl' => 'Tokelau',
+ 				'tkr' => 'Tsakhur',
  				'tl' => 'Tagalog',
  				'tlh' => 'Klingon',
  				'tli' => 'Tlingit',
+ 				'tly' => 'Talysh',
  				'tmh' => 'Tamashek',
  				'tn' => 'Tswana',
  				'to' => 'Tongan',
  				'tog' => 'Nyasa Tonga',
  				'tpi' => 'Tok Pisin',
  				'tr' => 'Turkish',
+ 				'tru' => 'Turoyo',
  				'trv' => 'Taroko',
  				'ts' => 'Tsonga',
+ 				'tsd' => 'Tsakonian',
  				'tsi' => 'Tsimshian',
  				'tt' => 'Tatar',
+ 				'ttt' => 'Muslim Tat',
  				'tum' => 'Tumbuka',
  				'tvl' => 'Tuvalu',
  				'tw' => 'Twi',
@@ -1434,9 +1477,14 @@ has 'display_name_language' => (
  				'uz' => 'Uzbek',
  				'vai' => 'Vai',
  				've' => 'Venda',
+ 				'vec' => 'Venetian',
+ 				'vep' => 'Veps',
  				'vi' => 'Vietnamese',
+ 				'vls' => 'West Flemish',
+ 				'vmf' => 'Main-Franconian',
  				'vo' => 'Volapük',
  				'vot' => 'Votic',
+ 				'vro' => 'Võro',
  				'vun' => 'Vunjo',
  				'wa' => 'Walloon',
  				'wae' => 'Walser',
@@ -1444,8 +1492,10 @@ has 'display_name_language' => (
  				'war' => 'Waray',
  				'was' => 'Washo',
  				'wo' => 'Wolof',
+ 				'wuu' => 'Wu Chinese',
  				'xal' => 'Kalmyk',
  				'xh' => 'Xhosa',
+ 				'xmf' => 'Mingrelian',
  				'xog' => 'Soga',
  				'yao' => 'Yao',
  				'yap' => 'Yapese',
@@ -1453,10 +1503,12 @@ has 'display_name_language' => (
  				'ybb' => 'Yemba',
  				'yi' => 'Yiddish',
  				'yo' => 'Yoruba',
+ 				'yrl' => 'Nheengatu',
  				'yue' => 'Cantonese',
  				'za' => 'Zhuang',
  				'zap' => 'Zapotec',
  				'zbl' => 'Blissymbols',
+ 				'zea' => 'Zeelandic',
  				'zen' => 'Zenaga',
  				'zgh' => 'Standard Moroccan Tamazight',
  				'zh' => 'Chinese',
@@ -1484,6 +1536,7 @@ has 'display_name_script' => (
 		sub {
 			my %scripts = (
 			'Afak' => 'Afaka',
+ 			'Aghb' => 'Caucasian Albanian',
  			'Arab' => 'Arabic',
  			'Arab@alt=variant' => 'Perso-Arabic',
  			'Armi' => 'Imperial Aramaic',
@@ -1502,6 +1555,7 @@ has 'display_name_script' => (
  			'Buhd' => 'Buhid',
  			'Cakm' => 'Chakma',
  			'Cans' => 'Unified Canadian Aboriginal Syllabics',
+ 			'Cans@alt=short' => 'UCAS',
  			'Cari' => 'Carian',
  			'Cham' => 'Cham',
  			'Cher' => 'Cherokee',
@@ -1516,6 +1570,7 @@ has 'display_name_script' => (
  			'Egyd' => 'Egyptian demotic',
  			'Egyh' => 'Egyptian hieratic',
  			'Egyp' => 'Egyptian hieroglyphs',
+ 			'Elba' => 'Elbasan',
  			'Ethi' => 'Ethiopic',
  			'Geok' => 'Georgian Khutsuri',
  			'Geor' => 'Georgian',
@@ -1565,6 +1620,7 @@ has 'display_name_script' => (
  			'Loma' => 'Loma',
  			'Lyci' => 'Lycian',
  			'Lydi' => 'Lydian',
+ 			'Mahj' => 'Mahajani',
  			'Mand' => 'Mandaean',
  			'Mani' => 'Manichaean',
  			'Maya' => 'Mayan hieroglyphs',
@@ -1572,6 +1628,7 @@ has 'display_name_script' => (
  			'Merc' => 'Meroitic Cursive',
  			'Mero' => 'Meroitic',
  			'Mlym' => 'Malayalam',
+ 			'Modi' => 'Modi',
  			'Mong' => 'Mongolian',
  			'Moon' => 'Moon',
  			'Mroo' => 'Mro',
@@ -1588,6 +1645,7 @@ has 'display_name_script' => (
  			'Orya' => 'Oriya',
  			'Osma' => 'Osmanya',
  			'Palm' => 'Palmyrene',
+ 			'Pauc' => 'Pau Cin Hau',
  			'Perm' => 'Old Permic',
  			'Phag' => 'Phags-pa',
  			'Phli' => 'Inscriptional Pahlavi',
@@ -1606,6 +1664,7 @@ has 'display_name_script' => (
  			'Sgnw' => 'SignWriting',
  			'Shaw' => 'Shavian',
  			'Shrd' => 'Sharada',
+ 			'Sidd' => 'Siddham',
  			'Sind' => 'Khudawadi',
  			'Sinh' => 'Sinhala',
  			'Sora' => 'Sora Sompeng',
@@ -1637,6 +1696,7 @@ has 'display_name_script' => (
  			'Wole' => 'Woleai',
  			'Xpeo' => 'Old Persian',
  			'Xsux' => 'Sumero-Akkadian Cuneiform',
+ 			'Xsux@alt=short' => 'S-A Cuneiform',
  			'Yiii' => 'Yi',
  			'Zinh' => 'Inherited',
  			'Zmth' => 'Mathematical Notation',
@@ -1676,7 +1736,7 @@ has 'display_name_territory' => (
  			'029' => 'Caribbean',
  			'030' => 'Eastern Asia',
  			'034' => 'Southern Asia',
- 			'035' => 'South-Eastern Asia',
+ 			'035' => 'Southeast Asia',
  			'039' => 'Southern Europe',
  			'053' => 'Australasia',
  			'054' => 'Melanesia',
@@ -1694,7 +1754,7 @@ has 'display_name_territory' => (
  			'AD' => 'Andorra',
  			'AE' => 'United Arab Emirates',
  			'AF' => 'Afghanistan',
- 			'AG' => 'Antigua and Barbuda',
+ 			'AG' => 'Antigua & Barbuda',
  			'AI' => 'Anguilla',
  			'AL' => 'Albania',
  			'AM' => 'Armenia',
@@ -1708,7 +1768,8 @@ has 'display_name_territory' => (
  			'AW' => 'Aruba',
  			'AX' => 'Åland Islands',
  			'AZ' => 'Azerbaijan',
- 			'BA' => 'Bosnia and Herzegovina',
+ 			'BA' => 'Bosnia & Herzegovina',
+ 			'BA@alt=short' => 'Bosnia',
  			'BB' => 'Barbados',
  			'BD' => 'Bangladesh',
  			'BE' => 'Belgium',
@@ -1717,7 +1778,7 @@ has 'display_name_territory' => (
  			'BH' => 'Bahrain',
  			'BI' => 'Burundi',
  			'BJ' => 'Benin',
- 			'BL' => 'Saint Barthélemy',
+ 			'BL' => 'St. Barthélemy',
  			'BM' => 'Bermuda',
  			'BN' => 'Brunei',
  			'BO' => 'Bolivia',
@@ -1759,7 +1820,7 @@ has 'display_name_territory' => (
  			'DM' => 'Dominica',
  			'DO' => 'Dominican Republic',
  			'DZ' => 'Algeria',
- 			'EA' => 'Ceuta and Melilla',
+ 			'EA' => 'Ceuta & Melilla',
  			'EC' => 'Ecuador',
  			'EE' => 'Estonia',
  			'EG' => 'Egypt',
@@ -1822,7 +1883,7 @@ has 'display_name_territory' => (
  			'KH' => 'Cambodia',
  			'KI' => 'Kiribati',
  			'KM' => 'Comoros',
- 			'KN' => 'Saint Kitts and Nevis',
+ 			'KN' => 'St. Kitts & Nevis',
  			'KP' => 'North Korea',
  			'KR' => 'South Korea',
  			'KW' => 'Kuwait',
@@ -1830,7 +1891,7 @@ has 'display_name_territory' => (
  			'KZ' => 'Kazakhstan',
  			'LA' => 'Laos',
  			'LB' => 'Lebanon',
- 			'LC' => 'Saint Lucia',
+ 			'LC' => 'St. Lucia',
  			'LI' => 'Liechtenstein',
  			'LK' => 'Sri Lanka',
  			'LR' => 'Liberia',
@@ -1843,13 +1904,14 @@ has 'display_name_territory' => (
  			'MC' => 'Monaco',
  			'MD' => 'Moldova',
  			'ME' => 'Montenegro',
- 			'MF' => 'Saint Martin',
+ 			'MF' => 'St. Martin',
  			'MG' => 'Madagascar',
  			'MH' => 'Marshall Islands',
  			'MK' => 'Macedonia',
  			'MK@alt=variant' => 'Macedonia (FYROM)',
  			'ML' => 'Mali',
  			'MM' => 'Myanmar (Burma)',
+ 			'MM@alt=short' => 'Myanmar',
  			'MN' => 'Mongolia',
  			'MO' => 'Macau SAR China',
  			'MO@alt=short' => 'Macau',
@@ -1884,7 +1946,7 @@ has 'display_name_territory' => (
  			'PH' => 'Philippines',
  			'PK' => 'Pakistan',
  			'PL' => 'Poland',
- 			'PM' => 'Saint Pierre and Miquelon',
+ 			'PM' => 'St. Pierre & Miquelon',
  			'PN' => 'Pitcairn Islands',
  			'PR' => 'Puerto Rico',
  			'PS' => 'Palestinian Territories',
@@ -1905,9 +1967,9 @@ has 'display_name_territory' => (
  			'SD' => 'Sudan',
  			'SE' => 'Sweden',
  			'SG' => 'Singapore',
- 			'SH' => 'Saint Helena',
+ 			'SH' => 'St. Helena',
  			'SI' => 'Slovenia',
- 			'SJ' => 'Svalbard and Jan Mayen',
+ 			'SJ' => 'Svalbard & Jan Mayen',
  			'SK' => 'Slovakia',
  			'SL' => 'Sierra Leone',
  			'SM' => 'San Marino',
@@ -1915,13 +1977,13 @@ has 'display_name_territory' => (
  			'SO' => 'Somalia',
  			'SR' => 'Suriname',
  			'SS' => 'South Sudan',
- 			'ST' => 'São Tomé and Príncipe',
+ 			'ST' => 'São Tomé & Príncipe',
  			'SV' => 'El Salvador',
  			'SX' => 'Sint Maarten',
  			'SY' => 'Syria',
  			'SZ' => 'Swaziland',
  			'TA' => 'Tristan da Cunha',
- 			'TC' => 'Turks and Caicos Islands',
+ 			'TC' => 'Turks & Caicos Islands',
  			'TD' => 'Chad',
  			'TF' => 'French Southern Territories',
  			'TG' => 'Togo',
@@ -1934,7 +1996,7 @@ has 'display_name_territory' => (
  			'TN' => 'Tunisia',
  			'TO' => 'Tonga',
  			'TR' => 'Turkey',
- 			'TT' => 'Trinidad and Tobago',
+ 			'TT' => 'Trinidad & Tobago',
  			'TV' => 'Tuvalu',
  			'TW' => 'Taiwan',
  			'TZ' => 'Tanzania',
@@ -1952,7 +2014,7 @@ has 'display_name_territory' => (
  			'VI' => 'U.S. Virgin Islands',
  			'VN' => 'Vietnam',
  			'VU' => 'Vanuatu',
- 			'WF' => 'Wallis and Futuna',
+ 			'WF' => 'Wallis & Futuna',
  			'WS' => 'Samoa',
  			'XK' => 'Kosovo',
  			'YE' => 'Yemen',
@@ -1984,7 +2046,7 @@ has 'display_name_variant' => (
  			'AREVMDA' => 'Western Armenian',
  			'BAKU1926' => 'Unified Turkic Latin Alphabet',
  			'BALANKA' => 'Balanka dialect of Anii',
- 			'BARLA' => '>Barlavento dialect group of Kabuverdianu',
+ 			'BARLA' => 'Barlavento dialect group of Kabuverdianu',
  			'BISKE' => 'San Giorgio/Bila dialect',
  			'BOHORIC' => 'Bohorič alphabet',
  			'BOONT' => 'Boontling',
@@ -2140,7 +2202,7 @@ has 'display_name_type' => (
  			},
  			'numbers' => {
  				'arab' => q{Arabic-Indic Digits},
- 				'arabext' => q{Extended Arabic-Indic Digits},
+ 				'arabext' => q{X Arabic-Indic Digits},
  				'armn' => q{Armenian Numerals},
  				'armnlow' => q{Armenian Lowercase Numerals},
  				'bali' => q{Balinese Digits},
@@ -2182,7 +2244,7 @@ has 'display_name_type' => (
  				'mymr' => q{Myanmar Digits},
  				'mymrshan' => q{Myanmar Shan Digits},
  				'native' => q{Native Digits},
- 				'nkoo' => q{N'Ko Digits},
+ 				'nkoo' => q{N’Ko Digits},
  				'olck' => q{Ol Chiki Digits},
  				'orya' => q{Oriya Digits},
  				'osma' => q{Osmanya Digits},
@@ -2316,556 +2378,1817 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'acre' => {
+						'' => q(acres),
 						'one' => q({0} acre),
 						'other' => q({0} acres),
 					},
+					'acre-foot' => {
+						'' => q(acre-feet),
+						'one' => q({0} acre-foot),
+						'other' => q({0} acre-feet),
+					},
+					'ampere' => {
+						'' => q(amperes),
+						'one' => q({0} ampere),
+						'other' => q({0} amperes),
+					},
 					'arc-minute' => {
+						'' => q(arcminutes),
 						'one' => q({0} arcminute),
 						'other' => q({0} arcminutes),
 					},
 					'arc-second' => {
+						'' => q(arcseconds),
 						'one' => q({0} arcsecond),
 						'other' => q({0} arcseconds),
 					},
+					'astronomical-unit' => {
+						'' => q(astronomical units),
+						'one' => q({0} astronomical unit),
+						'other' => q({0} astronomical units),
+					},
+					'bit' => {
+						'' => q(bits),
+						'one' => q({0} bit),
+						'other' => q({0} bits),
+					},
+					'bushel' => {
+						'' => q(bushels),
+						'one' => q({0} bushel),
+						'other' => q({0} bushels),
+					},
+					'byte' => {
+						'' => q(bytes),
+						'one' => q({0} byte),
+						'other' => q({0} bytes),
+					},
+					'calorie' => {
+						'' => q(calories),
+						'one' => q({0} calorie),
+						'other' => q({0} calories),
+					},
+					'carat' => {
+						'' => q(carats),
+						'one' => q({0} carat),
+						'other' => q({0} carats),
+					},
 					'celsius' => {
+						'' => q(degrees Celsius),
 						'one' => q({0} degree Celsius),
 						'other' => q({0} degrees Celsius),
 					},
+					'centiliter' => {
+						'' => q(centiliters),
+						'one' => q({0} centiliter),
+						'other' => q({0} centiliters),
+					},
 					'centimeter' => {
+						'' => q(centimeters),
 						'one' => q({0} centimeter),
 						'other' => q({0} centimeters),
 					},
+					'cubic-centimeter' => {
+						'' => q(cubic centimeters),
+						'one' => q({0} cubic centimeter),
+						'other' => q({0} cubic centimeters),
+					},
+					'cubic-foot' => {
+						'' => q(cubic feet),
+						'one' => q({0} cubic foot),
+						'other' => q({0} cubic feet),
+					},
+					'cubic-inch' => {
+						'' => q(cubic inches),
+						'one' => q({0} cubic inch),
+						'other' => q({0} cubic inches),
+					},
 					'cubic-kilometer' => {
+						'' => q(cubic kilometers),
 						'one' => q({0} cubic kilometer),
 						'other' => q({0} cubic kilometers),
 					},
+					'cubic-meter' => {
+						'' => q(cubic meters),
+						'one' => q({0} cubic meter),
+						'other' => q({0} cubic meters),
+					},
 					'cubic-mile' => {
+						'' => q(cubic miles),
 						'one' => q({0} cubic mile),
 						'other' => q({0} cubic miles),
 					},
+					'cubic-yard' => {
+						'' => q(cubic yards),
+						'one' => q({0} cubic yard),
+						'other' => q({0} cubic yards),
+					},
+					'cup' => {
+						'' => q(cups),
+						'one' => q({0} cup),
+						'other' => q({0} cups),
+					},
 					'day' => {
+						'' => q(days),
 						'one' => q({0} day),
 						'other' => q({0} days),
 					},
+					'deciliter' => {
+						'' => q(deciliters),
+						'one' => q({0} deciliter),
+						'other' => q({0} deciliters),
+					},
+					'decimeter' => {
+						'' => q(decimeters),
+						'one' => q({0} decimeter),
+						'other' => q({0} decimeters),
+					},
 					'degree' => {
+						'' => q(degrees),
 						'one' => q({0} degree),
 						'other' => q({0} degrees),
 					},
 					'fahrenheit' => {
+						'' => q(degrees Fahrenheit),
 						'one' => q({0} degree Fahrenheit),
 						'other' => q({0} degrees Fahrenheit),
 					},
+					'fathom' => {
+						'' => q(fathoms),
+						'one' => q({0} fathom),
+						'other' => q({0} fathoms),
+					},
+					'fluid-ounce' => {
+						'' => q(fluid ounces),
+						'one' => q({0} fluid ounce),
+						'other' => q({0} fluid ounces),
+					},
+					'foodcalorie' => {
+						'' => q(Calories),
+						'one' => q({0} Calorie),
+						'other' => q({0} Calories),
+					},
 					'foot' => {
+						'' => q(feet),
 						'one' => q({0} foot),
 						'other' => q({0} feet),
 					},
+					'furlong' => {
+						'' => q(furlongs),
+						'one' => q({0} furlong),
+						'other' => q({0} furlongs),
+					},
 					'g-force' => {
+						'' => q(g-force),
 						'one' => q({0} g-force),
 						'other' => q({0} g-force),
 					},
+					'gallon' => {
+						'' => q(gallons),
+						'one' => q({0} gallon),
+						'other' => q({0} gallons),
+					},
+					'gigabit' => {
+						'' => q(gigabits),
+						'one' => q({0} gigabit),
+						'other' => q({0} gigabits),
+					},
+					'gigabyte' => {
+						'' => q(gigabytes),
+						'one' => q({0} gigabyte),
+						'other' => q({0} gigabytes),
+					},
+					'gigahertz' => {
+						'' => q(gigahertz),
+						'one' => q({0} gigahertz),
+						'other' => q({0} gigahertz),
+					},
+					'gigawatt' => {
+						'' => q(gigawatts),
+						'one' => q({0} gigawatt),
+						'other' => q({0} gigawatts),
+					},
 					'gram' => {
+						'' => q(grams),
 						'one' => q({0} gram),
 						'other' => q({0} grams),
 					},
 					'hectare' => {
+						'' => q(hectares),
 						'one' => q({0} hectare),
 						'other' => q({0} hectares),
 					},
+					'hectoliter' => {
+						'' => q(hectoliters),
+						'one' => q({0} hectoliter),
+						'other' => q({0} hectoliters),
+					},
 					'hectopascal' => {
+						'' => q(hectopascals),
 						'one' => q({0} hectopascal),
 						'other' => q({0} hectopascals),
 					},
+					'hertz' => {
+						'' => q(hertz),
+						'one' => q({0} hertz),
+						'other' => q({0} hertz),
+					},
 					'horsepower' => {
+						'' => q(horsepower),
 						'one' => q({0} horsepower),
 						'other' => q({0} horsepower),
 					},
 					'hour' => {
+						'' => q({0} per hour),
 						'one' => q({0} hour),
 						'other' => q({0} hours),
 					},
 					'inch' => {
+						'' => q(inches),
 						'one' => q({0} inch),
 						'other' => q({0} inches),
 					},
 					'inch-hg' => {
+						'' => q(inches of mercury),
 						'one' => q({0} inch of mercury),
 						'other' => q({0} inches of mercury),
 					},
+					'joule' => {
+						'' => q(joules),
+						'one' => q({0} joule),
+						'other' => q({0} joules),
+					},
+					'karat' => {
+						'' => q(karats),
+						'one' => q({0} karat),
+						'other' => q({0} karats),
+					},
+					'kelvin' => {
+						'' => q(kelvins),
+						'one' => q({0} kelvin),
+						'other' => q({0} kelvins),
+					},
+					'kilobit' => {
+						'' => q(kilobits),
+						'one' => q({0} kilobit),
+						'other' => q({0} kilobits),
+					},
+					'kilobyte' => {
+						'' => q(kilobytes),
+						'one' => q({0} kilobyte),
+						'other' => q({0} kilobytes),
+					},
+					'kilocalorie' => {
+						'' => q(kilocalories),
+						'one' => q({0} kilocalorie),
+						'other' => q({0} kilocalories),
+					},
 					'kilogram' => {
+						'' => q(kilograms),
 						'one' => q({0} kilogram),
 						'other' => q({0} kilograms),
 					},
+					'kilohertz' => {
+						'' => q(kilohertz),
+						'one' => q({0} kilohertz),
+						'other' => q({0} kilohertz),
+					},
+					'kilojoule' => {
+						'' => q(kilojoules),
+						'one' => q({0} kilojoule),
+						'other' => q({0} kilojoules),
+					},
 					'kilometer' => {
+						'' => q(kilometers),
 						'one' => q({0} kilometer),
 						'other' => q({0} kilometers),
 					},
 					'kilometer-per-hour' => {
+						'' => q(kilometers per hour),
 						'one' => q({0} kilometer per hour),
 						'other' => q({0} kilometers per hour),
 					},
 					'kilowatt' => {
+						'' => q(kilowatts),
 						'one' => q({0} kilowatt),
 						'other' => q({0} kilowatts),
 					},
+					'kilowatt-hour' => {
+						'' => q(kilowatt-hours),
+						'one' => q({0} kilowatt hour),
+						'other' => q({0} kilowatt-hours),
+					},
 					'light-year' => {
+						'' => q(light years),
 						'one' => q({0} light year),
 						'other' => q({0} light years),
 					},
 					'liter' => {
+						'' => q(liters),
 						'one' => q({0} liter),
 						'other' => q({0} liters),
 					},
+					'liter-per-kilometer' => {
+						'' => q(liters per kilometer),
+						'one' => q({0} liter per kilometer),
+						'other' => q({0} liters per kilometer),
+					},
+					'lux' => {
+						'' => q(lux),
+						'one' => q({0} lux),
+						'other' => q({0} lux),
+					},
+					'megabit' => {
+						'' => q(megabits),
+						'one' => q({0} megabit),
+						'other' => q({0} megabits),
+					},
+					'megabyte' => {
+						'' => q(megabytes),
+						'one' => q({0} megabyte),
+						'other' => q({0} megabytes),
+					},
+					'megahertz' => {
+						'' => q(megahertz),
+						'one' => q({0} megahertz),
+						'other' => q({0} megahertz),
+					},
+					'megaliter' => {
+						'' => q(megaliters),
+						'one' => q({0} megaliter),
+						'other' => q({0} megaliters),
+					},
+					'megawatt' => {
+						'' => q(megawatts),
+						'one' => q({0} megawatt),
+						'other' => q({0} megawatts),
+					},
 					'meter' => {
+						'' => q(meters),
 						'one' => q({0} meter),
 						'other' => q({0} meters),
 					},
 					'meter-per-second' => {
+						'' => q(meters per second),
 						'one' => q({0} meter per second),
 						'other' => q({0} meters per second),
 					},
+					'meter-per-second-squared' => {
+						'' => q(meters per second squared),
+						'one' => q({0} meter per second squared),
+						'other' => q({0} meters per second squared),
+					},
+					'metric-ton' => {
+						'' => q(metric tons),
+						'one' => q({0} metric ton),
+						'other' => q({0} metric tons),
+					},
+					'microgram' => {
+						'' => q(micrograms),
+						'one' => q({0} microgram),
+						'other' => q({0} micrograms),
+					},
+					'micrometer' => {
+						'' => q(micrometers),
+						'one' => q({0} micrometer),
+						'other' => q({0} micrometers),
+					},
+					'microsecond' => {
+						'' => q(microseconds),
+						'one' => q({0} microsecond),
+						'other' => q({0} microseconds),
+					},
 					'mile' => {
+						'' => q(miles),
 						'one' => q({0} mile),
 						'other' => q({0} miles),
 					},
+					'mile-per-gallon' => {
+						'' => q(miles per gallon),
+						'one' => q({0} mile per gallon),
+						'other' => q({0} miles per gallon),
+					},
 					'mile-per-hour' => {
+						'' => q(miles per hour),
 						'one' => q({0} mile per hour),
 						'other' => q({0} miles per hour),
 					},
+					'milliampere' => {
+						'' => q(milliamperes),
+						'one' => q({0} milliampere),
+						'other' => q({0} milliamperes),
+					},
 					'millibar' => {
+						'' => q(millibars),
 						'one' => q({0} millibar),
 						'other' => q({0} millibars),
 					},
+					'milligram' => {
+						'' => q(milligrams),
+						'one' => q({0} milligram),
+						'other' => q({0} milligrams),
+					},
+					'milliliter' => {
+						'' => q(milliliters),
+						'one' => q({0} milliliter),
+						'other' => q({0} milliliters),
+					},
 					'millimeter' => {
+						'' => q(millimeters),
 						'one' => q({0} millimeter),
 						'other' => q({0} millimeters),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(millimeters of mercury),
+						'one' => q({0} millimeter of mercury),
+						'other' => q({0} millimeters of mercury),
+					},
 					'millisecond' => {
+						'' => q(milliseconds),
 						'one' => q({0} millisecond),
 						'other' => q({0} milliseconds),
 					},
+					'milliwatt' => {
+						'' => q(milliwatts),
+						'one' => q({0} milliwatt),
+						'other' => q({0} milliwatts),
+					},
 					'minute' => {
+						'' => q(minutes),
 						'one' => q({0} minute),
 						'other' => q({0} minutes),
 					},
 					'month' => {
+						'' => q(months),
 						'one' => q({0} month),
 						'other' => q({0} months),
 					},
+					'nanometer' => {
+						'' => q(nanometers),
+						'one' => q({0} nanometer),
+						'other' => q({0} nanometers),
+					},
+					'nanosecond' => {
+						'' => q(nanoseconds),
+						'one' => q({0} nanosecond),
+						'other' => q({0} nanoseconds),
+					},
+					'nautical-mile' => {
+						'' => q(nautical miles),
+						'one' => q({0} nautical mile),
+						'other' => q({0} nautical miles),
+					},
+					'ohm' => {
+						'' => q(ohms),
+						'one' => q({0} ohm),
+						'other' => q({0} ohms),
+					},
 					'ounce' => {
+						'' => q(ounces),
 						'one' => q({0} ounce),
 						'other' => q({0} ounces),
+					},
+					'ounce-troy' => {
+						'' => q(troy ounces),
+						'one' => q({0} troy ounce),
+						'other' => q({0} troy ounces),
+					},
+					'parsec' => {
+						'' => q(parsecs),
+						'one' => q({0} parsec),
+						'other' => q({0} parsecs),
 					},
 					'per' => {
 						'' => q({0} per {1}),
 					},
 					'picometer' => {
+						'' => q(picometers),
 						'one' => q({0} picometer),
 						'other' => q({0} picometers),
 					},
+					'pint' => {
+						'' => q(pints),
+						'one' => q({0} pint),
+						'other' => q({0} pints),
+					},
 					'pound' => {
+						'' => q(pounds),
 						'one' => q({0} pound),
 						'other' => q({0} pounds),
 					},
+					'pound-per-square-inch' => {
+						'' => q(pounds per square inch),
+						'one' => q({0} pound per square inch),
+						'other' => q({0} pounds per square inch),
+					},
+					'quart' => {
+						'' => q(quarts),
+						'one' => q({0} quart),
+						'other' => q({0} quarts),
+					},
+					'radian' => {
+						'' => q(radians),
+						'one' => q({0} radian),
+						'other' => q({0} radians),
+					},
 					'second' => {
+						'' => q({0} per second),
 						'one' => q({0} second),
 						'other' => q({0} seconds),
 					},
+					'square-centimeter' => {
+						'' => q(square centimeters),
+						'one' => q({0} square centimeter),
+						'other' => q({0} square centimeters),
+					},
 					'square-foot' => {
+						'' => q(square feet),
 						'one' => q({0} square foot),
 						'other' => q({0} square feet),
 					},
+					'square-inch' => {
+						'' => q(square inches),
+						'one' => q({0} square inch),
+						'other' => q({0} square inches),
+					},
 					'square-kilometer' => {
+						'' => q(square kilometers),
 						'one' => q({0} square kilometer),
 						'other' => q({0} square kilometers),
 					},
 					'square-meter' => {
+						'' => q(square meters),
 						'one' => q({0} square meter),
 						'other' => q({0} square meters),
 					},
 					'square-mile' => {
+						'' => q(square miles),
 						'one' => q({0} square mile),
 						'other' => q({0} square miles),
 					},
+					'square-yard' => {
+						'' => q(square yards),
+						'one' => q({0} square yard),
+						'other' => q({0} square yards),
+					},
+					'stone' => {
+						'' => q(stones),
+						'one' => q({0} stone),
+						'other' => q({0} stones),
+					},
+					'tablespoon' => {
+						'' => q(tablespoons),
+						'one' => q({0} tablespoon),
+						'other' => q({0} tablespoons),
+					},
+					'teaspoon' => {
+						'' => q(teaspoons),
+						'one' => q({0} teaspoon),
+						'other' => q({0} teaspoons),
+					},
+					'terabit' => {
+						'' => q(terabits),
+						'one' => q({0} terabit),
+						'other' => q({0} terabits),
+					},
+					'terabyte' => {
+						'' => q(terabytes),
+						'one' => q({0} terabyte),
+						'other' => q({0} terabytes),
+					},
+					'ton' => {
+						'' => q(tons),
+						'one' => q({0} ton),
+						'other' => q({0} tons),
+					},
+					'volt' => {
+						'' => q(volts),
+						'one' => q({0} volt),
+						'other' => q({0} volts),
+					},
 					'watt' => {
+						'' => q(watts),
 						'one' => q({0} watt),
 						'other' => q({0} watts),
 					},
 					'week' => {
+						'' => q(weeks),
 						'one' => q({0} week),
 						'other' => q({0} weeks),
 					},
 					'yard' => {
+						'' => q(yards),
 						'one' => q({0} yard),
 						'other' => q({0} yards),
 					},
 					'year' => {
+						'' => q(years),
 						'one' => q({0} year),
 						'other' => q({0} years),
 					},
 				},
 				'narrow' => {
 					'acre' => {
+						'' => q(acre),
 						'one' => q({0}ac),
 						'other' => q({0}ac),
 					},
+					'acre-foot' => {
+						'' => q(acre ft),
+						'one' => q({0}ac ft),
+						'other' => q({0}ac ft),
+					},
+					'ampere' => {
+						'' => q(amp),
+						'one' => q({0}A),
+						'other' => q({0}A),
+					},
 					'arc-minute' => {
+						'' => q(arcmin),
 						'one' => q({0}′),
 						'other' => q({0}′),
 					},
 					'arc-second' => {
+						'' => q(arcsec),
 						'one' => q({0}″),
 						'other' => q({0}″),
 					},
+					'astronomical-unit' => {
+						'' => q(au),
+						'one' => q({0}au),
+						'other' => q({0}au),
+					},
+					'bit' => {
+						'' => q(bit),
+						'one' => q({0}bit),
+						'other' => q({0}bit),
+					},
+					'bushel' => {
+						'' => q(bushel),
+						'one' => q({0}bu),
+						'other' => q({0}bu),
+					},
+					'byte' => {
+						'' => q(byte),
+						'one' => q({0}byte),
+						'other' => q({0}byte),
+					},
+					'calorie' => {
+						'' => q(cal),
+						'one' => q({0}cal),
+						'other' => q({0}cal),
+					},
+					'carat' => {
+						'' => q(carat),
+						'one' => q({0}CD),
+						'other' => q({0}CD),
+					},
 					'celsius' => {
+						'' => q(°C),
 						'one' => q({0}°C),
 						'other' => q({0}°C),
 					},
+					'centiliter' => {
+						'' => q(cL),
+						'one' => q({0}cL),
+						'other' => q({0}cL),
+					},
 					'centimeter' => {
+						'' => q(cm),
 						'one' => q({0}cm),
 						'other' => q({0}cm),
 					},
+					'cubic-centimeter' => {
+						'' => q(cm³),
+						'one' => q({0}cm³),
+						'other' => q({0}cm³),
+					},
+					'cubic-foot' => {
+						'' => q(ft³),
+						'one' => q({0}ft³),
+						'other' => q({0}ft³),
+					},
+					'cubic-inch' => {
+						'' => q(in³),
+						'one' => q({0}in³),
+						'other' => q({0}in³),
+					},
 					'cubic-kilometer' => {
+						'' => q(km³),
 						'one' => q({0}km³),
 						'other' => q({0}km³),
 					},
+					'cubic-meter' => {
+						'' => q(m³),
+						'one' => q({0}m³),
+						'other' => q({0}m³),
+					},
 					'cubic-mile' => {
+						'' => q(mi³),
 						'one' => q({0}mi³),
 						'other' => q({0}mi³),
 					},
+					'cubic-yard' => {
+						'' => q(yd³),
+						'one' => q({0}yd³),
+						'other' => q({0}yd³),
+					},
+					'cup' => {
+						'' => q(cup),
+						'one' => q({0}c),
+						'other' => q({0}c),
+					},
 					'day' => {
+						'' => q(day),
 						'one' => q({0}d),
 						'other' => q({0}d),
 					},
+					'deciliter' => {
+						'' => q(dL),
+						'one' => q({0}dL),
+						'other' => q({0}dL),
+					},
+					'decimeter' => {
+						'' => q(dm),
+						'one' => q({0}dm),
+						'other' => q({0}dm),
+					},
 					'degree' => {
+						'' => q(deg),
 						'one' => q({0}°),
 						'other' => q({0}°),
 					},
 					'fahrenheit' => {
+						'' => q(°F),
 						'one' => q({0}°),
 						'other' => q({0}°),
 					},
+					'fathom' => {
+						'' => q(fathom),
+						'one' => q({0}fm),
+						'other' => q({0}fm),
+					},
+					'fluid-ounce' => {
+						'' => q(fl oz),
+						'one' => q({0}fl oz),
+						'other' => q({0}fl oz),
+					},
+					'foodcalorie' => {
+						'' => q(Cal),
+						'one' => q({0}Cal),
+						'other' => q({0}Cal),
+					},
 					'foot' => {
+						'' => q(ft),
 						'one' => q({0}′),
 						'other' => q({0}′),
 					},
+					'furlong' => {
+						'' => q(furlong),
+						'one' => q({0}fur),
+						'other' => q({0}fur),
+					},
 					'g-force' => {
+						'' => q(g-force),
 						'one' => q({0}G),
 						'other' => q({0}Gs),
 					},
+					'gallon' => {
+						'' => q(gal),
+						'one' => q({0}gal),
+						'other' => q({0}gal),
+					},
+					'gigabit' => {
+						'' => q(Gbit),
+						'one' => q({0}Gb),
+						'other' => q({0}Gb),
+					},
+					'gigabyte' => {
+						'' => q(GByte),
+						'one' => q({0}GB),
+						'other' => q({0}GB),
+					},
+					'gigahertz' => {
+						'' => q(GHz),
+						'one' => q({0}GHz),
+						'other' => q({0}GHz),
+					},
+					'gigawatt' => {
+						'' => q(GW),
+						'one' => q({0}GW),
+						'other' => q({0}GW),
+					},
 					'gram' => {
+						'' => q(gram),
 						'one' => q({0}g),
 						'other' => q({0}g),
 					},
 					'hectare' => {
+						'' => q(hectare),
 						'one' => q({0}ha),
 						'other' => q({0}ha),
 					},
+					'hectoliter' => {
+						'' => q(hL),
+						'one' => q({0}hL),
+						'other' => q({0}hL),
+					},
 					'hectopascal' => {
+						'' => q(hPa),
 						'one' => q({0}hPa),
 						'other' => q({0}hPa),
 					},
+					'hertz' => {
+						'' => q(Hz),
+						'one' => q({0}Hz),
+						'other' => q({0}Hz),
+					},
 					'horsepower' => {
+						'' => q(hp),
 						'one' => q({0}hp),
 						'other' => q({0}hp),
 					},
 					'hour' => {
+						'' => q({0}/h),
 						'one' => q({0}h),
 						'other' => q({0}h),
 					},
 					'inch' => {
+						'' => q(in),
 						'one' => q({0}″),
 						'other' => q({0}″),
 					},
 					'inch-hg' => {
-						'one' => q({0}" Hg),
-						'other' => q({0}" Hg),
+						'' => q(″ Hg),
+						'one' => q({0}″ Hg),
+						'other' => q({0}″ Hg),
+					},
+					'joule' => {
+						'' => q(joule),
+						'one' => q({0}J),
+						'other' => q({0}J),
+					},
+					'karat' => {
+						'' => q(karat),
+						'one' => q({0}kt),
+						'other' => q({0}kt),
+					},
+					'kelvin' => {
+						'' => q(K),
+						'one' => q({0}K),
+						'other' => q({0}K),
+					},
+					'kilobit' => {
+						'' => q(kbit),
+						'one' => q({0}kb),
+						'other' => q({0}kb),
+					},
+					'kilobyte' => {
+						'' => q(kByte),
+						'one' => q({0}kB),
+						'other' => q({0}kB),
+					},
+					'kilocalorie' => {
+						'' => q(kcal),
+						'one' => q({0}kcal),
+						'other' => q({0}kcal),
 					},
 					'kilogram' => {
+						'' => q(kg),
 						'one' => q({0}kg),
 						'other' => q({0}kg),
 					},
+					'kilohertz' => {
+						'' => q(kHz),
+						'one' => q({0}kHz),
+						'other' => q({0}kHz),
+					},
+					'kilojoule' => {
+						'' => q(kJ),
+						'one' => q({0}kJ),
+						'other' => q({0}kJ),
+					},
 					'kilometer' => {
+						'' => q(km),
 						'one' => q({0}km),
 						'other' => q({0}km),
 					},
 					'kilometer-per-hour' => {
+						'' => q(km/hr),
 						'one' => q({0}kph),
 						'other' => q({0}kph),
 					},
 					'kilowatt' => {
+						'' => q(kW),
 						'one' => q({0}kW),
 						'other' => q({0}kW),
 					},
+					'kilowatt-hour' => {
+						'' => q(kWh),
+						'one' => q({0}kWh),
+						'other' => q({0}kWh),
+					},
 					'light-year' => {
+						'' => q(ly),
 						'one' => q({0}ly),
 						'other' => q({0}ly),
 					},
 					'liter' => {
+						'' => q(liter),
 						'one' => q({0}l),
 						'other' => q({0}l),
 					},
+					'liter-per-kilometer' => {
+						'' => q(L/km),
+						'one' => q({0}L/km),
+						'other' => q({0}L/km),
+					},
+					'lux' => {
+						'' => q(lux),
+						'one' => q({0}lx),
+						'other' => q({0}lx),
+					},
+					'megabit' => {
+						'' => q(Mbit),
+						'one' => q({0}Mb),
+						'other' => q({0}Mb),
+					},
+					'megabyte' => {
+						'' => q(MByte),
+						'one' => q({0}MB),
+						'other' => q({0}MB),
+					},
+					'megahertz' => {
+						'' => q(MHz),
+						'one' => q({0}MHz),
+						'other' => q({0}MHz),
+					},
+					'megaliter' => {
+						'' => q(ML),
+						'one' => q({0}ML),
+						'other' => q({0}ML),
+					},
+					'megawatt' => {
+						'' => q(MW),
+						'one' => q({0}MW),
+						'other' => q({0}MW),
+					},
 					'meter' => {
+						'' => q(meter),
 						'one' => q({0}m),
 						'other' => q({0}m),
 					},
 					'meter-per-second' => {
+						'' => q(m/s),
 						'one' => q({0}m/s),
 						'other' => q({0}m/s),
 					},
+					'meter-per-second-squared' => {
+						'' => q(m/s²),
+						'one' => q({0}m/s²),
+						'other' => q({0}m/s²),
+					},
+					'metric-ton' => {
+						'' => q(t),
+						'one' => q({0}t),
+						'other' => q({0}t),
+					},
+					'microgram' => {
+						'' => q(µg),
+						'one' => q({0}µg),
+						'other' => q({0}µg),
+					},
+					'micrometer' => {
+						'' => q(µm),
+						'one' => q({0}µm),
+						'other' => q({0}µm),
+					},
+					'microsecond' => {
+						'' => q(μsec),
+						'one' => q({0}μs),
+						'other' => q({0}μs),
+					},
 					'mile' => {
+						'' => q(mi),
 						'one' => q({0}mi),
 						'other' => q({0}mi),
 					},
+					'mile-per-gallon' => {
+						'' => q(mpg),
+						'one' => q({0}mpg),
+						'other' => q({0}mpg),
+					},
 					'mile-per-hour' => {
+						'' => q(mi/hr),
 						'one' => q({0}mph),
 						'other' => q({0}mph),
 					},
+					'milliampere' => {
+						'' => q(mA),
+						'one' => q({0}mA),
+						'other' => q({0}mA),
+					},
 					'millibar' => {
+						'' => q(mbar),
 						'one' => q({0}mb),
 						'other' => q({0}mb),
 					},
+					'milligram' => {
+						'' => q(mg),
+						'one' => q({0}mg),
+						'other' => q({0}mg),
+					},
+					'milliliter' => {
+						'' => q(mL),
+						'one' => q({0}mL),
+						'other' => q({0}mL),
+					},
 					'millimeter' => {
+						'' => q(mm),
 						'one' => q({0}mm),
 						'other' => q({0}mm),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(mm Hg),
+						'one' => q({0}mm Hg),
+						'other' => q({0}mm Hg),
+					},
 					'millisecond' => {
+						'' => q(msec),
 						'one' => q({0}ms),
 						'other' => q({0}ms),
 					},
+					'milliwatt' => {
+						'' => q(mW),
+						'one' => q({0}mW),
+						'other' => q({0}mW),
+					},
 					'minute' => {
+						'' => q(min),
 						'one' => q({0}m),
 						'other' => q({0}m),
 					},
 					'month' => {
+						'' => q(month),
 						'one' => q({0}m),
 						'other' => q({0}m),
 					},
+					'nanometer' => {
+						'' => q(nm),
+						'one' => q({0}nm),
+						'other' => q({0}nm),
+					},
+					'nanosecond' => {
+						'' => q(ns),
+						'one' => q({0}ns),
+						'other' => q({0}ns),
+					},
+					'nautical-mile' => {
+						'' => q(nmi),
+						'one' => q({0}nmi),
+						'other' => q({0}nmi),
+					},
+					'ohm' => {
+						'' => q(ohm),
+						'one' => q({0}Ω),
+						'other' => q({0}Ω),
+					},
 					'ounce' => {
+						'' => q(oz),
 						'one' => q({0}oz),
 						'other' => q({0}oz),
 					},
+					'ounce-troy' => {
+						'' => q(oz t),
+						'one' => q({0}oz t),
+						'other' => q({0}oz t),
+					},
+					'parsec' => {
+						'' => q(parsec),
+						'one' => q({0}pc),
+						'other' => q({0}pc),
+					},
 					'picometer' => {
+						'' => q(pm),
 						'one' => q({0}pm),
 						'other' => q({0}pm),
 					},
+					'pint' => {
+						'' => q(pt),
+						'one' => q({0}pt),
+						'other' => q({0}pt),
+					},
 					'pound' => {
+						'' => q(lb),
 						'one' => q({0}#),
 						'other' => q({0}#),
 					},
+					'pound-per-square-inch' => {
+						'' => q(psi),
+						'one' => q({0}psi),
+						'other' => q({0}psi),
+					},
+					'quart' => {
+						'' => q(qt),
+						'one' => q({0}qt),
+						'other' => q({0}qt),
+					},
+					'radian' => {
+						'' => q(rad),
+						'one' => q({0}rad),
+						'other' => q({0}rad),
+					},
 					'second' => {
+						'' => q({0}/s),
 						'one' => q({0}s),
 						'other' => q({0}s),
 					},
+					'square-centimeter' => {
+						'' => q(cm²),
+						'one' => q({0}cm²),
+						'other' => q({0}cm²),
+					},
 					'square-foot' => {
+						'' => q(ft²),
 						'one' => q({0}ft²),
 						'other' => q({0}ft²),
 					},
+					'square-inch' => {
+						'' => q(in²),
+						'one' => q({0}in²),
+						'other' => q({0}in²),
+					},
 					'square-mile' => {
+						'' => q(mi²),
 						'one' => q({0}mi²),
 						'other' => q({0}mi²),
 					},
+					'square-yard' => {
+						'' => q(yd²),
+						'one' => q({0}yd²),
+						'other' => q({0}yd²),
+					},
+					'stone' => {
+						'' => q(stone),
+						'one' => q({0}st),
+						'other' => q({0}st),
+					},
+					'tablespoon' => {
+						'' => q(tbsp),
+						'one' => q({0}tbsp),
+						'other' => q({0}tbsp),
+					},
+					'teaspoon' => {
+						'' => q(tsp),
+						'one' => q({0}tsp),
+						'other' => q({0}tsp),
+					},
+					'terabit' => {
+						'' => q(Tbit),
+						'one' => q({0}Tb),
+						'other' => q({0}Tb),
+					},
+					'terabyte' => {
+						'' => q(TByte),
+						'one' => q({0}TB),
+						'other' => q({0}TB),
+					},
+					'ton' => {
+						'' => q(ton),
+						'one' => q({0}tn),
+						'other' => q({0}tn),
+					},
+					'volt' => {
+						'' => q(volt),
+						'one' => q({0}V),
+						'other' => q({0}V),
+					},
 					'watt' => {
+						'' => q(watt),
 						'one' => q({0}W),
 						'other' => q({0}W),
 					},
 					'week' => {
+						'' => q(wk),
 						'one' => q({0}w),
 						'other' => q({0}w),
 					},
 					'yard' => {
+						'' => q(yd),
 						'one' => q({0}yd),
 						'other' => q({0}yd),
 					},
 					'year' => {
+						'' => q(yr),
 						'one' => q({0}y),
 						'other' => q({0}y),
 					},
 				},
 				'short' => {
 					'acre' => {
+						'' => q(acres),
 						'one' => q({0} ac),
 						'other' => q({0} ac),
 					},
+					'acre-foot' => {
+						'' => q(acre ft),
+						'one' => q({0} ac ft),
+						'other' => q({0} ac ft),
+					},
+					'ampere' => {
+						'' => q(amps),
+						'one' => q({0} A),
+						'other' => q({0} A),
+					},
 					'arc-minute' => {
+						'' => q(arcmins),
 						'one' => q({0} arcmin),
-						'other' => q({0} arcmin),
+						'other' => q({0} arcmins),
 					},
 					'arc-second' => {
+						'' => q(arcsecs),
 						'one' => q({0} arcsec),
 						'other' => q({0} arcsecs),
 					},
+					'astronomical-unit' => {
+						'' => q(au),
+						'one' => q({0} au),
+						'other' => q({0} au),
+					},
+					'bit' => {
+						'' => q(bit),
+						'one' => q({0} bit),
+						'other' => q({0} bit),
+					},
+					'bushel' => {
+						'' => q(bushels),
+						'one' => q({0} bu),
+						'other' => q({0} bu),
+					},
+					'byte' => {
+						'' => q(byte),
+						'one' => q({0} byte),
+						'other' => q({0} byte),
+					},
+					'calorie' => {
+						'' => q(cal),
+						'one' => q({0} cal),
+						'other' => q({0} cal),
+					},
+					'carat' => {
+						'' => q(carats),
+						'one' => q({0} CD),
+						'other' => q({0} CD),
+					},
 					'celsius' => {
+						'' => q(deg. C),
 						'one' => q({0}°C),
 						'other' => q({0}°C),
 					},
+					'centiliter' => {
+						'' => q(cL),
+						'one' => q({0} cL),
+						'other' => q({0} cL),
+					},
 					'centimeter' => {
+						'' => q(cm),
 						'one' => q({0} cm),
 						'other' => q({0} cm),
 					},
+					'cubic-centimeter' => {
+						'' => q(cm³),
+						'one' => q({0} cm³),
+						'other' => q({0} cm³),
+					},
+					'cubic-foot' => {
+						'' => q(feet³),
+						'one' => q({0} ft³),
+						'other' => q({0} ft³),
+					},
+					'cubic-inch' => {
+						'' => q(inches³),
+						'one' => q({0} in³),
+						'other' => q({0} in³),
+					},
 					'cubic-kilometer' => {
+						'' => q(km³),
 						'one' => q({0} km³),
 						'other' => q({0} km³),
 					},
+					'cubic-meter' => {
+						'' => q(m³),
+						'one' => q({0} m³),
+						'other' => q({0} m³),
+					},
 					'cubic-mile' => {
+						'' => q(mi³),
 						'one' => q({0} mi³),
 						'other' => q({0} mi³),
 					},
+					'cubic-yard' => {
+						'' => q(yards³),
+						'one' => q({0} yd³),
+						'other' => q({0} yd³),
+					},
+					'cup' => {
+						'' => q(cups),
+						'one' => q({0} c),
+						'other' => q({0} c),
+					},
 					'day' => {
+						'' => q(days),
 						'one' => q({0} day),
 						'other' => q({0} days),
 					},
+					'deciliter' => {
+						'' => q(dL),
+						'one' => q({0} dL),
+						'other' => q({0} dL),
+					},
+					'decimeter' => {
+						'' => q(dm),
+						'one' => q({0} dm),
+						'other' => q({0} dm),
+					},
 					'degree' => {
+						'' => q(degrees),
 						'one' => q({0} deg),
 						'other' => q({0} deg),
 					},
 					'fahrenheit' => {
+						'' => q(deg. F),
 						'one' => q({0}°F),
 						'other' => q({0}°F),
 					},
+					'fathom' => {
+						'' => q(fathoms),
+						'one' => q({0} ftm),
+						'other' => q({0} ftm),
+					},
+					'fluid-ounce' => {
+						'' => q(fl oz),
+						'one' => q({0} fl oz),
+						'other' => q({0} fl oz),
+					},
+					'foodcalorie' => {
+						'' => q(Cal),
+						'one' => q({0} Cal),
+						'other' => q({0} Cal),
+					},
 					'foot' => {
+						'' => q(feet),
 						'one' => q({0} ft),
 						'other' => q({0} ft),
 					},
+					'furlong' => {
+						'' => q(furlongs),
+						'one' => q({0} fur),
+						'other' => q({0} fur),
+					},
 					'g-force' => {
+						'' => q(g-force),
 						'one' => q({0} G),
 						'other' => q({0} G),
 					},
+					'gallon' => {
+						'' => q(gal),
+						'one' => q({0} gal),
+						'other' => q({0} gal),
+					},
+					'gigabit' => {
+						'' => q(Gbit),
+						'one' => q({0} Gb),
+						'other' => q({0} Gb),
+					},
+					'gigabyte' => {
+						'' => q(GByte),
+						'one' => q({0} GB),
+						'other' => q({0} GB),
+					},
+					'gigahertz' => {
+						'' => q(GHz),
+						'one' => q({0} GHz),
+						'other' => q({0} GHz),
+					},
+					'gigawatt' => {
+						'' => q(GW),
+						'one' => q({0} GW),
+						'other' => q({0} GW),
+					},
 					'gram' => {
+						'' => q(grams),
 						'one' => q({0} g),
 						'other' => q({0} g),
 					},
 					'hectare' => {
+						'' => q(hectares),
 						'one' => q({0} ha),
 						'other' => q({0} ha),
 					},
+					'hectoliter' => {
+						'' => q(hL),
+						'one' => q({0} hL),
+						'other' => q({0} hL),
+					},
 					'hectopascal' => {
+						'' => q(hPa),
 						'one' => q({0} hPa),
 						'other' => q({0} hPa),
 					},
+					'hertz' => {
+						'' => q(Hz),
+						'one' => q({0} Hz),
+						'other' => q({0} Hz),
+					},
 					'horsepower' => {
+						'' => q(hp),
 						'one' => q({0} hp),
 						'other' => q({0} hp),
 					},
 					'hour' => {
+						'' => q({0}ph),
 						'one' => q({0} hr),
 						'other' => q({0} hrs),
 					},
 					'inch' => {
+						'' => q(inches),
 						'one' => q({0} in),
 						'other' => q({0} in),
 					},
 					'inch-hg' => {
+						'' => q(in Hg),
 						'one' => q({0} inHg),
 						'other' => q({0} inHg),
 					},
+					'joule' => {
+						'' => q(joules),
+						'one' => q({0} J),
+						'other' => q({0} J),
+					},
+					'karat' => {
+						'' => q(karats),
+						'one' => q({0} kt),
+						'other' => q({0} kt),
+					},
+					'kelvin' => {
+						'' => q(K),
+						'one' => q({0} K),
+						'other' => q({0} K),
+					},
+					'kilobit' => {
+						'' => q(kbit),
+						'one' => q({0} kb),
+						'other' => q({0} kb),
+					},
+					'kilobyte' => {
+						'' => q(kByte),
+						'one' => q({0} kB),
+						'other' => q({0} kB),
+					},
+					'kilocalorie' => {
+						'' => q(kcal),
+						'one' => q({0} kcal),
+						'other' => q({0} kcal),
+					},
 					'kilogram' => {
+						'' => q(kg),
 						'one' => q({0} kg),
 						'other' => q({0} kg),
 					},
+					'kilohertz' => {
+						'' => q(kHz),
+						'one' => q({0} kHz),
+						'other' => q({0} kHz),
+					},
+					'kilojoule' => {
+						'' => q(kilojoule),
+						'one' => q({0} kJ),
+						'other' => q({0} kJ),
+					},
 					'kilometer' => {
+						'' => q(km),
 						'one' => q({0} km),
 						'other' => q({0} km),
 					},
 					'kilometer-per-hour' => {
+						'' => q(km/hour),
 						'one' => q({0} kph),
 						'other' => q({0} kph),
 					},
 					'kilowatt' => {
+						'' => q(kW),
 						'one' => q({0} kW),
 						'other' => q({0} kW),
 					},
+					'kilowatt-hour' => {
+						'' => q(kW-hour),
+						'one' => q({0} kWh),
+						'other' => q({0} kWh),
+					},
 					'light-year' => {
+						'' => q(light yrs),
 						'one' => q({0} ly),
 						'other' => q({0} ly),
 					},
 					'liter' => {
-						'one' => q({0} l),
-						'other' => q({0} l),
+						'' => q(liters),
+						'one' => q({0} L),
+						'other' => q({0} L),
+					},
+					'liter-per-kilometer' => {
+						'' => q(liters/km),
+						'one' => q({0} L/km),
+						'other' => q({0} L/km),
+					},
+					'lux' => {
+						'' => q(lux),
+						'one' => q({0} lx),
+						'other' => q({0} lx),
+					},
+					'megabit' => {
+						'' => q(Mbit),
+						'one' => q({0} Mb),
+						'other' => q({0} Mb),
+					},
+					'megabyte' => {
+						'' => q(MByte),
+						'one' => q({0} MB),
+						'other' => q({0} MB),
+					},
+					'megahertz' => {
+						'' => q(MHz),
+						'one' => q({0} MHz),
+						'other' => q({0} MHz),
+					},
+					'megaliter' => {
+						'' => q(ML),
+						'one' => q({0} ML),
+						'other' => q({0} ML),
+					},
+					'megawatt' => {
+						'' => q(MW),
+						'one' => q({0} MW),
+						'other' => q({0} MW),
 					},
 					'meter' => {
+						'' => q(meters),
 						'one' => q({0} m),
 						'other' => q({0} m),
 					},
 					'meter-per-second' => {
+						'' => q(meters/sec),
 						'one' => q({0} m/s),
 						'other' => q({0} m/s),
 					},
+					'meter-per-second-squared' => {
+						'' => q(meters/sec²),
+						'one' => q({0} m/s²),
+						'other' => q({0} m/s²),
+					},
+					'metric-ton' => {
+						'' => q(t),
+						'one' => q({0} t),
+						'other' => q({0} t),
+					},
+					'microgram' => {
+						'' => q(µg),
+						'one' => q({0} µg),
+						'other' => q({0} µg),
+					},
+					'micrometer' => {
+						'' => q(µmeters),
+						'one' => q({0} µm),
+						'other' => q({0} µm),
+					},
+					'microsecond' => {
+						'' => q(μsecs),
+						'one' => q({0} μs),
+						'other' => q({0} μs),
+					},
 					'mile' => {
+						'' => q(miles),
 						'one' => q({0} mi),
 						'other' => q({0} mi),
 					},
+					'mile-per-gallon' => {
+						'' => q(miles/gal),
+						'one' => q({0} mpg),
+						'other' => q({0} mpg),
+					},
 					'mile-per-hour' => {
+						'' => q(miles/hour),
 						'one' => q({0} mph),
 						'other' => q({0} mph),
 					},
+					'milliampere' => {
+						'' => q(milliamps),
+						'one' => q({0} mA),
+						'other' => q({0} mA),
+					},
 					'millibar' => {
+						'' => q(mbar),
 						'one' => q({0} mbar),
 						'other' => q({0} mbar),
 					},
+					'milligram' => {
+						'' => q(mg),
+						'one' => q({0} mg),
+						'other' => q({0} mg),
+					},
+					'milliliter' => {
+						'' => q(mL),
+						'one' => q({0} mL),
+						'other' => q({0} mL),
+					},
 					'millimeter' => {
+						'' => q(mm),
 						'one' => q({0} mm),
 						'other' => q({0} mm),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(mm Hg),
+						'one' => q({0} mm Hg),
+						'other' => q({0} mm Hg),
+					},
 					'millisecond' => {
+						'' => q(millisecs),
 						'one' => q({0} ms),
 						'other' => q({0} ms),
 					},
+					'milliwatt' => {
+						'' => q(mW),
+						'one' => q({0} mW),
+						'other' => q({0} mW),
+					},
 					'minute' => {
+						'' => q(mins),
 						'one' => q({0} min),
 						'other' => q({0} mins),
 					},
 					'month' => {
+						'' => q(months),
 						'one' => q({0} mth),
 						'other' => q({0} mths),
 					},
+					'nanometer' => {
+						'' => q(nm),
+						'one' => q({0} nm),
+						'other' => q({0} nm),
+					},
+					'nanosecond' => {
+						'' => q(nanosecs),
+						'one' => q({0} ns),
+						'other' => q({0} ns),
+					},
+					'nautical-mile' => {
+						'' => q(nmi),
+						'one' => q({0} nmi),
+						'other' => q({0} nmi),
+					},
+					'ohm' => {
+						'' => q(ohms),
+						'one' => q({0} Ω),
+						'other' => q({0} Ω),
+					},
 					'ounce' => {
+						'' => q(oz),
 						'one' => q({0} oz),
 						'other' => q({0} oz),
+					},
+					'ounce-troy' => {
+						'' => q(oz troy),
+						'one' => q({0} oz t),
+						'other' => q({0} oz t),
+					},
+					'parsec' => {
+						'' => q(parsecs),
+						'one' => q({0} pc),
+						'other' => q({0} pc),
 					},
 					'per' => {
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(pm),
 						'one' => q({0} pm),
 						'other' => q({0} pm),
 					},
+					'pint' => {
+						'' => q(pints),
+						'one' => q({0} pt),
+						'other' => q({0} pt),
+					},
 					'pound' => {
+						'' => q(pounds),
 						'one' => q({0} lb),
 						'other' => q({0} lb),
 					},
+					'pound-per-square-inch' => {
+						'' => q(psi),
+						'one' => q({0} psi),
+						'other' => q({0} psi),
+					},
+					'quart' => {
+						'' => q(qts),
+						'one' => q({0} qt),
+						'other' => q({0} qt),
+					},
+					'radian' => {
+						'' => q(radians),
+						'one' => q({0} rad),
+						'other' => q({0} rad),
+					},
 					'second' => {
+						'' => q({0}ps),
 						'one' => q({0} sec),
 						'other' => q({0} secs),
 					},
+					'square-centimeter' => {
+						'' => q(cm²),
+						'one' => q({0} cm²),
+						'other' => q({0} cm²),
+					},
 					'square-foot' => {
+						'' => q(sq feet),
 						'one' => q({0} sq ft),
 						'other' => q({0} sq ft),
 					},
+					'square-inch' => {
+						'' => q(inches²),
+						'one' => q({0} in²),
+						'other' => q({0} in²),
+					},
 					'square-kilometer' => {
+						'' => q(km²),
 						'one' => q({0} km²),
 						'other' => q({0} km²),
 					},
 					'square-meter' => {
+						'' => q(meters²),
 						'one' => q({0} m²),
 						'other' => q({0} m²),
 					},
 					'square-mile' => {
+						'' => q(sq miles),
 						'one' => q({0} sq mi),
 						'other' => q({0} sq mi),
 					},
+					'square-yard' => {
+						'' => q(yards²),
+						'one' => q({0} yd²),
+						'other' => q({0} yd²),
+					},
+					'stone' => {
+						'' => q(stones),
+						'one' => q({0} st),
+						'other' => q({0} st),
+					},
+					'tablespoon' => {
+						'' => q(tbsp),
+						'one' => q({0} tbsp),
+						'other' => q({0} tbsp),
+					},
+					'teaspoon' => {
+						'' => q(tsp),
+						'one' => q({0} tsp),
+						'other' => q({0} tsp),
+					},
+					'terabit' => {
+						'' => q(Tbit),
+						'one' => q({0} Tb),
+						'other' => q({0} Tb),
+					},
+					'terabyte' => {
+						'' => q(TByte),
+						'one' => q({0} TB),
+						'other' => q({0} TB),
+					},
+					'ton' => {
+						'' => q(tons),
+						'one' => q({0} tn),
+						'other' => q({0} tn),
+					},
+					'volt' => {
+						'' => q(volts),
+						'one' => q({0} V),
+						'other' => q({0} V),
+					},
 					'watt' => {
+						'' => q(watts),
 						'one' => q({0} W),
 						'other' => q({0} W),
 					},
 					'week' => {
+						'' => q(weeks),
 						'one' => q({0} wk),
 						'other' => q({0} wks),
 					},
 					'yard' => {
+						'' => q(yards),
 						'one' => q({0} yd),
 						'other' => q({0} yd),
 					},
 					'year' => {
+						'' => q(years),
 						'one' => q({0} yr),
 						'other' => q({0} yrs),
 					},
@@ -4331,9 +5654,9 @@ has 'curriencies' => (
 		},
 		'MVP' => {
 			display_name => {
-				'currency' => q(Maldivian Rupee),
-				'one' => q(Maldivian rupee),
-				'other' => q(Maldivian rupees),
+				'currency' => q(Maldivian Rupee \(1947–1981\)),
+				'one' => q(Maldivian rupee \(1947–1981\)),
+				'other' => q(Maldivian rupees \(1947–1981\)),
 			},
 		},
 		'MVR' => {
@@ -4653,9 +5976,9 @@ has 'curriencies' => (
 		},
 		'SHP' => {
 			display_name => {
-				'currency' => q(Saint Helena Pound),
-				'one' => q(Saint Helena pound),
-				'other' => q(Saint Helena pounds),
+				'currency' => q(St. Helena Pound),
+				'one' => q(St. Helena pound),
+				'other' => q(St. Helena pounds),
 			},
 		},
 		'SIT' => {
@@ -4709,9 +6032,9 @@ has 'curriencies' => (
 		},
 		'STD' => {
 			display_name => {
-				'currency' => q(São Tomé and Príncipe Dobra),
-				'one' => q(São Tomé and Príncipe dobra),
-				'other' => q(São Tomé and Príncipe dobras),
+				'currency' => q(São Tomé & Príncipe Dobra),
+				'one' => q(São Tomé & Príncipe dobra),
+				'other' => q(São Tomé & Príncipe dobras),
 			},
 		},
 		'SUR' => {
@@ -4814,9 +6137,9 @@ has 'curriencies' => (
 		},
 		'TTD' => {
 			display_name => {
-				'currency' => q(Trinidad and Tobago Dollar),
-				'one' => q(Trinidad and Tobago dollar),
-				'other' => q(Trinidad and Tobago dollars),
+				'currency' => q(Trinidad & Tobago Dollar),
+				'one' => q(Trinidad & Tobago dollar),
+				'other' => q(Trinidad & Tobago dollars),
 			},
 		},
 		'TWD' => {
@@ -5412,68 +6735,68 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'islamic') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'pm' if $time > 1200
-					&& $time < 2400;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
 			if ($_ eq 'generic') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'roc') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
-				return 'pm' if $time > 1200
-					&& $time < 2400;
-				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'buddhist') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
-				return 'pm' if $time > 1200
-					&& $time < 2400;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'chinese') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'gregorian') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
+			if ($_ eq 'buddhist') {
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'hebrew') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'islamic') {
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'gregorian') {
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'roc') {
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'japanese') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
 			last SWITCH;
 			}
 		}
@@ -5489,12 +6812,12 @@ has 'day_periods' => (
 			'format' => {
 				'wide' => {
 					'noon' => q{noon},
-					'pm' => q{pm},
 					'am' => q{am},
+					'pm' => q{pm},
 				},
 				'narrow' => {
-					'noon' => q{n},
 					'pm' => q{p},
+					'noon' => q{n},
 					'am' => q{a},
 				},
 			},
@@ -5577,6 +6900,10 @@ has 'date_formats' => (
 			'short' => q{M/d/yy},
 		},
 		'hebrew' => {
+			'full' => q{EEEE, d MMMM y},
+			'long' => q{d MMMM y},
+			'medium' => q{d MMM y},
+			'short' => q{d MMM y},
 		},
 		'islamic' => {
 		},
@@ -5661,6 +6988,7 @@ has 'datetime_formats_available_formats' => (
 	init_arg	=> undef,
 	default		=> sub { {
 		'chinese' => {
+			E => q{ccc},
 			EHm => q{E HH:mm},
 			EHms => q{E HH:mm:ss},
 			Ed => q{d E},
@@ -5696,41 +7024,29 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{QQQ U},
 			yyyyQQQQ => q{QQQQ U},
 		},
-		'gregorian' => {
-			EHm => q{E HH:mm},
-			EHms => q{E HH:mm:ss},
-			Ed => q{d E},
-			Ehm => q{E h:mm a},
-			Ehms => q{E h:mm:ss a},
+		'hebrew' => {
 			Gy => q{y G},
 			GyMMM => q{MMM y G},
-			GyMMMEd => q{E, MMM d, y G},
-			GyMMMd => q{MMM d, y G},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
+			GyMMMEd => q{E, d MMM y G},
+			GyMMMd => q{d MMM y G},
 			M => q{L},
-			MEd => q{E, M/d},
+			MEd => q{E, d MMM},
 			MMM => q{LLL},
-			MMMEd => q{E, MMM d},
-			MMMd => q{MMM d},
-			Md => q{M/d},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
+			MMMEd => q{E, d MMM},
+			MMMd => q{d MMM},
+			Md => q{d MMM},
 			y => q{y},
-			yM => q{M/y},
-			yMEd => q{E, M/d/y},
+			yM => q{MMM y},
+			yMEd => q{E, d MMM y},
 			yMMM => q{MMM y},
-			yMMMEd => q{E, MMM d, y},
-			yMMMd => q{MMM d, y},
-			yMd => q{M/d/y},
+			yMMMEd => q{E, d MMM y},
+			yMMMd => q{d MMM y},
+			yMd => q{d MMM y},
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
 		'generic' => {
+			E => q{ccc},
 			EHm => q{E HH:mm},
 			EHms => q{E HH:mm:ss},
 			Ed => q{d E},
@@ -5765,6 +7081,41 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{QQQ y G},
 			yyyyQQQQ => q{QQQQ y G},
 		},
+		'gregorian' => {
+			E => q{ccc},
+			EHm => q{E HH:mm},
+			EHms => q{E HH:mm:ss},
+			Ed => q{d E},
+			Ehm => q{E h:mm a},
+			Ehms => q{E h:mm:ss a},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E, MMM d, y G},
+			GyMMMd => q{MMM d, y G},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, M/d},
+			MMM => q{LLL},
+			MMMEd => q{E, MMM d},
+			MMMd => q{MMM d},
+			Md => q{M/d},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y},
+			yM => q{M/y},
+			yMEd => q{E, M/d/y},
+			yMMM => q{MMM y},
+			yMMMEd => q{E, MMM d, y},
+			yMMMd => q{MMM d, y},
+			yMd => q{M/d/y},
+			yQQQ => q{QQQ y},
+			yQQQQ => q{QQQQ y},
+		},
 	} },
 );
 
@@ -5773,7 +7124,7 @@ has 'datetime_formats_append_item' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			'Day' => '{0} ({2}: {1})',
 			'Day-Of-Week' => '{0} {1}',
 			'Era' => '{0} {1}',
@@ -5786,7 +7137,7 @@ has 'datetime_formats_append_item' => (
 			'Week' => '{0} ({2}: {1})',
 			'Year' => '{0} {1}',
 		},
-		'generic' => {
+		'gregorian' => {
 			'Day' => '{0} ({2}: {1})',
 			'Day-Of-Week' => '{0} {1}',
 			'Era' => '{0} {1}',
@@ -5902,99 +7253,63 @@ has 'datetime_formats_interval' => (
 				y => q{M/d/y – M/d/y},
 			},
 		},
-		'gregorian' => {
-			H => {
-				H => q{HH – HH},
-			},
-			Hm => {
-				H => q{HH:mm – HH:mm},
-				m => q{HH:mm – HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm – HH:mm v},
-				m => q{HH:mm – HH:mm v},
-			},
-			Hv => {
-				H => q{HH – HH v},
-			},
+		'hebrew' => {
 			M => {
-				M => q{M – M},
+				M => q{MMM – MMM},
 			},
 			MEd => {
-				M => q{E, M/d – E, M/d},
-				d => q{E, M/d – E, M/d},
+				M => q{E, d MMM – E, d MMM},
+				d => q{E, d MMM – E, d MMM},
 			},
 			MMM => {
 				M => q{MMM – MMM},
 			},
 			MMMEd => {
-				M => q{E, MMM d – E, MMM d},
-				d => q{E, MMM d – E, MMM d},
+				M => q{E, d MMM – E, d MMM},
+				d => q{E, d MMM – E, d MMM},
 			},
 			MMMd => {
-				M => q{MMM d – MMM d},
-				d => q{MMM d – d},
+				M => q{d MMM – d MMM},
+				d => q{d – d MMM},
 			},
 			Md => {
-				M => q{M/d – M/d},
-				d => q{M/d – M/d},
-			},
-			d => {
-				d => q{d – d},
-			},
-			fallback => '{0} – {1}',
-			h => {
-				a => q{h a – h a},
-				h => q{h – h a},
-			},
-			hm => {
-				a => q{h:mm a – h:mm a},
-				h => q{h:mm – h:mm a},
-				m => q{h:mm – h:mm a},
-			},
-			hmv => {
-				a => q{h:mm a – h:mm a v},
-				h => q{h:mm – h:mm a v},
-				m => q{h:mm – h:mm a v},
-			},
-			hv => {
-				a => q{h a – h a v},
-				h => q{h – h a v},
+				M => q{d MMM – d MMM},
+				d => q{d – d MMM},
 			},
 			y => {
-				y => q{y – y},
+				y => q{y – y G},
 			},
 			yM => {
-				M => q{M/y – M/y},
-				y => q{M/y – M/y},
+				M => q{MMM – MMM y},
+				y => q{MMM y – MMM y},
 			},
 			yMEd => {
-				M => q{E, M/d/y – E, M/d/y},
-				d => q{E, M/d/y – E, M/d/y},
-				y => q{E, M/d/y – E, M/d/y},
+				M => q{E, d MMM – E, d MMM y},
+				d => q{E, d MMM – E, d MMM y},
+				y => q{E, d MMM y – E, d MMM y},
 			},
 			yMMM => {
 				M => q{MMM – MMM y},
 				y => q{MMM y – MMM y},
 			},
 			yMMMEd => {
-				M => q{E, MMM d – E, MMM d, y},
-				d => q{E, MMM d – E, MMM d, y},
-				y => q{E, MMM d, y – E, MMM d, y},
+				M => q{E, d MMM – E, d MMM y},
+				d => q{E, d MMM – E, d MMM y},
+				y => q{E, d MMM y – E, d MMM y},
 			},
 			yMMMM => {
 				M => q{MMMM – MMMM y},
 				y => q{MMMM y – MMMM y},
 			},
 			yMMMd => {
-				M => q{MMM d – MMM d, y},
-				d => q{MMM d – d, y},
-				y => q{MMM d, y – MMM d, y},
+				M => q{d MMM – d MMM y},
+				d => q{d – d MMM y},
+				y => q{d MMM y – d MMM y},
 			},
 			yMd => {
-				M => q{M/d/y – M/d/y},
-				d => q{M/d/y – M/d/y},
-				y => q{M/d/y – M/d/y},
+				M => q{d MMM – d MMM y},
+				d => q{d – d MMM y},
+				y => q{d MMM y – d MMM y},
 			},
 		},
 		'generic' => {
@@ -6092,6 +7407,101 @@ has 'datetime_formats_interval' => (
 				y => q{M/d/y – M/d/y GGGGG},
 			},
 		},
+		'gregorian' => {
+			H => {
+				H => q{HH – HH},
+			},
+			Hm => {
+				H => q{HH:mm – HH:mm},
+				m => q{HH:mm – HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm – HH:mm v},
+				m => q{HH:mm – HH:mm v},
+			},
+			Hv => {
+				H => q{HH – HH v},
+			},
+			M => {
+				M => q{M – M},
+			},
+			MEd => {
+				M => q{E, M/d – E, M/d},
+				d => q{E, M/d – E, M/d},
+			},
+			MMM => {
+				M => q{MMM – MMM},
+			},
+			MMMEd => {
+				M => q{E, MMM d – E, MMM d},
+				d => q{E, MMM d – E, MMM d},
+			},
+			MMMd => {
+				M => q{MMM d – MMM d},
+				d => q{MMM d – d},
+			},
+			Md => {
+				M => q{M/d – M/d},
+				d => q{M/d – M/d},
+			},
+			d => {
+				d => q{d – d},
+			},
+			fallback => '{0} – {1}',
+			h => {
+				a => q{h a – h a},
+				h => q{h – h a},
+			},
+			hm => {
+				a => q{h:mm a – h:mm a},
+				h => q{h:mm – h:mm a},
+				m => q{h:mm – h:mm a},
+			},
+			hmv => {
+				a => q{h:mm a – h:mm a v},
+				h => q{h:mm – h:mm a v},
+				m => q{h:mm – h:mm a v},
+			},
+			hv => {
+				a => q{h a – h a v},
+				h => q{h – h a v},
+			},
+			y => {
+				y => q{y – y},
+			},
+			yM => {
+				M => q{M/y – M/y},
+				y => q{M/y – M/y},
+			},
+			yMEd => {
+				M => q{E, M/d/y – E, M/d/y},
+				d => q{E, M/d/y – E, M/d/y},
+				y => q{E, M/d/y – E, M/d/y},
+			},
+			yMMM => {
+				M => q{MMM – MMM y},
+				y => q{MMM y – MMM y},
+			},
+			yMMMEd => {
+				M => q{E, MMM d – E, MMM d, y},
+				d => q{E, MMM d – E, MMM d, y},
+				y => q{E, MMM d, y – E, MMM d, y},
+			},
+			yMMMM => {
+				M => q{MMMM – MMMM y},
+				y => q{MMMM y – MMMM y},
+			},
+			yMMMd => {
+				M => q{MMM d – MMM d, y},
+				d => q{MMM d – d, y},
+				y => q{MMM d, y – MMM d, y},
+			},
+			yMd => {
+				M => q{M/d/y – M/d/y},
+				d => q{M/d/y – M/d/y},
+				y => q{M/d/y – M/d/y},
+			},
+		},
 	} },
 );
 
@@ -6176,7 +7586,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Curaçao#,
 		},
 		'America/St_Barthelemy' => {
-			exemplarCity => q#Saint Barthélemy#,
+			exemplarCity => q#St. Barthélemy#,
 		},
 		'America_Central' => {
 			long => {
@@ -6235,6 +7645,13 @@ has 'time_zone_names' => (
 		},
 		'Antarctica/DumontDUrville' => {
 			exemplarCity => q#Dumont d’Urville#,
+		},
+		'Apia' => {
+			long => {
+				'daylight' => q(Apia Daylight Time),
+				'generic' => q(Apia Time),
+				'standard' => q(Apia Standard Time),
+			},
 		},
 		'Aqtau' => {
 			long => {
@@ -6472,13 +7889,16 @@ has 'time_zone_names' => (
 		},
 		'Europe/Dublin' => {
 			long => {
-				'daylight' => q(Irish Summer Time),
+				'daylight' => q(Irish Standard Time),
 			},
 		},
 		'Europe/London' => {
 			long => {
 				'daylight' => q(British Summer Time),
 			},
+		},
+		'Europe/Uzhgorod' => {
+			exemplarCity => q#Uzhhorod#,
 		},
 		'Europe_Central' => {
 			long => {
@@ -6492,6 +7912,11 @@ has 'time_zone_names' => (
 				'daylight' => q(Eastern European Summer Time),
 				'generic' => q(Eastern European Time),
 				'standard' => q(Eastern European Standard Time),
+			},
+		},
+		'Europe_Further_Eastern' => {
+			long => {
+				'standard' => q(Further-eastern European Time),
 			},
 		},
 		'Europe_Western' => {
@@ -6522,7 +7947,7 @@ has 'time_zone_names' => (
 		},
 		'French_Southern' => {
 			long => {
-				'standard' => q(French Southern and Antarctic Time),
+				'standard' => q(French Southern & Antarctic Time),
 			},
 		},
 		'GMT' => {
@@ -6932,9 +8357,9 @@ has 'time_zone_names' => (
 		},
 		'Pierre_Miquelon' => {
 			long => {
-				'daylight' => q(Saint Pierre and Miquelon Daylight Time),
-				'generic' => q(Saint Pierre and Miquelon Time),
-				'standard' => q(Saint Pierre and Miquelon Standard Time),
+				'daylight' => q(St. Pierre & Miquelon Daylight Time),
+				'generic' => q(St. Pierre & Miquelon Time),
+				'standard' => q(St. Pierre & Miquelon Standard Time),
 			},
 		},
 		'Pitcairn' => {
@@ -7113,7 +8538,7 @@ has 'time_zone_names' => (
 		},
 		'Wallis' => {
 			long => {
-				'standard' => q(Wallis and Futuna Time),
+				'standard' => q(Wallis & Futuna Time),
 			},
 		},
 		'Yakutsk' => {

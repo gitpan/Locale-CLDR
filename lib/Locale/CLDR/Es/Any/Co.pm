@@ -1,11 +1,11 @@
 package Locale::CLDR::Es::Any::Co;
 # This file auto generated from Data\common\main\es_CO.xml
-#	on Fri 20 Jun 11:23:46 pm GMT
-# XML file generated 2013-08-14 01:51:50 -0500 (Wed, 14 Aug 2013)
+#	on Thu  2 Oct 11:01:52 am GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -15,16 +15,6 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Es::Any');
-has 'algorithmic_number_format_data' => (
-	is => 'ro',
-	isa => 'HashRef',
-	init_arg => undef,
-	default => sub { 
-		use bignum;
-		return {
-	} },
-);
-
 has 'number_symbols' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -32,16 +22,7 @@ has 'number_symbols' => (
 	default		=> sub { {
 		'latn' => {
 			'decimal' => q(,),
-			'exponential' => q(),
 			'group' => q(.),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -60,6 +41,22 @@ has 'curriencies' => (
 	} },
 );
 
+
+has 'day_periods' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+		'gregorian' => {
+			'format' => {
+				'narrow' => {
+					'am' => q{a. m.},
+					'pm' => q{p. m.},
+				},
+			},
+		},
+	} },
+);
 
 has 'eras' => (
 	is			=> 'ro',
@@ -98,9 +95,6 @@ has 'time_formats' => (
 		},
 		'gregorian' => {
 			'full' => q{h:mm:ss a (zzzz)},
-			'long' => q{h:mm:ss a z},
-			'medium' => q{h:mm:ss a},
-			'short' => q{h:mm a},
 		},
 	} },
 );
@@ -138,7 +132,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{H-H},
 			},
@@ -169,7 +163,6 @@ has 'datetime_formats_interval' => (
 			},
 			MMMd => {
 				M => q{d 'de' MMM 'al' d 'de' MMM},
-				d => q{d-d 'de' MMM},
 			},
 			Md => {
 				M => q{d/MM - d/MM},
@@ -206,7 +199,6 @@ has 'datetime_formats_interval' => (
 				y => q{E d/MM/y - E d/MM/y},
 			},
 			yMMM => {
-				M => q{MMM-MMM 'de' y},
 				y => q{MMM 'de' y 'a' MMM 'de' y},
 			},
 			yMMMEd => {
@@ -216,7 +208,6 @@ has 'datetime_formats_interval' => (
 			},
 			yMMMd => {
 				M => q{d 'de' MMM 'al' d 'de' MMM 'de' y},
-				d => q{d-d 'de' MMM 'de' y},
 				y => q{d 'de' MMM 'de' y 'al' d 'de' MMM 'de' y},
 			},
 			yMd => {
@@ -225,7 +216,7 @@ has 'datetime_formats_interval' => (
 				y => q{d/MM/y - d/MM/y},
 			},
 		},
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{H-H},
 			},
@@ -256,7 +247,6 @@ has 'datetime_formats_interval' => (
 			},
 			MMMd => {
 				M => q{d 'de' MMM 'al' d 'de' MMM},
-				d => q{d-d 'de' MMM},
 			},
 			Md => {
 				M => q{d/MM - d/MM},

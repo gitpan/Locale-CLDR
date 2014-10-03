@@ -1,11 +1,11 @@
 package Locale::CLDR::Se::Any::Fi;
 # This file auto generated from Data\common\main\se_FI.xml
-#	on Sat 21 Jun 12:59:52 am GMT
-# XML file generated 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013)
+#	on Thu  2 Oct  1:34:09 pm GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -15,27 +15,130 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::Se::Any');
+has 'display_name_language' => (
+	is			=> 'ro',
+	isa			=> 'CodeRef',
+	init_arg	=> undef,
+	default		=> sub { 
+		 sub {
+			 my %languages = (
+				'ace' => 'ačehgiella',
+ 				'ar_001' => 'standárda arábagiella',
+ 				'be' => 'vilgesruoššagiella',
+ 				'bn' => 'bengalagiella',
+ 				'de_AT' => 'nuortariikkalaš duiskkagiella',
+ 				'de_CH' => 'šveicalaš duiskkagiella',
+ 				'en_AU' => 'austrálialaš eaŋgalsgiella',
+ 				'en_CA' => 'kanádalaš eaŋgalsgiella',
+ 				'en_GB' => 'brihttalaš eaŋgalsgiella',
+ 				'en_GB@alt=short' => 'brihttalaš eaŋgalsgiella',
+ 				'en_US' => 'amerihkálaš eaŋgalsgiella',
+ 				'en_US@alt=short' => 'amerihkálaš eaŋgalsgiella',
+ 				'es_419' => 'latiinna-amerihkalaš spánskkagiella',
+ 				'es_ES' => 'espánjalaš spánskkagiella',
+ 				'es_MX' => 'meksikolaš spánskkagiella',
+ 				'fj' => 'fižigiella',
+ 				'fr_CA' => 'kanádalaš fránskkagiella',
+ 				'fr_CH' => 'šveicalaš fránskkagiella',
+ 				'hy' => 'armenagiella',
+ 				'kk' => 'kazakhgiella',
+ 				'km' => 'kambožagiella',
+ 				'ne' => 'nepalagiella',
+ 				'nl_BE' => 'belgialaš hollánddagiella',
+ 				'pa' => 'panjabagiella',
+ 				'pt_BR' => 'brasilialaš portugálagiella',
+ 				'pt_PT' => 'portugálalaš portugálagiella',
+ 				'ro_MD' => 'moldávialaš romániagiella',
+ 				'swb' => 'komoragiella',
+ 				'th' => 'thaigiella',
+ 				'vi' => 'vietnamagiella',
+ 				'zh_Hans' => 'álkes kiinnágiella',
+
+			);
+			if (@_) {
+				return $languages{$_[0]};
+			}
+			return \%languages;
+		}
+	},
+);
+
+has 'display_name_script' => (
+	is			=> 'ro',
+	isa			=> 'CodeRef',
+	init_arg	=> undef,
+	default		=> sub {
+		sub {
+			my %scripts = (
+			'Arab' => 'arábalaš',
+ 			'Hani' => 'kiinnálaš',
+ 			'Hans' => 'álkes kiinnálaš',
+ 			'Hans@alt=stand-alone' => 'álkes kiinnálaš',
+ 			'Hant' => 'árbevirolaš kiinnálaš',
+ 			'Hant@alt=stand-alone' => 'árbevirolaš kiinnálaš',
+ 			'Zxxx' => 'orrut čállojuvvot',
+ 			'Zzzz' => 'dovdameahttun čállin',
+
+			);
+			if ( @_ ) {
+				return $scripts{$_[0]};
+			}
+			return \%scripts;
+		}
+	}
+);
+
 has 'display_name_territory' => (
 	is			=> 'ro',
 	isa			=> 'HashRef[Str]',
 	init_arg	=> undef,
 	default		=> sub { 
 		{
-			'002' => 'Afrihká',
- 			'005' => 'Mátta-Amerihká',
- 			'011' => 'Oarji-Afrihká',
- 			'015' => 'Davvi-Afrihká',
- 			'017' => 'Gaska-Afrihká',
- 			'021' => 'Davvi-Amerihká',
- 			'030' => 'Nuorta-Ásia',
- 			'034' => 'Mátta-Ásia',
- 			'039' => 'Mátta-Eurohpa',
- 			'143' => 'Gaska-Ásia',
- 			'145' => 'Oarji-Ásia',
- 			'150' => 'Eurohpa',
- 			'151' => 'Nuorta-Eurohpá',
- 			'154' => 'Davvi-Eurohpa',
- 			'155' => 'Oarji-Eurohpa',
+			'003' => 'Davvi-Amerihkká ja Gaska-Amerihkká',
+ 			'005' => 'Lulli-Amerihkká',
+ 			'013' => 'Gaska-Amerihkká',
+ 			'021' => 'Davvi-Amerihkká',
+ 			'419' => 'Latiinnalaš-Amerihkká',
+ 			'BA' => 'Bosnia ja Hercegovina',
+ 			'CI@alt=variant' => 'Côte d’Ivoire',
+ 			'KH' => 'Kamboža',
+ 			'SD' => 'Sudan',
+ 			'TD' => 'Chad',
+
+		}
+	},
+);
+
+has 'display_name_type' => (
+	is			=> 'ro',
+	isa			=> 'HashRef[HashRef[Str]]',
+	init_arg	=> undef,
+	default		=> sub {
+		{
+			'calendar' => {
+ 				'buddhist' => q{buddhista kaleandar},
+ 				'chinese' => q{kiinná kaleandar},
+ 				'coptic' => q{koptalaš kaleandar},
+ 				'dangi' => q{dangi kaleandar},
+ 				'ethiopic' => q{etiohpalaš kaleandar},
+ 				'ethiopic-amete-alem' => q{etiohpalaš-amete-alem kaleandar},
+ 				'gregorian' => q{gregorialaš kalendar},
+ 			},
+ 			'numbers' => {
+ 				'fullwide' => q{fullwide},
+ 			},
+
+		}
+	},
+);
+
+has 'display_name_code_patterns' => (
+	is			=> 'ro',
+	isa			=> 'HashRef[Str]',
+	init_arg	=> undef,
+	default		=> sub { 
+		{
+			'script' => 'čállin: {0}',
 
 		}
 	},

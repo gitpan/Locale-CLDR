@@ -1,11 +1,11 @@
 package Locale::CLDR::Transformations::Bgn::Katakana::Latin;
 # This file auto generated from Data\common\transforms\Katakana-Latin-BGN.xml
-#	on Fri 20 Jun 10:43:31 pm GMT
+#	on Thu  2 Oct 10:06:22 am GMT
 # XML file generated 2013-07-18 08:57:06 -0500 (Thu, 18 Jul 2013)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';

@@ -1,11 +1,11 @@
 package Locale::CLDR::En::Any::Sg;
 # This file auto generated from Data\common\main\en_SG.xml
-#	on Fri 20 Jun 11:21:33 pm GMT
-# XML file generated 2013-12-04 17:53:48 -0600 (Wed, 04 Dec 2013)
+#	on Thu  2 Oct 10:58:46 am GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -23,9 +23,6 @@ has 'curriencies' => (
 		'SGD' => {
 			symbol => '$',
 		},
-		'USD' => {
-			symbol => 'US$',
-		},
 	} },
 );
 
@@ -41,20 +38,20 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'generic') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
+			if ($_ eq 'gregorian') {
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'gregorian') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
+			if ($_ eq 'generic') {
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
 			last SWITCH;
 			}
 		}
@@ -79,15 +76,9 @@ has 'date_formats' => (
 	init_arg	=> undef,
 	default		=> sub { {
 		'generic' => {
-			'full' => q{EEEE, d MMMM y G},
-			'long' => q{d MMMM y G},
-			'medium' => q{d MMM y G},
 			'short' => q{d/M/yy GGGGG},
 		},
 		'gregorian' => {
-			'full' => q{EEEE, d MMMM y},
-			'long' => q{d MMMM y},
-			'medium' => q{d MMM y},
 			'short' => q{d/M/yy},
 		},
 	} },
@@ -132,7 +123,6 @@ has 'datetime_formats_available_formats' => (
 		'generic' => {
 			MMMEd => q{E, d MMM},
 			yyyyMEd => q{E, d/M/y GGGGG},
-			yyyyMMMEd => q{E, d MMM y G},
 		},
 	} },
 );
@@ -172,14 +162,10 @@ has 'datetime_formats_interval' => (
 				y => q{E, d/M/y – E, d/M/y},
 			},
 			yMMMEd => {
-				M => q{E, d MMM – E, d MMM y},
 				d => q{E, d MMM – E, d MMM y},
-				y => q{E, d MMM y – E, d MMM y},
 			},
 			yMMMd => {
-				M => q{d MMM – d MMM y},
 				d => q{d-d MMM y},
-				y => q{d MMM y – d MMM y},
 			},
 			yMd => {
 				M => q{d/M/y – d/M/y},
@@ -209,14 +195,10 @@ has 'datetime_formats_interval' => (
 				y => q{E, d/M/y – E, d/M/y G},
 			},
 			yMMMEd => {
-				M => q{E, d MMM – E, d MMM y G},
 				d => q{E, d MMM – E, d MMM y G},
-				y => q{E, d MMM y – E, d MMM y G},
 			},
 			yMMMd => {
-				M => q{d MMM – d MMM y G},
 				d => q{d-d MMM y G},
-				y => q{d MMM y – d MMM y G},
 			},
 			yMd => {
 				M => q{d/M/y – d/M/y G},

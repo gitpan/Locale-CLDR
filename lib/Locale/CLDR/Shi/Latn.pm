@@ -1,11 +1,11 @@
 package Locale::CLDR::Shi::Latn;
 # This file auto generated from Data\common\main\shi_Latn.xml
-#	on Sat 21 Jun  1:00:06 am GMT
-# XML file generated 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014)
+#	on Thu  2 Oct  1:34:24 pm GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -383,16 +383,7 @@ has 'number_symbols' => (
 	default		=> sub { {
 		'latn' => {
 			'decimal' => q(,),
-			'exponential' => q(),
 			'group' => q( ),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -835,8 +826,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{tifawt},
 					'pm' => q{tadggʷat},
+					'am' => q{tifawt},
 				},
 			},
 		},

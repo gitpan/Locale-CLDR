@@ -1,11 +1,11 @@
 package Locale::CLDR::Mgo;
 # This file auto generated from Data\common\main\mgo.xml
-#	on Sat 21 Jun 12:25:53 am GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct 12:52:47 pm GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -175,24 +175,46 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'day' => {
+						'' => q(d),
 						'one' => q({0} d),
 						'other' => q({0} d),
 					},
 					'hour' => {
+						'' => q(h),
 						'one' => q({0} h),
 						'other' => q({0} h),
 					},
 					'minute' => {
+						'' => q(min),
 						'one' => q({0} min),
 						'other' => q({0} min),
 					},
 					'month' => {
+						'' => q(m),
 						'one' => q({0} m),
 						'other' => q({0} m),
 					},
 					'second' => {
+						'' => q(s),
 						'one' => q({0} s),
 						'other' => q({0} s),
+					},
+				},
+				'short' => {
+					'day' => {
+						'' => q(d),
+					},
+					'hour' => {
+						'' => q(h),
+					},
+					'minute' => {
+						'' => q(min),
+					},
+					'month' => {
+						'' => q(m),
+					},
+					'second' => {
+						'' => q(s),
 					},
 				},
 			} }
@@ -242,7 +264,6 @@ has 'number_symbols' => (
 			'perMille' => q(‰),
 			'percentSign' => q(%),
 			'plusSign' => q(+),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -536,8 +557,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{PM},
 					'am' => q{AM},
+					'pm' => q{PM},
 				},
 			},
 		},
@@ -621,10 +642,10 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			d => q{d},
 		},
-		'generic' => {
+		'gregorian' => {
 			d => q{d},
 		},
 	} },
@@ -643,10 +664,10 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			fallback => '{0} – {1}',
 		},
-		'generic' => {
+		'gregorian' => {
 			fallback => '{0} – {1}',
 		},
 	} },

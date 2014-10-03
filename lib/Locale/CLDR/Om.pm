@@ -1,11 +1,11 @@
 package Locale::CLDR::Om;
 # This file auto generated from Data\common\main\om.xml
-#	on Sat 21 Jun 12:45:00 am GMT
-# XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
+#	on Thu  2 Oct  1:16:43 pm GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -470,14 +470,14 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			MMMMdd => q{dd MMMM},
 			MMdd => q{dd/MM},
 			yMM => q{MM/y},
 			yMMMM => q{MMMM y},
 			yQQQ => q{QQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			MMMMdd => q{dd MMMM},
 			MMdd => q{dd/MM},
 			yMM => q{MM/y},

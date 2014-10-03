@@ -1,11 +1,11 @@
 package Locale::CLDR::Ja;
 # This file auto generated from Data\common\main\ja.xml
-#	on Fri 20 Jun 11:57:31 pm GMT
-# XML file generated 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014)
+#	on Thu  2 Oct 11:53:29 am GMT
+# XML file generated 2014-08-14 15:10:07 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -442,54 +442,73 @@ has 'display_name_language' => (
  				'ada' => 'アダングメ語',
  				'ady' => 'アディゲ語',
  				'ae' => 'アヴェスタ語',
+ 				'aeb' => 'チュニジア・アラビア語',
  				'af' => 'アフリカーンス語',
  				'afh' => 'アフリヒリ語',
  				'agq' => 'アゲム語',
  				'ain' => 'アイヌ語',
  				'ak' => 'アカン語',
  				'akk' => 'アッカド語',
+ 				'akz' => 'アラバマ語',
  				'ale' => 'アレウト語',
+ 				'aln' => 'ゲグ・アルバニア語',
  				'alt' => '南アルタイ語',
  				'am' => 'アムハラ語',
  				'an' => 'アラゴン語',
  				'ang' => '古英語',
  				'anp' => 'アンギカ語',
  				'ar' => 'アラビア語',
+ 				'ar_001' => '現代標準アラビア語',
  				'arc' => 'アラム語',
  				'arn' => 'アラウカン語',
+ 				'aro' => 'アラオナ語',
  				'arp' => 'アラパホー語',
+ 				'arq' => 'アルジェリア・アラビア語',
  				'arw' => 'アラワク語',
+ 				'ary' => 'モロッコ・アラビア語',
+ 				'arz' => 'エジプト・アラビア語',
  				'as' => 'アッサム語',
  				'asa' => 'アス語',
+ 				'ase' => 'アメリカ手話',
  				'ast' => 'アストゥリアス語',
  				'av' => 'アヴァル語',
+ 				'avk' => 'コタヴァ',
  				'awa' => 'アワディー語',
  				'ay' => 'アイマラ語',
  				'az' => 'アゼルバイジャン語',
  				'az@alt=short' => 'アゼリー語',
+ 				'azb' => '南アゼルバイジャン語',
  				'ba' => 'バシキール語',
  				'bal' => 'バルーチー語',
  				'ban' => 'バリ語',
+ 				'bar' => 'バイエルン・オーストリア語',
  				'bas' => 'バサ語',
  				'bax' => 'バムン語',
+ 				'bbc' => 'トバ・バタク語',
  				'bbj' => 'ゴーマラ語',
  				'be' => 'ベラルーシ語',
  				'bej' => 'ベジャ語',
  				'bem' => 'ベンバ語',
+ 				'bew' => 'ベタウィ語',
  				'bez' => 'ベナ語',
  				'bfd' => 'バフット語',
+ 				'bfq' => 'バダガ語',
  				'bg' => 'ブルガリア語',
  				'bho' => 'ボージュプリー語',
  				'bi' => 'ビスラマ語',
  				'bik' => 'ビコル語',
  				'bin' => 'ビニ語',
+ 				'bjn' => 'バンジャル語',
  				'bkm' => 'コム語',
  				'bla' => 'シクシカ語',
  				'bm' => 'バンバラ語',
  				'bn' => 'ベンガル語',
  				'bo' => 'チベット語',
+ 				'bpy' => 'ビシュヌプリヤ・マニプリ語',
+ 				'bqi' => 'バフティヤーリー語',
  				'br' => 'ブルトン語',
  				'bra' => 'ブラジ語',
+ 				'brh' => 'ブラフイ語',
  				'brx' => 'ボド語',
  				'bs' => 'ボスニア語',
  				'bss' => 'アコース語',
@@ -519,6 +538,7 @@ has 'display_name_language' => (
  				'ckb' => 'クルド語(ソラニー)',
  				'co' => 'コルシカ語',
  				'cop' => 'コプト語',
+ 				'cps' => 'カピス語',
  				'cr' => 'クリー語',
  				'crh' => 'クリミア・タタール語',
  				'cs' => 'チェコ語',
@@ -531,7 +551,7 @@ has 'display_name_language' => (
  				'dar' => 'ダルガン語',
  				'dav' => 'タイタ語',
  				'de' => 'ドイツ語',
- 				'de_CH' => '正統ドイツ語(スイス)',
+ 				'de_CH' => '標準ドイツ語(スイス)',
  				'del' => 'デラウェア語',
  				'den' => 'スレイビー語',
  				'dgr' => 'ドグリブ語',
@@ -539,6 +559,7 @@ has 'display_name_language' => (
  				'dje' => 'ザルマ語',
  				'doi' => 'ドーグリー語',
  				'dsb' => '低ソルビア語',
+ 				'dtp' => '中央ドゥスン語',
  				'dua' => 'ドゥアラ語',
  				'dum' => '中世オランダ語',
  				'dv' => 'ディベヒ語',
@@ -549,6 +570,7 @@ has 'display_name_language' => (
  				'ebu' => 'エンブ語',
  				'ee' => 'エウェ語',
  				'efi' => 'エフィク語',
+ 				'egl' => 'エミリア語',
  				'egy' => '古代エジプト語',
  				'eka' => 'エカジュク語',
  				'el' => 'ギリシャ語',
@@ -557,41 +579,53 @@ has 'display_name_language' => (
  				'en_AU' => 'オーストラリア英語',
  				'en_CA' => 'カナダ英語',
  				'en_GB' => 'イギリス英語',
+ 				'en_GB@alt=short' => '英語(英国)',
  				'en_US' => 'アメリカ英語',
- 				'enm' => '中世英語',
+ 				'en_US@alt=short' => '英語(米国)',
+ 				'enm' => '中英語',
  				'eo' => 'エスペラント語',
  				'es' => 'スペイン語',
  				'es_ES' => 'スペイン語(イベリア半島)',
+ 				'esu' => '中央アラスカ・ユピック語',
  				'et' => 'エストニア語',
  				'eu' => 'バスク語',
  				'ewo' => 'エウォンド語',
+ 				'ext' => 'エストレマドゥーラ語',
  				'fa' => 'ペルシア語',
  				'fan' => 'ファング語',
  				'fat' => 'ファンティー語',
  				'ff' => 'フラニ語',
  				'fi' => 'フィンランド語',
  				'fil' => 'フィリピノ語',
+ 				'fit' => 'トルネダール・フィンランド語',
  				'fj' => 'フィジー語',
  				'fo' => 'フェロー語',
  				'fon' => 'フォン語',
  				'fr' => 'フランス語',
+ 				'frc' => 'ケイジャン・フランス語',
  				'frm' => '中期フランス語',
  				'fro' => '古フランス語',
+ 				'frp' => 'アルピタン語',
  				'frr' => '北フリジア語',
  				'frs' => '東フリジア語',
  				'fur' => 'フリウリ語',
  				'fy' => '西フリジア語',
  				'ga' => 'アイルランド語',
  				'gaa' => 'ガ語',
+ 				'gag' => 'ガガウズ語',
+ 				'gan' => '贛語',
  				'gay' => 'ガヨ語',
  				'gba' => 'バヤ語',
+ 				'gbz' => 'ダリー語(ゾロアスター教)',
  				'gd' => 'スコットランド・ゲール語',
  				'gez' => 'ゲエズ語',
  				'gil' => 'キリバス語',
  				'gl' => 'ガリシア語',
+ 				'glk' => 'ギラキ語',
  				'gmh' => '中高ドイツ語',
  				'gn' => 'グアラニー語',
  				'goh' => '古高ドイツ語',
+ 				'gom' => 'ゴア・コンカニ語',
  				'gon' => 'ゴーンディー語',
  				'gor' => 'ゴロンタロ語',
  				'got' => 'ゴート語',
@@ -599,20 +633,25 @@ has 'display_name_language' => (
  				'grc' => '古代ギリシャ語',
  				'gsw' => 'スイスドイツ語',
  				'gu' => 'グジャラート語',
+ 				'guc' => 'ワユ語',
+ 				'gur' => 'フラフラ語',
  				'guz' => 'グシイ語',
  				'gv' => 'マン島語',
  				'gwi' => 'グウィッチン語',
  				'ha' => 'ハウサ語',
  				'hai' => 'ハイダ語',
+ 				'hak' => '客家語',
  				'haw' => 'ハワイ語',
  				'he' => 'ヘブライ語',
  				'hi' => 'ヒンディー語',
+ 				'hif' => 'フィジー・ヒンディー語',
  				'hil' => 'ヒリガイノン語',
  				'hit' => 'ヒッタイト語',
  				'hmn' => 'フモン語',
  				'ho' => 'ヒリモツ語',
  				'hr' => 'クロアチア語',
  				'hsb' => '上ソルビア語',
+ 				'hsn' => '湘語',
  				'ht' => 'ハイチ語',
  				'hu' => 'ハンガリー語',
  				'hup' => 'アタパスカ語',
@@ -632,12 +671,15 @@ has 'display_name_language' => (
  				'is' => 'アイスランド語',
  				'it' => 'イタリア語',
  				'iu' => 'イヌクウティトット語',
+ 				'izh' => 'イングリア語',
  				'ja' => '日本語',
+ 				'jam' => 'ジャマイカ・クレオール語',
  				'jbo' => 'ロジバン語',
  				'jgo' => 'ンゴンバ語',
  				'jmc' => 'マチャメ語',
  				'jpr' => 'ユダヤ・ペルシア語',
  				'jrb' => 'ユダヤ・アラビア語',
+ 				'jut' => 'ユトランド語',
  				'jv' => 'ジャワ語',
  				'ka' => 'グルジア語',
  				'kaa' => 'カラカルパク語',
@@ -651,12 +693,16 @@ has 'display_name_language' => (
  				'kcg' => 'カタブ語',
  				'kde' => 'マコンデ語',
  				'kea' => 'カーボベルデ・クレオール語',
+ 				'ken' => 'ニャン語',
  				'kfo' => 'コロ語',
  				'kg' => 'コンゴ語',
+ 				'kgp' => 'カインガング語',
  				'kha' => 'カシ語',
  				'kho' => 'コータン語',
  				'khq' => 'コイラ・チーニ語',
+ 				'khw' => 'コワール語',
  				'ki' => 'キクユ語',
+ 				'kiu' => 'キルマンジュキ語',
  				'kj' => 'クワニャマ語',
  				'kk' => 'カザフ語',
  				'kkj' => 'カコ語',
@@ -666,11 +712,14 @@ has 'display_name_language' => (
  				'kmb' => 'キンブンド語',
  				'kn' => 'カンナダ語',
  				'ko' => '韓国語',
+ 				'koi' => 'コミ・ペルミャク語',
  				'kok' => 'コンカニ語',
  				'kos' => 'コスラエ語',
  				'kpe' => 'クペレ語',
  				'kr' => 'カヌリ語',
  				'krc' => 'カラチャイ語',
+ 				'kri' => 'クリオ語',
+ 				'krj' => 'キナライア語',
  				'krl' => 'カレリア語',
  				'kru' => 'クルク語',
  				'ks' => 'カシミール語',
@@ -690,13 +739,19 @@ has 'display_name_language' => (
  				'lam' => 'ランバ語',
  				'lb' => 'ルクセンブルク語',
  				'lez' => 'レズギ語',
+ 				'lfn' => 'リングア・フランカ・ノバ',
  				'lg' => 'ガンダ語',
  				'li' => 'リンブルフ語',
+ 				'lij' => 'リグリア語',
+ 				'liv' => 'リヴォニア語',
+ 				'lkt' => 'ラコタ語',
+ 				'lmo' => 'ロンバルド語',
  				'ln' => 'リンガラ語',
  				'lo' => 'ラオ語',
  				'lol' => 'モンゴ語',
  				'loz' => 'ロジ語',
  				'lt' => 'リトアニア語',
+ 				'ltg' => 'ラトガリア語',
  				'lu' => 'ルバ・カタンガ語',
  				'lua' => 'ルバ・ルルア語',
  				'lui' => 'ルイセーニョ語',
@@ -705,6 +760,8 @@ has 'display_name_language' => (
  				'lus' => 'ルシャイ語',
  				'luy' => 'ルヒヤ語',
  				'lv' => 'ラトビア語',
+ 				'lzh' => '漢文',
+ 				'lzz' => 'ラズ語',
  				'mad' => 'マドゥラ語',
  				'maf' => 'マファ語',
  				'mag' => 'マガヒー語',
@@ -734,6 +791,7 @@ has 'display_name_language' => (
  				'moh' => 'モーホーク語',
  				'mos' => 'モシ語',
  				'mr' => 'マラーティー語',
+ 				'mrj' => '山地マリ語',
  				'ms' => 'マレー語',
  				'mt' => 'マルタ語',
  				'mua' => 'ムンダン語',
@@ -741,10 +799,13 @@ has 'display_name_language' => (
  				'mus' => 'クリーク語',
  				'mwl' => 'ミランダ語',
  				'mwr' => 'マールワーリー語',
+ 				'mwv' => 'メンタワイ語',
  				'my' => 'ビルマ語',
  				'mye' => 'ミエネ語',
  				'myv' => 'エルジャ語',
+ 				'mzn' => 'マーザンダラーン語',
  				'na' => 'ナウル語',
+ 				'nan' => '閩南語',
  				'nap' => 'ナポリ語',
  				'naq' => 'ナマ語',
  				'nb' => 'ノルウェー語(ブークモール)',
@@ -755,6 +816,7 @@ has 'display_name_language' => (
  				'ng' => 'ンドンガ語',
  				'nia' => 'ニアス語',
  				'niu' => 'ニウーエイ語',
+ 				'njo' => 'アオ・ナガ語',
  				'nl' => 'オランダ語',
  				'nl_BE' => 'フレミッシュ語',
  				'nmg' => 'クワシオ語',
@@ -763,6 +825,7 @@ has 'display_name_language' => (
  				'no' => 'ノルウェー語',
  				'nog' => 'ノガイ語',
  				'non' => '古ノルド語',
+ 				'nov' => 'ノヴィアル',
  				'nqo' => 'ンコ語',
  				'nr' => '南ンデベレ語',
  				'nso' => '北部ソト語',
@@ -787,20 +850,31 @@ has 'display_name_language' => (
  				'pam' => 'パンパンガ語',
  				'pap' => 'パピアメント語',
  				'pau' => 'パラオ語',
+ 				'pcd' => 'ピカルディ語',
+ 				'pdc' => 'ペンシルベニア・ドイツ語',
+ 				'pdt' => 'メノナイト低地ドイツ語',
  				'peo' => '古代ペルシア語',
+ 				'pfl' => 'プファルツ語',
  				'phn' => 'フェニキア語',
  				'pi' => 'パーリ語',
  				'pl' => 'ポーランド語',
+ 				'pms' => 'ピエモンテ語',
+ 				'pnt' => 'ポントス・ギリシャ語',
  				'pon' => 'ポンペイ語',
+ 				'prg' => 'プロシア語',
  				'pro' => '古期プロバンス語',
  				'ps' => 'パシュトゥー語',
  				'ps@alt=variant' => 'パシュトゥ語',
  				'pt' => 'ポルトガル語',
  				'pt_PT' => 'ポルトガル語(イベリア半島)',
  				'qu' => 'ケチュア語',
+ 				'quc' => 'キチェ語',
+ 				'qug' => 'チンボラソ高地ケチュア語',
  				'raj' => 'ラージャスターン語',
  				'rap' => 'ラパヌイ語',
  				'rar' => 'ラロトンガ語',
+ 				'rgn' => 'ロマーニャ語',
+ 				'rif' => 'リーフ語',
  				'rm' => 'ロマンシュ語',
  				'rn' => 'ルンディ語',
  				'ro' => 'ルーマニア語',
@@ -808,7 +882,10 @@ has 'display_name_language' => (
  				'rof' => 'ロンボ語',
  				'rom' => 'ロマーニー語',
  				'root' => 'ルート',
+ 				'rtm' => 'ロツマ語',
  				'ru' => 'ロシア語',
+ 				'rue' => 'ルシン語',
+ 				'rug' => 'ロヴィアナ語',
  				'rup' => 'アルーマニア語',
  				'rw' => 'ルワンダ語',
  				'rwk' => 'ルワ語',
@@ -819,19 +896,23 @@ has 'display_name_language' => (
  				'saq' => 'サンブル語',
  				'sas' => 'ササク語',
  				'sat' => 'サンターリー語',
+ 				'saz' => 'サウラーシュトラ語',
  				'sba' => 'ンガムバイ語',
  				'sbp' => 'サング語',
  				'sc' => 'サルデーニャ語',
  				'scn' => 'シチリア語',
  				'sco' => 'スコットランド語',
  				'sd' => 'シンド語',
+ 				'sdc' => 'サッサリ・サルデーニャ語',
  				'se' => '北サーミ語',
  				'see' => 'セネカ語',
  				'seh' => 'セナ語',
+ 				'sei' => 'セリ語',
  				'sel' => 'セリクプ語',
  				'ses' => 'コイラボロ・センニ語',
  				'sg' => 'サンゴ語',
  				'sga' => '古期アイルランド語',
+ 				'sgs' => 'サモギティア語)',
  				'sh' => 'セルボ・クロアチア語',
  				'shi' => 'タシルハイト語',
  				'shn' => 'シャン語',
@@ -840,6 +921,8 @@ has 'display_name_language' => (
  				'sid' => 'シダモ語',
  				'sk' => 'スロバキア語',
  				'sl' => 'スロベニア語',
+ 				'sli' => '低シレジア語',
+ 				'sly' => 'スラヤール語',
  				'sm' => 'サモア語',
  				'sma' => '南サーミ語',
  				'smj' => 'ルレ・サーミ語',
@@ -856,6 +939,7 @@ has 'display_name_language' => (
  				'ss' => 'スワジ語',
  				'ssy' => 'サホ語',
  				'st' => '南部ソト語',
+ 				'stq' => 'ザーターフリジア語',
  				'su' => 'スンダ語',
  				'suk' => 'スクマ語',
  				'sus' => 'スス語',
@@ -866,7 +950,9 @@ has 'display_name_language' => (
  				'swc' => 'コンゴ・スワヒリ語',
  				'syc' => '古典シリア語',
  				'syr' => 'シリア語',
+ 				'szl' => 'シレジア語',
  				'ta' => 'タミル語',
+ 				'tcy' => 'トゥル語',
  				'te' => 'テルグ語',
  				'tem' => 'テムネ語',
  				'teo' => 'テソ語',
@@ -879,19 +965,24 @@ has 'display_name_language' => (
  				'tiv' => 'ティブ語',
  				'tk' => 'トルクメン語',
  				'tkl' => 'トケラウ語',
+ 				'tkr' => 'ツァフル語',
  				'tl' => 'タガログ語',
  				'tlh' => 'クリンゴン語',
  				'tli' => 'トリンギット語',
+ 				'tly' => 'タリシュ語',
  				'tmh' => 'タマシェク語',
  				'tn' => 'ツワナ語',
  				'to' => 'トンガ語',
  				'tog' => 'トンガ語(ニアサ)',
  				'tpi' => 'トク・ピシン語',
  				'tr' => 'トルコ語',
+ 				'tru' => 'トゥロヨ語',
  				'trv' => 'タロコ語',
  				'ts' => 'ツォンガ語',
+ 				'tsd' => 'ツァコン語',
  				'tsi' => 'チムシュ語',
  				'tt' => 'タタール語',
+ 				'ttt' => 'ムスリム・タタール語',
  				'tum' => 'トゥンブカ語',
  				'tvl' => 'ツバル語',
  				'tw' => 'トウィ語',
@@ -901,7 +992,7 @@ has 'display_name_language' => (
  				'tzm' => '中央アトラス・タマジクト語',
  				'udm' => 'ウドムルト語',
  				'ug' => 'ウイグル語',
- 				'ug@alt=variant' => 'ウイグル',
+ 				'ug@alt=variant' => 'ウィグル語',
  				'uga' => 'ウガリト語',
  				'uk' => 'ウクライナ語',
  				'umb' => 'ムブンドゥ語',
@@ -910,9 +1001,14 @@ has 'display_name_language' => (
  				'uz' => 'ウズベク語',
  				'vai' => 'ヴァイ語',
  				've' => 'ベンダ語',
+ 				'vec' => 'ヴェネト語',
+ 				'vep' => 'ヴェプス語',
  				'vi' => 'ベトナム語',
+ 				'vls' => '西フラマン語',
+ 				'vmf' => 'マインフランク語',
  				'vo' => 'ヴォラピュク語',
  				'vot' => 'ヴォート語',
+ 				'vro' => 'ヴォロ語',
  				'vun' => 'ヴンジョ語',
  				'wa' => 'ワロン語',
  				'wae' => 'ヴァリス語',
@@ -920,8 +1016,10 @@ has 'display_name_language' => (
  				'war' => 'ワライ語',
  				'was' => 'ワショ語',
  				'wo' => 'ウォロフ語',
+ 				'wuu' => '呉語',
  				'xal' => 'カルムイク語',
  				'xh' => 'コサ語',
+ 				'xmf' => 'メグレル語',
  				'xog' => 'ソガ語',
  				'yao' => 'ヤオ語',
  				'yap' => 'ヤップ語',
@@ -929,10 +1027,12 @@ has 'display_name_language' => (
  				'ybb' => 'イエンバ語',
  				'yi' => 'イディッシュ語',
  				'yo' => 'ヨルバ語',
+ 				'yrl' => 'ニェエンガトゥ語',
  				'yue' => '広東語',
  				'za' => 'チワン語',
  				'zap' => 'サポテカ語',
  				'zbl' => 'ブリスシンボル',
+ 				'zea' => 'ゼーラント語',
  				'zen' => 'ゼナガ語',
  				'zgh' => 'タマージク語(モロッコ公用語)',
  				'zh' => '中国語',
@@ -960,6 +1060,7 @@ has 'display_name_script' => (
 		sub {
 			my %scripts = (
 			'Afak' => 'アファカ文字',
+ 			'Aghb' => 'カフカス・アルバニア文字',
  			'Arab' => 'アラビア文字',
  			'Arab@alt=variant' => 'ペルソ・アラビア文字',
  			'Armi' => '帝国アラム文字',
@@ -992,6 +1093,7 @@ has 'display_name_script' => (
  			'Egyd' => 'エジプト民衆文字',
  			'Egyh' => 'エジプト神官文字',
  			'Egyp' => 'エジプト聖刻文字',
+ 			'Elba' => 'エルバサン文字',
  			'Ethi' => 'エチオピア文字',
  			'Geok' => 'グルジア文字(フツリ)',
  			'Geor' => 'グルジア文字',
@@ -1041,6 +1143,7 @@ has 'display_name_script' => (
  			'Loma' => 'ロマ文字',
  			'Lyci' => 'リキア文字',
  			'Lydi' => 'リディア文字',
+ 			'Mahj' => 'マハージャニー文字',
  			'Mand' => 'マンダ文字',
  			'Mani' => 'マニ文字',
  			'Maya' => 'マヤ象形文字',
@@ -1048,6 +1151,7 @@ has 'display_name_script' => (
  			'Merc' => 'メロエ文字草書体',
  			'Mero' => 'メロエ文字',
  			'Mlym' => 'マラヤーラム文字',
+ 			'Modi' => 'モーディー文字',
  			'Mong' => 'モンゴル文字',
  			'Moon' => 'ムーン文字',
  			'Mroo' => 'ムロ文字',
@@ -1064,6 +1168,7 @@ has 'display_name_script' => (
  			'Orya' => 'オリヤー文字',
  			'Osma' => 'オスマニア文字',
  			'Palm' => 'パルミラ文字',
+ 			'Pauc' => 'パウ・チン・ハウ文字',
  			'Perm' => '古ぺルム文字',
  			'Phag' => 'パスパ文字',
  			'Phli' => '碑文パフラヴィー文字',
@@ -1082,6 +1187,7 @@ has 'display_name_script' => (
  			'Sgnw' => '手話文字',
  			'Shaw' => 'ショー文字',
  			'Shrd' => 'シャーラダー文字',
+ 			'Sidd' => '梵字',
  			'Sind' => 'クダワディ文字',
  			'Sinh' => 'シンハラ文字',
  			'Sora' => 'ソラング・ソンペング文字',
@@ -1118,7 +1224,7 @@ has 'display_name_script' => (
  			'Zmth' => '数学記号',
  			'Zsym' => '記号文字',
  			'Zxxx' => '非表記',
- 			'Zyyy' => '未解読文字',
+ 			'Zyyy' => '共通文字',
  			'Zzzz' => '未定義文字',
 
 			);
@@ -1335,7 +1441,7 @@ has 'display_name_territory' => (
  			'MS' => 'モントセラト',
  			'MT' => 'マルタ',
  			'MU' => 'モーリシャス',
- 			'MV' => 'モルジブ',
+ 			'MV' => 'モルディブ',
  			'MW' => 'マラウイ',
  			'MX' => 'メキシコ',
  			'MY' => 'マレーシア',
@@ -1405,6 +1511,7 @@ has 'display_name_territory' => (
  			'TJ' => 'タジキスタン',
  			'TK' => 'トケラウ',
  			'TL' => '東ティモール',
+ 			'TL@alt=variant' => '東チモール',
  			'TM' => 'トルクメニスタン',
  			'TN' => 'チュニジア',
  			'TO' => 'トンガ',
@@ -1477,6 +1584,7 @@ has 'display_name_variant' => (
  			'KSCOR' => '標準コーンウォール語正書法',
  			'LAUKIKA' => 'ラウキカ',
  			'LIPAW' => 'レージア方言 リポヴァツ方言',
+ 			'LUNA1918' => 'LUNA1918',
  			'METELKO' => 'メテルチッツァ',
  			'MONOTON' => 'モノトニック',
  			'NDYUKA' => 'ンジュカ方言',
@@ -1485,6 +1593,7 @@ has 'display_name_variant' => (
  			'NULIK' => '現代ヴォラピュク語',
  			'OSOJS' => 'オゼアッコ/オソヤネ方言',
  			'PAMAKA' => 'パマカ方言',
+ 			'PETR1708' => 'PETR1708',
  			'PINYIN' => 'ピン音(ローマ字表記法)',
  			'POLYTON' => 'ポリトニック',
  			'POSIX' => 'コンピュータ',
@@ -1492,6 +1601,7 @@ has 'display_name_variant' => (
  			'REVISED' => '改訂版',
  			'RIGIK' => '古典ヴォラピュク語',
  			'ROZAJ' => 'レシア方言',
+ 			'RUMGR' => 'RUMGR',
  			'SAAHO' => 'サホ語',
  			'SCOTLAND' => 'スコットランド標準英語',
  			'SCOUSE' => 'リバプール方言',
@@ -1556,9 +1666,9 @@ has 'display_name_type' => (
  				'hebrew' => q{ユダヤ暦},
  				'indian' => q{インド国定暦},
  				'islamic' => q{イスラム暦},
- 				'islamic-civil' => q{太陽イスラム暦},
+ 				'islamic-civil' => q{イスラム歴(定周期、公民紀元)},
  				'islamic-rgsa' => q{イスラム暦(サウジアラビア、月観測)},
- 				'islamic-tbla' => q{イスラム暦(天文紀元)},
+ 				'islamic-tbla' => q{イスラム歴(定周期、天文紀元)},
  				'islamic-umalqura' => q{イスラム暦(ウンム・アルクラー)},
  				'iso8601' => q{ISO-8601},
  				'japanese' => q{和暦},
@@ -1590,6 +1700,7 @@ has 'display_name_type' => (
  				'big5han' => q{繁体字中国語順(Big5)},
  				'dictionary' => q{辞書順},
  				'ducet' => q{ユニコード照合順},
+ 				'eor' => q{ヨーロッパ言語文字の並べ替え規則},
  				'gb2312han' => q{簡体字中国語順(GB2312)},
  				'phonebook' => q{電話帳順},
  				'phonetic' => q{音声順による並べ替え},
@@ -1826,144 +1937,490 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'acre' => {
+						'' => q(エーカー),
 						'other' => q({0} エーカー),
 					},
+					'acre-foot' => {
+						'' => q(エーカーフィート),
+						'other' => q({0} エーカーフィート),
+					},
+					'ampere' => {
+						'' => q(アンペア),
+						'other' => q({0} アンペア),
+					},
 					'arc-minute' => {
+						'' => q(分),
 						'other' => q({0} 分),
 					},
 					'arc-second' => {
+						'' => q(秒),
 						'other' => q({0} 秒),
 					},
+					'astronomical-unit' => {
+						'' => q(天文単位),
+						'other' => q({0} 天文単位),
+					},
+					'bit' => {
+						'' => q(ビット),
+						'other' => q({0} ビット),
+					},
+					'bushel' => {
+						'' => q(ブッシェル),
+						'other' => q({0} ブッシェル),
+					},
+					'byte' => {
+						'' => q(バイト),
+						'other' => q({0} バイト),
+					},
+					'calorie' => {
+						'' => q(熱力学カロリー),
+						'other' => q({0} 熱力学カロリー),
+					},
+					'carat' => {
+						'' => q(カラット),
+						'other' => q({0} カラット),
+					},
 					'celsius' => {
+						'' => q(摂氏),
 						'other' => q(摂氏 {0} 度),
 					},
+					'centiliter' => {
+						'' => q(センチリットル),
+						'other' => q({0} センチリットル),
+					},
 					'centimeter' => {
+						'' => q(センチメートル),
 						'other' => q({0} センチメートル),
 					},
+					'cubic-centimeter' => {
+						'' => q(立方センチメートル),
+						'other' => q({0} 立方センチメートル),
+					},
+					'cubic-foot' => {
+						'' => q(立方フィート),
+						'other' => q({0} 立方フィート),
+					},
+					'cubic-inch' => {
+						'' => q(立方インチ),
+						'other' => q({0} 立方インチ),
+					},
 					'cubic-kilometer' => {
+						'' => q(立方キロメートル),
 						'other' => q({0} 立方キロメートル),
 					},
+					'cubic-meter' => {
+						'' => q(立方メートル),
+						'other' => q({0} 立方メートル),
+					},
 					'cubic-mile' => {
-						'other' => q({0} 立法マイル),
+						'' => q(立方マイル),
+						'other' => q({0} 立方マイル),
+					},
+					'cubic-yard' => {
+						'' => q(立方ヤード),
+						'other' => q({0} 立方ヤード),
+					},
+					'cup' => {
+						'' => q(カップ),
+						'other' => q({0} カップ),
 					},
 					'day' => {
+						'' => q(日),
 						'other' => q({0} 日),
 					},
+					'deciliter' => {
+						'' => q(デシリットル),
+						'other' => q({0} デシリットル),
+					},
+					'decimeter' => {
+						'' => q(デシメートル),
+						'other' => q({0} デシメートル),
+					},
 					'degree' => {
+						'' => q(度),
 						'other' => q({0} 度),
 					},
 					'fahrenheit' => {
+						'' => q(華氏),
 						'other' => q(華氏 {0} 度),
 					},
+					'fathom' => {
+						'' => q(ファゾム),
+						'other' => q({0} ファゾム),
+					},
+					'fluid-ounce' => {
+						'' => q(液量オンス),
+						'other' => q({0} 液量オンス),
+					},
+					'foodcalorie' => {
+						'' => q(カロリー),
+						'other' => q({0} カロリー),
+					},
 					'foot' => {
+						'' => q(フィート),
 						'other' => q({0} フィート),
 					},
+					'furlong' => {
+						'' => q(ハロン),
+						'other' => q({0} ハロン),
+					},
 					'g-force' => {
+						'' => q(G フォース),
 						'other' => q({0} G フォース),
 					},
+					'gallon' => {
+						'' => q(ガロン),
+						'other' => q({0} ガロン),
+					},
+					'gigabit' => {
+						'' => q(ギガビット),
+						'other' => q({0} ギガビット),
+					},
+					'gigabyte' => {
+						'' => q(ギガバイト),
+						'other' => q({0} ギガバイト),
+					},
+					'gigahertz' => {
+						'' => q(ギガヘルツ),
+						'other' => q({0} ギガヘルツ),
+					},
+					'gigawatt' => {
+						'' => q(ギガワット),
+						'other' => q({0} ギガワット),
+					},
 					'gram' => {
+						'' => q(グラム),
 						'other' => q({0} グラム),
 					},
 					'hectare' => {
+						'' => q(ヘクタール),
 						'other' => q({0} ヘクタール),
 					},
+					'hectoliter' => {
+						'' => q(ヘクトリットル),
+						'other' => q({0} ヘクトリットル),
+					},
 					'hectopascal' => {
+						'' => q(ヘクトパスカル),
 						'other' => q({0} ヘクトパスカル),
 					},
+					'hertz' => {
+						'' => q(ヘルツ),
+						'other' => q({0} ヘルツ),
+					},
 					'horsepower' => {
+						'' => q(馬力),
 						'other' => q({0} 馬力),
 					},
 					'hour' => {
+						'' => q({0}/時間),
 						'other' => q({0} 時間),
 					},
 					'inch' => {
+						'' => q(インチ),
 						'other' => q({0} インチ),
 					},
 					'inch-hg' => {
+						'' => q(水銀柱インチ),
 						'other' => q({0} 水銀柱インチ),
 					},
+					'joule' => {
+						'' => q(ジュール),
+						'other' => q({0} ジュール),
+					},
+					'karat' => {
+						'' => q(金),
+						'other' => q({0} 金),
+					},
+					'kelvin' => {
+						'' => q(ケルビン),
+						'other' => q({0} ケルビン),
+					},
+					'kilobit' => {
+						'' => q(キロビット),
+						'other' => q({0} キロビット),
+					},
+					'kilobyte' => {
+						'' => q(キロバイト),
+						'other' => q({0} キロバイト),
+					},
+					'kilocalorie' => {
+						'' => q(キロカロリー),
+						'other' => q({0} キロカロリー),
+					},
 					'kilogram' => {
+						'' => q(キログラム),
 						'other' => q({0} キログラム),
 					},
+					'kilohertz' => {
+						'' => q(キロヘルツ),
+						'other' => q({0} キロヘルツ),
+					},
+					'kilojoule' => {
+						'' => q(キロジュール),
+						'other' => q({0} キロジュール),
+					},
 					'kilometer' => {
+						'' => q(キロメートル),
 						'other' => q({0} キロメートル),
 					},
 					'kilometer-per-hour' => {
+						'' => q(キロメートル毎時),
 						'other' => q(時速 {0} キロメートル),
 					},
 					'kilowatt' => {
+						'' => q(キロワット),
 						'other' => q({0} キロワット),
 					},
+					'kilowatt-hour' => {
+						'' => q(キロワット時),
+						'other' => q({0} キロワット時),
+					},
 					'light-year' => {
+						'' => q(光年),
 						'other' => q({0} 光年),
 					},
 					'liter' => {
+						'' => q(リットル),
 						'other' => q({0} リットル),
 					},
+					'liter-per-kilometer' => {
+						'' => q(リットル毎キロメートル),
+						'other' => q({0} リットル毎キロメートル),
+					},
+					'lux' => {
+						'' => q(ルクス),
+						'other' => q({0} ルクス),
+					},
+					'megabit' => {
+						'' => q(メガビット),
+						'other' => q({0} メガビット),
+					},
+					'megabyte' => {
+						'' => q(メガバイト),
+						'other' => q({0} メガバイト),
+					},
+					'megahertz' => {
+						'' => q(メガヘルツ),
+						'other' => q({0} メガヘルツ),
+					},
+					'megaliter' => {
+						'' => q(メガリットル),
+						'other' => q({0} メガリットル),
+					},
+					'megawatt' => {
+						'' => q(メガワット),
+						'other' => q({0} メガワット),
+					},
 					'meter' => {
+						'' => q(メートル),
 						'other' => q({0} メートル),
 					},
 					'meter-per-second' => {
+						'' => q(メートル毎秒),
 						'other' => q(秒速 {0} メートル),
 					},
+					'meter-per-second-squared' => {
+						'' => q(メートル毎秒毎秒),
+						'other' => q({0} メートル毎秒毎秒),
+					},
+					'metric-ton' => {
+						'' => q(メトリックトン),
+						'other' => q({0} メトリックトン),
+					},
+					'microgram' => {
+						'' => q(マイクログラム),
+						'other' => q({0} マイクログラム),
+					},
+					'micrometer' => {
+						'' => q(マイクロメートル),
+						'other' => q({0} マイクロメートル),
+					},
+					'microsecond' => {
+						'' => q(マイクロ秒),
+						'other' => q({0} マイクロ秒),
+					},
 					'mile' => {
+						'' => q(マイル),
 						'other' => q({0} マイル),
 					},
+					'mile-per-gallon' => {
+						'' => q(マイル毎ガロン),
+						'other' => q({0} マイル毎ガロン),
+					},
 					'mile-per-hour' => {
+						'' => q(マイル毎時),
 						'other' => q(時速 {0} マイル),
 					},
+					'milliampere' => {
+						'' => q(ミリアンペア),
+						'other' => q({0} ミリアンペア),
+					},
 					'millibar' => {
+						'' => q(ミリバール),
 						'other' => q({0} ミリバール),
 					},
+					'milligram' => {
+						'' => q(ミリグラム),
+						'other' => q({0} ミリグラム),
+					},
+					'milliliter' => {
+						'' => q(ミリリットル),
+						'other' => q({0} ミリリットル),
+					},
 					'millimeter' => {
+						'' => q(ミリメートル),
 						'other' => q({0} ミリメートル),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(水銀柱ミリメートル),
+						'other' => q({0} 水銀柱ミリメートル),
+					},
 					'millisecond' => {
+						'' => q(ミリ秒),
 						'other' => q({0} ミリ秒),
 					},
+					'milliwatt' => {
+						'' => q(ミリワット),
+						'other' => q({0} ミリワット),
+					},
 					'minute' => {
+						'' => q(分),
 						'other' => q({0} 分),
 					},
 					'month' => {
+						'' => q(か月),
 						'other' => q({0} か月),
 					},
+					'nanometer' => {
+						'' => q(ナノメートル),
+						'other' => q({0} ナノメートル),
+					},
+					'nanosecond' => {
+						'' => q(ナノ秒),
+						'other' => q({0} ナノ秒),
+					},
+					'nautical-mile' => {
+						'' => q(海里),
+						'other' => q({0} 海里),
+					},
+					'ohm' => {
+						'' => q(オーム),
+						'other' => q({0} オーム),
+					},
 					'ounce' => {
+						'' => q(オンス),
 						'other' => q({0} オンス),
+					},
+					'ounce-troy' => {
+						'' => q(トロイオンス),
+						'other' => q({0} トロイオンス),
+					},
+					'parsec' => {
+						'' => q(パーセク),
+						'other' => q({0} パーセク),
 					},
 					'per' => {
 						'' => q(毎{1} {0}),
 					},
 					'picometer' => {
+						'' => q(ピコメートル),
 						'other' => q({0} ピコメートル),
 					},
+					'pint' => {
+						'' => q(パイント),
+						'other' => q({0} パイント),
+					},
 					'pound' => {
+						'' => q(ポンド),
 						'other' => q({0} ポンド),
 					},
+					'pound-per-square-inch' => {
+						'' => q(重量ポンド毎平方インチ),
+						'other' => q({0} 重量ポンド毎平方インチ),
+					},
+					'quart' => {
+						'' => q(クォート),
+						'other' => q({0} クォート),
+					},
+					'radian' => {
+						'' => q(ラジアン),
+						'other' => q({0} ラジアン),
+					},
 					'second' => {
+						'' => q({0}/秒),
 						'other' => q({0} 秒),
 					},
+					'square-centimeter' => {
+						'' => q(平方センチメートル),
+						'other' => q({0} 平方センチメートル),
+					},
 					'square-foot' => {
+						'' => q(平方フィート),
 						'other' => q({0} 平方フィート),
 					},
+					'square-inch' => {
+						'' => q(平方インチ),
+						'other' => q({0} 平方インチ),
+					},
 					'square-kilometer' => {
+						'' => q(平方キロメートル),
 						'other' => q({0} 平方キロメートル),
 					},
 					'square-meter' => {
+						'' => q(平方メートル),
 						'other' => q({0} 平方メートル),
 					},
 					'square-mile' => {
+						'' => q(平方マイル),
 						'other' => q({0} 平方マイル),
 					},
+					'square-yard' => {
+						'' => q(平方ヤード),
+						'other' => q({0} 平方ヤード),
+					},
+					'stone' => {
+						'' => q(ストーン),
+						'other' => q({0} ストーン),
+					},
+					'tablespoon' => {
+						'' => q(大さじ),
+						'other' => q(大さじ {0}),
+					},
+					'teaspoon' => {
+						'' => q(小さじ),
+						'other' => q(小さじ {0}),
+					},
+					'terabit' => {
+						'' => q(テラビット),
+						'other' => q({0} テラビット),
+					},
+					'terabyte' => {
+						'' => q(テラバイト),
+						'other' => q({0} テラバイト),
+					},
+					'ton' => {
+						'' => q(トン),
+						'other' => q({0} トン),
+					},
+					'volt' => {
+						'' => q(ボルト),
+						'other' => q({0} ボルト),
+					},
 					'watt' => {
+						'' => q(ワット),
 						'other' => q({0} ワット),
 					},
 					'week' => {
+						'' => q(週間),
 						'other' => q({0} 週間),
 					},
 					'yard' => {
+						'' => q(ヤード),
 						'other' => q({0} ヤード),
 					},
 					'year' => {
+						'' => q(年),
 						'other' => q({0} 年),
 					},
 				},
@@ -1971,26 +2428,81 @@ has 'units' => (
 					'acre' => {
 						'other' => q({0}ac),
 					},
+					'acre-foot' => {
+						'other' => q({0}ac ft),
+					},
+					'ampere' => {
+						'other' => q({0}A),
+					},
 					'arc-minute' => {
 						'other' => q({0}′),
 					},
 					'arc-second' => {
 						'other' => q({0}″),
 					},
+					'astronomical-unit' => {
+						'other' => q({0}au),
+					},
+					'bit' => {
+						'other' => q({0}b),
+					},
+					'bushel' => {
+						'' => q(bu),
+						'other' => q({0}bu),
+					},
+					'byte' => {
+						'other' => q({0}B),
+					},
+					'calorie' => {
+						'other' => q({0}calth),
+					},
+					'carat' => {
+						'other' => q({0}ct),
+					},
 					'celsius' => {
+						'' => q(°C),
 						'other' => q({0}°),
 					},
+					'centiliter' => {
+						'other' => q({0}cL),
+					},
 					'centimeter' => {
+						'' => q(cm),
 						'other' => q({0}cm),
+					},
+					'cubic-centimeter' => {
+						'other' => q({0}cm³),
+					},
+					'cubic-foot' => {
+						'other' => q({0}ft³),
+					},
+					'cubic-inch' => {
+						'other' => q({0}in³),
 					},
 					'cubic-kilometer' => {
 						'other' => q({0}km³),
 					},
+					'cubic-meter' => {
+						'other' => q({0}m³),
+					},
 					'cubic-mile' => {
 						'other' => q({0}mi³),
 					},
+					'cubic-yard' => {
+						'other' => q({0}yd³),
+					},
+					'cup' => {
+						'other' => q({0}カップ),
+					},
 					'day' => {
+						'' => q(日),
 						'other' => q({0}日),
+					},
+					'deciliter' => {
+						'other' => q({0}dL),
+					},
+					'decimeter' => {
+						'other' => q({0}dm),
 					},
 					'degree' => {
 						'other' => q({0}°),
@@ -1998,25 +2510,63 @@ has 'units' => (
 					'fahrenheit' => {
 						'other' => q({0}°F),
 					},
+					'fathom' => {
+						'' => q(fm),
+						'other' => q({0}fm),
+					},
+					'fluid-ounce' => {
+						'other' => q({0}fl oz),
+					},
+					'foodcalorie' => {
+						'other' => q({0}cal),
+					},
 					'foot' => {
 						'other' => q({0}′),
+					},
+					'furlong' => {
+						'' => q(fur),
+						'other' => q({0}fur),
 					},
 					'g-force' => {
 						'other' => q({0}G),
 					},
+					'gallon' => {
+						'other' => q({0}gal),
+					},
+					'gigabit' => {
+						'other' => q({0}Gb),
+					},
+					'gigabyte' => {
+						'other' => q({0}GB),
+					},
+					'gigahertz' => {
+						'other' => q({0}GHz),
+					},
+					'gigawatt' => {
+						'other' => q({0}GW),
+					},
 					'gram' => {
+						'' => q(g),
 						'other' => q({0}g),
 					},
 					'hectare' => {
 						'other' => q({0}ha),
 					},
+					'hectoliter' => {
+						'other' => q({0}hL),
+					},
 					'hectopascal' => {
+						'' => q(hPa),
 						'other' => q({0}hPa),
+					},
+					'hertz' => {
+						'other' => q({0}Hz),
 					},
 					'horsepower' => {
 						'other' => q({0}hp),
 					},
 					'hour' => {
+						'' => q(時間),
 						'other' => q({0}時間),
 					},
 					'inch' => {
@@ -2025,53 +2575,164 @@ has 'units' => (
 					'inch-hg' => {
 						'other' => q({0}" Hg),
 					},
+					'joule' => {
+						'other' => q({0}J),
+					},
+					'karat' => {
+						'other' => q({0}K),
+					},
+					'kelvin' => {
+						'' => q(K),
+						'other' => q({0}K),
+					},
+					'kilobit' => {
+						'other' => q({0}kb),
+					},
+					'kilobyte' => {
+						'other' => q({0}KB),
+					},
+					'kilocalorie' => {
+						'other' => q({0}kcal),
+					},
 					'kilogram' => {
+						'' => q(kg),
 						'other' => q({0}kg),
 					},
+					'kilohertz' => {
+						'other' => q({0}kHz),
+					},
+					'kilojoule' => {
+						'other' => q({0}kJ),
+					},
 					'kilometer' => {
+						'' => q(km),
 						'other' => q({0}km),
 					},
 					'kilometer-per-hour' => {
+						'' => q(km/h),
 						'other' => q({0}km/h),
 					},
 					'kilowatt' => {
 						'other' => q({0}kW),
 					},
+					'kilowatt-hour' => {
+						'other' => q({0}kWh),
+					},
 					'light-year' => {
 						'other' => q({0}光年),
 					},
 					'liter' => {
+						'' => q(l),
 						'other' => q({0}l),
 					},
+					'liter-per-kilometer' => {
+						'other' => q({0}L/km),
+					},
+					'lux' => {
+						'other' => q({0}lx),
+					},
+					'megabit' => {
+						'other' => q({0}Mb),
+					},
+					'megabyte' => {
+						'other' => q({0}MB),
+					},
+					'megahertz' => {
+						'other' => q({0}MHz),
+					},
+					'megaliter' => {
+						'other' => q({0}ML),
+					},
+					'megawatt' => {
+						'other' => q({0}MW),
+					},
 					'meter' => {
+						'' => q(m),
 						'other' => q({0}m),
 					},
 					'meter-per-second' => {
 						'other' => q({0}m/s),
 					},
+					'meter-per-second-squared' => {
+						'other' => q({0}m/s²),
+					},
+					'metric-ton' => {
+						'other' => q({0}MT),
+					},
+					'microgram' => {
+						'other' => q({0}µg),
+					},
+					'micrometer' => {
+						'other' => q({0}µm),
+					},
+					'microsecond' => {
+						'' => q(µs),
+						'other' => q({0}μs),
+					},
 					'mile' => {
 						'other' => q({0}マイル),
+					},
+					'mile-per-gallon' => {
+						'other' => q({0}mpg),
 					},
 					'mile-per-hour' => {
 						'other' => q({0}mi/h),
 					},
+					'milliampere' => {
+						'other' => q({0}mA),
+					},
 					'millibar' => {
 						'other' => q({0}mb),
 					},
+					'milligram' => {
+						'other' => q({0}mg),
+					},
+					'milliliter' => {
+						'other' => q({0}ml),
+					},
 					'millimeter' => {
+						'' => q(mm),
 						'other' => q({0}mm),
 					},
+					'millimeter-of-mercury' => {
+						'other' => q({0}mm Hg),
+					},
 					'millisecond' => {
+						'' => q(ms),
 						'other' => q({0}ms),
 					},
+					'milliwatt' => {
+						'other' => q({0}mW),
+					},
 					'minute' => {
+						'' => q(分),
 						'other' => q({0}分),
 					},
 					'month' => {
+						'' => q(か月),
 						'other' => q({0}か月),
+					},
+					'nanometer' => {
+						'other' => q({0}nm),
+					},
+					'nanosecond' => {
+						'' => q(ns),
+						'other' => q({0}ns),
+					},
+					'nautical-mile' => {
+						'other' => q({0}海里),
+					},
+					'ohm' => {
+						'other' => q({0}Ω),
 					},
 					'ounce' => {
 						'other' => q({0}oz),
+					},
+					'ounce-troy' => {
+						'other' => q({0}oz t),
+					},
+					'parsec' => {
+						'other' => q({0}pc),
 					},
 					'per' => {
 						'' => q({0}/{1}),
@@ -2079,14 +2740,33 @@ has 'units' => (
 					'picometer' => {
 						'other' => q({0}pm),
 					},
+					'pint' => {
+						'other' => q({0}pt),
+					},
 					'pound' => {
 						'other' => q({0}lb),
 					},
+					'pound-per-square-inch' => {
+						'other' => q({0}psi),
+					},
+					'quart' => {
+						'other' => q({0}qt),
+					},
+					'radian' => {
+						'other' => q({0}rad),
+					},
 					'second' => {
+						'' => q(秒),
 						'other' => q({0}秒),
+					},
+					'square-centimeter' => {
+						'other' => q({0}cm²),
 					},
 					'square-foot' => {
 						'other' => q({0}ft²),
+					},
+					'square-inch' => {
+						'other' => q({0}in²),
 					},
 					'square-kilometer' => {
 						'other' => q({0}km²),
@@ -2097,159 +2777,532 @@ has 'units' => (
 					'square-mile' => {
 						'other' => q({0}mi²),
 					},
+					'square-yard' => {
+						'other' => q({0}yd²),
+					},
+					'stone' => {
+						'' => q(st),
+						'other' => q({0}st),
+					},
+					'tablespoon' => {
+						'other' => q(大さじ{0}),
+					},
+					'teaspoon' => {
+						'other' => q(小さじ{0}),
+					},
+					'terabit' => {
+						'other' => q({0}Tb),
+					},
+					'terabyte' => {
+						'other' => q({0}TB),
+					},
+					'ton' => {
+						'other' => q({0}t),
+					},
+					'volt' => {
+						'other' => q({0}V),
+					},
 					'watt' => {
 						'other' => q({0}W),
 					},
 					'week' => {
+						'' => q(週間),
 						'other' => q({0}週間),
 					},
 					'yard' => {
 						'other' => q({0}ヤード),
 					},
 					'year' => {
+						'' => q(年),
 						'other' => q({0}年),
 					},
 				},
 				'short' => {
 					'acre' => {
-						'other' => q({0} エーカー),
+						'' => q(エーカー),
+						'other' => q({0} ac),
+					},
+					'acre-foot' => {
+						'' => q(エーカーフィート),
+						'other' => q({0} ac ft),
+					},
+					'ampere' => {
+						'' => q(アンペア),
+						'other' => q({0} A),
 					},
 					'arc-minute' => {
+						'' => q(分),
 						'other' => q({0} 分),
 					},
 					'arc-second' => {
+						'' => q(秒),
 						'other' => q({0} 秒),
 					},
+					'astronomical-unit' => {
+						'' => q(天文単位),
+						'other' => q({0} au),
+					},
+					'bit' => {
+						'' => q(ビット),
+						'other' => q({0} bit),
+					},
+					'bushel' => {
+						'' => q(ブッシェル),
+						'other' => q({0} bu),
+					},
+					'byte' => {
+						'' => q(バイト),
+						'other' => q({0} byte),
+					},
+					'calorie' => {
+						'' => q(熱力学カロリー),
+						'other' => q({0} calth),
+					},
+					'carat' => {
+						'' => q(カラット),
+						'other' => q({0} ct),
+					},
 					'celsius' => {
+						'' => q(°C),
 						'other' => q({0}°C),
 					},
+					'centiliter' => {
+						'' => q(センチリットル),
+						'other' => q({0} cL),
+					},
 					'centimeter' => {
+						'' => q(cm),
 						'other' => q({0} cm),
 					},
+					'cubic-centimeter' => {
+						'' => q(cm³),
+						'other' => q({0} cm³),
+					},
+					'cubic-foot' => {
+						'' => q(立方フィート),
+						'other' => q({0} ft³),
+					},
+					'cubic-inch' => {
+						'' => q(立方インチ),
+						'other' => q({0} in³),
+					},
 					'cubic-kilometer' => {
+						'' => q(km³),
 						'other' => q({0} km³),
 					},
+					'cubic-meter' => {
+						'' => q(m³),
+						'other' => q({0} m³),
+					},
 					'cubic-mile' => {
+						'' => q(立方マイル),
 						'other' => q({0} mi³),
 					},
+					'cubic-yard' => {
+						'' => q(立方ヤード),
+						'other' => q({0} yd³),
+					},
+					'cup' => {
+						'' => q(カップ),
+						'other' => q({0} カップ),
+					},
 					'day' => {
+						'' => q(日),
 						'other' => q({0} 日),
 					},
+					'deciliter' => {
+						'' => q(デシリットル),
+						'other' => q({0} dL),
+					},
+					'decimeter' => {
+						'' => q(デシメートル),
+						'other' => q({0} dm),
+					},
 					'degree' => {
+						'' => q(度),
 						'other' => q({0} 度),
 					},
 					'fahrenheit' => {
+						'' => q(華氏),
 						'other' => q({0}°F),
 					},
+					'fathom' => {
+						'' => q(ファゾム),
+						'other' => q({0} fm),
+					},
+					'fluid-ounce' => {
+						'' => q(液量オンス),
+						'other' => q({0} fl oz),
+					},
+					'foodcalorie' => {
+						'' => q(cal),
+						'other' => q({0} cal),
+					},
 					'foot' => {
-						'other' => q({0} フィート),
+						'' => q(フィート),
+						'other' => q({0} ft),
+					},
+					'furlong' => {
+						'' => q(ハロン),
+						'other' => q({0} fur),
 					},
 					'g-force' => {
+						'' => q(G フォース),
 						'other' => q({0} G),
 					},
+					'gallon' => {
+						'' => q(ガロン),
+						'other' => q({0} gal),
+					},
+					'gigabit' => {
+						'' => q(ギガビット),
+						'other' => q({0} Gb),
+					},
+					'gigabyte' => {
+						'' => q(GB),
+						'other' => q({0} GB),
+					},
+					'gigahertz' => {
+						'' => q(ギガヘルツ),
+						'other' => q({0} GHz),
+					},
+					'gigawatt' => {
+						'' => q(ギガワット),
+						'other' => q({0} GW),
+					},
 					'gram' => {
+						'' => q(グラム),
 						'other' => q({0} g),
 					},
 					'hectare' => {
-						'other' => q({0} ヘクタール),
+						'' => q(ヘクタール),
+						'other' => q({0} ha),
+					},
+					'hectoliter' => {
+						'' => q(ヘクトリットル),
+						'other' => q({0} hL),
 					},
 					'hectopascal' => {
+						'' => q(hPa),
 						'other' => q({0} hPa),
 					},
+					'hertz' => {
+						'' => q(Hz),
+						'other' => q({0} Hz),
+					},
 					'horsepower' => {
+						'' => q(馬力),
 						'other' => q({0} 馬力),
 					},
 					'hour' => {
+						'' => q({0}/時間),
 						'other' => q({0} 時間),
 					},
 					'inch' => {
-						'other' => q({0} インチ),
+						'' => q(インチ),
+						'other' => q({0} in),
 					},
 					'inch-hg' => {
+						'' => q(水銀柱インチ),
 						'other' => q({0} inHg),
 					},
+					'joule' => {
+						'' => q(ジュール),
+						'other' => q({0} J),
+					},
+					'karat' => {
+						'' => q(金),
+						'other' => q({0} 金),
+					},
+					'kelvin' => {
+						'' => q(K),
+						'other' => q({0} K),
+					},
+					'kilobit' => {
+						'' => q(キロビット),
+						'other' => q({0} kb),
+					},
+					'kilobyte' => {
+						'' => q(KB),
+						'other' => q({0} KB),
+					},
+					'kilocalorie' => {
+						'' => q(kcal),
+						'other' => q({0} kcal),
+					},
 					'kilogram' => {
+						'' => q(kg),
 						'other' => q({0} kg),
 					},
+					'kilohertz' => {
+						'' => q(kHz),
+						'other' => q({0} kHz),
+					},
+					'kilojoule' => {
+						'' => q(キロジュール),
+						'other' => q({0} kJ),
+					},
 					'kilometer' => {
+						'' => q(km),
 						'other' => q({0} km),
 					},
 					'kilometer-per-hour' => {
+						'' => q(km/h),
 						'other' => q({0} km/h),
 					},
 					'kilowatt' => {
+						'' => q(キロワット),
 						'other' => q({0} kW),
 					},
+					'kilowatt-hour' => {
+						'' => q(キロワット時),
+						'other' => q({0} kWh),
+					},
 					'light-year' => {
+						'' => q(光年),
 						'other' => q({0} 光年),
 					},
 					'liter' => {
+						'' => q(リットル),
 						'other' => q({0} l),
 					},
+					'liter-per-kilometer' => {
+						'' => q(リットル毎キロメートル),
+						'other' => q({0} L/km),
+					},
+					'lux' => {
+						'' => q(ルクス),
+						'other' => q({0} lx),
+					},
+					'megabit' => {
+						'' => q(メガビット),
+						'other' => q({0} Mb),
+					},
+					'megabyte' => {
+						'' => q(MB),
+						'other' => q({0} MB),
+					},
+					'megahertz' => {
+						'' => q(メガヘルツ),
+						'other' => q({0} MHz),
+					},
+					'megaliter' => {
+						'' => q(メガリットル),
+						'other' => q({0} ML),
+					},
+					'megawatt' => {
+						'' => q(メガワット),
+						'other' => q({0} MW),
+					},
 					'meter' => {
+						'' => q(m),
 						'other' => q({0} m),
 					},
 					'meter-per-second' => {
+						'' => q(m/s),
 						'other' => q({0} m/s),
 					},
+					'meter-per-second-squared' => {
+						'' => q(メートル毎秒毎秒),
+						'other' => q({0} m/s²),
+					},
+					'metric-ton' => {
+						'' => q(メトリックトン),
+						'other' => q({0} MT),
+					},
+					'microgram' => {
+						'' => q(マイクログラム),
+						'other' => q({0} µg),
+					},
+					'micrometer' => {
+						'' => q(マイクロメートル),
+						'other' => q({0} µm),
+					},
+					'microsecond' => {
+						'' => q(マイクロ秒),
+						'other' => q({0} μs),
+					},
 					'mile' => {
-						'other' => q({0} マイル),
+						'' => q(マイル),
+						'other' => q({0} mi),
+					},
+					'mile-per-gallon' => {
+						'' => q(マイル毎ガロン),
+						'other' => q({0} mpg),
 					},
 					'mile-per-hour' => {
+						'' => q(マイル毎時),
 						'other' => q({0} mi/h),
 					},
+					'milliampere' => {
+						'' => q(ミリアンペア),
+						'other' => q({0} mA),
+					},
 					'millibar' => {
+						'' => q(ミリバール),
 						'other' => q({0} mb),
 					},
+					'milligram' => {
+						'' => q(mg),
+						'other' => q({0} mg),
+					},
+					'milliliter' => {
+						'' => q(ml),
+						'other' => q({0} ml),
+					},
 					'millimeter' => {
+						'' => q(mm),
 						'other' => q({0} mm),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(水銀柱ミリメートル),
+						'other' => q({0} mm Hg),
+					},
 					'millisecond' => {
+						'' => q(ミリ秒),
 						'other' => q({0} ms),
 					},
+					'milliwatt' => {
+						'' => q(ミリワット),
+						'other' => q({0} mW),
+					},
 					'minute' => {
+						'' => q(分),
 						'other' => q({0} 分),
 					},
 					'month' => {
+						'' => q(か月),
 						'other' => q({0} か月),
 					},
+					'nanometer' => {
+						'' => q(ナノメートル),
+						'other' => q({0} nm),
+					},
+					'nanosecond' => {
+						'' => q(ナノ秒),
+						'other' => q({0} ns),
+					},
+					'nautical-mile' => {
+						'' => q(海里),
+						'other' => q({0} 海里),
+					},
+					'ohm' => {
+						'' => q(オーム),
+						'other' => q({0} Ω),
+					},
 					'ounce' => {
-						'other' => q({0} オンス),
+						'' => q(オンス),
+						'other' => q({0} oz),
+					},
+					'ounce-troy' => {
+						'' => q(トロイオンス),
+						'other' => q({0} oz t),
+					},
+					'parsec' => {
+						'' => q(パーセク),
+						'other' => q({0} pc),
 					},
 					'per' => {
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(ピコメートル),
 						'other' => q({0} pm),
 					},
+					'pint' => {
+						'' => q(パイント),
+						'other' => q({0} pt),
+					},
 					'pound' => {
-						'other' => q({0} ポンド),
+						'' => q(ポンド),
+						'other' => q({0} lb),
+					},
+					'pound-per-square-inch' => {
+						'' => q(重量ポンド毎平方インチ),
+						'other' => q({0} psi),
+					},
+					'quart' => {
+						'' => q(クォート),
+						'other' => q({0} qt),
+					},
+					'radian' => {
+						'' => q(ラジアン),
+						'other' => q({0} rad),
 					},
 					'second' => {
+						'' => q({0}/秒),
 						'other' => q({0} 秒),
 					},
+					'square-centimeter' => {
+						'' => q(cm²),
+						'other' => q({0} cm²),
+					},
 					'square-foot' => {
-						'other' => q({0} 平方フィート),
+						'' => q(平方フィート),
+						'other' => q({0} ft²),
+					},
+					'square-inch' => {
+						'' => q(平方インチ),
+						'other' => q({0} in²),
 					},
 					'square-kilometer' => {
+						'' => q(km²),
 						'other' => q({0} km²),
 					},
 					'square-meter' => {
+						'' => q(m²),
 						'other' => q({0} m²),
 					},
 					'square-mile' => {
-						'other' => q({0} 平方マイル),
+						'' => q(平方マイル),
+						'other' => q({0} mi²),
+					},
+					'square-yard' => {
+						'' => q(平方ヤード),
+						'other' => q({0} yd²),
+					},
+					'stone' => {
+						'' => q(ストーン),
+						'other' => q({0} st),
+					},
+					'tablespoon' => {
+						'' => q(大さじ),
+						'other' => q(大さじ {0}),
+					},
+					'teaspoon' => {
+						'' => q(小さじ),
+						'other' => q(小さじ {0}),
+					},
+					'terabit' => {
+						'' => q(テラビット),
+						'other' => q({0} Tb),
+					},
+					'terabyte' => {
+						'' => q(テラバイト),
+						'other' => q({0} TB),
+					},
+					'ton' => {
+						'' => q(トン),
+						'other' => q({0} t),
+					},
+					'volt' => {
+						'' => q(ボルト),
+						'other' => q({0} V),
 					},
 					'watt' => {
+						'' => q(ワット),
 						'other' => q({0} W),
 					},
 					'week' => {
+						'' => q(週間),
 						'other' => q({0} 週間),
 					},
 					'yard' => {
-						'other' => q({0} ヤード),
+						'' => q(ヤード),
+						'other' => q({0} yd),
 					},
 					'year' => {
+						'' => q(年),
 						'other' => q({0} 年),
 					},
 				},
@@ -2500,102 +3553,126 @@ has 'curriencies' => (
 	init_arg	=> undef,
 	default		=> sub { {
 		'ADP' => {
+			symbol => 'ADP',
 			display_name => {
 				'currency' => q(アンドラ ペセタ),
 				'other' => q(アンドラ ペセタ),
 			},
 		},
 		'AED' => {
+			symbol => 'AED',
 			display_name => {
 				'currency' => q(アラブ首長国連邦ディルハム),
 				'other' => q(アラブ首長国連邦ディルハム),
 			},
 		},
 		'AFA' => {
+			symbol => 'AFA',
 			display_name => {
 				'currency' => q(アフガニスタン アフガニー \(1927–2002\)),
 				'other' => q(アフガニスタン アフガニー \(1927–2002\)),
 			},
 		},
 		'AFN' => {
+			symbol => 'AFN',
 			display_name => {
 				'currency' => q(アフガニー),
 				'other' => q(アフガニー),
 			},
 		},
+		'ALK' => {
+			symbol => 'ALK',
+			display_name => {
+				'currency' => q(アルバニア レク \(1946–1965\)),
+				'other' => q(アルバニア レク \(1946–1965\)),
+			},
+		},
 		'ALL' => {
+			symbol => 'ALL',
 			display_name => {
 				'currency' => q(アルバニア レク),
 				'other' => q(アルバニア レク),
 			},
 		},
 		'AMD' => {
+			symbol => 'AMD',
 			display_name => {
 				'currency' => q(アルメニア ドラム),
 				'other' => q(アルメニア ドラム),
 			},
 		},
 		'ANG' => {
+			symbol => 'ANG',
 			display_name => {
 				'currency' => q(オランダ領アンティル ギルダー),
 				'other' => q(オランダ領アンティル ギルダー),
 			},
 		},
 		'AOA' => {
+			symbol => 'AOA',
 			display_name => {
 				'currency' => q(クワンザ),
 				'other' => q(クワンザ),
 			},
 		},
 		'AOK' => {
+			symbol => 'AOK',
 			display_name => {
 				'currency' => q(アンゴラ クワンザ \(1977–1991\)),
 				'other' => q(アンゴラ クワンザ \(1977–1991\)),
 			},
 		},
 		'AON' => {
+			symbol => 'AON',
 			display_name => {
 				'currency' => q(アンゴラ 新クワンザ \(1990–2000\)),
 				'other' => q(アンゴラ 新クワンザ \(1990–2000\)),
 			},
 		},
 		'AOR' => {
+			symbol => 'AOR',
 			display_name => {
 				'currency' => q(アンゴラ 旧クワンザ \(1995–1999\)),
 				'other' => q(アンゴラ 旧クワンザ \(1995–1999\)),
 			},
 		},
 		'ARA' => {
+			symbol => 'ARA',
 			display_name => {
 				'currency' => q(アルゼンチン アゥストラール),
 				'other' => q(アルゼンチン アゥストラール),
 			},
 		},
 		'ARL' => {
+			symbol => 'ARL',
 			display_name => {
 				'currency' => q(アルゼンチン・ペソ・レイ（1970-1983）),
 				'other' => q(アルゼンチン・ペソ・レイ（1970-1983）),
 			},
 		},
 		'ARM' => {
+			symbol => 'ARM',
 			display_name => {
 				'currency' => q(アルゼンチン・ペソ（1881-1970）),
 				'other' => q(アルゼンチン・ペソ（1881-1970）),
 			},
 		},
 		'ARP' => {
+			symbol => 'ARP',
 			display_name => {
 				'currency' => q(アルゼンチン ペソ \(1983–1985\)),
 				'other' => q(アルゼンチン ペソ \(1983–1985\)),
 			},
 		},
 		'ARS' => {
+			symbol => 'ARS',
 			display_name => {
 				'currency' => q(アルゼンチン ペソ),
 				'other' => q(アルゼンチン ペソ),
 			},
 		},
 		'ATS' => {
+			symbol => 'ATS',
 			display_name => {
 				'currency' => q(オーストリア シリング),
 				'other' => q(オーストリア シリング),
@@ -2609,156 +3686,182 @@ has 'curriencies' => (
 			},
 		},
 		'AWG' => {
+			symbol => 'AWG',
 			display_name => {
 				'currency' => q(アルバ ギルダー),
 				'other' => q(アルバ ギルダー),
 			},
 		},
 		'AZM' => {
+			symbol => 'AZM',
 			display_name => {
 				'currency' => q(アゼルバイジャン マナト \(1993–2006\)),
 				'other' => q(アゼルバイジャン マナト \(1993–2006\)),
 			},
 		},
 		'AZN' => {
+			symbol => 'AZN',
 			display_name => {
 				'currency' => q(アゼルバイジャン マナト),
 				'other' => q(アゼルバイジャン マナト),
 			},
 		},
 		'BAD' => {
+			symbol => 'BAD',
 			display_name => {
 				'currency' => q(ボスニア・ヘルツェゴビナ ディナール \(1992–1994\)),
 				'other' => q(ボスニア・ヘルツェゴビナ ディナール \(1992–1994\)),
 			},
 		},
 		'BAM' => {
+			symbol => 'BAM',
 			display_name => {
 				'currency' => q(ボスニア マルク \(BAM\)),
 				'other' => q(ボスニア マルク \(BAM\)),
 			},
 		},
 		'BAN' => {
+			symbol => 'BAN',
 			display_name => {
 				'currency' => q(ボスニア・ヘルツェゴビナ 新ディナール（1994-1997）),
 				'other' => q(ボスニア・ヘルツェゴビナ 新ディナール（1994-1997）),
 			},
 		},
 		'BBD' => {
+			symbol => 'BBD',
 			display_name => {
 				'currency' => q(バルバドス ドル),
 				'other' => q(バルバドス ドル),
 			},
 		},
 		'BDT' => {
+			symbol => 'BDT',
 			display_name => {
 				'currency' => q(バングラデシュ タカ),
 				'other' => q(バングラデシュ タカ),
 			},
 		},
 		'BEC' => {
+			symbol => 'BEC',
 			display_name => {
 				'currency' => q(ベルギー フラン \(BEC\)),
 				'other' => q(ベルギー フラン \(BEC\)),
 			},
 		},
 		'BEF' => {
+			symbol => 'BEF',
 			display_name => {
 				'currency' => q(ベルギー フラン),
 				'other' => q(ベルギー フラン),
 			},
 		},
 		'BEL' => {
+			symbol => 'BEL',
 			display_name => {
 				'currency' => q(ベルギー フラン \(BEL\)),
 				'other' => q(ベルギー フラン \(BEL\)),
 			},
 		},
 		'BGL' => {
+			symbol => 'BGL',
 			display_name => {
 				'currency' => q(ブルガリア レフ),
 				'other' => q(ブルガリア レフ),
 			},
 		},
 		'BGM' => {
+			symbol => 'BGM',
 			display_name => {
 				'currency' => q(ブルガリア社会主義 レフ),
 				'other' => q(ブルガリア社会主義 レフ),
 			},
 		},
 		'BGN' => {
+			symbol => 'BGN',
 			display_name => {
 				'currency' => q(ブルガリア 新レフ),
 				'other' => q(ブルガリア 新レフ),
 			},
 		},
 		'BGO' => {
+			symbol => 'BGO',
 			display_name => {
 				'currency' => q(ブルガリア レフ（1879-1952）),
 				'other' => q(ブルガリア レフ（1879-1952）),
 			},
 		},
 		'BHD' => {
+			symbol => 'BHD',
 			display_name => {
 				'currency' => q(バーレーン ディナール),
 				'other' => q(バーレーン ディナール),
 			},
 		},
 		'BIF' => {
+			symbol => 'BIF',
 			display_name => {
 				'currency' => q(ブルンジ フラン),
 				'other' => q(ブルンジ フラン),
 			},
 		},
 		'BMD' => {
+			symbol => 'BMD',
 			display_name => {
 				'currency' => q(バミューダ ドル),
 				'other' => q(バミューダ ドル),
 			},
 		},
 		'BND' => {
+			symbol => 'BND',
 			display_name => {
 				'currency' => q(ブルネイ ドル),
 				'other' => q(ブルネイ ドル),
 			},
 		},
 		'BOB' => {
+			symbol => 'BOB',
 			display_name => {
 				'currency' => q(ボリビア ボリビアーノ),
 				'other' => q(ボリビア ボリビアーノ),
 			},
 		},
 		'BOL' => {
+			symbol => 'BOL',
 			display_name => {
 				'currency' => q(ボリビア ボリビアーノ \(1863–1963\)),
 				'other' => q(ボリビア ボリビアーノ \(1863–1963\)),
 			},
 		},
 		'BOP' => {
+			symbol => 'BOP',
 			display_name => {
 				'currency' => q(ボリビア ペソ),
 				'other' => q(ボリビア ペソ),
 			},
 		},
 		'BOV' => {
+			symbol => 'BOV',
 			display_name => {
 				'currency' => q(ボリビア \(Mvdol\)),
 				'other' => q(ボリビア \(Mvdol\)),
 			},
 		},
 		'BRB' => {
+			symbol => 'BRB',
 			display_name => {
 				'currency' => q(ブラジル 新クルゼイロ \(1967–1986\)),
 				'other' => q(ブラジル 新クルゼイロ \(1967–1986\)),
 			},
 		},
 		'BRC' => {
+			symbol => 'BRC',
 			display_name => {
 				'currency' => q(ブラジル クルザード \(1986–1989\)),
 				'other' => q(ブラジル クルザード \(1986–1989\)),
 			},
 		},
 		'BRE' => {
+			symbol => 'BRE',
 			display_name => {
 				'currency' => q(ブラジル クルゼイロ \(1990–1993\)),
 				'other' => q(ブラジル クルゼイロ \(1990–1993\)),
@@ -2772,60 +3875,70 @@ has 'curriencies' => (
 			},
 		},
 		'BRN' => {
+			symbol => 'BRN',
 			display_name => {
 				'currency' => q(ブラジル 新クルザード \(1989–1990\)),
 				'other' => q(ブラジル 新クルザード \(1989–1990\)),
 			},
 		},
 		'BRR' => {
+			symbol => 'BRR',
 			display_name => {
 				'currency' => q(ブラジル クルゼイロ \(1993–1994\)),
 				'other' => q(ブラジル クルゼイロ \(1993–1994\)),
 			},
 		},
 		'BRZ' => {
+			symbol => 'BRZ',
 			display_name => {
 				'currency' => q(ブラジル クルゼイロ（1942-1967）),
 				'other' => q(ブラジル クルゼイロ（1942-1967）),
 			},
 		},
 		'BSD' => {
+			symbol => 'BSD',
 			display_name => {
 				'currency' => q(バハマ ドル),
 				'other' => q(バハマ ドル),
 			},
 		},
 		'BTN' => {
+			symbol => 'BTN',
 			display_name => {
 				'currency' => q(ブータン ニュルタム),
 				'other' => q(ブータン ニュルタム),
 			},
 		},
 		'BUK' => {
+			symbol => 'BUK',
 			display_name => {
 				'currency' => q(ビルマ チャット),
 				'other' => q(ビルマ チャット),
 			},
 		},
 		'BWP' => {
+			symbol => 'BWP',
 			display_name => {
 				'currency' => q(ボツワナ プラ),
 				'other' => q(ボツワナ プラ),
 			},
 		},
 		'BYB' => {
+			symbol => 'BYB',
 			display_name => {
 				'currency' => q(ベラルーシ 新ルーブル \(1994–1999\)),
 				'other' => q(ベラルーシ 新ルーブル \(1994–1999\)),
 			},
 		},
 		'BYR' => {
+			symbol => 'BYR',
 			display_name => {
 				'currency' => q(ベラルーシ ルーブル),
 				'other' => q(ベラルーシ ルーブル),
 			},
 		},
 		'BZD' => {
+			symbol => 'BZD',
 			display_name => {
 				'currency' => q(ベリーズ ドル),
 				'other' => q(ベリーズ ドル),
@@ -2839,45 +3952,59 @@ has 'curriencies' => (
 			},
 		},
 		'CDF' => {
+			symbol => 'CDF',
 			display_name => {
 				'currency' => q(コンゴ フラン),
 				'other' => q(コンゴ フラン),
 			},
 		},
 		'CHE' => {
+			symbol => 'CHE',
 			display_name => {
 				'currency' => q(ユーロ \(WIR\)),
 				'other' => q(ユーロ \(WIR\)),
 			},
 		},
 		'CHF' => {
+			symbol => 'CHF',
 			display_name => {
 				'currency' => q(スイス フラン),
 				'other' => q(スイス フラン),
 			},
 		},
 		'CHW' => {
+			symbol => 'CHW',
 			display_name => {
 				'currency' => q(フラン \(WIR\)),
 				'other' => q(フラン \(WIR\)),
 			},
 		},
 		'CLE' => {
+			symbol => 'CLE',
 			display_name => {
 				'currency' => q(チリ エスクード),
 				'other' => q(チリ エスクード),
 			},
 		},
 		'CLF' => {
+			symbol => 'CLF',
 			display_name => {
 				'currency' => q(チリ ウニダ・デ・フォメント \(UF\)),
 				'other' => q(チリ ウニダ・デ・フォメント \(UF\)),
 			},
 		},
 		'CLP' => {
+			symbol => 'CLP',
 			display_name => {
 				'currency' => q(チリ ペソ),
 				'other' => q(チリ ペソ),
+			},
+		},
+		'CNX' => {
+			symbol => 'CNX',
+			display_name => {
+				'currency' => q(中国人民銀行ドル),
+				'other' => q(中国人民銀行ドル),
 			},
 		},
 		'CNY' => {
@@ -2888,150 +4015,175 @@ has 'curriencies' => (
 			},
 		},
 		'COP' => {
+			symbol => 'COP',
 			display_name => {
 				'currency' => q(コロンビア ペソ),
 				'other' => q(コロンビア ペソ),
 			},
 		},
 		'COU' => {
+			symbol => 'COU',
 			display_name => {
 				'currency' => q(コロンビア レアル （UVR\)),
 				'other' => q(コロンビア レアル （UVR\)),
 			},
 		},
 		'CRC' => {
+			symbol => 'CRC',
 			display_name => {
 				'currency' => q(コスタリカ コロン),
 				'other' => q(コスタリカ コロン),
 			},
 		},
 		'CSD' => {
+			symbol => 'CSD',
 			display_name => {
 				'currency' => q(セルビア ディナール \(2002–2006\)),
 				'other' => q(セルビア ディナール \(2002–2006\)),
 			},
 		},
 		'CSK' => {
+			symbol => 'CSK',
 			display_name => {
 				'currency' => q(チェコスロバキア コルナ),
 				'other' => q(チェコスロバキア コルナ),
 			},
 		},
 		'CUC' => {
+			symbol => 'CUC',
 			display_name => {
 				'currency' => q(キューバ 兌換ペソ),
 				'other' => q(キューバ 兌換ペソ),
 			},
 		},
 		'CUP' => {
+			symbol => 'CUP',
 			display_name => {
 				'currency' => q(キューバ ペソ),
 				'other' => q(キューバ ペソ),
 			},
 		},
 		'CVE' => {
+			symbol => 'CVE',
 			display_name => {
 				'currency' => q(カーボベルデ エスクード),
 				'other' => q(カーボベルデ エスクード),
 			},
 		},
 		'CYP' => {
+			symbol => 'CYP',
 			display_name => {
 				'currency' => q(キプロス ポンド),
 				'other' => q(キプロス ポンド),
 			},
 		},
 		'CZK' => {
+			symbol => 'CZK',
 			display_name => {
 				'currency' => q(チェコ コルナ),
 				'other' => q(チェコ コルナ),
 			},
 		},
 		'DDM' => {
+			symbol => 'DDM',
 			display_name => {
 				'currency' => q(東ドイツ マルク),
 				'other' => q(東ドイツ マルク),
 			},
 		},
 		'DEM' => {
+			symbol => 'DEM',
 			display_name => {
 				'currency' => q(ドイツ マルク),
 				'other' => q(ドイツ マルク),
 			},
 		},
 		'DJF' => {
+			symbol => 'DJF',
 			display_name => {
 				'currency' => q(ジブチ フラン),
 				'other' => q(ジブチ フラン),
 			},
 		},
 		'DKK' => {
+			symbol => 'DKK',
 			display_name => {
 				'currency' => q(デンマーク クローネ),
 				'other' => q(デンマーク クローネ),
 			},
 		},
 		'DOP' => {
+			symbol => 'DOP',
 			display_name => {
 				'currency' => q(ドミニカ ペソ),
 				'other' => q(ドミニカ ペソ),
 			},
 		},
 		'DZD' => {
+			symbol => 'DZD',
 			display_name => {
 				'currency' => q(アルジェリア ディナール),
 				'other' => q(アルジェリア ディナール),
 			},
 		},
 		'ECS' => {
+			symbol => 'ECS',
 			display_name => {
 				'currency' => q(エクアドル スクレ),
 				'other' => q(エクアドル スクレ),
 			},
 		},
 		'ECV' => {
+			symbol => 'ECV',
 			display_name => {
 				'currency' => q(エクアドル \(UVC\)),
 				'other' => q(エクアドル \(UVC\)),
 			},
 		},
 		'EEK' => {
+			symbol => 'EEK',
 			display_name => {
 				'currency' => q(エストニア クルーン),
 				'other' => q(エストニア クルーン),
 			},
 		},
 		'EGP' => {
+			symbol => 'EGP',
 			display_name => {
 				'currency' => q(エジプト ポンド),
 				'other' => q(エジプト ポンド),
 			},
 		},
 		'ERN' => {
+			symbol => 'ERN',
 			display_name => {
 				'currency' => q(エリトリア ナクファ),
 				'other' => q(エリトリア ナクファ),
 			},
 		},
 		'ESA' => {
+			symbol => 'ESA',
 			display_name => {
 				'currency' => q(スペインペセタ（勘定A）),
 				'other' => q(スペインペセタ（勘定A）),
 			},
 		},
 		'ESB' => {
+			symbol => 'ESB',
 			display_name => {
 				'currency' => q(スペイン 兌換ペセタ),
 				'other' => q(スペイン 兌換ペセタ),
 			},
 		},
 		'ESP' => {
+			symbol => 'ESP',
 			display_name => {
 				'currency' => q(スペイン ペセタ),
 				'other' => q(スペイン ペセタ),
 			},
 		},
 		'ETB' => {
+			symbol => 'ETB',
 			display_name => {
 				'currency' => q(エチオピア ブル),
 				'other' => q(エチオピア ブル),
@@ -3045,24 +4197,28 @@ has 'curriencies' => (
 			},
 		},
 		'FIM' => {
+			symbol => 'FIM',
 			display_name => {
 				'currency' => q(フィンランド マルカ),
 				'other' => q(フィンランド マルカ),
 			},
 		},
 		'FJD' => {
+			symbol => 'FJD',
 			display_name => {
 				'currency' => q(フィジー諸島 ドル),
 				'other' => q(フィジー諸島 ドル),
 			},
 		},
 		'FKP' => {
+			symbol => 'FKP',
 			display_name => {
 				'currency' => q(フォークランド（マルビナス）諸島 ポンド),
 				'other' => q(フォークランド（マルビナス）諸島 ポンド),
 			},
 		},
 		'FRF' => {
+			symbol => 'FRF',
 			display_name => {
 				'currency' => q(フランス フラン),
 				'other' => q(フランス フラン),
@@ -3076,84 +4232,98 @@ has 'curriencies' => (
 			},
 		},
 		'GEK' => {
+			symbol => 'GEK',
 			display_name => {
 				'currency' => q(グルジア クーポン ラリ),
 				'other' => q(グルジア クーポン ラリ),
 			},
 		},
 		'GEL' => {
+			symbol => 'GEL',
 			display_name => {
 				'currency' => q(グルジア ラリ),
 				'other' => q(グルジア ラリ),
 			},
 		},
 		'GHC' => {
+			symbol => 'GHC',
 			display_name => {
 				'currency' => q(ガーナ セディ \(1979–2007\)),
 				'other' => q(ガーナ セディ \(1979–2007\)),
 			},
 		},
 		'GHS' => {
+			symbol => 'GHS',
 			display_name => {
 				'currency' => q(ガーナ セディ),
 				'other' => q(ガーナ セディ),
 			},
 		},
 		'GIP' => {
+			symbol => 'GIP',
 			display_name => {
 				'currency' => q(ジブラルタル ポンド),
 				'other' => q(ジブラルタル ポンド),
 			},
 		},
 		'GMD' => {
+			symbol => 'GMD',
 			display_name => {
 				'currency' => q(ガンビア ダラシ),
 				'other' => q(ガンビア ダラシ),
 			},
 		},
 		'GNF' => {
+			symbol => 'GNF',
 			display_name => {
 				'currency' => q(ギニア フラン),
 				'other' => q(ギニア フラン),
 			},
 		},
 		'GNS' => {
+			symbol => 'GNS',
 			display_name => {
 				'currency' => q(ギニア シリー),
 				'other' => q(ギニア シリー),
 			},
 		},
 		'GQE' => {
+			symbol => 'GQE',
 			display_name => {
 				'currency' => q(赤道ギニア エクウェレ),
 				'other' => q(赤道ギニア エクウェレ),
 			},
 		},
 		'GRD' => {
+			symbol => 'GRD',
 			display_name => {
 				'currency' => q(ギリシャ ドラクマ),
 				'other' => q(ギリシャ ドラクマ),
 			},
 		},
 		'GTQ' => {
+			symbol => 'GTQ',
 			display_name => {
 				'currency' => q(グアテマラ ケツァル),
 				'other' => q(グアテマラ ケツァル),
 			},
 		},
 		'GWE' => {
+			symbol => 'GWE',
 			display_name => {
 				'currency' => q(ポルトガル領ギニア エスクード),
 				'other' => q(ポルトガル領ギニア エスクード),
 			},
 		},
 		'GWP' => {
+			symbol => 'GWP',
 			display_name => {
 				'currency' => q(ギニアビサウ ペソ),
 				'other' => q(ギニアビサウ ペソ),
 			},
 		},
 		'GYD' => {
+			symbol => 'GYD',
 			display_name => {
 				'currency' => q(ガイアナ ドル),
 				'other' => q(ガイアナ ドル),
@@ -3167,51 +4337,66 @@ has 'curriencies' => (
 			},
 		},
 		'HNL' => {
+			symbol => 'HNL',
 			display_name => {
 				'currency' => q(ホンジュラス レンピラ),
 				'other' => q(ホンジュラス レンピラ),
 			},
 		},
 		'HRD' => {
+			symbol => 'HRD',
 			display_name => {
 				'currency' => q(クロアチア ディナール),
 				'other' => q(クロアチア ディナール),
 			},
 		},
 		'HRK' => {
+			symbol => 'HRK',
 			display_name => {
 				'currency' => q(クロアチア クーナ),
 				'other' => q(クロアチア クーナ),
 			},
 		},
 		'HTG' => {
+			symbol => 'HTG',
 			display_name => {
 				'currency' => q(ハイチ グールド),
 				'other' => q(ハイチ グールド),
 			},
 		},
 		'HUF' => {
+			symbol => 'HUF',
 			display_name => {
 				'currency' => q(ハンガリー フォリント),
 				'other' => q(ハンガリー フォリント),
 			},
 		},
 		'IDR' => {
+			symbol => 'IDR',
 			display_name => {
 				'currency' => q(インドネシア ルピア),
 				'other' => q(インドネシア ルピア),
 			},
 		},
 		'IEP' => {
+			symbol => 'IEP',
 			display_name => {
 				'currency' => q(アイリッシュ ポンド),
 				'other' => q(アイリッシュ ポンド),
 			},
 		},
 		'ILP' => {
+			symbol => 'ILP',
 			display_name => {
 				'currency' => q(イスラエル ポンド),
 				'other' => q(イスラエル ポンド),
+			},
+		},
+		'ILR' => {
+			symbol => 'ILR',
+			display_name => {
+				'currency' => q(イスラエル シェケル \(1980–1985\)),
+				'other' => q(イスラエル シェケル \(1980–1985\)),
 			},
 		},
 		'ILS' => {
@@ -3229,36 +4414,49 @@ has 'curriencies' => (
 			},
 		},
 		'IQD' => {
+			symbol => 'IQD',
 			display_name => {
 				'currency' => q(イラク ディナール),
 				'other' => q(イラク ディナール),
 			},
 		},
 		'IRR' => {
+			symbol => 'IRR',
 			display_name => {
 				'currency' => q(イラン リアル),
 				'other' => q(イラン リアル),
 			},
 		},
+		'ISJ' => {
+			symbol => 'ISJ',
+			display_name => {
+				'currency' => q(アイスランド クローナ \(1918–1981\)),
+				'other' => q(アイスランド クローナ \(1918–1981\)),
+			},
+		},
 		'ISK' => {
+			symbol => 'ISK',
 			display_name => {
 				'currency' => q(アイスランド クローナ),
 				'other' => q(アイスランド クローナ),
 			},
 		},
 		'ITL' => {
+			symbol => 'ITL',
 			display_name => {
 				'currency' => q(イタリア リラ),
 				'other' => q(イタリア リラ),
 			},
 		},
 		'JMD' => {
+			symbol => 'JMD',
 			display_name => {
 				'currency' => q(ジャマイカ ドル),
 				'other' => q(ジャマイカ ドル),
 			},
 		},
 		'JOD' => {
+			symbol => 'JOD',
 			display_name => {
 				'currency' => q(ヨルダン ディナール),
 				'other' => q(ヨルダン ディナール),
@@ -3272,42 +4470,49 @@ has 'curriencies' => (
 			},
 		},
 		'KES' => {
+			symbol => 'KES',
 			display_name => {
 				'currency' => q(ケニア シリング),
 				'other' => q(ケニア シリング),
 			},
 		},
 		'KGS' => {
+			symbol => 'KGS',
 			display_name => {
 				'currency' => q(キルギスタン ソム),
 				'other' => q(キルギスタン ソム),
 			},
 		},
 		'KHR' => {
+			symbol => 'KHR',
 			display_name => {
 				'currency' => q(カンボジア リエル),
 				'other' => q(カンボジア リエル),
 			},
 		},
 		'KMF' => {
+			symbol => 'KMF',
 			display_name => {
 				'currency' => q(コモロ フラン),
 				'other' => q(コモロ フラン),
 			},
 		},
 		'KPW' => {
+			symbol => 'KPW',
 			display_name => {
 				'currency' => q(北朝鮮 ウォン),
 				'other' => q(北朝鮮 ウォン),
 			},
 		},
 		'KRH' => {
+			symbol => 'KRH',
 			display_name => {
 				'currency' => q(韓国 ファン（1953-1962）),
 				'other' => q(韓国 ファン（1953-1962）),
 			},
 		},
 		'KRO' => {
+			symbol => 'KRO',
 			display_name => {
 				'currency' => q(韓国 ウォン（1945-1953）),
 				'other' => q(韓国 ウォン（1945-1953）),
@@ -3321,210 +4526,252 @@ has 'curriencies' => (
 			},
 		},
 		'KWD' => {
+			symbol => 'KWD',
 			display_name => {
 				'currency' => q(クウェート ディナール),
 				'other' => q(クウェート ディナール),
 			},
 		},
 		'KYD' => {
+			symbol => 'KYD',
 			display_name => {
 				'currency' => q(ケイマン諸島 ドル),
 				'other' => q(ケイマン諸島 ドル),
 			},
 		},
 		'KZT' => {
+			symbol => 'KZT',
 			display_name => {
 				'currency' => q(カザフスタン テンゲ),
 				'other' => q(カザフスタン テンゲ),
 			},
 		},
 		'LAK' => {
+			symbol => 'LAK',
 			display_name => {
 				'currency' => q(ラオス キープ),
 				'other' => q(ラオス キープ),
 			},
 		},
 		'LBP' => {
+			symbol => 'LBP',
 			display_name => {
 				'currency' => q(レバノン ポンド),
 				'other' => q(レバノン ポンド),
 			},
 		},
 		'LKR' => {
+			symbol => 'LKR',
 			display_name => {
 				'currency' => q(スリランカ ルピー),
 				'other' => q(スリランカ ルピー),
 			},
 		},
 		'LRD' => {
+			symbol => 'LRD',
 			display_name => {
 				'currency' => q(リベリア ドル),
 				'other' => q(リベリア ドル),
 			},
 		},
 		'LSL' => {
+			symbol => 'LSL',
 			display_name => {
 				'currency' => q(レソト ロティ),
 				'other' => q(レソト ロティ),
 			},
 		},
 		'LTL' => {
+			symbol => 'LTL',
 			display_name => {
 				'currency' => q(リトアニア リタス),
 				'other' => q(リトアニア リタス),
 			},
 		},
 		'LTT' => {
+			symbol => 'LTT',
 			display_name => {
 				'currency' => q(リトアニア タロナ),
 				'other' => q(リトアニア タロナ),
 			},
 		},
 		'LUC' => {
+			symbol => 'LUC',
 			display_name => {
 				'currency' => q(ルクセンブルク 兌換フラン),
 				'other' => q(ルクセンブルク 兌換フラン),
 			},
 		},
 		'LUF' => {
+			symbol => 'LUF',
 			display_name => {
 				'currency' => q(ルクセンブルグ フラン),
 				'other' => q(ルクセンブルグ フラン),
 			},
 		},
 		'LUL' => {
+			symbol => 'LUL',
 			display_name => {
 				'currency' => q(ルクセンブルク 金融フラン),
 				'other' => q(ルクセンブルク 金融フラン),
 			},
 		},
 		'LVL' => {
+			symbol => 'LVL',
 			display_name => {
 				'currency' => q(ラトビア ラッツ),
 				'other' => q(ラトビア ラッツ),
 			},
 		},
 		'LVR' => {
+			symbol => 'LVR',
 			display_name => {
 				'currency' => q(ラトビア ルーブル),
 				'other' => q(ラトビア ルーブル),
 			},
 		},
 		'LYD' => {
+			symbol => 'LYD',
 			display_name => {
 				'currency' => q(リビア ディナール),
 				'other' => q(リビア ディナール),
 			},
 		},
 		'MAD' => {
+			symbol => 'MAD',
 			display_name => {
 				'currency' => q(モロッコ ディルハム),
 				'other' => q(モロッコ ディルハム),
 			},
 		},
 		'MAF' => {
+			symbol => 'MAF',
 			display_name => {
 				'currency' => q(モロッコ フラン),
 				'other' => q(モロッコ フラン),
 			},
 		},
 		'MCF' => {
+			symbol => 'MCF',
 			display_name => {
 				'currency' => q(モネガスク フラン),
 				'other' => q(モネガスク フラン),
 			},
 		},
 		'MDC' => {
+			symbol => 'MDC',
 			display_name => {
 				'currency' => q(モルドバ クーポン),
 				'other' => q(モルドバ クーポン),
 			},
 		},
 		'MDL' => {
+			symbol => 'MDL',
 			display_name => {
 				'currency' => q(モルドバ レイ),
 				'other' => q(モルドバ レイ),
 			},
 		},
 		'MGA' => {
+			symbol => 'MGA',
 			display_name => {
 				'currency' => q(マダガスカル アリアリ),
 				'other' => q(マダガスカル アリアリ),
 			},
 		},
 		'MGF' => {
+			symbol => 'MGF',
 			display_name => {
 				'currency' => q(マラガシ フラン),
 				'other' => q(マラガシ フラン),
 			},
 		},
 		'MKD' => {
+			symbol => 'MKD',
 			display_name => {
 				'currency' => q(マケドニア デナル),
 				'other' => q(マケドニア デナル),
 			},
 		},
 		'MKN' => {
+			symbol => 'MKN',
 			display_name => {
 				'currency' => q(マケドニア ディナール（1992-1993）),
 				'other' => q(マケドニア ディナール（1992-1993）),
 			},
 		},
 		'MLF' => {
+			symbol => 'MLF',
 			display_name => {
 				'currency' => q(マリ フラン),
 				'other' => q(マリ フラン),
 			},
 		},
 		'MMK' => {
+			symbol => 'MMK',
 			display_name => {
 				'currency' => q(ミャンマー チャット),
 				'other' => q(ミャンマー チャット),
 			},
 		},
 		'MNT' => {
+			symbol => 'MNT',
 			display_name => {
 				'currency' => q(モンゴル トグログ),
 				'other' => q(モンゴル トグログ),
 			},
 		},
 		'MOP' => {
+			symbol => 'MOP',
 			display_name => {
 				'currency' => q(マカオ パタカ),
 				'other' => q(マカオ パタカ),
 			},
 		},
 		'MRO' => {
+			symbol => 'MRO',
 			display_name => {
 				'currency' => q(モーリタニア ウギア),
 				'other' => q(モーリタニア ウギア),
 			},
 		},
 		'MTL' => {
+			symbol => 'MTL',
 			display_name => {
 				'currency' => q(マルタ リラ),
 				'other' => q(マルタ リラ),
 			},
 		},
 		'MTP' => {
+			symbol => 'MTP',
 			display_name => {
 				'currency' => q(マルタ ポンド),
 				'other' => q(マルタ ポンド),
 			},
 		},
 		'MUR' => {
+			symbol => 'MUR',
 			display_name => {
 				'currency' => q(モーリシャス ルピー),
 				'other' => q(モーリシャス ルピー),
 			},
 		},
+		'MVP' => {
+			symbol => 'MVP',
+			display_name => {
+				'currency' => q(モルディブ諸島 ルピー),
+				'other' => q(モルディブ諸島 ルピー),
+			},
+		},
 		'MVR' => {
+			symbol => 'MVR',
 			display_name => {
 				'currency' => q(モルディブ諸島 ルフィア),
 				'other' => q(モルディブ諸島 ルフィア),
 			},
 		},
 		'MWK' => {
+			symbol => 'MWK',
 			display_name => {
 				'currency' => q(マラウィ クワチャ),
 				'other' => q(マラウィ クワチャ),
@@ -3538,78 +4785,91 @@ has 'curriencies' => (
 			},
 		},
 		'MXP' => {
+			symbol => 'MXP',
 			display_name => {
 				'currency' => q(メキシコ ペソ \(1861–1992\)),
 				'other' => q(メキシコ ペソ \(1861–1992\)),
 			},
 		},
 		'MXV' => {
+			symbol => 'MXV',
 			display_name => {
 				'currency' => q(メキシコ \(UDI\)),
 				'other' => q(メキシコ \(UDI\)),
 			},
 		},
 		'MYR' => {
+			symbol => 'MYR',
 			display_name => {
 				'currency' => q(マレーシア リンギット),
 				'other' => q(マレーシア リンギット),
 			},
 		},
 		'MZE' => {
+			symbol => 'MZE',
 			display_name => {
 				'currency' => q(モザンピーク エスクード),
 				'other' => q(モザンピーク エスクード),
 			},
 		},
 		'MZM' => {
+			symbol => 'MZM',
 			display_name => {
 				'currency' => q(モザンビーク メティカル \(1980–2006\)),
 				'other' => q(モザンビーク メティカル \(1980–2006\)),
 			},
 		},
 		'MZN' => {
+			symbol => 'MZN',
 			display_name => {
 				'currency' => q(モザンビーク メティカル),
 				'other' => q(モザンビーク メティカル),
 			},
 		},
 		'NAD' => {
+			symbol => 'NAD',
 			display_name => {
 				'currency' => q(ナミビア ドル),
 				'other' => q(ナミビア ドル),
 			},
 		},
 		'NGN' => {
+			symbol => 'NGN',
 			display_name => {
 				'currency' => q(ナイジェリア ナイラ),
 				'other' => q(ナイジェリア ナイラ),
 			},
 		},
 		'NIC' => {
+			symbol => 'NIC',
 			display_name => {
 				'currency' => q(ニカラグア コルドバ \(1988–1991\)),
 				'other' => q(ニカラグア コルドバ \(1988–1991\)),
 			},
 		},
 		'NIO' => {
+			symbol => 'NIO',
 			display_name => {
 				'currency' => q(ニカラグア コルドバ オロ),
 				'other' => q(ニカラグア コルドバ オロ),
 			},
 		},
 		'NLG' => {
+			symbol => 'NLG',
 			display_name => {
 				'currency' => q(オランダ ギルダー),
 				'other' => q(オランダ ギルダー),
 			},
 		},
 		'NOK' => {
+			symbol => 'NOK',
 			display_name => {
 				'currency' => q(ノルウェー クローネ),
 				'other' => q(ノルウェー クローネ),
 			},
 		},
 		'NPR' => {
+			symbol => 'NPR',
 			display_name => {
 				'currency' => q(ネパール ルピー),
 				'other' => q(ネパール ルピー),
@@ -3623,246 +4883,287 @@ has 'curriencies' => (
 			},
 		},
 		'OMR' => {
+			symbol => 'OMR',
 			display_name => {
 				'currency' => q(オマーン リアル),
 				'other' => q(オマーン リアル),
 			},
 		},
 		'PAB' => {
+			symbol => 'PAB',
 			display_name => {
 				'currency' => q(パナマ バルボア),
 				'other' => q(パナマ バルボア),
 			},
 		},
 		'PEI' => {
+			symbol => 'PEI',
 			display_name => {
 				'currency' => q(ペルー インティ),
 				'other' => q(ペルー インティ),
 			},
 		},
 		'PEN' => {
+			symbol => 'PEN',
 			display_name => {
 				'currency' => q(ペルー 新ソル),
 				'other' => q(ペルー 新ソル),
 			},
 		},
 		'PES' => {
+			symbol => 'PES',
 			display_name => {
 				'currency' => q(ペルー ソル \(1863–1965\)),
 				'other' => q(ペルー ソル \(1863–1965\)),
 			},
 		},
 		'PGK' => {
+			symbol => 'PGK',
 			display_name => {
 				'currency' => q(パプアニューギニア キナ),
 				'other' => q(パプアニューギニア キナ),
 			},
 		},
 		'PHP' => {
+			symbol => 'PHP',
 			display_name => {
 				'currency' => q(フィリピン ペソ),
 				'other' => q(フィリピン ペソ),
 			},
 		},
 		'PKR' => {
+			symbol => 'PKR',
 			display_name => {
 				'currency' => q(パキスタン ルピー),
 				'other' => q(パキスタン ルピー),
 			},
 		},
 		'PLN' => {
+			symbol => 'PLN',
 			display_name => {
 				'currency' => q(ポーランド ズウォティ),
 				'other' => q(ポーランド ズウォティ),
 			},
 		},
 		'PLZ' => {
+			symbol => 'PLZ',
 			display_name => {
 				'currency' => q(ポーランド ズウォティ \(1950–1995\)),
 				'other' => q(ポーランド ズウォティ \(1950–1995\)),
 			},
 		},
 		'PTE' => {
+			symbol => 'PTE',
 			display_name => {
 				'currency' => q(ポルトガル エスクード),
 				'other' => q(ポルトガル エスクード),
 			},
 		},
 		'PYG' => {
+			symbol => 'PYG',
 			display_name => {
 				'currency' => q(パラグアイ グアラニ),
 				'other' => q(パラグアイ グアラニ),
 			},
 		},
 		'QAR' => {
+			symbol => 'QAR',
 			display_name => {
 				'currency' => q(カタール リアル),
 				'other' => q(カタール リアル),
 			},
 		},
 		'RHD' => {
+			symbol => 'RHD',
 			display_name => {
 				'currency' => q(ローデシア ドル),
 				'other' => q(ローデシア ドル),
 			},
 		},
 		'ROL' => {
+			symbol => 'ROL',
 			display_name => {
 				'currency' => q(ルーマニア レイ \(1952–2006\)),
 				'other' => q(ルーマニア レイ \(1952–2006\)),
 			},
 		},
 		'RON' => {
+			symbol => 'RON',
 			display_name => {
 				'currency' => q(ルーマニア レイ),
 				'other' => q(ルーマニア レイ),
 			},
 		},
 		'RSD' => {
+			symbol => 'RSD',
 			display_name => {
 				'currency' => q(ディナール \(セルビア\)),
 				'other' => q(ディナール \(セルビア\)),
 			},
 		},
 		'RUB' => {
+			symbol => 'RUB',
 			display_name => {
 				'currency' => q(ロシア ルーブル),
 				'other' => q(ロシア ルーブル),
 			},
 		},
 		'RUR' => {
+			symbol => 'RUR',
 			display_name => {
 				'currency' => q(ロシア ルーブル \(1991–1998\)),
 				'other' => q(ロシア ルーブル \(1991–1998\)),
 			},
 		},
 		'RWF' => {
+			symbol => 'RWF',
 			display_name => {
 				'currency' => q(ルワンダ フラン),
 				'other' => q(ルワンダ フラン),
 			},
 		},
 		'SAR' => {
+			symbol => 'SAR',
 			display_name => {
 				'currency' => q(サウジ リヤル),
 				'other' => q(サウジ リヤル),
 			},
 		},
 		'SBD' => {
+			symbol => 'SBD',
 			display_name => {
 				'currency' => q(ソロモン諸島 ドル),
 				'other' => q(ソロモン諸島 ドル),
 			},
 		},
 		'SCR' => {
+			symbol => 'SCR',
 			display_name => {
 				'currency' => q(セーシェル ルピー),
 				'other' => q(セーシェル ルピー),
 			},
 		},
 		'SDD' => {
+			symbol => 'SDD',
 			display_name => {
 				'currency' => q(スーダン ディナール \(1992–2007\)),
 				'other' => q(スーダン ディナール \(1992–2007\)),
 			},
 		},
 		'SDG' => {
+			symbol => 'SDG',
 			display_name => {
 				'currency' => q(スーダン ポンド),
 				'other' => q(スーダン ポンド),
 			},
 		},
 		'SDP' => {
+			symbol => 'SDP',
 			display_name => {
 				'currency' => q(スーダン ポンド \(1957–1998\)),
 				'other' => q(スーダン ポンド \(1957–1998\)),
 			},
 		},
 		'SEK' => {
+			symbol => 'SEK',
 			display_name => {
 				'currency' => q(スウェーデン クローナ),
 				'other' => q(スウェーデン クローナ),
 			},
 		},
 		'SGD' => {
+			symbol => 'SGD',
 			display_name => {
 				'currency' => q(シンガポール ドル),
 				'other' => q(シンガポール ドル),
 			},
 		},
 		'SHP' => {
+			symbol => 'SHP',
 			display_name => {
 				'currency' => q(セントヘレナ島 ポンド),
 				'other' => q(セントヘレナ島 ポンド),
 			},
 		},
 		'SIT' => {
+			symbol => 'SIT',
 			display_name => {
 				'currency' => q(スロベニア トラール),
 				'other' => q(スロベニア トラール),
 			},
 		},
 		'SKK' => {
+			symbol => 'SKK',
 			display_name => {
 				'currency' => q(スロバキア コルナ),
 				'other' => q(スロバキア コルナ),
 			},
 		},
 		'SLL' => {
+			symbol => 'SLL',
 			display_name => {
 				'currency' => q(シエラレオネ レオン),
 				'other' => q(シエラレオネ レオン),
 			},
 		},
 		'SOS' => {
+			symbol => 'SOS',
 			display_name => {
 				'currency' => q(ソマリア シリング),
 				'other' => q(ソマリア シリング),
 			},
 		},
 		'SRD' => {
+			symbol => 'SRD',
 			display_name => {
 				'currency' => q(スリナム ドル),
 				'other' => q(スリナム ドル),
 			},
 		},
 		'SRG' => {
+			symbol => 'SRG',
 			display_name => {
 				'currency' => q(スリナム ギルダー),
 				'other' => q(スリナム ギルダー),
 			},
 		},
 		'SSP' => {
+			symbol => 'SSP',
 			display_name => {
 				'currency' => q(南スーダン・ポンド),
 				'other' => q(南スーダン・ポンド),
 			},
 		},
 		'STD' => {
+			symbol => 'STD',
 			display_name => {
 				'currency' => q(サントメ・プリンシペ ドブラ),
 				'other' => q(サントメ・プリンシペ ドブラ),
 			},
 		},
 		'SUR' => {
+			symbol => 'SUR',
 			display_name => {
 				'currency' => q(ソ連 ルーブル),
 				'other' => q(ソ連 ルーブル),
 			},
 		},
 		'SVC' => {
+			symbol => 'SVC',
 			display_name => {
 				'currency' => q(エルサルバドル コロン),
 				'other' => q(エルサルバドル コロン),
 			},
 		},
 		'SYP' => {
+			symbol => 'SYP',
 			display_name => {
 				'currency' => q(シリア ポンド),
 				'other' => q(シリア ポンド),
 			},
 		},
 		'SZL' => {
+			symbol => 'SZL',
 			display_name => {
 				'currency' => q(スワジランド リランゲニ),
 				'other' => q(スワジランド リランゲニ),
@@ -3876,60 +5177,70 @@ has 'curriencies' => (
 			},
 		},
 		'TJR' => {
+			symbol => 'TJR',
 			display_name => {
 				'currency' => q(タジキスタン ルーブル),
 				'other' => q(タジキスタン ルーブル),
 			},
 		},
 		'TJS' => {
+			symbol => 'TJS',
 			display_name => {
 				'currency' => q(タジキスタン ソモニ),
 				'other' => q(タジキスタン ソモニ),
 			},
 		},
 		'TMM' => {
+			symbol => 'TMM',
 			display_name => {
 				'currency' => q(トルクメニスタン マナト \(1993–2009\)),
 				'other' => q(トルクメニスタン マナト \(1993–2009\)),
 			},
 		},
 		'TMT' => {
+			symbol => 'TMT',
 			display_name => {
 				'currency' => q(トルクメニスタン マナト),
 				'other' => q(トルクメニスタン マナト),
 			},
 		},
 		'TND' => {
+			symbol => 'TND',
 			display_name => {
 				'currency' => q(チュニジア ディナール),
 				'other' => q(チュニジア ディナール),
 			},
 		},
 		'TOP' => {
+			symbol => 'TOP',
 			display_name => {
 				'currency' => q(トンガ パ・アンガ),
 				'other' => q(トンガ パ・アンガ),
 			},
 		},
 		'TPE' => {
+			symbol => 'TPE',
 			display_name => {
 				'currency' => q(ティモール エスクード),
 				'other' => q(ティモール エスクード),
 			},
 		},
 		'TRL' => {
+			symbol => 'TRL',
 			display_name => {
 				'currency' => q(トルコ リラ \(1922–2005\)),
 				'other' => q(トルコ リラ \(1922–2005\)),
 			},
 		},
 		'TRY' => {
+			symbol => 'TRY',
 			display_name => {
 				'currency' => q(新トルコリラ),
 				'other' => q(新トルコリラ),
 			},
 		},
 		'TTD' => {
+			symbol => 'TTD',
 			display_name => {
 				'currency' => q(トリニダードトバゴ ドル),
 				'other' => q(トリニダードトバゴ ドル),
@@ -3943,30 +5254,35 @@ has 'curriencies' => (
 			},
 		},
 		'TZS' => {
+			symbol => 'TZS',
 			display_name => {
 				'currency' => q(タンザニア シリング),
 				'other' => q(タンザニア シリング),
 			},
 		},
 		'UAH' => {
+			symbol => 'UAH',
 			display_name => {
 				'currency' => q(ウクライナ グリブナ),
 				'other' => q(ウクライナ グリブナ),
 			},
 		},
 		'UAK' => {
+			symbol => 'UAK',
 			display_name => {
 				'currency' => q(ウクライナ カルボバネツ),
 				'other' => q(ウクライナ カルボバネツ),
 			},
 		},
 		'UGS' => {
+			symbol => 'UGS',
 			display_name => {
 				'currency' => q(ウガンダ シリング \(1966–1987\)),
 				'other' => q(ウガンダ シリング \(1966–1987\)),
 			},
 		},
 		'UGX' => {
+			symbol => 'UGX',
 			display_name => {
 				'currency' => q(ウガンダ シリング),
 				'other' => q(ウガンダ シリング),
@@ -3980,48 +5296,56 @@ has 'curriencies' => (
 			},
 		},
 		'USN' => {
+			symbol => 'USN',
 			display_name => {
 				'currency' => q(米ドル \(翌日\)),
 				'other' => q(米ドル \(翌日\)),
 			},
 		},
 		'USS' => {
+			symbol => 'USS',
 			display_name => {
 				'currency' => q(米ドル \(当日\)),
 				'other' => q(米ドル \(当日\)),
 			},
 		},
 		'UYI' => {
+			symbol => 'UYI',
 			display_name => {
 				'currency' => q(ウルグアイ ペソエン),
 				'other' => q(ウルグアイ ペソエン),
 			},
 		},
 		'UYP' => {
+			symbol => 'UYP',
 			display_name => {
 				'currency' => q(ウルグアイ ペソ \(1975–1993\)),
 				'other' => q(ウルグアイ ペソ \(1975–1993\)),
 			},
 		},
 		'UYU' => {
+			symbol => 'UYU',
 			display_name => {
 				'currency' => q(ウルグアイ ペソ),
 				'other' => q(ウルグアイ ペソ),
 			},
 		},
 		'UZS' => {
+			symbol => 'UZS',
 			display_name => {
 				'currency' => q(ウズベキスタン スム),
 				'other' => q(ウズベキスタン スム),
 			},
 		},
 		'VEB' => {
+			symbol => 'VEB',
 			display_name => {
 				'currency' => q(ベネズエラ ボリバル \(1871–2008\)),
 				'other' => q(ベネズエラ ボリバル \(1871–2008\)),
 			},
 		},
 		'VEF' => {
+			symbol => 'VEF',
 			display_name => {
 				'currency' => q(ベネズエラ ボリバル),
 				'other' => q(ベネズエラ ボリバル),
@@ -4035,18 +5359,21 @@ has 'curriencies' => (
 			},
 		},
 		'VNN' => {
+			symbol => 'VNN',
 			display_name => {
 				'currency' => q(ベトナム ドン（1978-1985）),
 				'other' => q(ベトナム ドン（1978-1985）),
 			},
 		},
 		'VUV' => {
+			symbol => 'VUV',
 			display_name => {
 				'currency' => q(バヌアツ バツ),
 				'other' => q(バヌアツ バツ),
 			},
 		},
 		'WST' => {
+			symbol => 'WST',
 			display_name => {
 				'currency' => q(サモア タラ),
 				'other' => q(サモア タラ),
@@ -4060,36 +5387,42 @@ has 'curriencies' => (
 			},
 		},
 		'XAG' => {
+			symbol => 'XAG',
 			display_name => {
 				'currency' => q(銀),
 				'other' => q(銀),
 			},
 		},
 		'XAU' => {
+			symbol => 'XAU',
 			display_name => {
 				'currency' => q(金),
 				'other' => q(金),
 			},
 		},
 		'XBA' => {
+			symbol => 'XBA',
 			display_name => {
 				'currency' => q(ヨーロッパ混合単位 \(EURCO\)),
 				'other' => q(ヨーロッパ混合単位 \(EURCO\)),
 			},
 		},
 		'XBB' => {
+			symbol => 'XBB',
 			display_name => {
 				'currency' => q(ヨーロッパ通貨単位 \(EMU–6\)),
 				'other' => q(ヨーロッパ通貨単位 \(EMU–6\)),
 			},
 		},
 		'XBC' => {
+			symbol => 'XBC',
 			display_name => {
 				'currency' => q(ヨーロッパ勘定単位 \(EUA–9\)),
 				'other' => q(ヨーロッパ勘定単位 \(EUA–9\)),
 			},
 		},
 		'XBD' => {
+			symbol => 'XBD',
 			display_name => {
 				'currency' => q(ヨーロッパ勘定単位 \(EUA–17\)),
 				'other' => q(ヨーロッパ勘定単位 \(EUA–17\)),
@@ -4103,24 +5436,28 @@ has 'curriencies' => (
 			},
 		},
 		'XDR' => {
+			symbol => 'XDR',
 			display_name => {
 				'currency' => q(特別引き出し権),
 				'other' => q(特別引き出し権),
 			},
 		},
 		'XEU' => {
+			symbol => 'XEU',
 			display_name => {
 				'currency' => q(ヨーロッパ通貨単位),
 				'other' => q(ヨーロッパ通貨単位),
 			},
 		},
 		'XFO' => {
+			symbol => 'XFO',
 			display_name => {
 				'currency' => q(フランス金フラン),
 				'other' => q(フランス金フラン),
 			},
 		},
 		'XFU' => {
+			symbol => 'XFU',
 			display_name => {
 				'currency' => q(フランス フラン \(UIC\)),
 				'other' => q(フランス フラン \(UIC\)),
@@ -4134,6 +5471,7 @@ has 'curriencies' => (
 			},
 		},
 		'XPD' => {
+			symbol => 'XPD',
 			display_name => {
 				'currency' => q(パラジウム),
 				'other' => q(パラジウム),
@@ -4147,126 +5485,147 @@ has 'curriencies' => (
 			},
 		},
 		'XPT' => {
+			symbol => 'XPT',
 			display_name => {
 				'currency' => q(プラチナ),
 				'other' => q(プラチナ),
 			},
 		},
 		'XRE' => {
+			symbol => 'XRE',
 			display_name => {
 				'currency' => q(RINET基金),
 				'other' => q(RINET基金),
 			},
 		},
 		'XSU' => {
+			symbol => 'XSU',
 			display_name => {
 				'currency' => q(スクレ),
 				'other' => q(スクレ),
 			},
 		},
 		'XTS' => {
+			symbol => 'XTS',
 			display_name => {
 				'currency' => q(テスト用通貨コード),
 				'other' => q(テスト用通貨コード),
 			},
 		},
 		'XUA' => {
+			symbol => 'XUA',
 			display_name => {
 				'currency' => q(UA \(アフリカ開発銀行\)),
 				'other' => q(UA \(アフリカ開発銀行\)),
 			},
 		},
 		'XXX' => {
+			symbol => 'XXX',
 			display_name => {
 				'currency' => q(不明または無効な通貨),
 				'other' => q(不明または無効な通貨),
 			},
 		},
 		'YDD' => {
+			symbol => 'YDD',
 			display_name => {
 				'currency' => q(イエメン ディナール),
 				'other' => q(イエメン ディナール),
 			},
 		},
 		'YER' => {
+			symbol => 'YER',
 			display_name => {
 				'currency' => q(イエメン リアル),
 				'other' => q(イエメン リアル),
 			},
 		},
 		'YUD' => {
+			symbol => 'YUD',
 			display_name => {
 				'currency' => q(ユーゴスラビア ハード・ディナール \(1966–1990\)),
 				'other' => q(ユーゴスラビア ハード・ディナール \(1966–1990\)),
 			},
 		},
 		'YUM' => {
+			symbol => 'YUM',
 			display_name => {
 				'currency' => q(ユーゴスラビア ノビ・ディナール \(1994–2002\)),
 				'other' => q(ユーゴスラビア ノビ・ディナール \(1994–2002\)),
 			},
 		},
 		'YUN' => {
+			symbol => 'YUN',
 			display_name => {
 				'currency' => q(ユーゴスラビア 兌換ディナール \(1990–1992\)),
 				'other' => q(ユーゴスラビア 兌換ディナール \(1990–1992\)),
 			},
 		},
 		'YUR' => {
+			symbol => 'YUR',
 			display_name => {
 				'currency' => q(ユーゴスラビア 改革ディナール（1992-1993）),
 				'other' => q(ユーゴスラビア 改革ディナール（1992-1993）),
 			},
 		},
 		'ZAL' => {
+			symbol => 'ZAL',
 			display_name => {
 				'currency' => q(南アフリカ ランド \(ZAL\)),
 				'other' => q(南アフリカ ランド \(ZAL\)),
 			},
 		},
 		'ZAR' => {
+			symbol => 'ZAR',
 			display_name => {
 				'currency' => q(南アフリカ ランド),
 				'other' => q(南アフリカ ランド),
 			},
 		},
 		'ZMK' => {
+			symbol => 'ZMK',
 			display_name => {
 				'currency' => q(ザンビア クワチャ \(1968–2012\)),
 				'other' => q(ザンビア クワチャ \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
+			symbol => 'ZMW',
 			display_name => {
 				'currency' => q(ザンビア クワチャ),
 				'other' => q(ザンビア クワチャ),
 			},
 		},
 		'ZRN' => {
+			symbol => 'ZRN',
 			display_name => {
 				'currency' => q(ザイール 新ザイール \(1993–1998\)),
 				'other' => q(ザイール 新ザイール \(1993–1998\)),
 			},
 		},
 		'ZRZ' => {
+			symbol => 'ZRZ',
 			display_name => {
 				'currency' => q(ザイール ザイール \(1971–1993\)),
 				'other' => q(ザイール ザイール \(1971–1993\)),
 			},
 		},
 		'ZWD' => {
+			symbol => 'ZWD',
 			display_name => {
 				'currency' => q(ジンバブエ ドル \(1980–2008\)),
 				'other' => q(ジンバブエ ドル \(1980–2008\)),
 			},
 		},
 		'ZWL' => {
+			symbol => 'ZWL',
 			display_name => {
 				'currency' => q(ジンバブエ ドル \(2009\)),
 				'other' => q(ジンバブエ ドル \(2009\)),
 			},
 		},
 		'ZWR' => {
+			symbol => 'ZWR',
 			display_name => {
 				'currency' => q(シンバブエ ドル（2008）),
 				'other' => q(シンバブエ ドル（2008）),
@@ -5556,14 +6915,14 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
+					'am' => q{午前},
 					'noon' => q{正午},
 					'pm' => q{午後},
-					'am' => q{午前},
 				},
 				'narrow' => {
-					'noon' => q{正午},
-					'am' => q{午前},
 					'pm' => q{午後},
+					'am' => q{午前},
+					'noon' => q{正午},
 				},
 			},
 		},
@@ -6273,6 +7632,106 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'islamic' => {
+			M => q{M月},
+			MEd => q{M/d(E)},
+			MMM => q{M月},
+			MMMEd => q{M月d日(E)},
+			MMMd => q{M月d日},
+			Md => q{M/d},
+			d => q{d日},
+			y => q{Gy年},
+		},
+		'gregorian' => {
+			E => q{ccc},
+			EEEEd => q{d日EEEE},
+			EHm => q{H:mm (E)},
+			EHms => q{H:mm:ss (E)},
+			Ed => q{d日(E)},
+			Ehm => q{aK:mm (E)},
+			Ehms => q{aK:mm:ss (E)},
+			Gy => q{Gy年},
+			GyMMM => q{Gy年M月},
+			GyMMMEEEEd => q{Gy年M月d日EEEE},
+			GyMMMEd => q{Gy年M月d日(E)},
+			GyMMMd => q{Gy年M月d日},
+			H => q{H時},
+			Hm => q{H:mm},
+			Hms => q{H:mm:ss},
+			M => q{M月},
+			MEEEEd => q{M/dEEEE},
+			MEd => q{M/d(E)},
+			MMM => q{M月},
+			MMMEEEEd => q{M月d日EEEE},
+			MMMEd => q{M月d日(E)},
+			MMMd => q{M月d日},
+			Md => q{M/d},
+			d => q{d日},
+			h => q{aK時},
+			hm => q{aK:mm},
+			hms => q{aK:mm:ss},
+			ms => q{mm:ss},
+			y => q{y年},
+			yM => q{y/M},
+			yMEEEEd => q{y/M/dEEEE},
+			yMEd => q{y/M/d(E)},
+			yMM => q{y/MM},
+			yMMM => q{y年M月},
+			yMMMEEEEd => q{y年M月d日EEEE},
+			yMMMEd => q{y年M月d日(E)},
+			yMMMd => q{y年M月d日},
+			yMd => q{y/M/d},
+			yQQQ => q{y/QQQ},
+			yQQQQ => q{yQQQQ},
+		},
+		'roc' => {
+			M => q{M月},
+			MEd => q{M/d(E)},
+			MMM => q{M月},
+			MMMEd => q{M月d日(E)},
+			MMMd => q{M月d日},
+			Md => q{M/d},
+			d => q{d日},
+			y => q{Gy年},
+		},
+		'japanese' => {
+			EEEEd => q{d日EEEE},
+			Ed => q{d日(E)},
+			Gy => q{Gy年},
+			GyMMM => q{Gy年M月},
+			GyMMMEEEEd => q{Gy年M月d日EEEE},
+			GyMMMEd => q{Gy年M月d日(E)},
+			GyMMMd => q{Gy年M月d日},
+			H => q{H時},
+			Hm => q{H:mm},
+			Hms => q{H:mm:ss},
+			M => q{M月},
+			MEEEEd => q{M/dEEEE},
+			MEd => q{M/d(E)},
+			MMM => q{M月},
+			MMMEEEEd => q{M月d日EEEE},
+			MMMEd => q{M月d日(E)},
+			MMMd => q{M月d日},
+			Md => q{M/d},
+			d => q{d日},
+			h => q{aK時},
+			hm => q{aK:mm},
+			hms => q{aK:mm:ss},
+			ms => q{mm:ss},
+			y => q{Gy年},
+			yyyy => q{Gy年},
+			yyyyM => q{Gy/M},
+			yyyyMEEEEd => q{Gy/M/dEEEE},
+			yyyyMEd => q{Gy/M/d(E)},
+			yyyyMM => q{Gy/MM},
+			yyyyMMM => q{Gy年M月},
+			yyyyMMMEEEEd => q{Gy年M月d日EEEE},
+			yyyyMMMEd => q{Gy年M月d日(E)},
+			yyyyMMMd => q{Gy年M月d日},
+			yyyyMd => q{Gy/M/d},
+			yyyyQQQ => q{Gy/QQQ},
+			yyyyQQQQ => q{GyQQQQ},
+		},
 		'generic' => {
 			EEEEd => q{d日EEEE},
 			Ed => q{d日(E)},
@@ -6310,60 +7769,41 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{Gy/QQQ},
 			yyyyQQQQ => q{GyQQQQ},
 		},
-		'roc' => {
-			M => q{M月},
-			MEd => q{M/d(E)},
-			MMM => q{M月},
-			MMMEd => q{M月d日(E)},
-			MMMd => q{M月d日},
-			Md => q{M/d},
-			d => q{d日},
-			y => q{Gy年},
-		},
-		'islamic' => {
-			M => q{M月},
-			MEd => q{M/d(E)},
-			MMM => q{M月},
-			MMMEd => q{M月d日(E)},
-			MMMd => q{M月d日},
-			Md => q{M/d},
-			d => q{d日},
-			y => q{Gy年},
-		},
-		'japanese' => {
+		'chinese' => {
 			EEEEd => q{d日EEEE},
 			Ed => q{d日(E)},
-			Gy => q{Gy年},
-			GyMMM => q{Gy年M月},
-			GyMMMEEEEd => q{Gy年M月d日EEEE},
-			GyMMMEd => q{Gy年M月d日(E)},
-			GyMMMd => q{Gy年M月d日},
+			Gy => q{U年},
+			GyMMM => q{U年MMM},
+			GyMMMEEEEd => q{U年MMMd日EEEE},
+			GyMMMEd => q{U年MMMd日(E)},
+			GyMMMd => q{U年MMMd日},
 			H => q{H時},
 			Hm => q{H:mm},
 			Hms => q{H:mm:ss},
-			M => q{M月},
+			M => q{MMM},
 			MEEEEd => q{M/dEEEE},
 			MEd => q{M/d(E)},
-			MMM => q{M月},
-			MMMEEEEd => q{M月d日EEEE},
-			MMMEd => q{M月d日(E)},
-			MMMd => q{M月d日},
+			MMMEEEEd => q{MMMd日EEEE},
+			MMMEd => q{MMMd日(E)},
+			MMMd => q{MMMd日},
 			Md => q{M/d},
 			d => q{d日},
 			h => q{aK時},
 			hm => q{aK:mm},
 			hms => q{aK:mm:ss},
-			ms => q{mm:ss},
-			y => q{Gy年},
-			yyyy => q{Gy年},
-			yyyyMEEEEd => q{Gy/M/dEEEE},
-			yyyyMEd => q{Gy/M/d(E)},
-			yyyyMM => q{Gy/MM},
-			yyyyMMM => q{Gy年M月},
-			yyyyMMMEEEEd => q{Gy年M月d日EEEE},
-			yyyyMMMEd => q{Gy年M月d日(E)},
-			yyyyMMMd => q{Gy年M月d日},
-			yyyyMd => q{Gy/M/d},
+			y => q{U年},
+			yMd => q{U年M月d日},
+			yyyy => q{U年},
+			yyyyM => q{U年M月},
+			yyyyMEEEEd => q{U年M月d日EEEE},
+			yyyyMEd => q{U年M月d日(E)},
+			yyyyMMM => q{U年MMM},
+			yyyyMMMEEEEd => q{U年MMMd日EEEE},
+			yyyyMMMEd => q{U年MMMd日(E)},
+			yyyyMMMd => q{U年MMMd日},
+			yyyyMd => q{U年M月d日},
+			yyyyQQQ => q{U年QQQ},
+			yyyyQQQQ => q{U年QQQQ},
 		},
 		'buddhist' => {
 			EEEEd => q{d日EEEE},
@@ -6402,83 +7842,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyMMMd => q{GGGGy年M月d日},
 			yyyyMd => q{Gy/M/d},
 		},
-		'chinese' => {
-			EEEEd => q{d日EEEE},
-			Ed => q{d日(E)},
-			Gy => q{U年},
-			GyMMM => q{U年MMM},
-			GyMMMEEEEd => q{U年MMMd日EEEE},
-			GyMMMEd => q{U年MMMd日(E)},
-			GyMMMd => q{U年MMMd日},
-			H => q{H時},
-			Hm => q{H:mm},
-			Hms => q{H:mm:ss},
-			M => q{MMM},
-			MEEEEd => q{M/dEEEE},
-			MEd => q{M/d(E)},
-			MMMEEEEd => q{MMMd日EEEE},
-			MMMEd => q{MMMd日(E)},
-			MMMd => q{MMMd日},
-			Md => q{M/d},
-			d => q{d日},
-			h => q{aK時},
-			hm => q{aK:mm},
-			hms => q{aK:mm:ss},
-			y => q{U年},
-			yMd => q{U年M月d日},
-			yyyy => q{U年},
-			yyyyM => q{U年M月},
-			yyyyMEEEEd => q{U年M月d日EEEE},
-			yyyyMEd => q{U年M月d日(E)},
-			yyyyMMM => q{U年MMM},
-			yyyyMMMEEEEd => q{U年MMMd日EEEE},
-			yyyyMMMEd => q{U年MMMd日(E)},
-			yyyyMMMd => q{U年MMMd日},
-			yyyyMd => q{U年M月d日},
-			yyyyQQQ => q{U年QQQ},
-			yyyyQQQQ => q{U年QQQQ},
-		},
-		'gregorian' => {
-			EEEEd => q{d日EEEE},
-			EHm => q{HH 時 mm 分 (E)},
-			EHms => q{HH 時 mm 分 ss 秒 (E)},
-			Ed => q{d日(E)},
-			Ehm => q{a K 時 mm 分 (E)},
-			Ehms => q{a K 時 mm 分 ss 秒 (E)},
-			Gy => q{Gy年},
-			GyMMM => q{Gy年M月},
-			GyMMMEEEEd => q{Gy年M月d日EEEE},
-			GyMMMEd => q{Gy年M月d日(E)},
-			GyMMMd => q{Gy年M月d日},
-			H => q{H時},
-			Hm => q{H:mm},
-			Hms => q{H:mm:ss},
-			M => q{M月},
-			MEEEEd => q{M/dEEEE},
-			MEd => q{M/d(E)},
-			MMM => q{M月},
-			MMMEEEEd => q{M月d日EEEE},
-			MMMEd => q{M月d日(E)},
-			MMMd => q{M月d日},
-			Md => q{M/d},
-			d => q{d日},
-			h => q{aK時},
-			hm => q{aK:mm},
-			hms => q{aK:mm:ss},
-			ms => q{mm:ss},
-			y => q{y年},
-			yM => q{y/M},
-			yMEEEEd => q{y/M/dEEEE},
-			yMEd => q{y/M/d(E)},
-			yMM => q{y/MM},
-			yMMM => q{y年M月},
-			yMMMEEEEd => q{y年M月d日EEEE},
-			yMMMEd => q{y年M月d日(E)},
-			yMMMd => q{y年M月d日},
-			yMd => q{y/M/d},
-			yQQQ => q{y/QQQ},
-			yQQQQ => q{yQQQQ},
-		},
 	} },
 );
 
@@ -6498,6 +7861,104 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'gregorian' => {
+			H => {
+				H => q{H時～H時},
+			},
+			Hm => {
+				H => q{H時mm分～H時mm分},
+				m => q{H時mm分～H時mm分},
+			},
+			Hmv => {
+				H => q{H時mm分～H時mm分(v)},
+				m => q{H時mm分～H時mm分(v)},
+			},
+			Hv => {
+				H => q{H時～H時(v)},
+			},
+			M => {
+				M => q{M月～M月},
+			},
+			MEd => {
+				M => q{MM/dd(E)～MM/dd(E)},
+				d => q{MM/dd(E)～MM/dd(E)},
+			},
+			MMM => {
+				M => q{M月～M月},
+			},
+			MMMEd => {
+				M => q{M月d日(E)～M月d日(E)},
+				d => q{M月d日(E)～d日(E)},
+			},
+			MMMM => {
+				M => q{M月～M月},
+			},
+			MMMd => {
+				M => q{M月d日～M月d日},
+				d => q{M月d日～d日},
+			},
+			Md => {
+				M => q{MM/dd～MM/dd},
+				d => q{MM/dd～MM/dd},
+			},
+			d => {
+				d => q{d日～d日},
+			},
+			fallback => '{0}～{1}',
+			h => {
+				a => q{aK時～aK時},
+				h => q{aK時～K時},
+			},
+			hm => {
+				a => q{aK時mm分～aK時mm分},
+				h => q{aK時mm分～K時mm分},
+				m => q{aK時mm分～K時mm分},
+			},
+			hmv => {
+				a => q{aK時mm分～aK時mm分(v)},
+				h => q{aK時mm分～K時mm分(v)},
+				m => q{aK時mm分～K時mm分(v)},
+			},
+			hv => {
+				a => q{aK時～aK時(v)},
+				h => q{aK時～K時(v)},
+			},
+			y => {
+				y => q{y年～y年},
+			},
+			yM => {
+				M => q{y/MM～y/MM},
+				y => q{y/MM～y/MM},
+			},
+			yMEd => {
+				M => q{y/MM/dd(E)～y/MM/dd(E)},
+				d => q{y/MM/dd(E)～y/MM/dd(E)},
+				y => q{y/MM/dd(E)～y/MM/dd(E)},
+			},
+			yMMM => {
+				M => q{y年M月～M月},
+				y => q{y年M月～y年M月},
+			},
+			yMMMEd => {
+				M => q{y年M月d日(E)～M月d日(E)},
+				d => q{y年M月d日(E)～d日(E)},
+				y => q{y年M月d日(E)～y年M月d日(E)},
+			},
+			yMMMM => {
+				M => q{y年M月～M月},
+				y => q{y年M月～y年M月},
+			},
+			yMMMd => {
+				M => q{y年M月d日～M月d日},
+				d => q{y年M月d日～d日},
+				y => q{y年M月d日～y年M月d日},
+			},
+			yMd => {
+				M => q{y/MM/dd～y/MM/dd},
+				d => q{y/MM/dd～y/MM/dd},
+				y => q{y/MM/dd～y/MM/dd},
+			},
+		},
 		'generic' => {
 			H => {
 				H => q{H時～H時},
@@ -6692,104 +8153,6 @@ has 'datetime_formats_interval' => (
 				M => q{U/MM/dd～U/MM/dd},
 				d => q{U/MM/dd～U/MM/dd},
 				y => q{U/MM/dd～U/MM/dd},
-			},
-		},
-		'gregorian' => {
-			H => {
-				H => q{H時～H時},
-			},
-			Hm => {
-				H => q{H時mm分～H時mm分},
-				m => q{H時mm分～H時mm分},
-			},
-			Hmv => {
-				H => q{H時mm分～H時mm分(v)},
-				m => q{H時mm分～H時mm分(v)},
-			},
-			Hv => {
-				H => q{H時～H時(v)},
-			},
-			M => {
-				M => q{M月～M月},
-			},
-			MEd => {
-				M => q{MM/dd(E)～MM/dd(E)},
-				d => q{MM/dd(E)～MM/dd(E)},
-			},
-			MMM => {
-				M => q{M月～M月},
-			},
-			MMMEd => {
-				M => q{M月d日(E)～M月d日(E)},
-				d => q{M月d日(E)～d日(E)},
-			},
-			MMMM => {
-				M => q{M月～M月},
-			},
-			MMMd => {
-				M => q{M月d日～M月d日},
-				d => q{M月d日～d日},
-			},
-			Md => {
-				M => q{MM/dd～MM/dd},
-				d => q{MM/dd～MM/dd},
-			},
-			d => {
-				d => q{d日～d日},
-			},
-			fallback => '{0}～{1}',
-			h => {
-				a => q{aK時～aK時},
-				h => q{aK時～K時},
-			},
-			hm => {
-				a => q{aK時mm分～aK時mm分},
-				h => q{aK時mm分～K時mm分},
-				m => q{aK時mm分～K時mm分},
-			},
-			hmv => {
-				a => q{aK時mm分～aK時mm分(v)},
-				h => q{aK時mm分～K時mm分(v)},
-				m => q{aK時mm分～K時mm分(v)},
-			},
-			hv => {
-				a => q{aK時～aK時(v)},
-				h => q{aK時～K時(v)},
-			},
-			y => {
-				y => q{y年～y年},
-			},
-			yM => {
-				M => q{y/MM～y/MM},
-				y => q{y/MM～y/MM},
-			},
-			yMEd => {
-				M => q{y/MM/dd(E)～y/MM/dd(E)},
-				d => q{y/MM/dd(E)～y/MM/dd(E)},
-				y => q{y/MM/dd(E)～y/MM/dd(E)},
-			},
-			yMMM => {
-				M => q{y年M月～M月},
-				y => q{y年M月～y年M月},
-			},
-			yMMMEd => {
-				M => q{y年M月d日(E)～M月d日(E)},
-				d => q{y年M月d日(E)～d日(E)},
-				y => q{y年M月d日(E)～y年M月d日(E)},
-			},
-			yMMMM => {
-				M => q{y年M月～M月},
-				y => q{y年M月～y年M月},
-			},
-			yMMMd => {
-				M => q{y年M月d日～M月d日},
-				d => q{y年M月d日～d日},
-				y => q{y年M月d日～y年M月d日},
-			},
-			yMd => {
-				M => q{y/MM/dd～y/MM/dd},
-				d => q{y/MM/dd～y/MM/dd},
-				y => q{y/MM/dd～y/MM/dd},
 			},
 		},
 	} },
@@ -6987,7 +8350,7 @@ has 'time_zone_names' => (
 		},
 		'Africa_Southern' => {
 			long => {
-				'standard' => q(南アフリカ時間),
+				'standard' => q(南アフリカ標準時),
 			},
 		},
 		'Africa_Western' => {
@@ -7169,7 +8532,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#グレースベイ#,
 		},
 		'America/Godthab' => {
-			exemplarCity => q#ゴッドホープ#,
+			exemplarCity => q#ヌーク#,
 		},
 		'America/Goose_Bay' => {
 			exemplarCity => q#グースベイ#,
@@ -7397,7 +8760,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#サンパウロ#,
 		},
 		'America/Scoresbysund' => {
-			exemplarCity => q#スコルズビスーン#,
+			exemplarCity => q#イトコルトルミット#,
 		},
 		'America/Sitka' => {
 			exemplarCity => q#シトカ#,
@@ -7498,7 +8861,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#デービス基地#,
 		},
 		'Antarctica/DumontDUrville' => {
-			exemplarCity => q#デュモン・デュルビル基地#,
+			exemplarCity => q#デュモン・デュルヴィル基地#,
 		},
 		'Antarctica/Macquarie' => {
 			exemplarCity => q#マッコリー#,
@@ -7518,8 +8881,18 @@ has 'time_zone_names' => (
 		'Antarctica/Syowa' => {
 			exemplarCity => q#昭和基地#,
 		},
+		'Antarctica/Troll' => {
+			exemplarCity => q#トロル基地#,
+		},
 		'Antarctica/Vostok' => {
 			exemplarCity => q#ボストーク基地#,
+		},
+		'Apia' => {
+			long => {
+				'daylight' => q(アピーア夏時間),
+				'generic' => q(アピーア時間),
+				'standard' => q(アピーア標準時),
+			},
 		},
 		'Aqtau' => {
 			long => {
@@ -8092,7 +9465,7 @@ has 'time_zone_names' => (
 		'Europe/Dublin' => {
 			exemplarCity => q#ダブリン#,
 			long => {
-				'daylight' => q(アイルランド夏時間),
+				'daylight' => q(アイルランド標準時),
 			},
 		},
 		'Europe/Gibraltar' => {
@@ -8132,7 +9505,7 @@ has 'time_zone_names' => (
 			},
 		},
 		'Europe/Luxembourg' => {
-			exemplarCity => q#ルクセンブルグ#,
+			exemplarCity => q#ルクセンブルク#,
 		},
 		'Europe/Madrid' => {
 			exemplarCity => q#マドリード#,
@@ -8241,6 +9614,11 @@ has 'time_zone_names' => (
 				'standard' => q(東ヨーロッパ標準時),
 			},
 		},
+		'Europe_Further_Eastern' => {
+			long => {
+				'standard' => q(極東ヨーロッパ時間),
+			},
+		},
 		'Europe_Western' => {
 			long => {
 				'daylight' => q(西ヨーロッパ夏時間),
@@ -8320,7 +9698,7 @@ has 'time_zone_names' => (
 		},
 		'Gulf' => {
 			long => {
-				'standard' => q(湾岸時間),
+				'standard' => q(湾岸標準時),
 			},
 		},
 		'Guyana' => {
@@ -8351,7 +9729,7 @@ has 'time_zone_names' => (
 		},
 		'India' => {
 			long => {
-				'standard' => q(インド時間),
+				'standard' => q(インド標準時),
 			},
 		},
 		'Indian/Antananarivo' => {
@@ -8873,7 +10251,7 @@ has 'time_zone_names' => (
 		},
 		'Singapore' => {
 			long => {
-				'standard' => q(シンガポール時間),
+				'standard' => q(シンガポール標準時),
 			},
 		},
 		'Solomon' => {
@@ -8979,7 +10357,7 @@ has 'time_zone_names' => (
 			long => {
 				'daylight' => q(ボルゴグラード夏時間),
 				'generic' => q(ボルゴグラード時間),
-				'standard' => q(ヴォルゴグラード標準時),
+				'standard' => q(ボルゴグラード標準時),
 			},
 		},
 		'Vostok' => {

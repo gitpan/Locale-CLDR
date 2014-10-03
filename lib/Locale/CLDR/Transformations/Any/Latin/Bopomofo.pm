@@ -1,11 +1,11 @@
 package Locale::CLDR::Transformations::Any::Latin::Bopomofo;
 # This file auto generated from Data\common\transforms\Latin-Bopomofo.xml
-#	on Fri 20 Jun 10:43:33 pm GMT
-# XML file generated 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013)
+#	on Thu  2 Oct 10:06:24 am GMT
+# XML file generated 2014-08-12 23:23:18 -0500 (Tue, 12 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -25,7 +25,24 @@ has 'transforms' => (
 	isa => 'ArrayRef',
 	init_arg => undef,
 	default => sub { [
-		qr/(?^umi:\G(?^u:(?[[\p{Latin}] + [1-5]])))/,
+		qr/(?^umi:\G(?^u:(?[[\p{Latin} + \p{Mn}] + [1-5]])))/,
+		{
+			type => 'transform',
+			data => [
+			],
+		},
+		{
+			type => 'conversion',
+			data => [
+				{
+					before  => q((?^u:[ln])),
+					after   => q(),
+					replace => q((?^u:v)),
+					result  => q(ü),
+					revisit => 0,
+				},
+			],
+		},
 		{
 			type => 'transform',
 			data => [
@@ -1833,20 +1850,6 @@ has 'transforms' => (
 				{
 					before  => q(),
 					after   => q((?^u:[1-5])),
-					replace => q((?^u:nve)),
-					result  => q(ㄋㄩㄝ),
-					revisit => 0,
-				},
-				{
-					before  => q(),
-					after   => q(),
-					replace => q((?^u:nve)),
-					result  => q(ㄋㄩㄝ˙),
-					revisit => 0,
-				},
-				{
-					before  => q(),
-					after   => q((?^u:[1-5])),
 					replace => q((?^u:nue)),
 					result  => q(ㄋㄩㄝ),
 					revisit => 0,
@@ -1925,20 +1928,6 @@ has 'transforms' => (
 					before  => q(),
 					after   => q(),
 					replace => q((?^u:nü)),
-					result  => q(ㄋㄩ˙),
-					revisit => 0,
-				},
-				{
-					before  => q(),
-					after   => q((?^u:[1-5])),
-					replace => q((?^u:nv)),
-					result  => q(ㄋㄩ),
-					revisit => 0,
-				},
-				{
-					before  => q(),
-					after   => q(),
-					replace => q((?^u:nv)),
 					result  => q(ㄋㄩ˙),
 					revisit => 0,
 				},
@@ -2065,20 +2054,6 @@ has 'transforms' => (
 					before  => q(),
 					after   => q(),
 					replace => q((?^u:lüan)),
-					result  => q(ㄌㄩㄢ˙),
-					revisit => 0,
-				},
-				{
-					before  => q(),
-					after   => q((?^u:[1-5])),
-					replace => q((?^u:lvan)),
-					result  => q(ㄌㄩㄢ),
-					revisit => 0,
-				},
-				{
-					before  => q(),
-					after   => q(),
-					replace => q((?^u:lvan)),
 					result  => q(ㄌㄩㄢ˙),
 					revisit => 0,
 				},
@@ -2253,20 +2228,6 @@ has 'transforms' => (
 				{
 					before  => q(),
 					after   => q((?^u:[1-5])),
-					replace => q((?^u:lve)),
-					result  => q(ㄌㄩㄝ),
-					revisit => 0,
-				},
-				{
-					before  => q(),
-					after   => q(),
-					replace => q((?^u:lve)),
-					result  => q(ㄌㄩㄝ˙),
-					revisit => 0,
-				},
-				{
-					before  => q(),
-					after   => q((?^u:[1-5])),
 					replace => q((?^u:lue)),
 					result  => q(ㄌㄩㄝ),
 					revisit => 0,
@@ -2359,20 +2320,6 @@ has 'transforms' => (
 					before  => q(),
 					after   => q(),
 					replace => q((?^u:lü)),
-					result  => q(ㄌㄩ˙),
-					revisit => 0,
-				},
-				{
-					before  => q(),
-					after   => q((?^u:[1-5])),
-					replace => q((?^u:lv)),
-					result  => q(ㄌㄩ),
-					revisit => 0,
-				},
-				{
-					before  => q(),
-					after   => q(),
-					replace => q((?^u:lv)),
 					result  => q(ㄌㄩ˙),
 					revisit => 0,
 				},

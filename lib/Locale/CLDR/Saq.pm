@@ -1,11 +1,11 @@
 package Locale::CLDR::Saq;
 # This file auto generated from Data\common\main\saq.xml
-#	on Sat 21 Jun 12:59:43 am GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct  1:34:00 pm GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -714,7 +714,7 @@ has 'calendar_months' => (
 							'Lapa le obo',
 							'Lapa le waare',
 							'Lapa le okuni',
-							'Lapa le ong\'wan',
+							'Lapa le ong’wan',
 							'Lapa le imet',
 							'Lapa le ile',
 							'Lapa le sapa',
@@ -772,7 +772,7 @@ has 'calendar_days' => (
 					},
 					wide => {
 						mon => 'Mderot ee kuni',
-						tue => 'Mderot ee ong\'wan',
+						tue => 'Mderot ee ong’wan',
 						wed => 'Mderot ee inet',
 						thu => 'Mderot ee ile',
 						fri => 'Mderot ee sapa',
@@ -825,8 +825,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{Teipa},
 					'am' => q{Tesiran},
+					'pm' => q{Teipa},
 				},
 			},
 		},

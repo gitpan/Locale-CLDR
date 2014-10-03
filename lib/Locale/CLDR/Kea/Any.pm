@@ -1,11 +1,11 @@
 package Locale::CLDR::Kea::Any;
 
 # This file auto generated
-#	on Sat 21 Jun 12:03:19 am GMT
+#	on Thu  2 Oct 11:59:31 am GMT
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';

@@ -1,11 +1,11 @@
 package Locale::CLDR::Rm;
 # This file auto generated from Data\common\main\rm.xml
-#	on Sat 21 Jun 12:53:07 am GMT
-# XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
+#	on Thu  2 Oct  1:25:47 pm GMT
+# XML file generated 2014-08-14 15:10:07 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -140,12 +140,15 @@ has 'display_name_language' => (
  				'en_AU' => 'englais australian',
  				'en_CA' => 'englais canadais',
  				'en_GB' => 'englais britannic',
+ 				'en_GB@alt=short' => 'englais (GB)',
  				'en_US' => 'englais american',
+ 				'en_US@alt=short' => 'englais (US)',
  				'enm' => 'englais mesaun',
  				'eo' => 'esperanto',
  				'es' => 'spagnol',
  				'es_419' => 'spagnol latinamerican',
  				'es_ES' => 'spagnol iberic',
+ 				'es_MX' => 'spagnol mexican',
  				'et' => 'eston',
  				'eu' => 'basc',
  				'ewo' => 'ewondo',
@@ -164,7 +167,7 @@ has 'display_name_language' => (
  				'frm' => 'franzos mesaun',
  				'fro' => 'franzos vegl',
  				'frr' => 'fris dal nord',
- 				'frs' => 'fris da l\'ost',
+ 				'frs' => 'fris da l’ost',
  				'fur' => 'friulan',
  				'fy' => 'fris',
  				'ga' => 'irlandais',
@@ -323,7 +326,7 @@ has 'display_name_language' => (
  				'no' => 'norvegiais',
  				'nog' => 'nogai',
  				'non' => 'nordic vegl',
- 				'nqo' => 'n\'ko',
+ 				'nqo' => 'n’ko',
  				'nr' => 'ndebele dal sid',
  				'nso' => 'sotho dal nord',
  				'nv' => 'navajo',
@@ -569,7 +572,7 @@ has 'display_name_script' => (
  			'Moon' => 'moon',
  			'Mtei' => 'meetei mayek',
  			'Mymr' => 'burmais',
- 			'Nkoo' => 'n\'ko',
+ 			'Nkoo' => 'n’ko',
  			'Ogam' => 'ogham',
  			'Olck' => 'ol chiki',
  			'Orkh' => 'orkhon',
@@ -597,7 +600,7 @@ has 'display_name_script' => (
  			'Syrc' => 'siric',
  			'Syre' => 'siric estrangelo',
  			'Syrj' => 'siric dal vest',
- 			'Syrn' => 'siric da l\'ost',
+ 			'Syrn' => 'siric da l’ost',
  			'Tagb' => 'tagbanwa',
  			'Tale' => 'tai le',
  			'Talu' => 'tai lue',
@@ -645,13 +648,13 @@ has 'display_name_territory' => (
  			'009' => 'Oceania',
  			'011' => 'Africa dal Vest',
  			'013' => 'America Centrala',
- 			'014' => 'Africa da l\'Ost',
+ 			'014' => 'Africa da l’Ost',
  			'015' => 'Africa dal Nord',
  			'017' => 'Africa Centrala',
  			'018' => 'Africa Meridiunala',
  			'019' => 'America dal Nord, America Centrala ed America dal Sid',
  			'029' => 'Caribica',
- 			'030' => 'Asia da l\'Ost',
+ 			'030' => 'Asia da l’Ost',
  			'034' => 'Asia dal Sid',
  			'035' => 'Asia dal Sidost',
  			'039' => 'Europa dal Sid',
@@ -710,7 +713,7 @@ has 'display_name_territory' => (
  			'CF' => 'Republica Centralafricana',
  			'CG' => 'Congo',
  			'CH' => 'Svizra',
- 			'CI' => 'Costa d\'Ivur',
+ 			'CI' => 'Costa d’Ivur',
  			'CK' => 'Inslas Cook',
  			'CL' => 'Chile',
  			'CM' => 'Camerun',
@@ -761,7 +764,7 @@ has 'display_name_territory' => (
  			'GU' => 'Guam',
  			'GW' => 'Guinea-Bissau',
  			'GY' => 'Guyana',
- 			'HK' => 'Regiun d\'administraziun speziala da Hongkong, China',
+ 			'HK' => 'Regiun d’administraziun speziala da Hongkong, China',
  			'HM' => 'Inslas da Heard e da McDonlad',
  			'HN' => 'Honduras',
  			'HR' => 'Croazia',
@@ -772,7 +775,7 @@ has 'display_name_territory' => (
  			'IL' => 'Israel',
  			'IM' => 'Insla da Man',
  			'IN' => 'India',
- 			'IO' => 'Territori Britannic en l\'Ocean Indic',
+ 			'IO' => 'Territori Britannic en l’Ocean Indic',
  			'IQ' => 'Irac',
  			'IR' => 'Iran',
  			'IS' => 'Islanda',
@@ -814,7 +817,7 @@ has 'display_name_territory' => (
  			'ML' => 'Mali',
  			'MM' => 'Myanmar',
  			'MN' => 'Mongolia',
- 			'MO' => 'Regiun d\'administraziun speziala Macao, China',
+ 			'MO' => 'Regiun d’administraziun speziala Macao, China',
  			'MP' => 'Inslas Mariannas dal Nord',
  			'MQ' => 'Martinique',
  			'MR' => 'Mauretania',
@@ -866,7 +869,7 @@ has 'display_name_territory' => (
  			'SD' => 'Sudan',
  			'SE' => 'Svezia',
  			'SG' => 'Singapur',
- 			'SH' => 'Sontg\'Elena',
+ 			'SH' => 'Sontg’Elena',
  			'SI' => 'Slovenia',
  			'SJ' => 'Svalbard e Jan Mayen',
  			'SK' => 'Slovachia',
@@ -887,7 +890,7 @@ has 'display_name_territory' => (
  			'TH' => 'Tailanda',
  			'TJ' => 'Tadschikistan',
  			'TK' => 'Tokelau',
- 			'TL' => 'Timor da l\'Ost',
+ 			'TL' => 'Timor da l’Ost',
  			'TM' => 'Turkmenistan',
  			'TN' => 'Tunesia',
  			'TO' => 'Tonga',
@@ -898,8 +901,8 @@ has 'display_name_territory' => (
  			'TZ' => 'Tansania',
  			'UA' => 'Ucraina',
  			'UG' => 'Uganda',
- 			'UM' => 'Inslas pitschnas perifericas dals Stadis Unids da l\'America',
- 			'US' => 'Stadis Unids da l\'America',
+ 			'UM' => 'Inslas pitschnas perifericas dals Stadis Unids da l’America',
+ 			'US' => 'Stadis Unids da l’America',
  			'UY' => 'Uruguay',
  			'UZ' => 'Usbekistan',
  			'VA' => 'Citad dal Vatican',
@@ -939,7 +942,7 @@ has 'display_name_variant' => (
  			'BISKE' => 'dialect da San Giorgio',
  			'BOONT' => 'dialect boontling',
  			'FONIPA' => 'alfabet fonetic internaziunal (IPA)',
- 			'FONUPA' => 'alfabet fonetic da l\'Ural (UPA)',
+ 			'FONUPA' => 'alfabet fonetic da l’Ural (UPA)',
  			'LIPAW' => 'dialect lipovaz da Resia',
  			'MONOTON' => 'monotonic',
  			'NEDIS' => 'dialect da Natisone',
@@ -969,6 +972,7 @@ has 'display_name_key' => (
 			'calendar' => 'chalender',
  			'collation' => 'zavrada',
  			'currency' => 'munaida',
+ 			'numbers' => 'dumbers',
 
 		}
 	},
@@ -983,12 +987,18 @@ has 'display_name_type' => (
 			'calendar' => {
  				'buddhist' => q{chalender budistic},
  				'chinese' => q{chalender chinais},
+ 				'coptic' => q{chalender coptic},
+ 				'ethiopic' => q{chalender etiopic},
  				'gregorian' => q{chalender gregorian},
  				'hebrew' => q{chalender ebraic},
  				'indian' => q{chalender naziunal indic},
  				'islamic' => q{chalender islamic},
  				'islamic-civil' => q{chalender islamic civil},
+ 				'islamic-rgsa' => q{chalender islamic (Arabia Saudita)},
+ 				'islamic-umalqura' => q{chalender islamic (Umm al-Qura)},
+ 				'iso8601' => q{chalender tenor ISO 8601},
  				'japanese' => q{chalender giapunais},
+ 				'persian' => q{chalender persian},
  				'roc' => q{chalendar da la republica chinaisa},
  			},
  			'collation' => {
@@ -996,8 +1006,15 @@ has 'display_name_type' => (
  				'gb2312han' => q{chinaisa simplifitgada - GB2312},
  				'phonebook' => q{cudesch da telefon},
  				'pinyin' => q{Pinyin},
+ 				'standard' => q{zavrada da standard},
  				'stroke' => q{urden dals stritgs},
  				'traditional' => q{reglas tradiziunalas},
+ 			},
+ 			'numbers' => {
+ 				'armn' => q{dumbers armens},
+ 				'beng' => q{cifras bengalas},
+ 				'geor' => q{dumbers georgians},
+ 				'latn' => q{cifras europeicas},
  			},
 
 		}
@@ -1010,8 +1027,9 @@ has 'display_name_measurement_system' => (
 	init_arg	=> undef,
 	default		=> sub { 
 		{
-			'metric' => q{unitads metrics},
- 			'US' => q{unitads americans},
+			'metric' => q{metric},
+ 			'UK' => q{englais},
+ 			'US' => q{american},
 
 		}
 	},
@@ -1040,7 +1058,7 @@ has 'characters' => (
 	sub {
 		no warnings 'experimental::regex_sets';
 		return {
-			auxiliary => qr{(?^u:[á à ă â å ä ā æ ç é è ĕ ê ë ē í ì ĭ î ï ī ñ ó ò ŏ ô ö ø ō œ ú ù ŭ û ü ū ÿ])},
+			auxiliary => qr{(?^u:[á ă â å ä ā æ ç ĕ ê ë ē í ĭ î ï ī ñ ó ŏ ô ö ø ō œ ú ŭ û ü ū ÿ])},
 			index => ['A', 'À', 'B', 'C', 'D', 'E', 'É', 'È', 'F', 'G', 'H', 'I', 'Ì', 'J', 'K', 'L', 'M', 'N', 'O', 'Ò', 'P', 'Q', 'R', 'S', 'T', 'U', 'Ù', 'V', 'W', 'X', 'Y', 'Z'],
 			main => qr{(?^u:[a à b c d e é è f g h i ì j k l m n o ò p q r s t u ù v w x y z])},
 		};
@@ -1080,67 +1098,279 @@ has 'alternate_quote_end' => (
 	default		=> qq{›},
 );
 
+has 'duration_units' => (
+	is			=> 'ro',
+	isa			=> 'HashRef[Str]',
+	init_arg	=> undef,
+	default		=> sub { {
+				hm => 'h:mm',
+				hms => 'h:mm:ss',
+				ms => 'm:ss',
+			} }
+);
+
 has 'units' => (
 	is			=> 'ro',
 	isa			=> 'HashRef[HashRef[HashRef[Str]]]',
 	init_arg	=> undef,
 	default		=> sub { {
 				'long' => {
+					'celsius' => {
+						'' => q(grads celsius),
+						'one' => q({0} grad celsius),
+						'other' => q({0} grads celsius),
+					},
+					'centimeter' => {
+						'' => q(centimeters),
+						'one' => q({0} centimeter),
+						'other' => q({0} centimeters),
+					},
 					'day' => {
+						'' => q(dis),
 						'one' => q({0} di),
 						'other' => q({0} dis),
 					},
+					'gram' => {
+						'' => q(grams),
+						'one' => q({0} gram),
+						'other' => q({0} grams),
+					},
 					'hour' => {
+						'' => q(uras),
 						'one' => q({0} ura),
 						'other' => q({0} uras),
 					},
+					'kilogram' => {
+						'' => q(kilograms),
+						'one' => q({0} kilogram),
+						'other' => q({0} kilograms),
+					},
+					'kilometer' => {
+						'' => q(kilometers),
+						'one' => q({0} kilometer),
+						'other' => q({0} kilometers),
+					},
+					'kilometer-per-hour' => {
+						'' => q(kilometers per ura),
+						'one' => q({0} kilometer per ura),
+						'other' => q({0} kilometers per ura),
+					},
+					'liter' => {
+						'' => q(liters),
+						'one' => q({0} liter),
+						'other' => q({0} liters),
+					},
+					'meter' => {
+						'' => q(meters),
+						'one' => q({0} meter),
+						'other' => q({0} meters),
+					},
+					'millimeter' => {
+						'' => q(millimeters),
+						'one' => q({0} millimeter),
+						'other' => q({0} millimeters),
+					},
+					'millisecond' => {
+						'' => q(millisecundas),
+						'one' => q({0} millisecunda),
+						'other' => q({0} millisecundas),
+					},
 					'minute' => {
+						'' => q(minutas),
 						'one' => q({0} minuta),
 						'other' => q({0} minutas),
 					},
 					'month' => {
+						'' => q(mais),
 						'one' => q({0} mais),
 						'other' => q({0} mais),
 					},
 					'second' => {
+						'' => q(secundas),
 						'one' => q({0} secunda),
 						'other' => q({0} secundas),
 					},
 					'week' => {
+						'' => q(emnas),
 						'one' => q({0} emna),
 						'other' => q({0} emnas),
 					},
 					'year' => {
+						'' => q(onns),
 						'one' => q({0} onn),
 						'other' => q({0} onns),
 					},
 				},
-				'short' => {
+				'narrow' => {
+					'celsius' => {
+						'' => q(°C),
+						'one' => q({0}°C),
+						'other' => q({0}°C),
+					},
+					'centimeter' => {
+						'' => q(cm),
+						'one' => q({0}cm),
+						'other' => q({0}cm),
+					},
 					'day' => {
-						'one' => q({0} di),
+						'' => q(di),
+						'one' => q({0} dis),
 						'other' => q({0} dis),
 					},
+					'gram' => {
+						'' => q(gram),
+						'one' => q({0} g),
+						'other' => q({0} g),
+					},
 					'hour' => {
-						'one' => q({0} ura),
+						'' => q(ura),
+						'one' => q({0} uras),
 						'other' => q({0} uras),
 					},
+					'kilogram' => {
+						'' => q(kg),
+						'one' => q({0} kg),
+						'other' => q({0} kg),
+					},
+					'kilometer' => {
+						'' => q(km),
+						'one' => q({0}km),
+						'other' => q({0}km),
+					},
+					'kilometer-per-hour' => {
+						'' => q(km/h),
+						'one' => q({0} km/h),
+						'other' => q({0} km/h),
+					},
+					'liter' => {
+						'' => q(liter),
+						'one' => q({0} l),
+						'other' => q({0} l),
+					},
+					'meter' => {
+						'' => q(meter),
+						'one' => q({0}m),
+						'other' => q({0}m),
+					},
+					'millimeter' => {
+						'' => q(mm),
+						'one' => q({0}mm),
+						'other' => q({0}mm),
+					},
+					'millisecond' => {
+						'' => q(ms),
+						'one' => q({0}ms),
+						'other' => q({0}ms),
+					},
 					'minute' => {
-						'one' => q({0} min.),
+						'' => q(min),
+						'one' => q({0} mins.),
 						'other' => q({0} mins.),
 					},
 					'month' => {
+						'' => q(mais),
 						'one' => q({0} mais),
 						'other' => q({0} mais),
 					},
 					'second' => {
+						'' => q(sec),
+						'one' => q({0} secs.),
+						'other' => q({0} secs.),
+					},
+					'week' => {
+						'' => q(emna),
+						'one' => q({0} emnas),
+						'other' => q({0} emnas),
+					},
+					'year' => {
+						'' => q(onn),
+						'one' => q({0} onns),
+						'other' => q({0} onns),
+					},
+				},
+				'short' => {
+					'celsius' => {
+						'' => q(°C),
+						'one' => q({0} °C),
+						'other' => q({0} °C),
+					},
+					'centimeter' => {
+						'' => q(cm),
+						'one' => q({0} cm),
+						'other' => q({0} cm),
+					},
+					'day' => {
+						'' => q(dis),
+						'one' => q({0} di),
+						'other' => q({0} dis),
+					},
+					'gram' => {
+						'' => q(grams),
+						'one' => q({0} g),
+						'other' => q({0} g),
+					},
+					'hour' => {
+						'' => q(uras),
+						'one' => q({0} ura),
+						'other' => q({0} uras),
+					},
+					'kilogram' => {
+						'' => q(kg),
+						'one' => q({0} kg),
+						'other' => q({0} kg),
+					},
+					'kilometer' => {
+						'' => q(km),
+						'one' => q({0} km),
+						'other' => q({0} km),
+					},
+					'kilometer-per-hour' => {
+						'' => q(km/h),
+						'one' => q({0} km/h),
+						'other' => q({0} km/h),
+					},
+					'liter' => {
+						'' => q(liters),
+						'one' => q({0} l),
+						'other' => q({0} l),
+					},
+					'meter' => {
+						'' => q(meters),
+						'one' => q({0} m),
+						'other' => q({0} m),
+					},
+					'millimeter' => {
+						'' => q(mm),
+						'one' => q({0} mm),
+						'other' => q({0} mm),
+					},
+					'millisecond' => {
+						'' => q(ms),
+						'one' => q({0} ms),
+						'other' => q({0} ms),
+					},
+					'minute' => {
+						'' => q(minutas),
+						'one' => q({0} min.),
+						'other' => q({0} mins.),
+					},
+					'month' => {
+						'' => q(mais),
+						'one' => q({0} mais),
+						'other' => q({0} mais),
+					},
+					'second' => {
+						'' => q(secundas),
 						'one' => q({0} sec.),
 						'other' => q({0} secs.),
 					},
 					'week' => {
+						'' => q(emnas),
 						'one' => q({0} emna),
 						'other' => q({0} emnas),
 					},
 					'year' => {
+						'' => q(onns),
 						'one' => q({0} onn),
 						'other' => q({0} onns),
 					},
@@ -1162,6 +1392,32 @@ has 'nostr' => (
 	default		=> sub { qr'^(?i:na|n)$' }
 );
 
+has 'listPatterns' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub { {
+				start => q({0}, {1}),
+				middle => q({0}, {1}),
+				end => q({0}, {1}),
+				2 => q({0}, {1}),
+		} }
+);
+
+has 'default_numbering_system' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has native_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
 has 'number_symbols' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -1178,7 +1434,6 @@ has 'number_symbols' => (
 			'perMille' => q(‰),
 			'percentSign' => q(%),
 			'plusSign' => q(+),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -1326,13 +1581,16 @@ has 'curriencies' => (
 			},
 		},
 		'AUD' => {
+			symbol => 'A$',
 			display_name => {
 				'currency' => q(dollar australian),
+				'one' => q(dollar australian),
+				'other' => q(dollar australian),
 			},
 		},
 		'AWG' => {
 			display_name => {
-				'currency' => q(flurin da l'Aruba),
+				'currency' => q(flurin da l’Aruba),
 			},
 		},
 		'AZM' => {
@@ -1516,8 +1774,11 @@ has 'curriencies' => (
 			},
 		},
 		'CAD' => {
+			symbol => 'CA$',
 			display_name => {
 				'currency' => q(dollar canadais),
+				'one' => q(dollar canadais),
+				'other' => q(dollar canadais),
 			},
 		},
 		'CDF' => {
@@ -1534,6 +1795,8 @@ has 'curriencies' => (
 			symbol => 'CHF',
 			display_name => {
 				'currency' => q(franc svizzer),
+				'one' => q(franc svizzer),
+				'other' => q(franc svizzer),
 			},
 		},
 		'CHW' => {
@@ -1608,7 +1871,7 @@ has 'curriencies' => (
 		},
 		'DDM' => {
 			display_name => {
-				'currency' => q(marc da la Germania da l'Ost),
+				'currency' => q(marc da la Germania da l’Ost),
 			},
 		},
 		'DEM' => {
@@ -1622,8 +1885,11 @@ has 'curriencies' => (
 			},
 		},
 		'DKK' => {
+			symbol => 'DKK',
 			display_name => {
 				'currency' => q(cruna danaisa),
+				'one' => q(cruna danaisa),
+				'other' => q(cruna danaisa),
 			},
 		},
 		'DOP' => {
@@ -1643,12 +1909,15 @@ has 'curriencies' => (
 		},
 		'ECV' => {
 			display_name => {
-				'currency' => q(unitad da scuntrada da l'Ecuador),
+				'currency' => q(unitad da scuntrada da l’Ecuador),
 			},
 		},
 		'EEK' => {
+			symbol => 'EEK',
 			display_name => {
 				'currency' => q(cruna estona),
+				'one' => q(cruna estona),
+				'other' => q(cruna estona),
 			},
 		},
 		'EGP' => {
@@ -1682,13 +1951,19 @@ has 'curriencies' => (
 			},
 		},
 		'EUR' => {
+			symbol => '€',
 			display_name => {
 				'currency' => q(euro),
+				'one' => q(euro),
+				'other' => q(euro),
 			},
 		},
 		'FIM' => {
+			symbol => 'FIM',
 			display_name => {
 				'currency' => q(marc finlandais),
+				'one' => q(marc finlandais),
+				'other' => q(marc finlandais),
 			},
 		},
 		'FJD' => {
@@ -1707,8 +1982,11 @@ has 'curriencies' => (
 			},
 		},
 		'GBP' => {
+			symbol => '£',
 			display_name => {
 				'currency' => q(glivra sterlina),
+				'one' => q(glivra sterlina),
+				'other' => q(glivra sterlina),
 			},
 		},
 		'GEK' => {
@@ -1787,8 +2065,11 @@ has 'curriencies' => (
 			},
 		},
 		'HNL' => {
+			symbol => 'HNL',
 			display_name => {
 				'currency' => q(lempira hondurian),
+				'one' => q(lempira hondurian),
+				'other' => q(lempira hondurian),
 			},
 		},
 		'HRD' => {
@@ -1817,8 +2098,11 @@ has 'curriencies' => (
 			},
 		},
 		'IEP' => {
+			symbol => 'IEP',
 			display_name => {
 				'currency' => q(glivra indonaisa),
+				'one' => q(glivra indonaisa),
+				'other' => q(glivra indonaisa),
 			},
 		},
 		'ILP' => {
@@ -1852,13 +2136,19 @@ has 'curriencies' => (
 			},
 		},
 		'ISJ' => {
+			symbol => 'ISJ',
 			display_name => {
 				'currency' => q(veglia cruna islandaisa),
+				'one' => q(veglia cruna islandaisa),
+				'other' => q(veglia cruna islandaisa),
 			},
 		},
 		'ISK' => {
+			symbol => 'ISK',
 			display_name => {
 				'currency' => q(cruna islandaisa),
+				'one' => q(cruna islandaisa),
+				'other' => q(cruna islandaisa),
 			},
 		},
 		'ITL' => {
@@ -1867,8 +2157,11 @@ has 'curriencies' => (
 			},
 		},
 		'JMD' => {
+			symbol => 'JMD',
 			display_name => {
 				'currency' => q(dollar giamaican),
+				'one' => q(dollar giamaican),
+				'other' => q(dollar giamaican),
 			},
 		},
 		'JOD' => {
@@ -1927,8 +2220,11 @@ has 'curriencies' => (
 			},
 		},
 		'KYD' => {
+			symbol => 'KYD',
 			display_name => {
 				'currency' => q(dollar da las Inslas Cayman),
+				'one' => q(dollar da las Inslas Cayman),
+				'other' => q(dollar da las Inslas Cayman),
 			},
 		},
 		'KZT' => {
@@ -2102,13 +2398,16 @@ has 'curriencies' => (
 			},
 		},
 		'MXN' => {
+			symbol => 'MX$',
 			display_name => {
 				'currency' => q(peso mexican),
+				'one' => q(peso mexican),
+				'other' => q(peso mexican),
 			},
 		},
 		'MXP' => {
 			display_name => {
-				'currency' => q(peso d'argient mexican \(1861–1992\)),
+				'currency' => q(peso d’argient mexican \(1861–1992\)),
 			},
 		},
 		'MXV' => {
@@ -2162,8 +2461,11 @@ has 'curriencies' => (
 			},
 		},
 		'NOK' => {
+			symbol => 'NOK',
 			display_name => {
 				'currency' => q(cruna norvegiaisa),
+				'one' => q(cruna norvegiaisa),
+				'other' => q(cruna norvegiaisa),
 			},
 		},
 		'NPR' => {
@@ -2178,7 +2480,7 @@ has 'curriencies' => (
 		},
 		'OMR' => {
 			display_name => {
-				'currency' => q(rial da l'Oman),
+				'currency' => q(rial da l’Oman),
 			},
 		},
 		'PAB' => {
@@ -2217,13 +2519,18 @@ has 'curriencies' => (
 			},
 		},
 		'PLN' => {
+			symbol => 'PLN',
 			display_name => {
 				'currency' => q(zloty polac),
+				'one' => q(zloty polac),
+				'other' => q(zloty polac),
 			},
 		},
 		'PLZ' => {
 			display_name => {
 				'currency' => q(zloty polac \(1950–1995\)),
+				'one' => q(zloty polac \(1950–1995\)),
+				'other' => q(zloty polac \(1950–1995\)),
 			},
 		},
 		'PTE' => {
@@ -2262,13 +2569,19 @@ has 'curriencies' => (
 			},
 		},
 		'RUB' => {
+			symbol => 'RUB',
 			display_name => {
 				'currency' => q(rubel russ \(nov\)),
+				'one' => q(rubel russ \(nov\)),
+				'other' => q(rubel russ \(nov\)),
 			},
 		},
 		'RUR' => {
+			symbol => 'RUR',
 			display_name => {
 				'currency' => q(rubel russ \(vegl\)),
+				'one' => q(rubel russ \(vegl\)),
+				'other' => q(rubel russ \(vegl\)),
 			},
 		},
 		'RWF' => {
@@ -2277,8 +2590,11 @@ has 'curriencies' => (
 			},
 		},
 		'SAR' => {
+			symbol => 'SAR',
 			display_name => {
 				'currency' => q(riyal saudit),
+				'one' => q(riyal saudit),
+				'other' => q(riyal saudit),
 			},
 		},
 		'SBD' => {
@@ -2307,8 +2623,11 @@ has 'curriencies' => (
 			},
 		},
 		'SEK' => {
+			symbol => 'SEK',
 			display_name => {
 				'currency' => q(cruna svedaisa),
+				'one' => q(cruna svedaisa),
+				'other' => q(cruna svedaisa),
 			},
 		},
 		'SGD' => {
@@ -2318,7 +2637,7 @@ has 'curriencies' => (
 		},
 		'SHP' => {
 			display_name => {
-				'currency' => q(glivra da Sontg'Elena),
+				'currency' => q(glivra da Sontg’Elena),
 			},
 		},
 		'SIT' => {
@@ -2363,7 +2682,7 @@ has 'curriencies' => (
 		},
 		'SVC' => {
 			display_name => {
-				'currency' => q(colon da l'El Salvador),
+				'currency' => q(colon da l’El Salvador),
 			},
 		},
 		'SYP' => {
@@ -2403,7 +2722,7 @@ has 'curriencies' => (
 		},
 		'TOP' => {
 			display_name => {
-				'currency' => q(pa'anga da Tonga),
+				'currency' => q(pa’anga da Tonga),
 			},
 		},
 		'TPE' => {
@@ -2417,8 +2736,11 @@ has 'curriencies' => (
 			},
 		},
 		'TRY' => {
+			symbol => 'TRY',
 			display_name => {
 				'currency' => q(nova lira tirca),
+				'one' => q(nova lira tirca),
+				'other' => q(nova lira tirca),
 			},
 		},
 		'TTD' => {
@@ -2457,33 +2779,36 @@ has 'curriencies' => (
 			},
 		},
 		'USD' => {
+			symbol => '$',
 			display_name => {
-				'currency' => q(dollar dals Stadis Unids da l'America),
+				'currency' => q(dollar dals Stadis Unids da l’America),
+				'one' => q(dollar dals Stadis Unids da l’America),
+				'other' => q(dollar dals Stadis Unids da l’America),
 			},
 		},
 		'USN' => {
 			display_name => {
-				'currency' => q(dollar dals Stadis Unids da l'America \(proxim di\)),
+				'currency' => q(dollar dals Stadis Unids da l’America \(proxim di\)),
 			},
 		},
 		'USS' => {
 			display_name => {
-				'currency' => q(dollar dals Stadis Unids da l'America \(medem di\)),
+				'currency' => q(dollar dals Stadis Unids da l’America \(medem di\)),
 			},
 		},
 		'UYI' => {
 			display_name => {
-				'currency' => q(peso da l'Uruguay \(unidades indexadas\)),
+				'currency' => q(peso da l’Uruguay \(unidades indexadas\)),
 			},
 		},
 		'UYP' => {
 			display_name => {
-				'currency' => q(nov peso da l'Uruguay \(1975–1993\)),
+				'currency' => q(nov peso da l’Uruguay \(1975–1993\)),
 			},
 		},
 		'UYU' => {
 			display_name => {
-				'currency' => q(peso da l'Uruguay),
+				'currency' => q(peso da l’Uruguay),
 			},
 		},
 		'UZS' => {
@@ -2552,8 +2877,11 @@ has 'curriencies' => (
 			},
 		},
 		'XCD' => {
+			symbol => 'EC$',
 			display_name => {
 				'currency' => q(dollar da la Caribica Orientala),
+				'one' => q(dollar da la Caribica Orientala),
+				'other' => q(dollar da la Caribica Orientala),
 			},
 		},
 		'XDR' => {
@@ -2561,9 +2889,17 @@ has 'curriencies' => (
 				'currency' => q(dretgs da prelevaziun spezials),
 			},
 		},
+		'XEU' => {
+			symbol => 'XEU',
+			display_name => {
+				'currency' => q(unitad monetara europeica),
+				'one' => q(unitad monetara europeica),
+				'other' => q(unitads monetaras europeicas),
+			},
+		},
 		'XFO' => {
 			display_name => {
-				'currency' => q(franc d'aur franzos),
+				'currency' => q(franc d’aur franzos),
 			},
 		},
 		'XFU' => {
@@ -2604,6 +2940,8 @@ has 'curriencies' => (
 		'XXX' => {
 			display_name => {
 				'currency' => q(valuta nunenconuschenta),
+				'one' => q(valuta nunenconuschenta),
+				'other' => q(valuta nunenconuschenta),
 			},
 		},
 		'YDD' => {
@@ -2812,8 +3150,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'am' => q{am},
 					'pm' => q{sm},
+					'am' => q{am},
 				},
 			},
 		},
@@ -3428,7 +3766,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Georgia dal Sid#,
 		},
 		'Atlantic/St_Helena' => {
-			exemplarCity => q#Sontg'elena#,
+			exemplarCity => q#Sontg’elena#,
 		},
 		'Atlantic/Stanley' => {
 			exemplarCity => q#Port Stanley#,

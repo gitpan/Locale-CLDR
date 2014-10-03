@@ -1,11 +1,11 @@
 package Locale::CLDR::En::Any::Gb;
 # This file auto generated from Data\common\main\en_GB.xml
-#	on Fri 20 Jun 11:21:22 pm GMT
-# XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
+#	on Thu  2 Oct 10:56:42 am GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -22,11 +22,8 @@ has 'display_name_language' => (
 	default		=> sub { 
 		 sub {
 			 my %languages = (
-				'arn' => 'Araucanian',
- 				'bax' => 'Bamum',
- 				'en_GB@alt=short' => 'UK English',
+				'en_GB@alt=short' => 'UK English',
  				'en_US@alt=short' => 'US English',
- 				'tzm' => 'Central Morocco Tamazight',
  				'wal' => 'Walamo',
 
 			);
@@ -62,14 +59,23 @@ has 'display_name_territory' => (
 	init_arg	=> undef,
 	default		=> sub { 
 		{
-			'GB' => 'United Kingdom',
+			'035' => 'South-Eastern Asia',
+ 			'AG' => 'Antigua and Barbuda',
+ 			'BA' => 'Bosnia and Herzegovina',
+ 			'BL' => 'Saint Barthélemy',
+ 			'EA' => 'Ceuta and Melilla',
  			'GB@alt=short' => 'UK',
- 			'GS' => 'South Georgia and the South Sandwich Islands',
- 			'HM' => 'Heard Island and McDonald Islands',
- 			'UM' => 'U.S. Minor Outlying Islands',
- 			'US' => 'United States',
+ 			'KN' => 'Saint Kitts and Nevis',
+ 			'LC' => 'Saint Lucia',
+ 			'MF' => 'Saint Martin',
+ 			'PM' => 'Saint Pierre and Miquelon',
+ 			'SH' => 'Saint Helena',
+ 			'SJ' => 'Svalbard and Jan Mayen',
+ 			'ST' => 'São Tomé and Príncipe',
+ 			'TC' => 'Turks and Caicos Islands',
+ 			'TT' => 'Trinidad and Tobago',
  			'US@alt=short' => 'US',
- 			'VC' => 'Saint Vincent and the Grenadines',
+ 			'WF' => 'Wallis and Futuna',
 
 		}
 	},
@@ -99,6 +105,7 @@ has 'display_name_type' => (
  				'yes' => q{Sort Unicode Normalised},
  			},
  			'numbers' => {
+ 				'arabext' => q{Extended Arabic-Indic Digits},
  				'fullwide' => q{Full-Width Digits},
  			},
 
@@ -146,55 +153,128 @@ has 'units' => (
 	init_arg	=> undef,
 	default		=> sub { {
 				'long' => {
-					'arc-minute' => {
-						'one' => q({0} minute),
-						'other' => q({0} minutes),
-					},
-					'arc-second' => {
-						'one' => q({0} second),
-						'other' => q({0} seconds),
+					'centiliter' => {
+						'' => q(centilitres),
+						'one' => q({0} centilitre),
+						'other' => q({0} centilitres),
 					},
 					'centimeter' => {
+						'' => q(centimetres),
 						'one' => q({0} centimetre),
 						'other' => q({0} centimetres),
 					},
+					'cubic-centimeter' => {
+						'' => q(cubic centimetres),
+						'one' => q({0} cubic centimetre),
+						'other' => q({0} cubic centimetres),
+					},
 					'cubic-kilometer' => {
+						'' => q(cubic kilometres),
 						'one' => q({0} cubic kilometre),
 						'other' => q({0} cubic kilometres),
 					},
+					'cubic-meter' => {
+						'' => q(cubic metres),
+						'one' => q({0} cubic metre),
+						'other' => q({0} cubic metres),
+					},
+					'deciliter' => {
+						'' => q(decilitres),
+						'one' => q({0} decilitre),
+						'other' => q({0} decilitres),
+					},
+					'decimeter' => {
+						'' => q(decimetre),
+						'one' => q({0} decimetre),
+						'other' => q({0} decimetres),
+					},
+					'hectoliter' => {
+						'' => q(hectolitres),
+						'one' => q({0} hectolitre),
+						'other' => q({0} hectolitres),
+					},
 					'kilometer' => {
+						'' => q(kilometres),
 						'one' => q({0} kilometre),
 						'other' => q({0} kilometres),
 					},
 					'kilometer-per-hour' => {
+						'' => q(kilometres per hour),
 						'one' => q({0} kilometre per hour),
 						'other' => q({0} kilometres per hour),
 					},
 					'liter' => {
+						'' => q(litres),
 						'one' => q({0} litre),
 						'other' => q({0} litres),
 					},
+					'liter-per-kilometer' => {
+						'' => q(litres per kilometre),
+						'one' => q({0} litre per kilometre),
+						'other' => q({0} litres per kilometre),
+					},
+					'megaliter' => {
+						'' => q(megalitres),
+						'one' => q({0} megalitre),
+						'other' => q({0} megalitres),
+					},
 					'meter' => {
+						'' => q(metres),
 						'one' => q({0} metre),
 						'other' => q({0} metres),
 					},
 					'meter-per-second' => {
+						'' => q(metres per second),
 						'one' => q({0} metre per second),
 						'other' => q({0} metres per second),
 					},
+					'meter-per-second-squared' => {
+						'' => q(metres per second squared),
+						'one' => q({0} metre per second squared),
+						'other' => q({0} metres per second squared),
+					},
+					'micrometer' => {
+						'' => q(micrometre),
+						'one' => q({0} micrometre),
+						'other' => q({0} micrometres),
+					},
+					'milliliter' => {
+						'' => q(millilitres),
+						'one' => q({0} millilitre),
+						'other' => q({0} millilitres),
+					},
 					'millimeter' => {
+						'' => q(millimetres),
 						'one' => q({0} millimetre),
 						'other' => q({0} millimetres),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(millimetres of mercury),
+						'one' => q({0} millimetre of mercury),
+						'other' => q({0} millimetres of mercury),
+					},
+					'nanometer' => {
+						'' => q(nanometres),
+						'one' => q({0} nanometre),
+						'other' => q({0} nanometres),
+					},
 					'picometer' => {
+						'' => q(picometres),
 						'one' => q({0} picometre),
 						'other' => q({0} picometres),
 					},
+					'square-centimeter' => {
+						'' => q(square centimetres),
+						'one' => q({0} square centimetre),
+						'other' => q({0} square centimetres),
+					},
 					'square-kilometer' => {
+						'' => q(square kilometres),
 						'one' => q({0} square kilometre),
 						'other' => q({0} square kilometres),
 					},
 					'square-meter' => {
+						'' => q(square metres),
 						'one' => q({0} square metre),
 						'other' => q({0} square metres),
 					},
@@ -204,9 +284,12 @@ has 'units' => (
 						'one' => q({0}G),
 						'other' => q({0}G),
 					},
-					'millisecond' => {
-						'one' => q({0} ms),
-						'other' => q({0} ms),
+					'inch-hg' => {
+						'one' => q({0}" Hg),
+						'other' => q({0}" Hg),
+					},
+					'liter' => {
+						'' => q(litre),
 					},
 					'pound' => {
 						'one' => q({0}lb),
@@ -214,13 +297,32 @@ has 'units' => (
 					},
 				},
 				'short' => {
-					'arc-minute' => {
-						'one' => q({0} min),
-						'other' => q({0} min),
+					'centimeter' => {
+						'' => q(centimetres),
 					},
-					'arc-second' => {
-						'one' => q({0} sec),
-						'other' => q({0} secs),
+					'fathom' => {
+						'one' => q({0} fm),
+						'other' => q({0} fm),
+					},
+					'kilometer-per-hour' => {
+						'' => q(kilometres per hour),
+					},
+					'liter' => {
+						'' => q(litres),
+						'one' => q({0} l),
+						'other' => q({0} l),
+					},
+					'liter-per-kilometer' => {
+						'' => q(litres/km),
+					},
+					'meter' => {
+						'' => q(metres),
+					},
+					'meter-per-second' => {
+						'' => q(metres per second),
+					},
+					'meter-per-second-squared' => {
+						'' => q(metres/sec²),
 					},
 				},
 			} }
@@ -231,11 +333,22 @@ has 'listPatterns' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-				start => q({0}, {1}),
-				middle => q({0}, {1}),
 				end => q({0} and {1}),
-				2 => q({0} and {1}),
 		} }
+);
+
+has 'default_numbering_system' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has native_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
 );
 
 has 'curriencies' => (
@@ -243,13 +356,116 @@ has 'curriencies' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
+		'ADP' => {
+			symbol => 'ADP',
+		},
+		'AED' => {
+			symbol => 'AED',
+		},
+		'AFA' => {
+			symbol => 'AFA',
+		},
+		'AFN' => {
+			symbol => 'AFN',
+		},
+		'ALL' => {
+			symbol => 'ALL',
+		},
+		'AMD' => {
+			symbol => 'AMD',
+		},
+		'ANG' => {
+			symbol => 'ANG',
+		},
+		'AOA' => {
+			symbol => 'AOA',
+		},
+		'ARS' => {
+			symbol => 'ARS',
+		},
+		'ATS' => {
+			symbol => 'ATS',
+		},
 		'AUD' => {
-			symbol => 'AU$',
+			symbol => 'A$',
+		},
+		'AWG' => {
+			symbol => 'AWG',
+		},
+		'AZM' => {
+			symbol => 'AZM',
+		},
+		'AZN' => {
+			symbol => 'AZN',
+		},
+		'BAD' => {
+			symbol => 'BAD',
+		},
+		'BAM' => {
+			symbol => 'BAM',
+		},
+		'BAN' => {
+			symbol => 'BAN',
+		},
+		'BBD' => {
+			symbol => 'BBD',
+		},
+		'BDT' => {
+			symbol => 'BDT',
+		},
+		'BEC' => {
+			symbol => 'BEC',
+		},
+		'BEF' => {
+			symbol => 'BEF',
+		},
+		'BEL' => {
+			symbol => 'BEL',
+		},
+		'BGL' => {
+			symbol => 'BGL',
+		},
+		'BGM' => {
+			symbol => 'BGM',
+		},
+		'BGN' => {
+			symbol => 'BGN',
+		},
+		'BGO' => {
+			symbol => 'BGO',
+		},
+		'BHD' => {
+			symbol => 'BHD',
+		},
+		'BIF' => {
+			symbol => 'BIF',
+		},
+		'BMD' => {
+			symbol => 'BMD',
+		},
+		'BND' => {
+			symbol => 'BND',
+		},
+		'BOB' => {
+			symbol => 'BOB',
 		},
 		'BRL' => {
 			symbol => 'R$',
 		},
+		'BSD' => {
+			symbol => 'BSD',
+		},
+		'BTN' => {
+			symbol => 'BTN',
+		},
+		'BUK' => {
+			symbol => 'BUK',
+		},
+		'BWP' => {
+			symbol => 'BWP',
+		},
 		'BYB' => {
+			symbol => 'BYB',
 			display_name => {
 				'currency' => q(Belarusian New Rouble \(1994–1999\)),
 				'one' => q(Belarusian new rouble \(1994–1999\)),
@@ -257,31 +473,169 @@ has 'curriencies' => (
 			},
 		},
 		'BYR' => {
-			display_name => {
-				'currency' => q(Belarusian Rouble),
-				'one' => q(Belarusian rouble),
-				'other' => q(Belarusian roubles),
-			},
+			symbol => 'BYR',
+		},
+		'BZD' => {
+			symbol => 'BZD',
 		},
 		'CAD' => {
 			symbol => 'CA$',
 		},
+		'CDF' => {
+			symbol => 'CDF',
+		},
+		'CHE' => {
+			symbol => 'CHE',
+		},
+		'CHF' => {
+			symbol => 'CHF',
+		},
+		'CHW' => {
+			symbol => 'CHW',
+		},
+		'CLP' => {
+			symbol => 'CLP',
+		},
 		'CNY' => {
 			symbol => 'CN¥',
+		},
+		'COP' => {
+			symbol => 'COP',
+		},
+		'CRC' => {
+			symbol => 'CRC',
+		},
+		'CSD' => {
+			symbol => 'CSD',
+		},
+		'CSK' => {
+			symbol => 'CSK',
+		},
+		'CUC' => {
+			symbol => 'CUC',
+		},
+		'CUP' => {
+			symbol => 'CUP',
+		},
+		'CVE' => {
+			symbol => 'CVE',
+		},
+		'CYP' => {
+			symbol => 'CYP',
+		},
+		'CZK' => {
+			symbol => 'CZK',
+		},
+		'DDM' => {
+			symbol => 'DDM',
+		},
+		'DEM' => {
+			symbol => 'DEM',
+		},
+		'DJF' => {
+			symbol => 'DJF',
+		},
+		'DKK' => {
+			symbol => 'DKK',
+		},
+		'DOP' => {
+			symbol => 'DOP',
+		},
+		'DZD' => {
+			symbol => 'DZD',
+		},
+		'EEK' => {
+			symbol => 'EEK',
+		},
+		'EGP' => {
+			symbol => 'EGP',
+		},
+		'ERN' => {
+			symbol => 'ERN',
+		},
+		'ESA' => {
+			symbol => 'ESA',
+		},
+		'ESB' => {
+			symbol => 'ESB',
+		},
+		'ESP' => {
+			symbol => 'ESP',
+		},
+		'ETB' => {
+			symbol => 'ETB',
 		},
 		'EUR' => {
 			symbol => '€',
 		},
+		'FIM' => {
+			symbol => 'FIM',
+		},
+		'FJD' => {
+			symbol => 'FJD',
+		},
+		'FKP' => {
+			symbol => 'FKP',
+		},
+		'FRF' => {
+			symbol => 'FRF',
+		},
 		'GBP' => {
 			symbol => '£',
-			display_name => {
-				'currency' => q(British Pound),
-				'one' => q(British pound),
-				'other' => q(British pounds),
-			},
+		},
+		'GEK' => {
+			symbol => 'GEK',
+		},
+		'GEL' => {
+			symbol => 'GEL',
+		},
+		'GHS' => {
+			symbol => 'GHS',
+		},
+		'GIP' => {
+			symbol => 'GIP',
+		},
+		'GMD' => {
+			symbol => 'GMD',
+		},
+		'GNF' => {
+			symbol => 'GNF',
+		},
+		'GRD' => {
+			symbol => 'GRD',
+		},
+		'GTQ' => {
+			symbol => 'GTQ',
+		},
+		'GYD' => {
+			symbol => 'GYD',
 		},
 		'HKD' => {
 			symbol => 'HK$',
+		},
+		'HNL' => {
+			symbol => 'HNL',
+		},
+		'HRD' => {
+			symbol => 'HRD',
+		},
+		'HRK' => {
+			symbol => 'HRK',
+		},
+		'HTG' => {
+			symbol => 'HTG',
+		},
+		'HUF' => {
+			symbol => 'HUF',
+		},
+		'IDR' => {
+			symbol => 'IDR',
+		},
+		'IEP' => {
+			symbol => 'IEP',
+		},
+		'ILP' => {
+			symbol => 'ILP',
 		},
 		'ILR' => {
 			display_name => {
@@ -301,111 +655,506 @@ has 'curriencies' => (
 		'INR' => {
 			symbol => '₹',
 		},
+		'IQD' => {
+			symbol => 'IQD',
+		},
+		'IRR' => {
+			symbol => 'IRR',
+		},
+		'ISK' => {
+			symbol => 'ISK',
+		},
+		'ITL' => {
+			symbol => 'ITL',
+		},
+		'JMD' => {
+			symbol => 'JMD',
+		},
+		'JOD' => {
+			symbol => 'JOD',
+		},
+		'JPY' => {
+			symbol => '¥',
+		},
+		'KES' => {
+			symbol => 'KES',
+		},
+		'KGS' => {
+			symbol => 'KGS',
+		},
+		'KHR' => {
+			symbol => 'KHR',
+		},
+		'KMF' => {
+			symbol => 'KMF',
+		},
+		'KPW' => {
+			symbol => 'KPW',
+		},
+		'KRH' => {
+			symbol => 'KRH',
+		},
+		'KRO' => {
+			symbol => 'KRO',
+		},
 		'KRW' => {
 			symbol => '₩',
 		},
+		'KWD' => {
+			symbol => 'KWD',
+		},
+		'KYD' => {
+			symbol => 'KYD',
+		},
+		'KZT' => {
+			symbol => 'KZT',
+		},
+		'LAK' => {
+			symbol => 'LAK',
+		},
+		'LBP' => {
+			symbol => 'LBP',
+		},
+		'LKR' => {
+			symbol => 'LKR',
+		},
+		'LRD' => {
+			symbol => 'LRD',
+		},
+		'LSL' => {
+			symbol => 'LSL',
+		},
+		'LTL' => {
+			symbol => 'LTL',
+		},
+		'LTT' => {
+			symbol => 'LTT',
+		},
+		'LUC' => {
+			symbol => 'LUC',
+		},
+		'LUF' => {
+			symbol => 'LUF',
+		},
+		'LUL' => {
+			symbol => 'LUL',
+		},
+		'LVL' => {
+			symbol => 'LVL',
+		},
 		'LVR' => {
+			symbol => 'LVR',
 			display_name => {
 				'currency' => q(Latvian Rouble),
 				'one' => q(Latvian rouble),
 				'other' => q(Latvian roubles),
 			},
 		},
+		'LYD' => {
+			symbol => 'LYD',
+		},
+		'MAD' => {
+			symbol => 'MAD',
+		},
+		'MCF' => {
+			symbol => 'MCF',
+		},
+		'MDC' => {
+			symbol => 'MDC',
+		},
+		'MDL' => {
+			symbol => 'MDL',
+		},
 		'MGA' => {
+			symbol => 'MGA',
+		},
+		'MKD' => {
+			symbol => 'MKD',
+		},
+		'MKN' => {
+			symbol => 'MKN',
+		},
+		'MMK' => {
+			symbol => 'MMK',
+		},
+		'MNT' => {
+			symbol => 'MNT',
+		},
+		'MOP' => {
+			symbol => 'MOP',
+		},
+		'MRO' => {
+			symbol => 'MRO',
+		},
+		'MTL' => {
+			symbol => 'MTL',
+		},
+		'MTP' => {
+			symbol => 'MTP',
+		},
+		'MUR' => {
+			symbol => 'MUR',
+		},
+		'MVP' => {
 			display_name => {
-				'currency' => q(Malagasy Ariary),
-				'one' => q(Malagasy ariary),
-				'other' => q(Malagasy ariarys),
+				'currency' => q(Maldivian Rupee),
+				'one' => q(Maldivian rupee),
+				'other' => q(Maldivian rupees),
 			},
 		},
+		'MVR' => {
+			symbol => 'MVR',
+		},
 		'MWK' => {
-			display_name => {
-				'currency' => q(Malawian Kwacha),
-				'one' => q(Malawian kwacha),
-				'other' => q(Malawian kwachas),
-			},
+			symbol => 'MWK',
 		},
 		'MXN' => {
 			symbol => 'MX$',
 		},
+		'MXP' => {
+			symbol => 'MXP',
+		},
+		'MXV' => {
+			symbol => 'MXV',
+		},
+		'MYR' => {
+			symbol => 'MYR',
+		},
+		'MZN' => {
+			symbol => 'MZN',
+		},
+		'NAD' => {
+			symbol => 'NAD',
+		},
+		'NGN' => {
+			symbol => 'NGN',
+		},
+		'NIC' => {
+			symbol => 'NIC',
+		},
+		'NIO' => {
+			symbol => 'NIO',
+		},
+		'NLG' => {
+			symbol => 'NLG',
+		},
+		'NOK' => {
+			symbol => 'NOK',
+		},
+		'NPR' => {
+			symbol => 'NPR',
+		},
 		'NZD' => {
 			symbol => 'NZ$',
 		},
+		'OMR' => {
+			symbol => 'OMR',
+		},
+		'PAB' => {
+			symbol => 'PAB',
+		},
+		'PEN' => {
+			symbol => 'PEN',
+		},
+		'PGK' => {
+			symbol => 'PGK',
+		},
+		'PHP' => {
+			symbol => 'PHP',
+		},
+		'PKR' => {
+			symbol => 'PKR',
+		},
+		'PLN' => {
+			symbol => 'PLN',
+		},
+		'PLZ' => {
+			symbol => 'PLZ',
+		},
+		'PTE' => {
+			symbol => 'PTE',
+		},
+		'PYG' => {
+			symbol => 'PYG',
+		},
+		'QAR' => {
+			symbol => 'QAR',
+		},
+		'ROL' => {
+			symbol => 'ROL',
+		},
+		'RON' => {
+			symbol => 'RON',
+		},
+		'RSD' => {
+			symbol => 'RSD',
+		},
 		'RUB' => {
-			display_name => {
-				'currency' => q(Russian Rouble),
-				'one' => q(Russian rouble),
-				'other' => q(Russian roubles),
-			},
+			symbol => 'RUB',
 		},
 		'RUR' => {
+			symbol => 'RUR',
 			display_name => {
 				'currency' => q(Russian Rouble \(1991–1998\)),
 				'one' => q(Russian rouble \(1991–1998\)),
 				'other' => q(Russian roubles \(1991–1998\)),
 			},
 		},
+		'RWF' => {
+			symbol => 'RWF',
+		},
+		'SAR' => {
+			symbol => 'SAR',
+		},
+		'SBD' => {
+			symbol => 'SBD',
+		},
 		'SCR' => {
+			symbol => 'SCR',
 			display_name => {
-				'currency' => q(Seychelles Rupee),
 				'one' => q(Seychelles rupee),
 				'other' => q(Seychelles rupees),
 			},
+		},
+		'SDG' => {
+			symbol => 'SDG',
+		},
+		'SEK' => {
+			symbol => 'SEK',
+		},
+		'SGD' => {
+			symbol => 'SGD',
+		},
+		'SHP' => {
+			symbol => 'SHP',
+			display_name => {
+				'currency' => q(Saint Helena Pound),
+				'one' => q(Saint Helena pound),
+				'other' => q(Saint Helena pounds),
+			},
+		},
+		'SIT' => {
+			symbol => 'SIT',
+		},
+		'SKK' => {
+			symbol => 'SKK',
+		},
+		'SLL' => {
+			symbol => 'SLL',
+		},
+		'SOS' => {
+			symbol => 'SOS',
+		},
+		'SRD' => {
+			symbol => 'SRD',
+		},
+		'SSP' => {
+			symbol => 'SSP',
+		},
+		'STD' => {
+			symbol => 'STD',
+			display_name => {
+				'currency' => q(São Tomé and Príncipe Dobra),
+				'one' => q(São Tomé and Príncipe dobra),
+				'other' => q(São Tomé and Príncipe dobras),
+			},
+		},
+		'SUR' => {
+			symbol => 'SUR',
+		},
+		'SVC' => {
+			symbol => 'SVC',
+		},
+		'SYP' => {
+			symbol => 'SYP',
+		},
+		'SZL' => {
+			symbol => 'SZL',
 		},
 		'THB' => {
 			symbol => '฿',
 		},
 		'TJR' => {
+			symbol => 'TJR',
 			display_name => {
 				'currency' => q(Tajikistani Rouble),
 				'one' => q(Tajikistani rouble),
 				'other' => q(Tajikistani roubles),
 			},
 		},
+		'TJS' => {
+			symbol => 'TJS',
+		},
+		'TMM' => {
+			symbol => 'TMM',
+		},
+		'TMT' => {
+			symbol => 'TMT',
+		},
+		'TND' => {
+			symbol => 'TND',
+		},
+		'TOP' => {
+			symbol => 'TOP',
+		},
+		'TPE' => {
+			symbol => 'TPE',
+		},
+		'TRL' => {
+			symbol => 'TRL',
+		},
+		'TRY' => {
+			symbol => 'TRY',
+		},
+		'TTD' => {
+			symbol => 'TTD',
+			display_name => {
+				'currency' => q(Trinidad and Tobago Dollar),
+				'one' => q(Trinidad and Tobago dollar),
+				'other' => q(Trinidad and Tobago dollars),
+			},
+		},
 		'TWD' => {
 			symbol => 'NT$',
+		},
+		'TZS' => {
+			symbol => 'TZS',
+		},
+		'UAH' => {
+			symbol => 'UAH',
+		},
+		'UAK' => {
+			symbol => 'UAK',
+		},
+		'UGX' => {
+			symbol => 'UGX',
 		},
 		'USD' => {
 			symbol => '$',
 		},
+		'USN' => {
+			symbol => 'USN',
+		},
+		'USS' => {
+			symbol => 'USS',
+		},
+		'UYU' => {
+			symbol => 'UYU',
+		},
 		'UZS' => {
-			display_name => {
-				'currency' => q(Uzbekistani Som),
-				'one' => q(Uzbekistani som),
-				'other' => q(Uzbekistani som),
-			},
+			symbol => 'UZS',
+		},
+		'VEF' => {
+			symbol => 'VEF',
 		},
 		'VND' => {
 			symbol => '₫',
 		},
+		'VNN' => {
+			symbol => 'VNN',
+		},
+		'VUV' => {
+			symbol => 'VUV',
+		},
+		'WST' => {
+			symbol => 'WST',
+		},
 		'XAF' => {
 			symbol => 'FCFA',
-			display_name => {
-				'currency' => q(Central African CFA Franc),
-				'one' => q(Central African CFA franc),
-				'other' => q(Central African CFA francs),
-			},
+		},
+		'XAG' => {
+			symbol => 'XAG',
+		},
+		'XAU' => {
+			symbol => 'XAU',
+		},
+		'XBA' => {
+			symbol => 'XBA',
+		},
+		'XBB' => {
+			symbol => 'XBB',
+		},
+		'XBC' => {
+			symbol => 'XBC',
+		},
+		'XBD' => {
+			symbol => 'XBD',
 		},
 		'XCD' => {
 			symbol => 'EC$',
 		},
+		'XDR' => {
+			symbol => 'XDR',
+		},
+		'XEU' => {
+			symbol => 'XEU',
+		},
+		'XFO' => {
+			symbol => 'XFO',
+		},
+		'XFU' => {
+			symbol => 'XFU',
+		},
 		'XOF' => {
 			symbol => 'CFA',
 			display_name => {
-				'currency' => q(West African CFA Franc),
-				'one' => q(West African CFA franc),
+				'one' => q(CFA franc BCEAO),
 				'other' => q(West African CFA francs),
 			},
+		},
+		'XPD' => {
+			symbol => 'XPD',
 		},
 		'XPF' => {
 			symbol => 'CFPF',
 		},
+		'XPT' => {
+			symbol => 'XPT',
+		},
+		'XRE' => {
+			symbol => 'XRE',
+		},
+		'XSU' => {
+			symbol => 'XSU',
+		},
+		'XTS' => {
+			symbol => 'XTS',
+		},
+		'XUA' => {
+			symbol => 'XUA',
+		},
 		'XXX' => {
-			display_name => {
-				'currency' => q(Unknown Currency),
-				'one' => q(\(unknown currency\)),
-				'other' => q(\(unknown currency\)),
-			},
+			symbol => 'XXX',
+		},
+		'YDD' => {
+			symbol => 'YDD',
+		},
+		'YER' => {
+			symbol => 'YER',
+		},
+		'YUD' => {
+			symbol => 'YUD',
+		},
+		'YUM' => {
+			symbol => 'YUM',
+		},
+		'YUN' => {
+			symbol => 'YUN',
+		},
+		'YUR' => {
+			symbol => 'YUR',
+		},
+		'ZAL' => {
+			symbol => 'ZAL',
+		},
+		'ZAR' => {
+			symbol => 'ZAR',
+		},
+		'ZMK' => {
+			symbol => 'ZMK',
+		},
+		'ZMW' => {
+			symbol => 'ZMW',
 		},
 	} },
 );
@@ -418,45 +1167,7 @@ has 'calendar_months' => (
 	default		=> sub { {
 			'chinese' => {
 				'format' => {
-					abbreviated => {
-						nonleap => [
-							'1',
-							'2',
-							'3',
-							'4',
-							'5',
-							'6',
-							'7',
-							'8',
-							'9',
-							'10',
-							'11',
-							'12'
-						],
-						leap => [
-							
-						],
-					},
 					narrow => {
-						nonleap => [
-							'1',
-							'2',
-							'3',
-							'4',
-							'5',
-							'6',
-							'7',
-							'8',
-							'9',
-							'10',
-							'11',
-							'12'
-						],
-						leap => [
-							
-						],
-					},
-					wide => {
 						nonleap => [
 							'1',
 							'2',
@@ -477,45 +1188,7 @@ has 'calendar_months' => (
 					},
 				},
 				'stand-alone' => {
-					abbreviated => {
-						nonleap => [
-							'1',
-							'2',
-							'3',
-							'4',
-							'5',
-							'6',
-							'7',
-							'8',
-							'9',
-							'10',
-							'11',
-							'12'
-						],
-						leap => [
-							
-						],
-					},
 					narrow => {
-						nonleap => [
-							'1',
-							'2',
-							'3',
-							'4',
-							'5',
-							'6',
-							'7',
-							'8',
-							'9',
-							'10',
-							'11',
-							'12'
-						],
-						leap => [
-							
-						],
-					},
-					wide => {
 						nonleap => [
 							'1',
 							'2',
@@ -790,52 +1463,52 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'islamic') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
+			if ($_ eq 'indian') {
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'gregorian') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
-				return 'pm' if $time > 1200
-					&& $time < 2400;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'chinese') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'noon' if $time == 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'indian') {
 				return 'am' if $time >= 000
 					&& $time < 1200;
-				return 'pm' if $time > 1200
-					&& $time < 2400;
-				return 'noon' if $time == 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'japanese') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'gregorian') {
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'islamic') {
+				return 'pm' if $time > 1200
+					&& $time < 2400;
+				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'generic') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
 			last SWITCH;
 			}
 		}
@@ -850,8 +1523,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{pm},
 					'am' => q{am},
+					'pm' => q{pm},
 				},
 			},
 		},
@@ -907,6 +1580,10 @@ has 'date_formats' => (
 		'indian' => {
 		},
 		'islamic' => {
+			'full' => q{EEEE, d MMMM y G},
+			'long' => q{d MMMM y G},
+			'medium' => q{d MMM y G},
+			'short' => q{dd/MM/y GGGGG},
 		},
 		'japanese' => {
 			'full' => q{EEEE, d MMMM y G},
@@ -959,10 +1636,6 @@ has 'datetime_formats' => (
 			'short' => q{{1} {0}},
 		},
 		'gregorian' => {
-			'full' => q{{1} {0}},
-			'long' => q{{1} {0}},
-			'medium' => q{{1} {0}},
-			'short' => q{{1} {0}},
 		},
 		'indian' => {
 		},
@@ -997,10 +1670,8 @@ has 'datetime_formats_available_formats' => (
 			yyyyMd => q{dd/MM/y},
 		},
 		'gregorian' => {
-			Ed => q{E d},
 			GyMMMEd => q{E, d MMM y G},
 			GyMMMd => q{d MMM y G},
-			M => q{LL},
 			MEd => q{E dd/MM},
 			MMMEd => q{E d MMM},
 			MMMMd => q{d MMMM},
@@ -1015,6 +1686,23 @@ has 'datetime_formats_available_formats' => (
 			yMd => q{dd/MM/y},
 		},
 		'generic' => {
+			Ed => q{E d},
+			GyMMMEd => q{E, d MMM y G},
+			GyMMMd => q{d MMM y G},
+			M => q{LL},
+			MEd => q{E dd/MM},
+			MMMEd => q{E d MMM},
+			MMMMd => q{d MMMM},
+			MMMd => q{d MMM},
+			Md => q{dd/MM},
+			yyyyM => q{MM/y GGGGG},
+			yyyyMEd => q{E, dd/MM/y GGGGG},
+			yyyyMMMEd => q{E, d MMM y G},
+			yyyyMMMM => q{MMMM y G},
+			yyyyMMMd => q{d MMM y G},
+			yyyyMd => q{dd/MM/y GGGGG},
+		},
+		'islamic' => {
 			Ed => q{E d},
 			GyMMMEd => q{E, d MMM y G},
 			GyMMMd => q{d MMM y G},
@@ -1320,14 +2008,335 @@ has 'time_zone_names' => (
 	init_arg	=> undef,
 	default	=> sub { {
 		gmtZeroFormat => q(GMT),
+		'Africa/Abidjan' => {
+			exemplarCity => q#Abidjan#,
+		},
+		'Africa/Accra' => {
+			exemplarCity => q#Accra#,
+		},
+		'Africa/Addis_Ababa' => {
+			exemplarCity => q#Addis Ababa#,
+		},
+		'Africa/Algiers' => {
+			exemplarCity => q#Algiers#,
+		},
 		'Africa/Asmera' => {
 			exemplarCity => q#Asmara#,
+		},
+		'Africa/Bamako' => {
+			exemplarCity => q#Bamako#,
+		},
+		'Africa/Bangui' => {
+			exemplarCity => q#Bangui#,
+		},
+		'Africa/Banjul' => {
+			exemplarCity => q#Banjul#,
+		},
+		'Africa/Bissau' => {
+			exemplarCity => q#Bissau#,
+		},
+		'Africa/Blantyre' => {
+			exemplarCity => q#Blantyre#,
+		},
+		'Africa/Brazzaville' => {
+			exemplarCity => q#Brazzaville#,
+		},
+		'Africa/Bujumbura' => {
+			exemplarCity => q#Bujumbura#,
+		},
+		'Africa/Cairo' => {
+			exemplarCity => q#Cairo#,
+		},
+		'Africa/Casablanca' => {
+			exemplarCity => q#Casablanca#,
+		},
+		'Africa/Ceuta' => {
+			exemplarCity => q#Ceuta#,
+		},
+		'Africa/Conakry' => {
+			exemplarCity => q#Conakry#,
+		},
+		'Africa/Dakar' => {
+			exemplarCity => q#Dakar#,
+		},
+		'Africa/Dar_es_Salaam' => {
+			exemplarCity => q#Dar es Salaam#,
+		},
+		'Africa/Djibouti' => {
+			exemplarCity => q#Djibouti#,
+		},
+		'Africa/Douala' => {
+			exemplarCity => q#Douala#,
+		},
+		'Africa/El_Aaiun' => {
+			exemplarCity => q#El Aaiun#,
+		},
+		'Africa/Freetown' => {
+			exemplarCity => q#Freetown#,
+		},
+		'Africa/Gaborone' => {
+			exemplarCity => q#Gaborone#,
+		},
+		'Africa/Harare' => {
+			exemplarCity => q#Harare#,
+		},
+		'Africa/Johannesburg' => {
+			exemplarCity => q#Johannesburg#,
+		},
+		'Africa/Juba' => {
+			exemplarCity => q#Juba#,
+		},
+		'Africa/Kampala' => {
+			exemplarCity => q#Kampala#,
+		},
+		'Africa/Khartoum' => {
+			exemplarCity => q#Khartoum#,
+		},
+		'Africa/Kigali' => {
+			exemplarCity => q#Kigali#,
+		},
+		'Africa/Kinshasa' => {
+			exemplarCity => q#Kinshasa#,
+		},
+		'Africa/Lagos' => {
+			exemplarCity => q#Lagos#,
+		},
+		'Africa/Libreville' => {
+			exemplarCity => q#Libreville#,
+		},
+		'Africa/Lome' => {
+			exemplarCity => q#Lome#,
+		},
+		'Africa/Luanda' => {
+			exemplarCity => q#Luanda#,
+		},
+		'Africa/Lubumbashi' => {
+			exemplarCity => q#Lubumbashi#,
+		},
+		'Africa/Lusaka' => {
+			exemplarCity => q#Lusaka#,
+		},
+		'Africa/Malabo' => {
+			exemplarCity => q#Malabo#,
+		},
+		'Africa/Maputo' => {
+			exemplarCity => q#Maputo#,
+		},
+		'Africa/Maseru' => {
+			exemplarCity => q#Maseru#,
+		},
+		'Africa/Mbabane' => {
+			exemplarCity => q#Mbabane#,
+		},
+		'Africa/Mogadishu' => {
+			exemplarCity => q#Mogadishu#,
+		},
+		'Africa/Monrovia' => {
+			exemplarCity => q#Monrovia#,
+		},
+		'Africa/Nairobi' => {
+			exemplarCity => q#Nairobi#,
+		},
+		'Africa/Ndjamena' => {
+			exemplarCity => q#Ndjamena#,
+		},
+		'Africa/Niamey' => {
+			exemplarCity => q#Niamey#,
+		},
+		'Africa/Nouakchott' => {
+			exemplarCity => q#Nouakchott#,
+		},
+		'Africa/Ouagadougou' => {
+			exemplarCity => q#Ouagadougou#,
+		},
+		'Africa/Porto-Novo' => {
+			exemplarCity => q#Porto-Novo#,
+		},
+		'Africa/Tripoli' => {
+			exemplarCity => q#Tripoli#,
+		},
+		'Africa/Tunis' => {
+			exemplarCity => q#Tunis#,
+		},
+		'Africa/Windhoek' => {
+			exemplarCity => q#Windhoek#,
+		},
+		'America/Adak' => {
+			exemplarCity => q#Adak#,
+		},
+		'America/Anchorage' => {
+			exemplarCity => q#Anchorage#,
+		},
+		'America/Anguilla' => {
+			exemplarCity => q#Anguilla#,
+		},
+		'America/Antigua' => {
+			exemplarCity => q#Antigua#,
+		},
+		'America/Araguaina' => {
+			exemplarCity => q#Araguaina#,
+		},
+		'America/Argentina/La_Rioja' => {
+			exemplarCity => q#La Rioja#,
+		},
+		'America/Argentina/Rio_Gallegos' => {
+			exemplarCity => q#Rio Gallegos#,
+		},
+		'America/Argentina/Salta' => {
+			exemplarCity => q#Salta#,
+		},
+		'America/Argentina/San_Juan' => {
+			exemplarCity => q#San Juan#,
+		},
+		'America/Argentina/San_Luis' => {
+			exemplarCity => q#San Luis#,
+		},
+		'America/Argentina/Tucuman' => {
+			exemplarCity => q#Tucuman#,
+		},
+		'America/Argentina/Ushuaia' => {
+			exemplarCity => q#Ushuaia#,
+		},
+		'America/Aruba' => {
+			exemplarCity => q#Aruba#,
+		},
+		'America/Bahia' => {
+			exemplarCity => q#Bahia#,
+		},
+		'America/Bahia_Banderas' => {
+			exemplarCity => q#Bahia Banderas#,
+		},
+		'America/Barbados' => {
+			exemplarCity => q#Barbados#,
+		},
+		'America/Belem' => {
+			exemplarCity => q#Belem#,
+		},
+		'America/Belize' => {
+			exemplarCity => q#Belize#,
+		},
+		'America/Blanc-Sablon' => {
+			exemplarCity => q#Blanc-Sablon#,
+		},
+		'America/Boa_Vista' => {
+			exemplarCity => q#Boa Vista#,
+		},
+		'America/Bogota' => {
+			exemplarCity => q#Bogota#,
+		},
+		'America/Boise' => {
+			exemplarCity => q#Boise#,
+		},
+		'America/Buenos_Aires' => {
+			exemplarCity => q#Buenos Aires#,
+		},
+		'America/Cambridge_Bay' => {
+			exemplarCity => q#Cambridge Bay#,
+		},
+		'America/Campo_Grande' => {
+			exemplarCity => q#Campo Grande#,
+		},
+		'America/Cancun' => {
+			exemplarCity => q#Cancun#,
+		},
+		'America/Caracas' => {
+			exemplarCity => q#Caracas#,
+		},
+		'America/Catamarca' => {
+			exemplarCity => q#Catamarca#,
+		},
+		'America/Cayenne' => {
+			exemplarCity => q#Cayenne#,
+		},
+		'America/Cayman' => {
+			exemplarCity => q#Cayman#,
+		},
+		'America/Chicago' => {
+			exemplarCity => q#Chicago#,
+		},
+		'America/Chihuahua' => {
+			exemplarCity => q#Chihuahua#,
 		},
 		'America/Coral_Harbour' => {
 			exemplarCity => q#Atikokan#,
 		},
+		'America/Cordoba' => {
+			exemplarCity => q#Cordoba#,
+		},
+		'America/Costa_Rica' => {
+			exemplarCity => q#Costa Rica#,
+		},
+		'America/Creston' => {
+			exemplarCity => q#Creston#,
+		},
+		'America/Cuiaba' => {
+			exemplarCity => q#Cuiaba#,
+		},
+		'America/Danmarkshavn' => {
+			exemplarCity => q#Danmarkshavn#,
+		},
+		'America/Dawson' => {
+			exemplarCity => q#Dawson#,
+		},
+		'America/Dawson_Creek' => {
+			exemplarCity => q#Dawson Creek#,
+		},
+		'America/Denver' => {
+			exemplarCity => q#Denver#,
+		},
+		'America/Detroit' => {
+			exemplarCity => q#Detroit#,
+		},
+		'America/Dominica' => {
+			exemplarCity => q#Dominica#,
+		},
+		'America/Edmonton' => {
+			exemplarCity => q#Edmonton#,
+		},
+		'America/Eirunepe' => {
+			exemplarCity => q#Eirunepe#,
+		},
+		'America/El_Salvador' => {
+			exemplarCity => q#El Salvador#,
+		},
+		'America/Fortaleza' => {
+			exemplarCity => q#Fortaleza#,
+		},
+		'America/Glace_Bay' => {
+			exemplarCity => q#Glace Bay#,
+		},
 		'America/Godthab' => {
 			exemplarCity => q#Nuuk#,
+		},
+		'America/Goose_Bay' => {
+			exemplarCity => q#Goose Bay#,
+		},
+		'America/Grand_Turk' => {
+			exemplarCity => q#Grand Turk#,
+		},
+		'America/Grenada' => {
+			exemplarCity => q#Grenada#,
+		},
+		'America/Guadeloupe' => {
+			exemplarCity => q#Guadeloupe#,
+		},
+		'America/Guatemala' => {
+			exemplarCity => q#Guatemala#,
+		},
+		'America/Guayaquil' => {
+			exemplarCity => q#Guayaquil#,
+		},
+		'America/Guyana' => {
+			exemplarCity => q#Guyana#,
+		},
+		'America/Halifax' => {
+			exemplarCity => q#Halifax#,
+		},
+		'America/Havana' => {
+			exemplarCity => q#Havana#,
+		},
+		'America/Hermosillo' => {
+			exemplarCity => q#Hermosillo#,
 		},
 		'America/Indiana/Knox' => {
 			exemplarCity => q#Knox, Indiana#,
@@ -1350,11 +2359,110 @@ has 'time_zone_names' => (
 		'America/Indiana/Winamac' => {
 			exemplarCity => q#Winamac, Indiana#,
 		},
+		'America/Indianapolis' => {
+			exemplarCity => q#Indianapolis#,
+		},
+		'America/Inuvik' => {
+			exemplarCity => q#Inuvik#,
+		},
+		'America/Iqaluit' => {
+			exemplarCity => q#Iqaluit#,
+		},
+		'America/Jamaica' => {
+			exemplarCity => q#Jamaica#,
+		},
+		'America/Jujuy' => {
+			exemplarCity => q#Jujuy#,
+		},
+		'America/Juneau' => {
+			exemplarCity => q#Juneau#,
+		},
 		'America/Kentucky/Monticello' => {
 			exemplarCity => q#Monticello, Kentucky#,
 		},
+		'America/Kralendijk' => {
+			exemplarCity => q#Kralendijk#,
+		},
+		'America/La_Paz' => {
+			exemplarCity => q#La Paz#,
+		},
+		'America/Lima' => {
+			exemplarCity => q#Lima#,
+		},
+		'America/Los_Angeles' => {
+			exemplarCity => q#Los Angeles#,
+		},
+		'America/Louisville' => {
+			exemplarCity => q#Louisville#,
+		},
 		'America/Lower_Princes' => {
-			exemplarCity => q#Lower Prince's Quarter#,
+			exemplarCity => q#Lower Prince’s Quarter#,
+		},
+		'America/Maceio' => {
+			exemplarCity => q#Maceio#,
+		},
+		'America/Managua' => {
+			exemplarCity => q#Managua#,
+		},
+		'America/Manaus' => {
+			exemplarCity => q#Manaus#,
+		},
+		'America/Marigot' => {
+			exemplarCity => q#Marigot#,
+		},
+		'America/Martinique' => {
+			exemplarCity => q#Martinique#,
+		},
+		'America/Matamoros' => {
+			exemplarCity => q#Matamoros#,
+		},
+		'America/Mazatlan' => {
+			exemplarCity => q#Mazatlan#,
+		},
+		'America/Mendoza' => {
+			exemplarCity => q#Mendoza#,
+		},
+		'America/Menominee' => {
+			exemplarCity => q#Menominee#,
+		},
+		'America/Merida' => {
+			exemplarCity => q#Merida#,
+		},
+		'America/Metlakatla' => {
+			exemplarCity => q#Metlakatla#,
+		},
+		'America/Mexico_City' => {
+			exemplarCity => q#Mexico City#,
+		},
+		'America/Miquelon' => {
+			exemplarCity => q#Miquelon#,
+		},
+		'America/Moncton' => {
+			exemplarCity => q#Moncton#,
+		},
+		'America/Monterrey' => {
+			exemplarCity => q#Monterrey#,
+		},
+		'America/Montevideo' => {
+			exemplarCity => q#Montevideo#,
+		},
+		'America/Montserrat' => {
+			exemplarCity => q#Montserrat#,
+		},
+		'America/Nassau' => {
+			exemplarCity => q#Nassau#,
+		},
+		'America/New_York' => {
+			exemplarCity => q#New York#,
+		},
+		'America/Nipigon' => {
+			exemplarCity => q#Nipigon#,
+		},
+		'America/Nome' => {
+			exemplarCity => q#Nome#,
+		},
+		'America/Noronha' => {
+			exemplarCity => q#Noronha#,
 		},
 		'America/North_Dakota/Beulah' => {
 			exemplarCity => q#Beulah, North Dakota#,
@@ -1365,8 +2473,74 @@ has 'time_zone_names' => (
 		'America/North_Dakota/New_Salem' => {
 			exemplarCity => q#New Salem, North Dakota#,
 		},
+		'America/Ojinaga' => {
+			exemplarCity => q#Ojinaga#,
+		},
+		'America/Panama' => {
+			exemplarCity => q#Panama#,
+		},
+		'America/Pangnirtung' => {
+			exemplarCity => q#Pangnirtung#,
+		},
+		'America/Paramaribo' => {
+			exemplarCity => q#Paramaribo#,
+		},
+		'America/Phoenix' => {
+			exemplarCity => q#Phoenix#,
+		},
+		'America/Port-au-Prince' => {
+			exemplarCity => q#Port-au-Prince#,
+		},
+		'America/Port_of_Spain' => {
+			exemplarCity => q#Port of Spain#,
+		},
+		'America/Porto_Velho' => {
+			exemplarCity => q#Porto Velho#,
+		},
+		'America/Puerto_Rico' => {
+			exemplarCity => q#Puerto Rico#,
+		},
+		'America/Rainy_River' => {
+			exemplarCity => q#Rainy River#,
+		},
+		'America/Rankin_Inlet' => {
+			exemplarCity => q#Rankin Inlet#,
+		},
+		'America/Recife' => {
+			exemplarCity => q#Recife#,
+		},
+		'America/Regina' => {
+			exemplarCity => q#Regina#,
+		},
+		'America/Resolute' => {
+			exemplarCity => q#Resolute#,
+		},
+		'America/Rio_Branco' => {
+			exemplarCity => q#Rio Branco#,
+		},
+		'America/Santa_Isabel' => {
+			exemplarCity => q#Santa Isabel#,
+		},
+		'America/Santarem' => {
+			exemplarCity => q#Santarem#,
+		},
+		'America/Santiago' => {
+			exemplarCity => q#Santiago#,
+		},
+		'America/Santo_Domingo' => {
+			exemplarCity => q#Santo Domingo#,
+		},
+		'America/Sao_Paulo' => {
+			exemplarCity => q#Sao Paulo#,
+		},
 		'America/Scoresbysund' => {
 			exemplarCity => q#Ittoqqortoormiit#,
+		},
+		'America/Sitka' => {
+			exemplarCity => q#Sitka#,
+		},
+		'America/St_Barthelemy' => {
+			exemplarCity => q#Saint Barthélemy#,
 		},
 		'America/St_Johns' => {
 			exemplarCity => q#St. John’s#,
@@ -1383,36 +2557,545 @@ has 'time_zone_names' => (
 		'America/St_Vincent' => {
 			exemplarCity => q#St. Vincent#,
 		},
-		'Arabian' => {
-			long => {
-				'daylight' => q(Arabian Summer Time),
-				'generic' => q(Arabian Time),
-				'standard' => q(Arabian Standard Time),
-			},
+		'America/Swift_Current' => {
+			exemplarCity => q#Swift Current#,
+		},
+		'America/Tegucigalpa' => {
+			exemplarCity => q#Tegucigalpa#,
+		},
+		'America/Thule' => {
+			exemplarCity => q#Thule#,
+		},
+		'America/Thunder_Bay' => {
+			exemplarCity => q#Thunder Bay#,
+		},
+		'America/Tijuana' => {
+			exemplarCity => q#Tijuana#,
+		},
+		'America/Toronto' => {
+			exemplarCity => q#Toronto#,
+		},
+		'America/Tortola' => {
+			exemplarCity => q#Tortola#,
+		},
+		'America/Vancouver' => {
+			exemplarCity => q#Vancouver#,
+		},
+		'America/Whitehorse' => {
+			exemplarCity => q#Whitehorse#,
+		},
+		'America/Winnipeg' => {
+			exemplarCity => q#Winnipeg#,
+		},
+		'America/Yakutat' => {
+			exemplarCity => q#Yakutat#,
+		},
+		'America/Yellowknife' => {
+			exemplarCity => q#Yellowknife#,
+		},
+		'Antarctica/Casey' => {
+			exemplarCity => q#Casey#,
+		},
+		'Antarctica/Davis' => {
+			exemplarCity => q#Davis#,
+		},
+		'Antarctica/Macquarie' => {
+			exemplarCity => q#Macquarie#,
+		},
+		'Antarctica/Mawson' => {
+			exemplarCity => q#Mawson#,
+		},
+		'Antarctica/McMurdo' => {
+			exemplarCity => q#McMurdo#,
+		},
+		'Antarctica/Palmer' => {
+			exemplarCity => q#Palmer#,
+		},
+		'Antarctica/Rothera' => {
+			exemplarCity => q#Rothera#,
+		},
+		'Antarctica/Syowa' => {
+			exemplarCity => q#Syowa#,
+		},
+		'Antarctica/Troll' => {
+			exemplarCity => q#Troll#,
+		},
+		'Antarctica/Vostok' => {
+			exemplarCity => q#Vostok#,
+		},
+		'Arctic/Longyearbyen' => {
+			exemplarCity => q#Longyearbyen#,
+		},
+		'Asia/Aden' => {
+			exemplarCity => q#Aden#,
+		},
+		'Asia/Almaty' => {
+			exemplarCity => q#Almaty#,
+		},
+		'Asia/Amman' => {
+			exemplarCity => q#Amman#,
+		},
+		'Asia/Anadyr' => {
+			exemplarCity => q#Anadyr#,
+		},
+		'Asia/Aqtau' => {
+			exemplarCity => q#Aqtau#,
+		},
+		'Asia/Aqtobe' => {
+			exemplarCity => q#Aqtobe#,
+		},
+		'Asia/Ashgabat' => {
+			exemplarCity => q#Ashgabat#,
+		},
+		'Asia/Baghdad' => {
+			exemplarCity => q#Baghdad#,
+		},
+		'Asia/Bahrain' => {
+			exemplarCity => q#Bahrain#,
+		},
+		'Asia/Baku' => {
+			exemplarCity => q#Baku#,
+		},
+		'Asia/Bangkok' => {
+			exemplarCity => q#Bangkok#,
+		},
+		'Asia/Beirut' => {
+			exemplarCity => q#Beirut#,
+		},
+		'Asia/Bishkek' => {
+			exemplarCity => q#Bishkek#,
+		},
+		'Asia/Brunei' => {
+			exemplarCity => q#Brunei#,
 		},
 		'Asia/Calcutta' => {
 			exemplarCity => q#Kolkata#,
 		},
+		'Asia/Choibalsan' => {
+			exemplarCity => q#Choibalsan#,
+		},
+		'Asia/Chongqing' => {
+			exemplarCity => q#Chongqing#,
+		},
+		'Asia/Colombo' => {
+			exemplarCity => q#Colombo#,
+		},
+		'Asia/Damascus' => {
+			exemplarCity => q#Damascus#,
+		},
+		'Asia/Dhaka' => {
+			exemplarCity => q#Dhaka#,
+		},
+		'Asia/Dili' => {
+			exemplarCity => q#Dili#,
+		},
+		'Asia/Dubai' => {
+			exemplarCity => q#Dubai#,
+		},
+		'Asia/Dushanbe' => {
+			exemplarCity => q#Dushanbe#,
+		},
+		'Asia/Gaza' => {
+			exemplarCity => q#Gaza#,
+		},
+		'Asia/Harbin' => {
+			exemplarCity => q#Harbin#,
+		},
+		'Asia/Hebron' => {
+			exemplarCity => q#Hebron#,
+		},
+		'Asia/Hong_Kong' => {
+			exemplarCity => q#Hong Kong#,
+		},
+		'Asia/Hovd' => {
+			exemplarCity => q#Hovd#,
+		},
+		'Asia/Irkutsk' => {
+			exemplarCity => q#Irkutsk#,
+		},
+		'Asia/Jakarta' => {
+			exemplarCity => q#Jakarta#,
+		},
+		'Asia/Jayapura' => {
+			exemplarCity => q#Jayapura#,
+		},
+		'Asia/Jerusalem' => {
+			exemplarCity => q#Jerusalem#,
+		},
+		'Asia/Kabul' => {
+			exemplarCity => q#Kabul#,
+		},
+		'Asia/Kamchatka' => {
+			exemplarCity => q#Kamchatka#,
+		},
+		'Asia/Karachi' => {
+			exemplarCity => q#Karachi#,
+		},
+		'Asia/Kashgar' => {
+			exemplarCity => q#Kashgar#,
+		},
 		'Asia/Katmandu' => {
 			exemplarCity => q#Kathmandu#,
+		},
+		'Asia/Khandyga' => {
+			exemplarCity => q#Khandyga#,
+		},
+		'Asia/Krasnoyarsk' => {
+			exemplarCity => q#Krasnoyarsk#,
+		},
+		'Asia/Kuala_Lumpur' => {
+			exemplarCity => q#Kuala Lumpur#,
+		},
+		'Asia/Kuching' => {
+			exemplarCity => q#Kuching#,
+		},
+		'Asia/Kuwait' => {
+			exemplarCity => q#Kuwait#,
+		},
+		'Asia/Macau' => {
+			exemplarCity => q#Macau#,
+		},
+		'Asia/Magadan' => {
+			exemplarCity => q#Magadan#,
+		},
+		'Asia/Makassar' => {
+			exemplarCity => q#Makassar#,
+		},
+		'Asia/Manila' => {
+			exemplarCity => q#Manila#,
+		},
+		'Asia/Muscat' => {
+			exemplarCity => q#Muscat#,
+		},
+		'Asia/Nicosia' => {
+			exemplarCity => q#Nicosia#,
+		},
+		'Asia/Novokuznetsk' => {
+			exemplarCity => q#Novokuznetsk#,
+		},
+		'Asia/Novosibirsk' => {
+			exemplarCity => q#Novosibirsk#,
+		},
+		'Asia/Omsk' => {
+			exemplarCity => q#Omsk#,
+		},
+		'Asia/Oral' => {
+			exemplarCity => q#Oral#,
+		},
+		'Asia/Phnom_Penh' => {
+			exemplarCity => q#Phnom Penh#,
+		},
+		'Asia/Pontianak' => {
+			exemplarCity => q#Pontianak#,
+		},
+		'Asia/Pyongyang' => {
+			exemplarCity => q#Pyongyang#,
+		},
+		'Asia/Qatar' => {
+			exemplarCity => q#Qatar#,
+		},
+		'Asia/Qyzylorda' => {
+			exemplarCity => q#Qyzylorda#,
+		},
+		'Asia/Rangoon' => {
+			exemplarCity => q#Rangoon#,
+		},
+		'Asia/Riyadh' => {
+			exemplarCity => q#Riyadh#,
+		},
+		'Asia/Sakhalin' => {
+			exemplarCity => q#Sakhalin#,
+		},
+		'Asia/Samarkand' => {
+			exemplarCity => q#Samarkand#,
+		},
+		'Asia/Seoul' => {
+			exemplarCity => q#Seoul#,
+		},
+		'Asia/Shanghai' => {
+			exemplarCity => q#Shanghai#,
+		},
+		'Asia/Singapore' => {
+			exemplarCity => q#Singapore#,
+		},
+		'Asia/Taipei' => {
+			exemplarCity => q#Taipei#,
+		},
+		'Asia/Tashkent' => {
+			exemplarCity => q#Tashkent#,
+		},
+		'Asia/Tbilisi' => {
+			exemplarCity => q#Tbilisi#,
+		},
+		'Asia/Tehran' => {
+			exemplarCity => q#Tehran#,
+		},
+		'Asia/Thimphu' => {
+			exemplarCity => q#Thimphu#,
+		},
+		'Asia/Tokyo' => {
+			exemplarCity => q#Tokyo#,
+		},
+		'Asia/Ulaanbaatar' => {
+			exemplarCity => q#Ulaanbaatar#,
+		},
+		'Asia/Urumqi' => {
+			exemplarCity => q#Urumqi#,
+		},
+		'Asia/Ust-Nera' => {
+			exemplarCity => q#Ust-Nera#,
+		},
+		'Asia/Vientiane' => {
+			exemplarCity => q#Vientiane#,
+		},
+		'Asia/Vladivostok' => {
+			exemplarCity => q#Vladivostok#,
+		},
+		'Asia/Yakutsk' => {
+			exemplarCity => q#Yakutsk#,
+		},
+		'Asia/Yekaterinburg' => {
+			exemplarCity => q#Yekaterinburg#,
+		},
+		'Asia/Yerevan' => {
+			exemplarCity => q#Yerevan#,
+		},
+		'Atlantic/Azores' => {
+			exemplarCity => q#Azores#,
+		},
+		'Atlantic/Bermuda' => {
+			exemplarCity => q#Bermuda#,
+		},
+		'Atlantic/Canary' => {
+			exemplarCity => q#Canary#,
+		},
+		'Atlantic/Cape_Verde' => {
+			exemplarCity => q#Cape Verde#,
 		},
 		'Atlantic/Faeroe' => {
 			exemplarCity => q#Faroe#,
 		},
+		'Atlantic/Madeira' => {
+			exemplarCity => q#Madeira#,
+		},
+		'Atlantic/Reykjavik' => {
+			exemplarCity => q#Reykjavik#,
+		},
+		'Atlantic/South_Georgia' => {
+			exemplarCity => q#South Georgia#,
+		},
 		'Atlantic/St_Helena' => {
 			exemplarCity => q#St. Helena#,
 		},
-		'China' => {
-			long => {
-				'daylight' => q(China Summer Time),
-				'generic' => q(China Time),
-				'standard' => q(China Standard Time),
-			},
+		'Atlantic/Stanley' => {
+			exemplarCity => q#Stanley#,
+		},
+		'Australia/Adelaide' => {
+			exemplarCity => q#Adelaide#,
+		},
+		'Australia/Brisbane' => {
+			exemplarCity => q#Brisbane#,
+		},
+		'Australia/Broken_Hill' => {
+			exemplarCity => q#Broken Hill#,
+		},
+		'Australia/Currie' => {
+			exemplarCity => q#Currie#,
+		},
+		'Australia/Darwin' => {
+			exemplarCity => q#Darwin#,
+		},
+		'Australia/Eucla' => {
+			exemplarCity => q#Eucla#,
+		},
+		'Australia/Hobart' => {
+			exemplarCity => q#Hobart#,
+		},
+		'Australia/Lindeman' => {
+			exemplarCity => q#Lindeman#,
+		},
+		'Australia/Lord_Howe' => {
+			exemplarCity => q#Lord Howe#,
+		},
+		'Australia/Melbourne' => {
+			exemplarCity => q#Melbourne#,
+		},
+		'Australia/Perth' => {
+			exemplarCity => q#Perth#,
+		},
+		'Australia/Sydney' => {
+			exemplarCity => q#Sydney#,
+		},
+		'Europe/Amsterdam' => {
+			exemplarCity => q#Amsterdam#,
+		},
+		'Europe/Andorra' => {
+			exemplarCity => q#Andorra#,
+		},
+		'Europe/Athens' => {
+			exemplarCity => q#Athens#,
+		},
+		'Europe/Belgrade' => {
+			exemplarCity => q#Belgrade#,
+		},
+		'Europe/Berlin' => {
+			exemplarCity => q#Berlin#,
+		},
+		'Europe/Bratislava' => {
+			exemplarCity => q#Bratislava#,
+		},
+		'Europe/Brussels' => {
+			exemplarCity => q#Brussels#,
+		},
+		'Europe/Bucharest' => {
+			exemplarCity => q#Bucharest#,
+		},
+		'Europe/Budapest' => {
+			exemplarCity => q#Budapest#,
+		},
+		'Europe/Busingen' => {
+			exemplarCity => q#Busingen#,
+		},
+		'Europe/Chisinau' => {
+			exemplarCity => q#Chisinau#,
+		},
+		'Europe/Copenhagen' => {
+			exemplarCity => q#Copenhagen#,
+		},
+		'Europe/Dublin' => {
+			exemplarCity => q#Dublin#,
+		},
+		'Europe/Gibraltar' => {
+			exemplarCity => q#Gibraltar#,
+		},
+		'Europe/Guernsey' => {
+			exemplarCity => q#Guernsey#,
+		},
+		'Europe/Helsinki' => {
+			exemplarCity => q#Helsinki#,
+		},
+		'Europe/Isle_of_Man' => {
+			exemplarCity => q#Isle of Man#,
+		},
+		'Europe/Istanbul' => {
+			exemplarCity => q#Istanbul#,
+		},
+		'Europe/Jersey' => {
+			exemplarCity => q#Jersey#,
+		},
+		'Europe/Kaliningrad' => {
+			exemplarCity => q#Kaliningrad#,
+		},
+		'Europe/Kiev' => {
+			exemplarCity => q#Kiev#,
+		},
+		'Europe/Lisbon' => {
+			exemplarCity => q#Lisbon#,
+		},
+		'Europe/Ljubljana' => {
+			exemplarCity => q#Ljubljana#,
 		},
 		'Europe/London' => {
+			exemplarCity => q#London#,
 			short => {
 				'daylight' => q(BST),
 			},
+		},
+		'Europe/Luxembourg' => {
+			exemplarCity => q#Luxembourg#,
+		},
+		'Europe/Madrid' => {
+			exemplarCity => q#Madrid#,
+		},
+		'Europe/Malta' => {
+			exemplarCity => q#Malta#,
+		},
+		'Europe/Mariehamn' => {
+			exemplarCity => q#Mariehamn#,
+		},
+		'Europe/Minsk' => {
+			exemplarCity => q#Minsk#,
+		},
+		'Europe/Monaco' => {
+			exemplarCity => q#Monaco#,
+		},
+		'Europe/Moscow' => {
+			exemplarCity => q#Moscow#,
+		},
+		'Europe/Oslo' => {
+			exemplarCity => q#Oslo#,
+		},
+		'Europe/Paris' => {
+			exemplarCity => q#Paris#,
+		},
+		'Europe/Podgorica' => {
+			exemplarCity => q#Podgorica#,
+		},
+		'Europe/Prague' => {
+			exemplarCity => q#Prague#,
+		},
+		'Europe/Riga' => {
+			exemplarCity => q#Riga#,
+		},
+		'Europe/Rome' => {
+			exemplarCity => q#Rome#,
+		},
+		'Europe/Samara' => {
+			exemplarCity => q#Samara#,
+		},
+		'Europe/San_Marino' => {
+			exemplarCity => q#San Marino#,
+		},
+		'Europe/Sarajevo' => {
+			exemplarCity => q#Sarajevo#,
+		},
+		'Europe/Simferopol' => {
+			exemplarCity => q#Simferopol#,
+		},
+		'Europe/Skopje' => {
+			exemplarCity => q#Skopje#,
+		},
+		'Europe/Sofia' => {
+			exemplarCity => q#Sofia#,
+		},
+		'Europe/Stockholm' => {
+			exemplarCity => q#Stockholm#,
+		},
+		'Europe/Tallinn' => {
+			exemplarCity => q#Tallinn#,
+		},
+		'Europe/Tirane' => {
+			exemplarCity => q#Tirane#,
+		},
+		'Europe/Uzhgorod' => {
+			exemplarCity => q#Uzhgorod#,
+		},
+		'Europe/Vaduz' => {
+			exemplarCity => q#Vaduz#,
+		},
+		'Europe/Vatican' => {
+			exemplarCity => q#Vatican#,
+		},
+		'Europe/Vienna' => {
+			exemplarCity => q#Vienna#,
+		},
+		'Europe/Vilnius' => {
+			exemplarCity => q#Vilnius#,
+		},
+		'Europe/Volgograd' => {
+			exemplarCity => q#Volgograd#,
+		},
+		'Europe/Warsaw' => {
+			exemplarCity => q#Warsaw#,
+		},
+		'Europe/Zagreb' => {
+			exemplarCity => q#Zagreb#,
+		},
+		'Europe/Zaporozhye' => {
+			exemplarCity => q#Zaporozhye#,
+		},
+		'Europe/Zurich' => {
+			exemplarCity => q#Zurich#,
 		},
 		'Europe_Central' => {
 			short => {
@@ -1435,45 +3118,165 @@ has 'time_zone_names' => (
 				'standard' => q(WET),
 			},
 		},
-		'Iran' => {
+		'French_Southern' => {
 			long => {
-				'daylight' => q(Iran Summer Time),
-				'generic' => q(Iran Time),
-				'standard' => q(Iran Standard Time),
+				'standard' => q(French Southern and Antarctic Time),
 			},
 		},
-		'Israel' => {
-			long => {
-				'daylight' => q(Israel Summer Time),
-				'generic' => q(Israel Time),
-				'standard' => q(Israel Standard Time),
-			},
+		'Indian/Antananarivo' => {
+			exemplarCity => q#Antananarivo#,
 		},
-		'Japan' => {
-			long => {
-				'daylight' => q(Japan Summer Time),
-				'generic' => q(Japan Time),
-				'standard' => q(Japan Standard Time),
-			},
+		'Indian/Chagos' => {
+			exemplarCity => q#Chagos#,
 		},
-		'Korea' => {
-			long => {
-				'daylight' => q(Korean Summer Time),
-				'generic' => q(Korean Time),
-				'standard' => q(Korean Standard Time),
-			},
+		'Indian/Christmas' => {
+			exemplarCity => q#Christmas#,
+		},
+		'Indian/Cocos' => {
+			exemplarCity => q#Cocos#,
+		},
+		'Indian/Comoro' => {
+			exemplarCity => q#Comoro#,
+		},
+		'Indian/Kerguelen' => {
+			exemplarCity => q#Kerguelen#,
+		},
+		'Indian/Mahe' => {
+			exemplarCity => q#Mahe#,
+		},
+		'Indian/Maldives' => {
+			exemplarCity => q#Maldives#,
+		},
+		'Indian/Mauritius' => {
+			exemplarCity => q#Mauritius#,
+		},
+		'Indian/Mayotte' => {
+			exemplarCity => q#Mayotte#,
+		},
+		'Pacific/Apia' => {
+			exemplarCity => q#Apia#,
+		},
+		'Pacific/Auckland' => {
+			exemplarCity => q#Auckland#,
+		},
+		'Pacific/Chatham' => {
+			exemplarCity => q#Chatham#,
+		},
+		'Pacific/Easter' => {
+			exemplarCity => q#Easter#,
+		},
+		'Pacific/Efate' => {
+			exemplarCity => q#Efate#,
+		},
+		'Pacific/Enderbury' => {
+			exemplarCity => q#Enderbury#,
+		},
+		'Pacific/Fakaofo' => {
+			exemplarCity => q#Fakaofo#,
+		},
+		'Pacific/Fiji' => {
+			exemplarCity => q#Fiji#,
+		},
+		'Pacific/Funafuti' => {
+			exemplarCity => q#Funafuti#,
+		},
+		'Pacific/Galapagos' => {
+			exemplarCity => q#Galapagos#,
+		},
+		'Pacific/Gambier' => {
+			exemplarCity => q#Gambier#,
+		},
+		'Pacific/Guadalcanal' => {
+			exemplarCity => q#Guadalcanal#,
+		},
+		'Pacific/Guam' => {
+			exemplarCity => q#Guam#,
+		},
+		'Pacific/Honolulu' => {
+			exemplarCity => q#Honolulu#,
+		},
+		'Pacific/Johnston' => {
+			exemplarCity => q#Johnston#,
+		},
+		'Pacific/Kiritimati' => {
+			exemplarCity => q#Kiritimati#,
+		},
+		'Pacific/Kosrae' => {
+			exemplarCity => q#Kosrae#,
+		},
+		'Pacific/Kwajalein' => {
+			exemplarCity => q#Kwajalein#,
+		},
+		'Pacific/Majuro' => {
+			exemplarCity => q#Majuro#,
+		},
+		'Pacific/Marquesas' => {
+			exemplarCity => q#Marquesas#,
+		},
+		'Pacific/Midway' => {
+			exemplarCity => q#Midway#,
+		},
+		'Pacific/Nauru' => {
+			exemplarCity => q#Nauru#,
+		},
+		'Pacific/Niue' => {
+			exemplarCity => q#Niue#,
+		},
+		'Pacific/Norfolk' => {
+			exemplarCity => q#Norfolk#,
+		},
+		'Pacific/Noumea' => {
+			exemplarCity => q#Noumea#,
+		},
+		'Pacific/Pago_Pago' => {
+			exemplarCity => q#Pago Pago#,
+		},
+		'Pacific/Palau' => {
+			exemplarCity => q#Palau#,
+		},
+		'Pacific/Pitcairn' => {
+			exemplarCity => q#Pitcairn#,
 		},
 		'Pacific/Ponape' => {
 			exemplarCity => q#Pohnpei#,
 		},
+		'Pacific/Port_Moresby' => {
+			exemplarCity => q#Port Moresby#,
+		},
+		'Pacific/Rarotonga' => {
+			exemplarCity => q#Rarotonga#,
+		},
+		'Pacific/Saipan' => {
+			exemplarCity => q#Saipan#,
+		},
+		'Pacific/Tahiti' => {
+			exemplarCity => q#Tahiti#,
+		},
+		'Pacific/Tarawa' => {
+			exemplarCity => q#Tarawa#,
+		},
+		'Pacific/Tongatapu' => {
+			exemplarCity => q#Tongatapu#,
+		},
 		'Pacific/Truk' => {
 			exemplarCity => q#Chuuk#,
 		},
-		'Taipei' => {
+		'Pacific/Wake' => {
+			exemplarCity => q#Wake#,
+		},
+		'Pacific/Wallis' => {
+			exemplarCity => q#Wallis#,
+		},
+		'Pierre_Miquelon' => {
 			long => {
-				'daylight' => q(Taipei Summer Time),
-				'generic' => q(Taipei Time),
-				'standard' => q(Taipei Standard Time),
+				'daylight' => q(Saint Pierre and Miquelon Daylight Time),
+				'generic' => q(Saint Pierre and Miquelon Time),
+				'standard' => q(Saint Pierre and Miquelon Standard Time),
+			},
+		},
+		'Wallis' => {
+			long => {
+				'standard' => q(Wallis and Futuna Time),
 			},
 		},
 	 } }

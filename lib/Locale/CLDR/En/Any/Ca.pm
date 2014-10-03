@@ -1,11 +1,11 @@
 package Locale::CLDR::En::Any::Ca;
 # This file auto generated from Data\common\main\en_CA.xml
-#	on Fri 20 Jun 11:21:21 pm GMT
-# XML file generated 2013-11-22 17:21:44 -0600 (Fri, 22 Nov 2013)
+#	on Thu  2 Oct 10:56:40 am GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -15,6 +15,20 @@ use if $^V ge v5.12.0, feature => 'unicode_strings';
 use Moose;
 
 extends('Locale::CLDR::En::Any');
+has 'units' => (
+	is			=> 'ro',
+	isa			=> 'HashRef[HashRef[HashRef[Str]]]',
+	init_arg	=> undef,
+	default		=> sub { {
+				'narrow' => {
+					'pound' => {
+						'one' => q({0}lb),
+						'other' => q({0}lb),
+					},
+				},
+			} }
+);
+
 has 'curriencies' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -42,19 +56,19 @@ has 'day_period_data' => (
 		SWITCH:
 		for ($type) {
 			if ($_ eq 'generic') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
 			last SWITCH;
 			}
 			if ($_ eq 'gregorian') {
-				return 'am' if $time >= 000
-					&& $time < 1200;
 				return 'pm' if $time > 1200
 					&& $time < 2400;
 				return 'noon' if $time == 1200;
+				return 'am' if $time >= 000
+					&& $time < 1200;
 			last SWITCH;
 			}
 		}
@@ -116,19 +130,19 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			MEd => q{E, MM-dd},
-			Md => q{MM-dd},
-			yyyyM => q{GGGGG y-MM},
-			yyyyMEd => q{E, GGGGG y-MM-dd},
-			yyyyMd => q{GGGGG y-MM-dd},
-		},
 		'gregorian' => {
 			MEd => q{E, MM-dd},
 			Md => q{MM-dd},
 			yM => q{y-MM},
 			yMEd => q{E, y-MM-dd},
 			yMd => q{y-MM-dd},
+		},
+		'generic' => {
+			MEd => q{E, MM-dd},
+			Md => q{MM-dd},
+			yyyyM => q{GGGGG y-MM},
+			yyyyMEd => q{E, GGGGG y-MM-dd},
+			yyyyMd => q{GGGGG y-MM-dd},
 		},
 	} },
 );
@@ -146,30 +160,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			MEd => {
-				M => q{E, MM-dd – E, MM-dd},
-				d => q{E, MM-dd – E, MM-dd},
-			},
-			Md => {
-				M => q{MM-dd – MM-dd},
-				d => q{MM-dd – MM-dd},
-			},
-			yM => {
-				M => q{GGGGG y-MM – y-MM},
-				y => q{GGGGG y-MM – y-MM},
-			},
-			yMEd => {
-				M => q{E, y-MM-dd – E, y-MM-dd},
-				d => q{E, y-MM-dd – E, y-MM-dd},
-				y => q{E, y-MM-dd – E, y-MM-dd},
-			},
-			yMd => {
-				M => q{GGGGG y-MM-dd – y-MM-dd},
-				d => q{GGGGG y-MM-dd – y-MM-dd},
-				y => q{GGGGG y-MM-dd – y-MM-dd},
-			},
-		},
 		'gregorian' => {
 			MEd => {
 				M => q{E, MM-dd – E, MM-dd},
@@ -192,6 +182,30 @@ has 'datetime_formats_interval' => (
 				M => q{y-MM-dd – y-MM-dd},
 				d => q{y-MM-dd – y-MM-dd},
 				y => q{y-MM-dd – y-MM-dd},
+			},
+		},
+		'generic' => {
+			MEd => {
+				M => q{E, MM-dd – E, MM-dd},
+				d => q{E, MM-dd – E, MM-dd},
+			},
+			Md => {
+				M => q{MM-dd – MM-dd},
+				d => q{MM-dd – MM-dd},
+			},
+			yM => {
+				M => q{GGGGG y-MM – y-MM},
+				y => q{GGGGG y-MM – y-MM},
+			},
+			yMEd => {
+				M => q{E, y-MM-dd – E, y-MM-dd},
+				d => q{E, y-MM-dd – E, y-MM-dd},
+				y => q{E, y-MM-dd – E, y-MM-dd},
+			},
+			yMd => {
+				M => q{GGGGG y-MM-dd – y-MM-dd},
+				d => q{GGGGG y-MM-dd – y-MM-dd},
+				y => q{GGGGG y-MM-dd – y-MM-dd},
 			},
 		},
 	} },

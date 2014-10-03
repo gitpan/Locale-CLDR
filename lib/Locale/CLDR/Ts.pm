@@ -1,11 +1,11 @@
 package Locale::CLDR::Ts;
 # This file auto generated from Data\common\main\ts.xml
-#	on Sat 21 Jun  1:24:23 am GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct  2:08:17 pm GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -112,16 +112,7 @@ has 'number_symbols' => (
 	default		=> sub { {
 		'latn' => {
 			'decimal' => q(,),
-			'exponential' => q(),
 			'group' => q( ),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -205,7 +196,7 @@ has 'calendar_months' => (
 							'Ndz',
 							'Nhl',
 							'Huk',
-							'N\'w'
+							'N’w'
 						],
 						leap => [
 							
@@ -224,7 +215,7 @@ has 'calendar_months' => (
 							'Ndzhati',
 							'Nhlangula',
 							'Hukuri',
-							'N\'wendzamhala'
+							'N’wendzamhala'
 						],
 						leap => [
 							

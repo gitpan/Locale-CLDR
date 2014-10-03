@@ -1,11 +1,11 @@
 package Locale::CLDR::Sv::Any::Fi;
 # This file auto generated from Data\common\main\sv_FI.xml
-#	on Sat 21 Jun  1:14:31 am GMT
-# XML file generated 2014-02-26 15:19:38 -0600 (Wed, 26 Feb 2014)
+#	on Thu  2 Oct  1:53:37 pm GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -25,8 +25,6 @@ has 'display_name_language' => (
 				'az@alt=short' => 'azerbajdzjanska',
  				'chm' => 'mari',
  				'fj' => 'fiji',
- 				'ha' => 'hausa',
- 				'ig' => 'igbo',
  				'km' => 'khmer',
  				'ks' => 'kashmiri',
  				'ky' => 'kirgiziska',
@@ -183,16 +181,15 @@ has 'units' => (
 	isa			=> 'HashRef[HashRef[HashRef[Str]]]',
 	init_arg	=> undef,
 	default		=> sub { {
-				'long' => {
-					'celsius' => {
-						'one' => q({0} grad Celsius),
-						'other' => q({0} grader Celsius),
-					},
-				},
 				'narrow' => {
 					'kilometer-per-hour' => {
 						'one' => q({0} km/h),
 						'other' => q({0} km/h),
+					},
+				},
+				'short' => {
+					'celsius' => {
+						'' => q(grader Celsius),
 					},
 				},
 			} }
@@ -203,8 +200,6 @@ has 'listPatterns' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-				start => q({0}, {1}),
-				middle => q({0}, {1}),
 				end => q({0} och {1}),
 				2 => q({0} och {1}),
 		} }
@@ -216,10 +211,6 @@ has 'eras' => (
 	init_arg	=> undef,
 	default		=> sub { {
 		'gregorian' => {
-			wide => {
-				'0' => 'före Kristus',
-				'1' => 'efter Kristus'
-			},
 		},
 	} },
 );
@@ -231,8 +222,6 @@ has 'date_formats' => (
 	default		=> sub { {
 		'gregorian' => {
 			'full' => q{EEEE'en' 'den' d:'e' MMMM y},
-			'long' => q{d MMMM y},
-			'medium' => q{d MMM y},
 			'short' => q{dd-MM-y},
 		},
 	} },

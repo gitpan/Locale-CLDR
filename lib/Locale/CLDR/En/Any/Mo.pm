@@ -1,11 +1,11 @@
 package Locale::CLDR::En::Any::Mo;
 # This file auto generated from Data\common\main\en_MO.xml
-#	on Fri 20 Jun 11:21:29 pm GMT
-# XML file generated 2013-08-18 23:26:52 -0500 (Sun, 18 Aug 2013)
+#	on Thu  2 Oct 10:58:43 am GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -22,9 +22,6 @@ has 'curriencies' => (
 	default		=> sub { {
 		'MOP' => {
 			symbol => 'MOP$',
-		},
-		'USD' => {
-			symbol => 'US$',
 		},
 	} },
 );

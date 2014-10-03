@@ -1,11 +1,11 @@
 package Locale::CLDR::Os;
 # This file auto generated from Data\common\main\os.xml
-#	on Sat 21 Jun 12:45:02 am GMT
-# XML file generated 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014)
+#	on Thu  2 Oct  1:16:45 pm GMT
+# XML file generated 2014-08-11 11:10:03 -0500 (Mon, 11 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -307,46 +307,68 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'day' => {
+						'' => q(боны),
 						'one' => q({0} бон),
 						'other' => q({0} боны),
 					},
 					'hour' => {
+						'' => q(сахаты),
 						'one' => q({0} сахат),
 						'other' => q({0} сахаты),
 					},
 					'minute' => {
+						'' => q(минуты),
 						'one' => q({0} минут),
 						'other' => q({0} минуты),
 					},
 					'month' => {
+						'' => q(мӕйы),
 						'one' => q({0} мӕй),
 						'other' => q({0} мӕйы),
 					},
 					'second' => {
+						'' => q(секунды),
 						'one' => q({0} секунд),
 						'other' => q({0} секунды),
 					},
 					'week' => {
+						'' => q(къуырийы),
 						'one' => q({0} къуыри),
 						'other' => q({0} къуырийы),
 					},
 					'year' => {
+						'' => q(азы),
 						'one' => q({0} аз),
 						'other' => q({0} азы),
 					},
 				},
 				'short' => {
 					'day' => {
+						'' => q(боны),
 						'one' => q({0} бон),
 						'other' => q({0} боны),
 					},
 					'hour' => {
+						'' => q(сахаты),
 						'one' => q({0} с.),
 						'other' => q({0} с.),
 					},
 					'minute' => {
+						'' => q(минуты),
 						'one' => q({0} мин.),
 						'other' => q({0} мин.),
+					},
+					'month' => {
+						'' => q(мӕйы),
+					},
+					'second' => {
+						'' => q(секунды),
+					},
+					'week' => {
+						'' => q(къуырийы),
+					},
+					'year' => {
+						'' => q(азы),
 					},
 				},
 			} }
@@ -401,7 +423,6 @@ has 'number_symbols' => (
 			'perMille' => q(‰),
 			'percentSign' => q(%),
 			'plusSign' => q(+),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -848,7 +869,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			H => q{HH},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -871,7 +892,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{y-'ӕм' 'азы' QQQ},
 			yQQQQ => q{y-'ӕм' 'азы' QQQQ},
 		},
-		'generic' => {
+		'gregorian' => {
 			H => q{HH},
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
@@ -910,7 +931,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH–HH},
 			},
@@ -955,7 +976,7 @@ has 'datetime_formats_interval' => (
 				h => q{h–h a v},
 			},
 		},
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH–HH},
 			},

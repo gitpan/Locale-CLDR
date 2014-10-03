@@ -1,11 +1,11 @@
 package Locale::CLDR::Mt;
 # This file auto generated from Data\common\main\mt.xml
-#	on Sat 21 Jun 12:35:47 am GMT
-# XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
+#	on Thu  2 Oct  1:04:33 pm GMT
+# XML file generated 2014-08-15 11:29:13 -0500 (Fri, 15 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -1350,6 +1350,11 @@ has 'display_name_language' => (
  				'el' => 'Grieg',
  				'elx' => 'Elamit',
  				'en' => 'Ingliż',
+ 				'en_AU' => 'Ingliż Awstraljan',
+ 				'en_GB' => 'Ingliż Brittaniku',
+ 				'en_GB@alt=short' => 'Ingliż (UK)',
+ 				'en_US' => 'Ingliż Amerikan',
+ 				'en_US@alt=short' => 'Ingliż (US)',
  				'enm' => 'Ingliż, Medjevali',
  				'eo' => 'Esperanto',
  				'es' => 'Spanjol',
@@ -1366,6 +1371,8 @@ has 'display_name_language' => (
  				'fo' => 'Fawriż',
  				'fon' => 'Fon',
  				'fr' => 'Franċiż',
+ 				'fr_CA' => 'Franċiż Kanadiż',
+ 				'fr_CH' => 'Franċiż Żvizzeru',
  				'frm' => 'Franċiż, Medjevali',
  				'fro' => 'Franċiż, Antik',
  				'fur' => 'Frijuljan',
@@ -1637,7 +1644,7 @@ has 'display_name_language' => (
  				'uga' => 'Ugaritiku',
  				'uk' => 'Ukranjan',
  				'umb' => 'Umbundu',
- 				'und' => 'Indeterminat',
+ 				'und' => 'Lingwa Mhux Magħrufa',
  				'ur' => 'Urdu',
  				'uz' => 'Użbek',
  				'vai' => 'Vai',
@@ -1660,6 +1667,7 @@ has 'display_name_language' => (
  				'zap' => 'Żapotek',
  				'zen' => 'Żenaga',
  				'zh' => 'Ċiniż',
+ 				'zh_Hans' => 'Ċiniż Simplifikat',
  				'zu' => 'Żulu',
  				'zun' => 'Żuni',
  				'zxx' => 'Bla kontent lingwistiku',
@@ -1684,15 +1692,15 @@ has 'display_name_script' => (
  			'Brai' => 'Braille',
  			'Cyrl' => 'Ċirilliku',
  			'Grek' => 'Grieg',
- 			'Hans' => 'Sempliċi',
- 			'Hans@alt=stand-alone' => 'Ħan Sempliċi',
+ 			'Hans' => 'Simplifikat',
+ 			'Hans@alt=stand-alone' => 'Han Simplifikat',
  			'Hant' => 'Tradizzjonali',
- 			'Hant@alt=stand-alone' => 'Ħan Tradizzjonali',
+ 			'Hant@alt=stand-alone' => 'Han Tradizzjonali',
  			'Latn' => 'Latin',
  			'Xpeo' => 'Persjan Antik',
  			'Zxxx' => 'Mhux Miktub',
  			'Zyyy' => 'Komuni',
- 			'Zzzz' => 'Skritt Mhux Magħruf',
+ 			'Zzzz' => 'Kitba Mhux Magħrufa',
 
 			);
 			if ( @_ ) {
@@ -1768,7 +1776,7 @@ has 'display_name_territory' => (
  			'BM' => 'Bermuda',
  			'BN' => 'Brunej',
  			'BO' => 'Bolivja',
- 			'BR' => 'Brażil',
+ 			'BR' => 'Il-Brażil',
  			'BS' => 'Baħamas',
  			'BT' => 'Butan',
  			'BV' => 'Bouvet Island',
@@ -1785,7 +1793,7 @@ has 'display_name_territory' => (
  			'CK' => 'Cook Islands',
  			'CL' => 'Ċili',
  			'CM' => 'Kamerun',
- 			'CN' => 'Ċina',
+ 			'CN' => 'Iċ-Ċina',
  			'CO' => 'Kolumbja',
  			'CR' => 'Kosta Rika',
  			'CU' => 'Kuba',
@@ -1793,7 +1801,7 @@ has 'display_name_territory' => (
  			'CX' => 'Christmas Island',
  			'CY' => 'Ċipru',
  			'CZ' => 'Repubblika Ċeka',
- 			'DE' => 'Ġermanja',
+ 			'DE' => 'Il-Ġermanja',
  			'DJ' => 'Ġibuti',
  			'DK' => 'Danimarka',
  			'DM' => 'Dominika',
@@ -1814,7 +1822,7 @@ has 'display_name_territory' => (
  			'FO' => 'Gżejjer Faroe',
  			'FR' => 'Franza',
  			'GA' => 'Gabon',
- 			'GB' => 'Ingilterra',
+ 			'GB' => 'L-Ingilterra',
  			'GD' => 'Grenada',
  			'GE' => 'Ġorġja',
  			'GF' => 'Gujana Franċiża',
@@ -1842,15 +1850,15 @@ has 'display_name_territory' => (
  			'IE' => 'Irlanda',
  			'IL' => 'Iżrael',
  			'IM' => 'Isle of Man',
- 			'IN' => 'Indja',
+ 			'IN' => 'L-Indja',
  			'IO' => 'British Indian Ocean Territory',
  			'IQ' => 'Iraq',
  			'IR' => 'Iran',
  			'IS' => 'Islanda',
- 			'IT' => 'Italja',
+ 			'IT' => 'L-Italja',
  			'JM' => 'Ġamajka',
  			'JO' => 'Ġordan',
- 			'JP' => 'Ġappun',
+ 			'JP' => 'Il-Ġappun',
  			'KE' => 'Kenja',
  			'KG' => 'Kirgistan',
  			'KH' => 'Kambodja',
@@ -1925,7 +1933,7 @@ has 'display_name_territory' => (
  			'QA' => 'Qatar',
  			'RE' => 'Réunion',
  			'RO' => 'Rumanija',
- 			'RU' => 'Russja',
+ 			'RU' => 'Ir-Russja',
  			'RW' => 'Rwanda',
  			'SA' => 'Għarabja Sawdita',
  			'SB' => 'Solomon Islands',
@@ -1965,7 +1973,7 @@ has 'display_name_territory' => (
  			'UA' => 'Ukraina',
  			'UG' => 'Uganda',
  			'UM' => 'United States Minor Outlying Islands',
- 			'US' => 'Stati Uniti',
+ 			'US' => 'L-Istati Uniti',
  			'UY' => 'Urugwaj',
  			'UZ' => 'Użbekistan',
  			'VA' => 'Vatikan',
@@ -2025,10 +2033,13 @@ has 'display_name_type' => (
 			'calendar' => {
  				'buddhist' => q{Kalendarju Buddist},
  				'chinese' => q{Kalendarju Ċiniż},
+ 				'dangi' => q{Kalendarju Dangi},
+ 				'ethiopic' => q{Kalendarju Etjopiku},
  				'gregorian' => q{Kalendarju Gregorjan},
  				'hebrew' => q{Kalendarju Ebrajk},
- 				'islamic' => q{Kalendarju Islamiku},
+ 				'islamic' => q{Kalendarju Iżlamiku},
  				'islamic-civil' => q{Kalendarju Islamiku-Ċivili},
+ 				'iso8601' => q{Kalendarju ISO-8601},
  				'japanese' => q{Kalendarju Ġappuniż},
  			},
  			'collation' => {
@@ -2037,11 +2048,12 @@ has 'display_name_type' => (
  				'gb2312han' => q{Ordni Ċiniż Sempliċi (GB2312)},
  				'phonebook' => q{Ordni Telefonika},
  				'pinyin' => q{Ordni tal-Pinjin},
+ 				'standard' => q{Ordni Standard},
  				'stroke' => q{Ordni Maħżuża},
  				'traditional' => q{Tradizzjonali},
  			},
  			'numbers' => {
- 				'latn' => q{Numri Oċċidentali},
+ 				'latn' => q{Numri tal-Punent},
  			},
 
 		}
@@ -2086,17 +2098,40 @@ has 'characters' => (
 		no warnings 'experimental::regex_sets';
 		return {
 			auxiliary => qr{(?^u:[c y])},
-			index => ['A', 'B', 'Ċ', 'C', 'D', 'E', 'F', 'Ġ', 'G', '{GĦ}', 'H', 'Ħ', 'I', '{IE}', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Ż', 'Z'],
+			index => ['A', 'B', 'Ċ', 'C', 'D', 'E', 'F', 'Ġ', 'G', '{GĦ}', 'H', 'Ħ', 'I', '{IE*}', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Ż', 'Z'],
 			main => qr{(?^u:[a à b ċ d e è f ġ g {għ} h ħ i ì j k l m n o ò p q r s t u ù v w x ż z])},
 			punctuation => qr{(?^u:[\- , ; \: ! ? . ' ‘ ’ " “ ” ( ) \[ \] \{ \}])},
 		};
 	},
 EOT
 : sub {
-		return { index => ['A', 'B', 'Ċ', 'C', 'D', 'E', 'F', 'Ġ', 'G', '{GĦ}', 'H', 'Ħ', 'I', '{IE}', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Ż', 'Z'], };
+		return { index => ['A', 'B', 'Ċ', 'C', 'D', 'E', 'F', 'Ġ', 'G', '{GĦ}', 'H', 'Ħ', 'I', '{IE*}', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Ż', 'Z'], };
 },
 );
 
+
+has 'ellipsis' => (
+	is			=> 'ro',
+	isa			=> 'HashRef',
+	init_arg	=> undef,
+	default		=> sub {
+		return {
+			'final' => '{0}…',
+			'initial' => '…{0}',
+			'medial' => '{0}…{1}',
+			'word-final' => '{0} …',
+			'word-initial' => '… {0}',
+			'word-medial' => '{0} … {1}',
+		};
+	},
+);
+
+has 'more_information' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> qq{?},
+);
 
 has 'quote_start' => (
 	is			=> 'ro',
@@ -2126,6 +2161,137 @@ has 'alternate_quote_end' => (
 	default		=> qq{’},
 );
 
+has 'units' => (
+	is			=> 'ro',
+	isa			=> 'HashRef[HashRef[HashRef[Str]]]',
+	init_arg	=> undef,
+	default		=> sub { {
+				'long' => {
+					'arc-minute' => {
+						'few' => q({0}′),
+						'many' => q({0}′),
+						'one' => q({0}′),
+						'other' => q({0}′),
+					},
+					'karat' => {
+						'' => q(karati),
+						'few' => q({0} kt),
+						'many' => q({0} kt),
+						'one' => q({0} kt),
+						'other' => q({0} kt),
+					},
+					'liter-per-kilometer' => {
+						'' => q(L/km),
+						'few' => q({0} litri kull kilometru),
+						'many' => q({0} litri kull kilometru),
+						'one' => q({0} litru kull kilometru),
+						'other' => q({0} litri kull kilometru),
+					},
+					'lux' => {
+						'' => q(lx),
+						'few' => q({0} lx),
+						'many' => q({0} lx),
+						'one' => q({0} lx),
+						'other' => q({0} lx),
+					},
+					'megabyte' => {
+						'' => q(megabytes),
+						'few' => q({0} megabytes),
+						'many' => q({0} megabytes),
+						'one' => q({0} megabyte),
+						'other' => q({0} megabytes),
+					},
+					'millisecond' => {
+						'' => q(millisekondi),
+						'few' => q({0} millisekondi),
+						'many' => q({0} millisekondi),
+						'one' => q({0} millisekonda),
+						'other' => q({0} millisekondi),
+					},
+					'terabit' => {
+						'' => q(terabits),
+						'few' => q({0} terabits),
+						'many' => q({0} terabits),
+						'one' => q({0} terabit),
+						'other' => q({0} terabits),
+					},
+					'terabyte' => {
+						'' => q(terabytes),
+						'few' => q({0} terabytes),
+						'many' => q({0} terabytes),
+						'one' => q({0} terabyte),
+						'other' => q({0} terabytes),
+					},
+				},
+				'narrow' => {
+					'millisecond' => {
+						'' => q(millisek),
+						'few' => q({0}ms),
+						'many' => q({0}ms),
+						'one' => q({0}ms),
+						'other' => q({0}ms),
+					},
+				},
+				'short' => {
+					'karat' => {
+						'' => q(kt),
+						'few' => q({0} kt),
+						'many' => q({0} kt),
+						'one' => q({0} kt),
+						'other' => q({0} kt),
+					},
+					'liter-per-kilometer' => {
+						'' => q(L/km),
+						'few' => q({0} L/km),
+						'many' => q({0} L/km),
+						'one' => q({0} L/km),
+						'other' => q({0} L/km),
+					},
+					'lux' => {
+						'' => q(lx),
+						'few' => q({0} lx),
+						'many' => q({0} lx),
+						'one' => q({0} lx),
+						'other' => q({0} lx),
+					},
+					'megabit' => {
+						'few' => q({0} Mb),
+						'many' => q({0} Mb),
+						'one' => q({0} Mb),
+						'other' => q({0} Mb),
+					},
+					'megabyte' => {
+						'' => q(MB),
+						'few' => q({0} MB),
+						'many' => q({0} MB),
+						'one' => q({0} MB),
+						'other' => q({0} MB),
+					},
+					'millisecond' => {
+						'' => q(millisek),
+						'few' => q({0} ms),
+						'many' => q({0} ms),
+						'one' => q({0} ms),
+						'other' => q({0} ms),
+					},
+					'terabit' => {
+						'' => q(Tb),
+						'few' => q({0} Tb),
+						'many' => q({0} Tb),
+						'one' => q({0} Tb),
+						'other' => q({0} Tb),
+					},
+					'terabyte' => {
+						'' => q(TB),
+						'few' => q({0} TB),
+						'many' => q({0} TB),
+						'one' => q({0} TB),
+						'other' => q({0} TB),
+					},
+				},
+			} }
+);
+
 has 'yesstr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
@@ -2152,6 +2318,20 @@ has 'listPatterns' => (
 		} }
 );
 
+has 'default_numbering_system' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has native_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
 has 'number_symbols' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -2159,16 +2339,15 @@ has 'number_symbols' => (
 	default		=> sub { {
 		'latn' => {
 			'decimal' => q(.),
-			'exponential' => q(),
+			'exponential' => q(E),
 			'group' => q(,),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
+			'infinity' => q(∞),
+			'minusSign' => q(-),
+			'nan' => q(NaN),
+			'perMille' => q(‰),
+			'percentSign' => q(%),
+			'plusSign' => q(+),
+			'superscriptingExponent' => q(×),
 		},
 	} }
 );
@@ -2197,8 +2376,13 @@ has 'curriencies' => (
 	init_arg	=> undef,
 	default		=> sub { {
 		'EUR' => {
+			symbol => '€',
 			display_name => {
-				'currency' => q(Ewro),
+				'currency' => q(ewro),
+				'few' => q(ewro),
+				'many' => q(ewro),
+				'one' => q(ewro),
+				'other' => q(ewro),
 			},
 		},
 		'MTL' => {
@@ -2245,6 +2429,25 @@ has 'calendar_months' => (
 							
 						],
 					},
+					narrow => {
+						nonleap => [
+							'J',
+							'F',
+							'M',
+							'A',
+							'M',
+							'Ġ',
+							'L',
+							'A',
+							'S',
+							'O',
+							'N',
+							'D'
+						],
+						leap => [
+							
+						],
+					},
 					wide => {
 						nonleap => [
 							'Jannar',
@@ -2266,20 +2469,39 @@ has 'calendar_months' => (
 					},
 				},
 				'stand-alone' => {
+					abbreviated => {
+						nonleap => [
+							'Jan',
+							'Fra',
+							'Mar',
+							'Apr',
+							'Mej',
+							'Ġun',
+							'Lul',
+							'Aww',
+							'Set',
+							'Ott',
+							'Nov',
+							'Diċ'
+						],
+						leap => [
+							
+						],
+					},
 					narrow => {
 						nonleap => [
-							'J',
-							'F',
-							'M',
-							'A',
-							'M',
-							'Ġ',
-							'L',
-							'A',
-							'S',
-							'O',
-							'N',
-							'D'
+							'Jn',
+							'Fr',
+							'Mz',
+							'Ap',
+							'Mj',
+							'Ġn',
+							'Lj',
+							'Aw',
+							'St',
+							'Ob',
+							'Nv',
+							'Dċ'
 						],
 						leap => [
 							
@@ -2345,14 +2567,32 @@ has 'calendar_days' => (
 					},
 				},
 				'stand-alone' => {
+					abbreviated => {
+						mon => 'Tne',
+						tue => 'Tli',
+						wed => 'Erb',
+						thu => 'Ħam',
+						fri => 'Ġim',
+						sat => 'Sib',
+						sun => 'Ħad'
+					},
 					narrow => {
-						mon => 'T',
-						tue => 'T',
-						wed => 'E',
-						thu => 'Ħ',
-						fri => 'Ġ',
-						sat => 'S',
-						sun => 'Ħ'
+						mon => 'Tn',
+						tue => 'Tl',
+						wed => 'Er',
+						thu => 'Ħm',
+						fri => 'Ġm',
+						sat => 'Sb',
+						sun => 'Ħd'
+					},
+					wide => {
+						mon => 'It-Tnejn',
+						tue => 'It-Tlieta',
+						wed => 'L-Erbgħa',
+						thu => 'Il-Ħamis',
+						fri => 'Il-Ġimgħa',
+						sat => 'Is-Sibt',
+						sun => 'Il-Ħadd'
 					},
 				},
 			},
@@ -2376,10 +2616,10 @@ has 'calendar_quarters' => (
 						2 => '3',
 						3 => '4'
 					},
-					wide => {0 => 'K1',
-						1 => 'K2',
-						2 => 'K3',
-						3 => 'K4'
+					wide => {0 => '1el kwart',
+						1 => '2ni kwart',
+						2 => '3et kwart',
+						3 => '4ba’ kwart'
 					},
 				},
 				'stand-alone' => {
@@ -2396,7 +2636,7 @@ has 'calendar_quarters' => (
 					wide => {0 => '1el kwart',
 						1 => '2ni kwart',
 						2 => '3et kwart',
-						3 => '4ba\' kwart'
+						3 => '4ba’ kwart'
 					},
 				},
 			},
@@ -2411,8 +2651,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{WN},
-					'am' => q{QN},
+					'pm' => q{PM},
+					'am' => q{AM},
 				},
 			},
 		},
@@ -2592,6 +2832,9 @@ has 'datetime_formats_interval' => (
 				d => q{E, d 'ta'’ - E, d 'ta'’ MMM y G},
 				y => q{E, d 'ta'’ MMM y - E, d 'ta'’ MMM y G},
 			},
+			yMMMM => {
+				M => q{G y MMMM – MMMM},
+			},
 			yMMMd => {
 				M => q{d 'ta'’ MMM - d 'ta'’ MMM y G},
 				d => q{d 'ta'’-d 'ta'’ MMM y G},
@@ -2626,7 +2869,7 @@ has 'datetime_formats_interval' => (
 				d => q{E, dd/MM - E, dd/MM},
 			},
 			MMM => {
-				M => q{MMM-MMM},
+				M => q{MMM – MMM},
 			},
 			MMMEd => {
 				M => q{E, d 'ta'’ MMM - E, d 'ta'’ MMM},
@@ -2634,7 +2877,7 @@ has 'datetime_formats_interval' => (
 			},
 			MMMd => {
 				M => q{d 'ta'’ MMM - d 'ta'’ MMM},
-				d => q{d 'ta'’-d 'ta'’ MMM},
+				d => q{d 'ta'’ - d 'ta'’ MMM},
 			},
 			Md => {
 				M => q{dd/MM - dd/MM},
@@ -2645,7 +2888,7 @@ has 'datetime_formats_interval' => (
 			},
 			fallback => '{0} - {1}',
 			h => {
-				h => q{h-h a},
+				h => q{h – h a},
 			},
 			hm => {
 				h => q{h:mm-h:mm a},
@@ -2659,7 +2902,7 @@ has 'datetime_formats_interval' => (
 				h => q{h-h a v},
 			},
 			y => {
-				y => q{y-y},
+				y => q{y – y},
 			},
 			yM => {
 				M => q{MM/y - MM/y},
@@ -2700,7 +2943,10 @@ has 'time_zone_names' => (
 	default	=> sub { {
 		hourFormat => q(+HH:mm;-HH:mm),
 		gmtFormat => q(GMT{0}),
+		gmtZeroFormat => q(GMT),
 		regionFormat => q(Ħin ta’ {0}),
+		regionFormat => q({0} Ħin Standard),
+		fallbackFormat => q({1} ({0})),
 		'Etc/Unknown' => {
 			exemplarCity => q#Belt Mhux Magħruf#,
 		},

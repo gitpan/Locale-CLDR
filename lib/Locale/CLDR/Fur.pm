@@ -1,11 +1,11 @@
 package Locale::CLDR::Fur;
 # This file auto generated from Data\common\main\fur.xml
-#	on Fri 20 Jun 11:35:10 pm GMT
-# XML file generated 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014)
+#	on Thu  2 Oct 11:17:59 am GMT
+# XML file generated 2014-08-11 11:10:03 -0500 (Mon, 11 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -771,32 +771,62 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'day' => {
+						'' => q(zornadis),
 						'one' => q({0} zornade),
 						'other' => q({0} zornadis),
 					},
 					'hour' => {
+						'' => q(oris),
 						'one' => q({0} ore),
 						'other' => q({0} oris),
 					},
 					'minute' => {
+						'' => q(minûts),
 						'one' => q({0} minût),
 						'other' => q({0} minûts),
 					},
 					'month' => {
+						'' => q(mês),
 						'one' => q({0} mês),
 						'other' => q({0} mês),
 					},
 					'second' => {
+						'' => q(seconts),
 						'one' => q({0} secont),
 						'other' => q({0} seconts),
 					},
 					'week' => {
+						'' => q(setemanis),
 						'one' => q({0} setemane),
 						'other' => q({0} setemanis),
 					},
 					'year' => {
+						'' => q(agns),
 						'one' => q({0} an),
 						'other' => q({0} agns),
+					},
+				},
+				'short' => {
+					'day' => {
+						'' => q(zornadis),
+					},
+					'hour' => {
+						'' => q(oris),
+					},
+					'minute' => {
+						'' => q(minûts),
+					},
+					'month' => {
+						'' => q(mês),
+					},
+					'second' => {
+						'' => q(seconts),
+					},
+					'week' => {
+						'' => q(setemanis),
+					},
+					'year' => {
+						'' => q(agns),
 					},
 				},
 			} }
@@ -842,7 +872,6 @@ has 'number_symbols' => (
 			'perMille' => q(‰),
 			'percentSign' => q(%),
 			'plusSign' => q(+),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -1526,8 +1555,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{p.},
 					'am' => q{a.},
+					'pm' => q{p.},
 				},
 			},
 		},
@@ -1603,7 +1632,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{d E},
 			Hm => q{H:mm},
 			M => q{L},
@@ -1626,7 +1655,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{d E},
 			Hm => q{H:mm},
 			M => q{L},
@@ -1665,7 +1694,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH-HH},
 			},
@@ -1760,7 +1789,7 @@ has 'datetime_formats_interval' => (
 				y => q{dd/MM/y - dd/MM/y},
 			},
 		},
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH-HH},
 			},

@@ -1,11 +1,11 @@
 package Locale::CLDR::Lkt;
 # This file auto generated from Data\common\main\lkt.xml
-#	on Sat 21 Jun 12:17:42 am GMT
-# XML file generated 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014)
+#	on Thu  2 Oct 12:15:31 pm GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -245,36 +245,47 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'day' => {
+						'' => q(-čháŋ),
 						'other' => q({0}-čháŋ),
 					},
 					'foot' => {
+						'' => q(siíyutȟapi),
 						'other' => q(siíyutȟapi {0}),
 					},
 					'hour' => {
+						'' => q(Owápȟe),
 						'other' => q(Owápȟe {0}),
 					},
 					'inch' => {
+						'' => q(oíyutȟe čísčila),
 						'other' => q(oíyutȟe čísčila {0}),
 					},
 					'mile' => {
+						'' => q(makhíyutȟapi),
 						'other' => q(makhíyutȟapi {0}),
 					},
 					'month' => {
+						'' => q(Wíyawapi),
 						'other' => q(Wíyawapi {0}),
 					},
 					'pound' => {
+						'' => q(tkeíyutȟapi),
 						'other' => q(tkeíyutȟapi {0}),
 					},
 					'second' => {
+						'' => q(Okpí),
 						'other' => q(Okpí {0}),
 					},
 					'week' => {
+						'' => q(okó),
 						'other' => q(okó {0}),
 					},
 					'yard' => {
+						'' => q(čhaéglepi),
 						'other' => q(čhaéglepi {0}),
 					},
 					'year' => {
+						'' => q(ómakȟa),
 						'other' => q(ómakȟa {0}),
 					},
 				},
@@ -321,36 +332,47 @@ has 'units' => (
 				},
 				'short' => {
 					'day' => {
+						'' => q(-čháŋ),
 						'other' => q({0}-čháŋ),
 					},
 					'foot' => {
+						'' => q(siíyutȟapi),
 						'other' => q(siíyutȟapi {0}),
 					},
 					'hour' => {
+						'' => q(Owápȟe),
 						'other' => q(Owápȟe {0}),
 					},
 					'inch' => {
+						'' => q(oíyutȟe čísčila),
 						'other' => q(oíyutȟe čísčila {0}),
 					},
 					'mile' => {
+						'' => q(makhíyutȟapi),
 						'other' => q(makhíyutȟapi {0}),
 					},
 					'month' => {
+						'' => q(Wíyawapi),
 						'other' => q(Wíyawapi {0}),
 					},
 					'pound' => {
+						'' => q(tkeíyutȟapi),
 						'other' => q(tkeíyutȟapi {0}),
 					},
 					'second' => {
+						'' => q(Okpí),
 						'other' => q(Okpí {0}),
 					},
 					'week' => {
+						'' => q(okó),
 						'other' => q(okó {0}),
 					},
 					'yard' => {
+						'' => q(čhaéglepi),
 						'other' => q(čhaéglepi {0}),
 					},
 					'year' => {
+						'' => q(ómakȟa),
 						'other' => q(ómakȟa {0}),
 					},
 				},
@@ -373,7 +395,6 @@ has 'number_symbols' => (
 			'perMille' => q(‰),
 			'percentSign' => q(%),
 			'plusSign' => q(+),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );

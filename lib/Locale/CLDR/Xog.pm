@@ -1,11 +1,11 @@
 package Locale::CLDR::Xog;
 # This file auto generated from Data\common\main\xog.xml
-#	on Sat 21 Jun  1:33:39 am GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct  2:20:56 pm GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -90,7 +90,7 @@ has 'display_name_territory' => (
  			'AI' => 'Angwila',
  			'AL' => 'Alibaniya',
  			'AM' => 'Arameniya',
- 			'AN' => 'Ebizinga bya Antile by\'abaHolandi',
+ 			'AN' => 'Ebizinga bya Antile by’abaHolandi',
  			'AO' => 'Angola',
  			'AR' => 'Arigentina',
  			'AS' => 'Samowa omumerika',
@@ -227,7 +227,7 @@ has 'display_name_territory' => (
  			'NA' => 'Namibiya',
  			'NC' => 'Kaledonya mupya',
  			'NE' => 'Nije',
- 			'NF' => 'Kizinga ky\'eNorofoko',
+ 			'NF' => 'Kizinga ky’eNorofoko',
  			'NG' => 'Nayijerya',
  			'NI' => 'Nikaraguwa',
  			'NL' => 'Holandi',
@@ -297,7 +297,7 @@ has 'display_name_territory' => (
  			'VC' => 'Senti Vinsenti ni Gurendadiini',
  			'VE' => 'Venzwera',
  			'VG' => 'Ebizinga bya Virigini ebitwalibwa Bungereza',
- 			'VI' => 'Ebizinga bya Virigini eby\'Amerika',
+ 			'VI' => 'Ebizinga bya Virigini eby’Amerika',
  			'VN' => 'Vyetinaamu',
  			'VU' => 'Vanawuwatu',
  			'WF' => 'Walisi ni Futuna',
@@ -404,12 +404,12 @@ has 'curriencies' => (
 		},
 		'AOA' => {
 			display_name => {
-				'currency' => q(Kwanza y'Angola),
+				'currency' => q(Kwanza y’Angola),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'currency' => q(Doola y'Awusiturelya),
+				'currency' => q(Doola y’Awusiturelya),
 			},
 		},
 		'BHD' => {
@@ -439,7 +439,7 @@ has 'curriencies' => (
 		},
 		'CHF' => {
 			display_name => {
-				'currency' => q(Faranga ey'eSwitizirandi),
+				'currency' => q(Faranga ey’eSwitizirandi),
 			},
 		},
 		'CNY' => {
@@ -459,7 +459,7 @@ has 'curriencies' => (
 		},
 		'DZD' => {
 			display_name => {
-				'currency' => q(Dinaali y'Aligerya),
+				'currency' => q(Dinaali y’Aligerya),
 			},
 		},
 		'EGP' => {
@@ -539,67 +539,67 @@ has 'curriencies' => (
 		},
 		'MAD' => {
 			display_name => {
-				'currency' => q(Diraamu ey'eMoroko),
+				'currency' => q(Diraamu ey’eMoroko),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'currency' => q(Faranga ey'eMalagase),
+				'currency' => q(Faranga ey’eMalagase),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'currency' => q(Wugwiya ey'eMawritenya),
+				'currency' => q(Wugwiya ey’eMawritenya),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'currency' => q(Rupiya ey'eMawurisyasi),
+				'currency' => q(Rupiya ey’eMawurisyasi),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'currency' => q(Kwaca ey'eMalawi),
+				'currency' => q(Kwaca ey’eMalawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'currency' => q(Metikaali ey'eMozambiiki),
+				'currency' => q(Metikaali ey’eMozambiiki),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'currency' => q(Nayira ey'eNayijerya),
+				'currency' => q(Nayira ey’eNayijerya),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'currency' => q(Faranga ey'eRwanda),
+				'currency' => q(Faranga ey’eRwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'currency' => q(Riyaali ey'eBuwarabu),
+				'currency' => q(Riyaali ey’eBuwarabu),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'currency' => q(Rupiya ey'eSesere),
+				'currency' => q(Rupiya ey’eSesere),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'currency' => q(Dinaali ey'eSudaani),
+				'currency' => q(Dinaali ey’eSudaani),
 			},
 		},
 		'SDP' => {
 			display_name => {
-				'currency' => q(Pawunda ey'eSudaani),
+				'currency' => q(Pawunda ey’eSudaani),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'currency' => q(Pawunda ey'eSenti Herena),
+				'currency' => q(Pawunda ey’eSenti Herena),
 			},
 		},
 		'SLL' => {
@@ -609,12 +609,12 @@ has 'curriencies' => (
 		},
 		'SOS' => {
 			display_name => {
-				'currency' => q(Silingi ey'eSomaliya),
+				'currency' => q(Silingi ey’eSomaliya),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'currency' => q(Dobura ey'eSantome ne Purincipe),
+				'currency' => q(Dobura ey’eSantome ne Purincipe),
 			},
 		},
 		'SZL' => {
@@ -624,12 +624,12 @@ has 'curriencies' => (
 		},
 		'TND' => {
 			display_name => {
-				'currency' => q(Dinaali ey'eTunizya),
+				'currency' => q(Dinaali ey’eTunizya),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'currency' => q(Silingi ey'eTanzaniya),
+				'currency' => q(Silingi ey’eTanzaniya),
 			},
 		},
 		'UGX' => {
@@ -640,7 +640,7 @@ has 'curriencies' => (
 		},
 		'USD' => {
 			display_name => {
-				'currency' => q(Doola ey'Amerika),
+				'currency' => q(Doola ey’Amerika),
 			},
 		},
 		'XAF' => {
@@ -655,22 +655,22 @@ has 'curriencies' => (
 		},
 		'ZAR' => {
 			display_name => {
-				'currency' => q(Randi ey'eSawusafirika),
+				'currency' => q(Randi ey’eSawusafirika),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'currency' => q(Kwaca ey'eZambya \(1968–2012\)),
+				'currency' => q(Kwaca ey’eZambya \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'currency' => q(Kwaca ey'eZambya),
+				'currency' => q(Kwaca ey’eZambya),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'currency' => q(Doola ey'eZimbabwe),
+				'currency' => q(Doola ey’eZimbabwe),
 			},
 		},
 	} },
@@ -900,7 +900,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -923,7 +923,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},

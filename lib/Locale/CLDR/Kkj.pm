@@ -1,11 +1,11 @@
 package Locale::CLDR::Kkj;
 # This file auto generated from Data\common\main\kkj.xml
-#	on Sat 21 Jun 12:05:25 am GMT
-# XML file generated 2014-01-08 23:53:23 -0600 (Wed, 08 Jan 2014)
+#	on Thu  2 Oct 12:01:38 pm GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -129,16 +129,7 @@ has 'number_symbols' => (
 	default		=> sub { {
 		'latn' => {
 			'decimal' => q(,),
-			'exponential' => q(),
 			'group' => q(.),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );

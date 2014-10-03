@@ -1,11 +1,11 @@
 package Locale::CLDR::Ar::Any::Ps;
 # This file auto generated from Data\common\main\ar_PS.xml
-#	on Fri 20 Jun 10:49:33 pm GMT
-# XML file generated 2013-07-20 12:27:45 -0500 (Sat, 20 Jul 2013)
+#	on Thu  2 Oct 10:14:00 am GMT
+# XML file generated 2014-08-14 22:53:08 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -30,15 +30,21 @@ has 'number_formats' => (
 					'two' => '0 بليون',
 					'zero' => '0 بليون',
 				},
-			},
-			'short' => {
-				'1000000000' => {
-					'few' => '0 بليون',
-					'many' => '0 بليون',
-					'one' => '0 بليون',
-					'other' => '0 بليون',
-					'two' => '0 بليون',
-					'zero' => '0 بليون',
+				'10000000000' => {
+					'few' => '00 بليون',
+					'many' => '00 بليون',
+					'one' => '00 بليون',
+					'other' => '00 بليون',
+					'two' => '00 بليون',
+					'zero' => '00 بليون',
+				},
+				'100000000000' => {
+					'few' => '000 بليون',
+					'many' => '000 بليون',
+					'one' => '000 بليون',
+					'other' => '000 بليون',
+					'two' => '000 بليون',
+					'zero' => '000 بليون',
 				},
 			},
 		},

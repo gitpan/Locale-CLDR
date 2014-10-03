@@ -1,11 +1,11 @@
 package Locale::CLDR::Cy;
 # This file auto generated from Data\common\main\cy.xml
-#	on Fri 20 Jun 11:09:36 pm GMT
-# XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
+#	on Thu  2 Oct 10:40:41 am GMT
+# XML file generated 2014-08-13 03:37:28 -0500 (Wed, 13 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -558,14 +558,19 @@ has 'display_name_language' => (
  				'ab' => 'Abchaseg',
  				'ace' => 'Acehneg',
  				'ach' => 'Acoli',
+ 				'ada' => 'Adangmeg',
  				'ady' => 'Circaseg Gorllewinol',
  				'ae' => 'Afestaneg',
+ 				'aeb' => 'Arabeg Tunisia',
  				'af' => 'Affricâneg',
  				'afh' => 'Affrihili',
+ 				'agq' => 'Aghemeg',
  				'ain' => 'Ainŵeg',
  				'ak' => 'Acaneg',
  				'akk' => 'Acadeg',
+ 				'akz' => 'Alabamäeg',
  				'ale' => 'Alewteg',
+ 				'aln' => 'Ghegeg Albania',
  				'alt' => 'Altäeg Deheuol',
  				'am' => 'Amhareg',
  				'an' => 'Aragoneg',
@@ -574,10 +579,17 @@ has 'display_name_language' => (
  				'ar_001' => 'Arabeg Modern Safonol',
  				'arc' => 'Aramaeg',
  				'arn' => 'Arawcaneg',
+ 				'aro' => 'Araonaeg',
+ 				'arp' => 'Arapaho',
+ 				'arq' => 'Arabeg Algeria',
  				'arw' => 'Arawaceg',
+ 				'ary' => 'Arabeg Moroco',
+ 				'arz' => 'Arabeg yr Aifft',
  				'as' => 'Asameg',
+ 				'ase' => 'Iaith Arwyddion America',
  				'av' => 'Afareg',
  				'az' => 'Aserbaijaneg',
+ 				'azb' => 'Aserbaijaneg Deheuol',
  				'ba' => 'Bashcorteg',
  				'bal' => 'Balwtsi',
  				'ban' => 'Balïeg',
@@ -594,6 +606,7 @@ has 'display_name_language' => (
  				'bn' => 'Bengaleg',
  				'bo' => 'Tibeteg',
  				'br' => 'Llydaweg',
+ 				'brh' => 'Brahui',
  				'bs' => 'Bosnieg',
  				'bua' => 'Bwriateg',
  				'bum' => 'Bwlw',
@@ -637,7 +650,7 @@ has 'display_name_language' => (
  				'en_CA' => 'Saesneg Canada',
  				'en_GB' => 'Saesneg Prydain',
  				'en_GB@alt=short' => 'Saesneg (DU)',
- 				'en_US' => 'Saesneg UDA',
+ 				'en_US' => 'Saesneg America',
  				'en_US@alt=short' => 'Saesneg (UDA)',
  				'enm' => 'Saesneg Canol',
  				'eo' => 'Esperanto',
@@ -648,16 +661,19 @@ has 'display_name_language' => (
  				'et' => 'Estoneg',
  				'eu' => 'Basgeg',
  				'ewo' => 'Ewondo',
+ 				'ext' => 'Extremadureg',
  				'fa' => 'Perseg',
  				'fat' => 'Ffanti',
  				'ff' => 'Ffwla',
  				'fi' => 'Ffinneg',
  				'fil' => 'Ffilipineg',
+ 				'fit' => 'Ffinneg Tornedal',
  				'fj' => 'Ffijïeg',
  				'fo' => 'Ffaröeg',
  				'fr' => 'Ffrangeg',
  				'fr_CA' => 'Ffrangeg Canada',
  				'fr_CH' => 'Ffrangeg y Swistir',
+ 				'frc' => 'Ffrangeg Cajwn',
  				'frm' => 'Ffrangeg Canol',
  				'fro' => 'Hen Ffrangeg',
  				'frr' => 'Ffriseg y Gogledd',
@@ -667,10 +683,13 @@ has 'display_name_language' => (
  				'ga' => 'Gwyddeleg',
  				'gay' => 'Gaio',
  				'gba' => 'Gbaia',
+ 				'gbz' => 'Dareg y Zoroastriaid',
  				'gd' => 'Gaeleg yr Alban',
  				'gil' => 'Gilberteg',
  				'gl' => 'Galisieg',
+ 				'gmh' => 'Uchel Almaeneg Canol',
  				'gn' => 'Guaraní',
+ 				'goh' => 'Hen Uchel Almaeneg',
  				'got' => 'Gotheg',
  				'grc' => 'Hen Roeg',
  				'gsw' => 'Almaeneg y Swistir',
@@ -682,6 +701,7 @@ has 'display_name_language' => (
  				'he' => 'Hebraeg',
  				'hi' => 'Hindi',
  				'hit' => 'Hetheg',
+ 				'hmn' => 'Hmongeg',
  				'hr' => 'Croateg',
  				'hsb' => 'Sorbeg Uchaf',
  				'ht' => 'Creol Haiti',
@@ -715,7 +735,7 @@ has 'display_name_language' => (
  				'kea' => 'Caboferdianeg',
  				'kg' => 'Congo',
  				'kha' => 'Càseg',
- 				'ki' => 'Cicwyeg',
+ 				'ki' => 'ki',
  				'kk' => 'Casacheg',
  				'km' => 'Chmereg',
  				'kn' => 'Kannada',
@@ -740,16 +760,19 @@ has 'display_name_language' => (
  				'lez' => 'Lezgheg',
  				'lg' => 'Ganda',
  				'li' => 'Limbwrgeg',
+ 				'lmo' => 'Lombardeg',
  				'ln' => 'Lingala',
  				'lo' => 'Laoeg',
  				'lol' => 'Mongo',
  				'loz' => 'Lozi',
  				'lt' => 'Lithwaneg',
+ 				'ltg' => 'Latgalieg',
  				'lun' => 'Lwnda',
  				'luo' => 'Lŵo',
  				'lus' => 'Lwshaieg',
  				'luy' => 'Lwyia',
  				'lv' => 'Latfieg',
+ 				'mad' => 'Madwreg',
  				'mag' => 'Magahi',
  				'mai' => 'Maithili',
  				'mak' => 'Macasareg',
@@ -786,12 +809,14 @@ has 'display_name_language' => (
  				'nds' => 'Isel Almaeneg',
  				'ne' => 'Nepaleg',
  				'new' => 'Newaeg',
+ 				'ng' => 'Ndonga',
  				'nl' => 'Iseldireg',
  				'nl_BE' => 'Fflemeg',
  				'nn' => 'Norwyeg Nynorsk',
  				'no' => 'Norwyeg',
  				'non' => 'Hen Norseg',
  				'nr' => 'Ndebele Deheuol',
+ 				'nso' => 'Sotho Gogleddol',
  				'nus' => 'Nŵereg',
  				'nv' => 'Nafaho',
  				'nwc' => 'Hen Newari',
@@ -805,20 +830,31 @@ has 'display_name_language' => (
  				'om' => 'Oromo',
  				'or' => 'Oriya',
  				'os' => 'Oseteg',
+ 				'osa' => 'Osageg',
  				'ota' => 'Tyrceg Otoman',
  				'pa' => 'Pwnjabeg',
+ 				'pag' => 'Pangasineg',
  				'pal' => 'Pahlafi',
  				'pam' => 'Pampanga',
+ 				'pcd' => 'Picardeg',
+ 				'pdc' => 'Almaeneg Pensylfania',
  				'peo' => 'Hen Bersieg',
+ 				'pfl' => 'Almaeneg Palatin',
  				'phn' => 'Phoeniceg',
  				'pi' => 'Pali',
  				'pl' => 'Pwyleg',
+ 				'pms' => 'Piedmonteg',
+ 				'pon' => 'Pohnpeianeg',
+ 				'prg' => 'Prwseg',
  				'pro' => 'Hen Brofensaleg',
  				'ps' => 'Pashto',
  				'pt' => 'Portiwgeeg',
  				'pt_BR' => 'Portiwgeeg Brasil',
  				'pt_PT' => 'Portiwgeeg Ewrop',
  				'qu' => 'Quechua',
+ 				'quc' => 'K’iche’',
+ 				'raj' => 'Rajasthaneg',
+ 				'rap' => 'Rapanŵi',
  				'rar' => 'Raratongeg',
  				'rm' => 'Romaunsch',
  				'rn' => 'Rwndi',
@@ -827,9 +863,11 @@ has 'display_name_language' => (
  				'rof' => 'Rombo',
  				'rom' => 'Romani',
  				'root' => 'y Gwraidd',
+ 				'rtm' => 'Rotumaneg',
  				'ru' => 'Rwseg',
  				'rup' => 'Aromaneg',
  				'rw' => 'Ciniarŵandeg',
+ 				'rwk' => 'Rwa',
  				'sa' => 'Sansgrit',
  				'sad' => 'Sandäweg',
  				'sah' => 'Iacwteg',
@@ -838,11 +876,14 @@ has 'display_name_language' => (
  				'sas' => 'Sasaceg',
  				'sat' => 'Santali',
  				'sba' => 'Ngambeieg',
+ 				'sbp' => 'Sangw',
  				'sc' => 'Sardeg',
  				'scn' => 'Sisileg',
  				'sco' => 'Sgoteg',
  				'sd' => 'Sindhi',
+ 				'sdc' => 'Sasareseg Sardinia',
  				'se' => 'Sami Gogleddol',
+ 				'see' => 'Seneca',
  				'sel' => 'Selcypeg',
  				'sg' => 'Sango',
  				'sga' => 'Hen Wyddeleg',
@@ -852,6 +893,7 @@ has 'display_name_language' => (
  				'sid' => 'Sidamo',
  				'sk' => 'Slofaceg',
  				'sl' => 'Slofeneg',
+ 				'sli' => 'Is-silesieg',
  				'sm' => 'Samöeg',
  				'sma' => 'Sami Deheuol',
  				'smj' => 'Sami Lwle',
@@ -870,17 +912,22 @@ has 'display_name_language' => (
  				'sv' => 'Swedeg',
  				'sw' => 'Swahili',
  				'swb' => 'Comoreg',
- 				'swc' => 'Swahili\'r Congo',
+ 				'swc' => 'Swahili’r Congo',
  				'syc' => 'Hen Syrieg',
  				'syr' => 'Syrieg',
+ 				'szl' => 'Silesieg',
  				'ta' => 'Tamileg',
+ 				'tcy' => 'Tulu',
  				'te' => 'Telugu',
+ 				'tem' => 'Timneg',
+ 				'tet' => 'Tetumeg',
  				'tg' => 'Tajiceg',
  				'th' => 'Thai',
  				'ti' => 'Tigrinya',
  				'tk' => 'Twrcmeneg',
- 				'tl' => 'Tagalog*',
+ 				'tl' => 'Tagalog',
  				'tlh' => 'Klingon',
+ 				'tmh' => 'Tamasheceg',
  				'tn' => 'Tswana',
  				'to' => 'Tongeg',
  				'tr' => 'Tyrceg',
@@ -893,12 +940,15 @@ has 'display_name_language' => (
  				'ug' => 'Uighur',
  				'uga' => 'Wgariteg',
  				'uk' => 'Wcreineg',
+ 				'umb' => 'Umbundu',
  				'und' => 'Iaith Anhysbys',
  				'ur' => 'Wrdw',
  				'uz' => 'Wsbeceg',
  				'vai' => 'Faieg',
  				've' => 'Fendeg',
+ 				'vec' => 'Feniseg',
  				'vi' => 'Fietnameg',
+ 				'vls' => 'Fflemeg Gorllewinol',
  				'wa' => 'Walwneg',
  				'wal' => 'Walamo',
  				'wo' => 'Woloff',
@@ -910,11 +960,13 @@ has 'display_name_language' => (
  				'yue' => 'Cantoneeg',
  				'zap' => 'Zapoteceg',
  				'zbl' => 'Blisssymbols',
+ 				'zea' => 'Zêlandeg',
  				'zgh' => 'Tamazight Safonol Moroco',
  				'zh' => 'Tsieineeg',
  				'zh_Hans' => 'Tsieineeg Symledig',
  				'zh_Hant' => 'Tsieineeg Traddodiadol',
  				'zu' => 'Swlw',
+ 				'zun' => 'Zuni',
  				'zxx' => 'Dim cynnwys ieithyddol',
  				'zza' => 'Zazäeg',
 
@@ -1004,7 +1056,7 @@ has 'display_name_territory' => (
  			'017' => 'Canol Affrica',
  			'018' => 'Deheudir Affrica',
  			'019' => 'Yr Amerig',
- 			'021' => 'America i\'r Gogledd o Mecsico',
+ 			'021' => 'America i’r Gogledd o Mecsico',
  			'029' => 'Y Caribî',
  			'030' => 'Dwyrain Asia',
  			'034' => 'De Asia',
@@ -1510,6 +1562,7 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'acre' => {
+						'' => q(erw),
 						'few' => q({0} erw),
 						'many' => q({0} erw),
 						'one' => q({0} erw),
@@ -1518,6 +1571,7 @@ has 'units' => (
 						'zero' => q({0} erw),
 					},
 					'arc-minute' => {
+						'' => q(munud),
 						'few' => q({0} munud),
 						'many' => q({0} munud),
 						'one' => q({0} munud),
@@ -1526,6 +1580,7 @@ has 'units' => (
 						'zero' => q({0} munud),
 					},
 					'arc-second' => {
+						'' => q(eiliad),
 						'few' => q({0} eiliad),
 						'many' => q({0} eiliad),
 						'one' => q({0} eiliad),
@@ -1534,6 +1589,7 @@ has 'units' => (
 						'zero' => q({0} eiliad),
 					},
 					'celsius' => {
+						'' => q(gradd Celsius),
 						'few' => q({0} gradd Celsius),
 						'many' => q({0} gradd Celsius),
 						'one' => q({0} radd Celsius),
@@ -1542,6 +1598,7 @@ has 'units' => (
 						'zero' => q({0} gradd Celsius),
 					},
 					'centimeter' => {
+						'' => q(centimetr),
 						'few' => q({0} chentimetr),
 						'many' => q({0} chentimetr),
 						'one' => q({0} centimetr),
@@ -1550,6 +1607,7 @@ has 'units' => (
 						'zero' => q({0} centimetr),
 					},
 					'cubic-kilometer' => {
+						'' => q(cilometr ciwbig),
 						'few' => q({0} chilometr ciwbig),
 						'many' => q({0} chilometr ciwbig),
 						'one' => q({0} cilometr ciwbig),
@@ -1558,6 +1616,7 @@ has 'units' => (
 						'zero' => q({0} cilometr ciwbig),
 					},
 					'cubic-mile' => {
+						'' => q(milltir giwbig),
 						'few' => q({0} milltir giwbig),
 						'many' => q({0} milltir giwbig),
 						'one' => q({0} filltir giwbig),
@@ -1566,6 +1625,7 @@ has 'units' => (
 						'zero' => q({0} milltir giwbig),
 					},
 					'day' => {
+						'' => q(diwrnod),
 						'few' => q({0} diwrnod),
 						'many' => q({0} diwrnod),
 						'one' => q({0} diwrnod),
@@ -1574,6 +1634,7 @@ has 'units' => (
 						'zero' => q({0} diwrnod),
 					},
 					'degree' => {
+						'' => q(gradd),
 						'few' => q({0} gradd),
 						'many' => q({0} gradd),
 						'one' => q({0} radd),
@@ -1582,6 +1643,7 @@ has 'units' => (
 						'zero' => q({0} gradd),
 					},
 					'fahrenheit' => {
+						'' => q(gradd Fahrenheit),
 						'few' => q({0} gradd Fahrenheit),
 						'many' => q({0} gradd Fahrenheit),
 						'one' => q({0} radd Fahrenheit),
@@ -1590,6 +1652,7 @@ has 'units' => (
 						'zero' => q({0} gradd Fahrenheit),
 					},
 					'foot' => {
+						'' => q(troedfedd),
 						'few' => q({0} troedfedd),
 						'many' => q({0} throedfedd),
 						'one' => q({0} droedfedd),
@@ -1598,6 +1661,7 @@ has 'units' => (
 						'zero' => q({0} troedfedd),
 					},
 					'g-force' => {
+						'' => q(grym disgyrchedd),
 						'few' => q({0} grym disgyrchedd),
 						'many' => q({0} grym disgyrchedd),
 						'one' => q({0} grym disgyrchedd),
@@ -1606,6 +1670,7 @@ has 'units' => (
 						'zero' => q({0} grym disgyrchedd),
 					},
 					'gram' => {
+						'' => q(gram),
 						'few' => q({0} gram),
 						'many' => q({0} gram),
 						'one' => q({0} gram),
@@ -1614,6 +1679,7 @@ has 'units' => (
 						'zero' => q({0} gram),
 					},
 					'hectare' => {
+						'' => q(hectar),
 						'few' => q({0} hectar),
 						'many' => q({0} hectar),
 						'one' => q({0} hectar),
@@ -1622,6 +1688,7 @@ has 'units' => (
 						'zero' => q({0} hectar),
 					},
 					'hectopascal' => {
+						'' => q(hectopascal),
 						'few' => q({0} hectopascal),
 						'many' => q({0} hectopascal),
 						'one' => q({0} hectopascal),
@@ -1630,6 +1697,7 @@ has 'units' => (
 						'zero' => q({0} hectopascal),
 					},
 					'horsepower' => {
+						'' => q(marchnerth),
 						'few' => q({0} marchnerth),
 						'many' => q({0} marchnerth),
 						'one' => q({0} marchnerth),
@@ -1638,6 +1706,7 @@ has 'units' => (
 						'zero' => q({0} marchnerth),
 					},
 					'hour' => {
+						'' => q(awr),
 						'few' => q({0} awr),
 						'many' => q({0} awr),
 						'one' => q({0} awr),
@@ -1646,6 +1715,7 @@ has 'units' => (
 						'zero' => q({0} awr),
 					},
 					'inch' => {
+						'' => q(modfedd),
 						'few' => q({0} modfedd),
 						'many' => q({0} modfedd),
 						'one' => q({0} fodfedd),
@@ -1654,6 +1724,7 @@ has 'units' => (
 						'zero' => q({0} modfedd),
 					},
 					'inch-hg' => {
+						'' => q(modfedd o fercwri),
 						'few' => q({0} modfedd o fercwri),
 						'many' => q({0} modfedd o fercwri),
 						'one' => q({0} fodfedd o fercwri),
@@ -1662,6 +1733,7 @@ has 'units' => (
 						'zero' => q({0} modfedd o fercwri),
 					},
 					'kilogram' => {
+						'' => q(cilogram),
 						'few' => q({0} chilogram),
 						'many' => q({0} chilogram),
 						'one' => q({0} cilogram),
@@ -1670,6 +1742,7 @@ has 'units' => (
 						'zero' => q({0} cilogram),
 					},
 					'kilometer' => {
+						'' => q(cilometr),
 						'few' => q({0} chilometr),
 						'many' => q({0} chilometr),
 						'one' => q({0} cilometr),
@@ -1678,6 +1751,7 @@ has 'units' => (
 						'zero' => q({0} cilometr),
 					},
 					'kilometer-per-hour' => {
+						'' => q(cilometr yr awr),
 						'few' => q({0} chilometr yr awr),
 						'many' => q({0} chilometr yr awr),
 						'one' => q({0} cilometr yr awr),
@@ -1686,6 +1760,7 @@ has 'units' => (
 						'zero' => q({0} cilometr yr awr),
 					},
 					'kilowatt' => {
+						'' => q(cilowat),
 						'few' => q({0} chilowat),
 						'many' => q({0} chilowat),
 						'one' => q({0} cilowat),
@@ -1694,6 +1769,7 @@ has 'units' => (
 						'zero' => q({0} cilowat),
 					},
 					'light-year' => {
+						'' => q(blwyddyn golau),
 						'few' => q({0} blwyddyn golau),
 						'many' => q({0} blwyddyn golau),
 						'one' => q({0} flwyddyn golau),
@@ -1702,6 +1778,7 @@ has 'units' => (
 						'zero' => q({0} blwyddyn golau),
 					},
 					'liter' => {
+						'' => q(litr),
 						'few' => q({0} litr),
 						'many' => q({0} litr),
 						'one' => q({0} litr),
@@ -1710,6 +1787,7 @@ has 'units' => (
 						'zero' => q({0} litr),
 					},
 					'meter' => {
+						'' => q(metr),
 						'few' => q({0} metr),
 						'many' => q({0} metr),
 						'one' => q({0} metr),
@@ -1718,6 +1796,7 @@ has 'units' => (
 						'zero' => q({0} metr),
 					},
 					'meter-per-second' => {
+						'' => q(metr yr eiliad),
 						'few' => q({0} metr yr eiliad),
 						'many' => q({0} metr yr eiliad),
 						'one' => q({0} metr yr eiliad),
@@ -1726,6 +1805,7 @@ has 'units' => (
 						'zero' => q({0} metr yr eiliad),
 					},
 					'mile' => {
+						'' => q(milltir),
 						'few' => q({0} milltir),
 						'many' => q({0} milltir),
 						'one' => q({0} filltir),
@@ -1734,6 +1814,7 @@ has 'units' => (
 						'zero' => q({0} milltir),
 					},
 					'mile-per-hour' => {
+						'' => q(milltir yr awr),
 						'few' => q({0} milltir yr awr),
 						'many' => q({0} milltir yr awr),
 						'one' => q({0} filltir yr awr),
@@ -1742,6 +1823,7 @@ has 'units' => (
 						'zero' => q({0} milltir yr awr),
 					},
 					'millibar' => {
+						'' => q(milibar),
 						'few' => q({0} milibar),
 						'many' => q({0} milibar),
 						'one' => q({0} milibar),
@@ -1750,6 +1832,7 @@ has 'units' => (
 						'zero' => q({0} milibar),
 					},
 					'millimeter' => {
+						'' => q(milimetr),
 						'few' => q({0} milimetr),
 						'many' => q({0} milimetr),
 						'one' => q({0} milimetr),
@@ -1758,6 +1841,7 @@ has 'units' => (
 						'zero' => q({0} milimetr),
 					},
 					'millisecond' => {
+						'' => q(milieiliad),
 						'few' => q({0} milieiliad),
 						'many' => q({0} milieiliad),
 						'one' => q({0} milieiliad),
@@ -1766,6 +1850,7 @@ has 'units' => (
 						'zero' => q({0} milieiliad),
 					},
 					'minute' => {
+						'' => q(munud),
 						'few' => q({0} munud),
 						'many' => q({0} munud),
 						'one' => q({0} munud),
@@ -1774,6 +1859,7 @@ has 'units' => (
 						'zero' => q({0} munud),
 					},
 					'month' => {
+						'' => q(mis),
 						'few' => q({0} mis),
 						'many' => q({0} mis),
 						'one' => q({0} mis),
@@ -1782,6 +1868,7 @@ has 'units' => (
 						'zero' => q({0} mis),
 					},
 					'ounce' => {
+						'' => q(owns),
 						'few' => q({0} owns),
 						'many' => q({0} owns),
 						'one' => q({0} owns),
@@ -1793,6 +1880,7 @@ has 'units' => (
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(picometr),
 						'few' => q({0} phicometr),
 						'many' => q({0} phicometr),
 						'one' => q({0} picometr),
@@ -1801,6 +1889,7 @@ has 'units' => (
 						'zero' => q({0} picometr),
 					},
 					'pound' => {
+						'' => q(pwys),
 						'few' => q({0} phwys),
 						'many' => q({0} phwys),
 						'one' => q({0} pwys),
@@ -1809,6 +1898,7 @@ has 'units' => (
 						'zero' => q({0} pwys),
 					},
 					'second' => {
+						'' => q(eiliad),
 						'few' => q({0} eiliad),
 						'many' => q({0} eiliad),
 						'one' => q({0} eiliad),
@@ -1817,6 +1907,7 @@ has 'units' => (
 						'zero' => q({0} eiliad),
 					},
 					'square-foot' => {
+						'' => q(troedfedd sgwâr),
 						'few' => q({0} troedfedd sgwâr),
 						'many' => q({0} throedfedd sgwâr),
 						'one' => q({0} droedfedd sgwâr),
@@ -1825,6 +1916,7 @@ has 'units' => (
 						'zero' => q({0} troedfedd sgwâr),
 					},
 					'square-kilometer' => {
+						'' => q(cilometr sgwâr),
 						'few' => q({0} chilometr sgwâr),
 						'many' => q({0} chilometr sgwâr),
 						'one' => q({0} cilometr sgwâr),
@@ -1833,6 +1925,7 @@ has 'units' => (
 						'zero' => q({0} cilometr sgwâr),
 					},
 					'square-meter' => {
+						'' => q(metr sgwâr),
 						'few' => q({0} metr sgwâr),
 						'many' => q({0} metr sgwâr),
 						'one' => q({0} metr sgwâr),
@@ -1841,14 +1934,16 @@ has 'units' => (
 						'zero' => q({0} metr sgwâr),
 					},
 					'square-mile' => {
+						'' => q(milltir sgwâr),
 						'few' => q({0} milltir sgwâr),
 						'many' => q({0} milltir sgwâr),
-						'one' => q(filltir sgwâr),
+						'one' => q({0} filltir sgwâr),
 						'other' => q({0} milltir sgwâr),
 						'two' => q({0} filltir sgwâr),
 						'zero' => q({0} milltir sgwâr),
 					},
 					'watt' => {
+						'' => q(wat),
 						'few' => q({0} wat),
 						'many' => q({0} wat),
 						'one' => q({0} wat),
@@ -1857,6 +1952,7 @@ has 'units' => (
 						'zero' => q({0} wat),
 					},
 					'week' => {
+						'' => q(wythnos),
 						'few' => q({0} wythnos),
 						'many' => q({0} wythnos),
 						'one' => q({0} wythnos),
@@ -1865,6 +1961,7 @@ has 'units' => (
 						'zero' => q({0} wythnos),
 					},
 					'yard' => {
+						'' => q(llath),
 						'few' => q({0} llath),
 						'many' => q({0} llath),
 						'one' => q({0} llath),
@@ -1873,6 +1970,7 @@ has 'units' => (
 						'zero' => q({0} llath),
 					},
 					'year' => {
+						'' => q(mlynedd),
 						'few' => q({0} blynedd),
 						'many' => q({0} blynedd),
 						'one' => q({0} flwyddyn),
@@ -1931,12 +2029,12 @@ has 'units' => (
 						'zero' => q({0}km³),
 					},
 					'cubic-mile' => {
-						'few' => q({0} mi³),
-						'many' => q({0} mi³),
-						'one' => q({0} mi³),
-						'other' => q({0} mi³),
-						'two' => q({0} mi³),
-						'zero' => q({0} mi³),
+						'few' => q({0}mi³),
+						'many' => q({0}mi³),
+						'one' => q({0}mi³),
+						'other' => q({0}mi³),
+						'two' => q({0}mi³),
+						'zero' => q({0}mi³),
 					},
 					'day' => {
 						'few' => q({0}d),
@@ -2034,6 +2132,9 @@ has 'units' => (
 						'two' => q({0}" Hg),
 						'zero' => q({0}" Hg),
 					},
+					'kelvin' => {
+						'' => q(K),
+					},
 					'kilogram' => {
 						'few' => q({0}kg),
 						'many' => q({0}kg),
@@ -2064,7 +2165,7 @@ has 'units' => (
 						'one' => q({0}kW),
 						'other' => q({0}kW),
 						'two' => q({0}kW),
-						'zero' => q({0} kW),
+						'zero' => q({0}kW),
 					},
 					'light-year' => {
 						'few' => q({0}ly),
@@ -2081,6 +2182,9 @@ has 'units' => (
 						'other' => q({0}l),
 						'two' => q({0}l),
 						'zero' => q({0}l),
+					},
+					'liter-per-kilometer' => {
+						'' => q(L/km),
 					},
 					'meter' => {
 						'few' => q({0}m),
@@ -2129,6 +2233,15 @@ has 'units' => (
 						'other' => q({0}mm),
 						'two' => q({0}mm),
 						'zero' => q({0}mm),
+					},
+					'millimeter-of-mercury' => {
+						'' => q(mm Hg),
+						'few' => q({0}mm Hg),
+						'many' => q({0}mm Hg),
+						'one' => q({0}mm Hg),
+						'other' => q({0}mm Hg),
+						'two' => q({0}mm Hg),
+						'zero' => q({0}mm Hg),
 					},
 					'millisecond' => {
 						'few' => q({0}ms),
@@ -2180,6 +2293,9 @@ has 'units' => (
 						'other' => q({0}pwys),
 						'two' => q({0}bwys),
 						'zero' => q({0}pwys),
+					},
+					'pound-per-square-inch' => {
+						'' => q(psi),
 					},
 					'second' => {
 						'few' => q({0} eil),
@@ -2256,6 +2372,7 @@ has 'units' => (
 				},
 				'short' => {
 					'acre' => {
+						'' => q(erw),
 						'few' => q({0} erw),
 						'many' => q({0} erw),
 						'one' => q({0} erw),
@@ -2264,6 +2381,7 @@ has 'units' => (
 						'zero' => q({0} erw),
 					},
 					'arc-minute' => {
+						'' => q(munud),
 						'few' => q({0}′),
 						'many' => q({0}′),
 						'one' => q({0}′),
@@ -2272,6 +2390,7 @@ has 'units' => (
 						'zero' => q({0}′),
 					},
 					'arc-second' => {
+						'' => q(eiliad),
 						'few' => q({0}″),
 						'many' => q({0}″),
 						'one' => q({0}″),
@@ -2280,6 +2399,7 @@ has 'units' => (
 						'zero' => q({0}″),
 					},
 					'celsius' => {
+						'' => q(gradd Celsius),
 						'few' => q({0}°C),
 						'many' => q({0}°C),
 						'one' => q({0}°C),
@@ -2288,6 +2408,7 @@ has 'units' => (
 						'zero' => q({0}°C),
 					},
 					'centimeter' => {
+						'' => q(centimetr),
 						'few' => q({0} cm),
 						'many' => q({0} cm),
 						'one' => q({0} cm),
@@ -2296,6 +2417,7 @@ has 'units' => (
 						'zero' => q({0} cm),
 					},
 					'cubic-kilometer' => {
+						'' => q(cilometr ciwbig),
 						'few' => q({0} km³),
 						'many' => q({0} km³),
 						'one' => q({0} km³),
@@ -2304,6 +2426,7 @@ has 'units' => (
 						'zero' => q({0} km³),
 					},
 					'cubic-mile' => {
+						'' => q(milltir giwbig),
 						'few' => q({0} mi³),
 						'many' => q({0} mi³),
 						'one' => q({0} mi³),
@@ -2312,6 +2435,7 @@ has 'units' => (
 						'zero' => q({0} mi³),
 					},
 					'day' => {
+						'' => q(diwrnod),
 						'few' => q({0} diwrnod),
 						'many' => q({0} diwrnod),
 						'one' => q({0} diwrnod),
@@ -2320,6 +2444,7 @@ has 'units' => (
 						'zero' => q({0} diwrnod),
 					},
 					'degree' => {
+						'' => q(gradd),
 						'few' => q({0}°),
 						'many' => q({0}°),
 						'one' => q({0}°),
@@ -2328,6 +2453,7 @@ has 'units' => (
 						'zero' => q({0}°),
 					},
 					'fahrenheit' => {
+						'' => q(gradd Fahrenheit),
 						'few' => q({0}°F),
 						'many' => q({0}°F),
 						'one' => q({0}°F),
@@ -2336,22 +2462,41 @@ has 'units' => (
 						'zero' => q({0}°F),
 					},
 					'foot' => {
-						'few' => q({0} troedfedd),
-						'many' => q({0} throedfedd),
-						'one' => q({0} droedfedd),
-						'other' => q({0} troedfedd),
-						'two' => q({0} droedfedd),
-						'zero' => q({0} troedfedd),
+						'' => q(troedfedd),
+						'few' => q({0}′),
+						'many' => q({0}′),
+						'one' => q({0}′),
+						'other' => q({0}′),
+						'two' => q({0}′),
+						'zero' => q({0}′),
 					},
 					'g-force' => {
-						'few' => q({0} grym disgyrchedd),
-						'many' => q({0} grym disgyrchedd),
-						'one' => q({0} grym disgyrchedd),
-						'other' => q({0} grym disgyrchedd),
-						'two' => q({0} rym disgyrchedd),
-						'zero' => q({0} grym disgyrchedd),
+						'' => q(grym disgyrchedd),
+						'few' => q({0} G),
+						'many' => q({0} G),
+						'one' => q({0} G),
+						'other' => q({0} G),
+						'two' => q({0} G),
+						'zero' => q({0} G),
+					},
+					'gigabit' => {
+						'few' => q({0} Gb),
+						'many' => q({0} Gb),
+						'one' => q({0} Gb),
+						'other' => q({0} Gb),
+						'two' => q({0} Gb),
+						'zero' => q({0} Gb),
+					},
+					'gigabyte' => {
+						'few' => q({0} GB),
+						'many' => q({0} GB),
+						'one' => q({0} GB),
+						'other' => q({0} GB),
+						'two' => q({0} GB),
+						'zero' => q({0} GB),
 					},
 					'gram' => {
+						'' => q(gram),
 						'few' => q({0} g),
 						'many' => q({0} g),
 						'one' => q({0} g),
@@ -2360,6 +2505,7 @@ has 'units' => (
 						'zero' => q({0} g),
 					},
 					'hectare' => {
+						'' => q(hectar),
 						'few' => q({0} ha),
 						'many' => q({0} ha),
 						'one' => q({0} ha),
@@ -2368,6 +2514,7 @@ has 'units' => (
 						'zero' => q({0} ha),
 					},
 					'hectopascal' => {
+						'' => q(hectopascal),
 						'few' => q({0} hPa),
 						'many' => q({0} hPa),
 						'one' => q({0} hPa),
@@ -2376,6 +2523,7 @@ has 'units' => (
 						'zero' => q({0} hPa),
 					},
 					'horsepower' => {
+						'' => q(marchnerth),
 						'few' => q({0} hp),
 						'many' => q({0} hp),
 						'one' => q({0} hp),
@@ -2384,6 +2532,7 @@ has 'units' => (
 						'zero' => q({0} hp),
 					},
 					'hour' => {
+						'' => q(awr),
 						'few' => q({0} awr),
 						'many' => q({0} awr),
 						'one' => q({0} awr),
@@ -2392,6 +2541,7 @@ has 'units' => (
 						'zero' => q({0} awr),
 					},
 					'inch' => {
+						'' => q(modfedd),
 						'few' => q({0} modfedd),
 						'many' => q({0} modfedd),
 						'one' => q({0} fodfedd),
@@ -2400,6 +2550,7 @@ has 'units' => (
 						'zero' => q({0} modfedd),
 					},
 					'inch-hg' => {
+						'' => q(modfedd o fercwri),
 						'few' => q({0} " Hg),
 						'many' => q({0} " Hg),
 						'one' => q({0} " Hg),
@@ -2407,7 +2558,33 @@ has 'units' => (
 						'two' => q({0} " Hg),
 						'zero' => q({0} " Hg),
 					},
+					'kelvin' => {
+						'' => q(K),
+						'few' => q({0} K),
+						'many' => q({0} K),
+						'one' => q({0} K),
+						'other' => q({0} K),
+						'two' => q({0} K),
+						'zero' => q({0} K),
+					},
+					'kilobit' => {
+						'few' => q({0} kb),
+						'many' => q({0} kb),
+						'one' => q({0} kb),
+						'other' => q({0} kb),
+						'two' => q({0} kb),
+						'zero' => q({0} kb),
+					},
+					'kilobyte' => {
+						'few' => q({0} kB),
+						'many' => q({0} kB),
+						'one' => q({0} kB),
+						'other' => q({0} kB),
+						'two' => q({0} kB),
+						'zero' => q({0} kB),
+					},
 					'kilogram' => {
+						'' => q(cilogram),
 						'few' => q({0} kg),
 						'many' => q({0} kg),
 						'one' => q({0} kg),
@@ -2416,6 +2593,7 @@ has 'units' => (
 						'zero' => q({0} kg),
 					},
 					'kilometer' => {
+						'' => q(cilometr),
 						'few' => q({0} km),
 						'many' => q({0} km),
 						'one' => q({0} km),
@@ -2424,6 +2602,7 @@ has 'units' => (
 						'zero' => q({0} km),
 					},
 					'kilometer-per-hour' => {
+						'' => q(cilometr yr awr),
 						'few' => q({0} km/h),
 						'many' => q({0} km/h),
 						'one' => q({0} km/h),
@@ -2432,6 +2611,7 @@ has 'units' => (
 						'zero' => q({0} km/h),
 					},
 					'kilowatt' => {
+						'' => q(cilowat),
 						'few' => q({0} kW),
 						'many' => q({0} kW),
 						'one' => q({0} kW),
@@ -2440,6 +2620,7 @@ has 'units' => (
 						'zero' => q({0} kW),
 					},
 					'light-year' => {
+						'' => q(blwyddyn golau),
 						'few' => q({0} blwyddyn golau),
 						'many' => q({0} blwyddyn golau),
 						'one' => q({0} flwyddyn golau),
@@ -2448,6 +2629,7 @@ has 'units' => (
 						'zero' => q({0} blwyddyn golau),
 					},
 					'liter' => {
+						'' => q(litr),
 						'few' => q({0} l),
 						'many' => q({0} l),
 						'one' => q({0} l),
@@ -2455,7 +2637,33 @@ has 'units' => (
 						'two' => q({0} l),
 						'zero' => q({0} l),
 					},
+					'liter-per-kilometer' => {
+						'' => q(L/km),
+						'few' => q({0} L/km),
+						'many' => q({0} L/km),
+						'one' => q({0} L/km),
+						'other' => q({0} L/km),
+						'two' => q({0} L/km),
+						'zero' => q({0} L/km),
+					},
+					'megabit' => {
+						'few' => q({0} Mb),
+						'many' => q({0} Mb),
+						'one' => q({0} Mb),
+						'other' => q({0} Mb),
+						'two' => q({0} Mb),
+						'zero' => q({0} Mb),
+					},
+					'megabyte' => {
+						'few' => q({0} MB),
+						'many' => q({0} MB),
+						'one' => q({0} MB),
+						'other' => q({0} MB),
+						'two' => q({0} MB),
+						'zero' => q({0} MB),
+					},
 					'meter' => {
+						'' => q(metr),
 						'few' => q({0} m),
 						'many' => q({0} m),
 						'one' => q({0} m),
@@ -2464,6 +2672,7 @@ has 'units' => (
 						'zero' => q({0} m),
 					},
 					'meter-per-second' => {
+						'' => q(metr yr eiliad),
 						'few' => q({0} m/s),
 						'many' => q({0} m/s),
 						'one' => q({0} m/s),
@@ -2472,6 +2681,7 @@ has 'units' => (
 						'zero' => q({0} m/s),
 					},
 					'mile' => {
+						'' => q(milltir),
 						'few' => q({0} milltir),
 						'many' => q({0} milltir),
 						'one' => q({0} filltir),
@@ -2480,6 +2690,7 @@ has 'units' => (
 						'zero' => q({0} milltir),
 					},
 					'mile-per-hour' => {
+						'' => q(milltir yr awr),
 						'few' => q({0} m.y.a.),
 						'many' => q({0} m.y.a.),
 						'one' => q({0} m.y.a.),
@@ -2488,6 +2699,7 @@ has 'units' => (
 						'zero' => q({0} m.y.a.),
 					},
 					'millibar' => {
+						'' => q(milibar),
 						'few' => q({0} mbar),
 						'many' => q({0} mbar),
 						'one' => q({0} mbar),
@@ -2496,6 +2708,7 @@ has 'units' => (
 						'zero' => q({0} mbar),
 					},
 					'millimeter' => {
+						'' => q(milimetr),
 						'few' => q({0} mm),
 						'many' => q({0} mm),
 						'one' => q({0} mm),
@@ -2503,7 +2716,17 @@ has 'units' => (
 						'two' => q({0} mm),
 						'zero' => q({0} mm),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(mm Hg),
+						'few' => q({0} mm Hg),
+						'many' => q({0} mm Hg),
+						'one' => q({0} mm Hg),
+						'other' => q({0} mm Hg),
+						'two' => q({0} mm Hg),
+						'zero' => q({0} mm Hg),
+					},
 					'millisecond' => {
+						'' => q(milieiliad),
 						'few' => q({0} ms),
 						'many' => q({0} ms),
 						'one' => q({0} ms),
@@ -2512,6 +2735,7 @@ has 'units' => (
 						'zero' => q({0} ms),
 					},
 					'minute' => {
+						'' => q(munud),
 						'few' => q({0} mun),
 						'many' => q({0} mun),
 						'one' => q({0} mun),
@@ -2520,6 +2744,7 @@ has 'units' => (
 						'zero' => q({0} mun),
 					},
 					'month' => {
+						'' => q(mis),
 						'few' => q({0} mis),
 						'many' => q({0} mis),
 						'one' => q({0} mis),
@@ -2528,6 +2753,7 @@ has 'units' => (
 						'zero' => q({0} mis),
 					},
 					'ounce' => {
+						'' => q(owns),
 						'few' => q({0} owns),
 						'many' => q({0} owns),
 						'one' => q({0} owns),
@@ -2539,6 +2765,7 @@ has 'units' => (
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(picometr),
 						'few' => q({0} pm),
 						'many' => q({0} pm),
 						'one' => q({0} pm),
@@ -2547,6 +2774,7 @@ has 'units' => (
 						'zero' => q({0} pm),
 					},
 					'pound' => {
+						'' => q(pwys),
 						'few' => q({0} phwys),
 						'many' => q({0} phwys),
 						'one' => q({0} pwys),
@@ -2554,7 +2782,17 @@ has 'units' => (
 						'two' => q({0} bwys),
 						'zero' => q({0} pwys),
 					},
+					'pound-per-square-inch' => {
+						'' => q(psi),
+						'few' => q({0} psi),
+						'many' => q({0} psi),
+						'one' => q({0} psi),
+						'other' => q({0} psi),
+						'two' => q({0} psi),
+						'zero' => q({0} psi),
+					},
 					'second' => {
+						'' => q(eiliad),
 						'few' => q({0} eil),
 						'many' => q({0} eil),
 						'one' => q({0} eil),
@@ -2563,6 +2801,7 @@ has 'units' => (
 						'zero' => q({0} eil),
 					},
 					'square-foot' => {
+						'' => q(troedfedd sgwâr),
 						'few' => q({0} troedfedd ²),
 						'many' => q({0} throedfedd ²),
 						'one' => q({0} droedfedd ²),
@@ -2571,6 +2810,7 @@ has 'units' => (
 						'zero' => q({0} troedfedd ²),
 					},
 					'square-kilometer' => {
+						'' => q(cilometr sgwâr),
 						'few' => q({0} km²),
 						'many' => q({0} km²),
 						'one' => q({0} km²),
@@ -2579,6 +2819,7 @@ has 'units' => (
 						'zero' => q({0} km²),
 					},
 					'square-meter' => {
+						'' => q(metr sgwâr),
 						'few' => q({0} m²),
 						'many' => q({0} m²),
 						'one' => q({0} m²),
@@ -2587,6 +2828,7 @@ has 'units' => (
 						'zero' => q({0} m²),
 					},
 					'square-mile' => {
+						'' => q(milltir sgwâr),
 						'few' => q({0} mi²),
 						'many' => q({0} mi²),
 						'one' => q({0} mi²),
@@ -2594,7 +2836,24 @@ has 'units' => (
 						'two' => q({0} mi²),
 						'zero' => q({0} mi²),
 					},
+					'terabit' => {
+						'few' => q({0} Tb),
+						'many' => q({0} Tb),
+						'one' => q({0} Tb),
+						'other' => q({0} Tb),
+						'two' => q({0} Tb),
+						'zero' => q({0} Tb),
+					},
+					'terabyte' => {
+						'few' => q({0} TB),
+						'many' => q({0} TB),
+						'one' => q({0} TB),
+						'other' => q({0} TB),
+						'two' => q({0} TB),
+						'zero' => q({0} TB),
+					},
 					'watt' => {
+						'' => q(wat),
 						'few' => q({0} W),
 						'many' => q({0} W),
 						'one' => q({0} W),
@@ -2603,6 +2862,7 @@ has 'units' => (
 						'zero' => q({0} W),
 					},
 					'week' => {
+						'' => q(wythnos),
 						'few' => q({0} wythnos),
 						'many' => q({0} wythnos),
 						'one' => q({0} wythnos),
@@ -2611,6 +2871,7 @@ has 'units' => (
 						'zero' => q({0} wythnos),
 					},
 					'yard' => {
+						'' => q(llath),
 						'few' => q({0} llath),
 						'many' => q({0} llath),
 						'one' => q({0} llath),
@@ -2619,6 +2880,7 @@ has 'units' => (
 						'zero' => q({0} llath),
 					},
 					'year' => {
+						'' => q(mlynedd),
 						'few' => q({0} bl),
 						'many' => q({0} bl),
 						'one' => q({0} bl),
@@ -2654,6 +2916,20 @@ has 'listPatterns' => (
 				end => q({0}, {1}),
 				2 => q({0}, {1}),
 		} }
+);
+
+has 'default_numbering_system' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has native_numbering_system => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
 );
 
 has 'number_symbols' => (
@@ -3203,6 +3479,7 @@ has 'curriencies' => (
 			},
 		},
 		'BMD' => {
+			symbol => 'BMD',
 			display_name => {
 				'currency' => q(Doler Bermuda),
 				'few' => q(Doler Bermuda),
@@ -3292,6 +3569,7 @@ has 'curriencies' => (
 			},
 		},
 		'BZD' => {
+			symbol => 'BZD',
 			display_name => {
 				'currency' => q(Doler Belize),
 				'few' => q(Doler Belize),
@@ -3371,6 +3649,7 @@ has 'curriencies' => (
 			},
 		},
 		'CRC' => {
+			symbol => 'CRC',
 			display_name => {
 				'currency' => q(Colón Costa Rica),
 				'few' => q(Colón Costa Rica),
@@ -3604,6 +3883,7 @@ has 'curriencies' => (
 			},
 		},
 		'GTQ' => {
+			symbol => 'GTQ',
 			display_name => {
 				'currency' => q(Quetzal Guatemala),
 				'few' => q(Quetzal Guatemala),
@@ -4072,13 +4352,13 @@ has 'curriencies' => (
 		},
 		'MVR' => {
 			display_name => {
-				'currency' => q(Rufiyaa'r Maldives),
-				'few' => q(Rufiyaa'r Maldives),
-				'many' => q(Rufiyaa'r Maldives),
-				'one' => q(Rufiyaa'r Maldives),
-				'other' => q(Rufiyaa'r Maldives),
-				'two' => q(Rufiyaa'r Maldives),
-				'zero' => q(Rufiyaa'r Maldives),
+				'currency' => q(Rufiyaa’r Maldives),
+				'few' => q(Rufiyaa’r Maldives),
+				'many' => q(Rufiyaa’r Maldives),
+				'one' => q(Rufiyaa’r Maldives),
+				'other' => q(Rufiyaa’r Maldives),
+				'two' => q(Rufiyaa’r Maldives),
+				'zero' => q(Rufiyaa’r Maldives),
 			},
 		},
 		'MWK' => {
@@ -5065,13 +5345,13 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'noon' => q{hanner dydd},
 					'pm' => q{PM},
 					'am' => q{AM},
+					'noon' => q{hanner dydd},
 				},
 				'narrow' => {
-					'am' => q{AM},
 					'pm' => q{PM},
+					'am' => q{AM},
 				},
 			},
 		},
@@ -5117,7 +5397,7 @@ has 'date_formats' => (
 			'full' => q{EEEE, d MMMM y},
 			'long' => q{d MMMM y},
 			'medium' => q{d MMM y},
-			'short' => q{dd/MM/y},
+			'short' => q{dd/MM/yy},
 		},
 	} },
 );
@@ -5163,38 +5443,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
-			Ed => q{E, d},
-			Gy => q{y G},
-			GyMMM => q{MMM y G},
-			GyMMMEd => q{E, d MMM y G},
-			GyMMMd => q{d MMM y G},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{L},
-			MEd => q{E, d/M},
-			MMM => q{LLL},
-			MMMEd => q{E, d MMM},
-			MMMd => q{d MMM},
-			Md => q{d/M},
-			d => q{d},
-			h => q{h a},
-			hm => q{h:mm a},
-			hms => q{h:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y},
-			yyyy => q{y G},
-			yyyyM => q{M/y G},
-			yyyyMEd => q{E, d/M/y G},
-			yyyyMMM => q{MMM y G},
-			yyyyMMMEd => q{E, d MMM y G},
-			yyyyMMMd => q{d MMM y G},
-			yyyyMd => q{d/M/y G},
-			yyyyQ => q{Q y G},
-			yyyyQQQ => q{QQQ y G},
-			yyyyQQQQ => q{QQQQ y G},
-		},
 		'gregorian' => {
 			EHm => q{E, HH:mm},
 			EHms => q{E, HH:mm:ss},
@@ -5230,6 +5478,38 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
+		'generic' => {
+			Ed => q{E, d},
+			Gy => q{y G},
+			GyMMM => q{MMM y G},
+			GyMMMEd => q{E, d MMM y G},
+			GyMMMd => q{d MMM y G},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{L},
+			MEd => q{E, d/M},
+			MMM => q{LLL},
+			MMMEd => q{E, d MMM},
+			MMMd => q{d MMM},
+			Md => q{d/M},
+			d => q{d},
+			h => q{h a},
+			hm => q{h:mm a},
+			hms => q{h:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y},
+			yyyy => q{y G},
+			yyyyM => q{M/y G},
+			yyyyMEd => q{E, d/M/y G},
+			yyyyMMM => q{MMM y G},
+			yyyyMMMEd => q{E, d MMM y G},
+			yyyyMMMd => q{d MMM y G},
+			yyyyMd => q{d/M/y G},
+			yyyyQ => q{Q y G},
+			yyyyQQQ => q{QQQ y G},
+			yyyyQQQQ => q{QQQQ y G},
+		},
 	} },
 );
 
@@ -5249,7 +5529,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH–HH},
 			},
@@ -5291,6 +5571,104 @@ has 'datetime_formats_interval' => (
 			},
 			d => {
 				d => q{d-d},
+			},
+			fallback => '{0} – {1}',
+			h => {
+				a => q{h a – h a},
+				h => q{h–h a},
+			},
+			hm => {
+				a => q{h:mm a – h:mm a},
+				h => q{h:mm h:mm a},
+				m => q{h:mm - h:mm a},
+			},
+			hmv => {
+				a => q{h:mm a – h:mm a v},
+				h => q{h:mm - h:mm a v},
+				m => q{h:mm–h:mm a v},
+			},
+			hv => {
+				a => q{h a – h a v},
+				h => q{h–h a v},
+			},
+			y => {
+				y => q{y-y},
+			},
+			yM => {
+				M => q{M/y – M/y},
+				y => q{M/y – M/y},
+			},
+			yMEd => {
+				M => q{E, d/M/y - E, d/M/y},
+				d => q{E, d/M/y - E, d/M/y},
+				y => q{E, d/M/y - E, d/M/y},
+			},
+			yMMM => {
+				M => q{MMM - MMM y},
+				y => q{MMM y - MMM y},
+			},
+			yMMMEd => {
+				M => q{E, d MMM - E, d MMM y},
+				d => q{E, d MMM - E, d MMM y},
+				y => q{E, d MMM, y - E, d MMM y},
+			},
+			yMMMM => {
+				M => q{MMMM–MMMM y},
+				y => q{MMMM y – MMMM y},
+			},
+			yMMMd => {
+				M => q{d MMM - d MMM y},
+				d => q{d-d MMM y},
+				y => q{d MMM, y - d MMM y},
+			},
+			yMd => {
+				M => q{d/M/y - d/M/y},
+				d => q{d/M/y - d/M/y},
+				y => q{d/M/y - d/M/y},
+			},
+		},
+		'generic' => {
+			H => {
+				H => q{HH–HH},
+			},
+			Hm => {
+				H => q{HH:mm–HH:mm},
+				m => q{HH:mm–HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm–HH:mm v},
+				m => q{HH:mm–HH:mm v},
+			},
+			Hv => {
+				H => q{HH–HH v},
+			},
+			M => {
+				M => q{M - M},
+			},
+			MEd => {
+				M => q{E, d/M – E, d/M},
+				d => q{E, d/M – E, d/M},
+			},
+			MMM => {
+				M => q{MMM-MMM},
+			},
+			MMMEd => {
+				M => q{E, d MMM – E, d MMM},
+				d => q{E, d MMM – E, d MMM},
+			},
+			MMMM => {
+				M => q{LLLL-LLLL},
+			},
+			MMMd => {
+				M => q{d MMM – d MMM},
+				d => q{d–d MMM},
+			},
+			Md => {
+				M => q{d/M – d/M},
+				d => q{d/M – d/M},
+			},
+			d => {
+				d => q{d - d},
 			},
 			fallback => '{0} – {1}',
 			h => {
@@ -5347,104 +5725,6 @@ has 'datetime_formats_interval' => (
 				y => q{d/M/y - d/M/y GGGGG},
 			},
 		},
-		'gregorian' => {
-			H => {
-				H => q{HH–HH},
-			},
-			Hm => {
-				H => q{HH:mm–HH:mm},
-				m => q{HH:mm–HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm–HH:mm v},
-				m => q{HH:mm–HH:mm v},
-			},
-			Hv => {
-				H => q{HH–HH v},
-			},
-			M => {
-				M => q{M-M},
-			},
-			MEd => {
-				M => q{E, d/M – E, d/M},
-				d => q{E, d/M – E, d/M},
-			},
-			MMM => {
-				M => q{MMM-MMM},
-			},
-			MMMEd => {
-				M => q{E, d MMM – E, d MMM},
-				d => q{E, d MMM – E, d MMM},
-			},
-			MMMM => {
-				M => q{LLLL-LLLL},
-			},
-			MMMd => {
-				M => q{d MMM – d MMM},
-				d => q{d–d MMM},
-			},
-			Md => {
-				M => q{d/M – d/M},
-				d => q{d/M – d/M},
-			},
-			d => {
-				d => q{d-d},
-			},
-			fallback => '{0} – {1}',
-			h => {
-				a => q{h a – h a},
-				h => q{h–h a},
-			},
-			hm => {
-				a => q{h:mm a – h:mm a},
-				h => q{h:mm–h:mm a},
-				m => q{h:mm–h:mm a},
-			},
-			hmv => {
-				a => q{h:mm a – h:mm a v},
-				h => q{h:mm–h:mm a v},
-				m => q{h:mm–h:mm a v},
-			},
-			hv => {
-				a => q{h a – h a v},
-				h => q{h–h a v},
-			},
-			y => {
-				y => q{y-y},
-			},
-			yM => {
-				M => q{M/y – M/y},
-				y => q{M/y – M/y},
-			},
-			yMEd => {
-				M => q{E, d/M/y - E, d/M/y},
-				d => q{E, d/M/y - E, d/M/y},
-				y => q{E, d/M/y - E, d/M/y},
-			},
-			yMMM => {
-				M => q{MMM - MMM y},
-				y => q{MMM y - MMM y},
-			},
-			yMMMEd => {
-				M => q{E, d MMM - E, d MMM y},
-				d => q{E, d MMM - E, d MMM y},
-				y => q{E, d MMM, y - E, d MMM y},
-			},
-			yMMMM => {
-				M => q{MMMM–MMMM y},
-				y => q{MMMM y – MMMM y},
-			},
-			yMMMd => {
-				M => q{d MMM - d MMM y},
-				d => q{d-d MMM y},
-				y => q{d MMM, y - d MMM y},
-			},
-			yMd => {
-				M => q{d/M/y - d/M/y},
-				d => q{d/M/y - d/M/y},
-				y => q{d/M/y - d/M/y},
-			},
-		},
 	} },
 );
 
@@ -5471,6 +5751,9 @@ has 'time_zone_names' => (
 		'Africa/Asmera' => {
 			exemplarCity => q#Asmera#,
 		},
+		'Africa/Ceuta' => {
+			exemplarCity => q#Ceuta#,
+		},
 		'Africa/El_Aaiun' => {
 			exemplarCity => q#El Aaiún#,
 		},
@@ -5478,7 +5761,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Lomé#,
 		},
 		'Africa/Ndjamena' => {
-			exemplarCity => q#N'Djamena#,
+			exemplarCity => q#N’Djamena#,
 		},
 		'Africa/Sao_Tome' => {
 			exemplarCity => q#São Tomé#,
@@ -5583,7 +5866,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Monticello, Kentucky#,
 		},
 		'America/Lower_Princes' => {
-			exemplarCity => q#Lower Prince's Quarter/Beneden Prinsen Kwartier#,
+			exemplarCity => q#Lower Prince’s Quarter/Beneden Prinsen Kwartier#,
 		},
 		'America/Maceio' => {
 			exemplarCity => q#Maceió#,
@@ -5674,6 +5957,9 @@ has 'time_zone_names' => (
 				'standard' => q(Amser Safonol Arabaidd),
 			},
 		},
+		'Arctic/Longyearbyen' => {
+			exemplarCity => q#Longyearbyen#,
+		},
 		'Argentina' => {
 			long => {
 				'daylight' => q(Amser Haf Ariannin),
@@ -5695,6 +5981,15 @@ has 'time_zone_names' => (
 				'standard' => q(Amser Safonol Armenia),
 			},
 		},
+		'Asia/Aden' => {
+			exemplarCity => q#Aden#,
+		},
+		'Asia/Amman' => {
+			exemplarCity => q#Amman#,
+		},
+		'Asia/Anadyr' => {
+			exemplarCity => q#Anadyr#,
+		},
 		'Asia/Aqtau' => {
 			exemplarCity => q#Aktau#,
 		},
@@ -5704,29 +5999,83 @@ has 'time_zone_names' => (
 		'Asia/Ashgabat' => {
 			exemplarCity => q#Ashkabad#,
 		},
+		'Asia/Baghdad' => {
+			exemplarCity => q#Baghdad#,
+		},
+		'Asia/Bahrain' => {
+			exemplarCity => q#Bahrain#,
+		},
+		'Asia/Baku' => {
+			exemplarCity => q#Baku#,
+		},
+		'Asia/Beirut' => {
+			exemplarCity => q#Beirut#,
+		},
 		'Asia/Calcutta' => {
 			exemplarCity => q#Calcutta#,
 		},
 		'Asia/Choibalsan' => {
 			exemplarCity => q#Choybalsan#,
 		},
+		'Asia/Damascus' => {
+			exemplarCity => q#Damascus#,
+		},
 		'Asia/Dhaka' => {
 			exemplarCity => q#Dacca#,
+		},
+		'Asia/Dubai' => {
+			exemplarCity => q#Dubai#,
 		},
 		'Asia/Gaza' => {
 			exemplarCity => q#Gasa#,
 		},
+		'Asia/Hebron' => {
+			exemplarCity => q#Hebron#,
+		},
+		'Asia/Irkutsk' => {
+			exemplarCity => q#Irkutsk#,
+		},
 		'Asia/Jerusalem' => {
 			exemplarCity => q#Jerwsalem#,
+		},
+		'Asia/Kamchatka' => {
+			exemplarCity => q#Kamchatka#,
 		},
 		'Asia/Katmandu' => {
 			exemplarCity => q#Kathmandu#,
 		},
+		'Asia/Krasnoyarsk' => {
+			exemplarCity => q#Krasnoyarsk#,
+		},
+		'Asia/Kuwait' => {
+			exemplarCity => q#Kuwait#,
+		},
+		'Asia/Magadan' => {
+			exemplarCity => q#Magadan#,
+		},
+		'Asia/Muscat' => {
+			exemplarCity => q#Muscat#,
+		},
+		'Asia/Nicosia' => {
+			exemplarCity => q#Nicosia#,
+		},
+		'Asia/Novosibirsk' => {
+			exemplarCity => q#Novosibirsk#,
+		},
+		'Asia/Omsk' => {
+			exemplarCity => q#Omsk#,
+		},
 		'Asia/Pyongyang' => {
-			exemplarCity => q#P'yŏngyang#,
+			exemplarCity => q#P’yŏngyang#,
+		},
+		'Asia/Qatar' => {
+			exemplarCity => q#Qatar#,
 		},
 		'Asia/Rangoon' => {
 			exemplarCity => q#Yangon#,
+		},
+		'Asia/Riyadh' => {
+			exemplarCity => q#Riyadh#,
 		},
 		'Asia/Saigon' => {
 			exemplarCity => q#Dinas Hô Chi Minh#,
@@ -5757,6 +6106,18 @@ has 'time_zone_names' => (
 		},
 		'Asia/Urumqi' => {
 			exemplarCity => q#Ürümqi#,
+		},
+		'Asia/Vladivostok' => {
+			exemplarCity => q#Vladivostok#,
+		},
+		'Asia/Yakutsk' => {
+			exemplarCity => q#Yakutsk#,
+		},
+		'Asia/Yekaterinburg' => {
+			exemplarCity => q#Yekaterinburg#,
+		},
+		'Asia/Yerevan' => {
+			exemplarCity => q#Yerevan#,
 		},
 		'Atlantic' => {
 			long => {
@@ -5955,17 +6316,29 @@ has 'time_zone_names' => (
 		'Etc/Unknown' => {
 			exemplarCity => q#Dinas Anhysbys#,
 		},
+		'Europe/Amsterdam' => {
+			exemplarCity => q#Amsterdam#,
+		},
 		'Europe/Athens' => {
 			exemplarCity => q#Athen#,
 		},
 		'Europe/Belgrade' => {
 			exemplarCity => q#Beograd#,
 		},
+		'Europe/Berlin' => {
+			exemplarCity => q#Berlin#,
+		},
+		'Europe/Bratislava' => {
+			exemplarCity => q#Bratislava#,
+		},
 		'Europe/Brussels' => {
 			exemplarCity => q#Brwsel#,
 		},
 		'Europe/Bucharest' => {
 			exemplarCity => q#Bucureşti#,
+		},
+		'Europe/Budapest' => {
+			exemplarCity => q#Budapest#,
 		},
 		'Europe/Busingen' => {
 			exemplarCity => q#Büsingen#,
@@ -5982,11 +6355,26 @@ has 'time_zone_names' => (
 				'daylight' => q(Amser Haf Iwerddon),
 			},
 		},
+		'Europe/Gibraltar' => {
+			exemplarCity => q#Gibraltar#,
+		},
 		'Europe/Guernsey' => {
 			exemplarCity => q#Ynys y Garn#,
 		},
+		'Europe/Helsinki' => {
+			exemplarCity => q#Helsinki#,
+		},
 		'Europe/Isle_of_Man' => {
 			exemplarCity => q#Ynys Manaw#,
+		},
+		'Europe/Jersey' => {
+			exemplarCity => q#Jersey#,
+		},
+		'Europe/Kaliningrad' => {
+			exemplarCity => q#Kaliningrad#,
+		},
+		'Europe/Kiev' => {
+			exemplarCity => q#Kiev#,
 		},
 		'Europe/Lisbon' => {
 			exemplarCity => q#Lisboa#,
@@ -5997,20 +6385,62 @@ has 'time_zone_names' => (
 				'daylight' => q(Amser Haf Prydain),
 			},
 		},
+		'Europe/Madrid' => {
+			exemplarCity => q#Madrid#,
+		},
+		'Europe/Malta' => {
+			exemplarCity => q#Malta#,
+		},
+		'Europe/Minsk' => {
+			exemplarCity => q#Minsk#,
+		},
+		'Europe/Monaco' => {
+			exemplarCity => q#Monaco#,
+		},
 		'Europe/Moscow' => {
 			exemplarCity => q#Moskva#,
+		},
+		'Europe/Oslo' => {
+			exemplarCity => q#Oslo#,
+		},
+		'Europe/Paris' => {
+			exemplarCity => q#Paris#,
 		},
 		'Europe/Prague' => {
 			exemplarCity => q#Praha#,
 		},
+		'Europe/Riga' => {
+			exemplarCity => q#Riga#,
+		},
 		'Europe/Rome' => {
 			exemplarCity => q#Rhufain#,
+		},
+		'Europe/Samara' => {
+			exemplarCity => q#Samara#,
+		},
+		'Europe/Sarajevo' => {
+			exemplarCity => q#Sarajevo#,
+		},
+		'Europe/Simferopol' => {
+			exemplarCity => q#Simferopol#,
+		},
+		'Europe/Skopje' => {
+			exemplarCity => q#Skopje#,
 		},
 		'Europe/Sofia' => {
 			exemplarCity => q#Sofiya#,
 		},
+		'Europe/Stockholm' => {
+			exemplarCity => q#Stockholm#,
+		},
+		'Europe/Tallinn' => {
+			exemplarCity => q#Tallinn#,
+		},
 		'Europe/Tirane' => {
 			exemplarCity => q#Tiranë#,
+		},
+		'Europe/Uzhgorod' => {
+			exemplarCity => q#Uzhgorod#,
 		},
 		'Europe/Vatican' => {
 			exemplarCity => q#y Fatican#,
@@ -6018,8 +6448,14 @@ has 'time_zone_names' => (
 		'Europe/Vienna' => {
 			exemplarCity => q#Wien#,
 		},
+		'Europe/Volgograd' => {
+			exemplarCity => q#Volgograd#,
+		},
 		'Europe/Warsaw' => {
 			exemplarCity => q#Warszawa#,
+		},
+		'Europe/Zagreb' => {
+			exemplarCity => q#Zagreb#,
 		},
 		'Europe/Zaporozhye' => {
 			exemplarCity => q#Zaporizhzhya#,

@@ -1,11 +1,11 @@
 package Locale::CLDR::Mas;
 # This file auto generated from Data\common\main\mas.xml
-#	on Sat 21 Jun 12:25:39 am GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct 12:52:33 pm GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -385,7 +385,7 @@ has 'nostr' => (
 	is			=> 'ro',
 	isa			=> 'RegexpRef',
 	init_arg	=> undef,
-	default		=> sub { qr'^(?i:Á'ā|A|no|n)$' }
+	default		=> sub { qr'^(?i:Á’ā|A|no|n)$' }
 );
 
 has 'number_currency_formats' => (
@@ -816,8 +816,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{Ɛndámâ},
 					'am' => q{Ɛnkakɛnyá},
+					'pm' => q{Ɛndámâ},
 				},
 			},
 		},

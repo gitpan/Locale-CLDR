@@ -1,11 +1,11 @@
 package Locale::CLDR::Teo;
 # This file auto generated from Data\common\main\teo.xml
-#	on Sat 21 Jun  1:19:30 am GMT
-# XML file generated 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013)
+#	on Thu  2 Oct  2:00:13 pm GMT
+# XML file generated 2014-08-07 12:54:13 -0500 (Thu, 07 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -405,82 +405,82 @@ has 'curriencies' => (
 	default		=> sub { {
 		'AED' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Falme za Kiarabu),
+				'currency' => q(Ango’otol lok’ Falme za Kiarabu),
 			},
 		},
 		'AOA' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Angola),
+				'currency' => q(Ango’otol lok’ Angola),
 			},
 		},
 		'AUD' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Australia),
+				'currency' => q(Ango’otol lok’ Australia),
 			},
 		},
 		'BHD' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Bahareni),
+				'currency' => q(Ango’otol lok’ Bahareni),
 			},
 		},
 		'BIF' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Burundi),
+				'currency' => q(Ango’otol lok’ Burundi),
 			},
 		},
 		'BWP' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Botswana),
+				'currency' => q(Ango’otol lok’ Botswana),
 			},
 		},
 		'CAD' => {
 			display_name => {
-				'currency' => q(Edola lok'Kanada),
+				'currency' => q(Edola lok’Kanada),
 			},
 		},
 		'CDF' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Kongo),
+				'currency' => q(Ango’otol lok’ Kongo),
 			},
 		},
 		'CHF' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Uswisi),
+				'currency' => q(Ango’otol lok’ Uswisi),
 			},
 		},
 		'CNY' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' China),
+				'currency' => q(Ango’otol lok’ China),
 			},
 		},
 		'CVE' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Kepuvede),
+				'currency' => q(Ango’otol lok’ Kepuvede),
 			},
 		},
 		'DJF' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Jibuti),
+				'currency' => q(Ango’otol lok’ Jibuti),
 			},
 		},
 		'DZD' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Aljeria),
+				'currency' => q(Ango’otol lok’ Aljeria),
 			},
 		},
 		'EGP' => {
 			display_name => {
-				'currency' => q(Epaunt lok' Misri),
+				'currency' => q(Epaunt lok’ Misri),
 			},
 		},
 		'ERN' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Eritrea),
+				'currency' => q(Ango’otol lok’ Eritrea),
 			},
 		},
 		'ETB' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Uhabeshi),
+				'currency' => q(Ango’otol lok’ Uhabeshi),
 			},
 		},
 		'EUR' => {
@@ -490,7 +490,7 @@ has 'curriencies' => (
 		},
 		'GBP' => {
 			display_name => {
-				'currency' => q(Epaunt lok' Uingereza),
+				'currency' => q(Epaunt lok’ Uingereza),
 			},
 		},
 		'GHC' => {
@@ -505,107 +505,107 @@ has 'curriencies' => (
 		},
 		'GNS' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Gine),
+				'currency' => q(Ango’otol lok’ Gine),
 			},
 		},
 		'INR' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' India),
+				'currency' => q(Ango’otol lok’ India),
 			},
 		},
 		'JPY' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Kijapani),
+				'currency' => q(Ango’otol lok’ Kijapani),
 			},
 		},
 		'KES' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Kenya),
+				'currency' => q(Ango’otol lok’ Kenya),
 			},
 		},
 		'KMF' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Komoro),
+				'currency' => q(Ango’otol lok’ Komoro),
 			},
 		},
 		'LRD' => {
 			display_name => {
-				'currency' => q(edola lok' Liberia),
+				'currency' => q(edola lok’ Liberia),
 			},
 		},
 		'LSL' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Lesoto),
+				'currency' => q(Ango’otol lok’ Lesoto),
 			},
 		},
 		'LYD' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Libya),
+				'currency' => q(Ango’otol lok’ Libya),
 			},
 		},
 		'MAD' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Moroko),
+				'currency' => q(Ango’otol lok’ Moroko),
 			},
 		},
 		'MGA' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Bukini),
+				'currency' => q(Ango’otol lok’ Bukini),
 			},
 		},
 		'MRO' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Moritania),
+				'currency' => q(Ango’otol lok’ Moritania),
 			},
 		},
 		'MUR' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Morisi),
+				'currency' => q(Ango’otol lok’ Morisi),
 			},
 		},
 		'MWK' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Malawi),
+				'currency' => q(Ango’otol lok’ Malawi),
 			},
 		},
 		'MZM' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Msumbiji),
+				'currency' => q(Ango’otol lok’ Msumbiji),
 			},
 		},
 		'NAD' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Namibia),
+				'currency' => q(Ango’otol lok’ Namibia),
 			},
 		},
 		'NGN' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Nijeria),
+				'currency' => q(Ango’otol lok’ Nijeria),
 			},
 		},
 		'RWF' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Rwanda),
+				'currency' => q(Ango’otol lok’ Rwanda),
 			},
 		},
 		'SAR' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Saudia),
+				'currency' => q(Ango’otol lok’ Saudia),
 			},
 		},
 		'SCR' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Shelisheli),
+				'currency' => q(Ango’otol lok’ Shelisheli),
 			},
 		},
 		'SDG' => {
 			display_name => {
-				'currency' => q(Epaunt Lok' Sudan),
+				'currency' => q(Epaunt Lok’ Sudan),
 			},
 		},
 		'SHP' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Santahelena),
+				'currency' => q(Ango’otol lok’ Santahelena),
 			},
 		},
 		'SLL' => {
@@ -615,12 +615,12 @@ has 'curriencies' => (
 		},
 		'SOS' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Somalia),
+				'currency' => q(Ango’otol lok’ Somalia),
 			},
 		},
 		'STD' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Sao Tome na Principe),
+				'currency' => q(Ango’otol lok’ Sao Tome na Principe),
 			},
 		},
 		'SZL' => {
@@ -630,53 +630,53 @@ has 'curriencies' => (
 		},
 		'TND' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Tunisia),
+				'currency' => q(Ango’otol lok’ Tunisia),
 			},
 		},
 		'TZS' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Tanzania),
+				'currency' => q(Ango’otol lok’ Tanzania),
 			},
 		},
 		'UGX' => {
 			symbol => 'USh',
 			display_name => {
-				'currency' => q(Ango'otol lok' Uganda),
+				'currency' => q(Ango’otol lok’ Uganda),
 			},
 		},
 		'USD' => {
 			display_name => {
-				'currency' => q(edola lok' Amareka),
+				'currency' => q(edola lok’ Amareka),
 			},
 		},
 		'XAF' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' CFA BEAC),
+				'currency' => q(Ango’otol lok’ CFA BEAC),
 			},
 		},
 		'XOF' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' CFA BCEAO),
+				'currency' => q(Ango’otol lok’ CFA BCEAO),
 			},
 		},
 		'ZAR' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Afrika Kusini),
+				'currency' => q(Ango’otol lok’ Afrika Kusini),
 			},
 		},
 		'ZMK' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Zambia \(1968–2012\)),
+				'currency' => q(Ango’otol lok’ Zambia \(1968–2012\)),
 			},
 		},
 		'ZMW' => {
 			display_name => {
-				'currency' => q(Ango'otol lok' Zambia),
+				'currency' => q(Ango’otol lok’ Zambia),
 			},
 		},
 		'ZWD' => {
 			display_name => {
-				'currency' => q(Edola lok'Zimbabwe),
+				'currency' => q(Edola lok’Zimbabwe),
 			},
 		},
 	} },
@@ -713,10 +713,10 @@ has 'calendar_months' => (
 						nonleap => [
 							'Orara',
 							'Omuk',
-							'Okwamg\'',
-							'Odung\'el',
+							'Okwamg’',
+							'Odung’el',
 							'Omaruk',
-							'Omodok\'king'ol',
+							'Omodok’king’ol',
 							'Ojola',
 							'Opedel',
 							'Osokosokoma',
@@ -774,7 +774,7 @@ has 'calendar_days' => (
 						mon => 'Nakaebarasa',
 						tue => 'Nakaare',
 						wed => 'Nakauni',
-						thu => 'Nakaung\'on',
+						thu => 'Nakaung’on',
 						fri => 'Nakakany',
 						sat => 'Nakasabiti',
 						sun => 'Nakaejuma'
@@ -810,7 +810,7 @@ has 'calendar_quarters' => (
 					wide => {0 => 'Akwota abe',
 						1 => 'Akwota Aane',
 						2 => 'Akwota auni',
-						3 => 'Akwota Aung\'on'
+						3 => 'Akwota Aung’on'
 					},
 				},
 			},
@@ -825,8 +825,8 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{Ebongi},
 					'am' => q{Taparachu},
+					'pm' => q{Ebongi},
 				},
 			},
 		},
@@ -906,7 +906,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},
@@ -929,7 +929,7 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{QQQ y},
 			yQQQQ => q{QQQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			Hm => q{HH:mm},
 			Hms => q{HH:mm:ss},
 			M => q{L},

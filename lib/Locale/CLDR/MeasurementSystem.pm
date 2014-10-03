@@ -1,11 +1,11 @@
 package Locale::CLDR::MeasurementSystem;
 # This file auto generated from Data.xml
-#	on Fri 20 Jun 10:43:24 pm GMT
-# XML file generated 2014-03-13 15:53:16 -0500 (Thu, 13 Mar 2014)
+#	on Thu  2 Oct 10:06:15 am GMT
+# XML file generated 2014-09-11 12:17:53 -0500 (Thu, 11 Sep 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';

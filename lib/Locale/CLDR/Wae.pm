@@ -1,11 +1,11 @@
 package Locale::CLDR::Wae;
 # This file auto generated from Data\common\main\wae.xml
-#	on Sat 21 Jun  1:33:35 am GMT
-# XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
+#	on Thu  2 Oct  2:20:53 pm GMT
+# XML file generated 2014-08-11 11:10:03 -0500 (Mon, 11 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -308,7 +308,7 @@ has 'display_name_territory' => (
  			'CG@alt=variant' => 'Kongo (Rebublik)',
  			'CH' => 'Schwiz',
  			'CI' => 'Elfebeiküšta',
- 			'CI@alt=variant' => 'Côte d\'Ivoire',
+ 			'CI@alt=variant' => 'Côte d’Ivoire',
  			'CK' => 'Cookinslä',
  			'CL' => 'Tšile',
  			'CM' => 'Kamerun',
@@ -358,7 +358,7 @@ has 'display_name_territory' => (
  			'GP' => 'Guadeloupe',
  			'GQ' => 'Equatorialginea',
  			'GR' => 'Gričeland',
- 			'GS' => 'Südgeorgie und d\'südliče Senwičinslä',
+ 			'GS' => 'Südgeorgie und d’südliče Senwičinslä',
  			'GT' => 'Guatemala',
  			'GU' => 'Guam',
  			'GW' => 'Ginea Bissau',
@@ -510,7 +510,7 @@ has 'display_name_territory' => (
  			'UY' => 'Urugauy',
  			'UZ' => 'Usbekištan',
  			'VA' => 'Vatikan',
- 			'VC' => 'St. Vincent und d\'Grenadine',
+ 			'VC' => 'St. Vincent und d’Grenadine',
  			'VE' => 'Venezuela',
  			'VG' => 'Britiši Jungfröiwinslä',
  			'VI' => 'Amerikaniši Jungfröiwinslä',
@@ -634,32 +634,62 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'day' => {
+						'' => q(täg),
 						'one' => q({0} täg),
 						'other' => q({0} täg),
 					},
 					'hour' => {
+						'' => q(stunde),
 						'one' => q({0} stund),
 						'other' => q({0} stunde),
 					},
 					'minute' => {
+						'' => q(minüte),
 						'one' => q({0} minüta),
 						'other' => q({0} minüte),
 					},
 					'month' => {
+						'' => q(mánet),
 						'one' => q({0} mánet),
 						'other' => q({0} mánet),
 					},
 					'second' => {
+						'' => q(sekunde),
 						'one' => q({0} sekund),
 						'other' => q({0} sekunde),
 					},
 					'week' => {
+						'' => q(wučä),
 						'one' => q({0} wuča),
 						'other' => q({0} wučä),
 					},
 					'year' => {
+						'' => q(jár),
 						'one' => q({0} jár),
 						'other' => q({0} jár),
+					},
+				},
+				'short' => {
+					'day' => {
+						'' => q(täg),
+					},
+					'hour' => {
+						'' => q(stunde),
+					},
+					'minute' => {
+						'' => q(minüte),
+					},
+					'month' => {
+						'' => q(mánet),
+					},
+					'second' => {
+						'' => q(sekunde),
+					},
+					'week' => {
+						'' => q(wučä),
+					},
+					'year' => {
+						'' => q(jár),
 					},
 				},
 			} }
@@ -696,16 +726,7 @@ has 'number_symbols' => (
 	default		=> sub { {
 		'latn' => {
 			'decimal' => q(,),
-			'exponential' => q(),
 			'group' => q(’),
-			'infinity' => q(),
-			'list' => q(),
-			'minusSign' => q(),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
-			'plusSign' => q(),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -1083,7 +1104,7 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			Ed => q{E d.},
 			M => q{LLL},
 			MEd => q{E, d. MMM},
@@ -1097,7 +1118,7 @@ has 'datetime_formats_available_formats' => (
 			yMMMEd => q{E, d. MMM y},
 			yMMMd => q{d. MMM y},
 		},
-		'gregorian' => {
+		'generic' => {
 			Ed => q{E d.},
 			M => q{LLL},
 			MEd => q{E, d. MMM},
@@ -1127,7 +1148,7 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'generic' => {
+		'gregorian' => {
 			H => {
 				H => q{HH - HH},
 			},
@@ -1222,7 +1243,7 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd - y-MM-dd},
 			},
 		},
-		'gregorian' => {
+		'generic' => {
 			H => {
 				H => q{HH - HH},
 			},

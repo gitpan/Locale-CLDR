@@ -1,11 +1,11 @@
 package Locale::CLDR::Lt;
 # This file auto generated from Data\common\main\lt.xml
-#	on Sat 21 Jun 12:20:45 am GMT
-# XML file generated 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014)
+#	on Thu  2 Oct 12:18:36 pm GMT
+# XML file generated 2014-08-14 15:10:07 -0500 (Thu, 14 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -585,13 +585,16 @@ has 'display_name_language' => (
  				'ada' => 'adangmų',
  				'ady' => 'adygėjų',
  				'ae' => 'avestų',
+ 				'aeb' => 'Tuniso arabų',
  				'af' => 'afrikanų',
  				'afh' => 'afrihili',
  				'agq' => 'aghemų',
  				'ain' => 'ainų',
  				'ak' => 'akanų',
  				'akk' => 'akadianų',
+ 				'akz' => 'alabamiečių',
  				'ale' => 'aleutų',
+ 				'aln' => 'albanų kalbos gegų tarmė',
  				'alt' => 'pietų Altajaus',
  				'am' => 'amharų',
  				'an' => 'aragonesų',
@@ -600,40 +603,55 @@ has 'display_name_language' => (
  				'ar' => 'arabų',
  				'ar_001' => 'šiuolaikinė standartinė arabų',
  				'arc' => 'aramaikų',
- 				'arn' => 'araukanų',
+ 				'arn' => 'mapudungunų',
+ 				'aro' => 'araonų',
  				'arp' => 'arapahų',
+ 				'arq' => 'Alžyro arabų',
  				'arw' => 'aravakų',
+ 				'ary' => 'Maroko arabų',
+ 				'arz' => 'Egipto arabų',
  				'as' => 'asamų',
  				'asa' => 'asu',
+ 				'ase' => 'Amerikos ženklų kalba',
  				'ast' => 'asturianų',
  				'av' => 'avarikų',
+ 				'avk' => 'kotava',
  				'awa' => 'avadhi',
  				'ay' => 'aimarų',
  				'az' => 'azerbaidžaniečių',
  				'az@alt=short' => 'azeri',
+ 				'azb' => 'pietų Azerbaidžano',
  				'ba' => 'baškirų',
  				'bal' => 'baluči',
  				'ban' => 'balinezų',
+ 				'bar' => 'bavarų',
  				'bas' => 'basų',
  				'bax' => 'bamunų',
+ 				'bbc' => 'batak toba',
  				'bbj' => 'ghomalų',
  				'be' => 'baltarusių',
  				'bej' => 'bėjų',
- 				'bem' => 'bemba',
+ 				'bem' => 'bembų',
+ 				'bew' => 'betavi',
  				'bez' => 'benų',
  				'bfd' => 'bafutų',
+ 				'bfq' => 'badaga',
  				'bg' => 'bulgarų',
  				'bho' => 'baučpuri',
  				'bi' => 'bislama',
  				'bik' => 'bikolų',
  				'bin' => 'bini',
+ 				'bjn' => 'bandžarų',
  				'bkm' => 'komų',
  				'bla' => 'siksika',
  				'bm' => 'bambarų',
  				'bn' => 'bengalų',
  				'bo' => 'tibetiečių',
+ 				'bpy' => 'Bišnuprijos',
+ 				'bqi' => 'bakhtiari',
  				'br' => 'bretonų',
  				'bra' => 'brajų',
+ 				'brh' => 'brahujų',
  				'brx' => 'bodo',
  				'bs' => 'bosnių',
  				'bss' => 'akūsų',
@@ -663,6 +681,7 @@ has 'display_name_language' => (
  				'ckb' => 'soranių kurdų',
  				'co' => 'korsikiečių',
  				'cop' => 'koptų',
+ 				'cps' => 'capiznon',
  				'cr' => 'kry',
  				'crh' => 'Krymo turkų',
  				'cs' => 'čekų',
@@ -683,17 +702,19 @@ has 'display_name_language' => (
  				'din' => 'dinkų',
  				'dje' => 'zarmų',
  				'doi' => 'dogri',
- 				'dsb' => 'Žemutinės Serbijos',
+ 				'dsb' => 'žemutinių sorbų',
+ 				'dtp' => 'centrinio Dusuno',
  				'dua' => 'dualų',
  				'dum' => 'Vidurio Vokietijos',
  				'dv' => 'divehi',
  				'dyo' => 'džiola-foni',
  				'dyu' => 'dyulų',
- 				'dz' => 'svazilando',
+ 				'dz' => 'botijų',
  				'dzg' => 'dazagų',
- 				'ebu' => 'ebu',
- 				'ee' => 'eve',
+ 				'ebu' => 'embu',
+ 				'ee' => 'evių',
  				'efi' => 'efik',
+ 				'egl' => 'italų kalbos Emilijos tarmė',
  				'egy' => 'senovės egiptiečių',
  				'eka' => 'ekajuk',
  				'el' => 'graikų',
@@ -704,44 +725,55 @@ has 'display_name_language' => (
  				'en_GB' => 'Didžiosios Britanijos anglų',
  				'en_GB@alt=short' => 'anglų (JK)',
  				'en_US' => 'Jungtinių Valstijų anglų',
+ 				'en_US@alt=short' => 'anglų (JAV)',
  				'enm' => 'Vidurio Anglijos',
  				'eo' => 'esperanto',
  				'es' => 'ispanų',
  				'es_419' => 'Lotynų Amerikos ispanų',
  				'es_ES' => 'Europos ispanų',
  				'es_MX' => 'Meksikos ispanų',
+ 				'esu' => 'centrinės Aliaskos jupikų',
  				'et' => 'estų',
  				'eu' => 'baskų',
  				'ewo' => 'evondo',
+ 				'ext' => 'ispanų kalbos Ekstremadūros tarmė',
  				'fa' => 'persų',
  				'fan' => 'fang',
  				'fat' => 'fanti',
  				'ff' => 'fulahų',
  				'fi' => 'suomių',
  				'fil' => 'filipiniečių',
+ 				'fit' => 'suomių kalbos Tornedalio tarmė',
  				'fj' => 'fidžių',
  				'fo' => 'farerų',
  				'fon' => 'fon',
  				'fr' => 'prancūzų',
  				'fr_CA' => 'Kanados prancūzų',
  				'fr_CH' => 'Šveicarijos prancūzų',
+ 				'frc' => 'kadžunų prancūzų',
  				'frm' => 'Vidurio Prancūzijos',
  				'fro' => 'senoji prancūzų',
+ 				'frp' => 'Arpitano',
  				'frr' => 'šiaurinių fryzų',
  				'frs' => 'rytų fryzų',
  				'fur' => 'frulan',
  				'fy' => 'vakarų fryzų',
  				'ga' => 'airių',
  				'gaa' => 'ga',
+ 				'gag' => 'gagaūzų',
+ 				'gan' => 'kinų kalbos dziangsi tarmė',
  				'gay' => 'gajo',
  				'gba' => 'gbaja',
+ 				'gbz' => 'zoroastrų dari',
  				'gd' => 'škotų (gėlų)',
  				'gez' => 'gyz',
  				'gil' => 'kiribati',
  				'gl' => 'galisų',
+ 				'glk' => 'gilaki',
  				'gmh' => 'Vidurio Aukštosios Vokietijos',
  				'gn' => 'gvaranių',
  				'goh' => 'Senoji Aukštosios Vokietijos',
+ 				'gom' => 'Goa konkanių',
  				'gon' => 'gondi',
  				'gor' => 'gorontalo',
  				'got' => 'gotų',
@@ -749,20 +781,25 @@ has 'display_name_language' => (
  				'grc' => 'senovės graikų',
  				'gsw' => 'Šveicarijos vokiečių',
  				'gu' => 'gudžaratų',
+ 				'guc' => 'vajų',
+ 				'gur' => 'frafra',
  				'guz' => 'gusi',
- 				'gv' => 'manks',
+ 				'gv' => 'meniečių',
  				'gwi' => 'gvičino',
  				'ha' => 'hausų',
  				'hai' => 'haido',
+ 				'hak' => 'kinų kalbos hakų tarmė',
  				'haw' => 'havajiečių',
  				'he' => 'hebrajų',
  				'hi' => 'hindi',
+ 				'hif' => 'Fidžio hindi',
  				'hil' => 'hiligainon',
  				'hit' => 'hititų',
  				'hmn' => 'hmong',
  				'ho' => 'hiri motu',
  				'hr' => 'kroatų',
- 				'hsb' => 'viršutinė sorbian',
+ 				'hsb' => 'aukštutinių sorbų',
+ 				'hsn' => 'kinų kalbos hunano tarmė',
  				'ht' => 'Haičio',
  				'hu' => 'vengrų',
  				'hup' => 'hupa',
@@ -782,30 +819,38 @@ has 'display_name_language' => (
  				'is' => 'islandų',
  				'it' => 'italų',
  				'iu' => 'inukitut',
+ 				'izh' => 'ingrų',
  				'ja' => 'japonų',
+ 				'jam' => 'Jamaikos kreolų anglų',
  				'jbo' => 'loiban',
- 				'jmc' => 'machamų',
+ 				'jgo' => 'ngombų',
+ 				'jmc' => 'mačamų',
  				'jpr' => 'judėjų persų',
  				'jrb' => 'judėjų arabų',
+ 				'jut' => 'danų kalbos jutų tarmė',
  				'jv' => 'javiečių',
  				'ka' => 'gruzinų',
  				'kaa' => 'karakalpakų',
- 				'kab' => 'kabilo',
+ 				'kab' => 'kebailų',
  				'kac' => 'kačin',
  				'kaj' => 'ju',
- 				'kam' => 'kamba',
+ 				'kam' => 'kembų',
  				'kaw' => 'kavi',
  				'kbd' => 'kabardinų',
  				'kbl' => 'kanembų',
  				'kcg' => 'tyap',
  				'kde' => 'makondų',
  				'kea' => 'Žaliojo Kyšulio kreolų',
+ 				'ken' => 'kenyang',
  				'kfo' => 'koro',
  				'kg' => 'Kongo',
+ 				'kgp' => 'kaingang',
  				'kha' => 'kasi',
  				'kho' => 'kotanezų',
- 				'khq' => 'koyra čini',
- 				'ki' => 'kikui',
+ 				'khq' => 'kojra čini',
+ 				'khw' => 'khovarų',
+ 				'ki' => 'kikujų',
+ 				'kiu' => 'kirmanjki',
  				'kj' => 'kuaniama',
  				'kk' => 'kazachų',
  				'kkj' => 'kako',
@@ -815,15 +860,18 @@ has 'display_name_language' => (
  				'kmb' => 'kimbundu',
  				'kn' => 'kanadų',
  				'ko' => 'korėjiečių',
- 				'kok' => 'kankani',
+ 				'koi' => 'komių-permių',
+ 				'kok' => 'konkanių',
  				'kos' => 'kosreanų',
  				'kpe' => 'kpele',
  				'kr' => 'kanuri',
  				'krc' => 'karačiajų balkarijos',
+ 				'kri' => 'krio',
+ 				'krj' => 'kinaray-a',
  				'krl' => 'karelų',
  				'kru' => 'kuruk',
  				'ks' => 'kašmyrų',
- 				'ksb' => 'sambalų',
+ 				'ksb' => 'šambalų',
  				'ksf' => 'bafų',
  				'ksh' => 'kolognų',
  				'ku' => 'kurdų',
@@ -839,21 +887,29 @@ has 'display_name_language' => (
  				'lam' => 'lamba',
  				'lb' => 'liuksemburgiečių',
  				'lez' => 'lezginų',
+ 				'lfn' => 'naujoji frankų kalba',
  				'lg' => 'ganda',
  				'li' => 'limburgiš',
- 				'ln' => 'lingala',
+ 				'lij' => 'ligūrų',
+ 				'liv' => 'lyvių',
+ 				'lkt' => 'lakotų',
+ 				'lmo' => 'lombardų',
+ 				'ln' => 'ngalų',
  				'lo' => 'laosiečių',
  				'lol' => 'mongo',
  				'loz' => 'lozi',
  				'lt' => 'lietuvių',
+ 				'ltg' => 'latgalių',
  				'lu' => 'luba katanga',
  				'lua' => 'luba lulua',
  				'lui' => 'luiseno',
  				'lun' => 'lunda',
  				'luo' => 'luo',
- 				'lus' => 'lušai',
- 				'luy' => 'luyia',
+ 				'lus' => 'mizo',
+ 				'luy' => 'luja',
  				'lv' => 'latvių',
+ 				'lzh' => 'klasikinė kinų',
+ 				'lzz' => 'laz',
  				'mad' => 'madurezų',
  				'maf' => 'mafų',
  				'mag' => 'magahi',
@@ -869,7 +925,8 @@ has 'display_name_language' => (
  				'mfe' => 'morisijų',
  				'mg' => 'malagasų',
  				'mga' => 'Vidurio Airijos',
- 				'mgh' => 'makhuva-maeto',
+ 				'mgh' => 'makua-maeto',
+ 				'mgo' => 'meta',
  				'mh' => 'Maršalo Salų',
  				'mi' => 'maorių',
  				'mic' => 'mikmak',
@@ -882,6 +939,7 @@ has 'display_name_language' => (
  				'moh' => 'mohok',
  				'mos' => 'mosi',
  				'mr' => 'maratų',
+ 				'mrj' => 'vakarų mari',
  				'ms' => 'malajiečių',
  				'mt' => 'maltiečių',
  				'mua' => 'mundangų',
@@ -889,12 +947,15 @@ has 'display_name_language' => (
  				'mus' => 'krykų',
  				'mwl' => 'mirandezų',
  				'mwr' => 'marvari',
+ 				'mwv' => 'mentavai',
  				'my' => 'birmiečių',
  				'mye' => 'mjenų',
  				'myv' => 'erzyjų',
+ 				'mzn' => 'mazenderanių',
  				'na' => 'naurų',
+ 				'nan' => 'kinų kalbos pietų minų tarmė',
  				'nap' => 'neapoliečių',
- 				'naq' => 'namų',
+ 				'naq' => 'nama',
  				'nb' => 'Norvegijos rašytinė – būkmolų',
  				'nd' => 'šiaurės ndebelų',
  				'nds' => 'Žemutinės Vokietijos',
@@ -903,6 +964,7 @@ has 'display_name_language' => (
  				'ng' => 'ndongų',
  				'nia' => 'nias',
  				'niu' => 'niuenų',
+ 				'njo' => 'ao naga',
  				'nl' => 'olandų',
  				'nl_BE' => 'flamandų',
  				'nmg' => 'kvasių',
@@ -911,6 +973,7 @@ has 'display_name_language' => (
  				'no' => 'norvegų',
  				'nog' => 'nogų',
  				'non' => 'norsu',
+ 				'nov' => 'novial',
  				'nqo' => 'enko',
  				'nr' => 'pietų ndebele',
  				'nso' => 'šiaurės sothų',
@@ -919,7 +982,7 @@ has 'display_name_language' => (
  				'nwc' => 'klasikinė nevari',
  				'ny' => 'nianja',
  				'nym' => 'niamvezi',
- 				'nyn' => 'niankole',
+ 				'nyn' => 'niankolų',
  				'nyo' => 'nioro',
  				'nzi' => 'nzima',
  				'oc' => 'očitarų',
@@ -935,20 +998,31 @@ has 'display_name_language' => (
  				'pam' => 'pampanga',
  				'pap' => 'papiemento',
  				'pau' => 'palau',
+ 				'pcd' => 'pikardų',
+ 				'pdc' => 'Pensilvanijos vokiečių',
+ 				'pdt' => 'vokiečių kalbos žemaičių tarmė',
  				'peo' => 'senoji persų',
+ 				'pfl' => 'vokiečių kalbos Pfalco tarmė',
  				'phn' => 'finikiečių',
  				'pi' => 'pali',
  				'pl' => 'lenkų',
- 				'pon' => 'ponapean',
+ 				'pms' => 'italų kalbos Pjemonto tarmė',
+ 				'pnt' => 'Ponto',
+ 				'pon' => 'Ponapės',
+ 				'prg' => 'prūsų',
  				'pro' => 'senovės provansalų',
  				'ps' => 'puštūnų',
  				'pt' => 'portugalų',
  				'pt_BR' => 'Brazilijos portugalų',
  				'pt_PT' => 'Europos portugalų',
  				'qu' => 'kečujų',
+ 				'quc' => 'kičių',
+ 				'qug' => 'Čimboraso aukštumų kečujų',
  				'raj' => 'radžastano',
  				'rap' => 'rapanui',
  				'rar' => 'rarotongan',
+ 				'rgn' => 'italų kalbos Romanijos tarmė',
+ 				'rif' => 'rifų',
  				'rm' => 'retoromanų',
  				'rn' => 'rundi',
  				'ro' => 'rumunų',
@@ -956,30 +1030,37 @@ has 'display_name_language' => (
  				'rof' => 'rombo',
  				'rom' => 'romų',
  				'root' => 'rūt',
+ 				'rtm' => 'rotumanų',
  				'ru' => 'rusų',
+ 				'rue' => 'rusinų',
+ 				'rug' => 'Rovianos',
  				'rup' => 'aromanių',
- 				'rw' => 'kinjarvanda',
- 				'rwk' => 'rwa',
+ 				'rw' => 'kinjaruandų',
+ 				'rwk' => 'rua',
  				'sa' => 'sanskritas',
  				'sad' => 'sandavi',
  				'sah' => 'jakutų',
  				'sam' => 'samarėjų aramių',
- 				'saq' => 'samburų',
+ 				'saq' => 'sambūrų',
  				'sas' => 'sasak',
  				'sat' => 'santali',
+ 				'saz' => 'sauraštrų',
  				'sba' => 'ngambajų',
  				'sbp' => 'sangų',
  				'sc' => 'sardiniečių',
  				'scn' => 'siciliečių',
  				'sco' => 'škotų',
  				'sd' => 'sindų',
- 				'se' => 'šiaurinių samių',
+ 				'sdc' => 'sasaresų sardinų',
+ 				'se' => 'šiaurės samių',
  				'see' => 'senecų',
  				'seh' => 'senų',
+ 				'sei' => 'seri',
  				'sel' => 'selkup',
- 				'ses' => 'koyraboro seni',
+ 				'ses' => 'kojraboro seni',
  				'sg' => 'sango',
  				'sga' => 'senoji airių',
+ 				'sgs' => 'žemaičių',
  				'sh' => 'serbų-kroatų',
  				'shi' => 'tachelhitų',
  				'shn' => 'šan',
@@ -988,12 +1069,14 @@ has 'display_name_language' => (
  				'sid' => 'sidamo',
  				'sk' => 'slovakų',
  				'sl' => 'slovėnų',
+ 				'sli' => 'sileziečių žemaičių',
+ 				'sly' => 'selajarų',
  				'sm' => 'samoa',
- 				'sma' => 'pietų sami',
- 				'smj' => 'lule sami',
- 				'smn' => 'inari sami',
- 				'sms' => 'skolt sami',
- 				'sn' => 'šona',
+ 				'sma' => 'pietų samių',
+ 				'smj' => 'Lulėjo samių',
+ 				'smn' => 'Inario samių',
+ 				'sms' => 'Skolto samių',
+ 				'sn' => 'šonų',
  				'snk' => 'soninke',
  				'so' => 'somaliečių',
  				'sog' => 'sogdien',
@@ -1004,17 +1087,20 @@ has 'display_name_language' => (
  				'ss' => 'svati',
  				'ssy' => 'saho',
  				'st' => 'pietų sesuto',
+ 				'stq' => 'Saterlendo fryzų',
  				'su' => 'sundų',
  				'suk' => 'sukuma',
  				'sus' => 'susu',
  				'sux' => 'šumerų',
  				'sv' => 'švedų',
  				'sw' => 'suahilių',
- 				'swb' => 'Comorian',
- 				'swc' => 'Kongo svahili',
+ 				'swb' => 'Komorų',
+ 				'swc' => 'Kongo suahilių',
  				'syc' => 'klasikinė siriečių',
  				'syr' => 'sirų',
+ 				'szl' => 'sileziečių',
  				'ta' => 'tamilų',
+ 				'tcy' => 'tulų',
  				'te' => 'telugų',
  				'tem' => 'timne',
  				'teo' => 'teso',
@@ -1027,26 +1113,31 @@ has 'display_name_language' => (
  				'tiv' => 'tiv',
  				'tk' => 'turkmėnų',
  				'tkl' => 'tokelau',
+ 				'tkr' => 'tsakurų',
  				'tl' => 'tagalogų',
  				'tlh' => 'klingonų',
  				'tli' => 'tlingit',
+ 				'tly' => 'talyšų',
  				'tmh' => 'tamašek',
  				'tn' => 'tsvana',
  				'to' => 'tonganų',
  				'tog' => 'niasa tongos',
  				'tpi' => 'tok pisin',
  				'tr' => 'turkų',
+ 				'tru' => 'turoyo',
  				'trv' => 'taroko',
  				'ts' => 'tsonga',
+ 				'tsd' => 'tsakonų',
  				'tsi' => 'tsimšian',
  				'tt' => 'totorių',
+ 				'ttt' => 'musulmonų tatų',
  				'tum' => 'tumbukų',
  				'tvl' => 'tuvalu',
  				'tw' => 'tvi',
  				'twq' => 'tasavakų',
  				'ty' => 'taitiečių',
  				'tyv' => 'tuvių',
- 				'tzm' => 'Centrinio Maroko tamazightų',
+ 				'tzm' => 'Centrinio Maroko tamazitų',
  				'udm' => 'udmurtų',
  				'ug' => 'uigūrų',
  				'uga' => 'ugaritic',
@@ -1057,9 +1148,14 @@ has 'display_name_language' => (
  				'uz' => 'uzbekų',
  				'vai' => 'vai',
  				've' => 'venda',
+ 				'vec' => 'venetų',
+ 				'vep' => 'vepsų',
  				'vi' => 'vietnamiečių',
+ 				'vls' => 'vakarų flamandų',
+ 				'vmf' => 'pagrindinė frankonų',
  				'vo' => 'volapiuk',
  				'vot' => 'votik',
+ 				'vro' => 'võro',
  				'vun' => 'vunjo',
  				'wa' => 'valonų',
  				'wae' => 'valserų',
@@ -1067,8 +1163,10 @@ has 'display_name_language' => (
  				'war' => 'varai',
  				'was' => 'vašo',
  				'wo' => 'volofų',
+ 				'wuu' => 'kinų kalbos vu tarmė',
  				'xal' => 'kalmukų',
  				'xh' => 'kosų',
+ 				'xmf' => 'megrelų',
  				'xog' => 'sogų',
  				'yao' => 'jao',
  				'yap' => 'japezų',
@@ -1076,10 +1174,12 @@ has 'display_name_language' => (
  				'ybb' => 'jembų',
  				'yi' => 'jidiš',
  				'yo' => 'jorubų',
+ 				'yrl' => 'njengatu',
  				'yue' => 'kinų kalbos Kantono tarmė',
  				'za' => 'chuang',
  				'zap' => 'zapotekų',
  				'zbl' => '„Bliss“ simbolių',
+ 				'zea' => 'zelandų',
  				'zen' => 'zenaga',
  				'zgh' => 'standartinė Maroko tamazigtų',
  				'zh' => 'kinų',
@@ -1106,11 +1206,16 @@ has 'display_name_script' => (
 	default		=> sub {
 		sub {
 			my %scripts = (
-			'Arab' => 'arabų',
+			'Afak' => 'Afaka',
+ 			'Aghb' => 'Kaukazo Albanijos',
+ 			'Arab' => 'arabų',
  			'Arab@alt=variant' => 'persų-arabų',
  			'Armi' => 'imperinė aramaikų',
  			'Armn' => 'armėnų',
  			'Avst' => 'avestano',
+ 			'Bali' => 'Baliečių',
+ 			'Bamu' => 'Bamum',
+ 			'Bass' => 'Bassa Vah',
  			'Batk' => 'batak',
  			'Beng' => 'bengalų',
  			'Blis' => '„Bliss“ simboliai',
@@ -1131,14 +1236,17 @@ has 'display_name_script' => (
  			'Cyrs' => 'senoji bažnytinė slavų kirilica',
  			'Deva' => 'devanagari',
  			'Dsrt' => 'deseretas',
+ 			'Dupl' => 'Duplojė stenografija',
  			'Egyd' => 'Egipto liaudies',
  			'Egyh' => 'Egipto žynių',
  			'Egyp' => 'egipto hieroglifai',
+ 			'Elba' => 'Elbasano',
  			'Ethi' => 'etiopų',
  			'Geok' => 'gruzinų kutsuri',
  			'Geor' => 'gruzinų',
  			'Glag' => 'glagolitik',
  			'Goth' => 'gotų',
+ 			'Gran' => 'Granta',
  			'Grek' => 'graikų',
  			'Gujr' => 'gudžaratų',
  			'Guru' => 'gurmuki',
@@ -1151,6 +1259,7 @@ has 'display_name_script' => (
  			'Hant@alt=stand-alone' => 'tradiciniai han',
  			'Hebr' => 'hebrajų',
  			'Hira' => 'hiragana',
+ 			'Hluw' => 'Anatolijaus hieroglifai',
  			'Hmng' => 'pahav hmong',
  			'Hrkt' => 'katakana / hiragana',
  			'Hung' => 'senasis vengrų',
@@ -1158,12 +1267,15 @@ has 'display_name_script' => (
  			'Ital' => 'senasis italų',
  			'Java' => 'javiečių',
  			'Jpan' => 'japonų',
+ 			'Jurc' => 'Jurchen',
  			'Kali' => 'kajah li',
  			'Kana' => 'katakana',
  			'Khar' => 'karošti',
  			'Khmr' => 'khmerų',
+ 			'Khoj' => 'Khojki',
  			'Knda' => 'kanadų',
  			'Kore' => 'korėjiečių',
+ 			'Kpel' => 'Kpelų',
  			'Kthi' => 'kaithi',
  			'Lana' => 'lana',
  			'Laoo' => 'laosiečių',
@@ -1174,23 +1286,36 @@ has 'display_name_script' => (
  			'Limb' => 'limbu',
  			'Lina' => 'linijiniai A',
  			'Linb' => 'linijiniai B',
+ 			'Lisu' => 'Fraser',
+ 			'Loma' => 'Loma',
  			'Lyci' => 'lician',
  			'Lydi' => 'lidian',
+ 			'Mahj' => 'Mahadžani',
  			'Mand' => 'mandėjų',
  			'Mani' => 'maničų',
  			'Maya' => 'malų hieroglifai',
+ 			'Mend' => 'Mende',
+ 			'Merc' => 'Merojitų rankraštinis',
  			'Mero' => 'meroitik',
  			'Mlym' => 'malajalių',
+ 			'Modi' => 'Modi',
  			'Mong' => 'mongolų',
  			'Moon' => 'mūn',
+ 			'Mroo' => 'Mro',
  			'Mtei' => 'meitei majek',
  			'Mymr' => 'birmiečių',
+ 			'Narb' => 'Senasis šiaurės arabų',
+ 			'Nbat' => 'Nabatėjų',
+ 			'Nkgb' => 'Naxi Geba',
  			'Nkoo' => 'enko',
+ 			'Nshu' => 'Nüshu',
  			'Ogam' => 'ogham',
  			'Olck' => 'ol čiki',
  			'Orkh' => 'orkon',
  			'Orya' => 'orijų',
  			'Osma' => 'osmanų',
+ 			'Palm' => 'Palmiros',
+ 			'Pauc' => 'Pau Cin Hau',
  			'Perm' => 'senieji permės',
  			'Phag' => 'pagsa pa',
  			'Phli' => 'rašytiniai pahlavi',
@@ -1204,10 +1329,15 @@ has 'display_name_script' => (
  			'Runr' => 'runų',
  			'Samr' => 'samariečių',
  			'Sara' => 'sarati',
+ 			'Sarb' => 'senoji pietų Arabijos',
  			'Saur' => 'sauraštra',
  			'Sgnw' => 'ženklų raštas',
  			'Shaw' => 'šavių',
+ 			'Shrd' => 'Šarados',
+ 			'Sidd' => 'Siddham',
+ 			'Sind' => 'Khudawadi',
  			'Sinh' => 'sinhalų',
+ 			'Sora' => 'Sora Sompeng',
  			'Sund' => 'sundų',
  			'Sylo' => 'syloti nagri',
  			'Syrc' => 'sirų',
@@ -1215,9 +1345,11 @@ has 'display_name_script' => (
  			'Syrj' => 'vakarų sirų',
  			'Syrn' => 'rytų sirų',
  			'Tagb' => 'tagbanva',
+ 			'Takr' => 'Takri',
  			'Tale' => 'tai le',
  			'Talu' => 'naujasis Tailando lue',
  			'Taml' => 'tamilų',
+ 			'Tang' => 'Tangut',
  			'Tavt' => 'tai vet',
  			'Telu' => 'telugų',
  			'Teng' => 'tengvar',
@@ -1226,9 +1358,12 @@ has 'display_name_script' => (
  			'Thaa' => 'hana',
  			'Thai' => 'tajų',
  			'Tibt' => 'tibetiečių',
+ 			'Tirh' => 'Tirhuta',
  			'Ugar' => 'ugaritik',
  			'Vaii' => 'vai',
  			'Visp' => 'matoma kalba',
+ 			'Wara' => 'Varang Kshiti',
+ 			'Wole' => 'Woleai',
  			'Xpeo' => 'senieji persų',
  			'Xsux' => 'Šumero Akado dantiraštis',
  			'Yiii' => 'ji',
@@ -1440,6 +1575,7 @@ has 'display_name_territory' => (
  			'MG' => 'Madagaskaras',
  			'MH' => 'Maršalo Salos',
  			'MK' => 'Makedonija',
+ 			'MK@alt=variant' => 'Makedonijos Respublika',
  			'ML' => 'Malis',
  			'MM' => 'Mianmaras (Birma)',
  			'MN' => 'Mongolija',
@@ -1645,7 +1781,10 @@ has 'display_name_type' => (
  				'hebrew' => q{hebrajų kalendorius},
  				'indian' => q{nacionalinis indų kalendorius},
  				'islamic' => q{islamo kalendorius},
- 				'islamic-civil' => q{pilietinis islamo kalendorius},
+ 				'islamic-civil' => q{Islamo kalendorius (lentelinis, pilietinė era)},
+ 				'islamic-rgsa' => q{Islamo kalendorius (Saudo Arabija)},
+ 				'islamic-tbla' => q{Islamo kalendorius (lentelinis, astronominė era)},
+ 				'islamic-umalqura' => q{Islamo kalendorius (Umm al-Qura)},
  				'iso8601' => q{ISO 8601 kalendorius},
  				'japanese' => q{japonų kalendorius},
  				'persian' => q{persų kalendorius},
@@ -1688,6 +1827,7 @@ has 'display_name_type' => (
  				'stroke' => q{Įprasta kiniško požymio rūšiavimo tvarka},
  				'traditional' => q{įprasta rūšiavimo tvarka},
  				'unihan' => q{Šaknies ženklų ir brūkšnių rūšiavimo tvarka},
+ 				'zhuyin' => q{Zhuyin rikiavimo tvarka},
  			},
  			'colnormalization' => {
  				'no' => q{Rikiuoti nenormalizuojant},
@@ -1711,6 +1851,8 @@ has 'display_name_type' => (
  				'armnlow' => q{armėnų skaitmenys mažosiomis raidėmis},
  				'bali' => q{bali skaitmenys},
  				'beng' => q{bengalų skaitmenys},
+ 				'brah' => q{Brahmi skaitmenys},
+ 				'cakm' => q{Čakmų skaitmenys},
  				'cham' => q{cham skaitmenys},
  				'deva' => q{devanagari skaitmenys},
  				'ethi' => q{Etiopijos skaitmenys},
@@ -1722,25 +1864,41 @@ has 'display_name_type' => (
  				'gujr' => q{gudžaratų skaitmenys},
  				'guru' => q{gurmuki skaitmenys},
  				'hanidec' => q{kinų dešimtainiai skaitmenys},
- 				'hans' => q{supaprastintos kinų skaitmenys},
- 				'hansfin' => q{supaprastintos kinų finans. skaitmenys},
- 				'hant' => q{tradicinės kinų skaitmenys},
- 				'hantfin' => q{tradicinės kinų finans. skaitmenys},
+ 				'hans' => q{supaprastintos kinų k. skaitmenys},
+ 				'hansfin' => q{supaprastintos kinų k. finans. skaitmenys},
+ 				'hant' => q{tradicinės kinų k. skaitmenys},
+ 				'hantfin' => q{tradicinės kinų k. finans. skaitmenys},
  				'hebr' => q{hebrajų skaitmenys},
  				'java' => q{javiečių skaitmenys},
  				'jpan' => q{japonų skaitmenys},
  				'jpanfin' => q{japonų finans. skaitmenys},
+ 				'kali' => q{Kayah Li skaitmenys},
  				'khmr' => q{khmerų skaitmenys},
  				'knda' => q{kanadų skaitmenys},
+ 				'lana' => q{Tai Tham Hora skaitmenys},
+ 				'lanatham' => q{Tai Tham Tham skaitmenys},
  				'laoo' => q{laosiečių skaitmenys},
  				'latn' => q{lotyniški skaitmenys},
+ 				'lepc' => q{Lepcha skaitmenys},
+ 				'limb' => q{Limbu skaitmenys},
  				'mlym' => q{malajalių skaitmenys},
  				'mong' => q{mongolų skaitmenys},
+ 				'mtei' => q{Meetei Mayek skaitmenys},
  				'mymr' => q{mianmariečių skaitmenys},
+ 				'mymrshan' => q{Myanmar Shan skaitmenys},
  				'native' => q{Vietiniai skaitmenys},
+ 				'nkoo' => q{N’Ko skaitmenys},
+ 				'olck' => q{Ol Chiki skaitmenys},
  				'orya' => q{orijų skaitmenys},
+ 				'osma' => q{Osmanų skaitmenys},
  				'roman' => q{romėniški skaitmenys},
  				'romanlow' => q{romėniški skaitmenys mažosiomis raidėmis},
+ 				'saur' => q{Sauraštrų skaitmenys},
+ 				'shrd' => q{Šaradų skaitmenys},
+ 				'sora' => q{Sora Sompeng skaitmenys},
+ 				'sund' => q{Sudaniečių skaitmenys},
+ 				'takr' => q{Takri skaitmenys},
+ 				'talu' => q{Naujieji Tai Lue skaitmenys},
  				'taml' => q{tradicinės tamilų skaitmenys},
  				'tamldec' => q{tamilų skaitmenys},
  				'telu' => q{telugų skaitmenys},
@@ -1881,9 +2039,9 @@ has 'duration_units' => (
 	isa			=> 'HashRef[Str]',
 	init_arg	=> undef,
 	default		=> sub { {
-				hm => 'h:mm',
-				hms => 'h:mm:ss',
-				ms => 'm:ss',
+				hm => 'hh:mm',
+				hms => 'hh:mm:ss',
+				ms => 'mm:ss',
 			} }
 );
 
@@ -1894,279 +2052,850 @@ has 'units' => (
 	default		=> sub { {
 				'long' => {
 					'acre' => {
+						'' => q(akrai),
 						'few' => q({0} akrai),
 						'many' => q({0} akro),
 						'one' => q({0} akras),
 						'other' => q({0} akrų),
 					},
+					'acre-foot' => {
+						'' => q(pėdos akre),
+						'few' => q({0} pėdos akre),
+						'many' => q({0} pėdos akre),
+						'one' => q({0} pėda akre),
+						'other' => q({0} pėdų akre),
+					},
+					'ampere' => {
+						'' => q(amperai),
+						'few' => q({0} amperai),
+						'many' => q({0} ampero),
+						'one' => q({0} amperas),
+						'other' => q({0} amperų),
+					},
 					'arc-minute' => {
+						'' => q(kampo minutės),
 						'few' => q({0} kampo minutės),
 						'many' => q({0} kampo minutės),
 						'one' => q({0} kampo minutė),
 						'other' => q({0} kampo minučių),
 					},
 					'arc-second' => {
+						'' => q(kampo sekundės),
 						'few' => q({0} kampo sekundės),
 						'many' => q({0} kampo sekundės),
 						'one' => q({0} kampo sekundė),
 						'other' => q({0} kampo sekundžių),
 					},
+					'astronomical-unit' => {
+						'' => q(astronominiai vienetai),
+						'few' => q({0} astronominiai vienetai),
+						'many' => q({0} astronominio vieneto),
+						'one' => q({0} astronominis vienetas),
+						'other' => q({0} astronominių vienetų),
+					},
+					'bit' => {
+						'' => q(bitai),
+						'few' => q({0} bitai),
+						'many' => q({0} bito),
+						'one' => q({0} bitas),
+						'other' => q({0} bitų),
+					},
+					'bushel' => {
+						'' => q(bušeliai),
+						'few' => q({0} bušeliai),
+						'many' => q({0} bušelio),
+						'one' => q({0} bušelis),
+						'other' => q({0} bušelių),
+					},
+					'byte' => {
+						'' => q(baitai),
+						'few' => q({0} baitai),
+						'many' => q({0} baito),
+						'one' => q({0} baitas),
+						'other' => q({0} baitų),
+					},
+					'calorie' => {
+						'' => q(kalorijos),
+						'few' => q({0} kalorijos),
+						'many' => q({0} kalorijos),
+						'one' => q({0} kalorija),
+						'other' => q({0} kalorijų),
+					},
+					'carat' => {
+						'' => q(karatai),
+						'few' => q({0} karatai),
+						'many' => q({0} karato),
+						'one' => q({0} karatas),
+						'other' => q({0} karatų),
+					},
 					'celsius' => {
+						'' => q(Celsijaus laipsniai),
 						'few' => q({0} Celsijaus laipsniai),
 						'many' => q({0} Celsijaus laipsnio),
 						'one' => q({0} Celsijaus laipsnis),
 						'other' => q({0} Celsijaus laipsnių),
 					},
+					'centiliter' => {
+						'' => q(centilitrai),
+						'few' => q({0} centilitrai),
+						'many' => q({0} centilitro),
+						'one' => q({0} centilitras),
+						'other' => q({0} centilitrų),
+					},
 					'centimeter' => {
+						'' => q(centimetrai),
 						'few' => q({0} centimetrai),
 						'many' => q({0} centimetro),
 						'one' => q({0} centimetras),
 						'other' => q({0} centimetrų),
 					},
+					'cubic-centimeter' => {
+						'' => q(kubiniai centimetrai),
+						'few' => q({0} kubiniai centimetrai),
+						'many' => q({0} kubinio centimetro),
+						'one' => q({0} kubinis centimetras),
+						'other' => q({0} kubinių centimetrų),
+					},
+					'cubic-foot' => {
+						'' => q(kubinės pėdos),
+						'few' => q({0} kubinės pėdos),
+						'many' => q({0} kubinės pėdos),
+						'one' => q({0} kubinė pėda),
+						'other' => q({0} kubinių pėdų),
+					},
+					'cubic-inch' => {
+						'' => q(kubiniai coliai),
+						'few' => q({0} kubiniai coliai),
+						'many' => q({0} kubinio colio),
+						'one' => q({0} kubinis colis),
+						'other' => q({0} kubinių colių),
+					},
 					'cubic-kilometer' => {
+						'' => q(kubiniai kilometrai),
 						'few' => q({0} kubiniai kilimetrai),
 						'many' => q({0} kubinio kilometro),
 						'one' => q({0} kubinis kilometras),
 						'other' => q({0} kubinių kilometrų),
 					},
+					'cubic-meter' => {
+						'' => q(kubiniai metrai),
+						'few' => q({0} kubiniai metrai),
+						'many' => q({0} kubinio metro),
+						'one' => q({0} kubinis metras),
+						'other' => q({0} kubinių metrų),
+					},
 					'cubic-mile' => {
+						'' => q(kubinės mylios),
 						'few' => q({0} kubinės mylios),
 						'many' => q({0} kubinės mylios),
 						'one' => q({0} kubinė mylia),
 						'other' => q({0} kubinių mylių),
 					},
+					'cubic-yard' => {
+						'' => q(kubiniai jardai),
+						'few' => q({0} kubiniai jardai),
+						'many' => q({0} kubinio jardo),
+						'one' => q({0} kubinis jardas),
+						'other' => q({0} kubinių jardų),
+					},
+					'cup' => {
+						'' => q(stiklinės),
+						'few' => q({0} stiklinės),
+						'many' => q({0} stiklinės),
+						'one' => q({0} stiklinė),
+						'other' => q({0} stiklinių),
+					},
 					'day' => {
+						'' => q(dienos),
 						'few' => q({0} dienos),
 						'many' => q({0} dienos),
 						'one' => q({0} diena),
 						'other' => q({0} dienų),
 					},
+					'deciliter' => {
+						'' => q(decilitrai),
+						'few' => q({0} decilitrai),
+						'many' => q({0} decilitro),
+						'one' => q({0} decilitras),
+						'other' => q({0} decilitrų),
+					},
+					'decimeter' => {
+						'' => q(decimetrai),
+						'few' => q({0} decimetrai),
+						'many' => q({0} decimetro),
+						'one' => q({0} decimetras),
+						'other' => q({0} decimetrų),
+					},
 					'degree' => {
+						'' => q(laipsniai),
 						'few' => q({0} laipsniai),
 						'many' => q({0} laipsnio),
 						'one' => q({0} laipsnis),
 						'other' => q({0} laipsnių),
 					},
 					'fahrenheit' => {
-						'few' => q({0}Farenheito laipsniai),
-						'many' => q({0}Farenheito laipsnio),
-						'one' => q({0}Farenheito laipsnis),
-						'other' => q({0}Farenheito laipsnių),
+						'' => q(Farenheito laipsniai),
+						'few' => q({0} Farenheito laipsniai),
+						'many' => q({0} Farenheito laipsnio),
+						'one' => q({0} Farenheito laipsnis),
+						'other' => q({0} Farenheito laipsnių),
+					},
+					'fathom' => {
+						'' => q(fadomai),
+						'few' => q({0} fadomai),
+						'many' => q({0} fadomo),
+						'one' => q({0} fadomas),
+						'other' => q({0} ftm),
+					},
+					'fluid-ounce' => {
+						'' => q(skysčio uncijos),
+						'few' => q({0} skysčio uncijos),
+						'many' => q({0} skysčio uncijos),
+						'one' => q({0} skysčio uncija),
+						'other' => q({0} skysčio uncijų),
+					},
+					'foodcalorie' => {
+						'' => q(kalorijos),
+						'few' => q({0} kalorijos),
+						'many' => q({0} kalorijos),
+						'one' => q({0} kalorija),
+						'other' => q({0} kalorijų),
 					},
 					'foot' => {
+						'' => q(pėdos),
 						'few' => q({0} pėdos),
 						'many' => q({0} pėdos),
 						'one' => q({0} pėda),
 						'other' => q({0} pėdų),
 					},
+					'furlong' => {
+						'' => q(furlongai),
+						'few' => q({0} furlongai),
+						'many' => q({0} furlongo),
+						'one' => q({0} furlongas),
+						'other' => q({0} furlongų),
+					},
 					'g-force' => {
+						'' => q(laisvojo kritimo pagreičiai),
 						'few' => q({0} laisvojo kritimo pagreičiai),
 						'many' => q({0} laisvojo kritimo pagreičio),
 						'one' => q({0} laisvojo kritimo pagreitis),
 						'other' => q({0} laisvojo kritimo pagreičių),
 					},
+					'gallon' => {
+						'' => q(galonai),
+						'few' => q({0} galonai),
+						'many' => q({0} galono),
+						'one' => q({0} galonas),
+						'other' => q({0} galonų),
+					},
+					'gigabit' => {
+						'' => q(gigabitai),
+						'few' => q({0} gigabitai),
+						'many' => q({0} gigabito),
+						'one' => q({0} gigabitas),
+						'other' => q({0} gigabitų),
+					},
+					'gigabyte' => {
+						'' => q(gigabaitai),
+						'few' => q({0} gigabaitai),
+						'many' => q({0} gigabaito),
+						'one' => q({0} gigabaitas),
+						'other' => q({0} gigabaitų),
+					},
+					'gigahertz' => {
+						'' => q(gigahercai),
+						'few' => q({0} gigahercai),
+						'many' => q({0} gigaherco),
+						'one' => q({0} gigahercas),
+						'other' => q({0} gigahercų),
+					},
+					'gigawatt' => {
+						'' => q(gigavatai),
+						'few' => q({0} gigavatai),
+						'many' => q({0} gigavato),
+						'one' => q({0} gigavatas),
+						'other' => q({0} gigavatų),
+					},
 					'gram' => {
+						'' => q(gramai),
 						'few' => q({0} gramai),
 						'many' => q({0} gramo),
 						'one' => q({0} gramas),
 						'other' => q({0} gramų),
 					},
 					'hectare' => {
+						'' => q(hektarai),
 						'few' => q({0} hektarai),
 						'many' => q({0} hektaro),
 						'one' => q({0} hektaras),
 						'other' => q({0} hektarų),
 					},
+					'hectoliter' => {
+						'' => q(hektolitrai),
+						'few' => q({0} hektolitrai),
+						'many' => q({0} hektolitro),
+						'one' => q({0} hektolitras),
+						'other' => q({0} hektolitrų),
+					},
 					'hectopascal' => {
+						'' => q(hektopaskaliai),
 						'few' => q({0} hektopaskaliai),
 						'many' => q({0} hektopaskalio),
 						'one' => q({0} hektopaskalis),
 						'other' => q({0} hektopaskalių),
 					},
+					'hertz' => {
+						'' => q(hercai),
+						'few' => q({0} hercai),
+						'many' => q({0} herco),
+						'one' => q({0} hercas),
+						'other' => q({0} hercų),
+					},
 					'horsepower' => {
+						'' => q(arklio galios),
 						'few' => q({0} arklio galios),
 						'many' => q({0} arklio galios),
 						'one' => q({0} arklio galia),
 						'other' => q({0} arklio galių),
 					},
 					'hour' => {
+						'' => q({0}/h),
 						'few' => q({0} valandos),
 						'many' => q({0} valandos),
 						'one' => q({0} valanda),
 						'other' => q({0} valandų),
 					},
 					'inch' => {
+						'' => q(coliai),
 						'few' => q({0} coliai),
 						'many' => q({0} colio),
 						'one' => q({0} colis),
 						'other' => q({0} colių),
 					},
 					'inch-hg' => {
+						'' => q(gyvsidabrio stulpelio coliai),
 						'few' => q({0} gyvsidabrio stulpelio coliai),
 						'many' => q({0} gyvsidabrio stulpelio colio),
 						'one' => q({0} gyvsidabrio stulpelio colis),
 						'other' => q({0} gyvsidabrio stulpelio colių),
 					},
+					'joule' => {
+						'' => q(džauliai),
+						'few' => q({0} džauliai),
+						'many' => q({0} džaulio),
+						'one' => q({0} džaulis),
+						'other' => q({0} džaulių),
+					},
+					'karat' => {
+						'' => q(karatai),
+						'few' => q({0} karatai),
+						'many' => q({0} karato),
+						'one' => q({0} karatas),
+						'other' => q({0} karatų),
+					},
+					'kelvin' => {
+						'' => q(kelvinai),
+						'few' => q({0} kelvinai),
+						'many' => q({0} kelvino),
+						'one' => q({0} kelvinas),
+						'other' => q({0} kelvinų),
+					},
+					'kilobit' => {
+						'' => q(kilobitai),
+						'few' => q({0} kilobitai),
+						'many' => q({0} kilobito),
+						'one' => q({0} kilobitas),
+						'other' => q({0} kilobitų),
+					},
+					'kilobyte' => {
+						'' => q(kilobaitai),
+						'few' => q({0} kilobaitai),
+						'many' => q({0} kilobaito),
+						'one' => q({0} kilobaitas),
+						'other' => q({0} kilobaitų),
+					},
+					'kilocalorie' => {
+						'' => q(kilokalorijos),
+						'few' => q({0} kilokalorijos),
+						'many' => q({0} kilokalorijos),
+						'one' => q({0} kilokalorija),
+						'other' => q({0} kilokalorijų),
+					},
 					'kilogram' => {
+						'' => q(kilogramai),
 						'few' => q({0} kilogramai),
 						'many' => q({0} kilogramo),
 						'one' => q({0} kilogramas),
 						'other' => q({0} kilogramų),
 					},
+					'kilohertz' => {
+						'' => q(kilohercai),
+						'few' => q({0} kilohercai),
+						'many' => q({0} kiloherco),
+						'one' => q({0} kilohercas),
+						'other' => q({0} kilohercų),
+					},
+					'kilojoule' => {
+						'' => q(kilodžauliai),
+						'few' => q({0} kilodžauliai),
+						'many' => q({0} kilodžaulio),
+						'one' => q({0} kilodžaulis),
+						'other' => q({0} kilodžaulių),
+					},
 					'kilometer' => {
+						'' => q(kilometrai),
 						'few' => q({0} kilometrai),
 						'many' => q({0} kilometro),
 						'one' => q({0} kilometras),
 						'other' => q({0} kilometrų),
 					},
 					'kilometer-per-hour' => {
+						'' => q(kilometrai per valandą),
 						'few' => q({0} kilometrai per valandą),
 						'many' => q({0} kilometro per valandą),
 						'one' => q({0} kilometras per valandą),
 						'other' => q({0} kilometrų per valandą),
 					},
 					'kilowatt' => {
+						'' => q(kilovatai),
 						'few' => q({0} kilovatai),
 						'many' => q({0} kilovato),
 						'one' => q({0} kilovatas),
 						'other' => q({0} kilovatų),
 					},
+					'kilowatt-hour' => {
+						'' => q(kilovatvalandės),
+						'few' => q({0} kilovatvalandės),
+						'many' => q({0} kilovatvalandės),
+						'one' => q({0} kilovatvalandė),
+						'other' => q({0} kilovatvalandžių),
+					},
 					'light-year' => {
+						'' => q(šviesmečiai),
 						'few' => q({0} šviesmečiai),
 						'many' => q({0} šviesmečio),
 						'one' => q({0} šviesmetis),
 						'other' => q({0} šviesmečių),
 					},
 					'liter' => {
+						'' => q(litrai),
 						'few' => q({0} litrai),
 						'many' => q({0} litro),
 						'one' => q({0} litras),
 						'other' => q({0} litrų),
 					},
+					'liter-per-kilometer' => {
+						'' => q(litrai kilometrui),
+						'few' => q({0} litrai kilometrui),
+						'many' => q({0} litro kilometrui),
+						'one' => q({0} litras kilometrui),
+						'other' => q({0} litrų kilometrui),
+					},
+					'lux' => {
+						'' => q(liuksai),
+						'few' => q({0} liuksai),
+						'many' => q({0} liukso),
+						'one' => q({0} liuksas),
+						'other' => q({0} liuksų),
+					},
+					'megabit' => {
+						'' => q(megabitai),
+						'few' => q({0} megabitai),
+						'many' => q({0} megabito),
+						'one' => q({0} megabitas),
+						'other' => q({0} megabitų),
+					},
+					'megabyte' => {
+						'' => q(megabaitai),
+						'few' => q({0} megabaitai),
+						'many' => q({0} megabaito),
+						'one' => q({0} megabaitas),
+						'other' => q({0} megabaitų),
+					},
+					'megahertz' => {
+						'' => q(megahercai),
+						'few' => q({0} megahercai),
+						'many' => q({0} megaherco),
+						'one' => q({0} megahercas),
+						'other' => q({0} megahercų),
+					},
+					'megaliter' => {
+						'' => q(megalitrai),
+						'few' => q({0} megalitrai),
+						'many' => q({0} megalitro),
+						'one' => q({0} megalitras),
+						'other' => q({0} megalitrų),
+					},
+					'megawatt' => {
+						'' => q(megavatai),
+						'few' => q({0} megavatai),
+						'many' => q({0} megavato),
+						'one' => q({0} megavatas),
+						'other' => q({0} megavatų),
+					},
 					'meter' => {
+						'' => q(metrai),
 						'few' => q({0} metrai),
 						'many' => q({0} metro),
 						'one' => q({0} metras),
 						'other' => q({0} metrų),
 					},
 					'meter-per-second' => {
+						'' => q(metrai per sekundę),
 						'few' => q({0} metrai per sekundę),
 						'many' => q({0} metro per sekundę),
 						'one' => q({0} metras per sekundę),
 						'other' => q({0} metrų per sekundę),
 					},
+					'meter-per-second-squared' => {
+						'' => q(metrai per kvadratinę sekundę),
+						'few' => q({0} metrai per kvadratinęsekundę),
+						'many' => q({0} metro per kvadratinę sekundę),
+						'one' => q({0} metras per kvadratinę sekundę),
+						'other' => q({0} metrų per kvadratinę sekundę),
+					},
+					'metric-ton' => {
+						'' => q(metrinės tonos),
+						'few' => q({0} metrinės tonos),
+						'many' => q({0} metrinės tonos),
+						'one' => q({0} metrinė tona),
+						'other' => q({0} metrinių tonų),
+					},
+					'microgram' => {
+						'' => q(mikrogramai),
+						'few' => q({0} mikrogramai),
+						'many' => q({0} mikrogramo),
+						'one' => q({0} mikrogramas),
+						'other' => q({0} mikrogramų),
+					},
+					'micrometer' => {
+						'' => q(mikrometrai),
+						'few' => q({0} mikrometrai),
+						'many' => q({0} mikrometro),
+						'one' => q({0} mikrometras),
+						'other' => q({0} mikrometrų),
+					},
+					'microsecond' => {
+						'' => q(mikrosekundės),
+						'few' => q({0} mikrosekundės),
+						'many' => q({0} mikrosekundės),
+						'one' => q({0} mikrosekundė),
+						'other' => q({0} mikrosekundžių),
+					},
 					'mile' => {
+						'' => q(mylios),
 						'few' => q({0} mylios),
 						'many' => q({0} mylios),
 						'one' => q({0} mylia),
 						'other' => q({0} mylių),
 					},
+					'mile-per-gallon' => {
+						'' => q(mylios už galoną),
+						'few' => q({0} mylios už galoną),
+						'many' => q({0} mylios už galoną),
+						'one' => q({0} mylia už galoną),
+						'other' => q({0} mylių už galoną),
+					},
 					'mile-per-hour' => {
+						'' => q(mylios per valandą),
 						'few' => q({0} mylios per valandą),
 						'many' => q({0} mylios per valandą),
 						'one' => q({0} mylia per valandą),
 						'other' => q({0} mylių per valandą),
 					},
+					'milliampere' => {
+						'' => q(miliamperai),
+						'few' => q({0} miliamperai),
+						'many' => q({0} miliampero),
+						'one' => q({0} miliamperas),
+						'other' => q({0} miliamperų),
+					},
 					'millibar' => {
+						'' => q(milbaras),
 						'few' => q({0} milibarai),
 						'many' => q({0} milibaro),
 						'one' => q({0} milibaras),
 						'other' => q({0} milibarų),
 					},
+					'milligram' => {
+						'' => q(miligramai),
+						'few' => q({0} miligramai),
+						'many' => q({0} miligramo),
+						'one' => q({0} miligramas),
+						'other' => q({0} miligramų),
+					},
+					'milliliter' => {
+						'' => q(mililitrai),
+						'few' => q({0} mililitrai),
+						'many' => q({0} mililitro),
+						'one' => q({0} mililitras),
+						'other' => q({0} mililitrų),
+					},
 					'millimeter' => {
+						'' => q(milimetrai),
 						'few' => q({0} milimetrai),
 						'many' => q({0} milimetro),
 						'one' => q({0} milimetras),
 						'other' => q({0} milimetrų),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(gysidabrio stulpelio milimetrai),
+						'few' => q({0} gysidabrio stulpelio milimetrai),
+						'many' => q({0} gysidabrio stulpelio milimetro),
+						'one' => q({0} gysidabrio stulpelio milimetras),
+						'other' => q({0} gysidabrio stulpelio milimetrų),
+					},
 					'millisecond' => {
+						'' => q(milisekundės),
 						'few' => q({0} milisekundės),
 						'many' => q({0} milisekundės),
 						'one' => q({0} milisekundė),
-						'other' => q({0} milisekundzių),
+						'other' => q({0} milisekundžių),
+					},
+					'milliwatt' => {
+						'' => q(milivatai),
+						'few' => q({0} milivatai),
+						'many' => q({0} milivato),
+						'one' => q({0} milivatas),
+						'other' => q({0} milivatų),
 					},
 					'minute' => {
+						'' => q(minutės),
 						'few' => q({0} minutės),
 						'many' => q({0} minutės),
 						'one' => q({0} minutė),
 						'other' => q({0} minučių),
 					},
 					'month' => {
+						'' => q(mėnesiai),
 						'few' => q({0} mėnesiai),
 						'many' => q({0} mėnesio),
 						'one' => q({0} mėnuo),
 						'other' => q({0} mėnesių),
 					},
+					'nanometer' => {
+						'' => q(nanometrai),
+						'few' => q({0} nanometrai),
+						'many' => q({0} nanometro),
+						'one' => q({0} nanometras),
+						'other' => q({0} nanometrų),
+					},
+					'nanosecond' => {
+						'' => q(nanosekundės),
+						'few' => q({0} nanosekundės),
+						'many' => q({0} nanosekundės),
+						'one' => q({0} nanosekundė),
+						'other' => q({0} nanosekundžių),
+					},
+					'nautical-mile' => {
+						'' => q(jūrmylės),
+						'few' => q({0} jūrmylės),
+						'many' => q({0} jūrmylės),
+						'one' => q({0} jūrmylė),
+						'other' => q({0} jūrmylių),
+					},
+					'ohm' => {
+						'' => q(omai),
+						'few' => q({0} omai),
+						'many' => q({0} omo),
+						'one' => q({0} omas),
+						'other' => q({0} omų),
+					},
 					'ounce' => {
+						'' => q(uncijos),
 						'few' => q({0} uncijos),
 						'many' => q({0} uncijos),
 						'one' => q({0} uncija),
 						'other' => q({0} uncijų),
 					},
+					'ounce-troy' => {
+						'' => q(Trojos uncijos),
+						'few' => q({0} Trojos uncijos),
+						'many' => q({0} Trojos uncijos),
+						'one' => q({0} Trojos uncija),
+						'other' => q({0} Trojos uncijų),
+					},
+					'parsec' => {
+						'' => q(parsekas),
+						'few' => q({0} parsekai),
+						'many' => q({0} parseko),
+						'one' => q({0} parsekas),
+						'other' => q({0} parsekų),
+					},
 					'per' => {
 						'' => q({0} per {1}),
 					},
 					'picometer' => {
+						'' => q(pikometrai),
 						'few' => q({0} pikometrai),
 						'many' => q({0} pikometro),
 						'one' => q({0} pikometras),
 						'other' => q({0} pikometrų),
 					},
+					'pint' => {
+						'' => q(pintos),
+						'few' => q({0} pintos),
+						'many' => q({0} pintos),
+						'one' => q({0} pinta),
+						'other' => q({0} pintų),
+					},
 					'pound' => {
+						'' => q(svarai),
 						'few' => q({0} svarai),
 						'many' => q({0} svaro),
 						'one' => q({0} svaras),
 						'other' => q({0} svarų),
 					},
+					'pound-per-square-inch' => {
+						'' => q(svarai kv. colyje),
+						'few' => q({0} svarai kv. colyje),
+						'many' => q({0} svaro kv. colyje),
+						'one' => q({0} svaras kv. colyje),
+						'other' => q({0} svarų kv. colyje),
+					},
+					'quart' => {
+						'' => q(kvortos),
+						'few' => q({0} kvortos),
+						'many' => q({0} kvortos),
+						'one' => q({0} kvorta),
+						'other' => q({0} kvortų),
+					},
+					'radian' => {
+						'' => q(radianai),
+						'few' => q({0} radianai),
+						'many' => q({0} radiano),
+						'one' => q({0} radianas),
+						'other' => q({0} radianų),
+					},
 					'second' => {
+						'' => q({0}/s),
 						'few' => q({0} sekundės),
 						'many' => q({0} sekundės),
 						'one' => q({0} sekundė),
 						'other' => q({0} sekundžių),
 					},
+					'square-centimeter' => {
+						'' => q(kvadratiniai centimetrai),
+						'few' => q({0} kvadratiniai centimetrai),
+						'many' => q({0} kvadratinio centimetro),
+						'one' => q({0} kvadratinis centimetras),
+						'other' => q({0} kvadratinių centimetrų),
+					},
 					'square-foot' => {
+						'' => q(kvadratinės pėdos),
 						'few' => q({0} kvadratinės pėdos),
 						'many' => q({0} kvadratinės pėdos),
 						'one' => q({0} kvadratinė pėda),
 						'other' => q({0} kvadratinių pėdų),
 					},
+					'square-inch' => {
+						'' => q(kvadratiniai coliai),
+						'few' => q({0} kvadratiniai coliai),
+						'many' => q({0} kvadratinio colio),
+						'one' => q({0} kvadratinis colis),
+						'other' => q({0} kvadratinių colių),
+					},
 					'square-kilometer' => {
+						'' => q(kvadratiniai kilometrai),
 						'few' => q({0} kvadratiniai kilometrai),
 						'many' => q({0} kvadratinio kilometro),
 						'one' => q({0} kvadratinis kilometras),
 						'other' => q({0} kvadratinių kilometrų),
 					},
 					'square-meter' => {
+						'' => q(kvadratiniai metrai),
 						'few' => q({0} kvadratiniai metrai),
 						'many' => q({0} kvadratinio metro),
 						'one' => q({0} kvadratinis metras),
 						'other' => q({0} kvadratinių metrų),
 					},
 					'square-mile' => {
+						'' => q(kvadratinės mylios),
 						'few' => q({0} kvadratinės mylios),
 						'many' => q({0} kvadratinės mylios),
 						'one' => q({0} kvadratinė mylia),
 						'other' => q({0} kvadratinių mylių),
 					},
+					'square-yard' => {
+						'' => q(kvadratiniai jardai),
+						'few' => q({0} kvadratiniai jardai),
+						'many' => q({0} kvadratinio jardo),
+						'one' => q({0} kvadratinis jardas),
+						'other' => q({0} yd²),
+					},
+					'stone' => {
+						'' => q(stonai),
+						'few' => q({0} stonai),
+						'many' => q({0} stono),
+						'one' => q({0} stonas),
+						'other' => q({0} stonų),
+					},
+					'tablespoon' => {
+						'' => q(valgomieji šaukštai),
+						'few' => q({0} valgomieji šaukštai),
+						'many' => q({0} valgomojo šaukšto),
+						'one' => q({0} valgomasis šaukštas),
+						'other' => q({0} valgomųjų šaukštų),
+					},
+					'teaspoon' => {
+						'' => q(arbatiniai šaukšteliai),
+						'few' => q({0} arbatiniai šaukšteliai),
+						'many' => q({0} arbatinio šaukštelio),
+						'one' => q({0} arbatinis šaukštelis),
+						'other' => q({0} arbatinių šaukštelių),
+					},
+					'terabit' => {
+						'' => q(terabitai),
+						'few' => q({0} terabitai),
+						'many' => q({0} terabito),
+						'one' => q({0} terabitas),
+						'other' => q({0} terabitų),
+					},
+					'terabyte' => {
+						'' => q(terabaitai),
+						'few' => q({0} terabaitai),
+						'many' => q({0} terabaito),
+						'one' => q({0} terabaitas),
+						'other' => q({0} terabaitų),
+					},
+					'ton' => {
+						'' => q(tonos),
+						'few' => q({0} tonos),
+						'many' => q({0} tonos),
+						'one' => q({0} tona),
+						'other' => q({0} tonų),
+					},
+					'volt' => {
+						'' => q(voltai),
+						'few' => q({0} voltai),
+						'many' => q({0} volto),
+						'one' => q({0} voltas),
+						'other' => q({0} voltų),
+					},
 					'watt' => {
+						'' => q(vatai),
 						'few' => q({0} vatai),
 						'many' => q({0} vato),
 						'one' => q({0} vatas),
 						'other' => q({0} vatų),
 					},
 					'week' => {
+						'' => q(savaitės),
 						'few' => q({0} savaitės),
 						'many' => q({0} savaitės),
 						'one' => q({0} savaitė),
 						'other' => q({0} savaičių),
 					},
 					'yard' => {
+						'' => q(jardai),
 						'few' => q({0} jardai),
 						'many' => q({0} jardo),
 						'one' => q({0} jardas),
 						'other' => q({0} jardų),
 					},
 					'year' => {
+						'' => q(metai),
 						'few' => q({0} metai),
 						'many' => q({0} metų),
 						'one' => q({0} metai),
@@ -2180,6 +2909,13 @@ has 'units' => (
 						'one' => q({0} akr.),
 						'other' => q({0} akr.),
 					},
+					'acre-foot' => {
+						'' => q(ft akre),
+						'few' => q({0} ft akre),
+						'many' => q({0} ft akre),
+						'one' => q({0} ft akre),
+						'other' => q({0} ft akre),
+					},
 					'arc-minute' => {
 						'few' => q({0}′),
 						'many' => q({0}′),
@@ -2192,13 +2928,22 @@ has 'units' => (
 						'one' => q({0}″),
 						'other' => q({0}″),
 					},
+					'bushel' => {
+						'' => q(bu),
+						'few' => q({0} bu),
+						'many' => q({0} bu),
+						'one' => q({0} bu),
+						'other' => q({0} bu),
+					},
 					'celsius' => {
+						'' => q(°C),
 						'few' => q({0}°),
 						'many' => q({0}°),
 						'one' => q({0}°),
 						'other' => q({0}°),
 					},
 					'centimeter' => {
+						'' => q(cm),
 						'few' => q({0} cm),
 						'many' => q({0} cm),
 						'one' => q({0} cm),
@@ -2217,6 +2962,7 @@ has 'units' => (
 						'other' => q({0} mi³),
 					},
 					'day' => {
+						'' => q(diena),
 						'few' => q({0} d.),
 						'many' => q({0} d.),
 						'one' => q({0} d.),
@@ -2234,11 +2980,31 @@ has 'units' => (
 						'one' => q({0}°F),
 						'other' => q({0}°F),
 					},
+					'fathom' => {
+						'' => q(ftm),
+						'few' => q({0} ftm),
+						'many' => q({0} ftm),
+						'one' => q({0} ftm),
+						'other' => q({0} ftm),
+					},
+					'fluid-ounce' => {
+						'few' => q({0} fl oz),
+						'many' => q({0} fl oz),
+						'one' => q({0} fl oz),
+						'other' => q({0} fl oz),
+					},
 					'foot' => {
 						'few' => q({0} ft),
 						'many' => q({0} ft),
 						'one' => q({0} ft),
 						'other' => q({0} ft),
+					},
+					'furlong' => {
+						'' => q(fur),
+						'few' => q({0} fur),
+						'many' => q({0} fur),
+						'one' => q({0} fur),
+						'other' => q({0} fur),
 					},
 					'g-force' => {
 						'few' => q({0} G),
@@ -2247,6 +3013,7 @@ has 'units' => (
 						'other' => q({0} G),
 					},
 					'gram' => {
+						'' => q(g),
 						'few' => q({0} g),
 						'many' => q({0} g),
 						'one' => q({0} g),
@@ -2271,6 +3038,7 @@ has 'units' => (
 						'other' => q({0} AG),
 					},
 					'hour' => {
+						'' => q(valanda),
 						'few' => q({0} h),
 						'many' => q({0} h),
 						'one' => q({0} h),
@@ -2288,19 +3056,29 @@ has 'units' => (
 						'one' => q({0} inHg),
 						'other' => q({0} inHg),
 					},
+					'kelvin' => {
+						'' => q(K),
+						'few' => q({0} K),
+						'many' => q({0} K),
+						'one' => q({0} K),
+						'other' => q({0} K),
+					},
 					'kilogram' => {
-						'few' => q({0}kg),
-						'many' => q({0}kg),
-						'one' => q({0}kg),
-						'other' => q({0}kg),
+						'' => q(kg),
+						'few' => q({0} kg),
+						'many' => q({0} kg),
+						'one' => q({0} kg),
+						'other' => q({0} kg),
 					},
 					'kilometer' => {
+						'' => q(km),
 						'few' => q({0} km),
 						'many' => q({0} km),
 						'one' => q({0} km),
 						'other' => q({0} km),
 					},
 					'kilometer-per-hour' => {
+						'' => q(km/h),
 						'few' => q({0} km/h),
 						'many' => q({0} km/h),
 						'one' => q({0} km/h),
@@ -2319,12 +3097,14 @@ has 'units' => (
 						'other' => q({0} šm.),
 					},
 					'liter' => {
+						'' => q(l),
 						'few' => q({0} l),
 						'many' => q({0} l),
 						'one' => q({0} l),
 						'other' => q({0} l),
 					},
 					'meter' => {
+						'' => q(m),
 						'few' => q({0} m),
 						'many' => q({0} m),
 						'one' => q({0} m),
@@ -2342,6 +3122,12 @@ has 'units' => (
 						'one' => q({0} my),
 						'other' => q({0} my),
 					},
+					'mile-per-gallon' => {
+						'few' => q({0} mi/gal),
+						'many' => q({0} mi/gal),
+						'one' => q({0} mi/gal),
+						'other' => q({0} mi/gal),
+					},
 					'mile-per-hour' => {
 						'few' => q({0} my/h),
 						'many' => q({0} my/h),
@@ -2355,24 +3141,34 @@ has 'units' => (
 						'other' => q({0} mbar),
 					},
 					'millimeter' => {
+						'' => q(mm),
 						'few' => q({0} mm),
 						'many' => q({0} mm),
 						'one' => q({0} mm),
 						'other' => q({0} mm),
 					},
+					'millimeter-of-mercury' => {
+						'few' => q({0} mm Hg),
+						'many' => q({0} mm Hg),
+						'one' => q({0} mm Hg),
+						'other' => q({0} mm Hg),
+					},
 					'millisecond' => {
+						'' => q(milisek.),
 						'few' => q({0} ms),
 						'many' => q({0} ms),
 						'one' => q({0} ms),
 						'other' => q({0} ms),
 					},
 					'minute' => {
+						'' => q(min.),
 						'few' => q({0} min.),
 						'many' => q({0} min.),
 						'one' => q({0} min.),
 						'other' => q({0} min.),
 					},
 					'month' => {
+						'' => q(mėnuo),
 						'few' => q({0} mėn.),
 						'many' => q({0} mėn.),
 						'one' => q({0} mėn.),
@@ -2399,7 +3195,14 @@ has 'units' => (
 						'one' => q({0} lb),
 						'other' => q({0} lb),
 					},
+					'quart' => {
+						'few' => q({0} kvortos),
+						'many' => q({0} kvortos),
+						'one' => q({0} kvorta),
+						'other' => q({0} kvortų),
+					},
 					'second' => {
+						'' => q(sek.),
 						'few' => q({0} s),
 						'many' => q({0} s),
 						'one' => q({0} s),
@@ -2429,6 +3232,13 @@ has 'units' => (
 						'one' => q({0} mi²),
 						'other' => q({0} mi²),
 					},
+					'stone' => {
+						'' => q(st),
+						'few' => q({0} st),
+						'many' => q({0} st),
+						'one' => q({0} st),
+						'other' => q({0} st),
+					},
 					'watt' => {
 						'few' => q({0} W),
 						'many' => q({0} W),
@@ -2436,6 +3246,7 @@ has 'units' => (
 						'other' => q({0} W),
 					},
 					'week' => {
+						'' => q(sav.),
 						'few' => q({0} sav.),
 						'many' => q({0} sav.),
 						'one' => q({0} sav.),
@@ -2448,6 +3259,7 @@ has 'units' => (
 						'other' => q({0} yd),
 					},
 					'year' => {
+						'' => q(metai),
 						'few' => q({0} m.),
 						'many' => q({0} m.),
 						'one' => q({0} m.),
@@ -2456,279 +3268,850 @@ has 'units' => (
 				},
 				'short' => {
 					'acre' => {
-						'few' => q({0} akrai),
-						'many' => q({0} akro),
-						'one' => q({0} akras),
-						'other' => q({0} akrų),
+						'' => q(a.),
+						'few' => q({0} a.),
+						'many' => q({0} a.),
+						'one' => q({0} a.),
+						'other' => q({0} a.),
+					},
+					'acre-foot' => {
+						'' => q(ft akre),
+						'few' => q({0} ft akre),
+						'many' => q({0} ft akre),
+						'one' => q({0} ft akre),
+						'other' => q({0} ft akre),
+					},
+					'ampere' => {
+						'' => q(A),
+						'few' => q({0} A),
+						'many' => q({0} A),
+						'one' => q({0} A),
+						'other' => q({0} A),
 					},
 					'arc-minute' => {
+						'' => q(kampo minutės),
 						'few' => q({0}′),
 						'many' => q({0}′),
 						'one' => q({0}′),
 						'other' => q({0}′),
 					},
 					'arc-second' => {
+						'' => q(kampo sekundės),
 						'few' => q({0}″),
 						'many' => q({0}″),
 						'one' => q({0}″),
 						'other' => q({0}″),
 					},
+					'astronomical-unit' => {
+						'' => q(AV),
+						'few' => q({0} AV),
+						'many' => q({0} AV),
+						'one' => q({0} AV),
+						'other' => q({0} AV),
+					},
+					'bit' => {
+						'' => q(bitai),
+						'few' => q({0} bitai),
+						'many' => q({0} bito),
+						'one' => q({0} bitas),
+						'other' => q({0} bitų),
+					},
+					'bushel' => {
+						'' => q(bu),
+						'few' => q({0} bu),
+						'many' => q({0} bu),
+						'one' => q({0} bu),
+						'other' => q({0} bu),
+					},
+					'byte' => {
+						'' => q(B),
+						'few' => q({0} B),
+						'many' => q({0} B),
+						'one' => q({0} B),
+						'other' => q({0} B),
+					},
+					'calorie' => {
+						'' => q(cal),
+						'few' => q({0} cal),
+						'many' => q({0} cal),
+						'one' => q({0} cal),
+						'other' => q({0} cal),
+					},
+					'carat' => {
+						'' => q(ct),
+						'few' => q({0} ct),
+						'many' => q({0} ct),
+						'one' => q({0} ct),
+						'other' => q({0} ct),
+					},
 					'celsius' => {
+						'' => q(°C),
 						'few' => q({0}°C),
 						'many' => q({0}°C),
 						'one' => q({0}°C),
 						'other' => q({0}°C),
 					},
+					'centiliter' => {
+						'' => q(cl),
+						'few' => q({0} cl),
+						'many' => q({0} cl),
+						'one' => q({0} cl),
+						'other' => q({0} cl),
+					},
 					'centimeter' => {
+						'' => q(cm),
 						'few' => q({0} cm),
 						'many' => q({0} cm),
 						'one' => q({0} cm),
 						'other' => q({0} cm),
 					},
+					'cubic-centimeter' => {
+						'' => q(cm³),
+						'few' => q({0} cm³),
+						'many' => q({0} cm³),
+						'one' => q({0} cm³),
+						'other' => q({0} cm³),
+					},
+					'cubic-foot' => {
+						'' => q(ft³),
+						'few' => q({0} ft³),
+						'many' => q({0} ft³),
+						'one' => q({0} ft³),
+						'other' => q({0} ft³),
+					},
+					'cubic-inch' => {
+						'' => q(in³),
+						'few' => q({0} in³),
+						'many' => q({0} in³),
+						'one' => q({0} in³),
+						'other' => q({0} in³),
+					},
 					'cubic-kilometer' => {
+						'' => q(km³),
 						'few' => q({0} km³),
 						'many' => q({0} km³),
 						'one' => q({0} km³),
 						'other' => q({0} km³),
 					},
+					'cubic-meter' => {
+						'' => q(m³),
+						'few' => q({0} m³),
+						'many' => q({0} m³),
+						'one' => q({0} m³),
+						'other' => q({0} m³),
+					},
 					'cubic-mile' => {
+						'' => q(mi³),
 						'few' => q({0} mi³),
 						'many' => q({0} mi³),
 						'one' => q({0} mi³),
 						'other' => q({0} mi³),
 					},
+					'cubic-yard' => {
+						'' => q(yd³),
+						'few' => q({0} yd³),
+						'many' => q({0} yd³),
+						'one' => q({0} yd³),
+						'other' => q({0} yd³),
+					},
+					'cup' => {
+						'' => q(stikl.),
+						'few' => q({0} stikl.),
+						'many' => q({0} stikl.),
+						'one' => q({0} stikl.),
+						'other' => q({0} stikl.),
+					},
 					'day' => {
+						'' => q(dienos),
 						'few' => q({0} d.),
 						'many' => q({0} d.),
 						'one' => q({0} d.),
 						'other' => q({0} d.),
 					},
+					'deciliter' => {
+						'' => q(dl),
+						'few' => q({0} dl),
+						'many' => q({0} dl),
+						'one' => q({0} dl),
+						'other' => q({0} dl),
+					},
+					'decimeter' => {
+						'' => q(dm),
+						'few' => q({0} dm),
+						'many' => q({0} dm),
+						'one' => q({0} dm),
+						'other' => q({0} dm),
+					},
 					'degree' => {
+						'' => q(laipsniai),
 						'few' => q({0}°),
 						'many' => q({0}°),
 						'one' => q({0}°),
 						'other' => q({0}°),
 					},
 					'fahrenheit' => {
+						'' => q(°F),
 						'few' => q({0}°F),
 						'many' => q({0}°F),
 						'one' => q({0}°F),
 						'other' => q({0}°F),
 					},
+					'fathom' => {
+						'' => q(ftm),
+						'few' => q({0} ftm),
+						'many' => q({0} ftm),
+						'one' => q({0} ftm),
+						'other' => q({0} ftm),
+					},
+					'fluid-ounce' => {
+						'' => q(skysčio oz),
+						'few' => q({0} skysčio oz),
+						'many' => q({0} skysčio oz),
+						'one' => q({0} skysčio oz),
+						'other' => q({0} skysčio oz),
+					},
+					'foodcalorie' => {
+						'' => q(cal),
+						'few' => q({0} cal),
+						'many' => q({0} cal),
+						'one' => q({0} cal),
+						'other' => q({0} cal),
+					},
 					'foot' => {
+						'' => q(pėda),
 						'few' => q({0} ft),
 						'many' => q({0} ft),
 						'one' => q({0} ft),
 						'other' => q({0} ft),
 					},
+					'furlong' => {
+						'' => q(fur),
+						'few' => q({0} fur),
+						'many' => q({0} fur),
+						'one' => q({0} fur),
+						'other' => q({0} fur),
+					},
 					'g-force' => {
+						'' => q(G),
 						'few' => q({0} G),
 						'many' => q({0} G),
 						'one' => q({0} G),
 						'other' => q({0} G),
 					},
+					'gallon' => {
+						'' => q(gal),
+						'few' => q({0} gal),
+						'many' => q({0} gal),
+						'one' => q({0} gal),
+						'other' => q({0} gal),
+					},
+					'gigabit' => {
+						'' => q(Gb),
+						'few' => q({0} Gb),
+						'many' => q({0} Gb),
+						'one' => q({0} Gb),
+						'other' => q({0} Gb),
+					},
+					'gigabyte' => {
+						'' => q(GB),
+						'few' => q({0} GB),
+						'many' => q({0} GB),
+						'one' => q({0} GB),
+						'other' => q({0} GB),
+					},
+					'gigahertz' => {
+						'' => q(GHz),
+						'few' => q({0} GHz),
+						'many' => q({0} GHz),
+						'one' => q({0} GHz),
+						'other' => q({0} GHz),
+					},
+					'gigawatt' => {
+						'' => q(GW),
+						'few' => q({0} GW),
+						'many' => q({0} GW),
+						'one' => q({0} GW),
+						'other' => q({0} GW),
+					},
 					'gram' => {
+						'' => q(g),
 						'few' => q({0} g),
 						'many' => q({0} g),
 						'one' => q({0} g),
 						'other' => q({0} g),
 					},
 					'hectare' => {
+						'' => q(ha),
 						'few' => q({0} ha),
 						'many' => q({0} ha),
 						'one' => q({0} ha),
 						'other' => q({0} ha),
 					},
+					'hectoliter' => {
+						'' => q(hl),
+						'few' => q({0} hl),
+						'many' => q({0} hl),
+						'one' => q({0} hl),
+						'other' => q({0} hl),
+					},
 					'hectopascal' => {
+						'' => q(hPa),
 						'few' => q({0} hPa),
 						'many' => q({0} hPa),
 						'one' => q({0} hPa),
 						'other' => q({0} hPa),
 					},
+					'hertz' => {
+						'' => q(Hz),
+						'few' => q({0} Hz),
+						'many' => q({0} Hz),
+						'one' => q({0} Hz),
+						'other' => q({0} Hz),
+					},
 					'horsepower' => {
+						'' => q(AG),
 						'few' => q({0} AG),
 						'many' => q({0} AG),
 						'one' => q({0} AG),
 						'other' => q({0} AG),
 					},
 					'hour' => {
+						'' => q({0}/h),
 						'few' => q({0} val.),
 						'many' => q({0} val.),
 						'one' => q({0} val.),
 						'other' => q({0} val.),
 					},
 					'inch' => {
+						'' => q(coliai),
 						'few' => q({0} in),
 						'many' => q({0} in),
 						'one' => q({0} in),
 						'other' => q({0} in),
 					},
 					'inch-hg' => {
+						'' => q(inHg),
 						'few' => q({0} inHg),
 						'many' => q({0} inHg),
 						'one' => q({0} inHg),
 						'other' => q({0} inHg),
 					},
+					'joule' => {
+						'' => q(J),
+						'few' => q({0} J),
+						'many' => q({0} J),
+						'one' => q({0} J),
+						'other' => q({0} J),
+					},
+					'karat' => {
+						'' => q(kt),
+						'few' => q({0} kt),
+						'many' => q({0} kt),
+						'one' => q({0} kt),
+						'other' => q({0} kt),
+					},
+					'kelvin' => {
+						'' => q(K),
+						'few' => q({0} K),
+						'many' => q({0} K),
+						'one' => q({0} K),
+						'other' => q({0} K),
+					},
+					'kilobit' => {
+						'' => q(kb),
+						'few' => q({0} kb),
+						'many' => q({0} kb),
+						'one' => q({0} kb),
+						'other' => q({0} kb),
+					},
+					'kilobyte' => {
+						'' => q(kB),
+						'few' => q({0} kB),
+						'many' => q({0} kB),
+						'one' => q({0} kB),
+						'other' => q({0} kB),
+					},
+					'kilocalorie' => {
+						'' => q(kcal),
+						'few' => q({0} kcal),
+						'many' => q({0} kcal),
+						'one' => q({0} kcal),
+						'other' => q({0} kcal),
+					},
 					'kilogram' => {
+						'' => q(kg),
 						'few' => q({0} kg),
 						'many' => q({0} kg),
 						'one' => q({0} kg),
 						'other' => q({0} kg),
 					},
+					'kilohertz' => {
+						'' => q(kHz),
+						'few' => q({0} kHz),
+						'many' => q({0} kHz),
+						'one' => q({0} kHz),
+						'other' => q({0} kHz),
+					},
+					'kilojoule' => {
+						'' => q(kJ),
+						'few' => q({0} kJ),
+						'many' => q({0} kJ),
+						'one' => q({0} kJ),
+						'other' => q({0} kJ),
+					},
 					'kilometer' => {
+						'' => q(km),
 						'few' => q({0} km),
 						'many' => q({0} km),
 						'one' => q({0} km),
 						'other' => q({0} km),
 					},
 					'kilometer-per-hour' => {
+						'' => q(km/val.),
 						'few' => q({0} km/val.),
 						'many' => q({0} km/val.),
 						'one' => q({0} km/val.),
 						'other' => q({0} km/val.),
 					},
 					'kilowatt' => {
+						'' => q(kW),
 						'few' => q({0} kW),
 						'many' => q({0} kW),
 						'one' => q({0} kW),
 						'other' => q({0} kW),
 					},
+					'kilowatt-hour' => {
+						'' => q(kWh),
+						'few' => q({0} kWh),
+						'many' => q({0} kWh),
+						'one' => q({0} kWh),
+						'other' => q({0} kWh),
+					},
 					'light-year' => {
+						'' => q(šviesmečiai),
 						'few' => q({0} šm.),
 						'many' => q({0} šm.),
 						'one' => q({0} šm.),
 						'other' => q({0} šm.),
 					},
 					'liter' => {
+						'' => q(litrai),
 						'few' => q({0} l),
 						'many' => q({0} l),
 						'one' => q({0} l),
 						'other' => q({0} l),
 					},
+					'liter-per-kilometer' => {
+						'' => q(l/km),
+						'few' => q({0} l/km),
+						'many' => q({0} l/km),
+						'one' => q({0} l/km),
+						'other' => q({0} l/km),
+					},
+					'lux' => {
+						'' => q(lx),
+						'few' => q({0} lx),
+						'many' => q({0} lx),
+						'one' => q({0} lx),
+						'other' => q({0} lx),
+					},
+					'megabit' => {
+						'' => q(Mb),
+						'few' => q({0} Mb),
+						'many' => q({0} Mb),
+						'one' => q({0} Mb),
+						'other' => q({0} Mb),
+					},
+					'megabyte' => {
+						'' => q(MB),
+						'few' => q({0} MB),
+						'many' => q({0} MB),
+						'one' => q({0} MB),
+						'other' => q({0} MB),
+					},
+					'megahertz' => {
+						'' => q(MHz),
+						'few' => q({0} MHz),
+						'many' => q({0} MHz),
+						'one' => q({0} MHz),
+						'other' => q({0} MHz),
+					},
+					'megaliter' => {
+						'' => q(Ml),
+						'few' => q({0} Ml),
+						'many' => q({0} Ml),
+						'one' => q({0} Ml),
+						'other' => q({0} Ml),
+					},
+					'megawatt' => {
+						'' => q(MW),
+						'few' => q({0} MW),
+						'many' => q({0} MW),
+						'one' => q({0} MW),
+						'other' => q({0} MW),
+					},
 					'meter' => {
+						'' => q(m),
 						'few' => q({0} m),
 						'many' => q({0} m),
 						'one' => q({0} m),
 						'other' => q({0} m),
 					},
 					'meter-per-second' => {
+						'' => q(m/sek.),
 						'few' => q({0} m/sek.),
 						'many' => q({0} m/sek.),
 						'one' => q({0} m/sek.),
 						'other' => q({0} m/sek.),
 					},
+					'meter-per-second-squared' => {
+						'' => q(m/s²),
+						'few' => q({0} m/s²),
+						'many' => q({0} m/s²),
+						'one' => q({0} m/s²),
+						'other' => q({0} m/s²),
+					},
+					'metric-ton' => {
+						'' => q(mt),
+						'few' => q({0} mt),
+						'many' => q({0} mt),
+						'one' => q({0} mt),
+						'other' => q({0} mt),
+					},
+					'microgram' => {
+						'' => q(µg),
+						'few' => q({0} µg),
+						'many' => q({0} µg),
+						'one' => q({0} µg),
+						'other' => q({0} µg),
+					},
+					'micrometer' => {
+						'' => q(µm),
+						'few' => q({0} µm),
+						'many' => q({0} µm),
+						'one' => q({0} µm),
+						'other' => q({0} µm),
+					},
+					'microsecond' => {
+						'' => q(μs),
+						'few' => q({0} μs),
+						'many' => q({0} μs),
+						'one' => q({0} μs),
+						'other' => q({0} μs),
+					},
 					'mile' => {
-						'few' => q({0} my),
-						'many' => q({0} my),
-						'one' => q({0} my),
-						'other' => q({0} my),
+						'' => q(mi),
+						'few' => q({0} mi),
+						'many' => q({0} mi),
+						'one' => q({0} mi),
+						'other' => q({0} mi),
+					},
+					'mile-per-gallon' => {
+						'' => q(mi/gal),
+						'few' => q({0} mi/gal),
+						'many' => q({0} mi/gal),
+						'one' => q({0} mi/gal),
+						'other' => q({0} mi/gal),
 					},
 					'mile-per-hour' => {
-						'few' => q({0} my/val.),
-						'many' => q({0} my/val.),
-						'one' => q({0} my/val.),
-						'other' => q({0} my/val.),
+						'' => q(mi/h),
+						'few' => q({0} mi/h),
+						'many' => q({0} mi/h),
+						'one' => q({0} mi/h),
+						'other' => q({0} mi/h),
+					},
+					'milliampere' => {
+						'' => q(mA),
+						'few' => q({0} mA),
+						'many' => q({0} mA),
+						'one' => q({0} mA),
+						'other' => q({0} mA),
 					},
 					'millibar' => {
+						'' => q(mbar),
 						'few' => q({0} mbar),
 						'many' => q({0} mbar),
 						'one' => q({0} mbar),
 						'other' => q({0} mbar),
 					},
+					'milligram' => {
+						'' => q(mg),
+						'few' => q({0} mg),
+						'many' => q({0} mg),
+						'one' => q({0} mg),
+						'other' => q({0} mg),
+					},
+					'milliliter' => {
+						'' => q(ml),
+						'few' => q({0} ml),
+						'many' => q({0} ml),
+						'one' => q({0} ml),
+						'other' => q({0} ml),
+					},
 					'millimeter' => {
+						'' => q(mm),
 						'few' => q({0} mm),
 						'many' => q({0} mm),
 						'one' => q({0} mm),
 						'other' => q({0} mm),
 					},
+					'millimeter-of-mercury' => {
+						'' => q(mm Hg),
+						'few' => q({0} mm Hg),
+						'many' => q({0} mm Hg),
+						'one' => q({0} mm Hg),
+						'other' => q({0} mm Hg),
+					},
 					'millisecond' => {
+						'' => q(milisek.),
 						'few' => q({0} ms),
 						'many' => q({0} ms),
 						'one' => q({0} ms),
 						'other' => q({0} ms),
 					},
+					'milliwatt' => {
+						'' => q(mW),
+						'few' => q({0} mW),
+						'many' => q({0} mW),
+						'one' => q({0} mW),
+						'other' => q({0} mW),
+					},
 					'minute' => {
+						'' => q(min.),
 						'few' => q({0} min.),
 						'many' => q({0} min.),
 						'one' => q({0} min.),
 						'other' => q({0} min.),
 					},
 					'month' => {
+						'' => q(mėnesiai),
 						'few' => q({0} mėn.),
 						'many' => q({0} mėn.),
 						'one' => q({0} mėn.),
 						'other' => q({0} mėn.),
 					},
+					'nanometer' => {
+						'' => q(nm),
+						'few' => q({0} nm),
+						'many' => q({0} nm),
+						'one' => q({0} nm),
+						'other' => q({0} nm),
+					},
+					'nanosecond' => {
+						'' => q(nanosek.),
+						'few' => q({0} ns),
+						'many' => q({0} ns),
+						'one' => q({0} ns),
+						'other' => q({0} ns),
+					},
+					'nautical-mile' => {
+						'' => q(M),
+						'few' => q({0} M),
+						'many' => q({0} M),
+						'one' => q({0} M),
+						'other' => q({0} M),
+					},
+					'ohm' => {
+						'' => q(Ω),
+						'few' => q({0} Ω),
+						'many' => q({0} Ω),
+						'one' => q({0} Ω),
+						'other' => q({0} Ω),
+					},
 					'ounce' => {
+						'' => q(oz),
 						'few' => q({0} oz),
 						'many' => q({0} oz),
 						'one' => q({0} oz),
 						'other' => q({0} oz),
 					},
+					'ounce-troy' => {
+						'' => q(ozt),
+						'few' => q({0} ozt),
+						'many' => q({0} ozt),
+						'one' => q({0} ozt),
+						'other' => q({0} ozt),
+					},
+					'parsec' => {
+						'' => q(pc),
+						'few' => q({0} pc),
+						'many' => q({0} pc),
+						'one' => q({0} pc),
+						'other' => q({0} pc),
+					},
 					'per' => {
 						'' => q({0}/{1}),
 					},
 					'picometer' => {
+						'' => q(pm),
 						'few' => q({0} pm),
 						'many' => q({0} pm),
 						'one' => q({0} pm),
 						'other' => q({0} pm),
 					},
+					'pint' => {
+						'' => q(pt),
+						'few' => q({0} pt),
+						'many' => q({0} pt),
+						'one' => q({0} pt),
+						'other' => q({0} pt),
+					},
 					'pound' => {
+						'' => q(lb),
 						'few' => q({0} lb),
 						'many' => q({0} lb),
 						'one' => q({0} lb),
 						'other' => q({0} lb),
 					},
+					'pound-per-square-inch' => {
+						'' => q(lb in²),
+						'few' => q({0} lb in²),
+						'many' => q({0} lb in²),
+						'one' => q({0} lb in²),
+						'other' => q({0} lb in²),
+					},
+					'quart' => {
+						'' => q(kvortos),
+						'few' => q({0} kvortos),
+						'many' => q({0} kvortos),
+						'one' => q({0} kvorta),
+						'other' => q({0} kvortų),
+					},
+					'radian' => {
+						'' => q(rad),
+						'few' => q({0} rad),
+						'many' => q({0} rad),
+						'one' => q({0} rad),
+						'other' => q({0} rad),
+					},
 					'second' => {
+						'' => q({0}/s),
 						'few' => q({0} sek.),
 						'many' => q({0} sek.),
 						'one' => q({0} sek.),
 						'other' => q({0} sek.),
 					},
+					'square-centimeter' => {
+						'' => q(cm²),
+						'few' => q({0} cm²),
+						'many' => q({0} cm²),
+						'one' => q({0} cm²),
+						'other' => q({0} cm²),
+					},
 					'square-foot' => {
+						'' => q(kv. pėda),
 						'few' => q({0} kv. pėdos),
 						'many' => q({0} kv. pėdos),
 						'one' => q({0} kv. pėda),
 						'other' => q({0} kv. pėdų),
 					},
+					'square-inch' => {
+						'' => q(in²),
+						'few' => q({0} in²),
+						'many' => q({0} in²),
+						'one' => q({0} in²),
+						'other' => q({0} in²),
+					},
 					'square-kilometer' => {
+						'' => q(kv. km),
 						'few' => q({0} kv. km),
 						'many' => q({0} kv. km),
 						'one' => q({0} kv. km),
 						'other' => q({0} kv. km),
 					},
 					'square-meter' => {
+						'' => q(kv. m),
 						'few' => q({0} kv. m),
 						'many' => q({0} kv. m),
 						'one' => q({0} kv. m),
 						'other' => q({0} kv. m),
 					},
 					'square-mile' => {
+						'' => q(kv. my),
 						'few' => q({0} kv. my),
 						'many' => q({0} kv. my),
 						'one' => q({0} kv. my),
 						'other' => q({0} kv. my),
 					},
+					'square-yard' => {
+						'' => q(yd²),
+						'few' => q({0} yd²),
+						'many' => q({0} yd²),
+						'one' => q({0} yd²),
+						'other' => q({0} yd²),
+					},
+					'stone' => {
+						'' => q(st),
+						'few' => q({0} st),
+						'many' => q({0} st),
+						'one' => q({0} st),
+						'other' => q({0} st),
+					},
+					'tablespoon' => {
+						'' => q(v. š.),
+						'few' => q({0} v. š.),
+						'many' => q({0} v. š.),
+						'one' => q({0} v. š.),
+						'other' => q({0} v. š.),
+					},
+					'teaspoon' => {
+						'' => q(a. š.),
+						'few' => q({0} a. š.),
+						'many' => q({0} a. š.),
+						'one' => q({0} a. š.),
+						'other' => q({0} a. š.),
+					},
+					'terabit' => {
+						'' => q(Tb),
+						'few' => q({0} Tb),
+						'many' => q({0} Tb),
+						'one' => q({0} Tb),
+						'other' => q({0} Tb),
+					},
+					'terabyte' => {
+						'' => q(TB),
+						'few' => q({0} TB),
+						'many' => q({0} TB),
+						'one' => q({0} TB),
+						'other' => q({0} TB),
+					},
+					'ton' => {
+						'' => q(t),
+						'few' => q({0} t),
+						'many' => q({0} t),
+						'one' => q({0} t),
+						'other' => q({0} t),
+					},
+					'volt' => {
+						'' => q(V),
+						'few' => q({0} V),
+						'many' => q({0} V),
+						'one' => q({0} V),
+						'other' => q({0} V),
+					},
 					'watt' => {
+						'' => q(W),
 						'few' => q({0} W),
 						'many' => q({0} W),
 						'one' => q({0} W),
 						'other' => q({0} W),
 					},
 					'week' => {
+						'' => q(savaitės),
 						'few' => q({0} sav.),
 						'many' => q({0} sav.),
 						'one' => q({0} sav.),
 						'other' => q({0} sav.),
 					},
 					'yard' => {
+						'' => q(yd),
 						'few' => q({0} yd),
 						'many' => q({0} yd),
 						'one' => q({0} yd),
 						'other' => q({0} yd),
 					},
 					'year' => {
+						'' => q(metai),
 						'few' => q({0} m.),
 						'many' => q({0} m.),
 						'one' => q({0} m.),
@@ -2757,14 +4140,21 @@ has 'listPatterns' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-				start => q({0}, {1}),
-				middle => q({0}, {1}),
-				end => q({0}, {1}),
-				2 => q({0} ir {1}),
+				start => q({0} {1}),
+				middle => q({0} {1}),
+				end => q({0} {1}),
+				2 => q({0} {1}),
 		} }
 );
 
 has 'default_numbering_system' => (
+	is			=> 'ro',
+	isa			=> 'Str',
+	init_arg	=> undef,
+	default		=> 'latn',
+);
+
+has native_numbering_system => (
 	is			=> 'ro',
 	isa			=> 'Str',
 	init_arg	=> undef,
@@ -3049,6 +4439,10 @@ has 'number_currency_formats' => (
 		'latn' => {
 			'pattern' => {
 				'default' => {
+					'accounting' => {
+						'negative' => '#,##0.00 ¤',
+						'positive' => '#,##0.00 ¤',
+					},
 					'standard' => {
 						'negative' => '#,##0.00 ¤',
 						'positive' => '#,##0.00 ¤',
@@ -3074,6 +4468,7 @@ has 'curriencies' => (
 			},
 		},
 		'AED' => {
+			symbol => 'AED',
 			display_name => {
 				'currency' => q(Jungtinių Arabų Emyratų dirhamas),
 				'few' => q(JAE dirhamai),
@@ -3092,6 +4487,7 @@ has 'curriencies' => (
 			},
 		},
 		'AFN' => {
+			symbol => 'AFN',
 			display_name => {
 				'currency' => q(Afganistano afganis),
 				'few' => q(Afganistano afganiai),
@@ -3110,6 +4506,7 @@ has 'curriencies' => (
 			},
 		},
 		'ALL' => {
+			symbol => 'ALL',
 			display_name => {
 				'currency' => q(Albanijos lekas),
 				'few' => q(Albanijos lekai),
@@ -3119,6 +4516,7 @@ has 'curriencies' => (
 			},
 		},
 		'AMD' => {
+			symbol => 'AMD',
 			display_name => {
 				'currency' => q(Armėnijos dramas),
 				'few' => q(Armėnijos dramai),
@@ -3128,6 +4526,7 @@ has 'curriencies' => (
 			},
 		},
 		'ANG' => {
+			symbol => 'ANG',
 			display_name => {
 				'currency' => q(Olandijos Antilų guldenas),
 				'few' => q(Olandijos Antilų guldenai),
@@ -3137,6 +4536,7 @@ has 'curriencies' => (
 			},
 		},
 		'AOA' => {
+			symbol => 'AOA',
 			display_name => {
 				'currency' => q(Angolos kvanza),
 				'few' => q(Angolos kvanzos),
@@ -3156,20 +4556,20 @@ has 'curriencies' => (
 		},
 		'AON' => {
 			display_name => {
-				'currency' => q(Angolos naujoji kvanza),
-				'few' => q(Angolos naujosios kvanzos),
-				'many' => q(Angolos naujosios kvanzos),
-				'one' => q(Angolos naujoji kvanza),
-				'other' => q(Angolos naujosios kvanzos),
+				'currency' => q(Angolos naujoji kvanza \(1990–2000\)),
+				'few' => q(Angolos naujosios kvanzos \(1990–2000\)),
+				'many' => q(Angolos naujosios kvanzos \(1990–2000\)),
+				'one' => q(Angolos naujoji kvanza \(1990–2000\)),
+				'other' => q(Angolos naujųjų kvanzų \(1990–2000\)),
 			},
 		},
 		'AOR' => {
 			display_name => {
-				'currency' => q(Angolan kwanzas reajustado \(AOR\)),
-				'few' => q(Angolan kwanzas reajustado \(AOR\)),
-				'many' => q(Angolan kwanzas reajustado \(AOR\)),
-				'one' => q(Angolan kwanzas reajustado \(AOR\)),
-				'other' => q(Angolan kwanzas reajustado \(AOR\)),
+				'currency' => q(Angolos patikslinta kvanza \(1995–1999\)),
+				'few' => q(Angolos patikslintos kvanzos \(1995–1999\)),
+				'many' => q(Angolos patikslintos kvanzos \(1995–1999\)),
+				'one' => q(Angolos patikslinta kvanza \(1995–1999\)),
+				'other' => q(Angolos patikslintų kvanzų \(1995–1999\)),
 			},
 		},
 		'ARA' => {
@@ -3183,20 +4583,20 @@ has 'curriencies' => (
 		},
 		'ARL' => {
 			display_name => {
-				'currency' => q(Argentinos pesos ley),
-				'few' => q(Argentinos pesos ley),
-				'many' => q(Argentinos pesos ley),
-				'one' => q(Argentinos pesos ley),
-				'other' => q(Argentinos pesos ley),
+				'currency' => q(Argentinos pesos ley \(1970–1983\)),
+				'few' => q(Argentinos pesos ley \(1970–1983\)),
+				'many' => q(Argentinos pesos ley \(1970–1983\)),
+				'one' => q(Argentinos pesos ley \(1970–1983\)),
+				'other' => q(Argentinos pesos ley \(1970–1983\)),
 			},
 		},
 		'ARM' => {
 			display_name => {
-				'currency' => q(Argentinos pesai moneda nacional),
-				'few' => q(Argentinos pesai moneda nacional),
-				'many' => q(Argentinos pesai moneda nacional),
-				'one' => q(Argentinos pesai moneda nacional),
-				'other' => q(Argentinos pesai moneda nacional),
+				'currency' => q(Argentinos pesai \(1881–1970\)),
+				'few' => q(Argentinos pesai \(1881–1970\)),
+				'many' => q(Argentinos peso \(1881–1970\)),
+				'one' => q(Argentinos pesas \(1881–1970\)),
+				'other' => q(Argentinos pesų \(1881–1970\)),
 			},
 		},
 		'ARP' => {
@@ -3209,6 +4609,7 @@ has 'curriencies' => (
 			},
 		},
 		'ARS' => {
+			symbol => 'ARS',
 			display_name => {
 				'currency' => q(Argentinos pesas),
 				'few' => q(Argentinos pesai),
@@ -3237,6 +4638,7 @@ has 'curriencies' => (
 			},
 		},
 		'AWG' => {
+			symbol => 'AWG',
 			display_name => {
 				'currency' => q(Arubos guldenas),
 				'few' => q(Arubos guldenai),
@@ -3255,6 +4657,7 @@ has 'curriencies' => (
 			},
 		},
 		'AZN' => {
+			symbol => 'AZN',
 			display_name => {
 				'currency' => q(Azerbaidžano manatas),
 				'few' => q(Azerbaidžano manatai),
@@ -3273,6 +4676,7 @@ has 'curriencies' => (
 			},
 		},
 		'BAM' => {
+			symbol => 'BAM',
 			display_name => {
 				'currency' => q(Bosnijos ir Hercegovinos konvertuojamoji markė),
 				'few' => q(Bosnijos ir Hercegovinos konvertuojamosios markės),
@@ -3291,6 +4695,7 @@ has 'curriencies' => (
 			},
 		},
 		'BBD' => {
+			symbol => 'BBD',
 			display_name => {
 				'currency' => q(Barbadoso doleris),
 				'few' => q(Barbadoso doleriai),
@@ -3300,6 +4705,7 @@ has 'curriencies' => (
 			},
 		},
 		'BDT' => {
+			symbol => 'BDT',
 			display_name => {
 				'currency' => q(Bangladešo taka),
 				'few' => q(Bangladešo takos),
@@ -3354,6 +4760,7 @@ has 'curriencies' => (
 			},
 		},
 		'BGN' => {
+			symbol => 'BGN',
 			display_name => {
 				'currency' => q(Bulgarijos levas),
 				'few' => q(Bulgarijos levai),
@@ -3372,6 +4779,7 @@ has 'curriencies' => (
 			},
 		},
 		'BHD' => {
+			symbol => 'BHD',
 			display_name => {
 				'currency' => q(Bahreino dinaras),
 				'few' => q(Bahreino dinarai),
@@ -3381,6 +4789,7 @@ has 'curriencies' => (
 			},
 		},
 		'BIF' => {
+			symbol => 'BIF',
 			display_name => {
 				'currency' => q(Burundžio frankas),
 				'few' => q(Burundžio frankai),
@@ -3390,6 +4799,7 @@ has 'curriencies' => (
 			},
 		},
 		'BMD' => {
+			symbol => 'BMD',
 			display_name => {
 				'currency' => q(Bermudos doleris),
 				'few' => q(Bermudos doleriai),
@@ -3399,6 +4809,7 @@ has 'curriencies' => (
 			},
 		},
 		'BND' => {
+			symbol => 'BND',
 			display_name => {
 				'currency' => q(Brunėjaus doleris),
 				'few' => q(Brunėjaus doleriai),
@@ -3408,6 +4819,7 @@ has 'curriencies' => (
 			},
 		},
 		'BOB' => {
+			symbol => 'BOB',
 			display_name => {
 				'currency' => q(Bolivijos bolivijanas),
 				'few' => q(Bolivijos bolivijanai),
@@ -3445,20 +4857,20 @@ has 'curriencies' => (
 		},
 		'BRB' => {
 			display_name => {
-				'currency' => q(Brazilijos naujasis kruzeiras),
-				'few' => q(Brazilijos naujieji kruzeirai),
-				'many' => q(Brazilijos naujieji kruzeirai),
-				'one' => q(Brazilijos naujasis kruzeiras),
-				'other' => q(Brazilijos naujieji kruzeirai),
+				'currency' => q(Brazilijos naujieji kruzeirai \(1967–1986\)),
+				'few' => q(Brazilijos naujieji kruzeirai \(1967–1986\)),
+				'many' => q(Brazilijos naujasis kruzeiro \(1967–1986\)),
+				'one' => q(Brazilijos naujasis kruzeiras \(1967–1986\)),
+				'other' => q(Brazilijos naujųjų kruzeirų \(1967–1986\)),
 			},
 		},
 		'BRC' => {
 			display_name => {
-				'currency' => q(Brazilijos kruzadas),
-				'few' => q(Brazilijos kruzadai),
-				'many' => q(Brazilijos kruzadai),
-				'one' => q(Brazilijos kruzadas),
-				'other' => q(Brazilijos kruzadai),
+				'currency' => q(Brazilijos kruzadai \(1986–1989\)),
+				'few' => q(Brazilijos kruzadai \(1986–1989\)),
+				'many' => q(Brazilijos kruzado \(1986–1989\)),
+				'one' => q(Brazilijos kruzadas \(1986–1989\)),
+				'other' => q(Brazilijos kruzadų \(1986–1989\)),
 			},
 		},
 		'BRE' => {
@@ -3482,32 +4894,33 @@ has 'curriencies' => (
 		},
 		'BRN' => {
 			display_name => {
-				'currency' => q(Brazilijos naujasis kruzadas),
-				'few' => q(Brazilijos naujieji kruzadai),
-				'many' => q(Brazilijos naujieji kruzadai),
-				'one' => q(Brazilijos naujasis kruzadas),
-				'other' => q(Brazilijos naujieji kruzadai),
+				'currency' => q(Brazilijos naujiejis kruzadai \(1989–1990\)),
+				'few' => q(Brazilijos naujieji kruzadai \(1989–1990\)),
+				'many' => q(Brazilijos naujojo kruzado \(1989–1990\)),
+				'one' => q(Brazilijos naujasis kruzadas \(1989–1990\)),
+				'other' => q(Brazilijos naujųjų kruzadų \(1989–1990\)),
 			},
 		},
 		'BRR' => {
 			display_name => {
-				'currency' => q(Brazilijos kruzeiras),
-				'few' => q(Brazilijos kruzeirai),
-				'many' => q(Brazilijos kruzeirai),
-				'one' => q(Brazilijos kruzeiras),
-				'other' => q(Brazilijos kruzeirai),
+				'currency' => q(Brazilijos kruzeiras \(1993–1994\)),
+				'few' => q(Brazilijos kruzeirai \(1993–1994\)),
+				'many' => q(Brazilijos kruzeiro \(1993–1994\)),
+				'one' => q(Brazilijos kruzeiras \(1993–1994\)),
+				'other' => q(Brazilijos kruzeirų \(1993–1994\)),
 			},
 		},
 		'BRZ' => {
 			display_name => {
-				'currency' => q(Senasis brazilų cruzeiros),
-				'few' => q(Senasis brazilų cruzeiros),
-				'many' => q(Senasis brazilų cruzeiros),
-				'one' => q(Senasis brazilų cruzeiros),
-				'other' => q(Senasis brazilų cruzeiros),
+				'currency' => q(Brazilijos kruzeirai \(1942–1967\)),
+				'few' => q(Brazilijos kruzeirai \(1942–1967\)),
+				'many' => q(Brazilijos kruzeiro \(1942–1967\)),
+				'one' => q(Brazilijos kruzeiras \(1942–1967\)),
+				'other' => q(Brazilijos kruzeirų \(1942–1967\)),
 			},
 		},
 		'BSD' => {
+			symbol => 'BSD',
 			display_name => {
 				'currency' => q(Bahamų doleris),
 				'few' => q(Bahamų doleriai),
@@ -3517,6 +4930,7 @@ has 'curriencies' => (
 			},
 		},
 		'BTN' => {
+			symbol => 'BTN',
 			display_name => {
 				'currency' => q(Butano ngultrumas),
 				'few' => q(Butano ngultrumai),
@@ -3535,6 +4949,7 @@ has 'curriencies' => (
 			},
 		},
 		'BWP' => {
+			symbol => 'BWP',
 			display_name => {
 				'currency' => q(Botsvanos pula),
 				'few' => q(Botsvanos pulos),
@@ -3553,6 +4968,7 @@ has 'curriencies' => (
 			},
 		},
 		'BYR' => {
+			symbol => 'BYR',
 			display_name => {
 				'currency' => q(Baltarusijos rublis),
 				'few' => q(Baltarusijos rubliai),
@@ -3562,6 +4978,7 @@ has 'curriencies' => (
 			},
 		},
 		'BZD' => {
+			symbol => 'BZD',
 			display_name => {
 				'currency' => q(Belizo doleris),
 				'few' => q(Belizo doleriai),
@@ -3581,6 +4998,7 @@ has 'curriencies' => (
 			},
 		},
 		'CDF' => {
+			symbol => 'CDF',
 			display_name => {
 				'currency' => q(Kongo frankas),
 				'few' => q(Kongo frankai),
@@ -3599,6 +5017,7 @@ has 'curriencies' => (
 			},
 		},
 		'CHF' => {
+			symbol => 'CHF',
 			display_name => {
 				'currency' => q(Šveicarijos frankas),
 				'few' => q(Šveicarijos frankai),
@@ -3635,6 +5054,7 @@ has 'curriencies' => (
 			},
 		},
 		'CLP' => {
+			symbol => 'CLP',
 			display_name => {
 				'currency' => q(Čilės pesas),
 				'few' => q(Čilės pesai),
@@ -3663,6 +5083,7 @@ has 'curriencies' => (
 			},
 		},
 		'COP' => {
+			symbol => 'COP',
 			display_name => {
 				'currency' => q(Kolumbijos pesas),
 				'few' => q(Kolumbijos pesai),
@@ -3681,6 +5102,7 @@ has 'curriencies' => (
 			},
 		},
 		'CRC' => {
+			symbol => 'CRC',
 			display_name => {
 				'currency' => q(Kosta Rikos kolonas),
 				'few' => q(Kosta Rikos kolonai),
@@ -3708,6 +5130,7 @@ has 'curriencies' => (
 			},
 		},
 		'CUC' => {
+			symbol => 'CUC',
 			display_name => {
 				'currency' => q(Kubos konvertuojamasis pesas),
 				'few' => q(Kubos konvertuojamieji pesai),
@@ -3717,6 +5140,7 @@ has 'curriencies' => (
 			},
 		},
 		'CUP' => {
+			symbol => 'CUP',
 			display_name => {
 				'currency' => q(Kubos pesas),
 				'few' => q(Kubos pesai),
@@ -3726,6 +5150,7 @@ has 'curriencies' => (
 			},
 		},
 		'CVE' => {
+			symbol => 'CVE',
 			display_name => {
 				'currency' => q(Žaliojo Kyšulio eskudas),
 				'few' => q(Žaliojo Kyšulio eskudai),
@@ -3744,6 +5169,7 @@ has 'curriencies' => (
 			},
 		},
 		'CZK' => {
+			symbol => 'CZK',
 			display_name => {
 				'currency' => q(Čekijos krona),
 				'few' => q(Čekijos kronos),
@@ -3771,6 +5197,7 @@ has 'curriencies' => (
 			},
 		},
 		'DJF' => {
+			symbol => 'DJF',
 			display_name => {
 				'currency' => q(Džibučio frankas),
 				'few' => q(Džibučio frankai),
@@ -3780,6 +5207,7 @@ has 'curriencies' => (
 			},
 		},
 		'DKK' => {
+			symbol => 'DKK',
 			display_name => {
 				'currency' => q(Danijos krona),
 				'few' => q(Danijos kronos),
@@ -3789,6 +5217,7 @@ has 'curriencies' => (
 			},
 		},
 		'DOP' => {
+			symbol => 'DOP',
 			display_name => {
 				'currency' => q(Dominikos pesas),
 				'few' => q(Dominikos pesai),
@@ -3798,6 +5227,7 @@ has 'curriencies' => (
 			},
 		},
 		'DZD' => {
+			symbol => 'DZD',
 			display_name => {
 				'currency' => q(Alžyro dinaras),
 				'few' => q(Alžyro dinarai),
@@ -3834,6 +5264,7 @@ has 'curriencies' => (
 			},
 		},
 		'EGP' => {
+			symbol => 'EGP',
 			display_name => {
 				'currency' => q(Egipto svaras),
 				'few' => q(Egipto svarai),
@@ -3843,6 +5274,7 @@ has 'curriencies' => (
 			},
 		},
 		'ERN' => {
+			symbol => 'ERN',
 			display_name => {
 				'currency' => q(Eritrėjos nakfa),
 				'few' => q(Eritrėjos nakfos),
@@ -3879,6 +5311,7 @@ has 'curriencies' => (
 			},
 		},
 		'ETB' => {
+			symbol => 'ETB',
 			display_name => {
 				'currency' => q(Etiopijos biras),
 				'few' => q(Etiopijos birai),
@@ -3888,6 +5321,7 @@ has 'curriencies' => (
 			},
 		},
 		'EUR' => {
+			symbol => 'EUR',
 			display_name => {
 				'currency' => q(Euras),
 				'few' => q(eurai),
@@ -3906,6 +5340,7 @@ has 'curriencies' => (
 			},
 		},
 		'FJD' => {
+			symbol => 'FJD',
 			display_name => {
 				'currency' => q(Fidžio doleris),
 				'few' => q(Fidžio doleriai),
@@ -3915,6 +5350,7 @@ has 'curriencies' => (
 			},
 		},
 		'FKP' => {
+			symbol => 'FKP',
 			display_name => {
 				'currency' => q(Falklando salų svaras),
 				'few' => q(Falklando salų svarai),
@@ -3952,6 +5388,7 @@ has 'curriencies' => (
 			},
 		},
 		'GEL' => {
+			symbol => 'GEL',
 			display_name => {
 				'currency' => q(Gruzijos laris),
 				'few' => q(Gruzijos lariai),
@@ -3970,6 +5407,7 @@ has 'curriencies' => (
 			},
 		},
 		'GHS' => {
+			symbol => 'GHS',
 			display_name => {
 				'currency' => q(Ganos sedis),
 				'few' => q(Ganos sedžiai),
@@ -3979,6 +5417,7 @@ has 'curriencies' => (
 			},
 		},
 		'GIP' => {
+			symbol => 'GIP',
 			display_name => {
 				'currency' => q(Gibraltaro svaras),
 				'few' => q(Gibraltaro svarai),
@@ -3988,6 +5427,7 @@ has 'curriencies' => (
 			},
 		},
 		'GMD' => {
+			symbol => 'GMD',
 			display_name => {
 				'currency' => q(Gambijos dalasis),
 				'few' => q(Gambijos dalasiai),
@@ -3997,6 +5437,7 @@ has 'curriencies' => (
 			},
 		},
 		'GNF' => {
+			symbol => 'GNF',
 			display_name => {
 				'currency' => q(Gvinėjos frankas),
 				'few' => q(Gvinėjos frankai),
@@ -4008,10 +5449,10 @@ has 'curriencies' => (
 		'GNS' => {
 			display_name => {
 				'currency' => q(Guinean sylis),
-				'few' => q(Guinean sylis),
-				'many' => q(Guinean sylis),
-				'one' => q(Guinean syli),
-				'other' => q(Guinean sylis),
+				'few' => q(Gvinėjos syliai),
+				'many' => q(Gvinėjos sylio),
+				'one' => q(Gvinėjos sylis),
+				'other' => q(Gvinėjos sylio),
 			},
 		},
 		'GQE' => {
@@ -4033,6 +5474,7 @@ has 'curriencies' => (
 			},
 		},
 		'GTQ' => {
+			symbol => 'GTQ',
 			display_name => {
 				'currency' => q(Gvatemalos ketcalis),
 				'few' => q(Gvatemalos ketcaliai),
@@ -4060,6 +5502,7 @@ has 'curriencies' => (
 			},
 		},
 		'GYD' => {
+			symbol => 'GYD',
 			display_name => {
 				'currency' => q(Gajanos doleris),
 				'few' => q(Gajanos doleriai),
@@ -4079,6 +5522,7 @@ has 'curriencies' => (
 			},
 		},
 		'HNL' => {
+			symbol => 'HNL',
 			display_name => {
 				'currency' => q(Hondūro lempira),
 				'few' => q(Hondūro lempiros),
@@ -4097,6 +5541,7 @@ has 'curriencies' => (
 			},
 		},
 		'HRK' => {
+			symbol => 'HRK',
 			display_name => {
 				'currency' => q(Kroatijos kuna),
 				'few' => q(Kroatijos kunos),
@@ -4106,6 +5551,7 @@ has 'curriencies' => (
 			},
 		},
 		'HTG' => {
+			symbol => 'HTG',
 			display_name => {
 				'currency' => q(Haičio gurdas),
 				'few' => q(Haičio gurdai),
@@ -4115,6 +5561,7 @@ has 'curriencies' => (
 			},
 		},
 		'HUF' => {
+			symbol => 'HUF',
 			display_name => {
 				'currency' => q(Vengrijos forintas),
 				'few' => q(Vengrijos forintai),
@@ -4124,6 +5571,7 @@ has 'curriencies' => (
 			},
 		},
 		'IDR' => {
+			symbol => 'IDR',
 			display_name => {
 				'currency' => q(Indonezijos rupija),
 				'few' => q(Indonezijos rupijos),
@@ -4180,6 +5628,7 @@ has 'curriencies' => (
 			},
 		},
 		'IQD' => {
+			symbol => 'IQD',
 			display_name => {
 				'currency' => q(Irako dinaras),
 				'few' => q(Irako dinarai),
@@ -4189,6 +5638,7 @@ has 'curriencies' => (
 			},
 		},
 		'IRR' => {
+			symbol => 'IRR',
 			display_name => {
 				'currency' => q(Irano rialas),
 				'few' => q(Irano rialai),
@@ -4207,6 +5657,7 @@ has 'curriencies' => (
 			},
 		},
 		'ISK' => {
+			symbol => 'ISK',
 			display_name => {
 				'currency' => q(Islandijos krona),
 				'few' => q(Islandijos kronos),
@@ -4225,6 +5676,7 @@ has 'curriencies' => (
 			},
 		},
 		'JMD' => {
+			symbol => 'JMD',
 			display_name => {
 				'currency' => q(Jamaikos doleris),
 				'few' => q(Jamaikos doleriai),
@@ -4234,6 +5686,7 @@ has 'curriencies' => (
 			},
 		},
 		'JOD' => {
+			symbol => 'JOD',
 			display_name => {
 				'currency' => q(Jordanijos dinaras),
 				'few' => q(Jordanijos dinarai),
@@ -4253,6 +5706,7 @@ has 'curriencies' => (
 			},
 		},
 		'KES' => {
+			symbol => 'KES',
 			display_name => {
 				'currency' => q(Kenijos šilingas),
 				'few' => q(Kenijos šilingai),
@@ -4262,6 +5716,7 @@ has 'curriencies' => (
 			},
 		},
 		'KGS' => {
+			symbol => 'KGS',
 			display_name => {
 				'currency' => q(Kirgizijos somas),
 				'few' => q(Kirgizijos somai),
@@ -4271,6 +5726,7 @@ has 'curriencies' => (
 			},
 		},
 		'KHR' => {
+			symbol => 'KHR',
 			display_name => {
 				'currency' => q(Kambodžos rielis),
 				'few' => q(Kambodžos rieliai),
@@ -4280,6 +5736,7 @@ has 'curriencies' => (
 			},
 		},
 		'KMF' => {
+			symbol => 'KMF',
 			display_name => {
 				'currency' => q(Komoro frankas),
 				'few' => q(Komoro frankai),
@@ -4289,6 +5746,7 @@ has 'curriencies' => (
 			},
 		},
 		'KPW' => {
+			symbol => 'KPW',
 			display_name => {
 				'currency' => q(Šiaurės Korėjos vonas),
 				'few' => q(Šiaurės Korėjos vonai),
@@ -4326,6 +5784,7 @@ has 'curriencies' => (
 			},
 		},
 		'KWD' => {
+			symbol => 'KWD',
 			display_name => {
 				'currency' => q(Kuveito dinaras),
 				'few' => q(Kuveito dinarai),
@@ -4335,6 +5794,7 @@ has 'curriencies' => (
 			},
 		},
 		'KYD' => {
+			symbol => 'KYD',
 			display_name => {
 				'currency' => q(Kaimanų salų doleris),
 				'few' => q(Kaimanų salų doleriai),
@@ -4344,6 +5804,7 @@ has 'curriencies' => (
 			},
 		},
 		'KZT' => {
+			symbol => 'KZT',
 			display_name => {
 				'currency' => q(Kazachstano tengė),
 				'few' => q(Kazachstano tengės),
@@ -4353,6 +5814,7 @@ has 'curriencies' => (
 			},
 		},
 		'LAK' => {
+			symbol => 'LAK',
 			display_name => {
 				'currency' => q(Laoso kipas),
 				'few' => q(Laoso kipai),
@@ -4362,6 +5824,7 @@ has 'curriencies' => (
 			},
 		},
 		'LBP' => {
+			symbol => 'LBP',
 			display_name => {
 				'currency' => q(Libano svaras),
 				'few' => q(Libano svarai),
@@ -4371,6 +5834,7 @@ has 'curriencies' => (
 			},
 		},
 		'LKR' => {
+			symbol => 'LKR',
 			display_name => {
 				'currency' => q(Šri Lankos rupija),
 				'few' => q(Šri Lankos rupijos),
@@ -4380,6 +5844,7 @@ has 'curriencies' => (
 			},
 		},
 		'LRD' => {
+			symbol => 'LRD',
 			display_name => {
 				'currency' => q(Liberijos doleris),
 				'few' => q(Liberijos doleriai),
@@ -4398,7 +5863,7 @@ has 'curriencies' => (
 			},
 		},
 		'LTL' => {
-			symbol => 'Lt',
+			symbol => 'LTL',
 			display_name => {
 				'currency' => q(Lietuvos litas),
 				'few' => q(Lietuvos litai),
@@ -4444,6 +5909,7 @@ has 'curriencies' => (
 			},
 		},
 		'LVL' => {
+			symbol => 'LVL',
 			display_name => {
 				'currency' => q(Latvijos latas),
 				'few' => q(Latvijos latai),
@@ -4462,6 +5928,7 @@ has 'curriencies' => (
 			},
 		},
 		'LYD' => {
+			symbol => 'LYD',
 			display_name => {
 				'currency' => q(Libijos dinaras),
 				'few' => q(Libijos dinarai),
@@ -4471,6 +5938,7 @@ has 'curriencies' => (
 			},
 		},
 		'MAD' => {
+			symbol => 'MAD',
 			display_name => {
 				'currency' => q(Maroko dirhamas),
 				'few' => q(Maroko dirhamai),
@@ -4507,6 +5975,7 @@ has 'curriencies' => (
 			},
 		},
 		'MDL' => {
+			symbol => 'MDL',
 			display_name => {
 				'currency' => q(Moldovos lėja),
 				'few' => q(Moldovos lėjos),
@@ -4516,6 +5985,7 @@ has 'curriencies' => (
 			},
 		},
 		'MGA' => {
+			symbol => 'MGA',
 			display_name => {
 				'currency' => q(Madagaskaro ariaris),
 				'few' => q(Madagaskaro ariariai),
@@ -4534,6 +6004,7 @@ has 'curriencies' => (
 			},
 		},
 		'MKD' => {
+			symbol => 'MKD',
 			display_name => {
 				'currency' => q(Makedonijos denaras),
 				'few' => q(Makedonijos denarai),
@@ -4561,6 +6032,7 @@ has 'curriencies' => (
 			},
 		},
 		'MMK' => {
+			symbol => 'MMK',
 			display_name => {
 				'currency' => q(Mianmaro kijatas),
 				'few' => q(Mianmaro kijatai),
@@ -4570,6 +6042,7 @@ has 'curriencies' => (
 			},
 		},
 		'MNT' => {
+			symbol => 'MNT',
 			display_name => {
 				'currency' => q(Mongolijos tugrikas),
 				'few' => q(Mongolijos tugrikai),
@@ -4579,6 +6052,7 @@ has 'curriencies' => (
 			},
 		},
 		'MOP' => {
+			symbol => 'MOP',
 			display_name => {
 				'currency' => q(Makao pataka),
 				'few' => q(Makao patakos),
@@ -4588,6 +6062,7 @@ has 'curriencies' => (
 			},
 		},
 		'MRO' => {
+			symbol => 'MRO',
 			display_name => {
 				'currency' => q(Mauritanijos ugija),
 				'few' => q(Mauritanijos ugijos),
@@ -4615,6 +6090,7 @@ has 'curriencies' => (
 			},
 		},
 		'MUR' => {
+			symbol => 'MUR',
 			display_name => {
 				'currency' => q(Mauricijaus rupija),
 				'few' => q(Mauricijaus rupijos),
@@ -4623,7 +6099,17 @@ has 'curriencies' => (
 				'other' => q(Mauricijaus rupijų),
 			},
 		},
+		'MVP' => {
+			display_name => {
+				'currency' => q(Maldyvų rupija),
+				'few' => q(Maldyvų rupijos),
+				'many' => q(Maldyvų rupijos),
+				'one' => q(Maldyvų rupija),
+				'other' => q(Maldyvų rupijos),
+			},
+		},
 		'MVR' => {
+			symbol => 'MVR',
 			display_name => {
 				'currency' => q(Maldyvų rufija),
 				'few' => q(Maldyvų rufijos),
@@ -4633,6 +6119,7 @@ has 'curriencies' => (
 			},
 		},
 		'MWK' => {
+			symbol => 'MWK',
 			display_name => {
 				'currency' => q(Malavio kvača),
 				'few' => q(Malavio kvačos),
@@ -4670,6 +6157,7 @@ has 'curriencies' => (
 			},
 		},
 		'MYR' => {
+			symbol => 'MYR',
 			display_name => {
 				'currency' => q(Malaizijos ringitas),
 				'few' => q(Malaizijos ringitai),
@@ -4697,6 +6185,7 @@ has 'curriencies' => (
 			},
 		},
 		'MZN' => {
+			symbol => 'MZN',
 			display_name => {
 				'currency' => q(Mozambiko metikalis),
 				'few' => q(Mozambiko metikaliai),
@@ -4706,6 +6195,7 @@ has 'curriencies' => (
 			},
 		},
 		'NAD' => {
+			symbol => 'NAD',
 			display_name => {
 				'currency' => q(Namibijos doleris),
 				'few' => q(Namibijos doleriai),
@@ -4715,6 +6205,7 @@ has 'curriencies' => (
 			},
 		},
 		'NGN' => {
+			symbol => 'NGN',
 			display_name => {
 				'currency' => q(Nigerijos naira),
 				'few' => q(Nigerijos nairos),
@@ -4733,9 +6224,10 @@ has 'curriencies' => (
 			},
 		},
 		'NIO' => {
+			symbol => 'NIO',
 			display_name => {
 				'currency' => q(Nikaragvos kordoba),
-				'few' => q(Nikaragvos kordobai),
+				'few' => q(Nikaragvos kordobos),
 				'many' => q(Nikaragvos kordobos),
 				'one' => q(Nikaragvos kordoba),
 				'other' => q(Nikaragvos kordobų),
@@ -4751,6 +6243,7 @@ has 'curriencies' => (
 			},
 		},
 		'NOK' => {
+			symbol => 'NOK',
 			display_name => {
 				'currency' => q(Norvegijos krona),
 				'few' => q(Norvegijos kronos),
@@ -4760,6 +6253,7 @@ has 'curriencies' => (
 			},
 		},
 		'NPR' => {
+			symbol => 'NPR',
 			display_name => {
 				'currency' => q(Nepalo rupija),
 				'few' => q(Nepalo rupijos),
@@ -4779,6 +6273,7 @@ has 'curriencies' => (
 			},
 		},
 		'OMR' => {
+			symbol => 'OMR',
 			display_name => {
 				'currency' => q(Omano rialas),
 				'few' => q(Omano rialai),
@@ -4788,6 +6283,7 @@ has 'curriencies' => (
 			},
 		},
 		'PAB' => {
+			symbol => 'PAB',
 			display_name => {
 				'currency' => q(Panamos balboja),
 				'few' => q(Panamos balbojos),
@@ -4806,6 +6302,7 @@ has 'curriencies' => (
 			},
 		},
 		'PEN' => {
+			symbol => 'PEN',
 			display_name => {
 				'currency' => q(Peru naujasis solis),
 				'few' => q(Peru naujieji soliai),
@@ -4824,6 +6321,7 @@ has 'curriencies' => (
 			},
 		},
 		'PGK' => {
+			symbol => 'PGK',
 			display_name => {
 				'currency' => q(Papua Naujosios Gvinėjos kina),
 				'few' => q(Papua Naujosios Gvinėjos kinos),
@@ -4833,6 +6331,7 @@ has 'curriencies' => (
 			},
 		},
 		'PHP' => {
+			symbol => 'PHP',
 			display_name => {
 				'currency' => q(Filipinų pesas),
 				'few' => q(Filipinų pesai),
@@ -4842,6 +6341,7 @@ has 'curriencies' => (
 			},
 		},
 		'PKR' => {
+			symbol => 'PKR',
 			display_name => {
 				'currency' => q(Pakistano rupija),
 				'few' => q(Pakistano rupijos),
@@ -4851,6 +6351,7 @@ has 'curriencies' => (
 			},
 		},
 		'PLN' => {
+			symbol => 'PLN',
 			display_name => {
 				'currency' => q(Lenkijos zlotas),
 				'few' => q(Lenkijos zlotai),
@@ -4878,6 +6379,7 @@ has 'curriencies' => (
 			},
 		},
 		'PYG' => {
+			symbol => 'PYG',
 			display_name => {
 				'currency' => q(Paragvajaus guaranis),
 				'few' => q(Paragvajaus guaraniai),
@@ -4887,6 +6389,7 @@ has 'curriencies' => (
 			},
 		},
 		'QAR' => {
+			symbol => 'QAR',
 			display_name => {
 				'currency' => q(Kataro rialas),
 				'few' => q(Kataro rialai),
@@ -4914,6 +6417,7 @@ has 'curriencies' => (
 			},
 		},
 		'RON' => {
+			symbol => 'RON',
 			display_name => {
 				'currency' => q(Rumunijos lėja),
 				'few' => q(Rumunijos lėjos),
@@ -4923,6 +6427,7 @@ has 'curriencies' => (
 			},
 		},
 		'RSD' => {
+			symbol => 'RSD',
 			display_name => {
 				'currency' => q(Serbijos dinaras),
 				'few' => q(Serbijos dinarai),
@@ -4932,6 +6437,7 @@ has 'curriencies' => (
 			},
 		},
 		'RUB' => {
+			symbol => 'RUB',
 			display_name => {
 				'currency' => q(Rusijos rublis),
 				'few' => q(Rusijos rubliai),
@@ -4950,6 +6456,7 @@ has 'curriencies' => (
 			},
 		},
 		'RWF' => {
+			symbol => 'RWF',
 			display_name => {
 				'currency' => q(Ruandos frankas),
 				'few' => q(Ruandos frankai),
@@ -4959,6 +6466,7 @@ has 'curriencies' => (
 			},
 		},
 		'SAR' => {
+			symbol => 'SAR',
 			display_name => {
 				'currency' => q(Saudo Arabijos rijalas),
 				'few' => q(Saudo Arabijos rijalai),
@@ -4968,6 +6476,7 @@ has 'curriencies' => (
 			},
 		},
 		'SBD' => {
+			symbol => 'SBD',
 			display_name => {
 				'currency' => q(Saliamono salų doleris),
 				'few' => q(Saliamono salų doleriai),
@@ -4977,6 +6486,7 @@ has 'curriencies' => (
 			},
 		},
 		'SCR' => {
+			symbol => 'SCR',
 			display_name => {
 				'currency' => q(Seišelių rupija),
 				'few' => q(Seišelių rupijos),
@@ -4995,6 +6505,7 @@ has 'curriencies' => (
 			},
 		},
 		'SDG' => {
+			symbol => 'SDG',
 			display_name => {
 				'currency' => q(Sudano svaras),
 				'few' => q(Sudano svarai),
@@ -5013,6 +6524,7 @@ has 'curriencies' => (
 			},
 		},
 		'SEK' => {
+			symbol => 'SEK',
 			display_name => {
 				'currency' => q(Švedijos krona),
 				'few' => q(Švedijos kronos),
@@ -5022,6 +6534,7 @@ has 'curriencies' => (
 			},
 		},
 		'SGD' => {
+			symbol => 'SGD',
 			display_name => {
 				'currency' => q(Singapūro doleris),
 				'few' => q(Singapūro doleriai),
@@ -5031,6 +6544,7 @@ has 'curriencies' => (
 			},
 		},
 		'SHP' => {
+			symbol => 'SHP',
 			display_name => {
 				'currency' => q(Šv. Elenos salų svaras),
 				'few' => q(Šv. Elenos salų svarai),
@@ -5058,6 +6572,7 @@ has 'curriencies' => (
 			},
 		},
 		'SLL' => {
+			symbol => 'SLL',
 			display_name => {
 				'currency' => q(Siera Leonės leonė),
 				'few' => q(Siera Leonės leonės),
@@ -5067,6 +6582,7 @@ has 'curriencies' => (
 			},
 		},
 		'SOS' => {
+			symbol => 'SOS',
 			display_name => {
 				'currency' => q(Somalio šilingas),
 				'few' => q(Somalio šilingai),
@@ -5076,6 +6592,7 @@ has 'curriencies' => (
 			},
 		},
 		'SRD' => {
+			symbol => 'SRD',
 			display_name => {
 				'currency' => q(Surimano doleris),
 				'few' => q(Surimano doleriai),
@@ -5094,6 +6611,7 @@ has 'curriencies' => (
 			},
 		},
 		'SSP' => {
+			symbol => 'SSP',
 			display_name => {
 				'currency' => q(Pietų Sudano svaras),
 				'few' => q(Pietų Sudano svarai),
@@ -5103,6 +6621,7 @@ has 'curriencies' => (
 			},
 		},
 		'STD' => {
+			symbol => 'STD',
 			display_name => {
 				'currency' => q(San Tomės ir Principės dobra),
 				'few' => q(San Tomės ir Principės dobros),
@@ -5130,6 +6649,7 @@ has 'curriencies' => (
 			},
 		},
 		'SYP' => {
+			symbol => 'SYP',
 			display_name => {
 				'currency' => q(Sirijos svaras),
 				'few' => q(Sirijos svarai),
@@ -5139,6 +6659,7 @@ has 'curriencies' => (
 			},
 		},
 		'SZL' => {
+			symbol => 'SZL',
 			display_name => {
 				'currency' => q(Svazilando lilangenis),
 				'few' => q(Svazilando lilangeniai),
@@ -5167,6 +6688,7 @@ has 'curriencies' => (
 			},
 		},
 		'TJS' => {
+			symbol => 'TJS',
 			display_name => {
 				'currency' => q(Tadžikistano somonis),
 				'few' => q(Tadžikistano somoniai),
@@ -5185,6 +6707,7 @@ has 'curriencies' => (
 			},
 		},
 		'TMT' => {
+			symbol => 'TMT',
 			display_name => {
 				'currency' => q(Turkmėnistano manatas),
 				'few' => q(Turkmėnistano manatai),
@@ -5194,6 +6717,7 @@ has 'curriencies' => (
 			},
 		},
 		'TND' => {
+			symbol => 'TND',
 			display_name => {
 				'currency' => q(Tuniso dinaras),
 				'few' => q(Tuniso dinarai),
@@ -5203,6 +6727,7 @@ has 'curriencies' => (
 			},
 		},
 		'TOP' => {
+			symbol => 'TOP',
 			display_name => {
 				'currency' => q(Tongo paanga),
 				'few' => q(Tongo paangos),
@@ -5230,6 +6755,7 @@ has 'curriencies' => (
 			},
 		},
 		'TRY' => {
+			symbol => 'TRY',
 			display_name => {
 				'currency' => q(Turkijos lira),
 				'few' => q(Turkijos liros),
@@ -5239,6 +6765,7 @@ has 'curriencies' => (
 			},
 		},
 		'TTD' => {
+			symbol => 'TTD',
 			display_name => {
 				'currency' => q(Trinidado ir Tobago doleris),
 				'few' => q(Trinidado ir Tobago doleriai),
@@ -5258,6 +6785,7 @@ has 'curriencies' => (
 			},
 		},
 		'TZS' => {
+			symbol => 'TZS',
 			display_name => {
 				'currency' => q(Tanzanijos šilingas),
 				'few' => q(Tanzanijos šilingai),
@@ -5267,6 +6795,7 @@ has 'curriencies' => (
 			},
 		},
 		'UAH' => {
+			symbol => 'UAH',
 			display_name => {
 				'currency' => q(Ukrainos grivina),
 				'few' => q(Ukrainos grivinos),
@@ -5294,6 +6823,7 @@ has 'curriencies' => (
 			},
 		},
 		'UGX' => {
+			symbol => 'UGX',
 			display_name => {
 				'currency' => q(Ugandos šilingas),
 				'few' => q(Ugandos šilingai),
@@ -5349,6 +6879,7 @@ has 'curriencies' => (
 			},
 		},
 		'UYU' => {
+			symbol => 'UYU',
 			display_name => {
 				'currency' => q(Urugvajaus pesas),
 				'few' => q(Urugvajaus pesai),
@@ -5358,6 +6889,7 @@ has 'curriencies' => (
 			},
 		},
 		'UZS' => {
+			symbol => 'UZS',
 			display_name => {
 				'currency' => q(Uzbekistano sumas),
 				'few' => q(Uzbekistano sumai),
@@ -5376,6 +6908,7 @@ has 'curriencies' => (
 			},
 		},
 		'VEF' => {
+			symbol => 'VEF',
 			display_name => {
 				'currency' => q(Venesuelos bolivaras),
 				'few' => q(Venesuelos bolivarai),
@@ -5404,6 +6937,7 @@ has 'curriencies' => (
 			},
 		},
 		'VUV' => {
+			symbol => 'VUV',
 			display_name => {
 				'currency' => q(Vanuatu vatas),
 				'few' => q(Vanuatu vatai),
@@ -5413,6 +6947,7 @@ has 'curriencies' => (
 			},
 		},
 		'WST' => {
+			symbol => 'WST',
 			display_name => {
 				'currency' => q(Samoa tala),
 				'few' => q(Samoa talos),
@@ -5574,6 +7109,15 @@ has 'curriencies' => (
 				'other' => q(RINET fondai),
 			},
 		},
+		'XSU' => {
+			display_name => {
+				'currency' => q(Sukrė),
+				'few' => q(Sukrės),
+				'many' => q(Sukrės),
+				'one' => q(Sukrė),
+				'other' => q(Sukrių),
+			},
+		},
 		'XTS' => {
 			display_name => {
 				'currency' => q(Tikrinamas valiutos kodas),
@@ -5581,6 +7125,15 @@ has 'curriencies' => (
 				'many' => q(Tikrinamas valiutos kodas),
 				'one' => q(Tikrinamas valiutos kodas),
 				'other' => q(Tikrinamas valiutos kodas),
+			},
+		},
+		'XUA' => {
+			display_name => {
+				'currency' => q(Azijos plėtros banko apskaitos vienetas),
+				'few' => q(Azijos plėtros banko apskaitos vienetai),
+				'many' => q(Azijos plėtros banko apskaitos vieneto),
+				'one' => q(Azijos plėtros banko apskaitos vienetas),
+				'other' => q(Azijos plėtros banko apskaitos vienetų),
 			},
 		},
 		'XXX' => {
@@ -5602,6 +7155,7 @@ has 'curriencies' => (
 			},
 		},
 		'YER' => {
+			symbol => 'YER',
 			display_name => {
 				'currency' => q(Jemeno rialas),
 				'few' => q(Jemeno rialai),
@@ -5630,20 +7184,20 @@ has 'curriencies' => (
 		},
 		'YUN' => {
 			display_name => {
-				'currency' => q(Jugoslavijos konvertuojamas dinaras),
-				'few' => q(Jugoslavijos konvertuoti dinarai),
-				'many' => q(Jugoslavijos konvertuoti dinarai),
-				'one' => q(Jugoslavijos konvertuotas dinaras),
-				'other' => q(Jugoslavijos konvertuoti dinarai),
+				'currency' => q(Jugoslavijos konvertuojamas dinaras \(1990–1992\)),
+				'few' => q(Jugoslavijos konvertuojami dinarai \(1990–1992\)),
+				'many' => q(Jugoslavijos konvertuojamo dinaro \(1990–1992\)),
+				'one' => q(Jugoslavijos konvertuojamas dinaras \(1990–1992\)),
+				'other' => q(Jugoslavijos konvertuojamų dinarų \(1990–1992\)),
 			},
 		},
 		'YUR' => {
 			display_name => {
-				'currency' => q(Jugoslavijos reformuoti dinarai),
-				'few' => q(Jugoslavijos reformuoti dinarai),
-				'many' => q(Jugoslavijos reformuoti dinarai),
-				'one' => q(Jugoslavijos reformuotas dinaras),
-				'other' => q(Jugoslavijos reformuoti dinarai),
+				'currency' => q(Jugoslavijos reformuotas dinaras \(1992–1993\)),
+				'few' => q(Jugoslavijos reformuoti dinarai \(1992–1993\)),
+				'many' => q(Jugoslavijos reformuoto dinaro \(1992–1993\)),
+				'one' => q(Jugoslavijos reformuotas dinaras \(1992–1993\)),
+				'other' => q(Jugoslavijos reformuotų dinarų \(1992–1993\)),
 			},
 		},
 		'ZAL' => {
@@ -5656,6 +7210,7 @@ has 'curriencies' => (
 			},
 		},
 		'ZAR' => {
+			symbol => 'ZAR',
 			display_name => {
 				'currency' => q(Pietų Afrikos Respublikos randas),
 				'few' => q(Pietų Afrikos Respublikos randai),
@@ -5674,6 +7229,7 @@ has 'curriencies' => (
 			},
 		},
 		'ZMW' => {
+			symbol => 'ZMW',
 			display_name => {
 				'currency' => q(Zambijos kvača),
 				'few' => q(Zambijos kvačos),
@@ -5684,20 +7240,20 @@ has 'curriencies' => (
 		},
 		'ZRN' => {
 			display_name => {
-				'currency' => q(Zairo naujasis zairas),
-				'few' => q(Naujieji Zairo zairai),
-				'many' => q(Naujieji Zairo zairai),
-				'one' => q(Naujasis Zairo zairas),
-				'other' => q(Naujieji Zairo zairai),
+				'currency' => q(Zairo naujasis zairas \(1993–1998\)),
+				'few' => q(Zairo naujieji zairai \(1993–1998\)),
+				'many' => q(Zairo naujojo zairo \(1993–1998\)),
+				'one' => q(Zairo naujasis zairas \(1993–1998\)),
+				'other' => q(Zairo naujųjų zairų \(1993–1998\)),
 			},
 		},
 		'ZRZ' => {
 			display_name => {
-				'currency' => q(Zairo zairas),
-				'few' => q(Zairo zairai),
-				'many' => q(Zairo zairai),
-				'one' => q(Zairo zairas),
-				'other' => q(Zairo zairai),
+				'currency' => q(Zairo zairas \(1971–1993\)),
+				'few' => q(Zairo zairai \(1971–1993\)),
+				'many' => q(Zairo zairo \(1971–1993\)),
+				'one' => q(Zairo zairas \(1971–1993\)),
+				'other' => q(Zairo zairų \(1971–1993\)),
 			},
 		},
 		'ZWD' => {
@@ -5858,6 +7414,26 @@ has 'calendar_months' => (
 			},
 			'coptic' => {
 				'format' => {
+					abbreviated => {
+						nonleap => [
+							'Tout',
+							'Baba',
+							'Hator',
+							'Kiahk',
+							'Toba',
+							'Amshir',
+							'Baramhat',
+							'Baramouda',
+							'Bashans',
+							'Paona',
+							'Epep',
+							'Mesra',
+							'Nasie'
+						],
+						leap => [
+							
+						],
+					},
 					narrow => {
 						nonleap => [
 							'1',
@@ -5878,8 +7454,48 @@ has 'calendar_months' => (
 							
 						],
 					},
+					wide => {
+						nonleap => [
+							'Tout',
+							'Baba',
+							'Hator',
+							'Kiahk',
+							'Toba',
+							'Amshir',
+							'Baramhat',
+							'Baramouda',
+							'Bashans',
+							'Paona',
+							'Epep',
+							'Mesra',
+							'Nasie'
+						],
+						leap => [
+							
+						],
+					},
 				},
 				'stand-alone' => {
+					abbreviated => {
+						nonleap => [
+							'Tout',
+							'Baba',
+							'Hator',
+							'Kiahk',
+							'Toba',
+							'Amshir',
+							'Baramhat',
+							'Baramouda',
+							'Bashans',
+							'Paona',
+							'Epep',
+							'Mesra',
+							'Nasie'
+						],
+						leap => [
+							
+						],
+					},
 					narrow => {
 						nonleap => [
 							'1',
@@ -5895,6 +7511,272 @@ has 'calendar_months' => (
 							'11',
 							'12',
 							'13'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'Tout',
+							'Baba',
+							'Hator',
+							'Kiahk',
+							'Toba',
+							'Amshir',
+							'Baramhat',
+							'Baramouda',
+							'Bashans',
+							'Paona',
+							'Epep',
+							'Mesra',
+							'Nasie'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+			'dangi' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'1',
+							'2',
+							'3',
+							'4',
+							'5',
+							'6',
+							'7',
+							'8',
+							'9',
+							'10',
+							'11',
+							'12'
+						],
+						leap => [
+							
+						],
+					},
+					narrow => {
+						nonleap => [
+							'1',
+							'2',
+							'3',
+							'4',
+							'5',
+							'6',
+							'7',
+							'8',
+							'9',
+							'10',
+							'11',
+							'12'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'1',
+							'2',
+							'3',
+							'4',
+							'5',
+							'6',
+							'7',
+							'8',
+							'9',
+							'10',
+							'11',
+							'12'
+						],
+						leap => [
+							
+						],
+					},
+				},
+				'stand-alone' => {
+					abbreviated => {
+						nonleap => [
+							'1',
+							'2',
+							'3',
+							'4',
+							'5',
+							'6',
+							'7',
+							'8',
+							'9',
+							'10',
+							'11',
+							'12'
+						],
+						leap => [
+							
+						],
+					},
+					narrow => {
+						nonleap => [
+							'1',
+							'2',
+							'3',
+							'4',
+							'5',
+							'6',
+							'7',
+							'8',
+							'9',
+							'10',
+							'11',
+							'12'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'1',
+							'2',
+							'3',
+							'4',
+							'5',
+							'6',
+							'7',
+							'8',
+							'9',
+							'10',
+							'11',
+							'12'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+			'ethiopic' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'Meskerem',
+							'Tekemt',
+							'Hedar',
+							'Tahsas',
+							'Ter',
+							'Yekatit',
+							'Megabit',
+							'Miazia',
+							'Genbot',
+							'Sene',
+							'Hamle',
+							'Nehasse',
+							'Pagumen'
+						],
+						leap => [
+							
+						],
+					},
+					narrow => {
+						nonleap => [
+							'1',
+							'2',
+							'3',
+							'4',
+							'5',
+							'6',
+							'7',
+							'8',
+							'9',
+							'10',
+							'11',
+							'12',
+							'13'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'Meskerem',
+							'Tekemt',
+							'Hedar',
+							'Tahsas',
+							'Ter',
+							'Yekatit',
+							'Megabit',
+							'Miazia',
+							'Genbot',
+							'Sene',
+							'Hamle',
+							'Nehasse',
+							'Pagumen'
+						],
+						leap => [
+							
+						],
+					},
+				},
+				'stand-alone' => {
+					abbreviated => {
+						nonleap => [
+							'Meskerem',
+							'Tekemt',
+							'Hedar',
+							'Tahsas',
+							'Ter',
+							'Yekatit',
+							'Megabit',
+							'Miazia',
+							'Genbot',
+							'Sene',
+							'Hamle',
+							'Nehasse',
+							'Pagumen'
+						],
+						leap => [
+							
+						],
+					},
+					narrow => {
+						nonleap => [
+							'1',
+							'2',
+							'3',
+							'4',
+							'5',
+							'6',
+							'7',
+							'8',
+							'9',
+							'10',
+							'11',
+							'12',
+							'13'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'Meskerem',
+							'Tekemt',
+							'Hedar',
+							'Tahsas',
+							'Ter',
+							'Yekatit',
+							'Megabit',
+							'Miazia',
+							'Genbot',
+							'Sene',
+							'Hamle',
+							'Nehasse',
+							'Pagumen'
 						],
 						leap => [
 							
@@ -5944,18 +7826,18 @@ has 'calendar_months' => (
 					},
 					wide => {
 						nonleap => [
-							'sausis',
-							'vasaris',
-							'kovas',
-							'balandis',
-							'gegužė',
-							'birželis',
-							'liepa',
-							'rugpjūtis',
-							'rugsėjis',
-							'spalis',
-							'lapkritis',
-							'gruodis'
+							'sausio',
+							'vasario',
+							'kovo',
+							'balandžio',
+							'gegužės',
+							'birželio',
+							'liepos',
+							'rugpjūčio',
+							'rugsėjo',
+							'spalio',
+							'lapkričio',
+							'gruodžio'
 						],
 						leap => [
 							
@@ -6015,6 +7897,509 @@ has 'calendar_months' => (
 							'spalis',
 							'lapkritis',
 							'gruodis'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+			'hebrew' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'Tishri',
+							'Heshvan',
+							'Kislev',
+							'Tevet',
+							'Shevat',
+							'Adar I',
+							'Adar',
+							'Nisan',
+							'Iyar',
+							'Sivan',
+							'Tamuz',
+							'Av',
+							'Elul'
+						],
+						leap => [
+							'',
+							'',
+							'',
+							'',
+							'',
+							'',
+							'Adar II'
+						],
+					},
+					narrow => {
+						nonleap => [
+							'1',
+							'2',
+							'3',
+							'4',
+							'5',
+							'6',
+							'7',
+							'8',
+							'9',
+							'10',
+							'11',
+							'12',
+							'13'
+						],
+						leap => [
+							'',
+							'',
+							'',
+							'',
+							'',
+							'',
+							'7'
+						],
+					},
+					wide => {
+						nonleap => [
+							'Tishri',
+							'Heshvan',
+							'Kislev',
+							'Tevet',
+							'Shevat',
+							'Adar I',
+							'Adar',
+							'Nisan',
+							'Iyar',
+							'Sivan',
+							'Tamuz',
+							'Av',
+							'Elul'
+						],
+						leap => [
+							'',
+							'',
+							'',
+							'',
+							'',
+							'',
+							'Adar II'
+						],
+					},
+				},
+				'stand-alone' => {
+					abbreviated => {
+						nonleap => [
+							'Tishri',
+							'Heshvan',
+							'Kislev',
+							'Tevet',
+							'Shevat',
+							'Adar I',
+							'Adar',
+							'Nisan',
+							'Iyar',
+							'Sivan',
+							'Tamuz',
+							'Av',
+							'Elul'
+						],
+						leap => [
+							'',
+							'',
+							'',
+							'',
+							'',
+							'',
+							'Adar II'
+						],
+					},
+					narrow => {
+						nonleap => [
+							'1',
+							'2',
+							'3',
+							'4',
+							'5',
+							'6',
+							'7',
+							'8',
+							'9',
+							'10',
+							'11',
+							'12',
+							'13'
+						],
+						leap => [
+							'',
+							'',
+							'',
+							'',
+							'',
+							'',
+							'7'
+						],
+					},
+					wide => {
+						nonleap => [
+							'Tishri',
+							'Heshvan',
+							'Kislev',
+							'Tevet',
+							'Shevat',
+							'Adar I',
+							'Adar',
+							'Nisan',
+							'Iyar',
+							'Sivan',
+							'Tamuz',
+							'Av',
+							'Elul'
+						],
+						leap => [
+							'',
+							'',
+							'',
+							'',
+							'',
+							'',
+							'Adar II'
+						],
+					},
+				},
+			},
+			'indian' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'Chaitra',
+							'Vaisakha',
+							'Jyaistha',
+							'Asadha',
+							'Sravana',
+							'Bhadra',
+							'Asvina',
+							'Kartika',
+							'Agrahayana',
+							'Pausa',
+							'Magha',
+							'Phalguna'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'Chaitra',
+							'Vaisakha',
+							'Jyaistha',
+							'Asadha',
+							'Sravana',
+							'Bhadra',
+							'Asvina',
+							'Kartika',
+							'Agrahayana',
+							'Pausa',
+							'Magha',
+							'Phalguna'
+						],
+						leap => [
+							
+						],
+					},
+				},
+				'stand-alone' => {
+					abbreviated => {
+						nonleap => [
+							'Chaitra',
+							'Vaisakha',
+							'Jyaistha',
+							'Asadha',
+							'Sravana',
+							'Bhadra',
+							'Asvina',
+							'Kartika',
+							'Agrahayana',
+							'Pausa',
+							'Magha',
+							'Phalguna'
+						],
+						leap => [
+							
+						],
+					},
+					narrow => {
+						nonleap => [
+							'1',
+							'2',
+							'3',
+							'4',
+							'5',
+							'6',
+							'7',
+							'8',
+							'9',
+							'10',
+							'11',
+							'12'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'Chaitra',
+							'Vaisakha',
+							'Jyaistha',
+							'Asadha',
+							'Sravana',
+							'Bhadra',
+							'Asvina',
+							'Kartika',
+							'Agrahayana',
+							'Pausa',
+							'Magha',
+							'Phalguna'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+			'islamic' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'Muh.',
+							'Saf.',
+							'Rab. I',
+							'Rab. II',
+							'Jum. I',
+							'Jum. II',
+							'Raj.',
+							'Sha.',
+							'Ram.',
+							'Shaw.',
+							'Dhuʻl-Q.',
+							'Dhuʻl-H.'
+						],
+						leap => [
+							
+						],
+					},
+					narrow => {
+						nonleap => [
+							'1',
+							'2',
+							'3',
+							'4',
+							'5',
+							'6',
+							'7',
+							'8',
+							'9',
+							'10',
+							'11',
+							'12'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'Muharram',
+							'Safar',
+							'Rabiʻ I',
+							'Rabiʻ II',
+							'Jumada I',
+							'Jumada II',
+							'Rajab',
+							'Shaʻban',
+							'Ramadan',
+							'Shawwal',
+							'Dhuʻl-Qiʻdah',
+							'Dhuʻl-Hijjah'
+						],
+						leap => [
+							
+						],
+					},
+				},
+				'stand-alone' => {
+					abbreviated => {
+						nonleap => [
+							'Muh.',
+							'Saf.',
+							'Rab. I',
+							'Rab. II',
+							'Jum. I',
+							'Jum. II',
+							'Raj.',
+							'Sha.',
+							'Ram.',
+							'Shaw.',
+							'Dhuʻl-Q.',
+							'Dhuʻl-H.'
+						],
+						leap => [
+							
+						],
+					},
+					narrow => {
+						nonleap => [
+							'1',
+							'2',
+							'3',
+							'4',
+							'5',
+							'6',
+							'7',
+							'8',
+							'9',
+							'10',
+							'11',
+							'12'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'Muharram',
+							'Safar',
+							'Rabiʻ I',
+							'Rabiʻ II',
+							'Jumada I',
+							'Jumada II',
+							'Rajab',
+							'Shaʻban',
+							'Ramadan',
+							'Shawwal',
+							'Dhuʻl-Qiʻdah',
+							'Dhuʻl-Hijjah'
+						],
+						leap => [
+							
+						],
+					},
+				},
+			},
+			'persian' => {
+				'format' => {
+					abbreviated => {
+						nonleap => [
+							'Farvardin',
+							'Ordibehesht',
+							'Khordad',
+							'Tir',
+							'Mordad',
+							'Shahrivar',
+							'Mehr',
+							'Aban',
+							'Azar',
+							'Dey',
+							'Bahman',
+							'Esfand'
+						],
+						leap => [
+							
+						],
+					},
+					narrow => {
+						nonleap => [
+							'1',
+							'2',
+							'3',
+							'4',
+							'5',
+							'6',
+							'7',
+							'8',
+							'9',
+							'10',
+							'11',
+							'12'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'Farvardin',
+							'Ordibehesht',
+							'Khordad',
+							'Tir',
+							'Mordad',
+							'Shahrivar',
+							'Mehr',
+							'Aban',
+							'Azar',
+							'Dey',
+							'Bahman',
+							'Esfand'
+						],
+						leap => [
+							
+						],
+					},
+				},
+				'stand-alone' => {
+					abbreviated => {
+						nonleap => [
+							'Farvardin',
+							'Ordibehesht',
+							'Khordad',
+							'Tir',
+							'Mordad',
+							'Shahrivar',
+							'Mehr',
+							'Aban',
+							'Azar',
+							'Dey',
+							'Bahman',
+							'Esfand'
+						],
+						leap => [
+							
+						],
+					},
+					narrow => {
+						nonleap => [
+							'1',
+							'2',
+							'3',
+							'4',
+							'5',
+							'6',
+							'7',
+							'8',
+							'9',
+							'10',
+							'11',
+							'12'
+						],
+						leap => [
+							
+						],
+					},
+					wide => {
+						nonleap => [
+							'Farvardin',
+							'Ordibehesht',
+							'Khordad',
+							'Tir',
+							'Mordad',
+							'Shahrivar',
+							'Mehr',
+							'Aban',
+							'Azar',
+							'Dey',
+							'Bahman',
+							'Esfand'
 						],
 						leap => [
 							
@@ -6163,12 +8548,18 @@ has 'day_periods' => (
 		'gregorian' => {
 			'format' => {
 				'wide' => {
-					'pm' => q{popiet},
+					'noon' => q{perpiet},
 					'am' => q{priešpiet},
+					'pm' => q{popiet},
 				},
 				'abbreviated' => {
-					'am' => q{pr.p.},
 					'pm' => q{pop.},
+					'am' => q{pr.p.},
+				},
+				'narrow' => {
+					'pm' => q{popiet},
+					'noon' => q{perpiet},
+					'am' => q{priešpiet},
 				},
 			},
 		},
@@ -6188,6 +8579,34 @@ has 'eras' => (
 		'chinese' => {
 		},
 		'coptic' => {
+			abbreviated => {
+				'0' => 'ERA0',
+				'1' => 'ERA1'
+			},
+			wide => {
+				'0' => 'ERA0',
+				'1' => 'ERA1'
+			},
+		},
+		'dangi' => {
+		},
+		'ethiopic' => {
+			abbreviated => {
+				'0' => 'ERA0',
+				'1' => 'ERA1'
+			},
+			wide => {
+				'0' => 'ERA0',
+				'1' => 'ERA1'
+			},
+		},
+		'ethiopic-amete-alem' => {
+			abbreviated => {
+				'0' => 'ERA0'
+			},
+			wide => {
+				'0' => 'ERA0'
+			},
 		},
 		'generic' => {
 		},
@@ -6205,6 +8624,272 @@ has 'eras' => (
 				'1' => 'po Kristaus'
 			},
 		},
+		'hebrew' => {
+			abbreviated => {
+				'0' => 'AM'
+			},
+		},
+		'indian' => {
+			abbreviated => {
+				'0' => 'Saka'
+			},
+		},
+		'islamic' => {
+			abbreviated => {
+				'0' => 'AH'
+			},
+		},
+		'japanese' => {
+			abbreviated => {
+				'0' => 'Taika (645–650)',
+				'1' => 'Hakuči (650–671)',
+				'2' => 'Hakuho (672–686)',
+				'3' => 'Šučo (686–701)',
+				'4' => 'Taiho (701–704)',
+				'5' => 'Keiun (704–708)',
+				'6' => 'Vado (708–715)',
+				'7' => 'Reiki (715–717)',
+				'8' => 'Joro (717–724)',
+				'9' => 'Jinki (724–729)',
+				'10' => 'Tempio (729–749)',
+				'11' => 'Tempio-kampo (749–749)',
+				'12' => 'Tempio-šoho (749–757)',
+				'13' => 'Tempio-hodzi (757–765)',
+				'14' => 'Tempo-dzingo (765–767)',
+				'15' => 'Dzingo-keiun (767–770)',
+				'16' => 'Hoki (770–780)',
+				'17' => 'Ten-o (781–782)',
+				'18' => 'Enrjaku (782–806)',
+				'19' => 'Daido (806–810)',
+				'20' => 'Konin (810–824)',
+				'21' => 'Tenčo (824–834)',
+				'22' => 'Šova (834–848)',
+				'23' => 'Kajo (848–851)',
+				'24' => 'Ninju (851–854)',
+				'25' => 'Saiko (854–857)',
+				'26' => 'Tenan (857–859)',
+				'27' => 'Jogan (859–877)',
+				'28' => 'Genkei (877–885)',
+				'29' => 'Ninja (885–889)',
+				'30' => 'Kampjo (889–898)',
+				'31' => 'Šotai (898–901)',
+				'32' => 'Engi (901–923)',
+				'33' => 'Enčo (923–931)',
+				'34' => 'Šohei (931–938)',
+				'35' => 'Tengjo (938–947)',
+				'36' => 'Tenriaku (947–957)',
+				'37' => 'Tentoku (957–961)',
+				'38' => 'Ova (961–964)',
+				'39' => 'Koho (964–968)',
+				'40' => 'Ana (968–970)',
+				'41' => 'Tenroku (970–973)',
+				'42' => 'Ten-en (973–976)',
+				'43' => 'Jogen (976–978)',
+				'44' => 'Tengen (978–983)',
+				'45' => 'Eikan (983–985)',
+				'46' => 'Kana (985–987)',
+				'47' => 'Ei-en (987–989)',
+				'48' => 'Eiso (989–990)',
+				'49' => 'Šorjaku (990–995)',
+				'50' => 'Čotoku (995–999)',
+				'51' => 'Čoho (999–1004)',
+				'52' => 'Kanko (1004–1012)',
+				'53' => 'Čova (1012–1017)',
+				'54' => 'Kanin (1017–1021)',
+				'55' => 'Džian (1021–1024)',
+				'56' => 'Mandžiu (1024–1028)',
+				'57' => 'Čogen (1028–1037)',
+				'58' => 'Čorjaku (1037–1040)',
+				'59' => 'Čokju (1040–1044)',
+				'60' => 'Kantoku (1044–1046)',
+				'61' => 'Eišo (1046–1053)',
+				'62' => 'Tengi (1053–1058)',
+				'63' => 'Kohei (1058–1065)',
+				'64' => 'Džirjaku (1065–1069)',
+				'65' => 'Enkju (1069–1074)',
+				'66' => 'Šoho (1074–1077)',
+				'67' => 'Šorjaku (1077–1081)',
+				'68' => 'Eiho (1081–084)',
+				'69' => 'Otoku (1084–1087)',
+				'70' => 'Kandži (1087–1094)',
+				'71' => 'Kaho (1094–1096)',
+				'72' => 'Eičo (1096–1097)',
+				'73' => 'Šotoku (1097–1099)',
+				'74' => 'Kova (1099–1104)',
+				'75' => 'Čodži (1104–1106)',
+				'76' => 'Kašo (1106–1108)',
+				'77' => 'Tenin (1108–1110)',
+				'78' => 'Ten-ei (1110–1113)',
+				'79' => 'Eikju (1113–1118)',
+				'80' => 'Gen-ei (1118–1120)',
+				'81' => 'Hoan (1120–1124)',
+				'82' => 'Tendži (1124–1126)',
+				'83' => 'Daidži (1126–1131)',
+				'84' => 'Tenšo (1131–1132)',
+				'85' => 'Čošo (1132–1135)',
+				'86' => 'Hoen (1135–1141)',
+				'87' => 'Eidži (1141–1142)',
+				'88' => 'Kodži (1142–1144)',
+				'89' => 'Tenjo (1144–1145)',
+				'90' => 'Kjuan (1145–1151)',
+				'91' => 'Ninpei (1151–1154)',
+				'92' => 'Kjuju (1154–1156)',
+				'93' => 'Hogen (1156–1159)',
+				'94' => 'Heidži (1159–1160)',
+				'95' => 'Eirjaku (1160–1161)',
+				'96' => 'Oho (1161–1163)',
+				'97' => 'Čokan (1163–1165)',
+				'98' => 'Eiman (1165–1166)',
+				'99' => 'Nin-an (1166–1169)',
+				'100' => 'Kao (1169–1171)',
+				'101' => 'Šoan (1171–1175)',
+				'102' => 'Angen (1175–1177)',
+				'103' => 'Džišo (1177–1181)',
+				'104' => 'Jova (1181–1182)',
+				'105' => 'Džuei (1182–1184)',
+				'106' => 'Genrjuku (1184–1185)',
+				'107' => 'Bundži (1185–1190)',
+				'108' => 'Kenkju (1190–1199)',
+				'109' => 'Šodži (1199–1201)',
+				'110' => 'Kenin (1201–1204)',
+				'111' => 'Genkju (1204–1206)',
+				'112' => 'Ken-ei (1206–1207)',
+				'113' => 'Šogen (1207–1211)',
+				'114' => 'Kenrjaku (1211–1213)',
+				'115' => 'Kenpo (1213–1219)',
+				'116' => 'Šokju (1219–1222)',
+				'117' => 'Džu (1222–1224)',
+				'118' => 'Genin (1224–1225)',
+				'119' => 'Karoku (1225–1227)',
+				'120' => 'Antei (1227–1229)',
+				'121' => 'Kanki (1229–1232)',
+				'122' => 'Džoei (1232–1233)',
+				'123' => 'Tempuku (1233–1234)',
+				'124' => 'Bunrjaku (1234–1235)',
+				'125' => 'Katei (1235–1238)',
+				'126' => 'Rjakunin (1238–1239)',
+				'127' => 'En-o (1239–1240)',
+				'128' => 'Nindži (1240–1243)',
+				'129' => 'Kangen (1243–1247)',
+				'130' => 'Hodži (1247–1249)',
+				'131' => 'Kenčo (1249–1256)',
+				'132' => 'Kogen (1256–1257)',
+				'133' => 'Šoka (1257–1259)',
+				'134' => 'Šogen (1259–1260)',
+				'135' => 'Bun-o (1260–1261)',
+				'136' => 'Kočo (1261–1264)',
+				'137' => 'Bun-ei (1264–1275)',
+				'138' => 'Kendži (1275–1278)',
+				'139' => 'Koan (1278–1288)',
+				'140' => 'Šu (1288–1293)',
+				'141' => 'Einin (1293–1299)',
+				'142' => 'Šoan (1299–1302)',
+				'143' => 'Kengen (1302–1303)',
+				'144' => 'Kagen (1303–1306)',
+				'145' => 'Tokudži (1306–1308)',
+				'146' => 'Enkei (1308–1311)',
+				'147' => 'Očo (1311–1312)',
+				'148' => 'Šova (1312–1317)',
+				'149' => 'Bunpo (1317–1319)',
+				'150' => 'Dženo (1319–1321)',
+				'151' => 'Dženkjo (1321–1324)',
+				'152' => 'Šoču (1324–1326)',
+				'153' => 'Kareki (1326–1329)',
+				'154' => 'Gentoku (1329–1331)',
+				'155' => 'Genko (1331–1334)',
+				'156' => 'Kemu (1334–1336)',
+				'157' => 'Engen (1336–1340)',
+				'158' => 'Kokoku (1340–1346)',
+				'159' => 'Šohei (1346–1370)',
+				'160' => 'Kentoku (1370–1372)',
+				'161' => 'Bunču (1372–1375)',
+				'162' => 'Tendžu (1375–1379)',
+				'163' => 'Korjaku (1379–1381)',
+				'164' => 'Kova (1381–1384)',
+				'165' => 'Genču (1384–1392)',
+				'166' => 'Meitoku (1384–1387)',
+				'167' => 'Kakei (1387–1389)',
+				'168' => 'Ku (1389–1390)',
+				'169' => 'Meitoku (1390–1394)',
+				'170' => 'Oei (1394–1428)',
+				'171' => 'Šočo (1428–1429)',
+				'172' => 'Eikjo (1429–1441)',
+				'173' => 'Kakitsu (1441–1444)',
+				'174' => 'Bun-an (1444–1449)',
+				'175' => 'Hotoku (1449–1452)',
+				'176' => 'Kjotoku (1452–1455)',
+				'177' => 'Košo (1455–1457)',
+				'178' => 'Čoroku (1457–1460)',
+				'179' => 'Kanšo (1460–1466)',
+				'180' => 'Bunšo (1466–1467)',
+				'181' => 'Onin (1467–1469)',
+				'182' => 'Bunmei (1469–1487)',
+				'183' => 'Čokjo (1487–1489)',
+				'184' => 'Entoku (1489–1492)',
+				'185' => 'Meio (1492–1501)',
+				'186' => 'Bunki (1501–1504)',
+				'187' => 'Eišo (1504–1521)',
+				'188' => 'Taiei (1521–1528)',
+				'189' => 'Kjoroku (1528–1532)',
+				'190' => 'Tenmon (1532–1555)',
+				'191' => 'Kodži (1555–1558)',
+				'192' => 'Eiroku (1558–1570)',
+				'193' => 'Genki (1570–1573)',
+				'194' => 'Tenšo (1573–1592)',
+				'195' => 'Bunroku (1592–1596)',
+				'196' => 'Keičo (1596–1615)',
+				'197' => 'Genva (1615–1624)',
+				'198' => 'Kan-ei (1624–1644)',
+				'199' => 'Šoho (1644–1648)',
+				'200' => 'Keian (1648–1652)',
+				'201' => 'Šu (1652–1655)',
+				'202' => 'Meirjaku (1655–1658)',
+				'203' => 'Mandži (1658–1661)',
+				'204' => 'Kanbun (1661–1673)',
+				'205' => 'Enpo (1673–1681)',
+				'206' => 'Tenva (1681–1684)',
+				'207' => 'Džokjo (1684–1688)',
+				'208' => 'Genroku (1688–1704)',
+				'209' => 'Hoei (1704–1711)',
+				'210' => 'Šotoku (1711–1716)',
+				'211' => 'Kjoho (1716–1736)',
+				'212' => 'Genbun (1736–1741)',
+				'213' => 'Kanpo (1741–1744)',
+				'214' => 'Enkjo (1744–1748)',
+				'215' => 'Kan-en (1748–1751)',
+				'216' => 'Horjaku (1751–1764)',
+				'217' => 'Meiva (1764–1772)',
+				'218' => 'An-ei (1772–1781)',
+				'219' => 'Tenmei (1781–1789)',
+				'220' => 'Kansei (1789–1801)',
+				'221' => 'Kjova (1801–1804)',
+				'222' => 'Bunka (1804–1818)',
+				'223' => 'Bunsei (1818–1830)',
+				'224' => 'Tenpo (1830–1844)',
+				'225' => 'Koka (1844–1848)',
+				'226' => 'Kaei (1848–1854)',
+				'227' => 'Ansei (1854–1860)',
+				'228' => 'Man-en (1860–1861)',
+				'229' => 'Bunkju (1861–1864)',
+				'230' => 'Gendži (1864–1865)',
+				'231' => 'Keiko (1865–1868)',
+				'232' => 'Meidži',
+				'233' => 'Taišo',
+				'234' => 'Šova',
+				'235' => 'Heisei'
+			},
+		},
+		'persian' => {
+			abbreviated => {
+				'0' => 'AP'
+			},
+		},
+		'roc' => {
+			abbreviated => {
+				'0' => 'Prieš R.O.C.',
+				'1' => 'R.O.C.'
+			},
+		},
 	} },
 );
 
@@ -6216,8 +8901,22 @@ has 'date_formats' => (
 		'buddhist' => {
 		},
 		'chinese' => {
+			'full' => q{U MMMM d, EEEE},
+			'long' => q{U MMMM d},
+			'medium' => q{U MMM d},
+			'short' => q{y-MM-dd},
 		},
 		'coptic' => {
+		},
+		'dangi' => {
+			'full' => q{U MMMM d, EEEE},
+			'long' => q{U MMMM d},
+			'medium' => q{U MMM d},
+			'short' => q{y-MM-dd},
+		},
+		'ethiopic' => {
+		},
+		'ethiopic-amete-alem' => {
 		},
 		'generic' => {
 			'full' => q{y MMMM d G, EEEE},
@@ -6228,8 +8927,24 @@ has 'date_formats' => (
 		'gregorian' => {
 			'full' => q{y 'm'. MMMM d 'd'., EEEE},
 			'long' => q{y 'm'. MMMM d 'd'.},
-			'medium' => q{y MMM d},
+			'medium' => q{y-MM-dd},
 			'short' => q{y-MM-dd},
+		},
+		'hebrew' => {
+			'full' => q{y MMMM d G, EEEE},
+			'long' => q{y MMMM d G},
+			'medium' => q{y MMM d G},
+			'short' => q{y-MM-dd G},
+		},
+		'indian' => {
+		},
+		'islamic' => {
+		},
+		'japanese' => {
+		},
+		'persian' => {
+		},
+		'roc' => {
 		},
 	} },
 );
@@ -6245,6 +8960,12 @@ has 'time_formats' => (
 		},
 		'coptic' => {
 		},
+		'dangi' => {
+		},
+		'ethiopic' => {
+		},
+		'ethiopic-amete-alem' => {
+		},
 		'generic' => {
 		},
 		'gregorian' => {
@@ -6252,6 +8973,18 @@ has 'time_formats' => (
 			'long' => q{HH:mm:ss z},
 			'medium' => q{HH:mm:ss},
 			'short' => q{HH:mm},
+		},
+		'hebrew' => {
+		},
+		'indian' => {
+		},
+		'islamic' => {
+		},
+		'japanese' => {
+		},
+		'persian' => {
+		},
+		'roc' => {
 		},
 	} },
 );
@@ -6264,8 +8997,22 @@ has 'datetime_formats' => (
 		'buddhist' => {
 		},
 		'chinese' => {
+			'full' => q{{1} {0}},
+			'long' => q{{1} {0}},
+			'medium' => q{{1} {0}},
+			'short' => q{{1} {0}},
 		},
 		'coptic' => {
+		},
+		'dangi' => {
+			'full' => q{{1} {0}},
+			'long' => q{{1} {0}},
+			'medium' => q{{1} {0}},
+			'short' => q{{1} {0}},
+		},
+		'ethiopic' => {
+		},
+		'ethiopic-amete-alem' => {
 		},
 		'generic' => {
 			'full' => q{{1} {0}},
@@ -6279,6 +9026,18 @@ has 'datetime_formats' => (
 			'medium' => q{{1} {0}},
 			'short' => q{{1} {0}},
 		},
+		'hebrew' => {
+		},
+		'indian' => {
+		},
+		'islamic' => {
+		},
+		'japanese' => {
+		},
+		'persian' => {
+		},
+		'roc' => {
+		},
 	} },
 );
 
@@ -6287,41 +9046,6 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			EHm => q{HH:mm, E},
-			EHms => q{HH:mm:ss, E},
-			Ed => q{d, E},
-			Ehm => q{hh:mm a, E},
-			Ehms => q{hh:mm:ss a, E},
-			Gy => q{y G},
-			GyMMM => q{y G MMM},
-			GyMMMEd => q{y G MMM d, E},
-			GyMMMd => q{y G MMM d},
-			H => q{HH},
-			Hm => q{HH:mm},
-			Hms => q{HH:mm:ss},
-			M => q{LL},
-			MEd => q{MM-dd, E},
-			MMM => q{LLL},
-			MMMEd => q{MMM d, E},
-			MMMd => q{MMM d},
-			MMdd => q{MM-dd},
-			Md => q{MM-d},
-			d => q{dd},
-			h => q{hh a},
-			hm => q{hh:mm a},
-			hms => q{hh:mm:ss a},
-			ms => q{mm:ss},
-			y => q{y},
-			yM => q{y-MM},
-			yMEd => q{y-MM-dd, E},
-			yMMM => q{y MMM},
-			yMMMEd => q{y MMM d, E},
-			yMMMd => q{y MMM d},
-			yMd => q{y-MM-dd},
-			yQQQ => q{y QQQ},
-			yQQQQ => q{y QQQQ},
-		},
 		'generic' => {
 			Ed => q{d, E},
 			Gy => q{y G},
@@ -6354,6 +9078,101 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{y G QQQ},
 			yyyyQQQQ => q{y G QQQQ},
 		},
+		'chinese' => {
+			Ed => q{d, E},
+			Gy => q{U},
+			GyMMM => q{U MMM},
+			GyMMMEd => q{U MMM d, E},
+			GyMMMd => q{U MMM d},
+			M => q{L},
+			MEd => q{MM-dd, E},
+			MMM => q{LLL},
+			MMMEd => q{MMM d, E},
+			MMMd => q{MMM d},
+			Md => q{MM-dd},
+			d => q{d},
+			y => q{U},
+			yMd => q{y-MM-dd},
+			yyyy => q{U},
+			yyyyM => q{y-MM},
+			yyyyMEd => q{y-MM-dd, E},
+			yyyyMMM => q{U MMM},
+			yyyyMMMEd => q{U MMM d, E},
+			yyyyMMMd => q{U MMM d},
+			yyyyMd => q{y-MM-dd},
+			yyyyQQQ => q{U QQQ},
+			yyyyQQQQ => q{U QQQQ},
+		},
+		'dangi' => {
+			Ed => q{d, E},
+			Gy => q{U},
+			GyMMM => q{U MMM},
+			GyMMMEd => q{U MMM d, E},
+			GyMMMd => q{U MMM d},
+			M => q{L},
+			MEd => q{MM-dd, E},
+			MMM => q{LLL},
+			MMMEd => q{MMM d, E},
+			MMMd => q{MMM d},
+			Md => q{MM-dd},
+			d => q{d},
+			y => q{U},
+			yMd => q{y-MM-dd},
+			yyyy => q{U},
+			yyyyM => q{y-MM},
+			yyyyMEd => q{y-MM-dd, E},
+			yyyyMMM => q{U MMM},
+			yyyyMMMEd => q{U MMM d, E},
+			yyyyMMMd => q{U MMM d},
+			yyyyMd => q{y-MM-dd},
+			yyyyQQQ => q{U QQQ},
+			yyyyQQQQ => q{U QQQQ},
+		},
+		'gregorian' => {
+			E => q{ccc},
+			EHm => q{HH:mm, E},
+			EHms => q{HH:mm:ss, E},
+			Ed => q{d, E},
+			Ehm => q{hh:mm a, E},
+			Ehms => q{hh:mm:ss a, E},
+			Gy => q{y G},
+			GyMMM => q{y-MM G},
+			GyMMMEd => q{y-MM-dd G, E},
+			GyMMMM => q{y G LLLL},
+			GyMMMMEd => q{y G MMMM d, E},
+			GyMMMMd => q{y G MMMM d},
+			GyMMMd => q{y-MM-dd G},
+			H => q{HH},
+			Hm => q{HH:mm},
+			Hms => q{HH:mm:ss},
+			M => q{MM},
+			MEd => q{MM-dd, E},
+			MMM => q{MM},
+			MMMEd => q{MM-dd, E},
+			MMMM => q{LLLL},
+			MMMMEd => q{MMMM d, E},
+			MMMMd => q{MMMM d},
+			MMMd => q{MM-dd},
+			MMdd => q{MM-dd},
+			Md => q{MM-d},
+			d => q{dd},
+			h => q{hh a},
+			hm => q{hh:mm a},
+			hms => q{hh:mm:ss a},
+			ms => q{mm:ss},
+			y => q{y},
+			yM => q{y-MM},
+			yMEd => q{y-MM-dd, E},
+			yMMM => q{y-MM},
+			yMMMEd => q{y-MM-dd, E},
+			yMMMM => q{y LLLL},
+			yMMMMEd => q{y MMMM d, E},
+			yMMMMd => q{y MMMM d},
+			yMMMd => q{y-MM-dd},
+			yMd => q{y-MM-dd},
+			yQQQ => q{y QQQ},
+			yQQQQ => q{y QQQQ},
+		},
 	} },
 );
 
@@ -6373,101 +9192,6 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
-			H => {
-				H => q{HH–HH},
-			},
-			Hm => {
-				H => q{HH:mm–HH:mm},
-				m => q{HH:mm–HH:mm},
-			},
-			Hmv => {
-				H => q{HH:mm–HH:mm v},
-				m => q{HH:mm–HH:mm v},
-			},
-			Hv => {
-				H => q{HH–HH v},
-			},
-			M => {
-				M => q{MM–MM},
-			},
-			MEd => {
-				M => q{MM-dd, E – MM-dd, E},
-				d => q{MM-dd, E – MM-dd, E},
-			},
-			MMM => {
-				M => q{LLL–LLL},
-			},
-			MMMEd => {
-				M => q{MMM d, E – MMM d, E},
-				d => q{MMM d, E – MMM d, E},
-			},
-			MMMd => {
-				M => q{MMM d – MMM d},
-				d => q{MMM d–d},
-			},
-			Md => {
-				M => q{MM-dd – MM-dd},
-				d => q{MM-dd – MM-dd},
-			},
-			d => {
-				d => q{dd–dd},
-			},
-			fallback => '{0} – {1}',
-			h => {
-				a => q{hh a–hh a},
-				h => q{hh–hh a},
-			},
-			hm => {
-				a => q{hh:mm a–hh:mm a},
-				h => q{hh:mm–hh:mm a},
-				m => q{hh:mm–hh:mm a},
-			},
-			hmv => {
-				a => q{hh:mm a–hh:mm a v},
-				h => q{hh:mm–hh:mm a v},
-				m => q{h:mm–h:mm a v},
-			},
-			hv => {
-				a => q{hh a–hh a v},
-				h => q{hh–hh a v},
-			},
-			y => {
-				y => q{y–y},
-			},
-			yM => {
-				M => q{y-MM – y-MM},
-				y => q{y-MM – y-MM},
-			},
-			yMEd => {
-				M => q{y-MM-dd, E – y-MM-dd, E},
-				d => q{y-MM-dd, E – y-MM-dd, E},
-				y => q{y-MM-dd, E – y-MM-dd, E},
-			},
-			yMMM => {
-				M => q{y 'm'. MMM–MMM},
-				y => q{y-MM – y-MM},
-			},
-			yMMMEd => {
-				M => q{y MMM d, E. – MMM d, E.},
-				d => q{y MMM d, E – MMM d, E},
-				y => q{y MMM d, E. – y MMM d, E.},
-			},
-			yMMMM => {
-				M => q{y MMMM–MMMM},
-				y => q{y MMMM – y MMMM},
-			},
-			yMMMd => {
-				M => q{y MMM d – MMM d},
-				d => q{y MMM d–d},
-				y => q{y MMM d – y MMM d},
-			},
-			yMd => {
-				M => q{y-MM-dd – y-MM-dd},
-				d => q{y-MM-dd – y-MM-dd},
-				y => q{y-MM-dd – y-MM-dd},
-			},
-		},
 		'generic' => {
 			H => {
 				H => q{HH–HH},
@@ -6549,8 +9273,8 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd G, E – y-MM-dd G, E},
 			},
 			yMMMM => {
-				M => q{y MMMM – MMMM G},
-				y => q{y MMMM – y MMMM G},
+				M => q{y LLLL – y LLLL G},
+				y => q{y LLLL – y LLLL G},
 			},
 			yMMMd => {
 				M => q{y-MM-dd – MM-d G},
@@ -6561,6 +9285,246 @@ has 'datetime_formats_interval' => (
 				M => q{y-MM-dd– y-MM-dd G},
 				d => q{y-MM-dd–y-MM-dd G},
 				y => q{y-MM-dd – y-MM-dd G},
+			},
+		},
+		'chinese' => {
+			M => {
+				M => q{MM–MM},
+			},
+			MEd => {
+				M => q{MM-dd, E–MM-dd, E},
+				d => q{MM-dd, E–MM-dd, E},
+			},
+			MMM => {
+				M => q{LLL–LLL},
+			},
+			MMMEd => {
+				M => q{MMM d, E–MMM d, E},
+				d => q{MMM d, E–MMM d, E},
+			},
+			MMMd => {
+				M => q{MMM d–MMM d},
+				d => q{MMM d–d},
+			},
+			Md => {
+				M => q{MM-dd–MM-dd},
+				d => q{MM-dd–MM-dd},
+			},
+			d => {
+				d => q{d–d},
+			},
+			y => {
+				y => q{U–U},
+			},
+			yM => {
+				M => q{y-MM–y-MM},
+				y => q{y-MM–y-MM},
+			},
+			yMEd => {
+				M => q{y-MM-dd, E–y-MM-dd, E},
+				d => q{y-MM-dd, E–y-MM-dd, E},
+				y => q{y-MM-dd, E–y-MM-dd, E},
+			},
+			yMMM => {
+				M => q{U MMM–MMM},
+				y => q{U MMM–U MMM},
+			},
+			yMMMEd => {
+				M => q{U MMM d, E–MMM d, E},
+				d => q{U MMM d, E–MMM d, E},
+				y => q{U MMM d, E–U MMM d, E},
+			},
+			yMMMM => {
+				M => q{U MMMM–MMMM},
+				y => q{U MMMM–U MMMM},
+			},
+			yMMMd => {
+				M => q{U MMM d–MMM d},
+				d => q{U MMM d–d},
+				y => q{U MMM d–U MMM d},
+			},
+			yMd => {
+				M => q{y-MM-dd–y-MM-dd},
+				d => q{y-MM-dd–y-MM-dd},
+				y => q{y-MM-dd–y-MM-dd},
+			},
+		},
+		'dangi' => {
+			M => {
+				M => q{MM–MM},
+			},
+			MEd => {
+				M => q{MM-dd, E–MM-dd, E},
+				d => q{MM-dd, E–MM-dd, E},
+			},
+			MMM => {
+				M => q{LLL–LLL},
+			},
+			MMMEd => {
+				M => q{MMM d, E–MMM d, E},
+				d => q{MMM d, E–MMM d, E},
+			},
+			MMMd => {
+				M => q{MMM d–MMM d},
+				d => q{MMM d–d},
+			},
+			Md => {
+				M => q{MM-dd–MM-dd},
+				d => q{MM-dd–MM-dd},
+			},
+			d => {
+				d => q{d–d},
+			},
+			y => {
+				y => q{U–U},
+			},
+			yM => {
+				M => q{y-MM–y-MM},
+				y => q{y-MM–y-MM},
+			},
+			yMEd => {
+				M => q{y-MM-dd, E–y-MM-dd, E},
+				d => q{y-MM-dd, E–y-MM-dd, E},
+				y => q{y-MM-dd, E–y-MM-dd, E},
+			},
+			yMMM => {
+				M => q{U MMM–MMM},
+				y => q{U MMM–U MMM},
+			},
+			yMMMEd => {
+				M => q{U MMM d, E–MMM d, E},
+				d => q{U MMM d, E–MMM d, E},
+				y => q{U MMM d, E–U MMM d, E},
+			},
+			yMMMM => {
+				M => q{U MMMM–MMMM},
+				y => q{U MMMM–U MMMM},
+			},
+			yMMMd => {
+				M => q{U MMM d–MMM d},
+				d => q{U MMM d–d},
+				y => q{U MMM d–U MMM d},
+			},
+			yMd => {
+				M => q{y-MM-dd–y-MM-dd},
+				d => q{y-MM-dd–y-MM-dd},
+				y => q{y-MM-dd–y-MM-dd},
+			},
+		},
+		'gregorian' => {
+			H => {
+				H => q{HH–HH},
+			},
+			Hm => {
+				H => q{HH:mm–HH:mm},
+				m => q{HH:mm–HH:mm},
+			},
+			Hmv => {
+				H => q{HH:mm–HH:mm v},
+				m => q{HH:mm–HH:mm v},
+			},
+			Hv => {
+				H => q{HH–HH v},
+			},
+			M => {
+				M => q{MM–MM},
+			},
+			MEd => {
+				M => q{MM-dd, E – MM-dd, E},
+				d => q{MM-dd, E – MM-dd, E},
+			},
+			MMM => {
+				M => q{MM–MM},
+			},
+			MMMEd => {
+				M => q{MM-dd, E – MM-dd, E},
+				d => q{MM-dd, E – MM-dd, E},
+			},
+			MMMM => {
+				M => q{LLLL–LLLL},
+			},
+			MMMMEd => {
+				M => q{MMMM d, E – MMMM d, E},
+				d => q{MMMM d, E – MMMM d, E},
+			},
+			MMMMd => {
+				M => q{MMMM d – MMMM d},
+				d => q{MMMM d–d},
+			},
+			MMMd => {
+				M => q{MM-dd – MM-dd},
+				d => q{MM-dd – MM-dd},
+			},
+			Md => {
+				M => q{MM-dd – MM-dd},
+				d => q{MM-dd – MM-dd},
+			},
+			d => {
+				d => q{dd–dd},
+			},
+			fallback => '{0} – {1}',
+			h => {
+				a => q{h a – h a},
+				h => q{hh–hh a},
+			},
+			hm => {
+				a => q{hh:mm a–hh:mm a},
+				h => q{hh:mm–hh:mm a},
+				m => q{hh:mm–hh:mm a},
+			},
+			hmv => {
+				a => q{hh:mm a–hh:mm a v},
+				h => q{hh:mm–hh:mm a v},
+				m => q{h:mm–h:mm a v},
+			},
+			hv => {
+				a => q{h a – h a v},
+				h => q{hh–hh a v},
+			},
+			y => {
+				y => q{y–y},
+			},
+			yM => {
+				M => q{y-MM – y-MM},
+				y => q{y-MM – y-MM},
+			},
+			yMEd => {
+				M => q{y-MM-dd, E – y-MM-dd, E},
+				d => q{y-MM-dd, E – y-MM-dd, E},
+				y => q{y-MM-dd, E – y-MM-dd, E},
+			},
+			yMMM => {
+				M => q{y-MM – y-MM},
+				y => q{y-MM – y-MM},
+			},
+			yMMMEd => {
+				M => q{y-MM-dd, E – y-MM-dd, E},
+				d => q{y-MM-dd, E – y-MM-dd, E},
+				y => q{y-MM-dd, E – y-MM-dd, E},
+			},
+			yMMMM => {
+				M => q{y LLLL–LLLL},
+				y => q{y LLLL – LLLL},
+			},
+			yMMMMEd => {
+				M => q{y MMMM d, E. – MMMM d, E.},
+				d => q{y MMMM d, E – MMMM d, E},
+				y => q{y MMMM d, E. – y MMMM d, E.},
+			},
+			yMMMMd => {
+				M => q{y MMMM d – MMMM d},
+				d => q{y MMMM d–d},
+				y => q{y MMMM d – y MMMM d},
+			},
+			yMMMd => {
+				M => q{y-MM-dd – y-MM-dd},
+				d => q{y-MM-dd – y-MM-dd},
+				y => q{y-MM-dd – y-MM-dd},
+			},
+			yMd => {
+				M => q{y-MM-dd – y-MM-dd},
+				d => q{y-MM-dd – y-MM-dd},
+				y => q{y-MM-dd – y-MM-dd},
 			},
 		},
 	} },
@@ -6576,8 +9540,15 @@ has 'time_zone_names' => (
 		gmtZeroFormat => q(GMT),
 		regionFormat => q(Laikas: {0}),
 		regionFormat => q(Vasaros laikas: {0}),
-		regionFormat => q(Standartinis laikas: {0}),
+		regionFormat => q(Žiemos laikas: {0}),
 		fallbackFormat => q({1} ({0})),
+		'Acre' => {
+			long => {
+				'daylight' => q(Ako vasaros laikas),
+				'generic' => q(Ako laikas),
+				'standard' => q(Ako standartinis laikas),
+			},
+		},
 		'Afghanistan' => {
 			long => {
 				'standard' => q(Afganistano laikas),
@@ -6661,6 +9632,9 @@ has 'time_zone_names' => (
 		'Africa/Juba' => {
 			exemplarCity => q#Džuba#,
 		},
+		'Africa/Kampala' => {
+			exemplarCity => q#Kampala#,
+		},
 		'Africa/Khartoum' => {
 			exemplarCity => q#Chartumas#,
 		},
@@ -6679,14 +9653,23 @@ has 'time_zone_names' => (
 		'Africa/Lome' => {
 			exemplarCity => q#Lomė#,
 		},
+		'Africa/Luanda' => {
+			exemplarCity => q#Luanda#,
+		},
 		'Africa/Lubumbashi' => {
 			exemplarCity => q#Lubumbašis#,
+		},
+		'Africa/Lusaka' => {
+			exemplarCity => q#Lusaka#,
 		},
 		'Africa/Malabo' => {
 			exemplarCity => q#Malabas#,
 		},
 		'Africa/Maputo' => {
 			exemplarCity => q#Maputas#,
+		},
+		'Africa/Maseru' => {
+			exemplarCity => q#Maseru#,
 		},
 		'Africa/Mbabane' => {
 			exemplarCity => q#Mbabanė#,
@@ -6806,6 +9789,9 @@ has 'time_zone_names' => (
 		'America/Argentina/Ushuaia' => {
 			exemplarCity => q#Ušuaja#,
 		},
+		'America/Aruba' => {
+			exemplarCity => q#Aruba#,
+		},
 		'America/Asuncion' => {
 			exemplarCity => q#Asunsjonas#,
 		},
@@ -6829,6 +9815,9 @@ has 'time_zone_names' => (
 		},
 		'America/Boa_Vista' => {
 			exemplarCity => q#Bua Vista#,
+		},
+		'America/Bogota' => {
+			exemplarCity => q#Bogota#,
 		},
 		'America/Boise' => {
 			exemplarCity => q#Boisis#,
@@ -6908,6 +9897,9 @@ has 'time_zone_names' => (
 		'America/El_Salvador' => {
 			exemplarCity => q#Salvadoras#,
 		},
+		'America/Fortaleza' => {
+			exemplarCity => q#Fortaleza#,
+		},
 		'America/Glace_Bay' => {
 			exemplarCity => q#Gleis Bėjus#,
 		},
@@ -6919,6 +9911,9 @@ has 'time_zone_names' => (
 		},
 		'America/Grand_Turk' => {
 			exemplarCity => q#Grand Terkas#,
+		},
+		'America/Grenada' => {
+			exemplarCity => q#Grenada#,
 		},
 		'America/Guadeloupe' => {
 			exemplarCity => q#Gvadalupė#,
@@ -6934,6 +9929,9 @@ has 'time_zone_names' => (
 		},
 		'America/Halifax' => {
 			exemplarCity => q#Halifaksas#,
+		},
+		'America/Havana' => {
+			exemplarCity => q#Havana#,
 		},
 		'America/Hermosillo' => {
 			exemplarCity => q#Hermosiljas#,
@@ -6959,6 +9957,9 @@ has 'time_zone_names' => (
 		'America/Indiana/Winamac' => {
 			exemplarCity => q#Vinamakas, Indiana#,
 		},
+		'America/Indianapolis' => {
+			exemplarCity => q#Indianapolis#,
+		},
 		'America/Inuvik' => {
 			exemplarCity => q#Inuvikas#,
 		},
@@ -6982,6 +9983,9 @@ has 'time_zone_names' => (
 		},
 		'America/La_Paz' => {
 			exemplarCity => q#La Pasas#,
+		},
+		'America/Lima' => {
+			exemplarCity => q#Lima#,
 		},
 		'America/Los_Angeles' => {
 			exemplarCity => q#Los Andželas#,
@@ -7019,6 +10023,12 @@ has 'time_zone_names' => (
 		'America/Menominee' => {
 			exemplarCity => q#Menominis#,
 		},
+		'America/Merida' => {
+			exemplarCity => q#Merida#,
+		},
+		'America/Metlakatla' => {
+			exemplarCity => q#Metlakatla#,
+		},
 		'America/Mexico_City' => {
 			exemplarCity => q#Meksikas#,
 		},
@@ -7036,6 +10046,9 @@ has 'time_zone_names' => (
 		},
 		'America/Montserrat' => {
 			exemplarCity => q#Montseratas#,
+		},
+		'America/Nassau' => {
+			exemplarCity => q#Nasau#,
 		},
 		'America/New_York' => {
 			exemplarCity => q#Niujorkas#,
@@ -7060,6 +10073,9 @@ has 'time_zone_names' => (
 		},
 		'America/Ojinaga' => {
 			exemplarCity => q#Ochinaga#,
+		},
+		'America/Panama' => {
+			exemplarCity => q#Panama#,
 		},
 		'America/Pangnirtung' => {
 			exemplarCity => q#Pangnirtungas#,
@@ -7118,6 +10134,9 @@ has 'time_zone_names' => (
 		'America/Scoresbysund' => {
 			exemplarCity => q#Itokortormitas#,
 		},
+		'America/Sitka' => {
+			exemplarCity => q#Sitka#,
+		},
 		'America/St_Barthelemy' => {
 			exemplarCity => q#Sen Bartelemi#,
 		},
@@ -7153,6 +10172,9 @@ has 'time_zone_names' => (
 		},
 		'America/Toronto' => {
 			exemplarCity => q#Torontas#,
+		},
+		'America/Tortola' => {
+			exemplarCity => q#Tortola#,
 		},
 		'America/Vancouver' => {
 			exemplarCity => q#Vankuveris#,
@@ -7211,7 +10233,7 @@ has 'time_zone_names' => (
 			exemplarCity => q#Deivisas#,
 		},
 		'Antarctica/DumontDUrville' => {
-			exemplarCity => q#Diumonas d'Urvilis#,
+			exemplarCity => q#Diumonas d’Urvilis#,
 		},
 		'Antarctica/Macquarie' => {
 			exemplarCity => q#Makvoris#,
@@ -7231,8 +10253,18 @@ has 'time_zone_names' => (
 		'Antarctica/Syowa' => {
 			exemplarCity => q#Siova#,
 		},
+		'Antarctica/Troll' => {
+			exemplarCity => q#Trolis#,
+		},
 		'Antarctica/Vostok' => {
 			exemplarCity => q#Vostokas#,
+		},
+		'Apia' => {
+			long => {
+				'daylight' => q(Apijos vasaros laikas),
+				'generic' => q(Apijos laikas),
+				'standard' => q(Apijos žiemos laikas),
+			},
 		},
 		'Aqtau' => {
 			long => {
@@ -7305,6 +10337,9 @@ has 'time_zone_names' => (
 		},
 		'Asia/Bahrain' => {
 			exemplarCity => q#Bahreinas#,
+		},
+		'Asia/Baku' => {
+			exemplarCity => q#Baku#,
 		},
 		'Asia/Bangkok' => {
 			exemplarCity => q#Bankokas#,
@@ -7410,6 +10445,9 @@ has 'time_zone_names' => (
 		},
 		'Asia/Makassar' => {
 			exemplarCity => q#Makasaras#,
+		},
+		'Asia/Manila' => {
+			exemplarCity => q#Manila#,
 		},
 		'Asia/Muscat' => {
 			exemplarCity => q#Maskatas#,
@@ -7520,6 +10558,9 @@ has 'time_zone_names' => (
 		'Atlantic/Azores' => {
 			exemplarCity => q#Azorai#,
 		},
+		'Atlantic/Bermuda' => {
+			exemplarCity => q#Bermuda#,
+		},
 		'Atlantic/Canary' => {
 			exemplarCity => q#Kanarų salos#,
 		},
@@ -7528,6 +10569,9 @@ has 'time_zone_names' => (
 		},
 		'Atlantic/Faeroe' => {
 			exemplarCity => q#Farerai#,
+		},
+		'Atlantic/Madeira' => {
+			exemplarCity => q#Madeira#,
 		},
 		'Atlantic/Reykjavik' => {
 			exemplarCity => q#Reikjavikas#,
@@ -7655,6 +10699,11 @@ has 'time_zone_names' => (
 				'standard' => q(Žaliojo Kyšulio žiemos laikas),
 			},
 		},
+		'Casey' => {
+			long => {
+				'standard' => q(Keisio laikas),
+			},
+		},
 		'Chamorro' => {
 			long => {
 				'standard' => q(Čamoro laikas),
@@ -7726,7 +10775,7 @@ has 'time_zone_names' => (
 		},
 		'DumontDUrville' => {
 			long => {
-				'standard' => q(Diumono d'Urvilio laikas),
+				'standard' => q(Diumono d’Urvilio laikas),
 			},
 		},
 		'East_Timor' => {
@@ -7763,6 +10812,9 @@ has 'time_zone_names' => (
 		},
 		'Europe/Berlin' => {
 			exemplarCity => q#Berlynas#,
+		},
+		'Europe/Bratislava' => {
+			exemplarCity => q#Bratislava#,
 		},
 		'Europe/Brussels' => {
 			exemplarCity => q#Briuselis#,
@@ -7830,6 +10882,9 @@ has 'time_zone_names' => (
 		'Europe/Madrid' => {
 			exemplarCity => q#Madridas#,
 		},
+		'Europe/Malta' => {
+			exemplarCity => q#Malta#,
+		},
 		'Europe/Mariehamn' => {
 			exemplarCity => q#Marianhamina#,
 		},
@@ -7848,6 +10903,9 @@ has 'time_zone_names' => (
 		'Europe/Paris' => {
 			exemplarCity => q#Paryžius#,
 		},
+		'Europe/Podgorica' => {
+			exemplarCity => q#Podgorica#,
+		},
 		'Europe/Prague' => {
 			exemplarCity => q#Praha#,
 		},
@@ -7856,6 +10914,9 @@ has 'time_zone_names' => (
 		},
 		'Europe/Rome' => {
 			exemplarCity => q#Roma#,
+		},
+		'Europe/Samara' => {
+			exemplarCity => q#Samara#,
 		},
 		'Europe/San_Marino' => {
 			exemplarCity => q#San Marinas#,
@@ -7893,6 +10954,9 @@ has 'time_zone_names' => (
 		'Europe/Vienna' => {
 			exemplarCity => q#Viena#,
 		},
+		'Europe/Vilnius' => {
+			exemplarCity => q#Vilnius#,
+		},
 		'Europe/Volgograd' => {
 			exemplarCity => q#Volgogradas#,
 		},
@@ -7922,6 +10986,11 @@ has 'time_zone_names' => (
 				'standard' => q(Rytų Europos žiemos laikas),
 			},
 		},
+		'Europe_Further_Eastern' => {
+			long => {
+				'standard' => q(Tolimųjų rytų Europos laikas),
+			},
+		},
 		'Europe_Western' => {
 			long => {
 				'daylight' => q(Vakarų Europos vasaros laikas),
@@ -7933,7 +11002,7 @@ has 'time_zone_names' => (
 			long => {
 				'daylight' => q(Folklando Salų vasaros laikas),
 				'generic' => q(Folklando Salų laikas),
-				'standard' => q(Folklandų salų žiemos laikas),
+				'standard' => q(Folklandų Salų žiemos laikas),
 			},
 		},
 		'Fiji' => {
@@ -8230,6 +11299,20 @@ has 'time_zone_names' => (
 				'standard' => q(Mosono laikas),
 			},
 		},
+		'Mexico_Northwest' => {
+			long => {
+				'daylight' => q(Šiaurės Vakarų Meksikos vasaros laikas),
+				'generic' => q(Šiaurės Vakarų Meksikos laikas),
+				'standard' => q(Šiaurės Vakarų Meksikos žiemos laikas),
+			},
+		},
+		'Mexico_Pacific' => {
+			long => {
+				'daylight' => q(Meksikos Ramiojo vandenyno vasaros laikas),
+				'generic' => q(Meksikos Ramiojo vandenyno laikas),
+				'standard' => q(Meksikos Ramiojo vandenyno žiemos laikas),
+			},
+		},
 		'Mongolia' => {
 			long => {
 				'daylight' => q(Ulan Batoro vasaros laikas),
@@ -8355,6 +11438,9 @@ has 'time_zone_names' => (
 		'Pacific/Guam' => {
 			exemplarCity => q#Guamas#,
 		},
+		'Pacific/Honolulu' => {
+			exemplarCity => q#Honolulu#,
+		},
 		'Pacific/Johnston' => {
 			exemplarCity => q#Džonstonas#,
 		},
@@ -8376,6 +11462,9 @@ has 'time_zone_names' => (
 		'Pacific/Midway' => {
 			exemplarCity => q#Midvėjus#,
 		},
+		'Pacific/Nauru' => {
+			exemplarCity => q#Nauru#,
+		},
 		'Pacific/Niue' => {
 			exemplarCity => q#Niujė#,
 		},
@@ -8388,6 +11477,9 @@ has 'time_zone_names' => (
 		'Pacific/Pago_Pago' => {
 			exemplarCity => q#Pago Pagas#,
 		},
+		'Pacific/Palau' => {
+			exemplarCity => q#Palau#,
+		},
 		'Pacific/Pitcairn' => {
 			exemplarCity => q#Pitkerno sala#,
 		},
@@ -8397,6 +11489,9 @@ has 'time_zone_names' => (
 		'Pacific/Port_Moresby' => {
 			exemplarCity => q#Port Morsbis#,
 		},
+		'Pacific/Rarotonga' => {
+			exemplarCity => q#Rarotonga#,
+		},
 		'Pacific/Saipan' => {
 			exemplarCity => q#Saipanas#,
 		},
@@ -8405,6 +11500,9 @@ has 'time_zone_names' => (
 		},
 		'Pacific/Tarawa' => {
 			exemplarCity => q#Tarava#,
+		},
+		'Pacific/Tongatapu' => {
+			exemplarCity => q#Tongatapu#,
 		},
 		'Pacific/Truk' => {
 			exemplarCity => q#Čukas#,

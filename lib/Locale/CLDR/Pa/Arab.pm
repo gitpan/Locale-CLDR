@@ -1,11 +1,11 @@
 package Locale::CLDR::Pa::Arab;
 # This file auto generated from Data\common\main\pa_Arab.xml
-#	on Sat 21 Jun 12:47:03 am GMT
-# XML file generated 2013-08-25 22:28:21 -0500 (Sun, 25 Aug 2013)
+#	on Thu  2 Oct  1:19:03 pm GMT
+# XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.25.4');
+our $VERSION = version->declare('v0.26.0');
 
 use v5.10;
 use mro 'c3';
@@ -22,7 +22,7 @@ has 'display_name_language' => (
 	default		=> sub { 
 		 sub {
 			 my %languages = (
-				'pa' => 'پنجاب',
+				'pa' => 'پنجابی',
 
 			);
 			if (@_) {
@@ -40,7 +40,7 @@ has 'display_name_script' => (
 	default		=> sub {
 		sub {
 			my %scripts = (
-			'Arab' => 'العربية',
+			'Arab' => 'عربی',
  			'Guru' => 'گُرمُکھی',
 
 			);
@@ -129,17 +129,8 @@ has 'number_symbols' => (
 	init_arg	=> undef,
 	default		=> sub { {
 		'latn' => {
-			'decimal' => q(),
-			'exponential' => q(),
-			'group' => q(),
-			'infinity' => q(),
-			'list' => q(),
 			'minusSign' => q(‎-),
-			'nan' => q(),
-			'perMille' => q(),
-			'percentSign' => q(),
 			'plusSign' => q(‎+),
-			'superscriptingExponent' => q(),
 		},
 	} }
 );
@@ -307,14 +298,14 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'gregorian' => {
+		'generic' => {
 			HHmmss => q{HH:mm:ss},
 			Md => q{d/M},
 			mmss => q{mm:ss},
 			yMMM => q{MMM y},
 			yQQQ => q{QQQ y},
 		},
-		'generic' => {
+		'gregorian' => {
 			HHmmss => q{HH:mm:ss},
 			Md => q{d/M},
 			mmss => q{mm:ss},
