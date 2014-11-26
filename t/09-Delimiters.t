@@ -6,7 +6,7 @@ use warnings;
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
-use Test::More tests => 7;
+use Test::More tests => 4;
 use Test::Exception;
 
 use ok 'Locale::CLDR';
@@ -18,11 +18,3 @@ $quoted = $locale->quote("z $quoted z");
 is($quoted, '“z ‘abc’ z”', 'Quote en_GB');
 $quoted = $locale->quote("dd 'z $quoted z dd");
 is($quoted, '“dd \'z ‘z “abc” z’ z dd”', 'Quote en_GB');
-
-$locale = Locale::CLDR->new('fr');
-$quoted = $locale->quote('abc');
-is($quoted, '«abc»', 'Quote fr');
-$quoted = $locale->quote("z $quoted z");
-is($quoted, "«z «abc» z»", 'Quote fr');
-$quoted = $locale->quote("dd 'z $quoted z dd");
-is($quoted, "«dd \'z «z «abc» z» z dd»", 'Quote fr');

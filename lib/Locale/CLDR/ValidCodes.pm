@@ -1,11 +1,11 @@
 package Locale::CLDR::ValidCodes;
 # This file auto generated from Data\common\supplemental\supplementalMetadata.xml
-#	on Thu  2 Oct 10:05:41 am GMT
+#	on Mon 24 Nov  7:58:22 am GMT
 # XML file generated 2014-09-17 00:43:03 -0500 (Wed, 17 Sep 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.26.0');
+our $VERSION = version->declare('v0.26.2');
 
 use v5.10;
 use mro 'c3';

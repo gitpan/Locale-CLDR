@@ -1,11 +1,11 @@
 package Locale::CLDR::EraBoundries;
 # This file auto generated from Data.xml
-#	on Thu  2 Oct 10:05:43 am GMT
+#	on Mon 24 Nov  7:58:24 am GMT
 # XML file generated 2014-09-11 12:17:53 -0500 (Thu, 11 Sep 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.26.0');
+our $VERSION = version->declare('v0.26.2');
 
 use v5.10;
 use mro 'c3';

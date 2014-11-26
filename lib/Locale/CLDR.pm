@@ -8,7 +8,7 @@ Locale::CLDR - A Module to create locale objects with localisation data from the
 
 =head1 VERSION
 
-Version 0.26.1
+Version 0.26.2
 
 =head1 SYNOPSIS
 
@@ -39,7 +39,7 @@ or
 
 use v5.10;
 use version;
-our $VERSION = version->declare('v0.26.1');
+our $VERSION = version->declare('v0.26.2');
 
 use open ':encoding(utf8)';
 use utf8;
@@ -67,26 +67,8 @@ BEGIN {
 		*fc = \&CORE::fc;
 	}
 	else {
-		# This code taken from Unicode::CaseFold by Andrew Rodland
-		require Unicode::UCD;
-		*fc = sub {
-			my ($string) = @_;
-			
-			my $out = "";
-
-			for my $codepoint (unpack "U*", $string) {
-				my $mapping = Unicode::UCD::casefold($codepoint);
-				my @cp;
-				if (!defined $mapping) {
-					@cp = ($codepoint);
-				} else {
-					@cp = map hex, split / /, $mapping->{'full'};
-				}
-				$out .= pack "U*", @cp;
-			}
-
-			return $out;
-		};
+		# We only use fc() with code that expects Perl v5.18 or above
+		*fc = sub {};
 	}
 }
 
@@ -650,14 +632,14 @@ sub _build_module {
 	# Note the order we push these onto the stack is important
 	@path = join '::', @likely_path;
 	push @path, join '::', $likely_path[0], 'Any', $likely_path[2];
-	push @path, join '::', @likely_path[0 .. 1], 'Any';
-	push @path, join '::', $likely_path[0], 'Any', 'Any';
+	push @path, join '::', @likely_path[0 .. 1];
+	push @path, join '::', $likely_path[0];
 	
 	# Now we go through the path loading each module
 	# And calling new on it. 
 	my $module;
 	foreach my $module_name (@path) {
-		$module_name = "Locale::CLDR::$module_name";
+		$module_name = "Locale::CLDR::Locales::$module_name";
 		eval { Class::Load::load_class($module_name); };
 		next if $@;
 		$module = $module_name->new;
@@ -667,9 +649,10 @@ sub _build_module {
 	# If we only have the root module then we have a problem as
 	# none of the language specific data is in the root. So we
 	# fall back to the en module
-	if (! $module || ref $module eq 'Locale::CLDR::Root') {
-		Class::Load::load_class('Locale::CLDR::En');
-		$module = Locale::CLDR::En->new
+
+	if ( ref $module eq 'Locale::CLDR::Locales::Root') {
+		Class::Load::load_class('Locale::CLDR::Locales::En');
+		$module = Locale::CLDR::Locales::En->new
 	}
 
 	return $module;
@@ -960,7 +943,7 @@ foreach my $property (qw(
 =item date_format_medium 
 
 =item date_format_short
-	
+
 =item time_format_full
 
 =item time_format_long
@@ -968,11 +951,11 @@ foreach my $property (qw(
 =item time_format_medium
 
 =item time_format_short
-	
+
 =item datetime_format_full
 
 =item datetime_format_long
-	
+
 =item datetime_format_medium
 
 =item datetime_format_short
@@ -1065,7 +1048,7 @@ the locale's language and script
 
 =item format_for($date_time_format)
 
-This method takes a CLDR datetime format and returns
+This method takes a CLDR date time format and returns
 the localised version of the format.
 
 =cut
@@ -1179,13 +1162,13 @@ sub BUILDARGS {
 		foreach ($language, $script, $territory, $variant) {
 			$_ = '' unless defined $_;
 		}
-			
+
 		%args = (
-			language_id	=> $language,
+			language_id		=> $language,
 			script_id		=> $script,
 			territory_id	=> $territory,
 			variant_id		=> $variant,
-			extensions	=> $extensions,
+			extensions		=> $extensions,
 		);
 	}
 
@@ -1488,7 +1471,7 @@ sub locale_name {
 		return $display_name if defined $display_name;
 	}
 
-	# $name can be a string or a Locale::CLDR::*
+	# $name can be a string or a Locale::CLDR::Locales::*
 	if (! ref $name) {
 		$name = Locale::CLDR->new($name);
 	}
@@ -2104,7 +2087,7 @@ sub is_exemplar_character {
 =item index_characters()
 
 Returns an array ref of characters normally used when creating 
-an index and ordered appropriatly.
+an index and ordered appropriately.
 
 =cut
 
@@ -2462,8 +2445,8 @@ sub _unit_compound {
 	my @bundles = $self->_find_bundle('units');
 	my $format;
 	foreach my $bundle (@bundles) {
-		if (exists $bundle->units()->{$type}{per}{''}) {
-			$format = $bundle->units()->{$type}{per}{''};
+		if (exists $bundle->units()->{$type}{per}{1}) {
+			$format = $bundle->units()->{$type}{per}{1};
 			last;
 		}
 	}
@@ -2475,8 +2458,8 @@ sub _unit_compound {
 		foreach my $alias (@aliases) {
 			$type = $alias->unit_alias()->{$original_type};
 			foreach my $bundle (@bundles) {
-				if (exists $bundle->units()->{$type}{per}{''}) {
-					$format = $bundle->units()->{$type}{per}{''};
+				if (exists $bundle->units()->{$type}{per}{1}) {
+					$format = $bundle->units()->{$type}{per}{1};
 					last;
 				}
 			}
@@ -2557,7 +2540,8 @@ sub is_no {
 
 =head2 Transliteration
 
-This method requires Perl version 5.18 or above to use
+This method requires Perl version 5.18 or above to use and for you to have
+installed the optional C<Bundle::CLDR::Transformations>
 
 =over 4
 
@@ -2672,7 +2656,7 @@ sub _transformation_transform {
 		}
 	}
 	return $text;
-}		
+}
 
 sub _transform_convert {
 	my ($self, $text, $rules) = @_;
@@ -2723,7 +2707,8 @@ sub list {
 	
 	my %list_data;
 	foreach my $bundle (reverse @bundles) {
-		%list_data = %{$bundle->listPatterns};
+		my %listPatterns = %{$bundle->listPatterns};
+		@list_data{keys %listPatterns} = values %listPatterns;
 	}
 	
 	if (my $pattern = $list_data{scalar @data}) {
@@ -3651,7 +3636,7 @@ This method returns a hash that maps valid variant codes to their valid aliases
 =head2 Information about weeks
 
 There are no standard codes for the days of the weeks so CLDR uses the following
-three tetter codes to represent unlocalised days
+three letter codes to represent unlocalised days
 
 =over 4
 
@@ -3817,7 +3802,7 @@ releases.
 $for_cash is only used during currency formatting. If true then cash rounding
 will be used otherwise financial rounding will be used. 
 
-This function also handles rule based number formatting. If $format is string equivilant
+This function also handles rule based number formatting. If $format is string equivalent
 to one of the current locale's public rule based number formats then $number will be 
 formatted according to that rule. 
 
@@ -3991,7 +3976,7 @@ used the territory of the current locale.
 
 =back
 
-=for comment
+=begin comment
 
 =head2 Collation
 
@@ -4004,11 +3989,11 @@ try and match the API from L<Unicode::Collate> as much as possible and add tailo
 
 =back
 
-=end
+=end comment
 
 =cut
 
-=for comment
+=begin comment
 
 sub collation {
 	my ($self, %params) = @_;
@@ -4046,7 +4031,7 @@ sub _default_collation_strength {
 	return 3;
 }
 
-=end
+=end comment
 
 =head1 AUTHOR
 
@@ -4093,11 +4078,6 @@ Everyone at the Unicode Consortium for providing the data.
 
 Karl Williams for his tireless work on Unicode in the Perl 
 regex engine.
-
-Andrew Rodland for his L<Unicode::CaseFold> module that I
-pinched the fc() code from for early versions of Perl that
-don't have this function.
-
 
 =head1 COPYRIGHT & LICENSE
 

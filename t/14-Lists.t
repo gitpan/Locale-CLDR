@@ -11,9 +11,9 @@ use Test::Exception;
 
 use ok 'Locale::CLDR';
 
-my $locale = Locale::CLDR->new('fr');
+my $locale = Locale::CLDR->new('en');
 is($locale->list(), '', 'Empty list');
 is($locale->list(1), '1', 'One element list');
-is($locale->list(qw(1 2)), '1 et 2', 'Two element list');
-is($locale->list(qw(1 2 3)), '1, 2 et 3', 'Three element list');
-is($locale->list(qw(1 2 3 4)), '1, 2, 3 et 4', 'Four element list');
+is($locale->list(qw(1 2)), '1, 2', 'Two element list');
+is($locale->list(qw(1 2 3)), '1, 2, 3', 'Three element list');
+is($locale->list(qw(1 2 3 4)), '1, 2, 3, 4', 'Four element list');

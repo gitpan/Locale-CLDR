@@ -6,12 +6,12 @@ use warnings;
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
-use Test::More tests => 64;
+use Test::More tests => 60;
 use Test::Exception;
 
 use ok 'Locale::CLDR';
 
-my $locale = Locale::CLDR->new('en_GB');
+my $locale = Locale::CLDR->new('en');
 my $months = $locale->month_format_wide();
 is_deeply ($months, [qw( January February March April May June July August September October November December )], 'Month format wide');
 $months = $locale->month_format_abbreviated();
@@ -97,47 +97,39 @@ $day_period_data = $locale->get_day_period('1210');
 is($day_period_data, 'pm', 'Day period data PM');
 
 my $date_format = $locale->date_format_full;
-is($date_format, 'EEEE, d MMMM y', 'Date Format Full');
+is($date_format, 'EEEE, MMMM d, y', 'Date Format Full');
 $date_format = $locale->date_format_long;
-is($date_format, 'd MMMM y', 'Date Format Long');
+is($date_format, 'MMMM d, y', 'Date Format Long');
 $date_format = $locale->date_format_medium;
-is($date_format, 'd MMM y', 'Date Format Medium');
+is($date_format, 'MMM d, y', 'Date Format Medium');
 $date_format = $locale->date_format_short;
-is($date_format, 'dd/MM/y', 'Date Format Short');
+is($date_format, 'M/d/yy', 'Date Format Short');
 
 my $time_format = $locale->time_format_full;
-is($time_format, 'HH:mm:ss zzzz', 'Time Format Full');
+is($time_format, 'h:mm:ss a zzzz', 'Time Format Full');
 $time_format = $locale->time_format_long;
-is($time_format, 'HH:mm:ss z', 'Time Format Long');
+is($time_format, 'h:mm:ss a z', 'Time Format Long');
 $time_format = $locale->time_format_medium;
-is($time_format, 'HH:mm:ss', 'Time Format Medium');
+is($time_format, 'h:mm:ss a', 'Time Format Medium');
 $time_format = $locale->time_format_short;
-is($time_format, 'HH:mm', 'Time Format Short');
+is($time_format, 'h:mm a', 'Time Format Short');
 
 my $date_time_format = $locale->datetime_format_full;
-is($date_time_format, "EEEE, d MMMM y 'at' HH:mm:ss zzzz", 'Date Time Format Full');
+is($date_time_format, "EEEE, MMMM d, y 'at' h:mm:ss a zzzz", 'Date Time Format Full');
 $date_time_format = $locale->datetime_format_long;
-is($date_time_format, "d MMMM y 'at' HH:mm:ss z", 'Date Time Format Long');
+is($date_time_format, "MMMM d, y 'at' h:mm:ss a z", 'Date Time Format Long');
 $date_time_format = $locale->datetime_format_medium;
-is($date_time_format, 'd MMM y, HH:mm:ss', 'Date Time Format Medium');
+is($date_time_format, 'MMM d, y, h:mm:ss a', 'Date Time Format Medium');
 $date_time_format = $locale->datetime_format_short;
-is($date_time_format, 'dd/MM/y, HH:mm', 'Date Time Format Short');
+is($date_time_format, 'M/d/yy, h:mm a', 'Date Time Format Short');
 
-is ($locale->prefers_24_hour_time(), 1, 'Prefers 24 hour time');
+is ($locale->prefers_24_hour_time(), 0, 'Prefers 24 hour time');
 is ($locale->first_day_of_week(), 7, 'First day of week recoded for DateTime');
 
 is($locale->era_boundry( gregorian => -12 ), 0, 'Gregorian era');
 is($locale->era_boundry( japanese => 9610217 ), 38, 'Japanese era');
 
-is($locale->week_data_min_days(), 4, 'Number of days a week must have in GB before it counts as the first week of a year');
-my $locale_fr = Locale::CLDR->new('fr');
-is($locale_fr->week_data_min_days(), 4, 'Number of days a week must have in FR before it counts as the first week of a year');
-
-is($locale->week_data_first_day(), 'sun', 'First day of the week in GB when displaying calendars');
-is($locale_fr->week_data_first_day(), 'mon', 'First day of the week in FR when displaying calendars');
-
-is($locale->week_data_weekend_start(), 'sat', 'First day of the week end in GB');
-is($locale_fr->week_data_weekend_start(), 'sat', 'First day of the week end in FR');
-
-is($locale->week_data_weekend_end(), 'sun', 'Last day of the week end in GB');
-is($locale_fr->week_data_weekend_end(), 'sun', 'Last day of the week end in FR');
+is($locale->week_data_min_days(), 1, 'Number of days a week must have in en before it counts as the first week of a year');
+is($locale->week_data_first_day(), 'sun', 'First day of the week in en when displaying calendars');
+is($locale->week_data_weekend_start(), 'sat', 'First day of the week end in en');
+is($locale->week_data_weekend_end(), 'sun', 'Last day of the week end in en');

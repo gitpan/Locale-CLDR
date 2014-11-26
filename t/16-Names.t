@@ -6,27 +6,17 @@ use warnings;
 use utf8;
 use if $^V ge v5.12.0, feature => 'unicode_strings';
 
-use Test::More tests => 43;
+use Test::More tests => 20;
 use Test::Exception;
 
 use ok 'Locale::CLDR';
 
 my $locale = Locale::CLDR->new('en_GB');
 
-my $other_locale = Locale::CLDR->new('fr_Ca');
 is($locale->locale_name(), 'British English', 'Locale name from current locale');
 is($locale->locale_name('fr_CA'), 'Canadian French', 'Locale name from string');
-is($locale->locale_name($other_locale), 'Canadian French', 'Locale name from other locale object');
-is($other_locale->locale_name(), 'français canadien', 'Locale name from current locale');
-is($other_locale->locale_name('en_GB'), 'anglais britannique', 'Locale name from string');
-is($other_locale->locale_name($locale), 'anglais britannique', 'Locale name from other locale object');
-
 is($locale->language_name(), 'English', 'Language name from current locale');
 is($locale->language_name('fr'), 'French', 'Language name from string');
-is($locale->language_name($other_locale), 'French', 'Language name from other locale object');
-is($other_locale->language_name(), 'français', 'Language name from current locale');
-is($other_locale->language_name('en'), 'anglais', 'Language name from string');
-is($other_locale->language_name($locale), 'anglais', 'Language name from other locale object');
 
 my $all_languages = {
     'aa' => 'Afar',
@@ -174,9 +164,9 @@ my $all_languages = {
 	'en_AU' => 'Australian English',
 	'en_CA' => 'Canadian English',
 	'en_GB' => 'British English',
-	'en_GB@alt=short' => 'UK English',
+	'en_GB@alt=short' => 'U.K. English',
 	'en_US' => 'American English',
-	'en_US@alt=short' => 'US English',
+	'en_US@alt=short' => 'U.S. English',
 	'enm' => 'Middle English',
 	'eo' => 'Esperanto',
 	'es' => 'Spanish',
@@ -613,7 +603,7 @@ my $all_languages = {
 	'vun' => 'Vunjo',
 	'wa' => 'Walloon',
 	'wae' => 'Walser',
-	'wal' => 'Walamo',
+	'wal' => 'Wolaytta',
 	'war' => 'Waray',
 	'was' => 'Washo',
 	'wo' => 'Wolof',
@@ -649,7 +639,7 @@ is_deeply($locale->all_languages, $all_languages, 'All languages');
 
 is($locale->script_name(), '', 'Script name from current locale');
 is($locale->script_name('latn'), 'Latin', 'Script name from string');
-is($locale->script_name($other_locale), '', 'Script name from other locale object');
+
 
 my $all_scripts = {
 	'Afak' => 'Afaka',
@@ -827,10 +817,6 @@ is_deeply($locale->all_scripts, $all_scripts, 'All scripts');
 
 is($locale->territory_name(), 'United Kingdom', 'Territory name from current locale');
 is($locale->territory_name('fr'), 'France', 'Territory name from string');
-is($locale->territory_name($other_locale), 'Canada', 'Territory name from other locale object');
-is($other_locale->territory_name(), 'Canada', 'Territory name from current locale');
-is($other_locale->territory_name('GB'), 'Royaume-Uni', 'Territory name from string');
-is($other_locale->territory_name($locale), 'Royaume-Uni', 'Territory name from other locale object');
 
 my $all_territories = {
 	'001' => 'World',
@@ -849,7 +835,7 @@ my $all_territories = {
 	'029' => 'Caribbean',
 	'030' => 'Eastern Asia',
 	'034' => 'Southern Asia',
-	'035' => 'South-Eastern Asia',
+	'035' => 'Southeast Asia',
 	'039' => 'Southern Europe',
 	'053' => 'Australasia',
 	'054' => 'Melanesia',
@@ -867,7 +853,7 @@ my $all_territories = {
 	'AD' => 'Andorra',
 	'AE' => 'United Arab Emirates',
 	'AF' => 'Afghanistan',
-	'AG' => 'Antigua and Barbuda',
+	'AG' => 'Antigua & Barbuda',
 	'AI' => 'Anguilla',
 	'AL' => 'Albania',
 	'AM' => 'Armenia',
@@ -881,7 +867,7 @@ my $all_territories = {
 	'AW' => 'Aruba',
 	'AX' => 'Åland Islands',
 	'AZ' => 'Azerbaijan',
-	'BA' => 'Bosnia and Herzegovina',
+	'BA' => 'Bosnia & Herzegovina',
 	'BA@alt=short' => 'Bosnia',
 	'BB' => 'Barbados',
 	'BD' => 'Bangladesh',
@@ -891,7 +877,7 @@ my $all_territories = {
 	'BH' => 'Bahrain',
 	'BI' => 'Burundi',
 	'BJ' => 'Benin',
-	'BL' => 'Saint Barthélemy',
+	'BL' => 'St. Barthélemy',
 	'BM' => 'Bermuda',
 	'BN' => 'Brunei',
 	'BO' => 'Bolivia',
@@ -933,7 +919,7 @@ my $all_territories = {
 	'DM' => 'Dominica',
 	'DO' => 'Dominican Republic',
 	'DZ' => 'Algeria',
-	'EA' => 'Ceuta and Melilla',
+	'EA' => 'Ceuta & Melilla',
 	'EC' => 'Ecuador',
 	'EE' => 'Estonia',
 	'EG' => 'Egypt',
@@ -951,7 +937,7 @@ my $all_territories = {
 	'FR' => 'France',
 	'GA' => 'Gabon',
 	'GB' => 'United Kingdom',
-	'GB@alt=short' => 'UK',
+	'GB@alt=short' => 'U.K.',
 	'GD' => 'Grenada',
 	'GE' => 'Georgia',
 	'GF' => 'French Guiana',
@@ -996,7 +982,7 @@ my $all_territories = {
 	'KH' => 'Cambodia',
 	'KI' => 'Kiribati',
 	'KM' => 'Comoros',
-	'KN' => 'Saint Kitts and Nevis',
+	'KN' => 'St. Kitts & Nevis',
 	'KP' => 'North Korea',
 	'KR' => 'South Korea',
 	'KW' => 'Kuwait',
@@ -1004,7 +990,7 @@ my $all_territories = {
 	'KZ' => 'Kazakhstan',
 	'LA' => 'Laos',
 	'LB' => 'Lebanon',
-	'LC' => 'Saint Lucia',
+	'LC' => 'St. Lucia',
 	'LI' => 'Liechtenstein',
 	'LK' => 'Sri Lanka',
 	'LR' => 'Liberia',
@@ -1017,7 +1003,7 @@ my $all_territories = {
 	'MC' => 'Monaco',
 	'MD' => 'Moldova',
 	'ME' => 'Montenegro',
-	'MF' => 'Saint Martin',
+	'MF' => 'St. Martin',
 	'MG' => 'Madagascar',
 	'MH' => 'Marshall Islands',
 	'MK' => 'Macedonia',
@@ -1059,7 +1045,7 @@ my $all_territories = {
 	'PH' => 'Philippines',
 	'PK' => 'Pakistan',
 	'PL' => 'Poland',
-	'PM' => 'Saint Pierre and Miquelon',
+	'PM' => 'St. Pierre & Miquelon',
 	'PN' => 'Pitcairn Islands',
 	'PR' => 'Puerto Rico',
 	'PS' => 'Palestinian Territories',
@@ -1080,9 +1066,9 @@ my $all_territories = {
 	'SD' => 'Sudan',
 	'SE' => 'Sweden',
 	'SG' => 'Singapore',
-	'SH' => 'Saint Helena',
+	'SH' => 'St. Helena',
 	'SI' => 'Slovenia',
-	'SJ' => 'Svalbard and Jan Mayen',
+	'SJ' => 'Svalbard & Jan Mayen',
 	'SK' => 'Slovakia',
 	'SL' => 'Sierra Leone',
 	'SM' => 'San Marino',
@@ -1090,13 +1076,13 @@ my $all_territories = {
 	'SO' => 'Somalia',
 	'SR' => 'Suriname',
 	'SS' => 'South Sudan',
-	'ST' => 'São Tomé and Príncipe',
+	'ST' => 'São Tomé & Príncipe',
 	'SV' => 'El Salvador',
 	'SX' => 'Sint Maarten',
 	'SY' => 'Syria',
 	'SZ' => 'Swaziland',
 	'TA' => 'Tristan da Cunha',
-	'TC' => 'Turks and Caicos Islands',
+	'TC' => 'Turks & Caicos Islands',
 	'TD' => 'Chad',
 	'TF' => 'French Southern Territories',
 	'TG' => 'Togo',
@@ -1109,7 +1095,7 @@ my $all_territories = {
 	'TN' => 'Tunisia',
 	'TO' => 'Tonga',
 	'TR' => 'Turkey',
-	'TT' => 'Trinidad and Tobago',
+	'TT' => 'Trinidad & Tobago',
 	'TV' => 'Tuvalu',
 	'TW' => 'Taiwan',
 	'TZ' => 'Tanzania',
@@ -1117,7 +1103,7 @@ my $all_territories = {
 	'UG' => 'Uganda',
 	'UM' => 'U.S. Outlying Islands',
 	'US' => 'United States',
-	'US@alt=short' => 'US',
+	'US@alt=short' => 'U.S.',
 	'UY' => 'Uruguay',
 	'UZ' => 'Uzbekistan',
 	'VA' => 'Vatican City',
@@ -1127,7 +1113,7 @@ my $all_territories = {
 	'VI' => 'U.S. Virgin Islands',
 	'VN' => 'Vietnam',
 	'VU' => 'Vanuatu',
-	'WF' => 'Wallis and Futuna',
+	'WF' => 'Wallis & Futuna',
 	'WS' => 'Samoa',
 	'XK' => 'Kosovo',
 	'YE' => 'Yemen',
@@ -1142,23 +1128,12 @@ is_deeply($locale->all_territories(), $all_territories, 'All Territories');
 
 is($locale->variant_name(), '', 'Variant name from current locale');
 is($locale->variant_name('BOHORIC'), 'Bohorič alphabet', 'Variant name from string');
-is($locale->variant_name($other_locale), '', 'Variant name from other locale object');
-is($other_locale->variant_name(), '', 'Variant name from current locale');
-is($other_locale->variant_name('BOHORIC'), 'alphabet Bohorič', 'Variant name from string');
-is($other_locale->variant_name($locale), '', 'Variant name from other locale object');
-
-is($locale->key_name('colCaseLevel'), 'Case-Sensitive Sorting', 'Key name from string');
-is($other_locale->key_name('colCaseLevel'), 'Tri sensible à la casse', 'Key name from string');
+is($locale->key_name('colCaseLevel'), 'Case Sensitive Sorting', 'Key name from string');
 
 is($locale->type_name(colCaseFirst => 'lower'), 'Sort Lowercase First', 'Type name from string');
-is($other_locale->type_name(colCaseFirst => 'lower'), q(Trier avec les minuscules d’abord), 'Type name from string');
 
 is($locale->measurement_system_name('metric'), 'Metric', 'Measurement system name English Metric');
 is($locale->measurement_system_name('us'), 'US', 'Measurement system name English US');
 is($locale->measurement_system_name('uk'), 'UK', 'Measurement system name English UK');
-is($other_locale->measurement_system_name('METRIC'), 'métrique', 'Measurement system name French Metric');
-is($other_locale->measurement_system_name('US'), 'américain', 'Measurement system name French US');
-is($other_locale->measurement_system_name('UK'), 'impérial', 'Measurement system name French UK');
 
 is($locale->transform_name('Numeric'), 'Numeric', 'Transform name from string');
-is($other_locale->transform_name('Numeric'), 'Chiffres', 'Transform name from string');

@@ -10,7 +10,7 @@ use Test::More tests => 558;
 
 use ok 'Locale::CLDR';
 
-my $locale = Locale::CLDR->new('br');
+my $locale = Locale::CLDR->new('en');
 
 #                   0    1   2   3   4         5 .. 8       9       10 .. 19,            20    21  22 23   24      25 .. 28       29   30 .. 69
 my @results = ((((qw( other one two few few ), ('other') x 4, 'few'), ('other') x 10), (qw( other one two few few ), ('other') x 4, 'few') x 5,
@@ -18,7 +18,7 @@ my @results = ((((qw( other one two few few ), ('other') x 4, 'few'), ('other') 
       ('other') x 10, qw( other one two few few ), ('other') x 4, 'few', ('other') x 10 ) x  2);
 
 for (my $count = 0; $count < @results; $count++) {
-	is ($locale->plural($count), $results[$count], "Plural for $count in br");
+	is ($locale->plural($count), $results[$count], "Plural for $count in en");
 }
 
 $locale = Locale::CLDR->new('ar');
