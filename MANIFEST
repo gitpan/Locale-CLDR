@@ -1,4 +1,5 @@
 Build.PL
+CHANGES
 lib/Locale/CLDR.pm
 lib/Locale/CLDR/CalendarPreferences.pm
 lib/Locale/CLDR/Currencies.pm
