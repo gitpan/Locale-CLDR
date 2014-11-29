@@ -1,6 +1,6 @@
 package Locale::CLDR::WeekData;
 # This file auto generated from Data.xml
-#	on Mon 24 Nov  7:58:56 am GMT
+#	on Fri 28 Nov 11:15:26 pm GMT
 # XML file generated 2014-09-11 12:17:53 -0500 (Thu, 11 Sep 2014)
 
 use version;

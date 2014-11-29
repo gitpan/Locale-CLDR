@@ -1,6 +1,6 @@
 package Locale::CLDR::Locales::En::Any::Us;
 # This file auto generated from Data\common\main\en_US.xml
-#	on Mon 24 Nov  8:51:56 am GMT
+#	on Sat 29 Nov 12:10:31 am GMT
 # XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;

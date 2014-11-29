@@ -15,30 +15,26 @@ use Moose::Role;
 sub format_number {
 	my ($self, $number, $format, $currency, $for_cash) = @_;
 	
-	# Check if we want to format a none numeric number type
-	if(!defined $format) {
-		my $numbering_system = $self->default_numbering_system();
-		if ($self->numbering_system->{$numbering_system}{type} eq 'algorithmic') {
-			$format = $self->numbering_system->{$numbering_system}{data};
-		}
-		else {
-			$format = '0';
-		}
-	}
-
-	# Some of these algorithmic formats are in locale/type/name format
-	if (my ($locale_id, $type, $format) = $format =~ m(^(.*?)/(.*?)/(.*?)$)) {
-		my $locale = Locale::CLDR->new($locale_id);
-		return $locale->format_number($number, $format);
-	}
-	
 	# First check to see if this is an algorithmic format
 	my @valid_formats = $self->_get_valid_algorithmic_formats();
 	
 	if (grep {$_ eq $format} @valid_formats) {
 		return $self->_algorithmic_number_format($number, $format);
 	}
-		
+	
+	# Check if the locales numbering system is algorithmic. If so ignore the format
+	my $numbering_system = $self->default_numbering_system();
+	if ($self->numbering_system->{$numbering_system}{type} eq 'algorithmic') {
+		$format = $self->numbering_system->{$numbering_system}{data};
+	}
+	
+	$format //= '0';
+
+	# Some of these algorithmic formats are in locale/type/name format
+	if (my ($locale_id, $type, $format) = $format =~ m(^(.*?)/(.*?)/(.*?)$)) {
+		my $locale = Locale::CLDR->new($locale_id);
+		return $locale->format_number($number, $format);
+	}
 	
 	my $currency_data;
 	
