@@ -1,11 +1,11 @@
 package Locale::CLDR::CalendarPreferences;
 # This file auto generated from Data.xml
-#	on Sat 29 Nov  1:20:24 pm GMT
+#	on Sun 30 Nov  1:31:46 am GMT
 # XML file generated 2014-09-11 12:17:53 -0500 (Thu, 11 Sep 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.26.2');
+our $VERSION = version->declare('v0.26.3');
 
 use v5.10;
 use mro 'c3';
