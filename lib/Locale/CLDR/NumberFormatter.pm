@@ -2,7 +2,7 @@ package Locale::CLDR::NumberFormatter;
 
 use version;
 
-our $VERSION = version->declare('v0.26.3');
+our $VERSION = version->declare('v0.26.4');
 
 
 use v5.10;

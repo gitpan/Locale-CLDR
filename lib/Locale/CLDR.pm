@@ -8,7 +8,7 @@ Locale::CLDR - A Module to create locale objects with localisation data from the
 
 =head1 VERSION
 
-Version 0.26.3
+Version 0.26.4
 
 =head1 SYNOPSIS
 
@@ -39,7 +39,7 @@ or
 
 use v5.10;
 use version;
-our $VERSION = version->declare('v0.26.3');
+our $VERSION = version->declare('v0.26.4');
 
 use open ':encoding(utf8)';
 use utf8;
@@ -3139,7 +3139,8 @@ sub _build_any_era {
 						
 			my $result = $eras->{$default_calendar}{$width};
 			
-			my @result = map {$result->{$_}} sort { $a <=> $b } keys %$result;
+			my @result;
+			@result[keys %$result] = values %$result;
 			
 			return \@result if keys %$result;
 		}
