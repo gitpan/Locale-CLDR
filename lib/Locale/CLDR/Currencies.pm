@@ -1,11 +1,11 @@
 package Locale::CLDR::Currencies;
 # This file auto generated from Data.xml
-#	on Fri 19 Dec 12:43:56 am GMT
+#	on Fri 26 Dec  4:30:48 pm GMT
 # XML file generated 2014-09-11 12:17:53 -0500 (Thu, 11 Sep 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.26.4');
+our $VERSION = version->declare('v0.26.5');
 
 use v5.10;
 use mro 'c3';

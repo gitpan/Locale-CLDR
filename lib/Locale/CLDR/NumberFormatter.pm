@@ -2,7 +2,7 @@ package Locale::CLDR::NumberFormatter;
 
 use version;
 
-our $VERSION = version->declare('v0.26.4');
+our $VERSION = version->declare('v0.26.5');
 
 
 use v5.10;
@@ -69,7 +69,8 @@ sub _format_number {
 sub add_currency_symbol {
 	my ($self, $format, $symbol) = @_;
 	
-	$format =~ s/¤/$symbol/;
+	
+	$format =~ s/¤/'$symbol'/;
 	
 	return $format;
 }
@@ -111,7 +112,7 @@ sub parse_number_format {
 	$format = $self->add_currency_symbol($format, $currency)
 		if defined $currency;
 	
-	my ($positive, $negative) = $format =~ /^((?:'[^']*')++ | [^';]+)+ (?:;(.+))?$/x;
+	my ($positive, $negative) = $format =~ /^((?:(?:'[^']*')*+[^';]+)+) (?:;(.+))?$/x;
 	
 	my $type = 'positive';
 	foreach my $to_parse ( $positive, $negative ) {
