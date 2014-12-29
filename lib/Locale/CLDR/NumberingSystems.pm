@@ -1,6 +1,6 @@
 package Locale::CLDR::NumberingSystems;
 # This file auto generated from Data\common\supplemental\numberingSystems.xml
-#	on Sun 28 Dec  2:46:58 pm GMT
+#	on Mon 29 Dec 10:06:58 am GMT
 # XML file generated 2014-02-13 11:57:02 -0600 (Thu, 13 Feb 2014)
 
 use version;

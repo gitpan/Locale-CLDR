@@ -62,5 +62,12 @@ is($locale_en->format_number(12345678, '#,####,00%'), '1234,5678,00%', 'Format p
 # RBNF
 is($locale_en->format_number(0, 'spellout-numbering-year'), 'zero', 'RBNF: Spell out year 0');
 is($locale_en->format_number('-0.0', 'spellout-numbering'), 'minus zero point zero', 'RBNF: Spell out -0.0');
-is($locale_en->format_number(123456, 'roman-lower'), '123,456', 'Number grater than max value');
-is($locale_en->format_number(1234, 'roman-lower'), 'mccxxxiv', 'Roman Number');
+eval {
+	is($locale_en->format_number(123456, 'roman-lower'), '123,456', 'Roman Number grater than max value');
+};
+diag $@ if $@;
+
+eval {
+	is($locale_en->format_number(1234, 'roman-lower'), 'mccxxxiv', 'Roman Number');
+};
+diag $@ if $@;

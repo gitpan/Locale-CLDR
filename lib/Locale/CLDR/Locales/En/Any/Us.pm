@@ -1,12 +1,6 @@
-=head1
-
-Locale::CLDR::Locales::En::Any::Us - Package for language English
-
-=cut
-
 package Locale::CLDR::Locales::En::Any::Us;
 # This file auto generated from Data\common\main\en_US.xml
-#	on Sun 28 Dec  3:42:38 pm GMT
+#	on Mon 29 Dec 11:04:34 am GMT
 # XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;

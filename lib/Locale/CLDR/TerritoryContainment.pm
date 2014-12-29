@@ -1,6 +1,6 @@
 package Locale::CLDR::TerritoryContainment;
 # This file auto generated from Data.xml
-#	on Sun 28 Dec  2:47:36 pm GMT
+#	on Mon 29 Dec 10:07:36 am GMT
 # XML file generated 2014-09-11 12:17:53 -0500 (Thu, 11 Sep 2014)
 
 use version;
