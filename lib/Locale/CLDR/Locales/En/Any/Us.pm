@@ -6,7 +6,7 @@ Locale::CLDR::Locales::En::Any::Us - Package for language English
 
 package Locale::CLDR::Locales::En::Any::Us;
 # This file auto generated from Data\common\main\en_US.xml
-#	on Tue 30 Dec 11:36:55 am GMT
+#	on Tue 30 Dec  9:45:43 pm GMT
 # XML file generated 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014)
 
 use version;

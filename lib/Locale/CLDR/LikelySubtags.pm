@@ -1,6 +1,6 @@
 package Locale::CLDR::LikelySubtags;
 # This file auto generated from Data\common\supplemental\likelySubtags.xml
-#	on Tue 30 Dec 10:43:09 am GMT
+#	on Tue 30 Dec  8:50:59 pm GMT
 # XML file generated 2014-09-11 12:17:53 -0500 (Thu, 11 Sep 2014)
 
 use version;

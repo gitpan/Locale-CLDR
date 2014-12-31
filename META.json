@@ -102,7 +102,7 @@
          "version" : "v0.26.7"
       }
    },
-   "release_status" : "unstable",
+   "release_status" : "stable",
    "resources" : {
       "license" : [
          "http://dev.perl.org/licenses/"
