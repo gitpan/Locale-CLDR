@@ -2,7 +2,7 @@ package Locale::CLDR::NumberFormatter;
 
 use version;
 
-our $VERSION = version->declare('v0.26.7');
+our $VERSION = version->declare('v0.26.8');
 
 
 use v5.10;
@@ -254,7 +254,16 @@ sub get_formatted_number {
 	
 	my @digits = $self->get_digits;
 	my @number_symbols_bundles = reverse $self->_find_bundle('number_symbols');
-	my %symbols = map { %{$_->number_symbols} } @number_symbols_bundles;
+	my %symbols;
+	foreach my $bundle (@number_symbols_bundles) {
+		my $current_symbols = $bundle->number_symbols;
+		foreach my $type (keys %$current_symbols) {
+			foreach my $symbol (keys %{$current_symbols->{$type}}) {
+				$symbols{$type}{$symbol} = $current_symbols->{$type}{$symbol};
+			}
+		}
+	}
+	
 	my $symbols_type = $self->default_numbering_system;
 	
 	$symbols_type = $symbols{$symbols_type}{alias} if exists $symbols{$symbols_type}{alias};
@@ -281,13 +290,23 @@ sub get_formatted_number {
 	# Handle grouping
 	my ($integer, $decimal) = split /\./, $number;
 
-	my ($separator, $decimal_point) = ($symbols{$symbols_type}{group}, $symbols{$symbols_type}{decimal});
-	my ($minor_group, $major_group) = ($format->{$type}{minor_group}, $format->{$type}{major_group});
+	my $minimum_grouping_digits = $self->_find_bundle('minimum_grouping_digits');
+	$minimum_grouping_digits = $minimum_grouping_digits
+		? $minimum_grouping_digits->minimum_grouping_digits()
+		: 0;
 	
-	if (defined $minor_group && $separator) {
-		# Fast commify using unpack
-		my $pattern = "(A$minor_group)(A$major_group)*";
-		$number = reverse join $separator, grep {length} unpack $pattern, reverse $integer;
+	my ($separator, $decimal_point) = ($symbols{$symbols_type}{group}, $symbols{$symbols_type}{decimal});
+	if (($minimum_grouping_digits && length $integer >= $minimum_grouping_digits) || ! $minimum_grouping_digits) {
+		my ($minor_group, $major_group) = ($format->{$type}{minor_group}, $format->{$type}{major_group});
+	
+		if (defined $minor_group && $separator) {
+			# Fast commify using unpack
+			my $pattern = "(A$minor_group)(A$major_group)*";
+			$number = reverse join $separator, grep {length} unpack $pattern, reverse $integer;
+		}
+	}
+	else {
+		$number = $integer;
 	}
 	
 	$number.= "$decimal_point$decimal" if defined $decimal;
@@ -382,15 +401,35 @@ sub _get_algorithmic_number_format_data_by_name {
 	
 	return keys %data ? \%data : undef;
 }
+
+sub _get_plural_form {
+	my ($self, $plural, $from) = @_;
 	
+	my ($result) = $from =~ /$plural\{(.+?)\}/;
+	($result) = $from =~ /other\{(.+?)\}/ unless defined $result;
+	
+	return $result;
+}
+
 sub _process_algorithmic_number_data {
-	my ($self, $number, $format_data, $in_fraction_rule_set) = @_;
+	my ($self, $number, $format_data, $plural, $in_fraction_rule_set) = @_;
 	
 	$in_fraction_rule_set //= 0;
 	
 	my $format = $self->_get_algorithmic_number_format($number, $format_data);
 	
 	my $format_rule = $format->{rule};
+	if (! $plural && $format_rule =~ /(cardinal|ordinal)/) {
+		my $type = $1;
+		$plural = $self->plural($number, $type);
+		$plural = [$type, $plural];
+	}
+	
+	# Sort out plural forms
+	if ($plural) {
+		$format_rule =~ s/\$\($plural->[0],(.+)\)\$/$self->_get_plural_form($plural->[1],$1)/eg;
+	}
+	
 	my $divisor = $format->{divisor};
 	my $base_value = $format->{base_value} // '';
 	
@@ -400,7 +439,7 @@ sub _process_algorithmic_number_data {
 		$positive_number =~ s/^-//;
 		
 		if ($format_rule =~ /→→/) {
-			$format_rule =~ s/→→/$self->_process_algorithmic_number_data($positive_number, $format_data)/e;
+			$format_rule =~ s/→→/$self->_process_algorithmic_number_data($positive_number, $format_data, $plural)/e;
 		}
 		elsif((my $rule_name) = $format_rule =~ /→(.+)→/) {
 			my $type = 'public';
@@ -410,7 +449,7 @@ sub _process_algorithmic_number_data {
 			my $format_data = $self->_get_algorithmic_number_format_data_by_name($rule_name, $type);
 			if($format_data) {
 				# was a valid name
-				$format_rule =~ s/→(.+)→/$self->_process_algorithmic_number_data($positive_number, $format_data)/e;
+				$format_rule =~ s/→(.+)→/$self->_process_algorithmic_number_data($positive_number, $format_data, $plural)/e;
 			}
 			else {
 				# Assume a format
@@ -440,7 +479,7 @@ sub _process_algorithmic_number_data {
 		}
 		
 		if ($format_rule =~ /→→/) {
-			$format_rule =~ s/→→/$self->_process_algorithmic_number_data_fractions($fraction, $format_data)/e;
+			$format_rule =~ s/→→/$self->_process_algorithmic_number_data_fractions($fraction, $format_data, $plural)/e;
 		}
 		elsif((my $rule_name) = $format_rule =~ /→(.*)→/) {
 			my $type = 'public';
@@ -449,7 +488,7 @@ sub _process_algorithmic_number_data {
 			}
 			my $format_data = $self->_get_algorithmic_number_format_data_by_name($rule_name, $type);
 			if ($format_data) {
-				$format_rule =~ s/→(.*)→/$self->_process_algorithmic_number_data_fractions($fraction, $format_data)/e;
+				$format_rule =~ s/→(.*)→/$self->_process_algorithmic_number_data_fractions($fraction, $format_data, $plural)/e;
 			}
 			else {
 				$format_rule =~ s/→(.*)→/$self->_format_number($fraction, $1)/e;
@@ -457,7 +496,7 @@ sub _process_algorithmic_number_data {
 		}
 		
 		if ($format_rule =~ /←←/) {
-			$format_rule =~ s/←←/$self->_process_algorithmic_number_data($integer, $format_data, $in_fraction_rule_set)/e;
+			$format_rule =~ s/←←/$self->_process_algorithmic_number_data($integer, $format_data, $plural, $in_fraction_rule_set)/e;
 		}
 		elsif((my $rule_name) = $format_rule =~ /←(.+)←/) {
 			my $type = 'public';
@@ -466,7 +505,7 @@ sub _process_algorithmic_number_data {
 			}
 			my $format_data = $self->_get_algorithmic_number_format_data_by_name($rule_name, $type);
 			if ($format_data) {
-				$format_rule =~ s/←(.*)←/$self->_process_algorithmic_number_data($integer, $format_data, $in_fraction_rule_set)/e;
+				$format_rule =~ s/←(.*)←/$self->_process_algorithmic_number_data($integer, $format_data, $plural, $in_fraction_rule_set)/e;
 			}
 			else {
 				$format_rule =~ s/←(.*)←/$self->_format_number($integer, $1)/e;
@@ -511,14 +550,14 @@ sub _process_algorithmic_number_data {
 					}
 					my $format_data = $self->_get_algorithmic_number_format_data_by_name($rule_name, $type);
 					if ($format_data) {
-						$format_rule =~ s/←(.*)←/$self->_process_algorithmic_number_data($number * $base_value, $format_data, $in_fraction_rule_set)/e;
+						$format_rule =~ s/←(.*)←/$self->_process_algorithmic_number_data($number * $base_value, $format_data, $plural, $in_fraction_rule_set)/e;
 					}
 					else {
 						$format_rule =~ s/←(.*)←/$self->_format_number($number * $base_value, $1)/e;
 					}
 				}
 				else {
-					$format_rule =~ s/←←/$self->_process_algorithmic_number_data($number * $base_value, $format_data, $in_fraction_rule_set)/e;
+					$format_rule =~ s/←←/$self->_process_algorithmic_number_data($number * $base_value, $format_data, $plural, $in_fraction_rule_set)/e;
 				}
 			}
 			elsif($format_rule =~ /=.*=/) {
@@ -534,14 +573,14 @@ sub _process_algorithmic_number_data {
 					}
 					my $format_data = $self->_get_algorithmic_number_format_data_by_name($rule_name, $type);
 					if ($format_data) {
-						$format_rule =~ s/→(.+)→/$self->_process_algorithmic_number_data($number % $divisor, $format_data)/e;
+						$format_rule =~ s/→(.+)→/$self->_process_algorithmic_number_data($number % $divisor, $format_data, $plural)/e;
 					}
 					else {
 						$format_rule =~ s/→(.*)→/$self->_format_number($number % $divisor, $1)/e;
 					}
 				}
 				else {
-					$format_rule =~ s/→→/$self->_process_algorithmic_number_data($number % $divisor, $format_data)/e;
+					$format_rule =~ s/→→/$self->_process_algorithmic_number_data($number % $divisor, $format_data, $plural)/e;
 				}
 			}
 			
@@ -553,14 +592,14 @@ sub _process_algorithmic_number_data {
 					}
 					my $format_data = $self->_get_algorithmic_number_format_data_by_name($rule_name, $type);
 					if ($format_data) {
-						$format_rule =~ s|←(.*)←|$self->_process_algorithmic_number_data(int ($number / $divisor), $format_data)|e;
+						$format_rule =~ s|←(.*)←|$self->_process_algorithmic_number_data(int ($number / $divisor), $format_data, $plural)|e;
 					}
 					else {
 						$format_rule =~ s|←(.*)←|$self->_format_number(int($number / $divisor), $1)|e;
 					}
 				}
 				else {
-					$format_rule =~ s|←←|$self->_process_algorithmic_number_data(int($number / $divisor), $format_data)|e;
+					$format_rule =~ s|←←|$self->_process_algorithmic_number_data(int($number / $divisor), $format_data, $plural)|e;
 				}
 			}
 			
@@ -576,17 +615,17 @@ sub _process_algorithmic_number_data {
 				}
 			}
 		}
-	}
+	}	
 	
 	return $format_rule;
 }
 
 sub _process_algorithmic_number_data_fractions {
-	my ($self, $fraction, $format_data) = @_;
+	my ($self, $fraction, $format_data, $plural) = @_;
 	
 	my $result = '';
 	foreach my $digit (split //, $fraction) {
-		$result .= $self->_process_algorithmic_number_data($digit, $format_data, 1);
+		$result .= $self->_process_algorithmic_number_data($digit, $format_data, $plural, 1);
 	}
 	
 	return $result;

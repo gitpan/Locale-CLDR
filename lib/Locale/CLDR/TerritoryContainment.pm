@@ -1,11 +1,11 @@
 package Locale::CLDR::TerritoryContainment;
 # This file auto generated from Data.xml
-#	on Tue 30 Dec  8:51:39 pm GMT
+#	on Tue  6 Jan  8:36:14 am GMT
 # XML file generated 2014-09-11 12:17:53 -0500 (Thu, 11 Sep 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.26.7');
+our $VERSION = version->declare('v0.26.8');
 
 use v5.10;
 use mro 'c3';

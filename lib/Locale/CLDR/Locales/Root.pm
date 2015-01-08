@@ -6,12 +6,12 @@ Locale::CLDR::Locales::Root - Package for language Root
 
 package Locale::CLDR::Locales::Root;
 # This file auto generated from Data\common\main\root.xml
-#	on Tue 30 Dec 11:46:08 pm GMT
+#	on Tue  6 Jan  1:24:59 pm GMT
 # XML file generated 2014-08-01 12:07:43 -0500 (Fri, 01 Aug 2014)
 
 use version;
 
-our $VERSION = version->declare('v0.26.7');
+our $VERSION = version->declare('v0.26.8');
 
 use v5.10;
 use mro 'c3';
@@ -3228,490 +3228,492 @@ has 'units' => (
 	default		=> sub { {
 				'short' => {
 					'acre' => {
-						'1' => q(acre),
+						'name' => q(acre),
 						'other' => q({0} ac),
 					},
 					'acre-foot' => {
-						'1' => q(ac ft),
+						'name' => q(ac ft),
 						'other' => q({0} ac ft),
 					},
 					'ampere' => {
-						'1' => q(amp),
+						'name' => q(amp),
 						'other' => q({0} A),
 					},
 					'arc-minute' => {
-						'1' => q(arcmin),
+						'name' => q(arcmin),
 						'other' => q({0}′),
 					},
 					'arc-second' => {
-						'1' => q(arcsec),
+						'name' => q(arcsec),
 						'other' => q({0}″),
 					},
 					'astronomical-unit' => {
-						'1' => q(au),
+						'name' => q(au),
 						'other' => q({0} au),
 					},
 					'bit' => {
-						'1' => q(bit),
+						'name' => q(bit),
 						'other' => q({0} bit),
 					},
 					'bushel' => {
-						'1' => q(bu),
+						'name' => q(bu),
 						'other' => q({0} bu),
 					},
 					'byte' => {
-						'1' => q(byte),
+						'name' => q(byte),
 						'other' => q({0} byte),
 					},
 					'calorie' => {
-						'1' => q(cal),
+						'name' => q(cal),
 						'other' => q({0} cal),
 					},
 					'carat' => {
-						'1' => q(CD),
+						'name' => q(CD),
 						'other' => q({0} CD),
 					},
 					'celsius' => {
-						'1' => q(°C),
+						'name' => q(°C),
 						'other' => q({0}°C),
 					},
 					'centiliter' => {
-						'1' => q(cL),
+						'name' => q(cL),
 						'other' => q({0} cL),
 					},
 					'centimeter' => {
-						'1' => q(cm),
+						'name' => q(cm),
 						'other' => q({0} cm),
 					},
 					'cubic-centimeter' => {
-						'1' => q(cm³),
+						'name' => q(cm³),
 						'other' => q({0} cm³),
 					},
 					'cubic-foot' => {
-						'1' => q(ft³),
+						'name' => q(ft³),
 						'other' => q({0} ft³),
 					},
 					'cubic-inch' => {
-						'1' => q(in³),
+						'name' => q(in³),
 						'other' => q({0} in³),
 					},
 					'cubic-kilometer' => {
-						'1' => q(km³),
+						'name' => q(km³),
 						'other' => q({0} km³),
 					},
 					'cubic-meter' => {
-						'1' => q(m³),
+						'name' => q(m³),
 						'other' => q({0} m³),
 					},
 					'cubic-mile' => {
-						'1' => q(mi³),
+						'name' => q(mi³),
 						'other' => q({0} mi³),
 					},
 					'cubic-yard' => {
-						'1' => q(yd³),
+						'name' => q(yd³),
 						'other' => q({0} yd³),
 					},
 					'cup' => {
-						'1' => q(cup),
+						'name' => q(cup),
 						'other' => q({0} c),
 					},
 					'day' => {
-						'1' => q(day),
+						'name' => q(day),
 						'other' => q({0} d),
 					},
 					'deciliter' => {
-						'1' => q(dL),
+						'name' => q(dL),
 						'other' => q({0} dL),
 					},
 					'decimeter' => {
-						'1' => q(dm),
+						'name' => q(dm),
 						'other' => q({0} dm),
 					},
 					'degree' => {
-						'1' => q(deg),
+						'name' => q(deg),
 						'other' => q({0}°),
 					},
 					'fahrenheit' => {
-						'1' => q(°F),
+						'name' => q(°F),
 						'other' => q({0}°F),
 					},
 					'fathom' => {
-						'1' => q(fm),
+						'name' => q(fm),
 						'other' => q({0} fm),
 					},
 					'fluid-ounce' => {
-						'1' => q(fl oz),
+						'name' => q(fl oz),
 						'other' => q({0} fl oz),
 					},
 					'foodcalorie' => {
-						'1' => q(Cal),
+						'name' => q(Cal),
 						'other' => q({0} Cal),
 					},
 					'foot' => {
-						'1' => q(ft),
+						'name' => q(ft),
 						'other' => q({0} ft),
 					},
 					'furlong' => {
-						'1' => q(fur),
+						'name' => q(fur),
 						'other' => q({0} fur),
 					},
 					'g-force' => {
-						'1' => q(g-force),
+						'name' => q(g-force),
 						'other' => q({0} G),
 					},
 					'gallon' => {
-						'1' => q(gal),
+						'name' => q(gal),
 						'other' => q({0} gal),
 					},
 					'gigabit' => {
-						'1' => q(Gb),
+						'name' => q(Gb),
 						'other' => q({0} Gb),
 					},
 					'gigabyte' => {
-						'1' => q(GB),
+						'name' => q(GB),
 						'other' => q({0} GB),
 					},
 					'gigahertz' => {
-						'1' => q(GHz),
+						'name' => q(GHz),
 						'other' => q({0} GHz),
 					},
 					'gigawatt' => {
-						'1' => q(GW),
+						'name' => q(GW),
 						'other' => q({0} GW),
 					},
 					'gram' => {
-						'1' => q(gram),
+						'name' => q(gram),
 						'other' => q({0} g),
 					},
 					'hectare' => {
-						'1' => q(hectare),
+						'name' => q(hectare),
 						'other' => q({0} ha),
 					},
 					'hectoliter' => {
-						'1' => q(hL),
+						'name' => q(hL),
 						'other' => q({0} hL),
 					},
 					'hectopascal' => {
-						'1' => q(hPa),
+						'name' => q(hPa),
 						'other' => q({0} hPa),
 					},
 					'hertz' => {
-						'1' => q(Hz),
+						'name' => q(Hz),
 						'other' => q({0} Hz),
 					},
 					'horsepower' => {
-						'1' => q(hp),
+						'name' => q(hp),
 						'other' => q({0} hp),
 					},
 					'hour' => {
-						'1' => q({0}/h),
+						'name' => q(hr),
 						'other' => q({0} h),
+						'per' => q({0}/h),
 					},
 					'inch' => {
-						'1' => q(in),
+						'name' => q(in),
 						'other' => q({0} in),
 					},
 					'inch-hg' => {
-						'1' => q(inHg),
+						'name' => q(inHg),
 						'other' => q({0} inHg),
 					},
 					'joule' => {
-						'1' => q(joule),
+						'name' => q(joule),
 						'other' => q({0} J),
 					},
 					'karat' => {
-						'1' => q(kt),
+						'name' => q(kt),
 						'other' => q({0} kt),
 					},
 					'kelvin' => {
-						'1' => q(K),
+						'name' => q(K),
 						'other' => q({0} K),
 					},
 					'kilobit' => {
-						'1' => q(kb),
+						'name' => q(kb),
 						'other' => q({0} kb),
 					},
 					'kilobyte' => {
-						'1' => q(kB),
+						'name' => q(kB),
 						'other' => q({0} kB),
 					},
 					'kilocalorie' => {
-						'1' => q(kcal),
+						'name' => q(kcal),
 						'other' => q({0} kcal),
 					},
 					'kilogram' => {
-						'1' => q(kg),
+						'name' => q(kg),
 						'other' => q({0} kg),
 					},
 					'kilohertz' => {
-						'1' => q(kHz),
+						'name' => q(kHz),
 						'other' => q({0} kHz),
 					},
 					'kilojoule' => {
-						'1' => q(kJ),
+						'name' => q(kJ),
 						'other' => q({0} kJ),
 					},
 					'kilometer' => {
-						'1' => q(km),
+						'name' => q(km),
 						'other' => q({0} km),
 					},
 					'kilometer-per-hour' => {
-						'1' => q(km/h),
+						'name' => q(km/h),
 						'other' => q({0} km/h),
 					},
 					'kilowatt' => {
-						'1' => q(kW),
+						'name' => q(kW),
 						'other' => q({0} kW),
 					},
 					'kilowatt-hour' => {
-						'1' => q(kWh),
+						'name' => q(kWh),
 						'other' => q({0} kWh),
 					},
 					'light-year' => {
-						'1' => q(ly),
+						'name' => q(ly),
 						'other' => q({0} ly),
 					},
 					'liter' => {
-						'1' => q(liter),
+						'name' => q(liter),
 						'other' => q({0} l),
 					},
 					'liter-per-kilometer' => {
-						'1' => q(L/km),
+						'name' => q(L/km),
 						'other' => q({0} L/km),
 					},
 					'lux' => {
-						'1' => q(lx),
+						'name' => q(lx),
 						'other' => q({0} lx),
 					},
 					'megabit' => {
-						'1' => q(Mb),
+						'name' => q(Mb),
 						'other' => q({0} Mb),
 					},
 					'megabyte' => {
-						'1' => q(MB),
+						'name' => q(MB),
 						'other' => q({0} MB),
 					},
 					'megahertz' => {
-						'1' => q(MHz),
+						'name' => q(MHz),
 						'other' => q({0} MHz),
 					},
 					'megaliter' => {
-						'1' => q(ML),
+						'name' => q(ML),
 						'other' => q({0} ML),
 					},
 					'megawatt' => {
-						'1' => q(MW),
+						'name' => q(MW),
 						'other' => q({0} MW),
 					},
 					'meter' => {
-						'1' => q(meter),
+						'name' => q(meter),
 						'other' => q({0} m),
 					},
 					'meter-per-second' => {
-						'1' => q(m/s),
+						'name' => q(m/s),
 						'other' => q({0} m/s),
 					},
 					'meter-per-second-squared' => {
-						'1' => q(m/s²),
+						'name' => q(m/s²),
 						'other' => q({0} m/s²),
 					},
 					'metric-ton' => {
-						'1' => q(t),
+						'name' => q(t),
 						'other' => q({0} t),
 					},
 					'microgram' => {
-						'1' => q(µg),
+						'name' => q(µg),
 						'other' => q({0} µg),
 					},
 					'micrometer' => {
-						'1' => q(µm),
+						'name' => q(µm),
 						'other' => q({0} µm),
 					},
 					'microsecond' => {
-						'1' => q(μs),
+						'name' => q(μs),
 						'other' => q({0} μs),
 					},
 					'mile' => {
-						'1' => q(mi),
+						'name' => q(mi),
 						'other' => q({0} mi),
 					},
 					'mile-per-gallon' => {
-						'1' => q(mpg),
+						'name' => q(mpg),
 						'other' => q({0} mpg),
 					},
 					'mile-per-hour' => {
-						'1' => q(mi/h),
+						'name' => q(mi/h),
 						'other' => q({0} mi/h),
 					},
 					'milliampere' => {
-						'1' => q(mA),
+						'name' => q(mA),
 						'other' => q({0} mA),
 					},
 					'millibar' => {
-						'1' => q(mbar),
+						'name' => q(mbar),
 						'other' => q({0} mbar),
 					},
 					'milligram' => {
-						'1' => q(mg),
+						'name' => q(mg),
 						'other' => q({0} mg),
 					},
 					'milliliter' => {
-						'1' => q(mL),
+						'name' => q(mL),
 						'other' => q({0} mL),
 					},
 					'millimeter' => {
-						'1' => q(mm),
+						'name' => q(mm),
 						'other' => q({0} mm),
 					},
 					'millimeter-of-mercury' => {
-						'1' => q(mm Hg),
+						'name' => q(mm Hg),
 						'other' => q({0} mm Hg),
 					},
 					'millisecond' => {
-						'1' => q(ms),
+						'name' => q(ms),
 						'other' => q({0} ms),
 					},
 					'milliwatt' => {
-						'1' => q(mW),
+						'name' => q(mW),
 						'other' => q({0} mW),
 					},
 					'minute' => {
-						'1' => q(min),
+						'name' => q(min),
 						'other' => q({0} min),
 					},
 					'month' => {
-						'1' => q(mon),
+						'name' => q(mon),
 						'other' => q({0} m),
 					},
 					'nanometer' => {
-						'1' => q(nm),
+						'name' => q(nm),
 						'other' => q({0} nm),
 					},
 					'nanosecond' => {
-						'1' => q(ns),
+						'name' => q(ns),
 						'other' => q({0} ns),
 					},
 					'nautical-mile' => {
-						'1' => q(nmi),
+						'name' => q(nmi),
 						'other' => q({0} nmi),
 					},
 					'ohm' => {
-						'1' => q(ohm),
+						'name' => q(ohm),
 						'other' => q({0} Ω),
 					},
 					'ounce' => {
-						'1' => q(oz),
+						'name' => q(oz),
 						'other' => q({0} oz),
 					},
 					'ounce-troy' => {
-						'1' => q(oz t),
+						'name' => q(oz t),
 						'other' => q({0} oz t),
 					},
 					'parsec' => {
-						'1' => q(pc),
+						'name' => q(pc),
 						'other' => q({0} pc),
 					},
 					'per' => {
-						'1' => q({0}/{1}),
+						'' => q({0}/{1}),
 					},
 					'picometer' => {
-						'1' => q(pm),
+						'name' => q(pm),
 						'other' => q({0} pm),
 					},
 					'pint' => {
-						'1' => q(pt),
+						'name' => q(pt),
 						'other' => q({0} pt),
 					},
 					'pound' => {
-						'1' => q(lb),
+						'name' => q(lb),
 						'other' => q({0} lb),
 					},
 					'pound-per-square-inch' => {
-						'1' => q(psi),
+						'name' => q(psi),
 						'other' => q({0} psi),
 					},
 					'quart' => {
-						'1' => q(qt),
+						'name' => q(qt),
 						'other' => q({0} qt),
 					},
 					'radian' => {
-						'1' => q(rad),
+						'name' => q(rad),
 						'other' => q({0} rad),
 					},
 					'second' => {
-						'1' => q({0}/s),
+						'name' => q(sec),
 						'other' => q({0} s),
+						'per' => q({0}/s),
 					},
 					'square-centimeter' => {
-						'1' => q(cm²),
+						'name' => q(cm²),
 						'other' => q({0} cm²),
 					},
 					'square-foot' => {
-						'1' => q(ft²),
+						'name' => q(ft²),
 						'other' => q({0} ft²),
 					},
 					'square-inch' => {
-						'1' => q(in²),
+						'name' => q(in²),
 						'other' => q({0} in²),
 					},
 					'square-kilometer' => {
-						'1' => q(km²),
+						'name' => q(km²),
 						'other' => q({0} km²),
 					},
 					'square-meter' => {
-						'1' => q(m²),
+						'name' => q(m²),
 						'other' => q({0} m²),
 					},
 					'square-mile' => {
-						'1' => q(mi²),
+						'name' => q(mi²),
 						'other' => q({0} mi²),
 					},
 					'square-yard' => {
-						'1' => q(yd²),
+						'name' => q(yd²),
 						'other' => q({0} yd²),
 					},
 					'stone' => {
-						'1' => q(st),
+						'name' => q(st),
 						'other' => q({0} st),
 					},
 					'tablespoon' => {
-						'1' => q(tbsp),
+						'name' => q(tbsp),
 						'other' => q({0} tbsp),
 					},
 					'teaspoon' => {
-						'1' => q(tsp),
+						'name' => q(tsp),
 						'other' => q({0} tsp),
 					},
 					'terabit' => {
-						'1' => q(Tb),
+						'name' => q(Tb),
 						'other' => q({0} Tb),
 					},
 					'terabyte' => {
-						'1' => q(TB),
+						'name' => q(TB),
 						'other' => q({0} TB),
 					},
 					'ton' => {
-						'1' => q(tn),
+						'name' => q(tn),
 						'other' => q({0} tn),
 					},
 					'volt' => {
-						'1' => q(volt),
+						'name' => q(volt),
 						'other' => q({0} V),
 					},
 					'watt' => {
-						'1' => q(watt),
+						'name' => q(watt),
 						'other' => q({0} W),
 					},
 					'week' => {
-						'1' => q(wk),
+						'name' => q(wk),
 						'other' => q({0} w),
 					},
 					'yard' => {
-						'1' => q(yd),
+						'name' => q(yd),
 						'other' => q({0} yd),
 					},
 					'year' => {
-						'1' => q(yr),
+						'name' => q(yr),
 						'other' => q({0} y),
 					},
 				},
@@ -3758,6 +3760,13 @@ has native_numbering_system => (
 	default		=> 'latn',
 );
 
+has 'minimum_grouping_digits' => (
+	is			=>'ro',
+	isa			=> 'Int',
+	init_arg	=> undef,
+	default		=> 1,
+);
+
 has 'number_symbols' => (
 	is			=> 'ro',
 	isa			=> 'HashRef',
@@ -3775,6 +3784,7 @@ has 'number_symbols' => (
 			'percentSign' => q(٪),
 			'plusSign' => q(‏+),
 			'superscriptingExponent' => q(×),
+			'timeSeparator' => q(٫),
 		},
 		'arabext' => {
 			'decimal' => q(٫),
@@ -3788,6 +3798,7 @@ has 'number_symbols' => (
 			'percentSign' => q(٪),
 			'plusSign' => q(‎+‎),
 			'superscriptingExponent' => q(×),
+			'timeSeparator' => q(٫),
 		},
 		'bali' => { 'alias' => 'latn' },
 		'beng' => { 'alias' => 'latn' },
@@ -3818,6 +3829,7 @@ has 'number_symbols' => (
 			'percentSign' => q(%),
 			'plusSign' => q(+),
 			'superscriptingExponent' => q(×),
+			'timeSeparator' => q(:),
 		},
 		'lepc' => { 'alias' => 'latn' },
 		'limb' => { 'alias' => 'latn' },
@@ -5442,56 +5454,7 @@ has 'day_period_data' => (
 		my ($self, $type, $time) = @_;
 		SWITCH:
 		for ($type) {
-			if ($_ eq 'persian') {
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'islamic-umalqura') {
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'coptic') {
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'islamic-civil') {
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'roc') {
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'islamic-rgsa') {
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'gregorian') {
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'chinese') {
+			if ($_ eq 'islamic') {
 				return 'pm' if $time >= 1200
 					&& $time < 2400;
 				return 'am' if $time >= 000
@@ -5512,35 +5475,7 @@ has 'day_period_data' => (
 					&& $time < 1200;
 			last SWITCH;
 			}
-			if ($_ eq 'japanese') {
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'generic') {
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'ethiopic') {
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'islamic') {
-				return 'pm' if $time >= 1200
-					&& $time < 2400;
-				return 'am' if $time >= 000
-					&& $time < 1200;
-			last SWITCH;
-			}
-			if ($_ eq 'islamic-tbla') {
+			if ($_ eq 'islamic-rgsa') {
 				return 'pm' if $time >= 1200
 					&& $time < 2400;
 				return 'am' if $time >= 000
@@ -5554,6 +5489,13 @@ has 'day_period_data' => (
 					&& $time < 1200;
 			last SWITCH;
 			}
+			if ($_ eq 'ethiopic') {
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+			last SWITCH;
+			}
 			if ($_ eq 'dangi') {
 				return 'pm' if $time >= 1200
 					&& $time < 2400;
@@ -5561,7 +5503,77 @@ has 'day_period_data' => (
 					&& $time < 1200;
 			last SWITCH;
 			}
+			if ($_ eq 'islamic-civil') {
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'coptic') {
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+			last SWITCH;
+			}
 			if ($_ eq 'indian') {
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'roc') {
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'islamic-tbla') {
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'chinese') {
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'japanese') {
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'gregorian') {
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'generic') {
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'persian') {
+				return 'pm' if $time >= 1200
+					&& $time < 2400;
+				return 'am' if $time >= 000
+					&& $time < 1200;
+			last SWITCH;
+			}
+			if ($_ eq 'islamic-umalqura') {
 				return 'pm' if $time >= 1200
 					&& $time < 2400;
 				return 'am' if $time >= 000
@@ -5600,18 +5612,18 @@ has 'day_periods' => (
 		},
 		'gregorian' => {
 			'format' => {
+				'wide' => {
+					'pm' => q{PM},
+					'am' => q{AM},
+					'noon' => q{noon},
+				},
 				'abbreviated' => {
 					'alias' => 'wide',
 				},
 				'narrow' => {
-					'am' => q{a},
 					'pm' => q{p},
 					'noon' => q{n},
-				},
-				'wide' => {
-					'am' => q{AM},
-					'noon' => q{noon},
-					'pm' => q{PM},
+					'am' => q{a},
 				},
 			},
 			'stand-alone' => {
@@ -6494,19 +6506,10 @@ has 'datetime_formats_available_formats' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'dangi' => {
-			'alias' => q{chinese},
-		},
-		'indian' => {
-			'alias' => q{generic},
-		},
-		'islamic-tbla' => {
+		'islamic-umalqura' => {
 			'alias' => q{islamic},
 		},
-		'hebrew' => {
-			'alias' => q{generic},
-		},
-		'islamic' => {
+		'persian' => {
 			'alias' => q{generic},
 		},
 		'generic' => {
@@ -6545,12 +6548,6 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{G y QQQ},
 			yyyyQQQQ => q{G y QQQQ},
 		},
-		'japanese' => {
-			'alias' => q{generic},
-		},
-		'ethiopic' => {
-			'alias' => q{generic},
-		},
 		'gregorian' => {
 			E => q{ccc},
 			EHm => q{E HH:mm},
@@ -6586,6 +6583,12 @@ has 'datetime_formats_available_formats' => (
 			yQQQ => q{y QQQ},
 			yQQQQ => q{y QQQQ},
 		},
+		'japanese' => {
+			'alias' => q{generic},
+		},
+		'islamic-tbla' => {
+			'alias' => q{islamic},
+		},
 		'chinese' => {
 			E => q{ccc},
 			Ed => q{d, E},
@@ -6619,29 +6622,38 @@ has 'datetime_formats_available_formats' => (
 			yyyyQQQ => q{U QQQ},
 			yyyyQQQQ => q{U QQQQ},
 		},
-		'ethiopic-amete-alem' => {
-			'alias' => q{ethiopic},
-		},
-		'buddhist' => {
-			'alias' => q{generic},
-		},
 		'roc' => {
 			'alias' => q{generic},
 		},
-		'islamic-rgsa' => {
-			'alias' => q{islamic},
-		},
-		'persian' => {
+		'indian' => {
 			'alias' => q{generic},
-		},
-		'islamic-umalqura' => {
-			'alias' => q{islamic},
 		},
 		'coptic' => {
 			'alias' => q{generic},
 		},
 		'islamic-civil' => {
 			'alias' => q{islamic},
+		},
+		'dangi' => {
+			'alias' => q{chinese},
+		},
+		'ethiopic' => {
+			'alias' => q{generic},
+		},
+		'hebrew' => {
+			'alias' => q{generic},
+		},
+		'islamic-rgsa' => {
+			'alias' => q{islamic},
+		},
+		'buddhist' => {
+			'alias' => q{generic},
+		},
+		'ethiopic-amete-alem' => {
+			'alias' => q{ethiopic},
+		},
+		'islamic' => {
+			'alias' => q{generic},
 		},
 	} },
 );
@@ -6651,19 +6663,10 @@ has 'datetime_formats_append_item' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'dangi' => {
-			'alias' => q{chinese},
-		},
-		'indian' => {
-			'alias' => q{generic},
-		},
-		'islamic-tbla' => {
+		'islamic-umalqura' => {
 			'alias' => q{islamic},
 		},
-		'hebrew' => {
-			'alias' => q{generic},
-		},
-		'islamic' => {
+		'persian' => {
 			'alias' => q{generic},
 		},
 		'generic' => {
@@ -6679,12 +6682,6 @@ has 'datetime_formats_append_item' => (
 			'Week' => '{0} ({2}: {1})',
 			'Year' => '{1} {0}',
 		},
-		'japanese' => {
-			'alias' => q{generic},
-		},
-		'ethiopic' => {
-			'alias' => q{generic},
-		},
 		'gregorian' => {
 			'Day' => '{0} ({2}: {1})',
 			'Day-Of-Week' => '{0} {1}',
@@ -6697,6 +6694,12 @@ has 'datetime_formats_append_item' => (
 			'Timezone' => '{0} {1}',
 			'Week' => '{0} ({2}: {1})',
 			'Year' => '{1} {0}',
+		},
+		'japanese' => {
+			'alias' => q{generic},
+		},
+		'islamic-tbla' => {
+			'alias' => q{islamic},
 		},
 		'chinese' => {
 			'Day' => '{0} ({2}: {1})',
@@ -6711,29 +6714,38 @@ has 'datetime_formats_append_item' => (
 			'Week' => '{0} ({2}: {1})',
 			'Year' => '{1} {0}',
 		},
-		'ethiopic-amete-alem' => {
-			'alias' => q{ethiopic},
-		},
-		'buddhist' => {
-			'alias' => q{generic},
-		},
 		'roc' => {
 			'alias' => q{generic},
 		},
-		'islamic-rgsa' => {
-			'alias' => q{islamic},
-		},
-		'persian' => {
+		'indian' => {
 			'alias' => q{generic},
-		},
-		'islamic-umalqura' => {
-			'alias' => q{islamic},
 		},
 		'coptic' => {
 			'alias' => q{generic},
 		},
 		'islamic-civil' => {
 			'alias' => q{islamic},
+		},
+		'dangi' => {
+			'alias' => q{chinese},
+		},
+		'ethiopic' => {
+			'alias' => q{generic},
+		},
+		'hebrew' => {
+			'alias' => q{generic},
+		},
+		'islamic-rgsa' => {
+			'alias' => q{islamic},
+		},
+		'buddhist' => {
+			'alias' => q{generic},
+		},
+		'ethiopic-amete-alem' => {
+			'alias' => q{ethiopic},
+		},
+		'islamic' => {
+			'alias' => q{generic},
 		},
 	} },
 );
@@ -6743,19 +6755,10 @@ has 'datetime_formats_interval' => (
 	isa			=> 'HashRef',
 	init_arg	=> undef,
 	default		=> sub { {
-		'dangi' => {
-			'alias' => q{chinese},
-		},
-		'indian' => {
-			'alias' => q{generic},
-		},
-		'islamic-tbla' => {
+		'islamic-umalqura' => {
 			'alias' => q{islamic},
 		},
-		'hebrew' => {
-			'alias' => q{generic},
-		},
-		'islamic' => {
+		'persian' => {
 			'alias' => q{generic},
 		},
 		'generic' => {
@@ -6853,12 +6856,6 @@ has 'datetime_formats_interval' => (
 				y => q{GGGGG y-MM-dd – y-MM-dd},
 			},
 		},
-		'japanese' => {
-			'alias' => q{generic},
-		},
-		'ethiopic' => {
-			'alias' => q{generic},
-		},
 		'gregorian' => {
 			H => {
 				H => q{HH–HH},
@@ -6953,6 +6950,12 @@ has 'datetime_formats_interval' => (
 				d => q{y-MM-dd – y-MM-dd},
 				y => q{y-MM-dd – y-MM-dd},
 			},
+		},
+		'japanese' => {
+			'alias' => q{generic},
+		},
+		'islamic-tbla' => {
+			'alias' => q{islamic},
 		},
 		'chinese' => {
 			H => {
@@ -7049,29 +7052,38 @@ has 'datetime_formats_interval' => (
 				y => q{y-MM-dd – y-MM-dd},
 			},
 		},
-		'ethiopic-amete-alem' => {
-			'alias' => q{ethiopic},
-		},
-		'buddhist' => {
-			'alias' => q{generic},
-		},
 		'roc' => {
 			'alias' => q{generic},
 		},
-		'islamic-rgsa' => {
-			'alias' => q{islamic},
-		},
-		'persian' => {
+		'indian' => {
 			'alias' => q{generic},
-		},
-		'islamic-umalqura' => {
-			'alias' => q{islamic},
 		},
 		'coptic' => {
 			'alias' => q{generic},
 		},
 		'islamic-civil' => {
 			'alias' => q{islamic},
+		},
+		'dangi' => {
+			'alias' => q{chinese},
+		},
+		'ethiopic' => {
+			'alias' => q{generic},
+		},
+		'hebrew' => {
+			'alias' => q{generic},
+		},
+		'islamic-rgsa' => {
+			'alias' => q{islamic},
+		},
+		'buddhist' => {
+			'alias' => q{generic},
+		},
+		'ethiopic-amete-alem' => {
+			'alias' => q{ethiopic},
+		},
+		'islamic' => {
+			'alias' => q{generic},
 		},
 	} },
 );
